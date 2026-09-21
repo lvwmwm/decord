@@ -1,47 +1,78 @@
 // Module ID: 1754
 // Function ID: 1755
-// Dependencies: [1755, 1756, 1757, 1758, 1759, 1760, 1761, 1762, 1763, 1764]
+// Dependencies: []
+// Exports: getViewInfo
 
 // Module 1754
-const require = globalThis.__r;
 
-for (const key10013 in require("module_1755")) {
-  arg5[key10013] = require("module_1755")[key10013];
-  continue;
-}
-for (const key10017 in require("module_1756")) {
-  arg5[key10017] = require("module_1756")[key10017];
-  continue;
-}
-for (const key10021 in require("module_1757")) {
-  arg5[key10021] = require("module_1757")[key10021];
-  continue;
-}
-for (const key10025 in require("module_1758")) {
-  arg5[key10025] = require("module_1758")[key10025];
-  continue;
-}
-for (const key10029 in require("module_1759")) {
-  arg5[key10029] = require("module_1759")[key10029];
-  continue;
-}
-for (const key10033 in require("module_1760")) {
-  arg5[key10033] = require("module_1760")[key10033];
-  continue;
-}
-for (const key10037 in require("module_1761")) {
-  arg5[key10037] = require("module_1761")[key10037];
-  continue;
-}
-for (const key10041 in require("module_1762")) {
-  arg5[key10041] = require("module_1762")[key10041];
-  continue;
-}
-for (const key10045 in require("module_1763")) {
-  arg5[key10045] = require("module_1763")[key10045];
-  continue;
-}
-for (const key10049 in require("module_1764")) {
-  arg5[key10049] = require("module_1764")[key10049];
-  continue;
-}
+export const getViewInfo = function getViewInfo(findHostInstanceResult) {
+  if (undefined !== findHostInstanceResult._nativeTag) {
+    if (null !== findHostInstanceResult.__nativeTag) {
+      let uiViewClassName;
+      if (findHostInstanceResult != null) {
+        const viewConfig2 = findHostInstanceResult.viewConfig;
+        if (viewConfig2 != null) {
+          uiViewClassName = viewConfig2.uiViewClassName;
+        }
+      }
+      const obj2 = { viewName: uiViewClassName, viewTag: null, viewConfig: null };
+      let _nativeTag;
+      if (findHostInstanceResult != null) {
+        _nativeTag = findHostInstanceResult._nativeTag;
+      }
+      obj2.viewTag = _nativeTag;
+      let viewConfig1;
+      if (findHostInstanceResult != null) {
+        viewConfig1 = findHostInstanceResult.viewConfig;
+      }
+      obj2.viewConfig = viewConfig1;
+      let obj = obj2;
+    }
+    return obj;
+  }
+  if (undefined !== findHostInstanceResult.__nativeTag) {
+    if (null !== findHostInstanceResult.__nativeTag) {
+      let __viewConfig;
+      if (findHostInstanceResult != null) {
+        __viewConfig = findHostInstanceResult.__viewConfig;
+      }
+      if (__viewConfig == null) {
+        let _viewConfig;
+        if (findHostInstanceResult != null) {
+          _viewConfig = findHostInstanceResult._viewConfig;
+        }
+        __viewConfig = _viewConfig;
+      }
+      let uiViewClassName1;
+      if (__viewConfig != null) {
+        uiViewClassName1 = __viewConfig.uiViewClassName;
+      }
+      const obj3 = { viewName: uiViewClassName1, viewTag: null, viewConfig: null };
+      let __nativeTag;
+      if (findHostInstanceResult != null) {
+        __nativeTag = findHostInstanceResult.__nativeTag;
+      }
+      obj3.viewTag = __nativeTag;
+      obj3.viewConfig = __viewConfig;
+      obj = obj3;
+    }
+  }
+  let uiViewClassName2;
+  if (findHostInstanceResult != null) {
+    const viewConfig = findHostInstanceResult.viewConfig;
+    if (viewConfig != null) {
+      uiViewClassName2 = viewConfig.uiViewClassName;
+    }
+  }
+  obj = { viewName: uiViewClassName2, viewTag: null, viewConfig: null };
+  let _nativeTag1;
+  if (findHostInstanceResult != null) {
+    _nativeTag1 = findHostInstanceResult._nativeTag;
+  }
+  obj.viewTag = _nativeTag1;
+  let viewConfig3;
+  if (findHostInstanceResult != null) {
+    viewConfig3 = findHostInstanceResult.viewConfig;
+  }
+  obj.viewConfig = viewConfig3;
+};

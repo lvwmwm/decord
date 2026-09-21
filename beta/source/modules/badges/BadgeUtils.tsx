@@ -1,13 +1,13 @@
-// Module ID: 11464
-// Function ID: 11465
+// Module ID: 11452
+// Function ID: 11453
 // Name: BadgeUtils
-// Dependencies: [8452, 8453, 1115, 8462, 2]
+// Dependencies: [8457, 8458, 1119, 8467, 2]
 // Exports: getAlwaysVisibleCopy, getDirectoryBadges, getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
 
-// Module 11464 (BadgeUtils)
-import Constants from "Constants" /* 8452 */;
-import BadgeId from "BadgeId" /* 8453 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8462 */;
+// Module 11452 (BadgeUtils)
+import Constants from "Constants" /* 8457 */;
+import BadgeId from "BadgeId" /* 8458 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8467 */;
 import size from "module_2" /* 2 */;
 
 function isPinnedBadge(badge_id) {
@@ -27,9 +27,9 @@ export const MAX_DISPLAYED_PROFILE_BADGES = 6;
 export { isPinnedBadge };
 export const getAlwaysVisibleCopy = function getAlwaysVisibleCopy(badge_id) {
   if (badge_id === BadgeId.BadgeId.STAFF) {
-    let nPQVxb = tmp(1115).t.t3udZb;
+    let nPQVxb = tmp(1119).t.t3udZb;
   } else {
-    nPQVxb = tmp(1115).t.nPQVxb;
+    nPQVxb = tmp(1119).t.nPQVxb;
   }
   return nPQVxb;
 };

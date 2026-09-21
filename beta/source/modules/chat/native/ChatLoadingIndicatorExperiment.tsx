@@ -1,10 +1,10 @@
-// Module ID: 13577
-// Function ID: 13578
+// Module ID: 13580
+// Function ID: 13581
 // Name: ChatLoadingIndicatorExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 13577 (ChatLoadingIndicatorExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13580 (ChatLoadingIndicatorExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-01-chat-loading-indicator", kind: "user", defaultConfig: { enabled: false }, variations: null };

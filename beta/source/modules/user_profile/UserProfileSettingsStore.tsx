@@ -1,16 +1,16 @@
-// Module ID: 8429
-// Function ID: 8430
+// Module ID: 8434
+// Function ID: 8435
 // Name: UserProfileSettingsStore
-// Dependencies: [1074, 2054, 8430, 1075, 504, 8431, 573, 2]
+// Dependencies: [1078, 2058, 8435, 1079, 504, 8436, 577, 2]
 
-// Module 8429 (UserProfileSettingsStore)
+// Module 8434 (UserProfileSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import RouteConstants from "RouteConstants" /* 1075 */;
-import FavoritesConstants from "FavoritesConstants" /* 2054 */;
-import NotificationsInboxConstants from "NotificationsInboxConstants" /* 8430 */;
-import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 8431 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import RouteConstants from "RouteConstants" /* 1079 */;
+import FavoritesConstants from "FavoritesConstants" /* 2058 */;
+import NotificationsInboxConstants from "NotificationsInboxConstants" /* 8435 */;
+import BioMaxLengthExperiment from "BioMaxLengthExperiment" /* 8436 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 function handleFormOpen() {

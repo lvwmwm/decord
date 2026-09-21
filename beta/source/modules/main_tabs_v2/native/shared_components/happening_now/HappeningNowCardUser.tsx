@@ -1,22 +1,22 @@
-// Module ID: 16429
-// Function ID: 16430
+// Module ID: 16427
+// Function ID: 16428
 // Name: HappeningNowCardUser
-// Dependencies: [19, 17, 4796, 1372, 15566, 1074, 21, 1177, 4756, 7407, 504, 1241, 8448, 1980, 4600, 9867, 15567, 8528, 2]
+// Dependencies: [19, 17, 4798, 1376, 15555, 1078, 21, 1181, 4758, 7409, 504, 1245, 8453, 1984, 4603, 9846, 15556, 8533, 2]
 
-// Module 16429 (HappeningNowCardUser)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+// Module 16427 (HappeningNowCardUser)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import UserStore from "UserStore" /* 1372 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(15566).HappeningNowCardTrackingType;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+let closure_7 = fn(15555).HappeningNowCardTrackingType;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsx = fn(21).jsx;
-const LARGE = fn(1177).AvatarSizes.LARGE;
-const createStyles = fn(4756);
+const LARGE = fn(1181).AvatarSizes.LARGE;
+const createStyles = fn(4758);
 let closure_11 = createStyles.createStyles({ content: { flex: 1, display: "flex", alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUser.tsx");
@@ -42,8 +42,8 @@ export default noop.memo((index) => {
     obj2.highlighted_user_ids = items;
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
     if (null != stateFromStores) {
-      asyncRequireImpl(8448, dependencyMap.paths).then((result) => result.default({ userId: localUser.id, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(8448, dependencyMap.paths);
+      asyncRequireImpl(8453, dependencyMap.paths).then((result) => result.default({ userId: localUser.id, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(8453, dependencyMap.paths);
     }
   }, items2);
   let obj = index(guildId[10]);

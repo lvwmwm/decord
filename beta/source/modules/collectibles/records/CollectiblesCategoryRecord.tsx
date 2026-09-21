@@ -1,14 +1,14 @@
-// Module ID: 7785
-// Function ID: 7786
+// Module ID: 7790
+// Function ID: 7791
 // Name: CollectiblesCategoryRecord
-// Dependencies: [7786, 7793, 1973, 7795, 7796, 2]
+// Dependencies: [7791, 7798, 1977, 7800, 7801, 2]
 
-// Module 7785 (CollectiblesCategoryRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7795 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7786 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7793 */;
+// Module 7790 (CollectiblesCategoryRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7791 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7798 */;
 
 require = fn;
 const prototype = function CollectiblesCategoryRecord(products) {

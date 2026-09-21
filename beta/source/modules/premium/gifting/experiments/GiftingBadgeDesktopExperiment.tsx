@@ -1,10 +1,10 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 11042
+// Function ID: 11043
 // Name: GiftingBadgeDesktopExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 11005 (GiftingBadgeDesktopExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 11042 (GiftingBadgeDesktopExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-gifting-badge-desktop", kind: "user", defaultConfig: { enabled: false }, variations: null };

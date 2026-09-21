@@ -1,15 +1,15 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7376
+// Function ID: 7377
 // Name: GuildRoleMemberActionCreators
-// Dependencies: [5, 7373, 1074, 573, 1271, 1438, 5737, 2]
+// Dependencies: [5, 7375, 1078, 577, 1275, 1442, 5739, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 7374 (GuildRoleMemberActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import privDefault from "priv" /* 1438 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
+// Module 7376 (GuildRoleMemberActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import privDefault from "priv" /* 1442 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7373 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7375 */;
 
 const require = globalThis.__r;
 
@@ -52,7 +52,7 @@ let closure_7 = async function _fetchMemberCounts(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -95,14 +95,14 @@ let closure_7 = async function _fetchMemberCounts(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp7) {
       c1 = tmp;
       throw tmp7;
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 let closure_8 = new privDefault({ maxAge: 10000 });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_settings/GuildRoleMemberActionCreators.tsx");

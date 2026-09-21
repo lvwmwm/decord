@@ -1,26 +1,36 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 15083
+// Function ID: 15084
 // Name: TinyBroncoSettingsNoticesLazy
-// Dependencies: [21, 2]
-// Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTinyBroncoTeenNotice, shouldShowTinyBroncoUnconfirmedNotice, useIsTinyBroncoSettingsNoticeEnabled, useTinyBroncoMessageRequestsNoticeVariant
+// Dependencies: [21, 558, 568, 2]
+// Exports: shouldShowTinyBroncoTeenNotice, shouldShowTinyBroncoUnconfirmedNotice, useIsTinyBroncoSettingsNoticeEnabled, useTinyBroncoMessageRequestsNoticeVariant
 
-// Module 15094 (TinyBroncoSettingsNoticesLazy)
+// Module 15083 (TinyBroncoSettingsNoticesLazy)
 import jsxProd from "jsxProd" /* 21 */;
+import c from "c" /* 568 */;
+import "ReactCompilerGating";
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
-let c0 = null;
+let c2 = null;
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  c.c(1);
+  return null;
+}) : (() => null);
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  c.c(1);
+  return null;
+}) : (() => null);
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoSettingsNoticesLazy.tsx");
 
-export function ContentFiltersTeenNotice() {
+export const ContentFiltersTeenNotice = tmp2;
+export const ContentFiltersUnconfirmedNotice = tmp3;
+export const MessageRequestsNotice = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  c.c(1);
   return null;
-}
-export function ContentFiltersUnconfirmedNotice() {
-  return null;
-}
-export function MessageRequestsNotice() {
-  return null;
-}
+}) : (() => null);
 export const useTinyBroncoMessageRequestsNoticeVariant = function useTinyBroncoMessageRequestsNoticeVariant() {
   let messageRequestsNoticeVariant;
   if (_null != null) {

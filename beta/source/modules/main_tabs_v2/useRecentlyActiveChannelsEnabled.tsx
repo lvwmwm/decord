@@ -1,19 +1,19 @@
-// Module ID: 7778
-// Function ID: 7779
+// Module ID: 7783
+// Function ID: 7784
 // Name: useRecentlyActiveChannelsEnabled
-// Dependencies: [5844, 5843, 2]
+// Dependencies: [5842, 558, 5841, 2]
 // Exports: isRecentlyActiveChannelsEnabled, useRecentlyActiveChannelsEnabled
 
-// Module 7778 (useRecentlyActiveChannelsEnabled)
-import useDesignToggleDefault from "useDesignToggle" /* 5843 */;
-import DesignTogglesStore from "DesignTogglesStore" /* 5844 */;
+// Module 7783 (useRecentlyActiveChannelsEnabled)
+import useDesignToggleDefault from "useDesignToggle" /* 5841 */;
+import DesignTogglesStore from "DesignTogglesStore" /* 5842 */;
 
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/useRecentlyActiveChannelsEnabled.tsx");
+const result1 = size.fileFinishedImporting("modules/main_tabs_v2/useRecentlyActiveChannelsEnabled.tsx");
 
 export const isRecentlyActiveChannelsEnabled = function isRecentlyActiveChannelsEnabled() {
   return DesignTogglesStore.get("enable_recently_active");
 };
-export const useRecentlyActiveChannelsEnabled = function useRecentlyActiveChannelsEnabled() {
-  return useDesignToggleDefault("enable_recently_active");
-};
+export const useRecentlyActiveChannelsEnabled = () => useDesignToggleDefault("enable_recently_active");

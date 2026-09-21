@@ -1,11 +1,11 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 12188
+// Function ID: 12189
 // Name: getPreviewVideoAssetUrl
-// Dependencies: [1074, 2]
+// Dependencies: [1078, 2]
 // Exports: default
 
-// Module 12311 (getPreviewVideoAssetUrl)
-import Constants from "Constants" /* 1074 */;
+// Module 12188 (getPreviewVideoAssetUrl)
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

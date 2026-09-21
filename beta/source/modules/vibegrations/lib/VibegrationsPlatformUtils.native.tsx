@@ -1,22 +1,22 @@
-// Module ID: 9312
-// Function ID: 9313
+// Module ID: 9310
+// Function ID: 9311
 // Name: VibegrationsPlatformUtils
-// Dependencies: [5, 9313, 1979, 9309, 9314, 9317, 8610, 9318, 9319, 1086, 9557, 9561, 8569, 9562, 9564, 13182, 13183, 13184, 13186, 13187, 2]
+// Dependencies: [5, 9311, 1983, 9307, 9312, 9315, 8615, 9316, 9317, 1090, 9553, 9557, 8574, 9558, 9560, 13181, 13182, 13183, 13185, 13186, 2]
 // Exports: inspectVibegrationsPreviewPoint
 
-// Module 9312 (VibegrationsPlatformUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9318 */;
-import ApplicationUtils from "ApplicationUtils" /* 9319 */;
-import PushNotificationDefault from "PushNotification" /* 9557 */;
-import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 9561 */;
-import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13183 */;
-import vibegrationsPreviewNativeSurfaces from "vibegrationsPreviewNativeSurfaces" /* 13184 */;
-import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13187 */;
+// Module 9310 (VibegrationsPlatformUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9316 */;
+import ApplicationUtils from "ApplicationUtils" /* 9317 */;
+import PushNotificationDefault from "PushNotification" /* 9553 */;
+import vibegrationsPreviewCall from "vibegrationsPreviewCall" /* 9557 */;
+import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13182 */;
+import vibegrationsPreviewNativeSurfaces from "vibegrationsPreviewNativeSurfaces" /* 13183 */;
+import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /* 13186 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9313 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+import FramesStore from "FramesStore" /* 9311 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
 
 require = fn;
 function previewFrameIdentity(arg0) {
@@ -28,9 +28,9 @@ function previewFrameIdentity(arg0) {
   if (null == prop) {
     return null;
   } else {
-    const frame = FramesStore.getFrame(closure_1_10(prop, React7));
+    const frame = FramesStore.getFrame(v65535(prop, options));
     let iframeId = null;
-    if (React6(frame)) {
+    if (closure_1_8(frame)) {
       iframeId = frame.data.iframeId;
     }
     return iframeId;
@@ -44,10 +44,10 @@ function previewFrameHeld(arg0) {
   }
   let tmp3 = null;
   if (null != prop) {
-    const frame = FramesStore.getFrame(closure_1_10(prop, React7));
+    const frame = FramesStore.getFrame(v65535(prop, options));
     let tmp8 = null;
     if (null != frame) {
-      const obj = { applicationId: prop, launched: React6(frame) };
+      const obj = { applicationId: prop, launched: closure_1_8(frame) };
       tmp8 = obj;
     }
     tmp3 = tmp8;
@@ -62,10 +62,10 @@ function launchedPreviewFrame(arg0) {
   }
   let tmp3 = null;
   if (null != prop) {
-    const frame = FramesStore.getFrame(closure_1_10(prop, React7));
+    const frame = FramesStore.getFrame(v65535(prop, options));
     let tmp8 = null;
     if (null != frame) {
-      const obj = { applicationId: prop, launched: React6(frame) };
+      const obj = { applicationId: prop, launched: closure_1_8(frame) };
       tmp8 = obj;
     }
     tmp3 = tmp8;
@@ -123,10 +123,10 @@ function waitForPreviewFrame(arg0, arg1, fn) {
             }
             let tmp9 = null;
             if (null != prop) {
-              const frame = FramesStore.getFrame(closure_3_10(prop, React7));
+              const frame = FramesStore.getFrame(v65535(prop, options));
               let tmp14 = null;
               if (null != frame) {
-                const obj = { applicationId: prop, launched: React6(frame) };
+                const obj = { applicationId: prop, launched: closure_3_8(frame) };
                 tmp14 = obj;
               }
               tmp9 = tmp14;
@@ -219,7 +219,7 @@ let closure_18 = async function _relayPreviewCapture(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -280,7 +280,7 @@ let closure_18 = async function _relayPreviewCapture(arg0, value) {
             const obj8 = { value: { status: "unavailable" }, done: true };
             return obj8;
           } else if (null == closure_132_2) {
-            let obj9 = { uploadToken: "r" };
+            let obj9 = { uploadToken: "emoji" };
           } else {
             c8 = 2;
             c9 = 1;
@@ -366,7 +366,7 @@ let closure_20 = async function _inspectVibegrationsPreviewPoint(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -438,7 +438,7 @@ let closure_21 = async function _relayPreviewControl(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -616,12 +616,12 @@ let closure_21 = async function _relayPreviewControl(arg0, value) {
     }
   }
 };
-const FramesConstants = fn(9314);
+const FramesConstants = fn(9312);
 ({ isLaunched: closure_8, MAIN_SURFACE: closure_9, makeFrameId: c10 } = FramesConstants);
-const LocalNotificationTypes = fn(9317).LocalNotificationTypes;
-let items = [fn(8610).OAuth2Scopes.BOT, fn(8610).OAuth2Scopes.APPLICATIONS_COMMANDS];
+const LocalNotificationTypes = fn(9315).LocalNotificationTypes;
+let items = [fn(8615).OAuth2Scopes.BOT, fn(8615).OAuth2Scopes.APPLICATIONS_COMMANDS];
 let c19 = 0;
-const vibegrationsPreviewOperationSurfaces = fn(13186);
+const vibegrationsPreviewOperationSurfaces = fn(13185);
 let closure_22 = vibegrationsPreviewOperationSurfaces.createPreviewOperationSurfaces((arg0) => {
   const project = VibegrationsProjectStore.getProject(arg0);
   let prop;

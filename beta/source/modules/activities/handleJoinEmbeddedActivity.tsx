@@ -1,16 +1,16 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9633
+// Function ID: 9634
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 4983, 2041, 2095, 1372, 2040, 2004, 9638, 9575, 4385, 9639, 9604, 9603, 9614, 9615, 9600, 13181, 9593, 2]
+// Dependencies: [5, 4985, 2045, 2099, 1376, 2044, 2008, 9634, 9571, 4389, 9635, 9600, 9599, 9610, 9611, 9596, 13180, 9589, 2]
 // Exports: default
 
-// Module 9637 (handleJoinEmbeddedActivity)
+// Module 9633 (handleJoinEmbeddedActivity)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserStore from "UserStore" /* 1372 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserStore from "UserStore" /* 1376 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 const require = globalThis.__r;
 
@@ -26,7 +26,7 @@ let closure_10 = async function _handleJoinEmbeddedActivityInternal(arg0, value)
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -64,7 +64,7 @@ let closure_10 = async function _handleJoinEmbeddedActivityInternal(arg0, value)
           closure_129_18 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -218,7 +218,7 @@ let closure_10 = async function _handleJoinEmbeddedActivityInternal(arg0, value)
     }
   }
 };
-let closure_9 = fn(2004).SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES;
+let closure_9 = fn(2008).SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/activities/handleJoinEmbeddedActivity.tsx");
 

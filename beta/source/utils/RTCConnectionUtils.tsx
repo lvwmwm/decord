@@ -1,11 +1,11 @@
-// Module ID: 10297
-// Function ID: 10298
+// Module ID: 10294
+// Function ID: 10295
 // Name: RTCConnectionUtils
-// Dependencies: [1074, 1115, 2]
+// Dependencies: [1078, 1119, 2]
 
-// Module 10297 (RTCConnectionUtils)
-import util from "util" /* 1115 */;
-import Constants from "Constants" /* 1074 */;
+// Module 10294 (RTCConnectionUtils)
+import util from "util" /* 1119 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ RTCConnectionStates: c2, ConnectionStatus: c3 } = Constants);

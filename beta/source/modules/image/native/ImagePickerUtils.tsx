@@ -1,11 +1,11 @@
-// Module ID: 5367
-// Function ID: 5368
+// Module ID: 5369
+// Function ID: 5370
 // Name: ImagePickerUtils
-// Dependencies: [1609, 2]
+// Dependencies: [1613, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 5367 (ImagePickerUtils)
-import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
+// Module 5369 (ImagePickerUtils)
+import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");

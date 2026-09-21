@@ -1,11 +1,11 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14335
+// Function ID: 14336
 // Name: WindowsMediaFoundationCpuEncodeIntel
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 // Exports: getWmfCpuEncodeIntel
 
-// Module 14332 (WindowsMediaFoundationCpuEncodeIntel)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14335 (WindowsMediaFoundationCpuEncodeIntel)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-wmf-cpu-encode-intel", kind: "user", defaultConfig: { enabled: false }, variations: null };

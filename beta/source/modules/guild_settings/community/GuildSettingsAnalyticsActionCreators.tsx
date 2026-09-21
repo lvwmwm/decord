@@ -1,18 +1,18 @@
-// Module ID: 18134
-// Function ID: 18135
+// Module ID: 18137
+// Function ID: 18138
 // Name: GuildSettingsAnalyticsActionCreators
-// Dependencies: [109, 1074, 1271, 573, 2]
+// Dependencies: [109, 1078, 1275, 577, 2]
 // Exports: fetchEngagementOverview, fetchGrowthActivationOverview, fetchGrowthActivationRetention
 
-// Module 18134 (GuildSettingsAnalyticsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 18137 (GuildSettingsAnalyticsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 let closure_3 = ["interval_start_timestamp", "pct_retained"];
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsActionCreators.tsx");
 

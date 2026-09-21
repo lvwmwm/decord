@@ -1,10 +1,10 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17421
+// Function ID: 17422
 // Name: PremiumTrialOfferActionSheetKillSwitchExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 17418 (PremiumTrialOfferActionSheetKillSwitchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 17421 (PremiumTrialOfferActionSheetKillSwitchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-09-premium-trial-offer-action-sheet-ks", kind: "user", defaultConfig: { enabled: false }, variations: null };

@@ -1,10 +1,10 @@
-// Module ID: 16870
-// Function ID: 16871
+// Module ID: 16873
+// Function ID: 16874
 // Name: HideCoveredChannelsExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 16870 (HideCoveredChannelsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 16873 (HideCoveredChannelsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-hide-covered-channels", kind: "user", defaultConfig: { enabled: false }, variations: null };

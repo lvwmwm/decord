@@ -1,37 +1,214 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16707
+// Function ID: 16708
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4778, 2041, 4395, 4796, 4405, 5496, 4775, 1074, 4600, 16706, 16707, 2019, 11142, 8434, 504, 11140, 11141, 11148, 1115, 11150, 2]
-// Exports: useYouBarAccessibilityLabel
+// Dependencies: [4780, 2045, 4399, 4798, 4409, 5498, 4777, 1078, 558, 568, 4603, 16708, 16709, 2023, 11184, 8439, 11182, 11183, 11190, 1119, 11192, 504, 2]
 
-// Module 16705 (useYouBarAccessibilityLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11140 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 11141 */;
-import isGameActivityDefault from "isGameActivity" /* 11148 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 11150 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+// Module 16707 (useYouBarAccessibilityLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11182 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 11183 */;
+import isGameActivityDefault from "isGameActivity" /* 11190 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 11192 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ActivityTypes: c10, StatusTypes: closure_11 } = Constants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarAccessibilityLabel.tsx");
 
-export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(stateFromStores) {
-  _require = id(4600).useName(stateFromStores);
+export const useYouBarAccessibilityLabel = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  const cResult = name(youBarActivityStatusEnabled[9]).c(7);
+  let obj = name(youBarActivityStatusEnabled[9]);
+  name = id(youBarActivityStatusEnabled[10]).useName(id);
   id = undefined;
-  if (stateFromStores != null) {
-    id = stateFromStores.id;
+  if (id != null) {
+    id = id.id;
   }
-  let obj = id(4600);
+  const obj2 = id(youBarActivityStatusEnabled[10]);
+  youBarActivityStatusEnabled = name(youBarActivityStatusEnabled[11]).useYouBarActivityStatusEnabled("YouBar");
+  const tmpResult = name(youBarActivityStatusEnabled[11]);
+  const isYouBarGuildTagEnabled = name(youBarActivityStatusEnabled[12]).useIsYouBarGuildTagEnabled("YouBar");
+  const CustomStatusSetting = tmp(tmp2[13]).CustomStatusSetting;
+  const setting = CustomStatusSetting.useSetting();
+  let text;
+  if (setting != null) {
+    text = setting.text;
+  }
+  const tmpResult5 = name(youBarActivityStatusEnabled[12]);
+  let tmp10 = null;
+  if ("" !== text) {
+    tmp10 = text;
+  }
+  const gameMentionsAsPlainText = name(youBarActivityStatusEnabled[14]).useGameMentionsAsPlainText(tmp10);
+  let tmp12;
+  if (isYouBarGuildTagEnabled) {
+    let primaryGuild;
+    if (id != null) {
+      primaryGuild = id.primaryGuild;
+    }
+    const userPrimaryGuild = tmp(tmp2[15]).getUserPrimaryGuild(primaryGuild);
+    let tag;
+    if (userPrimaryGuild != null) {
+      tag = userPrimaryGuild.tag;
+    }
+    tmp12 = tag;
+    const tmpResult7 = tmp(tmp2[15]);
+  }
+  tag = tmp12;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [SelfPresenceStore, gameMentionsAsPlainText, RelationshipStore, tag, PermissionStore, VoiceStateStore, PresenceStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === gameMentionsAsPlainText) {
+    if (cResult[2] === tmp12) {
+      if (cResult[3] === name) {
+        if (cResult[4] === youBarActivityStatusEnabled) {
+          if (cResult[5] === id) {
+            let tmp24 = cResult[6];
+          }
+          return tmp(tmp2[21]).useStateFromStores(first, tmp24);
+        }
+      }
+    }
+  }
+  class A {
+    constructor() {
+      if (null != closure_0) {
+        tmp2 = closure_8;
+        status = closure_8.getStatus();
+        tmp4 = closure_0;
+        tmp5 = closure_2;
+        obj = closure_0(closure_2[16]);
+        tmp6 = id;
+        tmp7 = closure_3;
+        items = [, ];
+        items[0] = closure_3;
+        tmp8 = closure_7;
+        items[1] = closure_7;
+        discoverableApplicationStream = obj.getDiscoverableApplicationStream(id, items);
+        obj2 = closure_0(closure_2[17]);
+        obj1 = { userId: null };
+        obj1.userId = id;
+        obj8 = { ChannelStore: null, PermissionStore: null, VoiceStateStore: null };
+        tmp10 = closure_4;
+        obj8.ChannelStore = closure_4;
+        tmp11 = closure_5;
+        obj8.PermissionStore = closure_5;
+        tmp12 = closure_9;
+        obj8.VoiceStateStore = closure_9;
+        voiceChannel = obj2.getVisibleUserVoiceActivity(obj1, obj8).voiceChannel;
+        tmp13 = closure_2;
+        text = null;
+        if (closure_2) {
+          text = null;
+          if (null != tmp6) {
+            text = null;
+            if (status !== StatusTypes.OFFLINE) {
+              text = null;
+              if (status !== StatusTypes.INVISIBLE) {
+                tmp25 = closure_6;
+                activities = closure_6.getActivities(tmp6);
+                if (null != discoverableApplicationStream) {
+                  name = undefined;
+                  if (activities != null) {
+                    tmp20 = closure_1;
+                    found = activities.find(closure_1(tmp5[18]));
+                    if (found != null) {
+                      name = found.name;
+                    }
+                  }
+                  if (null == name) {
+                    intl3 = tmp4(tmp5[19]).intl;
+                    stringResult = intl3.string(tmp4(tmp5[19]).t.eXan7B);
+                    tmp23 = stringResult;
+                  } else {
+                    str = "";
+                  }
+                  intl4 = tmp4(tmp5[19]).intl;
+                  obj9 = { name: null };
+                  obj9.name = name;
+                  stringResult = intl4.formatToPlainString(tmp4(tmp5[19]).t["0wJXSh"], obj9);
+                } else {
+                  found1 = undefined;
+                  if (activities != null) {
+                    found1 = activities.find(() => { ... });
+                  }
+                  if (null != found1) {
+                    tmp18 = closure_1;
+                    flag = true;
+                    text = closure_1(tmp5[20])(found1, true).text;
+                  } else {
+                    text = null;
+                    if (null != voiceChannel) {
+                      if (!voiceChannel.isDM()) {
+                        if (!voiceChannel.isGroupDM()) {
+                          isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
+                          intl = tmp4(tmp5[19]).intl;
+                          string = intl.string;
+                          t = tmp4(tmp5[19]).t;
+                          if (isGuildStageVoiceResult) {
+                            stringResult1 = string(t.QygGCN);
+                          } else {
+                            stringResult1 = string(t.msxteM);
+                          }
+                        }
+                        text = stringResult1;
+                      }
+                      intl2 = tmp4(tmp5[19]).intl;
+                      stringResult1 = intl2.string(tmp4(tmp5[19]).t["9FaEzi"]);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        if (text == null) {
+          text = closure_3;
+        }
+        if (text == null) {
+          tmp4Result = tmp4(tmp5[10]);
+          text = tmp4Result.humanizeStatus(status);
+        }
+        items1 = [, , ];
+        items1[0] = tmp;
+        tmp24 = tag;
+        items1[1] = tag;
+        items1[2] = text;
+        found2 = items1.filter(() => { ... });
+        str2 = ", ";
+        return found2.join(", ");
+      } else {
+        return;
+      }
+    }
+  }
+  cResult[1] = gameMentionsAsPlainText;
+  cResult[2] = tmp12;
+  cResult[3] = name;
+  cResult[4] = youBarActivityStatusEnabled;
+  cResult[5] = id;
+  cResult[6] = A;
+  tmp24 = A;
+}) : ((id) => {
+  _require = id(4603).useName(id);
+  id = undefined;
+  if (id != null) {
+    id = id.id;
+  }
+  let obj = id(4603);
   dependencyMap = require("YouBarActivityStatusExperiment").useYouBarActivityStatusEnabled("YouBar");
   const obj2 = require("YouBarActivityStatusExperiment");
   const isYouBarGuildTagEnabled = require("YouBarGuildTagExperiment").useIsYouBarGuildTagEnabled("YouBar");
@@ -50,16 +227,16 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
   let tmp8;
   if (isYouBarGuildTagEnabled) {
     let primaryGuild;
-    if (stateFromStores != null) {
-      primaryGuild = stateFromStores.primaryGuild;
+    if (id != null) {
+      primaryGuild = id.primaryGuild;
     }
-    const userPrimaryGuild = tmp3(8434).getUserPrimaryGuild(primaryGuild);
+    const userPrimaryGuild = tmp3(8439).getUserPrimaryGuild(primaryGuild);
     let tag;
     if (userPrimaryGuild != null) {
       tag = userPrimaryGuild.tag;
     }
     tmp8 = tag;
-    const tmp3Result3 = tmp3(8434);
+    const tmp3Result3 = tmp3(8439);
   }
   tag = tmp8;
   const tmp3Result = require("useGameMentionsAsPlainText");
@@ -90,12 +267,12 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
                   }
                 }
                 if (null == name) {
-                  const intl3 = tmp4(1115).intl;
-                  let stringResult = intl3.string(tmp4(1115).t.eXan7B);
+                  const intl3 = tmp4(1119).intl;
+                  let stringResult = intl3.string(tmp4(1119).t.eXan7B);
                 }
-                const intl4 = tmp4(1115).intl;
+                const intl4 = tmp4(1119).intl;
                 const obj5 = { name };
-                stringResult = intl4.formatToPlainString(tmp4(1115).t["0wJXSh"], obj5);
+                stringResult = intl4.formatToPlainString(tmp4(1119).t["0wJXSh"], obj5);
               } else {
                 let found1;
                 if (activities != null) {
@@ -111,9 +288,9 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
                   if (null != voiceChannel) {
                     if (!voiceChannel.isDM()) {
                       if (!voiceChannel.isGroupDM()) {
-                        const intl = tmp4(1115).intl;
+                        const intl = tmp4(1119).intl;
                         const string = intl.string;
-                        const t = tmp4(1115).t;
+                        const t = tmp4(1119).t;
                         if (isGuildStageVoiceResult) {
                           let stringResult1 = string(t.QygGCN);
                         } else {
@@ -123,8 +300,8 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
                       }
                       text = stringResult1;
                     }
-                    const intl2 = tmp4(1115).intl;
-                    stringResult1 = intl2.string(tmp4(1115).t["9FaEzi"]);
+                    const intl2 = tmp4(1119).intl;
+                    stringResult1 = intl2.string(tmp4(1119).t["9FaEzi"]);
                   }
                 }
               }
@@ -136,12 +313,12 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
         text = closure_3;
       }
       if (text == null) {
-        text = tmp4(4600).humanizeStatus(status);
-        const tmp4Result = tmp4(4600);
+        text = tmp4(4603).humanizeStatus(status);
+        const tmp4Result = tmp4(4603);
       }
       const items1 = [tmp, tag, text];
       const found2 = items1.filter((item) => null != item);
       return found2.join(", ");
     }
   });
-};
+});

@@ -1,10 +1,10 @@
-// Module ID: 4573
-// Function ID: 4574
+// Module ID: 4576
+// Function ID: 4577
 // Name: GraphicTypes
 // Dependencies: [2]
 // Exports: isImage, isRive
 
-// Module 4573 (GraphicTypes)
+// Module 4576 (GraphicTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Graphic/GraphicTypes.native.tsx");
@@ -12,6 +12,6 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/design/
 export const isImage = function isImage(type) {
   return "image" === type.type;
 };
-export const isRive = function isRive(merged) {
-  return "rive" === merged.type;
+export const isRive = function isRive(cResult) {
+  return "rive" === cResult.type;
 };

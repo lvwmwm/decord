@@ -1,16 +1,16 @@
-// Module ID: 7491
-// Function ID: 7492
+// Module ID: 7493
+// Function ID: 7494
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 2097, 7341, 2041, 2099, 2063, 1074, 2048, 5274, 7492, 7501, 7471, 7504, 7506, 7467, 7507, 7508, 4668, 7509, 7469, 1370, 7556, 4769, 4910, 2]
+// Dependencies: [5, 2101, 7343, 2045, 2103, 2067, 1078, 2052, 5276, 7494, 7503, 7473, 7506, 7508, 7469, 7509, 7510, 4671, 7511, 7471, 1374, 7558, 4771, 4912, 2]
 // Exports: default
 
-// Module 7491 (isAccessibleChannelOrThreadPath)
+// Module 7493 (isAccessibleChannelOrThreadPath)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatedChannelStore from "GatedChannelStore" /* 2097 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7341 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GatedChannelStore from "GatedChannelStore" /* 2101 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7343 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
 let closure_13 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
@@ -24,7 +24,7 @@ let closure_13 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -43,12 +43,12 @@ let closure_13 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
           closure_130_0 = undefined;
           closure_130_1 = undefined;
           ({ guildId: closure_130_0, channelId: closure_130_1 } = closure_0);
-          let guild;
+          guild = undefined;
           let unsafeMutableRoles;
           let channel2;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -242,9 +242,9 @@ let closure_13 = async function _isAccessibleChannelOrThreadPath(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ GuildFeatures: closure_9, ME: c10 } = Constants);
-const ChannelConstants = fn(2048);
+const ChannelConstants = fn(2052);
 ({ isStaticChannelRoute: closure_11, StaticChannelRoute: closure_12 } = ChannelConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/links/isAccessibleChannelOrThreadPath.tsx");

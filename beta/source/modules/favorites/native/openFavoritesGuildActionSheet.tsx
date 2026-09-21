@@ -1,12 +1,12 @@
 // Module ID: 16475
 // Function ID: 16476
 // Name: openFavoritesGuildActionSheet
-// Dependencies: [4723, 16476, 1980, 2]
+// Dependencies: [4725, 16476, 1984, 2]
 // Exports: default
 
 // Module 16475 (openFavoritesGuildActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import size from "module_2" /* 2 */;
 
 const FavoritesGuildActionSheet = "FavoritesGuildActionSheet";

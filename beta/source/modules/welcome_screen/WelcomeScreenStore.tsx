@@ -1,14 +1,14 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12931
+// Function ID: 12932
 // Name: WelcomeScreenStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 12907 (WelcomeScreenStore)
+// Module 12931 (WelcomeScreenStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 function handleInviteData(invite) {
-  const guild = invite.invite.guild;
+  guild = invite.invite.guild;
   let welcome_screen;
   if (guild != null) {
     welcome_screen = guild.welcome_screen;

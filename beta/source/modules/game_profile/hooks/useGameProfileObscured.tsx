@@ -1,19 +1,69 @@
-// Module ID: 5327
-// Function ID: 5328
+// Module ID: 5329
+// Function ID: 5330
 // Name: useGameProfileObscured
-// Dependencies: [1372, 5328, 504, 2]
-// Exports: default, isGameProfileObscured
+// Dependencies: [1376, 5330, 558, 568, 504, 2]
+// Exports: isGameProfileObscured
 
-// Module 5327 (useGameProfileObscured)
+// Module 5329 (useGameProfileObscured)
 import initialize from "initialize" /* 504 */;
-import utils from "utils" /* 5328 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import utils from "utils" /* 5330 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
+function isGameProfileObscured(game, nsfwAllowed) {
+  let result = null != game;
+  if (result) {
+    result = false === nsfwAllowed;
+  }
+  if (result) {
+    result = utils.isAgeRestrictedContentClassification(game.contentClassification);
+  }
+  return result;
+}
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");
 
-export default function useGameProfileObscured(contentClassification) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((contentClassification) => {
+  const cResult = c.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      currentUser = currentUser.getCurrentUser();
+      let nsfwAllowed;
+      if (currentUser != null) {
+        nsfwAllowed = currentUser.nsfwAllowed;
+      }
+      return nsfwAllowed;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === contentClassification) {
+    if (cResult[3] === stateFromStores) {
+      let tmp8 = cResult[4];
+    }
+    return tmp8;
+  }
+  let result = null != contentClassification;
+  if (result) {
+    result = false === stateFromStores;
+  }
+  if (result) {
+    result = tmp(5330).isAgeRestrictedContentClassification(contentClassification.contentClassification);
+    const tmpResult2 = tmp(5330);
+  }
+  cResult[2] = contentClassification;
+  cResult[3] = stateFromStores;
+  cResult[4] = result;
+  tmp8 = result;
+}) : ((contentClassification) => {
   initialize;
   [][0] = UserStore;
   let result = null != contentClassification;
@@ -25,14 +75,5 @@ export default function useGameProfileObscured(contentClassification) {
     const tmpResult = utils;
   }
   return result;
-};
-export const isGameProfileObscured = function isGameProfileObscured(game, nsfwAllowed) {
-  let result = null != game;
-  if (result) {
-    result = false === nsfwAllowed;
-  }
-  if (result) {
-    result = utils.isAgeRestrictedContentClassification(game.contentClassification);
-  }
-  return result;
-};
+});
+export { isGameProfileObscured };

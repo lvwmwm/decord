@@ -1,13 +1,13 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14413
+// Function ID: 14414
 // Name: createWaveTransition
-// Dependencies: [14409, 4757, 4492, 2]
+// Dependencies: [14412, 4759, 4497, 2]
 // Exports: createWaveTransition
 
-// Module 14411 (createWaveTransition)
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
-import waveTransition from "waveTransition" /* 14409 */;
+// Module 14413 (createWaveTransition)
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import timing from "timing" /* 4759 */;
+import waveTransition from "waveTransition" /* 14412 */;
 import size from "module_2" /* 2 */;
 
 function incomingSlotForPass(rounded) {
@@ -36,7 +36,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
   }
   let DEFAULT_PASS_DURATION = duration.duration;
   if (DEFAULT_PASS_DURATION == null) {
-    DEFAULT_PASS_DURATION = obj(14409).DEFAULT_PASS_DURATION;
+    DEFAULT_PASS_DURATION = obj(14412).DEFAULT_PASS_DURATION;
   }
   obj = { duration: DEFAULT_PASS_DURATION, random: null, reducedMotion: null, respectReducedMotion: null, animationProgress: null, crossFadeOpacity: null, glyphCount: null, onPass: null, onStart: null, onComplete: null };
   let random = duration.rng;
@@ -70,7 +70,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
   let str2 = "";
   if (0 < glyphCountResult) {
     do {
-      let GLYPH_PEAK = obj(14409).GLYPH_PEAK;
+      let GLYPH_PEAK = obj(14412).GLYPH_PEAK;
       let tmp5Result = tmp5();
       str = `${tmp8(tmp9 * obj(c1[0]).GLYPH_PEAK.length | 0)}`;
       num = num + 1;
@@ -115,7 +115,7 @@ export const createWaveTransition = function createWaveTransition(duration) {
       c6 = closure_4;
     },
     stop,
-    setTransition(current, current2) {
+    setTransition(current2, current) {
       if (null != closure_7) {
         const _clearTimeout = clearTimeout;
         clearTimeout(closure_7);
@@ -138,16 +138,16 @@ export const createWaveTransition = function createWaveTransition(duration) {
         if (result2 === 0) {
           str2 = "B";
         }
-        if (current !== ("A" === str2 ? slotB : slotA)) {
+        if (current2 !== ("A" === str2 ? slotB : slotA)) {
           if (typeof tmp8 === "function") {
             let str3 = "A";
             if (result2 === 0) {
               str3 = "B";
             }
             if ("A" === str3) {
-              slotB = current;
+              slotB = current2;
             } else {
-              slotA = current;
+              slotA = current2;
             }
           } else {
             throw new TypeError("Trying to call a non-function");
@@ -159,9 +159,9 @@ export const createWaveTransition = function createWaveTransition(duration) {
             str4 = "B";
           }
           if ("A" === str4) {
-            slotA = current2;
+            slotA = current;
           } else {
-            slotB = current2;
+            slotB = current;
           }
           id = id + 1;
           const obj3 = { id, slotA, slotB, band: null };

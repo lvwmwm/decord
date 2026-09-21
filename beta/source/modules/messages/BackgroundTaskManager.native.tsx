@@ -1,12 +1,12 @@
-// Module ID: 7997
-// Function ID: 7998
+// Module ID: 8002
+// Function ID: 8003
 // Name: BackgroundTaskManager
-// Dependencies: [5, 17, 1364, 7998, 8000, 2]
+// Dependencies: [5, 17, 1368, 8003, 8005, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7997 (BackgroundTaskManager)
-import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 7998 */;
+// Module 8002 (BackgroundTaskManager)
+import PlatformUtils2 from "PlatformUtils" /* 1368 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8003 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -17,7 +17,7 @@ function startBackgroundTask(arg0) {
       return promise;
     } else {
       ({ title, content } = arg0);
-      const obj3 = { title, content, priority: tmp(8000).ServiceNotificationPriority.MEDIUM, type: tmp(8000).ServiceNotificationType.FILE_UPLOAD, usesGateway: false };
+      const obj3 = { title, content, priority: tmp(8005).ServiceNotificationPriority.MEDIUM, type: tmp(8005).ServiceNotificationType.FILE_UPLOAD, usesGateway: false };
       return ForegroundServiceManagerDefault.addServiceHandler(obj3);
     }
   } else {
@@ -27,7 +27,7 @@ function startBackgroundTask(arg0) {
   obj = PlatformUtils2;
 }
 const NativeModules = fn(17).NativeModules;
-const PlatformUtils = fn(1364);
+const PlatformUtils = fn(1368);
 let num = -1;
 if (!PlatformUtils.isAndroid()) {
   num = NativeModules.DCDBackgroundTaskManager.backgroundTaskIdentifierInvalid;
@@ -57,7 +57,7 @@ function backgroundify(arg0, arg1) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

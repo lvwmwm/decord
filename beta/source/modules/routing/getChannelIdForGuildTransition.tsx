@@ -1,25 +1,25 @@
-// Module ID: 7462
-// Function ID: 7463
+// Module ID: 7464
+// Function ID: 7465
 // Name: getChannelIdForGuildTransition
-// Dependencies: [2044, 7341, 2041, 2096, 2063, 2095, 7463, 1074, 2048, 7467, 7469, 7471, 5274, 2066, 2]
+// Dependencies: [2048, 7343, 2045, 2100, 2067, 2099, 7465, 1078, 2052, 7469, 7471, 7473, 5276, 2070, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 7462 (getChannelIdForGuildTransition)
-import FavoritesUtils from "FavoritesUtils" /* 2066 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5274 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7467 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7471 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7341 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7463 */;
+// Module 7464 (getChannelIdForGuildTransition)
+import FavoritesUtils from "FavoritesUtils" /* 2070 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7469 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7473 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7343 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7465 */;
 
 require = fn;
-const ME = fn(1074).ME;
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const ME = fn(1078).ME;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");
 
@@ -66,7 +66,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
       obj2 = SlayerStorefrontUtils;
     }
     if (channelId === tmp8.VIBEGRATIONS) {
-      const guild = GuildStore.getGuild(guildId);
+      guild = GuildStore.getGuild(guildId);
       let tmp21 = id;
       if (null != guild) {
         tmp21 = id;

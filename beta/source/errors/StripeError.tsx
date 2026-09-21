@@ -1,10 +1,10 @@
-// Module ID: 4658
-// Function ID: 4659
+// Module ID: 4661
+// Function ID: 4662
 // Name: StripeError
-// Dependencies: [4436, 2]
+// Dependencies: [4440, 2]
 
-// Module 4658 (StripeError)
-import BillingError from "BillingError" /* 4436 */;
+// Module 4661 (StripeError)
+import BillingError from "BillingError" /* 4440 */;
 
 const prototype = function StripeError(error) {
   error = error.error;

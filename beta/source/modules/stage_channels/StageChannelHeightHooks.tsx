@@ -1,18 +1,16 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 10178
+// Function ID: 10179
 // Name: StageChannelHeightHooks
-// Dependencies: [8898, 2]
-// Exports: useGetActionBarHeight, useGetStageRTCPanelHeight
+// Dependencies: [558, 8903, 2]
 
-// Module 9764 (StageChannelHeightHooks)
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8898 */;
+// Module 10178 (StageChannelHeightHooks)
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8903 */;
+import "ReactCompilerGating";
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/stage_channels/StageChannelHeightHooks.tsx");
-
-export const CALL_ACTION_BAR_HEIGHT = 112;
-export const useGetStageRTCPanelHeight = function useGetStageRTCPanelHeight(stateFromStores) {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(stateFromStores);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
   useStageBlockedUsersCount;
   if (stageBlockedUsersCount > 0) {
     let num = 88;
@@ -20,9 +18,22 @@ export const useGetStageRTCPanelHeight = function useGetStageRTCPanelHeight(stat
     num = 68;
   }
   return num;
-};
-export const useGetActionBarHeight = function useGetActionBarHeight(id) {
-  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(id);
+}) : ((arg0) => {
+  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
+  useStageBlockedUsersCount;
+  if (stageBlockedUsersCount > 0) {
+    let num = 88;
+  } else {
+    num = 68;
+  }
+  return num;
+});
+const result = size.fileFinishedImporting("modules/stage_channels/StageChannelHeightHooks.tsx");
+
+export const CALL_ACTION_BAR_HEIGHT = 112;
+export const useGetStageRTCPanelHeight = tmp2;
+export const useGetActionBarHeight = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
   useStageBlockedUsersCount;
   if (stageBlockedUsersCount > 0) {
     let num = 132;
@@ -30,4 +41,13 @@ export const useGetActionBarHeight = function useGetActionBarHeight(id) {
     num = 112;
   }
   return num;
-};
+}) : ((arg0) => {
+  const stageBlockedUsersCount = useStageBlockedUsersCount.useStageBlockedUsersCount(arg0);
+  useStageBlockedUsersCount;
+  if (stageBlockedUsersCount > 0) {
+    let num = 132;
+  } else {
+    num = 112;
+  }
+  return num;
+});

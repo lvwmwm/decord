@@ -1,29 +1,95 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15162
+// Function ID: 15163
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 4756, 576, 15172, 7834, 4752, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 15161, 7839, 4754, 2]
 
-// Module 15173 (FamilyCenterActivityTotal)
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7834 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15172 */;
+// Module 15162 (FamilyCenterActivityTotal)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7839 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15161 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LEDGE);
 obj2.container = { display: "flex", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 let closure_5 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { display: "flex", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, padding: 12, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityTotal.tsx");
 
-export default function FamilyCenterActivityTotal(displayType) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((displayType) => {
+  const cResult = c.c(11);
+  displayType = displayType.displayType;
+  const tmp4 = closure_5();
+  const actionTotalsForDisplayType = useFamilyCenterActivities.useActionTotalsForDisplayType(displayType);
+  const formattedTotalForDisplayType = useFamilyCenterActivities.useFormattedTotalForDisplayType(displayType);
+  let str = "text-muted";
+  if (actionTotalsForDisplayType > 0) {
+    str = "text-brand";
+  }
+  if (cResult[0] !== displayType) {
+    const activityTypeTextConfigs = tmp(7839).getActivityTypeTextConfigs();
+    value = activityTypeTextConfigs.get(displayType);
+    let tooltipHeaderResult;
+    if (value != null) {
+      tooltipHeaderResult = value.tooltipHeader();
+    }
+    cResult[0] = displayType;
+    cResult[1] = tooltipHeaderResult;
+    let tmp7 = tooltipHeaderResult;
+    const tmpResult = tmp(7839);
+  } else {
+    tmp7 = cResult[1];
+  }
+  let num2 = formattedTotalForDisplayType;
+  if (formattedTotalForDisplayType == null) {
+    num2 = 0;
+  }
+  if (cResult[2] === str) {
+    if (cResult[3] === num2) {
+      let tmp10 = cResult[4];
+    }
+    if (cResult[5] !== tmp7) {
+      const obj4 = { variant: "text-sm/semibold", children: tmp7 };
+      const tmp14 = React3(tmp(4754).Text, obj4);
+      cResult[5] = tmp7;
+      cResult[6] = tmp14;
+      let tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[6];
+    }
+    if (cResult[7] === tmp4.container) {
+      if (cResult[8] === tmp10) {
+        if (cResult[9] === tmp12) {
+          let tmp15 = cResult[10];
+        }
+        return tmp15;
+      }
+    }
+    const obj5 = { style: tmp4.container, children: null };
+    const items = [tmp10, tmp12];
+    obj5.children = items;
+    const tmp18 = React4(View, obj5);
+    cResult[7] = tmp4.container;
+    cResult[8] = tmp10;
+    cResult[9] = tmp12;
+    cResult[10] = tmp18;
+    tmp15 = tmp18;
+  }
+  const tmp11 = React3(Text_Text.Text, { variant: "heading-xxl/medium", color: str, children: num2 });
+  cResult[2] = str;
+  cResult[3] = num2;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
+}) : ((displayType) => {
   displayType = displayType.displayType;
   const tmp = closure_5();
   const actionTotalsForDisplayType = useFamilyCenterActivities.useActionTotalsForDisplayType(displayType);
@@ -47,4 +113,4 @@ export default function FamilyCenterActivityTotal(displayType) {
   const items = [React3(Text_Text.Text, obj4), React3(Text_Text.Text, { variant: "text-sm/semibold", children: tooltipHeaderResult })];
   obj3.children = items;
   return React4(View, obj3);
-};
+});

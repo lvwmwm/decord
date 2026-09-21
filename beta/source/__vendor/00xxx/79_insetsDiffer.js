@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "flexDirection", right: "y", bottom: "HermesInternal" };
+let closure_0 = { top: "toCharArray$esjava$1", left: "T", right: "IconComponent", bottom: "Set" };
 
 export default function insetsDiffer(arg0, arg1) {
   let rect = arg0;

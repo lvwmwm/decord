@@ -1,10 +1,17 @@
 // Module ID: 18120
 // Function ID: 18121
-// Dependencies: []
+// Dependencies: [18121, 18129]
 
 // Module 18120
-const re0 = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/;
+import _mod18121 from "module_18121" /* 18121 */;
+import capitalize from "capitalize" /* 18129 */;
 
-export default function hasUnicodeWord(arg0) {
-  return re0.test(arg0);
-};
+
+export default _mod18121((arg0, str, arg2) => {
+  const formatted = str.toLowerCase();
+  let tmp2 = formatted;
+  if (arg2) {
+    tmp2 = capitalize(formatted);
+  }
+  return arg0 + tmp2;
+});

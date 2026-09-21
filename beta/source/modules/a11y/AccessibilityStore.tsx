@@ -1,18 +1,18 @@
-// Module ID: 4748
-// Function ID: 4749
+// Module ID: 4750
+// Function ID: 4751
 // Name: AccessibilityStore
-// Dependencies: [109, 1183, 1182, 1220, 1074, 4749, 4750, 2019, 504, 510, 4607, 573, 2]
+// Dependencies: [109, 1187, 1186, 1224, 1078, 4751, 4752, 2023, 504, 510, 4610, 577, 2]
 
-// Module 4748 (AccessibilityStore)
+// Module 4750 (AccessibilityStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import shared from "shared" /* 4607 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4750 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import shared from "shared" /* 4610 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4752 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
+import ThemeStore from "ThemeStore" /* 1186 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 require = fn;
 function maybeApplyNoTextColorForLightCustomTheme() {
@@ -93,10 +93,10 @@ function handleReducedMotionUpdated() {
   obj.youBarAvatarDecoAnimation = str;
 }
 let closure_3 = ["fontScale"];
-const Constants = fn(1074);
+const Constants = fn(1078);
 const Accessibility = Constants.Accessibility;
 const ThemeTypes = Constants.ThemeTypes;
-const MessageConstants = fn(4749);
+const MessageConstants = fn(4751);
 ({ MESSAGE_GROUP_SPACING: c10, DEFAULT_COMPACT_SPACING: closure_11, DEFAULT_COZY_SPACING: closure_12 } = MessageConstants);
 let obj = { DEFAULT: "default", HIGH: "high" };
 let obj2 = { FLEXIBLE: "flexible", CONDENSED: "condensed", HIDDEN: "hidden" };
@@ -124,7 +124,7 @@ prototype["initialize"] = function initialize(arg0) {
   if (null != obj.messageGroupSpacing) {
     num = obj.messageGroupSpacing;
   }
-  if (closure_1_10.indexOf(num) < 0) {
+  if (v65535.indexOf(num) < 0) {
     obj.messageGroupSpacing = null;
   }
   const items = [UserSettingsProtoStore, SelectivelySyncedUserSettingsStore];
@@ -248,7 +248,7 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
       let messageGroupSpacing = obj.messageGroupSpacing;
     } else {
       const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_1_11 : closure_1_12;
+      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_1_11 : __initData;
     }
     return messageGroupSpacing;
   },
@@ -257,14 +257,14 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
 Object.defineProperty(prototype, "isMessageGroupSpacingIncreased", {
   get: function isMessageGroupSpacingIncreased() {
     const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_1_11 : closure_1_12);
+    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_1_11 : __initData);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingDecreased", {
   get: function isMessageGroupSpacingDecreased() {
     const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_1_11 : closure_1_12);
+    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_1_11 : __initData);
   },
   set: undefined
 });

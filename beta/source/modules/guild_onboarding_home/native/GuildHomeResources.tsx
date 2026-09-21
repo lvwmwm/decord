@@ -1,24 +1,255 @@
-// Module ID: 16914
-// Function ID: 16915
+// Module ID: 16916
+// Function ID: 16917
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2041, 2096, 4976, 4395, 1074, 21, 4756, 576, 504, 8141, 12262, 16915, 7698, 12538, 1397, 5339, 4752, 4746, 16908, 1101, 1115, 16916, 5186, 2]
-// Exports: default
+// Dependencies: [19, 17, 2045, 2100, 4978, 4399, 1078, 21, 4758, 580, 558, 568, 504, 8146, 12139, 16917, 7703, 12432, 1401, 4754, 4748, 5341, 16910, 1105, 1119, 16918, 5188, 2]
 
-// Module 16914 (GuildHomeResources)
-import nativeDefault from "native" /* 576 */;
-import router_utils from "router_utils" /* 1101 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12538 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16908 */;
-import _modDef16916 from "module_16916" /* 16916 */;
+// Module 16916 (GuildHomeResources)
+import nativeDefault from "native" /* 580 */;
+import router_utils from "router_utils" /* 1105 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12432 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16910 */;
+import _modDef16918 from "module_16918" /* 16918 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import MessageStore from "MessageStore" /* 4976 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import MessageStore from "MessageStore" /* 4978 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 require = fn;
-function ResourceChannelRow(channelId) {
+get_ActivityIndicator = fn(17);
+({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
+const Constants = fn(1078);
+({ Permissions: c10, Routes: closure_11 } = Constants);
+const jsxProd = fn(21);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { container: { paddingHorizontal: 12, display: "flex", flexDirection: "column", alignItems: "center" }, emptyStateContainer: { padding: 20, display: "flex", flexDirection: "column", alignItems: "center" }, channelContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "flex-start" }, messageContent: { marginTop: 8 }, textContent: { flex: 1 }, thumbnail: { marginLeft: 8 }, emptyStateImage: { marginTop: 12, marginBottom: 20 }, icon: { width: 72, height: 72 } };
+let closure_14 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const cResult = channelId(568).c(63);
+  channelId = channelId.channelId;
+  ({ title, icon, description } = channelId);
+  closure_14();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    class C {
+      constructor() {
+        return closure_6.getChannel(channelId);
+      }
+    }
+    cResult[1] = channelId;
+    cResult[2] = C;
+    const tmp7 = C;
+  } else {
+    class C {
+      constructor() {
+        return closure_6.getChannel(channelId);
+      }
+    }
+  }
+  let obj = channelId(568);
+  const stateFromStores = channelId(504).useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return closure_6.getChannel(channelId);
+      }
+    }
+    const items1 = [PermissionStore];
+    cResult[3] = items1;
+    const tmp9 = items1;
+  } else {
+    class C {
+      constructor() {
+        return closure_6.getChannel(channelId);
+      }
+    }
+  }
+  if (cResult[4] !== stateFromStores) {
+    class P {
+      constructor() {
+        return closure_9.can(Permissions.VIEW_CHANNEL, closure_1);
+      }
+    }
+    cResult[4] = stateFromStores;
+    cResult[5] = P;
+    const tmp10 = P;
+  } else {
+    class P {
+      constructor() {
+        return closure_9.can(Permissions.VIEW_CHANNEL, closure_1);
+      }
+    }
+  }
+  const tmpResult = channelId(504);
+  const stateFromStores1 = channelId(504).useStateFromStores(tmp9, tmp10);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor() {
+        return closure_9.can(Permissions.VIEW_CHANNEL, closure_1);
+      }
+    }
+    const items2 = [MessageStore];
+    cResult[6] = items2;
+    const tmp12 = items2;
+  } else {
+    class P {
+      constructor() {
+        return closure_9.can(Permissions.VIEW_CHANNEL, closure_1);
+      }
+    }
+  }
+  if (cResult[7] !== channelId) {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+    cResult[7] = channelId;
+    cResult[8] = R;
+    const tmp13 = R;
+  } else {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+  }
+  const tmpResult6 = channelId(504);
+  const stateFromStores2 = channelId(504).useStateFromStores(tmp12, tmp13);
+  if (cResult[9] !== stateFromStores2) {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+    cResult[9] = stateFromStores2;
+    cResult[10] = tmp15;
+  } else {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+  }
+  const tmpResult7 = channelId(504);
+  const forumPostMediaProperties = channelId(8146).useForumPostMediaProperties(tmp14, false);
+  const tmpResult8 = channelId(8146);
+  const firstMediaIsEmbed = channelId(8146).useFirstMediaIsEmbed(tmp14, false);
+  if (forumPostMediaProperties != null) {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+  }
+  if (undefined > 0) {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+  }
+  if (cResult[11] === stateFromStores) {
+    class R {
+      constructor() {
+        return closure_8.getMessages(channelId);
+      }
+    }
+    const shouldObscure = tmp(12139).useSharedMediaProps(obj2).shouldObscure;
+    stateFromStores(16917)(tmp14);
+    if (cResult[14] === stateFromStores) {
+      class R {
+        constructor() {
+          return closure_8.getMessages(channelId);
+        }
+      }
+      dependencyMap = tmp21;
+      if (cResult[17] === channelId) {
+        class R {
+          constructor() {
+            return closure_8.getMessages(channelId);
+          }
+        }
+        const effect = noop.useEffect(tmp23, tmp24);
+        if (cResult[21] !== stateFromStores) {
+          class W {
+            constructor() {
+              tmp = closure_1;
+              if (null != closure_1) {
+                tmp2 = closure_0;
+                tmp3 = closure_2;
+                obj = closure_0(closure_2[17]);
+                homeResourceChannel = obj.selectHomeResourceChannel(tmp.guild_id, tmp.id);
+              }
+              return;
+            }
+          }
+          cResult[21] = stateFromStores;
+          cResult[22] = W;
+        } else {
+          class W {
+            constructor() {
+              tmp = closure_1;
+              if (null != closure_1) {
+                tmp2 = closure_0;
+                tmp3 = closure_2;
+                obj = closure_0(closure_2[17]);
+                homeResourceChannel = obj.selectHomeResourceChannel(tmp.guild_id, tmp.id);
+              }
+              return;
+            }
+          }
+        }
+        if (null != stateFromStores) {
+          class W {
+            constructor() {
+              tmp = closure_1;
+              if (null != closure_1) {
+                tmp2 = closure_0;
+                tmp3 = closure_2;
+                obj = closure_0(closure_2[17]);
+                homeResourceChannel = obj.selectHomeResourceChannel(tmp.guild_id, tmp.id);
+              }
+              return;
+            }
+          }
+        }
+        return null;
+      }
+      const fn = function j() {
+        if (closure_2) {
+          const obj2 = { channelId, after: channelId, limit: 5 };
+          const messages = MessageActionCreatorsDefault.fetchMessages(obj2);
+        }
+      };
+      const items3 = [channelId, tmp21];
+      cResult[17] = channelId;
+      cResult[18] = tmp21;
+      cResult[19] = fn;
+      cResult[20] = items3;
+      tmp23 = fn;
+      tmp24 = items3;
+    }
+    const tmp22 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
+    cResult[14] = stateFromStores;
+    cResult[15] = stateFromStores2;
+    cResult[16] = tmp22;
+    const tmpResult10 = tmp(12139);
+  }
+  obj2 = { channel: stateFromStores, media: null };
+  cResult[11] = stateFromStores;
+  cResult[12] = null;
+  cResult[13] = obj2;
+}) : ((channelId) => {
   channelId = channelId.channelId;
   ({ icon, description } = channelId);
   dependencyMap = undefined;
@@ -33,10 +264,10 @@ function ResourceChannelRow(channelId) {
   const stateFromStores2 = channelId(504).useStateFromStores(items2, () => MessageStore.getMessages(channelId));
   const firstResult = stateFromStores2.first();
   const obj3 = channelId(504);
-  const forumPostMediaProperties = channelId(8141).useForumPostMediaProperties(firstResult, false);
-  const obj5 = channelId(8141);
+  const forumPostMediaProperties = channelId(8146).useForumPostMediaProperties(firstResult, false);
+  const obj5 = channelId(8146);
   let length;
-  const firstMediaIsEmbed = channelId(8141).useFirstMediaIsEmbed(firstResult, false);
+  const firstMediaIsEmbed = channelId(8146).useFirstMediaIsEmbed(firstResult, false);
   if (forumPostMediaProperties != null) {
     length = forumPostMediaProperties.length;
   }
@@ -44,9 +275,9 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  const obj6 = channelId(8141);
-  let flag = channelId(12262).useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(16915)(firstResult);
+  const obj6 = channelId(8146);
+  let flag = channelId(12139).useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
+  const tmp11 = stateFromStores(16917)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -60,11 +291,11 @@ function ResourceChannelRow(channelId) {
   if (null != stateFromStores) {
     if (stateFromStores1) {
       const obj4 = { channelId: stateFromStores.id, icon };
-      const resourceChannelIconURL = tmp10(1397).getResourceChannelIconURL(obj4);
+      const resourceChannelIconURL = tmp10(1401).getResourceChannelIconURL(obj4);
       const obj7 = { onPress: tmp14, style: tmp.channelContainer, children: null };
       const obj8 = { style: tmp.textContent, children: null };
       const obj9 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: channelId.title };
-      const items4 = [closure_12(tmp2(4752).Text, obj9), , ];
+      const items4 = [closure_12(tmp2(4754).Text, obj9), , ];
       let tmp19Result = tmp16;
       if (null == description || 0 === description.length) {
         tmp19Result = null != tmp11;
@@ -72,20 +303,20 @@ function ResourceChannelRow(channelId) {
       if (tmp19Result) {
         const obj10 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail", children: null };
         ({ guild_id: obj15.guildId, id: obj15.channelId } = stateFromStores);
-        obj10.children = tmp10(4746).parse(tmp11, true, { guildId: null, channelId: null });
-        tmp19Result = tmp19(tmp2(4752).Text, obj10);
+        obj10.children = tmp10(4748).parse(tmp11, true, { guildId: null, channelId: null });
+        tmp19Result = tmp19(tmp2(4754).Text, obj10);
         const obj11 = { guildId: null, channelId: null };
-        const tmp10Result3 = tmp10(4746);
+        const tmp10Result3 = tmp10(4748);
       }
       items4[1] = tmp19Result;
       let tmp19Result4 = !tmp16;
       if (!(null == description || 0 === description.length)) {
         const obj12 = { variant: "text-sm/normal", color: "text-default", style: tmp.messageContent, lineClamp: 3, ellipsizeMode: "tail", children: null };
         ({ guild_id: obj18.guildId, id: obj18.channelId } = stateFromStores);
-        obj12.children = tmp10(4746).parse(description, true, { guildId: null, channelId: null });
-        tmp19Result4 = tmp19(tmp2(4752).Text, obj12);
+        obj12.children = tmp10(4748).parse(description, true, { guildId: null, channelId: null });
+        tmp19Result4 = tmp19(tmp2(4754).Text, obj12);
         const obj13 = { guildId: null, channelId: null };
-        const tmp10Result4 = tmp10(4746);
+        const tmp10Result4 = tmp10(4748);
       }
       items4[2] = tmp19Result4;
       obj8.children = items4;
@@ -118,49 +349,161 @@ function ResourceChannelRow(channelId) {
               if (flag == null) {
                 flag = false;
               }
-              obj17.embedLeftBorderColor = tmp2(8141).getEmbedColor(firstResult, flag);
+              obj17.embedLeftBorderColor = tmp2(8146).getEmbedColor(firstResult, flag);
               let id;
               if (firstResult != null) {
                 id = firstResult.id;
               }
               obj17.firstMessageId = id;
               obj17.containerStyle = tmp.thumbnail;
-              tmp19Result6 = tmp19(tmp2(12262).ForumPostMediaThumbnail, obj17);
-              const tmp2Result2 = tmp2(8141);
+              tmp19Result6 = tmp19(tmp2(12139).ForumPostMediaThumbnail, obj17);
+              const tmp2Result2 = tmp2(8146);
             }
           }
         }
       }
       items5[2] = tmp19Result6;
       obj7.children = items5;
-      return closure_13(tmp2(5339).PressableOpacity, obj7);
+      return closure_13(tmp2(5341).PressableOpacity, obj7);
     }
   }
   return null;
-}
-get_ActivityIndicator = fn(17);
-({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ Permissions: c10, Routes: closure_11 } = Constants);
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { container: { paddingHorizontal: 12, display: "flex", flexDirection: "column", alignItems: "center" }, emptyStateContainer: { padding: 20, display: "flex", flexDirection: "column", alignItems: "center" }, channelContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "flex-start" }, messageContent: { marginTop: 8 }, textContent: { flex: 1 }, thumbnail: { marginLeft: 8 }, emptyStateImage: { marginTop: 12, marginBottom: 20 }, icon: { width: 72, height: 72 } };
-let closure_14 = createStyles.createStyles(obj2);
+});
+ReactCompilerGating = fn(558);
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "flex-start" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/GuildHomeResources.tsx");
 
-export default function GuildHomeResources(guildId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = guildId(568).c(18);
+  guildId = guildId.guildId;
+  const tmp4 = closure_14();
+  const arr = useResourceChannelsDefault(guildId);
+  if (cResult[0] !== guildId) {
+    const fn = function n() {
+      const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
+      if (null != defaultChannel) {
+        router_utils.transitionTo(closure_2_11.CHANNEL(guildId, defaultChannel.id));
+      }
+    };
+    cResult[0] = guildId;
+    cResult[1] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (0 === arr.length) {
+    const _Symbol2 = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
+      const intl = tmp(1119).intl;
+      obj2.children = intl.string(tmp(1119).t.owvC9U);
+      const tmp19 = closure_12(tmp(4754).Text, obj2);
+      cResult[2] = tmp19;
+      let tmp17 = tmp19;
+    } else {
+      tmp17 = cResult[2];
+    }
+    if (cResult[3] !== tmp4.emptyStateImage) {
+      const obj3 = { style: tmp4.emptyStateImage, source: _modDef16918 };
+      const tmp23 = closure_12(closure_5, obj3);
+      cResult[3] = tmp4.emptyStateImage;
+      cResult[4] = tmp23;
+      let tmp20 = tmp23;
+    } else {
+      tmp20 = cResult[4];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1119).intl;
+      const stringResult = intl2.string(tmp(1119).t["3iCBUn"]);
+      cResult[5] = stringResult;
+      let tmp24 = stringResult;
+    } else {
+      tmp24 = cResult[5];
+    }
+    if (cResult[6] !== tmp6) {
+      const obj4 = { onPress: tmp6, text: tmp24 };
+      const tmp28 = closure_12(tmp(5188).Button, obj4);
+      cResult[6] = tmp6;
+      cResult[7] = tmp28;
+      let tmp26 = tmp28;
+    } else {
+      tmp26 = cResult[7];
+    }
+    if (cResult[8] === tmp4.emptyStateContainer) {
+      if (cResult[9] === tmp20) {
+        if (cResult[10] === tmp26) {
+          let tmp29 = cResult[11];
+        }
+        return tmp29;
+      }
+    }
+    const obj5 = { style: tmp4.emptyStateContainer, children: null };
+    const items = [tmp17, tmp20, tmp26];
+    obj5.children = items;
+    const tmp32 = closure_13(closure_4, obj5);
+    cResult[8] = tmp4.emptyStateContainer;
+    cResult[9] = tmp20;
+    cResult[10] = tmp26;
+    cResult[11] = tmp32;
+    tmp29 = tmp32;
+  } else if (cResult[12] !== arr) {
+    const _Symbol = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class T {
+        constructor(arg0) {
+          obj = { channelId: guildId.channelId, title: guildId.title, icon: guildId.icon, description: guildId.description };
+          return closure_1_12(closure_1_15, obj, "resource-" + guildId.channelId);
+        }
+      }
+      cResult[14] = T;
+      const tmp9 = T;
+    } else {
+      class T {
+        constructor(arg0) {
+          obj = { channelId: guildId.channelId, title: guildId.title, icon: guildId.icon, description: guildId.description };
+          return closure_1_12(closure_1_15, obj, "resource-" + guildId.channelId);
+        }
+      }
+    }
+    const mapped = arr.map(tmp9);
+    cResult[12] = arr;
+    cResult[13] = mapped;
+  } else {
+    class T {
+      constructor(arg0) {
+        obj = { channelId: guildId.channelId, title: guildId.title, icon: guildId.icon, description: guildId.description };
+        return closure_1_12(closure_1_15, obj, "resource-" + guildId.channelId);
+      }
+    }
+    if (cResult[15] === tmp4.container) {
+      class T {
+        constructor(arg0) {
+          obj = { channelId: guildId.channelId, title: guildId.title, icon: guildId.icon, description: guildId.description };
+          return closure_1_12(closure_1_15, obj, "resource-" + guildId.channelId);
+        }
+      }
+      return tmp12;
+    }
+    const obj6 = { style: tmp33, children: tmp7 };
+    const tmp15 = closure_12(closure_4, obj6);
+    cResult[15] = tmp4.container;
+    cResult[16] = tmp7;
+    cResult[17] = tmp15;
+    tmp12 = tmp15;
+  }
+}) : ((guildId) => {
   guildId = guildId.guildId;
   const tmp = closure_14();
   const arr = useResourceChannelsDefault(guildId);
   if (0 === arr.length) {
     const obj2 = { style: tmp.emptyStateContainer, children: null };
     const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
-    const intl = guildId(1115).intl;
-    obj3.children = intl.string(guildId(1115).t.owvC9U);
-    const items = [closure_12(guildId(4752).Text, obj3), , ];
-    const obj4 = { style: tmp.emptyStateImage, source: _modDef16916 };
+    const intl = guildId(1119).intl;
+    obj3.children = intl.string(guildId(1119).t.owvC9U);
+    const items = [closure_12(guildId(4754).Text, obj3), , ];
+    const obj4 = { style: tmp.emptyStateImage, source: _modDef16918 };
     items[1] = closure_12(closure_5, obj4);
     const obj5 = {
       onPress() {
@@ -171,14 +514,14 @@ export default function GuildHomeResources(guildId) {
         },
       text: null
     };
-    const intl2 = guildId(1115).intl;
-    obj5.text = intl2.string(guildId(1115).t["3iCBUn"]);
-    items[2] = closure_12(guildId(5186).Button, obj5);
+    const intl2 = guildId(1119).intl;
+    obj5.text = intl2.string(guildId(1119).t["3iCBUn"]);
+    items[2] = closure_12(guildId(5188).Button, obj5);
     obj2.children = items;
     let tmp6 = closure_13(closure_4, obj2);
   } else {
-    let obj = { style: tmp.container, children: arr.map((channelId) => closure_1_12(ResourceChannelRow, { channelId: channelId.channelId, title: channelId.title, icon: channelId.icon, description: channelId.description }, "resource-" + channelId.channelId)) };
+    let obj = { style: tmp.container, children: arr.map((channelId) => closure_1_12(closure_1_15, { channelId: channelId.channelId, title: channelId.title, icon: channelId.icon, description: channelId.description }, "resource-" + channelId.channelId)) };
     tmp6 = closure_12(closure_4, obj);
   }
   return tmp6;
-};
+});

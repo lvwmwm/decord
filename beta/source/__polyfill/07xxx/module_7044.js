@@ -1,30 +1,9 @@
 // Module ID: 7044
 // Function ID: 7045
-// Dependencies: [19]
-// Exports: useStableCallback
+// Dependencies: [7045]
 
 // Module 7044
-import noop from "module_19" /* 19 */;
+import _modDef7045 from "module_7045" /* 7045 */;
 
-({ useCallback: closure_0, useEffect: closure_1, useLayoutEffect: c2, useRef: c3 } = noop);
 
-export const useStableCallback = function useStableCallback(current) {
-  React3(undefined);
-  React2(() => {
-    closure_1.current = current;
-  });
-  framebus(() => () => {
-    ref.current = undefined;
-  }, []);
-  return React(() => {
-    const items = [...arguments];
-    current = ref.current;
-    let applyResult;
-    if (current != null) {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items, 0);
-      applyResult = HermesBuiltin.apply(items1, tmp);
-    }
-    return applyResult;
-  }, []);
-};
+export default _modDef7045;

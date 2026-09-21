@@ -1,10 +1,10 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14734
+// Function ID: 14735
 // Name: NotificationSettingsExperiments
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 14731 (NotificationSettingsExperiments)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14734 (NotificationSettingsExperiments)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { "2026-05-noisier-notif-settings-defaults": null };

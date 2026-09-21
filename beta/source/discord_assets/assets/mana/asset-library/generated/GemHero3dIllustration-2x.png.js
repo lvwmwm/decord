@@ -1,8 +1,8 @@
-// Module ID: 6337
-// Function ID: 6338
+// Module ID: 6335
+// Function ID: 6336
 // Dependencies: [2]
 
-// Module 6337
+// Module 6335
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemHero3dIllustration-2x.png.js");

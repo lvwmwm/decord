@@ -1,20 +1,20 @@
-// Module ID: 11809
-// Function ID: 11810
+// Module ID: 11678
+// Function ID: 11679
 // Name: CategoryCollapseActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 11809 (CategoryCollapseActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11678 (CategoryCollapseActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/CategoryCollapseActionCreators.tsx");
 
-export const categoryCollapse = function categoryCollapse(channel) {
-  DispatcherDefault.dispatch({ type: "CATEGORY_COLLAPSE", id: channel });
+export const categoryCollapse = function categoryCollapse(id) {
+  DispatcherDefault.dispatch({ type: "CATEGORY_COLLAPSE", id });
 };
-export const categoryExpand = function categoryExpand(channel) {
-  DispatcherDefault.dispatch({ type: "CATEGORY_EXPAND", id: channel });
+export const categoryExpand = function categoryExpand(id) {
+  DispatcherDefault.dispatch({ type: "CATEGORY_EXPAND", id });
 };
 export const categoryCollapseAll = function categoryCollapseAll(guildId) {
   DispatcherDefault.dispatch({ type: "CATEGORY_COLLAPSE_ALL", guildId });

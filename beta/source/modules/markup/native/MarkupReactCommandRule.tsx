@@ -1,18 +1,17 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11466
+// Function ID: 11467
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 2041, 1483, 5210, 5211, 21, 7765, 4614, 4723, 1610, 5109, 1115, 1177, 11479, 4453, 7434, 2019, 10889, 7439, 11481, 4752, 4622, 11483, 8354, 2]
-// Exports: default
+// Dependencies: [19, 2045, 1487, 5212, 5213, 21, 7770, 4617, 4725, 1614, 5111, 1119, 1181, 11467, 4457, 7436, 2023, 10925, 7441, 558, 568, 11469, 4625, 11471, 8359, 4754, 2]
 
-// Module 11478 (MarkupReactCommandRule)
-import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import ToastUtils from "ToastUtils" /* 4453 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ClipboardUtils from "ClipboardUtils" /* 7434 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11483 */;
+// Module 11466 (MarkupReactCommandRule)
+import KeyboardTypes from "KeyboardTypes" /* 1614 */;
+import ToastUtils from "ToastUtils" /* 4457 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ClipboardUtils from "ClipboardUtils" /* 7436 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11471 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function handleTapCommandMention(channelId) {
@@ -41,7 +40,7 @@ function handleTapCommandMention(channelId) {
       }
       const rootNavigationRef = onSetCommand(sum1[7]).getRootNavigationRef();
       if (null != rootNavigationRef) {
-        const state = rootNavigationRef.getState();
+        state = rootNavigationRef.getState();
         let length;
         if (state != null) {
           const routes = state.routes;
@@ -116,9 +115,9 @@ function handleLongPressCommandMention(arg0, arg1) {
   const DeveloperMode = require("UserSettings").DeveloperMode;
   if (DeveloperMode.getSetting()) {
     const obj2 = { label: null, IconComponent: null, onPress: null };
-    const intl2 = tmp(1115).intl;
-    obj2.label = intl2.string(tmp(1115).t.oJ1Muw);
-    obj2.IconComponent = tmp(10889).IdIcon;
+    const intl2 = tmp(1119).intl;
+    obj2.label = intl2.string(tmp(1119).t.oJ1Muw);
+    obj2.IconComponent = tmp(10925).IdIcon;
     obj2.onPress = function onPress() {
       ToastUtils.presentIdCopied();
       ClipboardUtils.copy(closure_1);
@@ -127,24 +126,135 @@ function handleLongPressCommandMention(arg0, arg1) {
   }
   const result = require("showSimpleActionSheet").showSimpleActionSheet({ key: "LongPressCommandMention", options: items, hasIcons: true });
 }
-const AppLauncherNativeConstants = fn(1483);
+const AppLauncherNativeConstants = fn(1487);
 ({ AppLauncherRouteName: hasOwnProperty, useAppLauncherNavigation: metroRequire } = AppLauncherNativeConstants);
-const SUB_COMMAND_KEY_SEPARATOR = fn(5210).SUB_COMMAND_KEY_SEPARATOR;
-const COMMAND_SENTINEL = fn(5211).COMMAND_SENTINEL;
+const SUB_COMMAND_KEY_SEPARATOR = fn(5212).SUB_COMMAND_KEY_SEPARATOR;
+const COMMAND_SENTINEL = fn(5213).COMMAND_SENTINEL;
 const jsxs = fn(21).jsxs;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
 
-export default function MarkupReactCommandRule(node) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+  const cResult = node(568).c(18);
   node = node.node;
   ({ output, state, style } = node);
-  closure_1 = null != noop.useContext(node(11481).AppLauncherContext);
+  const tmp4 = null != noop.useContext(node(11469).AppLauncherContext);
+  closure_1 = tmp4;
+  const tmp5 = closure_6();
+  dependencyMap = tmp5;
+  if (cResult[0] === tmp4) {
+    if (cResult[1] === tmp5) {
+      if (cResult[2] === node.channelId) {
+        if (cResult[3] === node.commandId) {
+          if (cResult[4] === node.commandName) {
+            let tmp6 = cResult[5];
+          }
+          if (cResult[6] === node.commandId) {
+            if (cResult[7] === node.commandName) {
+              let tmp7 = cResult[8];
+            }
+            if (cResult[9] === node) {
+              if (cResult[10] === output) {
+                if (cResult[11] === state) {
+                  let tmp8 = cResult[12];
+                }
+                if (cResult[13] === style) {
+                  if (cResult[14] === tmp6) {
+                    if (cResult[15] === tmp7) {
+                      if (cResult[16] === tmp8) {
+                        let tmp10 = cResult[17];
+                      }
+                      return tmp10;
+                    }
+                  }
+                }
+                let obj2 = { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: null };
+                const items = ["/", tmp8];
+                obj2.children = items;
+                const tmp12 = jsxs(tmp(4754).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: null });
+                cResult[13] = style;
+                cResult[14] = tmp6;
+                cResult[15] = tmp7;
+                cResult[16] = tmp8;
+                cResult[17] = tmp12;
+                tmp10 = tmp12;
+              }
+            }
+            const smartOutputResult = tmp(8359).smartOutput(node, output, state);
+            cResult[9] = node;
+            cResult[10] = output;
+            cResult[11] = state;
+            cResult[12] = smartOutputResult;
+            tmp8 = smartOutputResult;
+            const tmpResult = tmp(8359);
+          }
+          const fn2 = function i() {
+            handleLongPressCommandMention(node.commandName, node.commandId);
+          };
+          cResult[6] = node.commandId;
+          cResult[7] = node.commandName;
+          cResult[8] = fn2;
+          tmp7 = fn2;
+        }
+      }
+    }
+  }
+  const fn = function t() {
+    const bestActiveInput = node(closure_2[22]).getBestActiveInput();
+    let tmp2;
+    if (closure_1) {
+      tmp2 = closure_2;
+    }
+    const obj2 = { appLauncherNavigator: tmp2, channelId: bestActiveInput.channelId, commandId: bestActiveInput.commandId, commandName: bestActiveInput.commandName, currentText: null, onOpenCustomKeyboard: null, onSetCommand: null };
+    let str;
+    if (bestActiveInput != null) {
+      str = bestActiveInput.getText();
+    }
+    if (str == null) {
+      str = "";
+    }
+    obj2.currentText = str;
+    obj2.onOpenCustomKeyboard = function onOpenCustomKeyboard(arg0) {
+      let openCustomKeyboardResult;
+      if (bestActiveInput != null) {
+        openCustomKeyboardResult = bestActiveInput.openCustomKeyboard(arg0);
+      }
+      return openCustomKeyboardResult;
+    };
+    obj2.onSetCommand = function onSetCommand() {
+      navigateToLastChannelDefault();
+      ActionSheetActionCreatorsDefault.hideActionSheet();
+      if (bestActiveInput != null) {
+        obj2.openSystemKeyboard();
+      }
+      if (bestActiveInput != null) {
+        const applicationCommandManager = obj2.getApplicationCommandManager();
+        if (applicationCommandManager != null) {
+          ({ commandId, commandName } = node);
+          applicationCommandManager.setPartialCommand(commandId, commandName, ApplicationCommandTypes.ApplicationCommandTriggerLocations.MENTION);
+        }
+      }
+    };
+    handleTapCommandMention(obj2);
+  };
+  cResult[0] = tmp4;
+  cResult[1] = tmp5;
+  cResult[2] = node.channelId;
+  cResult[3] = node.commandId;
+  cResult[4] = node.commandName;
+  cResult[5] = fn;
+  tmp6 = fn;
+}) : ((node) => {
+  node = node.node;
+  ({ output, state, style } = node);
+  closure_1 = null != noop.useContext(node(11469).AppLauncherContext);
   dependencyMap = closure_6();
   const obj = {
     style,
     variant: "text-md/bold",
     onPress() {
-      const bestActiveInput = node(closure_2[21]).getBestActiveInput();
+      const bestActiveInput = node(closure_2[22]).getBestActiveInput();
       let tmp2;
       if (closure_1) {
         tmp2 = closure_2;
@@ -186,13 +296,13 @@ export default function MarkupReactCommandRule(node) {
     },
     children: null
   };
-  const items = ["/", node(8354).smartOutput(node, output, state)];
+  const items = ["/", node(8359).smartOutput(node, output, state)];
   obj.children = items;
-  return jsxs(node(4752).Text, {
+  return jsxs(node(4754).Text, {
     style,
     variant: "text-md/bold",
     onPress() {
-      const bestActiveInput = node(closure_2[21]).getBestActiveInput();
+      const bestActiveInput = node(closure_2[22]).getBestActiveInput();
       let tmp2;
       if (closure_1) {
         tmp2 = closure_2;
@@ -234,6 +344,6 @@ export default function MarkupReactCommandRule(node) {
     },
     children: null
   });
-};
+});
 export { handleTapCommandMention };
 export { handleLongPressCommandMention };

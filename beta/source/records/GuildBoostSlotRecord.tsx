@@ -1,10 +1,10 @@
-// Module ID: 4655
-// Function ID: 4656
+// Module ID: 4658
+// Function ID: 4659
 // Name: GuildBoostSlotRecord
-// Dependencies: [1387, 2]
+// Dependencies: [1391, 2]
 
-// Module 4655 (GuildBoostSlotRecord)
-import Record from "Record" /* 1387 */;
+// Module 4658 (GuildBoostSlotRecord)
+import Record from "Record" /* 1391 */;
 
 let GuildBoostSlotRecord;
 class GuildBoostSlotRecord extends tmp2 {

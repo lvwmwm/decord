@@ -1,11 +1,11 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 14746
+// Function ID: 14747
 // Name: VibegrationsBuilderPreviewStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 14743 (VibegrationsBuilderPreviewStore)
+// Module 14746 (VibegrationsBuilderPreviewStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 let applicationId = null;
 let enabled = false;

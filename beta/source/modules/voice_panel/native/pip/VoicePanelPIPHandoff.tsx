@@ -1,12 +1,32 @@
-// Module ID: 12532
-// Function ID: 12533
+// Module ID: 12426
+// Function ID: 12427
 // Name: VoicePanelPIPHandoff
-// Dependencies: [19, 2]
-// Exports: usePIPCardsSettled, usePIPPanelLayoutCommitted
+// Dependencies: [19, 558, 568, 2]
 
-// Module 12532 (VoicePanelPIPHandoff)
+// Module 12426 (VoicePanelPIPHandoff)
+import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
+fn(558);
+const ReactCompilerGating = fn(558);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((subscribe) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== subscribe) {
+    const fn = function n() {
+      return subscribe.arePIPCardsSettled();
+    };
+    cResult[0] = subscribe;
+    cResult[1] = fn;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return noop.useSyncExternalStore(subscribe.subscribe, tmp2);
+}) : ((subscribe) => {
+  const items = [subscribe];
+  return noop.useSyncExternalStore(subscribe.subscribe, noop.useCallback(() => subscribe.arePIPCardsSettled(), items));
+});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPHandoff.tsx");
 class VoicePanelPIPHandoff {
@@ -103,11 +123,21 @@ prototype["recount"] = function recount() {
 };
 
 export default VoicePanelPIPHandoff;
-export const usePIPCardsSettled = function usePIPCardsSettled(pipHandoff) {
-  const items = [pipHandoff];
-  return noop.useSyncExternalStore(pipHandoff.subscribe, noop.useCallback(() => pipHandoff.arePIPCardsSettled(), items));
-};
-export const usePIPPanelLayoutCommitted = function usePIPPanelLayoutCommitted(pipHandoff) {
-  const items = [pipHandoff];
-  return noop.useSyncExternalStore(pipHandoff.subscribe, noop.useCallback(() => pipHandoff.isPanelLayoutCommitted(), items));
-};
+export const usePIPCardsSettled = tmp2;
+export const usePIPPanelLayoutCommitted = ReactCompilerGating.isReactCompilerEnabled() ? ((subscribe) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== subscribe) {
+    const fn = function n() {
+      return subscribe.isPanelLayoutCommitted();
+    };
+    cResult[0] = subscribe;
+    cResult[1] = fn;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return noop.useSyncExternalStore(subscribe.subscribe, tmp2);
+}) : ((subscribe) => {
+  const items = [subscribe];
+  return noop.useSyncExternalStore(subscribe.subscribe, noop.useCallback(() => subscribe.isPanelLayoutCommitted(), items));
+});

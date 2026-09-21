@@ -1,12 +1,12 @@
-// Module ID: 11609
-// Function ID: 11610
+// Module ID: 10337
+// Function ID: 10338
 // Name: SummaryConstants
-// Dependencies: [1091, 1115, 2]
+// Dependencies: [1095, 1119, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 11609 (SummaryConstants)
-import DurationsDefault from "Durations" /* 1091 */;
-import util from "util" /* 1115 */;
+// Module 10337 (SummaryConstants)
+import DurationsDefault from "Durations" /* 1095 */;
+import util from "util" /* 1119 */;
 
 require = fn;
 const SummaryFeedbackReasons = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };

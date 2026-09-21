@@ -1,22 +1,190 @@
-// Module ID: 10429
-// Function ID: 10430
+// Module ID: 13002
+// Function ID: 13003
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4748, 4405, 1372, 21, 4756, 576, 4752, 4909, 1095, 5289, 5291, 5239, 504, 2]
-// Exports: SimpleNotificationHeader, default
+// Dependencies: [19, 17, 4750, 4409, 1376, 21, 4758, 580, 558, 568, 4754, 4911, 1099, 5291, 5293, 5241, 504, 2]
 
-// Module 10429 (MessageNotificationHeader)
+// Module 13002 (MessageNotificationHeader)
 import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useChannelName from "useChannelName" /* 4909 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import ChannelTypes from "ChannelTypes" /* 1099 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import useChannelName from "useChannelName" /* 4911 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-function LocationText(channel) {
+function getLocationLabel(arg0) {
+  ({ channel, parentChannel, guild } = arg0);
+  const channelName = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
+  const type = channel.type;
+  if (ChannelTypes.ChannelTypes.GROUP_DM === type) {
+    return channelName;
+  } else {
+    if (tmp(1099).ChannelTypes.GUILD_FORUM !== type) {
+      if (tmp(1099).ChannelTypes.GUILD_MEDIA !== type) {
+        if (tmp(1099).ChannelTypes.GUILD_TEXT !== type) {
+          if (tmp(1099).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
+            if (tmp(1099).ChannelTypes.GUILD_APP !== type) {
+              if (tmp(1099).ChannelTypes.GUILD_VOICE !== type) {
+                if (tmp(1099).ChannelTypes.GUILD_STAGE_VOICE !== type) {
+                  if (tmp(1099).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
+                    if (tmp(1099).ChannelTypes.PUBLIC_THREAD !== type) {
+                      if (tmp(1099).ChannelTypes.PRIVATE_THREAD !== type) {
+                        if (tmp(1099).ChannelTypes.MEDIA_THREAD !== type) {
+                          if (tmp(1099).ChannelTypes.DM !== type) {
+                            if (tmp(1099).ChannelTypes.GUILD_CATEGORY !== type) {
+                              if (tmp(1099).ChannelTypes.GUILD_STORE !== type) {
+                                if (tmp(1099).ChannelTypes.GUILD_DIRECTORY !== type) {
+                                  if (tmp(1099).ChannelTypes.GUILD_SPACE !== type) {
+                                    const UNKNOWN = tmp(1099).ChannelTypes.UNKNOWN;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          return null;
+                        }
+                      }
+                    }
+                  }
+                  let channelName1 = null;
+                  if (null != parentChannel) {
+                    channelName1 = tmp(4911).computeChannelName(parentChannel, tmp3, tmp4);
+                    const tmpResult = tmp(4911);
+                  }
+                  if (null != channelName1) {
+                    const _HermesInternal2 = HermesInternal;
+                    let combined = "" + channelName + ", " + channelName1;
+                  } else {
+                    combined = channelName;
+                    if (null != guild) {
+                      const _HermesInternal = HermesInternal;
+                      combined = "" + channelName + ", " + guild.name;
+                    }
+                  }
+                  return combined;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    let combined1 = null;
+    if (null != guild) {
+      const _HermesInternal3 = HermesInternal;
+      combined1 = "" + channelName + ", " + guild.name;
+    }
+    return combined1;
+  }
+  tmp3 = UserStore;
+  tmp4 = RelationshipStore;
+}
+const View = fn(17).View;
+const jsxProd = fn(21);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
+let closure_9 = createStyles.createStyles(obj2);
+fn(558);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let ReactCompilerGating = fn(558);
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(20);
+  ({ channel, parentChannel, author, location: _location, color } = arg0);
+  const tmp4 = closure_9();
+  if (color == null) {
+    color = "text-muted";
+  }
+  if (cResult[0] === channel) {
+    if (cResult[3] === tmp5) {
+      if (cResult[4] === tmp4.icon) {
+        if (cResult[5] === color) {
+          let tmp7 = cResult[6];
+        }
+        if (cResult[7] === author) {
+          if (cResult[8] === tmp4.separator) {
+            if (cResult[9] === color) {
+              let tmp10 = cResult[10];
+            }
+            if (cResult[11] === _location) {
+              if (cResult[12] === tmp4.secondaryText) {
+                if (cResult[13] === color) {
+                  let tmp13 = cResult[14];
+                }
+                if (cResult[15] === tmp7) {
+                  if (cResult[16] === tmp4.secondaryTextContainer) {
+                    if (cResult[17] === tmp10) {
+                      if (cResult[18] === tmp13) {
+                        let tmp16 = cResult[19];
+                      }
+                      return tmp16;
+                    }
+                  }
+                }
+                const obj2 = { style: tmp4.secondaryTextContainer, children: null };
+                const items = [tmp10, tmp7, tmp13];
+                obj2.children = items;
+                const tmp19 = closure_1_8(View, obj2);
+                cResult[15] = tmp7;
+                cResult[16] = tmp4.secondaryTextContainer;
+                cResult[17] = tmp10;
+                cResult[18] = tmp13;
+                cResult[19] = tmp19;
+                tmp16 = tmp19;
+              }
+            }
+            const obj3 = { variant: "text-md/semibold", color, lineClamp: 1, style: tmp4.secondaryText, children: _location };
+            const tmp15 = React5(tmp(4754).Text, obj3);
+            cResult[11] = _location;
+            cResult[12] = tmp4.secondaryText;
+            cResult[13] = color;
+            cResult[14] = tmp15;
+            tmp13 = tmp15;
+          }
+        }
+        let tmp11 = null != author;
+        if (tmp11) {
+          const obj4 = { variant: "text-md/bold", color, maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
+          tmp11 = React5(tmp(4754).Text, obj4);
+        }
+        cResult[7] = author;
+        cResult[8] = tmp4.separator;
+        cResult[9] = color;
+        cResult[10] = tmp11;
+        tmp10 = tmp11;
+      }
+    }
+    let element = null;
+    if (null != tmp5) {
+      const obj5 = { color, style: tmp4.icon };
+      element = <tmp5 color={color} style={tmp4.icon} />;
+    }
+    cResult[3] = tmp5;
+    cResult[4] = tmp4.icon;
+    cResult[5] = color;
+    cResult[6] = element;
+    tmp7 = element;
+  }
+  const PRIVATE_CHANNEL = tmp(1099).ChannelTypesSets.PRIVATE_CHANNEL;
+  if (PRIVATE_CHANNEL.has(channel.type)) {
+    cResult[0] = channel;
+    cResult[1] = parentChannel;
+    cResult[2] = undefined;
+  } else {
+    if (channel.type !== tmp(1099).ChannelTypes.PUBLIC_THREAD) {
+      const simpleChannelIconComponent = tmp(5241).getSimpleChannelIconComponent(channel);
+      const tmpResult = tmp(5241);
+    }
+    if (null == parentChannel) {
+      const ThreadIcon = tmp(5293).ThreadIcon;
+    }
+    const ChatIcon = tmp(5291).ChatIcon;
+  }
+}) : ((channel) => {
   channel = channel.channel;
   const parentChannel = channel.parentChannel;
   let str;
@@ -40,36 +208,242 @@ function LocationText(channel) {
       }
       return element;
     } else {
-      if (tmp.type !== tmp3(1095).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5239).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5239);
+      if (tmp.type !== tmp3(1099).ChannelTypes.PUBLIC_THREAD) {
+        const simpleChannelIconComponent = tmp3(5241).getSimpleChannelIconComponent(tmp);
+        const tmp3Result = tmp3(5241);
       }
       if (null == tmp2) {
-        const ThreadIcon = tmp3(5291).ThreadIcon;
+        const ThreadIcon = tmp3(5293).ThreadIcon;
       }
-      tmp3Result2 = tmp3(5289);
+      tmp3Result2 = tmp3(5291);
       const ChatIcon = tmp3Result2.ChatIcon;
     }
   }, items);
   if (tmp5) {
     const obj2 = { variant: "text-md/bold", color: str, maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    tmp5 = closure_7(channel(parentChannel[8]).Text, obj2);
+    tmp5 = closure_7(channel(parentChannel[10]).Text, obj2);
   }
-  const items1 = [tmp5, memo, closure_7(channel(parentChannel[8]).Text, { variant: "text-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location })];
+  const items1 = [tmp5, memo, closure_7(channel(parentChannel[10]).Text, { variant: "text-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location })];
   obj.children = items1;
   return closure_8(str, obj);
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
-let closure_9 = createStyles.createStyles(obj2);
+});
+ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(15);
+  ({ text, secondaryText, labelStyle } = arg0);
+  const tmp4 = closure_9();
+  if (cResult[0] === labelStyle) {
+    if (cResult[1] === tmp4.primaryText) {
+      let tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp5) {
+      if (cResult[4] === text) {
+        let tmp6 = cResult[5];
+      }
+      if (cResult[6] === secondaryText) {
+        if (cResult[7] === tmp4.secondaryText) {
+          if (cResult[8] === tmp4.secondaryTextContainer) {
+            if (cResult[9] === tmp4.separator) {
+              let tmp9 = cResult[10];
+            }
+            if (cResult[11] === tmp4.container) {
+              if (cResult[12] === tmp6) {
+                if (cResult[13] === tmp9) {
+                  let tmp15 = cResult[14];
+                }
+                return tmp15;
+              }
+            }
+            const obj2 = { style: tmp4.container, children: null };
+            const items = [tmp6, tmp9];
+            obj2.children = items;
+            const tmp18 = closure_1_8(View, obj2);
+            cResult[11] = tmp4.container;
+            cResult[12] = tmp6;
+            cResult[13] = tmp9;
+            cResult[14] = tmp18;
+            tmp15 = tmp18;
+          }
+        }
+      }
+      let tmp11 = null != secondaryText;
+      if (tmp11) {
+        const obj3 = { style: tmp4.secondaryTextContainer, children: null };
+        const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
+        const items1 = [React5(tmp(4754).Text, obj4), ];
+        const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp4.secondaryText, children: secondaryText };
+        items1[1] = React5(tmp(4754).Text, obj5);
+        obj3.children = items1;
+        tmp11 = closure_1_8(View, obj3);
+      }
+      cResult[6] = secondaryText;
+      cResult[7] = tmp4.secondaryText;
+      cResult[8] = tmp4.secondaryTextContainer;
+      cResult[9] = tmp4.separator;
+      cResult[10] = tmp11;
+      tmp9 = tmp11;
+    }
+    const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5, children: text };
+    const tmp8 = React5(tmp(4754).Text, obj6);
+    cResult[3] = tmp5;
+    cResult[4] = text;
+    cResult[5] = tmp8;
+    tmp6 = tmp8;
+  }
+  const items2 = [tmp4.primaryText, labelStyle];
+  cResult[0] = labelStyle;
+  cResult[1] = tmp4.primaryText;
+  cResult[2] = items2;
+  tmp5 = items2;
+}) : ((secondaryText) => {
+  secondaryText = secondaryText.secondaryText;
+  ({ text, labelStyle } = secondaryText);
+  const tmp = closure_9();
+  const obj = { style: tmp.container, children: null };
+  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: text };
+  const items = [tmp.primaryText, labelStyle];
+  obj2.style = items;
+  const items1 = [React5(Text_Text.Text, obj2), ];
+  let tmp2Result = null != secondaryText;
+  if (tmp2Result) {
+    const obj3 = { style: tmp.secondaryTextContainer, children: null };
+    const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
+    const items2 = [tmp4(tmp5(4754).Text, obj4), ];
+    const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
+    items2[1] = tmp4(tmp5(4754).Text, obj5);
+    obj3.children = items2;
+    tmp2Result = tmp2(tmp3, obj3);
+  }
+  items1[1] = tmp2Result;
+  obj.children = items1;
+  return closure_1_8(View, obj);
+});
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/MessageNotificationHeader.tsx");
 
-export default function MessageNotificationHeader(locationTextColor) {
-  ({ channel, parentChannel, guild, author } = locationTextColor);
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(25);
+  ({ channel, parentChannel, guild, author, locationTextColor } = arg0);
+  const tmp4 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function c() {
+      return roleStyle.roleStyle;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
+  if (author != null) {
+    const colorString = author.colorString;
+  }
+  let tmp9;
+  if ("username" === stateFromStores) {
+    tmp9 = colorString;
+  }
+  if (cResult[2] !== tmp9) {
+    let tmp11;
+    if (null != tmp9) {
+      const obj2 = { color: tmp9 };
+      tmp11 = obj2;
+    }
+    cResult[2] = tmp9;
+    cResult[3] = tmp11;
+    let tmp10 = tmp11;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] === channel) {
+    if (cResult[5] === guild) {
+      if (cResult[6] === parentChannel) {
+        let tmp12 = cResult[7];
+      }
+      if (cResult[8] === author) {
+        if (cResult[9] === tmp10) {
+          if (cResult[10] === tmp4.primaryText) {
+            let tmp14 = cResult[11];
+          }
+          if (cResult[12] === author) {
+            if (cResult[13] === channel) {
+              if (cResult[14] === tmp12) {
+                if (cResult[15] === locationTextColor) {
+                  if (cResult[16] === parentChannel) {
+                    let tmp17 = cResult[17];
+                  }
+                  if (cResult[18] === tmp4.headerContent) {
+                    if (cResult[19] === tmp14) {
+                      if (cResult[20] === tmp17) {
+                        let tmp21 = cResult[21];
+                      }
+                      if (cResult[22] === tmp4.container) {
+                        if (cResult[23] === tmp21) {
+                          let tmp25 = cResult[24];
+                        }
+                        return tmp25;
+                      }
+                      const obj3 = { style: tmp4.container, children: tmp21 };
+                      const tmp28 = React5(View, obj3);
+                      cResult[22] = tmp4.container;
+                      cResult[23] = tmp21;
+                      cResult[24] = tmp28;
+                      tmp25 = tmp28;
+                    }
+                  }
+                  const obj4 = { style: tmp4.headerContent, children: null };
+                  const items1 = [tmp14, tmp17];
+                  obj4.children = items1;
+                  const tmp24 = closure_1_8(View, obj4);
+                  cResult[18] = tmp4.headerContent;
+                  cResult[19] = tmp14;
+                  cResult[20] = tmp17;
+                  cResult[21] = tmp24;
+                  tmp21 = tmp24;
+                }
+              }
+            }
+          }
+          let tmp18 = null != tmp12;
+          if (tmp18) {
+            const obj5 = { location: tmp12, channel, parentChannel, author, color: locationTextColor };
+            tmp18 = React5(closure_11, obj5);
+          }
+          cResult[12] = author;
+          cResult[13] = channel;
+          cResult[14] = tmp12;
+          cResult[15] = locationTextColor;
+          cResult[16] = parentChannel;
+          cResult[17] = tmp18;
+          tmp17 = tmp18;
+        }
+      }
+      let tmp15 = null != author;
+      if (tmp15) {
+        const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
+        const items2 = [tmp4.primaryText, tmp10];
+        obj6.style = items2;
+        obj6.children = author.nick;
+        tmp15 = React5(tmp(4754).Text, obj6);
+      }
+      cResult[8] = author;
+      cResult[9] = tmp10;
+      cResult[10] = tmp4.primaryText;
+      cResult[11] = tmp15;
+      tmp14 = tmp15;
+    }
+  }
+  const tmp13 = getLocationLabel({ channel, parentChannel, guild });
+  cResult[4] = channel;
+  cResult[5] = guild;
+  cResult[6] = parentChannel;
+  cResult[7] = tmp13;
+  tmp12 = tmp13;
+}) : ((arg0) => {
+  ({ channel, parentChannel, author } = arg0);
+  ({ guild, locationTextColor } = arg0);
   const tmp = closure_9();
   const items = [AccessibilityStore];
   const stateFromStores = initialize.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -84,113 +458,26 @@ export default function MessageNotificationHeader(locationTextColor) {
     const obj2 = { color: tmp5 };
     const tmp6 = obj2;
   }
-  const channelName = useChannelName.computeChannelName(channel, UserStore, RelationshipStore);
-  const type = channel.type;
-  let tmp10 = channelName;
-  if (ChannelTypes.ChannelTypes.GROUP_DM !== type) {
-    if (tmp2(1095).ChannelTypes.GUILD_FORUM !== type) {
-      if (tmp2(1095).ChannelTypes.GUILD_MEDIA !== type) {
-        if (tmp2(1095).ChannelTypes.GUILD_TEXT !== type) {
-          if (tmp2(1095).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
-            if (tmp2(1095).ChannelTypes.GUILD_APP !== type) {
-              if (tmp2(1095).ChannelTypes.GUILD_VOICE !== type) {
-                if (tmp2(1095).ChannelTypes.GUILD_STAGE_VOICE !== type) {
-                  if (tmp2(1095).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
-                    if (tmp2(1095).ChannelTypes.PUBLIC_THREAD !== type) {
-                      if (tmp2(1095).ChannelTypes.PRIVATE_THREAD !== type) {
-                        if (tmp2(1095).ChannelTypes.MEDIA_THREAD !== type) {
-                          tmp10 = null;
-                          if (tmp2(1095).ChannelTypes.DM !== type) {
-                            tmp10 = null;
-                            if (tmp2(1095).ChannelTypes.GUILD_CATEGORY !== type) {
-                              tmp10 = null;
-                              if (tmp2(1095).ChannelTypes.GUILD_STORE !== type) {
-                                tmp10 = null;
-                                if (tmp2(1095).ChannelTypes.GUILD_DIRECTORY !== type) {
-                                  tmp10 = null;
-                                  if (tmp2(1095).ChannelTypes.GUILD_SPACE !== type) {
-                                    const UNKNOWN = tmp2(1095).ChannelTypes.UNKNOWN;
-                                    tmp10 = null;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  let channelName1 = null;
-                  if (null != parentChannel) {
-                    channelName1 = tmp2(4909).computeChannelName(parentChannel, UserStore, RelationshipStore);
-                    const tmp2Result2 = tmp2(4909);
-                  }
-                  if (null != channelName1) {
-                    const _HermesInternal2 = HermesInternal;
-                    let combined = "" + channelName + ", " + channelName1;
-                  } else {
-                    combined = channelName;
-                    if (null != guild) {
-                      const _HermesInternal = HermesInternal;
-                      combined = "" + channelName + ", " + guild.name;
-                    }
-                  }
-                  tmp10 = combined;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    let combined1 = null;
-    if (null != guild) {
-      const _HermesInternal3 = HermesInternal;
-      combined1 = "" + channelName + ", " + guild.name;
-    }
-    tmp10 = combined1;
-  }
+  const tmp7 = getLocationLabel({ channel, parentChannel, guild });
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { style: tmp.headerContent, children: null };
-  let tmp17Result = null != author;
-  if (tmp17Result) {
+  let tmp8Result = null != author;
+  if (tmp8Result) {
     const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: null };
     const items1 = [tmp.primaryText, tmp6];
     obj5.style = items1;
     obj5.children = author.nick;
-    tmp17Result = tmp17(tmp2(4752).Text, obj5);
+    tmp8Result = tmp8(Text_Text.Text, obj5);
   }
-  const items2 = [tmp17Result, ];
-  let tmp17Result2 = null != tmp10;
-  if (tmp17Result2) {
-    const obj6 = { location: tmp10, channel, parentChannel, author, color: locationTextColor.locationTextColor };
-    tmp17Result2 = tmp17(LocationText, obj6);
+  const items2 = [tmp8Result, ];
+  let tmp8Result2 = null != tmp7;
+  if (tmp8Result2) {
+    const obj6 = { location: tmp7, channel, parentChannel, author, color: locationTextColor };
+    tmp8Result2 = tmp8(closure_11, obj6);
   }
-  items2[1] = tmp17Result2;
+  items2[1] = tmp8Result2;
   obj4.children = items2;
-  obj3.children = React6(View, obj4);
+  obj3.children = closure_1_8(View, obj4);
   return React5(View, obj3);
-};
-export const SimpleNotificationHeader = function SimpleNotificationHeader(secondaryText) {
-  secondaryText = secondaryText.secondaryText;
-  ({ text, labelStyle } = secondaryText);
-  const tmp = closure_9();
-  const obj = { style: tmp.container, children: null };
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: null, children: text };
-  const items = [tmp.primaryText, labelStyle];
-  obj2.style = items;
-  const items1 = [React5(Text_Text.Text, obj2), ];
-  let tmp2Result = null != secondaryText;
-  if (tmp2Result) {
-    const obj3 = { style: tmp.secondaryTextContainer, children: null };
-    const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    const items2 = [tmp4(tmp5(4752).Text, obj4), ];
-    const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
-    items2[1] = tmp4(tmp5(4752).Text, obj5);
-    obj3.children = items2;
-    tmp2Result = tmp2(tmp3, obj3);
-  }
-  items1[1] = tmp2Result;
-  obj.children = items1;
-  return React6(View, obj);
-};
+});
+export const SimpleNotificationHeader = tmp3;

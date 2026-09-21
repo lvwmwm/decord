@@ -1,16 +1,18 @@
-// Module ID: 9997
-// Function ID: 9998
+// Module ID: 9975
+// Function ID: 9976
 // Name: DisplayNameStylesFlywheelExperiment
-// Dependencies: [1434, 2]
-// Exports: useIsDisplayNameStylesFlywheelSettersEnabled, useIsDisplayNameStylesFlywheelViewersEnabled
+// Dependencies: [1438, 558, 568, 2]
 
-// Module 9997 (DisplayNameStylesFlywheelExperiment)
-import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
+// Module 9975 (DisplayNameStylesFlywheelExperiment)
+import c from "c" /* 568 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1438 */;
+import "ReactCompilerGating";
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;
 const obj = { kind: "user", name: "2026-06-gummy-bears", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2 = { 1: null };
 obj2[1] = { enabled: true };
 obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
@@ -20,13 +22,32 @@ const obj4 = { 1: null };
 obj4[1] = { enabled: true };
 obj3.variations = obj4;
 const apexExperiment1 = ApexExperiment.createApexExperiment(obj3);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment1.useConfig(tmp2).enabled;
+}) : ((location) => apexExperiment1.useConfig({ location }).enabled);
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFlywheelExperiment.tsx");
 
 export const DisplayNameStylesFlywheelSettersExperiment = apexExperiment;
 export const DisplayNameStylesFlywheelViewersExperiment = apexExperiment1;
-export const useIsDisplayNameStylesFlywheelViewersEnabled = function useIsDisplayNameStylesFlywheelViewersEnabled(UsernameWithEffects) {
-  return apexExperiment1.useConfig({ location: UsernameWithEffects }).enabled;
-};
-export const useIsDisplayNameStylesFlywheelSettersEnabled = function useIsDisplayNameStylesFlywheelSettersEnabled(DisplayNameStylesEditScreen) {
-  return apexExperiment.useConfig({ location: DisplayNameStylesEditScreen }).enabled;
-};
+export const useIsDisplayNameStylesFlywheelViewersEnabled = tmp4;
+export const useIsDisplayNameStylesFlywheelSettersEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2).enabled;
+}) : ((location) => apexExperiment.useConfig({ location }).enabled);

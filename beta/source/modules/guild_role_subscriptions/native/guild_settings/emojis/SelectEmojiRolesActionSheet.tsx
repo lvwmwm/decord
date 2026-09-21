@@ -1,30 +1,29 @@
-// Module ID: 18240
-// Function ID: 18241
+// Module ID: 18243
+// Function ID: 18244
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1181, 1085, 21, 4756, 576, 5741, 15482, 5339, 1177, 1115, 7394, 7442, 7317, 8871, 4752, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1185, 1089, 21, 4758, 580, 5743, 558, 568, 15471, 8876, 4754, 1119, 1181, 5341, 7396, 7319, 7449, 2]
 
-// Module 18240 (SelectEmojiRolesActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5339 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
-import ActionSheet from "ActionSheet" /* 7442 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
+// Module 18243 (SelectEmojiRolesActionSheet)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import Pressables from "Pressables" /* 5341 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
+import ActionSheet from "ActionSheet" /* 7449 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15471 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5741 */;
+import TextStyles_mod from "TextStyles" /* 5743 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const Fonts = fn(1085).Fonts;
+const Fonts = fn(1089).Fonts;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const itemSize = fn(1181).FORM_ROW_VERTICAL_PADDING + 22;
-const createStyles = fn(4756);
+const itemSize = fn(1185).FORM_ROW_VERTICAL_PADDING + 22;
+const createStyles = fn(4758);
 let obj2 = { list: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, label: { flex: 1, flexDirection: "row", alignItems: "center" }, roleName: null, archivedBadge: null, archivedBadgeText: null, divider: null, saveButton: null, saveButtonDisabled: null };
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, 16));
@@ -43,10 +42,190 @@ const merged2 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.c
 obj2.saveButton = {};
 obj2.saveButtonDisabled = { opacity: 0.3 };
 let closure_10 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj7 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+const obj8 = {};
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/emojis/SelectEmojiRolesActionSheet.tsx");
 
-export default function SelectEmojiRolesActionSheet(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
+  const cResult = onSave(568).c(41);
+  onSave = onSave.onSave;
+  const emoji = onSave.emoji;
+  const tmp4 = closure_10();
+  dependencyMap = tmp4;
+  let roles;
+  if (emoji != null) {
+    roles = emoji.roles;
+  }
+  if (cResult[0] !== roles) {
+    let roles1;
+    if (emoji != null) {
+      roles1 = emoji.roles;
+    }
+    const fn = function s() {
+      let roles;
+      if (emoji != null) {
+        roles = emoji.roles;
+      }
+      if (roles == null) {
+        roles = [];
+      }
+      return new Set(roles);
+    };
+    cResult[0] = roles1;
+    cResult[1] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const tmp8 = first(noop.useState(tmp6), 2);
+  first = tmp8[0];
+  noop = tmp8[1];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { includeSoftDeleted: true, sortDeletedListingsLast: true };
+    cResult[2] = obj2;
+    let tmp10 = obj2;
+  } else {
+    tmp10 = cResult[2];
+  }
+  let obj = onSave(568);
+  const subscriptionListingsForGuild = onSave(15471).useSubscriptionListingsForGuild(onSave.guildId, tmp10);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor(arg0) {
+        closure_0 = onSave;
+        return closure_4((has) => {
+          set = new Set(has);
+          if (has.has(closure_0)) {
+            set.delete(tmp);
+          } else {
+            set.add(tmp);
+          }
+          return set;
+        });
+      }
+    }
+    cResult[3] = P;
+    const tmp12 = P;
+  } else {
+    class P {
+      constructor(arg0) {
+        closure_0 = onSave;
+        return closure_4((has) => {
+          set = new Set(has);
+          if (has.has(closure_0)) {
+            set.delete(tmp);
+          } else {
+            set.add(tmp);
+          }
+          return set;
+        });
+      }
+    }
+  }
+  P = tmp12;
+  if (cResult[4] === onSave) {
+    class P {
+      constructor(arg0) {
+        closure_0 = onSave;
+        return closure_4((has) => {
+          set = new Set(has);
+          if (has.has(closure_0)) {
+            set.delete(tmp);
+          } else {
+            set.add(tmp);
+          }
+          return set;
+        });
+      }
+    }
+    if (cResult[7] === first) {
+      class P {
+        constructor(arg0) {
+          closure_0 = onSave;
+          return closure_4((has) => {
+            set = new Set(has);
+            if (has.has(closure_0)) {
+              set.delete(tmp);
+            } else {
+              set.add(tmp);
+            }
+            return set;
+          });
+        }
+      }
+    }
+    class O {
+      constructor(arg0, arg1) {
+        tmp = closure_5[arg1];
+        closure_0 = tmp;
+        tmp3 = closure_1_7;
+        tmp5 = closure_6;
+        tmp6 = onSave;
+        tmp7 = closure_2;
+        diff = closure_5.length - 1;
+        tmp4 = closure_1_8;
+        tmp8 = closure_5;
+        obj = { style: closure_2.label, children: null };
+        tmp9 = closure_2;
+        obj1 = { style: closure_2.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: tmp.name };
+        items = [, ];
+        items[0] = closure_6(onSave(closure_2[13]).Text, obj1);
+        archived = tmp.archived;
+        if (archived) {
+          obj8 = { style: null, children: null };
+          obj8.style = tmp9.archivedBadge;
+          obj9 = { style: null, variant: "text-xs/bold", color: "text-overlay-light", children: null };
+          obj9.style = tmp9.archivedBadgeText;
+          intl = tmp6(tmp7[14]).intl;
+          obj9.children = intl.string(tmp6(tmp7[14]).t.HRtfn9);
+          obj8.children = tmp5(tmp6(tmp7[13]).Text, obj9);
+          archived = tmp5(tmp8, obj8);
+        }
+        tmp10 = arg1 === diff;
+        obj10 = {
+          label: tmp3(tmp8, obj),
+          onPress() {
+                  return closure_6(role_id.role_id);
+                },
+          trailing: null
+        };
+        items[1] = archived;
+        obj.children = items;
+        obj11 = { selected: closure_3.has(tmp.role_id) };
+        obj10.trailing = tmp5(tmp6(tmp7[12]).FormRow.Checkbox, obj11);
+        items1 = [, ];
+        items1[0] = tmp5(onSave(closure_2[12]).FormRow, obj10);
+        tmp5Result = !tmp10;
+        if (!tmp10) {
+          obj12 = { style: null };
+          obj12.style = tmp9.divider;
+          tmp5Result = tmp5(tmp6(tmp7[12]).FormDivider, obj12);
+        }
+        items1[1] = tmp5Result;
+        return tmp3(tmp4, { children: items1 });
+      }
+    }
+    cResult[7] = first;
+    cResult[8] = tmp4.archivedBadge;
+    cResult[9] = tmp4.archivedBadgeText;
+    cResult[10] = tmp4.divider;
+    cResult[11] = tmp4.label;
+    cResult[12] = tmp4.roleName;
+    cResult[13] = subscriptionListingsForGuild;
+    cResult[14] = O;
+  }
+  class F {
+    constructor() {
+      tmp = onSave(Array.from(closure_3));
+      return;
+    }
+  }
+  cResult[4] = onSave;
+  cResult[5] = first;
+  cResult[6] = F;
+}) : ((arg0) => {
   ({ onSave: require, emoji } = arg0);
   let first;
   noop = undefined;
@@ -83,18 +262,18 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   let obj3 = { style: items, children: null };
   items[1] = saveButtonDisabled;
   if (null == emoji) {
-    const intl2 = tmp5(1115).intl;
-    let stringResult = intl2.string(tmp5(1115).t["3UB9ad"]);
+    const intl2 = tmp5(1119).intl;
+    let stringResult = intl2.string(tmp5(1119).t["3UB9ad"]);
   } else {
-    let intl = tmp5(1115).intl;
-    stringResult = intl.string(tmp5(1115).t["R3BPH+"]);
+    let intl = tmp5(1119).intl;
+    stringResult = intl.string(tmp5(1119).t["R3BPH+"]);
   }
   obj3.children = stringResult;
   obj2.children = closure_6(native.LegacyText, obj3);
   let obj4 = { title: null, subtitle: null, trailing: null };
-  const intl3 = tmp5(1115).intl;
+  const intl3 = tmp5(1119).intl;
   obj4.title = intl3.string(util.t.JPU0EF);
-  const intl4 = tmp5(1115).intl;
+  const intl4 = tmp5(1119).intl;
   obj4.subtitle = intl4.string(util.t.MZusPv);
   obj4.trailing = closure_6(Pressables.PressableOpacity, obj2);
   const tmp7Result = closure_6(Pressables.PressableOpacity, obj2);
@@ -113,9 +292,9 @@ export default function SelectEmojiRolesActionSheet(arg0) {
       if (archived) {
         const obj3 = { style: tmp9.archivedBadge, children: null };
         const obj4 = { style: tmp9.archivedBadgeText, variant: "text-xs/bold", color: "text-overlay-light", children: null };
-        const intl = tmp6(tmp7[12]).intl;
-        obj4.children = intl.string(tmp6(tmp7[12]).t.HRtfn9);
-        obj3.children = tmp5(tmp6(tmp7[17]).Text, obj4);
+        const intl = tmp6(tmp7[14]).intl;
+        obj4.children = intl.string(tmp6(tmp7[14]).t.HRtfn9);
+        obj3.children = tmp5(tmp6(tmp7[13]).Text, obj4);
         archived = tmp5(tmp8, obj3);
       }
       const obj5 = {
@@ -123,7 +302,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
         onPress() {
           role_id = role_id.role_id;
           return closure_4((has) => {
-            const set = new Set(has);
+            set = new Set(has);
             if (has.has(role_id)) {
               set.delete(tmp);
             } else {
@@ -140,7 +319,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
       let tmp5Result = !tmp10;
       if (arg1 !== diff) {
         const obj7 = { style: tmp9.divider };
-        tmp5Result = tmp5(tmp6(tmp7[16]).FormDivider, obj7);
+        tmp5Result = tmp5(tmp6(tmp7[12]).FormDivider, obj7);
       }
       children[1] = tmp5Result;
       return closure_1_7(closure_1_8, { children });
@@ -148,6 +327,6 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   };
   const items1 = [subscriptionListingsForGuild.length];
   obj6.sections = items1;
-  obj5.children = closure_6(emoji(7317), obj6);
+  obj5.children = closure_6(emoji(7319), obj6);
   return closure_6(ActionSheet.ActionSheet, obj5);
-};
+});

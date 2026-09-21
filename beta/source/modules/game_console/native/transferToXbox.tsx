@@ -1,11 +1,11 @@
-// Module ID: 10056
-// Function ID: 10057
+// Module ID: 10035
+// Function ID: 10036
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1074, 21, 10047, 10044, 10057, 5109, 10058, 1980, 10050, 4898, 2]
+// Dependencies: [5, 19, 17, 1078, 21, 10026, 10023, 10036, 5111, 10037, 1984, 10029, 4900, 2]
 // Exports: default
 
-// Module 10056 (transferToXbox)
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10047 */;
+// Module 10035 (transferToXbox)
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10026 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ let closure_8 = async function _transferToXbox(arg0, value) {
       const obj = { value, done: true };
       return obj;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -104,7 +104,7 @@ let closure_8 = async function _transferToXbox(arg0, value) {
         closure_130_2(closure_130_3[12]).stopOwnStream(false);
         closure_130_5.openURL(closure_129_2);
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else {
         const obj17 = {
           importer() {
@@ -129,7 +129,7 @@ let closure_8 = async function _transferToXbox(arg0, value) {
   }
 };
 const Linking = fn(17).Linking;
-const PlatformTypes = fn(1074).PlatformTypes;
+const PlatformTypes = fn(1078).PlatformTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_console/native/transferToXbox.tsx");

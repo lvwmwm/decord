@@ -1,10 +1,10 @@
-// Module ID: 14125
-// Function ID: 14126
+// Module ID: 14128
+// Function ID: 14129
 // Name: FriendRequestMessageExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 14125 (FriendRequestMessageExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14128 (FriendRequestMessageExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-03-friend-request-message", defaultConfig: { enabled: false }, variations: null };

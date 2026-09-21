@@ -1,12 +1,13 @@
-// Module ID: 13726
-// Function ID: 13727
+// Module ID: 13729
+// Function ID: 13730
 // Name: useFPDurationLeft
-// Dependencies: [1115, 7681, 4438, 1231, 2]
-// Exports: default
+// Dependencies: [558, 568, 1119, 7686, 4442, 1235, 2]
 
-// Module 13726 (useFPDurationLeft)
-import util from "util" /* 1115 */;
-import useCountdownDefault from "useCountdown" /* 7681 */;
+// Module 13729 (useFPDurationLeft)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import useCountdownDefault from "useCountdown" /* 7686 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function roundFPCountdownUnits(arg0) {
@@ -67,7 +68,36 @@ function roundFPCountdownUnits(arg0) {
 const CountDownMessageTypes = { SHORT_TIME_LEFT: 0, [0]: "SHORT_TIME_LEFT", LONG_TIME_LEFT: 1, [1]: "LONG_TIME_LEFT", ENDS_IN: 2, [2]: "ENDS_IN", SHORT_TIME: 3, [3]: "SHORT_TIME", CREDITS_ENDS_IN: 4, [4]: "CREDITS_ENDS_IN" };
 const result = size.fileFinishedImporting("modules/billing/hooks/useFPDurationLeft.tsx");
 
-export default function useFPDurationLeft(toDate, arg1) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((toDate, arg1) => {
+  const obj = c;
+  let cResult = obj.c(2);
+  if (obj.SHORT_TIME_LEFT === arg1) {
+    const time = { days: tmp(1119).t["/wnvqA"], hours: tmp(1119).t.Jsq0XN, minutes: tmp(1119).t["SBd+Bs"] };
+  } else if (tmp4.LONG_TIME_LEFT === arg1) {
+    const time1 = { days: tmp(1119).t.UD5nn5, hours: tmp(1119).t.Hg8Fee, minutes: tmp(1119).t.XSbQZZ };
+  } else if (tmp4.ENDS_IN === arg1) {
+    const time2 = { days: tmp(1119).t.rLqNad, hours: tmp(1119).t.d1LvCA, minutes: tmp(1119).t.Z2LX7K };
+  } else if (tmp4.CREDITS_ENDS_IN === arg1) {
+    const time3 = { days: tmp(1119).t.xQ3zuN, hours: tmp(1119).t.SFU7QN, minutes: tmp(1119).t.Y4FNdL };
+  } else if (tmp4.SHORT_TIME === arg1) {
+    const time4 = { days: tmp(1119).t.fYmirx, hours: tmp(1119).t["C3RO+g"], minutes: tmp(1119).t.r77oHc };
+  } else {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error = new Error("Unknown messageType (" + arg1 + ") when rendering time left");
+    throw error;
+  }
+  if (cResult[0] !== toDate) {
+    const toDateResult = toDate.toDate();
+    cResult[0] = toDate;
+    cResult[1] = toDateResult;
+    let tmp14 = toDateResult;
+  } else {
+    tmp14 = cResult[1];
+  }
+  cResult = useCountdownDefault;
+  roundFPCountdownUnits(cResult(tmp14, 60000));
+}) : ((toDate, arg1) => {
   if (obj.SHORT_TIME_LEFT === arg1) {
     const time = { days: util.t["/wnvqA"], hours: util.t.Jsq0XN, minutes: util.t["SBd+Bs"] };
   } else if (tmp.LONG_TIME_LEFT === arg1) {
@@ -88,6 +118,6 @@ export default function useFPDurationLeft(toDate, arg1) {
     const time4 = { days: util.t.xQ3zuN, hours: util.t.SFU7QN, minutes: util.t.Y4FNdL };
   }
   roundFPCountdownUnits(useCountdownDefault(toDate.toDate(), 60000));
-};
+});
 export { CountDownMessageTypes };
 export { roundFPCountdownUnits };

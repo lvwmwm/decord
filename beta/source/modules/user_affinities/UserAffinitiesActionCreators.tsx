@@ -1,17 +1,17 @@
-// Module ID: 10104
-// Function ID: 10105
+// Module ID: 10083
+// Function ID: 10084
 // Name: UserAffinitiesActionCreators
-// Dependencies: [6836, 7895, 1074, 573, 1271, 2]
+// Dependencies: [6834, 7900, 1078, 577, 1275, 2]
 // Exports: fetchUserAffinitiesV2
 
-// Module 10104 (UserAffinitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ConsentStore from "ConsentStore" /* 6836 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
+// Module 10083 (UserAffinitiesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import ConsentStore from "ConsentStore" /* 6834 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Endpoints: hasOwnProperty, Consents: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_affinities/UserAffinitiesActionCreators.tsx");

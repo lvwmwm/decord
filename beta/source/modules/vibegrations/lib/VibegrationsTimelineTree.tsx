@@ -1,12 +1,12 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17037
+// Function ID: 17038
 // Name: VibegrationsTimelineTree
-// Dependencies: [32, 3678, 1115, 2]
+// Dependencies: [32, 3682, 1119, 2]
 // Exports: announcementNotes, currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 17034 (VibegrationsTimelineTree)
-import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
+// Module 17037 (VibegrationsTimelineTree)
+import util from "util" /* 1119 */;
+import _modDef3682 from "module_3682" /* 3682 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -38,7 +38,7 @@ function buildTimelineTree(steps, arg1) {
           const obj3 = { id, kind: "step", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
           const result = obj.set(combined, obj3);
           if (null != taskId) {
-            let value3 = map.get(taskId);
+            value3 = map.get(taskId);
             if (null == value3) {
               const obj4 = { taskId, task: null, steps: null };
               const obj5 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], attachments: [], touched: 0, segment };
@@ -78,7 +78,7 @@ function buildTimelineTree(steps, arg1) {
   }
   let items = [];
   const map = new Map();
-  map1 = new Map();
+  const map1 = new Map();
   let sum1 = 0;
   const segmentOf = scanTurnColumn(steps).segmentOf;
   const size = (function cancelledLaneIds(steps) {
@@ -378,7 +378,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { assembling: _modDef3678["9G3ZmA"], installing_deps: _modDef3678.VZuRug, building: _modDef3678["s+ylXP"], bundling: _modDef3678.rEQlMx, committing: _modDef3678.Yvyw1H, built: _modDef3678.hOcVAj, build_error: _modDef3678["6L9Vwt"], healthchecking: _modDef3678.sz8yAj, awaiting_auth: _modDef3678["orD+xo"], healthcheck_passed: _modDef3678["x+sqTG"], healthcheck_failed: _modDef3678.FUWbq1, deploying: _modDef3678.wcXX8Z, preview_ready: _modDef3678["78YNh7"], working: _modDef3678.nv6pUM, error: _modDef3678.j3hBoA };
+let obj = { assembling: _modDef3682["9G3ZmA"], installing_deps: _modDef3682.VZuRug, building: _modDef3682["s+ylXP"], bundling: _modDef3682.rEQlMx, committing: _modDef3682.Yvyw1H, built: _modDef3682.hOcVAj, build_error: _modDef3682["6L9Vwt"], healthchecking: _modDef3682.sz8yAj, awaiting_auth: _modDef3682["orD+xo"], healthcheck_passed: _modDef3682["x+sqTG"], healthcheck_failed: _modDef3682.FUWbq1, deploying: _modDef3682.wcXX8Z, preview_ready: _modDef3682["78YNh7"], working: _modDef3682.nv6pUM, error: _modDef3682.j3hBoA };
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTimelineTree.tsx");
 
@@ -394,32 +394,32 @@ export const describeNode = function describeNode(currentStepResult) {
   }
   const intl = util.intl;
   if (nv6pUM == null) {
-    nv6pUM = _modDef3678.nv6pUM;
+    nv6pUM = _modDef3682.nv6pUM;
   }
   return intl.string(nv6pUM);
 };
 export const describeTaskStatus = function describeTaskStatus(arg0) {
   if ("running" === arg0) {
     const intl5 = util.intl;
-    return intl5.string(_modDef3678["fW7T+d"]);
+    return intl5.string(_modDef3682["fW7T+d"]);
   } else if ("done" === arg0) {
     const intl4 = util.intl;
-    return intl4.string(_modDef3678.X3c4hc);
+    return intl4.string(_modDef3682.X3c4hc);
   } else if ("failed" === arg0) {
     const intl3 = util.intl;
-    return intl3.string(_modDef3678.LK4Wsd);
+    return intl3.string(_modDef3682.LK4Wsd);
   } else if ("cancelled" === arg0) {
     const intl2 = util.intl;
-    return intl2.string(_modDef3678.msWvKA);
+    return intl2.string(_modDef3682.msWvKA);
   } else if ("incomplete" === arg0) {
     const intl = util.intl;
-    return intl.string(_modDef3678.esfcU6);
+    return intl.string(_modDef3682.esfcU6);
   }
 };
 export { buildTimelineTree };
-export const currentStep = function currentStep(steps) {
+export const currentStep = function currentStep(productId) {
   let tmp;
-  const iter = steps[Symbol.iterator]();
+  const iter = productId[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp5 = null == tmp;

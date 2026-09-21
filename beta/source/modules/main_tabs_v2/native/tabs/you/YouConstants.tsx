@@ -1,11 +1,11 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16711
+// Function ID: 16712
 // Name: YouConstants
-// Dependencies: [1177, 576, 2]
+// Dependencies: [1181, 580, 2]
 
-// Module 16709 (YouConstants)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
+// Module 16711 (YouConstants)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouConstants.tsx");

@@ -1,38 +1,16 @@
 // Module ID: 14590
 // Function ID: 14591
-// Dependencies: [14591, 14602, 14604, 14607, 14610, 14611]
+// Dependencies: [14591]
 
 // Module 14590
-import withoutSetter from "withoutSetter" /* 14591 */;
-import _mod14602 from "module_14602" /* 14602 */;
+import _mod14591 from "module_14591" /* 14591 */;
 
-let closure_3 = withoutSetter("toPrimitive");
 
-export default (arg0, arg1) => {
-  if (_mod14602(arg0)) {
-    if (!tmp(14604)(arg0)) {
-      let str = arg1;
-      const tmp4 = tmp(14607)(arg0, closure_3);
-      if (tmp4) {
-        if (undefined === str) {
-          str = "default";
-        }
-        const tmp5 = tmp(14610)(tmp4, arg0, str);
-        if (tmp(14602)(tmp5)) {
-          if (!tmp(14604)(tmp5)) {
-            const tmp9 = new TypeError("Can't convert object to primitive value");
-            throw tmp9;
-          }
-        }
-        return tmp5;
-      } else {
-        let str2 = str;
-        if (undefined === str) {
-          str2 = "number";
-        }
-        return tmp(14611)(arg0, str2);
-      }
-    }
+export default (arg0) => {
+  if (_mod14591(arg0)) {
+    const tmp4 = new TypeError("Can't call method on " + arg0);
+    throw tmp4;
+  } else {
+    return arg0;
   }
-  return arg0;
 };

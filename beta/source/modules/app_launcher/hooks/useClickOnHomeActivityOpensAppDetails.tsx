@@ -1,16 +1,19 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12229
+// Function ID: 12230
 // Name: useClickOnHomeActivityOpensAppDetails
-// Dependencies: [2019, 2]
+// Dependencies: [558, 2023, 2]
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 12342 (useClickOnHomeActivityOpensAppDetails)
-import UserSettings from "UserSettings" /* 2019 */;
+// Module 12229 (useClickOnHomeActivityOpensAppDetails)
+import UserSettings from "UserSettings" /* 2023 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/app_launcher/hooks/useClickOnHomeActivityOpensAppDetails.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/app_launcher/hooks/useClickOnHomeActivityOpensAppDetails.tsx");
 
-export const useClickOnHomeActivityOpensAppDetails = function useClickOnHomeActivityOpensAppDetails() {
+export const useClickOnHomeActivityOpensAppDetails = () => {
   const DeveloperMode = UserSettings.DeveloperMode;
   return DeveloperMode.useSetting();
 };

@@ -1,15 +1,16 @@
-// Module ID: 9291
-// Function ID: 9292
+// Module ID: 9289
+// Function ID: 9290
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4756, 576, 1115, 9292, 4752, 9293, 2]
-// Exports: FieldText, formatDurationNarrow
+// Dependencies: [19, 17, 21, 4758, 580, 1119, 558, 568, 9290, 9291, 4754, 2]
+// Exports: formatDurationNarrow
 
-// Module 9291 (UserProfileApplicationWidgetFieldUtils)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9292 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9293 */;
+// Module 9289 (UserProfileApplicationWidgetFieldUtils)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9290 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9291 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,9 +18,11 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { fieldTextRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, fieldIcon: { width: 16, height: 16 } };
 let closure_6 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileApplicationWidgetFieldUtils.tsx");
 
@@ -55,7 +58,88 @@ export const formatDurationNarrow = function formatDurationNarrow(arg0) {
   }
   return items.join(" ");
 };
-export const FieldText = function FieldText(arg0) {
+export const FieldText = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(17);
+  ({ field, variant, color, skeletonWidthChars } = arg0);
+  const tmp4 = closure_6();
+  if ("hidden" === field.status) {
+    return null;
+  } else if ("skeleton" === field.status) {
+    if (cResult[0] === skeletonWidthChars) {
+      if (cResult[1] === variant) {
+        let tmp19 = cResult[2];
+      }
+      return tmp19;
+    }
+    const obj2 = { variant, widthChars: skeletonWidthChars };
+    const tmp21 = React4(tmp(9290).TextSkeleton, obj2);
+    cResult[0] = skeletonWidthChars;
+    cResult[1] = variant;
+    cResult[2] = tmp21;
+    tmp19 = tmp21;
+  } else {
+    if (cResult[3] === field.text) {
+      if (cResult[4] === variant) {
+        let tmp5 = cResult[5];
+      }
+      if (cResult[6] === color) {
+        if (cResult[7] === tmp5) {
+          if (cResult[8] === variant) {
+            let tmp7 = cResult[9];
+          }
+          if (cResult[10] === field.icon) {
+            if (cResult[11] === tmp4.fieldIcon) {
+              let tmp10 = cResult[12];
+            }
+            if (cResult[13] === tmp4.fieldTextRow) {
+              if (cResult[14] === tmp7) {
+                if (cResult[15] === tmp10) {
+                  let tmp15 = cResult[16];
+                }
+                return tmp15;
+              }
+            }
+            const obj3 = { style: tmp23, children: null };
+            const items = [tmp7, tmp10];
+            obj3.children = items;
+            const tmp18 = hasOwnProperty(React3, obj3);
+            cResult[13] = tmp4.fieldTextRow;
+            cResult[14] = tmp7;
+            cResult[15] = tmp10;
+            cResult[16] = tmp18;
+            tmp15 = tmp18;
+          }
+          let tmp12 = null != field.icon;
+          if (tmp12) {
+            const obj4 = { source: null, style: null, resizeMode: "contain" };
+            const obj5 = { uri: field.icon.url };
+            obj4.source = obj5;
+            obj4.style = tmp4.fieldIcon;
+            tmp12 = React4(React2, obj4);
+          }
+          cResult[10] = field.icon;
+          cResult[11] = tmp4.fieldIcon;
+          cResult[12] = tmp12;
+          tmp10 = tmp12;
+        }
+      }
+      const obj6 = { variant, color, lineClamp: 2, children: tmp5 };
+      const tmp9 = React4(tmp(4754).Text, obj6);
+      cResult[6] = color;
+      cResult[7] = tmp5;
+      cResult[8] = variant;
+      cResult[9] = tmp9;
+      tmp7 = tmp9;
+    }
+    const obj7 = { linkVariant: variant };
+    const result = tmp(9291).parseApplicationWidgetText(field.text, obj7);
+    cResult[3] = field.text;
+    cResult[4] = variant;
+    cResult[5] = result;
+    tmp5 = result;
+    const tmpResult = tmp(9291);
+  }
+}) : ((arg0) => {
   ({ field, variant } = arg0);
   ({ color, skeletonWidthChars } = arg0);
   const tmp = closure_6();
@@ -83,4 +167,4 @@ export const FieldText = function FieldText(arg0) {
     tmp9Result = hasOwnProperty(React3, obj3);
     tmp11 = React4;
   }
-};
+});

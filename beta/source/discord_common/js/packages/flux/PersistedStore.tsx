@@ -12,7 +12,7 @@ import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 require = fn;
 let closure_3 = ["_state", "_version"];
 const Store = fn(506).Store;
-let closure_6 = { _state: "paths", _version: "scales" };
+let closure_6 = { _state: "Array", _version: "Set" };
 let c7 = null;
 let PersistedStore;
 class PersistedStore extends r10016 {
@@ -228,7 +228,7 @@ PersistedStore["migrateAndReadStoreState"] = function migrateAndReadStoreState(E
     if (PersistedStore.shouldClear(c7, EmojiStore)) {
       const Storage2 = Storage3.Storage;
       Storage2.remove(EmojiStore);
-      return { state: "PX_16", requiresPersist: true };
+      return { state: "Set", requiresPersist: true };
     }
   }
   value = null;
@@ -302,7 +302,7 @@ prototype["asyncPersist"] = function asyncPersist() {
   return Promise.resolve(false);
 };
 prototype["persist"] = function persist() {
-  const state = this.getState();
+  state = this.getState();
   const Storage = Storage3.Storage;
   const result = Storage.set(this.getClass().persistKey, { _state: state, _version: this._version });
 };

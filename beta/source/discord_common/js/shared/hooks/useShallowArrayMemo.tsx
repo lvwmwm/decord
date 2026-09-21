@@ -1,17 +1,32 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16462
+// Function ID: 16463
 // Name: useShallowArrayMemo
-// Dependencies: [16466, 558, 2]
-// Exports: default
+// Dependencies: [558, 568, 16463, 560, 2]
 
-// Module 16465 (useShallowArrayMemo)
-import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
-import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 16466 */;
+// Module 16462 (useShallowArrayMemo)
+import c from "c" /* 568 */;
+import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 16463 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const discord_common_shallowEqual = tmp(560);
 const result = size.fileFinishedImporting("../discord_common/js/shared/hooks/useShallowArrayMemo.tsx");
 
-export default function useShallowArrayMemo(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  closure_0 = arg0;
+  const cResult = c.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function l() {
+      return closure_0;
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    let tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return useMemoWithEqualityFunctionDefault(tmp4, arg0, discord_common_shallowEqual.areArraysShallowEqual);
+}) : ((arg0) => {
   closure_0 = arg0;
   return useMemoWithEqualityFunctionDefault(() => closure_0, arg0, discord_common_shallowEqual.areArraysShallowEqual);
-};
+});

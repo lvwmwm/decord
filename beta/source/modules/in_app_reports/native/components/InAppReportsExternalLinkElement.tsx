@@ -1,38 +1,180 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13213
+// Function ID: 13214
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 4756, 7224, 4752, 1115, 8873, 5828, 13215, 4451, 2]
-// Exports: default
+// Dependencies: [17, 21, 4758, 558, 568, 7222, 4754, 1119, 4455, 5828, 13214, 8878, 2]
 
-// Module 13214 (InAppReportsExternalLinkElement)
+// Module 13213 (InAppReportsExternalLinkElement)
 import _mod17 from "module_17" /* 17 */;
-import LinkingDefault from "Linking" /* 4451 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+import c from "c" /* 568 */;
+import LinkingDefault from "Linking" /* 4455 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4756 */;
+import createStyles from "createStyles" /* 4758 */;
+import "ReactCompilerGating";
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function ExternalLinkItem(data) {
+const View = _mod17.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+let closure_6 = createStyles.createStyles({ linksContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerText: { marginBottom: 8 } });
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((data) => {
+  const cResult = url(568).c(7);
+  data = data.data;
+  url = data.url;
+  ({ link_text, link_description } = data);
+  if (data.is_localized) {
+    if (cResult[0] !== url) {
+      const fn = function t() {
+        LinkingDefault.openURL(url);
+      };
+      cResult[0] = url;
+      cResult[1] = fn;
+      let tmp5 = fn;
+    } else {
+      tmp5 = cResult[1];
+    }
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { IconComponent: tmp(13214).LinkExternalMediumIcon };
+      const tmp9 = closure_4(tmp(5828).TableRowIcon, obj2);
+      cResult[2] = tmp9;
+      let tmp7 = tmp9;
+    } else {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === link_description) {
+      if (cResult[4] === link_text) {
+        if (cResult[5] === tmp5) {
+          let tmp10 = cResult[6];
+        }
+        return tmp10;
+      }
+    }
+    const obj3 = { label: link_text, subLabel: link_description, trailing: tmp7, onPress: tmp5, arrow: false, accessibilityRole: "link" };
+    const tmp12 = closure_4(tmp(8878).RowButton, obj3);
+    cResult[3] = link_description;
+    cResult[4] = link_text;
+    cResult[5] = tmp5;
+    cResult[6] = tmp12;
+    tmp10 = tmp12;
+  } else {
+    return null;
+  }
+}) : ((data) => {
   data = data.data;
   const url = data.url;
   let tmp3 = null;
   if (data.is_localized) {
     const obj = { label: tmp, subLabel: tmp2, trailing: null, onPress: null, arrow: false, accessibilityRole: "link" };
-    const obj2 = { IconComponent: url(13215).LinkExternalMediumIcon };
+    const obj2 = { IconComponent: url(13214).LinkExternalMediumIcon };
     obj.trailing = closure_4(url(5828).TableRowIcon, obj2);
     obj.onPress = function onPress() {
       LinkingDefault.openURL(url);
     };
-    tmp3 = closure_4(url(8873).RowButton, obj);
+    tmp3 = closure_4(url(8878).RowButton, obj);
   }
   return tmp3;
-}
-const View = _mod17.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-let closure_6 = createStyles.createStyles({ linksContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerText: { marginBottom: 8 } });
+});
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
 
-export default function ExternalLinksElement(elements) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((elements) => {
+  let hvVgAZ = dependencyMap;
+  const cResult = c.c(14);
+  elements = elements.elements;
+  const tmp3 = closure_6();
+  const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("InAppReportsExternalLink", "heading-deprecated-12/extrabold");
+  if (null != elements) {
+    let num2 = 0;
+    if (0 !== elements.length) {
+      if (null != elements.find((data) => data.data.is_localized)) {
+        if (cResult[0] !== elements) {
+          const _Symbol = Symbol;
+          if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+            const fn = function p(data) {
+              return data.data.is_header_hidden;
+            };
+            cResult[2] = fn;
+            let tmp7 = fn;
+          } else {
+            tmp7 = cResult[2];
+          }
+          const someResult = elements.some(tmp7);
+          cResult[num2] = elements;
+          num2 = 1;
+          cResult[1] = someResult;
+        } else {
+          if (cResult[3] === typeConsolidationEyebrow) {
+            if (cResult[4] === tmp5) {
+              if (cResult[5] === tmp3.headerText) {
+                let tmp11 = cResult[6];
+              }
+              if (cResult[7] !== elements) {
+                const _Symbol2 = Symbol;
+                if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+                  const fn2 = function v(data, arg1) {
+                    return closure_1_4(closure_1_7, { data: data.data }, "external-link-" + arg1);
+                  };
+                  cResult[9] = fn2;
+                  let tmp18 = fn2;
+                } else {
+                  tmp18 = cResult[9];
+                }
+                const mapped = elements.map(tmp18);
+                cResult[7] = elements;
+                cResult[8] = mapped;
+              } else {
+                if (cResult[10] === tmp3.linksContainer) {
+                  if (cResult[11] === tmp11) {
+                    if (cResult[12] === tmp16) {
+                      let tmp21 = cResult[13];
+                    }
+                    return tmp21;
+                  }
+                }
+                const obj3 = { style: tmp10, children: null };
+                const items = [tmp11, cResult[8]];
+                obj3.children = items;
+                const tmp24 = hasOwnProperty(View, obj3);
+                cResult[10] = tmp3.linksContainer;
+                cResult[11] = tmp11;
+                cResult[12] = cResult[8];
+                cResult[13] = tmp24;
+                tmp21 = tmp24;
+              }
+            }
+          }
+          if (cResult[1]) {
+            cResult[3] = typeConsolidationEyebrow;
+            cResult[4] = tmp5;
+            cResult[5] = tmp3.headerText;
+            cResult[6] = tmp12;
+            tmp11 = tmp12;
+          } else {
+            if (null != typeConsolidationEyebrow.style) {
+              const items1 = [tmp3.headerText, typeConsolidationEyebrow.style];
+              let headerText = items1;
+            } else {
+              headerText = tmp3.headerText;
+            }
+            const obj4 = { style: headerText, variant: typeConsolidationEyebrow.variant, color: "text-default", accessibilityRole: "header", children: null };
+            if (null != typeConsolidationEyebrow.style) {
+              const intl2 = tmp(1119).intl;
+              hvVgAZ = tmp(1119).t.hvVgAZ;
+              let stringResult = intl2.string(hvVgAZ);
+            } else {
+              const intl = tmp(1119).intl;
+              stringResult = intl.string(tmp(1119).t.hvVgAZ).toUpperCase();
+              const str2 = intl.string(tmp(1119).t.hvVgAZ);
+            }
+            obj4.children = stringResult;
+            React4(tmp(4754).Text, obj4);
+          }
+        }
+      }
+    }
+  }
+  return null;
+}) : ((elements) => {
   elements = elements.elements;
   const tmp = closure_6();
   let hvVgAZ = dependencyMap;
@@ -42,7 +184,7 @@ export default function ExternalLinksElement(elements) {
       if (null != elements.find((data) => data.data.is_localized)) {
         const obj2 = { style: tmp.linksContainer, children: null };
         if (someResult) {
-          const items = [tmp10, elements.map((data, index) => closure_1_4(ExternalLinkItem, { data: data.data }, "external-link-" + index))];
+          const items = [tmp10, elements.map((data, index) => closure_1_4(closure_1_7, { data: data.data }, "external-link-" + index))];
           obj2.children = items;
           return tmp8(tmp9, obj2);
         } else {
@@ -54,20 +196,20 @@ export default function ExternalLinksElement(elements) {
           }
           const obj3 = { style: headerText, variant: typeConsolidationEyebrow.variant, color: "text-default", accessibilityRole: "header", children: null };
           if (null != typeConsolidationEyebrow.style) {
-            const intl2 = tmp2(1115).intl;
-            hvVgAZ = tmp2(1115).t.hvVgAZ;
+            const intl2 = tmp2(1119).intl;
+            hvVgAZ = tmp2(1119).t.hvVgAZ;
             let stringResult = intl2.string(hvVgAZ);
           } else {
-            const intl = tmp2(1115).intl;
-            stringResult = intl.string(tmp2(1115).t.hvVgAZ).toUpperCase();
-            const str = intl.string(tmp2(1115).t.hvVgAZ);
+            const intl = tmp2(1119).intl;
+            stringResult = intl.string(tmp2(1119).t.hvVgAZ).toUpperCase();
+            const str = intl.string(tmp2(1119).t.hvVgAZ);
           }
           obj3.children = stringResult;
-          React4(tmp2(4752).Text, obj3);
+          React4(tmp2(4754).Text, obj3);
         }
         someResult = elements.some((data) => data.data.is_header_hidden);
       }
     }
   }
   return null;
-};
+});

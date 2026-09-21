@@ -1,20 +1,44 @@
-// Module ID: 12144
-// Function ID: 12145
+// Module ID: 12020
+// Function ID: 12021
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4756, 12145, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 558, 568, 12021, 2]
 
-// Module 12144 (AppealIngestionActivitySummary)
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12145 */;
+// Module 12020 (AppealIngestionActivitySummary)
+import c from "c" /* 568 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12021 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let closure_4 = createStyles.createStyles({ activity: { marginBottom: 16 } });
+const createStyles = fn(4758);
+let closure_5 = createStyles.createStyles({ activity: { marginBottom: 16 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionActivitySummary.tsx");
 
-export default function AppealIngestionActivitySummary(flaggedContent) {
-  return <View style={closure_4().activity}>{jsx(ClassificationEvidenceDefault, { flaggedContent: arg0.flaggedContent })}</View>;
-};
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
+  const cResult = c.c(5);
+  flaggedContent = flaggedContent.flaggedContent;
+  const tmp3 = closure_5();
+  if (cResult[0] !== flaggedContent) {
+    const obj2 = { flaggedContent };
+    const tmp7 = jsx(ClassificationEvidenceDefault, { flaggedContent });
+    cResult[0] = flaggedContent;
+    cResult[1] = tmp7;
+    let tmp4 = tmp7;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === tmp3.activity) {
+    if (cResult[3] === tmp4) {
+      let tmp8 = cResult[4];
+    }
+    return tmp8;
+  }
+  const tmp9 = <View style={tmp3.activity}>{tmp4}</View>;
+  cResult[2] = tmp3.activity;
+  cResult[3] = tmp4;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((flaggedContent) => <View style={closure_5().activity}>{jsx(ClassificationEvidenceDefault, { flaggedContent: arg0.flaggedContent })}</View>);

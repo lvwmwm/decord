@@ -1,9 +1,9 @@
 // Module ID: 10117
 // Function ID: 10118
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 10117
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/settings", width: 24, height: 24, scales: [2, 3], hash: "4a465b7b889dd2efb6716569375c3825", name: "ic_qr_code_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "cc54bd683628b7a915bf80d8d6517c1e", name: "mail", type: "png" });

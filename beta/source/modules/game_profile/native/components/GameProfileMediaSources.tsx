@@ -1,13 +1,13 @@
-// Module ID: 8993
-// Function ID: 8994
+// Module ID: 8991
+// Function ID: 8992
 // Name: GameProfileMediaSources
-// Dependencies: [1431, 4997, 2013, 2]
+// Dependencies: [1435, 4999, 2017, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8993 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2013 */;
-import StoreUtils from "StoreUtils" /* 4997 */;
+// Module 8991 (GameProfileMediaSources)
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2017 */;
+import StoreUtils from "StoreUtils" /* 4999 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 366;
@@ -51,9 +51,9 @@ export const buildMediaEntries = function buildMediaEntries(game) {
   }
   return items;
 };
-export const buildMediaViewerSources = function buildMediaViewerSources(memo1, memo) {
-  closure_0 = memo;
-  return memo1.map((originalUrl, mediaIndex) => {
+export const buildMediaViewerSources = function buildMediaViewerSources(arr2, cResult) {
+  closure_0 = cResult;
+  return arr2.map((originalUrl, mediaIndex) => {
     const obj = { uri: originalUrl.originalUrl, videoURI: null, mediaIndex: null };
     originalUrl = undefined;
     if ("trailer" === originalUrl.type) {

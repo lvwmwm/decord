@@ -1,16 +1,16 @@
-// Module ID: 5623
-// Function ID: 5624
+// Module ID: 5625
+// Function ID: 5626
 // Name: ConnectedAccountsActionCreators
-// Dependencies: [5, 5498, 1074, 3, 1271, 573, 1241, 5624, 4949, 1249, 2]
+// Dependencies: [5, 5500, 1078, 3, 1275, 577, 1245, 5626, 4951, 1253, 2]
 
-// Module 5623 (ConnectedAccountsActionCreators)
+// Module 5625 (ConnectedAccountsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4951 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ function callback(arg0, arg1) {
   request.rejectWithError = HTTPUtils.rejectWithMigratedError();
   return HTTP.post(request);
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AbortCodes: hasOwnProperty, Endpoints: metroRequire, FRIEND_SYNC_PLATFORM_TYPES: closure_7, AnalyticEvents: closure_8 } = Constants);
 let closure_9 = new LoggerDefault("ConnectedAccounts");
 const size = fn(2);
@@ -82,7 +82,7 @@ export default {
       if (url == null) {
         platform_type = "";
       }
-      const state = platform_type(tmp2[7]).getCallbackParamsFromURL(platform_type).state;
+      state = platform_type(tmp2[7]).getCallbackParamsFromURL(platform_type).state;
       if (null != state) {
         const result1 = c4.addPendingAuthorizedState(state);
       }
@@ -182,7 +182,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -268,7 +268,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

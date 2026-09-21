@@ -1,13 +1,13 @@
-// Module ID: 8725
-// Function ID: 8726
+// Module ID: 8730
+// Function ID: 8731
 // Name: AgeVerificationStore
-// Dependencies: [1372, 510, 504, 573, 2]
+// Dependencies: [1376, 510, 504, 577, 2]
 
-// Module 8725 (AgeVerificationStore)
+// Module 8730 (AgeVerificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 let c3 = 86400000;

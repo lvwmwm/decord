@@ -1,22 +1,22 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12487
+// Function ID: 12488
 // Name: SearchQueryStore
-// Dependencies: [2041, 4405, 1372, 8122, 8121, 1074, 4909, 1115, 12594, 12606, 2017, 504, 573, 2]
+// Dependencies: [2045, 4409, 1376, 8127, 8126, 1078, 4911, 1119, 12488, 12500, 2021, 504, 577, 2]
 
-// Module 12593 (SearchQueryStore)
+// Module 12487 (SearchQueryStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SearchUtils from "SearchUtils" /* 12594 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 12606 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import SearchUtils from "SearchUtils" /* 12488 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 12500 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const SearchConstants = fn(8122);
+const SearchConstants = fn(8127);
 ({ EMPTY_SEARCH_QUERY_STRING: metroRequire, SearchQueryTagTypes: closure_7 } = SearchConstants);
-const SearchFilterAddLocations = fn(8121).SearchFilterAddLocations;
-const Constants = fn(1074);
+const SearchFilterAddLocations = fn(8126).SearchFilterAddLocations;
+const Constants = fn(1078);
 ({ SearchTokenTypes: closure_9, SearchTypes: c10 } = Constants);
 const prototype = function SearchQueryStateManager(type) {
   const obj = Object.create(new.target.prototype);
@@ -176,27 +176,27 @@ const prototype = function SearchQueryStateManager(type) {
   } else {
     let channelName;
     if (null != channel) {
-      channelName = obj(4909).computeChannelName(channel, UserStore, RelationshipStore);
-      const obj2 = obj(4909);
+      channelName = obj(4911).computeChannelName(channel, UserStore, RelationshipStore);
+      const obj2 = obj(4911);
     }
     if (null == channelName) {
       let items1 = [];
     } else {
       const obj3 = { type: constants.COMPLETE, searchTokenType: constants2.FILTER_IN, text: null, channelId: null, location: null };
-      const intl = obj(1115).intl;
-      const stringResult = intl.string(obj(1115).t.WNpFHa);
+      const intl = obj(1119).intl;
+      const stringResult = intl.string(obj(1119).t.WNpFHa);
       let _HermesInternal = HermesInternal;
-      obj3.text = "" + stringResult + ": " + obj(12594).quoteChannelName(channelName);
+      obj3.text = "" + stringResult + ": " + obj(12488).quoteChannelName(channelName);
       obj3.channelId = type.channelId;
       obj3.location = SearchFilterAddLocations.CLIENT_AUTO_ADD;
       items1 = [obj3];
-      const obj4 = obj(12594);
+      const obj4 = obj(12488);
     }
     items = items1;
   }
 }.prototype;
 const map = new Map();
-const FunctionUtils = fn(2017);
+const FunctionUtils = fn(2021);
 let closure_13 = FunctionUtils.cachedFunction((arg0) => new prototype(arg0));
 const Store = initializeDefault.Store;
 class NativeSearchQueryStore extends Store {

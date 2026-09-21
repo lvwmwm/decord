@@ -1,23 +1,81 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 15966
+// Function ID: 15967
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 4748, 4981, 21, 4756, 504, 1364, 4466, 2]
-// Exports: default
+// Dependencies: [19, 17, 4750, 4983, 21, 4758, 558, 568, 504, 1368, 4471, 2]
 
-// Module 15978 (CheckpointKnickKnacks)
+// Module 15966 (CheckpointKnickKnacks)
+import initialize from "initialize" /* 504 */;
+import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
-const require = fn;
+require = fn;
 const View = fn(17).View;
-const CHECKPOINT_PRIMARY = fn(4981).CHECKPOINT_PRIMARY;
+const CHECKPOINT_PRIMARY = fn(4983).CHECKPOINT_PRIMARY;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles({ rive: { width: 143, height: 32 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointKnickKnacks.tsx");
 
-export default function CheckpointKnickKnacks(style) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+  const cResult = c.c(12);
+  style = style.style;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function v() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  const tmp8 = closure_7();
+  if (cResult[2] !== stateFromStores) {
+    const obj2 = { iconColor: CHECKPOINT_PRIMARY, reducedMotion: stateFromStores };
+    cResult[2] = stateFromStores;
+    cResult[3] = obj2;
+    let tmp9 = obj2;
+  } else {
+    tmp9 = cResult[3];
+  }
+  const tmpResult = initialize;
+  if (tmpResult2.isAndroid()) {
+    return null;
+  } else {
+    if (cResult[4] === style) {
+      if (cResult[5] === tmp8.rive) {
+        let tmp11 = cResult[6];
+      }
+      if (cResult[7] !== tmp9) {
+        const obj3 = { artboard: "Entry", dataBinding: tmp9 };
+        const tmp14 = jsx(tmp(4471).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
+        cResult[7] = tmp9;
+        cResult[8] = tmp14;
+        let tmp12 = tmp14;
+      } else {
+        tmp12 = cResult[8];
+      }
+      if (cResult[9] === tmp11) {
+      }
+      const obj4 = { style: tmp11, children: tmp12 };
+      const tmp18 = <View style={tmp11}>{tmp12}</View>;
+      cResult[9] = tmp11;
+      cResult[10] = tmp12;
+      cResult[11] = tmp18;
+    }
+    const items1 = [tmp8.rive, style];
+    cResult[4] = style;
+    cResult[5] = tmp8.rive;
+    cResult[6] = items1;
+    tmp11 = items1;
+  }
+}) : ((style) => {
   let stateFromStores;
   const items = [AccessibilityStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -32,8 +90,8 @@ export default function CheckpointKnickKnacks(style) {
     const items2 = [tmp4.rive, style.style];
     obj3.style = items2;
     const obj4 = { artboard: "Entry", dataBinding: memo };
-    obj3.children = jsx(tmp(4466).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
+    obj3.children = jsx(tmp(4471).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
     tmp6 = <View style={null}>{null}</View>;
   }
   return tmp6;
-};
+});

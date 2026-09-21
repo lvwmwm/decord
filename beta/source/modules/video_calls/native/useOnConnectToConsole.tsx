@@ -1,24 +1,24 @@
-// Module ID: 10042
-// Function ID: 10043
+// Module ID: 10021
+// Function ID: 10022
 // Name: useOnConnectToConsole
-// Dependencies: [19, 1074, 4576, 2027, 9342, 9373, 10043, 2]
-// Exports: onConnectToConsole, useOnConnectToConsole
+// Dependencies: [19, 1078, 4579, 2031, 9340, 9371, 10022, 558, 568, 2]
+// Exports: onConnectToConsole
 
-// Module 10042 (useOnConnectToConsole)
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9342 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 9373 */;
+// Module 10021 (useOnConnectToConsole)
+import dismissible_content from "dismissible_content" /* 2031 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9340 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 9371 */;
 import noop from "module_19" /* 19 */;
 
-const beginConsoleTransfer = tmp(10043);
-require = fn;
-const Constants = fn(1074);
-({ AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/video_calls/native/useOnConnectToConsole.tsx");
+const require = globalThis.__r;
 
-export const onConnectToConsole = function onConnectToConsole(channel, found) {
+const beginConsoleTransfer = tmp(10022);
+require = fn;
+const Constants = fn(1078);
+({ AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);
+const ReactCompilerGating = fn(558);
+function onConnectToConsole(channel, found) {
   const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.DONUT_MOBILE_NUX);
   if (found.twoWayLink) {
     if (!found.revoked) {
@@ -33,13 +33,49 @@ export const onConnectToConsole = function onConnectToConsole(channel, found) {
     const items1 = [constants.CHANNEL_CALL];
     return PlayStationLinkModalActionCreatorsDefault.showModal(items1, found.type);
   }
-};
-export const useOnConnectToConsole = function useOnConnectToConsole(channel, account) {
-  closure_0 = channel;
-  let items = [channel, account];
+}
+const size = fn(2);
+let result = size.fileFinishedImporting("modules/video_calls/native/useOnConnectToConsole.tsx");
+
+export { onConnectToConsole };
+export const useOnConnectToConsole = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  const twoWayLink = arg1;
+  const cResult = require("c").c(3);
+  if (cResult[0] === arg1) {
+    if (cResult[1] === arg0) {
+      let tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const fn = function s() {
+    const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.DONUT_MOBILE_NUX);
+    if (twoWayLink.twoWayLink) {
+      if (!tmp2.revoked) {
+        beginConsoleTransfer.beginConsoleTransfer(closure_0, tmp2.type);
+        const tmp3Result = beginConsoleTransfer;
+      }
+    }
+    const type = tmp2.type;
+    if (constants2.XBOX === type) {
+      const items = [constants.CHANNEL_CALL];
+      XboxLinkModalActionCreatorsDefault.showModal(items);
+    } else if (tmp7.PLAYSTATION === type) {
+      const items1 = [constants.CHANNEL_CALL];
+      PlayStationLinkModalActionCreatorsDefault.showModal(items1, tmp2.type);
+    }
+  };
+  cResult[0] = arg1;
+  cResult[1] = arg0;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((arg0, arg1) => {
+  closure_0 = arg0;
+  const twoWayLink = arg1;
+  let items = [arg0, arg1];
   return noop.useCallback(() => {
     const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.DONUT_MOBILE_NUX);
-    if (account.twoWayLink) {
+    if (twoWayLink.twoWayLink) {
       if (!tmp2.revoked) {
         beginConsoleTransfer.beginConsoleTransfer(closure_0, tmp2.type);
         const tmp3Result = beginConsoleTransfer;
@@ -54,4 +90,4 @@ export const useOnConnectToConsole = function useOnConnectToConsole(channel, acc
       PlayStationLinkModalActionCreatorsDefault.showModal(items1, tmp2.type);
     }
   }, items);
-};
+});

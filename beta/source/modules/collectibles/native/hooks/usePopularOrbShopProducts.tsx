@@ -1,17 +1,17 @@
-// Module ID: 15339
-// Function ID: 15340
+// Module ID: 15328
+// Function ID: 15329
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1076, 1091, 1079, 15340, 15341, 1080, 9153, 15342, 2]
+// Dependencies: [5, 32, 19, 1080, 1095, 1083, 15329, 15330, 1084, 9151, 15331, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 15339 (usePopularOrbShopProducts)
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 15328 (usePopularOrbShopProducts)
+import DurationsDefault from "Durations" /* 1095 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-let constants = fn(1076).CollectiblesMobileShopScreen;
+let constants = fn(1080).CollectiblesMobileShopScreen;
 let closure_6 = 10 * DurationsDefault.Millis.SECOND;
 let closure_7 = 10 * DurationsDefault.Millis.SECOND;
 const size = fn(2);
@@ -57,7 +57,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -74,11 +74,11 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
                 closure_1 = tmp8;
                 closure_129_0 = undefined;
                 let v0 = 2;
-                const obj4 = { item_types: [], colors: [], themes: [], orbs_eligible: true, currency: _true(15341).CollectibleSearchCurrencyFilter.ORBS, offset: 0, limit: 10, sort_type, sort_direction: _true(1080).CollectibleSearchSortDirection.DESC };
+                const obj4 = { item_types: [], colors: [], themes: [], orbs_eligible: true, currency: _true(15330).CollectibleSearchCurrencyFilter.ORBS, offset: 0, limit: 10, sort_type, sort_direction: _true(1084).CollectibleSearchSortDirection.DESC };
                 const obj6 = { timeout };
                 c5 = 3;
                 sort_type = 1;
-                const obj7 = { value: _true(15340).search(obj4, obj6), done: false };
+                const obj7 = { value: _true(15329).search(obj4, obj6), done: false };
                 return obj7;
               }
             } else if (1 === tmp8) {
@@ -121,7 +121,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
                 v0(true);
               }
               sort_type = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp34) {
             closure_3 = tmp34;
@@ -191,7 +191,7 @@ export const usePopularOrbShopProducts = function usePopularOrbShopProducts(enab
     return mapped.filter((item) => null != item);
   }, items2);
   const someResult = first.some((item) => {
-    let state;
+    state = undefined;
     if (collectiblesShopProducts[item] != null) {
       state = tmp.state;
     }

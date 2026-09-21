@@ -1,11 +1,11 @@
-// Module ID: 9408
-// Function ID: 9409
+// Module ID: 9406
+// Function ID: 9407
 // Name: ApplicationCommandIndexActionCreators
-// Dependencies: [5, 1074, 573, 1271, 1091, 1241, 1370, 2]
+// Dependencies: [5, 1078, 577, 1275, 1095, 1245, 1374, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 9408 (ApplicationCommandIndexActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 9406 (ApplicationCommandIndexActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -25,7 +25,7 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -172,8 +172,8 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
                 } else {
                   end({ error: false });
                   const obj2 = { type: "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", target, index: status.body };
-                  dispatchResult = closure_1(573).dispatch(obj2);
-                  const obj = closure_1(573);
+                  dispatchResult = closure_1(577).dispatch(obj2);
+                  const obj = closure_1(577);
                 }
                 return dispatchResult;
               }, (status) => {
@@ -182,7 +182,7 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
                   end({ error: true });
                 } else if (429 === status.status) {
                   failure_statuses.push(429);
-                  let dispatchResult = retry(status.body.retry_after * closure_1(1091).Millis.SECOND);
+                  let dispatchResult = retry(status.body.retry_after * closure_1(1095).Millis.SECOND);
                 } else {
                   let num2 = status.status;
                   if (num2 == null) {
@@ -191,8 +191,8 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
                   failure_statuses.push(num2);
                   end({ error: true });
                   const obj2 = { type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", target };
-                  dispatchResult = closure_1(573).dispatch(obj2);
-                  const obj = closure_1(573);
+                  dispatchResult = closure_1(577).dispatch(obj2);
+                  const obj = closure_1(577);
                 }
                 return dispatchResult;
               });
@@ -210,7 +210,7 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c2 = tmp;
@@ -219,7 +219,7 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
     }
   })();
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, Endpoints: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandIndexActionCreators.tsx");

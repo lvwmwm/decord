@@ -1,19 +1,72 @@
-// Module ID: 6248
-// Function ID: 6249
+// Module ID: 6246
+// Function ID: 6247
 // Name: GameDepthTier10LargeBadge
-// Dependencies: [21, 5804, 6249, 2]
-// Exports: GameDepthTier10LargeBadge
+// Dependencies: [21, 558, 568, 6247, 5802, 2]
 
-// Module 6248 (GameDepthTier10LargeBadge)
+// Module 6246 (GameDepthTier10LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6249 from "module_6249" /* 6249 */;
+import c from "c" /* 568 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import _modDef6247 from "module_6247" /* 6247 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier10LargeBadge.native.tsx");
+let result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier10LargeBadge.native.tsx");
 
-export const GameDepthTier10LargeBadge = function GameDepthTier10LargeBadge(width) {
+export const GameDepthTier10LargeBadge = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(9);
+  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
+  let num = 100;
+  let num2 = 100;
+  if (undefined !== width) {
+    num2 = width;
+  }
+  if (undefined !== height) {
+    num = height;
+  }
+  let num3 = 1;
+  if (undefined !== scale) {
+    num3 = scale;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef6247 };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const result = num2 * num3;
+  const result1 = num * num3;
+  if (cResult[1] === result) {
+    if (cResult[2] === result1) {
+      let tmp7 = cResult[3];
+    }
+    if (cResult[4] === accessibilityLabel) {
+      if (cResult[5] === accessible) {
+        if (cResult[6] === resizeMode) {
+          if (cResult[7] === tmp7) {
+            let tmp8 = cResult[8];
+          }
+          return tmp8;
+        }
+      }
+    }
+    const obj3 = { fadeDuration: 0, source: first, style: tmp7, accessible, accessibilityLabel, resizeMode };
+    const tmp11 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp7, accessible, accessibilityLabel, resizeMode });
+    cResult[4] = accessibilityLabel;
+    cResult[5] = accessible;
+    cResult[6] = resizeMode;
+    cResult[7] = tmp7;
+    cResult[8] = tmp11;
+    tmp8 = tmp11;
+  }
+  const items = [{ width: result, height: result1 }];
+  cResult[1] = result;
+  cResult[2] = result1;
+  cResult[3] = items;
+  tmp7 = items;
+}) : ((width) => {
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -28,7 +81,7 @@ export const GameDepthTier10LargeBadge = function GameDepthTier10LargeBadge(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6249 };
+  const obj2 = { uri: _modDef6247 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];
@@ -37,4 +90,4 @@ export const GameDepthTier10LargeBadge = function GameDepthTier10LargeBadge(widt
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+});

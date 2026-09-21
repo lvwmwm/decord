@@ -1,9 +1,9 @@
-// Module ID: 17847
-// Function ID: 17848
+// Module ID: 17850
+// Function ID: 17851
 // Name: defaultAvatar6
 // Dependencies: [2]
 
-// Module 17847 (defaultAvatar6)
+// Module 17850 (defaultAvatar6)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/avatar/images/defaultAvatar6.tsx");

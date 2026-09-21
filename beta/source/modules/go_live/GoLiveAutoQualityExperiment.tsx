@@ -1,17 +1,17 @@
-// Module ID: 10214
-// Function ID: 10215
+// Module ID: 10211
+// Function ID: 10212
 // Name: GoLiveAutoQualityExperiment
-// Dependencies: [1235, 4802, 4803, 1435, 504, 510, 4898, 2]
-// Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
+// Dependencies: [1239, 4804, 4805, 1439, 558, 568, 504, 510, 4900, 2]
+// Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality
 
-// Module 10214 (GoLiveAutoQualityExperiment)
+// Module 10211 (GoLiveAutoQualityExperiment)
 import Storage3 from "Storage" /* 510 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4802 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1435 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4804 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1439 */;
 
 require = fn;
-const ApplicationStreamPresets = fn(4803).ApplicationStreamPresets;
+const ApplicationStreamPresets = fn(4805).ApplicationStreamPresets;
 let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
 const GoLiveAutoQualityMigrationVersion = "GoLiveAutoQualityMigrationVersion";
 const obj2 = { name: "2025-10-go-live-auto-quality", kind: "user", defaultConfig: obj, variations: null };
@@ -28,17 +28,41 @@ obj5.defaultAutoQuality = true;
 obj3[2] = obj5;
 obj2.variations = obj3;
 let closure_6 = ApexExperiment(obj2);
+const ReactCompilerGating = fn(558);
+function getGoLiveAutoQualityExperimentConfig(location) {
+  return closure_6.getConfig({ location: location.location });
+}
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/go_live/GoLiveAutoQualityExperiment.tsx");
 
-export const getGoLiveAutoQualityExperimentConfig = function getGoLiveAutoQualityExperimentConfig(location) {
-  return closure_6.getConfig({ location: location.location });
-};
-export const useGoLiveAutoQualityExperimentConfig = function useGoLiveAutoQualityExperimentConfig(location) {
+export { getGoLiveAutoQualityExperimentConfig };
+export const useGoLiveAutoQualityExperimentConfig = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = _location(568).c(3);
+  _location = location.location;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApexExperimentStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== _location) {
+    const fn = function n() {
+      return config.getConfig({ location: _location });
+    };
+    cResult[1] = _location;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = _location(568);
+  return _location(504).useStateFromStores(first, tmp6);
+}) : ((location) => {
   location = location.location;
   const items = [ApexExperimentStore];
   return location(504).useStateFromStores(items, () => config.getConfig({ location }));
-};
+});
 export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
   const Storage = Storage3.Storage;
   let num = Storage.get(GoLiveAutoQualityMigrationVersion);
@@ -47,14 +71,14 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
   }
   if (closure_6.getConfig({ location: "maybeMigrateToAutoQuality" }).migrateAutoQuality) {
     if (tmp4 < 1) {
-      const state = ApplicationStreamingSettingsStore.getState();
+      state = ApplicationStreamingSettingsStore.getState();
       if (state.preset !== ApplicationStreamPresets.PRESET_CUSTOM) {
         const obj = { preset: tmp9.PRESET_AUTO, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         ({ resolution: obj2.resolution, fps: obj2.frameRate, soundshareEnabled: obj2.soundshareEnabled } = state);
-        tmp(4898).updateStreamSettings(obj);
+        tmp(4900).updateStreamSettings(obj);
         const Storage2 = tmp(510).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(4898);
+        const tmpResult = tmp(4900);
       }
     }
   }

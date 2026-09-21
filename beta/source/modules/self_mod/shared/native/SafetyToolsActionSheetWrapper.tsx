@@ -1,25 +1,107 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 10404
+// Function ID: 10405
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 2041, 21, 504, 7395, 11663, 2]
-// Exports: default
+// Dependencies: [19, 2045, 21, 558, 568, 504, 7397, 10405, 2]
 
-// Module 11662 (SafetyToolsActionSheetWrapper)
+// Module 10404 (SafetyToolsActionSheetWrapper)
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyToolsActionSheetWrapper.tsx");
 
-export default function SafetyToolsActionSheetWrapper(channelId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = channelId(stateFromStores[4]).c(16);
+  ({ headerTitle, hasHeaderBack, channelId } = arg0);
+  ({ warningId, warningType, recipientId, children, onClose } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function s() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = channelId(stateFromStores[4]);
+  stateFromStores = channelId(stateFromStores[5]).useStateFromStores(first, tmp6);
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === onClose) {
+      let tmp8 = cResult[5];
+      let tmp9 = cResult[6];
+    }
+    const effect = noop.useEffect(tmp8, tmp9);
+    if (cResult[7] === stateFromStores) {
+      if (cResult[8] === channelId) {
+        if (cResult[9] === children) {
+          if (cResult[10] === hasHeaderBack) {
+            if (cResult[11] === headerTitle) {
+              if (cResult[12] === recipientId) {
+                if (cResult[13] === warningId) {
+                  if (cResult[14] === warningType) {
+                    let tmp12 = cResult[15];
+                  }
+                  return tmp12;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    let tmp13 = null;
+    if (null != stateFromStores) {
+      const obj2 = { showGradient: true, startExpanded: true, header: null, children: null };
+      const obj3 = { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId };
+      obj2.header = jsx(onClose(tmp2[7]), { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
+      obj2.children = children;
+      tmp13 = jsx(tmp(tmp2[6]).BottomSheet, { showGradient: true, startExpanded: true, header: null, children: null });
+    }
+    cResult[7] = stateFromStores;
+    cResult[8] = channelId;
+    cResult[9] = children;
+    cResult[10] = hasHeaderBack;
+    cResult[11] = headerTitle;
+    cResult[12] = recipientId;
+    cResult[13] = warningId;
+    cResult[14] = warningType;
+    cResult[15] = tmp13;
+    tmp12 = tmp13;
+  }
+  class T {
+    constructor() {
+      if (null == closure_2) {
+        tmp = onClose;
+        tmp2 = onClose();
+      }
+      return;
+    }
+  }
+  const items1 = [stateFromStores, onClose];
+  cResult[3] = stateFromStores;
+  cResult[4] = onClose;
+  cResult[5] = T;
+  cResult[6] = items1;
+  tmp9 = items1;
+  tmp8 = T;
+}) : ((channelId) => {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   let stateFromStores;
   ({ headerTitle, hasHeaderBack, warningId, warningType, recipientId, children } = channelId);
   const items = [ChannelStore];
-  stateFromStores = channelId(stateFromStores[3]).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  stateFromStores = channelId(stateFromStores[5]).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   const items1 = [stateFromStores, onClose];
   const effect = noop.useEffect(() => {
     if (null == stateFromStores) {
@@ -30,9 +112,9 @@ export default function SafetyToolsActionSheetWrapper(channelId) {
   if (null != stateFromStores) {
     const obj2 = { showGradient: true, startExpanded: true, header: null, children: null };
     const obj3 = { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId };
-    obj2.header = jsx(onClose(tmp2[5]), { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
+    obj2.header = jsx(onClose(tmp2[7]), { recipientId, warningId, warningType, hasBackButton: hasHeaderBack, title: headerTitle, channelId });
     obj2.children = children;
-    tmp5 = jsx(channelId(tmp2[4]).BottomSheet, { showGradient: true, startExpanded: true, header: null, children: null });
+    tmp5 = jsx(channelId(tmp2[6]).BottomSheet, { showGradient: true, startExpanded: true, header: null, children: null });
   }
   return tmp5;
-};
+});

@@ -1,15 +1,15 @@
-// Module ID: 8622
-// Function ID: 8623
+// Module ID: 8627
+// Function ID: 8628
 // Name: ICYMIActionCreators
-// Dependencies: [5, 1074, 1271, 573, 1231, 8621, 2019, 2]
+// Dependencies: [5, 1078, 1275, 577, 1235, 8626, 2023, 2]
 
-// Module 8622 (ICYMIActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ICYMIUtils from "ICYMIUtils" /* 8621 */;
+// Module 8627 (ICYMIActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ICYMIUtils from "ICYMIUtils" /* 8626 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/ICYMIActionCreators.tsx");
 
@@ -28,7 +28,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -105,7 +105,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ export default {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export default {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp7) {
             c3 = 0;
@@ -276,7 +276,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -336,7 +336,7 @@ export default {
             }
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
           c5 = 3;
         } catch (tmp26) {
@@ -371,7 +371,7 @@ export default {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -484,7 +484,7 @@ export default {
               closure_128_0 = undefined;
               if (obj9.icymiEnabled("guildChannelScores")) {
                 c3 = 1;
-                const HTTP = tmp31(1271).HTTP;
+                const HTTP = tmp31(1275).HTTP;
                 const obj5 = { url: constants.GRAVITY_CUSTOM_SCORES, rejectWithError: false };
                 c4 = 2;
                 c5 = 1;
@@ -540,7 +540,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -559,7 +559,7 @@ export default {
               closure_128_0 = undefined;
               if (obj9.icymiEnabled("recommendedGuilds")) {
                 c3 = 1;
-                const HTTP = tmp31(1271).HTTP;
+                const HTTP = tmp31(1275).HTTP;
                 const obj5 = { url: constants.GRAVITY_RECOMMENDED_GUILDS, rejectWithError: false };
                 c4 = 2;
                 c5 = 1;
@@ -615,7 +615,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -634,13 +634,13 @@ export default {
               closure_128_0 = undefined;
               closure_128_1 = undefined;
               if (obj9.icymiEnabled("mediaForCurrentStatus")) {
-                const CustomStatusSetting = tmp37(2019).CustomStatusSetting;
+                const CustomStatusSetting = tmp37(2023).CustomStatusSetting;
                 const setting = CustomStatusSetting.getSetting();
                 closure_128_0 = setting;
                 if (null != setting) {
                   if (null != setting.createdAtMs) {
                     c3 = 1;
-                    const HTTP = tmp37(1271).HTTP;
+                    const HTTP = tmp37(1275).HTTP;
                     const obj5 = { url: constants.GRAVITY_ATTACHMENTS, rejectWithError: false };
                     c4 = 2;
                     c5 = 1;
@@ -740,8 +740,8 @@ export default {
     }
     DispatcherDefault.dispatch({ type: "ICYMI_TAKE_SURVEY", takenAt: timestamp });
   },
-  itemInteracted(id, hotwheels_gaming_activity, open_profile) {
-    DispatcherDefault.dispatch({ type: "ICYMI_ITEM_INTERACTED", itemId: id, itemType: hotwheels_gaming_activity, actionType: open_profile });
+  itemInteracted(id, type, open_profile) {
+    DispatcherDefault.dispatch({ type: "ICYMI_ITEM_INTERACTED", itemId: id, itemType: type, actionType: open_profile });
   },
   feedItemActioned(arg0) {
     const merged = Object.assign(arg0);

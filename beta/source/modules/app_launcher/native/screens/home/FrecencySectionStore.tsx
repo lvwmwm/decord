@@ -1,11 +1,11 @@
-// Module ID: 12306
-// Function ID: 12307
+// Module ID: 12183
+// Function ID: 12184
 // Name: FrecencySectionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 12306 (FrecencySectionStore)
+// Module 12183 (FrecencySectionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 let obj = { APPS: "apps", COMMANDS: "commands" };
 obj = { selection: null };

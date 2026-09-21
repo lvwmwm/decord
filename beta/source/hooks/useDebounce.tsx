@@ -1,17 +1,48 @@
-// Module ID: 13708
-// Function ID: 13709
+// Module ID: 13711
+// Function ID: 13712
 // Name: useDebounce
-// Dependencies: [32, 19, 2]
-// Exports: default
+// Dependencies: [32, 19, 558, 568, 2]
 
-// Module 13708 (useDebounce)
+// Module 13711 (useDebounce)
+import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("hooks/useDebounce.tsx");
 
-export default function useDebounce(arg0, arg1) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  const cResult = c.c(4);
+  const obj2 = noop;
+  closure_2 = _slicedToArray(noop.useState(arg0), 2)[1];
+  if (cResult[0] === arg1) {
+    if (cResult[1] === arg0) {
+      let tmp4 = cResult[2];
+      let tmp5 = cResult[3];
+    }
+    const effect = obj2.useEffect(tmp4, tmp5);
+    return tmp3;
+  }
+  const fn = function s() {
+    const timeout = setTimeout(() => {
+      closure_1_2(closure_0);
+    }, closure_1);
+    return () => {
+      clearTimeout(closure_0);
+    };
+  };
+  const items = [arg0, arg1];
+  cResult[0] = arg1;
+  cResult[1] = arg0;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp5 = items;
+  tmp4 = fn;
+}) : ((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   const tmp = _slicedToArray(noop.useState(arg0), 2);
@@ -26,4 +57,4 @@ export default function useDebounce(arg0, arg1) {
     };
   }, items);
   return tmp[0];
-};
+});

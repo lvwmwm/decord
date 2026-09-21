@@ -1,26 +1,67 @@
-// Module ID: 6328
-// Function ID: 6329
+// Module ID: 6326
+// Function ID: 6327
 // Name: GamePresenceIllocon
-// Dependencies: [21, 5804, 6329, 2]
-// Exports: GamePresenceIllocon
+// Dependencies: [21, 558, 568, 6327, 5802, 2]
 
-// Module 6328 (GamePresenceIllocon)
+// Module 6326 (GamePresenceIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6329 from "module_6329" /* 6329 */;
+import c from "c" /* 568 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import _modDef6327 from "module_6327" /* 6327 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GamePresenceIllocon.native.tsx");
 
-export const GamePresenceIllocon = function GamePresenceIllocon(size) {
+export const GamePresenceIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(8);
+  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
+  let num = 64;
+  if (undefined !== size) {
+    num = size;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef6327 };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== num) {
+    const size1 = { width: num, height: num };
+    const items = [size1];
+    cResult[1] = num;
+    cResult[2] = items;
+    let tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === accessibilityLabel) {
+    if (cResult[4] === accessible) {
+      if (cResult[5] === resizeMode) {
+        if (cResult[6] === tmp5) {
+          let tmp6 = cResult[7];
+        }
+        return tmp6;
+      }
+    }
+  }
+  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
+  cResult[3] = accessibilityLabel;
+  cResult[4] = accessible;
+  cResult[5] = resizeMode;
+  cResult[6] = tmp5;
+  cResult[7] = tmp7;
+  tmp6 = tmp7;
+}) : ((size) => {
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6329 };
+  const obj2 = { uri: _modDef6327 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;
@@ -28,4 +69,4 @@ export const GamePresenceIllocon = function GamePresenceIllocon(size) {
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+});

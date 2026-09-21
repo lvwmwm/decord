@@ -1,13 +1,13 @@
-// Module ID: 9602
-// Function ID: 9603
+// Module ID: 9598
+// Function ID: 9599
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2002, 4983, 1074, 9532, 7408, 9318, 4936, 4622, 9319, 2]
+// Dependencies: [5, 2006, 4985, 1078, 9528, 7410, 9316, 4938, 4625, 9317, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 9602 (installApplicationOnDemandIfNeeded)
+// Module 9598 (installApplicationOnDemandIfNeeded)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+import ApplicationRecord from "ApplicationRecord" /* 2006 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
 
 const require = fn;
 let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) {
@@ -21,7 +21,7 @@ let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -48,7 +48,7 @@ let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) 
           closure_129_7 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -108,9 +108,9 @@ let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) 
         }
         const promise = new Promise((arg0) => {
           const clientId = arg0;
-          closure_1_0(4622).dismissKeyboard();
-          let obj = closure_1_0(4622);
-          closure_1_0(9319).openOAuth2Modal({
+          closure_1_0(4625).dismissKeyboard();
+          let obj = closure_1_0(4625);
+          closure_1_0(9317).openOAuth2Modal({
             clientId,
             integrationType,
             scopes,
@@ -140,7 +140,7 @@ let closure_6 = async function _installApplicationOnDemandIfNeeded(arg0, value) 
     }
   }
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/installApplicationOnDemandIfNeeded.native.tsx");
 

@@ -1,26 +1,99 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16224
+// Function ID: 16225
 // Name: ActivityPrivacyUpsellActionSheet
-// Dependencies: [19, 21, 15129, 15131, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 15118, 15120, 2]
 
-// Module 16235 (ActivityPrivacyUpsellActionSheet)
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15129 */;
+// Module 16224 (ActivityPrivacyUpsellActionSheet)
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15118 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/activity_privacy/native/ActivityPrivacyUpsellActionSheet.tsx");
 
-export default function ActivityPrivacyUpsellActionSheet(direction) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
+  const cResult = direction(568).c(14);
   direction = direction.direction;
   const affectedGuildIds = direction.affectedGuildIds;
-  const upsellStrings = direction(15129).getUpsellStrings(direction === direction(15129).ChangeDirection.RESTRICTING, direction.settingName);
+  const settingName = direction.settingName;
+  const tmp4 = direction === direction(15118).ChangeDirection.RESTRICTING;
+  if (cResult[0] === tmp4) {
+    if (cResult[1] === settingName) {
+      let tmp5 = cResult[2];
+    }
+    ({ title, subtitle, confirmText, toastContent } = tmp5);
+    if (cResult[3] === affectedGuildIds) {
+      if (cResult[4] === direction) {
+        let tmp7 = cResult[5];
+      }
+      if (cResult[6] === affectedGuildIds) {
+        if (cResult[7] === confirmText) {
+          if (cResult[8] === direction) {
+            if (cResult[9] === tmp7) {
+              if (cResult[10] === subtitle) {
+                if (cResult[11] === title) {
+                  if (cResult[12] === toastContent) {
+                    let tmp8 = cResult[13];
+                  }
+                  return tmp8;
+                }
+              }
+            }
+          }
+        }
+      }
+      const obj2 = { direction, affectedGuildIds: null, title: null, subtitle: null, confirmText: null, toastContent: null, onConfirm: null };
+      class C {
+        constructor() {
+          obj = closure_0(closure_2[4]);
+          result = obj.applyBulkGuildRestrictionChange(direction, affectedGuildIds);
+          return;
+        }
+      }
+      obj2.title = title;
+      obj2.subtitle = subtitle;
+      obj2.confirmText = confirmText;
+      obj2.toastContent = toastContent;
+      obj2.onConfirm = tmp7;
+      const tmp11 = jsx(affectedGuildIds(15120), { direction, affectedGuildIds: null, title: null, subtitle: null, confirmText: null, toastContent: null, onConfirm: null });
+      cResult[6] = affectedGuildIds;
+      cResult[7] = confirmText;
+      cResult[8] = direction;
+      cResult[9] = tmp7;
+      cResult[10] = subtitle;
+      cResult[11] = title;
+      cResult[12] = toastContent;
+      cResult[13] = tmp11;
+      tmp8 = tmp11;
+    }
+    class C {
+      constructor() {
+        obj = closure_0(closure_2[4]);
+        result = obj.applyBulkGuildRestrictionChange(direction, affectedGuildIds);
+        return;
+      }
+    }
+    cResult[3] = affectedGuildIds;
+    cResult[4] = direction;
+    cResult[5] = C;
+    tmp7 = C;
+  }
+  const obj = direction(568);
+  const upsellStrings = direction(15118).getUpsellStrings(tmp4, settingName);
+  cResult[0] = tmp4;
+  cResult[1] = settingName;
+  cResult[2] = upsellStrings;
+  tmp5 = upsellStrings;
+}) : ((direction) => {
+  direction = direction.direction;
+  const affectedGuildIds = direction.affectedGuildIds;
+  const upsellStrings = direction(15118).getUpsellStrings(direction === direction(15118).ChangeDirection.RESTRICTING, direction.settingName);
   const items = [direction, affectedGuildIds];
   ({ title, subtitle, confirmText, toastContent } = upsellStrings);
   const onConfirm = noop.useCallback(() => {
     const result = ActivityPrivacyUpsellUtils.applyBulkGuildRestrictionChange(direction, affectedGuildIds);
   }, items);
-  return jsx(affectedGuildIds(15131), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
-};
+  return jsx(affectedGuildIds(15120), { direction, affectedGuildIds, title, subtitle, confirmText, toastContent, onConfirm });
+});

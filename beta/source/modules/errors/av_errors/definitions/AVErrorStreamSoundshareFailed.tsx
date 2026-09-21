@@ -1,17 +1,17 @@
-// Module ID: 18300
-// Function ID: 18301
+// Module ID: 18303
+// Function ID: 18304
 // Name: AVErrorStreamSoundshareFailed
-// Dependencies: [4778, 4804, 1074, 9686, 18292, 4808, 2]
+// Dependencies: [4780, 4806, 1078, 9681, 18295, 4810, 2]
 
-// Module 18300 (AVErrorStreamSoundshareFailed)
-import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
-import AVError from "AVError" /* 9686 */;
-import AVErrorContext from "AVErrorContext" /* 18292 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
-import HookErrorStore from "HookErrorStore" /* 4804 */;
+// Module 18303 (AVErrorStreamSoundshareFailed)
+import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
+import AVError from "AVError" /* 9681 */;
+import AVErrorContext from "AVErrorContext" /* 18295 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import HookErrorStore from "HookErrorStore" /* 4806 */;
 
 require = fn;
-const MediaEngineHookTypes = fn(1074).MediaEngineHookTypes;
+const MediaEngineHookTypes = fn(1078).MediaEngineHookTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamSoundshareFailed.tsx");
 

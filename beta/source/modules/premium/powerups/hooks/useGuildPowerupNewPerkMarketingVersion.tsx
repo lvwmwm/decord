@@ -1,35 +1,424 @@
-// Module ID: 12757
-// Function ID: 12758
+// Module ID: 12666
+// Function ID: 12667
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 2063, 4395, 4645, 1074, 4668, 504, 4684, 4683, 4648, 9858, 2]
-// Exports: default
+// Dependencies: [19, 2067, 4399, 4648, 1078, 558, 568, 4671, 504, 4687, 4686, 4651, 9836, 2]
 
-// Module 12757 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 4648 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9858 */;
+// Module 12666 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 4651 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9836 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GuildPowerupsConstants = fn(4645);
+const GuildPowerupsConstants = fn(4648);
 ({ GuildPowerupNewPerkMarketingVersion: hasOwnProperty, NEW_PERK_MARKETING_VERSION_TO_POWERUP_SKU_ID_SET: metroRequire } = GuildPowerupsConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ GuildFeatures: closure_7, Permissions: closure_8 } = Constants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupNewPerkMarketingVersion.tsx");
 
-export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
-  _require = guildId;
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
   dependencyMap = arg1;
-  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
+  const cResult = require("c").c(6);
+  const obj = require("c");
+  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = U;
+    const tmp7 = U;
+  } else {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+  const obj2 = require("GameServerExperiment");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp7);
+  const tmpResult = require("initialize");
+  const serverThemeEnabled = require("ServerThemeExperiment").useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
+  const tmpResult5 = require("ServerThemeExperiment");
+  const serverThemeUserEnabled = require("ServerThemeUserExperiment").useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
+  const tmpResult6 = require("ServerThemeUserExperiment");
+  const serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    const items1 = [PermissionStore, GuildStore];
+    cResult[3] = items1;
+    const tmp12 = items1;
+  } else {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+  if (cResult[4] !== arg0) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    cResult[4] = arg0;
+    cResult[5] = tmp15;
+    const tmp14 = tmp15;
+  } else {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+  const tmpResult7 = require("ServerThemeExperiment");
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp12, tmp14);
+  if (arg1 != null) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    if (tmp18 != null) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+  }
+  if (arg1 != null) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    if (tmp20 != null) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+  }
+  if (tmp19) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+  if (arg1 != null) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    if (tmp22 != null) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+  }
+  if (arg1 != null) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    if (tmp23 != null) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+  }
+  if (serverThemeEnabled) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+  if (arg1 != null) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    if (tmp25 != null) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+  }
+  if (arg1 != null) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    if (tmp27 != null) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+  }
+  if (tmp26) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+  tmp19 = null != undefined;
+  tmp26 = null != undefined;
+  const tmp28 = dependencyMap2;
+  const tmp29 = closure_5;
+  const tmpResult8 = require("initialize");
+  if (arr.some((item) => {
+    let tmp;
+    if (closure_1 != null) {
+      const unlockedPowerups = closure_1.unlockedPowerups;
+      if (unlockedPowerups != null) {
+        tmp = unlockedPowerups[item];
+      }
+    }
+    return null != tmp;
+  })) {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+    const _Array = Array;
+    if (!arr2.some((item) => {
+      let tmp;
+      if (closure_1 != null) {
+        const unlockedPowerups = closure_1.unlockedPowerups;
+        if (unlockedPowerups != null) {
+          tmp = unlockedPowerups[item];
+        }
+      }
+      return null != tmp;
+    })) {
+      class U {
+        constructor() {
+          guild = closure_3.getGuild(closure_0);
+          hasItem = undefined;
+          if (guild != null) {
+            features = guild.features;
+            tmp3 = GuildFeatures;
+            hasItem = features.has(GuildFeatures.GAME_SERVERS);
+          }
+          return hasItem;
+        }
+      }
+    }
+    arr2 = Array.from(tmp28[tmp29.GUILD_TAG_BADGE_PACKS_WAVE_ONE]);
+  } else {
+    class U {
+      constructor() {
+        guild = closure_3.getGuild(closure_0);
+        hasItem = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          hasItem = features.has(GuildFeatures.GAME_SERVERS);
+        }
+        return hasItem;
+      }
+    }
+  }
+}) : ((arg0, arg1) => {
+  _require = arg0;
+  dependencyMap = arg1;
+  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   let obj = require("GameServerExperiment");
   let tmp = _require;
   const items = [stateFromStores];
   stateFromStores = require("initialize").useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
+    guild = GuildStore.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
@@ -39,11 +428,11 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
   });
   const obj2 = require("initialize");
   const tmp4 = stateFromStores;
-  let serverThemeEnabled = require("ServerThemeExperiment").useServerThemeEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
+  let serverThemeEnabled = require("ServerThemeExperiment").useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   const obj3 = require("ServerThemeExperiment");
   const serverThemeUserEnabled = require("ServerThemeUserExperiment").useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
   const obj4 = require("ServerThemeUserExperiment");
-  const serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
+  const serverThemeRollbackEnabled = require("ServerThemeExperiment").useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (serverThemeEnabled) {
     serverThemeEnabled = serverThemeUserEnabled;
   }
@@ -53,7 +442,7 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
   const obj5 = require("ServerThemeExperiment");
   const items1 = [serverThemeEnabled, tmp4];
   const stateFromStores1 = tmp(504).useStateFromStores(items1, () => PermissionStore.can(constants2.MANAGE_GUILD, GuildStore.getGuild(closure_0)));
-  const items2 = [arg1, gameServerEnabled, stateFromStores, serverThemeEnabled, guildId, stateFromStores1];
+  const items2 = [arg1, gameServerEnabled, stateFromStores, serverThemeEnabled, arg0, stateFromStores1];
   return gameServerEnabled.useMemo(() => {
     let tmp2;
     if (closure_1 != null) {
@@ -135,11 +524,11 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
       }
     }
     const _Array = someResult.Array;
-    arr = Array.from(timestampProducer[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_TWO]);
+    arr = Array.from(dependencyMap2[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_TWO]);
     tmp17 = null != tmp14;
     tmp25 = null != tmp22;
     tmp5 = null != tmp2;
-    someResult = _Array.from(timestampProducer[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some((item) => {
+    someResult = _Array.from(dependencyMap2[hasOwnProperty.GUILD_TAG_BADGE_PACKS_WAVE_ONE]).some((item) => {
       let tmp;
       if (closure_1_1 != null) {
         const unlockedPowerups = closure_1_1.unlockedPowerups;
@@ -155,4 +544,4 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId, arg1) {
     }
     GAME_SERVER_HOSTING = num;
   }, items2);
-};
+});

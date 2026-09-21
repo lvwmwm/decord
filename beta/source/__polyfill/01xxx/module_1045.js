@@ -1,467 +1,345 @@
 // Module ID: 1045
 // Function ID: 1046
-// Dependencies: [19, 1046, 867, 866, 871, 1047, 682, 1048, 679, 1049, 1050, 1000, 1051, 1041, 1052, 1059, 1060]
-// Exports: close, crashedLastRun, flush, init, nativeCrash, withScope, wrap
+// Dependencies: [41, 42, 93, 95, 96, 98, 17, 1046, 866, 981, 686, 893, 870, 1047, 1048, 997, 683, 998]
 
 // Module 1045
-import _mod682 from "module_682" /* 682 */;
-import NativeModules from "NativeModules" /* 866 */;
-import _mod867 from "module_867" /* 867 */;
-import _mod1059 from "module_1059" /* 1059 */;
-import _mod1060 from "module_1060" /* 1060 */;
-import noop from "module_19" /* 19 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
-
-require = fn;
-fn = this;
-if (this) {
-  fn = this.__awaiter;
-}
-if (!fn) {
-  fn = (arg0, arg1, arg2, arg3) => {
-    closure_0 = arg0;
-    closure_1 = arg1;
-    let _Promise = arg2;
-    closure_3 = arg3;
-    if (!arg2) {
-      _Promise = Promise;
+let ReactNativeClient = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    return new _Promise((fn, arg1) => {
-      closure_0 = fn;
-      closure_1 = arg1;
-      function fulfilled(result) {
-        try {
-          step(iter.next(result));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
-      }
-      function rejected(arg0) {
-        try {
-          step(iter.throw(arg0));
-        } catch (tmp5) {
-          closure_1(tmp5);
-        }
-      }
-      let iter = rejected;
-      function step(done) {
-        if (done.done) {
-          closure_0(done.value);
-        } else {
-          let tmp1 = done.value;
-          closure_0 = tmp1;
-          if (!(tmp1 instanceof Promise)) {
-            tmp1 = new tmp((fn) => {
-              fn(value);
-            });
-          }
-          tmp1.then(fulfilled, iter);
-        }
-      }
-      let items = closure_1;
-      if (!closure_1) {
-        items = [];
-      }
-      iter = iter.apply(closure_0, items);
-      const iter2 = iter.next();
-      value = iter2.value;
-      if (iter2.done) {
-        fn(value);
-      } else {
-        closure_0 = value;
-        let tmp32 = value;
-        if (!(value instanceof fulfilled)) {
-          tmp32 = new tmp3((fn) => {
-            fn(value);
-          });
-        }
-        tmp32.then(fulfilled, rejected);
-      }
-    });
-  };
-}
-let obj = { enableNativeCrashHandling: true, enableNativeNagger: true, autoInitializeNativeSdk: true, enableAutoPerformanceTracing: true, enableWatchdogTerminationTracking: true, patchGlobalPromise: true, sendClientReports: true, maxQueueSize: fn(1046).DEFAULT_BUFFER_SIZE, attachStacktrace: true, enableCaptureFailedRequests: false, enableNdk: true, enableAppStartTracking: true, enableNativeFramesTracking: true, enableStallTracking: true, enableUserInteractionTracing: false, propagateTraceparent: false };
-
-export const init = function init(maxQueueSize) {
-  obj = _mod867;
-  if (!obj.isRunningInMetroDevServer()) {
-    maxQueueSize = maxQueueSize.maxQueueSize;
-    if (null === maxQueueSize) {
-      const transportOptions = maxQueueSize.transportOptions;
-      let bufferSize;
-      if (null !== transportOptions) {
-        if (undefined !== transportOptions) {
-          bufferSize = transportOptions.bufferSize;
-        }
-      }
-      maxQueueSize = bufferSize;
-    }
-    if (null === maxQueueSize) {
-      maxQueueSize = obj.maxQueueSize;
-    }
-    let isNativeAvailableResult = !tmp7;
-    if (!(undefined !== maxQueueSize.enableNative && !maxQueueSize.enableNative)) {
-      const NATIVE = tmp(866).NATIVE;
-      isNativeAvailableResult = NATIVE.isNativeAvailable();
-    }
-    const encodePolyfill = tmp(871).useEncodePolyfill();
-    if (isNativeAvailableResult) {
-      const tmpResult20 = tmp(1047);
-      tmpResult20.enableSyncToNative(tmp(682).getGlobalScope());
-      const tmpResult21 = tmp(682);
-      const tmpResult22 = tmp(1047);
-      tmpResult22.enableSyncToNative(tmp(682).getIsolationScope());
-      const tmpResult23 = tmp(682);
-    }
-    let tmpResult = tmp(871);
-    closure_0 = tmp(1048).safeFactory(maxQueueSize.beforeBreadcrumb, { loggerMessage: "The beforeBreadcrumb threw an error" });
-    const tmpResult24 = tmp(1048);
-    const devServer = tmp(679).getDevServer();
-    let url1;
-    if (null !== devServer) {
-      if (undefined !== devServer) {
-        url1 = devServer.url;
-      }
-    }
-    const dsn = maxQueueSize.dsn;
-    let combined;
-    if (dsn) {
-      let url = tmp(682).makeDsn(dsn);
-      if (url) {
-        let str3 = "";
-        if (url.port) {
-          const _HermesInternal = HermesInternal;
-          str3 = ":" + url.port;
-        }
-        const _HermesInternal2 = HermesInternal;
-        combined = "" + url.protocol + "://" + url.host + str3;
-      } else {
-        const debug = tmp(682).debug;
-        debug.error("Failed to extract url from DSN: ", dsn);
-      }
-      const tmpResult26 = tmp(682);
-    }
-    const _Object = Object;
-    const _Object2 = Object;
-    let release = maxQueueSize.release;
-    const merged = Object.assign(Object.assign({}, obj), maxQueueSize);
-    if (null === release) {
-      release = tmp(1049).getDefaultRelease();
-      const tmpResult27 = tmp(1049);
-    }
-    const obj2 = { release, enableNative: isNativeAvailableResult, enableNativeNagger: null, transport: null, transportOptions: null, maxQueueSize: null, integrations: null, stackParser: null, beforeBreadcrumb: null, initialScope: null };
-    const tmp20 = obj;
-    const tmpResult25 = tmp(679);
-    obj2.enableNativeNagger = tmp(1050).shouldEnableNativeNagger(maxQueueSize.enableNativeNagger);
-    let makeFetchTransport = maxQueueSize.transport;
-    if (!makeFetchTransport) {
-      const obj3 = { enableNative: isNativeAvailableResult };
-      makeFetchTransport = tmp(1046).makeNativeTransportFactory(obj3);
-      const tmpResult29 = tmp(1046);
-    }
-    if (!makeFetchTransport) {
-      makeFetchTransport = tmp(1000).makeFetchTransport;
-    }
-    obj2.transport = makeFetchTransport;
-    const _Object3 = Object;
-    let transportOptions1 = maxQueueSize.transportOptions;
-    const merged1 = Object.assign({}, tmp20.transportOptions);
-    if (null === transportOptions1) {
-      transportOptions1 = {};
-    }
-    const obj4 = { bufferSize: maxQueueSize };
-    obj2.transportOptions = Object.assign(Object.assign(merged1, transportOptions1), obj4);
-    obj2.maxQueueSize = maxQueueSize;
-    obj2.integrations = [];
-    const tmpResult28 = tmp(1050);
-    let defaultStackParser = maxQueueSize.stackParser;
-    if (!defaultStackParser) {
-      defaultStackParser = tmp(1000).defaultStackParser;
-    }
-    obj2.stackParser = tmp(682).stackParserFromStackParserOptions(defaultStackParser);
-    obj2.beforeBreadcrumb = function beforeBreadcrumb(arg0, arg1) {
-      let tmpResult = arg0;
-      if (closure_0) {
-        tmpResult = tmp(arg0, arg1);
-        if (null === tmpResult) {
-          return null;
-        }
-      }
-      const data = tmpResult.data;
-      let url;
-      if (null !== data) {
-        if (undefined !== data) {
-          url = data.url;
-        }
-      }
-      const str = "";
-      if ("http" === tmp5) {
-        if (!url1) {
-          if (combined) {
-            let tmp8 = null;
-          }
-        } else {
-          tmp8 = null;
-        }
-        return tmp8;
-      }
-      tmp8 = tmpResult;
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-    const tmpResult30 = tmp(682);
-    obj2.initialScope = tmp(1048).safeFactory(maxQueueSize.initialScope, { loggerMessage: "The initialScope threw an error" });
-    const merged2 = Object.assign(merged, obj2);
-    if ("tracesSampler" in merged2) {
-      merged2.tracesSampler = tmp(1048).safeTracesSampler(merged2.tracesSampler);
-      const tmpResult32 = tmp(1048);
-    }
-    if (!("environment" in merged2)) {
-      merged2.environment = tmp(867).getDefaultEnvironment();
-      const tmpResult33 = tmp(867);
-    }
-    if (undefined === maxQueueSize.defaultIntegrations) {
-      let defaultIntegrations = tmp(1051).getDefaultIntegrations(merged2);
-      const tmpResult34 = tmp(1051);
-    } else {
-      defaultIntegrations = maxQueueSize.defaultIntegrations;
-    }
-    const tmpResult31 = tmp(1048);
-    const obj5 = { integrations: null, defaultIntegrations: null };
-    const tmpResult35 = tmp(682);
-    obj5.integrations = tmp(1048).safeFactory(maxQueueSize.integrations, { loggerMessage: "The integrations threw an error" });
-    obj5.defaultIntegrations = defaultIntegrations;
-    merged2.integrations = tmpResult35.getIntegrationsToSetup(obj5);
-    const tmpResult36 = tmp(1048);
-    const andBind = tmp(682).initAndBind(tmp(1041).ReactNativeClient, merged2);
-    const tmpResult37 = tmp(682);
-    if (tmpResult38.isExpoGo()) {
-      const debug2 = tmp(682).debug;
-      debug2.log("Offline caching, native errors features are not available in Expo Go.");
-      const debug3 = tmp(682).debug;
-      debug3.log("Use EAS Build / Native Release Build to test these features.");
-    }
-    tmpResult38 = tmp(867);
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-};
-export const wrap = function wrap(displayName, profilerProps) {
-  _require = displayName;
-  dependencyMap = profilerProps;
-  profilerProps = undefined;
-  if (null != profilerProps) {
-    profilerProps = profilerProps.profilerProps;
-  }
-  displayName = displayName.displayName;
-  let str = "Root";
-  let merged = Object.assign({}, profilerProps);
-  if (null !== displayName) {
-    str = "Root";
-    if (undefined !== displayName) {
-      str = displayName;
-    }
-  }
-  closure_2 = Object.assign(merged, { name: str, updateProps: {} });
-  if (obj.isWeb()) {
-    let ReactNativeProfiler = tmp3(1000).Profiler;
-  } else {
-    ReactNativeProfiler = tmp3(1052).ReactNativeProfiler;
-  }
-  return (arg0) => {
-    let prop;
-    if (null != profilerProps) {
-      prop = profilerProps.touchEventBoundaryProps;
-    }
-    if (null === prop) {
-      prop = {};
-    }
-    const merged = Object.assign({}, prop);
-    const merged1 = Object.assign({}, closure_2);
-    return noop.createElement(_mod1059.TouchEventBoundary, merged, <ReactNativeProfiler {......merged1}>{noop.createElement(_mod1060.FeedbackWidgetProvider, null, <closure_0 {......Object.assign({}, arg0)} />)}</ReactNativeProfiler>);
-  };
-};
-export const nativeCrash = function nativeCrash() {
-  const NATIVE = NativeModules.NATIVE;
-  NATIVE.nativeCrash();
-};
-export const flush = function flush() {
-  return fn(this, undefined, undefined, function*(arg0, value) {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
+}
+const Alert = fn(17).Alert;
+class ReactNativeClient {
+  constructor(arg0) {
+    self = this;
+    tmp = ReactNativeClient;
+    tmp2 = c2(this, ReactNativeClient);
+    tmp3 = closure_0;
+    tmp4 = closure_1;
+    obj = closure_0(closure_1[7]);
+    ReactNativeVersion = closure_0(closure_1[8]).ReactNativeLibraries.ReactNativeVersion;
+    version = undefined;
+    if (null !== ReactNativeVersion) {
+      if (undefined !== ReactNativeVersion) {
+        version = ReactNativeVersion.version;
       }
+    }
+    result = obj.ignoreRequireCycleLogs(version);
+    _metadata = global._metadata;
+    sdk = undefined;
+    merged = Object.assign({}, global._metadata);
+    if (null !== _metadata) {
+      if (undefined !== _metadata) {
+        sdk = _metadata.sdk;
+      }
+    }
+    if (!sdk) {
+      sdk = tmp3(tmp4[9]).defaultSdkInfo;
+    }
+    str = "never";
+    merged1 = Object.assign({}, sdk);
+    if (global.sendDefaultPii) {
+      str = "auto";
+    }
+    _metadata2 = global._metadata;
+    sdk1 = undefined;
+    if (null !== _metadata2) {
+      if (undefined !== _metadata2) {
+        sdk1 = _metadata2.sdk;
+      }
+    }
+    settings = undefined;
+    if (null !== sdk1) {
+      if (undefined !== sdk1) {
+        settings = sdk1.settings;
+      }
+    }
+    obj1 = { sdk: null };
+    obj6 = { settings: Object.assign({ infer_ip: str }, settings) };
+    obj1.sdk = Object.assign(merged1, obj6);
+    global._metadata = Object.assign(merged, obj1);
+    global.parentSpanIsAlwaysRootSpan = undefined === global.parentSpanIsAlwaysRootSpan || global.parentSpanIsAlwaysRootSpan;
+    ({ enableLogs: enableLogs2, enableLogs } = global);
+    if (enableLogs2) {
+      str2 = "native";
+      enableLogs2 = "native" === global.logsOrigin;
+    }
+    if (enableLogs2) {
+      debug = tmp3(tmp4[10]).debug;
+      str3 = "disabling Sentry logs on JavaScript due to rule set by logsOrigin";
+      logResult = debug.log("disabling Sentry logs on JavaScript due to rule set by logsOrigin");
+      flag = false;
+      global.enableLogs = false;
+    }
+    items = [];
+    items[0] = global;
+    tmp13 = closure_4;
+    obj4 = closure_4(tmp);
+    tmp14 = closure_3;
+    if (metroRequire()) {
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj4, items, tmp13(self).constructor);
     } else {
-      try {
-        c4 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_0 = tmp3;
-            c3 = 1;
-            const client = require("module_682").getClient();
-            if (client) {
-              c1 = 2;
-              c4 = 1;
-              const obj4 = { value: client.flush(), done: false };
-              return obj4;
-            } else {
-              c3 = 0;
-            }
-            const obj6 = require("module_682");
+      constructResult = obj4.apply(self, items);
+    }
+    tmp14Result = tmp14(self, constructResult);
+    closure_0 = tmp14Result;
+    tmp14Result._outcomesBuffer = [];
+    if (true === global.sendDefaultPii) {
+      str4 = "beforeSendSession";
+      onResult = tmp14Result.on("beforeSendSession", tmp3(tmp4[10]).addAutoIpAddressToSession);
+    }
+    if (global.enableLogs) {
+      str5 = "flush";
+      onResult1 = tmp14Result.on("flush", () => {
+        const result = ReactNativeClient(686)._INTERNAL_flushLogsBuffer(closure_0);
+      });
+      str6 = "afterCaptureLog";
+      onResult2 = tmp14Result.on("afterCaptureLog", () => {
+        if (_logFlushIdleTimeout._logFlushIdleTimeout) {
+          const _clearTimeout = clearTimeout;
+          clearTimeout(tmp._logFlushIdleTimeout);
+        }
+        _logFlushIdleTimeout._logFlushIdleTimeout = setTimeout(() => {
+          const result = closure_0(dependencyMap[10])._INTERNAL_flushLogsBuffer(_logFlushIdleTimeout);
+        }, 5000);
+      });
+    }
+    global.enableLogs = enableLogs;
+    return tmp14Result;
+  }
+}
+_inherits(ReactNativeClient, fn(686).Client);
+const entry = {
+  key: "eventFromException",
+  value: function eventFromException(arg0) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    return ReactNativeClient(893).eventFromException(this._options.stackParser, arg0, obj, this._options.attachStacktrace);
+  }
+};
+let items = [
+  entry,
+  {
+    key: "eventFromMessage",
+    value: function eventFromMessage(arg0, arg1, arg2) {
+      return ReactNativeClient(893).eventFromMessage(this._options.stackParser, arg0, arg1, arg2, this._options.attachStacktrace);
+    }
+  },
+  {
+    key: "nativeCrash",
+    value: function nativeCrash() {
+      const NATIVE = ReactNativeClient(870).NATIVE;
+      NATIVE.nativeCrash();
+    }
+  },
+  {
+    key: "close",
+    value: function close() {
+      const self = this;
+      let fn = hasOwnProperty(_getPrototypeOf(ReactNativeClient.prototype), "close", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
+      }
+      return fn([]).then((result) => {
+        closure_0 = result;
+        const NATIVE = self(fn[12]).NATIVE;
+        return NATIVE.closeNativeSdk().then(() => closure_0);
+      });
+    }
+  },
+  {
+    key: "captureUserFeedback",
+    value: function captureUserFeedback(arg0) {
+      const obj = ReactNativeClient(1047);
+      this.sendEnvelope(obj.createUserFeedbackEnvelope(arg0, { metadata: this._options._metadata, dsn: this.getDsn(), tunnel: "Array" }));
+    }
+  },
+  {
+    key: "sendEnvelope",
+    value: function sendEnvelope(arg0) {
+      const self = this;
+      const _clearOutcomesResult = this._clearOutcomes();
+      const tmp2 = ReactNativeClient;
+      this._outcomesBuffer = ReactNativeClient(1048).mergeOutcomes(this._outcomesBuffer, _clearOutcomesResult);
+      if (this._options.sendClientReports) {
+        const result = self._attachClientReportTo(self._outcomesBuffer, arg0);
+      }
+      ReactNativeClient = true;
+      if (self._isEnabled()) {
+        if (self._transport) {
+          if (self._dsn) {
+            self.emit("beforeEnvelope", arg0);
+            const _transport = self._transport;
+            _transport.send(arg0).then(null, (arg0) => {
+              if (arg0 instanceof ReactNativeClient(686).SentryError) {
+                c0 = false;
+                const debug2 = tmp(686).debug;
+                debug2.error("SentryError while sending event, keeping outcomes buffer:", arg0);
+              } else {
+                const debug = tmp(686).debug;
+                debug.error("Error while sending event:", arg0);
+              }
+            });
+            const sendResult = _transport.send(arg0);
           }
-        } else if (1 === tmp7) {
-          c3 = 0;
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 0;
-          c4 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
-        } else {
-          c3 = 0;
-          c4 = 3;
-          obj = { value, done: true };
-          return obj;
-        }
-        const debug = closure_128_0(closure_128_1[6]).debug;
-        debug.error("Failed to flush the event queue.");
-        c4 = 3;
-      } catch (tmp13) {
-        closure_2 = tmp13;
-        if (tmp4 === c3) {
-          c4 = tmp2;
-          throw tmp13;
-        } else {
-          c1 = tmp;
-        }
-      }
-    }
-  });
-};
-export const close = function close() {
-  return fn(this, undefined, undefined, function*(arg0, value) {
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_0 = tmp3;
-            c3 = 1;
-            const client = require("module_682").getClient();
-            if (client) {
-              c1 = 2;
-              c4 = 1;
-              const obj5 = { value: client.close(), done: false };
-              return obj5;
-            } else {
-              c3 = 0;
-            }
-            const obj2 = require("module_682");
+          if (ReactNativeClient) {
+            self._outcomesBuffer = [];
           }
-        } else if (1 === tmp7) {
-          c3 = 0;
-          const debug = closure_128_0(closure_128_1[6]).debug;
-          debug.error("Failed to close the SDK");
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 0;
-          c4 = 3;
-          obj = { value, done: true };
-          return obj;
-        }
-        c4 = 3;
-      } catch (tmp15) {
-        closure_2 = tmp15;
-        if (tmp4 === c3) {
-          c4 = tmp2;
-          throw tmp15;
-        } else {
-          c1 = tmp;
+          return Promise.resolve({});
         }
       }
+      let debug = tmp2(686).debug;
+      debug.error("Transport disabled");
     }
-  });
-};
-export const withScope = function withScope(arg0) {
-  _require = arg0;
-  return require("module_682").withScope((arg0) => {
-    try {
-      return closure_0(arg0);
-    } catch (tmp3) {
-      const debug = _mod682.debug;
-      debug.error("Error while running withScope callback", tmp3);
-    }
-  });
-};
-export const crashedLastRun = function crashedLastRun() {
-  return fn(this, undefined, undefined, function*(arg0, value) {
-    if (c0 === 2) {
-      c0 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
+  },
+  {
+    key: "init",
+    value: function init() {
+      const self = this;
+      let fn = hasOwnProperty(_getPrototypeOf(ReactNativeClient.prototype), "init", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
       }
-    } else {
-      try {
-        c0 = 2;
-        if (arg0 === 1) {
-          c0 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c0 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          const NATIVE = require("NativeModules").NATIVE;
-          c0 = 3;
-          obj = { value: NATIVE.crashedLastRun(), done: true };
-          return obj;
+      fn([]);
+      self._initNativeSdk();
+    }
+  },
+  {
+    key: "on",
+    value: function on(arg0, arg1) {
+      const self = this;
+      let fn = hasOwnProperty(_getPrototypeOf(ReactNativeClient.prototype), "on", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
+      }
+      const items = [arg0, arg1];
+      return fn(items);
+    }
+  },
+  {
+    key: "emit",
+    value: function emit(arg0) {
+      const substr = [...arguments].slice();
+      const self = this;
+      let fn = hasOwnProperty(_getPrototypeOf(ReactNativeClient.prototype), "emit", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
+      }
+      const items = [arg0, ...substr];
+      fn(items);
+    }
+  },
+  {
+    key: "_initNativeSdk",
+    value: function _initNativeSdk() {
+      const self = this;
+      const NATIVE = self(870).NATIVE;
+      const obj = { defaultSidecarUrl: null, devServerUrl: null, mobileReplayOptions: null, androidProfilingOptions: null };
+      const merged = Object.assign({}, this._options);
+      obj.defaultSidecarUrl = self(997).getDefaultSidecarUrl();
+      let obj2 = self(997);
+      const devServer = self(683).getDevServer();
+      let str;
+      if (null !== devServer) {
+        if (undefined !== devServer) {
+          str = devServer.url;
         }
-      } catch (tmp6) {
-        c0 = tmp;
-        throw tmp6;
+      }
+      if (!str) {
+        str = "";
+      }
+      obj.devServerUrl = str;
+      options = undefined;
+      if (self._integrations[self(undefined, 998).MOBILE_REPLAY_INTEGRATION_NAME]) {
+        if ("options" in self._integrations[tmp(undefined, 998).MOBILE_REPLAY_INTEGRATION_NAME]) {
+          options = self._integrations[tmp(undefined, 998).MOBILE_REPLAY_INTEGRATION_NAME].options;
+        }
+      }
+      obj.mobileReplayOptions = options;
+      const _experiments = self._options._experiments;
+      let prop;
+      if (null !== _experiments) {
+        if (undefined !== _experiments) {
+          prop = _experiments.androidProfilingOptions;
+        }
+      }
+      obj.androidProfilingOptions = prop;
+      const nativeSdk = NATIVE.initNativeSdk(Object.assign(merged, obj));
+      const obj3 = self(683);
+      const nextPromise = nativeSdk.then((result) => result, () => {
+        const result = self._showCannotConnectDialog();
+        return false;
+      });
+      nativeSdk.then((result) => result, () => {
+        const result = self._showCannotConnectDialog();
+        return false;
+      }).then((didCallNativeInit) => {
+        const _options = self._options;
+        const onReady = _options.onReady;
+        let tmp = null === onReady;
+        if (!tmp) {
+          tmp = undefined === onReady;
+        }
+        if (!tmp) {
+          const call = onReady.call;
+          const obj2 = { didCallNativeInit };
+          if (typeof call === "unknown") {
+            onReady(obj2);
+          } else {
+            call(_options, obj2);
+          }
+        }
+        self.emit("afterInit");
+      }).then(undefined, (arg0) => {
+        const debug = self(dependencyMap[10]).debug;
+        debug.error("The OnReady callback threw an error: ", arg0);
+      });
+    }
+  },
+  {
+    key: "_showCannotConnectDialog",
+    value: function _showCannotConnectDialog() {
+
+    }
+  },
+  {
+    key: "_attachClientReportTo",
+    value: function _attachClientReportTo(_outcomesBuffer, arg1) {
+      if (_outcomesBuffer.length > 0) {
+        const items = [{ type: "client_report" }, ];
+        const obj = { timestamp: ReactNativeClient(686).dateTimestampInSeconds(), discarded_events: _outcomesBuffer };
+        items[1] = obj;
+        const obj2 = ReactNativeClient(686);
+        arg1[ReactNativeClient(undefined, 1047).items].push(items);
+        const arr2 = arg1[ReactNativeClient(undefined, 1047).items];
       }
     }
-  });
-};
+  }
+];
+
+export const ReactNativeClient = _createClass(ReactNativeClient, items);

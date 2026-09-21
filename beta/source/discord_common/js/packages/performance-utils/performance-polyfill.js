@@ -1,8 +1,8 @@
-// Module ID: 570
-// Function ID: 571
+// Module ID: 574
+// Function ID: 575
 // Dependencies: [2]
 
-// Module 570
+// Module 574
 import size from "module_2" /* 2 */;
 
 let _Date = Date;

@@ -1,13 +1,13 @@
-// Module ID: 17036
-// Function ID: 17037
+// Module ID: 17039
+// Function ID: 17040
 // Name: VibegrationsTaskOutcome
-// Dependencies: [1115, 3678, 17035, 2]
+// Dependencies: [1119, 3682, 17038, 2]
 // Exports: describeTaskOutcome, taskTitle
 
-// Module 17036 (VibegrationsTaskOutcome)
-import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import VibegrationsDuration from "VibegrationsDuration" /* 17035 */;
+// Module 17039 (VibegrationsTaskOutcome)
+import util from "util" /* 1119 */;
+import _modDef3682 from "module_3682" /* 3682 */;
+import VibegrationsDuration from "VibegrationsDuration" /* 17038 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTaskOutcome.tsx");
@@ -20,7 +20,7 @@ export const taskTitle = function taskTitle(task) {
     return labelText;
   }
   const intl = util.intl;
-  labelText = intl.string(_modDef3678.MdXWEK);
+  labelText = intl.string(_modDef3682.MdXWEK);
 };
 export const describeTaskOutcome = function describeTaskOutcome(task) {
   if (null != task.labelText) {
@@ -41,28 +41,28 @@ export const describeTaskOutcome = function describeTaskOutcome(task) {
     if ("failed" === status) {
       const intl6 = util.intl;
       const obj3 = { task: sum };
-      return intl6.formatToPlainString(_modDef3678["5uv8y0"], obj3);
+      return intl6.formatToPlainString(_modDef3682["5uv8y0"], obj3);
     } else if ("cancelled" === status) {
       const intl5 = util.intl;
       const obj4 = { task: sum };
-      return intl5.formatToPlainString(_modDef3678["oEzDO/"], obj4);
+      return intl5.formatToPlainString(_modDef3682["oEzDO/"], obj4);
     } else if ("done" === status) {
       if (null != task.durationMs) {
         const intl4 = util.intl;
         const obj5 = { task: sum, duration: VibegrationsDuration.describeDuration(task.durationMs) };
-        let formatToPlainStringResult = intl4.formatToPlainString(_modDef3678.vuv9bT, obj5);
+        let formatToPlainStringResult = intl4.formatToPlainString(_modDef3682.vuv9bT, obj5);
       } else {
         const intl3 = util.intl;
         const obj7 = { task: sum };
-        formatToPlainStringResult = intl3.formatToPlainString(_modDef3678.KS49RN, obj7);
+        formatToPlainStringResult = intl3.formatToPlainString(_modDef3682.KS49RN, obj7);
       }
       return formatToPlainStringResult;
     } else {
       const intl2 = util.intl;
       const obj8 = { task: sum };
-      return intl2.formatToPlainString(_modDef3678.KS49RN, obj8);
+      return intl2.formatToPlainString(_modDef3682.KS49RN, obj8);
     }
   }
   const intl = util.intl;
-  str2 = intl.string(_modDef3678.MdXWEK);
+  str2 = intl.string(_modDef3682.MdXWEK);
 };

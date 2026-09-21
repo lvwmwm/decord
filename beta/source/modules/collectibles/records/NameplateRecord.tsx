@@ -1,12 +1,12 @@
-// Module ID: 1971
-// Function ID: 1972
+// Module ID: 1975
+// Function ID: 1976
 // Name: NameplateRecord
-// Dependencies: [1972, 1973, 2]
+// Dependencies: [1976, 1977, 2]
 // Exports: isNameplateRecord
 
-// Module 1971 (NameplateRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1972 */;
+// Module 1975 (NameplateRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1976 */;
 
 require = fn;
 const prototype = function NameplateRecord(arg0) {

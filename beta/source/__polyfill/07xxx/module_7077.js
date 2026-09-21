@@ -1,9 +1,24 @@
 // Module ID: 7077
 // Function ID: 7078
-// Dependencies: [7078]
+// Dependencies: [19, 6868]
+// Exports: useBottomSheetContentSizeSetter
 
 // Module 7077
-import _modDef7078 from "module_7078" /* 7078 */;
+import _mod19 from "module_19" /* 19 */;
+import _mod6868 from "module_6868" /* 6868 */;
 
+_mod19.useCallback;
 
-export default _modDef7078;
+export const useBottomSheetContentSizeSetter = function useBottomSheetContentSizeSetter() {
+  const bottomSheetInternal = _mod6868.useBottomSheetInternal();
+  const enableDynamicSizing = bottomSheetInternal.enableDynamicSizing;
+  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
+  const obj2 = { setContentSize: null };
+  const items = [enableDynamicSizing, animatedContentHeight];
+  obj2.setContentSize = useCallback((arg0) => {
+    if (enableDynamicSizing) {
+      const result = animatedContentHeight.set(arg0);
+    }
+  }, items);
+  return obj2;
+};

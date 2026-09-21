@@ -1,14 +1,14 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 8234
+// Function ID: 8235
 // Name: canAddNewReactions
-// Dependencies: [5630, 4395, 1074, 2]
+// Dependencies: [5632, 4399, 1078, 2]
 // Exports: default
 
-// Module 8229 (canAddNewReactions)
-import GuildVerificationStore from "GuildVerificationStore" /* 5630 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 8234 (canAddNewReactions)
+import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
-const Permissions = fn(1074).Permissions;
+const Permissions = fn(1078).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/reactions/canAddNewReactions.tsx");
 

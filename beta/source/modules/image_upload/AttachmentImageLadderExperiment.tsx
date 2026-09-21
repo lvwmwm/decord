@@ -1,12 +1,12 @@
-// Module ID: 1432
-// Function ID: 1433
+// Module ID: 1436
+// Function ID: 1437
 // Name: AttachmentImageLadderExperiment
-// Dependencies: [1433, 1434, 2]
+// Dependencies: [1437, 1438, 2]
 // Exports: getAttachmentImageLadderConfig
 
-// Module 1432 (AttachmentImageLadderExperiment)
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1433 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 1436 (AttachmentImageLadderExperiment)
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1437 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { enabled: false, maxUpscale: AttachmentImageLadder.ATTACHMENT_LADDER_MAX_UPSCALE, minSnapDownDpr: 2 };

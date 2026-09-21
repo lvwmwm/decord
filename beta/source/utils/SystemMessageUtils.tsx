@@ -1,28 +1,28 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8249
+// Function ID: 8250
 // Name: SystemMessageUtils
-// Dependencies: [32, 4406, 502, 2041, 2063, 4405, 1372, 1074, 1115, 11, 8245, 8249, 4908, 4909, 8250, 8252, 4988, 4978, 8253, 8254, 7758, 2]
+// Dependencies: [32, 4410, 502, 2045, 2067, 4409, 1376, 1078, 1119, 11, 8250, 8254, 4910, 4911, 8255, 8257, 4990, 4980, 8258, 8259, 7763, 2]
 
-// Module 8244 (SystemMessageUtils)
+// Module 8249 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1115 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
-import useMessageAuthor from "useMessageAuthor" /* 4988 */;
-import MarkupParser from "MarkupParser" /* 8245 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8249 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8250 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8252 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8253 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8254 */;
+import util from "util" /* 1119 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import useChannelName from "useChannelName" /* 4911 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
+import useMessageAuthor from "useMessageAuthor" /* 4990 */;
+import MarkupParser from "MarkupParser" /* 8250 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8254 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8255 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8257 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8258 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8259 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4406 */;
+import MessageRecord from "MessageRecord" /* 4410 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
@@ -32,7 +32,7 @@ function getSystemMessageUserJoinMobile(id) {
   const obj = SnowflakeUtilsDefault;
   return items[obj.extractTimestamp(obj, id) % items.length];
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ MessageEmbedTypes: c10, MessageTypes: closure_11, NOOP: closure_12 } = Constants);
 let closure_13 = { "234395307759108106": "https://groovy.bot/commands", "365975655608745985": "https://www.pokecord.com/getting-started", "512412940897484800": "http://jameslantz.net/smilebot" };
 const size = fn(2);
@@ -54,7 +54,7 @@ export default {
           const intl18 = util.intl;
           const obj2 = { username: name, usernameOnClick, otherUsername: null, otherUsernameOnClick: null };
           const obj61 = MarkupParser;
-          obj2.otherUsername = tmp6(4908).getName(null, channel_id, null);
+          obj2.otherUsername = tmp6(4910).getName(null, channel_id, null);
           obj2.otherUsernameOnClick = usernameOnClick;
           return obj61.astToString(intl18.formatToParts(util.t["7/Xl0S"], obj2));
         }
@@ -66,10 +66,10 @@ export default {
               const intl17 = util.intl;
               const obj4 = { username: name, usernameOnClick, otherUsername: null, otherUsernameOnClick: null };
               const obj58 = MarkupParser;
-              obj4.otherUsername = tmp6(4908).getName(null, channel_id, null);
+              obj4.otherUsername = tmp6(4910).getName(null, channel_id, null);
               obj4.otherUsernameOnClick = usernameOnClick;
               let astToStringResult = obj58.astToString(intl17.formatToParts(util.t.QtZ0RD, obj4));
-              const tmp6Result2 = tmp6(4908);
+              const tmp6Result2 = tmp6(4910);
             }
             return astToStringResult;
           }
@@ -211,24 +211,24 @@ export default {
                   const channel = ChannelStore.getChannel(channel_id);
                   let astToStringResult6 = null;
                   if (null != channel) {
-                    const guild = GuildStore.getGuild(channel.getGuildId());
+                    guild = GuildStore.getGuild(channel.getGuildId());
                     astToStringResult6 = null;
                     if (null != guild) {
                       if (AutomodNotificationEmbedTypeKeys.AutomodNotificationEmbedTypeKeys.ACTIVITY_ALERTS_ENABLED === value) {
-                        const intl5 = tmp34(1115).intl;
+                        const intl5 = tmp34(1119).intl;
                         const obj33 = { guildName: guild.name };
-                        astToStringResult6 = tmp34(8245).astToString(intl5.formatToParts(tmp34(1115).t.wt3ZUM, obj33));
-                        const tmp34Result = tmp34(8245);
-                      } else if (tmp34(8249).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
-                        const intl4 = tmp34(1115).intl;
+                        astToStringResult6 = tmp34(8250).astToString(intl5.formatToParts(tmp34(1119).t.wt3ZUM, obj33));
+                        const tmp34Result = tmp34(8250);
+                      } else if (tmp34(8254).AutomodNotificationEmbedTypeKeys.INTERACTION_BLOCKED === value) {
+                        const intl4 = tmp34(1119).intl;
                         const obj36 = { guildName: guild.name };
-                        astToStringResult6 = tmp34(8245).astToString(intl4.formatToParts(tmp34(1115).t.AkqI0g, obj36));
-                        const tmp34Result3 = tmp34(8245);
+                        astToStringResult6 = tmp34(8250).astToString(intl4.formatToParts(tmp34(1119).t.AkqI0g, obj36));
+                        const tmp34Result3 = tmp34(8250);
                       } else {
-                        const intl3 = tmp34(1115).intl;
+                        const intl3 = tmp34(1119).intl;
                         const obj37 = { guildName: guild.name };
-                        astToStringResult6 = tmp34(8245).astToString(intl3.formatToParts(tmp34(1115).t["a+lJKl"], obj37));
-                        const tmp34Result4 = tmp34(8245);
+                        astToStringResult6 = tmp34(8250).astToString(intl3.formatToParts(tmp34(1119).t["a+lJKl"], obj37));
+                        const tmp34Result4 = tmp34(8250);
                       }
                     }
                   }
@@ -250,7 +250,7 @@ export default {
                     if ("" !== content) {
                       const _Date = Date;
                       const date = new Date(content);
-                      str = date.toLocaleString(tmp21(1115).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+                      str = date.toLocaleString(tmp21(1119).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
                     }
                     obj39.time = str;
                     astToStringResult7 = MarkupParser.astToString(intl2.formatToParts(util.t.iOuWPk, obj39));

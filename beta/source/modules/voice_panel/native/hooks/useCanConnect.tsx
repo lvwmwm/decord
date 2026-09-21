@@ -1,24 +1,100 @@
-// Module ID: 17590
-// Function ID: 17591
+// Module ID: 17545
+// Function ID: 17546
 // Name: useCanConnect
-// Dependencies: [2041, 2063, 4395, 4775, 1085, 504, 4901, 2]
-// Exports: default
+// Dependencies: [2045, 2067, 4399, 4777, 1089, 558, 568, 4903, 504, 2]
 
-// Module 17590 (useCanConnect)
-import ChannelUtils from "ChannelUtils" /* 4901 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+// Module 17545 (useCanConnect)
+import ChannelUtils from "ChannelUtils" /* 4903 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Permissions = fn(1085).Permissions;
+const Permissions = fn(1089).Permissions;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useCanConnect.tsx");
 
-export default function useCanConnect(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, PermissionStore, GuildStore, VoiceStateStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class C {
+      constructor() {
+        channel = closure_2.getChannel(closure_0);
+        tmp = null != channel;
+        if (tmp) {
+          isPrivateResult = channel.isPrivate();
+          if (!isPrivateResult) {
+            tmp3 = closure_4;
+            tmp4 = Permissions;
+            isPrivateResult = closure_4.can(Permissions.CONNECT, channel);
+          }
+          tmp = isPrivateResult;
+        }
+        obj1 = { canConnect: tmp, isAtMaxCapacity: null };
+        isChannelFullResult = null == channel;
+        if (!isChannelFullResult) {
+          tmp6 = closure_0;
+          tmp7 = closure_1;
+          obj3 = closure_0(closure_1[7]);
+          tmp8 = closure_5;
+          tmp9 = closure_3;
+          isChannelFullResult = obj3.isChannelFull(channel, closure_5, closure_3);
+        }
+        obj1.isAtMaxCapacity = isChannelFullResult;
+        return obj1;
+      }
+    }
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = C;
+    cResult[3] = items1;
+    let tmp10 = items1;
+    const tmp9 = C;
+  } else {
+    class C {
+      constructor() {
+        channel = closure_2.getChannel(closure_0);
+        tmp = null != channel;
+        if (tmp) {
+          isPrivateResult = channel.isPrivate();
+          if (!isPrivateResult) {
+            tmp3 = closure_4;
+            tmp4 = Permissions;
+            isPrivateResult = closure_4.can(Permissions.CONNECT, channel);
+          }
+          tmp = isPrivateResult;
+        }
+        obj1 = { canConnect: tmp, isAtMaxCapacity: null };
+        isChannelFullResult = null == channel;
+        if (!isChannelFullResult) {
+          tmp6 = closure_0;
+          tmp7 = closure_1;
+          obj3 = closure_0(closure_1[7]);
+          tmp8 = closure_5;
+          tmp9 = closure_3;
+          isChannelFullResult = obj3.isChannelFull(channel, closure_5, closure_3);
+        }
+        obj1.isAtMaxCapacity = isChannelFullResult;
+        return obj1;
+      }
+    }
+    tmp10 = cResult[3];
+  }
+  let obj = require("c");
+  return require("initialize").useStateFromStoresObject(first, tmp9, tmp10);
+}) : ((arg0) => {
   _require = arg0;
   const items = [ChannelStore, PermissionStore, GuildStore, VoiceStateStore];
   const items1 = [arg0];
@@ -40,4 +116,4 @@ export default function useCanConnect(arg0) {
     obj.isAtMaxCapacity = isChannelFullResult;
     return obj;
   }, items1);
-};
+});

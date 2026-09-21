@@ -1,19 +1,19 @@
-// Module ID: 5764
-// Function ID: 5765
+// Module ID: 5766
+// Function ID: 5767
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 2098, 2105, 4740, 1372, 1074, 1271, 4741, 573, 5765, 5769, 4580, 5770, 5108, 1115, 4656, 1241, 2]
+// Dependencies: [5, 2102, 2109, 4742, 1376, 1078, 1275, 4743, 577, 5767, 5771, 4583, 5772, 5110, 1119, 4659, 1245, 2]
 // Exports: showCoachmark
 
-// Module 5764 (MemberVerificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4741 */;
+// Module 5766 (MemberVerificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4743 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import InviteStore from "InviteStore" /* 4740 */;
-import UserStore from "UserStore" /* 1372 */;
+import ImpersonateStore from "ImpersonateStore" /* 2102 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import InviteStore from "InviteStore" /* 4742 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 let closure_10 = async function _fetchVerificationForm() {
@@ -29,7 +29,7 @@ let closure_10 = async function _fetchVerificationForm() {
     const id = currentUser.id;
   }
   const HTTP = HTTPUtils.HTTP;
-  const request = { url: React7.GUILD_MEMBER_VERIFICATION(closure_0), query: null, oldFormErrors: true, rejectWithError: null };
+  const request = { url: options.GUILD_MEMBER_VERIFICATION(closure_0), query: null, oldFormErrors: true, rejectWithError: null };
   const obj5 = { with_guild: !member.isMember(closure_0, id), invite_code: null };
   if (null != inviteKeyForGuildId2) {
     const result = InviteCodeUtils.parseInviteCodeFromInviteKey(tmp27);
@@ -41,7 +41,7 @@ let closure_10 = async function _fetchVerificationForm() {
   request.rejectWithError = HTTPUtils.rejectWithMigratedError();
   await HTTP.get(request);
   closure_132_1(closure_132_2[8]).dispatch({ type: "MEMBER_VERIFICATION_FORM_FETCH_FAIL", guildId: closure_131_0 });
-  closure_131_1 = await "HermesInternal";
+  closure_131_1 = await "IconComponent";
   if (null == closure_131_1.body) {
     throw closure_131_1;
   }
@@ -73,7 +73,7 @@ let closure_11 = async function _updateVerificationForm(arg0, form_fields, enabl
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ let closure_11 = async function _updateVerificationForm(arg0, form_fields, enabl
           obj7.form = obj8;
           closure_133_1(closure_133_2[8]).dispatch(obj7);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c7 = tmp;
@@ -139,7 +139,7 @@ let closure_12 = async function _updateVerificationFormDescription(arg0, descrip
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -181,7 +181,7 @@ let closure_12 = async function _updateVerificationFormDescription(arg0, descrip
           obj7.form = obj8;
           closure_131_1(closure_131_2[8]).dispatch(obj7);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c5 = tmp;
@@ -205,7 +205,7 @@ let closure_13 = async function _enableVerificationForm(arg0, enabled) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ let closure_13 = async function _enableVerificationForm(arg0, enabled) {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c2 = tmp;
@@ -258,7 +258,7 @@ let closure_14 = async function _submitVerificationForm(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -285,7 +285,7 @@ let closure_14 = async function _submitVerificationForm(arg0, value) {
           let body;
           c8 = 1;
           c9 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -299,7 +299,7 @@ let closure_14 = async function _submitVerificationForm(arg0, value) {
           const obj7 = { memberOptions: { isPending: false } };
           const result = closure_133_0(closure_133_2[10]).updateImpersonatedData(closure_132_0, obj7);
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } else {
           c7 = 1;
           const HTTP = closure_133_0(closure_133_2[6]).HTTP;
@@ -390,7 +390,7 @@ let closure_14 = async function _submitVerificationForm(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_member_verification/MemberVerificationActionCreators.tsx");

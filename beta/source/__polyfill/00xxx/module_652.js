@@ -1,9 +1,10 @@
 // Module ID: 652
 // Function ID: 653
-// Dependencies: [524]
+// Dependencies: []
 
 // Module 652
-import _mod524 from "module_524" /* 524 */;
 
-
-export default _mod524.Uint8Array;
+export default function setCacheHas(arg0) {
+  const __data__ = this.__data__;
+  return __data__.has(arg0);
+};

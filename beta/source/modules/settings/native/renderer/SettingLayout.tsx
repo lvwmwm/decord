@@ -1,20 +1,49 @@
-// Module ID: 14964
-// Function ID: 14965
+// Module ID: 14953
+// Function ID: 14954
 // Name: SettingLayout
-// Dependencies: [19, 11726, 21, 14965, 14978, 2]
+// Dependencies: [19, 11595, 21, 558, 568, 14954, 14967, 2]
 
-// Module 14964 (SettingLayout)
-import SettingListRenderer from "SettingListRenderer" /* 14965 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14978 */;
+// Module 14953 (SettingLayout)
+import c from "c" /* 568 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14967 */;
 import noop from "module_19" /* 19 */;
 
+const SettingListRenderer = tmp(14954);
 require = fn;
-const NodeType = fn(11726).NodeType;
+const NodeType = fn(11595).NodeType;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");
 
-export default noop.memo(function SettingLayout(node) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+  const cResult = c.c(4);
+  node = node.node;
+  const type = node.type;
+  if (NodeType.LIST === type) {
+    if (cResult[0] !== node) {
+      const obj2 = { node };
+      const tmp11 = jsx(SettingListRenderer.SettingsList, { node });
+      cResult[0] = node;
+      cResult[1] = tmp11;
+      let tmp9 = tmp11;
+    } else {
+      tmp9 = cResult[1];
+    }
+    return tmp9;
+  } else if (tmp4.SEGMENTED_CONTROL === type) {
+    if (cResult[2] !== node) {
+      const obj3 = { node };
+      const tmp8 = jsx(SettingSegmentedControlRendererDefault, { node });
+      cResult[2] = node;
+      cResult[3] = tmp8;
+      let tmp5 = tmp8;
+    } else {
+      tmp5 = cResult[3];
+    }
+    return tmp5;
+  }
+}) : ((node) => {
   node = node.node;
   const type = node.type;
   if (NodeType.LIST === type) {
@@ -24,4 +53,4 @@ export default noop.memo(function SettingLayout(node) {
     const obj = { node };
     return jsx(SettingSegmentedControlRendererDefault, { node });
   }
-});
+}));

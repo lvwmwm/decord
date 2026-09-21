@@ -1,14 +1,14 @@
-// Module ID: 1183
-// Function ID: 1184
+// Module ID: 1187
+// Function ID: 1188
 // Name: SelectivelySyncedUserSettingsStore
-// Dependencies: [1074, 504, 510, 12, 573, 2]
+// Dependencies: [1078, 504, 510, 12, 577, 2]
 
-// Module 1183 (SelectivelySyncedUserSettingsStore)
+// Module 1187 (SelectivelySyncedUserSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;

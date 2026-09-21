@@ -1,15 +1,15 @@
-// Module ID: 7543
-// Function ID: 7544
+// Module ID: 7545
+// Function ID: 7546
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1372, 1074, 1186, 5640, 7541, 2019, 2]
-// Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
+// Dependencies: [19, 1376, 1078, 1190, 5642, 7543, 2023, 558, 2]
+// Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting
 
-// Module 7543 (SensitiveMediaGoreRedactionSettingsUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7541 */;
+// Module 7545 (SensitiveMediaGoreRedactionSettingsUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7543 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function resolveGoreSettingWithDefaults(isFriend) {
@@ -37,10 +37,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
     if (isDm) {
       if (!flag) {
-        let BLUR2 = tmp4(1186).ExplicitContentRedaction.BLOCK;
+        let BLUR2 = tmp4(1190).ExplicitContentRedaction.BLOCK;
       }
     }
-    ExplicitContentRedaction = tmp4(1186).ExplicitContentRedaction;
+    ExplicitContentRedaction = tmp4(1190).ExplicitContentRedaction;
     BLUR2 = ExplicitContentRedaction.BLUR;
   } else {
     let nsfwAllowed;
@@ -57,10 +57,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
         flag6 = false;
       }
       if (!flag5) {
-        const ExplicitContentRedaction3 = tmp4(1186).ExplicitContentRedaction;
+        const ExplicitContentRedaction3 = tmp4(1190).ExplicitContentRedaction;
         let BLUR = flag5 ? ExplicitContentRedaction3.BLOCK : ExplicitContentRedaction3.BLUR;
       }
-      BLUR = tmp4(1186).ExplicitContentRedaction.BLUR;
+      BLUR = tmp4(1190).ExplicitContentRedaction.BLUR;
     } else {
       let flag3 = isDm;
       if (isDm === undefined) {
@@ -72,21 +72,18 @@ function resolveGoreSettingWithDefaults(isFriend) {
       }
       if (flag3) {
         if (flag4) {
-          let SHOW = tmp4(1186).ExplicitContentRedaction.SHOW;
+          let SHOW = tmp4(1190).ExplicitContentRedaction.SHOW;
         }
         return SHOW;
       }
-      const ExplicitContentRedaction2 = tmp4(1186).ExplicitContentRedaction;
+      const ExplicitContentRedaction2 = tmp4(1190).ExplicitContentRedaction;
       SHOW = flag3 ? ExplicitContentRedaction2.BLOCK : ExplicitContentRedaction2.SHOW;
     }
   }
 }
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaGoreRedactionSettingsUtils.tsx");
-
-export { resolveGoreSettingWithDefaults };
-export const resolveGoreSettingWithDefaultsForTeen = function resolveGoreSettingWithDefaultsForTeen(isDm) {
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
+const ReactCompilerGating = fn(558);
+function resolveGoreSettingWithDefaultsForTeen(isDm) {
   let flag = isDm.isDm;
   if (flag === undefined) {
     flag = false;
@@ -103,8 +100,8 @@ export const resolveGoreSettingWithDefaultsForTeen = function resolveGoreSetting
   }
   const ExplicitContentRedaction = preloaded_user_settings.ExplicitContentRedaction;
   BLUR = flag ? ExplicitContentRedaction.BLOCK : ExplicitContentRedaction.BLUR;
-};
-export const getGoreContentSettingOrDefault = function getGoreContentSettingOrDefault(arg0) {
+}
+function getGoreContentSettingOrDefault(arg0) {
   let setting = arg0;
   if (arg0 == null) {
     const GoreContentSettings = UserSettings.GoreContentSettings;
@@ -126,7 +123,13 @@ export const getGoreContentSettingOrDefault = function getGoreContentSettingOrDe
   }
   obj.goreContentFriendDm = resolveGoreSettingWithDefaults({ setting: goreContentFriendDm, isDm: true, isFriend: true });
   return obj;
-};
+}
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaGoreRedactionSettingsUtils.tsx");
+
+export { resolveGoreSettingWithDefaults };
+export { resolveGoreSettingWithDefaultsForTeen };
+export { getGoreContentSettingOrDefault };
 export const updateGoreContentSetting = function updateGoreContentSetting(arg0) {
   const GoreContentSettings = UserSettings.GoreContentSettings;
   const setting = GoreContentSettings.getSetting();
@@ -150,6 +153,4 @@ export const updateGoreContentSetting = function updateGoreContentSetting(arg0) 
   const merged1 = Object.assign(arg0);
   GoreContentSettings2.updateSetting({});
 };
-export const useSensitiveContentFilterHelpArticle = function useSensitiveContentFilterHelpArticle() {
-  return noop.useMemo(() => constants.EXPLICIT_MEDIA_REDACTION, []);
-};
+export const useSensitiveContentFilterHelpArticle = ReactCompilerGating.isReactCompilerEnabled() ? (() => HelpdeskArticles.EXPLICIT_MEDIA_REDACTION) : (() => noop.useMemo(() => constants.EXPLICIT_MEDIA_REDACTION, []));

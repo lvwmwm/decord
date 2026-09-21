@@ -1,16 +1,20 @@
 // Module ID: 14602
 // Function ID: 14603
-// Dependencies: [14603]
+// Dependencies: [14587]
 
 // Module 14602
-import _mod14603 from "module_14603" /* 14603 */;
+import _mod14587 from "module_14587" /* 14587 */;
 
+let c0 = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod14587(1.toString);
 
-export default (obj) => {
-  if (typeof obj === "object") {
-    let tmp2 = null !== obj;
-  } else {
-    tmp2 = _mod14603(obj);
+export default (arg0) => {
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
   }
-  return tmp2;
+  const sum = c0 + 1;
+  c0 = sum;
+  return `Symbol(${str}` + ")_" + closure_2(sum + closure_1, 36);
 };

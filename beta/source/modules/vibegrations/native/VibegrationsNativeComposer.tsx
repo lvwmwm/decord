@@ -1,29 +1,28 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17062
+// Function ID: 17063
 // Name: VibegrationsNativeComposer
-// Dependencies: [5, 32, 19, 17, 4748, 17060, 13361, 1074, 21, 576, 4756, 1115, 3678, 5275, 9310, 4457, 504, 5366, 11489, 4723, 17061, 12492, 16268, 15277, 4700, 12499, 4752, 5339, 6858, 8174, 11216, 8879, 4466, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 4750, 17063, 13364, 1078, 21, 580, 4758, 1119, 3682, 5277, 558, 568, 9308, 4462, 504, 5368, 11495, 4725, 17064, 12385, 16257, 15266, 4702, 12393, 4754, 5341, 6851, 11257, 8182, 8884, 4471, 2]
 
-// Module 17059 (VibegrationsNativeComposer)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import SendMessageIcon from "SendMessageIcon" /* 4700 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9310 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 11216 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12492 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12499 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15277 */;
-import StopIcon from "StopIcon" /* 16268 */;
-import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17061 */;
+// Module 17062 (VibegrationsNativeComposer)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import _modDef3682 from "module_3682" /* 3682 */;
+import SendMessageIcon from "SendMessageIcon" /* 4702 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9308 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11257 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12385 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12393 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15266 */;
+import StopIcon from "StopIcon" /* 16257 */;
+import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17064 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17060 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13361 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17063 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13364 */;
 
 const require = globalThis.__r;
 const VibegrationsModelSettingsSheetDefault = VibegrationsModelSettingsSheet;
@@ -37,17 +36,17 @@ function tooLargeText(contentType) {
   const obj = { size: null };
   const obj2 = VibegrationsTypes;
   obj.size = obj2.formatVibegrationsAttachmentLimit(VibegrationsTypes.vibegrationsAttachmentLimit(contentType));
-  return intl.formatToPlainString(_modDef3678.cI7t94, obj);
+  return intl.formatToPlainString(_modDef3682.cI7t94, obj);
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let VibegrationsConnectionStore = fn(13361);
+let VibegrationsConnectionStore = fn(13364);
 ({ deleteStagedAttachment: c10, uploadAttachmentBytes: closure_11 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const PX_8 = nativeDefault.space.PX_8;
-const createStyles = fn(4756);
+let PX_8 = nativeDefault.space.PX_8;
+const createStyles = fn(4758);
 let obj2 = { container: { paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, box: null, boxFocused: null, boxContents: null, input: null, inputText: null, inputPlaceholder: null, draftRow: null, draftPill: null, draftName: null, trailingButton: null, trailingSlot: null, sendButtonActive: null, sendIconActive: null };
 let obj3 = { paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.box = { backgroundColor: nativeDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, overflow: "hidden" };
@@ -58,8 +57,8 @@ obj2.boxContents = { flexDirection: "row", alignItems: "flex-end", paddingHorizo
 let obj6 = { flexDirection: "row", alignItems: "flex-end", paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_HORIZONTAL, paddingVertical: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_PADDING_VERTICAL, gap: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_CONTENT_GAP };
 obj2.input = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 120, justifyContent: "center" };
 let obj7 = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 120, justifyContent: "center" };
-obj2.inputText = { fontSize: 16, lineHeight: 20, fontFamily: fn(1074).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_DEFAULT, includeFontPadding: false };
-let obj8 = { fontSize: 16, lineHeight: 20, fontFamily: fn(1074).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_DEFAULT, includeFontPadding: false };
+obj2.inputText = { fontSize: 16, lineHeight: 20, fontFamily: fn(1078).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_DEFAULT, includeFontPadding: false };
+let obj8 = { fontSize: 16, lineHeight: 20, fontFamily: fn(1078).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_DEFAULT, includeFontPadding: false };
 obj2.inputPlaceholder = { color: nativeDefault.colors.TEXT_MUTED };
 let obj9 = { color: nativeDefault.colors.TEXT_MUTED };
 obj2.draftRow = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
@@ -74,10 +73,1274 @@ obj2.sendButtonActive = { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_
 let obj12 = { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND };
 obj2.sendIconActive = { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
 let closure_16 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj13 = { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsNativeComposer.tsx");
 
-export default function VibegrationsNativeComposer(projectId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  const cResult = require("c").c(141);
+  projectId = projectId.projectId;
+  _require = projectId;
+  const canSend = projectId.canSend;
+  ({ running, stopped, onSend } = projectId);
+  const onInterrupt = projectId.onInterrupt;
+  if (cResult[0] !== projectId) {
+    const fn = function p() {
+      return VibegrationsComposerDraftStore.getDraft(closure_0);
+    };
+    cResult[0] = projectId;
+    cResult[1] = fn;
+    let tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  let tmp6 = str(noop.useState(tmp4), 2);
+  str = tmp6[0];
+  noop = tmp7;
+  if (cResult[2] !== projectId) {
+    class B {
+      constructor(arg0) {
+        obj = closure_0(closure_2[16]);
+        setComposerDraftResult = obj.setComposerDraft(closure_0, projectId);
+        tmp2 = closure_5(projectId);
+        return;
+      }
+    }
+    cResult[2] = projectId;
+    cResult[3] = B;
+    const tmp8 = B;
+  } else {
+    class B {
+      constructor(arg0) {
+        obj = closure_0(closure_2[16]);
+        setComposerDraftResult = obj.setComposerDraft(closure_0, projectId);
+        tmp2 = closure_5(projectId);
+        return;
+      }
+    }
+  }
+  B = tmp8;
+  let obj = require("c");
+  [tmp10, tmp11] = str(noop.useState(null), 2);
+  let ref = obj2.useRef(null);
+  const tmp5Result = str(noop.useState(null), 2);
+  if (tmp5Result5[0] !== projectId) {
+    class B {
+      constructor(arg0) {
+        obj = closure_0(closure_2[16]);
+        setComposerDraftResult = obj.setComposerDraft(closure_0, projectId);
+        tmp2 = closure_5(projectId);
+        return;
+      }
+    }
+    tmp7(VibegrationsComposerDraftStore.getDraft(projectId));
+    tmp11(null);
+  }
+  if (cResult[4] !== projectId) {
+    class D {
+      constructor() {
+        current = closure_8.current;
+        if (current != null) {
+          tmp = closure_9;
+          tmp2 = closure_0;
+          setTextResult = current.setText(closure_9.getDraft(closure_0));
+        }
+        return;
+      }
+    }
+    let items = [projectId];
+    cResult[4] = projectId;
+    cResult[5] = D;
+    cResult[6] = items;
+    let tmp18 = items;
+    const tmp17 = D;
+  } else {
+    class D {
+      constructor() {
+        current = closure_8.current;
+        if (current != null) {
+          tmp = closure_9;
+          tmp2 = closure_0;
+          setTextResult = current.setText(closure_9.getDraft(closure_0));
+        }
+        return;
+      }
+    }
+    tmp18 = cResult[6];
+  }
+  const effect = obj2.useEffect(tmp17, tmp18);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
+      constructor() {
+        current = closure_8.current;
+        if (current != null) {
+          tmp = closure_9;
+          tmp2 = closure_0;
+          setTextResult = current.setText(closure_9.getDraft(closure_0));
+        }
+        return;
+      }
+    }
+    cResult[7] = tmp21;
+    const tmp20 = tmp21;
+  } else {
+    class D {
+      constructor() {
+        current = closure_8.current;
+        if (current != null) {
+          tmp = closure_9;
+          tmp2 = closure_0;
+          setTextResult = current.setText(closure_9.getDraft(closure_0));
+        }
+        return;
+      }
+    }
+  }
+  tmp5Result5 = str(noop.useState(projectId), 2);
+  [arr2, VibegrationsComposerDraftStore] = str(noop.useState(tmp20), 2);
+  const tmp5Result6 = str(noop.useState(tmp20), 2);
+  [r10080, closure_10] = str(noop.useState(false), 2);
+  const tmp5Result7 = str(noop.useState(false), 2);
+  [r10085, closure_11] = str(noop.useState(null), 2);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+    cResult[8] = Y;
+  } else {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+  }
+  const tmp5Result8 = str(noop.useState(null), 2);
+  const token = require("useToken").useToken(canSend(tmp2[9]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const tmpResult = require("useToken");
+  const token1 = require("useToken").useToken(canSend(tmp2[9]).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
+  const tmpResult5 = require("useToken");
+  const token2 = require("useToken").useToken(canSend(tmp2[9]).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
+  const tmpResult6 = require("useToken");
+  const token3 = require("useToken").useToken(canSend(tmp2[9]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+    let items1 = [ref];
+    function se() {
+      return ref.useReducedMotion;
+    }
+    cResult[9] = items1;
+    cResult[10] = se;
+    let tmp32 = se;
+    let tmp31 = items1;
+  } else {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+    tmp32 = cResult[10];
+  }
+  const tmpResult7 = require("useToken");
+  const stateFromStores = require("initialize").useStateFromStores(tmp31, tmp32);
+  const bound = Math.max(0, (token1 - token) / 2);
+  const bound1 = Math.min(PX_8, Math.max(0, (token - 20) / 2));
+  let tmp36 = null != tmp10;
+  if (tmp36) {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+    tmp36 = Math.ceil(tmp10) + 2 * bound1 > 120;
+  }
+  const tmpResult8 = require("initialize");
+  closure_12 = Se();
+  closure_13 = obj2.useRef(arr2);
+  closure_14 = obj2.useRef(1);
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+    const set = new Set();
+    cResult[11] = set;
+    const tmp38 = set;
+  } else {
+    class Y {
+      constructor(arg0) {
+        tmp = closure_7(projectId.nativeEvent.contentSize.height);
+        return;
+      }
+    }
+  }
+  PX_8 = obj2.useRef(tmp38);
+  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+    class Se {
+      constructor(arg0) {
+        closure_13.current = projectId;
+        tmp = closure_9(projectId);
+        return;
+      }
+    }
+    cResult[12] = Se;
+    const tmp43 = Se;
+  } else {
+    class Se {
+      constructor(arg0) {
+        closure_13.current = projectId;
+        tmp = closure_9(projectId);
+        return;
+      }
+    }
+  }
+  Se = tmp43;
+  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+    class Ne {
+      constructor(arg0, arg1) {
+        closure_0 = projectId;
+        closure_1 = arg1;
+        current = closure_13.current;
+        closure_13.current = current.map((localId) => {
+          let tmp = localId;
+          if (localId.localId === closure_0) {
+            const obj = {};
+            const merged = Object.assign(localId);
+            const merged1 = Object.assign(closure_1);
+            tmp = obj;
+          }
+          return tmp;
+        });
+        tmp = closure_9(closure_13.current);
+        return;
+      }
+    }
+    cResult[13] = Ne;
+    const tmp44 = Ne;
+  } else {
+    class Ne {
+      constructor(arg0, arg1) {
+        closure_0 = projectId;
+        closure_1 = arg1;
+        current = closure_13.current;
+        closure_13.current = current.map((localId) => {
+          let tmp = localId;
+          if (localId.localId === closure_0) {
+            const obj = {};
+            const merged = Object.assign(localId);
+            const merged1 = Object.assign(closure_1);
+            tmp = obj;
+          }
+          return tmp;
+        });
+        tmp = closure_9(closure_13.current);
+        return;
+      }
+    }
+  }
+  Ne = tmp44;
+  if (cResult[14] !== projectId) {
+    class Ne {
+      constructor(arg0, arg1) {
+        closure_0 = projectId;
+        closure_1 = arg1;
+        current = closure_13.current;
+        closure_13.current = current.map((localId) => {
+          let tmp = localId;
+          if (localId.localId === closure_0) {
+            const obj = {};
+            const merged = Object.assign(localId);
+            const merged1 = Object.assign(closure_1);
+            tmp = obj;
+          }
+          return tmp;
+        });
+        tmp = closure_9(closure_13.current);
+        return;
+      }
+    }
+    const items2 = [projectId];
+    cResult[14] = projectId;
+    cResult[15] = tmp47;
+    cResult[16] = items2;
+    let tmp46 = items2;
+    const tmp45 = tmp47;
+  } else {
+    class Ne {
+      constructor(arg0, arg1) {
+        closure_0 = projectId;
+        closure_1 = arg1;
+        current = closure_13.current;
+        closure_13.current = current.map((localId) => {
+          let tmp = localId;
+          if (localId.localId === closure_0) {
+            const obj = {};
+            const merged = Object.assign(localId);
+            const merged1 = Object.assign(closure_1);
+            tmp = obj;
+          }
+          return tmp;
+        });
+        tmp = closure_9(closure_13.current);
+        return;
+      }
+    }
+    tmp46 = cResult[16];
+  }
+  const effect1 = obj2.useEffect(tmp45, tmp46);
+  if (cResult[17] !== projectId) {
+    class Ne {
+      constructor(arg0, arg1) {
+        closure_0 = projectId;
+        closure_1 = arg1;
+        current = closure_13.current;
+        closure_13.current = current.map((localId) => {
+          let tmp = localId;
+          if (localId.localId === closure_0) {
+            const obj = {};
+            const merged = Object.assign(localId);
+            const merged1 = Object.assign(closure_1);
+            tmp = obj;
+          }
+          return tmp;
+        });
+        tmp = closure_9(closure_13.current);
+        return;
+      }
+    }
+    _require = onInterrupt(function*(arg0, value, arg2, arg3) {
+      closure_5 = tmp3;
+      closure_132_0 = projectId;
+      closure_132_1 = closure_2;
+      closure_132_2 = closure_3;
+      const _fetch = fetch;
+      yield fetch(closure_1);
+      if (1 === tmp7) {
+        c6 = 0;
+        const current = ref.current;
+        if (current.has(closure_132_0)) {
+          c8 = 3;
+          return { value: "IconComponent", done: null };
+        } else {
+          const obj6 = { status: "error", errorText: null };
+          const intl = projectId(onSend[11]).intl;
+          obj6.errorText = intl.string(canSend(onSend[12]).GwEHvn);
+          Ne(closure_132_0, obj6);
+          c8 = 3;
+        }
+      } else if (2 === tmp7) {
+        if (arg0 === 1) {
+          c8 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 0;
+          c8 = 3;
+          return { value, done: true };
+        } else {
+          c7 = 3;
+          c8 = 1;
+          return { value: value.blob(), done: false };
+        }
+      } else if (3 === tmp7) {
+        if (arg0 === 1) {
+          c8 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 0;
+          c8 = 3;
+          return { value, done: true };
+        } else {
+          closure_132_3 = value;
+          const current3 = ref.current;
+          if (current3.has(closure_132_0)) {
+            c6 = 0;
+            c8 = 3;
+            return { value: "IconComponent", done: null };
+          } else {
+            if (obj4.isVibegrationsAttachmentWithinLimit(closure_132_3.size, closure_132_2)) {
+              c7 = 4;
+              c8 = 1;
+              return { value: closure_2_11(projectId, closure_132_3, closure_132_1, closure_132_2), done: false };
+            } else {
+              Ne(closure_132_0, { status: "error", errorText: fn2(closure_132_2) });
+              c6 = 0;
+              c8 = 3;
+              return { value: undefined, done: true };
+            }
+            obj4 = projectId(onSend[13]);
+          }
+        }
+      } else if (arg0 === 1) {
+        c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
+      } else {
+        closure_132_4 = value;
+        const current2 = ref.current;
+        if (!current2.has(closure_132_0)) {
+          Ne(closure_132_0, { status: "ready", ref: closure_132_4 });
+          c6 = 0;
+        }
+      }
+      v65535(projectId, closure_132_4.id).catch(() => {
+
+      });
+    });
+    let fn2 = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    };
+    cResult[17] = projectId;
+    cResult[18] = fn2;
+  } else {
+    class Ne {
+      constructor(arg0, arg1) {
+        closure_0 = projectId;
+        closure_1 = arg1;
+        current = closure_13.current;
+        closure_13.current = current.map((localId) => {
+          let tmp = localId;
+          if (localId.localId === closure_0) {
+            const obj = {};
+            const merged = Object.assign(localId);
+            const merged1 = Object.assign(closure_1);
+            tmp = obj;
+          }
+          return tmp;
+        });
+        tmp = closure_9(closure_13.current);
+        return;
+      }
+    }
+  }
+  fn2 = tmp49;
+  if (cResult[19] !== tmp49) {
+    class Be {
+      constructor(arg0) {
+        map = projectId;
+        if (0 !== projectId.length) {
+          tmp16 = closure_0;
+          VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = closure_2;
+          tmp15 = closure_13;
+          diff = closure_0(closure_2[13]).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE - closure_13.current.length;
+          if (map.length > diff) {
+            tmp4 = closure_11;
+            intl = tmp16(VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE[11]).intl;
+            tmp5 = closure_1;
+            obj = { count: null };
+            VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE[13]).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+            obj.count = VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+            tmp6 = closure_11(intl.formatToPlainString(closure_1(VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE[12]).DlX57a, obj));
+            tmp7 = globalThis;
+            _Math = Math;
+            substr = map.slice(0, Math.max(0, diff));
+            arr2 = substr;
+            if (0 === substr.length) {
+              return;
+            }
+          } else {
+            tmp = closure_11;
+            tmp2 = null;
+            tmp3 = closure_11(null);
+            arr2 = map;
+          }
+          mapped = arr2.map((name) => {
+            let tmp = null != name.size;
+            if (tmp) {
+              tmp = !closure_0(onSend[13]).isVibegrationsAttachmentWithinLimit(name.size, name.contentType);
+              const obj = closure_0(onSend[13]);
+            }
+            ref.current = ref.current + 1;
+            const obj2 = { localId: ref.current, name: name.name, contentType: name.contentType, status: null, errorText: null };
+            str = "uploading";
+            if (tmp) {
+              str = "error";
+            }
+            obj2.status = str;
+            let formatToPlainStringResult;
+            if (tmp) {
+              const intl = closure_0(onSend[11]).intl;
+              const obj3 = { size: null };
+              const obj4 = closure_0(onSend[13]);
+              obj3.size = obj4.formatVibegrationsAttachmentLimit(closure_0(onSend[13]).vibegrationsAttachmentLimit(name.contentType));
+              formatToPlainStringResult = intl.formatToPlainString(canSend(onSend[12]).cI7t94, obj3);
+              const obj5 = closure_0(onSend[13]);
+            }
+            obj2.errorText = formatToPlainStringResult;
+            return { draft: obj2, uri: name.uri };
+          });
+          tmp8 = closure_16;
+          items = [];
+          tmp9 = items;
+          num = 0;
+          map = mapped.map;
+          arraySpreadResult = HermesBuiltin.arraySpread(tmp15.current, 0);
+          tmp11 = items;
+          arraySpreadResult1 = HermesBuiltin.arraySpread(map((draft) => draft.draft), arraySpreadResult);
+          tmp13 = closure_16(items);
+          tmp14 = mapped;
+          tmp15 = mapped[Symbol.iterator]();
+          str = "uploading";
+        }
+        return;
+      }
+    }
+    cResult[19] = tmp49;
+    cResult[20] = Be;
+  } else {
+    class Be {
+      constructor(arg0) {
+        map = projectId;
+        if (0 !== projectId.length) {
+          tmp16 = closure_0;
+          VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = closure_2;
+          tmp15 = closure_13;
+          diff = closure_0(closure_2[13]).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE - closure_13.current.length;
+          if (map.length > diff) {
+            tmp4 = closure_11;
+            intl = tmp16(VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE[11]).intl;
+            tmp5 = closure_1;
+            obj = { count: null };
+            VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE[13]).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+            obj.count = VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+            tmp6 = closure_11(intl.formatToPlainString(closure_1(VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE[12]).DlX57a, obj));
+            tmp7 = globalThis;
+            _Math = Math;
+            substr = map.slice(0, Math.max(0, diff));
+            arr2 = substr;
+            if (0 === substr.length) {
+              return;
+            }
+          } else {
+            tmp = closure_11;
+            tmp2 = null;
+            tmp3 = closure_11(null);
+            arr2 = map;
+          }
+          mapped = arr2.map((name) => {
+            let tmp = null != name.size;
+            if (tmp) {
+              tmp = !closure_0(onSend[13]).isVibegrationsAttachmentWithinLimit(name.size, name.contentType);
+              const obj = closure_0(onSend[13]);
+            }
+            ref.current = ref.current + 1;
+            const obj2 = { localId: ref.current, name: name.name, contentType: name.contentType, status: null, errorText: null };
+            str = "uploading";
+            if (tmp) {
+              str = "error";
+            }
+            obj2.status = str;
+            let formatToPlainStringResult;
+            if (tmp) {
+              const intl = closure_0(onSend[11]).intl;
+              const obj3 = { size: null };
+              const obj4 = closure_0(onSend[13]);
+              obj3.size = obj4.formatVibegrationsAttachmentLimit(closure_0(onSend[13]).vibegrationsAttachmentLimit(name.contentType));
+              formatToPlainStringResult = intl.formatToPlainString(canSend(onSend[12]).cI7t94, obj3);
+              const obj5 = closure_0(onSend[13]);
+            }
+            obj2.errorText = formatToPlainStringResult;
+            return { draft: obj2, uri: name.uri };
+          });
+          tmp8 = closure_16;
+          items = [];
+          tmp9 = items;
+          num = 0;
+          map = mapped.map;
+          arraySpreadResult = HermesBuiltin.arraySpread(tmp15.current, 0);
+          tmp11 = items;
+          arraySpreadResult1 = HermesBuiltin.arraySpread(map((draft) => draft.draft), arraySpreadResult);
+          tmp13 = closure_16(items);
+          tmp14 = mapped;
+          tmp15 = mapped[Symbol.iterator]();
+          str = "uploading";
+        }
+        return;
+      }
+    }
+  }
+  Be = tmp50;
+  if (cResult[21] !== projectId) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    cResult[21] = projectId;
+    cResult[22] = Me;
+    const tmp51 = Me;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  Me = tmp51;
+  if (cResult[23] !== tmp50) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    _require = onInterrupt(function*(arg0, value) {
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_1 = tmp5;
+              closure_128_0 = undefined;
+              const obj5 = { mediaType: "any", selectionLimit: tmp2(onSend[13]).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
+              c2 = 1;
+              c3 = 1;
+              const obj6 = { value: canSend(onSend[19]).launchImageLibraryAsync(obj5), done: false };
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            let obj = { value, done: true };
+            return obj;
+          } else {
+            closure_128_0 = value;
+            let didCancel = closure_128_0.didCancel;
+            if (!didCancel) {
+              didCancel = null == closure_128_0.assets;
+            }
+            if (!didCancel) {
+              const assets = closure_128_0.assets;
+              Be(assets.map((uri) => {
+                const obj = { uri: uri.uri, name: null, contentType: null, size: null };
+                ({ uri, fileName } = uri);
+                if (null == fileName) {
+                  const parts = uri.split("/");
+                  let str3 = parts.at(-1);
+                  if (str3 == null) {
+                    str3 = "attachment";
+                  }
+                  fileName = str3;
+                }
+                obj.name = fileName;
+                let str4 = uri.mimeType;
+                if (str4 == null) {
+                  str4 = uri.fileType;
+                }
+                if (str4 == null) {
+                  str4 = uri.type;
+                }
+                if (str4 == null) {
+                  str4 = "application/octet-stream";
+                }
+                obj.contentType = str4;
+                return obj;
+              }));
+            }
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp19) {
+          c3 = tmp;
+          throw tmp19;
+        }
+      }
+    });
+    const fn3 = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    };
+    cResult[23] = tmp50;
+    cResult[24] = fn3;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  if (cResult[25] !== tmp50) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    _require = onInterrupt(function*(arg0, value) {
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_1 = tmp5;
+              closure_128_0 = undefined;
+              c2 = 1;
+              c3 = 1;
+              const obj5 = { value: tmp2(onSend[20]).handleDocumentSelection({ pickMultiple: true }), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            let obj = { value, done: true };
+            return obj;
+          } else {
+            closure_128_0 = value;
+            if (null != closure_128_0) {
+              Be(closure_128_0.map((uri) => {
+                const obj = { uri: uri.uri, name: null, contentType: null, size: null };
+                ({ uri, name } = uri);
+                if (null == name) {
+                  const parts = uri.split("/");
+                  let str3 = parts.at(-1);
+                  if (str3 == null) {
+                    str3 = "attachment";
+                  }
+                  name = str3;
+                }
+                obj.name = name;
+                let str4 = uri.type;
+                if (str4 == null) {
+                  str4 = "application/octet-stream";
+                }
+                obj.contentType = str4;
+                let size = uri.size;
+                if (size == null) {
+                  size = null;
+                }
+                obj.size = size;
+                return obj;
+              }));
+            }
+            c3 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp16) {
+          c3 = tmp;
+          throw tmp16;
+        }
+      }
+    });
+    const fn4 = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    };
+    cResult[25] = tmp50;
+    cResult[26] = fn4;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    const stringResult = obj8.string(tmp26(tmp2[12]).xE6M2k);
+    cResult[27] = stringResult;
+    const tmp54 = stringResult;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  if (cResult[28] !== tmp52) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    tmp57[0] = tmp54;
+    tmp57[1] = tmp52;
+    cResult[28] = tmp52;
+    cResult[29] = tmp57;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    const stringResult1 = obj9.string(tmp26(tmp2[12]).DN7KeU);
+    cResult[30] = stringResult1;
+    const tmp58 = stringResult1;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  if (cResult[31] !== tmp53) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    tmp61[0] = tmp58;
+    tmp61[1] = tmp53;
+    cResult[31] = tmp53;
+    cResult[32] = tmp61;
+  } else {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+  }
+  if (cResult[33] === tmp56) {
+    class Me {
+      constructor(arg0) {
+        closure_0 = projectId;
+        current = closure_15.current;
+        addResult = current.add(projectId);
+        current1 = closure_13.current;
+        tmp2 = closure_13;
+        found = current1.find((localId) => localId.localId === closure_0);
+        ref = undefined;
+        if (found != null) {
+          ref = found.ref;
+        }
+        if (null != ref) {
+          tmp5 = deleteStagedAttachment;
+          tmp6 = closure_0;
+          promise = deleteStagedAttachment(closure_0, found.ref.id);
+          catchPromise = promise.catch(() => {
+
+          });
+        }
+        current2 = tmp2.current;
+        tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+        return;
+      }
+    }
+    if (cResult[36] !== arr2) {
+      class Me {
+        constructor(arg0) {
+          closure_0 = projectId;
+          current = closure_15.current;
+          addResult = current.add(projectId);
+          current1 = closure_13.current;
+          tmp2 = closure_13;
+          found = current1.find((localId) => localId.localId === closure_0);
+          ref = undefined;
+          if (found != null) {
+            ref = found.ref;
+          }
+          if (null != ref) {
+            tmp5 = deleteStagedAttachment;
+            tmp6 = closure_0;
+            promise = deleteStagedAttachment(closure_0, found.ref.id);
+            catchPromise = promise.catch(() => {
+
+            });
+          }
+          current2 = tmp2.current;
+          tmp8 = closure_16(current2.filter((localId) => localId.localId !== closure_0));
+          return;
+        }
+      }
+      if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
+        class We {
+          constructor(arg0) {
+            return "ready" === projectId.status;
+          }
+        }
+        cResult[38] = We;
+        const tmp62 = We;
+      } else {
+        class We {
+          constructor(arg0) {
+            return "ready" === projectId.status;
+          }
+        }
+      }
+      const everyResult = arr2.every(tmp62);
+      cResult[36] = arr2;
+      cResult[37] = everyResult;
+    } else {
+      class We {
+        constructor(arg0) {
+          return "ready" === projectId.status;
+        }
+      }
+      const tmp66 = "" !== str.trim() || arr2.length > 0;
+      cResult[39] = arr2.length;
+      cResult[40] = str;
+      cResult[41] = tmp66;
+    }
+  }
+  const items3 = [tmp56, tmp60];
+  cResult[33] = tmp56;
+  cResult[34] = tmp60;
+  cResult[35] = items3;
+}) : ((projectId) => {
   projectId = projectId.projectId;
   _require = projectId;
   const canSend = projectId.canSend;
@@ -195,7 +1458,7 @@ export default function VibegrationsNativeComposer(projectId) {
         let tmp2 = nextResult;
         let addResult = current.add(nextResult.localId);
         if (null != nextResult.ref) {
-          let promise = closure_3_10(closure_0, tmp2.ref.id);
+          let promise = v65535(closure_0, tmp2.ref.id);
           let catchPromise = promise.catch(() => {
 
           });
@@ -216,7 +1479,7 @@ export default function VibegrationsNativeComposer(projectId) {
       const current = ref.current;
       if (current.has(closure_132_0)) {
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else {
         const obj6 = { status: "error", errorText: null };
         const intl = projectId(running[11]).intl;
@@ -251,7 +1514,7 @@ export default function VibegrationsNativeComposer(projectId) {
         if (current3.has(closure_132_0)) {
           c6 = 0;
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } else {
           if (obj4.isVibegrationsAttachmentWithinLimit(closure_132_3.size, closure_132_2)) {
             c7 = 4;
@@ -304,11 +1567,11 @@ export default function VibegrationsNativeComposer(projectId) {
       let tmp15 = closure_14;
       const diff = VibegrationsTypes.VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE - closure_14.current.length;
       if (map.length > diff) {
-        let intl = tmp16(1115).intl;
+        let intl = tmp16(1119).intl;
         let obj = { count: null };
-        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5275).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5277).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
         obj.count = VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
-        _undefined4(intl.formatToPlainString(_modDef3678.DlX57a, obj));
+        _undefined4(intl.formatToPlainString(_modDef3682.DlX57a, obj));
         const _Math = Math;
         const substr = map.slice(0, Math.max(0, diff));
         let arr2 = substr;
@@ -361,10 +1624,10 @@ export default function VibegrationsNativeComposer(projectId) {
       ref = found.ref;
     }
     if (null != ref) {
-      closure_2_10(closure_0, found.ref.id).catch(() => {
+      v65535(closure_0, found.ref.id).catch(() => {
 
       });
-      const promise = closure_2_10(closure_0, found.ref.id);
+      const promise = v65535(closure_0, found.ref.id);
     }
     const current2 = closure_14.current;
     callback2(current2.filter((localId) => localId.localId !== closure_0));
@@ -381,7 +1644,7 @@ export default function VibegrationsNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -396,10 +1659,10 @@ export default function VibegrationsNativeComposer(projectId) {
             return obj4;
           } else {
             closure_128_0 = undefined;
-            const obj5 = { mediaType: "any", selectionLimit: tmp2(5275).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
+            const obj5 = { mediaType: "any", selectionLimit: tmp2(5277).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: tmp5(5366).launchImageLibraryAsync(obj5), done: false };
+            const obj6 = { value: tmp5(5368).launchImageLibraryAsync(obj5), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -444,7 +1707,7 @@ export default function VibegrationsNativeComposer(projectId) {
             }));
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c3 = tmp;
@@ -464,7 +1727,7 @@ export default function VibegrationsNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -482,7 +1745,7 @@ export default function VibegrationsNativeComposer(projectId) {
             closure_128_0 = undefined;
             c2 = 1;
             c3 = 1;
-            const obj5 = { value: tmp2(c2[18]).handleDocumentSelection({ pickMultiple: true }), done: false };
+            const obj5 = { value: tmp2(c2[20]).handleDocumentSelection({ pickMultiple: true }), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -521,7 +1784,7 @@ export default function VibegrationsNativeComposer(projectId) {
             }));
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c3 = tmp;
@@ -533,12 +1796,12 @@ export default function VibegrationsNativeComposer(projectId) {
   const memo = obj.useMemo(() => {
     const obj = { label: null, action: null };
     const intl = util.intl;
-    obj.label = intl.string(_modDef3678.xE6M2k);
+    obj.label = intl.string(_modDef3682.xE6M2k);
     obj.action = callback6;
     const items = [obj, ];
     const obj2 = { label: null, action: null };
     const intl2 = util.intl;
-    obj2.label = intl2.string(_modDef3678.DN7KeU);
+    obj2.label = intl2.string(_modDef3682.DN7KeU);
     obj2.action = callback7;
     items[1] = obj2;
     return items;
@@ -581,7 +1844,7 @@ export default function VibegrationsNativeComposer(projectId) {
   stateFromStores1 = require("initialize").useStateFromStores(items11, () => null != VibegrationsConnectionStore.getModelSettings(closure_0), items12);
   const items13 = [projectId];
   callback9 = obj.useCallback(() => {
-    const obj2 = { content: map1(VibegrationsModelSettingsSheetDefault, { projectId }), key: VibegrationsModelSettingsSheet.VIBEGRATIONS_MODEL_SETTINGS_SHEET_KEY };
+    const obj2 = { content: __initData2(VibegrationsModelSettingsSheetDefault, { projectId }), key: VibegrationsModelSettingsSheet.VIBEGRATIONS_MODEL_SETTINGS_SHEET_KEY };
     ActionSheetActionCreators.showActionSheet(obj2);
   }, items13);
   const items14 = [tmp42, running, stateFromStores1, tmp43];
@@ -606,13 +1869,13 @@ export default function VibegrationsNativeComposer(projectId) {
     if ("stop" === key.key) {
       const obj2 = { style: closure_13.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: null };
       const intl2 = util.intl;
-      obj2.accessibilityLabel = intl2.string(_modDef3678.KdgI4k);
-      let tmp14 = map1(ChatInputActionButtonDefault, obj2);
+      obj2.accessibilityLabel = intl2.string(_modDef3682.KdgI4k);
+      let tmp14 = __initData2(ChatInputActionButtonDefault, obj2);
     } else if ("models" === key.key) {
       const obj = { style: closure_13.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback9, disabled: !canSend, accessibilityLabel: null };
       const intl = util.intl;
-      obj.accessibilityLabel = intl.string(_modDef3678["2NWMqY"]);
-      tmp14 = map1(ChatInputActionButtonDefault, obj);
+      obj.accessibilityLabel = intl.string(_modDef3682["2NWMqY"]);
+      tmp14 = __initData2(ChatInputActionButtonDefault, obj);
     } else {
       const obj5 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null, disabled: null };
       ({ trailingButton: obj3.style, sendButtonActive: obj3.activeStyle, sendIconActive: obj3.activeIconStyle } = closure_13);
@@ -621,14 +1884,14 @@ export default function VibegrationsNativeComposer(projectId) {
       obj5.accessibilityLabel = intl3.string(util.t.TXNS7S);
       obj5.onPress = callback8;
       obj5.disabled = !key.sendable;
-      tmp14 = map1(ChatInputActionButtonDefault, obj5);
+      tmp14 = __initData2(ChatInputActionButtonDefault, obj5);
     }
     return tmp14;
   }, items15);
   const items16 = [callback10];
   const callback11 = obj.useCallback((arg0, arg1, state, cleanup) => {
     const obj = { state, cleanup, withBounce: true, children: callback10(arg1) };
-    return map1(ChatInputActionButtonTransitionItemDefault, obj, arg0);
+    return __initData2(ChatInputActionButtonTransitionItemDefault, obj, arg0);
   }, items16);
   const callback12 = obj.useCallback(() => _undefined3(true), []);
   let obj7 = { style: tmp31.container, children: null };
@@ -636,7 +1899,7 @@ export default function VibegrationsNativeComposer(projectId) {
   const callback13 = obj.useCallback(() => _undefined3(false), []);
   if (null != tmp18) {
     const obj8 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp18 };
-    tmp54 = closure_13(tmp20(tmp21[26]).Text, obj8);
+    tmp54 = closure_13(tmp20(tmp21[28]).Text, obj8);
   }
   const items17 = [tmp54, , ];
   let tmp56 = null;
@@ -660,11 +1923,11 @@ export default function VibegrationsNativeComposer(projectId) {
           if ("error" === children.status) {
             str = "text-feedback-critical";
           }
-          const items1 = [closure_13(projectId(running[26]).Text, { variant: "text-xs/medium", color: str, lineClamp: 1, children: children.name }), ];
+          const items1 = [closure_13(projectId(running[28]).Text, { variant: "text-xs/medium", color: str, lineClamp: 1, children: children.name }), ];
           let tmp10Result = null;
           if (null != children.errorText) {
             const obj6 = { variant: "text-xs/normal", color: "text-feedback-critical", children: children.errorText };
-            tmp10Result = tmp10(tmp11(tmp12[26]).Text, obj6);
+            tmp10Result = tmp10(tmp11(tmp12[28]).Text, obj6);
           }
           items1[1] = tmp10Result;
           obj4.children = items1;
@@ -675,8 +1938,8 @@ export default function VibegrationsNativeComposer(projectId) {
           obj7.onPress = function onPress() {
             return closure_21(localId.localId);
           };
-          obj7.children = closure_13(projectId(running[28]).CircleXIcon, { size: "xs" });
-          items[2] = closure_13(projectId(running[27]).PressableOpacity, obj7);
+          obj7.children = closure_13(projectId(running[30]).CircleXIcon, { size: "xs" });
+          items[2] = closure_13(projectId(running[29]).PressableOpacity, obj7);
           obj.children = items;
           return closure_14(callback, obj, children.localId);
         })
@@ -700,10 +1963,10 @@ export default function VibegrationsNativeComposer(projectId) {
         ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
         const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
         const intl = util.intl;
-        obj.accessibilityLabel = intl.string(_modDef3678.gUn10I);
+        obj.accessibilityLabel = intl.string(_modDef3682.gUn10I);
         obj.accessibilityActions = accessibilityActions;
         obj.onAccessibilityAction = onAccessibilityAction;
-        return map1(ChatInputActionButtonDefault, obj);
+        return __initData2(ChatInputActionButtonDefault, obj);
       }
     })
   };
@@ -720,10 +1983,10 @@ export default function VibegrationsNativeComposer(projectId) {
       ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
       const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
       const intl = util.intl;
-      obj.accessibilityLabel = intl.string(_modDef3678.gUn10I);
+      obj.accessibilityLabel = intl.string(_modDef3682.gUn10I);
       obj.accessibilityActions = accessibilityActions;
       obj.onAccessibilityAction = onAccessibilityAction;
-      return map1(ChatInputActionButtonDefault, obj);
+      return __initData2(ChatInputActionButtonDefault, obj);
     }
   };
   const tmp20Result = require("initialize");
@@ -744,7 +2007,7 @@ export default function VibegrationsNativeComposer(projectId) {
   obj14.onBlur = callback13;
   obj14.onContentSizeChange = callback1;
   obj14.scrollEnabled = tmp30;
-  items19[1] = closure_13(canSend(running[31]), obj14);
+  items19[1] = closure_13(canSend(running[33]), obj14);
   const obj15 = { style: null, children: null };
   const items22 = [tmp31.trailingSlot, { width: token2 + 2 * token3, height: token1 }];
   obj15.style = items22;
@@ -752,7 +2015,7 @@ export default function VibegrationsNativeComposer(projectId) {
     let callback10Result = callback10(memo1[0]);
   } else {
     const obj16 = { items: memo1, renderItem: callback11, getItemKey: callback2 };
-    callback10Result = tmp58(tmp20(tmp21[32]).TransitionGroup, obj16);
+    callback10Result = tmp58(tmp20(tmp21[34]).TransitionGroup, obj16);
   }
   obj15.children = callback10Result;
   items19[2] = closure_13(onChange, obj15);
@@ -761,4 +2024,4 @@ export default function VibegrationsNativeComposer(projectId) {
   items17[2] = closure_13(onChange, obj10);
   obj7.children = items17;
   return closure_14(onChange, obj7);
-};
+});

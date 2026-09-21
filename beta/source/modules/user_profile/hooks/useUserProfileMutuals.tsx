@@ -1,25 +1,271 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12766
+// Function ID: 12767
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7895, 5655, 7857, 504, 12, 9896, 2]
-// Exports: default
+// Dependencies: [32, 19, 7900, 5657, 7862, 558, 568, 504, 12, 9874, 2]
 
-// Module 12855 (useUserProfileMutuals)
+// Module 12766 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
-import usePrevValueDefault from "usePrevValue" /* 9896 */;
+import usePrevValueDefault from "usePrevValue" /* 9874 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
-import SortedGuildStore from "SortedGuildStore" /* 5655 */;
-import UserProfileStore from "UserProfileStore" /* 7857 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import UserProfileStore from "UserProfileStore" /* 7862 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const useMemo = fn(19).useMemo;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserProfileMutuals.tsx");
 
-export default function useUserProfileMutuals(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  let tmp = _require;
+  const cResult = require("c").c(22);
+  let sortBy = globalThis;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [UserProfileStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function c() {
+      const items = [UserProfileStore.getMutualFriendsCount(user.id), UserProfileStore.getMutualFriends(user.id), UserProfileStore.getMutualGuilds(user.id), UserProfileStore.isFetchingProfile(user.id), UserProfileStore.isFetchingFriends(user.id)];
+      return items;
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const tmpResult = tmp(stateFromStores1[7]);
+  [tmp8, arr2, arr3, tmp9, tmp10] = tmp(stateFromStores1[7]).useStateFromStoresArray(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserAffinitiesV2Store];
+    const fn2 = function h() {
+      return userAffinitiesMap.getUserAffinitiesMap();
+    };
+    cResult[3] = items1;
+    cResult[4] = fn2;
+    let tmp12 = fn2;
+    let tmp11 = items1;
+  } else {
+    tmp11 = cResult[3];
+    tmp12 = cResult[4];
+  }
+  const tmp7 = _slicedToArray(tmp(stateFromStores1[7]).useStateFromStoresArray(first, tmp6), 5);
+  const stateFromStores = tmp(stateFromStores1[7]).useStateFromStores(tmp11, tmp12);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [SortedGuildStore];
+    class P {
+      constructor() {
+        return closure_1_6.getFlattenedGuildIds();
+      }
+    }
+    cResult[5] = items2;
+    cResult[6] = P;
+    let tmp16 = P;
+    let tmp15 = items2;
+  } else {
+    tmp15 = cResult[5];
+    tmp16 = cResult[6];
+  }
+  const tmpResult4 = tmp(stateFromStores1[7]);
+  stateFromStores1 = tmp(stateFromStores1[7]).useStateFromStores(tmp15, tmp16);
+  let tmp18 = arr2;
+  if (null != arr2) {
+    tmp18 = arr2;
+    if (arr2.length >= 2) {
+      if (cResult[7] !== stateFromStores) {
+        class B {
+          constructor(arg0) {
+            value = closure_1.get(id.user.id);
+            num = undefined;
+            if (value != null) {
+              num = value.communicationProbability;
+            }
+            if (num == null) {
+              num = -1;
+            }
+            return -1 * num;
+          }
+        }
+        cResult[7] = stateFromStores;
+        class P {
+          constructor() {
+            return closure_1_6.getFlattenedGuildIds();
+          }
+        }
+        cResult[8] = B;
+        const tmp19 = B;
+      } else {
+        class B {
+          constructor(arg0) {
+            value = closure_1.get(id.user.id);
+            num = undefined;
+            if (value != null) {
+              num = value.communicationProbability;
+            }
+            if (num == null) {
+              num = -1;
+            }
+            return -1 * num;
+          }
+        }
+      }
+      if (cResult[9] === arr2) {
+        class B {
+          constructor(arg0) {
+            value = closure_1.get(id.user.id);
+            num = undefined;
+            if (value != null) {
+              num = value.communicationProbability;
+            }
+            if (num == null) {
+              num = -1;
+            }
+            return -1 * num;
+          }
+        }
+      }
+      tmp(tmp2[8]);
+      class P {
+        constructor() {
+          return closure_1_6.getFlattenedGuildIds();
+        }
+      }
+      cResult[9] = arr2;
+      cResult[10] = tmp19;
+      cResult[11] = tmp22;
+    }
+  }
+  let tmp24 = arr3;
+  if (null != arr3) {
+    class B {
+      constructor(arg0) {
+        value = closure_1.get(id.user.id);
+        num = undefined;
+        if (value != null) {
+          num = value.communicationProbability;
+        }
+        if (num == null) {
+          num = -1;
+        }
+        return -1 * num;
+      }
+    }
+    tmp24 = arr3;
+    if (arr3.length >= 2) {
+      class B {
+        constructor(arg0) {
+          value = closure_1.get(id.user.id);
+          num = undefined;
+          if (value != null) {
+            num = value.communicationProbability;
+          }
+          if (num == null) {
+            num = -1;
+          }
+          return -1 * num;
+        }
+      }
+      const _Symbol = Symbol;
+      class P {
+        constructor() {
+          return closure_1_6.getFlattenedGuildIds();
+        }
+      }
+      const _Object = sortBy.Object;
+      _slicedToArray = _Object.fromEntries(stateFromStores1.map(tmp26));
+      tmp = tmp(tmp2[8]);
+      sortBy = tmp.sortBy;
+      const sortByResult = sortBy(arr3, (arg0) => {
+        let length = closure_3[arg0.guild.id];
+        if (length == null) {
+          length = stateFromStores1.length;
+        }
+        return length;
+      });
+      cResult[12] = arr3;
+      cResult[13] = stateFromStores1;
+      cResult[14] = sortByResult;
+    }
+  }
+  stateFromStores(stateFromStores1[9])(tmp8);
+  stateFromStores(stateFromStores1[9])(tmp18);
+  stateFromStores(stateFromStores1[9])(tmp24);
+  if (tmp8 == null) {
+    class B {
+      constructor(arg0) {
+        value = closure_1.get(id.user.id);
+        num = undefined;
+        if (value != null) {
+          num = value.communicationProbability;
+        }
+        if (num == null) {
+          num = -1;
+        }
+        return -1 * num;
+      }
+    }
+  }
+  if (tmp18 == null) {
+    class B {
+      constructor(arg0) {
+        value = closure_1.get(id.user.id);
+        num = undefined;
+        if (value != null) {
+          num = value.communicationProbability;
+        }
+        if (num == null) {
+          num = -1;
+        }
+        return -1 * num;
+      }
+    }
+  }
+  if (tmp24 == null) {
+    class B {
+      constructor(arg0) {
+        value = closure_1.get(id.user.id);
+        num = undefined;
+        if (value != null) {
+          num = value.communicationProbability;
+        }
+        if (num == null) {
+          num = -1;
+        }
+        return -1 * num;
+      }
+    }
+  }
+  if (cResult[16] === tmp9) {
+    class B {
+      constructor(arg0) {
+        value = closure_1.get(id.user.id);
+        num = undefined;
+        if (value != null) {
+          num = value.communicationProbability;
+        }
+        if (num == null) {
+          num = -1;
+        }
+        return -1 * num;
+      }
+    }
+  }
+  cResult[16] = tmp9;
+  cResult[17] = tmp10;
+  cResult[18] = tmp24;
+  cResult[19] = tmp8;
+  cResult[20] = tmp18;
+  cResult[21] = { mutualFriendsCount: tmp8, mutualFriends: tmp18, mutualGuilds: tmp24, isFetching: tmp9, isFetchingFriends: tmp10 };
+}) : ((arg0) => {
   _require = arg0;
   let items = [UserProfileStore];
   const tmp = stateFromStores(require("initialize").useStateFromStoresArray(items, () => {
@@ -65,7 +311,7 @@ export default function useUserProfileMutuals(arg0) {
           const items = [item, index];
           return items;
         }));
-        return closure_0(closure_2[6]).sortBy(arr, (arg0) => {
+        return closure_0(closure_2[8]).sortBy(arr, (arg0) => {
           let length = closure_0[arg0.guild.id];
           if (length == null) {
             length = stateFromStores1.length;
@@ -91,4 +337,4 @@ export default function useUserProfileMutuals(arg0) {
   obj4.isFetching = tmp[3];
   obj4.isFetchingFriends = tmp[4];
   return obj4;
-};
+});

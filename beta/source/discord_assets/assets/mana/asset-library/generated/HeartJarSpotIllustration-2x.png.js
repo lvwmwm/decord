@@ -1,8 +1,8 @@
-// Module ID: 6437
-// Function ID: 6438
+// Module ID: 6435
+// Function ID: 6436
 // Dependencies: [2]
 
-// Module 6437
+// Module 6435
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeartJarSpotIllustration-2x.png.js");

@@ -1,0 +1,9 @@
+// Module ID: 13772
+// Function ID: 13773
+// Dependencies: [1125]
+
+// Module 13772
+import registerAsset from "module_1125" /* 1125 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 420, height: 112, scales: [2, 3], hash: "e2e6d0edbd6c916cde4ea4f22a6f794c", name: "subscription_placeholder_pattern_darker", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7475
+// Function ID: 7476
 // Name: SocialLayerStorefrontStore
-// Dependencies: [2109, 502, 504, 573, 2]
+// Dependencies: [2113, 502, 504, 577, 2]
 
-// Module 7473 (SocialLayerStorefrontStore)
+// Module 7475 (SocialLayerStorefrontStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 function handleUserSettingsStoreUpdate() {
@@ -154,7 +154,7 @@ prototype["getStorefrontGuildIds"] = function getStorefrontGuildIds() {
   return set1;
 };
 prototype["getSKUEligibility"] = function getSKUEligibility(skuId) {
-  let state;
+  state = undefined;
   if (obj[skuId] != null) {
     state = tmp.state;
   }
@@ -164,7 +164,7 @@ prototype["getSKUEligibilityEntry"] = function getSKUEligibilityEntry(arg0) {
   return obj[arg0];
 };
 prototype["getNormalizedSKUEligibility"] = function getNormalizedSKUEligibility(arg0) {
-  let state;
+  state = undefined;
   if (obj[arg0] != null) {
     state = tmp.state;
   }
@@ -480,7 +480,7 @@ obj = {
   },
   SOCIAL_LAYER_SKU_PURCHASE_ELIGIBILITY_CHECK_CREATE: function handleSKUPurchaseEligibilityCheckCreate(arg0) {
     ({ skuId, interactionId } = arg0);
-    let state;
+    state = undefined;
     if (obj[skuId] != null) {
       state = tmp.state;
     }
@@ -500,7 +500,7 @@ obj = {
     if (reason === undefined) {
       reason = "http_error";
     }
-    let state;
+    state = undefined;
     if (obj[skuId] != null) {
       state = tmp.state;
     }

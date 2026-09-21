@@ -1,20 +1,20 @@
-// Module ID: 17732
-// Function ID: 17733
+// Module ID: 17735
+// Function ID: 17736
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1372, 9437, 1074, 3, 9438, 7363, 1364, 13720, 4414, 1241, 2]
+// Dependencies: [5, 1376, 9435, 1078, 3, 9436, 7365, 1368, 13723, 4418, 1245, 2]
 
-// Module 17732 (AppIconPremiumManager)
+// Module 17735 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import UserStore from "UserStore" /* 1376 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
-const getIconById = fn(9437).getIconById;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const getIconById = fn(9435).getIconById;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 let closure_7 = new LoggerDefault("AppIconPremiumManager");
-const DEFAULT = fn(9438).FreemiumAppIconIds.DEFAULT;
+const DEFAULT = fn(9436).FreemiumAppIconIds.DEFAULT;
 let closure_9 = { ORPHANED: "orphaned", PREMIUM_LOST: "premium_lost" };
 class AppIconPremiumManager extends tmp3 {
   constructor() {
@@ -54,7 +54,7 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -127,7 +127,7 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
             }
           }
           v3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp39) {
         v3 = tmp;

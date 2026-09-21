@@ -1,13 +1,13 @@
-// Module ID: 9826
-// Function ID: 9827
+// Module ID: 9804
+// Function ID: 9805
 // Name: sanitizeChannelName
-// Dependencies: [1095, 7516, 4911, 2]
+// Dependencies: [1099, 7518, 4913, 2]
 // Exports: default
 
-// Module 9826 (sanitizeChannelName)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4911 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7516 */;
+// Module 9804 (sanitizeChannelName)
+import ChannelTypes from "ChannelTypes" /* 1099 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4913 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7518 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/sanitizeChannelName.tsx");

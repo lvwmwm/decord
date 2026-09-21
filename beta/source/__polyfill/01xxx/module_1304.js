@@ -4,4 +4,4 @@
 
 // Module 1304
 
-export default URIError;
+export default EvalError;

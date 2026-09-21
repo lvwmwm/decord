@@ -1,26 +1,26 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 12515
+// Function ID: 12516
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 1364, 1370, 11125, 9843, 5339, 1115, 12622, 11470, 4752, 4467, 2]
+// Dependencies: [19, 17, 1376, 21, 4758, 580, 1368, 558, 568, 1374, 11165, 5341, 1119, 12516, 11458, 4754, 4472, 9821, 2]
 
-// Module 12621 (NewMessagesTagListInput)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11125 */;
+// Module 12515 (NewMessagesTagListInput)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11165 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, header: null, showSearchButton: null };
 let obj4 = { marginLeft: nativeDefault.space.PX_12, marginBottom: null };
-const PlatformUtils = fn(1364);
+const PlatformUtils = fn(1368);
 let num = 0;
 if (PlatformUtils.isAndroid()) {
   num = 2;
@@ -30,11 +30,241 @@ obj.header = obj4;
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.showSearchButton = { marginHorizontal: nativeDefault.space.PX_12 };
 let closure_7 = createStyles.createStyles(obj);
-const obj5 = { marginHorizontal: nativeDefault.space.PX_12 };
+const ReactCompilerGating = fn(558);
+let obj5 = { marginHorizontal: nativeDefault.space.PX_12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/NewMessagesTagListInput.tsx");
 
-export default noop.memo(function NewMessagesTagListInput(forceSearchResults) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = onSelectUser(568).c(27);
+  ({ autoFocus, onChangeText, onFocus, onSelectUser } = arg0);
+  ({ selectedUserIds, hasQuery, onForceSearchResults, forceSearchResults, tagListInputRef } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] !== selectedUserIds) {
+    let items = selectedUserIds;
+    if (selectedUserIds == null) {
+      items = [];
+    }
+    const mapped = items.map(UserStore.getUser);
+    const found = mapped.filter(tmp(1374).isNotNullish);
+    const mapped1 = found.map(tags(11165));
+    cResult[0] = selectedUserIds;
+    cResult[1] = mapped1;
+    tags = mapped1;
+  } else {
+    tags = cResult[1];
+  }
+  if (cResult[2] === forceSearchResults) {
+    if (cResult[3] === hasQuery) {
+      if (cResult[4] === onForceSearchResults) {
+        if (cResult[5] === tmp4.showSearchButton) {
+          if (cResult[6] === tags.length) {
+            let tmp10 = cResult[7];
+          }
+          const _Symbol = Symbol;
+          if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl2 = tmp(1119).intl;
+            const stringResult = intl2.string(tmp(1119).t.kHyiXs);
+            cResult[8] = stringResult;
+            let tmp16 = stringResult;
+          } else {
+            tmp16 = cResult[8];
+          }
+          if (cResult[9] !== tmp4.header) {
+            const obj2 = { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 };
+            cResult[9] = tmp4.header;
+            cResult[10] = jsx(tmp(4754).Text, { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 });
+            class F {
+              constructor(arg0) {
+                tmp = closure_1[arg0];
+                user = closure_5.getUser(tmp.id);
+                if (null != user) {
+                  tmp3 = onSelectUser;
+                  tmp4 = onSelectUser(user);
+                  tmp5 = closure_0;
+                  tmp6 = closure_2;
+                  AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
+                  intl = closure_0(closure_2[12]).intl;
+                  obj = { text: null };
+                  obj.text = tmp.text;
+                  announceResult = AccessibilityAnnouncer.announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
+                }
+                return;
+              }
+            }
+            const tmp20 = jsx(tmp(4754).Text, { style: tmp4.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp16 });
+          }
+          if (cResult[11] === onSelectUser) {
+            if (cResult[12] === tags) {
+              let tmp21 = cResult[13];
+            }
+            const _Symbol2 = Symbol;
+            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl3 = tmp(1119).intl;
+              const stringResult1 = intl3.string(tmp(1119).t.CaEER6);
+              cResult[14] = stringResult1;
+              let tmp22 = stringResult1;
+            } else {
+              tmp22 = cResult[14];
+            }
+            if (cResult[15] === autoFocus) {
+              if (cResult[16] === onChangeText) {
+                if (cResult[17] === onFocus) {
+                  if (cResult[18] === tmp10) {
+                    if (cResult[19] === tmp18) {
+                      if (cResult[20] === tmp21) {
+                        if (cResult[21] === tagListInputRef) {
+                          if (cResult[22] === tags) {
+                            let tmp24 = cResult[23];
+                          }
+                          if (cResult[24] === tmp4.searchBarContainer) {
+                            if (cResult[25] === tmp24) {
+                              let tmp28 = cResult[26];
+                            }
+                            return tmp28;
+                          }
+                          const obj3 = { style: tmp9, children: tmp24 };
+                          const tmp31 = <View style={tmp9}>{tmp24}</View>;
+                          class F {
+                            constructor(arg0) {
+                              tmp = closure_1[arg0];
+                              user = closure_5.getUser(tmp.id);
+                              if (null != user) {
+                                tmp3 = onSelectUser;
+                                tmp4 = onSelectUser(user);
+                                tmp5 = closure_0;
+                                tmp6 = closure_2;
+                                AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
+                                intl = closure_0(closure_2[12]).intl;
+                                obj = { text: null };
+                                obj.text = tmp.text;
+                                announceResult = AccessibilityAnnouncer.announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
+                              }
+                              return;
+                            }
+                          }
+                          cResult[25] = tmp24;
+                          cResult[26] = tmp31;
+                          tmp28 = tmp31;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            const obj4 = { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null };
+            class F {
+              constructor(arg0) {
+                tmp = closure_1[arg0];
+                user = closure_5.getUser(tmp.id);
+                if (null != user) {
+                  tmp3 = onSelectUser;
+                  tmp4 = onSelectUser(user);
+                  tmp5 = closure_0;
+                  tmp6 = closure_2;
+                  AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
+                  intl = closure_0(closure_2[12]).intl;
+                  obj = { text: null };
+                  obj.text = tmp.text;
+                  announceResult = AccessibilityAnnouncer.announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
+                }
+                return;
+              }
+            }
+            obj4.icon = tmp18;
+            obj4.onChangeText = onChangeText;
+            obj4.onFocus = onFocus;
+            obj4.onRemove = tmp21;
+            obj4.placeholder = tmp22;
+            obj4.tags = tags;
+            obj4.ref = tagListInputRef;
+            const tmp27 = jsx(tags(9821), { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
+            cResult[15] = autoFocus;
+            cResult[16] = onChangeText;
+            cResult[17] = onFocus;
+            cResult[18] = tmp10;
+            cResult[19] = tmp18;
+            cResult[20] = tmp21;
+            cResult[21] = tagListInputRef;
+            cResult[22] = tags;
+            cResult[23] = tmp27;
+            tmp24 = tmp27;
+          }
+          class F {
+            constructor(arg0) {
+              tmp = closure_1[arg0];
+              user = closure_5.getUser(tmp.id);
+              if (null != user) {
+                tmp3 = onSelectUser;
+                tmp4 = onSelectUser(user);
+                tmp5 = closure_0;
+                tmp6 = closure_2;
+                AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
+                intl = closure_0(closure_2[12]).intl;
+                obj = { text: null };
+                obj.text = tmp.text;
+                announceResult = AccessibilityAnnouncer.announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
+              }
+              return;
+            }
+          }
+          cResult[11] = onSelectUser;
+          cResult[12] = tags;
+          cResult[13] = F;
+          tmp21 = F;
+        }
+      }
+    }
+  }
+  let tmp11 = null;
+  if (!hasQuery) {
+    tmp11 = null;
+    if (tags.length > 0) {
+      let intl = tmp(1119).intl;
+      const string = intl.string;
+      const t = tmp(1119).t;
+      if (forceSearchResults) {
+        let stringResult2 = string(t["4wv+DE"]);
+      } else {
+        stringResult2 = string(t.fTcQm2);
+      }
+      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: null, children: null };
+      class F {
+        constructor(arg0) {
+          tmp = closure_1[arg0];
+          user = closure_5.getUser(tmp.id);
+          if (null != user) {
+            tmp3 = onSelectUser;
+            tmp4 = onSelectUser(user);
+            tmp5 = closure_0;
+            tmp6 = closure_2;
+            AccessibilityAnnouncer = closure_0(closure_2[16]).AccessibilityAnnouncer;
+            intl = closure_0(closure_2[12]).intl;
+            obj = { text: null };
+            obj.text = tmp.text;
+            announceResult = AccessibilityAnnouncer.announce(intl.formatToPlainString(closure_0(closure_2[12]).t.srlxB8, obj));
+          }
+          return;
+        }
+      }
+      if (forceSearchResults) {
+        let CirclePlusIcon = tmp(12516).ChevronLargeRightIcon;
+      } else {
+        CirclePlusIcon = tmp(11458).CirclePlusIcon;
+      }
+      obj5.children = <CirclePlusIcon size="xs" />;
+      jsx(tmp(5341).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: stringResult2, onPress: onForceSearchResults, style: null, children: null });
+    }
+  }
+  cResult[2] = forceSearchResults;
+  cResult[3] = hasQuery;
+  cResult[4] = onForceSearchResults;
+  cResult[5] = tmp4.showSearchButton;
+  cResult[6] = tags.length;
+  cResult[7] = tmp11;
+  tmp10 = tmp11;
+}) : ((forceSearchResults) => {
   ({ onSelectUser: require, selectedUserIds } = forceSearchResults);
   ({ autoFocus, onChangeText, onFocus, hasQuery, onForceSearchResults, tagListInputRef } = forceSearchResults);
   const tmp = closure_7();
@@ -64,9 +294,9 @@ export default noop.memo(function NewMessagesTagListInput(forceSearchResults) {
       }
       const obj3 = { accessibilityRole: "button", accessibilityLabel: stringResult, onPress: onForceSearchResults, style: tmp.showSearchButton, children: null };
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp7(tmp4[12]).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp7(tmp4[13]).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp7(tmp4[13]).CirclePlusIcon;
+        CirclePlusIcon = tmp7(tmp4[14]).CirclePlusIcon;
       }
       obj3.children = tmp2(CirclePlusIcon, { size: "xs" });
       tmp2(require("Pressables").PressableOpacity, obj3);
@@ -82,7 +312,7 @@ export default noop.memo(function NewMessagesTagListInput(forceSearchResults) {
   obj2.onRemove = function onRemove(arg0) {
     const user = UserStore.getUser(tmp.id);
     if (null != user) {
-      closure_1_0(user);
+      _require(user);
       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
       const intl = util.intl;
       const obj = { text: tmp.text };
@@ -93,6 +323,6 @@ export default noop.memo(function NewMessagesTagListInput(forceSearchResults) {
   obj2.placeholder = intl3.string(require("util").t.CaEER6);
   obj2.tags = memo;
   obj2.ref = tagListInputRef;
-  obj.children = jsx(selectedUserIds(memo[9]), { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
+  obj.children = jsx(selectedUserIds(memo[17]), { autoFocus, focusOnAdd: true, footer: null, icon: null, onChangeText: null, onFocus: null, onRemove: null, placeholder: null, tags: null, ref: null });
   return <View style={tmp.searchBarContainer}>{null}</View>;
-});
+}));

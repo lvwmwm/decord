@@ -1,11 +1,11 @@
-// Module ID: 2043
-// Function ID: 2044
+// Module ID: 2047
+// Function ID: 2048
 // Name: GuildMembershipStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 2043 (GuildMembershipStore)
+// Module 2047 (GuildMembershipStore)
 import initializeDefault from "initialize" /* 504 */;
-import Dispatcher2 from "Dispatcher" /* 573 */;
+import Dispatcher2 from "Dispatcher" /* 577 */;
 
 const Dispatcher = Dispatcher2;
 
@@ -95,7 +95,7 @@ let obj = {
     return closure_0.handleGuildDelete(arg0);
   }
 };
-let tmp2 = new tmp(Dispatcher, obj, fn(573).DispatchBand.Early, GuildMembershipStore, tmp, Dispatcher, obj, new.target, undefined, handleGuildDelete, globalThis);
+let tmp2 = new tmp(Dispatcher, obj, fn(577).DispatchBand.Early, GuildMembershipStore, tmp, Dispatcher, obj, new.target, undefined, handleGuildDelete, globalThis);
 let closure_129_0 = tmp2;
 tmp2.guildIds = new Set();
 const size = fn(2);

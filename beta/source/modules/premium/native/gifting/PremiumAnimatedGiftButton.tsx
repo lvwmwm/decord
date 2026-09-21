@@ -1,21 +1,20 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12396
+// Function ID: 12397
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4748, 21, 4756, 576, 4457, 504, 1364, 4492, 5339, 5746, 2]
-// Exports: PremiumAnimatedGiftButton
+// Dependencies: [19, 4750, 21, 4758, 580, 558, 568, 4462, 504, 1368, 4497, 5749, 5341, 2]
 
-// Module 12502 (PremiumAnimatedGiftButton)
-import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+// Module 12396 (PremiumAnimatedGiftButton)
+import nativeDefault from "native" /* 580 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const useRef = fn(19).useRef;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles((width, marginHorizontal) => {
   const obj = { containerRefresh: null, animationRefresh: null };
   const size = { width, height: width, borderRadius: nativeDefault.radii.sm, marginHorizontal, display: "flex", alignItems: "center", justifyContent: "center" };
@@ -23,18 +22,266 @@ let closure_7 = createStyles.createStyles((width, marginHorizontal) => {
   obj.animationRefresh = { width: 24, height: 24 };
   return obj;
 });
+const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumAnimatedGiftButton.tsx");
 
-export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0) {
+export const PremiumAnimatedGiftButton = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(30);
+  ({ active, style, disabled, accessibilityState, channelId, animationDataUrl, onAnimationFinished, loop, activeStyle } = arg0);
+  let obj = require("c");
+  const tmp = _require;
+  const token = require("useToken").useToken(stateFromStores(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const obj2 = require("useToken");
+  const token1 = require("useToken").useToken(stateFromStores(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const obj3 = require("useToken");
+  const token2 = require("useToken").useToken(stateFromStores(580).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const tmp7 = closure_7(token, token1);
+  const bound = Math.max(0, (token2 - token) / 2);
+  const obj4 = require("useToken");
+  _require = useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    class T {
+      constructor() {
+        return closure_1_5.useReducedMotion;
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = T;
+    tmp10 = items;
+    tmp11 = T;
+  } else {
+    [tmp10, tmp11] = cResult;
+  }
+  const tmp9 = useRef(null);
+  stateFromStores = tmp(504).useStateFromStores(tmp10, tmp11);
+  if (cResult[2] !== stateFromStores) {
+    class E {
+      constructor() {
+        if (!closure_1) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          obj = closure_0(closure_2[9]);
+          if (obj.isIOS()) {
+            tmp3 = null;
+            if (closure_0 != null) {
+              current = closure_0.current;
+              if (current != null) {
+                resetResult = current.reset();
+              }
+            }
+          }
+          tmp5 = null;
+          if (closure_0 != null) {
+            current2 = closure_0.current;
+            if (current2 != null) {
+              playResult = current2.play();
+            }
+          }
+        }
+        return;
+      }
+    }
+    cResult[2] = stateFromStores;
+    class T {
+      constructor() {
+        return closure_1_5.useReducedMotion;
+      }
+    }
+    const tmp14 = E;
+  } else {
+    class E {
+      constructor() {
+        if (!closure_1) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          obj = closure_0(closure_2[9]);
+          if (obj.isIOS()) {
+            tmp3 = null;
+            if (closure_0 != null) {
+              current = closure_0.current;
+              if (current != null) {
+                resetResult = current.reset();
+              }
+            }
+          }
+          tmp5 = null;
+          if (closure_0 != null) {
+            current2 = closure_0.current;
+            if (current2 != null) {
+              playResult = current2.play();
+            }
+          }
+        }
+        return;
+      }
+    }
+  }
+  if (cResult[4] === channelId) {
+    class E {
+      constructor() {
+        if (!closure_1) {
+          tmp = closure_0;
+          tmp2 = closure_2;
+          obj = closure_0(closure_2[9]);
+          if (obj.isIOS()) {
+            tmp3 = null;
+            if (closure_0 != null) {
+              current = closure_0.current;
+              if (current != null) {
+                resetResult = current.reset();
+              }
+            }
+          }
+          tmp5 = null;
+          if (closure_0 != null) {
+            current2 = closure_0.current;
+            if (current2 != null) {
+              playResult = current2.play();
+            }
+          }
+        }
+        return;
+      }
+    }
+    const effect = noop.useEffect(tmp14, items2);
+    class T {
+      constructor() {
+        return closure_1_5.useReducedMotion;
+      }
+    }
+    if (!stateFromStores) {
+      class E {
+        constructor() {
+          if (!closure_1) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[9]);
+            if (obj.isIOS()) {
+              tmp3 = null;
+              if (closure_0 != null) {
+                current = closure_0.current;
+                if (current != null) {
+                  resetResult = current.reset();
+                }
+              }
+            }
+            tmp5 = null;
+            if (closure_0 != null) {
+              current2 = closure_0.current;
+              if (current2 != null) {
+                playResult = current2.play();
+              }
+            }
+          }
+          return;
+        }
+      }
+    }
+    if (active) {
+      class E {
+        constructor() {
+          if (!closure_1) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[9]);
+            if (obj.isIOS()) {
+              tmp3 = null;
+              if (closure_0 != null) {
+                current = closure_0.current;
+                if (current != null) {
+                  resetResult = current.reset();
+                }
+              }
+            }
+            tmp5 = null;
+            if (closure_0 != null) {
+              current2 = closure_0.current;
+              if (current2 != null) {
+                playResult = current2.play();
+              }
+            }
+          }
+          return;
+        }
+      }
+    }
+    if (active) {
+      class E {
+        constructor() {
+          if (!closure_1) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[9]);
+            if (obj.isIOS()) {
+              tmp3 = null;
+              if (closure_0 != null) {
+                current = closure_0.current;
+                if (current != null) {
+                  resetResult = current.reset();
+                }
+              }
+            }
+            tmp5 = null;
+            if (closure_0 != null) {
+              current2 = closure_0.current;
+              if (current2 != null) {
+                playResult = current2.play();
+              }
+            }
+          }
+          return;
+        }
+      }
+    }
+    if (cResult[7] === style) {
+      class E {
+        constructor() {
+          if (!closure_1) {
+            tmp = closure_0;
+            tmp2 = closure_2;
+            obj = closure_0(closure_2[9]);
+            if (obj.isIOS()) {
+              tmp3 = null;
+              if (closure_0 != null) {
+                current = closure_0.current;
+                if (current != null) {
+                  resetResult = current.reset();
+                }
+              }
+            }
+            tmp5 = null;
+            if (closure_0 != null) {
+              current2 = closure_0.current;
+              if (current2 != null) {
+                playResult = current2.play();
+              }
+            }
+          }
+          return;
+        }
+      }
+    }
+    const items1 = [tmp7.containerRefresh, style, active];
+    cResult[7] = style;
+    cResult[8] = tmp7.containerRefresh;
+    cResult[9] = active;
+    cResult[10] = items1;
+  }
+  items2 = [channelId, stateFromStores];
+  cResult[4] = channelId;
+  cResult[5] = stateFromStores;
+  cResult[6] = items2;
+}) : ((arg0) => {
   ({ active, disabled, accessibilityState } = arg0);
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
-  const token = require("useToken").useToken(stateFromStores(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const token = require("useToken").useToken(stateFromStores(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   let obj = require("useToken");
   const tmp3 = stateFromStores;
-  const token1 = require("useToken").useToken(stateFromStores(576).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const token1 = require("useToken").useToken(stateFromStores(580).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   const obj2 = require("useToken");
-  const token2 = require("useToken").useToken(stateFromStores(576).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = require("useToken").useToken(stateFromStores(580).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = closure_7(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp9 = useRef(null);
@@ -64,7 +311,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   }, items1);
   let FadeOut;
   if (!stateFromStores) {
-    FadeOut = tmp(4492).FadeOut;
+    FadeOut = tmp(4497).FadeOut;
   }
   const obj5 = { exiting: FadeOut, children: null };
   const items2 = [tmp7.containerRefresh, style, ];
@@ -84,7 +331,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   const merged = Object.assign(accessibilityState);
   obj6.accessibilityState = { disabled };
   const merged1 = Object.assign(arg0);
-  obj6.children = jsx(tmp3(5746), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj6.children = jsx(tmp3(5749), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
   obj5.children = jsx(require("Pressables").PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
-  return jsx(stateFromStores(4492).View, { exiting: FadeOut, children: null });
-};
+  return jsx(stateFromStores(4497).View, { exiting: FadeOut, children: null });
+});

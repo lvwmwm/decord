@@ -1,19 +1,19 @@
-// Module ID: 16023
-// Function ID: 16024
+// Module ID: 16012
+// Function ID: 16013
 // Name: DevToolsAgeVerificationScreen
-// Dependencies: [5, 19, 17, 21, 4756, 576, 8689, 8682, 4454, 8684, 1612, 5904, 5822, 7201, 5829, 2]
-// Exports: default
+// Dependencies: [5, 19, 17, 21, 4758, 580, 8694, 8687, 4458, 8689, 558, 568, 1616, 5822, 7199, 5829, 5903, 2]
 
-// Module 16023 (DevToolsAgeVerificationScreen)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+// Module 16012 (DevToolsAgeVerificationScreen)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import TableRow from "TableRow" /* 5822 */;
 import TableRowArrow from "TableRowArrow" /* 5829 */;
-import TableRowGroup from "TableRowGroup" /* 5904 */;
-import KeyIcon from "KeyIcon" /* 7201 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8689 */;
+import TableRowGroup from "TableRowGroup" /* 5903 */;
+import KeyIcon from "KeyIcon" /* 7199 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8694 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -69,15 +69,81 @@ let closure_9 = async function _showAgeVerificationTestModal() {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { padding: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsAgeVerificationScreen.tsx");
 
-export default function DevToolsAgeVerificationScreen() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(10);
+  const tmp4 = closure_7();
+  const sum = tmp4.content.padding + useSafeAreaInsetsDefault().bottom;
+  if (cResult[0] !== sum) {
+    const obj2 = { paddingBottom: sum };
+    cResult[0] = sum;
+    cResult[1] = obj2;
+    let tmp6 = obj2;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === tmp4.content) {
+    if (cResult[3] === tmp6) {
+      let tmp7 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: hasOwnProperty(tmp(7199).KeyIcon, {}), trailing: hasOwnProperty(tmp(5829).TableRowArrow, {}) };
+      const tmp12 = hasOwnProperty(tmp(5822).TableRow, obj3);
+      cResult[5] = tmp12;
+      let tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { title: "Quick Actions", hasIcons: true, children: null };
+      const items = [tmp9, ];
+      const obj5 = {
+        label: "Launch Age Verification Modal",
+        onPress() {
+              const obj = AgeVerificationActionCreatorsDefault;
+              return obj.showAgeVerificationGetStartedModal({ entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.DEV_TOOLS_QUICK_ACTIONS });
+            },
+        icon: hasOwnProperty(tmp(7199).KeyIcon, {}),
+        trailing: hasOwnProperty(tmp(5829).TableRowArrow, {})
+      };
+      items[1] = hasOwnProperty(tmp(5822).TableRow, obj5);
+      obj4.children = items;
+      const tmp16 = timestampProducer(tmp(5903).TableRowGroup, obj4);
+      cResult[6] = tmp16;
+      let tmp13 = tmp16;
+    } else {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] === tmp4.container) {
+      if (cResult[8] === tmp7) {
+        let tmp17 = cResult[9];
+      }
+      return tmp17;
+    }
+    const obj6 = { style: tmp4.container, contentContainerStyle: tmp7, children: tmp13 };
+    const tmp20 = hasOwnProperty(ScrollView, obj6);
+    cResult[7] = tmp4.container;
+    cResult[8] = tmp7;
+    cResult[9] = tmp20;
+    tmp17 = tmp20;
+  }
+  const items1 = [tmp4.content, tmp6];
+  cResult[2] = tmp4.content;
+  cResult[3] = tmp6;
+  cResult[4] = items1;
+  tmp7 = items1;
+}) : (() => {
   const tmp = closure_7();
   let obj = { style: tmp.container, contentContainerStyle: null, children: null };
   const items = [tmp.content, { paddingBottom: tmp.content.padding + useSafeAreaInsetsDefault().bottom }];
@@ -98,4 +164,4 @@ export default function DevToolsAgeVerificationScreen() {
   obj3.children = items1;
   obj.children = timestampProducer(TableRowGroup.TableRowGroup, obj3);
   return hasOwnProperty(ScrollView, obj);
-};
+});

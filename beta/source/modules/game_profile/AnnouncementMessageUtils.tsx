@@ -1,13 +1,13 @@
-// Module ID: 9032
-// Function ID: 9033
+// Module ID: 9030
+// Function ID: 9031
 // Name: AnnouncementMessageUtils
-// Dependencies: [4406, 1978, 4986, 4906, 9033, 4978, 9034, 1115, 1366, 2]
+// Dependencies: [4410, 1982, 4988, 4908, 9031, 4980, 9032, 1119, 1370, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9032 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import MessageRecord from "MessageRecord" /* 4406 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9034 */;
+// Module 9030 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1370 */;
+import MessageRecord from "MessageRecord" /* 4410 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9032 */;
 import size from "module_2" /* 2 */;
 
 const isMessageComponentsV2 = MessageRecord.isMessageComponentsV2;
@@ -226,24 +226,24 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   let result = useFormattedExpirationLabel.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1115).intl;
-    result = intl.string(tmp(1115).t["e+J3JZ"]);
+    const intl = tmp(1119).intl;
+    result = intl.string(tmp(1119).t["e+J3JZ"]);
   }
   return result;
 };
-export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, arg2) {
+export const getPosterUrl = function getPosterUrl(proxyUrl, c12, c11) {
   const str = URLUtilsDefault.toURLSafe(proxyUrl);
   let str1 = null;
   if (null != str) {
     const searchParams = str.searchParams;
     searchParams.append("format", "webp");
-    if (null != arg1) {
+    if (null != c12) {
       const searchParams2 = str.searchParams;
-      searchParams2.append("width", arg1.toString());
+      searchParams2.append("width", c12.toString());
     }
-    if (null != arg2) {
+    if (null != c11) {
       const searchParams3 = str.searchParams;
-      searchParams3.append("height", arg2.toString());
+      searchParams3.append("height", c11.toString());
     }
     str1 = str.toString();
   }

@@ -1,18 +1,34 @@
-// Module ID: 16174
-// Function ID: 16175
+// Module ID: 16163
+// Function ID: 16164
 // Name: useSecureFramesVerifiedUsers
-// Dependencies: [9954, 504, 2]
-// Exports: useSecureFramesVerifiedUserIds
+// Dependencies: [9932, 558, 568, 504, 2]
 
-// Module 16174 (useSecureFramesVerifiedUsers)
+// Module 16163 (useSecureFramesVerifiedUsers)
 import initialize from "initialize" /* 504 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9954 */;
+import c from "c" /* 568 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9932 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesVerifiedUsers.tsx");
 
-export const useSecureFramesVerifiedUserIds = function useSecureFramesVerifiedUserIds() {
+export const useSecureFramesVerifiedUserIds = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [VerifiedKeyStore];
+    const fn = function o() {
+      return userIds.getUserIds();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStoresArray(tmp4, tmp5);
+}) : (() => {
   const items = [VerifiedKeyStore];
   return initialize.useStateFromStoresArray(items, () => userIds.getUserIds());
-};
+});

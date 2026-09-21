@@ -1,11 +1,11 @@
-// Module ID: 11869
-// Function ID: 11870
+// Module ID: 11740
+// Function ID: 11741
 // Name: GuildAutomodMessageActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 // Exports: removeAutomodMessageNotice
 
-// Module 11869 (GuildAutomodMessageActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11740 (GuildAutomodMessageActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodMessageActionCreators.tsx");

@@ -1,40 +1,26 @@
 // Module ID: 7266
 // Function ID: 7267
-// Dependencies: [19, 17, 21, 5116]
+// Dependencies: []
+// Exports: getInvertedMultiplier
 
 // Module 7266
-import noop from "module_19" /* 19 */;
 
-const View = fn(17).View;
-const jsx = fn(21).jsx;
-try {
-  let closure_0 = fn(5116);
-  exports.MaybeScreenContainer = (enabled) => {
-    const merged = Object.assign(enabled, Object.assign({ enabled: 0 }));
-    if (null != closure_0) {
-      const obj2 = { enabled: enabled.enabled };
-      const merged1 = Object.assign(merged);
-      let tmp8 = <tmp2.ScreenContainer enabled={arg0.enabled} />;
-    } else {
-      const obj = {};
-      const merged2 = Object.assign(merged);
-      tmp8 = <View />;
+export function getInvertedMultiplier(gestureDirection, arg1) {
+  if ("vertical" === gestureDirection) {
+    return 1;
+  } else if ("vertical-inverted" === gestureDirection) {
+    return -1;
+  } else if ("horizontal" === gestureDirection) {
+    let num2 = 1;
+    if (arg1) {
+      num2 = -1;
     }
-    return tmp8;
-  };
-  exports.MaybeScreen = (arg0) => {
-    ({ enabled, active } = arg0);
-    const merged = Object.assign(arg0, Object.assign({ enabled: 0, active: 0 }));
-    if (null != closure_0) {
-      const obj2 = { enabled, activityState: active };
-      const merged1 = Object.assign(merged);
-      let tmp8 = <tmp2.Screen enabled={enabled} activityState={active} />;
-    } else {
-      const obj = {};
-      const merged2 = Object.assign(merged);
-      tmp8 = <View />;
+    return num2;
+  } else if ("horizontal-inverted" === gestureDirection) {
+    let num = -1;
+    if (arg1) {
+      num = 1;
     }
-    return tmp8;
-  };
-} catch (err) {
+    return num;
+  }
 }

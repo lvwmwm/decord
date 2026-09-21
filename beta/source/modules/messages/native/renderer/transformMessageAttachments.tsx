@@ -1,18 +1,18 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 13487
+// Function ID: 13488
 // Name: transformMessageAttachments
-// Dependencies: [8191, 1074, 1385, 11541, 4906, 8377, 1364, 8376, 1115, 8396, 8537, 5351, 8394, 2]
+// Dependencies: [8196, 1078, 1389, 10563, 4908, 8382, 1368, 8381, 1119, 8401, 8542, 5353, 8399, 2]
 // Exports: default
 
-// Module 13484 (transformMessageAttachments)
-import Constants from "Constants" /* 1074 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4906 */;
-import noConflictDefault from "noConflict" /* 5351 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8191 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8377 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8537 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11541 */;
+// Module 13487 (transformMessageAttachments)
+import Constants from "Constants" /* 1078 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4908 */;
+import noConflictDefault from "noConflict" /* 5353 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8196 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8382 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8542 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10563 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -70,7 +70,7 @@ export default function transformMessageAttachments(arg0) {
             height2 = size2.height;
           }
         }
-        tmpResult7 = tmp(1364);
+        tmpResult7 = tmp(1368);
         let num4 = 0;
         if (closure_1_1) {
           num4 = 0;
@@ -81,8 +81,8 @@ export default function transformMessageAttachments(arg0) {
             }
           }
         }
-        const result1 = tmp(8376).sanitizeMediaDimension(num4);
-        const tmpResult8 = tmp(8376);
+        const result1 = tmp(8381).sanitizeMediaDimension(num4);
+        const tmpResult8 = tmp(8381);
         let num5 = 0;
         if (closure_1_1) {
           num5 = 0;
@@ -93,16 +93,16 @@ export default function transformMessageAttachments(arg0) {
             }
           }
         }
-        const result2 = tmp(8376).sanitizeMediaDimension(num5);
-        const tmpResult9 = tmp(8376);
+        const result2 = tmp(8381).sanitizeMediaDimension(num5);
+        const tmpResult9 = tmp(8381);
         if (flags == null) {
           flags = 0;
         }
         let tmp28;
         if (tmpResult10.hasFlag(flags, MessageAttachmentFlags.IS_CLIP)) {
           const obj7 = { attachmentTagText: null, attachmentTagIconType: "clip", attachmentTagBackgroundColor: null, attachmentTagTextColor: null };
-          const intl = tmp(1115).intl;
-          obj7.attachmentTagText = intl.string(tmp(1115).t.gESDiU);
+          const intl = tmp(1119).intl;
+          obj7.attachmentTagText = intl.string(tmp(1119).t.gESDiU);
           ({ clipTagBackgroundColor: obj11.attachmentTagBackgroundColor, clipTagTextColor: obj11.attachmentTagTextColor } = closure_1_9);
           tmp28 = obj7;
         }
@@ -122,36 +122,36 @@ export default function transformMessageAttachments(arg0) {
         const size1 = { url: localUri, isSuspiciousDownload: null, videoUrl: null, filename: null, size: null, description: null, alt: null, altTextHint: null, showDescription: null, durationSecs: null, waveform: null, width: null, height: null, hint: null, role: null, attachmentType: null, id: null, isAnimated: null, uploaderId: null, uploaderItemId: null, backgroundColor: null, placeholder: null, placeholderVersion: null, mediaViewerBufferForPlaybackMs: 1000, mediaViewerBufferForPlaybackAfterRebufferMs: 1000, mediaViewerMinBufferMs: 20000, mediaViewerMaxBufferMs: 20000, mediaViewerEnableDecoderFallback: false, mediaViewerEnableAsyncBufferQueueing: true, mediaViewerHttpEngine: null, srcIsAnimated: null, inlinePlaybackDisabled: null };
         let tmp30 = null != localUri;
         if (tmp30) {
-          tmp30 = null != tmp(8396).isSuspiciousDownload(localUri);
-          const tmpResult11 = tmp(8396);
+          tmp30 = null != tmp(8401).isSuspiciousDownload(localUri);
+          const tmpResult11 = tmp(8401);
         }
         size1.isSuspiciousDownload = tmp30;
         size1.videoUrl = tmp16;
         size1.filename = getDisplayFilenameDefault(attachment);
-        tmpResult10 = tmp(1385);
+        tmpResult10 = tmp(1389);
         size1.size = noConflictDefault.filesize(size);
         size1.description = description;
-        const intl2 = tmp(1115).intl;
-        size1.alt = intl2.string(tmp(1115).t.jCV1Tz).toUpperCase();
-        const intl3 = tmp(1115).intl;
-        size1.altTextHint = intl3.string(tmp(1115).t.fSiQ3A);
+        const intl2 = tmp(1119).intl;
+        size1.alt = intl2.string(tmp(1119).t.jCV1Tz).toUpperCase();
+        const intl3 = tmp(1119).intl;
+        size1.altTextHint = intl3.string(tmp(1119).t.fSiQ3A);
         size1.showDescription = showDescription;
         size1.durationSecs = duration_secs;
         size1.waveform = waveform;
         size1.width = result1;
         size1.height = result2;
-        const intl4 = tmp(1115).intl;
+        const intl4 = tmp(1119).intl;
         const string = intl4.string;
-        const t = tmp(1115).t;
+        const t = tmp(1119).t;
         if (isVideoFileResult) {
           let stringResult = string(t["BEWw/7"]);
         } else {
           stringResult = string(t.IPzNKE);
         }
         size1.hint = stringResult;
-        const intl5 = tmp(1115).intl;
+        const intl5 = tmp(1119).intl;
         const string2 = intl5.string;
-        const t2 = tmp(1115).t;
+        const t2 = tmp(1119).t;
         if (isVideoFileResult) {
           let string2Result = string2(t2["/SCpvi"]);
         } else {
@@ -184,9 +184,9 @@ export default function transformMessageAttachments(arg0) {
         size1.mediaViewerHttpEngine = str4;
         size1.srcIsAnimated = tmp12;
         size1.inlinePlaybackDisabled = isWebPlayerVideoFileResult;
-        const str5 = intl2.string(tmp(1115).t.jCV1Tz);
+        const str5 = intl2.string(tmp(1119).t.jCV1Tz);
         const obj8 = { attachment, shouldObscureSpoiler, enabledContentHarmTypeFlags, shouldAgeVerify };
-        const merged = Object.assign(tmp(8394).getAttachmentObscurityProps(obj8));
+        const merged = Object.assign(tmp(8399).getAttachmentObscurityProps(obj8));
         const merged1 = Object.assign(tmp28);
         return size1;
       }

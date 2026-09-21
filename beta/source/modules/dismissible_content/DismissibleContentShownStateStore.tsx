@@ -1,17 +1,18 @@
-// Module ID: 2033
-// Function ID: 2034
+// Module ID: 2037
+// Function ID: 2038
 // Name: DismissibleContentShownStateStore
-// Dependencies: [2034, 2035, 1074, 1243, 2032, 2036, 1248, 504, 2037, 573, 2]
-// Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
+// Dependencies: [2038, 2039, 1078, 1247, 2036, 2040, 1252, 558, 568, 504, 2041, 577, 2]
+// Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown
 
-// Module 2033 (DismissibleContentShownStateStore)
+// Module 2037 (DismissibleContentShownStateStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2032 */;
-import isActionRequiredDefault from "isActionRequired" /* 2037 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2034 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+import c from "c" /* 568 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2036 */;
+import isActionRequiredDefault from "isActionRequired" /* 2041 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2038 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
 
 const require = globalThis.__r;
 
@@ -166,8 +167,8 @@ function withUpdateWinner(candidates, arg1) {
     obj8.arbitration = obj10;
   }
 }
-const NOOP = fn(1074).NOOP;
-const identity = fn(1243);
+const NOOP = fn(1078).NOOP;
+const identity = fn(1247);
 let closure_6 = identity.createWithEqualityFn(function initState() {
   const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
   const map = new Map();
@@ -177,7 +178,7 @@ let closure_6 = identity.createWithEqualityFn(function initState() {
   return obj;
 });
 let closure_7 = false;
-const batchInvocationManager = new fn(2036).BatchInvocationManager((arg0) => {
+const batchInvocationManager = new fn(2040).BatchInvocationManager((arg0) => {
   const resolved = Promise.resolve(arg0);
   return resolved.then((result) => {
     closure_0 = result;
@@ -262,6 +263,52 @@ const batchInvocationManager = new fn(2036).BatchInvocationManager((arg0) => {
     }
   });
 }, { delay: 250, maxConcurrentInvocations: 1 });
+fn(558);
+let ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  closure_0 = arg0;
+  const cResult = c.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function n(currentlyShown) {
+      currentlyShown = currentlyShown.currentlyShown;
+      return currentlyShown.has(closure_0);
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_6(tmp2);
+}) : ((arg0) => {
+  closure_0 = arg0;
+  return closure_6((currentlyShown) => {
+    currentlyShown = currentlyShown.currentlyShown;
+    return currentlyShown.has(closure_0);
+  });
+});
+function isStateInCooldown(shownFatigableCandidate) {
+  new Date();
+  let tmp3 = null == shownFatigableCandidate.shownFatigableCandidate;
+  if (tmp3) {
+    tmp3 = tmp2 - shownFatigableCandidate.lastWinnerTime < 3600000;
+  }
+  return tmp3;
+}
+function reset() {
+  ReactBatchUpdates.batchUpdates(() => {
+    state.setState(() => {
+      const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
+      const map = new Map();
+      obj.currentlyShown = new Set();
+      const set = new Set();
+      obj.currentlyShownGroup = new Set();
+      obj.postConnectionOpen = true;
+      return obj;
+    });
+  });
+  batchInvocationManager.reset();
+}
 const Store = initializeDefault.Store;
 class DismissibleContentShownStateStore extends Store {
 }
@@ -306,14 +353,14 @@ const dismissibleContentShownStateStore = new DismissibleContentShownStateStore(
     batchInvocationManager.reset();
   }
 });
+ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
+const result1 = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentShownStateStore.tsx");
 
-export default function useDismissibleContentShownStateStore(arg0, arg1) {
-  return closure_6(arg0, arg1);
-};
+export default (arg0, arg1) => closure_6(arg0, arg1);
 export const isInCooldown = function isInCooldown() {
-  const state = closure_6.getState();
+  state = closure_6.getState();
   new Date();
   let tmp4 = null == state.shownFatigableCandidate;
   if (tmp4) {
@@ -321,14 +368,7 @@ export const isInCooldown = function isInCooldown() {
   }
   return tmp4;
 };
-export const isStateInCooldown = function isStateInCooldown(shownFatigableCandidate) {
-  new Date();
-  let tmp3 = null == shownFatigableCandidate.shownFatigableCandidate;
-  if (tmp3) {
-    tmp3 = tmp2 - shownFatigableCandidate.lastWinnerTime < 3600000;
-  }
-  return tmp3;
-};
+export { isStateInCooldown };
 export const addCandidateContent = function addCandidateContent(content) {
   _require = content;
   const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
@@ -487,14 +527,26 @@ export const isContentShown = function isContentShown(DOUBLE_TAP_TO_REACT_EXPAND
   const currentlyShown = closure_6.getState().currentlyShown;
   return currentlyShown.has(DOUBLE_TAP_TO_REACT_EXPANDED_UPSELL);
 };
-export const useIsContentShown = function useIsContentShown(USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS) {
-  closure_0 = USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS;
-  return closure_6((currentlyShown) => {
-    currentlyShown = currentlyShown.currentlyShown;
-    return currentlyShown.has(closure_0);
-  });
-};
-export const useIsAnyContentShown = function useIsAnyContentShown(arg0) {
+export const useIsContentShown = tmp3;
+export const useIsAnyContentShown = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  closure_0 = arg0;
+  const cResult = c.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function n(arg0) {
+      let currentlyShown = arg0;
+      return currentlyShown.some((item) => {
+        currentlyShown = currentlyShown.currentlyShown;
+        return currentlyShown.has(item);
+      });
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_6(tmp2);
+}) : ((arg0) => {
   closure_0 = arg0;
   return closure_6((arg0) => {
     let currentlyShown = arg0;
@@ -503,7 +555,7 @@ export const useIsAnyContentShown = function useIsAnyContentShown(arg0) {
       return currentlyShown.has(item);
     });
   });
-};
+});
 export const isAnyContentShown = function isAnyContentShown(arr) {
   const currentlyShown = closure_6.getState().currentlyShown;
   return arr.find((item) => currentlyShown.has(item));
@@ -519,20 +571,7 @@ export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
   ];
   return items1;
 };
-export const reset = function reset() {
-  ReactBatchUpdates.batchUpdates(() => {
-    state.setState(() => {
-      const obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: null, currentlyShownGroup: null, lastWinnerTime: 0, postConnectionOpen: false };
-      const map = new Map();
-      obj.currentlyShown = new Set();
-      const set = new Set();
-      obj.currentlyShownGroup = new Set();
-      obj.postConnectionOpen = true;
-      return obj;
-    });
-  });
-  batchInvocationManager.reset();
-};
+export { reset };
 export const resetFatigueCooldown = function resetFatigueCooldown() {
   ReactBatchUpdates.batchUpdates(() => {
     state.setState((candidates) => {

@@ -1,21 +1,21 @@
-// Module ID: 7958
-// Function ID: 7959
+// Module ID: 7963
+// Function ID: 7964
 // Name: utils/QuestUtils
-// Dependencies: [32, 4773, 2063, 4395, 4775, 7959, 5661, 7960, 7961, 7962, 7963, 7964, 2]
+// Dependencies: [32, 4775, 2067, 4399, 4777, 7964, 5663, 7965, 7966, 7967, 7968, 7969, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7958 (utils/QuestUtils)
-import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7961 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7962 */;
-import QuestType2 from "QuestType" /* 7963 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
+// Module 7963 (utils/QuestUtils)
+import QuestTaskUtils from "QuestTaskUtils" /* 7965 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7966 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7967 */;
+import QuestType2 from "QuestType" /* 7968 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 4773 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
-import QuestUtmStore from "QuestUtmStore" /* 7959 */;
+import GameConsoleStore from "GameConsoleStore" /* 4775 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import QuestUtmStore from "QuestUtmStore" /* 7964 */;
 
 require = fn;
 function isSponsoredPlayQuest(quest) {
@@ -33,14 +33,14 @@ function isSponsoredPlayQuest(quest) {
 function hasVariant(nextResult, NON_GAMING_PLAY_QUEST) {
   return new Set(nextResult.config.features).has(NON_GAMING_PLAY_QUEST);
 }
-const QuestConstants = fn(5661);
+const QuestConstants = fn(5663);
 ({ DISCORD_APPLICATION_ID: closure_8, QuestVariants: closure_9, RewardFilterTypes: c10 } = QuestConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");
 
 export { isSponsoredPlayQuest };
 export const isPlayAnyActivityQuest = function isPlayAnyActivityQuest(quest) {
-  return QuestTaskUtils.getPlayActivityApplicationId(quest) === React6;
+  return QuestTaskUtils.getPlayActivityApplicationId(quest) === closure_1_8;
 };
 export { hasVariant };
 export const canLaunchActivity = function canLaunchActivity(quest) {
@@ -125,7 +125,7 @@ export const shouldShowBountiesGivenFilters = function shouldShowBountiesGivenFi
 };
 export const setQuestHomeUtmContext = function setQuestHomeUtmContext(arg0) {
   ({ questId, fromContent, utmSource, utmMedium } = arg0);
-  const state = QuestUtmStore.getState();
+  state = QuestUtmStore.getState();
   const obj = { utmSourceCurrent: utmSource, utmMediumCurrent: utmMedium, utmCampaignCurrent: questId, utmContentCurrent: AnalyticsTypes.getQuestContentName(fromContent) };
   state.setUtmCurrentContext(obj);
 };

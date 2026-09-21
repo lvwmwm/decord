@@ -1,9 +1,9 @@
 // Module ID: 9466
 // Function ID: 9467
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 9466
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 247.5, height: 194, scales: [2, 3], hash: "ea30e86096b674f657e18d24dc0df08d", name: "img_profile_upsell", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 261.5, height: 152, scales: [2, 3], hash: "2e477535efb98674ba22b5552594b6ab", name: "img_nitro_longer_message_upsell_dark", type: "png" });

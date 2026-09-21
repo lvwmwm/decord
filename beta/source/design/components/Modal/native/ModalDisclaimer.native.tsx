@@ -1,23 +1,50 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14459
+// Function ID: 14460
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 4756, 4752, 2]
-// Exports: ModalDisclaimer
+// Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 2]
 
-// Module 14456 (ModalDisclaimer)
-import Text_Text from "Text/Text" /* 4752 */;
+// Module 14459 (ModalDisclaimer)
+import c from "c" /* 568 */;
+import Text_Text from "Text/Text" /* 4754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_4 = createStyles.createStyles({ container: { flexDirection: "column", alignItems: "center" }, disclaimer: { marginBottom: 12 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalDisclaimer.native.tsx");
 
-export const ModalDisclaimer = function ModalDisclaimer(children) {
+export const ModalDisclaimer = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const cResult = c.c(6);
+  children = children.children;
+  const tmp4 = closure_4();
+  if (cResult[0] === children) {
+    if (cResult[1] === tmp4.disclaimer) {
+      let tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp4.container) {
+      if (cResult[4] === tmp5) {
+        let tmp7 = cResult[5];
+      }
+      return tmp7;
+    }
+    const obj2 = { style: tmp4.container, children: tmp5 };
+    const tmp10 = <View style={tmp4.container}>{tmp5}</View>;
+    cResult[3] = tmp4.container;
+    cResult[4] = tmp5;
+    cResult[5] = tmp10;
+    tmp7 = tmp10;
+  }
+  const tmp6 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp4.disclaimer, children });
+  cResult[0] = children;
+  cResult[1] = tmp4.disclaimer;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((children) => {
   const tmp = closure_4();
   const obj = { style: tmp.container, children: jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.disclaimer, children: children.children }) };
   return <View style={tmp.container}>{jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.disclaimer, children: arg0.children })}</View>;
-};
+});

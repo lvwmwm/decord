@@ -1,22 +1,48 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15370
+// Function ID: 15371
 // Name: QuestDisclosureModal
-// Dependencies: [21, 7619, 7237, 15380, 1115, 5841, 15382, 7245, 2]
-// Exports: default
+// Dependencies: [21, 558, 568, 15369, 7621, 7238, 1119, 5839, 15371, 7246, 2]
 
-// Module 15381 (QuestDisclosureModal)
+// Module 15370 (QuestDisclosureModal)
 import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
-import _modDef7237 from "module_7237" /* 7237 */;
-import Navigator from "Navigator" /* 7245 */;
-import HeaderActionButton from "HeaderActionButton" /* 7619 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15380 */;
-import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 15382 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import _modDef7238 from "module_7238" /* 7238 */;
+import Navigator from "Navigator" /* 7246 */;
+import HeaderActionButton from "HeaderActionButton" /* 7621 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15369 */;
+import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 15371 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-function CloseButton() {
+const jsx = jsxProd.jsx;
+const constants = { DISCLOSURE: "disclosure" };
+let ReactCompilerGating = ReactCompilerGating_mod;
+const headerLeft = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      return QuestDisclosureModalActionCreatorsDefault.hideModal();
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { source: _modDef7238, onPress: first, accessibilityLabel: null };
+    const intl = tmp(1119).intl;
+    obj2.accessibilityLabel = intl.string(tmp(1119).t.cpT0Cq);
+    const tmp8 = jsx(tmp(7621).HeaderActionButton, { source: _modDef7238, onPress: first, accessibilityLabel: null });
+    cResult[1] = tmp8;
+    let tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
   const obj = {
-    source: _modDef7237,
+    source: _modDef7238,
     onPress() {
       return QuestDisclosureModalActionCreatorsDefault.hideModal();
     },
@@ -25,34 +51,92 @@ function CloseButton() {
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t.cpT0Cq);
   return jsx(HeaderActionButton.HeaderActionButton, {
-    source: _modDef7237,
+    source: _modDef7238,
     onPress() {
       return QuestDisclosureModalActionCreatorsDefault.hideModal();
     },
     accessibilityLabel: null
   });
-}
-const jsx = jsxProd.jsx;
-const constants = { DISCLOSURE: "disclosure" };
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModal.tsx");
 
-export default function QuestDisclosureModal(arg0) {
-  ({ adCreativeType: require, isTargetedDisclosure: importDefault, gamePublisher: dependencyMap, gameTitle: jsx, cosponsorName: closure_4, isVideoQuest: CloseButton } = arg0);
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((adCreativeType) => {
+  const cResult = adCreativeType(gamePublisher[2]).c(13);
+  adCreativeType = adCreativeType.adCreativeType;
+  const isTargetedDisclosure = adCreativeType.isTargetedDisclosure;
+  gamePublisher = adCreativeType.gamePublisher;
+  const gameTitle = adCreativeType.gameTitle;
+  const cosponsorName = adCreativeType.cosponsorName;
+  const isVideoQuest = adCreativeType.isVideoQuest;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      return isTargetedDisclosure(gamePublisher[3]).hideModal();
+    };
+    cResult[0] = fn;
+    let onClose = fn;
+  } else {
+    onClose = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return null;
+      }
+    }
+    cResult[1] = C;
+  } else {
+    class C {
+      constructor() {
+        return null;
+      }
+    }
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return null;
+      }
+    }
+    cResult[2] = tmp5;
+  } else {
+    class C {
+      constructor() {
+        return null;
+      }
+    }
+  }
+  if (cResult[3] === adCreativeType) {
+    class C {
+      constructor() {
+        return null;
+      }
+    }
+  }
+  cResult[3] = adCreativeType;
+  cResult[4] = cosponsorName;
+  cResult[5] = gamePublisher;
+  cResult[6] = gameTitle;
+  cResult[7] = isTargetedDisclosure;
+  cResult[8] = isVideoQuest;
+  cResult[9] = { [closure_4.DISCLOSURE]: obj3 };
+}) : ((arg0) => {
+  ({ adCreativeType: require, isTargetedDisclosure: importDefault, gamePublisher: dependencyMap, gameTitle: jsx, cosponsorName: closure_4, isVideoQuest: closure_5 } = arg0);
   function onClose() {
     return isTargetedDisclosure(gamePublisher[3]).hideModal();
   }
   const obj2 = {
     screens: {
       [closure_4.DISCLOSURE]: {
-        headerLeft: CloseButton,
+        headerLeft,
         headerRight() {
           return null;
         },
         headerTitle() {
           const obj = { title: null };
-          const intl = adCreativeType(gamePublisher[4]).intl;
-          obj.title = intl.string(adCreativeType(gamePublisher[4]).t.GcsZKJ);
-          return gameTitle(adCreativeType(gamePublisher[5]).NavigatorHeader, obj);
+          const intl = adCreativeType(gamePublisher[6]).intl;
+          obj.title = intl.string(adCreativeType(gamePublisher[6]).t.GcsZKJ);
+          return gameTitle(adCreativeType(gamePublisher[7]).NavigatorHeader, obj);
         },
         render() {
           return jsx(QuestDisclosureModalInnerDefault, { adCreativeType, isTargetedDisclosure, gamePublisher, gameTitle, onClose, cosponsorName, isVideoQuest });
@@ -67,15 +151,15 @@ export default function QuestDisclosureModal(arg0) {
   return jsx(Navigator.Navigator, {
     screens: {
       [closure_4.DISCLOSURE]: {
-        headerLeft: CloseButton,
+        headerLeft,
         headerRight() {
           return null;
         },
         headerTitle() {
           const obj = { title: null };
-          const intl = adCreativeType(gamePublisher[4]).intl;
-          obj.title = intl.string(adCreativeType(gamePublisher[4]).t.GcsZKJ);
-          return gameTitle(adCreativeType(gamePublisher[5]).NavigatorHeader, obj);
+          const intl = adCreativeType(gamePublisher[6]).intl;
+          obj.title = intl.string(adCreativeType(gamePublisher[6]).t.GcsZKJ);
+          return gameTitle(adCreativeType(gamePublisher[7]).NavigatorHeader, obj);
         },
         render() {
           return jsx(QuestDisclosureModalInnerDefault, { adCreativeType, isTargetedDisclosure, gamePublisher, gameTitle, onClose, cosponsorName, isVideoQuest });
@@ -85,4 +169,4 @@ export default function QuestDisclosureModal(arg0) {
     initialRouteName: constants.DISCLOSURE,
     headerBackTitle: null
   });
-};
+});

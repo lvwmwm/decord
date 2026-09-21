@@ -1,18 +1,18 @@
-// Module ID: 7625
-// Function ID: 7626
+// Module ID: 7627
+// Function ID: 7628
 // Name: UserSettingsAccountStore
-// Dependencies: [1372, 1074, 504, 573, 2]
+// Dependencies: [1376, 1078, 504, 577, 2]
 
-// Module 7625 (UserSettingsAccountStore)
+// Module 7627 (UserSettingsAccountStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserStore from "UserStore" /* 1376 */;
 
 function handleFormClose() {
   OPEN = FormStates.CLOSED;
   closure_3 = {};
 }
-const FormStates = fn(1074).FormStates;
+const FormStates = fn(1078).FormStates;
 let OPEN = FormStates.CLOSED;
 let closure_3 = {};
 let obj = null;

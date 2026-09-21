@@ -1,40 +1,168 @@
-// Module ID: 12703
-// Function ID: 12704
+// Module ID: 12598
+// Function ID: 12599
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1372, 21, 1484, 504, 12704, 12696, 4454, 1115, 5814, 12702, 4767, 2]
+// Dependencies: [19, 1376, 21, 558, 568, 1488, 504, 12599, 4458, 1119, 5812, 12591, 4769, 12597, 2]
 
-// Module 12703 (ChatInputGuardSpamMessageRequest)
+// Module 12598 (ChatInputGuardSpamMessageRequest)
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardSpamMessageRequest.tsx");
 
-export default noop.memo(function ChatInputGuardSpamMessageRequest(channel) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = channel(longestChannelMessageBeforeReply[4]).c(28);
+  channel = channel.channel;
+  const obj = channel(longestChannelMessageBeforeReply[4]);
+  const navigation = channel(longestChannelMessageBeforeReply[5]).useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [markAsNotSpam];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function s() {
+      return UserStore.getUser(channel.getRecipientId());
+    };
+    cResult[1] = channel;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  let obj2 = channel(longestChannelMessageBeforeReply[5]);
+  const stateFromStores = channel(longestChannelMessageBeforeReply[6]).useStateFromStores(first, tmp7);
+  if (cResult[3] !== channel) {
+    const recipientId = channel.getRecipientId();
+    cResult[3] = channel;
+    cResult[4] = recipientId;
+    let tmp9 = recipientId;
+  } else {
+    tmp9 = cResult[4];
+  }
+  const tmpResult = channel(longestChannelMessageBeforeReply[6]);
+  longestChannelMessageBeforeReply = channel(longestChannelMessageBeforeReply[7]).useLongestChannelMessageBeforeReply(channel.id, tmp9);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        obj = closure_1(closure_2[8]);
+        obj1 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
+        intl = channel(closure_2[9]).intl;
+        obj1.content = intl.string(channel(closure_2[9]).t["EDYbS+"]);
+        obj1.icon = closure_1(closure_2[10]);
+        openResult = obj.open(obj1);
+        return;
+      }
+    }
+    cResult[5] = R;
+    const tmp12 = R;
+  } else {
+    class R {
+      constructor() {
+        obj = closure_1(closure_2[8]);
+        obj1 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
+        intl = channel(closure_2[9]).intl;
+        obj1.content = intl.string(channel(closure_2[9]).t["EDYbS+"]);
+        obj1.icon = closure_1(closure_2[10]);
+        openResult = obj.open(obj1);
+        return;
+      }
+    }
+  }
+  if (cResult[6] !== navigation) {
+    class E {
+      constructor() {
+        arr = closure_1.pop();
+        return;
+      }
+    }
+    cResult[6] = navigation;
+    cResult[7] = E;
+  } else {
+    class E {
+      constructor() {
+        arr = closure_1.pop();
+        return;
+      }
+    }
+  }
+  if (cResult[8] === tmp13) {
+    class E {
+      constructor() {
+        arr = closure_1.pop();
+        return;
+      }
+    }
+    const messageRequestActions = tmp(tmp2[11]).useMessageRequestActions(obj3);
+    const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
+    ({ isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam } = messageRequestActions);
+    if (!isRejectLoading) {
+      class E {
+        constructor() {
+          arr = closure_1.pop();
+          return;
+        }
+      }
+    }
+    if (!tmp15) {
+      class E {
+        constructor() {
+          arr = closure_1.pop();
+          return;
+        }
+      }
+    }
+    if (cResult[11] === channel) {
+      class E {
+        constructor() {
+          arr = closure_1.pop();
+          return;
+        }
+      }
+    }
+    const fn2 = function v(stopPropagation) {
+      stopPropagation.stopPropagation();
+      markAsNotSpam(channel, longestChannelMessageBeforeReply, () => channel(longestChannelMessageBeforeReply[12]).transitionToChannel(id.id, { navigationReplace: true }));
+    };
+    cResult[11] = channel;
+    cResult[12] = markAsNotSpam;
+    cResult[13] = longestChannelMessageBeforeReply;
+    cResult[14] = fn2;
+    tmp15 = isRejectLoading;
+    const tmpResult4 = tmp(tmp2[11]);
+  }
+  obj3 = { user: stateFromStores, onError: tmp12, onRejectSuccess: tmp13 };
+  cResult[8] = tmp13;
+  cResult[9] = stateFromStores;
+  cResult[10] = obj3;
+}) : ((channel) => {
   channel = channel.channel;
   noop = undefined;
   c4 = undefined;
-  const navigation = channel(1484).useNavigation();
-  const obj = channel(1484);
+  const navigation = channel(1488).useNavigation();
+  const obj = channel(1488);
   const items = [c4];
   const stateFromStores = channel(504).useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
   let obj2 = channel(504);
-  dependencyMap = channel(12704).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
+  dependencyMap = channel(12599).useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = noop.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj3 = channel(12704);
-  const messageRequestActions = channel(12696).useMessageRequestActions({
+  const obj3 = channel(12599);
+  const messageRequestActions = channel(12591).useMessageRequestActions({
     user: stateFromStores,
     onError() {
       const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-      const intl = channel(1115).intl;
-      obj2.content = intl.string(channel(1115).t["EDYbS+"]);
-      obj2.icon = navigation(5814);
-      navigation(4454).open(obj2);
+      const intl = channel(1119).intl;
+      obj2.content = intl.string(channel(1119).t["EDYbS+"]);
+      obj2.icon = navigation(5812);
+      navigation(4458).open(obj2);
     },
     onRejectSuccess: callback
   });
@@ -47,25 +175,25 @@ export default noop.memo(function ChatInputGuardSpamMessageRequest(channel) {
     tmp7 = isOptimisticRejected;
   }
   const obj6 = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonPrimaryVariant: "destructive", buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(12696);
+  const obj4 = channel(12591);
   const obj5 = {
     user: stateFromStores,
     onError() {
       const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
-      const intl = channel(1115).intl;
-      obj2.content = intl.string(channel(1115).t["EDYbS+"]);
-      obj2.icon = navigation(5814);
-      navigation(4454).open(obj2);
+      const intl = channel(1119).intl;
+      obj2.content = intl.string(channel(1119).t["EDYbS+"]);
+      obj2.icon = navigation(5812);
+      navigation(4458).open(obj2);
     },
     onRejectSuccess: callback
   };
   const tmp8 = jsx;
-  let intl = tmp(1115).intl;
-  obj6.message = intl.string(channel(1115).t.fS08qB);
-  const intl2 = tmp(1115).intl;
-  obj6.subtext = intl2.string(channel(1115).t["8U5OXE"]);
-  const intl3 = tmp(1115).intl;
-  obj6.buttonPrimaryText = intl3.string(channel(1115).t.cpT0Cq);
+  let intl = tmp(1119).intl;
+  obj6.message = intl.string(channel(1119).t.fS08qB);
+  const intl2 = tmp(1119).intl;
+  obj6.subtext = intl2.string(channel(1119).t["8U5OXE"]);
+  const intl3 = tmp(1119).intl;
+  obj6.buttonPrimaryText = intl3.string(channel(1119).t.cpT0Cq);
   obj6.buttonPrimaryOnPress = function buttonPrimaryOnPress(stopPropagation) {
     stopPropagation.stopPropagation();
     _undefined(channel.id);
@@ -75,13 +203,13 @@ export default noop.memo(function ChatInputGuardSpamMessageRequest(channel) {
     isRejectLoading = isOptimisticRejected;
   }
   obj6.buttonPrimaryLoading = isRejectLoading;
-  const intl4 = tmp(1115).intl;
-  obj6.buttonSecondaryText = intl4.string(channel(1115).t.olZgw5);
+  const intl4 = tmp(1119).intl;
+  obj6.buttonSecondaryText = intl4.string(channel(1119).t.olZgw5);
   obj6.buttonSecondaryOnPress = function buttonSecondaryOnPress(stopPropagation) {
     stopPropagation.stopPropagation();
-    _undefined2(channel, closure_2, () => channel(closure_2[11]).transitionToChannel(id.id, { navigationReplace: true }));
+    _undefined2(channel, closure_2, () => channel(closure_2[12]).transitionToChannel(id.id, { navigationReplace: true }));
   };
   obj6.buttonSecondaryDisabled = tmp7;
   obj6.buttonSecondaryLoading = isUserProfileLoading;
-  return tmp8(navigation(12702), obj6);
-});
+  return tmp8(navigation(12597), obj6);
+}));

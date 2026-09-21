@@ -1,11 +1,13 @@
-// Module ID: 8502
-// Function ID: 8503
-// Dependencies: [1074, 4466, 2]
-// Exports: getIllustrationSource, useIllustrationSource
+// Module ID: 8507
+// Function ID: 8508
+// Dependencies: [1078, 558, 568, 4471, 2]
+// Exports: getIllustrationSource
 
-// Module 8502
-import Constants from "Constants" /* 1074 */;
-import native from "native" /* 4466 */;
+// Module 8507
+import c from "c" /* 568 */;
+import Constants from "Constants" /* 1078 */;
+import native from "native" /* 4471 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
@@ -34,6 +36,18 @@ export const getIllustrationSource = function getIllustrationSource(theme, light
   }
   return lightResult;
 };
-export const useIllustrationSource = function useIllustrationSource(fn) {
-  return fn(native.useThemeContext().theme);
-};
+export const useIllustrationSource = ReactCompilerGating.isReactCompilerEnabled() ? ((fn) => {
+  const cResult = c.c(3);
+  const theme = native.useThemeContext().theme;
+  if (cResult[0] === fn) {
+    if (cResult[1] === theme) {
+      let tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const tmp3 = fn(theme);
+  cResult[0] = fn;
+  cResult[1] = theme;
+  cResult[2] = tmp3;
+  tmp2 = tmp3;
+}) : ((fn) => fn(native.useThemeContext().theme));

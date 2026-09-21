@@ -1,29 +1,108 @@
-// Module ID: 16909
-// Function ID: 16910
+// Module ID: 16911
+// Function ID: 16912
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 16907, 21, 4457, 576, 16908, 12538, 4723, 7442, 7444, 1397, 5804, 2]
-// Exports: default
+// Dependencies: [19, 16909, 21, 558, 568, 4462, 580, 16910, 12432, 4725, 1401, 7445, 5802, 7449, 2]
 
-// Module 16909 (OnboardingHomeResourcesSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12538 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16908 */;
+// Module 16911 (OnboardingHomeResourcesSheet)
+import nativeDefault from "native" /* 580 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12432 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16910 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = fn(16907).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
+let closure_3 = fn(16909).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeResourcesSheet.tsx");
 
-export default function OnboardingHomeResourcesSheet(guildId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = guildId(568).c(11);
   guildId = guildId.guildId;
-  importDefault = guildId(4457).useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
-  let obj = guildId(4457);
+  let obj = guildId(568);
+  token = guildId(4462).useToken(token(580).modules.mobile.TABLE_ROW_ICON_SIZE);
+  const arr = token(16910)(guildId);
+  if (cResult[0] !== guildId) {
+    const fn = function l(channelId) {
+      const homeResourceChannel = GuildOnboardingHomeActionCreators.selectHomeResourceChannel(guildId, channelId);
+      ActionSheetActionCreatorsDefault.hideActionSheet(closure_3);
+    };
+    cResult[0] = guildId;
+    cResult[1] = fn;
+    let tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  dependencyMap = tmp5;
+  if (cResult[2] === tmp5) {
+    if (cResult[3] === arr) {
+      if (cResult[4] === token) {
+        if (cResult[9] !== cResult[5]) {
+          let obj3 = { children: null };
+          let obj4 = { hasIcons: true, children: tmp6 };
+          obj3.children = jsx(tmp(7445).ActionSheetRow.Group, { hasIcons: true, children: tmp6 });
+          const tmp12 = jsx(tmp(7449).ActionSheet, { children: null });
+          cResult[9] = tmp6;
+          cResult[10] = tmp12;
+          let tmp10 = tmp12;
+        } else {
+          tmp10 = cResult[10];
+        }
+        return tmp10;
+      }
+    }
+  }
+  if (cResult[6] === tmp5) {
+    if (cResult[7] === token) {
+      let tmp7 = cResult[8];
+    }
+    const mapped = arr.map(tmp7);
+    cResult[2] = tmp5;
+    cResult[3] = arr;
+    cResult[4] = token;
+    cResult[5] = mapped;
+  }
+  class I {
+    constructor(arg0) {
+      closure_0 = guildId;
+      tmp2 = closure_2;
+      tmp = closure_1;
+      obj = closure_1(closure_2[10]);
+      resourceChannelIconURL = obj.getResourceChannelIconURL(guildId);
+      tmp4 = closure_1_4;
+      obj1 = { label: guildId.title, icon: null, onPress: null, arrow: true };
+      tmp4Result = undefined;
+      if (null != resourceChannelIconURL) {
+        obj6 = { style: null, source: null };
+        size = { width: null, height: null };
+        tmp6 = closure_1;
+        size.width = closure_1;
+        size.height = closure_1;
+        obj6.style = size;
+        obj7 = { uri: null };
+        obj7.uri = resourceChannelIconURL;
+        obj6.source = obj7;
+        tmp4Result = tmp4(tmp(tmp2[12]), obj6);
+      }
+      obj1.icon = tmp4Result;
+      obj1.onPress = function onPress() {
+        return closure_2(label.channelId);
+      };
+      return tmp4(guildId(tmp2[11]).ActionSheetRow, obj1, guildId.channelId);
+    }
+  }
+  cResult[6] = tmp5;
+  cResult[7] = token;
+  cResult[8] = I;
+  tmp7 = I;
+}) : ((guildId) => {
+  guildId = guildId.guildId;
+  importDefault = guildId(4462).useToken(nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
+  let obj = guildId(4462);
   let obj2 = { children: null };
   const arr = useResourceChannelsDefault(guildId);
-  obj2.children = jsx(guildId(7444).ActionSheetRow.Group, {
+  obj2.children = jsx(guildId(7445).ActionSheetRow.Group, {
     hasIcons: true,
     children: useResourceChannelsDefault(guildId).map((label) => {
       const resourceChannelIconURL = height(dependencyMap[10]).getResourceChannelIconURL(label);
@@ -35,15 +114,15 @@ export default function OnboardingHomeResourcesSheet(guildId) {
         obj3.style = size;
         const obj4 = { uri: resourceChannelIconURL };
         obj3.source = obj4;
-        tmp4Result = tmp4(height(tmp2[11]), obj3);
+        tmp4Result = tmp4(height(tmp2[12]), obj3);
       }
       obj2.icon = tmp4Result;
       obj2.onPress = function onPress() {
         const homeResourceChannel = GuildOnboardingHomeActionCreators.selectHomeResourceChannel(guildId, label.channelId);
         ActionSheetActionCreatorsDefault.hideActionSheet(closure_3);
       };
-      return jsx(guildId(dependencyMap[9]).ActionSheetRow, { label: label.title, icon: null, onPress: null, arrow: true }, label.channelId);
+      return jsx(guildId(dependencyMap[11]).ActionSheetRow, { label: label.title, icon: null, onPress: null, arrow: true }, label.channelId);
     })
   });
-  return jsx(guildId(7442).ActionSheet, { children: null });
-};
+  return jsx(guildId(7449).ActionSheet, { children: null });
+});

@@ -1,15 +1,15 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9403
+// Function ID: 9404
 // Name: ApplicationFrecencyStore
-// Dependencies: [2040, 1220, 1349, 1084, 1978, 4793, 12, 504, 573, 2]
+// Dependencies: [2044, 1224, 1353, 1088, 1982, 4795, 12, 504, 577, 2]
 
-// Module 9405 (ApplicationFrecencyStore)
+// Module 9403 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4793 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import FrecencyDefault from "Frecency" /* 4795 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 function handleUserSettingsProtoStoreChange() {
   const applicationFrecency = UserSettingsProtoStore.frecencyWithoutFetchingLatest.applicationFrecency;
@@ -29,8 +29,8 @@ function handleUserSettingsProtoStoreChange() {
     return obj;
   }), global.pendingUsages);
 }
-const UserSettingsTypes = fn(1084).UserSettingsTypes;
-let items = [fn(1978).ApplicationCommandType.CHAT, fn(1978).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+const UserSettingsTypes = fn(1088).UserSettingsTypes;
+let items = [fn(1982).ApplicationCommandType.CHAT, fn(1982).ApplicationCommandType.PRIMARY_ENTRY_POINT];
 let global = { pendingUsages: [] };
 let obj = {
   computeBonus() {
@@ -42,7 +42,7 @@ let obj = {
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1349).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1353).FREQUENCY_ITEM_LIMIT
 };
 let closure_7 = new FrecencyDefault({
   computeBonus() {
@@ -54,7 +54,7 @@ let closure_7 = new FrecencyDefault({
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1349).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1353).FREQUENCY_ITEM_LIMIT
 });
 const PersistedStore = initializeDefault.PersistedStore;
 class ApplicationFrecencyStore extends PersistedStore {

@@ -1,10 +1,10 @@
-// Module ID: 4681
-// Function ID: 4682
+// Module ID: 4684
+// Function ID: 4685
 // Name: FileUploadPowerupHoldoutExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 4681 (FileUploadPowerupHoldoutExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 4684 (FileUploadPowerupHoldoutExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-03-file-upload-powerup-holdout", defaultConfig: { enabled: false }, variations: null };

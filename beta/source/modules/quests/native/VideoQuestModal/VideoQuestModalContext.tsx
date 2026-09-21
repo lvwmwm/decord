@@ -1,20 +1,24 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15382
+// Function ID: 15383
 // Name: VideoQuestModalContext
-// Dependencies: [19, 38, 2]
-// Exports: useVideoQuestModalContext
+// Dependencies: [19, 558, 38, 2]
 
-// Module 15393 (VideoQuestModalContext)
+// Module 15382 (VideoQuestModalContext)
 import _modDef38 from "module_38" /* 38 */;
 import noop from "module_19" /* 19 */;
 
 let context = noop.createContext({ quest: null, videoSessionId: "" });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalContext.tsx");
 
 export default context;
-export const useVideoQuestModalContext = function useVideoQuestModalContext() {
+export const useVideoQuestModalContext = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   context = noop.useContext(context);
   _modDef38(null != context, "useVideoQuestModalContext must be used within a VideoQuestModalProvider");
   return context;
-};
+}) : (() => {
+  context = noop.useContext(context);
+  _modDef38(null != context, "useVideoQuestModalContext must be used within a VideoQuestModalProvider");
+  return context;
+});

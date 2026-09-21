@@ -1,27 +1,89 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7389
+// Function ID: 7390
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 1177, 7387, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1181, 7390, 2]
 
-// Module 7386 (FormArrow)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import _modDef7387 from "module_7387" /* 7387 */;
+// Module 7389 (FormArrow)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import _modDef7390 from "module_7390" /* 7390 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { wrapper: { flexDirection: "row", alignItems: "center" }, icon: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 } };
 let closure_6 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
 
-export default function FormArrow(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(12);
+  ({ label, style } = arg0);
+  let wrapper = closure_6();
+  if (null != label) {
+    if (cResult[0] !== label) {
+      const obj2 = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
+      const tmp10 = React4(tmp(4754).Text, obj2);
+      cResult[0] = label;
+      cResult[1] = tmp10;
+      let tmp8 = tmp10;
+    } else {
+      tmp8 = cResult[1];
+    }
+    if (cResult[2] === style) {
+      if (cResult[3] === wrapper.icon) {
+        let tmp11 = cResult[4];
+      }
+      if (cResult[5] === wrapper.wrapper) {
+        if (cResult[6] === tmp8) {
+        }
+      }
+      const obj3 = { style: wrapper.wrapper, children: null };
+      const items = [tmp8, tmp11];
+      obj3.children = items;
+      const tmp18 = hasOwnProperty(View, obj3);
+      wrapper = wrapper.wrapper;
+      cResult[5] = wrapper;
+      cResult[6] = tmp8;
+      cResult[7] = tmp11;
+      cResult[8] = tmp18;
+    }
+    const obj4 = { style: null, source: null, size: null };
+    const items1 = [wrapper.icon, style];
+    obj4.style = items1;
+    obj4.source = _modDef7390;
+    obj4.size = tmp(1181).Icon.Sizes.MEDIUM;
+    const tmp14 = React4(tmp(1181).Icon, obj4);
+    cResult[2] = style;
+    cResult[3] = wrapper.icon;
+    cResult[4] = tmp14;
+    tmp11 = tmp14;
+  } else {
+    if (cResult[9] === style) {
+      if (cResult[10] === wrapper.icon) {
+        let tmp4 = cResult[11];
+      }
+      return tmp4;
+    }
+    const obj5 = { style: null, source: null, size: null };
+    const items2 = [wrapper.icon, style];
+    obj5.style = items2;
+    obj5.source = _modDef7390;
+    obj5.size = tmp(1181).Icon.Sizes.MEDIUM;
+    const tmp7 = React4(tmp(1181).Icon, obj5);
+    cResult[9] = style;
+    cResult[10] = wrapper.icon;
+    cResult[11] = tmp7;
+    tmp4 = tmp7;
+  }
+}) : ((arg0) => {
   ({ label, style } = arg0);
   const tmp = closure_6();
   if (null != label) {
@@ -31,7 +93,7 @@ export default function FormArrow(arg0) {
     const obj4 = { style: null, source: null, size: null };
     const items1 = [tmp.icon, style];
     obj4.style = items1;
-    obj4.source = _modDef7387;
+    obj4.source = _modDef7390;
     obj4.size = native.Icon.Sizes.MEDIUM;
     items[1] = React4(native.Icon, obj4);
     obj2.children = items;
@@ -40,9 +102,9 @@ export default function FormArrow(arg0) {
     const obj = { style: null, source: null, size: null };
     const items2 = [tmp.icon, style];
     obj.style = items2;
-    obj.source = _modDef7387;
+    obj.source = _modDef7390;
     obj.size = native.Icon.Sizes.MEDIUM;
     tmp6 = React4(native.Icon, obj);
   }
   return tmp6;
-};
+});

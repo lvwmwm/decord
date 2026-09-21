@@ -1,29 +1,29 @@
-// Module ID: 5497
-// Function ID: 5498
+// Module ID: 5499
+// Function ID: 5500
 // Name: SpotifyStore
-// Dependencies: [1999, 502, 5498, 5627, 4796, 5636, 4775, 8611, 1074, 5500, 1091, 3, 2036, 573, 559, 12004, 12, 1241, 558, 13892, 9618, 1370, 504, 8408, 2]
+// Dependencies: [2003, 502, 5500, 5629, 4798, 5638, 4777, 8616, 1078, 5502, 1095, 3, 2040, 577, 561, 11879, 12, 1245, 560, 13895, 9614, 1374, 504, 8413, 2]
 
-// Module 5497 (SpotifyStore)
+// Module 5499 (SpotifyStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Timers from "Timers" /* 2036 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8408 */;
-import useIsSpeaking from "useIsSpeaking" /* 9618 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 12004 */;
-import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 13892 */;
-import RunningGameStore from "RunningGameStore" /* 1999 */;
+import BackoffDefault from "Backoff" /* 561 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import Timers from "Timers" /* 2040 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8413 */;
+import useIsSpeaking from "useIsSpeaking" /* 9614 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11879 */;
+import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 13895 */;
+import RunningGameStore from "RunningGameStore" /* 2003 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
-import IdleStore from "IdleStore" /* 5627 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import SpeakingStore from "SpeakingStore" /* 5636 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
-import Platforms from "Platforms" /* 5500 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import IdleStore from "IdleStore" /* 5629 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import SpeakingStore from "SpeakingStore" /* 5638 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import Platforms from "Platforms" /* 5502 */;
 
 require = fn;
 function upsertAccount(accountId, accessToken) {
@@ -59,7 +59,7 @@ function upsertAccount(accountId, accessToken) {
     }, closure_29);
     obj.accountId = accountId;
     obj.accessToken = accessToken;
-    const interval = new obj(2036).Interval();
+    const interval = new obj(2040).Interval();
     obj.pingInterval = interval;
     const tmp14 = new BackoffDefault(undefined, MINUTE);
     obj.backoff = tmp14;
@@ -132,7 +132,7 @@ function activitySync(userId, activity, arg2) {
     if (null != sync_id) {
       if (null != party) {
         if (null != party.id) {
-          if (closure_1_14(party.id)) {
+          if (state(party.id)) {
             if (null != timestamps) {
               if (null != timestamps.start) {
                 let start = timestamps.start;
@@ -156,7 +156,7 @@ function activitySync(userId, activity, arg2) {
               if (type == null) {
                 type = constants2.TRACK;
               }
-              const tmp14Result = map1(type);
+              const tmp14Result = __initData2(type);
               if (null != tmp14Result) {
                 const obj4 = SpotifyActionCreators;
                 const obj3 = { position: +bound, deviceId: device.id, repeat: tmp13 };
@@ -489,9 +489,9 @@ function updatePlayerState(accountId, arg1, device) {
     }
   }
 }
-const SpotifyConstants = fn(8611);
+const SpotifyConstants = fn(8616);
 ({ getSpotifyResourceType: map1, isSpotifyParty: closure_14, SPOTIFY_PARTY_PREFIX: closure_15, SpotifyEndpoints: closure_16, SpotifyResourceTypes: closure_17 } = SpotifyConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 const PlatformTypes = Constants.PlatformTypes;
 ({ ActivityFlags: closure_19, AnalyticEvents: closure_20 } = Constants);
 const user = Platforms.get(PlatformTypes.SPOTIFY);
@@ -508,11 +508,11 @@ const message = "message";
 const ping = "ping";
 const single = "single";
 const logger = new LoggerDefault("Spotify");
-const timeout = new fn(2036).Timeout();
-const timeout1 = new fn(2036).Timeout();
-const timeout2 = new fn(2036).Timeout();
-const timeout3 = new fn(2036).Timeout();
-const timeout4 = new fn(2036).Timeout();
+const timeout = new fn(2040).Timeout();
+const timeout1 = new fn(2040).Timeout();
+const timeout2 = new fn(2040).Timeout();
+const timeout3 = new fn(2040).Timeout();
+const timeout4 = new fn(2040).Timeout();
 const dependencyMap = {};
 const dependencyMap2 = {};
 const dependencyMap3 = {};
@@ -579,7 +579,7 @@ prototype["connect"] = function connect() {
     ({ accountId, accessToken } = self);
     closure_129_0 = accountId;
     closure_129_1 = accessToken;
-    const SpotifyAPI = self(12004).SpotifyAPI;
+    const SpotifyAPI = self(11879).SpotifyAPI;
     const request = { url: constants.PLAYER, query: null, onlyRetryOnAuthorizationErrors: true };
     const obj = { additional_types: null };
     const _HermesInternal = HermesInternal;
@@ -949,7 +949,7 @@ prototype2["canPlay"] = function canPlay(party) {
   }
   let tmp7 = null != tmp2 && null != party.sync_id && null != party && null != party.id;
   if (tmp7) {
-    tmp7 = closure_1_14(party.id);
+    tmp7 = state(party.id);
   }
   return tmp7;
 };
@@ -1041,7 +1041,7 @@ prototype2["getActivity"] = function getActivity() {
       return obj4;
     }
     const _HermesInternal = HermesInternal;
-    partyId = "" + __initData + AuthenticationStore.getId();
+    partyId = "" + closure_1_15 + AuthenticationStore.getId();
     tmp6 = null != album.image && null != assetFromImageURL;
   }
 };
@@ -1097,7 +1097,7 @@ const spotifyStore = new SpotifyStore(DispatcherDefault, {
           let flag2 = true;
         } else {
           flag2 = false;
-          if (!account(558)(found, device)) {
+          if (!account(560)(found, device)) {
             const _Object = Object;
             const merged = Object.assign(found, device);
             flag2 = true;
@@ -1175,7 +1175,7 @@ const spotifyStore = new SpotifyStore(DispatcherDefault, {
           }
         }
         timeout1.start(100, () => closure_1_35.stop(), false);
-        obj9 = device(9618);
+        obj9 = device(9614);
       }
       if (null != tmp10) {
         if (!tmp22) {
@@ -1210,15 +1210,15 @@ const spotifyStore = new SpotifyStore(DispatcherDefault, {
             }
             if (null != tmp10) {
               const obj6 = { type: "SPOTIFY_NEW_TRACK", track: tmp10, connectionId: accountId };
-              tmp25(573).dispatch(obj6);
-              const tmp25Result = tmp25(573);
+              tmp25(577).dispatch(obj6);
+              const tmp25Result = tmp25(577);
               const obj7 = { party_platform: PlatformTypes.SPOTIFY, track_id: tmp10.id, has_images: true, details: tmp10.album.name, state: tmp10.name, album_id: tmp10.album.id, author_ids: null, author_names: null };
               const artists = tmp10.artists;
               obj7.author_ids = artists.map((id) => id.id);
               const artists1 = tmp10.artists;
               obj7.author_names = artists1.map((name) => name.name);
-              tmp25(1241).track(constants4.ACTIVITY_UPDATED, obj7);
-              const tmp25Result2 = tmp25(1241);
+              tmp25(1245).track(constants4.ACTIVITY_UPDATED, obj7);
+              const tmp25Result2 = tmp25(1245);
             }
           } else {
             tmp55 = flag;
@@ -1270,7 +1270,7 @@ const spotifyStore = new SpotifyStore(DispatcherDefault, {
       ({ sync_id, party } = activity);
       let tmp7 = null == sync_id || null == party || null == party.id;
       if (!tmp7) {
-        tmp7 = !closure_1_14(party.id);
+        tmp7 = !state(party.id);
       }
       let tmp9 = !tmp7;
       if (!tmp7) {

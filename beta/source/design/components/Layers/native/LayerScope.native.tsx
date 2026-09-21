@@ -1,12 +1,12 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7403
+// Function ID: 7404
 // Name: LayerScope
-// Dependencies: [32, 19, 17, 1074, 21, 5815, 7402, 2]
-// Exports: LayerScope
+// Dependencies: [32, 19, 17, 1078, 21, 558, 568, 7404, 5813, 2]
 
-// Module 7401 (LayerScope)
-import useInitialValueDefault from "useInitialValue" /* 5815 */;
-import LayerContext from "LayerContext" /* 7402 */;
+// Module 7403 (LayerScope)
+import c from "c" /* 568 */;
+import useInitialValueDefault from "useInitialValue" /* 5813 */;
+import LayerContext from "LayerContext" /* 7404 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ require = fn;
 function Layer(zIndex) {
   zIndex = zIndex.zIndex;
   _slicedToArray = undefined;
-  const context = noop.useContext(zIndex(7402).LayerContext);
+  const context = noop.useContext(zIndex(7404).LayerContext);
   dependencyMap = _slicedToArray(noop.useState({}), 2)[1];
   _slicedToArray = noop.useRef(null);
   const items = [context];
@@ -44,13 +44,54 @@ function Layer(zIndex) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const NOOP = fn(1074).NOOP;
+const NOOP = fn(1078).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Layers/native/LayerScope.native.tsx");
 
-export const LayerScope = function LayerScope(arg0) {
+export const LayerScope = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(7);
+  ({ children, zIndex } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const layerContextManager = new LayerContext.LayerContextManager();
+      return layerContextManager;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = useInitialValueDefault(first);
+  if (cResult[1] !== zIndex) {
+    const obj2 = { zIndex };
+    const tmp9 = closure_1_8(Layer, obj2);
+    cResult[1] = zIndex;
+    cResult[2] = tmp9;
+    let tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === children) {
+    if (cResult[4] === tmp5) {
+      if (cResult[5] === tmp6) {
+        let tmp10 = cResult[6];
+      }
+      return tmp10;
+    }
+  }
+  const obj3 = { value: tmp5, children: null };
+  const items = [children, tmp6];
+  obj3.children = items;
+  const tmp11 = options(LayerContext.LayerContext.Provider, obj3);
+  cResult[3] = children;
+  cResult[4] = tmp5;
+  cResult[5] = tmp6;
+  cResult[6] = tmp11;
+  tmp10 = tmp11;
+}) : ((arg0) => {
   ({ children, zIndex } = arg0);
   const obj = {
     value: useInitialValueDefault(() => {
@@ -59,7 +100,7 @@ export const LayerScope = function LayerScope(arg0) {
     }),
     children: null
   };
-  const items = [children, React6(Layer, { zIndex })];
+  const items = [children, closure_1_8(Layer, { zIndex })];
   obj.children = items;
-  return React7(LayerContext.LayerContext.Provider, obj);
-};
+  return options(LayerContext.LayerContext.Provider, obj);
+});

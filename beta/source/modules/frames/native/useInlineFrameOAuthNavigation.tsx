@@ -1,20 +1,20 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 16976
+// Function ID: 16977
 // Name: useInlineFrameOAuthNavigation
-// Dependencies: [5, 19, 9313, 9314, 1074, 9320, 4959, 9326, 1980, 1110, 2]
+// Dependencies: [5, 19, 9311, 9312, 1078, 9318, 4961, 9324, 1984, 1114, 2]
 // Exports: default
 
-// Module 16973 (useInlineFrameOAuthNavigation)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+// Module 16976 (useInlineFrameOAuthNavigation)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9313 */;
+import FramesStore from "FramesStore" /* 9311 */;
 
 require = fn;
-const isLaunched = fn(9314).isLaunched;
-const ComponentActions = fn(1074).ComponentActions;
-let closure_8 = fn(9320).OAUTH2_AUTHORIZE_MODAL_KEY;
+const isLaunched = fn(9312).isLaunched;
+const ComponentActions = fn(1078).ComponentActions;
+let closure_8 = fn(9318).OAUTH2_AUTHORIZE_MODAL_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/native/useInlineFrameOAuthNavigation.tsx");
 
@@ -53,7 +53,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {

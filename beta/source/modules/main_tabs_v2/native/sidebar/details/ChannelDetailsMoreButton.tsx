@@ -1,21 +1,71 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17207
+// Function ID: 17208
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 11177, 8110, 8107, 1115, 9898, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 11219, 1119, 8118, 8112, 9876, 2]
 
-// Module 17204 (ChannelDetailsMoreButton)
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8110 */;
-import _modDef9898 from "module_9898" /* 9898 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11177 */;
+// Module 17207 (ChannelDetailsMoreButton)
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8118 */;
+import _modDef9876 from "module_9876" /* 9876 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
 
-export default function MoreButton(channel) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let HeaderIconButton = channel;
+  let tmp = dependencyMap;
+  const cResult = channel(568).c(5);
+  channel = channel.channel;
+  if (cResult[0] !== channel) {
+    const fn = function l() {
+      let tmp = null != channel;
+      if (tmp) {
+        tmp = obj.isDM() || obj.isMultiUserDM();
+        const tmp2 = obj.isDM() || obj.isMultiUserDM();
+      }
+      if (tmp) {
+        const result = openChannelLongPressActionSheet.openChannelLongPressActionSheet(obj.id);
+      }
+    };
+    cResult[0] = channel;
+    cResult[1] = fn;
+    let tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  let tmp4 = null;
+  if (null != channel) {
+    if (!channel.isDM()) {
+      tmp4 = null;
+    }
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = HeaderIconButton(1119).intl;
+      const stringResult = intl.string(HeaderIconButton(1119).t["UKOtz+"]);
+      cResult[2] = stringResult;
+      let tmp6 = stringResult;
+    } else {
+      tmp6 = cResult[2];
+    }
+    if (cResult[3] !== tmp3) {
+      let obj2 = { children: null };
+      HeaderIconButton = HeaderIconButton(8112).HeaderIconButton;
+      const obj3 = { accessibilityLabel: tmp6, source: null, onPress: null };
+      tmp = _modDef9876;
+      obj3.source = tmp;
+      obj3.onPress = tmp3;
+      obj2.children = <HeaderIconButton accessibilityLabel={tmp6} source={null} onPress={null} />;
+      const tmp12 = jsx(PressableNavigatorButtonWrapperDefault, { children: null });
+      cResult[3] = tmp3;
+      cResult[4] = tmp12;
+    }
+  }
+  return tmp4;
+}) : ((channel) => {
   channel = channel.channel;
   [][0] = channel;
   let tmp2 = null;
@@ -23,15 +73,15 @@ export default function MoreButton(channel) {
     if (channel.isDM()) {
       const obj = { children: null };
       let obj2 = { accessibilityLabel: null, source: null, onPress: null };
-      const intl = channel(1115).intl;
-      obj2.accessibilityLabel = intl.string(channel(1115).t["UKOtz+"]);
-      obj2.source = _modDef9898;
+      const intl = channel(1119).intl;
+      obj2.accessibilityLabel = intl.string(channel(1119).t["UKOtz+"]);
+      obj2.source = _modDef9876;
       obj2.onPress = tmp;
-      obj.children = jsx(channel(8107).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
+      obj.children = jsx(channel(8112).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
       tmp2 = jsx(PressableNavigatorButtonWrapperDefault, { children: null });
     } else {
       tmp2 = null;
     }
   }
   return tmp2;
-};
+});

@@ -1,12 +1,12 @@
-// Module ID: 2046
-// Function ID: 2047
+// Module ID: 2050
+// Function ID: 2051
 // Name: StageInstanceStore
-// Dependencies: [2047, 504, 573, 2]
+// Dependencies: [2051, 504, 577, 2]
 
-// Module 2046 (StageInstanceStore)
+// Module 2050 (StageInstanceStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2047 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 function handleStageInstanceCreateOrUpdate(instance) {
@@ -38,8 +38,8 @@ prototype["getStageInstanceByChannel"] = function getStageInstanceByChannel(id) 
     return closure_2[id];
   }
 };
-prototype["isLive"] = function isLive(id) {
-  return null != this.getStageInstanceByChannel(id);
+prototype["isLive"] = function isLive(first1) {
+  return null != this.getStageInstanceByChannel(first1);
 };
 prototype["isPublic"] = function isPublic(id) {
   const stageInstanceByChannel = this.getStageInstanceByChannel(id);

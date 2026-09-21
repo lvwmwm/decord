@@ -1,34 +1,90 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 5742
+// Function ID: 5743
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1074, 21, 4756, 5741, 576, 5205, 1177, 1115, 4752, 2]
-// Exports: default
+// Dependencies: [19, 1078, 21, 4758, 5743, 580, 558, 568, 1119, 1181, 4754, 5207, 2]
 
-// Module 5740 (QuarantineModeInfoAlert)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import common_AlertDefault from "common/Alert" /* 5205 */;
+// Module 5742 (QuarantineModeInfoAlert)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import common_AlertDefault from "common/Alert" /* 5207 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5741 */;
+import TextStyles from "TextStyles" /* 5743 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { header: null, text: null };
 let obj3 = {};
-const merged = Object.assign(TextStyles(fn(1074).Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
+const merged = Object.assign(TextStyles(fn(1078).Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj3.textAlign = "center";
 obj3.marginVertical = 12;
 obj2.header = obj3;
 obj2.text = { textAlign: "center", marginVertical: 8 };
 let closure_5 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");
 
-export default function QuarantineModeInfoAlert(onClose) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  const cResult = c.c(10);
+  onClose = onClose.onClose;
+  const tmp4 = closure_5();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.EouHwv);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.header) {
+    const obj2 = { style: tmp4.header, children: first };
+    const tmp9 = React3(tmp(1181).LegacyText, obj2);
+    cResult[1] = tmp4.header;
+    cResult[2] = tmp9;
+    let tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t.zNPBMA);
+    cResult[3] = stringResult1;
+    let tmp10 = stringResult1;
+  } else {
+    tmp10 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.text) {
+    const obj3 = { style: tmp4.text, variant: "text-md/medium", children: tmp10 };
+    const tmp14 = React3(tmp(4754).Text, obj3);
+    cResult[4] = tmp4.text;
+    cResult[5] = tmp14;
+    let tmp12 = tmp14;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] === onClose) {
+    if (cResult[7] === tmp7) {
+      if (cResult[8] === tmp12) {
+        let tmp15 = cResult[9];
+      }
+      return tmp15;
+    }
+  }
+  const obj4 = { onClose, children: null };
+  const items = [tmp7, tmp12];
+  obj4.children = items;
+  const tmp16 = React4(common_AlertDefault, obj4);
+  cResult[6] = onClose;
+  cResult[7] = tmp7;
+  cResult[8] = tmp12;
+  cResult[9] = tmp16;
+  tmp15 = tmp16;
+}) : ((onClose) => {
   const tmp = closure_5();
   const obj = { onClose: onClose.onClose, children: null };
   const obj2 = { style: tmp.header, children: null };
@@ -41,4 +97,4 @@ export default function QuarantineModeInfoAlert(onClose) {
   items[1] = React3(Text_Text.Text, obj3);
   obj.children = items;
   return React4(common_AlertDefault, obj);
-};
+});

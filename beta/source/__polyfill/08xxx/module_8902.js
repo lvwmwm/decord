@@ -1,9 +1,9 @@
 // Module ID: 8902
 // Function ID: 8903
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 8902
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/chat_sidebar", width: 24, height: 24, scales: [2, 3], hash: "f15a8eea867ca31909b0a1cf49c6c7d8", name: "ic_notif", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "0da6e85b52f6338da38daa05a2b6d1cc", name: "ic_mic_24px", type: "png" });

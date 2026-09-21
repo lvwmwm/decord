@@ -1,11 +1,11 @@
-// Module ID: 18265
-// Function ID: 18266
+// Module ID: 18268
+// Function ID: 18269
 // Name: ClearChannelNotificationsOnAppForegroundExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 // Exports: shouldClearChannelNotificationsOnAppForeground
 
-// Module 18265 (ClearChannelNotificationsOnAppForegroundExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 18268 (ClearChannelNotificationsOnAppForegroundExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-10-clear-channel-notifications-on-app-foreground-ios", kind: "user", defaultConfig: { enabled: false }, variations: null };

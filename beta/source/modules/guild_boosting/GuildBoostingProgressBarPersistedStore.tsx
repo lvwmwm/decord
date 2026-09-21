@@ -1,11 +1,11 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 16561
+// Function ID: 16562
 // Name: GuildBoostingProgressBarPersistedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 16560 (GuildBoostingProgressBarPersistedStore)
+// Module 16561 (GuildBoostingProgressBarPersistedStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 let closure_0 = {};
 const PersistedStore = initializeDefault.PersistedStore;

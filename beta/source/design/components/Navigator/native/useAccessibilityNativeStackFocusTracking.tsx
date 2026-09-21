@@ -1,12 +1,12 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14455
+// Function ID: 14456
 // Name: useAccessibilityNativeStackFocusTracking
-// Dependencies: [19, 5113, 5111, 2]
+// Dependencies: [19, 5115, 5113, 2]
 // Exports: useAccessibilityNativeStackFocusTracking
 
-// Module 14452 (useAccessibilityNativeStackFocusTracking)
-import setAccessibilityFocusPreviousDefault from "setAccessibilityFocusPrevious" /* 5111 */;
-import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 5113 */;
+// Module 14455 (useAccessibilityNativeStackFocusTracking)
+import setAccessibilityFocusPreviousDefault from "setAccessibilityFocusPrevious" /* 5113 */;
+import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 5115 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

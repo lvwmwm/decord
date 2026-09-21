@@ -1,26 +1,166 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 17088
+// Function ID: 17089
 // Name: useVibegrationsChatToastMessages
-// Dependencies: [32, 19, 17086, 4976, 1091, 504, 4978, 573, 2]
-// Exports: default
+// Dependencies: [32, 19, 17089, 4978, 1095, 558, 568, 504, 4980, 577, 2]
 
-// Module 17085 (useVibegrationsChatToastMessages)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
+// Module 17088 (useVibegrationsChatToastMessages)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CallChatToastsStore from "CallChatToastsStore" /* 17086 */;
-import MessageStore from "MessageStore" /* 4976 */;
+import CallChatToastsStore from "CallChatToastsStore" /* 17089 */;
+import MessageStore from "MessageStore" /* 4978 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const result = 10 * DurationsDefault.Millis.SECOND;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsChatToastMessages.tsx");
 
-export default function useVibegrationsChatToastMessages(arg0, arg1) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  const cResult = require("c").c(14);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [CallChatToastsStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class E {
+      constructor() {
+        return closure_5.getToastsEnabled(closure_0);
+      }
+    }
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = E;
+    cResult[3] = items1;
+  } else {
+    class E {
+      constructor() {
+        return closure_5.getToastsEnabled(closure_0);
+      }
+    }
+  }
+  require("initialize");
+  if (arg1) {
+    class E {
+      constructor() {
+        return closure_5.getToastsEnabled(closure_0);
+      }
+    }
+  }
+  importDefault = tmp8;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return closure_5.getToastsEnabled(closure_0);
+      }
+    }
+    cResult[4] = tmp11;
+    const tmp10 = tmp11;
+  } else {
+    class E {
+      constructor() {
+        return closure_5.getToastsEnabled(closure_0);
+      }
+    }
+  }
+  [first1, _slicedToArray] = noop.useState(tmp10);
+  if (cResult[5] === arg1) {
+    class E {
+      constructor() {
+        return closure_5.getToastsEnabled(closure_0);
+      }
+    }
+    const effect = noop.useEffect(M, items4);
+    const _Symbol = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor() {
+          return closure_5.getToastsEnabled(closure_0);
+        }
+      }
+      const items2 = [MessageStore];
+      cResult[9] = items2;
+      const tmp15 = items2;
+    } else {
+      class E {
+        constructor() {
+          return closure_5.getToastsEnabled(closure_0);
+        }
+      }
+    }
+    if (cResult[10] === arg0) {
+      class E {
+        constructor() {
+          return closure_5.getToastsEnabled(closure_0);
+        }
+      }
+      return tmp(tmp2[7]).useStateFromStoresArray(tmp15, tmp16, tmp17);
+    }
+    const fn = function h() {
+      return first1.map((id) => {
+        message = message.getMessage(closure_1_0, id.id);
+        if (message == null) {
+          message = id;
+        }
+        return message;
+      });
+    };
+    const items3 = [arg0, first1];
+    cResult[10] = arg0;
+    cResult[11] = first1;
+    cResult[12] = fn;
+    cResult[13] = items3;
+    tmp16 = fn;
+    tmp17 = items3;
+  }
+  class M {
+    constructor() {
+      if (handleMessageCreate) {
+        handleMessageCreate = function handleMessageCreate(channelId) {
+          if (channelId.channelId === timeout) {
+            if (!channelId.optimistic) {
+              const _clearTimeout = clearTimeout;
+              clearTimeout(timeout);
+              const _setTimeout = setTimeout;
+              setTimeout(() => closure_1_3([]), result);
+              timeout = MessageRecordUtils.createMessageRecord(tmp);
+              closure_3((arg0) => {
+                const items = [];
+                items[HermesBuiltin.arraySpread(arg0, 0)] = closure_0;
+                return items.slice(-3);
+              });
+            }
+          }
+        };
+        tmp = closure_1;
+        tmp2 = closure_2;
+        obj = closure_1(closure_2[9]);
+        str = "MESSAGE_CREATE";
+        subscription = obj.subscribe("MESSAGE_CREATE", handleMessageCreate);
+        return () => {
+          DispatcherDefault.unsubscribe("MESSAGE_CREATE", handleMessageCreate);
+          clearTimeout(closure_0);
+          closure_3([]);
+        };
+      } else {
+        return;
+      }
+    }
+  }
+  items4 = [arg1, arg0];
+  cResult[5] = arg1;
+  cResult[6] = arg0;
+  cResult[7] = M;
+  cResult[8] = items4;
+}) : ((arg0, arg1) => {
   _require = arg0;
   let stateFromStores = arg1;
   let items = [CallChatToastsStore];
@@ -49,7 +189,7 @@ export default function useVibegrationsChatToastMessages(arg0, arg1) {
       }
     }
     if (handleMessageCreate) {
-      const subscription = stateFromStores(first[7]).subscribe("MESSAGE_CREATE", handleMessageCreate);
+      const subscription = stateFromStores(first[9]).subscribe("MESSAGE_CREATE", handleMessageCreate);
       return () => {
         DispatcherDefault.unsubscribe("MESSAGE_CREATE", handleMessageCreate);
         clearTimeout(closure_0);
@@ -67,6 +207,6 @@ export default function useVibegrationsChatToastMessages(arg0, arg1) {
     }
     return message;
   }), items4);
-};
+});
 export const VIBEGRATIONS_CHAT_TOAST_LINGER_MS = result;
 export const VIBEGRATIONS_CHAT_TOAST_MAX = 3;

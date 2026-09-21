@@ -1,16 +1,16 @@
-// Module ID: 17802
-// Function ID: 17803
+// Module ID: 17805
+// Function ID: 17806
 // Name: useFileUploadComponentState
-// Dependencies: [19, 5105, 5104, 8381, 38, 1978, 2]
+// Dependencies: [19, 5107, 5106, 8386, 38, 1982, 2]
 // Exports: useFileUploadComponentState
 
-// Module 17802 (useFileUploadComponentState)
-import Server from "Server" /* 1978 */;
+// Module 17805 (useFileUploadComponentState)
+import Server from "Server" /* 1982 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
 
 require = fn;
-const DraftType = fn(5105).DraftType;
+const DraftType = fn(5107).DraftType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/useFileUploadComponentState.tsx");
 

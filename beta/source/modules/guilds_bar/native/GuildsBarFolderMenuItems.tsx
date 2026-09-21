@@ -1,17 +1,17 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16628
+// Function ID: 16629
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 5655, 1074, 7326, 1115, 14229, 1980, 7622, 16627, 2]
+// Dependencies: [5, 5657, 1078, 7328, 1119, 14232, 1984, 7624, 16629, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 16626 (GuildsBarFolderMenuItems)
+// Module 16628 (GuildsBarFolderMenuItems)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SortedGuildStore from "SortedGuildStore" /* 5655 */;
+import SortedGuildStore from "SortedGuildStore" /* 5657 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AnalyticsSections = fn(1074).AnalyticsSections;
+const AnalyticsSections = fn(1078).AnalyticsSections;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx");
 
@@ -32,7 +32,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
           } else {
             const result = value.showGuildsBarFolderModal(closure_128_0);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c2 = tmp;

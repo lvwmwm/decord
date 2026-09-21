@@ -1,50 +1,50 @@
-// Module ID: 5659
-// Function ID: 5660
+// Module ID: 5661
+// Function ID: 5662
 // Name: AutocompleteUtils
-// Dependencies: [32, 5660, 5676, 5224, 5718, 5719, 5723, 4397, 2045, 2100, 1386, 2041, 5726, 2096, 2105, 2099, 2063, 4976, 4395, 4796, 4405, 2095, 4577, 1372, 5727, 1074, 5732, 2048, 3, 5733, 2055, 4743, 5734, 2009, 4600, 5735, 5485, 12, 2017, 1370, 5736, 4400, 4909, 1115, 11, 7573, 2019, 7576, 7467, 7577, 7578, 2024, 7579, 7580, 5230, 7585, 2]
+// Dependencies: [32, 5662, 5678, 5226, 5720, 5721, 5725, 4401, 2049, 2104, 1390, 2045, 5728, 2100, 2109, 2103, 2067, 4978, 4399, 4798, 4409, 2099, 4580, 1376, 5729, 1078, 5734, 2052, 3, 5735, 2059, 4745, 5736, 2013, 4603, 5737, 5487, 12, 2021, 1374, 5738, 4404, 4911, 1119, 11, 7575, 2023, 7578, 7469, 7579, 7580, 2028, 7581, 7582, 5232, 7587, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 5659 (AutocompleteUtils)
+// Module 5661 (AutocompleteUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import util from "util" /* 1115 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import StringUtils from "StringUtils" /* 2009 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import RegexUtilsDefault from "RegexUtils" /* 4743 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import StickersTypes from "StickersTypes" /* 5485 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5734 */;
-import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5735 */;
-import GuildUtilsDefault from "GuildUtils" /* 5736 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7467 */;
-import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 7577 */;
-import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 7578 */;
+import util from "util" /* 1119 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import StringUtils from "StringUtils" /* 2013 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import RegexUtilsDefault from "RegexUtils" /* 4745 */;
+import useChannelName from "useChannelName" /* 4911 */;
+import StickersTypes from "StickersTypes" /* 5487 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5736 */;
+import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5737 */;
+import GuildUtilsDefault from "GuildUtils" /* 5738 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7469 */;
+import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 7579 */;
+import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 7580 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
-import SoundboardStore from "SoundboardStore" /* 5224 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 5718 */;
-import StickersStore from "StickersStore" /* 5719 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import FrecencyStore from "FrecencyStore" /* 5726 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 2096 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import MessageStore from "MessageStore" /* 4976 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import UserStore from "UserStore" /* 1372 */;
-import SKUStore from "SKUStore" /* 5727 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
+import SoundboardStore from "SoundboardStore" /* 5226 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 5720 */;
+import StickersStore from "StickersStore" /* 5721 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4401 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import FrecencyStore from "FrecencyStore" /* 5728 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 2100 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import MessageStore from "MessageStore" /* 4978 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import UserStore from "UserStore" /* 1376 */;
+import SKUStore from "SKUStore" /* 5729 */;
 
 const require = globalThis.__r;
 
@@ -154,10 +154,10 @@ function queryMemberList(arg0) {
           if (null == str) {
             let items2 = [null, null];
           } else {
-            let tmp16Result = tmp16(2009);
+            let tmp16Result = tmp16(2013);
             let stripDiacriticsResult = tmp16Result.stripDiacritics(str);
             items2 = [stripDiacriticsResult, ];
-            let normalizer3 = tmp16(2009);
+            let normalizer3 = tmp16(2013);
             items2[1] = normalizer3.normalize(stripDiacriticsResult);
           }
           let tmp18 = _slicedToArray;
@@ -166,10 +166,10 @@ function queryMemberList(arg0) {
           if (null == str2) {
             let items3 = [null, null];
           } else {
-            let tmp16Result2 = tmp16(2009);
+            let tmp16Result2 = tmp16(2013);
             let stripDiacriticsResult1 = tmp16Result2.stripDiacritics(str2);
             items3 = [stripDiacriticsResult1, ];
-            let normalizer4 = tmp16(2009);
+            let normalizer4 = tmp16(2013);
             items3[1] = normalizer4.normalize(stripDiacriticsResult1);
           }
           let tmp18Result = tmp18(items3, 2);
@@ -210,21 +210,21 @@ function queryMemberList(arg0) {
                             if (substr5 !== normalizeResult) {
                               let tmp33 = num < 50;
                               if (num < 50) {
-                                let tmp28 = tmp12(5734)(toLocaleLowerCaseResult, str4) || tmp12(5734)(normalizeResult, str5);
+                                let tmp28 = tmp12(5736)(toLocaleLowerCaseResult, str4) || tmp12(5736)(normalizeResult, str5);
                                 if (!tmp28) {
-                                  let tmp29 = null != str6 && tmp12(5734)(toLocaleLowerCaseResult, str6);
+                                  let tmp29 = null != str6 && tmp12(5736)(toLocaleLowerCaseResult, str6);
                                   tmp28 = tmp29;
                                 }
                                 if (!tmp28) {
-                                  let tmp30 = null != str7 && tmp12(5734)(normalizeResult, str7);
+                                  let tmp30 = null != str7 && tmp12(5736)(normalizeResult, str7);
                                   tmp28 = tmp30;
                                 }
                                 if (!tmp28) {
-                                  let tmp31 = null != str8 && tmp12(5734)(toLocaleLowerCaseResult, str8);
+                                  let tmp31 = null != str8 && tmp12(5736)(toLocaleLowerCaseResult, str8);
                                   tmp28 = tmp31;
                                 }
                                 if (!tmp28) {
-                                  let tmp32 = null != str9 && tmp12(5734)(normalizeResult, str9);
+                                  let tmp32 = null != str9 && tmp12(5736)(normalizeResult, str9);
                                   tmp28 = tmp32;
                                 }
                                 tmp33 = tmp28;
@@ -354,13 +354,13 @@ function queryMemberList(arg0) {
 function getPriorityForStickerMetadataType(arg0) {
   if (StickersTypes.StickerMetadataTypes.STICKER_NAME === arg0) {
     return 11;
-  } else if (tmp(5485).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
+  } else if (tmp(5487).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
     return 6;
-  } else if (tmp(5485).StickerMetadataTypes.TAG === arg0) {
+  } else if (tmp(5487).StickerMetadataTypes.TAG === arg0) {
     return 1;
   } else {
-    if (tmp(5485).StickerMetadataTypes.GUILD_NAME !== arg0) {
-      if (tmp(5485).StickerMetadataTypes.PACK_NAME !== arg0) {
+    if (tmp(5487).StickerMetadataTypes.GUILD_NAME !== arg0) {
+      if (tmp(5487).StickerMetadataTypes.PACK_NAME !== arg0) {
         return 1;
       }
     }
@@ -400,7 +400,7 @@ function getGuildName(guild_id, arg1) {
   if (null != guild_id.guild_id) {
     let tmp2 = arg1[guild_id.guild_id];
     if (null == tmp2) {
-      const guild = GuildStore.getGuild(guild_id.guild_id);
+      guild = GuildStore.getGuild(guild_id.guild_id);
       let toLocaleLowerCaseResult;
       if (guild != null) {
         const name = guild.name;
@@ -428,30 +428,30 @@ function getCategoryName(parent_id, arg1) {
     return tmp2;
   }
 }
-const InAppNavigationRecord = fn(5660);
+const InAppNavigationRecord = fn(5662);
 ({ InAppNavigationRecord: hasOwnProperty, InAppNavigationType: metroRequire } = InAppNavigationRecord);
-const ChannelRecord = fn(2045);
+const ChannelRecord = fn(2049);
 ({ ChannelRecordBase: map1, isGuildChannelType: closure_14, isGuildSelectableChannelType: closure_15, isGuildVocalChannelType: closure_16, isThread: closure_17, PrivateChannelRecord: closure_18, UnknownChannelRecord: closure_19 } = ChannelRecord);
-const isEveryoneRole = fn(2100).isEveryoneRole;
-let GuildChannelStore = fn(2096);
+const isEveryoneRole = fn(2104).isEveryoneRole;
+let GuildChannelStore = fn(2100);
 const GUILD_SELECTABLE_CHANNELS_KEY = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore.GUILD_VOCAL_CHANNELS_KEY;
 let GuildChannelStore = GuildChannelStore_mod;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Permissions: closure_38, GuildFeatures: closure_39, ChannelTypes } = Constants);
 ({ SKUTypes: closure_41, MAX_AUTOCOMPLETE_RESULTS: closure_42 } = Constants);
-fn(5732).AutocompleterResultTypes;
-const StaticChannelId = fn(2048).StaticChannelId;
+fn(5734).AutocompleterResultTypes;
+const StaticChannelId = fn(2052).StaticChannelId;
 const logger = new LoggerDefault("AutocompleteUtils");
 let c46 = 10;
 let tmp7 = /(\t|\s)/;
 const re48 = tmp7;
 let closure_49 = [];
-const MENTION_EVERYONE = fn(5733).default.MENTION_EVERYONE;
-const MENTION_HERE = fn(5733).default.MENTION_HERE;
-const MENTION_GAME = fn(5733).default.MENTION_GAME;
-const MENTION_TIMESTAMP = fn(5733).default.MENTION_TIMESTAMP;
-const LAUNCHABLE_APPLICATIONS = fn(5733).default.LAUNCHABLE_APPLICATIONS;
+const MENTION_EVERYONE = fn(5735).default.MENTION_EVERYONE;
+const MENTION_HERE = fn(5735).default.MENTION_HERE;
+const MENTION_GAME = fn(5735).default.MENTION_GAME;
+const MENTION_TIMESTAMP = fn(5735).default.MENTION_TIMESTAMP;
+const LAUNCHABLE_APPLICATIONS = fn(5735).default.LAUNCHABLE_APPLICATIONS;
 class AutocompleteBoostersCache {
   constructor() {
     merged = Object.assign({ lastFrecencyVersion: null, lastRelationshipVersion: null, lastPrivateChannelsVersion: null, cache: null });
@@ -535,7 +535,7 @@ let merged = Object.assign({ lastFrecencyVersion: null, lastRelationshipVersion:
 let tmp6 = new LoggerDefault("AutocompleteUtils");
 merged[3] = new Map();
 let items = [GUILD_SELECTABLE_CHANNELS_KEY, GUILD_VOCAL_CHANNELS_KEY, ChannelTypes.GUILD_CATEGORY];
-const FunctionUtils = fn(2017);
+const FunctionUtils = fn(2021);
 let closure_66 = FunctionUtils.cachedFunction(() => {
   const channelsByRecipientId = new Map();
   const recipientsById = new Map();
@@ -865,10 +865,10 @@ export default {
       const mapped = found.map((toLocaleLowerCase) => {
         const toLocaleLowerCaseResult = toLocaleLowerCase.toLocaleLowerCase();
         const obj = { queryLower: toLocaleLowerCaseResult, exactQuery: null, containQuery: null, isFullMatch: false };
-        const regExp = new RegExp("^" + closure_1_1(4743).escape(toLocaleLowerCaseResult), "i");
+        const regExp = new RegExp("^" + closure_1_1(4745).escape(toLocaleLowerCaseResult), "i");
         obj.exactQuery = regExp;
-        const obj2 = closure_1_1(4743);
-        const regExp1 = new RegExp(closure_1_1(4743).escape(toLocaleLowerCaseResult), "i");
+        const obj2 = closure_1_1(4745);
+        const regExp1 = new RegExp(closure_1_1(4745).escape(toLocaleLowerCaseResult), "i");
         obj.containQuery = regExp1;
         return obj;
       });
@@ -876,17 +876,17 @@ export default {
         let toLocaleLowerCaseResult = query.toLocaleLowerCase();
         let obj = { queryLower: toLocaleLowerCaseResult, exactQuery: null, containQuery: null, isFullMatch: true };
         const _RegExp = RegExp;
-        let obj2 = closure_1(4743);
+        let obj2 = closure_1(4745);
         const _HermesInternal = HermesInternal;
-        let regExp = new RegExp("^" + closure_1(4743).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
+        let regExp = new RegExp("^" + closure_1(4745).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
         obj.exactQuery = regExp;
         const _RegExp2 = RegExp;
-        const str = closure_1(4743).escape(toLocaleLowerCaseResult);
-        const obj3 = closure_1(4743);
-        let regExp1 = new RegExp(closure_1(4743).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
+        const str = closure_1(4745).escape(toLocaleLowerCaseResult);
+        const obj3 = closure_1(4745);
+        let regExp1 = new RegExp(closure_1(4745).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
         obj.containQuery = regExp1;
         mapped.unshift(obj);
-        const str6 = closure_1(4743).escape(toLocaleLowerCaseResult);
+        const str6 = closure_1(4745).escape(toLocaleLowerCaseResult);
       }
       return mapped;
     })(guildId.query, flag2);
@@ -1415,7 +1415,7 @@ export default {
         tmp5 = items1;
         if (flag4) {
           guildId = channel.getGuildId();
-          const guild = GuildStore.getGuild(guildId);
+          guild = GuildStore.getGuild(guildId);
           tmp5 = items1;
           if (null != guild) {
             const tmp39 = flag(flag7[37]);
@@ -1603,7 +1603,7 @@ export default {
     if (users.length < closure_42) {
       sum = length;
       if (flag2) {
-        const guild = GuildStore.getGuild(guildId);
+        guild = GuildStore.getGuild(guildId);
         sum = length;
         if (null != guild) {
           const tmp9 = flag3(roles[37]);
@@ -1709,15 +1709,15 @@ export default {
       result = features3.has(tmp8.COMMUNITY);
     }
     const obj5 = { id: StaticChannelId.SERVER_GUIDE, name: null };
-    const intl = tmp5(1115).intl;
+    const intl = tmp5(1119).intl;
     obj5.name = intl.string(util.t.VbpLyU);
     items = [obj5, , ];
     const obj6 = { id: StaticChannelId.CHANNEL_BROWSER, name: null };
-    const intl2 = tmp5(1115).intl;
+    const intl2 = tmp5(1119).intl;
     obj6.name = intl2.string(util.t.et6wav);
     items[1] = obj6;
     const obj7 = { id: StaticChannelId.CUSTOMIZE_COMMUNITY, name: null };
-    const intl3 = tmp5(1115).intl;
+    const intl3 = tmp5(1119).intl;
     obj7.name = intl3.string(util.t.h9mGOP);
     items[2] = obj7;
     const items1 = [];
@@ -1758,7 +1758,7 @@ export default {
       query: channelTypes.query,
       guildId: channel.getGuildId(),
       limit: "r",
-      fuzzy: "HermesInternal",
+      fuzzy: "IconComponent",
       filter(type) {
         let hasItem = null == channelTypes;
         if (!hasItem) {
@@ -1767,23 +1767,9 @@ export default {
         return hasItem;
       },
       type,
-      allowEmptyQueries: null
+      allowEmptyQueries: "function pnpm_useGestureHandlerTs2(event){const{gestureSource,source,state,onChange}=this.__closure;if(gestureSource.value!==source){return;}state.value=event.state;onChange(source,event);}"
     };
-    obj.channels = this.queryChannels({
-      query: channelTypes.query,
-      guildId: channel.getGuildId(),
-      limit: "r",
-      fuzzy: "HermesInternal",
-      filter(type) {
-        let hasItem = null == channelTypes;
-        if (!hasItem) {
-          hasItem = channelTypes.includes(type.type);
-        }
-        return hasItem;
-      },
-      type,
-      allowEmptyQueries: null
-    }).map((record) => record.record);
+    obj.channels = this.queryChannels(obj2).map((record) => record.record);
     return obj;
   },
   queryApplicationCommandChannelResults(limit) {
@@ -1866,22 +1852,22 @@ export default {
     const set = new Set();
     items1 = [];
     closure_5 = items1;
-    const FrecencyUserSettingsActionCreators = flag(2024).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = flag(2028).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     function _loop() {
       if ("" === closure_6) {
         return 1;
       } else {
         const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
-        const stripDiacriticsResult = toLocaleLowerCaseResult(2009).stripDiacritics(toLocaleLowerCaseResult);
+        const stripDiacriticsResult = toLocaleLowerCaseResult(2013).stripDiacritics(toLocaleLowerCaseResult);
         const _RegExp = RegExp;
-        let obj2 = toLocaleLowerCaseResult(2009);
+        let obj2 = toLocaleLowerCaseResult(2013);
         const _HermesInternal = HermesInternal;
-        const regExp = new RegExp("^" + nextResult(4743).escape(stripDiacriticsResult), "i");
+        const regExp = new RegExp("^" + nextResult(4745).escape(stripDiacriticsResult), "i");
         const _RegExp2 = RegExp;
-        const obj3 = nextResult(4743);
+        const obj3 = nextResult(4745);
         const _HermesInternal2 = HermesInternal;
-        const regExp1 = new RegExp("" + nextResult(4743).escape(stripDiacriticsResult), "i");
+        const regExp1 = new RegExp("" + nextResult(4745).escape(stripDiacriticsResult), "i");
         const stickerMetadataArrays = StickersStore.getStickerMetadataArrays();
         let item = stickerMetadataArrays.forEach((arr) => {
           const item = arr.forEach((item, index) => {
@@ -1906,12 +1892,12 @@ export default {
                       num4 = 7 * tmp9;
                     } else {
                       let tmp15 = flag;
-                      let tmp18 = tmp7 !== flag(5485).StickerMetadataTypes.GUILD_NAME;
+                      let tmp18 = tmp7 !== flag(5487).StickerMetadataTypes.GUILD_NAME;
                       if (tmp18) {
-                        tmp18 = tmp7 !== tmp15(5485).StickerMetadataTypes.PACK_NAME;
+                        tmp18 = tmp7 !== tmp15(5487).StickerMetadataTypes.PACK_NAME;
                       }
                       if (tmp18) {
-                        tmp18 = tmp7 !== tmp15(5485).StickerMetadataTypes.STICKER_NAME;
+                        tmp18 = tmp7 !== tmp15(5487).StickerMetadataTypes.STICKER_NAME;
                       }
                       if (!tmp18) {
                         tmp18 = !regex2.test(value);
@@ -1948,7 +1934,7 @@ export default {
                   closure_2_5.push(obj);
                 }
               }
-              obj2 = flag(7579);
+              obj2 = flag(7581);
             }
           });
         });
@@ -2014,7 +2000,7 @@ export default {
   },
   hasSameRoleAsUsername(getGuildId, user) {
     if (user.hasUniqueUsername()) {
-      let guild = GuildStore.getGuild(getGuildId.getGuildId());
+      guild = GuildStore.getGuild(getGuildId.getGuildId());
       if (null != guild) {
         let sortedRoles = GuildRoleStore.getSortedRoles(guild.id);
       } else {

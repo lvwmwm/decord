@@ -1,10 +1,10 @@
-// Module ID: 10473
-// Function ID: 10474
+// Module ID: 13023
+// Function ID: 13024
 // Name: BugReporterExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 10473 (BugReporterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 13023 (BugReporterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-01-bug-reporter", kind: "user", defaultConfig: { hasBugReporterAccess: false }, variations: null };

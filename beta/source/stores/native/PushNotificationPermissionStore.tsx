@@ -1,12 +1,12 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12558
+// Function ID: 12559
 // Name: PushNotificationPermissionStore
-// Dependencies: [504, 9557, 573, 2]
+// Dependencies: [504, 9553, 577, 2]
 
-// Module 12663 (PushNotificationPermissionStore)
+// Module 12558 (PushNotificationPermissionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PushNotificationDefault from "PushNotification" /* 9557 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import PushNotificationDefault from "PushNotification" /* 9553 */;
 
 let obj = { INIT: 0, [0]: "INIT", REQUESTED: 1, [1]: "REQUESTED", PROMPT_SEEN: 2, [2]: "PROMPT_SEEN", PROMPT_SKIPPED: 3, [3]: "PROMPT_SKIPPED" };
 const obj2 = { MESSAGE_SENT: 0, [0]: "MESSAGE_SENT", INVITE_ACCEPTED: 1, [1]: "INVITE_ACCEPTED", FRIEND_REQUEST_SENT: 2, [2]: "FRIEND_REQUEST_SENT", DM_SPACE: 3, [3]: "DM_SPACE", CHANNEL_BANNER: 5, [5]: "CHANNEL_BANNER", POST_REACTION_BANNER: 6, [6]: "POST_REACTION_BANNER", GUILD_OPEN_BOTTOM_SHEET: 7, [7]: "GUILD_OPEN_BOTTOM_SHEET", CALL_DISCONNECT_BOTTOM_SHEET: 8, [8]: "CALL_DISCONNECT_BOTTOM_SHEET" };

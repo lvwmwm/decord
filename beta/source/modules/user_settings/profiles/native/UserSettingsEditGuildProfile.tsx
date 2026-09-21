@@ -1,33 +1,33 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 14910
+// Function ID: 14911
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8429, 1372, 21, 4756, 576, 7407, 7427, 504, 14922, 10037, 8456, 14924, 5822, 5801, 11187, 4723, 14926, 1980, 14927, 2]
+// Dependencies: [19, 17, 8434, 1376, 21, 4758, 580, 7409, 7429, 504, 14911, 10004, 8461, 14913, 5822, 5799, 11227, 4725, 14915, 1984, 14916, 2]
 // Exports: default
 
-// Module 14921 (UserSettingsEditGuildProfile)
-import nativeDefault from "native" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8456 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10037 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11187 */;
+// Module 14910 (UserSettingsEditGuildProfile)
+import nativeDefault from "native" /* 580 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10004 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11227 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { guildSelector: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditGuildProfile.tsx");
 
 export default function UserSettingsEditGuildProfile() {
-  function onSelectGuild(id) {
+  function onSelectGuild(dependencyMap) {
     resetPending();
-    GuildIdentityActionCreators.setCurrentGuild(id.id);
+    GuildIdentityActionCreators.setCurrentGuild(dependencyMap.id);
   }
   let tmp = closure_9();
   const tmp4 = guild(resetPending[7]);

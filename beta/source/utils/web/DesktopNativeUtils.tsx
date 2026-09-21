@@ -1,20 +1,20 @@
-// Module ID: 5782
-// Function ID: 5783
+// Module ID: 5784
+// Function ID: 5785
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1074, 38, 4686, 1364, 510, 5783, 2018, 4, 5784, 5785, 1366, 1271, 4782, 2]
+// Dependencies: [32, 5, 1078, 38, 4689, 1368, 510, 5785, 2022, 4, 5786, 5787, 1370, 1275, 4784, 2]
 
-// Module 5782 (DesktopNativeUtils)
+// Module 5784 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2018 */;
-import Client from "Client" /* 4686 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4782 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 5783 */;
-import IPCEvents from "IPCEvents" /* 5784 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2022 */;
+import Client from "Client" /* 4689 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 4784 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 5785 */;
+import IPCEvents from "IPCEvents" /* 5786 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const FileExtensionUtils = tmp2(5785);
+const FileExtensionUtils = tmp2(5787);
 require = fn;
 function sanitizeFilename(arg0) {
   try {
@@ -66,7 +66,7 @@ let closure_29 = async function _transcodeImageToPng(arg0, type) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -226,7 +226,7 @@ function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
     }
   }
 }
-const NativeFeatures = fn(1074).NativeFeatures;
+const NativeFeatures = fn(1078).NativeFeatures;
 const set = new Set(["jpg", "jpeg", "jfif", "png"]);
 const set1 = new Set(["webp", "avif"]);
 const set2 = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]);
@@ -583,7 +583,7 @@ obj2.setBadge = function setBadge(arg0) {
   } else {
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(5784).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(5786).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       if ("linux" === tmpResult2.getPlatformName()) {
         const app = DiscordNative.app;
@@ -593,9 +593,9 @@ obj2.setBadge = function setBadge(arg0) {
         }
         app.setBadgeCount(num);
       }
-      tmpResult2 = tmp(1364);
+      tmpResult2 = tmp(1368);
     }
-    tmpResult = tmp(1364);
+    tmpResult = tmp(1368);
   }
 };
 obj2.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
@@ -633,7 +633,7 @@ obj2.bounceDock = function bounceDock(arg0) {
             obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -667,7 +667,7 @@ obj2.bounceDock = function bounceDock(arg0) {
               const dock = closure_129_0.dock;
               dock.cancelBounce(closure_128_0);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp11) {
             c3 = tmp;
@@ -740,7 +740,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -758,7 +758,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             closure_129_0 = undefined;
             closure_129_1 = undefined;
             closure_129_2 = undefined;
-            tmp2(38)(closure_0(1364).isPlatformEmbedded, "Copy image method called outside native app");
+            tmp2(38)(closure_0(1368).isPlatformEmbedded, "Copy image method called outside native app");
             tmp2(38)(typeof DiscordNative.clipboard.copyImage === "function", "Copy image not supported");
             c3 = 1;
             c4 = 1;
@@ -775,7 +775,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             return obj5;
           } else {
             closure_129_0 = value;
-            closure_129_1 = closure_0(5785).decideFileExtension(closure_130_0, closure_130_1);
+            closure_129_1 = closure_0(5787).decideFileExtension(closure_130_0, closure_130_1);
             if (null != closure_129_1) {
               if (set2.has(closure_129_1)) {
                 closure_0 = closure_130_1;
@@ -811,7 +811,7 @@ obj2.copyImage = function copyImage(arg0, arg1) {
             }
             const _HermesInternal = HermesInternal;
             combined = "image." + closure_129_1;
-            const obj8 = closure_0(5785);
+            const obj8 = closure_0(5787);
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -850,7 +850,7 @@ obj2.copyImageBlob = function copyImageBlob(arg0, arg1) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -884,7 +884,7 @@ obj2.copyImageBlob = function copyImageBlob(arg0, arg1) {
           const _Buffer = Buffer;
           clipboard.copyImage(Buffer.from(closure_128_0), closure_129_1);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c3 = tmp;
@@ -896,7 +896,7 @@ obj2.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj2.canSaveImage = function canSaveImage(uri, contentType) {
   if (null != uri) {
     if (require("PlatformUtils").isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(5785).decideFileExtension(uri, contentType);
+      const decideFileExtensionResult = tmp(5787).decideFileExtension(uri, contentType);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set2.has(decideFileExtensionResult);
@@ -922,7 +922,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -943,10 +943,10 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
             closure_133_3 = undefined;
             closure_133_4 = undefined;
             closure_133_5 = undefined;
-            png(38)(unknown(1364).isPlatformEmbedded, "Save image method called outside native app");
+            png(38)(unknown(1368).isPlatformEmbedded, "Save image method called outside native app");
             const tmp84 = png(38);
             let tmp54 = closure_0;
-            const toURLSafeResult = png(1366).toURLSafe(closure_0);
+            const toURLSafeResult = png(1370).toURLSafe(closure_0);
             if (null == toURLSafeResult) {
               c10 = 3;
               const obj4 = { value: constants.ERRORED, done: true };
@@ -971,7 +971,7 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const str3 = str2.replace(closure_1_22, "");
               } else if (!str.includes(".")) {
-                const decideFileExtensionResult = unknown(5785).decideFileExtension(tmp54, closure_1);
+                const decideFileExtensionResult = unknown(5787).decideFileExtension(tmp54, closure_1);
                 dependencyMap = decideFileExtensionResult;
                 png = dependencyMap;
                 if (dependencyMap == null) {
@@ -979,13 +979,13 @@ obj2.saveImage = function saveImage(arg0, arg1, arg2) {
                 }
                 const _HermesInternal = HermesInternal;
                 closure_133_0 = "" + str + "." + png;
-                const obj9 = unknown(5785);
+                const obj9 = unknown(5787);
               }
               tmp54 = getImageData(tmp54);
               c9 = 1;
               c10 = 1;
             }
-            const obj13 = png(1366);
+            const obj13 = png(1370);
           }
         } else if (1 === tmp8) {
           if (arg0 === 1) {
@@ -1103,7 +1103,7 @@ obj2.saveFile = function saveFile(arg0, arg1) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1196,8 +1196,8 @@ obj2.downloadMLModelFile = function downloadMLModelFile(arg0, arg1, arg2) {
   closure_1 = arg1;
   closure_2 = arg2;
   return (async () => {
-    v1(38)(v3(1364).isPlatformEmbedded, "Download ML model file method called outside native app");
-    v1(38)(null != v1(1366).toURLSafe(closure_0), "Could not download ML model, fileSrc was not a valid path");
+    v1(38)(v3(1368).isPlatformEmbedded, "Download ML model file method called outside native app");
+    v1(38)(null != v1(1370).toURLSafe(closure_0), "Could not download ML model, fileSrc was not a valid path");
     fileManager = fileManager.fileManager;
     await fileManager.maybeDownloadMLModelFile(closure_0, closure_1, closure_2);
     return arg1;
@@ -1231,8 +1231,8 @@ obj2.downloadClipsFile = function downloadClipsFile(arg0, arg1, arg2) {
   closure_1 = arg1;
   closure_2 = arg2;
   return (async () => {
-    v1(38)(v3(1364).isPlatformEmbedded, "Download clips file method called outside native app");
-    v1(38)(null != v1(1366).toURLSafe(closure_0), "Could not download clips file, fileSrc was not a valid path");
+    v1(38)(v3(1368).isPlatformEmbedded, "Download clips file method called outside native app");
+    v1(38)(null != v1(1370).toURLSafe(closure_0), "Could not download clips file, fileSrc was not a valid path");
     fileManager = fileManager.fileManager;
     await fileManager.maybeDownloadClipsFile(closure_0, closure_1, closure_2);
     return arg1;
@@ -1273,8 +1273,8 @@ obj2.downloadOpenH264 = function downloadOpenH264(arg0, arg1, arg2, arg3) {
   closure_2 = arg2;
   closure_3 = arg3;
   return (async () => {
-    v1(38)(v3(1364).isPlatformEmbedded, "Download OpenH264 file method called outside native app");
-    v1(38)(null != v1(1366).toURLSafe(closure_0), "Could not download OpenH264, fileSrc was not a valid path");
+    v1(38)(v3(1368).isPlatformEmbedded, "Download OpenH264 file method called outside native app");
+    v1(38)(null != v1(1370).toURLSafe(closure_0), "Could not download OpenH264, fileSrc was not a valid path");
     fileManager = fileManager.fileManager;
     await fileManager.maybeDownloadOpenH264(closure_0, closure_1, closure_2, closure_3);
     return arg1;
@@ -1421,7 +1421,7 @@ obj2.waitForIPCReady = function waitForIPCReady() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1447,7 +1447,7 @@ obj2.waitForIPCReady = function waitForIPCReady() {
                 c3 = 3;
                 return { value: true, done: true };
               } else {
-                const promise = new Promise((callback2) => closure_1_1.requestAnimationFrame(callback2));
+                const promise = new Promise((step) => closure_1_1.requestAnimationFrame(step));
                 c2 = 1;
                 c3 = 1;
                 const obj4 = { value: promise, done: false };
@@ -1565,7 +1565,7 @@ obj2.isAlwaysOnTop = function isAlwaysOnTop(arg0) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1636,11 +1636,11 @@ obj2.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5784).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(5786).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }
-    tmpResult = tmp(1364);
+    tmpResult = tmp(1368);
   }
 };
 obj2.setTrafficLightAppearance = function setTrafficLightAppearance(arg0, arg1) {
@@ -1648,11 +1648,11 @@ obj2.setTrafficLightAppearance = function setTrafficLightAppearance(arg0, arg1) 
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5784).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
+        this.sendIPC(tmp(5786).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_APPEARANCE, arg0, arg1);
       } catch (err) {
       }
     }
-    tmpResult = tmp(1364);
+    tmpResult = tmp(1368);
   }
 };
 obj2.purgeMemory = function purgeMemory() {
@@ -1988,7 +1988,7 @@ obj2.stopCPUProfiling = function stopCPUProfiling() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -2640,7 +2640,7 @@ obj2.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

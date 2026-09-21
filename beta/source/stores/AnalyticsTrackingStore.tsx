@@ -1,17 +1,17 @@
-// Module ID: 7702
-// Function ID: 7703
+// Module ID: 7707
+// Function ID: 7708
 // Name: stores/AnalyticsTrackingStore
-// Dependencies: [502, 1074, 1249, 573, 7703, 1241, 7714, 7715, 2]
+// Dependencies: [502, 1078, 1253, 577, 7708, 1245, 7719, 7720, 2]
 
-// Module 7702 (stores/AnalyticsTrackingStore)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7703 */;
+// Module 7707 (stores/AnalyticsTrackingStore)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtils2 from "AnalyticsUtils" /* 1245 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7708 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const AnalyticsUtils = fn(1249);
+const AnalyticsUtils = fn(1253);
 const obj2 = {
   dispatcher: DispatcherDefault,
   actionHandler: {
@@ -37,7 +37,7 @@ const obj2 = {
       return discord_common_AnalyticsUtils.AnalyticsActionHandlers.handleSetAnalyticsToken(arg0);
     }
   },
-  TRACKING_URL: fn(1074).Endpoints.TRACK,
+  TRACKING_URL: fn(1078).Endpoints.TRACK,
   waitFor: null,
   getFingerprint: AuthenticationStore.getFingerprint,
   getSessionId() {
@@ -53,8 +53,8 @@ const obj2 = {
   getLaunchSignature() {
     return AnalyticsUtils2.launchSignature;
   },
-  scheduleWhenIdle: fn(7714).requestSafeIdleCallback,
-  sendUnloadRequest: fn(7715).sendUnloadRequest
+  scheduleWhenIdle: fn(7719).requestSafeIdleCallback,
+  sendUnloadRequest: fn(7720).sendUnloadRequest
 };
 const items = [AuthenticationStore];
 obj2.waitFor = items;

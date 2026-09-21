@@ -1,42 +1,119 @@
 // Module ID: 1568
 // Function ID: 1569
-// Dependencies: [19, 1514]
-// Exports: useFocusedListenersChildrenAdapter
+// Dependencies: [19, 1518, 1522, 1569]
+// Exports: useOnAction
 
 // Module 1568
-import NavigationBuilderContext from "NavigationBuilderContext" /* 1514 */;
+import _mod1569 from "module_1569" /* 1569 */;
 import noop from "module_19" /* 19 */;
 
 require = arg1;
 
-export const useFocusedListenersChildrenAdapter = function useFocusedListenersChildrenAdapter(navigation) {
-  navigation = navigation.navigation;
-  const focusedListeners = navigation.focusedListeners;
-  const addListener = noop.useContext(NavigationBuilderContext.NavigationBuilderContext).addListener;
-  const items = [focusedListeners, navigation];
-  const callback = noop.useCallback((fn) => {
-    if (navigation.isFocused()) {
-      for (const item10012 of focusedListeners) {
-        let item10012Result = item10012(arg0);
-        let handled = item10012Result.handled;
-        if (handled) {
-          let obj2 = { handled, result: tmp5 };
-          obj.return();
-          return obj2;
+export const useOnAction = function useOnAction(router) {
+  router = router.router;
+  const getState = router.getState;
+  const setState = router.setState;
+  const key = router.key;
+  const actionListeners = router.actionListeners;
+  const beforeRemoveListeners = router.beforeRemoveListeners;
+  const routerConfigOptions = router.routerConfigOptions;
+  const emitter = router.emitter;
+  const context = setState.useContext(router(getState[1]).NavigationBuilderContext);
+  const onAction = context.onAction;
+  const onRouteFocus = context.onRouteFocus;
+  const addListener = context.addListener;
+  const onDispatchAction = context.onDispatchAction;
+  const flushUpdates = context.flushUpdates;
+  const context1 = setState.useContext(router(getState[2]).DeprecatedNavigationInChildContext);
+  setState.useRef(routerConfigOptions);
+  const insertionEffect = setState.useInsertionEffect(() => {
+    closure_14.current = routerConfigOptions;
+  });
+  const items = [actionListeners, beforeRemoveListeners, emitter, flushUpdates, getState, context1, key, onAction, onDispatchAction, onRouteFocus, router, setState];
+  const callback = setState.useCallback((target) => {
+    let set = arg1;
+    if (arg1 === undefined) {
+      const _Set = Set;
+      set = new Set();
+    }
+    flushUpdates();
+    const tmp6 = getState();
+    if (set.has(tmp6.key)) {
+      return false;
+    } else {
+      set.add(tmp6.key);
+      if (typeof target.target !== "string") {
+        const stateForAction = router.getStateForAction(tmp6, target, ref.current);
+        let tmp12 = stateForAction;
+        if (null === stateForAction) {
+          tmp12 = stateForAction;
+          if (target.target === tmp6.key) {
+            tmp12 = tmp6;
+          }
+        }
+        let tmp13 = null !== tmp12;
+        if (tmp13) {
+          tmp13 = false !== tmp12.stale;
+        }
+        let rehydratedState = tmp12;
+        if (tmp13) {
+          rehydratedState = obj2.getRehydratedState(tmp12, tmp9.current);
+        }
+        if (null !== rehydratedState) {
+          if (tmp6 !== rehydratedState) {
+            const obj3 = _mod1569;
+            if (obj3.shouldPreventRemove(emitter, beforeRemoveListeners, tmp6.routes, rehydratedState.routes, target)) {
+              onDispatchAction(target, true);
+              return true;
+            } else if (getState() !== tmp6) {
+              const _Set2 = Set;
+              const set1 = new Set();
+              return callback(target, set1);
+            } else {
+              onDispatchAction(target, false);
+              setState(rehydratedState);
+            }
+          } else {
+            onDispatchAction(target, true);
+          }
+          if (undefined !== onRouteFocus) {
+            let result = obj2.shouldActionChangeFocus(target);
+            if (result) {
+              result = undefined !== key;
+            }
+            if (result) {
+              tmp32(key);
+            }
+          }
+          return true;
+        }
+        tmp9 = ref;
+      }
+      if (undefined !== onAction) {
+        if (onAction(target, set)) {
+          return true;
         }
       }
-      const obj3 = { handled: true, result: fn(navigation) };
-      return obj3;
-    } else {
-      return { handled: false, result: null };
+      if (typeof target.target !== "string") {
+        return false;
+      }
+      let diff = actionListeners.length - 1;
+      if (0 <= diff) {
+        while (!actionListeners[diff](target, set)) {
+          diff = diff - 1;
+        }
+        return true;
+      }
     }
   }, items);
+  const onPreventRemove = router(getState[3]).useOnPreventRemove({ getState, emitter, beforeRemoveListeners });
   const items1 = [addListener, callback];
-  const effect = noop.useEffect(() => {
+  const effect = setState.useEffect(() => {
     let tmpResult;
     if (addListener != null) {
-      tmpResult = tmp("focus", callback);
+      tmpResult = tmp("action", callback);
     }
     return tmpResult;
   }, items1);
+  return callback;
 };

@@ -1,10 +1,11 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15108
+// Function ID: 15109
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8233, 21, 1243, 1248, 4379, 12933, 1325, 4454, 11725, 15120, 2]
+// Dependencies: [5, 17, 8238, 21, 1247, 1252, 558, 568, 4383, 12827, 1329, 4458, 11594, 15109, 2]
 
-// Module 15119 (StaffOnlyFindYourFriendsDeletionSetting)
-import _mod4379 from "module_4379" /* 4379 */;
+// Module 15108 (StaffOnlyFindYourFriendsDeletionSetting)
+import c from "c" /* 568 */;
+import _mod4383 from "module_4383" /* 4383 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -12,7 +13,7 @@ function setFindYourFriendsDeletionIsLoading(isLoading) {
   _require = isLoading;
   require("ReactBatchUpdates").batchUpdates(() => state.setState({ isLoading }));
 }
-let closure_8 = async function _onFindYourFriendsDeletionPress(arg0, value) {
+let closure_9 = async function _onFindYourFriendsDeletionPress(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -23,7 +24,7 @@ let closure_8 = async function _onFindYourFriendsDeletionPress(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -57,12 +58,12 @@ let closure_8 = async function _onFindYourFriendsDeletionPress(arg0, value) {
         if (2 === tmp8) {
           c3 = 1;
           closure_128_1 = closure_2;
-          const aPIError = new closure_129_0(closure_129_2[8]).APIError(closure_128_1);
+          const aPIError = new closure_129_0(closure_129_2[10]).APIError(closure_128_1);
           anyErrorMessage = aPIError.getAnyErrorMessage();
           if (null != anyErrorMessage) {
             const obj7 = { key: "FIND_YOUR_FRIENDS_DELETION", content: anyErrorMessage };
-            closure_129_1(closure_129_2[9]).open(obj7);
-            const obj3 = closure_129_1(closure_129_2[9]);
+            closure_129_1(closure_129_2[11]).open(obj7);
+            const obj3 = closure_129_1(closure_129_2[11]);
           }
         } else if (arg0 === 1) {
           c5 = 3;
@@ -97,20 +98,58 @@ let closure_8 = async function _onFindYourFriendsDeletionPress(arg0, value) {
 };
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const identity = fn(1243);
+const identity = fn(1247);
 let closure_6 = identity.createWithEqualityFn(() => ({ isLoading: false }));
-const SettingBuilders = fn(11725);
+let ReactCompilerGating = fn(558);
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function e(isLoading) {
+      return isLoading.isLoading;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_6(first, _mod4383.shallow);
+}) : (() => closure_6((isLoading) => isLoading.isLoading, _mod4383.shallow));
+ReactCompilerGating = fn(558);
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = fn(558);
+fn = () => closure_8();
+const SettingBuilders = fn(11594);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const tmp2 = closure_8();
+  if (cResult[0] !== tmp2) {
+    let tmp4 = null;
+    if (tmp2) {
+      tmp4 = <ActivityIndicator />;
+    }
+    cResult[0] = tmp2;
+    cResult[1] = tmp4;
+    let tmp3 = tmp4;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => {
+  let tmp = null;
+  if (closure_8()) {
+    tmp = <ActivityIndicator />;
+  }
+  return tmp;
+});
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
-  parent: fn(8233).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6((isLoading) => isLoading.isLoading, _mod4379.shallow);
-  },
+  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useIsDisabled: fn,
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
-    const apply = closure_8.apply;
+    const apply = closure_9.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
     } else {
@@ -118,16 +157,31 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(15120).useStaffOrDeveloperSettingPredicate,
-  useTrailing: function useIsFindYourFriendsDeletionTrailing() {
+  usePredicate: fn(15109).useStaffOrDeveloperSettingPredicate,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    const tmp2 = closure_8();
+    if (cResult[0] !== tmp2) {
+      let tmp4 = null;
+      if (tmp2) {
+        tmp4 = <ActivityIndicator />;
+      }
+      cResult[0] = tmp2;
+      cResult[1] = tmp4;
+      let tmp3 = tmp4;
+    } else {
+      tmp3 = cResult[1];
+    }
+    return tmp3;
+  }) : (() => {
     let tmp = null;
-    if (closure_6((isLoading) => isLoading.isLoading, _mod4379.shallow)) {
+    if (closure_8()) {
       tmp = <ActivityIndicator />;
     }
     return tmp;
-  }
+  })
 });
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
 
 export default pressable;

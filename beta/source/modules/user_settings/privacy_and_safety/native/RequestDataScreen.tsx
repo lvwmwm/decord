@@ -1,23 +1,46 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15128
+// Function ID: 15129
 // Name: RequestDataScreen
-// Dependencies: [19, 17, 21, 4756, 576, 15140, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 15129, 2]
 
-// Module 15139 (RequestDataScreen)
-import nativeDefault from "native" /* 576 */;
-import RequestDataContentDefault from "RequestDataContent" /* 15140 */;
+// Module 15128 (RequestDataScreen)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import RequestDataContentDefault from "RequestDataContent" /* 15129 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 get_ActivityIndicator = fn(17);
-({ View: c2, StyleSheet } = get_ActivityIndicator);
+({ View: c3, StyleSheet } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 const obj = { container: null };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.container = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_4 = createStyles.createStyles(obj);
+let closure_5 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/RequestDataScreen.tsx");
 
-export default noop.memo(() => <React2 style={closure_4().container}>{jsx(RequestDataContentDefault, {})}</React2>);
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  const tmp3 = closure_5();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = jsx(RequestDataContentDefault, {});
+    cResult[0] = tmp7;
+    let first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp3.container) {
+    const obj2 = { style: tmp3.container, children: first };
+    const tmp11 = <React3 style={tmp3.container}>{first}</React3>;
+    cResult[1] = tmp3.container;
+    cResult[2] = tmp11;
+    let tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => <React3 style={closure_5().container}>{jsx(RequestDataContentDefault, {})}</React3>));

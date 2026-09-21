@@ -1,12 +1,12 @@
-// Module ID: 18324
-// Function ID: 18325
+// Module ID: 18327
+// Function ID: 18328
 // Name: SafetyFlowsActionCreators
-// Dependencies: [5, 1074, 4949, 1249, 4657, 2]
+// Dependencies: [5, 1078, 4951, 1253, 4660, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 18324 (SafetyFlowsActionCreators)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
+// Module 18327 (SafetyFlowsActionCreators)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4951 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -43,7 +43,7 @@ let closure_7 = async function _resendVerificationCode(flow_id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ let closure_7 = async function _resendVerificationCode(flow_id) {
     }
   })();
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsActionCreators.tsx");
 

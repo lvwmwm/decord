@@ -1,11 +1,11 @@
-// Module ID: 7353
-// Function ID: 7354
+// Module ID: 7355
+// Function ID: 7356
 // Name: ConnectedAppsStore
-// Dependencies: [504, 12, 573, 2]
+// Dependencies: [504, 12, 577, 2]
 
-// Module 7353 (ConnectedAppsStore)
+// Module 7355 (ConnectedAppsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const require = globalThis.__r;
 

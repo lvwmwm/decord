@@ -1,18 +1,18 @@
-// Module ID: 11132
-// Function ID: 11133
+// Module ID: 11174
+// Function ID: 11175
 // Name: PeopleUtils
-// Dependencies: [4405, 1074, 11133, 10003, 5640, 7541, 11134, 11135, 573, 4600, 2]
+// Dependencies: [4409, 1078, 11175, 10009, 5642, 7543, 11176, 11177, 577, 4603, 2]
 
-// Module 11132 (PeopleUtils)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10003 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 11133 */;
-import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 11135 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+// Module 11174 (PeopleUtils)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 11175 */;
+import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 11177 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
 
 require = fn;
-const AbortCodes = fn(1074).AbortCodes;
+const AbortCodes = fn(1078).AbortCodes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/people/PeopleUtils.tsx");
 

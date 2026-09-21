@@ -1,30 +1,111 @@
-// Module ID: 10636
-// Function ID: 10637
+// Module ID: 10669
+// Function ID: 10670
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 10541, 10576, 1115, 10580, 6869, 1177, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 10654, 10493, 1119, 10497, 6863, 1181, 2]
 
-// Module 10636 (GIFPickerNoResults)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10541 */;
-import SearchEmpty from "SearchEmpty" /* 10576 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10580 */;
+// Module 10669 (GIFPickerNoResults)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import SearchEmpty from "SearchEmpty" /* 10493 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10497 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10654 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
-fn(1074).GIFPickerResultTypes;
+fn(1078).GIFPickerResultTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
-const obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
+let obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
 let closure_7 = createStyles.createStyles(obj);
-const obj4 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
+const ReactCompilerGating = fn(558);
+let obj4 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerNoResults.tsx");
 
-export default noop.memo(function GIFPickerNoResults(inActionSheet) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(16);
+  ({ categoryType, inActionSheet } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { hasCategories: false };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault(first).safeAreaBottomKeyboardAware;
+  if (cResult[1] !== safeAreaBottomKeyboardAware) {
+    const obj3 = { paddingBottom: safeAreaBottomKeyboardAware, flex: 1 };
+    cResult[1] = safeAreaBottomKeyboardAware;
+    cResult[2] = obj3;
+    let tmp6 = obj3;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const searchEmptySource = SearchEmpty.useSearchEmptySource();
+  if (cResult[3] !== categoryType) {
+    if (categoryType === GIFPickerResultTypes.FAVORITES) {
+      const intl2 = tmp(1119).intl;
+      let stringResult = intl2.string(tmp(1119).t.ZH4o6l);
+    } else {
+      const intl = tmp(1119).intl;
+      stringResult = intl.string(tmp(1119).t["5dX4UM"]);
+    }
+    cResult[3] = categoryType;
+    cResult[4] = stringResult;
+  } else {
+    const modalDismissGuardRefreshControl = tmp(10497).useModalDismissGuardRefreshControl();
+    if (inActionSheet) {
+      let BottomSheetScrollView = tmp(6863).BottomSheetScrollView;
+    } else {
+      BottomSheetScrollView = ScrollView;
+    }
+    if (cResult[5] === searchEmptySource) {
+      if (cResult[6] === tmp8) {
+        if (cResult[7] === tmp4.emptyStateBody) {
+          if (cResult[8] === tmp4.emptyStateContainer) {
+            if (cResult[9] === tmp4.emptyStateImage) {
+              let tmp14 = cResult[10];
+            }
+            if (cResult[11] === BottomSheetScrollView) {
+              if (cResult[12] === tmp6) {
+                if (cResult[13] === tmp13) {
+                  if (cResult[14] === tmp14) {
+                    let tmp17 = cResult[15];
+                  }
+                  return tmp17;
+                }
+              }
+            }
+            const obj4 = { contentContainerStyle: tmp6, keyboardShouldPersistTaps: "always", refreshControl: tmp13, children: tmp14 };
+            const tmp19 = <BottomSheetScrollView contentContainerStyle={tmp6} keyboardShouldPersistTaps="always" refreshControl={tmp13}>{tmp14}</BottomSheetScrollView>;
+            cResult[11] = BottomSheetScrollView;
+            cResult[12] = tmp6;
+            cResult[13] = tmp13;
+            cResult[14] = tmp14;
+            cResult[15] = tmp19;
+            tmp17 = tmp19;
+          }
+        }
+      }
+    }
+    const obj5 = { source: searchEmptySource, body: cResult[4], bodyStyle: null, containerStyle: null, imageStyle: null };
+    ({ emptyStateBody: obj6.bodyStyle, emptyStateContainer: obj6.containerStyle, emptyStateImage: obj6.imageStyle } = tmp4);
+    const tmp16 = jsx(tmp(1181).RefreshEmptyState, { source: searchEmptySource, body: cResult[4], bodyStyle: null, containerStyle: null, imageStyle: null });
+    cResult[5] = searchEmptySource;
+    cResult[6] = cResult[4];
+    cResult[7] = tmp4.emptyStateBody;
+    cResult[8] = tmp4.emptyStateContainer;
+    cResult[9] = tmp4.emptyStateImage;
+    cResult[10] = tmp16;
+    tmp14 = tmp16;
+    const tmpResult2 = tmp(10497);
+  }
+}) : ((inActionSheet) => {
   inActionSheet = inActionSheet.inActionSheet;
   const tmp = closure_7();
   const safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault({ hasCategories: false }).safeAreaBottomKeyboardAware;
@@ -32,15 +113,15 @@ export default noop.memo(function GIFPickerNoResults(inActionSheet) {
   const memo = noop.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
   const searchEmptySource = SearchEmpty.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
-    const intl2 = tmp4(1115).intl;
-    let stringResult = intl2.string(tmp4(1115).t.ZH4o6l);
+    const intl2 = tmp4(1119).intl;
+    let stringResult = intl2.string(tmp4(1119).t.ZH4o6l);
   } else {
-    const intl = tmp4(1115).intl;
-    stringResult = intl.string(tmp4(1115).t["5dX4UM"]);
+    const intl = tmp4(1119).intl;
+    stringResult = intl.string(tmp4(1119).t["5dX4UM"]);
   }
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6869).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6863).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -52,4 +133,4 @@ export default noop.memo(function GIFPickerNoResults(inActionSheet) {
   obj2.refreshControl = tmp9;
   obj2.children = jsx(native.RefreshEmptyState, { source: searchEmptySource, body: stringResult, bodyStyle: tmp.emptyStateBody, containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateImage });
   return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={null}>{null}</BottomSheetScrollView>;
-});
+}));

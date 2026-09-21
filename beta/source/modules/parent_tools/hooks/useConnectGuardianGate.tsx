@@ -1,23 +1,259 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17863
+// Function ID: 17864
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 7779, 504, 7781, 5203, 2]
-// Exports: useConnectGuardianGate
+// Dependencies: [32, 19, 7784, 558, 568, 504, 7786, 5203, 2]
 
-// Module 17860 (useConnectGuardianGate)
+// Module 17863 (useConnectGuardianGate)
 import initialize from "initialize" /* 504 */;
 import useMountEffectDefault from "useMountEffect" /* 5203 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
 
 const require = globalThis.__r;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");
 
-export const useConnectGuardianGate = function useConnectGuardianGate() {
+export const useConnectGuardianGate = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function s() {
+      return { linkCode: FamilyCenterStore.getLinkCode(), expiresAt: FamilyCenterStore.getLinkCodeExpiresAt() };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  let obj = require("c");
+  const stateFromStoresObject = require("initialize").useStateFromStoresObject(tmp4, tmp5);
+  ({ linkCode, expiresAt } = stateFromStoresObject);
+  const tmp9 = _slicedToArray(noop.useState(false), 2);
+  _require = tmp9[1];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function c() {
+      const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+      let tmp2 = null != FamilyCenterStore.getLinkCode() && null != linkCodeExpiresAt;
+      if (tmp2) {
+        const _Date = Date;
+        tmp2 = linkCodeExpiresAt > Date.now();
+      }
+      return tmp2;
+    };
+    cResult[2] = fn2;
+    let tmp10 = fn2;
+  } else {
+    tmp10 = cResult[2];
+  }
+  const tmpResult = require("initialize");
+  importDefault = _slicedToArray(noop.useState(tmp10), 2)[1];
+  dependencyMap = obj3.useRef(0);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+    cResult[3] = S;
+    const tmp12 = S;
+  } else {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+  }
+  useMountEffectDefault(tmp12);
+  if (tmp9[0]) {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          sum = closure_2.current + 1;
+          closure_2.current = sum;
+          closure_0 = sum;
+          tmp2 = closure_0(false);
+          obj = closure_0(closure_2[6]);
+          linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+          nextPromise = linkCodeForCurrentUser.then(() => {
+            if (sum === ref.current) {
+              sum(false);
+              closure_1(true);
+            }
+          });
+          catchPromise = nextPromise.catch(() => {
+            if (sum === ref.current) {
+              const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+              if (null != FamilyCenterStore.getLinkCode()) {
+                if (null != linkCodeExpiresAt) {
+                  const _Date = Date;
+                  if (linkCodeExpiresAt > Date.now()) {
+                    closure_1(true);
+                  }
+                }
+              }
+              sum(true);
+            }
+          });
+          return;
+        }
+      }
+      cResult[4] = tmp15;
+    } else {
+      class S {
+        constructor() {
+          sum = closure_2.current + 1;
+          closure_2.current = sum;
+          closure_0 = sum;
+          tmp2 = closure_0(false);
+          obj = closure_0(closure_2[6]);
+          linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+          nextPromise = linkCodeForCurrentUser.then(() => {
+            if (sum === ref.current) {
+              sum(false);
+              closure_1(true);
+            }
+          });
+          catchPromise = nextPromise.catch(() => {
+            if (sum === ref.current) {
+              const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+              if (null != FamilyCenterStore.getLinkCode()) {
+                if (null != linkCodeExpiresAt) {
+                  const _Date = Date;
+                  if (linkCodeExpiresAt > Date.now()) {
+                    closure_1(true);
+                  }
+                }
+              }
+              sum(true);
+            }
+          });
+          return;
+        }
+      }
+    }
+  } else {
+    class S {
+      constructor() {
+        sum = closure_2.current + 1;
+        closure_2.current = sum;
+        closure_0 = sum;
+        tmp2 = closure_0(false);
+        obj = closure_0(closure_2[6]);
+        linkCodeForCurrentUser = obj.getLinkCodeForCurrentUser();
+        nextPromise = linkCodeForCurrentUser.then(() => {
+          if (sum === ref.current) {
+            sum(false);
+            closure_1(true);
+          }
+        });
+        catchPromise = nextPromise.catch(() => {
+          if (sum === ref.current) {
+            const linkCodeExpiresAt = FamilyCenterStore.getLinkCodeExpiresAt();
+            if (null != FamilyCenterStore.getLinkCode()) {
+              if (null != linkCodeExpiresAt) {
+                const _Date = Date;
+                if (linkCodeExpiresAt > Date.now()) {
+                  closure_1(true);
+                }
+              }
+            }
+            sum(true);
+          }
+        });
+        return;
+      }
+    }
+  }
+}) : (() => {
   const items = [FamilyCenterStore];
   const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => ({ linkCode: FamilyCenterStore.getLinkCode(), expiresAt: FamilyCenterStore.getLinkCodeExpiresAt() }));
   ({ linkCode, expiresAt } = stateFromStoresObject);
@@ -42,7 +278,7 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
     const obj = require("FamilyCenterActionCreators");
     linkCodeForCurrentUser.then(() => {
       if (sum === ref.current) {
-        require(false);
+        _require(false);
         closure_1(true);
       }
     }).catch(() => {
@@ -56,7 +292,7 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
             }
           }
         }
-        require(true);
+        _require(true);
       }
     });
   }, []);
@@ -72,4 +308,4 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
     obj2 = { state: "loading" };
   }
   return obj2;
-};
+});

@@ -1,28 +1,329 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17160
+// Function ID: 17161
 // Name: PeopleScreen
-// Dependencies: [5, 19, 12619, 12593, 8122, 8121, 21, 12594, 504, 17116, 17112, 4769, 12612, 17158, 17108, 17120, 2]
+// Dependencies: [5, 19, 12513, 12487, 8127, 8126, 21, 558, 568, 12488, 504, 17119, 17115, 4771, 12506, 17161, 17111, 17123, 2]
 
-// Module 17157 (PeopleScreen)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12612 */;
+// Module 17160 (PeopleScreen)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12619 */;
-import SearchQueryStore from "SearchQueryStore" /* 12593 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12513 */;
+import SearchQueryStore from "SearchQueryStore" /* 12487 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const SearchConstants = fn(8122);
+const SearchConstants = fn(8127);
 ({ SearchListItemTypes: closure_7, USER_ESTIMATED_ITEM_SIZE: closure_8 } = SearchConstants);
-let closure_9 = fn(8121).SearchResultContentEntityTypes;
+const constants2 = fn(8126).SearchResultContentEntityTypes;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/PeopleScreen.tsx");
 
-export default noop.memo(function PeopleScreen(searchContext) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+  const cResult = require("c").c(31);
   searchContext = searchContext.searchContext;
   _require = searchContext;
+  if (cResult[0] !== searchContext) {
+    const searchContextId = tmp(tmp2[9]).getSearchContextId(searchContext);
+    cResult[0] = searchContext;
+    cResult[1] = searchContextId;
+    let tmp4 = searchContextId;
+    const tmpResult = tmp(tmp2[9]);
+  } else {
+    tmp4 = cResult[1];
+  }
+  importDefault = tmp4;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [arr4];
+    cResult[2] = items;
+    let tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] !== tmp4) {
+    const fn = function v() {
+      return SearchPeopleTabStore.getResults(closure_1);
+    };
+    cResult[3] = tmp4;
+    cResult[4] = fn;
+    let tmp8 = fn;
+  } else {
+    tmp8 = cResult[4];
+  }
+  let obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(tmp6, tmp8);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [SearchQueryStore];
+    cResult[5] = items1;
+    let tmp9 = items1;
+  } else {
+    tmp9 = cResult[5];
+  }
+  if (cResult[6] !== searchContext) {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+    cResult[6] = searchContext;
+    cResult[7] = E;
+    const tmp11 = E;
+  } else {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+  }
+  const tmpResult6 = require("initialize");
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp9, tmp11);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+    tmp14[0] = closure_8;
+    cResult[8] = tmp14;
+    const tmp13 = tmp14;
+  } else {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+  }
+  const tmpResult7 = require("initialize");
+  const fullscreenPlaceholderCount = require("usePlaceholderStyles").useFullscreenPlaceholderCount(tmp13);
+  if (cResult[9] !== searchContext) {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+    tmp18[0] = searchContext;
+    cResult[9] = searchContext;
+    cResult[10] = tmp18;
+    const tmp17 = tmp18;
+  } else {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+  }
+  const tmpResult8 = require("usePlaceholderStyles");
+  onPressGroupDMItem = require("useOnPressSearchItem").useOnPressGroupDMItem(tmp17);
+  if (cResult[11] !== searchContext) {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+    tmp21[0] = searchContext;
+    cResult[11] = searchContext;
+    cResult[12] = tmp21;
+    const tmp20 = tmp21;
+  } else {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+  }
+  const tmpResult9 = require("useOnPressSearchItem");
+  const onPressDMItem = require("useOnPressSearchItem").useOnPressDMItem(tmp20);
+  if (cResult[13] === onPressDMItem) {
+    class E {
+      constructor() {
+        return closure_6.isInitialSearchQuery(closure_0);
+      }
+    }
+    noop = tmp23;
+    if (cResult[16] === onPressGroupDMItem) {
+      class E {
+        constructor() {
+          return closure_6.isInitialSearchQuery(closure_0);
+        }
+      }
+      SearchQueryStore = tmp24;
+      if (cResult[19] === tmp23) {
+        class E {
+          constructor() {
+            return closure_6.isInitialSearchQuery(closure_0);
+          }
+        }
+      }
+      class D {
+        constructor(arg0, arg1) {
+          obj = closure_1(closure_2[14]);
+          obj1 = { searchContext: closure_0, channelId: searchContext, index: arg1, entityType: closure_9.CHANNEL };
+          result = obj.trackSearchResultClicked(obj1);
+          tmp2 = closure_2(searchContext);
+          return;
+        }
+      }
+      let item = stateFromStores.forEach((title) => {
+        title = title.title;
+        const items = title.items;
+        if (null != title) {
+          if (items.length > 0) {
+            let element = { type: constants.SECTION, props: null };
+            let obj = { title };
+            element.props = obj;
+            arr4.push(element);
+          }
+        }
+        const item = items.forEach((type, index) => {
+          closure_0 = index;
+          if ("user" in type) {
+            ({ user, firstMatch } = type);
+            const element = { type: constants.DM, section: title, props: null };
+            const obj = { type: type.type, user, nickname: null, onPress: null };
+            let tmp8;
+            if (user.username !== firstMatch) {
+              tmp8 = firstMatch;
+            }
+            obj.nickname = tmp8;
+            obj.onPress = function onPress(arg0) {
+              return closure_2_4(arg0, closure_0);
+            };
+            element.props = obj;
+            arr4.push(element);
+          } else {
+            const element1 = { type: constants.GROUP_DM, section: title, props: null };
+            const obj2 = {
+              channel: type,
+              onPress(arg0) {
+                  return closure_2_6(arg0, closure_0);
+                }
+            };
+            element1.props = obj2;
+            arr4.push(element1);
+          }
+        });
+      });
+      if (!stateFromStores1) {
+        class E {
+          constructor() {
+            return closure_6.isInitialSearchQuery(closure_0);
+          }
+        }
+        if (0 === arr4.length) {
+          class E {
+            constructor() {
+              return closure_6.isInitialSearchQuery(closure_0);
+            }
+          }
+          class D {
+            constructor(arg0, arg1) {
+              obj = closure_1(closure_2[14]);
+              obj1 = { searchContext: closure_0, channelId: searchContext, index: arg1, entityType: closure_9.CHANNEL };
+              result = obj.trackSearchResultClicked(obj1);
+              tmp2 = closure_2(searchContext);
+              return;
+            }
+          }
+        }
+      }
+      cResult[19] = tmp23;
+      cResult[20] = tmp24;
+      cResult[21] = stateFromStores1;
+      cResult[22] = fullscreenPlaceholderCount;
+      cResult[23] = stateFromStores;
+      cResult[24] = arr4;
+    }
+    class D {
+      constructor(arg0, arg1) {
+        obj = closure_1(closure_2[14]);
+        obj1 = { searchContext: closure_0, channelId: searchContext, index: arg1, entityType: closure_9.CHANNEL };
+        result = obj.trackSearchResultClicked(obj1);
+        tmp2 = closure_2(searchContext);
+        return;
+      }
+    }
+    cResult[16] = onPressGroupDMItem;
+    cResult[17] = searchContext;
+    cResult[18] = D;
+  }
+  _require = onPressDMItem((searchContext, arg1) => {
+    closure_1 = arg1;
+    c4 = 0;
+    c5 = 0;
+    return (function*(arg0, value) {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_2 = tmp2;
+              closure_130_0 = searchContext;
+              closure_130_1 = closure_1;
+              closure_130_2 = undefined;
+              c4 = 1;
+              c5 = 1;
+              const obj5 = { value: closure_1(onPressGroupDMItem[13]).getOrEnsurePrivateChannel(searchContext), done: false };
+              return obj5;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            closure_130_2 = value;
+            const obj7 = { searchContext, userId: closure_130_0, channelId: closure_130_2, index: closure_130_1, entityType: constants2.CHANNEL };
+            const result = closure_1(onPressGroupDMItem[14]).trackSearchResultClicked(obj7);
+            tmp5(closure_130_0, closure_130_2);
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp10) {
+          c5 = tmp;
+          throw tmp10;
+        }
+      }
+    })();
+  });
+  const fn2 = function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  };
+  cResult[13] = onPressDMItem;
+  cResult[14] = searchContext;
+  cResult[15] = fn2;
+}) : ((searchContext) => {
+  searchContext = searchContext.searchContext;
+  let _require = searchContext;
   let stateFromStores;
   let onPressGroupDMItem;
   let onPressDMItem;
@@ -56,7 +357,7 @@ export default noop.memo(function PeopleScreen(searchContext) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -77,7 +378,7 @@ export default noop.memo(function PeopleScreen(searchContext) {
               closure_130_2 = undefined;
               c4 = 1;
               c5 = 1;
-              const obj5 = { value: closure_1(stateFromStores[11]).getOrEnsurePrivateChannel(searchContext), done: false };
+              const obj5 = { value: closure_1(stateFromStores[13]).getOrEnsurePrivateChannel(searchContext), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -90,10 +391,10 @@ export default noop.memo(function PeopleScreen(searchContext) {
           } else {
             closure_130_2 = value;
             const obj7 = { searchContext, userId: closure_130_0, channelId: closure_130_2, index: closure_130_1, entityType: constants.CHANNEL };
-            const result = closure_1(stateFromStores[12]).trackSearchResultClicked(obj7);
+            const result = closure_1(stateFromStores[14]).trackSearchResultClicked(obj7);
             onPressDMItem(closure_130_0, closure_130_2);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c5 = tmp;
@@ -188,4 +489,4 @@ export default noop.memo(function PeopleScreen(searchContext) {
     tmp13 = jsx(require("SearchList"), { data: memo });
   }
   return tmp13;
-});
+}));

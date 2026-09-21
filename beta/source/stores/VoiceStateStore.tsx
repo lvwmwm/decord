@@ -1,15 +1,15 @@
-// Module ID: 4775
-// Function ID: 4776
+// Module ID: 4777
+// Function ID: 4778
 // Name: VoiceStateStore
-// Dependencies: [32, 4776, 1074, 4777, 12, 504, 1609, 573, 2]
+// Dependencies: [32, 4778, 1078, 4779, 12, 504, 1613, 577, 2]
 
-// Module 4775 (VoiceStateStore)
+// Module 4777 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
 import _slicedToArray from "module_32" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4776 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4778 */;
 
 require = fn;
 function updateVoiceState(arg0, arg1, fn) {
@@ -150,8 +150,8 @@ function handleGuildCreateOrDelete(guild) {
   });
   delete tmp2[tmp];
 }
-const ME = fn(1074).ME;
-const VoicePlatforms = fn(4777).VoicePlatforms;
+const ME = fn(1078).ME;
+const VoicePlatforms = fn(4779).VoicePlatforms;
 let c9 = 0;
 let closure_10 = 0;
 const dependencyMap = {};
@@ -343,10 +343,10 @@ prototype["hasVideo"] = function hasVideo(arg0) {
   }
   return Object.values(tmp2).length > 0;
 };
-prototype["getVoicePlatformForChannel"] = function getVoicePlatformForChannel(channelId, id) {
+prototype["getVoicePlatformForChannel"] = function getVoicePlatformForChannel(id, id2) {
   let tmp = null != sessionId;
   if (tmp) {
-    channelId = undefined;
+    let channelId;
     if (dependencyMap4[id] != null) {
       if (tmp4[sessionId] != null) {
         channelId = tmp7.channelId;
@@ -354,12 +354,12 @@ prototype["getVoicePlatformForChannel"] = function getVoicePlatformForChannel(ch
     }
     tmp = channelId;
   }
-  if (id === id) {
-    if (channelId === tmp) {
+  if (id2 === id) {
+    if (id === tmp) {
       MetaQuestUtils.isMetaQuest() ? VoicePlatforms.QUEST : VoicePlatforms.MOBILE;
     }
   }
-  return closure_17["" + id + ":" + channelId];
+  return closure_17["" + id2 + ":" + id];
 };
 Object.defineProperty(prototype, "userHasBeenMovedVersion", {
   get: function userHasBeenMovedVersion() {

@@ -1,11 +1,11 @@
-// Module ID: 4899
-// Function ID: 4900
+// Module ID: 4901
+// Function ID: 4902
 // Name: PopoutWindowStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 4899 (PopoutWindowStore)
+// Module 4901 (PopoutWindowStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const PersistedStore = initializeDefault.PersistedStore;
 class PopoutWindowStore extends PersistedStore {

@@ -1,35 +1,89 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15462
+// Function ID: 15463
 // Name: QuestDockBountyBackground
-// Dependencies: [19, 15362, 21, 15369, 11548, 4457, 576, 672, 15469, 2]
+// Dependencies: [19, 15351, 21, 558, 568, 15358, 10570, 4462, 580, 676, 15458, 2]
 
-// Module 15473 (QuestDockBountyBackground)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import AssetUtils from "AssetUtils" /* 11548 */;
+// Module 15462 (QuestDockBountyBackground)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import _modDef676 from "module_676" /* 676 */;
+import useToken from "useToken" /* 4462 */;
+import AssetUtils from "AssetUtils" /* 10570 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15358 */;
+import QuestDockVideoBackground from "QuestDockVideoBackground" /* 15458 */;
 import noop from "module_19" /* 19 */;
 
+const QuestDockVideoBackgroundDefault = QuestDockVideoBackground;
+
 require = fn;
-const expandedHeight = fn(15362).QUEST_DOCK_PORTRAIT_MEDIA_EXPANDED_HEIGHT;
+const expandedHeight = fn(15351).QUEST_DOCK_PORTRAIT_MEDIA_EXPANDED_HEIGHT;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyBackground.tsx");
 
-export default noop.memo(function QuestDockBountyBackground(imageUrl) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((previewImageUrl) => {
+  const cResult = c.c(9);
+  previewImageUrl = previewImageUrl.previewImageUrl;
+  const questDockBounty = QuestDockCreativeContext.useQuestDockBounty();
+  if (cResult[0] !== questDockBounty.videoPreview) {
+    const mimetype = tmp(10570).getMimetype(questDockBounty.videoPreview);
+    cResult[0] = questDockBounty.videoPreview;
+    cResult[1] = mimetype;
+    let tmp5 = mimetype;
+    const tmpResult = tmp(10570);
+  } else {
+    tmp5 = cResult[1];
+  }
+  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BRAND);
+  if (cResult[2] !== token) {
+    const tmp7Result = tmp7(676);
+    const hexResult = tmp7Result.mix(token, tmp7(580).unsafe_rawColors.BLACK, 0.77, "rgb").hex();
+    cResult[2] = token;
+    cResult[3] = hexResult;
+    let tmp9 = hexResult;
+    const mixResult = tmp7Result.mix(token, tmp7(580).unsafe_rawColors.BLACK, 0.77, "rgb");
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === tmp9) {
+    if (cResult[5] === questDockBounty.videoPreview) {
+      if (cResult[6] === previewImageUrl) {
+        if (cResult[7] === tmp5) {
+          let tmp13 = cResult[8];
+        }
+        return tmp13;
+      }
+    }
+  }
+  const obj3 = { imageUrl: previewImageUrl, videoUrl: questDockBounty.videoPreview, videoMimetype: tmp5, collapsedMediaMode: null, gradientBaseColor: null, backdropColor: null, expandedHeight: null };
+  const tmpResult2 = useToken;
+  obj3.collapsedMediaMode = QuestDockVideoBackground.QuestDockBackgroundCollapsedMediaMode.HIDDEN;
+  obj3.gradientBaseColor = tmp9;
+  obj3.backdropColor = tmp9;
+  obj3.expandedHeight = expandedHeight;
+  const tmp15 = jsx(QuestDockVideoBackgroundDefault, { imageUrl: previewImageUrl, videoUrl: questDockBounty.videoPreview, videoMimetype: tmp5, collapsedMediaMode: null, gradientBaseColor: null, backdropColor: null, expandedHeight: null });
+  cResult[4] = tmp9;
+  cResult[5] = questDockBounty.videoPreview;
+  cResult[6] = previewImageUrl;
+  cResult[7] = tmp5;
+  cResult[8] = tmp15;
+  tmp13 = tmp15;
+}) : ((imageUrl) => {
   let questDockBounty;
   let token;
-  questDockBounty = questDockBounty(15369).useQuestDockBounty();
+  questDockBounty = questDockBounty(15358).useQuestDockBounty();
   const items = [questDockBounty.videoPreview];
   const memo = noop.useMemo(() => AssetUtils.getMimetype(questDockBounty.videoPreview), items);
-  let obj = questDockBounty(15369);
-  token = questDockBounty(4457).useToken(token(576).colors.BACKGROUND_BRAND);
+  let obj = questDockBounty(15358);
+  token = questDockBounty(4462).useToken(token(580).colors.BACKGROUND_BRAND);
   const items1 = [token];
-  const memo1 = noop.useMemo(() => _modDef672.mix(token, nativeDefault.unsafe_rawColors.BLACK, 0.77, "rgb").hex(), items1);
+  const memo1 = noop.useMemo(() => _modDef676.mix(token, nativeDefault.unsafe_rawColors.BLACK, 0.77, "rgb").hex(), items1);
   const obj3 = { imageUrl: imageUrl.previewImageUrl, videoUrl: questDockBounty.videoPreview, videoMimetype: memo, collapsedMediaMode: null, gradientBaseColor: null, backdropColor: null, expandedHeight: null };
-  const obj2 = questDockBounty(4457);
-  obj3.collapsedMediaMode = questDockBounty(15469).QuestDockBackgroundCollapsedMediaMode.HIDDEN;
+  const obj2 = questDockBounty(4462);
+  obj3.collapsedMediaMode = questDockBounty(15458).QuestDockBackgroundCollapsedMediaMode.HIDDEN;
   obj3.gradientBaseColor = memo1;
   obj3.backdropColor = memo1;
   obj3.expandedHeight = expandedHeight;
-  return jsx(token(15469), { imageUrl: imageUrl.previewImageUrl, videoUrl: questDockBounty.videoPreview, videoMimetype: memo, collapsedMediaMode: null, gradientBaseColor: null, backdropColor: null, expandedHeight: null });
-});
+  return jsx(token(15458), { imageUrl: imageUrl.previewImageUrl, videoUrl: questDockBounty.videoPreview, videoMimetype: memo, collapsedMediaMode: null, gradientBaseColor: null, backdropColor: null, expandedHeight: null });
+}));

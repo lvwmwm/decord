@@ -1,20 +1,21 @@
 // Module ID: 7127
 // Function ID: 7128
-// Dependencies: [7112, 7128]
+// Dependencies: []
 
 // Module 7127
-import _mod7128 from "module_7128" /* 7128 */;
-
-
-export default function _possibleConstructorReturn(arg0, fn) {
-  if (fn) {
-    return fn;
-  }
-  if (undefined !== fn) {
-    const _TypeError = TypeError;
-    const typeError = new TypeError("Derived constructors may only return object or undefined");
-    throw typeError;
+function _setPrototypeOf(arg0, arg1) {
+  if (Object.setPrototypeOf) {
+    const _Object = Object;
+    exports = setPrototypeOf.bind();
   } else {
-    return _mod7128(arg0);
+    exports = (arg0, arg1) => {
+      arg0.__proto__ = arg1;
+      return arg0;
+    };
   }
-};
+  module.exports = exports;
+  return exports(arg0, arg1);
+}
+let exports = _setPrototypeOf;
+
+export default _setPrototypeOf;

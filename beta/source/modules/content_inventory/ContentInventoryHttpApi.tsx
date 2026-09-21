@@ -1,12 +1,12 @@
-// Module ID: 13372
-// Function ID: 13373
+// Module ID: 13375
+// Function ID: 13376
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 8629, 1074, 1271, 4656, 573, 1115, 2]
+// Dependencies: [5, 8634, 1078, 1275, 4659, 577, 1119, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 13372 (ContentInventoryHttpApi)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 13375 (ContentInventoryHttpApi)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_6 = async function _getMyContentInventory(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -46,7 +46,7 @@ let closure_6 = async function _getMyContentInventory(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -122,7 +122,7 @@ let closure_7 = async function _getContentInventoryOutbox(userId, signal) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ let closure_9 = async function _postTrackToContentInventory(connection_id, arg1)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ let closure_9 = async function _postTrackToContentInventory(connection_id, arg1)
         } else {
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         closure_4 = tmp19;
@@ -311,8 +311,8 @@ let closure_9 = async function _postTrackToContentInventory(connection_id, arg1)
     }
   })();
 };
-const ContentInventoryFeedKey = fn(8629).ContentInventoryFeedKey;
-const Endpoints = fn(1074).Endpoints;
+const ContentInventoryFeedKey = fn(8634).ContentInventoryFeedKey;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryHttpApi.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 9651
-// Function ID: 9652
+// Module ID: 9647
+// Function ID: 9648
 // Name: StatusBarManager
-// Dependencies: [17, 12, 1624, 2]
+// Dependencies: [17, 12, 1628, 2]
 
-// Module 9651 (StatusBarManager)
+// Module 9647 (StatusBarManager)
 import _modDef12 from "module_12" /* 12 */;
 import _mod17 from "module_17" /* 17 */;
-import NativeSafeAreaInsetsModuleDefault from "NativeSafeAreaInsetsModule" /* 1624 */;
+import NativeSafeAreaInsetsModuleDefault from "NativeSafeAreaInsetsModule" /* 1628 */;
 import size from "module_2" /* 2 */;
 
 const StatusBar = _mod17.StatusBar;

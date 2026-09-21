@@ -1,14 +1,14 @@
-// Module ID: 16323
-// Function ID: 16324
+// Module ID: 16326
+// Function ID: 16327
 // Name: RemoteAuthUtils
-// Dependencies: [32, 5, 1386, 16321, 2]
+// Dependencies: [32, 5, 1390, 16324, 2]
 // Exports: base64Decode, base64Encode, decodeEncodedUserRecord
 
-// Module 16323 (RemoteAuthUtils)
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 16321 */;
+// Module 16326 (RemoteAuthUtils)
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 16324 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRecord from "UserRecord" /* 1386 */;
+import UserRecord from "UserRecord" /* 1390 */;
 
 let closure_5 = async function _decodeEncodedUserRecord() {
   closure_3 = tmp2;
@@ -55,6 +55,6 @@ export const base64Encode = function base64Encode(arg0) {
   const str2 = btoa(String.fromCharCode.apply(items)).replace(/\//g, "_");
   return btoa(String.fromCharCode.apply(items)).replace(/\//g, "_").replace(/\+/g, "-").replace(/={1,2}$/, "");
 };
-export const base64Decode = function base64Decode(match) {
-  return Uint8Array.from(atob(match), (str) => str.charCodeAt(0));
+export const base64Decode = function base64Decode(placeholder) {
+  return Uint8Array.from(atob(placeholder), (str) => str.charCodeAt(0));
 };

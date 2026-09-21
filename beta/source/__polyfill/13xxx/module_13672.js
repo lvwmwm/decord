@@ -1,9 +1,9 @@
 // Module ID: 13672
 // Function ID: 13673
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 13672
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "fe4737c3dd5ab570ff8c05c7dd4152ca", name: "custom_icons", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300.5, height: 175, scales: [2, 3], hash: "034593f3dac51b7d85899e7191ac5a9f", name: "client_theme", type: "png" });

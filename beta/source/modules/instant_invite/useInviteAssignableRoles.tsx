@@ -1,25 +1,156 @@
-// Module ID: 18256
-// Function ID: 18257
+// Module ID: 18259
+// Function ID: 18260
 // Name: useInviteAssignableRoles
-// Dependencies: [19, 2100, 2099, 4395, 1372, 1074, 504, 4400, 2]
-// Exports: default
+// Dependencies: [19, 2104, 2103, 4399, 1376, 1078, 558, 568, 504, 4404, 2]
 
-// Module 18256 (useInviteAssignableRoles)
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+// Module 18259 (useInviteAssignableRoles)
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const isEveryoneRole = fn(2100).isEveryoneRole;
-const Permissions = fn(1074).Permissions;
+const isEveryoneRole = fn(2104).isEveryoneRole;
+const Permissions = fn(1078).Permissions;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/instant_invite/useInviteAssignableRoles.tsx");
 
-export default function useInviteAssignableRoles(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(9);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildRoleStore, UserStore, PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (null != closure_0) {
+          tmp2 = closure_5;
+          sortedRoles = closure_5.getSortedRoles(tmp.id);
+        } else {
+          sortedRoles = [];
+        }
+        obj = { sortedRoles, currentUser: closure_7.getCurrentUser(), canManageRoles: null };
+        canResult = null != tmp;
+        if (canResult) {
+          tmp4 = closure_6;
+          tmp5 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_ROLES, tmp);
+        }
+        obj.canManageRoles = canResult;
+        return obj;
+      }
+    }
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = R;
+    cResult[3] = items1;
+    let tmp9 = items1;
+    const tmp8 = R;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (null != closure_0) {
+          tmp2 = closure_5;
+          sortedRoles = closure_5.getSortedRoles(tmp.id);
+        } else {
+          sortedRoles = [];
+        }
+        obj = { sortedRoles, currentUser: closure_7.getCurrentUser(), canManageRoles: null };
+        canResult = null != tmp;
+        if (canResult) {
+          tmp4 = closure_6;
+          tmp5 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_ROLES, tmp);
+        }
+        obj.canManageRoles = canResult;
+        return obj;
+      }
+    }
+    tmp9 = cResult[3];
+  }
+  let obj = require("c");
+  const stateFromStoresObject = require("initialize").useStateFromStoresObject(first, tmp8, tmp9);
+  ({ sortedRoles, currentUser } = stateFromStoresObject);
+  if (null != arg0) {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (null != closure_0) {
+          tmp2 = closure_5;
+          sortedRoles = closure_5.getSortedRoles(tmp.id);
+        } else {
+          sortedRoles = [];
+        }
+        obj = { sortedRoles, currentUser: closure_7.getCurrentUser(), canManageRoles: null };
+        canResult = null != tmp;
+        if (canResult) {
+          tmp4 = closure_6;
+          tmp5 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_ROLES, tmp);
+        }
+        obj.canManageRoles = canResult;
+        return obj;
+      }
+    }
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (null != closure_0) {
+          tmp2 = closure_5;
+          sortedRoles = closure_5.getSortedRoles(tmp.id);
+        } else {
+          sortedRoles = [];
+        }
+        obj = { sortedRoles, currentUser: closure_7.getCurrentUser(), canManageRoles: null };
+        canResult = null != tmp;
+        if (canResult) {
+          tmp4 = closure_6;
+          tmp5 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_ROLES, tmp);
+        }
+        obj.canManageRoles = canResult;
+        return obj;
+      }
+    }
+    cResult[4] = tmp12;
+    const tmp11 = tmp12;
+  } else {
+    class R {
+      constructor() {
+        tmp = closure_0;
+        if (null != closure_0) {
+          tmp2 = closure_5;
+          sortedRoles = closure_5.getSortedRoles(tmp.id);
+        } else {
+          sortedRoles = [];
+        }
+        obj = { sortedRoles, currentUser: closure_7.getCurrentUser(), canManageRoles: null };
+        canResult = null != tmp;
+        if (canResult) {
+          tmp4 = closure_6;
+          tmp5 = Permissions;
+          canResult = closure_6.can(Permissions.MANAGE_ROLES, tmp);
+        }
+        obj.canManageRoles = canResult;
+        return obj;
+      }
+    }
+  }
+  return tmp11;
+}) : ((arg0) => {
   _require = arg0;
   const items = [GuildRoleStore, UserStore, PermissionStore];
   const items1 = [arg0];
@@ -45,7 +176,7 @@ export default function useInviteAssignableRoles(arg0) {
     if (null != highestRole) {
       if (null != currentUser) {
         if (canManageRoles) {
-          highestRole = sortedRoles(currentUser[7]).getHighestRole(tmp, tmp2.id);
+          highestRole = sortedRoles(currentUser[9]).getHighestRole(tmp, tmp2.id);
           return sortedRoles.filter((managed) => {
             const tmp = isEveryoneRole(managed);
             let tmp2 = !tmp;
@@ -74,4 +205,4 @@ export default function useInviteAssignableRoles(arg0) {
     }
     return [];
   }, items2);
-};
+});

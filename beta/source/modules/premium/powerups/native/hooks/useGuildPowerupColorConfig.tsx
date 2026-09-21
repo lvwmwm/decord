@@ -1,11 +1,11 @@
-// Module ID: 12802
-// Function ID: 12803
+// Module ID: 12713
+// Function ID: 12714
 // Name: useGuildPowerupColorConfig
-// Dependencies: [576, 2]
+// Dependencies: [580, 2]
 // Exports: default
 
-// Module 12802 (useGuildPowerupColorConfig)
-import nativeDefault from "native" /* 576 */;
+// Module 12713 (useGuildPowerupColorConfig)
+import nativeDefault from "native" /* 580 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupColorConfig.tsx");

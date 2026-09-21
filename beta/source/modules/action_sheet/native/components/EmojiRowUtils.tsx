@@ -1,21 +1,21 @@
-// Module ID: 11982
-// Function ID: 11983
+// Module ID: 11855
+// Function ID: 11856
 // Name: EmojiRowUtils
-// Dependencies: [1074, 1385, 2]
+// Dependencies: [1078, 1389, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 11982 (EmojiRowUtils)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import Constants from "Constants" /* 1074 */;
+// Module 11855 (EmojiRowUtils)
+import FlagUtils from "FlagUtils" /* 1389 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ MessageFlags: c2, MessageStates: c3, MessageTypes: closure_4 } = Constants);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/EmojiRowUtils.tsx");
 
-export const shouldShowEmojiRow = function shouldShowEmojiRow(arg0, message, arg2) {
+export const shouldShowEmojiRow = function shouldShowEmojiRow(arg0, message, isActiveChannelOrUnarchivableThread) {
   let tmp = arg0;
   if (arg0) {
-    tmp = arg2;
+    tmp = isActiveChannelOrUnarchivableThread;
   }
   if (tmp) {
     tmp = message.state !== constants2.SEND_FAILED;

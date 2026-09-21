@@ -1,34 +1,68 @@
-// Module ID: 9496
-// Function ID: 9497
+// Module ID: 9494
+// Function ID: 9495
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1374, 21, 9497, 7679, 5804, 4414, 2]
-// Exports: default
+// Dependencies: [19, 1378, 21, 558, 568, 9495, 7679, 4418, 5802, 2]
 
-// Module 9496 (PremiumFeaturesLogo)
-import PremiumUtils from "PremiumUtils" /* 4414 */;
+// Module 9494 (PremiumFeaturesLogo)
+import c from "c" /* 568 */;
+import PremiumUtils from "PremiumUtils" /* 4418 */;
 import _modDef7679 from "module_7679" /* 7679 */;
-import _modDef9497 from "module_9497" /* 9497 */;
+import _modDef9495 from "module_9495" /* 9495 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const PremiumTypes = fn(1374).PremiumTypes;
+const PremiumTypes = fn(1378).PremiumTypes;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
 
-export default function PremiumFeaturesLogo(premiumType) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(6);
+  ({ premiumType, style } = arg0);
+  if (premiumType === PremiumTypes.TIER_0) {
+    let tmp5 = _modDef9495;
+    let tmp6 = importDefault;
+  } else {
+    tmp5 = _modDef7679;
+    tmp6 = importDefault;
+  }
+  if (cResult[0] !== premiumType) {
+    const premiumTypeDisplayName = PremiumUtils.getPremiumTypeDisplayName(premiumType);
+    cResult[0] = premiumType;
+    cResult[1] = premiumTypeDisplayName;
+    let tmp8 = premiumTypeDisplayName;
+    const tmpResult = PremiumUtils;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === tmp5) {
+    if (cResult[3] === style) {
+      if (cResult[4] === tmp8) {
+        let tmp10 = cResult[5];
+      }
+      return tmp10;
+    }
+  }
+  const tmp11 = jsx(tmp6(5802), { accessible: true, accessibilityLabel: tmp8, accessibilityRole: "header", style, resizeMode: "contain", source: tmp5 });
+  cResult[2] = tmp5;
+  cResult[3] = style;
+  cResult[4] = tmp8;
+  cResult[5] = tmp11;
+  tmp10 = tmp11;
+}) : ((premiumType) => {
   premiumType = premiumType.premiumType;
   if (premiumType === PremiumTypes.TIER_0) {
-    let tmp3 = _modDef9497;
+    let tmp3 = _modDef9495;
     let tmp = importDefault;
   } else {
     tmp = importDefault;
     tmp3 = _modDef7679;
   }
   const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain", source: null };
-  const tmpResult = tmp(5804);
+  const tmpResult = tmp(5802);
   obj.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
   obj.style = premiumType.style;
   obj.source = tmp3;
   return <tmpResult accessible accessibilityLabel={null} accessibilityRole="header" style={null} resizeMode="contain" source={null} />;
-};
+});

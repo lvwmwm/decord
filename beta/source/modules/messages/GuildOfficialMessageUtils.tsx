@@ -1,37 +1,97 @@
-// Module ID: 7509
-// Function ID: 7510
+// Module ID: 7511
+// Function ID: 7512
 // Name: GuildOfficialMessageUtils
-// Dependencies: [2063, 4395, 4749, 1074, 1092, 672, 4605, 4607, 7510, 504, 7511, 7512, 2]
-// Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
+// Dependencies: [2067, 4399, 4751, 1078, 1096, 676, 4608, 4610, 7512, 558, 568, 504, 7513, 7514, 2]
+// Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor
 
-// Module 7509 (GuildOfficialMessageUtils)
-import _modDef672 from "module_672" /* 672 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import ColorUtils from "ColorUtils" /* 4605 */;
-import shared from "shared" /* 4607 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7510 */;
-import ThreadHooks from "ThreadHooks" /* 7511 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 7511 (GuildOfficialMessageUtils)
+import c from "c" /* 568 */;
+import _modDef676 from "module_676" /* 676 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
+import ColorUtils from "ColorUtils" /* 4608 */;
+import shared from "shared" /* 4610 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 7512 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7514 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
-const require = globalThis.__r;
-
+const ThreadHooks = tmp(7513);
 require = fn;
-function useCanManageGuildOfficialMessages(arg0, arg1, location) {
-  _require = arg1;
-  closure_129_0 = arg0;
+let closure_5 = fn(4751).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
+const Constants = fn(1078);
+({ ChannelTypes: metroRequire, GuildFeatures: closure_7, MessageFlags: closure_8, Permissions: closure_9 } = Constants);
+let ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+  _require = guildId;
+  const cResult = require("c").c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function u() {
+      guild = null;
+      if (null != closure_0) {
+        guild = GuildStore.getGuild(tmp);
+      }
+      return guild;
+    };
+    const items1 = [tmp];
+    cResult[1] = tmp;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp8 = items1;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp7, tmp8);
+  if (cResult[4] === location) {
+    if (cResult[5] === tmp) {
+      let tmp10 = cResult[6];
+    }
+    const enabled = GuildOfficialMessagesExperimentDefault.useExperiment(tmp10).enabled;
+    if (cResult[7] === stateFromStores) {
+      if (cResult[8] === enabled) {
+        let tmp12 = cResult[9];
+      }
+      return tmp12;
+    }
+    let hasItem = null != stateFromStores;
+    if (hasItem) {
+      const features = stateFromStores.features;
+      hasItem = features.has(constants2.VERIFIED);
+    }
+    if (hasItem) {
+      hasItem = enabled;
+    }
+    cResult[7] = stateFromStores;
+    cResult[8] = enabled;
+    cResult[9] = hasItem;
+    tmp12 = hasItem;
+  }
+  const obj2 = { guildId, location };
+  cResult[4] = location;
+  cResult[5] = guildId;
+  cResult[6] = obj2;
+  tmp10 = obj2;
+}) : ((arg0, location) => {
+  _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let guild = null;
+    guild = null;
     if (null != closure_0) {
       guild = GuildStore.getGuild(tmp);
     }
     return guild;
   }, items1);
   const obj = require("initialize");
-  const tmp = arg0;
   let enabled = null != stateFromStores;
   if (enabled) {
     const features = stateFromStores.features;
@@ -40,22 +100,83 @@ function useCanManageGuildOfficialMessages(arg0, arg1, location) {
   if (enabled) {
     enabled = obj2.useExperiment(obj3).enabled;
   }
-  obj2 = GuildOfficialMessagesExperimentDefault;
-  obj3 = { guildId: tmp, location };
-  const items2 = [PermissionStore];
-  const items3 = [arg1];
+  return enabled;
+});
+let closure_10 = tmp3;
+ReactCompilerGating = fn(558);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  _require = arg1;
+  const cResult = require("c").c(4);
+  let stateFromStores = closure_10(arg0, arg2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg1) {
+    const fn = function c() {
+      return PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, closure_0);
+    };
+    const items1 = [arg1];
+    cResult[1] = arg1;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp8 = items1;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const obj = require("c");
+  if (stateFromStores) {
+    stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
+  }
+  return stateFromStores;
+}) : ((arg0, arg1, arg2) => {
+  _require = arg1;
+  let stateFromStores = closure_10(arg0, arg2);
+  const items = [PermissionStore];
+  const items1 = [arg1];
+  if (stateFromStores) {
+    stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, closure_0), items1);
+  }
+  return stateFromStores;
+});
+let closure_11 = tmp4;
+ReactCompilerGating = fn(558);
+function isGuildOfficialMessagesEnabled(guild, GuildSettingsModalLanding) {
+  let enabled = null != guild;
   if (enabled) {
-    enabled = tmp2Result.useStateFromStores(items2, () => PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, closure_0), items3);
+    const features = guild.features;
+    enabled = features.has(constants2.VERIFIED);
+  }
+  if (enabled) {
+    const obj2 = { guildId: guild.id, location: GuildSettingsModalLanding };
+    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
   }
   return enabled;
 }
-let closure_5 = fn(4749).GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
-const Constants = fn(1074);
-({ ChannelTypes: metroRequire, GuildFeatures: closure_7, MessageFlags: closure_8, Permissions: closure_9 } = Constants);
+function canManageGuildOfficialMessages(features, arg1, location) {
+  let enabled = null != features;
+  if (enabled) {
+    features = features.features;
+    enabled = features.has(constants2.VERIFIED);
+  }
+  if (enabled) {
+    const obj2 = { guildId: features.id, location };
+    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
+  }
+  if (enabled) {
+    enabled = PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, arg1);
+  }
+  return enabled;
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/GuildOfficialMessageUtils.tsx");
 
-export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOfficialTextColor(officialMessageColor, semanticColor, saturation, arg3) {
+export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOfficialTextColor(selectedColor, semanticColor, saturation, arg3) {
   let num = saturation;
   if (saturation === undefined) {
     num = 1;
@@ -64,15 +185,15 @@ export const getAccessibleGuildOfficialTextColor = function getAccessibleGuildOf
   if (arg3 === undefined) {
     tmp = closure_5;
   }
-  const int2hexResult = utils_ColorUtils.int2hex(officialMessageColor);
-  let tmp5 = _modDef672(semanticColor);
-  const tmp6 = _modDef672(int2hexResult);
-  const mixResult = _modDef672.mix(tmp5, int2hexResult, tmp, "rgb");
-  const contrastResult = _modDef672.contrast(tmp6, mixResult);
+  const int2hexResult = utils_ColorUtils.int2hex(selectedColor);
+  let tmp5 = _modDef676(semanticColor);
+  const tmp6 = _modDef676(int2hexResult);
+  const mixResult = _modDef676.mix(tmp5, int2hexResult, tmp, "rgb");
+  const contrastResult = _modDef676.contrast(tmp6, mixResult);
   if (contrastResult < obj4.contrast(tmp6, tmp5)) {
     tmp5 = mixResult;
   }
-  obj4 = _modDef672;
+  obj4 = _modDef676;
   const tmp2Result = ColorUtils;
   return tmp2Result.getAccessibleForegroundColor({ foreground: tmp6, background: tmp5, ratio: shared.WCAGContrastRatios.Text, saturationFactor: num });
 };
@@ -90,80 +211,68 @@ export function showGuildOfficialMessageTextColor(officialMessageStyle) {
   }
   return tmp;
 }
-export const isGuildOfficialMessagesEnabled = function isGuildOfficialMessagesEnabled(guild, GuildSettingsModalLanding) {
-  let enabled = null != guild;
-  if (enabled) {
-    const features = guild.features;
-    enabled = features.has(constants2.VERIFIED);
+export { isGuildOfficialMessagesEnabled };
+export const useIsGuildOfficialMessagesEnabled = tmp3;
+export { canManageGuildOfficialMessages };
+export const useCanManageGuildOfficialMessages = tmp4;
+export const useCanToggleGuildOfficialMessages = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag, guild_id, arg2) => {
+  let tmp = require;
+  let getIsActiveChannelOrUnarchivableThread = dependencyMap;
+  const cResult = c.c(3);
+  guild_id = guild_id.guild_id;
+  const tmp3Result = closure_11(guild_id, guild_id, arg2);
+  let tmp5 = !tmp3Result;
+  if (tmp3Result) {
+    tmp5 = isSystemMessageDefault(hasFlag);
   }
-  if (enabled) {
-    const obj2 = { guildId: guild.id, location: GuildSettingsModalLanding };
-    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
-  }
-  return enabled;
-};
-export const useIsGuildOfficialMessagesEnabled = function useIsGuildOfficialMessagesEnabled(id, useGuildActionRows) {
-  _require = id;
-  const items = [GuildStore];
-  const items1 = [id];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let guild = null;
-    if (null != closure_0) {
-      guild = GuildStore.getGuild(tmp);
+  if (tmp5) {
+    return !tmp5;
+  } else {
+    if (hasFlag.hasFlag(constants3.IS_GUILD_OFFICIAL)) {
+      tmp = ThreadHooks;
+      getIsActiveChannelOrUnarchivableThread = tmp.getIsActiveChannelOrUnarchivableThread;
+      let isActiveChannelOrUnarchivableThread = getIsActiveChannelOrUnarchivableThread(guild_id);
+    } else {
+      isActiveChannelOrUnarchivableThread = null != guild_id && !guild_id.isPrivate();
+      if (isActiveChannelOrUnarchivableThread) {
+        isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(guild_id);
+        const tmpResult = ThreadHooks;
+      }
+      if (isActiveChannelOrUnarchivableThread) {
+        isActiveChannelOrUnarchivableThread = guild_id.type !== constants.GUILD_VOICE;
+      }
+      if (isActiveChannelOrUnarchivableThread) {
+        isActiveChannelOrUnarchivableThread = guild_id.type !== constants.GUILD_STAGE_VOICE;
+      }
     }
-    return guild;
-  }, items1);
-  const obj = require("initialize");
-  let enabled = null != stateFromStores;
-  if (enabled) {
-    const features = stateFromStores.features;
-    enabled = features.has(constants2.VERIFIED);
+    cResult[0] = guild_id;
+    cResult[1] = hasFlag;
+    cResult[2] = isActiveChannelOrUnarchivableThread;
   }
-  if (enabled) {
-    enabled = obj2.useExperiment(obj3).enabled;
-  }
-  return enabled;
-};
-export const canManageGuildOfficialMessages = function canManageGuildOfficialMessages(features, arg1, location) {
-  let enabled = null != features;
-  if (enabled) {
-    features = features.features;
-    enabled = features.has(constants2.VERIFIED);
-  }
-  if (enabled) {
-    const obj2 = { guildId: features.id, location };
-    enabled = GuildOfficialMessagesExperimentDefault.getCurrentConfig(obj2).enabled;
-  }
-  if (enabled) {
-    enabled = PermissionStore.can(constants4.MANAGE_OFFICIAL_MESSAGES, arg1);
-  }
-  return enabled;
-};
-export { useCanManageGuildOfficialMessages };
-export const useCanToggleGuildOfficialMessages = function useCanToggleGuildOfficialMessages(message, channel, LongPressMessageActionSheet) {
-  const guild_id = channel.guild_id;
-  const tmpResult = useCanManageGuildOfficialMessages(guild_id, channel, LongPressMessageActionSheet);
+}) : ((hasFlag, guild_id, arg2) => {
+  guild_id = guild_id.guild_id;
+  const tmpResult = closure_11(guild_id, guild_id, arg2);
   let tmp3 = !tmpResult;
   if (tmpResult) {
-    tmp3 = isSystemMessageDefault(message);
+    tmp3 = isSystemMessageDefault(hasFlag);
   }
   if (tmp3) {
     return !tmp3;
-  } else if (message.hasFlag(constants3.IS_GUILD_OFFICIAL)) {
-    let isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(channel);
+  } else if (hasFlag.hasFlag(constants3.IS_GUILD_OFFICIAL)) {
+    let isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(guild_id);
   } else {
-    isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
+    isActiveChannelOrUnarchivableThread = null != guild_id && !guild_id.isPrivate();
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(channel);
+      isActiveChannelOrUnarchivableThread = ThreadHooks.getIsActiveChannelOrUnarchivableThread(guild_id);
     }
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_VOICE;
+      isActiveChannelOrUnarchivableThread = guild_id.type !== constants.GUILD_VOICE;
     }
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_STAGE_VOICE;
+      isActiveChannelOrUnarchivableThread = guild_id.type !== constants.GUILD_STAGE_VOICE;
     }
   }
-};
+});
 export const canSendGuildOfficialMessages = function canSendGuildOfficialMessages(guild, channel, _sendMessage) {
   let enabled = null != guild;
   if (enabled) {

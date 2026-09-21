@@ -1,10 +1,10 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16398
+// Function ID: 16399
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1074, 573, 1271, 4657, 2]
+// Dependencies: [5, 1078, 577, 1275, 4660, 2]
 // Exports: fetchActiveChannels
 
-// Module 16400 (ActiveChannelsActionCreators)
+// Module 16398 (ActiveChannelsActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _fetchActiveChannels(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -46,7 +46,7 @@ let closure_5 = async function _fetchActiveChannels(arg0, value) {
           closure_131_3 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -115,7 +115,7 @@ let closure_5 = async function _fetchActiveChannels(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/active_channels/ActiveChannelsActionCreators.tsx");
 

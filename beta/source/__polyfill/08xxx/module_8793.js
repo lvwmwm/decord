@@ -1,16 +1,16 @@
 // Module ID: 8793
 // Function ID: 8794
-// Dependencies: [41, 42, 93, 95, 98, 8744, 8767]
+// Dependencies: [41, 42, 93, 95, 98, 8749, 8772]
 
 // Module 8793
-import _modDef8767 from "module_8767" /* 8767 */;
+import _modDef8772 from "module_8772" /* 8772 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FeTile = arg1;
+const FeImage = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeTile {
+class FeImage {
   constructor() {
     self = this;
-    tmp = c2(this, FeTile);
+    tmp = c2(this, FeImage);
     tmp2 = closure_4;
-    obj = closure_4(FeTile);
+    obj = closure_4(FeImage);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -50,17 +50,17 @@ class FeTile {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeTile, _modDef8767);
+_inherits(FeImage, _modDef8772);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FeTile(8744).warnUnimplementedFilter();
+    const result = FeImage(8749).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeTile, items);
-importDefaultResultResult.displayName = "FeTile";
+const importDefaultResultResult = _createClass(FeImage, items);
+importDefaultResultResult.displayName = "FeImage";
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = {};
 

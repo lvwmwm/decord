@@ -1,19 +1,78 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 17481
+// Function ID: 17482
 // Name: VoicePanelContainer
-// Dependencies: [19, 2041, 4964, 21, 504, 17512, 17557, 4379, 4466, 2]
+// Dependencies: [19, 2045, 4966, 21, 558, 568, 504, 17482, 17643, 4383, 4471, 2]
 
-// Module 17511 (VoicePanelContainer)
-import _mod4379 from "module_4379" /* 4379 */;
-import native from "native" /* 4466 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 17512 */;
-import VoicePanelUIDefault from "VoicePanelUI" /* 17557 */;
+// Module 17481 (VoicePanelContainer)
+import c from "c" /* 568 */;
+import _mod4383 from "module_4383" /* 4383 */;
+import native from "native" /* 4471 */;
+import VoicePanelUIDefault from "VoicePanelUI" /* 17482 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 17643 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import VoicePanelStore from "VoicePanelStore" /* 4964 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import VoicePanelStore from "VoicePanelStore" /* 4966 */;
 
 require = fn;
-function VoicePanel(arg0) {
+function getChannelKey(arg0) {
+  return arg0;
+}
+function renderVoicePanel(arg0, channelId, transitionState, transitionCleanUp) {
+  return <closure_7 key={arg1} channelId={arg1} transitionState={arg2} transitionCleanUp={arg3} />;
+}
+const jsx = fn(21).jsx;
+let ReactCompilerGating = fn(558);
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  _require = channelId;
+  const cResult = require("c").c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId.channelId) {
+    const fn = function c() {
+      const channel = ChannelStore.getChannel(channelId.channelId);
+      let guild_id;
+      if (channel != null) {
+        guild_id = channel.guild_id;
+      }
+      return guild_id;
+    };
+    cResult[1] = channelId.channelId;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp11 = jsx(VoicePanelUIDefault, {});
+    cResult[3] = tmp11;
+    let tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === stateFromStores) {
+    if (cResult[5] === channelId) {
+      let tmp12 = cResult[6];
+    }
+    return tmp12;
+  }
+  const obj2 = {};
+  const tmpResult = require("initialize");
+  const merged = Object.assign(channelId);
+  obj2.guildId = stateFromStores;
+  obj2.children = tmp8;
+  const tmp15 = jsx(VoicePanelControllerDefault, {});
+  cResult[4] = stateFromStores;
+  cResult[5] = channelId;
+  cResult[6] = tmp15;
+  tmp12 = tmp15;
+}) : ((arg0) => {
   _require = arg0;
   const items = [ChannelStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
@@ -30,18 +89,34 @@ function VoicePanel(arg0) {
   obj2.guildId = stateFromStores;
   obj2.children = noop.useMemo(() => jsx(VoicePanelUIDefault, {}), []);
   return jsx(VoicePanelControllerDefault, {});
-}
-function getChannelKey(arg0) {
-  return arg0;
-}
-function renderVoicePanel(arg0, channelId, transitionState, transitionCleanUp) {
-  return <VoicePanel key={arg1} channelId={arg1} transitionState={arg2} transitionCleanUp={arg3} />;
-}
-const jsx = fn(21).jsx;
+});
+ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/VoicePanelContainer.tsx");
 
-export default noop.memo(function VoicePanelContainer() {
-  const tmp = VoicePanelStore((channels) => Array.from(channels.channels), _mod4379.shallow);
-  return jsx(native.TransitionGroup, { items: VoicePanelStore((channels) => Array.from(channels.channels), _mod4379.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
-});
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(channels) {
+      return Array.from(channels.channels);
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = VoicePanelStore(first, _mod4383.shallow);
+  if (cResult[1] !== tmp5) {
+    const obj2 = { items: tmp5, getItemKey: getChannelKey, renderItem: renderVoicePanel };
+    const tmp10 = jsx(tmp(4471).TransitionGroup, { items: tmp5, getItemKey: getChannelKey, renderItem: renderVoicePanel });
+    cResult[1] = tmp5;
+    cResult[2] = tmp10;
+    let tmp6 = tmp10;
+  } else {
+    tmp6 = cResult[2];
+  }
+  return tmp6;
+}) : (() => {
+  const tmp = VoicePanelStore((channels) => Array.from(channels.channels), _mod4383.shallow);
+  return jsx(native.TransitionGroup, { items: VoicePanelStore((channels) => Array.from(channels.channels), _mod4383.shallow), getItemKey: getChannelKey, renderItem: renderVoicePanel });
+}));

@@ -1,11 +1,11 @@
-// Module ID: 15408
-// Function ID: 15409
+// Module ID: 15397
+// Function ID: 15398
 // Name: MobileMuxWrapper
-// Dependencies: [4, 15409, 2]
+// Dependencies: [4, 15398, 2]
 
-// Module 15408 (MobileMuxWrapper)
+// Module 15397 (MobileMuxWrapper)
 import logger_Logger from "logger/Logger" /* 4 */;
-import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 15409 */;
+import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 15398 */;
 import size from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("MobileMuxWrapper");
@@ -143,8 +143,8 @@ prototype["onProgress"] = function onProgress(arg0) {
     muxIntegration.emitTimeUpdate();
   }
 };
-prototype["onBuffer"] = function onBuffer(flag2) {
-  if (!flag2) {
+prototype["onBuffer"] = function onBuffer(nativeEvent) {
+  if (!nativeEvent) {
     const self = this;
     const muxIntegration = this.muxIntegration;
     if (muxIntegration != null) {

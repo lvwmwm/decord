@@ -1,12 +1,12 @@
-// Module ID: 7791
-// Function ID: 7792
+// Module ID: 7796
+// Function ID: 7797
 // Name: ProfileFrameRecord
-// Dependencies: [1972, 1973, 2]
+// Dependencies: [1976, 1977, 2]
 // Exports: isProfileFrameRecord
 
-// Module 7791 (ProfileFrameRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1972 */;
+// Module 7796 (ProfileFrameRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1976 */;
 
 require = fn;
 const prototype = function ProfileFrameRecord(arg0) {

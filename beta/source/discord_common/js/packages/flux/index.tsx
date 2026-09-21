@@ -1,16 +1,16 @@
 // Module ID: 504
 // Function ID: 505
 // Name: initialize
-// Dependencies: [505, 506, 557, 508, 565, 2, 566, 564, 563]
+// Dependencies: [505, 506, 557, 508, 567, 2, 570, 566, 565]
 // Exports: destroy, initialize
 
 // Module 504 (initialize)
 import Store2 from "Store" /* 506 */;
 import flux_EmitterDefault from "flux/Emitter" /* 508 */;
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import BatchedStoreListener from "BatchedStoreListener" /* 564 */;
-import connectStoresDefault from "connectStores" /* 565 */;
-import flux_Dispatcher from "flux/Dispatcher" /* 566 */;
+import useStateFromStores from "useStateFromStores" /* 565 */;
+import BatchedStoreListener from "BatchedStoreListener" /* 566 */;
+import connectStoresDefault from "connectStores" /* 567 */;
+import flux_Dispatcher from "flux/Dispatcher" /* 570 */;
 import PersistedStore_mod from "PersistedStore" /* 505 */;
 import createFetchStore_mod from "createFetchStore" /* 557 */;
 import size from "module_2" /* 2 */;

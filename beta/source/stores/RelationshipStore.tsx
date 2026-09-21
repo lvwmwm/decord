@@ -1,14 +1,14 @@
-// Module ID: 4405
-// Function ID: 4406
+// Module ID: 4409
+// Function ID: 4410
 // Name: RelationshipStore
-// Dependencies: [32, 4406, 1372, 1074, 573, 504, 2]
+// Dependencies: [32, 4410, 1376, 1078, 577, 504, 2]
 
-// Module 4405 (RelationshipStore)
+// Module 4409 (RelationshipStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4406 */;
-import UserStore from "UserStore" /* 1372 */;
+import MessageRecord from "MessageRecord" /* 4410 */;
+import UserStore from "UserStore" /* 1376 */;
 
 function markAllUserIdListsStale() {
   set3.add("friends");
@@ -27,7 +27,7 @@ function upsertRelationship(id, type) {
   value = map.get(id);
   if (value !== type) {
     if (null != value) {
-      const value3 = map1.get(value);
+      value3 = map1.get(value);
       if (value3 != null) {
         value3.delete(id);
       }
@@ -89,7 +89,7 @@ function recountPending() {
   closure_16 = Math.max(num - size - size, 0);
   closure_14 = closure_14 + 1;
 }
-const RelationshipTypes = fn(1074).RelationshipTypes;
+const RelationshipTypes = fn(1078).RelationshipTypes;
 const map = new Map();
 let set = new Set();
 const set1 = new Set();
@@ -98,7 +98,7 @@ let closure_14 = 0;
 const dependencyMap = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "Array", blocked: "flexDirection", ignored: "y", blockedOrIgnored: "HermesInternal" };
+let closure_19 = { friends: "toCharArray$esjava$1", blocked: "T", ignored: "IconComponent", blockedOrIgnored: "Set" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = initializeDefault.Store;
@@ -479,7 +479,7 @@ const relationshipStore = new RelationshipStore(DispatcherDefault, {
     value = map.get(id);
     if (null != value) {
       map.delete(id);
-      const value3 = map1.get(value);
+      value3 = map1.get(value);
       if (value3 != null) {
         value3.delete(id);
       }

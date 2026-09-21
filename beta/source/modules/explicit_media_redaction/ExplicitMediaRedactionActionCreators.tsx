@@ -1,12 +1,12 @@
-// Module ID: 7846
-// Function ID: 7847
+// Module ID: 7851
+// Function ID: 7852
 // Name: ExplicitMediaRedactionActionCreators
-// Dependencies: [1074, 1271, 2]
+// Dependencies: [1078, 1275, 2]
 // Exports: reportFailedSendFalsePositive, reportFalsePositive, sendMessagesForScanning, sendMultiChannelMessagesForScanning
 
-// Module 7846 (ExplicitMediaRedactionActionCreators)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7851 (ExplicitMediaRedactionActionCreators)
+import Constants from "Constants" /* 1078 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

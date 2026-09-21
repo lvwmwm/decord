@@ -1,40 +1,44 @@
 // Module ID: 2120
 // Function ID: 2121
-// Dependencies: []
-// Exports: default
+// Dependencies: [2121]
 
 // Module 2120
+import module_2121 from "module_2121" /* 2121 */;
 
-export default function buildMatchPatternFn(arg0) {
-  const matchPattern = arg0;
-  return (str) => {
-    if (arguments.length > 1) {
-      if (undefined !== arguments[1]) {
-        let obj = arguments[1];
-      }
-      const match = str.match(matchPattern.matchPattern);
-      if (match) {
-        const match1 = str.match(obj2.parsePattern);
-        if (match1) {
-          if (obj2.valueCallback) {
-            let first = obj2.valueCallback(match1[0]);
-          } else {
-            first = match1[0];
-          }
-          let valueCallbackResult2 = first;
-          if (obj.valueCallback) {
-            valueCallbackResult2 = obj.valueCallback(first);
-          }
-          const obj3 = { value: valueCallbackResult2, rest: str.slice(match[0].length) };
-          return obj3;
-        } else {
-          return null;
-        }
-      } else {
-        return null;
+if (!module_2121) {
+  const obj2 = { default: module_2121 };
+  let obj = obj2;
+} else {
+  obj = module_2121;
+}
+const date = {
+  ordinalNumber(arg0, arg1) {
+    const NumberResult = Number(arg0);
+    const result = NumberResult % 100;
+    if (20 < result) {
+      const result1 = result % 10;
+      if (1 === result1) {
+        return NumberResult + "st";
+      } else if (2 === result1) {
+        return NumberResult + "nd";
+      } else if (3 === result1) {
+        return NumberResult + "rd";
       }
     }
-    obj = {};
-  };
+    return NumberResult + "th";
+  },
+  era: obj.default({ values: { narrow: ["B", "A"], abbreviated: ["BC", "AD"], wide: ["Before Christ", "Anno Domini"] }, defaultWidth: "wide" }),
+  quarter: obj.default({
+    values: { narrow: ["1", "2", "3", "4"], abbreviated: ["Q1", "Q2", "Q3", "Q4"], wide: ["1st quarter", "2nd quarter", "3rd quarter", "4th quarter"] },
+    defaultWidth: "wide",
+    argumentCallback(arg0) {
+      return arg0 - 1;
+    }
+  }),
+  month: obj.default({ values: { narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], abbreviated: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], wide: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] }, defaultWidth: "wide" }),
+  day: obj.default({ values: { narrow: ["S", "M", "T", "W", "T", "F", "S"], short: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"], abbreviated: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], wide: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] }, defaultWidth: "wide" }),
+  dayPeriod: obj.default({ values: { narrow: { am: "a", pm: "p", midnight: "mi", noon: "n", morning: "morning", afternoon: "afternoon", evening: "evening", night: "night" }, abbreviated: { am: "AM", pm: "PM", midnight: "midnight", noon: "noon", morning: "morning", afternoon: "afternoon", evening: "evening", night: "night" }, wide: { am: "a.m.", pm: "p.m.", midnight: "midnight", noon: "noon", morning: "morning", afternoon: "afternoon", evening: "evening", night: "night" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "a", pm: "p", midnight: "mi", noon: "n", morning: "in the morning", afternoon: "in the afternoon", evening: "in the evening", night: "at night" }, abbreviated: { am: "AM", pm: "PM", midnight: "midnight", noon: "noon", morning: "in the morning", afternoon: "in the afternoon", evening: "in the evening", night: "at night" }, wide: { am: "a.m.", pm: "p.m.", midnight: "midnight", noon: "noon", morning: "in the morning", afternoon: "in the afternoon", evening: "in the evening", night: "at night" } }, defaultFormattingWidth: "wide" })
 };
+
+export default date;
 export default exports.default;

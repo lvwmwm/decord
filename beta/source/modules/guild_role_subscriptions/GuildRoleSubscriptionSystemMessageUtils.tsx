@@ -1,16 +1,16 @@
-// Module ID: 8250
-// Function ID: 8251
+// Module ID: 8255
+// Function ID: 8256
 // Name: GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [2063, 1372, 8251, 1074, 11, 1115, 7493, 4936, 2]
+// Dependencies: [2067, 1376, 8256, 1078, 11, 1119, 7495, 4938, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 8250 (GuildRoleSubscriptionSystemMessageUtils)
+// Module 8255 (GuildRoleSubscriptionSystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1115 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7493 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+import util from "util" /* 1119 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7495 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function identityHook(arg0) {
@@ -23,10 +23,10 @@ function getRoleSubscriptionPurchaseSystemMessageContent(usernameOnClickHandler)
   }
   let roleSubscriptionOnClickHandler = usernameOnClickHandler.roleSubscriptionOnClickHandler;
   if (roleSubscriptionOnClickHandler === undefined) {
-    roleSubscriptionOnClickHandler = React7;
+    roleSubscriptionOnClickHandler = options;
   }
   const roleSubscriptionData = usernameOnClickHandler.roleSubscriptionData;
-  const guild = GuildStore.getGuild(usernameOnClickHandler.guildId);
+  guild = GuildStore.getGuild(usernameOnClickHandler.guildId);
   let num;
   if (roleSubscriptionData != null) {
     num = roleSubscriptionData.total_months_subscribed;
@@ -61,9 +61,9 @@ function getRoleSubscriptionPurchaseSystemMessageContent(usernameOnClickHandler)
     return obj;
   }
 }
-const GuildRoleSubscriptionSystemMessageConstants = fn(8251);
+const GuildRoleSubscriptionSystemMessageConstants = fn(8256);
 ({ getJoinButtonLabels: hasOwnProperty, getRenewButtonLabels: metroRequire, STICKERS: closure_7 } = GuildRoleSubscriptionSystemMessageConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_8, NOOP: closure_9 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionSystemMessageUtils.tsx");
@@ -107,10 +107,10 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
   }
   let roleSubscriptionOnClickHandler = usernameOnClickHandler.roleSubscriptionOnClickHandler;
   if (roleSubscriptionOnClickHandler === undefined) {
-    roleSubscriptionOnClickHandler = React7;
+    roleSubscriptionOnClickHandler = options;
   }
   const roleSubscriptionData = usernameOnClickHandler.roleSubscriptionData;
-  const guild = GuildStore.getGuild(usernameOnClickHandler.guildId);
+  guild = GuildStore.getGuild(usernameOnClickHandler.guildId);
   let num;
   if (roleSubscriptionData != null) {
     num = roleSubscriptionData.total_months_subscribed;
@@ -140,7 +140,7 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
       OxP1NC = t["6Z1E+7"];
       tmp7 = tmp3;
     }
-    const intl = tmp7(1115).intl;
+    const intl = tmp7(1119).intl;
     let name;
     if (guild != null) {
       name = guild.name;

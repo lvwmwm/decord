@@ -1,9 +1,9 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8113
+// Function ID: 8114
 // Name: MainTabsV2Constants
 // Dependencies: [17, 2]
 
-// Module 8108 (MainTabsV2Constants)
+// Module 8113 (MainTabsV2Constants)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

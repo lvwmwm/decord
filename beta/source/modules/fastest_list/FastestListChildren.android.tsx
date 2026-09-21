@@ -1,16 +1,16 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7314
+// Function ID: 7315
 // Name: FastestListChildren
-// Dependencies: [32, 19, 17, 21, 4756, 7313, 558, 7314, 7315, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 7315, 560, 7316, 7317, 2]
 
-// Module 7312 (FastestListChildren)
-import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 7313 */;
+// Module 7314 (FastestListChildren)
+import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 7315 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_6 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, top: 0 } });
 let obj = { items: [], keys: new Map(), keyIndex: 0 };
 let map = new Map();
@@ -100,7 +100,7 @@ export default noop.memo(noop.forwardRef((listFooterAlwaysMounted, ref) => {
       const _Map = Map;
       const map = new Map(ref.current.keys);
       const _Map2 = Map;
-      map1 = new Map();
+      const map1 = new Map();
       const items = [];
       const items1 = [];
       const tmp95 = estimatedListSize(horizontal[7])(listId, tmp4, sections);
@@ -139,7 +139,7 @@ export default noop.memo(noop.forwardRef((listFooterAlwaysMounted, ref) => {
                 }
                 let _HermesInternal2 = HermesInternal;
                 let combined = "" + listId + "-" + first1;
-                let value3 = map.get(combined);
+                value3 = map.get(combined);
                 if (null != value3) {
                   let result = map1.set(combined, value3);
                   let deleteResult = map.delete(combined);

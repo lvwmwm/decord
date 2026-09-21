@@ -1,11 +1,11 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11794
+// Function ID: 11795
 // Name: ChannelFollowerStatsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 11923 (ChannelFollowerStatsStore)
+// Module 11794 (ChannelFollowerStatsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const constants = { FAILED: "failed", SUCCEEDED: "succeeded" };
 let closure_1 = {};

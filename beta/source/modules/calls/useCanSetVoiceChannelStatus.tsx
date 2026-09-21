@@ -1,23 +1,76 @@
-// Module ID: 17578
-// Function ID: 17579
+// Module ID: 17533
+// Function ID: 17534
 // Name: useCanSetVoiceChannelStatus
-// Dependencies: [4395, 1085, 4400, 504, 2]
-// Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
+// Dependencies: [4399, 1089, 4404, 558, 568, 504, 2]
+// Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus
 
-// Module 17578 (useCanSetVoiceChannelStatus)
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 17533 (useCanSetVoiceChannelStatus)
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Permissions = fn(1085).Permissions;
+const Permissions = fn(1089).Permissions;
 let items = [, , ];
 ({ SET_VOICE_CHANNEL_STATUS: arr[0], CONNECT: arr[1], VIEW_CHANNEL: arr[2] } = Permissions);
 let items1 = [Permissions.SET_VOICE_CHANNEL_STATUS];
+const ReactCompilerGating = fn(558);
+function _canSetVoiceChannelStatus(arg0, arg1, arg2, arg3) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  closure_2 = arg3;
+  return arg2 ? items1 : items.every((permission) => {
+    if (null == dependencyMap) {
+      let canResult = closure_1.can(permission, context);
+    } else {
+      const obj2 = { permission, user: tmp, context };
+      canResult = flag(dependencyMap[2]).can(obj2);
+      const obj = flag(dependencyMap[2]);
+    }
+    return canResult;
+  });
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/useCanSetVoiceChannelStatus.tsx");
 
-export default function useCanSetVoiceChannelStatus(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  _require = arg0;
+  closure_1 = arg2;
+  const cResult = require("c").c(6);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    if (cResult[2] === tmp4) {
+      if (cResult[3] === arg2) {
+        let tmp7 = cResult[4];
+        let tmp8 = cResult[5];
+      }
+      return require("initialize").useStateFromStores(first, tmp7, tmp8);
+    }
+  }
+  class S {
+    constructor() {
+      closure_1 = closure_3;
+      closure_2 = closure_1;
+      obj = closure_2 ? closure_5 : closure_4;
+      return obj.every(() => { ... });
+    }
+  }
+  items1 = [arg0, undefined !== arg1 && arg1, arg2];
+  cResult[1] = arg0;
+  cResult[2] = undefined !== arg1 && arg1;
+  cResult[3] = arg2;
+  cResult[4] = S;
+  cResult[5] = items1;
+  tmp8 = items1;
+  tmp7 = S;
+}) : ((arg0) => {
   _require = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -39,22 +92,8 @@ export default function useCanSetVoiceChannelStatus(arg0) {
       return canResult;
     });
   }, items1);
-};
-export const _canSetVoiceChannelStatus = function _canSetVoiceChannelStatus(arg0, arg1, arg2, arg3) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  closure_2 = arg3;
-  return arg2 ? items1 : items.every((permission) => {
-    if (null == dependencyMap) {
-      let canResult = closure_1.can(permission, context);
-    } else {
-      const obj2 = { permission, user: tmp, context };
-      canResult = flag(dependencyMap[2]).can(obj2);
-      const obj = flag(dependencyMap[2]);
-    }
-    return canResult;
-  });
-};
+});
+export { _canSetVoiceChannelStatus };
 export const canSetVoiceChannelStatus = function canSetVoiceChannelStatus(arg0) {
   let flag = arg1;
   if (arg1 === undefined) {

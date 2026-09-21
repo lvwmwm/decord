@@ -1,31 +1,65 @@
-// Module ID: 11184
-// Function ID: 11185
+// Module ID: 11225
+// Function ID: 11226
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 11185, 11188, 1115, 11190, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 11226, 1119, 11229, 11231, 2]
 
-// Module 11184 (ChatGDMCustomizeActionSheet)
-import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 11185 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11188 */;
-import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 11190 */;
+// Module 11225 (ChatGDMCustomizeActionSheet)
+import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 11226 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11229 */;
+import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 11231 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/group_dm/native/ChatGDMCustomizeActionSheet.tsx");
 
-export default function ChatGDMCustomizeActionSheet(channelId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const cResult = channelId(ref[3]).c(5);
+  channelId = channelId.channelId;
+  const tmp5 = onGoBack(ref[4])();
+  onGoBack = tmp5.onGoBack;
+  ref = tmp5.ref;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(tmp2[5]).intl;
+    const stringResult = intl.string(tmp(tmp2[5]).t["1r5E+m"]);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === channelId) {
+    if (cResult[2] === onGoBack) {
+      if (cResult[3] === ref) {
+        let tmp8 = cResult[4];
+      }
+      return tmp8;
+    }
+  }
+  const tmp9 = jsx(onGoBack(ref[6]), {
+    screenKey: "kick",
+    title: first,
+    render() {
+      return jsx(ChatGDMCustomizeDefault, { ref, onFinish: onGoBack, channelId });
+    }
+  });
+  cResult[1] = channelId;
+  cResult[2] = onGoBack;
+  cResult[3] = ref;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((channelId) => {
   channelId = channelId.channelId;
   importDefault = undefined;
   dependencyMap = undefined;
   ({ onGoBack: c1, ref: c2 } = useNavigatorConfirmChangesOnBackDefault());
   const obj = { screenKey: "kick", title: null, render: null };
   const tmp = useNavigatorConfirmChangesOnBackDefault();
-  const intl = channelId(1115).intl;
-  obj.title = intl.string(channelId(1115).t["1r5E+m"]);
+  const intl = channelId(1119).intl;
+  obj.title = intl.string(channelId(1119).t["1r5E+m"]);
   obj.render = function render() {
     return jsx(ChatGDMCustomizeDefault, { ref, onFinish, channelId });
   };
   return jsx(ModalStackNavigatorDefault, { screenKey: "kick", title: null, render: null });
-};
+});

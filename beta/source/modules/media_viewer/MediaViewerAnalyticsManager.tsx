@@ -1,23 +1,23 @@
-// Module ID: 8532
-// Function ID: 8533
+// Module ID: 8537
+// Function ID: 8538
 // Name: MediaViewerAnalyticsManager
-// Dependencies: [2041, 1074, 560, 1241, 2]
+// Dependencies: [2045, 1078, 562, 1245, 2]
 
-// Module 8532 (MediaViewerAnalyticsManager)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 8537 (MediaViewerAnalyticsManager)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);
 let obj = { VIEWER_SWIPE: "number_viewer_swipes", THUMBNAIL_SWIPE: "number_thumbnail_swipes", SELECTED_ITEM_CHANGE: "number_selected_item_changes", ZOOM_IN_BUTTON_PRESSED: "number_zoom_in_button_pressed", ZOOM_IN_IMAGE_PRESSED: "number_zoom_in_image_pressed", ZOOM_OUT_BUTTON_PRESSED: "number_zoom_out_button_pressed", ZOOM_OUT_IMAGE_PRESSED: "number_zoom_out_image_pressed", FORWARD_PRESSED: "number_forward_button_pressed", SAVE_MEDIA_PRESSED: "number_save_media_button_pressed", OPEN_LINK_PRESSED: "number_open_link_button_pressed", MORE_BUTTON_PRESSED: "number_more_button_pressed", COPY_IMAGE_PRESSED: "number_copy_image_more_menu_pressed", COPY_LINK_PRESSED: "number_copy_link_more_menu_pressed", CONTEXT_MENU_OPENED: "number_context_menu_opened" };
-let obj2 = { guildId: "ip", channelId: "isArray", channelType: "isArray", numMediaItems: "Array", hasMediaOptions: "PX_16", source: null, incrementableActions: null };
+let obj2 = { guildId: "duration", channelId: "toCharArray$esjava$1", channelType: "toCharArray$esjava$1", numMediaItems: "Array", hasMediaOptions: "unicodeVersion", source: "<string:1895895544>", incrementableActions: "e" };
 const values = Object.values(obj);
 obj2.incrementableActions = Object.fromEntries(values.map((item) => {
   const items = [item, 0];
   return items;
 }));
-const module_560 = fn(560);
-let closure_6 = module_560.create(() => obj2);
+const module_562 = fn(562);
+let closure_6 = module_562.create(() => obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_viewer/MediaViewerAnalyticsManager.tsx");
 
@@ -54,7 +54,7 @@ export const MediaViewerAnalytics = {
     closure_6.setState(obj3);
   },
   markSessionCompleted() {
-    const state = closure_6.getState();
+    state = closure_6.getState();
     obj2 = { source: state.source, guild_id: state.guildId, channel_id: state.channelId, channel_type: state.channelType, number_media_items: state.numMediaItems, has_media_options: state.hasMediaOptions };
     const merged = Object.assign(state.incrementableActions);
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_SESSION_COMPLETED, obj2);
@@ -74,29 +74,29 @@ export const MediaViewerAnalytics = {
   },
   trackMediaViewerImageSaved(arg0) {
     ({ url, success } = arg0);
-    const state = closure_6.getState();
+    state = closure_6.getState();
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_IMAGE_SAVED, { url, success, channel_id: state.channelId });
   },
   trackMediaViewerImageCopied(arg0) {
     ({ url, success } = arg0);
-    const state = closure_6.getState();
+    state = closure_6.getState();
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_IMAGE_COPIED, { url, success, channel_id: state.channelId });
   },
   trackMediaViewerLinkCopied(arg0) {
     ({ href, success } = arg0);
-    const state = closure_6.getState();
+    state = closure_6.getState();
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_LINK_COPIED, { href, success, channel_id: state.channelId });
   },
   trackMediaViewerLinkOpened(href) {
-    const state = closure_6.getState();
+    state = closure_6.getState();
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_LINK_OPENED, { href: href.href, channel_id: state.channelId });
   },
   trackMediaViewerDownloadButtonTapped() {
-    const state = closure_6.getState();
+    state = closure_6.getState();
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_DOWNLOAD_BUTTON_TAPPED, { guild_id: state.guildId, channel_id: state.channelId, channel_type: state.channelType });
   },
   trackMediaViewerShareButtonTapped() {
-    const state = closure_6.getState();
+    state = closure_6.getState();
     AnalyticsUtilsDefault.track(constants.MEDIA_VIEWER_SHARE_BUTTON_TAPPED, { guild_id: state.guildId, channel_id: state.channelId, channel_type: state.channelType });
   },
   trackMessageEmbedsActionCompleted(arg0) {

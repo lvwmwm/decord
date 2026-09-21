@@ -1,18 +1,18 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 13011
+// Function ID: 13012
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1182, 1074, 1271, 1115, 10445, 1364, 4949, 1249, 2]
+// Dependencies: [5, 1186, 1078, 1275, 1119, 13012, 1368, 4951, 1253, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10444 (bug_reporter/BugReportUtils)
-import util from "util" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
-import DebugUploadManager from "DebugUploadManager" /* 10445 */;
+// Module 13011 (bug_reporter/BugReportUtils)
+import util from "util" /* 1119 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4951 */;
+import DebugUploadManager from "DebugUploadManager" /* 13012 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
 let closure_7 = async function _fetchBugReportConfig() {
@@ -31,7 +31,7 @@ let closure_8 = async function _submitReport(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -182,7 +182,7 @@ let closure_8 = async function _submitReport(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ DebugLogCategory: hasOwnProperty, Endpoints: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/bug_reporter/BugReportUtils.tsx");

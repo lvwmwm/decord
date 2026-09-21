@@ -1,22 +1,22 @@
-// Module ID: 9127
-// Function ID: 9128
+// Module ID: 9125
+// Function ID: 9126
 // Name: collectibles/CollectiblesUtils
-// Dependencies: [1074, 7479, 4427, 7482, 7796, 4414, 7795, 8465, 9128, 2]
+// Dependencies: [1078, 7481, 4431, 7484, 7801, 4418, 7800, 8470, 9126, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 9127 (collectibles/CollectiblesUtils)
-import Constants from "Constants" /* 1074 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4427 */;
-import IAPStoreDefault from "IAPStore" /* 7482 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7795 */;
-import types from "types" /* 8465 */;
-import _modDef9128 from "module_9128" /* 9128 */;
+// Module 9125 (collectibles/CollectiblesUtils)
+import Constants from "Constants" /* 1078 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4431 */;
+import IAPStoreDefault from "IAPStore" /* 7484 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
+import types from "types" /* 8470 */;
+import _modDef9126 from "module_9126" /* 9126 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const CollectiblesUtils = tmp(7796);
+const CollectiblesUtils = tmp(7801);
 function hasAtLeastOneGPlaySynced(nextResult) {
   const products = nextResult.products;
   return products.filter((variants) => {
@@ -142,16 +142,16 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
         result = null;
       }
     } else {
-      result = tmp7(7796).extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
-      const tmp7Result = tmp7(7796);
+      result = tmp7(7801).extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
+      const tmp7Result = tmp7(7801);
     }
     if (null == result) {
       return null;
     } else if (null != result.priceString) {
       let priceString = result.priceString;
     } else {
-      priceString = tmp7(7479).formatPrice(result.amount, result.currency);
-      const tmp7Result2 = tmp7(7479);
+      priceString = tmp7(7481).formatPrice(result.amount, result.currency);
+      const tmp7Result2 = tmp7(7481);
     }
     obj = BillingPlatformUtils;
   }
@@ -181,12 +181,12 @@ export const extractPriceByPurchaseTypes = function extractPriceByPurchaseTypes(
   }
   obj = BillingPlatformUtils;
 };
-export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(product, stateFromStores) {
+export const getCollectibleGoogleSkuId = function getCollectibleGoogleSkuId(cResult, stateFromStores) {
   if (null == stateFromStores) {
     return null;
   } else {
     const obj = PremiumUtilsDefault;
-    const googleSkuIds = product.googleSkuIds;
+    const googleSkuIds = cResult.googleSkuIds;
     let tmp5;
     if (googleSkuIds != null) {
       tmp5 = googleSkuIds[obj.canUseShopDiscounts(obj, stateFromStores) ? tmp3.MOBILE_PREMIUM_TIER_2 : tmp3.MOBILE];
@@ -335,5 +335,5 @@ export const filterHiddenCategories = function filterHiddenCategories(arr) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef9128, description: "", isPreviewMode: true };
+  return { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef9126, description: "", isPreviewMode: true };
 };

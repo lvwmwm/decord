@@ -1,12 +1,14 @@
-// Module ID: 8100
-// Function ID: 8101
+// Module ID: 8105
+// Function ID: 8106
 // Name: MobileEmojiPickerUpsellRestyleExperiment
-// Dependencies: [1434, 8096, 2]
-// Exports: getMobileEmojiPickerUpsellRestyleEnabledForFeature, useMobileEmojiPickerUpsellRestyleEnabled
+// Dependencies: [1438, 558, 568, 8101, 2]
+// Exports: getMobileEmojiPickerUpsellRestyleEnabledForFeature
 
-// Module 8100 (MobileEmojiPickerUpsellRestyleExperiment)
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8096 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 8105 (MobileEmojiPickerUpsellRestyleExperiment)
+import c from "c" /* 568 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-08-mobile-emoji-picker-upsell-restyle", kind: "user", defaultConfig: false, variations: { 0: false, 1: true } });
@@ -14,9 +16,18 @@ const items = [EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE
 const result = size.fileFinishedImporting("modules/premium/experiments/MobileEmojiPickerUpsellRestyleExperiment.tsx");
 
 export const MobileEmojiPickerUpsellRestyleExperiment = apexExperiment;
-export const useMobileEmojiPickerUpsellRestyleEnabled = function useMobileEmojiPickerUpsellRestyleEnabled(location) {
-  return apexExperiment.useConfig({ location });
-};
+export const useMobileEmojiPickerUpsellRestyleEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2);
+}) : ((location) => apexExperiment.useConfig({ location }));
 export const getMobileEmojiPickerUpsellRestyleEnabledForFeature = function getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, location) {
   let config = items.includes(featureName);
   if (config) {

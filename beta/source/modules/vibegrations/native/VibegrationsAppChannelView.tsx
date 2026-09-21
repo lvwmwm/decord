@@ -1,30 +1,29 @@
-// Module ID: 17083
-// Function ID: 17084
+// Module ID: 17086
+// Function ID: 17087
 // Name: VibegrationsAppChannelView
-// Dependencies: [32, 19, 17, 9313, 13558, 9314, 21, 4756, 576, 1878, 5274, 16965, 9562, 9571, 16966, 13562, 7698, 16967, 17084, 4752, 1115, 3678, 5186, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 9311, 13561, 9312, 21, 4758, 580, 558, 568, 1882, 5276, 16968, 9558, 9567, 16969, 13565, 7703, 16970, 17087, 4754, 1119, 3682, 5188, 2]
 
-// Module 17083 (VibegrationsAppChannelView)
-import nativeDefault from "native" /* 576 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9562 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9571 */;
-import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13562 */;
+// Module 17086 (VibegrationsAppChannelView)
+import nativeDefault from "native" /* 580 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9558 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9567 */;
+import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13565 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9313 */;
-import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 13558 */;
+import FramesStore from "FramesStore" /* 9311 */;
+import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 13561 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FramesConstants = fn(9314);
+const FramesConstants = fn(9312);
 ({ EmbeddedSurfaceType: closure_9, FrameLayoutModes: c10, isLaunched: closure_11 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_14 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: { flex: 1, paddingBottom }, centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_12 }, copy: null };
   const obj2 = { flex: 1, paddingBottom };
@@ -32,14 +31,543 @@ let closure_14 = createStyles.createStyles((paddingBottom) => {
   obj.copy = { alignItems: "center", gap: nativeDefault.space.PX_4 };
   return obj;
 });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsAppChannelView.tsx");
 
-export default function VibegrationsAppChannelView(channel) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = channel(first[10]).c(46);
+  channel = channel.channel;
+  let container = closure_14(require("useSystemKeyboardHeight")());
+  if (cResult[0] !== channel.topic) {
+    let result = tmp(tmp2[12]).vibegrationsAppIdFromTopic(channel.topic);
+    cResult[0] = channel.topic;
+    cResult[1] = result;
+    let tmp5 = result;
+    const tmpResult = tmp(tmp2[12]);
+  } else {
+    tmp5 = cResult[1];
+  }
+  importDefault = tmp5;
+  const guild_id = channel.guild_id;
+  [first, _slicedToArray] = surface.useState(false);
+  if (cResult[2] === channel.id) {
+    if (cResult[3] === guild_id) {
+      let tmp9 = cResult[4];
+    }
+    surface = tmp9;
+    const tmp10 = tmp4(tmp2[13])(tmp5, tmp9);
+    user = tmp10;
+    if (cResult[5] !== tmp10) {
+      let tmp13 = null;
+      if (null != tmp10) {
+        tmp13 = null;
+        if (closure_11(tmp10)) {
+          tmp13 = tmp10;
+        }
+      }
+      cResult[5] = tmp10;
+      cResult[6] = tmp13;
+      let tmp12 = tmp13;
+    } else {
+      tmp12 = cResult[6];
+    }
+    if (cResult[7] === tmp5) {
+      if (cResult[8] === first) {
+        if (cResult[9] === tmp10) {
+          if (cResult[10] === tmp9) {
+            let tmp15 = cResult[11];
+            let tmp16 = cResult[12];
+          }
+          const effect = obj3.useEffect(tmp15, tmp16);
+          closure_6 = obj3.useRef(null);
+          FramesStore = obj3.useRef(channel.id);
+          if (cResult[13] === channel.id) {
+            let id1;
+            if (tmp10 != null) {
+              id1 = tmp10.id;
+            }
+            if (cResult[14] === id1) {
+              let tmp19 = cResult[15];
+            }
+            if (cResult[16] === channel.id) {
+              if (cResult[17] === tmp10) {
+                let tmp21 = cResult[18];
+              }
+              const effect1 = obj3.useEffect(tmp19, tmp21);
+              const _Symbol = Symbol;
+              if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+                class X {
+                  constructor() {
+                    return () => { ... };
+                  }
+                }
+                const items = [];
+                cResult[19] = X;
+                cResult[20] = items;
+                class R {
+                  constructor() {
+                    if (null != closure_1) {
+                      tmp10 = closure_2;
+                      if (!closure_2) {
+                        tmp2 = closure_5;
+                        if (null == closure_5) {
+                          tmp11 = closure_7;
+                          mainFrame = closure_7.getMainFrame();
+                          if (null != mainFrame) {
+                            tmp3 = closure_1;
+                            tmp4 = closure_2;
+                            obj = closure_1(closure_2[14]);
+                            leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                          }
+                          tmp6 = closure_1;
+                          tmp7 = closure_2;
+                          obj2 = closure_1(closure_2[15]);
+                          obj1 = { applicationId: null, surface: null };
+                          obj1.applicationId = tmp;
+                          tmp8 = closure_4;
+                          obj1.surface = closure_4;
+                          launchFrameResult = obj2.launchFrame(obj1);
+                          catchPromise = launchFrameResult.catch(() => { ... });
+                        }
+                      }
+                    }
+                    return;
+                  }
+                }
+              } else {
+                class X {
+                  constructor() {
+                    return () => { ... };
+                  }
+                }
+              }
+              class R {
+                constructor() {
+                  if (null != closure_1) {
+                    tmp10 = closure_2;
+                    if (!closure_2) {
+                      tmp2 = closure_5;
+                      if (null == closure_5) {
+                        tmp11 = closure_7;
+                        mainFrame = closure_7.getMainFrame();
+                        if (null != mainFrame) {
+                          tmp3 = closure_1;
+                          tmp4 = closure_2;
+                          obj = closure_1(closure_2[14]);
+                          leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                        }
+                        tmp6 = closure_1;
+                        tmp7 = closure_2;
+                        obj2 = closure_1(closure_2[15]);
+                        obj1 = { applicationId: null, surface: null };
+                        obj1.applicationId = tmp;
+                        tmp8 = closure_4;
+                        obj1.surface = closure_4;
+                        launchFrameResult = obj2.launchFrame(obj1);
+                        catchPromise = launchFrameResult.catch(() => { ... });
+                      }
+                    }
+                  }
+                  return;
+                }
+              }
+              tmp4(tmp2[16])(null != tmp12);
+              class U {
+                constructor() {
+                  id = undefined;
+                  tmp = closure_6;
+                  if (closure_5 != null) {
+                    id = closure_5.id;
+                  }
+                  if (id == null) {
+                    id = null;
+                  }
+                  tmp.current = id;
+                  closure_7.current = channel.id;
+                  return;
+                }
+              }
+              if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+                class D {
+                  constructor() {
+                    return closure_3(false);
+                  }
+                }
+                cResult[21] = D;
+              } else {
+                class D {
+                  constructor() {
+                    return closure_3(false);
+                  }
+                }
+              }
+              let id = channel.id;
+              if (cResult[22] !== id) {
+                class D {
+                  constructor() {
+                    return closure_3(false);
+                  }
+                }
+                cResult[22] = id;
+                cResult[23] = tmp28;
+              } else {
+                class D {
+                  constructor() {
+                    return closure_3(false);
+                  }
+                }
+              }
+              if (null == tmp5) {
+                class D {
+                  constructor() {
+                    return closure_3(false);
+                  }
+                }
+              } else {
+                class D {
+                  constructor() {
+                    return closure_3(false);
+                  }
+                }
+                if (cResult[24] !== tmp12.id) {
+                  class D {
+                    constructor() {
+                      return closure_3(false);
+                    }
+                  }
+                  let obj2 = { frameId: tmp12.id, layoutMode: constants2.FOCUSED };
+                  class R {
+                    constructor() {
+                      if (null != closure_1) {
+                        tmp10 = closure_2;
+                        if (!closure_2) {
+                          tmp2 = closure_5;
+                          if (null == closure_5) {
+                            tmp11 = closure_7;
+                            mainFrame = closure_7.getMainFrame();
+                            if (null != mainFrame) {
+                              tmp3 = closure_1;
+                              tmp4 = closure_2;
+                              obj = closure_1(closure_2[14]);
+                              leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                            }
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj2 = closure_1(closure_2[15]);
+                            obj1 = { applicationId: null, surface: null };
+                            obj1.applicationId = tmp;
+                            tmp8 = closure_4;
+                            obj1.surface = closure_4;
+                            launchFrameResult = obj2.launchFrame(obj1);
+                            catchPromise = launchFrameResult.catch(() => { ... });
+                          }
+                        }
+                      }
+                      return;
+                    }
+                  }
+                  class U {
+                    constructor() {
+                      id = undefined;
+                      tmp = closure_6;
+                      if (closure_5 != null) {
+                        id = closure_5.id;
+                      }
+                      if (id == null) {
+                        id = null;
+                      }
+                      tmp.current = id;
+                      closure_7.current = channel.id;
+                      return;
+                    }
+                  }
+                  const tmp32 = closure_12(tmp(tmp2[19]).InlineFrameView, obj2);
+                  const tmp30 = closure_12(tmp(tmp2[19]).InlineFrameView, obj2);
+                } else {
+                  class D {
+                    constructor() {
+                      return closure_3(false);
+                    }
+                  }
+                }
+                if (cResult[26] === channel.id) {
+                  class D {
+                    constructor() {
+                      return closure_3(false);
+                    }
+                  }
+                  if (cResult[29] === container.container) {
+                    class D {
+                      constructor() {
+                        return closure_3(false);
+                      }
+                    }
+                  }
+                  const obj4 = { style: container.container, children: null };
+                  const items1 = [, ];
+                  class R {
+                    constructor() {
+                      if (null != closure_1) {
+                        tmp10 = closure_2;
+                        if (!closure_2) {
+                          tmp2 = closure_5;
+                          if (null == closure_5) {
+                            tmp11 = closure_7;
+                            mainFrame = closure_7.getMainFrame();
+                            if (null != mainFrame) {
+                              tmp3 = closure_1;
+                              tmp4 = closure_2;
+                              obj = closure_1(closure_2[14]);
+                              leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                            }
+                            tmp6 = closure_1;
+                            tmp7 = closure_2;
+                            obj2 = closure_1(closure_2[15]);
+                            obj1 = { applicationId: null, surface: null };
+                            obj1.applicationId = tmp;
+                            tmp8 = closure_4;
+                            obj1.surface = closure_4;
+                            launchFrameResult = obj2.launchFrame(obj1);
+                            catchPromise = launchFrameResult.catch(() => { ... });
+                          }
+                        }
+                      }
+                      return;
+                    }
+                  }
+                  items1[1] = tmp33;
+                  class U {
+                    constructor() {
+                      id = undefined;
+                      tmp = closure_6;
+                      if (closure_5 != null) {
+                        id = closure_5.id;
+                      }
+                      if (id == null) {
+                        id = null;
+                      }
+                      tmp.current = id;
+                      closure_7.current = channel.id;
+                      return;
+                    }
+                  }
+                  const tmp39 = closure_13(closure_6, obj4);
+                  container = container.container;
+                  cResult[29] = container;
+                  cResult[30] = tmp30;
+                  cResult[31] = tmp33;
+                  cResult[32] = tmp39;
+                }
+                const obj5 = { channelId: channel.id, onOpenChat: tmp27 };
+                class R {
+                  constructor() {
+                    if (null != closure_1) {
+                      tmp10 = closure_2;
+                      if (!closure_2) {
+                        tmp2 = closure_5;
+                        if (null == closure_5) {
+                          tmp11 = closure_7;
+                          mainFrame = closure_7.getMainFrame();
+                          if (null != mainFrame) {
+                            tmp3 = closure_1;
+                            tmp4 = closure_2;
+                            obj = closure_1(closure_2[14]);
+                            leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                          }
+                          tmp6 = closure_1;
+                          tmp7 = closure_2;
+                          obj2 = closure_1(closure_2[15]);
+                          obj1 = { applicationId: null, surface: null };
+                          obj1.applicationId = tmp;
+                          tmp8 = closure_4;
+                          obj1.surface = closure_4;
+                          launchFrameResult = obj2.launchFrame(obj1);
+                          catchPromise = launchFrameResult.catch(() => { ... });
+                        }
+                      }
+                    }
+                    return;
+                  }
+                }
+                class U {
+                  constructor() {
+                    id = undefined;
+                    tmp = closure_6;
+                    if (closure_5 != null) {
+                      id = closure_5.id;
+                    }
+                    if (id == null) {
+                      id = null;
+                    }
+                    tmp.current = id;
+                    closure_7.current = channel.id;
+                    return;
+                  }
+                }
+                cResult[27] = tmp27;
+                cResult[28] = tmp35;
+              }
+            }
+            const items2 = [tmp10, ];
+            class R {
+              constructor() {
+                if (null != closure_1) {
+                  tmp10 = closure_2;
+                  if (!closure_2) {
+                    tmp2 = closure_5;
+                    if (null == closure_5) {
+                      tmp11 = closure_7;
+                      mainFrame = closure_7.getMainFrame();
+                      if (null != mainFrame) {
+                        tmp3 = closure_1;
+                        tmp4 = closure_2;
+                        obj = closure_1(closure_2[14]);
+                        leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                      }
+                      tmp6 = closure_1;
+                      tmp7 = closure_2;
+                      obj2 = closure_1(closure_2[15]);
+                      obj1 = { applicationId: null, surface: null };
+                      obj1.applicationId = tmp;
+                      tmp8 = closure_4;
+                      obj1.surface = closure_4;
+                      launchFrameResult = obj2.launchFrame(obj1);
+                      catchPromise = launchFrameResult.catch(() => { ... });
+                    }
+                  }
+                }
+                return;
+              }
+            }
+            class U {
+              constructor() {
+                id = undefined;
+                tmp = closure_6;
+                if (closure_5 != null) {
+                  id = closure_5.id;
+                }
+                if (id == null) {
+                  id = null;
+                }
+                tmp.current = id;
+                closure_7.current = channel.id;
+                return;
+              }
+            }
+            cResult[17] = tmp10;
+            cResult[18] = items2;
+            tmp21 = items2;
+          }
+          cResult[13] = channel.id;
+          class R {
+            constructor() {
+              if (null != closure_1) {
+                tmp10 = closure_2;
+                if (!closure_2) {
+                  tmp2 = closure_5;
+                  if (null == closure_5) {
+                    tmp11 = closure_7;
+                    mainFrame = closure_7.getMainFrame();
+                    if (null != mainFrame) {
+                      tmp3 = closure_1;
+                      tmp4 = closure_2;
+                      obj = closure_1(closure_2[14]);
+                      leaveFrameResult = obj.leaveFrame(mainFrame.id);
+                    }
+                    tmp6 = closure_1;
+                    tmp7 = closure_2;
+                    obj2 = closure_1(closure_2[15]);
+                    obj1 = { applicationId: null, surface: null };
+                    obj1.applicationId = tmp;
+                    tmp8 = closure_4;
+                    obj1.surface = closure_4;
+                    launchFrameResult = obj2.launchFrame(obj1);
+                    catchPromise = launchFrameResult.catch(() => { ... });
+                  }
+                }
+              }
+              return;
+            }
+          }
+          if (tmp10 != null) {
+            class D {
+              constructor() {
+                return closure_3(false);
+              }
+            }
+          }
+          class U {
+            constructor() {
+              id = undefined;
+              tmp = closure_6;
+              if (closure_5 != null) {
+                id = closure_5.id;
+              }
+              if (id == null) {
+                id = null;
+              }
+              tmp.current = id;
+              closure_7.current = channel.id;
+              return;
+            }
+          }
+          cResult[14] = tmp20;
+          cResult[15] = U;
+          tmp19 = U;
+        }
+      }
+    }
+    class R {
+      constructor() {
+        if (null != closure_1) {
+          tmp10 = closure_2;
+          if (!closure_2) {
+            tmp2 = closure_5;
+            if (null == closure_5) {
+              tmp11 = closure_7;
+              mainFrame = closure_7.getMainFrame();
+              if (null != mainFrame) {
+                tmp3 = closure_1;
+                tmp4 = closure_2;
+                obj = closure_1(closure_2[14]);
+                leaveFrameResult = obj.leaveFrame(mainFrame.id);
+              }
+              tmp6 = closure_1;
+              tmp7 = closure_2;
+              obj2 = closure_1(closure_2[15]);
+              obj1 = { applicationId: null, surface: null };
+              obj1.applicationId = tmp;
+              tmp8 = closure_4;
+              obj1.surface = closure_4;
+              launchFrameResult = obj2.launchFrame(obj1);
+              catchPromise = launchFrameResult.catch(() => { ... });
+            }
+          }
+        }
+        return;
+      }
+    }
+    const items3 = [, first, tmp10, tmp9];
+    cResult[7] = tmp5;
+    cResult[8] = first;
+    cResult[9] = tmp10;
+    cResult[10] = tmp9;
+    cResult[11] = R;
+    cResult[12] = items3;
+    tmp16 = items3;
+    tmp15 = R;
+  }
+  const obj6 = { type: constants.APP_CHANNEL, channelId: channel.id, guildId: guild_id };
+  cResult[2] = channel.id;
+  cResult[3] = guild_id;
+  cResult[4] = obj6;
+  tmp9 = obj6;
+}) : ((channel) => {
   importDefault = undefined;
   let guild_id;
   let first;
-  noop = undefined;
+  surface = undefined;
   let id;
   closure_7 = undefined;
   closure_8 = undefined;
@@ -48,15 +576,15 @@ export default function VibegrationsAppChannelView(channel) {
   let tmp2 = guild_id;
   let items3 = closure_14(require("useSystemKeyboardHeight")());
   let tmp3 = id;
-  let result = id(guild_id[10]).vibegrationsAppIdFromTopic(id.topic);
+  let result = id(guild_id[12]).vibegrationsAppIdFromTopic(id.topic);
   importDefault = result;
   guild_id = id.guild_id;
-  const tmp5 = first(noop.useState(false), 2);
+  const tmp5 = first(surface.useState(false), 2);
   first = tmp5[0];
-  noop = tmp5[1];
+  surface = tmp5[1];
   const items = [id.id, guild_id];
-  const memo = noop.useMemo(() => ({ type: constants.APP_CHANNEL, channelId: id.id, guildId: guild_id }), items);
-  const tmp8 = tmp(tmp2[11])(result, memo);
+  const memo = surface.useMemo(() => ({ type: constants.APP_CHANNEL, channelId: id.id, guildId: guild_id }), items);
+  const tmp8 = tmp(tmp2[13])(result, memo);
   id = tmp8;
   let id1 = null;
   if (null != tmp8) {
@@ -101,11 +629,11 @@ export default function VibegrationsAppChannelView(channel) {
       isChatOpenResult = ref2.isChatOpen(ref2.current);
     }
     if (!isChatOpenResult) {
-      c1(guild_id[12]).leaveFrame(ref.current);
-      const obj = c1(guild_id[12]);
+      c1(guild_id[14]).leaveFrame(ref.current);
+      const obj = c1(guild_id[14]);
     }
   }, []);
-  tmp(tmp2[14])(null != id1);
+  tmp(tmp2[16])(null != id1);
   id2 = id.id;
   [][0] = id2;
   const callback = obj2.useCallback(() => closure_4(false), []);
@@ -117,9 +645,9 @@ export default function VibegrationsAppChannelView(channel) {
     id1 = id1.id;
     obj4.frameId = id1;
     obj4.layoutMode = constants2.FOCUSED;
-    tmp3 = closure_12(tmp3(tmp2[17]).InlineFrameView, obj4);
+    tmp3 = closure_12(tmp3(tmp2[19]).InlineFrameView, obj4);
     items3 = [tmp3, ];
-    tmp = tmp(tmp2[18]);
+    tmp = tmp(tmp2[20]);
     const obj5 = { channelId: null, onOpenChat: null };
     id = id.id;
     obj5.channelId = id;
@@ -132,22 +660,22 @@ export default function VibegrationsAppChannelView(channel) {
     const obj6 = { style: items3.centered, children: null };
     const obj7 = { style: items3.copy, children: null };
     const obj8 = { variant: "heading-lg/bold", color: "text-default", children: id.name };
-    const items4 = [closure_12(tmp3(tmp2[19]).Text, obj8), ];
+    const items4 = [closure_12(tmp3(tmp2[21]).Text, obj8), ];
     const obj9 = { variant: "text-md/normal", color: "text-muted", children: null };
-    const intl = tmp3(tmp2[20]).intl;
-    obj9.children = intl.string(tmp(tmp2[21]).QM4w4h);
-    items4[1] = closure_12(tmp3(tmp2[19]).Text, obj9);
+    const intl = tmp3(tmp2[22]).intl;
+    obj9.children = intl.string(tmp(tmp2[23]).QM4w4h);
+    items4[1] = closure_12(tmp3(tmp2[21]).Text, obj9);
     obj7.children = items4;
     const items5 = [closure_13(id, obj7), ];
     const obj10 = { variant: "primary", text: null, onPress: null };
-    const intl2 = tmp3(tmp2[20]).intl;
-    obj10.text = intl2.string(tmp(tmp2[21]).jLMpUv);
+    const intl2 = tmp3(tmp2[22]).intl;
+    obj10.text = intl2.string(tmp(tmp2[23]).jLMpUv);
     obj10.onPress = callback;
-    items5[1] = closure_12(tmp3(tmp2[22]).Button, obj10);
+    items5[1] = closure_12(tmp3(tmp2[24]).Button, obj10);
     obj6.children = items5;
     tmp20 = closure_13(id, obj6);
   } else {
     const obj11 = { style: items3.centered, children: closure_12(memo, {}) };
     tmp20 = closure_12(id, obj11);
   }
-};
+});

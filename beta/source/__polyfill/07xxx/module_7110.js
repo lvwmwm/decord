@@ -1,16 +1,15 @@
 // Module ID: 7110
 // Function ID: 7111
-// Dependencies: [7111, 7112]
+// Dependencies: [7108]
+// Exports: getInvertedTransformStyle
 
 // Module 7110
-import _mod7111 from "module_7111" /* 7111 */;
+import PlatformConfig2 from "PlatformConfig" /* 7108 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default function toPropertyKey(arg0) {
-  const tmp = _mod7111(arg0, "string");
-  let text = tmp;
-  if ("symbol" != obj.default(tmp)) {
-    text = `${tmp}`;
-  }
-  return text;
+export const getInvertedTransformStyle = function getInvertedTransformStyle(horizontal) {
+  const PlatformConfig = PlatformConfig2.PlatformConfig;
+  return horizontal ? PlatformConfig.invertedTransformStyleHorizontal : PlatformConfig.invertedTransformStyle;
 };

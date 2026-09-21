@@ -1,21 +1,62 @@
-// Module ID: 10599
-// Function ID: 10600
+// Module ID: 10519
+// Function ID: 10520
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 7434, 4453, 4723, 7442, 5904, 5822, 4698, 1115, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 7436, 4457, 4725, 4700, 1119, 7449, 5903, 5822, 2]
 
-// Module 10599 (EmojiOptionsActionSheet)
-import ToastUtils from "ToastUtils" /* 4453 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+// Module 10519 (EmojiOptionsActionSheet)
+import ToastUtils from "ToastUtils" /* 4457 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ClipboardUtils from "ClipboardUtils" /* 7436 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/emoji/EmojiOptionsActionSheet.tsx");
 
-export default function EmojiOptionsActionSheet(emojiSrc) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSrc) => {
+  const cResult = emojiSrc(568).c(6);
+  emojiSrc = emojiSrc.emojiSrc;
+  if (cResult[0] !== emojiSrc) {
+    const fn = function t() {
+      ClipboardUtils.copy(emojiSrc);
+      const result = ToastUtils.presentCopiedToClipboard();
+      ActionSheetActionCreatorsDefault.hideActionSheet();
+    };
+    cResult[0] = emojiSrc;
+    cResult[1] = fn;
+    let tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = jsx(tmp(4700).LinkIcon, {});
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.cIoudn);
+    cResult[2] = tmp8;
+    cResult[3] = stringResult;
+    let tmp6 = stringResult;
+    let tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] !== tmp4) {
+    let obj2 = { children: null };
+    const obj3 = { hasIcons: true, children: null };
+    const obj4 = { icon: tmp5, label: tmp6, onPress: tmp4 };
+    obj3.children = jsx(tmp(5822).TableRow, { icon: tmp5, label: tmp6, onPress: tmp4 });
+    obj2.children = jsx(tmp(5903).TableRowGroup, { hasIcons: true, children: null });
+    const tmp12 = jsx(tmp(7449).ActionSheet, { children: null });
+    cResult[4] = tmp4;
+    cResult[5] = tmp12;
+    let tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[5];
+  }
+  return tmp10;
+}) : ((emojiSrc) => {
   emojiSrc = emojiSrc.emojiSrc;
   const items = [emojiSrc];
   const callback = noop.useCallback(() => {
@@ -25,11 +66,11 @@ export default function EmojiOptionsActionSheet(emojiSrc) {
   }, items);
   let obj = { children: null };
   let obj2 = { hasIcons: true, children: null };
-  const obj3 = { icon: jsx(emojiSrc(4698).LinkIcon, {}), label: null, onPress: null };
-  const intl = emojiSrc(1115).intl;
-  obj3.label = intl.string(emojiSrc(1115).t.cIoudn);
+  const obj3 = { icon: jsx(emojiSrc(4700).LinkIcon, {}), label: null, onPress: null };
+  const intl = emojiSrc(1119).intl;
+  obj3.label = intl.string(emojiSrc(1119).t.cIoudn);
   obj3.onPress = callback;
-  obj2.children = jsx(emojiSrc(5822).TableRow, { icon: jsx(emojiSrc(4698).LinkIcon, {}), label: null, onPress: null });
-  obj.children = jsx(emojiSrc(5904).TableRowGroup, { hasIcons: true, children: null });
-  return jsx(emojiSrc(7442).ActionSheet, { children: null });
-};
+  obj2.children = jsx(emojiSrc(5822).TableRow, { icon: jsx(emojiSrc(4700).LinkIcon, {}), label: null, onPress: null });
+  obj.children = jsx(emojiSrc(5903).TableRowGroup, { hasIcons: true, children: null });
+  return jsx(emojiSrc(7449).ActionSheet, { children: null });
+});

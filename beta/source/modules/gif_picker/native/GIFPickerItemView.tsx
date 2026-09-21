@@ -1,22 +1,23 @@
-// Module ID: 10638
-// Function ID: 10639
+// Module ID: 10671
+// Function ID: 10672
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4756, 10628, 576, 1875, 4723, 10639, 1980, 1115, 5339, 5804, 2]
+// Dependencies: [19, 17, 21, 4758, 10661, 580, 558, 568, 1879, 4725, 10672, 1984, 1119, 5341, 5802, 2]
 // Exports: default
 
-// Module 10638 (GIFPickerItemView)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10628 */;
+// Module 10671 (GIFPickerItemView)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10661 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_6 = createStyles.createStyles((height) => {
   const obj = { container: null, gifImage: null, gifImageSelected: null };
   const size = { paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: nativeDefault.radii.xs, width: "100%", height, flex: 1 };
@@ -26,6 +27,7 @@ let closure_6 = createStyles.createStyles((height) => {
   obj.gifImageSelected = { borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND };
   return obj;
 });
+const ReactCompilerGating = fn(558);
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerItemView.tsx");
 
@@ -43,7 +45,7 @@ export default function GIFPickerItemView(onPressGIF) {
   }, items);
   const items2 = [index, item.src];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10639, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10672, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
     const obj2 = { item };
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
   }, items1);
@@ -77,11 +79,34 @@ export default function GIFPickerItemView(onPressGIF) {
   } else {
     gifImage = tmp.gifImage;
   }
-  obj.children = jsx(item(index[12]), { style: gifImage, source: { uri: item.src } });
-  return jsx(onPressGIF(index[11]).PressableOpacity, { style: tmp.container, accessibilityRole: "button", accessibilityLabel: memo, accessibilityState: null, onPress: null, onLongPress: null, children: null });
+  obj.children = jsx(item(index[14]), { style: gifImage, source: { uri: item.src } });
+  return jsx(onPressGIF(index[13]).PressableOpacity, { style: tmp.container, accessibilityRole: "button", accessibilityLabel: memo, accessibilityState: null, onPress: null, onLongPress: null, children: null });
 };
-export const GIFPickerItemPlaceholder = noop.memo((height) => {
+export const GIFPickerItemPlaceholder = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
+  const cResult = c.c(5);
+  const tmp2 = closure_6(height.height);
+  if (cResult[0] !== tmp2.gifImage) {
+    const obj2 = { style: tmp2.gifImage };
+    const tmp6 = <View style={tmp2.gifImage} />;
+    cResult[0] = tmp2.gifImage;
+    cResult[1] = tmp6;
+    let tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  if (cResult[2] === tmp2.container) {
+    if (cResult[3] === tmp3) {
+      let tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  const tmp8 = <View style={tmp2.container}>{tmp3}</View>;
+  cResult[2] = tmp2.container;
+  cResult[3] = tmp3;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((height) => {
   const tmp = closure_6(height.height);
   const obj = { style: tmp.container, children: <View style={tmp.gifImage} /> };
   return <View style={tmp.container}><View style={tmp.gifImage} /></View>;
-});
+}));

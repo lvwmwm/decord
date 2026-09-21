@@ -1,15 +1,15 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12295
+// Function ID: 12296
 // Name: ApplicationCommandValidationUtils
-// Dependencies: [5210, 7765, 9526, 1115, 12409, 2]
+// Dependencies: [5212, 7770, 9522, 1119, 12296, 2]
 // Exports: getValidationResults
 
-// Module 12408 (ApplicationCommandValidationUtils)
-import util from "util" /* 1115 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5210 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
-import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 9526 */;
-import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12409 */;
+// Module 12295 (ApplicationCommandValidationUtils)
+import util from "util" /* 1119 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5212 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
+import ApplicationCommandOptionUtils from "ApplicationCommandOptionUtils" /* 9522 */;
+import ApplicationCommandValidatorsDefault from "ApplicationCommandValidators" /* 12296 */;
 import size from "module_2" /* 2 */;
 
 function validateOptionContent(allowEmptyValues) {
@@ -69,7 +69,7 @@ const result = size.fileFinishedImporting("modules/application_commands/Applicat
 
 export const getValidationResults = function getValidationResults(activeCommand, optionValues, guild_id, id, allowEmptyValues) {
   const obj = {};
-  const options = activeCommand.options;
+  options = activeCommand.options;
   if (null == options) {
     return obj;
   } else {

@@ -1,15 +1,14 @@
 // Module ID: 14636
 // Function ID: 14637
-// Dependencies: [14584, 14603, 14593]
+// Dependencies: [14583, 14634, 14617]
 
 // Module 14636
-import _mod14584 from "module_14584" /* 14584 */;
-import _mod14593 from "module_14593" /* 14593 */;
-import all from "module_14603" /* 14603 */;
+import _mod14583 from "module_14583" /* 14583 */;
+import _mod14617 from "module_14617" /* 14617 */;
+import _mod14634 from "module_14634" /* 14634 */;
 
-let closure_0 = _mod14584(Function.toString);
-if (!all(_mod14593.inspectSource)) {
-  _mod14593.inspectSource = (arg0) => closure_0(arg0);
-}
 
-export default _mod14593.inspectSource;
+export default _mod14583 ? ((arg0, arg1, arg2) => _mod14634.f(arg0, arg1, _mod14617(1, arg2))) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
+  return arg0;
+});

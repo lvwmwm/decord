@@ -1,21 +1,21 @@
-// Module ID: 4407
-// Function ID: 4408
+// Module ID: 4411
+// Function ID: 4412
 // Name: ReactionUtils
-// Dependencies: [502, 1074, 4408, 4409, 1115, 8005, 2019, 1241, 2]
+// Dependencies: [502, 1078, 4412, 4413, 1119, 8010, 2023, 1245, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4407 (ReactionUtils)
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8005 */;
+// Module 4411 (ReactionUtils)
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8010 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticsSections: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
-const constants3 = fn(4408).NotificationSettingsUpdateType;
+const constants3 = fn(4412).NotificationSettingsUpdateType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
 
@@ -29,23 +29,23 @@ export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   }
   return result;
 };
-export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(me, count, emoji, arg3) {
+export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayName(selected, count, emoji, arg3) {
   const t = util.t;
   if (arg3) {
-    if (me) {
+    if (selected) {
       let i9DXqM = t.i9DXqM;
     } else {
       i9DXqM = t["Z/l+qu"];
     }
   } else {
-    if (me) {
+    if (selected) {
       let PirBBE = t.CLuzw5;
       let tmp5 = tmp;
     } else {
       PirBBE = t.PirBBE;
       tmp5 = tmp;
     }
-    const intl = tmp5(1115).intl;
+    const intl = tmp5(1119).intl;
     const obj = { reactions: count, emojiName: null };
     if (null == emoji.id) {
       let str2 = UnicodeEmojisDefault.convertSurrogateToName(emoji.name);

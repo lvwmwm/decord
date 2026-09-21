@@ -1,16 +1,16 @@
-// Module ID: 5495
-// Function ID: 5496
+// Module ID: 5497
+// Function ID: 5498
 // Name: CallStore
-// Dependencies: [2041, 2095, 4577, 1074, 573, 1271, 12, 504, 2]
+// Dependencies: [2045, 2099, 4580, 1078, 577, 1275, 12, 504, 2]
 
-// Module 5495 (CallStore)
+// Module 5497 (CallStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
 
 require = fn;
 function callConnect() {
@@ -47,7 +47,7 @@ function callConnect() {
   }
   return flag;
 }
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 let calls = {};
 const enqueuedRings = {};
 const Store = initializeDefault.Store;

@@ -1,26 +1,67 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 6104
+// Function ID: 6105
 // Name: CompassIllocon
-// Dependencies: [21, 5804, 6107, 2]
-// Exports: CompassIllocon
+// Dependencies: [21, 558, 568, 6105, 5802, 2]
 
-// Module 6106 (CompassIllocon)
+// Module 6104 (CompassIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6107 from "module_6107" /* 6107 */;
+import c from "c" /* 568 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import _modDef6105 from "module_6105" /* 6105 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CompassIllocon.native.tsx");
 
-export const CompassIllocon = function CompassIllocon(size) {
+export const CompassIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(8);
+  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
+  let num = 64;
+  if (undefined !== size) {
+    num = size;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef6105 };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== num) {
+    const size1 = { width: num, height: num };
+    const items = [size1];
+    cResult[1] = num;
+    cResult[2] = items;
+    let tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === accessibilityLabel) {
+    if (cResult[4] === accessible) {
+      if (cResult[5] === resizeMode) {
+        if (cResult[6] === tmp5) {
+          let tmp6 = cResult[7];
+        }
+        return tmp6;
+      }
+    }
+  }
+  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
+  cResult[3] = accessibilityLabel;
+  cResult[4] = accessible;
+  cResult[5] = resizeMode;
+  cResult[6] = tmp5;
+  cResult[7] = tmp7;
+  tmp6 = tmp7;
+}) : ((size) => {
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6107 };
+  const obj2 = { uri: _modDef6105 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;
@@ -28,4 +69,4 @@ export const CompassIllocon = function CompassIllocon(size) {
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+});

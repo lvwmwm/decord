@@ -1,14 +1,14 @@
-// Module ID: 7426
-// Function ID: 7427
+// Module ID: 7428
+// Function ID: 7429
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5498, 504, 5623, 2]
+// Dependencies: [5, 19, 5500, 504, 5625, 2]
 // Exports: useProviderConnection
 
-// Module 7426 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5623 */;
+// Module 7428 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5625 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
 
 const require = globalThis.__r;
 
@@ -16,8 +16,8 @@ const require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export const useProviderConnection = function useProviderConnection(provider_id) {
-  _require = provider_id;
+export const useProviderConnection = function useProviderConnection(arg0) {
+  _require = arg0;
   const items = [ConnectedAccountsStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => {
     let account = null;
@@ -44,7 +44,7 @@ export const useProviderConnection = function useProviderConnection(provider_id)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -114,12 +114,12 @@ export const useProviderConnection = function useProviderConnection(provider_id)
       }
     }
   });
-  const items2 = [provider_id];
+  const items2 = [arg0];
   let obj2 = require("initialize");
   return {
     loading: stateFromStores1,
     hasConnection: tmp3,
-    canConnect: null != provider_id,
+    canConnect: null != arg0,
     startConnection: noop.useCallback(function() {
       const self = this;
       const apply = closure_0.apply;

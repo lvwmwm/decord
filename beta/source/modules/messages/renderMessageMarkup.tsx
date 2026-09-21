@@ -1,12 +1,12 @@
-// Module ID: 8132
-// Function ID: 8133
+// Module ID: 8137
+// Function ID: 8138
 // Name: renderMessageMarkup
-// Dependencies: [8133, 4746, 2]
+// Dependencies: [8138, 4748, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupToASTWithParser, renderMessageMarkupWithParser
 
-// Module 8132 (renderMessageMarkup)
-import MarkupUtilsDefault from "MarkupUtils" /* 4746 */;
-import MarkupPostProcessors from "MarkupPostProcessors" /* 8133 */;
+// Module 8137 (renderMessageMarkup)
+import MarkupUtilsDefault from "MarkupUtils" /* 4748 */;
+import MarkupPostProcessors from "MarkupPostProcessors" /* 8138 */;
 import size from "module_2" /* 2 */;
 
 function getInitialParserState(channelId) {

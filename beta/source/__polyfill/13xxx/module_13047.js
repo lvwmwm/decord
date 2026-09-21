@@ -1,35 +1,58 @@
 // Module ID: 13047
 // Function ID: 13048
-// Dependencies: [13048, 13051]
-// Exports: addGlobalErrorInstrumentationHandler
+// Dependencies: [13048, 13049, 13052]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 13047
 import _mod13048 from "module_13048" /* 13048 */;
-import _mod13051 from "module_13051" /* 13051 */;
 
 require = arg1;
-const dependencyMap = arg6;
-function instrumentError() {
-  onerror = _mod13051.GLOBAL_OBJ.onerror;
-  _mod13051.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
-    _mod13048.triggerHandlers("error", { column, error, line, msg, url });
-    if (!onerror) {
-      return tmp2;
-    } else {
-      const self = this;
-      const apply = onerror.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
+const dependencyMap = {};
+let closure_3 = {};
+
+export const addHandler = function addHandler(arg0, arg1) {
+  dependencyMap[arg0] = dependencyMap[arg0] || [];
+  dependencyMap[arg0].push(arg1);
+};
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp2[arg0] = true;
+    try {
+      fn();
+    } catch (tmp5) {
+      if (_mod13048.DEBUG_BUILD) {
+        const logger = tmp6(13049).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + tmp, tmp5);
+      }
+      tmp6 = require;
+    }
+  }
+};
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    dependencyMap[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  let tmp8 = arg0;
+  if (arg0) {
+    tmp8 = dependencyMap[arg0];
+  }
+  if (tmp8) {
+    const iter = tmp8[Symbol.iterator]();
+    if (iter !== undefined) {
+      try {
+        tmp15(arg1);
+      } catch (tmp18) {
+        if (_mod13048.DEBUG_BUILD) {
+          const logger = tmp19(13049).logger;
+          logger.error(tmp2 + tmp6 + tmp3 + tmp19(13052).getFunctionName(tmp7) + tmp4, tmp18);
+          const tmp19Result = tmp19(13052);
+        }
       }
     }
-  };
-  _mod13051.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
-}
-let onerror = null;
-
-export const addGlobalErrorInstrumentationHandler = function addGlobalErrorInstrumentationHandler(arg0) {
-  _mod13048.addHandler("error", arg0);
-  _mod13048.maybeInstrument("error", instrumentError);
+    const nextResult = iter.next();
+  }
 };

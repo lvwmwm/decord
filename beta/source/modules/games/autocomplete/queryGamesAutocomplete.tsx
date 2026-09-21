@@ -1,13 +1,13 @@
-// Module ID: 10097
-// Function ID: 10098
+// Module ID: 10076
+// Function ID: 10077
 // Name: queryGamesAutocomplete
-// Dependencies: [5324, 551, 9181, 5325, 2]
+// Dependencies: [5326, 551, 9179, 5327, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 10097 (queryGamesAutocomplete)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5325 */;
-import useGameAutocomplete2 from "useGameAutocomplete" /* 9181 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5324 */;
+// Module 10076 (queryGamesAutocomplete)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5327 */;
+import useGameAutocomplete2 from "useGameAutocomplete" /* 9179 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5326 */;
 import debounce from "debounce" /* 551 */;
 
 require = fn;
@@ -15,7 +15,7 @@ let closure_3 = debounce((arg0) => {
   const useGameAutocomplete = useGameAutocomplete2.useGameAutocomplete;
   const items = [arg0];
   const many = useGameAutocomplete.fetchMany(items);
-}, fn(9181).GAME_AUTOCOMPLETE_DEBOUNCE_MS, { leading: true, maxWait: fn(9181).GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS });
+}, fn(9179).GAME_AUTOCOMPLETE_DEBOUNCE_MS, { leading: true, maxWait: fn(9179).GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
 

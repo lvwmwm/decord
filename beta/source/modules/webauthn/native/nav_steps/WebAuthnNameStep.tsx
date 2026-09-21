@@ -1,25 +1,25 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 14941
+// Function ID: 14942
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 14933, 21, 4756, 1484, 6838, 4454, 1115, 10912, 4715, 8871, 1177, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 14922, 21, 4758, 1488, 6836, 4458, 1119, 10950, 4717, 8876, 1181, 5188, 2]
 // Exports: default
 
-// Module 14952 (WebAuthnNameStep)
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import useNavigation from "useNavigation" /* 1484 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import Form from "Form" /* 8871 */;
+// Module 14941 (WebAuthnNameStep)
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import useNavigation from "useNavigation" /* 1488 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import Form from "Form" /* 8876 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const WebAuthnScreens = fn(14933).WebAuthnScreens;
+const WebAuthnScreens = fn(14922).WebAuthnScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_10 = createStyles.createStyles({ margin: { margin: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnNameStep.tsx");
@@ -40,7 +40,7 @@ export default function WebAuthnNameStep(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -93,7 +93,7 @@ export default function WebAuthnNameStep(arg0) {
           v3(tmp32[9]).open(obj8);
           closure_128_2.push(constants.SUCCESS, {});
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp32) {
         if (tmp5 === c3) {
@@ -119,9 +119,9 @@ export default function WebAuthnNameStep(arg0) {
   value = tmp5Result[0];
   let obj2 = { children: null };
   const obj3 = { showTopContainer: false, value, onChange: tmp5Result[1], style: tmp.margin, error: tmp8, title: null, placeholder: null, disabled: null, clearButtonVisibility: null, autoFocus: true, showBorder: true, required: true, large: true };
-  let intl = tmp2(1115).intl;
+  let intl = tmp2(1119).intl;
   obj3.title = intl.string(util.t["Jzd+z/"]);
-  const intl2 = tmp2(1115).intl;
+  const intl2 = tmp2(1119).intl;
   obj3.placeholder = intl2.string(util.t["I/sJtJ"]);
   obj3.clearButtonVisibility = native.ClearButtonVisibility.WITH_CONTENT;
   const items = [closure_8(Form.FormInput, obj3), closure_8(Form.FormDivider, {}), ];
@@ -141,7 +141,7 @@ export default function WebAuthnNameStep(arg0) {
     disabled: null,
     size: "lg"
   };
-  const intl3 = tmp2(1115).intl;
+  const intl3 = tmp2(1119).intl;
   obj5.text = intl3.string(util.t["5dyZ1S"]);
   obj5.disabled = "" === value;
   obj4.children = closure_8(components_Button_Button.Button, obj5);

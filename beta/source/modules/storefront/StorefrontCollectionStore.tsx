@@ -1,11 +1,11 @@
-// Module ID: 9154
-// Function ID: 9155
+// Module ID: 9152
+// Function ID: 9153
 // Name: StorefrontCollectionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 9154 (StorefrontCollectionStore)
+// Module 9152 (StorefrontCollectionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const dependencyMap = {};
 const dependencyMap2 = {};
@@ -20,7 +20,7 @@ const prototype = StorefrontCollectionStore.prototype;
 prototype["getFetchState"] = function getFetchState(arg0) {
   let tmp;
   if (null != arg0) {
-    let state;
+    state = undefined;
     if (dependencyMap[arg0] != null) {
       state = tmp3.state;
     }
@@ -31,7 +31,7 @@ prototype["getFetchState"] = function getFetchState(arg0) {
 prototype["getFetchStateForApplication"] = function getFetchStateForApplication(arg0) {
   let tmp;
   if (null != arg0) {
-    let state;
+    state = undefined;
     if (dependencyMap2[arg0] != null) {
       state = tmp3.state;
     }
@@ -90,7 +90,7 @@ prototype["getCollection"] = function getCollection(item10006) {
   }
   let collection = null;
   if (null != tmp) {
-    let state;
+    state = undefined;
     if (tmp != null) {
       state = tmp.state;
     }
@@ -120,7 +120,7 @@ prototype["getFetchParamsForApplication"] = function getFetchParamsForApplicatio
   if (null != arg0) {
     tmp = dependencyMap2[arg0];
   }
-  let state;
+  state = undefined;
   if (tmp != null) {
     state = tmp.state;
   }
@@ -150,7 +150,7 @@ prototype["getCollectionsForApplication"] = function getCollectionsForApplicatio
   return collections;
 };
 prototype["getCollectionPageFetchState"] = function getCollectionPageFetchState(arg0) {
-  let state;
+  state = undefined;
   if (dependencyMap3[arg0] != null) {
     state = tmp.state;
   }
@@ -180,7 +180,7 @@ prototype["getCollectionListTotal"] = function getCollectionListTotal(arg0) {
   return closure_3[arg0];
 };
 prototype["getCollectionsAfterFetchState"] = function getCollectionsAfterFetchState(arg0) {
-  let state;
+  state = undefined;
   if (dependencyMap4[arg0] != null) {
     state = tmp.state;
   }
@@ -254,7 +254,7 @@ const storefrontCollectionStore = new StorefrontCollectionStore(DispatcherDefaul
     const item = collections.forEach((collection) => {
       set.add(collection.id);
       if (!dependencyMap) {
-        let state;
+        state = undefined;
         if (tmp2 != null) {
           state = tmp2.state;
         }

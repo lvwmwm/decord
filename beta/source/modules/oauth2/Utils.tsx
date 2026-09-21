@@ -1,13 +1,13 @@
-// Module ID: 9334
-// Function ID: 9335
+// Module ID: 9332
+// Function ID: 9333
 // Name: Utils
-// Dependencies: [1074, 9335, 1115, 5328, 2]
+// Dependencies: [1078, 9333, 1119, 5330, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 9334 (Utils)
-import Constants from "Constants" /* 1074 */;
-import utils from "utils" /* 5328 */;
-import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9335 */;
+// Module 9332 (Utils)
+import Constants from "Constants" /* 1078 */;
+import utils from "utils" /* 5330 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9333 */;
 import size from "module_2" /* 2 */;
 
 const MarketingURLs = Constants.MarketingURLs;
@@ -17,8 +17,8 @@ export const getApplicationDetailsText = function getApplicationDetailsText(appl
   const isSocialLayerParentApplication = useIsSocialLayerParentApplication.getIsSocialLayerParentApplication(application);
   if (null != application.privacy_policy_url) {
     if (null != application.terms_of_service_url) {
-      const t4 = tmp(1115).t;
-      const intl4 = tmp(1115).intl;
+      const t4 = tmp(1119).t;
+      const intl4 = tmp(1119).intl;
       const obj2 = { application: null, privacyPolicyURL: null, termsOfServiceURL: null, discordPrivacyPolicyURL: null };
       ({ name: obj5.application, privacy_policy_url: obj5.privacyPolicyURL, terms_of_service_url: obj5.termsOfServiceURL } = application);
       obj2.discordPrivacyPolicyURL = MarketingURLs.PRIVACY;
@@ -26,22 +26,22 @@ export const getApplicationDetailsText = function getApplicationDetailsText(appl
     }
   }
   if (null != application.privacy_policy_url) {
-    const t3 = tmp(1115).t;
-    const intl3 = tmp(1115).intl;
+    const t3 = tmp(1119).t;
+    const intl3 = tmp(1119).intl;
     const obj9 = { application: null, privacyPolicyURL: null, discordPrivacyPolicyURL: null };
     ({ name: obj4.application, privacy_policy_url: obj4.privacyPolicyURL } = application);
     obj9.discordPrivacyPolicyURL = MarketingURLs.PRIVACY;
     return intl3.format(isSocialLayerParentApplication ? t3.pYVSah : t3.TBvmM2, obj9);
   } else if (null != application.terms_of_service_url) {
-    const t2 = tmp(1115).t;
-    const intl2 = tmp(1115).intl;
+    const t2 = tmp(1119).t;
+    const intl2 = tmp(1119).intl;
     const obj10 = { application: null, termsOfServiceURL: null, discordPrivacyPolicyURL: null };
     ({ name: obj3.application, terms_of_service_url: obj3.termsOfServiceURL } = application);
     obj10.discordPrivacyPolicyURL = MarketingURLs.PRIVACY;
     return intl2.format(isSocialLayerParentApplication ? t2.nBLOp5 : t2["q0T/Q1"], obj10);
   } else {
-    const t = tmp(1115).t;
-    const intl = tmp(1115).intl;
+    const t = tmp(1119).t;
+    const intl = tmp(1119).intl;
     const obj11 = { application: application.name, discordPrivacyPolicyURL: MarketingURLs.PRIVACY };
     return intl.format(isSocialLayerParentApplication ? t["8LemYv"] : t["3Ywek3"], obj11);
   }

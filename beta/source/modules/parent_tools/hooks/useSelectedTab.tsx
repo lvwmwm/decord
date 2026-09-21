@@ -1,23 +1,58 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15138
+// Function ID: 15139
 // Name: useSelectedTab
-// Dependencies: [7779, 7780, 1074, 563, 7781, 1241, 2]
-// Exports: default
+// Dependencies: [7784, 7785, 1078, 558, 568, 565, 7786, 1245, 2]
 
-// Module 15149 (useSelectedTab)
-import useStateFromStores from "useStateFromStores" /* 563 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7781 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+// Module 15138 (useSelectedTab)
+import useStateFromStores from "useStateFromStores" /* 565 */;
+import c from "c" /* 568 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7786 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
 
 require = fn;
-const FamilyCenterConstants = fn(7780);
+const FamilyCenterConstants = fn(7785);
 ({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = FamilyCenterConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTab.tsx");
 
-export default function useSelectedMyFamilyTab() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [FamilyCenterStore];
+    const fn = function c() {
+      return selectedTab.getSelectedTab();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = useStateFromStores.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function s(tab) {
+      tab = FamilyCenterActionCreatorsDefault.selectTab(tab);
+      AnalyticsUtilsDefault.track(constants.FAMILY_CENTER_ACTION, { action: TabChange.TabChange, tab });
+    };
+    cResult[2] = fn2;
+    let tmp8 = fn2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== stateFromStores) {
+    const obj2 = { selectedTab: stateFromStores, handleTabChange: tmp8 };
+    cResult[3] = stateFromStores;
+    cResult[4] = obj2;
+    let tmp9 = obj2;
+  } else {
+    tmp9 = cResult[4];
+  }
+  return tmp9;
+}) : (() => {
   let obj = {
     selectedTab: null,
     handleTabChange(tab) {
@@ -28,5 +63,5 @@ export default function useSelectedMyFamilyTab() {
   const items = [FamilyCenterStore];
   obj.selectedTab = useStateFromStores.useStateFromStores(items, () => selectedTab.getSelectedTab());
   return obj;
-};
+});
 export const FAMILY_CENTER_TAB_ANALYTICS_LABELS = { [FamilyCenterSubPages.ACTIVITY]: "family_center_activity_tab", [FamilyCenterSubPages.REQUESTS]: "family_center_requests_tab", [FamilyCenterSubPages.SETTINGS]: "family_center_settings_tab", [FamilyCenterSubPages.CONTENT_AND_SOCIAL]: "family_center_content_and_social_panel", [FamilyCenterSubPages.DATA_AND_PRIVACY]: "family_center_data_and_privacy_panel", [FamilyCenterSubPages.SCREEN_TIME_CONTROLS]: "family_center_screen_time_controls_panel" };

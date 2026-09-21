@@ -1,32 +1,152 @@
 // Module ID: 16548
 // Function ID: 16549
 // Name: DirectoryChannel
-// Dependencies: [19, 2041, 2096, 10374, 4938, 21, 4756, 576, 563, 1101, 11177, 16455, 9867, 2]
+// Dependencies: [19, 2045, 2100, 12213, 4940, 21, 4758, 580, 558, 568, 565, 1105, 11219, 9846, 16467, 2]
 
 // Module 16548 (DirectoryChannel)
-import nativeDefault from "native" /* 576 */;
-import router_utils from "router_utils" /* 1101 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11177 */;
+import nativeDefault from "native" /* 580 */;
+import router_utils from "router_utils" /* 1105 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 
 require = fn;
-const UnreadSetting = fn(4938).UnreadSetting;
+const UnreadSetting = fn(4940).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let obj = { container: { marginVertical: fn(10374).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const createStyles = fn(4758);
+let obj = { container: { marginVertical: fn(12213).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
 let closure_8 = createStyles.createStyles(obj);
-let obj3 = { marginVertical: fn(10374).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+const ReactCompilerGating = fn(558);
+let obj3 = { marginVertical: fn(12213).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
 
-export default noop.memo((guildId) => {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = guildId(568).c(20);
+  guildId = guildId.guildId;
+  let selected = guildId.selected;
+  const tmp4 = closure_8();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, GuildChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function b() {
+      const directoryChannelIds = GuildChannelStore.getDirectoryChannelIds(guildId);
+      let channel = null;
+      if (0 !== directoryChannelIds.length) {
+        channel = ChannelStore.getChannel(directoryChannelIds[0]);
+      }
+      return channel;
+    };
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    let tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+  }
+  let obj = guildId(568);
+  const stateFromStores = guildId(565).useStateFromStores(first, tmp8);
+  let id;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
+  }
+  if (!selected) {
+    selected = id === guildId.selectedChannelId;
+  }
+  if (cResult[3] === id) {
+    if (cResult[4] === guildId) {
+      let tmp11 = cResult[5];
+    }
+    if (cResult[6] !== id) {
+      const fn2 = function f() {
+        if (null != id) {
+          const result = openChannelLongPressActionSheet.openChannelLongPressActionSheet(tmp);
+        }
+      };
+      cResult[6] = id;
+      cResult[7] = fn2;
+      let tmp12 = fn2;
+    } else {
+      tmp12 = cResult[7];
+    }
+    if (null == stateFromStores) {
+      return null;
+    } else {
+      if (cResult[8] !== stateFromStores) {
+        const obj2 = { channel: stateFromStores };
+        const tmp15 = id(9846)(obj2);
+        cResult[8] = stateFromStores;
+        cResult[9] = tmp15;
+        let tmp13 = tmp15;
+      } else {
+        tmp13 = cResult[9];
+      }
+      if (cResult[10] !== selected) {
+        const obj3 = { selected };
+        cResult[10] = selected;
+        cResult[11] = obj3;
+        let tmp16 = obj3;
+      } else {
+        tmp16 = cResult[11];
+      }
+      if (cResult[12] === stateFromStores) {
+        if (cResult[13] === tmp12) {
+          if (cResult[14] === tmp11) {
+            if (cResult[15] === selected) {
+              if (cResult[16] === tmp4.container) {
+                if (cResult[17] === tmp13) {
+                  if (cResult[18] === tmp16) {
+                    let tmp17 = cResult[19];
+                  }
+                  return tmp17;
+                }
+              }
+            }
+          }
+        }
+      }
+      const obj4 = { onPress: tmp11, onLongPress: tmp12, style: tmp4.container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
+      const tmp21 = jsx(id(16467), { onPress: tmp11, onLongPress: tmp12, style: tmp4.container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
+      cResult[12] = stateFromStores;
+      cResult[13] = tmp12;
+      cResult[14] = tmp11;
+      cResult[15] = selected;
+      cResult[16] = tmp4.container;
+      class I {
+        constructor() {
+          obj = closure_0(closure_2[11]);
+          transitionToGuildResult = obj.transitionToGuild(guildId, id);
+          return;
+        }
+      }
+      cResult[17] = tmp13;
+      cResult[18] = tmp16;
+      cResult[19] = tmp21;
+      tmp17 = tmp21;
+    }
+  }
+  class I {
+    constructor() {
+      obj = closure_0(closure_2[11]);
+      transitionToGuildResult = obj.transitionToGuild(guildId, id);
+      return;
+    }
+  }
+  cResult[3] = id;
+  cResult[4] = guildId;
+  cResult[5] = I;
+  tmp11 = I;
+}) : ((guildId) => {
   guildId = guildId.guildId;
   let selected = guildId.selected;
   const tmp = closure_8();
   const items = [ChannelStore, GuildChannelStore];
-  const stateFromStores = guildId(563).useStateFromStores(items, () => {
+  const stateFromStores = guildId(565).useStateFromStores(items, () => {
     const directoryChannelIds = GuildChannelStore.getDirectoryChannelIds(guildId);
     let channel = null;
     if (0 !== directoryChannelIds.length) {
@@ -50,14 +170,14 @@ export default noop.memo((guildId) => {
   if (null != stateFromStores) {
     const obj2 = { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null };
     const obj3 = { channel: stateFromStores };
-    obj2.accessibilityLabel = id(9867)(obj3);
+    obj2.accessibilityLabel = id(9846)(obj3);
     const obj4 = { selected };
     obj2.accessibilityState = obj4;
     obj2.channel = stateFromStores;
     obj2.selected = selected;
     obj2.resolvedUnreadSetting = UnreadSetting.ONLY_MENTIONS;
-    tmp7 = jsx(id(16455), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
-    const tmp10 = id(16455);
+    tmp7 = jsx(id(16467), { onPress: callback, onLongPress: tmp6, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, resolvedUnreadSetting: null });
+    const tmp10 = id(16467);
   }
   return tmp7;
-});
+}));

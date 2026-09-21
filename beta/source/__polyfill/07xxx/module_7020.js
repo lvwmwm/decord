@@ -1,6 +1,6 @@
 // Module ID: 7020
 // Function ID: 7021
-// Dependencies: [41, 42, 93, 95, 96, 98, 6918]
+// Dependencies: [41, 42, 93, 95, 96, 98, 6912]
 
 // Module 7020
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
@@ -30,26 +30,18 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-function changeEventCalculator(scale, scale2) {
-  if (undefined === scale2) {
-    const obj2 = { scaleChange: scale.scale };
-    let obj = obj2;
-  } else {
-    obj = { scaleChange: scale.scale / scale2.scale };
-  }
-  const merged = Object.assign(scale);
-  const merged1 = Object.assign(obj);
-  return {};
+function changeEventCalculator(arg0, arg1) {
+  return arg0;
 }
 changeEventCalculator.__closure = {};
-changeEventCalculator.__workletHash = 9876979738005;
-changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}" };
-class PinchGesture {
+changeEventCalculator.__workletHash = 12945462865583;
+changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_manualGestureTs1(current,_previous){return current;}" };
+class ManualGesture {
   constructor() {
     self = this;
-    tmp = closure_0(this, PinchGesture);
+    tmp = closure_0(this, ManualGesture);
     tmp2 = c2;
-    obj = c2(PinchGesture);
+    obj = c2(ManualGesture);
     tmp3 = closure_1;
     if (closure_4()) {
       tmp5 = globalThis;
@@ -59,12 +51,12 @@ class PinchGesture {
       constructResult = obj.apply(self, undefined);
     }
     tmp3Result = tmp3(self, constructResult);
-    tmp3Result.handlerName = "PinchGestureHandler";
+    tmp3Result.handlerName = "ManualGestureHandler";
     return tmp3Result;
   }
 }
-_classCallCheck = PinchGesture;
-_inherits(PinchGesture, fn(6918).ContinousBaseGesture);
+_classCallCheck = ManualGesture;
+_inherits(ManualGesture, fn(6912).ContinousBaseGesture);
 const entry = {
   key: "onChange",
   value: function onChange(arg0) {
@@ -80,4 +72,4 @@ const entry = {
 };
 let items = [entry];
 
-export const PinchGesture = _createClass(PinchGesture, items);
+export const ManualGesture = _createClass(ManualGesture, items);

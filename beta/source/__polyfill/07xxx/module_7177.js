@@ -1,15 +1,9 @@
 // Module ID: 7177
 // Function ID: 7178
-// Dependencies: [17]
+// Dependencies: [1125]
 
 // Module 7177
-import _mod17 from "module_17" /* 17 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-const StyleSheet = _mod17.StyleSheet;
-const obj = { backdrop: null };
-const obj2 = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj2.backgroundColor = "black";
-obj.backdrop = obj2;
 
-export const styles = StyleSheet.create(obj);
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "80a1b67e775ddb8de80fde27e63a5302", name: "CircleErrorIcon-secondary", type: "png" });

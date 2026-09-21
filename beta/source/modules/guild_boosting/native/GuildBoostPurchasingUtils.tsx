@@ -1,12 +1,12 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7647
+// Function ID: 7648
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4420, 1074, 1374, 5109, 1115, 1241, 5079, 7646, 7651, 7485, 7652, 7653, 4414, 2]
+// Dependencies: [5, 4424, 1078, 1378, 5111, 1119, 1245, 5081, 7648, 7653, 7487, 7654, 7655, 4418, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7645 (GuildBoostPurchasingUtils)
+// Module 7647 (GuildBoostPurchasingUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 const require = fn;
 let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
@@ -20,7 +20,7 @@ let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -50,7 +50,7 @@ let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
           closure_130_10 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp6) {
@@ -67,12 +67,12 @@ let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
             if (null != externalManagementMessage) {
               (function alertUnableToManageSub(body, source) {
                 const obj2 = { title: null, body: null };
-                const intl = closure_1_0(1115).intl;
-                obj2.title = intl.string(closure_1_0(1115).t["8P7MX0"]);
+                const intl = closure_1_0(1119).intl;
+                obj2.title = intl.string(closure_1_0(1119).t["8P7MX0"]);
                 obj2.body = body;
-                closure_1_1(5109).show(obj2);
-                const obj = closure_1_1(5109);
-                closure_1_1(1241).track(constants.OPEN_MODAL, { type: closure_1_6.IOS_CANNOT_MANAGE_SUBSCRIPTION, source });
+                closure_1_1(5111).show(obj2);
+                const obj = closure_1_1(5111);
+                closure_1_1(1245).track(constants.OPEN_MODAL, { type: closure_1_6.IOS_CANNOT_MANAGE_SUBSCRIPTION, source });
               })(externalManagementMessage, closure_130_0);
             } else {
               closure_130_8 = null;
@@ -141,10 +141,10 @@ let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
                     let num3 = 0;
                     const sum = interval.numPremiumGuild + num2;
                     if (null != closure_1_6) {
-                      const numPremiumGuildSubscriptions = closure_0(4414).getNumPremiumGuildSubscriptions(closure_1_6.additionalPlans);
-                      const obj = closure_0(4414);
-                      num3 = numPremiumGuildSubscriptions + c1(4414).getNumIncludedPremiumGuildSubscriptionSlots(closure_1_6.planId);
-                      const obj2 = c1(4414);
+                      const numPremiumGuildSubscriptions = closure_0(4418).getNumPremiumGuildSubscriptions(closure_1_6.additionalPlans);
+                      const obj = closure_0(4418);
+                      num3 = numPremiumGuildSubscriptions + c1(4418).getNumIncludedPremiumGuildSubscriptionSlots(closure_1_6.planId);
+                      const obj2 = c1(4418);
                     }
                     tmp = sum > num3;
                   }
@@ -170,9 +170,9 @@ let closure_10 = async function _launchGuildBoostFlowOrAlert(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_7, PremiumTypes: closure_8, SubscriptionIntervalTypes: closure_9 } = PremiumConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_boosting/native/GuildBoostPurchasingUtils.tsx");

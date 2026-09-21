@@ -1,18 +1,18 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8944
+// Function ID: 8945
 // Name: GameProfileAnalyticUtils
-// Dependencies: [8607, 1074, 8629, 1255, 1241, 2]
+// Dependencies: [8612, 1078, 8634, 1259, 1245, 2]
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 8957 (GameProfileAnalyticUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import v1 from "v1" /* 1255 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8607 */;
+// Module 8944 (GameProfileAnalyticUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import v1 from "v1" /* 1259 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8612 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, GuildFeatures: hasOwnProperty } = Constants);
-const ContentInventoryFeedKey = fn(8629).ContentInventoryFeedKey;
+const ContentInventoryFeedKey = fn(8634).ContentInventoryFeedKey;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileAnalyticUtils.tsx");
 
@@ -23,7 +23,7 @@ export const GameProfileTypes = { FullProfile: "full_profile", MiniProfile: "min
 export const getGuildIdAndVerifiedFromInvite = function getGuildIdAndVerifiedFromInvite(current) {
   let id;
   if (current != null) {
-    const guild = current.guild;
+    guild = current.guild;
     if (guild != null) {
       id = guild.id;
     }

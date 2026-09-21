@@ -1,8 +1,9 @@
 // Module ID: 14646
 // Function ID: 14647
-// Dependencies: [17]
+// Dependencies: [14580]
 
 // Module 14646
-import _mod17 from "module_17" /* 17 */;
+import _mod14580 from "module_14580" /* 14580 */;
 
-const parsed = parseInt(_mod17.Platform.Version, 10);
+
+export default _mod14580;

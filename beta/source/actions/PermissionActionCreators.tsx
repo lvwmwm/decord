@@ -1,10 +1,10 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17390
+// Function ID: 17391
 // Name: PermissionActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 
-// Module 17387 (PermissionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 17390 (PermissionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/PermissionActionCreators.tsx");

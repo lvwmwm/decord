@@ -1,31 +1,67 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 15783
+// Function ID: 15784
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [10337, 8233, 1074, 504, 1115, 11725, 15795, 2]
+// Dependencies: [11663, 8238, 1078, 558, 568, 504, 1119, 11594, 15784, 2]
 
-// Module 15794 (CommunityActivityAlertsSetting)
+// Module 15783 (CommunityActivityAlertsSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10337 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11663 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildIncidentsStore];
+    const fn = function s() {
+      return Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [GuildIncidentsStore];
+  return initialize.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
+});
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.D9yVAH);
   },
-  parent: fn(8233).MobileUserSettings.NOTIFICATIONS,
+  parent: fn(8238).MobileUserSettings.NOTIFICATIONS,
   useDescription: function useCommunityActivityAlertsSettingDescription() {
     const intl = util.intl;
     return intl.string(util.t["0PhAOH"]);
   },
-  usePredicate: function useHasCommunityActivityAlertsSetting() {
+  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [GuildIncidentsStore];
+      const fn = function s() {
+        return Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0;
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [GuildIncidentsStore];
     return initialize.useStateFromStores(items, () => Object.keys(guildAlertSettings.getGuildAlertSettings()).length > 0);
-  },
+  }),
   screen: {
-    route: fn(1074).UserSettingsSections.COMMUNITY_ALERTS,
+    route: fn(1078).UserSettingsSections.COMMUNITY_ALERTS,
     getComponent() {
       return require("UserSettingsCommunityNotifications").default;
     }

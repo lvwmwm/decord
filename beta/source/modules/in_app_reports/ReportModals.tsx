@@ -1,19 +1,19 @@
-// Module ID: 8907
-// Function ID: 8908
+// Module ID: 8905
+// Function ID: 8906
 // Name: ReportModals
-// Dependencies: [5, 2046, 4406, 1386, 1074, 8908, 8909, 8911, 2055, 4936, 2]
+// Dependencies: [5, 2050, 4410, 1390, 1078, 8906, 8907, 8909, 2059, 4938, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8907 (ReportModals)
-import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import MenuTypes from "MenuTypes" /* 8908 */;
-import showReportModal from "showReportModal" /* 8909 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8911 */;
+// Module 8905 (ReportModals)
+import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
+import MenuTypes from "MenuTypes" /* 8906 */;
+import showReportModal from "showReportModal" /* 8907 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8909 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 2046 */;
-import MessageRecord from "MessageRecord" /* 4406 */;
-import UserRecord from "UserRecord" /* 1386 */;
+import StageInstanceStore from "StageInstanceStore" /* 2050 */;
+import MessageRecord from "MessageRecord" /* 4410 */;
+import UserRecord from "UserRecord" /* 1390 */;
 
 require = fn;
 let closure_8 = async function _submitHamReportForFirstDM(record, arg1) {
@@ -69,7 +69,7 @@ let closure_9 = async function _submitReportForInappropriateConversationSafetyAl
     return value;
   })();
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/in_app_reports/ReportModals.tsx");
 
@@ -161,14 +161,14 @@ export const submitHamReportForFirstDM = function submitHamReportForFirstDM() {
   }
   return applyArgumentsResult;
 };
-export const showReportModalForUser = function showReportModalForUser(user, guildId1, onSubmit, appContext) {
+export const showReportModalForUser = function showReportModalForUser(user, contextualGuildId, onSubmit, appContext) {
   const obj = { reported_user_id: user.id };
   const obj2 = AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   obj2.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, { report_type: MenuTypes.ReportNames.USER });
   const obj3 = { report_type: MenuTypes.ReportNames.USER };
   const obj4 = showReportModal;
-  obj4.showReportModal({ name: MenuTypes.ReportNames.USER, record: user, contextualGuildId: guildId1 }, {}, { onSubmit, appContext });
+  obj4.showReportModal({ name: MenuTypes.ReportNames.USER, record: user, contextualGuildId }, {}, { onSubmit, appContext });
 };
 export const showStaffTestReportModalForUser = function showStaffTestReportModalForUser(id, contextualGuildId, onSubmit, appContext) {
   const obj = { reported_user_id: id.id };
@@ -210,7 +210,7 @@ export const showUnauthenticatedReportModalForTida = function showUnauthenticate
 export const showUnauthenticatedReportModalForMessage = function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const tmp = new MessageRecord({});
   const obj = AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "paths", channel_id: "scales" });
+  const merged = Object.assign({ message_id: "Array", channel_id: "Set" });
   obj.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, { report_type: MenuTypes.UnauthenticatedReportNames.MESSAGE });
   const obj2 = { report_type: MenuTypes.UnauthenticatedReportNames.MESSAGE };
   const obj3 = showReportModal;

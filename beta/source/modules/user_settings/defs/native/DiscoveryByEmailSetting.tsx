@@ -1,19 +1,40 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15115
+// Function ID: 15116
 // Name: DiscoveryByEmailSetting
-// Dependencies: [8233, 1074, 1115, 2019, 1385, 12937, 11725, 2]
+// Dependencies: [8238, 1078, 1119, 558, 568, 2023, 1389, 12831, 11594, 2]
 
-// Module 15126 (DiscoveryByEmailSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12937 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15115 (DiscoveryByEmailSetting)
+import c from "c" /* 568 */;
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12831 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+  const setting = FriendDiscoverySettings.useSetting();
+  if (cResult[0] !== setting) {
+    const hasFlagResult = FlagUtils.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
+    cResult[0] = setting;
+    cResult[1] = hasFlagResult;
+    let tmp5 = hasFlagResult;
+    const tmpResult = FlagUtils;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+  const setting = FriendDiscoverySettings.useSetting();
+  return FlagUtils.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
+});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -24,11 +45,25 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.ilGsHE);
   },
-  useValue: function useDiscoveryByEmailSettingValue() {
+  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+    const setting = FriendDiscoverySettings.useSetting();
+    if (cResult[0] !== setting) {
+      const hasFlagResult = FlagUtils.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
+      cResult[0] = setting;
+      cResult[1] = hasFlagResult;
+      let tmp5 = hasFlagResult;
+      const tmpResult = FlagUtils;
+    } else {
+      tmp5 = cResult[1];
+    }
+    return tmp5;
+  }) : (() => {
     const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.useSetting();
     return FlagUtils.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_EMAIL);
-  },
+  }),
   onValueChange: function onDiscoveryByEmailSettingValueChange(email) {
     const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.getSetting();

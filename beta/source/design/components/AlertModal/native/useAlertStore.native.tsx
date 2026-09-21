@@ -1,18 +1,18 @@
-// Module ID: 5110
-// Function ID: 5111
+// Module ID: 5112
+// Function ID: 5113
 // Name: useAlertStore
-// Dependencies: [32, 560, 1248, 5111, 5113, 2]
+// Dependencies: [32, 562, 1252, 5113, 5115, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 5110 (useAlertStore)
-import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 5113 */;
+// Module 5112 (useAlertStore)
+import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 5115 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const module_560 = fn(560);
-const obj3 = module_560.create(() => ({ alerts: [] }));
+const module_562 = fn(562);
+const obj3 = module_562.create(() => ({ alerts: [] }));
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
 
@@ -28,7 +28,7 @@ export const dismissAlerts = function dismissAlerts() {
     acc[num].push(dismissable);
     return acc;
   }, items);
-  first(1248).batchUpdates(() => {
+  first(1252).batchUpdates(() => {
     obj3.setState({ alerts: arr4 });
     const item = first.forEach((onDismiss) => {
       onDismiss = onDismiss.onDismiss;
@@ -40,22 +40,22 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp4) {
-    arr4(5111)();
+    arr4(5113)();
   }
 };
-export const dismissAlert = function dismissAlert(c6) {
-  _require = c6;
+export const dismissAlert = function dismissAlert(key) {
+  _require = key;
   let alerts = obj3.getState().alerts;
   const found = alerts.find((key) => key.key === closure_0);
   if (null != found) {
     let tmp2 = 1 === alerts.length;
     if (tmp2) {
       const first = alerts[0];
-      let key;
+      key = undefined;
       if (first != null) {
         key = first.key;
       }
-      tmp2 = key === c6;
+      tmp2 = key === key;
     }
     require("ReactBatchUpdates").batchUpdates(() => {
       obj3.setState((alerts) => {
@@ -70,13 +70,13 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(5111)();
+      found(5113)();
     }
     let obj = require("ReactBatchUpdates");
   }
 };
-export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallback, arg3) {
-  _require = DeleteEventAlert;
+export const openAlert = function openAlert(VOICE_PANEL_VIDEO_GUARD_ERROR_KEY, arg1, onCloseCallback, arg3) {
+  _require = VOICE_PANEL_VIDEO_GUARD_ERROR_KEY;
   importDefault = arg1;
   dependencyMap = onCloseCallback;
   closure_3 = arg3;

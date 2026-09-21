@@ -1,21 +1,21 @@
-// Module ID: 5238
-// Function ID: 5239
+// Module ID: 5240
+// Function ID: 5241
 // Name: PlatformMarkupRules
-// Dependencies: [17, 5239, 5323, 2008, 1115, 4409, 1929, 5338, 5217, 1397, 5218, 5221, 2]
+// Dependencies: [17, 5241, 5325, 2012, 1119, 4413, 1933, 5340, 5219, 1401, 5220, 5223, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 5238 (PlatformMarkupRules)
+// Module 5240 (PlatformMarkupRules)
 import _mod17 from "module_17" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import _modDef1929 from "module_1929" /* 1929 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2008 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5217 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5218 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5221 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import useGameMentionData from "useGameMentionData" /* 5323 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5338 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
+import _modDef1933 from "module_1933" /* 1933 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2012 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5219 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5220 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5223 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
+import useGameMentionData from "useGameMentionData" /* 5325 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5340 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -54,7 +54,7 @@ let obj = {
   silentPrefix: null
 };
 let obj2 = {};
-let merged = Object.assign(_modDef1929.defaultRules.escape);
+let merged = Object.assign(_modDef1933.defaultRules.escape);
 obj2.requiredFirstCharacters = undefined;
 obj2.match = function match(arg0) {
   const INVISIBLE_CHAR_REGEX = MarkupInvisibleUnicode.INVISIBLE_CHAR_REGEX;
@@ -193,8 +193,8 @@ obj.gameMention = {
       gameName = gameMentionData.gameName;
     }
     if (gameName == null) {
-      const intl = tmp2(1115).intl;
-      gameName = intl.string(tmp2(1115).t["11pdXZ"]);
+      const intl = tmp2(1119).intl;
+      gameName = intl.string(tmp2(1119).t["11pdXZ"]);
     }
     obj2.displayName = gameName;
     return obj2;
@@ -419,8 +419,8 @@ export const hydrateGameMention = function hydrateGameMention(gameId, channelId)
     gameName = gameMentionData.gameName;
   }
   if (gameName == null) {
-    const intl = tmp(1115).intl;
-    gameName = intl.string(tmp(1115).t["11pdXZ"]);
+    const intl = tmp(1119).intl;
+    gameName = intl.string(tmp(1119).t["11pdXZ"]);
   }
   obj2.displayName = gameName;
   return obj2;

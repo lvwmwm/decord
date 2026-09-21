@@ -1,17 +1,17 @@
-// Module ID: 566
-// Function ID: 567
+// Module ID: 570
+// Function ID: 571
 // Name: flux/Dispatcher
-// Dependencies: [4, 567, 10, 38, 508, 509, 571, 572, 2]
+// Dependencies: [4, 571, 10, 38, 508, 509, 575, 576, 2]
 
-// Module 566 (flux/Dispatcher)
+// Module 570 (flux/Dispatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import _modDef38 from "module_38" /* 38 */;
 import flux_EmitterDefault from "flux/Emitter" /* 508 */;
 import LastFewActionsAll from "LastFewActions" /* 509 */;
-import LoggingUtils from "LoggingUtils" /* 567 */;
-import profiling from "profiling" /* 571 */;
-import DepGraph from "DepGraph" /* 572 */;
+import LoggingUtils from "LoggingUtils" /* 571 */;
+import profiling from "profiling" /* 575 */;
+import DepGraph from "DepGraph" /* 576 */;
 import size from "module_2" /* 2 */;
 
 function setDisplayName(arg0, displayName) {
@@ -166,7 +166,7 @@ class Dispatcher {
     if (global === undefined) {
       num = 0;
     }
-    merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: "a" });
+    merged = Object.assign({ _interceptors: null, _subscriptions: null, _waitQueue: null, _processingWaitQueue: false, _currentDispatchActionType: null, _actionHandlers: null, _sentryUtils: "Array", functionCache: "\u{1F469}\u{1F3FE}\u200D\u2764\uFE0F\u200D\u{1F48B}\u200D\u{1F468}\u{1F3FF}" });
     merged[0] = [];
     merged[1] = {};
     merged[2] = [];

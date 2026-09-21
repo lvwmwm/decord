@@ -1,26 +1,56 @@
-// Module ID: 8177
-// Function ID: 8178
+// Module ID: 8185
+// Function ID: 8186
 // Name: UID
-// Dependencies: [4960, 5815, 2]
-// Exports: UID, uid, useUID
+// Dependencies: [4962, 558, 568, 5813, 2]
+// Exports: uid
 
-// Module 8177 (UID)
-import uniqueIdDefault from "uniqueId" /* 4960 */;
-import useInitialValueDefault from "useInitialValue" /* 5815 */;
+// Module 8185 (UID)
+import c from "c" /* 568 */;
+import uniqueIdDefault from "uniqueId" /* 4962 */;
+import useInitialValueDefault from "useInitialValue" /* 5813 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/core/web/UID.tsx");
-
-export const uid = function uid() {
+let ReactCompilerGating = ReactCompilerGating_mod;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      return uniqueIdDefault("uid_");
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return useInitialValueDefault(first);
+}) : (() => useInitialValueDefault(() => uniqueIdDefault("uid_")));
+let closure_3 = tmp2;
+let ReactCompilerGating = ReactCompilerGating_mod;
+function uid() {
   let str = arg0;
   if (arg0 === undefined) {
     str = "uid_";
   }
   return uniqueIdDefault(str);
-};
-export const useUID = function useUID() {
-  return useInitialValueDefault(() => uniqueIdDefault("uid_"));
-};
-export const UID = function UID(children) {
-  return children.children(useInitialValueDefault(() => uniqueIdDefault("uid_")));
-};
+}
+const result = size.fileFinishedImporting("modules/core/web/UID.tsx");
+
+export { uid };
+export const useUID = tmp2;
+export const UID = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const cResult = c.c(3);
+  children = children.children;
+  const tmp2 = closure_3();
+  if (cResult[0] === children) {
+    if (cResult[1] === tmp2) {
+      let tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const childrenResult = children(tmp2);
+  cResult[0] = children;
+  cResult[1] = tmp2;
+  cResult[2] = childrenResult;
+  tmp3 = childrenResult;
+}) : ((children) => children.children(closure_3()));

@@ -1,21 +1,56 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17488
+// Function ID: 17489
 // Name: useControlsLock
-// Dependencies: [19, 12525, 2]
-// Exports: default
+// Dependencies: [19, 558, 568, 12419, 2]
 
-// Module 17559 (useControlsLock)
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12525 */;
+// Module 17488 (useControlsLock)
+import c from "c" /* 568 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");
 
-export default function useControlsLock(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  closure_0 = arg0;
+  const cResult = c.c(6);
+  const generateStateLocker = noop.useContext(VoicePanelStateContextDefault).generateStateLocker;
+  if (cResult[0] === generateStateLocker) {
+    if (cResult[1] === arg0) {
+      let tmp2 = cResult[2];
+    }
+    const first = obj2.useState(tmp2)[0];
+    if (cResult[3] !== first) {
+      const fn2 = function s() {
+        return () => first.unlock();
+      };
+      const items = [first];
+      cResult[3] = first;
+      cResult[4] = fn2;
+      cResult[5] = items;
+      let tmp5 = items;
+      let tmp4 = fn2;
+    } else {
+      tmp4 = cResult[4];
+      tmp5 = cResult[5];
+    }
+    const layoutEffect = obj2.useLayoutEffect(tmp4, tmp5);
+    return first;
+  }
+  const fn = function o() {
+    return generateStateLocker(closure_0);
+  };
+  cResult[0] = generateStateLocker;
+  cResult[1] = arg0;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((arg0) => {
   closure_0 = arg0;
   const generateStateLocker = noop.useContext(VoicePanelStateContextDefault).generateStateLocker;
   const first = noop.useState(() => generateStateLocker(closure_0))[0];
   const items = [first];
   const layoutEffect = noop.useLayoutEffect(() => () => first.unlock(), items);
   return first;
-};
+});

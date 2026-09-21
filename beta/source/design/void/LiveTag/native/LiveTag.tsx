@@ -1,22 +1,22 @@
-// Module ID: 14391
-// Function ID: 14392
+// Module ID: 14394
+// Function ID: 14395
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4756, 576, 1364, 4752, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 1368, 558, 568, 1119, 4754, 2]
 
-// Module 14391 (LiveTag)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
+// Module 14394 (LiveTag)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { tag: { paddingHorizontal: 6, paddingVertical: 2, borderRadius: nativeDefault.radii.round, overflow: "hidden", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND }, tagText: null };
 const obj4 = { textAlign: "center", color: nativeDefault.unsafe_rawColors.WHITE, marginTop: null };
-const PlatformUtils = fn(1364);
+const PlatformUtils = fn(1368);
 let num = 0;
 if (PlatformUtils.isAndroid()) {
   num = -2;
@@ -24,10 +24,69 @@ if (PlatformUtils.isAndroid()) {
 obj4.marginTop = num;
 obj2.tagText = obj4;
 let closure_4 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { paddingHorizontal: 6, paddingVertical: 2, borderRadius: nativeDefault.radii.round, overflow: "hidden", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/LiveTag/native/LiveTag.tsx");
 
-export default function LiveTag(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(13);
+  ({ style, textStyle, allowFontScaling } = arg0);
+  const tmp4 = closure_4();
+  if (cResult[0] === style) {
+    if (cResult[1] === tmp4.tag) {
+      let tmp5 = cResult[2];
+    }
+    if (cResult[3] === tmp4.tagText) {
+      if (cResult[4] === textStyle) {
+        let tmp6 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1119).intl;
+        const formatted = intl.string(tmp(1119).t.dI3q4h).toUpperCase();
+        cResult[6] = formatted;
+        let tmp8 = formatted;
+        const str2 = intl.string(tmp(1119).t.dI3q4h);
+      } else {
+        tmp8 = cResult[6];
+      }
+      if (cResult[7] === allowFontScaling) {
+        if (cResult[8] === tmp6) {
+          let tmp10 = cResult[9];
+        }
+        if (cResult[10] === tmp5) {
+          if (cResult[11] === tmp10) {
+            let tmp13 = cResult[12];
+          }
+          return tmp13;
+        }
+        const obj2 = { style: tmp5, children: tmp10 };
+        const tmp16 = <View style={tmp5}>{tmp10}</View>;
+        cResult[10] = tmp5;
+        cResult[11] = tmp10;
+        cResult[12] = tmp16;
+        tmp13 = tmp16;
+      }
+      const obj3 = { variant: "text-xs/bold", style: tmp6, lineClamp: 1, allowFontScaling, children: tmp8 };
+      const tmp12 = jsx(tmp(4754).Text, { variant: "text-xs/bold", style: tmp6, lineClamp: 1, allowFontScaling, children: tmp8 });
+      cResult[7] = allowFontScaling;
+      cResult[8] = tmp6;
+      cResult[9] = tmp12;
+      tmp10 = tmp12;
+    }
+    const items = [tmp4.tagText, textStyle];
+    cResult[3] = tmp4.tagText;
+    cResult[4] = textStyle;
+    cResult[5] = items;
+    tmp6 = items;
+  }
+  const items1 = [tmp4.tag, style];
+  cResult[0] = style;
+  cResult[1] = tmp4.tag;
+  cResult[2] = items1;
+  tmp5 = items1;
+}) : ((arg0) => {
   ({ style, textStyle, allowFontScaling } = arg0);
   const tmp = closure_4();
   const obj = { style: null, children: null };
@@ -40,4 +99,4 @@ export default function LiveTag(arg0) {
   obj2.children = intl.string(util.t.dI3q4h).toUpperCase();
   obj.children = jsx(Text_Text.Text, { variant: "text-xs/bold", style: null, lineClamp: 1, allowFontScaling, children: null });
   return <View style={null}>{null}</View>;
-};
+});

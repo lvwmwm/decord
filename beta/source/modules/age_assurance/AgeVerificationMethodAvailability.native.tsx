@@ -1,16 +1,19 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8715
+// Function ID: 8716
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1380, 1364, 8711, 8712, 2]
-// Exports: getAvailableMethodsV2, useAvailableMethodsV2
+// Dependencies: [5, 32, 19, 1384, 1368, 8716, 558, 568, 8717, 2]
+// Exports: getAvailableMethodsV2
 
-// Module 8710 (AgeVerificationMethodAvailability)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8711 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8712 */;
+// Module 8715 (AgeVerificationMethodAvailability)
+import c from "c" /* 568 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8716 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 8717 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 function filterByAvailability(arr, arg1) {
@@ -45,16 +48,80 @@ let closure_7 = async function _getAvailableMethodsV() {
   closure_1.appStoreSignal = closure_131_6();
   return noop(closure_2, closure_1);
 };
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationMethodAvailability.native.tsx");
 
-export const useAvailableMethodsV2 = function useAvailableMethodsV2(methods) {
+export const useAvailableMethodsV2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  const cResult = c.c(6);
+  const obj2 = noop;
+  [tmp5, require] = noop.useState(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n() {
+      c0 = false;
+      const result = GoogleWalletActionCreators.checkGoogleWalletAvailable();
+      result.then((result) => {
+        if (!c0) {
+          require(result);
+        }
+      });
+      return () => {
+        c0 = true;
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp6 = fn;
+    tmp7 = items;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const effect = obj2.useEffect(tmp6, tmp7);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let isIOSResult = tmp(1368).isIOS();
+    if (isIOSResult) {
+      isIOSResult = tmp(8716).isAppStoreAgeSignalSupported();
+      const tmpResult2 = tmp(8716);
+    }
+    cResult[2] = isIOSResult;
+    let tmp9 = isIOSResult;
+    const tmpResult = tmp(1368);
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === tmp5) {
+    if (cResult[4] === arr) {
+      let tmp11 = cResult[5];
+    }
+    return tmp11;
+  }
+  closure_129_0 = tmp5;
+  closure_129_1 = tmp9;
+  const found = arr.filter((method) => {
+    method = method.method;
+    if (closure_0(first[3]).AgeAssuranceMethod.GOOGLE_WALLET === method) {
+      return closure_0;
+    } else if (tmp(tmp2[3]).AgeAssuranceMethod.OS_SIGNAL === method) {
+      return closure_1;
+    } else {
+      return true;
+    }
+    tmp = closure_0;
+    tmp2 = first;
+  });
+  cResult[3] = tmp5;
+  cResult[4] = arr;
+  cResult[5] = found;
+  tmp11 = found;
+}) : ((arg0) => {
+  closure_0 = arg0;
   let tmp = memo(noop.useState(false), 2);
   const first = tmp[0];
   closure_2 = tmp[1];
   const effect = noop.useEffect(() => {
     c0 = false;
-    const result = methods(first[6]).checkGoogleWalletAvailable();
+    const result = closure_0(first[8]).checkGoogleWalletAvailable();
     result.then((result) => {
       if (!c0) {
         closure_2(result);
@@ -65,18 +132,18 @@ export const useAvailableMethodsV2 = function useAvailableMethodsV2(methods) {
     };
   }, []);
   memo = noop.useMemo(() => {
-    let isIOSResult = methods(first[4]).isIOS();
+    let isIOSResult = closure_0(first[4]).isIOS();
     if (isIOSResult) {
-      isIOSResult = methods(first[5]).isAppStoreAgeSignalSupported();
-      const tmpResult = methods(first[5]);
+      isIOSResult = closure_0(first[5]).isAppStoreAgeSignalSupported();
+      const tmpResult = closure_0(first[5]);
     }
     return isIOSResult;
   }, []);
-  const items = [methods, first, memo];
+  const items = [arg0, first, memo];
   return noop.useMemo(() => {
-    methods = first;
+    closure_0 = first;
     closure_1 = memo;
-    return methods.filter((method) => {
+    return closure_0.filter((method) => {
       method = method.method;
       if (closure_0(first[3]).AgeAssuranceMethod.GOOGLE_WALLET === method) {
         return closure_0;
@@ -89,7 +156,7 @@ export const useAvailableMethodsV2 = function useAvailableMethodsV2(methods) {
       tmp2 = first;
     });
   }, items);
-};
+});
 export const getAvailableMethodsV2 = function getAvailableMethodsV2() {
   const self = this;
   const apply = closure_7.apply;

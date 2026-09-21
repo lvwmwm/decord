@@ -1,35 +1,35 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 9952
+// Function ID: 9953
 // Name: SecureFramesPlatformUtils
-// Dependencies: [2041, 4779, 9972, 1074, 4959, 9975, 1980, 4723, 9986, 1115, 5109, 1177, 7489, 9989, 2]
+// Dependencies: [2045, 4781, 9950, 1078, 4961, 9953, 1984, 4725, 9964, 1119, 5111, 1181, 7491, 9967, 2]
 
-// Module 9974 (SecureFramesPlatformUtils)
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7489 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+// Module 9952 (SecureFramesPlatformUtils)
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 7491 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
 
 require = fn;
-const SecureFramesConstants = fn(9972);
+const SecureFramesConstants = fn(9950);
 ({ SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY: hasOwnProperty, SECURE_FRAMES_STREAM_VERIFICATION_BOTTOM_SHEET_KEY: metroRequire, SECURE_FRAMES_USER_VERIFICATION_MODAL_KEY: closure_7 } = SecureFramesConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ME: closure_8, Routes: closure_9 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesPlatformUtils.native.tsx");
 
 export default {
   openSecureFramesStreamVerification(streamKey, channelId) {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9986, dependencyMap.paths), timestampProducer, { streamKey, channelId });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9964, dependencyMap.paths), timestampProducer, { streamKey, channelId });
   },
   openSecureFramesUserVerificationModal(id, id2, fn) {
     if (fn()) {
       const obj2 = { userId: id, channelId: id2 };
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9975, dependencyMap.paths), obj2, React5);
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(9953, dependencyMap.paths), obj2, React5);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
@@ -59,13 +59,13 @@ export default {
       guildId = channel.getGuildId();
     }
     if (guildId == null) {
-      guildId = React6;
+      guildId = closure_1_8;
     }
     if (null != channelId) {
       if (null != channel) {
-        safeTransitionToDefault(React7.CHANNEL(guildId, channelId));
+        safeTransitionToDefault(options.CHANNEL(guildId, channelId));
         const obj = { userId, channelId, guildId, fingerprint };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9989, dependencyMap.paths), hasOwnProperty, obj);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9967, dependencyMap.paths), hasOwnProperty, obj);
       }
     }
     const obj3 = { title: null, body: null };

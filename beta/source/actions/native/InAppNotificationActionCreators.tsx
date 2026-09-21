@@ -1,10 +1,10 @@
-// Module ID: 10353
-// Function ID: 10354
+// Module ID: 12961
+// Function ID: 12962
 // Name: InAppNotificationActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 
-// Module 10353 (InAppNotificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 12961 (InAppNotificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/native/InAppNotificationActionCreators.tsx");

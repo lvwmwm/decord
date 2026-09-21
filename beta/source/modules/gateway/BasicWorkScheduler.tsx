@@ -1,13 +1,13 @@
-// Module ID: 13906
-// Function ID: 13907
+// Module ID: 13909
+// Function ID: 13910
 // Name: BasicWorkScheduler
-// Dependencies: [13904, 3, 13907, 38, 2]
+// Dependencies: [13907, 3, 13910, 38, 2]
 
-// Module 13906 (BasicWorkScheduler)
+// Module 13909 (BasicWorkScheduler)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 13907 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 13904 */;
+import WorkSchedulerTelemetry from "WorkSchedulerTelemetry" /* 13910 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 13907 */;
 import size from "module_2" /* 2 */;
 
 ({ MAX_DISPATCHER_FLUSH_DEADLINE_TRIES: c3, DISPATCHER_STANDARD_TIMEOUT_MS: closure_4, DISPATCHER_IDEAL_TIME_LIMIT_MS: hasOwnProperty, DISPATCHER_LONG_TIMEOUT_MS: metroRequire } = DispatcherWorkConstants);
@@ -145,10 +145,10 @@ prototype["requestWorkTimeout"] = function requestWorkTimeout(flush, arg1) {
   self._workCallbackFn = flush;
   if (!self.hasWorkScheduled) {
     let telemetry = self.telemetry;
-    telemetry.time(self(13907).WorkSchedulerTelemetryTiming.TIME_TO_QUEUE_EMPTY);
+    telemetry.time(self(13910).WorkSchedulerTelemetryTiming.TIME_TO_QUEUE_EMPTY);
     if (self._nextDispatchTimeout === closure_6) {
       const telemetry2 = self.telemetry;
-      telemetry2.track(tmp(13907).WorkSchedulerTelemetryEvent.LONGER_DISPATCH);
+      telemetry2.track(tmp(13910).WorkSchedulerTelemetryEvent.LONGER_DISPATCH);
     }
     if (flag) {
       self._queueIdleCallback();

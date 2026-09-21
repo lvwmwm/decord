@@ -1,14 +1,14 @@
-// Module ID: 1989
-// Function ID: 1990
+// Module ID: 1993
+// Function ID: 1994
 // Name: ZoomedInAnalyticBuilder
-// Dependencies: [1074, 1358, 1990, 1991, 2]
+// Dependencies: [1078, 1362, 1994, 1995, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 1989 (ZoomedInAnalyticBuilder)
-import Constants from "Constants" /* 1074 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1990 */;
-import RTCControlSocket from "RTCControlSocket" /* 1991 */;
+// Module 1993 (ZoomedInAnalyticBuilder)
+import Constants from "Constants" /* 1078 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1362 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1994 */;
+import RTCControlSocket from "RTCControlSocket" /* 1995 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -207,7 +207,7 @@ let closure_4 = {
     data = data.data;
     let tmp = null;
     if (null != data) {
-      const state = data.state;
+      state = data.state;
       let tmp2 = null;
       if (typeof state === "string") {
         tmp2 = state;
@@ -261,7 +261,7 @@ let closure_4 = {
         tmp4 = stage;
       }
       if (tmp4 == null) {
-        const state = data.state;
+        state = data.state;
         let tmp5 = null;
         if (typeof state === "string") {
           tmp5 = state;
@@ -526,7 +526,7 @@ let closure_5 = {
   [AnalyticEvents.WEBSOCKET_MESSAGE_RECEIVED]: (data) => {
     data = data.data;
     if (null == data) {
-      let obj = { message_identity: "unknown", socket_kind: "accessible" };
+      let obj = { message_identity: "unknown", socket_kind: "applicationId" };
     } else {
       const url = data.url;
       let tmp61 = null;

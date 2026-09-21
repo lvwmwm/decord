@@ -1,12 +1,12 @@
-// Module ID: 4625
-// Function ID: 4626
+// Module ID: 4628
+// Function ID: 4629
 // Name: PortalKeyboardUIStore
-// Dependencies: [4626, 4628, 1255, 2]
+// Dependencies: [4629, 4631, 1259, 2]
 // Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 4625 (PortalKeyboardUIStore)
-import ZustandStore from "ZustandStore" /* 4626 */;
-import PortalKeyboard from "PortalKeyboard" /* 4628 */;
+// Module 4628 (PortalKeyboardUIStore)
+import ZustandStore from "ZustandStore" /* 4629 */;
+import PortalKeyboard from "PortalKeyboard" /* 4631 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => ({ keyboard: null, state: PortalKeyboard.PortalKeyboardState.EMPTY, renderers: [] }));
@@ -47,11 +47,11 @@ export const openPortalKeyboard = function openPortalKeyboard(type, channelId, c
   }
   if (!tmp3) {
     const obj2 = { keyboard: null, state: null };
-    const obj3 = { id: tmp5(1255).v4(), type, channelId, chatInputRef };
+    const obj3 = { id: tmp5(1259).v4(), type, channelId, chatInputRef };
     obj2.keyboard = obj3;
-    obj2.state = tmp5(4628).PortalKeyboardState.REQUEST_OPEN;
+    obj2.state = tmp5(4631).PortalKeyboardState.REQUEST_OPEN;
     zustandStore.setState(obj2);
-    const tmp5Result = tmp5(1255);
+    const tmp5Result = tmp5(1259);
   }
 };
 export const registerPortalKeyboardRenderer = function registerPortalKeyboardRenderer(id) {
@@ -100,7 +100,7 @@ export const closePortalKeyboard = function closePortalKeyboard() {
   zustandStore.setState({ state: PortalKeyboard.PortalKeyboardState.CLOSED, keyboard: null });
 };
 export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnhandled() {
-  const state = zustandStore.getState();
+  state = zustandStore.getState();
   const keyboard = state.keyboard;
   let tmp3 = null == keyboard;
   if (tmp3) {
@@ -120,7 +120,7 @@ export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnha
 export const closePortalKeyboardRequest = function closePortalKeyboardRequest() {
   const field = zustandStore.getField("state");
   if (tmp4) {
-    const obj2 = { state: tmp2(4628).PortalKeyboardState.REQUEST_CLOSE };
+    const obj2 = { state: tmp2(4631).PortalKeyboardState.REQUEST_CLOSE };
     zustandStore.setState(obj2);
   }
 };

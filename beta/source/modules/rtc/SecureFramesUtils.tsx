@@ -1,31 +1,31 @@
-// Module ID: 9970
-// Function ID: 9971
+// Module ID: 9948
+// Function ID: 9949
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 1992, 4779, 4795, 1372, 9971, 9972, 1074, 2108, 9973, 9981, 9955, 9974, 1115, 4600, 4348, 1091, 38, 206, 1271, 1231, 5108, 4908, 2]
+// Dependencies: [32, 5, 502, 1996, 4781, 4797, 1376, 9949, 9950, 1078, 2112, 9951, 9959, 9933, 9952, 1119, 4603, 4352, 1095, 38, 206, 1275, 1235, 5110, 4910, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9970 (SecureFramesUtils)
+// Module 9948 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import _mod9955 from "module_9955" /* 9955 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9973 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9974 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9981 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import util from "util" /* 1119 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
+import _mod9933 from "module_9933" /* 9933 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9951 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9952 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9959 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4795 */;
-import UserStore from "UserStore" /* 1372 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9971 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
+import UserStore from "UserStore" /* 1376 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9949 */;
 
 const require = globalThis.__r;
 
@@ -77,7 +77,7 @@ let closure_21 = async function _isPublicKeyMatch(arg0, arg1, key_version) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ let closure_23 = async function _uploadCurrentUserPublicKey(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -219,7 +219,7 @@ let closure_23 = async function _uploadCurrentUserPublicKey(arg0, value) {
         const result = closure_130_1(closure_130_2[11]).addUploadedKeyVersion(closure_129_0);
         c4 = 0;
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp25) {
       closure_3 = tmp25;
@@ -247,7 +247,7 @@ let closure_25 = async function _ensureCurrentUserPublicKey(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -278,7 +278,7 @@ let closure_25 = async function _ensureCurrentUserPublicKey(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp8) {
       c1 = tmp;
       throw tmp8;
@@ -296,7 +296,7 @@ let closure_26 = async function _isCurrentUserPublicKeyMatch(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -426,9 +426,9 @@ function getIsSecureFramesKeyInconsistent(userId, items) {
   }
   const tmp = _slicedToArray(items, 2);
 }
-const SecureFramesConstants = fn(9972);
+const SecureFramesConstants = fn(9950);
 ({ AnalyticsSecureFramesUserVerification: closure_11, SECURE_FRAMES_PUBLIC_KEY_VERSION: closure_12 } = SecureFramesConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ LinkingTypes: map1, Routes: closure_14, Endpoints: closure_15, HelpdeskArticles: closure_16 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rtc/SecureFramesUtils.tsx");
@@ -455,7 +455,7 @@ export const deleteVerification = function deleteVerification(userId, arg1, isOt
   if (isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const uint8Array = new Uint8Array(arg1);
-    const serializeKeyResult = _mod9955.serializeKey(uint8Array);
+    const serializeKeyResult = _mod9933.serializeKey(uint8Array);
     const result = SecureFramesActionCreatorsDefault.deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
   } else {
     const result1 = SecureFramesActionCreatorsDefault.deleteSecureFramesTransientKey(userId);
@@ -491,41 +491,41 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
   let result = SecureFramesPlatformUtilsDefault.openSecureFramesUpdateConfirmation(obj3);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef4348(timestamp);
-  const diffResult = _modDef4348().diff(tmp3, "s");
+  const tmp3 = _modDef4352(timestamp);
+  const diffResult = _modDef4352().diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;
-    const rounded = Math.round(diffResult / (12 * tmp(1091).Seconds.DAYS_30));
+    const rounded = Math.round(diffResult / (12 * tmp(1095).Seconds.DAYS_30));
     const intl7 = util.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(util.t.F1wqkD, obj2);
-  } else if (diffResult > tmp(1091).Seconds.DAYS_30) {
+  } else if (diffResult > tmp(1095).Seconds.DAYS_30) {
     const _Math5 = Math;
-    const rounded1 = Math.round(diffResult / tmp(1091).Seconds.DAYS_30);
+    const rounded1 = Math.round(diffResult / tmp(1095).Seconds.DAYS_30);
     const intl6 = util.intl;
     const obj3 = { count: rounded1 };
     return intl6.formatToPlainString(util.t["iT+b+2"], obj3);
-  } else if (diffResult > 7 * tmp(1091).Seconds.DAY) {
+  } else if (diffResult > 7 * tmp(1095).Seconds.DAY) {
     const _Math4 = Math;
-    const rounded2 = Math.round(diffResult / (7 * tmp(1091).Seconds.DAY));
+    const rounded2 = Math.round(diffResult / (7 * tmp(1095).Seconds.DAY));
     const intl5 = util.intl;
     const obj4 = { count: rounded2 };
     return intl5.formatToPlainString(util.t.dLurKZ, obj4);
-  } else if (diffResult > tmp(1091).Seconds.DAY) {
+  } else if (diffResult > tmp(1095).Seconds.DAY) {
     const _Math3 = Math;
-    const rounded3 = Math.round(diffResult / tmp(1091).Seconds.DAY);
+    const rounded3 = Math.round(diffResult / tmp(1095).Seconds.DAY);
     const intl4 = util.intl;
     const obj5 = { count: rounded3 };
     return intl4.formatToPlainString(util.t.LE8a2H, obj5);
-  } else if (diffResult > tmp(1091).Seconds.HOUR) {
+  } else if (diffResult > tmp(1095).Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded4 = Math.round(diffResult / tmp(1091).Seconds.HOUR);
+    const rounded4 = Math.round(diffResult / tmp(1095).Seconds.HOUR);
     const intl3 = util.intl;
     const obj6 = { count: rounded4 };
     return intl3.formatToPlainString(util.t.KULxVS, obj6);
-  } else if (diffResult > tmp(1091).Seconds.MINUTE) {
+  } else if (diffResult > tmp(1095).Seconds.MINUTE) {
     const _Math = Math;
-    const rounded5 = Math.round(diffResult / tmp(1091).Seconds.MINUTE);
+    const rounded5 = Math.round(diffResult / tmp(1095).Seconds.MINUTE);
     const intl2 = util.intl;
     const obj7 = { count: rounded5 };
     return intl2.formatToPlainString(util.t.ws6rWq, obj7);
@@ -534,54 +534,54 @@ export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUser
     const obj8 = { count: diffResult };
     return intl.formatToPlainString(util.t["/w0Qpw"], obj8);
   }
-  const obj = _modDef4348();
+  const obj = _modDef4352();
 };
 export const getUserVerificationDeeplink = function getUserVerificationDeeplink(userId, arg1) {
-  return "" + location.protocol + "//" + location.host + closure_1_14.FEATURE(constants2.DAVE_PROTOCOL_VERIFICATION) + "?userId=" + userId + "&fingerprint=" + encodeURIComponent(arg1);
+  return "" + location.protocol + "//" + location.host + state.FEATURE(constants2.DAVE_PROTOCOL_VERIFICATION) + "?userId=" + userId + "&fingerprint=" + encodeURIComponent(arg1);
 };
-export const getUserVerifyStateText = function getUserVerifyStateText(memo, name) {
-  if (constants.OTHER_USER_DISCONNECTED === memo) {
+export const getUserVerifyStateText = function getUserVerifyStateText(CURRENT_USER_DISCONNECTED, name) {
+  if (constants.OTHER_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
     const intl13 = util.intl;
     const items = [intl13.string(util.t.ZBHDM9), ];
     const intl14 = util.intl;
     const obj2 = { username: name };
     items[1] = intl14.format(util.t["+rIdOd"], obj2);
     return items;
-  } else if (tmp.CURRENT_USER_DISCONNECTED === memo) {
+  } else if (tmp.CURRENT_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
     const intl11 = util.intl;
     const items1 = [intl11.string(util.t["5ICxE6"]), ];
     const intl12 = util.intl;
     items1[1] = intl12.string(util.t["v1eXp/"]);
     return items1;
-  } else if (tmp.UNABLE_TO_VERIFY === memo) {
+  } else if (tmp.UNABLE_TO_VERIFY === CURRENT_USER_DISCONNECTED) {
     const intl9 = util.intl;
     const items2 = [intl9.string(util.t["+no/a7"]), ];
     const intl10 = util.intl;
     const obj3 = { username: name };
     items2[1] = intl10.format(util.t.Mft7iJ, obj3);
     return items2;
-  } else if (tmp.FINGERPRINT_MISMATCH === memo) {
+  } else if (tmp.FINGERPRINT_MISMATCH === CURRENT_USER_DISCONNECTED) {
     const intl7 = util.intl;
     const items3 = [intl7.string(util.t.HTJ76H), ];
     const intl8 = util.intl;
     const obj4 = { username: name };
     items3[1] = intl8.format(util.t.tc6aAc, obj4);
     return items3;
-  } else if (tmp.OTHER_USER_ALREADY_VERIFIED === memo) {
+  } else if (tmp.OTHER_USER_ALREADY_VERIFIED === CURRENT_USER_DISCONNECTED) {
     const intl5 = util.intl;
     const items4 = [intl5.string(util.t["9lw+J+"]), ];
     const intl6 = util.intl;
     const obj5 = { username: name };
     items4[1] = intl6.format(util.t.TvBS1w, obj5);
     return items4;
-  } else if (tmp.MATCH === memo) {
+  } else if (tmp.MATCH === CURRENT_USER_DISCONNECTED) {
     const intl3 = util.intl;
     const items5 = [intl3.string(util.t["xyE+Dn"]), ];
     const intl4 = util.intl;
     const obj6 = { username: name };
     items5[1] = intl4.format(util.t.znsPl5, obj6);
     return items5;
-  } else if (tmp.OTHER_USER_INCONSISTENT_KEYS === memo) {
+  } else if (tmp.OTHER_USER_INCONSISTENT_KEYS === CURRENT_USER_DISCONNECTED) {
     const intl = util.intl;
     const items6 = [intl.string(util.t.im1uUi), ];
     const intl2 = util.intl;

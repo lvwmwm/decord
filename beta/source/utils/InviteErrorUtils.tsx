@@ -1,17 +1,17 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 12873
+// Function ID: 12874
 // Name: InviteErrorUtils
-// Dependencies: [1372, 1074, 4414, 1115, 2108, 2]
+// Dependencies: [1376, 1078, 4418, 1119, 2112, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 12977 (InviteErrorUtils)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 12873 (InviteErrorUtils)
+import util from "util" /* 1119 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AbortCodes: closure_4, HelpdeskArticles: hasOwnProperty, MAX_USER_GUILDS: metroRequire, MAX_USER_GUILDS_PREMIUM: closure_7 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/InviteErrorUtils.tsx");

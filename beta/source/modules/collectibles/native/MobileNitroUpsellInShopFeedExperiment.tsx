@@ -1,10 +1,10 @@
-// Module ID: 16132
-// Function ID: 16133
+// Module ID: 16121
+// Function ID: 16122
 // Name: MobileNitroUpsellInShopFeedExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1439, 2]
 
-// Module 16132 (MobileNitroUpsellInShopFeedExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 16121 (MobileNitroUpsellInShopFeedExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/MobileNitroUpsellInShopFeedExperiment.tsx");

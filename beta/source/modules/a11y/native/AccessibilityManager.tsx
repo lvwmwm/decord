@@ -1,24 +1,24 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14717
+// Function ID: 14718
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4748, 1074, 1185, 14715, 573, 1241, 14718, 11617, 14716, 4604, 4607, 2]
+// Dependencies: [5, 17, 4750, 1078, 1189, 14718, 577, 1245, 14721, 10345, 14719, 4607, 4610, 2]
 
-// Module 14714 (AccessibilityManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4604 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11617 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14715 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14716 */;
-import updateSaturation from "updateSaturation" /* 14718 */;
+// Module 14717 (AccessibilityManager)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4607 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14718 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14719 */;
+import updateSaturation from "updateSaturation" /* 14721 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ AccessibilityInfo: closure_4, Appearance: hasOwnProperty } = get_ActivityIndicator);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const SystemTheme = fn(1185).SystemTheme;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const SystemTheme = fn(1189).SystemTheme;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
 
@@ -59,7 +59,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ export default {
             closure_128_0 = value;
             const result = closure_129_0.updateScreenReaderEnabled(closure_128_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

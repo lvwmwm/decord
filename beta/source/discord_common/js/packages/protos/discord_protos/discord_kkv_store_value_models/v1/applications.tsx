@@ -1,16 +1,16 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 9331
+// Function ID: 9332
 // Name: applications
-// Dependencies: [32, 1187, 1216, 2]
+// Dependencies: [32, 1191, 1220, 2]
 
-// Module 9333 (applications)
-import _mod1187 from "module_1187" /* 1187 */;
-import timestamp from "timestamp" /* 1216 */;
+// Module 9331 (applications)
+import _mod1191 from "module_1191" /* 1191 */;
+import timestamp from "timestamp" /* 1220 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const ApplicationDisclosureType = { UNSPECIFIED_DISCLOSURE: 0, [0]: "UNSPECIFIED_DISCLOSURE", IP_LOCATION: 1, [1]: "IP_LOCATION", DISPLAYS_ADVERTISEMENTS: 2, [2]: "DISPLAYS_ADVERTISEMENTS", PARTNER_SDK_DATA_SHARING_MESSAGE: 3, [3]: "PARTNER_SDK_DATA_SHARING_MESSAGE" };
-const MessageType = fn(1187).MessageType;
+const MessageType = fn(1191).MessageType;
 class ApplicationUserRoleConnection$Type extends MessageType {
   constructor() {
     items = [, , , ];
@@ -26,10 +26,10 @@ const prototype = ApplicationUserRoleConnection$Type.prototype;
 prototype["create"] = function create(arr) {
   const obj = { metadata: {}, platformName: "", platformUsername: "", version: "0" };
   const _Object = Object;
-  _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, { enumerable: false, value: this });
+  _Object.defineProperty(obj, _mod1191.MESSAGE_TYPE, { enumerable: false, value: this });
   if (undefined !== arr) {
-    const result = _mod1187.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1187;
+    const result = _mod1191.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1191;
   }
   return obj;
 };
@@ -70,7 +70,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
           let skipResult = pos.skip(tmp6);
           if (false !== onRead) {
             if (true === onRead) {
-              onRead = _mod1187.UnknownFieldHandler.onRead;
+              onRead = _mod1191.UnknownFieldHandler.onRead;
             }
             let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
@@ -119,31 +119,31 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(metadata, tag, w
   const iter = keys[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
-    let tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+    let tagResult = tag.tag(1, _mod1191.WireType.LengthDelimited);
     let forkResult = tagResult.fork();
-    let tagResult1 = forkResult.tag(1, _mod1187.WireType.LengthDelimited);
+    let tagResult1 = forkResult.tag(1, _mod1191.WireType.LengthDelimited);
     let stringResult = tagResult1.string(nextResult);
-    let tagResult2 = stringResult.tag(2, _mod1187.WireType.LengthDelimited);
+    let tagResult2 = stringResult.tag(2, _mod1191.WireType.LengthDelimited);
     let stringResult1 = tagResult2.string(metadata.metadata[nextResult]);
     let joined = stringResult1.join();
     continue;
   }
   if ("" !== metadata.platformName) {
-    tag.tag(2, _mod1187.WireType.LengthDelimited).string(metadata.platformName);
-    const tagResult3 = tag.tag(2, _mod1187.WireType.LengthDelimited);
+    tag.tag(2, _mod1191.WireType.LengthDelimited).string(metadata.platformName);
+    const tagResult3 = tag.tag(2, _mod1191.WireType.LengthDelimited);
   }
   if ("" !== metadata.platformUsername) {
-    tag.tag(3, _mod1187.WireType.LengthDelimited).string(metadata.platformUsername);
-    const tagResult4 = tag.tag(3, _mod1187.WireType.LengthDelimited);
+    tag.tag(3, _mod1191.WireType.LengthDelimited).string(metadata.platformUsername);
+    const tagResult4 = tag.tag(3, _mod1191.WireType.LengthDelimited);
   }
   if ("0" !== metadata.version) {
-    tag.tag(4, _mod1187.WireType.Bit64).fixed64(metadata.version);
-    const tagResult5 = tag.tag(4, _mod1187.WireType.Bit64);
+    tag.tag(4, _mod1191.WireType.Bit64).fixed64(metadata.version);
+    const tagResult5 = tag.tag(4, _mod1191.WireType.Bit64);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1187.UnknownFieldHandler.onWrite;
+      onWrite = _mod1191.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, metadata, tag);
@@ -152,7 +152,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(metadata, tag, w
 };
 let items = [{ no: 1, name: "metadata", kind: "map", K: 9, V: { kind: "scalar", T: 9 } }, { no: 2, name: "platform_name", kind: "scalar", T: 9 }, { no: 3, name: "platform_username", kind: "scalar", T: 9 }, { no: 4, name: "version", kind: "scalar", T: 6 }];
 const tmp6 = new "binaryReadMap1"("discord_protos.discord_kkv_store_value_models.v1.ApplicationUserRoleConnection", items, tmp4, tmp3, "create", "internalBinaryRead", tmp2, "internalBinaryWrite", tmp, ApplicationUserRoleConnection$Type);
-const MessageType2 = fn(1187).MessageType;
+const MessageType2 = fn(1191).MessageType;
 class AcknowledgedApplicationDisclosure$Type extends MessageType2 {
   constructor() {
     obj = {
@@ -182,10 +182,10 @@ const prototype2 = AcknowledgedApplicationDisclosure$Type.prototype;
 prototype2["create"] = function create(arr) {
   const obj = { disclosureType: 0 };
   const _Object = Object;
-  _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, { enumerable: false, value: this });
+  _Object.defineProperty(obj, _mod1191.MESSAGE_TYPE, { enumerable: false, value: this });
   if (undefined !== arr) {
-    const result = _mod1187.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1187;
+    const result = _mod1191.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1191;
   }
   return obj;
 };
@@ -222,7 +222,7 @@ prototype2["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUn
           let skipResult = pos.skip(tmp6);
           if (false !== onRead) {
             if (true === onRead) {
-              onRead = _mod1187.UnknownFieldHandler.onRead;
+              onRead = _mod1191.UnknownFieldHandler.onRead;
             }
             let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
@@ -234,19 +234,19 @@ prototype2["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUn
 };
 prototype2["internalBinaryWrite"] = function internalBinaryWrite(disclosureType, tag, writeUnknownFields) {
   if (0 !== disclosureType.disclosureType) {
-    tag.tag(1, _mod1187.WireType.Varint).int32(disclosureType.disclosureType);
-    const tagResult = tag.tag(1, _mod1187.WireType.Varint);
+    tag.tag(1, _mod1191.WireType.Varint).int32(disclosureType.disclosureType);
+    const tagResult = tag.tag(1, _mod1191.WireType.Varint);
   }
   if (disclosureType.ackedAt) {
     const Timestamp = timestamp.Timestamp;
-    const tagResult1 = tag.tag(2, _mod1187.WireType.LengthDelimited);
-    const joined = Timestamp.internalBinaryWrite(disclosureType.ackedAt, tag.tag(2, _mod1187.WireType.LengthDelimited).fork(), writeUnknownFields).join();
-    const internalBinaryWriteResult = Timestamp.internalBinaryWrite(disclosureType.ackedAt, tag.tag(2, _mod1187.WireType.LengthDelimited).fork(), writeUnknownFields);
+    const tagResult1 = tag.tag(2, _mod1191.WireType.LengthDelimited);
+    const joined = Timestamp.internalBinaryWrite(disclosureType.ackedAt, tag.tag(2, _mod1191.WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult = Timestamp.internalBinaryWrite(disclosureType.ackedAt, tag.tag(2, _mod1191.WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1187.UnknownFieldHandler.onWrite;
+      onWrite = _mod1191.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, disclosureType, tag);
@@ -274,7 +274,7 @@ const items1 = [
 ];
 let tmp22 = new tmp2("discord_protos.discord_kkv_store_value_models.v1.AcknowledgedApplicationDisclosure", items1, tmp4, AcknowledgedApplicationDisclosure$Type, "create", "internalBinaryRead", tmp2, "internalBinaryWrite", items1, undefined, fn, dependencyMap, ApplicationDisclosureType, new.target, tmp6, new.target);
 let closure_4 = tmp22;
-const MessageType3 = fn(1187).MessageType;
+const MessageType3 = fn(1191).MessageType;
 class AcknowledgedApplicationDisclosures$Type extends MessageType3 {
   constructor() {
     obj = {
@@ -296,10 +296,10 @@ const prototype3 = AcknowledgedApplicationDisclosures$Type.prototype;
 prototype3["create"] = function create(arr) {
   const obj = { ackedDisclosures: [] };
   const _Object = Object;
-  _Object.defineProperty(obj, _mod1187.MESSAGE_TYPE, { enumerable: false, value: this });
+  _Object.defineProperty(obj, _mod1191.MESSAGE_TYPE, { enumerable: false, value: this });
   if (undefined !== arr) {
-    const result = _mod1187.reflectionMergePartial(this, obj, arr);
-    const tmpResult = _mod1187;
+    const result = _mod1191.reflectionMergePartial(this, obj, arr);
+    const tmpResult = _mod1191;
   }
   return obj;
 };
@@ -334,7 +334,7 @@ prototype3["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUn
           let skipResult = pos.skip(tmp6);
           if (false !== onRead) {
             if (true === onRead) {
-              onRead = _mod1187.UnknownFieldHandler.onRead;
+              onRead = _mod1191.UnknownFieldHandler.onRead;
             }
             let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
           }
@@ -349,7 +349,7 @@ prototype3["internalBinaryWrite"] = function internalBinaryWrite(ackedDisclosure
   let num = 0;
   if (0 < ackedDisclosures.ackedDisclosures.length) {
     do {
-      let tagResult = tag.tag(1, _mod1187.WireType.LengthDelimited);
+      let tagResult = tag.tag(1, _mod1191.WireType.LengthDelimited);
       let internalBinaryWriteResult = closure_4.internalBinaryWrite(ackedDisclosures.ackedDisclosures[num], tagResult.fork(), writeUnknownFields);
       let joined = internalBinaryWriteResult.join();
       num = num + 1;
@@ -359,7 +359,7 @@ prototype3["internalBinaryWrite"] = function internalBinaryWrite(ackedDisclosure
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
-      onWrite = _mod1187.UnknownFieldHandler.onWrite;
+      onWrite = _mod1191.UnknownFieldHandler.onWrite;
     }
     const self = this;
     onWrite(this.typeName, ackedDisclosures, tag);

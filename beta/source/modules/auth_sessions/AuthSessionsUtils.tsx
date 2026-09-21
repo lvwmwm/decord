@@ -1,21 +1,69 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 14935
+// Function ID: 14936
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 14947, 504, 1115, 4348, 2]
-// Exports: formatDate, useAuthSessions
+// Dependencies: [19, 502, 14936, 558, 568, 504, 1119, 4352, 2]
+// Exports: formatDate
 
-// Module 14946 (AuthSessionsUtils)
-import util from "util" /* 1115 */;
-import _modDef4348 from "module_4348" /* 4348 */;
+// Module 14935 (AuthSessionsUtils)
+import util from "util" /* 1119 */;
+import _modDef4352 from "module_4352" /* 4352 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 14947 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 14936 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
 
-export const useAuthSessions = function useAuthSessions() {
+export const useAuthSessions = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = authSessionIdHash(568).c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthSessionsStore];
+    const fn = function o() {
+      return sessions.getSessions();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const obj = authSessionIdHash(568);
+  const stateFromStoresObject = authSessionIdHash(504).useStateFromStoresObject(tmp4, tmp5);
+  if (cResult[2] !== stateFromStoresObject) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(stateFromStoresObject, 0);
+    authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
+    let first = null;
+    if (null != authSessionIdHash) {
+      const findIndexResult = items1.findIndex((id_hash) => id_hash.id_hash === authSessionIdHash);
+      first = null;
+      if (findIndexResult >= 0) {
+        first = items1.splice(findIndexResult, 1)[0];
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function _(approx_last_used_time, approx_last_used_time2) {
+        approx_last_used_time = approx_last_used_time2.approx_last_used_time;
+        approx_last_used_time2 = approx_last_used_time.approx_last_used_time;
+        return approx_last_used_time.valueOf() - approx_last_used_time2.valueOf();
+      };
+      cResult[4] = fn2;
+      let tmp16 = fn2;
+    } else {
+      tmp16 = cResult[4];
+    }
+    const sorted = items1.sort(tmp16);
+    const obj2 = { currentSession: first, otherSessions: items1 };
+    cResult[2] = stateFromStoresObject;
+    cResult[3] = obj2;
+  } else {
+    return cResult[3];
+  }
+}) : (() => {
   const items = [AuthSessionsStore];
   stateFromStoresObject = stateFromStoresObject(504).useStateFromStoresObject(items, () => sessions.getSessions());
   const items1 = [stateFromStoresObject];
@@ -37,15 +85,15 @@ export const useAuthSessions = function useAuthSessions() {
     });
     return { currentSession, otherSessions };
   }, items1);
-};
+});
 export const formatDate = function formatDate(arg0) {
   const timestamp = Date.now();
   if ((timestamp - arg0.valueOf()) / 1000 / 60 / 60 < 1) {
     const intl = util.intl;
     let stringResult = intl.string(util.t.TXCmfL);
   } else {
-    stringResult = _modDef4348(arg0).fromNow();
-    const obj = _modDef4348(arg0);
+    stringResult = _modDef4352(arg0).fromNow();
+    const obj = _modDef4352(arg0);
   }
   return stringResult;
 };

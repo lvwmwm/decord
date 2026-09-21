@@ -1,11 +1,11 @@
-// Module ID: 1881
-// Function ID: 1882
+// Module ID: 1885
+// Function ID: 1886
 // Name: NumberUtils
-// Dependencies: [1882, 2]
+// Dependencies: [1886, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber, truncateAndLocalizeNumber
 
-// Module 1881 (NumberUtils)
-import module_1882 from "module_1882" /* 1882 */;
+// Module 1885 (NumberUtils)
+import module_1886 from "module_1886" /* 1886 */;
 
 let c1 = 1000000;
 const size = fn(2);
@@ -14,11 +14,11 @@ let result = size.fileFinishedImporting("../discord_common/js/shared/utils/Numbe
 export const shortenAndLocalizeNumber = function shortenAndLocalizeNumber(count) {
   if (count < c1) {
     const _Intl = Intl;
-    const numberFormat = new Intl.NumberFormat(module_1882.getLocale());
+    const numberFormat = new Intl.NumberFormat(module_1886.getLocale());
     return numberFormat.format(count);
   } else {
     const result = count / tmp;
-    const NUMBER_ABBREVIATIONS_MILLION = module_1882.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1886.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj = { num: result.toFixed(1) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj);
   }
@@ -30,7 +30,7 @@ export const humanizeValue = function humanizeValue(newPostCount, stateFromStore
     const _Math2 = Math;
     return numberFormat.format(Math.floor(newPostCount));
   } else if (newPostCount < c1) {
-    const NUMBER_ABBREVIATIONS_THOUSAND = module_1882.Messages.NUMBER_ABBREVIATIONS_THOUSAND;
+    const NUMBER_ABBREVIATIONS_THOUSAND = module_1886.Messages.NUMBER_ABBREVIATIONS_THOUSAND;
     const obj = { num: null };
     const _Math = Math;
     obj.num = Math.floor(newPostCount / 1000);
@@ -40,7 +40,7 @@ export const humanizeValue = function humanizeValue(newPostCount, stateFromStore
     const _Intl2 = Intl;
     const result = Math.floor(10 * newPostCount / tmp8) / 10;
     const numberFormat1 = new Intl.NumberFormat(stateFromStores, { maximumFractionDigits: 1 });
-    const NUMBER_ABBREVIATIONS_MILLION = module_1882.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1886.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj2 = { num: numberFormat1.format(result) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj2);
   }
@@ -64,7 +64,7 @@ export const truncateAndLocalizeNumber = (arg0, arg1) => {
     }
     const obj = { maximumFractionDigits: num };
     const numberFormat1 = new Intl.NumberFormat(arg1, obj);
-    const NUMBER_ABBREVIATIONS_MILLION = module_1882.Messages.NUMBER_ABBREVIATIONS_MILLION;
+    const NUMBER_ABBREVIATIONS_MILLION = module_1886.Messages.NUMBER_ABBREVIATIONS_MILLION;
     const obj3 = { num: numberFormat1.format(arg0 / 1000000) };
     return NUMBER_ABBREVIATIONS_MILLION.format(obj3);
   }

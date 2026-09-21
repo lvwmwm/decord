@@ -1,12 +1,12 @@
-// Module ID: 18385
-// Function ID: 18386
+// Module ID: 18390
+// Function ID: 18391
 // Name: Disconnect
-// Dependencies: [2041, 18386, 9904, 2]
+// Dependencies: [2045, 18391, 9882, 2]
 
-// Module 18385 (Disconnect)
-import CallsUtils from "CallsUtils" /* 9904 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 18386 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 18390 (Disconnect)
+import CallsUtils from "CallsUtils" /* 9882 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 18391 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const size = fn(2);

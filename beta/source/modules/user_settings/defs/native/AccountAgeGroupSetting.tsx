@@ -1,24 +1,26 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 14979
+// Function ID: 14980
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 8233, 1074, 21, 4756, 576, 14991, 14992, 14993, 2027, 5822, 11725, 1115, 14994, 14957, 14995, 2]
+// Dependencies: [17, 8238, 1078, 21, 4758, 580, 558, 568, 14980, 14981, 14982, 2031, 5822, 11594, 1119, 14983, 14946, 14984, 2]
 
-// Module 14990 (AccountAgeGroupSetting)
+// Module 14979 (AccountAgeGroupSetting)
 import _mod17 from "module_17" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import dismissible_content from "dismissible_content" /* 2031 */;
 import TableRow from "TableRow" /* 5822 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14957 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14991 */;
-import TinyBroncoLazy from "TinyBroncoLazy" /* 14992 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14993 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14946 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14980 */;
+import TinyBroncoLazy from "TinyBroncoLazy" /* 14981 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14982 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4756 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14994 */;
+import createStyles from "createStyles" /* 4758 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 14983 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,26 +29,72 @@ const View = _mod17.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 let obj = { trailing: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, badge: { marginLeft: 0, marginRight: nativeDefault.space.PX_4 } };
 let closure_6 = createStyles.createStyles(obj);
+let obj2 = { marginLeft: 0, marginRight: nativeDefault.space.PX_4 };
 let obj3 = {
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.piqs0o);
   },
   parent: SettingsConstants.MobileUserSettings.ACCOUNT,
-  useTrailing: function useAccountAgeGroupTrailing() {
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(9);
+    const tmp4 = closure_6();
+    const ageGroupValueLabel = useAgeGroupPresentation.useAgeGroupValueLabel();
+    const shouldShowAgeNotice = TinyBroncoLazy.useShouldShowAgeNotice();
+    if (cResult[0] === shouldShowAgeNotice) {
+      if (cResult[1] === tmp4.badge) {
+        let tmp7 = cResult[2];
+      }
+      if (cResult[3] !== ageGroupValueLabel) {
+        const obj4 = { text: ageGroupValueLabel };
+        const tmp14 = React4(tmp(5822).TableRow.TrailingText, obj4);
+        cResult[3] = ageGroupValueLabel;
+        cResult[4] = tmp14;
+        let tmp12 = tmp14;
+      } else {
+        tmp12 = cResult[4];
+      }
+      if (cResult[5] === tmp4.trailing) {
+        if (cResult[6] === tmp7) {
+          if (cResult[7] === tmp12) {
+            let tmp15 = cResult[8];
+          }
+          return tmp15;
+        }
+      }
+      const obj5 = { style: tmp4.trailing, children: null };
+      const items = [tmp7, tmp12];
+      obj5.children = items;
+      const tmp18 = hasOwnProperty(View, obj5);
+      cResult[5] = tmp4.trailing;
+      cResult[6] = tmp7;
+      cResult[7] = tmp12;
+      cResult[8] = tmp18;
+      tmp15 = tmp18;
+    }
+    let tmp8 = shouldShowAgeNotice;
+    if (shouldShowAgeNotice) {
+      const obj6 = { dismissibleContent: tmp(2031).DismissibleContent.TINY_BRONCO_SETTINGS, containerStyle: tmp4.badge, noGradient: true };
+      tmp8 = React4(DismissiblePremiumNewBadgeDefault, obj6);
+    }
+    cResult[0] = shouldShowAgeNotice;
+    cResult[1] = tmp4.badge;
+    cResult[2] = tmp8;
+    tmp7 = tmp8;
+  }) : (() => {
     const tmp = closure_6();
     const ageGroupValueLabel = useAgeGroupPresentation.useAgeGroupValueLabel();
     const shouldShowAgeNotice = TinyBroncoLazy.useShouldShowAgeNotice();
     const obj3 = { style: tmp.trailing, children: null };
     let tmp8 = shouldShowAgeNotice;
     if (shouldShowAgeNotice) {
-      const obj4 = { dismissibleContent: tmp2(2027).DismissibleContent.TINY_BRONCO_SETTINGS, containerStyle: tmp.badge, noGradient: true };
+      const obj4 = { dismissibleContent: tmp2(2031).DismissibleContent.TINY_BRONCO_SETTINGS, containerStyle: tmp.badge, noGradient: true };
       tmp8 = React4(DismissiblePremiumNewBadgeDefault, obj4);
     }
     const items = [tmp8, React4(TableRow.TableRow.TrailingText, { text: ageGroupValueLabel })];
     obj3.children = items;
     return hasOwnProperty(View, obj3);
-  },
+  }),
   usePreNavigationAction: null,
   usePredicate: null,
   screen: null

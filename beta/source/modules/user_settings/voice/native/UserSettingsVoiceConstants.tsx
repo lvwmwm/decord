@@ -1,12 +1,12 @@
-// Module ID: 10238
-// Function ID: 10239
+// Module ID: 10235
+// Function ID: 10236
 // Name: UserSettingsVoiceConstants
-// Dependencies: [1074, 2108, 2]
+// Dependencies: [1078, 2112, 2]
 
-// Module 10238 (UserSettingsVoiceConstants)
-import HelpdeskUtils from "HelpdeskUtils" /* 2108 */;
+// Module 10235 (UserSettingsVoiceConstants)
+import HelpdeskUtils from "HelpdeskUtils" /* 2112 */;
 
-const combined = "" + HelpdeskUtils.getArticleURL(fn(1074).HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
+const combined = "" + HelpdeskUtils.getArticleURL(fn(1078).HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceConstants.tsx");
 

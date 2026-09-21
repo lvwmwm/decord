@@ -1,40 +1,226 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14869
+// Function ID: 14870
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8429, 7857, 1372, 1074, 504, 573, 7229, 11354, 7233, 7236, 14881, 8436, 4656, 14882, 8450, 8466, 13377, 2019, 14183, 1115, 2]
-// Exports: default
+// Dependencies: [109, 5, 19, 8434, 7862, 1376, 1078, 558, 568, 504, 577, 7230, 11385, 7234, 7237, 14870, 8441, 4659, 14871, 8455, 8471, 13380, 2023, 14186, 1119, 2]
 
-// Module 14880 (useUserProfileEditForm)
+// Module 14869 (useUserProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
-import UserProfileStore from "UserProfileStore" /* 7857 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserStore from "UserStore" /* 1376 */;
+
+const require = globalThis.__r;
 
 const require = fn;
 let closure_3 = ["bannerOriginalMd5"];
-const FormStates = fn(1074).FormStates;
+let closure_4 = ["bannerOriginalMd5"];
+const FormStates = fn(1078).FormStates;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useUserProfileEditForm.tsx");
 
-export default function useUserProfileEditForm() {
-  const items = [UserProfileSettingsStore];
-  const stateFromStoresObject = pendingChanges(504).useStateFromStoresObject(items, () => ({ pendingChanges: UserProfileSettingsStore.getPendingChanges(), tryItOutChanges: UserProfileSettingsStore.getTryItOutChanges(), errors: UserProfileSettingsStore.getErrors() }));
-  pendingChanges = stateFromStoresObject.pendingChanges;
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(20);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserProfileSettingsStore];
+    const fn = function h() {
+      return { pendingChanges: UserProfileSettingsStore.getPendingChanges(), tryItOutChanges: UserProfileSettingsStore.getTryItOutChanges(), errors: UserProfileSettingsStore.getErrors() };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  let obj = require("c");
+  const stateFromStoresObject = require("initialize").useStateFromStoresObject(tmp4, tmp5);
+  const pendingChanges = stateFromStoresObject.pendingChanges;
+  _require = pendingChanges;
   ({ tryItOutChanges, errors } = stateFromStoresObject);
-  let obj = pendingChanges(504);
-  const items1 = [UserProfileStore, UserProfileSettingsStore];
-  let stateFromStores = pendingChanges(504).useStateFromStores(items1, () => {
-    isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING;
-    if (!isSubmitting) {
-      isSubmitting = isSubmitting.isSubmitting;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserProfileStore, UserProfileSettingsStore];
+    class S {
+      constructor() {
+        isSubmitting = closure_1_8.getFormState() === closure_1_11.SUBMITTING;
+        if (!isSubmitting) {
+          tmp = closure_1_9;
+          isSubmitting = closure_1_9.isSubmitting;
+        }
+        return isSubmitting;
+      }
     }
-    return isSubmitting;
-  });
-  const effect = noop.useEffect(() => () => stateFromStores(573).wait(pendingChanges(7229).resetAllPending), []);
-  const items2 = [stateFromStores, pendingChanges];
-  const callback = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+    cResult[2] = items1;
+    cResult[3] = S;
+    let tmp9 = S;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStores = require("initialize").useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor() {
+        return () => stateFromStores(577).wait(closure_1_0(7230).resetAllPending);
+      }
+    }
+    const items2 = [];
+    cResult[4] = A;
+    class S {
+      constructor() {
+        isSubmitting = closure_1_8.getFormState() === closure_1_11.SUBMITTING;
+        if (!isSubmitting) {
+          tmp = closure_1_9;
+          isSubmitting = closure_1_9.isSubmitting;
+        }
+        return isSubmitting;
+      }
+    }
+    let tmp14 = items2;
+    const tmp13 = A;
+  } else {
+    class A {
+      constructor() {
+        return () => stateFromStores(577).wait(closure_1_0(7230).resetAllPending);
+      }
+    }
+    tmp14 = cResult[5];
+  }
+  const effect = noop.useEffect(tmp13, tmp14);
+  if (cResult[6] === stateFromStores) {
+    class A {
+      constructor() {
+        return () => stateFromStores(577).wait(closure_1_0(7230).resetAllPending);
+      }
+    }
+    if (cResult[9] === stateFromStores) {
+      class A {
+        constructor() {
+          return () => stateFromStores(577).wait(closure_1_0(7230).resetAllPending);
+        }
+      }
+      if (cResult[12] === errors) {
+        class A {
+          constructor() {
+            return () => stateFromStores(577).wait(closure_1_0(7230).resetAllPending);
+          }
+        }
+      }
+      let obj2 = { hasAvatarDecorationEdits: undefined !== pendingChanges.pendingAvatarDecoration, errors: null, isSubmitting: null, handleSubmit: null, handleSubmitAvatarDecoration: null, resetPending: null };
+      class S {
+        constructor() {
+          isSubmitting = closure_1_8.getFormState() === closure_1_11.SUBMITTING;
+          if (!isSubmitting) {
+            tmp = closure_1_9;
+            isSubmitting = closure_1_9.isSubmitting;
+          }
+          return isSubmitting;
+        }
+      }
+      obj2.isSubmitting = stateFromStores;
+      obj2.handleSubmit = tmp16;
+      obj2.handleSubmitAvatarDecoration = tmp17;
+      obj2.resetPending = tmp(7230).resetAllPending;
+      const merged = Object.assign(pendingChanges);
+      const merged1 = Object.assign(tryItOutChanges);
+      cResult[12] = errors;
+      cResult[13] = tmp16;
+      cResult[14] = tmp17;
+      cResult[15] = undefined !== pendingChanges.pendingAvatarDecoration;
+      cResult[16] = stateFromStores;
+      cResult[17] = pendingChanges;
+      cResult[18] = tryItOutChanges;
+      cResult[19] = obj2;
+    }
+    _require = asyncGeneratorStep(async (arg0, value) => {
+      if (c3 === 2) {
+        c3 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          c3 = 2;
+          if (0 === c2) {
+            if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              closure_1 = tmp5;
+              closure_128_0 = undefined;
+              if (closure_1) {
+                c3 = 3;
+              } else {
+                const obj5 = { avatarDecoration: tmp2.pendingAvatarDecoration };
+                c2 = 1;
+                c3 = 1;
+                const obj6 = { value: tmp2(7230).saveProfileAndAccountChanges(obj5), done: false };
+                return obj6;
+              }
+            }
+          } else if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 !== 2) {
+            closure_128_0 = value;
+            let ok;
+            if (closure_128_0 != null) {
+              ok = closure_128_0.ok;
+            }
+            if (ok) {
+              const result = tmp2(7230).resetPendingAccountChanges();
+              const obj = tmp2(7230);
+            }
+          }
+          c3 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } catch (tmp16) {
+          c3 = tmp;
+          throw tmp16;
+        }
+      }
+    });
+    const fn3 = function() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    };
+    class S {
+      constructor() {
+        isSubmitting = closure_1_8.getFormState() === closure_1_11.SUBMITTING;
+        if (!isSubmitting) {
+          tmp = closure_1_9;
+          isSubmitting = closure_1_9.isSubmitting;
+        }
+        return isSubmitting;
+      }
+    }
+    cResult[9] = stateFromStores;
+    cResult[10] = pendingChanges.pendingAvatarDecoration;
+    cResult[11] = fn3;
+  }
+  _require = asyncGeneratorStep(async (arg0, value) => {
     if (c7 === 2) {
       c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -45,7 +231,7 @@ export default function useUserProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -59,6 +245,421 @@ export default function useUserProfileEditForm() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
+            closure_4 = tmp2;
+            closure_3 = tmp193;
+            closure_131_0 = undefined;
+            let profileChangesForUpdateRequest;
+            let primaryGuildChangesForUpdateRequest;
+            closure_131_3 = undefined;
+            closure_131_4 = undefined;
+            closure_131_5 = undefined;
+            let body3;
+            let bannerOriginalMd5;
+            closure_131_8 = undefined;
+            closure_131_9 = undefined;
+            let firstFieldErrorMessage;
+            closure_131_11 = undefined;
+            closure_131_12 = undefined;
+            closure_131_13 = undefined;
+            let primaryGuildId;
+            closure_131_15 = undefined;
+            let firstFieldErrorMessage2;
+            if (c1) {
+              c7 = 3;
+              return { value: "IconComponent", done: null };
+            } else {
+              const accountUpdateForUpdateRequest = closure_0(11385).getAccountUpdateForUpdateRequest(c0);
+              closure_131_0 = accountUpdateForUpdateRequest;
+              const obj26 = closure_0(11385);
+              profileChangesForUpdateRequest = closure_0(11385).getProfileChangesForUpdateRequest(c0);
+              const obj27 = closure_0(11385);
+              primaryGuildChangesForUpdateRequest = closure_0(11385).getPrimaryGuildChangesForUpdateRequest(c0);
+              closure_131_3 = true;
+              closure_131_4 = false;
+              const _Object = Object;
+              if (Object.keys(accountUpdateForUpdateRequest).length > 0) {
+                c6 = 1;
+                c7 = 1;
+                const obj6 = { value: closure_0(7230).saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
+                return obj6;
+              } else {
+                const _Object2 = Object;
+                if (Object.keys(profileChangesForUpdateRequest).length > 0) {
+                  bannerOriginalMd5 = profileChangesForUpdateRequest.bannerOriginalMd5;
+                  closure_131_8 = _objectWithoutProperties(profileChangesForUpdateRequest, closure_2_3);
+                  c6 = 2;
+                  c7 = 1;
+                  const obj8 = { value: closure_0(8441).saveProfileChanges(closure_131_8, undefined, bannerOriginalMd5), done: false };
+                  return obj8;
+                } else {
+                  if (undefined === c0.pendingBadgeDisplayOrder) {
+                    if (undefined === c0.pendingBadgeHiddenBadges) {
+                      if (undefined !== c0.pendingLegacyUsernameDisabled) {
+                        c5 = 1;
+                        const LegacyUsernameDisabled = closure_0(2023).LegacyUsernameDisabled;
+                        c6 = 7;
+                        c7 = 1;
+                        const obj9 = { value: LegacyUsernameDisabled.updateSetting(c0.pendingLegacyUsernameDisabled), done: false };
+                        return obj9;
+                      }
+                    }
+                  }
+                  const _Object4 = Object;
+                  let tmp162 = 0 === Object.keys(closure_131_0).length;
+                  if (tmp162) {
+                    const _Object5 = Object;
+                    tmp162 = 0 === Object.keys(profileChangesForUpdateRequest).length;
+                  }
+                  if (tmp162) {
+                    const _Object6 = Object;
+                    tmp162 = 0 === Object.keys(primaryGuildChangesForUpdateRequest).length;
+                  }
+                  if (tmp162) {
+                    tmp162 = undefined === c0.pendingLegacyUsernameDisabled;
+                  }
+                  closure_131_11 = tmp162;
+                  if (closure_131_11) {
+                    stateFromStores(577).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
+                    const obj34 = stateFromStores(577);
+                  }
+                  const obj11 = { displayOrder: c0.pendingBadgeDisplayOrder, hiddenBadges: c0.pendingBadgeHiddenBadges };
+                  c6 = 3;
+                  c7 = 1;
+                  const obj13 = { value: closure_0(14871).updateBadgeSettings(obj11), done: false };
+                  return obj13;
+                }
+              }
+              const obj28 = closure_0(11385);
+            }
+          }
+        } else if (1 === tmp7) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj15 = { value, done: true };
+            return obj15;
+          } else {
+            closure_131_5 = value;
+            let ok;
+            if (closure_131_5 != null) {
+              ok = closure_131_5.ok;
+            }
+            if (ok) {
+              body3 = closure_131_5.body;
+              if (undefined !== c0.pendingAvatar) {
+                const obj16 = { avatarHash: body3.avatar, avatarId: closure_131_0.avatarId, avatarAssetOrigin: null };
+                const pendingAvatar = c0.pendingAvatar;
+                let assetOrigin;
+                if (pendingAvatar != null) {
+                  assetOrigin = pendingAvatar.assetOrigin;
+                }
+                obj16.avatarAssetOrigin = assetOrigin;
+                const result = closure_0(7234).trackUserAvatarUpdated(obj16);
+                const obj22 = closure_0(7234);
+              }
+              const result1 = closure_0(7230).resetPendingAccountChanges();
+              const obj24 = closure_0(7230);
+            } else {
+              let username;
+              if (closure_131_5 != null) {
+                const body = closure_131_5.body;
+                if (body != null) {
+                  username = body.username;
+                }
+              }
+              if (null != username) {
+                const result2 = closure_0(7237).showInvalidUsernameToast();
+                closure_131_4 = true;
+                const obj21 = closure_0(7237);
+              } else {
+                let avatar;
+                if (closure_131_5 != null) {
+                  const body2 = closure_131_5.body;
+                  if (body2 != null) {
+                    avatar = body2.avatar;
+                  }
+                }
+                if (null != avatar) {
+                  const result3 = closure_0(14870).showGenericProfileUpdateFailureToast(closure_131_5.body.avatar);
+                  closure_131_4 = true;
+                  const obj44 = closure_0(14870);
+                }
+              }
+            }
+            let tmp115 = closure_131_3;
+            if (closure_131_3) {
+              let ok1;
+              if (closure_131_5 != null) {
+                ok1 = closure_131_5.ok;
+              }
+              c0 = ok1;
+              if (ok1 == null) {
+                c0 = false;
+              }
+              tmp115 = c0;
+            }
+            closure_131_3 = tmp115;
+          }
+        } else if (2 === tmp7) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj17 = { value, done: true };
+            return obj17;
+          } else {
+            closure_131_9 = value;
+            let ok2;
+            if (closure_131_9 != null) {
+              ok2 = closure_131_9.ok;
+            }
+            if (ok2) {
+              const result4 = closure_0(8441).resetPendingProfileChanges();
+              const obj19 = closure_0(8441);
+            } else {
+              const aPIError = new closure_0(4659).APIError(closure_131_9);
+              firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
+              if (null != firstFieldErrorMessage) {
+                const result5 = closure_0(14870).showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
+                closure_131_4 = true;
+                const obj18 = closure_0(14870);
+              }
+            }
+            let tmp85 = closure_131_3;
+            if (closure_131_3) {
+              let ok3;
+              if (closure_131_9 != null) {
+                ok3 = closure_131_9.ok;
+              }
+              c1 = ok3;
+              if (ok3 == null) {
+                c1 = false;
+              }
+              tmp85 = c1;
+            }
+            closure_131_3 = tmp85;
+          }
+        } else {
+          if (3 === tmp7) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj20 = { value, done: true };
+              return obj20;
+            } else {
+              closure_131_12 = value;
+              if (closure_131_12) {
+                currentUser = currentUser.getCurrentUser();
+                let id;
+                if (currentUser != null) {
+                  id = currentUser.id;
+                }
+                closure_131_13 = id;
+                if (null != closure_131_13) {
+                  const profile = closure_0(8455).fetchProfile(closure_131_13);
+                  c6 = 4;
+                  c7 = 1;
+                  const obj23 = {
+                    value: profile.catch(() => {
+
+                                  }),
+                    done: false
+                  };
+                  return obj23;
+                }
+              } else if (!closure_131_11) {
+                let tmp49 = closure_131_3;
+                if (closure_131_3) {
+                  tmp49 = closure_131_12;
+                }
+                closure_131_3 = tmp49;
+              } else {
+                if (closure_131_12) {
+                  let obj25 = { type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" };
+                } else {
+                  obj25 = { type: "USER_PROFILE_SETTINGS_SUBMIT_FAILURE", errors: {} };
+                }
+                stateFromStores(577).dispatch(obj25);
+                const obj10 = stateFromStores(577);
+              }
+            }
+          } else if (4 === tmp7) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj30 = { value, done: true };
+              return obj30;
+            }
+          } else if (5 === tmp7) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj32 = { value, done: true };
+              return obj32;
+            } else {
+              const result6 = closure_0(13380).resetPendingBadgeSettings();
+              const obj7 = closure_0(13380);
+            }
+          } else if (6 === tmp7) {
+            c5 = 0;
+            closure_131_3 = false;
+          } else {
+            if (7 === tmp7) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                c7 = 3;
+                const obj33 = { value, done: true };
+                return obj33;
+              } else {
+                const result7 = closure_0(7230).resetPendingLegacyUsernameDisabled();
+                c5 = 0;
+                const obj5 = closure_0(7230);
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj36 = { value, done: true };
+              return obj36;
+            } else {
+              closure_131_15 = value;
+              let ok4;
+              if (closure_131_15 != null) {
+                ok4 = closure_131_15.ok;
+              }
+              if (ok4) {
+                const result8 = closure_0(7230).resetPendingPrimaryGuildChanges();
+                const obj3 = closure_0(7230);
+              } else {
+                const aPIError1 = new closure_0(4659).APIError(closure_131_15);
+                firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
+                if (null != firstFieldErrorMessage2) {
+                  const result9 = closure_0(14870).showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
+                  closure_131_4 = true;
+                  const obj2 = closure_0(14870);
+                }
+              }
+              let tmp29 = closure_131_3;
+              if (closure_131_3) {
+                let ok5;
+                if (closure_131_15 != null) {
+                  ok5 = closure_131_15.ok;
+                }
+                c2 = ok5;
+                if (ok5 == null) {
+                  c2 = false;
+                }
+                tmp29 = c2;
+              }
+              closure_131_3 = tmp29;
+            }
+            let tmp140 = closure_131_3;
+            if (!closure_131_3) {
+              tmp140 = closure_131_4;
+            }
+            if (!tmp140) {
+              const intl = closure_0(1119).intl;
+              const result10 = closure_0(14870).showGenericProfileUpdateFailureToast(intl.string(closure_0(1119).t["84MExs"]));
+              const obj29 = closure_0(14870);
+            }
+            c7 = 3;
+            const obj37 = { value: closure_131_3, done: true };
+            return obj37;
+          }
+          c6 = 5;
+          c7 = 1;
+          const obj39 = { value: closure_0(8471).fetchBadgeDirectory(), done: false };
+          return obj39;
+        }
+        const _Object3 = Object;
+        if (Object.keys(primaryGuildChangesForUpdateRequest).length > 0) {
+          primaryGuildId = primaryGuildChangesForUpdateRequest.primaryGuildId;
+          if (undefined !== primaryGuildId) {
+            c6 = 8;
+            c7 = 1;
+            const obj41 = { value: closure_0(14186).adoptGuildIdentity(primaryGuildId, null !== primaryGuildId), done: false };
+            return obj41;
+          }
+        }
+      } catch (tmp192) {
+        if (tmp3 === c5) {
+          c7 = tmp;
+          throw tmp192;
+        } else {
+          c6 = tmp4;
+        }
+        tmp193 = c5;
+      }
+    }
+  });
+  const fn2 = function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  };
+  cResult[6] = stateFromStores;
+  cResult[7] = pendingChanges;
+  cResult[8] = fn2;
+}) : (() => {
+  const items = [UserProfileSettingsStore];
+  const stateFromStoresObject = pendingChanges(504).useStateFromStoresObject(items, () => ({ pendingChanges: UserProfileSettingsStore.getPendingChanges(), tryItOutChanges: UserProfileSettingsStore.getTryItOutChanges(), errors: UserProfileSettingsStore.getErrors() }));
+  pendingChanges = stateFromStoresObject.pendingChanges;
+  ({ tryItOutChanges, errors } = stateFromStoresObject);
+  let obj = pendingChanges(504);
+  const items1 = [UserProfileStore, UserProfileSettingsStore];
+  let stateFromStores = pendingChanges(504).useStateFromStores(items1, () => {
+    isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING;
+    if (!isSubmitting) {
+      isSubmitting = isSubmitting.isSubmitting;
+    }
+    return isSubmitting;
+  });
+  const effect = noop.useEffect(() => () => stateFromStores(577).wait(pendingChanges(7230).resetAllPending), []);
+  const items2 = [stateFromStores, pendingChanges];
+  const callback = noop.useCallback(asyncGeneratorStep(async (arg0, value) => {
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp6 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj = { value, done: true };
+        return obj;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            closure_4 = tmp2;
             closure_3 = tmp193;
             closure_131_0 = undefined;
             let profileChangesForUpdateRequest;
@@ -79,37 +680,37 @@ export default function useUserProfileEditForm() {
             let firstFieldErrorMessage2;
             if (stateFromStores) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
-              const accountUpdateForUpdateRequest = pendingChanges(11354).getAccountUpdateForUpdateRequest(pendingChanges);
+              const accountUpdateForUpdateRequest = pendingChanges(11385).getAccountUpdateForUpdateRequest(pendingChanges);
               closure_131_0 = accountUpdateForUpdateRequest;
-              const obj26 = pendingChanges(11354);
-              profileChangesForUpdateRequest = pendingChanges(11354).getProfileChangesForUpdateRequest(pendingChanges);
-              const obj27 = pendingChanges(11354);
-              primaryGuildChangesForUpdateRequest = pendingChanges(11354).getPrimaryGuildChangesForUpdateRequest(pendingChanges);
+              const obj26 = pendingChanges(11385);
+              profileChangesForUpdateRequest = pendingChanges(11385).getProfileChangesForUpdateRequest(pendingChanges);
+              const obj27 = pendingChanges(11385);
+              primaryGuildChangesForUpdateRequest = pendingChanges(11385).getPrimaryGuildChangesForUpdateRequest(pendingChanges);
               closure_131_3 = true;
               closure_131_4 = false;
               const _Object = Object;
               if (Object.keys(accountUpdateForUpdateRequest).length > 0) {
                 c6 = 1;
                 c7 = 1;
-                const obj6 = { value: pendingChanges(7229).saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
+                const obj6 = { value: pendingChanges(7230).saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
                 return obj6;
               } else {
                 const _Object2 = Object;
                 if (Object.keys(profileChangesForUpdateRequest).length > 0) {
                   bannerOriginalMd5 = profileChangesForUpdateRequest.bannerOriginalMd5;
-                  closure_131_8 = tmp2(profileChangesForUpdateRequest, closure_3);
+                  closure_131_8 = v0(profileChangesForUpdateRequest, closure_4);
                   c6 = 2;
                   c7 = 1;
-                  const obj8 = { value: pendingChanges(8436).saveProfileChanges(closure_131_8, undefined, bannerOriginalMd5), done: false };
+                  const obj8 = { value: pendingChanges(8441).saveProfileChanges(closure_131_8, undefined, bannerOriginalMd5), done: false };
                   return obj8;
                 } else {
                   if (undefined === closure_132_0.pendingBadgeDisplayOrder) {
                     if (undefined === closure_132_0.pendingBadgeHiddenBadges) {
                       if (undefined !== closure_132_0.pendingLegacyUsernameDisabled) {
-                        c5 = 1;
-                        const LegacyUsernameDisabled = pendingChanges(2019).LegacyUsernameDisabled;
+                        v0 = 1;
+                        const LegacyUsernameDisabled = pendingChanges(2023).LegacyUsernameDisabled;
                         c6 = 7;
                         c7 = 1;
                         const obj9 = { value: LegacyUsernameDisabled.updateSetting(closure_132_0.pendingLegacyUsernameDisabled), done: false };
@@ -132,17 +733,17 @@ export default function useUserProfileEditForm() {
                   }
                   closure_131_11 = tmp162;
                   if (closure_131_11) {
-                    stateFromStores(573).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
-                    const obj34 = stateFromStores(573);
+                    stateFromStores(577).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
+                    const obj34 = stateFromStores(577);
                   }
                   const obj11 = { displayOrder: closure_132_0.pendingBadgeDisplayOrder, hiddenBadges: closure_132_0.pendingBadgeHiddenBadges };
                   c6 = 3;
                   c7 = 1;
-                  const obj13 = { value: pendingChanges(14882).updateBadgeSettings(obj11), done: false };
+                  const obj13 = { value: pendingChanges(14871).updateBadgeSettings(obj11), done: false };
                   return obj13;
                 }
               }
-              const obj28 = pendingChanges(11354);
+              const obj28 = pendingChanges(11385);
             }
           }
         } else if (1 === tmp7) {
@@ -169,11 +770,11 @@ export default function useUserProfileEditForm() {
                   assetOrigin = pendingAvatar.assetOrigin;
                 }
                 obj16.avatarAssetOrigin = assetOrigin;
-                const result = pendingChanges(7233).trackUserAvatarUpdated(obj16);
-                const obj22 = pendingChanges(7233);
+                const result = pendingChanges(7234).trackUserAvatarUpdated(obj16);
+                const obj22 = pendingChanges(7234);
               }
-              const result1 = pendingChanges(7229).resetPendingAccountChanges();
-              const obj24 = pendingChanges(7229);
+              const result1 = pendingChanges(7230).resetPendingAccountChanges();
+              const obj24 = pendingChanges(7230);
             } else {
               let username;
               if (closure_131_5 != null) {
@@ -183,9 +784,9 @@ export default function useUserProfileEditForm() {
                 }
               }
               if (null != username) {
-                const result2 = pendingChanges(7236).showInvalidUsernameToast();
+                const result2 = pendingChanges(7237).showInvalidUsernameToast();
                 closure_131_4 = true;
-                const obj21 = pendingChanges(7236);
+                const obj21 = pendingChanges(7237);
               } else {
                 let avatar;
                 if (closure_131_5 != null) {
@@ -195,9 +796,9 @@ export default function useUserProfileEditForm() {
                   }
                 }
                 if (null != avatar) {
-                  const result3 = pendingChanges(14881).showGenericProfileUpdateFailureToast(closure_131_5.body.avatar);
+                  const result3 = pendingChanges(14870).showGenericProfileUpdateFailureToast(closure_131_5.body.avatar);
                   closure_131_4 = true;
-                  const obj44 = pendingChanges(14881);
+                  const obj44 = pendingChanges(14870);
                 }
               }
             }
@@ -230,15 +831,15 @@ export default function useUserProfileEditForm() {
               ok2 = closure_131_9.ok;
             }
             if (ok2) {
-              const result4 = pendingChanges(8436).resetPendingProfileChanges();
-              const obj19 = pendingChanges(8436);
+              const result4 = pendingChanges(8441).resetPendingProfileChanges();
+              const obj19 = pendingChanges(8441);
             } else {
-              const aPIError = new pendingChanges(4656).APIError(closure_131_9);
+              const aPIError = new pendingChanges(4659).APIError(closure_131_9);
               firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
               if (null != firstFieldErrorMessage) {
-                const result5 = pendingChanges(14881).showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
+                const result5 = pendingChanges(14870).showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
                 closure_131_4 = true;
-                const obj18 = pendingChanges(14881);
+                const obj18 = pendingChanges(14870);
               }
             }
             let tmp85 = closure_131_3;
@@ -274,7 +875,7 @@ export default function useUserProfileEditForm() {
                 }
                 closure_131_13 = id;
                 if (null != closure_131_13) {
-                  const profile = pendingChanges(8450).fetchProfile(closure_131_13);
+                  const profile = pendingChanges(8455).fetchProfile(closure_131_13);
                   c6 = 4;
                   c7 = 1;
                   const obj23 = {
@@ -297,8 +898,8 @@ export default function useUserProfileEditForm() {
                 } else {
                   obj25 = { type: "USER_PROFILE_SETTINGS_SUBMIT_FAILURE", errors: {} };
                 }
-                stateFromStores(573).dispatch(obj25);
-                const obj10 = stateFromStores(573);
+                stateFromStores(577).dispatch(obj25);
+                const obj10 = stateFromStores(577);
               }
             }
           } else if (4 === tmp7) {
@@ -319,11 +920,11 @@ export default function useUserProfileEditForm() {
               const obj32 = { value, done: true };
               return obj32;
             } else {
-              const result6 = pendingChanges(13377).resetPendingBadgeSettings();
-              const obj7 = pendingChanges(13377);
+              const result6 = pendingChanges(13380).resetPendingBadgeSettings();
+              const obj7 = pendingChanges(13380);
             }
           } else if (6 === tmp7) {
-            c5 = 0;
+            v0 = 0;
             closure_131_3 = false;
           } else {
             if (7 === tmp7) {
@@ -331,14 +932,14 @@ export default function useUserProfileEditForm() {
                 c7 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c5 = 0;
+                v0 = 0;
                 c7 = 3;
                 const obj33 = { value, done: true };
                 return obj33;
               } else {
-                const result7 = pendingChanges(7229).resetPendingLegacyUsernameDisabled();
-                c5 = 0;
-                const obj5 = pendingChanges(7229);
+                const result7 = pendingChanges(7230).resetPendingLegacyUsernameDisabled();
+                v0 = 0;
+                const obj5 = pendingChanges(7230);
               }
             } else if (arg0 === 1) {
               c7 = 3;
@@ -354,15 +955,15 @@ export default function useUserProfileEditForm() {
                 ok4 = closure_131_15.ok;
               }
               if (ok4) {
-                const result8 = pendingChanges(7229).resetPendingPrimaryGuildChanges();
-                const obj3 = pendingChanges(7229);
+                const result8 = pendingChanges(7230).resetPendingPrimaryGuildChanges();
+                const obj3 = pendingChanges(7230);
               } else {
-                const aPIError1 = new pendingChanges(4656).APIError(closure_131_15);
+                const aPIError1 = new pendingChanges(4659).APIError(closure_131_15);
                 firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
                 if (null != firstFieldErrorMessage2) {
-                  const result9 = pendingChanges(14881).showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
+                  const result9 = pendingChanges(14870).showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
                   closure_131_4 = true;
-                  const obj2 = pendingChanges(14881);
+                  const obj2 = pendingChanges(14870);
                 }
               }
               let tmp29 = closure_131_3;
@@ -384,9 +985,9 @@ export default function useUserProfileEditForm() {
               tmp140 = closure_131_4;
             }
             if (!tmp140) {
-              const intl = pendingChanges(1115).intl;
-              const result10 = pendingChanges(14881).showGenericProfileUpdateFailureToast(intl.string(pendingChanges(1115).t["84MExs"]));
-              const obj29 = pendingChanges(14881);
+              const intl = pendingChanges(1119).intl;
+              const result10 = pendingChanges(14870).showGenericProfileUpdateFailureToast(intl.string(pendingChanges(1119).t["84MExs"]));
+              const obj29 = pendingChanges(14870);
             }
             c7 = 3;
             const obj37 = { value: closure_131_3, done: true };
@@ -394,7 +995,7 @@ export default function useUserProfileEditForm() {
           }
           c6 = 5;
           c7 = 1;
-          const obj39 = { value: pendingChanges(8466).fetchBadgeDirectory(), done: false };
+          const obj39 = { value: pendingChanges(8471).fetchBadgeDirectory(), done: false };
           return obj39;
         }
         const _Object3 = Object;
@@ -403,18 +1004,18 @@ export default function useUserProfileEditForm() {
           if (undefined !== primaryGuildId) {
             c6 = 8;
             c7 = 1;
-            const obj41 = { value: pendingChanges(14183).adoptGuildIdentity(primaryGuildId, null !== primaryGuildId), done: false };
+            const obj41 = { value: pendingChanges(14186).adoptGuildIdentity(primaryGuildId, null !== primaryGuildId), done: false };
             return obj41;
           }
         }
       } catch (tmp192) {
-        if (tmp3 === c5) {
+        if (tmp3 === v0) {
           c7 = tmp;
           throw tmp192;
         } else {
           c6 = tmp4;
         }
-        tmp193 = c5;
+        tmp193 = v0;
       }
     }
   }), items2);
@@ -438,7 +1039,7 @@ export default function useUserProfileEditForm() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -460,7 +1061,7 @@ export default function useUserProfileEditForm() {
                 const obj5 = { avatarDecoration: pendingChanges.pendingAvatarDecoration };
                 dependencyMap = 1;
                 c3 = 1;
-                const obj6 = { value: tmp5(7229).saveProfileAndAccountChanges(obj5), done: false };
+                const obj6 = { value: tmp5(7230).saveProfileAndAccountChanges(obj5), done: false };
                 return obj6;
               }
             }
@@ -474,8 +1075,8 @@ export default function useUserProfileEditForm() {
               ok = closure_128_0.ok;
             }
             if (ok) {
-              const result = tmp5(7229).resetPendingAccountChanges();
-              const obj = tmp5(7229);
+              const result = tmp5(7230).resetPendingAccountChanges();
+              const obj = tmp5(7230);
             }
           }
           c3 = 3;
@@ -487,6 +1088,6 @@ export default function useUserProfileEditForm() {
         }
       }
     }), items3),
-    resetPending: pendingChanges(7229).resetAllPending
+    resetPending: pendingChanges(7230).resetAllPending
   };
-};
+});

@@ -1,10 +1,10 @@
-// Module ID: 1112
-// Function ID: 1113
+// Module ID: 1116
+// Function ID: 1117
 // Name: utils/ComponentDispatchUtils
-// Dependencies: [568, 2]
+// Dependencies: [572, 2]
 
-// Module 1112 (utils/ComponentDispatchUtils)
-import _mod568 from "module_568" /* 568 */;
+// Module 1116 (utils/ComponentDispatchUtils)
+import _mod572 from "module_572" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
@@ -59,7 +59,7 @@ prototype["dispatch"] = function dispatch(arg0, arg1) {
       devtoolsReporter = self.options.devtoolsReporter;
     }
     if (devtoolsReporter) {
-      const options = self.options;
+      options = self.options;
       const _Date = Date;
       options.devtoolsReporter(arg0, arg1, Date.now() - tmp6);
     }
@@ -90,7 +90,7 @@ prototype["dispatchToLastSubscribed"] = function dispatchToLastSubscribed(arg0, 
       devtoolsReporter = self.options.devtoolsReporter;
     }
     if (devtoolsReporter) {
-      const options = self.options;
+      options = self.options;
       const _Date = Date;
       options.devtoolsReporter(arg0, arg1, Date.now() - tmp6);
     }
@@ -172,8 +172,8 @@ prototype["dispatchKeyed"] = function dispatchKeyed(VOICE_MESSAGE_SEND, channelI
   const items = ["" + VOICE_MESSAGE_SEND + "_" + channelId, ...substr];
   return this.dispatch.apply(items);
 };
-prototype["subscribeKeyed"] = function subscribeKeyed(VOICE_MESSAGE_SEND, sharedValue1, callback) {
-  return this.subscribe("" + VOICE_MESSAGE_SEND + "_" + sharedValue1, callback);
+prototype["subscribeKeyed"] = function subscribeKeyed(VOICE_MESSAGE_SEND, channelId, callback) {
+  return this.subscribe("" + VOICE_MESSAGE_SEND + "_" + channelId, callback);
 };
 prototype["unsubscribeKeyed"] = function unsubscribeKeyed(VOICE_MESSAGE_SEND, arg1, arg2) {
   return this.unsubscribe("" + VOICE_MESSAGE_SEND + "_" + arg1, arg2);

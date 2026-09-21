@@ -1,20 +1,20 @@
 // Module ID: 4125
 // Function ID: 4126
-// Dependencies: [4124, 3846]
+// Dependencies: [3849, 3850]
 // Exports: default
 
 // Module 4125
-import module_4124_mod from "module_4124" /* 4124 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _typeof_mod from "module_3849" /* 3849 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let module_4124 = module_4124_mod;
-if (!module_4124) {
-  const obj = { default: module_4124 };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4124;
+  tmp3 = _typeof;
 }
-module_4124 = tmp3;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function getUnixTime(arg0) {
+export default function getMonth(arg0) {
   requiredArgs.default(1, arguments);
-  return Math.floor(module_4124.default(arg0) / 1000);
+  return _typeof.default(arg0).getMonth();
 };
 export default exports.default;

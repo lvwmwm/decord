@@ -1,12 +1,12 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14283
+// Function ID: 14284
 // Name: AudioFidelityExperiment
-// Dependencies: [1434, 1370, 2]
+// Dependencies: [1438, 1374, 2]
 // Exports: getAudioFidelityExperimentConfig, getVoiceFidelityCaps
 
-// Module 14280 (AudioFidelityExperiment)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14283 (AudioFidelityExperiment)
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-08-audio-fidelity", defaultConfig: { capSampleRate: false, capChannelCount: false, condition: "none" }, variations: null };

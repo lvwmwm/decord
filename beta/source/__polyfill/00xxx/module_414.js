@@ -269,7 +269,7 @@ const memoResult = memo(function Pressable(ref) {
     },
     blockNativeResponder
   }), items1));
-  const tmp43 = React6;
+  const tmp43 = closure_1_8;
   const merged4 = Object.assign(obj3);
   const merged5 = Object.assign(tmp42);
   obj4.ref = tmp11;

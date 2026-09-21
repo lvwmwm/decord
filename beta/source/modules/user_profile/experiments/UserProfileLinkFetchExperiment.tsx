@@ -1,11 +1,11 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8454
+// Function ID: 8455
 // Name: UserProfileLinkFetchExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 // Exports: getIsUserProfileLinkFetchEnabled
 
-// Module 8449 (UserProfileLinkFetchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 8454 (UserProfileLinkFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-profile-link-fetch", kind: "user", defaultConfig: { enabled: false }, variations: null };

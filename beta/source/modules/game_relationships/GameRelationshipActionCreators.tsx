@@ -1,13 +1,13 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11175
+// Function ID: 11176
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1074, 4656, 5108, 1115, 1271, 4607, 2]
+// Dependencies: [5, 1078, 4659, 5110, 1119, 1275, 4610, 2]
 
-// Module 11133 (GameRelationshipActionCreators)
-import util from "util" /* 1115 */;
-import shared from "shared" /* 4607 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4656 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+// Module 11175 (GameRelationshipActionCreators)
+import util from "util" /* 1119 */;
+import shared from "shared" /* 4610 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4659 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -18,8 +18,8 @@ function showRequestFailedAlert(arg0) {
   const intl = util.intl;
   obj.title = intl.string(util.t["328j/I"]);
   if (null == anyErrorMessage) {
-    const intl2 = tmp(1115).intl;
-    anyErrorMessage = intl2.string(tmp(1115).t.fEptJP);
+    const intl2 = tmp(1119).intl;
+    anyErrorMessage = intl2.string(tmp(1119).t.fEptJP);
   }
   obj.body = anyErrorMessage;
   AlertActionCreatorsDefault.show(obj);
@@ -45,7 +45,7 @@ let closure_8 = async function _deleteGameRelationship(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -67,7 +67,7 @@ let closure_8 = async function _deleteGameRelationship(arg0, value) {
           ({ userId: closure_129_0, applicationId: closure_129_1, onSuccess: closure_129_2 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -119,32 +119,32 @@ let closure_9 = async function _removeGameFriend() {
     userId: closure_129_0,
     applicationId: closure_129_1,
     onSuccess() {
-      const AccessibilityAnnouncer = closure_1_0(4607).AccessibilityAnnouncer;
-      const intl = closure_1_0(1115).intl;
-      AccessibilityAnnouncer.announce(intl.string(closure_1_0(1115).t.zRf8cO));
+      const AccessibilityAnnouncer = closure_1_0(4610).AccessibilityAnnouncer;
+      const intl = closure_1_0(1119).intl;
+      AccessibilityAnnouncer.announce(intl.string(closure_1_0(1119).t.zRf8cO));
     }
   });
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ userId: closure_129_0, applicationId: closure_129_1 } = closure_0);
-  return "PX_16";
+  return "Set";
 };
 let closure_10 = async function _cancelGameFriendRequest() {
   await closure_130_7({
     userId: closure_129_0,
     applicationId: closure_129_1,
     onSuccess() {
-      const AccessibilityAnnouncer = closure_1_0(4607).AccessibilityAnnouncer;
-      const intl = closure_1_0(1115).intl;
-      AccessibilityAnnouncer.announce(intl.string(closure_1_0(1115).t.XMf21q));
+      const AccessibilityAnnouncer = closure_1_0(4610).AccessibilityAnnouncer;
+      const intl = closure_1_0(1119).intl;
+      AccessibilityAnnouncer.announce(intl.string(closure_1_0(1119).t.XMf21q));
     }
   });
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ userId: closure_129_0, applicationId: closure_129_1 } = closure_0);
-  return "PX_16";
+  return "Set";
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Endpoints: closure_4, RelationshipTypes: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_relationships/GameRelationshipActionCreators.tsx");
@@ -165,7 +165,7 @@ export default {
 
     }
     ({ userId, applicationId } = arg0);
-    const HTTP = onSuccess(1271).HTTP;
+    const HTTP = onSuccess(1275).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: constants.FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     return HTTP.put(request).then(() => {
@@ -173,14 +173,14 @@ export default {
       const intl = util.intl;
       AccessibilityAnnouncer.announce(intl.string(util.t.taJiuc));
     }).catch((error) => {
-      const aPIError = new onSuccess(4656).APIError(error);
+      const aPIError = new onSuccess(4659).APIError(error);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
-      const intl = onSuccess(1115).intl;
-      obj.title = intl.string(onSuccess(1115).t["328j/I"]);
+      const intl = onSuccess(1119).intl;
+      obj.title = intl.string(onSuccess(1119).t["328j/I"]);
       if (null == anyErrorMessage) {
-        const intl2 = tmp(1115).intl;
-        anyErrorMessage = intl2.string(tmp(1115).t.fEptJP);
+        const intl2 = tmp(1119).intl;
+        anyErrorMessage = intl2.string(tmp(1119).t.fEptJP);
       }
       obj.body = anyErrorMessage;
       AlertActionCreatorsDefault.show(obj);

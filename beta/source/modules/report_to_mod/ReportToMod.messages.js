@@ -1,22 +1,22 @@
-// Module ID: 2614
-// Function ID: 2615
-// Dependencies: [1119, 2615, 1154, 2]
+// Module ID: 2618
+// Function ID: 2619
+// Dependencies: [1123, 2619, 1158, 2]
 
-// Module 2614
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod2615 from "module_2615" /* 2615 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 2618
+import AssetJsonUtils from "AssetJsonUtils" /* 1123 */;
+import _mod2619 from "module_2619" /* 2619 */;
+import module_1158_mod from "module_1158" /* 1158 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
+let module_1158 = module_1158_mod;
+const loader = module_1158.createLoader({
   () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2615);
+    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2619);
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");
-let module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+let module_1158 = module_1158_mod;
+const messagesProxy = module_1158.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/report_to_mod/ReportToMod.messages.js");
 
 export default messagesProxy;

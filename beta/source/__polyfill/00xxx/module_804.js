@@ -1,45 +1,149 @@
 // Module ID: 804
 // Function ID: 805
-// Dependencies: []
-// Exports: cleanupSessionDataForTransport, getClientInfoForTransport, getProtocolVersionForTransport, getSessionDataForTransport, storeSessionDataForTransport, updateSessionDataForTransport
+// Dependencies: [5, 805, 717, 691, 806, 817]
+// Exports: wrapMcpServerWithSentry
 
 // Module 804
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const weakMap = new WeakMap();
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-export const cleanupSessionDataForTransport = function cleanupSessionDataForTransport(arg0) {
-  weakMap.delete(arg0);
-};
-export const getClientInfoForTransport = function getClientInfoForTransport(transport) {
-  value = weakMap.get(transport);
-  let clientInfo;
-  if (value != null) {
-    clientInfo = value.clientInfo;
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const weakSet = new WeakSet();
+
+export const wrapMcpServerWithSentry = function wrapMcpServerWithSentry(arg0, recordInputs) {
+  if (weakSet.has(arg0)) {
+    return arg0;
+  } else {
+    if (obj2.validateMcpServerInstance(arg0)) {
+      const client = tmp(717).getClient();
+      let sendDefaultPii;
+      if (client != null) {
+        sendDefaultPii = client.getOptions().sendDefaultPii;
+      }
+      const BooleanResult = Boolean(sendDefaultPii);
+      recordInputs = undefined;
+      if (recordInputs != null) {
+        recordInputs = recordInputs.recordInputs;
+      }
+      if (recordInputs == null) {
+        recordInputs = BooleanResult;
+      }
+      let obj3 = { recordInputs, recordOutputs: null };
+      let recordOutputs;
+      if (recordInputs != null) {
+        recordOutputs = recordInputs.recordOutputs;
+      }
+      if (recordOutputs == null) {
+        recordOutputs = BooleanResult;
+      }
+      obj3.recordOutputs = recordOutputs;
+      const tmpResult = tmp(717);
+      tmp(691).fill(arg0, "connect", (arg0) => {
+        closure_0 = asyncGeneratorStep(async function(arg0) {
+          const self = this;
+          closure_1 = arg0;
+          closure_2 = [...arguments].slice();
+          c6 = 0;
+          c7 = 0;
+          const iter = (async (arg0, value) => {
+            if (c7 === 2) {
+              c7 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp4 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                c7 = 2;
+                if (0 === c6) {
+                  if (arg0 === 1) {
+                    c7 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c7 = 3;
+                    obj3 = { value, done: true };
+                    return obj3;
+                  } else {
+                    closure_5 = self;
+                    closure_4 = self;
+                    closure_3 = tmp2;
+                    closure_131_0 = closure_1;
+                    closure_131_1 = closure_2;
+                    closure_131_2 = undefined;
+                    c6 = 1;
+                    c7 = 1;
+                    return { value: "Set", done: true };
+                  }
+                } else if (1 === tmp5) {
+                  if (arg0 === 1) {
+                    c7 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c7 = 3;
+                    const obj4 = { value, done: true };
+                    return obj4;
+                  } else {
+                    const call = self.call;
+                    const items = [closure_5, closure_131_0];
+                    HermesBuiltin.arraySpread(closure_131_1, 2);
+                    c6 = 2;
+                    c7 = 1;
+                    const obj5 = { value: HermesBuiltin.apply(items, self), done: false };
+                    return obj5;
+                  }
+                } else if (arg0 === 1) {
+                  c7 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c7 = 3;
+                  const obj6 = { value, done: true };
+                  return obj6;
+                } else {
+                  closure_131_2 = value;
+                  const result = obj3(806).wrapTransportOnMessage(closure_131_0, closure_0);
+                  const obj7 = obj3(806);
+                  obj3(806).wrapTransportSend(closure_131_0, closure_0);
+                  const obj8 = obj3(806);
+                  obj3(806).wrapTransportOnClose(closure_131_0);
+                  const obj9 = obj3(806);
+                  obj3(806).wrapTransportError(closure_131_0);
+                  c7 = 3;
+                  const obj = { value: closure_131_2, done: true };
+                  return obj;
+                }
+              } catch (tmp21) {
+                c7 = tmp;
+                throw tmp21;
+              }
+            }
+          })();
+          iter.next();
+          return iter;
+        });
+        return function(arg0) {
+          const self = this;
+          const apply = closure_0.apply;
+          if (typeof apply === "unknown") {
+            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+          } else {
+            applyArgumentsResult = apply(self, arguments);
+          }
+          return applyArgumentsResult;
+        };
+      });
+      const tmpResult3 = tmp(691);
+      tmp(817).wrapAllMCPHandlers(arg0);
+      obj.add(arg0);
+      return arg0;
+    } else {
+      return arg0;
+    }
+    obj2 = obj3(805);
   }
-  return clientInfo;
-};
-export const getProtocolVersionForTransport = function getProtocolVersionForTransport(transport) {
-  value = weakMap.get(transport);
-  let protocolVersion;
-  if (value != null) {
-    protocolVersion = value.protocolVersion;
-  }
-  return protocolVersion;
-};
-export const getSessionDataForTransport = function getSessionDataForTransport(transport) {
-  return weakMap.get(transport);
-};
-export const storeSessionDataForTransport = function storeSessionDataForTransport(self, result) {
-  if (self.sessionId) {
-    result = weakMap.set(self, result);
-  }
-};
-export const updateSessionDataForTransport = function updateSessionDataForTransport(sessionId, arg1) {
-  if (sessionId.sessionId) {
-    const tmp = weakMap.get(sessionId) || {};
-    const obj2 = {};
-    const merged = Object.assign(tmp);
-    const merged1 = Object.assign(arg1);
-    const result = weakMap.set(sessionId, obj2);
-  }
+  obj = weakSet;
 };

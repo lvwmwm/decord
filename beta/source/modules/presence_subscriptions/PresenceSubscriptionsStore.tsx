@@ -1,23 +1,23 @@
-// Module ID: 11728
-// Function ID: 11729
+// Module ID: 11597
+// Function ID: 11598
 // Name: PresenceSubscriptionsStore
-// Dependencies: [32, 4796, 2004, 11729, 2036, 504, 573, 2]
+// Dependencies: [32, 4798, 2008, 11598, 2040, 504, 577, 2]
 
-// Module 11728 (PresenceSubscriptionsStore)
+// Module 11597 (PresenceSubscriptionsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11729 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11598 */;
 import _slicedToArray from "module_32" /* 32 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
 
 function handleConnectionOpenOrResumed() {
   closure_5 = {};
   closure_6 = {};
 }
-const INVITE_EXPIRATION_MS = fn(2004).INVITE_EXPIRATION_MS;
+const INVITE_EXPIRATION_MS = fn(2008).INVITE_EXPIRATION_MS;
 let closure_5 = {};
 let closure_6 = {};
-const delayedCall = new fn(2036).DelayedCall(3000, function flush() {
+const delayedCall = new fn(2040).DelayedCall(3000, function flush() {
   const items = [];
   const entries = Object.entries(closure_6);
   while (tmp4 !== undefined) {

@@ -1,25 +1,118 @@
 // Module ID: 16507
 // Function ID: 16508
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 2038, 21, 4756, 9855, 1115, 2514, 4466, 11394, 2]
-// Exports: default
+// Dependencies: [19, 17, 2042, 21, 4758, 558, 568, 9833, 1119, 2518, 4471, 10452, 2]
 
 // Module 16507 (BoostProgressBarCoachmark)
-import util from "util" /* 1115 */;
-import _modDef2514 from "module_2514" /* 2514 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
+import util from "util" /* 1119 */;
+import _modDef2518 from "module_2518" /* 2518 */;
+import native from "native" /* 4471 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/BoostProgressBarCoachmark.tsx");
 
-export default function BoostProgressBarCoachmark(guild) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  const cResult = guild(568).c(14);
+  guild = guild.guild;
+  const markAsDismissed = guild.markAsDismissed;
+  const tmp4 = closure_7();
+  dependencyMap = tmp4;
+  if (cResult[0] !== markAsDismissed) {
+    const fn = function u() {
+      markAsDismissed(ContentDismissActionType.USER_DISMISS);
+    };
+    cResult[0] = markAsDismissed;
+    cResult[1] = fn;
+    let tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === guild.id) {
+    if (cResult[3] === markAsDismissed) {
+      let tmp6 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1119).intl;
+      const stringResult = intl.string(markAsDismissed(2518).uwV2dH);
+      const intl2 = tmp(1119).intl;
+      const stringResult1 = intl2.string(markAsDismissed(2518).MIwlcR);
+      cResult[5] = stringResult;
+      cResult[6] = stringResult1;
+      let tmp9 = stringResult1;
+      let tmp8 = stringResult;
+    } else {
+      tmp8 = cResult[5];
+      tmp9 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.riveContainer) {
+      class I {
+        constructor() {
+          obj = { style: closure_2.riveContainer, children: jsx(closure_0(closure_2[10]).BoostThisServerRive, { stateMachine: "State Machine 1" }) };
+          return jsx(View, obj);
+        }
+      }
+      cResult[7] = tmp4.riveContainer;
+      cResult[8] = I;
+    } else {
+      class I {
+        constructor() {
+          obj = { style: closure_2.riveContainer, children: jsx(closure_0(closure_2[10]).BoostThisServerRive, { stateMachine: "State Machine 1" }) };
+          return jsx(View, obj);
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor() {
+          obj = { style: closure_2.riveContainer, children: jsx(closure_0(closure_2[10]).BoostThisServerRive, { stateMachine: "State Machine 1" }) };
+          return jsx(View, obj);
+        }
+      }
+      const stringResult2 = obj2.string(tmp(1119).t["0CJWP2"]);
+      cResult[9] = stringResult2;
+      const tmp14 = stringResult2;
+    } else {
+      class I {
+        constructor() {
+          obj = { style: closure_2.riveContainer, children: jsx(closure_0(closure_2[10]).BoostThisServerRive, { stateMachine: "State Machine 1" }) };
+          return jsx(View, obj);
+        }
+      }
+    }
+    if (cResult[10] === tmp6) {
+      class I {
+        constructor() {
+          obj = { style: closure_2.riveContainer, children: jsx(closure_0(closure_2[10]).BoostThisServerRive, { stateMachine: "State Machine 1" }) };
+          return jsx(View, obj);
+        }
+      }
+    }
+    const obj3 = { title: tmp8, description: tmp9, visible: true, position: "bottom", offsetY: 8, onDismiss: tmp5, renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "primary", onButtonPress: tmp6 };
+    cResult[10] = tmp6;
+    cResult[11] = tmp5;
+    cResult[12] = tmp13;
+    cResult[13] = obj3;
+  }
+  const fn2 = function p() {
+    markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+    GuildSettingsActionCreatorsDefault.saveGuild(guild.id, { premiumProgressBarEnabled: true });
+  };
+  cResult[2] = guild.id;
+  cResult[3] = markAsDismissed;
+  cResult[4] = fn2;
+  tmp6 = fn2;
+}) : ((guild) => {
   guild = guild.guild;
   const markAsDismissed = guild.markAsDismissed;
   let onDismiss;
@@ -38,18 +131,18 @@ export default function BoostProgressBarCoachmark(guild) {
   const memo = onDismiss.useMemo(() => {
     const obj = { title: null, description: null, visible: true, position: "bottom", offsetY: 8, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
     const intl = util.intl;
-    obj.title = intl.string(_modDef2514.uwV2dH);
+    obj.title = intl.string(_modDef2518.uwV2dH);
     const intl2 = util.intl;
-    obj.description = intl2.string(_modDef2514.MIwlcR);
+    obj.description = intl2.string(_modDef2518.MIwlcR);
     obj.onDismiss = onDismiss;
     obj.renderImgComponent = function renderImgComponent() {
-      return <callback1 style={riveContainer.riveContainer}>{jsx(guild(riveContainer[8]).BoostThisServerRive, { stateMachine: "State Machine 1" })}</callback1>;
+      return <callback1 style={riveContainer.riveContainer}>{jsx(guild(riveContainer[10]).BoostThisServerRive, { stateMachine: "State Machine 1" })}</callback1>;
     };
     const intl3 = util.intl;
     obj.buttonLabel = intl3.string(util.t["0CJWP2"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items2);
-  const coachmark = guild(11394).useCoachmark(guild.targetRef, memo);
+  const coachmark = guild(10452).useCoachmark(guild.targetRef, memo);
   return null;
-};
+});

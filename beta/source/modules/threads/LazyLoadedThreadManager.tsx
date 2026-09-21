@@ -1,13 +1,13 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7558
+// Function ID: 7559
 // Name: LazyLoadedThreadManager
-// Dependencies: [5494, 2045, 2041, 2095, 1074, 2048, 573, 7466, 4582, 4595, 1271, 2]
+// Dependencies: [5496, 2049, 2045, 2099, 1078, 2052, 577, 7468, 4585, 4598, 1275, 2]
 
-// Module 7556 (LazyLoadedThreadManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 7558 (LazyLoadedThreadManager)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = fn;
 function initialize() {
@@ -58,17 +58,17 @@ function loadThread(channelId) {
       } else {
         const _location = location;
         let obj2 = { path: null, exact: true };
-        const RouteParam = tmp13(4595).RouteParam;
-        const tmp13Result = tmp13(4582);
-        const RouteParam2 = tmp13(4595).RouteParam;
+        const RouteParam = tmp13(4598).RouteParam;
+        const tmp13Result = tmp13(4585);
+        const RouteParam2 = tmp13(4598).RouteParam;
         obj2.path = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj2);
-        const HTTP = tmp13(1271).HTTP;
+        const HTTP = tmp13(1275).HTTP;
         const obj3 = { url: closure_8.CHANNEL(channelId), rejectWithError: null };
         const guildIdResult = RouteParam.guildId();
-        obj3.rejectWithError = tmp13(1271).rejectWithMigratedError();
+        obj3.rejectWithError = tmp13(1275).rejectWithMigratedError();
         value = HTTP.get(obj3);
-        const tmp13Result2 = tmp13(1271);
+        const tmp13Result2 = tmp13(1275);
         const catchPromise = value.then((body) => {
           body = body.body;
           closure_11[closure_0] = { type: "LOADED" };
@@ -86,7 +86,7 @@ function loadThread(channelId) {
           }
         }).catch(() => {
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj2 = { id, guild_id: null, parent_id: "r" };
+          const obj2 = { id, guild_id: null, parent_id: "Array" };
           let guildId;
           if (closure_1 != null) {
             const params = closure_1.params;
@@ -106,11 +106,11 @@ function loadThread(channelId) {
     }
   }
 }
-const ChannelRecord = fn(2045);
+const ChannelRecord = fn(2049);
 ({ createChannelRecordFromServer: closure_4, THREAD_CHANNEL_TYPES: hasOwnProperty } = ChannelRecord);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Endpoints: closure_8, Routes: closure_9 } = Constants);
-const isStaticChannelRoute = fn(2048).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2052).isStaticChannelRoute;
 const dependencyMap = {};
 let c12 = false;
 const size = fn(2);
@@ -134,7 +134,7 @@ export default {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp9 = nextResult;
-        if (nextResult !== items1(7466).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7468).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp9)) {
             if (null == ChannelStore.getChannel(tmp9)) {
               let tmp18 = dependencyMap[tmp9];
@@ -154,12 +154,12 @@ export default {
 
         });
       } else {
-        const HTTP = items1(1271).HTTP;
+        const HTTP = items1(1275).HTTP;
         const request = { url: closure_8.THREADS_BULK, body: null, rejectWithError: null };
         const obj2 = { thread_ids: items1 };
         request.body = obj2;
-        request.rejectWithError = items1(1271).rejectWithMigratedError();
-        const obj4 = items1(1271);
+        request.rejectWithError = items1(1275).rejectWithMigratedError();
+        const obj4 = items1(1275);
         const postResult = HTTP.post(request);
         const catchPromise = HTTP.post(request).then((result) => {
           set = new Set();

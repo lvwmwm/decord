@@ -1,19 +1,72 @@
-// Module ID: 6532
-// Function ID: 6533
+// Module ID: 6530
+// Function ID: 6531
 // Name: NitroRubyBadgeSmallBadge
-// Dependencies: [21, 5804, 6533, 2]
-// Exports: NitroRubyBadgeSmallBadge
+// Dependencies: [21, 558, 568, 6531, 5802, 2]
 
-// Module 6532 (NitroRubyBadgeSmallBadge)
+// Module 6530 (NitroRubyBadgeSmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6533 from "module_6533" /* 6533 */;
+import c from "c" /* 568 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import _modDef6531 from "module_6531" /* 6531 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeSmallBadge.native.tsx");
+let result = size.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRubyBadgeSmallBadge.native.tsx");
 
-export const NitroRubyBadgeSmallBadge = function NitroRubyBadgeSmallBadge(width) {
+export const NitroRubyBadgeSmallBadge = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(9);
+  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
+  let num = 24;
+  let num2 = 24;
+  if (undefined !== width) {
+    num2 = width;
+  }
+  if (undefined !== height) {
+    num = height;
+  }
+  let num3 = 1;
+  if (undefined !== scale) {
+    num3 = scale;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef6531 };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const result = num2 * num3;
+  const result1 = num * num3;
+  if (cResult[1] === result) {
+    if (cResult[2] === result1) {
+      let tmp7 = cResult[3];
+    }
+    if (cResult[4] === accessibilityLabel) {
+      if (cResult[5] === accessible) {
+        if (cResult[6] === resizeMode) {
+          if (cResult[7] === tmp7) {
+            let tmp8 = cResult[8];
+          }
+          return tmp8;
+        }
+      }
+    }
+    const obj3 = { fadeDuration: 0, source: first, style: tmp7, accessible, accessibilityLabel, resizeMode };
+    const tmp11 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp7, accessible, accessibilityLabel, resizeMode });
+    cResult[4] = accessibilityLabel;
+    cResult[5] = accessible;
+    cResult[6] = resizeMode;
+    cResult[7] = tmp7;
+    cResult[8] = tmp11;
+    tmp8 = tmp11;
+  }
+  const items = [{ width: result, height: result1 }];
+  cResult[1] = result;
+  cResult[2] = result1;
+  cResult[3] = items;
+  tmp7 = items;
+}) : ((width) => {
   let num = width.width;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
@@ -28,7 +81,7 @@ export const NitroRubyBadgeSmallBadge = function NitroRubyBadgeSmallBadge(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6533 };
+  const obj2 = { uri: _modDef6531 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];
@@ -37,4 +90,4 @@ export const NitroRubyBadgeSmallBadge = function NitroRubyBadgeSmallBadge(width)
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+});

@@ -1,9 +1,9 @@
-// Module ID: 1876
-// Function ID: 1877
+// Module ID: 1880
+// Function ID: 1881
 // Name: NativeKeyboardModule
 // Dependencies: [17, 2]
 
-// Module 1876 (NativeKeyboardModule)
+// Module 1880 (NativeKeyboardModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

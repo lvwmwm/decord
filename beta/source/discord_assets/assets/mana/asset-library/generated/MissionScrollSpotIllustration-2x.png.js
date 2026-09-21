@@ -1,8 +1,8 @@
-// Module ID: 6485
-// Function ID: 6486
+// Module ID: 6483
+// Function ID: 6484
 // Dependencies: [2]
 
-// Module 6485
+// Module 6483
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MissionScrollSpotIllustration-2x.png.js");

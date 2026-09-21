@@ -1,16 +1,16 @@
-// Module ID: 11385
-// Function ID: 11386
+// Module ID: 11397
+// Function ID: 11398
 // Name: setCustomStatus
-// Dependencies: [11382, 1074, 2019, 4348, 11386, 1241, 2]
+// Dependencies: [11394, 1078, 2023, 4352, 11398, 1245, 2]
 // Exports: default
 
-// Module 11385 (setCustomStatus)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import Constants2 from "Constants" /* 11382 */;
-import getClearAfterDurationDefault from "getClearAfterDuration" /* 11386 */;
+// Module 11397 (setCustomStatus)
+import Constants from "Constants" /* 1078 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import Constants2 from "Constants" /* 11394 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 11398 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants2.ClearAfterValues;
@@ -37,10 +37,10 @@ export default function setCustomStatus(arg0) {
     str2 = "0";
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
-      const obj2 = _modDef4348();
-      const addResult = _modDef4348().add(getClearAfterDurationDefault(clearAfter), "ms");
-      str2 = String(_modDef4348().add(getClearAfterDurationDefault(clearAfter), "ms").toDate().getTime());
-      const toDateResult = _modDef4348().add(getClearAfterDurationDefault(clearAfter), "ms").toDate();
+      const obj2 = _modDef4352();
+      const addResult = _modDef4352().add(getClearAfterDurationDefault(clearAfter), "ms");
+      str2 = String(_modDef4352().add(getClearAfterDurationDefault(clearAfter), "ms").toDate().getTime());
+      const toDateResult = _modDef4352().add(getClearAfterDurationDefault(clearAfter), "ms").toDate();
     }
   }
   obj.expiresAtMs = str2;
@@ -58,9 +58,9 @@ export default function setCustomStatus(arg0) {
   }
   obj.emojiName = str5;
   if (createdAtMs == null) {
-    const obj5 = _modDef4348();
-    createdAtMs = _modDef4348().toDate().getTime();
-    const toDateResult1 = _modDef4348().toDate();
+    const obj5 = _modDef4352();
+    createdAtMs = _modDef4352().toDate().getTime();
+    const toDateResult1 = _modDef4352().toDate();
   }
   obj.createdAtMs = String(createdAtMs);
   const updateSettingResult = CustomStatusSetting2.updateSetting(obj);

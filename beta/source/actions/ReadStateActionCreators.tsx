@@ -1,15 +1,15 @@
-// Module ID: 7355
-// Function ID: 7356
+// Module ID: 7357
+// Function ID: 7358
 // Name: ReadStateActionCreators
-// Dependencies: [5723, 2045, 2041, 7356, 1372, 1074, 573, 11, 2]
+// Dependencies: [5725, 2049, 2045, 7358, 1376, 1078, 577, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 7355 (ReadStateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7356 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7357 (ReadStateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7358 */;
+import UserStore from "UserStore" /* 1376 */;
 
 function ack(channelId, location, arg2, arg3, messageId) {
   let flag = arg2;
@@ -59,8 +59,8 @@ function ackCategory(id, location, arg2, arg3) {
     }
   }
 }
-const isReadableType = fn(2045).isReadableType;
-const CURRENT_APP_CONTEXT = fn(1074).CURRENT_APP_CONTEXT;
+const isReadableType = fn(2049).isReadableType;
+const CURRENT_APP_CONTEXT = fn(1078).CURRENT_APP_CONTEXT;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/ReadStateActionCreators.tsx");
 
@@ -76,12 +76,12 @@ export const ackChannel = function ackChannel(channel, location) {
       const tmpResult = tmp(11);
       const fromTimestampResult = tmp(11).fromTimestamp(Date.now());
       const obj = { type: "CHANNEL_ACK", channelId: id, messageId: fromTimestampResult, immediate: true, force: true, context: CURRENT_APP_CONTEXT, location };
-      tmp(573).dispatch(obj);
-      const tmpResult3 = tmp(573);
+      tmp(577).dispatch(obj);
+      const tmpResult3 = tmp(577);
     } else {
       const obj2 = { type: "CHANNEL_ACK", channelId: id, messageId: "y", immediate: true, force: true, context: CURRENT_APP_CONTEXT, location };
-      tmp(573).dispatch(obj2);
-      const tmpResult4 = tmp(573);
+      tmp(577).dispatch(obj2);
+      const tmpResult4 = tmp(577);
     }
   }
 };

@@ -1,7 +1,6 @@
 // Module ID: 14559
 // Function ID: 14560
-// Dependencies: [14480, 14560]
-// Exports: getSupportedCalendars
+// Dependencies: [14560, 14561]
 
 // Module 14559
 const require = globalThis.__r;
@@ -9,25 +8,5 @@ const require = globalThis.__r;
 const require = arg1;
 const dependencyMap = arg6;
 
-export const getSupportedCalendars = function getSupportedCalendars(locale) {
-  _require = locale;
-  const calendars = require("module_14560").calendars;
-  return calendars.filter((item) => (function isSupportedCalendar(item, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
-    }
-    try {
-      const concat = "".concat;
-      const combined = "".concat(str, "-u-ca-");
-      const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(combined.concat(item));
-      if ("gregory" === item) {
-        if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
-          return false;
-        }
-      }
-      return true;
-    } catch (err) {
-    }
-  })(item, closure_0));
-};
+export const shouldPolyfill = require("module_14560").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

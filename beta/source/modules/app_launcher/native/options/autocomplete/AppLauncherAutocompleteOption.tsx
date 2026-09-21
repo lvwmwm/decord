@@ -1,28 +1,28 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12310
+// Function ID: 12311
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1074, 21, 4756, 576, 1875, 4723, 12424, 1980, 12422, 5339, 4752, 2]
+// Dependencies: [32, 19, 1078, 21, 4758, 580, 1879, 4725, 12311, 1984, 12308, 5341, 4754, 2]
 // Exports: default
 
-// Module 12423 (AppLauncherAutocompleteOption)
-import nativeDefault from "native" /* 576 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12422 */;
+// Module 12310 (AppLauncherAutocompleteOption)
+import nativeDefault from "native" /* 580 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import Pressables from "Pressables" /* 5341 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12308 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" }, hasError: null, inputText: null };
 let obj3 = { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
 obj2.hasError = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
 const obj4 = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
-obj2.inputText = { fontSize: 16, alignSelf: "center", fontFamily: fn(1074).Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.TEXT_DEFAULT };
+obj2.inputText = { fontSize: 16, alignSelf: "center", fontFamily: fn(1078).Fonts.PRIMARY_MEDIUM, color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_launcher/native/options/autocomplete/AppLauncherAutocompleteOption.tsx");
@@ -36,7 +36,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       tmp();
     }
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12424, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12311, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", {
       option,
       initChoice,
       onChoiceSelect(arg0) {

@@ -1,26 +1,399 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15390
+// Function ID: 15391
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [19, 17, 4805, 1074, 11741, 7954, 11767, 15402, 15292, 7942, 5664, 15301, 5084, 5089, 2]
-// Exports: default
+// Dependencies: [19, 17, 4807, 1078, 558, 568, 11610, 7959, 11636, 15391, 15281, 7947, 5666, 15290, 5086, 5091, 2]
 
-// Module 15401 (useVideoQuestPlayerAnalytics)
-import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
-import QuestTypes from "QuestTypes" /* 5664 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7942 */;
-import AnalyticsActions from "AnalyticsActions" /* 7954 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11767 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15292 */;
+// Module 15390 (useVideoQuestPlayerAnalytics)
+import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7947 */;
+import AnalyticsActions from "AnalyticsActions" /* 7959 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15281 */;
 import noop from "module_19" /* 19 */;
-import NetworkStore from "NetworkStore" /* 4805 */;
+import NetworkStore from "NetworkStore" /* 4807 */;
 
 require = fn;
 const AppState = fn(17).AppState;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoQuestPlayerAnalytics.tsx");
 
-export default function useVideoQuestPlayerAnalytics(duration) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((duration) => {
+  const cResult = duration(playerState[5]).c(91);
+  duration = duration.duration;
+  const isQuestCompleted = duration.isQuestCompleted;
+  playerState = duration.playerState;
+  const questId = duration.questId;
+  const sourceQuestContent = duration.sourceQuestContent;
+  const videoAssetId = duration.videoAssetId;
+  const videoSessionId = duration.videoSessionId;
+  closure_7 = questId.useRef(null);
+  questId.useRef(null);
+  let obj = duration(playerState[5]);
+  const questImpression = duration(playerState[6]).useQuestImpression();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u() {
+      closure_8.current = Date.now();
+    };
+    let items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp5 = fn;
+    tmp6 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const effect = obj2.useEffect(tmp5, tmp6);
+  if (cResult[2] === questImpression) {
+    if (cResult[3] === playerState) {
+      if (cResult[4] === questId) {
+        if (cResult[5] === sourceQuestContent) {
+          if (cResult[6] === videoSessionId) {
+            let tmp8 = cResult[7];
+            let tmp9 = cResult[8];
+          }
+          const effect1 = obj2.useEffect(tmp8, tmp9);
+          if (cResult[9] === duration) {
+            if (cResult[10] === questImpression) {
+              if (cResult[11] === isQuestCompleted) {
+                if (cResult[12] === questId) {
+                  if (cResult[13] === sourceQuestContent) {
+                    if (cResult[14] === videoAssetId) {
+                      if (cResult[15] === videoSessionId) {
+                        let tmp11 = cResult[16];
+                      }
+                      const _Symbol = Symbol;
+                      if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+                        const fn3 = function f() {
+                          return closure_7.current;
+                        };
+                        cResult[17] = fn3;
+                        let tmp13 = fn3;
+                      } else {
+                        tmp13 = cResult[17];
+                      }
+                      if (cResult[18] !== tmp11) {
+                        let obj4 = { getCurrentVideoTime: tmp13, onAnalytics: tmp11, emitIntervalMs: tmp(tmp2[9]).SEGMENT_ANALYTICS_EMIT_INTERVAL_MS, minSegmentDurationMs: tmp(tmp2[9]).SEGMENT_ANALYTICS_MIN_DURATION_MS };
+                        cResult[18] = tmp11;
+                        cResult[19] = obj4;
+                        let tmp14 = obj4;
+                      } else {
+                        tmp14 = cResult[19];
+                      }
+                      const tmp16 = isQuestCompleted(tmp2[9])(tmp14);
+                      const handlePlayerStateChange = tmp16.handlePlayerStateChange;
+                      const handleLoadEnd = tmp16.handleLoadEnd;
+                      const handleFirstFrame = tmp16.handleFirstFrame;
+                      const handleSeek = tmp16.handleSeek;
+                      if (cResult[20] === handlePlayerStateChange) {
+                        if (cResult[21] === playerState) {
+                          let tmp17 = cResult[22];
+                          let tmp18 = cResult[23];
+                        }
+                        const effect2 = obj2.useEffect(tmp17, tmp18);
+                        obj2.useRef(null);
+                        if (cResult[24] === handleFirstFrame) {
+                          if (cResult[25] === handleLoadEnd) {
+                            if (cResult[26] === questImpression) {
+                              if (cResult[27] === questId) {
+                                if (cResult[28] === sourceQuestContent) {
+                                  if (cResult[29] === videoAssetId) {
+                                    if (cResult[32] !== handlePlayerStateChange) {
+                                      class G {
+                                        constructor() {
+                                          tmp = handlePlayerStateChange(closure_0(closure_2[11]).VideoPlayerState.ENDED, null);
+                                          return;
+                                        }
+                                      }
+                                      cResult[32] = handlePlayerStateChange;
+                                      class Y {
+                                        constructor() {
+                                          closure_14.current = Date.now();
+                                          obj = closure_0(closure_2[7]);
+                                          obj1 = { questId, event: AnalyticEvents.QUEST_VIDEO_LOADING_STARTED, properties: null, sourceQuestContent: null };
+                                          obj5 = { video_asset_id: videoAssetId, network_connection_speed: closure_5.getEffectiveConnectionSpeed(), video_session_id: videoSessionId, is_hls_supported: true, impression_id: null };
+                                          obj4 = closure_9;
+                                          id = undefined;
+                                          if (closure_9 != null) {
+                                            id = obj4.getId();
+                                          }
+                                          obj5.impression_id = id;
+                                          obj1.properties = obj5;
+                                          obj1.sourceQuestContent = sourceQuestContent;
+                                          trackQuestEventResult = obj.trackQuestEvent(obj1);
+                                          return;
+                                        }
+                                      }
+                                      class F {
+                                        constructor() {
+                                          diff = null;
+                                          if (null != closure_14.current) {
+                                            tmp3 = globalThis;
+                                            _Date = Date;
+                                            diff = Date.now() - tmp.current;
+                                          }
+                                          tmp4 = handleLoadEnd(diff);
+                                          tmp5 = handleFirstFrame(0);
+                                          obj = closure_0(closure_2[7]);
+                                          obj1 = { questId, event: AnalyticEvents.QUEST_VIDEO_LOADING_ENDED, properties: null, sourceQuestContent: null };
+                                          obj5 = { video_asset_id: videoAssetId, network_connection_speed: closure_5.getEffectiveConnectionSpeed(), duration: diff, video_session_id: videoSessionId, impression_id: null };
+                                          obj4 = closure_9;
+                                          id = undefined;
+                                          if (closure_9 != null) {
+                                            id = obj4.getId();
+                                          }
+                                          obj5.impression_id = id;
+                                          obj1.properties = obj5;
+                                          obj1.sourceQuestContent = sourceQuestContent;
+                                          trackQuestEventResult = obj.trackQuestEvent(obj1);
+                                          return;
+                                        }
+                                      }
+                                    } else {
+                                      class G {
+                                        constructor() {
+                                          tmp = handlePlayerStateChange(closure_0(closure_2[11]).VideoPlayerState.ENDED, null);
+                                          return;
+                                        }
+                                      }
+                                    }
+                                    if (cResult[34] === questImpression) {
+                                      class G {
+                                        constructor() {
+                                          tmp = handlePlayerStateChange(closure_0(closure_2[11]).VideoPlayerState.ENDED, null);
+                                          return;
+                                        }
+                                      }
+                                    }
+                                    class Y {
+                                      constructor() {
+                                        closure_14.current = Date.now();
+                                        obj = closure_0(closure_2[7]);
+                                        obj1 = { questId, event: AnalyticEvents.QUEST_VIDEO_LOADING_STARTED, properties: null, sourceQuestContent: null };
+                                        obj5 = { video_asset_id: videoAssetId, network_connection_speed: closure_5.getEffectiveConnectionSpeed(), video_session_id: videoSessionId, is_hls_supported: true, impression_id: null };
+                                        obj4 = closure_9;
+                                        id = undefined;
+                                        if (closure_9 != null) {
+                                          id = obj4.getId();
+                                        }
+                                        obj5.impression_id = id;
+                                        obj1.properties = obj5;
+                                        obj1.sourceQuestContent = sourceQuestContent;
+                                        trackQuestEventResult = obj.trackQuestEvent(obj1);
+                                        return;
+                                      }
+                                    }
+                                    class F {
+                                      constructor() {
+                                        diff = null;
+                                        if (null != closure_14.current) {
+                                          tmp3 = globalThis;
+                                          _Date = Date;
+                                          diff = Date.now() - tmp.current;
+                                        }
+                                        tmp4 = handleLoadEnd(diff);
+                                        tmp5 = handleFirstFrame(0);
+                                        obj = closure_0(closure_2[7]);
+                                        obj1 = { questId, event: AnalyticEvents.QUEST_VIDEO_LOADING_ENDED, properties: null, sourceQuestContent: null };
+                                        obj5 = { video_asset_id: videoAssetId, network_connection_speed: closure_5.getEffectiveConnectionSpeed(), duration: diff, video_session_id: videoSessionId, impression_id: null };
+                                        obj4 = closure_9;
+                                        id = undefined;
+                                        if (closure_9 != null) {
+                                          id = obj4.getId();
+                                        }
+                                        obj5.impression_id = id;
+                                        obj1.properties = obj5;
+                                        obj1.sourceQuestContent = sourceQuestContent;
+                                        trackQuestEventResult = obj.trackQuestEvent(obj1);
+                                        return;
+                                      }
+                                    }
+                                    cResult[34] = questImpression;
+                                    cResult[35] = questId;
+                                    cResult[36] = sourceQuestContent;
+                                    cResult[37] = videoAssetId;
+                                    cResult[38] = videoSessionId;
+                                    cResult[39] = Y;
+                                    class V {
+                                      constructor() {
+                                        tmp = playerState;
+                                        tmp2 = closure_0;
+                                        tmp3 = closure_2;
+                                        if (closure_0(closure_2[10]).PlayerState.PLAYING === playerState) {
+                                          tmp10 = handlePlayerStateChange;
+                                          tmp11 = null;
+                                          tmp12 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PLAYING, null);
+                                        } else if (tmp2(tmp3[10]).PlayerState.PAUSED === tmp) {
+                                          tmp7 = handlePlayerStateChange;
+                                          tmp8 = null;
+                                          tmp9 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PAUSED, null);
+                                        } else if (tmp2(tmp3[10]).PlayerState.ENDED === tmp) {
+                                          tmp4 = handlePlayerStateChange;
+                                          tmp5 = null;
+                                          tmp6 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.ENDED, null);
+                                        } else if (tmp2(tmp3[10]).PlayerState.ERRORED === tmp) {
+                                          tmp13 = handlePlayerStateChange;
+                                          tmp14 = null;
+                                          tmp15 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PAUSED, null);
+                                        }
+                                        return;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                        class F {
+                          constructor() {
+                            diff = null;
+                            if (null != closure_14.current) {
+                              tmp3 = globalThis;
+                              _Date = Date;
+                              diff = Date.now() - tmp.current;
+                            }
+                            tmp4 = handleLoadEnd(diff);
+                            tmp5 = handleFirstFrame(0);
+                            obj = closure_0(closure_2[7]);
+                            obj1 = { questId, event: AnalyticEvents.QUEST_VIDEO_LOADING_ENDED, properties: null, sourceQuestContent: null };
+                            obj5 = { video_asset_id: videoAssetId, network_connection_speed: closure_5.getEffectiveConnectionSpeed(), duration: diff, video_session_id: videoSessionId, impression_id: null };
+                            obj4 = closure_9;
+                            id = undefined;
+                            if (closure_9 != null) {
+                              id = obj4.getId();
+                            }
+                            obj5.impression_id = id;
+                            obj1.properties = obj5;
+                            obj1.sourceQuestContent = sourceQuestContent;
+                            trackQuestEventResult = obj.trackQuestEvent(obj1);
+                            return;
+                          }
+                        }
+                        cResult[24] = handleFirstFrame;
+                        cResult[25] = handleLoadEnd;
+                        cResult[26] = questImpression;
+                        cResult[27] = questId;
+                        cResult[28] = sourceQuestContent;
+                        class V {
+                          constructor() {
+                            tmp = playerState;
+                            tmp2 = closure_0;
+                            tmp3 = closure_2;
+                            if (closure_0(closure_2[10]).PlayerState.PLAYING === playerState) {
+                              tmp10 = handlePlayerStateChange;
+                              tmp11 = null;
+                              tmp12 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PLAYING, null);
+                            } else if (tmp2(tmp3[10]).PlayerState.PAUSED === tmp) {
+                              tmp7 = handlePlayerStateChange;
+                              tmp8 = null;
+                              tmp9 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PAUSED, null);
+                            } else if (tmp2(tmp3[10]).PlayerState.ENDED === tmp) {
+                              tmp4 = handlePlayerStateChange;
+                              tmp5 = null;
+                              tmp6 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.ENDED, null);
+                            } else if (tmp2(tmp3[10]).PlayerState.ERRORED === tmp) {
+                              tmp13 = handlePlayerStateChange;
+                              tmp14 = null;
+                              tmp15 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PAUSED, null);
+                            }
+                            return;
+                          }
+                        }
+                        cResult[30] = videoSessionId;
+                        cResult[31] = F;
+                      }
+                      class V {
+                        constructor() {
+                          tmp = playerState;
+                          tmp2 = closure_0;
+                          tmp3 = closure_2;
+                          if (closure_0(closure_2[10]).PlayerState.PLAYING === playerState) {
+                            tmp10 = handlePlayerStateChange;
+                            tmp11 = null;
+                            tmp12 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PLAYING, null);
+                          } else if (tmp2(tmp3[10]).PlayerState.PAUSED === tmp) {
+                            tmp7 = handlePlayerStateChange;
+                            tmp8 = null;
+                            tmp9 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PAUSED, null);
+                          } else if (tmp2(tmp3[10]).PlayerState.ENDED === tmp) {
+                            tmp4 = handlePlayerStateChange;
+                            tmp5 = null;
+                            tmp6 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.ENDED, null);
+                          } else if (tmp2(tmp3[10]).PlayerState.ERRORED === tmp) {
+                            tmp13 = handlePlayerStateChange;
+                            tmp14 = null;
+                            tmp15 = handlePlayerStateChange(tmp2(tmp3[11]).VideoPlayerState.PAUSED, null);
+                          }
+                          return;
+                        }
+                      }
+                      const items1 = [playerState, handlePlayerStateChange];
+                      cResult[20] = handlePlayerStateChange;
+                      cResult[21] = playerState;
+                      cResult[22] = V;
+                      cResult[23] = items1;
+                      tmp18 = items1;
+                      tmp17 = V;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          cResult[9] = duration;
+          cResult[10] = questImpression;
+          cResult[11] = isQuestCompleted;
+          cResult[12] = questId;
+          cResult[13] = sourceQuestContent;
+          cResult[14] = videoAssetId;
+          cResult[15] = videoSessionId;
+          cResult[16] = tmp12;
+          tmp11 = tmp12;
+        }
+      }
+    }
+  }
+  const fn2 = function l() {
+    closure_0 = sourceQuestContent.addEventListener("change", (event) => {
+      if (null != ref.current) {
+        const obj4 = { questId, event: null, properties: null, sourceQuestContent: null };
+        if ("active" === event) {
+          let QUEST_VIDEO_APP_UNFOCUSED = videoSessionId.QUEST_VIDEO_APP_FOCUSED;
+        } else {
+          QUEST_VIDEO_APP_UNFOCUSED = videoSessionId.QUEST_VIDEO_APP_UNFOCUSED;
+        }
+        obj4.event = QUEST_VIDEO_APP_UNFOCUSED;
+        const obj = { video_timestamp_seconds: tmp.current, video_state, video_session_id, impression_id: null };
+        let id;
+        if (questImpression != null) {
+          id = obj2.getId();
+        }
+        obj.impression_id = id;
+        obj4.properties = obj;
+        obj4.sourceQuestContent = sourceQuestContent;
+        duration(playerState[7]).trackQuestEvent(obj4);
+        obj2 = questImpression;
+        const obj3 = duration(playerState[7]);
+      }
+    });
+    return () => {
+      closure_0.remove();
+    };
+  };
+  const items2 = [questId, videoSessionId, playerState, questImpression, sourceQuestContent];
+  cResult[2] = questImpression;
+  cResult[3] = playerState;
+  cResult[4] = questId;
+  cResult[5] = sourceQuestContent;
+  cResult[6] = videoSessionId;
+  cResult[7] = fn2;
+  cResult[8] = items2;
+  tmp9 = items2;
+  tmp8 = fn2;
+}) : ((duration) => {
   duration = duration.duration;
   const isQuestCompleted = duration.isQuestCompleted;
   const playerState = duration.playerState;
@@ -30,7 +403,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   const videoSessionId = duration.videoSessionId;
   closure_7 = questId.useRef(null);
   questId.useRef(null);
-  const questImpression = duration(playerState[4]).useQuestImpression();
+  const questImpression = duration(playerState[6]).useQuestImpression();
   const effect = questId.useEffect(() => {
     closure_8.current = Date.now();
   }, []);
@@ -53,9 +426,9 @@ export default function useVideoQuestPlayerAnalytics(duration) {
         obj.impression_id = id;
         obj4.properties = obj;
         obj4.sourceQuestContent = sourceQuestContent;
-        duration(playerState[5]).trackQuestEvent(obj4);
+        duration(playerState[7]).trackQuestEvent(obj4);
         obj2 = questImpression;
-        const obj3 = duration(playerState[5]);
+        const obj3 = duration(playerState[7]);
       }
     });
     return () => {
@@ -87,10 +460,10 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   }, items1);
   const callback1 = questId.useCallback(() => closure_7.current, []);
   let obj2 = { getCurrentVideoTime: callback1, onAnalytics: callback, emitIntervalMs: null, minSegmentDurationMs: null };
-  let obj = duration(playerState[4]);
-  obj2.emitIntervalMs = duration(playerState[7]).SEGMENT_ANALYTICS_EMIT_INTERVAL_MS;
-  obj2.minSegmentDurationMs = duration(playerState[7]).SEGMENT_ANALYTICS_MIN_DURATION_MS;
-  const tmp6Result = isQuestCompleted(playerState[7])(obj2);
+  let obj = duration(playerState[6]);
+  obj2.emitIntervalMs = duration(playerState[9]).SEGMENT_ANALYTICS_EMIT_INTERVAL_MS;
+  obj2.minSegmentDurationMs = duration(playerState[9]).SEGMENT_ANALYTICS_MIN_DURATION_MS;
+  const tmp6Result = isQuestCompleted(playerState[9])(obj2);
   const handlePlayerStateChange = tmp6Result.handlePlayerStateChange;
   const handleLoadEnd = tmp6Result.handleLoadEnd;
   const handleFirstFrame = tmp6Result.handleFirstFrame;
@@ -98,13 +471,13 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   const items2 = [playerState, handlePlayerStateChange];
   const effect2 = questId.useEffect(() => {
     if (AdsVideoTypes.PlayerState.PLAYING === playerState) {
-      handlePlayerStateChange(tmp2(7942).VideoPlayerState.PLAYING, null);
-    } else if (tmp2(15292).PlayerState.PAUSED === tmp) {
-      handlePlayerStateChange(tmp2(7942).VideoPlayerState.PAUSED, null);
-    } else if (tmp2(15292).PlayerState.ENDED === tmp) {
-      handlePlayerStateChange(tmp2(7942).VideoPlayerState.ENDED, null);
-    } else if (tmp2(15292).PlayerState.ERRORED === tmp) {
-      handlePlayerStateChange(tmp2(7942).VideoPlayerState.PAUSED, null);
+      handlePlayerStateChange(tmp2(7947).VideoPlayerState.PLAYING, null);
+    } else if (tmp2(15281).PlayerState.PAUSED === tmp) {
+      handlePlayerStateChange(tmp2(7947).VideoPlayerState.PAUSED, null);
+    } else if (tmp2(15281).PlayerState.ENDED === tmp) {
+      handlePlayerStateChange(tmp2(7947).VideoPlayerState.ENDED, null);
+    } else if (tmp2(15281).PlayerState.ERRORED === tmp) {
+      handlePlayerStateChange(tmp2(7947).VideoPlayerState.PAUSED, null);
     }
   }, items2);
   questId.useRef(null);
@@ -269,7 +642,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
     obj.trackQuestEvent(obj2);
     obj5 = questImpression;
     if (tmpResult.isSourceError(error)) {
-      const obj6 = { name: tmp(5089).MetricEvents.QUEST_VIDEO_ERROR, tags: null };
+      const obj6 = { name: tmp(5091).MetricEvents.QUEST_VIDEO_ERROR, tags: null };
       const _HermesInternal = HermesInternal;
       const items = ["quest_id:" + tmp3, "error_type:SOURCE_ERROR"];
       obj6.tags = items;
@@ -313,4 +686,4 @@ export default function useVideoQuestPlayerAnalytics(duration) {
     }
   }, items12);
   return obj3;
-};
+});

@@ -1,16 +1,16 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 11097
+// Function ID: 11098
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9066, 7473, 1074, 1091, 573, 7471, 9133, 1271, 2009, 559, 2]
+// Dependencies: [5, 9064, 7475, 1078, 1095, 577, 7473, 9131, 1275, 2013, 561, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 11060 (SocialLayerStorefrontActionCreators)
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 11097 (SocialLayerStorefrontActionCreators)
+import BackoffDefault from "Backoff" /* 561 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9066 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7473 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9064 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7475 */;
 
 const require = globalThis.__r;
 
@@ -36,7 +36,7 @@ let closure_13 = async function _fetchSocialLayerStorefront2(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -77,7 +77,7 @@ let closure_13 = async function _fetchSocialLayerStorefront2(arg0, value) {
           closure_132_17 = undefined;
           c8 = 1;
           c9 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -102,7 +102,7 @@ let closure_13 = async function _fetchSocialLayerStorefront2(arg0, value) {
             }
             closure_132_6 = tmp59;
             storefrontFetchState = closure_133_5.getStorefrontFetchState(closure_132_0);
-            let state;
+            state = undefined;
             if (storefrontFetchState != null) {
               state = storefrontFetchState.state;
             }
@@ -272,7 +272,7 @@ let closure_15 = async function _fetchSocialLayerStorefrontSkuWithUrl2(arg0, val
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -307,7 +307,7 @@ let closure_15 = async function _fetchSocialLayerStorefrontSkuWithUrl2(arg0, val
           let storefront_metadata;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -428,7 +428,7 @@ let closure_22 = async function _fetchSocialLayerStorefrontEntries(arg0, value) 
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -448,7 +448,7 @@ let closure_22 = async function _fetchSocialLayerStorefrontEntries(arg0, value) 
           closure_129_1 = undefined;
           let body;
           storefrontEntries = storefrontEntries.getStorefrontEntries(closure_0);
-          let state;
+          state = undefined;
           if (storefrontEntries != null) {
             state = storefrontEntries.state;
           }
@@ -527,7 +527,7 @@ let closure_23 = async function _fetchSocialLayerStorefrontById(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -550,7 +550,7 @@ let closure_23 = async function _fetchSocialLayerStorefrontById(arg0, value) {
           let body;
           closure_131_5 = undefined;
           storefrontById = storefrontById.getStorefrontById(closure_1);
-          let state;
+          state = undefined;
           if (storefrontById != null) {
             state = storefrontById.state;
           }
@@ -703,7 +703,7 @@ let closure_26 = async function _fetchSocialLayerStorefrontConfig(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -900,7 +900,7 @@ let closure_27 = async function _fetchSocialLayerStorefrontLaunchAnnouncement() 
   }
   return arg1;
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 let closure_7 = 30 * DurationsDefault.Millis.SECOND;
 let closure_8 = 30 * DurationsDefault.Millis.MINUTE;
 let closure_9 = 60 * DurationsDefault.Millis.MINUTE;

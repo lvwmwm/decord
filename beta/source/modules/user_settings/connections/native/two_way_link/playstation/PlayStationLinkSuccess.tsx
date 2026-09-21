@@ -1,16 +1,16 @@
-// Module ID: 9382
-// Function ID: 9383
+// Module ID: 9380
+// Function ID: 9381
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 4756, 9351, 9367, 4752, 1115, 7368, 5186, 2]
-// Exports: PlayStationLinkSuccess
+// Dependencies: [19, 17, 21, 4758, 558, 568, 9349, 9365, 1119, 4754, 5188, 7371, 2]
 
-// Module 9382 (PlayStationLinkSuccess)
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9351 */;
-import _modDef9367 from "module_9367" /* 9367 */;
+// Module 9380 (PlayStationLinkSuccess)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9349 */;
+import _modDef9365 from "module_9365" /* 9365 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,17 +18,151 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_8 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
 
-export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
+export const PlayStationLinkSuccess = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+  const cResult = c.c(27);
+  onClose = onClose.onClose;
+  const tmp4 = closure_8();
+  const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { uri: _modDef9365 };
+    cResult[0] = obj3;
+    let first = obj3;
+  } else {
+    first = cResult[0];
+  }
+  ({ container, content } = twoWayLinkStyles);
+  if (cResult[1] !== tmp4.image) {
+    const obj4 = { source: first, style: tmp4.image };
+    const tmp11 = timestampProducer(React4, obj4);
+    cResult[1] = tmp4.image;
+    cResult[2] = tmp11;
+    let tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.e6SOl0);
+    cResult[3] = stringResult;
+    let tmp12 = stringResult;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] !== twoWayLinkStyles.title) {
+    const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: tmp12 };
+    const tmp16 = timestampProducer(tmp(4754).Text, obj5);
+    cResult[4] = twoWayLinkStyles.title;
+    cResult[5] = tmp16;
+    let tmp14 = tmp16;
+  } else {
+    tmp14 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t.QjAZAQ);
+    cResult[6] = stringResult1;
+    let tmp17 = stringResult1;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] !== twoWayLinkStyles.body) {
+    const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: tmp17 };
+    const tmp21 = timestampProducer(tmp(4754).Text, obj6);
+    cResult[7] = twoWayLinkStyles.body;
+    cResult[8] = tmp21;
+    let tmp19 = tmp21;
+  } else {
+    tmp19 = cResult[8];
+  }
+  if (cResult[9] === twoWayLinkStyles.content) {
+    if (cResult[10] === tmp19) {
+      if (cResult[11] === tmp8) {
+        if (cResult[12] === tmp14) {
+          let tmp22 = cResult[13];
+        }
+        const _Symbol = Symbol;
+        ({ footerContainer, footerButton } = twoWayLinkStyles);
+        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl3 = tmp(1119).intl;
+          const stringResult2 = intl3.string(tmp(1119).t.i4jeWR);
+          cResult[14] = stringResult2;
+          let tmp24 = stringResult2;
+        } else {
+          tmp24 = cResult[14];
+        }
+        if (cResult[15] !== onClose) {
+          const obj7 = { size: "md", text: tmp24, onPress: onClose };
+          const tmp28 = timestampProducer(tmp(5188).Button, obj7);
+          cResult[15] = onClose;
+          cResult[16] = tmp28;
+          let tmp26 = tmp28;
+        } else {
+          tmp26 = cResult[16];
+        }
+        if (cResult[17] === twoWayLinkStyles.footerButton) {
+          if (cResult[18] === tmp26) {
+            let tmp29 = cResult[19];
+          }
+          if (cResult[20] === twoWayLinkStyles.footerContainer) {
+            if (cResult[21] === tmp29) {
+              let tmp33 = cResult[22];
+            }
+            if (cResult[23] === twoWayLinkStyles.container) {
+              if (cResult[24] === tmp22) {
+                if (cResult[25] === tmp33) {
+                  let tmp36 = cResult[26];
+                }
+                return tmp36;
+              }
+            }
+            const obj8 = { style: container, children: null };
+            const items = [tmp22, tmp33];
+            obj8.children = items;
+            const tmp39 = React5(hasOwnProperty, obj8);
+            cResult[23] = twoWayLinkStyles.container;
+            cResult[24] = tmp22;
+            cResult[25] = tmp33;
+            cResult[26] = tmp39;
+            tmp36 = tmp39;
+          }
+          const obj9 = { bottom: true, style: footerContainer, children: tmp29 };
+          const tmp35 = timestampProducer(tmp(7371).SafeAreaPaddingView, obj9);
+          cResult[20] = twoWayLinkStyles.footerContainer;
+          cResult[21] = tmp29;
+          cResult[22] = tmp35;
+          tmp33 = tmp35;
+        }
+        const obj10 = { style: footerButton, children: tmp26 };
+        const tmp32 = timestampProducer(hasOwnProperty, obj10);
+        cResult[17] = twoWayLinkStyles.footerButton;
+        cResult[18] = tmp26;
+        cResult[19] = tmp32;
+        tmp29 = tmp32;
+      }
+    }
+  }
+  const obj11 = { style: content, children: null };
+  const items1 = [tmp8, tmp14, tmp19];
+  obj11.children = items1;
+  const tmp23 = React5(hasOwnProperty, obj11);
+  cResult[9] = twoWayLinkStyles.content;
+  cResult[10] = tmp19;
+  cResult[11] = tmp8;
+  cResult[12] = tmp14;
+  cResult[13] = tmp23;
+  tmp22 = tmp23;
+}) : ((onClose) => {
   const tmp = closure_8();
   const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
   const obj2 = { style: twoWayLinkStyles.container, children: null };
   const obj3 = { style: twoWayLinkStyles.content, children: null };
-  const items = [timestampProducer(React4, { source: noop.useMemo(() => ({ uri: _modDef9367 }), []), style: tmp.image }), , ];
+  const items = [timestampProducer(React4, { source: noop.useMemo(() => ({ uri: _modDef9365 }), []), style: tmp.image }), , ];
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = util.intl;
   obj5.children = intl.string(util.t.e6SOl0);
@@ -50,4 +184,4 @@ export const PlayStationLinkSuccess = function PlayStationLinkSuccess(onClose) {
   items1[1] = timestampProducer(common_SafeAreaView.SafeAreaPaddingView, obj7);
   obj2.children = items1;
   return React5(hasOwnProperty, obj2);
-};
+});

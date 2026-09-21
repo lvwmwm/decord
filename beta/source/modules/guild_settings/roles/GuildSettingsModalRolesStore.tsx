@@ -1,17 +1,17 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18041
+// Function ID: 18042
 // Name: GuildSettingsModalRolesStore
-// Dependencies: [2099, 2063, 1074, 12670, 4607, 1115, 1086, 504, 573, 2]
+// Dependencies: [2103, 2067, 1078, 12565, 4610, 1119, 1090, 504, 577, 2]
 
-// Module 18038 (GuildSettingsModalRolesStore)
+// Module 18041 (GuildSettingsModalRolesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import util from "util" /* 1115 */;
-import shared from "shared" /* 4607 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12670 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import util from "util" /* 1119 */;
+import shared from "shared" /* 4610 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12565 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 function handleGuildRoleCreateOrUpdate(arg0) {
@@ -20,7 +20,7 @@ function handleGuildRoleCreateOrUpdate(arg0) {
     c9 = sortedRoles.map((id) => id.id);
   }
 }
-const FormStates = fn(1074).FormStates;
+const FormStates = fn(1078).FormStates;
 let OPEN = FormStates.CLOSED;
 let c8 = false;
 let c9 = null;
@@ -100,7 +100,7 @@ const guildSettingsModalRolesStore = new GuildSettingsModalRolesStore(Dispatcher
     c8 = true;
     const sortedRoles = GuildRoleStore.getSortedRoles(guildId);
     c9 = sortedRoles.map((id) => id.id);
-    const guild = GuildStore.getGuild(guildId);
+    guild = GuildStore.getGuild(guildId);
     clearTimeout(closure_15);
   },
   GUILD_SETTINGS_MODAL_ROLES_STOP_REORDER: function handleStopReorder() {
@@ -144,7 +144,7 @@ const guildSettingsModalRolesStore = new GuildSettingsModalRolesStore(Dispatcher
     }
   },
   GUILD_SETTINGS_MODAL_ROLES_PERMISSIONS_START_EDITING: function handleStartEditingPermissions(guildId) {
-    const guild = GuildStore.getGuild(guildId.guildId);
+    guild = GuildStore.getGuild(guildId.guildId);
     _null2 = guild;
     let role;
     if (null != guild) {

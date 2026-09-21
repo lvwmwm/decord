@@ -1,13 +1,13 @@
-// Module ID: 13696
-// Function ID: 13697
+// Module ID: 13699
+// Function ID: 13700
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 7784, 7783, 11345, 2]
+// Dependencies: [5, 7789, 7788, 11376, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 13696 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7783 */;
+// Module 13699 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
 
 require = fn;
 let closure_5 = async function _showMarketingMomentRewardScreen(arg0, value) {
@@ -21,7 +21,7 @@ let closure_5 = async function _showMarketingMomentRewardScreen(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -59,7 +59,7 @@ let closure_5 = async function _showMarketingMomentRewardScreen(arg0, value) {
           const obj = closure_130_1(closure_130_2[3]);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp21) {
       c4 = tmp;

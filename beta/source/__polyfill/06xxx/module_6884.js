@@ -1,20 +1,15 @@
 // Module ID: 6884
 // Function ID: 6885
-// Dependencies: [19, 6880]
-// Exports: useBottomSheetModalInternal
+// Dependencies: []
+// Exports: enableLogging, print
 
 // Module 6884
-import _mod19 from "module_19" /* 19 */;
-import BottomSheetContext from "BottomSheetContext" /* 6880 */;
+function print() {
 
-const useContext = _mod19.useContext;
+}
+const frozen = Object.freeze(print);
 
-export const useBottomSheetModalInternal = function useBottomSheetModalInternal(arg0) {
-  const tmp = useContext(BottomSheetContext.BottomSheetModalInternalContext);
-  if (true !== arg0) {
-    if (null === tmp) {
-      throw "'BottomSheetModalInternalContext' cannot be null!";
-    }
-  }
-  return tmp;
+export { print };
+export const enableLogging = (arg0) => {
+  console.warn("[BottomSheet] could not enable logging on production!");
 };

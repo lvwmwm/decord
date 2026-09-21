@@ -1,145 +1,195 @@
 // Module ID: 13057
 // Function ID: 13058
-// Dependencies: []
-// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
+// Dependencies: [13050, 13056]
+// Exports: getComponentName, getDomElement, getLocationHref, htmlTreeAsString
 
 // Module 13057
-function isInstanceOf(arg0, arg1) {
-  try {
-    return arg0 instanceof arg1;
-  } catch (err) {
-    return false;
-  }
-}
+import _mod13050 from "module_13050" /* 13050 */;
 
-export const isDOMError = function isDOMError(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMError" + "]";
-};
-export const isDOMException = function isDOMException(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMException" + "]";
-};
-export const isElement = function isElement(arg0) {
-  let tmp = typeof globalThis.Element !== "undefined";
-  if (typeof globalThis.Element !== "undefined") {
-    tmp = isInstanceOf(arg0, globalThis.Element);
-  }
-  return tmp;
-};
-export const isError = function isError(arg0) {
-  const call = toString.call;
-  const tmp2 = typeof call === "unknown" ? toString() : call(arg0);
-  if ("[object Error]" !== tmp2) {
-    if ("[object Exception]" !== tmp2) {
-      if ("[object DOMException]" !== tmp2) {
-        if ("[object WebAssembly.Exception]" !== tmp2) {
-          const _Error = Error;
-          return isInstanceOf(arg0, Error);
+require = arg1;
+const dependencyMap = arg6;
+function _htmlElementAsString(tagName, arr) {
+  let items = [];
+  if (tagName) {
+    if (tagName.tagName) {
+      if (_mod13050.GLOBAL_OBJ.HTMLElement) {
+        if (tagName instanceof globalThis.HTMLElement) {
+          if (tagName.dataset) {
+            const dataset = tagName.dataset;
+            if (tagName.dataset.sentryComponent) {
+              return dataset.sentryComponent;
+            } else if (dataset.sentryElement) {
+              return tagName.dataset.sentryElement;
+            }
+          }
         }
       }
+      items.push(tagName.tagName.toLowerCase());
+      let mapped = null;
+      if (arr) {
+        mapped = null;
+        if (arr.length) {
+          const found = arr.filter((item) => tagName.getAttribute(item));
+          mapped = found.map((item) => {
+            items = [item, tagName.getAttribute(item)];
+            return items;
+          });
+        }
+      }
+      if (mapped) {
+        if (mapped.length) {
+          const item = mapped.forEach((item) => {
+            items.push("[" + item[0] + "=\"" + item[1] + "\"]");
+          });
+        }
+        const items1 = ["aria-label", "type", "name", "title", "alt"];
+        const iter = items1[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp22 = nextResult;
+          let attr = tagName.getAttribute(nextResult);
+          if (attr) {
+            let _HermesInternal3 = HermesInternal;
+            let str8 = "[";
+            let str9 = "=\"";
+            let str10 = "\"]";
+            let arr2 = items.push("[" + tmp22 + "=\"" + tmp24 + "\"]");
+          }
+          continue;
+        }
+        return items.join("");
+      }
+      if (tagName.id) {
+        const _HermesInternal = HermesInternal;
+        items.push("#" + tagName.id);
+      }
+      if (tagName.className) {
+        if (tmpResult.isString(str3)) {
+          const parts = str3.split(/\s+/);
+          const tmp11 = parts[Symbol.iterator]();
+          while (tmp11 !== undefined) {
+            let _HermesInternal2 = HermesInternal;
+            let arr7 = items.push("." + tmp14);
+            continue;
+          }
+        }
+        tmpResult = tmp(13056);
+      }
+      tmp = require;
     }
   }
-  return true;
-};
-export const isErrorEvent = function isErrorEvent(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "ErrorEvent" + "]";
-};
-export const isEvent = function isEvent(arg0) {
-  let tmp = typeof Event !== "undefined";
-  if (typeof Event !== "undefined") {
-    const _Event = Event;
-    tmp = isInstanceOf(arg0, Event);
-  }
-  return tmp;
-};
-export { isInstanceOf };
-export const isParameterizedString = function isParameterizedString(obj) {
-  let tmp = typeof obj === "object";
-  if (typeof obj === "object") {
-    tmp = null !== obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_string__" in obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_values__" in obj;
-  }
-  return tmp;
-};
-export const isPlainObject = function isPlainObject(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
-};
-export const isPrimitive = function isPrimitive(obj) {
-  let tmp = null === obj;
-  if (!tmp) {
-    let tmp2 = typeof obj === "object";
-    if (typeof obj === "object") {
-      tmp2 = null !== obj;
+  return "";
+}
+
+export const getComponentName = function getComponentName(arg0) {
+  let parentNode = arg0;
+  let num = 0;
+  if (_mod13050.GLOBAL_OBJ.HTMLElement) {
+    while (parentNode) {
+      if (parentNode instanceof globalThis.HTMLElement) {
+        let dataset = parentNode.dataset;
+        if (parentNode.dataset.sentryComponent) {
+          return dataset.sentryComponent;
+        } else if (dataset.sentryElement) {
+          return parentNode.dataset.sentryElement;
+        }
+      }
+      parentNode = parentNode.parentNode;
+      num = num + 1;
+      if (num < 5) {
+        continue;
+      } else {
+        return null;
+      }
     }
-    if (tmp2) {
-      tmp2 = "__sentry_template_string__" in obj;
+    return null;
+  } else {
+    return null;
+  }
+};
+export const getDomElement = function getDomElement(arg0) {
+  let element = null;
+  if (_mod13050.GLOBAL_OBJ.document) {
+    element = null;
+    if (tmp(13050).GLOBAL_OBJ.document.querySelector) {
+      const _document = tmp(13050).GLOBAL_OBJ.document;
+      element = _document.querySelector(arg0);
     }
-    if (tmp2) {
-      tmp2 = "__sentry_template_values__" in obj;
-    }
-    tmp = tmp2;
   }
-  if (!tmp) {
-    let tmp3 = typeof obj !== "object";
-    if (typeof obj !== "object") {
-      tmp3 = typeof obj !== "function";
-    }
-    tmp = tmp3;
-  }
-  return tmp;
+  return element;
 };
-export const isRegExp = function isRegExp(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "RegExp" + "]";
-};
-export const isString = function isString(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "String" + "]";
-};
-export const isSyntheticEvent = function isSyntheticEvent(arg0) {
-  const call = toString.call;
-  let tmp3 = (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
-  if (tmp3) {
-    tmp3 = "nativeEvent" in arg0;
+export const getLocationHref = function getLocationHref() {
+  try {
+    return _mod13050.GLOBAL_OBJ.document.location.href;
+  } catch (err) {
+    return "";
   }
-  if (tmp3) {
-    tmp3 = "preventDefault" in arg0;
-  }
-  if (tmp3) {
-    tmp3 = "stopPropagation" in arg0;
-  }
-  return tmp3;
 };
-export const isThenable = function isThenable(arg0) {
-  let then = arg0;
+export const htmlTreeAsString = function htmlTreeAsString(arg0) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
   if (arg0) {
-    then = arg0.then;
-  }
-  if (then) {
-    then = typeof arg0.then === "function";
-  }
-  return Boolean(then);
-};
-export const isVueViewModel = function isVueViewModel(__isVue) {
-  let tmp = typeof __isVue !== "object";
-  if (typeof __isVue === "object") {
-    tmp = null === __isVue;
-  }
-  if (!tmp) {
-    __isVue = __isVue.__isVue;
-    let tmp2 = !__isVue;
-    if (!__isVue) {
-      tmp2 = !__isVue._isVue;
+    try {
+      let tmp = arg0;
+      const items = [];
+      let num2 = 0;
+      const _Array = Array;
+      let keyAttrs = obj;
+      if (!Array.isArray(obj)) {
+        keyAttrs = obj.keyAttrs;
+      }
+      const _Array2 = Array;
+      const isArray = Array.isArray(obj);
+      let num3 = !isArray;
+      if (!isArray) {
+        num3 = obj.maxStringLength;
+      }
+      if (!num3) {
+        num3 = 80;
+      }
+      if (tmp) {
+        let sum = tmp7 + 1;
+        if (+0 < 5) {
+          const tmp33 = _htmlElementAsString(tmp, tmp3);
+          let arr2 = tmp33;
+          if ("html" !== tmp33) {
+            if (sum <= 1) {
+              items.push(arr2);
+              num2 = num2 + arr2.length;
+              const parentNode = tmp.parentNode;
+              tmp = parentNode;
+              while (parentNode) {
+                let tmp19 = +sum;
+                sum = tmp19 + 1;
+                if (tmp19 >= 5) {
+                  break;
+                } else {
+                  let tmp23 = _htmlElementAsString(tmp, tmp3);
+                  arr2 = tmp23;
+                  if ("html" === tmp23) {
+                    break;
+                  } else {
+                    if (sum <= 1) {
+                      continue;
+                    } else if (num2 + 3 * items.length + arr2.length >= tmp5) {
+                      break;
+                    }
+                    continue;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      const reversed = items.reverse();
+      return reversed.join(" > ");
+    } catch (err) {
+      return "<unknown>";
     }
-    tmp = tmp2;
+  } else {
+    return "<unknown>";
   }
-  return !tmp;
 };

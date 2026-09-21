@@ -1,23 +1,23 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14026
+// Function ID: 14027
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [4671, 7895, 2045, 2041, 6836, 5726, 2105, 2063, 4405, 1372, 1074, 2009, 4600, 10095, 504, 573, 2]
+// Dependencies: [4674, 7900, 2049, 2045, 6834, 5728, 2109, 2067, 4409, 1376, 1078, 2013, 4603, 10074, 504, 577, 2]
 
-// Module 14023 (PrivateChannelRecipientsInviteStore)
+// Module 14026 (PrivateChannelRecipientsInviteStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import StringUtils from "StringUtils" /* 2009 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 10095 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ConsentStore from "ConsentStore" /* 6836 */;
-import FrecencyStore from "FrecencyStore" /* 5726 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import StringUtils from "StringUtils" /* 2013 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10074 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import ConsentStore from "ConsentStore" /* 6834 */;
+import FrecencyStore from "FrecencyStore" /* 5728 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function performQuery() {
@@ -187,7 +187,7 @@ function parseUserResults(results) {
   }
 }
 function handleModalActionSheetOpen(key) {
-  if (key.key !== closure_1_14) {
+  if (key.key !== state) {
     return false;
   } else {
     c15 = true;
@@ -204,7 +204,7 @@ function handleModalActionSheetOpen(key) {
   }
 }
 function handleActionSheetDismiss(key) {
-  if (key.key !== closure_1_14) {
+  if (key.key !== state) {
     return false;
   } else {
     if (null != closure_3) {
@@ -224,8 +224,8 @@ function handleActionSheetDismiss(key) {
 function performQueryOnAffinityChange() {
   return false;
 }
-const PrivateChannelRecord = fn(2045).PrivateChannelRecord;
-const Constants = fn(1074);
+const PrivateChannelRecord = fn(2049).PrivateChannelRecord;
+const Constants = fn(1078);
 ({ NEW_GROUP_DM_POPOUT_ID: closure_14, Consents } = Constants);
 let c15 = false;
 let c16 = "";

@@ -1,9 +1,9 @@
 // Module ID: 7678
 // Function ID: 7679
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 7678
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 89.5, height: 35.5, scales: [2, 3], hash: "9af123a40395902e23c1c21c516a826d", name: "img_logo_nitro_classic_stacked", type: "png" });

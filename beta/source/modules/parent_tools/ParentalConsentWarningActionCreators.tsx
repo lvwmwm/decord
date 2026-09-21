@@ -1,15 +1,15 @@
-// Module ID: 17869
-// Function ID: 17870
+// Module ID: 17872
+// Function ID: 17873
 // Name: ParentalConsentWarningActionCreators
-// Dependencies: [5, 15145, 4, 559, 1091, 17870, 1271, 573, 1231, 2]
+// Dependencies: [5, 15134, 4, 561, 1095, 17873, 1275, 577, 1235, 2]
 // Exports: clearWarning, forceFetchWarning, resetFetchState
 
-// Module 17869 (ParentalConsentWarningActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 17872 (ParentalConsentWarningActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 15145 */;
-import Backoff from "Backoff" /* 559 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 15134 */;
+import Backoff from "Backoff" /* 561 */;
 
 const require = fn;
 function clearPendingRetry() {
@@ -36,7 +36,7 @@ function fetchWarning() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -76,7 +76,7 @@ function fetchWarning() {
                     c7 = null;
                   }
                   logger = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 } else {
                   logger.error("Failed to fetch parental-consent warning", closure_128_2);
                   const obj5 = { tags: { source: "parental_consent_warning", step: "fetch_warning" } };
@@ -111,7 +111,7 @@ function fetchWarning() {
                     c7 = null;
                   }
                   logger = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 } else {
                   closure_128_1 = (function normalizeWarning(body) {
                     const obj = { inGrace: true === body.in_grace, daysRemaining: null, surfaces: null };
@@ -136,7 +136,7 @@ function fetchWarning() {
                 c7 = null;
               }
               logger = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp41) {
             if (tmp5 === c3) {
@@ -179,7 +179,7 @@ let closure_13 = async function _maybeFetchWarning(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -195,7 +195,7 @@ let closure_13 = async function _maybeFetchWarning(arg0, value) {
         } else {
           let shouldFetchTodayResult = null == React5;
           if (shouldFetchTodayResult) {
-            shouldFetchTodayResult = null == React6;
+            shouldFetchTodayResult = null == closure_2_8;
           }
           if (shouldFetchTodayResult) {
             shouldFetchTodayResult = ParentalConsentWarningStore.shouldFetchToday();
@@ -216,7 +216,7 @@ let closure_13 = async function _maybeFetchWarning(arg0, value) {
         return obj;
       }
       c0 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp11) {
       c0 = tmp;
       throw tmp11;
@@ -234,7 +234,7 @@ let closure_14 = async function _forceFetchWarning(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -267,7 +267,7 @@ let closure_14 = async function _forceFetchWarning(arg0, value) {
         return obj;
       } else {
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp11) {
       c0 = tmp;

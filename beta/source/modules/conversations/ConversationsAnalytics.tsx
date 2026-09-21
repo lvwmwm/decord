@@ -1,13 +1,13 @@
-// Module ID: 8153
-// Function ID: 8154
+// Module ID: 8158
+// Function ID: 8159
 // Name: ConversationsAnalytics
-// Dependencies: [2041, 1074, 1241, 2]
+// Dependencies: [2045, 1078, 1245, 2]
 
-// Module 8153 (ConversationsAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 8158 (ConversationsAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/ConversationsAnalytics.tsx");
 

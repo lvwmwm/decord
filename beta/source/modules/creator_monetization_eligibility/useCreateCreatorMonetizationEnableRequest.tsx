@@ -1,10 +1,10 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 18173
+// Function ID: 18174
 // Name: useCreateCreatorMonetizationEnableRequest
-// Dependencies: [5, 32, 19, 18144, 4657, 2]
+// Dependencies: [5, 32, 19, 18147, 4660, 2]
 // Exports: default
 
-// Module 18170 (useCreateCreatorMonetizationEnableRequest)
+// Module 18173 (useCreateCreatorMonetizationEnableRequest)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -32,7 +32,7 @@ export default function useCreateCreatorMonetizationEnableRequest(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

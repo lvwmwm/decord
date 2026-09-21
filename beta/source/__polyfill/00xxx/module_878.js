@@ -1,24 +1,9 @@
 // Module ID: 878
 // Function ID: 879
-// Dependencies: []
-// Exports: isHardCrash
+// Dependencies: [879]
 
 // Module 878
+import _mod879 from "module_879" /* 879 */;
 
-export const isHardCrash = function isHardCrash(str) {
-  if (typeof str !== "string") {
-    if ("exception" in str) {
-      const exception = str.exception;
-      let values;
-      if (null !== exception) {
-        if (undefined !== exception) {
-          values = exception.values;
-        }
-      }
-      values2[Symbol.iterator]();
-      str = "onerror";
-    }
-    values2 = str.exception.values;
-  }
-  values2 = [];
-};
+
+export const utf8ToBytes = _mod879.utf8ToBytes;

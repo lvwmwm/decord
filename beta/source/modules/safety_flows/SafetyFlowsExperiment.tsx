@@ -1,21 +1,34 @@
-// Module ID: 17911
-// Function ID: 17912
+// Module ID: 17914
+// Function ID: 17915
 // Name: SafetyFlowsExperiment
-// Dependencies: [1435, 2]
-// Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
+// Dependencies: [1439, 558, 568, 2]
+// Exports: isEligibleForSafetyFlowsExperiment
 
-// Module 17911 (SafetyFlowsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 17914 (SafetyFlowsExperiment)
+import c from "c" /* 568 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
-const tmp2 = apex_ApexExperimentDefault({ name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-let closure_0 = tmp2;
+require = fn;
+let tmp2 = apex_ApexExperimentDefault({ name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let closure_2 = tmp2;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");
 
 export default tmp2;
 export const isEligibleForSafetyFlowsExperiment = function isEligibleForSafetyFlowsExperiment(location) {
-  return closure_0.getConfig({ location: location.location }).enabled;
+  return closure_2.getConfig({ location: location.location }).enabled;
 };
-export const useIsEligibleForSafetyFlowsExperiment = function useIsEligibleForSafetyFlowsExperiment(location) {
-  return closure_0.useConfig({ location: location.location }).enabled;
-};
+export const useIsEligibleForSafetyFlowsExperiment = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  const _location = location.location;
+  if (cResult[0] !== _location) {
+    const obj2 = { location: _location };
+    cResult[0] = _location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => closure_2.useConfig({ location: location.location }).enabled);

@@ -1,21 +1,21 @@
 // Module ID: 4527
 // Function ID: 4528
-// Dependencies: [32, 4512, 4525]
-// Exports: useRiveString
+// Dependencies: [32, 568, 4528]
+// Exports: useRiveNumber
 
 // Module 4527
-import c from "c" /* 4512 */;
-import _mod4525 from "module_4525" /* 4525 */;
+import c from "c" /* 568 */;
+import _mod4528 from "module_4528" /* 4528 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = arg1;
-function getStringProperty(stringProperty, arg1) {
-  return stringProperty.stringProperty(arg1);
+function getNumberProperty(numberProperty, arg1) {
+  return numberProperty.numberProperty(arg1);
 }
 
-export const useRiveString = function useRiveString(LVL, instance) {
+export const useRiveNumber = function useRiveNumber(arg0, arg1) {
   const cResult = c.c(4);
-  [tmp3, tmp4, tmp5] = _mod4525.useRiveProperty(instance, LVL, getStringProperty);
+  [tmp3, tmp4, tmp5] = _mod4528.useRiveProperty(arg1, arg0, getNumberProperty);
   if (cResult[0] === tmp5) {
     if (cResult[1] === tmp4) {
       if (cResult[2] === tmp3) {

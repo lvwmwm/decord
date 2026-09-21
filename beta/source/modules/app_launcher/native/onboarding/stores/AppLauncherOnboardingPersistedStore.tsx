@@ -1,11 +1,11 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12174
+// Function ID: 12175
 // Name: AppLauncherOnboardingPersistedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 12297 (AppLauncherOnboardingPersistedStore)
+// Module 12174 (AppLauncherOnboardingPersistedStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 let triggeredOnboardingContentMetadata = { canShowBotsBanner: false, canShowAppsOrActivitiesBanner: false, willShowGlobalSearchOnboarding: false, timeMs: 0, channelId: "0" };
 let closure_1 = { lastSeenTimeMs: null, triggeredOnboardingContentMetadata };

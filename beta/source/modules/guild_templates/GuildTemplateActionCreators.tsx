@@ -1,16 +1,16 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 7568
+// Function ID: 7569
 // Name: GuildTemplateActionCreators
-// Dependencies: [1074, 573, 1271, 1241, 7567, 2]
+// Dependencies: [1078, 577, 1275, 1245, 7569, 2]
 
-// Module 7566 (GuildTemplateActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Constants from "Constants" /* 1074 */;
+// Module 7568 (GuildTemplateActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const DispatcherDefault = tmp(573);
+const DispatcherDefault = tmp(577);
 ({ Endpoints: c3, AnalyticEvents: closure_4 } = Constants);
 const map = new Map();
 let result = size.fileFinishedImporting("modules/guild_templates/GuildTemplateActionCreators.tsx");

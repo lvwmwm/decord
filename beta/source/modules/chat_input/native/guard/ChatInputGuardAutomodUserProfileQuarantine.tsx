@@ -1,23 +1,208 @@
-// Module ID: 12718
-// Function ID: 12719
+// Module ID: 12627
+// Function ID: 12628
 // Name: ChatInputGuardAutomodUserProfileQuarantine
-// Dependencies: [19, 502, 2105, 4382, 21, 504, 4401, 12116, 1115, 12702, 12719, 2]
+// Dependencies: [19, 502, 2109, 4386, 21, 558, 568, 4405, 504, 11992, 1119, 12628, 12597, 2]
 
-// Module 12718 (ChatInputGuardAutomodUserProfileQuarantine)
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4401 */;
-import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 12116 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12702 */;
+// Module 12627 (ChatInputGuardAutomodUserProfileQuarantine)
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4405 */;
+import GuildAutomodActionActionCreators from "GuildAutomodActionActionCreators" /* 11992 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
 require = fn;
-const GuildMemberFlags = fn(4382).GuildMemberFlags;
+const GuildMemberFlags = fn(4386).GuildMemberFlags;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardAutomodUserProfileQuarantine.tsx");
 
-export default noop.memo(function ChatInputGuardAutomodUserProfileQuarantine(guildId) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = guildId(568).c(17);
+  guildId = guildId.guildId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore, GuildMemberStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function c() {
+      if (null == guildId) {
+        const _Set = Set;
+        const set = new Set();
+        return set;
+      } else {
+        const id = AuthenticationStore.getId();
+        return AutomodPermissionUtils.getAutomodQuarantinedGuildMemberFlags(GuildMemberStore.getMember(tmp, id));
+      }
+    };
+    const items1 = [guildId];
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp8 = items1;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const obj = guildId(568);
+  const stateFromStores = guildId(504).useStateFromStores(first, tmp7, tmp8);
+  if (cResult[4] !== guildId) {
+    class R {
+      constructor() {
+        obj = closure_0(closure_2[9]);
+        result = obj.openAutomodProfileQuarantineAlert(guildId);
+        return;
+      }
+    }
+    cResult[4] = guildId;
+    cResult[5] = R;
+  } else {
+    class R {
+      constructor() {
+        obj = closure_0(closure_2[9]);
+        result = obj.openAutomodProfileQuarantineAlert(guildId);
+        return;
+      }
+    }
+  }
+  if (cResult[6] !== stateFromStores) {
+    class R {
+      constructor() {
+        obj = closure_0(closure_2[9]);
+        result = obj.openAutomodProfileQuarantineAlert(guildId);
+        return;
+      }
+    }
+    const automodReason = obj3.getAutomodReason(stateFromStores);
+    cResult[6] = stateFromStores;
+    cResult[7] = automodReason;
+  } else {
+    class R {
+      constructor() {
+        obj = closure_0(closure_2[9]);
+        result = obj.openAutomodProfileQuarantineAlert(guildId);
+        return;
+      }
+    }
+  }
+  if (cResult[8] !== tmp11) {
+    class R {
+      constructor() {
+        obj = closure_0(closure_2[9]);
+        result = obj.openAutomodProfileQuarantineAlert(guildId);
+        return;
+      }
+    }
+    if (tmp11 === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
+      class R {
+        constructor() {
+          obj = closure_0(closure_2[9]);
+          result = obj.openAutomodProfileQuarantineAlert(guildId);
+          return;
+        }
+      }
+      let stringResult = obj5.string(tmp(1119).t.Viksoo);
+    } else {
+      class R {
+        constructor() {
+          obj = closure_0(closure_2[9]);
+          result = obj.openAutomodProfileQuarantineAlert(guildId);
+          return;
+        }
+      }
+      stringResult = obj4.string(tmp(1119).t["/PGQf0"]);
+    }
+    cResult[8] = tmp11;
+    cResult[9] = stringResult;
+  } else {
+    class R {
+      constructor() {
+        obj = closure_0(closure_2[9]);
+        result = obj.openAutomodProfileQuarantineAlert(guildId);
+        return;
+      }
+    }
+    if (cResult[10] !== tmp11) {
+      class R {
+        constructor() {
+          obj = closure_0(closure_2[9]);
+          result = obj.openAutomodProfileQuarantineAlert(guildId);
+          return;
+        }
+      }
+      if (tmp11 === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
+        class R {
+          constructor() {
+            obj = closure_0(closure_2[9]);
+            result = obj.openAutomodProfileQuarantineAlert(guildId);
+            return;
+          }
+        }
+        let stringResult1 = obj7.string(tmp(1119).t.ml72ZU);
+      } else {
+        class R {
+          constructor() {
+            obj = closure_0(closure_2[9]);
+            result = obj.openAutomodProfileQuarantineAlert(guildId);
+            return;
+          }
+        }
+        stringResult1 = obj6.string(tmp(1119).t["8HW7r9"]);
+      }
+      cResult[10] = tmp11;
+      cResult[11] = stringResult1;
+    } else {
+      class R {
+        constructor() {
+          obj = closure_0(closure_2[9]);
+          result = obj.openAutomodProfileQuarantineAlert(guildId);
+          return;
+        }
+      }
+      const _Symbol = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        class R {
+          constructor() {
+            obj = closure_0(closure_2[9]);
+            result = obj.openAutomodProfileQuarantineAlert(guildId);
+            return;
+          }
+        }
+        const tmp20 = jsx(tmp(12628).ChatXIcon, {});
+        cResult[12] = tmp20;
+        const tmp19 = tmp20;
+      } else {
+        class R {
+          constructor() {
+            obj = closure_0(closure_2[9]);
+            result = obj.openAutomodProfileQuarantineAlert(guildId);
+            return;
+          }
+        }
+      }
+      if (cResult[13] === tmp13) {
+        class R {
+          constructor() {
+            obj = closure_0(closure_2[9]);
+            result = obj.openAutomodProfileQuarantineAlert(guildId);
+            return;
+          }
+        }
+      }
+      const obj2 = { type: "simple-action", actionOnPress: tmp10, actionLabel: tmp13, icon: tmp19, message: tmp16 };
+      const tmp24 = jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: tmp10, actionLabel: tmp13, icon: tmp19, message: tmp16 });
+      cResult[13] = tmp13;
+      cResult[14] = tmp10;
+      cResult[15] = tmp16;
+      cResult[16] = tmp24;
+    }
+  }
+}) : ((guildId) => {
   guildId = guildId.guildId;
   const items = [AuthenticationStore, GuildMemberStore];
   const items1 = [guildId];
@@ -36,25 +221,25 @@ export default noop.memo(function ChatInputGuardAutomodUserProfileQuarantine(gui
     const result = GuildAutomodActionActionCreators.openAutomodProfileQuarantineAlert(guildId);
   }, items2);
   const obj = guildId(504);
-  const automodReason = guildId(4401).getAutomodReason(stateFromStores);
+  const automodReason = guildId(4405).getAutomodReason(stateFromStores);
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
-    const intl2 = tmp(1115).intl;
-    let stringResult = intl2.string(tmp(1115).t.Viksoo);
+    const intl2 = tmp(1119).intl;
+    let stringResult = intl2.string(tmp(1119).t.Viksoo);
   } else {
-    const intl = tmp(1115).intl;
-    stringResult = intl.string(tmp(1115).t["/PGQf0"]);
+    const intl = tmp(1119).intl;
+    stringResult = intl.string(tmp(1119).t["/PGQf0"]);
   }
   if (automodReason === tmp6.AUTOMOD_QUARANTINED_SERVER_TAG) {
-    const intl4 = tmp(1115).intl;
-    let stringResult1 = intl4.string(tmp(1115).t.ml72ZU);
+    const intl4 = tmp(1119).intl;
+    let stringResult1 = intl4.string(tmp(1119).t.ml72ZU);
   } else {
-    const intl3 = tmp(1115).intl;
-    stringResult1 = intl3.string(tmp(1115).t["8HW7r9"]);
+    const intl3 = tmp(1119).intl;
+    stringResult1 = intl3.string(tmp(1119).t["8HW7r9"]);
   }
   const obj3 = { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null };
-  const obj2 = guildId(4401);
+  const obj2 = guildId(4405);
   tmp6 = GuildMemberFlags;
-  obj3.icon = jsx(guildId(12719).ChatXIcon, {});
+  obj3.icon = jsx(guildId(12628).ChatXIcon, {});
   obj3.message = stringResult1;
   return jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: callback, actionLabel: stringResult, icon: null, message: null });
-});
+}));

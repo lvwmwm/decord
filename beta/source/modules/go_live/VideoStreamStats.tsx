@@ -1,14 +1,14 @@
-// Module ID: 4809
-// Function ID: 4810
+// Module ID: 4811
+// Function ID: 4812
 // Name: VideoStreamStats
-// Dependencies: [4802, 1074, 2036, 4785, 2]
+// Dependencies: [4804, 1078, 2040, 4787, 2]
 
-// Module 4809 (VideoStreamStats)
-import TimeUtils from "TimeUtils" /* 4785 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4802 */;
+// Module 4811 (VideoStreamStats)
+import TimeUtils from "TimeUtils" /* 4787 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4804 */;
 
 require = fn;
-const StreamLayouts = fn(1074).StreamLayouts;
+const StreamLayouts = fn(1078).StreamLayouts;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/go_live/VideoStreamStats.tsx");
 class VideoStreamStats {
@@ -29,7 +29,7 @@ class VideoStreamStats {
       _layoutBuckets[_lastLayout] = _layoutBuckets[_lastLayout] + arg1;
     };
     obj._sampleStats = function _sampleStats() {
-      const state = ApplicationStreamingSettingsStore.getState();
+      state = ApplicationStreamingSettingsStore.getState();
       obj._streamSettingsChanged = state.resolution !== obj._targetResolution || tmp2 !== obj._targetFPS;
     };
     obj._isSender = fn;
@@ -42,7 +42,7 @@ class VideoStreamStats {
 }
 const prototype = VideoStreamStats.prototype;
 prototype["start"] = function start() {
-  const state = ApplicationStreamingSettingsStore.getState();
+  state = ApplicationStreamingSettingsStore.getState();
   ({ resolution: this._targetResolution, fps: this._targetFPS } = state);
   const _statInterval = this._statInterval;
   _statInterval.start(1000, this._sampleStats);

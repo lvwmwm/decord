@@ -1,12 +1,12 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12933
+// Function ID: 12934
 // Name: WelcomeScreenActionCreators
-// Dependencies: [5, 1074, 573, 1271, 2]
+// Dependencies: [5, 1078, 577, 1275, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 12909 (WelcomeScreenActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 12933 (WelcomeScreenActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -17,7 +17,7 @@ let closure_5 = async function _fetchWelcomeScreen() {
   const HTTP = HTTPUtils.HTTP;
   await HTTP.get({ url: Endpoints.GUILD_WELCOME_SCREEN(closure_0), oldFormErrors: true, rejectWithError: true });
   closure_130_1(closure_130_2[2]).dispatch({ type: "WELCOME_SCREEN_FETCH_FAIL" });
-  closure_129_1 = await "HermesInternal";
+  closure_129_1 = await "IconComponent";
   closure_130_1(closure_130_2[2]).dispatch({ type: "WELCOME_SCREEN_FETCH_SUCCESS", guildId: closure_129_0, welcomeScreen: closure_129_1.body });
   return closure_129_1.body;
 };
@@ -45,7 +45,7 @@ let closure_6 = async function _saveWelcomeScreen(arg0, arg1) {
   }
   return arg1;
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/welcome_screen/WelcomeScreenActionCreators.tsx");
 

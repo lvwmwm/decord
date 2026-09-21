@@ -1,10 +1,10 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12469
+// Function ID: 12470
 // Name: directory_channels/GuildDirectoryUtils
-// Dependencies: [5, 19, 21, 12570, 5109, 12576, 1980, 2]
+// Dependencies: [5, 19, 21, 12464, 5111, 12470, 1984, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 12575 (directory_channels/GuildDirectoryUtils)
+// Module 12469 (directory_channels/GuildDirectoryUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -27,10 +27,10 @@ let closure_6 = async function _onAddDirectoryGuildEntry() {
     },
     isDismissable: false
   });
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ directoryChannelId: closure_129_0, directoryGuildName: closure_129_1, guild: closure_129_2, description: closure_129_3, category: closure_129_4, onClose: closure_129_5 } = closure_0);
-  return "PX_16";
+  return "Set";
 };
 const jsx = fn(21).jsx;
 const size = fn(2);

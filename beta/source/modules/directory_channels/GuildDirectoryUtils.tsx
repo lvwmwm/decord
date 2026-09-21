@@ -1,13 +1,13 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 12452
+// Function ID: 12453
 // Name: GuildDirectoryUtils
-// Dependencies: [12559, 38, 12, 2]
+// Dependencies: [12453, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 12558 (GuildDirectoryUtils)
+// Module 12452 (GuildDirectoryUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12559 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12453 */;
 import size from "module_2" /* 2 */;
 
 const DirectoryEntryTypes = GuildDirectoryConstants.DirectoryEntryTypes;
@@ -70,9 +70,9 @@ export const orderByTotalMemberCount = function orderByTotalMemberCount(found) {
   const items = [(approximateMemberCount) => approximateMemberCount.approximateMemberCount];
   return _modDef12.orderBy(found, items, ["desc"]);
 };
-export const orderByDateAdded = function orderByDateAdded(reactions) {
-  const items = [(createdAt) => createdAt.createdAt];
-  return _modDef12.orderBy(reactions, items, ["desc"]);
+export const orderByDateAdded = function orderByDateAdded(items) {
+  items = [(createdAt) => createdAt.createdAt];
+  return _modDef12.orderBy(items, items, ["desc"]);
 };
 export const rankByDateAdded = function rankByDateAdded(arr) {
   const found = arr.filter((featurableInDirectory) => featurableInDirectory.featurableInDirectory);

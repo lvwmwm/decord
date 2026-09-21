@@ -1,55 +1,31 @@
-// Module ID: 8451
-// Function ID: 8452
+// Module ID: 8456
+// Function ID: 8457
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 2041, 2105, 1372, 8452, 1074, 21, 4756, 576, 8454, 1115, 5904, 5822, 1177, 4607, 4690, 504, 8455, 7407, 7427, 8459, 8468, 1241, 8450, 8448, 7395, 6869, 8188, 7212, 4752, 4908, 5186, 5339, 2019, 2]
+// Dependencies: [32, 19, 17, 2045, 2109, 1376, 8457, 1078, 21, 4758, 580, 8459, 1119, 558, 568, 5903, 5822, 1181, 4610, 4693, 504, 8460, 7429, 7409, 8464, 8473, 1245, 8455, 8453, 8193, 7210, 4754, 4910, 5188, 5341, 2023, 7397, 6863, 2]
 
-// Module 8451 (UserProfileSpeedBumpActionSheet)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
+// Module 8456 (UserProfileSpeedBumpActionSheet)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import UserSettings from "UserSettings" /* 2023 */;
 import TableRow from "TableRow" /* 5822 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
-import UserActionCreators from "UserActionCreators" /* 8450 */;
-import _modDef8454 from "module_8454" /* 8454 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+import UserActionCreators from "UserActionCreators" /* 8455 */;
+import _modDef8459 from "module_8459" /* 8459 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-function InformationTable(speedBumpType) {
-  let items;
-  let obj = { icon: _modDef8454, text: null };
-  const intl = items(1115).intl;
-  obj.text = intl.string(items(1115).t.kcuWva);
-  items = [obj, ];
-  const obj2 = { icon: _modDef8454, text: null };
-  if ("block" === speedBumpType.speedBumpType) {
-    const intl3 = tmp2(1115).intl;
-    let stringResult = intl3.string(tmp2(1115).t.QxrDY1);
-  } else {
-    const intl2 = tmp2(1115).intl;
-    stringResult = intl2.string(tmp2(1115).t.W6fjkS);
-  }
-  obj2.text = stringResult;
-  items[1] = obj2;
-  return closure_12(items(5904).TableRowGroup, {
-    hasIcons: true,
-    children: items.map((icon, index) => {
-      const obj = { start: 0 === index, end: items.length === index, icon: closure_2_12(native.Icon, { size: native.Icon.Sizes.MEDIUM, source: icon.icon }), label: icon.text };
-      return closure_2_12(TableRow.TableRow, obj, index);
-    })
-  });
-}
 const View = fn(17).View;
-const UserProfileAnalyticsTypes = fn(8452).UserProfileAnalyticsTypes;
-const Constants = fn(1074);
+let UserProfileAnalyticsTypes = fn(8457).UserProfileAnalyticsTypes;
+const Constants = fn(1078);
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { button: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 }, tableContainer: null, header: null, bodyText: null, headerText: null, avatar: null, avatarContainer: null, avatarIconContainer: null, suppress: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 };
 obj.tableContainer = { marginBottom: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -65,11 +41,301 @@ obj.avatarIconContainer = rect;
 let obj6 = { position: "relative", alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 obj.suppress = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 let closure_14 = createStyles.createStyles(obj);
+function SPEEDBUMP_ROWS(arg0) {
+
+}
+let ReactCompilerGating = fn(558);
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType) => {
+  let map = items;
+  let TableRowGroup = dependencyMap;
+  const cResult = items(568).c(8);
+  speedBumpType = speedBumpType.speedBumpType;
+  if (cResult[0] !== speedBumpType) {
+    if (typeof SPEEDBUMP_ROWS === "function") {
+      const obj2 = { icon: _modDef8459, text: null };
+      const intl = map(1119).intl;
+      obj2.text = intl.string(map(1119).t.kcuWva);
+      items = [obj2, ];
+      const obj3 = { icon: _modDef8459, text: null };
+      if ("block" === speedBumpType) {
+        const intl3 = map(1119).intl;
+        let stringResult = intl3.string(map(1119).t.QxrDY1);
+      } else {
+        const intl2 = map(1119).intl;
+        stringResult = intl2.string(map(1119).t.W6fjkS);
+      }
+      obj3.text = stringResult;
+      items[1] = obj3;
+      TableRowGroup = map(5903).TableRowGroup;
+      map = items.map;
+      const mapped = map((icon, arg1) => {
+        const obj = { start: 0 === arg1, end: items.length === arg1, icon: __initData(native.Icon, { size: native.Icon.Sizes.MEDIUM, source: icon.icon }), label: icon.text };
+        return __initData(TableRow.TableRow, obj, arg1);
+      });
+      cResult[0] = speedBumpType;
+      cResult[1] = TableRowGroup;
+      cResult[2] = true;
+      cResult[3] = mapped;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    if (cResult[4] === cResult[1]) {
+      if (cResult[5] === tmp3) {
+        if (cResult[6] === tmp4) {
+          let tmp11 = cResult[7];
+        }
+        return tmp11;
+      }
+    }
+    const obj4 = { hasIcons: cResult[2], children: cResult[3] };
+    const tmp13 = closure_12(cResult[1], obj4);
+    cResult[4] = cResult[1];
+    cResult[5] = cResult[2];
+    cResult[6] = cResult[3];
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
+  }
+}) : ((arg0) => {
+  let items;
+  if (typeof SPEEDBUMP_ROWS === "function") {
+    let obj = { icon: _modDef8459, text: null };
+    const intl = items(1119).intl;
+    obj.text = intl.string(items(1119).t.kcuWva);
+    items = [obj, ];
+    const obj2 = { icon: _modDef8459, text: null };
+    if ("block" === tmp) {
+      const intl3 = tmp4(1119).intl;
+      let stringResult = intl3.string(tmp4(1119).t.QxrDY1);
+    } else {
+      const intl2 = tmp4(1119).intl;
+      stringResult = intl2.string(tmp4(1119).t.W6fjkS);
+    }
+    obj2.text = stringResult;
+    items[1] = obj2;
+    const obj3 = {
+      hasIcons: true,
+      children: items.map((icon, index) => {
+          const obj = { start: 0 === index, end: items.length === index, icon: __initData(native.Icon, { size: native.Icon.Sizes.MEDIUM, source: icon.icon }), label: icon.text };
+          return __initData(TableRow.TableRow, obj, index);
+        })
+    };
+    return closure_12(items(5903).TableRowGroup, obj3);
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+});
+ReactCompilerGating = fn(558);
 let obj7 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSpeedBumpActionSheet.tsx");
 
-export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  const cResult = userId(onClose[14]).c(112);
+  userId = userId.userId;
+  const channelId = userId.channelId;
+  ({ messageId, localUser, roleId, sessionId, onClose } = userId);
+  const location = userId.location;
+  ({ openedAt, sourceAnalyticsLocations, speedBumpType } = userId);
+  if (cResult[0] !== sourceAnalyticsLocations) {
+    let items = sourceAnalyticsLocations;
+    if (undefined === sourceAnalyticsLocations) {
+      items = [];
+    }
+    cResult[0] = sourceAnalyticsLocations;
+    cResult[1] = items;
+    let tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  closure_14();
+  let obj = userId(onClose[14]);
+  userId(onClose[18]).isThemeLight(channelId(onClose[19])());
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    cResult[2] = items1;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== userId) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    cResult[3] = userId;
+    cResult[4] = M;
+    const tmp10 = M;
+  } else {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+  }
+  const tmpResult = userId(onClose[18]);
+  const stateFromStores = userId(onClose[20]).useStateFromStores(tmp8, tmp10);
+  let tmp12 = stateFromStores;
+  if (stateFromStores == null) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    if (localUser != null) {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+    }
+    if (tmp13 === userId) {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+    }
+    tmp12 = tmp14;
+  }
+  c5 = tmp12;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    const items2 = [c6];
+    cResult[5] = items2;
+    const tmp15 = items2;
+  } else {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+  }
+  if (cResult[6] !== channelId) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    const items3 = [channelId];
+    cResult[6] = channelId;
+    cResult[7] = tmp18;
+    cResult[8] = items3;
+    let tmp17 = items3;
+    const tmp16 = tmp18;
+  } else {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    tmp17 = cResult[8];
+  }
+  const tmpResult4 = userId(onClose[20]);
+  const stateFromStores1 = userId(onClose[20]).useStateFromStores(tmp15, tmp16, tmp17);
+  if (stateFromStores1 != null) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+  }
+  c6 = tmp20;
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    const items4 = [stateFromStores2];
+    cResult[9] = items4;
+    const tmp21 = items4;
+  } else {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+  }
+  if (cResult[10] === undefined) {
+    class M {
+      constructor() {
+        return closure_8.getUser(userId);
+      }
+    }
+    stateFromStores2 = tmp(tmp2[20]).useStateFromStores(tmp21, fn);
+    const tmpResult6 = tmp(tmp2[20]);
+    if (tmp12 != null) {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+    }
+    if (undefined == null) {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+    }
+    const tmp6Result = tmp6(tmp2[21]);
+    UserStore = tmp6(tmp2[21])(undefined, tmp20);
+    const IGNORED_USER_SHEET = UserProfileAnalyticsTypes.IGNORED_USER_SHEET;
+    const tmp29 = location(stateFromStores.useState(false), 2);
+    UserProfileAnalyticsTypes = tmp29[0];
+    closure_10 = tmp29[1];
+    if (cResult[13] !== tmp4) {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+      tmp31[HermesBuiltin.arraySpread(tmp4, 0)] = tmp6(tmp2[22]).IGNORED_PROFILE_ACTION_SHEET;
+      cResult[13] = tmp4;
+      cResult[14] = tmp31;
+      const arraySpreadResult = HermesBuiltin.arraySpread(tmp4, 0);
+      const tmp30 = tmp31;
+    } else {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+    }
+    const analyticsLocations = tmp6(tmp2[23])(tmp30).analyticsLocations;
+    if (cResult[15] === channelId) {
+      class M {
+        constructor() {
+          return closure_8.getUser(userId);
+        }
+      }
+    }
+    const obj2 = { layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId };
+    cResult[15] = channelId;
+    cResult[16] = messageId;
+    cResult[17] = roleId;
+    cResult[18] = sessionId;
+    cResult[19] = userId;
+    cResult[20] = obj2;
+    const tmp6ResultResult = tmp6(tmp2[21])(undefined, tmp20);
+  }
+  fn = function j() {
+    let member = null;
+    if (null != c6) {
+      member = GuildMemberStore.getMember(tmp, userId);
+    }
+    return member;
+  };
+  cResult[10] = undefined;
+  cResult[11] = userId;
+  cResult[12] = fn;
+}) : ((userId) => {
   userId = userId.userId;
   const channelId = userId.channelId;
   ({ localUser, onClose } = userId);
@@ -89,10 +355,10 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
   let createUserProfileAnalyticsContext;
   closure_13 = undefined;
   let tmp = closure_14();
-  let obj = userId(onClose[16]);
-  const isThemeLightResult = userId(onClose[16]).isThemeLight(channelId(onClose[17])());
+  let obj = userId(onClose[18]);
+  const isThemeLightResult = userId(onClose[18]).isThemeLight(channelId(onClose[19])());
   const items = [closure_8];
-  const stateFromStores = userId(onClose[18]).useStateFromStores(items, () => UserStore.getUser(userId));
+  const stateFromStores = userId(onClose[20]).useStateFromStores(items, () => UserStore.getUser(userId));
   let tmp7 = stateFromStores;
   if (stateFromStores == null) {
     let id;
@@ -106,17 +372,17 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
     tmp7 = tmp9;
   }
   localUser = tmp7;
-  const obj2 = userId(onClose[18]);
+  const obj2 = userId(onClose[20]);
   const items1 = [guild_id];
   const items2 = [channelId];
-  const stateFromStores1 = userId(onClose[18]).useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
+  const stateFromStores1 = userId(onClose[20]).useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
   guild_id = undefined;
   if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
   }
-  const tmp2Result = userId(onClose[18]);
+  const tmp2Result = userId(onClose[20]);
   const items3 = [stateFromStores2];
-  stateFromStores2 = userId(onClose[18]).useStateFromStores(items3, () => {
+  stateFromStores2 = userId(onClose[20]).useStateFromStores(items3, () => {
     let member = null;
     if (null != guild_id) {
       member = GuildMemberStore.getMember(tmp, userId);
@@ -124,24 +390,24 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
     return member;
   });
   let id1;
-  const tmp2Result3 = userId(onClose[18]);
+  const tmp2Result3 = userId(onClose[20]);
   if (tmp7 != null) {
     id1 = tmp7.id;
   }
   if (id1 == null) {
     id1 = analyticsLocations;
   }
-  const tmp4ResultResult = channelId(onClose[19])(id1, guild_id);
+  const tmp4ResultResult = channelId(onClose[21])(id1, guild_id);
   closure_8 = tmp4ResultResult;
   [first, closure_10] = stateFromStores.useState(false);
   const items4 = [];
-  const tmp4Result = channelId(onClose[19]);
-  const tmp4Result3 = channelId(onClose[20]);
-  items4[HermesBuiltin.arraySpread(sourceAnalyticsLocations, 0)] = channelId(onClose[21]).IGNORED_PROFILE_ACTION_SHEET;
+  const tmp4Result = channelId(onClose[21]);
+  const tmp4Result3 = channelId(onClose[23]);
+  items4[HermesBuiltin.arraySpread(sourceAnalyticsLocations, 0)] = channelId(onClose[22]).IGNORED_PROFILE_ACTION_SHEET;
   analyticsLocations = tmp4Result3(items4).analyticsLocations;
   const arraySpreadResult = HermesBuiltin.arraySpread(sourceAnalyticsLocations, 0);
-  createUserProfileAnalyticsContext = userId(onClose[22]).useCreateUserProfileAnalyticsContext({ layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId });
-  const tmp21 = channelId(onClose[23])({ userId, user: tmp7, channelId, guildId: guild_id, displayProfile: tmp4ResultResult, guildMember: stateFromStores2, type: first.IGNORED_USER_SHEET });
+  createUserProfileAnalyticsContext = userId(onClose[24]).useCreateUserProfileAnalyticsContext({ layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId });
+  const tmp21 = channelId(onClose[25])({ userId, user: tmp7, channelId, guildId: guild_id, displayProfile: tmp4ResultResult, guildMember: stateFromStores2, type: first.IGNORED_USER_SHEET });
   closure_13 = tmp21;
   const items5 = [tmp21, tmp4ResultResult, guild_id, first, stateFromStores2];
   const effect = stateFromStores.useEffect(() => {
@@ -198,10 +464,10 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
     obj4.isLoaded = isLoaded;
     const obj5 = { style: tmp.header, children: null };
     const obj6 = { style: tmp.avatarContainer, children: null };
-    const obj7 = { user: tmp7, guildId: guild_id, animate: false, size: tmp2(tmp3[15]).AvatarSizes.XLARGE, style: tmp.avatar };
-    const items8 = [createUserProfileAnalyticsContext(tmp2(tmp3[15]).Avatar, obj7), ];
+    const obj7 = { user: tmp7, guildId: guild_id, animate: false, size: tmp2(tmp3[17]).AvatarSizes.XLARGE, style: tmp.avatar };
+    const items8 = [createUserProfileAnalyticsContext(tmp2(tmp3[17]).Avatar, obj7), ];
     const obj8 = { style: tmp.avatarIconContainer, children: null };
-    const obj9 = { size: tmp2(tmp3[15]).Icon.Sizes.MEDIUM, source: null };
+    const obj9 = { size: tmp2(tmp3[17]).Icon.Sizes.MEDIUM, source: null };
     if ("block" === speedBumpType) {
       obj9.source = tmp4(tmp3[29]);
       let tmp31 = obj9;
@@ -209,7 +475,7 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
       obj9.source = tmp4(tmp3[30]);
       tmp31 = obj9;
     }
-    obj8.children = createUserProfileAnalyticsContext(tmp2(tmp3[15]).Icon, tmp31);
+    obj8.children = createUserProfileAnalyticsContext(tmp2(tmp3[17]).Icon, tmp31);
     items8[1] = createUserProfileAnalyticsContext(localUser, obj8);
     obj6.children = items8;
     const items9 = [closure_13(localUser, obj6), , ];
@@ -227,7 +493,7 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
     const items10 = [closure_13(localUser, obj5), , ];
     const obj13 = { style: tmp.tableContainer, children: null };
     const obj14 = { speedBumpType };
-    obj13.children = createUserProfileAnalyticsContext(InformationTable, obj14);
+    obj13.children = createUserProfileAnalyticsContext(closure_16, obj14);
     items10[1] = createUserProfileAnalyticsContext(localUser, obj13);
     const obj15 = { style: tmp.button, children: null };
     let str2 = "secondary";
@@ -268,10 +534,10 @@ export default noop.memo(function UserProfileSpeedBumpActionSheet(userId) {
     obj15.children = items11;
     items10[2] = closure_13(localUser, obj15);
     obj20.children = items10;
-    obj19.children = closure_13(tmp2(tmp3[28]).BottomSheetView, obj20);
-    obj4.children = createUserProfileAnalyticsContext(tmp2(tmp3[27]).BottomSheet, obj19);
-    obj3.children = createUserProfileAnalyticsContext(tmp2(tmp3[22]).UserProfileAnalyticsProvider, obj4);
-    return createUserProfileAnalyticsContext(tmp2(tmp3[20]).AnalyticsLocationProvider, obj3);
+    obj19.children = closure_13(tmp2(tmp3[37]).BottomSheetView, obj20);
+    obj4.children = createUserProfileAnalyticsContext(tmp2(tmp3[36]).BottomSheet, obj19);
+    obj3.children = createUserProfileAnalyticsContext(tmp2(tmp3[24]).UserProfileAnalyticsProvider, obj4);
+    return createUserProfileAnalyticsContext(tmp2(tmp3[23]).AnalyticsLocationProvider, obj3);
   }
-  const tmp2Result4 = userId(onClose[22]);
-});
+  const tmp2Result4 = userId(onClose[24]);
+}));

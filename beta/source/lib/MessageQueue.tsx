@@ -1,25 +1,25 @@
-// Module ID: 8076
-// Function ID: 8077
+// Module ID: 8081
+// Function ID: 8082
 // Name: MessageQueue
-// Dependencies: [109, 4755, 502, 4805, 1074, 4749, 1091, 8077, 3, 4936, 8078, 7701, 1271, 1978, 38, 5343, 5345, 5378, 5350, 2]
+// Dependencies: [109, 4757, 502, 4807, 1078, 4751, 1095, 8082, 3, 4938, 8083, 7706, 1275, 1982, 38, 5345, 5347, 5380, 5352, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8076 (MessageQueue)
+// Module 8081 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8078 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8083 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 4755 */;
+import DevSettingsStore from "DevSettingsStore" /* 4757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 4805 */;
-import Queue from "Queue" /* 8077 */;
+import NetworkStore from "NetworkStore" /* 4807 */;
+import Queue from "Queue" /* 8082 */;
 
 let handleCommand1 = fn;
 let closure_3 = ["channelId", "analyticsLocation"];
 let closure_4 = ["channelId", "analyticsLocation"];
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AbortCodes: closure_9, Endpoints: c10, AnalyticEvents: closure_11 } = Constants);
-let closure_12 = fn(4749).MESSAGE_HTTP_TIMEOUT_RETRY_OPTIONS;
+let closure_12 = fn(4751).MESSAGE_HTTP_TIMEOUT_RETRY_OPTIONS;
 const MessageDataType = { SEND: 0, [0]: "SEND", EDIT: 1, [1]: "EDIT", COMMAND: 2, [2]: "COMMAND", SEND_ANNOUNCEMENT: 3, [3]: "SEND_ANNOUNCEMENT" };
 let items = [DurationsDefault.Millis.MINUTE, 5 * DurationsDefault.Millis.MINUTE];
 class MessageQueue extends tmp5 {
@@ -41,7 +41,7 @@ class MessageQueue extends tmp5 {
       const merged = Object.assign(messageId, Object.assign({ channelId: 0, messageId: 0, isCrossposted: 0 }));
       const abortController = new AbortController();
       const request = {
-        url: closure_1_10.MESSAGE(channelId, messageId),
+        url: constants.MESSAGE(channelId, messageId),
         body: merged,
         retries: 1,
         oldFormErrors: true,
@@ -202,8 +202,8 @@ prototype["handleSend"] = function handleSend(nonce, fn) {
   }
   const tmp = _objectWithoutProperties(nonce, closure_3);
   const tmp5 = handleCommand1;
-  const signalStrength = handleCommand1(7701).getSignalStrength();
-  const obj2 = handleCommand1(7701);
+  const signalStrength = handleCommand1(7706).getSignalStrength();
+  const obj2 = handleCommand1(7706);
   const merged = Object.assign(tmp);
   let tmp8 = null != signalStrength;
   if (tmp8) {
@@ -225,8 +225,8 @@ prototype["handleSend"] = function handleSend(nonce, fn) {
       const result = requests.set(nonce.nonce, abortController);
     }
     const result1 = self.startQueueMetricTimers(nonce.nonce);
-    const HTTP = tmp5(1271).HTTP;
-    const request = { url: closure_1_10.MESSAGES(channelId), body: obj3, context: tmp4, oldFormErrors: true };
+    const HTTP = tmp5(1275).HTTP;
+    const request = { url: v65535.MESSAGES(channelId), body: obj3, context: tmp4, oldFormErrors: true };
     const merged2 = Object.assign(closure_12);
     request.signal = abortController.signal;
     request.rejectWithError = true;
@@ -246,8 +246,8 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, f
   }
   const tmp = _objectWithoutProperties(message, closure_4);
   const tmp5 = handleCommand1;
-  const signalStrength = handleCommand1(7701).getSignalStrength();
-  const obj2 = handleCommand1(7701);
+  const signalStrength = handleCommand1(7706).getSignalStrength();
+  const obj2 = handleCommand1(7706);
   const merged = Object.assign(tmp);
   let tmp8 = null != signalStrength;
   if (tmp8) {
@@ -269,8 +269,8 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, f
       const result = requests.set(message.nonce, abortController);
     }
     const result1 = self.startQueueMetricTimers(message.nonce);
-    const HTTP = tmp5(1271).HTTP;
-    const request = { url: closure_1_10.MESSAGES_ANNOUNCEMENT(channelId), body: obj3, context: tmp4, oldFormErrors: true };
+    const HTTP = tmp5(1275).HTTP;
+    const request = { url: v65535.MESSAGES_ANNOUNCEMENT(channelId), body: obj3, context: tmp4, oldFormErrors: true };
     const merged2 = Object.assign(closure_12);
     request.signal = abortController.signal;
     request.rejectWithError = true;
@@ -297,7 +297,7 @@ function handleCommand(message, fn) {
   const result = requests.set(nonce, abortController);
   const HTTP = handleCommand1(nonce[12]).HTTP;
   const request = {
-    url: closure_10.INTERACTIONS,
+    url: constants.INTERACTIONS,
     body,
     signal: abortController.signal,
     rejectWithError: true,
@@ -329,7 +329,7 @@ handleCommand1.handleEdit = function handleEdit(messageId, fn) {
   const merged = Object.assign(messageId, Object.assign({ channelId: 0, messageId: 0, isCrossposted: 0 }));
   const abortController = new AbortController();
   const request = {
-    url: closure_1_10.MESSAGE(channelId, messageId),
+    url: constants.MESSAGE(channelId, messageId),
     body: merged,
     retries: 1,
     oldFormErrors: true,

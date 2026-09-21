@@ -1,15 +1,15 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15020
+// Function ID: 15021
 // Name: AccountAgeGroupAssignedAdultSetting
-// Dependencies: [8233, 1074, 11725, 1115, 3034, 15032, 14995, 2]
+// Dependencies: [8238, 1078, 11594, 1119, 3038, 15021, 14984, 2]
 
-// Module 15031 (AccountAgeGroupAssignedAdultSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import _modDef3034 from "module_3034" /* 3034 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15032 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15020 (AccountAgeGroupAssignedAdultSetting)
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import _modDef3038 from "module_3038" /* 3038 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15021 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const route = SettingBuilders.createRoute({
   useTrailing() {
     const intl = util.intl;
     const intl2 = util.intl;
-    return "" + intl.string(util.t.XxRj7f) + " \u2022 " + intl2.string(_modDef3034.FTawSP);
+    return "" + intl.string(util.t.XxRj7f) + " \u2022 " + intl2.string(_modDef3038.FTawSP);
   },
   usePredicate: AgeGroupScreenRowProps.useShowAssignedAdultAgeGroupRow,
   screen: {

@@ -1,18 +1,43 @@
-// Module ID: 12955
-// Function ID: 12956
+// Module ID: 12849
+// Function ID: 12850
 // Name: ContactSyncBackToLanding
-// Dependencies: [1484, 5841, 12929, 2]
-// Exports: default
+// Dependencies: [558, 568, 1488, 5839, 12823, 2]
 
-// Module 12955 (ContactSyncBackToLanding)
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12929 */;
+// Module 12849 (ContactSyncBackToLanding)
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12823 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncBackToLanding.tsx");
 
-export default function ContactSyncBackToLanding(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(3);
+  const obj = require("c");
+  const tmp = _require;
+  const tmp2 = navigation;
+  navigation = require("useNavigation").useNavigation();
+  if (cResult[0] === navigation) {
+    if (cResult[1] === arg0) {
+      let tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  let obj2 = require("useNavigation");
+  const tmp6 = tmp(tmp2[3]).getHeaderBackButton(() => {
+    if (null != closure_0.navigateToLandingPage) {
+      const result = closure_0.navigateToLandingPage();
+    } else {
+      ContactSyncModalActionCreators.goBackToLanding(navigation);
+    }
+  }, true)(arg0);
+  cResult[0] = navigation;
+  cResult[1] = arg0;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
   _require = arg0;
   dependencyMap = require("useNavigation").useNavigation();
   const obj = require("useNavigation");
@@ -23,4 +48,4 @@ export default function ContactSyncBackToLanding(arg0) {
       ContactSyncModalActionCreators.goBackToLanding(closure_1);
     }
   }, true)(arg0);
-};
+});

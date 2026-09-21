@@ -1,9 +1,9 @@
 // Module ID: 2549
 // Function ID: 2550
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 2549
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2dpZnRpbmc=", scales: [1], hash: "9143fa49c8f4a37bf560ffc23b25b804", name: "da.messages.9143fa49c8f4a37bf560ffc23b25b804.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/powerups", scales: [1], hash: "b24e9223725c6bf5ddf729ce5a676b3b", name: "GuildPowerups.compiled.messages", type: "jsona" });

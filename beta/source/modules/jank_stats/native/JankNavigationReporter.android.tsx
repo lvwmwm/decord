@@ -1,20 +1,20 @@
-// Module ID: 17815
-// Function ID: 17816
+// Module ID: 17818
+// Function ID: 17819
 // Name: JankNavigationReporter
-// Dependencies: [4614, 16348, 16344, 16349, 4616, 2]
+// Dependencies: [4617, 16350, 16346, 16351, 4619, 2]
 
-// Module 17815 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import getJankScreenName from "getJankScreenName" /* 16344 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16348 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16349 */;
+// Module 17818 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+import getJankScreenName from "getJankScreenName" /* 16346 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16350 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16351 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "PX_16" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Set" });
   }
 }
 const prototype = JankNavigationReporter.prototype;
@@ -87,8 +87,8 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
     }
     let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
     if (isChatLockedOpen) {
-      isChatLockedOpen = tmp4(4616).getChatLayout().isChatLockedOpen;
-      const tmp4Result = tmp4(4616);
+      isChatLockedOpen = tmp4(4619).getChatLayout().isChatLockedOpen;
+      const tmp4Result = tmp4(4619);
     }
     tmp2 = isChatLockedOpen;
     tmp4 = require;
@@ -97,4 +97,4 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
 };
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "PX_16" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Set" });

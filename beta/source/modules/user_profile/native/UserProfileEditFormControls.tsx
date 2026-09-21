@@ -1,28 +1,74 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 14883
+// Function ID: 14884
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4752, 8940, 1177, 1115, 6849, 5339, 5829, 1364, 7446, 2]
-// Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4754, 8938, 1181, 1119, 5829, 5341, 7174, 1368, 7447, 2]
 
-// Module 14894 (UserProfileEditFormControls)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
-import Input from "Input" /* 6849 */;
-import FormSwitch from "FormSwitch" /* 7446 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8940 */;
+// Module 14883 (UserProfileEditFormControls)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import Pressables from "Pressables" /* 5341 */;
+import Input from "Input" /* 7174 */;
+import FormSwitch from "FormSwitch" /* 7447 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8938 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-function FormControlText(children) {
+get_ActivityIndicator = fn(17);
+({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
+const jsxProd = fn(21);
+({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { button: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md }, buttonDisabled: { opacity: 0.5 }, buttonTextContainer: { flexGrow: 1, flexShrink: 1, flexDirection: "column" }, formControlText: { marginRight: "auto", flexShrink: 1 }, labelTrailing: null, newBadge: null };
+let obj3 = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md };
+obj2.labelTrailing = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
+obj2.newBadge = { paddingTop: 0 };
+let closure_8 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+  const cResult = c.c(3);
+  text = text.text;
+  const tmp4 = closure_8();
+  if (cResult[0] === tmp4.formControlText) {
+    if (cResult[1] === text) {
+      let tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const tmp6 = timestampProducer(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", style: tmp4.formControlText, children: text });
+  cResult[0] = tmp4.formControlText;
+  cResult[1] = text;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((children) => {
   const tmp = closure_8();
   return timestampProducer(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", style: closure_8().formControlText, children: children.text });
-}
-function FormControlSubtext(text) {
+});
+ReactCompilerGating = fn(558);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+  let Text = require;
+  let tmp = dependencyMap;
+  const cResult = c.c(3);
+  text = text.text;
+  let formControlText = closure_8();
+  if (null == text) {
+    return null;
+  } else {
+    if (cResult[0] === formControlText.formControlText) {
+    }
+    Text = Text_Text.Text;
+    const obj2 = { variant: "text-xs/medium", color: "text-muted", style: formControlText.formControlText, children: text };
+    tmp = timestampProducer(Text, obj2);
+    formControlText = formControlText.formControlText;
+    cResult[0] = formControlText;
+    cResult[1] = text;
+    cResult[2] = tmp;
+  }
+}) : ((text) => {
   text = text.text;
   let tmp2 = null;
   if (null != text) {
@@ -30,21 +76,61 @@ function FormControlSubtext(text) {
     tmp2 = timestampProducer(Text_Text.Text, obj);
   }
   return tmp2;
-}
-get_ActivityIndicator = fn(17);
-({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const jsxProd = fn(21);
-({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { button: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md }, buttonDisabled: { opacity: 0.5 }, buttonTextContainer: { flexGrow: 1, flexShrink: 1, flexDirection: "column" }, formControlText: { marginRight: "auto", flexShrink: 1 }, labelTrailing: null, newBadge: null };
-let obj3 = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md };
-obj2.labelTrailing = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
-obj2.newBadge = { paddingTop: 0 };
-let closure_8 = createStyles.createStyles(obj2);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
-
-export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelBadges(showPremiumIcon) {
+});
+fn(558);
+let obj4 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
+ReactCompilerGating = fn(558);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(9);
+  ({ showPremiumIcon, showNewBadge } = arg0);
+  let labelTrailing = closure_8();
+  if (!(undefined !== showPremiumIcon && showPremiumIcon)) {
+    if (!tmp5) {
+      return null;
+    }
+  }
+  if (cResult[0] !== (undefined !== showPremiumIcon && showPremiumIcon)) {
+    let tmp8 = null;
+    if (tmp4) {
+      tmp8 = timestampProducer(tmp(8938).NitroWheelIcon, { size: "xs" });
+    }
+    cResult[0] = tmp4;
+    cResult[1] = tmp8;
+    let tmp7 = tmp8;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === (undefined !== showNewBadge && showNewBadge)) {
+    if (cResult[3] === labelTrailing.newBadge) {
+      let tmp10 = cResult[4];
+    }
+    if (cResult[5] === labelTrailing.labelTrailing) {
+      if (cResult[6] === tmp7) {
+      }
+    }
+    const obj2 = { style: labelTrailing.labelTrailing, "aria-hidden": true, children: null };
+    const items = [tmp7, tmp10];
+    obj2.children = items;
+    const tmp16 = React5(hasOwnProperty, obj2);
+    labelTrailing = labelTrailing.labelTrailing;
+    cResult[5] = labelTrailing;
+    cResult[6] = tmp7;
+    cResult[7] = tmp10;
+    cResult[8] = tmp16;
+  }
+  let tmp11 = null;
+  if (undefined !== showNewBadge && showNewBadge) {
+    const obj3 = { text: null, style: null };
+    const intl = tmp(1119).intl;
+    obj3.text = intl.string(tmp(1119).t.y2b7CA);
+    obj3.style = labelTrailing.newBadge;
+    tmp11 = timestampProducer(tmp(1181).TextBadge, obj3);
+  }
+  cResult[2] = undefined !== showNewBadge && showNewBadge;
+  cResult[3] = labelTrailing.newBadge;
+  cResult[4] = tmp11;
+  tmp10 = tmp11;
+}) : ((showPremiumIcon) => {
   let flag = showPremiumIcon.showPremiumIcon;
   if (flag === undefined) {
     flag = false;
@@ -76,8 +162,144 @@ export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelB
     tmp3Result = null;
   }
   return tmp3Result;
-};
-export const UserProfileEditFormButton = function UserProfileEditFormButton(loading) {
+});
+ReactCompilerGating = fn(558);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(31);
+  ({ label, labelTrailing, buttonText, buttonSubtext, content, onPress, leading, trailing, accessibilityValue, disabled, loading, hideArrow } = arg0);
+  const tmp7 = closure_8();
+  let buttonDisabled = tmp4;
+  if (undefined !== disabled && disabled) {
+    buttonDisabled = tmp7.buttonDisabled;
+  }
+  if (cResult[0] === tmp7.button) {
+    if (cResult[1] === buttonDisabled) {
+      let tmp8 = cResult[2];
+    }
+    if (cResult[3] !== tmp4) {
+      let stringResult;
+      if (!tmp4) {
+        const intl = tmp(1119).intl;
+        stringResult = intl.string(tmp(1119).t["4lAcxv"]);
+      }
+      cResult[3] = tmp4;
+      cResult[4] = stringResult;
+      let tmp9 = stringResult;
+    } else {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp4) {
+      if (cResult[6] === tmp5) {
+        let tmp11 = cResult[7];
+      }
+      if (cResult[8] === buttonSubtext) {
+        if (cResult[9] === buttonText) {
+          if (cResult[10] === content) {
+            if (cResult[11] === tmp7.buttonTextContainer) {
+              let tmp12 = cResult[12];
+            }
+            if (cResult[13] !== tmp6) {
+              let tmp23 = !tmp6;
+              if (!tmp6) {
+                tmp23 = timestampProducer(tmp(5829).TableRowArrow, {});
+              }
+              cResult[13] = tmp6;
+              cResult[14] = tmp23;
+              let tmp22 = tmp23;
+            } else {
+              tmp22 = cResult[14];
+            }
+            if (cResult[15] === accessibilityValue) {
+              if (cResult[16] === tmp4) {
+                if (cResult[17] === label) {
+                  if (cResult[18] === leading) {
+                    if (cResult[19] === onPress) {
+                      if (cResult[20] === tmp8) {
+                        if (cResult[21] === tmp9) {
+                          if (cResult[22] === tmp11) {
+                            if (cResult[23] === tmp12) {
+                              if (cResult[24] === tmp22) {
+                                if (cResult[25] === trailing) {
+                                  let tmp25 = cResult[26];
+                                }
+                                if (cResult[27] === label) {
+                                  if (cResult[28] === labelTrailing) {
+                                    if (cResult[29] === tmp25) {
+                                      let tmp28 = cResult[30];
+                                    }
+                                    return tmp28;
+                                  }
+                                }
+                                const obj2 = { label, labelTrailing, children: tmp25 };
+                                const tmp30 = timestampProducer(tmp(7174).Input, obj2);
+                                cResult[27] = label;
+                                cResult[28] = labelTrailing;
+                                cResult[29] = tmp25;
+                                cResult[30] = tmp30;
+                                tmp28 = tmp30;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            const obj3 = { onPress, style: tmp8, accessibilityRole: "button", accessibilityLabel: label, accessibilityValue, accessibilityHint: tmp9, accessibilityState: tmp11, disabled: tmp4, children: null };
+            const items = [leading, tmp12, trailing, tmp22];
+            obj3.children = items;
+            const tmp27 = React5(tmp(5341).PressableHighlight, obj3);
+            cResult[15] = accessibilityValue;
+            cResult[16] = tmp4;
+            cResult[17] = label;
+            cResult[18] = leading;
+            cResult[19] = onPress;
+            cResult[20] = tmp8;
+            cResult[21] = tmp9;
+            cResult[22] = tmp11;
+            cResult[23] = tmp12;
+            cResult[24] = tmp22;
+            cResult[25] = trailing;
+            cResult[26] = tmp27;
+            tmp25 = tmp27;
+          }
+        }
+      }
+      let tmp15Result = content;
+      if (content == null) {
+        const obj4 = { style: tmp7.buttonTextContainer, children: null };
+        let tmp17 = null != buttonText;
+        if (tmp17) {
+          const obj5 = { text: buttonText };
+          tmp17 = timestampProducer(closure_9, obj5);
+        }
+        const items1 = [tmp17, ];
+        const obj6 = { text: buttonSubtext };
+        items1[1] = timestampProducer(closure_10, obj6);
+        obj4.children = items1;
+        tmp15Result = React5(hasOwnProperty, obj4);
+      }
+      cResult[8] = buttonSubtext;
+      cResult[9] = buttonText;
+      cResult[10] = content;
+      cResult[11] = tmp7.buttonTextContainer;
+      cResult[12] = tmp15Result;
+      tmp12 = tmp15Result;
+    }
+    const obj7 = { disabled: tmp4, busy: tmp5 };
+    cResult[5] = tmp4;
+    cResult[6] = tmp5;
+    cResult[7] = obj7;
+    tmp11 = obj7;
+  }
+  const items2 = [tmp7.button, buttonDisabled];
+  cResult[0] = tmp7.button;
+  cResult[1] = buttonDisabled;
+  cResult[2] = items2;
+  tmp8 = items2;
+}) : ((loading) => {
   ({ label, buttonText, content, disabled } = loading);
   ({ labelTrailing, buttonSubtext, onPress, leading, trailing, accessibilityValue } = loading);
   if (disabled === undefined) {
@@ -105,8 +327,8 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   obj2.accessibilityValue = accessibilityValue;
   let stringResult;
   if (!disabled) {
-    const intl = tmp3(1115).intl;
-    stringResult = intl.string(tmp3(1115).t["4lAcxv"]);
+    const intl = tmp3(1119).intl;
+    stringResult = intl.string(tmp3(1119).t["4lAcxv"]);
   }
   obj2.accessibilityHint = stringResult;
   obj2.accessibilityState = { disabled, busy: flag };
@@ -117,11 +339,11 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
     let tmp2Result = null != buttonText;
     if (tmp2Result) {
       const obj4 = { text: buttonText };
-      tmp2Result = tmp2(FormControlText, obj4);
+      tmp2Result = tmp2(closure_9, obj4);
     }
     const items2 = [tmp2Result, ];
     const obj5 = { text: buttonSubtext };
-    items2[1] = tmp2(FormControlSubtext, obj5);
+    items2[1] = tmp2(closure_10, obj5);
     obj3.children = items2;
     content = tmp5(hasOwnProperty, obj3);
   }
@@ -135,8 +357,206 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   obj2.children = items1;
   obj.children = React5(Pressables.PressableHighlight, obj2);
   return timestampProducer(Input.Input, obj);
-};
-export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
+});
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
+
+export const UserProfileEditFormLabelBadges = tmp4;
+export const UserProfileEditFormButton = tmp5;
+export const UserProfileEditFormSwitch = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueChange) => {
+  const cResult = c.c(31);
+  ({ label, subLabel, value } = onValueChange);
+  require = value;
+  onValueChange = onValueChange.onValueChange;
+  ({ accessibilityLabel, accessibilityHint, disabled } = onValueChange);
+  closure_8();
+  const isAndroidResult = PlatformUtils.isAndroid();
+  const obj3 = noop;
+  let tmpResult = PlatformUtils;
+  [tmp8, _slicedToArray] = noop.useState(value);
+  if (cResult[0] === onValueChange) {
+    if (cResult[1] === value) {
+      let tmp9 = cResult[2];
+    }
+    if (cResult[3] !== value) {
+      class H {
+        constructor() {
+          tmp = closure_2(value);
+          return;
+        }
+      }
+      const items = [value];
+      class V {
+        constructor() {
+          tmp = closure_2(!value);
+          timerId = setTimeout(() => {
+            if (onValueChange != null) {
+              tmp(!closure_1_0);
+            }
+          });
+          return;
+        }
+      }
+      cResult[4] = H;
+      cResult[5] = items;
+      let tmp11 = items;
+      const tmp10 = H;
+    } else {
+      class H {
+        constructor() {
+          tmp = closure_2(value);
+          return;
+        }
+      }
+      tmp11 = cResult[5];
+    }
+    const effect = obj3.useEffect(tmp10, tmp11);
+    if (cResult[6] === onValueChange) {
+      class H {
+        constructor() {
+          tmp = closure_2(value);
+          return;
+        }
+      }
+      if (isAndroidResult) {
+        class H {
+          constructor() {
+            tmp = closure_2(value);
+            return;
+          }
+        }
+      } else {
+        class H {
+          constructor() {
+            tmp = closure_2(value);
+            return;
+          }
+        }
+      }
+      if (isAndroidResult) {
+        class H {
+          constructor() {
+            tmp = closure_2(value);
+            return;
+          }
+        }
+      }
+      class V {
+        constructor() {
+          tmp = closure_2(!value);
+          timerId = setTimeout(() => {
+            if (onValueChange != null) {
+              tmp(!closure_1_0);
+            }
+          });
+          return;
+        }
+      }
+      if (accessibilityLabel == null) {
+        class H {
+          constructor() {
+            tmp = closure_2(value);
+            return;
+          }
+        }
+      }
+      if (cResult[9] === tmp8) {
+        class H {
+          constructor() {
+            tmp = closure_2(value);
+            return;
+          }
+        }
+        if (cResult[12] !== subLabel) {
+          class H {
+            constructor() {
+              tmp = closure_2(value);
+              return;
+            }
+          }
+          { text: null }.text = subLabel;
+          class V {
+            constructor() {
+              tmp = closure_2(!value);
+              timerId = setTimeout(() => {
+                if (onValueChange != null) {
+                  tmp(!closure_1_0);
+                }
+              });
+              return;
+            }
+          }
+          cResult[12] = subLabel;
+          cResult[13] = tmp17;
+          const obj2 = { text: null };
+        } else {
+          class H {
+            constructor() {
+              tmp = closure_2(value);
+              return;
+            }
+          }
+        }
+        if (cResult[14] === tmp4) {
+          class H {
+            constructor() {
+              tmp = closure_2(value);
+              return;
+            }
+          }
+        }
+        class V {
+          constructor() {
+            tmp = closure_2(!value);
+            timerId = setTimeout(() => {
+              if (onValueChange != null) {
+                tmp(!closure_1_0);
+              }
+            });
+            return;
+          }
+        }
+        tmp20[1] = value;
+        tmp20[2] = tmp9;
+        tmp20[3] = tmp4;
+        const tmp21 = timestampProducer(tmp(7447).FormSwitch, tmp20);
+        cResult[14] = tmp4;
+        cResult[15] = tmp9;
+        cResult[16] = value;
+        cResult[17] = tmp21;
+      }
+      const obj4 = { disabled: tmp4, checked: tmp8 };
+      cResult[9] = tmp8;
+      cResult[10] = tmp4;
+      cResult[11] = obj4;
+    }
+    class V {
+      constructor() {
+        tmp = closure_2(!value);
+        timerId = setTimeout(() => {
+          if (onValueChange != null) {
+            tmp(!closure_1_0);
+          }
+        });
+        return;
+      }
+    }
+    cResult[6] = onValueChange;
+    cResult[7] = value;
+    cResult[8] = V;
+  }
+  const fn = function s() {
+    let tmpResult;
+    if (onValueChange != null) {
+      tmpResult = tmp(!value);
+    }
+    return tmpResult;
+  };
+  cResult[0] = onValueChange;
+  cResult[1] = value;
+  cResult[2] = fn;
+  tmp9 = fn;
+}) : ((arg0) => {
   ({ subLabel, value } = arg0);
   require = value;
   ({ onValueChange: dependencyMap, accessibilityLabel, disabled } = arg0);
@@ -153,7 +573,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(5339).PressableHighlight;
+    let PressableHighlight = tmp2(5341).PressableHighlight;
   } else {
     PressableHighlight = React4;
   }
@@ -194,8 +614,8 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   obj3.accessibilityHint = accessibilityHint;
   obj3.accessibilityState = { disabled, checked: tmp5[0] };
   obj3.disabled = disabled;
-  const items1 = [timestampProducer(FormControlText, { text: subLabel }), timestampProducer(FormSwitch.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  const items1 = [timestampProducer(closure_9, { text: subLabel }), timestampProducer(FormSwitch.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj3.children = items1;
   obj2.children = React5(PressableHighlight, obj3);
   return timestampProducer(Input.Input, obj2);
-};
+});

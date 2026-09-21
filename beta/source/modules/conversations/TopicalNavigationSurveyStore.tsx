@@ -1,11 +1,11 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8157
+// Function ID: 8158
 // Name: TopicalNavigationSurveyStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 8152 (TopicalNavigationSurveyStore)
+// Module 8157 (TopicalNavigationSurveyStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const channelsExposedCount = 0;
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;

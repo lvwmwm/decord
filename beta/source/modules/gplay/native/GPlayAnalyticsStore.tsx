@@ -1,17 +1,17 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 9480
+// Function ID: 9481
 // Name: GPlayAnalyticsStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [562, 1252, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 9482 (GPlayAnalyticsStore)
-import module_560 from "module_560" /* 560 */;
+// Module 9480 (GPlayAnalyticsStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let closure_2 = Object.freeze({ analyticsByProductId: {} });
-const useGPlayAnalyticsStore = module_560.create(() => closure_2);
+const useGPlayAnalyticsStore = module_562.create(() => closure_2);
 const result = size.fileFinishedImporting("modules/gplay/native/GPlayAnalyticsStore.tsx");
 
 export const setGPlayAnalytics = function setGPlayAnalytics(arg0, arg1) {

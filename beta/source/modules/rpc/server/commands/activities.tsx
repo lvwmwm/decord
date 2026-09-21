@@ -1,35 +1,35 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 14793
+// Function ID: 14794
 // Name: activities
-// Dependencies: [5, 1074, 14757, 14744, 9586, 9135, 9581, 14752, 9593, 2]
+// Dependencies: [5, 1078, 14760, 14747, 9582, 9133, 9577, 14755, 9589, 2]
 
-// Module 14790 (activities)
-import RPCHelpers from "RPCHelpers" /* 9586 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14744 */;
+// Module 14793 (activities)
+import RPCHelpers from "RPCHelpers" /* 9582 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14747 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: hasOwnProperty } = Constants);
 let obj = {};
-let CONTEXT_MENU_ICON_NAMES = fn(14757);
+let CONTEXT_MENU_ICON_NAMES = fn(14760);
 obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, {
-  scope: fn(14744).activityInstanceConnectedParticipantsScope,
+  scope: fn(14747).activityInstanceConnectedParticipantsScope,
   handler(socket) {
     const result = RPCHelpers.validatePostMessageTransport(socket.socket.transport);
     return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
   }
 });
-CONTEXT_MENU_ICON_NAMES = fn(14757);
+CONTEXT_MENU_ICON_NAMES = fn(14760);
 let obj3 = {
-  scope: fn(14744).activityInstanceConnectedParticipantsScope,
+  scope: fn(14747).activityInstanceConnectedParticipantsScope,
   handler(socket) {
     const result = RPCHelpers.validatePostMessageTransport(socket.socket.transport);
     return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();
   }
 };
 obj[RPCCommands.REQUEST_PROXY_TICKET_REFRESH] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.REQUEST_PROXY_TICKET_REFRESH, {
-  scope: fn(14744).activityInstanceConnectedParticipantsScope,
+  scope: fn(14747).activityInstanceConnectedParticipantsScope,
   handler(socket) {
     socket = socket.socket;
     return (async (arg0, value) => {
@@ -43,7 +43,7 @@ obj[RPCCommands.REQUEST_PROXY_TICKET_REFRESH] = CONTEXT_MENU_ICON_NAMES.createRP
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,18 +1,54 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11806
+// Function ID: 11807
 // Name: ForwardingAnalyticsUtils
-// Dependencies: [19, 2041, 1074, 1241, 4936, 12, 2]
-// Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
+// Dependencies: [19, 2045, 1078, 1245, 4938, 558, 568, 12, 2]
+// Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart
 
-// Module 11933 (ForwardingAnalyticsUtils)
+// Module 11806 (ForwardingAnalyticsUtils)
 import _mod12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
+import c from "c" /* 568 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+fn(558);
+let ReactCompilerGating = fn(558);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const onceResult = _mod12.once((channel_id, message_id, has_query) => {
+      AnalyticsUtilsDefault.track(constants.FORWARD_ADD_RECIPIENT, { channel_id, message_id, has_query });
+    });
+    cResult[0] = onceResult;
+    let first = onceResult;
+    const tmpResult = _mod12;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => noop.useMemo(() => _mod12.once((channel_id, message_id, has_query) => {
+  closure_1_1(closure_1_2[3]).track(constants.FORWARD_ADD_RECIPIENT, { channel_id, message_id, has_query });
+}), []));
+ReactCompilerGating = fn(558);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const onceResult = _mod12.once((channel_id, message_id) => {
+      AnalyticsUtilsDefault.track(constants.FORWARD_EDIT_SEARCH, { channel_id, message_id });
+    });
+    cResult[0] = onceResult;
+    let first = onceResult;
+    const tmpResult = _mod12;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => noop.useMemo(() => _mod12.once((channel_id, message_id) => {
+  closure_1_1(closure_1_2[3]).track(constants.FORWARD_EDIT_SEARCH, { channel_id, message_id });
+}), []));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forwarding/ForwardingAnalyticsUtils.tsx");
 
@@ -37,26 +73,29 @@ export const trackForwardSent = function trackForwardSent(arg0) {
       guild_id = channel.guild_id;
     }
     const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(guild_id));
-    const merged1 = Object.assign(tmp13(4936).collectChannelAnalyticsMetadata(channel));
+    const merged1 = Object.assign(tmp13(4938).collectChannelAnalyticsMetadata(channel));
     tmpResult.track(AnalyticEvents.MESSAGE_SHORTCUT_ACTION_SENT, obj2);
-    const tmp13Result = tmp13(4936);
+    const tmp13Result = tmp13(4938);
   }
 };
 export const trackForwardCopyLink = function trackForwardCopyLink(channel_id, id) {
   AnalyticsUtilsDefault.track(AnalyticEvents.FORWARD_COPY_LINK, { channel_id, message_id: id });
 };
-export const useTrackForwardAddRecipientOnce = function useTrackForwardAddRecipientOnce() {
-  return noop.useMemo(() => _mod12.once((channel_id, message_id, has_query) => {
-    closure_1_1(closure_1_2[3]).track(constants.FORWARD_ADD_RECIPIENT, { channel_id, message_id, has_query });
-  }), []);
-};
-export const useTrackForwardEditSearchOnce = function useTrackForwardEditSearchOnce() {
-  return noop.useMemo(() => _mod12.once((channel_id, message_id) => {
-    closure_1_1(closure_1_2[3]).track(constants.FORWARD_EDIT_SEARCH, { channel_id, message_id });
-  }), []);
-};
-export const useTrackForwardEditContextMessageOnce = function useTrackForwardEditContextMessageOnce() {
-  return noop.useMemo(() => _mod12.once((channel_id, message_id) => {
-    closure_1_1(closure_1_2[3]).track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, { channel_id, message_id });
-  }), []);
-};
+export const useTrackForwardAddRecipientOnce = tmp2;
+export const useTrackForwardEditSearchOnce = tmp3;
+export const useTrackForwardEditContextMessageOnce = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const onceResult = _mod12.once((channel_id, message_id) => {
+      AnalyticsUtilsDefault.track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, { channel_id, message_id });
+    });
+    cResult[0] = onceResult;
+    let first = onceResult;
+    const tmpResult = _mod12;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => noop.useMemo(() => _mod12.once((channel_id, message_id) => {
+  closure_1_1(closure_1_2[3]).track(constants.FORWARD_EDIT_CONTEXT_MESSAGE, { channel_id, message_id });
+}), []));

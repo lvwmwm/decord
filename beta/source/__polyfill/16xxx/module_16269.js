@@ -1,9 +1,20 @@
 // Module ID: 16269
 // Function ID: 16270
-// Dependencies: [1121]
+// Dependencies: [19, 16267]
+// Exports: default
 
 // Module 16269
-import registerAsset from "module_1121" /* 1121 */;
+import _modDef16267 from "module_16267" /* 16267 */;
+import noop from "module_19" /* 19 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9dbd634929394ed3a7c5482d60abf290", name: "StopIcon", type: "png" });
+export default function useReanimatedTransitionProgress() {
+  const context = noop.useContext(_modDef16267);
+  if (undefined === context) {
+    const _Error = Error;
+    const error = new Error("Couldn't find values for reanimated transition progress. Are you inside a screen in Native Stack?");
+    throw error;
+  } else {
+    return context;
+  }
+};

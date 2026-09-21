@@ -1,13 +1,13 @@
-// Module ID: 2078
-// Function ID: 2079
+// Module ID: 2082
+// Function ID: 2083
 // Name: Database
-// Dependencies: [5, 2079, 2077, 2080, 10, 2]
+// Dependencies: [5, 2083, 2081, 2084, 10, 2]
 
-// Module 2078 (Database)
+// Module 2082 (Database)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import TableId from "TableId" /* 2077 */;
-import Host2 from "Host" /* 2079 */;
-import Runtime2 from "Runtime" /* 2080 */;
+import TableId from "TableId" /* 2081 */;
+import Host2 from "Host" /* 2083 */;
+import Runtime2 from "Runtime" /* 2084 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -47,9 +47,9 @@ Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
     const obj = Object.create(tmp.prototype);
     obj.raw = openSyncUnsafeResult;
     obj.name = openSyncUnsafeResult.name;
-    obj.lastState = tmp2(2077).DatabaseState.Open;
+    obj.lastState = tmp2(2081).DatabaseState.Open;
     obj.handle = openSyncUnsafeResult.handle;
-    const Runtime = tmp2(2080).Runtime;
+    const Runtime = tmp2(2084).Runtime;
     obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
       if (obj.handle === arg0) {
         tmp.lastState = lastState;
@@ -203,7 +203,7 @@ prototype["instantaneousStateAsync"] = function instantaneousStateAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

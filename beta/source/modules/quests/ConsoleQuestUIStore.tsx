@@ -1,14 +1,14 @@
-// Module ID: 7940
-// Function ID: 7941
+// Module ID: 7945
+// Function ID: 7946
 // Name: ConsoleQuestUIStore
-// Dependencies: [560, 2]
+// Dependencies: [562, 2]
 
-// Module 7940 (ConsoleQuestUIStore)
-import module_560 from "module_560" /* 560 */;
+// Module 7945 (ConsoleQuestUIStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = [];
-let obj = module_560.create((arg0, arg1) => {
+let obj = module_562.create((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   let obj = {

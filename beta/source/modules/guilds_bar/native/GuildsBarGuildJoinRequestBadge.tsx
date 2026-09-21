@@ -1,45 +1,98 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16640
+// Function ID: 16641
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4756, 576, 5658, 4580, 16639, 16640, 16641, 12543, 5804, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 5660, 4583, 16641, 16642, 16643, 12437, 558, 568, 5802, 2]
 
-// Module 16638 (GuildsBarGuildJoinRequestBadge)
-import nativeDefault from "native" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef12543 from "module_12543" /* 12543 */;
-import _modDef16639 from "module_16639" /* 16639 */;
-import _modDef16640 from "module_16640" /* 16640 */;
+// Module 16640 (GuildsBarGuildJoinRequestBadge)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import _modDef12437 from "module_12437" /* 12437 */;
 import _modDef16641 from "module_16641" /* 16641 */;
+import _modDef16642 from "module_16642" /* 16642 */;
+import _modDef16643 from "module_16643" /* 16643 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { badgeImageContainer: null, badgeImage: null };
 let size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 3, borderRadius: 11, justifyContent: "center", alignItems: "center", overflow: "hidden" };
 obj2.badgeImageContainer = size;
-const size1 = { height: 16, width: 16, opacity: fn(5658).DARK_1_LIGHT_08 };
+const size1 = { height: 16, width: 16, opacity: fn(5660).DARK_1_LIGHT_08 };
 obj2.badgeImage = size1;
 let closure_5 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx");
 
-export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(11);
+  ({ style, joinRequestState } = arg0);
+  const tmp4 = closure_5();
+  if (cResult[0] !== joinRequestState) {
+    if (tmp(4583).GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
+      let tmp6 = _modDef16641;
+    } else {
+      if (tmp(4583).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+        tmp6 = _modDef16642;
+      } else if (tmp(4583).GuildJoinRequestApplicationStatuses.STARTED !== joinRequestState) {
+        tmp6 = null;
+        if (tmp(4583).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+          tmp6 = _modDef12437;
+        }
+      }
+      tmp6 = _modDef16643;
+    }
+    cResult[0] = joinRequestState;
+    cResult[1] = tmp6;
+  } else if (null == cResult[1]) {
+    return null;
+  } else {
+    if (cResult[2] === style) {
+      if (cResult[3] === tmp4.badgeImageContainer) {
+        let tmp13 = cResult[4];
+      }
+      if (cResult[5] === tmp5) {
+        if (cResult[6] === tmp4.badgeImage) {
+          let tmp14 = cResult[7];
+        }
+        if (cResult[8] === tmp13) {
+        }
+        const obj2 = { pointerEvents: "none", style: tmp13, children: tmp14 };
+        const tmp21 = <View pointerEvents="none" style={tmp13}>{tmp14}</View>;
+        cResult[8] = tmp13;
+        cResult[9] = tmp14;
+        cResult[10] = tmp21;
+      }
+      const obj3 = { source: tmp5, style: tmp4.badgeImage };
+      const tmp17 = jsx(FastImageDefault, { source: tmp5, style: tmp4.badgeImage });
+      cResult[5] = tmp5;
+      cResult[6] = tmp4.badgeImage;
+      cResult[7] = tmp17;
+      tmp14 = tmp17;
+    }
+    const items = [tmp4.badgeImageContainer, style];
+    cResult[2] = style;
+    cResult[3] = tmp4.badgeImageContainer;
+    cResult[4] = items;
+    tmp13 = items;
+  }
+}) : ((joinRequestState) => {
   joinRequestState = joinRequestState.joinRequestState;
   const tmp = closure_5();
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === joinRequestState) {
-    let tmp4 = _modDef16639;
-  } else if (tmp2(4580).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
-    tmp4 = _modDef16640;
-  } else if (tmp2(4580).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
-    tmp4 = _modDef16641;
+    let tmp4 = _modDef16641;
+  } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.SUBMITTED === joinRequestState) {
+    tmp4 = _modDef16642;
+  } else if (tmp2(4583).GuildJoinRequestApplicationStatuses.STARTED === joinRequestState) {
+    tmp4 = _modDef16643;
   } else {
     tmp4 = null;
-    if (tmp2(4580).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
-      tmp4 = _modDef12543;
+    if (tmp2(4583).GuildJoinRequestApplicationStatuses.APPROVED === joinRequestState) {
+      tmp4 = _modDef12437;
     }
   }
   let tmp9 = null;
@@ -52,4 +105,4 @@ export default function GuildsBarGuildJoinRequestBadge(joinRequestState) {
     tmp9 = <View pointerEvents="none" style={null}>{null}</View>;
   }
   return tmp9;
-};
+});

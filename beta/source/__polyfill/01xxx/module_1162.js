@@ -1,204 +1,443 @@
 // Module ID: 1162
 // Function ID: 1163
-// Dependencies: []
-// Exports: parseDateTimeSkeleton
+// Dependencies: [93, 95, 98, 158, 42, 41, 1163, 1164]
 
 // Module 1162
-const re0 = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
+import c2 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-export const parseDateTimeSkeleton = function parseDateTimeSkeleton(str) {
-  const obj = {};
-  const replaced = str.replace(re0, (arg0) => {
-    switch (arg0[0]) {
-      case "G":
-        let str19 = "long";
-        if (4 !== length) {
-          let str20 = "short";
-          if (5 === length) {
-            str20 = "narrow";
-          }
-          str19 = str20;
-        }
-        obj.era = str19;
-        return "";
-      case "y":
-        let str18 = "numeric";
-        if (2 === length) {
-          str18 = "2-digit";
-        }
-        obj.year = str18;
-      break;
-      case "Y":
-        let _RangeError10 = RangeError;
-        let rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "u":
-        _RangeError10 = RangeError;
-        rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "U":
-        _RangeError10 = RangeError;
-        rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "r":
-        _RangeError10 = RangeError;
-        rangeError = new RangeError("`Y/u/U/r` (year) patterns are not supported, use `y` instead");
-        throw rangeError;
-      case "q":
-        let _RangeError9 = RangeError;
-        let rangeError1 = new RangeError("`q/Q` (quarter) patterns are not supported");
-        throw rangeError1;
-      case "Q":
-        _RangeError9 = RangeError;
-        rangeError1 = new RangeError("`q/Q` (quarter) patterns are not supported");
-        throw rangeError1;
-      case "M":
-        let diff = length - 1;
-        let items = ["numeric", "2-digit", "short", "long", "narrow"];
-        obj.month = items[diff];
-      break;
-      case "L":
-        diff = length - 1;
-        items = ["numeric", "2-digit", "short", "long", "narrow"];
-        obj.month = items[diff];
-      break;
-      case "w":
-        let _RangeError8 = RangeError;
-        let rangeError2 = new RangeError("`w/W` (week) patterns are not supported");
-        throw rangeError2;
-      case "W":
-        _RangeError8 = RangeError;
-        rangeError2 = new RangeError("`w/W` (week) patterns are not supported");
-        throw rangeError2;
-      case "d":
-        obj.day = ["numeric", "2-digit"][length - 1];
-      break;
-      case "D":
-        let _RangeError7 = RangeError;
-        let rangeError3 = new RangeError("`D/F/g` (day) patterns are not supported, use `d` instead");
-        throw rangeError3;
-      case "F":
-        _RangeError7 = RangeError;
-        rangeError3 = new RangeError("`D/F/g` (day) patterns are not supported, use `d` instead");
-        throw rangeError3;
-      case "g":
-        _RangeError7 = RangeError;
-        rangeError3 = new RangeError("`D/F/g` (day) patterns are not supported, use `d` instead");
-        throw rangeError3;
-      case "E":
-        let str12 = "long";
-        if (4 !== length) {
-          let str13 = "short";
-          if (5 === length) {
-            str13 = "narrow";
-          }
-          str12 = str13;
-        }
-        obj.weekday = str12;
-      break;
-      case "e":
-        if (length < 4) {
-          const _RangeError6 = RangeError;
-          const rangeError4 = new RangeError("`e..eee` (weekday) patterns are not supported");
-          throw rangeError4;
-        } else {
-          obj.weekday = ["short", "long", "narrow", "short"][length - 4];
-        }
-      break;
-      case "c":
-        if (length < 4) {
-          const _RangeError5 = RangeError;
-          const rangeError5 = new RangeError("`c..ccc` (weekday) patterns are not supported");
-          throw rangeError5;
-        } else {
-          obj.weekday = ["short", "long", "narrow", "short"][length - 4];
-        }
-      break;
-      case "a":
-        obj.hour12 = true;
-      break;
-      case "b":
-        let _RangeError4 = RangeError;
-        let rangeError6 = new RangeError("`b/B` (period) patterns are not supported, use `a` instead");
-        throw rangeError6;
-      case "B":
-        _RangeError4 = RangeError;
-        rangeError6 = new RangeError("`b/B` (period) patterns are not supported, use `a` instead");
-        throw rangeError6;
-      case "h":
-        obj.hourCycle = "h12";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "H":
-        obj.hourCycle = "h23";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "K":
-        obj.hourCycle = "h11";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "k":
-        obj.hourCycle = "h24";
-        obj.hour = ["numeric", "2-digit"][length - 1];
-      break;
-      case "j":
-        let _RangeError3 = RangeError;
-        let rangeError7 = new RangeError("`j/J/C` (hour) patterns are not supported, use `h/H/K/k` instead");
-        throw rangeError7;
-      case "J":
-        _RangeError3 = RangeError;
-        rangeError7 = new RangeError("`j/J/C` (hour) patterns are not supported, use `h/H/K/k` instead");
-        throw rangeError7;
-      case "C":
-        _RangeError3 = RangeError;
-        rangeError7 = new RangeError("`j/J/C` (hour) patterns are not supported, use `h/H/K/k` instead");
-        throw rangeError7;
-      case "m":
-        obj.minute = ["numeric", "2-digit"][length - 1];
-      break;
-      case "s":
-        obj.second = ["numeric", "2-digit"][length - 1];
-      break;
-      case "S":
-        let _RangeError2 = RangeError;
-        let rangeError8 = new RangeError("`S/A` (second) patterns are not supported, use `s` instead");
-        throw rangeError8;
-      case "A":
-        _RangeError2 = RangeError;
-        rangeError8 = new RangeError("`S/A` (second) patterns are not supported, use `s` instead");
-        throw rangeError8;
-      case "z":
-        let str2 = "long";
-        if (length < 4) {
-          str2 = "short";
-        }
-        obj.timeZoneName = str2;
-      break;
-      case "Z":
-        let _RangeError = RangeError;
-        let rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "O":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "v":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "V":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "X":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
-      case "x":
-        _RangeError = RangeError;
-        rangeError9 = new RangeError("`Z/O/v/V/X/x` (timeZone) patterns are not supported, use `z` instead");
-        throw rangeError9;
+const MissingValueError = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-  });
-  return obj;
-};
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+function isRichTextTag(arg0) {
+  return "$" === arg0[0];
+}
+function bindFormatValuesWithBuilder(builder) {
+  let length;
+  let sum;
+  builder = builder.builder;
+  ({ originalMessage: dependencyMap, nodes } = builder);
+  ({ locales: _getPrototypeOf, values: _classCallCheck, dataFormatters: _isNativeReflectConstruct, formatConfig: isRichTextTag, currentPluralValue: closure_7, keyPrefix: bindFormatValuesWithBuilder } = builder);
+  if (1 === nodes.length) {
+    if (typeof nodes[0] === "string") {
+      builder.pushLiteralText(nodes[0]);
+    }
+  }
+  c9 = 0;
+  let num = 0;
+  if (0 < nodes.length) {
+    do {
+      let tmp = (function _loop() {
+        if (typeof nodes[v0] === "string") {
+          builder.pushLiteralText(tmp2);
+          return 0;
+        } else {
+          const first = tmp2[0];
+          if (first === builder(originalMessage[6]).FormatJsNodeType.Pound) {
+            if (typeof currentPluralValue === "number") {
+              builder.pushLiteralText(dataFormatters.formatNumber(tmp93));
+            }
+            return 0;
+          } else {
+            if (!(tmp2[1] in values)) {
+              if (!formatConfig(tmp100)) {
+                const tmp10 = new currentPluralValue(tmp100, closure_1, first);
+                throw tmp10;
+              }
+            }
+            builder = tmp12;
+            if (tmp98(tmp99[6]).FormatJsNodeType.Argument === first) {
+              if (typeof tmp12 !== "object") {
+                if (typeof tmp12 !== "function") {
+                  const _String = String;
+                  builder.pushLiteralText(String(tmp12));
+                }
+              }
+              builder.pushObject(tmp12);
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Date === first) {
+              if (tmp2[2] in formatConfig.date) {
+                let result = formatConfig.date[tmp83];
+              } else if (null != tmp83) {
+                result = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp83);
+              }
+              builder.pushLiteralText(dataFormatters.formatDate(tmp12, result));
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Time === first) {
+              if (tmp2[2] in formatConfig.time) {
+                let result1 = formatConfig.time[tmp76];
+              } else if (null != tmp76) {
+                result1 = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp76);
+              }
+              builder.pushLiteralText(dataFormatters.formatTime(tmp12, result1));
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Number === first) {
+              if (tmp2[2] in formatConfig.number) {
+                let parseNumberSkeletonResult = formatConfig.number[tmp67];
+              } else if (null != tmp67) {
+                parseNumberSkeletonResult = tmp98(tmp99[7]).parseNumberSkeleton(tmp98(tmp99[7]).parseNumberSkeletonFromString(tmp67));
+              }
+              let result2 = tmp12;
+              if (typeof tmp12 === "number") {
+                let scale;
+                if (null != parseNumberSkeletonResult) {
+                  scale = parseNumberSkeletonResult.scale;
+                }
+                let num5 = 1;
+                if (null !== scale) {
+                  num5 = 1;
+                  if (undefined !== scale) {
+                    num5 = scale;
+                  }
+                }
+                result2 = tmp12 * num5;
+              }
+              builder.pushLiteralText(dataFormatters.formatNumber(result2, parseNumberSkeletonResult));
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Tag === first) {
+              const obj2 = { Builder: builder.constructor, nodes: tmp2[2], locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue, keyPrefix: null };
+              const _HermesInternal5 = HermesInternal;
+              obj2.keyPrefix = "" + keyPrefix + "." + tmp;
+              const tmp49 = v0(obj2);
+              if (null != tmp2[3]) {
+                const obj3 = { Builder: obj6.constructor, nodes: tmp40, locales: tmp43, dataFormatters: tmp44, formatConfig: tmp45, values: tmp101, currentPluralValue: tmp46, keyPrefix: null };
+                const _HermesInternal6 = HermesInternal;
+                obj3.keyPrefix = "" + tmp47 + "." + tmp + "-control";
+                let items1 = tmp41(obj3);
+              } else {
+                items1 = [];
+              }
+              if (formatConfig(tmp100)) {
+                obj6.pushRichTextTag(tmp100, tmp49, items1);
+              } else if (typeof tmp12 !== "function") {
+                const _HermesInternal7 = HermesInternal;
+                throw "expected a function type for a Tag formatting value, " + tmp100 + ". got " + typeof tmp12 + ": " + tmp12;
+              } else {
+                const _HermesInternal8 = HermesInternal;
+                const tmp12Result = tmp12(tmp49, "" + tmp47 + "." + tmp);
+                const _Array = Array;
+                let tmp55 = tmp12Result;
+                if (!Array.isArray(tmp12Result)) {
+                  const items = [tmp12Result];
+                  tmp55 = items;
+                }
+                for (const item10128 of tmp55) {
+                  let tmp58 = item10128;
+                  if (typeof item10128 === "string") {
+                    let pushLiteralTextResult6 = builder.pushLiteralText(tmp58);
+                  } else {
+                    let pushObjectResult1 = builder.pushObject(tmp58);
+                  }
+                  continue;
+                }
+              }
+              tmp41 = v0;
+              tmp43 = locales;
+              tmp44 = dataFormatters;
+              tmp45 = formatConfig;
+              tmp46 = currentPluralValue;
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Select === first) {
+              const tmp26 = tmp12 in tmp2[2] ? tmp2[2][tmp12] : tmp2[2].other;
+              if (null == tmp26) {
+                const _Object2 = Object;
+                const keys = Object.keys(tmp25);
+                const _HermesInternal4 = HermesInternal;
+                throw "" + tmp12 + " is not a known option for select value " + tmp100 + ". Valid options are " + keys.join(", ");
+              } else {
+                const obj4 = { builder, nodes: tmp26, locales, dataFormatters, formatConfig, values: tmp101, keyPrefix: null };
+                const _HermesInternal3 = HermesInternal;
+                obj4.keyPrefix = "" + keyPrefix + "." + tmp;
+                keyPrefix(obj4);
+              }
+            } else if (tmp98(tmp99[6]).FormatJsNodeType.Plural === first) {
+              closure_1 = tmp102;
+              nodes = tmp103;
+              locales = tmp2[4];
+              const tmp104 = (() => {
+                const combined = "=" + closure_0;
+                if (combined in closure_1) {
+                  return tmp3[combined];
+                } else {
+                  const obj = { type };
+                  const pluralRules = dataFormatters.getPluralRules(obj);
+                  let num = 0;
+                  if (null != closure_2) {
+                    num = closure_2;
+                  }
+                  let other = tmp3[pluralRules.select(pluralRules, tmp - num)];
+                  if (null === other) {
+                    other = tmp3.other;
+                  }
+                  return other;
+                }
+                tmp = closure_0;
+              })();
+              if (null == tmp104) {
+                const _Object = Object;
+                const keys1 = Object.keys(tmp102);
+                const _HermesInternal2 = HermesInternal;
+                throw "" + tmp12 + " is not a known option for plural value " + tmp100 + ". Valid options are " + keys1.join(", ");
+              } else {
+                let obj = { builder, nodes: tmp104, locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue: null, keyPrefix: null };
+                let num2 = 0;
+                if (null != tmp103) {
+                  num2 = tmp103;
+                }
+                obj.currentPluralValue = tmp12 - num2;
+                const _HermesInternal = HermesInternal;
+                obj.keyPrefix = "" + keyPrefix + "." + tmp;
+                keyPrefix(obj);
+              }
+            }
+          }
+        }
+      })();
+      sum = num + 1;
+      c9 = sum;
+      num = sum;
+      length = nodes.length;
+    } while (sum < length);
+  }
+}
+function bindFormatValues(Builder) {
+  let length;
+  let sum;
+  ({ nodes, keyPrefix } = Builder);
+  ({ originalMessage, locales, dataFormatters, formatConfig, values, currentPluralValue } = Builder);
+  let builder = new Builder.Builder({ keyPrefix });
+  if (typeof nodes === "string") {
+    builder.pushLiteralText(nodes);
+    let finishResult = builder.finish();
+  } else {
+    if (1 === nodes.length) {
+      if (typeof nodes[0] === "string") {
+        builder.pushLiteralText(nodes[0]);
+      }
+      finishResult = builder.finish();
+    }
+    c9 = 0;
+    let num2 = 0;
+    if (0 < nodes.length) {
+      do {
+        let tmp = (function _loop() {
+          if (typeof nodes[v0] === "string") {
+            builder.pushLiteralText(tmp2);
+            return 0;
+          } else {
+            const first = tmp2[0];
+            if (first === builder(originalMessage[6]).FormatJsNodeType.Pound) {
+              if (typeof currentPluralValue === "number") {
+                builder.pushLiteralText(dataFormatters.formatNumber(tmp93));
+              }
+              return 0;
+            } else {
+              if (!(tmp2[1] in values)) {
+                if (!formatConfig(tmp100)) {
+                  const tmp10 = new currentPluralValue(tmp100, closure_1, first);
+                  throw tmp10;
+                }
+              }
+              builder = tmp12;
+              if (tmp98(tmp99[6]).FormatJsNodeType.Argument === first) {
+                if (typeof tmp12 !== "object") {
+                  if (typeof tmp12 !== "function") {
+                    const _String = String;
+                    builder.pushLiteralText(String(tmp12));
+                  }
+                }
+                builder.pushObject(tmp12);
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Date === first) {
+                if (tmp2[2] in formatConfig.date) {
+                  let result = formatConfig.date[tmp83];
+                } else if (null != tmp83) {
+                  result = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp83);
+                }
+                builder.pushLiteralText(dataFormatters.formatDate(tmp12, result));
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Time === first) {
+                if (tmp2[2] in formatConfig.time) {
+                  let result1 = formatConfig.time[tmp76];
+                } else if (null != tmp76) {
+                  result1 = tmp98(tmp99[7]).parseDateTimeSkeleton(tmp76);
+                }
+                builder.pushLiteralText(dataFormatters.formatTime(tmp12, result1));
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Number === first) {
+                if (tmp2[2] in formatConfig.number) {
+                  let parseNumberSkeletonResult = formatConfig.number[tmp67];
+                } else if (null != tmp67) {
+                  parseNumberSkeletonResult = tmp98(tmp99[7]).parseNumberSkeleton(tmp98(tmp99[7]).parseNumberSkeletonFromString(tmp67));
+                }
+                let result2 = tmp12;
+                if (typeof tmp12 === "number") {
+                  let scale;
+                  if (null != parseNumberSkeletonResult) {
+                    scale = parseNumberSkeletonResult.scale;
+                  }
+                  let num5 = 1;
+                  if (null !== scale) {
+                    num5 = 1;
+                    if (undefined !== scale) {
+                      num5 = scale;
+                    }
+                  }
+                  result2 = tmp12 * num5;
+                }
+                builder.pushLiteralText(dataFormatters.formatNumber(result2, parseNumberSkeletonResult));
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Tag === first) {
+                const obj2 = { Builder: builder.constructor, nodes: tmp2[2], locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue, keyPrefix: null };
+                const _HermesInternal5 = HermesInternal;
+                obj2.keyPrefix = "" + keyPrefix + "." + tmp;
+                const tmp49 = v0(obj2);
+                if (null != tmp2[3]) {
+                  const obj3 = { Builder: obj6.constructor, nodes: tmp40, locales: tmp43, dataFormatters: tmp44, formatConfig: tmp45, values: tmp101, currentPluralValue: tmp46, keyPrefix: null };
+                  const _HermesInternal6 = HermesInternal;
+                  obj3.keyPrefix = "" + tmp47 + "." + tmp + "-control";
+                  let items1 = tmp41(obj3);
+                } else {
+                  items1 = [];
+                }
+                if (formatConfig(tmp100)) {
+                  obj6.pushRichTextTag(tmp100, tmp49, items1);
+                } else if (typeof tmp12 !== "function") {
+                  const _HermesInternal7 = HermesInternal;
+                  throw "expected a function type for a Tag formatting value, " + tmp100 + ". got " + typeof tmp12 + ": " + tmp12;
+                } else {
+                  const _HermesInternal8 = HermesInternal;
+                  const tmp12Result = tmp12(tmp49, "" + tmp47 + "." + tmp);
+                  const _Array = Array;
+                  let tmp55 = tmp12Result;
+                  if (!Array.isArray(tmp12Result)) {
+                    const items = [tmp12Result];
+                    tmp55 = items;
+                  }
+                  for (const item10128 of tmp55) {
+                    let tmp58 = item10128;
+                    if (typeof item10128 === "string") {
+                      let pushLiteralTextResult6 = builder.pushLiteralText(tmp58);
+                    } else {
+                      let pushObjectResult1 = builder.pushObject(tmp58);
+                    }
+                    continue;
+                  }
+                }
+                tmp41 = v0;
+                tmp43 = locales;
+                tmp44 = dataFormatters;
+                tmp45 = formatConfig;
+                tmp46 = currentPluralValue;
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Select === first) {
+                const tmp26 = tmp12 in tmp2[2] ? tmp2[2][tmp12] : tmp2[2].other;
+                if (null == tmp26) {
+                  const _Object2 = Object;
+                  const keys = Object.keys(tmp25);
+                  const _HermesInternal4 = HermesInternal;
+                  throw "" + tmp12 + " is not a known option for select value " + tmp100 + ". Valid options are " + keys.join(", ");
+                } else {
+                  const obj4 = { builder, nodes: tmp26, locales, dataFormatters, formatConfig, values: tmp101, keyPrefix: null };
+                  const _HermesInternal3 = HermesInternal;
+                  obj4.keyPrefix = "" + keyPrefix + "." + tmp;
+                  keyPrefix(obj4);
+                }
+              } else if (tmp98(tmp99[6]).FormatJsNodeType.Plural === first) {
+                closure_1 = tmp102;
+                nodes = tmp103;
+                locales = tmp2[4];
+                const tmp104 = (() => {
+                  const combined = "=" + closure_0;
+                  if (combined in closure_1) {
+                    return tmp3[combined];
+                  } else {
+                    const obj = { type };
+                    const pluralRules = dataFormatters.getPluralRules(obj);
+                    let num = 0;
+                    if (null != closure_2) {
+                      num = closure_2;
+                    }
+                    let other = tmp3[pluralRules.select(pluralRules, tmp - num)];
+                    if (null === other) {
+                      other = tmp3.other;
+                    }
+                    return other;
+                  }
+                  tmp = closure_0;
+                })();
+                if (null == tmp104) {
+                  const _Object = Object;
+                  const keys1 = Object.keys(tmp102);
+                  const _HermesInternal2 = HermesInternal;
+                  throw "" + tmp12 + " is not a known option for plural value " + tmp100 + ". Valid options are " + keys1.join(", ");
+                } else {
+                  let obj = { builder, nodes: tmp104, locales, dataFormatters, formatConfig, values: tmp101, currentPluralValue: null, keyPrefix: null };
+                  let num2 = 0;
+                  if (null != tmp103) {
+                    num2 = tmp103;
+                  }
+                  obj.currentPluralValue = tmp12 - num2;
+                  const _HermesInternal = HermesInternal;
+                  obj.keyPrefix = "" + keyPrefix + "." + tmp;
+                  keyPrefix(obj);
+                }
+              }
+            }
+          }
+        })();
+        sum = num2 + 1;
+        c9 = sum;
+        num2 = sum;
+        length = nodes.length;
+      } while (sum < length);
+    }
+  }
+  return finishResult;
+}
+class FormatBuilder {
+  constructor(arg0) {
+    tmp = closure_4(this, FormatBuilder);
+    this.context = global;
+    return;
+  }
+}
+class MissingValueError {
+  constructor(arg0, arg1, arg2) {
+    self = this;
+    tmp = closure_4(this, MissingValueError);
+    items = [];
+    items[0] = "No value for variable '" + global + "' was provided for the localized message '" + require + "'";
+    tmp2 = closure_3;
+    obj = closure_3(MissingValueError);
+    tmp3 = c2;
+    if (hasOwnProperty()) {
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    tmp3Result.variableName = global;
+    tmp3Result.originalMessage = require;
+    tmp3Result.nodeType = importDefault;
+    return tmp3Result;
+  }
+}
+_inherits(MissingValueError, _wrapNativeSuper(Error));
+let closure_7 = _createClass(MissingValueError);
+
+export { bindFormatValuesWithBuilder };
+export { bindFormatValues };
+export const FormatBuilder = _createClass(FormatBuilder);

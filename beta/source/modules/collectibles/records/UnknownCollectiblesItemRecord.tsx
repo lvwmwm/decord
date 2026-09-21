@@ -1,12 +1,12 @@
-// Module ID: 7792
-// Function ID: 7793
+// Module ID: 7797
+// Function ID: 7798
 // Name: UnknownCollectiblesItemRecord
-// Dependencies: [1972, 1973, 2]
+// Dependencies: [1976, 1977, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 7792 (UnknownCollectiblesItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1972 */;
+// Module 7797 (UnknownCollectiblesItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1976 */;
 
 require = fn;
 const prototype = function UnknownCollectiblesItemRecord(arg0) {

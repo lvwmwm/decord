@@ -1,44 +1,183 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17337
+// Function ID: 17338
 // Name: SearchNavigatorScreen
-// Dependencies: [19, 17, 21, 4756, 576, 17095, 4618, 17335, 5339, 1115, 5845, 5341, 16701, 17097, 17106, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17098, 4621, 17338, 1119, 5843, 5341, 5343, 17100, 17109, 16703, 2]
 
-// Module 17334 (SearchNavigatorScreen)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4618 */;
-import Pressables from "Pressables" /* 5339 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5341 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5845 */;
-import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 17097 */;
-import SearchScreenLayoutDefault from "SearchScreenLayout" /* 17106 */;
-import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 17335 */;
+// Module 17337 (SearchNavigatorScreen)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4621 */;
+import Pressables from "Pressables" /* 5341 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5843 */;
+import useSearchSuggestionsGesture from "useSearchSuggestionsGesture" /* 17098 */;
+import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 17100 */;
+import SearchScreenLayoutDefault from "SearchScreenLayout" /* 17109 */;
+import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 17338 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, tabs: null, back: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.tabs = { flex: 1, marginTop: nativeDefault.space.PX_16 };
 let obj4 = { flex: 1, marginTop: nativeDefault.space.PX_16 };
 obj2.back = { marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_12 };
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj5 = { marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorScreen.tsx");
 
-export default function SearchNavigatorScreen(navigation) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+  const cResult = c.c(30);
+  navigation = navigation.navigation;
+  const searchContext = navigation.route.params.searchContext;
+  const tmp4 = closure_8();
+  const searchSuggestionsGesture = useSearchSuggestionsGesture.useSearchSuggestionsGesture(searchContext);
+  ({ gesture, dismissed, setDismissed, onLayoutMeasure } = searchSuggestionsGesture);
+  const width = useBaseAppContainerDimensionsDefault().width;
+  const tmp7 = useSearchLayoutInsetTopDefault();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t["13/7kX"]);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { color: tmp6(580).colors.INTERACTIVE_TEXT_DEFAULT };
+    const tmp12 = hasOwnProperty(tmp(5843).ArrowLargeLeftIcon, obj3);
+    cResult[1] = tmp12;
+    let tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] === navigation.goBack) {
+    if (cResult[3] === tmp4.back) {
+      let tmp13 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp17 = hasOwnProperty(tmp6(5343), { absolute: true, wide: true, tall: true });
+      cResult[5] = tmp17;
+      let tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[5];
+    }
+    if (cResult[6] !== tmp7) {
+      const obj4 = { paddingTop: tmp7 };
+      cResult[6] = tmp7;
+      cResult[7] = obj4;
+      let tmp18 = obj4;
+    } else {
+      tmp18 = cResult[7];
+    }
+    if (cResult[8] === tmp4.wrapper) {
+      if (cResult[9] === tmp18) {
+        let tmp19 = cResult[10];
+      }
+      if (cResult[11] === tmp13) {
+        if (cResult[12] === dismissed) {
+          if (cResult[13] === onLayoutMeasure) {
+            if (cResult[14] === searchContext) {
+              if (cResult[15] === setDismissed) {
+                let tmp20 = cResult[16];
+              }
+              if (cResult[17] === searchContext) {
+                if (cResult[18] === width) {
+                  let tmp23 = cResult[19];
+                }
+                if (cResult[20] === tmp4.tabs) {
+                  if (cResult[21] === tmp23) {
+                    let tmp26 = cResult[22];
+                  }
+                  if (cResult[23] === tmp20) {
+                    if (cResult[24] === tmp26) {
+                      if (cResult[25] === tmp19) {
+                        let tmp30 = cResult[26];
+                      }
+                      if (cResult[27] === gesture) {
+                        if (cResult[28] === tmp30) {
+                          let tmp34 = cResult[29];
+                        }
+                        return tmp34;
+                      }
+                      const obj5 = { children: null };
+                      const items = [tmp15, ];
+                      const obj6 = { gesture, children: tmp30 };
+                      items[1] = hasOwnProperty(tmp(16703).NonCollapsableGestureDetector, obj6);
+                      obj5.children = items;
+                      const tmp38 = timestampProducer(React5, obj5);
+                      cResult[27] = gesture;
+                      cResult[28] = tmp30;
+                      cResult[29] = tmp38;
+                      tmp34 = tmp38;
+                    }
+                  }
+                  const obj7 = { style: tmp19, children: null };
+                  const items1 = [tmp20, tmp26];
+                  obj7.children = items1;
+                  const tmp33 = timestampProducer(View, obj7);
+                  cResult[23] = tmp20;
+                  cResult[24] = tmp26;
+                  cResult[25] = tmp19;
+                  cResult[26] = tmp33;
+                  tmp30 = tmp33;
+                }
+                const obj8 = { style: tmp4.tabs, children: tmp23 };
+                const tmp29 = hasOwnProperty(View, obj8);
+                cResult[20] = tmp4.tabs;
+                cResult[21] = tmp23;
+                cResult[22] = tmp29;
+                tmp26 = tmp29;
+              }
+              const obj9 = { searchContext, width };
+              const tmp25 = hasOwnProperty(tmp6(17109), obj9);
+              cResult[17] = searchContext;
+              cResult[18] = width;
+              cResult[19] = tmp25;
+              tmp23 = tmp25;
+            }
+          }
+        }
+      }
+      const obj10 = { searchContext, suggestionsDismissed: dismissed, setSuggestionsDismissed: setDismissed, onSuggestionsLayoutMesure: onLayoutMeasure, backButton: tmp13 };
+      const tmp22 = hasOwnProperty(tmp6(17100), obj10);
+      cResult[11] = tmp13;
+      cResult[12] = dismissed;
+      cResult[13] = onLayoutMeasure;
+      cResult[14] = searchContext;
+      cResult[15] = setDismissed;
+      cResult[16] = tmp22;
+      tmp20 = tmp22;
+    }
+    const items2 = [tmp4.wrapper, tmp18];
+    cResult[8] = tmp4.wrapper;
+    cResult[9] = tmp18;
+    cResult[10] = items2;
+    tmp19 = items2;
+  }
+  const obj11 = { children: hasOwnProperty(Pressables.PressableOpacity, { style: tmp4.back, accessibilityLabel: first, accessibilityRole: "button", onPress: navigation.goBack, children: tmp10 }) };
+  const tmp14 = hasOwnProperty(View, obj11);
+  cResult[2] = navigation.goBack;
+  cResult[3] = tmp4.back;
+  cResult[4] = tmp14;
+  tmp13 = tmp14;
+}) : ((navigation) => {
   navigation = navigation.navigation;
   const searchContext = navigation.route.params.searchContext;
   const tmp = closure_8();
   importDefault = tmp;
-  const searchSuggestionsGesture = navigation(17095).useSearchSuggestionsGesture(searchContext);
+  const searchSuggestionsGesture = navigation(17098).useSearchSuggestionsGesture(searchContext);
   ({ gesture, dismissed, setDismissed, onLayoutMeasure } = searchSuggestionsGesture);
   const items = [navigation.goBack, tmp.back];
-  let obj = navigation(17095);
+  let obj = navigation(17098);
   let obj2 = { children: null };
   const memo = noop.useMemo(() => {
     const obj = { children: null };
@@ -60,7 +199,7 @@ export default function SearchNavigatorScreen(navigation) {
   items3[1] = closure_5(View, { style: tmp.tabs, children: closure_5(SearchScreenLayoutDefault, { searchContext, width: useBaseAppContainerDimensionsDefault().width }) });
   obj4.children = items3;
   obj3.children = closure_6(View, obj4);
-  items1[1] = closure_5(navigation(16701).NonCollapsableGestureDetector, obj3);
+  items1[1] = closure_5(navigation(16703).NonCollapsableGestureDetector, obj3);
   obj2.children = items1;
   return closure_6(closure_7, obj2);
-};
+});

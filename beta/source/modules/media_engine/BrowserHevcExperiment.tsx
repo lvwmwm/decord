@@ -1,10 +1,10 @@
-// Module ID: 14329
-// Function ID: 14330
+// Module ID: 14332
+// Function ID: 14333
 // Name: BrowserHevcExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 14329 (BrowserHevcExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14332 (BrowserHevcExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-08-browser-hevc", kind: "user", defaultConfig: { enabled: false }, variations: null };

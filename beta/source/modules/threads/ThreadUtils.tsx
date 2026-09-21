@@ -1,21 +1,21 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8028
+// Function ID: 8029
 // Name: ThreadUtils
-// Dependencies: [109, 4771, 4937, 4397, 1114, 1074, 1115, 7741, 4936, 1241, 8016, 7359, 1385, 504, 11, 4348, 2]
-// Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
+// Dependencies: [109, 4773, 4939, 4401, 1118, 1078, 1119, 7746, 4938, 1245, 8021, 7361, 1389, 558, 568, 504, 11, 4352, 2]
+// Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 8023 (ThreadUtils)
+// Module 8028 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import getTimestampStringDefault from "getTimestampString" /* 7741 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8016 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
+import getTimestampStringDefault from "getTimestampString" /* 7746 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8021 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4401 */;
 
 const require = globalThis.__r;
 
@@ -27,9 +27,10 @@ function getAccessibilityLabelFormatter() {
   return time;
 }
 let closure_3 = ["can_send_message", "parent_channel_type"];
-const ThreadMemberFlags = fn(1114).ThreadMemberFlags;
-const Constants = fn(1074);
+const ThreadMemberFlags = fn(1118).ThreadMemberFlags;
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, UserNotificationSettings: c10 } = Constants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadUtils.tsx");
 
@@ -55,7 +56,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = getGuildId.getGuildId();
     const parent_id = getGuildId.parent_id;
-    const currentChannelSettings = tmp(7359).getCurrentChannelSettings(guildId, parent_id);
+    const currentChannelSettings = tmp(7361).getCurrentChannelSettings(guildId, parent_id);
     let num = JoinedThreadsStore.flags(getGuildId.id);
     if (num == null) {
       num = 0;
@@ -82,8 +83,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = JoinedThreadsStore.isMuted(getGuildId.id);
-    let tmpResult = tmp(7359);
-    let result1 = tmp(7359).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
+    let tmpResult = tmp(7361);
+    let result1 = tmp(7361).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
     ({ can_send_message, parent_channel_type } = result);
     const obj2 = {};
     const merged = Object.assign(_objectWithoutProperties(result, closure_3));
@@ -107,37 +108,107 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj2.new_thread_is_muted = muted;
     obj2.old_thread_muted_until = result1;
     if (null != flags.mute_config) {
-      result1 = tmp(7359).muteConfigToTimestamp(flags.mute_config);
-      const tmpResult4 = tmp(7359);
+      result1 = tmp(7361).muteConfigToTimestamp(flags.mute_config);
+      const tmpResult4 = tmp(7361);
     }
     obj2.new_thread_muted_until = result1;
-    const tmpResult3 = tmp(7359);
+    const tmpResult3 = tmp(7361);
     AnalyticsUtilsDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
 };
-export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) {
-  _require = thread;
+export const useLastMessageTimestamp = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  const cResult = require("c").c(11);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function o() {
+      return ReadStateStore.lastMessageId(id.id);
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores) {
+    let extractTimestampResult = null;
+    if (null != stateFromStores) {
+      extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(stateFromStores);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = extractTimestampResult;
+    let tmp8 = extractTimestampResult;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const threadMetadata = id.threadMetadata;
+  let createTimestamp;
+  if (threadMetadata != null) {
+    createTimestamp = threadMetadata.createTimestamp;
+  }
+  if (cResult[5] !== createTimestamp) {
+    let valueOfResult = null;
+    if (null != createTimestamp) {
+      valueOfResult = _modDef4352(createTimestamp).valueOf();
+      const obj4 = _modDef4352(createTimestamp);
+    }
+    cResult[5] = createTimestamp;
+    cResult[6] = valueOfResult;
+    let tmp12 = valueOfResult;
+  } else {
+    tmp12 = cResult[6];
+  }
+  if (cResult[7] === id.id) {
+    if (cResult[8] === tmp12) {
+      if (cResult[9] === tmp8) {
+        let tmp15 = cResult[10];
+      }
+      return tmp15;
+    }
+  }
+  let extractTimestampResult1 = tmp8;
+  if (tmp8 == null) {
+    extractTimestampResult1 = tmp12;
+  }
+  if (extractTimestampResult1 == null) {
+    extractTimestampResult1 = SnowflakeUtilsDefault.extractTimestamp(id.id);
+  }
+  cResult[7] = id.id;
+  cResult[8] = tmp12;
+  cResult[9] = tmp8;
+  cResult[10] = extractTimestampResult1;
+  tmp15 = extractTimestampResult1;
+}) : ((threadMetadata) => {
+  _require = threadMetadata;
   const items = [ReadStateStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => ReadStateStore.lastMessageId(thread.id));
+  const stateFromStores = require("initialize").useStateFromStores(items, () => ReadStateStore.lastMessageId(threadMetadata.id));
   let extractTimestampResult = null;
   if (null != stateFromStores) {
     extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(stateFromStores);
   }
-  const threadMetadata = thread.threadMetadata;
+  threadMetadata = threadMetadata.threadMetadata;
   let createTimestamp;
   if (threadMetadata != null) {
     createTimestamp = threadMetadata.createTimestamp;
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    valueOfResult = _modDef4348(createTimestamp).valueOf();
-    const obj3 = _modDef4348(createTimestamp);
+    valueOfResult = _modDef4352(createTimestamp).valueOf();
+    const obj3 = _modDef4352(createTimestamp);
   }
   if (extractTimestampResult == null) {
     extractTimestampResult = valueOfResult;
   }
   if (extractTimestampResult == null) {
-    extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(thread.id);
+    extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(threadMetadata.id);
   }
   return extractTimestampResult;
-};
+});

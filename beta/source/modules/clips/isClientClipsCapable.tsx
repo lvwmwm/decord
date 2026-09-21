@@ -1,13 +1,13 @@
-// Module ID: 13941
-// Function ID: 13942
+// Module ID: 13944
+// Function ID: 13945
 // Name: isClientClipsCapable
-// Dependencies: [4781, 13940, 1364, 2]
+// Dependencies: [4783, 13943, 1368, 2]
 // Exports: default
 
-// Module 13941 (isClientClipsCapable)
-import PlatformUtilsAll from "PlatformUtils" /* 1364 */;
-import Constants from "Constants" /* 4781 */;
-import ClipsExperiment2 from "ClipsExperiment" /* 13940 */;
+// Module 13944 (isClientClipsCapable)
+import PlatformUtilsAll from "PlatformUtils" /* 1368 */;
+import Constants from "Constants" /* 4783 */;
+import ClipsExperiment2 from "ClipsExperiment" /* 13943 */;
 import size from "module_2" /* 2 */;
 
 const Features = Constants.Features;

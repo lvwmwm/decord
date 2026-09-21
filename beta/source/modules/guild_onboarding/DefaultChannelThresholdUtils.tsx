@@ -1,15 +1,15 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 9803
+// Function ID: 9804
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 2063, 7345, 7346, 1074, 7344, 7351, 1086, 5108, 1115, 2]
+// Dependencies: [5, 2067, 7347, 7348, 1078, 7346, 7353, 1090, 5110, 1119, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9825 (DefaultChannelThresholdUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7344 */;
+// Module 9803 (DefaultChannelThresholdUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7346 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7345 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7347 */;
 
 require = fn;
 let closure_10 = async function _isDefaultChannelThresholdMetAfterDelete(arg0, value) {
@@ -23,7 +23,7 @@ let closure_10 = async function _isDefaultChannelThresholdMetAfterDelete(arg0, v
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -86,7 +86,7 @@ let closure_12 = async function _isChattableChannelThresholdMetAfterChannelChang
       const obj4 = { value, done: true };
       return obj4;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -149,7 +149,7 @@ let closure_12 = async function _isChattableChannelThresholdMetAfterChannelChang
           const nextResult = iter.next();
           while (iter !== undefined) {
             if (nextResult.required) {
-              let options = tmp8.options;
+              options = tmp8.options;
               for (const item10025 of options) {
                 if (null != item10025.channelIds) {
                   let push = items.push;
@@ -225,7 +225,7 @@ let closure_13 = async function _checkChattableChannelThresholdMetAfterChannelPe
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -261,28 +261,28 @@ let closure_13 = async function _checkChattableChannelThresholdMetAfterChannelPe
                 const deserializer = BigFlagUtilsAll;
                 found1 = deserializer.deserialize(0);
               }
-              const hasItem = tmp27(1086).has(found, constants.VIEW_CHANNEL);
+              const hasItem = tmp27(1090).has(found, constants.VIEW_CHANNEL);
               let tmp37 = hasItem;
               if (hasItem) {
-                tmp37 = !tmp27(1086).has(found1, tmp34.VIEW_CHANNEL);
-                const tmp27Result5 = tmp27(1086);
+                tmp37 = !tmp27(1090).has(found1, tmp34.VIEW_CHANNEL);
+                const tmp27Result5 = tmp27(1090);
               }
               const obj4 = { removingView: tmp37, removingChat: false };
-              const tmp27Result = tmp27(1086);
+              const tmp27Result = tmp27(1090);
               const isForumLikeChannelResult = obj16.isForumLikeChannel();
-              const has = tmp27(1086).has;
+              const has = tmp27(1090).has;
               if (isForumLikeChannelResult) {
                 let hasItem1 = has(found, tmp34.SEND_MESSAGES_IN_THREADS);
                 if (hasItem1) {
-                  hasItem1 = !tmp27(1086).has(found1, tmp34.SEND_MESSAGES_IN_THREADS);
-                  const tmp27Result7 = tmp27(1086);
+                  hasItem1 = !tmp27(1090).has(found1, tmp34.SEND_MESSAGES_IN_THREADS);
+                  const tmp27Result7 = tmp27(1090);
                 }
                 obj4.removingChat = hasItem1;
               } else {
                 let hasItem2 = has(found, tmp34.SEND_MESSAGES);
                 if (hasItem2) {
-                  hasItem2 = !tmp27(1086).has(found1, tmp34.SEND_MESSAGES);
-                  const tmp27Result8 = tmp27(1086);
+                  hasItem2 = !tmp27(1090).has(found1, tmp34.SEND_MESSAGES);
+                  const tmp27Result8 = tmp27(1090);
                 }
                 obj4.removingChat = hasItem2;
               }
@@ -334,8 +334,8 @@ let closure_13 = async function _checkChattableChannelThresholdMetAfterChannelPe
     }
   })();
 };
-let closure_7 = fn(7346).NUM_DEFAULT_CHATTABLE_CHANNELS_MIN;
-const Constants = fn(1074);
+let closure_7 = fn(7348).NUM_DEFAULT_CHATTABLE_CHANNELS_MIN;
+const Constants = fn(1078);
 ({ GuildFeatures: closure_8, GuildSettingsSections, Permissions: closure_9 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/DefaultChannelThresholdUtils.tsx");

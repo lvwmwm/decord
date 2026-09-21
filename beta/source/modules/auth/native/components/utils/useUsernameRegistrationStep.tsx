@@ -1,21 +1,21 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16305
+// Function ID: 16306
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 14984, 16277, 16278, 16274, 1484, 7200, 14982, 14981, 16276, 1485, 1115, 2]
+// Dependencies: [32, 19, 14973, 16280, 16281, 16277, 1488, 7198, 14971, 14970, 16279, 1489, 1119, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 16302 (useUsernameRegistrationStep)
-import util from "util" /* 1115 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14981 */;
+// Module 16305 (useUsernameRegistrationStep)
+import util from "util" /* 1119 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14970 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14984 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14973 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const useRegistrationUIStore = fn(16277).useRegistrationUIStore;
-const RegistrationConstants = fn(16278);
+const useRegistrationUIStore = fn(16280).useRegistrationUIStore;
+const RegistrationConstants = fn(16281);
 ({ authStateToRegisterTransitionStep: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/auth/native/components/utils/useUsernameRegistrationStep.tsx");
@@ -57,16 +57,16 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
       context(obj);
     }
     if (arg0) {
-      const result = tmp3(16276).handleRegistrationSubmit(closure_0, navigation, context);
-      const tmp3Result = tmp3(16276);
+      const result = tmp3(16279).handleRegistrationSubmit(closure_0, navigation, context);
+      const tmp3Result = tmp3(16279);
     } else {
-      const obj2 = { step: React5(closure_0), toStep: tmp3(16276).getNextRegistrationTransitionStep(closure_0), actionType: constants.SUCCESS };
+      const obj2 = { step: React5(closure_0), toStep: tmp3(16279).getNextRegistrationTransitionStep(closure_0), actionType: constants.SUCCESS };
       context(obj2);
-      const tmp3Result3 = tmp3(16276);
-      const nextAuthState = tmp3(16276).getNextAuthState(closure_0);
-      const StackActions = tmp3(1485).StackActions;
+      const tmp3Result3 = tmp3(16279);
+      const nextAuthState = tmp3(16279).getNextAuthState(closure_0);
+      const StackActions = tmp3(1489).StackActions;
       navigation.dispatch(StackActions.push(nextAuthState));
-      const tmp3Result4 = tmp3(16276);
+      const tmp3Result4 = tmp3(16279);
     }
   }, items);
   const items2 = [username, , ];

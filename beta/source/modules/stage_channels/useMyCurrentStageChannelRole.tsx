@@ -1,21 +1,52 @@
-// Module ID: 10290
-// Function ID: 10291
+// Module ID: 10287
+// Function ID: 10288
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [502, 2095, 5638, 504, 2]
-// Exports: default
+// Dependencies: [502, 2099, 5640, 558, 568, 504, 2]
 
-// Module 10290 (useMyCurrentStageChannelRole)
+// Module 10287 (useMyCurrentStageChannelRole)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5638 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannelRole.tsx");
 
-export default function useMyCurrentStageChannelRole(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore, SelectedChannelStore, StageChannelRoleStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      const id = AuthenticationStore.getId();
+      let permissionsForUser = null;
+      if (SelectedChannelStore.getVoiceChannelId() === closure_0) {
+        permissionsForUser = StageChannelRoleStore.getPermissionsForUser(id, tmp2);
+      }
+      return permissionsForUser;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp9 = items1;
+    let tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp8, tmp9);
+}) : ((arg0) => {
   _require = arg0;
   const items = [AuthenticationStore, SelectedChannelStore, StageChannelRoleStore];
   const items1 = [arg0];
@@ -27,4 +58,4 @@ export default function useMyCurrentStageChannelRole(arg0) {
     }
     return permissionsForUser;
   }, items1);
-};
+});

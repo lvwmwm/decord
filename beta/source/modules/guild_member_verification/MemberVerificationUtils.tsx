@@ -1,13 +1,13 @@
-// Module ID: 5269
-// Function ID: 5270
+// Module ID: 5271
+// Function ID: 5272
 // Name: MemberVerificationUtils
-// Dependencies: [5270, 1074, 4580, 1370, 2]
+// Dependencies: [5272, 1078, 4583, 1374, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 5269 (MemberVerificationUtils)
-import Constants from "Constants" /* 1074 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5270 */;
+// Module 5271 (MemberVerificationUtils)
+import Constants from "Constants" /* 1078 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5272 */;
 import size from "module_2" /* 2 */;
 
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: c2, MANUAL_APPROVAL_FORM_FIELDS: c3 } = MemberVerificationConstants);
@@ -21,13 +21,13 @@ export const isValidFormResponse = function isValidFormResponse(required) {
       return false;
     } else {
       if (MemberVerificationTypes.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4580).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4580).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4580).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4580).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+        if (tmp4(4583).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4583).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4583).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4583).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
-                return tmp4(1370).assertNever(field_type);
+                return tmp4(1374).assertNever(field_type);
               }
             }
           }

@@ -1,26 +1,79 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 14978
+// Function ID: 14979
 // Name: AccountPhoneSetting
-// Dependencies: [1372, 8233, 7288, 504, 4959, 7287, 1980, 7290, 11725, 1115, 2]
+// Dependencies: [1376, 8238, 7290, 558, 568, 504, 4961, 7289, 1984, 7292, 11594, 1119, 2]
 
-// Module 14989 (AccountPhoneSetting)
+// Module 14978 (AccountPhoneSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7290 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7292 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-let closure_4 = fn(7288).PHONE_VERIFICATION_MODAL_KEY;
-const SettingBuilders = fn(11725);
+let closure_4 = fn(7290).PHONE_VERIFICATION_MODAL_KEY;
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      currentUser = currentUser.getCurrentUser();
+      let phone;
+      if (currentUser != null) {
+        phone = currentUser.phone;
+      }
+      return phone;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [UserStore];
+  return initialize.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let phone;
+    if (currentUser != null) {
+      phone = currentUser.phone;
+    }
+    return phone;
+  });
+});
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.dEYpSt);
   },
-  parent: fn(8233).MobileUserSettings.ACCOUNT,
-  useTrailing: function useAccountPhoneSettingTrailing() {
+  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [UserStore];
+      const fn = function s() {
+        currentUser = currentUser.getCurrentUser();
+        let phone;
+        if (currentUser != null) {
+          phone = currentUser.phone;
+        }
+        return phone;
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [UserStore];
     return initialize.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
@@ -30,12 +83,12 @@ const pressable = SettingBuilders.createPressable({
       }
       return phone;
     });
-  },
+  }),
   onPress: function onAccountPhoneSettingPress() {
     const obj2 = { allowDeletePhone: true, reason: null };
     const obj = ModalActionCreatorsDefault;
     obj2.reason = PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(asyncRequireImpl(7287, dependencyMap.paths), obj2, closure_4);
+    obj.pushLazy(asyncRequireImpl(7289, dependencyMap.paths), obj2, closure_4);
   },
   withArrow: true
 });

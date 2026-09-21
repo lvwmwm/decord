@@ -1,23 +1,62 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17568
+// Function ID: 17569
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4605, 17613, 10311, 1177, 5196, 4752, 4492, 5202, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4758, 580, 4608, 558, 568, 17569, 10308, 1181, 5196, 4754, 5202, 4497, 2]
 
-// Module 17612 (ActivityShelfItemSummary)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
-import Text_Text from "Text/Text" /* 4752 */;
+// Module 17568 (ActivityShelfItemSummary)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
+import Text_Text from "Text/Text" /* 4754 */;
 import ButtonPill from "ButtonPill" /* 5196 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 10311 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17613 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10308 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17569 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const ButtonEllipsis = tmp2(5202);
 require = fn;
-function ParticipantsSummary(arg0) {
+const View = fn(17).View;
+const jsxProd = fn(21);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" }, overlayActivityName: null, overlayActivityNameText: null, loadingTextColor: null, ellipsis: null };
+let obj3 = { paddingHorizontal: 12, paddingVertical: 4, borderRadius: nativeDefault.radii.round, backgroundColor: null, marginBottom: 8 };
+const ColorUtils = fn(4608);
+obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.64);
+obj2.overlayActivityName = obj3;
+obj2.overlayActivityNameText = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj2.loadingTextColor = { color: "transparent" };
+obj2.ellipsis = { flex: 1, flexShrink: 1, flexGrow: 0, justifyContent: "center", alignItems: "center", top: -12 };
+let closure_7 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(4);
+  ({ applicationId, channelId } = arg0);
+  const tmp5 = useActivityUsersDefault(applicationId, channelId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { marginBottom: 8 };
+    const obj3 = { inset: -8 };
+    cResult[0] = obj2;
+    cResult[1] = obj3;
+    tmp6 = obj2;
+    tmp7 = obj3;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  if (cResult[2] !== tmp5) {
+    const obj4 = { users: tmp5, max: 5, avatarSize: native.AvatarSizes.REFRESH_MEDIUM_32, withPlusCount: true, style: tmp6, cutout: tmp7 };
+    const tmp11 = hasOwnProperty(UserSummaryItemDefault, obj4);
+    cResult[2] = tmp5;
+    cResult[3] = tmp11;
+    let tmp8 = tmp11;
+    const tmp4Result = UserSummaryItemDefault;
+  } else {
+    tmp8 = cResult[3];
+  }
+  return tmp8;
+}) : ((arg0) => {
   ({ applicationId, channelId } = arg0);
   const obj = { users: useActivityUsersDefault(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
   const tmp = useActivityUsersDefault(applicationId, channelId);
@@ -25,24 +64,105 @@ function ParticipantsSummary(arg0) {
   obj.style = { marginBottom: 8 };
   obj.cutout = { inset: -8 };
   return hasOwnProperty(UserSummaryItemDefault, obj);
-}
-const View = fn(17).View;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" }, overlayActivityName: null, overlayActivityNameText: null, loadingTextColor: null, ellipsis: null };
-let obj3 = { paddingHorizontal: 12, paddingVertical: 4, borderRadius: nativeDefault.radii.round, backgroundColor: null, marginBottom: 8 };
-const ColorUtils = fn(4605);
-obj3.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.64);
-obj2.overlayActivityName = obj3;
-obj2.overlayActivityNameText = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj2.loadingTextColor = { color: "transparent" };
-obj2.ellipsis = { flex: 1, flexShrink: 1, flexGrow: 0, justifyContent: "center", alignItems: "center", top: -12 };
-let closure_7 = createStyles.createStyles(obj2);
+});
+ReactCompilerGating = fn(558);
+let obj5 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx");
 
-export default function ActivityShelfItemSummary(submitting) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(22);
+  ({ channelId, applicationId, applicationName, submitting } = arg0);
+  const tmp5 = closure_7();
+  const tmp6 = _slicedToArray(ButtonPill.useLoadingStyles(undefined !== submitting && submitting, "md"), 2)[1];
+  const tmp7 = undefined !== submitting && submitting ? tmp5.loadingTextColor : tmp5.overlayActivityNameText;
+  if (cResult[0] === applicationName) {
+    if (cResult[1] === tmp7) {
+      let tmp8 = cResult[2];
+    }
+    if (cResult[3] === tmp6) {
+      if (cResult[4] === tmp5.ellipsis) {
+        let tmp10 = cResult[5];
+      }
+      if (cResult[6] !== tmp4) {
+        let tmp12 = tmp4;
+        if (tmp4) {
+          tmp12 = hasOwnProperty(tmp(5202).Ellipsis, { variant: "active", size: "md" });
+        }
+        cResult[6] = tmp4;
+        cResult[7] = tmp12;
+        let tmp11 = tmp12;
+      } else {
+        tmp11 = cResult[7];
+      }
+      if (cResult[8] === tmp10) {
+        if (cResult[9] === tmp11) {
+          let tmp14 = cResult[10];
+        }
+        if (cResult[11] === tmp5.overlayActivityName) {
+          if (cResult[12] === tmp8) {
+            if (cResult[13] === tmp14) {
+              let tmp18 = cResult[14];
+            }
+            if (cResult[15] === applicationId) {
+              if (cResult[16] === channelId) {
+                let tmp22 = cResult[17];
+              }
+              if (cResult[18] === tmp5.ongoingActivityContainer) {
+                if (cResult[19] === tmp18) {
+                  if (cResult[20] === tmp22) {
+                    let tmp26 = cResult[21];
+                  }
+                  return tmp26;
+                }
+              }
+              const obj2 = { style: tmp5.ongoingActivityContainer, children: null };
+              const items = [tmp18, tmp22];
+              obj2.children = items;
+              const tmp29 = timestampProducer(View, obj2);
+              cResult[18] = tmp5.ongoingActivityContainer;
+              cResult[19] = tmp18;
+              cResult[20] = tmp22;
+              cResult[21] = tmp29;
+              tmp26 = tmp29;
+            }
+            const obj3 = { channelId, applicationId };
+            const tmp25 = hasOwnProperty(closure_8, obj3);
+            cResult[15] = applicationId;
+            cResult[16] = channelId;
+            cResult[17] = tmp25;
+            tmp22 = tmp25;
+          }
+        }
+        const obj4 = { style: tmp5.overlayActivityName, children: null };
+        const items1 = [tmp8, tmp14];
+        obj4.children = items1;
+        const tmp21 = timestampProducer(View, obj4);
+        cResult[11] = tmp5.overlayActivityName;
+        cResult[12] = tmp8;
+        cResult[13] = tmp14;
+        cResult[14] = tmp21;
+        tmp18 = tmp21;
+      }
+      const obj5 = { style: tmp10, children: tmp11 };
+      const tmp17 = hasOwnProperty(ReanimatedRexportDefault.View, obj5);
+      cResult[8] = tmp10;
+      cResult[9] = tmp11;
+      cResult[10] = tmp17;
+      tmp14 = tmp17;
+    }
+    const items2 = [tmp5.ellipsis, tmp6];
+    cResult[3] = tmp6;
+    cResult[4] = tmp5.ellipsis;
+    cResult[5] = items2;
+    tmp10 = items2;
+  }
+  const tmp9 = hasOwnProperty(Text_Text.Text, { variant: "text-md/semibold", style: tmp7, lineClamp: 2, children: applicationName });
+  cResult[0] = applicationName;
+  cResult[1] = tmp7;
+  cResult[2] = tmp9;
+  tmp8 = tmp9;
+}) : ((submitting) => {
   let flag = submitting.submitting;
   ({ channelId, applicationId, applicationName } = submitting);
   if (flag === undefined) {
@@ -62,7 +182,7 @@ export default function ActivityShelfItemSummary(submitting) {
   obj5.children = tmp7Result;
   items[1] = hasOwnProperty(ReanimatedRexportDefault.View, obj5);
   obj3.children = items;
-  const items2 = [timestampProducer(View, obj3), hasOwnProperty(ParticipantsSummary, { channelId, applicationId })];
+  const items2 = [timestampProducer(View, obj3), hasOwnProperty(closure_8, { channelId, applicationId })];
   obj2.children = items2;
   return timestampProducer(View, obj2);
-};
+});

@@ -1,15 +1,15 @@
-// Module ID: 8241
-// Function ID: 8242
+// Module ID: 8246
+// Function ID: 8247
 // Name: ChangeChannelIconSystemMessage
-// Dependencies: [2041, 8211, 8218, 8220, 8222, 1115, 8225, 2]
+// Dependencies: [2045, 8216, 8223, 8225, 8227, 1119, 8230, 2]
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 8241 (ChangeChannelIconSystemMessage)
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 8246 (ChangeChannelIconSystemMessage)
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8216 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8225 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8227 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const size = fn(2);
@@ -33,9 +33,9 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     flag = false;
   }
   const tmp8 = createCommonMessageDefault(message);
-  const intl = tmp4(1115).intl;
+  const intl = tmp4(1119).intl;
   const formatToParts = intl.formatToParts;
-  const t = tmp4(1115).t;
+  const t = tmp4(1119).t;
   if (flag) {
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6, onEditGroup: null };
     let linkColor;
@@ -59,9 +59,9 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     const obj6 = { accessibilityActions: null };
     const items = [];
     const obj7 = { label: null, name: null };
-    const intl2 = tmp4(1115).intl;
-    obj7.label = intl2.string(tmp4(1115).t["5Q9+/L"]);
-    obj7.name = tmp4(8225).MessageAccessibilityAction.EDIT_GDM;
+    const intl2 = tmp4(1119).intl;
+    obj7.label = intl2.string(tmp4(1119).t["5Q9+/L"]);
+    obj7.name = tmp4(8230).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj7;
     obj6.accessibilityActions = items;
     tmp12 = obj6;

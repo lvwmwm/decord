@@ -1,24 +1,40 @@
-// Module ID: 15107
-// Function ID: 15108
+// Module ID: 15096
+// Function ID: 15097
 // Name: ExplicitMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8233, 15098, 7842, 7540, 1115, 15099, 11725, 15101, 2]
-// Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
+// Dependencies: [8238, 558, 568, 15087, 7847, 7542, 1119, 15088, 11594, 15090, 2]
+// Exports: onObscuredContentNonFriendsDmOnPress
 
-// Module 15107 (ExplicitMediaFiltersNonFriendsDMsSetting)
-import util from "util" /* 1115 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7540 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7842 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15098 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15099 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15101 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15096 (ExplicitMediaFiltersNonFriendsDMsSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7542 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15087 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15088 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15090 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
-function useObscuredContentNonFriendsDmSettingValue() {
+const ExplicitMediaRedactionUtils = tmp(7847);
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const explicitContentNonFriendDm = useExplicitContentSettingsOrDefault.useExplicitContentSettingOrDefault().explicitContentNonFriendDm;
+  if (cResult[0] !== explicitContentNonFriendDm) {
+    const tmp5 = ExplicitMediaRedactionUtils.redactionSettingToRenderedString(explicitContentNonFriendDm)();
+    cResult[0] = explicitContentNonFriendDm;
+    cResult[1] = tmp5;
+    let tmp4 = tmp5;
+    const tmpResult = ExplicitMediaRedactionUtils;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
   const obj = useExplicitContentSettingsOrDefault;
   return ExplicitMediaRedactionUtils.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentNonFriendDm)();
-}
+});
 function onObscuredContentNonFriendsDmOnPress() {
   const intl = util.intl;
   const obj = SensitiveMediaExplicitRedactionSettingsUtils;
@@ -32,16 +48,16 @@ function onObscuredContentNonFriendsDmOnPress() {
   obj3.currentValue = obj.getExplicitContentSettingOrDefault().explicitContentNonFriendDm;
   const result = ExplicitMediaRedactionNativeUtils.handleSensitiveMediaFilterPress(obj3);
 }
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
+function getTitle() {
+  const intl = util.intl;
+  return intl.string(util.t["Yh+HX1"]);
+}
 const pressable = SettingBuilders.createPressable({
-  useTitle: function getTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["Yh+HX1"]);
-  },
+  useTitle: getTitle,
   parent() {
     return MobileUserSettings.SENSITIVE_CONTENT_FILTERS;
   },
-  useTrailing: useObscuredContentNonFriendsDmSettingValue,
+  useTrailing: tmp2,
   onPress: onObscuredContentNonFriendsDmOnPress,
   useSearchTerms: function getSearchTerms() {
     const intl = util.intl;
@@ -57,5 +73,5 @@ const pressable = SettingBuilders.createPressable({
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ExplicitMediaFiltersNonFriendsDMsSetting.tsx");
 
 export default pressable;
-export { useObscuredContentNonFriendsDmSettingValue };
+export const useObscuredContentNonFriendsDmSettingValue = tmp2;
 export { onObscuredContentNonFriendsDmOnPress };

@@ -1,114 +1,42 @@
 // Module ID: 4271
 // Function ID: 4272
-// Dependencies: [4007, 4127, 3845, 3849, 3846, 3850]
+// Dependencies: [3853, 3849, 3850]
 // Exports: default
 
 // Module 4271
-import _mod3850 from "module_3850" /* 3850 */;
-import differenceInCalendarDays_mod from "differenceInCalendarDays" /* 4007 */;
-import startOfWeekYear_mod from "startOfWeekYear" /* 4127 */;
-import _typeof_mod from "module_3845" /* 3845 */;
-import module_3849_mod from "module_3849" /* 3849 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import module_3853_mod from "module_3853" /* 3853 */;
+import _typeof_mod from "module_3849" /* 3849 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let differenceInCalendarDays = differenceInCalendarDays_mod;
-if (!differenceInCalendarDays) {
-  let obj = { default: differenceInCalendarDays };
+let module_3853 = module_3853_mod;
+if (!module_3853) {
+  const obj = { default: module_3853 };
   let tmp3 = obj;
 } else {
-  tmp3 = differenceInCalendarDays;
+  tmp3 = module_3853;
 }
-differenceInCalendarDays = tmp3;
-let startOfWeekYear = startOfWeekYear_mod;
-if (!startOfWeekYear) {
-  const obj2 = { default: startOfWeekYear };
-  let tmp5 = obj2;
-} else {
-  tmp5 = startOfWeekYear;
-}
-startOfWeekYear = tmp5;
+module_3853 = tmp3;
 let _typeof = _typeof_mod;
 if (!_typeof) {
-  const obj3 = { default: _typeof };
-  let tmp7 = obj3;
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
 } else {
-  tmp7 = _typeof;
+  tmp5 = _typeof;
 }
-_typeof = tmp7;
-let module_3849 = module_3849_mod;
-if (!module_3849) {
-  const obj4 = { default: module_3849 };
-  let tmp9 = obj4;
-} else {
-  tmp9 = module_3849;
-}
-module_3849 = tmp9;
+_typeof = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj5 = { default: requiredArgs };
-  let tmp11 = obj5;
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
 } else {
-  tmp11 = requiredArgs;
+  tmp7 = requiredArgs;
 }
-requiredArgs = tmp11;
+requiredArgs = tmp7;
 
-export default function setWeekYear(arg0, arg1, firstWeekContainsDate) {
+export default function setMinutes(module_3853, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultOptions = _mod3850.getDefaultOptions();
-  let prop;
-  if (null != firstWeekContainsDate) {
-    prop = firstWeekContainsDate.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    let prop1;
-    if (null != firstWeekContainsDate) {
-      locale = firstWeekContainsDate.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              prop1 = options.firstWeekContainsDate;
-            }
-          }
-        }
-      }
-    }
-    prop = prop1;
-  }
-  if (null === prop) {
-    prop = defaultOptions.firstWeekContainsDate;
-  }
-  if (null === prop) {
-    const locale2 = defaultOptions.locale;
-    let prop2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            prop2 = options2.firstWeekContainsDate;
-          }
-        }
-      }
-    }
-    prop = prop2;
-  }
-  let num = 1;
-  if (null !== prop) {
-    num = 1;
-    if (undefined !== prop) {
-      num = prop;
-    }
-  }
-  const defaultResult2 = _typeof.default(arg0);
-  const defaultResult1 = module_3849.default(num);
-  const defaultResult3 = module_3849.default(arg1);
-  const date = new Date(0);
-  date.setFullYear(defaultResult3, 0, defaultResult1);
-  date.setHours(0, 0, 0, 0);
-  const defaultResult5 = startOfWeekYear.default(date, firstWeekContainsDate);
-  defaultResult5.setDate(defaultResult5.getDate() + differenceInCalendarDays.default(defaultResult2, startOfWeekYear.default(defaultResult2, firstWeekContainsDate)));
-  return defaultResult5;
+  const defaultResult1 = _typeof.default(module_3853);
+  defaultResult1.setMinutes(module_3853.default(arg1));
+  return defaultResult1;
 };
 export default exports.default;

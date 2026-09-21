@@ -1,10 +1,10 @@
-// Module ID: 2036
-// Function ID: 2037
+// Module ID: 2040
+// Function ID: 2041
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 2036 (Timers)
+// Module 2040 (Timers)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 class Timeout {
@@ -156,7 +156,7 @@ prototype5["queue"] = function queue(candidates) {
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;
-    let options = self.options;
+    options = self.options;
     let predicate = options.predicate;
     let num;
     if (predicate != null) {
@@ -208,7 +208,7 @@ prototype5["reset"] = function reset() {
   this._flushReady = false;
   this._flushHandler.cancel();
   if (items.length > 0) {
-    const options = this.options;
+    options = this.options;
     const onCancelled = options.onCancelled;
     if (onCancelled != null) {
       onCancelled(items);
@@ -235,7 +235,7 @@ prototype5["_flush"] = function _flush() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

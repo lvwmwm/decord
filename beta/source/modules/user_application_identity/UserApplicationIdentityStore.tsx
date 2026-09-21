@@ -1,11 +1,11 @@
-// Module ID: 9301
-// Function ID: 9302
+// Module ID: 9299
+// Function ID: 9300
 // Name: UserApplicationIdentityStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 9301 (UserApplicationIdentityStore)
+// Module 9299 (UserApplicationIdentityStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const FetchState = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 let map = new Map();

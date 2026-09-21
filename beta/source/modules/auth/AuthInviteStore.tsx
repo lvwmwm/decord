@@ -1,12 +1,12 @@
-// Module ID: 4674
-// Function ID: 4675
+// Module ID: 4677
+// Function ID: 4678
 // Name: AuthInviteStore
-// Dependencies: [2055, 504, 573, 2]
+// Dependencies: [2059, 504, 577, 2]
 
-// Module 4674 (AuthInviteStore)
+// Module 4677 (AuthInviteStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2059 */;
 
 require = fn;
 let closure_2 = {};
@@ -19,7 +19,7 @@ AuthInviteStore.prototype["getGuild"] = function getGuild(arg0) {
 AuthInviteStore.displayName = "AuthInviteStore";
 const authInviteStore = new AuthInviteStore(DispatcherDefault, {
   AUTH_INVITE_UPDATE: function handleAuthInviteUpdate(invite) {
-    const guild = invite.invite.guild;
+    guild = invite.invite.guild;
     if (null == guild) {
       return false;
     } else {

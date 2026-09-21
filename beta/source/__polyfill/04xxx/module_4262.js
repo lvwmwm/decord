@@ -1,64 +1,56 @@
 // Module ID: 4262
 // Function ID: 4263
-// Dependencies: [3846, 3850]
+// Dependencies: [3853, 3849, 4114, 3850]
 // Exports: default
 
 // Module 4262
-import _mod3850 from "module_3850" /* 3850 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import module_3853_mod from "module_3853" /* 3853 */;
+import _typeof_mod from "module_3849" /* 3849 */;
+import module_4114_mod from "module_4114" /* 4114 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  let obj = { default: requiredArgs };
+let module_3853 = module_3853_mod;
+if (!module_3853) {
+  const obj = { default: module_3853 };
   let tmp3 = obj;
 } else {
-  tmp3 = requiredArgs;
+  tmp3 = module_3853;
 }
-requiredArgs = tmp3;
+module_3853 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
+}
+_typeof = tmp5;
+let module_4114 = module_4114_mod;
+if (!module_4114) {
+  const obj3 = { default: module_4114 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_4114;
+}
+module_4114 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export default function setDefaultOptions(obj) {
-  requiredArgs.default(1, arguments);
-  obj = {};
-  const defaultOptions = _mod3850.getDefaultOptions();
-  for (const key10017 in defaultOptions) {
-    let _Object = Object;
-    hasOwnProperty = Object.prototype.hasOwnProperty;
-    let call = hasOwnProperty.call;
-    if (typeof call === "unknown") {
-      let hasOwnPropertyResult = hasOwnProperty(key10017);
-    } else {
-      hasOwnPropertyResult = call(defaultOptions, key10017);
-    }
-    if (!hasOwnPropertyResult) {
-      continue;
-    } else {
-      obj[key10017] = defaultOptions[key10017];
-      continue;
-    }
-    continue;
-  }
-  for (const key10023 in arg0) {
-    let _Object2 = Object;
-    let call2 = hasOwnProperty2.call;
-    if (typeof call2 === "unknown") {
-      let hasOwnProperty2Result = hasOwnProperty2(key10023);
-    } else {
-      hasOwnProperty2Result = call2(arg0, key10023);
-    }
-    if (!hasOwnProperty2Result) {
-      continue;
-    } else {
-      if (undefined === arg0[key10023]) {
-        delete tmp[tmp2];
-        continue;
-      } else {
-        obj[key10023] = arg0[key10023];
-        continue;
-      }
-      continue;
-    }
-    continue;
-  }
-  _mod3850.setDefaultOptions(obj);
+export default function setMonth(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const defaultResult2 = module_3853.default(arg1);
+  const fullYear = defaultResult1.getFullYear();
+  const date1 = new Date(0);
+  date1.setFullYear(fullYear, defaultResult2, 15);
+  date1.setHours(0, 0, 0, 0);
+  defaultResult1.setMonth(defaultResult2, Math.min(defaultResult1.getDate(), module_4114.default(date1)));
+  return defaultResult1;
 };
 export default exports.default;

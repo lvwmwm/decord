@@ -1,13 +1,13 @@
-// Module ID: 16988
-// Function ID: 16989
+// Module ID: 16991
+// Function ID: 16992
 // Name: VibegrationsPatchNotesChannel
-// Dependencies: [1115, 3678, 510, 2]
+// Dependencies: [1119, 3682, 510, 2]
 // Exports: formatPlaySuffix, lastPatchNotesChannel, rememberPatchNotesChannel
 
-// Module 16988 (VibegrationsPatchNotesChannel)
+// Module 16991 (VibegrationsPatchNotesChannel)
 import Storage3 from "Storage" /* 510 */;
-import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
+import util from "util" /* 1119 */;
+import _modDef3682 from "module_3682" /* 3682 */;
 import size from "module_2" /* 2 */;
 
 const VibegrationsPatchNotesLastChannels = "VibegrationsPatchNotesLastChannels";
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsPa
 export const PLAY_LINE_CHANNEL_PLACEHOLDER = combined;
 export const formatPlaySuffix = function formatPlaySuffix(PLAY_LINE_CHANNEL_PLACEHOLDER) {
   const intl = util.intl;
-  return "\n\n" + intl.formatToPlainString(_modDef3678.bhoZhI, { channel: PLAY_LINE_CHANNEL_PLACEHOLDER });
+  return "\n\n" + intl.formatToPlainString(_modDef3682.bhoZhI, { channel: PLAY_LINE_CHANNEL_PLACEHOLDER });
 };
 export const lastPatchNotesChannel = function lastPatchNotesChannel(guildId) {
   const Storage = Storage3.Storage;

@@ -1,16 +1,16 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7481
+// Function ID: 7482
 // Name: PriceUtils
-// Dependencies: [2109, 4416, 1374, 1085, 1364, 7480, 7482, 7484, 1115, 4414, 2]
+// Dependencies: [2113, 4420, 1378, 1089, 1368, 7482, 7484, 7486, 1119, 4418, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 7479 (PriceUtils)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import PremiumUtils from "PremiumUtils" /* 4414 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 7480 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import BillingInfoStore from "BillingInfoStore" /* 4416 */;
+// Module 7481 (PriceUtils)
+import util from "util" /* 1119 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import PremiumUtils from "PremiumUtils" /* 4418 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 7482 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
+import BillingInfoStore from "BillingInfoStore" /* 4420 */;
 
 require = fn;
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {
@@ -55,16 +55,16 @@ function formatPrice(amount, currency, localeOverride) {
   if (timestamp < date.getTime()) {
     const platformName = PlatformUtils.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = tmp2(7482).default.getUserCountry();
-      const _default2 = tmp2(7482).default;
+      let ipCountryCode = tmp2(7484).default.getUserCountry();
+      const _default2 = tmp2(7484).default;
     } else if ("ios" === platformName) {
-      const storeFront = tmp2(7484).default.getStoreFront();
+      const storeFront = tmp2(7486).default.getStoreFront();
       let country;
       if (storeFront != null) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = tmp2(7484).default;
+      const _default = tmp2(7486).default;
     } else {
       ipCountryCode = BillingInfoStore.ipCountryCode;
     }
@@ -113,8 +113,8 @@ function formatRate(priceString, interval, intervalCount) {
     throw error;
   }
 }
-const SubscriptionIntervalTypes = fn(1374).SubscriptionIntervalTypes;
-const CurrencyCodes = fn(1085).CurrencyCodes;
+const SubscriptionIntervalTypes = fn(1378).SubscriptionIntervalTypes;
+const CurrencyCodes = fn(1089).CurrencyCodes;
 let closure_6 = Object.freeze(["en-CA", "en-AU", "en-NZ"]);
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/PriceUtils.tsx");

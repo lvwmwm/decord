@@ -1,65 +1,164 @@
-// Module ID: 9345
-// Function ID: 9346
+// Module ID: 9343
+// Function ID: 9344
 // Name: XboxLinkLanding
-// Dependencies: [19, 9344, 1074, 21, 4756, 1115, 5319, 9346, 5307, 9348, 1484, 2108, 9349, 9350, 2]
-// Exports: default
+// Dependencies: [19, 9342, 1078, 21, 4758, 1119, 5321, 9344, 5309, 9346, 558, 568, 1488, 2112, 9347, 9348, 2]
 
-// Module 9345 (XboxLinkLanding)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import _modDef9349 from "module_9349" /* 9349 */;
+// Module 9343 (XboxLinkLanding)
+import util from "util" /* 1119 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import GroupIcon from "GroupIcon" /* 5309 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5321 */;
+import ScreenStreamIcon from "ScreenStreamIcon" /* 9344 */;
+import GameControllerIcon from "GameControllerIcon" /* 9346 */;
+import _modDef9347 from "module_9347" /* 9347 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
-const XboxLinkModalScenes = fn(9344).XboxLinkModalScenes;
-const Constants = fn(1074);
+require = fn;
+function getXboxValueProps() {
+  const obj = { label: null, icon: null };
+  const intl = util.intl;
+  obj.label = intl.string(util.t.ihQXsb);
+  obj.icon = VoiceNormalIcon.VoiceNormalIcon;
+  const items = [obj, , , ];
+  const obj2 = { label: null, icon: null };
+  const intl2 = util.intl;
+  obj2.label = intl2.string(util.t.Xt1n4P);
+  obj2.icon = ScreenStreamIcon.ScreenStreamIcon;
+  items[1] = obj2;
+  const obj3 = { label: null, icon: null };
+  const intl3 = util.intl;
+  obj3.label = intl3.string(util.t.xqVY3p);
+  obj3.icon = GroupIcon.GroupIcon;
+  items[2] = obj3;
+  const obj4 = { label: null, icon: null };
+  const intl4 = util.intl;
+  obj4.label = intl4.string(util.t.iQsKVW);
+  obj4.icon = GameControllerIcon.GameControllerIcon;
+  items[3] = obj4;
+  return items;
+}
+const XboxLinkModalScenes = fn(9342).XboxLinkModalScenes;
+const Constants = fn(1078);
 ({ HelpdeskArticles: hasOwnProperty, PlatformTypes: metroRequire } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_8 = createStyles.createStyles({ image: { width: 230, height: 160 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkLanding.tsx");
 
-export default function XboxLinkLanding() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = navigation(568).c(10);
+  const tmp4 = closure_8();
+  const obj = navigation(568);
+  navigation = navigation(1488).useNavigation();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const articleURL = HelpdeskUtilsDefault.getArticleURL(constants.XBOX_CONNECTION);
+    const intl = tmp(1119).intl;
+    const obj4 = { helpdeskArticleUrl: articleURL };
+    const formatResult = intl.format(tmp(1119).t.CIc3IN, obj4);
+    cResult[0] = formatResult;
+    let first = formatResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp13 = getXboxValueProps();
+    cResult[1] = tmp13;
+    let tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[1];
+  }
+  if (cResult[2] !== navigation) {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+    cResult[2] = navigation;
+    cResult[3] = N;
+  } else {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+    tmp16[0] = _modDef9347;
+    cResult[4] = tmp16;
+    const tmp15 = tmp16;
+  } else {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+    const stringResult = obj5.string(tmp(1119).t.m8aahn);
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t.z3rAhq);
+    cResult[5] = stringResult;
+    cResult[6] = stringResult1;
+    let tmp19 = stringResult1;
+    const tmp18 = stringResult;
+  } else {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+    tmp19 = cResult[6];
+  }
+  if (cResult[7] === tmp14) {
+    class N {
+      constructor() {
+        arr = closure_0.push(XboxLinkModalScenes.PRE_CONNECT);
+        return;
+      }
+    }
+    return tmp22;
+  }
+  tmp22 = jsx(navigation(9348).TwoWayLinkLanding, { platformType: constants2.XBOX, img: tmp15, imgStyle: tmp4.image, headerConnect: tmp18, headerReconnect: tmp19, body: first, onNext: tmp14, valueProps: tmp11 });
+  cResult[7] = tmp14;
+  cResult[8] = tmp4.image;
+  cResult[9] = tmp22;
+}) : (() => {
   const tmp = closure_8();
-  navigation = navigation(1484).useNavigation();
-  let obj = navigation(1484);
+  navigation = navigation(1488).useNavigation();
+  const obj = navigation(1488);
   const articleURL = HelpdeskUtilsDefault.getArticleURL(constants.XBOX_CONNECTION);
-  let intl = navigation(1115).intl;
-  let items = [navigation];
-  const memo = noop.useMemo(() => {
-    const obj = { label: null, icon: null };
-    const intl = navigation(1115).intl;
-    obj.label = intl.string(navigation(1115).t.ihQXsb);
-    obj.icon = navigation(5319).VoiceNormalIcon;
-    const items = [obj, , , ];
-    const obj2 = { label: null, icon: null };
-    const intl2 = navigation(1115).intl;
-    obj2.label = intl2.string(navigation(1115).t.Xt1n4P);
-    obj2.icon = navigation(9346).ScreenStreamIcon;
-    items[1] = obj2;
-    const obj3 = { label: null, icon: null };
-    const intl3 = navigation(1115).intl;
-    obj3.label = intl3.string(navigation(1115).t.xqVY3p);
-    obj3.icon = navigation(5307).GroupIcon;
-    items[2] = obj3;
-    const obj4 = { label: null, icon: null };
-    const intl4 = navigation(1115).intl;
-    obj4.label = intl4.string(navigation(1115).t.iQsKVW);
-    obj4.icon = navigation(9348).GameControllerIcon;
-    items[3] = obj4;
-    return items;
-  }, []);
+  const intl = navigation(1119).intl;
+  const items = [navigation];
+  const memo = noop.useMemo(() => getXboxValueProps(), []);
   const callback = noop.useCallback(() => {
     navigation.push(XboxLinkModalScenes.PRE_CONNECT);
   }, items);
-  const memo1 = noop.useMemo(() => ({ uri: _modDef9349 }), []);
-  let obj3 = { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
-  let intl2 = navigation(1115).intl;
-  obj3.headerConnect = intl2.string(navigation(1115).t.m8aahn);
-  let intl3 = navigation(1115).intl;
-  obj3.headerReconnect = intl3.string(navigation(1115).t.z3rAhq);
-  obj3.body = intl.format(navigation(1115).t.CIc3IN, { helpdeskArticleUrl: articleURL });
+  const memo1 = noop.useMemo(() => ({ uri: _modDef9347 }), []);
+  const obj3 = { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
+  const intl2 = navigation(1119).intl;
+  obj3.headerConnect = intl2.string(navigation(1119).t.m8aahn);
+  const intl3 = navigation(1119).intl;
+  obj3.headerReconnect = intl3.string(navigation(1119).t.z3rAhq);
+  obj3.body = intl.format(navigation(1119).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   obj3.onNext = callback;
   obj3.valueProps = memo;
-  return jsx(navigation(9350).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
-};
+  return jsx(navigation(9348).TwoWayLinkLanding, { platformType: constants2.XBOX, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+});

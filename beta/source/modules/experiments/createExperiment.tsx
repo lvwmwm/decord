@@ -1,21 +1,21 @@
-// Module ID: 4670
-// Function ID: 4671
+// Module ID: 4673
+// Function ID: 4674
 // Name: createExperiment
-// Dependencies: [32, 19, 502, 4671, 4672, 4676, 4677, 4678, 2]
+// Dependencies: [32, 19, 502, 4674, 4675, 4679, 4680, 4681, 2]
 // Exports: default
 
-// Module 4670 (createExperiment)
-import ExperimentManager from "ExperimentManager" /* 4676 */;
+// Module 4673 (createExperiment)
+import ExperimentManager from "ExperimentManager" /* 4679 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const noop = fn(19);
 ({ useState: closure_4, useEffect: hasOwnProperty } = noop);
-const ExperimentConstants = fn(4672);
+const ExperimentConstants = fn(4675);
 ({ ExperimentBuckets: closure_8, ExposureTypes: closure_9 } = ExperimentConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/experiments/createExperiment.tsx");
@@ -207,9 +207,9 @@ export default function createExperiment(config) {
     const tmpResult2 = tmp(tmp2[5]);
   }
   return {
-    useExperiment(guildId) {
-      let obj = arg1;
-      if (arg1 === undefined) {
+    useExperiment(cResult, cResult2) {
+      let obj = cResult2;
+      if (cResult2 === undefined) {
         obj = { autoTrackExposure: true };
       }
       closure_1 = undefined;
@@ -225,7 +225,7 @@ export default function createExperiment(config) {
       closure_1 = tmp;
       const id = flag.id;
       if ("guild" === flag.kind) {
-        guildExperimentDescriptor = authStore.getGuildExperimentDescriptor(id, guildId.guildId);
+        guildExperimentDescriptor = authStore.getGuildExperimentDescriptor(id, cResult.guildId);
       } else {
         guildExperimentDescriptor = authStore.getUserExperimentDescriptor(id);
       }
@@ -279,7 +279,7 @@ export default function createExperiment(config) {
       }), 2);
       closure_5 = tmp9[1];
       [tmp11, tmp12, tmp13] = trackAutoExposure(tmp9[0], 3);
-      const tmp14 = map(result3[7])(guildId);
+      const tmp14 = map(result3[7])(cResult);
       closure_6 = tmp14;
       let items = [flag, false !== obj.autoTrackExposure, tmp14, tmp8Result, tmp12, tmp13, flag2];
       subscribe(() => {

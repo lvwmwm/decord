@@ -1,15 +1,15 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 10062
+// Function ID: 10063
 // Name: openInstantInviteActionSheet
-// Dependencies: [4723, 10084, 1980, 1249, 2]
+// Dependencies: [4725, 10063, 1984, 1253, 2]
 // Exports: default
 
-// Module 10083 (openInstantInviteActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+// Module 10062 (openInstantInviteActionSheet)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import size from "module_2" /* 2 */;
 
-const discord_common_AnalyticsUtils = tmp2(1249);
+const discord_common_AnalyticsUtils = tmp2(1253);
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
 
 export default function openInstantInviteActionSheet(invite_channel_id) {
@@ -23,5 +23,5 @@ export default function openInstantInviteActionSheet(invite_channel_id) {
   const merged = Object.assign(invite_channel_id);
   obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.GUILD_INVITE;
   obj2.impressionProperties = { invite_channel_id: invite_channel_id.channel.id, invite_guild_id: invite_channel_id.channel.guild_id };
-  obj.openLazy(asyncRequireImpl(10084, dependencyMap.paths), combined, obj2, invite_channel_id.stackingBehavior);
+  obj.openLazy(asyncRequireImpl(10063, dependencyMap.paths), combined, obj2, invite_channel_id.stackingBehavior);
 };

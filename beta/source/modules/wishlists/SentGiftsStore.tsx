@@ -1,11 +1,11 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11335
+// Function ID: 11336
 // Name: SentGiftsStore
-// Dependencies: [32, 504, 573, 2]
+// Dependencies: [32, 504, 577, 2]
 
-// Module 11304 (SentGiftsStore)
+// Module 11335 (SentGiftsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 let global = { sentGifts: {} };

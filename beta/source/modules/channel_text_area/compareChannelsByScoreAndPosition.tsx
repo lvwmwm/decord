@@ -1,13 +1,13 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7580
+// Function ID: 7581
 // Name: compareChannelsByScoreAndPosition
-// Dependencies: [2041, 1074, 2]
+// Dependencies: [2045, 1078, 2]
 // Exports: default
 
-// Module 7578 (compareChannelsByScoreAndPosition)
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 7580 (compareChannelsByScoreAndPosition)
+import ChannelStore from "ChannelStore" /* 2045 */;
 
-const ChannelTypes = fn(1074).ChannelTypes;
+const ChannelTypes = fn(1078).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_text_area/compareChannelsByScoreAndPosition.tsx");
 

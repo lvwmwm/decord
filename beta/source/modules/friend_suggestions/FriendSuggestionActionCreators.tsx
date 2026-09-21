@@ -1,14 +1,14 @@
-// Module ID: 7899
-// Function ID: 7900
+// Module ID: 7904
+// Function ID: 7905
 // Name: FriendSuggestionActionCreators
-// Dependencies: [5, 1074, 1271, 573, 2]
+// Dependencies: [5, 1078, 1275, 577, 2]
 
-// Module 7899 (FriendSuggestionActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7904 (FriendSuggestionActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/friend_suggestions/FriendSuggestionActionCreators.tsx");
 

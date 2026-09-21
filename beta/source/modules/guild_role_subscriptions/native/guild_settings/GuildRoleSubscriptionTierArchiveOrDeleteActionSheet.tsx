@@ -1,21 +1,21 @@
-// Module ID: 18195
-// Function ID: 18196
+// Module ID: 18198
+// Function ID: 18199
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4756, 576, 1612, 38, 18196, 7395, 6869, 4752, 1177, 5186, 4723, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 38, 18199, 4754, 1181, 5188, 4725, 1119, 6863, 7397, 2]
 
-// Module 18195 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18198 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import BottomSheetModal from "BottomSheetModal" /* 6869 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18196 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import BottomSheetModal from "BottomSheetModal" /* 6863 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18199 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,13 +23,164 @@ get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 }, cancel: { alignSelf: "center" } };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionTierArchiveOrDeleteActionSheet.tsx");
 
-export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(groupListingId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) => {
+  const cResult = c.c(26);
+  groupListingId = groupListingId.groupListingId;
+  ({ editStateId, guildId } = groupListingId);
+  const tmp4 = closure_7();
+  const bottom = useSafeAreaInsetsDefault().bottom;
+  _modDef38(null != groupListingId, "group listing id cannot be null");
+  ({ headerText, buttonText, descriptionText, handleArchiveOrDelete, deleting, archiving } = useArchiveOrDeleteDefault(guildId, groupListingId, editStateId));
+  if (cResult[0] !== bottom) {
+    const obj2 = { paddingBottom: bottom };
+    cResult[0] = bottom;
+    cResult[1] = obj2;
+    let tmp7 = obj2;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] !== headerText) {
+    const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText };
+    const tmp10 = hasOwnProperty(tmp(4754).Text, obj3);
+    cResult[2] = headerText;
+    cResult[3] = tmp10;
+    let tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp13 = hasOwnProperty(tmp(1181).Spacer, { size: 12 });
+    cResult[4] = tmp13;
+    let tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] !== descriptionText) {
+    const obj4 = { variant: "text-sm/normal", color: "text-default", children: descriptionText };
+    const tmp16 = hasOwnProperty(tmp(4754).Text, obj4);
+    cResult[5] = descriptionText;
+    cResult[6] = tmp16;
+    let tmp14 = tmp16;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp19 = hasOwnProperty(tmp(1181).Spacer, { size: 24 });
+    cResult[7] = tmp19;
+    let tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[7];
+  }
+  if (!deleting) {
+    deleting = archiving;
+  }
+  if (cResult[8] === buttonText) {
+    if (cResult[9] === handleArchiveOrDelete) {
+      if (cResult[10] === deleting) {
+        let tmp20 = cResult[11];
+      }
+      const _Symbol = Symbol;
+      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp24 = hasOwnProperty(tmp(1181).Spacer, { size: 24 });
+        cResult[12] = tmp24;
+        let tmp22 = tmp24;
+      } else {
+        tmp22 = cResult[12];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+        cResult[13] = D;
+        const tmp25 = D;
+      } else {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+      }
+      const _Symbol3 = Symbol;
+      if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+        const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active", children: null };
+        const intl = tmp(1119).intl;
+        obj5.children = intl.string(tmp(1119).t["ETE/oC"]);
+        const tmp27 = hasOwnProperty(tmp(4754).Text, obj5);
+        cResult[14] = tmp27;
+        const tmp26 = tmp27;
+      } else {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+      }
+      if (cResult[15] !== tmp4.cancel) {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+        const obj6 = { onPress: tmp25, style: tmp4.cancel, activeOpacity: 0.5, children: tmp26 };
+        const tmp30 = hasOwnProperty(React3, obj6);
+        cResult[15] = tmp4.cancel;
+        cResult[16] = tmp30;
+      } else {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+      }
+      if (cResult[17] === tmp7) {
+        class D {
+          constructor() {
+            obj = closure_1_1(closure_1_2[13]);
+            return obj.hideActionSheet();
+          }
+        }
+      }
+      const obj7 = { contentContainerStyle: tmp7, children: null };
+      const items = [tmp8, tmp11, tmp14, tmp17, tmp20, tmp22, tmp28];
+      obj7.children = items;
+      const tmp33 = timestampProducer(tmp(6863).BottomSheetScrollView, obj7);
+      cResult[17] = tmp7;
+      cResult[18] = tmp28;
+      cResult[19] = tmp8;
+      cResult[20] = tmp14;
+      cResult[21] = tmp20;
+      cResult[22] = tmp33;
+    }
+  }
+  const tmp21 = hasOwnProperty(components_Button_Button.Button, { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete, disabled: deleting });
+  cResult[8] = buttonText;
+  cResult[9] = handleArchiveOrDelete;
+  cResult[10] = deleting;
+  cResult[11] = tmp21;
+  tmp20 = tmp21;
+}) : ((groupListingId) => {
   groupListingId = groupListingId.groupListingId;
   ({ editStateId, guildId } = groupListingId);
   const tmp = closure_7();
@@ -57,7 +208,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
     children: null
   };
   const obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", children: null };
-  const intl = tmp6(1115).intl;
+  const intl = tmp6(1119).intl;
   obj6.children = intl.string(util.t["ETE/oC"]);
   obj5.children = hasOwnProperty(Text_Text.Text, obj6);
   items[6] = hasOwnProperty(React3, obj5);
@@ -65,4 +216,4 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   obj.children = timestampProducer(BottomSheetModal.BottomSheetScrollView, obj2);
   obj4.children = hasOwnProperty(React4, obj);
   return hasOwnProperty(Sheet_BottomSheet.BottomSheet, obj4);
-};
+});

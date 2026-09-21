@@ -1,101 +1,99 @@
 // Module ID: 7043
 // Function ID: 7044
-// Dependencies: [19, 17, 1637, 6870]
-// Exports: useKeyboard
+// Dependencies: [32, 19, 17, 6871, 1641]
+// Exports: useBottomSheetContentContainerStyle
 
 // Module 7043
-import _mod19 from "module_19" /* 19 */;
-import value22 from "value2" /* 6870 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
+import cancelAnimation from "cancelAnimation" /* 1641 */;
+import _slicedToArray from "module_32" /* 32 */;
 
-const useEffect = _mod19.useEffect;
-({ Keyboard: c3, Platform } = get_ActivityIndicator);
-const keyboardDidShow = "keyboardDidShow";
-const keyboardDidHide = "keyboardDidHide";
-let closure_6 = { code: "function pnpm_useKeyboardTs1(state,height,duration,easing,bottomOffset){const{KEYBOARD_STATE,shouldHandleKeyboardEvents,temporaryCachedKeyboardEvent,keyboardHeight,includeBottomOffset,keyboardAnimationDuration,keyboardAnimationEasing,keyboardState}=this.__closure;if(state===KEYBOARD_STATE.SHOWN&&!shouldHandleKeyboardEvents.value){temporaryCachedKeyboardEvent.value=[state,height,duration,easing];return;}keyboardHeight.value=state===KEYBOARD_STATE.SHOWN?height:keyboardHeight.value;if(bottomOffset&&includeBottomOffset){keyboardHeight.value=keyboardHeight.value+bottomOffset;}keyboardAnimationDuration.value=duration;keyboardAnimationEasing.value=easing;keyboardState.value=state;temporaryCachedKeyboardEvent.value=[];}" };
-let closure_7 = { code: "function pnpm_useKeyboardTs2(){const{shouldHandleKeyboardEvents}=this.__closure;return shouldHandleKeyboardEvents.value;}" };
-const __initData = { code: "function pnpm_useKeyboardTs3(result){const{temporaryCachedKeyboardEvent,handleKeyboardEvent}=this.__closure;const params=temporaryCachedKeyboardEvent.value;if(result&&params.length>0){handleKeyboardEvent(params[0],params[1],params[2],params[3]);}}" };
+const require = globalThis.__r;
 
-export const useKeyboard = (includeBottomOffset) => {
-  includeBottomOffset = includeBottomOffset.includeBottomOffset;
-  let shouldHandleKeyboardEvents;
-  shouldHandleKeyboardEvents = includeBottomOffset(shouldHandleKeyboardEvents[2]).useSharedValue(false);
-  let obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const state = includeBottomOffset(shouldHandleKeyboardEvents[2]).useSharedValue(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.UNDETERMINED);
-  const obj2 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const height = includeBottomOffset(shouldHandleKeyboardEvents[2]).useSharedValue(0);
-  const obj3 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animationEasing = includeBottomOffset(shouldHandleKeyboardEvents[2]).useSharedValue("keyboard");
-  const obj4 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const animationDuration = includeBottomOffset(shouldHandleKeyboardEvents[2]).useSharedValue(500);
-  const obj5 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const sharedValue5 = includeBottomOffset(shouldHandleKeyboardEvents[2]).useSharedValue([]);
-  const obj6 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  const fn = function v(value, arg1, value2, value3, arg4) {
-    value = arg1;
-    if (value === value22.KEYBOARD_STATE.SHOWN) {
-      if (!shouldHandleKeyboardEvents.value) {
-        const items = [value, value, value2, value3];
-        sharedValue5.value = items;
+require = fn;
+const noop = fn(19);
+({ useMemo: c3, useState: closure_4 } = noop);
+get_ActivityIndicator = fn(17);
+({ Platform: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
+const __initData = { code: "function pnpm_useBottomSheetContentContainerStyleTs1(){const{animatedFooterHeight}=this.__closure;return animatedFooterHeight.get();}" };
+const __initData2 = { code: "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}" };
+
+export const useBottomSheetContentContainerStyle = function useBottomSheetContentContainerStyle(flag, contentContainerStyle) {
+  _require = flag;
+  dependencyMap = contentContainerStyle;
+  const tmp = first(animatedFooterHeight(0), 2);
+  first = tmp[0];
+  closure_3 = tmp3;
+  const bottomSheetInternal = require("module_6871").useBottomSheetInternal();
+  animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
+  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
+  let items = [contentContainerStyle];
+  const tmp5 = closure_3(() => {
+    if (closure_1) {
+      const _Array = Array;
+      let applyResult = tmp;
+      if (Array.isArray(tmp)) {
+        compose = compose.compose;
+        const items = [];
+        HermesBuiltin.arraySpread(tmp, 0);
+        applyResult = HermesBuiltin.apply(items, compose);
       }
+      let obj = applyResult;
+    } else {
+      obj = {};
     }
-    if (value !== value22.KEYBOARD_STATE.SHOWN) {
-      value = iter.value;
-    }
-    height.value = value;
-    let tmp5 = arg4;
-    if (arg4) {
-      tmp5 = includeBottomOffset;
-    }
-    if (tmp5) {
-      iter.value = iter.value + arg4;
-    }
-    animationDuration.value = value2;
-    animationEasing.value = value3;
-    state.value = value;
-    sharedValue5.value = [];
-  };
-  const obj7 = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-  fn.__closure = { KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state };
-  fn.__workletHash = 7905199978020;
-  fn.__initData = sharedValue5;
-  const workletCallback = obj7.useWorkletCallback(fn, []);
-  let items = [workletCallback];
-  state(() => {
-    closure_0 = height.addListener(animationEasing, (endCoordinates) => {
-      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-      ({ duration, easing } = endCoordinates);
-      includeBottomOffset(shouldHandleKeyboardEvents[2]).runOnUI(workletCallback)(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.SHOWN, endCoordinates.endCoordinates.height, duration, easing, includeBottomOffset(shouldHandleKeyboardEvents[3]).SCREEN_HEIGHT - endCoordinates.endCoordinates.height - endCoordinates.endCoordinates.screenY);
-    });
-    closure_1 = height.addListener(animationDuration, (endCoordinates) => {
-      const obj = includeBottomOffset(shouldHandleKeyboardEvents[2]);
-      includeBottomOffset(shouldHandleKeyboardEvents[2]).runOnUI(workletCallback)(includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE.HIDDEN, endCoordinates.endCoordinates.height, endCoordinates.duration, endCoordinates.easing);
-    });
-    return () => {
-      closure_0.remove();
-      closure_1.remove();
-    };
+    return obj;
   }, items);
-  const obj8 = { KEYBOARD_STATE: includeBottomOffset(shouldHandleKeyboardEvents[3]).KEYBOARD_STATE, shouldHandleKeyboardEvents, temporaryCachedKeyboardEvent: sharedValue5, keyboardHeight: height, includeBottomOffset, keyboardAnimationDuration: animationDuration, keyboardAnimationEasing: animationEasing, keyboardState: state };
-  const fn2 = function b() {
-    return shouldHandleKeyboardEvents.value;
-  };
-  fn2.__closure = { shouldHandleKeyboardEvents };
-  fn2.__workletHash = 11615500623565;
-  fn2.__initData = workletCallback;
-  const fn3 = function y(arg0) {
-    let tmp = arg0;
-    value = sharedValue5.value;
-    if (arg0) {
-      tmp = value.length > 0;
+  Platform = tmp5;
+  const items1 = [first, flag, tmp5];
+  let obj = require("module_6871");
+  const tmp6 = closure_3(() => {
+    if (closure_0) {
+      let num = 0;
+      if (tmp) {
+        num = 0;
+        if (typeof tmp === "object") {
+          ({ paddingBottom, padding, paddingVertical } = tmp);
+          if (undefined === paddingBottom) {
+            if (undefined === paddingVertical) {
+              num = 0;
+              if (tmp2) {
+                num = padding;
+              }
+              tmp2 = undefined !== padding && typeof padding === "number";
+            } else {
+              num = paddingVertical;
+            }
+          } else {
+            num = paddingBottom;
+          }
+        }
+      }
+      const items = [tmp, ];
+      const obj = { paddingBottom: num + first, overflow: "visible" };
+      items[1] = obj;
+      return items;
+    } else {
+      return tmp;
     }
-    if (tmp) {
-      workletCallback(value[0], value[1], value[2], value[3]);
+  }, items1);
+  class H {
+    constructor() {
+      return animatedFooterHeight.get();
+    }
+  }
+  H.__closure = { animatedFooterHeight };
+  H.__workletHash = 10172145694310;
+  H.__initData = __initData;
+  const fn = function f(arg0, arg1) {
+    if (closure_0) {
+      cancelAnimation.runOnJS(closure_3)(arg0);
     }
   };
-  fn3.__closure = { temporaryCachedKeyboardEvent: sharedValue5, handleKeyboardEvent: workletCallback };
-  fn3.__workletHash = 16636741173520;
-  fn3.__initData = __initData;
-  const animatedReaction = includeBottomOffset(shouldHandleKeyboardEvents[2]).useAnimatedReaction(fn2, fn3, []);
-  return { state, height, animationEasing, animationDuration, shouldHandleKeyboardEvents };
+  const obj2 = require("cancelAnimation");
+  fn.__closure = { enableFooterMarginAdjustment: flag, runOnJS: require("cancelAnimation").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight };
+  fn.__workletHash = 1149497927090;
+  fn.__initData = __initData2;
+  const items2 = [animatedFooterHeight, animatedContentHeight, flag];
+  const animatedReaction = obj2.useAnimatedReaction(H, fn, items2);
+  return tmp6;
 };

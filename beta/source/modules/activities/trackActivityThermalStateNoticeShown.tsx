@@ -1,18 +1,18 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17647
+// Function ID: 17648
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [2041, 4779, 2040, 1074, 4385, 1241, 2]
+// Dependencies: [2045, 4781, 2044, 1078, 4389, 1245, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 17516 (trackActivityThermalStateNoticeShown)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+// Module 17647 (trackActivityThermalStateNoticeShown)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4389 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");
 

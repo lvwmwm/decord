@@ -1,33 +1,124 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17252
+// Function ID: 17253
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11352, 21, 4756, 576, 1612, 16353, 1478, 4616, 17250, 1365, 2]
+// Dependencies: [19, 17, 11383, 21, 4758, 580, 558, 568, 1616, 16354, 1482, 4619, 17253, 1369, 2]
 
-// Module 17249 (YouScreenContainer)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16353 */;
+// Module 17252 (YouScreenContainer)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16354 */;
 import noop from "module_19" /* 19 */;
 
-const useWindowDimensionsDefault = tmp(1478);
-const useChatLayoutDefault = tmp(4616);
-const YouScreenDefault = tmp(17250);
+const useWindowDimensionsDefault = tmp4(1482);
+const useChatLayoutDefault = tmp4(4619);
+const YouScreenDefault = tmp4(17253);
 require = fn;
 const View = fn(17).View;
-const RootNavigatorScreen = fn(11352).RootNavigatorScreen;
+const RootNavigatorScreen = fn(11383).RootNavigatorScreen;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl }, androidContainer: null, wrapper: null };
+const createStyles = fn(4758);
+let obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl }, androidContainer: null, wrapper: null };
 let obj3 = { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.xl };
 obj.androidContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
 obj.wrapper = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
 let closure_6 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 let obj5 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");
 
-export default noop.memo(function YouScreenContainer(route) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+  let tmp15Result = dependencyMap;
+  const cResult = c.c(15);
+  route = route.route;
+  let wrapper = closure_6();
+  let tmp4 = importDefault;
+  const top = useSafeAreaInsetsDefault().top;
+  const trackTabPerformance = TabsPerformanceTracker.useTrackTabPerformance(RootNavigatorScreen.YOU);
+  if (route != null) {
+    const params = route.params;
+    if (params != null) {
+      const initialTab = params.initialTab;
+    }
+  }
+  const width = useWindowDimensionsDefault().width;
+  if (useChatLayoutDefault().isChatBesideChannelList) {
+    if (cResult[2] === top) {
+      if (cResult[3] === wrapper.androidContainer) {
+        let tmp9 = cResult[4];
+      }
+      if (cResult[5] === wrapper.container) {
+        if (cResult[6] === tmp9) {
+          let tmp13 = cResult[7];
+        }
+        if (cResult[8] === initialTab) {
+          if (cResult[9] === wrapper.wrapper) {
+            if (cResult[10] === width) {
+              if (cResult[12] === tmp13) {
+              }
+              const obj3 = { style: tmp13, children: cResult[11] };
+              const tmp22 = <View style={tmp13}>{cResult[11]}</View>;
+              cResult[12] = tmp13;
+              cResult[13] = cResult[11];
+              cResult[14] = tmp22;
+            }
+          }
+        }
+        if (tmpResult.isAndroid()) {
+          const obj4 = { style: null, children: null };
+          const items = [wrapper.wrapper, ];
+          const obj5 = { maxWidth: 0.6 * width };
+          items[1] = obj5;
+          obj4.style = items;
+          tmp4 = YouScreenDefault;
+          const obj6 = { initialTab };
+          tmp15Result = tmp15(tmp4, obj6);
+          obj4.children = tmp15Result;
+          let tmp15Result2 = tmp15(View, obj4);
+        } else {
+          const obj7 = { initialTab };
+          tmp15Result2 = tmp15(YouScreenDefault, obj7);
+        }
+        cResult[8] = initialTab;
+        wrapper = wrapper.wrapper;
+        cResult[9] = wrapper;
+        cResult[10] = width;
+        cResult[11] = tmp15Result2;
+        tmpResult = tmp(1369);
+      }
+      const items1 = [wrapper.container, tmp9];
+      cResult[5] = wrapper.container;
+      cResult[6] = tmp9;
+      cResult[7] = items1;
+      tmp13 = items1;
+    }
+    let tmp10;
+    if (tmpResult2.isAndroid()) {
+      const obj8 = {};
+      const merged = Object.assign(wrapper.androidContainer);
+      obj8.paddingTop = top;
+      tmp10 = obj8;
+    }
+    cResult[2] = top;
+    cResult[3] = wrapper.androidContainer;
+    cResult[4] = tmp10;
+    tmp9 = tmp10;
+    tmpResult2 = tmp(1369);
+  } else {
+    if (cResult[0] !== initialTab) {
+      const obj9 = { initialTab };
+      const tmp8 = jsx(YouScreenDefault, { initialTab });
+      cResult[0] = initialTab;
+      cResult[1] = tmp8;
+      let tmp6 = tmp8;
+    } else {
+      tmp6 = cResult[1];
+    }
+    return tmp6;
+  }
+}) : ((route) => {
   route = route.route;
   let items1 = closure_6();
   let tmp = importDefault;
@@ -51,7 +142,7 @@ export default noop.memo(function YouScreenContainer(route) {
     const obj3 = { style: null, children: null };
     items[1] = tmp7;
     obj3.style = items;
-    tmp3Result = tmp3(1365);
+    tmp3Result = tmp3(1369);
     if (tmp3Result2.isAndroid()) {
       const obj4 = { style: null, children: null };
       items1 = [, ];
@@ -70,9 +161,9 @@ export default noop.memo(function YouScreenContainer(route) {
     }
     obj3.children = tmp5Result3;
     tmp5(View, obj3);
-    tmp3Result2 = tmp3(1365);
+    tmp3Result2 = tmp3(1369);
   } else {
     const obj8 = { initialTab };
     return tmp5(YouScreenDefault, obj8);
   }
-});
+}));

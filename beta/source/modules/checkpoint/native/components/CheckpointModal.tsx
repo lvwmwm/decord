@@ -1,34 +1,234 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 15955
+// Function ID: 15956
 // Name: CheckpointModal
-// Dependencies: [32, 19, 17, 4981, 1085, 21, 4756, 576, 1612, 15967, 15968, 4959, 10244, 5319, 4466, 15971, 15972, 15974, 15989, 15990, 15991, 1115, 5897, 15992, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4983, 1089, 21, 4758, 580, 558, 568, 1616, 15956, 15957, 4961, 10241, 5321, 15960, 15961, 15963, 15978, 15979, 1119, 15980, 5846, 15981, 4471, 2]
 
-// Module 15966 (CheckpointModal)
-import nativeDefault from "native" /* 576 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import CheckpointFlows from "CheckpointFlows" /* 15967 */;
+// Module 15955 (CheckpointModal)
+import nativeDefault from "native" /* 580 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import CheckpointFlows from "CheckpointFlows" /* 15956 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
+
 require = fn;
-const View = fn(17).View;
-const CheckpointConstants = fn(4981);
+let View = fn(17).View;
+const CheckpointConstants = fn(4983);
 ({ CHECKPOINT_PRIMARY: metroRequire, CHECKPOINT_LOGO_SIZE, CHECKPOINT_NAV_HEIGHT } = CheckpointConstants);
-const ThemeTypes = fn(1085).ThemeTypes;
+const ThemeTypes = fn(1089).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { height: "100%" }, layer: { position: "absolute", width: "100%", height: "100%" }, coveredCharacterLayer: { opacity: 0 }, nav: null, logo: null, headerActions: null };
 let rect = { position: "absolute", top: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, height: CHECKPOINT_NAV_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 obj2.nav = rect;
 obj2.logo = { width: CHECKPOINT_LOGO_SIZE, height: CHECKPOINT_LOGO_SIZE };
 obj2.headerActions = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
 let closure_10 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointModal.tsx");
 
-export default function CheckpointModal(didPlayerShareDataWithDiscord) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareDataWithDiscord) => {
+  const cResult = require("c").c(68);
+  didPlayerShareDataWithDiscord = didPlayerShareDataWithDiscord.didPlayerShareDataWithDiscord;
+  const tmp5 = closure_10();
+  first(1616)();
+  if (cResult[0] !== (undefined === didPlayerShareDataWithDiscord || didPlayerShareDataWithDiscord)) {
+    const checkpointFlow = tmp(15956).getCheckpointFlow(tmp4);
+    cResult[0] = tmp4;
+    cResult[1] = checkpointFlow;
+    let tmp8 = checkpointFlow;
+    const tmpResult = tmp(15956);
+  } else {
+    tmp8 = cResult[1];
+  }
+  _require = tmp8;
+  [first, dependencyMap] = noop.useState(require("CheckpointNavigation").CheckpointRoute.HOME);
+  let obj = require("c");
+  const tmp6 = first;
+  [tmp13, _slicedToArray] = noop.useState(false);
+  noop = noop.useRef(0);
+  if (cResult[2] === first) {
+    if (cResult[3] === tmp8) {
+      let tmp14 = cResult[4];
+    }
+    View = tmp14;
+    if (cResult[5] !== tmp14) {
+      class O {
+        constructor() {
+          return closure_5(-1);
+        }
+      }
+      cResult[5] = tmp14;
+      cResult[6] = O;
+    } else {
+      class O {
+        constructor() {
+          return closure_5(-1);
+        }
+      }
+    }
+    if (cResult[7] !== tmp14) {
+      class D {
+        constructor() {
+          return closure_5(1);
+        }
+      }
+      cResult[7] = tmp14;
+      cResult[8] = D;
+    } else {
+      class D {
+        constructor() {
+          return closure_5(1);
+        }
+      }
+    }
+    if (tmp13) {
+      class D {
+        constructor() {
+          return closure_5(1);
+        }
+      }
+    } else {
+      class D {
+        constructor() {
+          return closure_5(1);
+        }
+      }
+    }
+    if (cResult[9] === first) {
+      class D {
+        constructor() {
+          return closure_5(1);
+        }
+      }
+      if (cResult[12] !== first) {
+        class D {
+          constructor() {
+            return closure_5(1);
+          }
+        }
+        const checkpointRoutePresentation = obj4.getCheckpointRoutePresentation(first);
+        cResult[12] = first;
+        cResult[13] = checkpointRoutePresentation;
+        const tmp21 = checkpointRoutePresentation;
+      } else {
+        class D {
+          constructor() {
+            return closure_5(1);
+          }
+        }
+      }
+      ({ characterStage, statsScreen } = tmp21);
+      const tmp23 = first === tmp(15957).CheckpointRoute.HOME || null != statsScreen;
+      const container = tmp5.container;
+      if (tmp23) {
+        class D {
+          constructor() {
+            return closure_5(1);
+          }
+        }
+      }
+      if (cResult[14] === tmp5.layer) {
+        class D {
+          constructor() {
+            return closure_5(1);
+          }
+        }
+        if (tmp23) {
+          class D {
+            constructor() {
+              return closure_5(1);
+            }
+          }
+        }
+        if (tmp23) {
+          class D {
+            constructor() {
+              return closure_5(1);
+            }
+          }
+        }
+        if (cResult[17] !== characterStage) {
+          class D {
+            constructor() {
+              return closure_5(1);
+            }
+          }
+          const obj2 = { stage: characterStage };
+          const tmp27 = closure_8(tmp6(15960), obj2);
+          cResult[17] = characterStage;
+          cResult[18] = tmp27;
+        } else {
+          class D {
+            constructor() {
+              return closure_5(1);
+            }
+          }
+        }
+        if (cResult[19] === tmp23) {
+          class D {
+            constructor() {
+              return closure_5(1);
+            }
+          }
+        }
+        const obj3 = { style: tmp25, pointerEvents: "auto", accessibilityElementsHidden: tmp23, importantForAccessibility: "auto", children: tmp26 };
+        const tmp31 = closure_8(View, obj3);
+        cResult[19] = tmp23;
+        cResult[20] = tmp25;
+        cResult[21] = "auto";
+        cResult[22] = "auto";
+        cResult[23] = tmp26;
+        cResult[24] = tmp31;
+      }
+      const items = [tmp5.layer, tmp23];
+      cResult[14] = tmp5.layer;
+      cResult[15] = tmp23;
+      cResult[16] = items;
+    }
+    let adjacentCheckpointRoute = tmp(15956).getAdjacentCheckpointRoute(tmp8, first, 1);
+    cResult[9] = first;
+    cResult[10] = tmp8;
+    cResult[11] = adjacentCheckpointRoute;
+    const tmpResult2 = tmp(15956);
+  }
+  class R {
+    constructor(arg0) {
+      timestamp = Date.now();
+      if (closure_4.current + 500 <= timestamp) {
+        tmp3 = didPlayerShareDataWithDiscord;
+        tmp4 = closure_0;
+        tmp5 = closure_2;
+        obj = closure_0(closure_2[11]);
+        tmp6 = closure_0;
+        tmp7 = closure_1;
+        adjacentCheckpointRoute = obj.getAdjacentCheckpointRoute(closure_0, closure_1, didPlayerShareDataWithDiscord);
+        tmp9 = null;
+        if (null != adjacentCheckpointRoute) {
+          tmp2.current = timestamp;
+          tmp12 = closure_2;
+          tmp13 = closure_2(adjacentCheckpointRoute);
+        } else {
+          num = 1;
+          if (1 === didPlayerShareDataWithDiscord) {
+            tmp10 = closure_1;
+            arr = closure_1(tmp5[13]);
+            arr1 = arr.pop();
+          }
+        }
+      }
+      return;
+    }
+  }
+  cResult[2] = first;
+  cResult[3] = tmp8;
+  cResult[4] = R;
+  tmp14 = R;
+}) : ((didPlayerShareDataWithDiscord) => {
   let flag = didPlayerShareDataWithDiscord.didPlayerShareDataWithDiscord;
   if (flag === undefined) {
     flag = true;
@@ -39,10 +239,10 @@ export default function CheckpointModal(didPlayerShareDataWithDiscord) {
   _slicedToArray = undefined;
   noop = undefined;
   const tmp = closure_10();
-  const rect = route(1612)();
-  checkpointFlow = checkpointFlow(15967).getCheckpointFlow(flag);
-  [route, dependencyMap] = noop.useState(checkpointFlow(15968).CheckpointRoute.HOME);
-  let obj = checkpointFlow(15967);
+  const rect = route(1616)();
+  checkpointFlow = checkpointFlow(15956).getCheckpointFlow(flag);
+  [route, dependencyMap] = noop.useState(checkpointFlow(15957).CheckpointRoute.HOME);
+  let obj = checkpointFlow(15956);
   [tmp9, c3] = noop.useState(false);
   noop = noop.useRef(0);
   const items = [route, checkpointFlow];
@@ -63,16 +263,16 @@ export default function CheckpointModal(didPlayerShareDataWithDiscord) {
   const callback1 = noop.useCallback(() => callback(-1), items1);
   const callback2 = noop.useCallback(() => callback(1), items2);
   if (tmp9) {
-    let VoiceNormalIcon = tmp4(10244).VoiceXIcon;
+    let VoiceNormalIcon = tmp4(10241).VoiceXIcon;
   } else {
-    VoiceNormalIcon = tmp4(5319).VoiceNormalIcon;
+    VoiceNormalIcon = tmp4(5321).VoiceNormalIcon;
   }
   const tmp8 = _slicedToArray(noop.useState(false), 2);
-  const tmp4Result = checkpointFlow(15967);
-  const tmp13 = null == checkpointFlow(15967).getAdjacentCheckpointRoute(checkpointFlow, route, 1);
-  const checkpointRoutePresentation = checkpointFlow(15968).getCheckpointRoutePresentation(route);
+  const tmp4Result = checkpointFlow(15956);
+  const tmp13 = null == checkpointFlow(15956).getAdjacentCheckpointRoute(checkpointFlow, route, 1);
+  const checkpointRoutePresentation = checkpointFlow(15957).getCheckpointRoutePresentation(route);
   ({ characterStage, statsScreen } = checkpointRoutePresentation);
-  let tmp16Result2 = route === tmp4(15968).CheckpointRoute.HOME || null != statsScreen;
+  let tmp16Result2 = route === tmp4(15957).CheckpointRoute.HOME || null != statsScreen;
   const obj2 = { theme: ThemeTypes.DARK, children: null };
   const obj3 = { style: tmp.container, children: null };
   const items3 = [tmp.layer, ];
@@ -93,17 +293,17 @@ export default function CheckpointModal(didPlayerShareDataWithDiscord) {
     str = "no-hide-descendants";
   }
   obj4.importantForAccessibility = str;
-  obj4.children = closure_8(route(15971), { stage: characterStage });
+  obj4.children = closure_8(route(15960), { stage: characterStage });
   const items4 = [closure_8(callback, obj4), , , , ];
   let tmp16Result = tmp16Result2;
   if (tmp16Result2) {
-    tmp16Result = tmp16(tmp2(15972), {});
+    tmp16Result = tmp16(tmp2(15961), {});
   }
   items4[1] = tmp16Result;
   if (tmp16Result2) {
     const obj5 = { style: tmp.layer, children: null };
     const obj6 = { route };
-    obj5.children = tmp16(tmp2(15974), obj6);
+    obj5.children = tmp16(tmp2(15963), obj6);
     tmp16Result2 = tmp16(tmp18, obj5);
   }
   items4[2] = tmp16Result2;
@@ -111,10 +311,10 @@ export default function CheckpointModal(didPlayerShareDataWithDiscord) {
   const items5 = [tmp.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
   obj7.style = items5;
   const obj8 = { uri: null, style: null };
-  const tmp4Result2 = checkpointFlow(15968);
-  obj8.uri = route(15990);
+  const tmp4Result2 = checkpointFlow(15957);
+  obj8.uri = route(15979);
   obj8.style = tmp.logo;
-  const items6 = [closure_8(route(15989), obj8), ];
+  const items6 = [closure_8(route(15978), obj8), ];
   const obj9 = { style: tmp.headerActions, children: null };
   const obj10 = {
     onPress() {
@@ -123,27 +323,27 @@ export default function CheckpointModal(didPlayerShareDataWithDiscord) {
     accessibilityLabel: null,
     children: null
   };
-  const tmp2Result = route(15989);
-  const intl = tmp4(1115).intl;
-  const t = tmp4(1115).t;
-  const tmp2Result3 = route(15991);
+  const tmp2Result = route(15978);
+  const intl = tmp4(1119).intl;
+  const t = tmp4(1119).t;
+  const tmp2Result3 = route(15980);
   obj10.accessibilityLabel = intl.string(tmp9 ? t.YqAjXy : t.w4m945);
   obj10.children = closure_8(VoiceNormalIcon, { color, size: "xs" });
   const items7 = [closure_8(tmp2Result3, obj10), ];
   const obj12 = { onPress: null, accessibilityLabel: null, children: null };
   const obj11 = { color, size: "xs" };
-  const tmp22 = route === checkpointFlow(15968).CheckpointRoute.HOME;
-  obj12.onPress = route(4959).pop;
-  const intl2 = tmp4(1115).intl;
-  obj12.accessibilityLabel = intl2.string(checkpointFlow(1115).t.cpT0Cq);
-  obj12.children = closure_8(checkpointFlow(5897).XSmallIcon, { color, size: "xs" });
-  items7[1] = closure_8(route(15991), obj12);
+  const tmp22 = route === checkpointFlow(15957).CheckpointRoute.HOME;
+  obj12.onPress = route(4961).pop;
+  const intl2 = tmp4(1119).intl;
+  obj12.accessibilityLabel = intl2.string(checkpointFlow(1119).t.cpT0Cq);
+  obj12.children = closure_8(checkpointFlow(5846).XSmallIcon, { color, size: "xs" });
+  items7[1] = closure_8(route(15980), obj12);
   obj9.children = items7;
   items6[1] = closure_9(callback, obj9);
   obj7.children = items6;
   items4[3] = closure_9(callback, obj7);
-  items4[4] = closure_8(route(15992), { onBack: callback1, onNext: callback2, isTerminal: tmp13, isHome: tmp22 });
+  items4[4] = closure_8(route(15981), { onBack: callback1, onNext: callback2, isTerminal: tmp13, isHome: tmp22 });
   obj3.children = items4;
   obj2.children = closure_9(callback, obj3);
-  return closure_8(checkpointFlow(4466).ThemeContextProvider, obj2);
-};
+  return closure_8(checkpointFlow(4471).ThemeContextProvider, obj2);
+});

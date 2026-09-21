@@ -1,10 +1,10 @@
-// Module ID: 8121
-// Function ID: 8122
+// Module ID: 8126
+// Function ID: 8127
 // Name: TrackingConstants
-// Dependencies: [8122, 2]
+// Dependencies: [8127, 2]
 
-// Module 8121 (TrackingConstants)
-import SearchConstants from "SearchConstants" /* 8122 */;
+// Module 8126 (TrackingConstants)
+import SearchConstants from "SearchConstants" /* 8127 */;
 import size from "module_2" /* 2 */;
 
 ({ SearchHistoryItemTypes, SearchTabs } = SearchConstants);

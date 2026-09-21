@@ -1,33 +1,80 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15827
+// Function ID: 15828
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 4723, 7444, 4959, 11188, 7442, 7394, 1115, 15839, 15841, 4718, 15844, 1364, 11227, 15845, 11725, 14112, 2019, 2]
+// Dependencies: [19, 17, 21, 4725, 558, 568, 4961, 11229, 7445, 7396, 1119, 15828, 15830, 4720, 7449, 15833, 1368, 11265, 15834, 11594, 14115, 2023, 2]
 
-// Module 15838 (ViewDebugLogsSetting)
+// Module 15827 (ViewDebugLogsSetting)
 import _mod17 from "module_17" /* 17 */;
 import _mod19 from "module_19" /* 19 */;
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import ClockIcon from "ClockIcon" /* 4718 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
-import ActionSheet from "ActionSheet" /* 7442 */;
-import ActionSheetRow from "ActionSheetRow" /* 7444 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11188 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14112 */;
-import WrenchIcon from "WrenchIcon" /* 15839 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15841 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15844 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15845 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import ClockIcon from "ClockIcon" /* 4720 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
+import ActionSheetRow from "ActionSheetRow" /* 7445 */;
+import ActionSheet from "ActionSheet" /* 7449 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11229 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14115 */;
+import WrenchIcon from "WrenchIcon" /* 15828 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15830 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15833 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15834 */;
 import jsxProd from "jsxProd" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
-function ViewDebugLogsActionSheetRow(icon) {
+const Suspense = _mod19.Suspense;
+const Keyboard = _mod17.Keyboard;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const ViewDebugLogsActionSheet = "ViewDebugLogsActionSheet";
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => {
+  const cResult = title(render[5]).c(8);
+  ({ icon, title } = screenKey);
+  screenKey = screenKey.screenKey;
+  render = screenKey.render;
+  if (cResult[0] === render) {
+    if (cResult[1] === screenKey) {
+      if (cResult[2] === title) {
+        let tmp4 = cResult[3];
+      }
+      if (cResult[4] === icon) {
+        if (cResult[5] === tmp4) {
+          if (cResult[6] === title) {
+            let tmp5 = cResult[7];
+          }
+          return tmp5;
+        }
+      }
+      const obj2 = { icon, label: title, onPress: tmp4 };
+      const tmp7 = closure_5(title(render[8]).ActionSheetRow, obj2);
+      cResult[4] = icon;
+      cResult[5] = tmp4;
+      cResult[6] = title;
+      cResult[7] = tmp7;
+      tmp5 = tmp7;
+    }
+  }
+  const fn = function t() {
+    ActionSheetActionCreatorsDefault.hideActionSheet(ViewDebugLogsActionSheet);
+    ModalActionCreatorsDefault.pushLazy(Promise.resolve({
+      default() {
+        return closure_2_5(screenKey(render[7]), { title, render, screenKey });
+      }
+    }));
+  };
+  cResult[0] = render;
+  cResult[1] = screenKey;
+  cResult[2] = title;
+  cResult[3] = fn;
+  tmp4 = fn;
+}) : ((icon) => {
   const title = icon.title;
   ({ screenKey: importDefault, render: dependencyMap } = icon);
-  return closure_5(title(7444).ActionSheetRow, {
+  return closure_5(title(7445).ActionSheetRow, {
     icon: icon.icon,
     label: title,
     onPress() {
@@ -39,8 +86,95 @@ function ViewDebugLogsActionSheetRow(icon) {
       }));
     }
   });
-}
-function ViewDebugLogsActionSheet() {
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { title: null };
+    const intl = tmp(1119).intl;
+    obj2.title = intl.string(tmp(1119).t.BUOCPi);
+    const tmp6 = hasOwnProperty(tmp(7396).BottomSheetTitleHeader, obj2);
+    cResult[0] = tmp6;
+    let first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = hasOwnProperty(tmp(15828).WrenchIcon, {});
+    const intl2 = tmp(1119).intl;
+    const stringResult = intl2.string(tmp(1119).t.XpPGhL);
+    cResult[1] = tmp10;
+    cResult[2] = stringResult;
+    let tmp8 = stringResult;
+    let tmp7 = tmp10;
+  } else {
+    tmp7 = cResult[1];
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = {
+      icon: tmp7,
+      title: tmp8,
+      screenKey: "debugLogs",
+      render() {
+          return closure_1_5(UserSettingsDebugLogsDefault, {});
+        }
+    };
+    const tmp15 = hasOwnProperty(closure_8, obj3);
+    cResult[3] = tmp15;
+    let tmp12 = tmp15;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp19 = hasOwnProperty(tmp(4720).ClockIcon, {});
+    const intl3 = tmp(1119).intl;
+    const stringResult1 = intl3.string(tmp(1119).t.b0nJvk);
+    cResult[4] = tmp19;
+    cResult[5] = stringResult1;
+    let tmp17 = stringResult1;
+    let tmp16 = tmp19;
+  } else {
+    tmp16 = cResult[4];
+    tmp17 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { header: first, children: null };
+    const items = [tmp12, , ];
+    const obj5 = {
+      icon: tmp16,
+      title: tmp17,
+      screenKey: "startupTiming",
+      render() {
+          return closure_1_5(Suspense, { children: closure_1_5(UserSettingsStartupTimingsDefault, {}) });
+        }
+    };
+    items[1] = hasOwnProperty(closure_8, obj5);
+    let tmp22Result = null;
+    if (tmpResult.isAndroid()) {
+      const obj6 = { icon: tmp22(tmp(11265).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
+      const intl4 = tmp(1119).intl;
+      obj6.title = intl4.string(tmp(1119).t.Ljj0ps);
+      obj6.render = function render() {
+        return closure_1_5(UserSettingsPushNotificationLogsDefault, {});
+      };
+      tmp22Result = tmp22(tmp24, obj6);
+    }
+    const obj7 = { hasIcons: true, children: null };
+    items[2] = tmp22Result;
+    obj7.children = items;
+    obj4.children = timestampProducer(tmp(7445).ActionSheetRow.Group, obj7);
+    const tmp22Result2 = hasOwnProperty(tmp(7449).ActionSheet, obj4);
+    cResult[6] = tmp22Result2;
+    let tmp21 = tmp22Result2;
+    tmp24 = closure_8;
+    tmpResult = tmp(1368);
+  } else {
+    tmp21 = cResult[6];
+  }
+  return tmp21;
+}) : (() => {
   const obj = { header: null, children: null };
   const obj2 = { title: null };
   const intl = util.intl;
@@ -52,32 +186,28 @@ function ViewDebugLogsActionSheet() {
   obj3.render = function render() {
     return closure_1_5(UserSettingsDebugLogsDefault, {});
   };
-  const items = [hasOwnProperty(ViewDebugLogsActionSheetRow, obj3), , ];
+  const items = [hasOwnProperty(closure_8, obj3), , ];
   const obj4 = { icon: hasOwnProperty(ClockIcon.ClockIcon, {}), title: null, screenKey: "startupTiming", render: null };
   const intl3 = util.intl;
   obj4.title = intl3.string(util.t.b0nJvk);
   obj4.render = function render() {
     return closure_1_5(Suspense, { children: closure_1_5(UserSettingsStartupTimingsDefault, {}) });
   };
-  items[1] = hasOwnProperty(ViewDebugLogsActionSheetRow, obj4);
+  items[1] = hasOwnProperty(closure_8, obj4);
   let tmpResult = null;
   if (obj5.isAndroid()) {
-    const obj6 = { icon: tmp(tmp2(11227).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
-    const intl4 = tmp2(1115).intl;
-    obj6.title = intl4.string(tmp2(1115).t.Ljj0ps);
+    const obj6 = { icon: tmp(tmp2(11265).ChannelNotificationIcon, {}), title: null, screenKey: "pushNotificationLogs", render: null };
+    const intl4 = tmp2(1119).intl;
+    obj6.title = intl4.string(tmp2(1119).t.Ljj0ps);
     obj6.render = function render() {
       return closure_1_5(UserSettingsPushNotificationLogsDefault, {});
     };
-    tmpResult = tmp(ViewDebugLogsActionSheetRow, obj6);
+    tmpResult = tmp(closure_8, obj6);
   }
   items[2] = tmpResult;
   obj.children = timestampProducer(ActionSheetRow.ActionSheetRow.Group, { hasIcons: true, children: items });
   return hasOwnProperty(ActionSheet.ActionSheet, obj);
-}
-const Suspense = _mod19.Suspense;
-const Keyboard = _mod17.Keyboard;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-ViewDebugLogsActionSheet = "ViewDebugLogsActionSheet";
+});
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
@@ -88,7 +218,7 @@ const pressable = SettingBuilders.createPressable({
   usePredicate: UserSettings.DeveloperMode.useSetting,
   onPress: function handleViewDebugLogsSettingPress() {
     Keyboard.dismiss();
-    ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: ViewDebugLogsActionSheet }), ViewDebugLogsActionSheet);
+    ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: closure_9 }), ViewDebugLogsActionSheet);
   },
   withArrow: true
 });

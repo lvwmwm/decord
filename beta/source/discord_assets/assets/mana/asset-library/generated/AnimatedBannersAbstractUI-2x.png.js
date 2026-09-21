@@ -1,8 +1,8 @@
-// Module ID: 5961
-// Function ID: 5962
+// Module ID: 5959
+// Function ID: 5960
 // Dependencies: [2]
 
-// Module 5961
+// Module 5959
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnimatedBannersAbstractUI-2x.png.js");

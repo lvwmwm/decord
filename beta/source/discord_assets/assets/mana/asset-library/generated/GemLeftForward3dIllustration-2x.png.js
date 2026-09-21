@@ -1,8 +1,8 @@
-// Module ID: 6343
-// Function ID: 6344
+// Module ID: 6341
+// Function ID: 6342
 // Dependencies: [2]
 
-// Module 6343
+// Module 6341
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLeftForward3dIllustration-2x.png.js");

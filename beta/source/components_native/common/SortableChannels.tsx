@@ -1,7 +1,7 @@
 // Module ID: 16487
 // Function ID: 16488
 // Name: SortableChannels
-// Dependencies: [19, 17, 21, 12, 1478, 2]
+// Dependencies: [19, 17, 21, 12, 1482, 2]
 
 // Module 16487 (SortableChannels)
 import noop from "module_19" /* 19 */;
@@ -146,7 +146,7 @@ SortRow.prototype["render"] = function render() {
   items[2] = pan.getLayout();
   obj.style = items;
   obj.children = renderItem(rowData.data, true);
-  return React6(RN.View, obj);
+  return closure_1_8(RN.View, obj);
 };
 const Component3 = noop.Component;
 class SortableChannels extends Component3 {
@@ -303,14 +303,14 @@ class SortableChannels extends Component3 {
           obj = { style: null };
           const obj2 = { height: frameHeight };
           obj.style = obj2;
-          renderActiveDividerResult = React6(React3, obj);
+          renderActiveDividerResult = closure_2_8(React3, obj);
         }
         return renderActiveDividerResult;
       }
     };
     obj.renderSectionHeader = function renderSectionHeader(data, arg1) {
       let tmp = arg1;
-      const state = list.state;
+      state = list.state;
       ({ active, hoveringIndex } = state);
       const order = list.props.order;
       ({ activeIndex, panResponder } = state);
@@ -357,7 +357,7 @@ class SortableChannels extends Component3 {
     };
     obj.renderItem = function renderItem(data, arg1) {
       let tmp = arg1;
-      const state = list.state;
+      state = list.state;
       ({ active, hoveringIndex } = state);
       let tmp3 = !tmp;
       ({ activeIndex, panResponder } = state);
@@ -543,7 +543,7 @@ prototype["createPanResponder"] = function createPanResponder(arg0, point, value
       }
     },
     onPanResponderGrant() {
-      const state = self.state;
+      state = self.state;
       const pan = state.pan;
       const onMoveStart = closure_1.onMoveStart;
       if (null != state.active) {
@@ -639,7 +639,7 @@ prototype["render"] = function render() {
     return key.key;
   };
   obj3.getItemLayout = self.getItemLayout;
-  const items = [React6(timestampProducer, obj3), self.renderActive()];
+  const items = [closure_1_8(timestampProducer, obj3), self.renderActive()];
   obj.children = items;
   return React5(React3, obj);
 };

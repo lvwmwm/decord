@@ -1,31 +1,33 @@
-// Module ID: 10561
-// Function ID: 10562
+// Module ID: 10478
+// Function ID: 10479
 // Name: useEmojiPickerData
-// Dependencies: [19, 5676, 5680, 10548, 504, 10562, 10563, 10564, 10566, 2]
+// Dependencies: [19, 5678, 5682, 10439, 558, 504, 10479, 10480, 10481, 10483, 2]
 // Exports: default
 
-// Module 10561 (useEmojiPickerData)
-import getEmojiPickerDataRowItemNativeSectionDefault from "getEmojiPickerDataRowItemNativeSection" /* 10562 */;
-import getEmojiPickerDataRowPremiumInlineRoadblockDefault from "getEmojiPickerDataRowPremiumInlineRoadblock" /* 10563 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10564 */;
-import getEmojiPickerDataRowItemSlimEmojiDefault from "getEmojiPickerDataRowItemSlimEmoji" /* 10566 */;
+// Module 10478 (useEmojiPickerData)
+import getEmojiPickerDataRowItemNativeSectionDefault from "getEmojiPickerDataRowItemNativeSection" /* 10479 */;
+import getEmojiPickerDataRowPremiumInlineRoadblockDefault from "getEmojiPickerDataRowPremiumInlineRoadblock" /* 10480 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10481 */;
+import getEmojiPickerDataRowItemSlimEmojiDefault from "getEmojiPickerDataRowItemSlimEmoji" /* 10483 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
 
 require = fn;
-const LoadState = fn(5676).LoadState;
-const EmojiCategoryTypes = fn(5680).EmojiCategoryTypes;
-let closure_7 = fn(10548).EmojiPickerRenderingDataType;
+const LoadState = fn(5678).LoadState;
+const EmojiCategoryTypes = fn(5682).EmojiCategoryTypes;
+let closure_7 = fn(10439).EmojiPickerRenderingDataType;
 const EmojiPickerItemType = { PLACEHOLDER: 0, [0]: "PLACEHOLDER", TITLE: 1, [1]: "TITLE", EMOJI_ROW: 2, [2]: "EMOJI_ROW", EMOJI_ROW_SLIM: 3, [3]: "EMOJI_ROW_SLIM", EMOJI_ROW_NSFW: 4, [4]: "EMOJI_ROW_NSFW", FOOTER_UPSELL: 5, [5]: "FOOTER_UPSELL", PREMIUM_INLINE_ROADBLOCK: 6, [6]: "PREMIUM_INLINE_ROADBLOCK", NATIVE_SECTION: 7, [7]: "NATIVE_SECTION" };
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/emoji_picker/native/components/data/useEmojiPickerData.tsx");
+const result1 = size.fileFinishedImporting("modules/emoji_picker/native/components/data/useEmojiPickerData.tsx");
 
-export default function useEmojiPickerData(emojiSections) {
+export default function useEmojiPickerData_unoptimized(emojiSections) {
   emojiSections = emojiSections.emojiSections;
   const rowSize = emojiSections.rowSize;
   const isNativeEmojiPickerEnabled = emojiSections.isNativeEmojiPickerEnabled;
   let items = [EmojiStore];
-  const stateFromStores = emojiSections(isNativeEmojiPickerEnabled[4]).useStateFromStores(items, () => {
+  const stateFromStores = emojiSections(isNativeEmojiPickerEnabled[5]).useStateFromStores(items, () => {
     let tmp = EmojiStore.loadState === LoadState.Loaded;
     if (!tmp) {
       tmp = !isNativeEmojiPickerEnabled;

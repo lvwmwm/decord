@@ -1,26 +1,26 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13363
+// Function ID: 13364
 // Name: VibegrationsCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 13361, 1074, 2048, 21, 4756, 576, 5274, 1115, 3678, 1101, 4723, 9310, 13359, 13188, 7442, 7394, 7330, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 13364, 1078, 2052, 21, 4758, 580, 5276, 1119, 3682, 1105, 4725, 9308, 13362, 13187, 7449, 7396, 7332, 5188, 2]
 // Exports: default
 
-// Module 13360 (VibegrationsCustomWidgetSheet)
-import nativeDefault from "native" /* 576 */;
-import _modDef3678 from "module_3678" /* 3678 */;
+// Module 13363 (VibegrationsCustomWidgetSheet)
+import nativeDefault from "native" /* 580 */;
+import _modDef3682 from "module_3682" /* 3682 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(13361);
+const VibegrationsConnectionStore = fn(13364);
 ({ ensureConnection: closure_7, sendUserMessage: closure_8 } = VibegrationsConnectionStore);
-const Routes = fn(1074).Routes;
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const Routes = fn(1078).Routes;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 const VibegrationsCustomWidgetSheet = "VibegrationsCustomWidgetSheet";
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { body: { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 } };
 let closure_14 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -33,7 +33,7 @@ export default function VibegrationsCustomWidgetSheet() {
   const tmp4 = _slicedToArray(memo.useState(null), 2);
   [tmp7, asyncGeneratorStep] = memo.useState(false);
   _slicedToArray = memo.useRef(false);
-  memo = memo.useMemo(() => first(5274).resolveVibegrationsWorkspaceGuildId("VibegrationsCustomWidgetSheet"), []);
+  memo = memo.useMemo(() => first(5276).resolveVibegrationsWorkspaceGuildId("VibegrationsCustomWidgetSheet"), []);
   const callback = memo.useCallback((arg0) => {
     closure_1(arg0);
     dependencyMap(null);
@@ -50,7 +50,7 @@ export default function VibegrationsCustomWidgetSheet() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -68,11 +68,11 @@ export default function VibegrationsCustomWidgetSheet() {
             closure_128_0 = undefined;
             closure_128_1 = undefined;
             closure_128_2 = function open(arg0) {
-              closure_0(1101).transitionTo(closure_2_9.CHANNEL(closure_1_5, constants.VIBEGRATIONS, arg0));
-              const obj = closure_0(1101);
-              closure_1(4723).hideActionSheet(closure_2_13);
-              const obj2 = closure_1(4723);
-              closure_1(4723).hideAllActionSheets();
+              closure_0(1105).transitionTo(closure_2_9.CHANNEL(closure_1_5, constants.VIBEGRATIONS, arg0));
+              const obj = closure_0(1105);
+              closure_1(4725).hideActionSheet(closure_2_13);
+              const obj2 = closure_1(4725);
+              closure_1(4725).hideAllActionSheets();
             };
             const trimmed = first.trim();
             closure_128_0 = trimmed;
@@ -87,13 +87,13 @@ export default function VibegrationsCustomWidgetSheet() {
                   const obj6 = { guild_id: tmp62, install_scope: "user" };
                   c4 = 3;
                   c5 = 1;
-                  const obj7 = { value: value(tmp71[15]).createProject(obj6), done: false };
+                  const obj7 = { value: value(tmp70[15]).createProject(obj6), done: false };
                   return obj7;
                 }
               }
             } else {
-              const intl = value(tmp71[11]).intl;
-              dependencyMap(intl.string(tmp4(tmp71[12]).Wo5sQv));
+              const intl = value(tmp70[11]).intl;
+              dependencyMap(intl.string(tmp4(tmp70[12]).Wo5sQv));
             }
             c5 = 3;
           }
@@ -101,14 +101,14 @@ export default function VibegrationsCustomWidgetSheet() {
           c3 = 0;
           closure_129_4.current = false;
           closure_129_3(false);
-          throw tmp71;
+          throw tmp70;
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            closure_128_3 = tmp71;
+            closure_128_3 = tmp70;
             if (null == closure_128_1) {
-              closure_129_2(value(tmp71[17]).getVibegrationsCreateErrorMessage(closure_128_3));
-              const obj3 = value(tmp71[17]);
+              closure_129_2(value(tmp70[17]).getVibegrationsCreateErrorMessage(closure_128_3));
+              const obj3 = value(tmp70[17]);
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -123,10 +123,10 @@ export default function VibegrationsCustomWidgetSheet() {
           } else {
             closure_128_1 = value;
             closure_1_7(closure_128_1);
-            closure_1_8(closure_128_1, value(tmp71[16]).composeVibegrationsCustomWidgetPrompt(closure_128_0));
+            closure_1_8(closure_128_1, value(tmp70[16]).composeVibegrationsCustomWidgetPrompt(closure_128_0));
             closure_128_2(closure_128_1);
             c3 = 1;
-            let obj = value(tmp71[16]);
+            let obj = value(tmp70[16]);
           }
           c3 = 0;
           closure_129_4.current = false;
@@ -137,12 +137,12 @@ export default function VibegrationsCustomWidgetSheet() {
         closure_129_4.current = false;
         closure_129_3(false);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp71) {
+        return { value: "IconComponent", done: null };
+      } catch (tmp70) {
         if (tmp5 === c3) {
           c5 = tmp3;
-          throw tmp71;
-        } else if (tmp2 === tmp73) {
+          throw tmp70;
+        } else if (tmp2 === tmp72) {
           c4 = tmp2;
         } else {
           c4 = tmp;
@@ -152,32 +152,32 @@ export default function VibegrationsCustomWidgetSheet() {
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: null, children: null };
   let obj2 = { title: null };
-  let intl = value(1115).intl;
-  obj2.title = intl.string(_modDef3678["27bu14"]);
-  obj.header = closure_11(value(7394).BottomSheetTitleHeader, obj2);
+  let intl = value(1119).intl;
+  obj2.title = intl.string(_modDef3682["27bu14"]);
+  obj.header = closure_11(value(7396).BottomSheetTitleHeader, obj2);
   let obj3 = { style: tmp.body, children: null };
   const obj4 = { label: null, placeholder: null, description: null, errorMessage: null, value: null, onChange: null, maxLength: null, disabled: null };
-  const intl2 = value(1115).intl;
-  obj4.label = intl2.string(_modDef3678.DAm99t);
-  const intl3 = value(1115).intl;
-  obj4.placeholder = intl3.string(_modDef3678.FYN9Rl);
-  const intl4 = value(1115).intl;
-  obj4.description = intl4.string(_modDef3678.blSmfQ);
+  const intl2 = value(1119).intl;
+  obj4.label = intl2.string(_modDef3682.DAm99t);
+  const intl3 = value(1119).intl;
+  obj4.placeholder = intl3.string(_modDef3682.FYN9Rl);
+  const intl4 = value(1119).intl;
+  obj4.description = intl4.string(_modDef3682.blSmfQ);
   obj4.errorMessage = tmp5;
   obj4.value = value;
   obj4.onChange = callback;
-  obj4.maxLength = value(13359).VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH;
+  obj4.maxLength = value(13362).VIBEGRATIONS_CUSTOM_WIDGET_PROMPT_MAX_LENGTH;
   obj4.disabled = tmp7;
-  const items1 = [closure_11(value(7330).TextArea, obj4), ];
+  const items1 = [closure_11(value(7332).TextArea, obj4), ];
   let obj5 = { variant: "primary", text: null, onPress: null, loading: null, disabled: null };
-  const intl5 = tmp12(1115).intl;
-  obj5.text = intl5.string(_modDef3678["f/Jz/R"]);
+  const intl5 = tmp12(1119).intl;
+  obj5.text = intl5.string(_modDef3682["f/Jz/R"]);
   obj5.onPress = callback1;
   obj5.loading = tmp7;
   obj5.disabled = null == memo;
-  items1[1] = closure_11(value(5186).Button, obj5);
+  items1[1] = closure_11(value(5188).Button, obj5);
   obj3.children = items1;
   obj.children = closure_12(View, obj3);
-  return closure_11(value(7442).ActionSheet, obj);
+  return closure_11(value(7449).ActionSheet, obj);
 };
 export const VIBEGRATIONS_CUSTOM_WIDGET_SHEET_KEY = "VibegrationsCustomWidgetSheet";

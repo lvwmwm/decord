@@ -1,24 +1,81 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16767
+// Function ID: 16768
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2059, 2063, 1372, 16765, 21, 4756, 576, 7876, 10137, 16766, 16767, 16768, 16769, 5804, 16770, 1177, 16771, 16772, 7407, 504, 5339, 8448, 8516, 16773, 4752, 2]
+// Dependencies: [19, 17, 2063, 2067, 1376, 16768, 21, 4758, 580, 7881, 10116, 16769, 16770, 16771, 16772, 5802, 16773, 1181, 16774, 16775, 558, 568, 7409, 504, 8453, 8521, 5341, 16776, 4754, 2]
 
-// Module 16764 (ForYouItemImage)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5339 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8516 */;
+// Module 16767 (ForYouItemImage)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import Pressables from "Pressables" /* 5341 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7881 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8521 */;
+import _modDef10116 from "module_10116" /* 10116 */;
+import _modDef16769 from "module_16769" /* 16769 */;
+import _modDef16770 from "module_16770" /* 16770 */;
+import _modDef16771 from "module_16771" /* 16771 */;
+import _modDef16772 from "module_16772" /* 16772 */;
+import _modDef16773 from "module_16773" /* 16773 */;
+import _modDef16774 from "module_16774" /* 16774 */;
+import _modDef16775 from "module_16775" /* 16775 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
+function getFallbackIcon(type, fallbackImage) {
+  if (NotificationCenterItemsTypes.NotificationCenterItems.MISSED_MESSAGES === type) {
+    const obj2 = { icon: _modDef10116, color: fallbackImage.fallbackImage.color };
+    return obj2;
+  } else if (tmp(7881).NotificationCenterItems.FRIEND_REQUEST_REMINDER === type) {
+    const obj3 = { icon: _modDef16769, color: fallbackImage.fallbackImage.color };
+    return obj3;
+  } else {
+    if (tmp(7881).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED !== type) {
+      if (tmp(7881).NotificationCenterItems.TOP_MESSAGES !== type) {
+        if (tmp(7881).NotificationCenterItems.MISSED_MESSAGES !== type) {
+          if (tmp(7881).NotificationCenterItems.TOP_MESSAGES === type) {
+            const obj4 = { icon: _modDef16771, color: fallbackImage.fallbackImage.color };
+            return obj4;
+          } else {
+            const obj = { icon: _modDef16772, color: fallbackImage.fallbackImage.color };
+            return obj;
+          }
+        }
+      }
+    }
+    const obj5 = { icon: _modDef16770, color: fallbackImage.fallbackImageV2.color, backgroundStyle: fallbackImage.guildGridBackground };
+    return obj5;
+  }
+}
+function getLifecycleIcon(item_enum) {
+  if (item_enum === NotificationCenterItemsTypes.ItemEnum.UPDATE_PROFILE) {
+    const obj2 = { source: _modDef16773 };
+    let tmp5 = jsx(FastImageDefault, { source: _modDef16773 });
+  } else {
+    if (item_enum !== tmp(7881).ItemEnum.FIND_FRIENDS) {
+      if (item_enum !== tmp(7881).ItemEnum.ADD_FRIEND) {
+        if (item_enum === tmp(7881).ItemEnum.FIRST_MESSAGE) {
+          const obj3 = { source: _modDef16775, style: { width: "105%" } };
+          tmp5 = jsx(FastImageDefault, { source: _modDef16775, style: { width: "105%" } });
+        } else {
+          const obj = { source: _modDef16772 };
+          tmp5 = jsx(tmp(1181).Icon, { source: _modDef16772 });
+        }
+      }
+    }
+    const obj4 = { source: _modDef16774, size: tmp(1181).IconSizes.SMALL_20, color: nativeDefault.unsafe_rawColors.WHITE };
+    tmp5 = jsx(tmp(1181).Icon, { source: _modDef16774, size: tmp(1181).IconSizes.SMALL_20, color: nativeDefault.unsafe_rawColors.WHITE });
+  }
+  return tmp5;
+}
 const View = fn(17).View;
-const getGuildAcronym = fn(2059).getGuildAcronym;
-const Constants = fn(16765);
+const getGuildAcronym = fn(2063).getGuildAcronym;
+const Constants = fn(16768);
 ({ FRIEND_BACKGROUND, MESSAGE_BACKGROUND, PROFILE_BACKGROUND } = Constants);
 const jsx = fn(21).jsx;
-let createStyles = fn(4756);
+let createStyles = fn(4758);
 let closure_9 = createStyles.createStyles((arg0) => {
   let num = 48;
   if (arg0) {
@@ -37,7 +94,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   obj.guildFallbackImage = size1;
   return obj;
 });
-createStyles = fn(4756);
+createStyles = fn(4758);
 let obj = { fallbackImage: { color: nativeDefault.colors.WHITE }, fallbackImageV2: null, brandBackground: null, profileBackground: null, friendBackground: null, messageBackground: null, guildGridBackground: null };
 let obj4 = { color: nativeDefault.colors.WHITE };
 obj.fallbackImageV2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -49,18 +106,273 @@ obj.messageBackground = { backgroundColor: MESSAGE_BACKGROUND };
 let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj.guildGridBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_10 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 let obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/notification_center/native/ForYouItemImage.tsx");
 
-export const ForYouItemImage = noop.memo((item) => {
+export const ForYouItemImage = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+  let color = icon_name;
+  let tmp = id;
+  const cResult = icon_name(id[21]).c(56);
+  icon_name = item.item;
+  const tmp3 = closure_9(item.compactMode);
+  analyticsLocations = analyticsLocations(id[22])().analyticsLocations;
+  const tmp5 = closure_10();
+  const other_user = icon_name.other_user;
+  id = undefined;
+  if (other_user != null) {
+    id = other_user.id;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id) {
+    const fn = function s() {
+      return UserStore.getUser(id);
+    };
+    cResult[1] = id;
+    cResult[2] = fn;
+    let tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const obj = icon_name(id[21]);
+  const stateFromStores = color(tmp[23]).useStateFromStores(first, tmp9);
+  if (null == stateFromStores) {
+    if (null != icon_name.icon_name) {
+      if (cResult[18] !== icon_name.icon_name) {
+        const tmp4Result = tmp4("icHighlight" === icon_name.icon_name ? tmp[13] : tmp[14]);
+        icon_name = icon_name.icon_name;
+        cResult[18] = icon_name;
+        cResult[19] = tmp4Result;
+      } else {
+        if (cResult[20] === tmp5.fallbackImage.color) {
+          const brandBackground2 = tmp5.brandBackground;
+        }
+        const obj2 = { source: cResult[19], color: tmp5.fallbackImage.color };
+        tmp = jsx(color(tmp[17]).Icon, { source: cResult[19], color: tmp5.fallbackImage.color });
+        color = tmp5.fallbackImage.color;
+        cResult[20] = color;
+        cResult[21] = cResult[19];
+        cResult[22] = tmp;
+      }
+    } else {
+      if (null != icon_name.icon_url) {
+        let brandBackground1 = null;
+        let tmp32 = null;
+        if (null == null) {
+          if (cResult[23] !== icon_name.icon_url) {
+            const obj3 = { uri: icon_name.icon_url };
+            cResult[23] = icon_name.icon_url;
+            cResult[24] = obj3;
+            let tmp42 = obj3;
+          } else {
+            tmp42 = cResult[24];
+          }
+          if (cResult[25] === tmp3.rowImage) {
+            if (cResult[26] === tmp42) {
+              let tmp43 = cResult[27];
+            }
+            brandBackground1 = tmp5.brandBackground;
+            tmp32 = tmp43;
+          }
+          const obj5 = { style: tmp3.rowImage, source: tmp42, resizeMode: "contain" };
+          const tmp45 = jsx(tmp4(tmp[15]), { style: tmp3.rowImage, source: tmp42, resizeMode: "contain" });
+          cResult[25] = tmp3.rowImage;
+          cResult[26] = tmp42;
+          cResult[27] = tmp45;
+          tmp43 = tmp45;
+        }
+      } else {
+        brandBackground1 = null;
+        tmp32 = null;
+        if (null == null) {
+          if ("lifecycle_item" === icon_name.type) {
+            if (cResult[28] !== icon_name.item_enum) {
+              const tmp39 = getLifecycleIcon(icon_name.item_enum);
+              cResult[28] = icon_name.item_enum;
+              cResult[29] = tmp39;
+              let tmp37 = tmp39;
+            } else {
+              tmp37 = cResult[29];
+            }
+            if (cResult[30] === icon_name.item_enum) {
+              if (cResult[31] === tmp5) {
+                let tmp40 = cResult[32];
+              }
+              brandBackground1 = tmp40;
+              tmp32 = tmp37;
+            }
+            const item_enum = icon_name.item_enum;
+            if (item_enum === color(tmp[9]).ItemEnum.UPDATE_PROFILE) {
+              let profileBackground = tmp5.profileBackground;
+            } else {
+              if (item_enum !== color(tmp[9]).ItemEnum.FIND_FRIENDS) {
+                if (item_enum !== color(tmp[9]).ItemEnum.ADD_FRIEND) {
+                  profileBackground = item_enum === color(tmp[9]).ItemEnum.FIRST_MESSAGE ? tmp5.messageBackground : tmp5.brandBackground;
+                }
+              }
+              profileBackground = tmp5.friendBackground;
+            }
+            if (profileBackground == null) {
+              profileBackground = null;
+            }
+            cResult[30] = icon_name.item_enum;
+            cResult[31] = tmp5;
+            cResult[32] = profileBackground;
+            tmp40 = profileBackground;
+          } else if (icon_name.type === color(tmp[9]).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
+            if (cResult[33] !== tmp3.rowImage) {
+              const obj6 = { source: tmp4(tmp[27]), style: tmp3.rowImage, resizeMode: "contain" };
+              const tmp36 = jsx(tmp4(tmp[15]), { source: tmp4(tmp[27]), style: tmp3.rowImage, resizeMode: "contain" });
+              cResult[33] = tmp3.rowImage;
+              cResult[34] = tmp36;
+              let tmp33 = tmp36;
+              const tmp4Result2 = tmp4(tmp[15]);
+            } else {
+              tmp33 = cResult[34];
+            }
+            brandBackground1 = tmp5.brandBackground;
+            tmp32 = tmp33;
+          } else {
+            if (cResult[35] !== icon_name.guild_id) {
+              guild = GuildStore.getGuild(icon_name.guild_id);
+              let tmp18 = null;
+              if (null != guild) {
+                tmp18 = getGuildAcronym(guild);
+              }
+              cResult[35] = icon_name.guild_id;
+              cResult[36] = tmp18;
+              let arr2 = tmp18;
+            } else {
+              arr2 = cResult[36];
+            }
+            if (cResult[37] === icon_name.type) {
+              if (cResult[38] === tmp5) {
+                let tmp20 = cResult[39];
+              }
+              if (tmp20.icon === tmp4(tmp[12])) {
+                if (null != arr2) {
+                  let str2 = "text-lg/normal";
+                  if (arr2.length > 4) {
+                    str2 = "text-md/normal";
+                  }
+                  if (cResult[40] === tmp3.guildFallbackImage) {
+                    if (cResult[41] === tmp3.rowImage) {
+                      let tmp26 = cResult[42];
+                    }
+                    if (cResult[43] === arr2) {
+                      if (cResult[44] === str2) {
+                      }
+                    }
+                    const obj7 = { variant: str2, style: tmp26, children: arr2 };
+                    const tmp29 = jsx(color(tmp[28]).Text, { variant: str2, style: tmp26, children: arr2 });
+                    cResult[43] = arr2;
+                    cResult[44] = str2;
+                    cResult[45] = tmp26;
+                    cResult[46] = tmp29;
+                  }
+                  const items1 = [, ];
+                  ({ rowImage: arr3[0], guildFallbackImage: arr3[1] } = tmp3);
+                  cResult[40] = tmp3.guildFallbackImage;
+                  cResult[41] = tmp3.rowImage;
+                  cResult[42] = items1;
+                  tmp26 = items1;
+                }
+              }
+              if (cResult[47] === tmp20.color) {
+                if (cResult[48] === tmp20.icon) {
+                  let tmp23 = cResult[49];
+                }
+                let brandBackground = tmp20.backgroundStyle;
+                if (brandBackground == null) {
+                  brandBackground = tmp5.brandBackground;
+                }
+                brandBackground1 = brandBackground;
+                tmp32 = tmp23;
+              }
+              ({ icon: obj4.source, color: obj4.color } = tmp20);
+              const tmp25 = jsx(color(tmp[17]).Icon, { source: null, color: null });
+              cResult[47] = tmp20.color;
+              cResult[48] = tmp20.icon;
+              cResult[49] = tmp25;
+              tmp23 = tmp25;
+              const obj8 = { source: null, color: null };
+            }
+            const tmp22 = getFallbackIcon(icon_name.type, tmp5);
+            cResult[37] = icon_name.type;
+            cResult[38] = tmp5;
+            cResult[39] = tmp22;
+            tmp20 = tmp22;
+          }
+        }
+      }
+      if (cResult[50] === brandBackground1) {
+        if (cResult[51] === tmp3.container) {
+          let tmp52 = cResult[52];
+        }
+        if (cResult[53] === tmp32) {
+          if (cResult[54] === tmp52) {
+            let tmp53 = cResult[55];
+          }
+          return tmp53;
+        }
+        const obj9 = { style: tmp52, children: tmp32 };
+        const tmp56 = <View style={tmp52}>{tmp32}</View>;
+        cResult[53] = tmp32;
+        cResult[54] = tmp52;
+        cResult[55] = tmp56;
+        tmp53 = tmp56;
+      }
+      const items2 = [tmp3.container, brandBackground1];
+      cResult[50] = brandBackground1;
+      cResult[51] = tmp3.container;
+      cResult[52] = items2;
+      tmp52 = items2;
+    }
+  } else {
+    if (cResult[3] === analyticsLocations) {
+      if (cResult[4] === icon_name.message_id) {
+        class N {
+          constructor() {
+            obj = { userId: closure_3.id, localUser: closure_3, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+            tmp = closure_1(closure_2[24])(obj);
+            return;
+          }
+        }
+        const colorResult1 = color(tmp[25]);
+        const avatarSource = colorResult1.getAvatarSource(stateFromStores, icon_name.guild_id, undefined, icon_name.acked);
+        cResult[7] = icon_name.acked;
+        cResult[8] = icon_name.guild_id;
+        cResult[9] = stateFromStores;
+        cResult[10] = avatarSource;
+      }
+    }
+    class N {
+      constructor() {
+        obj = { userId: closure_3.id, localUser: closure_3, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        tmp = closure_1(closure_2[24])(obj);
+        return;
+      }
+    }
+    cResult[3] = analyticsLocations;
+    cResult[4] = icon_name.message_id;
+    cResult[5] = stateFromStores;
+    cResult[6] = N;
+  }
+}) : ((item) => {
   item = item.item;
   const compactMode = item.compactMode;
   let analyticsLocations;
   let stateFromStores;
   const tmp = closure_9(compactMode);
   let obj = analyticsLocations;
-  analyticsLocations = compactMode(analyticsLocations[20])().analyticsLocations;
+  analyticsLocations = compactMode(analyticsLocations[22])().analyticsLocations;
   const tmp3 = closure_10();
   const other_user = item.other_user;
   let id;
@@ -68,7 +380,7 @@ export const ForYouItemImage = noop.memo((item) => {
     id = other_user.id;
   }
   const items = [UserStore];
-  stateFromStores = item(obj[21]).useStateFromStores(items, () => UserStore.getUser(id));
+  stateFromStores = item(obj[23]).useStateFromStores(items, () => UserStore.getUser(id));
   const items1 = [stateFromStores, compactMode, , , , ];
   ({ acked: arr2[2], guild_id: arr2[3], message_id: arr2[4] } = item);
   items1[5] = analyticsLocations;
@@ -79,7 +391,7 @@ export const ForYouItemImage = noop.memo((item) => {
     } else {
       const obj = {
         onPress() {
-            compactMode(analyticsLocations[23])({ userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations });
+            compactMode(analyticsLocations[24])({ userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations });
           },
         children: null
       };
@@ -94,7 +406,7 @@ export const ForYouItemImage = noop.memo((item) => {
       obj.children = obj2;
       jsx(Pressables.PressableOpacity, {
         onPress() {
-            compactMode(analyticsLocations[23])({ userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations });
+            compactMode(analyticsLocations[24])({ userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations });
           },
         children: null
       });
@@ -106,51 +418,30 @@ export const ForYouItemImage = noop.memo((item) => {
     obj.color = tmp3.fallbackImage.color;
     jsx(tmp5(obj[17]).Icon, { source: null, color: null });
     const brandBackground2 = tmp3.brandBackground;
-    const tmp27 = "icHighlight" === item.icon_name ? obj[13] : obj[14];
+    const tmp24 = "icHighlight" === item.icon_name ? obj[13] : obj[14];
   } else {
     if (null != item.icon_url) {
       let brandBackground1 = null;
-      let tmp14 = memo;
+      let tmp16 = memo;
       if (null == memo) {
-        let obj3 = { style: tmp.rowImage, source: null, resizeMode: "contain" };
-        const obj4 = { uri: item.icon_url };
-        obj3.source = obj4;
-        tmp14 = jsx(tmp2(obj[15]), { style: tmp.rowImage, source: null, resizeMode: "contain" });
+        const obj4 = { style: tmp.rowImage, source: null, resizeMode: "contain" };
+        const obj5 = { uri: item.icon_url };
+        obj4.source = obj5;
+        tmp16 = jsx(tmp2(obj[15]), { style: tmp.rowImage, source: null, resizeMode: "contain" });
         brandBackground1 = tmp3.brandBackground;
       }
     } else {
       brandBackground1 = null;
-      tmp14 = memo;
+      tmp16 = memo;
       if (null == memo) {
         if ("lifecycle_item" === item.type) {
           const item_enum = item.item_enum;
           if (item_enum === tmp5(obj[9]).ItemEnum.UPDATE_PROFILE) {
-            const obj5 = { source: tmp2(obj[16]) };
-            let tmp18 = jsx(tmp2(obj[15]), { source: tmp2(obj[16]) });
-            const tmp2Result = tmp2(obj[15]);
+            let profileBackground = tmp3.profileBackground;
           } else {
             if (item_enum !== tmp5(obj[9]).ItemEnum.FIND_FRIENDS) {
               if (item_enum !== tmp5(obj[9]).ItemEnum.ADD_FRIEND) {
-                if (item_enum === tmp5(obj[9]).ItemEnum.FIRST_MESSAGE) {
-                  const obj6 = { source: tmp2(obj[19]), style: { width: "105%" } };
-                  tmp18 = jsx(tmp2(obj[15]), { source: tmp2(obj[19]), style: { width: "105%" } });
-                  const tmp2Result3 = tmp2(obj[15]);
-                } else {
-                  const obj7 = { source: tmp2(obj[14]) };
-                  tmp18 = jsx(tmp5(obj[17]).Icon, { source: tmp2(obj[14]) });
-                }
-              }
-            }
-            const obj9 = { source: tmp2(obj[18]), size: tmp5(obj[17]).IconSizes.SMALL_20, color: tmp2(obj[8]).unsafe_rawColors.WHITE };
-            tmp18 = jsx(tmp5(obj[17]).Icon, { source: tmp2(obj[18]), size: tmp5(obj[17]).IconSizes.SMALL_20, color: tmp2(obj[8]).unsafe_rawColors.WHITE });
-          }
-          const item_enum2 = item.item_enum;
-          if (item_enum2 === tmp5(obj[9]).ItemEnum.UPDATE_PROFILE) {
-            let profileBackground = tmp3.profileBackground;
-          } else {
-            if (item_enum2 !== tmp5(obj[9]).ItemEnum.FIND_FRIENDS) {
-              if (item_enum2 !== tmp5(obj[9]).ItemEnum.ADD_FRIEND) {
-                profileBackground = item_enum2 === tmp5(obj[9]).ItemEnum.FIRST_MESSAGE ? tmp3.messageBackground : tmp3.brandBackground;
+                profileBackground = item_enum === tmp5(obj[9]).ItemEnum.FIRST_MESSAGE ? tmp3.messageBackground : tmp3.brandBackground;
               }
             }
             profileBackground = tmp3.friendBackground;
@@ -159,71 +450,50 @@ export const ForYouItemImage = noop.memo((item) => {
             profileBackground = null;
           }
           brandBackground1 = profileBackground;
-          tmp14 = tmp18;
+          tmp16 = getLifecycleIcon(item.item_enum);
+          const tmp20 = getLifecycleIcon(item.item_enum);
         } else if (item.type === tmp5(obj[9]).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
-          const obj10 = { source: tmp2(obj[25]), style: tmp.rowImage, resizeMode: "contain" };
-          tmp14 = jsx(tmp2(obj[15]), { source: tmp2(obj[25]), style: tmp.rowImage, resizeMode: "contain" });
+          const obj6 = { source: tmp2(obj[27]), style: tmp.rowImage, resizeMode: "contain" };
+          tmp16 = jsx(tmp2(obj[15]), { source: tmp2(obj[27]), style: tmp.rowImage, resizeMode: "contain" });
           brandBackground1 = tmp3.brandBackground;
-          const tmp2Result4 = tmp2(obj[15]);
+          const tmp2Result = tmp2(obj[15]);
         } else {
-          const guild = GuildStore.getGuild(item.guild_id);
+          guild = GuildStore.getGuild(item.guild_id);
           let tmp9 = null;
           if (null != guild) {
             tmp9 = getGuildAcronym(guild);
           }
-          const type = item.type;
-          if (tmp5(obj[9]).NotificationCenterItems.MISSED_MESSAGES === type) {
-            const obj11 = { icon: tmp2(obj[10]), color: tmp3.fallbackImage.color };
-            let obj14 = obj11;
-          } else if (tmp5(obj[9]).NotificationCenterItems.FRIEND_REQUEST_REMINDER === type) {
-            const obj12 = { icon: tmp2(obj[11]), color: tmp3.fallbackImage.color };
-            obj14 = obj12;
-          } else {
-            if (tmp5(obj[9]).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED !== type) {
-              if (tmp5(obj[9]).NotificationCenterItems.TOP_MESSAGES !== type) {
-                if (tmp5(obj[9]).NotificationCenterItems.MISSED_MESSAGES !== type) {
-                  if (tmp5(obj[9]).NotificationCenterItems.TOP_MESSAGES === type) {
-                    const obj13 = { icon: tmp2(obj[13]), color: tmp3.fallbackImage.color };
-                    obj14 = obj13;
-                  } else {
-                    obj14 = { icon: tmp2(obj[14]), color: tmp3.fallbackImage.color };
-                  }
-                }
-              }
-            }
-            const obj15 = { icon: tmp2(obj[12]), color: tmp3.fallbackImageV2.color, backgroundStyle: tmp3.guildGridBackground };
-            obj14 = obj15;
-          }
-          if (obj14.icon === tmp2(obj[12])) {
+          const tmp11 = getFallbackIcon(item.type, tmp3);
+          if (tmp11.icon === tmp2(obj[12])) {
             if (null != tmp9) {
               let str2 = "text-lg/normal";
               if (tmp9.length > 4) {
                 str2 = "text-md/normal";
               }
-              const obj16 = { variant: str2, style: null, children: null };
+              const obj7 = { variant: str2, style: null, children: null };
               const items2 = [, ];
               ({ rowImage: arr3[0], guildFallbackImage: arr3[1] } = tmp);
-              obj16.style = items2;
-              obj16.children = tmp9;
-              let tmp12Result = jsx(tmp5(obj[26]).Text, { variant: str2, style: null, children: null });
+              obj7.style = items2;
+              obj7.children = tmp9;
+              let tmp14Result = jsx(tmp5(obj[28]).Text, { variant: str2, style: null, children: null });
             }
-            let brandBackground = obj14.backgroundStyle;
+            let brandBackground = tmp11.backgroundStyle;
             if (brandBackground == null) {
               brandBackground = tmp3.brandBackground;
             }
             brandBackground1 = brandBackground;
-            tmp14 = tmp12Result;
+            tmp16 = tmp14Result;
           }
-          ({ icon: obj8.source, color: obj8.color } = obj14);
-          tmp12Result = jsx(tmp5(obj[17]).Icon, { source: null, color: null });
-          const obj17 = { source: null, color: null };
+          ({ icon: obj3.source, color: obj3.color } = tmp11);
+          tmp14Result = jsx(tmp5(obj[17]).Icon, { source: null, color: null });
+          const obj8 = { source: null, color: null };
         }
       }
     }
-    const obj32 = { style: null, children: null };
+    const obj14 = { style: null, children: null };
     const items3 = [tmp.container, brandBackground1];
-    obj32.style = items3;
-    obj32.children = tmp14;
+    obj14.style = items3;
+    obj14.children = tmp16;
     return <stateFromStores style={null}>{null}</stateFromStores>;
   }
-});
+}));

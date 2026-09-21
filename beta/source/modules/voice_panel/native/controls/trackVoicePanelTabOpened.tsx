@@ -1,14 +1,14 @@
-// Module ID: 17635
-// Function ID: 17636
+// Module ID: 17594
+// Function ID: 17595
 // Name: trackVoicePanelTabOpened
-// Dependencies: [4771, 1074, 1241, 2]
+// Dependencies: [4773, 1078, 1245, 2]
 // Exports: default
 
-// Module 17635 (trackVoicePanelTabOpened)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
+// Module 17594 (trackVoicePanelTabOpened)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
 
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/trackVoicePanelTabOpened.tsx");
 

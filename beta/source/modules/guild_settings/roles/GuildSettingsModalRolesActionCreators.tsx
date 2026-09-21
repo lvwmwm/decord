@@ -1,10 +1,10 @@
-// Module ID: 18051
-// Function ID: 18052
+// Module ID: 18054
+// Function ID: 18055
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1074, 1271, 7565, 573, 2]
+// Dependencies: [5, 1078, 1275, 7567, 577, 2]
 
-// Module 18051 (GuildSettingsModalRolesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 18054 (GuildSettingsModalRolesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -29,7 +29,7 @@ let closure_6 = async function _updateGuildRole(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -56,7 +56,7 @@ let closure_6 = async function _updateGuildRole(arg0, value) {
           closure_130_7 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -104,7 +104,7 @@ let closure_6 = async function _updateGuildRole(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_settings/roles/GuildSettingsModalRolesActionCreators.tsx");
 

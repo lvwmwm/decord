@@ -1,10 +1,10 @@
-// Module ID: 1370
-// Function ID: 1371
+// Module ID: 1374
+// Function ID: 1375
 // Name: GlobalUtils
 // Dependencies: [2]
 // Exports: assertNever, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
 
-// Module 1370 (GlobalUtils)
+// Module 1374 (GlobalUtils)
 import size from "module_2" /* 2 */;
 
 let closure_0 = "development" === window.GLOBAL_ENV.PROJECT_ENV;

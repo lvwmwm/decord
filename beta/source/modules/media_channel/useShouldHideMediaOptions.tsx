@@ -1,20 +1,70 @@
-// Module ID: 11913
-// Function ID: 11914
+// Module ID: 11784
+// Function ID: 11785
 // Name: useShouldHideMediaOptions
-// Dependencies: [2041, 2048, 563, 2]
-// Exports: default
+// Dependencies: [2045, 2052, 558, 568, 565, 2]
 
-// Module 11913 (useShouldHideMediaOptions)
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 11784 (useShouldHideMediaOptions)
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelFlags = fn(2048).ChannelFlags;
+const ChannelFlags = fn(2052).ChannelFlags;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_channel/useShouldHideMediaOptions.tsx");
 
-export default function useShouldHideMediaOptions(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      const channel = ChannelStore.getChannel(closure_0);
+      let parent_id;
+      if (channel != null) {
+        parent_id = channel.parent_id;
+      }
+      let channel1 = null;
+      if (null != parent_id) {
+        channel1 = null;
+        if (channel.isForumPost()) {
+          let parent_id1;
+          if (channel != null) {
+            parent_id1 = channel.parent_id;
+          }
+          channel1 = ChannelStore.getChannel(parent_id1);
+        }
+      }
+      return channel1;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("useStateFromStores").useStateFromStores(first, tmp6);
+  if (cResult[3] !== stateFromStores) {
+    let hasFlagResult;
+    if (stateFromStores != null) {
+      hasFlagResult = stateFromStores.hasFlag(ChannelFlags.HIDE_MEDIA_DOWNLOAD_OPTIONS);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = hasFlagResult;
+    let tmp7 = hasFlagResult;
+  } else {
+    tmp7 = cResult[4];
+  }
+  return true === tmp7;
+}) : ((arg0) => {
   _require = arg0;
   const items = [ChannelStore];
   const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => {
@@ -41,4 +91,4 @@ export default function useShouldHideMediaOptions(arg0) {
     hasFlagResult = stateFromStores.hasFlag(ChannelFlags.HIDE_MEDIA_DOWNLOAD_OPTIONS);
   }
   return true === hasFlagResult;
-};
+});

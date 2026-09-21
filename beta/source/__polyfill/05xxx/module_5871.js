@@ -1,6 +1,6 @@
 // Module ID: 5871
 // Function ID: 5872
-// Dependencies: [109, 32, 19, 17, 21, 1615, 5872, 1485, 5876, 5877, 5869, 5884, 5885, 5857, 5883, 5878, 5851, 5886]
+// Dependencies: [109, 32, 19, 17, 21, 1619, 5872, 1489, 5876, 5877, 5869, 5884, 5885, 5857, 5883, 5878, 5851, 5886]
 // Exports: Header
 
 // Module 5871
@@ -20,8 +20,8 @@ const jsxProd = fn(21);
 const styles = StyleSheet.create({ content: { flex: 1, flexDirection: "row", alignItems: "stretch" }, large: { marginHorizontal: 5 }, title: { justifyContent: "center" }, start: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start" }, end: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end" }, expand: { flexGrow: 1, flexBasis: 0 } });
 
 export const Header = function Header(layout) {
-  const rect = require("module_1615").useSafeAreaInsets();
-  const obj = require("module_1615");
+  const rect = require("module_1619").useSafeAreaInsets();
+  const obj = require("module_1619");
   const tmp = require;
   const tmp2 = headerSearchBarOptions;
   const frameSize = require("FrameSizeProvider").useFrameSize((arg0) => arg0, true);

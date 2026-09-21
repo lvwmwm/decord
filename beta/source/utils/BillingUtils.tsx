@@ -1,14 +1,14 @@
-// Module ID: 4429
-// Function ID: 4430
+// Module ID: 4433
+// Function ID: 4434
 // Name: BillingUtils
-// Dependencies: [5, 1085, 4430, 1231, 1271, 4436, 2]
+// Dependencies: [5, 1089, 4434, 1235, 1275, 4440, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 4429 (BillingUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import BraintreeUtils from "BraintreeUtils" /* 4430 */;
-import BillingErrorDefault from "BillingError" /* 4436 */;
+// Module 4433 (BillingUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import BraintreeUtils from "BraintreeUtils" /* 4434 */;
+import BillingErrorDefault from "BillingError" /* 4440 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -27,7 +27,7 @@ let closure_5 = async function _createGatewayCheckoutContext(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ let closure_5 = async function _createGatewayCheckoutContext(arg0) {
     }
   })();
 };
-const PaymentGateways = fn(1085).PaymentGateways;
+const PaymentGateways = fn(1089).PaymentGateways;
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/BillingUtils.tsx");
 

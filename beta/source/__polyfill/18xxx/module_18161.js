@@ -1,9 +1,9 @@
 // Module ID: 18161
 // Function ID: 18162
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 18161
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 40, height: 40.5, scales: [2, 3], hash: "4247c923735157dd7bfbbedd55448819", name: "role_subscription_benefit_bunny_avatar", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 54, height: 54.5, scales: [2, 3], hash: "bae4699ad33ec116553db1943dc80292", name: "role_subscription_earning_metric_avatar", type: "png" });

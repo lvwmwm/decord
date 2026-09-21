@@ -1,10 +1,10 @@
-// Module ID: 9736
-// Function ID: 9737
+// Module ID: 9732
+// Function ID: 9733
 // Name: createWebviewHtmlFile
-// Dependencies: [5, 1364, 1151, 1231, 2]
+// Dependencies: [5, 1368, 1155, 1235, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 9736 (createWebviewHtmlFile)
+// Module 9732 (createWebviewHtmlFile)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_4 = async function _createWebviewHtmlFile(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -44,7 +44,7 @@ let closure_4 = async function _createWebviewHtmlFile(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

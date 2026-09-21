@@ -1,42 +1,14 @@
 // Module ID: 7093
 // Function ID: 7094
-// Dependencies: [109, 19, 21, 7094, 7091]
+// Dependencies: [7094, 7095, 7096, 7098]
 
 // Module 7093
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import noop_mod from "module_19" /* 19 */;
+import _mod7094 from "module_7094" /* 7094 */;
+import _mod7095 from "module_7095" /* 7095 */;
+import _mod7096 from "module_7096" /* 7096 */;
+import _mod7098 from "module_7098" /* 7098 */;
 
-let closure_2 = ["focusHook", "scrollEventsHandlersHook", "enableFooterMarginAdjustment"];
-let noop = fn(19);
-const forwardRef = noop.forwardRef;
-({ useMemo: metroRequire, memo } = noop);
-let noop = noop_mod;
-const jsx = fn(21).jsx;
-try {
-  const FlashList = fn(7094);
-  const memoResult = memo(forwardRef((focusHook, ref) => {
-    focusHook = focusHook.focusHook;
-    const scrollEventsHandlersHook = focusHook.scrollEventsHandlersHook;
-    const enableFooterMarginAdjustment = focusHook.enableFooterMarginAdjustment;
-    closure_6(() => {
-      if (!FlashList) {
-        throw "You need to install FlashList first, `yarn install @shopify/flash-list`";
-      }
-    }, []);
-    const items = [focusHook, scrollEventsHandlersHook, enableFooterMarginAdjustment];
-    const tmp = _objectWithoutProperties(focusHook, enableFooterMarginAdjustment);
-    let merged = Object.assign(tmp);
-    return <FlashList.FlashList ref={arg1} renderScrollComponent={closure_6(() => forwardRef((arg0, ref) => {
-      const merged = Object.assign(arg0, Object.assign({ data: 0 }));
-      const obj = { ref };
-      const merged1 = Object.assign(merged);
-      obj.focusHook = focusHook;
-      obj.scrollEventsHandlersHook = scrollEventsHandlersHook;
-      obj.enableFooterMarginAdjustment = enableFooterMarginAdjustment;
-      return jsx(focusHook(scrollEventsHandlersHook[4]), { ref });
-    }), items)} />;
-  }));
-  exports.default = memoResult;
-  exports.BottomSheetFlashList = memoResult;
-} catch (err) {
-}
+
+export default function _slicedToArray(arg0, arg1) {
+  return _mod7094(arg0) || _mod7095(arg0, arg1) || _mod7096(arg0, arg1) || _mod7098();
+};

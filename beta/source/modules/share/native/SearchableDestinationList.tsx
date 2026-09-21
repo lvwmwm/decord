@@ -1,34 +1,198 @@
-// Module ID: 11250
-// Function ID: 11251
+// Module ID: 11282
+// Function ID: 11283
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1074, 11122, 21, 4756, 576, 11251, 7283, 11247, 10091, 7897, 1370, 7294, 10375, 11259, 11128, 11260, 1115, 5341, 7295, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1078, 11162, 21, 4758, 580, 558, 568, 11283, 7284, 11279, 10070, 7902, 1374, 7296, 11291, 11293, 11168, 11294, 1119, 5343, 7297, 2]
 
-// Module 11250 (SearchableDestinationList)
-import nativeDefault from "native" /* 576 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7283 */;
-import sortByMatchScore from "sortByMatchScore" /* 10091 */;
-import formatResults from "formatResults" /* 11247 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11259 */;
+// Module 11282 (SearchableDestinationList)
+import nativeDefault from "native" /* 580 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7284 */;
+import sortByMatchScore from "sortByMatchScore" /* 10070 */;
+import formatResults from "formatResults" /* 11279 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Keyboard: metroRequire } = get_ActivityIndicator);
-const NOOP = fn(1074).NOOP;
-const UserRowModes = fn(11122).UserRowModes;
+const NOOP = fn(1078).NOOP;
+let UserRowModes = fn(11162).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, noResults: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.noResults = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_12 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/share/native/SearchableDestinationList.tsx");
 
-export default function SearchableDestinationList(getRowIsUnavailable) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectedDestinationChange) => {
+  const cResult = getRowIsUnavailable(onSearchTextChange[9]).c(71);
+  ({ initialSelectedDestinations, disabledDestinations, originDestination, channelFilter, getRowIsUnavailable } = onSelectedDestinationChange);
+  onSelectedDestinationChange = onSelectedDestinationChange.onSelectedDestinationChange;
+  onSearchTextChange = onSelectedDestinationChange.onSearchTextChange;
+  ({ rowMode, insetStart, insetEnd, autoFocusSearch, hideSearchOnDefaultNoResults, defaultNoResultsFound, disableGradient, disableStickySections, disableSelection } = onSelectedDestinationChange);
+  const disableLongPress = onSelectedDestinationChange.disableLongPress;
+  if (undefined === rowMode) {
+    rowMode = UserRowModes.NONE;
+  }
+  if (undefined === insetStart) {
+    insetStart = onSelectedDestinationChange(tmp2[7]).space.PX_8;
+  }
+  if (undefined === insetEnd) {
+    insetEnd = onSelectedDestinationChange(tmp2[7]).space.PX_12;
+  }
+  closure_12();
+  ref = disableLongPress.useRef(null);
+  if (cResult[0] !== initialSelectedDestinations) {
+    let items = initialSelectedDestinations;
+    if (initialSelectedDestinations == null) {
+      items = [];
+    }
+    cResult[0] = initialSelectedDestinations;
+    cResult[1] = items;
+    let tmp9 = items;
+  } else {
+    tmp9 = cResult[1];
+  }
+  let tmp11 = disableSelection(disableLongPress.useState(tmp9), 2);
+  const selectedDestinations = tmp11[0];
+  UserRowModes = tmp11[1];
+  if (cResult[2] === channelFilter) {
+    if (cResult[3] === originDestination) {
+      if (cResult[4] === selectedDestinations) {
+        let tmp13 = cResult[5];
+      }
+      const shareSearchResults = getRowIsUnavailable(tmp2[10]).useShareSearchResults(tmp13);
+      const results = shareSearchResults.results;
+      const updateSearchText = shareSearchResults.updateSearchText;
+      obj2.useRef("");
+      const tmpResult = getRowIsUnavailable(tmp2[10]);
+      [r10076, closure_12] = disableSelection(obj2.useState(false), 2);
+      closure_13 = obj2.useRef(null);
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        class Q {
+          constructor() {
+            return () => {
+              const current = ref.current;
+              if (current != null) {
+                current.cancel();
+              }
+            };
+          }
+        }
+        let items1 = [];
+        cResult[6] = Q;
+        cResult[7] = items1;
+        let tmp18 = items1;
+        const tmp17 = Q;
+      } else {
+        class Q {
+          constructor() {
+            return () => {
+              const current = ref.current;
+              if (current != null) {
+                current.cancel();
+              }
+            };
+          }
+        }
+        tmp18 = cResult[7];
+      }
+      const effect = obj2.useEffect(tmp17, tmp18);
+      if (cResult[8] === onSearchTextChange) {
+        class Q {
+          constructor() {
+            return () => {
+              const current = ref.current;
+              if (current != null) {
+                current.cancel();
+              }
+            };
+          }
+        }
+        closure_14 = tmp20;
+        if (cResult[11] === tmp20) {
+          class Q {
+            constructor() {
+              return () => {
+                const current = ref.current;
+                if (current != null) {
+                  current.cancel();
+                }
+              };
+            }
+          }
+        }
+        function ae() {
+          onSelectedDestinationChange(first);
+          const timerId = setTimeout(() => {
+            ref.dismiss();
+          }, 0);
+          const timerId1 = setTimeout(() => {
+            closure_1_14("", true);
+          }, 50);
+        }
+        const items2 = [selectedDestinations, onSelectedDestinationChange, tmp20];
+        cResult[11] = tmp20;
+        cResult[12] = onSelectedDestinationChange;
+        cResult[13] = selectedDestinations;
+        cResult[14] = ae;
+        cResult[15] = items2;
+      }
+      class Y {
+        constructor(arg0, arg1) {
+          tmp = undefined !== arg1 && arg1;
+          if (onSelectedDestinationChange !== closure_11.current) {
+            closure_11.current = onSelectedDestinationChange;
+            if (tmp) {
+              tmp2 = closure_6;
+              current = closure_6.current;
+              tmp3 = null;
+              if (current != null) {
+                setTextResult = current.setText(onSelectedDestinationChange);
+              }
+            }
+            tmp5 = updateSearchText;
+            tmp6 = updateSearchText(onSelectedDestinationChange);
+            tmp7 = null;
+            if (onSearchTextChange != null) {
+              tmp8 = onSearchTextChange(onSelectedDestinationChange);
+            }
+            tmp9 = closure_12;
+            num = 0;
+            tmp10 = closure_12(onSelectedDestinationChange.trim().length > 0);
+            tmp11 = closure_13;
+            tmp12 = closure_0;
+            tmp13 = closure_2;
+            obj = closure_0(closure_2[11]);
+            closure_13.current = obj.runAfterInteractions(() => {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToTop(false);
+              }
+            });
+          }
+          return;
+        }
+      }
+      cResult[8] = onSearchTextChange;
+      cResult[9] = updateSearchText;
+      cResult[10] = Y;
+      const tmp10Result = disableSelection(obj2.useState(false), 2);
+    }
+  }
+  let obj3 = { selectedDestinations, originDestination, channelFilter, includeMissingDMs: true };
+  cResult[2] = channelFilter;
+  cResult[3] = originDestination;
+  cResult[4] = selectedDestinations;
+  cResult[5] = obj3;
+  tmp13 = obj3;
+}) : ((getRowIsUnavailable) => {
   ({ initialSelectedDestinations, disabledDestinations } = getRowIsUnavailable);
   getRowIsUnavailable = getRowIsUnavailable.getRowIsUnavailable;
   const onSelectedDestinationChange = getRowIsUnavailable.onSelectedDestinationChange;
@@ -60,7 +224,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   closure_9 = undefined;
   let results;
   let updateSearchText;
-  let ref;
+  ref = undefined;
   c13 = undefined;
   closure_14 = undefined;
   let onChange;
@@ -80,11 +244,11 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   const tmp8 = onSearchTextChange(NONE.useState(initialSelectedDestinations), 2);
   selectedDestinations = tmp8[0];
   closure_9 = tmp8[1];
-  const shareSearchResults = disabledDestinations(onSelectedDestinationChange[8]).useShareSearchResults({ selectedDestinations, originDestination, channelFilter, includeMissingDMs: true });
+  const shareSearchResults = disabledDestinations(onSelectedDestinationChange[10]).useShareSearchResults({ selectedDestinations, originDestination, channelFilter, includeMissingDMs: true });
   results = shareSearchResults.results;
   updateSearchText = shareSearchResults.updateSearchText;
   ref = obj.useRef("");
-  let obj2 = disabledDestinations(onSelectedDestinationChange[8]);
+  let obj2 = disabledDestinations(onSelectedDestinationChange[10]);
   [tmp14, c13] = onSearchTextChange(NONE.useState(false), 2);
   closure_14 = obj.useRef(null);
   const effect = obj.useEffect(() => () => {
@@ -187,8 +351,8 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   const callback5 = obj.useCallback((arg0, arg1) => {
     ({ type, record } = results[arg1]);
     if (type !== sortByMatchScore.AutocompleterResultTypes.HEADER) {
-      const tmp2Result = tmp2(11247);
-      const destinationKeyResult = tmp2Result.destinationKey(tmp2(11247).getDestinationIdFromResult(tmp));
+      const tmp2Result = tmp2(11279);
+      const destinationKeyResult = tmp2Result.destinationKey(tmp2(11279).getDestinationIdFromResult(tmp));
       let tmp6;
       if (getRowIsUnavailable != null) {
         tmp6 = getRowIsUnavailable(record);
@@ -232,16 +396,16 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         tmp16 = obj2;
       }
       const merged = Object.assign(tmp16);
-      if (tmp2(10091).AutocompleterResultTypes.USER === type) {
+      if (tmp2(10070).AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: null };
         const obj3 = {};
         const merged1 = Object.assign(obj);
         obj3.user = record;
-        obj3.type = tmp2(7897).getRelationshipType(record.id);
+        obj3.type = tmp2(7902).getRelationshipType(record.id);
         obj3.onPress = callback3;
         element.props = obj3;
         return element;
-      } else if (tmp2(10091).AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (tmp2(10070).AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: null };
         const obj4 = {};
         const merged2 = Object.assign(obj);
@@ -250,9 +414,9 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         element1.props = obj4;
         return element1;
       } else {
-        if (tmp2(10091).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (tmp2(10091).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
-            return tmp2(1370).assertNever(type);
+        if (tmp2(10070).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (tmp2(10070).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+            return tmp2(1374).assertNever(type);
           }
         }
         const element2 = { type: "channel", props: null };
@@ -263,15 +427,15 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         element2.props = obj5;
         return element2;
       }
-      const tmp2Result4 = tmp2(11247);
+      const tmp2Result4 = tmp2(11279);
     }
     arr = results;
   }, items8);
   ref1 = obj.useRef(null);
-  const tmp27 = getRowIsUnavailable(onSelectedDestinationChange[14])();
+  const tmp27 = getRowIsUnavailable(onSelectedDestinationChange[16])();
   closure_22 = tmp27;
   const tmp13 = onSearchTextChange(NONE.useState(false), 2);
-  scaledTextLineHeight = disabledDestinations(onSelectedDestinationChange[15]).useScaledTextLineHeight("text-xs/medium");
+  scaledTextLineHeight = disabledDestinations(onSelectedDestinationChange[17]).useScaledTextLineHeight("text-xs/medium");
   const items9 = [results, getRowIsUnavailable, tmp27, scaledTextLineHeight];
   const callback6 = obj.useCallback((arg0, arg1) => {
     ({ type, record } = results[arg1]);
@@ -305,7 +469,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     obj3.insetStart = PX_8;
     obj3.insetEnd = PX_12;
     obj3.disableStickySections = getRowIsUnavailable.disableStickySections;
-    let tmp31Result = tmp31(tmp10(tmp11[17]).UsersFastList, obj3);
+    let tmp31Result = tmp31(tmp10(tmp11[19]).UsersFastList, obj3);
     let tmp35 = tmp31;
   } else {
     if (!tmp14) {
@@ -320,15 +484,15 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     }
     const obj6 = { style: tmp6.noResults, children: null };
     const obj7 = { title: null };
-    const intl = tmp10(tmp11[19]).intl;
-    obj7.title = intl.string(tmp10(tmp11[19]).t.V6nAfF);
-    obj6.children = tmp31(tmp26(tmp11[18]), obj7);
+    const intl = tmp10(tmp11[21]).intl;
+    obj7.title = intl.string(tmp10(tmp11[21]).t.V6nAfF);
+    obj6.children = tmp31(tmp26(tmp11[20]), obj7);
     obj5 = obj6;
-    const tmp26Result = tmp26(tmp11[18]);
+    const tmp26Result = tmp26(tmp11[20]);
   }
   let tmp35Result = !disableGradient;
   if (!disableGradient) {
-    tmp35Result = tmp35(tmp26(tmp11[20]), { absolute: true });
+    tmp35Result = tmp35(tmp26(tmp11[22]), { absolute: true });
   }
   const items11 = [tmp35Result, , ];
   if (flag2) {
@@ -347,8 +511,8 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     flag = someResult;
   }
   obj10.autoFocus = flag;
-  const intl2 = tmp10(tmp11[19]).intl;
-  obj10.accessibilityLabel = intl2.string(disabledDestinations(onSelectedDestinationChange[19]).t.CaEER6);
-  obj9.children = tmp35(disabledDestinations(onSelectedDestinationChange[21]).SearchField, obj10);
+  const intl2 = tmp10(tmp11[21]).intl;
+  obj10.accessibilityLabel = intl2.string(disabledDestinations(onSelectedDestinationChange[21]).t.CaEER6);
+  obj9.children = tmp35(disabledDestinations(onSelectedDestinationChange[23]).SearchField, obj10);
   tmp35Result2 = tmp35(disableSelection, obj9);
-};
+});

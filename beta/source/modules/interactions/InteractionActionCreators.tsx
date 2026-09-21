@@ -1,12 +1,12 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 8391
+// Function ID: 8392
 // Name: InteractionActionCreators
-// Dependencies: [5, 1074, 573, 1271, 2]
+// Dependencies: [5, 1078, 577, 1275, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8386 (InteractionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 8391 (InteractionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_5 = async function _fetchMessageInteractionData() {
   closure_131_1(closure_131_2[2]).dispatch({ type: "LOAD_MESSAGE_INTERACTION_DATA_SUCCESS", channelId: closure_130_0, messageId: closure_130_1, interactionData: body });
   return body;
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interactions/InteractionActionCreators.tsx");
 

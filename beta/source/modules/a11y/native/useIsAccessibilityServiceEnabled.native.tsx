@@ -1,19 +1,20 @@
-// Module ID: 8210
-// Function ID: 8211
+// Module ID: 8215
+// Function ID: 8216
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [560, 5112, 5171, 2]
-// Exports: getIsAccessibilityServiceEnabled, useIsAccessibilityServiceEnabled
+// Dependencies: [562, 5114, 5173, 558, 2]
+// Exports: getIsAccessibilityServiceEnabled
 
-// Module 8210 (useIsAccessibilityServiceEnabled)
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5112 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5171 */;
-import module_560 from "module_560" /* 560 */;
+// Module 8215 (useIsAccessibilityServiceEnabled)
+import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5114 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5173 */;
+import module_562 from "module_562" /* 562 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function ACCESSIBILITY_SERVICE_ENABLED_GETTER(accessibilityServiceEnabled) {
   return accessibilityServiceEnabled.accessibilityServiceEnabled;
 }
-const state = module_560.create((arg0) => {
+const state = module_562.create((arg0) => {
   closure_0 = arg0;
   const result = NativeDeviceAccessibilityModuleDefault.onAccessibilityServiceEnabledChanged((accessibilityServiceEnabled) => {
     closure_0({ accessibilityServiceEnabled });
@@ -31,10 +32,16 @@ export const getIsAccessibilityServiceEnabled = function getIsAccessibilityServi
   }
   return accessibilityServiceEnabled;
 };
-export const useIsAccessibilityServiceEnabled = function useIsAccessibilityServiceEnabled() {
+export const useIsAccessibilityServiceEnabled = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let isScreenReaderEnabled = useIsScreenReaderEnabled.useIsScreenReaderEnabled();
   if (!isScreenReaderEnabled) {
     isScreenReaderEnabled = state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
   }
   return isScreenReaderEnabled;
-};
+}) : (() => {
+  let isScreenReaderEnabled = useIsScreenReaderEnabled.useIsScreenReaderEnabled();
+  if (!isScreenReaderEnabled) {
+    isScreenReaderEnabled = state(ACCESSIBILITY_SERVICE_ENABLED_GETTER);
+  }
+  return isScreenReaderEnabled;
+});

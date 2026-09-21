@@ -1,24 +1,24 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 14787
+// Function ID: 14788
 // Name: subscriptionHelpers
-// Dependencies: [2040, 9313, 7939, 4660, 1074, 2004, 9314, 9592, 5342, 14744, 7960, 2]
+// Dependencies: [2044, 9311, 7944, 4663, 1078, 2008, 9312, 9588, 5344, 14747, 7965, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14784 (subscriptionHelpers)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5342 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
-import useThermalState from "useThermalState" /* 9592 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14744 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import FramesStore from "FramesStore" /* 9313 */;
-import QuestStore from "QuestStore" /* 7939 */;
+// Module 14787 (subscriptionHelpers)
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5344 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7965 */;
+import useThermalState from "useThermalState" /* 9588 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14747 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import FramesStore from "FramesStore" /* 9311 */;
+import QuestStore from "QuestStore" /* 7944 */;
 
 require = fn;
-const TransportTypes = fn(4660).TransportTypes;
-const RPCEvents = fn(1074).RPCEvents;
-const Constants = fn(2004);
+const TransportTypes = fn(4663).TransportTypes;
+const RPCEvents = fn(1078).RPCEvents;
+const Constants = fn(2008);
 ({ ActivityLayoutMode: closure_7, ActivityScreenOrientation: closure_8 } = Constants);
-const asLaunched = fn(9314).asLaunched;
+const asLaunched = fn(9312).asLaunched;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
@@ -76,7 +76,7 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     }
     return tmp23;
   } else if (tmp.ORIENTATION_UPDATE === arg1) {
-    const obj9 = { screen_orientation: useIsScreenLandscape.getIsScreenLandscape() ? React6.LANDSCAPE : React6.PORTRAIT };
+    const obj9 = { screen_orientation: useIsScreenLandscape.getIsScreenLandscape() ? constants.LANDSCAPE : constants.PORTRAIT };
     return obj9;
   } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === arg1) {
     return activityInstanceConnectedParticipants.activityInstanceConnectedParticipants();

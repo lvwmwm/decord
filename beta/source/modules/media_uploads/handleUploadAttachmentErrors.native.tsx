@@ -1,17 +1,17 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9421
+// Function ID: 9422
 // Name: handleUploadAttachmentErrors
-// Dependencies: [1074, 5350, 9424, 5378, 5108, 1115, 9507, 2]
+// Dependencies: [1078, 5352, 9422, 5380, 5110, 1119, 9503, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 9423 (handleUploadAttachmentErrors)
-import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import FileUtils from "FileUtils" /* 5350 */;
-import UploadLimits from "UploadLimits" /* 5378 */;
-import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 9424 */;
-import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 9507 */;
-import Constants from "Constants" /* 1074 */;
+// Module 9421 (handleUploadAttachmentErrors)
+import util from "util" /* 1119 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
+import FileUtils from "FileUtils" /* 5352 */;
+import UploadLimits from "UploadLimits" /* 5380 */;
+import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 9422 */;
+import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 9503 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ AbortCodes: c3, MAX_UPLOAD_COUNT: closure_4 } = Constants);

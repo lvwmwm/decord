@@ -1,21 +1,20 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17243
+// Function ID: 17244
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 1241, 7226, 5171, 8116, 1364, 5795, 5341, 14124, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1245, 7224, 5173, 8121, 1368, 5343, 1119, 14127, 7287, 2]
 
-// Module 17240 (UsernameSearchScreen)
-import nativeDefault from "native" /* 576 */;
+// Module 17243 (UsernameSearchScreen)
+import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: metroRequire, AnalyticsSections: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { background: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, content: null, iosPaddingThemeAdjust: null, container: null, inputContainer: null, headerText: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.content = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -27,24 +26,175 @@ let obj6 = { flexGrow: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHE
 obj2.inputContainer = { marginTop: nativeDefault.space.PX_16, backgroundColor: "transparent", paddingHorizontal: 0 };
 obj2.headerText = { textTransform: "none" };
 let closure_10 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj7 = { marginTop: nativeDefault.space.PX_16, backgroundColor: "transparent", paddingHorizontal: 0 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/UsernameSearchScreen.tsx");
 
-export default function UsernameSearchScreen(navigation) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+  const cResult = navigation(568).c(32);
+  navigation = navigation.navigation;
+  let obj = navigation(568);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      ref(1245).track(constants.FRIEND_ADD_VIEWED, { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL });
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp5 = fn;
+    tmp6 = items;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const effect = noop.useEffect(tmp5, tmp6);
+  const insets = ref(7224)().insets;
+  ref = noop.useRef(null);
+  if (cResult[2] !== navigation) {
+    class S {
+      constructor() {
+        return navigation.addListener("transitionEnd", (data) => {
+          let closing = data.data.closing;
+          if (!closing) {
+            closing = navigation(5173).getIsScreenReaderEnabled();
+            const obj = navigation(5173);
+          }
+          if (!closing) {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          }
+        });
+      }
+    }
+    const items1 = [navigation];
+    cResult[2] = navigation;
+    cResult[3] = S;
+    cResult[4] = items1;
+    let tmp10 = items1;
+    const tmp9 = S;
+  } else {
+    class S {
+      constructor() {
+        return navigation.addListener("transitionEnd", (data) => {
+          let closing = data.data.closing;
+          if (!closing) {
+            closing = navigation(5173).getIsScreenReaderEnabled();
+            const obj = navigation(5173);
+          }
+          if (!closing) {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          }
+        });
+      }
+    }
+    tmp10 = cResult[4];
+  }
+  const effect1 = noop.useEffect(tmp9, tmp10);
+  const tmp4 = closure_10();
+  const clientThemesOverride = navigation(8121).useClientThemesOverride();
+  if (cResult[5] === insets.top) {
+    class S {
+      constructor() {
+        return navigation.addListener("transitionEnd", (data) => {
+          let closing = data.data.closing;
+          if (!closing) {
+            closing = navigation(5173).getIsScreenReaderEnabled();
+            const obj = navigation(5173);
+          }
+          if (!closing) {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          }
+        });
+      }
+    }
+  }
+  const tmpResult = navigation(8121);
+  let tmp13 = null;
+  if (tmpResult2.isIOS()) {
+    class S {
+      constructor() {
+        return navigation.addListener("transitionEnd", (data) => {
+          let closing = data.data.closing;
+          if (!closing) {
+            closing = navigation(5173).getIsScreenReaderEnabled();
+            const obj = navigation(5173);
+          }
+          if (!closing) {
+            const current = ref.current;
+            if (current != null) {
+              current.focus();
+            }
+          }
+        });
+      }
+    }
+    if (null != clientThemesOverride) {
+      class S {
+        constructor() {
+          return navigation.addListener("transitionEnd", (data) => {
+            let closing = data.data.closing;
+            if (!closing) {
+              closing = navigation(5173).getIsScreenReaderEnabled();
+              const obj = navigation(5173);
+            }
+            if (!closing) {
+              const current = ref.current;
+              if (current != null) {
+                current.focus();
+              }
+            }
+          });
+        }
+      }
+      tmp13 = null;
+      if (insets.top > 0) {
+        class S {
+          constructor() {
+            return navigation.addListener("transitionEnd", (data) => {
+              let closing = data.data.closing;
+              if (!closing) {
+                closing = navigation(5173).getIsScreenReaderEnabled();
+                const obj = navigation(5173);
+              }
+              if (!closing) {
+                const current = ref.current;
+                if (current != null) {
+                  current.focus();
+                }
+              }
+            });
+          }
+        }
+      }
+    }
+  }
+  cResult[5] = insets.top;
+  cResult[6] = tmp4.iosPaddingThemeAdjust;
+  cResult[7] = clientThemesOverride;
+  cResult[8] = tmp13;
+}) : ((navigation) => {
   navigation = navigation.navigation;
   let ref;
   const tmp = closure_10();
   const effect = noop.useEffect(() => {
-    ref(1241).track(constants.FRIEND_ADD_VIEWED, { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL });
+    ref(1245).track(constants.FRIEND_ADD_VIEWED, { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL });
   }, []);
-  const insets = ref(7226)().insets;
+  const insets = ref(7224)().insets;
   ref = noop.useRef(null);
   const items = [navigation];
   const effect1 = noop.useEffect(() => navigation.addListener("transitionEnd", (data) => {
     let closing = data.data.closing;
     if (!closing) {
-      closing = navigation(5171).getIsScreenReaderEnabled();
-      const obj = navigation(5171);
+      closing = navigation(5173).getIsScreenReaderEnabled();
+      const obj = navigation(5173);
     }
     if (!closing) {
       const current = ref.current;
@@ -53,8 +203,8 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  const clientThemesOverride = navigation(8116).useClientThemesOverride();
-  let obj = navigation(8116);
+  const clientThemesOverride = navigation(8121).useClientThemesOverride();
+  let obj = navigation(8121);
   let prop = null;
   if (obj2.isIOS()) {
     prop = null;
@@ -69,22 +219,22 @@ export default function UsernameSearchScreen(navigation) {
   const obj4 = { style: null, children: null };
   const items1 = [tmp.content, clientThemesOverride];
   obj4.style = items1;
-  obj2 = navigation(1364);
-  const items2 = [closure_8(ref(5341), { absolute: true }), ];
+  obj2 = navigation(1368);
+  const items2 = [closure_8(ref(5343), { absolute: true }), ];
   const obj5 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
   const items3 = [tmp.container, prop, ];
-  const tmp3Result = ref(5795);
-  items3[2] = { paddingBottom: insets.bottom + ref(576).space.PX_16 };
+  const tmp3Result = ref(7287);
+  items3[2] = { paddingBottom: insets.bottom + ref(580).space.PX_16 };
   obj5.contentContainerStyle = items3;
   const obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  const obj6 = { paddingBottom: insets.bottom + ref(576).space.PX_16 };
-  const intl = tmp7(1115).intl;
-  obj7.headerText = intl.string(navigation(1115).t.YEOwDM);
+  const obj6 = { paddingBottom: insets.bottom + ref(580).space.PX_16 };
+  const intl = tmp7(1119).intl;
+  obj7.headerText = intl.string(navigation(1119).t.YEOwDM);
   obj7.headerTextStyle = tmp.headerText;
   obj7.ref = ref;
-  obj5.children = closure_8(ref(14124), obj7);
+  obj5.children = closure_8(ref(14127), obj7);
   items2[1] = closure_8(closure_4, obj5);
   obj4.children = items2;
   obj3.children = closure_9(tmp3Result, obj4);
   return closure_8(closure_5, obj3);
-};
+});

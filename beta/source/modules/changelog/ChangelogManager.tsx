@@ -1,14 +1,14 @@
-// Module ID: 17746
-// Function ID: 17747
+// Module ID: 17749
+// Function ID: 17750
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2109, 4770, 7363, 8351, 17747, 573, 11, 17749, 2]
+// Dependencies: [5, 32, 2113, 4772, 7365, 8356, 17750, 577, 11, 17752, 2]
 
-// Module 17746 (ChangelogManager)
+// Module 17749 (ChangelogManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import ChangelogStore from "ChangelogStore" /* 4770 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
+import ChangelogStore from "ChangelogStore" /* 4772 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
 const prototype = function ChangelogManager() {
@@ -30,7 +30,7 @@ const prototype = function ChangelogManager() {
         const obj6 = { value, done: true };
         return obj6;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -100,12 +100,12 @@ const prototype = function ChangelogManager() {
               c3 = 0;
               tmp3(tmp86[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
               locale = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else if (true !== body[closure_128_2].show_on_startup) {
               c3 = 0;
               tmp3(tmp86[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
               locale = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               closure_128_3 = ChangelogStore.lastSeenChangelogId();
               closure_128_4 = ChangelogStore.lastSeenChangelogDate();
@@ -114,7 +114,7 @@ const prototype = function ChangelogManager() {
                   c3 = 0;
                   tmp3(tmp86[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
                   locale = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
                 obj10 = tmp3(tmp86[8]);
               }
@@ -140,7 +140,7 @@ const prototype = function ChangelogManager() {
             c3 = 0;
             tmp3(tmp86[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
             locale = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else {
             if (null != closure_128_4) {
               if (null != ChangelogStore.lastSeenChangelogDate()) {
@@ -148,7 +148,7 @@ const prototype = function ChangelogManager() {
                   c3 = 0;
                   tmp3(tmp86[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
                   locale = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 } else {
                   const _Date = Date;
                   const date = new Date(closure_128_5.date);
@@ -161,7 +161,7 @@ const prototype = function ChangelogManager() {
                   c3 = 0;
                   tmp3(tmp86[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
                   locale = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               }
             }

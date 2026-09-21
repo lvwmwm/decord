@@ -1,17 +1,17 @@
-// Module ID: 2055
-// Function ID: 2056
+// Module ID: 2059
+// Function ID: 2060
 // Name: GuildRecordUtils
-// Dependencies: [2056, 2059, 1074, 2058, 2061, 38, 2062, 2]
+// Dependencies: [2060, 2063, 1078, 2062, 2065, 38, 2066, 2]
 // Exports: attachSerializedData, constructFromPartialGuildRecord, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
-// Module 2055 (GuildRecordUtils)
+// Module 2059 (GuildRecordUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1074 */;
-import SetUtils from "SetUtils" /* 2058 */;
-import guildIncidentsSerialization from "guildIncidentsSerialization" /* 2061 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 2062 */;
-import PlainRecord from "PlainRecord" /* 2056 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
+import Constants from "Constants" /* 1078 */;
+import SetUtils from "SetUtils" /* 2062 */;
+import guildIncidentsSerialization from "guildIncidentsSerialization" /* 2065 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 2066 */;
+import PlainRecord from "PlainRecord" /* 2060 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildTheme) {
@@ -176,12 +176,12 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
   } else {
     tmp35 = null;
     if (null != theme) {
-      let fromServerGuildThemeResult = tmp8(2062).fromServerGuildTheme(theme);
+      let fromServerGuildThemeResult = tmp8(2066).fromServerGuildTheme(theme);
       if (fromServerGuildThemeResult == null) {
         fromServerGuildThemeResult = { enabled: false, themeSettings: null };
       }
       tmp35 = fromServerGuildThemeResult;
-      const tmp8Result = tmp8(2062);
+      const tmp8Result = tmp8(2066);
     }
   }
   obj.guildTheme = tmp35;
@@ -220,7 +220,7 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
   }
   obj.officialMessageColor = prop4;
   const tmp = timestampProducer;
-  const tmp2 = React6;
+  const tmp2 = closure_1_8;
   obj.incidentsData = guildIncidentsSerialization.fromServerGuildIncidentsData(properties.incidents_data);
   return tmp(tmp2, guildTheme, obj);
 }
@@ -230,7 +230,7 @@ const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
 const result = size.fileFinishedImporting("utils/GuildRecordUtils.tsx");
 
 export const isGuildRecord = function isGuildRecord(has) {
-  return hasOwnProperty(React6, has);
+  return hasOwnProperty(closure_1_8, has);
 };
 export { fromGuildPropertiesWithAdditionalFields };
 export const fromServer = function fromServer(joined_at, joinedAt) {
@@ -315,7 +315,7 @@ export const fromInviteGuild = function fromInviteGuild(guild) {
   ({ verification_level: obj.verificationLevel, vanity_url_code: obj.vanityURLCode, premium_subscription_count: obj.premiumSubscriberCount, nsfw_level: obj.nsfwLevel, premium_tier: obj.premiumTier, home_header: obj.homeHeader } = guild);
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromGuildProfile = function fromGuildProfile(profile) {
   const obj = { id: profile.id, name: profile.name, description: profile.description, icon: profile.icon, premiumSubscriberCount: null, premiumTier: null, features: null };
@@ -332,7 +332,7 @@ export const fromGuildProfile = function fromGuildProfile(profile) {
   obj.features = SetUtils.toSetInplace(profile.features);
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromStoreListingGuild = function fromStoreListingGuild(id) {
   const obj = { id: id.id, name: id.name, icon: null };
@@ -343,7 +343,7 @@ export const fromStoreListingGuild = function fromStoreListingGuild(id) {
   obj.icon = icon;
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromDirectoryGuild = function fromDirectoryGuild(id) {
   const obj = { id: id.id, name: id.name, icon: null, description: null, splash: null, features: null };
@@ -365,7 +365,7 @@ export const fromDirectoryGuild = function fromDirectoryGuild(id) {
   obj.features = SetUtils.toSetInplace(id.features);
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromGuildDirectoryEntry = function fromGuildDirectoryEntry(entry) {
   const obj = { id: entry.guildId, name: null, icon: null, description: null, splash: null, features: null };
@@ -392,7 +392,7 @@ export const fromGuildDirectoryEntry = function fromGuildDirectoryEntry(entry) {
   obj.features = SetUtils.toSetInplace(entry.features);
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromVerificationGateGuild = function fromVerificationGateGuild(stateFromStores1) {
   const obj = { id: stateFromStores1.id, name: stateFromStores1.name, icon: null, description: null, splash: null, features: null, verificationLevel: null };
@@ -419,7 +419,7 @@ export const fromVerificationGateGuild = function fromVerificationGateGuild(stat
   obj.verificationLevel = verificationLevel;
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromClientDiscoverableGuild = function fromClientDiscoverableGuild(guild) {
   const obj = { id: guild.id, name: guild.name, description: null, splash: null, banner: null, preferredLocale: null, icon: null, features: null, premiumSubscriberCount: null, discoverySplash: null };
@@ -461,7 +461,7 @@ export const fromClientDiscoverableGuild = function fromClientDiscoverableGuild(
   obj.discoverySplash = discoverySplash;
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const fromGuildBasic = function fromGuildBasic(id) {
   const obj = { id: id.id, name: id.name, icon: null, description: null, splash: null, discoverySplash: null, features: null };
@@ -488,7 +488,7 @@ export const fromGuildBasic = function fromGuildBasic(id) {
   obj.features = SetUtils.toSetInplace(id.features);
   const merged = Object.assign(React5);
   const merged1 = Object.assign(obj);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };
 export const dangerouslyConstructGuildRecordFromUntypedObject = function dangerouslyConstructGuildRecordFromUntypedObject(id) {
   const obj = { id: id.id, name: id.name || "", description: id.description || null, ownerId: id.ownerId || null, icon: id.icon || null, splash: id.splash || null, banner: id.banner || null, homeHeader: id.homeHeader || null, features: SetUtils.toSetInplace(id.features), preferredLocale: null, afkChannelId: null, afkTimeout: null, systemChannelId: null, verificationLevel: null, joinedAt: null, defaultMessageNotifications: null, mfaLevel: null, application_id: null, explicitContentFilter: null, vanityURLCode: null, premiumTier: null, premiumSubscriberCount: null, premiumProgressBarEnabled: null, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: null, discoverySplash: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, maxStageVideoChannelUsers: null, maxVideoChannelUsers: null, maxMembers: null, nsfwLevel: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, guildSpaceSettings: null, gameApplicationIds: null, officialMessageColor: null, verificationRoleId: null, incidentsData: null };
@@ -638,7 +638,7 @@ export const dangerouslyConstructGuildRecordFromUntypedObject = function dangero
     incidentsData = null;
   }
   obj.incidentsData = incidentsData;
-  return React3(React6, obj);
+  return React3(closure_1_8, obj);
 };
 export const toGuildProperties = function toGuildProperties(id) {
   const obj = { id: id.id, name: id.name, description: id.description, icon: id.icon, splash: id.splash, banner: id.banner, home_header: id.homeHeader, features: Array.from(id.features), preferred_locale: id.preferredLocale, owner_id: id.ownerId, application_id: id.application_id, afk_channel_id: id.afkChannelId, afk_timeout: id.afkTimeout, system_channel_id: id.systemChannelId, verification_level: id.verificationLevel, explicit_content_filter: id.explicitContentFilter, default_message_notifications: id.defaultMessageNotifications, mfa_level: id.mfaLevel, vanity_url_code: null, premium_tier: null, premium_progress_bar_enabled: null, premium_progress_bar_enabled_user_updated_at: null, premium_features: null, system_channel_flags: null, discovery_splash: null, rules_channel_id: null, safety_alerts_channel_id: null, public_updates_channel_id: null, max_stage_video_channel_users: null, max_video_channel_users: null, max_members: null, nsfw_level: null, nsfw: null, owner_configured_content_level: null, hub_type: null, latest_onboarding_question_id: null, profile: null, theme: null, moderator_reporting: null, guild_space_settings: null, official_message_color: null, incidents_data: null, game_application_ids: null, verification_role_id: null };
@@ -707,10 +707,10 @@ export const fromSerializedGuildRecord = function fromSerializedGuildRecord(item
   obj.premiumProgressBarEnabledUserUpdatedAt = date1;
   delete tmp2[tmp];
   delete tmp2[tmp];
-  return React3(React6, obj);
+  return React3(closure_1_8, obj);
 };
 export const constructFromPartialGuildRecord = function constructFromPartialGuildRecord(arg0) {
   const merged = Object.assign(React5);
   const merged1 = Object.assign(arg0);
-  return React3(React6, {});
+  return React3(closure_1_8, {});
 };

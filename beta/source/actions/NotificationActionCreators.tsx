@@ -1,12 +1,12 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15781
+// Function ID: 15782
 // Name: NotificationActionCreators
-// Dependencies: [1074, 1241, 573, 2]
+// Dependencies: [1078, 1245, 577, 2]
 
-// Module 15792 (NotificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Constants from "Constants" /* 1074 */;
+// Module 15781 (NotificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ DesktopNotificationTypes: c2, NotificationPermissionTypes: c3, AnalyticEvents: closure_4 } = Constants);

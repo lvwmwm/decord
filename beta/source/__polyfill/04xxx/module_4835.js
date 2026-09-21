@@ -1,9 +1,17 @@
 // Module ID: 4835
 // Function ID: 4836
-// Dependencies: [547]
+// Dependencies: [545, 4836, 4837]
 
 // Module 4835
-import _mod547 from "module_547" /* 547 */;
+import _mod545 from "module_545" /* 545 */;
 
 
-export default _mod547(Object.getPrototypeOf, Object);
+export default function initCloneObject(arg0) {
+  if (typeof arg0.constructor === "function") {
+    if (!_mod545(arg0)) {
+      tmp3(4836)(tmp3(4837)(arg0));
+      const tmp = tmp3(4836);
+    }
+    return {};
+  }
+};

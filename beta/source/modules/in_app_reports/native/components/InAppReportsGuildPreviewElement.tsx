@@ -1,15 +1,15 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13198
+// Function ID: 13199
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4756, 576, 7224, 4605, 4752, 1115, 5801, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 7222, 4608, 1119, 4754, 5799, 2]
 
-// Module 13199 (InAppReportsGuildPreviewElement)
-import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4605 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import GuildIcon from "GuildIcon" /* 5801 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+// Module 13198 (InAppReportsGuildPreviewElement)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import ColorUtils from "ColorUtils" /* 4608 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import GuildIcon from "GuildIcon" /* 5799 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -18,16 +18,143 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, guildContainer: null, guildInfo: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.guildContainer = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 12 };
 obj2.guildInfo = { marginLeft: 8 };
 let closure_6 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsGuildPreviewElement.tsx");
 
-export default function GuildPreview(guild) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  const cResult = c.c(29);
+  guild = guild.guild;
+  const tmp4 = closure_6();
+  const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("InAppReportsGuildPreview", "text-xs/bold");
+  if (cResult[0] !== tmp4.borderColor.color) {
+    const hexWithOpacityResult = tmp(4608).hexWithOpacity(tmp4.borderColor.color, 0.08);
+    cResult[0] = tmp4.borderColor.color;
+    cResult[1] = hexWithOpacityResult;
+    let tmp6 = hexWithOpacityResult;
+    const tmpResult = tmp(4608);
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === typeConsolidationEyebrow.style) {
+    if (cResult[3] === tmp4.title) {
+      if (cResult[5] !== typeConsolidationEyebrow.style) {
+        if (null != typeConsolidationEyebrow.style) {
+          const intl2 = tmp(1119).intl;
+          let stringResult = intl2.string(tmp(1119).t["0ox7Hq"]);
+        } else {
+          const intl = tmp(1119).intl;
+          stringResult = intl.string(tmp(1119).t["0ox7Hq"]).toUpperCase();
+          const str = intl.string(tmp(1119).t["0ox7Hq"]);
+        }
+        cResult[5] = typeConsolidationEyebrow.style;
+        cResult[6] = stringResult;
+      } else {
+        if (cResult[7] === typeConsolidationEyebrow.variant) {
+          if (cResult[8] === tmp8) {
+            if (cResult[9] === tmp9) {
+              let tmp13 = cResult[10];
+            }
+            if (cResult[11] !== tmp6) {
+              const obj3 = { borderColor: tmp6 };
+              cResult[11] = tmp6;
+              cResult[12] = obj3;
+              let tmp16 = obj3;
+            } else {
+              tmp16 = cResult[12];
+            }
+            if (cResult[13] === tmp4.guildContainer) {
+              if (cResult[14] === tmp16) {
+                let tmp17 = cResult[15];
+              }
+              if (cResult[16] !== guild) {
+                const obj4 = { size: tmp(5799).GuildIconSizes.LARGE, guild };
+                const tmp22 = React4(GuildIconDefault, obj4);
+                cResult[16] = guild;
+                cResult[17] = tmp22;
+                let tmp18 = tmp22;
+              } else {
+                tmp18 = cResult[17];
+              }
+              if (cResult[18] === guild.name) {
+                if (cResult[19] === tmp4.guildInfo) {
+                  let tmp23 = cResult[20];
+                }
+                if (cResult[21] === tmp17) {
+                  if (cResult[22] === tmp18) {
+                    if (cResult[23] === tmp23) {
+                      let tmp26 = cResult[24];
+                    }
+                    if (cResult[25] === tmp4.container) {
+                      if (cResult[26] === tmp13) {
+                        if (cResult[27] === tmp26) {
+                          let tmp30 = cResult[28];
+                        }
+                        return tmp30;
+                      }
+                    }
+                    const obj5 = { style: tmp4.container, children: null };
+                    const items = [tmp13, tmp26];
+                    obj5.children = items;
+                    const tmp33 = hasOwnProperty(View, obj5);
+                    cResult[25] = tmp4.container;
+                    cResult[26] = tmp13;
+                    cResult[27] = tmp26;
+                    cResult[28] = tmp33;
+                    tmp30 = tmp33;
+                  }
+                }
+                const obj6 = { style: tmp17, children: null };
+                const items1 = [tmp18, tmp23];
+                obj6.children = items1;
+                const tmp29 = hasOwnProperty(View, obj6);
+                cResult[21] = tmp17;
+                cResult[22] = tmp18;
+                cResult[23] = tmp23;
+                cResult[24] = tmp29;
+                tmp26 = tmp29;
+              }
+              const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp4.guildInfo, children: guild.name };
+              const tmp25 = React4(tmp(4754).Text, obj7);
+              cResult[18] = guild.name;
+              cResult[19] = tmp4.guildInfo;
+              cResult[20] = tmp25;
+              tmp23 = tmp25;
+            }
+            const items2 = [tmp4.guildContainer, tmp16];
+            cResult[13] = tmp4.guildContainer;
+            cResult[14] = tmp16;
+            cResult[15] = items2;
+            tmp17 = items2;
+          }
+        }
+        const obj8 = { style: tmp8, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: cResult[6] };
+        const tmp15 = React4(tmp(4754).Text, obj8);
+        cResult[7] = typeConsolidationEyebrow.variant;
+        cResult[8] = tmp8;
+        cResult[9] = cResult[6];
+        cResult[10] = tmp15;
+        tmp13 = tmp15;
+      }
+    }
+  }
+  if (null != typeConsolidationEyebrow.style) {
+    const items3 = [tmp4.title, typeConsolidationEyebrow.style];
+    let title = items3;
+  } else {
+    title = tmp4.title;
+  }
+  cResult[2] = typeConsolidationEyebrow.style;
+  cResult[3] = tmp4.title;
+  cResult[4] = title;
+}) : ((guild) => {
   guild = guild.guild;
   const tmp = closure_6();
   const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("InAppReportsGuildPreview", "text-xs/bold");
@@ -40,12 +167,12 @@ export default function GuildPreview(guild) {
   }
   const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: null };
   if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1115).intl;
-    let stringResult = intl2.string(tmp2(1115).t["0ox7Hq"]);
+    const intl2 = tmp2(1119).intl;
+    let stringResult = intl2.string(tmp2(1119).t["0ox7Hq"]);
   } else {
-    const intl = tmp2(1115).intl;
-    stringResult = intl.string(tmp2(1115).t["0ox7Hq"]).toUpperCase();
-    const str = intl.string(tmp2(1115).t["0ox7Hq"]);
+    const intl = tmp2(1119).intl;
+    stringResult = intl.string(tmp2(1119).t["0ox7Hq"]).toUpperCase();
+    const str = intl.string(tmp2(1119).t["0ox7Hq"]);
   }
   obj4.children = stringResult;
   const items1 = [React4(Text_Text.Text, obj4), ];
@@ -61,4 +188,4 @@ export default function GuildPreview(guild) {
   items1[1] = hasOwnProperty(View, obj5);
   obj3.children = items1;
   return hasOwnProperty(View, obj3);
-};
+});

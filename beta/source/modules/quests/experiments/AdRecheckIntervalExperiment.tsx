@@ -1,10 +1,10 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15373
+// Function ID: 15374
 // Name: AdRecheckIntervalExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 15384 (AdRecheckIntervalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 15373 (AdRecheckIntervalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-ad-recheck-interval-experiment", kind: "user", defaultConfig: { enableFastAdRecheck: false }, variations: null };

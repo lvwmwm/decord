@@ -1,9 +1,9 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7559
+// Function ID: 7560
 // Name: RoleSubscriptionsLinkingUtil
-// Dependencies: [5, 1074, 2048, 7558, 1980, 3, 7562, 2]
+// Dependencies: [5, 1078, 2052, 7560, 1984, 3, 7564, 2]
 
-// Module 7557 (RoleSubscriptionsLinkingUtil)
+// Module 7559 (RoleSubscriptionsLinkingUtil)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -28,7 +28,7 @@ let closure_8 = async function _performRoleSubscriptionUpsellRedirect(arg0, valu
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -111,7 +111,7 @@ let closure_9 = async function _performRoleSubscriptionTeamCreationRedirect(arg0
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -139,7 +139,7 @@ let closure_9 = async function _performRoleSubscriptionTeamCreationRedirect(arg0
         return obj;
       } else {
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp7) {
       c0 = tmp;
@@ -158,7 +158,7 @@ let closure_10 = async function _performRoleSubscriptionEditPayoutRedirect(arg0,
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -186,7 +186,7 @@ let closure_10 = async function _performRoleSubscriptionEditPayoutRedirect(arg0,
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp8) {
       c1 = tmp;
@@ -215,7 +215,7 @@ let closure_12 = async function _performDeveloperPortalRedirectWithTokenHandoff(
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -286,9 +286,9 @@ let closure_12 = async function _performDeveloperPortalRedirectWithTokenHandoff(
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ RelativeMarketingURLs: closure_4, Routes: hasOwnProperty } = Constants);
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/mobile_web_purchase/RoleSubscriptionsLinkingUtil.tsx");
 

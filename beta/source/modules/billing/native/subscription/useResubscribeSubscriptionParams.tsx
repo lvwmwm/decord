@@ -1,19 +1,43 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11110
+// Function ID: 11111
 // Name: useResubscribeSubscriptionParams
-// Dependencies: [19, 11069, 1255, 2]
-// Exports: default
+// Dependencies: [19, 558, 568, 11106, 1259, 2]
 
-// Module 11073 (useResubscribeSubscriptionParams)
-import v1 from "v1" /* 1255 */;
-import useToggleOnIAPSuccessDefault from "useToggleOnIAPSuccess" /* 11069 */;
+// Module 11110 (useResubscribeSubscriptionParams)
+import c from "c" /* 568 */;
+import v1 from "v1" /* 1259 */;
+import useToggleOnIAPSuccessDefault from "useToggleOnIAPSuccess" /* 11106 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/billing/native/subscription/useResubscribeSubscriptionParams.tsx");
 
-export default function useResubscribeSubscriptionParams(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((subscriptionId) => {
+  const cResult = c.c(3);
+  let tmp4 = null;
+  if (null != subscriptionId) {
+    tmp4 = null;
+    if (null != useToggleOnIAPSuccessDefault()) {
+      const _Symbol = Symbol;
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const v4Result = v1.v4();
+        cResult[0] = v4Result;
+        let first = v4Result;
+        const tmpResult = v1;
+      } else {
+        first = cResult[0];
+      }
+      if (cResult[1] !== subscriptionId) {
+        const obj2 = { requestIdentifier: first, subscriptionId };
+        cResult[1] = subscriptionId;
+        cResult[2] = obj2;
+      }
+    }
+  }
+  return tmp4;
+}) : ((arg0) => {
   closure_0 = arg0;
   const tmp = useToggleOnIAPSuccessDefault();
   importDefault = tmp;
@@ -29,4 +53,4 @@ export default function useResubscribeSubscriptionParams(arg0) {
     }
     return tmp2;
   }, items);
-};
+});

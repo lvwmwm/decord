@@ -1,25 +1,228 @@
-// Module ID: 12691
-// Function ID: 12692
+// Module ID: 12586
+// Function ID: 12587
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2109, 4771, 4770, 1074, 12692, 504, 8645, 8351, 1241, 2]
-// Exports: default
+// Dependencies: [19, 2113, 4773, 4772, 1078, 558, 568, 12587, 504, 8650, 8356, 1245, 2]
 
-// Module 12691 (useChangelogRenderedAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8351 */;
+// Module 12586 (useChangelogRenderedAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8356 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import ChangelogStore from "ChangelogStore" /* 4770 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
+import ChangelogStore from "ChangelogStore" /* 4772 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/changelog/useChangelogRenderedAnalytics.tsx");
 
-export default function useChangelogRenderedAnalytics(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(33);
+  const tmp5 = require("useChangelogIdFromChannel")(arg0);
+  importDefault = tmp5;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [locale];
+    const fn = function f() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  let obj = require("c");
+  const tmp4 = importDefault;
+  stateFromStores = require("initialize").useStateFromStores(tmp6, tmp7);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [stateFromStores2];
+    cResult[2] = items1;
+    let tmp10 = items1;
+  } else {
+    tmp10 = cResult[2];
+  }
+  if (cResult[3] === tmp5) {
+    if (cResult[4] === stateFromStores) {
+      let tmp12 = cResult[5];
+      let tmp13 = cResult[6];
+    }
+    const stateFromStores1 = tmp(tmp2[8]).useStateFromStores(tmp10, tmp12, tmp13);
+    if (cResult[7] !== arg0) {
+      const tmp16 = tmp4(tmp2[9])(arg0);
+      cResult[7] = arg0;
+      cResult[8] = tmp16;
+      let tmp15 = tmp16;
+    } else {
+      tmp15 = cResult[8];
+    }
+    locale = tmp15;
+    if (cResult[9] !== tmp15) {
+      let timestamp = null;
+      if (tmp15) {
+        let _Date = Date;
+        timestamp = Date.now();
+      }
+      cResult[9] = tmp15;
+      cResult[10] = timestamp;
+      let tmp17 = timestamp;
+    } else {
+      tmp17 = cResult[10];
+    }
+    ReadStateStore = stateFromStores1.useRef(tmp17);
+    const _Symbol = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      const items2 = [ReadStateStore];
+      cResult[11] = items2;
+      let tmp19 = items2;
+    } else {
+      tmp19 = cResult[11];
+    }
+    if (cResult[12] !== arg0) {
+      class F {
+        constructor() {
+          return closure_5.getUnreadCount(closure_0);
+        }
+      }
+      const items3 = [arg0];
+      cResult[12] = arg0;
+      cResult[13] = F;
+      cResult[14] = items3;
+      let tmp22 = items3;
+      const tmp21 = F;
+    } else {
+      class F {
+        constructor() {
+          return closure_5.getUnreadCount(closure_0);
+        }
+      }
+      tmp22 = cResult[14];
+    }
+    const tmpResult3 = tmp(tmp2[8]);
+    stateFromStores2 = tmp(tmp2[8]).useStateFromStores(tmp19, tmp21, tmp22);
+    stateFromStores1.useRef(stateFromStores2);
+    if (cResult[15] !== stateFromStores2) {
+      class A {
+        constructor() {
+          closure_7.current = closure_6;
+          return;
+        }
+      }
+      cResult[15] = stateFromStores2;
+      cResult[16] = A;
+      const tmp24 = A;
+    } else {
+      class A {
+        constructor() {
+          closure_7.current = closure_6;
+          return;
+        }
+      }
+    }
+    const effect = obj4.useEffect(tmp24);
+    const _Symbol2 = Symbol;
+    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor() {
+          closure_5.current = Date.now();
+          return;
+        }
+      }
+      cResult[17] = L;
+    } else {
+      class L {
+        constructor() {
+          closure_5.current = Date.now();
+          return;
+        }
+      }
+    }
+    if (cResult[18] !== tmp15) {
+      class L {
+        constructor() {
+          closure_5.current = Date.now();
+          return;
+        }
+      }
+      tmp28[0] = tmp15;
+      cResult[18] = tmp15;
+      cResult[19] = tmp28;
+    } else {
+      class L {
+        constructor() {
+          closure_5.current = Date.now();
+          return;
+        }
+      }
+    }
+    class S {
+      constructor() {
+        str = closure_1;
+        tmp = closure_6;
+        if (closure_1 == null) {
+          str = "";
+        }
+        return closure_6.getChangelog(str, closure_2);
+      }
+    }
+    if (cResult[20] === tmp5) {
+      class L {
+        constructor() {
+          closure_5.current = Date.now();
+          return;
+        }
+      }
+    }
+    class R {
+      constructor() {
+        tmp = closure_4;
+        if (closure_4) {
+          tmp2 = closure_1;
+          tmp3 = null;
+          tmp = null != closure_1;
+        }
+        if (tmp) {
+          tmp4 = closure_1;
+          tmp5 = closure_2;
+          obj = closure_1(closure_2[10]);
+          tmp6 = closure_1;
+          tmp7 = closure_2;
+          flag = true;
+          changelog = obj.fetchChangelog(closure_1, closure_2, true);
+        }
+        return;
+      }
+    }
+    const items4 = [tmp5, stateFromStores, tmp15];
+    cResult[20] = tmp5;
+    cResult[21] = tmp15;
+    cResult[22] = stateFromStores;
+    cResult[23] = R;
+    cResult[24] = items4;
+    const tmpResult4 = tmp(tmp2[8]);
+  }
+  class S {
+    constructor() {
+      str = closure_1;
+      tmp = closure_6;
+      if (closure_1 == null) {
+        str = "";
+      }
+      return closure_6.getChangelog(str, closure_2);
+    }
+  }
+  const items5 = [, stateFromStores];
+  cResult[3] = tmp5;
+  cResult[4] = stateFromStores;
+  cResult[5] = S;
+  cResult[6] = items5;
+  tmp13 = items5;
+  tmp12 = S;
+}) : ((arg0) => {
   _require = arg0;
   const tmp2 = require("useChangelogIdFromChannel")(arg0);
   importDefault = tmp2;
@@ -48,7 +251,7 @@ export default function useChangelogRenderedAnalytics(arg0) {
   const ref = stateFromStores1.useRef(timestamp);
   const items3 = [ref];
   const items4 = [arg0];
-  stateFromStores2 = tmp3(tmp[6]).useStateFromStores(items3, () => ReadStateStore.getUnreadCount(closure_0), items4);
+  stateFromStores2 = tmp3(tmp[8]).useStateFromStores(items3, () => ReadStateStore.getUnreadCount(closure_0), items4);
   stateFromStores1.useRef(stateFromStores2);
   const effect = obj3.useEffect(() => {
     closure_7.current = stateFromStores2;
@@ -83,7 +286,7 @@ export default function useChangelogRenderedAnalytics(arg0) {
   }, items7);
   const items8 = [tmp6, stateFromStores1];
   const effect4 = obj3.useEffect(() => {
-    const current = ref.current;
+    current = ref.current;
     return () => {
       let tmp = closure_4;
       if (closure_4) {
@@ -105,4 +308,4 @@ export default function useChangelogRenderedAnalytics(arg0) {
       }
     };
   }, items8);
-};
+});

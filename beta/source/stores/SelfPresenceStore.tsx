@@ -1,24 +1,24 @@
-// Module ID: 5496
-// Function ID: 5497
+// Module ID: 5498
+// Function ID: 5499
 // Name: SelfPresenceStore
-// Dependencies: [5497, 1220, 2015, 5627, 7639, 9625, 4796, 4774, 1074, 7641, 2019, 1385, 11153, 1331, 12, 504, 573, 2]
+// Dependencies: [5499, 1224, 2019, 5629, 7641, 9621, 4798, 4776, 1078, 7643, 2023, 1389, 11195, 1335, 12, 504, 577, 2]
 
-// Module 5496 (SelfPresenceStore)
+// Module 5498 (SelfPresenceStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1331 from "module_1331" /* 1331 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11153 */;
-import SpotifyStore from "SpotifyStore" /* 5497 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import DetectableGameStore from "DetectableGameStore" /* 2015 */;
-import IdleStore from "IdleStore" /* 5627 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7639 */;
-import LocalActivityStore from "LocalActivityStore" /* 9625 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import SessionsStore from "SessionsStore" /* 4774 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import _modDef1335 from "module_1335" /* 1335 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 11195 */;
+import SpotifyStore from "SpotifyStore" /* 5499 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import DetectableGameStore from "DetectableGameStore" /* 2019 */;
+import IdleStore from "IdleStore" /* 5629 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7641 */;
+import LocalActivityStore from "LocalActivityStore" /* 9621 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import SessionsStore from "SessionsStore" /* 4776 */;
 
 require = fn;
 function filterPlayingActivities(arg0) {
@@ -66,22 +66,22 @@ function shouldShowActivity(flags) {
       } else {
         shouldShowActivityResult = null != flags.application_id;
         if (shouldShowActivityResult) {
-          shouldShowActivityResult = tmp(7641).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-          const tmpResult = tmp(7641);
+          shouldShowActivityResult = tmp(7643).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+          const tmpResult = tmp(7643);
         }
       }
       return shouldShowActivityResult;
     } else if (tmp3.PLAYING === type) {
       if (null != flags.application_id) {
-        let result = tmp(7641).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-        const tmpResult4 = tmp(7641);
+        let result = tmp(7643).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+        const tmpResult4 = tmp(7643);
       } else {
         const searchGamesByNameResult = DetectableGameStore.searchGamesByName(flags.name);
         if (1 === searchGamesByNameResult.length) {
-          result = tmp(7641).shouldShareApplicationActivity(searchGamesByNameResult[0], LibraryApplicationStore);
-          const tmpResult5 = tmp(7641);
+          result = tmp(7643).shouldShareApplicationActivity(searchGamesByNameResult[0], LibraryApplicationStore);
+          const tmpResult5 = tmp(7643);
         } else {
-          const ShowCurrentGame = tmp(2019).ShowCurrentGame;
+          const ShowCurrentGame = tmp(2023).ShowCurrentGame;
           result = ShowCurrentGame.getSetting();
         }
       }
@@ -92,8 +92,8 @@ function shouldShowActivity(flags) {
       }
       let result1 = null == flags.application_id;
       if (!result1) {
-        result1 = tmp(7641).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
-        const tmpResult6 = tmp(7641);
+        result1 = tmp(7643).shouldShareApplicationActivity(flags.application_id, LibraryApplicationStore);
+        const tmpResult6 = tmp(7643);
       }
       return result1;
     }
@@ -134,7 +134,7 @@ function handleUpdate() {
       found = activities.filter(shouldShowActivity);
     }
     let flag = false;
-    if (!_modDef1331(found, found)) {
+    if (!_modDef1335(found, found)) {
       closure_21 = filterPlayingActivities(found);
       flag = true;
     }
@@ -162,8 +162,8 @@ function handleConnectionOpen() {
   handleUpdate();
   const result = PresenceStore.setCurrentUserOnConnectionOpen(IDLE, valueResult);
 }
-const sortActivity = fn(4796).sortActivity;
-const Constants = fn(1074);
+const sortActivity = fn(4798).sortActivity;
+const Constants = fn(1078);
 const StatusTypes = Constants.StatusTypes;
 ({ ActivityFlags: map1, ActivityTypes: closure_14, AppStates: closure_15 } = Constants);
 let c16 = false;
@@ -222,13 +222,13 @@ prototype["getApplicationActivity"] = function getApplicationActivity(arg0) {
   }
   return this.findActivity((application_id) => application_id.application_id === closure_0, flag);
 };
-prototype["findActivity"] = function findActivity(_messages) {
+prototype["findActivity"] = function findActivity(cResult) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
   activities = this.getActivities(flag);
-  return activities.find(_messages);
+  return activities.find(cResult);
 };
 SelfPresenceStore.displayName = "SelfPresenceStore";
 const selfPresenceStore = new SelfPresenceStore(DispatcherDefault, {

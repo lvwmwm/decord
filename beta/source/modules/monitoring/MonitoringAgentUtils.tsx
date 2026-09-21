@@ -1,11 +1,11 @@
-// Module ID: 5088
-// Function ID: 5089
+// Module ID: 5090
+// Function ID: 5091
 // Name: MonitoringAgentUtils
-// Dependencies: [1344, 2]
+// Dependencies: [1348, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 5088 (MonitoringAgentUtils)
-import DesignIds from "DesignIds" /* 1344 */;
+// Module 5090 (MonitoringAgentUtils)
+import DesignIds from "DesignIds" /* 1348 */;
 import size from "module_2" /* 2 */;
 
 const obj = { design_id: DesignIds.DesignIds.DESIGN_TABS_IA };

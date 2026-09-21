@@ -1,16 +1,16 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15431
+// Function ID: 15432
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7939, 1085, 21, 4756, 576, 11738, 504, 11542, 7440, 1115, 7434, 15443, 15447, 8179, 15425, 13260, 4752, 2]
+// Dependencies: [5, 32, 19, 17, 7944, 1089, 21, 4758, 580, 11607, 504, 10564, 7442, 1119, 7436, 15432, 15436, 8178, 15414, 13263, 4754, 2]
 
-// Module 15442 (MobileQuestPreviewControlBar)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7440 */;
+// Module 15431 (MobileQuestPreviewControlBar)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7442 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7939 */;
+import QuestStore from "QuestStore" /* 7944 */;
 
 require = fn;
 class MobileQuestPreviewControlBar {
@@ -100,7 +100,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -165,7 +165,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ class MobileQuestPreviewControlBar {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -382,10 +382,10 @@ class MobileQuestPreviewControlBar {
   }
 }
 const View = fn(17).View;
-const AppRoutes = fn(1085).AppRoutes;
+const AppRoutes = fn(1089).AppRoutes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { overflow: "visible", zIndex: 1 }, questInputContainer: { flexDirection: "row", alignItems: "flex-start", justifyContent: "flex-start", gap: nativeDefault.space.PX_8, zIndex: 2, overflow: "visible" }, searchField: { flex: 1, zIndex: 3, overflow: "visible" }, iconsColumn: null, errorText: null };
 let obj3 = { flexDirection: "row", alignItems: "flex-start", justifyContent: "flex-start", gap: nativeDefault.space.PX_8, zIndex: 2, overflow: "visible" };
 obj2.iconsColumn = { flexDirection: "row", gap: nativeDefault.space.PX_8, paddingTop: nativeDefault.space.PX_4 };

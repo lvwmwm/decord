@@ -1,13 +1,13 @@
-// Module ID: 4983
-// Function ID: 4984
+// Module ID: 4985
+// Function ID: 4986
 // Name: ApplicationStore
-// Dependencies: [32, 2002, 504, 573, 2]
+// Dependencies: [32, 2006, 504, 577, 2]
 
-// Module 4983 (ApplicationStore)
+// Module 4985 (ApplicationStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
+import ApplicationRecord from "ApplicationRecord" /* 2006 */;
 
 function addApplication(fromServer) {
   value = map.get(fromServer.id);
@@ -212,14 +212,14 @@ prototype["getApplicationByName"] = function getApplicationByName(name) {
 prototype["getApplicationLastUpdated"] = function getApplicationLastUpdated(arg0) {
   return map4.get(arg0);
 };
-prototype["isFetchingApplication"] = function isFetchingApplication(appId) {
-  return true === map5.get(appId);
+prototype["isFetchingApplication"] = function isFetchingApplication(application_id) {
+  return true === map5.get(application_id);
 };
 prototype["isHydrated"] = function isHydrated(applicationId) {
   return set.has(applicationId);
 };
-prototype["didFetchingApplicationFail"] = function didFetchingApplicationFail(applicationId) {
-  return false === map5.get(applicationId);
+prototype["didFetchingApplicationFail"] = function didFetchingApplicationFail(application_id) {
+  return false === map5.get(application_id);
 };
 prototype["getFetchingOrFailedFetchingIds"] = function getFetchingOrFailedFetchingIds() {
   return Array.from(map5.keys());

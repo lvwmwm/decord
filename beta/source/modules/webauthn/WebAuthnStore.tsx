@@ -1,12 +1,12 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14921
+// Function ID: 14922
 // Name: WebAuthnStore
-// Dependencies: [1978, 504, 573, 2]
+// Dependencies: [1982, 504, 577, 2]
 
-// Module 14932 (WebAuthnStore)
+// Module 14921 (WebAuthnStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1978 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Server from "Server" /* 1982 */;
 
 require = fn;
 let c2 = false;

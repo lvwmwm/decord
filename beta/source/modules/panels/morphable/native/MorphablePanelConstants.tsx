@@ -1,10 +1,10 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12421
+// Function ID: 12422
 // Name: MorphablePanelConstants
-// Dependencies: [1364, 2]
+// Dependencies: [1368, 2]
 
-// Module 12527 (MorphablePanelConstants)
-import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
+// Module 12421 (MorphablePanelConstants)
+import PlatformUtils_mod from "PlatformUtils" /* 1368 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils = PlatformUtils_mod;

@@ -1,35 +1,407 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9790
+// Function ID: 9791
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 2041, 4395, 7768, 2047, 1074, 21, 4756, 1115, 9790, 504, 1484, 9813, 9795, 4752, 5186, 1875, 9789, 4467, 9793, 9853, 4348, 9854, 9855, 2]
-// Exports: default
+// Dependencies: [32, 19, 2045, 4399, 7773, 2051, 1078, 21, 4758, 1119, 9766, 558, 568, 504, 1488, 1879, 9765, 4472, 4352, 9791, 9772, 4754, 5188, 9831, 9832, 9833, 9770, 2]
 
-// Module 9812 (EditGuildEventWhere)
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9789 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
+// Module 9790 (EditGuildEventWhere)
+import util from "util" /* 1119 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1879 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9765 */;
+import EntityUtils from "EntityUtils" /* 9766 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_8 = fn(7768).isGuildScheduledEventActive;
-const GuildScheduledEventsConstants = fn(2047);
+function assertGuildEventWhereIsValid(guildEvent) {
+  const entityType = guildEvent.entityType;
+  if (entityType === constants.NONE) {
+    const _Error3 = Error;
+    const intl3 = util.intl;
+    const error = new Error(intl3.string(util.t.C4KzmQ));
+    throw error;
+  } else {
+    if (entityType === tmp2.EXTERNAL) {
+      if (null == obj.getLocationFromEventData(guildEvent)) {
+        const _Error2 = Error;
+        const intl2 = tmp3(1119).intl;
+        const error1 = new Error(intl2.string(tmp3(1119).t.q91szp));
+        throw error1;
+      }
+      obj = EntityUtils;
+    }
+    if (null == tmp) {
+      if (entityType !== tmp2.EXTERNAL) {
+        const _Error = Error;
+        const intl = util.intl;
+        const error2 = new Error(intl.string(util.t["4LQwnw"]));
+        throw error2;
+      }
+    }
+  }
+}
+let closure_8 = fn(7773).isGuildScheduledEventActive;
+const GuildScheduledEventsConstants = fn(2051);
 ({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: closure_9, GuildScheduledEventEntityTypes: c10 } = GuildScheduledEventsConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Permissions: closure_11, GuildSettingsSections: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_16 = createStyles.createStyles({ channelSelection: { marginTop: 16 }, error: { paddingVertical: 8 }, text: { marginTop: 24 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx");
 
-export default function EditGuildEventWhere(guild) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  const cResult = guild(ref[12]).c(63);
+  guild = guild.guild;
+  const guildEvent = guild.guildEvent;
+  ({ guildEventId, initialGuildEvent, onChange } = guild);
+  const tmp4 = closure_16();
+  ref = navigation.useRef(null);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildEvent.channelId) {
+    class T {
+      constructor() {
+        return closure_6.getChannel(guildEvent.channelId);
+      }
+    }
+    const items1 = [guildEvent.channelId];
+    cResult[1] = guildEvent.channelId;
+    cResult[2] = T;
+    cResult[3] = items1;
+    let tmp9 = items1;
+    const tmp8 = T;
+  } else {
+    class T {
+      constructor() {
+        return closure_6.getChannel(guildEvent.channelId);
+      }
+    }
+    tmp9 = cResult[3];
+  }
+  let obj = guild(ref[12]);
+  let obj2 = navigation;
+  const stateFromStores = guild(ref[13]).useStateFromStores(first, tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        return closure_6.getChannel(guildEvent.channelId);
+      }
+    }
+    const items2 = [PermissionStore];
+    cResult[4] = items2;
+    const tmp11 = items2;
+  } else {
+    class T {
+      constructor() {
+        return closure_6.getChannel(guildEvent.channelId);
+      }
+    }
+  }
+  if (cResult[5] !== guild) {
+    class D {
+      constructor() {
+        return closure_7.can(Permissions.MANAGE_ROLES, guild);
+      }
+    }
+    const items3 = [guild];
+    cResult[5] = guild;
+    cResult[6] = D;
+    cResult[7] = items3;
+    let tmp13 = items3;
+    const tmp12 = D;
+  } else {
+    class D {
+      constructor() {
+        return closure_7.can(Permissions.MANAGE_ROLES, guild);
+      }
+    }
+    tmp13 = cResult[7];
+  }
+  const tmpResult = guild(ref[13]);
+  const stateFromStores1 = guild(ref[13]).useStateFromStores(tmp11, tmp12, tmp13);
+  const tmpResult3 = guild(ref[13]);
+  [r10070, _slicedToArray] = obj2.useState(null);
+  const tmp15 = _slicedToArray(obj2.useState(null), 2);
+  navigation = guild(ref[14]).useNavigation();
+  if (cResult[8] !== initialGuildEvent) {
+    class D {
+      constructor() {
+        return closure_7.can(Permissions.MANAGE_ROLES, guild);
+      }
+    }
+    const tmp18 = closure_8(initialGuildEvent);
+    cResult[8] = initialGuildEvent;
+    cResult[9] = tmp18;
+  } else {
+    class D {
+      constructor() {
+        return closure_7.can(Permissions.MANAGE_ROLES, guild);
+      }
+    }
+  }
+  if (cResult[10] === guildEvent) {
+    class D {
+      constructor() {
+        return closure_7.can(Permissions.MANAGE_ROLES, guild);
+      }
+    }
+    if (cResult[13] !== onChange) {
+      class H {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { channelId: guild.id };
+          tmp2 = onChange(obj);
+          return;
+        }
+      }
+      cResult[13] = onChange;
+      class Y {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { entityType: guild, scheduledEndTime: "Array" };
+          if (guild === closure_10.EXTERNAL) {
+            tmp2 = closure_1;
+            tmp3 = closure_3;
+            tmp4 = guildEvent;
+            obj2 = closure_1(closure_3[18])(guildEvent.scheduledStartTime);
+            if (obj2 == null) {
+              obj2 = tmp2(tmp3[18])();
+            }
+            str = "hour";
+            num = 1;
+            addResult = obj2.add(1, "hour");
+            obj.scheduledEndTime = addResult.toISOString();
+          }
+          tmp5 = onChange(obj);
+          return;
+        }
+      }
+    } else {
+      class H {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { channelId: guild.id };
+          tmp2 = onChange(obj);
+          return;
+        }
+      }
+    }
+    if (cResult[15] !== onChange) {
+      class B {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { entityMetadata: null };
+          obj1 = { location: guild };
+          obj.entityMetadata = obj1;
+          tmp2 = onChange(obj);
+          return;
+        }
+      }
+      cResult[15] = onChange;
+      class Y {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { entityType: guild, scheduledEndTime: "Array" };
+          if (guild === closure_10.EXTERNAL) {
+            tmp2 = closure_1;
+            tmp3 = closure_3;
+            tmp4 = guildEvent;
+            obj2 = closure_1(closure_3[18])(guildEvent.scheduledStartTime);
+            if (obj2 == null) {
+              obj2 = tmp2(tmp3[18])();
+            }
+            str = "hour";
+            num = 1;
+            addResult = obj2.add(1, "hour");
+            obj.scheduledEndTime = addResult.toISOString();
+          }
+          tmp5 = onChange(obj);
+          return;
+        }
+      }
+    } else {
+      class B {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { entityMetadata: null };
+          obj1 = { location: guild };
+          obj.entityMetadata = obj1;
+          tmp2 = onChange(obj);
+          return;
+        }
+      }
+    }
+    if (cResult[17] === guildEvent.scheduledStartTime) {
+      class B {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { entityMetadata: null };
+          obj1 = { location: guild };
+          obj.entityMetadata = obj1;
+          tmp2 = onChange(obj);
+          return;
+        }
+      }
+      if (cResult[20] !== guildEvent.entityType) {
+        class B {
+          constructor(arg0) {
+            tmp = closure_4(null);
+            obj = { entityMetadata: null };
+            obj1 = { location: guild };
+            obj.entityMetadata = obj1;
+            tmp2 = onChange(obj);
+            return;
+          }
+        }
+        const channelTypeFromEntity = obj6.getChannelTypeFromEntity(guildEvent.entityType);
+        cResult[20] = guildEvent.entityType;
+        class Y {
+          constructor(arg0) {
+            tmp = closure_4(null);
+            obj = { entityType: guild, scheduledEndTime: "Array" };
+            if (guild === closure_10.EXTERNAL) {
+              tmp2 = closure_1;
+              tmp3 = closure_3;
+              tmp4 = guildEvent;
+              obj2 = closure_1(closure_3[18])(guildEvent.scheduledStartTime);
+              if (obj2 == null) {
+                obj2 = tmp2(tmp3[18])();
+              }
+              str = "hour";
+              num = 1;
+              addResult = obj2.add(1, "hour");
+              obj.scheduledEndTime = addResult.toISOString();
+            }
+            tmp5 = onChange(obj);
+            return;
+          }
+        }
+        cResult[21] = channelTypeFromEntity;
+      } else {
+        class B {
+          constructor(arg0) {
+            tmp = closure_4(null);
+            obj = { entityMetadata: null };
+            obj1 = { location: guild };
+            obj.entityMetadata = obj1;
+            tmp2 = onChange(obj);
+            return;
+          }
+        }
+      }
+      if (cResult[22] === stateFromStores) {
+        class B {
+          constructor(arg0) {
+            tmp = closure_4(null);
+            obj = { entityMetadata: null };
+            obj1 = { location: guild };
+            obj.entityMetadata = obj1;
+            tmp2 = onChange(obj);
+            return;
+          }
+        }
+      }
+      class Y {
+        constructor(arg0) {
+          tmp = closure_4(null);
+          obj = { entityType: guild, scheduledEndTime: "Array" };
+          if (guild === closure_10.EXTERNAL) {
+            tmp2 = closure_1;
+            tmp3 = closure_3;
+            tmp4 = guildEvent;
+            obj2 = closure_1(closure_3[18])(guildEvent.scheduledStartTime);
+            if (obj2 == null) {
+              obj2 = tmp2(tmp3[18])();
+            }
+            str = "hour";
+            num = 1;
+            addResult = obj2.add(1, "hour");
+            obj.scheduledEndTime = addResult.toISOString();
+          }
+          tmp5 = onChange(obj);
+          return;
+        }
+      }
+      const obj3 = { guild, channel: stateFromStores, guildEventId, channelType: tmp22, onChangeChannel: tmp19, style: tmp4.channelSelection };
+      const tmp26 = closure_13(guildEvent(tmp2[19]), obj3);
+      cResult[22] = stateFromStores;
+      cResult[23] = guild;
+      cResult[24] = guildEventId;
+      cResult[25] = tmp19;
+      cResult[26] = tmp4.channelSelection;
+      cResult[27] = tmp22;
+      cResult[28] = tmp26;
+    }
+    class Y {
+      constructor(arg0) {
+        tmp = closure_4(null);
+        obj = { entityType: guild, scheduledEndTime: "Array" };
+        if (guild === closure_10.EXTERNAL) {
+          tmp2 = closure_1;
+          tmp3 = closure_3;
+          tmp4 = guildEvent;
+          obj2 = closure_1(closure_3[18])(guildEvent.scheduledStartTime);
+          if (obj2 == null) {
+            obj2 = tmp2(tmp3[18])();
+          }
+          str = "hour";
+          num = 1;
+          addResult = obj2.add(1, "hour");
+          obj.scheduledEndTime = addResult.toISOString();
+        }
+        tmp5 = onChange(obj);
+        return;
+      }
+    }
+    cResult[17] = guildEvent.scheduledStartTime;
+    cResult[18] = onChange;
+    cResult[19] = Y;
+  }
+  class Q {
+    constructor() {
+      tmp3 = closure_3;
+      obj = closure_2(closure_3[15]);
+      result = obj.dismissGlobalKeyboard();
+      try {
+        tmp5 = closure_4;
+        tmp6 = null;
+        tmp7 = closure_4(null);
+        tmp8 = assertGuildEventWhereIsValid;
+        tmp9 = guildEvent;
+        num = 0;
+        tmp10 = assertGuildEventWhereIsValid(guildEvent);
+        tmp11 = closure_5;
+        tmp12 = closure_0;
+        arr = closure_5.push(closure_0(tmp3[16]).EditGuildEventScreens.DETAILS);
+        return;
+      } catch (tmp14) {
+        tmp15 = closure_4;
+        tmp16 = closure_4(tmp14.message);
+        tmp17 = closure_0;
+        AccessibilityAnnouncer = closure_0(tmp2[17]).AccessibilityAnnouncer;
+        announceResult = AccessibilityAnnouncer.announce(tmp14.message);
+      }
+      return;
+    }
+  }
+  cResult[10] = guildEvent;
+  cResult[11] = navigation;
+  cResult[12] = Q;
+}) : ((guild) => {
   guild = guild.guild;
   const guildEvent = guild.guildEvent;
   const onChange = guild.onChange;
@@ -40,18 +412,18 @@ export default function EditGuildEventWhere(guild) {
   const ref = noop.useRef(null);
   const items = [ChannelStore];
   const items1 = [guildEvent.channelId];
-  const stateFromStores = guild(ref[11]).useStateFromStores(items, () => ChannelStore.getChannel(guildEvent.channelId), items1);
-  let obj = guild(ref[11]);
+  const stateFromStores = guild(ref[13]).useStateFromStores(items, () => ChannelStore.getChannel(guildEvent.channelId), items1);
+  let obj = guild(ref[13]);
   const items2 = [PermissionStore];
   const items3 = [guild];
-  let stateFromStores1 = guild(ref[11]).useStateFromStores(items2, () => PermissionStore.can(constants2.MANAGE_ROLES, guild), items3);
-  let obj2 = guild(ref[11]);
+  let stateFromStores1 = guild(ref[13]).useStateFromStores(items2, () => PermissionStore.can(constants2.MANAGE_ROLES, guild), items3);
+  let obj2 = guild(ref[13]);
   [tmp8, c4] = noop.useState(null);
   const tmp7 = _slicedToArray(noop.useState(null), 2);
-  noop = guild(ref[12]).useNavigation();
-  const obj3 = guild(ref[12]);
+  noop = guild(ref[14]).useNavigation();
+  const obj3 = guild(ref[14]);
   const obj4 = { guild, channel: stateFromStores, guildEventId, channelType: null, onChangeChannel: null, style: null };
-  guildEvent(ref[13]);
+  guildEvent(ref[19]);
   const tmp9 = closure_8(initialGuildEvent);
   obj4.channelType = guild(ref[10]).getChannelTypeFromEntity(guildEvent.entityType);
   obj4.onChangeChannel = function onChangeChannel(handleSelectChannel) {
@@ -80,7 +452,7 @@ export default function EditGuildEventWhere(guild) {
           }, 100);
         }
     };
-    let tmp10Result = tmp10(tmp3(tmp4[14]).GuildEventLocation, obj6);
+    let tmp10Result = tmp10(tmp3(tmp4[20]).GuildEventLocation, obj6);
     const tmp3Result = tmp3(tmp4[10]);
   } else {
     tmp10Result = tmp13;
@@ -91,75 +463,49 @@ export default function EditGuildEventWhere(guild) {
   let tmp10Result2 = null;
   if (null != tmp8) {
     const obj7 = { style: tmp.error, variant: "text-sm/normal", color: "text-feedback-critical", children: tmp8 };
-    tmp10Result2 = tmp10(tmp3(tmp4[15]).Text, obj7);
+    tmp10Result2 = tmp10(tmp3(tmp4[21]).Text, obj7);
   }
   const obj8 = { children: null };
   const items4 = [tmp10Result2, ];
   const obj9 = { text: null, variant: "primary", onPress: null, disabled: null };
-  let intl = tmp3(tmp4[9]).intl;
+  const intl = tmp3(tmp4[9]).intl;
   obj9.text = intl.string(guild(ref[9]).t.PDTjLN);
   obj9.onPress = function onPress() {
     const result = KeyboardManagerUtilsAll.dismissGlobalKeyboard();
     try {
       _undefined(null);
-      (function assertGuildEventWhereIsValid(guildEvent) {
-        const entityType = guildEvent.entityType;
-        if (entityType === constants.NONE) {
-          const _Error3 = Error;
-          const intl3 = guild(1115).intl;
-          const error = new Error(intl3.string(guild(1115).t.C4KzmQ));
-          throw error;
-        } else {
-          if (entityType === tmp2.EXTERNAL) {
-            if (null == obj.getLocationFromEventData(guildEvent)) {
-              const _Error2 = Error;
-              const intl2 = tmp3(1115).intl;
-              const error1 = new Error(intl2.string(tmp3(1115).t.q91szp));
-              throw error1;
-            }
-            obj = guild(9790);
-          }
-          if (null == tmp) {
-            if (entityType !== tmp2.EXTERNAL) {
-              const _Error = Error;
-              const intl = guild(1115).intl;
-              const error2 = new Error(intl.string(guild(1115).t["4LQwnw"]));
-              throw error2;
-            }
-          }
-        }
-      })(guildEvent);
+      assertGuildEventWhereIsValid(guildEvent);
       closure_5.push(EditGuildEventUtils.EditGuildEventScreens.DETAILS);
-    } catch (tmp13) {
-      _undefined(tmp13.message);
+    } catch (tmp14) {
+      _undefined(tmp14.message);
       const AccessibilityAnnouncer = require("AccessibilityAnnouncer").AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(tmp13.message);
+      AccessibilityAnnouncer.announce(tmp14.message);
     }
   };
   obj9.disabled = null != tmp8;
-  items4[1] = closure_13(guild(ref[16]).Button, obj9);
+  items4[1] = closure_13(guild(ref[22]).Button, obj9);
   obj8.children = items4;
   const obj5 = guild(ref[10]);
   const obj10 = { action: closure_15(closure_14, obj8), ref, children: null };
   const tmp15Result = closure_15(closure_14, obj8);
   const obj11 = { title: null, subtitle: null };
-  const tmp11Result = guildEvent(ref[20]);
-  let intl2 = tmp3(tmp4[9]).intl;
+  const tmp11Result = guildEvent(ref[26]);
+  const intl2 = tmp3(tmp4[9]).intl;
   obj11.title = intl2.string(guild(ref[9]).t["DC+Qm8"]);
-  let intl3 = tmp3(tmp4[9]).intl;
+  const intl3 = tmp3(tmp4[9]).intl;
   obj11.subtitle = intl3.string(guild(ref[9]).t.IwmXLP);
   const items5 = [
-    closure_13(guildEvent(ref[21]), obj11),
-    closure_13(guild(ref[14]).GuildEventEntityTypeSelection, {
+    closure_13(guildEvent(ref[23]), obj11),
+    closure_13(guild(ref[20]).GuildEventEntityTypeSelection, {
       guild,
       entityType: guildEvent.entityType,
       onChange(entityType) {
         _undefined(null);
-        const obj = { entityType, scheduledEndTime: "r" };
+        const obj = { entityType, scheduledEndTime: "Array" };
         if (entityType === constants.EXTERNAL) {
-          let obj2 = _modDef4348(guildEvent.scheduledStartTime);
+          let obj2 = _modDef4352(guildEvent.scheduledStartTime);
           if (obj2 == null) {
-            obj2 = tmp2(4348)();
+            obj2 = tmp2(4352)();
           }
           obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
           const addResult = obj2.add(1, "hour");
@@ -178,11 +524,11 @@ export default function EditGuildEventWhere(guild) {
     entityType: guildEvent.entityType,
     onChange(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "r" };
+      const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef4348(guildEvent.scheduledStartTime);
+        let obj2 = _modDef4352(guildEvent.scheduledStartTime);
         if (obj2 == null) {
-          obj2 = tmp2(4348)();
+          obj2 = tmp2(4352)();
         }
         obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
         const addResult = obj2.add(1, "hour");
@@ -192,8 +538,8 @@ export default function EditGuildEventWhere(guild) {
     },
     disabled: tmp9
   };
-  const tmp11Result2 = guildEvent(ref[21]);
-  items5[3] = set.has(guildEvent.entityType) && closure_13(guildEvent(ref[23]), {});
+  const tmp11Result2 = guildEvent(ref[23]);
+  items5[3] = set.has(guildEvent.entityType) && closure_13(guildEvent(ref[24]), {});
   if (stateFromStores1) {
     const obj13 = { style: tmp.text, variant: "text-sm/normal", color: "text-default", children: null };
     const intl4 = tmp3(tmp4[9]).intl;
@@ -203,9 +549,9 @@ export default function EditGuildEventWhere(guild) {
         }
     };
     obj13.children = intl4.format(tmp3(tmp4[9]).t["K+DH2o"], obj14);
-    stateFromStores1 = tmp10(tmp3(tmp4[15]).Text, obj13);
+    stateFromStores1 = tmp10(tmp3(tmp4[21]).Text, obj13);
   }
   items5[4] = stateFromStores1;
   obj10.children = items5;
   return closure_15(tmp11Result, obj10);
-};
+});

@@ -1,10 +1,10 @@
-// Module ID: 9138
-// Function ID: 9139
+// Module ID: 9136
+// Function ID: 9137
 // Name: OrbRedemptionOrdersExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 9138 (OrbRedemptionOrdersExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 9136 (OrbRedemptionOrdersExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-12-orb-redemption-thru-orders", kind: "user", defaultConfig: { enabled: false }, variations: null };

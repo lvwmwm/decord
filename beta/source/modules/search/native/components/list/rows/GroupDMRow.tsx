@@ -1,23 +1,104 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17126
+// Function ID: 17127
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 4909, 11174, 1177, 11175, 4752, 17122, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 4911, 11216, 1181, 11217, 4754, 17125, 2]
 
-// Module 17123 (rows/GroupDMRow)
-import native from "native" /* 1177 */;
-import useChannelNameDefault from "useChannelName" /* 4909 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11174 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 11175 */;
-import SearchListRow from "SearchListRow" /* 17122 */;
+// Module 17126 (rows/GroupDMRow)
+import c from "c" /* 568 */;
+import native from "native" /* 1181 */;
+import useChannelNameDefault from "useChannelName" /* 4911 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 11217 */;
+import SearchListRow from "SearchListRow" /* 17125 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GroupDMRow.tsx");
 
-export default function GroupDMRow(channel) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = c.c(16);
+  channel = channel.channel;
+  ({ trailing, onPress } = channel);
+  ({ onAccessibilityAction, accessibilityActions } = channel);
+  const tmp5 = useChannelNameDefault(channel);
+  if (cResult[0] === channel.id) {
+    if (cResult[1] === onPress) {
+      let tmp6 = cResult[2];
+    }
+    if (cResult[3] !== channel) {
+      const obj2 = { size: tmp(1181).AvatarSizes.LARGE_48, channel };
+      const tmp10 = jsx(GroupDMAvatarDefault, { size: tmp(1181).AvatarSizes.LARGE_48, channel });
+      cResult[3] = channel;
+      cResult[4] = tmp10;
+      let tmp7 = tmp10;
+      const tmp4Result = GroupDMAvatarDefault;
+    } else {
+      tmp7 = cResult[4];
+    }
+    const recipientsLabel = tmp(11217).useRecipientsLabel(channel);
+    if (cResult[5] !== recipientsLabel) {
+      let tmp14;
+      if (null != recipientsLabel) {
+        const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
+        tmp14 = jsx(tmp(4754).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+      }
+      cResult[5] = recipientsLabel;
+      cResult[6] = tmp14;
+      let tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[6];
+    }
+    let str = tmp5;
+    if (tmp5 == null) {
+      str = "";
+    }
+    let str2 = tmp5;
+    if (tmp5 == null) {
+      str2 = "";
+    }
+    if (cResult[7] === accessibilityActions) {
+      if (cResult[8] === tmp6) {
+        if (cResult[9] === tmp7) {
+          if (cResult[10] === onAccessibilityAction) {
+            if (cResult[11] === tmp12) {
+              if (cResult[12] === str) {
+                if (cResult[13] === str2) {
+                  if (cResult[14] === trailing) {
+                    let tmp17 = cResult[15];
+                  }
+                  return tmp17;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    const obj4 = { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction };
+    const tmp19 = jsx(tmp(17125).SearchListRow, { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction });
+    cResult[7] = accessibilityActions;
+    cResult[8] = tmp6;
+    cResult[9] = tmp7;
+    cResult[10] = onAccessibilityAction;
+    cResult[11] = tmp12;
+    cResult[12] = str;
+    cResult[13] = str2;
+    cResult[14] = trailing;
+    cResult[15] = tmp19;
+    tmp17 = tmp19;
+    const tmpResult = tmp(11217);
+  }
+  const fn = function n() {
+    onPress(channel.id);
+  };
+  cResult[0] = channel.id;
+  cResult[1] = onPress;
+  cResult[2] = fn;
+  tmp6 = fn;
+}) : ((channel) => {
   channel = channel.channel;
   const onPress = channel.onPress;
   ({ trailing, onAccessibilityAction, accessibilityActions } = channel);
@@ -32,7 +113,7 @@ export default function GroupDMRow(channel) {
   let tmp3Result;
   if (null != recipientsLabel) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp3Result = tmp3(tmp5(4752).Text, obj3);
+    tmp3Result = tmp3(tmp5(4754).Text, obj3);
   }
   let str2 = str;
   if (str == null) {
@@ -48,4 +129,4 @@ export default function GroupDMRow(channel) {
   obj4.accessibilityActions = accessibilityActions;
   obj4.onAccessibilityAction = onAccessibilityAction;
   return jsx(SearchListRow.SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
-};
+});

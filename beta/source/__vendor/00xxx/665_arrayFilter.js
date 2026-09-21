@@ -1,0 +1,29 @@
+// Module ID: 665
+// Function ID: 666
+// Name: arrayFilter
+// Dependencies: []
+
+// Module 665 (arrayFilter)
+
+export default function arrayFilter(arg0, fn) {
+  let num = 0;
+  if (null != arg0) {
+    num = arg0.length;
+  }
+  const items = [];
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < num) {
+    do {
+      let tmp = arg0[num3];
+      let sum = num2;
+      if (fn(tmp, num3, arg0)) {
+        sum = num2 + 1;
+        items[num2] = tmp;
+      }
+      num3 = num3 + 1;
+      num2 = sum;
+    } while (num3 < num);
+  }
+  return items;
+};

@@ -1,10 +1,10 @@
-// Module ID: 14271
-// Function ID: 14272
+// Module ID: 14274
+// Function ID: 14275
 // Name: AGC2MobileExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 14271 (AGC2MobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14274 (AGC2MobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-09-agc2-mobile", defaultConfig: { agc2Enabled: false, noiseCancellationDuringProcessing: false, vadKrispActivationThreshold: 0.5 }, variations: null };

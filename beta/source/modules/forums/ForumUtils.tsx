@@ -1,15 +1,15 @@
-// Module ID: 7549
-// Function ID: 7550
+// Module ID: 7551
+// Function ID: 7552
 // Name: ForumUtils
-// Dependencies: [2041, 2063, 4771, 7515, 2048, 1115, 2050, 2]
+// Dependencies: [2045, 2067, 4773, 7517, 2052, 1119, 2054, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 7549 (ForumUtils)
-import util from "util" /* 1115 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2050 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
+// Module 7551 (ForumUtils)
+import util from "util" /* 1119 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2054 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
 
 require = fn;
 function getCreationDefaultFormatter() {
@@ -18,8 +18,8 @@ function getCreationDefaultFormatter() {
   time.month = intl.string(util.t["nBNJ/L"]);
   return time;
 }
-const ForumTimestampFormats = fn(7515).ForumTimestampFormats;
-const ChannelFlags = fn(2048).ChannelFlags;
+const ForumTimestampFormats = fn(7517).ForumTimestampFormats;
+const ChannelFlags = fn(2052).ChannelFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/ForumUtils.tsx");
 
@@ -55,7 +55,7 @@ export const getForumPostReadStatesById = function getForumPostReadStatesById(it
   if (null == channel) {
     return null;
   } else {
-    const guild = obj2.getGuild(channel.guild_id);
+    guild = obj2.getGuild(channel.guild_id);
     let tmp11 = null;
     if (null != guild) {
       const items1 = [tmp5];

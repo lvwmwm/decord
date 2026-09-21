@@ -1,26 +1,71 @@
-// Module ID: 17659
-// Function ID: 17660
+// Module ID: 17618
+// Function ID: 17619
 // Name: ScreenXIcon
-// Dependencies: [19, 21, 576, 4456, 10228, 2]
-// Exports: ScreenXIcon
+// Dependencies: [109, 19, 21, 558, 568, 580, 10225, 4461, 2]
 
-// Module 17659 (ScreenXIcon)
-import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod10228 from "module_10228" /* 10228 */;
+// Module 17618 (ScreenXIcon)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import BaseIconImage from "BaseIconImage" /* 4461 */;
+import _mod10225 from "module_10225" /* 10225 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
+let closure_3 = ["style", "color"];
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/ScreenXIcon.tsx");
 
-export const ScreenXIcon = function ScreenXIcon(color) {
+export const ScreenXIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(9);
+  if (cResult[0] !== arg0) {
+    ({ style, color } = arg0);
+    const tmp8 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp8;
+    cResult[2] = style;
+    cResult[3] = color;
+    let INTERACTIVE_ICON_DEFAULT = color;
+    let tmp5 = style;
+    let tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    INTERACTIVE_ICON_DEFAULT = cResult[3];
+  }
+  if (undefined === INTERACTIVE_ICON_DEFAULT) {
+    INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = tmp(10225);
+    cResult[4] = tmpResult;
+    let tmp10 = tmpResult;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] === INTERACTIVE_ICON_DEFAULT) {
+    if (cResult[6] === tmp4) {
+      if (cResult[7] === tmp5) {
+        let tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+  }
+  const merged = Object.assign(tmp4);
+  const tmp14 = jsx(BaseIconImage.BaseIconImage, { source: tmp10, color: INTERACTIVE_ICON_DEFAULT, style: tmp5 });
+  cResult[5] = INTERACTIVE_ICON_DEFAULT;
+  cResult[6] = tmp4;
+  cResult[7] = tmp5;
+  cResult[8] = tmp14;
+  tmp12 = tmp14;
+}) : ((color) => {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10228, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
-};
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10225, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+});

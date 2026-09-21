@@ -1,14 +1,14 @@
-// Module ID: 4940
-// Function ID: 4941
+// Module ID: 4942
+// Function ID: 4943
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1074, 4938, 4941, 1115, 2]
+// Dependencies: [1078, 4940, 4943, 1119, 2]
 // Exports: arePresetSettingsUnset, presetFromSettings, presetName
 
-// Module 4940 (notificationSettingsPresetUtils)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import ReadStateConstants from "ReadStateConstants" /* 4938 */;
-import _mod4941 from "module_4941" /* 4941 */;
+// Module 4942 (notificationSettingsPresetUtils)
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import ReadStateConstants from "ReadStateConstants" /* 4940 */;
+import _mod4943 from "module_4943" /* 4943 */;
 import size from "module_2" /* 2 */;
 
 const UserNotificationSettings = Constants.UserNotificationSettings;
@@ -17,9 +17,9 @@ const Presets = { ALL_MESSAGES: "all_messages", MENTIONS: "mentions", NOTHING: "
 const result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
 
 export { Presets };
-export const presetFromSettings = function presetFromSettings(unreadSetting, UserGuildSettingsStore) {
-  const items = [UserGuildSettingsStore, unreadSetting];
-  const match = _mod4941.match(items);
+export const presetFromSettings = function presetFromSettings(stateFromStores, UserGuildSettingsStore) {
+  const items = [UserGuildSettingsStore, stateFromStores];
+  const match = _mod4943.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
   const items2 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.UNSET];
   const withResult = match.with(items1, () => constants.ALL_MESSAGES);
@@ -32,7 +32,7 @@ export const presetFromSettings = function presetFromSettings(unreadSetting, Use
   return match.with(items1, () => constants.ALL_MESSAGES).with(items2, () => constants.MENTIONS).with(items3, () => constants.MENTIONS).with(items4, () => constants.NOTHING).with(items5, () => constants.NOTHING).otherwise(() => constants.CUSTOM);
 };
 export const presetName = function presetName(tmp4Result5) {
-  const match = _mod4941.match(tmp4Result5);
+  const match = _mod4943.match(tmp4Result5);
   const withResult = match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);

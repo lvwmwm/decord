@@ -1,21 +1,22 @@
 // Module ID: 4272
 // Function ID: 4273
-// Dependencies: [3849, 3845, 3846]
+// Dependencies: [3853, 3849, 4262, 3850]
 // Exports: default
 
 // Module 4272
-import module_3849_mod from "module_3849" /* 3849 */;
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import module_3853_mod from "module_3853" /* 3853 */;
+import _typeof_mod from "module_3849" /* 3849 */;
+import module_4262_mod from "module_4262" /* 4262 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let module_3849 = module_3849_mod;
-if (!module_3849) {
-  const obj = { default: module_3849 };
+let module_3853 = module_3853_mod;
+if (!module_3853) {
+  const obj = { default: module_3853 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3849;
+  tmp3 = module_3853;
 }
-module_3849 = tmp3;
+module_3853 = tmp3;
 let _typeof = _typeof_mod;
 if (!_typeof) {
   const obj2 = { default: _typeof };
@@ -24,26 +25,27 @@ if (!_typeof) {
   tmp5 = _typeof;
 }
 _typeof = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
+let module_4262 = module_4262_mod;
+if (!module_4262) {
+  const obj3 = { default: module_4262 };
   let tmp7 = obj3;
 } else {
-  tmp7 = requiredArgs;
+  tmp7 = module_4262;
 }
-requiredArgs = tmp7;
+module_4262 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export default function setYear(date, arg1) {
+export default function setQuarter(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(date);
-  if (isNaN(defaultResult1.getTime())) {
-    const _Date = Date;
-    date = new Date(NaN);
-    return date;
-  } else {
-    defaultResult1.setFullYear(defaultResult2);
-    return defaultResult1;
-  }
-  defaultResult2 = module_3849.default(arg1);
+  const defaultResult1 = _typeof.default(arg0);
+  const diff = module_3853.default(arg1) - (Math.floor(defaultResult1.getMonth() / 3) + 1);
+  return module_4262.default(defaultResult1, defaultResult1.getMonth() + 3 * diff);
 };
 export default exports.default;

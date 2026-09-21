@@ -1,213 +1,189 @@
 // Module ID: 899
 // Function ID: 900
-// Dependencies: [900, 682, 901, 916, 919, 920, 911]
-// Exports: addClsInstrumentationHandler, addInpInstrumentationHandler, addLcpInstrumentationHandler, addPerformanceInstrumentationHandler, addTtfbInstrumentationHandler, isPerformanceEventTiming
+// Dependencies: [41, 42, 93, 95, 96, 98, 897, 686, 900]
+// Exports: applyDefaultOptions
 
 // Module 899
-import _mod900 from "module_900" /* 900 */;
+import _mod686 from "module_686" /* 686 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
-
-require = arg1;
-let dependencyMap = arg6;
-function triggerHandlers(arg0, arg1) {
-  let length;
-  if (closure_6[arg0] != null) {
-    length = arr.length;
-  }
-  if (length) {
-    const iter = arr[Symbol.iterator]();
-    if (iter !== undefined) {
-      try {
-        tmp14(arg1);
-      } catch (tmp17) {
-        if (_mod900.DEBUG_BUILD) {
-          const debug = tmp18(682).debug;
-          debug.error(tmp2 + tmp6 + tmp3 + tmp18(682).getFunctionName(tmp7) + tmp4, tmp17);
-          const tmp18Result = tmp18(682);
-        }
-      }
+let BrowserClient = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
     }
-    const nextResult = iter.next();
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-let closure_6 = {};
-let closure_7 = {};
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+class BrowserClient {
+  constructor(arg0) {
+    self = this;
+    tmp = BrowserClient;
+    tmp2 = c2(this, BrowserClient);
+    if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
+      id = globalThis.__SENTRY_RELEASE__;
+    } else {
+      tmp16 = closure_0;
+      tmp17 = closure_1;
+      SENTRY_RELEASE = closure_0(closure_1[6]).WINDOW.SENTRY_RELEASE;
+      tmp18 = null;
+      if (SENTRY_RELEASE != null) {
+        id = SENTRY_RELEASE.id;
+      }
+    }
+    obj = { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
+    merged = Object.assign(global);
+    tmp4 = closure_0;
+    tmp5 = closure_1;
+    SENTRY_SDK_SOURCE = closure_0(closure_1[6]).WINDOW.SENTRY_SDK_SOURCE;
+    if (!SENTRY_SDK_SOURCE) {
+      tmp4Result = tmp4(tmp5[7]);
+      SENTRY_SDK_SOURCE = tmp4Result.getSDKSource();
+    }
+    tmp4Result1 = tmp4(tmp5[7]);
+    applySdkMetadataResult = tmp4Result1.applySdkMetadata(obj, "browser", ["browser"], SENTRY_SDK_SOURCE);
+    _metadata = obj._metadata;
+    sdk = undefined;
+    if (_metadata != null) {
+      sdk = _metadata.sdk;
+    }
+    if (sdk) {
+      str = "never";
+      if (obj.sendDefaultPii) {
+        str = "auto";
+      }
+      obj1 = { infer_ip: null };
+      obj1.infer_ip = str;
+      tmp8 = obj1;
+      merged1 = Object.assign(obj._metadata.sdk.settings);
+      obj._metadata.sdk.settings = obj1;
+    }
+    items = [];
+    items[0] = obj;
+    tmp10 = closure_4;
+    obj5 = closure_4(tmp);
+    tmp11 = closure_3;
+    if (metroRequire()) {
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj5, items, tmp10(self).constructor);
+    } else {
+      constructResult = obj5.apply(self, items);
+    }
+    tmp11Result = tmp11(self, constructResult);
+    closure_0 = tmp11Result;
+    _options = tmp11Result._options;
+    sendClientReports = _options.sendClientReports;
+    enableLogs = _options.enableLogs;
+    ({ _experiments, enableMetrics, sendDefaultPii } = _options);
+    if (enableMetrics == null) {
+      enableMetrics1 = undefined;
+      if (_experiments != null) {
+        enableMetrics1 = _experiments.enableMetrics;
+      }
+      enableMetrics = enableMetrics1;
+    }
+    if (enableMetrics == null) {
+      enableMetrics = true;
+    }
+    c3 = enableMetrics;
+    _document = tmp4(tmp5[6]).WINDOW.document;
+    if (_document) {
+      if (!sendClientReports) {
+        sendClientReports = enableLogs;
+      }
+      if (!sendClientReports) {
+        sendClientReports = enableMetrics;
+      }
+      _document = sendClientReports;
+    }
+    if (_document) {
+      _document2 = tmp4(tmp5[6]).WINDOW.document;
+      str2 = "visibilitychange";
+      listener = _document2.addEventListener("visibilitychange", () => {
+        if ("hidden" === BrowserClient(897).WINDOW.document.visibilityState) {
+          if (sendClientReports) {
+            closure_0._flushOutcomes();
+          }
+          if (enableLogs) {
+            const result = tmp(686)._INTERNAL_flushLogsBuffer(closure_0);
+            const tmpResult = tmp(686);
+          }
+          if (enableMetrics) {
+            const result1 = tmp(686)._INTERNAL_flushMetricsBuffer(closure_0);
+            const tmpResult2 = tmp(686);
+          }
+        }
+      });
+    }
+    if (sendDefaultPii) {
+      str3 = "beforeSendSession";
+      onResult = tmp11Result.on("beforeSendSession", tmp4(tmp5[7]).addAutoIpAddressToSession);
+    }
+    return tmp11Result;
+  }
+}
+_inherits(BrowserClient, _mod686.Client);
+const entry = {
+  key: "eventFromException",
+  value: function eventFromException(arg0, arg1) {
+    return BrowserClient(900).eventFromException(this._options.stackParser, arg0, arg1, this._options.attachStacktrace);
+  }
+};
+let items = [
+  entry,
+  {
+    key: "eventFromMessage",
+    value: function eventFromMessage(arg0) {
+      let str = arg1;
+      if (arg1 === undefined) {
+        str = "info";
+      }
+      return BrowserClient(900).eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace);
+    }
+  },
+  {
+    key: "_prepareEvent",
+    value: function _prepareEvent(platform, arg1, arg2, arg3) {
+      platform.platform = platform.platform || "javascript";
+      const self = this;
+      let fn = hasOwnProperty(_getPrototypeOf(BrowserClient.prototype), "_prepareEvent", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
+      }
+      const items = [platform, arg1, arg2, arg3];
+      return fn(items);
+    }
+  }
+];
 
-export const addClsInstrumentationHandler = function addClsInstrumentationHandler(fn, arg1) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  if (flag === undefined) {
-    flag = false;
-  }
-  closure_6.cls = closure_6.cls || [];
-  let cls = tmp2.cls;
-  cls.push(fn);
-  if (!closure_7.cls) {
-    const obj = cls(901);
-    tmp5.cls = true;
-    const onCLSResult = cls(901).onCLS((metric) => {
-      triggerHandlers("cls", { metric });
-      closure_2 = metric;
-    }, { reportAllChanges: true });
-  }
-  if (closure_2) {
-    const obj2 = { metric: tmp };
-    fn(obj2);
-  }
-  let tmp10;
-  if (flag) {
-    tmp10 = onCLSResult;
-  }
-  cls = "cls";
-  dependencyMap = fn;
-  closure_2 = tmp10;
-  return () => {
-    if (closure_1_2) {
-      tmp();
+export const BrowserClient = _createClass(BrowserClient, items);
+export const applyDefaultOptions = function applyDefaultOptions(arg0) {
+  if (typeof globalThis.__SENTRY_RELEASE__ === "string") {
+    let id = globalThis.__SENTRY_RELEASE__;
+  } else {
+    const SENTRY_RELEASE = BrowserClient(897).WINDOW.SENTRY_RELEASE;
+    if (SENTRY_RELEASE != null) {
+      id = SENTRY_RELEASE.id;
     }
-    if (closure_6[ttfb]) {
-      const index = arr.indexOf(closure_1);
-      if (-1 !== index) {
-        arr.splice(index, 1);
-      }
-    }
-  };
-};
-export const addInpInstrumentationHandler = function addInpInstrumentationHandler(_onInp) {
-  closure_6.inp = closure_6.inp || [];
-  let inp = tmp2.inp;
-  inp.push(_onInp);
-  if (!closure_7.inp) {
-    inp(920).onINP((metric) => {
-      triggerHandlers("inp", { metric });
-      closure_5 = metric;
-    });
-    tmp5.inp = true;
-    const obj = inp(920);
   }
-  if (closure_5) {
-    const obj2 = { metric: tmp };
-    _onInp(obj2);
-  }
-  inp = "inp";
-  dependencyMap = _onInp;
-  return () => {
-    if (closure_1_2) {
-      tmp();
-    }
-    if (closure_6[ttfb]) {
-      const index = arr.indexOf(closure_1);
-      if (-1 !== index) {
-        arr.splice(index, 1);
-      }
-    }
-  };
-};
-export const addLcpInstrumentationHandler = function addLcpInstrumentationHandler(fn, arg1) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  if (flag === undefined) {
-    flag = false;
-  }
-  closure_6.lcp = closure_6.lcp || [];
-  let lcp = tmp2.lcp;
-  lcp.push(fn);
-  if (!closure_7.lcp) {
-    const obj = lcp(916);
-    tmp5.lcp = true;
-    const onLCPResult = lcp(916).onLCP((metric) => {
-      triggerHandlers("lcp", { metric });
-      closure_3 = metric;
-    }, { reportAllChanges: true });
-  }
-  if (closure_3) {
-    const obj2 = { metric: tmp };
-    fn(obj2);
-  }
-  let tmp10;
-  if (flag) {
-    tmp10 = onLCPResult;
-  }
-  lcp = "lcp";
-  dependencyMap = fn;
-  closure_2 = tmp10;
-  return () => {
-    if (closure_1_2) {
-      tmp();
-    }
-    if (closure_6[ttfb]) {
-      const index = arr.indexOf(closure_1);
-      if (-1 !== index) {
-        arr.splice(index, 1);
-      }
-    }
-  };
-};
-export const addPerformanceInstrumentationHandler = function addPerformanceInstrumentationHandler(event, handleEntries) {
-  closure_6[event] = closure_6[event] || [];
-  closure_6[event].push(handleEntries);
-  if (!closure_7[event]) {
-    _require = event;
-    const obj = {};
-    if ("event" === event) {
-      obj.durationThreshold = 0;
-    }
-    require("observe").observe(event, (entries) => {
-      triggerHandlers(closure_0, { entries });
-    }, obj);
-    tmp4[event] = true;
-    const obj2 = require("observe");
-  }
-  closure_129_0 = event;
-  closure_129_1 = handleEntries;
-  return () => {
-    if (closure_1_2) {
-      tmp();
-    }
-    if (closure_6[ttfb]) {
-      const index = arr.indexOf(closure_1);
-      if (-1 !== index) {
-        arr.splice(index, 1);
-      }
-    }
-  };
-};
-export const addTtfbInstrumentationHandler = function addTtfbInstrumentationHandler(fn) {
-  closure_6.ttfb = closure_6.ttfb || [];
-  let ttfb = tmp2.ttfb;
-  ttfb.push(fn);
-  if (!closure_7.ttfb) {
-    ttfb(919).onTTFB((metric) => {
-      triggerHandlers("ttfb", { metric });
-      closure_4 = metric;
-    });
-    tmp5.ttfb = true;
-    const obj = ttfb(919);
-  }
-  if (closure_4) {
-    const obj2 = { metric: tmp };
-    fn(obj2);
-  }
-  ttfb = "ttfb";
-  dependencyMap = fn;
-  return () => {
-    if (closure_1_2) {
-      tmp();
-    }
-    if (closure_6[ttfb]) {
-      const index = arr.indexOf(closure_1);
-      if (-1 !== index) {
-        arr.splice(index, 1);
-      }
-    }
-  };
-};
-export const isPerformanceEventTiming = function isPerformanceEventTiming(interactionId) {
-  return "duration" in interactionId;
+  const merged = Object.assign(arg0);
+  return { release: id, sendClientReports: true, parentSpanIsAlwaysRootSpan: true };
 };

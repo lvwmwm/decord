@@ -1,12 +1,12 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8477
+// Function ID: 8478
 // Name: FramePreviewOverrideStore
-// Dependencies: [5, 17, 8473, 3, 8474, 1151, 8475, 8479, 560, 2]
+// Dependencies: [5, 17, 8478, 3, 8479, 1155, 8480, 8484, 562, 2]
 
-// Module 8472 (FramePreviewOverrideStore)
+// Module 8477 (FramePreviewOverrideStore)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeFileModuleDefault from "NativeFileModule" /* 1151 */;
-import FileManagerUtils from "FileManagerUtils" /* 8474 */;
+import NativeFileModuleDefault from "NativeFileModule" /* 1155 */;
+import FileManagerUtils from "FileManagerUtils" /* 8479 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -56,7 +56,7 @@ let closure_11 = async function _buildOverride(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -224,16 +224,16 @@ let closure_11 = async function _buildOverride(arg0) {
   })();
 };
 const Image = fn(17).Image;
-const FrameOverrideConstants = fn(8473);
+const FrameOverrideConstants = fn(8478);
 ({ MANIFEST_NAME: hasOwnProperty, OVERRIDE_DIR: metroRequire } = FrameOverrideConstants);
 let closure_7 = new LoggerDefault("FramePreviewOverrideStore");
 let closure_8 = 0;
-const module_560 = fn(560);
+const module_562 = fn(562);
 const tmp3 = new LoggerDefault("FramePreviewOverrideStore");
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideStore.tsx");
 
-export const useFramePreviewOverrideStore = module_560.create((arg0) => {
+export const useFramePreviewOverrideStore = module_562.create((arg0) => {
   closure_0 = arg0;
   let obj = { override: null, status: "idle", error: null, loadFromDevice: null, clear: null };
   closure_1 = asyncGeneratorStep(async (arg0, value) => {
@@ -247,7 +247,7 @@ export const useFramePreviewOverrideStore = module_560.create((arg0) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -294,7 +294,7 @@ export const useFramePreviewOverrideStore = module_560.create((arg0) => {
           closure_128_5 = closure_2;
           if (closure_128_1()) {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else {
             const _Error = Error;
             if (closure_128_5 instanceof Error) {
@@ -322,7 +322,7 @@ export const useFramePreviewOverrideStore = module_560.create((arg0) => {
             if (closure_128_1()) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else if (null == closure_128_2) {
               closure_129_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
               c3 = 0;
@@ -366,7 +366,7 @@ export const useFramePreviewOverrideStore = module_560.create((arg0) => {
           }
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp44) {
         closure_2 = tmp44;

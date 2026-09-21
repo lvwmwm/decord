@@ -1,42 +1,78 @@
-// Module ID: 17299
-// Function ID: 17300
+// Module ID: 17302
+// Function ID: 17303
 // Name: useGuildEligibleForStageChannels
-// Dependencies: [2063, 1074, 504, 2]
-// Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
+// Dependencies: [2067, 1078, 558, 568, 504, 2]
+// Exports: isGuildEligibleForStageChannels
 
-// Module 17299 (useGuildEligibleForStageChannels)
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 17302 (useGuildEligibleForStageChannels)
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
-
-export const isGuildEligibleForStageChannels = function isGuildEligibleForStageChannels(id) {
+const GuildFeatures = fn(1078).GuildFeatures;
+const ReactCompilerGating = fn(558);
+function isGuildEligibleForStageChannels(id) {
   let tmp = arg1;
   if (arg1 === undefined) {
     const items = [GuildStore];
     tmp = items;
   }
   [obj] = tmp;
-  const guild = obj.getGuild(id);
+  guild = obj.getGuild(id);
   let hasItem;
   if (guild != null) {
     const features = guild.features;
     hasItem = features.has(GuildFeatures.COMMUNITY);
   }
   return Boolean(hasItem);
-};
-export const useGuildEligibleForStageChannels = function useGuildEligibleForStageChannels(arg0) {
+}
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
+
+export { isGuildEligibleForStageChannels };
+export const useGuildEligibleForStageChannels = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      const items = [GuildStore];
+      [obj] = items;
+      guild = obj.getGuild(closure_0);
+      let hasItem;
+      if (guild != null) {
+        const features = guild.features;
+        hasItem = features.has(GuildFeatures.COMMUNITY);
+      }
+      return Boolean(hasItem);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
   _require = arg0;
   let items = [GuildStore];
   const items1 = [arg0];
   return require("initialize").useStateFromStores(items, () => {
     const items = [GuildStore];
     [obj] = items;
-    const guild = obj.getGuild(closure_0);
+    guild = obj.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
@@ -44,4 +80,4 @@ export const useGuildEligibleForStageChannels = function useGuildEligibleForStag
     }
     return Boolean(hasItem);
   }, items1);
-};
+});

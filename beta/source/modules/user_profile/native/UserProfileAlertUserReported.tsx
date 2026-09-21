@@ -1,20 +1,50 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12789
+// Function ID: 12790
 // Name: UserProfileAlertUserReported
-// Dependencies: [19, 21, 5114, 1115, 5114, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 1119, 5116, 5116, 2]
 
-// Module 12878 (UserProfileAlertUserReported)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5114 */;
+// Module 12789 (UserProfileAlertUserReported)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import AlertModal from "AlertModal" /* 5116 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAlertUserReported.tsx");
 
-export default function UserProfileAlertUserReported() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.IwHU3R);
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t.qxyRaq);
+    cResult[0] = stringResult;
+    cResult[1] = stringResult1;
+    tmp4 = stringResult;
+    tmp5 = stringResult1;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { title: tmp4, content: tmp5, actions: null };
+    const obj3 = { children: null };
+    const obj4 = { text: null };
+    const intl3 = tmp(1119).intl;
+    obj4.text = intl3.string(tmp(1119).t.BddRzS);
+    obj3.children = jsx(tmp(5116).AlertActionButton, { text: null }, "okay");
+    obj2.actions = jsx(tmp(5116).AlertActions, { children: null });
+    const tmp10 = jsx(tmp(5116).AlertModal, { title: tmp4, content: tmp5, actions: null });
+    cResult[2] = tmp10;
+    let tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => {
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.IwHU3R);
@@ -27,4 +57,4 @@ export default function UserProfileAlertUserReported() {
   obj2.children = jsx(AlertModal.AlertActionButton, { text: null }, "okay");
   obj.actions = jsx(AlertModal.AlertActions, { children: null });
   return jsx(AlertModal.AlertModal, { title: null, content: null, actions: null });
-};
+});

@@ -1,18 +1,18 @@
-// Module ID: 7866
-// Function ID: 7867
+// Module ID: 7871
+// Function ID: 7872
 // Name: UserProfilePersonalWidget
-// Dependencies: [1372, 1374, 7867, 4576, 2027, 1370, 1331, 7858, 1969, 2]
+// Dependencies: [1376, 1378, 7872, 4579, 2031, 1374, 1335, 7863, 1973, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7866 (UserProfilePersonalWidget)
-import _modDef1331 from "module_1331" /* 1331 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import WidgetType from "WidgetType" /* 7858 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7867 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7871 (UserProfilePersonalWidget)
+import _modDef1335 from "module_1335" /* 1335 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1973 */;
+import dismissible_content from "dismissible_content" /* 2031 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
+import WidgetType from "WidgetType" /* 7863 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7872 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function createDefaultFieldsSection() {
@@ -144,7 +144,7 @@ function serializeSection(type) {
     return type;
   }
 }
-const PremiumTypes = fn(1374).PremiumTypes;
+const PremiumTypes = fn(1378).PremiumTypes;
 let closure_5 = 0;
 let UserProfilePersonalWidget;
 class UserProfilePersonalWidget {
@@ -243,12 +243,12 @@ prototype["isEqual"] = function isEqual(header) {
             if (tmp13) {
               image2 = image2.image;
               image = image.image;
-              tmp13 = _modDef1331(image2, image);
+              tmp13 = _modDef1335(image2, image);
             }
             sum = sum + 1;
             num2 = sum;
             flag = true;
-          } else if (tmp16(7867).PersonalWidgetSectionType.FIELDS !== type) {
+          } else if (tmp16(7872).PersonalWidgetSectionType.FIELDS !== type) {
             flag = false;
           }
           tmp16 = require;
@@ -266,7 +266,7 @@ prototype["isEqual"] = function isEqual(header) {
                 tmp8 = tmp6.description === tmp7.description;
               }
               if (tmp8) {
-                tmp8 = _modDef1331(tmp6.image, tmp7.image);
+                tmp8 = _modDef1335(tmp6.image, tmp7.image);
               }
               flag2 = false;
               if (!tmp8) {

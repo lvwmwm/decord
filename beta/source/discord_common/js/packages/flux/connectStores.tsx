@@ -1,11 +1,12 @@
-// Module ID: 565
-// Function ID: 566
+// Module ID: 567
+// Function ID: 568
 // Name: connectStores
-// Dependencies: [109, 19, 21, 564, 558, 2]
+// Dependencies: [109, 19, 21, 566, 560, 558, 568, 2]
 // Exports: default
 
-// Module 565 (connectStores)
-import BatchedStoreListener from "BatchedStoreListener" /* 564 */;
+// Module 567 (connectStores)
+import BatchedStoreListener from "BatchedStoreListener" /* 566 */;
+import c from "c" /* 568 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -127,7 +128,20 @@ export default function connectStores(items, arg1, arg2) {
           return <closure_0 ref={forwardedConnectStoresRef} />;
         };
         FluxContainer.displayName = combined;
-        const forwardRefResult = React.forwardRef((childProps, forwardedConnectStoresRef) => <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />);
+        const forwardRefResult = React.forwardRef(items(558).isReactCompilerEnabled() ? ((childProps, forwardedConnectStoresRef) => {
+          const cResult = c.c(3);
+          if (cResult[0] === childProps) {
+            if (cResult[1] === forwardedConnectStoresRef) {
+              let tmp2 = cResult[2];
+            }
+            return tmp2;
+          }
+          const tmp3 = <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />;
+          cResult[0] = childProps;
+          cResult[1] = forwardedConnectStoresRef;
+          cResult[2] = tmp3;
+          tmp2 = tmp3;
+        }) : ((childProps, forwardedConnectStoresRef) => <FluxContainer childProps={arg0} forwardedConnectStoresRef={arg1} />));
         forwardRefResult.displayName = "ForwardRef(" + combined + ")";
         return forwardRefResult;
       };

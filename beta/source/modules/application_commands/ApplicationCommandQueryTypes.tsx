@@ -1,9 +1,9 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 9410
+// Function ID: 9411
 // Name: ApplicationCommandQueryTypes
 // Dependencies: [2]
 
-// Module 9412 (ApplicationCommandQueryTypes)
+// Module 9410 (ApplicationCommandQueryTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandQueryTypes.tsx");

@@ -1,858 +1,234 @@
 // Module ID: 1847
 // Function ID: 1848
-// Dependencies: [5, 19, 21, 1637, 1845, 1848, 1831, 1827, 1627, 1849, 1850, 1851]
+// Dependencies: [19, 17, 21, 1641, 1848, 1835, 1831, 1631, 1849]
 
 // Module 1847
-import cancelAnimation from "cancelAnimation" /* 1637 */;
-import _mod1849 from "module_1849" /* 1849 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _mod17 from "module_17" /* 17 */;
+import jsxProd from "jsxProd" /* 21 */;
+import cancelAnimation from "cancelAnimation" /* 1641 */;
 import noop_mod from "module_19" /* 19 */;
 
-const require = globalThis.__r;
-
-require = fn;
-let noop = fn(19);
-({ useCallback: closure_4, useEffect: hasOwnProperty, useImperativeHandle: metroRequire, useMemo: closure_7, forwardRef } = noop);
 let noop = noop_mod;
-const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-let closure_11 = { code: "function pnpm_indexTsx1(e,animated=false){const{enabled,layout,scrollViewTarget,height,keyboardHeight,bottomOffset,interpolate,initialKeyboardSize,scrollDistanceWithRespectToSnapPoints,scrollPosition,snapToOffsets,scrollTo,scrollViewAnimatedRef,scrollViewPageY}=this.__closure;var _layout$value,_layout$value2,_layout$value3;if(!enabled){return 0;}if(((_layout$value=layout.value)===null||_layout$value===void 0?void 0:_layout$value.parentScrollViewTarget)!==scrollViewTarget.value){return 0;}const visibleRect=height-keyboardHeight.value;const absoluteY=((_layout$value2=layout.value)===null||_layout$value2===void 0?void 0:_layout$value2.layout.absoluteY)||0;const inputHeight=((_layout$value3=layout.value)===null||_layout$value3===void 0?void 0:_layout$value3.layout.height)||0;const point=absoluteY+inputHeight;if(visibleRect-point<=bottomOffset){const relativeScrollTo=keyboardHeight.value-(height-point)+bottomOffset;const interpolatedScrollTo=interpolate(e,[initialKeyboardSize.value,keyboardHeight.value],[0,scrollDistanceWithRespectToSnapPoints(relativeScrollTo+scrollPosition.value,snapToOffsets)-scrollPosition.value]);const targetScrollY=Math.max(interpolatedScrollTo,0)+scrollPosition.value;scrollTo(scrollViewAnimatedRef,0,targetScrollY,animated);return interpolatedScrollTo;}if(point<scrollViewPageY.value){const positionOnScreen=visibleRect-bottomOffset;const topOfScreen=scrollPosition.value+point;scrollTo(scrollViewAnimatedRef,0,topOfScreen-positionOnScreen,animated);}return 0;}" };
-let closure_12 = { code: "function pnpm_indexTsx2(e){const{mode,keyboardWillAppear,ghostViewSpace,scrollTo,scrollViewAnimatedRef,scrollPosition,interpolate,initialKeyboardSize,keyboardHeight}=this.__closure;if(mode===\"layout\"){return false;}if(!keyboardWillAppear.value&&ghostViewSpace.value>0){scrollTo(scrollViewAnimatedRef,0,scrollPosition.value-interpolate(e,[initialKeyboardSize.value,keyboardHeight.value],[ghostViewSpace.value,0]),false);return true;}return false;}" };
-let closure_13 = { code: "function pnpm_indexTsx3(newPosition){const{scrollPosition,maybeScroll,keyboardHeight}=this.__closure;const prevScroll=scrollPosition.value;scrollPosition.value=newPosition;maybeScroll(keyboardHeight.value,true);scrollPosition.value=prevScroll;}" };
-let value2 = { code: "function pnpm_indexTsx4(e){const{interpolate,keyboardHeight,extraKeyboardSpace,currentKeyboardFrameHeight}=this.__closure;const keyboardFrame=interpolate(e.height,[0,keyboardHeight.value],[0,keyboardHeight.value+extraKeyboardSpace]);currentKeyboardFrameHeight.value=keyboardFrame;}" };
-let closure_15 = { code: "function pnpm_indexTsx5(){const{lastSelection,input,layout,clamp}=this.__closure;var _lastSelection$value,_input$value;const customHeight=(_lastSelection$value=lastSelection.value)===null||_lastSelection$value===void 0?void 0:_lastSelection$value.selection.end.y;if(!((_input$value=input.value)!==null&&_input$value!==void 0&&_input$value.layout)||!customHeight){return false;}layout.value={...input.value,layout:{...input.value.layout,height:clamp(customHeight,0,input.value.layout.height)}};return true;}" };
-let closure_16 = { code: "function pnpm_indexTsx6(){const{layout,updateLayoutFromSelection,performScrollWithPositionRestoration,position}=this.__closure;const prevLayout=layout.value;if(!updateLayoutFromSelection()){return;}performScrollWithPositionRestoration(position.value);layout.value=prevLayout;}" };
-let value3 = { code: "function pnpm_indexTsx7(){const{scrollFromCurrentPosition}=this.__closure;scrollFromCurrentPosition();}" };
-let closure_18 = { code: "function pnpm_indexTsx8(e){const{lastSelection,selectionUpdatedSinceHide,pendingSelectionForFocus,updateLayoutFromSelection,keyboardWillAppear,keyboardHeight,position,maybeScroll,scrollFromCurrentPosition,onChangeTextHandler}=this.__closure;var _lastSelection$value,_lastSelection$value2;const lastTarget=(_lastSelection$value=lastSelection.value)===null||_lastSelection$value===void 0?void 0:_lastSelection$value.target;const latestSelection=(_lastSelection$value2=lastSelection.value)===null||_lastSelection$value2===void 0?void 0:_lastSelection$value2.selection;lastSelection.value=e;selectionUpdatedSinceHide.value=true;if(e.target!==lastTarget||pendingSelectionForFocus.value){if(pendingSelectionForFocus.value){pendingSelectionForFocus.value=false;updateLayoutFromSelection();if(!keyboardWillAppear.value&&keyboardHeight.value>0){position.value+=maybeScroll(keyboardHeight.value,true);}}return;}if(e.selection.end.position===e.selection.start.position&&(latestSelection===null||latestSelection===void 0?void 0:latestSelection.end.y)!==e.selection.end.y){return scrollFromCurrentPosition();}if(e.selection.start.position!==e.selection.end.position){return scrollFromCurrentPosition();}onChangeTextHandler();}" };
-const value4 = { code: "function pnpm_indexTsx9(e){const{keyboardHeight,keyboardWillAppear,tag,initialKeyboardSize,scrollPosition,scrollBeforeKeyboardMovement,pendingSelectionForFocus,position,mode,syncKeyboardFrame,lastSelection,selectionUpdatedSinceHide,updateLayoutFromSelection,input,layout,maybeScroll,ghostViewSpace,scrollViewLayout,scrollViewContentSize}=this.__closure;const keyboardWillChangeSize=keyboardHeight.value!==e.height&&e.height>0;keyboardWillAppear.value=e.height>0&&keyboardHeight.value===0;const keyboardWillHide=e.height===0;const focusWasChanged=tag.value!==e.target&&e.target!==-1||keyboardWillChangeSize;if(keyboardWillChangeSize){initialKeyboardSize.value=keyboardHeight.value;}if(keyboardWillHide){initialKeyboardSize.value=0;scrollPosition.value=scrollBeforeKeyboardMovement.value;pendingSelectionForFocus.value=false;}if(keyboardWillAppear.value||keyboardWillChangeSize||focusWasChanged){scrollPosition.value=position.value;keyboardHeight.value=e.height;if(mode===\"insets\"){syncKeyboardFrame(e);}}if(focusWasChanged){var _lastSelection$value;tag.value=e.target;if(((_lastSelection$value=lastSelection.value)===null||_lastSelection$value===void 0?void 0:_lastSelection$value.target)===e.target&&selectionUpdatedSinceHide.value){updateLayoutFromSelection();pendingSelectionForFocus.value=false;}else{var _lastSelection$value2;if(((_lastSelection$value2=lastSelection.value)===null||_lastSelection$value2===void 0?void 0:_lastSelection$value2.target)===e.target){updateLayoutFromSelection();}else if(input.value){layout.value=input.value;}pendingSelectionForFocus.value=true;}scrollBeforeKeyboardMovement.value=position.value;}if(focusWasChanged&&!keyboardWillAppear.value){if(!pendingSelectionForFocus.value){position.value+=maybeScroll(e.height,true);}}if(mode===\"insets\"){ghostViewSpace.value=position.value+scrollViewLayout.value.height-scrollViewContentSize.value.height;if(ghostViewSpace.value>0){scrollPosition.value=position.value;}}}" };
-let closure_20 = { code: "function pnpm_indexTsx10(e){const{removeGhostPadding,mode,syncKeyboardFrame,disableScrollOnKeyboardHide,keyboardWillAppear,maybeScroll}=this.__closure;if(removeGhostPadding(e.height)){return;}if(mode===\"layout\"){syncKeyboardFrame(e);}if(!disableScrollOnKeyboardHide||keyboardWillAppear.value){maybeScroll(e.height);}}" };
-let closure_21 = { code: "function pnpm_indexTsx11(e){const{removeGhostPadding,keyboardHeight,scrollPosition,position,selectionUpdatedSinceHide,keyboardWillAppear,pendingSelectionForFocus,syncKeyboardFrame}=this.__closure;removeGhostPadding(e.height);keyboardHeight.value=e.height;scrollPosition.value=position.value;if(e.height===0){selectionUpdatedSinceHide.value=false;}else if(keyboardWillAppear.value){pendingSelectionForFocus.value=false;}syncKeyboardFrame(e);}" };
-let closure_22 = { code: "function pnpm_indexTsx12(){const{scrollFromCurrentPosition}=this.__closure;scrollFromCurrentPosition();}" };
-let closure_23 = { code: "function pnpm_indexTsx13(){const{input}=this.__closure;return input.value;}" };
-let closure_24 = { code: "function pnpm_indexTsx14(current,previous){const{scrollFromCurrentPosition}=this.__closure;if((current===null||current===void 0?void 0:current.target)===(previous===null||previous===void 0?void 0:previous.target)&&(current===null||current===void 0?void 0:current.layout.height)!==(previous===null||previous===void 0?void 0:previous.layout.height)){scrollFromCurrentPosition();}}" };
-let closure_25 = { code: "function pnpm_indexTsx15(){const{enabled,currentKeyboardFrameHeight}=this.__closure;return enabled?currentKeyboardFrameHeight.value:0;}" };
-const value5 = { code: "function pnpm_indexTsx16(){const{enabled,mode,currentKeyboardFrameHeight}=this.__closure;return enabled&&mode===\"layout\"?{paddingBottom:currentKeyboardFrameHeight.value+1}:{};}" };
+({ useCallback: c3, useMemo: closure_4, forwardRef } = noop);
+let noop = noop_mod;
+const View = _mod17.View;
+const jsx = jsxProd.jsx;
+let closure_8 = { x: 0, y: 0, width: 0, height: 0 };
+let closure_9 = { code: "function pnpm_indexTsx1(){const{initialFrame,defaultLayout}=this.__closure;return initialFrame.value||defaultLayout;}" };
+let closure_10 = { code: "function pnpm_indexTsx2(){const{screenHeight,keyboard,keyboardVerticalOffset,frame}=this.__closure;const keyboardY=screenHeight-keyboard.heightWhenOpened.value-keyboardVerticalOffset;return Math.max(frame.value.y+frame.value.height-keyboardY,0);}" };
+let closure_11 = { code: "function pnpm_indexTsx3(value){const{interpolate,relativeKeyboardHeight}=this.__closure;return interpolate(value,[0,1],[0,relativeKeyboardHeight()]);}" };
+let __initData = { code: "function pnpm_indexTsx4(layout){const{keyboard,initialFrame,behavior}=this.__closure;if(keyboard.isClosed.value||initialFrame.value===null||behavior!==\"height\"){initialFrame.value=layout;}}" };
+let __initData2 = { code: "function pnpm_indexTsx5(){const{enabled,interpolateToRelativeKeyboardHeight,keyboard,translate,padding,frame,behavior}=this.__closure;if(!enabled){return{};}const bottom=interpolateToRelativeKeyboardHeight(keyboard.progress.value);const translateY=interpolateToRelativeKeyboardHeight(translate.value);const paddingBottom=interpolateToRelativeKeyboardHeight(padding.value);const height=frame.value.height-bottom;switch(behavior){case\"height\":if(!keyboard.isClosed.value&&height>0){return{height:height,flex:0};}return{};case\"position\":return{bottom:bottom};case\"padding\":return{paddingBottom:bottom};case\"translate-with-padding\":return{paddingTop:paddingBottom,transform:[{translateY:-translateY}]};default:return{};}}" };
 
-export default forwardRef((bottomOffset, arg1) => {
-  ({ children, onLayout } = bottomOffset);
-  _require = onLayout;
-  let num = bottomOffset.bottomOffset;
+export default forwardRef((behavior, arg1) => {
+  behavior = behavior.behavior;
+  ({ children, enabled } = behavior);
+  if (enabled === undefined) {
+    enabled = true;
+  }
+  let num = behavior.keyboardVerticalOffset;
   if (num === undefined) {
     num = 0;
   }
-  let flag = bottomOffset.disableScrollOnKeyboardHide;
+  let flag = behavior.automaticOffset;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = bottomOffset.enabled;
-  if (flag2 === undefined) {
-    flag2 = true;
-  }
-  let num2 = bottomOffset.extraKeyboardSpace;
-  if (num2 === undefined) {
-    num2 = 0;
-  }
-  let str = bottomOffset.mode;
-  if (str === undefined) {
-    str = "insets";
-  }
-  let ScrollView = bottomOffset.ScrollViewComponent;
-  if (ScrollView === undefined) {
-    ScrollView = num(flag[3]).ScrollView;
-  }
-  const snapToOffsets = bottomOffset.snapToOffsets;
-  let merged = Object.assign(bottomOffset, Object.assign({ children: 0, onLayout: 0, bottomOffset: 0, disableScrollOnKeyboardHide: 0, enabled: 0, extraKeyboardSpace: 0, mode: 0, ScrollViewComponent: 0, snapToOffsets: 0 }));
-  let ref;
-  closure_29 = undefined;
-  closure_30 = undefined;
-  closure_31 = undefined;
-  closure_32 = undefined;
-  closure_33 = undefined;
-  closure_34 = undefined;
-  closure_35 = undefined;
-  closure_36 = undefined;
-  closure_37 = undefined;
-  const animatedRef = require("cancelAnimation").useAnimatedRef();
-  ref = ref.useRef(null);
-  const tmp8 = num(flag[4])(animatedRef, ref);
-  let obj = require("cancelAnimation");
-  const sharedValue = require("cancelAnimation").useSharedValue(null);
-  let obj2 = require("cancelAnimation");
-  const sharedValue1 = require("cancelAnimation").useSharedValue(0);
-  let tmp11 = num(flag[5])(animatedRef);
-  const offset = tmp11.offset;
-  let layout = tmp11.layout;
-  const size = tmp11.size;
-  let obj3 = require("cancelAnimation");
-  const sharedValue2 = require("cancelAnimation").useSharedValue(0);
-  let obj4 = require("cancelAnimation");
-  const sharedValue3 = require("cancelAnimation").useSharedValue(0);
-  let obj5 = require("cancelAnimation");
-  const sharedValue4 = require("cancelAnimation").useSharedValue(false);
-  let obj6 = require("cancelAnimation");
-  const sharedValue5 = require("cancelAnimation").useSharedValue(-1);
-  const obj7 = require("cancelAnimation");
-  const sharedValue6 = require("cancelAnimation").useSharedValue(0);
-  const obj8 = require("cancelAnimation");
-  const sharedValue7 = require("cancelAnimation").useSharedValue(0);
-  const obj9 = require("cancelAnimation");
-  const reanimatedFocusedInput = require("module_1831").useReanimatedFocusedInput();
-  const input = reanimatedFocusedInput.input;
-  const update = reanimatedFocusedInput.update;
-  const obj10 = require("module_1831");
-  const sharedValue8 = require("cancelAnimation").useSharedValue(null);
-  const obj11 = require("cancelAnimation");
-  const sharedValue9 = require("cancelAnimation").useSharedValue(null);
-  const obj12 = require("cancelAnimation");
-  const sharedValue10 = require("cancelAnimation").useSharedValue(-1);
-  const obj13 = require("cancelAnimation");
-  const sharedValue11 = require("cancelAnimation").useSharedValue(false);
-  const obj14 = require("cancelAnimation");
-  const sharedValue12 = require("cancelAnimation").useSharedValue(false);
-  const obj15 = require("cancelAnimation");
-  const sharedValue13 = require("cancelAnimation").useSharedValue(0);
-  const obj16 = require("cancelAnimation");
-  let height = require("module_1831").useWindowDimensions().height;
-  _require = flag2(function*(arg0, value) {
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_2 = tmp3;
-            closure_1 = tmp7;
-            let y;
-            const findNodeHandleResult = closure_0(flag[7]).findNodeHandle(ref.current);
-            sharedValue.value = findNodeHandleResult;
-            if (closure_0 != null) {
-              closure_0(tmp20);
-            }
-            if (null !== findNodeHandleResult) {
-              c3 = 1;
-              const KeyboardControllerNative = tmp21(tmp22[8]).KeyboardControllerNative;
-              c4 = 2;
-              c5 = 1;
-              const obj4 = { value: KeyboardControllerNative.viewPositionInWindow(findNodeHandleResult), done: false };
-              return obj4;
-            }
-            const obj5 = closure_0(flag[7]);
-            tmp20 = closure_0;
-            tmp21 = closure_0;
-            tmp22 = flag;
-          }
-        } else {
-          if (1 === tmp7) {
-            c3 = 0;
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 !== 2) {
-            y = value.y;
-            sharedValue13.value = y;
-            c3 = 0;
-          }
-          c3 = 0;
-          c5 = 3;
-          const obj = { value, done: true };
-          return obj;
-        }
-        c5 = 3;
-      } catch (tmp13) {
-        if (tmp4 === c3) {
-          c5 = tmp2;
-          throw tmp13;
-        } else {
-          c4 = tmp;
-        }
-      }
-    }
-  });
-  let items = [onLayout];
-  const tmp25 = num2(function(arg0) {
-    const self = this;
-    const apply = closure_0.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-    } else {
-      applyArgumentsResult = apply(self, arguments);
-    }
-    return applyArgumentsResult;
-  }, items);
-  class M {
-    constructor(arg0) {
-      flag = arg1;
-      if (arg1 === undefined) {
-        flag = false;
-      }
-      if (c3) {
-        iter = closure_22;
-        value = closure_22.value;
-        tmp = null;
-        prop = undefined;
-        if (value != null) {
-          prop = value.parentScrollViewTarget;
-        }
-        tmp3 = closure_9;
-        if (prop !== closure_9.value) {
-          num8 = 0;
-          return 0;
-        } else {
-          iter2 = closure_15;
-          diff = height - closure_15.value;
-          value1 = iter.value;
-          num2 = undefined;
-          tmp34 = height;
-          if (value1 != null) {
-            num2 = value1.layout.absoluteY;
-          }
-          if (!num2) {
-            num2 = 0;
-          }
-          value4 = iter.value;
-          num3 = undefined;
-          if (value4 != null) {
-            num3 = value4.layout.height;
-          }
-          if (!num3) {
-            num3 = 0;
-          }
-          sum = num2 + num3;
-          tmp5 = c1;
-          if (diff - sum <= c1) {
-            tmp16 = bottomOffset;
-            tmp18 = closure_0;
-            tmp19 = closure_2;
-            sum1 = iter2.value - (tmp34 - sum) + tmp5;
-            obj2 = closure_0(closure_2[3]);
-            tmp20 = closure_18;
-            items = [, ];
-            items[0] = closure_18.value;
-            items[1] = iter2.value;
-            tmp21 = closure_0;
-            tmp22 = closure_2;
-            obj3 = closure_0(closure_2[9]);
-            tmp23 = closure_10;
-            tmp24 = snapToOffsets;
-            items1 = [0];
-            items1[1] = obj3.scrollDistanceWithRespectToSnapPoints(sum1 + closure_10.value, snapToOffsets) - closure_10.value;
-            interpolateResult = obj2.interpolate(bottomOffset, items, items1);
-            tmp26 = globalThis;
-            _Math = Math;
-            num6 = 0;
-            tmp28 = closure_0;
-            tmp29 = closure_2;
-            sum2 = Math.max(interpolateResult, 0) + closure_10.value;
-            obj4 = closure_0(closure_2[3]);
-            tmp30 = closure_7;
-            tmp31 = obj4;
-            num7 = 0;
-            tmp32 = flag;
-            scrollToResult = obj4.scrollTo(closure_7, 0, sum2, flag);
-            return interpolateResult;
-          } else {
-            tmp6 = closure_27;
-            if (sum < closure_27.value) {
-              tmp8 = closure_10;
-              tmp10 = closure_0;
-              tmp11 = closure_2;
-              diff1 = diff - tmp5;
-              sum3 = closure_10.value + sum;
-              obj = closure_0(closure_2[3]);
-              tmp12 = closure_7;
-              num4 = 0;
-              tmp13 = obj;
-              tmp14 = flag;
-              scrollToResult1 = obj.scrollTo(closure_7, 0, sum3 - diff1, flag);
-            }
-            num5 = 0;
-            return 0;
-          }
-        }
-      } else {
-        num = 0;
-        return 0;
-      }
+  ({ style, onLayout } = behavior);
+  let merged = Object.assign(behavior, Object.assign({ behavior: 0, children: 0, contentContainerStyle: 0, enabled: 0, keyboardVerticalOffset: 0, automaticOffset: 0, style: 0, onLayout: 0 }));
+  let derivedValue;
+  let translate;
+  let padding;
+  let keyboardAnimation;
+  let height;
+  __initData = undefined;
+  __initData2 = undefined;
+  closure_14 = undefined;
+  let animatedStyle;
+  let contentContainerStyle;
+  const sharedValue = behavior(num[3]).useSharedValue(null);
+  const ref = sharedValue.useRef(null);
+  let obj = behavior(num[3]);
+  class K {
+    constructor() {
+      tmp = closure_5.value || closure_8;
+      return tmp;
     }
   }
-  const obj17 = require("module_1831");
-  M.__closure = { enabled: flag2, layout: sharedValue8, scrollViewTarget: sharedValue, height, keyboardHeight: sharedValue3, bottomOffset: num, interpolate: require("cancelAnimation").interpolate, initialKeyboardSize: sharedValue6, scrollDistanceWithRespectToSnapPoints: require("module_1849").scrollDistanceWithRespectToSnapPoints, scrollPosition: sharedValue1, snapToOffsets, scrollTo: require("cancelAnimation").scrollTo, scrollViewAnimatedRef: animatedRef, scrollViewPageY: sharedValue13 };
-  M.__workletHash = 1454504363777;
-  M.__initData = offset;
-  let items1 = [num, flag2, height, snapToOffsets];
-  const tmp26 = num2(M, items1);
-  closure_29 = tmp26;
-  class Y {
-    constructor(arg0) {
-      flag = "layout" !== insets;
-      if (flag) {
-        tmp = closure_16;
-        flag = !closure_16.value;
-      }
-      if (flag) {
-        tmp2 = closure_24;
-        num = 0;
-        flag = closure_24.value > 0;
-      }
-      if (flag) {
-        tmp3 = bottomOffset;
-        tmp4 = closure_0;
-        tmp5 = closure_2;
-        obj = closure_0(closure_2[3]);
-        tmp6 = closure_7;
-        tmp7 = closure_10;
-        obj2 = closure_0(closure_2[3]);
-        tmp8 = closure_18;
-        items = [, ];
-        items[0] = closure_18.value;
-        tmp9 = closure_15;
-        items[1] = closure_15.value;
-        tmp10 = closure_24;
-        items1 = [, ];
-        items1[0] = closure_24.value;
-        num2 = 0;
-        items1[1] = 0;
-        flag2 = false;
-        tmp11 = obj;
-        tmp12 = closure_7;
-        num3 = 0;
-        scrollToResult = obj.scrollTo(closure_7, 0, closure_10.value - obj2.interpolate(bottomOffset, items, items1), false);
-        flag = true;
-      }
-      return flag;
+  K.__closure = { initialFrame: sharedValue, defaultLayout: translate };
+  K.__workletHash = 4703969179658;
+  K.__initData = padding;
+  derivedValue = behavior(num[3]).useDerivedValue(K);
+  let obj2 = behavior(num[3]);
+  let obj3 = { initialFrame: sharedValue, defaultLayout: translate };
+  const translateAnimation = behavior(num[4]).useTranslateAnimation();
+  translate = translateAnimation.translate;
+  padding = translateAnimation.padding;
+  let obj4 = behavior(num[4]);
+  keyboardAnimation = behavior(num[4]).useKeyboardAnimation();
+  let obj5 = behavior(num[4]);
+  height = behavior(num[5]).useWindowDimensions().height;
+  class V {
+    constructor() {
+      return Math.max(closure_7.value.y + closure_7.value.height - (height - closure_10.heightWhenOpened.value - c2), 0);
     }
   }
-  const obj18 = { enabled: flag2, layout: sharedValue8, scrollViewTarget: sharedValue, height, keyboardHeight: sharedValue3, bottomOffset: num, interpolate: require("cancelAnimation").interpolate, initialKeyboardSize: sharedValue6, scrollDistanceWithRespectToSnapPoints: require("module_1849").scrollDistanceWithRespectToSnapPoints, scrollPosition: sharedValue1, snapToOffsets, scrollTo: require("cancelAnimation").scrollTo, scrollViewAnimatedRef: animatedRef, scrollViewPageY: sharedValue13 };
-  Y.__closure = { mode: str, keyboardWillAppear: sharedValue4, ghostViewSpace: sharedValue10, scrollTo: require("cancelAnimation").scrollTo, scrollViewAnimatedRef: animatedRef, scrollPosition: sharedValue1, interpolate: require("cancelAnimation").interpolate, initialKeyboardSize: sharedValue6, keyboardHeight: sharedValue3 };
-  Y.__workletHash = 17351526068375;
-  Y.__initData = layout;
-  const items2 = [str];
-  const tmp27 = num2(Y, items2);
-  closure_30 = tmp27;
-  class I {
-    constructor(arg0) {
-      closure_10.value = bottomOffset;
-      tmp = closure_29(closure_15.value, true);
-      closure_10.value = closure_10.value;
-      return;
-    }
-  }
-  I.__closure = { scrollPosition: sharedValue1, maybeScroll: tmp26, keyboardHeight: sharedValue3 };
-  I.__workletHash = 1481901193395;
-  I.__initData = size;
-  const items3 = [sharedValue1, sharedValue3, tmp26];
-  const tmp28 = num2(I, items3);
-  closure_31 = tmp28;
-  class B {
+  V.__closure = { screenHeight: height, keyboard: keyboardAnimation, keyboardVerticalOffset: num, frame: derivedValue };
+  V.__workletHash = 10539040422992;
+  V.__initData = keyboardAnimation;
+  let items = [height, num];
+  const tmp8 = flag(V, items);
+  __initData = tmp8;
+  class C {
     constructor(arg0) {
       obj = closure_0(closure_2[3]);
       items = [0];
-      items[1] = closure_15.value;
-      items1 = [0];
-      items1[1] = closure_15.value + c4;
-      closure_14.value = obj.interpolate(bottomOffset.height, items, items1);
-      return;
+      items[1] = closure_12();
+      return obj.interpolate(behavior, [0, 1], items);
     }
   }
-  const obj19 = { mode: str, keyboardWillAppear: sharedValue4, ghostViewSpace: sharedValue10, scrollTo: require("cancelAnimation").scrollTo, scrollViewAnimatedRef: animatedRef, scrollPosition: sharedValue1, interpolate: require("cancelAnimation").interpolate, initialKeyboardSize: sharedValue6, keyboardHeight: sharedValue3 };
-  B.__closure = { interpolate: require("cancelAnimation").interpolate, keyboardHeight: sharedValue3, extraKeyboardSpace: num2, currentKeyboardFrameHeight: sharedValue2 };
-  B.__workletHash = 6643520179794;
-  B.__initData = sharedValue2;
-  const items4 = [num2];
-  const tmp29 = num2(B, items4);
-  closure_32 = tmp29;
-  class G {
-    constructor() {
-      value = closure_23.value;
-      if (value != null) {
-        y = value.selection.end.y;
-      }
-      iter = input;
-      value1 = input.value;
-      layout = undefined;
-      if (value1 != null) {
-        layout = value1.layout;
-      }
-      num = !layout;
-      if (layout) {
-        num = !y;
-      }
-      if (!num) {
-        tmp2 = closure_22;
-        obj = {};
-        tmp3 = obj;
-        merged = Object.assign(iter.value);
-        obj1 = {};
-        tmp5 = obj1;
-        merged1 = Object.assign(iter.value.layout);
-        tmp7 = closure_0;
-        tmp8 = closure_2;
-        obj3 = closure_0(closure_2[3]);
-        num2 = 0;
-        obj1.height = obj3.clamp(y, 0, iter.value.layout.height);
-        obj.layout = obj1;
-        closure_22.value = obj;
-        num = 0;
-      }
-      return !num;
-    }
-  }
-  const obj20 = { interpolate: require("cancelAnimation").interpolate, keyboardHeight: sharedValue3, extraKeyboardSpace: num2, currentKeyboardFrameHeight: sharedValue2 };
-  G.__closure = { lastSelection: sharedValue9, input, layout: sharedValue8, clamp: require("cancelAnimation").clamp };
-  G.__workletHash = 619310634941;
-  G.__initData = sharedValue3;
-  const items5 = [input, sharedValue9, sharedValue8];
-  const tmp30 = num2(G, items5);
-  closure_33 = tmp30;
-  class E {
-    constructor() {
-      tmp = closure_22;
-      if (closure_33()) {
-        tmp2 = closure_31;
-        tmp3 = offset;
-        tmp4 = closure_31(offset.value);
-        tmp.value = closure_22.value;
-      }
-      return;
-    }
-  }
-  E.__closure = { layout: sharedValue8, updateLayoutFromSelection: tmp30, performScrollWithPositionRestoration: tmp28, position: offset };
-  E.__workletHash = 11406147562112;
-  E.__initData = sharedValue4;
-  const items6 = [tmp28];
-  const tmp31 = num2(E, items6);
-  closure_34 = tmp31;
-  let fn = function j() {
-    closure_34();
-  };
-  fn.__closure = { scrollFromCurrentPosition: tmp31 };
-  fn.__workletHash = 1300972162638;
-  fn.__initData = sharedValue5;
-  const items7 = [tmp31];
-  const tmp32 = num2(fn, items7);
-  closure_35 = tmp32;
-  const items8 = [tmp32];
-  const tmp33 = animatedRef(() => _mod1849.debounce(closure_35, 200), items8);
-  closure_36 = tmp33;
-  class N {
+  const obj6 = behavior(num[5]);
+  C.__closure = { interpolate: behavior(num[3]).interpolate, relativeKeyboardHeight: tmp8 };
+  C.__workletHash = 11482114301276;
+  C.__initData = height;
+  const items1 = [tmp8];
+  const tmp9 = flag(C, items1);
+  __initData2 = tmp9;
+  class D {
     constructor(arg0) {
-      iter = closure_23;
-      value = closure_23.value;
-      target = undefined;
-      if (value != null) {
-        target = value.target;
+      value = closure_10.isClosed.value;
+      if (!value) {
+        tmp = closure_5;
+        tmp2 = null;
+        value = null === closure_5.value;
       }
-      value1 = iter.value;
-      if (value1 != null) {
-        selection = value1.selection;
+      if (!value) {
+        tmp3 = behavior;
+        str = "height";
+        value = "height" !== behavior;
       }
-      iter.value = bottomOffset;
-      closure_26.value = true;
-      if (bottomOffset.target === target) {
-        tmp16 = closure_25;
-        if (!closure_25.value) {
-          if (bottomOffset.selection.end.position !== bottomOffset.selection.start.position) {
-            if (bottomOffset.selection.start.position === bottomOffset.selection.end.position) {
-              tmp3 = closure_36;
-              tmp4 = closure_36();
+      if (value) {
+        tmp4 = behavior;
+        tmp5 = closure_5;
+        closure_5.value = behavior;
+      }
+      return;
+    }
+  }
+  D.__closure = { keyboard: keyboardAnimation, initialFrame: sharedValue, behavior };
+  D.__workletHash = 12256944793057;
+  D.__initData = __initData;
+  const items2 = [behavior];
+  closure_14 = flag(D, items2);
+  const items3 = [onLayout, flag];
+  const tmp10 = flag((nativeEvent) => {
+    if (onLayout != null) {
+      tmp(nativeEvent);
+    }
+    const layout = nativeEvent.nativeEvent.layout;
+    if (flag) {
+      const findNodeHandleResult = behavior(num[6]).findNodeHandle(ref.current);
+      if (null !== findNodeHandleResult) {
+        const KeyboardControllerNative = behavior(num[7]).KeyboardControllerNative;
+        const viewPositionInWindowResult = KeyboardControllerNative.viewPositionInWindow(findNodeHandleResult);
+        return KeyboardControllerNative.viewPositionInWindow(findNodeHandleResult).then((result) => {
+          const obj3 = {};
+          const merged = Object.assign(layout);
+          ({ x: obj2.x, y: obj2.y } = result);
+          cancelAnimation.runOnUI(closure_14)(obj3);
+        }).catch(() => {
+          cancelAnimation.runOnUI(closure_14)(layout);
+        });
+      }
+      let obj = behavior(num[6]);
+    }
+    return behavior(num[3]).runOnUI(closure_14)(layout);
+  }, items3);
+  const obj7 = { interpolate: behavior(num[3]).interpolate, relativeKeyboardHeight: tmp8 };
+  class F {
+    constructor() {
+      if (c1) {
+        tmp = closure_13;
+        tmp2 = closure_10;
+        tmp3 = closure_13(closure_10.progress.value);
+        tmp4 = translate;
+        tmp6 = padding;
+        tmp5 = closure_13(translate.value);
+        tmp8 = closure_7;
+        diff = closure_7.value.height - tmp3;
+        tmp10 = behavior;
+        str = "height";
+        if ("height" === behavior) {
+          if (!tmp2.isClosed.value) {
+            num = 0;
+            if (diff > 0) {
+              obj1 = { height: null, flex: 0 };
+              obj1.height = diff;
             }
-            return tmp5;
+            return obj1;
+          }
+          obj1 = {};
+        } else {
+          str2 = "position";
+          if ("position" === tmp10) {
+            obj6 = { bottom: null };
+            obj6.bottom = tmp3;
+            return obj6;
           } else {
-            y = undefined;
-            if (selection != null) {
-              y = selection.end.y;
+            str3 = "padding";
+            if ("padding" === tmp10) {
+              obj7 = { paddingBottom: null };
+              obj7.paddingBottom = tmp3;
+              return obj7;
+            } else {
+              str4 = "translate-with-padding";
+              if ("translate-with-padding" === tmp10) {
+                obj = { paddingTop: null, transform: null };
+                obj.paddingTop = tmp7;
+                obj8 = { translateY: null };
+                obj8.translateY = -tmp5;
+                items = [];
+                items[0] = obj8;
+                obj.transform = items;
+                return obj;
+              } else {
+                return {};
+              }
             }
           }
-          tmp6 = closure_34;
-          tmp5 = closure_34();
         }
-      }
-      if (closure_25.value) {
-        flag = false;
-        tmp7.value = false;
-        tmp8 = closure_33;
-        tmp9 = closure_33();
-        tmp10 = closure_16;
-        value4 = closure_16.value;
-        tmp11 = !value4;
-        if (!value4) {
-          tmp12 = closure_15;
-          num = 0;
-          tmp11 = closure_15.value > 0;
-        }
-        if (tmp11) {
-          tmp13 = offset;
-          tmp14 = closure_29;
-          tmp15 = closure_15;
-          offset.value = offset.value + closure_29(closure_15.value, true);
-        }
-      }
-      return;
-    }
-  }
-  N.__closure = { lastSelection: sharedValue9, selectionUpdatedSinceHide: sharedValue12, pendingSelectionForFocus: sharedValue11, updateLayoutFromSelection: tmp30, keyboardWillAppear: sharedValue4, keyboardHeight: sharedValue3, position: offset, maybeScroll: tmp26, scrollFromCurrentPosition: tmp31, onChangeTextHandler: tmp33 };
-  N.__workletHash = 7363285427351;
-  N.__initData = sharedValue6;
-  const items9 = [tmp31, tmp33, tmp30, tmp26];
-  let tmp34 = num2(N, items9);
-  const obj21 = { lastSelection: sharedValue9, input, layout: sharedValue8, clamp: require("cancelAnimation").clamp };
-  const items10 = [tmp34];
-  require("module_1831").useFocusedInputHandler({ onSelectionChange: tmp34 }, items10);
-  const obj22 = require("module_1831");
-  const obj24 = { onStart: null, onMove: null, onEnd: null };
-  class Q {
-    constructor(arg0) {
-      iter = closure_15;
-      tmp = closure_15.value !== bottomOffset.height;
-      if (tmp) {
-        num = 0;
-        tmp = bottomOffset.height > 0;
-      }
-      iter2 = closure_16;
-      iter2.value = bottomOffset.height > 0 && 0 === iter.value;
-      tmp3 = closure_17.value !== bottomOffset.target;
-      tmp2 = closure_17;
-      if (tmp3) {
-        num2 = -1;
-        tmp3 = -1 !== bottomOffset.target;
-      }
-      if (!tmp3) {
-        tmp3 = tmp;
-      }
-      if (tmp) {
-        tmp4 = closure_18;
-        closure_18.value = iter.value;
-      }
-      if (0 === bottomOffset.height) {
-        tmp5 = closure_18;
-        closure_18.value = 0;
-        tmp6 = closure_10;
-        tmp7 = closure_19;
-        closure_10.value = closure_19.value;
-        tmp8 = closure_25;
-        flag = false;
-        closure_25.value = false;
-      }
-      tmp9 = iter2.value || tmp || tmp3;
-      if (tmp9) {
-        tmp10 = closure_10;
-        tmp11 = offset;
-        closure_10.value = offset.value;
-        iter.value = bottomOffset.height;
-        tmp12 = insets;
-        str = "insets";
-        if ("insets" === insets) {
-          tmp13 = closure_32;
-          tmp14 = closure_32(bottomOffset);
-        }
-      }
-      if (!tmp3) {
-        if (tmp3) {
-          tmp3 = !iter2.value;
-        }
-        if (tmp3) {
-          tmp28 = closure_25;
-          if (!closure_25.value) {
-            tmp29 = offset;
-            tmp30 = closure_29;
-            flag4 = true;
-            offset.value = offset.value + closure_29(bottomOffset.height, true);
-          }
-        }
-        tmp31 = insets;
-        str2 = "insets";
-        if ("insets" === insets) {
-          tmp32 = closure_24;
-          tmp33 = layout;
-          tmp34 = size;
-          closure_24.value = offset.value + layout.value.height - size.value.height;
-          if (closure_24.value > 0) {
-            tmp35 = closure_10;
-            closure_10.value = iter5.value;
-          }
-        }
-        return;
       } else {
-        tmp2.value = bottomOffset.target;
-        value = closure_23.value;
-        tmp15 = null;
-        flag2 = undefined;
-        target = undefined;
-        iter3 = closure_23;
-        if (value != null) {
-          target = value.target;
-        }
-        if (target !== bottomOffset.target) {
-          value1 = iter3.value;
-          target1 = undefined;
-          if (value1 != null) {
-            target1 = value1.target;
-          }
-          if (target1 === bottomOffset.target) {
-            tmp20 = closure_33;
-            tmp21 = closure_33();
-          } else if (input.value) {
-            tmp19 = closure_22;
-            closure_22.value = iter4.value;
-          }
-          tmp22 = closure_25;
-          flag3 = true;
-          closure_25.value = true;
-          tmp26 = closure_19;
-          tmp27 = offset;
-          closure_19.value = offset.value;
-        } else {
-          tmp17 = closure_26;
-        }
-        tmp23 = closure_33;
-        tmp24 = closure_33();
-        tmp25 = closure_25;
-        flag2 = false;
-        closure_25.value = false;
+        return {};
       }
       return;
     }
   }
-  Q.__closure = { keyboardHeight: sharedValue3, keyboardWillAppear: sharedValue4, tag: sharedValue5, initialKeyboardSize: sharedValue6, scrollPosition: sharedValue1, scrollBeforeKeyboardMovement: sharedValue7, pendingSelectionForFocus: sharedValue11, position: offset, mode: str, syncKeyboardFrame: tmp29, lastSelection: sharedValue9, selectionUpdatedSinceHide: sharedValue12, updateLayoutFromSelection: tmp30, input, layout: sharedValue8, maybeScroll: tmp26, ghostViewSpace: sharedValue10, scrollViewLayout: layout, scrollViewContentSize: size };
-  Q.__workletHash = 4279285643383;
-  Q.__initData = sharedValue7;
-  obj24.onStart = Q;
-  class J {
-    constructor(arg0) {
-      if (!closure_30(bottomOffset.height)) {
-        tmp = insets;
-        str = "layout";
-        if ("layout" === insets) {
-          tmp2 = closure_32;
-          tmp3 = closure_32(bottomOffset);
-        }
-        tmp4 = c2;
-        if (c2) {
-          tmp5 = closure_16;
-          tmp4 = !closure_16.value;
-        }
-        if (!tmp4) {
-          tmp6 = closure_29;
-          tmp7 = closure_29(bottomOffset.height);
-        }
-      }
-      return;
-    }
+  F.__closure = { enabled, interpolateToRelativeKeyboardHeight: tmp9, keyboard: keyboardAnimation, translate, padding, frame: derivedValue, behavior };
+  F.__workletHash = 6440002265153;
+  F.__initData = __initData2;
+  const items4 = [behavior, enabled, tmp9];
+  animatedStyle = behavior(num[3]).useAnimatedStyle(F, items4);
+  const tmp13 = enabled(num[8])(ref, arg1);
+  contentContainerStyle = style;
+  if ("position" === behavior) {
+    contentContainerStyle = behavior.contentContainerStyle;
   }
-  J.__closure = { removeGhostPadding: tmp27, mode: str, syncKeyboardFrame: tmp29, disableScrollOnKeyboardHide: flag, keyboardWillAppear: sharedValue4, maybeScroll: tmp26 };
-  J.__workletHash = 15263617220981;
-  J.__initData = input;
-  obj24.onMove = J;
-  const fn2 = function q(height) {
-    closure_30(height.height);
-    sharedValue3.value = height.height;
-    sharedValue1.value = offset.value;
-    if (0 === height.height) {
-      sharedValue12.value = false;
-    } else if (sharedValue4.value) {
-      sharedValue11.value = false;
-    }
-    closure_32(height);
-  };
-  fn2.__closure = { removeGhostPadding: tmp27, keyboardHeight: sharedValue3, scrollPosition: sharedValue1, position: offset, selectionUpdatedSinceHide: sharedValue12, keyboardWillAppear: sharedValue4, pendingSelectionForFocus: sharedValue11, syncKeyboardFrame: tmp29 };
-  fn2.__workletHash = 15672596601321;
-  fn2.__initData = update;
-  obj24.onEnd = fn2;
-  const items11 = [str, tmp26, tmp27, flag, tmp29];
-  require("module_1850").useSmoothKeyboardHandler(obj24, items11);
-  const items12 = [update, tmp31];
-  const tmp37 = num2(flag2(function*(arg0, value) {
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_1 = tmp5;
-            closure_128_0 = undefined;
-            c2 = 1;
-            c3 = 1;
-            const obj4 = { value: update(), done: false };
-            return obj4;
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          const fn = function e() {
-            closure_1_34();
-          };
-          closure_128_0 = fn;
-          const obj6 = { scrollFromCurrentPosition: closure_129_34 };
-          fn.__closure = obj6;
-          closure_128_0.__workletHash = 15498084251450;
-          closure_128_0.__initData = __initData;
-          tmp2(c2[3]).runOnUI(closure_128_0)();
-          c3 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp7) {
-        c3 = tmp;
-        throw tmp7;
-      }
-    }
-  }), items12);
-  closure_37 = tmp37;
-  const items13 = [tmp37];
-  snapToOffsets(arg1, () => {
-    const current = ref.current;
-    if (current) {
-      current.assureFocusedInputVisible = () => {
-        closure_1_37();
-      };
-      return current;
-    } else {
-      const obj = {
-        assureFocusedInputVisible() {
-            closure_1_37();
-          }
-      };
-      return obj;
-    }
-  }, items13);
-  const items14 = [num];
-  str(() => {
-    closure_37();
-  }, items14);
-  const obj23 = require("module_1850");
-  class De {
-    constructor() {
-      return input.value;
-    }
-  }
-  De.__closure = { input };
-  De.__workletHash = 11096167186933;
-  De.__initData = sharedValue9;
-  class Ae {
-    constructor(arg0, arg1) {
-      target = undefined;
-      if (bottomOffset != null) {
-        target = bottomOffset.target;
-      }
-      target1 = undefined;
-      if (arg1 != null) {
-        target1 = arg1.target;
-      }
-      tmp3 = target === target1;
-      if (tmp3) {
-        height = undefined;
-        if (bottomOffset != null) {
-          height = bottomOffset.layout.height;
-        }
-        height1 = undefined;
-        if (arg1 != null) {
-          height1 = arg1.layout.height;
-        }
-        tmp3 = height !== height1;
-      }
-      if (tmp3) {
-        tmp6 = closure_34;
-        tmp7 = closure_34();
-      }
-      return;
-    }
-  }
-  Ae.__closure = { scrollFromCurrentPosition: tmp31 };
-  Ae.__workletHash = 5468543936636;
-  Ae.__initData = sharedValue10;
-  const animatedReaction = require("cancelAnimation").useAnimatedReaction(De, Ae, []);
-  const obj25 = require("cancelAnimation");
-  class Oe {
-    constructor() {
-      num = 0;
-      if (c3) {
-        tmp = closure_14;
-        num = closure_14.value;
-      }
-      return num;
-    }
-  }
-  Oe.__closure = { enabled: flag2, currentKeyboardFrameHeight: sharedValue2 };
-  Oe.__workletHash = 7351587309738;
-  Oe.__initData = sharedValue11;
-  const items15 = [flag2];
-  const derivedValue = require("cancelAnimation").useDerivedValue(Oe, items15);
-  require("cancelAnimation");
-  function ze() {
-    if (flag2) {
-      if ("layout" === "layout") {
-        const obj = { paddingBottom: sharedValue2.value + 1 };
-      }
-      return {};
-    }
-  }
-  ze.__closure = { enabled: flag2, mode: str, currentKeyboardFrameHeight: sharedValue2 };
-  ze.__workletHash = 9098994865676;
-  ze.__initData = sharedValue12;
-  const items16 = [flag2, str];
-  if ("layout" === str) {
-    const obj27 = { ref: tmp8 };
-    let merged1 = Object.assign(merged);
-    obj27.scrollEventThrottle = 16;
-    obj27.onLayout = tmp25;
-    const items17 = [children, ];
-    if (flag2) {
-      const obj28 = { style: tmp43 };
-      flag2 = sharedValue(tmp7(tmp4[3]).View, obj28);
-    }
-    items17[1] = flag2;
-    obj27.children = items17;
-    let tmp50Result = sharedValue1(ScrollView, obj27);
+  const items5 = [contentContainerStyle, animatedStyle];
+  const tmp15 = onLayout(() => {
+    const items = [contentContainerStyle, animatedStyle];
+    return items;
+  }, items5);
+  if ("position" === behavior) {
+    const obj9 = { ref: tmp13, style, onLayout: tmp10 };
+    const merged1 = Object.assign(merged);
+    const obj10 = { style: tmp15, children };
+    obj9.children = tmp16(tmp12(tmp2[3]).View, obj10);
+    let tmp16Result = tmp16(ref, obj9);
   } else {
-    const obj29 = { ref: tmp8 };
+    const obj11 = { ref: tmp13, style: tmp15, onLayout: tmp10 };
     const merged2 = Object.assign(merged);
-    obj29.bottomPadding = derivedValue;
-    obj29.scrollEventThrottle = 16;
-    obj29.ScrollViewComponent = ScrollView;
-    obj29.onLayout = tmp25;
-    obj29.children = children;
-    tmp50Result = sharedValue(tmp7(tmp4[11]), obj29);
-    const tmp7Result = tmp7(tmp4[11]);
+    obj11.children = children;
+    tmp16Result = tmp16(tmp12(tmp2[3]).View, obj11);
   }
-  return tmp50Result;
+  return tmp16Result;
 });

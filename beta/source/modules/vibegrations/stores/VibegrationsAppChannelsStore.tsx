@@ -1,11 +1,11 @@
-// Module ID: 13558
-// Function ID: 13559
+// Module ID: 13561
+// Function ID: 13562
 // Name: VibegrationsAppChannelsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 13558 (VibegrationsAppChannelsStore)
+// Module 13561 (VibegrationsAppChannelsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const set = new Set();
 const Store = initializeDefault.Store;

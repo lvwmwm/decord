@@ -1,23 +1,23 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16331
+// Function ID: 16332
 // Name: AuthManager
-// Dependencies: [5, 17, 12663, 1074, 4965, 12958, 1982, 573, 2037, 16329, 1364, 12666, 10076, 12999, 12957, 7584, 8002, 2]
+// Dependencies: [5, 17, 12558, 1078, 4967, 12852, 1986, 577, 2041, 16332, 1368, 12561, 10055, 12895, 12851, 7586, 8007, 2]
 
-// Module 16328 (AuthManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import transitionToGuild from "transitionToGuild" /* 7584 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8002 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12666 */;
+// Module 16331 (AuthManager)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import transitionToGuild from "transitionToGuild" /* 7586 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8007 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12561 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import LifecycleManager from "LifecycleManager" /* 1986 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = get_ActivityIndicator);
-const PermissionStateType = fn(12663).PermissionStateType;
-const ME = fn(1074).ME;
-let closure_8 = fn(4965).NotificationAuthorizationStatus;
-const NewUserTypes = fn(12958).NewUserTypes;
+const PermissionStateType = fn(12558).PermissionStateType;
+const ME = fn(1078).ME;
+let closure_8 = fn(4967).NotificationAuthorizationStatus;
+const NewUserTypes = fn(12852).NewUserTypes;
 let closure_10 = { REGISTER: "register", LOGIN: "login" };
 let c11 = null;
 class AuthManager extends tmp3 {
@@ -42,7 +42,7 @@ class AuthManager extends tmp3 {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ class AuthManager extends tmp3 {
               dependencyMap = 0;
               closure_129_0 = applyArgumentsResult;
               closure_1_5.dismiss();
-              if (tmp2(2037)()) {
+              if (tmp2(2041)()) {
                 tmp24();
                 DCDShortcutManager = 3;
               } else {
@@ -82,8 +82,8 @@ class AuthManager extends tmp3 {
             closure_129_0();
           }
           const obj6 = { onComplete: closure_129_0 };
-          const result = applyArgumentsResult(16329).showPushNotificationPromptModal(obj6);
-          const obj = applyArgumentsResult(16329);
+          const result = applyArgumentsResult(16332).showPushNotificationPromptModal(obj6);
+          const obj = applyArgumentsResult(16332);
         } catch (tmp19) {
           DCDShortcutManager = tmp;
           throw tmp19;
@@ -109,17 +109,17 @@ class AuthManager extends tmp3 {
     };
     applyArgumentsResult.handleRegisterComplete = function handleRegisterComplete() {
       if (!obj.hasDeferredInvite()) {
-        tmp(12999).setNewUser(constants.ORGANIC_REGISTERED);
-        const tmpResult = tmp(12999);
+        tmp(12895).setNewUser(constants.ORGANIC_REGISTERED);
+        const tmpResult = tmp(12895);
       }
-      obj = applyArgumentsResult(10076);
-      applyArgumentsResult(12957).startOnboarding();
+      obj = applyArgumentsResult(10055);
+      applyArgumentsResult(12851).startOnboarding();
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {
       const result = applyArgumentsResult.handlePushNotificationOptIn(() => {
-        closure_1_0(7584).transitionToGuild(closure_1_7);
-        const obj = closure_1_0(7584);
-        closure_1_1(573).dispatch({ type: "DEFERRED_INVITE_SHOW" });
+        closure_1_0(7586).transitionToGuild(closure_1_7);
+        const obj = closure_1_0(7586);
+        closure_1_1(577).dispatch({ type: "DEFERRED_INVITE_SHOW" });
       });
     };
     applyArgumentsResult.handleConnectionOpen = function handleConnectionOpen() {

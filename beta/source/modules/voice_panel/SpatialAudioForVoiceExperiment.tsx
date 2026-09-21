@@ -1,10 +1,10 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14098
+// Function ID: 14099
 // Name: SpatialAudioForVoiceExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 14095 (SpatialAudioForVoiceExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14098 (SpatialAudioForVoiceExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-05-spatial-audio-for-voice", kind: "user", defaultConfig: { enabled: false }, variations: null };

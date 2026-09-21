@@ -1,17 +1,17 @@
-// Module ID: 8303
-// Function ID: 8304
+// Module ID: 8308
+// Function ID: 8309
 // Name: InGameMessageNuxSystemMessage
-// Dependencies: [4983, 1074, 8211, 8218, 8220, 2108, 1115, 8222, 2]
+// Dependencies: [4985, 1078, 8216, 8223, 8225, 2112, 1119, 8227, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 8303 (InGameMessageNuxSystemMessage)
-import util from "util" /* 1115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+// Module 8308 (InGameMessageNuxSystemMessage)
+import util from "util" /* 1119 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8216 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
 
 require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/InGameMessageNuxSystemMessage.tsx");
 
@@ -29,16 +29,16 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, gameName: null, urlOnClick: null };
     const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj2.usernameOnClick = tmp(8220)(obj3);
+    obj2.usernameOnClick = tmp(8225)(obj3);
     obj2.gameName = application.name;
     const obj4 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
-    obj4.url = tmp(2108).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj4.url = tmp(2112).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj4.linkColor = tmp3.linkColor;
     obj2.urlOnClick = obj4;
     const obj5 = { content: null };
     const intl = util.intl;
     obj5.content = intl.formatToParts(util.t["92erOB"], obj2);
-    const merged = Object.assign(tmp(8222)(message));
+    const merged = Object.assign(tmp(8227)(message));
     return obj5;
   }
   tmp3 = resolveMessageContentColorsDefault(theme);

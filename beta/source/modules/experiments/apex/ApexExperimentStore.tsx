@@ -1,18 +1,18 @@
-// Module ID: 1235
-// Function ID: 1236
+// Module ID: 1239
+// Function ID: 1240
 // Name: ApexExperimentStore
-// Dependencies: [32, 1236, 502, 1074, 573, 1241, 1361, 2]
+// Dependencies: [32, 1240, 502, 1078, 577, 1245, 1365, 2]
 
-// Module 1235 (ApexExperimentStore)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1361 */;
+// Module 1239 (ApexExperimentStore)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1365 */;
 import _slicedToArray from "module_32" /* 32 */;
-import BaseApexExperimentStore from "BaseApexExperimentStore" /* 1236 */;
+import BaseApexExperimentStore from "BaseApexExperimentStore" /* 1240 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 class ApexExperimentStore extends tmp2 {
   constructor() {
     closure_0 = undefined;
@@ -121,4 +121,4 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexExperimentStore.tsx");
 
 export default apexExperimentStore;
-export const ExperimentAssignment = fn(1236).ExperimentAssignment;
+export const ExperimentAssignment = fn(1240).ExperimentAssignment;

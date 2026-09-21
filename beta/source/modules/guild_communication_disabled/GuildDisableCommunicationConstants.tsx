@@ -1,12 +1,12 @@
-// Module ID: 2107
-// Function ID: 2108
+// Module ID: 2111
+// Function ID: 2112
 // Name: GuildDisableCommunicationConstants
-// Dependencies: [1074, 1115, 2108, 2]
+// Dependencies: [1078, 1119, 2112, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 2107 (GuildDisableCommunicationConstants)
-import util from "util" /* 1115 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2108 */;
+// Module 2111 (GuildDisableCommunicationConstants)
+import util from "util" /* 1119 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2112 */;
 
 require = fn;
 function getFriendlyDurationString(arg0) {
@@ -31,7 +31,7 @@ function getFriendlyDurationString(arg0) {
   }
 }
 const DisableCommunicationDuration = { DURATION_60_SEC: 60, [60]: "DURATION_60_SEC", DURATION_5_MIN: 300, [300]: "DURATION_5_MIN", DURATION_10_MIN: 600, [600]: "DURATION_10_MIN", DURATION_1_HOUR: 3600, [3600]: "DURATION_1_HOUR", DURATION_1_DAY: 86400, [86400]: "DURATION_1_DAY", DURATION_1_WEEK: 604800, [604800]: "DURATION_1_WEEK" };
-const articleURL = HelpdeskUtils.getArticleURL(fn(1074).HelpdeskArticles.DISABLE_GUILD_COMMUNICATION);
+const articleURL = HelpdeskUtils.getArticleURL(fn(1078).HelpdeskArticles.DISABLE_GUILD_COMMUNICATION);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_communication_disabled/GuildDisableCommunicationConstants.tsx");
 

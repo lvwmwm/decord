@@ -1,28 +1,87 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 12603
+// Function ID: 12604
 // Name: ChatInputGuardReturnToGameProfile
-// Dependencies: [19, 17, 21, 4756, 576, 12702, 1397, 1115, 9554, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1401, 1119, 9550, 12597, 2]
 
-// Module 12708 (ChatInputGuardReturnToGameProfile)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 9554 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12702 */;
+// Module 12603 (ChatInputGuardReturnToGameProfile)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import ArrowSmallLeftIcon from "ArrowSmallLeftIcon" /* 9550 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { icon: null };
 let size = { height: 40, width: 40, resizeMode: "contain", borderRadius: nativeDefault.radii.md };
 obj.icon = size;
 let closure_5 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReturnToGameProfile.tsx");
 
-export default noop.memo(function ChatInputGuardReturnToGameProfile(pendingGameProfileReturn) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((pendingGameProfileReturn) => {
+  const cResult = c.c(11);
+  const tmp4 = closure_5();
+  if (cResult[0] === pendingGameProfileReturn.pendingGameProfileReturn.gameIconUrl) {
+    if (cResult[1] === tmp4) {
+      let tmp5 = cResult[2];
+    }
+    if (cResult[3] !== pendingGameProfileReturn.gameName) {
+      const intl = tmp(1119).intl;
+      const obj2 = { gameName: pendingGameProfileReturn.gameName };
+      const formatResult = intl.format(tmp(1119).t.HRHaSF, obj2);
+      cResult[3] = pendingGameProfileReturn.gameName;
+      cResult[4] = formatResult;
+      let tmp9 = formatResult;
+    } else {
+      tmp9 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1119).intl;
+      const stringResult = intl2.string(tmp(1119).t.DjifDP);
+      const obj3 = { color: nativeDefault.colors.WHITE };
+      const tmp17 = jsx(tmp(9550).ArrowSmallLeftIcon, { color: nativeDefault.colors.WHITE });
+      cResult[5] = stringResult;
+      cResult[6] = tmp17;
+      let tmp13 = tmp17;
+      let tmp12 = stringResult;
+    } else {
+      tmp12 = cResult[5];
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] === pendingGameProfileReturn.onReturnToGameProfile) {
+      if (cResult[8] === tmp5) {
+        if (cResult[9] === tmp9) {
+          let tmp18 = cResult[10];
+        }
+        return tmp18;
+      }
+    }
+    const obj4 = { type: "simple-action", icon: tmp5, message: tmp9, actionLabel: tmp12, actionIcon: tmp13, actionOnPress: pendingGameProfileReturn.onReturnToGameProfile };
+    const tmp21 = jsx(ChatInputGuardDefault, { type: "simple-action", icon: tmp5, message: tmp9, actionLabel: tmp12, actionIcon: tmp13, actionOnPress: pendingGameProfileReturn.onReturnToGameProfile });
+    cResult[7] = pendingGameProfileReturn.onReturnToGameProfile;
+    cResult[8] = tmp5;
+    cResult[9] = tmp9;
+    cResult[10] = tmp21;
+    tmp18 = tmp21;
+  }
+  let tmp6;
+  if (null != pendingGameProfileReturn.pendingGameProfileReturn.gameIconUrl) {
+    const obj5 = { style: tmp4.icon, source: tmp(1401).makeSource(pendingGameProfileReturn.gameIconUrl) };
+    tmp6 = <Image style={tmp4.icon} source={tmp(1401).makeSource(pendingGameProfileReturn.gameIconUrl)} />;
+    const tmpResult = tmp(1401);
+  }
+  cResult[0] = pendingGameProfileReturn.pendingGameProfileReturn.gameIconUrl;
+  cResult[1] = tmp4;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
+}) : ((pendingGameProfileReturn) => {
   let tmp2Result;
   const tmp = closure_5();
   if (null != pendingGameProfileReturn.pendingGameProfileReturn.gameIconUrl) {
@@ -38,4 +97,4 @@ export default noop.memo(function ChatInputGuardReturnToGameProfile(pendingGameP
   obj3.actionIcon = jsx(ArrowSmallLeftIcon.ArrowSmallLeftIcon, { color: nativeDefault.colors.WHITE });
   obj3.actionOnPress = pendingGameProfileReturn.pendingGameProfileReturn.onReturnToGameProfile;
   return <tmp5 type="simple-action" icon={tmp2Result} message={null} actionLabel={null} actionIcon={null} actionOnPress={null} />;
-});
+}));

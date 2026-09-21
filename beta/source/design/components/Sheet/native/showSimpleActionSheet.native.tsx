@@ -1,11 +1,11 @@
-// Module ID: 7440
-// Function ID: 7441
+// Module ID: 7442
+// Function ID: 7443
 // Name: Sheet/showSimpleActionSheet
-// Dependencies: [4723, 7441, 1980, 2]
+// Dependencies: [4725, 7443, 1984, 2]
 // Exports: showSimpleActionSheet
 
-// Module 7440 (Sheet/showSimpleActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+// Module 7442 (Sheet/showSimpleActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Sheet/native/showSimpleActionSheet.native.tsx");
@@ -19,5 +19,5 @@ export const showSimpleActionSheet = function showSimpleActionSheet(key) {
   obj2.hideActionSheet = function hideActionSheet() {
     ActionSheetActionCreatorsDefault.hideActionSheet(key);
   };
-  obj.openLazy(key(1980)(7441, dependencyMap.paths), key, obj2, key.stackingBehavior);
+  obj.openLazy(key(1984)(7443, dependencyMap.paths), key, obj2, key.stackingBehavior);
 };

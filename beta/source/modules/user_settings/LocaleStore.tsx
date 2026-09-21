@@ -1,14 +1,14 @@
-// Module ID: 2109
-// Function ID: 2110
+// Module ID: 2113
+// Function ID: 2114
 // Name: LocaleStore
-// Dependencies: [5, 2110, 1220, 4377, 1115, 504, 573, 2]
+// Dependencies: [5, 2114, 1224, 4381, 1119, 504, 577, 2]
 
-// Module 2109 (LocaleStore)
+// Module 2113 (LocaleStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DiscordNativeDefault from "DiscordNative" /* 4377 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DiscordNativeDefault from "DiscordNative" /* 4381 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 const require = fn;
 let closure_6 = async function _getSystemLocale(arg0, value) {
@@ -22,7 +22,7 @@ let closure_6 = async function _getSystemLocale(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -48,7 +48,7 @@ let closure_6 = async function _getSystemLocale(arg0, value) {
             }
           }
           if (null != prop) {
-            const app2 = tmp22(4377).app;
+            const app2 = tmp22(4381).app;
             const preferredSystemLanguages = app2.getPreferredSystemLanguages();
             c2 = 1;
             c3 = 1;
@@ -105,9 +105,9 @@ function handleUpdate() {
   }
   return flag;
 }
-const setAppLocale = fn(2110).setAppLocale;
-let locale = fn(1115).intl.currentLocale;
-let global = fn(1115).systemLocale;
+const setAppLocale = fn(2114).setAppLocale;
+let locale = fn(1119).intl.currentLocale;
+let global = fn(1119).systemLocale;
 (function getSystemLocale() {
   const self = this;
   const apply = closure_6.apply;

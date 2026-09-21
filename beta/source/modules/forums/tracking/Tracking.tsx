@@ -1,26 +1,26 @@
-// Module ID: 8009
-// Function ID: 8010
+// Module ID: 8014
+// Function ID: 8015
 // Name: tracking/Tracking
-// Dependencies: [2041, 5105, 7519, 8010, 1074, 4936, 8011, 1241, 8016, 1364, 8017, 2]
+// Dependencies: [2045, 5107, 7521, 8015, 1078, 4938, 8016, 1245, 8021, 1368, 8022, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 8009 (tracking/Tracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import TrackingUtils from "TrackingUtils" /* 8011 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8016 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8017 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import DraftStore from "DraftStore" /* 5105 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7519 */;
-import ForumSearchStore from "ForumSearchStore" /* 8010 */;
+// Module 8014 (tracking/Tracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
+import TrackingUtils from "TrackingUtils" /* 8016 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8021 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8022 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import DraftStore from "DraftStore" /* 5107 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7521 */;
+import ForumSearchStore from "ForumSearchStore" /* 8015 */;
 
 const AppAnalyticsUtilsDefault = AppAnalyticsUtils;
 
 require = fn;
-const DraftType = fn(5105).DraftType;
-const Constants = fn(1074);
+const DraftType = fn(5107).DraftType;
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = Constants);
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/forums/tracking/Tracking.tsx");

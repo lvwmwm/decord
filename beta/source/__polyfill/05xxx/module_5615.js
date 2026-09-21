@@ -1,9 +1,9 @@
 // Module ID: 5615
 // Function ID: 5616
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 5615
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "79308515b9134f67f900ad544808aa3a", name: "img_domain_dark", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "7700e8b6e3143c87285472edb9723d43", name: "img_domain_dark", type: "png" });

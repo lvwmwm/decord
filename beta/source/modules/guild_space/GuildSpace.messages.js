@@ -1,22 +1,22 @@
-// Module ID: 2414
-// Function ID: 2415
-// Dependencies: [1119, 2415, 1154, 2]
+// Module ID: 2418
+// Function ID: 2419
+// Dependencies: [1123, 2419, 1158, 2]
 
-// Module 2414
-import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod2415 from "module_2415" /* 2415 */;
-import module_1154_mod from "module_1154" /* 1154 */;
+// Module 2418
+import AssetJsonUtils from "AssetJsonUtils" /* 1123 */;
+import _mod2419 from "module_2419" /* 2419 */;
+import module_1158_mod from "module_1158" /* 1158 */;
 import size from "module_2" /* 2 */;
 
-let module_1154 = module_1154_mod;
-const loader = module_1154.createLoader({
+let module_1158 = module_1158_mod;
+const loader = module_1158.createLoader({
   () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2415);
+    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2419);
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");
-let module_1154 = module_1154_mod;
-const messagesProxy = module_1154.makeMessagesProxy(loader);
+let module_1158 = module_1158_mod;
+const messagesProxy = module_1158.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpace.messages.js");
 
 export default messagesProxy;

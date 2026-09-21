@@ -682,7 +682,7 @@ let items = [
         }
         return scrollableNode;
       }
-      scrollableNode = closure_1_17(self._scrollRef);
+      scrollableNode = constants(self._scrollRef);
     }
   },
   {
@@ -960,7 +960,7 @@ let items = [
             },
           style: StyleSheet.compose(arg1, type.props.style)
         };
-        tmp = closure_1_10(type, obj);
+        tmp = v65535(type, obj);
       }
       return tmp;
     }
@@ -1115,7 +1115,7 @@ let items = [
           _defaultRenderScrollComponent = self._defaultRenderScrollComponent;
         }
         const obj16 = { ref: self._captureScrollRef };
-        obj12.children = closure_1_10(_defaultRenderScrollComponent(obj9), obj16, items);
+        obj12.children = v65535(_defaultRenderScrollComponent(obj9), obj16, items);
         const tmp73Result = collapsedCategories(VirtualizedList(322).VirtualizedListContextProvider, obj12);
         let tmp78 = tmp73Result;
         if (self.props.debug) {

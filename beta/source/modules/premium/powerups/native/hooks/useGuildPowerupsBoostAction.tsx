@@ -1,25 +1,163 @@
 // Module ID: 16512
 // Function ID: 16513
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4650, 4645, 1074, 12792, 7407, 7661, 4653, 4649, 5651, 7645, 2]
-// Exports: default
+// Dependencies: [5, 19, 4653, 4648, 1078, 558, 568, 12703, 7409, 7663, 4656, 4652, 5653, 7647, 2]
 
 // Module 16512 (useGuildPowerupsBoostAction)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12792 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12703 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4650 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4653 */;
+
+const require = globalThis.__r;
 
 const require = fn;
-const GuildPowerupsConstants = fn(4645);
+const GuildPowerupsConstants = fn(4648);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: closure_7 } = GuildPowerupsConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticsObjects: closure_8, AnalyticsObjectTypes: closure_9 } = Constants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupsBoostAction.tsx");
 
-export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3, arg4) => {
+  _require = arg0;
+  importDefault = arg1;
+  dependencyMap = arg2;
+  asyncGeneratorStep = arg4;
+  const cResult = require("c").c(8);
+  const tmp2 = useGuildBoostPurchaseHandlerDefault(arg3);
+  const shouldUseMobileWebRedirectCheckout = tmp2.shouldUseMobileWebRedirectCheckout;
+  const handleMobileWebRedirectCheckout = tmp2.handleMobileWebRedirectCheckout;
+  const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
+  if (cResult[0] === arg4) {
+    if (cResult[1] === analyticsLocations) {
+      if (cResult[2] === arg2) {
+        if (cResult[3] === arg0) {
+          if (cResult[4] === handleMobileWebRedirectCheckout) {
+            if (cResult[5] === arg1) {
+              if (cResult[6] === shouldUseMobileWebRedirectCheckout) {
+                let tmp3 = cResult[7];
+              }
+              return tmp3;
+            }
+          }
+        }
+      }
+    }
+  }
+  _require = asyncGeneratorStep(async (arg0, value) => {
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (0 === c2) {
+          if (arg0 === 1) {
+            c3 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            const guildId = tmp3;
+            closure_128_0 = undefined;
+            let availableGuildBoostSlots;
+            if (null != tmp2) {
+              let tmp15 = c2;
+              if (c2 > 0) {
+                if (!handleMobileWebRedirectCheckout.hasFetched) {
+                  const items = [tmp2(7663).init(), ];
+                  let obj2 = tmp2(7663);
+                  items[1] = guildId(4656).fetchGuildBoostSlots();
+                  c2 = 1;
+                  c3 = 1;
+                  const obj8 = { value: Promise.all(items), done: false };
+                  return obj8;
+                }
+              }
+            }
+            c3 = 3;
+            handleMobileWebRedirectCheckout(analyticsLocations, guildId);
+          }
+        } else if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          const obj = { value, done: true };
+          return obj;
+        }
+        tmp15 = undefined;
+        let PERK;
+        if (tmp2.type === constants.PERK) {
+          PERK = analyticsLocations.PERK;
+        }
+        closure_128_0 = PERK;
+        availableGuildBoostSlots = guildId(4652).getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
+        if (availableGuildBoostSlots.length >= c2) {
+          tmp15 = guildId(5653);
+          const obj9 = { guildBoostSlots: availableGuildBoostSlots.slice(0, c2), guildId, intent: closure_128_0 };
+          tmp15.openTransferModal(obj9);
+        } else if (!shouldUseMobileWebRedirectCheckout) {
+          const obj10 = { source: null, analyticsLocations: null, guildId: null, onPaymentSuccess: null };
+          const obj11 = {};
+          const merged = Object.assign(c3);
+          obj11.object = constants2.BUTTON_CTA;
+          obj11.objectType = constants3.BUY;
+          obj10.source = obj11;
+          obj10.analyticsLocations = analyticsLocations;
+          obj10.guildId = guildId;
+          obj10.onPaymentSuccess = function onPaymentSuccess() {
+            const availableGuildBoostSlots = guildId(dependencyMap[11]).getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
+            if (availableGuildBoostSlots.length >= c2) {
+              const obj2 = { guildBoostSlots: availableGuildBoostSlots.slice(0, tmp3), guildId, intent };
+              guildId(dependencyMap[12]).openTransferModal(obj2);
+              const tmpResult = guildId(dependencyMap[12]);
+            }
+          };
+          const result = guildId(7647).launchGuildBoostFlowOrAlert(obj10);
+          const obj6 = guildId(7647);
+        }
+        const obj5 = guildId(4652);
+      } catch (tmp50) {
+        c3 = tmp;
+        throw tmp50;
+      }
+    }
+  });
+  const fn = function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  };
+  cResult[0] = arg4;
+  cResult[1] = analyticsLocations;
+  cResult[2] = arg2;
+  cResult[3] = arg0;
+  cResult[4] = handleMobileWebRedirectCheckout;
+  cResult[5] = arg1;
+  cResult[6] = shouldUseMobileWebRedirectCheckout;
+  cResult[7] = fn;
+  tmp3 = fn;
+}) : ((arg0, arg1, arg2, arg3, arg4) => {
   closure_0 = arg0;
   importDefault = arg1;
   dependencyMap = arg2;
@@ -40,7 +178,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -61,9 +199,9 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               tmp15 = closure_2;
               if (closure_2 > 0) {
                 if (!handleMobileWebRedirectCheckout.hasFetched) {
-                  const items = [tmp2(7661).init(), ];
-                  let obj2 = tmp2(7661);
-                  items[1] = tmp3(4653).fetchGuildBoostSlots();
+                  const items = [tmp2(7663).init(), ];
+                  let obj2 = tmp2(7663);
+                  items[1] = tmp3(4656).fetchGuildBoostSlots();
                   dependencyMap = 1;
                   c3 = 1;
                   const obj8 = { value: Promise.all(items), done: false };
@@ -88,9 +226,9 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
           PERK = constants.PERK;
         }
         closure_128_0 = PERK;
-        availableGuildBoostSlots = tmp3(4649).getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
+        availableGuildBoostSlots = tmp3(4652).getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
         if (availableGuildBoostSlots.length >= closure_129_2) {
-          tmp15 = tmp3(5651);
+          tmp15 = tmp3(5653);
           const obj9 = { guildBoostSlots: availableGuildBoostSlots.slice(0, closure_129_2), guildId: closure_129_0, intent: closure_128_0 };
           tmp15.openTransferModal(obj9);
         } else if (!closure_129_4) {
@@ -103,21 +241,21 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
           obj10.analyticsLocations = closure_129_6;
           obj10.guildId = closure_129_0;
           obj10.onPaymentSuccess = function onPaymentSuccess() {
-            const availableGuildBoostSlots = guildId(dependencyMap[9]).getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
+            const availableGuildBoostSlots = guildId(dependencyMap[11]).getAvailableGuildBoostSlots(handleMobileWebRedirectCheckout.boostSlots);
             if (availableGuildBoostSlots.length >= c2) {
               const obj2 = { guildBoostSlots: availableGuildBoostSlots.slice(0, tmp3), guildId, intent };
-              guildId(dependencyMap[10]).openTransferModal(obj2);
-              const tmpResult = guildId(dependencyMap[10]);
+              guildId(dependencyMap[12]).openTransferModal(obj2);
+              const tmpResult = guildId(dependencyMap[12]);
             }
           };
-          const result = tmp3(7645).launchGuildBoostFlowOrAlert(obj10);
-          const obj6 = tmp3(7645);
+          const result = tmp3(7647).launchGuildBoostFlowOrAlert(obj10);
+          const obj6 = tmp3(7647);
         }
-        const obj5 = tmp3(4649);
+        const obj5 = tmp3(4652);
       } catch (tmp50) {
         c3 = tmp;
         throw tmp50;
       }
     }
   }), items);
-};
+});

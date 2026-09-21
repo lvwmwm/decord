@@ -1,8 +1,8 @@
-// Module ID: 6091
-// Function ID: 6092
+// Module ID: 6089
+// Function ID: 6090
 // Dependencies: [2]
 
-// Module 6091
+// Module 6089
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeAngledSpotIllustration-2x.png.js");

@@ -1,40 +1,40 @@
-// Module ID: 18047
-// Function ID: 18048
+// Module ID: 18050
+// Function ID: 18051
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4748, 2063, 18043, 1074, 21, 4756, 576, 7188, 1478, 5171, 4492, 1241, 4936, 8549, 5339, 4752, 11019, 1177, 11815, 5186, 1115, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 4750, 2067, 18046, 1078, 21, 4758, 580, 558, 568, 7186, 1482, 5173, 4497, 1245, 4938, 4754, 1181, 11684, 5188, 1119, 8554, 5341, 11056, 2]
 
-// Module 18047 (GuildSettingsRoleTemplate)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5171 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7188 */;
-import _modDef8549 from "module_8549" /* 8549 */;
-import PaginationDefault from "Pagination" /* 11019 */;
-import _modDef11815 from "module_11815" /* 11815 */;
+// Module 18050 (GuildSettingsRoleTemplate)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5173 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
+import _modDef8554 from "module_8554" /* 8554 */;
+import PaginationDefault from "Pagination" /* 11056 */;
+import _modDef11684 from "module_11684" /* 11684 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = get_ActivityIndicator);
-const GuildSettingsRoleConstants = fn(18043);
+const GuildSettingsRoleConstants = fn(18046);
 ({ PermissionTemplateTypes: closure_9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: closure_11 } = GuildSettingsRoleConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 let width = Dimensions.get("window").width;
-const createStyles = fn(4756);
+let c17 = 300;
+const createStyles = fn(4758);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, carousel: { flex: 1 }, cardWrapper: { width: 300, alignSelf: "center", paddingHorizontal: 10, flex: 1 }, card: null, templateTitle: null, templateSubtitle: null, templateContentWrapper: null, templateContent: null, templateContentText: null, templateButton: null, sliderContainer: null, slider: null, sliderLabels: null, sliderLabel: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj2.card = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, borderStyle: "solid", borderWidth: 1, flex: 1, flexDirection: "column", marginVertical: 16, padding: 16, paddingTop: 20 };
@@ -48,27 +48,193 @@ obj2.sliderContainer = { alignItems: "center" };
 obj2.slider = { marginTop: 8, width: 300, maxWidth: "72%" };
 obj2.sliderLabels = { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 16, textAlign: "center", width: 380, maxWidth: "85%" };
 obj2.sliderLabel = { marginHorizontal: 0, width: "25%", textAlign: "center", alignItems: "center" };
-let closure_17 = createStyles.createStyles(obj2);
+let closure_18 = createStyles.createStyles(obj2);
 const __initData = { code: "function GuildSettingsRoleTemplateTsx1(value){const{interpolate,sheetWidth,parallaxScrollingOffset,Extrapolation,inactiveOpacity}=this.__closure;const translate=interpolate(value,[-1,0,1],[-sheetWidth+parallaxScrollingOffset,0,sheetWidth-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,sheetWidth,0],Extrapolation.CLAMP));return{transform:[{translateX:translate}],opacity:interpolate(value,[-1,0,1],[inactiveOpacity,1,inactiveOpacity],Extrapolation.CLAMP),zIndex:zIndex};}" };
+const __initData2 = { code: "function GuildSettingsRoleTemplateTsx2(value){const{interpolate,sheetWidth,parallaxScrollingOffset,Extrapolation,inactiveOpacity}=this.__closure;const translate=interpolate(value,[-1,0,1],[-sheetWidth+parallaxScrollingOffset,0,sheetWidth-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,sheetWidth,0],Extrapolation.CLAMP));return{transform:[{translateX:translate}],opacity:interpolate(value,[-1,0,1],[inactiveOpacity,1,inactiveOpacity],Extrapolation.CLAMP),zIndex:zIndex};}" };
+const ReactCompilerGating = fn(558);
+let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, borderStyle: "solid", borderWidth: 1, flex: 1, flexDirection: "column", marginVertical: 16, padding: 16, paddingTop: 20 };
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleTemplate.tsx");
 
-export default function GuildSettingsRoleTemplate(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
+  const cResult = onSelect(guildId[11]).c(83);
+  onSelect = onSelect.onSelect;
+  const location = onSelect.location;
+  guildId = onSelect.guildId;
+  let obj = onSelect(guildId[11]);
+  _slicedToArray = closure_18();
+  const tmp4 = closure_18();
+  const tmp5 = location(guildId[12])();
+  ({ width, height } = location(guildId[13])());
+  ref = ref.useRef(null);
+  const ref1 = ref.useRef(null);
+  [closure_6, closure_7] = ref.useState(bound);
+  [sheetWidth, closure_9] = ref.useState(width);
+  let obj2 = ref;
+  let tmp6 = location(guildId[13])();
+  let num = 0.7;
+  const isScreenReaderEnabled = onSelect(guildId[14]).useIsScreenReaderEnabled();
+  if (tmp5) {
+    num = 0.3;
+  }
+  bound = Math.max(sheetWidth - c17, 0);
+  if (cResult[0] !== height) {
+    const _Math = Math;
+    let rounded = Math.round(0.45 * height);
+    cResult[0] = height;
+    cResult[1] = rounded;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class K {
+      constructor() {
+        current = closure_4.current;
+        width = undefined;
+        if (current != null) {
+          width = current.getBoundingClientRect().width;
+        }
+        tmp2 = null != width;
+        if (tmp2) {
+          num = 0;
+          tmp2 = width > 0;
+        }
+        if (tmp2) {
+          tmp3 = closure_9;
+          tmp4 = closure_9((arg0) => {
+            let tmp = arg0;
+            if (arg0 !== width) {
+              tmp = width;
+            }
+            return tmp;
+          });
+        }
+        return;
+      }
+    }
+    cResult[2] = K;
+    const tmp16 = K;
+  } else {
+    class K {
+      constructor() {
+        current = closure_4.current;
+        width = undefined;
+        if (current != null) {
+          width = current.getBoundingClientRect().width;
+        }
+        tmp2 = null != width;
+        if (tmp2) {
+          num = 0;
+          tmp2 = width > 0;
+        }
+        if (tmp2) {
+          tmp3 = closure_9;
+          tmp4 = closure_9((arg0) => {
+            let tmp = arg0;
+            if (arg0 !== width) {
+              tmp = width;
+            }
+            return tmp;
+          });
+        }
+        return;
+      }
+    }
+  }
+  if (cResult[3] === height) {
+    class K {
+      constructor() {
+        current = closure_4.current;
+        width = undefined;
+        if (current != null) {
+          width = current.getBoundingClientRect().width;
+        }
+        tmp2 = null != width;
+        if (tmp2) {
+          num = 0;
+          tmp2 = width > 0;
+        }
+        if (tmp2) {
+          tmp3 = closure_9;
+          tmp4 = closure_9((arg0) => {
+            let tmp = arg0;
+            if (arg0 !== width) {
+              tmp = width;
+            }
+            return tmp;
+          });
+        }
+        return;
+      }
+    }
+    const layoutEffect = obj2.useLayoutEffect(tmp16, items);
+    if (cResult[6] === num) {
+      class K {
+        constructor() {
+          current = closure_4.current;
+          width = undefined;
+          if (current != null) {
+            width = current.getBoundingClientRect().width;
+          }
+          tmp2 = null != width;
+          if (tmp2) {
+            num = 0;
+            tmp2 = width > 0;
+          }
+          if (tmp2) {
+            tmp3 = closure_9;
+            tmp4 = closure_9((arg0) => {
+              let tmp = arg0;
+              if (arg0 !== width) {
+                tmp = width;
+              }
+              return tmp;
+            });
+          }
+          return;
+        }
+      }
+    }
+    const fn = function q(arg0) {
+      const items = [-first + bound, 0, first - bound];
+      const interpolateResult = ReanimatedRexport.interpolate(arg0, [-1, 0, 1], items);
+      const items1 = [0, first, 0];
+      const obj3 = { transform: null, opacity: null, zIndex: null };
+      const items2 = [{ translateX: interpolateResult }];
+      obj3.transform = items2;
+      const rounded = Math.round(ReanimatedRexport.interpolate(arg0, [-1, 0, 1], items1, ReanimatedRexport.Extrapolation.CLAMP));
+      const items3 = [num, 1, num];
+      obj3.opacity = ReanimatedRexport.interpolate(arg0, [-1, 0, 1], items3, ReanimatedRexport.Extrapolation.CLAMP);
+      obj3.zIndex = rounded;
+      return obj3;
+    };
+    let obj4 = { interpolate: tmp(tmp2[15]).interpolate, sheetWidth, parallaxScrollingOffset: bound, Extrapolation: tmp(tmp2[15]).Extrapolation, inactiveOpacity: num };
+    fn.__closure = obj4;
+    fn.__workletHash = 1786335394860;
+    fn.__initData = __initData;
+    cResult[6] = num;
+    cResult[7] = bound;
+    cResult[8] = sheetWidth;
+    cResult[9] = fn;
+  }
+  items = [width, height];
+  cResult[3] = height;
+  cResult[4] = width;
+  cResult[5] = items;
+}) : ((arg0) => {
   ({ onSelect: require, location: importDefault, guildId: dependencyMap } = arg0);
   let ref;
   value = undefined;
   closure_7 = undefined;
   first1 = undefined;
-  constants = undefined;
+  closure_9 = undefined;
   let bound;
-  let tmp = closure_17();
+  let tmp = closure_18();
   _slicedToArray = tmp;
   const size = useWindowDimensionsDefault();
   const height = size.height;
   ref = ref.useRef(null);
   const ref1 = ref.useRef(null);
   [value, closure_7] = ref.useState(bound);
-  [first1, constants] = ref.useState(width);
+  [first1, closure_9] = ref.useState(width);
   const tmp4 = useIsWindowLargeDefault();
   let num = 0.7;
   const isScreenReaderEnabled = useIsScreenReaderEnabled.useIsScreenReaderEnabled();
@@ -84,7 +250,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
       current.scrollTo(obj);
     }
   }
-  bound = Math.max(first1 - 300, 0);
+  bound = Math.max(first1 - c17, 0);
   let items = [size.width, height];
   let rounded = Math.round(0.45 * height);
   const layoutEffect = obj.useLayoutEffect(() => {
@@ -107,15 +273,15 @@ export default function GuildSettingsRoleTemplate(arg0) {
       });
     }
   }, items);
-  class V {
+  class X {
     constructor(arg0) {
-      obj = closure_0(closure_2[13]);
+      obj = closure_0(closure_2[15]);
       items = [, , ];
       items[0] = -closure_8 + closure_11;
       items[1] = 0;
       items[2] = closure_8 - closure_11;
       interpolateResult = obj.interpolate(arg0, [-1, 0, 1], items);
-      obj2 = closure_0(closure_2[13]);
+      obj2 = closure_0(closure_2[15]);
       items1 = [0];
       items1[1] = closure_8;
       items1[2] = 0;
@@ -123,29 +289,29 @@ export default function GuildSettingsRoleTemplate(arg0) {
       items2 = [];
       items2[0] = { translateX: interpolateResult };
       obj1.transform = items2;
-      rounded = Math.round(obj2.interpolate(arg0, [-1, 0, 1], items1, closure_0(closure_2[13]).Extrapolation.CLAMP));
-      obj4 = closure_0(closure_2[13]);
+      rounded = Math.round(obj2.interpolate(arg0, [-1, 0, 1], items1, closure_0(closure_2[15]).Extrapolation.CLAMP));
+      obj4 = closure_0(closure_2[15]);
       items3 = [, , ];
       items3[0] = c10;
       items3[1] = 1;
       items3[2] = c10;
-      obj1.opacity = obj4.interpolate(arg0, [-1, 0, 1], items3, closure_0(closure_2[13]).Extrapolation.CLAMP);
+      obj1.opacity = obj4.interpolate(arg0, [-1, 0, 1], items3, closure_0(closure_2[15]).Extrapolation.CLAMP);
       obj1.zIndex = rounded;
       return obj1;
     }
   }
-  V.__closure = { interpolate: ReanimatedRexport.interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: ReanimatedRexport.Extrapolation, inactiveOpacity: num };
-  V.__workletHash = 1786335394860;
-  V.__initData = __initData;
+  X.__closure = { interpolate: ReanimatedRexport.interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: ReanimatedRexport.Extrapolation, inactiveOpacity: num };
+  X.__workletHash = 989185039823;
+  X.__initData = __initData2;
   let items1 = [first1, bound, num];
-  const callback = obj.useCallback(V, items1);
+  const callback = obj.useCallback(X, items1);
   const values = Object.values(num);
   let obj4 = { ref, style: tmp.container, children: null };
   let obj5 = { style: tmp.sliderContainer, children: null };
-  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8549, { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
+  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8554, { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: closure_9.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" }) };
   let items2 = [closure_14(ref1, obj6), ];
   let obj3 = { interpolate: ReanimatedRexport.interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: ReanimatedRexport.Extrapolation, inactiveOpacity: num };
-  let obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
+  let obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: closure_9.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items2[1] = closure_14(ref1, {
     style: tmp.sliderLabels,
     children: values.map((title, index) => {
@@ -199,7 +365,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
           tmp3Result = null;
           if ("" !== contentPrefaceResult) {
             const obj6 = { style: tmp7.templateSubtitle, variant: "text-sm/medium", children: item.contentPreface() };
-            tmp3Result = tmp3(tmp10(4752).Text, obj6);
+            tmp3Result = tmp3(tmp10(4754).Text, obj6);
           }
         }
         const obj7 = { children: null };
@@ -208,9 +374,9 @@ export default function GuildSettingsRoleTemplate(arg0) {
         const obj4 = { style: closure_3.templateSubtitle, variant: "text-sm/medium", children: item.description() };
         obj8.children = item.contents().map((children, index) => {
           const obj = { style: closure_3.templateContent, children: null };
-          const items = [closure_3_14(native.Icon, { source: _modDef11815, size: native.IconSizes.MEDIUM, color: nativeDefault.unsafe_rawColors.GREEN_360 }), closure_3_14(Text_Text.Text, { style: closure_3.templateContentText, variant: "text-sm/medium", children })];
+          const items = [state(native.Icon, { source: _modDef11684, size: native.IconSizes.MEDIUM, color: nativeDefault.unsafe_rawColors.GREEN_360 }), state(Text_Text.Text, { style: closure_3.templateContentText, variant: "text-sm/medium", children })];
           obj.children = items;
-          return __initData(hasOwnProperty, obj, "" + item.key + "_content_" + index);
+          return closure_3_15(hasOwnProperty, obj, "" + item.key + "_content_" + index);
         });
         items1[1] = closure_1_14(ref1, obj8);
         obj5.children = items1;
@@ -219,7 +385,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
         const items2 = [closure_1_15(tmp9, obj7), ];
         const obj9 = { style: closure_3.templateButton, children: null };
         const obj10 = { text: null, onPress: null };
-        const intl = tmp10(1115).intl;
+        const intl = tmp10(1119).intl;
         obj10.text = intl.string(require("util").t.mQS8Is);
         obj10.onPress = function onPress() {
           const communityPermissions = item.communityPermissions;
@@ -227,11 +393,11 @@ export default function GuildSettingsRoleTemplate(arg0) {
           const obj = AnalyticsUtilsDefault;
           const obj2 = { location_page, template_name: key };
           const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(dependencyMap));
-          obj.track(constants2.ROLE_TEMPLATE_SELECTED, obj2);
-          const guild = GuildStore.getGuild(dependencyMap);
+          obj.track(constants.ROLE_TEMPLATE_SELECTED, obj2);
+          guild = GuildStore.getGuild(dependencyMap);
           if (null != guild) {
             const features = guild.features;
-            if (features.has(constants3.COMMUNITY)) {
+            if (features.has(constants2.COMMUNITY)) {
               if (null != communityPermissions) {
                 _require(communityPermissions);
               }
@@ -263,4 +429,4 @@ export default function GuildSettingsRoleTemplate(arg0) {
   items3[1] = closure_14(ref1, obj9);
   obj4.children = items3;
   return closure_15(ref1, obj4);
-};
+});

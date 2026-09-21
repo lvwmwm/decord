@@ -1,23 +1,34 @@
-// Module ID: 8699
-// Function ID: 8700
+// Module ID: 8704
+// Function ID: 8705
 // Name: AgeVerificationIncodeExperiment
-// Dependencies: [1434, 2]
-// Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
+// Dependencies: [1438, 558, 568, 2]
+// Exports: isAgeVerificationIncodeEnabled
 
-// Module 8699 (AgeVerificationIncodeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 8704 (AgeVerificationIncodeExperiment)
+import c from "c" /* 568 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-06-age-verification-incode", defaultConfig: { enabled: false }, variations: null };
-const obj2 = { 1: null };
+let obj2 = { 1: null };
 obj2[1] = { enabled: true };
 obj.variations = obj2;
-let closure_0 = ApexExperiment.createApexExperiment(obj);
+let closure_2 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationIncodeExperiment.tsx");
 
-export const useIsAgeVerificationIncodeEnabled = function useIsAgeVerificationIncodeEnabled(location) {
-  return closure_0.useConfig({ location }).enabled;
-};
+export const useIsAgeVerificationIncodeEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => closure_2.useConfig({ location }).enabled);
 export const isAgeVerificationIncodeEnabled = function isAgeVerificationIncodeEnabled(entryPoint) {
-  return closure_0.getConfig({ location: entryPoint }).enabled;
+  return closure_2.getConfig({ location: entryPoint }).enabled;
 };

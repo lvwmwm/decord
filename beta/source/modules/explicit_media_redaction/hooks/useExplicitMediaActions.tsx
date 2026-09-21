@@ -1,10 +1,10 @@
-// Module ID: 9513
-// Function ID: 9514
+// Module ID: 9512
+// Function ID: 9513
 // Name: useExplicitMediaActions
-// Dependencies: [5, 32, 19, 4656, 2]
+// Dependencies: [5, 32, 19, 4659, 2]
 // Exports: useExplicitMediaActions
 
-// Module 9513 (useExplicitMediaActions)
+// Module 9512 (useExplicitMediaActions)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -34,7 +34,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

@@ -1,23 +1,23 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12126
+// Function ID: 12127
 // Name: LegacyCommands
-// Dependencies: [32, 5676, 4976, 1074, 2019, 9417, 1929, 8006, 4407, 7698, 4936, 2]
+// Dependencies: [32, 5678, 4978, 1078, 2023, 9415, 1933, 8011, 4411, 7703, 4938, 2]
 // Exports: handleLegacyCommands
 
-// Module 12249 (LegacyCommands)
-import UserSettings from "UserSettings" /* 2019 */;
-import ReactionUtils from "ReactionUtils" /* 4407 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8006 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9417 */;
+// Module 12126 (LegacyCommands)
+import UserSettings from "UserSettings" /* 2023 */;
+import ReactionUtils from "ReactionUtils" /* 4411 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8011 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9415 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
-import MessageStore from "MessageStore" /* 4976 */;
-import t_mod from "module_1929" /* 1929 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
+import MessageStore from "MessageStore" /* 4978 */;
+import t_mod from "module_1933" /* 1933 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: metroRequire, MARKDOWN_SPOILER_WRAPPER: closure_7, ME: closure_8 } = Constants);
 const re9 = /\\([*?+/])/g;
 const COMMANDS = {
@@ -57,7 +57,7 @@ const COMMANDS = {
       channel = channel.channel;
       if (null != channel.guild_id) {
         const obj = ChangeNicknameActionCreatorsDefault;
-        obj.changeNickname(channel.guild_id, channel.id, React6, arg0);
+        obj.changeNickname(channel.guild_id, channel.id, closure_1_8, arg0);
         return { content: "" };
       }
     }

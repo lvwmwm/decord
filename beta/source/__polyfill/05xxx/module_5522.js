@@ -1,9 +1,9 @@
 // Module ID: 5522
 // Function ID: 5523
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 5522
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "a9a658fd475f7a20d9e2c83953494ec4", name: "img_bungie_white", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "36aa11af17352d73b5ec4f98f307b37b", name: "img_bungie_light", type: "svg" });

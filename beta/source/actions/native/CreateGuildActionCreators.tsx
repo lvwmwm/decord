@@ -1,14 +1,14 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 12893
+// Function ID: 12894
 // Name: CreateGuildActionCreators
-// Dependencies: [2096, 1074, 10076, 2]
+// Dependencies: [2100, 1078, 10055, 2]
 // Exports: showInstantInviteModal
 
-// Module 12997 (CreateGuildActionCreators)
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+// Module 12893 (CreateGuildActionCreators)
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 
 const require = fn;
-const InstantInviteSources = fn(1074).InstantInviteSources;
+const InstantInviteSources = fn(1078).InstantInviteSources;
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/native/CreateGuildActionCreators.tsx");
 

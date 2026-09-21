@@ -1,26 +1,70 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16690
+// Function ID: 16691
 // Name: GuildsBarFooterWrapper
-// Dependencies: [16621, 21, 4756, 576, 4457, 16361, 5806, 2]
-// Exports: default
+// Dependencies: [16623, 21, 4758, 580, 558, 568, 4462, 16361, 5804, 2]
 
-// Module 16688 (GuildsBarFooterWrapper)
+// Module 16690 (GuildsBarFooterWrapper)
 import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4457 */;
-import NativeViewDefault from "NativeView" /* 5806 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useToken from "useToken" /* 4462 */;
 import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16621 */;
-import createStyles from "createStyles" /* 4756 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16623 */;
+import createStyles from "createStyles" /* 4758 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const NativeViewDefault = tmp3(5804);
 const GUILD_ITEM_HIT_SLOP = GuildsBarConstants.GUILD_ITEM_HIT_SLOP;
 const jsx = jsxProd.jsx;
 let obj = { footerWrapper: { display: "flex", alignSelf: "stretch", alignItems: "center", gap: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING } };
 let closure_5 = createStyles.createStyles(obj);
+let obj2 = { display: "flex", alignSelf: "stretch", alignItems: "center", gap: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING };
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
-export default function GuildsBarFooterWrapper(children) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const cResult = c.c(9);
+  children = children.children;
+  const token = useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const tmp5 = closure_5();
+  const isHomeDrawerEnabled = useHomeDrawerGesture.useIsHomeDrawerEnabled();
+  if (cResult[0] === isHomeDrawerEnabled) {
+    if (cResult[1] === token) {
+      let tmp7 = cResult[2];
+    }
+    if (cResult[3] === tmp5.footerWrapper) {
+      if (cResult[4] === tmp7) {
+        let tmp10 = cResult[5];
+      }
+      if (cResult[6] === children) {
+        if (cResult[7] === tmp10) {
+          let tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+      const obj4 = { style: tmp10, children };
+      const tmp13 = jsx(NativeViewDefault, { style: tmp10, children });
+      cResult[6] = children;
+      cResult[7] = tmp10;
+      cResult[8] = tmp13;
+      tmp11 = tmp13;
+    }
+    const items = [tmp5.footerWrapper, tmp7];
+    cResult[3] = tmp5.footerWrapper;
+    cResult[4] = tmp7;
+    cResult[5] = items;
+    tmp10 = items;
+  }
+  let tmp8 = null;
+  if (!isHomeDrawerEnabled) {
+    const obj5 = { width: token + GUILD_ITEM_HIT_SLOP.left + GUILD_ITEM_HIT_SLOP.right };
+    tmp8 = obj5;
+  }
+  cResult[0] = isHomeDrawerEnabled;
+  cResult[1] = token;
+  cResult[2] = tmp8;
+  tmp7 = tmp8;
+}) : ((children) => {
   const token = useToken.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp2 = closure_5();
   const isHomeDrawerEnabled = useHomeDrawerGesture.useIsHomeDrawerEnabled();
@@ -33,4 +77,4 @@ export default function GuildsBarFooterWrapper(children) {
   }
   style[1] = tmp6;
   return tmp4(NativeViewDefault, { style, children: children.children });
-};
+});

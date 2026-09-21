@@ -1,25 +1,314 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15289
+// Function ID: 15290
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [19, 4805, 1074, 11741, 1255, 11767, 7954, 5668, 15292, 15301, 5084, 5089, 2]
-// Exports: useBountiesModalVideoAnalytics
+// Dependencies: [19, 4807, 1078, 558, 568, 11610, 1259, 11636, 7959, 5670, 15281, 15290, 5086, 5091, 2]
 
-// Module 15300 (useBountiesModalVideoAnalytics)
-import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
-import AdCreativeType from "AdCreativeType" /* 5668 */;
-import AnalyticsActions from "AnalyticsActions" /* 7954 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11767 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15292 */;
+// Module 15289 (useBountiesModalVideoAnalytics)
+import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
+import AdCreativeType from "AdCreativeType" /* 5670 */;
+import AnalyticsActions from "AnalyticsActions" /* 7959 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15281 */;
 import noop from "module_19" /* 19 */;
-import NetworkStore from "NetworkStore" /* 4805 */;
+import NetworkStore from "NetworkStore" /* 4807 */;
 
 require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_6 = [25, 50, 75];
+function getSelectedTrackInfo(arg0) {
+  ({ videoTracks, selectedVideoTrackId } = arg0);
+  if (0 === videoTracks.length) {
+    return { bitrateBps: null, width: null, height: null, levelIndex: null };
+  } else {
+    let num = -1;
+    if (null != selectedVideoTrackId) {
+      num = -1;
+      if (selectedVideoTrackId.length > 0) {
+        num = videoTracks.findIndex((trackId) => trackId.trackId === selectedVideoTrackId);
+      }
+    }
+    const size = num >= 0 ? videoTracks[num] : videoTracks[0];
+    let bitrate = null;
+    if (size.bitrate > 0) {
+      bitrate = size.bitrate;
+    }
+    const size1 = { bitrateBps: bitrate, width: null, height: null, levelIndex: null };
+    let width = null;
+    if (size.width > 0) {
+      width = size.width;
+    }
+    size1.width = width;
+    let height = null;
+    if (size.height > 0) {
+      height = size.height;
+    }
+    size1.height = height;
+    let tmp4 = null;
+    if (num >= 0) {
+      tmp4 = num;
+    }
+    size1.levelIndex = tmp4;
+    return size1;
+  }
+}
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const impression_id = [25, 50, 75];
+const ReactCompilerGating = fn(558);
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesModalVideoAnalytics.tsx");
 
-export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnalytics(bountyId) {
+export const useBountiesModalVideoAnalytics = ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
+  const cResult = bountyId(rewardDurationMs[4]).c(110);
+  bountyId = bountyId.bountyId;
+  const sourceQuestContent = bountyId.sourceQuestContent;
+  rewardDurationMs = bountyId.rewardDurationMs;
+  ({ initialPlaybackTimeSec, initialMaxVideoProgressSec, initialVideoDurationSec, wasPreloaded, verticalScrollingPosition, isActive } = bountyId);
+  let num = 0;
+  if (undefined !== initialPlaybackTimeSec) {
+    num = initialPlaybackTimeSec;
+  }
+  let num2 = 0;
+  if (undefined !== initialMaxVideoProgressSec) {
+    num2 = initialMaxVideoProgressSec;
+  }
+  let num3 = 0;
+  if (undefined !== initialVideoDurationSec) {
+    num3 = initialVideoDurationSec;
+  }
+  let tmp5 = null;
+  if (undefined !== verticalScrollingPosition) {
+    tmp5 = verticalScrollingPosition;
+  }
+  closure_5 = undefined === isActive || isActive;
+  let obj = bountyId(rewardDurationMs[4]);
+  const questImpressionId = bountyId(rewardDurationMs[5]).useQuestImpressionId();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const v4Result = tmp(tmp2[6]).v4();
+    cResult[0] = v4Result;
+    video_session_id = v4Result;
+    const tmpResult2 = tmp(tmp2[6]);
+  } else {
+    video_session_id = cResult[0];
+  }
+  if (cResult[1] === num2) {
+    if (cResult[2] === num) {
+      if (cResult[3] === rewardDurationMs) {
+        let tmp9 = cResult[4];
+      }
+      num2.useRef(tmp9);
+      num2.useRef(false);
+      num2.useRef(num);
+      num2.useRef(num3);
+      num2.useRef(null);
+      closure_13 = num2.useRef(null);
+      num2.useRef(false);
+      num2.useRef(false);
+      num2.useRef(null);
+      num2.useRef(null);
+      num2.useRef(-1);
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const size = { bitrateBps: null, width: null, height: null, levelIndex: null };
+        cResult[5] = size;
+        let tmp13 = size;
+      } else {
+        tmp13 = cResult[5];
+      }
+      closure_19 = num2.useRef(tmp13);
+      const _Symbol2 = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function $() {
+          if (null != ref7.current) {
+            const _clearTimeout = clearTimeout;
+            clearTimeout(tmp.current);
+            tmp.current = null;
+          }
+        };
+        cResult[6] = fn;
+        let tmp14 = fn;
+      } else {
+        tmp14 = cResult[6];
+      }
+      closure_20 = tmp14;
+      let result = rewardDurationMs / 1000;
+      if (cResult[7] === result) {
+        if (cResult[8] === tmp5) {
+          if (cResult[9] === tmp4) {
+            let tmp16 = cResult[10];
+          }
+          closure_21 = tmp16;
+          const _Symbol3 = Symbol;
+          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+            class J {
+              constructor() {
+                current = closure_19.current;
+                obj = { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
+                return obj;
+              }
+            }
+            cResult[11] = J;
+            const tmp17 = J;
+          } else {
+            class J {
+              constructor() {
+                current = closure_19.current;
+                obj = { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
+                return obj;
+              }
+            }
+          }
+          J = tmp17;
+          if (cResult[12] === num2) {
+            class J {
+              constructor() {
+                current = closure_19.current;
+                obj = { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
+                return obj;
+              }
+            }
+            if (cResult[15] === bountyId) {
+              class J {
+                constructor() {
+                  current = closure_19.current;
+                  obj = { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
+                  return obj;
+                }
+              }
+            }
+            class Z {
+              constructor(arg0) {
+                ({ videoTimestampSeconds, progress, thresholdMet } = bountyId);
+                obj = closure_0(closure_2[8]);
+                obj1 = { adContentId: bountyId, adCreativeType: closure_0(closure_2[9]).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_PROGRESSED, properties: null, sourceQuestContent };
+                obj4 = { progress, video_timestamp_seconds: videoTimestampSeconds, video_session_id: closure_7, impression_id: closure_6, threshold_met: thresholdMet, reward_timer_seconds: rewardDurationMs / 1000 };
+                obj1.properties = obj4;
+                trackAdContentEventResult = obj.trackAdContentEvent(obj1);
+                return;
+              }
+            }
+            cResult[15] = bountyId;
+            class W {
+              constructor(arg0) {
+                if (!closure_9.current) {
+                  tmp2 = bountyId;
+                  flag = true;
+                  tmp.current = true;
+                  num = 0;
+                  if (bountyId <= 0) {
+                    tmp2 = initialVideoDurationSec;
+                  }
+                  if (tmp2 > 0) {
+                    tmp10 = closure_0;
+                    tmp11 = closure_2;
+                    obj = closure_0(closure_2[7]);
+                    tmp12 = closure_3;
+                    tmp15 = closure_6;
+                    result = obj.formatVideoProgressRatio(closure_3, tmp2);
+                    tmp14 = closure_6;
+                    iter = closure_6[Symbol.iterator]();
+                    tmp16 = globalThis;
+                    str = "p";
+                    num2 = 100;
+                    tmp3 = tmp14;
+                    nextResult = iter.next();
+                    tmp5 = iter;
+                    while (iter !== undefined) {
+                      if (result >= nextResult / 100) {
+                        tmp7 = closure_8;
+                        current = closure_8.current;
+                        tmp8 = nextResult;
+                        _HermesInternal = HermesInternal;
+                        addResult = current.add("p" + tmp6);
+                      }
+                      continue;
+                    }
+                  }
+                }
+                return;
+              }
+            }
+            cResult[17] = rewardDurationMs;
+            cResult[18] = sourceQuestContent;
+            cResult[19] = Z;
+          }
+          class W {
+            constructor(arg0) {
+              if (!closure_9.current) {
+                tmp2 = bountyId;
+                flag = true;
+                tmp.current = true;
+                num = 0;
+                if (bountyId <= 0) {
+                  tmp2 = initialVideoDurationSec;
+                }
+                if (tmp2 > 0) {
+                  tmp10 = closure_0;
+                  tmp11 = closure_2;
+                  obj = closure_0(closure_2[7]);
+                  tmp12 = closure_3;
+                  tmp15 = closure_6;
+                  result = obj.formatVideoProgressRatio(closure_3, tmp2);
+                  tmp14 = closure_6;
+                  iter = closure_6[Symbol.iterator]();
+                  tmp16 = globalThis;
+                  str = "p";
+                  num2 = 100;
+                  tmp3 = tmp14;
+                  nextResult = iter.next();
+                  tmp5 = iter;
+                  while (iter !== undefined) {
+                    if (result >= nextResult / 100) {
+                      tmp7 = closure_8;
+                      current = closure_8.current;
+                      tmp8 = nextResult;
+                      _HermesInternal = HermesInternal;
+                      addResult = current.add("p" + tmp6);
+                    }
+                    continue;
+                  }
+                }
+              }
+              return;
+            }
+          }
+          cResult[12] = num2;
+          cResult[13] = num3;
+          cResult[14] = W;
+        }
+      }
+      let obj2 = { was_preloaded: tmp4, startup_path: "active_only", vertical_scrolling_position: tmp5, reward_timer_seconds: result };
+      cResult[7] = result;
+      cResult[8] = tmp5;
+      cResult[9] = tmp4;
+      cResult[10] = obj2;
+      tmp16 = obj2;
+    }
+  }
+  const set = new Set();
+  if (tmp10) {
+    class J {
+      constructor() {
+        current = closure_19.current;
+        obj = { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
+        return obj;
+      }
+    }
+    set.add("start");
+  }
+  if (1000 * num2 >= rewardDurationMs) {
+    class J {
+      constructor() {
+        current = closure_19.current;
+        obj = { hls_level_index: current.levelIndex, hls_segment_res_width: current.width, hls_segment_res_height: current.height };
+        return obj;
+      }
+    }
+    set.add("threshold");
+  }
+  cResult[1] = num2;
+  cResult[2] = num;
+  cResult[3] = rewardDurationMs;
+  cResult[4] = set;
+  tmp9 = set;
+}) : ((bountyId) => {
   bountyId = bountyId.bountyId;
   const sourceQuestContent = bountyId.sourceQuestContent;
   const rewardDurationMs = bountyId.rewardDurationMs;
@@ -62,8 +351,8 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   let callback14;
   let callback15;
   let callback16;
-  const questImpressionId = bountyId(rewardDurationMs[3]).useQuestImpressionId();
-  const memo = num2.useMemo(() => bountyId(rewardDurationMs[4]).v4(), []);
+  const questImpressionId = bountyId(rewardDurationMs[5]).useQuestImpressionId();
+  const memo = num2.useMemo(() => bountyId(rewardDurationMs[6]).v4(), []);
   const set = new Set();
   if (tmp4) {
     set.add("start");
@@ -218,23 +507,23 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   const items11 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
   const callback11 = obj2.useCallback((video_timestamp_seconds, arg1) => {
     if (arg1 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
-      const obj = { adContentId: bountyId, adCreativeType: tmp(5668).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_PAUSED, properties: null, sourceQuestContent: null };
+      const obj = { adContentId: bountyId, adCreativeType: tmp(5670).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_PAUSED, properties: null, sourceQuestContent: null };
       const obj2 = { video_timestamp_seconds, video_session_id: memo, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
       obj.properties = obj2;
       obj.sourceQuestContent = sourceQuestContent;
-      tmp(7954).trackAdContentEvent(obj);
-      const tmpResult = tmp(7954);
+      tmp(7959).trackAdContentEvent(obj);
+      const tmpResult = tmp(7959);
     }
   }, items10);
   const items12 = [bountyId, memo, questImpressionId, sourceQuestContent, rewardDurationMs];
   const callback12 = obj2.useCallback((video_timestamp_seconds, arg1) => {
     if (arg1 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
-      const obj = { adContentId: bountyId, adCreativeType: tmp(5668).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_RESUMED, properties: null, sourceQuestContent: null };
+      const obj = { adContentId: bountyId, adCreativeType: tmp(5670).AdCreativeType.BOUNTY, event: AnalyticEvents.AD_VIDEO_RESUMED, properties: null, sourceQuestContent: null };
       const obj2 = { video_timestamp_seconds, video_session_id: memo, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
       obj.properties = obj2;
       obj.sourceQuestContent = sourceQuestContent;
-      tmp(7954).trackAdContentEvent(obj);
-      const tmpResult = tmp(7954);
+      tmp(7959).trackAdContentEvent(obj);
+      const tmpResult = tmp(7959);
     }
   }, items11);
   const items13 = [bountyId, memo, questImpressionId, callback1, memo1, sourceQuestContent];
@@ -267,7 +556,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj2.sourceQuestContent = sourceQuestContent;
     obj.trackAdContentEvent(obj2);
     if (tmpResult.isSourceError(error)) {
-      const obj5 = { name: tmp(5089).MetricEvents.QUEST_VIDEO_ERROR, tags: ["error_type:SOURCE_ERROR"] };
+      const obj5 = { name: tmp(5091).MetricEvents.QUEST_VIDEO_ERROR, tags: ["error_type:SOURCE_ERROR"] };
       MonitoringAgentDefault.increment(obj5);
     }
   }, items12);
@@ -362,48 +651,15 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   }, items18);
   const items19 = [callback15, flag2];
   obj3.handleVideoTracksAnalytics = num2.useCallback((arg0) => {
-    ({ videoTracks, selectedVideoTrackId } = arg0);
-    if (0 === videoTracks.length) {
-      let size1 = { bitrateBps: null, width: null, height: null, levelIndex: null };
-    } else {
-      let num = -1;
-      if (null != selectedVideoTrackId) {
-        num = -1;
-        if (selectedVideoTrackId.length > 0) {
-          num = videoTracks.findIndex((trackId) => trackId.trackId === selectedVideoTrackId);
-        }
-      }
-      const size = num >= 0 ? videoTracks[num] : videoTracks[0];
-      let bitrate = null;
-      if (size.bitrate > 0) {
-        bitrate = size.bitrate;
-      }
-      size1 = { bitrateBps: bitrate, width: null, height: null, levelIndex: null };
-      let width = null;
-      if (size.width > 0) {
-        width = size.width;
-      }
-      size1.width = width;
-      let height = null;
-      if (size.height > 0) {
-        height = size.height;
-      }
-      size1.height = height;
-      let tmp5 = null;
-      if (num >= 0) {
-        tmp5 = num;
-      }
-      size1.levelIndex = tmp5;
-    }
-    closure_21.current = size1;
-    let tmp6 = flag2;
+    closure_21.current = getSelectedTrackInfo(arg0);
+    let tmp2 = flag2;
     if (flag2) {
-      tmp6 = null != closure_15.current;
+      tmp2 = null != closure_15.current;
     }
-    if (tmp6) {
-      tmp6 = null != tmp.current.bitrateBps;
+    if (tmp2) {
+      tmp2 = null != closure_21.current.bitrateBps;
     }
-    if (tmp6) {
+    if (tmp2) {
       callback15();
     }
   }, items19);
@@ -441,4 +697,4 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     }
   }, items21);
   return obj3;
-};
+});

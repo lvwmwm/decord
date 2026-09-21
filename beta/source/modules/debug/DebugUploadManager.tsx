@@ -1,14 +1,14 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 13012
+// Function ID: 13013
 // Name: DebugUploadManager
-// Dependencies: [5, 2041, 3, 17, 4656, 9686, 10446, 10447, 7, 10448, 10449, 1350, 4620, 10450, 10451, 10452, 10453, 2]
+// Dependencies: [5, 2045, 3, 17, 4659, 9681, 13013, 13014, 7, 13015, 13016, 1354, 4623, 13017, 13018, 13019, 13020, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 10445 (DebugUploadManager)
+// Module 13012 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 let closure_9 = async function _uploadDebugLogFiles(arg0, value) {
@@ -22,7 +22,7 @@ let closure_9 = async function _uploadDebugLogFiles(arg0, value) {
       const obj4 = { value, done: true };
       return obj4;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -97,7 +97,7 @@ let closure_9 = async function _uploadDebugLogFiles(arg0, value) {
       } else {
         c5 = 0;
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp38) {
       closure_4 = tmp38;
@@ -131,7 +131,7 @@ let closure_11 = async function _uploadAppLogFiles(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {

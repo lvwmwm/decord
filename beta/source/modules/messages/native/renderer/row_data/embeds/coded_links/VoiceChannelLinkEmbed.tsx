@@ -1,34 +1,34 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13529
+// Function ID: 13530
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 2059, 2041, 2063, 4395, 4405, 1372, 1074, 7978, 8203, 1397, 1364, 1115, 5239, 4909, 2]
+// Dependencies: [32, 17, 2063, 2045, 2067, 4399, 4409, 1376, 1078, 7983, 8208, 1401, 1368, 1119, 5241, 4911, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 13526 (VoiceChannelLinkEmbed)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8203 */;
+// Module 13529 (VoiceChannelLinkEmbed)
+import util from "util" /* 1119 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import useChannelName from "useChannelName" /* 4911 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const Image = fn(17).Image;
-const getGuildAcronym = fn(2059).getGuildAcronym;
-const Permissions = fn(1074).Permissions;
-const InviteTypes = fn(7978).InviteTypes;
+const getGuildAcronym = fn(2063).getGuildAcronym;
+const Permissions = fn(1078).Permissions;
+const InviteTypes = fn(7983).InviteTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
 
 export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(code, arg1) {
   const tmp = _slicedToArray(code.split("/"), 2);
   const channel = ChannelStore.getChannel(tmp[1]);
-  const guild = GuildStore.getGuild(tmp[0]);
+  guild = GuildStore.getGuild(tmp[0]);
   if (null != channel) {
     if (channel.isGuildVocal()) {
       if (null != guild) {
@@ -50,8 +50,8 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
                 icon1 = guild.icon;
               }
               obj.icon = icon1;
-              const guildIconURL = tmp4(1397).getGuildIconURL(obj);
-              const tmp4Result = tmp4(1397);
+              const guildIconURL = tmp4(1401).getGuildIconURL(obj);
+              const tmp4Result = tmp4(1401);
             } else if (null != guild) {
               const tmp8 = getGuildAcronym(guild);
             }
@@ -66,9 +66,9 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj2.headerText = str;
             obj2.headerColor = colors.headerColor;
             obj5 = PlatformUtils;
-            const intl = tmp16(1115).intl;
+            const intl = tmp16(1119).intl;
             const string = intl.string;
-            const t = tmp16(1115).t;
+            const t = tmp16(1119).t;
             if (isGuildStageVoiceResult) {
               let stringResult = string(t["7vb2cc"]);
             } else {
@@ -99,7 +99,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj2.acceptLabelColor = colors.acceptLabelGreenColor;
             obj2.embedCanBeTapped = true;
             obj2.canBeAccepted = true;
-            const intl2 = tmp16(1115).intl;
+            const intl2 = tmp16(1119).intl;
             const obj3 = { guildName: guild.name };
             obj2.channelName = intl2.formatToPlainString(util.t["2wimj5"], obj3);
             obj2.subtitle = "";

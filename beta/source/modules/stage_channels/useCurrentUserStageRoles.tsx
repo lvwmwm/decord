@@ -1,20 +1,48 @@
-// Module ID: 9758
-// Function ID: 9759
+// Module ID: 9754
+// Function ID: 9755
 // Name: useCurrentUserStageRoles
-// Dependencies: [502, 5638, 504, 2]
-// Exports: default
+// Dependencies: [502, 5640, 558, 568, 504, 2]
 
-// Module 9758 (useCurrentUserStageRoles)
+// Module 9754 (useCurrentUserStageRoles)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5638 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useCurrentUserStageRoles.tsx");
 
-export default function useCurrentUserStageRoles(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  const cResult = require("c").c(5);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [StageChannelRoleStore, AuthenticationStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === (undefined !== arg1 && arg1)) {
+    if (cResult[2] === arg0) {
+      let tmp8 = cResult[3];
+      let tmp9 = cResult[4];
+    }
+    return require("initialize").useStateFromStoresObject(first, tmp8, tmp9);
+  }
+  const fn = function c() {
+    return StageChannelRoleStore.getPermissionsForUser(AuthenticationStore.getId(), closure_0, closure_1);
+  };
+  const items1 = [arg0, undefined !== arg1 && arg1];
+  cResult[1] = undefined !== arg1 && arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  cResult[4] = items1;
+  tmp9 = items1;
+  tmp8 = fn;
+}) : ((arg0) => {
   _require = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -23,4 +51,4 @@ export default function useCurrentUserStageRoles(arg0) {
   const items = [StageChannelRoleStore, AuthenticationStore];
   const items1 = [arg0, flag];
   return require("initialize").useStateFromStoresObject(items, () => StageChannelRoleStore.getPermissionsForUser(AuthenticationStore.getId(), closure_0, flag), items1);
-};
+});

@@ -1,16 +1,16 @@
-// Module ID: 17794
-// Function ID: 17795
+// Module ID: 17797
+// Function ID: 17798
 // Name: InteractionModalManager
-// Dependencies: [5, 4983, 8199, 1074, 1978, 17795, 1980, 1241, 2067, 1231, 17806, 17809, 7363, 2]
+// Dependencies: [5, 4985, 8204, 1078, 1982, 17798, 1984, 1245, 2071, 1235, 17809, 17812, 7365, 2]
 
-// Module 17794 (InteractionModalManager)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17806 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17809 */;
+// Module 17797 (InteractionModalManager)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 17809 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17812 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import InteractionStore from "InteractionStore" /* 8199 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
+import InteractionStore from "InteractionStore" /* 8204 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
 let closure_8 = async function _handleInteractionModalCreate(arg0, value) {
@@ -24,7 +24,7 @@ let closure_8 = async function _handleInteractionModalCreate(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -109,7 +109,7 @@ let closure_8 = async function _handleInteractionModalCreate(arg0, value) {
           let obj = closure_130_1(closure_130_2[9]);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp19) {
       c4 = tmp;
@@ -117,7 +117,7 @@ let closure_8 = async function _handleInteractionModalCreate(arg0, value) {
     }
   }
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const interaction_iframe_modal = "interaction_iframe_modal";
 const prototype = function InteractionModalManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

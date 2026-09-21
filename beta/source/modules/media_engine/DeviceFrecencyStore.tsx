@@ -1,17 +1,17 @@
-// Module ID: 4784
-// Function ID: 4785
+// Module ID: 4786
+// Function ID: 4787
 // Name: DeviceFrecencyStore
-// Dependencies: [1992, 1372, 4781, 4785, 4793, 504, 12, 573, 2]
+// Dependencies: [1996, 1376, 4783, 4787, 4795, 504, 12, 577, 2]
 
-// Module 4784 (DeviceFrecencyStore)
+// Module 4786 (DeviceFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4793 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import FrecencyDefault from "Frecency" /* 4795 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import UserStore from "UserStore" /* 1376 */;
 
-const Constants = fn(4781);
+const Constants = fn(4783);
 const DeviceTypes = Constants.DeviceTypes;
 ({ MediaEngineContextTypes: hasOwnProperty, SpeakingFlags: metroRequire } = Constants);
 let closure_7 = { inputDeviceFrecency: DeviceTypes.AUDIO_INPUT, outputDeviceFrecency: DeviceTypes.AUDIO_OUTPUT, videoDeviceFrecency: DeviceTypes.VIDEO_INPUT };
@@ -29,11 +29,11 @@ let obj = {
   numFrequentlyItems: Infinity
 };
 let obj2 = {};
-const stopWatch = new fn(4785).StopWatch();
+const stopWatch = new fn(4787).StopWatch();
 obj2[DeviceTypes.AUDIO_INPUT] = stopWatch;
-const stopWatch1 = new fn(4785).StopWatch();
+const stopWatch1 = new fn(4787).StopWatch();
 obj2[DeviceTypes.AUDIO_OUTPUT] = stopWatch1;
-const stopWatch2 = new fn(4785).StopWatch();
+const stopWatch2 = new fn(4787).StopWatch();
 obj2[DeviceTypes.VIDEO_INPUT] = stopWatch2;
 const dependencyMap = { [DeviceTypes.AUDIO_INPUT]: {}, [DeviceTypes.AUDIO_OUTPUT]: {}, [DeviceTypes.VIDEO_INPUT]: {} };
 let obj3 = {};

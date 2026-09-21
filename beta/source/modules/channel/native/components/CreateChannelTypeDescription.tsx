@@ -1,29 +1,84 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 9812
+// Function ID: 9813
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 9835, 1074, 21, 9836, 5768, 4752, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 9813, 1078, 21, 558, 568, 9814, 5770, 4754, 1119, 2]
 
-// Module 9834 (CreateChannelTypeDescription)
-import useGuildProfile from "useGuildProfile" /* 9836 */;
+// Module 9812 (CreateChannelTypeDescription)
+import c from "c" /* 568 */;
+import useGuildProfile from "useGuildProfile" /* 9814 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildProfileFetchStatus = fn(9835).GuildProfileFetchStatus;
-const ChannelTypes = fn(1074).ChannelTypes;
+const GuildProfileFetchStatus = fn(9813).GuildProfileFetchStatus;
+const ChannelTypes = fn(1078).ChannelTypes;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/native/components/CreateChannelTypeDescription.tsx");
 
-export default function CreateChannelTypeDescription(guildId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let stringResult = dependencyMap;
+  const cResult = c.c(6);
+  ({ guildId, channelType } = arg0);
+  const guildProfile1 = useGuildProfile.useGuildProfile(guildId);
+  ({ guildProfile, fetchGuildProfile } = guildProfile1);
+  let hasItem = null != guildProfile;
+  if (hasItem) {
+    const VISIBLE = tmp(5770).GuildProfileVisibilitySets.VISIBLE;
+    hasItem = VISIBLE.has(guildProfile.visibility);
+  }
+  let tmp7 = !tmp6;
+  if (guildProfile1.fetchStatus === GuildProfileFetchStatus.FETCHED) {
+    tmp7 = !hasItem;
+  }
+  if (tmp7) {
+    tmp7 = channelType === ChannelTypes.GUILD_ANNOUNCEMENT;
+  }
+  if (cResult[0] !== fetchGuildProfile) {
+    const fn = function c() {
+      fetchGuildProfile();
+    };
+    cResult[0] = fetchGuildProfile;
+    cResult[1] = fn;
+    let tmp9 = fn;
+  } else {
+    tmp9 = cResult[1];
+  }
+  if (cResult[2] === fetchGuildProfile) {
+    if (cResult[3] === guildId) {
+      let tmp10 = cResult[4];
+    }
+    const effect = noop.useEffect(tmp9, tmp10);
+    if (!tmp7) {
+      return null;
+    } else {
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj3 = { children: null };
+        const obj4 = { variant: "text-sm/normal", color: "text-subtle", children: null };
+        const intl = tmp(1119).intl;
+        stringResult = intl.string(tmp(1119).t["2Ab4Id"]);
+        obj4.children = stringResult;
+        obj3.children = jsx(tmp(4754).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+        const tmp18 = <View>{null}</View>;
+        cResult[5] = tmp18;
+      }
+    }
+  }
+  const items = [guildId, fetchGuildProfile];
+  cResult[2] = fetchGuildProfile;
+  cResult[3] = guildId;
+  cResult[4] = items;
+  tmp10 = items;
+}) : ((guildId) => {
   guildId = guildId.guildId;
   fetchGuildProfile = undefined;
   const guildProfile1 = useGuildProfile.useGuildProfile(guildId);
   ({ guildProfile, fetchGuildProfile } = guildProfile1);
   let hasItem = null != guildProfile;
   if (hasItem) {
-    const VISIBLE = tmp(5768).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(5770).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = !tmp5;
@@ -41,10 +96,10 @@ export default function CreateChannelTypeDescription(guildId) {
   if (tmp6) {
     const obj2 = { children: null };
     const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: null };
-    const intl = tmp(1115).intl;
-    obj3.children = intl.string(tmp(1115).t["2Ab4Id"]);
-    obj2.children = jsx(tmp(4752).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
+    const intl = tmp(1119).intl;
+    obj3.children = intl.string(tmp(1119).t["2Ab4Id"]);
+    obj2.children = jsx(tmp(4754).Text, { variant: "text-sm/normal", color: "text-subtle", children: null });
     tmp9 = <View>{null}</View>;
   }
   return tmp9;
-};
+});

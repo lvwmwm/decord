@@ -1,21 +1,21 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11385
+// Function ID: 11386
 // Name: ProfileUpdateRequestUtils
-// Dependencies: [7234, 11355, 1973, 2]
+// Dependencies: [7235, 11386, 1977, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 11354 (ProfileUpdateRequestUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7234 */;
-import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 11355 */;
+// Module 11385 (ProfileUpdateRequestUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7235 */;
+import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 11386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
-export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(pendingChanges, id) {
+export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(c0, id) {
   const obj = {};
-  if (undefined !== pendingChanges.pendingBanner) {
-    const pendingBanner = pendingChanges.pendingBanner;
+  if (undefined !== c0.pendingBanner) {
+    const pendingBanner = c0.pendingBanner;
     let imageUri;
     if (pendingBanner != null) {
       imageUri = pendingBanner.imageUri;
@@ -24,27 +24,27 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
       imageUri = null;
     }
     obj.banner = imageUri;
-    if (null !== pendingChanges.pendingBanner) {
-      let originalMd5 = pendingChanges.pendingBanner.originalMd5;
+    if (null !== c0.pendingBanner) {
+      let originalMd5 = c0.pendingBanner.originalMd5;
       if (originalMd5 == null) {
         originalMd5 = null;
       }
       obj.bannerOriginalMd5 = originalMd5;
     }
   }
-  if (null != pendingChanges.pendingBio) {
-    obj.bio = pendingChanges.pendingBio;
+  if (null != c0.pendingBio) {
+    obj.bio = c0.pendingBio;
   }
-  if (null != pendingChanges.pendingPronouns) {
-    obj.pronouns = pendingChanges.pendingPronouns;
+  if (null != c0.pendingPronouns) {
+    obj.pronouns = c0.pendingPronouns;
   }
-  if (undefined !== pendingChanges.pendingAccentColor) {
-    obj.accent_color = pendingChanges.pendingAccentColor;
+  if (undefined !== c0.pendingAccentColor) {
+    obj.accent_color = c0.pendingAccentColor;
   }
-  if (undefined !== pendingChanges.pendingThemeColors) {
-    obj.theme_colors = pendingChanges.pendingThemeColors;
+  if (undefined !== c0.pendingThemeColors) {
+    obj.theme_colors = c0.pendingThemeColors;
   }
-  ({ pendingProfileEffect, pendingProfileFrame } = pendingChanges);
+  ({ pendingProfileEffect, pendingProfileFrame } = c0);
   if (undefined === pendingProfileEffect) {
     if (undefined === pendingProfileFrame) {
       let obj2 = {};
@@ -83,16 +83,16 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
   }
   obj2 = { collectibles_sku_ids: arr5.map((skuId) => skuId.skuId) };
 };
-export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpdateRequest(pendingChanges) {
+export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpdateRequest(c0) {
   const obj = {};
-  if (undefined !== pendingChanges.pendingGlobalName) {
-    obj.globalName = pendingChanges.pendingGlobalName;
+  if (undefined !== c0.pendingGlobalName) {
+    obj.globalName = c0.pendingGlobalName;
   }
-  if (undefined !== pendingChanges.pendingNameplate) {
-    obj.nameplate = pendingChanges.pendingNameplate;
+  if (undefined !== c0.pendingNameplate) {
+    obj.nameplate = c0.pendingNameplate;
   }
-  if (undefined !== pendingChanges.pendingAvatar) {
-    const pendingAvatar = pendingChanges.pendingAvatar;
+  if (undefined !== c0.pendingAvatar) {
+    const pendingAvatar = c0.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
     } else if (pendingAvatar.assetOrigin === ProfilePendingImageTypes.AssetOriginTypes.ARCHIVED_ASSET) {
@@ -101,14 +101,14 @@ export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpda
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);
     }
   }
-  if (undefined !== pendingChanges.pendingAvatarDecoration) {
-    obj.avatarDecoration = pendingChanges.pendingAvatarDecoration;
+  if (undefined !== c0.pendingAvatarDecoration) {
+    obj.avatarDecoration = c0.pendingAvatarDecoration;
   }
-  if (undefined !== pendingChanges.pendingDisplayNameStyles) {
-    obj.displayNameStyles = pendingChanges.pendingDisplayNameStyles;
+  if (undefined !== c0.pendingDisplayNameStyles) {
+    obj.displayNameStyles = c0.pendingDisplayNameStyles;
   }
-  if (undefined !== pendingChanges.pendingCustomTypingIndicatorStyle) {
-    obj.typingIndicatorStyle = pendingChanges.pendingCustomTypingIndicatorStyle;
+  if (undefined !== c0.pendingCustomTypingIndicatorStyle) {
+    obj.typingIndicatorStyle = c0.pendingCustomTypingIndicatorStyle;
   }
   return obj;
 };
@@ -142,10 +142,10 @@ export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChan
   }
   return obj;
 };
-export const getPrimaryGuildChangesForUpdateRequest = function getPrimaryGuildChangesForUpdateRequest(pendingChanges) {
+export const getPrimaryGuildChangesForUpdateRequest = function getPrimaryGuildChangesForUpdateRequest(c0) {
   const obj = {};
-  if (undefined !== pendingChanges.pendingPrimaryGuildId) {
-    obj.primaryGuildId = pendingChanges.pendingPrimaryGuildId;
+  if (undefined !== c0.pendingPrimaryGuildId) {
+    obj.primaryGuildId = c0.pendingPrimaryGuildId;
   }
   return obj;
 };

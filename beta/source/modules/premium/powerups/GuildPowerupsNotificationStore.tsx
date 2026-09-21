@@ -1,15 +1,15 @@
-// Module ID: 12746
-// Function ID: 12747
+// Module ID: 12655
+// Function ID: 12656
 // Name: GuildPowerupsNotificationStore
-// Dependencies: [4665, 2063, 4644, 12747, 504, 573, 2]
+// Dependencies: [4668, 2067, 4647, 12656, 504, 577, 2]
 
-// Module 12746 (GuildPowerupsNotificationStore)
+// Module 12655 (GuildPowerupsNotificationStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12747 */;
-import GameServerStore from "GameServerStore" /* 4665 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12656 */;
+import GameServerStore from "GameServerStore" /* 4668 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;
 
 require = fn;
 let closure_5 = {};
@@ -46,7 +46,7 @@ GuildPowerupsNotificationStore.migrations = items;
 const guildPowerupsNotificationStore = new GuildPowerupsNotificationStore(DispatcherDefault, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function handleAckNotification(guildId) {
     guildId = guildId.guildId;
-    const guild = GuildStore.getGuild(guildId);
+    guild = GuildStore.getGuild(guildId);
     let num;
     if (guild != null) {
       num = guild.premiumSubscriberCount;

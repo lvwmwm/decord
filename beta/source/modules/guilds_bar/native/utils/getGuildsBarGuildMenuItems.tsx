@@ -1,23 +1,23 @@
-// Module ID: 16625
-// Function ID: 16626
+// Module ID: 16627
+// Function ID: 16628
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2063, 4937, 1074, 10402, 7326, 1115, 14229, 1980, 9874, 7364, 7622, 14176, 12631, 4723, 10397, 12632, 7359, 2]
+// Dependencies: [5, 2067, 4939, 1078, 10418, 7328, 1119, 14232, 1984, 9852, 7366, 7624, 14179, 12525, 4725, 11539, 12526, 7361, 2]
 // Exports: default
 
-// Module 16625 (getGuildsBarGuildMenuItems)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7359 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7364 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14176 */;
+// Module 16627 (getGuildsBarGuildMenuItems)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14179 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AnalyticsSections = fn(1074).AnalyticsSections;
+const AnalyticsSections = fn(1078).AnalyticsSections;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guilds_bar/native/utils/getGuildsBarGuildMenuItems.tsx");
 
@@ -41,7 +41,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
             const items = [closure_128_0];
             value.default(items, constants.GUILD_LIST);
             paths = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           paths = tmp;
@@ -92,7 +92,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
   const intl3 = require("util").intl;
   obj4.label = intl3.string(require("util").t.PdRCRg);
   obj4.action = function action() {
-    const guild = GuildStore.getGuild(closure_0);
+    guild = GuildStore.getGuild(closure_0);
     if (null != guild) {
       openGuildActionSheetDefault(guild);
     }
@@ -102,9 +102,9 @@ export default function getGuildsBarGuildMenuItems(guildId) {
     const splice = items.splice;
     const obj5 = { iconSource: null, label: null, action: null };
     if (isMutedResult) {
-      obj5.iconSource = tmp5(12632);
-      const intl5 = tmp(1115).intl;
-      obj5.label = intl5.string(tmp(1115).t.De0BTC);
+      obj5.iconSource = tmp5(12526);
+      const intl5 = tmp(1119).intl;
+      obj5.label = intl5.string(tmp(1119).t.De0BTC);
       obj5.action = function action() {
         if (null != closure_0) {
           const result = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings(tmp, { muted: false }, NotificationSettingsUtils.NotificationLabels.Unmuted);
@@ -112,12 +112,12 @@ export default function getGuildsBarGuildMenuItems(guildId) {
       };
       splice(1, 0, obj5);
     } else {
-      obj5.iconSource = tmp5(12631);
-      const intl4 = tmp(1115).intl;
-      obj5.label = intl4.string(tmp(1115).t.vRzp7P);
+      obj5.iconSource = tmp5(12525);
+      const intl4 = tmp(1119).intl;
+      obj5.label = intl4.string(tmp(1119).t.vRzp7P);
       obj5.action = function action() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequireImpl(10397, dependencyMap.paths), "muteSettings" + guildId, { guildId });
+        obj.openLazy(asyncRequireImpl(11539, dependencyMap.paths), "muteSettings" + guildId, { guildId });
       };
       splice(1, 0, obj5);
     }

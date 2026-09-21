@@ -1,13 +1,13 @@
-// Module ID: 13233
-// Function ID: 13234
+// Module ID: 13236
+// Function ID: 13237
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 13234, 1074, 13236, 1271, 573, 2]
+// Dependencies: [5, 13237, 1078, 13239, 1275, 577, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 13233 (CustomActivityLinkUtils)
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13236 */;
+// Module 13236 (CustomActivityLinkUtils)
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13239 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 13234 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 13237 */;
 
 require = fn;
 function fetchCustomActivityLink() {
@@ -31,7 +31,7 @@ let closure_7 = async function _fetchCustomActivityLink(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -120,7 +120,7 @@ let closure_8 = async function _getCustomActivityLinkParams(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -162,7 +162,7 @@ let closure_8 = async function _getCustomActivityLinkParams(arg0, value) {
       } else if (1 === tmp6) {
         c6 = 0;
         c7 = 3;
-        const obj9 = { value: { customId: "r" }, done: true };
+        const obj9 = { value: { customId: "emoji" }, done: true };
         return obj9;
       } else if (arg0 === 1) {
         c7 = 3;
@@ -206,7 +206,7 @@ let closure_10 = async function _loadCustomActivityLink() {
     return Promise.reject("fetchCustomActivityLink body is null");
   }
   closure_131_1(closure_131_2[5]).dispatch({ type: "CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS", applicationId: closure_130_0, link: closure_130_1 });
-  await "HermesInternal";
+  await "IconComponent";
   closure_3 = tmp5;
   closure_2 = tmp2;
   closure_130_0 = closure_0;
@@ -219,7 +219,7 @@ let closure_10 = async function _loadCustomActivityLink() {
   }
   return Promise.reject("appId or linkId null");
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const set = new Set();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/activities/utils/CustomActivityLinkUtils.tsx");

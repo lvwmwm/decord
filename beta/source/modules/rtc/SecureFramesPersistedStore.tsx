@@ -1,11 +1,11 @@
-// Module ID: 9971
-// Function ID: 9972
+// Module ID: 9949
+// Function ID: 9950
 // Name: SecureFramesPersistedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 9971 (SecureFramesPersistedStore)
+// Module 9949 (SecureFramesPersistedStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 let items = [];
 let persistentCodesEnabled = false;

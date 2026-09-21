@@ -1,13 +1,13 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9697
+// Function ID: 9698
 // Name: WindowVisibilityUtils
-// Dependencies: [1979, 1074, 9697, 2]
+// Dependencies: [1983, 1078, 9696, 2]
 // Exports: default
 
-// Module 9698 (WindowVisibilityUtils)
-import AppStateStore from "AppStateStore" /* 1979 */;
+// Module 9697 (WindowVisibilityUtils)
+import AppStateStore from "AppStateStore" /* 1983 */;
 
-const AppStates = fn(1074).AppStates;
+const AppStates = fn(1078).AppStates;
 const size = fn(2);
 const result = size.fileFinishedImporting("lib/WindowVisibilityUtils.native.tsx");
 

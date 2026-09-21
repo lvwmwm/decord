@@ -1,28 +1,126 @@
-// Module ID: 11129
-// Function ID: 11130
+// Module ID: 11170
+// Function ID: 11171
 // Name: useFastestListTableRowPlaceholderConfig
-// Dependencies: [19, 4756, 576, 1177, 5658, 7307, 2]
-// Exports: default
+// Dependencies: [19, 4758, 580, 1181, 5660, 558, 568, 7309, 2]
 
-// Module 11129 (useFastestListTableRowPlaceholderConfig)
-import nativeDefault from "native" /* 576 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7307 */;
+// Module 11170 (useFastestListTableRowPlaceholderConfig)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7309 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { placeholder: { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT }, placeholderAvatar: null, placeholderUsername: null, placeholderDivider: null };
-let size = { width: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.REFRESH_MEDIUM_32], height: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.REFRESH_MEDIUM_32], borderRadius: nativeDefault.radii.xl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+let size = { width: fn(1181).AVATAR_SIZE_MAP[fn(undefined, 1181).AvatarSizes.REFRESH_MEDIUM_32], height: fn(1181).AVATAR_SIZE_MAP[fn(undefined, 1181).AvatarSizes.REFRESH_MEDIUM_32], borderRadius: nativeDefault.radii.xl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj2.placeholderAvatar = size;
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 obj2.placeholderUsername = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-const obj4 = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-obj2.placeholderDivider = { backgroundColor: fn(5658).DIVIDER_BACKGROUND };
+let obj4 = { height: 20, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+obj2.placeholderDivider = { backgroundColor: fn(5660).DIVIDER_BACKGROUND };
 const styles = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj5 = { backgroundColor: fn(5660).DIVIDER_BACKGROUND };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/fastest_list/placeholders/useFastestListTableRowPlaceholderConfig.native.tsx");
 
-export default function useFastestListTableRowPlaceholderConfig() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(23);
+  const tmp4 = styles();
+  if (cResult[0] === tmp4.placeholder.backgroundColor) {
+    if (cResult[1] === tmp4.placeholderAvatar.backgroundColor) {
+      if (cResult[2] === tmp4.placeholderAvatar.width) {
+        if (cResult[3] === tmp4.placeholderUsername.height) {
+          let tmp5 = cResult[4];
+        }
+        const sum = nativeDefault.space.PX_12 + tmp4.placeholderAvatar.width;
+        const sum1 = sum + nativeDefault.space.PX_16;
+        if (cResult[5] === tmp4.placeholderDivider.backgroundColor) {
+          if (cResult[6] === sum1) {
+            let tmp9 = cResult[7];
+          }
+          if (cResult[8] !== tmp4.placeholder.backgroundColor) {
+            const obj2 = { type: tmp(7309).FastestListPropsPlaceholderType.SHAPE, shape: "rect", colorHex: tmp4.placeholder.backgroundColor, paddingVertical: tmp6(580).space.PX_16, borderRadius: tmp6(580).radii.md, width: tmp6(580).space.PX_96 };
+            cResult[8] = tmp4.placeholder.backgroundColor;
+            cResult[9] = obj2;
+            let tmp10 = obj2;
+          } else {
+            tmp10 = cResult[9];
+          }
+          if (cResult[10] === tmp5) {
+            if (cResult[11] === tmp9) {
+              let tmp11 = cResult[12];
+              let tmp12 = cResult[13];
+            }
+            if (cResult[14] !== tmp5) {
+              const obj3 = {};
+              const merged = Object.assign(tmp5);
+              obj3.borderBottomLeftRadius = tmp6(580).radii.lg;
+              obj3.borderBottomRightRadius = tmp6(580).radii.lg;
+              const obj4 = {};
+              const merged1 = Object.assign(tmp5);
+              obj4.borderRadius = tmp6(580).radii.lg;
+              cResult[14] = tmp5;
+              cResult[15] = obj3;
+              cResult[16] = obj4;
+              let tmp26 = obj4;
+              let tmp25 = obj3;
+            } else {
+              tmp25 = cResult[15];
+              tmp26 = cResult[16];
+            }
+            if (cResult[17] === tmp10) {
+              if (cResult[18] === tmp11) {
+                if (cResult[19] === tmp12) {
+                  if (cResult[20] === tmp25) {
+                    if (cResult[21] === tmp26) {
+                      let tmp33 = cResult[22];
+                    }
+                    return tmp33;
+                  }
+                }
+              }
+            }
+            const obj5 = { sectionHeader: tmp10, sectionItem: tmp11, sectionItemAtFront: tmp12, sectionItemAtRear: tmp25, sectionItemSingleton: tmp26 };
+            cResult[17] = tmp10;
+            cResult[18] = tmp11;
+            cResult[19] = tmp12;
+            cResult[20] = tmp25;
+            cResult[21] = tmp26;
+            cResult[22] = obj5;
+            tmp33 = obj5;
+          }
+          const obj6 = {};
+          const merged2 = Object.assign(tmp5);
+          const merged3 = Object.assign(tmp9);
+          const obj7 = {};
+          const merged4 = Object.assign(tmp5);
+          const merged5 = Object.assign(tmp9);
+          obj7.borderTopLeftRadius = tmp6(580).radii.lg;
+          obj7.borderTopRightRadius = tmp6(580).radii.lg;
+          cResult[10] = tmp5;
+          cResult[11] = tmp9;
+          cResult[12] = obj6;
+          cResult[13] = obj7;
+          tmp12 = obj7;
+          tmp11 = obj6;
+        }
+        const obj8 = { divider: true, dividerColorHex: tmp4.placeholderDivider.backgroundColor, dividerPaddingLeft: sum1 };
+        cResult[5] = tmp4.placeholderDivider.backgroundColor;
+        cResult[6] = sum1;
+        cResult[7] = obj8;
+        tmp9 = obj8;
+      }
+    }
+  }
+  const obj9 = { type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.FEED_ITEM, shape: "circle", backgroundColorHex: tmp4.placeholder.backgroundColor, colorHex: tmp4.placeholderAvatar.backgroundColor, labelPadding: nativeDefault.space.PX_16, labelPaddingInnerRatio: 0, labelSize: tmp4.placeholderUsername.height, padding: nativeDefault.space.PX_12, shapeSize: tmp4.placeholderAvatar.width };
+  cResult[0] = tmp4.placeholder.backgroundColor;
+  cResult[1] = tmp4.placeholderAvatar.backgroundColor;
+  cResult[2] = tmp4.placeholderAvatar.width;
+  cResult[3] = tmp4.placeholderUsername.height;
+  cResult[4] = obj9;
+  tmp5 = obj9;
+}) : (() => {
   const tmp = styles();
   closure_0 = tmp;
   const items = [tmp];
@@ -52,5 +150,5 @@ export default function useFastestListTableRowPlaceholderConfig() {
     obj3.sectionItemSingleton = obj8;
     return obj3;
   }, items);
-};
+});
 export const useFastestListTableRowPlaceholderStyles = styles;

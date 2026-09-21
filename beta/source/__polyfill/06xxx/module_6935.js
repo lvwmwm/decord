@@ -1,98 +1,61 @@
 // Module ID: 6935
 // Function ID: 6936
-// Dependencies: [41, 42, 93, 95, 98, 19, 6936, 6902, 6924, 6922]
+// Dependencies: [6922, 6920]
 
 // Module 6935
-import _modDef6924 from "module_6924" /* 6924 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
-import PlatformConstants from "module_6936" /* 6936 */;
+import RNGestureHandlerModuleDefault from "RNGestureHandlerModule" /* 6920 */;
 
-const ForceTouchFallback = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class ForceTouchFallback {
-  constructor() {
-    self = this;
-    tmp = c2(this, ForceTouchFallback);
-    tmp2 = closure_4;
-    obj = closure_4(ForceTouchFallback);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(ForceTouchFallback, noop.Component);
-const entry = {
-  key: "componentDidMount",
-  value: function componentDidMount() {
-    console.warn(ForceTouchFallback(6902).tagMessage("ForceTouchGestureHandler is not available on this platform. Please use ForceTouchGestureHandler.forceTouchAvailable to conditionally render other components that would provide a fallback behavior specific to your usecase"));
-  }
+const require = arg1;
+importDefault = fn;
+let dependencyMap = arg6;
+let obj = {
+  createGestureHandler(Handler, handlerTag, config) {
+    _require = Handler;
+    closure_1 = handlerTag;
+    dependencyMap = config;
+    const result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+      let obj2 = closure_2;
+      if (!closure_2) {
+        obj2 = {};
+      }
+      RNGestureHandlerModuleDefault.createGestureHandler(closure_0, closure_1, obj2);
+    });
+  },
+  setGestureHandlerConfig(handlerTag, result) {
+    _require = handlerTag;
+    closure_1 = result;
+    result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+      result = RNGestureHandlerModuleDefault.setGestureHandlerConfig(closure_0, closure_1);
+    });
+  },
+  updateGestureHandlerConfig: null,
+  dropGestureHandler: null,
+  configureRelations: null,
+  installUIRuntimeBindings: null
 };
-const items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      return this.props.children;
-    }
-  }
-];
-let importDefaultResultResult = _createClass(ForceTouchFallback, items);
-importDefaultResultResult.forceTouchAvailable = false;
-let forceTouchAvailable;
-if (PlatformConstants != null) {
-  forceTouchAvailable = PlatformConstants.forceTouchAvailable;
-}
-const items1 = ["minForce", "maxForce", "feedbackOnActivation"];
-if (forceTouchAvailable) {
-  let obj = { name: "ForceTouchGestureHandler", allowedProps: null, config: null };
-  const items2 = [];
-  HermesBuiltin.arraySpread(items1, HermesBuiltin.arraySpread(fn(6922).baseGestureHandlerProps, 0));
-  obj.allowedProps = items2;
-  obj.config = {};
-  importDefaultResultResult = _modDef6924(obj);
-  const importDefaultResult4 = _modDef6924;
-}
-let flag;
-if (PlatformConstants != null) {
-  flag = PlatformConstants.forceTouchAvailable;
-}
-if (!flag) {
-  flag = false;
-}
-importDefaultResultResult.forceTouchAvailable = flag;
+fn = function n(arg0, arg1) {
+  const result = RNGestureHandlerModuleDefault.updateGestureHandlerConfig(arg0, arg1);
+  RNGestureHandlerModuleDefault.flushOperations();
+};
+fn.__closure = { updateGestureHandlerConfig: fn(6920).updateGestureHandlerConfig, flushOperations: fn(6920).flushOperations };
+fn.__workletHash = 12442858879797;
+fn.__initData = { code: "function pnpm_NativeProxyTs1(handlerTag,newConfig){const{updateGestureHandlerConfig,flushOperations}=this.__closure;updateGestureHandlerConfig(handlerTag,newConfig);flushOperations();}" };
+obj.updateGestureHandlerConfig = fn;
+obj.dropGestureHandler = function dropGestureHandler(handlerTag) {
+  _require = handlerTag;
+  const result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+    RNGestureHandlerModuleDefault.dropGestureHandler(closure_0);
+  });
+};
+obj.configureRelations = function configureRelations(arg0, arg1) {
+  _require = arg0;
+  closure_1 = arg1;
+  const result = require("transformIntoHandlerTags").scheduleOperationToBeFlushed(() => {
+    RNGestureHandlerModuleDefault.configureRelations(closure_0, closure_1);
+  });
+};
+obj.installUIRuntimeBindings = function installUIRuntimeBindings() {
+  return RNGestureHandlerModuleDefault.installUIRuntimeBindings();
+};
 
-export const forceTouchGestureHandlerProps = items1;
-export const forceTouchHandlerName = "ForceTouchGestureHandler";
-export const ForceTouchGestureHandler = importDefaultResultResult;
+export const NativeProxy = obj;

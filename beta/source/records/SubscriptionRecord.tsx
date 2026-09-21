@@ -1,24 +1,24 @@
-// Module ID: 4421
-// Function ID: 4422
+// Module ID: 4425
+// Function ID: 4426
 // Name: SubscriptionRecord
-// Dependencies: [1387, 4422, 4423, 1074, 4425, 1374, 4426, 38, 1364, 4427, 1969, 2]
+// Dependencies: [1391, 4426, 4427, 1078, 4429, 1378, 4430, 38, 1368, 4431, 1973, 2]
 
-// Module 4421 (SubscriptionRecord)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import PremiumSubscription from "PremiumSubscription" /* 4426 */;
-import Record from "Record" /* 1387 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4422 */;
-import InvoiceRecord from "InvoiceRecord" /* 4423 */;
+// Module 4425 (SubscriptionRecord)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1973 */;
+import PremiumSubscription from "PremiumSubscription" /* 4430 */;
+import Record from "Record" /* 1391 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4426 */;
+import InvoiceRecord from "InvoiceRecord" /* 4427 */;
 
 require = fn;
 function createSubscriptionItemFromServer(id) {
   return { id: id.id, planId: id.plan_id, quantity: id.quantity };
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ PaymentGateways: hasOwnProperty, SubscriptionStatusTypes: metroRequire, SubscriptionStatusTypesSets: closure_7, SubscriptionTypes: closure_8 } = Constants);
-const BillingConstants = fn(4425);
+const BillingConstants = fn(4429);
 ({ SubscriptionPauseReason: closure_9, SubscriptionPauseReasonSets: c10 } = BillingConstants);
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ PREMIUM_PLANS: closure_11, SubscriptionPlanInfo: closure_12, SubscriptionPlans: map1 } = PremiumConstants);
 let SubscriptionRecord;
 class SubscriptionRecord extends tmp2 {
@@ -179,7 +179,7 @@ Object.defineProperty(prototype, "planIdForCurrencies", {
 });
 Object.defineProperty(prototype, "planIdFromItems", {
   get: function planIdFromItems() {
-    return this.getCurrentSubscriptionPlanIdForGroup(Object.values(map1));
+    return this.getCurrentSubscriptionPlanIdForGroup(Object.values(__initData2));
   },
   set: undefined
 });

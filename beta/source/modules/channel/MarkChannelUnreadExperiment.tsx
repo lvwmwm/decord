@@ -1,10 +1,10 @@
-// Module ID: 10501
-// Function ID: 10502
+// Module ID: 10619
+// Function ID: 10620
 // Name: MarkChannelUnreadExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 10501 (MarkChannelUnreadExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 10619 (MarkChannelUnreadExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-mark-channel-unread", kind: "user", defaultConfig: { enabled: false }, variations: null };

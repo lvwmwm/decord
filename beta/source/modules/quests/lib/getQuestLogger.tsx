@@ -1,14 +1,14 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 7950
+// Function ID: 7951
 // Name: getQuestLogger
-// Dependencies: [1346, 1085, 3, 2]
+// Dependencies: [1350, 1089, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7945 (getQuestLogger)
+// Module 7950 (getQuestLogger)
 import LoggerDefault from "Logger" /* 3 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
 
-const NOOP = fn(1085).NOOP;
+const NOOP = fn(1089).NOOP;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/lib/getQuestLogger.tsx");
 

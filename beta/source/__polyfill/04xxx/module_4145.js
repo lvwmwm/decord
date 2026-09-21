@@ -1,11 +1,11 @@
 // Module ID: 4145
 // Function ID: 4146
-// Dependencies: [3845, 3846]
+// Dependencies: [3849, 3850]
 // Exports: default
 
 // Module 4145
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _typeof_mod from "module_3849" /* 3849 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,9 +24,10 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isFuture(arg0) {
-  requiredArgs.default(1, arguments);
-  const time = _typeof.default(arg0).getTime();
-  return time > Date.now();
+export default function isEqual(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const time = defaultResult1.getTime();
+  return time === _typeof.default(arg1).getTime();
 };
 export default exports.default;

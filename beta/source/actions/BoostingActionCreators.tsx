@@ -1,16 +1,16 @@
-// Module ID: 4653
-// Function ID: 4654
+// Module ID: 4656
+// Function ID: 4657
 // Name: BoostingActionCreators
-// Dependencies: [5, 4654, 4655, 4420, 1074, 1271, 573, 4656, 2]
+// Dependencies: [5, 4657, 4658, 4424, 1078, 1275, 577, 4659, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4653 (BoostingActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 4656 (BoostingActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4654 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4655 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 4657 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 4658 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 require = fn;
 let closure_8 = async function _fetchAppliedGuildBoostsForGuild(arg0, value) {
@@ -24,7 +24,7 @@ let closure_8 = async function _fetchAppliedGuildBoostsForGuild(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -54,7 +54,7 @@ let closure_8 = async function _fetchAppliedGuildBoostsForGuild(arg0, value) {
           closure_130_2 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -110,7 +110,7 @@ let closure_9 = async function _fetchAppliedGuildBoostsForUser(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -135,7 +135,7 @@ let closure_9 = async function _fetchAppliedGuildBoostsForUser(arg0, value) {
           closure_129_1 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -211,7 +211,7 @@ let closure_12 = async function _fetchAppliedBoostsCooldown(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -286,7 +286,7 @@ let closure_13 = async function _applyToGuild(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -315,7 +315,7 @@ let closure_13 = async function _applyToGuild(arg0, value) {
           closure_131_5 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -394,7 +394,7 @@ let closure_14 = async function _unapplyFromGuild(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -444,7 +444,7 @@ let closure_14 = async function _unapplyFromGuild(arg0, value) {
         const obj10 = { type: "GUILD_UNAPPLY_BOOST_SUCCESS", boostId: closure_130_0 };
         closure_131_1(closure_131_2[6]).dispatch(obj10);
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp33) {
       closure_4 = tmp33;
@@ -475,7 +475,7 @@ let closure_16 = async function _uncancelGuildBoostSlot() {
   closure_130_1(closure_130_2[6]).dispatch({ type: "GUILD_BOOST_SLOT_UPDATE_SUCCESS", guildBoostSlot: closure_129_1 });
   return closure_129_1;
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/BoostingActionCreators.tsx");
 

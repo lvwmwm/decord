@@ -1,20 +1,20 @@
-// Module ID: 8298
-// Function ID: 8299
+// Module ID: 8303
+// Function ID: 8304
 // Name: GuildReportRaidSystemMessage
-// Dependencies: [2041, 2063, 8211, 8218, 8291, 8220, 8292, 8222, 1115, 1400, 1397, 2]
+// Dependencies: [2045, 2067, 8216, 8223, 8296, 8225, 8297, 8227, 1119, 1404, 1401, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 8298 (GuildReportRaidSystemMessage)
-import util from "util" /* 1115 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8291 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8292 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 8303 (GuildReportRaidSystemMessage)
+import util from "util" /* 1119 */;
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1404 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8216 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8225 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8296 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8297 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const size = fn(2);
@@ -27,7 +27,7 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const guild = GuildStore.getGuild(guild_id);
+  guild = GuildStore.getGuild(guild_id);
   const tmp3 = resolveMessageContentColorsDefault(theme);
   const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
   let automodUsernameColor = GuildAlertModeSystemMessage.resolveAlertModeColors(theme).automodUsernameColor;
@@ -41,10 +41,10 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   }
   obj3.guildName = str;
   const obj4 = {};
-  const merged = Object.assign(tmp(8222)(roleStyle));
-  const intl = tmp8(1115).intl;
+  const merged = Object.assign(tmp(8227)(roleStyle));
+  const intl = tmp8(1119).intl;
   obj4.content = intl.formatToParts(util.t["MTmH+u"], obj3);
-  const intl2 = tmp8(1115).intl;
+  const intl2 = tmp8(1119).intl;
   obj4.username = intl2.string(util.t.hG1StD);
   if (automodUsernameColor == null) {
     automodUsernameColor = null;

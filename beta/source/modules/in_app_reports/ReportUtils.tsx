@@ -1,20 +1,22 @@
-// Module ID: 8911
-// Function ID: 8912
+// Module ID: 8909
+// Function ID: 8910
 // Name: in_app_reports/ReportUtils
-// Dependencies: [5, 19, 4755, 1074, 8670, 1271, 8910, 8675, 573, 38, 8908, 4936, 2]
-// Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
+// Dependencies: [5, 19, 4757, 1078, 8675, 1275, 8908, 8680, 577, 38, 8906, 4938, 558, 568, 2]
+// Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, verifyUnauthenticatedReport
 
-// Module 8911 (in_app_reports/ReportUtils)
+// Module 8909 (in_app_reports/ReportUtils)
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8675 */;
-import MenuTypes from "MenuTypes" /* 8908 */;
-import ReportMenuType from "ReportMenuType" /* 8910 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8680 */;
+import MenuTypes from "MenuTypes" /* 8906 */;
+import ReportMenuType from "ReportMenuType" /* 8908 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4755 */;
+import DevSettingsStore from "DevSettingsStore" /* 4757 */;
+
+const require = globalThis.__r;
 
 require = fn;
 function getReportMenu() {
@@ -29,7 +31,7 @@ function getReportMenu() {
 }
 let closure_10 = async function _getReportMenu() {
   closure_3 = tmp4;
-  const HTTP = HTTPUtils.HTTP;
+  const HTTP = require("HTTPUtils").HTTP;
   const request = { url: React5.GET_REPORT_MENU(getReportNameSafely(closure_0)), query: null, rejectWithError: false };
   if (closure_1 != null) {
     const variant = tmp19.variant;
@@ -49,7 +51,7 @@ let closure_10 = async function _getReportMenu() {
 };
 let closure_11 = async function _getReportMenuForModeratorReport() {
   closure_3 = tmp4;
-  const HTTP = HTTPUtils.HTTP;
+  const HTTP = require("HTTPUtils").HTTP;
   const request = { url: React5.GET_REPORT_MENU(getModeratorReportNameSafely(closure_0)), query: null, rejectWithError: false };
   if (closure_1 != null) {
     const variant = tmp19.variant;
@@ -69,7 +71,7 @@ let closure_11 = async function _getReportMenuForModeratorReport() {
 };
 let closure_12 = async function _getUnauthenticatedReportMenu() {
   closure_3 = tmp4;
-  const HTTP = HTTPUtils.HTTP;
+  const HTTP = require("HTTPUtils").HTTP;
   const request = { url: React5.GET_UNAUTHENTICATED_REPORT_MENU(getUnauthenticatedReportNameSafely(closure_0)), query: null, rejectWithError: false };
   if (closure_1 != null) {
     const variant = tmp19.variant;
@@ -98,7 +100,7 @@ let closure_13 = async function _submitHeadlessReport(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -154,7 +156,7 @@ let closure_13 = async function _submitHeadlessReport(arg0, value) {
         return obj;
       } else {
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp10) {
       c5 = tmp;
@@ -166,19 +168,19 @@ let closure_14 = async function _verifyUnauthenticatedReport(name, email, code) 
   c4 = 0;
   c3 = 0;
   return (async (arg0, value, arg2) => {
-    const HTTP = HTTPUtils.HTTP;
+    const HTTP = require("HTTPUtils").HTTP;
     const request = { url: closure_2_7.VERIFY_UNAUTHENTICATED_REPORT(name), body: { name, email, code }, rejectWithError: false };
     await HTTP.post(request);
     return value.body;
   })();
 };
 let closure_15 = async function _getDsaExperiment() {
-  const HTTP = HTTPUtils.HTTP;
+  const HTTP = require("HTTPUtils").HTTP;
   await HTTP.get({ url: constants.DSA_EXPERIMENT_UNAUTHENTICATED, rejectWithError: false });
   return arg1;
 };
 let closure_16 = async function _fetchUrfCapabilities() {
-  const HTTP = HTTPUtils.HTTP;
+  const HTTP = require("HTTPUtils").HTTP;
   await HTTP.get({ url: constants.DSA_CAPABILITIES, rejectWithError: false });
   return arg1;
 };
@@ -186,7 +188,7 @@ let closure_17 = async function _submitReportSecondLook(token) {
   c2 = 0;
   c1 = 0;
   return (async (arg0, value) => {
-    const HTTP = HTTPUtils.HTTP;
+    const HTTP = require("HTTPUtils").HTTP;
     const request = { url: constants.SUBMIT_REPORT_SECOND_LOOK, body: { token }, rejectWithError: false };
     await HTTP.post(request);
     return value.body;
@@ -219,7 +221,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "call", message_id: "enumerable", stage_instance_id: "formatToPlainString", guild_id: "r", guild_scheduled_event_id: "accessible", user_id: "code", email_token: "width", application_id: "Array", entrypoint: "isArray", widget_id: "TypeError" };
+  let obj2 = { channel_id: "Array", message_id: "unicodeVersion", stage_instance_id: "result", guild_id: "now", guild_scheduled_event_id: "Array", user_id: "unicodeVersion", email_token: "result", application_id: "now", entrypoint: "Array", widget_id: "unicodeVersion" };
   obj.language = str;
   obj.breadcrumbs = arr.map((nodeRef) => nodeRef.nodeRef);
   obj.elements = arr.reduce((acc, item) => {
@@ -245,10 +247,10 @@ function genSubmitData(version, name, arr, email_token) {
     return {};
   }, {});
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
-    if (name.name !== tmp(8908).ReportNames.FIRST_DM) {
-      if (name.name !== tmp(8908).ReportNames.GUILD) {
-        if (name.name !== tmp(8908).ReportNames.GUILD_DISCOVERY) {
-          if (name.name === tmp(8908).ReportNames.GUILD_DIRECTORY_ENTRY) {
+    if (name.name !== tmp(8906).ReportNames.FIRST_DM) {
+      if (name.name !== tmp(8906).ReportNames.GUILD) {
+        if (name.name !== tmp(8906).ReportNames.GUILD_DISCOVERY) {
+          if (name.name === tmp(8906).ReportNames.GUILD_DIRECTORY_ENTRY) {
             const obj3 = {};
             ({ guildId, channelId } = name.record);
             let merged = Object.assign(obj);
@@ -257,7 +259,7 @@ function genSubmitData(version, name, arr, email_token) {
             obj3.channel_id = channelId;
             obj3.guild_id = guildId;
             return obj3;
-          } else if (name.name === tmp(8908).ReportNames.STAGE_CHANNEL) {
+          } else if (name.name === tmp(8906).ReportNames.STAGE_CHANNEL) {
             const obj6 = {};
             ({ id: id2, guild_id: guild_id2, channel_id } = name.record);
             let merged2 = Object.assign(obj);
@@ -267,7 +269,7 @@ function genSubmitData(version, name, arr, email_token) {
             obj6.guild_id = guild_id2;
             obj6.stage_instance_id = id2;
             return obj6;
-          } else if (name.name === tmp(8908).ReportNames.GUILD_SCHEDULED_EVENT) {
+          } else if (name.name === tmp(8906).ReportNames.GUILD_SCHEDULED_EVENT) {
             const obj7 = {};
             ({ id, guild_id } = name.record);
             const merged4 = Object.assign(obj);
@@ -277,7 +279,7 @@ function genSubmitData(version, name, arr, email_token) {
             obj7.guild_scheduled_event_id = id;
             return obj7;
           } else {
-            if (name.name === tmp(8908).ReportNames.USER) {
+            if (name.name === tmp(8906).ReportNames.USER) {
               const obj8 = {};
               const merged6 = Object.assign(obj);
               const merged7 = Object.assign(obj2);
@@ -285,7 +287,7 @@ function genSubmitData(version, name, arr, email_token) {
               obj8.user_id = name.record.id;
               obj8.guild_id = name.contextualGuildId;
               let tmp3 = obj8;
-            } else if (name.name === tmp(8908).UnauthenticatedReportNames.USER) {
+            } else if (name.name === tmp(8906).UnauthenticatedReportNames.USER) {
               const obj9 = {};
               const merged8 = Object.assign(obj);
               const merged9 = Object.assign(obj2);
@@ -294,7 +296,7 @@ function genSubmitData(version, name, arr, email_token) {
               obj9.guild_id = name.contextualGuildId;
               obj9.email_token = email_token;
               tmp3 = obj9;
-            } else if (name.name === tmp(8908).UnauthenticatedReportNames.MESSAGE) {
+            } else if (name.name === tmp(8906).UnauthenticatedReportNames.MESSAGE) {
               const obj10 = {};
               const merged10 = Object.assign(obj);
               const merged11 = Object.assign(obj2);
@@ -302,7 +304,7 @@ function genSubmitData(version, name, arr, email_token) {
               obj10.message_id = name.record.id;
               obj10.email_token = email_token;
               tmp3 = obj10;
-            } else if (name.name === tmp(8908).UnauthenticatedReportNames.GUILD) {
+            } else if (name.name === tmp(8906).UnauthenticatedReportNames.GUILD) {
               const obj11 = {};
               const merged12 = Object.assign(obj);
               const merged13 = Object.assign(obj2);
@@ -310,7 +312,7 @@ function genSubmitData(version, name, arr, email_token) {
               obj11.guild_id = name.record.id;
               obj11.email_token = email_token;
               tmp3 = obj11;
-            } else if (name.name === tmp(8908).ReportNames.APPLICATION) {
+            } else if (name.name === tmp(8906).ReportNames.APPLICATION) {
               const obj12 = {};
               const merged14 = Object.assign(obj);
               const merged15 = Object.assign(obj2);
@@ -318,7 +320,7 @@ function genSubmitData(version, name, arr, email_token) {
               obj12.application_id = name.record.id;
               ({ contextualGuildId: obj5.guild_id, contextualChannelId: obj5.channel_id, entrypoint: obj5.entrypoint } = name);
               tmp3 = obj12;
-            } else if (name.name === tmp(8908).ReportNames.WIDGET) {
+            } else if (name.name === tmp(8906).ReportNames.WIDGET) {
               const obj13 = {};
               const merged16 = Object.assign(obj);
               const merged17 = Object.assign(obj2);
@@ -326,7 +328,7 @@ function genSubmitData(version, name, arr, email_token) {
               tmp3 = obj13;
             } else {
               tmp3 = null;
-              if (name.name === tmp(8908).UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
+              if (name.name === tmp(8906).UnauthenticatedReportNames.MEDIA_TAKEDOWN) {
                 const obj14 = {};
                 const merged18 = Object.assign(obj);
                 const merged19 = Object.assign(obj2);
@@ -356,9 +358,23 @@ function genSubmitData(version, name, arr, email_token) {
   obj28.message_id = id3;
   return obj28;
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
-const SafetyToastType = fn(8670).SafetyToastType;
+const SafetyToastType = fn(8675).SafetyToastType;
+const ReactCompilerGating = fn(558);
+function getModeratorReportEndpointSafely(name) {
+  const REPORT_TO_MOD = ReportMenuType.ReportMenuTypeSets.REPORT_TO_MOD;
+  const hasItem = REPORT_TO_MOD.has(name.name);
+  _modDef38(hasItem, "Invalid report type " + name.name);
+  if (name.name === MenuTypes.ModeratorReportNames.MESSAGE) {
+    return React5.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
+  } else {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error = new Error("Invalid report type " + name.name);
+    throw error;
+  }
+}
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/in_app_reports/ReportUtils.tsx");
 
@@ -397,7 +413,7 @@ export const submitReport = function submitReport(language, name, arr) {
   if (DevSettingsStore.get("iar_skip_api_report_submit")) {
     let resolved = Promise.resolve();
   } else {
-    const REPORT_TO_MOD = obj4(8910).ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = obj4(8908).ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
       let str2 = language.language;
       const obj = { version: null, variant: null, language: null, breadcrumbs: null, elements: null };
@@ -430,8 +446,8 @@ export const submitReport = function submitReport(language, name, arr) {
         return {};
       }, {});
       let tmp15 = null;
-      if (name.name === tmp4(8908).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "st", message_id: "sa", guild_id: "Reflect" };
+      if (name.name === tmp4(8906).ModeratorReportNames.MESSAGE) {
+        let obj2 = { channel_id: "duration", message_id: "toCharArray$esjava$1", guild_id: "toCharArray$esjava$1" };
         obj4 = {};
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);
@@ -442,12 +458,12 @@ export const submitReport = function submitReport(language, name, arr) {
         tmp15 = obj4;
       }
       obj4 = tmp15;
-      const HTTP2 = tmp4(1271).HTTP;
-      const REPORT_TO_MOD2 = tmp4(8910).ReportMenuTypeSets.REPORT_TO_MOD;
+      const HTTP2 = tmp4(1275).HTTP;
+      const REPORT_TO_MOD2 = tmp4(8908).ReportMenuTypeSets.REPORT_TO_MOD;
       const _HermesInternal2 = HermesInternal;
       const hasItem = REPORT_TO_MOD2.has(name.name);
       _modDef38(hasItem, "Invalid report type " + name.name);
-      if (name.name === tmp4(8908).ModeratorReportNames.MESSAGE) {
+      if (name.name === tmp4(8906).ModeratorReportNames.MESSAGE) {
         const request = { url: closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id), body: tmp15, rejectWithError: false };
         resolved = HTTP2.post(request).then((result) => {
           SafetyToastsActionCreatorsDefault.showSuccessToast(SafetyToastType.REPORT_TO_MOD_SUCCESS);
@@ -479,11 +495,11 @@ export const submitReport = function submitReport(language, name, arr) {
         throw error;
       }
     } else {
-      const HTTP = tmp4(1271).HTTP;
+      const HTTP = tmp4(1275).HTTP;
       const request1 = { url: null, body: null, rejectWithError: false };
       name = name.name;
       let _Object = Object;
-      const values = Object.values(tmp4(8908).ReportNames);
+      const values = Object.values(tmp4(8906).ReportNames);
       const _HermesInternal = HermesInternal;
       const hasItem1 = values.includes(name);
       _modDef38(hasItem1, "Invalid report type " + name.name);
@@ -570,19 +586,7 @@ export const submitReportSecondLook = function submitReportSecondLook() {
 export { getUnauthenticatedReportNameSafely };
 export { getReportNameSafely };
 export { getModeratorReportNameSafely };
-export const getModeratorReportEndpointSafely = function getModeratorReportEndpointSafely(name) {
-  const REPORT_TO_MOD = ReportMenuType.ReportMenuTypeSets.REPORT_TO_MOD;
-  const hasItem = REPORT_TO_MOD.has(name.name);
-  _modDef38(hasItem, "Invalid report type " + name.name);
-  if (name.name === MenuTypes.ModeratorReportNames.MESSAGE) {
-    return React5.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id);
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const error = new Error("Invalid report type " + name.name);
-    throw error;
-  }
-};
+export { getModeratorReportEndpointSafely };
 export const trackCloseReportModalAnalytics = function trackCloseReportModalAnalytics(name, c12, onSubmit) {
   const obj2 = { report_type: name.name, report_id: onSubmit, navigation_history: c12, message_id: null, stage_instance_id: null, guild_scheduled_event_id: null, guild_id: null, channel_id: null, application_id: null };
   if (name.name === MenuTypes.ReportNames.MESSAGE) {
@@ -600,22 +604,22 @@ export const trackCloseReportModalAnalytics = function trackCloseReportModalAnal
   }
   obj2.guild_scheduled_event_id = id3;
   if (name.name !== MenuTypes.ReportNames.GUILD) {
-    if (name.name !== tmp2(8908).ReportNames.GUILD_DISCOVERY) {
-      if (name.name === tmp2(8908).ReportNames.GUILD_DIRECTORY_ENTRY) {
+    if (name.name !== tmp2(8906).ReportNames.GUILD_DISCOVERY) {
+      if (name.name === tmp2(8906).ReportNames.GUILD_DIRECTORY_ENTRY) {
         let id2 = name.record.guildId;
-      } else if (name.name === tmp2(8908).ReportNames.GUILD_SCHEDULED_EVENT) {
+      } else if (name.name === tmp2(8906).ReportNames.GUILD_SCHEDULED_EVENT) {
         id2 = name.record.guild_id;
       }
     }
     obj2.guild_id = id2;
-    if (name.name === tmp2(8908).ReportNames.GUILD_SCHEDULED_EVENT) {
+    if (name.name === tmp2(8906).ReportNames.GUILD_SCHEDULED_EVENT) {
       let channelId = name.record.channel_id;
-    } else if (name.name === tmp2(8908).ReportNames.GUILD_DIRECTORY_ENTRY) {
+    } else if (name.name === tmp2(8906).ReportNames.GUILD_DIRECTORY_ENTRY) {
       channelId = name.record.channelId;
     }
     obj2.channel_id = channelId;
     let id4;
-    if (name.name === tmp2(8908).ReportNames.APPLICATION) {
+    if (name.name === tmp2(8906).ReportNames.APPLICATION) {
       id4 = name.record.id;
     }
     obj2.application_id = id4;
@@ -771,12 +775,35 @@ export const areRequiredElementsUnfilled = function areRequiredElementsUnfilled(
   return someResult;
 };
 export const TrackIarSettingsUpsellsActionType = { SETTINGS_UPSELLS_VIEWED: "SETTINGS_UPSELLS_VIEWED", SETTINGS_UPSELLS_APPLY_CLICKED: "SETTINGS_UPSELLS_APPLY_CLICKED", SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED: "SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED" };
-export const useTrackSettingsUpsellsAction = function useTrackSettingsUpsellsAction(reportType, reportSubType, reportId) {
-  closure_0 = reportType;
-  closure_1 = reportSubType;
-  closure_2 = reportId;
-  const items = [reportId, reportType, reportSubType];
+export const useTrackSettingsUpsellsAction = ReactCompilerGating.isReactCompilerEnabled() ? ((name, arg1, arg2) => {
+  _require = name;
+  closure_1 = arg1;
+  dependencyMap = arg2;
+  const cResult = require("c").c(4);
+  if (cResult[0] === arg2) {
+    if (cResult[1] === arg1) {
+      if (cResult[2] === name.name) {
+        let tmp2 = cResult[3];
+      }
+      return tmp2;
+    }
+  }
+  const fn = function o(settings_upsells_type) {
+    return (action) => {
+      AppAnalyticsUtilsDefault.trackWithMetadata(constants.IAR_SETTINGS_UPSELLS_ACTION, { report_id, report_type: settings_upsells_type.name, report_subtype, settings_upsells_type, action });
+    };
+  };
+  cResult[0] = arg2;
+  cResult[1] = arg1;
+  cResult[2] = name.name;
+  cResult[3] = fn;
+  tmp2 = fn;
+}) : ((arg0, arg1, arg2) => {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  closure_2 = arg2;
+  const items = [arg2, arg0, arg1];
   return noop.useCallback((settings_upsells_type) => (action) => {
     AppAnalyticsUtilsDefault.trackWithMetadata(constants.IAR_SETTINGS_UPSELLS_ACTION, { report_id, report_type: settings_upsells_type.name, report_subtype, settings_upsells_type, action });
   }, items);
-};
+});

@@ -1,20 +1,47 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14064
+// Function ID: 14065
 // Name: useSelectedActiveStream
-// Dependencies: [4772, 4778, 504, 2]
-// Exports: default
+// Dependencies: [4774, 4780, 558, 568, 504, 2]
 
-// Module 14061 (useSelectedActiveStream)
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
+// Module 14064 (useSelectedActiveStream)
+import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");
 
-export default function useSelectedActiveStream(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  const cResult = require("c").c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelRTCStore, ApplicationStreamingStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function u() {
+      const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(id.id);
+      let activeStreamForStreamKey = null;
+      if (null != selectedParticipantId) {
+        activeStreamForStreamKey = ApplicationStreamingStore.getActiveStreamForStreamKey(selectedParticipantId);
+      }
+      return activeStreamForStreamKey;
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp7);
+}) : ((arg0) => {
   _require = arg0;
   const items = [ChannelRTCStore, ApplicationStreamingStore];
   return require("initialize").useStateFromStores(items, () => {
@@ -25,4 +52,4 @@ export default function useSelectedActiveStream(arg0) {
     }
     return activeStreamForStreamKey;
   });
-};
+});

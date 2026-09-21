@@ -1,10 +1,10 @@
-// Module ID: 13470
-// Function ID: 13471
+// Module ID: 13473
+// Function ID: 13474
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1074, 3, 11283, 7783, 4723, 11345, 1609, 7558, 4429, 4454, 1115, 2]
+// Dependencies: [5, 32, 19, 1078, 3, 11314, 7788, 4725, 11376, 1613, 7560, 4433, 4458, 1119, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 13470 (useHandleBuyNow)
+// Module 13473 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -30,7 +30,7 @@ function useHandleBuyNow(product) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -46,7 +46,7 @@ function useHandleBuyNow(product) {
           } else {
             v1 = 1;
             dependencyMap = 1;
-            const obj6 = { value: tmp4(7783).fetchCollectiblesPurchases(), done: false };
+            const obj6 = { value: tmp4(7788).fetchCollectiblesPurchases(), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -58,12 +58,12 @@ function useHandleBuyNow(product) {
           return obj7;
         } else {
           closure_128_5(false);
-          v1(4723).hideAllActionSheets();
-          const obj = v1(4723);
+          v1(4725).hideAllActionSheets();
+          const obj = v1(4725);
           const obj8 = { product: closure_128_0, useCategoryImage: true, stageCollectibleChangeForEditProfile: closure_128_3 };
-          v1(11345).open(obj8);
+          v1(11376).open(obj8);
           dependencyMap = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp17) {
         dependencyMap = tmp;
@@ -113,7 +113,7 @@ function useHandleBuyNow(product) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -231,7 +231,7 @@ function useHandleBuyNow(product) {
   }), items);
   return obj2;
 }
-const Routes = fn(1074).Routes;
+const Routes = fn(1078).Routes;
 let closure_7 = new LoggerDefault("useHandleBuyNow");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/useHandleBuyNow.tsx");

@@ -1,12 +1,13 @@
-// Module ID: 7681
-// Function ID: 7682
+// Module ID: 7686
+// Function ID: 7687
 // Name: useCountdown
-// Dependencies: [19, 4438, 7682, 7687, 2]
-// Exports: default
+// Dependencies: [19, 558, 568, 4442, 7687, 7692, 2]
 
-// Module 7681 (useCountdown)
+// Module 7686 (useCountdown)
 import _mod19 from "module_19" /* 19 */;
-import DateUtils from "DateUtils" /* 4438 */;
+import DateUtils from "DateUtils" /* 4442 */;
+import useIntervalDefault from "useInterval" /* 7692 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -14,7 +15,58 @@ const require = globalThis.__r;
 _mod19.useCallback;
 const result = size.fileFinishedImporting("hooks/useCountdown.tsx");
 
-export default function useCountdown(expiresAt) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((expiresAt, arg1, arg2, arg3) => {
+  _require = expiresAt;
+  importDefault = arg2;
+  const cResult = require("c").c(7);
+  let num = 1000;
+  if (undefined !== arg1) {
+    num = arg1;
+  }
+  dependencyMap = tmp4;
+  if (cResult[0] !== expiresAt) {
+    const _Date = Date;
+    const diffAsUnitsResult = tmp(4442).diffAsUnits(Date.now(), expiresAt);
+    cResult[0] = expiresAt;
+    cResult[1] = diffAsUnitsResult;
+    let tmp5 = diffAsUnitsResult;
+    const tmpResult = tmp(4442);
+  } else {
+    tmp5 = cResult[1];
+  }
+  const obj = require("c");
+  const forceUpdate = require("areHookInputsEqual").useForceUpdate();
+  if (cResult[2] === expiresAt) {
+    if (cResult[3] === tmp4) {
+      if (cResult[4] === forceUpdate) {
+        if (cResult[5] === arg2) {
+          let tmp9 = cResult[6];
+        }
+        let tmp12 = null;
+        if (!tmp4) {
+          tmp12 = num;
+        }
+        useIntervalDefault(tmp9, tmp12);
+        return tmp5;
+      }
+    }
+  }
+  const fn = function v() {
+    const time = DateUtils.diffAsUnits(Date.now(), closure_0);
+    if (!tmp) {
+      forceUpdate();
+      if (closure_1 != null) {
+        closure_1();
+      }
+    }
+  };
+  cResult[2] = expiresAt;
+  cResult[3] = undefined !== arg3 && arg3;
+  cResult[4] = forceUpdate;
+  cResult[5] = arg2;
+  cResult[6] = fn;
+  tmp9 = fn;
+}) : ((expiresAt) => {
   _require = expiresAt;
   let num = arg1;
   if (arg1 === undefined) {
@@ -45,4 +97,4 @@ export default function useCountdown(expiresAt) {
   }
   require("useInterval")(tmp3, tmp5);
   return diffAsUnitsResult;
-};
+});

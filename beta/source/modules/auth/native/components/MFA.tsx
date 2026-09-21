@@ -1,12 +1,11 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16310
+// Function ID: 16311
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 1484, 7187, 504, 6834, 15948, 1365, 576, 2]
-// Exports: default
+// Dependencies: [19, 502, 21, 12, 558, 568, 1488, 7185, 504, 6832, 1369, 580, 15937, 2]
 
-// Module 16307 (components/MFA)
+// Module 16310 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6832 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -16,20 +15,186 @@ function statesAreEqual(arg0, arg1) {
 }
 const jsx = fn(21).jsx;
 let closure_7 = { flex: 1, position: "relative" };
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/MFA.tsx");
 
-export default function ConnectedMFA() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = isMultiAccount(568).c(22);
+  if (cResult[0] !== arg0) {
+    let obj2 = arg0;
+    if (undefined === arg0) {
+      obj2 = {};
+    }
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  ({ inContainer, isMultiAccount } = tmp4);
+  const obj = isMultiAccount(568);
+  const navigation = isMultiAccount(1488).useNavigation();
+  if (inContainer) {
+    inContainer = navigation(7185)();
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function u() {
+      return { ticket: AuthenticationStore.getMFATicket(), methods: AuthenticationStore.getMFAMethods() };
+    };
+    const items1 = [];
+    cResult[2] = items;
+    cResult[3] = fn;
+    cResult[4] = items1;
+    let tmp9 = items1;
+    let tmp8 = fn;
+    let tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
+  }
+  const tmpResult = isMultiAccount(1488);
+  const stateFromStores = isMultiAccount(504).useStateFromStores(tmp7, tmp8, tmp9, statesAreEqual);
+  if (cResult[5] !== isMultiAccount) {
+    const fn2 = function y(arg0) {
+      ({ mfaType, data, ticket } = arg0);
+      return AuthenticationActionCreatorsDefault.loginMFAv2({ code: data, ticket, mfaType, isMultiAccount });
+    };
+    cResult[5] = isMultiAccount;
+    cResult[6] = fn2;
+    let tmp12 = fn2;
+  } else {
+    tmp12 = cResult[6];
+  }
+  if (cResult[7] !== navigation) {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+    cResult[7] = navigation;
+    cResult[8] = S;
+  } else {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+  }
+  if (inContainer) {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+  }
+  if (inContainer) {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+  }
+  if (cResult[9] !== inContainer) {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+    if (!inContainer) {
+      class S {
+        constructor() {
+          goBackResult = closure_1.goBack();
+          return;
+        }
+      }
+      cResult[9] = inContainer;
+      cResult[10] = undefined;
+    } else {
+      class S {
+        constructor() {
+          goBackResult = closure_1.goBack();
+          return;
+        }
+      }
+      tmp6(580).space;
+      const isAndroidResult = obj5.isAndroid();
+      const space = { paddingLeft: null, paddingTop: null };
+      space.paddingLeft = obj5.isAndroid() ? space.PX_8 : space.PX_16;
+      space.paddingTop = tmp6(580).space.PX_12;
+      const tmp18 = obj5.isAndroid() ? space.PX_8 : space.PX_16;
+    }
+  } else {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+  }
+  if (cResult[11] !== inContainer) {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+    if (inContainer) {
+      class S {
+        constructor() {
+          goBackResult = closure_1.goBack();
+          return;
+        }
+      }
+      tmp22[0] = tmp6(580).space.PX_16;
+      tmp22[1] = tmp6(580).space.PX_12;
+    }
+    cResult[11] = inContainer;
+    cResult[12] = tmp21;
+  } else {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+  }
+  if (cResult[13] === tmp12) {
+    class S {
+      constructor() {
+        goBackResult = closure_1.goBack();
+        return;
+      }
+    }
+  }
+  const tmpResult2 = isMultiAccount(504);
+  cResult[13] = tmp12;
+  cResult[14] = tmp13;
+  cResult[15] = inContainer;
+  cResult[16] = stateFromStores;
+  cResult[17] = tmp20;
+  cResult[18] = undefined;
+  cResult[19] = undefined;
+  cResult[20] = tmp16;
+  cResult[21] = jsx(isMultiAccount(15937).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp20 });
+}) : (() => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
   ({ inContainer, isMultiAccount } = obj);
-  const navigation = isMultiAccount(1484).useNavigation();
+  const navigation = isMultiAccount(1488).useNavigation();
   if (inContainer) {
-    inContainer = navigation(7187)();
+    inContainer = navigation(7185)();
   }
-  const obj2 = isMultiAccount(1484);
+  const obj2 = isMultiAccount(1488);
   const items = [AuthenticationStore];
   const items1 = [isMultiAccount];
   const stateFromStores = isMultiAccount(504).useStateFromStores(items, () => ({ ticket: AuthenticationStore.getMFATicket(), methods: AuthenticationStore.getMFAMethods() }), [], statesAreEqual);
@@ -56,18 +221,18 @@ export default function ConnectedMFA() {
     obj3.headerLeftContainerStyle = undefined;
     let tmp13;
     if (inContainer) {
-      const obj4 = { paddingRight: tmp4(576).space.PX_16, paddingTop: tmp4(576).space.PX_12, marginLeft: 0 };
+      const obj4 = { paddingRight: tmp4(580).space.PX_16, paddingTop: tmp4(580).space.PX_12, marginLeft: 0 };
       tmp13 = obj4;
     }
     obj3.headerRightContainerStyle = tmp13;
-    return jsx(tmp(15948).MFAModal, obj3);
+    return jsx(tmp(15937).MFAModal, obj3);
   } else {
-    const tmpResult2 = tmp(1365);
-    tmp4(576).space;
-    const isAndroidResult = tmp(1365).isAndroid();
+    const tmpResult2 = tmp(1369);
+    tmp4(580).space;
+    const isAndroidResult = tmp(1369).isAndroid();
     const space = { paddingLeft: null, paddingTop: null };
-    space.paddingLeft = tmp(1365).isAndroid() ? space.PX_8 : space.PX_16;
-    space.paddingTop = tmp4(576).space.PX_12;
-    const tmp11 = tmp(1365).isAndroid() ? space.PX_8 : space.PX_16;
+    space.paddingLeft = tmp(1369).isAndroid() ? space.PX_8 : space.PX_16;
+    space.paddingTop = tmp4(580).space.PX_12;
+    const tmp11 = tmp(1369).isAndroid() ? space.PX_8 : space.PX_16;
   }
-};
+});

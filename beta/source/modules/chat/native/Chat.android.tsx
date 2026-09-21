@@ -1,19 +1,57 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12025
+// Function ID: 12026
 // Name: Chat
-// Dependencies: [19, 4748, 21, 4756, 6897, 12150, 12151, 504, 11538, 2]
+// Dependencies: [19, 4750, 21, 4758, 558, 568, 6891, 12026, 12029, 504, 10560, 2]
 
-// Module 12149 (Chat)
+// Module 12025 (Chat)
 import initialize from "initialize" /* 504 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 11538 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 12150 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12151 */;
+import c from "c" /* 568 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 10560 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12026 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 12029 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 require = fn;
-function DCDChatList() {
+const jsxProd = fn(21);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const createStyles = fn(4758);
+let closure_7 = createStyles.createStyles({ chatList: { flex: 1 } });
+let ReactCompilerGating = fn(558);
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(4);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const Gesture = tmp(6891).Gesture;
+    const NativeResult = Gesture.Native();
+    const result = Gesture.Native().disallowInterruption(true).shouldCancelWhenOutside(false);
+    cResult[0] = result;
+    let first = result;
+    const disallowInterruptionResult = Gesture.Native().disallowInterruption(true);
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp9 = hasOwnProperty(tmp(12026).TTIFirstContentfulPaint, { label: "chat_list_android" });
+    cResult[1] = tmp9;
+    let tmp7 = tmp9;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.chatList) {
+    const obj2 = { gesture: first, children: null };
+    const obj3 = { style: tmp4.chatList, floatingChatInputEnabled: true, children: tmp7 };
+    obj2.children = hasOwnProperty(ChatListNativeComponentDefault, obj3);
+    const tmp13 = hasOwnProperty(tmp(6891).GestureDetector, obj2);
+    cResult[2] = tmp4.chatList;
+    cResult[3] = tmp13;
+    let tmp10 = tmp13;
+  } else {
+    tmp10 = cResult[3];
+  }
+  return tmp10;
+}) : (() => {
   const memo = noop.useMemo(() => {
     const Gesture = LegacyBaseButton.Gesture;
     const NativeResult = Gesture.Native();
@@ -25,22 +63,62 @@ function DCDChatList() {
   obj2.children = hasOwnProperty(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "chat_list_android" });
   obj.children = hasOwnProperty(ChatListNativeComponentDefault, obj2);
   return hasOwnProperty(LegacyBaseButton.GestureDetector, obj);
-}
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
-let closure_7 = createStyles.createStyles({ chatList: { flex: 1 } });
+});
+ReactCompilerGating = fn(558);
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat/native/Chat.android.tsx");
+let result = size.fileFinishedImporting("modules/chat/native/Chat.android.tsx");
 
-export default noop.forwardRef((children, ref) => {
+export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((children, ref) => {
+  const cResult = c.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function h() {
+      return roleStyle.roleStyle;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp11 = hasOwnProperty(closure_8, {});
+    cResult[2] = tmp11;
+    let tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === ref) {
+    if (cResult[4] === children) {
+      if (cResult[5] === stateFromStores) {
+        let tmp12 = cResult[6];
+      }
+      return tmp12;
+    }
+  }
+  const obj2 = {};
+  const tmpResult = initialize;
+  const merged = Object.assign(children);
+  obj2.roleStyle = stateFromStores;
+  obj2.ref = ref;
+  const items1 = [tmp8, children.children];
+  obj2.children = items1;
+  const tmp15 = timestampProducer(ChatNativeComponentDefault, obj2);
+  cResult[3] = ref;
+  cResult[4] = children;
+  cResult[5] = stateFromStores;
+  cResult[6] = tmp15;
+  tmp12 = tmp15;
+}) : ((children, ref) => {
   const items = [AccessibilityStore];
   const stateFromStores = initialize.useStateFromStores(items, () => roleStyle.roleStyle);
   const obj2 = {};
   const merged = Object.assign(children);
   obj2.roleStyle = stateFromStores;
   obj2.ref = ref;
-  const items1 = [hasOwnProperty(DCDChatList, {}), children.children];
+  const items1 = [hasOwnProperty(closure_8, {}), children.children];
   obj2.children = items1;
   return timestampProducer(ChatNativeComponentDefault, obj2);
-});
+}));

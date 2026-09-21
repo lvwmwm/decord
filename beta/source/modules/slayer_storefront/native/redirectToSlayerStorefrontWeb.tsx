@@ -1,10 +1,10 @@
-// Module ID: 11065
-// Function ID: 11066
+// Module ID: 11102
+// Function ID: 11103
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1074, 3, 4454, 1115, 7558, 4429, 2]
+// Dependencies: [5, 1078, 3, 4458, 1119, 7560, 4433, 2]
 // Exports: default
 
-// Module 11065 (redirectToSlayerStorefrontWeb)
+// Module 11102 (redirectToSlayerStorefrontWeb)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -20,7 +20,7 @@ let closure_6 = async function _redirectToSlayerStorefrontWeb(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -43,7 +43,7 @@ let closure_6 = async function _redirectToSlayerStorefrontWeb(arg0, value) {
           closure_129_3 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -109,7 +109,7 @@ let closure_6 = async function _redirectToSlayerStorefrontWeb(arg0, value) {
     }
   }
 };
-const Routes = fn(1074).Routes;
+const Routes = fn(1078).Routes;
 let closure_5 = new LoggerDefault("redirectToSlayerStorefrontWeb");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/redirectToSlayerStorefrontWeb.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 7657
-// Function ID: 7658
+// Module ID: 7659
+// Function ID: 7660
 // Name: premium/ProductIds
-// Dependencies: [1374, 7658, 2]
+// Dependencies: [1378, 7660, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7657 (premium/ProductIds)
-import AppleProductIds from "AppleProductIds" /* 7658 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 7659 (premium/ProductIds)
+import AppleProductIds from "AppleProductIds" /* 7660 */;
+import PremiumConstants from "PremiumConstants" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 ({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = PremiumConstants);

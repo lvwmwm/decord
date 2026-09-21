@@ -1,16 +1,16 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 14973
+// Function ID: 14974
 // Name: UniqueUsernamesStore
-// Dependencies: [1438, 1091, 504, 573, 2]
+// Dependencies: [1442, 1095, 504, 577, 2]
 
-// Module 14984 (UniqueUsernamesStore)
+// Module 14973 (UniqueUsernamesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import privDefault from "priv" /* 1438 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import privDefault from "priv" /* 1442 */;
 
-let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
-let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "PX_16", fetched: null } } };
+let closure_2 = { taken: null, error: "IconComponent", rateLimited: null };
+let obj = { validations: new privDefault({ max: 100, maxAge: 60000 }), currentUsernameInvalid: false, retryAfterTime: null, suggestions: { migration: { suggestion: { username: "emoji" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "emoji" }, source: "Set", fetched: null } } };
 const Store = initializeDefault.Store;
 class UniqueUsernamesStore extends Store {
 }
@@ -83,8 +83,8 @@ const uniqueUsernamesStore = new UniqueUsernamesStore(DispatcherDefault, {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "r" }, source: "PX_16", fetched: null };
+    obj.suggestions.migration = { suggestion: { username: "emoji" }, fetched: false, usernameSuggestionLoading: false };
+    obj.suggestions.registration = { suggestion: { username: "emoji" }, source: "Set", fetched: null };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

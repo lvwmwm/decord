@@ -1,21 +1,21 @@
-// Module ID: 17209
-// Function ID: 17210
+// Module ID: 17212
+// Function ID: 17213
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4756, 576, 11779, 1612, 10482, 17210, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 11648, 1616, 10606, 17213, 2]
 
-// Module 17209 (MainTabsEmptyChatPanel)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import useDrawerWidth from "useDrawerWidth" /* 11779 */;
+// Module 17212 (MainTabsEmptyChatPanel)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import useDrawerWidth from "useDrawerWidth" /* 11648 */;
 import noop from "module_19" /* 19 */;
 
-const FavoritesEmptyStateDefault = tmp3(17210);
+const FavoritesEmptyStateDefault = tmp4(17213);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_6 = createStyles.createStyles((left, marginTop) => {
   const obj = { container: null };
   const obj2 = {};
@@ -31,10 +31,34 @@ let closure_6 = createStyles.createStyles((left, marginTop) => {
   obj.container = obj2;
   return obj;
 });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/MainTabsEmptyChatPanel.tsx");
 
-export default function MainTabsEmptyChatPanel() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  const drawerWidth = useDrawerWidth.useDrawerWidth();
+  let container = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
+  if (!obj3.useIsFavoritesGuildSelected()) {
+    return null;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp8 = jsx(FavoritesEmptyStateDefault, {});
+      cResult[0] = tmp8;
+      let first = tmp8;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== container.container) {
+      const obj4 = { style: container.container, pointerEvents: "box-none", children: first };
+      const tmp12 = <React4 style={container.container} pointerEvents="box-none">{first}</React4>;
+      container = container.container;
+      cResult[1] = container;
+      cResult[2] = tmp12;
+    }
+  }
+}) : (() => {
   const drawerWidth = useDrawerWidth.useDrawerWidth();
   const tmp4 = closure_6(drawerWidth, useSafeAreaInsetsDefault().top);
   let tmp5 = null;
@@ -43,4 +67,4 @@ export default function MainTabsEmptyChatPanel() {
     tmp5 = <React4 style={tmp4.container} pointerEvents="box-none">{jsx(FavoritesEmptyStateDefault, {})}</React4>;
   }
   return tmp5;
-};
+});

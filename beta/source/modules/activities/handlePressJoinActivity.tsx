@@ -1,20 +1,20 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 9631
+// Function ID: 9632
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2002, 2041, 2063, 4395, 1372, 4775, 2040, 9636, 9613, 5108, 1115, 7408, 9612, 9637, 2]
+// Dependencies: [5, 2006, 2045, 2067, 4399, 1376, 4777, 2044, 9632, 9609, 5110, 1119, 7410, 9608, 9633, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 9635 (handlePressJoinActivity)
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 9636 */;
+// Module 9631 (handlePressJoinActivity)
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 9632 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ApplicationRecord from "ApplicationRecord" /* 2006 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import UserStore from "UserStore" /* 1376 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 require = fn;
 function handlePressJoinActivity(arg0) {
@@ -23,36 +23,36 @@ function handlePressJoinActivity(arg0) {
     if (handleCanJoin != null) {
       handleCanJoin();
     }
-  } else if (tmp(9636).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
-    const result = tmp(9613).showActivitiesInvalidPermissionsAlert();
-    const tmpResult = tmp(9613);
-  } else if (tmp(9636).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
+  } else if (tmp(9632).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
+    const result = tmp(9609).showActivitiesInvalidPermissionsAlert();
+    const tmpResult = tmp(9609);
+  } else if (tmp(9632).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
     const obj2 = { title: null, body: null, hideActionSheet: false };
-    const intl7 = tmp(1115).intl;
-    obj2.title = intl7.string(tmp(1115).t.PtobXW);
-    const intl8 = tmp(1115).intl;
-    obj2.body = intl8.string(tmp(1115).t.UXoQTp);
+    const intl7 = tmp(1119).intl;
+    obj2.title = intl7.string(tmp(1119).t.PtobXW);
+    const intl8 = tmp(1119).intl;
+    obj2.body = intl8.string(tmp(1119).t.UXoQTp);
     AlertActionCreatorsDefault.show(obj2);
-  } else if (tmp(9636).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
+  } else if (tmp(9632).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     const obj4 = { title: null, body: null, hideActionSheet: false };
-    const intl5 = tmp(1115).intl;
-    obj4.title = intl5.string(tmp(1115).t.PtobXW);
-    const intl6 = tmp(1115).intl;
-    obj4.body = intl6.string(tmp(1115).t.uGDCcw);
+    const intl5 = tmp(1119).intl;
+    obj4.title = intl5.string(tmp(1119).t.PtobXW);
+    const intl6 = tmp(1119).intl;
+    obj4.body = intl6.string(tmp(1119).t.uGDCcw);
     AlertActionCreatorsDefault.show(obj4);
-  } else if (tmp(9636).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
+  } else if (tmp(9632).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
     const obj6 = { title: null, body: null, hideActionSheet: false };
-    const intl3 = tmp(1115).intl;
-    obj6.title = intl3.string(tmp(1115).t.PtobXW);
-    const intl4 = tmp(1115).intl;
-    obj6.body = intl4.string(tmp(1115).t["4WuFRE"]);
+    const intl3 = tmp(1119).intl;
+    obj6.title = intl3.string(tmp(1119).t.PtobXW);
+    const intl4 = tmp(1119).intl;
+    obj6.body = intl4.string(tmp(1119).t["4WuFRE"]);
     AlertActionCreatorsDefault.show(obj6);
   } else {
     const obj8 = { title: null, body: null, hideActionSheet: false };
-    const intl = tmp(1115).intl;
-    obj8.title = intl.string(tmp(1115).t.PtobXW);
-    const intl2 = tmp(1115).intl;
-    obj8.body = intl2.string(tmp(1115).t.FUCQco);
+    const intl = tmp(1119).intl;
+    obj8.title = intl.string(tmp(1119).t.PtobXW);
+    const intl2 = tmp(1119).intl;
+    obj8.body = intl2.string(tmp(1119).t.FUCQco);
     AlertActionCreatorsDefault.show(obj8);
   }
 }
@@ -121,7 +121,7 @@ let closure_12 = async function _maybeJoinEmbeddedActivity(arg0, value) {
       closure_130_1(closure_130_2[8]);
     }
   }
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ channelId: closure_129_0, applicationId: closure_129_1, launchId: closure_129_2, inputApplication: closure_129_3, analyticsLocations: closure_129_4, launchingComponentId: closure_129_5, sectionName: closure_129_6, inviterUserId: closure_129_7 } = closure_0);
   closure_129_12 = function _handleCanJoin() {
@@ -137,7 +137,7 @@ let closure_12 = async function _maybeJoinEmbeddedActivity(arg0, value) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -166,7 +166,7 @@ let closure_12 = async function _maybeJoinEmbeddedActivity(arg0, value) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp13) {
           c0 = tmp;
           throw tmp13;
@@ -182,7 +182,7 @@ let closure_12 = async function _maybeJoinEmbeddedActivity(arg0, value) {
     }
     return applyArgumentsResult;
   };
-  return "PX_16";
+  return "Set";
 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/activities/handlePressJoinActivity.tsx");

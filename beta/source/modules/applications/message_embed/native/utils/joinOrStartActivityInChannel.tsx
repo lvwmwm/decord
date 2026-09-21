@@ -1,14 +1,14 @@
-// Module ID: 12198
-// Function ID: 12199
+// Module ID: 12074
+// Function ID: 12075
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 2040, 2041, 2095, 9639, 9593, 9575, 2]
+// Dependencies: [5, 2044, 2045, 2099, 9635, 9589, 9571, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 12198 (joinOrStartActivityInChannel)
+// Module 12074 (joinOrStartActivityInChannel)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = fn;
 let closure_7 = async function _joinOrStartActivityInChannel(arg0, value) {
@@ -22,7 +22,7 @@ let closure_7 = async function _joinOrStartActivityInChannel(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -52,7 +52,7 @@ let closure_7 = async function _joinOrStartActivityInChannel(arg0, value) {
           closure_130_10 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp6) {
         if (arg0 === 1) {

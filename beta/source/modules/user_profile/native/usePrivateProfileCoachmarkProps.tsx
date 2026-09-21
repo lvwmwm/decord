@@ -1,50 +1,198 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 16706
+// Function ID: 16707
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1074, 2038, 21, 4756, 6606, 1186, 1115, 8922, 2019, 2027, 7624, 2]
-// Exports: usePrivateProfileCoachmarkProps
+// Dependencies: [19, 17, 1078, 2042, 21, 4758, 558, 568, 6604, 1190, 1119, 8920, 2023, 2031, 7626, 2]
 
-// Module 16704 (usePrivateProfileCoachmarkProps)
-import util from "util" /* 1115 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6606 */;
+// Module 16706 (usePrivateProfileCoachmarkProps)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import dismissible_content from "dismissible_content" /* 2031 */;
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6604 */;
+import openUserSettings from "openUserSettings" /* 7626 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-function PrivateProfileCoachmarkImage() {
-  return <View style={closure_7().imageContainer}>{jsx(PrivateProfileAbstractUI.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
-}
 const View = fn(17).View;
-const UserSettingsSections = fn(1074).UserSettingsSections;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const UserSettingsSections = fn(1078).UserSettingsSections;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
+let ReactCompilerGating = fn(558);
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = jsx(PrivateProfileAbstractUI.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" });
+    cResult[0] = tmp7;
+    let first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.imageContainer) {
+    const obj2 = { style: tmp4.imageContainer, children: first };
+    const tmp11 = <View style={tmp4.imageContainer}>{first}</View>;
+    cResult[1] = tmp4.imageContainer;
+    cResult[2] = tmp11;
+    let tmp8 = tmp11;
+  } else {
+    tmp8 = cResult[2];
+  }
+  return tmp8;
+}) : (() => <View style={closure_7().imageContainer}>{jsx(PrivateProfileAbstractUI.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>);
+ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");
 
-export const usePrivateProfileCoachmarkProps = function usePrivateProfileCoachmarkProps(visibleContent) {
+export const usePrivateProfileCoachmarkProps = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  const cResult = markAsDismissed(568).c(15);
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  const obj = markAsDismissed(568);
+  let userIsTeen = markAsDismissed(8920).useUserIsTeen();
+  const ProfileVisibility = markAsDismissed(2023).ProfileVisibility;
+  const setting = ProfileVisibility.useSetting();
+  if (userIsTeen) {
+    userIsTeen = setting !== tmp(1190).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+  }
+  if (cResult[0] === userIsTeen) {
+    if (cResult[1] === setting) {
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1119).intl;
+        const stringResult = intl.string(tmp(1119).t.Ve4nS1);
+        cResult[3] = stringResult;
+        let tmp11 = stringResult;
+      } else {
+        tmp11 = cResult[3];
+      }
+      if (cResult[4] !== markAsDismissed) {
+        const fn = function f() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        };
+        cResult[4] = markAsDismissed;
+        cResult[5] = fn;
+        let tmp13 = fn;
+      } else {
+        tmp13 = cResult[5];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn2 = function p() {
+          return <closure_1_8 />;
+        };
+        const intl2 = tmp(1119).intl;
+        const stringResult1 = intl2.string(tmp(1119).t.eOoTMX);
+        cResult[6] = fn2;
+        cResult[7] = stringResult1;
+        let tmp15 = stringResult1;
+        let tmp14 = fn2;
+      } else {
+        tmp14 = cResult[6];
+        tmp15 = cResult[7];
+      }
+      if (cResult[8] !== markAsDismissed) {
+        class D {
+          constructor() {
+            tmp = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+            obj = closure_0(closure_1[14]);
+            obj1 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
+            openUserSettingsResult = obj.openUserSettings(obj1);
+            return;
+          }
+        }
+        cResult[8] = markAsDismissed;
+        cResult[9] = D;
+      } else {
+        class D {
+          constructor() {
+            tmp = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+            obj = closure_0(closure_1[14]);
+            obj1 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
+            openUserSettingsResult = obj.openUserSettings(obj1);
+            return;
+          }
+        }
+      }
+      const tmp18 = markAsDismissed.visibleContent === tmp(2031).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
+      if (cResult[10] === cResult[2]) {
+        class D {
+          constructor() {
+            tmp = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+            obj = closure_0(closure_1[14]);
+            obj1 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
+            openUserSettingsResult = obj.openUserSettings(obj1);
+            return;
+          }
+        }
+      }
+      const obj6 = { title: tmp11, description: cResult[2], position: "top", visible: tmp18, onDismiss: tmp13, renderImgComponent: tmp14, buttonLabel: tmp15, buttonVariant: "primary", onButtonPress: tmp17 };
+      cResult[10] = cResult[2];
+      cResult[11] = tmp18;
+      cResult[12] = tmp13;
+      cResult[13] = tmp17;
+      cResult[14] = obj6;
+    }
+  }
+  if (!userIsTeen) {
+    class D {
+      constructor() {
+        tmp = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+        obj = closure_0(closure_1[14]);
+        obj1 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
+        openUserSettingsResult = obj.openUserSettings(obj1);
+        return;
+      }
+    }
+    const stringResult2 = obj3.string(tmp(1119).t.bnNxW1);
+    cResult[0] = userIsTeen;
+    cResult[1] = setting;
+    cResult[2] = stringResult2;
+  }
+  if (setting === markAsDismissed(1190).ProfileVisibility.FRIENDS_ONLY) {
+    class D {
+      constructor() {
+        tmp = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+        obj = closure_0(closure_1[14]);
+        obj1 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
+        openUserSettingsResult = obj.openUserSettings(obj1);
+        return;
+      }
+    }
+    obj5.string(tmp(1119).t["/hogEy"]);
+  } else {
+    class D {
+      constructor() {
+        tmp = markAsDismissed(ContentDismissActionType.TAKE_ACTION);
+        obj = closure_0(closure_1[14]);
+        obj1 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
+        openUserSettingsResult = obj.openUserSettings(obj1);
+        return;
+      }
+    }
+    obj4.string(tmp(1119).t["6hEfm1"]);
+  }
+}) : ((visibleContent) => {
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;
   let stringResult1;
   let prop = markAsDismissed;
-  const userIsTeen = visibleContent(markAsDismissed[9]).useUserIsTeen();
-  const ProfileVisibility = visibleContent(markAsDismissed[10]).ProfileVisibility;
+  const userIsTeen = visibleContent(markAsDismissed[11]).useUserIsTeen();
+  const ProfileVisibility = visibleContent(markAsDismissed[12]).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {
-    if (setting !== tmp(prop[7]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-      if (setting === tmp(prop[7]).ProfileVisibility.FRIENDS_ONLY) {
-        const intl3 = tmp(prop[8]).intl;
-        prop = tmp(prop[8]).t["/hogEy"];
+    if (setting !== tmp(prop[9]).ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
+      if (setting === tmp(prop[9]).ProfileVisibility.FRIENDS_ONLY) {
+        const intl3 = tmp(prop[10]).intl;
+        prop = tmp(prop[10]).t["/hogEy"];
         let stringResult = intl3.string(prop);
       } else {
-        let intl2 = tmp(prop[8]).intl;
-        stringResult = intl2.string(tmp(prop[8]).t["6hEfm1"]);
+        let intl2 = tmp(prop[10]).intl;
+        stringResult = intl2.string(tmp(prop[10]).t["6hEfm1"]);
       }
     }
   }
-  let intl = tmp(prop[8]).intl;
-  stringResult1 = intl.string(tmp(prop[8]).t.bnNxW1);
+  let intl = tmp(prop[10]).intl;
+  stringResult1 = intl.string(tmp(prop[10]).t.bnNxW1);
   const items = [stringResult1, markAsDismissed, visibleContent];
   return stringResult1.useMemo(() => {
     const obj = { title: null, description: null, position: "top", visible: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, buttonVariant: "primary", onButtonPress: null };
@@ -62,8 +210,8 @@ export const usePrivateProfileCoachmarkProps = function usePrivateProfileCoachma
     obj.buttonLabel = intl2.string(util.t.eOoTMX);
     obj.onButtonPress = function onButtonPress() {
       closure_1_1(constants2.TAKE_ACTION);
-      visibleContent(markAsDismissed[12]).openUserSettings({ screen: constants.DATA_AND_PRIVACY });
+      visibleContent(markAsDismissed[14]).openUserSettings({ screen: constants.DATA_AND_PRIVACY });
     };
     return obj;
   }, items);
-};
+});

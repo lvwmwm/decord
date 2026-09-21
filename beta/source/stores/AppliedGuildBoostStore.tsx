@@ -1,11 +1,11 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12727
+// Function ID: 12728
 // Name: AppliedGuildBoostStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 12816 (AppliedGuildBoostStore)
+// Module 12727 (AppliedGuildBoostStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 function handleModifyingAppliedBoostStart() {
   c4 = true;

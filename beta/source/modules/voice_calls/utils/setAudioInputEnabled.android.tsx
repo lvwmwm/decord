@@ -1,11 +1,11 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17742
+// Function ID: 17743
 // Name: setAudioInputEnabled
-// Dependencies: [1997, 2]
+// Dependencies: [2001, 2]
 // Exports: default
 
-// Module 17739 (setAudioInputEnabled)
-import NativeMediaEngineModuleDefault from "NativeMediaEngineModule" /* 1997 */;
+// Module 17742 (setAudioInputEnabled)
+import NativeMediaEngineModuleDefault from "NativeMediaEngineModule" /* 2001 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/utils/setAudioInputEnabled.android.tsx");

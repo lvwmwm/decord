@@ -1,9 +1,9 @@
 // Module ID: 3839
 // Function ID: 3840
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 3839
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/riot_credit_campaign", scales: [1], hash: "728f19a8cabe4372feb59e6102414e85", name: "RiotCreditCampaign.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "9a43efbe041b010f1e2d30527087f43a", name: "uk.messages.9a43efbe041b010f1e2d30527087f43a.compiled.messages", type: "jsona" });

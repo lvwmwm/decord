@@ -1,20 +1,20 @@
-// Module ID: 18351
-// Function ID: 18352
+// Module ID: 18354
+// Function ID: 18355
 // Name: handleIncomingURL
-// Dependencies: [5, 2041, 4779, 1979, 1074, 3, 7717, 18350, 4963, 1241, 14119, 4736, 4741, 1254, 8649, 16275, 18352, 2]
+// Dependencies: [5, 2045, 4781, 1983, 1078, 3, 7722, 18353, 4965, 1245, 14122, 4738, 4743, 1258, 8654, 16278, 18355, 2]
 // Exports: default
 
-// Module 18351 (handleIncomingURL)
+// Module 18354 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4963 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7717 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 14119 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 18350 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4965 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7722 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 14122 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 18353 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
 
 require = fn;
 let closure_11 = async function _handleIncomingURL(arg0, value) {
@@ -28,7 +28,7 @@ let closure_11 = async function _handleIncomingURL(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -144,17 +144,17 @@ let closure_11 = async function _handleIncomingURL(arg0, value) {
                   }
                 }
                 c8 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "IconComponent", done: null };
               } else {
                 const parts = url.split("voice/");
                 if (2 !== parts.length) {
                   c8 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 } else {
                   const parts1 = parts[1].split("/");
                   if (0 === parts1.length) {
                     c8 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   } else if ("user" !== parts1[0]) {
                     if ("invite" === parts1[0]) {
                       const obj14 = { payload: null };
@@ -307,7 +307,7 @@ let closure_11 = async function _handleIncomingURL(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AppStates: closure_7, AnalyticEvents: closure_8, LinkingTypes: closure_9 } = Constants);
 let closure_10 = new LoggerDefault("index.native.tsx");
 const size = fn(2);

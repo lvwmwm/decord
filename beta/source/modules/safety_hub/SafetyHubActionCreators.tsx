@@ -1,15 +1,15 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12012
+// Function ID: 12013
 // Name: SafetyHubActionCreators
-// Dependencies: [5, 502, 8702, 8691, 1074, 573, 1271, 4906, 8690, 2]
+// Dependencies: [5, 502, 8707, 8696, 1078, 577, 1275, 4908, 8695, 2]
 // Exports: getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification, resetAgeCheckStatus
 
-// Module 12136 (SafetyHubActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 12012 (SafetyHubActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubStore from "SafetyHubStore" /* 8702 */;
+import SafetyHubStore from "SafetyHubStore" /* 8707 */;
 
 require = fn;
 function getSafetyHubData() {
@@ -33,7 +33,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -121,7 +121,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
               manual_review_decided_underage = false;
             }
             obj.manualReviewDecidedUnderage = manual_review_decided_underage;
-            closure_1_1(573).dispatch(obj);
+            closure_1_1(577).dispatch(obj);
           }).catch((error) => {
             let str;
             if (error != null) {
@@ -133,7 +133,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
             if (str == null) {
               str = "Unknown error";
             }
-            closure_1_1(573).dispatch({ type: "SAFETY_HUB_FETCH_FAILURE", error: str });
+            closure_1_1(577).dispatch({ type: "SAFETY_HUB_FETCH_FAILURE", error: str });
           });
           c1 = 1;
           c0 = 1;
@@ -188,7 +188,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
               manual_review_decided_underage = false;
             }
             obj.manualReviewDecidedUnderage = manual_review_decided_underage;
-            closure_1_1(573).dispatch(obj);
+            closure_1_1(577).dispatch(obj);
           });
         }
       } else if (arg0 === 1) {
@@ -200,7 +200,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
         return obj;
       } else {
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp11) {
       c0 = tmp;
@@ -222,7 +222,7 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -283,16 +283,16 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
                       items = [first];
                     }
                     found.flagged_content = items;
-                    obj3 = classificationId(8690);
+                    obj3 = classificationId(8695);
                   }
                 }
                 const obj2 = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: found, accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible };
-                c1(573).dispatch(obj2);
-                const obj4 = c1(573);
+                c1(577).dispatch(obj2);
+                const obj4 = c1(577);
               } else {
                 const obj5 = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE", error: "Classification not found.", classificationId };
-                c1(573).dispatch(obj5);
-                const obj = c1(573);
+                c1(577).dispatch(obj5);
+                const obj = c1(577);
               }
             }).catch((error) => {
               let str;
@@ -305,7 +305,7 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
               if (str == null) {
                 str = "Unknown error";
               }
-              c1(573).dispatch({ type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE", error: str, classificationId });
+              c1(577).dispatch({ type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE", error: str, classificationId });
             });
             c2 = 1;
             c1 = 1;
@@ -332,16 +332,16 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
                       items = [first];
                     }
                     found.flagged_content = items;
-                    obj3 = classificationId(8690);
+                    obj3 = classificationId(8695);
                   }
                 }
                 const obj2 = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: found, accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible };
-                c1(573).dispatch(obj2);
-                const obj4 = c1(573);
+                c1(577).dispatch(obj2);
+                const obj4 = c1(577);
               } else {
                 const obj5 = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE", error: "Classification not found.", classificationId };
-                c1(573).dispatch(obj5);
-                const obj = c1(573);
+                c1(577).dispatch(obj5);
+                const obj = c1(577);
               }
             });
           }
@@ -354,7 +354,7 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c1 = tmp;
@@ -374,7 +374,7 @@ let closure_13 = async function _requestReview(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -412,7 +412,7 @@ let closure_13 = async function _requestReview(arg0, value) {
           }
           DispatcherDefault.dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_START" });
           putResult.then(() => {
-            closure_1(573).dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_SUCCESS", classificationId });
+            closure_1(577).dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_SUCCESS", classificationId });
           }).catch((error) => {
             let str;
             if (error != null) {
@@ -424,13 +424,13 @@ let closure_13 = async function _requestReview(arg0, value) {
             if (str == null) {
               str = "Unknown error";
             }
-            closure_1_1(573).dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_FAILURE", error: str });
+            closure_1_1(577).dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_FAILURE", error: str });
             throw error;
           });
           c4 = 1;
           c3 = 1;
           const nextPromise = putResult.then(() => {
-            closure_1(573).dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_SUCCESS", classificationId });
+            closure_1(577).dispatch({ type: "SAFETY_HUB_REQUEST_REVIEW_SUCCESS", classificationId });
           });
         }
       } else if (arg0 === 1) {
@@ -442,7 +442,7 @@ let closure_13 = async function _requestReview(arg0, value) {
         return obj;
       } else {
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp15) {
       c3 = tmp;
@@ -464,7 +464,7 @@ let closure_14 = async function _requestSuspendedUserAgeVerification(from_classi
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -491,7 +491,7 @@ let closure_14 = async function _requestSuspendedUserAgeVerification(from_classi
             const obj6 = {
               value: HTTP.post(request).then((body) => {
                         ({ verification_request_id, verification_webview_url } = body.body);
-                        closure_1_1(573).dispatch({ type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS", verificationRequestId: verification_request_id, verificationWebviewUrl: verification_webview_url });
+                        closure_1_1(577).dispatch({ type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS", verificationRequestId: verification_request_id, verificationWebviewUrl: verification_webview_url });
                       }).catch((error) => {
                         let str;
                         if (error != null) {
@@ -503,7 +503,7 @@ let closure_14 = async function _requestSuspendedUserAgeVerification(from_classi
                         if (str == null) {
                           str = "Unknown error";
                         }
-                        closure_1_1(573).dispatch({ type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE", error: str });
+                        closure_1_1(577).dispatch({ type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE", error: str });
                       }),
               done: false
             };
@@ -518,7 +518,7 @@ let closure_14 = async function _requestSuspendedUserAgeVerification(from_classi
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c1 = tmp;
@@ -548,7 +548,7 @@ let closure_16 = async function _checkSuspendedUserAgeVerification(arg0, value) 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -611,7 +611,7 @@ let closure_16 = async function _checkSuspendedUserAgeVerification(arg0, value) 
         return obj;
       } else {
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp5) {
       c0 = tmp;
@@ -643,7 +643,7 @@ let closure_18 = async function _checkSuspendedUserAgeVerificationV(requested_at
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -676,15 +676,15 @@ let closure_18 = async function _checkSuspendedUserAgeVerificationV(requested_at
                             closure_2_10();
                           }
                           const obj3 = { type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS_V2", status };
-                          c1(573).dispatch(obj3);
-                          const obj2 = c1(573);
+                          c1(577).dispatch(obj3);
+                          const obj2 = c1(577);
                           tmp10 = status !== tmp.UNBANNED && status !== tmp.VERIFIED_OTHER_VIOLATIONS_REMAIN;
                         } else if (closure_1 < closure_2_7) {
                           const _setTimeout = setTimeout;
                           const timerId = setTimeout(() => closure_2_17(closure_1_0), closure_2_6);
                         } else {
-                          c1(573).dispatch({ type: "SAFETY_HUB_RESET_AGE_CHECK_STATUS" });
-                          const obj = c1(573);
+                          c1(577).dispatch({ type: "SAFETY_HUB_RESET_AGE_CHECK_STATUS" });
+                          const obj = c1(577);
                         }
                       }).catch((error) => {
                         let str;
@@ -697,7 +697,7 @@ let closure_18 = async function _checkSuspendedUserAgeVerificationV(requested_at
                         if (str == null) {
                           str = "Unknown error";
                         }
-                        closure_1(573).dispatch({ type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE", error: str });
+                        closure_1(577).dispatch({ type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE", error: str });
                       }),
               done: false
             };
@@ -712,7 +712,7 @@ let closure_18 = async function _checkSuspendedUserAgeVerificationV(requested_at
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c1 = tmp;
@@ -721,9 +721,9 @@ let closure_18 = async function _checkSuspendedUserAgeVerificationV(requested_at
     }
   })();
 };
-const SafetyHubConstants = fn(8691);
+const SafetyHubConstants = fn(8696);
 ({ AGE_CHECK_POLL_INTERVAL_MS: metroRequire, AGE_CHECK_MAX_POLL_ATTEMPTS: closure_7, SuspendedAgeCheckStatus: closure_8 } = SafetyHubConstants);
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/safety_hub/SafetyHubActionCreators.tsx");
 

@@ -1,20 +1,77 @@
-// Module ID: 13706
-// Function ID: 13707
+// Module ID: 13709
+// Function ID: 13710
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4420, 8315, 13705, 504, 2]
-// Exports: useReferralIncentiveEligibility
+// Dependencies: [4424, 558, 568, 8320, 13708, 504, 2]
 
-// Module 13706 (useReferralIncentiveEligibility)
+// Module 13709 (useReferralIncentiveEligibility)
 import initialize from "initialize" /* 504 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8315 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13705 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import c from "c" /* 568 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8320 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13708 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralIncentiveEligibility.tsx");
 
-export const useReferralIncentiveEligibility = function useReferralIncentiveEligibility(preventFetch) {
+export const useReferralIncentiveEligibility = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch) => {
+  const cResult = c.c(6);
+  preventFetch = preventFetch.preventFetch;
+  let tmp4 = undefined === preventFetch;
+  if (!tmp4) {
+    tmp4 = preventFetch;
+  }
+  const isEligibleSenderForReferralProgram = useIsEligibleSenderForReferralProgram.useIsEligibleSenderForReferralProgram(tmp4);
+  const tmpResult = useIsEligibleSenderForReferralProgram;
+  const premiumReferralIncentivesVariant = PremiumReferralIncentivesExperiment.usePremiumReferralIncentivesVariant(preventFetch.location);
+  ({ referralRewardType, useAltReferralCardArt } = premiumReferralIncentivesVariant);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SubscriptionStore];
+    const fn = function s() {
+      return premiumTypeSubscription.getPremiumTypeSubscription();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp7 = items;
+    tmp8 = fn;
+  } else {
+    [tmp7, tmp8] = cResult;
+  }
+  const tmpResult3 = PremiumReferralIncentivesExperiment;
+  const stateFromStores = initialize.useStateFromStores(tmp7, tmp8);
+  let tmp13 = true === isEligibleSenderForReferralProgram;
+  let tmp14 = tmp13;
+  if (tmp13) {
+    tmp14 = referralRewardType === tmp(13708).ReferralRewardType.ORBS;
+  }
+  if (tmp13) {
+    tmp13 = referralRewardType === tmp(13708).ReferralRewardType.DISCOUNT;
+  }
+  if (tmp13) {
+    tmp13 = tmp11;
+  }
+  if (tmp13) {
+    tmp13 = tmp12;
+  }
+  if (!tmp14) {
+    tmp14 = tmp13;
+  }
+  if (cResult[2] === referralRewardType) {
+    if (cResult[3] === tmp14) {
+      if (cResult[4] === useAltReferralCardArt) {
+        let tmp15 = cResult[5];
+      }
+      return tmp15;
+    }
+  }
+  const obj2 = { isEligibleForIncentive: tmp14, referralRewardType, useAltReferralCardArt };
+  cResult[2] = referralRewardType;
+  cResult[3] = tmp14;
+  cResult[4] = useAltReferralCardArt;
+  cResult[5] = obj2;
+  tmp15 = obj2;
+}) : ((preventFetch) => {
   let flag = preventFetch.preventFetch;
   if (flag === undefined) {
     flag = true;
@@ -27,10 +84,10 @@ export const useReferralIncentiveEligibility = function useReferralIncentiveElig
   let tmp8 = true === isEligibleSenderForReferralProgram;
   let isEligibleForIncentive = tmp8;
   if (tmp8) {
-    isEligibleForIncentive = referralRewardType === tmp(13705).ReferralRewardType.ORBS;
+    isEligibleForIncentive = referralRewardType === tmp(13708).ReferralRewardType.ORBS;
   }
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(13705).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(13708).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;
@@ -42,4 +99,4 @@ export const useReferralIncentiveEligibility = function useReferralIncentiveElig
     isEligibleForIncentive = tmp8;
   }
   return { isEligibleForIncentive, referralRewardType, useAltReferralCardArt };
-};
+});

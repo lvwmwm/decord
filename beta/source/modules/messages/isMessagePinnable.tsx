@@ -1,16 +1,16 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11786
+// Function ID: 11787
 // Name: isMessagePinnable
-// Dependencies: [4395, 1074, 7512, 7511, 2]
+// Dependencies: [4399, 1078, 7514, 7513, 2]
 // Exports: default
 
-// Module 11915 (isMessagePinnable)
-import ThreadHooks from "ThreadHooks" /* 7511 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 11786 (isMessagePinnable)
+import ThreadHooks from "ThreadHooks" /* 7513 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7514 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes: closure_4, Permissions: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/isMessagePinnable.tsx");

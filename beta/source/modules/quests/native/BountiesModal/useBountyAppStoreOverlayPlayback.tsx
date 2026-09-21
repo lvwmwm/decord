@@ -1,16 +1,18 @@
-// Module ID: 15293
-// Function ID: 15294
+// Module ID: 15282
+// Function ID: 15283
 // Name: useBountyAppStoreOverlayPlayback
-// Dependencies: [19, 15294, 15296, 15297, 2]
-// Exports: getBountyVideoEndMode, useBountyAppStoreOverlayPlayback
+// Dependencies: [19, 15283, 15285, 558, 568, 15286, 2]
+// Exports: getBountyVideoEndMode
 
-// Module 15293 (useBountyAppStoreOverlayPlayback)
-import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 15294 */;
-import useBountiesModalTiming from "useBountiesModalTiming" /* 15296 */;
-import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 15297 */;
+// Module 15282 (useBountyAppStoreOverlayPlayback)
+import c from "c" /* 568 */;
+import useBountyVideoEndAppStoreOverlay from "useBountyVideoEndAppStoreOverlay" /* 15283 */;
+import useBountiesModalTiming from "useBountiesModalTiming" /* 15285 */;
+import useBountyPauseAppStoreSheet from "useBountyPauseAppStoreSheet" /* 15286 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyAppStoreOverlayPlayback.tsx");
 
@@ -19,7 +21,180 @@ export const getBountyVideoEndMode = function getBountyVideoEndMode(bounty) {
   const BountyVideoEndMode = useBountiesModalTiming.BountyVideoEndMode;
   return result ? BountyVideoEndMode.APP_STORE_LOOP : BountyVideoEndMode.END_CARD;
 };
-export const useBountyAppStoreOverlayPlayback = function useBountyAppStoreOverlayPlayback(handleVideoPaused) {
+export const useBountyAppStoreOverlayPlayback = ReactCompilerGating.isReactCompilerEnabled() ? ((handleVideoPaused) => {
+  const cResult = c.c(26);
+  ({ bounty, sourceQuestContent, isActive, endMode, playerRef, handleVideoEnd } = handleVideoPaused);
+  handleVideoPaused = handleVideoPaused.handleVideoPaused;
+  const handleVideoResumed = handleVideoPaused.handleVideoResumed;
+  ({ showEndCard, onPaused } = handleVideoPaused);
+  if (cResult[0] === bounty) {
+    if (cResult[1] === endMode) {
+      if (cResult[2] === isActive) {
+        if (cResult[3] === showEndCard) {
+          if (cResult[4] === sourceQuestContent) {
+            let tmp4 = cResult[5];
+          }
+          const onVideoEndForAppStore = tmp(15283).useBountyVideoEndAppStoreOverlay(tmp4).onVideoEndForAppStore;
+          const tmpResult = tmp(15283);
+          const bountyVideoEndAppStoreContext = tmp(15283).useBountyVideoEndAppStoreContext();
+          let flag;
+          if (bountyVideoEndAppStoreContext != null) {
+            flag = bountyVideoEndAppStoreContext.isVideoEndAppStoreOverlayVisible;
+          }
+          if (flag == null) {
+            flag = false;
+          }
+          if (cResult[6] === bounty) {
+            if (cResult[7] === isActive) {
+              if (cResult[8] === playerRef) {
+                if (cResult[9] === sourceQuestContent) {
+                  let tmp7 = cResult[10];
+                }
+                const handleVideoPausedForAppStore = tmp(15286).useBountyPauseAppStoreSheet(tmp7).handleVideoPausedForAppStore;
+                if (cResult[11] === handleVideoPaused) {
+                  if (cResult[12] === handleVideoPausedForAppStore) {
+                    if (cResult[13] === onPaused) {
+                      let tmp8 = cResult[14];
+                    }
+                    if (cResult[15] !== handleVideoResumed) {
+                      class B {
+                        constructor(arg0) {
+                          tmp = handleVideoResumed(handleVideoPaused);
+                          return;
+                        }
+                      }
+                      cResult[15] = handleVideoResumed;
+                      class R {
+                        constructor() {
+                          tmp = handleVideoEnd();
+                          tmp2 = onVideoEndForAppStore();
+                          return;
+                        }
+                      }
+                      cResult[16] = B;
+                      class O {
+                        constructor(arg0) {
+                          tmp = handleVideoPaused(handleVideoPaused);
+                          if (onPaused != null) {
+                            tmp2 = onPaused();
+                          }
+                          tmp3 = closure_5(handleVideoPaused);
+                          return;
+                        }
+                      }
+                    } else {
+                      class B {
+                        constructor(arg0) {
+                          tmp = handleVideoResumed(handleVideoPaused);
+                          return;
+                        }
+                      }
+                    }
+                    if (cResult[17] === handleVideoEnd) {
+                      class B {
+                        constructor(arg0) {
+                          tmp = handleVideoResumed(handleVideoPaused);
+                          return;
+                        }
+                      }
+                      if (cResult[20] === tmp8) {
+                        class B {
+                          constructor(arg0) {
+                            tmp = handleVideoResumed(handleVideoPaused);
+                            return;
+                          }
+                        }
+                      }
+                      class R {
+                        constructor() {
+                          tmp = handleVideoEnd();
+                          tmp2 = onVideoEndForAppStore();
+                          return;
+                        }
+                      }
+                      tmp13[0] = flag;
+                      class O {
+                        constructor(arg0) {
+                          tmp = handleVideoPaused(handleVideoPaused);
+                          if (onPaused != null) {
+                            tmp2 = onPaused();
+                          }
+                          tmp3 = closure_5(handleVideoPaused);
+                          return;
+                        }
+                      }
+                      tmp13[2] = tmp8;
+                      tmp13[3] = tmp9;
+                      tmp13[4] = tmp10;
+                      cResult[20] = tmp8;
+                      cResult[21] = tmp9;
+                      cResult[22] = tmp10;
+                      cResult[23] = flag;
+                      cResult[24] = endMode === tmp(15285).BountyVideoEndMode.APP_STORE_LOOP;
+                      cResult[25] = tmp13;
+                      const tmp11 = endMode === tmp(15285).BountyVideoEndMode.APP_STORE_LOOP;
+                    }
+                    class R {
+                      constructor() {
+                        tmp = handleVideoEnd();
+                        tmp2 = onVideoEndForAppStore();
+                        return;
+                      }
+                    }
+                    class O {
+                      constructor(arg0) {
+                        tmp = handleVideoPaused(handleVideoPaused);
+                        if (onPaused != null) {
+                          tmp2 = onPaused();
+                        }
+                        tmp3 = closure_5(handleVideoPaused);
+                        return;
+                      }
+                    }
+                    cResult[18] = onVideoEndForAppStore;
+                    cResult[19] = R;
+                  }
+                }
+                class O {
+                  constructor(arg0) {
+                    tmp = handleVideoPaused(handleVideoPaused);
+                    if (onPaused != null) {
+                      tmp2 = onPaused();
+                    }
+                    tmp3 = closure_5(handleVideoPaused);
+                    return;
+                  }
+                }
+                cResult[11] = handleVideoPaused;
+                cResult[12] = handleVideoPausedForAppStore;
+                cResult[13] = onPaused;
+                cResult[14] = O;
+                tmp8 = O;
+                const tmpResult4 = tmp(15286);
+              }
+            }
+          }
+          const obj2 = { bounty, sourceQuestContent, isActive, playerRef };
+          cResult[6] = bounty;
+          cResult[7] = isActive;
+          cResult[8] = playerRef;
+          cResult[9] = sourceQuestContent;
+          cResult[10] = obj2;
+          tmp7 = obj2;
+          const tmpResult3 = tmp(15283);
+        }
+      }
+    }
+  }
+  const obj3 = { bounty, sourceQuestContent, isActive, endMode, onOverlayUnavailable: showEndCard };
+  cResult[0] = bounty;
+  cResult[1] = endMode;
+  cResult[2] = isActive;
+  cResult[3] = showEndCard;
+  cResult[4] = sourceQuestContent;
+  cResult[5] = obj3;
+  tmp4 = obj3;
+}) : ((handleVideoPaused) => {
   ({ bounty, sourceQuestContent, isActive, endMode, handleVideoEnd } = handleVideoPaused);
   handleVideoPaused = handleVideoPaused.handleVideoPaused;
   const handleVideoResumed = handleVideoPaused.handleVideoResumed;
@@ -59,4 +234,4 @@ export const useBountyAppStoreOverlayPlayback = function useBountyAppStoreOverla
   obj3.handleResumed = callback1;
   obj3.handleVideoEndWithAppStore = callback2;
   return obj3;
-};
+});

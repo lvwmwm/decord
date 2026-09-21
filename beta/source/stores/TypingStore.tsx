@@ -1,15 +1,15 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12095
+// Function ID: 12096
 // Name: TypingStore
-// Dependencies: [502, 2041, 7923, 1074, 1091, 7466, 1271, 573, 504, 2]
+// Dependencies: [502, 2045, 7928, 1078, 1095, 7468, 1275, 577, 504, 2]
 
-// Module 12218 (TypingStore)
+// Module 12095 (TypingStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function handleTypingStart(arg0) {
@@ -109,8 +109,8 @@ function handleConnectionOpen() {
   closure_11 = {};
   closure_12 = {};
 }
-const SlowmodeType = fn(7923).SlowmodeType;
-const Endpoints = fn(1074).Endpoints;
+const SlowmodeType = fn(7928).SlowmodeType;
+const Endpoints = fn(1078).Endpoints;
 let closure_8 = 10 * DurationsDefault.Millis.SECOND;
 let closure_9 = 1.5 * DurationsDefault.Millis.SECOND;
 const dependencyMap = {};
@@ -139,12 +139,12 @@ prototype["getTypingUsersByGuild"] = function getTypingUsersByGuild(arg0) {
   }
   return tmp;
 };
-prototype["isTyping"] = function isTyping(isStage, id) {
-  let tmp = dependencyMap[isStage];
+prototype["isTyping"] = function isTyping(id, id2) {
+  let tmp = dependencyMap[id];
   if (tmp == null) {
     tmp = closure_13;
   }
-  return null != tmp[id];
+  return null != tmp[id2];
 };
 prototype["getCustomTypingIndicatorConfig"] = function getCustomTypingIndicatorConfig(arg0) {
   let tmp = closure_12[arg0];
@@ -162,7 +162,7 @@ const typingStore = new TypingStore(DispatcherDefault, {
     const id = AuthenticationStore.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(7466).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(7468).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;
@@ -227,13 +227,13 @@ const typingStore = new TypingStore(DispatcherDefault, {
                     }
                     if (num > 0) {
                       const obj2 = { type: "SLOWMODE_SET_COOLDOWN", channelId, slowmodeType: SlowmodeType.SendMessage, cooldownMs: num };
-                      id(573).dispatch(obj2);
-                      obj = id(573);
+                      id(577).dispatch(obj2);
+                      obj = id(577);
                     }
                     if (num2 > 0) {
                       const obj4 = { type: "SLOWMODE_SET_COOLDOWN", channelId, slowmodeType: SlowmodeType.CreateThread, cooldownMs: num2 };
-                      id(573).dispatch(obj4);
-                      const obj3 = id(573);
+                      id(577).dispatch(obj4);
+                      const obj3 = id(577);
                     }
                   }
                 });

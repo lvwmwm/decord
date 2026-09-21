@@ -1,73 +1,39 @@
 // Module ID: 13135
 // Function ID: 13136
-// Dependencies: [13050, 13051, 13136, 13077, 13106, 13137, 13061, 13059, 13098]
+// Dependencies: [13047, 13050, 13049, 13055]
+// Exports: addConsoleInstrumentationHandler
 
 // Module 13135
-import _mod13077 from "module_13077" /* 13077 */;
-import setupIntegration from "module_13106" /* 13106 */;
+import _mod13047 from "module_13047" /* 13047 */;
+import _mod13049 from "module_13049" /* 13049 */;
+import _mod13050 from "module_13050" /* 13050 */;
 
-
-export const captureConsoleIntegration = setupIntegration.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let handled;
-  let CONSOLE_LEVELS = obj.levels;
-  if (!CONSOLE_LEVELS) {
-    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
-  }
-  handled = obj.handled;
-  return {
-    name: "CaptureConsole",
-    setup(arg0) {
-      closure_0 = arg0;
-      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
-        let result = CONSOLE_LEVELS(handled[2]).addConsoleInstrumentationHandler((arg0) => {
-          ({ args, level } = arg0);
-          let hasItem = _mod13077.getClient() === args;
-          if (hasItem) {
-            hasItem = CONSOLE_LEVELS.includes(level);
-          }
-          if (hasItem) {
-            closure_2 = handled;
-            let obj2 = { level: tmp(13137).severityLevelFromString(level), extra: null };
-            const obj3 = { arguments: args };
-            obj2.extra = obj3;
-            const tmpResult = tmp(13137);
-            tmp(13077).withScope((addEventProcessor) => {
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
-                const result = args(level[6]).addExceptionMechanism(arg0, { handled, type: "console" });
-                return arg0;
-              });
-              if ("assert" !== level) {
-                const found = args.find((item) => item instanceof Error);
-                if (found) {
-                  tmp14(13098).captureException(found, obj2);
-                  const tmp14Result = tmp14(13098);
-                } else {
-                  const tmp14Result2 = tmp14(13059);
-                  const safeJoinResult = tmp14(13059).safeJoin(tmp12, " ");
-                  args(13098).captureMessage(safeJoinResult, obj2);
-                  const obj4 = args(13098);
-                }
-                tmp12 = args;
-              } else if (!args[0]) {
-                const obj = args(13059);
-                const _HermesInternal = HermesInternal;
-                const combined = "Assertion failed: " + args(13059).safeJoin(arr.slice(1), " ") || "console.assert";
-                addEventProcessor.setExtra("arguments", arr.slice(1));
-                obj2 = args(13098);
-                obj2.captureMessage(combined, obj2);
-                const tmp4 = args(13059).safeJoin(arr.slice(1), " ") || "console.assert";
-              }
-            });
-            const tmpResult2 = tmp(13077);
-          }
+require = arg1;
+const dependencyMap = arg6;
+function instrumentConsole() {
+  if ("console" in _mod13050.GLOBAL_OBJ) {
+    const CONSOLE_LEVELS = _mod13049.CONSOLE_LEVELS;
+    const item = CONSOLE_LEVELS.forEach((item) => {
+      closure_0 = item;
+      if (item in closure_0(13050).GLOBAL_OBJ.console) {
+        tmp(13055).fill(tmp(13050).GLOBAL_OBJ.console, item, (arg0) => {
+          _mod13049.originalConsoleMethods[level] = arg0;
+          return () => {
+            const items = [...arguments];
+            level(13047).triggerHandlers("console", { args: items, level });
+            const obj3 = level(13049).originalConsoleMethods[level];
+            if (obj3) {
+              obj3.apply(level(13050).GLOBAL_OBJ.console, items);
+            }
+          };
         });
-        let tmpResult = CONSOLE_LEVELS(handled[2]);
+        const tmpResult = tmp(13055);
       }
-    }
-  };
-});
+    });
+  }
+}
+
+export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
+  _mod13047.addHandler("console", arg0);
+  _mod13047.maybeInstrument("console", instrumentConsole);
+};

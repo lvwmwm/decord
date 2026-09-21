@@ -1,14 +1,14 @@
-// Module ID: 1979
-// Function ID: 1980
+// Module ID: 1983
+// Function ID: 1984
 // Name: AppStateStore
-// Dependencies: [17, 1074, 504, 1241, 1980, 573, 2]
+// Dependencies: [17, 1078, 504, 1245, 1984, 577, 2]
 
-// Module 1979 (AppStateStore)
+// Module 1983 (AppStateStore)
 import _mod17 from "module_17" /* 17 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import size from "module_2" /* 2 */;
 
 const AppStates = Constants.AppStates;
@@ -25,7 +25,7 @@ prototype["getLastActiveTime"] = function getLastActiveTime() {
   return closure_2;
 };
 AppStateStore.displayName = "AppStateStore";
-asyncRequireImpl(1241, dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
+asyncRequireImpl(1245, dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator((arg0) => {
     arg0.client_app_state = client_app_state;
   });

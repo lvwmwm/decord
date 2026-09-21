@@ -1,30 +1,138 @@
-// Module ID: 8068
-// Function ID: 8069
+// Module ID: 8073
+// Function ID: 8074
 // Name: BurstReactionAnimation
-// Dependencies: [19, 4748, 21, 4756, 8026, 504, 8069, 5746, 2]
-// Exports: default
+// Dependencies: [109, 19, 4750, 21, 4758, 558, 568, 8031, 504, 8074, 5749, 2]
 
-// Module 8068 (BurstReactionAnimation)
+// Module 8073 (BurstReactionAnimation)
 import initialize from "initialize" /* 504 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8026 */;
+import c from "c" /* 568 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8031 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 require = fn;
+let closure_3 = ["channelId", "messageId", "emoji", "isFullscreen", "onComplete", "withFadeOut"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let closure_5 = createStyles.createStyles({ content: { width: "100%" } });
+const createStyles = fn(4758);
+let closure_7 = createStyles.createStyles({ content: { width: "100%" } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/BurstReactionAnimation.tsx");
 
-export default function BurstReactionAnimation(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(25);
+  if (cResult[0] !== arg0) {
+    ({ channelId, messageId, emoji, isFullscreen, onComplete, withFadeOut } = arg0);
+    const tmp13 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = channelId;
+    cResult[2] = emoji;
+    cResult[3] = isFullscreen;
+    cResult[4] = messageId;
+    cResult[5] = onComplete;
+    cResult[6] = tmp13;
+    cResult[7] = withFadeOut;
+    let tmp9 = tmp13;
+    let tmp8 = onComplete;
+    let tmp7 = messageId;
+    let tmp6 = isFullscreen;
+    let tmp5 = emoji;
+    let tmp4 = channelId;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+    tmp8 = cResult[5];
+    tmp9 = cResult[6];
+  }
+  const tmp15 = closure_7();
+  if (cResult[8] === tmp4) {
+    if (cResult[9] === tmp5) {
+      if (cResult[10] === tmp6) {
+        if (cResult[11] === tmp7) {
+          let tmp16 = cResult[12];
+        }
+        const burstReactionAnimationSource = tmp(8031).useBurstReactionAnimationSource(tmp16);
+        const _Symbol = Symbol;
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          const items = [AccessibilityStore];
+          const fn = function y() {
+            return useReducedMotion.useReducedMotion;
+          };
+          cResult[13] = items;
+          cResult[14] = fn;
+        }
+        tmp(504);
+        if (null == burstReactionAnimationSource) {
+          return null;
+        } else {
+          const tmp25 = importDefault(tmp14 ? 8074 : 5749);
+          if (cResult[15] === tmp8) {
+            if (cResult[16] === tmp14) {
+              let num14 = 1.2;
+              if (tmp23) {
+                num14 = 0.5;
+              }
+              if (cResult[18] === tmp25) {
+                if (cResult[19] === burstReactionAnimationSource) {
+                  if (cResult[20] === tmp26) {
+                    if (cResult[21] === tmp9) {
+                      if (cResult[22] === tmp15.content) {
+                        if (cResult[23] === num14) {
+                          let tmp28 = cResult[24];
+                        }
+                        return tmp28;
+                      }
+                    }
+                  }
+                }
+              }
+              const obj2 = { style: tmp15.content, loop: false, speed: num14 };
+              const merged = Object.assign(tmp9);
+              const merged1 = Object.assign(tmp26);
+              obj2.source = burstReactionAnimationSource;
+              const tmp36 = <tmp25 style={tmp15.content} loop={false} speed={num14} />;
+              cResult[18] = tmp25;
+              cResult[19] = burstReactionAnimationSource;
+              cResult[20] = cResult[17];
+              cResult[21] = tmp9;
+              cResult[22] = tmp15.content;
+              cResult[23] = num14;
+              cResult[24] = tmp36;
+              tmp28 = tmp36;
+            }
+          }
+          if (tmp14) {
+            const obj3 = { onComplete: tmp8 };
+            let obj4 = obj3;
+          } else {
+            obj4 = { onAnimationFinish: tmp8 };
+          }
+          cResult[15] = tmp8;
+          cResult[16] = tmp14;
+          cResult[17] = obj4;
+        }
+        const tmpResult = tmp(8031);
+      }
+    }
+  }
+  const obj5 = { emoji: tmp5, messageId: tmp7, channelId: tmp4, isFullscreen: tmp6 };
+  cResult[8] = tmp4;
+  cResult[9] = tmp5;
+  cResult[10] = tmp6;
+  cResult[11] = tmp7;
+  cResult[12] = obj5;
+  tmp16 = obj5;
+}) : ((arg0) => {
   ({ onComplete, withFadeOut } = arg0);
   ({ channelId, messageId, emoji, isFullscreen } = arg0);
   if (withFadeOut === undefined) {
     withFadeOut = true;
   }
   const merged = Object.assign(arg0, Object.assign({ channelId: 0, messageId: 0, emoji: 0, isFullscreen: 0, onComplete: 0, withFadeOut: 0 }));
-  const tmp2 = closure_5();
+  const tmp2 = closure_7();
   const burstReactionAnimationSource = burst_reactions_BurstReactionEffectUtils.useBurstReactionAnimationSource({ emoji, messageId, channelId, isFullscreen });
   initialize;
   [][0] = AccessibilityStore;
@@ -46,6 +154,6 @@ export default function BurstReactionAnimation(arg0) {
     const merged1 = Object.assign(merged);
     const merged2 = Object.assign(obj3);
     obj4.source = burstReactionAnimationSource;
-    return jsx(importDefault(withFadeOut ? 8069 : 5746), { style: tmp2.content, loop: false, speed: null });
+    return jsx(importDefault(withFadeOut ? 8074 : 5749), { style: tmp2.content, loop: false, speed: null });
   }
-};
+});

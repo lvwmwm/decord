@@ -1,20 +1,20 @@
-// Module ID: 8151
-// Function ID: 8152
+// Module ID: 8156
+// Function ID: 8157
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7836, 7840, 8152, 7837, 1074, 8149, 573, 1271, 7698, 8153, 4946, 4954, 2]
+// Dependencies: [5, 7841, 7845, 8157, 7842, 1078, 8154, 577, 1275, 7703, 8158, 4948, 4956, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 8151 (ConversationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 4946 */;
-import SurveyActionTypes from "SurveyActionTypes" /* 4954 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8153 */;
+// Module 8156 (ConversationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 4948 */;
+import SurveyActionTypes from "SurveyActionTypes" /* 4956 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8158 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7836 */;
-import ConversationsStore from "ConversationsStore" /* 7840 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 8152 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7841 */;
+import ConversationsStore from "ConversationsStore" /* 7845 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 8157 */;
 
 require = fn;
 let closure_9 = async function _fetchChannelConversations(arg0, value) {
@@ -100,7 +100,7 @@ let closure_9 = async function _fetchChannelConversations(arg0, value) {
     c8 = 3;
     return { value: conversations, done: true };
   }
-  await "HermesInternal";
+  await "IconComponent";
   closure_5 = tmp3;
   ({ channelId: closure_132_0, guildId: closure_132_1, direction: closure_132_2, anchor: closure_132_3, limit: limit2 } = closure_0);
   if (limit2 === undefined) {
@@ -113,7 +113,7 @@ let closure_9 = async function _fetchChannelConversations(arg0, value) {
   }
   closure_132_6 = throwOnError;
   hydrateMessages = tmp93.hydrateMessages;
-  return "PX_16";
+  return "Set";
 };
 let closure_10 = async function _fetchConversation(arg0, value) {
   if (c6 === 2) {
@@ -126,7 +126,7 @@ let closure_10 = async function _fetchConversation(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -206,7 +206,7 @@ let closure_12 = async function _fetchConversationMessages(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -247,7 +247,7 @@ let closure_12 = async function _fetchConversationMessages(arg0, value) {
             }
             if (isFullyHydratedResult) {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } else {
             if (tmp18) {
@@ -257,7 +257,7 @@ let closure_12 = async function _fetchConversationMessages(arg0, value) {
             }
             if (null != hydratedMessages) {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           }
           if (tmp18) {
@@ -311,8 +311,8 @@ let closure_12 = async function _fetchConversationMessages(arg0, value) {
     }
   }
 };
-const FETCH_LIMIT = fn(7837).FETCH_LIMIT;
-const Endpoints = fn(1074).Endpoints;
+const FETCH_LIMIT = fn(7842).FETCH_LIMIT;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/conversations/ConversationsActionCreators.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12506
+// Function ID: 12507
 // Name: search/tracking/Tracking
-// Dependencies: [2041, 12593, 8121, 1074, 12613, 12594, 4936, 1255, 2019, 2]
+// Dependencies: [2045, 12487, 8126, 1078, 12507, 12488, 4938, 1259, 2023, 2]
 
-// Module 12612 (search/tracking/Tracking)
-import v1 from "v1" /* 1255 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import SearchUtils from "SearchUtils" /* 12594 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12613 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SearchQueryStore from "SearchQueryStore" /* 12593 */;
+// Module 12506 (search/tracking/Tracking)
+import v1 from "v1" /* 1259 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
+import SearchUtils from "SearchUtils" /* 12488 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12507 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SearchQueryStore from "SearchQueryStore" /* 12487 */;
 
 require = fn;
-let closure_5 = fn(8121).SEARCH_HISTORY_TO_ANALYTICS_SEARCH_HISTORY;
-const Constants = fn(1074);
+let closure_5 = fn(8126).SEARCH_HISTORY_TO_ANALYTICS_SEARCH_HISTORY;
+const Constants = fn(1078);
 ({ SearchTokenTypes: metroRequire, AnalyticEvents: closure_7 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/tracking/Tracking.tsx");

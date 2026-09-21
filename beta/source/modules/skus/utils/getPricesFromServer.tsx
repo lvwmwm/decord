@@ -1,11 +1,11 @@
-// Module ID: 5730
-// Function ID: 5731
+// Module ID: 5732
+// Function ID: 5733
 // Name: getPricesFromServer
-// Dependencies: [4415, 2]
+// Dependencies: [4419, 2]
 // Exports: default
 
-// Module 5730 (getPricesFromServer)
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4415 */;
+// Module 5732 (getPricesFromServer)
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4419 */;
 import size from "module_2" /* 2 */;
 
 const getPriceFromServer = SubscriptionPlanRecord.getPriceFromServer;

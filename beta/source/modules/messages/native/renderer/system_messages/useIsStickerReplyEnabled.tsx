@@ -1,17 +1,17 @@
-// Module ID: 8255
-// Function ID: 8256
+// Module ID: 8260
+// Function ID: 8261
 // Name: useIsStickerReplyEnabled
-// Dependencies: [2105, 4395, 1372, 1074, 7511, 2]
+// Dependencies: [2109, 4399, 1376, 1078, 7513, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8255 (useIsStickerReplyEnabled)
-import ThreadHooks from "ThreadHooks" /* 7511 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 8260 (useIsStickerReplyEnabled)
+import ThreadHooks from "ThreadHooks" /* 7513 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const Permissions = fn(1074).Permissions;
+const Permissions = fn(1078).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/useIsStickerReplyEnabled.tsx");
 

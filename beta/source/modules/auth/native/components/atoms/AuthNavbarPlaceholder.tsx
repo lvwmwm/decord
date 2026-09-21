@@ -1,23 +1,38 @@
-// Module ID: 7221
-// Function ID: 7222
+// Module ID: 7219
+// Function ID: 7220
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4756, 576, 5841, 2]
-// Exports: default
+// Dependencies: [19, 21, 4758, 580, 558, 568, 5839, 2]
 
-// Module 7221 (AuthNavbarPlaceholder)
-import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+// Module 7219 (AuthNavbarPlaceholder)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import NavigatorHeader from "NavigatorHeader" /* 5839 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const obj2 = { navBar: { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 } };
+const createStyles = fn(4758);
+let obj2 = { navBar: { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 } };
 let closure_3 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+const obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
 
-export default function AuthNavbarPlaceholder() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const tmp4 = closure_3();
+  if (cResult[0] !== tmp4.navBar) {
+    const obj2 = { style: tmp4.navBar, children: null };
+    const tmp7 = jsx(NavigatorHeader.FauxHeader, { style: tmp4.navBar, children: null });
+    cResult[0] = tmp4.navBar;
+    cResult[1] = tmp7;
+    let tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
   const tmp = closure_3();
   return jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null });
-};
+});

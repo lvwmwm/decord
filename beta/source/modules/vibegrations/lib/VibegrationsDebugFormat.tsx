@@ -1,10 +1,10 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17070
+// Function ID: 17071
 // Name: VibegrationsDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatClockTime, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 17067 (VibegrationsDebugFormat)
+// Module 17070 (VibegrationsDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugFormat.tsx");
@@ -64,23 +64,23 @@ export const formatBytes = function formatBytes(r2_bytes) {
   }
   return "\u2014";
 };
-export const formatMs = function formatMs(cpu_ms) {
-  if (Number.isFinite(cpu_ms)) {
-    if (cpu_ms >= 0) {
-      if (cpu_ms < 1) {
+export const formatMs = function formatMs(wall_ms_total) {
+  if (Number.isFinite(wall_ms_total)) {
+    if (wall_ms_total >= 0) {
+      if (wall_ms_total < 1) {
         const _HermesInternal4 = HermesInternal;
-        return "" + cpu_ms.toFixed(2) + " ms";
-      } else if (cpu_ms < 1000) {
-        if (cpu_ms >= 100) {
+        return "" + wall_ms_total.toFixed(2) + " ms";
+      } else if (wall_ms_total < 1000) {
+        if (wall_ms_total >= 100) {
           const _Math4 = Math;
-          let rounded = Math.round(cpu_ms);
+          let rounded = Math.round(wall_ms_total);
         } else {
-          rounded = cpu_ms.toFixed(1);
+          rounded = wall_ms_total.toFixed(1);
         }
         const _HermesInternal3 = HermesInternal;
         return "" + rounded + " ms";
       } else {
-        const result = cpu_ms / 1000;
+        const result = wall_ms_total / 1000;
         if (result < 60) {
           if (10 <= result) {
             const _Math3 = Math;
@@ -126,10 +126,10 @@ export const formatClockTime = function formatClockTime(arg0) {
   }
   return combined;
 };
-export const formatObservedAt = function formatObservedAt(observedAt) {
-  const date = new Date(observedAt);
+export const formatObservedAt = function formatObservedAt(since) {
+  const date = new Date(since);
   if (Number.isNaN(date.getTime())) {
-    return observedAt;
+    return since;
   } else {
     const _Date = Date;
     const date1 = new Date();

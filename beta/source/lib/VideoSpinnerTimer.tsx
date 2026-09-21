@@ -1,20 +1,20 @@
-// Module ID: 9694
-// Function ID: 9695
+// Module ID: 9690
+// Function ID: 9691
 // Name: VideoSpinnerTimer
-// Dependencies: [502, 2041, 4805, 4779, 4775, 1074, 3, 4785, 1241, 2]
+// Dependencies: [502, 2045, 4807, 4781, 4777, 1078, 3, 4787, 1245, 2]
 
-// Module 9694 (VideoSpinnerTimer)
+// Module 9690 (VideoSpinnerTimer)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import TimeUtils from "TimeUtils" /* 4785 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import TimeUtils from "TimeUtils" /* 4787 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import NetworkStore from "NetworkStore" /* 4805 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import NetworkStore from "NetworkStore" /* 4807 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const map = new Map();
 const size = fn(2);
 let result = size.fileFinishedImporting("lib/VideoSpinnerTimer.tsx");

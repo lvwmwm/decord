@@ -1,11 +1,11 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12831
+// Function ID: 12832
 // Name: ContactSyncActionCreators
-// Dependencies: [5, 5498, 1074, 2019, 1385, 1241, 12933, 5623, 2]
+// Dependencies: [5, 5500, 1078, 2023, 1389, 1245, 12827, 5625, 2]
 
-// Module 12937 (ContactSyncActionCreators)
+// Module 12831 (ContactSyncActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
       const obj4 = { value, done: true };
       return obj4;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -44,7 +44,7 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
           closure_131_0 = phone;
           const email = closure_0.email;
           closure_131_1 = email;
-          const FriendDiscoverySettings2 = React(2019).FriendDiscoverySettings;
+          const FriendDiscoverySettings2 = React(2023).FriendDiscoverySettings;
           const setting = FriendDiscoverySettings2.getSetting();
           closure_131_2 = setting;
           localAccount = localAccount.getLocalAccount(constants2.CONTACTS);
@@ -55,15 +55,15 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
           closure_131_3 = name;
           let setFlagResult = setting;
           if (null != phone) {
-            setFlagResult = React(1385).setFlag(setting, constants.FIND_BY_PHONE, phone);
-            const obj5 = React(1385);
+            setFlagResult = React(1389).setFlag(setting, constants.FIND_BY_PHONE, phone);
+            const obj5 = React(1389);
           }
           let setFlagResult1 = setFlagResult;
           if (null != email) {
-            setFlagResult1 = React(1385).setFlag(setFlagResult, constants.FIND_BY_EMAIL, email);
-            const obj6 = React(1385);
+            setFlagResult1 = React(1389).setFlag(setFlagResult, constants.FIND_BY_EMAIL, email);
+            const obj6 = React(1389);
           }
-          const FriendDiscoverySettings = React(2019).FriendDiscoverySettings;
+          const FriendDiscoverySettings = React(2023).FriendDiscoverySettings;
           c5 = 1;
           c6 = 1;
           const obj8 = { value: FriendDiscoverySettings.updateSetting(setFlagResult1), done: false };
@@ -94,7 +94,7 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
         obj11.contact_sync_enabled = closure_132_0(closure_132_2[6]).isContactSyncEnabled(closure_132_4.getLocalAccount(closure_132_7.CONTACTS));
         obj10.track(closure_132_5.USER_DISCOVERY_UPDATED, obj11);
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp39) {
       c6 = tmp;
@@ -102,7 +102,7 @@ let closure_8 = async function _updateDiscoverability(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: hasOwnProperty, FriendDiscoveryFlags: metroRequire, PlatformTypes: closure_7 } = Constants);
 asyncGeneratorStep(async (name) => {
   c3 = 0;
@@ -118,7 +118,7 @@ asyncGeneratorStep(async (name) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -160,7 +160,7 @@ asyncGeneratorStep(async (name) => {
             obj.num_chars = num4;
             tmp3(tmp2[5]).track(constants.NAME_SUBMITTED, obj);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp18) {
@@ -181,7 +181,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {

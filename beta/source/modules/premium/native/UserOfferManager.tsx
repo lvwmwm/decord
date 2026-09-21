@@ -1,15 +1,15 @@
-// Module ID: 17906
-// Function ID: 17907
+// Module ID: 17909
+// Function ID: 17910
 // Name: UserOfferManager
-// Dependencies: [1372, 7692, 1085, 7363, 9479, 1969, 8321, 2]
+// Dependencies: [1376, 7697, 1089, 7365, 9477, 1973, 8326, 2]
 
-// Module 17906 (UserOfferManager)
-import UserStore from "UserStore" /* 1372 */;
-import UserOfferStore from "UserOfferStore" /* 7692 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+// Module 17909 (UserOfferManager)
+import UserStore from "UserStore" /* 1376 */;
+import UserOfferStore from "UserOfferStore" /* 7697 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
-const PaymentGateways = fn(1085).PaymentGateways;
+const PaymentGateways = fn(1089).PaymentGateways;
 const prototype = function UserOfferManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   require = applyArgumentsResult;

@@ -1,16 +1,16 @@
-// Module ID: 7861
-// Function ID: 7862
+// Module ID: 7866
+// Function ID: 7867
 // Name: WidgetStore
-// Dependencies: [32, 1372, 7857, 504, 1370, 12, 573, 2]
+// Dependencies: [32, 1376, 7862, 504, 1374, 12, 577, 2]
 
-// Module 7861 (WidgetStore)
+// Module 7866 (WidgetStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7857 */;
+import UserStore from "UserStore" /* 1376 */;
+import UserProfileStore from "UserProfileStore" /* 7862 */;
 
 require = fn;
 let c6 = null;
@@ -74,7 +74,7 @@ prototype["getWidgetUpdates"] = function getWidgetUpdates() {
         return items;
       }));
       const _Map2 = Map;
-      map1 = new Map(changedWidgets.map((id) => {
+      const map1 = new Map(changedWidgets.map((id) => {
         const items = [id.id, id];
         return items;
       }));

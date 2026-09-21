@@ -1,11 +1,11 @@
-// Module ID: 2091
-// Function ID: 2092
+// Module ID: 2095
+// Function ID: 2096
 // Name: ChannelReader
-// Dependencies: [5, 3, 2070, 2]
+// Dependencies: [5, 3, 2074, 2]
 
-// Module 2091 (ChannelReader)
+// Module 2095 (ChannelReader)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const logger = new LoggerDefault("ChannelReader");
@@ -49,7 +49,7 @@ prototype["getGuildIds"] = function getGuildIds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

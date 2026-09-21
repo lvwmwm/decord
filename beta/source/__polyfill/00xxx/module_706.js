@@ -1,27 +1,188 @@
 // Module ID: 706
 // Function ID: 707
-// Dependencies: [690, 707]
-// Exports: getAsyncContextStrategy, setAsyncContextStrategy
+// Dependencies: [32, 693, 692]
+// Exports: dsnToString, extractOrgIdFromClient, extractOrgIdFromDsnHost, makeDsn
 
 // Module 706
-import _mod690 from "module_690" /* 690 */;
-import _mod707 from "module_707" /* 707 */;
+import consoleSandbox from "consoleSandbox" /* 693 */;
+import _slicedToArray from "module_32" /* 32 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-
-export const getAsyncContextStrategy = function getAsyncContextStrategy(arg0) {
-  const sentryCarrier = _mod690.getSentryCarrier(arg0);
-  if (sentryCarrier.acs) {
-    let acs = sentryCarrier.acs;
+function dsnFromString(arg0) {
+  closure_0 = arg0;
+  const match = re4.exec(arg0);
+  if (match) {
+    const tmp5 = _slicedToArray(match.slice(1), 6);
+    let str = tmp5[1];
+    let str3 = "";
+    if (undefined !== tmp5[2]) {
+      str3 = tmp6;
+    }
+    let str4 = "";
+    if (undefined !== tmp5[3]) {
+      str4 = tmp7;
+    }
+    let str5 = "";
+    if (undefined !== tmp5[4]) {
+      str5 = tmp8;
+    }
+    let str6 = "";
+    if (undefined !== tmp5[5]) {
+      str6 = tmp9;
+    }
+    const parts = str6.split("/");
+    let str8 = str6;
+    let str9 = "";
+    if (parts.length > 1) {
+      const substr = parts.slice(0, -1);
+      str9 = substr.join("/");
+      str8 = parts.pop();
+    }
+    let first = str8;
+    if (str8) {
+      const match1 = str8.match(/^\d+/);
+      first = str8;
+      if (match1) {
+        first = match1[0];
+      }
+    }
+    const url = { protocol: tmp5[0], publicKey: null, pass: null, host: null, port: null, path: null, projectId: null };
+    if (!str) {
+      str = "";
+    }
+    url.publicKey = str;
+    if (!str3) {
+      str3 = "";
+    }
+    url.pass = str3;
+    url.host = str4;
+    if (!str5) {
+      str5 = "";
+    }
+    url.port = str5;
+    if (!str9) {
+      str9 = "";
+    }
+    url.path = str9;
+    url.projectId = first;
+    return url;
   } else {
-    acs = _mod707.getStackAsyncContextStrategy();
-    const tmpResult = _mod707;
+    consoleSandbox.consoleSandbox(() => {
+      console.error("Invalid Sentry Dsn: " + closure_0);
+    });
   }
-  return acs;
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const re3 = /^o(\d+)\./;
+const re4 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)((?:\[[:.%\w]+\]|[\w.-]+))(?::(\d+))?\/(.+)/;
+
+export { dsnFromString };
+export const dsnToString = function dsnToString(arg0) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
+  let str = "";
+  if (flag) {
+    str = "";
+    if (pass) {
+      const _HermesInternal = HermesInternal;
+      str = ":" + pass;
+    }
+  }
+  let str3 = "";
+  if (port) {
+    const _HermesInternal2 = HermesInternal;
+    str3 = ":" + port;
+  }
+  let combined = path;
+  if (path) {
+    const _HermesInternal3 = HermesInternal;
+    combined = "" + path + "/";
+  }
+  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
 };
-export const setAsyncContextStrategy = function setAsyncContextStrategy(acs) {
-  const mainCarrier = _mod690.getMainCarrier();
-  _mod690.getSentryCarrier(mainCarrier).acs = acs;
+export const extractOrgIdFromClient = function extractOrgIdFromClient(client) {
+  options = client.getOptions();
+  const str = client.getDsn() || {}.host;
+  if (options.orgId) {
+    const _String = String;
+    let StringResult = String(options.orgId);
+  } else if (str) {
+    const match = str.match(re3);
+    let tmp7;
+    if (match != null) {
+      tmp7 = match[1];
+    }
+    StringResult = tmp7;
+  }
+  return StringResult;
+};
+export const extractOrgIdFromDsnHost = function extractOrgIdFromDsnHost(str) {
+  const match = str.match(re3);
+  let tmp2;
+  if (match != null) {
+    tmp2 = match[1];
+  }
+  return tmp2;
+};
+export const makeDsn = function makeDsn(protocol) {
+  if (typeof protocol === "string") {
+    let url = dsnFromString(protocol);
+  } else {
+    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+  }
+  if (url) {
+    let error = url;
+    let flag = true;
+    if (url(692).DEBUG_BUILD) {
+      ({ port, projectId, protocol } = url);
+      const items = ["protocol", "publicKey", "host", "projectId"];
+      const found = items.find((item) => {
+        let flag = !tmp;
+        if (!url[item]) {
+          const debug = consoleSandbox.debug;
+          const _HermesInternal = HermesInternal;
+          debug.error("Invalid Sentry Dsn: " + item + " missing");
+          flag = true;
+        }
+        return flag;
+      });
+      if (found) {
+        flag = !found;
+      } else {
+        if (!projectId.match(/^\d+$/)) {
+          let debug = error(693).debug;
+          let _HermesInternal = HermesInternal;
+          debug.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
+        }
+        let tmp6 = "http" === protocol;
+        if (!tmp6) {
+          tmp6 = "https" === protocol;
+        }
+        if (tmp6) {
+          let num3 = port;
+          if (port) {
+            const _isNaN = isNaN;
+            const _parseInt = parseInt;
+            num3 = isNaN(parseInt(port, 10));
+          }
+          if (num3) {
+            const debug3 = error(693).debug;
+            error = debug3.error;
+            const _HermesInternal3 = HermesInternal;
+            error("Invalid Sentry Dsn: Invalid port " + port);
+            num3 = 1;
+          }
+        } else {
+          const debug2 = error(693).debug;
+          const _HermesInternal2 = HermesInternal;
+          debug2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
+        }
+      }
+    }
+    if (flag) {
+      return url;
+    }
+  }
 };

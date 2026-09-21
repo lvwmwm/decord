@@ -1,15 +1,15 @@
-// Module ID: 18383
-// Function ID: 18384
+// Module ID: 18388
+// Function ID: 18389
 // Name: BackgroundSync
-// Dependencies: [5494, 502, 1979, 3, 2087, 17742, 2]
+// Dependencies: [5496, 502, 1983, 3, 2091, 17745, 2]
 
-// Module 18383 (BackgroundSync)
+// Module 18388 (BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2087 */;
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17742 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2091 */;
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 17745 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
 
 require = fn;
 let closure_6 = new LoggerDefault("BackgroundSync");

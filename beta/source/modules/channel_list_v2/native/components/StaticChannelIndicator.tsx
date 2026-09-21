@@ -1,16 +1,17 @@
-// Module ID: 10422
-// Function ID: 10423
+// Module ID: 12528
+// Function ID: 12529
 // Name: StaticChannelIndicator
-// Dependencies: [17, 4938, 21, 4756, 576, 4457, 2]
-// Exports: default
+// Dependencies: [17, 4940, 21, 4758, 580, 558, 568, 4462, 2]
 
-// Module 10422 (StaticChannelIndicator)
+// Module 12528 (StaticChannelIndicator)
 import jsxProd from "jsxProd" /* 21 */;
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4457 */;
-import ReadStateConstants from "ReadStateConstants" /* 4938 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useToken from "useToken" /* 4462 */;
+import ReadStateConstants from "ReadStateConstants" /* 4940 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import createStyles from "createStyles" /* 4756 */;
+import createStyles from "createStyles" /* 4758 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
@@ -29,7 +30,45 @@ let closure_6 = createStyles.createStyles(obj);
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/StaticChannelIndicator.tsx");
 
-export default function ChannelIndicator(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((resolvedUnreadSetting) => {
+  const cResult = c.c(5);
+  ({ unread, style } = resolvedUnreadSetting);
+  const tmp3 = closure_6();
+  if (resolvedUnreadSetting.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
+    let CHANNELS_DEFAULT = nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE;
+  } else {
+    CHANNELS_DEFAULT = nativeDefault.colors.CHANNELS_DEFAULT;
+  }
+  const token = useToken.useToken(CHANNELS_DEFAULT);
+  if (cResult[0] === token) {
+    if (cResult[1] === style) {
+      if (cResult[2] === tmp3) {
+        if (cResult[3] === unread) {
+          let tmp7 = cResult[4];
+        }
+        return tmp7;
+      }
+    }
+  }
+  let tmp8 = null;
+  if (unread) {
+    const obj3 = { style: tmp3.indicatorContainer, children: null };
+    const obj4 = { style: null };
+    const items = [tmp3.indicator, , ];
+    const obj5 = { backgroundColor: token };
+    items[1] = obj5;
+    items[2] = style;
+    obj4.style = items;
+    obj3.children = <React3 style={null} />;
+    tmp8 = <React3 style={tmp3.indicatorContainer}>{null}</React3>;
+  }
+  cResult[0] = token;
+  cResult[1] = style;
+  cResult[2] = tmp3;
+  cResult[3] = unread;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((arg0) => {
   ({ unread, resolvedUnreadSetting, style } = arg0);
   const tmp = closure_6();
   useToken;
@@ -51,4 +90,4 @@ export default function ChannelIndicator(arg0) {
     tmp7 = <React3 style={tmp.indicatorContainer}>{null}</React3>;
   }
   return tmp7;
-};
+});

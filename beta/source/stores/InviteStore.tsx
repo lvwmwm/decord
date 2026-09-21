@@ -1,13 +1,13 @@
-// Module ID: 4740
-// Function ID: 4741
+// Module ID: 4742
+// Function ID: 4743
 // Name: InviteStore
-// Dependencies: [1074, 4741, 504, 573, 2]
+// Dependencies: [1078, 4743, 504, 577, 2]
 
-// Module 4740 (InviteStore)
+// Module 4742 (InviteStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4741 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4743 */;
 import size from "module_2" /* 2 */;
 
 function updateInvite(code, fn) {
@@ -27,7 +27,7 @@ function updateInvite(code, fn) {
   fn(obj3);
   map = new Map(map);
   const result1 = map.set(str, obj3);
-  const guild = obj3.guild;
+  guild = obj3.guild;
   let id;
   if (guild != null) {
     id = guild.id;

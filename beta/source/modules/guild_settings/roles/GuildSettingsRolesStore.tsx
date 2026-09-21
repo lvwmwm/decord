@@ -1,26 +1,26 @@
-// Module ID: 18044
-// Function ID: 18045
+// Module ID: 18047
+// Function ID: 18048
 // Name: GuildSettingsRolesStore
-// Dependencies: [2056, 18045, 2100, 2099, 9856, 18039, 1074, 18046, 12670, 5215, 1370, 1086, 4400, 1092, 2102, 12, 504, 573, 2]
+// Dependencies: [2060, 18048, 2104, 2103, 9834, 18042, 1078, 18049, 12565, 5217, 1374, 1090, 4404, 1096, 2106, 12, 504, 577, 2]
 
-// Module 18044 (GuildSettingsRolesStore)
+// Module 18047 (GuildSettingsRolesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PlainRecord from "PlainRecord" /* 2056 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2102 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5215 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12670 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 18039 */;
-import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18045 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
-import Constants from "Constants" /* 1074 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18046 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import PlainRecord from "PlainRecord" /* 2060 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2104 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2106 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5217 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12565 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 18042 */;
+import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18048 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
+import Constants from "Constants" /* 1078 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18049 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ function handleInit() {
   if (arg0 === undefined) {
     flag = true;
   }
-  const guild = GuildSettingsStore.getProps().guild;
+  guild = GuildSettingsStore.getProps().guild;
   c23 = false;
   c24 = false;
   c6 = undefined;
@@ -63,7 +63,7 @@ function handleInit() {
       const obj2 = {};
       const obj3 = { primary_color, secondary_color: null, tertiary_color: null };
       obj2[tmp.SOLID] = obj3;
-      ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = closure_2_17);
+      ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = constants);
       obj2[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
       ({ primary_color: obj5.primary_color, secondary_color: obj5.secondary_color, tertiary_color: obj5.tertiary_color } = collapsedCategories);
       obj2[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
@@ -106,7 +106,7 @@ function syncGuildChanges(guildId) {
   guildId = guildId.guildId;
   items = undefined;
   map = undefined;
-  const guild = GuildSettingsStore.getProps().guild;
+  guild = GuildSettingsStore.getProps().guild;
   if (null != guild) {
     if (guildId === guild.id) {
       if (OPEN !== FormStates.SUBMITTING) {
@@ -148,7 +148,7 @@ function syncGuildChanges(guildId) {
             const obj2 = {};
             const obj3 = { primary_color, secondary_color: null, tertiary_color: null };
             obj2[tmp.SOLID] = obj3;
-            ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = closure_2_17);
+            ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = constants);
             obj2[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
             ({ primary_color: obj5.primary_color, secondary_color: obj5.secondary_color, tertiary_color: obj5.tertiary_color } = collapsedCategories);
             obj2[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
@@ -707,7 +707,7 @@ const guildSettingsRolesStore = new GuildSettingsRolesStore(DispatcherDefault, {
             const obj2 = {};
             const obj3 = { primary_color, secondary_color: null, tertiary_color: null };
             obj2[tmp.SOLID] = obj3;
-            ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = closure_2_17);
+            ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = constants);
             obj2[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
             ({ primary_color: obj5.primary_color, secondary_color: obj5.secondary_color, tertiary_color: obj5.tertiary_color } = collapsedCategories);
             obj2[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };
@@ -879,7 +879,7 @@ const guildSettingsRolesStore = new GuildSettingsRolesStore(DispatcherDefault, {
         const obj2 = {};
         const obj3 = { primary_color, secondary_color: null, tertiary_color: null };
         obj2[tmp.SOLID] = obj3;
-        ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = closure_2_17);
+        ({ primary_color: obj4.primary_color, secondary_color: obj4.secondary_color } = constants);
         obj2[tmp.GRADIENT] = { primary_color: null, secondary_color: null, tertiary_color: null };
         ({ primary_color: obj5.primary_color, secondary_color: obj5.secondary_color, tertiary_color: obj5.tertiary_color } = collapsedCategories);
         obj2[tmp.HOLOGRAPHIC] = { primary_color: null, secondary_color: null, tertiary_color: null };

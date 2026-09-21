@@ -1,14 +1,14 @@
-// Module ID: 9880
-// Function ID: 9881
+// Module ID: 9858
+// Function ID: 9859
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [7768, 2047, 9753, 576, 9881, 1115, 8900, 9882, 2]
+// Dependencies: [7773, 2051, 9749, 580, 9859, 1119, 9779, 9860, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 9880 (GuildScheduledEventHeaderUtils)
-import nativeDefault from "native" /* 576 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2047 */;
-import _modDef9881 from "module_9881" /* 9881 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
+// Module 9858 (GuildScheduledEventHeaderUtils)
+import nativeDefault from "native" /* 580 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
+import _modDef9859 from "module_9859" /* 9859 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7773 */;
 import size from "module_2" /* 2 */;
 
 ({ isGuildEventEnded: c3, isGuildScheduledEventActive: closure_4 } = GuildScheduledEventStore);
@@ -30,32 +30,32 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
   }
   const tmp7 = React3(event);
   const ICON_SUBTLE = nativeDefault.colors.ICON_SUBTLE;
-  let tmp8Result = _modDef9881;
+  let tmp8Result = _modDef9859;
   if (tmp4) {
-    const intl4 = tmp(1115).intl;
-    let stringResult = intl4.string(tmp(1115).t["X2K3/4"]);
+    const intl4 = tmp(1119).intl;
+    let stringResult = intl4.string(tmp(1119).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8900);
+      tmp8Result = tmp8(9779);
     }
     let entity_type;
     if (event != null) {
       entity_type = event.entity_type;
     }
     if (entity_type === constants.EXTERNAL) {
-      const intl5 = tmp(1115).intl;
-      stringResult = intl5.string(tmp(1115).t.TxqPQR);
+      const intl5 = tmp(1119).intl;
+      stringResult = intl5.string(tmp(1119).t.TxqPQR);
     }
-    let ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_POSITIVE;
+    let ICON_FEEDBACK_CRITICAL = tmp8(580).colors.ICON_FEEDBACK_POSITIVE;
     let stringResult1 = stringResult;
     let tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(9882);
+    tmp8Result3 = tmp8(9860);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(9882);
-    const intl3 = tmp(1115).intl;
-    stringResult1 = intl3.string(tmp(1115).t.WINqKV);
+    tmp8Result3 = tmp8(9860);
+    const intl3 = tmp(1119).intl;
+    stringResult1 = intl3.string(tmp(1119).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else {
     tmp8Result3 = tmp8Result;
@@ -63,24 +63,24 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
     if (upcomingEvent) {
       if (diffMinutes > 0) {
-        const intl2 = tmp(1115).intl;
+        const intl2 = tmp(1119).intl;
         const obj2 = { minutes: diffMinutes };
-        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.PQlCWk, obj2);
+        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t.PQlCWk, obj2);
       } else {
-        const intl = tmp(1115).intl;
-        formatToPlainStringResult = intl.string(tmp(1115).t.WINqKV);
+        const intl = tmp(1119).intl;
+        formatToPlainStringResult = intl.string(tmp(1119).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
-      tmp8Result3 = tmp8(9882);
+      tmp8Result3 = tmp8(9860);
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      const tmp8Result4 = tmp8(9882);
+      const tmp8Result4 = tmp8(9860);
     }
   }
   if (isCanceled) {
-    ICON_FEEDBACK_CRITICAL = tmp8(576).colors.ICON_FEEDBACK_CRITICAL;
+    ICON_FEEDBACK_CRITICAL = tmp8(580).colors.ICON_FEEDBACK_CRITICAL;
   }
   const obj3 = { icon: tmp8Result3, text: stringResult1, color: null, shouldChangeTextColor: null };
-  const internal = tmp8(576).internal;
+  const internal = tmp8(580).internal;
   obj3.color = internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL);
   let tmp17 = !tmp7;
   if (!tmp7) {

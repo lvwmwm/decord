@@ -1,11 +1,11 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12064
+// Function ID: 12065
 // Name: getSoundboardEmojiUrl
-// Dependencies: [1397, 2]
+// Dependencies: [1401, 2]
 // Exports: default
 
-// Module 12188 (getSoundboardEmojiUrl)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+// Module 12064 (getSoundboardEmojiUrl)
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/native/utils/getSoundboardEmojiUrl.tsx");

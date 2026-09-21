@@ -1,22 +1,82 @@
-// Module ID: 12829
-// Function ID: 12830
+// Module ID: 12740
+// Function ID: 12741
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 4665, 504, 12813, 1115, 2514, 2]
-// Exports: default
+// Dependencies: [19, 4668, 558, 568, 504, 12724, 1119, 2518, 2]
 
-// Module 12829 (useGameServerPowerupStatus)
-import util from "util" /* 1115 */;
-import _modDef2514 from "module_2514" /* 2514 */;
+// Module 12740 (useGameServerPowerupStatus)
+import util from "util" /* 1119 */;
+import _modDef2518 from "module_2518" /* 2518 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12724 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4665 */;
+import GameServerStore from "GameServerStore" /* 4668 */;
 
 const require = globalThis.__r;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPowerupStatus.tsx");
 
-export default function useGameServerPowerupStatus(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameServerStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      const stateForGuild = GameServerStore.getStateForGuild(closure_0);
+      let entitlements;
+      if (stateForGuild != null) {
+        entitlements = stateForGuild.entitlements;
+      }
+      return entitlements;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const obj = require("c");
+  let stateFromStores = require("initialize").useStateFromStores(first, tmp6, tmp7);
+  let ends_at = useGameServerGetExpiringEntitlementsDefault(arg0);
+  if (stateFromStores == null) {
+    stateFromStores = {};
+  }
+  let tmp9;
+  if (0 !== Object.values(stateFromStores).length) {
+    if (ends_at.length > 0) {
+      if (cResult[4] !== ends_at[0].ends_at) {
+        const obj2 = { type: "expiring", expiringAt: ends_at[0].ends_at };
+        ends_at = ends_at[0].ends_at;
+        cResult[4] = ends_at;
+        cResult[5] = obj2;
+      }
+    } else {
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj3 = { type: "active", statusText: null };
+        const intl = tmp(1119).intl;
+        obj3.statusText = intl.string(_modDef2518.FFLkmx);
+        cResult[6] = obj3;
+        let tmp10 = obj3;
+      } else {
+        tmp10 = cResult[6];
+      }
+      tmp9 = tmp10;
+    }
+  }
+  return tmp9;
+}) : ((arg0) => {
   _require = arg0;
   const items = [GameServerStore];
   const items1 = [arg0];
@@ -28,7 +88,7 @@ export default function useGameServerPowerupStatus(arg0) {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(12813)(arg0);
+  const tmp2 = stateFromStores(12724)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return noop.useMemo(() => {
@@ -43,9 +103,9 @@ export default function useGameServerPowerupStatus(arg0) {
       } else {
         obj3 = { type: "active", statusText: null };
         const intl = util.intl;
-        obj3.statusText = intl.string(_modDef2514.FFLkmx);
+        obj3.statusText = intl.string(_modDef2518.FFLkmx);
       }
       return obj3;
     }
   }, items2);
-};
+});

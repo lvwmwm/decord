@@ -1,17 +1,26 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 15974
+// Function ID: 15975
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [21, 15980, 2]
-// Exports: default
+// Dependencies: [21, 558, 568, 15969, 2]
 
-// Module 15985 (CheckpointGameTimeStatsScreen)
+// Module 15974 (CheckpointGameTimeStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15980 */;
+import c from "c" /* 568 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15969 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointGameTimeStatsScreen.tsx");
 
-export default function CheckpointGameTimeStatsScreen() {
-  return jsx(CheckpointStatsScreenDefault, { name: "Game Time" });
-};
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = jsx(CheckpointStatsScreenDefault, { name: "Game Time" });
+    cResult[0] = tmp6;
+    let first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Game Time" }));

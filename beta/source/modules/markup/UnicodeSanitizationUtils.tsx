@@ -1,11 +1,11 @@
-// Module ID: 5213
-// Function ID: 5214
+// Module ID: 5215
+// Function ID: 5216
 // Name: UnicodeSanitizationUtils
-// Dependencies: [1366, 2]
+// Dependencies: [1370, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 5213 (UnicodeSanitizationUtils)
-import URLUtilsDefault from "URLUtils" /* 1366 */;
+// Module 5215 (UnicodeSanitizationUtils)
+import URLUtilsDefault from "URLUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 function safelyPartiallyDecodeURIComponent(hash) {

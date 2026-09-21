@@ -1,43 +1,132 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 10555
+// Function ID: 10556
 // Name: MessagePreviewReactions
-// Dependencies: [19, 7836, 7840, 8631, 21, 504, 7407, 7427, 11522, 2]
-// Exports: default
+// Dependencies: [19, 7841, 7845, 8636, 21, 558, 568, 504, 7409, 7429, 10544, 2]
 
-// Module 11533 (MessagePreviewReactions)
+// Module 10555 (MessagePreviewReactions)
+import c from "c" /* 568 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
 import noop from "module_19" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7836 */;
-import ConversationsStore from "ConversationsStore" /* 7840 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8631 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7841 */;
+import ConversationsStore from "ConversationsStore" /* 7845 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8636 */;
 
-const require = fn;
+const useAnalyticsLocationsDefault = useAnalyticsLocations;
+
+require = fn;
 const jsx = fn(21).jsx;
 let closure_7 = [];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/reactions/native/MessagePreviewReactions.tsx");
-
-export default function MessagePreviewReactions(emoji) {
-  ({ channelId, messageId } = emoji);
+let ReactCompilerGating = fn(558);
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  closure_1 = arg1;
+  const cResult = require("c").c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessagePreviewStore, ConversationsStore, ConversationPreviewStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    if (cResult[2] === arg1) {
+      let tmp8 = cResult[3];
+      let tmp9 = cResult[4];
+    }
+    return require("initialize").useStateFromStores(first, tmp8, tmp9);
+  }
+  class E {
+    constructor() {
+      tmp = closure_1;
+      message = closure_5.getMessage(closure_1);
+      if (message == null) {
+        tmp3 = closure_4;
+        tmp4 = closure_0;
+        message = closure_4.getMessage(closure_0, tmp);
+      }
+      if (message == null) {
+        tmp5 = closure_3;
+        message = closure_3.getMessage(tmp);
+      }
+      return null != message ? message.reactions : closure_7;
+    }
+  }
+  const items1 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = E;
+  cResult[4] = items1;
+  tmp9 = items1;
+  tmp8 = E;
+}) : ((arg0, arg1) => {
+  _require = arg0;
+  closure_1 = arg1;
   const items = [MessagePreviewStore, ConversationsStore, ConversationPreviewStore];
-  const items1 = [channelId, messageId];
-  const stateFromStores = channelId(504).useStateFromStores(items, () => {
-    let message = MessagePreviewStore.getMessage(messageId);
+  const items1 = [arg0, arg1];
+  return require("initialize").useStateFromStores(items, () => {
+    let message = MessagePreviewStore.getMessage(closure_1);
     if (message == null) {
-      message = ConversationsStore.getMessage(channelId, tmp);
+      message = ConversationsStore.getMessage(closure_0, tmp);
     }
     if (message == null) {
       message = ConversationPreviewStore.getMessage(tmp);
     }
     return null != message ? message.reactions : closure_7;
   }, items1);
-  const obj = channelId(504);
-  const obj2 = { value: messageId(7407)(messageId(7427).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
-  if (stateFromStores.length > 0) {
-    const obj3 = { channelId, messageId, emoji: emoji.emoji, reactions: stateFromStores };
-    let tmp4Result = tmp4(tmp(11522).MessageReactionsContent, obj3);
-  } else {
-    tmp4Result = tmp4(tmp(11522).MessageReactionsEmpty, {});
+});
+ReactCompilerGating = fn(558);
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/reactions/native/MessagePreviewReactions.tsx");
+
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(8);
+  ({ channelId, messageId, emoji } = arg0);
+  const arr = closure_8(channelId, messageId);
+  const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations;
+  if (cResult[0] === channelId) {
+    if (cResult[1] === emoji) {
+      if (cResult[2] === messageId) {
+        if (cResult[3] === arr) {
+          if (cResult[5] === analyticsLocations) {
+            if (cResult[6] === tmp5) {
+              let tmp9 = cResult[7];
+            }
+            return tmp9;
+          }
+          const obj2 = { value: analyticsLocations, children: cResult[4] };
+          const tmp11 = jsx(tmp(7409).AnalyticsLocationProvider, { value: analyticsLocations, children: cResult[4] });
+          cResult[5] = analyticsLocations;
+          cResult[6] = cResult[4];
+          cResult[7] = tmp11;
+          tmp9 = tmp11;
+        }
+      }
+    }
   }
-  obj2.children = tmp4Result;
-  return jsx(channelId(7407).AnalyticsLocationProvider, { value: messageId(7407)(messageId(7427).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
-};
+  let num = 0;
+  if (arr.length > 0) {
+    const obj3 = { channelId, messageId, emoji, reactions: arr };
+    let tmp7 = jsx(tmp(10544).MessageReactionsContent, { channelId, messageId, emoji, reactions: arr });
+  } else {
+    tmp7 = jsx(tmp(10544).MessageReactionsEmpty, {});
+  }
+  cResult[num] = channelId;
+  cResult[1] = emoji;
+  cResult[2] = messageId;
+  cResult[3] = arr;
+  num = 4;
+  cResult[4] = tmp7;
+}) : ((emoji) => {
+  ({ channelId, messageId } = emoji);
+  const arr = closure_8(channelId, messageId);
+  const obj = { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null };
+  if (arr.length > 0) {
+    const obj2 = { channelId, messageId, emoji: emoji.emoji, reactions: arr };
+    let tmp3Result = tmp3(tmp4(10544).MessageReactionsContent, obj2);
+  } else {
+    tmp3Result = tmp3(tmp4(10544).MessageReactionsEmpty, {});
+  }
+  obj.children = tmp3Result;
+  return jsx(useAnalyticsLocations.AnalyticsLocationProvider, { value: useAnalyticsLocationsDefault(AnalyticsLocationDefault.MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: null });
+});

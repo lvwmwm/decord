@@ -1,13 +1,14 @@
-// Module ID: 4480
-// Function ID: 4481
+// Module ID: 4485
+// Function ID: 4486
 // Name: TransitionGroup/TransitionGroup
-// Dependencies: [32, 19, 21, 2]
-// Exports: TransitionItem
+// Dependencies: [32, 19, 21, 558, 568, 2]
 
-// Module 4480 (TransitionGroup/TransitionGroup)
+// Module 4485 (TransitionGroup/TransitionGroup)
+import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 function wrapChildrenDefault(arg0) {
   return arg0;
 }
@@ -18,28 +19,28 @@ class TransitionGroup {
     getItemKey = global.getItemKey;
     wrapChildren = global.wrapChildren;
     if (wrapChildren === undefined) {
-      wrapChildren = closure_5;
+      wrapChildren = closure_7;
     }
     lazyCleanUpDelay = global.lazyCleanUpDelay;
     closure_4 = undefined;
     closure_5 = undefined;
     closure_6 = undefined;
     closure_7 = undefined;
-    closure_4 = renderItem.useRef(-1);
-    layoutEffect = renderItem.useLayoutEffect(() => {
+    closure_4 = lazyCleanUpDelay.useRef(-1);
+    layoutEffect = lazyCleanUpDelay.useLayoutEffect(() => {
       if (-1 !== ref.current) {
         const _clearTimeout = clearTimeout;
         clearTimeout(tmp.current);
       }
     }, []);
-    closure_5 = items(renderItem.useState(closure_4), 2)[1];
-    closure_6 = renderItem.useRef(null);
+    closure_5 = getItemKey(lazyCleanUpDelay.useState(closure_6), 2)[1];
+    closure_6 = lazyCleanUpDelay.useRef(null);
     items1 = [, , , ];
     items1[0] = items;
     items1[1] = getItemKey;
     items1[2] = renderItem;
     items1[3] = lazyCleanUpDelay;
-    memo = renderItem.useMemo(() => {
+    memo = lazyCleanUpDelay.useMemo(() => {
       let current = ref2.current;
       let keys;
       if (current != null) {
@@ -57,30 +58,30 @@ class TransitionGroup {
           } else {
             MOUNTED = obj.MOUNTED;
           }
-          function _cleanUp2() {
+          function _cleanUp() {
             const current = ref2.current;
             value = undefined;
             if (current != null) {
               value = current.get(closure_0);
             }
             if (null != value) {
-              if (value.state === lazyCleanUpDelay.YEETED) {
+              if (value.state === constants.YEETED) {
                 const current2 = ref2.current;
                 if (current2 != null) {
                   current2.delete(closure_0);
                 }
-                if (null != closure_2_3) {
+                if (null != lazyCleanUpDelay) {
                   const _clearTimeout = clearTimeout;
                   clearTimeout(ref.current);
                   const _setTimeout = setTimeout;
-                  ref.current = setTimeout(() => closure_1_5({}), tmp7);
+                  ref.current = setTimeout(() => constants({}), tmp7);
                 } else {
                   closure_2_5({});
                 }
               }
             }
           }
-          const obj2 = { item: tmp, children: renderItem(tmp2, tmp, MOUNTED, _cleanUp2), state: MOUNTED, cleanUp: _cleanUp2, renderItem };
+          const obj2 = { item: tmp, children: renderItem(tmp2, tmp, MOUNTED, _cleanUp), state: MOUNTED, cleanUp: _cleanUp, renderItem };
         } else {
           if (value.item === tmp) {
             if (value.renderItem === renderItem) {
@@ -90,7 +91,7 @@ class TransitionGroup {
             set.delete(tmp2);
           }
           if (value.state === obj.YEETED) {
-            let state = obj.ENTERED;
+            state = obj.ENTERED;
           } else {
             state = value.state;
           }
@@ -109,8 +110,8 @@ class TransitionGroup {
         value = map.get(item10035);
         let tmp9 = value;
         if (null != value) {
-          let tmp25 = lazyCleanUpDelay;
-          if (tmp9.state === lazyCleanUpDelay.YEETED) {
+          let tmp25 = constants;
+          if (tmp9.state === constants.YEETED) {
             if (tmp9.renderItem === map) {
               let result = map.set(tmp7, tmp9);
             }
@@ -133,7 +134,7 @@ class TransitionGroup {
     closure_7 = memo;
     items2 = [];
     items2[0] = memo;
-    insertionEffect = renderItem.useInsertionEffect(() => {
+    insertionEffect = lazyCleanUpDelay.useInsertionEffect(() => {
       ref.current = memo;
       return () => {
         const current = ref.current;
@@ -146,8 +147,8 @@ class TransitionGroup {
     }, items2);
     items3 = [];
     for (const item10037 of memo) {
-      tmp4 = items;
-      arr1 = items3.push(items(item10037, 2)[1].children);
+      tmp4 = getItemKey;
+      arr1 = items3.push(getItemKey(item10037, 2)[1].children);
       continue;
     }
     wrapChildrenResult = null;
@@ -162,13 +163,40 @@ function getSingleItemKey() {
 }
 const jsx = fn(21).jsx;
 const TransitionStates = { MOUNTED: 0, [0]: "MOUNTED", ENTERED: 1, [1]: "ENTERED", YEETED: 2, [2]: "YEETED" };
-let closure_4 = {};
+let closure_6 = {};
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/packages/design/components/TransitionGroup/TransitionGroup.tsx");
 
 export { TransitionStates };
 export { TransitionGroup };
-export const TransitionItem = function TransitionItem(renderItem) {
+export const TransitionItem = ReactCompilerGating.isReactCompilerEnabled() ? (function TransitionItem(arg0) {
+  const cResult = c.c(5);
+  ({ item, renderItem } = arg0);
+  if (cResult[0] !== item) {
+    if (null != item) {
+      const items = [item];
+      let items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = item;
+    cResult[1] = items1;
+  } else {
+    if (cResult[2] === cResult[1]) {
+      if (cResult[3] === renderItem) {
+        let tmp5 = cResult[4];
+      }
+      return tmp5;
+    }
+    const obj2 = { items: cResult[1], renderItem, getItemKey: getSingleItemKey };
+    const tmp9 = <TransitionGroup items={cResult[1]} renderItem={renderItem} getItemKey={getSingleItemKey} />;
+    cResult[2] = cResult[1];
+    cResult[3] = renderItem;
+    cResult[4] = tmp9;
+    tmp5 = tmp9;
+  }
+}) : (function TransitionItem(renderItem) {
   const item = renderItem.item;
   let items = [item];
   return <TransitionGroup items={noop.useMemo(() => {
@@ -180,4 +208,4 @@ export const TransitionItem = function TransitionItem(renderItem) {
     }
     return items1;
   }, items)} renderItem={arg0.renderItem} getItemKey={getSingleItemKey} />;
-};
+});

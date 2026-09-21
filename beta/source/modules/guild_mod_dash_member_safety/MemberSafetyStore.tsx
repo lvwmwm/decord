@@ -1,20 +1,20 @@
-// Module ID: 7736
-// Function ID: 7737
+// Module ID: 7741
+// Function ID: 7742
 // Name: MemberSafetyStore
-// Dependencies: [32, 502, 2105, 2063, 1372, 7737, 1074, 1370, 11, 7743, 7744, 7739, 504, 573, 2]
+// Dependencies: [32, 502, 2109, 2067, 1376, 7742, 1078, 1374, 11, 7748, 7749, 7744, 504, 577, 2]
 
-// Module 7736 (MemberSafetyStore)
+// Module 7741 (MemberSafetyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7739 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7743 */;
-import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7744 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7744 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 7748 */;
+import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7749 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function getMemberSafetyPageStore(guildId) {
@@ -48,8 +48,8 @@ function handleGuildRoleMemberUpdate(guildId) {
   const items = [guildId.userId];
   return dependencyMap[guildId].updateMembersByMemberIds(items);
 }
-let closure_8 = fn(7737).GuildMemberSafetyPageStore;
-const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
+let closure_8 = fn(7742).GuildMemberSafetyPageStore;
+const EMPTY_STRING_SNOWFLAKE_ID = fn(1078).EMPTY_STRING_SNOWFLAKE_ID;
 let c10 = false;
 const dependencyMap = {};
 const Store = initializeDefault.Store;

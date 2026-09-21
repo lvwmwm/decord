@@ -1,11 +1,11 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7532
+// Function ID: 7533
 // Name: ReportToModConstants
-// Dependencies: [1074, 1086, 2]
+// Dependencies: [1078, 1090, 2]
 
-// Module 7530 (ReportToModConstants)
-import Constants from "Constants" /* 1074 */;
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+// Module 7532 (ReportToModConstants)
+import Constants from "Constants" /* 1078 */;
+import BigFlagUtils from "BigFlagUtils" /* 1090 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

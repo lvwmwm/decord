@@ -1,15 +1,15 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12175
+// Function ID: 12176
 // Name: AppLauncherOnboardingStore
-// Dependencies: [1372, 11, 12296, 7765, 504, 573, 2]
+// Dependencies: [1376, 11, 12173, 7770, 504, 577, 2]
 
-// Module 12298 (AppLauncherOnboardingStore)
+// Module 12175 (AppLauncherOnboardingStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
-import useCanShowAppLauncherOnboarding from "useCanShowAppLauncherOnboarding" /* 12296 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
+import useCanShowAppLauncherOnboarding from "useCanShowAppLauncherOnboarding" /* 12173 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const Store = initializeDefault.Store;
@@ -39,7 +39,7 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(DispatcherDefa
       const _Date = Date;
       obj.timeMs = Date.now();
       obj.applicationId = command.applicationId;
-      const guild = context.guild;
+      guild = context.guild;
       let id;
       if (guild != null) {
         id = guild.id;

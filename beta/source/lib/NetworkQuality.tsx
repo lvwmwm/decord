@@ -1,14 +1,14 @@
-// Module ID: 14086
-// Function ID: 14087
+// Module ID: 14089
+// Function ID: 14090
 // Name: NetworkQuality
-// Dependencies: [4805, 1074, 4785, 2]
+// Dependencies: [4807, 1078, 4787, 2]
 
-// Module 14086 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 4785 */;
-import NetworkStore from "NetworkStore" /* 4805 */;
+// Module 14089 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 4787 */;
+import NetworkStore from "NetworkStore" /* 4807 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ NetworkConnectionTypes: c3, NetworkConnectionSpeeds: closure_4 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("lib/NetworkQuality.tsx");

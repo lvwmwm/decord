@@ -1,34 +1,34 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 13898
+// Function ID: 13899
 // Name: GatewaySocket
-// Dependencies: [32, 5, 1346, 1074, 3, 13896, 13898, 1091, 13899, 559, 13900, 13903, 13910, 13912, 13931, 10, 9, 4750, 13908, 1364, 1271, 1241, 38, 504, 7885, 7889, 7892, 7890, 500, 13932, 13933, 13915, 1338, 5084, 5089, 1231, 573, 2]
+// Dependencies: [32, 5, 1350, 1078, 3, 13899, 13901, 1095, 13902, 561, 13903, 13906, 13913, 13915, 13934, 10, 9, 4752, 13911, 1368, 1275, 1245, 38, 504, 7890, 7894, 7897, 7895, 500, 13935, 13936, 13918, 1342, 5086, 5091, 1235, 577, 2]
 // Exports: setAccountSwitchUserId
 
-// Module 13895 (GatewaySocket)
+// Module 13898 (GatewaySocket)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1338 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4750 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
-import MetricEvents from "MetricEvents" /* 5089 */;
-import GatewayEncodingDefault from "GatewayEncoding" /* 13896 */;
-import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 13899 */;
-import AltGatewayTrackerDefault from "AltGatewayTracker" /* 13900 */;
-import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 13903 */;
-import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 13908 */;
-import ConnectionStateDefault from "ConnectionState" /* 13910 */;
-import GatewayCompressionHandler from "GatewayCompressionHandler" /* 13912 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13931 */;
+import BackoffDefault from "Backoff" /* 561 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1342 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4752 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
+import MetricEvents from "MetricEvents" /* 5091 */;
+import GatewayEncodingDefault from "GatewayEncoding" /* 13899 */;
+import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 13902 */;
+import AltGatewayTrackerDefault from "AltGatewayTracker" /* 13903 */;
+import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 13906 */;
+import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 13911 */;
+import ConnectionStateDefault from "ConnectionState" /* 13913 */;
+import GatewayCompressionHandler from "GatewayCompressionHandler" /* 13915 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13934 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
 
 require = fn;
 function noop() {
@@ -39,7 +39,7 @@ function byteSize(data) {
     return 0;
   }
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8 } = Constants);
 let closure_9 = new LoggerDefault("GatewaySocket");
 let tmp3 = new LoggerDefault("GatewaySocket");
@@ -197,7 +197,7 @@ prototype["_connect"] = function _connect() {
     if (obj.getIsPaused()) {
       logger.info("Skipping _connect because socket is paused");
     } else {
-      self.connectionState = identify(13910).CONNECTING;
+      self.connectionState = identify(13913).CONNECTING;
       self.nextReconnectIsImmediate = false;
       const algorithm = self.compressionHandler.getAlgorithm();
       name = name.getName();
@@ -245,11 +245,11 @@ prototype["_connect"] = function _connect() {
         ({ op, s, t, d } = closure_10.unpack(byteLength));
         if (op !== GatewaySocketOpCodes2.Opcode.DISPATCH) {
           const _HermesInternal = HermesInternal;
-          AppStartPerformanceDefault.mark("\u{1F310}", "GatewaySocket.onMessage " + op + " " + tmp3(13899).Opcode[op]);
+          AppStartPerformanceDefault.mark("\u{1F310}", "GatewaySocket.onMessage " + op + " " + tmp3(13902).Opcode[op]);
         }
         if (DeveloperOptionsStore.isLoggingGatewayEvents) {
           const items = [op];
-          if (op === tmp3(13899).Opcode.DISPATCH) {
+          if (op === tmp3(13902).Opcode.DISPATCH) {
             items.push(t);
           }
           items.push(d);
@@ -274,15 +274,15 @@ prototype["_connect"] = function _connect() {
         if (GatewaySocketOpCodes2.Opcode.HELLO === op) {
           identify._clearHelloTimeout();
           identify._handleHello(d);
-        } else if (tmp3(13899).Opcode.RECONNECT === op) {
+        } else if (tmp3(13902).Opcode.RECONNECT === op) {
           identify._handleReconnect();
-        } else if (tmp3(13899).Opcode.INVALID_SESSION === op) {
+        } else if (tmp3(13902).Opcode.INVALID_SESSION === op) {
           const result2 = identify._handleInvalidSession(d);
-        } else if (tmp3(13899).Opcode.HEARTBEAT === op) {
+        } else if (tmp3(13902).Opcode.HEARTBEAT === op) {
           const result3 = identify._handleHeartbeatReceive();
-        } else if (tmp3(13899).Opcode.HEARTBEAT_ACK === op) {
+        } else if (tmp3(13902).Opcode.HEARTBEAT_ACK === op) {
           identify._handleHeartbeatAck(d);
-        } else if (tmp3(13899).Opcode.DISPATCH === op) {
+        } else if (tmp3(13902).Opcode.DISPATCH === op) {
           let tmp29 = null;
           if (tmp18) {
             const obj4 = { compressed_byte_size, uncompressed_byte_size: null, compression_algorithm: null, packing_algorithm: null, unpack_duration_ms: null };
@@ -389,7 +389,7 @@ prototype["_connect"] = function _connect() {
         }
       }
       if (null == tmp32) {
-        const tmp48 = tmp5(13898)(str1);
+        const tmp48 = tmp5(13901)(str1);
         tmp48.binaryType = "arraybuffer";
         tmp32 = tmp48;
       }
@@ -795,7 +795,7 @@ prototype["_doIdentify"] = function _doIdentify() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -829,31 +829,31 @@ prototype["_doIdentify"] = function _doIdentify() {
             const handleIdentifyResult = self.handleIdentify();
             closure_128_0 = handleIdentifyResult;
             if (null !== handleIdentifyResult) {
-              self.connectionState = tmp2(13910).IDENTIFYING;
+              self.connectionState = tmp2(13913).IDENTIFYING;
               const _Date = Date;
               const timestamp = Date.now();
               closure_128_1 = timestamp;
               self.identifyStartTime = timestamp;
               if (obj10.isCacheEnabled()) {
-                let committedVersions = tmp2(7889).getCommittedVersions();
-                const obj12 = tmp2(7889);
+                let committedVersions = tmp2(7894).getCommittedVersions();
+                const obj12 = tmp2(7894);
               } else {
                 committedVersions = {};
               }
               const items = [committedVersions, , ];
-              obj10 = tmp3(7885);
+              obj10 = tmp3(7890);
               if (obj13.isCacheEnabled()) {
-                let committedVersions1 = tmp2(7892).getCommittedVersions();
-                const obj15 = tmp2(7892);
+                let committedVersions1 = tmp2(7897).getCommittedVersions();
+                const obj15 = tmp2(7897);
               } else {
                 committedVersions1 = {};
               }
               items[1] = committedVersions1;
-              obj13 = tmp3(7885);
-              let canUseGuildVersionsResult = tmp3(7885).isCacheEnabled();
+              obj13 = tmp3(7890);
+              let canUseGuildVersionsResult = tmp3(7890).isCacheEnabled();
               if (canUseGuildVersionsResult) {
-                canUseGuildVersionsResult = tmp2(7890).canUseGuildVersions();
-                const obj17 = tmp2(7890);
+                canUseGuildVersionsResult = tmp2(7895).canUseGuildVersions();
+                const obj17 = tmp2(7895);
               }
               items[2] = canUseGuildVersionsResult;
               v1 = 1;
@@ -888,7 +888,7 @@ prototype["_doIdentify"] = function _doIdentify() {
               obj = { guild_versions: {} };
             }
             closure_128_8 = obj;
-            if (closure_129_0.connectionState !== tmp2(13910).IDENTIFYING) {
+            if (closure_129_0.connectionState !== tmp2(13913).IDENTIFYING) {
               closure_1_9.warn("Skipping identify because connectionState or identifyStartTime has changed");
             }
             token = closure_128_0.token;
@@ -905,8 +905,8 @@ prototype["_doIdentify"] = function _doIdentify() {
             const obj14 = { token, capabilities: null, properties: null, presence: null, compress: null, client_state: null, qos_token: null };
             const obj21 = tmp3(500);
             const obj18 = { useChannelObfuscation: null };
-            const obj5 = tmp3(13932);
-            obj18.useChannelObfuscation = tmp3(13933).isChannelMetadataObfuscationEnabled("GatewaySocket");
+            const obj5 = tmp3(13935);
+            obj18.useChannelObfuscation = tmp3(13936).isChannelMetadataObfuscationEnabled("GatewaySocket");
             obj14.capabilities = obj5.getClientCapabilities(obj18);
             obj14.properties = closure_128_11;
             obj14.presence = presence;
@@ -918,14 +918,14 @@ prototype["_doIdentify"] = function _doIdentify() {
             closure_128_14 = JSON.stringify(closure_128_13);
             closure_129_0.identifyUncompressedByteSize = closure_128_14.length;
             const compressionHandler = closure_129_0.compressionHandler;
-            const obj7 = tmp3(13933);
-            closure_129_0.identifyCompressedByteSize = v1(13915).deflate(closure_128_14).length;
+            const obj7 = tmp3(13936);
+            closure_129_0.identifyCompressedByteSize = v1(13918).deflate(closure_128_14).length;
             closure_129_0.identifyCount = closure_129_0.identifyCount + num3;
             num3 = closure_129_0;
-            closure_129_0.send(tmp3(13899).Opcode.IDENTIFY, closure_128_13, false);
-            tmp65 = tmp2(1241);
+            closure_129_0.send(tmp3(13902).Opcode.IDENTIFY, closure_128_13, false);
+            tmp65 = tmp2(1245);
             tmp65.track(constants.SESSION_START_CLIENT, {});
-            const obj8 = v1(13915);
+            const obj8 = v1(13918);
           }
         }
         dependencyMap = 3;
@@ -1018,10 +1018,10 @@ prototype["isConnected"] = function isConnected() {
   const self = this;
   let tmp3 = this.connectionState === ConnectionStateDefault.IDENTIFYING;
   if (!tmp3) {
-    tmp3 = self.connectionState === tmp(13910).RESUMING;
+    tmp3 = self.connectionState === tmp(13913).RESUMING;
   }
   if (!tmp3) {
-    tmp3 = self.connectionState === tmp(13910).SESSION_ESTABLISHED;
+    tmp3 = self.connectionState === tmp(13913).SESSION_ESTABLISHED;
   }
   return tmp3;
 };
@@ -1058,8 +1058,8 @@ prototype["resetSocketAndClearCacheOnError"] = function resetSocketAndClearCache
     const obj5 = { tags: null };
     const obj6 = { socketCrashedAction: action };
     obj5.tags = obj6;
-    tmp4(1231).captureException(error, obj5);
-    const tmp4Result = tmp4(1231);
+    tmp4(1235).captureException(error, obj5);
+    const tmp4Result = tmp4(1235);
   }
   AnalyticsUtilsDefault.track(constants.GATEWAY_SOCKET_RESET, { error_message: error.message, error_stack: error.stack, has_client_mods: usesClientModsResult, action });
   self._cleanup((close) => close.close());

@@ -1,19 +1,19 @@
-// Module ID: 4385
-// Function ID: 4386
+// Module ID: 4389
+// Function ID: 4390
 // Name: embeddedActivityLocationUtils
 // Dependencies: [2]
 // Exports: getEmbeddedActivityLocationChannelId, getEmbeddedActivityLocationGuildId
 
-// Module 4385 (embeddedActivityLocationUtils)
+// Module 4389 (embeddedActivityLocationUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/embeddedActivityLocationUtils.tsx");
 
-export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivityLocationChannelId(_location) {
-  if (null != _location) {
+export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivityLocationChannelId(connectedActivityLocation) {
+  if (null != connectedActivityLocation) {
     let channel_id;
-    if ("channel_id" in _location) {
-      channel_id = _location.channel_id;
+    if ("channel_id" in connectedActivityLocation) {
+      channel_id = connectedActivityLocation.channel_id;
     }
     return channel_id;
   }

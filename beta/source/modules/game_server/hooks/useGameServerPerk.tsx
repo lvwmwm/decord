@@ -1,31 +1,103 @@
-// Module ID: 12830
-// Function ID: 12831
+// Module ID: 12741
+// Function ID: 12742
 // Name: useGameServerPerk
-// Dependencies: [19, 4665, 4646, 4645, 4668, 504, 12831, 1115, 2936, 12832, 2]
-// Exports: default
+// Dependencies: [19, 4668, 4649, 4648, 558, 568, 4671, 504, 12742, 1119, 2940, 12743, 2]
 
-// Module 12830 (useGameServerPerk)
-import util from "util" /* 1115 */;
-import _modDef2936 from "module_2936" /* 2936 */;
-import _modDef12832 from "module_12832" /* 12832 */;
+// Module 12741 (useGameServerPerk)
+import util from "util" /* 1119 */;
+import _modDef2940 from "module_2940" /* 2940 */;
+import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 12742 */;
+import _modDef12743 from "module_12743" /* 12743 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4665 */;
+import GameServerStore from "GameServerStore" /* 4668 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(4646).GAME_SERVER_POWERUP_SKU_ID;
-const GuildPowerupType = fn(4645).GuildPowerupType;
+const skuId = fn(4649).GAME_SERVER_POWERUP_SKU_ID;
+const GuildPowerupType = fn(4648).GuildPowerupType;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");
 
-export default function useGameServerPerk(guildId) {
-  _require = guildId;
-  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(guildId, "useGameServerPerk");
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  let tmp9Result = dependencyMap;
+  const cResult = require("c").c(11);
+  const obj = require("c");
+  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(arg0, "useGameServerPerk");
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameServerStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      return GameServerStore.getLowestGameCostForGuild(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj2 = require("GameServerExperiment");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp7);
+  const tmpResult = require("initialize");
+  ({ gameName, gameName2 } = useGameServerFeaturedGameNamesDefault());
+  let tmp11 = null;
+  if (gameServerEnabled) {
+    tmp11 = null;
+    if (null != stateFromStores) {
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1119).intl;
+        const stringResult = intl.string(tmp9(2940)["B3OfL/"]);
+        cResult[3] = stringResult;
+        let tmp12 = stringResult;
+      } else {
+        tmp12 = cResult[3];
+      }
+      if (cResult[4] === gameName) {
+        if (cResult[5] === gameName2) {
+          let tmp14 = cResult[6];
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+          const items1 = [];
+          cResult[7] = items1;
+          let tmp16 = items1;
+        } else {
+          tmp16 = cResult[7];
+        }
+        if (cResult[8] === stateFromStores) {
+        }
+        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: tmp9(12743), staticImageUrl: null };
+        tmp9Result = tmp9(12743);
+        obj3.staticImageUrl = tmp9Result;
+        cResult[8] = stateFromStores;
+        cResult[9] = tmp14;
+        cResult[10] = obj3;
+      }
+      const intl2 = tmp(1119).intl;
+      const obj4 = { gameName, gameName2 };
+      const formatResult = intl2.format(tmp9(2940)["+UqyGU"], obj4);
+      cResult[4] = gameName;
+      cResult[5] = gameName2;
+      cResult[6] = formatResult;
+      tmp14 = formatResult;
+    }
+  }
+  return tmp11;
+}) : ((arg0) => {
+  _require = arg0;
+  const gameServerEnabled = require("GameServerExperiment").useGameServerEnabled(arg0, "useGameServerPerk");
   let obj = require("GameServerExperiment");
   const items = [gameName2];
   stateFromStores = require("initialize").useStateFromStores(items, () => GameServerStore.getLowestGameCostForGuild(closure_0));
-  const tmp3 = gameServerEnabled(stateFromStores[6])();
+  const tmp3 = gameServerEnabled(stateFromStores[8])();
   const gameName = tmp3.gameName;
   gameName2 = tmp3.gameName2;
   const items1 = [gameServerEnabled, stateFromStores, gameName, gameName2];
@@ -36,18 +108,18 @@ export default function useGameServerPerk(guildId) {
       if (null != stateFromStores) {
         const obj = { skuId, title: null, description: null, cost: null, dependencies: null, type: null, animatedImageUrl: null, staticImageUrl: null };
         const intl = util.intl;
-        obj.title = intl.string(_modDef2936["B3OfL/"]);
+        obj.title = intl.string(_modDef2940["B3OfL/"]);
         const intl2 = util.intl;
         const obj2 = { gameName, gameName2 };
-        obj.description = intl2.format(_modDef2936["+UqyGU"], obj2);
+        obj.description = intl2.format(_modDef2940["+UqyGU"], obj2);
         obj.cost = tmp2;
         obj.dependencies = [];
         obj.type = GuildPowerupType.PERK;
-        obj.animatedImageUrl = _modDef12832;
-        obj.staticImageUrl = _modDef12832;
+        obj.animatedImageUrl = _modDef12743;
+        obj.staticImageUrl = _modDef12743;
         tmp = obj;
       }
     }
     return tmp;
   }, items1);
-};
+});

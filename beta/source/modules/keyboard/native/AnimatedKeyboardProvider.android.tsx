@@ -1,11 +1,11 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 16260
+// Function ID: 16261
 // Name: AnimatedKeyboardProvider
-// Dependencies: [1624, 2, 14854]
+// Dependencies: [1628, 2, 16261]
 
-// Module 14853 (AnimatedKeyboardProvider)
-import AnimatedKeyboardProviderControllerDefault from "AnimatedKeyboardProviderController" /* 14854 */;
-import NativeSafeAreaInsetsModule from "NativeSafeAreaInsetsModule" /* 1624 */;
+// Module 16260 (AnimatedKeyboardProvider)
+import AnimatedKeyboardProviderControllerDefault from "AnimatedKeyboardProviderController" /* 16261 */;
+import NativeSafeAreaInsetsModule from "NativeSafeAreaInsetsModule" /* 1628 */;
 
 const result = NativeSafeAreaInsetsModule.setNavigationBarContrastEnforced(false);
 const size = fn(2);

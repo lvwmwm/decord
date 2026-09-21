@@ -1,45 +1,113 @@
-// Module ID: 8984
-// Function ID: 8985
+// Module ID: 8982
+// Function ID: 8983
 // Name: GameProfileView
-// Dependencies: [19, 17, 8985, 21, 4756, 576, 7407, 7427, 8986, 8987, 8992, 8999, 9000, 9010, 9011, 9017, 9030, 9043, 9157, 9159, 9178, 9179, 2]
-// Exports: default
+// Dependencies: [19, 17, 8983, 21, 4758, 580, 558, 568, 7409, 7429, 8984, 8985, 8990, 8997, 8998, 9008, 9009, 9015, 9028, 9041, 9155, 9157, 9176, 9177, 2]
 
-// Module 8984 (GameProfileView)
-import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7407 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
-import useGameProfileInvite from "useGameProfileInvite" /* 8986 */;
-import GameProfileHeaderDefault from "GameProfileHeader" /* 8987 */;
-import GameProfileMediaDefault from "GameProfileMedia" /* 8992 */;
-import GameProfileReviewsDefault from "GameProfileReviews" /* 9000 */;
-import GameProfileSummaryDefault from "GameProfileSummary" /* 9010 */;
-import GameProfileLinkAccountDefault from "GameProfileLinkAccount" /* 9011 */;
-import GameProfileCommunityDefault from "GameProfileCommunity" /* 9017 */;
-import GameProfileAnnouncementsDefault from "GameProfileAnnouncements" /* 9030 */;
-import GameProfileShopCarouselDefault from "GameProfileShopCarousel" /* 9043 */;
-import GameProfileSimilarGamesDefault from "GameProfileSimilarGames" /* 9157 */;
-import GameProfileDetailsDefault from "GameProfileDetails" /* 9159 */;
-import GameProfileGameClaimCtaDefault from "GameProfileGameClaimCta" /* 9178 */;
-import GameProfileReportButtonDefault from "GameProfileReportButton" /* 9179 */;
+// Module 8982 (GameProfileView)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import GameProfileMediaDefault from "GameProfileMedia" /* 8990 */;
+import GameProfileReviewsDefault from "GameProfileReviews" /* 8998 */;
+import GameProfileSummaryDefault from "GameProfileSummary" /* 9008 */;
+import GameProfileLinkAccountDefault from "GameProfileLinkAccount" /* 9009 */;
+import GameProfileCommunityDefault from "GameProfileCommunity" /* 9015 */;
+import GameProfileAnnouncementsDefault from "GameProfileAnnouncements" /* 9028 */;
+import GameProfileShopCarouselDefault from "GameProfileShopCarousel" /* 9041 */;
+import GameProfileSimilarGamesDefault from "GameProfileSimilarGames" /* 9155 */;
+import GameProfileDetailsDefault from "GameProfileDetails" /* 9157 */;
+import GameProfileGameClaimCtaDefault from "GameProfileGameClaimCta" /* 9176 */;
+import GameProfileReportButtonDefault from "GameProfileReportButton" /* 9177 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
+const useGameProfileInvite = tmp(8984);
+const GameProfileHeaderDefault = tmp5(8985);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingBottom: nativeDefault.space.PX_16 }, body: null, buttonsContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingBottom: nativeDefault.space.PX_16 };
-obj2.body = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(8985).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
-let obj4 = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(8985).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+obj2.body = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+let obj4 = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: fn(8983).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
 obj2.buttonsContainer = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj5 = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileView.tsx");
 
-export default function GameProfileView(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((onHeaderHeightMeasured) => {
+  const cResult = c.c(87);
+  ({ game, invite, viewId, source, trackAction, onGuildInviteResolved, closeModal, scrollY, websiteButtons, onStoreLinksMeasured } = onHeaderHeightMeasured);
+  onHeaderHeightMeasured = onHeaderHeightMeasured.onHeaderHeightMeasured;
+  closure_7();
+  importDefault = noop.useRef(null);
+  dependencyMap = noop.useRef(null);
+  const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.GAME_PROFILE).analyticsLocations;
+  if (cResult[0] !== game) {
+    const result = useGameProfileInvite.hasGameProfileDiscordWebsite(game);
+    cResult[0] = game;
+    cResult[1] = result;
+    const tmpResult = useGameProfileInvite;
+  }
+  if (cResult[2] !== onStoreLinksMeasured) {
+    class R {
+      constructor() {
+        current = closure_1.current;
+        current2 = closure_2.current;
+        tmp = null != current && null != current2;
+        if (tmp) {
+          if (onStoreLinksMeasured != null) {
+            tmp2Result = tmp2(current + current2);
+          }
+        }
+        return;
+      }
+    }
+    cResult[2] = onStoreLinksMeasured;
+    cResult[3] = R;
+    const tmp9 = R;
+  } else {
+    class R {
+      constructor() {
+        current = closure_1.current;
+        current2 = closure_2.current;
+        tmp = null != current && null != current2;
+        if (tmp) {
+          if (onStoreLinksMeasured != null) {
+            tmp2Result = tmp2(current + current2);
+          }
+        }
+        return;
+      }
+    }
+  }
+  R = tmp9;
+  if (cResult[4] === game) {
+    class R {
+      constructor() {
+        current = closure_1.current;
+        current2 = closure_2.current;
+        tmp = null != current && null != current2;
+        if (tmp) {
+          if (onStoreLinksMeasured != null) {
+            tmp2Result = tmp2(current + current2);
+          }
+        }
+        return;
+      }
+    }
+  }
+  cResult[4] = game;
+  cResult[5] = onHeaderHeightMeasured;
+  cResult[6] = scrollY;
+  cResult[7] = hasOwnProperty(GameProfileHeaderDefault, { game, scrollY, onHeightMeasured: onHeaderHeightMeasured });
+}) : ((arg0) => {
   ({ game, viewId, source, trackAction, closeModal, scrollY, websiteButtons, onStoreLinksMeasured } = arg0);
   ({ invite, onGuildInviteResolved, onHeaderHeightMeasured } = arg0);
   const tmp = closure_7();
@@ -80,7 +148,7 @@ export default function GameProfileView(arg0) {
       children: null
     };
     const obj6 = { game, websiteButtons, trackAction };
-    obj5.children = tmp6(tmp2(8999), obj6);
+    obj5.children = tmp6(tmp2(8997), obj6);
     tmp6Result = tmp6(tmp8, obj5);
   }
   items2[1] = tmp6Result;
@@ -101,4 +169,4 @@ export default function GameProfileView(arg0) {
   obj3.children = items1;
   obj2.children = timestampProducer(View, obj3);
   return hasOwnProperty(useAnalyticsLocations.AnalyticsLocationProvider, obj2);
-};
+});

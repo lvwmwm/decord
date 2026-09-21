@@ -1,26 +1,26 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9525
+// Function ID: 9526
 // Name: PlaintextResolvers
-// Dependencies: [32, 5676, 5723, 2041, 2096, 2105, 2099, 2063, 4395, 4405, 1372, 1074, 1375, 7922, 4909, 11, 5659, 4409, 4413, 2]
+// Dependencies: [32, 5678, 5725, 2045, 2100, 2109, 2103, 2067, 4399, 4409, 1376, 1078, 1379, 7927, 4911, 11, 5661, 4413, 4417, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9529 (PlaintextResolvers)
+// Module 9525 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4413 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import SlateUtils from "SlateUtils" /* 7922 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4417 */;
+import useChannelName from "useChannelName" /* 4911 */;
+import SlateUtils from "SlateUtils" /* 7927 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function resolvePlaintextInlineVoid(text, id, id2, arg3) {
@@ -191,9 +191,9 @@ function matchesUser(arg0, arg1, username, requireExact) {
   }
   return tmp;
 }
-let closure_8 = fn(2096).GUILD_SELECTABLE_CHANNELS_KEY;
-const Permissions = fn(1074).Permissions;
-const EmojiIntention = fn(1375).EmojiIntention;
+let closure_8 = fn(2100).GUILD_SELECTABLE_CHANNELS_KEY;
+const Permissions = fn(1078).Permissions;
+const EmojiIntention = fn(1379).EmojiIntention;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_text_area/PlaintextResolvers.tsx");
 

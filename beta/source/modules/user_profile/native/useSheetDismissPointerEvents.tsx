@@ -1,18 +1,19 @@
-// Module ID: 13283
-// Function ID: 13284
+// Module ID: 13286
+// Function ID: 13287
 // Name: useSheetDismissPointerEvents
-// Dependencies: [6869, 4492, 6897, 2]
-// Exports: default
+// Dependencies: [558, 6863, 4497, 6891, 2]
 
-// Module 13283 (useSheetDismissPointerEvents)
-import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
+// Module 13286 (useSheetDismissPointerEvents)
+import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const __initData = { code: "function useSheetDismissPointerEventsTsx1(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};}" };
+const __initData = { code: "function useSheetDismissPointerEventsTsx1(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?\"none\":\"box-none\"};}" };
+const __initData2 = { code: "function useSheetDismissPointerEventsTsx2(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};}" };
 const result = size.fileFinishedImporting("modules/user_profile/native/useSheetDismissPointerEvents.tsx");
 
-export default function useSheetDismissPointerEvents() {
-  const bottomSheetInternal = prop(prop1[0]).useBottomSheetInternal(true);
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const bottomSheetInternal = prop(prop1[1]).useBottomSheetInternal(true);
   prop = undefined;
   if (bottomSheetInternal != null) {
     prop = bottomSheetInternal.animatedContentGestureState;
@@ -21,7 +22,7 @@ export default function useSheetDismissPointerEvents() {
   if (bottomSheetInternal != null) {
     prop1 = bottomSheetInternal.animatedHandleGestureState;
   }
-  const obj = prop(prop1[0]);
+  const obj = prop(prop1[1]);
   const fn = function n() {
     value = undefined;
     if (prop != null) {
@@ -39,9 +40,42 @@ export default function useSheetDismissPointerEvents() {
     }
     return { pointerEvents };
   };
-  const tmpResult = prop(prop1[1]);
-  fn.__closure = { contentGestureState: prop, State: prop(prop1[2]).State, handleGestureState: prop1 };
-  fn.__workletHash = 16631714570992;
+  const tmpResult = prop(prop1[2]);
+  fn.__closure = { contentGestureState: prop, State: prop(prop1[3]).State, handleGestureState: prop1 };
+  fn.__workletHash = 2092561663728;
   fn.__initData = __initData;
   return tmpResult.useAnimatedStyle(fn);
-};
+}) : (() => {
+  const bottomSheetInternal = prop(prop1[1]).useBottomSheetInternal(true);
+  prop = undefined;
+  if (bottomSheetInternal != null) {
+    prop = bottomSheetInternal.animatedContentGestureState;
+  }
+  prop1 = undefined;
+  if (bottomSheetInternal != null) {
+    prop1 = bottomSheetInternal.animatedHandleGestureState;
+  }
+  const obj = prop(prop1[1]);
+  const fn = function t() {
+    value = undefined;
+    if (prop != null) {
+      value = prop.get();
+    }
+    if (value === LegacyBaseButton.State.ACTIVE) {
+      let pointerEvents = "none";
+    } else {
+      value2 = undefined;
+      if (prop1 != null) {
+        value2 = obj2.get();
+      }
+      pointerEvents = "box-none";
+      obj2 = prop1;
+    }
+    return { pointerEvents };
+  };
+  const tmpResult = prop(prop1[2]);
+  fn.__closure = { contentGestureState: prop, State: prop(prop1[3]).State, handleGestureState: prop1 };
+  fn.__workletHash = 9715865768435;
+  fn.__initData = __initData2;
+  return tmpResult.useAnimatedStyle(fn);
+});

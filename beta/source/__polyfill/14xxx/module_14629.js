@@ -1,16 +1,18 @@
 // Module ID: 14629
 // Function ID: 14630
-// Dependencies: [14602]
+// Dependencies: [14630]
 
 // Module 14629
-import _mod14602 from "module_14602" /* 14602 */;
+import _mod14630 from "module_14630" /* 14630 */;
 
 
 export default (arg0) => {
-  if (_mod14602(arg0)) {
-    return arg0;
-  } else {
-    const tmp5 = new TypeError(String(arg0) + " is not an object");
-    throw tmp5;
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== tmp) {
+      num = _mod14630(tmp);
+    }
   }
+  return num;
 };

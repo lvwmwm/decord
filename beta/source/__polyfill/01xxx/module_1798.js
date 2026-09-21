@@ -1,79 +1,45 @@
 // Module ID: 1798
 // Function ID: 1799
-// Dependencies: [1644]
+// Dependencies: [1746, 1786, 1788]
+// Exports: useComposedEventHandler
 
 // Module 1798
-import runWorkletOnJS from "runWorkletOnJS" /* 1644 */;
+const require = arg1;
+const dependencyMap = arg6;
+let closure_2 = { code: "function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}" };
 
-const fn = function t() {
-  let obj = { frameCallbackRegistry: new Map(), activeFrameCallbacks: null, previousFrameTimestamp: null, nextCallId: 0, runCallbacks: null, registerFrameCallback: null, unregisterFrameCallback: null, manageStateFrameCallback: null };
-  const map = new Map();
-  obj.activeFrameCallbacks = new Set();
-  obj.runCallbacks = function runCallbacks(nextCallId) {
-    const self = this;
-    closure_1 = nextCallId;
-    function loop(previousFrameTimestamp) {
-      if (timeSincePreviousFrame === self.nextCallId) {
-        if (null === tmp.previousFrameTimestamp) {
-          tmp.previousFrameTimestamp = previousFrameTimestamp;
-        }
-        timeSincePreviousFrame = previousFrameTimestamp - tmp.previousFrameTimestamp;
-        const item = tmp.activeFrameCallbacks.forEach((item) => {
-          value = self.frameCallbackRegistry.get(item);
-          const startTime = value.startTime;
-          if (null === startTime) {
-            value.startTime = previousFrameTimestamp;
-            const obj = { timestamp: previousFrameTimestamp, timeSincePreviousFrame: null, timeSinceFirstFrame: 0 };
-            value.callback(obj);
-          } else {
-            const obj2 = { timestamp: previousFrameTimestamp, timeSincePreviousFrame, timeSinceFirstFrame: previousFrameTimestamp - startTime };
-            value.callback(obj2);
-          }
-        });
-        if (tmp.activeFrameCallbacks.size > 0) {
-          tmp.previousFrameTimestamp = previousFrameTimestamp;
-          const _requestAnimationFrame = requestAnimationFrame;
-          const animationFrame = requestAnimationFrame(previousFrameTimestamp);
+export const useComposedEventHandler = function useComposedEventHandler(tmp8Result4) {
+  const obj = {};
+  const set = new Set();
+  const obj2 = {};
+  const found = tmp8Result4.filter((item) => null !== item);
+  let item = found.forEach((workletEventHandler) => {
+    workletEventHandler = workletEventHandler.workletEventHandler;
+    if (workletEventHandler instanceof obj(set[0]).WorkletEventHandler) {
+      const eventNames = workletEventHandler.eventNames;
+      const item = eventNames.forEach((item) => {
+        set.add(item);
+        if (obj2[item]) {
+          tmp2[item].push(workletEventHandler.worklet);
+          let tmp3 = workletEventHandler;
         } else {
-          tmp.previousFrameTimestamp = null;
+          tmp3 = workletEventHandler;
+          const items = [workletEventHandler.worklet];
+          tmp2[item] = items;
         }
-        const activeFrameCallbacks = tmp.activeFrameCallbacks;
-      }
+        obj[item + "" + obj2[item].length] = tmp3.worklet;
+      });
     }
-    if (tmp) {
-      let _requestAnimationFrame = requestAnimationFrame;
-      let animationFrame = requestAnimationFrame(loop);
-    }
-  };
-  obj.registerFrameCallback = function registerFrameCallback(callback, arg1) {
-    const result = this.frameCallbackRegistry.set(arg1, { callback, startTime: null });
-  };
-  obj.unregisterFrameCallback = function unregisterFrameCallback(arg0) {
-    const result = this.manageStateFrameCallback(arg0, false);
-    this.frameCallbackRegistry.delete(arg0);
-  };
-  obj.manageStateFrameCallback = function manageStateFrameCallback(arg0, arg1) {
-    if (-1 !== arg0) {
-      const self = this;
-      if (arg1) {
-        self.activeFrameCallbacks.add(arg0);
-        self.runCallbacks(self.nextCallId);
-        const activeFrameCallbacks2 = self.activeFrameCallbacks;
-      } else {
-        self.frameCallbackRegistry.get(arg0).startTime = null;
-        self.activeFrameCallbacks.delete(arg0);
-        if (0 === self.activeFrameCallbacks.size) {
-          self.nextCallId = self.nextCallId + 1;
-        }
-        const activeFrameCallbacks = self.activeFrameCallbacks;
-        const frameCallbackRegistry = self.frameCallbackRegistry;
-      }
+  });
+  const obj3 = obj(set[1]);
+  const fn = function v(arg0) {
+    closure_0 = arg0;
+    if (obj2[arg0.eventName]) {
+      const item = tmp[arg0.eventName].forEach((fn) => fn(closure_0));
     }
   };
-  global._frameCallbackRegistry = obj;
+  fn.__closure = { workletsMap: obj2 };
+  fn.__workletHash = 14960316830945;
+  fn.__initData = obj2;
+  return obj(set[2]).useEvent(fn, Array.from(set), obj3.useHandler(obj).doDependenciesDiffer);
 };
-fn.__closure = {};
-fn.__workletHash = 12487935997347;
-fn.__initData = { code: "function pnpm_FrameCallbackRegistryUITs1(){const frameCallbackRegistry={frameCallbackRegistry:new Map(),activeFrameCallbacks:new Set(),previousFrameTimestamp:null,nextCallId:0,runCallbacks:function(callId){var _this=this;const loop=function(timestamp){if(callId!==_this.nextCallId){return;}if(_this.previousFrameTimestamp===null){_this.previousFrameTimestamp=timestamp;}const delta=timestamp-_this.previousFrameTimestamp;_this.activeFrameCallbacks.forEach(function(callbackId){const callbackDetails=_this.frameCallbackRegistry.get(callbackId);const{startTime:startTime}=callbackDetails;if(startTime===null){callbackDetails.startTime=timestamp;callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:null,timeSinceFirstFrame:0});}else{callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:delta,timeSinceFirstFrame:timestamp-startTime});}});if(_this.activeFrameCallbacks.size>0){_this.previousFrameTimestamp=timestamp;requestAnimationFrame(loop);}else{_this.previousFrameTimestamp=null;}};if(this.activeFrameCallbacks.size===1&&callId===this.nextCallId){requestAnimationFrame(loop);}},registerFrameCallback:function(callback,callbackId){this.frameCallbackRegistry.set(callbackId,{callback:callback,startTime:null});},unregisterFrameCallback:function(callbackId){this.manageStateFrameCallback(callbackId,false);this.frameCallbackRegistry.delete(callbackId);},manageStateFrameCallback:function(callbackId,state){if(callbackId===-1){return;}if(state){this.activeFrameCallbacks.add(callbackId);this.runCallbacks(this.nextCallId);}else{const callback=this.frameCallbackRegistry.get(callbackId);callback.startTime=null;this.activeFrameCallbacks.delete(callbackId);if(this.activeFrameCallbacks.size===0){this.nextCallId+=1;}}}};global._frameCallbackRegistry=frameCallbackRegistry;}" };
-
-export const prepareUIRegistry = runWorkletOnJS.runOnUIImmediately(fn);

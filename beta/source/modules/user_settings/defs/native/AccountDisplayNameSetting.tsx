@@ -1,22 +1,75 @@
-// Module ID: 14987
-// Function ID: 14988
+// Module ID: 14976
+// Function ID: 14977
 // Name: AccountDisplayNameSetting
-// Dependencies: [1372, 8233, 1074, 504, 11725, 1115, 14863, 2]
+// Dependencies: [1376, 8238, 1078, 558, 568, 504, 11594, 1119, 14852, 2]
 
-// Module 14987 (AccountDisplayNameSetting)
+// Module 14976 (AccountDisplayNameSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      currentUser = currentUser.getCurrentUser();
+      let globalName;
+      if (currentUser != null) {
+        globalName = currentUser.globalName;
+      }
+      return globalName;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [UserStore];
+  return initialize.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let globalName;
+    if (currentUser != null) {
+      globalName = currentUser.globalName;
+    }
+    return globalName;
+  });
+});
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["9AjdkD"]);
   },
-  parent: fn(8233).MobileUserSettings.ACCOUNT,
-  useTrailing: function useAccountDisplayNameSettingTrailing() {
+  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [UserStore];
+      const fn = function s() {
+        currentUser = currentUser.getCurrentUser();
+        let globalName;
+        if (currentUser != null) {
+          globalName = currentUser.globalName;
+        }
+        return globalName;
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [UserStore];
     return initialize.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
@@ -26,9 +79,9 @@ const route = SettingBuilders.createRoute({
       }
       return globalName;
     });
-  },
+  }),
   screen: {
-    route: fn(1074).UserSettingsSections.PROFILE_CUSTOMIZATION,
+    route: fn(1078).UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {
       return require("ProfileCustomizationSettingScreen").default;
     }

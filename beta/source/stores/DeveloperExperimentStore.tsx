@@ -1,18 +1,18 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 7961
+// Function ID: 7962
 // Name: DeveloperExperimentStore
-// Dependencies: [2063, 1372, 4672, 1384, 1383, 504, 573, 2]
+// Dependencies: [2067, 1376, 4675, 1388, 1387, 504, 577, 2]
 
-// Module 7956 (DeveloperExperimentStore)
+// Module 7961 (DeveloperExperimentStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserStoreUtils from "UserStoreUtils" /* 1383 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserStoreUtils from "UserStoreUtils" /* 1387 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const ExperimentBuckets = fn(4672).ExperimentBuckets;
-const Environments = fn(1384).Environments;
+const ExperimentBuckets = fn(4675).ExperimentBuckets;
+const Environments = fn(1388).Environments;
 let tmp2 = "production" === Environments.DEVELOPMENT;
 if (!tmp2) {
   const _window = window;
@@ -41,7 +41,7 @@ prototype["initialize"] = function initialize() {
     }
   };
   Object.defineProperties(this, obj);
-  closure_5 = self(1383).isStaffEnv(UserStore.getCurrentUser());
+  closure_5 = self(1387).isStaffEnv(UserStore.getCurrentUser());
   const timerId = setTimeout(() => Object.freeze(self));
 };
 prototype["getExperimentDescriptor"] = function getExperimentDescriptor() {

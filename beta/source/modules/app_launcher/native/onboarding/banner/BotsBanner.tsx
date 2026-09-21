@@ -1,20 +1,72 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12195
+// Function ID: 12196
 // Name: BotsBanner
-// Dependencies: [19, 21, 12319, 12303, 12314, 1115, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 12196, 12180, 1119, 12191, 2]
 
-// Module 12318 (BotsBanner)
-import BannerBaseDefault from "BannerBase" /* 12314 */;
-import useBannerBots from "useBannerBots" /* 12319 */;
+// Module 12195 (BotsBanner)
+import c from "c" /* 568 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 12180 */;
+import BannerBaseDefault from "BannerBase" /* 12191 */;
+import useBannerBots from "useBannerBots" /* 12196 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/BotsBanner.tsx");
 
-export default function BotsBanner(context) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+  let tmp2 = dependencyMap;
+  const cResult = c.c(11);
+  context = context.context;
+  if (cResult[0] !== context) {
+    const obj2 = { context };
+    cResult[0] = context;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const bannerBots = useBannerBots.useBannerBots(tmp4);
+  ({ firstBotApplication, secondBotApplication } = bannerBots);
+  if (cResult[2] === firstBotApplication) {
+    if (cResult[3] === secondBotApplication) {
+      let tmp6 = cResult[4];
+    }
+    let tmp9 = null;
+    if (null != firstBotApplication) {
+      tmp9 = null;
+      if (null != secondBotApplication) {
+        if (cResult[5] === firstBotApplication.name) {
+          if (cResult[6] === secondBotApplication.name) {
+            let tmp10 = cResult[7];
+          }
+          if (cResult[8] === tmp6) {
+          }
+          const obj3 = { image: tmp6, text: tmp10 };
+          tmp2 = jsx(BannerBaseDefault, { image: tmp6, text: tmp10 });
+          cResult[8] = tmp6;
+          cResult[9] = tmp10;
+          cResult[10] = tmp2;
+        }
+        const intl = tmp(1119).intl;
+        const obj4 = { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name };
+        const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["9SN0xw"], obj4);
+        cResult[5] = firstBotApplication.name;
+        cResult[6] = secondBotApplication.name;
+        cResult[7] = formatToPlainStringResult;
+        tmp10 = formatToPlainStringResult;
+      }
+    }
+    return tmp9;
+  }
+  const tmp7 = jsx(ApplicationsImageDefault, { firstApplication: firstBotApplication, secondApplication: secondBotApplication });
+  cResult[2] = firstBotApplication;
+  cResult[3] = secondBotApplication;
+  cResult[4] = tmp7;
+  tmp6 = tmp7;
+}) : ((context) => {
   const bannerBots = useBannerBots.useBannerBots({ context: context.context });
   ({ firstBotApplication, secondBotApplication } = bannerBots);
   let tmp4Result = null;
@@ -22,12 +74,12 @@ export default function BotsBanner(context) {
     tmp4Result = null;
     if (null != secondBotApplication) {
       const obj2 = { image: tmp6, text: null };
-      const intl = tmp(1115).intl;
+      const intl = tmp(1119).intl;
       const obj3 = { firstApplicationName: firstBotApplication.name, secondApplicationName: secondBotApplication.name };
-      obj2.text = intl.formatToPlainString(tmp(1115).t["9SN0xw"], obj3);
+      obj2.text = intl.formatToPlainString(tmp(1119).t["9SN0xw"], obj3);
       tmp4Result = jsx(BannerBaseDefault, { image: tmp6, text: null });
       const tmp5Result = BannerBaseDefault;
     }
   }
   return tmp4Result;
-};
+});

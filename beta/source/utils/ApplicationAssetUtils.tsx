@@ -1,17 +1,17 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8413
+// Function ID: 8414
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8409, 1074, 38, 3, 1271, 573, 1431, 2]
+// Dependencies: [32, 5, 8414, 1078, 38, 3, 1275, 577, 1435, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8408 (ApplicationAssetUtils)
+// Module 8413 (ApplicationAssetUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8409 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8414 */;
 
 require = fn;
 function updateAssets() {
@@ -74,7 +74,7 @@ let closure_18 = async function _resolveExternalAssets(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     while (true) {
@@ -142,7 +142,7 @@ let closure_18 = async function _resolveExternalAssets(arg0, value) {
         throw closure_1_6;
       }
       c9 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   }
 };
@@ -320,9 +320,9 @@ let closure_22 = async function _fetchAssetIds(arg0, value) {
     num13 = 1;
   }
   closure_131_2 = num13;
-  return "PX_16";
+  return "Set";
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Endpoints: metroRequire, PlatformTypes } = Constants);
 let c8 = "https://i.scdn.co/image/";
 const re9 = /https:\/\/static-cdn\.jtvnw\.net\/previews-ttv\/live_user_(.+)-\{width\}x\{height\}.jpg/;
@@ -418,14 +418,14 @@ export const getAssetFromImageURL = function getAssetFromImageURL(SPOTIFY, url) 
   }
   return combined;
 };
-export const getAssetImage = function getAssetImage(application_id, media_assets_large_image, items, png) {
-  let str = png;
-  if (png === undefined) {
+export const getAssetImage = function getAssetImage(application_id, large_image, items, format) {
+  let str = format;
+  if (format === undefined) {
     str = "png";
   }
-  if (null != media_assets_large_image) {
-    if (media_assets_large_image.includes(":")) {
-      [tmp21, tmp22] = media_assets_large_image.split(":");
+  if (null != large_image) {
+    if (large_image.includes(":")) {
+      [tmp21, tmp22] = large_image.split(":");
       if (tmp21 === PlatformTypes.TWITCH) {
         if (null != items) {
           if (typeof items !== "number") {
@@ -446,11 +446,11 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
         }
         return deserializeResult1;
       }
-      const tmp20 = _slicedToArray(media_assets_large_image.split(":"), 2);
+      const tmp20 = _slicedToArray(large_image.split(":"), 2);
     }
   }
   if (null != application_id) {
-    if (null != media_assets_large_image) {
+    if (null != large_image) {
       const _Array = Array;
       let applyResult = items;
       if (Array.isArray(items)) {
@@ -470,10 +470,10 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
         const _location = location;
         const _window2 = window;
         const _HermesInternal2 = HermesInternal;
-        let combined = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/app-assets/" + application_id + "/" + media_assets_large_image + "." + str + str4;
+        let combined = "" + location.protocol + "//" + window.GLOBAL_ENV.CDN_HOST + "/app-assets/" + application_id + "/" + large_image + "." + str + str4;
       } else {
         const _HermesInternal = HermesInternal;
-        combined = "" + HTTPUtils.getAPIBaseURL() + "/applications/" + application_id + "/app-assets/" + media_assets_large_image + "." + str + str4;
+        combined = "" + HTTPUtils.getAPIBaseURL() + "/applications/" + application_id + "/app-assets/" + large_image + "." + str + str4;
       }
       return combined;
     }

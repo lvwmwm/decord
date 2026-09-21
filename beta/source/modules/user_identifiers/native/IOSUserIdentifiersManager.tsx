@@ -1,18 +1,18 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17813
+// Function ID: 17814
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1372, 1074, 7363, 1364, 17811, 1271, 1231, 1241, 2]
+// Dependencies: [5, 17, 1376, 1078, 7365, 1368, 17814, 1275, 1235, 1245, 2]
 
-// Module 17810 (IOSUserIdentifiersManager)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 17813 (IOSUserIdentifiersManager)
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import UserStore from "UserStore" /* 1376 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
 const NativeModules = fn(17).NativeModules;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 let closure_7 = { APP_TRANSACTION_UNAVAILABLE: "native_unavailable", APP_TRANSACTION_CANCELLED: "native_cancelled", APP_TRANSACTION_NETWORK_ERROR: "native_network", APP_TRANSACTION_ERROR: "native_error" };
 class IOSUserIdentifiersManager extends tmp2 {
   constructor() {
@@ -42,7 +42,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         v3 = tmp;
         throw tmp9;
@@ -107,7 +107,7 @@ prototype["syncAppTransactionId"] = function syncAppTransactionId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

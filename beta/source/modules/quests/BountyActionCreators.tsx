@@ -1,22 +1,22 @@
-// Module ID: 11776
-// Function ID: 11777
+// Module ID: 11645
+// Function ID: 11646
 // Name: BountyActionCreators
-// Dependencies: [5, 7936, 4805, 7938, 7939, 1074, 3, 573, 5668, 11547, 7937, 4657, 7703, 7957, 1271, 5664, 7935, 2]
+// Dependencies: [5, 7941, 4807, 7943, 7944, 1078, 3, 577, 5670, 10569, 7942, 4660, 7708, 7962, 1275, 5666, 7940, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchDockCreativePreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 11776 (BountyActionCreators)
+// Module 11645 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import QuestTypes from "QuestTypes" /* 5664 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7703 */;
-import QuestDataUtils from "QuestDataUtils" /* 7935 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7957 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7708 */;
+import QuestDataUtils from "QuestDataUtils" /* 7940 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7962 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7936 */;
-import NetworkStore from "NetworkStore" /* 4805 */;
-import BountyStore from "BountyStore" /* 7938 */;
-import QuestStore from "QuestStore" /* 7939 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7941 */;
+import NetworkStore from "NetworkStore" /* 4807 */;
+import BountyStore from "BountyStore" /* 7943 */;
+import QuestStore from "QuestStore" /* 7944 */;
 
 require = fn;
 function fetchBountiesAndDispatch() {
@@ -87,7 +87,7 @@ let closure_12 = async function _fetchQuestHomeBounties(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -105,9 +105,9 @@ let closure_12 = async function _fetchQuestHomeBounties(arg0, value) {
           c1 = 1;
           const obj4 = {
             value: fetchBountiesAndDispatch(tmp5, asyncGeneratorStep(async () => {
-                      closure_128_0 = await tmp2(7703).getSession();
-                      const orRefreshAdSession = tmp2(7957).getOrRefreshAdSession();
-                      const HTTP = tmp2(1271).HTTP;
+                      closure_128_0 = await tmp2(7708).getSession();
+                      const orRefreshAdSession = tmp2(7962).getOrRefreshAdSession();
+                      const HTTP = tmp2(1275).HTTP;
                       const request = { url: constants.QUESTS_GET_DECISIONS, query: null, rejectWithError: false, context: null };
                       const obj7 = { placement: closure_129_0, client_ad_session_id: orRefreshAdSession.uuid, client_heartbeat_session_id: null, num_decisions_requested: 5 };
                       if (closure_128_0 != null) {
@@ -132,7 +132,7 @@ let closure_12 = async function _fetchQuestHomeBounties(arg0, value) {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp9) {
       c1 = tmp;
       throw tmp9;
@@ -150,7 +150,7 @@ let closure_13 = async function _fetchBountyPreview(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -197,7 +197,7 @@ let closure_13 = async function _fetchBountyPreview(arg0, value) {
         return obj;
       }
       c2 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp10) {
       c2 = tmp;
       throw tmp10;
@@ -215,7 +215,7 @@ let closure_14 = async function _fetchDockCreativePreview(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -440,7 +440,7 @@ let closure_15 = async function _claimBountyReward(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -559,7 +559,7 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -584,12 +584,12 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
               const obj5 = { type: "AD_CONTENT_DISMISS_BEGIN", adCreativeType, adCreativeId };
               DispatcherDefault.dispatch(obj5);
               c5 = 1;
-              const adMetadataSealed = tmp55(7935).getAdMetadataSealed(tmp54, adCreativeId);
-              const tmp55Result = tmp55(7935);
-              const adTrafficMetadataSealed = tmp55(7935).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
-              const tmp55Result3 = tmp55(7935);
-              const questPlacementFromQuestContent = tmp55(7935).getQuestPlacementFromQuestContent(tmp54);
-              const HTTP = tmp55(1271).HTTP;
+              const adMetadataSealed = tmp55(7940).getAdMetadataSealed(tmp54, adCreativeId);
+              const tmp55Result = tmp55(7940);
+              const adTrafficMetadataSealed = tmp55(7940).getAdTrafficMetadataSealed(tmp54, undefined, adCreativeId);
+              const tmp55Result3 = tmp55(7940);
+              const questPlacementFromQuestContent = tmp55(7940).getQuestPlacementFromQuestContent(tmp54);
+              const HTTP = tmp55(1275).HTTP;
               const request = { url: Endpoints.QUESTS_CREATIVES_DISMISS(adCreativeId), body: null, rejectWithError: false };
               let tmp42 = null;
               if (null != adMetadataSealed) {
@@ -651,7 +651,7 @@ let closure_16 = async function _dismissAdContent(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 let closure_9 = new LoggerDefault("BountyActionCreators");
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/BountyActionCreators.tsx");

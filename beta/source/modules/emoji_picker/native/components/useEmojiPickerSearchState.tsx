@@ -1,19 +1,81 @@
-// Module ID: 10546
-// Function ID: 10547
+// Module ID: 10447
+// Function ID: 10448
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5676, 1248, 2024, 2]
-// Exports: default
+// Dependencies: [32, 19, 5678, 558, 568, 1252, 2028, 2]
 
-// Module 10546 (useEmojiPickerSearchState)
+// Module 10447 (useEmojiPickerSearchState)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
+
+const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");
 
-export default function useEmojiPickerSearchState(channel, arg1, intention, bypassPremiumEmojiEntitlement) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, intention, bypassPremiumEmojiEntitlement) => {
+  _require = channel;
+  dependencyMap = arg1;
+  _slicedToArray = intention;
+  noop = bypassPremiumEmojiEntitlement;
+  const cResult = require("c").c(8);
+  const ref = noop.useRef("");
+  let obj = require("c");
+  [tmp4, closure_5] = noop.useState(null);
+  if (cResult[0] === bypassPremiumEmojiEntitlement) {
+    if (cResult[1] === arg1) {
+      if (cResult[2] === channel) {
+        if (cResult[3] === intention) {
+          let tmp5 = cResult[4];
+        }
+        if (cResult[5] === tmp5) {
+          if (cResult[6] === tmp4) {
+            let tmp6 = cResult[7];
+          }
+          return tmp6;
+        }
+        let obj2 = { handleTextChange: tmp5, searchQueryRef: ref, searchResults: tmp4 };
+        cResult[5] = tmp5;
+        cResult[6] = tmp4;
+        cResult[7] = obj2;
+        tmp6 = obj2;
+      }
+    }
+  }
+  const fn = function h(arr) {
+    channel = arr;
+    if ("" !== arr) {
+      let substr = arr;
+      if (":" === arr[0]) {
+        substr = arr.slice(1);
+      }
+      const FrecencyUserSettingsActionCreators = channel(2028).FrecencyUserSettingsActionCreators;
+      const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
+      const obj2 = { channel, query: substr, count: 0, intention, bypassPremiumEmojiEntitlement };
+      dependencyMap = ref.searchWithoutFetchingLatest(obj2);
+      channel(1252).batchUpdates(() => {
+        ref.current = current;
+        closure_2_5(closure_1);
+      });
+      const obj3 = channel(1252);
+    } else {
+      channel(1252).batchUpdates(() => {
+        ref.current = "";
+        closure_1_5(null);
+        const result = closure_1.set(0);
+      });
+      const obj = channel(1252);
+    }
+  };
+  cResult[0] = bypassPremiumEmojiEntitlement;
+  cResult[1] = arg1;
+  cResult[2] = channel;
+  cResult[3] = intention;
+  cResult[4] = fn;
+  tmp5 = fn;
+}) : ((channel, arg1, intention, bypassPremiumEmojiEntitlement) => {
   dependencyMap = arg1;
   _slicedToArray = intention;
   noop = bypassPremiumEmojiEntitlement;
@@ -29,23 +91,23 @@ export default function useEmojiPickerSearchState(channel, arg1, intention, bypa
       if (":" === arr[0]) {
         substr = arr.slice(1);
       }
-      const FrecencyUserSettingsActionCreators = channel(2024).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = channel(2028).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
       const obj2 = { channel, query: substr, count: 0, intention, bypassPremiumEmojiEntitlement };
       dependencyMap = ref.searchWithoutFetchingLatest(obj2);
-      channel(1248).batchUpdates(() => {
+      channel(1252).batchUpdates(() => {
         ref.current = current;
         closure_5(closure_1);
       });
-      const obj3 = channel(1248);
+      const obj3 = channel(1252);
     } else {
-      channel(1248).batchUpdates(() => {
+      channel(1252).batchUpdates(() => {
         ref.current = "";
         closure_1_5(null);
         const result = closure_1.set(0);
       });
-      const obj = channel(1248);
+      const obj = channel(1252);
     }
   }, items);
   return obj;
-};
+});

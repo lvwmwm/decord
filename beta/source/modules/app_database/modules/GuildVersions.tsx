@@ -1,15 +1,15 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7894
+// Function ID: 7895
 // Name: GuildVersions
-// Dependencies: [32, 5, 2063, 3, 2070, 1370, 2]
+// Dependencies: [32, 5, 2067, 3, 2074, 1374, 2]
 
-// Module 7889 (GuildVersions)
+// Module 7894 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 let closure_6 = new LoggerDefault("GuildVersions");
@@ -78,7 +78,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

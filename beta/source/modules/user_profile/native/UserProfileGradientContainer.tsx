@@ -1,20 +1,40 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 11406
+// Function ID: 11407
 // Name: UserProfileGradientContainer
-// Dependencies: [19, 21, 8508, 5198, 2]
+// Dependencies: [19, 21, 558, 568, 8513, 5198, 2]
 
-// Module 11378 (UserProfileGradientContainer)
+// Module 11406 (UserProfileGradientContainer)
+import c from "c" /* 568 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8508 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8513 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGradientContainer.tsx");
 
-export default noop.memo((arg0) => {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(4);
+  ({ containerStyle, children, primaryColor, secondaryColor, fallbackBackground } = arg0);
+  const userProfileGradientColors = useUserProfileGradientColors.useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground);
+  if (cResult[0] === children) {
+    if (cResult[1] === userProfileGradientColors) {
+      if (cResult[2] === containerStyle) {
+        let tmp4 = cResult[3];
+      }
+      return tmp4;
+    }
+  }
+  const tmp5 = jsx(LinearGradientDefault, { colors: userProfileGradientColors, style: containerStyle, children });
+  cResult[0] = children;
+  cResult[1] = userProfileGradientColors;
+  cResult[2] = containerStyle;
+  cResult[3] = tmp5;
+  tmp4 = tmp5;
+}) : ((arg0) => {
   ({ primaryColor, secondaryColor, fallbackBackground, containerStyle, children } = arg0);
   const colors = useUserProfileGradientColors.useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground);
   return jsx(LinearGradientDefault, { colors, style, children });
-});
+}));

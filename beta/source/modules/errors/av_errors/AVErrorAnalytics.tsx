@@ -1,24 +1,24 @@
-// Module ID: 18310
-// Function ID: 18311
+// Module ID: 18313
+// Function ID: 18314
 // Name: AVErrorAnalytics
-// Dependencies: [32, 4794, 4801, 4802, 2041, 1992, 4779, 4806, 2095, 4795, 1074, 4781, 9686, 4808, 4885, 12, 7983, 9696, 1358, 4750, 1241, 2]
+// Dependencies: [32, 4796, 4803, 4804, 2045, 1996, 4781, 4808, 2099, 4797, 1078, 4783, 9681, 4810, 4887, 12, 7988, 9695, 1362, 4752, 1245, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 18310 (AVErrorAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4750 */;
-import VideoQualityStats from "VideoQualityStats" /* 7983 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9696 */;
+// Module 18313 (AVErrorAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1362 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4752 */;
+import VideoQualityStats from "VideoQualityStats" /* 7988 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9695 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4794 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4802 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import RTCRegionStore from "RTCRegionStore" /* 4806 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4795 */;
+import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4796 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4804 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import RTCRegionStore from "RTCRegionStore" /* 4808 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
 
 const require = globalThis.__r;
 
@@ -76,9 +76,9 @@ function getCurrentScreenshareCaptureMethod(mediaEngineConnectionId) {
   }
   return null;
 }
-const getSystemAnalyticsInfo = fn(4801).getSystemAnalyticsInfo;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const Constants = fn(4781);
+const getSystemAnalyticsInfo = fn(4803).getSystemAnalyticsInfo;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const Constants = fn(4783);
 ({ MediaEngineContextTypes: closure_14, SIMULCAST_HQ_QUALITY: closure_15 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/errors/av_errors/AVErrorAnalytics.tsx");
@@ -183,7 +183,7 @@ export const sendAVErrorAnalyticsEvent = function sendAVErrorAnalyticsEvent(erro
     }
     tmp26 = streamApplication;
   }
-  const state = underlyingError.getState();
+  state = underlyingError.getState();
   ({ resolution: closure_21, fps: closure_22 } = state);
   let obj = require("AVError");
   const runningGameAnalytics = require("GameAnalyticsUtils").getRunningGameAnalytics(tmp26);

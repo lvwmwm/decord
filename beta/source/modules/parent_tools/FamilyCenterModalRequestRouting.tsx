@@ -1,11 +1,11 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12046
+// Function ID: 12047
 // Name: FamilyCenterModalRequestRouting
-// Dependencies: [5, 7780, 7781, 2]
+// Dependencies: [5, 7785, 7786, 2]
 // Exports: resolveConnectionPrereqTarget
 
-// Module 12170 (FamilyCenterModalRequestRouting)
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7781 */;
+// Module 12046 (FamilyCenterModalRequestRouting)
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7786 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 function getConnectionPrereqTarget(teen_identity) {
@@ -41,7 +41,7 @@ let closure_6 = async function _resolveConnectionPrereqTarget(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -93,7 +93,7 @@ let closure_6 = async function _resolveConnectionPrereqTarget(arg0, value) {
   }
 };
 const frozen = Object.freeze({ PREREQ_LOADING: "PREREQ_LOADING", CONFIRM_AGE: "CONFIRM_AGE", VERIFYING: "VERIFYING", REQUEST: "REQUEST", SENT: "SENT", ERROR: "ERROR", INVALID_CODE: "INVALID_CODE", MUST_BE_ADULT: "MUST_BE_ADULT", TEEN_SCAN: "TEEN_SCAN" });
-let obj = { section: frozen.ERROR, params: { failureCode: fn(7780).FamilyCenterFailureCode.GENERIC_ERROR } };
+let obj = { section: frozen.ERROR, params: { failureCode: fn(7785).FamilyCenterFailureCode.GENERIC_ERROR } };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterModalRequestRouting.tsx");
 

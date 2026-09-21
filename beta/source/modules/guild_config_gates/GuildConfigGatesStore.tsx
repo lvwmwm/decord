@@ -1,11 +1,11 @@
-// Module ID: 18076
-// Function ID: 18077
+// Module ID: 18079
+// Function ID: 18080
 // Name: GuildConfigGatesStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 18076 (GuildConfigGatesStore)
+// Module 18079 (GuildConfigGatesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const dependencyMap = {};
 const Store = initializeDefault.Store;

@@ -1,12 +1,12 @@
-// Module ID: 4650
-// Function ID: 4651
+// Module ID: 4653
+// Function ID: 4654
 // Name: GuildBoostSlotStore
-// Dependencies: [4420, 504, 573, 2]
+// Dependencies: [4424, 504, 577, 2]
 
-// Module 4650 (GuildBoostSlotStore)
+// Module 4653 (GuildBoostSlotStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 function handleGuildBoostsUpdate(guildBoostSlot) {
   guildBoostSlot = guildBoostSlot.guildBoostSlot;

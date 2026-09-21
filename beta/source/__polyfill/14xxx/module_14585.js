@@ -1,19 +1,10 @@
 // Module ID: 14585
 // Function ID: 14586
-// Dependencies: [14581]
+// Dependencies: [14586, 14590]
 
 // Module 14585
-import _mod14581 from "module_14581" /* 14581 */;
+import _mod14586 from "module_14586" /* 14586 */;
+import _mod14590 from "module_14590" /* 14590 */;
 
 
-export default !_mod14581(() => {
-  const fn = () => {
-
-  };
-  const bindResult = fn.bind();
-  let hasOwnPropertyResult = typeof bindResult !== "function";
-  if (typeof bindResult === "function") {
-    hasOwnPropertyResult = bindResult.hasOwnProperty("prototype");
-  }
-  return hasOwnPropertyResult;
-});
+export default (arg0) => _mod14586(_mod14590(arg0));

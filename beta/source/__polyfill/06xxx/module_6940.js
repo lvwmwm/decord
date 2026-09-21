@@ -1,57 +1,79 @@
 // Module ID: 6940
 // Function ID: 6941
-// Dependencies: [1637, 4491, 6929, 6941, 6902]
+// Dependencies: [6915, 6923, 6920, 6922, 6895]
+// Exports: updateHandlers
 
 // Module 6940
-import cancelAnimation from "cancelAnimation" /* 1637 */;
-import reactNativeWorkletsCompat from "reactNativeWorkletsCompat" /* 4491 */;
-import tagMessage from "tagMessage" /* 6902 */;
-import ghQueueMicrotask from "ghQueueMicrotask" /* 6929 */;
-import _mod6941 from "module_6941" /* 6941 */;
+import handlerIDToTag from "handlerIDToTag" /* 6895 */;
+import convertToHandlerTag from "convertToHandlerTag" /* 6915 */;
+import RNGestureHandlerModuleDefault from "RNGestureHandlerModule" /* 6920 */;
+import transformIntoHandlerTags from "transformIntoHandlerTags" /* 6922 */;
 
-try {
-  const _module = cancelAnimation;
-  try {
-    const _module1 = reactNativeWorkletsCompat;
-    if (_module1 != null) {
-      const fn = function t() {
+const require = globalThis.__r;
 
-      };
-      fn.__closure = {};
-      fn.__workletHash = 1792171573139;
-      fn.__initData = { code: "function pnpm_reanimatedWrapperTs1(){}" };
-      _module1.scheduleOnUI(fn);
+require = arg1;
+importDefault = arg2;
+const dependencyMap = arg6;
+
+export const updateHandlers = function updateHandlers(attachedGestures, prepare, arg2) {
+  _require = attachedGestures;
+  closure_1 = arg2;
+  prepare.prepare();
+  for (let num = 0; num < arg2.length; num = num + 1) {
+    let tmp2 = attachedGestures.attachedGestures[num];
+    let obj = require("convertToHandlerTag");
+    let result = obj.checkGestureCallbacksForWorklets(tmp2);
+    if (arg2[num].handlerTag !== tmp2.handlerTag) {
+      ({ handlerTag: arg2[num].handlerTag, handlerTag: arg2[num].handlers.handlerTag } = tmp2);
     }
-    const _module2 = ghQueueMicrotask;
-    _module2.ghQueueMicrotask(() => {
-      const NativeProxy = _mod6941.NativeProxy;
-      if (!NativeProxy.installUIRuntimeBindings()) {
-        const _console = console;
-        console.warn(tagMessage.tagMessage("Failed to install UI runtime bindings. Please report this at https://github.com/software-mansion/react-native-gesture-handler/issues."));
-        const tmpResult = tagMessage;
-      }
-    });
-    let useSharedValue;
-    if (_module != null) {
-      useSharedValue = _module.useSharedValue;
-    }
-    let setGestureState = undefined === _module;
-    if (!setGestureState) {
-      setGestureState = _module.setGestureState;
-    }
-    if (!setGestureState) {
-      const fn2 = function o() {
-        console.warn(tagMessage.tagMessage("Please use newer version of react-native-reanimated in order to control state of the gestures."));
-      };
-      const obj = { tagMessage: tagMessage.tagMessage };
-      fn2.__closure = obj;
-      fn2.__workletHash = 3596069664305;
-      fn2.__initData = { code: "function pnpm_reanimatedWrapperTs2(){const{tagMessage}=this.__closure;console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}" };
-      _module.setGestureState = fn2;
-      const obj2 = { code: "function pnpm_reanimatedWrapperTs2(){const{tagMessage}=this.__closure;console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}" };
-    }
-    exports.Reanimated = _module;
-  } catch (err) {
   }
-} catch (err) {
-}
+  attachedGestures = attachedGestures.attachedGestures;
+  require("ghQueueMicrotask").ghQueueMicrotask(() => {
+    let arr2;
+    if (attachedGestures.isMounted) {
+      let arr = attachedGestures;
+      if (attachedGestures === tmp.attachedGestures) {
+        let tmp21 = arr.length !== closure_1.length;
+        let num = 0;
+        let tmp22 = tmp21;
+        if (0 < closure_1.length) {
+          do {
+            let tmp3 = attachedGestures[num];
+            arr2 = closure_1;
+            let tmp4 = tmp3.handlers.gestureId !== closure_1[num].handlers.gestureId;
+            let flag = tmp21;
+            let tmp2 = attachedGestures;
+            if (tmp4) {
+              let tmp6 = arr2[num].shouldUseReanimated || tmp3.shouldUseReanimated;
+              tmp4 = tmp6;
+            }
+            if (tmp4) {
+              flag = true;
+            }
+            tmp3.config = arr2[num].config;
+            tmp3.handlers = arr2[num].handlers;
+            let obj = RNGestureHandlerModuleDefault;
+            let obj2 = transformIntoHandlerTags;
+            let result = obj.setGestureHandlerConfig(tmp3.handlerTag, obj2.filterConfig(tmp3.config, convertToHandlerTag.ALLOWED_PROPS));
+            let obj3 = RNGestureHandlerModuleDefault;
+            let obj4 = convertToHandlerTag;
+            let configureRelationsResult = obj3.configureRelations(tmp3.handlerTag, obj4.extractGestureRelations(tmp3));
+            let obj5 = handlerIDToTag;
+            let registerHandlerResult = obj5.registerHandler(tmp3.handlerTag, tmp3, tmp3.config.testId);
+            num = num + 1;
+            tmp21 = flag;
+            tmp22 = flag;
+            arr = tmp2;
+          } while (num < arr2.length);
+        }
+        if (attachedGestures.animatedHandlers) {
+          if (tmp22) {
+            const found = arr.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+            tmp23.animatedHandlers.value = found.map((handlers) => handlers.handlers);
+          }
+        }
+        const result1 = transformIntoHandlerTags.scheduleFlushOperations();
+      }
+    }
+  });
+};

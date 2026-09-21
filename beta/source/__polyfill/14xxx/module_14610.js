@@ -1,22 +1,16 @@
 // Module ID: 14610
 // Function ID: 14611
-// Dependencies: [14585]
+// Dependencies: [14591, 14611]
 
 // Module 14610
-import _mod14585 from "module_14585" /* 14585 */;
+import _mod14591 from "module_14591" /* 14591 */;
+import _mod14611 from "module_14611" /* 14611 */;
 
-if (_mod14585) {
-  let fn = call.bind(call);
-} else {
-  fn = () => {
-    const apply = call.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
-    } else {
-      applyArgumentsResult = apply(tmp, arguments);
-    }
-    return applyArgumentsResult;
-  };
-}
 
-export default fn;
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod14591(arg0[arg1])) {
+    tmp4 = _mod14611(tmp);
+  }
+  return tmp4;
+};

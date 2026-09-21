@@ -1,32 +1,70 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17509
+// Function ID: 17510
 // Name: useSoundGrid
-// Dependencies: [32, 19, 2041, 2063, 4395, 2095, 1372, 5224, 5226, 1374, 5232, 4649, 17527, 504, 4414, 17528, 9759, 17529, 5203, 17530, 2]
-// Exports: default, useSearchCategories
+// Dependencies: [32, 19, 2045, 2067, 4399, 2099, 1376, 5226, 5228, 1378, 5234, 4652, 17510, 558, 568, 504, 4418, 17511, 9755, 17512, 17513, 5203, 2]
 
-// Module 17526 (useSoundGrid)
-import SoundboardTypes from "SoundboardTypes" /* 5232 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9759 */;
-import useSoundOrganizer from "useSoundOrganizer" /* 17527 */;
-import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 17530 */;
+// Module 17509 (useSoundGrid)
+import c from "c" /* 568 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4652 */;
+import SoundboardTypes from "SoundboardTypes" /* 5234 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9755 */;
+import useSoundOrganizer from "useSoundOrganizer" /* 17510 */;
+import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 17513 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserStore from "UserStore" /* 1372 */;
-import SoundboardStore from "SoundboardStore" /* 5224 */;
-
-const require = globalThis.__r;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserStore from "UserStore" /* 1376 */;
+import SoundboardStore from "SoundboardStore" /* 5226 */;
 
 require = fn;
-function createSoundItems(items, fn) {
+function createSoundItems(items, sortSoundsFn) {
   let arr = items;
-  if (null != fn) {
-    arr = fn(items);
+  if (null != sortSoundsFn) {
+    arr = sortSoundsFn(items);
   }
-  return arr.map((sound, index) => ({ type: categories(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+  return arr.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+}
+function _addSectionForPotentialSoundIds(sectionType) {
+  ({ sections, allSounds, potentialSoundIdsForSection } = sectionType);
+  sectionType = sectionType.sectionType;
+  const obj = {};
+  const items = [];
+  items[HermesBuiltin.arraySpread(sectionType.guildIds, 0)] = closure_1_11;
+  while (tmp !== undefined) {
+    let items2 = allSounds.get(tmp2);
+    if (items2 == null) {
+      items2 = [];
+    }
+    function _loop(soundId) {
+      if (null != potentialSoundIdsForSection.find((item) => item === soundId.soundId)) {
+        obj[soundId.soundId] = soundId;
+      }
+    }
+    for (const item10029 of items2) {
+      let _loopResult = _loop(item10029);
+      continue;
+    }
+    continue;
+  }
+  const items1 = [];
+  for (const item10039 of potentialSoundIdsForSection) {
+    let tmp7 = obj[item10039];
+    if (null != tmp7) {
+      let arr = items1.push(tmp8);
+    }
+    continue;
+  }
+  const arr4 = createSoundItems(items1, sectionType.sortSoundsFn);
+  if (arr4.length > 0) {
+    const obj2 = { key: sectionType, categoryInfo: null, items: null };
+    const obj3 = { type: sectionType };
+    obj2.categoryInfo = obj3;
+    obj2.items = arr4;
+    sections.push(obj2);
+  }
 }
 function addTopSoundsSection(items, stateFromStores3, arg2) {
   ({ allSounds, topSoundIds } = arg2);
@@ -55,14 +93,483 @@ function addTopSoundsSection(items, stateFromStores3, arg2) {
     items.push(obj2);
   }
 }
-const SoundboardConstants = fn(5226);
+function addGuildsSections(arg0) {
+  ({ sections, guilds, allSounds } = arg0);
+  ({ currentGuildId, hasNitro, sortSoundsFn } = arg0);
+  const iter = guilds[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (nextResult.id !== currentGuildId) {
+      let tmp9 = createSoundItems;
+      let items = allSounds.get(tmp2.id);
+      if (items == null) {
+        items = [];
+      }
+      let tmp9Result = tmp9(items, sortSoundsFn);
+      if (tmp9Result.length > 0) {
+        let obj = { categoryInfo: null, key: null, items: null };
+        let obj2 = { type: null, guild: null, isNitroLocked: null };
+        obj2.type = SoundboardTypes.SoundboardSoundGridSectionType.GUILD;
+        obj2.guild = tmp2;
+        obj2.isNitroLocked = !hasNitro;
+        obj.categoryInfo = obj2;
+        obj.key = tmp2.id;
+        obj.items = tmp3;
+        let arr = sections.push(obj);
+      }
+    }
+    continue;
+  }
+}
+function addCurrentGuildSection(items, stateFromStores1, arg2) {
+  ({ allSounds, filterOutEmptyCurrentGuild, sortSoundsFn, currentGuildHasAddPermissions } = arg2);
+  items = allSounds.get(stateFromStores1.id);
+  if (items == null) {
+    items = [];
+  }
+  let sortSoundsFnResult = items;
+  if (null != sortSoundsFn) {
+    sortSoundsFnResult = sortSoundsFn(items);
+  }
+  const mapped = sortSoundsFnResult.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+  const tmp3 = items.length < GuildBoostingUtils.getMaxSoundboardSlots(stateFromStores1) && currentGuildHasAddPermissions;
+  let tmp5 = !tmp3;
+  if (!tmp3) {
+    tmp5 = !tmp4;
+  }
+  if (!tmp5) {
+    tmp5 = filterOutEmptyCurrentGuild;
+  }
+  if (!tmp5) {
+    const obj2 = { type: tmp(5234).SoundboardSoundItemType.ADD_SOUND, guild: stateFromStores1 };
+    mapped.push(obj2);
+  }
+  if (filterOutEmptyCurrentGuild) {
+    filterOutEmptyCurrentGuild = tmp4;
+  }
+  if (!filterOutEmptyCurrentGuild) {
+    const obj3 = { categoryInfo: null, key: null, items: null };
+    const obj4 = { type: tmp(5234).SoundboardSoundGridSectionType.GUILD, guild: stateFromStores1, isNitroLocked: false };
+    obj3.categoryInfo = obj4;
+    obj3.key = stateFromStores1.id;
+    obj3.items = mapped;
+    items.push(obj3);
+  }
+}
+const SoundboardConstants = fn(5228);
 ({ DEFAULT_SOUND_GUILD_ID: closure_11, EMPTY_SOUND_LIST: closure_12 } = SoundboardConstants);
-const PremiumTypes = fn(1374).PremiumTypes;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/soundboard/useSoundGrid.tsx");
-
-export default function useSoundGrid(guild_id) {
-  _require = guild_id;
+const PremiumTypes = fn(1378).PremiumTypes;
+fn(558);
+const ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  _require = arg0;
+  const cResult = require("c").c(62);
+  if (cResult[0] !== arg1) {
+    let obj2 = arg1;
+    if (undefined === arg1) {
+      obj2 = {};
+    }
+    cResult[0] = arg1;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const filterOutEmptyCurrentGuild = tmp4.filterOutEmptyCurrentGuild;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [UserStore];
+    const fn = function b() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[2] = items;
+    cResult[3] = fn;
+    let tmp6 = fn;
+    let tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+    tmp6 = cResult[3];
+  }
+  let obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(tmp5, tmp6);
+  if (cResult[4] !== stateFromStores) {
+    const isPremiumResult = require("PremiumUtils").isPremium(stateFromStores, PremiumTypes.TIER_2);
+    cResult[4] = stateFromStores;
+    cResult[5] = isPremiumResult;
+    const obj4 = require("PremiumUtils");
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [SoundboardStore];
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[6] = items1;
+    cResult[7] = O;
+    let tmp14 = O;
+    let tmp13 = items1;
+  } else {
+    tmp13 = cResult[6];
+    tmp14 = cResult[7];
+  }
+  const tmpResult = require("initialize");
+  const tmp16 = stateFromStores1(require("initialize").useStateFromStoresArray(tmp13, tmp14), 4);
+  [r10065, tmp17] = tmp16;
+  importDefault = tmp17;
+  const tmpResult7 = require("initialize");
+  const soundOrganizer = require("useSoundOrganizer").useSoundOrganizer();
+  const tmpResult8 = require("useSoundOrganizer");
+  sortedGuildIdsForSoundboard = require("useSortedGuildIdsForSoundboard").useSortedGuildIdsForSoundboard(arg0, false);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [guild];
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[8] = items2;
+    let tmp20 = items2;
+  } else {
+    tmp20 = cResult[8];
+  }
+  if (cResult[9] !== sortedGuildIdsForSoundboard) {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+    cResult[9] = sortedGuildIdsForSoundboard;
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[10] = N;
+    const tmp22 = N;
+  } else {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+  }
+  const tmpResult9 = require("useSortedGuildIdsForSoundboard");
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(tmp20, tmp22);
+  if (cResult[11] !== stateFromStores) {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+    let result = require("PremiumUtils").canUseSoundboardEverywhere(stateFromStores);
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[11] = stateFromStores;
+    cResult[12] = result;
+    const obj9 = require("PremiumUtils");
+  } else {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+  }
+  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+    const items3 = [guild];
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[13] = items3;
+    const tmp26 = items3;
+  } else {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+  }
+  if (arg0 != null) {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+  }
+  if (cResult[14] !== undefined) {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+    if (arg0 != null) {
+      class N {
+        constructor() {
+          items = [];
+          closure_0 = items;
+          item = closure_2.forEach((item) => {
+            guild = guild.getGuild(item);
+            if (null != guild) {
+              items.push(guild);
+            }
+          });
+          return items;
+        }
+      }
+    }
+    const fn2 = function j() {
+      guild_id = undefined;
+      if (guild_id != null) {
+        guild_id = guild_id.guild_id;
+      }
+      return GuildStore.getGuild(guild_id);
+    };
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[14] = tmp28;
+    cResult[15] = fn2;
+    const tmp27 = fn2;
+  } else {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+  }
+  const tmpResult10 = require("initialize");
+  stateFromStores1 = require("initialize").useStateFromStores(tmp26, tmp27);
+  if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+    const items4 = [closure_7];
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[16] = items4;
+    const tmp30 = items4;
+  } else {
+    class N {
+      constructor() {
+        items = [];
+        closure_0 = items;
+        item = closure_2.forEach((item) => {
+          guild = guild.getGuild(item);
+          if (null != guild) {
+            items.push(guild);
+          }
+        });
+        return items;
+      }
+    }
+  }
+  if (cResult[17] !== stateFromStores1) {
+    class K {
+      constructor() {
+        obj = closure_0(closure_2[18]);
+        return obj.getManageResourcePermissions(closure_3).canCreateExpressions;
+      }
+    }
+    const items5 = [stateFromStores1];
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[17] = stateFromStores1;
+    cResult[18] = K;
+    cResult[19] = items5;
+    let tmp32 = items5;
+    const tmp31 = K;
+  } else {
+    class K {
+      constructor() {
+        obj = closure_0(closure_2[18]);
+        return obj.getManageResourcePermissions(closure_3).canCreateExpressions;
+      }
+    }
+    tmp32 = cResult[19];
+  }
+  const tmpResult11 = require("initialize");
+  const stateFromStores2 = require("initialize").useStateFromStores(tmp30, tmp31, tmp32);
+  if (cResult[20] === tmp17) {
+    class K {
+      constructor() {
+        obj = closure_0(closure_2[18]);
+        return obj.getManageResourcePermissions(closure_3).canCreateExpressions;
+      }
+    }
+  }
+  if (cResult[23] !== tmp17) {
+    class Z {
+      constructor(arg0) {
+        return !closure_1.has(arg0);
+      }
+    }
+    cResult[23] = tmp17;
+    class O {
+      constructor() {
+        items = [, , , ];
+        items[0] = closure_1_10.getSounds();
+        items[1] = closure_1_10.getFavorites();
+        items[2] = closure_1_10.getFrequentlyUsedSoundIds();
+        items[3] = closure_1_10.isFetching();
+        return items;
+      }
+    }
+    cResult[24] = Z;
+    const tmp34 = Z;
+  } else {
+    class Z {
+      constructor(arg0) {
+        return !closure_1.has(arg0);
+      }
+    }
+  }
+  const found = arr3.filter(tmp34);
+  const substr = found.slice(0, 3);
+  cResult[20] = tmp17;
+  cResult[21] = tmp16[2];
+  cResult[22] = substr;
+}) : ((unlockedCustomSoundCount) => {
+  _require = unlockedCustomSoundCount;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -81,11 +588,11 @@ export default function useSoundGrid(guild_id) {
   let items = [sortedGuildIdsForSoundboard];
   const stateFromStores = require("initialize").useStateFromStores(items, () => sortedGuildIdsForSoundboard.getCurrentUser());
   let obj2 = require("initialize");
-  const isPremiumResult = flag(flag2[14]).isPremium(stateFromStores, stateFromStores2.TIER_2);
+  const isPremiumResult = flag(flag2[16]).isPremium(stateFromStores, stateFromStores2.TIER_2);
   _slicedToArray = isPremiumResult;
-  let obj3 = flag(flag2[14]);
-  let items1 = [stateFromStoresArray];
-  let tmp3 = _slicedToArray(require("initialize").useStateFromStoresArray(items1, () => {
+  const obj3 = flag(flag2[16]);
+  const items1 = [stateFromStoresArray];
+  const tmp3 = _slicedToArray(require("initialize").useStateFromStoresArray(items1, () => {
     const items = [stateFromStoresArray.getSounds(), stateFromStoresArray.getFavorites(), stateFromStoresArray.getFrequentlyUsedSoundIds(), stateFromStoresArray.isFetching()];
     return items;
   }), 4);
@@ -96,9 +603,9 @@ export default function useSoundGrid(guild_id) {
   let obj4 = require("initialize");
   const soundOrganizer = require("useSoundOrganizer").useSoundOrganizer();
   let obj5 = require("useSoundOrganizer");
-  sortedGuildIdsForSoundboard = require("useSortedGuildIdsForSoundboard").useSortedGuildIdsForSoundboard(guild_id, false);
+  sortedGuildIdsForSoundboard = require("useSortedGuildIdsForSoundboard").useSortedGuildIdsForSoundboard(unlockedCustomSoundCount, false);
   let obj6 = require("useSortedGuildIdsForSoundboard");
-  let items2 = [closure_6];
+  const items2 = [closure_6];
   stateFromStoresArray = require("initialize").useStateFromStoresArray(items2, () => {
     const items = [];
     const item = sortedGuildIdsForSoundboard.forEach((item) => {
@@ -110,9 +617,9 @@ export default function useSoundGrid(guild_id) {
     return items;
   });
   let obj7 = require("initialize");
-  let result = flag(flag2[14]).canUseSoundboardEverywhere(stateFromStores);
+  let result = flag(flag2[16]).canUseSoundboardEverywhere(stateFromStores);
   c11 = result;
-  let obj8 = flag(flag2[14]);
+  let obj8 = flag(flag2[16]);
   const items3 = [closure_6];
   const stateFromStores1 = require("initialize").useStateFromStores(items3, () => {
     let guild_id;
@@ -142,7 +649,7 @@ export default function useSoundGrid(guild_id) {
     if (channel != null) {
       guild_id = channel.guild_id;
     }
-    let guild;
+    guild = undefined;
     if (null != guild_id) {
       guild = closure_6.getGuild(channel.guild_id);
     }
@@ -152,7 +659,7 @@ export default function useSoundGrid(guild_id) {
   const config = TopSoundboardSoundsMobileExperiment.getConfig({ location: "useSoundGrid" });
   const enabled = config.enabled;
   const topSoundsFirst = config.topSoundsFirst;
-  flag(flag2[18])(() => {
+  flag(flag2[21])(() => {
     if (enabled) {
       let id;
       if (stateFromStores3 != null) {
@@ -176,13 +683,13 @@ export default function useSoundGrid(guild_id) {
   return allSounds.useMemo(() => {
     unlockedCustomSoundCount = 0;
     lockedCustomSoundCount = 0;
-    let items = [];
+    const items = [];
     if (flag2) {
       value = allSounds.get(closure_2_11);
       if (value == null) {
-        value = closure_2_12;
+        value = __initData;
       }
-      let obj2 = { key: SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
+      const obj2 = { key: SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
       const obj4 = { type: SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS };
       obj2.categoryInfo = obj4;
       const sortSoundsOldestToNewestCreationDate3 = useSoundOrganizer.sortSoundsOldestToNewestCreationDate;
@@ -190,17 +697,17 @@ export default function useSoundGrid(guild_id) {
       if (null != sortSoundsOldestToNewestCreationDate3) {
         result = sortSoundsOldestToNewestCreationDate3(value);
       }
-      obj2.items = result.map((sound, index) => ({ type: categories(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+      obj2.items = result.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
       items.push(obj2);
       const obj5 = { categories: items, availableSounds: null, isFetching: null, soundCounts: null };
-      let value5 = allSounds.get(closure_2_11);
-      if (value5 == null) {
-        value5 = closure_2_12;
+      let value4 = allSounds.get(closure_2_11);
+      if (value4 == null) {
+        value4 = __initData;
       }
-      obj5.availableSounds = value5;
+      obj5.availableSounds = value4;
       obj5.isFetching = isFetching;
       obj5.soundCounts = { favoriteSoundCount: 0, unlockedCustomSoundCount: 0, lockedCustomSoundCount: 0 };
-      let obj16 = obj5;
+      let obj15 = obj5;
     } else {
       let tmp = enabled;
       let tmp2 = enabled;
@@ -211,7 +718,7 @@ export default function useSoundGrid(guild_id) {
         tmp2 = topSoundsFirst;
       }
       if (tmp2) {
-        let obj = { allSounds, topSoundIds: memo1 };
+        const obj = { allSounds, topSoundIds: memo1 };
         addTopSoundsSection(items, stateFromStores3, obj);
       }
       const obj6 = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds, potentialSoundIdsForSection: null, sectionType: null, sortSoundsFn: null };
@@ -219,45 +726,7 @@ export default function useSoundGrid(guild_id) {
       obj6.potentialSoundIdsForSection = Array.from(size);
       obj6.sectionType = SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES;
       obj6.sortSoundsFn = useSoundOrganizer.sortSoundsOldestToNewestCreationDate;
-      (function _addSectionForPotentialSoundIds(sectionType) {
-        ({ sections, allSounds, potentialSoundIdsForSection } = sectionType);
-        sectionType = sectionType.sectionType;
-        const obj = {};
-        const items = [];
-        items[HermesBuiltin.arraySpread(sectionType.guildIds, 0)] = closure_1_11;
-        while (tmp !== undefined) {
-          let items2 = allSounds.get(tmp2);
-          if (items2 == null) {
-            items2 = [];
-          }
-          function _loop(soundId) {
-            if (null != potentialSoundIdsForSection.find((item) => item === soundId.soundId)) {
-              obj[soundId.soundId] = soundId;
-            }
-          }
-          for (const item10029 of items2) {
-            let _loopResult = _loop(item10029);
-            continue;
-          }
-          continue;
-        }
-        const items1 = [];
-        for (const item10039 of potentialSoundIdsForSection) {
-          let tmp7 = obj[item10039];
-          if (null != tmp7) {
-            let arr = items1.push(tmp8);
-          }
-          continue;
-        }
-        const arr4 = stateFromStores3(items1, sectionType.sortSoundsFn);
-        if (arr4.length > 0) {
-          const obj2 = { key: sectionType, categoryInfo: null, items: null };
-          const obj3 = { type: sectionType };
-          obj2.categoryInfo = obj3;
-          obj2.items = arr4;
-          sections.push(obj2);
-        }
-      })(obj6);
+      _addSectionForPotentialSoundIds(obj6);
       if (tmp) {
         tmp = null != stateFromStores3;
       }
@@ -269,110 +738,50 @@ export default function useSoundGrid(guild_id) {
         addTopSoundsSection(items, stateFromStores3, obj7);
       }
       if (undefined !== stateFromStores1) {
-        let tmp28 = flag;
-        let value6 = obj3.get(tmp23.id);
-        if (value6 == null) {
-          value6 = [];
-        }
-        let tmp57Result = value6;
-        if (null != soundOrganizer) {
-          tmp57Result = tmp57(value6);
-        }
-        const mapped = tmp57Result.map((sound, index) => ({ type: categories(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
-        const tmp24 = value6.length < tmp13(4649).getMaxSoundboardSlots(tmp23) && stateFromStores2;
-        let tmp26 = !tmp24;
-        if (!tmp24) {
-          tmp26 = !tmp25;
-        }
-        if (!tmp26) {
-          tmp26 = tmp28;
-        }
-        if (!tmp26) {
-          const obj8 = { type: tmp13(5232).SoundboardSoundItemType.ADD_SOUND, guild: tmp23 };
-          mapped.push(obj8);
-        }
-        if (tmp28) {
-          tmp28 = tmp25;
-        }
-        if (!tmp28) {
-          const obj9 = { categoryInfo: null, key: null, items: null };
-          const obj10 = { type: tmp13(5232).SoundboardSoundGridSectionType.GUILD, guild: tmp23, isNitroLocked: false };
-          obj9.categoryInfo = obj10;
-          obj9.key = tmp23.id;
-          obj9.items = mapped;
-          items.push(obj9);
-        }
-        const tmp13Result = tmp13(4649);
+        const obj8 = { currentGuildHasAddPermissions: stateFromStores2, allSounds: obj3, filterOutEmptyCurrentGuild: flag, sortSoundsFn: soundOrganizer };
+        addCurrentGuildSection(items, tmp24, obj8);
       }
       if (!c11) {
-        let value7 = obj3.get(closure_2_11);
-        if (value7 == null) {
-          value7 = closure_2_12;
+        let value5 = obj3.get(closure_2_11);
+        if (value5 == null) {
+          value5 = __initData;
         }
-        const obj11 = { key: tmp13(5232).SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
-        const obj12 = { type: tmp13(5232).SoundboardSoundGridSectionType.DEFAULTS };
-        obj11.categoryInfo = obj12;
-        const sortSoundsOldestToNewestCreationDate = tmp13(17527).sortSoundsOldestToNewestCreationDate;
-        let result1 = value7;
+        const obj9 = { key: tmp14(5234).SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
+        const obj10 = { type: tmp14(5234).SoundboardSoundGridSectionType.DEFAULTS };
+        obj9.categoryInfo = obj10;
+        const sortSoundsOldestToNewestCreationDate = tmp14(17510).sortSoundsOldestToNewestCreationDate;
+        let result1 = value5;
         if (null != sortSoundsOldestToNewestCreationDate) {
-          result1 = sortSoundsOldestToNewestCreationDate(value7);
+          result1 = sortSoundsOldestToNewestCreationDate(value5);
         }
-        obj11.items = result1.map((sound, index) => ({ type: categories(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
-        items.push(obj11);
+        obj9.items = result1.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+        items.push(obj9);
       }
-      const obj13 = { sections: items, guilds: stateFromStoresArray, currentGuildId: null, allSounds: null, hasNitro: null, sortSoundsFn: null };
+      const obj11 = { sections: items, guilds: stateFromStoresArray, currentGuildId: null, allSounds: null, hasNitro: null, sortSoundsFn: null };
       let id;
       if (stateFromStores1 != null) {
-        id = tmp23.id;
+        id = tmp24.id;
       }
-      obj13.currentGuildId = id;
-      obj13.allSounds = allSounds;
-      obj13.hasNitro = hasNitro;
-      obj13.sortSoundsFn = soundOrganizer;
-      (function addGuildsSections(arg0) {
-        ({ sections, guilds, allSounds } = arg0);
-        ({ currentGuildId, hasNitro, sortSoundsFn } = arg0);
-        const iter = guilds[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let tmp2 = nextResult;
-          if (nextResult.id !== currentGuildId) {
-            let tmp9 = stateFromStores3;
-            let items = allSounds.get(tmp2.id);
-            if (items == null) {
-              items = [];
-            }
-            let tmp9Result = tmp9(items, sortSoundsFn);
-            if (tmp9Result.length > 0) {
-              let obj = { categoryInfo: null, key: null, items: null };
-              let obj2 = { type: null, guild: null, isNitroLocked: null };
-              obj2.type = closure_0(flag2[10]).SoundboardSoundGridSectionType.GUILD;
-              obj2.guild = tmp2;
-              obj2.isNitroLocked = !hasNitro;
-              obj.categoryInfo = obj2;
-              obj.key = tmp2.id;
-              obj.items = tmp3;
-              let arr = sections.push(obj);
-            }
-          }
-          continue;
-        }
-      })(obj13);
+      obj11.currentGuildId = id;
+      obj11.allSounds = allSounds;
+      obj11.hasNitro = hasNitro;
+      obj11.sortSoundsFn = soundOrganizer;
+      addGuildsSections(obj11);
       if (tmp30) {
-        let value8 = obj3.get(closure_2_11);
-        if (value8 == null) {
-          value8 = closure_2_12;
+        let value6 = obj3.get(closure_2_11);
+        if (value6 == null) {
+          value6 = __initData;
         }
-        const obj14 = { key: tmp13(5232).SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
-        const obj15 = { type: tmp13(5232).SoundboardSoundGridSectionType.DEFAULTS };
-        obj14.categoryInfo = obj15;
-        const sortSoundsOldestToNewestCreationDate2 = tmp13(17527).sortSoundsOldestToNewestCreationDate;
-        let result2 = value8;
+        const obj12 = { key: tmp14(5234).SoundboardSoundGridSectionType.DEFAULTS, categoryInfo: null, items: null };
+        const obj13 = { type: tmp14(5234).SoundboardSoundGridSectionType.DEFAULTS };
+        obj12.categoryInfo = obj13;
+        const sortSoundsOldestToNewestCreationDate2 = tmp14(17510).sortSoundsOldestToNewestCreationDate;
+        let result2 = value6;
         if (null != sortSoundsOldestToNewestCreationDate2) {
-          result2 = sortSoundsOldestToNewestCreationDate2(value8);
+          result2 = sortSoundsOldestToNewestCreationDate2(value6);
         }
-        obj14.items = result2.map((sound, index) => ({ type: categories(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
-        items.push(obj14);
+        obj12.items = result2.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+        items.push(obj12);
       }
       const item = items.forEach((categoryInfo) => {
         if (categoryInfo.categoryInfo.type === closure_0(flag2[10]).SoundboardSoundGridSectionType.GUILD) {
@@ -383,28 +792,65 @@ export default function useSoundGrid(guild_id) {
           }
         }
       });
-      obj16 = { categories: items, availableSounds: null, isFetching: null, soundCounts: null };
+      obj15 = { categories: items, availableSounds: null, isFetching: null, soundCounts: null };
       const _Array2 = Array;
-      obj16.availableSounds = Array.from(allSounds.values()).flat();
-      obj16.isFetching = isFetching;
-      const obj18 = { favoriteSoundCount: size.size, unlockedCustomSoundCount, lockedCustomSoundCount };
-      obj16.soundCounts = obj18;
-      const arr6 = Array.from(allSounds.values());
+      obj15.availableSounds = Array.from(allSounds.values()).flat();
+      obj15.isFetching = isFetching;
+      const obj16 = { favoriteSoundCount: size.size, unlockedCustomSoundCount, lockedCustomSoundCount };
+      obj15.soundCounts = obj16;
+      const arr4 = Array.from(allSounds.values());
       tmp30 = c11;
     }
-    return obj16;
+    return obj15;
   }, items10);
-};
-export const useSearchCategories = function useSearchCategories(categories, arg1, arg2) {
-  closure_0 = categories;
+});
+const size = fn(2);
+let result = size.fileFinishedImporting("modules/soundboard/useSoundGrid.tsx");
+
+export default tmp3;
+export const useSearchCategories = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr, arg2) => {
+  let SEARCH = dependencyMap;
+  const cResult = c.c(5);
+  if (arg2.length <= 0) {
+    return arg0;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { type: tmp(5234).SoundboardSoundGridSectionType.SEARCH };
+      cResult[0] = obj2;
+      let first = obj2;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== arr) {
+      const mapped = arr.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+      cResult[1] = arr;
+      cResult[2] = mapped;
+      let tmp4 = mapped;
+    } else {
+      tmp4 = cResult[2];
+    }
+    if (cResult[3] !== tmp4) {
+      const obj3 = { key: null, categoryInfo: null, items: null };
+      SEARCH = tmp(5234).SoundboardSoundGridSectionType.SEARCH;
+      obj3.key = SEARCH;
+      obj3.categoryInfo = first;
+      obj3.items = tmp4;
+      first = [obj3];
+      cResult[3] = tmp4;
+      cResult[4] = first;
+    }
+  }
+}) : ((arg0, arg1, arg2) => {
+  closure_0 = arg0;
   closure_1 = arg1;
-  let items = [categories, arg2.length, arg1];
+  let items = [arg0, arg2.length, arg1];
   return noop.useMemo(() => {
     if (length.length > 0) {
       const obj = { key: SoundboardTypes.SoundboardSoundGridSectionType.SEARCH, categoryInfo: null, items: null };
       const obj2 = { type: SoundboardTypes.SoundboardSoundGridSectionType.SEARCH };
       obj.categoryInfo = obj2;
-      obj.items = closure_1.map((sound, index) => ({ type: categories(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
+      obj.items = closure_1.map((sound, index) => ({ type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index }));
       const items = [obj];
       let tmp = items;
     } else {
@@ -412,4 +858,4 @@ export const useSearchCategories = function useSearchCategories(categories, arg1
     }
     return tmp;
   }, items);
-};
+});

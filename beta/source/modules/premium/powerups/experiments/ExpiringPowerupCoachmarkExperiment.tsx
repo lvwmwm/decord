@@ -1,18 +1,29 @@
-// Module ID: 12761
-// Function ID: 12762
+// Module ID: 12670
+// Function ID: 12671
 // Name: ExpiringPowerupCoachmarkExperiment
-// Dependencies: [1435, 2]
-// Exports: useExpiringPowerupCoachmarkEnabled
+// Dependencies: [1439, 558, 568, 2]
 
-// Module 12761 (ExpiringPowerupCoachmarkExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 12670 (ExpiringPowerupCoachmarkExperiment)
+import c from "c" /* 568 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
-const tmp2 = apex_ApexExperimentDefault({ name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
-let closure_0 = tmp2;
+require = fn;
+let tmp2 = apex_ApexExperimentDefault({ name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
+let closure_2 = tmp2;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/experiments/ExpiringPowerupCoachmarkExperiment.tsx");
 
 export default tmp2;
-export const useExpiringPowerupCoachmarkEnabled = function useExpiringPowerupCoachmarkEnabled(useFeaturedExpiringPowerup) {
-  return closure_0.useConfig({ location: useFeaturedExpiringPowerup }).enabled;
-};
+export const useExpiringPowerupCoachmarkEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return closure_2.useConfig(tmp2).enabled;
+}) : ((location) => closure_2.useConfig({ location }).enabled);

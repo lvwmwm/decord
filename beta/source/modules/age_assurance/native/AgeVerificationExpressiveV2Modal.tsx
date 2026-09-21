@@ -1,16 +1,15 @@
-// Module ID: 8714
-// Function ID: 8715
+// Module ID: 8719
+// Function ID: 8720
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 8683, 1074, 21, 1380, 8715, 8717, 8719, 1364, 8721, 4756, 576, 8723, 8724, 8710, 4968, 8684, 8696, 8697, 8726, 8693, 8694, 5184, 5909, 4752, 8682, 2108, 1177, 5186, 1115, 3034, 5904, 5822, 8727, 8840, 7454, 4959, 5841, 8841, 8842, 1255, 7245, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 8688, 1078, 21, 1384, 8720, 8722, 8724, 1368, 8726, 4758, 580, 8728, 8729, 8715, 4970, 8689, 8701, 8702, 8731, 8698, 8699, 5186, 5907, 4754, 8687, 2112, 1181, 5188, 1119, 3038, 5903, 5822, 8732, 8845, 7456, 4961, 5839, 8846, 8847, 558, 568, 1259, 7246, 2]
 
-// Module 8714 (AgeVerificationExpressiveV2Modal)
-import nativeDefault from "native" /* 576 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8696 */;
+// Module 8719 (AgeVerificationExpressiveV2Modal)
+import nativeDefault from "native" /* 580 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import NavigatorHeader from "NavigatorHeader" /* 5839 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8689 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8701 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -63,7 +62,7 @@ function MethodsScreen(onClose) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -171,24 +170,24 @@ function MethodsScreen(onClose) {
     if (obj.isAgeVerified()) {
       if (tmpResult.getIsAgeVerificationCustomTabAwaitingResult()) {
         if (!tmpResult6.getIsAgeVerificationCustomTabOpen()) {
-          const result = tmp(8696).releaseAgeVerificationCustomTab();
+          const result = tmp(8701).releaseAgeVerificationCustomTab();
           callback();
-          const tmpResult7 = tmp(8696);
+          const tmpResult7 = tmp(8701);
         }
-        tmpResult6 = tmp(8696);
+        tmpResult6 = tmp(8701);
       }
-      tmpResult = tmp(8696);
-      let isAgeVerificationAuthSessionAwaitingResult = tmp(8697).getIsAgeVerificationAuthSessionAwaitingResult();
+      tmpResult = tmp(8701);
+      let isAgeVerificationAuthSessionAwaitingResult = tmp(8702).getIsAgeVerificationAuthSessionAwaitingResult();
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        isAgeVerificationAuthSessionAwaitingResult = !tmp(8697).getIsAgeVerificationAuthSessionOpen();
-        const tmpResult9 = tmp(8697);
+        isAgeVerificationAuthSessionAwaitingResult = !tmp(8702).getIsAgeVerificationAuthSessionOpen();
+        const tmpResult9 = tmp(8702);
       }
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        const result1 = tmp(8697).closeAgeVerificationAuthSession();
+        const result1 = tmp(8702).closeAgeVerificationAuthSession();
         callback();
-        const tmpResult10 = tmp(8697);
+        const tmpResult10 = tmp(8702);
       }
-      const tmpResult8 = tmp(8697);
+      const tmpResult8 = tmp(8702);
     }
   }, items4);
   const obj6 = require("AgeVerificationCustomTab");
@@ -370,11 +369,11 @@ function MethodsScreen(onClose) {
   return tmp19Result;
 }
 const ActivityIndicator = fn(17).ActivityIndicator;
-const TRUSTED_PROVIDERS_URL = fn(8683).TRUSTED_PROVIDERS_URL;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
+const TRUSTED_PROVIDERS_URL = fn(8688).TRUSTED_PROVIDERS_URL;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" }, container: { alignSelf: "stretch" }, header: { textAlign: "center" }, loadingContainer: null, emptyContainer: null, footer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 obj2.loadingContainer = { marginTop: nativeDefault.space.PX_24 };
@@ -383,16 +382,167 @@ obj2.emptyContainer = { marginTop: nativeDefault.space.PX_24 };
 obj2.footer = { textAlign: "center" };
 let closure_11 = createStyles.createStyles(obj2);
 const constants = { METHODS: "METHODS", GOOGLE_WALLET_VERIFICATION: "GOOGLE_WALLET_VERIFICATION", APP_STORE_VERIFICATION: "APP_STORE_VERIFICATION" };
+const ReactCompilerGating = fn(558);
+let obj5 = { marginTop: nativeDefault.space.PX_24 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationExpressiveV2Modal.tsx");
 
-export default function AgeVerificationExpressiveV2Modal(entryPoint) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((entryPoint) => {
+  const cResult = entryPoint(568).c(12);
+  entryPoint = entryPoint.entryPoint;
+  ({ onClose, onComplete } = entryPoint);
+  const tmp4 = closure_11();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const v4Result = tmp(1259).v4();
+    cResult[0] = v4Result;
+    let first = v4Result;
+    const tmpResult = tmp(1259);
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === entryPoint) {
+    if (cResult[2] === onClose) {
+      if (cResult[3] === onComplete) {
+        if (cResult[4] === tmp4) {
+          let tmp7 = cResult[5];
+        }
+        if (cResult[6] !== entryPoint) {
+          class V {
+            constructor() {
+              obj = closure_0(closure_2[19]);
+              result = obj.trackAgeVerificationModalViewed(closure_1, closure_0(closure_2[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
+              return;
+            }
+          }
+          const items = [first, entryPoint];
+          cResult[6] = entryPoint;
+          cResult[7] = V;
+          cResult[8] = items;
+          let tmp9 = items;
+          const tmp8 = V;
+        } else {
+          class V {
+            constructor() {
+              obj = closure_0(closure_2[19]);
+              result = obj.trackAgeVerificationModalViewed(closure_1, closure_0(closure_2[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
+              return;
+            }
+          }
+          tmp9 = cResult[8];
+        }
+        const effect = noop.useEffect(tmp8, tmp9);
+        const _Symbol = Symbol;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          class V {
+            constructor() {
+              obj = closure_0(closure_2[19]);
+              result = obj.trackAgeVerificationModalViewed(closure_1, closure_0(closure_2[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
+              return;
+            }
+          }
+          const stringResult = obj10.string(tmp(1119).t["13/7kX"]);
+          cResult[9] = stringResult;
+          const tmp12 = stringResult;
+        } else {
+          class V {
+            constructor() {
+              obj = closure_0(closure_2[19]);
+              result = obj.trackAgeVerificationModalViewed(closure_1, closure_0(closure_2[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
+              return;
+            }
+          }
+        }
+        if (cResult[10] !== tmp7) {
+          class V {
+            constructor() {
+              obj = closure_0(closure_2[19]);
+              result = obj.trackAgeVerificationModalViewed(closure_1, closure_0(closure_2[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
+              return;
+            }
+          }
+          const obj2 = { screens: tmp7, initialRouteName: constants.METHODS, headerBackTitle: tmp12 };
+          const tmp16 = closure_9(tmp(7246).Navigator, obj2);
+          cResult[10] = tmp7;
+          cResult[11] = tmp16;
+          const tmp14 = tmp16;
+        } else {
+          class V {
+            constructor() {
+              obj = closure_0(closure_2[19]);
+              result = obj.trackAgeVerificationModalViewed(closure_1, closure_0(closure_2[19]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
+              return;
+            }
+          }
+        }
+        return tmp14;
+      }
+    }
+  }
+  closure_129_0 = first;
+  closure_129_1 = entryPoint;
+  closure_129_2 = onClose;
+  closure_129_3 = onComplete;
+  function closeModal() {
+    onClose(onComplete[39]).pop();
+    closure_2();
+  }
+  closure_129_4 = closeModal;
+  const obj3 = {};
+  const obj4 = {
+    headerStyle: tmp4.headerStyle,
+    headerTitle() {
+      return null;
+    },
+    headerLeft: null,
+    render: null
+  };
+  const obj = entryPoint(568);
+  obj4.headerLeft = entryPoint(5839).getHeaderCloseButton(closeModal);
+  obj4.render = function render(arg0, navigation) {
+    return closure_2_9(MethodsScreen, { entryPoint, navigation, onClose: closeModal, onComplete, modalSessionId });
+  };
+  obj3[constants.METHODS] = obj4;
+  const obj5 = {
+    headerStyle: tmp4.headerStyle,
+    headerTitle() {
+      return null;
+    },
+    headerLeft: null,
+    render: null
+  };
+  const tmpResult4 = entryPoint(5839);
+  obj5.headerLeft = entryPoint(5839).getHeaderBackButton();
+  obj5.render = function render() {
+    return closure_2_9(onClose(onComplete[41]), { onClose: closeModal, onComplete, modalSessionId });
+  };
+  obj3[constants.GOOGLE_WALLET_VERIFICATION] = obj5;
+  const obj6 = {
+    headerStyle: tmp4.headerStyle,
+    headerTitle() {
+      return null;
+    },
+    headerLeft: null,
+    render: null
+  };
+  const tmpResult5 = entryPoint(5839);
+  obj6.headerLeft = entryPoint(5839).getHeaderBackButton();
+  obj6.render = function render() {
+    return closure_2_9(onClose(onComplete[42]), { onClose: closeModal, modalSessionId });
+  };
+  obj3[constants.APP_STORE_VERIFICATION] = obj6;
+  cResult[1] = entryPoint;
+  cResult[2] = onClose;
+  cResult[3] = onComplete;
+  cResult[4] = tmp4;
+  cResult[5] = obj3;
+  tmp7 = obj3;
+}) : ((entryPoint) => {
   entryPoint = entryPoint.entryPoint;
   const onClose = entryPoint.onClose;
   const onComplete = entryPoint.onComplete;
   const tmp = closure_11();
   closure_3 = tmp;
-  const memo = noop.useMemo(() => entryPoint(onComplete[43]).v4(), []);
+  const memo = noop.useMemo(() => entryPoint(onComplete[45]).v4(), []);
   const items = [tmp, memo, entryPoint, onClose, onComplete];
   const items1 = [memo, entryPoint];
   const memo1 = noop.useMemo(() => {
@@ -448,5 +598,5 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
   const intl = entryPoint(onComplete[32]).intl;
   obj.headerBackTitle = intl.string(entryPoint(onComplete[32]).t["13/7kX"]);
-  return closure_9(entryPoint(onComplete[44]).Navigator, obj);
-};
+  return closure_9(entryPoint(onComplete[46]).Navigator, obj);
+});

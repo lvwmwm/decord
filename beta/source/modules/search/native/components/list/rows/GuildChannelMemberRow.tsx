@@ -1,18 +1,33 @@
-// Module ID: 17153
-// Function ID: 17154
+// Module ID: 17156
+// Function ID: 17157
 // Name: GuildChannelMemberRow
-// Dependencies: [19, 21, 11130, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 11172, 2]
 
-// Module 17153 (GuildChannelMemberRow)
-import UserRowDefault from "UserRow" /* 11130 */;
+// Module 17156 (GuildChannelMemberRow)
+import c from "c" /* 568 */;
+import UserRowDefault from "UserRow" /* 11172 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelMemberRow.tsx");
 
-export default function GuildChannelMemberRow(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== arg0) {
+    const obj2 = {};
+    const merged = Object.assign(arg0);
+    const tmp10 = jsx(UserRowDefault, {});
+    cResult[0] = arg0;
+    cResult[1] = tmp10;
+    let tmp3 = tmp10;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((arg0) => {
   const merged = Object.assign(arg0);
   return jsx(UserRowDefault, {});
-};
+});

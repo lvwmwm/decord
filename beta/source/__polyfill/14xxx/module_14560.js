@@ -1,7 +1,10 @@
 // Module ID: 14560
 // Function ID: 14561
 // Dependencies: []
+// Exports: shouldPolyfill
 
 // Module 14560
 
-export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];
+export const shouldPolyfill = function shouldPolyfill() {
+  return !("supportedValuesOf" in Intl);
+};

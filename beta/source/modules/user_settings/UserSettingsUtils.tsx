@@ -1,15 +1,15 @@
-// Module ID: 1222
-// Function ID: 1223
+// Module ID: 1226
+// Function ID: 1227
 // Name: user_settings/UserSettingsUtils
-// Dependencies: [32, 1084, 1074, 1186, 1221, 1223, 1215, 12, 2]
+// Dependencies: [32, 1088, 1078, 1190, 1225, 1227, 1219, 12, 2]
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, mutateUserChannelSettingsInternal, mutateUserGuildSettings, mutateUserGuildSettingsInternal, protoToB64, protoToB64WithType, runMigrations, serializeUsageHistory
 
-// Module 1222 (user_settings/UserSettingsUtils)
+// Module 1226 (user_settings/UserSettingsUtils)
 import _modDef12 from "module_12" /* 12 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import user_settings_shared from "user_settings_shared" /* 1215 */;
-import frecency_user_settings from "frecency_user_settings" /* 1221 */;
-import ProtoUtils from "ProtoUtils" /* 1223 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
+import user_settings_shared from "user_settings_shared" /* 1219 */;
+import frecency_user_settings from "frecency_user_settings" /* 1225 */;
+import ProtoUtils from "ProtoUtils" /* 1227 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -27,9 +27,9 @@ function b64ToProto(arg0, arg1) {
     }
   }
 }
-const ZERO_STRING_GUILD_ID = fn(1074).ZERO_STRING_GUILD_ID;
-let obj = { [PRELOADED_USER_SETTINGS]: fn(1186).PreloadedUserSettings, [FRECENCY_AND_FAVORITES_SETTINGS]: fn(1221).FrecencyUserSettings };
-({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = fn(1084).UserSettingsTypes);
+const ZERO_STRING_GUILD_ID = fn(1078).ZERO_STRING_GUILD_ID;
+let obj = { [PRELOADED_USER_SETTINGS]: fn(1190).PreloadedUserSettings, [FRECENCY_AND_FAVORITES_SETTINGS]: fn(1225).FrecencyUserSettings };
+({ PRELOADED_USER_SETTINGS, FRECENCY_AND_FAVORITES_SETTINGS } = fn(1088).UserSettingsTypes);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsUtils.tsx");
 

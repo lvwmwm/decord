@@ -1,11 +1,11 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8682
+// Function ID: 8683
 // Name: StageInstanceActionCreators
-// Dependencies: [5, 1074, 1271, 2]
+// Dependencies: [5, 1078, 1275, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8677 (StageInstanceActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 8682 (StageInstanceActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -30,7 +30,7 @@ let closure_5 = async function _updateStageInstance(arg0, topic, privacy_level) 
     return value.body;
   })();
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/StageInstanceActionCreators.tsx");
 

@@ -1,24 +1,41 @@
-// Module ID: 9418
-// Function ID: 9419
+// Module ID: 9416
+// Function ID: 9417
 // Name: useMessageMaxLength
-// Dependencies: [1372, 1074, 4414, 504, 2]
-// Exports: default, getMaxMessageLength
+// Dependencies: [1376, 1078, 4418, 558, 568, 504, 2]
+// Exports: getMaxMessageLength
 
-// Module 9418 (useMessageMaxLength)
+// Module 9416 (useMessageMaxLength)
 import initialize from "initialize" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ MAX_MESSAGE_LENGTH_PREMIUM: closure_4, MAX_MESSAGE_LENGTH: hasOwnProperty } = Constants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/useMessageMaxLength.tsx");
 
-export default function useMessageMaxLength() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      return PremiumUtilsDefault.canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_1_4 : closure_1_5;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [UserStore];
   return initialize.useStateFromStores(items, () => PremiumUtilsDefault.canUseIncreasedMessageLength(currentUser.getCurrentUser()) ? closure_1_4 : closure_1_5);
-};
+});
 export const getMaxMessageLength = function getMaxMessageLength() {
   return PremiumUtilsDefault.canUseIncreasedMessageLength(UserStore.getCurrentUser()) ? React4 : hasOwnProperty;
 };

@@ -1,23 +1,76 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 14977
+// Function ID: 14978
 // Name: AccountEmailSetting
-// Dependencies: [1372, 8233, 504, 5838, 11725, 1115, 2]
+// Dependencies: [1376, 8238, 558, 568, 504, 5836, 11594, 1119, 2]
 
-// Module 14988 (AccountEmailSetting)
+// Module 14977 (AccountEmailSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5838 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5836 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      currentUser = currentUser.getCurrentUser();
+      let email;
+      if (currentUser != null) {
+        email = currentUser.email;
+      }
+      return email;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [UserStore];
+  return initialize.useStateFromStores(items, () => {
+    currentUser = currentUser.getCurrentUser();
+    let email;
+    if (currentUser != null) {
+      email = currentUser.email;
+    }
+    return email;
+  });
+});
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["w/qqKK"]);
   },
-  parent: fn(8233).MobileUserSettings.ACCOUNT,
-  useTrailing: function useAccountEmailSettingTrailing() {
+  parent: fn(8238).MobileUserSettings.ACCOUNT,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [UserStore];
+      const fn = function s() {
+        currentUser = currentUser.getCurrentUser();
+        let email;
+        if (currentUser != null) {
+          email = currentUser.email;
+        }
+        return email;
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [UserStore];
     return initialize.useStateFromStores(items, () => {
       currentUser = currentUser.getCurrentUser();
@@ -27,7 +80,7 @@ const pressable = SettingBuilders.createPressable({
       }
       return email;
     });
-  },
+  }),
   onPress: function onAccountEmailSettingPress() {
     EmailVerificationModalActionCreatorsDefault.open(true);
   },

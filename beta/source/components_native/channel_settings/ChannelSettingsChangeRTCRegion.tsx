@@ -1,26 +1,25 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17325
+// Function ID: 17326
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [718, 19, 2041, 17278, 21, 4756, 576, 4466, 1115, 8903, 5905, 5902, 8871, 504, 38, 2]
-// Exports: default
+// Dependencies: [722, 19, 2045, 17281, 21, 4758, 580, 4471, 1119, 10630, 5900, 5901, 8876, 558, 568, 504, 38, 2]
 
-// Module 17322 (ChannelSettingsChangeRTCRegion)
+// Module 17325 (ChannelSettingsChangeRTCRegion)
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import TableRadioGroup from "TableRadioGroup" /* 5902 */;
-import TableRadioRow from "TableRadioRow" /* 5905 */;
-import Form from "Form" /* 8871 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8903 */;
-import _toArray from "_toArray" /* 718 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import TableRadioRow from "TableRadioRow" /* 5900 */;
+import TableRadioGroup from "TableRadioGroup" /* 5901 */;
+import Form from "Form" /* 8876 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10630 */;
+import _toArray from "_toArray" /* 722 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RegionStore from "RegionStore" /* 17278 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import RegionStore from "RegionStore" /* 17281 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 const AUTOMATIC_RTC_REGION = "AUTOMATIC_RTC_REGION";
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_8 = createStyles.createLegacyClassComponentStyles(obj2);
 const PureComponent = noop.PureComponent;
@@ -83,7 +82,7 @@ prototype["handleSetRegion"] = function handleSetRegion(arg0) {
     c0 = null;
     tmp = null;
   }
-  self(8903).updateChannel({ rtcRegion: tmp });
+  self(10630).updateChannel({ rtcRegion: tmp });
   self.setState({ submitting: true }, () => {
     ChannelSettingsActionCreatorsDefault.saveChannel(self.props.channel.id, { rtcRegion });
   });
@@ -108,14 +107,49 @@ prototype["render"] = function render() {
   const tmp = closure_8(this.context);
   return jsx(Form.Form, { style: closure_8(this.context).form, children: this.renderRegions() });
 };
-ChannelSettingsChangeRTCRegion.contextType = fn(4466).ThemeContext;
+ChannelSettingsChangeRTCRegion.contextType = fn(4471).ThemeContext;
+const ReactCompilerGating = fn(558);
+const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeRTCRegion.tsx");
 
-export default function ConnectedChannelSettingsChangeRTCRegion(channelId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const cResult = channelId(568).c(5);
+  channelId = channelId.channelId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function o() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = channelId(568);
+  const stateFromStores = channelId(504).useStateFromStores(first, tmp6);
+  _modDef38(null != stateFromStores, "ConnectedChannelSettingsChangeRTCRegion: channel cannot be undefined");
+  if (cResult[3] !== stateFromStores) {
+    const obj2 = { channel: stateFromStores };
+    const tmp12 = <ChannelSettingsChangeRTCRegion channel={stateFromStores} />;
+    cResult[3] = stateFromStores;
+    cResult[4] = tmp12;
+    let tmp9 = tmp12;
+  } else {
+    tmp9 = cResult[4];
+  }
+  return tmp9;
+}) : ((channelId) => {
   channelId = channelId.channelId;
   const items = [ChannelStore];
   const channel = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   _modDef38(null != channel, "ConnectedChannelSettingsChangeRTCRegion: channel cannot be undefined");
   return <ChannelSettingsChangeRTCRegion channel={channel} />;
-};
+});

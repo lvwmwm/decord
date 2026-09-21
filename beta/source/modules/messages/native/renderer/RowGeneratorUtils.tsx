@@ -1,27 +1,27 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8382
+// Function ID: 8383
 // Name: RowGeneratorUtils
-// Dependencies: [17, 4748, 2041, 2063, 4749, 8191, 1074, 4756, 4605, 576, 7509, 4978, 1477, 2]
+// Dependencies: [17, 4750, 2045, 2067, 4751, 8196, 1078, 4758, 4608, 580, 7511, 4980, 1481, 2]
 
-// Module 8377 (RowGeneratorUtils)
-import nativeDefault from "native" /* 576 */;
-import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1477 */;
-import ColorUtils from "ColorUtils" /* 4605 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7509 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 8382 (RowGeneratorUtils)
+import nativeDefault from "native" /* 580 */;
+import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1481 */;
+import ColorUtils from "ColorUtils" /* 4608 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7511 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
-const MessageConstants = fn(4749);
+const MessageConstants = fn(4751);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: metroRequire, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_7 } = MessageConstants);
-const SwipeActionsType = fn(8191).SwipeActionsType;
-const Constants = fn(1074);
+const SwipeActionsType = fn(8196).SwipeActionsType;
+const Constants = fn(1078);
 ({ MessageFlags: closure_9, MessageTypes: c10 } = Constants);
-let createStyles = fn(4756);
+let createStyles = fn(4758);
 const result = createStyles.experimental_createToken(() => ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BRAND_500, 0.1));
-createStyles = fn(4756);
+createStyles = fn(4758);
 const nativeStyleProperties = createStyles.createNativeStyleProperties({ ephemeralBackgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: nativeDefault.colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: nativeDefault.colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: nativeDefault.unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: nativeDefault.unsafe_rawColors.RED_345, editingColor: nativeDefault.colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT });
 const MediaManager = fn(17).NativeModules.MediaManager;
 const set = new Set(MediaManager.getConstants().supportedExtensions);
@@ -29,7 +29,7 @@ const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorUtils.tsx");
 
 export default {
-  getImageSrc(proxy_url, width, height, arg3) {
+  getImageSrc(proxy_url, c7, c72, arg3) {
     const endsWithResult = proxy_url.endsWith(".webp");
     let hasItem = !endsWithResult;
     if (!endsWithResult) {
@@ -46,7 +46,7 @@ export default {
     if (flag) {
       str3 = "png";
     }
-    return utils_ImageUtilsDefault.getMobileOptimizedSrc(proxy_url, width, height, str3);
+    return utils_ImageUtilsDefault.getMobileOptimizedSrc(proxy_url, c7, c72, str3);
   },
   createBackgroundHighlight(message) {
     message = message.message;
@@ -66,7 +66,7 @@ export default {
           if (channel != null) {
             guild_id = channel.guild_id;
           }
-          const guild = GuildStore.getGuild(guild_id);
+          guild = GuildStore.getGuild(guild_id);
           if (tmp3Result.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (guild != null) {
@@ -81,12 +81,12 @@ export default {
               if (tmp3Result2.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
-              tmp3Result2 = tmp3(4978);
+              tmp3Result2 = tmp3(4980);
             }
             const obj6 = { backgroundColor: officialMessageColor | React5, gutterColor: ephemeralGutterColor };
             return obj6;
           }
-          tmp3Result = tmp3(7509);
+          tmp3Result = tmp3(7511);
         }
         obj = GuildOfficialMessageUtils;
       }

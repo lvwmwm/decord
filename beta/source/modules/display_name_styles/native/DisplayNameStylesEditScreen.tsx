@@ -1,27 +1,188 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15595
+// Function ID: 15596
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 4748, 1372, 1074, 1608, 21, 1391, 4756, 576, 1485, 504, 15607, 8435, 4989, 4690, 1392, 1389, 9997, 11163, 11164, 558, 15608, 15609, 15610, 15611, 1241, 4724, 8436, 8433, 4723, 15614, 1980, 15616, 15617, 15622, 15625, 1115, 14891, 4466, 4991, 15626, 2872, 4752, 1177, 7454, 1092, 14892, 5186, 9113, 8187, 1612, 4492, 5185, 2]
+// Dependencies: [32, 19, 17, 4750, 1376, 1078, 1612, 21, 1395, 4758, 580, 1489, 504, 15596, 8440, 4991, 4693, 1396, 1393, 9975, 11205, 11206, 560, 15597, 15598, 15599, 15600, 1245, 4726, 8441, 8438, 4725, 15603, 1984, 15605, 15606, 15611, 15614, 1119, 14880, 4471, 4993, 15615, 2876, 4754, 1181, 7456, 1096, 14881, 5188, 9111, 8192, 558, 568, 1616, 4497, 5187, 2]
 // Exports: default
 
-// Module 15606 (DisplayNameStylesEditScreen)
-import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import HapticUtils from "HapticUtils" /* 4724 */;
-import spring from "spring" /* 5185 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8433 */;
+// Module 15595 (DisplayNameStylesEditScreen)
+import discord_common_shallowEqual from "discord_common/shallowEqual" /* 560 */;
+import nativeDefault from "native" /* 580 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1393 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1395 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import HapticUtils from "HapticUtils" /* 4726 */;
+import spring from "spring" /* 5187 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8438 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import UserStore from "UserStore" /* 1372 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-function ApplyButton(onPress) {
+get_ActivityIndicator = fn(17);
+({ View: hasOwnProperty, ScrollView: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const MEDIA_PICKER_SEND_BUTTON_SPRING = fn(1612).MEDIA_PICKER_SEND_BUTTON_SPRING;
+const jsxProd = fn(21);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+let items = [fn(1395).DisplayNameEffect.GRADIENT, fn(1395).DisplayNameEffect.GUMMY, fn(1395).DisplayNameEffect.PRISM];
+const createStyles = fn(4758);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, contentContainer: null, fieldButtonGroup: null, fieldButton: null, fieldButtonBorder: null, fieldButtonLabel: null, fieldButtonChevron: null, fieldButtonTrailing: null, buttonContainer: null };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj2.contentContainer = { padding: nativeDefault.space.PX_16 };
+let obj4 = { padding: nativeDefault.space.PX_16 };
+obj2.fieldButtonGroup = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md };
+let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md };
+obj2.fieldButton = { padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+let obj6 = { padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+obj2.fieldButtonBorder = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+let obj7 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj2.fieldButtonLabel = { flex: 1, marginRight: nativeDefault.space.PX_12 };
+const obj8 = { flex: 1, marginRight: nativeDefault.space.PX_12 };
+obj2.fieldButtonChevron = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
+let obj9 = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
+obj2.fieldButtonTrailing = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj2.buttonContainer = { marginVertical: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_MUTED, gap: nativeDefault.space.PX_16 };
+let closure_15 = createStyles.createStyles(obj2);
+const __initData = { code: "function DisplayNameStylesEditScreenTsx1(){const{visible}=this.__closure;return{pointerEvents:visible?\"box-none\":\"none\"};}" };
+const __initData2 = { code: "function DisplayNameStylesEditScreenTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:\"absolute\",bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:\"column\",justifyContent:\"flex-end\",transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+const __initData3 = { code: "function DisplayNameStylesEditScreenTsx3(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
+const __initData4 = { code: "function DisplayNameStylesEditScreenTsx4(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+const ReactCompilerGating = fn(558);
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  const cResult = onPress(stateFromStores[53]).c(16);
+  onPress = onPress.onPress;
+  const visible = onPress.visible;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [AccessibilityStore];
+    const fn = function l() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const obj = onPress(stateFromStores[53]);
+  stateFromStores = onPress(stateFromStores[12]).useStateFromStores(tmp4, tmp5);
+  const bottom = visible(tmp2[54])().bottom;
+  const tmpResult = onPress(stateFromStores[12]);
+  const fn2 = function p() {
+    let pointerEvents = "none";
+    if (visible) {
+      pointerEvents = "box-none";
+    }
+    return { pointerEvents };
+  };
+  fn2.__closure = { visible };
+  fn2.__workletHash = 16971768742893;
+  fn2.__initData = __initData;
+  const animatedProps = onPress(stateFromStores[55]).useAnimatedProps(fn2);
+  const tmpResult3 = onPress(stateFromStores[55]);
+  const fn3 = function y() {
+    let num = 0;
+    if (visible) {
+      num = 1;
+    }
+    let num2 = 60;
+    if (visible) {
+      num2 = 0;
+    }
+    let num3 = 0.9;
+    if (visible) {
+      num3 = 1;
+    }
+    const rect = { position: "absolute", bottom: 0, left: 0, right: 0, marginHorizontal: nativeDefault.space.PX_16, flexDirection: "column", justifyContent: "flex-end", transform: null, opacity: null };
+    let withSpringResult = num2;
+    if (!stateFromStores) {
+      withSpringResult = spring.withSpring(num2, closure_11);
+    }
+    items = [{ translateY: withSpringResult }, ];
+    let withSpringResult1 = num3;
+    if (!stateFromStores) {
+      withSpringResult1 = spring.withSpring(num3, closure_11);
+    }
+    items[1] = { scale: withSpringResult1 };
+    rect.transform = items;
+    let withSpringResult2 = num;
+    if (!stateFromStores) {
+      withSpringResult2 = spring.withSpring(num, closure_11);
+    }
+    rect.opacity = withSpringResult2;
+    return rect;
+  };
+  const tmpResult4 = onPress(stateFromStores[55]);
+  fn3.__closure = { visible, tokens: visible(stateFromStores[10]), reducedMotion: stateFromStores, withSpring: onPress(stateFromStores[56]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
+  fn3.__workletHash = 16394479325031;
+  fn3.__initData = __initData2;
+  const animatedStyle = tmpResult4.useAnimatedStyle(fn3);
+  if (cResult[2] !== onPress) {
+    const fn4 = function f() {
+      const result = HapticUtils.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      onPress();
+    };
+    cResult[2] = onPress;
+    cResult[3] = fn4;
+    let tmp11 = fn4;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] !== bottom) {
+    let obj3 = { marginBottom: bottom };
+    cResult[4] = bottom;
+    cResult[5] = obj3;
+    let tmp12 = obj3;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(tmp2[38]).intl;
+    const stringResult = intl.string(tmp(tmp2[38]).t["1Qm822"]);
+    cResult[6] = stringResult;
+    let tmp13 = stringResult;
+  } else {
+    tmp13 = cResult[6];
+  }
+  if (cResult[7] !== tmp11) {
+    let obj4 = { variant: "primary", onPress: tmp11, size: "lg", text: tmp13 };
+    const tmp17 = closure_12(tmp(tmp2[49]).Button, obj4);
+    cResult[7] = tmp11;
+    cResult[8] = tmp17;
+    let tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[8];
+  }
+  if (cResult[9] === animatedProps) {
+    if (cResult[10] === tmp12) {
+      if (cResult[11] === tmp15) {
+        let tmp18 = cResult[12];
+      }
+      if (cResult[13] === animatedStyle) {
+        if (cResult[14] === tmp18) {
+          let tmp20 = cResult[15];
+        }
+        return tmp20;
+      }
+      const obj5 = { style: animatedStyle, children: tmp18 };
+      const tmp22 = closure_12(tmp8(tmp2[55]).View, obj5);
+      cResult[13] = animatedStyle;
+      cResult[14] = tmp18;
+      cResult[15] = tmp22;
+      tmp20 = tmp22;
+    }
+  }
+  const tmp19 = closure_12(visible(stateFromStores[55]).View, { style: tmp12, animatedProps, children: tmp15 });
+  cResult[9] = animatedProps;
+  cResult[10] = tmp12;
+  cResult[11] = tmp15;
+  cResult[12] = tmp19;
+  tmp18 = tmp19;
+}) : ((onPress) => {
   onPress = onPress.onPress;
   const visible = onPress.visible;
   let stateFromStores;
@@ -36,10 +197,10 @@ function ApplyButton(onPress) {
     return { pointerEvents };
   };
   fn.__closure = { visible };
-  fn.__workletHash = 2349569076845;
-  fn.__initData = __initData;
-  const animatedProps = onPress(stateFromStores[53]).useAnimatedProps(fn);
-  let obj2 = onPress(stateFromStores[53]);
+  fn.__workletHash = 12831101080623;
+  fn.__initData = __initData3;
+  const animatedProps = onPress(stateFromStores[55]).useAnimatedProps(fn);
+  let obj2 = onPress(stateFromStores[55]);
   const fn2 = function s() {
     let num = 0;
     if (visible) {
@@ -72,10 +233,10 @@ function ApplyButton(onPress) {
     rect.opacity = withSpringResult2;
     return rect;
   };
-  let obj3 = onPress(stateFromStores[53]);
-  fn2.__closure = { visible, tokens: visible(stateFromStores[10]), reducedMotion: stateFromStores, withSpring: onPress(stateFromStores[54]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
-  fn2.__workletHash = 16786362025671;
-  fn2.__initData = __initData2;
+  let obj3 = onPress(stateFromStores[55]);
+  fn2.__closure = { visible, tokens: visible(stateFromStores[10]), reducedMotion: stateFromStores, withSpring: onPress(stateFromStores[56]).withSpring, MEDIA_PICKER_SEND_BUTTON_SPRING };
+  fn2.__workletHash = 4139107659649;
+  fn2.__initData = __initData4;
   const items1 = [onPress];
   const animatedStyle = obj3.useAnimatedStyle(fn2);
   const callback = noop.useCallback(() => {
@@ -83,42 +244,14 @@ function ApplyButton(onPress) {
     onPress();
   }, items1);
   const obj5 = { style: animatedStyle, children: null };
-  const obj6 = { style: { marginBottom: visible(stateFromStores[52])().bottom }, animatedProps, children: null };
+  const obj6 = { style: { marginBottom: visible(stateFromStores[54])().bottom }, animatedProps, children: null };
   const obj7 = { variant: "primary", onPress: callback, size: "lg", text: null };
   const intl = onPress(stateFromStores[38]).intl;
   obj7.text = intl.string(onPress(stateFromStores[38]).t["1Qm822"]);
   obj6.children = closure_12(onPress(stateFromStores[49]).Button, obj7);
-  obj5.children = closure_12(visible(stateFromStores[53]).View, obj6);
-  return closure_12(visible(stateFromStores[53]).View, obj5);
-}
-get_ActivityIndicator = fn(17);
-({ View: hasOwnProperty, ScrollView: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const MEDIA_PICKER_SEND_BUTTON_SPRING = fn(1608).MEDIA_PICKER_SEND_BUTTON_SPRING;
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let items = [fn(1391).DisplayNameEffect.GRADIENT, fn(1391).DisplayNameEffect.GUMMY, fn(1391).DisplayNameEffect.PRISM];
-const createStyles = fn(4756);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, contentContainer: null, fieldButtonGroup: null, fieldButton: null, fieldButtonBorder: null, fieldButtonLabel: null, fieldButtonChevron: null, fieldButtonTrailing: null, buttonContainer: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.contentContainer = { padding: nativeDefault.space.PX_16 };
-let obj4 = { padding: nativeDefault.space.PX_16 };
-obj2.fieldButtonGroup = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md };
-let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.md };
-obj2.fieldButton = { padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-let obj6 = { padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-obj2.fieldButtonBorder = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-let obj7 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-obj2.fieldButtonLabel = { flex: 1, marginRight: nativeDefault.space.PX_12 };
-const obj8 = { flex: 1, marginRight: nativeDefault.space.PX_12 };
-obj2.fieldButtonChevron = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
-let obj9 = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
-obj2.fieldButtonTrailing = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj2.buttonContainer = { marginVertical: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_MUTED, gap: nativeDefault.space.PX_16 };
-let closure_15 = createStyles.createStyles(obj2);
-const __initData = { code: "function DisplayNameStylesEditScreenTsx1(){const{visible}=this.__closure;return{pointerEvents:visible?'box-none':'none'};}" };
-const __initData2 = { code: "function DisplayNameStylesEditScreenTsx2(){const{visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING}=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};}" };
+  obj5.children = closure_12(visible(stateFromStores[55]).View, obj6);
+  return closure_12(visible(stateFromStores[55]).View, obj5);
+});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditScreen.tsx");
 
@@ -303,11 +436,11 @@ export default function DisplayNameStylesEditScreen() {
     const callback2 = obj8.useCallback(() => {
       const result = HapticUtils.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
       if (isTryItOut) {
-        const result1 = tmp(8436).setTryItOutDisplayNameStyles(null);
-        const tmpResult = tmp(8436);
+        const result1 = tmp(8441).setTryItOutDisplayNameStyles(null);
+        const tmpResult = tmp(8441);
       } else {
-        tmp(8433).setPendingChanges({ displayNameStyles: null });
-        const tmpResult2 = tmp(8433);
+        tmp(8438).setPendingChanges({ displayNameStyles: null });
+        const tmpResult2 = tmp(8438);
       }
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_REMOVED);
       navigation.goBack();
@@ -324,7 +457,7 @@ export default function DisplayNameStylesEditScreen() {
       if (showFontsBadge) {
         dismissFontsBadge();
       }
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15614, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15603, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName });
     }, items6);
     if (stateFromStores != null) {
       id1 = stateFromStores.id;
@@ -342,7 +475,7 @@ export default function DisplayNameStylesEditScreen() {
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
-      obj.openLazy(asyncRequireImpl(15616, dependencyMap.paths), "DisplayNameStylesEffectPickerSheet", { userId: id, selectedEffectId: first1, onSelectEffect });
+      obj.openLazy(asyncRequireImpl(15605, dependencyMap.paths), "DisplayNameStylesEffectPickerSheet", { userId: id, selectedEffectId: first1, onSelectEffect });
     }, items7);
     const callback6 = obj8.useCallback(() => {
       if (first1 === DisplayNameEffect.DisplayNameEffect.GUMMY) {
@@ -352,10 +485,10 @@ export default function DisplayNameStylesEditScreen() {
               return callback(navigation(isTryItOut[8]).DisplayNameEffect.GUMMY, arg0);
             }
         };
-        ActionSheetActionCreatorsDefault.openLazy(tmp2(1980)(15617, tmp3.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+        ActionSheetActionCreatorsDefault.openLazy(tmp2(1984)(15606, tmp3.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-        const tmp2Result = tmp2(1980);
+        const tmp2Result = tmp2(1984);
         if (closure_10) {
           const obj4 = {
             selectedColors: memo,
@@ -364,10 +497,10 @@ export default function DisplayNameStylesEditScreen() {
                   return callback(first1, arg0);
                 }
           };
-          openLazy(tmp2Result(15622, tmp3.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+          openLazy(tmp2Result(15611, tmp3.paths), "DisplayNameStylesGradientPickerSheet", obj4);
         } else {
           const obj = { selectedColor: first3, selectedEffectId: tmp, onSelectColor };
-          openLazy(tmp2Result(15625, tmp3.paths), "DisplayNameStylesColorPickerSheet", obj);
+          openLazy(tmp2Result(15614, tmp3.paths), "DisplayNameStylesColorPickerSheet", obj);
         }
       }
     }, items8);
@@ -524,7 +657,7 @@ export default function DisplayNameStylesEditScreen() {
       obj10.children = items9;
       const items23 = [colors(selectedFontId, obj10), ];
       const obj33 = { onPress: displayNameStylesHandleApply, visible: memo1 };
-      items23[1] = closure_12(callback, obj33);
+      items23[1] = closure_12(visibleFontOrder, obj33);
       obj7.children = items23;
       obj6.children = colors(closure_5, obj7);
       obj5.children = closure_12(tmp2(tmp3[41]).DisplayNameStylesContext.Provider, obj6);

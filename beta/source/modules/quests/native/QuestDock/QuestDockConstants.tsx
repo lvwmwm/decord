@@ -1,10 +1,10 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15351
+// Function ID: 15352
 // Name: QuestDockConstants
-// Dependencies: [576, 2]
+// Dependencies: [580, 2]
 
-// Module 15362 (QuestDockConstants)
-import nativeDefault from "native" /* 576 */;
+// Module 15351 (QuestDockConstants)
+import nativeDefault from "native" /* 580 */;
 import size from "module_2" /* 2 */;
 
 const obj = { mass: 0.5, damping: 80, stiffness: 320 };

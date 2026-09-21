@@ -1,17 +1,17 @@
-// Module ID: 5498
-// Function ID: 5499
+// Module ID: 5500
+// Function ID: 5501
 // Name: ConnectedAccountsStore
-// Dependencies: [5499, 1074, 5500, 2055, 5623, 504, 573, 2]
+// Dependencies: [5501, 1078, 5502, 2059, 5625, 504, 577, 2]
 
-// Module 5498 (ConnectedAccountsStore)
+// Module 5500 (ConnectedAccountsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PlatformsDefault from "Platforms" /* 5500 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5623 */;
-import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5499 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import PlatformsDefault from "Platforms" /* 5502 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5625 */;
+import ConnectedAccountRecord from "ConnectedAccountRecord" /* 5501 */;
 
 const require = fn;
-const items = [fn(1074).PlatformTypes.CONTACTS];
+const items = [fn(1078).PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
 let closure_6 = [];
@@ -39,9 +39,9 @@ prototype["getAccounts"] = function getAccounts() {
 prototype["getLocalAccounts"] = function getLocalAccounts() {
   return closure_7;
 };
-prototype["getAccount"] = function getAccount(accountId, SPOTIFY) {
+prototype["getAccount"] = function getAccount(accountId, provider_id) {
   closure_0 = accountId;
-  closure_1 = SPOTIFY;
+  closure_1 = provider_id;
   return closure_6.find((id) => {
     let tmp2 = null == closure_0 || id.id === tmp;
     if (tmp2) {

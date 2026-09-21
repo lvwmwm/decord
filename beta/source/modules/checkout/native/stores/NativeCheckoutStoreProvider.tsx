@@ -1,14 +1,13 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 11103
+// Function ID: 11104
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7666, 1074, 4738, 21, 4756, 5815, 11067, 573, 7671, 7672, 5794, 1255, 1231, 5203, 11070, 1241, 11074, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 7668, 1078, 4740, 21, 4758, 558, 568, 5813, 11104, 577, 7673, 7674, 5796, 1259, 1235, 11107, 1245, 5203, 11111, 2]
 
-// Module 11066 (NativeCheckoutStoreProvider)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import v1 from "v1" /* 1255 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 11070 */;
+// Module 11103 (NativeCheckoutStoreProvider)
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import v12 from "v1" /* 1259 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 11107 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,23 +15,412 @@ import noop from "module_19" /* 19 */;
 const require = globalThis.__r;
 
 require = fn;
-function NativeCheckoutStoreProvider(children) {
+const View = fn(17).View;
+const NativeCheckoutStore = fn(7668);
+({ createNativeStore: closure_7, NativeCheckoutStoreContext: closure_8, NativeCheckoutStoreContextOrNull: closure_9 } = NativeCheckoutStore);
+const AnalyticEvents = fn(1078).AnalyticEvents;
+let ItemPurchaseType = fn(4740).ItemPurchaseType;
+let jsx = fn(21).jsx;
+const createStyles = fn(4758);
+let closure_13 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
+fn(558);
+const ReactCompilerGating = fn(558);
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkoutInitParameters) => {
+  const cResult = checkoutInitParameters(paymentGateway[10]).c(33);
+  checkoutInitParameters = checkoutInitParameters.checkoutInitParameters;
+  const order = checkoutInitParameters.order;
+  paymentGateway = checkoutInitParameters.paymentGateway;
+  const orderRequired = checkoutInitParameters.orderRequired;
+  const onOrderRetryCancellation = checkoutInitParameters.onOrderRetryCancellation;
+  const initialSubscriptionFacet = checkoutInitParameters.initialSubscriptionFacet;
+  const checkoutAnalyticsFields = checkoutInitParameters.checkoutAnalyticsFields;
+  const analyticsInitialStep = checkoutInitParameters.analyticsInitialStep;
+  const children = checkoutInitParameters.children;
+  let id;
+  if (order != null) {
+    id = order.id;
+  }
+  if (cResult[0] !== id) {
+    let id1;
+    if (order != null) {
+      id1 = order.id;
+    }
+    const fn = function u() {
+      let id;
+      if (order != null) {
+        id = order.id;
+      }
+      if (id == null) {
+        id = v12.v4();
+      }
+      const obj2 = SentryUtilsDefault;
+      obj2.addBreadcrumb({ message: "Checkout session ID: " + id });
+      const obj3 = { message: "Checkout session ID: " + id };
+      return { loadId: id, startTime: Date.now() };
+    };
+    cResult[0] = id1;
+    cResult[1] = fn;
+    let tmp4 = fn;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmp7 = order(paymentGateway[11])(tmp4);
+  loadId = tmp7;
+  if (cResult[2] === checkoutAnalyticsFields) {
+    if (cResult[3] === tmp7.loadId) {
+      if (cResult[4] === paymentGateway) {
+        let tmp8 = cResult[5];
+      }
+      const tmp9 = tmp6(tmp[11])(tmp8);
+      redux = tmp9;
+      if (cResult[6] === tmp9) {
+        if (cResult[7] === checkoutInitParameters) {
+          if (cResult[8] === tmp7) {
+            if (cResult[9] === initialSubscriptionFacet) {
+              if (cResult[10] === onOrderRetryCancellation) {
+                if (cResult[11] === order) {
+                  if (cResult[12] === orderRequired) {
+                    if (cResult[13] === paymentGateway) {
+                      let tmp10 = cResult[14];
+                    }
+                    const first = onOrderRetryCancellation(initialSubscriptionFacet.useState(tmp10), 1)[0];
+                    if (cResult[15] === tmp9) {
+                      if (cResult[16] === analyticsInitialStep) {
+                        if (cResult[17] === checkoutAnalyticsFields) {
+                          if (cResult[18] === first) {
+                            let tmp14 = cResult[19];
+                          }
+                          tmp6(tmp[21])(tmp14);
+                          ItemPurchaseType = obj2.useRef(null != order);
+                          if (cResult[20] === order) {
+                            if (cResult[21] === first) {
+                              let tmp16 = cResult[22];
+                              let tmp17 = cResult[23];
+                            }
+                            const effect = obj2.useEffect(tmp16, tmp17);
+                            if (cResult[24] !== first) {
+                              class D {
+                                constructor() {
+                                  return () => {
+                                    state = state.getState();
+                                    const orderRecord = state.orderRecord;
+                                    if (null != orderRecord) {
+                                      const obj2 = { checkoutSucceeded: tmp2, order: null };
+                                      ({ id: obj3.id, status: obj3.status } = orderRecord);
+                                      obj2.order = { id: null, status: null };
+                                      checkoutInitParameters(paymentGateway[22]).discardDraftOrder(obj2);
+                                      const obj = checkoutInitParameters(paymentGateway[22]);
+                                      const obj5 = { id: null, status: null };
+                                    }
+                                  };
+                                }
+                              }
+                              const items = [first];
+                              class G {
+                                constructor() {
+                                  current = closure_11.current;
+                                  tmp = closure_11;
+                                  if (!current) {
+                                    tmp2 = order;
+                                    tmp3 = null;
+                                    current = null == order;
+                                  }
+                                  if (!current) {
+                                    tmp4 = closure_10;
+                                    state = closure_10.getState();
+                                    tmp5 = order;
+                                    setOrderResult = state.setOrder(order);
+                                    flag = true;
+                                    tmp.current = true;
+                                  }
+                                  return;
+                                }
+                              }
+                              cResult[25] = D;
+                              class R {
+                                constructor() {
+                                  if (null != checkoutAnalyticsFields) {
+                                    tmp = closure_0;
+                                    tmp2 = closure_2;
+                                    obj = closure_0(closure_2[19]);
+                                    tmp3 = closure_9;
+                                    result = obj.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
+                                    tmp5 = closure_1;
+                                    obj2 = closure_1(closure_2[20]);
+                                    tmp6 = AnalyticEvents;
+                                    obj1 = {};
+                                    tmp7 = obj1;
+                                    tmp8 = closure_9;
+                                    merged = Object.assign(closure_9);
+                                    tmp10 = analyticsInitialStep;
+                                    obj1.initial_step = analyticsInitialStep;
+                                    trackResult = obj2.track(AnalyticEvents.PAYMENT_FLOW_LOADED, obj1);
+                                    return () => {
+                                      state = state.getState();
+                                      ({ checkoutSucceeded, purchaseInFlight } = state);
+                                      if (!checkoutSucceeded) {
+                                        checkoutSucceeded = state.checkoutFailed;
+                                      }
+                                      if (!checkoutSucceeded) {
+                                        checkoutSucceeded = purchaseInFlight;
+                                      }
+                                      if (!checkoutSucceeded) {
+                                        order(paymentGateway[20]).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
+                                        const obj = order(paymentGateway[20]);
+                                      }
+                                    };
+                                  } else {
+                                    return;
+                                  }
+                                }
+                              }
+                              cResult[26] = items;
+                              let tmp20 = items;
+                              const tmp19 = D;
+                            } else {
+                              class D {
+                                constructor() {
+                                  return () => {
+                                    state = state.getState();
+                                    const orderRecord = state.orderRecord;
+                                    if (null != orderRecord) {
+                                      const obj2 = { checkoutSucceeded: tmp2, order: null };
+                                      ({ id: obj3.id, status: obj3.status } = orderRecord);
+                                      obj2.order = { id: null, status: null };
+                                      checkoutInitParameters(paymentGateway[22]).discardDraftOrder(obj2);
+                                      const obj = checkoutInitParameters(paymentGateway[22]);
+                                      const obj5 = { id: null, status: null };
+                                    }
+                                  };
+                                }
+                              }
+                              tmp20 = cResult[26];
+                            }
+                            const effect1 = obj2.useEffect(tmp19, tmp20);
+                            class G {
+                              constructor() {
+                                current = closure_11.current;
+                                tmp = closure_11;
+                                if (!current) {
+                                  tmp2 = order;
+                                  tmp3 = null;
+                                  current = null == order;
+                                }
+                                if (!current) {
+                                  tmp4 = closure_10;
+                                  state = closure_10.getState();
+                                  tmp5 = order;
+                                  setOrderResult = state.setOrder(order);
+                                  flag = true;
+                                  tmp.current = true;
+                                }
+                                return;
+                              }
+                            }
+                            class R {
+                              constructor() {
+                                if (null != checkoutAnalyticsFields) {
+                                  tmp = closure_0;
+                                  tmp2 = closure_2;
+                                  obj = closure_0(closure_2[19]);
+                                  tmp3 = closure_9;
+                                  result = obj.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
+                                  tmp5 = closure_1;
+                                  obj2 = closure_1(closure_2[20]);
+                                  tmp6 = AnalyticEvents;
+                                  obj1 = {};
+                                  tmp7 = obj1;
+                                  tmp8 = closure_9;
+                                  merged = Object.assign(closure_9);
+                                  tmp10 = analyticsInitialStep;
+                                  obj1.initial_step = analyticsInitialStep;
+                                  trackResult = obj2.track(AnalyticEvents.PAYMENT_FLOW_LOADED, obj1);
+                                  return () => {
+                                    state = state.getState();
+                                    ({ checkoutSucceeded, purchaseInFlight } = state);
+                                    if (!checkoutSucceeded) {
+                                      checkoutSucceeded = state.checkoutFailed;
+                                    }
+                                    if (!checkoutSucceeded) {
+                                      checkoutSucceeded = purchaseInFlight;
+                                    }
+                                    if (!checkoutSucceeded) {
+                                      order(paymentGateway[20]).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
+                                      const obj = order(paymentGateway[20]);
+                                    }
+                                  };
+                                } else {
+                                  return;
+                                }
+                              }
+                            }
+                            tmp25[0] = first;
+                            tmp25[1] = children;
+                            const tmp26 = <redux.Provider {...tmp25} />;
+                            cResult[27] = children;
+                            cResult[28] = first;
+                            cResult[29] = tmp26;
+                          }
+                          class G {
+                            constructor() {
+                              current = closure_11.current;
+                              tmp = closure_11;
+                              if (!current) {
+                                tmp2 = order;
+                                tmp3 = null;
+                                current = null == order;
+                              }
+                              if (!current) {
+                                tmp4 = closure_10;
+                                state = closure_10.getState();
+                                tmp5 = order;
+                                setOrderResult = state.setOrder(order);
+                                flag = true;
+                                tmp.current = true;
+                              }
+                              return;
+                            }
+                          }
+                          const items1 = [order, ];
+                          class R {
+                            constructor() {
+                              if (null != checkoutAnalyticsFields) {
+                                tmp = closure_0;
+                                tmp2 = closure_2;
+                                obj = closure_0(closure_2[19]);
+                                tmp3 = closure_9;
+                                result = obj.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
+                                tmp5 = closure_1;
+                                obj2 = closure_1(closure_2[20]);
+                                tmp6 = AnalyticEvents;
+                                obj1 = {};
+                                tmp7 = obj1;
+                                tmp8 = closure_9;
+                                merged = Object.assign(closure_9);
+                                tmp10 = analyticsInitialStep;
+                                obj1.initial_step = analyticsInitialStep;
+                                trackResult = obj2.track(AnalyticEvents.PAYMENT_FLOW_LOADED, obj1);
+                                return () => {
+                                  state = state.getState();
+                                  ({ checkoutSucceeded, purchaseInFlight } = state);
+                                  if (!checkoutSucceeded) {
+                                    checkoutSucceeded = state.checkoutFailed;
+                                  }
+                                  if (!checkoutSucceeded) {
+                                    checkoutSucceeded = purchaseInFlight;
+                                  }
+                                  if (!checkoutSucceeded) {
+                                    order(paymentGateway[20]).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
+                                    const obj = order(paymentGateway[20]);
+                                  }
+                                };
+                              } else {
+                                return;
+                              }
+                            }
+                          }
+                          cResult[20] = order;
+                          cResult[21] = first;
+                          cResult[22] = G;
+                          cResult[23] = items1;
+                          tmp17 = items1;
+                          tmp16 = G;
+                        }
+                      }
+                    }
+                    class R {
+                      constructor() {
+                        if (null != checkoutAnalyticsFields) {
+                          tmp = closure_0;
+                          tmp2 = closure_2;
+                          obj = closure_0(closure_2[19]);
+                          tmp3 = closure_9;
+                          result = obj.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
+                          tmp5 = closure_1;
+                          obj2 = closure_1(closure_2[20]);
+                          tmp6 = AnalyticEvents;
+                          obj1 = {};
+                          tmp7 = obj1;
+                          tmp8 = closure_9;
+                          merged = Object.assign(closure_9);
+                          tmp10 = analyticsInitialStep;
+                          obj1.initial_step = analyticsInitialStep;
+                          trackResult = obj2.track(AnalyticEvents.PAYMENT_FLOW_LOADED, obj1);
+                          return () => {
+                            state = state.getState();
+                            ({ checkoutSucceeded, purchaseInFlight } = state);
+                            if (!checkoutSucceeded) {
+                              checkoutSucceeded = state.checkoutFailed;
+                            }
+                            if (!checkoutSucceeded) {
+                              checkoutSucceeded = purchaseInFlight;
+                            }
+                            if (!checkoutSucceeded) {
+                              order(paymentGateway[20]).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
+                              const obj = order(paymentGateway[20]);
+                            }
+                          };
+                        } else {
+                          return;
+                        }
+                      }
+                    }
+                    cResult[15] = tmp9;
+                    cResult[16] = analyticsInitialStep;
+                    cResult[17] = checkoutAnalyticsFields;
+                    cResult[18] = first;
+                    cResult[19] = R;
+                    tmp14 = R;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      cResult[6] = tmp9;
+      cResult[7] = checkoutInitParameters;
+      cResult[8] = tmp7;
+      cResult[9] = initialSubscriptionFacet;
+      cResult[10] = onOrderRetryCancellation;
+      cResult[11] = order;
+      cResult[12] = orderRequired;
+      cResult[13] = paymentGateway;
+      cResult[14] = tmp11;
+      tmp10 = tmp11;
+    }
+  }
+  class E {
+    constructor() {
+      obj = {};
+      merged = Object.assign(checkoutAnalyticsFields);
+      obj.load_id = closure_8.loadId;
+      obj.payment_gateway = paymentGateway;
+      return obj;
+    }
+  }
+  cResult[2] = checkoutAnalyticsFields;
+  cResult[3] = tmp7.loadId;
+  cResult[4] = paymentGateway;
+  cResult[5] = E;
+  tmp8 = E;
+}) : ((children) => {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: asyncGeneratorStep, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
-  const contextMetadata = order(5815)(() => {
+  const contextMetadata = order(5813)(() => {
     let id;
     if (order != null) {
       id = order.id;
     }
     if (id == null) {
-      id = v1.v4();
+      id = v12.v4();
     }
     const obj2 = SentryUtilsDefault;
     obj2.addBreadcrumb({ message: "Checkout session ID: " + id });
     const obj3 = { message: "Checkout session ID: " + id };
     return { loadId: id, startTime: Date.now() };
   });
-  redux = order(5815)(() => {
+  redux = order(5813)(() => {
     const obj = {};
     const merged = Object.assign(View);
     obj.load_id = contextMetadata.loadId;
@@ -57,8 +445,8 @@ function NativeCheckoutStoreProvider(children) {
           checkoutSucceeded = purchaseInFlight;
         }
         if (!checkoutSucceeded) {
-          order(1241).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
-          const obj = order(1241);
+          order(1245).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
+          const obj = order(1245);
         }
       };
     }
@@ -71,7 +459,7 @@ function NativeCheckoutStoreProvider(children) {
       current = null == order;
     }
     if (!current) {
-      const state = first.getState();
+      state = first.getState();
       state.setOrder(order);
       ref.current = true;
     }
@@ -84,25 +472,184 @@ function NativeCheckoutStoreProvider(children) {
       const obj2 = { checkoutSucceeded: tmp2, order: null };
       ({ id: obj3.id, status: obj3.status } = orderRecord);
       obj2.order = { id: null, status: null };
-      checkoutInitParameters(11074).discardDraftOrder(obj2);
-      const obj = checkoutInitParameters(11074);
+      checkoutInitParameters(11111).discardDraftOrder(obj2);
+      const obj = checkoutInitParameters(11111);
       const obj5 = { id: null, status: null };
     }
   }, items1);
   return <contextMetadata value={value}><redux.Provider value={value}>{arg0.children}</redux.Provider></contextMetadata>;
-}
-const View = fn(17).View;
-const NativeCheckoutStore = fn(7666);
-({ createNativeStore: closure_7, NativeCheckoutStoreContext: closure_8, NativeCheckoutStoreContextOrNull: closure_9 } = NativeCheckoutStore);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const ItemPurchaseType = fn(4738).ItemPurchaseType;
-let jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let closure_13 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
+});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx");
 
-export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((orderRequired) => {
+  const cResult = require("c").c(37);
+  orderRequired = orderRequired.orderRequired;
+  _require = orderRequired;
+  ({ skuIds, paymentGateway } = orderRequired);
+  isGift = orderRequired.isGift;
+  const onOrderCreated = orderRequired.onOrderCreated;
+  const activeSubscription = orderRequired.activeSubscription;
+  ({ children, defaultPlans } = orderRequired);
+  const onOrderRetryCancellation = orderRequired.onOrderRetryCancellation;
+  const initialSubscriptionFacet = orderRequired.initialSubscriptionFacet;
+  const initialExternalGatewayFacet = orderRequired.initialExternalGatewayFacet;
+  ({ headless, checkoutAnalyticsFields, analyticsInitialStep } = orderRequired);
+  mobileStoreFront();
+  let obj = require("c");
+  let obj2 = defaultPlans;
+  let tmp = _require;
+  [r10033, closure_9] = activeSubscription(defaultPlans.useState(null), 2);
+  let tmp5 = activeSubscription(defaultPlans.useState(null), 2);
+  closure_10 = activeSubscription(defaultPlans.useState(orderRequired), 2)[1];
+  defaultPlans.useRef(false);
+  let first = null;
+  const tmp6 = activeSubscription(defaultPlans.useState(orderRequired), 2);
+  if (skuIds.length > 0) {
+    first = skuIds[0];
+  }
+  const tmp7Result = paymentGateway(isGift[11])(first);
+  closure_12 = tmp7Result;
+  if (null == tmp7Result) {
+    if (null == defaultPlans) {
+      if (orderRequired) {
+        const _Error = Error;
+        throw Error("SkuIDs needs to a specified!");
+      }
+    }
+  }
+  const tmp7 = paymentGateway(isGift[11]);
+  mobileStoreFront = tmp(isGift[12]).useMobileStoreFront();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    class K {
+      constructor() {
+        obj = paymentGateway(isGift[13]);
+        dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
+        return () => {
+          paymentGateway(isGift[13]).dispatch({ type: "IAP_CHECKOUT_END" });
+        };
+      }
+    }
+    let items = [];
+    cResult[0] = K;
+    cResult[1] = items;
+    let tmp12 = items;
+    const tmp11 = K;
+  } else {
+    class K {
+      constructor() {
+        obj = paymentGateway(isGift[13]);
+        dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
+        return () => {
+          paymentGateway(isGift[13]).dispatch({ type: "IAP_CHECKOUT_END" });
+        };
+      }
+    }
+    tmp12 = cResult[1];
+  }
+  const effect = obj2.useEffect(tmp11, tmp12);
+  if (cResult[2] === initialExternalGatewayFacet) {
+    class K {
+      constructor() {
+        obj = paymentGateway(isGift[13]);
+        dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
+        return () => {
+          paymentGateway(isGift[13]).dispatch({ type: "IAP_CHECKOUT_END" });
+        };
+      }
+    }
+  }
+  _require = onOrderCreated(function*(arg0, value) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp5 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c4 = 2;
+        if (0 === v1) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            isGift = tmp3;
+            paymentGateway = tmp2;
+            let country;
+            closure_129_0 = undefined;
+            ({ orderLineItems, subscriptionFacet } = closure_0);
+            const obj4 = { orderLineItems, paymentGateway, isGift, subscriptionFacet, externalGatewayFacet, countryCode: null };
+            if (country != null) {
+              country = country.country;
+            }
+            obj4.countryCode = country;
+            v1 = 1;
+            c4 = 1;
+            const obj6 = { value: closure_0(isGift[14]).createOrder(obj4), done: false };
+            return obj6;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          closure_129_0 = value;
+          redux(closure_129_0);
+          if (null != v1) {
+            v1(closure_129_0);
+          }
+          closure_1_10(false);
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp23) {
+        c4 = tmp;
+        throw tmp23;
+      }
+    }
+  });
+  cResult[2] = initialExternalGatewayFacet;
+  cResult[3] = isGift;
+  cResult[4] = onOrderCreated;
+  cResult[5] = paymentGateway;
+  if (mobileStoreFront != null) {
+    class K {
+      constructor() {
+        obj = paymentGateway(isGift[13]);
+        dispatchResult = obj.dispatch({ type: "IAP_CHECKOUT_START" });
+        return () => {
+          paymentGateway(isGift[13]).dispatch({ type: "IAP_CHECKOUT_END" });
+        };
+      }
+    }
+  }
+  const fn = function() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  };
+  cResult[6] = undefined;
+  cResult[7] = fn;
+}) : ((orderRequired) => {
   orderRequired = orderRequired.orderRequired;
   _require = orderRequired;
   ({ skuIds, paymentGateway } = orderRequired);
@@ -133,7 +680,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
   if (skuIds.length > 0) {
     first = skuIds[0];
   }
-  const tmp6Result = paymentGateway(isGift[9])(first);
+  const tmp6Result = paymentGateway(isGift[11])(first);
   jsx = tmp6Result;
   if (null == tmp6Result) {
     if (null == defaultPlans) {
@@ -143,13 +690,13 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
       }
     }
   }
-  const tmp6 = paymentGateway(isGift[9]);
+  const tmp6 = paymentGateway(isGift[11]);
   const tmp9 = _require;
   mobileStoreFront = require("hooks/NativePaymentHooks").useMobileStoreFront();
   const effect = obj.useEffect(() => {
-    paymentGateway(isGift[11]).dispatch({ type: "IAP_CHECKOUT_START" });
+    paymentGateway(isGift[13]).dispatch({ type: "IAP_CHECKOUT_START" });
     return () => {
-      paymentGateway(isGift[11]).dispatch({ type: "IAP_CHECKOUT_END" });
+      paymentGateway(isGift[13]).dispatch({ type: "IAP_CHECKOUT_END" });
     };
   }, []);
   onOrderCreated(function*(arg0) {
@@ -158,16 +705,16 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
       country = country.country;
     }
     obj5.countryCode = country;
-    closure_129_2 = yield closure_0(isGift[12]).createOrder(obj5);
+    closure_129_2 = yield closure_0(isGift[14]).createOrder(obj5);
     _undefined(closure_129_2);
     if (null != v2) {
       v2(closure_129_2);
     }
     closure_1_10(false);
-    yield "HermesInternal";
+    yield "IconComponent";
     paymentGateway = tmp2;
     ({ orderLineItems: closure_129_0, subscriptionFacet: closure_129_1 } = closure_0);
-    return "PX_16";
+    return "Set";
   });
   let items = [paymentGateway, onOrderCreated, isGift, mobileStoreFront, initialExternalGatewayFacet];
   callback = obj.useCallback(function() {
@@ -186,12 +733,12 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     yield callback(closure_0);
     if (1 === tmp7) {
       c3 = 0;
-      const result = closure_0(isGift[13]).showCheckoutOrderErrorModal(() => callback(closure_1_0), () => {
+      const result = closure_0(isGift[15]).showCheckoutOrderErrorModal(() => callback(closure_1_0), () => {
         closure_1_10(false);
         closure_1_6();
       });
       c5 = 3;
-      closure_0(isGift[13]);
+      closure_0(isGift[15]);
     } else if (arg0 === 1) {
       c5 = 3;
       throw arg1;
@@ -257,8 +804,8 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
   if (tmp4[0]) {
     let tmp18 = null;
     if (!flag) {
-      const obj3 = { style: tmp.loadingSpinnerContainer, children: jsx(tmp9(tmp5[14]).ActivityIndicator, { animating: true, size: "large" }) };
-      tmp18 = <onOrderRetryCancellation style={tmp.loadingSpinnerContainer}>{jsx(tmp9(tmp5[14]).ActivityIndicator, { animating: true, size: "large" })}</onOrderRetryCancellation>;
+      const obj3 = { style: tmp.loadingSpinnerContainer, children: jsx(tmp9(tmp5[16]).ActivityIndicator, { animating: true, size: "large" }) };
+      tmp18 = <onOrderRetryCancellation style={tmp.loadingSpinnerContainer}>{jsx(tmp9(tmp5[16]).ActivityIndicator, { animating: true, size: "large" })}</onOrderRetryCancellation>;
     }
     let tmp17 = tmp18;
   } else {
@@ -276,4 +823,4 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     tmp17 = <callback checkoutInitParameters={null} order={null} paymentGateway={null} onOrderRetryCancellation={null} orderRequired={null} initialSubscriptionFacet={null} checkoutAnalyticsFields={null} analyticsInitialStep={null}>{null}</callback>;
   }
   return tmp17;
-};
+});

@@ -1,34 +1,34 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15169
+// Function ID: 15170
 // Name: FamilyCenterActivityPurchaseRowUtils
-// Dependencies: [7789, 7790, 1374, 1973, 1115, 2482, 1397, 2]
+// Dependencies: [7794, 7795, 1378, 1977, 1119, 2486, 1401, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 15180 (FamilyCenterActivityPurchaseRowUtils)
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7789 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7790 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 15169 (FamilyCenterActivityPurchaseRowUtils)
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1977 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7794 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7795 */;
+import PremiumConstants from "PremiumConstants" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = tmp(1115).intl;
-    return intl5.string(_modDef2482.obi47v);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl4 = tmp(1115).intl;
-    return intl4.string(_modDef2482.RX8BMR);
-  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === type) {
-    const intl3 = tmp(1115).intl;
-    return intl3.string(_modDef2482.nNGEHk);
-  } else if (tmp(1973).CollectiblesItemType.BUNDLE === type) {
-    const intl2 = tmp(1115).intl;
-    return intl2.string(_modDef2482.VS1fKo);
-  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp(1115).intl;
-    return intl.string(_modDef2482.JiIY1l);
+    const intl5 = tmp(1119).intl;
+    return intl5.string(_modDef2486.obi47v);
+  } else if (tmp(1977).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl4 = tmp(1119).intl;
+    return intl4.string(_modDef2486.RX8BMR);
+  } else if (tmp(1977).CollectiblesItemType.NAMEPLATE === type) {
+    const intl3 = tmp(1119).intl;
+    return intl3.string(_modDef2486.nNGEHk);
+  } else if (tmp(1977).CollectiblesItemType.BUNDLE === type) {
+    const intl2 = tmp(1119).intl;
+    return intl2.string(_modDef2486.VS1fKo);
+  } else if (tmp(1977).CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl = tmp(1119).intl;
+    return intl.string(_modDef2486.JiIY1l);
   } else {
     return "";
   }

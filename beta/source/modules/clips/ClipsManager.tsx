@@ -1,34 +1,34 @@
-// Module ID: 18262
-// Function ID: 18263
+// Module ID: 18265
+// Function ID: 18266
 // Name: clips/ClipsManager
-// Dependencies: [5, 4801, 502, 1992, 4779, 4795, 1998, 5348, 1074, 4798, 7363, 13940, 4811, 4808, 1241, 2019, 573, 13941, 4377, 1364, 13939, 2]
+// Dependencies: [5, 4803, 502, 1996, 4781, 4797, 2002, 5350, 1078, 4800, 7365, 13943, 4813, 4810, 1245, 2023, 577, 13944, 4381, 1368, 13942, 2]
 
-// Module 18262 (clips/ClipsManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import DiscordNativeDefault from "DiscordNative" /* 4377 */;
-import StreamKeyUtilsAll from "StreamKeyUtils" /* 4808 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import isClipsEnabled from "isClipsEnabled" /* 13939 */;
-import ClipsExperiment from "ClipsExperiment" /* 13940 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13941 */;
+// Module 18265 (clips/ClipsManager)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import DiscordNativeDefault from "DiscordNative" /* 4381 */;
+import StreamKeyUtilsAll from "StreamKeyUtils" /* 4810 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4813 */;
+import isClipsEnabled from "isClipsEnabled" /* 13942 */;
+import ClipsExperiment from "ClipsExperiment" /* 13943 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13944 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4795 */;
-import ClipsStore from "ClipsStore" /* 1998 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4797 */;
+import ClipsStore from "ClipsStore" /* 2002 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
-const getSystemAnalyticsInfo = fn(4801).getSystemAnalyticsInfo;
-const ClipsConstants = fn(5348);
+const getSystemAnalyticsInfo = fn(4803).getSystemAnalyticsInfo;
+const ClipsConstants = fn(5350);
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_11, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_12, CLIPS_HARDWARE_CLASSIFICATION_VERSION: map1, ClipsHardwareClassification: closure_14, CLIP_RUNTIME: closure_15 } = ClipsConstants);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_16, RTCConnectionStates: closure_17 } = Constants);
-const StreamTypes = fn(4798).StreamTypes;
+const StreamTypes = fn(4800).StreamTypes;
 class ClipsManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -87,10 +87,10 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
     if (state.state === constants3.RTC_CONNECTED) {
       const self = this;
       const id = AuthenticationStore.getId();
-      if (tmp(4811).MediaEngineContextTypes.DEFAULT === context) {
+      if (tmp(4813).MediaEngineContextTypes.DEFAULT === context) {
         const result = self.applyUserVoiceRecording(id);
         const result1 = self.applyUserSoundboardRecording(id);
-      } else if (tmp(4811).MediaEngineContextTypes.STREAM === context) {
+      } else if (tmp(4813).MediaEngineContextTypes.STREAM === context) {
         if (null != streamKey) {
           if (tmpResult.decodeStreamKey(streamKey).ownerId === id) {
             const rTCConnection = StreamRTCConnectionStore.getRTCConnection(streamKey);
@@ -98,7 +98,7 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
               self.applyStreamRecording(id, rTCConnection);
             }
           }
-          tmpResult = tmp(4808);
+          tmpResult = tmp(4810);
         }
       }
     }
@@ -169,7 +169,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
       self.maybeStartNtpClock();
       let tmp7 = null != ClipsStore.getHardwareClassification() && null != obj2.getHardwareClassificationForDecoupled();
       if (tmp7) {
-        tmp7 = obj2.getHardwareClassificationVersion() === map1;
+        tmp7 = obj2.getHardwareClassificationVersion() === __initData2;
       }
       if (!tmp7) {
         const result1 = self.classifyHardwareAndTrack();
@@ -216,7 +216,7 @@ prototype["classifyHardwareAndTrack"] = function classifyHardwareAndTrack() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

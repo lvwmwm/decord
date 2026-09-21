@@ -1,20 +1,20 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14810
+// Function ID: 14811
 // Name: RPCServer
-// Dependencies: [5, 4660, 1074, 12, 9587, 9581, 14783, 1241, 38, 13185, 1091, 2]
+// Dependencies: [5, 4663, 1078, 12, 9583, 9577, 14786, 1245, 38, 13184, 1095, 2]
 
-// Module 14807 (RPCServer)
+// Module 14810 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import RPCErrorDefault from "RPCError" /* 9581 */;
-import transformUserDefault from "transformUser" /* 9587 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 13185 */;
-import validateScopeDefault from "validateScope" /* 14783 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import RPCErrorDefault from "RPCError" /* 9577 */;
+import transformUserDefault from "transformUser" /* 9583 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 13184 */;
+import validateScopeDefault from "validateScope" /* 14786 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const TransportTypes = fn(4660).TransportTypes;
-const Constants = fn(1074);
+const TransportTypes = fn(4663).TransportTypes;
+const Constants = fn(1078);
 ({ AnalyticEvents: hasOwnProperty, RPCCloseCodes: metroRequire, RPCCommands: closure_7, RPCErrors: closure_8, RPCEvents: closure_9 } = Constants);
 const RPC_STORE_WAIT = "RPC_STORE_WAIT";
 let closure_11 = [];
@@ -97,11 +97,11 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           obj3.scope = scope;
           obj3.application_id = tmp28.application.id;
           obj3.socket_scope = tmp28.authorization.scopes.toString();
-          tmp29(1241).track(constants.RPC_COMMAND_SENT, obj3);
+          tmp29(1245).track(constants.RPC_COMMAND_SENT, obj3);
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9581)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9577)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -128,11 +128,11 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           obj3.scope = scope;
           obj3.application_id = tmp28.application.id;
           obj3.socket_scope = tmp28.authorization.scopes.toString();
-          tmp29(1241).track(constants.RPC_COMMAND_SENT, obj3);
+          tmp29(1245).track(constants.RPC_COMMAND_SENT, obj3);
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9581)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9577)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -150,7 +150,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -235,11 +235,11 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           obj3.scope = scope;
           obj3.application_id = tmp28.application.id;
           obj3.socket_scope = tmp28.authorization.scopes.toString();
-          tmp29(1241).track(constants.RPC_COMMAND_SENT, obj3);
+          tmp29(1245).track(constants.RPC_COMMAND_SENT, obj3);
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9581)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9577)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -257,7 +257,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -367,11 +367,11 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           obj3.scope = scope;
           obj3.application_id = tmp28.application.id;
           obj3.socket_scope = tmp28.authorization.scopes.toString();
-          tmp29(1241).track(constants.RPC_COMMAND_SENT, obj3);
+          tmp29(1245).track(constants.RPC_COMMAND_SENT, obj3);
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9581)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9577)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -389,7 +389,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

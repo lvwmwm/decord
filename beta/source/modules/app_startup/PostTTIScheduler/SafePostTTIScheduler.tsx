@@ -1,11 +1,11 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 7907
+// Function ID: 7908
 // Name: SafePostTTIScheduler
-// Dependencies: [7903, 2]
+// Dependencies: [7908, 2]
 // Exports: waitSafelyForPostTTI
 
-// Module 7902 (SafePostTTIScheduler)
-import PostTTIScheduler from "PostTTIScheduler" /* 7903 */;
+// Module 7907 (SafePostTTIScheduler)
+import PostTTIScheduler from "PostTTIScheduler" /* 7908 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");

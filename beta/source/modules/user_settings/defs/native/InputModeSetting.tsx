@@ -1,33 +1,107 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15507
+// Function ID: 15508
 // Name: InputModeSetting
-// Dependencies: [1992, 8233, 4781, 504, 1115, 11725, 10240, 2]
+// Dependencies: [1996, 8238, 4783, 558, 568, 504, 1119, 11594, 10237, 2]
 
-// Module 15518 (InputModeSetting)
-import util from "util" /* 1115 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 15507 (InputModeSetting)
+import initialize from "initialize" /* 504 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
-const InputModes = fn(4781).InputModes;
-const SettingBuilders = fn(11725);
+const InputModes = fn(4783).InputModes;
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let Q8gkVL = dependencyMap;
+  const cResult = c.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function o() {
+      return mode.getMode();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp3 = items;
+    tmp4 = fn;
+  } else {
+    [tmp3, tmp4] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp3, tmp4);
+  if (cResult[2] !== stateFromStores) {
+    if (stateFromStores === InputModes.PUSH_TO_TALK) {
+      const intl2 = tmp(1119).intl;
+      Q8gkVL = tmp(1119).t.Q8gkVL;
+      let stringResult = intl2.string(Q8gkVL);
+    } else {
+      const intl = tmp(1119).intl;
+      stringResult = intl.string(tmp(1119).t.cHCEOJ);
+    }
+    cResult[2] = stateFromStores;
+    cResult[3] = stringResult;
+  } else {
+    return cResult[3];
+  }
+}) : (() => {
+  const items = [MediaEngineStore];
+  if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
+    const intl2 = tmp(1119).intl;
+    let stringResult = intl2.string(tmp(1119).t.Q8gkVL);
+  } else {
+    const intl = tmp(1119).intl;
+    stringResult = intl.string(tmp(1119).t.cHCEOJ);
+  }
+  return stringResult;
+});
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["pS+K2L"]);
   },
-  parent: fn(8233).MobileUserSettings.VOICE,
-  useTrailing: function useInputModeSettingTrailing() {
+  parent: fn(8238).MobileUserSettings.VOICE,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    let Q8gkVL = dependencyMap;
+    const cResult = c.c(4);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [MediaEngineStore];
+      const fn = function o() {
+        return mode.getMode();
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp3 = items;
+      tmp4 = fn;
+    } else {
+      [tmp3, tmp4] = cResult;
+    }
+    const stateFromStores = initialize.useStateFromStores(tmp3, tmp4);
+    if (cResult[2] !== stateFromStores) {
+      if (stateFromStores === InputModes.PUSH_TO_TALK) {
+        const intl2 = tmp(1119).intl;
+        Q8gkVL = tmp(1119).t.Q8gkVL;
+        let stringResult = intl2.string(Q8gkVL);
+      } else {
+        const intl = tmp(1119).intl;
+        stringResult = intl.string(tmp(1119).t.cHCEOJ);
+      }
+      cResult[2] = stateFromStores;
+      cResult[3] = stringResult;
+    } else {
+      return cResult[3];
+    }
+  }) : (() => {
     const items = [MediaEngineStore];
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = tmp(1115).intl;
-      let stringResult = intl2.string(tmp(1115).t.Q8gkVL);
+      const intl2 = tmp(1119).intl;
+      let stringResult = intl2.string(tmp(1119).t.Q8gkVL);
     } else {
-      const intl = tmp(1115).intl;
-      stringResult = intl.string(tmp(1115).t.cHCEOJ);
+      const intl = tmp(1119).intl;
+      stringResult = intl.string(tmp(1119).t.cHCEOJ);
     }
     return stringResult;
-  },
-  onPress: fn(10240).handleInputModePress,
+  }),
+  onPress: fn(10237).handleInputModePress,
   useSearchTerms() {
     const intl = util.intl;
     const items = [intl.string(util.t.nuFtHH)];

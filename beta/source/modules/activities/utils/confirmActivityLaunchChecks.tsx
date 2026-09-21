@@ -1,13 +1,13 @@
-// Module ID: 9603
-// Function ID: 9604
+// Module ID: 9599
+// Function ID: 9600
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2041, 2040, 1074, 9604, 9597, 573, 4656, 4385, 9606, 9575, 9607, 9135, 9609, 2]
+// Dependencies: [5, 2045, 2044, 1078, 9600, 9593, 577, 4659, 4389, 9602, 9571, 9603, 9133, 9605, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 9603 (confirmActivityLaunchChecks)
+// Module 9599 (confirmActivityLaunchChecks)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
 const require = fn;
 function getOrFetchApplicationForLaunch() {
@@ -31,7 +31,7 @@ let closure_8 = async function _getOrFetchApplicationForLaunch(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -54,7 +54,7 @@ let closure_8 = async function _getOrFetchApplicationForLaunch(arg0, value) {
           closure_131_3 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -96,7 +96,7 @@ let closure_8 = async function _getOrFetchApplicationForLaunch(arg0, value) {
         obj7.locationKind = closure_131_3;
         closure_132_1(closure_132_2[6]).dispatch(obj7);
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else if (arg0 === 1) {
         c8 = 3;
         throw value;
@@ -133,7 +133,7 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -154,7 +154,7 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
           ({ currentEmbeddedApplication: closure_129_0, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: closure_129_1, onConfirmActivityLaunchChecksAlertOpen: closure_129_2 } = closure_0);
           c2 = 1;
           c3 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -174,13 +174,13 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
               if (value != null) {
                 _location = value.location;
               }
-              channel = channel.getChannel(closure_1_0(4385).getEmbeddedActivityLocationChannelId(_location));
+              channel = channel.getChannel(closure_1_0(4389).getEmbeddedActivityLocationChannelId(_location));
               if (null != value) {
                 if (null != channel) {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
-                  shouldClosePopout(9606)(tmp, channel, () => {
+                  shouldClosePopout(9602)(tmp, channel, () => {
                     value(c2[10])().leaveActivity({ location: value.location, applicationId: closure_2_0.id, shouldClosePopout });
                     closure_0(true);
                   }, () => closure_0(false));
@@ -224,7 +224,7 @@ let closure_10 = async function _confirmActivityAgeGate(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -249,7 +249,7 @@ let closure_10 = async function _confirmActivityAgeGate(arg0, value) {
           closure_131_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -365,7 +365,7 @@ let closure_11 = async function _confirmExternalAppLaunch(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -389,7 +389,7 @@ let closure_11 = async function _confirmExternalAppLaunch(arg0, value) {
           closure_131_4 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -518,7 +518,7 @@ let closure_12 = async function _confirmActivityLaunchChecks() {
   })(closure_129_0);
   return closure_129_3;
 };
-const ApplicationFlags = fn(1074).ApplicationFlags;
+const ApplicationFlags = fn(1078).ApplicationFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/activities/utils/confirmActivityLaunchChecks.tsx");
 

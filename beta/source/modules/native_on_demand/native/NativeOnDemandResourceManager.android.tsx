@@ -1,16 +1,16 @@
-// Module ID: 17835
-// Function ID: 17836
+// Module ID: 17838
+// Function ID: 17839
 // Name: NativeOnDemandResourceManager
-// Dependencies: [1992, 1979, 1074, 7363, 17836, 9911, 2]
+// Dependencies: [1996, 1983, 1078, 7365, 17839, 9889, 2]
 
-// Module 17835 (NativeOnDemandResourceManager)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
-import NativeOnDemandResourceModuleDefault from "NativeOnDemandResourceModule" /* 17836 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+// Module 17838 (NativeOnDemandResourceManager)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
+import NativeOnDemandResourceModuleDefault from "NativeOnDemandResourceModule" /* 17839 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
-const AppStates = fn(1074).AppStates;
+const AppStates = fn(1078).AppStates;
 const prototype = function NativeOnDemandResourceManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   importDefault = applyArgumentsResult;

@@ -1,17 +1,17 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13326
+// Function ID: 13327
 // Name: getChannelIcon
-// Dependencies: [32, 1372, 1074, 1370, 1397, 2]
+// Dependencies: [32, 1376, 1078, 1374, 1401, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 13323 (getChannelIcon)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+// Module 13326 (getChannelIcon)
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const ChannelTypes = fn(1074).ChannelTypes;
+const ChannelTypes = fn(1078).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/getChannelIcon.tsx");
 

@@ -1,8 +1,8 @@
-// Module ID: 6173
-// Function ID: 6174
+// Module ID: 6171
+// Function ID: 6172
 // Dependencies: [2]
 
-// Module 6173
+// Module 6171
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DoorwaySpotIllustration-2x.png.js");

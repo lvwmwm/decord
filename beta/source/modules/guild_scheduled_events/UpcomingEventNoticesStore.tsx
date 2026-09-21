@@ -1,17 +1,17 @@
-// Module ID: 9751
-// Function ID: 9752
+// Module ID: 9747
+// Function ID: 9748
 // Name: UpcomingEventNoticesStore
-// Dependencies: [502, 7768, 2047, 9752, 504, 573, 2]
+// Dependencies: [502, 7773, 2051, 9748, 504, 577, 2]
 
-// Module 9751 (UpcomingEventNoticesStore)
+// Module 9747 (UpcomingEventNoticesStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildScheduledEventUtils from "GuildScheduledEventUtils" /* 9752 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GuildScheduledEventUtils from "GuildScheduledEventUtils" /* 9748 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7773 */;
 
 require = fn;
-const GuildScheduledEventsConstants = fn(2047);
+const GuildScheduledEventsConstants = fn(2051);
 ({ GuildScheduledEventStatus: closure_4, UpcomingGuildEventNoticeTypes: hasOwnProperty } = GuildScheduledEventsConstants);
 let upcomingEventSeenTimestamps = {};
 const PersistedStore = initializeDefault.PersistedStore;

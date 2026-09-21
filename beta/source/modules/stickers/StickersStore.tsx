@@ -1,18 +1,18 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 5721
+// Function ID: 5722
 // Name: StickersStore
-// Dependencies: [5, 2043, 2063, 5720, 5721, 2070, 2090, 10, 5722, 573, 504, 2]
+// Dependencies: [5, 2047, 2067, 5722, 5723, 2074, 2094, 10, 5724, 577, 504, 2]
 
-// Module 5719 (StickersStore)
+// Module 5721 (StickersStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
-import TryLoad from "TryLoad" /* 2090 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import TryLoad from "TryLoad" /* 2094 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2043 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildStickersStore from "GuildStickersStore" /* 5720 */;
-import StickersPackStore from "StickersPackStore" /* 5721 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 2047 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import GuildStickersStore from "GuildStickersStore" /* 5722 */;
+import StickersPackStore from "StickersPackStore" /* 5723 */;
 
 require = fn;
 function loadSavedGuildStickers() {
@@ -36,7 +36,7 @@ let closure_11 = async function _loadSavedGuildStickers(arg0, value) {
       const obj4 = { value, done: true };
       return obj4;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -61,7 +61,7 @@ let closure_11 = async function _loadSavedGuildStickers(arg0, value) {
               Loaded = tmp27.Loaded;
               c2 = 1;
               c3 = 1;
-              const obj6 = { value: TryLoad.tryLoadOrResetCacheGatewayAsync("StickerStore.loadSavedGuildStickers", async () => closure_1(10).timeAsync("\u{1F4BE}", "loadSavedGuildStickers", async () => closure_2_1(5722).getAsync(closure_1_0))), done: false };
+              const obj6 = { value: TryLoad.tryLoadOrResetCacheGatewayAsync("StickerStore.loadSavedGuildStickers", async () => closure_1(10).timeAsync("\u{1F4BE}", "loadSavedGuildStickers", async () => closure_2_1(5724).getAsync(closure_1_0))), done: false };
               return obj6;
             }
           }

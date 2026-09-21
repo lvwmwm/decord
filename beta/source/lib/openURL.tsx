@@ -1,10 +1,10 @@
-// Module ID: 4445
-// Function ID: 4446
+// Module ID: 4449
+// Function ID: 4450
 // Name: openURL
-// Dependencies: [5, 4446, 8648, 1980, 2]
+// Dependencies: [5, 4450, 8653, 1984, 2]
 // Exports: default
 
-// Module 4445 (openURL)
+// Module 4449 (openURL)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_3 = async function _openURL(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -53,7 +53,7 @@ let closure_3 = async function _openURL(arg0, value) {
         const obj = { skipExtensionCheck: closure_130_1, analyticsLocations: [] };
         value.default(closure_130_0, obj);
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp15) {
       c4 = tmp;

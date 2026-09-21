@@ -1,43 +1,25 @@
-// Module ID: 9159
-// Function ID: 9160
+// Module ID: 9157
+// Function ID: 9158
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8629, 21, 4756, 576, 4451, 8988, 1115, 1978, 4438, 9160, 9167, 4752, 2]
-// Exports: default
+// Dependencies: [19, 17, 8634, 21, 4758, 580, 558, 568, 4455, 8986, 1119, 1982, 4442, 9158, 9165, 4754, 2]
 
-// Module 9159 (GameProfileDetails)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Server from "Server" /* 1978 */;
-import DateUtilsAll from "DateUtils" /* 4438 */;
-import LinkingDefault from "Linking" /* 4451 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import SKUUtils from "SKUUtils" /* 8988 */;
+// Module 9157 (GameProfileDetails)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Server from "Server" /* 1982 */;
+import DateUtilsAll from "DateUtils" /* 4442 */;
+import LinkingDefault from "Linking" /* 4455 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import SKUUtils from "SKUUtils" /* 8986 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-function GameProfileWebsiteButton(action) {
-  action = action.action;
-  const trackAction = action.trackAction;
-  const url = action.url;
-  const items = [trackAction, action, url];
-  ({ icon, title } = action);
-  return closure_8(closure_6, {
-    accessibilityRole: "button",
-    accessibilityLabel: title,
-    onPress: noop.useCallback(() => {
-      LinkingDefault.openURL(url);
-      trackAction(action);
-    }, items),
-    hitSlop: trackAction(576).space.PX_4,
-    children: icon
-  });
-}
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Pressable: metroRequire } = get_ActivityIndicator);
-const IGDB_ATTRIBUTION_LINK = fn(8629).IGDB_ATTRIBUTION_LINK;
+const IGDB_ATTRIBUTION_LINK = fn(8634).IGDB_ATTRIBUTION_LINK;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { gap: nativeDefault.space.PX_8 }, headerText: null, detailsContainer: null, detailsRow: null, detailsRowValue: null, detailsRowBottomBorder: null, platformsContainer: null, linksContainer: null };
 let obj3 = { gap: nativeDefault.space.PX_8 };
 obj2.headerText = { paddingHorizontal: nativeDefault.space.PX_8 };
@@ -54,10 +36,644 @@ obj2.platformsContainer = { flexDirection: "row", alignItems: "center", gap: nat
 let obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 obj2.linksContainer = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 let closure_10 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+  const cResult = action(568).c(8);
+  ({ icon, action } = url);
+  ({ title, trackAction } = url);
+  url = url.url;
+  if (cResult[0] === action) {
+    if (cResult[1] === trackAction) {
+      if (cResult[2] === url) {
+        let tmp3 = cResult[3];
+      }
+      if (cResult[4] === tmp3) {
+        if (cResult[5] === icon) {
+          if (cResult[6] === title) {
+            let tmp4 = cResult[7];
+          }
+          return tmp4;
+        }
+      }
+      const obj2 = { accessibilityRole: "button", accessibilityLabel: title, onPress: tmp3, hitSlop: trackAction(580).space.PX_4, children: icon };
+      const tmp8 = closure_8(closure_6, obj2);
+      cResult[4] = tmp3;
+      cResult[5] = icon;
+      cResult[6] = title;
+      cResult[7] = tmp8;
+      tmp4 = tmp8;
+    }
+  }
+  const fn = function l() {
+    LinkingDefault.openURL(url);
+    trackAction(action);
+  };
+  cResult[0] = action;
+  cResult[1] = trackAction;
+  cResult[2] = url;
+  cResult[3] = fn;
+  tmp3 = fn;
+}) : ((action) => {
+  action = action.action;
+  const trackAction = action.trackAction;
+  const url = action.url;
+  const items = [trackAction, action, url];
+  ({ icon, title } = action);
+  return closure_8(closure_6, {
+    accessibilityRole: "button",
+    accessibilityLabel: title,
+    onPress: noop.useCallback(() => {
+      LinkingDefault.openURL(url);
+      trackAction(action);
+    }, items),
+    hitSlop: trackAction(580).space.PX_4,
+    children: icon
+  });
+});
+ReactCompilerGating = fn(558);
+let obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileDetails.tsx");
 
-export default function GameProfileDetails(game) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = trackAction(568).c(71);
+  ({ game: platformsContainer, trackAction } = arg0);
+  const tmp4 = closure_10();
+  importDefault = tmp4;
+  if (null != platformsContainer) {
+    if (cResult[1] === platformsContainer) {
+      if (cResult[2] === tmp4.linksContainer) {
+        if (cResult[3] === tmp4.platformsContainer) {
+        }
+      }
+    }
+    let genres;
+    if (platformsContainer != null) {
+      genres = platformsContainer.genres;
+    }
+    if (cResult[6] !== genres) {
+      let joined;
+      if (platformsContainer != null) {
+        const genres1 = platformsContainer.genres;
+        const mapped = genres1.map(tmp(8986).getGenreText);
+        joined = mapped.join(", ");
+      }
+      let genres2;
+      if (platformsContainer != null) {
+        genres2 = platformsContainer.genres;
+      }
+      cResult[6] = genres2;
+      cResult[7] = joined;
+      let tmp8 = joined;
+    } else {
+      tmp8 = cResult[7];
+    }
+    let items = [];
+    if (null != tmp8) {
+      if ("" !== tmp8) {
+        if (cResult[8] !== platformsContainer.genres.length) {
+          if (1 !== platformsContainer.genres.length) {
+            const intl2 = tmp(1119).intl;
+            let stringResult = intl2.string(tmp(1119).t.pDgwYB);
+          } else {
+            const intl = tmp(1119).intl;
+            stringResult = intl.string(tmp(1119).t.mjFKqn);
+          }
+          cResult[8] = platformsContainer.genres.length;
+          cResult[9] = stringResult;
+        } else {
+          if (cResult[10] === tmp8) {
+            if (cResult[11] === tmp11) {
+              let tmp14 = cResult[12];
+            }
+            items.push(tmp14);
+          }
+          const obj2 = { label: cResult[9], value: tmp8 };
+          cResult[10] = tmp8;
+          cResult[11] = cResult[9];
+          cResult[12] = obj2;
+          tmp14 = obj2;
+        }
+      }
+    }
+    if (cResult[13] !== platformsContainer) {
+      let companyByRole;
+      if (platformsContainer != null) {
+        companyByRole = platformsContainer.getCompanyByRole(tmp(1982).GameCompanyRole.PUBLISHER);
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+        const fn = function w(name) {
+          return name.name;
+        };
+        cResult[16] = fn;
+        let tmp19 = fn;
+      } else {
+        tmp19 = cResult[16];
+      }
+      const mapped1 = companyByRole.map(tmp19);
+      const joined1 = mapped1.join(", ");
+      cResult[13] = platformsContainer;
+      cResult[14] = companyByRole;
+      cResult[15] = joined1;
+    } else {
+      let length = cResult[14];
+      if (null != cResult[15]) {
+        if ("" !== tmp16) {
+          if (cResult[17] !== length.length) {
+            if (1 !== length.length) {
+              const intl4 = tmp(1119).intl;
+              let stringResult1 = intl4.string(tmp(1119).t.Hc7Enk);
+            } else {
+              const intl3 = tmp(1119).intl;
+              stringResult1 = intl3.string(tmp(1119).t["4Byy/G"]);
+            }
+            length = length.length;
+            cResult[17] = length;
+            cResult[18] = stringResult1;
+          } else {
+            if (cResult[19] === tmp16) {
+              if (cResult[20] === tmp23) {
+                let tmp26 = cResult[21];
+              }
+              items.push(tmp26);
+            }
+            let obj3 = { label: cResult[18], value: tmp16 };
+            cResult[19] = tmp16;
+            cResult[20] = cResult[18];
+            cResult[21] = obj3;
+            tmp26 = obj3;
+          }
+        }
+      }
+      if (cResult[22] !== platformsContainer) {
+        let companyByRole1;
+        if (platformsContainer != null) {
+          companyByRole1 = platformsContainer.getCompanyByRole(tmp(1982).GameCompanyRole.DEVELOPER);
+        }
+        const _Symbol3 = Symbol;
+        if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+          const fn2 = function k(name) {
+            return name.name;
+          };
+          cResult[25] = fn2;
+          let tmp31 = fn2;
+        } else {
+          tmp31 = cResult[25];
+        }
+        const mapped2 = companyByRole1.map(tmp31);
+        const joined2 = mapped2.join(", ");
+        cResult[22] = platformsContainer;
+        cResult[23] = companyByRole1;
+        cResult[24] = joined2;
+      } else {
+        let length1 = cResult[23];
+        if (null != cResult[24]) {
+          if ("" !== tmp28) {
+            if (cResult[26] !== length1.length) {
+              if (1 !== length1.length) {
+                const intl6 = tmp(1119).intl;
+                let stringResult2 = intl6.string(tmp(1119).t.KATEJB);
+              } else {
+                const intl5 = tmp(1119).intl;
+                stringResult2 = intl5.string(tmp(1119).t.na3PT0);
+              }
+              length1 = length1.length;
+              cResult[26] = length1;
+              cResult[27] = stringResult2;
+            } else {
+              if (cResult[28] === tmp28) {
+                if (cResult[29] === tmp35) {
+                  let tmp38 = cResult[30];
+                }
+                items.push(tmp38);
+              }
+              const obj4 = { label: cResult[27], value: tmp28 };
+              cResult[28] = tmp28;
+              cResult[29] = cResult[27];
+              cResult[30] = obj4;
+              tmp38 = obj4;
+            }
+          }
+        }
+        let firstReleaseDate;
+        if (platformsContainer != null) {
+          firstReleaseDate = platformsContainer.firstReleaseDate;
+        }
+        if (null != firstReleaseDate) {
+          if ("" !== firstReleaseDate) {
+            const _Symbol5 = Symbol;
+            if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl7 = tmp(1119).intl;
+              const stringResult3 = intl7.string(tmp(1119).t.H3mPDT);
+              cResult[31] = stringResult3;
+              let tmp41 = stringResult3;
+            } else {
+              tmp41 = cResult[31];
+            }
+            if (cResult[32] !== firstReleaseDate) {
+              const _Date = Date;
+              const date = new Date(firstReleaseDate);
+              const dateFormatResult = arr(4442).dateFormat(date, "LL");
+              cResult[32] = firstReleaseDate;
+              cResult[33] = dateFormatResult;
+              let tmp43 = dateFormatResult;
+              const obj8 = arr(4442);
+            } else {
+              tmp43 = cResult[33];
+            }
+            if (cResult[34] !== tmp43) {
+              const obj5 = { label: tmp41, value: tmp43 };
+              cResult[34] = tmp43;
+              cResult[35] = obj5;
+              let tmp51 = obj5;
+            } else {
+              tmp51 = cResult[35];
+            }
+            items.push(tmp51);
+          }
+        }
+        let platforms;
+        if (platformsContainer != null) {
+          platforms = platformsContainer.platforms;
+        }
+        if (null != platforms) {
+          if (platforms.length > 0) {
+            if (cResult[36] !== platformsContainer.platforms.length) {
+              if (1 !== platformsContainer.platforms.length) {
+                const intl9 = tmp(1119).intl;
+                let stringResult4 = intl9.string(tmp(1119).t.PNqxNe);
+              } else {
+                const intl8 = tmp(1119).intl;
+                stringResult4 = intl8.string(tmp(1119).t["UxAag+"]);
+              }
+              cResult[36] = platformsContainer.platforms.length;
+              cResult[37] = stringResult4;
+            } else if (cResult[38] !== platforms) {
+              const _Symbol4 = Symbol;
+              if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
+                class F {
+                  constructor(arg0) {
+                    obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                    return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                  }
+                }
+                cResult[40] = F;
+                const tmp60 = F;
+              } else {
+                class F {
+                  constructor(arg0) {
+                    obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                    return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                  }
+                }
+              }
+              const mapped3 = platforms.map(tmp60);
+              cResult[38] = platforms;
+              cResult[39] = mapped3;
+            } else {
+              class F {
+                constructor(arg0) {
+                  obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                  return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                }
+              }
+              if (cResult[41] === tmp4.platformsContainer) {
+                class F {
+                  constructor(arg0) {
+                    obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                    return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                  }
+                }
+                if (cResult[44] === tmp54) {
+                  class F {
+                    constructor(arg0) {
+                      obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                      return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                    }
+                  }
+                  items.push(tmp67);
+                }
+                const obj6 = { label: tmp54, value: tmp63 };
+                cResult[44] = tmp54;
+                cResult[45] = tmp63;
+                cResult[46] = obj6;
+                tmp67 = obj6;
+              }
+              const obj7 = { style: tmp57, children: tmp58 };
+              const tmp66 = closure_8(closure_5, obj7);
+              cResult[41] = tmp4.platformsContainer;
+              cResult[42] = tmp58;
+              cResult[43] = tmp66;
+            }
+          }
+        }
+        let found;
+        if (platformsContainer != null) {
+          class F {
+            constructor(arg0) {
+              obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+              return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+            }
+          }
+          if (tmp70 != null) {
+            class F {
+              constructor(arg0) {
+                obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+              }
+            }
+            found = arr6.filter((item) => null != item);
+          }
+        }
+        if (found == null) {
+          class F {
+            constructor(arg0) {
+              obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+              return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+            }
+          }
+        }
+        if (null != found) {
+          class F {
+            constructor(arg0) {
+              obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+              return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+            }
+          }
+          if (found.length > 0) {
+            class F {
+              constructor(arg0) {
+                obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+              }
+            }
+            const _Symbol6 = Symbol;
+            if (cResult[47] === Symbol.for("react.memo_cache_sentinel")) {
+              class F {
+                constructor(arg0) {
+                  obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                  return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                }
+              }
+              const stringResult5 = obj12.string(tmp(1119).t["Oj3o1/"]);
+              cResult[47] = stringResult5;
+              const tmp71 = stringResult5;
+            } else {
+              class F {
+                constructor(arg0) {
+                  obj = { platform: arg0, size: "md", color: closure_1(closure_1_3[5]).colors.ICON_SUBTLE };
+                  return closure_1_8(trackAction(closure_1_3[13]).GameUpdatePlatformIcon, obj, arg0);
+                }
+              }
+            }
+            if (cResult[48] !== trackAction) {
+              class Z {
+                constructor(arg0) {
+                  url = arg0.url;
+                  obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                  return jsx(f48683, obj, url);
+                }
+              }
+              cResult[48] = trackAction;
+              cResult[49] = Z;
+              const tmp73 = Z;
+            } else {
+              class Z {
+                constructor(arg0) {
+                  url = arg0.url;
+                  obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                  return jsx(f48683, obj, url);
+                }
+              }
+            }
+            const obj9 = { style: tmp4.linksContainer, children: found.map(tmp73) };
+            const tmp76 = closure_8(closure_5, obj9);
+            if (cResult[50] !== tmp76) {
+              class Z {
+                constructor(arg0) {
+                  url = arg0.url;
+                  obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                  return jsx(f48683, obj, url);
+                }
+              }
+              tmp78[0] = tmp71;
+              tmp78[1] = tmp76;
+              cResult[50] = tmp76;
+              cResult[51] = tmp78;
+              const tmp77 = tmp78;
+            } else {
+              class Z {
+                constructor(arg0) {
+                  url = arg0.url;
+                  obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                  return jsx(f48683, obj, url);
+                }
+              }
+            }
+            items.push(tmp77);
+          }
+        }
+        if (items.length <= 0) {
+          class Z {
+            constructor(arg0) {
+              url = arg0.url;
+              obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+              return jsx(f48683, obj, url);
+            }
+          }
+          cResult[1] = platformsContainer;
+          ({ linksContainer: tmp3[2], platformsContainer } = tmp4);
+          cResult[3] = platformsContainer;
+          cResult[4] = trackAction;
+          cResult[5] = items;
+        } else {
+          class Z {
+            constructor(arg0) {
+              url = arg0.url;
+              obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+              return jsx(f48683, obj, url);
+            }
+          }
+          const _Symbol7 = Symbol;
+          if (cResult[52] === Symbol.for("react.memo_cache_sentinel")) {
+            class Z {
+              constructor(arg0) {
+                url = arg0.url;
+                obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                return jsx(f48683, obj, url);
+              }
+            }
+            const stringResult6 = obj14.string(tmp(1119).t["BwQ+9e"]);
+            const intl10 = tmp(1119).intl;
+            const obj10 = { igdbLink: IGDB_ATTRIBUTION_LINK };
+            const formatResult = intl10.format(tmp(1119).t.XPFZVl, obj10);
+            cResult[52] = stringResult6;
+            cResult[53] = formatResult;
+            let tmp81 = formatResult;
+            const tmp80 = stringResult6;
+          } else {
+            class Z {
+              constructor(arg0) {
+                url = arg0.url;
+                obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                return jsx(f48683, obj, url);
+              }
+            }
+            tmp81 = cResult[53];
+          }
+          if (cResult[54] !== tmp81) {
+            class Z {
+              constructor(arg0) {
+                url = arg0.url;
+                obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                return jsx(f48683, obj, url);
+              }
+            }
+            tmp86[0] = tmp80;
+            tmp86[1] = tmp81;
+            cResult[54] = tmp81;
+            cResult[55] = tmp86;
+            const tmp85 = tmp86;
+          } else {
+            class Z {
+              constructor(arg0) {
+                url = arg0.url;
+                obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+                return jsx(f48683, obj, url);
+              }
+            }
+          }
+          items.push(tmp85);
+        }
+      }
+    }
+  } else {
+    class Z {
+      constructor(arg0) {
+        url = arg0.url;
+        obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+        return jsx(f48683, obj, url);
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      class Z {
+        constructor(arg0) {
+          url = arg0.url;
+          obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+          return jsx(f48683, obj, url);
+        }
+      }
+      cResult[0] = tmp5;
+      arr = tmp5;
+    } else {
+      class Z {
+        constructor(arg0) {
+          url = arg0.url;
+          obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+          return jsx(f48683, obj, url);
+        }
+      }
+    }
+    if (0 === arr.length) {
+      class Z {
+        constructor(arg0) {
+          url = arg0.url;
+          obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+          return jsx(f48683, obj, url);
+        }
+      }
+    } else {
+      class Z {
+        constructor(arg0) {
+          url = arg0.url;
+          obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+          return jsx(f48683, obj, url);
+        }
+      }
+      const _Symbol8 = Symbol;
+      ({ container, headerText } = tmp4);
+      if (cResult[56] === Symbol.for("react.memo_cache_sentinel")) {
+        class Z {
+          constructor(arg0) {
+            url = arg0.url;
+            obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+            return jsx(f48683, obj, url);
+          }
+        }
+        const stringResult7 = obj16.string(tmp(1119).t["7OjmmH"]);
+        cResult[56] = stringResult7;
+        const tmp89 = stringResult7;
+      } else {
+        class Z {
+          constructor(arg0) {
+            url = arg0.url;
+            obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+            return jsx(f48683, obj, url);
+          }
+        }
+      }
+      if (cResult[57] !== tmp4.headerText) {
+        class Z {
+          constructor(arg0) {
+            url = arg0.url;
+            obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+            return jsx(f48683, obj, url);
+          }
+        }
+        const obj11 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp89 };
+        const tmp92 = closure_8(tmp(4754).Text, obj11);
+        cResult[57] = tmp4.headerText;
+        cResult[58] = tmp92;
+      } else {
+        class Z {
+          constructor(arg0) {
+            url = arg0.url;
+            obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+            return jsx(f48683, obj, url);
+          }
+        }
+      }
+      if (cResult[59] === arr) {
+        class Z {
+          constructor(arg0) {
+            url = arg0.url;
+            obj = { icon: arg0.icon, action: arg0.action, title: arg0.title, url, trackAction };
+            return jsx(f48683, obj, url);
+          }
+        }
+      }
+      const mapped4 = arr.map((children, index) => {
+        const items = [closure_1.detailsRow, ];
+        let prop = null;
+        if (arr.length > 1) {
+          prop = null;
+          if (index < arr2.length - 1) {
+            prop = tmp3.detailsRowBottomBorder;
+          }
+        }
+        const obj = { style: items, children: null };
+        items[1] = prop;
+        const items1 = [closure_2_8(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label }), ];
+        if (typeof children.value === "string") {
+          const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, style: tmp3.detailsRowValue, children: children.value };
+          value = closure_2_8(Text_Text.Text, obj3);
+        } else {
+          value = children.value;
+        }
+        items1[1] = value;
+        obj.children = items1;
+        return options(hasOwnProperty, obj, children.label);
+      });
+      cResult[59] = arr;
+      cResult[60] = tmp4.detailsRow;
+      cResult[61] = tmp4.detailsRowBottomBorder;
+      cResult[62] = tmp4.detailsRowValue;
+      cResult[63] = mapped4;
+    }
+  }
+}) : ((game) => {
   game = game.game;
   const trackAction = game.trackAction;
   const tmp = closure_10();
@@ -134,7 +750,7 @@ export default function GameProfileDetails(game) {
               if (obj != null) {
                 const websites = obj.websites;
                 if (websites != null) {
-                  const mapped3 = websites.map((item) => trackAction(9167)(item, trackAction(576).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((item) => trackAction(9165)(item, trackAction(580).colors.ICON_SUBTLE));
                   found = mapped3.filter((item) => null != item);
                 }
               }
@@ -153,10 +769,10 @@ export default function GameProfileDetails(game) {
                   style: closure_2.linksContainer,
                   children: found.map((icon) => {
                                 const url = icon.url;
-                                return closure_2_8(GameProfileWebsiteButton, { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction }, url);
+                                return closure_2_8(closure_2_11, { icon: icon.icon, action: icon.action, title: icon.title, url, trackAction }, url);
                               })
                 };
-                obj3.value = React6(hasOwnProperty, obj4);
+                obj3.value = closure_2_8(hasOwnProperty, obj4);
                 items.push(obj3);
               }
               if (items.length > 0) {
@@ -178,8 +794,8 @@ export default function GameProfileDetails(game) {
                 stringResult = intl8.string(util.t["UxAag+"]);
               }
               const obj7 = { label: stringResult, value: null };
-              const obj8 = { style: closure_2.platformsContainer, children: platforms.map((platform) => closure_1_8(game(9160).GameUpdatePlatformIcon, { platform, size: "md", color: trackAction(576).colors.ICON_SUBTLE }, platform)) };
-              obj7.value = React6(hasOwnProperty, obj8);
+              const obj8 = { style: closure_2.platformsContainer, children: platforms.map((platform) => closure_1_8(game(9158).GameUpdatePlatformIcon, { platform, size: "md", color: trackAction(580).colors.ICON_SUBTLE }, platform)) };
+              obj7.value = closure_2_8(hasOwnProperty, obj8);
               items.push(obj7);
             }
           } else {
@@ -221,9 +837,9 @@ export default function GameProfileDetails(game) {
   if (0 !== memo.length) {
     let obj = { style: tmp.container, children: null };
     let obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
-    let intl = game(memo[8]).intl;
-    obj2.children = intl.string(game(memo[8]).t["7OjmmH"]);
-    let items1 = [closure_8(game(memo[13]).Text, obj2), ];
+    let intl = game(memo[10]).intl;
+    obj2.children = intl.string(game(memo[10]).t["7OjmmH"]);
+    let items1 = [closure_8(game(memo[15]).Text, obj2), ];
     let obj3 = {
       style: tmp.detailsContainer,
       children: memo.map((children, index) => {
@@ -237,16 +853,16 @@ export default function GameProfileDetails(game) {
           }
           const obj = { style: items, children: null };
           items[1] = prop;
-          const items1 = [React6(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label }), ];
+          const items1 = [closure_2_8(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label }), ];
           if (typeof children.value === "string") {
             const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, style: tmp3.detailsRowValue, children: children.value };
-            value = React6(Text_Text.Text, obj3);
+            value = closure_2_8(Text_Text.Text, obj3);
           } else {
             value = children.value;
           }
           items1[1] = value;
           obj.children = items1;
-          return React7(hasOwnProperty, obj, children.label);
+          return options(hasOwnProperty, obj, children.label);
         })
     };
     items1[1] = closure_8(closure_5, obj3);
@@ -254,4 +870,4 @@ export default function GameProfileDetails(game) {
     tmp2 = closure_9(closure_5, obj);
   }
   return tmp2;
-};
+});

@@ -1,16 +1,18 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 10589
+// Function ID: 10590
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 4740, 4780, 1074, 7925, 7978, 11568, 7509, 4744, 7977, 11569, 11570, 4741, 2]
-// Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
+// Dependencies: [19, 4742, 4782, 1078, 7930, 7983, 558, 568, 10590, 7511, 4746, 7982, 10591, 10592, 4743, 2]
+// Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking
 
-// Module 11567 (MessageImpressionAnalyticsHelpers)
-import CodedLink from "CodedLink" /* 4744 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7977 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 11568 */;
+// Module 10589 (MessageImpressionAnalyticsHelpers)
+import c from "c" /* 568 */;
+import CodedLink from "CodedLink" /* 4746 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7511 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7982 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10590 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4740 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
+import InviteStore from "InviteStore" /* 4742 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
 
 const require = globalThis.__r;
 
@@ -23,11 +25,11 @@ function getVoiceInviteEmbedRenderInfo(state) {
           if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
             return null;
           } else {
-            const guildInviteExtendedType = tmp7(7977).getGuildInviteExtendedType(state);
-            if (guildInviteExtendedType !== tmp7(7977).GuildInviteExtendedType.VOICE_CHANNEL) {
+            const guildInviteExtendedType = tmp7(7982).getGuildInviteExtendedType(state);
+            if (guildInviteExtendedType !== tmp7(7982).GuildInviteExtendedType.VOICE_CHANNEL) {
               return null;
             } else {
-              const guild = state.guild;
+              guild = state.guild;
               let id;
               if (guild != null) {
                 id = guild.id;
@@ -35,18 +37,18 @@ function getVoiceInviteEmbedRenderInfo(state) {
               let tmp4 = null;
               if (null != id) {
                 const obj = { guildId: id, location: "mobile_invite_embed_impression" };
-                let enabled = tmp7(11569).getVoiceChannelListInviteExperiment(obj).enabled;
+                let enabled = tmp7(10591).getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = tmp7(11570).canShowVoiceChannelListInviteEmbed(state);
-                  const tmp7Result4 = tmp7(11570);
+                  enabled = tmp7(10592).canShowVoiceChannelListInviteEmbed(state);
+                  const tmp7Result4 = tmp7(10592);
                 }
                 const obj2 = { treatmentRendered: enabled };
                 tmp4 = obj2;
-                const tmp7Result3 = tmp7(11569);
+                const tmp7Result3 = tmp7(10591);
               }
               return tmp4;
             }
-            const tmp7Result = tmp7(7977);
+            const tmp7Result = tmp7(7982);
           }
           obj5 = InviteTypeUtils;
         }
@@ -55,14 +57,72 @@ function getVoiceInviteEmbedRenderInfo(state) {
   }
   return null;
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes: metroRequire, GuildFeatures: closure_7, InviteStates: closure_8, MessageFlags: closure_9 } = Constants);
-const LinkType = fn(7925).LinkType;
-const InviteTypes = fn(7978).InviteTypes;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
-
-export const useShouldTrackAnnouncementMessageViews = function useShouldTrackAnnouncementMessageViews(messages) {
+const LinkType = fn(7930).LinkType;
+const InviteTypes = fn(7983).InviteTypes;
+fn(558);
+let ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = channel(568).c(6);
+  ({ guild, channel } = arg0);
+  ({ messages, isMessagesReady } = arg0);
+  let features1;
+  if (guild != null) {
+    features1 = guild.features;
+  }
+  if (cResult[0] !== features1) {
+    let flag;
+    if (guild != null) {
+      const features = guild.features;
+      if (features != null) {
+        flag = features.has(constants2.COMMUNITY);
+      }
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    let features2;
+    if (guild != null) {
+      features2 = guild.features;
+    }
+    cResult[0] = features2;
+    cResult[1] = flag;
+    let tmp3 = flag;
+  } else {
+    tmp3 = cResult[1];
+  }
+  let tmp6 = channel.type === constants.GUILD_ANNOUNCEMENT && tmp3;
+  if (cResult[2] === channel.guild_id) {
+    if (cResult[3] === isMessagesReady) {
+      if (cResult[4] === messages) {
+        let tmp7 = cResult[5];
+      }
+      if (!tmp6) {
+        tmp6 = tmp7;
+      }
+      return tmp6;
+    }
+  }
+  let someResult = isMessagesReady;
+  if (isMessagesReady) {
+    someResult = messages.some((messageReference) => {
+      let hasFlagResult = null != messageReference.messageReference && null != messageReference.webhookId;
+      if (hasFlagResult) {
+        hasFlagResult = messageReference.hasFlag(constants4.IS_CROSSPOST);
+      }
+      if (hasFlagResult) {
+        hasFlagResult = null != channel.guild_id;
+      }
+      return hasFlagResult;
+    });
+  }
+  cResult[2] = channel.guild_id;
+  cResult[3] = isMessagesReady;
+  cResult[4] = messages;
+  cResult[5] = someResult;
+  tmp7 = someResult;
+}) : ((messages) => {
   ({ guild, channel } = messages);
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
@@ -101,8 +161,26 @@ export const useShouldTrackAnnouncementMessageViews = function useShouldTrackAnn
     }
     return tmp;
   }, items);
-};
-export const useShouldTrackRichPresenceInviteEmbedViews = function useShouldTrackRichPresenceInviteEmbedViews(messages) {
+});
+ReactCompilerGating = fn(558);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(3);
+  ({ messages, isMessagesReady } = arg0);
+  if (cResult[0] === isMessagesReady) {
+    if (cResult[1] === messages) {
+      let tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  let someResult = isMessagesReady;
+  if (isMessagesReady) {
+    someResult = messages.some((activity) => null != activity.activity && null != activity.activity.party_id && null != activity.application);
+  }
+  cResult[0] = isMessagesReady;
+  cResult[1] = messages;
+  cResult[2] = someResult;
+  tmp2 = someResult;
+}) : ((messages) => {
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
   const items = [messages, isMessagesReady];
@@ -113,7 +191,68 @@ export const useShouldTrackRichPresenceInviteEmbedViews = function useShouldTrac
     }
     return someResult;
   }, items);
-};
+});
+ReactCompilerGating = fn(558);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(4);
+  ({ guild, messages, isMessagesReady } = arg0);
+  let id;
+  if (guild != null) {
+    id = guild.id;
+  }
+  if (id == null) {
+    id = null;
+  }
+  const isGuildOfficialMessagesEnabled = GuildOfficialMessageUtils.useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
+  if (cResult[0] === isMessagesReady) {
+    if (cResult[1] === isGuildOfficialMessagesEnabled) {
+      if (cResult[2] === messages) {
+        let tmp4 = cResult[3];
+      }
+      return tmp4;
+    }
+  }
+  let someResult = isGuildOfficialMessagesEnabled;
+  if (isGuildOfficialMessagesEnabled) {
+    someResult = isMessagesReady;
+  }
+  if (someResult) {
+    someResult = messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
+  }
+  cResult[0] = isMessagesReady;
+  cResult[1] = isGuildOfficialMessagesEnabled;
+  cResult[2] = messages;
+  cResult[3] = someResult;
+  tmp4 = someResult;
+}) : ((isMessagesReady) => {
+  ({ guild, messages } = isMessagesReady);
+  isMessagesReady = isMessagesReady.isMessagesReady;
+  let isGuildOfficialMessagesEnabled;
+  let id;
+  if (guild != null) {
+    id = guild.id;
+  }
+  if (id == null) {
+    id = null;
+  }
+  isGuildOfficialMessagesEnabled = messages(isGuildOfficialMessagesEnabled[9]).useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
+  const items = [isGuildOfficialMessagesEnabled, isMessagesReady, messages];
+  return noop.useMemo(() => {
+    let someResult = isGuildOfficialMessagesEnabled;
+    if (isGuildOfficialMessagesEnabled) {
+      someResult = isMessagesReady;
+    }
+    if (someResult) {
+      someResult = messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
+    }
+    return someResult;
+  }, items);
+});
+const size = fn(2);
+let result = size.fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
+
+export const useShouldTrackAnnouncementMessageViews = tmp3;
+export const useShouldTrackRichPresenceInviteEmbedViews = tmp4;
 export const handleAnnouncementMessageViewTracking = function handleAnnouncementMessageViewTracking(arr, shouldTrackAnnouncementMessageViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
@@ -193,30 +332,7 @@ export const handleRichPresenceInviteEmbedViewTracking = function handleRichPres
     let obj = require("MessageViewTrackingManager");
   }
 };
-export const useShouldTrackOfficialMessageViews = function useShouldTrackOfficialMessageViews(isMessagesReady) {
-  ({ guild, messages } = isMessagesReady);
-  isMessagesReady = isMessagesReady.isMessagesReady;
-  let isGuildOfficialMessagesEnabled;
-  let id;
-  if (guild != null) {
-    id = guild.id;
-  }
-  if (id == null) {
-    id = null;
-  }
-  isGuildOfficialMessagesEnabled = messages(isGuildOfficialMessagesEnabled[7]).useIsGuildOfficialMessagesEnabled(id, "useShouldTrackOfficialMessageViews");
-  const items = [isGuildOfficialMessagesEnabled, isMessagesReady, messages];
-  return noop.useMemo(() => {
-    let someResult = isGuildOfficialMessagesEnabled;
-    if (isGuildOfficialMessagesEnabled) {
-      someResult = isMessagesReady;
-    }
-    if (someResult) {
-      someResult = messages.some((hasFlag) => hasFlag.hasFlag(constants.IS_GUILD_OFFICIAL));
-    }
-    return someResult;
-  }, items);
-};
+export const useShouldTrackOfficialMessageViews = tmp5;
 export const handleOfficialMessageViewTracking = function handleOfficialMessageViewTracking(arr, shouldTrackOfficialMessageViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
@@ -240,7 +356,27 @@ export const handleOfficialMessageViewTracking = function handleOfficialMessageV
     }
   }
 };
-export const useShouldTrackVoiceInviteEmbedViews = function useShouldTrackVoiceInviteEmbedViews(messages) {
+export const useShouldTrackVoiceInviteEmbedViews = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(3);
+  ({ messages, isMessagesReady } = arg0);
+  if (cResult[0] === isMessagesReady) {
+    if (cResult[1] === messages) {
+      let tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  let someResult = isMessagesReady;
+  if (isMessagesReady) {
+    someResult = messages.some((codedLinks) => {
+      codedLinks = codedLinks.codedLinks;
+      return codedLinks.some((type) => type.type === closure_1_0(closure_1_2[10]).CodedLinkType.INVITE);
+    });
+  }
+  cResult[0] = isMessagesReady;
+  cResult[1] = messages;
+  cResult[2] = someResult;
+  tmp2 = someResult;
+}) : ((messages) => {
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
   const items = [messages, isMessagesReady];
@@ -249,12 +385,12 @@ export const useShouldTrackVoiceInviteEmbedViews = function useShouldTrackVoiceI
     if (isMessagesReady) {
       someResult = messages.some((codedLinks) => {
         codedLinks = codedLinks.codedLinks;
-        return codedLinks.some((type) => type.type === closure_1_0(closure_1_2[8]).CodedLinkType.INVITE);
+        return codedLinks.some((type) => type.type === closure_1_0(closure_1_2[10]).CodedLinkType.INVITE);
       });
     }
     return someResult;
   }, items);
-};
+});
 export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEmbedViews, guildId, channel) {
   _require = guildId;
   importDefault = channel;
@@ -284,7 +420,7 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
                   id = null;
                 }
                 let tmp10 = id;
-                let guild = tmp34.guild;
+                guild = tmp34.guild;
                 let id1;
                 if (guild != null) {
                   id1 = guild.id;
@@ -303,14 +439,14 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
                 }
                 let obj = { type: null, messageId: null, channelId: null, guildId: null, inviteCode: null, inviteGuildId: null, inviteChannelId: null, inviteInstanceId: null, treatmentRendered: null, hasActiveStream: null };
                 let tmp20 = someResult;
-                obj.type = tmp7(11568).MessageViewTrackingType.VOICE_INVITE_EMBED;
+                obj.type = tmp7(10590).MessageViewTrackingType.VOICE_INVITE_EMBED;
                 obj.messageId = message.id;
                 obj.channelId = id.id;
                 obj.guildId = guildId;
                 obj.inviteCode = tmp6.code;
                 obj.inviteGuildId = tmp13;
                 obj.inviteChannelId = tmp10;
-                let tmp7Result = tmp7(4741);
+                let tmp7Result = tmp7(4743);
                 let inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;

@@ -1,31 +1,31 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 17733
+// Function ID: 17734
 // Name: AgeVerificationManager
-// Dependencies: [2041, 4976, 2095, 1372, 1074, 8670, 3, 1096, 7698, 7546, 7363, 1978, 5640, 5641, 8865, 5489, 2]
+// Dependencies: [2045, 4978, 2099, 1376, 1078, 8675, 3, 1100, 7703, 7548, 7365, 1982, 5642, 5643, 8870, 5491, 2]
 
-// Module 17730 (AgeVerificationManager)
+// Module 17733 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
-import Server from "Server" /* 1978 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5489 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5641 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8865 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 4976 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1100 */;
+import Server from "Server" /* 1982 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5491 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8870 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MessageStore from "MessageStore" /* 4978 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserStore from "UserStore" /* 1376 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
 function handleMessageCreate(channelId) {
   const message = MessageStore.getMessage(channelId.channelId, channelId.message.id);
   const AGE_VERIFICATION_SYSTEM_NOTIFICATION = MessageEmbedTypes.MessageEmbedTypes.AGE_VERIFICATION_SYSTEM_NOTIFICATION;
 }
-const transformUser = fn(1372).transformUser;
-const Constants = fn(1074);
+const transformUser = fn(1376).transformUser;
+const Constants = fn(1078);
 ({ ChannelTypes: closure_8, MAX_MESSAGES_PER_CHANNEL: closure_9 } = Constants);
-const SafetyToastType = fn(8670).SafetyToastType;
+const SafetyToastType = fn(8675).SafetyToastType;
 let closure_10 = new LoggerDefault("AgeVerificationManager");
 const prototype = function AgeVerificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -83,7 +83,7 @@ const prototype = function AgeVerificationManager() {
         }
         if (tmp20) {
           (function handleLoadChannelMessages(channelId) {
-            const messages = _true(7698).fetchMessages({ channelId, limit });
+            const messages = _true(7703).fetchMessages({ channelId, limit });
           })(tmp16);
           (function handleLoadForumPosts(arg0) {
             channel = channel.getChannel(arg0);
@@ -100,8 +100,8 @@ const prototype = function AgeVerificationManager() {
               tmp4 = type1 !== tmp3.GUILD_MEDIA;
             }
             if (!tmp4) {
-              channelId(7546).preloadForumThreads(channel);
-              const obj = channelId(7546);
+              channelId(7548).preloadForumThreads(channel);
+              const obj = channelId(7548);
             }
           })(tmp16);
         }

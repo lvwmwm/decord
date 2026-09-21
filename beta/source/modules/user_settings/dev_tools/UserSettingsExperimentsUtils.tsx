@@ -1,11 +1,11 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 11942
+// Function ID: 11943
 // Name: UserSettingsExperimentsUtils
-// Dependencies: [4865, 2]
+// Dependencies: [4867, 2]
 // Exports: getBestMatches, getEntries, getExperimentDateFromId, sortEntries
 
-// Module 12067 (UserSettingsExperimentsUtils)
-import flattenDefault from "flatten" /* 4865 */;
+// Module 11942 (UserSettingsExperimentsUtils)
+import flattenDefault from "flatten" /* 4867 */;
 import size from "module_2" /* 2 */;
 
 function matchesDeep(item10014, item10021) {
@@ -110,14 +110,14 @@ export const sortEntries = function sortEntries(entries, memo1) {
     return title.localeCompare(id2.experiment.title);
   });
 };
-export const getBestMatches = function getBestMatches(arg0, str) {
+export const getBestMatches = function getBestMatches(tmpResult3, str) {
   const parts = str.split(/\s+/g);
   const found = parts.filter((item) => "" !== item);
   if (0 === found.length) {
-    return arg0;
+    return tmpResult3;
   } else {
     const items = [];
-    const iter = arg0[Symbol.iterator]();
+    const iter = tmpResult3[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp4 = nextResult;

@@ -1,19 +1,19 @@
-// Module ID: 4823
-// Function ID: 4824
+// Module ID: 4825
+// Function ID: 4826
 // Name: BaseConnection
-// Dependencies: [5, 4781, 4814, 4824, 4826, 4827, 4828, 4857, 2]
+// Dependencies: [5, 4783, 4816, 4826, 4828, 4829, 4830, 4859, 2]
 
-// Module 4823 (BaseConnection)
-import VideoQualityManager from "VideoQualityManager" /* 4824 */;
-import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 4826 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4827 */;
-import cloneDeepDefault from "cloneDeep" /* 4828 */;
-import flatRestDefault from "flatRest" /* 4857 */;
+// Module 4825 (BaseConnection)
+import VideoQualityManager from "VideoQualityManager" /* 4826 */;
+import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 4828 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 4829 */;
+import cloneDeepDefault from "cloneDeep" /* 4830 */;
+import flatRestDefault from "flatRest" /* 4859 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4814 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4816 */;
 
 require = fn;
-const Constants = fn(4781);
+const Constants = fn(4783);
 ({ ConnectionStates: closure_4, DEFAULT_VOICE_BITRATE: hasOwnProperty, MediaTypes: metroRequire, ResolutionTypes: closure_7, MediaEngineContextTypes: closure_8, VIDEO_QUALITY_FRAMERATE: closure_9, SIMULCAST_HQ_QUALITY: c10 } = Constants);
 let closure_11 = 0;
 class BaseConnection extends tmp3 {
@@ -302,7 +302,7 @@ prototype["getLocalWant"] = function getLocalWant(arg0) {
   let someResult = videoStreamParameters.some((ssrc) => {
     let tmp = ssrc.ssrc === closure_0;
     if (tmp) {
-      tmp = ssrc.quality === closure_2_10;
+      tmp = ssrc.quality === v65535;
     }
     return tmp;
   });
@@ -387,4 +387,4 @@ let size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/BaseConnection.tsx");
 
 export default BaseConnection;
-export const BaseConnectionEvent = fn(4827).BaseConnectionEvent;
+export const BaseConnectionEvent = fn(4829).BaseConnectionEvent;

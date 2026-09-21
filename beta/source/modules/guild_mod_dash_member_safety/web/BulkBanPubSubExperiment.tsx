@@ -1,21 +1,32 @@
-// Module ID: 7564
-// Function ID: 7565
+// Module ID: 7566
+// Function ID: 7567
 // Name: BulkBanPubSubExperiment
-// Dependencies: [1434, 2]
-// Exports: useBulkBanPubSubExperimentConfig
+// Dependencies: [1438, 558, 568, 2]
 
-// Module 7564 (BulkBanPubSubExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 7566 (BulkBanPubSubExperiment)
+import c from "c" /* 568 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-pubsub-bulk-ban-users", kind: "user", defaultConfig: { usePubSub: false }, variations: null };
-const obj2 = { 1: null };
+let obj2 = { 1: null };
 obj2[1] = { usePubSub: true };
 obj.variations = obj2;
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/web/BulkBanPubSubExperiment.tsx");
 
 export default apexExperiment;
-export const useBulkBanPubSubExperimentConfig = function useBulkBanPubSubExperimentConfig(location) {
-  return apexExperiment.useConfig({ location: location.location });
-};
+export const useBulkBanPubSubExperimentConfig = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(2);
+  const _location = location.location;
+  if (cResult[0] !== _location) {
+    const obj2 = { location: _location };
+    cResult[0] = _location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return apexExperiment.useConfig(tmp2);
+}) : ((location) => apexExperiment.useConfig({ location: location.location }));

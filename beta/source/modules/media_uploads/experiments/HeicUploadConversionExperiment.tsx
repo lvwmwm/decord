@@ -1,10 +1,10 @@
-// Module ID: 5389
-// Function ID: 5390
+// Module ID: 5391
+// Function ID: 5392
 // Name: HeicUploadConversionExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 5389 (HeicUploadConversionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5391 (HeicUploadConversionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-08-heic-upload-conversion", kind: "user", defaultConfig: { enabled: false, quality: 60 }, variations: { 0: { enabled: false, quality: 60 }, 1: { enabled: true, quality: 60, maxFileSizeBytes: 20971520 }, 2: { enabled: true, quality: 80, maxFileSizeBytes: 20971520 } } });

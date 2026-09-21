@@ -1,22 +1,22 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12444
+// Function ID: 12445
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4756, 1364, 576, 4607, 8117, 4690, 4752, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 1368, 580, 4610, 558, 568, 8122, 4693, 1119, 4754, 2]
 
-// Module 12550 (NewBadge)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useThemeDefault from "useTheme" /* 4690 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8117 */;
+// Module 12444 (NewBadge)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import useThemeDefault from "useTheme" /* 4693 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8122 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
   let num = 0;
   if (obj.isIOS()) {
@@ -27,18 +27,60 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
   obj = PlatformUtils;
   if (tmpResult.isThemeLight(arg1)) {
     if (!arg0) {
-      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.BACKGROUND_BRAND;
+      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(580).colors.BACKGROUND_BRAND;
     }
     obj3.backgroundColor = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj2.base = obj3;
     return obj2;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(576).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(580).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
-export default function NewBadge() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(7);
+  const tmp4 = useIsUsingClientThemeDefault();
+  const tmp5 = useThemeDefault();
+  const tmp6 = closure_5(tmp4, tmp5);
+  ({ base, text } = tmp6);
+  if (obj2.isThemeLight(tmp5)) {
+    let str = "text-overlay-light";
+  } else {
+    str = "text-brand";
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.y2b7CA);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === tmp6.text) {
+    if (cResult[2] === str) {
+      let tmp9 = cResult[3];
+    }
+    if (cResult[4] === tmp6.base) {
+      if (cResult[5] === tmp9) {
+        let tmp11 = cResult[6];
+      }
+      return tmp11;
+    }
+    const obj3 = { style: base, children: tmp9 };
+    const tmp14 = <View style={base}>{tmp9}</View>;
+    cResult[4] = tmp6.base;
+    cResult[5] = tmp9;
+    cResult[6] = tmp14;
+    tmp11 = tmp14;
+  }
+  const tmp10 = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: text, color: str, children: first });
+  cResult[1] = tmp6.text;
+  cResult[2] = str;
+  cResult[3] = tmp10;
+  tmp9 = tmp10;
+}) : (() => {
   const tmp2 = useIsUsingClientThemeDefault();
   const tmp3 = useThemeDefault();
   const tmp4 = closure_5(tmp2, tmp3);
@@ -50,8 +92,8 @@ export default function NewBadge() {
     str = "text-brand";
   }
   obj2.color = str;
-  const intl = tmp7(1115).intl;
+  const intl = tmp7(1119).intl;
   obj2.children = intl.string(util.t.y2b7CA);
   obj.children = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
   return <View style={tmp4.base}>{null}</View>;
-};
+});

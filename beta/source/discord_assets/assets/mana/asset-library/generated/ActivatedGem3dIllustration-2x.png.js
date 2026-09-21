@@ -1,8 +1,8 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 5949
+// Function ID: 5950
 // Dependencies: [2]
 
-// Module 5951
+// Module 5949
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ActivatedGem3dIllustration-2x.png.js");

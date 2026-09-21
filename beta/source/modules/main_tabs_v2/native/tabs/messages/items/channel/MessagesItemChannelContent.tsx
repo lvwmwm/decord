@@ -1,62 +1,30 @@
 // Module ID: 16374
 // Function ID: 16375
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 4771, 4938, 21, 4756, 576, 1177, 8188, 7212, 10400, 11220, 4464, 4690, 504, 15589, 4348, 8645, 16375, 11, 4909, 16376, 4457, 11160, 11161, 4752, 10013, 9552, 10365, 8123, 11138, 1115, 16378, 2]
+// Dependencies: [19, 17, 4773, 4940, 21, 4758, 580, 558, 568, 1181, 8193, 7210, 11540, 11261, 4693, 4469, 504, 15578, 4352, 8650, 11, 16375, 4911, 16376, 4462, 11202, 11203, 4754, 9980, 9548, 12972, 8128, 11180, 1119, 16378, 2]
 
 // Module 16374 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import useThemeDefault from "useTheme" /* 4690 */;
-import useChannelNameDefault from "useChannelName" /* 4909 */;
-import _modDef7212 from "module_7212" /* 7212 */;
-import _modDef8188 from "module_8188" /* 8188 */;
-import _modDef10400 from "module_10400" /* 10400 */;
-import _modDef11220 from "module_11220" /* 11220 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 15589 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useThemeDefault from "useTheme" /* 4693 */;
+import useChannelNameDefault from "useChannelName" /* 4911 */;
+import _modDef7210 from "module_7210" /* 7210 */;
+import _modDef8193 from "module_8193" /* 8193 */;
+import _modDef11261 from "module_11261" /* 11261 */;
+import _modDef11540 from "module_11540" /* 11540 */;
 import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 16376 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
 
+const native = channelMutedIcon(1181);
+const useMessagePreviewsDefault = tmp4(15578);
 require = fn;
-function MessagesItemChannelContentIcon(selected) {
-  ({ muted, favorite, ignored, blocked } = selected);
-  const tmp = closure_11(selected.selected);
-  if (blocked) {
-    const obj2 = { source: _modDef8188, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
-    const items = [, ];
-    ({ channelIcon: arr4[0], channelMutedIcon: arr4[1] } = tmp);
-    obj2.style = items;
-    let tmp2 = timestampProducer(native.Icon, obj2);
-  } else if (ignored) {
-    const obj3 = { source: _modDef7212, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
-    const items1 = [, ];
-    ({ channelIcon: arr3[0], channelIgnoredIcon: arr3[1] } = tmp);
-    obj3.style = items1;
-    tmp2 = timestampProducer(native.Icon, obj3);
-  } else if (muted) {
-    const obj4 = { source: _modDef10400, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
-    const items2 = [, ];
-    ({ channelIcon: arr2[0], channelMutedIcon: arr2[1] } = tmp);
-    obj4.style = items2;
-    tmp2 = timestampProducer(native.Icon, obj4);
-  } else {
-    tmp2 = null;
-    if (favorite) {
-      const obj = { source: _modDef11220, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
-      const items3 = [, ];
-      ({ channelIcon: arr[0], channelFavoriteIcon: arr[1] } = tmp);
-      obj.style = items3;
-      tmp2 = timestampProducer(native.Icon, obj);
-    }
-  }
-  return tmp2;
-}
 const View = fn(17).View;
-const UnreadSetting = fn(4938).UnreadSetting;
+const UnreadSetting = fn(4940).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-let createStyles = fn(4756);
+let createStyles = fn(4758);
 let obj = { content: { flex: 1 }, channelIcon: { alignSelf: "center" }, channelNameAndAccessories: { flexDirection: "row", alignItems: "center", width: "100%" }, channelIcons: { flexDirection: "row", alignItems: "center" }, channelAccessoriesContainer: { flexDirection: "row", justifyContent: "flex-end", marginLeft: nativeDefault.space.PX_4 }, channelAccessories: null, channelNameAndBadge: null, botTag: null, contentPadded: null };
 let obj3 = { flexDirection: "row", justifyContent: "flex-end", marginLeft: nativeDefault.space.PX_4 };
 obj.channelAccessories = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", borderRadius: nativeDefault.radii.xs, paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: 1 };
@@ -67,7 +35,7 @@ obj.botTag = { marginRight: nativeDefault.space.PX_4 };
 let obj6 = { marginRight: nativeDefault.space.PX_4 };
 obj.contentPadded = { paddingRight: nativeDefault.space.PX_40 };
 let closure_9 = createStyles.createStyles(obj);
-createStyles = fn(4756);
+createStyles = fn(4758);
 let closure_10 = createStyles.createStyles((arg0, arg1, arg2) => {
   if (arg2) {
     let MOBILE_TEXT_HEADING_PRIMARY = nativeDefault.colors.TEXT_MUTED;
@@ -82,30 +50,218 @@ let closure_10 = createStyles.createStyles((arg0, arg1, arg2) => {
     MOBILE_TEXT_HEADING_PRIMARY = nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
     tmp5 = importDefault;
   }
-  const obj = { channelText: { color: MOBILE_TEXT_HEADING_PRIMARY }, channelName: { flexShrink: 1 }, timestamp: { color: tmp5(576).colors.TEXT_SUBTLE } };
+  const obj = { channelText: { color: MOBILE_TEXT_HEADING_PRIMARY }, channelName: { flexShrink: 1 }, timestamp: { color: tmp5(580).colors.TEXT_SUBTLE } };
   return obj;
 });
-createStyles = fn(4756);
+createStyles = fn(4758);
 let closure_11 = createStyles.createStyles((arg0) => {
   const obj = { channelIcon: { marginRight: nativeDefault.space.PX_4 }, channelMutedIcon: null, channelFavoriteIcon: null, channelIgnoredIcon: null };
   const colors = nativeDefault.colors;
   obj.channelMutedIcon = { tintColor: arg0 ? colors.ICON_SUBTLE : colors.ICON_MUTED };
-  const colors2 = tmp(576).colors;
+  const colors2 = tmp(580).colors;
   obj.channelFavoriteIcon = { tintColor: arg0 ? colors2.ICON_SUBTLE : colors2.ICON_MUTED };
-  const colors3 = tmp(576).colors;
+  const colors3 = tmp(580).colors;
   obj.channelIgnoredIcon = { tintColor: arg0 ? colors3.ICON_SUBTLE : colors3.ICON_MUTED };
   return obj;
 });
+let ReactCompilerGating = fn(558);
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+  channelMutedIcon = require;
+  let items = dependencyMap;
+  const cResult = c.c(12);
+  ({ muted, favorite, ignored, blocked } = selected);
+  channelMutedIcon2 = closure_11(selected.selected);
+  if (blocked) {
+    if (cResult[0] === channelMutedIcon2.channelIcon) {
+    }
+    const obj2 = { source: _modDef8193, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    items = [, ];
+    ({ channelIcon: arr[0], channelMutedIcon } = channelMutedIcon2);
+    items[1] = channelMutedIcon;
+    obj2.style = items;
+    const tmp21 = timestampProducer(native.Icon, obj2);
+    ({ channelIcon: tmp[0], channelMutedIcon: channelMutedIcon2 } = channelMutedIcon2);
+    cResult[1] = channelMutedIcon2;
+    cResult[2] = tmp21;
+  } else if (ignored) {
+    if (cResult[3] === channelMutedIcon2.channelIcon) {
+    }
+    const obj3 = { source: _modDef7210, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    const items1 = [, ];
+    ({ channelIcon: arr4[0], channelIgnoredIcon: arr4[1] } = channelMutedIcon2);
+    obj3.style = items1;
+    const tmp16 = timestampProducer(native.Icon, obj3);
+    cResult[3] = channelMutedIcon2.channelIcon;
+    cResult[4] = channelMutedIcon2.channelIgnoredIcon;
+    cResult[5] = tmp16;
+  } else if (muted) {
+    if (cResult[6] === channelMutedIcon2.channelIcon) {
+    }
+    const obj4 = { source: _modDef11540, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    const items2 = [, ];
+    ({ channelIcon: arr3[0], channelMutedIcon: arr3[1] } = channelMutedIcon2);
+    obj4.style = items2;
+    const tmp11 = timestampProducer(native.Icon, obj4);
+    cResult[6] = channelMutedIcon2.channelIcon;
+    cResult[7] = channelMutedIcon2.channelMutedIcon;
+    cResult[8] = tmp11;
+  } else if (!favorite) {
+    return null;
+  } else {
+    if (cResult[9] === channelMutedIcon2.channelFavoriteIcon) {
+    }
+    const obj5 = { source: _modDef11261, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    const items3 = [, ];
+    ({ channelIcon: arr2[0], channelFavoriteIcon: arr2[1] } = channelMutedIcon2);
+    obj5.style = items3;
+    const tmp6 = timestampProducer(native.Icon, obj5);
+    cResult[9] = channelMutedIcon2.channelFavoriteIcon;
+    cResult[10] = channelMutedIcon2.channelIcon;
+    cResult[11] = tmp6;
+  }
+}) : ((selected) => {
+  ({ muted, favorite, ignored, blocked } = selected);
+  const tmp = closure_11(selected.selected);
+  if (blocked) {
+    const obj2 = { source: _modDef8193, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    const items = [, ];
+    ({ channelIcon: arr4[0], channelMutedIcon: arr4[1] } = tmp);
+    obj2.style = items;
+    let tmp2 = timestampProducer(native.Icon, obj2);
+  } else if (ignored) {
+    const obj3 = { source: _modDef7210, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    const items1 = [, ];
+    ({ channelIcon: arr3[0], channelIgnoredIcon: arr3[1] } = tmp);
+    obj3.style = items1;
+    tmp2 = timestampProducer(native.Icon, obj3);
+  } else if (muted) {
+    const obj4 = { source: _modDef11540, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+    const items2 = [, ];
+    ({ channelIcon: arr2[0], channelMutedIcon: arr2[1] } = tmp);
+    obj4.style = items2;
+    tmp2 = timestampProducer(native.Icon, obj4);
+  } else {
+    tmp2 = null;
+    if (favorite) {
+      const obj = { source: _modDef11261, size: native.Icon.Sizes.EXTRA_SMALL, style: null };
+      const items3 = [, ];
+      ({ channelIcon: arr[0], channelFavoriteIcon: arr[1] } = tmp);
+      obj.style = items3;
+      tmp2 = timestampProducer(native.Icon, obj);
+    }
+  }
+  return tmp2;
+});
+ReactCompilerGating = fn(558);
 let obj7 = { paddingRight: nativeDefault.space.PX_40 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelContent.tsx");
 
-export default noop.memo(function MessagesItemChannelContent(channel) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = channel(568).c(104);
+  channel = channel.channel;
+  ({ channelSelected, favorite, muted, ignored, blocked, hasActivity, hasUnreadMessages, hasNameplate } = channel);
+  const tmp5 = useThemeDefault();
+  if (cResult[0] !== tmp5) {
+    const isThemeLightResult = tmp(4469).isThemeLight(tmp5);
+    cResult[0] = tmp5;
+    cResult[1] = isThemeLightResult;
+    const tmpResult = tmp(4469);
+  }
+  let tmp8 = hasUnreadMessages;
+  if (hasUnreadMessages) {
+    tmp8 = channel.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
+  }
+  let tmp10 = muted;
+  if (!muted) {
+    tmp10 = ignored;
+  }
+  if (!tmp10) {
+    tmp10 = blocked;
+  }
+  if (tmp10) {
+    tmp10 = !channelSelected;
+  }
+  closure_9();
+  closure_10(channelSelected, tmp8, tmp10);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore];
+    cResult[2] = items;
+    let tmp13 = items;
+  } else {
+    tmp13 = cResult[2];
+  }
+  if (cResult[3] !== channel.id) {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+    cResult[3] = channel.id;
+    cResult[4] = D;
+    const tmp15 = D;
+  } else {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+  }
+  const obj = channel(568);
+  const stateFromStores = channel(504).useStateFromStores(tmp13, tmp15);
+  if (cResult[5] !== hasUnreadMessages) {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+    tmp18[0] = hasUnreadMessages;
+    cResult[5] = hasUnreadMessages;
+    cResult[6] = tmp18;
+    const tmp17 = tmp18;
+  } else {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+  }
+  const tmp19 = useMessagePreviewsDefault(channel, tmp17);
+  if (cResult[7] === channel.id) {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+  }
+  let tmp20 = null != tmp19;
+  if (tmp20) {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+    tmp20 = obj4.diff(tmp19.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
+    const tmp21 = obj4.diff(tmp19.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
+  }
+  if (tmp20) {
+    class D {
+      constructor() {
+        return closure_4.lastMessageId(channel.id);
+      }
+    }
+  }
+  cResult[7] = channel.id;
+  cResult[8] = hasActivity;
+  cResult[9] = hasUnreadMessages;
+  cResult[10] = tmp19;
+  cResult[11] = tmp20;
+}) : ((channel) => {
   channel = channel.channel;
   ({ channelSelected, muted, ignored, blocked, hasUnreadMessages, hasNameplate } = channel);
   ({ favorite, hasActivity, resolvedUnreadSetting } = channel);
   let tmp5 = hasUnreadMessages;
-  const obj = channel(4464);
+  const obj = channel(4469);
   if (hasUnreadMessages) {
     tmp5 = resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES;
   }
@@ -121,18 +277,18 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
   }
   const tmp8 = closure_9();
   const tmp9 = closure_10(channelSelected, tmp5, tmp7);
-  const isThemeLightResult = channel(4464).isThemeLight(useThemeDefault());
+  const isThemeLightResult = channel(4469).isThemeLight(useThemeDefault());
   const items = [ReadStateStore];
   const stateFromStores = channel(504).useStateFromStores(items, () => ReadStateStore.lastMessageId(channel.id));
   const tmp11 = useMessagePreviewsDefault(channel, { unread: hasUnreadMessages });
   let tmp12 = null != tmp11;
   if (tmp12) {
-    const obj3 = tmp3(4348)();
-    tmp12 = tmp3(4348)().diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
-    const tmp13 = tmp3(4348)().diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
+    const obj3 = tmp3(4352)();
+    tmp12 = tmp3(4352)().diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
+    const tmp13 = tmp3(4352)().diff(tmp11.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
   }
   if (tmp12) {
-    tmp12 = !tmp3(8645)(channel.id);
+    tmp12 = !tmp3(8650)(channel.id);
   }
   const tmpResult = channel(504);
   const tmpResult3 = channel(16375);
@@ -151,7 +307,7 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
   const waveShouldShow = tmp17.waveShouldShow;
   let obj4 = { variant: null, style: null, lineClamp: 1, ellipsizeMode: "tail" };
   const obj2 = { timestamp: SnowflakeUtilsDefault.extractTimestamp(id) };
-  obj4.variant = channel(4457).useToken(nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE);
+  obj4.variant = channel(4462).useToken(nativeDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE);
   const items1 = [, ];
   ({ channelText: arr2[0], channelName: arr2[1] } = tmp9);
   obj4.style = items1;
@@ -162,29 +318,29 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
     if (null != channel.recipients) {
       if (channel.recipients.length > 0) {
         const obj8 = { userId: channel.recipients[0], userName: tmp16, effectDisplayType: null };
-        const EffectDisplayType = tmp(11161).EffectDisplayType;
+        const EffectDisplayType = tmp(11203).EffectDisplayType;
         obj8.effectDisplayType = channelSelected ? EffectDisplayType.STATIC : EffectDisplayType.PLAIN;
         obj4 = Object.assign(obj4);
-        closure_6(tmp3(11160), obj8);
-        const tmp3Result4 = tmp3(11160);
+        closure_6(tmp3(11202), obj8);
+        const tmp3Result4 = tmp3(11202);
       }
     }
   }
   const obj9 = {};
   const merged = Object.assign(obj4);
   obj9.children = tmp16;
-  const items2 = [closure_6(channel(4752).Text, obj9), , ];
+  const items2 = [closure_6(channel(4754).Text, obj9), , ];
   let tmp20Result = null;
   if (tmp15) {
     const obj10 = { userId: channel.recipients[0], disabledTooltip: true };
-    tmp20Result = tmp20(tmp3(10013), obj10);
+    tmp20Result = tmp20(tmp3(9980), obj10);
   }
   items2[1] = tmp20Result;
   let tmp20Result5 = null;
   if (channel.isSystemDM()) {
-    const obj11 = { style: tmp8.botTag, type: tmp3(9552).Types.SYSTEM_DM, verified: true };
-    tmp20Result5 = tmp20(tmp3(9552), obj11);
-    const tmp3Result5 = tmp3(9552);
+    const obj11 = { style: tmp8.botTag, type: tmp3(9548).Types.SYSTEM_DM, verified: true };
+    tmp20Result5 = tmp20(tmp3(9548), obj11);
+    const tmp3Result5 = tmp3(9548);
   }
   items2[2] = tmp20Result5;
   obj7.children = items2;
@@ -211,7 +367,7 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
     obj14.style = items5;
     const obj15 = { style: tmp8.channelIcons, children: null };
     const obj16 = { muted, favorite, ignored, blocked, selected: channelSelected };
-    obj15.children = tmp20(MessagesItemChannelContentIcon, obj16);
+    obj15.children = tmp20(closure_12, obj16);
     const items6 = [tmp20(tmp19, obj15), ];
     let tmp20Result6 = !waveShouldShow;
     if (!waveShouldShow) {
@@ -220,7 +376,7 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
       ({ channelText: arr8[0], timestamp: arr8[1] } = tmp9);
       obj17.style = items7;
       obj17.children = relativeTimestamp;
-      tmp20Result6 = tmp20(tmp(4752).Text, obj17);
+      tmp20Result6 = tmp20(tmp(4754).Text, obj17);
     }
     items6[1] = tmp20Result6;
     obj14.children = items6;
@@ -246,9 +402,9 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
         str7 = str6;
       }
       obj19.color = str7;
-      obj19.layout = tmp(8123).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+      obj19.layout = tmp(8128).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
       obj19.muted = muted;
-      let tmp20Result7 = tmp20(tmp(10365).ChannelRowPreview, obj19);
+      let tmp20Result7 = tmp20(tmp(12972).ChannelRowPreview, obj19);
     } else if (channel.isDM()) {
       const obj20 = { textStyle: tmp9.channelText, userId: channel.getRecipientId(), guildId: null };
       let guild_id;
@@ -256,15 +412,15 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
         guild_id = channel.guild_id;
       }
       obj20.guildId = guild_id;
-      tmp20Result7 = tmp20(tmp3(11138), obj20);
-      const tmp3Result6 = tmp3(11138);
+      tmp20Result7 = tmp20(tmp3(11180), obj20);
+      const tmp3Result6 = tmp3(11180);
     } else {
       tmp20Result7 = null;
-      if (tmp3(8645)(channel.id)) {
+      if (tmp3(8650)(channel.id)) {
         const obj21 = { variant: "text-xs/medium", style: tmp9.channelText, lineClamp: 1, children: null };
-        const intl = tmp(1115).intl;
-        obj21.children = intl.string(tmp(1115).t.FL5T01);
-        tmp20Result7 = tmp20(tmp(4752).Text, obj21);
+        const intl = tmp(1119).intl;
+        obj21.children = intl.string(tmp(1119).t.FL5T01);
+        tmp20Result7 = tmp20(tmp(4754).Text, obj21);
       }
     }
     obj18.children = tmp20Result7;
@@ -298,4 +454,4 @@ export default noop.memo(function MessagesItemChannelContent(channel) {
     }
     const obj24 = { backgroundColor: combined };
   }
-});
+}));

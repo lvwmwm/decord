@@ -1,16 +1,16 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17822
+// Function ID: 17823
 // Name: LoginRequiredActionManager
-// Dependencies: [1372, 2034, 1074, 7363, 7624, 6834, 2]
+// Dependencies: [1376, 2038, 1078, 7365, 7626, 6832, 2]
 
-// Module 17819 (LoginRequiredActionManager)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
-import UserStore from "UserStore" /* 1372 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2034 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+// Module 17822 (LoginRequiredActionManager)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6832 */;
+import UserStore from "UserStore" /* 1376 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2038 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 const require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ LoginRequiredActions: hasOwnProperty, Routes: metroRequire, UserSettingsSections: closure_7 } = Constants);
 class LoginRequiredActionManager extends tmp3 {
   constructor() {
@@ -37,8 +37,8 @@ LoginRequiredActionManager.prototype["handleConnectionOpen"] = function handleCo
                   }
                 }
         };
-        currentUser(7624).openUserSettings(obj3);
-        const obj2 = currentUser(7624);
+        currentUser(7626).openUserSettings(obj3);
+        const obj2 = currentUser(7626);
       }
     }
     if (result1) {

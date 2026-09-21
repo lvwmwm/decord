@@ -1,16 +1,16 @@
-// Module ID: 10963
-// Function ID: 10964
+// Module ID: 11001
+// Function ID: 11002
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9482, 502, 4420, 7482, 1074, 1085, 1271, 10964, 4656, 10965, 1115, 4436, 5108, 7485, 504, 7689, 10966, 10967, 10923, 10968, 7480, 4429, 9481, 1241, 2]
+// Dependencies: [109, 5, 19, 9480, 502, 4424, 7484, 1078, 1089, 1275, 11002, 4659, 11003, 1119, 4440, 5110, 7487, 504, 7694, 11004, 11005, 10961, 11006, 7482, 4433, 9479, 1245, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10963 (handlePremiumPurchase)
+// Module 11001 (handlePremiumPurchase)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import IAPStore from "IAPStore" /* 7482 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
+import IAPStore from "IAPStore" /* 7484 */;
 
 const require = globalThis.__r;
 
@@ -36,7 +36,7 @@ let closure_15 = async function _validatePurchase(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -61,7 +61,7 @@ let closure_15 = async function _validatePurchase(arg0, value) {
           ({ productId: closure_129_0, premiumSubscription: closure_129_1, offerId: closure_129_2, currency: closure_129_3, price: closure_129_4, isGift: closure_129_5 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -106,7 +106,7 @@ let closure_15 = async function _validatePurchase(arg0, value) {
       } else {
         c4 = 0;
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp25) {
       closure_3 = tmp25;
@@ -120,10 +120,10 @@ let closure_15 = async function _validatePurchase(arg0, value) {
   }
 };
 let closure_3 = ["succeededOnlyFields"];
-const setGPlayAnalytics = fn(9482).setGPlayAnalytics;
-const Constants = fn(1074);
+const setGPlayAnalytics = fn(9480).setGPlayAnalytics;
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_11, Endpoints: closure_12 } = Constants);
-const PaymentGateways = fn(1085).PaymentGateways;
+const PaymentGateways = fn(1089).PaymentGateways;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/native/handlePremiumPurchase.android.tsx");
 
@@ -206,14 +206,14 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             }
             if (null != offerIds) {
               if (null != arg2) {
-                const tmp13 = premiumSubscription(7485).TrialIdToProductOfferId[arg2.trialId];
+                const tmp13 = premiumSubscription(7487).TrialIdToProductOfferId[arg2.trialId];
                 let tmp14;
                 if (tmp13 != null) {
                   tmp14 = tmp13[arg0];
                 }
                 return tmp14;
               } else if (null != arg3) {
-                const tmp9 = premiumSubscription(7485).DiscountIdToProductOfferId[arg3.discountId];
+                const tmp9 = premiumSubscription(7487).DiscountIdToProductOfferId[arg3.discountId];
                 let tmp10;
                 if (tmp9 != null) {
                   tmp10 = tmp9[arg0];
@@ -224,8 +224,8 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             let BOGO_OFFER_ID = null;
             if (arg1) {
               BOGO_OFFER_ID = null;
-              if (arg0 === premiumSubscription(7485).ProductIds.PREMIUM_TIER_2_MONTHLY) {
-                BOGO_OFFER_ID = tmp5(7485).BOGO_OFFER_ID;
+              if (arg0 === premiumSubscription(7487).ProductIds.PREMIUM_TIER_2_MONTHLY) {
+                BOGO_OFFER_ID = tmp5(7487).BOGO_OFFER_ID;
               }
               tmp5 = premiumSubscription;
             }
@@ -312,32 +312,32 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
         const result1 = premiumSubscription(premiumDiscountOffer[24]).captureBillingException(closure_130_23);
         (function showPurchaseErrorModal(combined) {
           let billingError = combined;
-          if (!(combined instanceof premiumSubscription(4656).BillingError)) {
-            billingError = new tmp(4656).BillingError(combined);
+          if (!(combined instanceof premiumSubscription(4659).BillingError)) {
+            billingError = new tmp(4659).BillingError(combined);
           }
           if (tmpResult.isSpendingLimitError(billingError)) {
-            const result = tmp(10965).showSpendingLimitReachedAlert();
-            const tmpResult2 = tmp(10965);
+            const result = tmp(11003).showSpendingLimitReachedAlert();
+            const tmpResult2 = tmp(11003);
           } else {
-            const intl = tmp(1115).intl;
-            let tmp8 = billingError.code !== tmp(4436).ErrorCodes.UNKNOWN;
+            const intl = tmp(1119).intl;
+            let tmp8 = billingError.code !== tmp(4440).ErrorCodes.UNKNOWN;
             if (tmp8) {
               tmp8 = -1 !== billingError.code;
             }
             if (tmp8) {
               tmp8 = null != billingError.message;
             }
-            let message = intl.string(tmp(1115).t.LFFx5G);
+            let message = intl.string(tmp(1119).t.LFFx5G);
             if (tmp8) {
               message = billingError.message;
             }
-            const stringResult = intl.string(tmp(1115).t.LFFx5G);
+            const stringResult = intl.string(tmp(1119).t.LFFx5G);
             const obj = { title: null, body: null, isDismissable: true };
-            const intl2 = tmp(1115).intl;
-            obj.title = intl2.string(tmp(1115).t["U+H+kd"]);
+            const intl2 = tmp(1119).intl;
+            obj.title = intl2.string(tmp(1119).t["U+H+kd"]);
             obj.body = message;
-            closure_1_1(5108).show(obj);
-            const obj2 = closure_1_1(5108);
+            closure_1_1(5110).show(obj);
+            const obj2 = closure_1_1(5110);
           }
         })(closure_130_23);
         if (closure_130_23 instanceof premiumTrialOffer(premiumDiscountOffer[10])) {
@@ -393,7 +393,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
         c7 = 3;
         return { value, done: true };
       }
-      yield "HermesInternal";
+      yield "IconComponent";
       closure_3 = tmp4;
       ({ productId: closure_130_0, skuId: closure_130_1, analyticsLoadId: closure_130_2, analyticsLocation: closure_130_3, analyticsLocations: closure_130_4, analyticsData: closure_130_5, isGift } = premiumSubscription);
       if (isGift === undefined) {
@@ -411,7 +411,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
       }
       closure_130_8 = flag2;
       ({ applicationId: closure_130_9, giftInfoOptions: closure_130_10, onPurchaseComplete: closure_130_11, onPurchaseError: closure_130_12 } = premiumSubscription);
-      return "PX_16";
+      return "Set";
     })();
     iter.next();
     return iter;

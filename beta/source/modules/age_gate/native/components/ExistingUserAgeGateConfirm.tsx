@@ -1,29 +1,168 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17731
+// Function ID: 17732
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1074, 21, 4756, 1484, 7368, 4752, 1115, 2108, 5186, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 17, 1078, 21, 4758, 558, 568, 1488, 1119, 4754, 2112, 5188, 7371, 2]
 
-// Module 17728 (ExistingUserAgeGateConfirm)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+// Module 17731 (ExistingUserAgeGateConfirm)
+import c from "c" /* 568 */;
+import useNavigation from "useNavigation" /* 1488 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
+require = fn;
 const View = fn(17).View;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_10 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, buttonWrapper: { width: "100%" } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGateConfirm.tsx");
 
-export default function ExistingUserAgeGateConfirm(age) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(23);
+  ({ age, onConfirm } = arg0);
+  closure_0 = onConfirm;
+  const tmp4 = closure_10();
+  const navigation = useNavigation.useNavigation();
+  [tmp7, dependencyMap] = noop.useState(false);
+  if (cResult[0] === navigation) {
+    if (cResult[1] === onConfirm) {
+      let tmp8 = cResult[2];
+    }
+    ({ container, header } = tmp4);
+    if (cResult[3] !== age) {
+      const intl = tmp(1119).intl;
+      const obj3 = { age };
+      const formatResult = intl.format(tmp(1119).t.wumolR, obj3);
+      cResult[3] = age;
+      cResult[4] = formatResult;
+      let tmp9 = formatResult;
+    } else {
+      tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp4.header) {
+      if (cResult[6] === tmp9) {
+        let tmp11 = cResult[7];
+      }
+      const _Symbol = Symbol;
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl2 = tmp(1119).intl;
+        const obj4 = { helpURL: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.AGE_GATE) };
+        const formatResult1 = intl2.format(tmp(1119).t.n3QjDE, obj4);
+        cResult[8] = formatResult1;
+        let tmp15 = formatResult1;
+      } else {
+        tmp15 = cResult[8];
+      }
+      if (cResult[9] !== tmp4.body) {
+        const obj5 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: tmp15 };
+        const tmp21 = closure_1_8(tmp(4754).Text, obj5);
+        cResult[9] = tmp4.body;
+        cResult[10] = tmp21;
+        let tmp19 = tmp21;
+      } else {
+        tmp19 = cResult[10];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl3 = tmp(1119).intl;
+        const stringResult = intl3.string(tmp(1119).t["6tahin"]);
+        cResult[11] = stringResult;
+        let tmp22 = stringResult;
+      } else {
+        tmp22 = cResult[11];
+      }
+      if (cResult[12] === tmp8) {
+        if (cResult[13] === tmp7) {
+          let tmp24 = cResult[14];
+        }
+        if (cResult[15] === tmp4.buttonWrapper) {
+          if (cResult[16] === tmp24) {
+            let tmp27 = cResult[17];
+          }
+          if (cResult[18] === tmp4.container) {
+            if (cResult[19] === tmp27) {
+              if (cResult[20] === tmp11) {
+                if (cResult[21] === tmp19) {
+                  let tmp31 = cResult[22];
+                }
+                return tmp31;
+              }
+            }
+          }
+          const obj7 = { top: true, style: container, children: null };
+          const items = [tmp11, tmp19, tmp27];
+          obj7.children = items;
+          const tmp33 = options(tmp(7371).SafeAreaPaddingView, obj7);
+          cResult[18] = tmp4.container;
+          cResult[19] = tmp27;
+          cResult[20] = tmp11;
+          cResult[21] = tmp19;
+          cResult[22] = tmp33;
+          tmp31 = tmp33;
+        }
+        const obj8 = { style: tmp4.buttonWrapper, children: tmp24 };
+        const tmp30 = closure_1_8(View, obj8);
+        cResult[15] = tmp4.buttonWrapper;
+        cResult[16] = tmp24;
+        cResult[17] = tmp30;
+        tmp27 = tmp30;
+      }
+      const obj9 = { loading: tmp7, disabled: tmp7, text: tmp22, onPress: tmp8, grow: true };
+      const tmp26 = closure_1_8(tmp(5188).Button, obj9);
+      cResult[12] = tmp8;
+      cResult[13] = tmp7;
+      cResult[14] = tmp26;
+      tmp24 = tmp26;
+    }
+    const obj10 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp9 };
+    const tmp13 = closure_1_8(tmp(4754).Text, obj10);
+    cResult[5] = tmp4.header;
+    cResult[6] = tmp9;
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
+  }
+  closure_0 = asyncGeneratorStep(async () => {
+    tmp21(true);
+    await tmp3();
+    if (1 === tmp7) {
+      c3 = 0;
+      navigation.pop();
+      tmp21(false);
+      c4 = 3;
+    } else if (arg0 === 1) {
+      c4 = 3;
+      throw arg1;
+    } else if (arg0 !== 2) {
+      if (arg1.shouldShowError) {
+        navigation.pop();
+      }
+      c3 = 0;
+    }
+    return arg1;
+  });
+  function handleConfirm() {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  }
+  cResult[0] = navigation;
+  cResult[1] = onConfirm;
+  cResult[2] = handleConfirm;
+  tmp8 = handleConfirm;
+}) : ((age) => {
   const onConfirm = age.onConfirm;
   dependencyMap = undefined;
-  closure_3 = async function _handleConfirm() {
+  closure_3 = async function _handleConfirm2() {
     closure_0 = tmp3;
     dependencyMap(true);
     await onConfirm();
@@ -44,25 +183,25 @@ export default function ExistingUserAgeGateConfirm(age) {
     return arg1;
   };
   const tmp = closure_10();
-  importDefault = onConfirm(1484).useNavigation();
-  const obj = onConfirm(1484);
+  importDefault = onConfirm(1488).useNavigation();
+  const obj = onConfirm(1488);
   [tmp3, c2] = noop.useState(false);
   const obj2 = { top: true, style: tmp.container, children: null };
   const obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = onConfirm(1115).intl;
-  obj3.children = intl.format(onConfirm(1115).t.wumolR, { age: age.age });
-  const items = [closure_8(onConfirm(4752).Text, obj3), , ];
+  const intl = onConfirm(1119).intl;
+  obj3.children = intl.format(onConfirm(1119).t.wumolR, { age: age.age });
+  const items = [closure_8(onConfirm(4754).Text, obj3), , ];
   const obj4 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
-  const intl2 = onConfirm(1115).intl;
+  const intl2 = onConfirm(1119).intl;
   const obj5 = { helpURL: null };
   const tmp2 = _slicedToArray(noop.useState(false), 2);
   obj5.helpURL = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.AGE_GATE);
-  obj4.children = intl2.format(onConfirm(1115).t.n3QjDE, obj5);
-  items[1] = closure_8(onConfirm(4752).Text, obj4);
+  obj4.children = intl2.format(onConfirm(1119).t.n3QjDE, obj5);
+  items[1] = closure_8(onConfirm(4754).Text, obj4);
   const obj7 = { style: tmp.buttonWrapper, children: null };
   const obj8 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
-  const intl3 = onConfirm(1115).intl;
-  obj8.text = intl3.string(onConfirm(1115).t["6tahin"]);
+  const intl3 = onConfirm(1119).intl;
+  obj8.text = intl3.string(onConfirm(1119).t["6tahin"]);
   obj8.onPress = function handleConfirm() {
     const self = this;
     const apply = closure_3.apply;
@@ -73,8 +212,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj7.children = closure_8(onConfirm(5186).Button, obj8);
+  obj7.children = closure_8(onConfirm(5188).Button, obj8);
   items[2] = closure_8(View, obj7);
   obj2.children = items;
-  return closure_9(onConfirm(7368).SafeAreaPaddingView, obj2);
-};
+  return closure_9(onConfirm(7371).SafeAreaPaddingView, obj2);
+});

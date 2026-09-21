@@ -1,25 +1,52 @@
-// Module ID: 13843
-// Function ID: 13844
+// Module ID: 13846
+// Function ID: 13847
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 4457, 576, 8728, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 4462, 580, 8733, 2]
 
-// Module 13843 (GuildBoostingMarketingWave)
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4457 */;
-import inlineStylesDefault from "inlineStyles" /* 8728 */;
+// Module 13846 (GuildBoostingMarketingWave)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useToken from "useToken" /* 4462 */;
+import inlineStylesDefault from "inlineStyles" /* 8733 */;
 import noop from "module_19" /* 19 */;
 
-const inlineStyles = tmp(8728);
+const inlineStyles = tmp(8733);
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx");
 
-export default function GuildBoostingMarketingWave(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(5);
+  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  if (cResult[0] !== token) {
+    const obj3 = { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token };
+    const tmp8 = jsx(inlineStyles.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
+    cResult[0] = token;
+    cResult[1] = tmp8;
+    let tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === arg0) {
+    if (cResult[3] === tmp6) {
+      let tmp9 = cResult[4];
+    }
+    return tmp9;
+  }
+  const obj4 = { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" };
+  const merged = Object.assign(arg0);
+  obj4.children = tmp6;
+  const tmp12 = jsx(inlineStylesDefault, { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
+  cResult[2] = arg0;
+  cResult[3] = tmp6;
+  cResult[4] = tmp12;
+  tmp9 = tmp12;
+}) : ((arg0) => {
   const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   const obj2 = { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" };
   const merged = Object.assign(arg0);
   obj2.children = jsx(inlineStyles.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
   return jsx(inlineStylesDefault, { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
-};
+});

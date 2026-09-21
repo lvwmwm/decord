@@ -1,14 +1,14 @@
-// Module ID: 9585
-// Function ID: 9586
+// Module ID: 9581
+// Function ID: 9582
 // Name: NativeRPCHelpers
-// Dependencies: [5, 4660, 1074, 9586, 9581, 2]
+// Dependencies: [5, 4663, 1078, 9582, 9577, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 9585 (NativeRPCHelpers)
+// Module 9581 (NativeRPCHelpers)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const TransportTypes = fn(4660).TransportTypes;
-const RPCCloseCodes = fn(1074).RPCCloseCodes;
+const TransportTypes = fn(4663).TransportTypes;
+const RPCCloseCodes = fn(1078).RPCCloseCodes;
 let closure_0 = asyncGeneratorStep(async (arg0, arg1, arg2) => {
   closure_0 = arg0;
   closure_1 = arg1;
@@ -26,7 +26,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, arg1, arg2) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -44,20 +44,20 @@ let closure_0 = asyncGeneratorStep(async (arg0, arg1, arg2) => {
             closure_131_0 = closure_0;
             closure_131_1 = closure_1;
             closure_131_2 = dependencyMap;
-            const result = closure_0(9586).validateOriginAndUpdateSocket(closure_0, closure_1);
+            const result = closure_0(9582).validateOriginAndUpdateSocket(closure_0, closure_1);
             if (null == dependencyMap) {
               const obj5 = { closeCode: constants.INVALID_CLIENTID };
-              const tmp23 = new closure_1(9581)(obj5, "No Client ID Specified");
+              const tmp23 = new closure_1(9577)(obj5, "No Client ID Specified");
               c6 = 3;
               const obj6 = { value: Promise.reject(tmp23), done: true };
               return obj6;
             } else {
               c5 = 1;
               c6 = 1;
-              const obj7 = { value: closure_0(9586).processSocketThrottlers(tmp32, tmp30.transport !== tmp2.POST_MESSAGE, tmp30.abortController.signal), done: false };
+              const obj7 = { value: closure_0(9582).processSocketThrottlers(tmp32, tmp30.transport !== tmp2.POST_MESSAGE, tmp30.abortController.signal), done: false };
               return obj7;
             }
-            const obj10 = closure_0(9586);
+            const obj10 = closure_0(9582);
             tmp32 = dependencyMap;
           }
         } else if (arg0 === 1) {
@@ -69,7 +69,7 @@ let closure_0 = asyncGeneratorStep(async (arg0, arg1, arg2) => {
           return obj8;
         } else {
           c6 = 3;
-          const obj9 = { value: closure_0(9586).validateSocketApplication(closure_131_0, closure_131_2, closure_131_1), done: true };
+          const obj9 = { value: closure_0(9582).validateSocketApplication(closure_131_0, closure_131_2, closure_131_1), done: true };
           return obj9;
         }
       } catch (tmp25) {
@@ -92,5 +92,5 @@ export const validateSocketClient = function() {
   }
   return applyArgumentsResult;
 };
-export const getDeprecatedVoiceSettings = () => closure_0(9586).getDeprecatedVoiceSettingsWithShortcut(() => []);
-export const getVoiceSettings = (arg0) => closure_0(9586).getVoiceSettingsWithShortcut(arg0, () => "");
+export const getDeprecatedVoiceSettings = () => closure_0(9582).getDeprecatedVoiceSettingsWithShortcut(() => []);
+export const getVoiceSettings = (arg0) => closure_0(9582).getVoiceSettingsWithShortcut(arg0, () => "");

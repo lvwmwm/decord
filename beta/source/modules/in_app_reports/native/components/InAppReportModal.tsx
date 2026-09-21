@@ -1,22 +1,22 @@
-// Module ID: 8912
-// Function ID: 8913
+// Module ID: 8910
+// Function ID: 8911
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 8913, 21, 7619, 7237, 1115, 8914, 5203, 7834, 8911, 8909, 7245, 2]
+// Dependencies: [5, 32, 19, 8911, 21, 7621, 7238, 1119, 8912, 5203, 7839, 8909, 8907, 7246, 2]
 // Exports: default
 
-// Module 8912 (InAppReportModal)
-import util from "util" /* 1115 */;
-import Navigator from "Navigator" /* 7245 */;
-import HeaderActionButton from "HeaderActionButton" /* 7619 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7834 */;
-import showReportModal from "showReportModal" /* 8909 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8911 */;
+// Module 8910 (InAppReportModal)
+import util from "util" /* 1119 */;
+import Navigator from "Navigator" /* 7246 */;
+import HeaderActionButton from "HeaderActionButton" /* 7621 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7839 */;
+import showReportModal from "showReportModal" /* 8907 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8909 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const IN_APP_REPORTS_NODE = fn(8913).IN_APP_REPORTS_NODE;
+const IN_APP_REPORTS_NODE = fn(8911).IN_APP_REPORTS_NODE;
 let jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportModal.tsx");
@@ -78,7 +78,7 @@ export default function InAppReportModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ export default function InAppReportModal(arg0) {
               tmp5();
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           c4 = tmp;
@@ -144,8 +144,8 @@ export default function InAppReportModal(arg0) {
       showReportModal.hideReportModal();
       const item = _undefined2.forEach((fn) => fn());
       if (successNodeId) {
-        const result1 = tmp3(8911).showInAppReportsFeedbackModal(tmp5, tmp7);
-        const tmp3Result = tmp3(8911);
+        const result1 = tmp3(8909).showInAppReportsFeedbackModal(tmp5, tmp7);
+        const tmp3Result = tmp3(8909);
       }
       return {};
     } else {
@@ -183,7 +183,7 @@ export default function InAppReportModal(arg0) {
       const obj6 = {};
       const obj7 = {
         headerRight() {
-            const obj = { source: menu(7237), onPress, accessibilityLabel: null };
+            const obj = { source: menu(7238), onPress, accessibilityLabel: null };
             const intl = util.intl;
             obj.accessibilityLabel = intl.string(util.t.cpT0Cq);
             return addOnCloseCallback(HeaderActionButton.HeaderActionButton, obj);

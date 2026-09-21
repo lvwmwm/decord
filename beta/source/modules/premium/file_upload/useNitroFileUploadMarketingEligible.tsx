@@ -1,26 +1,37 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17425
+// Function ID: 17426
 // Name: useNitroFileUploadMarketingEligible
-// Dependencies: [1374, 11423, 5346, 2]
-// Exports: useNitroFileUploadAnnouncementEligible, useNitroFileUploadUpsellEligible
+// Dependencies: [1378, 558, 11411, 5348, 2]
 
-// Module 17422 (useNitroFileUploadMarketingEligible)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5346 */;
-import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11423 */;
+// Module 17425 (useNitroFileUploadMarketingEligible)
+import PremiumConstants from "PremiumConstants" /* 1378 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5348 */;
+import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11411 */;
+import "ReactCompilerGating";
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const result = size.fileFinishedImporting("modules/premium/file_upload/useNitroFileUploadMarketingEligible.tsx");
-
-export const useNitroFileUploadAnnouncementEligible = function useNitroFileUploadAnnouncementEligible(MainViewTooltipActionSheets) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let isPremiumSubscriber = useIsPremiumSubscriber.useIsPremiumSubscriber(PremiumTypes.TIER_2);
   if (isPremiumSubscriber) {
-    isPremiumSubscriber = obj2.useNitroFileUploadRolloutEnabled(MainViewTooltipActionSheets);
+    isPremiumSubscriber = obj2.useNitroFileUploadRolloutEnabled(arg0);
   }
   return isPremiumSubscriber;
-};
-export const useNitroFileUploadUpsellEligible = function useNitroFileUploadUpsellEligible(MainViewTooltipActionSheets) {
+}) : ((arg0) => {
+  let isPremiumSubscriber = useIsPremiumSubscriber.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  if (isPremiumSubscriber) {
+    isPremiumSubscriber = obj2.useNitroFileUploadRolloutEnabled(arg0);
+  }
+  return isPremiumSubscriber;
+});
+const result = size.fileFinishedImporting("modules/premium/file_upload/useNitroFileUploadMarketingEligible.tsx");
+
+export const useNitroFileUploadAnnouncementEligible = tmp2;
+export const useNitroFileUploadUpsellEligible = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const isPremiumSubscriber = useIsPremiumSubscriber.useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  return NitroFileUploadExperiments.useNonNitroFileUploadMarketingEnabled(MainViewTooltipActionSheets) && !isPremiumSubscriber;
-};
+  return NitroFileUploadExperiments.useNonNitroFileUploadMarketingEnabled(arg0) && !isPremiumSubscriber;
+}) : ((arg0) => {
+  const isPremiumSubscriber = useIsPremiumSubscriber.useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  return NitroFileUploadExperiments.useNonNitroFileUploadMarketingEnabled(arg0) && !isPremiumSubscriber;
+});

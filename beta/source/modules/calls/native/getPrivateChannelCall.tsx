@@ -1,17 +1,17 @@
-// Module ID: 11131
-// Function ID: 11132
+// Module ID: 11173
+// Function ID: 11174
 // Name: getPrivateChannelCall
-// Dependencies: [4775, 1074, 4963, 8239, 1115, 9904, 2]
+// Dependencies: [4777, 1078, 4965, 8244, 1119, 9882, 2]
 // Exports: default
 
-// Module 11131 (getPrivateChannelCall)
-import CallsUtils from "CallsUtils" /* 9904 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+// Module 11173 (getPrivateChannelCall)
+import CallsUtils from "CallsUtils" /* 9882 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const NOOP_NULL = fn(1074).NOOP_NULL;
+const NOOP_NULL = fn(1078).NOOP_NULL;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/native/getPrivateChannelCall.tsx");
 

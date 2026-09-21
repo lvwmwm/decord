@@ -1,17 +1,17 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9798
+// Function ID: 9799
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1074, 1978, 1086, 9821, 4607, 1115, 2]
+// Dependencies: [5, 32, 19, 1078, 1982, 1090, 9799, 4610, 1119, 2]
 // Exports: default
 
-// Module 9820 (useCreateChannelSubmit)
-import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9821 */;
+// Module 9798 (useCreateChannelSubmit)
+import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9799 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes: closure_7, Permissions: closure_8 } = Constants);
 const CreateChannelMode = { PREMIUM_CHANNEL: 0, [0]: "PREMIUM_CHANNEL" };
 const size = fn(2);
@@ -32,7 +32,7 @@ export default function useCreateChannelSubmit(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ export default function useCreateChannelSubmit(arg0) {
             let guild_id;
             c7 = 1;
             c8 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp8) {
           if (arg0 === 1) {
@@ -76,9 +76,9 @@ export default function useCreateChannelSubmit(arg0) {
             return obj5;
           } else {
             if (closure_131_3 === constants3.PREMIUM_CHANNEL) {
-              const obj6 = { id: closure_131_4, type: closure_0(1978).PermissionOverwriteType.ROLE, deny: constants2.VIEW_CHANNEL, allow: closure_2(1086).getFlag(0) };
+              const obj6 = { id: closure_131_4, type: closure_0(1982).PermissionOverwriteType.ROLE, deny: constants2.VIEW_CHANNEL, allow: closure_2(1090).getFlag(0) };
               closure_131_0.push(obj6);
-              const obj10 = closure_2(1086);
+              const obj10 = closure_2(1090);
             }
             closure_1(true);
             c6 = 2;
@@ -102,9 +102,9 @@ export default function useCreateChannelSubmit(arg0) {
           if (3 === tmp8) {
             c6 = 1;
             closure_131_13 = closure_5;
-            const AccessibilityAnnouncer = closure_0(4607).AccessibilityAnnouncer;
-            const intl = closure_0(1115).intl;
-            AccessibilityAnnouncer.announce(intl.string(closure_0(1115).t["0SbUzm"]));
+            const AccessibilityAnnouncer = closure_0(4610).AccessibilityAnnouncer;
+            const intl = closure_0(1119).intl;
+            AccessibilityAnnouncer.announce(intl.string(closure_0(1119).t["0SbUzm"]));
             const body = closure_131_13.body;
             let errors;
             if (body != null) {
@@ -133,10 +133,10 @@ export default function useCreateChannelSubmit(arg0) {
               id = closure_131_10.id;
               guild_id = closure_131_10.guild_id;
               if (null != id) {
-                const AccessibilityAnnouncer2 = closure_0(4607).AccessibilityAnnouncer;
-                const intl2 = closure_0(1115).intl;
+                const AccessibilityAnnouncer2 = closure_0(4610).AccessibilityAnnouncer;
+                const intl2 = closure_0(1119).intl;
                 const obj9 = { name: closure_131_5 };
-                AccessibilityAnnouncer2.announce(intl2.formatToPlainString(closure_0(1115).t.Wke70b, obj9));
+                AccessibilityAnnouncer2.announce(intl2.formatToPlainString(closure_0(1119).t.Wke70b, obj9));
                 if (closure_0 != null) {
                   tmp86(id, guild_id);
                 }

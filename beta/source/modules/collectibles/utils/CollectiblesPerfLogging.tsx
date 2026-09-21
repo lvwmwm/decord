@@ -1,12 +1,12 @@
-// Module ID: 7831
-// Function ID: 7832
+// Module ID: 7836
+// Function ID: 7837
 // Name: CollectiblesPerfLogging
-// Dependencies: [1074, 1241, 2]
+// Dependencies: [1078, 1245, 2]
 // Exports: trackShopPerf
 
-// Module 7831 (CollectiblesPerfLogging)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 7836 (CollectiblesPerfLogging)
+import Constants from "Constants" /* 1078 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

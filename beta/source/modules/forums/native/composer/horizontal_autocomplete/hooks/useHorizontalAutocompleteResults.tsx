@@ -1,16 +1,16 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10718
+// Function ID: 10719
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [32, 19, 1074, 10683, 7919, 504, 2]
+// Dependencies: [32, 19, 1078, 10719, 7924, 504, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 10682 (useHorizontalAutocompleteResults)
-import AutocompleteOptions from "AutocompleteOptions" /* 10683 */;
+// Module 10718 (useHorizontalAutocompleteResults)
+import AutocompleteOptions from "AutocompleteOptions" /* 10719 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AutoCompleteResultTypes: closure_4, ChannelTypes: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/composer/horizontal_autocomplete/hooks/useHorizontalAutocompleteResults.tsx");

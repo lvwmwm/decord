@@ -1,25 +1,72 @@
-// Module ID: 12806
-// Function ID: 12807
+// Module ID: 12717
+// Function ID: 12718
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4756, 576, 7225, 4752, 2]
-// Exports: default
+// Dependencies: [17, 21, 4758, 580, 558, 568, 7223, 4754, 2]
 
-// Module 12806 (GuildPowerupsSectionHeader)
+// Module 12717 (GuildPowerupsSectionHeader)
 import _mod17 from "module_17" /* 17 */;
-import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7225 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7223 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4756 */;
+import createStyles from "createStyles" /* 4758 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const obj = { headerContainer: { padding: nativeDefault.space.PX_16 } };
+let obj = { headerContainer: { padding: nativeDefault.space.PX_16 } };
 let closure_5 = createStyles.createStyles(obj);
+let obj2 = { padding: nativeDefault.space.PX_16 };
 const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsSectionHeader.tsx");
 
-export default function GuildPowerupsSectionHeader(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(9);
+  ({ title, description } = arg0);
+  const tmp4 = closure_5();
+  const manaTypeConsolidationExperiment = ManaTypeConsolidationExperiment.useManaTypeConsolidationExperiment("GuildPowerupsSectionHeader");
+  if (cResult[0] !== title) {
+    const obj3 = { variant: "heading-lg/semibold", accessibilityRole: "header", children: title };
+    const tmp8 = React3(tmp(4754).Text, obj3);
+    cResult[0] = title;
+    cResult[1] = tmp8;
+    let tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  let str = "text-md/normal";
+  if (manaTypeConsolidationExperiment) {
+    str = "experimental/body-sm/normal";
+  }
+  if (cResult[2] === description) {
+    if (cResult[3] === str) {
+      let tmp9 = cResult[4];
+    }
+    if (cResult[5] === tmp4.headerContainer) {
+      if (cResult[6] === tmp6) {
+        if (cResult[7] === tmp9) {
+          let tmp11 = cResult[8];
+        }
+        return tmp11;
+      }
+    }
+    const obj4 = { style: tmp4.headerContainer, children: null };
+    const items = [tmp6, tmp9];
+    obj4.children = items;
+    const tmp14 = React4(View, obj4);
+    cResult[5] = tmp4.headerContainer;
+    cResult[6] = tmp6;
+    cResult[7] = tmp9;
+    cResult[8] = tmp14;
+    tmp11 = tmp14;
+  }
+  const tmp10 = React3(Text_Text.Text, { variant: str, children: description });
+  cResult[2] = description;
+  cResult[3] = str;
+  cResult[4] = tmp10;
+  tmp9 = tmp10;
+}) : ((arg0) => {
   ({ title, description } = arg0);
   const tmp = closure_5();
   const obj2 = { style: tmp.headerContainer, children: null };
@@ -32,4 +79,4 @@ export default function GuildPowerupsSectionHeader(arg0) {
   items[1] = React3(Text_Text.Text, { variant: str, children: description });
   obj2.children = items;
   return React4(View, obj2);
-};
+});

@@ -1,22 +1,22 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17002
+// Function ID: 17003
 // Name: vibegrationsFeedback
-// Dependencies: [13362, 9309, 1074, 11877, 510, 1115, 3678, 1241, 11880, 2]
+// Dependencies: [13365, 9307, 1078, 11748, 510, 1119, 3682, 1245, 11751, 2]
 // Exports: countSettledTurns, hasShownFeedbackForProject, markFeedbackShownForProject, submitVibegrationsFeedback, trackVibegrationsFeedbackOpened, vibegrationsFeedbackSection
 
-// Module 16999 (vibegrationsFeedback)
+// Module 17002 (vibegrationsFeedback)
 import Storage3 from "Storage" /* 510 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import FeedbackUtils from "FeedbackUtils" /* 11880 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 13362 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import _modDef3682 from "module_3682" /* 3682 */;
+import FeedbackUtils from "FeedbackUtils" /* 11751 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 13365 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
 
 require = fn;
-const turnSettled = fn(13362).turnSettled;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const Constants = fn(11877);
+const turnSettled = fn(13365).turnSettled;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const Constants = fn(11748);
 ({ FeedbackCategory: closure_7, FeedbackOptionVariant: closure_8, FeedbackType: closure_9, VibegrationsFeedbackOption: c10 } = Constants);
 const shownVibegrationsFeedbackProjectIds = "shownVibegrationsFeedbackProjectIds";
 const size = fn(2);
@@ -60,27 +60,27 @@ export const countSettledTurns = function countSettledTurns(arg0) {
 export const vibegrationsFeedbackSection = function vibegrationsFeedbackSection() {
   const obj = { value: constants.VIBEGRATIONS, label: "", problemsHeader: null, problemOptions: null, freeformConfig: null };
   const intl = util.intl;
-  obj.problemsHeader = intl.string(_modDef3678.kLHFxL);
+  obj.problemsHeader = intl.string(_modDef3682.kLHFxL);
   const obj2 = { value: constants4.NOT_WHAT_I_WANTED, variant: constants2.UNSPECIFIED, label: null };
   const intl2 = util.intl;
-  obj2.label = intl2.string(_modDef3678.UJLIUY);
+  obj2.label = intl2.string(_modDef3682.UJLIUY);
   const items = [obj2, , , ];
   const obj3 = { value: constants4.TOO_SLOW, variant: constants2.UNSPECIFIED, label: null };
   const intl3 = util.intl;
-  obj3.label = intl3.string(_modDef3678.FVQz1w);
+  obj3.label = intl3.string(_modDef3682.FVQz1w);
   items[1] = obj3;
   const obj4 = { value: constants4.APP_DIDNT_WORK, variant: constants2.UNSPECIFIED, label: null };
   const intl4 = util.intl;
-  obj4.label = intl4.string(_modDef3678["4AdY23"]);
+  obj4.label = intl4.string(_modDef3682["4AdY23"]);
   items[2] = obj4;
   const obj5 = { value: constants4.DIDNT_KNOW_WHAT_TO_ASK_FOR, variant: constants2.UNSPECIFIED, label: null };
   const intl5 = util.intl;
-  obj5.label = intl5.string(_modDef3678["u/juX1"]);
+  obj5.label = intl5.string(_modDef3682["u/juX1"]);
   items[3] = obj5;
   obj.problemOptions = items;
   const obj6 = { value: constants4.FREEFORM, label: null };
   const intl6 = util.intl;
-  obj6.label = intl6.string(_modDef3678["8Ee6yW"]);
+  obj6.label = intl6.string(_modDef3682["8Ee6yW"]);
   obj.freeformConfig = obj6;
   return obj;
 };

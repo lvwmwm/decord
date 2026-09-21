@@ -1,32 +1,94 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12021
+// Function ID: 12022
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4756, 1177, 576, 4752, 1115, 12146, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 1181, 580, 558, 568, 4754, 1119, 12022, 2]
 
-// Module 12145 (ClassificationEvidence)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12146 */;
+// Module 12021 (ClassificationEvidence)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12022 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { cardShadow: null, flaggedContent: null, sectionContainer: null };
-const native = fn(1177);
-obj2.cardShadow = native.generateBoxShadowStyle(fn(1177).FOUR_DP_ELEVATION_SHADOW_PARAMS);
+const native = fn(1181);
+obj2.cardShadow = native.generateBoxShadowStyle(fn(1181).FOUR_DP_ELEVATION_SHADOW_PARAMS);
 obj2.flaggedContent = { borderWidth: 1, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
 let obj4 = { borderWidth: 1, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
 obj2.sectionContainer = { display: "flex", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj5 = { display: "flex", gap: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/ClassificationEvidence.tsx");
 
-export default function ClassificationEvidence(flaggedContent) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
+  const cResult = c.c(12);
+  flaggedContent = flaggedContent.flaggedContent;
+  let sectionContainer = closure_6();
+  if (0 === flaggedContent.length) {
+    return null;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { variant: "eyebrow", color: "text-default", children: null };
+      const intl = tmp(1119).intl;
+      obj2.children = intl.string(tmp(1119).t.s64CMg);
+      const tmp6 = React4(tmp(4754).Text, obj2);
+      cResult[0] = tmp6;
+      let first = tmp6;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] === sectionContainer.cardShadow) {
+      if (cResult[2] === sectionContainer.flaggedContent) {
+        let tmp7 = cResult[3];
+      }
+      if (cResult[4] !== flaggedContent) {
+        const obj3 = { flaggedContent };
+        const tmp11 = React4(ClassificationMessageEvidenceDefault, obj3);
+        cResult[4] = flaggedContent;
+        cResult[5] = tmp11;
+        let tmp8 = tmp11;
+      } else {
+        tmp8 = cResult[5];
+      }
+      if (cResult[6] === tmp7) {
+        if (cResult[7] === tmp8) {
+          let tmp12 = cResult[8];
+        }
+        if (cResult[9] === sectionContainer.sectionContainer) {
+        }
+        const obj4 = { style: sectionContainer.sectionContainer, children: null };
+        const items = [first, tmp12];
+        obj4.children = items;
+        const tmp19 = hasOwnProperty(View, obj4);
+        sectionContainer = sectionContainer.sectionContainer;
+        cResult[9] = sectionContainer;
+        cResult[10] = tmp12;
+        cResult[11] = tmp19;
+      }
+      const obj5 = { style: tmp7, children: tmp8 };
+      const tmp15 = React4(View, obj5);
+      cResult[6] = tmp7;
+      cResult[7] = tmp8;
+      cResult[8] = tmp15;
+      tmp12 = tmp15;
+    }
+    const items1 = [, ];
+    ({ flaggedContent: arr2[0], cardShadow: arr2[1] } = sectionContainer);
+    cResult[1] = sectionContainer.cardShadow;
+    cResult[2] = sectionContainer.flaggedContent;
+    cResult[3] = items1;
+    tmp7 = items1;
+  }
+}) : ((flaggedContent) => {
   flaggedContent = flaggedContent.flaggedContent;
   const tmp = closure_6();
   let tmp2 = null;
@@ -47,4 +109,4 @@ export default function ClassificationEvidence(flaggedContent) {
     tmp2 = hasOwnProperty(View, obj);
   }
   return tmp2;
-};
+});

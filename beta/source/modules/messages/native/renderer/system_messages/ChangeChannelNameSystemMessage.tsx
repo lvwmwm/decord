@@ -1,15 +1,15 @@
-// Module ID: 8240
-// Function ID: 8241
+// Module ID: 8245
+// Function ID: 8246
 // Name: ChangeChannelNameSystemMessage
-// Dependencies: [2041, 8211, 8218, 8220, 1115, 8222, 8225, 2]
+// Dependencies: [2045, 8216, 8223, 8225, 1119, 8227, 8230, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 8240 (ChangeChannelNameSystemMessage)
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 8245 (ChangeChannelNameSystemMessage)
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8216 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8225 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8227 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 const size = fn(2);
@@ -33,12 +33,12 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     flag = false;
   }
   if ("" === message.content) {
-    let rk0be9 = tmp4(1115).t.hToFyf;
+    let rk0be9 = tmp4(1119).t.hToFyf;
   } else {
-    rk0be9 = tmp4(1115).t.rk0be9;
+    rk0be9 = tmp4(1119).t.rk0be9;
   }
   const tmp8 = createCommonMessageDefault(message);
-  const intl = tmp4(1115).intl;
+  const intl = tmp4(1119).intl;
   const formatToParts = intl.formatToParts;
   if (flag) {
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6, channelName: message.content, onEditGroup: null };
@@ -50,7 +50,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     obj2.onEditGroup = obj3;
     let formatToPartsResult = formatToParts(rk0be9, obj2);
   } else {
-    const t = tmp4(1115).t;
+    const t = tmp4(1119).t;
     const obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6, channelName: message.content };
     formatToPartsResult = formatToParts(message.isForumPost ? t["qa0e/n"] : t.XCPMEG, obj4);
   }
@@ -64,9 +64,9 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     const obj6 = { accessibilityActions: null };
     const items = [];
     const obj7 = { label: null, name: null };
-    const intl2 = tmp4(1115).intl;
-    obj7.label = intl2.string(tmp4(1115).t["5Q9+/L"]);
-    obj7.name = tmp4(8225).MessageAccessibilityAction.EDIT_GDM;
+    const intl2 = tmp4(1119).intl;
+    obj7.label = intl2.string(tmp4(1119).t["5Q9+/L"]);
+    obj7.name = tmp4(8230).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj7;
     obj6.accessibilityActions = items;
     tmp12 = obj6;

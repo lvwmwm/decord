@@ -1,16 +1,16 @@
-// Module ID: 7695
-// Function ID: 7696
+// Module ID: 7700
+// Function ID: 7701
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7696, 1386, 2095, 1074, 1271, 573, 1231, 7698, 2]
+// Dependencies: [5, 7701, 1390, 2099, 1078, 1275, 577, 1235, 7703, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 7695 (ReferralTrialActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7700 (ReferralTrialActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7696 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7701 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 let closure_11 = async function _fetchReferralEligibleUsers(index, searchQuery, arg2) {
@@ -28,7 +28,7 @@ let closure_11 = async function _fetchReferralEligibleUsers(index, searchQuery, 
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ let closure_12 = async function _createReferralTrials(arg0) {
         obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -217,7 +217,7 @@ let closure_13 = async function _createReferralTrial() {
       closure_130_1(closure_130_2[8]);
     }
   }
-  closure_129_0 = await "HermesInternal";
+  closure_129_0 = await "IconComponent";
   let fromServer = null;
   if (null != closure_129_0.body) {
     fromServer = closure_130_4.createFromServer(closure_129_0.body);
@@ -235,7 +235,7 @@ let closure_14 = async function _resolveReferralTrialOffer() {
   const HTTP = HTTPUtils.HTTP;
   await HTTP.get({ url: constants.REFERRAL_OFFER_ID_RESOLVE(closure_0), oldFormErrors: true, rejectWithError: false });
   closure_131_1(closure_131_2[6]).dispatch({ type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId: closure_130_0 });
-  closure_130_1 = await "HermesInternal";
+  closure_130_1 = await "IconComponent";
   let fromServer = null;
   if (null != closure_130_1.body) {
     fromServer = closure_131_4.createFromServer(closure_130_1.body);
@@ -248,7 +248,7 @@ let closure_14 = async function _resolveReferralTrialOffer() {
   closure_131_1(closure_131_2[6]).dispatch({ type: "BILLING_REFERRAL_RESOLVE_SUCCESS", userTrialOffer });
   return { userTrialOffer: closure_130_2 };
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AbortCodes: closure_7, Endpoints: closure_8 } = Constants);
 const CreateReferralStatus = { SUCCESS: 1, [1]: "SUCCESS", FAIL: 2, [2]: "FAIL" };
 class EligibleUserCache {

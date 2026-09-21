@@ -1,10 +1,10 @@
-// Module ID: 12018
-// Function ID: 12019
+// Module ID: 11893
+// Function ID: 11894
 // Name: GamesActionCreators
-// Dependencies: [5, 1074, 2004, 9314, 1094, 7555, 4451, 573, 1271, 9594, 9571, 9637, 2]
+// Dependencies: [5, 1078, 2008, 9312, 1098, 7557, 4455, 577, 1275, 9590, 9567, 9633, 2]
 
-// Module 12018 (GamesActionCreators)
-import LinkingDefault from "Linking" /* 4451 */;
+// Module 11893 (GamesActionCreators)
+import LinkingDefault from "Linking" /* 4455 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -22,19 +22,19 @@ function fetchJoinSecret(application, arg1) {
     const obj = { channel_id: channelId, message_id: messageId, headless: true };
     tmp2 = obj;
   }
-  id(573).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
+  id(577).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
   const HTTP = require("HTTPUtils").HTTP;
   const request = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp2, oldFormErrors: true, rejectWithError: true };
   value = HTTP.get(request);
   return value.then((result) => application(result), () => {
-    activityChannelId(573).dispatch({ type: "ACTIVITY_JOIN_FAILED", applicationId: deeplink_uri });
+    activityChannelId(577).dispatch({ type: "ACTIVITY_JOIN_FAILED", applicationId: deeplink_uri });
     return false;
   });
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Endpoints: closure_4, DiscordConnectDeeplinks: hasOwnProperty, WebBrowserType: metroRequire, ActivityFlags: closure_7 } = Constants);
-const ActivityIntent = fn(2004).ActivityIntent;
-const MAIN_SURFACE = fn(9314).MAIN_SURFACE;
+const ActivityIntent = fn(2008).ActivityIntent;
+const MAIN_SURFACE = fn(9312).MAIN_SURFACE;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/GamesActionCreators.native.tsx");
 
@@ -80,7 +80,7 @@ export default {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -146,8 +146,8 @@ export default {
                     const join_url = body.body.join_url;
                     const secret = body.body.secret;
                     if (null != join_url) {
-                      activityChannelId(4451).openURL(join_url, constants2.SAFARI);
-                      const obj3 = activityChannelId(4451);
+                      activityChannelId(4455).openURL(join_url, constants2.SAFARI);
+                      const obj3 = activityChannelId(4455);
                       const obj2 = { type: "ACTIVITY_JOIN", applicationId: null, parentApplicationId: null, secret: null, intent: null, embedded: null };
                       ({ id: obj5.applicationId, parent_id: obj5.parentApplicationId } = application);
                       obj2.secret = secret;
@@ -157,20 +157,20 @@ export default {
                         flag3 = false;
                       }
                       obj2.embedded = flag3;
-                      activityChannelId(573).dispatch(obj2);
+                      activityChannelId(577).dispatch(obj2);
                       let flag2 = true;
-                      const obj4 = activityChannelId(573);
+                      const obj4 = activityChannelId(577);
                     } else {
                       if (null == deeplink_uri) {
                         const obj11 = { type: "ACTIVITY_JOIN_FAILED", applicationId: application.id };
-                        activityChannelId(573).dispatch(obj11);
+                        activityChannelId(577).dispatch(obj11);
                         flag2 = false;
-                        const obj = activityChannelId(573);
+                        const obj = activityChannelId(577);
                       } else {
                         const _HermesInternal = HermesInternal;
                         const combined = "" + str.replace(/\/+$/, "") + constants.GAME_INVITE_FRAGMENT + secret;
-                        activityChannelId(4451).openURL(combined, constants2.SAFARI);
-                        const obj6 = activityChannelId(4451);
+                        activityChannelId(4455).openURL(combined, constants2.SAFARI);
+                        const obj6 = activityChannelId(4455);
                         const obj12 = { type: "ACTIVITY_JOIN", applicationId: null, parentApplicationId: null, secret: null, intent: null, embedded: null };
                         ({ id: obj8.applicationId, parent_id: obj8.parentApplicationId } = application);
                         obj12.secret = secret;
@@ -180,9 +180,9 @@ export default {
                           flag = false;
                         }
                         obj12.embedded = flag;
-                        activityChannelId(573).dispatch(obj12);
+                        activityChannelId(577).dispatch(obj12);
                         flag2 = true;
-                        const obj7 = activityChannelId(573);
+                        const obj7 = activityChannelId(577);
                       }
                       str = deeplink_uri;
                     }
@@ -206,7 +206,7 @@ export default {
                   const request = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp8, oldFormErrors: true, rejectWithError: true };
                   value = HTTP.get(request);
                   resolved = value.then((result) => application(result), () => {
-                    activityChannelId(573).dispatch({ type: "ACTIVITY_JOIN_FAILED", applicationId: deeplink_uri });
+                    activityChannelId(577).dispatch({ type: "ACTIVITY_JOIN_FAILED", applicationId: deeplink_uri });
                     return false;
                   });
                 })(tmp24);

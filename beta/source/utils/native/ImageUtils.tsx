@@ -1,16 +1,16 @@
-// Module ID: 1477
-// Function ID: 1478
+// Module ID: 1481
+// Function ID: 1482
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1074, 1432, 1478, 1472, 1433, 1879, 12, 1400, 1397, 2]
+// Dependencies: [32, 17, 1078, 1436, 1482, 1476, 1437, 1883, 12, 1404, 1401, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1477 (utils/ImageUtils)
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1432 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1433 */;
-import _modDef1472 from "module_1472" /* 1472 */;
-import useWindowDimensions from "useWindowDimensions" /* 1478 */;
+// Module 1481 (utils/ImageUtils)
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1404 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1436 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1437 */;
+import _modDef1476 from "module_1476" /* 1476 */;
+import useWindowDimensions from "useWindowDimensions" /* 1482 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -24,7 +24,7 @@ function getSrcWithWidthAndHeight(animated) {
     flag = false;
   }
   const tmp = _slicedToArray(src.split("?"), 2);
-  const items = [tmp[0], _modDef1472.parse(tmp[1])];
+  const items = [tmp[0], _modDef1476.parse(tmp[1])];
   [tmp5, tmp6] = items;
   if (re8.test(tmp5)) {
     tmp6.format = "webp";
@@ -55,7 +55,7 @@ function getSrcWithWidthAndHeight(animated) {
     if (null != tmp9) {
       const obj3 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: null };
       const obj2 = AttachmentImageLadder;
-      obj3.maxUpscale = AttachmentImageLadder.getSnapDownMaxUpscale(tmp9, tmp2(1879)());
+      obj3.maxUpscale = AttachmentImageLadder.getSnapDownMaxUpscale(tmp9, tmp2(1883)());
       size = obj2.snapAttachmentDimensions(obj3);
     }
     if (!tmp12) {
@@ -70,12 +70,12 @@ function getSrcWithWidthAndHeight(animated) {
   const tmp4 = _slicedToArray(items, 2);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2(1472);
+    tmp2(1476);
     text = `${tmp5}?${obj6.stringify(tmp6)}`;
   }
   return text;
 }
-function getMobileOptimizedSrc(proxy_url, width, height, png) {
+function getMobileOptimizedSrc(proxy_url, c7, c72, png) {
   let tmp = png;
   if (png === undefined) {
     tmp = null;
@@ -86,25 +86,25 @@ function getMobileOptimizedSrc(proxy_url, width, height, png) {
   }
   const size = useWindowDimensions.getWindowDimensions();
   const result = hasOwnProperty.getPixelSizeForLayoutSize(size.width) * num;
-  const bound = Math.min(width > height ? result / width : hasOwnProperty.getPixelSizeForLayoutSize(size.height / 2) * num / height, 1);
-  let rounded1 = height;
-  let rounded = width;
+  const bound = Math.min(c7 > c72 ? result / c7 : hasOwnProperty.getPixelSizeForLayoutSize(size.height / 2) * num / c72, 1);
+  let rounded1 = c72;
+  let rounded = c7;
   if (bound < 1) {
     const _Math = Math;
-    rounded = Math.ceil(width * bound);
+    rounded = Math.ceil(c7 * bound);
     const _Math2 = Math;
-    rounded1 = Math.ceil(height * bound);
+    rounded1 = Math.ceil(c72 * bound);
   }
-  return getSrcWithWidthAndHeight({ src: proxy_url, sourceWidth: width, sourceHeight: height, targetWidth: rounded, targetHeight: rounded1, format: tmp });
+  return getSrcWithWidthAndHeight({ src: proxy_url, sourceWidth: c7, sourceHeight: c72, targetWidth: rounded, targetHeight: rounded1, format: tmp });
 }
-function getPaletteForAvatarMobile(automodAvatarURL) {
+function getPaletteForAvatarMobile(src) {
   const obj = utils_AvatarUtils;
   ImageManager = ImageManager.ImageManager;
-  return ImageManager.getDominantColors(obj.ensureAvatarSource(AvatarUtils.makeSource(automodAvatarURL)));
+  return ImageManager.getDominantColors(obj.ensureAvatarSource(AvatarUtils.makeSource(src)));
 }
 get_ActivityIndicator = fn(17);
 ({ NativeModules: closure_4, PixelRatio: hasOwnProperty } = get_ActivityIndicator);
-let closure_6 = fn(1074).MEDIA_PROXY_MAX_TARGET_RESOLUTION;
+let closure_6 = fn(1078).MEDIA_PROXY_MAX_TARGET_RESOLUTION;
 const tmp3 = /\.(gif)$/i;
 const re7 = tmp3;
 let tmp4 = /\.(avif)$/i;

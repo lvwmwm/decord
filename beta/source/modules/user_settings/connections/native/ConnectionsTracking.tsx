@@ -1,12 +1,12 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15227
+// Function ID: 15228
 // Name: ConnectionsTracking
-// Dependencies: [1074, 1241, 2]
+// Dependencies: [1078, 1245, 2]
 // Exports: trackEmptyStateCardClicked
 
-// Module 15238 (ConnectionsTracking)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 15227 (ConnectionsTracking)
+import Constants from "Constants" /* 1078 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,11 +1,11 @@
-// Module ID: 8909
-// Function ID: 8910
+// Module ID: 8907
+// Function ID: 8908
 // Name: showReportModal
-// Dependencies: [5, 8910, 8911, 4959, 8912, 1980, 2]
+// Dependencies: [5, 8908, 8909, 4961, 8910, 1984, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 8909 (showReportModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+// Module 8907 (showReportModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -20,7 +20,7 @@ let closure_5 = async function _showReportModal(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -48,7 +48,7 @@ let closure_5 = async function _showReportModal(arg0, value) {
           closure_131_4 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

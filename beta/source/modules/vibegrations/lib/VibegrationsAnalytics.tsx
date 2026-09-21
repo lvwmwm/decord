@@ -1,14 +1,14 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 9309
+// Function ID: 9310
 // Name: VibegrationsAnalytics
-// Dependencies: [4983, 9309, 1074, 5274, 1241, 2]
+// Dependencies: [4985, 9307, 1078, 5276, 1245, 2]
 // Exports: trackVibegrationDeployed, trackVibegrationErrored, trackVibegrationTurnResulted
 
-// Module 9311 (VibegrationsAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5274 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+// Module 9309 (VibegrationsAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
 
 require = fn;
 function vibegrationLocation(project_id, isPreview) {
@@ -48,7 +48,7 @@ function vibegrationLocation(project_id, isPreview) {
   obj.channel_id = result;
   return obj;
 }
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsAnalytics.tsx");
 

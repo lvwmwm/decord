@@ -1,23 +1,155 @@
-// Module ID: 9158
-// Function ID: 9159
+// Module ID: 9156
+// Function ID: 9157
 // Name: useSimilarGames
-// Dependencies: [2000, 1372, 9041, 9040, 7551, 504, 8947, 5327, 2]
-// Exports: default
+// Dependencies: [2004, 1376, 9039, 558, 568, 9038, 7553, 504, 8946, 5329, 2]
 
-// Module 9158 (useSimilarGames)
-import GameStore from "GameStore" /* 2000 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 9156 (useSimilarGames)
+import GameStore from "GameStore" /* 2004 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
-fn(9041).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+fn(9039).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 let closure_5 = [];
 const similarGames = [];
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useSimilarGames.tsx");
 
-export default function useSimilarGames(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = data(568).c(14);
+  if (cResult[0] !== arg0) {
+    const hasItem = set.has(arg0);
+    cResult[0] = arg0;
+    cResult[1] = hasItem;
+    let tmp4 = hasItem;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const obj = data(568);
+  const tmp7 = !tmp4;
+  const similarGameIds = data(9038).useSimilarGameIds(arg0, tmp7);
+  ({ data, isLoading, error } = similarGameIds);
+  if (tmp4) {
+    let tmp10 = closure_5;
+  } else {
+    tmp10 = data;
+  }
+  data = tmp10;
+  let tmpResult = data(9038);
+  const games = data(7553).useGames(tmp10);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameStore];
+    cResult[2] = items;
+    let tmp12 = items;
+  } else {
+    tmp12 = cResult[2];
+  }
+  if (cResult[3] !== tmp10) {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    const items1 = [tmp10];
+    cResult[3] = tmp10;
+    cResult[4] = S;
+    cResult[5] = items1;
+    let tmp15 = items1;
+    const tmp14 = S;
+  } else {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    tmp15 = cResult[5];
+  }
+  const tmpResult4 = data(7553);
+  const stateFromStores = data(504).useStateFromStores(tmp12, tmp14, tmp15);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    const items2 = [GameStore, UserStore];
+    cResult[6] = items2;
+    const tmp17 = items2;
+  } else {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+  }
+  if (cResult[7] !== tmp10) {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    const items3 = [tmp10];
+    cResult[7] = tmp10;
+    cResult[8] = tmp21;
+    cResult[9] = items3;
+    let tmp20 = items3;
+    const tmp19 = tmp21;
+  } else {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    tmp20 = cResult[9];
+  }
+  const tmpResult5 = data(504);
+  const stateFromStoresArray = data(504).useStateFromStoresArray(tmp17, tmp19, tmp20);
+  if (tmp4) {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor() {
+          return data.some(() => { ... });
+        }
+      }
+      tmp26[1] = closure_6;
+      cResult[10] = tmp26;
+      const tmp25 = tmp26;
+    } else {
+      class S {
+        constructor() {
+          return data.some(() => { ... });
+        }
+      }
+    }
+    return tmp25;
+  } else {
+    class S {
+      constructor() {
+        return data.some(() => { ... });
+      }
+    }
+    if (cResult[11] === stateFromStoresArray) {
+      class S {
+        constructor() {
+          return data.some(() => { ... });
+        }
+      }
+      return tmp24;
+    }
+    const obj2 = { isFetching: null == error && null == data || isLoading || stateFromStores, similarGames: stateFromStoresArray };
+    cResult[11] = stateFromStoresArray;
+    cResult[12] = null == error && null == data || isLoading || stateFromStores;
+    cResult[13] = obj2;
+    tmp24 = obj2;
+  }
+}) : ((arg0) => {
   const hasItem = set.has(arg0);
-  const similarGameIds = data(9040).useSimilarGameIds(arg0, !hasItem);
+  const similarGameIds = data(9038).useSimilarGameIds(arg0, !hasItem);
   ({ data, isLoading, error } = similarGameIds);
   if (hasItem) {
     let tmp7 = closure_5;
@@ -25,10 +157,10 @@ export default function useSimilarGames(arg0) {
     tmp7 = data;
   }
   data = tmp7;
-  const obj = data(9040);
+  const obj = data(9038);
   const tmp2 = !hasItem;
-  const games = data(7551).useGames(tmp7);
-  const tmp3Result = data(7551);
+  const games = data(7553).useGames(tmp7);
+  const tmp3Result = data(7553);
   const items = [GameStore];
   const items1 = [tmp7];
   const stateFromStores = data(504).useStateFromStores(items, () => data.some((item) => null == game.getGame(item) && !game.hasNoData(item) && !game.didFetchingFail(item)), items1);
@@ -43,4 +175,4 @@ export default function useSimilarGames(arg0) {
     const tmp13 = null == error && null == data || isLoading || stateFromStores;
   }
   return obj3;
-};
+});

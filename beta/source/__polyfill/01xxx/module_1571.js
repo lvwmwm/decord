@@ -1,170 +1,121 @@
 // Module ID: 1571
 // Function ID: 1572
-// Dependencies: [109, 19, 1514, 1489]
-// Exports: useNavigationCache
+// Dependencies: [19, 1492, 1532, 1493]
+// Exports: useNavigationHelpers
 
 // Module 1571
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
-const require = arg1;
-let closure_2 = ["emit"];
+const require = fn;
+const PrivateValueStore = fn(1492).PrivateValueStore;
 
-export const useNavigationCache = function useNavigationCache(getState) {
-  getState = getState.getState;
-  const navigation = getState.navigation;
-  const setOptions = getState.setOptions;
-  const router = getState.router;
-  const emitter = getState.emitter;
-  const stackRef = emitter.useContext(getState(navigation[2]).NavigationBuilderContext).stackRef;
-  let items = [navigation, router.actionCreators];
-  const base = emitter.useMemo(() => {
-    const tmp = router(dispatch, setOptions);
-    closure_0 = tmp;
+export const useNavigationHelpers = function useNavigationHelpers(id) {
+  id = id.id;
+  const onAction = id.onAction;
+  const onUnhandledAction = id.onUnhandledAction;
+  const getState = id.getState;
+  const emitter = id.emitter;
+  const router = id.router;
+  const context = onUnhandledAction.useContext(id(onAction[2]).NavigationContext);
+  const ref = onUnhandledAction.useRef(null);
+  ref.current = { state: id.state, base: getState() };
+  const insertionEffect = onUnhandledAction.useInsertionEffect(() => {
+    ref.current = null;
+  });
+  let items = [router, context, emitter.emit, getState, onAction, onUnhandledAction, id, ref];
+  return onUnhandledAction.useMemo(() => {
+    const obj = {};
     const merged = Object.assign(router.actionCreators);
-    const merged1 = Object.assign(getState(navigation[3]).CommonActions);
-    dispatch = function dispatch() {
-      const error = new Error("Actions cannot be dispatched from a placeholder screen.");
-      throw error;
-    };
-    const keys = Object.keys({});
+    const merged1 = Object.assign(id(onAction[3]).CommonActions);
+    const keys = Object.keys(obj);
     const reduced = keys.reduce((acc, item) => {
-      acc[item] = dispatch;
+      closure_0 = item;
+      acc[item] = () => {
+        const items = [...HermesBuiltin.copyRestArgs()];
+        const applyResult = obj[closure_0].apply(items);
+        let applyResultResult = applyResult;
+        if (typeof applyResult === "function") {
+          applyResultResult = applyResult(closure_1_3());
+        }
+        if (!obj2(applyResultResult)) {
+          if (closure_1_2 != null) {
+            closure_1_2(applyResultResult);
+          }
+        }
+      };
       return acc;
     }, {});
-    const obj2 = {};
-    const merged2 = Object.assign(tmp);
+    let obj2 = {};
+    const merged2 = Object.assign(context);
     const merged3 = Object.assign(reduced);
-    obj2.addListener = function addListener() {
-      return () => {
-
-      };
+    obj2.dispatch = function dispatch(fn) {
+      let tmp = fn;
+      if (typeof fn === "function") {
+        tmp = fn(getState());
+      }
+      if (!obj2(tmp)) {
+        if (onUnhandledAction != null) {
+          onUnhandledAction(tmp);
+        }
+      }
     };
-    obj2.removeListener = function removeListener() {
-
+    obj2.emit = emitter.emit;
+    obj2.isFocused = context ? context.isFocused : (() => true);
+    obj2.canGoBack = function canGoBack() {
+      const tmp = getState();
+      const CommonActions = id(onAction[3]).CommonActions;
+      let flag = null !== stateForAction.getStateForAction(tmp, CommonActions.goBack(), { routeNames: tmp.routeNames, routeParamList: {}, routeGetIdList: {} });
+      if (!flag) {
+        let canGoBackResult;
+        if (context != null) {
+          canGoBackResult = obj2.canGoBack();
+        }
+        flag = canGoBackResult;
+        obj2 = context;
+      }
+      if (!flag) {
+        flag = false;
+      }
+      return flag;
     };
-    obj2.dispatch = dispatch;
+    obj2.getId = function getId() {
+      return obj;
+    };
     obj2.getParent = function getParent(arg0) {
       if (undefined !== arg0) {
-        if (arg0 === closure_0.getId()) {
-          let parent = base;
+        let tmp2 = obj2;
+        if (obj2) {
+          obj2 = obj;
+          tmp2 = obj;
+          if (arg0 !== obj.getId()) {
+            const parent = obj2.getParent();
+            tmp2 = parent;
+            while (parent) {
+              obj2 = parent;
+              tmp2 = parent;
+              if (arg0 === parent.getId()) {
+                break;
+              }
+            }
+          }
         }
-        return parent;
+        return tmp2;
+      } else {
+        return context;
       }
-      parent = closure_0.getParent(arg0);
     };
-    obj2.setOptions = function setOptions() {
-      const error = new Error("Options cannot be set from a placeholder screen.");
-      throw error;
-    };
-    obj2.isFocused = function isFocused() {
-      return false;
+    obj2.getState = function getState() {
+      const tmp = getState();
+      const current = ref.current;
+      state = tmp;
+      if (null != current) {
+        state = tmp;
+        if (current.base === tmp) {
+          state = current.state;
+        }
+      }
+      return state;
     };
     return obj2;
   }, items);
-  const items1 = [base, getState, navigation, setOptions, emitter];
-  emitter.useMemo(() => ({ current: {} }), items1);
-  const routes = getState.state.routes;
-  const navigations = routes.reduce((acc, key) => {
-    if (ref.current[key.key]) {
-      acc[key.key] = tmp;
-    } else {
-      function dispatch(arg0) {
-
-      }
-      function withStack(fn) {
-        fn();
-      }
-      let obj = {};
-      let merged = Object.assign(withStack.actionCreators);
-      let merged1 = Object.assign(getState(navigation[3]).CommonActions);
-      const _Object = Object;
-      const keys = Object.keys(obj);
-      const reduced = keys.reduce((acc, item) => {
-        closure_0 = item;
-        acc[item] = () => {
-          const args = [...arguments];
-          withStack(() => {
-            const items = [...closure_0];
-            const applyResult = obj[args].apply(items);
-            if (typeof dispatch === "function") {
-              let applyResultResult = applyResult;
-              if (typeof applyResult === "function") {
-                applyResultResult = applyResult(args());
-              }
-              if (null != applyResultResult) {
-                obj = { source: closure_1.key };
-                const merged = Object.assign(applyResultResult);
-                closure_1_1.dispatch(obj);
-              }
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        };
-        return acc;
-      }, {});
-      const obj2 = {};
-      let merged2 = Object.assign(base);
-      const merged3 = Object.assign(reduced);
-      const merged4 = Object.assign(obj.create(key.key));
-      obj2.dispatch = function dispatch(arg0) {
-        closure_0 = arg0;
-        withStack(() => {
-          if (typeof dispatch === "function") {
-            let tmpResult = tmp;
-            if (typeof tmp === "function") {
-              tmpResult = tmp(closure_0());
-            }
-            if (null != tmpResult) {
-              obj = { source: key.key };
-              const merged = Object.assign(tmpResult);
-              key.dispatch(obj);
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        });
-      };
-      obj2.getParent = function getParent(arg0) {
-        if (undefined !== arg0) {
-          if (arg0 === base.getId()) {
-            let parent = acc[key.key];
-          }
-          return parent;
-        }
-        parent = base.getParent(arg0);
-      };
-      obj2.setOptions = function setOptions(arg0) {
-        closure_0 = arg0;
-        dispatch((arg0) => {
-          obj = {};
-          const merged = Object.assign(arg0);
-          const merged1 = Object.assign(arg0[closure_1.key]);
-          const merged2 = Object.assign(closure_0);
-          obj[closure_1.key] = {};
-          return obj;
-        });
-      };
-      obj2.isFocused = function isFocused() {
-        const state = base.getState();
-        let tmp2 = state.routes[state.index].key === key.key;
-        if (tmp2) {
-          let isFocusedResult = !navigation;
-          if (navigation) {
-            isFocusedResult = obj.isFocused();
-          }
-          tmp2 = isFocusedResult;
-          obj = navigation;
-        }
-        return tmp2;
-      };
-      acc[key.key] = obj2;
-    }
-    return acc;
-  }, {});
-  const insertionEffect = emitter.useInsertionEffect(() => {
-    closure_6.current = navigations;
-  });
-  return { base, navigations };
 };

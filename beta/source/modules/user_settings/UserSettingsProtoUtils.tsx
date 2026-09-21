@@ -1,11 +1,11 @@
-// Module ID: 2025
-// Function ID: 2026
+// Module ID: 2029
+// Function ID: 2030
 // Name: UserSettingsProtoUtils
-// Dependencies: [1223, 2]
+// Dependencies: [1227, 2]
 // Exports: createModifiedProto, getProtoFieldClass
 
-// Module 2025 (UserSettingsProtoUtils)
-import ProtoUtils from "ProtoUtils" /* 1223 */;
+// Module 2029 (UserSettingsProtoUtils)
+import ProtoUtils from "ProtoUtils" /* 1227 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsProtoUtils.tsx");

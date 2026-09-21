@@ -1,15 +1,15 @@
-// Module ID: 14742
-// Function ID: 14743
+// Module ID: 14745
+// Function ID: 14746
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9313, 14743, 4660, 1074, 9314, 9586, 9135, 9581, 2]
+// Dependencies: [9311, 14746, 4663, 1078, 9312, 9582, 9133, 9577, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14742 (validateEmbeddedAppFrame)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9135 */;
-import RPCErrorDefault from "RPCError" /* 9581 */;
-import RPCHelpers from "RPCHelpers" /* 9586 */;
-import FramesStore from "FramesStore" /* 9313 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14743 */;
+// Module 14745 (validateEmbeddedAppFrame)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9133 */;
+import RPCErrorDefault from "RPCError" /* 9577 */;
+import RPCHelpers from "RPCHelpers" /* 9582 */;
+import FramesStore from "FramesStore" /* 9311 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14746 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {
@@ -21,7 +21,7 @@ function validateEmbeddedAppFrame(transport) {
       const tmp31 = new RPCErrorDefault(obj4, "command requires an embedded app frame");
       throw tmp31;
     } else {
-      const tmp35 = React6(FramesStore.getFrameByIframeId(transport.source.iframeId));
+      const tmp35 = closure_1_8(FramesStore.getFrameByIframeId(transport.source.iframeId));
       let tmp13 = null;
       if (null != tmp35) {
         const type = tmp35.surface.type;
@@ -29,7 +29,7 @@ function validateEmbeddedAppFrame(transport) {
           if (tmp12.VOICE_CHANNEL !== type) {
             if (tmp12.MAIN === type) {
               if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                let obj5 = { channelId: "paths", guildId: "scales" };
+                let obj5 = { channelId: "Array", guildId: "Set" };
               } else {
                 obj5 = null;
               }
@@ -60,10 +60,10 @@ function validateEmbeddedAppFrame(transport) {
   }
   obj3 = ApplicationFlagUtils;
 }
-const TransportTypes = fn(4660).TransportTypes;
-const Constants = fn(1074);
+const TransportTypes = fn(4663).TransportTypes;
+const Constants = fn(1078);
 ({ ApplicationFlags: metroRequire, RPCErrors: closure_7 } = Constants);
-const FramesConstants = fn(9314);
+const FramesConstants = fn(9312);
 ({ asLaunched: closure_8, EmbeddedSurfaceType: closure_9 } = FramesConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");

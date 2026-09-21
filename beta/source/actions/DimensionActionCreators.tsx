@@ -1,10 +1,10 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11285
+// Function ID: 11286
 // Name: DimensionActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 
-// Module 11253 (DimensionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 11285 (DimensionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("actions/DimensionActionCreators.tsx");

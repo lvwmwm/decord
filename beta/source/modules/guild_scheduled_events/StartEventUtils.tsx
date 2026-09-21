@@ -1,13 +1,13 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10046
+// Function ID: 10047
 // Name: StartEventUtils
-// Dependencies: [5, 2045, 2041, 2063, 2047, 1074, 9821, 38, 8677, 9788, 2]
+// Dependencies: [5, 2049, 2045, 2067, 2051, 1078, 9799, 38, 8682, 9764, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 10067 (StartEventUtils)
+// Module 10046 (StartEventUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = fn;
 function createStageChannelForEvent() {
@@ -31,7 +31,7 @@ let closure_11 = async function _createStageChannelForEvent(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -59,7 +59,7 @@ let closure_11 = async function _createStageChannelForEvent(arg0, value) {
           closure_131_4 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -108,7 +108,7 @@ let closure_11 = async function _createStageChannelForEvent(arg0, value) {
   }
 };
 function findOrCreateEventChannel(guild_id, arg1) {
-  const guild = GuildStore.getGuild(guild_id.guild_id);
+  guild = GuildStore.getGuild(guild_id.guild_id);
   if (null == guild) {
     return Promise.resolve(null);
   } else {
@@ -137,7 +137,7 @@ let closure_13 = async function _preStartEventActions(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ let closure_14 = async function _setEventAsActive(arg0, value) {
     c5 = 3;
     return { value, done: true };
   }
-  await "HermesInternal";
+  await "IconComponent";
   closure_2 = tmp2;
   closure_130_0 = closure_0;
   let flag = closure_1;
@@ -242,12 +242,12 @@ let closure_14 = async function _setEventAsActive(arg0, value) {
     flag = false;
   }
   closure_130_1 = flag;
-  return "PX_16";
+  return "Set";
 };
-let closure_4 = fn(2045).createChannelRecordFromServer;
-const GuildScheduledEventsConstants = fn(2047);
+let closure_4 = fn(2049).createChannelRecordFromServer;
+const GuildScheduledEventsConstants = fn(2051);
 ({ GuildScheduledEventEntityTypes: closure_7, GuildScheduledEventPrivacyLevel: closure_8 } = GuildScheduledEventsConstants);
-const ChannelTypes = fn(1074).ChannelTypes;
+const ChannelTypes = fn(1078).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/StartEventUtils.tsx");
 

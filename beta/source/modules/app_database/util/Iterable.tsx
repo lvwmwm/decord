@@ -1,10 +1,10 @@
-// Module ID: 7724
-// Function ID: 7725
+// Module ID: 7729
+// Function ID: 7730
 // Name: Iterable
 // Dependencies: [2]
 // Exports: chain
 
-// Module 7724 (Iterable)
+// Module 7729 (Iterable)
 import size from "module_2" /* 2 */;
 
 class Chained {
@@ -28,7 +28,7 @@ prototype["next"] = function next() {
     }
     return iter2;
   }
-  return { done: true, value: "a" };
+  return { done: true, value: "Boolean" };
 };
 const result = size.fileFinishedImporting("modules/app_database/util/Iterable.tsx");
 

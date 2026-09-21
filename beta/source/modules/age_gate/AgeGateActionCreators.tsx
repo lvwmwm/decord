@@ -1,15 +1,15 @@
-// Module ID: 16291
-// Function ID: 16292
+// Module ID: 16294
+// Function ID: 16295
 // Name: AgeGateActionCreators
-// Dependencies: [1099, 1074, 16290, 1241, 1271, 573, 2]
+// Dependencies: [1103, 1078, 16293, 1245, 1275, 577, 2]
 // Exports: logoutUnderageNewUser, preventUnderageRegistration, submitDateOfBirth
 
-// Module 16291 (AgeGateActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AgeGateConstants from "AgeGateConstants" /* 1099 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16290 */;
-import Constants from "Constants" /* 1074 */;
+// Module 16294 (AgeGateActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AgeGateConstants from "AgeGateConstants" /* 1103 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16293 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

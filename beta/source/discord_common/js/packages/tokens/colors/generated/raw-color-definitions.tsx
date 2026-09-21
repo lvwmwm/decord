@@ -1,8 +1,8 @@
-// Module ID: 580
-// Function ID: 581
+// Module ID: 584
+// Function ID: 585
 // Dependencies: [2]
 
-// Module 580
+// Module 584
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/colors/generated/raw-color-definitions.tsx");

@@ -1,48 +1,122 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9496
+// Function ID: 9497
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1374, 21, 4756, 7188, 9499, 9500, 9501, 9502, 9503, 9504, 5804, 2]
-// Exports: default
+// Dependencies: [19, 1378, 21, 4758, 558, 568, 7186, 9497, 9498, 7680, 9499, 9500, 7682, 5802, 2]
 
-// Module 9498 (PremiumFeaturesWumpus)
-import _modDef9499 from "module_9499" /* 9499 */;
-import _modDef9504 from "module_9504" /* 9504 */;
+// Module 9496 (PremiumFeaturesWumpus)
+import c from "c" /* 568 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
+import _modDef7680 from "module_7680" /* 7680 */;
+import _modDef7682 from "module_7682" /* 7682 */;
 import noop from "module_19" /* 19 */;
 
-const PremiumTypes = fn(1374).PremiumTypes;
+require = fn;
+const PremiumTypes = fn(1378).PremiumTypes;
 const jsxProd = fn(21);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
+const createStyles = fn(4758);
 let obj2 = { clouds: { position: "absolute", top: 0, right: 0 }, wumpus: { position: "absolute", top: 22, right: 22, height: 90 }, wumpusLeft: null };
-const obj3 = { transform: null };
+let obj3 = { transform: null };
 let items = [{ scaleX: -1 }];
 obj3.transform = items;
 obj2.wumpusLeft = obj3;
-let closure_7 = createStyles.createStyles(obj2);
+let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesWumpus.tsx");
 
-export default function PremiumFeaturesWumpus(premiumType) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
+  const cResult = c.c(16);
   premiumType = premiumType.premiumType;
-  const tmp = closure_7();
-  const tmp2 = premiumType(7188)();
-  dependencyMap = tmp2;
+  const tmp3 = closure_8();
+  const tmp5 = useIsWindowLargeDefault();
+  if (premiumType === PremiumTypes.TIER_0) {
+    const tmp4Result = tmp4(tmp5 ? 9497 : 9498);
+    if (cResult[0] !== tmp4Result) {
+      const obj2 = { wumpusImageSource: tmp4(7680), cloudsImageSource: tmp4Result };
+      cResult[0] = tmp4Result;
+      cResult[1] = obj2;
+    }
+  } else {
+    const tmp4Result2 = tmp4(tmp5 ? 9499 : 9500);
+    if (cResult[2] !== tmp4Result2) {
+      const obj3 = { wumpusImageSource: tmp4(7682), cloudsImageSource: tmp4Result2 };
+      cResult[2] = tmp4Result2;
+      cResult[3] = obj3;
+      let tmp8 = obj3;
+    } else {
+      tmp8 = cResult[3];
+    }
+    ({ wumpusImageSource, cloudsImageSource } = tmp8);
+    if (cResult[4] === cloudsImageSource) {
+      if (cResult[5] === tmp3.clouds) {
+        let tmp12 = cResult[6];
+      }
+      if (cResult[7] === tmp3.wumpus) {
+        if (cResult[8] === tmp15) {
+          let tmp16 = cResult[9];
+        }
+        if (cResult[10] === tmp16) {
+          if (cResult[11] === wumpusImageSource) {
+            let tmp17 = cResult[12];
+          }
+          if (cResult[13] === tmp12) {
+            if (cResult[14] === tmp17) {
+              let tmp20 = cResult[15];
+            }
+            return tmp20;
+          }
+          const obj4 = { children: null };
+          const items = [tmp12, tmp17];
+          obj4.children = items;
+          const tmp23 = React5(timestampProducer, obj4);
+          cResult[13] = tmp12;
+          cResult[14] = tmp17;
+          cResult[15] = tmp23;
+          tmp20 = tmp23;
+        }
+        const obj5 = { style: tmp16, resizeMode: "contain", source: wumpusImageSource };
+        const tmp19 = hasOwnProperty(tmp4(5802), obj5);
+        cResult[10] = tmp16;
+        cResult[11] = wumpusImageSource;
+        cResult[12] = tmp19;
+        tmp17 = tmp19;
+      }
+      const items1 = [tmp3.wumpus, premiumType === tmp6.TIER_0 && tmp3.wumpusLeft];
+      cResult[7] = tmp3.wumpus;
+      cResult[8] = premiumType === tmp6.TIER_0 && tmp3.wumpusLeft;
+      cResult[9] = items1;
+      tmp16 = items1;
+    }
+    const obj6 = { style: tmp3.clouds, resizeMode: "contain", source: cloudsImageSource };
+    const tmp14 = hasOwnProperty(tmp4(5802), obj6);
+    cResult[4] = cloudsImageSource;
+    cResult[5] = tmp3.clouds;
+    cResult[6] = tmp14;
+    tmp12 = tmp14;
+  }
+}) : ((premiumType) => {
+  premiumType = premiumType.premiumType;
+  const tmp = closure_8();
+  const tmp2 = useIsWindowLargeDefault();
+  importDefault = tmp2;
   const items = [premiumType, tmp2];
   const memo = noop.useMemo(() => {
     if (premiumType === PremiumTypes.TIER_0) {
-      const obj2 = { wumpusImageSource: _modDef9499, cloudsImageSource: importDefault(closure_1 ? 9500 : 9501) };
+      const obj2 = { wumpusImageSource: _modDef7680, cloudsImageSource: importDefault(closure_1 ? 9497 : 9498) };
     } else {
       if (closure_1) {
-        let tmp4 = 9502;
+        let tmp4 = 9499;
       } else {
-        tmp4 = 9503;
+        tmp4 = 9500;
       }
-      const obj = { wumpusImageSource: _modDef9504, cloudsImageSource: importDefault(tmp4) };
+      const obj = { wumpusImageSource: _modDef7682, cloudsImageSource: importDefault(tmp4) };
       return obj;
     }
   }, items);
   ({ wumpusImageSource, cloudsImageSource } = memo);
-  const items1 = [closure_4(premiumType(5804), { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource }), ];
+  const items1 = [closure_5(FastImageDefault, { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource }), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
   if (wumpusLeft) {
@@ -50,7 +124,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   }
   let obj2 = { children: null };
   items2[1] = wumpusLeft;
-  items1[1] = closure_4(premiumType(5804), { style: items2, resizeMode: "contain", source: wumpusImageSource });
+  items1[1] = closure_5(FastImageDefault, { style: items2, resizeMode: "contain", source: wumpusImageSource });
   obj2.children = items1;
-  return closure_6(closure_5, obj2);
-};
+  return closure_7(closure_6, obj2);
+});

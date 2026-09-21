@@ -1,16 +1,18 @@
 // Module ID: 8773
 // Function ID: 8774
-// Dependencies: [41, 42, 93, 95, 98, 8744, 8767]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8774, 8771, 8772]
 
 // Module 8773
-import _modDef8767 from "module_8767" /* 8767 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8772 from "module_8772" /* 8772 */;
+import _modDef8774 from "module_8774" /* 8774 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-const FeConvolveMatrix = arg1;
+const FeColorMatrix = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,14 +32,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeConvolveMatrix {
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class FeColorMatrix {
   constructor() {
     self = this;
-    tmp = c2(this, FeConvolveMatrix);
-    tmp2 = closure_4;
-    obj = closure_4(FeConvolveMatrix);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
+    tmp = closure_3(this, FeColorMatrix);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(FeColorMatrix);
+    tmp3 = closure_4;
+    if (closure_7()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
       tmp8 = arguments;
@@ -50,18 +54,33 @@ class FeConvolveMatrix {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeConvolveMatrix, _modDef8767);
+_inherits(FeColorMatrix, _modDef8772);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FeConvolveMatrix(8744).warnUnimplementedFilter();
-    return null;
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign(FeColorMatrix(8771).extractFilter(this.props));
+    const obj2 = FeColorMatrix(8771);
+    const merged1 = Object.assign(FeColorMatrix(8771).extractIn(this.props));
+    const obj3 = FeColorMatrix(8771);
+    const merged2 = Object.assign(FeColorMatrix(8771).extractFeColorMatrix(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeConvolveMatrix, items);
-importDefaultResultResult.displayName = "FeConvolveMatrix";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = _createClass(FeColorMatrix, items);
+importDefaultResultResult.displayName = "FeColorMatrix";
+let obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.type = "matrix";
+obj.values = "";
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

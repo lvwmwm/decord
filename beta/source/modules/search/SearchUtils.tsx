@@ -1,34 +1,34 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12488
+// Function ID: 12489
 // Name: SearchUtils
-// Dependencies: [32, 2041, 6836, 2096, 4967, 2063, 4405, 2095, 1372, 8122, 1074, 4348, 1115, 12595, 11, 12600, 12, 12601, 4909, 4600, 2]
+// Dependencies: [32, 2045, 6834, 2100, 4969, 2067, 4409, 2099, 1376, 8127, 1078, 4352, 1119, 12489, 11, 12494, 12, 12495, 4911, 4603, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 12594 (SearchUtils)
+// Module 12488 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import util from "util" /* 1115 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import SearchTokens from "SearchTokens" /* 12595 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 12600 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12601 */;
+import util from "util" /* 1119 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import useChannelName from "useChannelName" /* 4911 */;
+import SearchTokens from "SearchTokens" /* 12489 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 12494 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 12495 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ConsentStore from "ConsentStore" /* 6836 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4967 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import ConsentStore from "ConsentStore" /* 6834 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4969 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const SearchTokensDefault = SearchTokens;
 
 require = fn;
-const SearchTabs = fn(8122).SearchTabs;
-const Constants = fn(1074);
+const SearchTabs = fn(8127).SearchTabs;
+const Constants = fn(1078);
 ({ SearchTypes: closure_12, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: closure_14, IS_SEARCH_ANSWER_TOKEN: closure_15, IS_SEARCH_FILTER_TOKEN: closure_16, SearchModes: closure_17, ME, Consents: closure_18, GuildFeatures: closure_19 } = Constants);
 let c20 = 2592000;
@@ -73,7 +73,7 @@ export const getSearchHistoryStateId = function getSearchHistoryStateId(type) {
   }
   return channelId;
 };
-export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, MEDIA, searchResultsQuery) {
+export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, tab, searchResultsQuery) {
   const type = searchContext.type;
   if (constants.GUILD === type) {
     let channelId = searchContext.guildId;
@@ -89,10 +89,10 @@ export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, M
     }
     channelId = searchContext.channelId;
   }
-  return "" + channelId + "-" + MEDIA + "-" + searchResultsQuery;
+  return "" + channelId + "-" + tab + "-" + searchResultsQuery;
 };
-export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(arg0) {
-  const diffResult = _modDef4348().diff(_modDef4348(arg0), "s");
+export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(cResult) {
+  const diffResult = _modDef4352().diff(_modDef4352(cResult), "s");
   if (diffResult > c21) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -130,7 +130,7 @@ export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestam
     const intl = util.intl;
     return intl.string(util.t["5Ldpkc"]);
   }
-  const obj = _modDef4348();
+  const obj = _modDef4352();
 };
 export const getIndexingErrorText = function getIndexingErrorText(searchContext) {
   const type = searchContext.type;
@@ -483,7 +483,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(12600).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(12494).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: constants2.FILTER_ALL, filter: null, token: tmp4 };
@@ -676,7 +676,7 @@ export const removeInvalidPrivateChannelSearchTokens = function removeInvalidPri
 export const getSearchAnalyticsIds = function getSearchAnalyticsIds(type, getSessionId) {
   if (tmp2) {
     if (ConsentStore.hasConsented(constants4.USAGE_STATISTICS)) {
-      const guild = GuildStore.getGuild(type.guildId);
+      guild = GuildStore.getGuild(type.guildId);
       let hasItem;
       if (guild != null) {
         const features = guild.features;

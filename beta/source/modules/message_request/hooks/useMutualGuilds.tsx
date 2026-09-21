@@ -1,23 +1,119 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17352
+// Function ID: 17353
 // Name: useMutualGuilds
-// Dependencies: [19, 7857, 1372, 504, 573, 8456, 2]
-// Exports: useMutualGuildsForMessageRequests
+// Dependencies: [19, 7862, 1376, 558, 568, 504, 577, 8461, 2]
 
-// Module 17349 (useMutualGuilds)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 17352 (useMutualGuilds)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7857 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserProfileStore from "UserProfileStore" /* 7862 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/hooks/useMutualGuilds.tsx");
 
-export const useMutualGuildsForMessageRequests = function useMutualGuildsForMessageRequests(userId) {
-  _require = userId;
+export const useMutualGuildsForMessageRequests = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(11);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      return UserStore.getUser(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  let obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserProfileStore];
+    cResult[3] = items1;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] !== arg0) {
+    class M {
+      constructor() {
+        mutualGuilds = closure_4.getMutualGuilds(closure_0);
+        mapped = undefined;
+        if (mutualGuilds != null) {
+          mapped = mutualGuilds.map((guild) => guild.guild);
+        }
+        if (mapped == null) {
+          mapped = [];
+        }
+        return mapped;
+      }
+    }
+    cResult[4] = arg0;
+    cResult[5] = M;
+    const tmp10 = M;
+  } else {
+    class M {
+      constructor() {
+        mutualGuilds = closure_4.getMutualGuilds(closure_0);
+        mapped = undefined;
+        if (mutualGuilds != null) {
+          mapped = mutualGuilds.map((guild) => guild.guild);
+        }
+        if (mapped == null) {
+          mapped = [];
+        }
+        return mapped;
+      }
+    }
+  }
+  const tmpResult = require("initialize");
+  stateFromStoresArray = require("initialize").useStateFromStoresArray(tmp8, tmp10);
+  if (cResult[6] === stateFromStoresArray) {
+    class M {
+      constructor() {
+        mutualGuilds = closure_4.getMutualGuilds(closure_0);
+        mapped = undefined;
+        if (mutualGuilds != null) {
+          mapped = mutualGuilds.map((guild) => guild.guild);
+        }
+        if (mapped == null) {
+          mapped = [];
+        }
+        return mapped;
+      }
+    }
+  }
+  const fn2 = function _() {
+    let tmp = 0 === stateFromStoresArray.length;
+    if (tmp) {
+      tmp = null != stateFromStores;
+    }
+    if (tmp) {
+      tmp = null == UserProfileStore.getMutualGuilds(closure_0);
+    }
+    if (tmp) {
+      DispatcherDefault.wait(() => stateFromStores(stateFromStoresArray[7])(closure_1_0, undefined, { withMutualGuilds: true }));
+    }
+  };
+  const items2 = [stateFromStoresArray, stateFromStores, arg0];
+  cResult[6] = stateFromStoresArray;
+  cResult[7] = stateFromStores;
+  cResult[8] = arg0;
+  cResult[9] = fn2;
+  cResult[10] = items2;
+}) : ((arg0) => {
+  _require = arg0;
   const items = [UserStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => UserStore.getUser(closure_0));
   let obj = require("initialize");
@@ -33,7 +129,7 @@ export const useMutualGuildsForMessageRequests = function useMutualGuildsForMess
     }
     return mapped;
   });
-  const items2 = [stateFromStoresArray, stateFromStores, userId];
+  const items2 = [stateFromStoresArray, stateFromStores, arg0];
   const effect = noop.useEffect(() => {
     let tmp = 0 === stateFromStoresArray.length;
     if (tmp) {
@@ -43,8 +139,8 @@ export const useMutualGuildsForMessageRequests = function useMutualGuildsForMess
       tmp = null == UserProfileStore.getMutualGuilds(closure_0);
     }
     if (tmp) {
-      DispatcherDefault.wait(() => stateFromStores(stateFromStoresArray[5])(userId, undefined, { withMutualGuilds: true }));
+      DispatcherDefault.wait(() => stateFromStores(stateFromStoresArray[7])(closure_1_0, undefined, { withMutualGuilds: true }));
     }
   }, items2);
   return stateFromStoresArray;
-};
+});

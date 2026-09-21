@@ -1,13 +1,13 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11183
+// Function ID: 11184
 // Name: useUserVoiceActivity
-// Dependencies: [2041, 4395, 4775, 1085, 504, 2]
-// Exports: canViewUserVoiceChannel, default, getUserVoiceState
+// Dependencies: [2045, 4399, 4777, 1089, 558, 568, 504, 2]
+// Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 11141 (useUserVoiceActivity)
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+// Module 11183 (useUserVoiceActivity)
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 const require = fn;
 function getVisibleUserVoiceActivity(arg0, arg1) {
@@ -77,21 +77,11 @@ function getVisibleUserVoiceActivity(arg0, arg1) {
     }
   }
 }
-const Permissions = fn(1085).Permissions;
+const Permissions = fn(1089).Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "paths", voiceChannel: "scales" });
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
-
-export default function useUserVoiceActivity(userId) {
-  userId = userId.userId;
-  const guildId = userId.guildId;
-  const includeNonDiscoverable = userId.includeNonDiscoverable;
-  const items = [includeNonDiscoverable, PermissionStore, VoiceStateStore];
-  const items1 = [guildId, userId, includeNonDiscoverable];
-  return userId(guildId[4]).useStateFromStoresObject(items, () => getVisibleUserVoiceActivity({ userId, guildId, includeNonDiscoverable }, { ChannelStore, PermissionStore, VoiceStateStore }), items1);
-};
-export const getUserVoiceState = function getUserVoiceState(arg0) {
+let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "Set" });
+const ReactCompilerGating = fn(558);
+function getUserVoiceState(arg0) {
   ({ userId, guildId, includeNonDiscoverable } = arg0);
   if (includeNonDiscoverable === undefined) {
     includeNonDiscoverable = false;
@@ -118,7 +108,51 @@ export const getUserVoiceState = function getUserVoiceState(arg0) {
       voiceStateForUser = VoiceStateStore.getDiscoverableVoiceStateForUser(userId);
     }
   }
-};
+}
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
+
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+  const cResult = userId(guildId[5]).c(6);
+  userId = userId.userId;
+  guildId = userId.guildId;
+  const includeNonDiscoverable = userId.includeNonDiscoverable;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [includeNonDiscoverable, PermissionStore, VoiceStateStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === guildId) {
+    if (cResult[2] === includeNonDiscoverable) {
+      if (cResult[3] === userId) {
+        let tmp8 = cResult[4];
+        let tmp9 = cResult[5];
+      }
+      return userId(guildId[6]).useStateFromStoresObject(first, tmp8, tmp9);
+    }
+  }
+  const fn = function l() {
+    return getVisibleUserVoiceActivity({ userId, guildId, includeNonDiscoverable }, { ChannelStore, PermissionStore, VoiceStateStore });
+  };
+  const items1 = [guildId, userId, includeNonDiscoverable];
+  cResult[1] = guildId;
+  cResult[2] = includeNonDiscoverable;
+  cResult[3] = userId;
+  cResult[4] = fn;
+  cResult[5] = items1;
+  tmp9 = items1;
+  tmp8 = fn;
+}) : ((userId) => {
+  userId = userId.userId;
+  const guildId = userId.guildId;
+  const includeNonDiscoverable = userId.includeNonDiscoverable;
+  const items = [includeNonDiscoverable, PermissionStore, VoiceStateStore];
+  const items1 = [guildId, userId, includeNonDiscoverable];
+  return userId(guildId[6]).useStateFromStoresObject(items, () => getVisibleUserVoiceActivity({ userId, guildId, includeNonDiscoverable }, { ChannelStore, PermissionStore, VoiceStateStore }), items1);
+});
+export { getUserVoiceState };
 export const canViewUserVoiceChannel = function canViewUserVoiceChannel(arg0) {
   let tmp = arg1;
   if (arg1 === undefined) {

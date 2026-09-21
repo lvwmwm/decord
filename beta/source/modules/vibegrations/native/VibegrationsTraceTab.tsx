@@ -1,185 +1,28 @@
-// Module ID: 17071
-// Function ID: 17072
+// Module ID: 17074
+// Function ID: 17075
 // Name: VibegrationsTraceTab
-// Dependencies: [32, 19, 17, 9309, 21, 4756, 576, 17072, 17074, 1115, 3678, 17073, 5824, 4752, 1612, 504, 17075, 17076, 4723, 17077, 8474, 11490, 17069, 8997, 7295, 16938, 4704, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 9307, 21, 4758, 580, 558, 568, 17075, 17077, 1119, 3682, 17076, 5824, 4754, 1616, 504, 17078, 17079, 4725, 17080, 8479, 11496, 17072, 7297, 16941, 4706, 8995, 2]
 
-// Module 17071 (VibegrationsTraceTab)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import FileManagerUtils from "FileManagerUtils" /* 8474 */;
-import VibegrationsTraceFormat from "VibegrationsTraceFormat" /* 17072 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17073 */;
-import VibegrationsTraceUtils from "VibegrationsTraceUtils" /* 17074 */;
-import VibegrationsTraceDetailSheet from "VibegrationsTraceDetailSheet" /* 17077 */;
+// Module 17074 (VibegrationsTraceTab)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import _modDef3682 from "module_3682" /* 3682 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import FileManagerUtils from "FileManagerUtils" /* 8479 */;
+import VibegrationsTraceFormat from "VibegrationsTraceFormat" /* 17075 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17076 */;
+import VibegrationsTraceUtils from "VibegrationsTraceUtils" /* 17077 */;
+import VibegrationsTraceDetailSheet from "VibegrationsTraceDetailSheet" /* 17080 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
 
 const require = globalThis.__r;
 const VibegrationsTraceDetailSheetDefault = VibegrationsTraceDetailSheet;
 
 require = fn;
-function TraceRow(entry) {
-  entry = entry.entry;
-  const onPress = entry.onPress;
-  const tmp = closure_9();
-  const traceCategoryTextStyles = VibegrationsTraceFormat.useTraceCategoryTextStyles();
-  const traceCategoryResult = VibegrationsTraceUtils.traceCategory(entry);
-  const tmp6 = "model" === entry.kind ? entry.model : entry.tool;
-  if ("model" === entry.kind) {
-    if (null != entry.promptTokens) {
-      const intl = tmp2(1115).intl;
-      const obj3 = { tokens: tmp2(17073).formatTokens(entry.promptTokens) };
-      let formatToPlainStringResult = intl.formatToPlainString(_modDef3678["PYO+Jv"], obj3);
-      const tmp2Result = tmp2(17073);
-    }
-    const items = [tmp.rowSlot, ];
-    let rowNested = "tool" === entry.kind;
-    if (rowNested) {
-      rowNested = null != entry.parentId;
-    }
-    if (rowNested) {
-      rowNested = tmp.rowNested;
-    }
-    const obj4 = { style: null, children: null };
-    items[1] = rowNested;
-    obj4.style = items;
-    const obj5 = {
-      variant: "primary",
-      onPress() {
-          return onPress(entry);
-        },
-      accessibilityLabel: tmp6,
-      children: null
-    };
-    const obj6 = { style: tmp.rowBody, children: null };
-    const obj7 = { style: tmp.rowTop, children: null };
-    const obj8 = { status: entry.status };
-    const items1 = [React5(tmp2(17072).TraceStatusDot, obj8), , , ];
-    const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2(17073).categoryLabel(traceCategoryResult) };
-    items1[1] = React5(tmp2(4752).Text, obj9);
-    const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp.rowTitle, lineClamp: 1, children: tmp6 };
-    items1[2] = React5(tmp2(4752).Text, obj10);
-    let tmp10Result = null;
-    if (null != formatToPlainStringResult) {
-      const obj11 = { variant: "text-xs/normal", color: "text-subtle", children: formatToPlainStringResult };
-      tmp10Result = tmp10(tmp2(4752).Text, obj11);
-    }
-    items1[3] = tmp10Result;
-    obj7.children = items1;
-    const items2 = [React6(View, obj7), , ];
-    let tmp10Result3 = null;
-    if ("tool" === entry.kind) {
-      tmp10Result3 = null;
-      if (null != entry.summary) {
-        const obj12 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
-        tmp10Result3 = tmp10(tmp2(4752).Text, obj12);
-      }
-    }
-    items2[1] = tmp10Result3;
-    let tmp10Result4 = null;
-    if (null != entry.error) {
-      const obj13 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
-      tmp10Result4 = tmp10(tmp2(4752).Text, obj13);
-    }
-    items2[2] = tmp10Result4;
-    obj6.children = items2;
-    obj5.children = React6(View, obj6);
-    obj4.children = React5(tmp2(5824).Card, obj5);
-    return React5(View, obj4);
-  }
-  formatToPlainStringResult = null;
-  if (null != entry.durationMs) {
-    formatToPlainStringResult = tmp2(17073).formatDuration(entry.durationMs);
-    const tmp2Result4 = tmp2(17073);
-  }
-}
-function TraceOverview(arg0) {
-  const entries = arg0.entries;
-  let reduced;
-  let tmp = closure_9();
-  closure_1 = tmp;
-  dependencyMap = entries(17072).useTraceCategoryFillStyles();
-  let items = [entries];
-  const memo = reduced.useMemo(() => VibegrationsTraceUtils.traceCategoryTotals(entries), items);
-  reduced = memo.reduce((acc, ms) => acc + ms.ms, 0);
-  let obj2 = { style: tmp.overview, children: null };
-  let obj3 = { style: tmp.overviewBar, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
-  let mapped = null;
-  if (0 !== reduced) {
-    mapped = memo.map((item) => {
-      ({ category, ms } = item);
-      let tmp = null;
-      if (0 !== ms) {
-        const obj = { style: null };
-        const items = [dependencyMap[category], ];
-        const obj2 = { flex: ms };
-        items[1] = obj2;
-        obj.style = items;
-        tmp = React5(View, obj, category);
-      }
-      return tmp;
-    });
-  }
-  obj3.children = mapped;
-  let items1 = [closure_7(View, obj3), ];
-  let obj4 = { style: tmp.legend, children: null };
-  const TRACE_CATEGORIES = entries(17074).TRACE_CATEGORIES;
-  obj4.children = TRACE_CATEGORIES.map((item) => {
-    closure_0 = item;
-    const found = memo.find((category) => category.category === closure_0);
-    let num;
-    if (found != null) {
-      num = found.ms;
-    }
-    if (num == null) {
-      num = 0;
-    }
-    let num2 = 0;
-    if (0 !== reduced) {
-      const _Math = Math;
-      num2 = Math.round(num / tmp2 * 100);
-    }
-    const obj = { style: closure_1.legendItem, children: null };
-    const obj2 = { style: null };
-    const items = [closure_1.swatch, dependencyMap[item]];
-    obj2.style = items;
-    const items1 = [React5(View, obj2), , , , ];
-    const obj3 = { variant: "text-xs/normal", color: "text-muted", children: vibegrations_VibegrationsTraceFormat.categoryLabel(item) };
-    items1[1] = React5(Text_Text.Text, obj3);
-    const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: null };
-    const intl = util.intl;
-    obj5.children = intl.formatToPlainString(_modDef3678.UffawN, { percent: num2 });
-    items1[2] = React5(Text_Text.Text, obj5);
-    const intl2 = util.intl;
-    let num4;
-    if (found != null) {
-      num4 = found.calls;
-    }
-    if (num4 == null) {
-      num4 = 0;
-    }
-    const tmp4 = React6;
-    const tmp5 = View;
-    items1[3] = React5(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: intl2.formatToPlainString(_modDef3678.w8vPbe, { count: num4 }) });
-    let tmp6Result = null;
-    if (0 !== num) {
-      const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17073).formatDuration(num) };
-      tmp6Result = tmp6(tmp7(4752).Text, obj7);
-      const tmp7Result = tmp7(17073);
-    }
-    items1[4] = tmp6Result;
-    obj.children = items1;
-    return tmp4(tmp5, obj, item);
-  });
-  items1[1] = closure_7(View, obj4);
-  obj2.children = items1;
-  return closure_8(View, obj2);
-}
 function itemKey(key) {
   return key.key;
 }
@@ -189,7 +32,7 @@ function itemType(kind) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { list: { paddingHorizontal: nativeDefault.space.PX_16 }, header: null, tools: null, search: null, placeholder: null, overview: null, overviewBar: null, legend: null, legendItem: null, swatch: null, groupHead: null, rowSlot: null, rowNested: null, rowBody: null, rowTop: null, rowTitle: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.header = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
@@ -219,33 +62,1027 @@ let obj14 = { gap: nativeDefault.space.PX_4 };
 obj2.rowTop = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj2.rowTitle = { flexShrink: 1 };
 let closure_9 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+  const cResult = c.c(74);
+  entry = entry.entry;
+  let str = entry.onPress;
+  const tmp4 = closure_9();
+  let str2 = VibegrationsTraceFormat.useTraceCategoryTextStyles();
+  if (cResult[0] === str2) {
+    if (cResult[1] === entry) {
+      if (cResult[2] === str) {
+        if (cResult[3] === tmp4.rowBody) {
+          if (cResult[4] === tmp4.rowNested) {
+            if (cResult[5] === tmp4.rowSlot) {
+              if (cResult[6] === tmp4.rowTop) {
+                if (cResult[36] === cResult[7]) {
+                  if (cResult[37] === tmp10) {
+                    if (cResult[38] === tmp12) {
+                      if (cResult[39] === tmp13) {
+                        let tmp52 = cResult[40];
+                      }
+                      if (cResult[41] === tmp4.rowTitle) {
+                        if (cResult[42] === tmp20) {
+                          let tmp55 = cResult[43];
+                        }
+                        if (cResult[44] !== tmp21) {
+                          let tmp59 = null;
+                          if (null != tmp21) {
+                            const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp21 };
+                            tmp59 = React5(tmp(4754).Text, obj3);
+                          }
+                          cResult[44] = tmp21;
+                          cResult[45] = tmp59;
+                          let tmp58 = tmp59;
+                        } else {
+                          tmp58 = cResult[45];
+                        }
+                        if (cResult[46] === tmp6) {
+                          if (cResult[47] === tmp52) {
+                            if (cResult[48] === tmp55) {
+                              if (cResult[49] === tmp58) {
+                                if (cResult[50] === tmp14) {
+                                  if (cResult[51] === tmp15) {
+                                    let tmp61 = cResult[52];
+                                  }
+                                  if (cResult[53] === entry.kind) {
+                                    if (cResult[54] === entry.summary) {
+                                      let tmp64 = cResult[55];
+                                    }
+                                    if (cResult[56] !== entry.error) {
+                                      let tmp69 = null;
+                                      if (null != entry.error) {
+                                        const obj4 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
+                                        tmp69 = React5(tmp(4754).Text, obj4);
+                                      }
+                                      cResult[56] = entry.error;
+                                      cResult[57] = tmp69;
+                                      let tmp68 = tmp69;
+                                    } else {
+                                      tmp68 = cResult[57];
+                                    }
+                                    if (cResult[58] === tmp7) {
+                                      if (cResult[59] === tmp61) {
+                                        if (cResult[60] === tmp64) {
+                                          if (cResult[61] === tmp68) {
+                                            if (cResult[62] === tmp16) {
+                                              let tmp71 = cResult[63];
+                                            }
+                                            if (cResult[64] === tmp8) {
+                                              if (cResult[65] === tmp71) {
+                                                if (cResult[66] === tmp17) {
+                                                  if (cResult[67] === tmp18) {
+                                                    if (cResult[68] === tmp19) {
+                                                      let tmp74 = cResult[69];
+                                                    }
+                                                    if (cResult[70] === tmp9) {
+                                                      if (cResult[71] === tmp11) {
+                                                        if (cResult[72] === tmp74) {
+                                                          let tmp77 = cResult[73];
+                                                        }
+                                                        return tmp77;
+                                                      }
+                                                    }
+                                                    const obj5 = { style: tmp11, children: tmp74 };
+                                                    const tmp79 = React5(tmp9, obj5);
+                                                    cResult[70] = tmp9;
+                                                    cResult[71] = tmp11;
+                                                    cResult[72] = tmp74;
+                                                    cResult[73] = tmp79;
+                                                    tmp77 = tmp79;
+                                                  }
+                                                }
+                                              }
+                                            }
+                                            const obj6 = { variant: tmp17, onPress: tmp18, accessibilityLabel: tmp19, children: tmp71 };
+                                            const tmp76 = React5(tmp8, obj6);
+                                            cResult[64] = tmp8;
+                                            cResult[65] = tmp71;
+                                            cResult[66] = tmp17;
+                                            cResult[67] = tmp18;
+                                            cResult[68] = tmp19;
+                                            cResult[69] = tmp76;
+                                            tmp74 = tmp76;
+                                          }
+                                        }
+                                      }
+                                    }
+                                    const obj7 = { style: tmp16, children: null };
+                                    const items = [tmp61, tmp64, tmp68];
+                                    obj7.children = items;
+                                    const tmp73 = closure_1_8(tmp7, obj7);
+                                    cResult[58] = tmp7;
+                                    cResult[59] = tmp61;
+                                    cResult[60] = tmp64;
+                                    cResult[61] = tmp68;
+                                    cResult[62] = tmp16;
+                                    cResult[63] = tmp73;
+                                    tmp71 = tmp73;
+                                  }
+                                  let tmp66 = null;
+                                  if ("tool" === entry.kind) {
+                                    tmp66 = null;
+                                    if (null != entry.summary) {
+                                      const obj8 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
+                                      tmp66 = React5(tmp(4754).Text, obj8);
+                                    }
+                                  }
+                                  cResult[53] = entry.kind;
+                                  cResult[54] = entry.summary;
+                                  cResult[55] = tmp66;
+                                  tmp64 = tmp66;
+                                }
+                              }
+                            }
+                          }
+                        }
+                        const obj9 = { style: tmp14, children: null };
+                        const items1 = [tmp15, tmp52, tmp55, tmp58];
+                        obj9.children = items1;
+                        const tmp63 = closure_1_8(tmp6, obj9);
+                        cResult[46] = tmp6;
+                        cResult[47] = tmp52;
+                        cResult[48] = tmp55;
+                        cResult[49] = tmp58;
+                        cResult[50] = tmp14;
+                        cResult[51] = tmp15;
+                        cResult[52] = tmp63;
+                        tmp61 = tmp63;
+                      }
+                      const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp4.rowTitle, lineClamp: 1, children: tmp20 };
+                      const tmp57 = React5(tmp(4754).Text, obj10);
+                      cResult[41] = tmp4.rowTitle;
+                      cResult[42] = tmp20;
+                      cResult[43] = tmp57;
+                      tmp55 = tmp57;
+                    }
+                  }
+                }
+                const obj11 = { variant: cResult[12], style: cResult[14], children: cResult[15] };
+                const tmp54 = React5(cResult[7], obj11);
+                cResult[36] = cResult[7];
+                cResult[37] = cResult[12];
+                cResult[38] = cResult[14];
+                cResult[39] = cResult[15];
+                cResult[40] = tmp54;
+                tmp52 = tmp54;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  const traceCategoryResult = VibegrationsTraceUtils.traceCategory(entry);
+  const tmp23 = "model" === entry.kind ? entry.model : entry.tool;
+  if (cResult[24] === entry.durationMs) {
+    if (cResult[25] === entry.kind) {
+      if (cResult[26] === entry.promptTokens) {
+        let rowNested = "tool" === entry.kind;
+        if (rowNested) {
+          rowNested = null != entry.parentId;
+        }
+        if (rowNested) {
+          rowNested = tmp4.rowNested;
+        }
+        if (cResult[28] === tmp4.rowSlot) {
+          if (cResult[29] === rowNested) {
+            let tmp30 = cResult[30];
+          }
+          const Card = tmp(5824).Card;
+          if (cResult[31] === entry) {
+            if (cResult[32] === str) {
+              let tmp31 = cResult[33];
+            }
+            ({ rowBody, rowTop } = tmp4);
+            if (cResult[34] !== entry.status) {
+              const obj12 = { status: entry.status };
+              const tmp34 = React5(tmp(17075).TraceStatusDot, obj12);
+              cResult[34] = entry.status;
+              cResult[35] = tmp34;
+              let tmp32 = tmp34;
+            } else {
+              tmp32 = cResult[35];
+            }
+            const Text = tmp(4754).Text;
+            const categoryLabelResult = tmp(17076).categoryLabel(traceCategoryResult);
+            cResult[0] = str2;
+            cResult[1] = entry;
+            cResult[2] = str;
+            cResult[3] = tmp4.rowBody;
+            cResult[4] = tmp4.rowNested;
+            cResult[5] = tmp4.rowSlot;
+            cResult[6] = tmp4.rowTop;
+            cResult[7] = Text;
+            cResult[8] = tmp28;
+            cResult[9] = tmp28;
+            cResult[10] = Card;
+            cResult[11] = tmp28;
+            str = "text-xs/semibold";
+            cResult[12] = "text-xs/semibold";
+            cResult[13] = tmp30;
+            cResult[14] = str2[traceCategoryResult];
+            cResult[15] = categoryLabelResult;
+            cResult[16] = rowTop;
+            cResult[17] = tmp32;
+            cResult[18] = rowBody;
+            str2 = "primary";
+            cResult[19] = "primary";
+            cResult[20] = tmp31;
+            cResult[21] = tmp23;
+            cResult[22] = tmp23;
+            cResult[23] = tmp24;
+            const tmpResult4 = tmp(17076);
+          }
+          const fn = function _() {
+            return str(entry);
+          };
+          cResult[31] = entry;
+          cResult[32] = str;
+          cResult[33] = fn;
+          tmp31 = fn;
+        }
+        const items2 = [tmp4.rowSlot, rowNested];
+        cResult[28] = tmp4.rowSlot;
+        cResult[29] = rowNested;
+        cResult[30] = items2;
+        tmp30 = items2;
+      }
+    }
+  }
+  if ("model" !== entry.kind) {
+    let formatDurationResult = null;
+    if (null != entry.durationMs) {
+      formatDurationResult = tmp(17076).formatDuration(entry.durationMs);
+      const tmpResult5 = tmp(17076);
+    }
+    cResult[24] = entry.durationMs;
+    cResult[25] = entry.kind;
+    cResult[26] = entry.promptTokens;
+    cResult[27] = formatDurationResult;
+  }
+  const intl = tmp(1119).intl;
+  const obj13 = { tokens: null };
+  const tmpResult = VibegrationsTraceUtils;
+  obj13.tokens = vibegrations_VibegrationsTraceFormat.formatTokens(entry.promptTokens);
+  formatDurationResult = intl.formatToPlainString(_modDef3682["PYO+Jv"], obj13);
+}) : ((entry) => {
+  entry = entry.entry;
+  onPress = entry.onPress;
+  const tmp = closure_9();
+  const traceCategoryTextStyles = VibegrationsTraceFormat.useTraceCategoryTextStyles();
+  const traceCategoryResult = VibegrationsTraceUtils.traceCategory(entry);
+  const tmp6 = "model" === entry.kind ? entry.model : entry.tool;
+  if ("model" === entry.kind) {
+    if (null != entry.promptTokens) {
+      const intl = tmp2(1119).intl;
+      const obj3 = { tokens: tmp2(17076).formatTokens(entry.promptTokens) };
+      let formatToPlainStringResult = intl.formatToPlainString(_modDef3682["PYO+Jv"], obj3);
+      const tmp2Result = tmp2(17076);
+    }
+    const items = [tmp.rowSlot, ];
+    let rowNested = "tool" === entry.kind;
+    if (rowNested) {
+      rowNested = null != entry.parentId;
+    }
+    if (rowNested) {
+      rowNested = tmp.rowNested;
+    }
+    const obj4 = { style: null, children: null };
+    items[1] = rowNested;
+    obj4.style = items;
+    const obj5 = {
+      variant: "primary",
+      onPress() {
+          return onPress(entry);
+        },
+      accessibilityLabel: tmp6,
+      children: null
+    };
+    const obj6 = { style: tmp.rowBody, children: null };
+    const obj7 = { style: tmp.rowTop, children: null };
+    const obj8 = { status: entry.status };
+    const items1 = [React5(tmp2(17075).TraceStatusDot, obj8), , , ];
+    const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2(17076).categoryLabel(traceCategoryResult) };
+    items1[1] = React5(tmp2(4754).Text, obj9);
+    const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp.rowTitle, lineClamp: 1, children: tmp6 };
+    items1[2] = React5(tmp2(4754).Text, obj10);
+    let tmp10Result = null;
+    if (null != formatToPlainStringResult) {
+      const obj11 = { variant: "text-xs/normal", color: "text-subtle", children: formatToPlainStringResult };
+      tmp10Result = tmp10(tmp2(4754).Text, obj11);
+    }
+    items1[3] = tmp10Result;
+    obj7.children = items1;
+    const items2 = [closure_1_8(View, obj7), , ];
+    let tmp10Result3 = null;
+    if ("tool" === entry.kind) {
+      tmp10Result3 = null;
+      if (null != entry.summary) {
+        const obj12 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: entry.summary };
+        tmp10Result3 = tmp10(tmp2(4754).Text, obj12);
+      }
+    }
+    items2[1] = tmp10Result3;
+    let tmp10Result4 = null;
+    if (null != entry.error) {
+      const obj13 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: entry.error };
+      tmp10Result4 = tmp10(tmp2(4754).Text, obj13);
+    }
+    items2[2] = tmp10Result4;
+    obj6.children = items2;
+    obj5.children = closure_1_8(View, obj6);
+    obj4.children = React5(tmp2(5824).Card, obj5);
+    return React5(View, obj4);
+  }
+  formatToPlainStringResult = null;
+  if (null != entry.durationMs) {
+    formatToPlainStringResult = tmp2(17076).formatDuration(entry.durationMs);
+    const tmp2Result4 = tmp2(17076);
+  }
+});
+ReactCompilerGating = fn(558);
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
+  const cResult = require("c").c(23);
+  entries = entries.entries;
+  let tmp4 = closure_9();
+  _require = tmp4;
+  let obj = require("c");
+  const traceCategoryFillStyles = require("VibegrationsTraceFormat").useTraceCategoryFillStyles();
+  if (cResult[0] !== entries) {
+    const traceCategoryTotalsResult = tmp(tmp2[10]).traceCategoryTotals(entries);
+    cResult[0] = entries;
+    cResult[1] = traceCategoryTotalsResult;
+    arr = traceCategoryTotalsResult;
+    const tmpResult = tmp(tmp2[10]);
+  } else {
+    arr = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function x(arg0, ms) {
+      return arg0 + ms.ms;
+    };
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const reduced = arr.reduce(tmp7, 0);
+  if (cResult[3] === traceCategoryFillStyles) {
+    if (cResult[4] === reduced) {
+      if (cResult[5] === arr) {
+        let tmp10 = cResult[6];
+      }
+      if (cResult[7] === tmp4.overviewBar) {
+        if (cResult[8] === tmp10) {
+          let tmp12 = cResult[9];
+        }
+        if (cResult[10] === traceCategoryFillStyles) {
+          if (cResult[11] === reduced) {
+            if (cResult[12] === tmp4.legendItem) {
+              if (cResult[13] === tmp4.swatch) {
+                if (cResult[14] === arr) {
+                  let tmp17 = cResult[15];
+                }
+                if (cResult[16] === tmp4.legend) {
+                  if (cResult[17] === tmp17) {
+                    let tmp19 = cResult[18];
+                  }
+                  if (cResult[19] === tmp4.overview) {
+                    if (cResult[20] === tmp12) {
+                      if (cResult[21] === tmp19) {
+                        let tmp23 = cResult[22];
+                      }
+                      return tmp23;
+                    }
+                  }
+                  let obj3 = { style: tmp9, children: null };
+                  let items = [tmp12, tmp19];
+                  obj3.children = items;
+                  const tmp26 = closure_8(View, obj3);
+                  cResult[19] = tmp4.overview;
+                  cResult[20] = tmp12;
+                  cResult[21] = tmp19;
+                  cResult[22] = tmp26;
+                  tmp23 = tmp26;
+                }
+                let obj4 = { style: tmp16, children: tmp17 };
+                const tmp22 = closure_7(View, obj4);
+                cResult[16] = tmp4.legend;
+                cResult[17] = tmp17;
+                cResult[18] = tmp22;
+                tmp19 = tmp22;
+              }
+            }
+          }
+        }
+        const TRACE_CATEGORIES = tmp(tmp2[10]).TRACE_CATEGORIES;
+        const mapped = TRACE_CATEGORIES.map((item) => {
+          closure_0 = item;
+          const found = arr.find((category) => category.category === closure_0);
+          let num;
+          if (found != null) {
+            num = found.ms;
+          }
+          if (num == null) {
+            num = 0;
+          }
+          let num2 = 0;
+          if (0 !== reduced) {
+            const _Math = Math;
+            num2 = Math.round(num / tmp2 * 100);
+          }
+          const obj = { style: closure_0.legendItem, children: null };
+          const obj2 = { style: null };
+          const items = [closure_0.swatch, traceCategoryFillStyles[item]];
+          obj2.style = items;
+          const items1 = [React5(View, obj2), , , , ];
+          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: vibegrations_VibegrationsTraceFormat.categoryLabel(item) };
+          items1[1] = React5(Text_Text.Text, obj3);
+          const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+          const intl = util.intl;
+          obj5.children = intl.formatToPlainString(_modDef3682.UffawN, { percent: num2 });
+          items1[2] = React5(Text_Text.Text, obj5);
+          const intl2 = util.intl;
+          let num4;
+          if (found != null) {
+            num4 = found.calls;
+          }
+          if (num4 == null) {
+            num4 = 0;
+          }
+          const tmp4 = closure_2_8;
+          const tmp5 = View;
+          items1[3] = React5(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: intl2.formatToPlainString(_modDef3682.w8vPbe, { count: num4 }) });
+          let tmp6Result = null;
+          if (0 !== num) {
+            const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17076).formatDuration(num) };
+            tmp6Result = tmp6(tmp7(4754).Text, obj7);
+            const tmp7Result = tmp7(17076);
+          }
+          items1[4] = tmp6Result;
+          obj.children = items1;
+          return tmp4(tmp5, obj, item);
+        });
+        cResult[10] = traceCategoryFillStyles;
+        cResult[11] = reduced;
+        cResult[12] = tmp4.legendItem;
+        cResult[13] = tmp4.swatch;
+        cResult[14] = arr;
+        cResult[15] = mapped;
+        tmp17 = mapped;
+      }
+      let obj5 = { style: tmp4.overviewBar, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp10 };
+      const tmp15 = closure_7(View, obj5);
+      cResult[7] = tmp4.overviewBar;
+      cResult[8] = tmp10;
+      cResult[9] = tmp15;
+      tmp12 = tmp15;
+    }
+  }
+  let mapped1 = null;
+  if (0 !== reduced) {
+    mapped1 = arr.map((item) => {
+      ({ category, ms } = item);
+      let tmp = null;
+      if (0 !== ms) {
+        const obj = { style: null };
+        const items = [traceCategoryFillStyles[category], ];
+        const obj2 = { flex: ms };
+        items[1] = obj2;
+        obj.style = items;
+        tmp = React5(View, obj, category);
+      }
+      return tmp;
+    });
+  }
+  cResult[3] = traceCategoryFillStyles;
+  cResult[4] = reduced;
+  cResult[5] = arr;
+  cResult[6] = mapped1;
+  tmp10 = mapped1;
+}) : ((arg0) => {
+  const entries = arg0.entries;
+  let reduced;
+  let tmp = closure_9();
+  closure_1 = tmp;
+  dependencyMap = entries(17075).useTraceCategoryFillStyles();
+  let items = [entries];
+  const memo = reduced.useMemo(() => VibegrationsTraceUtils.traceCategoryTotals(entries), items);
+  reduced = memo.reduce((acc, ms) => acc + ms.ms, 0);
+  let obj2 = { style: tmp.overview, children: null };
+  let obj3 = { style: tmp.overviewBar, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
+  let mapped = null;
+  if (0 !== reduced) {
+    mapped = memo.map((item) => {
+      ({ category, ms } = item);
+      let tmp = null;
+      if (0 !== ms) {
+        const obj = { style: null };
+        const items = [dependencyMap[category], ];
+        const obj2 = { flex: ms };
+        items[1] = obj2;
+        obj.style = items;
+        tmp = React5(View, obj, category);
+      }
+      return tmp;
+    });
+  }
+  obj3.children = mapped;
+  let items1 = [closure_7(View, obj3), ];
+  let obj4 = { style: tmp.legend, children: null };
+  const TRACE_CATEGORIES = entries(17077).TRACE_CATEGORIES;
+  obj4.children = TRACE_CATEGORIES.map((item) => {
+    closure_0 = item;
+    const found = memo.find((category) => category.category === closure_0);
+    let num;
+    if (found != null) {
+      num = found.ms;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    let num2 = 0;
+    if (0 !== reduced) {
+      const _Math = Math;
+      num2 = Math.round(num / tmp2 * 100);
+    }
+    const obj = { style: closure_1.legendItem, children: null };
+    const obj2 = { style: null };
+    const items = [closure_1.swatch, dependencyMap[item]];
+    obj2.style = items;
+    const items1 = [React5(View, obj2), , , , ];
+    const obj3 = { variant: "text-xs/normal", color: "text-muted", children: vibegrations_VibegrationsTraceFormat.categoryLabel(item) };
+    items1[1] = React5(Text_Text.Text, obj3);
+    const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+    const intl = util.intl;
+    obj5.children = intl.formatToPlainString(_modDef3682.UffawN, { percent: num2 });
+    items1[2] = React5(Text_Text.Text, obj5);
+    const intl2 = util.intl;
+    let num4;
+    if (found != null) {
+      num4 = found.calls;
+    }
+    if (num4 == null) {
+      num4 = 0;
+    }
+    const tmp4 = closure_2_8;
+    const tmp5 = View;
+    items1[3] = React5(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: intl2.formatToPlainString(_modDef3682.w8vPbe, { count: num4 }) });
+    let tmp6Result = null;
+    if (0 !== num) {
+      const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17076).formatDuration(num) };
+      tmp6Result = tmp6(tmp7(4754).Text, obj7);
+      const tmp7Result = tmp7(17076);
+    }
+    items1[4] = tmp6Result;
+    obj.children = items1;
+    return tmp4(tmp5, obj, item);
+  });
+  items1[1] = closure_7(View, obj4);
+  obj2.children = items1;
+  return closure_8(View, obj2);
+});
+ReactCompilerGating = fn(558);
+const obj15 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsTraceTab.tsx");
 
-export default function VibegrationsTraceTab(projectId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+  const cResult = projectId(stateFromStoresArray[8]).c(59);
+  projectId = projectId.projectId;
+  const tmp4 = closure_9();
+  importDefault = tmp4;
+  const bottom = require("useSafeAreaInsets")().bottom;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [VibegrationsProjectStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== projectId) {
+    class T {
+      constructor() {
+        return closure_6.getTrace(projectId);
+      }
+    }
+    const items1 = [projectId];
+    cResult[1] = projectId;
+    cResult[2] = T;
+    cResult[3] = items1;
+    let tmp8 = items1;
+    const tmp7 = T;
+  } else {
+    class T {
+      constructor() {
+        return closure_6.getTrace(projectId);
+      }
+    }
+    tmp8 = cResult[3];
+  }
+  let obj = projectId(stateFromStoresArray[8]);
+  stateFromStoresArray = projectId(stateFromStoresArray[17]).useStateFromStoresArray(first, tmp7, tmp8);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        return closure_6.getTrace(projectId);
+      }
+    }
+    const items2 = [VibegrationsProjectStore];
+    cResult[4] = items2;
+    let tmp10 = items2;
+  } else {
+    class T {
+      constructor() {
+        return closure_6.getTrace(projectId);
+      }
+    }
+  }
+  if (cResult[5] !== projectId) {
+    class T {
+      constructor() {
+        return closure_6.getTrace(projectId);
+      }
+    }
+    const items3 = [projectId];
+    cResult[5] = projectId;
+    cResult[6] = tmp13;
+    cResult[7] = items3;
+    let tmp12 = items3;
+    const tmp11 = tmp13;
+  } else {
+    class T {
+      constructor() {
+        return closure_6.getTrace(projectId);
+      }
+    }
+    tmp12 = cResult[7];
+  }
+  let tmpResult = projectId(stateFromStoresArray[17]);
+  const stateFromStores = projectId(stateFromStoresArray[17]).useStateFromStores(tmp10, tmp11, tmp12);
+  let obj4 = first1;
+  const tmpResult3 = projectId(stateFromStoresArray[17]);
+  first1 = items4(first1.useState(""), 2)[0];
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        return projectId(closure_2[18]).clearTraceDetailCache;
+      }
+    }
+    cResult[8] = E;
+    const tmp17 = E;
+  } else {
+    class E {
+      constructor() {
+        return projectId(closure_2[18]).clearTraceDetailCache;
+      }
+    }
+  }
+  if (cResult[9] !== projectId) {
+    class E {
+      constructor() {
+        return projectId(closure_2[18]).clearTraceDetailCache;
+      }
+    }
+    tmp19[0] = projectId;
+    cResult[9] = projectId;
+    cResult[10] = tmp19;
+    const tmp18 = tmp19;
+  } else {
+    class E {
+      constructor() {
+        return projectId(closure_2[18]).clearTraceDetailCache;
+      }
+    }
+  }
+  const effect = obj4.useEffect(tmp17, tmp18);
+  if (cResult[11] === stateFromStoresArray) {
+    class E {
+      constructor() {
+        return projectId(closure_2[18]).clearTraceDetailCache;
+      }
+    }
+    if (cResult[14] !== projectId) {
+      class R {
+        constructor(arg0) {
+          obj = closure_0(closure_2[20]);
+          obj1 = { key: closure_0(closure_2[21]).VIBEGRATIONS_TRACE_DETAIL_SHEET_KEY, content: null };
+          obj4 = { projectId, entryId: projectId.id, initialEntry: projectId };
+          obj1.content = jsx(closure_1(closure_2[21]), obj4);
+          showActionSheetResult = obj.showActionSheet(obj1);
+          return;
+        }
+      }
+      cResult[14] = projectId;
+      class O {
+        constructor(arg0) {
+          item = projectId.item;
+          if ("entry" === item.kind) {
+            tmp6 = jsx;
+            tmp7 = f75075;
+            obj1 = { entry: null, onPress: null };
+            obj1.entry = item.entry;
+            tmp8 = closure_5;
+            obj1.onPress = closure_5;
+            tmp9Result = jsx(f75075, obj1);
+          } else {
+            obj7 = { style: null, children: null };
+            tmp11 = closure_1;
+            obj7.style = closure_1.groupHead;
+            tmp12 = jsx;
+            tmp13 = closure_0;
+            tmp14 = closure_2;
+            tmp9 = jsxs;
+            tmp10 = View;
+            obj8 = { variant: "text-xs/semibold", color: "text-muted", children: null };
+            obj8.children = item.label;
+            items = [, , ];
+            items[0] = jsx(closure_0(closure_2[15]).Text, obj8);
+            tmp15 = null;
+            tmp2 = null;
+            if (null != item.started) {
+              tmp = jsx;
+              obj = { variant: "text-xs/normal", color: "text-subtle", children: null };
+              obj.children = item.started;
+              tmp2 = jsx(tmp13(tmp14[15]).Text, obj);
+            }
+            items[1] = tmp2;
+            tmp3 = null;
+            if (null != item.spanMs) {
+              tmp4 = jsx;
+              obj9 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+              tmp13Result = tmp13(tmp14[13]);
+              obj9.children = tmp13Result.formatDuration(item.spanMs);
+              tmp3 = jsx(tmp13(tmp14[15]).Text, obj9);
+            }
+            items[2] = tmp3;
+            obj7.children = items;
+            tmp9Result = tmp9(tmp10, obj7);
+          }
+          return tmp9Result;
+        }
+      }
+    } else {
+      class R {
+        constructor(arg0) {
+          obj = closure_0(closure_2[20]);
+          obj1 = { key: closure_0(closure_2[21]).VIBEGRATIONS_TRACE_DETAIL_SHEET_KEY, content: null };
+          obj4 = { projectId, entryId: projectId.id, initialEntry: projectId };
+          obj1.content = jsx(closure_1(closure_2[21]), obj4);
+          showActionSheetResult = obj.showActionSheet(obj1);
+          return;
+        }
+      }
+    }
+    onPress = tmp22;
+    if (cResult[16] === tmp22) {
+      class R {
+        constructor(arg0) {
+          obj = closure_0(closure_2[20]);
+          obj1 = { key: closure_0(closure_2[21]).VIBEGRATIONS_TRACE_DETAIL_SHEET_KEY, content: null };
+          obj4 = { projectId, entryId: projectId.id, initialEntry: projectId };
+          obj1.content = jsx(closure_1(closure_2[21]), obj4);
+          showActionSheetResult = obj.showActionSheet(obj1);
+          return;
+        }
+      }
+      if (cResult[19] === stateFromStoresArray) {
+        class R {
+          constructor(arg0) {
+            obj = closure_0(closure_2[20]);
+            obj1 = { key: closure_0(closure_2[21]).VIBEGRATIONS_TRACE_DETAIL_SHEET_KEY, content: null };
+            obj4 = { projectId, entryId: projectId.id, initialEntry: projectId };
+            obj1.content = jsx(closure_1(closure_2[21]), obj4);
+            showActionSheetResult = obj.showActionSheet(obj1);
+            return;
+          }
+        }
+        class F {
+          constructor() {
+            combined = "vibegrations-trace-" + projectId + ".json";
+            closure_0 = combined;
+            obj = closure_0(closure_2[22]);
+            obj2 = closure_0(closure_2[10]);
+            date = new Date();
+            writeFileResult = obj.writeFile("cache", combined, obj2.traceExportPayload(projectId, closure_2, date.toISOString()), "utf8");
+            nextPromise = writeFileResult.then((result) => {
+              if (null == result) {
+                const _Error = Error;
+                const error = new Error("trace file was not written");
+                throw error;
+              } else {
+                const _encodeURI = encodeURI;
+                const _HermesInternal = HermesInternal;
+                combined = "file://" + encodeURI(result.replace(/^file:\/*/, "/"));
+                const obj2 = { sourceUris: null, fileName: null, mimeType: "application/json", copy: true };
+                const items = [combined];
+                obj2.sourceUris = items;
+                obj2.fileName = combined;
+                return projectId(stateFromStoresArray[23]).saveDocuments(obj2);
+              }
+            });
+            catchPromise = nextPromise.catch((error) => {
+              if (obj.isErrorWithCode(error)) {
+                const code = error.code;
+                const OPERATION_CANCELED = combined(stateFromStoresArray[23]).errorCodes.OPERATION_CANCELED;
+              }
+            });
+            return;
+          }
+        }
+      }
+      class F {
+        constructor() {
+          combined = "vibegrations-trace-" + projectId + ".json";
+          closure_0 = combined;
+          obj = closure_0(closure_2[22]);
+          obj2 = closure_0(closure_2[10]);
+          date = new Date();
+          writeFileResult = obj.writeFile("cache", combined, obj2.traceExportPayload(projectId, closure_2, date.toISOString()), "utf8");
+          nextPromise = writeFileResult.then((result) => {
+            if (null == result) {
+              const _Error = Error;
+              const error = new Error("trace file was not written");
+              throw error;
+            } else {
+              const _encodeURI = encodeURI;
+              const _HermesInternal = HermesInternal;
+              combined = "file://" + encodeURI(result.replace(/^file:\/*/, "/"));
+              const obj2 = { sourceUris: null, fileName: null, mimeType: "application/json", copy: true };
+              const items = [combined];
+              obj2.sourceUris = items;
+              obj2.fileName = combined;
+              return projectId(stateFromStoresArray[23]).saveDocuments(obj2);
+            }
+          });
+          catchPromise = nextPromise.catch((error) => {
+            if (obj.isErrorWithCode(error)) {
+              const code = error.code;
+              const OPERATION_CANCELED = combined(stateFromStoresArray[23]).errorCodes.OPERATION_CANCELED;
+            }
+          });
+          return;
+        }
+      }
+      class O {
+        constructor(arg0) {
+          item = projectId.item;
+          if ("entry" === item.kind) {
+            tmp6 = jsx;
+            tmp7 = f75075;
+            obj1 = { entry: null, onPress: null };
+            obj1.entry = item.entry;
+            tmp8 = closure_5;
+            obj1.onPress = closure_5;
+            tmp9Result = jsx(f75075, obj1);
+          } else {
+            obj7 = { style: null, children: null };
+            tmp11 = closure_1;
+            obj7.style = closure_1.groupHead;
+            tmp12 = jsx;
+            tmp13 = closure_0;
+            tmp14 = closure_2;
+            tmp9 = jsxs;
+            tmp10 = View;
+            obj8 = { variant: "text-xs/semibold", color: "text-muted", children: null };
+            obj8.children = item.label;
+            items = [, , ];
+            items[0] = jsx(closure_0(closure_2[15]).Text, obj8);
+            tmp15 = null;
+            tmp2 = null;
+            if (null != item.started) {
+              tmp = jsx;
+              obj = { variant: "text-xs/normal", color: "text-subtle", children: null };
+              obj.children = item.started;
+              tmp2 = jsx(tmp13(tmp14[15]).Text, obj);
+            }
+            items[1] = tmp2;
+            tmp3 = null;
+            if (null != item.spanMs) {
+              tmp4 = jsx;
+              obj9 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+              tmp13Result = tmp13(tmp14[13]);
+              obj9.children = tmp13Result.formatDuration(item.spanMs);
+              tmp3 = jsx(tmp13(tmp14[15]).Text, obj9);
+            }
+            items[2] = tmp3;
+            obj7.children = items;
+            tmp9Result = tmp9(tmp10, obj7);
+          }
+          return tmp9Result;
+        }
+      }
+      cResult[20] = projectId;
+      cResult[21] = F;
+    }
+    class O {
+      constructor(arg0) {
+        item = projectId.item;
+        if ("entry" === item.kind) {
+          tmp6 = jsx;
+          tmp7 = f75075;
+          obj1 = { entry: null, onPress: null };
+          obj1.entry = item.entry;
+          tmp8 = closure_5;
+          obj1.onPress = closure_5;
+          tmp9Result = jsx(f75075, obj1);
+        } else {
+          obj7 = { style: null, children: null };
+          tmp11 = closure_1;
+          obj7.style = closure_1.groupHead;
+          tmp12 = jsx;
+          tmp13 = closure_0;
+          tmp14 = closure_2;
+          tmp9 = jsxs;
+          tmp10 = View;
+          obj8 = { variant: "text-xs/semibold", color: "text-muted", children: null };
+          obj8.children = item.label;
+          items = [, , ];
+          items[0] = jsx(closure_0(closure_2[15]).Text, obj8);
+          tmp15 = null;
+          tmp2 = null;
+          if (null != item.started) {
+            tmp = jsx;
+            obj = { variant: "text-xs/normal", color: "text-subtle", children: null };
+            obj.children = item.started;
+            tmp2 = jsx(tmp13(tmp14[15]).Text, obj);
+          }
+          items[1] = tmp2;
+          tmp3 = null;
+          if (null != item.spanMs) {
+            tmp4 = jsx;
+            obj9 = { variant: "text-xs/normal", color: "text-subtle", children: null };
+            tmp13Result = tmp13(tmp14[13]);
+            obj9.children = tmp13Result.formatDuration(item.spanMs);
+            tmp3 = jsx(tmp13(tmp14[15]).Text, obj9);
+          }
+          items[2] = tmp3;
+          obj7.children = items;
+          tmp9Result = tmp9(tmp10, obj7);
+        }
+        return tmp9Result;
+      }
+    }
+    cResult[16] = tmp22;
+    cResult[17] = tmp4.groupHead;
+    cResult[18] = O;
+  }
+  items4 = [];
+  const tmp15 = items4(first1.useState(""), 2);
+  const tmpResult4 = projectId(stateFromStoresArray[10]);
+  let item = projectId(stateFromStoresArray[10]).groupTraceByTurn(stateFromStoresArray).forEach((turnId, index) => {
+    const filterTraceResult = VibegrationsTraceUtils.filterTrace(turnId.entries, first1);
+    if (0 !== filterTraceResult.length) {
+      turnId = turnId.turnId;
+      if (turnId == null) {
+        turnId = index;
+      }
+      const obj2 = { kind: "group", key: null, label: null, started: null, spanMs: null };
+      const _HermesInternal = HermesInternal;
+      obj2.key = "group-" + turnId;
+      const intl = tmp(1119).intl;
+      const obj3 = { number: index + 1 };
+      obj2.label = intl.formatToPlainString(_modDef3682["Y/j+TD"], obj3);
+      obj2.started = tmp(17079).formatClockTime(turnId.startedAt);
+      obj2.spanMs = turnId.spanMs;
+      items4.push(obj2);
+      for (const item10041 of filterTraceResult) {
+        let obj4 = { kind: "entry", key: item10041.id, entry: item10041 };
+        let arr3 = items4.push(obj4);
+        continue;
+      }
+      const tmpResult = tmp(17079);
+    }
+  });
+  cResult[11] = stateFromStoresArray;
+  cResult[12] = first1;
+  cResult[13] = items4;
+}) : ((projectId) => {
   projectId = projectId.projectId;
   let stateFromStoresArray;
   let first;
-  let onPress;
+  onPress = undefined;
   let tmp = closure_9();
   importDefault = tmp;
   let items = [VibegrationsProjectStore];
   const items1 = [projectId];
-  stateFromStoresArray = projectId(stateFromStoresArray[15]).useStateFromStoresArray(items, () => VibegrationsProjectStore.getTrace(projectId), items1);
-  let obj = projectId(stateFromStoresArray[15]);
+  stateFromStoresArray = projectId(stateFromStoresArray[17]).useStateFromStoresArray(items, () => VibegrationsProjectStore.getTrace(projectId), items1);
+  let obj = projectId(stateFromStoresArray[17]);
   const items2 = [VibegrationsProjectStore];
   const items3 = [projectId];
-  const stateFromStores = projectId(stateFromStoresArray[15]).useStateFromStores(items2, () => VibegrationsProjectStore.getHistoryState(projectId, "trace"), items3);
+  const stateFromStores = projectId(stateFromStoresArray[17]).useStateFromStores(items2, () => VibegrationsProjectStore.getHistoryState(projectId, "trace"), items3);
   const tmp6 = first(onPress.useState(""), 2);
   first = tmp6[0];
   const items4 = [projectId];
-  const effect = onPress.useEffect(() => projectId(stateFromStoresArray[16]).clearTraceDetailCache, items4);
+  const effect = onPress.useEffect(() => projectId(stateFromStoresArray[18]).clearTraceDetailCache, items4);
   const items5 = [stateFromStoresArray, first];
   const items6 = [projectId];
   const memo = onPress.useMemo(() => {
     const items = [];
-    const obj = projectId(stateFromStoresArray[8]);
-    const item = projectId(stateFromStoresArray[8]).groupTraceByTurn(stateFromStoresArray).forEach((turnId, index) => {
+    const obj = projectId(stateFromStoresArray[10]);
+    const item = projectId(stateFromStoresArray[10]).groupTraceByTurn(stateFromStoresArray).forEach((turnId, index) => {
       const filterTraceResult = VibegrationsTraceUtils.filterTrace(turnId.entries, first);
       if (0 !== filterTraceResult.length) {
         turnId = turnId.turnId;
@@ -255,10 +1092,10 @@ export default function VibegrationsTraceTab(projectId) {
         const obj2 = { kind: "group", key: null, label: null, started: null, spanMs: null };
         const _HermesInternal = HermesInternal;
         obj2.key = "group-" + turnId;
-        const intl = tmp(1115).intl;
+        const intl = tmp(1119).intl;
         const obj3 = { number: index + 1 };
-        obj2.label = intl.formatToPlainString(_modDef3678["Y/j+TD"], obj3);
-        obj2.started = tmp(17076).formatClockTime(turnId.startedAt);
+        obj2.label = intl.formatToPlainString(_modDef3682["Y/j+TD"], obj3);
+        obj2.started = tmp(17079).formatClockTime(turnId.startedAt);
         obj2.spanMs = turnId.spanMs;
         items.push(obj2);
         for (const item10041 of filterTraceResult) {
@@ -266,7 +1103,7 @@ export default function VibegrationsTraceTab(projectId) {
           let arr3 = items.push(obj4);
           continue;
         }
-        const tmpResult = tmp(17076);
+        const tmpResult = tmp(17079);
       }
     });
     return items;
@@ -281,7 +1118,7 @@ export default function VibegrationsTraceTab(projectId) {
     item = item.item;
     if ("entry" === item.kind) {
       const obj2 = { entry: item.entry, onPress };
-      let tmp9Result = React5(TraceRow, obj2);
+      let tmp9Result = React5(closure_10, obj2);
     } else {
       const obj3 = { style: groupHead.groupHead, children: null };
       const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: item.label };
@@ -289,65 +1126,65 @@ export default function VibegrationsTraceTab(projectId) {
       let tmp2 = null;
       if (null != item.started) {
         const obj = { variant: "text-xs/normal", color: "text-subtle", children: item.started };
-        tmp2 = React5(tmp13(4752).Text, obj);
+        tmp2 = React5(tmp13(4754).Text, obj);
       }
       items[1] = tmp2;
       let tmp3 = null;
       if (null != item.spanMs) {
-        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13(17073).formatDuration(item.spanMs) };
-        tmp3 = React5(tmp13(4752).Text, obj5);
-        const tmp13Result = tmp13(17073);
+        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13(17076).formatDuration(item.spanMs) };
+        tmp3 = React5(tmp13(4754).Text, obj5);
+        const tmp13Result = tmp13(17076);
       }
       items[2] = tmp3;
       obj3.children = items;
-      tmp9Result = React6(View, obj3);
+      tmp9Result = closure_2_8(View, obj3);
     }
     return tmp9Result;
   }, items7);
   if (0 === stateFromStoresArray.length) {
     let obj3 = { style: tmp.placeholder, children: null };
     let obj4 = { state: stateFromStores, emptyTitle: null, emptyBody: null };
-    let intl = tmp4(tmp3[9]).intl;
-    obj4.emptyTitle = intl.string(tmp2(tmp3[10]).Iyt8OJ);
-    const intl2 = tmp4(tmp3[9]).intl;
-    obj4.emptyBody = intl2.string(tmp2(tmp3[10])["8pdPx5"]);
-    obj3.children = closure_7(tmp4(tmp3[22]).VibegrationsHistoryPlaceholder, obj4);
+    let intl = tmp4(tmp3[11]).intl;
+    obj4.emptyTitle = intl.string(tmp2(tmp3[12]).Iyt8OJ);
+    const intl2 = tmp4(tmp3[11]).intl;
+    obj4.emptyBody = intl2.string(tmp2(tmp3[12])["8pdPx5"]);
+    obj3.children = closure_7(tmp4(tmp3[24]).VibegrationsHistoryPlaceholder, obj4);
     let tmp15 = closure_7(View, obj3);
   } else {
     let obj5 = { data: memo, keyExtractor: itemKey, getItemType: itemType, renderItem: callback1, ListHeaderComponent: null, ListEmptyComponent: null, contentContainerStyle: null, keyboardShouldPersistTaps: "handled" };
     const obj6 = { style: tmp.header, children: null };
     const obj7 = { entries: stateFromStoresArray };
-    const items9 = [closure_7(TraceOverview, obj7), , ];
+    const items9 = [closure_7(closure_11, obj7), , ];
     const obj8 = { style: tmp.tools, children: null };
     const obj9 = { style: tmp.search, children: null };
     const obj10 = { accessibilityLabel: null, placeholder: null, size: "sm", onChange: null };
-    const intl3 = tmp4(tmp3[9]).intl;
-    obj10.accessibilityLabel = intl3.string(tmp2(tmp3[10]).NfncNw);
-    const intl4 = tmp4(tmp3[9]).intl;
-    obj10.placeholder = intl4.string(tmp2(tmp3[10]).NfncNw);
+    const intl3 = tmp4(tmp3[11]).intl;
+    obj10.accessibilityLabel = intl3.string(tmp2(tmp3[12]).NfncNw);
+    const intl4 = tmp4(tmp3[11]).intl;
+    obj10.placeholder = intl4.string(tmp2(tmp3[12]).NfncNw);
     obj10.onChange = tmp6[1];
-    obj9.children = closure_7(tmp4(tmp3[24]).SearchField, obj10);
+    obj9.children = closure_7(tmp4(tmp3[25]).SearchField, obj10);
     const items10 = [closure_7(View, obj9), ];
-    const obj11 = { IconComponent: tmp4(tmp3[26]).DownloadIcon, onPress: tmp12, accessibilityLabel: null };
-    const intl5 = tmp4(tmp3[9]).intl;
-    obj11.accessibilityLabel = intl5.string(tmp2(tmp3[10]).A3Z3ar);
-    items10[1] = closure_7(tmp2(tmp3[25]), obj11);
+    const obj11 = { IconComponent: tmp4(tmp3[27]).DownloadIcon, onPress: tmp12, accessibilityLabel: null };
+    const intl5 = tmp4(tmp3[11]).intl;
+    obj11.accessibilityLabel = intl5.string(tmp2(tmp3[12]).A3Z3ar);
+    items10[1] = closure_7(tmp2(tmp3[26]), obj11);
     obj8.children = items10;
     items9[1] = closure_8(View, obj8);
     const obj12 = { state: stateFromStores, hasRows: true };
-    items9[2] = closure_7(tmp4(tmp3[22]).VibegrationsHistoryNotice, obj12);
+    items9[2] = closure_7(tmp4(tmp3[24]).VibegrationsHistoryNotice, obj12);
     obj6.children = items9;
     obj5.ListHeaderComponent = closure_8(View, obj6);
     const obj13 = { variant: "text-sm/medium", color: "text-default", children: null };
-    const intl6 = tmp4(tmp3[9]).intl;
-    obj13.children = intl6.string(tmp2(tmp3[10])["Cpr+oM"]);
-    obj5.ListEmptyComponent = closure_7(tmp4(tmp3[13]).Text, obj13);
+    const intl6 = tmp4(tmp3[11]).intl;
+    obj13.children = intl6.string(tmp2(tmp3[12])["Cpr+oM"]);
+    obj5.ListEmptyComponent = closure_7(tmp4(tmp3[15]).Text, obj13);
     const items11 = [tmp.list, ];
     const obj14 = { paddingBottom: tmp2(tmp3[6]).space.PX_16 + require("useSafeAreaInsets")().bottom };
     items11[1] = obj14;
     obj5.contentContainerStyle = items11;
-    tmp15 = closure_7(tmp4(tmp3[23]).FlashList, obj5);
-    const tmp2Result = tmp2(tmp3[25]);
+    tmp15 = closure_7(tmp4(tmp3[28]).FlashList, obj5);
+    const tmp2Result = tmp2(tmp3[26]);
   }
   return tmp15;
-};
+});

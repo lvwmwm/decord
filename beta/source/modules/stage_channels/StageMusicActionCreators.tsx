@@ -1,11 +1,11 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10148
+// Function ID: 10149
 // Name: StageMusicActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 10169 (StageMusicActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 10148 (StageMusicActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/StageMusicActionCreators.tsx");

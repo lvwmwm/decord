@@ -1,15 +1,17 @@
-// Module ID: 5193
-// Function ID: 5194
+// Module ID: 5195
+// Function ID: 5196
 // Name: useFontScale
-// Dependencies: [19, 1479, 1481, 2]
-// Exports: getFontScale, useFontScale
+// Dependencies: [19, 1483, 558, 568, 1485, 2]
+// Exports: getFontScale
 
-// Module 5193 (useFontScale)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
+// Module 5195 (useFontScale)
+import c from "c" /* 568 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1485 */;
 import noop from "module_19" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1479 */;
+import DimensionsStore from "DimensionsStore" /* 1483 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/screen/native/useFontScale.tsx");
 
@@ -20,8 +22,22 @@ export const getFontScale = function getFontScale() {
   }
   return DimensionsStore.getState().byAppEntry[str].fontScale;
 };
-export const useFontScale = function useFontScale() {
+export const useFontScale = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const appEntryKey = AppEntryKeyContext.useAppEntryKey();
+  if (cResult[0] !== appEntryKey) {
+    const fn = function t(arg0) {
+      return arg0.byAppEntry[appEntryKey].fontScale;
+    };
+    cResult[0] = appEntryKey;
+    cResult[1] = fn;
+    let tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return DimensionsStore(tmp3);
+}) : (() => {
   const appEntryKey = AppEntryKeyContext.useAppEntryKey();
   const items = [appEntryKey];
   return DimensionsStore(noop.useCallback((arg0) => arg0.byAppEntry[appEntryKey].fontScale, items));
-};
+});

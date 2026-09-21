@@ -1,25 +1,43 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12600
+// Function ID: 12601
 // Name: ChatInputGuardQuarantineDM
-// Dependencies: [19, 12706, 21, 12702, 12707, 1115, 2]
+// Dependencies: [19, 12601, 21, 558, 568, 12597, 12602, 1119, 2]
 
-// Module 12705 (ChatInputGuardQuarantineDM)
-import util from "util" /* 1115 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12702 */;
-import ChatWarningIcon from "ChatWarningIcon" /* 12707 */;
+// Module 12600 (ChatInputGuardQuarantineDM)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
+import ChatWarningIcon from "ChatWarningIcon" /* 12602 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QUARANTINE_APPEAL_LINK = fn(12706).QUARANTINE_APPEAL_LINK;
+const QUARANTINE_APPEAL_LINK = fn(12601).QUARANTINE_APPEAL_LINK;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardQuarantineDM.tsx");
 
-export default noop.memo(function ChatInputGuardQuarantineDM() {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { type: "simple-action", icon: jsx(tmp(12602).ChatWarningIcon, {}), message: null, subtext: null };
+    const intl = tmp(1119).intl;
+    obj2.message = intl.string(tmp(1119).t.EouHwv);
+    const intl2 = tmp(1119).intl;
+    const obj3 = { appealLink: QUARANTINE_APPEAL_LINK };
+    obj2.subtext = intl2.format(tmp(1119).t.PThBel, obj3);
+    const tmp9 = jsx(ChatInputGuardDefault, { type: "simple-action", icon: jsx(tmp(12602).ChatWarningIcon, {}), message: null, subtext: null });
+    cResult[0] = tmp9;
+    let first = tmp9;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
   const obj = { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null };
   const intl = util.intl;
   obj.message = intl.string(util.t.EouHwv);
   const intl2 = util.intl;
   obj.subtext = intl2.format(util.t.PThBel, { appealLink: QUARANTINE_APPEAL_LINK });
   return jsx(ChatInputGuardDefault, { type: "simple-action", icon: jsx(ChatWarningIcon.ChatWarningIcon, {}), message: null, subtext: null });
-});
+}));

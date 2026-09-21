@@ -1,10 +1,10 @@
-// Module ID: 11489
-// Function ID: 11490
+// Module ID: 11495
+// Function ID: 11496
 // Name: FilePickerUtils
-// Dependencies: [5, 1074, 11490, 1364, 5109, 1115, 4936, 2]
+// Dependencies: [5, 1078, 11496, 1368, 5111, 1119, 4938, 2]
 // Exports: handleDocumentSelection
 
-// Module 11489 (FilePickerUtils)
+// Module 11495 (FilePickerUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _handleDocumentSelection(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -51,7 +51,7 @@ let closure_5 = async function _handleDocumentSelection(arg0, value) {
           closure_129_3 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -123,7 +123,7 @@ let closure_5 = async function _handleDocumentSelection(arg0, value) {
         if (obj4.isErrorWithCode(closure_129_4)) {
           if (closure_129_4.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         }
         obj4 = closure_130_0(closure_130_2[2]);
@@ -139,7 +139,7 @@ let closure_5 = async function _handleDocumentSelection(arg0, value) {
         obj13.body = intl4.string(closure_130_0(closure_130_2[5]).t.fZRH9P);
         closure_130_1(closure_130_2[4]).show(obj13);
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else if (arg0 === 1) {
         c6 = 3;
         throw value;
@@ -173,7 +173,7 @@ let closure_5 = async function _handleDocumentSelection(arg0, value) {
     }
   }
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/native/FilePickerUtils.tsx");
 

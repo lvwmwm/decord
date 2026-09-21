@@ -1,10 +1,10 @@
-// Module ID: 2012
-// Function ID: 2013
+// Module ID: 2016
+// Function ID: 2017
 // Name: DOMUtils
 // Dependencies: [2]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
-// Module 2012 (DOMUtils)
+// Module 2016 (DOMUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /input/i;

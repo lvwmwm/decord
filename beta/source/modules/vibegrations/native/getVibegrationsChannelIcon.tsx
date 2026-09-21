@@ -1,13 +1,13 @@
-// Module ID: 5272
-// Function ID: 5273
+// Module ID: 5274
+// Function ID: 5275
 // Name: getVibegrationsChannelIcon
-// Dependencies: [5273, 5278, 5279, 5244, 5280, 2]
+// Dependencies: [5275, 5280, 5281, 5246, 5282, 2]
 // Exports: getVibegrationsChannelIconComponent, getVibegrationsChannelIconSource
 
-// Module 5272 (getVibegrationsChannelIcon)
-import _modDef5244 from "module_5244" /* 5244 */;
-import vibegrationsChannelIconKind from "vibegrationsChannelIconKind" /* 5273 */;
-import _modDef5280 from "module_5280" /* 5280 */;
+// Module 5274 (getVibegrationsChannelIcon)
+import _modDef5246 from "module_5246" /* 5246 */;
+import vibegrationsChannelIconKind from "vibegrationsChannelIconKind" /* 5275 */;
+import _modDef5282 from "module_5282" /* 5282 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/native/getVibegrationsChannelIcon.tsx");
@@ -15,9 +15,9 @@ let result = size.fileFinishedImporting("modules/vibegrations/native/getVibegrat
 export const getVibegrationsChannelIconComponent = function getVibegrationsChannelIconComponent(channel, getChannelIconComponent) {
   const result = vibegrationsChannelIconKind.vibegrationsChannelIconKind(channel, getChannelIconComponent);
   if ("apps" === result) {
-    return tmp(5278).AppsIcon;
+    return tmp(5280).AppsIcon;
   } else if ("apps-lock" === result) {
-    return tmp(5279).AppsLockIcon;
+    return tmp(5281).AppsLockIcon;
   } else {
     return null;
   }
@@ -25,9 +25,9 @@ export const getVibegrationsChannelIconComponent = function getVibegrationsChann
 export const getVibegrationsChannelIconSource = function getVibegrationsChannelIconSource(channel, getChannelIcon) {
   const result = vibegrationsChannelIconKind.vibegrationsChannelIconKind(channel, getChannelIcon);
   if ("apps" === result) {
-    return _modDef5244;
+    return _modDef5246;
   } else if ("apps-lock" === result) {
-    return _modDef5280;
+    return _modDef5282;
   } else {
     return null;
   }

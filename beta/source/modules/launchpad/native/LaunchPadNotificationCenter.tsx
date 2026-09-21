@@ -1,19 +1,35 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17693
+// Function ID: 17694
 // Name: LaunchPadNotificationCenter
-// Dependencies: [19, 21, 4756, 16740, 2]
+// Dependencies: [19, 21, 4758, 558, 568, 16743, 2]
 
-// Module 17459 (LaunchPadNotificationCenter)
-import notifications_NotificationsDefault from "notifications/Notifications" /* 16740 */;
+// Module 17693 (LaunchPadNotificationCenter)
+import c from "c" /* 568 */;
+import notifications_NotificationsDefault from "notifications/Notifications" /* 16743 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let closure_3 = createStyles.createStyles({ wrapper: { height: "100%" } });
+const createStyles = fn(4758);
+let closure_4 = createStyles.createStyles({ wrapper: { height: "100%" } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/LaunchPadNotificationCenter.tsx");
 
-export default noop.memo(function NotificationsContent() {
-  const tmp = closure_3();
-  return jsx(notifications_NotificationsDefault, { style: closure_3().wrapper, nestedInLaunchPad: true });
-});
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const tmp3 = closure_4();
+  if (cResult[0] !== tmp3.wrapper) {
+    const obj2 = { style: tmp3.wrapper, nestedInLaunchPad: true };
+    const tmp7 = jsx(notifications_NotificationsDefault, { style: tmp3.wrapper, nestedInLaunchPad: true });
+    cResult[0] = tmp3.wrapper;
+    cResult[1] = tmp7;
+    let tmp4 = tmp7;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const tmp = closure_4();
+  return jsx(notifications_NotificationsDefault, { style: closure_4().wrapper, nestedInLaunchPad: true });
+}));

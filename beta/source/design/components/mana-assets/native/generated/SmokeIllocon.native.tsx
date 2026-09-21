@@ -1,26 +1,67 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6704
+// Function ID: 6705
 // Name: SmokeIllocon
-// Dependencies: [21, 5804, 6707, 2]
-// Exports: SmokeIllocon
+// Dependencies: [21, 558, 568, 6705, 5802, 2]
 
-// Module 6706 (SmokeIllocon)
+// Module 6704 (SmokeIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6707 from "module_6707" /* 6707 */;
+import c from "c" /* 568 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import _modDef6705 from "module_6705" /* 6705 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");
 
-export const SmokeIllocon = function SmokeIllocon(size) {
+export const SmokeIllocon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(8);
+  ({ accessible, accessibilityLabel, resizeMode, size } = arg0);
+  let num = 64;
+  if (undefined !== size) {
+    num = size;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { uri: _modDef6705 };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== num) {
+    const size1 = { width: num, height: num };
+    const items = [size1];
+    cResult[1] = num;
+    cResult[2] = items;
+    let tmp5 = items;
+  } else {
+    tmp5 = cResult[2];
+  }
+  if (cResult[3] === accessibilityLabel) {
+    if (cResult[4] === accessible) {
+      if (cResult[5] === resizeMode) {
+        if (cResult[6] === tmp5) {
+          let tmp6 = cResult[7];
+        }
+        return tmp6;
+      }
+    }
+  }
+  const tmp7 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp5, accessible, accessibilityLabel, resizeMode });
+  cResult[3] = accessibilityLabel;
+  cResult[4] = accessible;
+  cResult[5] = resizeMode;
+  cResult[6] = tmp5;
+  cResult[7] = tmp7;
+  tmp6 = tmp7;
+}) : ((size) => {
   let num = size.size;
   ({ accessible, accessibilityLabel, resizeMode } = size);
   if (num === undefined) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6707 };
+  const obj2 = { uri: _modDef6705 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;
@@ -28,4 +69,4 @@ export const SmokeIllocon = function SmokeIllocon(size) {
   obj.accessibilityLabel = accessibilityLabel;
   obj.resizeMode = resizeMode;
   return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
-};
+});

@@ -1,19 +1,19 @@
-// Module ID: 8450
-// Function ID: 8451
+// Module ID: 8455
+// Function ID: 8456
 // Name: UserActionCreators
-// Dependencies: [5, 1386, 1372, 1074, 1075, 3, 1271, 573, 4949, 1335, 38, 4656, 2]
+// Dependencies: [5, 1390, 1376, 1078, 1079, 3, 1275, 577, 4951, 1339, 38, 4659, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8450 (UserActionCreators)
+// Module 8455 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1335 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1339 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4951 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
@@ -29,7 +29,7 @@ let closure_9 = async function _fetchProfile(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -66,7 +66,7 @@ let closure_9 = async function _fetchProfile(arg0, value) {
           closure_131_12 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -163,7 +163,7 @@ let closure_9 = async function _fetchProfile(arg0, value) {
         }
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp91) {
       closure_5 = tmp91;
@@ -191,7 +191,7 @@ let closure_10 = async function _fetchMutualFriends(userId, signal) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ let closure_10 = async function _fetchMutualFriends(userId, signal) {
           closure_131_1(closure_131_2[7]).dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp32) {
         closure_4 = tmp32;
@@ -262,8 +262,8 @@ let closure_10 = async function _fetchMutualFriends(userId, signal) {
     }
   })();
 };
-const Endpoints = fn(1074).Endpoints;
-const PSEUDO_GUILD_IDS = fn(1075).PSEUDO_GUILD_IDS;
+const Endpoints = fn(1078).Endpoints;
+const PSEUDO_GUILD_IDS = fn(1079).PSEUDO_GUILD_IDS;
 let closure_8 = new LoggerDefault("UserProfileModalActionCreators");
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/UserActionCreators.tsx");

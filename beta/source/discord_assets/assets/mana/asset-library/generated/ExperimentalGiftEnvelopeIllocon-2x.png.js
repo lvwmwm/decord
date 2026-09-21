@@ -1,8 +1,8 @@
-// Module ID: 6219
-// Function ID: 6220
+// Module ID: 6217
+// Function ID: 6218
 // Dependencies: [2]
 
-// Module 6219
+// Module 6217
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalGiftEnvelopeIllocon-2x.png.js");

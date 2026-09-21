@@ -1,12 +1,11 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9184
+// Function ID: 9185
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4756, 576, 5193, 5186, 2]
-// Exports: TwinButtons
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5195, 5188, 2]
 
-// Module 9186 (TwinButtons)
-import nativeDefault from "native" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
+// Module 9184 (TwinButtons)
+import nativeDefault from "native" /* 580 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +13,7 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_6 = createStyles.createStyles((arg0) => {
   let str = "row";
   if (arg0) {
@@ -25,10 +24,57 @@ let closure_6 = createStyles.createStyles((arg0) => {
   container.gap = arg0 ? space.PX_8 : space.PX_12;
   return { container, button: { flex: 1 } };
 });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
 
-export const TwinButtons = function TwinButtons(children) {
+export const TwinButtons = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+  const cResult = require("c").c(8);
+  let button = children.children;
+  let obj = require("c");
+  const tmp2 = closure_6(require("useFontScale").useFontScale() > 1.2);
+  _require = tmp2;
+  if (cResult[0] === button) {
+    if (cResult[1] === tmp2.button) {
+      if (cResult[5] === tmp2.container) {
+        if (cResult[6] === tmp4) {
+          let tmp7 = cResult[7];
+        }
+        return tmp7;
+      }
+      const obj3 = { style: tmp3, children: cResult[2] };
+      const tmp10 = <View style={tmp3}>{cResult[2]}</View>;
+      cResult[5] = tmp2.container;
+      cResult[6] = cResult[2];
+      cResult[7] = tmp10;
+      tmp7 = tmp10;
+    }
+  }
+  if (cResult[3] !== tmp2.button) {
+    const fn = function s(type) {
+      let tmp = null;
+      if (noop.isValidElement(type)) {
+        tmp = null;
+        if (type.type === components_Button_Button.Button) {
+          const obj = { style: button.button, children: type };
+          tmp = <View style={button.button}>{arg0}</View>;
+        }
+      }
+      return tmp;
+    };
+    cResult[3] = tmp2.button;
+    cResult[4] = fn;
+    let tmp5 = fn;
+  } else {
+    tmp5 = cResult[4];
+  }
+  const Children = noop.Children;
+  const mapped = Children.map(button, tmp5);
+  cResult[0] = button;
+  button = tmp2.button;
+  cResult[1] = button;
+  cResult[2] = mapped;
+}) : ((children) => {
   _require = undefined;
   let tmp = closure_6(require("useFontScale").useFontScale() > 1.2);
   _require = tmp;
@@ -46,4 +92,4 @@ export const TwinButtons = function TwinButtons(children) {
     return tmp;
   });
   return <View style={tmp.container}>{null}</View>;
-};
+});

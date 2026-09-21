@@ -1,11 +1,11 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14083
+// Function ID: 14084
 // Name: ProcessBoostExperiment
-// Dependencies: [4781, 1434, 2]
+// Dependencies: [4783, 1438, 2]
 
-// Module 14080 (ProcessBoostExperiment)
-import Constants from "Constants" /* 4781 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14083 (ProcessBoostExperiment)
+import Constants from "Constants" /* 4783 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const ProcessPriority = Constants.ProcessPriority;

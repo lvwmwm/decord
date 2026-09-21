@@ -1,17 +1,17 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16617
+// Function ID: 16618
 // Name: ChannelAffinitiesV2ActionCreators
-// Dependencies: [6836, 16614, 1074, 573, 1271, 2]
+// Dependencies: [6834, 16615, 1078, 577, 1275, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 16616 (ChannelAffinitiesV2ActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ConsentStore from "ConsentStore" /* 6836 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16614 */;
+// Module 16617 (ChannelAffinitiesV2ActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import ConsentStore from "ConsentStore" /* 6834 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16615 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ Endpoints: hasOwnProperty, Consents: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_affinities_v2/ChannelAffinitiesV2ActionCreators.tsx");

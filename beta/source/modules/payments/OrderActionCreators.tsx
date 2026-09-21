@@ -1,14 +1,14 @@
-// Module ID: 7488
-// Function ID: 7489
+// Module ID: 7490
+// Function ID: 7491
 // Name: OrderActionCreators
-// Dependencies: [5, 1074, 3, 4436, 1271, 4429, 2]
+// Dependencies: [5, 1078, 3, 4440, 1275, 4433, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7488 (OrderActionCreators)
+// Module 7490 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BillingError_mod from "BillingError" /* 4436 */;
+import BillingError_mod from "BillingError" /* 4440 */;
 
 require = fn;
 let closure_6 = async function _signOrder(arg0, value) {
@@ -22,7 +22,7 @@ let closure_6 = async function _signOrder(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -46,7 +46,7 @@ let closure_6 = async function _signOrder(arg0, value) {
           closure_129_4 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -140,7 +140,7 @@ let closure_7 = async function _getOrder(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -226,7 +226,7 @@ let closure_9 = async function _fetchOrderEntitlements(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -295,7 +295,7 @@ let closure_11 = async function _fetchOrderEntitlementsWithRetry(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -342,7 +342,7 @@ let closure_11 = async function _fetchOrderEntitlementsWithRetry(arg0, value) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -392,7 +392,7 @@ let closure_11 = async function _fetchOrderEntitlementsWithRetry(arg0, value) {
                   } else {
                     closure_129_1 = value;
                     c3 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp16) {
                   c3 = tmp;
@@ -506,7 +506,7 @@ let closure_11 = async function _fetchOrderEntitlementsWithRetry(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 let closure_4 = new LoggerDefault("OrderActionCreators");
 let BillingError = BillingError_mod;
 class OrderSigningFailedWithConstraintsError extends tmp3 {

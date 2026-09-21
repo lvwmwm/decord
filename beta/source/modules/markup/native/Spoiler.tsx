@@ -1,19 +1,19 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 12220
+// Function ID: 12221
 // Name: Spoiler
-// Dependencies: [19, 17, 1074, 10374, 21, 4756, 1364, 576, 4466, 1177, 2]
+// Dependencies: [19, 17, 1078, 12213, 21, 4758, 1368, 580, 4471, 1181, 2]
 
-// Module 10383 (Spoiler)
-import nativeDefault from "native" /* 576 */;
+// Module 12220 (Spoiler)
+import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 
 let require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
-const EMOJI_CHAT_SIZE = fn(1074).EMOJI_CHAT_SIZE;
+const EMOJI_CHAT_SIZE = fn(1078).EMOJI_CHAT_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const PlatformUtils = fn(1364);
+const createStyles = fn(4758);
+const PlatformUtils = fn(1368);
 let str = "transparent";
 if (PlatformUtils.isAndroid()) {
   str = "rgba(0,0,0,0.0019607844)";
@@ -23,7 +23,7 @@ let size = { width: EMOJI_CHAT_SIZE, height: EMOJI_CHAT_SIZE, backgroundColor: n
 obj3.placeholder = size;
 const obj4 = { color: str, backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND };
 obj3.spoilerRevealed = { color: nativeDefault.colors.TEXT_DEFAULT, backgroundColor: nativeDefault.colors.SPOILER_REVEALED_BACKGROUND };
-obj3.muted = { opacity: fn(10374).MUTED_OPACITY_CONTENT };
+obj3.muted = { opacity: fn(12213).MUTED_OPACITY_CONTENT };
 let closure_6 = createStyles.createLegacyClassComponentStyles(obj3);
 const PureComponent = noop.PureComponent;
 class Spoiler extends PureComponent {
@@ -88,7 +88,7 @@ Spoiler.prototype["render"] = function render() {
                 if (Array.isArray(style)) {
                   flattenResult = closure_2_4.flatten(style);
                 }
-                const obj = { children: null, style: null, onPress: "r" };
+                const obj = { children: null, style: null, onPress: "Array" };
                 ({ Children, cloneElement } = tmp);
                 obj.children = Children.map(props.props.children, (props) => {
                   if (validElement.isValidElement(props)) {
@@ -98,7 +98,7 @@ Spoiler.prototype["render"] = function render() {
                     if (Array.isArray(style)) {
                       flattenResult = closure_2_4.flatten(style);
                     }
-                    const obj = { children: null, style: null, onPress: "r" };
+                    const obj = { children: null, style: null, onPress: "Array" };
                     ({ Children, cloneElement } = tmp);
                     obj.children = Children.map(props.props.children, (props) => {
                       if (validElement.isValidElement(props)) {
@@ -108,7 +108,7 @@ Spoiler.prototype["render"] = function render() {
                         if (Array.isArray(style)) {
                           flattenResult = closure_2_4.flatten(style);
                         }
-                        const obj = { children: null, style: null, onPress: "r" };
+                        const obj = { children: null, style: null, onPress: "Array" };
                         ({ Children, cloneElement } = tmp);
                         obj.children = Children.map(props.props.children, () => { ... });
                         const items = [flattenResult, spoiler.spoiler];
@@ -157,7 +157,7 @@ Spoiler.prototype["render"] = function render() {
   }
   tmp4 = noop;
 };
-Spoiler.contextType = fn(4466).ThemeContext;
+Spoiler.contextType = fn(4471).ThemeContext;
 size = fn(2);
 const result = size.fileFinishedImporting("modules/markup/native/Spoiler.tsx");
 

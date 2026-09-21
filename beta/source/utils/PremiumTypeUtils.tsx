@@ -1,11 +1,11 @@
-// Module ID: 1969
-// Function ID: 1970
+// Module ID: 1973
+// Function ID: 1974
 // Name: PremiumTypeUtils
-// Dependencies: [1374, 2]
+// Dependencies: [1378, 2]
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 1969 (PremiumTypeUtils)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
+// Module 1973 (PremiumTypeUtils)
+import PremiumConstants from "PremiumConstants" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 function isPremiumAtLeast(premiumType, TIER_2) {
@@ -35,10 +35,10 @@ function isPremium(premiumType, arg1) {
   }
   return tmp;
 }
-function isPremiumExactly(currentUser, TIER_2) {
-  let tmp = null != currentUser;
+function isPremiumExactly(stateFromStores, TIER_2) {
+  let tmp = null != stateFromStores;
   if (tmp) {
-    tmp = currentUser.premiumType === TIER_2;
+    tmp = stateFromStores.premiumType === TIER_2;
   }
   return tmp;
 }

@@ -1,11 +1,11 @@
 // Module ID: 5885
 // Function ID: 5886
 // Name: HeaderBackground
-// Dependencies: [19, 17, 21, 1485]
+// Dependencies: [19, 17, 21, 1489]
 // Exports: HeaderBackground
 
 // Module 5885 (HeaderBackground)
-import Link from "Link" /* 1485 */;
+import Link from "Link" /* 1489 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

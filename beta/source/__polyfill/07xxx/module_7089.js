@@ -1,13 +1,36 @@
 // Module ID: 7089
 // Function ID: 7090
-// Dependencies: [19, 17, 1637, 7082, 6870]
+// Dependencies: [17]
+// Exports: isNewArch
 
 // Module 7089
-import cancelAnimation from "cancelAnimation" /* 1637 */;
+import _mod17 from "module_17" /* 17 */;
 
-const animatedComponent = cancelAnimation.createAnimatedComponent(fn(17).SectionList);
-const module_7082 = fn(7082);
-const memoResult = fn(19).memo(module_7082.createBottomSheetScrollableComponent(fn(6870).SCROLLABLE_TYPE.SECTIONLIST, animatedComponent));
-memoResult.displayName = "BottomSheetSectionList";
+const Platform = _mod17.Platform;
 
-export default memoResult;
+export const isNewArch = function isNewArch() {
+  if (undefined !== c1) {
+    return c1;
+  } else {
+    try {
+      let prop;
+      if (global != null) {
+        prop = tmp2.nativeFabricUIManager;
+      }
+      let flag = Boolean(prop);
+      if (global != null) {
+        const __turboModuleProxy = tmp2.__turboModuleProxy;
+      }
+      if (!flag) {
+        flag = Boolean(__turboModuleProxy);
+      }
+      if (!flag) {
+        flag = false;
+      }
+      c1 = flag;
+      return c1;
+    } catch (err) {
+      c1 = true;
+    }
+  }
+};

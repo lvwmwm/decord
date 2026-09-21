@@ -1,14 +1,13 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17373
+// Function ID: 17374
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4756, 17368, 576, 5339, 4752, 1115, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4758, 17371, 580, 558, 568, 1119, 4754, 5341, 2]
 
-// Module 17370 (RestrictedBlockedMessageGroup)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
+// Module 17373 (RestrictedBlockedMessageGroup)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import Pressables from "Pressables" /* 5341 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,13 +17,100 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { toggle: { marginLeft: fn(17368).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 } };
+const createStyles = fn(4758);
+let obj2 = { toggle: { marginLeft: fn(17371).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 } };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { marginLeft: fn(17371).RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
 
-export default function RestrictedBlockedMessageGroup(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = renderMessage(568).c(18);
+  ({ messages, renderMessage } = arg0);
+  const tmp4 = closure_7();
+  const obj = renderMessage(568);
+  [tmp6, dependencyMap] = noop.useState(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function h() {
+      dependencyMap((arg0) => !arg0);
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp6) {
+    const obj2 = { expanded: tmp6 };
+    cResult[1] = tmp6;
+    cResult[2] = obj2;
+    let tmp8 = obj2;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] !== messages.length) {
+    const intl = tmp(1119).intl;
+    const obj3 = { count: messages.length };
+    const formatResult = intl.format(tmp(1119).t["+FcYM/"], obj3);
+    cResult[3] = messages.length;
+    cResult[4] = formatResult;
+    let tmp9 = formatResult;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] !== tmp9) {
+    const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
+    const tmp13 = closure_5(tmp(4754).Text, obj4);
+    cResult[5] = tmp9;
+    cResult[6] = tmp13;
+    let tmp11 = tmp13;
+  } else {
+    tmp11 = cResult[6];
+  }
+  if (cResult[7] === tmp4.toggle) {
+    if (cResult[8] === tmp8) {
+      if (cResult[9] === tmp11) {
+        let tmp14 = cResult[10];
+      }
+      if (cResult[11] === messages) {
+        if (cResult[12] === renderMessage) {
+          if (cResult[13] === tmp6) {
+            let tmp16 = cResult[14];
+          }
+          if (cResult[15] === tmp14) {
+            if (cResult[16] === tmp16) {
+              let tmp18 = cResult[17];
+            }
+            return tmp18;
+          }
+          const obj5 = { children: null };
+          const items = [tmp14, tmp16];
+          obj5.children = items;
+          const tmp21 = closure_6(View, obj5);
+          cResult[15] = tmp14;
+          cResult[16] = tmp16;
+          cResult[17] = tmp21;
+          tmp18 = tmp21;
+        }
+      }
+      let mapped = tmp6;
+      if (tmp6) {
+        mapped = messages.map((id) => hasOwnProperty(View, { children: renderMessage(id) }, id.id));
+      }
+      cResult[11] = messages;
+      cResult[12] = renderMessage;
+      cResult[13] = tmp6;
+      cResult[14] = mapped;
+      tmp16 = mapped;
+    }
+  }
+  const tmp15 = closure_5(renderMessage(5341).PressableOpacity, { style: tmp4.toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  cResult[7] = tmp4.toggle;
+  cResult[8] = tmp8;
+  cResult[9] = tmp11;
+  cResult[10] = tmp15;
+  tmp14 = tmp15;
+}) : ((arg0) => {
   ({ messages, renderMessage: require } = arg0);
   dependencyMap = undefined;
   const tmp = closure_7();
@@ -43,4 +129,4 @@ export default function RestrictedBlockedMessageGroup(arg0) {
   }
   children[1] = mapped;
   return closure_6(View, { children });
-};
+});

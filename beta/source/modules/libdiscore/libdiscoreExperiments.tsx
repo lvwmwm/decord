@@ -1,14 +1,14 @@
-// Module ID: 2067
-// Function ID: 2068
+// Module ID: 2071
+// Function ID: 2072
 // Name: libdiscoreExperiments
-// Dependencies: [2068, 3, 1350, 38, 2]
+// Dependencies: [2072, 3, 1354, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 2067 (libdiscoreExperiments)
+// Module 2071 (libdiscoreExperiments)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import js_shim_shim from "js_shim/shim" /* 1350 */;
-import BridgedStore from "BridgedStore" /* 2068 */;
+import js_shim_shim from "js_shim/shim" /* 1354 */;
+import BridgedStore from "BridgedStore" /* 2072 */;
 import size from "module_2" /* 2 */;
 
 const ensureValidMode = BridgedStore.ensureValidMode;
@@ -41,9 +41,9 @@ prototype["getCachedConfig"] = function getCachedConfig() {
   const self = this;
   if (this.cachedConfig === closure_6) {
     if (obj.isLibdiscoreInitialized()) {
-      const experimentCacher = tmp(1350).getExperimentCacher();
+      const experimentCacher = tmp(1354).getExperimentCacher();
       self.cachedConfig = experimentCacher.getConfig(self.id);
-      const tmpResult = tmp(1350);
+      const tmpResult = tmp(1354);
     } else {
       self.cachedConfig = undefined;
     }

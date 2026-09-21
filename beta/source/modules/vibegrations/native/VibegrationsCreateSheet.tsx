@@ -1,15 +1,15 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16942
+// Function ID: 16943
 // Name: VibegrationsCreateSheet
-// Dependencies: [5, 32, 19, 17, 13361, 21, 4756, 576, 16940, 9310, 4723, 13188, 16942, 1115, 3678, 7440, 16943, 16944, 16945, 7442, 7394, 7330, 5904, 5822, 4752, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 13364, 21, 4758, 580, 16943, 9308, 4725, 13187, 16945, 1119, 3682, 7442, 16946, 16947, 16948, 7449, 7396, 7332, 5903, 5822, 4754, 5188, 2]
 // Exports: default
 
-// Module 16939 (VibegrationsCreateSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7440 */;
-import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16944 */;
-import VibegrationsTemplates from "VibegrationsTemplates" /* 16945 */;
+// Module 16942 (VibegrationsCreateSheet)
+import nativeDefault from "native" /* 580 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7442 */;
+import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16947 */;
+import VibegrationsTemplates from "VibegrationsTemplates" /* 16948 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -18,12 +18,12 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(13361);
+const VibegrationsConnectionStore = fn(13364);
 ({ ensureConnection: closure_7, sendUserMessage: closure_8, stageModelSettings: closure_9 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const VibegrationsCreateSheet = "VibegrationsCreateSheet";
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 }, form: null, section: null, sectionHeading: null };
 let obj3 = { gap: nativeDefault.space.PX_16 };
 obj2.form = { gap: nativeDefault.space.PX_8 };
@@ -71,7 +71,7 @@ export default function VibegrationsCreateSheet(guildId) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -177,7 +177,7 @@ export default function VibegrationsCreateSheet(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -362,7 +362,7 @@ export default function VibegrationsCreateSheet(guildId) {
   c14 = landingModelChoicesResult;
   const items3 = [landingModelChoicesResult, first1];
   const callback1 = first1.useCallback(() => {
-    const obj2 = { key: VibegrationsEffortPicker.VIBEGRATIONS_EFFORT_PICKER_SHEET_KEY, stackingBehavior: "stack", content: closure_2_10(VibegrationsEffortPicker.VibegrationsEffortPickerSheet, { initialSettings: first1, choices, onChange }) };
+    const obj2 = { key: VibegrationsEffortPicker.VIBEGRATIONS_EFFORT_PICKER_SHEET_KEY, stackingBehavior: "stack", content: v65535(VibegrationsEffortPicker.VibegrationsEffortPickerSheet, { initialSettings: first1, choices, onChange }) };
     ActionSheetActionCreators.showActionSheet(obj2);
   }, items3);
   let obj = require("VibegrationsLandingModelChoices");

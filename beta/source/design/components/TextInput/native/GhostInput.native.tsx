@@ -1,27 +1,28 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14453
+// Function ID: 14454
 // Name: GhostInput
-// Dependencies: [109, 19, 21, 4756, 4752, 576, 6863, 4475, 6856, 6849, 6866, 7180, 6850, 2]
-// Exports: GhostInput
+// Dependencies: [109, 19, 21, 4758, 4754, 580, 558, 568, 6856, 4480, 6849, 6859, 6847, 6860, 7174, 2]
 
-// Module 14450 (GhostInput)
-import nativeDefault from "native" /* 576 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4475 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Input from "Input" /* 6849 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6850 */;
-import useTextField from "useTextField" /* 6856 */;
-import InputFieldContainer from "InputFieldContainer" /* 6863 */;
-import NativeTextInput from "NativeTextInput" /* 6866 */;
-import propsForNativeTextInput from "propsForNativeTextInput" /* 7180 */;
+// Module 14453 (GhostInput)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4480 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6847 */;
+import useTextField from "useTextField" /* 6849 */;
+import InputFieldContainer from "InputFieldContainer" /* 6856 */;
+import propsForNativeTextInput from "propsForNativeTextInput" /* 6859 */;
+import NativeTextInput from "NativeTextInput" /* 6860 */;
+import Input from "Input" /* 7174 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 let closure_3 = ["labelId", "accessibilityLabel"];
+let closure_4 = ["labelId", "accessibilityLabel"];
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let closure_6 = createStyles.createStyles(() => {
+const createStyles = fn(4758);
+let closure_7 = createStyles.createStyles(() => {
   let str = arg0;
   if (arg0 === undefined) {
     str = "lg";
@@ -41,12 +42,148 @@ let closure_6 = createStyles.createStyles(() => {
   input.minWidth = 48;
   return { input, centeredContainerStyle: { alignItems: "center" } };
 });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
-const result = size.fileFinishedImporting("design/components/TextInput/native/GhostInput.native.tsx");
+let result = size.fileFinishedImporting("design/components/TextInput/native/GhostInput.native.tsx");
 
-export const GhostInput = function GhostInput(size) {
+export const GhostInput = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
+  const cResult = c.c(29);
+  if (cResult[0] !== size.size) {
+    const obj2 = { size: size.size };
+    cResult[0] = size.size;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const inputStyles = InputFieldContainer.useInputStyles(tmp4);
+  const tmp6 = closure_7(size.size, size.status);
+  ({ autoFocus, required, centered } = size);
+  const tmp8 = undefined === centered || centered;
+  const tmpResult = InputFieldContainer;
+  const fieldLabelA11yNative = useFieldLabelA11yNative.useFieldLabelA11yNative(size);
+  if (cResult[2] !== fieldLabelA11yNative) {
+    ({ labelId, accessibilityLabel } = fieldLabelA11yNative);
+    const tmp15 = _objectWithoutProperties(fieldLabelA11yNative, closure_3);
+    cResult[2] = fieldLabelA11yNative;
+    cResult[3] = accessibilityLabel;
+    cResult[4] = tmp15;
+    cResult[5] = labelId;
+    let tmp12 = labelId;
+    let tmp11 = tmp15;
+    let tmp10 = accessibilityLabel;
+  } else {
+    tmp10 = cResult[3];
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const tmpResult5 = useFieldLabelA11yNative;
+  const textField = useTextField.useTextField(size, undefined);
+  ({ innerRef, inputProps } = textField);
+  let prop;
+  if (tmp8) {
+    prop = tmp6.centeredContainerStyle;
+  }
+  if (cResult[6] === size.containerStyle) {
+    if (cResult[7] === prop) {
+      let tmp18 = cResult[8];
+    }
+    if (cResult[9] !== inputProps) {
+      const result = tmp(6859).propsForNativeTextInput(inputProps);
+      cResult[9] = inputProps;
+      cResult[10] = result;
+      let tmp19 = result;
+      const tmpResult7 = tmp(6859);
+    } else {
+      tmp19 = cResult[10];
+    }
+    if (cResult[11] === tmp10) {
+      if (cResult[12] === required) {
+        let tmp21 = cResult[13];
+      }
+      if (cResult[14] !== tmp6.input) {
+        const items = [tmp6.input];
+        cResult[14] = tmp6.input;
+        cResult[15] = items;
+        let tmp24 = items;
+      } else {
+        tmp24 = cResult[15];
+      }
+      if (cResult[16] === tmp7) {
+        if (cResult[17] === innerRef) {
+          if (cResult[18] === tmp11) {
+            if (cResult[19] === inputStyles.placeholderText.color) {
+              if (cResult[20] === tmp19) {
+                if (cResult[21] === tmp21) {
+                  if (cResult[22] === tmp24) {
+                    let tmp25 = cResult[23];
+                  }
+                  if (cResult[24] === tmp12) {
+                    if (cResult[25] === size) {
+                      if (cResult[26] === tmp18) {
+                        if (cResult[27] === tmp25) {
+                          let tmp34 = cResult[28];
+                        }
+                        return tmp34;
+                      }
+                    }
+                  }
+                  const obj3 = {};
+                  const merged = Object.assign(size);
+                  obj3.labelId = tmp12;
+                  obj3.containerStyle = tmp18;
+                  obj3.children = tmp25;
+                  const tmp39 = jsx(tmp(7174).Input, {});
+                  cResult[24] = tmp12;
+                  cResult[25] = size;
+                  cResult[26] = tmp18;
+                  cResult[27] = tmp25;
+                  cResult[28] = tmp39;
+                  tmp34 = tmp39;
+                }
+              }
+            }
+          }
+        }
+      }
+      const obj4 = {};
+      const merged1 = Object.assign(tmp19);
+      const merged2 = Object.assign(tmp11);
+      obj4.accessibilityLabel = tmp21;
+      obj4.ref = innerRef;
+      obj4.style = tmp24;
+      obj4.placeholderTextColor = inputStyles.placeholderText.color;
+      obj4.spellCheck = false;
+      obj4.autoFocus = tmp7;
+      const tmp33 = jsx(tmp(6860).NativeTextInput, {});
+      cResult[16] = tmp7;
+      cResult[17] = innerRef;
+      cResult[18] = tmp11;
+      cResult[19] = inputStyles.placeholderText.color;
+      cResult[20] = tmp19;
+      cResult[21] = tmp21;
+      cResult[22] = tmp24;
+      cResult[23] = tmp33;
+      tmp25 = tmp33;
+    }
+    let requiredFieldA11yName = tmp(6847).getRequiredFieldA11yName(tmp10, required);
+    if (requiredFieldA11yName == null) {
+      requiredFieldA11yName = tmp10;
+    }
+    cResult[11] = tmp10;
+    cResult[12] = required;
+    cResult[13] = requiredFieldA11yName;
+    tmp21 = requiredFieldA11yName;
+    const tmpResult8 = tmp(6847);
+  }
+  const items1 = [size.containerStyle, prop];
+  cResult[6] = size.containerStyle;
+  cResult[7] = prop;
+  cResult[8] = items1;
+  tmp18 = items1;
+}) : ((size) => {
   const inputStyles = InputFieldContainer.useInputStyles({ size: size.size });
-  const tmp4 = closure_6(size.size, size.status);
+  const tmp4 = closure_7(size.size, size.status);
   const autoFocus = size.autoFocus;
   const centered = size.centered;
   let tmp6 = undefined === centered;
@@ -58,7 +195,7 @@ export const GhostInput = function GhostInput(size) {
   const fieldLabelA11yNative = useFieldLabelA11yNative.useFieldLabelA11yNative(size);
   const accessibilityLabel = fieldLabelA11yNative.accessibilityLabel;
   const tmpResult = useFieldLabelA11yNative;
-  const tmp8 = _objectWithoutProperties(fieldLabelA11yNative, closure_3);
+  const tmp8 = _objectWithoutProperties(fieldLabelA11yNative, closure_4);
   const textField = useTextField.useTextField(size, undefined);
   ({ innerRef, inputProps } = textField);
   const obj3 = {};
@@ -89,4 +226,4 @@ export const GhostInput = function GhostInput(size) {
   obj4.autoFocus = tmp5;
   obj3.children = jsx(NativeTextInput.NativeTextInput, {});
   return jsx(Input.Input, {});
-};
+});

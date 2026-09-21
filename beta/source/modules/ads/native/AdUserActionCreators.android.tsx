@@ -1,15 +1,15 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 7979
+// Function ID: 7980
 // Name: AdUserActionCreators
-// Dependencies: [5, 7972, 1074, 1241, 573, 7975, 2]
+// Dependencies: [5, 7977, 1078, 1245, 577, 7980, 2]
 // Exports: fetchAdUser
 
-// Module 7974 (AdUserActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NativeAdsModuleDefault from "NativeAdsModule" /* 7975 */;
+// Module 7979 (AdUserActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import NativeAdsModuleDefault from "NativeAdsModule" /* 7980 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AdUserStore from "AdUserStore" /* 7972 */;
+import AdUserStore from "AdUserStore" /* 7977 */;
 
 let closure_6 = async function _fetchAdUser(arg0, value) {
   if (c6 === 2) {
@@ -22,7 +22,7 @@ let closure_6 = async function _fetchAdUser(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -119,7 +119,7 @@ let closure_6 = async function _fetchAdUser(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, Platforms: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/ads/native/AdUserActionCreators.android.tsx");

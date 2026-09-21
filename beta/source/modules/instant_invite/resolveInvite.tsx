@@ -1,23 +1,23 @@
-// Module ID: 13224
-// Function ID: 13225
+// Module ID: 13227
+// Function ID: 13228
 // Name: resolveInvite
-// Dependencies: [502, 2063, 7978, 1074, 7977, 4741, 1241, 4949, 1249, 2053, 2]
+// Dependencies: [502, 2067, 7983, 1078, 7982, 4743, 1245, 4951, 1253, 2057, 2]
 // Exports: default
 
-// Module 13224 (resolveInvite)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import TypeUtils from "TypeUtils" /* 2053 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7977 */;
+// Module 13227 (resolveInvite)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import TypeUtils from "TypeUtils" /* 2057 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7982 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
-const TrackedHTTPUtilsDefault = tmp4(4949);
+const TrackedHTTPUtilsDefault = tmp4(4951);
 require = fn;
-let Constants = fn(7978);
+let Constants = fn(7983);
 ({ InviteTargetTypes: hasOwnProperty, InviteTypes: metroRequire } = Constants);
-Constants = fn(1074);
+Constants = fn(1078);
 ({ Endpoints: closure_7, AnalyticEvents: closure_8, LoggingInviteTypes: closure_9, AbortCodes: c10 } = Constants);
 const map = new Map();
 const size = fn(2);
@@ -59,7 +59,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
     obj5.with_guild_experiments = withGuildExperiments || undefined;
     const request = { url: closure_7.INVITE(baseCode), query: obj5, oldFormErrors: true, trackedActionData: null, rejectWithError: false };
     const obj6 = {
-      event: tmp(1249).NetworkActionNames.INVITE_RESOLVE,
+      event: tmp(1253).NetworkActionNames.INVITE_RESOLVE,
       properties(ok) {
           let body1 = null;
           if (ok.ok) {
@@ -73,7 +73,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
           const obj2 = { resolved: ok.ok, guild_id: null, channel_id: null, channel_type: null, inviter_id: null, code: null, input_value: null, location: null, authenticated: null, size_total: null, size_online: null, destination_user_id: null, invite_type: null, user_banned: null, user_is_member: null };
           let id;
           if (body1 != null) {
-            const guild = body1.guild;
+            guild = body1.guild;
             if (guild != null) {
               id = guild.id;
             }
@@ -226,7 +226,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
         obj.invite_type = STREAM;
         let id4;
         if (body != null) {
-          const guild = body.guild;
+          guild = body.guild;
           if (guild != null) {
             id4 = guild.id;
           }

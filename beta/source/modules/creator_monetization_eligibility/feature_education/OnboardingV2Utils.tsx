@@ -1,15 +1,16 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16591
+// Function ID: 16592
 // Name: OnboardingV2Utils
-// Dependencies: [2059, 2063, 1372, 1074, 504, 7502, 2]
-// Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
+// Dependencies: [2063, 2067, 1376, 1078, 558, 568, 504, 7504, 2]
+// Exports: canSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 16590 (OnboardingV2Utils)
-import Constants from "Constants" /* 1074 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7502 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 16591 (OnboardingV2Utils)
+import Constants from "Constants" /* 1078 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7504 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,8 +20,80 @@ let items = [, , , , ];
 ({ CREATOR_MONETIZABLE_PROVISIONAL: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_WHITEGLOVE: arr[2], CREATOR_MONETIZABLE_DISABLED: arr[3], CREATOR_MONETIZABLE_RESTRICTED: arr[4] } = Constants.GuildFeatures);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/feature_education/OnboardingV2Utils.tsx");
 
-export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSeeCreatorMonetizationOnboardingV2Upsell(id) {
-  _require = id;
+export const useCanSeeCreatorMonetizationOnboardingV2Upsell = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    items = [GuildStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0);
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = S;
+    const tmp6 = S;
+  } else {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0);
+      }
+    }
+  }
+  const obj = require("c");
+  stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0);
+      }
+    }
+    const items1 = [UserStore];
+    const fn = function b() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[3] = items1;
+    cResult[4] = fn;
+    let tmp9 = fn;
+    const tmp8 = items1;
+  } else {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0);
+      }
+    }
+    tmp9 = cResult[4];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp8, tmp9);
+  const tmpResult3 = require("initialize");
+  const guildRoleSubscriptionSettingsVisibility = require("GuildRoleSubscriptionSettingUtils").useGuildRoleSubscriptionSettingsVisibility(stateFromStores);
+  if (null == stateFromStores) {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0);
+      }
+    }
+    return false;
+  } else {
+    class S {
+      constructor() {
+        return closure_3.getGuild(closure_0);
+      }
+    }
+    const tmp14 = isGuildOwner(stateFromStores, stateFromStores1);
+    cResult[5] = stateFromStores;
+    cResult[6] = stateFromStores1;
+    cResult[7] = tmp14;
+  }
+}) : ((arg0) => {
+  _require = arg0;
   items = [GuildStore];
   stateFromStores = require("initialize").useStateFromStores(items, () => GuildStore.getGuild(closure_0));
   const obj = require("initialize");
@@ -42,9 +115,9 @@ export const useCanSeeCreatorMonetizationOnboardingV2Upsell = function useCanSee
     return tmp5;
   }
   const obj3 = require("GuildRoleSubscriptionSettingUtils");
-};
+});
 export const canSeeCreatorMonetizationOnboardingV2Upsell = function canSeeCreatorMonetizationOnboardingV2Upsell(arg0) {
-  const guild = GuildStore.getGuild(arg0);
+  guild = GuildStore.getGuild(arg0);
   if (null == guild) {
     return false;
   } else {

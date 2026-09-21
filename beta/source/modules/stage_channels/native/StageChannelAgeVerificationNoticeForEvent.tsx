@@ -1,26 +1,103 @@
-// Module ID: 9854
-// Function ID: 9855
+// Module ID: 9832
+// Function ID: 9833
 // Name: StageChannelAgeVerificationNoticeForEvent
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 4968, 1115, 4752, 4445, 2108, 8682, 8684, 4710, 8866, 1177, 5639, 2]
-// Exports: default
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 4970, 1119, 4754, 4449, 2112, 8687, 8689, 4712, 8871, 1181, 5641, 2]
 
-// Module 9854 (StageChannelAgeVerificationNoticeForEvent)
-import nativeDefault from "native" /* 576 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4968 */;
+// Module 9832 (StageChannelAgeVerificationNoticeForEvent)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 4970 */;
 import noop from "module_19" /* 19 */;
 
-const native = Text(1177);
-const CircleInformationIcon = Text(4710);
-const Text_Text = Text(4752);
-const WarningIcon2 = Text(8866);
+const native = Text(1181);
+const CircleInformationIcon = Text(4712);
+const Text_Text = Text(4754);
+const WarningIcon2 = Text(8871);
 require = fn;
-function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
+const View = fn(17).View;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
+const jsxProd = fn(21);
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, containerWithDivider: null, divider: null, noticeContainer: null, icon: null, linkText: null, contentText: null };
+let obj3 = { marginTop: nativeDefault.space.PX_16 };
+obj2.containerWithDivider = { paddingVertical: nativeDefault.space.PX_16 };
+let obj4 = { paddingVertical: nativeDefault.space.PX_16 };
+obj2.divider = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+let obj5 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+obj2.noticeContainer = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
+obj2.icon = { flexShrink: 0 };
+obj2.linkText = { textDecorationLine: "underline" };
+obj2.contentText = { flex: 1 };
+let closure_8 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress) => {
+  const cResult = onConfirmPress(568).c(4);
+  onConfirmPress = onConfirmPress.onConfirmPress;
+  const tmp4 = closure_8();
+  closure_1 = tmp4;
+  let obj = onConfirmPress(568);
+  const isVerifiedTeen = onConfirmPress(4970).useIsVerifiedTeen();
+  if (cResult[0] === isVerifiedTeen) {
+    if (cResult[1] === onConfirmPress) {
+      if (cResult[2] === tmp4) {
+        return cResult[3];
+      }
+    }
+  }
+  const intl = tmp(1119).intl;
+  const format = intl.format;
+  let t = tmp(1119).t;
+  if (isVerifiedTeen) {
+    t = {
+      hook(children) {
+          return hasOwnProperty(Text_Text.Text, {
+            variant: "text-sm/medium",
+            color: "text-default",
+            style: closure_1.linkText,
+            onPress() {
+              const tmp = closure_1(4449);
+              tmp(closure_1(2112).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+              if (onConfirmPress != null) {
+                onConfirmPress();
+              }
+            },
+            children
+          });
+        }
+    };
+    let formatResult = format(t.iWGjcg, t);
+  } else {
+    const obj3 = {
+      hook(children) {
+          return hasOwnProperty(Text_Text.Text, {
+            variant: "text-sm/medium",
+            color: "text-default",
+            style: closure_1.linkText,
+            onPress() {
+              const obj = closure_1(8687);
+              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8689).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
+              if (closure_1_0 != null) {
+                closure_1_0();
+              }
+            },
+            children
+          });
+        }
+    };
+    formatResult = format(t.edpbxy, obj3);
+  }
+  cResult[0] = isVerifiedTeen;
+  cResult[1] = onConfirmPress;
+  cResult[2] = tmp4;
+  cResult[3] = formatResult;
+}) : ((onConfirmPress) => {
   onConfirmPress = onConfirmPress.onConfirmPress;
   closure_1 = closure_8();
-  const isVerifiedTeen = onConfirmPress(4968).useIsVerifiedTeen();
-  const intl = onConfirmPress(1115).intl;
+  const isVerifiedTeen = onConfirmPress(4970).useIsVerifiedTeen();
+  const intl = onConfirmPress(1119).intl;
   const format = intl.format;
-  const t = onConfirmPress(1115).t;
+  const t = onConfirmPress(1119).t;
   if (isVerifiedTeen) {
     const obj2 = {
       hook(children) {
@@ -29,8 +106,8 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const tmp = closure_1(4445);
-              tmp(closure_1(2108).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+              const tmp = closure_1(4449);
+              tmp(closure_1(2112).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
               if (onConfirmPress != null) {
                 onConfirmPress();
               }
@@ -48,8 +125,8 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const obj = closure_1(8682);
-              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8684).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
+              const obj = closure_1(8687);
+              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8689).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
               if (closure_1_0 != null) {
                 closure_1_0();
               }
@@ -61,8 +138,92 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
     formatResult = format(t.edpbxy, obj3);
   }
   return formatResult;
-}
-function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
+});
+ReactCompilerGating = fn(558);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress) => {
+  const cResult = c.c(17);
+  onConfirmPress = onConfirmPress.onConfirmPress;
+  const tmp4 = closure_8();
+  let icon = AgeVerificationUtils.useIsVerifiedTeen();
+  if (onConfirmPress.noBackground) {
+    if (cResult[0] === icon) {
+      if (cResult[1] === tmp4.icon) {
+        if (cResult[3] !== onConfirmPress) {
+          const obj3 = { onConfirmPress };
+          const tmp21 = hasOwnProperty(closure_9, obj3);
+          cResult[3] = onConfirmPress;
+          cResult[4] = tmp21;
+          let tmp18 = tmp21;
+        } else {
+          tmp18 = cResult[4];
+        }
+        if (cResult[5] === tmp4.contentText) {
+          if (cResult[6] === tmp18) {
+            let tmp22 = cResult[7];
+          }
+          if (cResult[8] === tmp4.noticeContainer) {
+            if (cResult[9] === tmp13) {
+              if (cResult[10] === tmp22) {
+                let tmp25 = cResult[11];
+              }
+              return tmp25;
+            }
+          }
+          const obj4 = { style: tmp4.noticeContainer, children: null };
+          const items = [tmp13, tmp22];
+          obj4.children = items;
+          const tmp28 = timestampProducer(View, obj4);
+          cResult[8] = tmp4.noticeContainer;
+          cResult[9] = tmp13;
+          cResult[10] = tmp22;
+          cResult[11] = tmp28;
+          tmp25 = tmp28;
+        }
+        const obj5 = { variant: "text-sm/medium", color: "text-subtle", style: tmp4.contentText, children: tmp18 };
+        const tmp24 = hasOwnProperty(tmp(4754).Text, obj5);
+        cResult[5] = tmp4.contentText;
+        cResult[6] = tmp18;
+        cResult[7] = tmp24;
+        tmp22 = tmp24;
+      }
+    }
+    if (icon) {
+      let WarningIcon = tmp(4712).CircleInformationIcon;
+    } else {
+      WarningIcon = tmp(8871).WarningIcon;
+    }
+    const obj6 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp4.icon };
+    const tmp14Result = hasOwnProperty(WarningIcon, obj6);
+    cResult[0] = icon;
+    icon = tmp4.icon;
+    cResult[1] = icon;
+    cResult[2] = tmp14Result;
+  } else {
+    const HelpMessageTypes = tmp(1181).HelpMessageTypes;
+    const tmp5 = icon ? HelpMessageTypes.INFO : HelpMessageTypes.WARNING;
+    if (cResult[12] !== onConfirmPress) {
+      const obj7 = { onConfirmPress };
+      const tmp9 = hasOwnProperty(closure_9, obj7);
+      cResult[12] = onConfirmPress;
+      cResult[13] = tmp9;
+      let tmp6 = tmp9;
+    } else {
+      tmp6 = cResult[13];
+    }
+    if (cResult[14] === tmp5) {
+      if (cResult[15] === tmp6) {
+        let tmp10 = cResult[16];
+      }
+      return tmp10;
+    }
+    const obj8 = { messageType: tmp5, children: tmp6 };
+    const tmp12 = hasOwnProperty(tmp(1181).HelpMessage, obj8);
+    cResult[14] = tmp5;
+    cResult[15] = tmp6;
+    cResult[16] = tmp12;
+    tmp10 = tmp12;
+  }
+}) : ((onConfirmPress) => {
   onConfirmPress = onConfirmPress.onConfirmPress;
   let tmp = closure_8();
   let Text = require;
@@ -79,9 +240,9 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
     const items = [hasOwnProperty(WarningIcon, obj3), ];
     Text = Text_Text.Text;
     const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.contentText, children: null };
-    tmp = StageChannelAgeVerificationNoticeContent;
+    tmp = closure_9;
     const obj5 = { onConfirmPress };
-    obj4.children = hasOwnProperty(StageChannelAgeVerificationNoticeContent, obj5);
+    obj4.children = hasOwnProperty(closure_9, obj5);
     tmp8Result = tmp8(Text, obj4);
     items[1] = tmp8Result;
     obj2.children = items;
@@ -89,39 +250,126 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   } else {
     const HelpMessageTypes = native.HelpMessageTypes;
     const obj6 = { messageType: isVerifiedTeen ? HelpMessageTypes.INFO : HelpMessageTypes.WARNING, children: null };
-    obj7 = { onConfirmPress };
-    obj6.children = hasOwnProperty(StageChannelAgeVerificationNoticeContent, obj7);
+    const obj7 = { onConfirmPress };
+    obj6.children = hasOwnProperty(closure_9, obj7);
     return hasOwnProperty(native.HelpMessage, obj6);
   }
-}
-const View = fn(17).View;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, containerWithDivider: null, divider: null, noticeContainer: null, icon: null, linkText: null, contentText: null };
-let obj3 = { marginTop: nativeDefault.space.PX_16 };
-obj2.containerWithDivider = { paddingVertical: nativeDefault.space.PX_16 };
-let obj4 = { paddingVertical: nativeDefault.space.PX_16 };
-obj2.divider = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-let obj5 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-obj2.noticeContainer = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
-obj2.icon = { flexShrink: 0 };
-obj2.linkText = { textDecorationLine: "underline" };
-obj2.contentText = { flex: 1 };
-let closure_8 = createStyles.createStyles(obj2);
-let obj7 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
+});
+const obj9 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
+ReactCompilerGating = fn(558);
+let obj6 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNoticeForEvent.tsx");
 
-export default function StageChannelAgeVerificationNoticeForEvent(divider) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(21);
+  ({ noBackground, onConfirmPress, style, divider } = arg0);
+  const tmp2 = closure_8();
+  if (obj2.useShouldShowAgeVerificationForEvent()) {
+    if (cResult[0] !== divider) {
+      const _Array = Array;
+      if (Array.isArray(divider)) {
+        cResult[0] = divider;
+        cResult[1] = divider;
+        let arr = divider;
+      } else if (null != divider) {
+        const items = [divider];
+        let items1 = items;
+      } else {
+        items1 = [];
+      }
+    } else {
+      arr = cResult[1];
+    }
+    if (cResult[2] === arr) {
+      if (cResult[3] === tmp2.divider) {
+        let tmp8 = cResult[4];
+      }
+      const tmp13 = arr.length > 0 ? tmp2.containerWithDivider : tmp2.container;
+      if (cResult[5] === style) {
+        if (cResult[6] === tmp13) {
+          let tmp14 = cResult[7];
+        }
+        if (cResult[8] === noBackground) {
+          if (cResult[9] === onConfirmPress) {
+            let tmp15 = cResult[10];
+          }
+          if (cResult[11] === tmp14) {
+            if (cResult[12] === tmp15) {
+              let tmp19 = cResult[13];
+            }
+            if (cResult[14] === arr) {
+              if (cResult[15] === tmp2.divider) {
+                let tmp23 = cResult[16];
+              }
+              if (cResult[17] === tmp8) {
+                if (cResult[18] === tmp19) {
+                  if (cResult[19] === tmp23) {
+                    let tmp28 = cResult[20];
+                  }
+                  return tmp28;
+                }
+              }
+              const obj3 = { children: null };
+              const items2 = [tmp8, tmp19, tmp23];
+              obj3.children = items2;
+              const tmp31 = timestampProducer(React5, obj3);
+              cResult[17] = tmp8;
+              cResult[18] = tmp19;
+              cResult[19] = tmp23;
+              cResult[20] = tmp31;
+              tmp28 = tmp31;
+            }
+            let hasItem = arr.includes(obj9.BOTTOM);
+            if (hasItem) {
+              const obj4 = { style: tmp2.divider };
+              hasItem = hasOwnProperty(View, obj4);
+            }
+            cResult[14] = arr;
+            cResult[15] = tmp2.divider;
+            cResult[16] = hasItem;
+            tmp23 = hasItem;
+          }
+          const obj5 = { style: tmp14, children: tmp15 };
+          const tmp22 = hasOwnProperty(View, obj5);
+          cResult[11] = tmp14;
+          cResult[12] = tmp15;
+          cResult[13] = tmp22;
+          tmp19 = tmp22;
+        }
+        const obj6 = { noBackground, onConfirmPress };
+        const tmp18 = hasOwnProperty(closure_10, obj6);
+        cResult[8] = noBackground;
+        cResult[9] = onConfirmPress;
+        cResult[10] = tmp18;
+        tmp15 = tmp18;
+      }
+      const items3 = [tmp13, style];
+      cResult[5] = style;
+      cResult[6] = tmp13;
+      cResult[7] = items3;
+      tmp14 = items3;
+    }
+    let hasItem1 = arr.includes(obj9.TOP);
+    if (hasItem1) {
+      const obj7 = { style: tmp2.divider };
+      hasItem1 = hasOwnProperty(View, obj7);
+    }
+    cResult[2] = arr;
+    cResult[3] = tmp2.divider;
+    cResult[4] = hasItem1;
+    tmp8 = hasItem1;
+  } else {
+    return null;
+  }
+}) : ((divider) => {
   divider = divider.divider;
   ({ noBackground, onConfirmPress, style } = divider);
   const tmp = closure_8();
   if (obj.useShouldShowAgeVerificationForEvent()) {
     const _Array = Array;
     if (Array.isArray(divider)) {
-      const hasItem = divider.includes(obj7.TOP);
+      const hasItem = divider.includes(obj9.TOP);
       let tmp11 = hasItem;
       if (hasItem) {
         const obj2 = { style: tmp.divider };
@@ -132,9 +380,9 @@ export default function StageChannelAgeVerificationNoticeForEvent(divider) {
       const items1 = [arr.length > 0 ? tmp.containerWithDivider : tmp.container, style];
       obj3.style = items1;
       const obj4 = { noBackground, onConfirmPress };
-      obj3.children = hasOwnProperty(StageChannelAgeVerificationNoticeWrapper, obj4);
+      obj3.children = hasOwnProperty(closure_10, obj4);
       items[1] = hasOwnProperty(View, obj3);
-      let hasItem1 = arr.includes(obj7.BOTTOM);
+      let hasItem1 = arr.includes(obj9.BOTTOM);
       if (hasItem1) {
         const obj5 = { style: tmp.divider };
         hasItem1 = tmp14(tmp15, obj5);
@@ -152,5 +400,5 @@ export default function StageChannelAgeVerificationNoticeForEvent(divider) {
   } else {
     return null;
   }
-};
-export const DividerPosition = obj7;
+});
+export const DividerPosition = obj9;

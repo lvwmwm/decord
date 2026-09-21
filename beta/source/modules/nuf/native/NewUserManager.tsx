@@ -1,23 +1,23 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 17840
+// Function ID: 17841
 // Name: NewUserManager
-// Dependencies: [5, 7186, 5498, 1372, 5776, 12958, 1074, 12972, 17838, 12929, 12957, 1094, 10076, 573, 7363, 12936, 12999, 2]
+// Dependencies: [5, 7184, 5500, 1376, 5778, 12852, 1078, 12866, 17841, 12823, 12851, 1098, 10055, 577, 7365, 12830, 12895, 2]
 
-// Module 17837 (NewUserManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import NUFActionCreators from "NUFActionCreators" /* 12957 */;
+// Module 17840 (NewUserManager)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ConstantsIOS from "ConstantsIOS" /* 1098 */;
+import NUFActionCreators from "NUFActionCreators" /* 12851 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PhoneStore from "PhoneStore" /* 7186 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
-import UserStore from "UserStore" /* 1372 */;
-import NewUserStore from "NewUserStore" /* 5776 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import PhoneStore from "PhoneStore" /* 7184 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import UserStore from "UserStore" /* 1376 */;
+import NewUserStore from "NewUserStore" /* 5778 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
-const NewUserTypes = fn(12958).NewUserTypes;
-const PlatformTypes = fn(1074).PlatformTypes;
-let closure_10 = fn(12972).HUBS_IN_ONBOARDING_COUNTRIES;
+const NewUserTypes = fn(12852).NewUserTypes;
+const PlatformTypes = fn(1078).PlatformTypes;
+let closure_10 = fn(12866).HUBS_IN_ONBOARDING_COUNTRIES;
 let obj = { REGISTRATION: "Registration", ADD_AVATAR: "Add Avatar", CONTACT_SYNC: "Contact Sync", GUILD_TEMPLATE: "Guild Template", STUDENT_HUB: "Student Hub", NEW_USER_INTENT: "New User Intent", ACCEPT_INVITE: "Accept Invite", DISCOVERABILITY: "Discoverability" };
 let obj2 = {
   key: obj.ADD_AVATAR,
@@ -29,7 +29,7 @@ let obj2 = {
     }
     return null == avatar;
   },
-  transitionToStep: fn(17838).openAddAvatarModal
+  transitionToStep: fn(17841).openAddAvatarModal
 };
 const items = [obj2, , , , , ];
 let obj3 = {
@@ -51,14 +51,14 @@ let obj3 = {
     }
     return tmp3;
   },
-  transitionToStep: fn(12929).openContactSyncModalOnboarding
+  transitionToStep: fn(12823).openContactSyncModalOnboarding
 };
 items[1] = {
   key: obj.DISCOVERABILITY,
   shouldShowStep() {
     return null == ConnectedAccountsStore.getLocalAccount(PlatformTypes.CONTACTS);
   },
-  transitionToStep: fn(12957).openDiscoverabilityModal
+  transitionToStep: fn(12851).openDiscoverabilityModal
 };
 items[2] = obj3;
 items[3] = {
@@ -93,11 +93,11 @@ let obj4 = {
   shouldShowStep() {
     return null == ConnectedAccountsStore.getLocalAccount(PlatformTypes.CONTACTS);
   },
-  transitionToStep: fn(12957).openDiscoverabilityModal
+  transitionToStep: fn(12851).openDiscoverabilityModal
 };
 items[5] = {
   key: obj.ACCEPT_INVITE,
-  shouldShowStep: fn(10076).hasDeferredInvite,
+  shouldShowStep: fn(10055).hasDeferredInvite,
   transitionToStep() {
     DispatcherDefault.dispatch({ type: "DEFERRED_INVITE_SHOW" });
   }
@@ -124,7 +124,7 @@ const prototype = function NewUserManager() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -168,7 +168,7 @@ const prototype = function NewUserManager() {
             let transitionToStep2;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

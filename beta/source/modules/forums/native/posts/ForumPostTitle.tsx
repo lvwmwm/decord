@@ -1,17 +1,17 @@
-// Module ID: 12269
-// Function ID: 12270
+// Module ID: 12146
+// Function ID: 12147
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 4756, 1365, 4752, 2]
-// Exports: default
+// Dependencies: [19, 21, 4758, 1369, 558, 568, 4754, 2]
 
-// Module 12269 (ForumPostTitle)
-import Text_Text from "Text/Text" /* 4752 */;
+// Module 12146 (ForumPostTitle)
+import c from "c" /* 568 */;
+import Text_Text from "Text/Text" /* 4754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const PlatformUtils = fn(1365);
+const createStyles = fn(4758);
+const PlatformUtils = fn(1369);
 let obj3 = null;
 if (PlatformUtils.isIOS()) {
   obj3 = { lineHeight: 22 };
@@ -20,10 +20,42 @@ const obj4 = { title: null };
 const merged = Object.assign(obj3);
 obj4.title = { marginBottom: 6 };
 let closure_3 = createStyles.createStyles(obj4);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostTitle.tsx");
 
-export default function ForumPostTitle(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
+  const cResult = c.c(7);
+  ({ title, lineClamp, ellipsizeMode, onTextLayout } = hasUnreads);
+  const tmp4 = closure_3();
+  let str = "text-muted";
+  if (hasUnreads.hasUnreads) {
+    str = "mobile-text-heading-primary";
+  }
+  if (cResult[0] === str) {
+    if (cResult[1] === ellipsizeMode) {
+      if (cResult[2] === lineClamp) {
+        if (cResult[3] === onTextLayout) {
+          if (cResult[4] === tmp4.title) {
+            if (cResult[5] === title) {
+              let tmp5 = cResult[6];
+            }
+            return tmp5;
+          }
+        }
+      }
+    }
+  }
+  const tmp6 = jsx(Text_Text.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: tmp4.title, onTextLayout, children: title });
+  cResult[0] = str;
+  cResult[1] = ellipsizeMode;
+  cResult[2] = lineClamp;
+  cResult[3] = onTextLayout;
+  cResult[4] = tmp4.title;
+  cResult[5] = title;
+  cResult[6] = tmp6;
+  tmp5 = tmp6;
+}) : ((arg0) => {
   ({ title, lineClamp, ellipsizeMode, hasUnreads, onTextLayout } = arg0);
   let str = "text-muted";
   if (hasUnreads) {
@@ -31,4 +63,4 @@ export default function ForumPostTitle(arg0) {
   }
   const tmp = closure_3();
   return jsx(Text_Text.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: closure_3().title, onTextLayout, children: title });
-};
+});

@@ -1,27 +1,63 @@
-// Module ID: 15799
-// Function ID: 15800
+// Module ID: 15788
+// Function ID: 15789
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 9437, 21, 4756, 576, 13720, 9438, 11080, 15800, 2]
-// Exports: default
+// Dependencies: [19, 9435, 21, 4758, 580, 558, 568, 13723, 9436, 11117, 15789, 2]
 
-// Module 15799 (SettingsItemAppIcon)
-import nativeDefault from "native" /* 576 */;
-import AppIconTypes from "AppIconTypes" /* 9438 */;
-import AppIconUtils from "AppIconUtils" /* 13720 */;
-import AppIconDefault from "AppIcon" /* 15800 */;
+// Module 15788 (SettingsItemAppIcon)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import AppIconDefault from "AppIcon" /* 15789 */;
 import noop from "module_19" /* 19 */;
 
-const ClydeIcon = tmp4(11080);
+const AppIconTypes = ClydeIcon(9436);
+const ClydeIcon2 = ClydeIcon(11117);
+const AppIconUtils = ClydeIcon(13723);
 require = fn;
-const getIconById = fn(9437).getIconById;
+const getIconById = fn(9435).getIconById;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { icon: { borderRadius: nativeDefault.radii.round } };
 let closure_5 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { borderRadius: nativeDefault.radii.round };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_icons/native/SettingsItemAppIcon.tsx");
 
-export default function SettingsItemAppIcon(color) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+  let ClydeIcon = require;
+  let tmp = dependencyMap;
+  const cResult = c.c(5);
+  let INTERACTIVE_ICON_DEFAULT = color.color;
+  if (undefined === INTERACTIVE_ICON_DEFAULT) {
+    INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
+  }
+  const tmp4 = closure_5();
+  const currentAppIcon = AppIconUtils.useCurrentAppIcon();
+  const ClydeIconResult = AppIconUtils;
+  if (currentAppIcon !== AppIconTypes.FreemiumAppIconIds.DEFAULT) {
+    if (null != tmp6) {
+      if (cResult[2] === currentAppIcon) {
+        if (cResult[3] === tmp4.icon) {
+          let tmp8 = cResult[4];
+        }
+        return tmp8;
+      }
+      const obj2 = { style: tmp4.icon, id: currentAppIcon, size: 32 };
+      const tmp11 = jsx(AppIconDefault, { style: tmp4.icon, id: currentAppIcon, size: 32 });
+      cResult[2] = currentAppIcon;
+      cResult[3] = tmp4.icon;
+      cResult[4] = tmp11;
+      tmp8 = tmp11;
+    }
+  }
+  if (cResult[0] !== INTERACTIVE_ICON_DEFAULT) {
+    ClydeIcon = ClydeIcon2.ClydeIcon;
+    const obj3 = { color: INTERACTIVE_ICON_DEFAULT };
+    tmp = <ClydeIcon color={INTERACTIVE_ICON_DEFAULT} />;
+    cResult[0] = INTERACTIVE_ICON_DEFAULT;
+    cResult[1] = tmp;
+  }
+}) : ((color) => {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
@@ -35,5 +71,5 @@ export default function SettingsItemAppIcon(color) {
     }
     return tmp11;
   }
-  tmp11 = jsx(ClydeIcon.ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
-};
+  tmp11 = jsx(ClydeIcon2.ClydeIcon, { color: INTERACTIVE_ICON_DEFAULT });
+});

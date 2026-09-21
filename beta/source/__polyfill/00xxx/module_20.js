@@ -195,7 +195,7 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
         num7 = 0;
         if (!iter2.done) {
           while (true) {
-            let value3 = iter2.value;
+            value3 = iter2.value;
             if (typeof value3 === "object") {
               if (null !== value3) {
                 if (null != value3.key) {
@@ -326,7 +326,7 @@ let closure_8 = {
 
   }
 };
-const refs = {};
+const v65535 = {};
 Component.prototype.isReactComponent = {};
 ComponentDummy.prototype = Component.prototype;
 const forResult3 = Symbol.for("react.suspense");
@@ -367,13 +367,13 @@ let closure_18 = typeof reportError === "function" ? reportError : ((message) =>
     }
   }
 });
-function isValidElement(icon) {
-  let tmp = typeof icon === "object";
-  if (typeof icon === "object") {
-    tmp = null !== icon;
+function isValidElement(label) {
+  let tmp = typeof label === "object";
+  if (typeof label === "object") {
+    tmp = null !== label;
   }
   if (tmp) {
-    tmp = icon.$$typeof === closure_0;
+    tmp = label.$$typeof === closure_0;
   }
   return tmp;
 }
@@ -394,17 +394,17 @@ export const Children = {
       const items = [];
       c2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
-        const call = f70583.call;
+        const call = f79741.call;
         closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f70583(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f79741(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
       });
       return items;
     }
   },
   forEach(element, arg1, arg2) {
-    const f70581 = function() {
+    const f79739 = function() {
       const self = this;
-      const apply = f70581.apply;
+      const apply = f79739.apply;
       if (typeof apply === "unknown") {
         HermesBuiltin.applyArguments(self);
       } else {
@@ -415,9 +415,9 @@ export const Children = {
     if (null != element) {
       c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
-        const call = f70583.call;
+        const call = f79741.call;
         closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f70583(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f79741(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
       });
     }
   },
@@ -428,23 +428,23 @@ export const Children = {
     if (null != element) {
       c2 = 0;
       mapIntoArray(element, [], "", "", (arg0) => {
-        const call = f70583.call;
+        const call = f79741.call;
         closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f70583(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f79741(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
       });
     }
     return closure_0;
   },
   toArray(element) {
-    const f70583 = (arg0) => arg0;
+    const f79741 = (arg0) => arg0;
     let items1 = element;
     if (null != element) {
       const items = [];
       closure_2 = 0;
       mapIntoArray(element, items, "", "", (arg0) => {
-        const call = f70583.call;
+        const call = f79741.call;
         closure_2 = tmp3 + 1;
-        return typeof call === "unknown" ? f70583(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
+        return typeof call === "unknown" ? f79741(arg0, +closure_2) : call(closure_1_1, arg0, +closure_2);
       });
       items1 = items;
     }
@@ -701,9 +701,9 @@ export const useCallback = (fn, items) => {
   const H = obj.H;
   return H.useCallback(fn, items);
 };
-export const useContext = (context) => {
+export const useContext = (arg0) => {
   const H = obj.H;
-  return H.useContext(context);
+  return H.useContext(arg0);
 };
 export () => {
 
@@ -716,25 +716,25 @@ export const useEffect = (arg0, arg1) => {
   const H = obj.H;
   return H.useEffect(arg0, arg1);
 };
-export const useEffectEvent = (impl) => {
+export const useEffectEvent = (cResult) => {
   const H = obj.H;
-  return H.useEffectEvent(impl);
+  return H.useEffectEvent(cResult);
 };
 export const useId = () => {
   const H = obj.H;
   return H.useId();
 };
-export const useImperativeHandle = (ref, chatInputRefObjectCallback, items) => {
+export const useImperativeHandle = (ref, cResult, cResult2) => {
   const H = obj.H;
-  return H.useImperativeHandle(ref, chatInputRefObjectCallback, items);
+  return H.useImperativeHandle(ref, cResult, cResult2);
 };
-export const useInsertionEffect = (create, items) => {
+export const useInsertionEffect = (cResult, items) => {
   const H = obj.H;
-  return H.useInsertionEffect(create, items);
+  return H.useInsertionEffect(cResult, items);
 };
-export const useLayoutEffect = (create, items) => {
+export const useLayoutEffect = (fn, items) => {
   const H = obj.H;
-  return H.useLayoutEffect(create, items);
+  return H.useLayoutEffect(fn, items);
 };
 export const useMemo = (getNextRenewalDateLabel, items) => {
   const H = obj.H;
@@ -744,13 +744,13 @@ export const useOptimistic = (arg0, arg1) => {
   const H = obj.H;
   return H.useOptimistic(arg0, arg1);
 };
-export const useReducer = (lastRenderedReducer, arg1, fn) => {
+export const useReducer = (cResult, arg1, fn) => {
   const H = obj.H;
-  return H.useReducer(lastRenderedReducer, arg1, fn);
+  return H.useReducer(cResult, arg1, fn);
 };
-export const useRef = (set) => {
+export const useRef = (cResult) => {
   const H = obj.H;
-  return H.useRef(set);
+  return H.useRef(cResult);
 };
 export const useState = (arg0) => {
   const H = obj.H;

@@ -1,17 +1,17 @@
-// Module ID: 9660
-// Function ID: 9661
+// Module ID: 9656
+// Function ID: 9657
 // Name: VideoSpeakerStore
-// Dependencies: [4778, 502, 1992, 5636, 4772, 4777, 4808, 12, 504, 573, 2]
+// Dependencies: [4780, 502, 1996, 5638, 4774, 4779, 4810, 12, 504, 577, 2]
 
-// Module 9660 (VideoSpeakerStore)
+// Module 9656 (VideoSpeakerStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import SpeakingStore from "SpeakingStore" /* 5636 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import SpeakingStore from "SpeakingStore" /* 5638 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
 import apply from "module_12" /* 12 */;
 
 require = fn;
@@ -139,7 +139,7 @@ function handleChannelRTCUpdate() {
   closure_11();
   return false;
 }
-const ParticipantTypes = fn(4777).ParticipantTypes;
+const ParticipantTypes = fn(4779).ParticipantTypes;
 let closure_11 = apply.throttle(updateSpeaker, 300, { trailing: true });
 const Store = initializeDefault.Store;
 class VideoSpeakerStoreClass extends Store {
@@ -150,9 +150,9 @@ prototype["initialize"] = function initialize() {
   const items = [ChannelRTCStore, ApplicationStreamingStore];
   this.syncWith(items, handleChannelRTCUpdate);
 };
-prototype["getSpeaker"] = function getSpeaker(isActivityViewFocused) {
-  if (global !== isActivityViewFocused) {
-    global = isActivityViewFocused;
+prototype["getSpeaker"] = function getSpeaker(arg0) {
+  if (global !== arg0) {
+    global = arg0;
     c3 = null;
     updateSpeaker(false);
   }

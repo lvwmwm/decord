@@ -1,62 +1,126 @@
-// Module ID: 17696
-// Function ID: 17697
+// Module ID: 17699
+// Function ID: 17700
 // Name: updateRules
-// Dependencies: [19, 1074, 21, 4476, 4457, 576, 4451, 1929, 1177, 2]
+// Dependencies: [19, 1078, 21, 558, 568, 4481, 4462, 580, 4455, 1933, 1181, 2]
 // Exports: default
 
-// Module 17696 (updateRules)
-import native from "native" /* 1177 */;
-import _modDef1929 from "module_1929" /* 1929 */;
-import LinkingDefault from "Linking" /* 4451 */;
+// Module 17699 (updateRules)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import _modDef1933 from "module_1933" /* 1933 */;
+import LinkingDefault from "Linking" /* 4455 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-class I18nLink {
-  constructor(arg0) {
-    node = global.node;
-    alwaysShowLinkDecorations = undefined;
-    closure_2 = undefined;
-    obj = {};
-    ({ output, state } = global);
-    tmp = node;
-    tmp2 = closure_2;
-    alwaysShowLinkDecorations = closure_3.useContext(node(closure_2[3]).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-    obj2 = node(closure_2[4]);
-    token = obj2.useToken(alwaysShowLinkDecorations(closure_2[5]).colors.TEXT_LINK);
-    closure_2 = token;
-    items = [, ];
-    items[0] = token;
-    items[1] = alwaysShowLinkDecorations;
-    memo = closure_3.useMemo(() => {
-      const obj = { color: token, textDecorationLine: null };
-      let str = "none";
-      if (alwaysShowLinkDecorations) {
-        str = "underline";
-      }
-      obj.textDecorationLine = str;
-      return obj;
-    }, items);
+const jsx = fn(21).jsx;
+let paragraph = { strong: { fontFamily: fn(1078).Fonts.PRIMARY_SEMIBOLD }, italic: { fontStyle: "italic" }, underline: { textDecorationLine: "underline" } };
+const ReactCompilerGating = fn(558);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+  const cResult = node(568).c(9);
+  node = node.node;
+  ({ output, state } = node);
+  let obj = node(568);
+  const tmp = node;
+  const token = node(4462).useToken(nativeDefault.colors.TEXT_LINK);
+  let str = "none";
+  if (noop.useContext(node(4481).AccessibilityPreferencesContext).alwaysShowLinkDecorations) {
+    str = "underline";
+  }
+  if (cResult[0] === token) {
+    if (cResult[1] === str) {
+      let tmp5 = cResult[2];
+    }
+    const obj3 = {};
     if (null != node.context) {
-      tmp5 = node.context[node.target];
-      if (tmp5) {
-        if (tmp5.onClick) {
-          obj.onClick = tmp5.onClick;
+      if (node.context[node.target]) {
+        if (tmp7.onClick) {
+          obj3.onClick = tmp7.onClick;
         }
       }
-      obj.onClick = tmp5;
+      obj3.onClick = node.context[node.target];
     }
-    if (null == obj.onClick) {
-      obj.onClick = () => {
-        const obj = LinkingDefault;
-        return obj.openURL(_modDef1929.sanitizeUrl(node.target));
-      };
+    if (null != obj3.onClick) {
+      if (cResult[5] === node.content) {
+        if (cResult[6] === output) {
+          if (cResult[7] === state) {
+            let tmp10 = cResult[8];
+          }
+          const obj4 = { accessible: true, accessibilityRole: "link", onPress: tmp9, style: tmp5, children: tmp10 };
+          return jsx(tmp(1181).LegacyText, { accessible: true, accessibilityRole: "link", onPress: tmp9, style: tmp5, children: tmp10 });
+        }
+      }
+      const outputResult = output(node.content, state);
+      cResult[5] = node.content;
+      cResult[6] = output;
+      cResult[7] = state;
+      cResult[8] = outputResult;
+      tmp10 = outputResult;
+    } else {
+      if (cResult[3] !== node.target) {
+        class L {
+          constructor() {
+            obj = closure_1(closure_2[8]);
+            obj2 = closure_1(closure_2[9]);
+            return obj.openURL(obj2.sanitizeUrl(node.target));
+          }
+        }
+        cResult[3] = node.target;
+        cResult[4] = L;
+        const tmp8 = L;
+      } else {
+        class L {
+          constructor() {
+            obj = closure_1(closure_2[8]);
+            obj2 = closure_1(closure_2[9]);
+            return obj.openURL(obj2.sanitizeUrl(node.target));
+          }
+        }
+      }
+      obj3.onClick = tmp8;
     }
-    obj1 = { accessible: true, accessibilityRole: "link", onPress: obj.onClick, style: memo, children: output(node.content, state) };
-    return jsx(tmp(tmp2[8]).LegacyText, obj1);
   }
-}
-const jsx = fn(21).jsx;
-let paragraph = { strong: { fontFamily: fn(1074).Fonts.PRIMARY_SEMIBOLD }, italic: { fontStyle: "italic" }, underline: { textDecorationLine: "underline" } };
+  const obj5 = { color: token, textDecorationLine: str };
+  cResult[0] = token;
+  cResult[1] = str;
+  cResult[2] = obj5;
+  tmp5 = obj5;
+}) : ((node) => {
+  node = node.node;
+  let token;
+  let obj = {};
+  ({ output, state } = node);
+  const alwaysShowLinkDecorations = noop.useContext(node(token[5]).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
+  token = node(token[6]).useToken(alwaysShowLinkDecorations(token[7]).colors.TEXT_LINK);
+  const items = [token, alwaysShowLinkDecorations];
+  const memo = noop.useMemo(() => {
+    const obj = { color: token, textDecorationLine: null };
+    let str = "none";
+    if (alwaysShowLinkDecorations) {
+      str = "underline";
+    }
+    obj.textDecorationLine = str;
+    return obj;
+  }, items);
+  if (null != node.context) {
+    if (node.context[node.target]) {
+      if (tmp5.onClick) {
+        obj.onClick = tmp5.onClick;
+      }
+    }
+    obj.onClick = node.context[node.target];
+  }
+  if (null == obj.onClick) {
+    obj.onClick = () => {
+      const obj = LinkingDefault;
+      return obj.openURL(_modDef1933.sanitizeUrl(node.target));
+    };
+  }
+  const obj2 = node(token[6]);
+  const tmp = node;
+  const tmp2 = token;
+  return jsx(tmp(tmp2[10]).LegacyText, { accessible: true, accessibilityRole: "link", onPress: obj.onClick, style: memo, children: output(node.content, state) });
+});
+let closure_6 = tmp2;
 const size = fn(2);
 const result = size.fileFinishedImporting("i18n/native/updateRules.tsx");
 
@@ -88,9 +152,9 @@ export default function updateRules(paragraph) {
   const obj5 = {};
   const merged4 = Object.assign(paragraph.link);
   obj5.react = function react(node, output, state) {
-    return <I18nLink key={arg2.key} node={arg0} output={arg1} state={arg2} />;
+    return <closure_1_6 key={arg2.key} node={arg0} output={arg1} state={arg2} />;
   };
   paragraph.link = obj5;
   return paragraph;
 };
-export { I18nLink };
+export const I18nLink = tmp2;

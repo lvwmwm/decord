@@ -1,15 +1,15 @@
-// Module ID: 5626
-// Function ID: 5627
+// Module ID: 5628
+// Function ID: 5629
 // Name: getConnectionsRoles
-// Dependencies: [2099, 2063, 1074, 1086, 2]
+// Dependencies: [2103, 2067, 1078, 1090, 2]
 // Exports: default
 
-// Module 5626 (getConnectionsRoles)
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import BigFlagUtils from "BigFlagUtils" /* 1086 */;
+// Module 5628 (getConnectionsRoles)
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import BigFlagUtils from "BigFlagUtils" /* 1090 */;
 
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes, Permissions } = Constants);
 let items = [, , , , , , ];
 ({ GUILD_TEXT: arr[0], GUILD_VOICE: arr[1], GUILD_ANNOUNCEMENT: arr[2], GUILD_FORUM: arr[3], GUILD_APP: arr[4], PUBLIC_THREAD: arr[5], PRIVATE_THREAD: arr[6] } = ChannelTypes);
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/channel/getConnectionsRoles.t
 export default function getConnectionsRoles(type) {
   if (null != type) {
     if (items.includes(type.type)) {
-      const guild = GuildStore.getGuild(type.guild_id);
+      guild = GuildStore.getGuild(type.guild_id);
       if (null == guild) {
         items = [];
       } else {

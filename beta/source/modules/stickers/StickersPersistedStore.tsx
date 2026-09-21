@@ -1,16 +1,16 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5720
+// Function ID: 5721
 // Name: StickersPersistedStore
-// Dependencies: [1220, 5719, 1084, 1091, 4793, 12, 504, 573, 2]
+// Dependencies: [1224, 5721, 1088, 1095, 4795, 12, 504, 577, 2]
 
-// Module 5718 (StickersPersistedStore)
+// Module 5720 (StickersPersistedStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import FrecencyDefault from "Frecency" /* 4793 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import StickersStore from "StickersStore" /* 5719 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import FrecencyDefault from "Frecency" /* 4795 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import StickersStore from "StickersStore" /* 5721 */;
 
 function handleStickersStoreUpdate() {
   if (StickersStore.isLoaded) {
@@ -36,7 +36,7 @@ function handleUserSettingsProtoStoreChange() {
     }), global.pendingUsages);
   }
 }
-const UserSettingsTypes = fn(1084).UserSettingsTypes;
+const UserSettingsTypes = fn(1088).UserSettingsTypes;
 let global = { pendingUsages: [] };
 let closure_6 = new FrecencyDefault({
   computeBonus() {

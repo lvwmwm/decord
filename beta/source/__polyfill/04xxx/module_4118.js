@@ -1,43 +1,22 @@
 // Module ID: 4118
 // Function ID: 4119
-// Dependencies: [4006, 4013, 3846]
+// Dependencies: [4099, 3854]
 // Exports: default
 
 // Module 4118
-import startOfISOWeekYear_mod from "startOfISOWeekYear" /* 4006 */;
-import module_4013_mod from "module_4013" /* 4013 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _mod3854 from "module_3854" /* 3854 */;
+import assign_mod from "assign" /* 4099 */;
 
-let startOfISOWeekYear = startOfISOWeekYear_mod;
-if (!startOfISOWeekYear) {
-  const obj = { default: startOfISOWeekYear };
+let assign = assign_mod;
+if (!assign) {
+  const obj = { default: assign };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfISOWeekYear;
+  tmp3 = assign;
 }
-startOfISOWeekYear = tmp3;
-let module_4013 = module_4013_mod;
-if (!module_4013) {
-  const obj2 = { default: module_4013 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_4013;
-}
-module_4013 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
-let c3 = 604800000;
+assign = tmp3;
 
-export default function getISOWeeksInYear(arg0) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = startOfISOWeekYear.default(arg0);
-  const defaultResult2 = startOfISOWeekYear.default(module_4013.default(defaultResult1, 60));
-  return Math.round((startOfISOWeekYear.default(module_4013.default(defaultResult1, 60)).valueOf() - defaultResult1.valueOf()) / c3);
+export default function getDefaultOptions() {
+  return assign.default({}, _mod3854.getDefaultOptions());
 };
 export default exports.default;

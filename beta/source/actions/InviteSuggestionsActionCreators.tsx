@@ -1,13 +1,13 @@
-// Module ID: 10103
-// Function ID: 10104
+// Module ID: 10082
+// Function ID: 10083
 // Name: InviteSuggestionsActionCreators
-// Dependencies: [10089, 10104, 573, 2]
+// Dependencies: [10068, 10083, 577, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 10103 (InviteSuggestionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10104 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 10089 */;
+// Module 10082 (InviteSuggestionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10083 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 10068 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/InviteSuggestionsActionCreators.tsx");

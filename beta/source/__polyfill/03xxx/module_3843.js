@@ -1,16 +1,9 @@
 // Module ID: 3843
 // Function ID: 3844
-// Dependencies: [2114]
+// Dependencies: [1125]
 
 // Module 3843
-import module_2114 from "module_2114" /* 2114 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-if (!module_2114) {
-  const obj2 = { default: module_2114 };
-  let obj = obj2;
-} else {
-  obj = module_2114;
-}
 
-export default { date: obj.default({ formats: { full: "EEEE, dd MMMM yyyy", long: "dd MMMM yyyy", medium: "dd MMM yyyy", short: "dd/MM/yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "H:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { any: "{{date}} {{time}}" }, defaultWidth: "any" }) };
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/riot_credit_campaign", scales: [1], hash: "728f19a8cabe4372feb59e6102414e85", name: "RiotCreditCampaign.compiled.messages", type: "jsona" });

@@ -1,37 +1,37 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12381
+// Function ID: 12382
 // Name: ChatInputActions
-// Dependencies: [32, 19, 12215, 1074, 21, 4756, 576, 5191, 8116, 4457, 6867, 4624, 1610, 12489, 8088, 5180, 5367, 1115, 10913, 5305, 10898, 12490, 5278, 10368, 12462, 12464, 8090, 1241, 4492, 8174, 12492, 4462, 12493, 12494, 12498, 2]
+// Dependencies: [32, 19, 12092, 1078, 21, 4758, 580, 5193, 8121, 4462, 6861, 4627, 1614, 12382, 8093, 5182, 5369, 1119, 10951, 5307, 10934, 12383, 5280, 10936, 12355, 12357, 8095, 1245, 4497, 8182, 12385, 4467, 12386, 12388, 12392, 2]
 
-// Module 12488 (ChatInputActions)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import mergeProps from "mergeProps" /* 4462 */;
-import AppsIcon from "AppsIcon" /* 5278 */;
-import ImageIcon from "ImageIcon" /* 5305 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5367 */;
-import AttachmentIcon from "AttachmentIcon" /* 10368 */;
-import PollsIcon from "PollsIcon" /* 10898 */;
-import CameraIcon from "CameraIcon" /* 10913 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12462 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 12490 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12492 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 12493 */;
+// Module 12381 (ChatInputActions)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import mergeProps from "mergeProps" /* 4467 */;
+import AppsIcon from "AppsIcon" /* 5280 */;
+import ImageIcon from "ImageIcon" /* 5307 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5369 */;
+import PollsIcon from "PollsIcon" /* 10934 */;
+import AttachmentIcon from "AttachmentIcon" /* 10936 */;
+import CameraIcon from "CameraIcon" /* 10951 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12355 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 12383 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12385 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 12386 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ChatInputConstants = fn(12215);
+const ChatInputConstants = fn(12092);
 ({ ChatInputActionType: hasOwnProperty, ChatInputOmniButtonActionType: metroRequire } = ChatInputConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { actions: { flexDirection: "row", alignItems: "center" }, themedChatInput: { backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG }, buttonWrapper: null, activeBrand: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG };
-obj.buttonWrapper = { maxHeight: fn(5191).SMALL_BUTTON_HEIGHT + fn(5191).SMALL_BUTTON_PADDING };
-let obj4 = { maxHeight: fn(5191).SMALL_BUTTON_HEIGHT + fn(5191).SMALL_BUTTON_PADDING };
+obj.buttonWrapper = { maxHeight: fn(5193).SMALL_BUTTON_HEIGHT + fn(5193).SMALL_BUTTON_PADDING };
+let obj4 = { maxHeight: fn(5193).SMALL_BUTTON_HEIGHT + fn(5193).SMALL_BUTTON_PADDING };
 obj.activeBrand = { tintColor: nativeDefault.colors.CHAT_INPUT_ACTION_ICON_ACTIVE_TINT };
 let closure_10 = createStyles.createStyles(obj);
 let __initData = { code: "function ChatInputActionsTsx1(){return{opacity:1};}" };
@@ -184,16 +184,16 @@ const forwardRefResult = noop.forwardRef((canStartThreads, ref) => {
   items2.push(obj5);
   closure_24 = !tmp9[0];
   const tmp11 = keyboardType === canStartThreads(isAppLauncherEnabled[12]).KeyboardTypes.MEDIA || keyboardType === canStartThreads(isAppLauncherEnabled[12]).KeyboardTypes.APP_LAUNCHER;
-  class X {
+  class Q {
     constructor() {
       return { opacity: 1 };
     }
   }
-  X.__closure = {};
-  X.__workletHash = 13622805272332;
-  X.__initData = __initData;
+  Q.__closure = {};
+  Q.__workletHash = 13622805272332;
+  Q.__initData = __initData;
   let obj6 = { children: null };
-  const animatedStyle = canStartThreads(isAppLauncherEnabled[28]).useAnimatedStyle(X);
+  const animatedStyle = canStartThreads(isAppLauncherEnabled[28]).useAnimatedStyle(Q);
   let obj7 = {
     style: null,
     children: items2.map((item, index) => {
@@ -227,7 +227,7 @@ const forwardRefResult = noop.forwardRef((canStartThreads, ref) => {
                   obj.onPress = function onPress(arg0) {
                     return closure_1_3(arg0, constants.PHOTOS);
                   };
-                  return React6(tmp, obj);
+                  return closure_3_8(tmp, obj);
                 }
           };
           let tmp44Result = onAttachPress(canStartThreads(isAppLauncherEnabled[29]).ContextMenu, obj2, index);

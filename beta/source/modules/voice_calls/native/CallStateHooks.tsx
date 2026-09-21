@@ -1,23 +1,23 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14066
+// Function ID: 14067
 // Name: CallStateHooks
-// Dependencies: [4772, 502, 5495, 4779, 1074, 4777, 504, 9769, 2]
+// Dependencies: [4774, 502, 5497, 4781, 1078, 4779, 504, 10020, 2]
 // Exports: default
 
-// Module 14063 (CallStateHooks)
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
+// Module 14066 (CallStateHooks)
+import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5495 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import CallStore from "CallStore" /* 5497 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_7, RTCConnectionStates: closure_8 } = Constants);
-const ParticipantTypes = fn(4777).ParticipantTypes;
+const ParticipantTypes = fn(4779).ParticipantTypes;
 let obj = {};
-const merged = Object.assign({ initialized: false, callId: "PX_16" });
+const merged = Object.assign({ initialized: false, callId: "Set" });
 let obj2 = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
@@ -64,7 +64,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(9769)();
+  const tmp3 = id(10020)();
   dependencyMap = tmp3;
   obj2 = require("initialize");
   const items2 = [RTCConnectionStore];
@@ -84,7 +84,7 @@ export default function _default() {
         obj.initialized = false;
       }
       obj.callId = stateFromStores;
-      const state = RTCConnectionStore.getState();
+      state = RTCConnectionStore.getState();
       let initialized = obj.initialized;
       if (!initialized) {
         let tmp10 = state !== constants.DISCONNECTED;
@@ -98,7 +98,7 @@ export default function _default() {
     }
   }, items4);
   obj.initialized = obj.initialized || flag2;
-  let state = obj2.CONNECTING;
+  state = obj2.CONNECTING;
   let initialized = tmp6.initialized;
   if (flag) {
     state = tmp7.DISCONNECTING;

@@ -1,41 +1,18 @@
-// Module ID: 15476
-// Function ID: 15477
+// Module ID: 15465
+// Function ID: 15466
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [5677, 15475, 504, 2]
-// Exports: default, getUserRoleSubscriptionRelationship
+// Dependencies: [5679, 15464, 558, 568, 504, 2]
+// Exports: getUserRoleSubscriptionRelationship
 
-// Module 15476 (useUserRoleSubscriptionRelationship)
+// Module 15465 (useUserRoleSubscriptionRelationship)
 import initialize from "initialize" /* 504 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5677 */;
+import c from "c" /* 568 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5679 */;
 
 require = fn;
-const constants = fn(15475).UserGuildRoleSubscriptionRelationship;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
-
-export default function useUserRoleSubscriptionRelationship() {
-  let items = [SubscriptionRoleStore];
-  return initialize.useStateFromStores(items, () => {
-    const items = [SubscriptionRoleStore];
-    [obj] = items;
-    const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
-    c1 = false;
-    const item = guildIdsWithPurchasableRoles.forEach((item) => {
-      if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
-        c1 = true;
-      }
-    });
-    if (c1) {
-      let IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
-    } else if (0 === guildIdsWithPurchasableRoles.size) {
-      IN_SUBSCRIPTION_SERVER = constants.NONE;
-    } else {
-      IN_SUBSCRIPTION_SERVER = constants.IN_SUBSCRIPTION_SERVER;
-    }
-    return IN_SUBSCRIPTION_SERVER;
-  });
-};
-export const getUserRoleSubscriptionRelationship = function getUserRoleSubscriptionRelationship() {
+const constants = fn(15464).UserGuildRoleSubscriptionRelationship;
+const ReactCompilerGating = fn(558);
+function getUserRoleSubscriptionRelationship() {
   let tmp = arg0;
   if (arg0 === undefined) {
     const items = [SubscriptionRoleStore];
@@ -57,4 +34,61 @@ export const getUserRoleSubscriptionRelationship = function getUserRoleSubscript
     IN_SUBSCRIPTION_SERVER = constants.IN_SUBSCRIPTION_SERVER;
   }
   return IN_SUBSCRIPTION_SERVER;
-};
+}
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
+
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [SubscriptionRoleStore];
+    const fn = function o() {
+      const items = [SubscriptionRoleStore];
+      [obj] = items;
+      const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
+      c1 = false;
+      const item = guildIdsWithPurchasableRoles.forEach((item) => {
+        if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
+          c1 = true;
+        }
+      });
+      if (c1) {
+        let IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
+      } else if (0 === guildIdsWithPurchasableRoles.size) {
+        IN_SUBSCRIPTION_SERVER = constants.NONE;
+      } else {
+        IN_SUBSCRIPTION_SERVER = constants.IN_SUBSCRIPTION_SERVER;
+      }
+      return IN_SUBSCRIPTION_SERVER;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  let items = [SubscriptionRoleStore];
+  return initialize.useStateFromStores(items, () => {
+    const items = [SubscriptionRoleStore];
+    [obj] = items;
+    const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
+    c1 = false;
+    const item = guildIdsWithPurchasableRoles.forEach((item) => {
+      if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
+        c1 = true;
+      }
+    });
+    if (c1) {
+      let IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
+    } else if (0 === guildIdsWithPurchasableRoles.size) {
+      IN_SUBSCRIPTION_SERVER = constants.NONE;
+    } else {
+      IN_SUBSCRIPTION_SERVER = constants.IN_SUBSCRIPTION_SERVER;
+    }
+    return IN_SUBSCRIPTION_SERVER;
+  });
+});
+export { getUserRoleSubscriptionRelationship };

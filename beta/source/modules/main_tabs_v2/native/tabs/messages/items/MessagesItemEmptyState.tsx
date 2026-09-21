@@ -1,15 +1,16 @@
-// Module ID: 16434
-// Function ID: 16435
+// Module ID: 16432
+// Function ID: 16433
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 4756, 576, 4614, 16393, 4752, 1115, 5186, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4617, 16391, 1119, 4754, 5188, 2]
 
-// Module 16434 (MessagesItemEmptyState)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import _modDef16393 from "module_16393" /* 16393 */;
+// Module 16432 (MessagesItemEmptyState)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import _modDef16391 from "module_16391" /* 16391 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { container: { padding: nativeDefault.space.PX_16, flex: 1, height: 325 }, containerImage: null, image: null, body: null, title: null };
 let obj3 = { padding: nativeDefault.space.PX_16, flex: 1, height: 325 };
 obj.containerImage = { marginBottom: nativeDefault.space.PX_16, flexShrink: 1, flexGrow: 1 };
@@ -26,11 +27,118 @@ let obj4 = { marginBottom: nativeDefault.space.PX_16, flexShrink: 1, flexGrow: 1
 obj.body = { marginBottom: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 obj.title = { textAlign: "center" };
 let closure_8 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 let obj5 = { marginBottom: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemEmptyState.tsx");
 
-export default noop.memo(function MessagesItemEmptyState() {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(18);
+  const tmp4 = closure_8();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+      if (rootNavigationRef != null) {
+        const current = rootNavigationRef.current;
+        if (current != null) {
+          const obj2 = { screen: "add-friends", params: { sourcePage: "Messages Empty State", presentation: "card" } };
+          current.navigate("friends", obj2);
+        }
+      }
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== tmp4.image) {
+    let obj2 = { resizeMode: "contain", source: _modDef16391, style: tmp4.image };
+    const tmp10 = timestampProducer(React4, obj2);
+    cResult[1] = tmp4.image;
+    cResult[2] = tmp10;
+    let tmp6 = tmp10;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === tmp4.containerImage) {
+    if (cResult[4] === tmp6) {
+      let tmp11 = cResult[5];
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1119).intl;
+      const stringResult = intl.string(tmp(1119).t["8JZof8"]);
+      cResult[6] = stringResult;
+      let tmp13 = stringResult;
+    } else {
+      tmp13 = cResult[6];
+    }
+    if (cResult[7] !== tmp4.title) {
+      const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.title, maxFontSizeMultiplier: 2, children: tmp13 };
+      const tmp17 = timestampProducer(tmp(4754).Heading, obj3);
+      cResult[7] = tmp4.title;
+      cResult[8] = tmp17;
+      let tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[8];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl2 = tmp(1119).intl;
+      const stringResult1 = intl2.string(tmp(1119).t["qm+H7x"]);
+      cResult[9] = stringResult1;
+      let tmp18 = stringResult1;
+    } else {
+      tmp18 = cResult[9];
+    }
+    if (cResult[10] !== tmp4.body) {
+      const obj4 = { color: "text-default", variant: "text-md/medium", style: tmp4.body, maxFontSizeMultiplier: 2, children: tmp18 };
+      const tmp22 = timestampProducer(tmp(4754).Text, obj4);
+      cResult[10] = tmp4.body;
+      cResult[11] = tmp22;
+      let tmp20 = tmp22;
+    } else {
+      tmp20 = cResult[11];
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = { text: null, onPress: null, size: "lg" };
+      const intl3 = tmp(1119).intl;
+      obj5.text = intl3.string(tmp(1119).t.zIJnA6);
+      obj5.onPress = first;
+      const tmp25 = timestampProducer(tmp(5188).Button, obj5);
+      cResult[12] = tmp25;
+      let tmp23 = tmp25;
+    } else {
+      tmp23 = cResult[12];
+    }
+    if (cResult[13] === tmp4.container) {
+      if (cResult[14] === tmp11) {
+        if (cResult[15] === tmp15) {
+          if (cResult[16] === tmp20) {
+            let tmp26 = cResult[17];
+          }
+          return tmp26;
+        }
+      }
+    }
+    const obj6 = { style: tmp4.container, collapsable: false, children: null };
+    const items = [tmp11, tmp15, tmp20, tmp23];
+    obj6.children = items;
+    const tmp29 = React5(hasOwnProperty, obj6);
+    cResult[13] = tmp4.container;
+    cResult[14] = tmp11;
+    cResult[15] = tmp15;
+    cResult[16] = tmp20;
+    cResult[17] = tmp29;
+    tmp26 = tmp29;
+  }
+  const tmp12 = timestampProducer(hasOwnProperty, { style: tmp4.containerImage, children: tmp6 });
+  cResult[3] = tmp4.containerImage;
+  cResult[4] = tmp6;
+  cResult[5] = tmp12;
+  tmp11 = tmp12;
+}) : (() => {
   const tmp = closure_8();
   const obj = { style: tmp.container, collapsable: false, children: null };
   let obj2 = { style: tmp.containerImage, children: null };
@@ -45,7 +153,7 @@ export default noop.memo(function MessagesItemEmptyState() {
       }
     }
   }, []);
-  obj3.source = _modDef16393;
+  obj3.source = _modDef16391;
   obj3.style = tmp.image;
   obj2.children = timestampProducer(React4, obj3);
   const items = [timestampProducer(hasOwnProperty, obj2), , , ];
@@ -64,5 +172,5 @@ export default noop.memo(function MessagesItemEmptyState() {
   items[3] = timestampProducer(components_Button_Button.Button, obj6);
   obj.children = items;
   return React5(hasOwnProperty, obj);
-});
+}));
 export const MESSAGES_ITEM_EMPTY_STATE_HEIGHT = 325;

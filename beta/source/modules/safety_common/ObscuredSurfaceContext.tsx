@@ -1,18 +1,18 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 8981
+// Function ID: 8982
 // Name: ObscuredSurfaceContext
-// Dependencies: [19, 2]
+// Dependencies: [19, 558, 2]
 // Exports: useObscuredSurface
 
-// Module 8983 (ObscuredSurfaceContext)
+// Module 8981 (ObscuredSurfaceContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext({ obscured: false });
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/safety_common/ObscuredSurfaceContext.tsx");
+const result1 = size.fileFinishedImporting("modules/safety_common/ObscuredSurfaceContext.tsx");
 
 export const ObscuredSurfaceContext = context;
 export const OBSCURED_VALUE = { obscured: true };
-export const useObscuredSurface = function useObscuredSurface() {
-  return noop.useContext(context);
-};
+export const useObscuredSurface = () => noop.useContext(context);

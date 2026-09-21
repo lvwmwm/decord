@@ -1,19 +1,19 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 8986
+// Function ID: 8987
 // Name: SKUUtils
-// Dependencies: [32, 1074, 4582, 1115, 4997, 1364, 4348, 2]
+// Dependencies: [32, 1078, 4585, 1119, 4999, 1368, 4352, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8988 (SKUUtils)
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import matchPathCompat from "matchPathCompat" /* 4582 */;
-import StoreUtils from "StoreUtils" /* 4997 */;
+// Module 8986 (SKUUtils)
+import util from "util" /* 1119 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import matchPathCompat from "matchPathCompat" /* 4585 */;
+import StoreUtils from "StoreUtils" /* 4999 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 const GameGenres = Constants.GameGenres;
 ({ SKUTypes: hasOwnProperty, Routes: metroRequire, SKUProductLines: closure_7 } = Constants);
 let closure_8 = {};
@@ -282,7 +282,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     let num = 0;
     if (0 < items.length) {
       [tmp3, tmp4] = items[num];
-      const obj = _modDef4348(preorderApproximateReleaseDate, tmp3, true);
+      const obj = _modDef4352(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }

@@ -1,22 +1,70 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7182
+// Function ID: 7183
 // Name: FreeFormErrorLabel
-// Dependencies: [19, 21, 4459, 4607, 4752, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 4464, 4610, 4754, 2]
 
-// Module 7184 (FreeFormErrorLabel)
-import shared from "shared" /* 4607 */;
+// Module 7182 (FreeFormErrorLabel)
+import shared from "shared" /* 4610 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
 
-export default function Label(style) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(8);
+  ({ children, style } = arg0);
+  if (cResult[0] !== children) {
+    const nodeText = tmp(4464).getNodeText(children);
+    cResult[0] = children;
+    cResult[1] = nodeText;
+    let tmp4 = nodeText;
+    const tmpResult = tmp(4464);
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  if (cResult[2] !== tmp4) {
+    const fn = function f() {
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        tmp2 = "" !== tmp;
+      }
+      if (tmp2) {
+        const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
+        AccessibilityAnnouncer.announce(tmp);
+      }
+    };
+    const items = [tmp4];
+    cResult[2] = tmp4;
+    cResult[3] = fn;
+    cResult[4] = items;
+    let tmp7 = items;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[3];
+    tmp7 = cResult[4];
+  }
+  const effect = noop.useEffect(tmp6, tmp7);
+  if (cResult[5] === children) {
+    if (cResult[6] === style) {
+      let tmp9 = cResult[7];
+    }
+    return tmp9;
+  }
+  const tmp10 = jsx(require("Text/Text").Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  cResult[5] = children;
+  cResult[6] = style;
+  cResult[7] = tmp10;
+  tmp9 = tmp10;
+}) : ((style) => {
   const children = style.children;
   let nodeText;
-  nodeText = nodeText(4459).getNodeText(children);
+  nodeText = nodeText(4464).getNodeText(children);
   const items = [nodeText];
   const effect = noop.useEffect(() => {
     let tmp2 = null != nodeText;
@@ -28,5 +76,5 @@ export default function Label(style) {
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  return jsx(nodeText(4752).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
-};
+  return jsx(nodeText(4754).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+});

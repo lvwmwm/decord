@@ -1,20 +1,20 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 10384
+// Function ID: 10385
 // Name: StrangerDangerWarningBanner
-// Dependencies: [19, 4405, 11179, 11626, 1074, 11645, 21, 4756, 576, 504, 11633, 11634, 4959, 4723, 11646, 1980, 1249, 11635, 1115, 11638, 4752, 11648, 2]
+// Dependencies: [19, 4409, 10357, 10355, 1078, 10385, 21, 4758, 580, 504, 10369, 10370, 4961, 4725, 10386, 1984, 1253, 10373, 1119, 10376, 4754, 10388, 2]
 
-// Module 11644 (StrangerDangerWarningBanner)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11633 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11634 */;
-import StrangerDangerMoreTipsModalActionItemsDefault from "StrangerDangerMoreTipsModalActionItems" /* 11648 */;
+// Module 10384 (StrangerDangerWarningBanner)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10369 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10370 */;
+import StrangerDangerMoreTipsModalActionItemsDefault from "StrangerDangerMoreTipsModalActionItems" /* 10388 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
 
 require = fn;
 class StrangerDangerWarningBanner {
@@ -78,11 +78,11 @@ class StrangerDangerWarningBanner {
         };
         obj2.onIgnore = function onIgnore() {
           closure_1_4();
-          const obj = channelId(11633);
-          obj.trackCtaEvent({ channelId, warningId, senderId, warningType: constants.STRANGER_DANGER, cta: channelId(11633).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM });
+          const obj = channelId(10369);
+          obj.trackCtaEvent({ channelId, warningId, senderId, warningType: constants.STRANGER_DANGER, cta: channelId(10369).CtaEventTypes.USER_BANNER_IGNORE_CONFIRM });
         };
         obj2.impressionName = discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION;
-        obj.openLazy(asyncRequireImpl(11646, dependencyMap.paths), closure_9, obj2);
+        obj.openLazy(asyncRequireImpl(10386, dependencyMap.paths), closure_9, obj2);
       };
     }, items5);
     closure_6 = callback2;
@@ -102,7 +102,7 @@ class StrangerDangerWarningBanner {
       const obj = ModalActionCreatorsDefault;
       const intl = util.intl;
       obj2.description = intl.string(util.t.DJMZX6);
-      const tmp = asyncRequireImpl(11638, dependencyMap.paths);
+      const tmp = asyncRequireImpl(10376, dependencyMap.paths);
       obj2.safetyTips = React5().map((children, index) => closure_1_10(channelId(senderId[20]).Text, { variant: "text-sm/medium", children }, index));
       const obj3 = { channelId, warningId, senderId, onBlockPressed: null };
       const arr = React5();
@@ -129,13 +129,13 @@ class StrangerDangerWarningBanner {
     return tmp8(tmp9, obj1);
   }
 }
-const SafetyWarningTypes = fn(11179).SafetyWarningTypes;
-const Constants = fn(11626);
+const SafetyWarningTypes = fn(10357).SafetyWarningTypes;
+const Constants = fn(10355);
 ({ STRANGER_DANGER_MORE_TIPS_MODAL_KEY: metroRequire, getStrangerDangerSafetyTips: closure_7 } = Constants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_9 = fn(11645).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+let closure_9 = fn(10385).BLOCK_CONFIRMATION_ACTION_SHEET_KEY;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { moreTipsHeader: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);

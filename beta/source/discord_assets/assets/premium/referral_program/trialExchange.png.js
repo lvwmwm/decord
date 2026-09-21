@@ -1,8 +1,8 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8318
+// Function ID: 8319
 // Dependencies: [2]
 
-// Module 8313
+// Module 8318
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/referral_program/trialExchange.png.js");

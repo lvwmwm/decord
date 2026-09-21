@@ -1,8 +1,8 @@
-// Module ID: 581
-// Function ID: 582
+// Module ID: 585
+// Function ID: 586
 // Dependencies: [2]
 
-// Module 581
+// Module 585
 import size from "module_2" /* 2 */;
 
 const obj = { Modules: null };

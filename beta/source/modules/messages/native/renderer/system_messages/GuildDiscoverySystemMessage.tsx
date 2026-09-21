@@ -1,14 +1,14 @@
-// Module ID: 8266
-// Function ID: 8267
+// Module ID: 8271
+// Function ID: 8272
 // Name: GuildDiscoverySystemMessage
-// Dependencies: [2041, 2063, 1115, 8222, 2]
+// Dependencies: [2045, 2067, 1119, 8227, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 8266 (GuildDiscoverySystemMessage)
-import util from "util" /* 1115 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 8271 (GuildDiscoverySystemMessage)
+import util from "util" /* 1119 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8227 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 const size = fn(2);
@@ -29,7 +29,7 @@ export const createGuildDiscoveryDisqualifiedSystemMessage = function createGuil
     }
     guild_id = guild_id1;
   }
-  const guild = GuildStore.getGuild(guild_id);
+  guild = GuildStore.getGuild(guild_id);
   let name;
   if (guild != null) {
     name = guild.name;
@@ -70,7 +70,7 @@ export const createGuildDiscoveryGracePeriodInitialWarningSystemMessage = functi
     }
     guild_id = guild_id1;
   }
-  const guild = GuildStore.getGuild(guild_id);
+  guild = GuildStore.getGuild(guild_id);
   let name;
   if (guild != null) {
     name = guild.name;
@@ -104,7 +104,7 @@ export const createGuildDiscoveryGracePeriodFinalWarningSystemMessage = function
     }
     guild_id = guild_id1;
   }
-  const guild = GuildStore.getGuild(guild_id);
+  guild = GuildStore.getGuild(guild_id);
   let name;
   if (guild != null) {
     name = guild.name;

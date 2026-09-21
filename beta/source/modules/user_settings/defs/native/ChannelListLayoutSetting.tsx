@@ -1,15 +1,15 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15797
+// Function ID: 15798
 // Name: ChannelListLayoutSetting
-// Dependencies: [8233, 2019, 1115, 8123, 11725, 2]
+// Dependencies: [8238, 2023, 1119, 8128, 11594, 2]
 // Exports: useChannelListLayoutPredicate
 
-// Module 15808 (ChannelListLayoutSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8123 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15797 (ChannelListLayoutSetting)
+import util from "util" /* 1119 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8128 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
 function useChannelListLayoutPredicate() {

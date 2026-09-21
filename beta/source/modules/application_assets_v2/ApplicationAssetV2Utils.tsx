@@ -1,12 +1,12 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9305
+// Function ID: 9306
 // Name: ApplicationAssetV2Utils
-// Dependencies: [1271, 1431, 2]
+// Dependencies: [1275, 1435, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 9307 (ApplicationAssetV2Utils)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
+// Module 9305 (ApplicationAssetV2Utils)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1435 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");

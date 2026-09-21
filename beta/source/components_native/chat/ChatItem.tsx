@@ -1,55 +1,118 @@
-// Module ID: 8930
-// Function ID: 8931
+// Module ID: 8928
+// Function ID: 8929
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 4748, 1074, 8191, 21, 576, 8931, 1090, 8932, 7512, 8933, 4756, 1364, 8395, 4457, 672, 5198, 2]
+// Dependencies: [32, 109, 19, 17, 4750, 1078, 8196, 21, 580, 558, 568, 8929, 1094, 8930, 7514, 8931, 4758, 1368, 8400, 4462, 676, 5198, 2]
 // Exports: default
 
-// Module 8930 (ChatItem)
-import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import MessageTypes2 from "MessageTypes" /* 1090 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8395 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 8931 */;
+// Module 8928 (ChatItem)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import _modDef676 from "module_676" /* 676 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7514 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8400 */;
 import _slicedToArray from "module_32" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
+const MessageTypes2 = _default(1094);
+const AutoModerationSystemMessageViewNativeComponent = _default(8929);
+const MessageViewNativeComponent = _default(8930);
+const SystemMessageViewNativeComponent = _default(8931);
 require = fn;
-function DCDChatItem(message) {
+let closure_3 = ["message"];
+const View = fn(17).View;
+const MessageTypes = fn(1078).MessageTypes;
+const RowGeneratorConstants = fn(8196);
+({ RowType: c10, Changeset: closure_11 } = RowGeneratorConstants);
+const jsxProd = fn(21);
+({ jsx: closure_12, jsxs: map1 } = jsxProd);
+const PX_4 = nativeDefault.space.PX_4;
+const ReactCompilerGating = fn(558);
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+  let _default = require;
+  let tmp = dependencyMap;
+  const cResult = c.c(11);
+  if (cResult[0] !== message) {
+    message = message.message;
+    const tmp7 = _objectWithoutProperties(message, closure_3);
+    cResult[0] = message;
+    cResult[1] = message;
+    cResult[2] = tmp7;
+    let tmp4 = tmp7;
+    let tmp3 = message;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  if (tmp3.type === MessageTypes.AUTO_MODERATION_ACTION) {
+    if (cResult[3] !== tmp4) {
+      _default = AutoModerationSystemMessageViewNativeComponent.default;
+      const obj2 = {};
+      const merged = Object.assign(tmp4);
+      tmp = __initData(_default, obj2);
+      cResult[3] = tmp4;
+      cResult[4] = tmp;
+    }
+  } else {
+    const AUTOMOD_INCIDENT_ACTIONS = MessageTypes2.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
+    if (AUTOMOD_INCIDENT_ACTIONS.has(tmp3.type)) {
+      if (cResult[5] !== tmp4) {
+        const obj3 = {};
+        const merged1 = Object.assign(tmp4);
+        const tmp27 = __initData(MessageViewNativeComponent.default, obj3);
+        cResult[5] = tmp4;
+        cResult[6] = tmp27;
+      }
+    } else if (isSystemMessageDefault(tmp3)) {
+      if (cResult[7] !== tmp4) {
+        const obj4 = {};
+        const merged2 = Object.assign(tmp4);
+        const tmp20 = __initData(SystemMessageViewNativeComponent.default, obj4);
+        cResult[7] = tmp4;
+        cResult[8] = tmp20;
+      }
+    } else {
+      if (cResult[9] !== tmp4) {
+        const obj5 = {};
+        const merged3 = Object.assign(tmp4);
+        const tmp14 = __initData(MessageViewNativeComponent.default, obj5);
+        cResult[9] = tmp4;
+        cResult[10] = tmp14;
+        let tmp9 = tmp14;
+      } else {
+        tmp9 = cResult[10];
+      }
+      return tmp9;
+    }
+  }
+}) : ((message) => {
   message = message.message;
   const merged = Object.assign(message, Object.assign({ message: 0 }));
   if (message.type === MessageTypes.AUTO_MODERATION_ACTION) {
     const obj2 = {};
     const merged1 = Object.assign(merged);
-    let tmp3Result = closure_1_10(AutoModerationSystemMessageViewNativeComponent.default, obj2);
+    let tmp3Result = __initData(AutoModerationSystemMessageViewNativeComponent.default, obj2);
   } else {
     const AUTOMOD_INCIDENT_ACTIONS = MessageTypes2.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       const obj3 = {};
       const merged2 = Object.assign(merged);
-      tmp3Result = closure_1_10(tmp21(8932).default, obj3);
+      tmp3Result = __initData(tmp21(8930).default, obj3);
     } else if (isSystemMessageDefault(message)) {
       const obj4 = {};
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8933).default, obj4);
+      tmp3Result = tmp3(tmp21(8931).default, obj4);
     } else {
       const obj = {};
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8932).default, obj);
+      tmp3Result = tmp3(tmp21(8930).default, obj);
     }
   }
   return tmp3Result;
-}
-const View = fn(17).View;
-const MessageTypes = fn(1074).MessageTypes;
-const RowGeneratorConstants = fn(8191);
-({ RowType: closure_8, Changeset: closure_9 } = RowGeneratorConstants);
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const PX_4 = nativeDefault.space.PX_4;
-const createStyles = fn(4756);
-let closure_14 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
+});
+const createStyles = fn(4758);
+let closure_16 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
   const obj = { container: { position: "relative", overflow: "hidden", paddingTop }, offset: { marginTop: -marginTop, marginLeft: -marginLeft }, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
   return obj;
 });
@@ -68,18 +131,18 @@ export default function _default(rowGenerator) {
   const messageSizeCacheRef = rowGenerator.messageSizeCacheRef;
   ({ backgroundColor, pointerEvents } = rowGenerator);
   if (backgroundColor === undefined) {
-    backgroundColor = message(modifyRow[7]).colors.BACKGROUND_BASE_LOWER;
+    backgroundColor = message(modifyRow[8]).colors.BACKGROUND_BASE_LOWER;
   }
   const gradientColors = rowGenerator.gradientColors;
-  AccessibilityStore = undefined;
+  noop = undefined;
   let token;
-  [tmp4, c6] = onLayout(messageSizeCacheRef.useState(0), 2);
-  const tmp5 = onLayout(messageSizeCacheRef.useState(undefined), 2);
+  [tmp4, c6] = messageSizeCacheRef(noop.useState(0), 2);
+  const tmp5 = messageSizeCacheRef(noop.useState(undefined), 2);
   const constrainedWidth = tmp5[0];
-  closure_8 = tmp5[1];
+  AccessibilityStore = tmp5[1];
   const roleStyle = AccessibilityStore.roleStyle;
   let items = [constrainedWidth, roleStyle, message, modifyRow, rowGenerator];
-  const memo = messageSizeCacheRef.useMemo(() => {
+  const memo = noop.useMemo(() => {
     rowGenerator.setOptions({ constrainedWidth });
     const generateResult = rowGenerator.generate({ roleStyle, rowType: constants.MESSAGE, changeType: constants2.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false });
     if (null != modifyRow) {
@@ -92,7 +155,7 @@ export default function _default(rowGenerator) {
   }, items);
   const rawRow = memo.rawRow;
   const items1 = [rawRow.contextType];
-  const memo1 = messageSizeCacheRef.useMemo(() => {
+  const memo1 = noop.useMemo(() => {
     let num = 0;
     if (!obj.isAndroid()) {
       let num2 = 16;
@@ -103,7 +166,7 @@ export default function _default(rowGenerator) {
     }
     return num;
   }, items1);
-  let tmp11 = rawRow.contextType !== rowGenerator(modifyRow[15]).MessageContextType.SEARCH;
+  let tmp11 = rawRow.contextType !== rowGenerator(modifyRow[18]).MessageContextType.SEARCH;
   if (tmp11) {
     tmp11 = null != rawRow.message;
   }
@@ -114,7 +177,7 @@ export default function _default(rowGenerator) {
     tmp11 = null != rawRow.message.avatarDecorationURL;
   }
   if (!tmp11) {
-    const tmp17 = closure_14(num, memo1, 0);
+    const tmp17 = closure_16(num, memo1, 0);
     const items2 = [onLayout];
     const items3 = [messageSizeCacheRef, message.id];
     const callback = obj.useCallback((nativeEvent) => {
@@ -154,11 +217,11 @@ export default function _default(rowGenerator) {
     }
     const obj2 = { style: tmp17.offset, onLayout: callback1, children: null };
     let obj3 = { message, row: memo.row, style: tmp17.itemRow };
-    obj2.children = rawRow(DCDChatItem, obj3);
-    const tmp24 = rawRow;
-    const tmp25 = gradientColors;
-    const tmp27 = rawRow(gradientColors, obj2);
-    token = tmp9(tmp10[16]).useToken(backgroundColor);
+    obj2.children = closure_12(closure_15, obj3);
+    const tmp24 = closure_12;
+    const tmp25 = constrainedWidth;
+    const tmp27 = closure_12(constrainedWidth, obj2);
+    token = tmp9(tmp10[19]).useToken(backgroundColor);
     const items4 = [gradientColors, token];
     const obj4 = { style: null, onLayout: null, pointerEvents: null, children: null };
     const items5 = [tmp17.container, rowGenerator.style, ];
@@ -171,10 +234,10 @@ export default function _default(rowGenerator) {
     const memo2 = obj.useMemo(() => {
       let tmp = gradientColors;
       if (gradientColors == null) {
-        const obj = _modDef672(token);
-        const items = [_modDef672(token).alpha(0).hex(), token];
+        const obj = _modDef676(token);
+        const items = [_modDef676(token).alpha(0).hex(), token];
         tmp = items;
-        const alphaResult = _modDef672(token).alpha(0);
+        const alphaResult = _modDef676(token).alpha(0);
       }
       return tmp;
     }, items4);
@@ -186,16 +249,16 @@ export default function _default(rowGenerator) {
       const obj6 = { colors: memo2, style: null };
       const items7 = [tmp17.gradient, rowGenerator.gradientStyles];
       obj6.style = items7;
-      tmp24Result = tmp24(message(tmp10[18]), obj6);
+      tmp24Result = tmp24(message(tmp10[21]), obj6);
     }
     items6[1] = tmp24Result;
     obj4.children = items6;
-    return token(tmp25, obj4);
+    return closure_13(tmp25, obj4);
   } else {
-    tmp9(tmp10[14]).isAndroid() ? PX_4 - 2 : PX_4;
-    const tmp9Result2 = tmp9(tmp10[14]);
+    tmp9(tmp10[17]).isAndroid() ? PX_4 - 2 : PX_4;
+    const tmp9Result2 = tmp9(tmp10[17]);
   }
 };
-export const DCDMessageView = fn(8932).default;
-export const DCDSystemMessageView = fn(8933).default;
-export const DCDAutoModerationSystemMessageView = fn(8931).default;
+export const DCDMessageView = fn(8930).default;
+export const DCDSystemMessageView = fn(8931).default;
+export const DCDAutoModerationSystemMessageView = fn(8929).default;

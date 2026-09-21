@@ -1,26 +1,66 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15502
+// Function ID: 15503
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1372, 21, 7661, 5109, 1115, 15514, 1980, 504, 1364, 11725, 8940, 2]
+// Dependencies: [1376, 21, 7663, 5111, 1119, 15503, 1984, 558, 568, 504, 1368, 11594, 8938, 2]
 
-// Module 15513 (PremiumRestoreSubscriptionSetting)
+// Module 15502 (PremiumRestoreSubscriptionSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7661 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7663 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] !== stateFromStores) {
+    let tmp10 = null != stateFromStores && stateFromStores.verified;
+    if (tmp10) {
+      tmp10 = !tmp(1368).isAndroid();
+      const tmpResult2 = tmp(1368);
+    }
+    cResult[2] = stateFromStores;
+    cResult[3] = tmp10;
+    let tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[3];
+  }
+  return tmp8;
+}) : (() => {
+  const items = [UserStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let tmp4 = null != stateFromStores && stateFromStores.verified;
+  if (tmp4) {
+    tmp4 = !PlatformUtils.isAndroid();
+    const tmpResult = PlatformUtils;
+  }
+  return tmp4;
+});
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.s9h22P);
   },
   parent: null,
-  IconComponent: fn(8940).NitroWheelIcon,
+  IconComponent: fn(8938).NitroWheelIcon,
   onPress: function handleNitroRestoreSettingPress() {
     const result = BillingActionCreatorsDefault.restoreAndApplyPurchases(true);
     result.then((result) => {
@@ -61,7 +101,35 @@ const pressable = SettingBuilders.createPressable({
     });
   },
   withArrow: true,
-  usePredicate: function useHasPremiumRestoreSubscriptionSetting() {
+  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(4);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [UserStore];
+      const fn = function s() {
+        return currentUser.getCurrentUser();
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+    if (cResult[2] !== stateFromStores) {
+      let tmp10 = null != stateFromStores && stateFromStores.verified;
+      if (tmp10) {
+        tmp10 = !tmp(1368).isAndroid();
+        const tmpResult2 = tmp(1368);
+      }
+      cResult[2] = stateFromStores;
+      cResult[3] = tmp10;
+      let tmp8 = tmp10;
+    } else {
+      tmp8 = cResult[3];
+    }
+    return tmp8;
+  }) : (() => {
     const items = [UserStore];
     const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
     let tmp4 = null != stateFromStores && stateFromStores.verified;
@@ -70,7 +138,7 @@ const pressable = SettingBuilders.createPressable({
       const tmpResult = PlatformUtils;
     }
     return tmp4;
-  }
+  })
 });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumRestoreSubscriptionSetting.tsx");

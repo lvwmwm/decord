@@ -1,19 +1,19 @@
-// Module ID: 8212
-// Function ID: 8213
+// Module ID: 8217
+// Function ID: 8218
 // Name: formatMessageForwards
-// Dependencies: [8213, 2041, 2063, 4395, 4405, 1372, 1397, 1115, 4438, 4909, 7544, 2]
+// Dependencies: [8218, 2045, 2067, 4399, 4409, 1376, 1401, 1119, 4442, 4911, 7546, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8212 (formatMessageForwards)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import DateUtils from "DateUtils" /* 4438 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7544 */;
-import BasicGuildStore from "BasicGuildStore" /* 8213 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 8217 (formatMessageForwards)
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
+import DateUtils from "DateUtils" /* 4442 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7546 */;
+import BasicGuildStore from "BasicGuildStore" /* 8218 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 class MessageForward {
@@ -67,7 +67,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, UserS
       }
       const channel1 = obj.getChannel(channel_id);
       if (null == channel1) {
-        const guild = obj3.getGuild(channel.guild_id);
+        guild = obj3.getGuild(channel.guild_id);
         if (null == guild) {
           const obj6 = { snapshotIndex };
           let obj7 = obj6;
@@ -77,9 +77,9 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, UserS
           ({ id: obj22.id, icon: obj22.icon } = guild);
           obj8.originIconUrl = AvatarUtilsDefault.getGuildIconURL({ id: null, size: 16, icon: null, canAnimate: false });
           obj8.timestampLabel = result;
-          const intl3 = tmp3(1115).intl;
+          const intl3 = tmp3(1119).intl;
           const obj10 = { origin: guild.name, timestamp: result };
-          obj8.accessibilityLabel = intl3.formatToPlainString(tmp3(1115).t["+l04BN"], obj10);
+          obj8.accessibilityLabel = intl3.formatToPlainString(tmp3(1119).t["+l04BN"], obj10);
           obj7.footerInfo = obj8;
           const obj9 = { id: null, size: 16, icon: null, canAnimate: false };
         }
@@ -87,12 +87,12 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, UserS
       } else {
         if (obj2.can(channel1.accessPermissions, channel1)) {
           const obj11 = { snapshotIndex, footerInfo: null };
-          const tmp3Result = tmp3(4909);
+          const tmp3Result = tmp3(4911);
           const channelName = tmp3Result.computeChannelName(channel1, tmp, tmp2, true);
           const obj12 = { originLabel: channelName, timestampLabel: result, accessibilityLabel: null };
-          const intl = tmp3(1115).intl;
+          const intl = tmp3(1119).intl;
           const obj13 = { origin: channelName, timestamp: result };
-          obj12.accessibilityLabel = intl.formatToPlainString(tmp3(1115).t["+l04BN"], obj13);
+          obj12.accessibilityLabel = intl.formatToPlainString(tmp3(1119).t["+l04BN"], obj13);
           obj11.footerInfo = obj12;
           let obj14 = obj11;
         } else {
@@ -124,9 +124,9 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, UserS
       ({ id: obj18.id, icon: obj18.icon } = guild1);
       obj20.originIconUrl = AvatarUtilsDefault.getGuildIconURL({ id: null, size: 16, icon: null, canAnimate: false });
       obj20.timestampLabel = result;
-      const intl2 = tmp3(1115).intl;
+      const intl2 = tmp3(1119).intl;
       const obj38 = { origin: guild1.name, timestamp: result };
-      obj20.accessibilityLabel = intl2.formatToPlainString(tmp3(1115).t["+l04BN"], obj38);
+      obj20.accessibilityLabel = intl2.formatToPlainString(tmp3(1119).t["+l04BN"], obj38);
       obj19.footerInfo = obj20;
       const obj23 = { id: null, size: 16, icon: null, canAnimate: false };
     }

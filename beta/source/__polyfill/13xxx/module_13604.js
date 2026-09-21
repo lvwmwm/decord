@@ -1,9 +1,9 @@
 // Module ID: 13604
 // Function ID: 13605
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 13604
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 108.5, scales: [2, 3], hash: "9b8bd10d33176958273580b349a5855d", name: "img_what_you_lose_hd_video", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 297, height: 238, scales: [1], hash: "ee27927c992063817a4891d6fea39469", name: "wumpus-bookmark", type: "png" });

@@ -1,14 +1,14 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 14974
+// Function ID: 14975
 // Name: UniqueUsernamesActionCreators
-// Dependencies: [5, 1074, 1115, 573, 1271, 1241, 4949, 1249, 4656, 2]
+// Dependencies: [5, 1078, 1119, 577, 1275, 1245, 4951, 1253, 4659, 2]
 
-// Module 14985 (UniqueUsernamesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 14974 (UniqueUsernamesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, Endpoints: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesActionCreators.tsx");
@@ -77,7 +77,7 @@ export default {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -97,14 +97,14 @@ export default {
               closure_129_2 = undefined;
               const tmp83 = (function validate(arr) {
                 if (false === obj.test(arr)) {
-                  const intl3 = _undefined(1115).intl;
-                  let stringResult = intl3.string(_undefined(1115).t.z7c4bP);
+                  const intl3 = _undefined(1119).intl;
+                  let stringResult = intl3.string(_undefined(1119).t.z7c4bP);
                 } else if (arr.includes("..")) {
-                  const intl2 = _undefined(1115).intl;
-                  stringResult = intl2.string(_undefined(1115).t["C7G+gr"]);
+                  const intl2 = _undefined(1119).intl;
+                  stringResult = intl2.string(_undefined(1119).t["C7G+gr"]);
                 } else if (arr.length < 2) {
-                  const intl = _undefined(1115).intl;
-                  stringResult = intl.formatToPlainString(_undefined(1115).t.IpijXA, { maxNum: 32, minNum: 2 });
+                  const intl = _undefined(1119).intl;
+                  stringResult = intl.formatToPlainString(_undefined(1119).t.IpijXA, { maxNum: 32, minNum: 2 });
                 }
                 return stringResult;
               })(_undefined);

@@ -1,19 +1,32 @@
-// Module ID: 15485
-// Function ID: 15486
+// Module ID: 15474
+// Function ID: 15475
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 4756, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4758, 558, 568, 2]
 
-// Module 15485 (LoadingIndicator)
+// Module 15474 (LoadingIndicator)
+import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let closure_2 = createStyles.createStyles({ indicator: { margin: 16 } });
+const createStyles = fn(4758);
+let closure_4 = createStyles.createStyles({ indicator: { margin: 16 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/LoadingIndicator.tsx");
 
-export default function LoadingIndicator() {
-  return <ActivityIndicator style={closure_2().indicator} />;
-};
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const tmp2 = closure_4();
+  if (cResult[0] !== tmp2.indicator) {
+    const obj2 = { style: tmp2.indicator };
+    const tmp6 = <ActivityIndicator style={tmp2.indicator} />;
+    cResult[0] = tmp2.indicator;
+    cResult[1] = tmp6;
+    let tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : (() => <ActivityIndicator style={closure_4().indicator} />);

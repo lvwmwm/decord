@@ -1,10 +1,10 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 16832
+// Function ID: 16833
 // Name: DesignConstants
-// Dependencies: [576, 2]
+// Dependencies: [580, 2]
 
-// Module 16829 (DesignConstants)
-import nativeDefault from "native" /* 576 */;
+// Module 16832 (DesignConstants)
+import nativeDefault from "native" /* 580 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/native/DesignConstants.tsx");

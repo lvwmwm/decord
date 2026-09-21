@@ -1,14 +1,14 @@
-// Module ID: 14175
-// Function ID: 14176
+// Module ID: 14178
+// Function ID: 14179
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 4737, 3, 1271, 4451, 1364, 1094, 2]
+// Dependencies: [5, 4739, 3, 1275, 4455, 1368, 1098, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 14175 (MobileNativeUpdateUtils)
+// Module 14178 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Linking from "Linking" /* 4451 */;
+import ConstantsIOS from "ConstantsIOS" /* 1098 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import Linking from "Linking" /* 4455 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -23,7 +23,7 @@ let closure_5 = async function _checkForNewerBuild(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -106,7 +106,7 @@ function openBuildInstallerUrl(install) {
   } catch (err) {
   }
 }
-const UPDATE_CONFIG = fn(4737).UPDATE_CONFIG;
+const UPDATE_CONFIG = fn(4739).UPDATE_CONFIG;
 const logger = new LoggerDefault("MobileNativeUpdateUtils");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/mobile_native_updater/MobileNativeUpdateUtils.tsx");

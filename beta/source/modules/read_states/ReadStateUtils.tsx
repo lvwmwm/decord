@@ -1,17 +1,18 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 10080
+// Function ID: 10081
 // Name: ReadStateUtils
-// Dependencies: [4771, 4937, 4938, 504, 2]
-// Exports: getHasImportantUnread, useHasImportantUnread
+// Dependencies: [4773, 4939, 4940, 558, 568, 504, 2]
+// Exports: getHasImportantUnread
 
-// Module 10101 (ReadStateUtils)
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+// Module 10080 (ReadStateUtils)
+import ReadStateStore from "ReadStateStore" /* 4773 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const UnreadSetting = fn(4938).UnreadSetting;
+const UnreadSetting = fn(4940).UnreadSetting;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");
 
@@ -22,7 +23,33 @@ export const getHasImportantUnread = function getHasImportantUnread(channel) {
   }
   return hasUnreadResult;
 };
-export const useHasImportantUnread = function useHasImportantUnread(arg0) {
+export const useHasImportantUnread = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore, UserGuildSettingsStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let hasUnreadResult = ReadStateStore.hasUnread(id.id);
+      if (hasUnreadResult) {
+        hasUnreadResult = UserGuildSettingsStore.resolveUnreadSetting(id) === UnreadSetting.ALL_MESSAGES;
+      }
+      return hasUnreadResult;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp7);
+}) : ((arg0) => {
   _require = arg0;
   const items = [ReadStateStore, UserGuildSettingsStore];
   return require("initialize").useStateFromStores(items, () => {
@@ -32,4 +59,4 @@ export const useHasImportantUnread = function useHasImportantUnread(arg0) {
     }
     return hasUnreadResult;
   });
-};
+});

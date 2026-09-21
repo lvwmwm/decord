@@ -1,14 +1,14 @@
 // Module ID: 16383
 // Function ID: 16384
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 2041, 1074, 4749, 11132, 4769, 4453, 1115, 12518, 7698, 10003, 2]
+// Dependencies: [5, 2045, 1078, 4751, 11174, 4771, 4457, 1119, 12412, 7703, 10009, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
 // Module 16383 (AddFriendsScreenUtils)
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10003 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11132 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11174 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = fn;
 let closure_7 = async function _sendWave(arg0, value) {
@@ -22,7 +22,7 @@ let closure_7 = async function _sendWave(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -50,7 +50,7 @@ let closure_7 = async function _sendWave(arg0, value) {
           let dMFromUserId;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp8) {
@@ -142,8 +142,8 @@ let closure_7 = async function _sendWave(arg0, value) {
     }
   }
 };
-const AnalyticsSections = fn(1074).AnalyticsSections;
-const MessageSendLocation = fn(4749).MessageSendLocation;
+const AnalyticsSections = fn(1078).AnalyticsSections;
+const MessageSendLocation = fn(4751).MessageSendLocation;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx");
 
@@ -166,6 +166,6 @@ export const sendWave = function sendWave() {
   return applyArgumentsResult;
 };
 export const addContactSuggestion = function addContactSuggestion(user) {
-  const obj2 = { userId: user.id, context: { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL }, type: "HermesInternal", fromFriendSuggestion: null };
+  const obj2 = { userId: user.id, context: { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL }, type: "IconComponent", fromFriendSuggestion: null };
   RelationshipActionCreatorsDefault.addRelationship(obj2);
 };

@@ -1,22 +1,22 @@
-// Module ID: 7966
-// Function ID: 7967
+// Module ID: 7971
+// Function ID: 7972
 // Name: captureAdUserAction
-// Dependencies: [5, 7939, 1074, 5668, 7954, 7935, 7964, 7967, 1241, 1255, 1364, 7913, 7968, 7971, 7945, 7976, 2]
+// Dependencies: [5, 7944, 1078, 5670, 7959, 7940, 7969, 7972, 1245, 1259, 1368, 7918, 7973, 7976, 7950, 7981, 2]
 // Exports: captureAdUserAction
 
-// Module 7966 (captureAdUserAction)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AdCreativeType from "AdCreativeType" /* 5668 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7913 */;
-import getQuestLogger from "getQuestLogger" /* 7945 */;
-import AnalyticsActions from "AnalyticsActions" /* 7954 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 7968 */;
-import AdDataUtils from "AdDataUtils" /* 7971 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7976 */;
+// Module 7971 (captureAdUserAction)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import AdCreativeType from "AdCreativeType" /* 5670 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7918 */;
+import getQuestLogger from "getQuestLogger" /* 7950 */;
+import AnalyticsActions from "AnalyticsActions" /* 7959 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 7973 */;
+import AdDataUtils from "AdDataUtils" /* 7976 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7981 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import QuestStore from "QuestStore" /* 7939 */;
+import QuestStore from "QuestStore" /* 7944 */;
 
 require = fn;
 function emitClickEventWithCreative() {
@@ -40,7 +40,7 @@ let closure_7 = async function _emitClickEventWithCreative(arg0, value) {
       const obj5 = { value, done: true };
       return obj5;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -165,7 +165,7 @@ let closure_8 = async function _handleClickInternalAction(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -191,8 +191,8 @@ let closure_8 = async function _handleClickInternalAction(arg0) {
             const obj5 = { cta_name: questContentCTA, click_id: null, is_targeted: null, content_id: null, content_name: null, content_position: null, row_index: null, ad_content_id: null, quest_id: null };
             click_id = clickId;
             if (clickId == null) {
-              click_id = tmp16(1255).v4();
-              const tmp16Result = tmp16(1255);
+              click_id = tmp16(1259).v4();
+              const tmp16Result = tmp16(1259);
             }
             obj5.click_id = click_id;
             const isTargeted = tmp14.isTargeted;
@@ -214,7 +214,7 @@ let closure_8 = async function _handleClickInternalAction(arg0) {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c3 = tmp;
         throw tmp9;
@@ -233,7 +233,7 @@ let closure_9 = async function _handleClickExternalAdvertiserCtaAction(arg0, val
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -261,7 +261,7 @@ let closure_9 = async function _handleClickExternalAdvertiserCtaAction(arg0, val
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp7) {
       c1 = tmp;
@@ -305,21 +305,21 @@ function handleViewImpression(minViewTimeSeconds) {
     const obj7 = {};
     const merged3 = Object.assign(obj);
     obj6.properties = obj7;
-    tmp9(7954).trackAdContentEvent(obj6);
-    const tmp9Result = tmp9(7954);
+    tmp9(7959).trackAdContentEvent(obj6);
+    const tmp9Result = tmp9(7959);
   } else {
     const adCreativeId = minViewTimeSeconds.adCreativeId;
     const obj8 = { event: AnalyticEvents.QUEST_CONTENT_VIEWED, questId: adCreativeId, trackGuildAndChannelMetadata, shouldExtendSession, sourceQuestContent, properties: null };
     const obj10 = {};
     const merged4 = Object.assign(obj);
-    const tmp9Result5 = tmp9(7954);
-    let adMetadataSealed = tmp9(7935).getAdMetadataSealed(sourceQuestContent, adCreativeId);
+    const tmp9Result5 = tmp9(7959);
+    let adMetadataSealed = tmp9(7940).getAdMetadataSealed(sourceQuestContent, adCreativeId);
     if (adMetadataSealed == null) {
       adMetadataSealed = null;
     }
     obj10.metadata_sealed = adMetadataSealed;
-    const tmp9Result6 = tmp9(7935);
-    const currentQuestHomeSearchSession = tmp9(7967).getCurrentQuestHomeSearchSession();
+    const tmp9Result6 = tmp9(7940);
+    const currentQuestHomeSearchSession = tmp9(7972).getCurrentQuestHomeSearchSession();
     let uuid;
     if (currentQuestHomeSearchSession != null) {
       uuid = currentQuestHomeSearchSession.uuid;
@@ -328,15 +328,15 @@ function handleViewImpression(minViewTimeSeconds) {
       uuid = null;
     }
     obj10.search_session_id = uuid;
-    const tmp9Result7 = tmp9(7967);
-    let adTrafficMetadataSealed = tmp9(7935).getAdTrafficMetadataSealed(sourceQuestContent, adCreativeId);
+    const tmp9Result7 = tmp9(7972);
+    let adTrafficMetadataSealed = tmp9(7940).getAdTrafficMetadataSealed(sourceQuestContent, adCreativeId);
     if (adTrafficMetadataSealed == null) {
       adTrafficMetadataSealed = null;
     }
     obj10.traffic_metadata_sealed = adTrafficMetadataSealed;
     obj8.properties = obj10;
     tmp9Result5.trackQuestEvent(obj8);
-    const tmp9Result8 = tmp9(7935);
+    const tmp9Result8 = tmp9(7940);
   }
 }
 let closure_11 = async function _handleViewInternalSurfaceImpressionAction(arg0) {
@@ -354,7 +354,7 @@ let closure_11 = async function _handleViewInternalSurfaceImpressionAction(arg0)
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -432,7 +432,7 @@ function reportCaptureAdUserActionError(arg0) {
   const questLogger = getQuestLogger.getQuestLogger();
   questLogger.error("captureAdUserAction failed to report an ad user action", arg0);
 }
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/ads/analytics/captureAdUserAction.tsx");
 
@@ -482,7 +482,7 @@ export const captureAdUserAction = function captureAdUserAction(captureAdUserAct
           const tmp2Result10 = tmp2(tmp3[6]);
         }
       })(captureAdUserActionResult1);
-    } else if (tmp2(7976).AdUserActionType.CLICK_INTERNAL === type) {
+    } else if (tmp2(7981).AdUserActionType.CLICK_INTERNAL === type) {
       (function handleClickInternalAction() {
         const self = this;
         const apply = closure_1_8.apply;
@@ -503,7 +503,7 @@ export const captureAdUserAction = function captureAdUserAction(captureAdUserAct
         }
         return applyArgumentsResult;
       })(captureAdUserActionResult1);
-    } else if (tmp2(7976).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA === type) {
+    } else if (tmp2(7981).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA === type) {
       (function handleClickExternalAdvertiserCtaAction() {
         const self = this;
         const apply = closure_1_9.apply;
@@ -524,7 +524,7 @@ export const captureAdUserAction = function captureAdUserAction(captureAdUserAct
         }
         return applyArgumentsResult;
       })(captureAdUserActionResult1);
-    } else if (tmp2(7976).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION === type) {
+    } else if (tmp2(7981).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION === type) {
       (function handleViewInternalSurfaceImpressionAction() {
         const self = this;
         const apply = closure_1_11.apply;
@@ -545,7 +545,7 @@ export const captureAdUserAction = function captureAdUserAction(captureAdUserAct
         }
         return applyArgumentsResult;
       })(captureAdUserActionResult1);
-    } else if (tmp2(7976).AdUserActionType.VIEW_EXTERNAL_PAID_AD_PLACEMENT_IMPRESSION === type) {
+    } else if (tmp2(7981).AdUserActionType.VIEW_EXTERNAL_PAID_AD_PLACEMENT_IMPRESSION === type) {
       handleViewImpression(captureAdUserActionResult1);
     }
   } catch (tmp13) {

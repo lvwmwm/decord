@@ -1,29 +1,29 @@
-// Module ID: 11954
-// Function ID: 11955
+// Module ID: 11826
+// Function ID: 11827
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 1364, 9418, 8879, 1115, 5339, 9037, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 1368, 558, 568, 9416, 1119, 8884, 9035, 5341, 2]
 
-// Module 11954 (ShareChatInput)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5339 */;
-import ReactionIcon from "ReactionIcon" /* 9037 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9418 */;
+// Module 11826 (ShareChatInput)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Pressables from "Pressables" /* 5341 */;
+import ReactionIcon from "ReactionIcon" /* 9035 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9416 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const FormInputDefault = tmp2(8879);
+const FormInputDefault = tmp6(8884);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { flex: 1, flexDirection: "row", backgroundColor: nativeDefault.colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: nativeDefault.space.PX_12 }, chatInput: null, chatText: null, inputPlaceholder: null, emojiButton: null, focused: null };
 let obj3 = { flex: 1, flexDirection: "row", backgroundColor: nativeDefault.colors.SHARE_CHAT_INPUT_BACKGROUND, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_BORDER_RADIUS, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_PILL_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, paddingHorizontal: nativeDefault.space.PX_12 };
 obj2.chatInput = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 80 };
-const obj5 = { fontSize: 16, lineHeight: 20, fontFamily: fn(1074).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_STRONG, paddingTop: null, paddingBottom: null };
-const PlatformUtils = fn(1364);
+const obj5 = { fontSize: 16, lineHeight: 20, fontFamily: fn(1078).Fonts.PRIMARY_NORMAL, color: nativeDefault.colors.TEXT_STRONG, paddingTop: null, paddingBottom: null };
+const PlatformUtils = fn(1368);
 let num = 2;
 if (PlatformUtils.isAndroid()) {
   num = 0;
@@ -31,17 +31,146 @@ if (PlatformUtils.isAndroid()) {
 obj5.paddingTop = nativeDefault.space.PX_8 + num;
 obj5.paddingBottom = nativeDefault.space.PX_8;
 obj2.chatText = obj5;
-const obj4 = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 80 };
+let obj4 = { flex: 1, paddingVertical: 0, paddingHorizontal: nativeDefault.space.PX_4, maxHeight: 80 };
 obj2.inputPlaceholder = { color: nativeDefault.colors.TEXT_MUTED };
 const obj7 = { color: nativeDefault.colors.TEXT_MUTED };
 obj2.emojiButton = { paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, alignSelf: "flex-end" };
 const obj8 = { paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, alignSelf: "flex-end" };
 obj2.focused = { borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+const obj9 = { borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/share/native/ShareChatInput.tsx");
 
-export default function ShareChatInput(onFocus) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((onBlur) => {
+  const cResult = c.c(32);
+  ({ text, inputRef, onChange, onSelectionChange, onFocus } = onBlur);
+  onBlur = onBlur.onBlur;
+  ({ onPressEmoji, onSend, disabled } = onBlur);
+  const tmp5 = closure_8();
+  const tmp7 = useMessageMaxLengthDefault();
+  const tmp4 = undefined !== disabled && disabled;
+  [tmp9, dependencyMap] = noop.useState(false);
+  if (cResult[0] !== onFocus) {
+    const fn = function c() {
+      dependencyMap(true);
+      onFocus();
+    };
+    cResult[0] = onFocus;
+    cResult[1] = fn;
+    let tmp10 = fn;
+  } else {
+    tmp10 = cResult[1];
+  }
+  if (cResult[2] !== onBlur) {
+    class L {
+      constructor() {
+        tmp = closure_2(false);
+        tmp2 = onBlur();
+        return;
+      }
+    }
+    cResult[2] = onBlur;
+    cResult[3] = L;
+  } else {
+    class L {
+      constructor() {
+        tmp = closure_2(false);
+        tmp2 = onBlur();
+        return;
+      }
+    }
+  }
+  if (tmp9) {
+    class L {
+      constructor() {
+        tmp = closure_2(false);
+        tmp2 = onBlur();
+        return;
+      }
+    }
+  }
+  if (cResult[4] === tmp5.container) {
+    class L {
+      constructor() {
+        tmp = closure_2(false);
+        tmp2 = onBlur();
+        return;
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor() {
+          tmp = closure_2(false);
+          tmp2 = onBlur();
+          return;
+        }
+      }
+      const stringResult = obj2.string(tmp(1119).t.ZroO3G);
+      cResult[7] = stringResult;
+      const tmp13 = stringResult;
+    } else {
+      class L {
+        constructor() {
+          tmp = closure_2(false);
+          tmp2 = onBlur();
+          return;
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor() {
+          tmp = closure_2(false);
+          tmp2 = onBlur();
+          return;
+        }
+      }
+      const stringResult1 = obj3.string(tmp(1119).t["/+MXmw"]);
+      cResult[8] = stringResult1;
+      const tmp15 = stringResult1;
+    } else {
+      class L {
+        constructor() {
+          tmp = closure_2(false);
+          tmp2 = onBlur();
+          return;
+        }
+      }
+    }
+    if (cResult[9] === tmp11) {
+      class L {
+        constructor() {
+          tmp = closure_2(false);
+          tmp2 = onBlur();
+          return;
+        }
+      }
+    }
+    const obj4 = { ref: inputRef, maxLength: tmp7, placeholder: tmp13, placeholderTextColor: tmp5.inputPlaceholder.color, accessibilityLabel: tmp15, onSubmitEditing: onSend, onSelectionChange, style: tmp5.chatInput, value: text, onChange, onFocus: tmp10, onBlur: tmp11, multiline: true, showBorder: false, showTopContainer: false, textAlignVertical: "center", inputTextStyle: tmp5.chatText, editable: !tmp4 };
+    const tmp20 = timestampProducer(FormInputDefault, obj4);
+    cResult[9] = tmp11;
+    cResult[10] = tmp10;
+    cResult[11] = inputRef;
+    cResult[12] = tmp7;
+    cResult[13] = onChange;
+    cResult[14] = onSelectionChange;
+    cResult[15] = onSend;
+    cResult[16] = tmp5.chatInput;
+    cResult[17] = tmp5.chatText;
+    cResult[18] = tmp5.inputPlaceholder.color;
+    cResult[19] = !tmp4;
+    cResult[20] = text;
+    cResult[21] = tmp20;
+  }
+  const items = [tmp5.container, tmp9];
+  cResult[4] = tmp5.container;
+  cResult[5] = tmp9;
+  cResult[6] = items;
+}) : ((onFocus) => {
   onFocus = onFocus.onFocus;
   const onBlur = onFocus.onBlur;
   let flag = onFocus.disabled;
@@ -98,4 +227,4 @@ export default function ShareChatInput(onFocus) {
   items3[1] = timestampProducer(Pressables.PressableOpacity, obj3);
   obj.children = items3;
   return tmp8(tmp9, obj);
-};
+});

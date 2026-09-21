@@ -1,22 +1,22 @@
-// Module ID: 14012
-// Function ID: 14013
+// Module ID: 14015
+// Function ID: 14016
 // Name: ActivityTrackingStore
-// Dependencies: [1999, 1220, 502, 2015, 7639, 4779, 2095, 1074, 1091, 510, 7641, 11729, 2036, 4885, 504, 573, 2]
+// Dependencies: [2003, 1224, 502, 2019, 7641, 4781, 2099, 1078, 1095, 510, 7643, 11598, 2040, 4887, 504, 577, 2]
 
-// Module 14012 (ActivityTrackingStore)
+// Module 14015 (ActivityTrackingStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4885 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11729 */;
-import RunningGameStore from "RunningGameStore" /* 1999 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4887 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11598 */;
+import RunningGameStore from "RunningGameStore" /* 2003 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DetectableGameStore from "DetectableGameStore" /* 2015 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7639 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import DetectableGameStore from "DetectableGameStore" /* 2019 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7641 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
 function stopActivity(applicationId, flag) {
@@ -72,7 +72,7 @@ function updateActivity(applicationId) {
   ActivitiesActionCreatorsDefault.updateActivity(obj3);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const interval = new tmp3(2036).Interval();
+    const interval = new tmp3(2040).Interval();
     tmp11[applicationId.applicationId] = interval;
     interval.start(closure_12, () => {
       updateActivity(closure_0);
@@ -133,7 +133,7 @@ function handleLogout() {
   }
   c16 = false;
 }
-const Distributors = fn(1074).Distributors;
+const Distributors = fn(1078).Distributors;
 const ActivityTrackingStore = "ActivityTrackingStore";
 let closure_12 = 30 * DurationsDefault.Millis.MINUTE;
 let closure_13 = 5 * DurationsDefault.Millis.MINUTE;

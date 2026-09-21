@@ -1,19 +1,19 @@
-// Module ID: 17527
-// Function ID: 17528
+// Module ID: 17510
+// Function ID: 17511
 // Name: useSoundOrganizer
 // Dependencies: [11, 2]
 // Exports: useSoundOrganizer
 
-// Module 17527 (useSoundOrganizer)
+// Module 17510 (useSoundOrganizer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
-function sortSoundsOldestToNewestCreationDate(value7) {
+function sortSoundsOldestToNewestCreationDate(value5) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
   }
-  const items = [...value7];
+  const items = [...value5];
   const sorted = items.sort((soundId, soundId2) => SnowflakeUtilsDefault.compare(soundId.soundId, soundId2.soundId));
   let sorted1 = sorted;
   if (flag) {

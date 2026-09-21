@@ -1,35 +1,112 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15177
+// Function ID: 15178
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 4752, 1115, 2482, 2]
-// Exports: default
+// Dependencies: [21, 558, 568, 4754, 1119, 2486, 2]
 
-// Module 15188 (useScheduleTimeControlsRowProps)
+// Module 15177 (useScheduleTimeControlsRowProps)
 import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import Text_Text from "Text/Text" /* 4752 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");
 
-export default function useScheduleTimeControlsRowProps(arr) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  const cResult = c.c(13);
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "r" };
+    const _Symbol2 = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { subLabel: null, trailing: "Array" };
+      const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
+      const intl3 = tmp(1119).intl;
+      obj3.children = intl3.string(_modDef2486.fOBIZH);
+      obj2.subLabel = jsx(tmp(4754).Text, { variant: "text-xs/medium", color: "text-muted", children: null });
+      cResult[0] = obj2;
+      let first = obj2;
+    } else {
+      first = cResult[0];
+    }
+    return first;
+  } else if (cResult[1] !== arr) {
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function s(enabled) {
+        return enabled.enabled;
+      };
+      cResult[3] = fn;
+      let tmp6 = fn;
+    } else {
+      tmp6 = cResult[3];
+    }
+    const someResult = arr.some(tmp6);
+    cResult[1] = arr;
+    cResult[2] = someResult;
+  } else {
+    if (cResult[4] !== arr.length) {
+      const intl = tmp(1119).intl;
+      const obj4 = { count: arr.length };
+      const formatToPlainStringResult = intl.formatToPlainString(_modDef2486.XfwcpX, obj4);
+      cResult[4] = arr.length;
+      cResult[5] = formatToPlainStringResult;
+      let tmp9 = formatToPlainStringResult;
+    } else {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] !== cResult[2]) {
+      const intl2 = tmp(1119).intl;
+      const string = intl2.string;
+      let v8vDHRq = _modDef2486;
+      if (tmp4) {
+        v8vDHRq = v8vDHRq["8vDHRq"];
+        let stringResult = string(v8vDHRq);
+      } else {
+        stringResult = string(v8vDHRq["4z9fN+"]);
+      }
+      cResult[6] = tmp4;
+      cResult[7] = stringResult;
+    } else {
+      if (cResult[8] !== cResult[7]) {
+        const obj5 = { variant: "text-sm/medium", color: "text-muted", children: tmp12 };
+        const tmp19 = jsx(tmp(4754).Text, { variant: "text-sm/medium", color: "text-muted", children: tmp12 });
+        cResult[8] = tmp12;
+        cResult[9] = tmp19;
+        let tmp17 = tmp19;
+      } else {
+        tmp17 = cResult[9];
+      }
+      if (cResult[10] === tmp9) {
+        if (cResult[11] === tmp17) {
+          let tmp20 = cResult[12];
+        }
+        return tmp20;
+      }
+      const obj6 = { subLabel: tmp9, trailing: tmp17 };
+      cResult[10] = tmp9;
+      cResult[11] = tmp17;
+      cResult[12] = obj6;
+      tmp20 = obj6;
+    }
+  }
+}) : ((arr) => {
+  if (0 === arr.length) {
+    const obj2 = { subLabel: null, trailing: "Array" };
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = util.intl;
-    obj3.children = intl.string(_modDef2482.fOBIZH);
+    obj3.children = intl.string(_modDef2486.fOBIZH);
     obj2.subLabel = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: null });
     return obj2;
   } else {
     const obj4 = { subLabel: null, trailing: null };
     const intl2 = util.intl;
     const obj5 = { count: arr.length };
-    obj4.subLabel = intl2.formatToPlainString(_modDef2482.XfwcpX, obj5);
+    obj4.subLabel = intl2.formatToPlainString(_modDef2486.XfwcpX, obj5);
     const intl3 = util.intl;
     const string = intl3.string;
-    const tmp11 = _modDef2482;
+    const tmp11 = _modDef2486;
     if (someResult) {
       let stringResult = string(tmp11["8vDHRq"]);
     } else {
@@ -39,4 +116,4 @@ export default function useScheduleTimeControlsRowProps(arr) {
     obj4.trailing = jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: stringResult });
     return obj4;
   }
-};
+});

@@ -1,24 +1,155 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16913
+// Function ID: 16914
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5676, 2041, 2105, 2063, 4395, 4943, 4944, 1074, 1375, 4382, 21, 4756, 576, 504, 4909, 1397, 12538, 5804, 4409, 4752, 1177, 12058, 5339, 1115, 12543, 16912, 1385, 16913, 2]
-// Exports: default
+// Dependencies: [19, 17, 5678, 2045, 2109, 2067, 4399, 4945, 4946, 1078, 1379, 4386, 21, 4758, 580, 558, 568, 504, 4911, 1401, 12432, 5802, 4413, 4754, 1181, 11934, 1119, 12437, 16914, 5341, 1389, 16915, 2]
 
-// Module 16911 (GuildOnboardingNewMemberActions)
-import nativeDefault from "native" /* 576 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12538 */;
+// Module 16913 (GuildOnboardingNewMemberActions)
+import nativeDefault from "native" /* 580 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12432 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4943 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4944 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4946 */;
 
 require = fn;
-function MemberActionRow(channelId) {
+const View = fn(17).View;
+const Permissions = fn(1078).Permissions;
+const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
+const GuildMemberFlags = fn(4386).GuildMemberFlags;
+const jsxProd = fn(21);
+({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { display: "flex", marginBottom: 16 }, actionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "center" }, channelNameContainer: { flex: 1, marginHorizontal: 8 }, icon: null, emoji: null, textEmoji: null, emojiPlaceholder: null };
+let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.xs };
+obj2.icon = size;
+obj2.emoji = { width: 40, height: 40 };
+obj2.textEmoji = { width: 40, textAlign: "center" };
+const size1 = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center" };
+obj2.emojiPlaceholder = size1;
+let closure_17 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const cResult = channelId(stateFromStores[16]).c(49);
+  channelId = channelId.channelId;
+  ({ title, emoji, icon } = channelId);
+  closure_17();
+  if (emoji == null) {
+    emoji = {};
+  }
+  const id = emoji.id;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channelId) {
+    const fn = function s() {
+      return ChannelStore.getChannel(channelId);
+    };
+    cResult[1] = channelId;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  let obj = channelId(stateFromStores[16]);
+  stateFromStores = channelId(stateFromStores[17]).useStateFromStores(first, tmp7);
+  id(stateFromStores[18])(stateFromStores, true);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [PermissionStore];
+    cResult[3] = items1;
+    let tmp11 = items1;
+  } else {
+    tmp11 = cResult[3];
+  }
+  if (cResult[4] !== stateFromStores) {
+    const fn2 = function z() {
+      return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
+    };
+    cResult[4] = stateFromStores;
+    cResult[5] = fn2;
+    let tmp13 = fn2;
+  } else {
+    tmp13 = cResult[5];
+  }
+  const tmp9 = id;
+  const tmpResult = channelId(stateFromStores[17]);
+  const stateFromStores1 = channelId(stateFromStores[17]).useStateFromStores(tmp11, tmp13);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [EmojiStore];
+    cResult[6] = items2;
+    let tmp15 = items2;
+  } else {
+    tmp15 = cResult[6];
+  }
+  const tmpResult3 = channelId(stateFromStores[17]);
+  const items3 = [id];
+  const stateFromStores2 = channelId(stateFromStores[17]).useStateFromStores(tmp15, () => {
+    let customEmojiById = null;
+    if (null != id) {
+      customEmojiById = EmojiStore.getCustomEmojiById(tmp);
+    }
+    return customEmojiById;
+  }, items3);
+  if (cResult[7] === channelId) {
+    if (cResult[10] !== stateFromStores) {
+      class H {
+        constructor() {
+          tmp = closure_2;
+          if (null != closure_2) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[20]);
+            newMemberActionChannel = obj.selectNewMemberActionChannel(tmp.guild_id, tmp.id);
+          }
+          return;
+        }
+      }
+      cResult[10] = stateFromStores;
+      cResult[11] = H;
+    } else {
+      class H {
+        constructor() {
+          tmp = closure_2;
+          if (null != closure_2) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[20]);
+            newMemberActionChannel = obj.selectNewMemberActionChannel(tmp.guild_id, tmp.id);
+          }
+          return;
+        }
+      }
+    }
+    if (null != stateFromStores) {
+      class H {
+        constructor() {
+          tmp = closure_2;
+          if (null != closure_2) {
+            tmp2 = closure_0;
+            tmp3 = closure_2;
+            obj = closure_0(closure_2[20]);
+            newMemberActionChannel = obj.selectNewMemberActionChannel(tmp.guild_id, tmp.id);
+          }
+          return;
+        }
+      }
+    }
+    return null;
+  }
+  const tmpResult4 = channelId(stateFromStores[17]);
+  const newMemberActionIconURL = tmp9(stateFromStores[19]).getNewMemberActionIconURL({ channelId, icon });
+  cResult[7] = channelId;
+  cResult[8] = icon;
+  cResult[9] = newMemberActionIconURL;
+}) : ((channelId) => {
   channelId = channelId.channelId;
   let emoji = channelId.emoji;
   let id;
@@ -31,23 +162,23 @@ function MemberActionRow(channelId) {
   id = emoji.id;
   const name = emoji.name;
   const items = [ChannelStore];
-  stateFromStores = channelId(stateFromStores[15]).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj2 = channelId(stateFromStores[15]);
-  const tmp6 = id(stateFromStores[16])(stateFromStores, true);
+  stateFromStores = channelId(stateFromStores[17]).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
+  const obj2 = channelId(stateFromStores[17]);
+  const tmp6 = id(stateFromStores[18])(stateFromStores, true);
   const items1 = [PermissionStore];
-  const stateFromStores1 = channelId(stateFromStores[15]).useStateFromStores(items1, () => PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores));
-  const obj3 = channelId(stateFromStores[15]);
+  const stateFromStores1 = channelId(stateFromStores[17]).useStateFromStores(items1, () => PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores));
+  const obj3 = channelId(stateFromStores[17]);
   const items2 = [EmojiStore];
   const items3 = [id];
-  const stateFromStores2 = channelId(stateFromStores[15]).useStateFromStores(items2, () => {
+  const stateFromStores2 = channelId(stateFromStores[17]).useStateFromStores(items2, () => {
     let customEmojiById = null;
     if (null != id) {
       customEmojiById = EmojiStore.getCustomEmojiById(tmp);
     }
     return customEmojiById;
   }, items3);
-  const obj4 = channelId(stateFromStores[15]);
-  const newMemberActionIconURL = id(stateFromStores[17]).getNewMemberActionIconURL({ channelId, icon });
+  const obj4 = channelId(stateFromStores[17]);
+  const newMemberActionIconURL = id(stateFromStores[19]).getNewMemberActionIconURL({ channelId, icon });
   [][0] = stateFromStores;
   let tmp11 = null;
   if (null != stateFromStores) {
@@ -57,33 +188,33 @@ function MemberActionRow(channelId) {
         let obj = { style: tmp.icon, source: null, resizeMode: "contain" };
         const obj6 = { uri: newMemberActionIconURL };
         obj.source = obj6;
-        let tmp14 = closure_15(tmp5(tmp3[19]), obj);
+        let tmp14 = closure_15(tmp5(tmp3[21]), obj);
         let tmp15 = closure_15;
       } else if (null != stateFromStores2) {
         const obj7 = { style: tmp.emoji, source: null, resizeMode: "contain" };
         const obj8 = { uri: null };
-        const tmp5Result = tmp5(tmp3[19]);
+        const tmp5Result = tmp5(tmp3[21]);
         const obj9 = { id: null, animated: null, size: null };
         ({ id: obj14.id, animated: obj14.animated } = stateFromStores2);
         obj9.size = EMOJI_URL_BASE_SIZE;
-        obj8.uri = tmp5(tmp3[17]).getEmojiURL(obj9);
+        obj8.uri = tmp5(tmp3[19]).getEmojiURL(obj9);
         obj7.source = obj8;
         tmp14 = closure_15(tmp5Result, obj7);
         tmp15 = closure_15;
-        const tmp5Result4 = tmp5(tmp3[17]);
+        const tmp5Result4 = tmp5(tmp3[19]);
       } else {
         if (null != name) {
-          const tmp5Result5 = tmp5(tmp3[20]);
+          const tmp5Result5 = tmp5(tmp3[22]);
           if (null != tmp5Result5.getByName(tmp5Result6.convertSurrogateToName(name, false))) {
             const obj10 = { style: tmp.textEmoji, variant: "heading-xxl/normal", children: name };
-            tmp14 = closure_15(tmp2(tmp3[21]).Text, obj10);
+            tmp14 = closure_15(tmp2(tmp3[23]).Text, obj10);
             tmp15 = closure_15;
           }
-          tmp5Result6 = tmp5(tmp3[20]);
+          tmp5Result6 = tmp5(tmp3[22]);
         }
         const obj11 = { style: tmp.emojiPlaceholder, children: null };
-        const obj12 = { size: tmp2(tmp3[22]).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(tmp3[23]) };
-        obj11.children = closure_15(tmp2(tmp3[22]).Icon, obj12);
+        const obj12 = { size: tmp2(tmp3[24]).Icon.Sizes.REFRESH_SMALL_16, source: tmp5(tmp3[25]) };
+        obj11.children = closure_15(tmp2(tmp3[24]).Icon, obj12);
         tmp14 = closure_15(View, obj11);
         tmp15 = closure_15;
       }
@@ -91,57 +222,177 @@ function MemberActionRow(channelId) {
       const items4 = [tmp14, , ];
       const obj15 = { style: tmp.channelNameContainer, children: null };
       const obj16 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title };
-      const items5 = [tmp15(tmp2(tmp3[21]).Text, obj16), ];
+      const items5 = [tmp15(tmp2(tmp3[23]).Text, obj16), ];
       const obj17 = { variant: "text-xs/normal", color: "text-muted", children: null };
-      const intl = tmp2(tmp3[25]).intl;
+      const intl = tmp2(tmp3[26]).intl;
       const obj18 = { channelName: tmp6 };
-      obj17.children = intl.format(tmp2(tmp3[25]).t.MkzlDL, obj18);
-      items5[1] = tmp15(tmp2(tmp3[21]).Text, obj17);
+      obj17.children = intl.format(tmp2(tmp3[26]).t.MkzlDL, obj18);
+      items5[1] = tmp15(tmp2(tmp3[23]).Text, obj17);
       obj15.children = items5;
       items4[1] = closure_16(View, obj15);
-      const obj19 = { disableColor: true, size: tmp2(tmp3[22]).Icon.Sizes.MEDIUM, source: tmp5(completed ? tmp3[26] : tmp3[27]) };
-      tmp15 = tmp15(tmp2(tmp3[22]).Icon, obj19);
+      const obj19 = { disableColor: true, size: tmp2(tmp3[24]).Icon.Sizes.MEDIUM, source: tmp5(completed ? tmp3[27] : tmp3[28]) };
+      tmp15 = tmp15(tmp2(tmp3[24]).Icon, obj19);
       items4[2] = tmp15;
       obj13.children = items4;
-      closure_16(tmp2(tmp3[24]).PressableOpacity, obj13);
+      closure_16(tmp2(tmp3[29]).PressableOpacity, obj13);
     }
   }
   return tmp11;
-}
-const View = fn(17).View;
-const Permissions = fn(1074).Permissions;
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
-const GuildMemberFlags = fn(4382).GuildMemberFlags;
-const jsxProd = fn(21);
-({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { display: "flex", marginBottom: 16 }, actionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "center" }, channelNameContainer: { flex: 1, marginHorizontal: 8 }, icon: null, emoji: null, textEmoji: null, emojiPlaceholder: null };
-let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.xs };
-obj2.icon = size;
-obj2.emoji = { width: 40, height: 40 };
-obj2.textEmoji = { width: 40, textAlign: "center" };
-const size1 = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center" };
-obj2.emojiPlaceholder = size1;
-let closure_17 = createStyles.createStyles(obj2);
+});
+ReactCompilerGating = fn(558);
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "center" };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/GuildOnboardingNewMemberActions.tsx");
 
-export default function GuildOnboardingNewMemberActions(guildId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = guildId(stateFromStores2[16]).c(42);
+  guildId = guildId.guildId;
+  closure_17();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildOnboardingHomeSettingsStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== guildId) {
+    const fn = function h() {
+      return GuildOnboardingHomeSettingsStore.getNewMemberActions(guildId);
+    };
+    const items1 = [guildId];
+    cResult[1] = guildId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp8 = items1;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  let obj = guildId(stateFromStores2[16]);
+  const stateFromStores = guildId(stateFromStores2[17]).useStateFromStores(first, tmp7, tmp8);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [GuildOnboardingMemberActionStore];
+    cResult[4] = items2;
+    let tmp10 = items2;
+  } else {
+    tmp10 = cResult[4];
+  }
+  if (cResult[5] !== guildId) {
+    const fn2 = function j() {
+      return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+    };
+    cResult[5] = guildId;
+    cResult[6] = fn2;
+    let tmp12 = fn2;
+  } else {
+    tmp12 = cResult[6];
+  }
+  const tmpResult = guildId(stateFromStores2[17]);
+  const stateFromStores1 = guildId(stateFromStores2[17]).useStateFromStores(tmp10, tmp12);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const items3 = [GuildMemberStore];
+    cResult[7] = items3;
+    let tmp14 = items3;
+  } else {
+    tmp14 = cResult[7];
+  }
+  if (cResult[8] !== guildId) {
+    const fn3 = function p() {
+      return GuildMemberStore.getSelfMember(guildId);
+    };
+    cResult[8] = guildId;
+    cResult[9] = fn3;
+    let tmp16 = fn3;
+  } else {
+    tmp16 = cResult[9];
+  }
+  const tmpResult4 = guildId(stateFromStores2[17]);
+  stateFromStores2 = guildId(stateFromStores2[17]).useStateFromStores(tmp14, tmp16);
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    const items4 = [GuildStore];
+    cResult[10] = items4;
+    let tmp18 = items4;
+  } else {
+    tmp18 = cResult[10];
+  }
+  if (cResult[11] !== guildId) {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+    cResult[11] = guildId;
+    cResult[12] = R;
+    const tmp20 = R;
+  } else {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+  }
+  const tmpResult5 = guildId(stateFromStores2[17]);
+  const stateFromStores3 = guildId(stateFromStores2[17]).useStateFromStores(tmp18, tmp20);
+  if (cResult[13] === stateFromStores1) {
+    class R {
+      constructor() {
+        return closure_8.getGuild(guildId);
+      }
+    }
+  }
+  class P {
+    constructor() {
+      hasFlagResult = null == closure_1;
+      if (hasFlagResult) {
+        flags = undefined;
+        if (closure_2 != null) {
+          flags = closure_2.flags;
+        }
+        hasFlagResult = null != flags;
+      }
+      if (hasFlagResult) {
+        tmp3 = closure_0;
+        tmp4 = closure_2;
+        obj = closure_0(closure_2[30]);
+        tmp5 = closure_2;
+        num = closure_2.flags;
+        if (num == null) {
+          num = 0;
+        }
+        tmp6 = GuildMemberFlags;
+        hasFlagResult = obj.hasFlag(num, GuildMemberFlags.STARTED_HOME_ACTIONS);
+      }
+      if (hasFlagResult) {
+        tmp7 = closure_0;
+        tmp8 = closure_2;
+        obj2 = closure_0(closure_2[20]);
+        tmp9 = guildId;
+        newMemberActions = obj2.fetchNewMemberActions(guildId);
+      }
+      return;
+    }
+  }
+  cResult[13] = stateFromStores1;
+  cResult[14] = guildId;
+  cResult[15] = stateFromStores2;
+  cResult[16] = P;
+}) : ((guildId) => {
   guildId = guildId.guildId;
   let stateFromStores2;
   const tmp = closure_17();
   const items = [GuildOnboardingHomeSettingsStore];
   const items1 = [guildId];
-  const stateFromStores = guildId(stateFromStores2[15]).useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getNewMemberActions(guildId), items1);
-  let obj = guildId(stateFromStores2[15]);
+  const stateFromStores = guildId(stateFromStores2[17]).useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getNewMemberActions(guildId), items1);
+  let obj = guildId(stateFromStores2[17]);
   const items2 = [GuildOnboardingMemberActionStore];
-  const stateFromStores1 = guildId(stateFromStores2[15]).useStateFromStores(items2, () => GuildOnboardingMemberActionStore.getCompletedActions(guildId));
-  let obj2 = guildId(stateFromStores2[15]);
+  const stateFromStores1 = guildId(stateFromStores2[17]).useStateFromStores(items2, () => GuildOnboardingMemberActionStore.getCompletedActions(guildId));
+  let obj2 = guildId(stateFromStores2[17]);
   const items3 = [GuildMemberStore];
-  stateFromStores2 = guildId(stateFromStores2[15]).useStateFromStores(items3, () => GuildMemberStore.getSelfMember(guildId));
-  const obj3 = guildId(stateFromStores2[15]);
+  stateFromStores2 = guildId(stateFromStores2[17]).useStateFromStores(items3, () => GuildMemberStore.getSelfMember(guildId));
+  const obj3 = guildId(stateFromStores2[17]);
   const items4 = [GuildStore];
-  const stateFromStores3 = guildId(stateFromStores2[15]).useStateFromStores(items4, () => GuildStore.getGuild(guildId));
+  const stateFromStores3 = guildId(stateFromStores2[17]).useStateFromStores(items4, () => GuildStore.getGuild(guildId));
   const items5 = [stateFromStores1, guildId, ];
   let flags;
   if (stateFromStores2 != null) {
@@ -178,9 +429,9 @@ export default function GuildOnboardingNewMemberActions(guildId) {
         const obj5 = { style: tmp.actionsContainer, children: null };
         const obj6 = { style: tmp.actionsHeader, children: null };
         const obj7 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: null };
-        const intl2 = tmp2(tmp3[25]).intl;
-        obj7.children = intl2.string(tmp2(tmp3[25]).t.LhlgY9);
-        obj6.children = closure_15(tmp2(tmp3[21]).Text, obj7);
+        const intl2 = tmp2(tmp3[26]).intl;
+        obj7.children = intl2.string(tmp2(tmp3[26]).t.LhlgY9);
+        obj6.children = closure_15(tmp2(tmp3[23]).Text, obj7);
         const items6 = [
           closure_15(View, obj6),
           stateFromStores.map((channelId) => {
@@ -193,7 +444,7 @@ export default function GuildOnboardingNewMemberActions(guildId) {
                     flag = false;
                   }
                   obj.completed = flag;
-                  return __initData(MemberActionRow, obj, "member-action-" + channelId.channelId);
+                  return closure_2_15(closure_18, obj, "member-action-" + channelId.channelId);
                 }),
 
         ];
@@ -205,17 +456,17 @@ export default function GuildOnboardingNewMemberActions(guildId) {
         if (tmp15Result) {
           const obj8 = { onPress: tmp10, style: tmp.actionContainer, children: null };
           const obj9 = { style: tmp.emojiPlaceholder, children: null };
-          const obj10 = { size: tmp2(tmp3[22]).Icon.Sizes.REFRESH_SMALL_16, source: stateFromStores1(tmp3[29]) };
-          obj9.children = tmp17(tmp2(tmp3[22]).Icon, obj10);
+          const obj10 = { size: tmp2(tmp3[24]).Icon.Sizes.REFRESH_SMALL_16, source: stateFromStores1(tmp3[31]) };
+          obj9.children = tmp17(tmp2(tmp3[24]).Icon, obj10);
           const items7 = [tmp17(tmp16, obj9), ];
           const obj11 = { style: tmp.channelNameContainer, children: null };
           const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-          const intl = tmp2(tmp3[25]).intl;
-          obj12.children = intl.string(tmp2(tmp3[25]).t["K/i3iQ"]);
-          obj11.children = tmp17(tmp2(tmp3[21]).Text, obj12);
+          const intl = tmp2(tmp3[26]).intl;
+          obj12.children = intl.string(tmp2(tmp3[26]).t["K/i3iQ"]);
+          obj11.children = tmp17(tmp2(tmp3[23]).Text, obj12);
           items7[1] = tmp17(tmp16, obj11);
           obj8.children = items7;
-          tmp15Result = tmp15(tmp2(tmp3[24]).PressableOpacity, obj8);
+          tmp15Result = tmp15(tmp2(tmp3[29]).PressableOpacity, obj8);
         }
         items6[2] = tmp15Result;
         obj5.children = items6;
@@ -224,4 +475,4 @@ export default function GuildOnboardingNewMemberActions(guildId) {
     }
   }
   return tmp15Result2;
-};
+});

@@ -1,26 +1,53 @@
-// Module ID: 9075
-// Function ID: 9076
+// Module ID: 9073
+// Function ID: 9074
 // Name: useWishlistGiftableItems
-// Dependencies: [19, 1074, 2]
-// Exports: useWishlistGiftableItems
+// Dependencies: [19, 1078, 558, 568, 2]
 
-// Module 9075 (useWishlistGiftableItems)
+// Module 9073 (useWishlistGiftableItems)
+import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 let items = [, , ];
-({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = fn(1074).SKUProductLines);
+({ COLLECTIBLES: arr[0], PREMIUM: arr[1], SOCIAL_LAYER_GAME_ITEM: arr[2] } = fn(1078).SKUProductLines);
 const set = new Set(items);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistGiftableItems.native.tsx");
 
 export const GIFTABLE_PRODUCT_LINES = set;
-export const useWishlistGiftableItems = function useWishlistGiftableItems(wishlist) {
-  noop = wishlist;
-  let items = [wishlist];
+export const useWishlistGiftableItems = ReactCompilerGating.isReactCompilerEnabled() ? ((items) => {
+  const cResult = c.c(2);
+  items = undefined;
+  if (items != null) {
+    items = items.items;
+  }
+  if (cResult[0] !== items) {
+    let found;
+    if (items != null) {
+      const items1 = items.items;
+      found = items1.filter((skuProductLine) => set.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned);
+    }
+    if (found == null) {
+      found = [];
+    }
+    let items2;
+    if (items != null) {
+      items2 = items.items;
+    }
+    cResult[0] = items2;
+    cResult[1] = found;
+    let tmp3 = found;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((arg0) => {
+  let items = [arg0];
   return noop.useMemo(() => {
     let found;
-    if (wishlist != null) {
-      const items = wishlist.items;
+    if (items != null) {
+      items = items.items;
       found = items.filter((skuProductLine) => set.has(skuProductLine.skuProductLine) && !skuProductLine.isOwned);
     }
     if (found == null) {
@@ -28,4 +55,4 @@ export const useWishlistGiftableItems = function useWishlistGiftableItems(wishli
     }
     return found;
   }, items);
-};
+});

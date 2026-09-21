@@ -1,31 +1,127 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16123
+// Function ID: 16124
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1074, 21, 7407, 9427, 10223, 8096, 10224, 10488, 5909, 1115, 5650, 10227, 5186, 2]
-// Exports: default
+// Dependencies: [19, 1078, 21, 558, 568, 7409, 10220, 8101, 9425, 10221, 5907, 1119, 10224, 5188, 10613, 5652, 2]
 
-// Module 16134 (ShopNitroUpsellPromoSheet)
-import util from "util" /* 1115 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import ButtonGroup from "ButtonGroup" /* 5650 */;
-import native from "native" /* 5909 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8096 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9427 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10223 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10224 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10227 */;
-import PromoSheet from "PromoSheet" /* 10488 */;
+// Module 16123 (ShopNitroUpsellPromoSheet)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import ButtonGroup from "ButtonGroup" /* 5652 */;
+import native from "native" /* 5907 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9425 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10220 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10221 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10224 */;
+import PromoSheet from "PromoSheet" /* 10613 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const AnalyticsPages = fn(1074).AnalyticsPages;
+const AnalyticsPages = fn(1078).AnalyticsPages;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/ShopNitroUpsellPromoSheet.tsx");
 
-export default function ShopNitroUpsellPromoSheet(analyticsLocations) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) => {
+  const cResult = c.c(16);
+  analyticsLocations = analyticsLocations.analyticsLocations;
+  if (cResult[0] !== analyticsLocations) {
+    let items = analyticsLocations;
+    if (undefined === analyticsLocations) {
+      items = [];
+    }
+    cResult[0] = analyticsLocations;
+    cResult[1] = items;
+    let tmp4 = items;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const upsellType = tmp(10220).getUpsellType(tmp(8101).EntitlementFeatureNames.SHOP_MEMBER_PRICING);
+    cResult[2] = upsellType;
+    let tmp7 = upsellType;
+    const tmpResult = tmp(10220);
+  } else {
+    tmp7 = cResult[2];
+  }
+  const tmp6 = tmp4;
+  const onViewAllPerks = PremiumUpsellUtils.usePremiumUpsellConfig(tmp7, useAnalyticsLocationsDefault(tmp4).analyticsLocations).onViewAllPerks;
+  const tmpResult2 = PremiumUpsellUtils;
+  ({ loading, onPress } = usePremiumFeatureUpsellGetNitroDefault(false, onViewAllPerks, AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING, undefined, tmp6));
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp14 = React4(tmp(5907).DiscountsMegaphoneSpotIllustration, {});
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.GZWBoL);
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t["2+/rrF"]);
+    cResult[3] = tmp14;
+    cResult[4] = stringResult;
+    cResult[5] = stringResult1;
+    let tmp12 = stringResult1;
+    let tmp11 = stringResult;
+    let tmp10 = tmp14;
+  } else {
+    tmp10 = cResult[3];
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1119).intl;
+    const stringResult2 = intl3.string(tmp(1119).t["8x0jKT"]);
+    cResult[6] = stringResult2;
+    let tmp17 = stringResult2;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === loading) {
+    if (cResult[8] === onPress) {
+      let tmp19 = cResult[9];
+    }
+    const _Symbol = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl4 = tmp(1119).intl;
+      const stringResult3 = intl4.string(tmp(1119).t.PcTCB7);
+      cResult[10] = stringResult3;
+      let tmp21 = stringResult3;
+    } else {
+      tmp21 = cResult[10];
+    }
+    if (cResult[11] !== onViewAllPerks) {
+      const obj2 = { size: "lg", variant: "secondary", text: tmp21, onPress: onViewAllPerks };
+      const tmp25 = React4(tmp(5188).Button, obj2);
+      cResult[11] = onViewAllPerks;
+      cResult[12] = tmp25;
+      let tmp23 = tmp25;
+    } else {
+      tmp23 = cResult[12];
+    }
+    if (cResult[13] === tmp23) {
+      if (cResult[14] === tmp19) {
+        let tmp26 = cResult[15];
+      }
+      return tmp26;
+    }
+    const obj3 = { illustration: tmp10, title: tmp11, description: tmp12, actions: null };
+    const obj4 = { children: null };
+    const items1 = [tmp19, tmp23];
+    obj4.children = items1;
+    obj3.actions = hasOwnProperty(tmp(5652).ButtonGroup, obj4);
+    const tmp29 = React4(tmp(10613).PromoSheet, obj3);
+    cResult[13] = tmp23;
+    cResult[14] = tmp19;
+    cResult[15] = tmp29;
+    tmp26 = tmp29;
+  }
+  const tmp20 = React4(NitroUpsellButtonDefault, { text: tmp17, loading, onPress, shiny: false });
+  cResult[7] = loading;
+  cResult[8] = onPress;
+  cResult[9] = tmp20;
+  tmp19 = tmp20;
+}) : ((analyticsLocations) => {
   analyticsLocations = analyticsLocations.analyticsLocations;
   if (analyticsLocations === undefined) {
     analyticsLocations = [];
@@ -54,4 +150,4 @@ export default function ShopNitroUpsellPromoSheet(analyticsLocations) {
   obj4.children = items;
   obj3.actions = hasOwnProperty(ButtonGroup.ButtonGroup, obj4);
   return React4(PromoSheet.PromoSheet, obj3);
-};
+});

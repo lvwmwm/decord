@@ -1,11 +1,11 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 7805
+// Function ID: 7806
 // Name: CollectiblesShopStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 7800 (CollectiblesShopStore)
+// Module 7805 (CollectiblesShopStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const items = [];
 let analyticsLocations = items;

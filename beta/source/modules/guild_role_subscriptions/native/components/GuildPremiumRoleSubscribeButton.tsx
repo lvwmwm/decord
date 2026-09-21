@@ -1,26 +1,50 @@
-// Module ID: 18225
-// Function ID: 18226
+// Module ID: 18228
+// Function ID: 18229
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4756, 10558, 1115, 2]
-// Exports: GuildPremiumRoleSubscribeButton
+// Dependencies: [19, 21, 4758, 558, 568, 1119, 10475, 2]
 
-// Module 18225 (GuildPremiumRoleSubscribeButton)
-import util from "util" /* 1115 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 10558 */;
+// Module 18228 (GuildPremiumRoleSubscribeButton)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import CreatorRevenueButton from "CreatorRevenueButton" /* 10475 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_3 = createStyles.createStyles({ crButton: { marginVertical: 16 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx");
 
-export const GuildPremiumRoleSubscribeButton = function GuildPremiumRoleSubscribeButton(onPress) {
+export const GuildPremiumRoleSubscribeButton = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+  const cResult = c.c(4);
+  onPress = onPress.onPress;
+  const tmp4 = closure_3();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.BEeXib);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === onPress) {
+    if (cResult[2] === tmp4.crButton) {
+      let tmp7 = cResult[3];
+    }
+    return tmp7;
+  }
+  const tmp8 = jsx(CreatorRevenueButton.CreatorRevenueButton, { text: first, onPress, style: tmp4.crButton, disabled: true });
+  cResult[1] = onPress;
+  cResult[2] = tmp4.crButton;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((onPress) => {
   const obj = { text: null, onPress: null, style: null, disabled: true };
   const intl = util.intl;
   obj.text = intl.string(util.t.BEeXib);
   obj.onPress = onPress.onPress;
   obj.style = closure_3().crButton;
   return jsx(CreatorRevenueButton.CreatorRevenueButton, { text: null, onPress: null, style: null, disabled: true });
-};
+});

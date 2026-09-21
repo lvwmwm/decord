@@ -1,10 +1,10 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10326
+// Function ID: 10327
 // Name: useThrottle
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10329 (useThrottle)
+// Module 10326 (useThrottle)
 import _mod12 from "module_12" /* 12 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,11 +14,11 @@ require = fn;
 function throttleStateFn(arg0) {
   return arg0;
 }
-function useThrottledFunction(callback4, arg1, items4, sharedValue) {
+function useThrottledFunction(callback4, arg1, cResult, sharedValue) {
   _require = callback4;
   dependencyMap = arg1;
-  let items = items4;
-  if (items4 === undefined) {
+  let items = cResult;
+  if (cResult === undefined) {
     items = [];
   }
   noop = sharedValue;
@@ -38,9 +38,9 @@ function useThrottledFunction(callback4, arg1, items4, sharedValue) {
 const size = fn(2);
 const result = size.fileFinishedImporting("hooks/useThrottle.tsx");
 
-export const useThrottledState = (set, arg1) => {
-  let current = set;
-  _require = set;
+export const useThrottledState = (cResult, arg1) => {
+  let current = cResult;
+  _require = cResult;
   let items = arg2;
   if (arg2 === undefined) {
     items = [];

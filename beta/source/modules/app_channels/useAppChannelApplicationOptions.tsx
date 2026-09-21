@@ -1,13 +1,15 @@
-// Module ID: 9828
-// Function ID: 9829
+// Module ID: 9806
+// Function ID: 9807
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 9314, 9829, 7408, 2]
-// Exports: useAppChannelApplicationOptions
+// Dependencies: [19, 9312, 558, 568, 9807, 7410, 2]
 
-// Module 9828 (useAppChannelApplicationOptions)
+// Module 9806 (useAppChannelApplicationOptions)
+import c from "c" /* 568 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7410 */;
+import useGuildEmbeddedApplications from "useGuildEmbeddedApplications" /* 9807 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
+require = fn;
 function compareOptions(status, status2) {
   if (status.status.supported !== status2.status.supported) {
     let num = 1;
@@ -21,26 +23,83 @@ function compareOptions(status, status2) {
   }
   return localeCompareResult;
 }
-const EmbeddedSurfaceType = fn(9314).EmbeddedSurfaceType;
+const EmbeddedSurfaceType = fn(9312).EmbeddedSurfaceType;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_channels/useAppChannelApplicationOptions.tsx");
 
-export const useAppChannelApplicationOptions = function useAppChannelApplicationOptions(guildId, channelId, selectedApplicationId, disabled) {
-  let flag = disabled;
-  if (disabled === undefined) {
+export const useAppChannelApplicationOptions = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+  const cResult = c.c(8);
+  const tmp4 = undefined !== arg3 && arg3;
+  let tmp5;
+  if (!tmp4) {
+    tmp5 = arg0;
+  }
+  const guildEmbeddedApplications = useGuildEmbeddedApplications.useGuildEmbeddedApplications(EmbeddedSurfaceType.APP_CHANNEL, tmp5, arg1);
+  ({ data, isLoading } = guildEmbeddedApplications);
+  const tmpResult = useGuildEmbeddedApplications;
+  const application = ApplicationActionCreators.useApplication(arg2, true);
+  const data2 = application.data;
+  if (cResult[0] === data) {
+    if (cResult[1] === data2) {
+      let tmp9 = cResult[2];
+    }
+    if (!isLoading) {
+      isLoading = tmp8;
+    }
+    let tmp14 = null != data;
+    if (tmp14) {
+      tmp14 = 0 === data.length;
+    }
+    if (cResult[3] === tmp9) {
+      if (cResult[4] === data2) {
+        if (cResult[5] === isLoading) {
+          if (cResult[6] === tmp14) {
+            let tmp15 = cResult[7];
+          }
+          return tmp15;
+        }
+      }
+    }
+    const obj2 = { options: tmp9, selectedApplication: data2, isLoading, hasNoApplications: tmp14 };
+    cResult[3] = tmp9;
+    cResult[4] = data2;
+    cResult[5] = isLoading;
+    cResult[6] = tmp14;
+    cResult[7] = obj2;
+    tmp15 = obj2;
+  }
+  let items = data;
+  if (data == null) {
+    items = [];
+  }
+  const items1 = [...items];
+  const tmpResult2 = ApplicationActionCreators;
+  if (!tmp10) {
+    const obj3 = { application: data2, status: { supported: true } };
+    items1.push(obj3);
+  }
+  const sorted = items1.sort(compareOptions);
+  cResult[0] = data;
+  cResult[1] = data2;
+  cResult[2] = sorted;
+  tmp9 = sorted;
+}) : ((arg0, arg1, arg2) => {
+  let flag = arg3;
+  if (arg3 === undefined) {
     flag = false;
   }
   let data1;
   let data;
   let tmp3;
   if (!flag) {
-    tmp3 = guildId;
+    tmp3 = arg0;
   }
-  const guildEmbeddedApplications = data1(data[2]).useGuildEmbeddedApplications(EmbeddedSurfaceType.APP_CHANNEL, tmp3, channelId);
+  const guildEmbeddedApplications = data1(data[4]).useGuildEmbeddedApplications(EmbeddedSurfaceType.APP_CHANNEL, tmp3, arg1);
   data1 = guildEmbeddedApplications.data;
   let isLoading = guildEmbeddedApplications.isLoading;
-  let obj = data1(data[2]);
-  const application = data1(data[3]).useApplication(selectedApplicationId, true);
+  let obj = data1(data[4]);
+  const application = data1(data[5]).useApplication(arg2, true);
   data = application.data;
   const obj2 = { options: null, selectedApplication: data, isLoading: null, hasNoApplications: null };
   let items = [data1, data];
@@ -70,4 +129,4 @@ export const useAppChannelApplicationOptions = function useAppChannelApplication
   }
   obj2.hasNoApplications = tmp6;
   return obj2;
-};
+});

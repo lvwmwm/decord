@@ -1,15 +1,15 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9404
+// Function ID: 9405
 // Name: ApplicationCommandFrecencyStore
-// Dependencies: [1220, 5210, 1349, 1084, 4793, 12, 504, 573, 2]
+// Dependencies: [1224, 5212, 1353, 1088, 4795, 12, 504, 577, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 9406 (ApplicationCommandFrecencyStore)
+// Module 9404 (ApplicationCommandFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4793 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import FrecencyDefault from "Frecency" /* 4795 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 function handleUserSettingsProtoStoreChange() {
   const applicationCommandFrecency = UserSettingsProtoStore.frecencyWithoutFetchingLatest.applicationCommandFrecency;
@@ -29,9 +29,9 @@ function handleUserSettingsProtoStoreChange() {
     return obj;
   }), global.pendingUsages);
 }
-const ApplicationCommandConstants = fn(5210);
+const ApplicationCommandConstants = fn(5212);
 ({ DISCOVERY_COMMAND_FRECENCY_GATEWAY_LIMIT: c3, SUB_COMMAND_KEY_SEPARATOR: closure_4 } = ApplicationCommandConstants);
-const UserSettingsTypes = fn(1084).UserSettingsTypes;
+const UserSettingsTypes = fn(1088).UserSettingsTypes;
 let global = { pendingUsages: [] };
 let obj = {
   computeBonus() {
@@ -43,7 +43,7 @@ let obj = {
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1349).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1353).FREQUENCY_ITEM_LIMIT
 };
 let closure_7 = new FrecencyDefault({
   computeBonus() {
@@ -55,7 +55,7 @@ let closure_7 = new FrecencyDefault({
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1349).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1353).FREQUENCY_ITEM_LIMIT
 });
 const PersistedStore = initializeDefault.PersistedStore;
 class ApplicationCommandFrecencyStore extends PersistedStore {
@@ -110,7 +110,7 @@ const applicationCommandFrecencyStore = new ApplicationCommandFrecencyStore(Disp
     if (Number(command.id) < 0) {
       let id = command.id;
     } else {
-      let guild;
+      guild = undefined;
       if (context != null) {
         guild = context.guild;
       }
@@ -165,7 +165,7 @@ export const getFilteredTopCommands = function getFilteredTopCommands(arr, arg1)
     const hasItem = arr.includes(":");
     let tmp2 = !hasItem;
     if (hasItem) {
-      let guild;
+      guild = undefined;
       if (closure_0 != null) {
         guild = tmp3.guild;
       }

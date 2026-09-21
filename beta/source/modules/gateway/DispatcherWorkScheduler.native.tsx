@@ -1,14 +1,14 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13908
+// Function ID: 13909
 // Name: DispatcherWorkScheduler
-// Dependencies: [13904, 1074, 13906, 573, 2]
+// Dependencies: [13907, 1078, 13909, 577, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 13905 (DispatcherWorkScheduler)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import BasicWorkScheduler2 from "BasicWorkScheduler" /* 13906 */;
-import DispatcherWorkConstants from "DispatcherWorkConstants" /* 13904 */;
+// Module 13908 (DispatcherWorkScheduler)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
+import BasicWorkScheduler2 from "BasicWorkScheduler" /* 13909 */;
+import DispatcherWorkConstants from "DispatcherWorkConstants" /* 13907 */;
 import size from "module_2" /* 2 */;
 
 ({ DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS: c2, NATIVE_WORK_BACKOFF_MS: c3, NATIVE_WORK_DEADLINE_MS: closure_4, WorkIdleDeadline: hasOwnProperty } = DispatcherWorkConstants);

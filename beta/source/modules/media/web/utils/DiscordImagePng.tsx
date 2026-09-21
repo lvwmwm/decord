@@ -1,10 +1,10 @@
-// Module ID: 5427
-// Function ID: 5428
+// Module ID: 5429
+// Function ID: 5430
 // Name: DiscordImagePng
-// Dependencies: [5, 1976, 5428, 2]
+// Dependencies: [5, 1980, 5430, 2]
 
-// Module 5427 (DiscordImagePng)
-import decodeImageDefault from "decodeImage" /* 1976 */;
+// Module 5429 (DiscordImagePng)
+import decodeImageDefault from "decodeImage" /* 1980 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -65,7 +65,7 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {

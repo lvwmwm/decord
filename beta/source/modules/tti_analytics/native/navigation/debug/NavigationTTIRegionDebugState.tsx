@@ -1,10 +1,10 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16882
+// Function ID: 16883
 // Name: NavigationTTIRegionDebugState
 // Dependencies: [2]
 // Exports: getNavigationTTIRegionDebugMeasurement, recordNavigationTTIRegionDebugMeasurement, subscribeNavigationTTIRegionDebugMeasurements
 
-// Module 16879 (NavigationTTIRegionDebugState)
+// Module 16882 (NavigationTTIRegionDebugState)
 import size from "module_2" /* 2 */;
 
 const set = new Set();
@@ -23,10 +23,10 @@ export const recordNavigationTTIRegionDebugMeasurement = function recordNavigati
     continue;
   }
 };
-export const getNavigationTTIRegionDebugMeasurement = function getNavigationTTIRegionDebugMeasurement(activeTraceId, navTTISurface) {
+export const getNavigationTTIRegionDebugMeasurement = function getNavigationTTIRegionDebugMeasurement(activeTraceId, regionId) {
   let tmp = null;
   if (activeTraceId === global) {
-    value = map.get(navTTISurface);
+    value = map.get(regionId);
     if (value == null) {
       value = null;
     }

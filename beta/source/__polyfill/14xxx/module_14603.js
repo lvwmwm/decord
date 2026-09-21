@@ -1,23 +1,13 @@
 // Module ID: 14603
 // Function ID: 14604
-// Dependencies: []
+// Dependencies: [14587, 14604]
 
 // Module 14603
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  if (undefined !== all) {
-    let fn = (fn) => {
-      let tmp = typeof fn === "function";
-      if (typeof fn !== "function") {
-        tmp = fn === all;
-      }
-      return tmp;
-    };
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+import _mod14587 from "module_14587" /* 14587 */;
+import _mod14604 from "module_14604" /* 14604 */;
+
+let closure_2 = _mod14587({}.hasOwnProperty);
+
+export default Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod14604(arg0), arg1);
+});

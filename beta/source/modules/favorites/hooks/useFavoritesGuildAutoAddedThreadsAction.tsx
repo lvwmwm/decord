@@ -1,22 +1,101 @@
 // Module ID: 16479
 // Function ID: 16480
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1372, 2044, 10482, 504, 10481, 1115, 3324, 2]
-// Exports: default
+// Dependencies: [19, 1376, 2048, 558, 568, 10606, 504, 10605, 1119, 3328, 2]
 
 // Module 16479 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10481 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10605 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import UserStore from "UserStore" /* 1376 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildAutoAddedThreadsAction.tsx");
 
-export default function useFavoritesGuildAutoAddedThreadsAction() {
-  hasAccess = hasAccess(10482).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
-  let obj = hasAccess(10482);
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = hasAccess(568).c(13);
+  let obj = hasAccess(568);
+  hasAccess = hasAccess(10606).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      currentUser = currentUser.getCurrentUser();
+      let flag;
+      if (currentUser != null) {
+        flag = currentUser.isStaff();
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const obj2 = hasAccess(10606);
+  if (hasAccess) {
+    hasAccess = tmpResult.useStateFromStores(tmp4, tmp5);
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [FavoriteStore];
+    class A {
+      constructor() {
+        return closure_1_5.autoAddJoinedThreads;
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = A;
+    let tmp8 = A;
+    let tmp7 = items1;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  tmpResult = hasAccess(504);
+  const stateFromStores = hasAccess(504).useStateFromStores(tmp7, tmp8);
+  if (cResult[4] === hasAccess) {
+    if (cResult[5] === stateFromStores) {
+      let tmp11 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    class A {
+      constructor() {
+        return closure_1_5.autoAddJoinedThreads;
+      }
+    }
+    if (cResult[9] === hasAccess) {
+      if (cResult[10] === stateFromStores) {
+        if (cResult[11] === tmp11) {
+          let tmp15 = cResult[12];
+        }
+        return tmp15;
+      }
+    }
+    const obj3 = { isAvailable: hasAccess, isEnabled: stateFromStores, label: tmp13, subLabel: tmp14, toggle: tmp11 };
+    cResult[9] = hasAccess;
+    cResult[10] = stateFromStores;
+    cResult[11] = tmp11;
+    cResult[12] = obj3;
+    tmp15 = obj3;
+  }
+  const fn2 = function f() {
+    if (hasAccess) {
+      const result = FavoritesActionCreators.setFavoritesAutoAddJoinedThreads(!stateFromStores);
+    }
+  };
+  cResult[4] = hasAccess;
+  cResult[5] = stateFromStores;
+  cResult[6] = fn2;
+  tmp11 = fn2;
+}) : (() => {
+  hasAccess = hasAccess(10606).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
+  let obj = hasAccess(10606);
   const items = [UserStore];
   if (hasAccess) {
     hasAccess = obj2.useStateFromStores(items, () => {
@@ -41,10 +120,10 @@ export default function useFavoritesGuildAutoAddedThreadsAction() {
       const result = FavoritesActionCreators.setFavoritesAutoAddJoinedThreads(!stateFromStores);
     }
   }, items2);
-  const intl = tmp(1115).intl;
-  obj3.label = intl.string(stateFromStores(3324).DIyQIF);
-  const intl2 = tmp(1115).intl;
-  obj3.subLabel = intl2.string(stateFromStores(3324).g2vHYJ);
+  const intl = tmp(1119).intl;
+  obj3.label = intl.string(stateFromStores(3328).DIyQIF);
+  const intl2 = tmp(1119).intl;
+  obj3.subLabel = intl2.string(stateFromStores(3328).g2vHYJ);
   obj3.toggle = callback;
   return obj3;
-};
+});

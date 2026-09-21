@@ -1,15 +1,15 @@
-// Module ID: 4977
-// Function ID: 4978
+// Module ID: 4979
+// Function ID: 4980
 // Name: EphemeralMessageStore
-// Dependencies: [2041, 1074, 1385, 4978, 504, 573, 2]
+// Dependencies: [2045, 1078, 1389, 4980, 504, 577, 2]
 
-// Module 4977 (EphemeralMessageStore)
+// Module 4979 (EphemeralMessageStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
-const MessageRecordUtils = tmp(4978);
+const MessageRecordUtils = tmp(4980);
 require = fn;
 function dropChannelIfEmpty(channelId, value) {
   if (0 === value.size) {
@@ -24,7 +24,7 @@ function clearAll() {
   }
   obj = map;
 }
-const MessageFlags = fn(1074).MessageFlags;
+const MessageFlags = fn(1078).MessageFlags;
 let closure_4 = [];
 let map = new Map();
 const Store = initializeDefault.Store;

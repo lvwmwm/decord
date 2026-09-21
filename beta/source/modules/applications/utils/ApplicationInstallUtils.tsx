@@ -1,21 +1,21 @@
-// Module ID: 9532
-// Function ID: 9533
+// Module ID: 9528
+// Function ID: 9529
 // Name: ApplicationInstallUtils
-// Dependencies: [9404, 5210, 9318, 2]
+// Dependencies: [9402, 5212, 9316, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 9532 (ApplicationInstallUtils)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9318 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9404 */;
+// Module 9528 (ApplicationInstallUtils)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9316 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9402 */;
 
 require = fn;
-const BuiltInSectionId = fn(5210).BuiltInSectionId;
+const BuiltInSectionId = fn(5212).BuiltInSectionId;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");
 
-export const canInstallApplication = function canInstallApplication(application) {
-  const integrationTypesConfig = application.integrationTypesConfig;
-  let tmp = null != application.customInstallUrl || null != application.installParams;
+export const canInstallApplication = function canInstallApplication(installAppProps) {
+  const integrationTypesConfig = installAppProps.integrationTypesConfig;
+  let tmp = null != installAppProps.customInstallUrl || null != installAppProps.installParams;
   if (!tmp) {
     let someResult = null != integrationTypesConfig;
     if (someResult) {

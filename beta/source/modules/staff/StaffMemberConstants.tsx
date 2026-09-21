@@ -1,9 +1,9 @@
-// Module ID: 17895
-// Function ID: 17896
+// Module ID: 17898
+// Function ID: 17899
 // Name: StaffMemberConstants
 // Dependencies: [2]
 
-// Module 17895 (StaffMemberConstants)
+// Module 17898 (StaffMemberConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/staff/StaffMemberConstants.tsx");

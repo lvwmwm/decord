@@ -1,10 +1,18 @@
 // Module ID: 1541
 // Function ID: 1542
 // Dependencies: []
+// Exports: isRecordEqual
 
 // Module 1541
 
-export default (arg0) => encodeURIComponent(arg0).replace(/[!'()*]/g, (str) => {
-  str = str.charCodeAt(0);
-  return "%" + str.charCodeAt(0).toString(16).toUpperCase();
-});
+export const isRecordEqual = function isRecordEqual(value, arg1) {
+  closure_1 = arg1;
+  if (value === arg1) {
+    return true;
+  } else {
+    const _Object = Object;
+    const keys = Object.keys(value);
+    const _Object2 = Object;
+    return keys.length === Object.keys(arg1).length && keys.every((item) => Object.is(value[item], closure_1[item]));
+  }
+};

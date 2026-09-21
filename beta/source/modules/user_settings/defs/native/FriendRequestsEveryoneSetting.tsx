@@ -1,31 +1,69 @@
-// Module ID: 15254
-// Function ID: 15255
+// Module ID: 15243
+// Function ID: 15244
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8233, 1074, 2019, 7240, 15102, 11725, 1115, 2]
+// Dependencies: [19, 8238, 1078, 558, 568, 2023, 7241, 15091, 11594, 1119, 2]
 
-// Module 15254 (FriendRequestsEveryoneSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7240 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15102 */;
+// Module 15243 (FriendRequestsEveryoneSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AllFriendSourceFlags: c3, FriendSourceFlags: closure_4 } = Constants);
-const SettingBuilders = fn(11725);
+fn(558);
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const SettingBuilders = fn(11594);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+  const setting = FriendSourceFlagsSetting.useSetting();
+  if (cResult[0] !== setting) {
+    const flags = UserSettingsUtils.computeFlags(setting);
+    cResult[0] = setting;
+    cResult[1] = flags;
+    let tmp5 = flags;
+    const tmpResult = UserSettingsUtils;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5.all;
+}) : (() => {
+  const FriendSourceFlagsSetting = setting(2023).FriendSourceFlagsSetting;
+  setting = FriendSourceFlagsSetting.useSetting();
+  const items = [setting];
+  return noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items).all;
+});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.mGr3CX);
   },
-  parent: fn(8233).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: function useFriendRequestsEveryoneSettingValue() {
-    const FriendSourceFlagsSetting = setting(2019).FriendSourceFlagsSetting;
+  parent: fn(8238).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
+    const setting = FriendSourceFlagsSetting.useSetting();
+    if (cResult[0] !== setting) {
+      const flags = UserSettingsUtils.computeFlags(setting);
+      cResult[0] = setting;
+      cResult[1] = flags;
+      let tmp5 = flags;
+      const tmpResult = UserSettingsUtils;
+    } else {
+      tmp5 = cResult[1];
+    }
+    return tmp5.all;
+  }) : (() => {
+    const FriendSourceFlagsSetting = setting(2023).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return noop.useMemo(() => UserSettingsUtils.computeFlags(setting), items).all;
-  },
+  }),
   onValueChange: function onFriendRequestsEveryoneSettingValueChange(arg0) {
     const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
     if (arg0) {
@@ -35,11 +73,9 @@ const toggle = SettingBuilders.createToggle({
     }
     FriendSourceFlagsSetting.updateSetting(tmp3);
   },
-  useIsDisabled() {
-    return useParentalControlSettings.useIsParentallyControlled();
-  }
+  useIsDisabled: () => useParentalControlSettings.useIsParentallyControlled()
 });
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsEveryoneSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsEveryoneSetting.tsx");
 
 export default toggle;

@@ -1,34 +1,65 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8706
+// Function ID: 8707
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [8702, 1434, 8690, 504, 2]
-// Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
+// Dependencies: [8707, 1438, 558, 568, 8695, 504, 2]
+// Exports: isExpressiveModalV2Enabled
 
-// Module 8701 (ExpressiveModalV2Experiment)
-import initialize from "initialize" /* 504 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8690 */;
-import SafetyHubStore from "SafetyHubStore" /* 8702 */;
+// Module 8706 (ExpressiveModalV2Experiment)
+import c from "c" /* 568 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
+import SafetyHubStore from "SafetyHubStore" /* 8707 */;
 
+const initialize = tmp(504);
 require = fn;
-const ApexExperiment = fn(1434);
+const ApexExperiment = fn(1438);
 let obj2 = { kind: "user", name: "2026-07-expressive-modal-v2", defaultConfig: { enabled: false }, variations: null };
-const obj3 = { 1: null, 2: { enabled: true } };
+let obj3 = { 1: null, 2: { enabled: true } };
 obj3[2] = { enabled: true };
 obj2.variations = obj3;
 let closure_3 = ApexExperiment.createApexExperiment(obj2);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/ExpressiveModalV2Experiment.tsx");
 
-export const useIsExpressiveModalV2Enabled = function useIsExpressiveModalV2Enabled(AUTOMATED_UNDERAGE_APPEALS) {
+export const useIsExpressiveModalV2Enabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(4);
   const isSuspendedUser = SafetyHubUtils.useIsSuspendedUser();
-  const items = [SafetyHubStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => isExpressiveModalV2Enabled.getIsExpressiveModalV2Enabled());
-  let enabled = closure_3.useConfig({ location: AUTOMATED_UNDERAGE_APPEALS }).enabled;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SafetyHubStore];
+    const fn = function l() {
+      return isExpressiveModalV2Enabled.getIsExpressiveModalV2Enabled();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== location) {
+    const obj3 = { location };
+    cResult[2] = location;
+    cResult[3] = obj3;
+    let tmp9 = obj3;
+  } else {
+    tmp9 = cResult[3];
+  }
+  let enabled = closure_3.useConfig(tmp9).enabled;
   if (isSuspendedUser) {
     enabled = stateFromStores;
   }
   return enabled;
-};
+}) : ((location) => {
+  const isSuspendedUser = SafetyHubUtils.useIsSuspendedUser();
+  const items = [SafetyHubStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => isExpressiveModalV2Enabled.getIsExpressiveModalV2Enabled());
+  let enabled = closure_3.useConfig({ location }).enabled;
+  if (isSuspendedUser) {
+    enabled = stateFromStores;
+  }
+  return enabled;
+});
 export const isExpressiveModalV2Enabled = function isExpressiveModalV2Enabled(AUTOMATED_UNDERAGE_APPEALS) {
   if (obj.isCurrentUserSuspended()) {
     let enabled = SafetyHubStore.getIsExpressiveModalV2Enabled();

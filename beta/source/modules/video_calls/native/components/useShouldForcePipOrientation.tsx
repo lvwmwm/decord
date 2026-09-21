@@ -1,24 +1,331 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9654
+// Function ID: 9655
 // Name: useShouldForcePipOrientation
-// Dependencies: [2040, 4772, 502, 2004, 4777, 9659, 504, 9616, 8603, 2]
-// Exports: useShouldForcePipOrientation
+// Dependencies: [2044, 4774, 502, 2008, 4779, 558, 568, 9655, 504, 9612, 8608, 2]
 
-// Module 9658 (useShouldForcePipOrientation)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9616 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9659 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
+// Module 9654 (useShouldForcePipOrientation)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9612 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9655 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const OrientationLockState = fn(2004).OrientationLockState;
-const CallConstants = fn(4777);
+const OrientationLockState = fn(2008).OrientationLockState;
+const CallConstants = fn(4779);
 ({ isStreamParticipant: closure_7, ParticipantTypes: closure_8 } = CallConstants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/useShouldForcePipOrientation.tsx");
 
-export const useShouldForcePipOrientation = function useShouldForcePipOrientation(channel) {
+export const useShouldForcePipOrientation = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = channel(568).c(6);
+  channel = channel.channel;
+  let tmp4 = usePipVideoOrStreamDefault(channel.id);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelRTCStore, AuthenticationStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.id) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    cResult[1] = channel.id;
+    cResult[2] = A;
+    const tmp8 = A;
+  } else {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+  }
+  const obj = channel(568);
+  let tmp2 = dependencyMap;
+  const stateFromStores = channel(504).useStateFromStores(first, tmp8);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    const items1 = [EmbeddedActivitiesStore, ChannelRTCStore];
+    cResult[3] = items1;
+    const tmp10 = items1;
+  } else {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+  }
+  if (cResult[4] !== channel.id) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    cResult[4] = channel.id;
+    cResult[5] = tmp13;
+    const tmp12 = tmp13;
+  } else {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+  }
+  const tmpResult = channel(504);
+  const stateFromStoresObject = channel(504).useStateFromStoresObject(tmp10, tmp12);
+  ({ focusedEmbeddedActivityParticipant, activityLockOrientation } = stateFromStoresObject);
+  if (null != tmp4) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    if (tmp4.user.id !== AuthenticationStore.getId()) {
+      class A {
+        constructor() {
+          participant = closure_4.getParticipant(channel.id, closure_5.getId());
+          tmp2 = null;
+          if (null != participant) {
+            tmp3 = ParticipantTypes;
+            tmp2 = null;
+            if (participant.type === ParticipantTypes.USER) {
+              tmp2 = null;
+              if (null != participant.streamId) {
+                tmp2 = participant;
+              }
+            }
+          }
+          return tmp2;
+        }
+      }
+    }
+  }
+  if (focusedEmbeddedActivityParticipant == null) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+  }
+  if (null != focusedEmbeddedActivityParticipant) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    if (closure_7(focusedEmbeddedActivityParticipant)) {
+      class A {
+        constructor() {
+          participant = closure_4.getParticipant(channel.id, closure_5.getId());
+          tmp2 = null;
+          if (null != participant) {
+            tmp3 = ParticipantTypes;
+            tmp2 = null;
+            if (participant.type === ParticipantTypes.USER) {
+              tmp2 = null;
+              if (null != participant.streamId) {
+                tmp2 = participant;
+              }
+            }
+          }
+          return tmp2;
+        }
+      }
+    } else {
+      class A {
+        constructor() {
+          participant = closure_4.getParticipant(channel.id, closure_5.getId());
+          tmp2 = null;
+          if (null != participant) {
+            tmp3 = ParticipantTypes;
+            tmp2 = null;
+            if (participant.type === ParticipantTypes.USER) {
+              tmp2 = null;
+              if (null != participant.streamId) {
+                tmp2 = participant;
+              }
+            }
+          }
+          return tmp2;
+        }
+      }
+    }
+  }
+  if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    const LANDSCAPE = tmp2.LANDSCAPE;
+  } else {
+    class A {
+      constructor() {
+        participant = closure_4.getParticipant(channel.id, closure_5.getId());
+        tmp2 = null;
+        if (null != participant) {
+          tmp3 = ParticipantTypes;
+          tmp2 = null;
+          if (participant.type === ParticipantTypes.USER) {
+            tmp2 = null;
+            if (null != participant.streamId) {
+              tmp2 = participant;
+            }
+          }
+        }
+        return tmp2;
+      }
+    }
+    if (activityLockOrientation === tmp16.PORTRAIT) {
+      class A {
+        constructor() {
+          participant = closure_4.getParticipant(channel.id, closure_5.getId());
+          tmp2 = null;
+          if (null != participant) {
+            tmp3 = ParticipantTypes;
+            tmp2 = null;
+            if (participant.type === ParticipantTypes.USER) {
+              tmp2 = null;
+              if (null != participant.streamId) {
+                tmp2 = participant;
+              }
+            }
+          }
+          return tmp2;
+        }
+      }
+    }
+  }
+}) : ((channel) => {
   channel = channel.channel;
   let OrientationType = dependencyMap;
   const tmp = usePipVideoOrStreamDefault(channel.id);
@@ -83,17 +390,17 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != focusedEmbeddedActivityParticipant) {
     if (closure_7(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return tmp2(8603).OrientationType.LANDSCAPE;
+        return tmp2(8608).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    OrientationType = tmp2(8603).OrientationType;
+    OrientationType = tmp2(8608).OrientationType;
     let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === tmp8.PORTRAIT) {
-      LANDSCAPE = tmp2(8603).OrientationType.PORTRAIT;
+      LANDSCAPE = tmp2(8608).OrientationType.PORTRAIT;
     }
   }
-};
+});

@@ -1,15 +1,15 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9600
+// Function ID: 9601
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4983, 2002, 2041, 9593, 9568, 9605, 2]
+// Dependencies: [5, 4985, 2006, 2045, 9589, 9564, 9601, 2]
 // Exports: default
 
-// Module 9604 (getCachedOrFetchActivityApplicationForLaunch)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9593 */;
+// Module 9600 (getCachedOrFetchActivityApplicationForLaunch)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9589 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ApplicationRecord from "ApplicationRecord" /* 2006 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 let closure_7 = async function _getCachedOrFetchActivityApplicationForLaunch(arg0, value) {
@@ -23,7 +23,7 @@ let closure_7 = async function _getCachedOrFetchActivityApplicationForLaunch(arg
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {

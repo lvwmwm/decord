@@ -1,21 +1,9 @@
 // Module ID: 1156
 // Function ID: 1157
-// Dependencies: []
-// Exports: resolveFormatConfigOptions
+// Dependencies: [1125]
 
 // Module 1156
+import registerAsset from "module_1125" /* 1125 */;
 
-export const resolveFormatConfigOptions = function resolveFormatConfigOptions(list, format) {
-  format = undefined;
-  if (null != format) {
-    format = format.format;
-  }
-  if (typeof format === "string") {
-    const _Object = Object;
-    const _Object2 = Object;
-    return Object.assign(Object.assign({}, list[format.format]), format);
-  } else {
-    return format;
-  }
-};
-export const DEFAULT_FORMAT_CONFIG = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { month: "numeric", day: "numeric", year: "2-digit" }, medium: { month: "short", day: "numeric", year: "numeric" }, long: { month: "long", day: "numeric", year: "numeric" }, full: { weekday: "long", month: "long", day: "numeric", year: "numeric" } }, time: { short: { hour: "numeric", minute: "numeric" }, medium: { hour: "numeric", minute: "numeric", second: "numeric" }, long: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }, full: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" } } };
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/aW50bA==", scales: [1], hash: "a0aa3774e064cca7bab0fc18be60dfdf", name: "id.messages.a0aa3774e064cca7bab0fc18be60dfdf.compiled.messages", type: "jsona" });

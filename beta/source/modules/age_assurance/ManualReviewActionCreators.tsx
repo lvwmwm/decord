@@ -1,13 +1,13 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 8870
+// Function ID: 8871
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1074, 8670, 1091, 1271, 8690, 8682, 8675, 2]
+// Dependencies: [5, 502, 1078, 8675, 1095, 1275, 8695, 8687, 8680, 2]
 // Exports: handleManualReviewCta, invalidateManualReviewCache
 
-// Module 8865 (ManualReviewActionCreators)
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8690 */;
+// Module 8870 (ManualReviewActionCreators)
+import DurationsDefault from "Durations" /* 1095 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8695 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -35,7 +35,7 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
       const obj5 = { value, done: true };
       return obj5;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -57,11 +57,11 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
           } else {
             c11 = true;
             c3 = 2;
-            closure_128_0 = closure_2_12;
+            closure_128_0 = __initData;
             let tmp23 = null == closure_128_0;
             if (!tmp23) {
               const _Date2 = Date;
-              tmp23 = Date.now() - map1 >= MINUTE;
+              tmp23 = Date.now() - __initData2 >= MINUTE;
             }
             if (tmp23) {
               if (obj8.isCurrentUserSuspended()) {
@@ -148,8 +148,8 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
-const SafetyToastType = fn(8670).SafetyToastType;
+const Endpoints = fn(1078).Endpoints;
+const SafetyToastType = fn(8675).SafetyToastType;
 const ManualReviewStatus = { IN_PROGRESS: "in_progress", SUBMITTED: "submitted", DECIDED_TEEN: "decided_teen" };
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let c11 = false;

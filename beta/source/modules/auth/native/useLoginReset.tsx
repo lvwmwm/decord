@@ -1,21 +1,43 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 7195
+// Function ID: 7196
 // Name: useLoginReset
-// Dependencies: [19, 502, 6834, 2]
-// Exports: default
+// Dependencies: [19, 502, 558, 568, 6832, 2]
 
-// Module 7197 (useLoginReset)
+// Module 7195 (useLoginReset)
+import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/useLoginReset.tsx");
 
-export default function useLoginReset() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      return () => {
+        if (!authenticated.isAuthenticated()) {
+          closure_1_1(dependencyMap[4]).loginReset();
+          const obj = closure_1_1(dependencyMap[4]);
+        }
+      };
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp2 = fn;
+    tmp3 = items;
+  } else {
+    [tmp2, tmp3] = cResult;
+  }
+  const effect = noop.useEffect(tmp2, tmp3);
+}) : (() => {
   const effect = noop.useEffect(() => () => {
     if (!authenticated.isAuthenticated()) {
-      closure_1_0(dependencyMap[2]).loginReset();
-      const obj = closure_1_0(dependencyMap[2]);
+      closure_1_1(dependencyMap[4]).loginReset();
+      const obj = closure_1_1(dependencyMap[4]);
     }
   }, []);
-};
+});

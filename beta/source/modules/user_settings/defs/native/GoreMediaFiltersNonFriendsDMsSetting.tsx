@@ -1,24 +1,39 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15099
+// Function ID: 15100
 // Name: GoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8233, 15098, 7842, 7543, 15099, 1115, 11725, 15101, 2]
-// Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
+// Dependencies: [8238, 558, 568, 15087, 7847, 7545, 15088, 1119, 11594, 15090, 2]
+// Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 15110 (GoreMediaFiltersNonFriendsDMsSetting)
-import util from "util" /* 1115 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7543 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7842 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15098 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15099 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15101 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15099 (GoreMediaFiltersNonFriendsDMsSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7545 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15087 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15088 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15090 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
-function useGoreContentNonFriendsDmSettingValue() {
+const ExplicitMediaRedactionUtils = tmp(7847);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const goreContentNonFriendDm = useExplicitContentSettingsOrDefault.useGoreContentSettingOrDefault().goreContentNonFriendDm;
+  if (cResult[0] !== goreContentNonFriendDm) {
+    const tmp5 = ExplicitMediaRedactionUtils.redactionSettingToRenderedString(goreContentNonFriendDm)();
+    cResult[0] = goreContentNonFriendDm;
+    cResult[1] = tmp5;
+    let tmp4 = tmp5;
+    const tmpResult = ExplicitMediaRedactionUtils;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
   const obj = useExplicitContentSettingsOrDefault;
   return ExplicitMediaRedactionUtils.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
-}
+});
 function onGoreContentNonFriendsDmOnPress() {
   const obj = SensitiveMediaGoreRedactionSettingsUtils;
   const obj3 = { title: null, subtitle: null, handlePress: null, currentValue: null };
@@ -32,13 +47,14 @@ function onGoreContentNonFriendsDmOnPress() {
   obj3.currentValue = obj.getGoreContentSettingOrDefault().goreContentNonFriendDm;
   const result = ExplicitMediaRedactionNativeUtils.handleSensitiveMediaFilterPress(obj3);
 }
+function getTitle() {
+  const intl = util.intl;
+  return intl.string(util.t["Yh+HX1"]);
+}
 const pressable = SettingBuilders.createPressable({
-  useTitle: function getTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["Yh+HX1"]);
-  },
+  useTitle: getTitle,
   parent: SettingsConstants.MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
-  useTrailing: useGoreContentNonFriendsDmSettingValue,
+  useTrailing: tmp2,
   onPress: onGoreContentNonFriendsDmOnPress,
   useSearchTerms() {
     const intl = util.intl;
@@ -54,5 +70,5 @@ const pressable = SettingBuilders.createPressable({
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/GoreMediaFiltersNonFriendsDMsSetting.tsx");
 
 export default pressable;
-export { useGoreContentNonFriendsDmSettingValue };
+export const useGoreContentNonFriendsDmSettingValue = tmp2;
 export { onGoreContentNonFriendsDmOnPress };

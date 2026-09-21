@@ -1,23 +1,23 @@
-// Module ID: 5723
-// Function ID: 5724
+// Module ID: 5725
+// Function ID: 5726
 // Name: ActiveJoinedThreadsStore
-// Dependencies: [2045, 2041, 2063, 4771, 2095, 5724, 4397, 2048, 11, 4966, 5725, 573, 12, 504, 2]
+// Dependencies: [2049, 2045, 2067, 4773, 2099, 5726, 4401, 2052, 11, 4968, 5727, 577, 12, 504, 2]
 
-// Module 5723 (ActiveJoinedThreadsStore)
+// Module 5725 (ActiveJoinedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelConstants from "ChannelConstants" /* 2048 */;
-import AgeGateUtils from "AgeGateUtils" /* 4966 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5725 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5724 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ChannelConstants from "ChannelConstants" /* 2052 */;
+import AgeGateUtils from "AgeGateUtils" /* 4968 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5727 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5726 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4401 */;
 import size from "module_2" /* 2 */;
 
 function rebuild() {
@@ -144,7 +144,7 @@ function recountParent(guild_id, id) {
       dependencyMap6[guild_id][id] = 0;
       if (null != dependencyMap3[guild_id]) {
         if (null != dependencyMap3[guild_id][id]) {
-          const guild = GuildStore.getGuild(guild_id);
+          guild = GuildStore.getGuild(guild_id);
           if (null != guild) {
             let trackedAckMessageId = ReadStateStore.getTrackedAckMessageId(id);
             if (null == trackedAckMessageId) {
@@ -795,8 +795,8 @@ prototype["getActiveJoinedUnreadThreadsForGuild"] = function getActiveJoinedUnre
   }
   return tmp;
 };
-prototype["getActiveJoinedUnreadThreadsForParent"] = function getActiveJoinedUnreadThreadsForParent(channel, id) {
-  let tmp = this.getActiveJoinedUnreadThreadsForGuild(channel)[id];
+prototype["getActiveJoinedUnreadThreadsForParent"] = function getActiveJoinedUnreadThreadsForParent(guild_id, id) {
+  let tmp = this.getActiveJoinedUnreadThreadsForGuild(guild_id)[id];
   if (tmp == null) {
     tmp = closure_33;
   }
@@ -823,15 +823,15 @@ prototype["getActiveUnjoinedThreadsForGuild"] = function getActiveUnjoinedThread
   }
   return tmp;
 };
-prototype["getActiveUnjoinedUnreadThreadsForGuild"] = function getActiveUnjoinedUnreadThreadsForGuild(channel) {
-  let tmp = dependencyMap4[channel];
+prototype["getActiveUnjoinedUnreadThreadsForGuild"] = function getActiveUnjoinedUnreadThreadsForGuild(arg0) {
+  let tmp = dependencyMap4[arg0];
   if (tmp == null) {
     tmp = obj;
   }
   return tmp;
 };
-prototype["getActiveUnjoinedUnreadThreadsForParent"] = function getActiveUnjoinedUnreadThreadsForParent(channel, arg1) {
-  let tmp = this.getActiveUnjoinedUnreadThreadsForGuild(channel)[arg1];
+prototype["getActiveUnjoinedUnreadThreadsForParent"] = function getActiveUnjoinedUnreadThreadsForParent(arg0, arg1) {
+  let tmp = this.getActiveUnjoinedUnreadThreadsForGuild(arg0)[arg1];
   if (tmp == null) {
     tmp = closure_33;
   }

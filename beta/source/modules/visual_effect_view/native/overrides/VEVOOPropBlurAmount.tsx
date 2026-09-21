@@ -1,26 +1,132 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16247
+// Function ID: 16248
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5175, 21, 4756, 8871, 7446, 16259, 2]
+// Dependencies: [32, 19, 5177, 21, 4758, 558, 568, 7447, 16248, 8876, 2]
 
-// Module 16258 (VEVOOPropBlurAmount)
-import FormSwitch from "FormSwitch" /* 7446 */;
-import Form from "Form" /* 8871 */;
+// Module 16247 (VEVOOPropBlurAmount)
+import c from "c" /* 568 */;
+import FormSwitch from "FormSwitch" /* 7447 */;
+import Form from "Form" /* 8876 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VEVOOStore = fn(5175);
+const VEVOOStore = fn(5177);
 ({ getVisualEffectViewOverrides: hasOwnProperty, setVisualEffectViewOverides: metroRequire } = VEVOOStore);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_8 = createStyles.createStyles({ enabledSwitchStyle: { alignSelf: "flex-start" } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOPropBlurAmount.tsx");
 
-export default noop.memo(function VEVOOPropBlurAmount() {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(18);
+  const tmp4 = closure_8();
+  const tmp5 = _slicedToArray;
+  [tmp7, require] = noop.useState(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp10 = closure_5();
+    cResult[0] = tmp10;
+    let first = tmp10;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5Result = tmp5(noop.useState(first.blurAmountOverride), 2);
+  const first1 = tmp5Result[0];
+  dependencyMap = tmp5Result[1];
+  const tmp6 = _slicedToArray(noop.useState(false), 2);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function w(blurAmountOverride) {
+      if (null != blurAmountOverride) {
+        closure_2(blurAmountOverride);
+      }
+      const obj = {};
+      const merged = Object.assign(hasOwnProperty());
+      obj.blurAmountOverride = blurAmountOverride;
+      timestampProducer(obj);
+    };
+    cResult[1] = fn;
+    let tmp13 = fn;
+  } else {
+    tmp13 = cResult[1];
+  }
+  _slicedToArray = tmp13;
+  if (cResult[2] !== first1) {
+    let str;
+    if (first1 != null) {
+      str = first1.toFixed(3);
+    }
+    if (str == null) {
+      str = "";
+    }
+    cResult[2] = first1;
+    cResult[3] = str;
+    let tmp14 = str;
+  } else {
+    tmp14 = cResult[3];
+  }
+  const combined = "Blur Amount " + tmp14;
+  if (cResult[4] !== first1) {
+    const fn2 = function x(arg0) {
+      require(arg0);
+      let tmp3;
+      if (arg0) {
+        tmp3 = first1;
+      }
+      closure_3(tmp3);
+    };
+    cResult[4] = first1;
+    cResult[5] = fn2;
+    let tmp17 = fn2;
+  } else {
+    tmp17 = cResult[5];
+  }
+  if (cResult[6] === tmp7) {
+    if (cResult[7] === tmp17) {
+      let tmp18 = cResult[8];
+    }
+    if (cResult[9] === !tmp7) {
+      if (cResult[10] === tmp21) {
+        let tmp22 = cResult[11];
+      }
+      if (cResult[12] === tmp4.enabledSwitchStyle) {
+        if (cResult[13] === combined) {
+          if (cResult[14] === tmp18) {
+            if (cResult[15] === tmp22) {
+              if (cResult[16] === tmp26) {
+                let tmp27 = cResult[17];
+              }
+              return tmp27;
+            }
+          }
+        }
+      }
+      const obj3 = { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 };
+      const tmp29 = jsx(tmp(8876).FormRow, { label: combined, leadingStyle: tmp4.enabledSwitchStyle, leading: tmp18, subLabel: tmp22, disabled: !tmp7 });
+      cResult[12] = tmp4.enabledSwitchStyle;
+      cResult[13] = combined;
+      cResult[14] = tmp18;
+      cResult[15] = tmp22;
+      cResult[16] = !tmp7;
+      cResult[17] = tmp29;
+      tmp27 = tmp29;
+    }
+    const obj4 = { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 };
+    const tmp25 = jsx(first1(16248), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    cResult[9] = !tmp7;
+    cResult[10] = !tmp7;
+    cResult[11] = tmp25;
+    tmp22 = tmp25;
+  }
+  const tmp19 = jsx(FormSwitch.FormSwitch, { value: tmp7, onValueChange: tmp17 });
+  cResult[6] = tmp7;
+  cResult[7] = tmp17;
+  cResult[8] = tmp19;
+  tmp18 = tmp19;
+}) : (() => {
   const tmp = closure_8();
   [tmp3, require] = onValueChange(noop.useState(false), 2);
   const tmp4 = onValueChange(noop.useState(closure_5().blurAmountOverride), 2);
@@ -72,7 +178,7 @@ export default noop.memo(function VEVOOPropBlurAmount() {
     }
   };
   const ref = noop.useRef(first);
-  obj.subLabel = jsx(first(16259), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
+  obj.subLabel = jsx(first(16248), { disabled: !tmp3, disabledOpacity: !tmp3, initialValue: noop.useRef(first), onValueChange });
   return jsx(Form.FormRow, {
     label: "Blur Amount " + str,
     leadingStyle: tmp.enabledSwitchStyle,
@@ -90,4 +196,4 @@ export default noop.memo(function VEVOOPropBlurAmount() {
     subLabel: null,
     disabled: !tmp3
   });
-});
+}));

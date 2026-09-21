@@ -1,11 +1,11 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17042
+// Function ID: 17043
 // Name: VibegrationsTodoAgents
-// Dependencies: [17034, 2]
+// Dependencies: [17037, 2]
 // Exports: groupAgentsByTodo, runningTodoAgents, splitAgentOverflow
 
-// Module 17039 (VibegrationsTodoAgents)
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 17034 */;
+// Module 17042 (VibegrationsTodoAgents)
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 17037 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTodoAgents.tsx");
@@ -34,9 +34,9 @@ export const runningTodoAgents = function runningTodoAgents(tasks) {
   }
   return items;
 };
-export const groupAgentsByTodo = function groupAgentsByTodo(items) {
+export const groupAgentsByTodo = function groupAgentsByTodo(cResult) {
   const map = new Map();
-  const iter = items[Symbol.iterator]();
+  const iter = cResult[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -47,7 +47,7 @@ export const groupAgentsByTodo = function groupAgentsByTodo(items) {
         if (null != value) {
           let arr2 = arr.push(tmp2);
         } else {
-          items = [tmp2];
+          let items = [tmp2];
           let result = map.set(tmp2.todoId, items);
         }
       }

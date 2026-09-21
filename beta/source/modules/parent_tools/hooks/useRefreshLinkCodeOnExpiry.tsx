@@ -1,17 +1,51 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15144
+// Function ID: 15145
 // Name: useRefreshLinkCodeOnExpiry
-// Dependencies: [19, 7207, 2]
-// Exports: default
+// Dependencies: [19, 558, 568, 7205, 2]
 
-// Module 15155 (useRefreshLinkCodeOnExpiry)
-import useStableCallbackDefault from "useStableCallback" /* 7207 */;
+// Module 15144 (useRefreshLinkCodeOnExpiry)
+import c from "c" /* 568 */;
+import useStableCallbackDefault from "useStableCallback" /* 7205 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useRefreshLinkCodeOnExpiry.tsx");
 
-export default function useRefreshLinkCodeOnExpiry(arg0, arg1) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  closure_0 = arg0;
+  const cResult = c.c(4);
+  const tmp2 = useStableCallbackDefault(arg1);
+  closure_1 = tmp2;
+  if (cResult[0] === arg0) {
+    if (cResult[1] === tmp2) {
+      let tmp3 = cResult[2];
+      let tmp4 = cResult[3];
+    }
+    const effect = noop.useEffect(tmp3, tmp4);
+  }
+  const fn = function u() {
+    if (null != timeout) {
+      const _Date = Date;
+      const diff = tmp - Date.now();
+      if (diff <= 0) {
+        closure_1();
+      } else {
+        const _setTimeout = setTimeout;
+        timeout = setTimeout(closure_1, diff);
+        return () => clearTimeout(closure_0);
+      }
+    }
+  };
+  const items = [arg0, tmp2];
+  cResult[0] = arg0;
+  cResult[1] = tmp2;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp4 = items;
+  tmp3 = fn;
+}) : ((arg0, arg1) => {
   closure_0 = arg0;
   const tmp = useStableCallbackDefault(arg1);
   closure_1 = tmp;
@@ -29,4 +63,4 @@ export default function useRefreshLinkCodeOnExpiry(arg0, arg1) {
       }
     }
   }, items);
-};
+});

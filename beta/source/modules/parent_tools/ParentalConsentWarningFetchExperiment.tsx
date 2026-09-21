@@ -1,11 +1,11 @@
-// Module ID: 17870
-// Function ID: 17871
+// Module ID: 17873
+// Function ID: 17874
 // Name: ParentalConsentWarningFetchExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 17870 (ParentalConsentWarningFetchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 17873 (ParentalConsentWarningFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-07-parental-consent-warning-fetch", defaultConfig: { enabled: false }, variations: null };

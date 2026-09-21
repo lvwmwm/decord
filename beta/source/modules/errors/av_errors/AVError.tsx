@@ -1,11 +1,11 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9681
+// Function ID: 9682
 // Name: AVError
-// Dependencies: [109, 3, 573, 2]
+// Dependencies: [109, 3, 577, 2]
 
-// Module 9686 (AVError)
+// Module 9681 (AVError)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 let closure_2 = ["type"];
@@ -70,8 +70,8 @@ if (mapped.length !== set.size) {
     logger.error("AV error reported: " + type + " " + JSON.stringify(_objectWithoutProperties(context, closure_2)));
     DispatcherDefault.dispatch({ type: "REPORT_AV_ERROR", error: type, errorCode: obj4[type].errorCode, severity: obj4[type].severity, category: obj4[type].category, context });
   };
-  exports.getErrorInfo = function getErrorInfo(avError) {
-    return obj4[avError];
+  exports.getErrorInfo = function getErrorInfo(STREAM_FAILED_TO_START) {
+    return obj4[STREAM_FAILED_TO_START];
   };
 }
 set = new Set(mapped);

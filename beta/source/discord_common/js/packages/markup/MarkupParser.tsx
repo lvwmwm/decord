@@ -1,10 +1,10 @@
-// Module ID: 8245
-// Function ID: 8246
+// Module ID: 8250
+// Function ID: 8251
 // Name: MarkupParser
-// Dependencies: [8246, 2, 8247, 8248]
+// Dependencies: [8251, 2, 8252, 8253]
 
-// Module 8245 (MarkupParser)
-import markup_MarkupParser from "markup/MarkupParser" /* 8246 */;
+// Module 8250 (MarkupParser)
+import markup_MarkupParser from "markup/MarkupParser" /* 8251 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

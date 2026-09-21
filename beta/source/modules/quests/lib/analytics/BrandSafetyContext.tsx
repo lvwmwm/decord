@@ -1,18 +1,18 @@
-// Module ID: 7968
-// Function ID: 7969
+// Module ID: 7973
+// Function ID: 7974
 // Name: BrandSafetyContext
-// Dependencies: [7969, 2041, 2063, 4405, 4577, 1372, 7970, 7935, 1397, 4909, 2]
+// Dependencies: [7974, 2045, 2067, 4409, 4580, 1376, 7975, 7940, 1401, 4911, 2]
 // Exports: getBrandSafetyContext
 
-// Module 7968 (BrandSafetyContext)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 7970 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7969 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7973 (BrandSafetyContext)
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 7975 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 7974 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import UserStore from "UserStore" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export const getBrandSafetyContext = function getBrandSafetyContext(questContent
       if (undefined !== tmp4) {
         if (undefined !== tmp5) {
           const guildId = SelectedGuildStore.getGuildId();
-          let guild = null;
+          guild = null;
           if (null != guildId) {
             guild = GuildStore.getGuild(guildId);
           }

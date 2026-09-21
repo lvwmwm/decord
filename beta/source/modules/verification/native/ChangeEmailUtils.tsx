@@ -1,12 +1,12 @@
-// Module ID: 7228
-// Function ID: 7229
+// Module ID: 7229
+// Function ID: 7230
 // Name: verification/ChangeEmailUtils
-// Dependencies: [5, 5840, 7229, 7236, 1094, 2]
+// Dependencies: [5, 5838, 7230, 7237, 1098, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 7228 (verification/ChangeEmailUtils)
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7229 */;
+// Module 7229 (verification/ChangeEmailUtils)
+import ConstantsIOS from "ConstantsIOS" /* 1098 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7230 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_6 = async function _saveEmail(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -108,7 +108,7 @@ let closure_6 = async function _saveEmail(arg0, value) {
     }
   }
 };
-const ChangeEmailStore = fn(5840);
+const ChangeEmailStore = fn(5838);
 ({ setChangeEmailError: closure_4, ChangeEmailFields: hasOwnProperty } = ChangeEmailStore);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/verification/native/ChangeEmailUtils.tsx");

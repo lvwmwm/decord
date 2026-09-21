@@ -1,23 +1,23 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10129
+// Function ID: 10130
 // Name: InstantInviteSendStateStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [562, 1252, 2]
 // Exports: setSendState
 
-// Module 10150 (InstantInviteSendStateStore)
-import module_560 from "module_560" /* 560 */;
+// Module 10129 (InstantInviteSendStateStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let useInstantInviteSendStates = module_560.create(() => ({}));
+let useInstantInviteSendStates = module_562.create(() => ({}));
 const result = size.fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
 
 export const setSendState = function setSendState(arg0, arg1, arg2) {
   _require = arg0;
   dependencyMap = arg1;
   useInstantInviteSendStates = arg2;
-  const state = useInstantInviteSendStates.getState();
+  state = useInstantInviteSendStates.getState();
   require("ReactBatchUpdates").batchUpdates(() => {
     const obj = {};
     const merged = Object.assign(closure_3);

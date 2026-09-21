@@ -1,15 +1,16 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 9793
+// Function ID: 9794
 // Name: StageChannelUpsellCardStore
-// Dependencies: [2047, 1243, 510, 1248, 4379, 2]
-// Exports: useStageChannelUpsellCardStore
+// Dependencies: [2051, 1247, 510, 1252, 558, 568, 4383, 2]
 
-// Module 9815 (StageChannelUpsellCardStore)
+// Module 9793 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2047 */;
-import _mod4379 from "module_4379" /* 4379 */;
-import identity from "module_1243" /* 1243 */;
+import c from "c" /* 568 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2051 */;
+import _mod4383 from "module_4383" /* 4383 */;
+import identity from "module_1247" /* 1247 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,10 +30,22 @@ let closure_3 = identity.createWithEqualityFn((arg0) => {
 });
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx");
 
-export const useStageChannelUpsellCardStore = function useStageChannelUpsellCardStore() {
-  return closure_3((arg0) => {
-    const items = [, ];
-    ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
-    return items;
-  }, _mod4379.shallow);
-};
+export const useStageChannelUpsellCardStore = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l(arg0) {
+      const items = [, ];
+      ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
+      return items;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_3(first, _mod4383.shallow);
+}) : (() => closure_3((arg0) => {
+  const items = [, ];
+  ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
+  return items;
+}, _mod4383.shallow));

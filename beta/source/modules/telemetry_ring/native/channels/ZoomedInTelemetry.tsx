@@ -1,13 +1,13 @@
-// Module ID: 1983
-// Function ID: 1984
+// Module ID: 1987
+// Function ID: 1988
 // Name: ZoomedInTelemetry
-// Dependencies: [5, 1984, 1985, 1987, 1989, 1241, 2]
+// Dependencies: [5, 1988, 1989, 1991, 1993, 1245, 2]
 
-// Module 1983 (ZoomedInTelemetry)
-import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1984 */;
-import TelemetryRingNative2 from "TelemetryRingNative" /* 1987 */;
+// Module 1987 (ZoomedInTelemetry)
+import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1988 */;
+import TelemetryRingNative2 from "TelemetryRingNative" /* 1991 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 1985 */;
+import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 1989 */;
 
 const TelemetryRingNative = TelemetryRingNative2;
 
@@ -50,7 +50,7 @@ prototype["exportEntries"] = function exportEntries(arg0, arg1) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -128,7 +128,7 @@ prototype["exportEntries"] = function exportEntries(arg0, arg1) {
     }
   })();
 };
-let items = [fn(1987).TelemetryChannel.ZOOMED];
+let items = [fn(1991).TelemetryChannel.ZOOMED];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/telemetry_ring/native/channels/ZoomedInTelemetry.tsx");
 

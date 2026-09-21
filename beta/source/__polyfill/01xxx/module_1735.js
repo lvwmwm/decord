@@ -1,60 +1,66 @@
 // Module ID: 1735
 // Function ID: 1736
-// Dependencies: [1681]
-// Exports: makeViewDescriptorsSet
+// Dependencies: [32, 1697]
+// Exports: EntryExitTransition
 
 // Module 1735
-const require = arg1;
-const dependencyMap = arg6;
-let closure_2 = { code: "function pnpm_ViewDescriptorsSetTs1(descriptors){const{item,updater}=this.__closure;var _updater;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===item.tag;});if(index!==-1){descriptors[index]=item;}else{descriptors.push(item);}(_updater=updater)===null||_updater===void 0||_updater(true);return descriptors;}" };
-let closure_3 = { code: "function pnpm_ViewDescriptorsSetTs2(descriptors){const{viewTag}=this.__closure;const index=descriptors.findIndex(function(descriptor){return descriptor.tag===viewTag;});if(index!==-1){descriptors.splice(index,1);}return descriptors;}" };
+import TransitionType from "TransitionType" /* 1697 */;
+import _slicedToArray from "module_32" /* 32 */;
 
-export const makeViewDescriptorsSet = function makeViewDescriptorsSet() {
-  mutable = mutable(set[0]).makeMutable([]);
-  set = new Set();
-  return {
-    shareableViewDescriptors: mutable,
-    add(tag, current) {
-      closure_0 = tag;
-      set.add(tag.tag);
-      current = undefined;
-      if (current != null) {
-        current = current.current;
-      }
-      const fn = function u(arr) {
-        const findIndexResult = arr.findIndex((tag) => tag.tag === tag.tag);
-        if (-1 !== findIndexResult) {
-          arr[findIndexResult] = tag;
-        } else {
-          arr.push(tag);
-        }
-        if (current != null) {
-          tmp5(true);
-        }
-        return arr;
-      };
-      fn.__closure = { item: tag, updater: current };
-      fn.__workletHash = 1368679644593;
-      fn.__initData = __initData;
-      mutable.modify(fn, false);
-    },
-    remove(viewTag) {
-      closure_0 = viewTag;
-      set.delete(viewTag);
-      const fn = function c(arr) {
-        const findIndexResult = arr.findIndex((tag) => tag.tag === viewTag);
-        if (-1 !== findIndexResult) {
-          arr.splice(findIndexResult, 1);
-        }
-        return arr;
-      };
-      fn.__closure = { viewTag };
-      fn.__workletHash = 5508648561577;
-      fn.__initData = __initData2;
-      mutable.modify(fn, false);
-    },
-    has(arg0) {
-      return set.has(arg0);
+require = arg1;
+function addTransformToKeepPosition(style, style2, _default, arg3) {
+  const entries = Object.entries(style2);
+  while (tmp2 !== undefined) {
+    let tmp5 = _slicedToArray(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    let tmp8 = tmp7;
+    if (undefined !== tmp7.transform) {
+      let transform = tmp8.transform;
+      let arr = transform.unshift(_default);
+    } else {
+      let items = [_default];
+      tmp8.transform = items;
     }
-  };
+    let _parseInt = parseInt;
+    let result = parseInt(tmp6) / 2;
+    if (arg3) {
+      let _Math = Math;
+      let bound = Math.min(result, 49);
+    } else {
+      bound = result + 50;
+    }
+    let _HermesInternal = HermesInternal;
+    style["" + bound] = tmp8;
+    continue;
+  }
+}
+
+export const EntryExitTransition = function EntryExitTransition(name, translateX) {
+  let obj = { translateX: null, translateY: null, scale: null };
+  const structuredCloneResult = structuredClone(TransitionType.AnimationsData[translateX.exiting]);
+  obj.translateX = "" + translateX.translateX + "px";
+  obj.translateY = "" + translateX.translateY + "px";
+  obj.scale = "" + translateX.scaleX + "," + translateX.scaleY;
+  const obj2 = { name, style: {}, duration: 300 };
+  addTransformToKeepPosition(obj2.style, structuredCloneResult.style, obj, true);
+  addTransformToKeepPosition(obj2.style, structuredClone(TransitionType.AnimationsData[translateX.entering]).style, { translateX: "0px", translateY: "0px", scale: "1,1" }, false);
+  (function hideComponentBetweenAnimations(style) {
+    const map = new Map();
+    if (undefined === style[0].opacity) {
+      const result = map.set(48, 1);
+      const result1 = map.set(49, 0);
+    }
+    if (undefined === style[50].opacity) {
+      const result2 = map.set(50, 0);
+      const result3 = map.set(51, 1);
+    }
+    while (tmp6 !== undefined) {
+      [first, obj.opacity] = tmp7;
+      let obj = {};
+      let merged = Object.assign(style[first]);
+      style[first] = obj;
+      continue;
+    }
+  })(obj2.style);
+  return obj2;
 };

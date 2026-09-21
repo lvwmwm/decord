@@ -1,30 +1,30 @@
-// Module ID: 9593
-// Function ID: 9594
+// Module ID: 9589
+// Function ID: 9590
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [5, 9404, 4983, 4772, 4899, 2002, 502, 2041, 2063, 4395, 1372, 4775, 2040, 2004, 9315, 1074, 1349, 2038, 7978, 9594, 7995, 9571, 9595, 9596, 9597, 573, 9598, 9599, 4657, 4984, 9135, 9600, 9601, 1978, 9602, 9603, 9525, 1241, 9604, 9611, 9613, 5108, 1115, 9614, 9615, 1249, 4949, 4385, 9616, 4957, 1271, 1370, 8649, 7698, 4769, 7918, 2029, 2027, 2]
+// Dependencies: [5, 9402, 4985, 4774, 4901, 2006, 502, 2045, 2067, 4399, 1376, 4777, 2044, 2008, 9313, 1078, 1353, 2042, 7983, 9590, 8000, 9567, 9591, 9592, 9593, 577, 9594, 9595, 4660, 4986, 9133, 9596, 9597, 1982, 9598, 9599, 9521, 1245, 9600, 9607, 9609, 5110, 1119, 9610, 9611, 1253, 4951, 4389, 9612, 4959, 1275, 1374, 8654, 7703, 4771, 7923, 2033, 2031, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, fetchDeveloperApplications, fetchShelf, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 9593 (EmbeddedActivitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
+// Module 9589 (EmbeddedActivitiesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import dismissible_content from "dismissible_content" /* 2031 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2033 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4389 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 4899 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 4901 */;
+import ApplicationRecord from "ApplicationRecord" /* 2006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import UserStore from "UserStore" /* 1376 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 
-const ChannelRTCActionCreatorsDefault = tmp2(4957);
-const ChannelRTCParticipants = tmp6(9616);
+const ChannelRTCActionCreatorsDefault = tmp2(4959);
+const ChannelRTCParticipants = tmp6(9612);
 require = fn;
 let closure_27 = async function _runPrimaryAppCommandOrJoinEmbeddedActivity(arg0, value) {
   if (c17 === 2) {
@@ -37,7 +37,7 @@ let closure_27 = async function _runPrimaryAppCommandOrJoinEmbeddedActivity(arg0
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -82,7 +82,7 @@ let closure_27 = async function _runPrimaryAppCommandOrJoinEmbeddedActivity(arg0
           closure_140_25 = undefined;
           c16 = 1;
           c17 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -279,9 +279,9 @@ let closure_27 = async function _runPrimaryAppCommandOrJoinEmbeddedActivity(arg0
                 }
                 let tmp2 = type === constants2.GUILD_VOICE;
                 application = application.getApplication(arg0);
-                const obj = closure_1_0(9135);
-                const hasApplicationFlagResult = closure_1_0(9135).hasApplicationFlag(application, constants.EMBEDDED);
-                const result = closure_1_0(9600).isActivityInTextSupportedForChannel(type);
+                const obj = closure_1_0(9133);
+                const hasApplicationFlagResult = closure_1_0(9133).hasApplicationFlag(application, constants.EMBEDDED);
+                const result = closure_1_0(9596).isActivityInTextSupportedForChannel(type);
                 if (tmp2) {
                   tmp2 = hasApplicationFlagResult;
                 }
@@ -413,7 +413,7 @@ let closure_29 = async function _maybeSendPrimaryAppCommand(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -451,7 +451,7 @@ let closure_29 = async function _maybeSendPrimaryAppCommand(arg0, value) {
           let currentUser;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -506,7 +506,7 @@ let closure_29 = async function _maybeSendPrimaryAppCommand(arg0, value) {
               }
             }
             channel = closure_130_10.getChannel(closure_129_2);
-            let guild = null;
+            guild = null;
             if (null != closure_129_3) {
               guild = closure_130_11.getGuild(closure_129_3);
             }
@@ -575,32 +575,32 @@ let closure_29 = async function _maybeSendPrimaryAppCommand(arg0, value) {
                         obj2.error_status = error_status;
                         obj2.error_reason_code = error_reason_code;
                         obj2.source = source;
-                        nonce(1241).track(constants.ACTIVITY_INTERACTION_CALLBACK_ERROR, obj2);
+                        nonce(1245).track(constants.ACTIVITY_INTERACTION_CALLBACK_ERROR, obj2);
                         if (null != error_code) {
                           if (null != error_message) {
                             if (null != error_status) {
                               const obj3 = { status: error_status, body: null };
                               const obj4 = { message: error_message, code: error_code };
                               obj3.body = obj4;
-                              const tmp21 = new tmp3(4657)(obj3);
+                              const tmp21 = new tmp3(4660)(obj3);
                               closure_1_1(tmp21);
                             }
                           }
                         }
                         if (null != error_reason_code) {
-                          if (error_reason_code in tmp3(4984).ReasonCodes) {
-                            const tmp14 = new tmp3(4984)(error_reason_code);
+                          if (error_reason_code in tmp3(4986).ReasonCodes) {
+                            const tmp14 = new tmp3(4986)(error_reason_code);
                             closure_1_1(tmp14);
                           }
                         }
-                        const obj = nonce(1241);
-                        const tmp3Result = nonce(4984);
-                        closure_1_1(new nonce(4984)(nonce(4984).ReasonCodes.UNKNOWN));
+                        const obj = nonce(1245);
+                        const tmp3Result = nonce(4986);
+                        closure_1_1(new nonce(4986)(nonce(4986).ReasonCodes.UNKNOWN));
                       }
                     };
                   }
                 };
-                nonce(9525)(obj);
+                nonce(9521)(obj);
               });
               c5 = 7;
               c6 = 1;
@@ -700,7 +700,7 @@ let closure_31 = async function _joinEmbeddedActivity(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -736,7 +736,7 @@ let closure_31 = async function _joinEmbeddedActivity(arg0, value) {
           closure_130_16 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -1006,7 +1006,7 @@ let closure_34 = async function _uploadImageAttachment(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -1031,7 +1031,7 @@ let closure_34 = async function _uploadImageAttachment(arg0, value) {
             tmp29 = obj4;
           }
           const HTTP = HTTPUtils.HTTP;
-          const request = { url: __initData3.APPLICATION_UPLOAD_ATTACHMENT(closure_0), query: tmp29, attachments: null, rejectWithError: true };
+          const request = { url: closure_2_22.APPLICATION_UPLOAD_ATTACHMENT(closure_0), query: tmp29, attachments: null, rejectWithError: true };
           const obj6 = { name: "file", file: dependencyMap };
           const items = [obj6];
           request.attachments = items;
@@ -1098,7 +1098,7 @@ let closure_36 = async function _fetchShelf(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -1134,7 +1134,7 @@ let closure_36 = async function _fetchShelf(arg0, value) {
           closure_132_12 = undefined;
           c8 = 1;
           c9 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -1159,12 +1159,12 @@ let closure_36 = async function _fetchShelf(arg0, value) {
                 if (isFetching) {
                   const promise = new Promise((cache) => {
                     closure_4 = closure_2_35.bind(null, closure_1_0, cache);
-                    const subscription = closure_1(573).subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", closure_4);
+                    const subscription = closure_1(577).subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", closure_4);
                   });
                   closure_132_6 = promise;
                   const promise2 = new Promise((cache) => {
                     closure_5 = closure_2_35.bind(null, closure_1_0, cache);
-                    const subscription = closure_1(573).subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL", closure_5);
+                    const subscription = closure_1(577).subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL", closure_5);
                   });
                   closure_132_7 = promise2;
                   const items = [closure_132_6, closure_132_7];
@@ -1286,10 +1286,10 @@ let closure_37 = async function _sendEmbeddedActivityInvite() {
     closure_130_1(closure_130_2[53]).sendInvite(closure_129_1, closure_129_5.code, closure_129_3, closure_129_4);
     closure_130_1(closure_130_2[53]);
   }
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ activityChannelId: closure_129_0, invitedChannelId: closure_129_1, applicationId: closure_129_2, location: closure_129_3, inviteAnalyticsMetadata: closure_129_4 } = closure_0);
-  return "PX_16";
+  return "Set";
 };
 let closure_38 = async function _sendEmbeddedActivityInviteUser() {
   closure_129_6 = await closure_130_1(closure_130_2[52]).createInvite(closure_129_0, { target_type: closure_130_26.EMBEDDED_APPLICATION, target_application_id: closure_129_1 }, closure_129_3);
@@ -1303,17 +1303,17 @@ let closure_38 = async function _sendEmbeddedActivityInviteUser() {
     } else {
       let content;
       if (null != closure_1_5) {
-        content = closure_1(7918).parse(channel, tmp2).content;
-        const obj = closure_1(7918);
+        content = closure_1(7923).parse(channel, tmp2).content;
+        const obj = closure_1(7923);
       }
-      const obj2 = closure_1(7698);
+      const obj2 = closure_1(7703);
       obj2.sendInvite(result, code.code, closure_1_3, closure_1_4, content);
     }
   });
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ channelId: closure_129_0, applicationId: closure_129_1, userId: closure_129_2, location: closure_129_3, inviteAnalyticsMetadata: closure_129_4, prefixedContent: closure_129_5 } = closure_0);
-  return "PX_16";
+  return "Set";
 };
 let closure_39 = async function _validateTestMode(arg0, value) {
   if (c1 === 2) {
@@ -1326,7 +1326,7 @@ let closure_39 = async function _validateTestMode(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -1342,7 +1342,7 @@ let closure_39 = async function _validateTestMode(arg0, value) {
         } else {
           c4 = 1;
           const HTTP = HTTPUtils.HTTP;
-          const obj4 = { url: __initData3.ACTIVITY_TEST_MODE(closure_0), oldFormErrors: true, rejectWithError: true };
+          const obj4 = { url: closure_2_22.ACTIVITY_TEST_MODE(closure_0), oldFormErrors: true, rejectWithError: true };
           c2 = 2;
           c1 = 1;
           const obj5 = { value: HTTP.get(obj4), done: false };
@@ -1417,7 +1417,7 @@ let closure_42 = async function _refreshProxyTicket(applicationId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1533,14 +1533,14 @@ let closure_42 = async function _refreshProxyTicket(applicationId, arg1) {
     }
   })();
 };
-let closure_4 = fn(9404).getOrFetchApplicationCommandIndexForTarget;
-let closure_16 = fn(2004).SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES;
-const ActivityPanelModes = fn(9315).ActivityPanelModes;
-const Constants = fn(1074);
+let closure_4 = fn(9402).getOrFetchApplicationCommandIndexForTarget;
+let closure_16 = fn(2008).SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES;
+const ActivityPanelModes = fn(9313).ActivityPanelModes;
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_18, AnalyticsGameOpenTypes: closure_19, ApplicationFlags: closure_20, ChannelTypes: closure_21, Endpoints: closure_22, PopoutWindowKeys: closure_23 } = Constants);
-const INSTALL_LESS_APP_IDS = fn(1349).INSTALL_LESS_APP_IDS;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const InviteTargetTypes = fn(7978).InviteTargetTypes;
+const INSTALL_LESS_APP_IDS = fn(1353).INSTALL_LESS_APP_IDS;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
+const InviteTargetTypes = fn(7983).InviteTargetTypes;
 let closure_28 = { NO_PRIMARY_APP_COMMAND: 1, [1]: "NO_PRIMARY_APP_COMMAND", UNAUTHORIZED: 2, [2]: "UNAUTHORIZED", NO_CHANNEL: 3, [3]: "NO_CHANNEL", FAILED_ACTIVITY_LAUNCH_CHECKS: 4, [4]: "FAILED_ACTIVITY_LAUNCH_CHECKS" };
 let closure_30 = { OTHER: 0, [0]: "OTHER", NO_APPLICATION_ID: 1, [1]: "NO_APPLICATION_ID", UNKNOWN_USER_OR_APPLICATION: 2, [2]: "UNKNOWN_USER_OR_APPLICATION", INVALID_CHANNEL: 3, [3]: "INVALID_CHANNEL", LAUNCHABILITY_CHECK_FAILED_OTHER: 4, [4]: "LAUNCHABILITY_CHECK_FAILED_OTHER", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 5, [5]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 6, [6]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", FAILED_ACTIVITY_LAUNCH_CHECKS: 7, [7]: "FAILED_ACTIVITY_LAUNCH_CHECKS", NOT_CONNECTED_TO_VOICE_CHANNEL: 8, [8]: "NOT_CONNECTED_TO_VOICE_CHANNEL", AIT_NOT_ENABLED_FOR_USER: 9, [9]: "AIT_NOT_ENABLED_FOR_USER" };
 const size = fn(2);

@@ -1,11 +1,11 @@
-// Module ID: 4943
-// Function ID: 4944
+// Module ID: 4945
+// Function ID: 4946
 // Name: GuildOnboardingHomeSettingsStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 4943 (GuildOnboardingHomeSettingsStore)
+// Module 4945 (GuildOnboardingHomeSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 function handleSettingsLoadSuccess(arg0) {
   ({ homeSettings, guildId } = arg0);
@@ -44,27 +44,27 @@ prototype["getSettings"] = function getSettings(arg0) {
   }
   return tmp;
 };
-prototype["getNewMemberActions"] = function getNewMemberActions(guildId) {
+prototype["getNewMemberActions"] = function getNewMemberActions(id) {
   let tmp = null;
   let tmp2 = null;
-  if (null != guildId) {
+  if (null != id) {
     const self = this;
-    const settings = this.getSettings(guildId);
+    const settings = this.getSettings(id);
     let newMemberActions;
     if (settings != tmp) {
       newMemberActions = settings.newMemberActions;
     }
     tmp2 = null;
     if (tmp != newMemberActions) {
-      if (tmp == dependencyMap2[guildId]) {
+      if (tmp == dependencyMap2[id]) {
         let newMemberActions1;
-        if (dependencyMap[guildId] != tmp) {
+        if (dependencyMap[id] != tmp) {
           newMemberActions1 = tmp8.newMemberActions;
         }
         tmp = null;
         if (!tmp10) {
-          tmp5[guildId] = newMemberActions1;
-          tmp = tmp5[guildId];
+          tmp5[id] = newMemberActions1;
+          tmp = tmp5[id];
         }
         tmp10 = tmp == newMemberActions1;
       }
@@ -88,9 +88,9 @@ prototype["getActionForChannel"] = function getActionForChannel(guildId, channel
 prototype["hasMemberAction"] = function hasMemberAction(id, id2) {
   return null != this.getActionForChannel(id, id2);
 };
-prototype["getResourceChannels"] = function getResourceChannels(guildId) {
+prototype["getResourceChannels"] = function getResourceChannels(guild_id) {
   let resourceChannels;
-  if (dependencyMap[guildId] != null) {
+  if (dependencyMap[guild_id] != null) {
     resourceChannels = tmp.resourceChannels;
   }
   if (resourceChannels == null) {
@@ -98,13 +98,13 @@ prototype["getResourceChannels"] = function getResourceChannels(guildId) {
   }
   return resourceChannels;
 };
-prototype["getResourceForChannel"] = function getResourceForChannel(guildId, channelId) {
+prototype["getResourceForChannel"] = function getResourceForChannel(guild_id, channelId) {
   closure_0 = channelId;
-  if (null == guildId) {
+  if (null == guild_id) {
     return null;
   } else {
     const self = this;
-    const resourceChannels = this.getResourceChannels(guildId);
+    const resourceChannels = this.getResourceChannels(guild_id);
     let found = null;
     if (resourceChannels !== closure_1) {
       found = resourceChannels.find((channelId) => channelId.channelId === closure_0);

@@ -1,10 +1,10 @@
-// Module ID: 8673
-// Function ID: 8674
+// Module ID: 8678
+// Function ID: 8679
 // Name: ForumPlatformUtils
-// Dependencies: [1115, 2]
+// Dependencies: [1119, 2]
 
-// Module 8673 (ForumPlatformUtils)
-import util from "util" /* 1115 */;
+// Module 8678 (ForumPlatformUtils)
+import util from "util" /* 1119 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");

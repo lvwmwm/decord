@@ -1,22 +1,22 @@
-// Module ID: 7663
-// Function ID: 7664
+// Module ID: 7665
+// Function ID: 7666
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [4447, 1374, 560, 1248, 7664, 7427, 2]
+// Dependencies: [4451, 1378, 562, 1252, 7666, 7429, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 7663 (PremiumPlanPurchasedStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7664 */;
-import ActionSheetStore from "ActionSheetStore" /* 4447 */;
+// Module 7665 (PremiumPlanPurchasedStore)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7666 */;
+import ActionSheetStore from "ActionSheetStore" /* 4451 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
-const module_560 = fn(560);
-const obj3 = module_560.create(() => ({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: null }));
+const module_562 = fn(562);
+const obj3 = module_562.create(() => ({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: null }));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanPurchasedStore.tsx");
 
@@ -24,7 +24,7 @@ export const usePremiumPlanPurchasedStore = obj3;
 export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFromNewFlow(productId) {
   productId = productId.productId;
   ({ onPaymentStart, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap } = productId);
-  productId(1248).batchUpdates(() => {
+  productId(1252).batchUpdates(() => {
     obj3.setState({ productId, initiatedPurchaseFromNewFlow: true, onPaymentSuccess, onPaymentDismiss });
   });
   if (onPaymentStart != null) {
@@ -33,7 +33,7 @@ export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFrom
 };
 export const setPaymentSuccess = function setPaymentSuccess() {
   if (obj3.getState().initiatedPurchaseFromNewFlow) {
-    const state = obj3.getState();
+    state = obj3.getState();
     const onPaymentSuccess = state.onPaymentSuccess;
     ReactBatchUpdates.batchUpdates(() => state.setState({ isPaymentSuccess: true }));
     if (onPaymentSuccess != null) {
@@ -48,7 +48,7 @@ export const setMobileWebRedirectCheckoutStatus = function setMobileWebRedirectC
 export const handleMobileWebCheckoutStatus = function handleMobileWebCheckoutStatus(mobileWebRedirectCheckoutStatus) {
   _require = mobileWebRedirectCheckoutStatus;
   if ("succeeded" === mobileWebRedirectCheckoutStatus) {
-    const state = obj3.getState();
+    state = obj3.getState();
     const onPaymentSuccess = state.onPaymentSuccess;
     if ("dismissed" !== state.mobileWebRedirectCheckoutStatus) {
       if (ActionSheetStore.getKey() !== closure_4) {
@@ -74,7 +74,7 @@ export const showOldPaymentFlowSuccess = function showOldPaymentFlowSuccess(fn) 
   }
 };
 export const reset = function reset() {
-  const state = obj3.getState();
+  state = obj3.getState();
   ({ onPaymentDismiss, mobileWebRedirectCheckoutStatus: require } = state);
   if (onPaymentDismiss != null) {
     const obj = { productId: tmp2, isSuccess: tmp3 };
@@ -88,6 +88,6 @@ export const reset = function reset() {
         str = "dismissed";
       }
     }
-    obj3.setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "channel" });
+    obj3.setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "emoji" });
   });
 };

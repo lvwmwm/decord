@@ -1,12 +1,14 @@
-// Module ID: 17757
-// Function ID: 17758
+// Module ID: 17760
+// Function ID: 17761
 // Name: PastVcActivityMessagesExperiment
-// Dependencies: [4672, 4669, 2]
-// Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
+// Dependencies: [4675, 4672, 558, 568, 2]
+// Exports: isPastVcActivityMessagesEnabled
 
-// Module 17757 (PastVcActivityMessagesExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 4672 */;
-import createExperiment from "module_4669" /* 4669 */;
+// Module 17760 (PastVcActivityMessagesExperiment)
+import c from "c" /* 568 */;
+import ExperimentConstants from "ExperimentConstants" /* 4675 */;
+import createExperiment from "module_4672" /* 4672 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-02_past_vc_activity_messages", label: "Past VC Activity Messages", commonTriggerPoint: ExperimentConstants.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: null };
@@ -19,6 +21,25 @@ export default experiment;
 export const isPastVcActivityMessagesEnabled = function isPastVcActivityMessagesEnabled(id, GuildSettingsModalOverview) {
   return experiment.getCurrentConfig({ guildId: id, location: GuildSettingsModalOverview }, { autoTrackExposure: true }).enabled;
 };
-export const useIsPastVcActivityMessagesEnabled = function useIsPastVcActivityMessagesEnabled(guildId, location) {
-  return experiment.useExperiment({ guildId, location }, { autoTrackExposure: true }).enabled;
-};
+export const useIsPastVcActivityMessagesEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+  const cResult = c.c(4);
+  if (cResult[0] === guildId) {
+    if (cResult[1] === location) {
+      let tmp2 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { autoTrackExposure: true };
+      cResult[3] = obj2;
+      let tmp4 = obj2;
+    } else {
+      tmp4 = cResult[3];
+    }
+    return experiment.useExperiment(tmp2, tmp4).enabled;
+  }
+  const obj3 = { guildId, location };
+  cResult[0] = guildId;
+  cResult[1] = location;
+  cResult[2] = obj3;
+  tmp2 = obj3;
+}) : ((guildId, location) => experiment.useExperiment({ guildId, location }, { autoTrackExposure: true }).enabled);

@@ -1,23 +1,225 @@
-// Module ID: 6865
-// Function ID: 6866
+// Module ID: 6858
+// Function ID: 6859
 // Name: BaseTextField
-// Dependencies: [19, 21, 1364, 6863, 4463, 6866, 7180, 4462, 2]
+// Dependencies: [19, 21, 1368, 558, 568, 6856, 4468, 6859, 4467, 6860, 2]
 
-// Module 6865 (BaseTextField)
-import mergeProps from "mergeProps" /* 4462 */;
-import useFocus from "useFocus" /* 4463 */;
-import InputFieldContainer from "InputFieldContainer" /* 6863 */;
-import NativeTextInput from "NativeTextInput" /* 6866 */;
-import propsForNativeTextInput from "propsForNativeTextInput" /* 7180 */;
+// Module 6858 (BaseTextField)
+import c from "c" /* 568 */;
+import mergeProps from "mergeProps" /* 4467 */;
+import useFocus from "useFocus" /* 4468 */;
+import InputFieldContainer from "InputFieldContainer" /* 6856 */;
+import propsForNativeTextInput from "propsForNativeTextInput" /* 6859 */;
+import NativeTextInput from "NativeTextInput" /* 6860 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
-const result = size.fileFinishedImporting("design/components/TextField/native/BaseTextField.native.tsx");
+let result = size.fileFinishedImporting("design/components/TextField/native/BaseTextField.native.tsx");
 
-export const BaseTextField = noop.forwardRef((size, ref2) => {
+export const BaseTextField = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((leadingIcon, ref2) => {
+  const cResult = c.c(37);
+  if (cResult[0] === leadingIcon.round) {
+    if (cResult[1] === leadingIcon.size) {
+      if (cResult[2] === tmp4) {
+        let tmp5 = cResult[3];
+      }
+      const inputStyles = tmp(6856).useInputStyles(tmp5);
+      const tmpResult = tmp(6856);
+      const focus = tmp(4468).useFocus();
+      ({ focusProps, isFocused } = focus);
+      const ref = noop.useRef(null);
+      if (cResult[4] === leadingIcon.autoComplete) {
+        if (cResult[5] === leadingIcon.enableAndroidSanitizedInputWorkaround) {
+          if (cResult[6] === leadingIcon.keyboardType) {
+            if (cResult[7] === leadingIcon.secureTextEntry) {
+              let tmp10 = cResult[8];
+            }
+            const onChangeText = leadingIcon.onChangeText;
+            if (cResult[9] !== onChangeText) {
+              const fn = function h(str) {
+                let replaced = str;
+                if (null != str) {
+                  replaced = str.replace(/\r\n?|\n/g, " ");
+                }
+                if (replaced !== str) {
+                  const current = ref.current;
+                  if (current != null) {
+                    const obj = { text: replaced };
+                    current.setNativeProps(obj);
+                  }
+                }
+                if (onChangeText != null) {
+                  tmp4(replaced);
+                }
+              };
+              cResult[9] = onChangeText;
+              cResult[10] = fn;
+              let tmp13 = fn;
+            } else {
+              tmp13 = cResult[10];
+            }
+            if (cResult[11] === focusProps) {
+              if (cResult[12] === leadingIcon) {
+                let tmp15 = cResult[13];
+              }
+              if (cResult[14] !== leadingIcon.value) {
+                let replaced = str3;
+                if (null != leadingIcon.value) {
+                  replaced = str3.replace(/\r\n?|\n/g, " ");
+                }
+                cResult[14] = leadingIcon.value;
+                cResult[15] = replaced;
+                let tmp17 = replaced;
+              } else {
+                tmp17 = cResult[15];
+              }
+              if (cResult[16] !== leadingIcon.defaultValue) {
+                let replaced1 = str5;
+                if (null != leadingIcon.defaultValue) {
+                  replaced1 = str5.replace(/\r\n?|\n/g, " ");
+                }
+                cResult[16] = leadingIcon.defaultValue;
+                cResult[17] = replaced1;
+                let tmp19 = replaced1;
+              } else {
+                tmp19 = cResult[17];
+              }
+              if (cResult[18] !== ref2) {
+                const mergeRefsResult = tmp(4467).mergeRefs(ref, ref2);
+                cResult[18] = ref2;
+                cResult[19] = mergeRefsResult;
+                let tmp22 = mergeRefsResult;
+                const tmpResult9 = tmp(4467);
+              } else {
+                tmp22 = cResult[19];
+              }
+              if (cResult[20] === leadingIcon.inputStyle) {
+                if (cResult[21] === inputStyles.padding) {
+                  if (cResult[22] === inputStyles.text) {
+                    let tmp24 = cResult[23];
+                  }
+                  if (cResult[24] === tmp13) {
+                    if (cResult[25] === tmp10) {
+                      if (cResult[26] === inputStyles.placeholderText.color) {
+                        if (cResult[27] === tmp15) {
+                          if (cResult[28] === tmp17) {
+                            if (cResult[29] === tmp19) {
+                              if (cResult[30] === tmp22) {
+                                if (cResult[31] === tmp24) {
+                                  let tmp25 = cResult[32];
+                                }
+                                if (cResult[33] === isFocused) {
+                                  if (cResult[34] === leadingIcon) {
+                                    if (cResult[35] === tmp25) {
+                                      let tmp34 = cResult[36];
+                                    }
+                                    return tmp34;
+                                  }
+                                }
+                                const obj2 = {};
+                                const merged = Object.assign(leadingIcon);
+                                obj2.isFocused = isFocused;
+                                const items = [tmp14, tmp25, leadingIcon.trailing];
+                                obj2.children = items;
+                                const tmp39 = React4(tmp(6856).InputFieldContainer, obj2);
+                                cResult[33] = isFocused;
+                                cResult[34] = leadingIcon;
+                                cResult[35] = tmp25;
+                                cResult[36] = tmp39;
+                                tmp34 = tmp39;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const obj3 = {};
+                  const merged1 = Object.assign(tmp10);
+                  const merged2 = Object.assign(tmp15);
+                  obj3.value = tmp17;
+                  obj3.defaultValue = tmp19;
+                  obj3.onChangeText = tmp13;
+                  obj3.ref = tmp22;
+                  obj3.style = tmp24;
+                  obj3.placeholderTextColor = inputStyles.placeholderText.color;
+                  const tmp33 = React3(tmp(6860).NativeTextInput, obj3);
+                  cResult[24] = tmp13;
+                  cResult[25] = tmp10;
+                  cResult[26] = inputStyles.placeholderText.color;
+                  cResult[27] = tmp15;
+                  cResult[28] = tmp17;
+                  cResult[29] = tmp19;
+                  cResult[30] = tmp22;
+                  cResult[31] = tmp24;
+                  cResult[32] = tmp33;
+                  tmp25 = tmp33;
+                }
+              }
+              const items1 = [, , ];
+              ({ padding: arr[0], text: arr[1] } = inputStyles);
+              items1[2] = leadingIcon.inputStyle;
+              cResult[20] = leadingIcon.inputStyle;
+              cResult[21] = inputStyles.padding;
+              cResult[22] = inputStyles.text;
+              cResult[23] = items1;
+              tmp24 = items1;
+            }
+            const tmpResult10 = tmp(6859);
+            const result = tmpResult10.propsForNativeTextInput(tmp(4467).mergeProps(leadingIcon, focusProps));
+            cResult[11] = focusProps;
+            cResult[12] = leadingIcon;
+            cResult[13] = result;
+            tmp15 = result;
+            const tmpResult11 = tmp(4467);
+          }
+        }
+      }
+      let tmp11 = null;
+      if (leadingIcon.enableAndroidSanitizedInputWorkaround) {
+        ({ secureTextEntry, keyboardType, autoComplete } = leadingIcon);
+        if (secureTextEntry === undefined) {
+          secureTextEntry = false;
+        }
+        if (keyboardType === undefined) {
+          keyboardType = "default";
+        }
+        let str = "off";
+        if (!tmpResult12.isAndroid()) {
+          str = autoComplete;
+        }
+        const obj4 = { autoComplete: str, secureTextEntry: null, keyboardType: null };
+        tmpResult12 = tmp(1368);
+        const tmpResult13 = tmp(1368);
+        obj4.secureTextEntry = tmp(1368).isAndroid() || secureTextEntry;
+        const tmp12 = tmp(1368).isAndroid() || secureTextEntry;
+        let str2 = "visible-password";
+        if (!tmpResult14.isAndroid()) {
+          str2 = keyboardType;
+        }
+        obj4.keyboardType = str2;
+        tmp11 = obj4;
+        tmpResult14 = tmp(1368);
+      }
+      cResult[4] = leadingIcon.autoComplete;
+      cResult[5] = leadingIcon.enableAndroidSanitizedInputWorkaround;
+      cResult[6] = leadingIcon.keyboardType;
+      cResult[7] = leadingIcon.secureTextEntry;
+      cResult[8] = tmp11;
+      tmp10 = tmp11;
+      const tmpResult8 = tmp(4468);
+    }
+  }
+  const obj5 = { size: leadingIcon.size, round: leadingIcon.round, hasLeadingIcon: null != leadingIcon.leadingIcon };
+  cResult[0] = leadingIcon.round;
+  cResult[1] = leadingIcon.size;
+  cResult[2] = null != leadingIcon.leadingIcon;
+  cResult[3] = obj5;
+  tmp5 = obj5;
+}) : ((size, ref2) => {
   const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, round: size.round, hasLeadingIcon: null != size.leadingIcon });
   const obj2 = { size: size.size, round: size.round, hasLeadingIcon: null != size.leadingIcon };
   const focus = useFocus.useFocus();
@@ -37,17 +239,17 @@ export const BaseTextField = noop.forwardRef((size, ref2) => {
       str = autoComplete;
     }
     const obj5 = { autoComplete: str, secureTextEntry: null, keyboardType: null };
-    tmpResult = tmp(1364);
-    const tmpResult6 = tmp(1364);
-    obj5.secureTextEntry = tmp(1364).isAndroid() || secureTextEntry;
-    const tmp7 = tmp(1364).isAndroid() || secureTextEntry;
+    tmpResult = tmp(1368);
+    const tmpResult6 = tmp(1368);
+    obj5.secureTextEntry = tmp(1368).isAndroid() || secureTextEntry;
+    const tmp7 = tmp(1368).isAndroid() || secureTextEntry;
     let str2 = "visible-password";
     if (!tmpResult7.isAndroid()) {
       str2 = keyboardType;
     }
     obj5.keyboardType = str2;
     tmp6 = obj5;
-    tmpResult7 = tmp(1364);
+    tmpResult7 = tmp(1368);
   }
   const onChangeText = size.onChangeText;
   const items = [onChangeText];
@@ -99,4 +301,4 @@ export const BaseTextField = noop.forwardRef((size, ref2) => {
   items1[2] = size.trailing;
   obj6.children = items1;
   return tmp9(InputFieldContainer.InputFieldContainer, obj6);
-});
+}));

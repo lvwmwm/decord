@@ -1,13 +1,12 @@
-// Module ID: 14447
-// Function ID: 14448
+// Module ID: 14450
+// Function ID: 14451
 // Name: ContextMenuContainer
-// Dependencies: [19, 17, 21, 4756, 14448, 8175, 1626, 5115, 5167, 4466, 2]
-// Exports: ContextMenuContainer
+// Dependencies: [19, 17, 21, 4758, 14451, 558, 568, 8183, 1630, 5117, 5169, 4471, 2]
 
-// Module 14447 (ContextMenuContainer)
-import OverlayViewDefault from "OverlayView" /* 5115 */;
-import Dialog from "Dialog" /* 5167 */;
-import ContextMenuPopout from "ContextMenuPopout" /* 14448 */;
+// Module 14450 (ContextMenuContainer)
+import OverlayViewDefault from "OverlayView" /* 5117 */;
+import Dialog from "Dialog" /* 5169 */;
+import ContextMenuPopout from "ContextMenuPopout" /* 14451 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +18,7 @@ function getItemKey(key) {
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { overlayView: null, wrapperView: null };
 const obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -34,10 +33,105 @@ function EMPTY_CALLBACK() {
 function renderItem(arg0, menu, transitionState, cleanUp) {
   return jsx(ContextMenuPopout.ContextMenuPopout, { menu, transitionState, cleanUp }, arg0);
 }
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/ContextMenu/native/ContextMenuContainer.native.tsx");
 
-export const ContextMenuContainer = function ContextMenuContainer() {
+export const ContextMenuContainer = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(13);
+  const tmp2 = closure_6();
+  _require = tmp2;
+  let obj = require("c");
+  const activeContextMenu = require("ContextMenuState").useActiveContextMenu();
+  if (cResult[0] !== activeContextMenu) {
+    if (null != activeContextMenu) {
+      const items = [activeContextMenu];
+      let tmp6 = items;
+    } else {
+      tmp6 = closure_7;
+    }
+    cResult[0] = activeContextMenu;
+    cResult[1] = tmp6;
+  } else {
+    let requestClose;
+    if (activeContextMenu != null) {
+      requestClose = activeContextMenu.requestClose;
+    }
+    if (requestClose == null) {
+      requestClose = EMPTY_CALLBACK;
+    }
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function p() {
+        const KeyboardEvents = closure_0(onDismiss[8]).KeyboardEvents;
+        closure_0 = KeyboardEvents.addListener("keyboardDidHide", () => {
+          const ContextMenuStore = closure_0(onDismiss[7]).ContextMenuStore;
+          const menu = ContextMenuStore.getState().menu;
+          let ignoreKeyboardHide;
+          if (menu != null) {
+            ignoreKeyboardHide = menu.ignoreKeyboardHide;
+          }
+          if (true !== ignoreKeyboardHide) {
+            closure_0(onDismiss[7]).hideContextMenu();
+            const tmpResult = closure_0(onDismiss[7]);
+          }
+        });
+        return () => {
+          closure_0.remove();
+        };
+      };
+      const items1 = [];
+      cResult[2] = fn;
+      cResult[3] = items1;
+      let tmp12 = items1;
+      let tmp11 = fn;
+    } else {
+      tmp11 = cResult[2];
+      tmp12 = cResult[3];
+    }
+    const effect = noop.useEffect(tmp11, tmp12);
+    if (cResult[4] !== requestClose) {
+      class C {
+        constructor() {
+          tmp = closure_1(true);
+          return;
+        }
+      }
+      cResult[4] = requestClose;
+      cResult[5] = C;
+    } else {
+      class C {
+        constructor() {
+          tmp = closure_1(true);
+          return;
+        }
+      }
+    }
+    dependencyMap = tmp15;
+    if (cResult[6] === tmp15) {
+      class C {
+        constructor() {
+          tmp = closure_1(true);
+          return;
+        }
+      }
+    }
+    const fn2 = function x(children, arg1) {
+      const obj = { style: closure_0.overlayView, children: null };
+      let str = "auto";
+      if (0 === arg1.length) {
+        str = "none";
+      }
+      const obj2 = { pointerEvents: str, style: closure_0.wrapperView, children: jsx(Dialog.Dialog, { onDismiss, children }) };
+      obj.children = <React4 pointerEvents={str} style={closure_0.wrapperView}>{jsx(Dialog.Dialog, { onDismiss, children: arg0 })}</React4>;
+      return jsx(OverlayViewDefault, { style: closure_0.overlayView, children: null });
+    };
+    cResult[6] = tmp15;
+    cResult[7] = tmp2.overlayView;
+    cResult[8] = tmp2.wrapperView;
+    cResult[9] = fn2;
+  }
+}) : (() => {
   const tmp = closure_6();
   _require = tmp;
   const activeContextMenu = require("ContextMenuState").useActiveContextMenu();
@@ -55,17 +149,17 @@ export const ContextMenuContainer = function ContextMenuContainer() {
     requestClose = EMPTY_CALLBACK;
   }
   const effect = noop.useEffect(() => {
-    const KeyboardEvents = closure_0(callback[6]).KeyboardEvents;
+    const KeyboardEvents = closure_0(callback[8]).KeyboardEvents;
     closure_0 = KeyboardEvents.addListener("keyboardDidHide", () => {
-      const ContextMenuStore = closure_0(onDismiss[5]).ContextMenuStore;
+      const ContextMenuStore = closure_0(onDismiss[7]).ContextMenuStore;
       const menu = ContextMenuStore.getState().menu;
       let ignoreKeyboardHide;
       if (menu != null) {
         ignoreKeyboardHide = menu.ignoreKeyboardHide;
       }
       if (true !== ignoreKeyboardHide) {
-        closure_0(onDismiss[5]).hideContextMenu();
-        const tmpResult = closure_0(onDismiss[5]);
+        closure_0(onDismiss[7]).hideContextMenu();
+        const tmpResult = closure_0(onDismiss[7]);
       }
     });
     return () => {
@@ -89,4 +183,4 @@ export const ContextMenuContainer = function ContextMenuContainer() {
     return jsx(OverlayViewDefault, { style: closure_0.overlayView, children: null });
   }, items2);
   return jsx(require("native").TransitionGroup, { wrapChildren: callback1, items: tmp5, renderItem, getItemKey });
-};
+});

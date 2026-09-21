@@ -1,16 +1,18 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16208
+// Function ID: 16209
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7779, 8233, 15102, 15103, 11725, 1115, 2]
+// Dependencies: [7784, 8238, 558, 15091, 15092, 11594, 1119, 2]
 
-// Module 16219 (ParentalControlsDirectMessages)
-import util from "util" /* 1115 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15102 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15103 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+// Module 16208 (ParentalControlsDirectMessages)
+import util from "util" /* 1119 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15091 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15092 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const SettingBuilders = fn(11594);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -20,10 +22,8 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.wbYDfT);
   },
-  parent: fn(8233).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue() {
-    return !useParentalControlSettings.useDefaultGuildsRestricted();
-  },
+  parent: fn(8238).MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
+  useValue: () => !useParentalControlSettings.useDefaultGuildsRestricted(),
   onValueChange: function onAllowDirectMessagesFromServerMembersValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
@@ -34,7 +34,7 @@ const toggle = SettingBuilders.createToggle({
   unsearchable: true
 });
 const size = fn(2);
-let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
 
 export default toggle;
 export const ParentalControlsDirectMessages = toggle;

@@ -1,13 +1,13 @@
-// Module ID: 4415
-// Function ID: 4416
+// Module ID: 4419
+// Function ID: 4420
 // Name: SubscriptionPlanRecord
-// Dependencies: [1387, 1374, 2]
+// Dependencies: [1391, 1378, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 4415 (SubscriptionPlanRecord)
-import Record from "Record" /* 1387 */;
+// Module 4419 (SubscriptionPlanRecord)
+import Record from "Record" /* 1391 */;
 
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ PremiumSubscriptionSKUs: closure_0, PremiumTypes: closure_1, SubscriptionPlans: c2 } = PremiumConstants);
 let SubscriptionPlanRecord;
 class SubscriptionPlanRecord extends tmp2 {

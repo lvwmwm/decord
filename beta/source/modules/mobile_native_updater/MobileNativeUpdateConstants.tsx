@@ -1,11 +1,11 @@
-// Module ID: 4737
-// Function ID: 4738
+// Module ID: 4739
+// Function ID: 4740
 // Name: MobileNativeUpdateConstants
-// Dependencies: [4348, 1364, 1366, 1363, 2]
+// Dependencies: [4352, 1368, 1370, 1367, 2]
 
-// Module 4737 (MobileNativeUpdateConstants)
-import URLUtilsDefault from "URLUtils" /* 1366 */;
-import hooks from "module_4348" /* 4348 */;
+// Module 4739 (MobileNativeUpdateConstants)
+import URLUtilsDefault from "URLUtils" /* 1370 */;
+import hooks from "module_4352" /* 4352 */;
 
 let tmp3 = null;
 if (undefined !== process.env.INTERNAL_UPDATE_URL) {
@@ -18,13 +18,13 @@ if (undefined !== process.env.INTERNAL_UPDATE_URL) {
       const importDefaultResult1 = URLUtilsDefault;
     } else {
       toURLSafeResult = null;
-      const obj3 = fn(1364);
+      const obj3 = fn(1368);
     }
     tmp3 = toURLSafeResult;
-    obj2 = fn(1364);
+    obj2 = fn(1368);
   }
 }
-let ClientInfoUtils = fn(1363);
+let ClientInfoUtils = fn(1367);
 ClientInfoUtils = ClientInfoUtils.getConstants();
 let Build;
 if (ClientInfoUtils != null) {
@@ -44,7 +44,7 @@ if (!Number.isNaN(parsed)) {
     }
   }
 }
-ClientInfoUtils = fn(1363);
+ClientInfoUtils = fn(1367);
 ClientInfoUtils = ClientInfoUtils.getConstants();
 let Version;
 if (ClientInfoUtils != null) {

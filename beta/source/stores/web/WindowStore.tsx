@@ -1,13 +1,13 @@
-// Module ID: 14102
-// Function ID: 14103
+// Module ID: 14105
+// Function ID: 14106
 // Name: WindowStore
-// Dependencies: [38, 504, 5772, 573, 1241, 1980, 2]
+// Dependencies: [38, 504, 5774, 577, 1245, 1984, 2]
 
-// Module 14102 (WindowStore)
+// Module 14105 (WindowStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import WindowIdUtils from "WindowIdUtils" /* 5772 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import WindowIdUtils from "WindowIdUtils" /* 5774 */;
 
 require = fn;
 let c3 = null;
@@ -181,7 +181,7 @@ const windowStore = new WindowStore(DispatcherDefault, {
     return flag;
   }
 });
-fn(1980)(1241, dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
+fn(1984)(1245, dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator(() => {
 
   });

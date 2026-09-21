@@ -1,15 +1,15 @@
-// Module ID: 17467
-// Function ID: 17468
+// Module ID: 17437
+// Function ID: 17438
 // Name: VideoActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 // Exports: updateVideoSize
 
-// Module 17467 (VideoActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 17437 (VideoActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media/VideoActionCreators.tsx");
 
-export const updateVideoSize = function updateVideoSize(streamId, size, sharedValue2) {
-  DispatcherDefault.dispatch({ type: "VIDEO_SIZE_UPDATE", streamId, dimensions: size, zoom: sharedValue2 });
+export const updateVideoSize = function updateVideoSize(streamId, size, scale) {
+  DispatcherDefault.dispatch({ type: "VIDEO_SIZE_UPDATE", streamId, dimensions: size, zoom: scale });
 };

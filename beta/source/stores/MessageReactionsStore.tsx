@@ -1,16 +1,16 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 8009
+// Function ID: 8010
 // Name: MessageReactionsStore
-// Dependencies: [4396, 1386, 2041, 1372, 8005, 504, 8006, 573, 2]
+// Dependencies: [4400, 1390, 2045, 1376, 8010, 504, 8011, 577, 2]
 
-// Module 8004 (MessageReactionsStore)
+// Module 8009 (MessageReactionsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8006 */;
-import LurkingStore from "LurkingStore" /* 4396 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8011 */;
+import LurkingStore from "LurkingStore" /* 4400 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import UserStore from "UserStore" /* 1376 */;
 
 function reactionKey(arg0, arg1, item10022) {
   ({ name, id } = arg1);
@@ -34,7 +34,7 @@ function handleReaction(userId) {
   }
 }
 const dependencyMap = {};
-const items = [fn(8005).ReactionTypes.NORMAL, fn(8005).ReactionTypes.BURST];
+const items = [fn(8010).ReactionTypes.NORMAL, fn(8010).ReactionTypes.BURST];
 const prototype = function Reaction() {
   const obj = Object.create(new.target.prototype);
   obj.fetched = false;

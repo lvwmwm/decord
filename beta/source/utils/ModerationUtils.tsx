@@ -1,42 +1,42 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15104
+// Function ID: 15105
 // Name: ModerationUtils
-// Dependencies: [1074, 2021, 575, 15116, 1115, 1186, 2]
+// Dependencies: [1078, 2025, 579, 15105, 1119, 1190, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 15115 (ModerationUtils)
-import shims from "shims" /* 575 */;
-import util from "util" /* 1115 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 2021 */;
-import Constants from "Constants" /* 1074 */;
+// Module 15104 (ModerationUtils)
+import shims from "shims" /* 579 */;
+import util from "util" /* 1119 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 2025 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
-    return tmp(15116).HighlightColors.ACCENT;
+    return tmp(15105).HighlightColors.ACCENT;
   } else {
     if (tmpResult.unsafe_getRawColor("GREEN_360") === arg0) {
-      return tmp(15116).HighlightColors.GREEN;
+      return tmp(15105).HighlightColors.GREEN;
     } else {
       if (tmpResult4.unsafe_getRawColor("YELLOW_360") === arg0) {
-        return tmp(15116).HighlightColors.YELLOW;
+        return tmp(15105).HighlightColors.YELLOW;
       } else {
         if (tmpResult5.unsafe_getRawColor("ORANGE_345") === arg0) {
-          return tmp(15116).HighlightColors.ORANGE;
+          return tmp(15105).HighlightColors.ORANGE;
         } else {
           if (tmpResult6.unsafe_getRawColor("RED_400") === arg0) {
-            return tmp(15116).HighlightColors.RED;
+            return tmp(15105).HighlightColors.RED;
           } else {
-            return tmp(15116).HighlightColors.NONE;
+            return tmp(15105).HighlightColors.NONE;
           }
-          tmpResult6 = tmp(575);
+          tmpResult6 = tmp(579);
         }
-        tmpResult5 = tmp(575);
+        tmpResult5 = tmp(579);
       }
-      tmpResult4 = tmp(575);
+      tmpResult4 = tmp(579);
     }
-    tmpResult = tmp(575);
+    tmpResult = tmp(579);
   }
   obj = shims;
 }
@@ -73,54 +73,54 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   obj.disabled = flag;
   const items = [obj, , , , ];
   const obj2 = { name: null, desc: null, value: null, color: null };
-  const intl3 = tmp(1115).intl;
+  const intl3 = tmp(1119).intl;
   obj2.name = intl3.string(util.t.SsCK8I);
-  const intl4 = tmp(1115).intl;
+  const intl4 = tmp(1119).intl;
   obj2.desc = intl4.string(util.t["8GCOX6"]);
   obj2.value = constants.LOW;
   let unsafe_getRawColorResult;
   if (!flag2) {
-    unsafe_getRawColorResult = tmp(575).unsafe_getRawColor("GREEN_360");
-    const tmpResult = tmp(575);
+    unsafe_getRawColorResult = tmp(579).unsafe_getRawColor("GREEN_360");
+    const tmpResult = tmp(579);
   }
   obj2.color = unsafe_getRawColorResult;
   items[1] = obj2;
   const obj3 = { name: null, desc: null, value: null, color: null };
-  const intl5 = tmp(1115).intl;
+  const intl5 = tmp(1119).intl;
   obj3.name = intl5.string(util.t.WwNoR4);
-  const intl6 = tmp(1115).intl;
+  const intl6 = tmp(1119).intl;
   obj3.desc = intl6.formatToPlainString(util.t.VS14ga, { min: constants2.ACCOUNT_AGE });
   obj3.value = constants.MEDIUM;
   let unsafe_getRawColorResult1;
   if (!flag2) {
-    unsafe_getRawColorResult1 = tmp(575).unsafe_getRawColor("YELLOW_360");
-    const tmpResult4 = tmp(575);
+    unsafe_getRawColorResult1 = tmp(579).unsafe_getRawColor("YELLOW_360");
+    const tmpResult4 = tmp(579);
   }
   obj3.color = unsafe_getRawColorResult1;
   items[2] = obj3;
   const obj5 = { name: null, desc: null, value: null, color: null };
-  const intl7 = tmp(1115).intl;
+  const intl7 = tmp(1119).intl;
   obj5.name = intl7.string(util.t.I2jMUF);
-  const intl8 = tmp(1115).intl;
+  const intl8 = tmp(1119).intl;
   obj5.desc = intl8.formatToPlainString(util.t["r+b3I4"], { min: constants2.MEMBER_AGE });
   obj5.value = constants.HIGH;
   let unsafe_getRawColorResult2;
   if (!flag2) {
-    unsafe_getRawColorResult2 = tmp(575).unsafe_getRawColor("ORANGE_345");
-    const tmpResult5 = tmp(575);
+    unsafe_getRawColorResult2 = tmp(579).unsafe_getRawColor("ORANGE_345");
+    const tmpResult5 = tmp(579);
   }
   obj5.color = unsafe_getRawColorResult2;
   items[3] = obj5;
   const obj7 = { name: null, desc: null, value: null, color: null };
-  const intl9 = tmp(1115).intl;
+  const intl9 = tmp(1119).intl;
   obj7.name = intl9.string(util.t.cJY8w9);
-  const intl10 = tmp(1115).intl;
+  const intl10 = tmp(1119).intl;
   obj7.desc = intl10.string(util.t.PWaKme);
   obj7.value = constants.VERY_HIGH;
   let unsafe_getRawColorResult3;
   if (!flag2) {
-    unsafe_getRawColorResult3 = tmp(575).unsafe_getRawColor("RED_400");
-    const tmpResult6 = tmp(575);
+    unsafe_getRawColorResult3 = tmp(579).unsafe_getRawColor("RED_400");
+    const tmpResult6 = tmp(579);
   }
   obj7.color = unsafe_getRawColorResult3;
   items[4] = obj7;
@@ -156,11 +156,11 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   obj3.color = shims.unsafe_getRawColor("YELLOW_360");
   items[1] = obj3;
   const obj4 = { name: null, desc: null, value: null, disabled: null, color: null };
-  const intl5 = tmp(1115).intl;
+  const intl5 = tmp(1119).intl;
   obj4.name = intl5.string(util.t.VbSyAx);
-  const intl6 = tmp(1115).intl;
+  const intl6 = tmp(1119).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1115).t;
+  const t2 = tmp(1119).t;
   if (flag) {
     let string2Result = string2(t2.j9WtHx);
   } else {
@@ -202,11 +202,11 @@ export const generateContentFilterOptions = function generateContentFilterOption
   obj2.disabled = flag;
   items[1] = obj2;
   const obj3 = { name: null, desc: null, value: null, disabled: null };
-  const intl5 = tmp(1115).intl;
+  const intl5 = tmp(1119).intl;
   obj3.name = intl5.string(util.t.VbSyAx);
-  const intl6 = tmp(1115).intl;
+  const intl6 = tmp(1119).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1115).t;
+  const t2 = tmp(1119).t;
   if (flag) {
     let string2Result = string2(t2.j9WtHx);
   } else {

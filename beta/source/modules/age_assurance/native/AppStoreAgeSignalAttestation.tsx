@@ -1,12 +1,12 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8848
+// Function ID: 8849
 // Name: AppStoreAgeSignalAttestation
-// Dependencies: [5, 8844, 1364, 8845, 2]
+// Dependencies: [5, 8849, 1368, 8850, 2]
 // Exports: getAgeSignalChallenge, getAgeSignalIntegrityToken, warmAgeSignalAttestation
 
-// Module 8843 (AppStoreAgeSignalAttestation)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativePlayIntegrityModuleDefault from "NativePlayIntegrityModule" /* 8844 */;
+// Module 8848 (AppStoreAgeSignalAttestation)
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import NativePlayIntegrityModuleDefault from "NativePlayIntegrityModule" /* 8849 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -62,8 +62,8 @@ let closure_6 = async function _requestPlayIntegrityToken() {
     tmp10 = importDefault;
     tmp11 = dependencyMap;
   }
-  await "HermesInternal";
-  await "HermesInternal";
+  await "IconComponent";
+  await "IconComponent";
   return arg1;
 };
 let closure_7 = async function _getAgeSignalChallenge(arg0, value) {
@@ -77,7 +77,7 @@ let closure_7 = async function _getAgeSignalChallenge(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -99,7 +99,7 @@ let closure_7 = async function _getAgeSignalChallenge(arg0, value) {
             return obj5;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
           obj3 = PlatformUtils;
           tmp7 = require;
@@ -108,7 +108,7 @@ let closure_7 = async function _getAgeSignalChallenge(arg0, value) {
       } else if (1 === tmp6) {
         c2 = 0;
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else if (arg0 === 1) {
         c0 = 3;
         throw value;
@@ -144,7 +144,7 @@ let closure_8 = async function _getAgeSignalIntegrityToken(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -176,7 +176,7 @@ let closure_8 = async function _getAgeSignalIntegrityToken(arg0, value) {
           return obj4;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else if (arg0 === 1) {
         c2 = 3;

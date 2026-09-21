@@ -1,173 +1,286 @@
 // Module ID: 1809
 // Function ID: 1810
-// Dependencies: []
+// Dependencies: [1810, 1684, 1811, 1652, 1793, 1685]
+// Exports: interpolateColor, useInterpolateConfig
 
 // Module 1809
-const channelFromLrgb = function r() {
-  let num = arg0;
-  if (arg0 === undefined) {
-    num = 0;
-  }
-  const absolute = Math.abs(num);
-  if (absolute > 0.0031308) {
-    const _Math = Math;
-    const _Math2 = Math;
-    let result = (Math.sign(num) || 1) * (1.055 * Math.pow(absolute, 0.4166666666666667) - 0.055);
-    const tmp3 = Math.sign(num) || 1;
-  } else {
-    result = 12.92 * num;
-  }
-  return result;
-};
-channelFromLrgb.__closure = {};
-channelFromLrgb.__workletHash = 9046778946531;
-channelFromLrgb.__initData = { code: "function pnpm_lrgbTs1(c=0){const abs=Math.abs(c);if(abs>0.0031308){return(Math.sign(c)||1)*(1.055*Math.pow(abs,1/2.4)-0.055);}return c*12.92;}" };
-const fn2 = function n(arg0) {
-  ({ r, g, b } = arg0);
-  if (typeof fn === "function") {
-    if (r === undefined) {
-      r = 0;
+import _mod1652 from "module_1652" /* 1652 */;
+import _mod1684 from "module_1684" /* 1684 */;
+import runOnRuntime from "runOnRuntime" /* 1685 */;
+import _mod1793 from "module_1793" /* 1793 */;
+import _mod1810 from "module_1810" /* 1810 */;
+import convertLrgbToOklabDefault from "convertLrgbToOklab" /* 1811 */;
+
+const interpolateColorsHSV = function o(arg0, arg1, h, useCorrectedHSVInterpolation) {
+  useCorrectedHSVInterpolation = useCorrectedHSVInterpolation.useCorrectedHSVInterpolation;
+  if (undefined !== useCorrectedHSVInterpolation) {
+    if (!useCorrectedHSVInterpolation) {
+      const obj = _mod1810;
+      let interpolateResult = obj.interpolate(arg0, arg1, h.h, _mod1810.Extrapolation.CLAMP);
     }
-    const _Math = Math;
-    const absolute = Math.abs(r);
-    if (absolute > 0.0031308) {
-      const _Math2 = Math;
-      const _Math3 = Math;
-      let result = (Math.sign(r) || 1) * (1.055 * Math.pow(absolute, 0.4166666666666667) - 0.055);
-      const tmp7 = Math.sign(r) || 1;
-    } else {
-      result = 12.92 * r;
-    }
-    const obj = { r: result, g: null, b: null, alpha: null };
-    if (typeof tmp2 === "function") {
-      if (g === undefined) {
-        g = 0;
-      }
-      const _Math4 = Math;
-      const absolute1 = Math.abs(g);
-      if (absolute1 > 0.0031308) {
-        const _Math5 = Math;
-        const _Math6 = Math;
-        let result1 = (Math.sign(g) || 1) * (1.055 * Math.pow(absolute1, 0.4166666666666667) - 0.055);
-        const tmp11 = Math.sign(g) || 1;
-      } else {
-        result1 = 12.92 * g;
-      }
-      obj.g = result1;
-      if (typeof tmp2 === "function") {
-        if (b === undefined) {
-          b = 0;
+    const tmpResult = _mod1810;
+    const interpolateResult1 = tmpResult.interpolate(arg0, arg1, h.s, _mod1810.Extrapolation.CLAMP);
+    const tmpResult4 = _mod1810;
+    const interpolateResult2 = tmpResult4.interpolate(arg0, arg1, h.v, _mod1810.Extrapolation.CLAMP);
+    const tmpResult5 = _mod1810;
+    const tmpResult6 = _mod1684;
+    return tmpResult6.hsvToColor(interpolateResult, interpolateResult1, interpolateResult2, tmpResult5.interpolate(arg0, arg1, h.a, _mod1810.Extrapolation.CLAMP));
+  }
+  const items = [arg1[0]];
+  h = h.h;
+  const items1 = [h[0]];
+  let num = 1;
+  if (1 < h.length) {
+    while (true) {
+      let diff = num - 1;
+      let diff1 = h[num] - h[diff];
+      if (h[num] > h[diff]) {
+        if (diff1 > 0.5) {
+          let arr = items.push(arg1[num]);
+          let arr2 = items.push(arg1[num] + 0.00001);
+          let arr3 = items1.push(h[num] - 1);
+          let arr13 = items1.push(h[num]);
+          num = num + 1;
+          if (num >= h.length) {
+            break;
+          }
         }
-        const _Math7 = Math;
-        const absolute2 = Math.abs(b);
-        if (absolute2 > 0.0031308) {
-          const _Math8 = Math;
-          const _Math9 = Math;
-          let result2 = (Math.sign(b) || 1) * (1.055 * Math.pow(absolute2, 0.4166666666666667) - 0.055);
-          const tmp15 = Math.sign(b) || 1;
-        } else {
-          result2 = 12.92 * b;
-        }
-        obj.b = result2;
-        obj.alpha = tmp;
-        return obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
       }
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      if (h[num] < h[diff]) {
+        if (diff1 < -0.5) {
+          let arr14 = items.push(arg1[num]);
+          let arr15 = items.push(arg1[num] + 0.00001);
+          let arr16 = items1.push(h[num] + 1);
+          let arr17 = items1.push(h[num]);
+        }
+      }
+      let arr18 = items.push(arg1[num]);
+      let arr19 = items1.push(h[num]);
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
+  interpolateResult = (_mod1810.interpolate(arg0, items, items1, _mod1810.Extrapolation.CLAMP) + 1) % 1;
 };
-fn2.__closure = { channelFromLrgb };
-fn2.__workletHash = 2514333579516;
-fn2.__initData = { code: "function pnpm_lrgbTs2({r:r,g:g,b:b,alpha:alpha}){const{channelFromLrgb}=this.__closure;return{r:channelFromLrgb(r),g:channelFromLrgb(g),b:channelFromLrgb(b),alpha:alpha};}" };
-const fn3 = function t() {
-  let num = arg0;
-  if (arg0 === undefined) {
-    num = 0;
-  }
-  const absolute = Math.abs(num);
-  if (absolute <= 0.04045) {
-    let result = num / 12.92;
-  } else {
-    const _Math = Math;
-    const _Math2 = Math;
-    result = (Math.sign(num) || 1) * Math.pow((absolute + 0.055) / 1.055, 2.4);
-    const tmp2 = Math.sign(num) || 1;
-  }
-  return result;
+interpolateColorsHSV.__closure = { interpolate: _mod1810.interpolate, Extrapolation: _mod1810.Extrapolation, hsvToColor: _mod1684.hsvToColor };
+interpolateColorsHSV.__workletHash = 1574790978150;
+interpolateColorsHSV.__initData = { code: "function pnpm_interpolateColorTs1(value,inputRange,colors,options){const{interpolate,Extrapolation,hsvToColor}=this.__closure;let h=0;const{useCorrectedHSVInterpolation=true}=options;if(useCorrectedHSVInterpolation){const correctedInputRange=[inputRange[0]];const originalH=colors.h;const correctedH=[originalH[0]];for(let i=1;i<originalH.length;++i){const d=originalH[i]-originalH[i-1];if(originalH[i]>originalH[i-1]&&d>0.5){correctedInputRange.push(inputRange[i]);correctedInputRange.push(inputRange[i]+0.00001);correctedH.push(originalH[i]-1);correctedH.push(originalH[i]);}else if(originalH[i]<originalH[i-1]&&d<-0.5){correctedInputRange.push(inputRange[i]);correctedInputRange.push(inputRange[i]+0.00001);correctedH.push(originalH[i]+1);correctedH.push(originalH[i]);}else{correctedInputRange.push(inputRange[i]);correctedH.push(originalH[i]);}}h=(interpolate(value,correctedInputRange,correctedH,Extrapolation.CLAMP)+1)%1;}else{h=interpolate(value,inputRange,colors.h,Extrapolation.CLAMP);}const s=interpolate(value,inputRange,colors.s,Extrapolation.CLAMP);const v=interpolate(value,inputRange,colors.v,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);return hsvToColor(h,s,v,a);}" };
+const fn2 = function t(arr, arg1) {
+  closure_0 = arg1;
+  return arr.map((item) => Math.pow(item / 255, num));
+};
+fn2.__closure = {};
+fn2.__workletHash = 16826369876333;
+fn2.__initData = { code: "function pnpm_interpolateColorTs2(x,gamma){return x.map(function(v){return Math.pow(v/255,gamma);});}" };
+const fn3 = function r(sum, arg1) {
+  return Math.round(255 * Math.pow(sum, 1 / arg1));
 };
 fn3.__closure = {};
-fn3.__workletHash = 7878321042954;
-fn3.__initData = { code: "function pnpm_lrgbTs3(c=0){const abs=Math.abs(c);if(abs<=0.04045){return c/12.92;}return(Math.sign(c)||1)*Math.pow((abs+0.055)/1.055,2.4);}" };
-let obj = { convert: null };
-const obj2 = { fromRgb: null, toRgb: fn2 };
-const fn4 = function o(arg0) {
-  ({ r, g, b } = arg0);
-  if (typeof fn3 === "function") {
-    if (r === undefined) {
-      r = 0;
-    }
-    const _Math = Math;
-    const absolute = Math.abs(r);
-    if (absolute <= 0.04045) {
-      let result = r / 12.92;
-    } else {
-      const _Math2 = Math;
-      const _Math3 = Math;
-      result = (Math.sign(r) || 1) * Math.pow((absolute + 0.055) / 1.055, 2.4);
-      const tmp5 = Math.sign(r) || 1;
-    }
-    const obj = { r: result, g: null, b: null, alpha: null };
-    if (typeof tmp2 === "function") {
-      if (g === undefined) {
-        g = 0;
-      }
-      const _Math4 = Math;
-      const absolute1 = Math.abs(g);
-      if (absolute1 <= 0.04045) {
-        let result1 = g / 12.92;
-      } else {
-        const _Math5 = Math;
-        const _Math6 = Math;
-        result1 = (Math.sign(g) || 1) * Math.pow((absolute1 + 0.055) / 1.055, 2.4);
-        const tmp9 = Math.sign(g) || 1;
-      }
-      obj.g = result1;
-      if (typeof tmp2 === "function") {
-        if (b === undefined) {
-          b = 0;
-        }
-        const _Math7 = Math;
-        const absolute2 = Math.abs(b);
-        if (absolute2 <= 0.04045) {
-          let result2 = b / 12.92;
+fn3.__workletHash = 5856560656141;
+fn3.__initData = { code: "function pnpm_interpolateColorTs3(x,gamma){return Math.round(Math.pow(x,1/gamma)*255);}" };
+const fn4 = function a(arg0, arg1, arg2, gamma) {
+  gamma = gamma.gamma;
+  let num = 2.2;
+  if (undefined !== gamma) {
+    num = gamma;
+  }
+  ({ r, g, b } = arg2);
+  let mapped = b;
+  let tmp2 = g;
+  let tmp3 = r;
+  if (1 !== num) {
+    if (typeof fn2 === "function") {
+      if (typeof tmp25 === "function") {
+        if (typeof tmp25 === "function") {
+          mapped = b.map((item) => Math.pow(item / 255, num));
+          tmp2 = tmp5;
+          tmp3 = tmp4;
         } else {
-          const _Math8 = Math;
-          const _Math9 = Math;
-          result2 = (Math.sign(b) || 1) * Math.pow((absolute2 + 0.055) / 1.055, 2.4);
-          const tmp12 = Math.sign(b) || 1;
+          throw new TypeError("Trying to call a non-function");
         }
-        obj.b = result2;
-        obj.alpha = tmp;
-        return obj;
       } else {
         throw new TypeError("Trying to call a non-function");
       }
     } else {
       throw new TypeError("Trying to call a non-function");
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
   }
+  const interpolateResult = _mod1810.interpolate(arg0, arg1, tmp3, _mod1810.Extrapolation.CLAMP);
+  const interpolateResult1 = _mod1810.interpolate(arg0, arg1, tmp2, _mod1810.Extrapolation.CLAMP);
+  const interpolateResult2 = _mod1810.interpolate(arg0, arg1, mapped, _mod1810.Extrapolation.CLAMP);
+  const interpolateResult3 = _mod1810.interpolate(arg0, arg1, arg2.a, _mod1810.Extrapolation.CLAMP);
+  if (1 === num) {
+    const tmp6Result = tmp6(1684);
+    let rgbaColorResult = tmp6Result.rgbaColor(interpolateResult, interpolateResult1, interpolateResult2, interpolateResult3);
+  } else {
+    if (typeof fn3 === "function") {
+      const _Math = Math;
+      const _Math2 = Math;
+      const rounded = Math.round(255 * Math.pow(interpolateResult, 1 / num));
+      if (typeof tmp28 === "function") {
+        const _Math3 = Math;
+        const _Math4 = Math;
+        const rounded1 = Math.round(255 * Math.pow(interpolateResult1, 1 / num));
+        if (typeof tmp28 === "function") {
+          const _Math5 = Math;
+          const _Math6 = Math;
+          rgbaColorResult = tmp27(rounded, rounded1, Math.round(255 * Math.pow(interpolateResult2, 1 / num)), interpolateResult3);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+    const tmp6Result2 = tmp6(1684);
+  }
+  return rgbaColorResult;
 };
-fn4.__closure = { channelToLrgb: fn3 };
-fn4.__workletHash = 7438857771706;
-fn4.__initData = { code: "function pnpm_lrgbTs4({r:r,g:g,b:b,alpha:alpha}){const{channelToLrgb}=this.__closure;return{r:channelToLrgb(r),g:channelToLrgb(g),b:channelToLrgb(b),alpha:alpha};}" };
-obj2.fromRgb = fn4;
-obj.convert = obj2;
+let obj = { interpolate: _mod1810.interpolate, Extrapolation: _mod1810.Extrapolation, hsvToColor: _mod1684.hsvToColor };
+fn4.__closure = { toLinearSpace: fn2, interpolate: _mod1810.interpolate, Extrapolation: _mod1810.Extrapolation, rgbaColor: _mod1684.rgbaColor, toGammaSpace: fn3 };
+fn4.__workletHash = 13883480600753;
+fn4.__initData = { code: "function pnpm_interpolateColorTs4(value,inputRange,colors,options){const{toLinearSpace,interpolate,Extrapolation,rgbaColor,toGammaSpace}=this.__closure;const{gamma=2.2}=options;let{r:outputR,g:outputG,b:outputB}=colors;if(gamma!==1){outputR=toLinearSpace(outputR,gamma);outputG=toLinearSpace(outputG,gamma);outputB=toLinearSpace(outputB,gamma);}const r=interpolate(value,inputRange,outputR,Extrapolation.CLAMP);const g=interpolate(value,inputRange,outputG,Extrapolation.CLAMP);const b=interpolate(value,inputRange,outputB,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);if(gamma===1){return rgbaColor(r,g,b,a);}return rgbaColor(toGammaSpace(r,gamma),toGammaSpace(g,gamma),toGammaSpace(b,gamma),a);}" };
+const fn5 = function n(arg0, arg1, l, arg3) {
+  const interpolateResult = _mod1810.interpolate(arg0, arg1, l.l, _mod1810.Extrapolation.CLAMP);
+  const interpolateResult1 = _mod1810.interpolate(arg0, arg1, l.a, _mod1810.Extrapolation.CLAMP);
+  const interpolateResult2 = _mod1810.interpolate(arg0, arg1, l.b, _mod1810.Extrapolation.CLAMP);
+  const convert = convertLrgbToOklabDefault.oklab.convert;
+  const interpolateResult3 = _mod1810.interpolate(arg0, arg1, l.alpha, _mod1810.Extrapolation.CLAMP);
+  ({ r, g, b, alpha } = convert.toRgb({ l: interpolateResult, a: interpolateResult1, b: interpolateResult2, alpha: _mod1810.interpolate(arg0, arg1, l.alpha, _mod1810.Extrapolation.CLAMP) }));
+  const toRgbResult = convert.toRgb({ l: interpolateResult, a: interpolateResult1, b: interpolateResult2, alpha: _mod1810.interpolate(arg0, arg1, l.alpha, _mod1810.Extrapolation.CLAMP) });
+  return _mod1684.rgbaColor(r, g, b, alpha);
+};
+let obj2 = { toLinearSpace: fn2, interpolate: _mod1810.interpolate, Extrapolation: _mod1810.Extrapolation, rgbaColor: _mod1684.rgbaColor, toGammaSpace: fn3 };
+fn5.__closure = { interpolate: _mod1810.interpolate, Extrapolation: _mod1810.Extrapolation, culori: convertLrgbToOklabDefault, rgbaColor: _mod1684.rgbaColor };
+fn5.__workletHash = 7788654685113;
+fn5.__initData = { code: "function pnpm_interpolateColorTs5(value,inputRange,colors,_options){const{interpolate,Extrapolation,culori,rgbaColor}=this.__closure;const l=interpolate(value,inputRange,colors.l,Extrapolation.CLAMP);const a=interpolate(value,inputRange,colors.a,Extrapolation.CLAMP);const b=interpolate(value,inputRange,colors.b,Extrapolation.CLAMP);const alpha=interpolate(value,inputRange,colors.alpha,Extrapolation.CLAMP);const{r:_r,g:_g,b:_b,alpha:_alpha}=culori.oklab.convert.toRgb({l:l,a:a,b:b,alpha:alpha});return rgbaColor(_r,_g,_b,_alpha);}" };
+const fn6 = function l(arg0, fn) {
+  const ch1 = [];
+  const ch2 = [];
+  const ch3 = [];
+  const alpha = [];
+  for (let num = 0; num < arg0.length; num = num + 1) {
+    let tmp = require;
+    let obj = _mod1684;
+    let processColorResult = obj.processColor(arg0[num]);
+    if (typeof processColorResult === "number") {
+      let obj2 = { r: null, g: null, b: null };
+      let tmpResult = tmp(1684);
+      obj2.r = tmpResult.red(processColorResult);
+      let tmpResult4 = tmp(1684);
+      obj2.g = tmpResult4.green(processColorResult);
+      let tmpResult5 = tmp(1684);
+      obj2.b = tmpResult5.blue(processColorResult);
+      let tmp5 = fn(obj2);
+      let arr = ch1.push(tmp5.ch1);
+      let arr2 = ch2.push(tmp5.ch2);
+      let arr3 = ch3.push(tmp5.ch3);
+      let tmpResult6 = tmp(1684);
+      let arr4 = alpha.push(tmpResult6.opacity(processColorResult));
+    }
+  }
+  return { ch1, ch2, ch3, alpha };
+};
+const color = { processColor: _mod1684.processColor, red: _mod1684.red, green: _mod1684.green, blue: _mod1684.blue, opacity: _mod1684.opacity };
+fn6.__closure = color;
+fn6.__workletHash = 8764168362190;
+fn6.__initData = { code: "function pnpm_interpolateColorTs6(colors,convFromRgb){const{processColor,red,green,blue,opacity}=this.__closure;const ch1=[];const ch2=[];const ch3=[];const alpha=[];for(let i=0;i<colors.length;i++){const color=colors[i];const processedColor=processColor(color);if(typeof processedColor==='number'){const convertedColor=convFromRgb({r:red(processedColor),g:green(processedColor),b:blue(processedColor)});ch1.push(convertedColor.ch1);ch2.push(convertedColor.ch2);ch3.push(convertedColor.ch3);alpha.push(opacity(processedColor));}}return{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha};}" };
+const fn7 = function c(arg0) {
+  const tmp = fn6(arg0, (ch1) => ({ ch1: ch1.r, ch2: ch1.g, ch3: ch1.b }));
+  return { r: tmp.ch1, g: tmp.ch2, b: tmp.ch3, a: tmp.alpha };
+};
+fn7.__closure = { _splitColorsIntoChannels: fn6 };
+fn7.__workletHash = 937749076324;
+fn7.__initData = { code: "function pnpm_interpolateColorTs7(colors){const{_splitColorsIntoChannels}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){return{ch1:color.r,ch2:color.g,ch3:color.b};});return{r:ch1,g:ch2,b:ch3,a:alpha};}" };
+const fn8 = function p(arg0) {
+  const tmp = fn6(arg0, (arg0) => {
+    const RGBtoHSVResult = _mod1684.RGBtoHSV(arg0.r, arg0.g, arg0.b);
+    return { ch1: RGBtoHSVResult.h, ch2: RGBtoHSVResult.s, ch3: RGBtoHSVResult.v };
+  });
+  return { h: tmp.ch1, s: tmp.ch2, v: tmp.ch3, a: tmp.alpha };
+};
+let obj3 = { interpolate: _mod1810.interpolate, Extrapolation: _mod1810.Extrapolation, culori: convertLrgbToOklabDefault, rgbaColor: _mod1684.rgbaColor };
+fn8.__closure = { _splitColorsIntoChannels: fn6, RGBtoHSV: _mod1684.RGBtoHSV };
+fn8.__workletHash = 11798906675452;
+fn8.__initData = { code: "function pnpm_interpolateColorTs8(colors){const{_splitColorsIntoChannels,RGBtoHSV}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){const hsvColor=RGBtoHSV(color.r,color.g,color.b);return{ch1:hsvColor.h,ch2:hsvColor.s,ch3:hsvColor.v};});return{h:ch1,s:ch2,v:ch3,a:alpha};}" };
+const fn9 = function i(arg0) {
+  const tmp = fn6(arg0, (arg0) => {
+    const convert = convertLrgbToOklabDefault.oklab.convert;
+    const fromRgbResult = convert.fromRgb(arg0);
+    return { ch1: fromRgbResult.l, ch2: fromRgbResult.a, ch3: fromRgbResult.b };
+  });
+  return { l: tmp.ch1, a: tmp.ch2, b: tmp.ch3, alpha: tmp.alpha };
+};
+let obj4 = { _splitColorsIntoChannels: fn6, RGBtoHSV: _mod1684.RGBtoHSV };
+fn9.__closure = { _splitColorsIntoChannels: fn6, culori: convertLrgbToOklabDefault };
+fn9.__workletHash = 11214827752418;
+fn9.__initData = { code: "function pnpm_interpolateColorTs9(colors){const{_splitColorsIntoChannels,culori}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){const labColor=culori.oklab.convert.fromRgb(color);return{ch1:labColor.l,ch2:labColor.a,ch3:labColor.b};});return{l:ch1,a:ch2,b:ch3,alpha:alpha};}" };
+function interpolateColor(arg0, arg1, arg2) {
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "RGB";
+  }
+  let obj = arg4;
+  if (arg4 === undefined) {
+    obj = {};
+  }
+  if ("HSV" === str) {
+    if (typeof fn8 === "function") {
+      const obj7 = { h: null, s: null, v: null, a: null };
+      ({ ch1: obj4.h, ch2: obj4.s, ch3: obj4.v, alpha: obj4.a } = fn6(arg2, (arg0) => {
+        const RGBtoHSVResult = _mod1684.RGBtoHSV(arg0.r, arg0.g, arg0.b);
+        return { ch1: RGBtoHSVResult.h, ch2: RGBtoHSVResult.s, ch3: RGBtoHSVResult.v };
+      }));
+      return tmp24(arg0, arg1, obj7, obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else if ("RGB" === str) {
+    if (typeof fn7 === "function") {
+      const obj8 = { r: null, g: null, b: null, a: null };
+      ({ ch1: obj3.r, ch2: obj3.g, ch3: obj3.b, alpha: obj3.a } = fn6(arg2, (ch1) => ({ ch1: ch1.r, ch2: ch1.g, ch3: ch1.b })));
+      return tmp16(arg0, arg1, obj8, obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else if ("LAB" === str) {
+    if (typeof fn9 === "function") {
+      const obj9 = { l: null, a: null, b: null, alpha: null };
+      ({ ch1: obj2.l, ch2: obj2.a, ch3: obj2.b, alpha: obj2.alpha } = fn6(arg2, (arg0) => {
+        const convert = convertLrgbToOklabDefault.oklab.convert;
+        const fromRgbResult = convert.fromRgb(arg0);
+        return { ch1: fromRgbResult.l, ch2: fromRgbResult.a, ch3: fromRgbResult.b };
+      }));
+      return tmp8(arg0, arg1, obj9, obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  } else {
+    const _HermesInternal = HermesInternal;
+    const reanimatedError = new _mod1652.ReanimatedError("Invalid color space provided: " + str + ". Supported values are: ['RGB', 'HSV', 'LAB'].");
+    throw reanimatedError;
+  }
+}
+interpolateColor.__closure = { interpolateColorsHSV, getInterpolateHSV: fn8, interpolateColorsRGB: fn4, getInterpolateRGB: fn7, interpolateColorsLAB: fn5, getInterpolateLAB: fn9 };
+interpolateColor.__workletHash = 10004340589678;
+interpolateColor.__initData = { code: "function interpolateColor_Pnpm_interpolateColorTs10(value,inputRange,outputRange,colorSpace='RGB',options={}){const{interpolateColorsHSV,getInterpolateHSV,interpolateColorsRGB,getInterpolateRGB,interpolateColorsLAB,getInterpolateLAB}=this.__closure;if(colorSpace==='HSV'){return interpolateColorsHSV(value,inputRange,getInterpolateHSV(outputRange),options);}else if(colorSpace==='RGB'){return interpolateColorsRGB(value,inputRange,getInterpolateRGB(outputRange),options);}else if(colorSpace==='LAB'){return interpolateColorsLAB(value,inputRange,getInterpolateLAB(outputRange),options);}throw new ReanimatedError(\"Invalid color space provided: \"+colorSpace+\". Supported values are: ['RGB', 'HSV', 'LAB'].\");}" };
+const obj6 = { RGB: 0, [0]: "RGB", HSV: 1, [1]: "HSV", LAB: 2, [2]: "LAB" };
 
-export default obj;
+export const Extrapolate = _mod1810.Extrapolation;
+export { interpolateColor };
+export const ColorSpace = obj6;
+export const useInterpolateConfig = function useInterpolateConfig(inputRange, outputRange) {
+  let RGB = arg2;
+  if (arg2 === undefined) {
+    RGB = obj6.RGB;
+  }
+  let obj = arg3;
+  if (arg3 === undefined) {
+    obj = {};
+  }
+  const obj3 = { inputRange, outputRange, colorSpace: RGB, cache: null, options: null };
+  const obj2 = _mod1793;
+  obj3.cache = runOnRuntime.makeMutable(null);
+  obj3.options = obj;
+  return obj2.useSharedValue(obj3);
+};

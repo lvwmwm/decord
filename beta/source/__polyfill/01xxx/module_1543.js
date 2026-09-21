@@ -3,25 +3,75 @@
 // Dependencies: []
 
 // Module 1543
-
-export default (str, str2) => {
-  if (typeof str === "string") {
-    if (typeof str2 === "string") {
-      if ("" === str2) {
-        const items = [str];
-        return items;
-      } else {
-        const index = str.indexOf(str2);
-        if (-1 === index) {
-          const items1 = [str];
-          let items2 = items1;
-        } else {
-          items2 = [str.slice(0, index), str.slice(index + str2.length)];
+function getStateFromRouteParams(params) {
+  if (null != params) {
+    if (typeof params === "object") {
+      if ("state" in params) {
+        if (params.state) {
+          if (typeof params.state === "object") {
+            if ("routes" in params.state) {
+              const _Array = Array;
+              if (Array.isArray(params.state.routes)) {
+                const routes = params.state.routes;
+                if (routes.every((name) => {
+                  let tmp = typeof name === "object";
+                  if (typeof name === "object") {
+                    tmp = null != name;
+                  }
+                  if (tmp) {
+                    tmp = "name" in name;
+                  }
+                  if (tmp) {
+                    tmp = typeof name.name === "string";
+                  }
+                  return tmp;
+                })) {
+                  state = params.state;
+                }
+                return state;
+              }
+            }
+          }
         }
-        return items2;
+      }
+      if ("screen" in params) {
+        if (params.screen) {
+          if (typeof params.screen === "string") {
+            const obj2 = { name: params.screen, params: null, path: null, state: null };
+            params = undefined;
+            if ("params" in params) {
+              if (typeof params.params === "object") {
+                if (null != params.params) {
+                  params = params.params;
+                }
+              }
+            }
+            obj2.params = params;
+            let path;
+            if ("path" in params) {
+              if (typeof params.path === "string") {
+                path = params.path;
+              }
+            }
+            obj2.path = path;
+            let tmp4;
+            if ("params" in params) {
+              if (typeof params.params === "object") {
+                if (null != params.params) {
+                  tmp4 = getStateFromRouteParams(params.params);
+                }
+              }
+            }
+            const obj = { routes: null };
+            obj2.state = tmp4;
+            const items = [obj2];
+            obj.routes = items;
+            state = obj;
+          }
+        }
       }
     }
   }
-  const typeError = new TypeError("Expected the arguments to be of type `string`");
-  throw typeError;
-};
+}
+
+export { getStateFromRouteParams };

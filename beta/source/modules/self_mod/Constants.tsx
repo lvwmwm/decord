@@ -1,11 +1,11 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 10355
+// Function ID: 10356
 // Name: Constants
-// Dependencies: [1115, 2]
+// Dependencies: [1119, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 11626 (Constants)
-import util from "util" /* 1115 */;
+// Module 10355 (Constants)
+import util from "util" /* 1119 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/Constants.tsx");

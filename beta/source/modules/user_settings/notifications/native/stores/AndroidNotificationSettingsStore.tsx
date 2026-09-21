@@ -1,12 +1,13 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15745
+// Function ID: 15746
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1243, 1364, 9557, 1248, 4379, 2]
-// Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
+// Dependencies: [5, 1247, 1368, 9553, 1252, 558, 568, 4383, 2]
+// Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 15756 (AndroidNotificationSettingsStore)
-import _mod4379 from "module_4379" /* 4379 */;
-import PushNotificationDefault from "PushNotification" /* 9557 */;
+// Module 15745 (AndroidNotificationSettingsStore)
+import c from "c" /* 568 */;
+import _mod4383 from "module_4383" /* 4383 */;
+import PushNotificationDefault from "PushNotification" /* 9553 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -23,7 +24,7 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -130,8 +131,51 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
     }
   }
 };
-const identity = fn(1243);
-let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "flexDirection", isSoundsEnabled: "y", isNotifyEveryTime: "HermesInternal" }));
+const identity = fn(1247);
+let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "toCharArray$esjava$1", isVibrationsEnabled: "T", isSoundsEnabled: "IconComponent", isNotifyEveryTime: "Set" }));
+fn(558);
+let ReactCompilerGating = fn(558);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isLightsEnabled) {
+      return isLightsEnabled.isLightsEnabled;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _mod4383.shallow);
+}) : (() => closure_4((isLightsEnabled) => isLightsEnabled.isLightsEnabled, _mod4383.shallow));
+ReactCompilerGating = fn(558);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isVibrationsEnabled) {
+      return isVibrationsEnabled.isVibrationsEnabled;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _mod4383.shallow);
+}) : (() => closure_4((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, _mod4383.shallow));
+ReactCompilerGating = fn(558);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isSoundsEnabled) {
+      return isSoundsEnabled.isSoundsEnabled;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _mod4383.shallow);
+}) : (() => closure_4((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, _mod4383.shallow));
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
@@ -145,36 +189,40 @@ export const initializeAndroidNotificationSettingsStore = function initializeAnd
   }
   return applyArgumentsResult;
 };
-export const useAndroidNotificationLightsEnabled = function useAndroidNotificationLightsEnabled() {
-  return closure_4((isLightsEnabled) => isLightsEnabled.isLightsEnabled, _mod4379.shallow);
-};
+export const useAndroidNotificationLightsEnabled = tmp2;
 export const setAndroidNotificationLightsEnabled = function setAndroidNotificationLightsEnabled(isLightsEnabled) {
   _require = isLightsEnabled;
   require("ReactBatchUpdates").batchUpdates(() => state.setState({ isLightsEnabled }));
   const obj = require("ReactBatchUpdates");
   PushNotificationDefault.setLightsEnabled(isLightsEnabled);
 };
-export const useAndroidNotificationVibrationsEnabled = function useAndroidNotificationVibrationsEnabled() {
-  return closure_4((isVibrationsEnabled) => isVibrationsEnabled.isVibrationsEnabled, _mod4379.shallow);
-};
+export const useAndroidNotificationVibrationsEnabled = tmp3;
 export const setAndroidNotificationVibrationsEnabled = function setAndroidNotificationVibrationsEnabled(isVibrationsEnabled) {
   _require = isVibrationsEnabled;
   require("ReactBatchUpdates").batchUpdates(() => state.setState({ isVibrationsEnabled }));
   const obj = require("ReactBatchUpdates");
   PushNotificationDefault.setVibrationsEnabled(isVibrationsEnabled);
 };
-export const useAndroidNotificationSoundsEnabled = function useAndroidNotificationSoundsEnabled() {
-  return closure_4((isSoundsEnabled) => isSoundsEnabled.isSoundsEnabled, _mod4379.shallow);
-};
+export const useAndroidNotificationSoundsEnabled = tmp4;
 export const setAndroidNotificationSoundsEnabled = function setAndroidNotificationSoundsEnabled(isSoundsEnabled) {
   _require = isSoundsEnabled;
   require("ReactBatchUpdates").batchUpdates(() => state.setState({ isSoundsEnabled }));
   const obj = require("ReactBatchUpdates");
   PushNotificationDefault.setSoundsEnabled(isSoundsEnabled);
 };
-export const useAndroidMessageNotificationsEnabled = function useAndroidMessageNotificationsEnabled() {
-  return closure_4((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, _mod4379.shallow);
-};
+export const useAndroidMessageNotificationsEnabled = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t(isNotifyEveryTime) {
+      return isNotifyEveryTime.isNotifyEveryTime;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(first, _mod4383.shallow);
+}) : (() => closure_4((isNotifyEveryTime) => isNotifyEveryTime.isNotifyEveryTime, _mod4383.shallow));
 export const setAndroidMessageNotificationsEnabled = function setAndroidMessageNotificationsEnabled(isNotifyEveryTime) {
   _require = isNotifyEveryTime;
   require("ReactBatchUpdates").batchUpdates(() => state.setState({ isNotifyEveryTime }));

@@ -1,9 +1,9 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 10075
+// Function ID: 10076
 // Name: UserSearchWorkerManager
 // Dependencies: [17, 2]
 
-// Module 10096 (UserSearchWorkerManager)
+// Module 10075 (UserSearchWorkerManager)
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

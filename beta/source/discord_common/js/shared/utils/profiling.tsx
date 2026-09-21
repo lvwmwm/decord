@@ -1,10 +1,10 @@
-// Module ID: 571
-// Function ID: 572
+// Module ID: 575
+// Function ID: 576
 // Name: profiling
 // Dependencies: [2]
 // Exports: clearMarks, clearMeasures, mark, measure
 
-// Module 571 (profiling)
+// Module 575 (profiling)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/profiling.tsx");

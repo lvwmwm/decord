@@ -1,13 +1,13 @@
-// Module ID: 1073
-// Function ID: 1074
+// Module ID: 1077
+// Function ID: 1078
 // Name: MobileCacheSnapshotStore
-// Dependencies: [504, 573, 38, 510, 2]
+// Dependencies: [504, 577, 38, 510, 2]
 
-// Module 1073 (MobileCacheSnapshotStore)
+// Module 1077 (MobileCacheSnapshotStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 require = fn;
 let MobileCacheSnapshotStore;

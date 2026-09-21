@@ -1,28 +1,28 @@
-// Module ID: 7717
-// Function ID: 7718
+// Module ID: 7722
+// Function ID: 7723
 // Name: TTIAnalyticsUtils
-// Dependencies: [5, 7718, 4671, 1182, 502, 2041, 1346, 1074, 7907, 2048, 21, 4735, 7908, 1255, 1363, 4614, 4613, 10, 1231, 1241, 7909, 4620, 7911, 9, 1091, 1358, 7912, 5109, 5205, 1980, 2]
+// Dependencies: [5, 7723, 4674, 1186, 502, 2045, 1350, 1078, 7912, 2052, 21, 4737, 7913, 1259, 1367, 4617, 4616, 10, 1235, 1245, 7914, 4623, 7916, 9, 1095, 1362, 7917, 5111, 5207, 1984, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7717 (TTIAnalyticsUtils)
+// Module 7722 (TTIAnalyticsUtils)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4620 */;
-import DeviceUtils from "DeviceUtils" /* 4735 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7908 */;
-import AppStartInfo2 from "AppStartInfo" /* 7909 */;
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4623 */;
+import DeviceUtils from "DeviceUtils" /* 4737 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7913 */;
+import AppStartInfo2 from "AppStartInfo" /* 7914 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CacheStore from "CacheStore" /* 7718 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import CacheStore from "CacheStore" /* 7723 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ThemeStore from "ThemeStore" /* 1186 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import ClientInfoUtils from "ClientInfoUtils" /* 1363 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1350 */;
+import ClientInfoUtils from "ClientInfoUtils" /* 1367 */;
 
-const NavigationRouteUtils = tmp(4613);
+const NavigationRouteUtils = tmp(4616);
 require = fn;
 function getDeviceMetadata() {
   if (null == obj) {
@@ -116,7 +116,7 @@ let closure_23 = async function _trackAppUIViewedAsync(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -188,7 +188,7 @@ let closure_23 = async function _trackAppUIViewedAsync(arg0, value) {
               closure_1_1(9).setTTICallback(() => true);
               closure_1_27();
               c25 = null;
-            }, 15 * closure_1_1(1091).Millis.SECOND);
+            }, 15 * closure_1_1(1095).Millis.SECOND);
             closure_1_1(9).setTTICallback(() => {
               const tmp = closure_1_21();
               let flag = false;
@@ -231,7 +231,7 @@ let closure_23 = async function _trackAppUIViewedAsync(arg0, value) {
           }
         })();
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp6) {
       c6 = tmp;
@@ -250,7 +250,7 @@ let closure_24 = async function _logLegacyAppUiViewed(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -307,7 +307,7 @@ let closure_24 = async function _logLegacyAppUiViewed(arg0, value) {
         const merged2 = Object.assign(closure_133_0);
         closure_134_1(closure_134_2[19]).track(closure_134_10.APP_UI_VIEWED, obj9, { logEventProperties: true });
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp7) {
       c8 = tmp;
@@ -336,7 +336,7 @@ let closure_28 = async function _trackAppUIViewed(arg0, value) {
       const obj7 = { value, done: true };
       return obj7;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -493,7 +493,7 @@ let closure_28 = async function _trackAppUIViewed(arg0, value) {
           })(closure_131_6);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp57) {
       c6 = tmp;
@@ -533,7 +533,7 @@ let closure_30 = async function _trackAppLaunchCompletedAsync(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -569,7 +569,7 @@ let closure_30 = async function _trackAppLaunchCompletedAsync(arg0, value) {
         closure_133_0 = ThemeStore(closure_3, closure_2, value);
         closure_132_1(closure_132_2[19]).track(closure_132_10.APP_LAUNCH_COMPLETED, closure_133_0, { logEventProperties: true });
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp21) {
       c8 = tmp;
@@ -577,11 +577,11 @@ let closure_30 = async function _trackAppLaunchCompletedAsync(arg0, value) {
     }
   }
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const ACCEPT_INVITE_MODAL_KEY = fn(7907).ACCEPT_INVITE_MODAL_KEY;
-const StaticChannelRoutes = fn(2048).StaticChannelRoutes;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const ACCEPT_INVITE_MODAL_KEY = fn(7912).ACCEPT_INVITE_MODAL_KEY;
+const StaticChannelRoutes = fn(2052).StaticChannelRoutes;
 const jsx = fn(21).jsx;
-const v1 = fn(1255);
+const v1 = fn(1259);
 const load_id = v1.v4();
 const Manifest = ClientInfoUtils.getConstants().Manifest;
 let c18 = false;

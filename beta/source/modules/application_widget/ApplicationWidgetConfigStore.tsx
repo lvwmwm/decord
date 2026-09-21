@@ -1,11 +1,11 @@
-// Module ID: 9304
-// Function ID: 9305
+// Module ID: 9302
+// Function ID: 9303
 // Name: ApplicationWidgetConfigStore
-// Dependencies: [32, 504, 573, 2]
+// Dependencies: [32, 504, 577, 2]
 
-// Module 9304 (ApplicationWidgetConfigStore)
+// Module 9302 (ApplicationWidgetConfigStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 function updateApplicationConfigs(configs) {

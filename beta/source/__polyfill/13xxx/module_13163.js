@@ -1,29 +1,50 @@
 // Module ID: 13163
 // Function ID: 13164
-// Dependencies: [13164, 13051]
-// Exports: isBrowser
+// Dependencies: [13164]
+// Exports: isNodeEnv, loadModule
 
 // Module 13163
 import _mod13164 from "module_13164" /* 13164 */;
 
 require = arg1;
+const module = arg4;
 const dependencyMap = arg6;
+function dynamicRequire(require, arg1) {
+  return require.require(arg1);
+}
 
-export const isBrowser = function isBrowser() {
-  let tmp = typeof window !== "undefined";
-  if (typeof window !== "undefined") {
-    const isNodeEnvResult = _mod13164.isNodeEnv();
-    let tmp3 = !isNodeEnvResult;
-    if (isNodeEnvResult) {
-      const _process = tmp4(13051).GLOBAL_OBJ.process;
-      let tmp2 = _process;
-      if (tmp2) {
-        tmp2 = "renderer" === _process.type;
-      }
-      tmp3 = tmp2;
+export { dynamicRequire };
+export const isNodeEnv = function isNodeEnv() {
+  const isBrowserBundleResult = _mod13164.isBrowserBundle();
+  if (isBrowserBundleResult) {
+    return !isBrowserBundleResult;
+  } else {
+    const _Object = Object;
+    const call = toString.call;
+    const _process = process;
+    let str = 0;
+    if (typeof process !== "undefined") {
+      str = process;
     }
-    tmp = tmp3;
-    tmp4 = require;
+    str = "[object process]";
+    const tmp3 = typeof call === "unknown" ? toString() : call(str);
   }
-  return tmp;
+};
+export const loadModule = function loadModule(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = module;
+  }
+  try {
+    let tmp3 = dynamicRequire(tmp, arg0);
+    if (!tmp3) {
+      try {
+        const _HermesInternal = HermesInternal;
+        tmp3 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
+      } catch (err) {
+      }
+    }
+    return tmp3;
+  } catch (err) {
+  }
 };

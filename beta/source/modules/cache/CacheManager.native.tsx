@@ -1,19 +1,19 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17748
+// Function ID: 17749
 // Name: CacheManager
-// Dependencies: [5494, 7718, 3, 1091, 7363, 7890, 15850, 1364, 1094, 2]
+// Dependencies: [5496, 7723, 3, 1095, 7365, 7895, 15839, 1368, 1098, 2]
 
-// Module 17745 (CacheManager)
+// Module 17748 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7890 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
-import CacheStore from "CacheStore" /* 7718 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import ConstantsIOS from "ConstantsIOS" /* 1098 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7895 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import CacheStore from "CacheStore" /* 7723 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
-const CacheActionCreators = tmp(15850);
+const CacheActionCreators = tmp(15839);
 require = fn;
 let closure_5 = new LoggerDefault("CacheStore");
 let closure_6 = 15 * DurationsDefault.Millis.MINUTE;

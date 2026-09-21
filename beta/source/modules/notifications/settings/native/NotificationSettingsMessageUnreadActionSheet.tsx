@@ -1,34 +1,170 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 12997
+// Function ID: 12998
 // Name: NotificationSettingsMessageUnreadActionSheet
-// Dependencies: [19, 17, 4938, 21, 4756, 576, 7395, 10421, 4752, 1115, 5902, 5905, 2]
-// Exports: default
+// Dependencies: [19, 17, 4940, 21, 4758, 580, 558, 568, 12995, 4754, 1119, 5900, 5901, 7397, 2]
 
-// Module 10424 (NotificationSettingsMessageUnreadActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import TableRadioGroup from "TableRadioGroup" /* 5902 */;
-import TableRadioRow from "TableRadioRow" /* 5905 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10421 */;
+// Module 12997 (NotificationSettingsMessageUnreadActionSheet)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import TableRadioRow from "TableRadioRow" /* 5900 */;
+import TableRadioGroup from "TableRadioGroup" /* 5901 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 12995 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const UnreadSetting = fn(4938).UnreadSetting;
+const UnreadSetting = fn(4940).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { sheet: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, header: { padding: 24, paddingTop: 0 }, content: null, form: null };
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.content = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, padding: 16 };
 obj2.form = { marginTop: 8, marginBottom: 16 };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, padding: 16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/notifications/settings/native/NotificationSettingsMessageUnreadActionSheet.tsx");
 
-export default function NotificationSettingsMessageUnreadActionSheet(defaultValue) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
+  const cResult = c.c(26);
+  const tmp4 = closure_7();
+  if (cResult[0] !== value.value) {
+    const obj2 = { unreadSetting: value.value };
+    const tmp8 = hasOwnProperty(NotificationSettingsMockChannelsDefault, obj2);
+    cResult[0] = value.value;
+    cResult[1] = tmp8;
+    let tmp5 = tmp8;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.header) {
+    if (cResult[3] === tmp5) {
+      let tmp9 = cResult[4];
+    }
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { variant: "text-sm/semibold", children: null };
+      const intl = tmp(1119).intl;
+      obj3.children = intl.string(tmp(1119).t.Tqd1Af);
+      const tmp14 = hasOwnProperty(tmp(4754).Text, obj3);
+      cResult[5] = tmp14;
+      let tmp12 = tmp14;
+    } else {
+      tmp12 = cResult[5];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { variant: "text-xs/medium", color: "text-muted", children: null };
+      const intl2 = tmp(1119).intl;
+      obj4.children = intl2.string(tmp(1119).t.RpQgm5);
+      const tmp17 = hasOwnProperty(tmp(4754).Text, obj4);
+      cResult[6] = tmp17;
+      let tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[6];
+    }
+    const _Symbol3 = Symbol;
+    ({ value, onChange } = value);
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj5 = { label: null, value: null };
+      const intl3 = tmp(1119).intl;
+      obj5.label = intl3.string(tmp(1119).t["HVah/3"]);
+      obj5.value = UnreadSetting.ALL_MESSAGES;
+      const tmp21 = hasOwnProperty(tmp(5900).TableRadioRow, obj5);
+      cResult[7] = tmp21;
+      let tmp18 = tmp21;
+    } else {
+      tmp18 = cResult[7];
+    }
+    const _Symbol4 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl4 = tmp(1119).intl;
+      const stringResult = intl4.string(tmp(1119).t["tu+ZWJ"]);
+      cResult[8] = stringResult;
+      let tmp24 = stringResult;
+    } else {
+      tmp24 = cResult[8];
+    }
+    if (cResult[9] === value.disabledMentionOnlyWithReason) {
+      if (cResult[10] === tmp23) {
+        let tmp26 = cResult[11];
+      }
+      if (cResult[12] === value.onChange) {
+        if (cResult[13] === value.value) {
+          if (cResult[14] === tmp26) {
+            let tmp30 = cResult[15];
+          }
+          if (cResult[16] === tmp4.form) {
+            if (cResult[17] === tmp30) {
+              let tmp33 = cResult[18];
+            }
+            if (cResult[19] === tmp4.content) {
+              if (cResult[20] === tmp33) {
+                let tmp37 = cResult[21];
+              }
+              if (cResult[22] === tmp4.sheet) {
+                if (cResult[23] === tmp37) {
+                  if (cResult[24] === tmp9) {
+                    let tmp41 = cResult[25];
+                  }
+                  return tmp41;
+                }
+              }
+              const obj6 = { startExpanded: true, backgroundStyles: tmp4.sheet, children: null };
+              const items = [tmp9, tmp37];
+              obj6.children = items;
+              const tmp43 = timestampProducer(tmp(7397).BottomSheet, obj6);
+              cResult[22] = tmp4.sheet;
+              cResult[23] = tmp37;
+              cResult[24] = tmp9;
+              cResult[25] = tmp43;
+              tmp41 = tmp43;
+            }
+            const obj7 = { style: tmp4.content, children: null };
+            const items1 = [tmp12, tmp15, tmp33];
+            obj7.children = items1;
+            const tmp40 = timestampProducer(View, obj7);
+            cResult[19] = tmp4.content;
+            cResult[20] = tmp33;
+            cResult[21] = tmp40;
+            tmp37 = tmp40;
+          }
+          const obj8 = { style: tmp4.form, children: tmp30 };
+          const tmp36 = hasOwnProperty(View, obj8);
+          cResult[16] = tmp4.form;
+          cResult[17] = tmp30;
+          cResult[18] = tmp36;
+          tmp33 = tmp36;
+        }
+      }
+      const obj9 = { defaultValue: value, onChange, hasIcons: false, children: null };
+      const items2 = [tmp18, tmp26];
+      obj9.children = items2;
+      const tmp32 = timestampProducer(tmp(5901).TableRadioGroup, obj9);
+      cResult[12] = value.onChange;
+      cResult[13] = value.value;
+      cResult[14] = tmp26;
+      cResult[15] = tmp32;
+      tmp30 = tmp32;
+    }
+    const obj10 = { subLabel: value.disabledMentionOnlyWithReason, disabled: null != value.disabledMentionOnlyWithReason, label: tmp24, value: UnreadSetting.ONLY_MENTIONS };
+    const tmp29 = hasOwnProperty(tmp(5900).TableRadioRow, obj10);
+    cResult[9] = value.disabledMentionOnlyWithReason;
+    cResult[10] = null != value.disabledMentionOnlyWithReason;
+    cResult[11] = tmp29;
+    tmp26 = tmp29;
+  }
+  const tmp10 = hasOwnProperty(View, { style: tmp4.header, children: tmp5 });
+  cResult[2] = tmp4.header;
+  cResult[3] = tmp5;
+  cResult[4] = tmp10;
+  tmp9 = tmp10;
+}) : ((defaultValue) => {
   const tmp = closure_7();
   const obj = { startExpanded: true, backgroundStyles: tmp.sheet, children: null };
   const obj2 = { style: tmp.header, children: hasOwnProperty(NotificationSettingsMockChannelsDefault, { unreadSetting: defaultValue.value }) };
@@ -61,4 +197,4 @@ export default function NotificationSettingsMessageUnreadActionSheet(defaultValu
   items[1] = timestampProducer(View, obj4);
   obj.children = items;
   return timestampProducer(Sheet_BottomSheet.BottomSheet, obj);
-};
+});

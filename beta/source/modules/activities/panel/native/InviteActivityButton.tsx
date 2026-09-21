@@ -1,22 +1,91 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17459
+// Function ID: 17460
 // Name: InviteActivityButton
-// Dependencies: [19, 9625, 5496, 21, 4723, 17490, 1980, 504, 12014, 5186, 10288, 1115, 2]
+// Dependencies: [19, 9621, 5498, 21, 4725, 17460, 1984, 558, 568, 11889, 504, 1119, 5188, 10285, 2]
 
-// Module 17489 (InviteActivityButton)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12014 */;
+// Module 17459 (InviteActivityButton)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11889 */;
 import noop from "module_19" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 9625 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import LocalActivityStore from "LocalActivityStore" /* 9621 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/panel/native/InviteActivityButton.tsx");
 
-export default noop.memo(function InviteActivityButton(applicationId) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+  let Button = applicationId;
+  let tmp = dependencyMap;
+  const cResult = applicationId(568).c(10);
+  applicationId = applicationId.applicationId;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocalActivityStore, SelfPresenceStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== applicationId) {
+    const fn = function c() {
+      return getCurrentUserPresenceActivityDefault(LocalActivityStore, SelfPresenceStore, applicationId);
+    };
+    const items1 = [applicationId];
+    cResult[1] = applicationId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  let obj = applicationId(568);
+  const stateFromStores = Button(504).useStateFromStores(first, tmp6, tmp7);
+  if (null == stateFromStores) {
+    return null;
+  } else {
+    if (cResult[4] !== stateFromStores) {
+      const fn2 = function y() {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.openLazy(asyncRequireImpl(17460, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+      };
+      cResult[4] = stateFromStores;
+      cResult[5] = fn2;
+      let tmp9 = fn2;
+    } else {
+      tmp9 = cResult[5];
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = Button(1119).intl;
+      const stringResult = intl.string(Button(1119).t["OzOM/q"]);
+      const intl2 = Button(1119).intl;
+      const stringResult1 = intl2.string(Button(1119).t["OzOM/q"]);
+      cResult[6] = stringResult;
+      cResult[7] = stringResult1;
+      let tmp11 = stringResult1;
+      let tmp10 = stringResult;
+    } else {
+      tmp10 = cResult[6];
+      tmp11 = cResult[7];
+    }
+    if (cResult[8] !== tmp9) {
+      Button = Button(5188).Button;
+      const obj2 = { onPress: tmp9, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 };
+      tmp = stateFromStores(10285);
+      obj2.icon = tmp;
+      obj2.text = tmp10;
+      obj2.accessibilityLabel = tmp11;
+      const tmp17 = <Button onPress={tmp9} icon={null} text={null} accessibilityLabel={null} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
+      cResult[8] = tmp9;
+      cResult[9] = tmp17;
+    }
+  }
+}) : ((applicationId) => {
   applicationId = applicationId.applicationId;
   const items = [LocalActivityStore, SelfPresenceStore];
   const items1 = [applicationId];
@@ -26,9 +95,9 @@ export default noop.memo(function InviteActivityButton(applicationId) {
     const obj2 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17490, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17460, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
-      icon: stateFromStores(10288),
+      icon: stateFromStores(10285),
       text: null,
       accessibilityLabel: null,
       variant: "secondary-overlay",
@@ -36,16 +105,16 @@ export default noop.memo(function InviteActivityButton(applicationId) {
       shrink: true,
       maxFontSizeMultiplier: 1
     };
-    const intl = tmp(1115).intl;
-    obj2.text = intl.string(tmp(1115).t["OzOM/q"]);
-    const intl2 = tmp(1115).intl;
-    obj2.accessibilityLabel = intl2.string(tmp(1115).t["OzOM/q"]);
-    tmp4 = jsx(tmp(5186).Button, {
+    const intl = tmp(1119).intl;
+    obj2.text = intl.string(tmp(1119).t["OzOM/q"]);
+    const intl2 = tmp(1119).intl;
+    obj2.accessibilityLabel = intl2.string(tmp(1119).t["OzOM/q"]);
+    tmp4 = jsx(tmp(5188).Button, {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17490, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17460, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
-      icon: stateFromStores(10288),
+      icon: stateFromStores(10285),
       text: null,
       accessibilityLabel: null,
       variant: "secondary-overlay",
@@ -55,4 +124,4 @@ export default noop.memo(function InviteActivityButton(applicationId) {
     });
   }
   return tmp4;
-});
+}));

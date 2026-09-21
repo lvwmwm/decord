@@ -1,28 +1,64 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 10510
+// Function ID: 10511
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [2109, 504, 1115, 2]
-// Exports: default
+// Dependencies: [2113, 558, 568, 504, 1119, 2]
 
-// Module 10594 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 10510 (useMaybeAddPollsMarketingEasterEggNote)
 import initialize from "initialize" /* 504 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import c from "c" /* 568 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");
 
-export default function useMaybeAddPollsMarketingEasterEggNote(emojiName) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((emojiName) => {
+  const cResult = c.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function l() {
+      locale = locale.locale;
+      return locale.startsWith("en-");
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === emojiName) {
+    if (cResult[3] === stateFromStores) {
+      let tmp8 = cResult[4];
+    }
+    return tmp8;
+  }
+  let formatToPlainStringResult = emojiName;
+  if (":pizza:" === emojiName) {
+    formatToPlainStringResult = emojiName;
+    if (stateFromStores) {
+      const intl = tmp(1119).intl;
+      const obj2 = { emojiName };
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["1knDPI"], obj2);
+    }
+  }
+  cResult[2] = emojiName;
+  cResult[3] = stateFromStores;
+  cResult[4] = formatToPlainStringResult;
+  tmp8 = formatToPlainStringResult;
+}) : ((emojiName) => {
   initialize;
   [][0] = LocaleStore;
   let formatToPlainStringResult = emojiName;
   if (":pizza:" === emojiName) {
     formatToPlainStringResult = emojiName;
     if (tmp4) {
-      const intl = tmp(1115).intl;
+      const intl = tmp(1119).intl;
       const obj = { emojiName };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t["1knDPI"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["1knDPI"], obj);
     }
   }
   return formatToPlainStringResult;
-};
+});

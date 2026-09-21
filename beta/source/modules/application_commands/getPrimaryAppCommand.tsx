@@ -1,20 +1,19 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9597
+// Function ID: 9598
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 2041, 9404, 1978, 9412, 9408, 9318, 2]
-// Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
+// Dependencies: [5, 19, 2045, 9402, 1982, 9410, 558, 568, 9406, 9316, 2]
+// Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 9601 (getPrimaryAppCommand)
-import Server from "Server" /* 1978 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9318 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9408 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9412 */;
+// Module 9597 (getPrimaryAppCommand)
+import c from "c" /* 568 */;
+import Server from "Server" /* 1982 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9316 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9406 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9410 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9404 */;
-
-const require = globalThis.__r;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9402 */;
 
 require = fn;
 let closure_10 = async function _getPrimaryAppCommand(arg0, value) {
@@ -28,7 +27,7 @@ let closure_10 = async function _getPrimaryAppCommand(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -91,40 +90,36 @@ let closure_10 = async function _getPrimaryAppCommand(arg0, value) {
     }
   }
 };
-function queryForPrimaryAppCommand(withAffinitySuggestions, id) {
+function queryForPrimaryAppCommand(context, id) {
   const obj = { commandTypes: null };
   items = [Server.ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj.commandTypes = items;
-  return ApplicationCommandIndexStore.query(withAffinitySuggestions, obj, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true }).commands[0];
+  return ApplicationCommandIndexStore.query(context, obj, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true }).commands[0];
 }
-let ApplicationCommandIndexStore = fn(9404);
+let ApplicationCommandIndexStore = fn(9402);
 ({ getOrFetchApplicationCommandIndexForTarget: hasOwnProperty, useQueryState: metroRequire } = ApplicationCommandIndexStore);
 let ApplicationCommandIndexStore = ApplicationCommandIndexStore_mod;
 let c8 = "no primary app command for application";
-let items = [fn(1978).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
-
-export default function getPrimaryAppCommand() {
-  const self = this;
-  const apply = closure_10.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
+let items = [fn(1982).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+let ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, applicationId) => {
+  _require = applicationId;
+  const cResult = require("c").c(5);
+  const tmp2 = closure_13(arg0, applicationId);
+  loading = tmp2.loading;
+  const first = tmp2.commands[0];
+  closure_2 = tmp4;
+  if (cResult[0] === applicationId) {
+    if (cResult[1] === tmp4) {
+      if (cResult[2] === loading) {
+        let tmp5 = cResult[3];
+        let tmp6 = cResult[4];
+      }
+      const effect = noop.useEffect(tmp5, tmp6);
+      return first;
+    }
   }
-  return applyArgumentsResult;
-};
-export const NO_PRIMARY_APP_COMMAND_ERROR = "no primary app command for application";
-export { queryForPrimaryAppCommand };
-export const useGetPrimaryAppCommand = function useGetPrimaryAppCommand(context, id) {
-  _require = id;
-  const tmp = closure_6(context, { commandTypes: items }, { placeholderCount: 1, scoreMethod: require("ApplicationCommandQueryTypes").ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true });
-  loading = tmp.loading;
-  const first = tmp.commands[0];
-  closure_2 = tmp3;
-  items = [id, null != first, loading];
-  const effect = noop.useEffect(() => {
+  const fn = function p() {
     let tmp = closure_2;
     if (!closure_2) {
       tmp = loading;
@@ -133,20 +128,20 @@ export const useGetPrimaryAppCommand = function useGetPrimaryAppCommand(context,
       const obj2 = { type: "application", applicationId };
       const applicationCommandIndex = ApplicationCommandIndexActionCreators.requestApplicationCommandIndex(obj2);
     }
-  }, items);
-  return first;
-};
-export const useQueryForPrimaryAppCommand = function useQueryForPrimaryAppCommand(arg0, applicationId) {
-  return timestampProducer(arg0, { commandTypes: items }, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true });
-};
-export const useIsPrimaryAppCommandUsableInAppDM = function useIsPrimaryAppCommandUsableInAppDM(applicationId) {
-  applicationId = applicationId.applicationId;
-  let loading;
-  ({ context, botUserId } = applicationId);
-  const tmp3 = closure_6(context, { commandTypes: items }, { placeholderCount: 1, scoreMethod: applicationId(loading[5]).ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true });
-  loading = tmp3.loading;
-  const first = tmp3.commands[0];
-  closure_2 = tmp5;
+  };
+  items = [applicationId, null != first, loading];
+  cResult[0] = applicationId;
+  cResult[1] = null != first;
+  cResult[2] = loading;
+  cResult[3] = fn;
+  cResult[4] = items;
+  tmp6 = items;
+  tmp5 = fn;
+}) : ((arg0, applicationId) => {
+  let tmp = closure_13(arg0, applicationId);
+  const loading = tmp.loading;
+  const first = tmp.commands[0];
+  closure_2 = tmp3;
   items = [applicationId, null != first, loading];
   const effect = noop.useEffect(() => {
     let tmp = closure_2;
@@ -158,34 +153,32 @@ export const useIsPrimaryAppCommandUsableInAppDM = function useIsPrimaryAppComma
       const applicationCommandIndex = ApplicationCommandIndexActionCreators.requestApplicationCommandIndex(obj2);
     }
   }, items);
-  let tmp7 = null != first;
-  if (tmp7) {
-    let tmp8 = null != botUserId;
-    if (tmp8) {
-      let flag = false;
-      if (null != first) {
-        let hasItem = null != first.integration_types;
-        if (hasItem) {
-          const integration_types = first.integration_types;
-          hasItem = integration_types.includes(tmp(tmp2[7]).ApplicationIntegrationType.USER_INSTALL);
-        }
-        let hasItem1 = null != first.contexts;
-        if (hasItem1) {
-          const contexts = first.contexts;
-          hasItem1 = contexts.includes(tmp(tmp2[4]).InteractionContextType.BOT_DM);
-        }
-        if (hasItem) {
-          hasItem = hasItem1;
-        }
-        flag = hasItem;
-      }
-      tmp8 = flag;
-    }
-    tmp7 = tmp8;
+  return first;
+});
+let closure_12 = tmp3;
+ReactCompilerGating = fn(558);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, applicationId) => {
+  const cResult = c.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { commandTypes: items };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
   }
-  return tmp7;
-};
-export const isPrimaryAppCommandUsableInAppDM = function isPrimaryAppCommandUsableInAppDM(integration_types) {
+  if (cResult[1] !== applicationId) {
+    const obj3 = { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+    cResult[1] = applicationId;
+    cResult[2] = obj3;
+    let tmp6 = obj3;
+  } else {
+    tmp6 = cResult[2];
+  }
+  return timestampProducer(arg0, first, tmp6);
+}) : ((arg0, applicationId) => timestampProducer(arg0, { commandTypes: items }, { placeholderCount: 1, scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true }));
+let closure_13 = tmp4;
+ReactCompilerGating = fn(558);
+function isPrimaryAppCommandUsableInAppDM(integration_types) {
   if (null == integration_types) {
     return false;
   } else {
@@ -204,4 +197,87 @@ export const isPrimaryAppCommandUsableInAppDM = function isPrimaryAppCommandUsab
     }
     return hasItem;
   }
+}
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/application_commands/getPrimaryAppCommand.tsx");
+
+export default function getPrimaryAppCommand() {
+  const self = this;
+  const apply = closure_10.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
+export const NO_PRIMARY_APP_COMMAND_ERROR = "no primary app command for application";
+export { queryForPrimaryAppCommand };
+export const useGetPrimaryAppCommand = tmp3;
+export const useQueryForPrimaryAppCommand = tmp4;
+export const useIsPrimaryAppCommandUsableInAppDM = ReactCompilerGating.isReactCompilerEnabled() ? ((botUserId) => {
+  let BOT_DM = dependencyMap;
+  const cResult = c.c(3);
+  botUserId = botUserId.botUserId;
+  const tmp3 = closure_12(botUserId.context, botUserId.applicationId);
+  if (null == tmp3) {
+    return tmp4;
+  } else {
+    if (cResult[0] === botUserId) {
+    }
+    let tmp6 = null != botUserId;
+    if (tmp6) {
+      let flag = false;
+      if (null != tmp3) {
+        let hasItem = null != tmp3.integration_types;
+        if (hasItem) {
+          const integration_types = tmp3.integration_types;
+          hasItem = integration_types.includes(tmp(9316).ApplicationIntegrationType.USER_INSTALL);
+        }
+        let hasItem1 = null != tmp3.contexts;
+        if (hasItem1) {
+          const contexts = tmp3.contexts;
+          BOT_DM = tmp(1982).InteractionContextType.BOT_DM;
+          hasItem1 = contexts.includes(BOT_DM);
+        }
+        if (hasItem) {
+          hasItem = hasItem1;
+        }
+        flag = hasItem;
+      }
+      tmp6 = flag;
+    }
+    cResult[0] = botUserId;
+    cResult[1] = tmp3;
+    cResult[2] = tmp6;
+  }
+}) : ((context) => {
+  const tmp = closure_12(context.context, context.applicationId);
+  let tmp2 = null != tmp;
+  if (tmp2) {
+    let tmp3 = null != context.botUserId;
+    if (tmp3) {
+      let flag = false;
+      if (null != tmp) {
+        let hasItem = null != tmp.integration_types;
+        if (hasItem) {
+          const integration_types = tmp.integration_types;
+          hasItem = integration_types.includes(ApplicationIntegrationType.ApplicationIntegrationType.USER_INSTALL);
+        }
+        let hasItem1 = null != tmp.contexts;
+        if (hasItem1) {
+          const contexts = tmp.contexts;
+          hasItem1 = contexts.includes(Server.InteractionContextType.BOT_DM);
+        }
+        if (hasItem) {
+          hasItem = hasItem1;
+        }
+        flag = hasItem;
+      }
+      tmp3 = flag;
+    }
+    tmp2 = tmp3;
+  }
+  return tmp2;
+});
+export { isPrimaryAppCommandUsableInAppDM };

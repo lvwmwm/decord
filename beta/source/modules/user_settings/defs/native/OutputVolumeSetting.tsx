@@ -1,28 +1,64 @@
-// Module ID: 15521
-// Function ID: 15522
+// Module ID: 15510
+// Function ID: 15511
 // Name: OutputVolumeSetting
-// Dependencies: [1992, 8233, 504, 11725, 1115, 9911, 10239, 2]
+// Dependencies: [1996, 8238, 558, 568, 504, 11594, 1119, 9889, 10236, 2]
 
-// Module 15521 (OutputVolumeSetting)
+// Module 15510 (OutputVolumeSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10239 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10236 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MediaEngineStore];
+    const fn = function n() {
+      return outputVolume.getOutputVolume();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [MediaEngineStore];
+  return initialize.useStateFromStores(items, () => outputVolume.getOutputVolume());
+});
 const volumeSlider = SettingBuilders.createVolumeSlider({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.xPHVBs);
   },
-  parent: fn(8233).MobileUserSettings.VOICE,
+  parent: fn(8238).MobileUserSettings.VOICE,
   maximum: 200,
-  useValue: function useOutputVolumeSettingValue() {
+  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [MediaEngineStore];
+      const fn = function n() {
+        return outputVolume.getOutputVolume();
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [MediaEngineStore];
     return initialize.useStateFromStores(items, () => outputVolume.getOutputVolume());
-  },
+  }),
   onValueChange: AudioActionCreatorsDefault.setOutputVolume,
   useSearchTerms() {
     const intl = util.intl;

@@ -1,18 +1,76 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15107
+// Function ID: 15108
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8233, 9410, 4966, 9411, 4968, 1364, 8682, 8684, 2019, 11725, 1115, 2]
+// Dependencies: [8238, 558, 9408, 568, 4968, 9409, 4970, 1368, 8687, 8689, 2023, 11594, 1119, 2]
 
-// Module 15118 (AndroidViewNsfwDmCommandsSetting)
-import util from "util" /* 1115 */;
-import AgeGateUtils from "AgeGateUtils" /* 4966 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9410 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 9411 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15107 (AndroidViewNsfwDmCommandsSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import AgeGateUtils from "AgeGateUtils" /* 4968 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8687 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9408 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 9409 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
+const PlatformUtils = tmp(1368);
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating.isReactCompilerEnabled();
+let ReactCompilerGating = ReactCompilerGating_mod;
+const fn = () => AgeRestrictedContentSettingsUtils.useViewNsfwCommandsOrDefault();
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let tmp = require;
+  let isAndroid = dependencyMap;
+  const cResult = c.c(3);
+  const shouldAgeVerifyForSettingsToggles = AgeGateUtils.useShouldAgeVerifyForSettingsToggles();
+  let flag = useNSFWAllowed.useNSFWAllowed();
+  if (flag == null) {
+    flag = true;
+  }
+  if (shouldAgeVerifyForSettingsToggles) {
+    if (!tmpResult.useIsVerifiedTeen()) {
+      const _Symbol = Symbol;
+      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+        const isAndroidResult = PlatformUtils.isAndroid();
+        cResult[0] = isAndroidResult;
+        let first = isAndroidResult;
+        const tmpResult2 = PlatformUtils;
+      } else {
+        first = cResult[0];
+      }
+      return first;
+    }
+  }
+  if (cResult[1] !== flag) {
+    let isAndroidResult1 = flag;
+    if (flag) {
+      tmp = PlatformUtils;
+      isAndroid = tmp.isAndroid;
+      isAndroidResult1 = isAndroid();
+    }
+    cResult[1] = flag;
+    cResult[2] = isAndroidResult1;
+  }
+}) : (() => {
+  let shouldAgeVerifyForSettingsToggles = AgeGateUtils.useShouldAgeVerifyForSettingsToggles();
+  let flag = useNSFWAllowed.useNSFWAllowed();
+  if (flag == null) {
+    flag = true;
+  }
+  if (shouldAgeVerifyForSettingsToggles) {
+    shouldAgeVerifyForSettingsToggles = !tmpResult.useIsVerifiedTeen();
+  }
+  if (!shouldAgeVerifyForSettingsToggles) {
+    shouldAgeVerifyForSettingsToggles = flag;
+  }
+  if (shouldAgeVerifyForSettingsToggles) {
+    shouldAgeVerifyForSettingsToggles = tmp(1368).isAndroid();
+    const tmpResult2 = tmp(1368);
+  }
+  return shouldAgeVerifyForSettingsToggles;
+});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -23,20 +81,51 @@ const toggle = SettingBuilders.createToggle({
     return intl.string(util.t["J4zza/"]);
   },
   parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: function useViewNsfwDmCommandsSettingValue() {
-    return AgeRestrictedContentSettingsUtils.useViewNsfwCommandsOrDefault();
-  },
+  useValue: fn,
   onValueChange: function handleValueChange(arg0) {
     if (obj.shouldAgeVerifyForSettingsToggles()) {
       if (arg0) {
-        const obj3 = { entryPoint: tmp(8684).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
+        const obj3 = { entryPoint: tmp(8689).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
         const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj3);
       }
     }
-    const ViewNsfwCommands = tmp(2019).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(2023).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
-  usePredicate() {
+  usePredicate: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    let tmp = require;
+    let isAndroid = dependencyMap;
+    const cResult = c.c(3);
+    const shouldAgeVerifyForSettingsToggles = AgeGateUtils.useShouldAgeVerifyForSettingsToggles();
+    let flag = useNSFWAllowed.useNSFWAllowed();
+    if (flag == null) {
+      flag = true;
+    }
+    if (shouldAgeVerifyForSettingsToggles) {
+      if (!tmpResult.useIsVerifiedTeen()) {
+        const _Symbol = Symbol;
+        if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+          const isAndroidResult = PlatformUtils.isAndroid();
+          cResult[0] = isAndroidResult;
+          let first = isAndroidResult;
+          const tmpResult2 = PlatformUtils;
+        } else {
+          first = cResult[0];
+        }
+        return first;
+      }
+    }
+    if (cResult[1] !== flag) {
+      let isAndroidResult1 = flag;
+      if (flag) {
+        tmp = PlatformUtils;
+        isAndroid = tmp.isAndroid;
+        isAndroidResult1 = isAndroid();
+      }
+      cResult[1] = flag;
+      cResult[2] = isAndroidResult1;
+    }
+  }) : (() => {
     let shouldAgeVerifyForSettingsToggles = AgeGateUtils.useShouldAgeVerifyForSettingsToggles();
     let flag = useNSFWAllowed.useNSFWAllowed();
     if (flag == null) {
@@ -49,13 +138,13 @@ const toggle = SettingBuilders.createToggle({
       shouldAgeVerifyForSettingsToggles = flag;
     }
     if (shouldAgeVerifyForSettingsToggles) {
-      shouldAgeVerifyForSettingsToggles = tmp(1364).isAndroid();
-      const tmpResult2 = tmp(1364);
+      shouldAgeVerifyForSettingsToggles = tmp(1368).isAndroid();
+      const tmpResult2 = tmp(1368);
     }
     return shouldAgeVerifyForSettingsToggles;
-  }
+  })
 });
-let result = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidViewNsfwDmCommandsSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidViewNsfwDmCommandsSetting.tsx");
 
 export default toggle;
 export const AndroidViewNsfwDmCommandsSettingV2 = toggle;

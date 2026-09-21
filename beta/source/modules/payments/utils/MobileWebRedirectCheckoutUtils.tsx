@@ -1,18 +1,20 @@
-// Module ID: 7648
-// Function ID: 7649
+// Module ID: 7650
+// Function ID: 7651
 // Name: MobileWebRedirectCheckoutUtils
-// Dependencies: [4738, 1074, 1231, 1609, 4583, 5673, 2]
-// Exports: captureMobileWebRedirectCheckoutSentryError, getCustomCheckoutFlow, getCustomCheckoutFlowForAnalytics, isMobileWebRedirectCheckoutEnabled, useGetCustomCheckoutFlow
+// Dependencies: [4740, 1078, 1235, 1613, 558, 568, 4586, 5675, 2]
+// Exports: captureMobileWebRedirectCheckoutSentryError, getCustomCheckoutFlow, getCustomCheckoutFlowForAnalytics, isMobileWebRedirectCheckoutEnabled
 
-// Module 7648 (MobileWebRedirectCheckoutUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
-import _mod4583 from "module_4583" /* 4583 */;
-import PaymentConstants from "PaymentConstants" /* 4738 */;
-import keysSorter from "keysSorter" /* 5673 */;
-import Constants from "Constants" /* 1074 */;
+// Module 7650 (MobileWebRedirectCheckoutUtils)
+import c from "c" /* 568 */;
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
+import _mod4586 from "module_4586" /* 4586 */;
+import PaymentConstants from "PaymentConstants" /* 4740 */;
+import Constants from "Constants" /* 1078 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const keysSorter = tmp(5675);
 const CustomCheckoutFlow = PaymentConstants.CustomCheckoutFlow;
 ({ Routes: closure_4, LinkingTypes: hasOwnProperty } = Constants);
 const mobile_web_redirect_checkout = "mobile_web_redirect_checkout";
@@ -32,8 +34,29 @@ export const isMobileWebRedirectCheckoutEnabled = function isMobileWebRedirectCh
 export const getCustomCheckoutFlowForAnalytics = function getCustomCheckoutFlowForAnalytics() {
   return MetaQuestUtils.isMetaQuest() ? CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT : CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
 };
-export const useGetCustomCheckoutFlow = function useGetCustomCheckoutFlow() {
-  const _location = _mod4583.useLocation();
+export const useGetCustomCheckoutFlow = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  const _location = _mod4586.useLocation();
+  ({ search, pathname } = _location);
+  if (cResult[0] === search) {
+    if (cResult[1] === pathname) {
+      const tmp5 = cResult[2];
+    }
+    return tmp5;
+  }
+  const parsed = keysSorter.parse(search);
+  ({ deep_link_type, flow_type } = parsed);
+  if (pathname.startsWith(constants.BILLING_MANAGE_SUBSCRIPTION)) {
+    cResult[0] = search;
+    cResult[1] = pathname;
+    cResult[2] = undefined;
+  } else if (deep_link_type === constants2.MOBILE_WEB_REDIRECT_CHECKOUT) {
+    let META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.MOBILE_WEB_REDIRECT_CHECKOUT;
+  } else if (flow_type === CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT) {
+    META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
+  }
+}) : (() => {
+  const _location = _mod4586.useLocation();
   ({ pathname, search } = _location);
   const parsed = keysSorter.parse(search);
   ({ deep_link_type, flow_type } = parsed);
@@ -44,7 +67,7 @@ export const useGetCustomCheckoutFlow = function useGetCustomCheckoutFlow() {
       META_QUEST_WEB_REDIRECT_CHECKOUT = CustomCheckoutFlow.META_QUEST_WEB_REDIRECT_CHECKOUT;
     }
   }
-};
+});
 export const getCustomCheckoutFlow = function getCustomCheckoutFlow() {
   const parsed = keysSorter.parse(window.location.search);
   ({ deep_link_type, flow_type } = parsed);

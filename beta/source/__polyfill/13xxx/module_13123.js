@@ -1,45 +1,35 @@
 // Module ID: 13123
 // Function ID: 13124
-// Dependencies: [13077, 13064, 13050]
-// Exports: addBreadcrumb
+// Dependencies: [13055, 13076, 13105]
 
 // Module 13123
-import _mod13077 from "module_13077" /* 13077 */;
+import setupIntegration from "module_13105" /* 13105 */;
 
-require = arg1;
-const dependencyMap = arg6;
+const weakMap = new WeakMap();
 
-export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
-  closure_0 = arg1;
-  const client = _mod13077.getClient();
-  const isolationScope = _mod13077.getIsolationScope();
-  if (client) {
-    const options = client.getOptions();
-    let beforeBreadcrumb = options.beforeBreadcrumb;
-    let tmp5 = null;
-    if (undefined !== beforeBreadcrumb) {
-      tmp5 = beforeBreadcrumb;
-    }
-    beforeBreadcrumb = tmp5;
-    const maxBreadcrumbs = options.maxBreadcrumbs;
-    let num = 100;
-    if (undefined !== maxBreadcrumbs) {
-      num = maxBreadcrumbs;
-    }
-    if (num > 0) {
-      let obj2 = { timestamp: tmp(13064).dateTimestampInSeconds() };
-      const merged = Object.assign(arg0);
-      if (tmp5) {
-        obj2 = tmp(13050).consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
-        const tmpResult2 = tmp(13050);
-      }
-      if (null !== obj2) {
-        if (client.emit) {
-          client.emit("beforeAddBreadcrumb", obj2, arg1);
+export const functionToStringIntegration = setupIntegration.defineIntegration(() => ({
+  name: "FunctionToString",
+  setupOnce() {
+    toString = Function.prototype.toString;
+    try {
+      const _Function = Function;
+      Function.prototype.toString = function() {
+        const items = [...arguments];
+        const originalFunction = closure_1_0(13055).getOriginalFunction(this);
+        const obj = closure_1_0(13055);
+        let self = this;
+        if (set.has(obj2.getClient())) {
+          self = this;
+          if (undefined !== originalFunction) {
+            self = originalFunction;
+          }
         }
-        isolationScope.addBreadcrumb(obj2, num);
-      }
-      const tmpResult = tmp(13064);
+        return toString.apply(self, items);
+      };
+    } catch (err) {
     }
+  },
+  setup(arg0) {
+    const result = weakMap.set(arg0, true);
   }
-};
+}));

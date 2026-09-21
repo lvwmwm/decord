@@ -1,17 +1,17 @@
-// Module ID: 5080
-// Function ID: 5081
+// Module ID: 5082
+// Function ID: 5083
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 4418, 5081, 1074, 1271, 4436, 573, 1115, 1241, 4656, 4429, 5082, 2]
+// Dependencies: [5, 4422, 5083, 1078, 1275, 4440, 577, 1119, 1245, 4659, 4433, 5084, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 5080 (BillingSharedActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4656 */;
+// Module 5082 (BillingSharedActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4659 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4418 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4422 */;
 
 require = fn;
 let closure_8 = async function _validatePaymentSourceBillingAddress(arg0, value) {
@@ -25,7 +25,7 @@ let closure_8 = async function _validatePaymentSourceBillingAddress(arg0, value)
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -93,7 +93,7 @@ let closure_9 = async function _popupBridgeState() {
   closure_129_0 = closure_0;
   const HTTP = HTTPUtils.HTTP;
   await HTTP.post({ url: closure_2_7.BILLING_POPUP_BRIDGE(closure_0), oldFormErrors: true, rejectWithError: true });
-  const state = arg1.body.state;
+  state = arg1.body.state;
   closure_130_1(closure_130_2[6]).dispatch({ type: "BILLING_POPUP_BRIDGE_STATE_UPDATE", state, paymentSourceType: closure_129_0 });
   return state;
 };
@@ -108,7 +108,7 @@ let closure_10 = async function _createPaymentSource(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -139,7 +139,7 @@ let closure_10 = async function _createPaymentSource(arg0, value) {
           closure_133_7 = undefined;
           c9 = 1;
           c10 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -240,8 +240,8 @@ let closure_10 = async function _createPaymentSource(arg0, value) {
     }
   }
 };
-const StripeErrorTypes = fn(5081).StripeErrorTypes;
-const Constants = fn(1074);
+const StripeErrorTypes = fn(5083).StripeErrorTypes;
+const Constants = fn(1078);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
@@ -326,8 +326,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(type
     const merged2 = Object.assign(tmp12);
     const merged3 = Object.assign(obj.extra);
     obj9.extra = obj14;
-    const result = tmp15(4429).captureBillingException(error1, obj9);
-    const tmp15Result = tmp15(4429);
+    const result = tmp15(4433).captureBillingException(error1, obj9);
+    const tmp15Result = tmp15(4433);
   }
   return error1;
 };

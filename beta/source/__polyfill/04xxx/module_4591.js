@@ -1,14 +1,9 @@
 // Module ID: 4591
 // Function ID: 4592
-// Dependencies: []
+// Dependencies: [4592]
 
 // Module 4591
-let fn = Array.isArray;
-if (!fn) {
-  fn = (arg0) => {
-    const call = toString.call;
-    return "[object Array]" == (typeof call === "unknown" ? toString() : call(arg0));
-  };
-}
+import _mod4592 from "module_4592" /* 4592 */;
 
-export default fn;
+
+export default _mod4592;

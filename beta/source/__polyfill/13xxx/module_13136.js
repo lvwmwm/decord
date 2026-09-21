@@ -1,39 +1,20 @@
 // Module ID: 13136
 // Function ID: 13137
-// Dependencies: [13048, 13051, 13050, 13056]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: []
+// Exports: severityLevelFromString
 
 // Module 13136
-import _mod13048 from "module_13048" /* 13048 */;
-import _mod13050 from "module_13050" /* 13050 */;
-import _mod13051 from "module_13051" /* 13051 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function instrumentConsole() {
-  if ("console" in _mod13051.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod13050.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      closure_0 = item;
-      if (item in closure_0(13051).GLOBAL_OBJ.console) {
-        tmp(13056).fill(tmp(13051).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod13050.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            level(13048).triggerHandlers("console", { args: items, level });
-            const obj3 = level(13050).originalConsoleMethods[level];
-            if (obj3) {
-              obj3.apply(level(13051).GLOBAL_OBJ.console, items);
-            }
-          };
-        });
-        const tmpResult = tmp(13056);
-      }
-    });
+export const severityLevelFromString = function severityLevelFromString(arg0) {
+  let str = "warning";
+  if ("warn" !== arg0) {
+    const items = ["fatal", "error", "warning", "log", "info", "debug"];
+    let str2 = "log";
+    if (items.includes(arg0)) {
+      str2 = arg0;
+    }
+    str = str2;
   }
-}
-
-export const addConsoleInstrumentationHandler = function addConsoleInstrumentationHandler(arg0) {
-  _mod13048.addHandler("console", arg0);
-  _mod13048.maybeInstrument("console", instrumentConsole);
+  return str;
 };
+export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];

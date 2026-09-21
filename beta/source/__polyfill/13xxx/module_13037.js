@@ -1,8 +1,9 @@
 // Module ID: 13037
 // Function ID: 13038
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 4588]
+// Dependencies: [5, 41, 42, 93, 95, 98, 19, 17, 21, 4591]
 
 // Module 13037
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -10,7 +11,7 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 import noop from "module_19" /* 19 */;
 
-const BackButton = fn;
+const DeepLinking = fn;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,17 +31,19 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-fn(17).BackHandler;
+const Linking = fn(17).Linking;
 const jsx = fn(21).jsx;
-class BackButton {
+const re8 = /.*?:\/\//g;
+let closure_1;
+class DeepLinking {
   constructor() {
     self = this;
     items = [...arguments];
     closure_0 = undefined;
-    tmp = c2(this, BackButton);
+    tmp = c2(this, DeepLinking);
     items1 = [...items];
     tmp2 = closure_4;
-    obj = closure_4(BackButton);
+    obj = closure_4(DeepLinking);
     tmp3 = closure_3;
     if (closure_7()) {
       tmp5 = globalThis;
@@ -51,45 +54,111 @@ class BackButton {
     }
     tmp3Result = tmp3(self, constructResult);
     closure_0 = tmp3Result;
-    tmp3Result.handleBack = () => {
-      let flag = 0 !== closure_0.history.index;
-      if (flag) {
-        const history = closure_0.history;
-        history.goBack();
-        flag = true;
-      }
-      return flag;
+    tmp3Result.handleChange = (url) => {
+      closure_0.push(url.url);
     };
     return tmp3Result;
   }
 }
-_inherits(BackButton, noop.Component);
+_inherits(DeepLinking, noop.Component);
 const entry = {
-  key: "componentDidMount",
-  value: function componentDidMount() {
-    const listener = BackHandler.addEventListener("hardwareBackPress", this.handleBack);
+  key: "push",
+  value: function push(str) {
+    const history = this.history;
+    history.push(str.replace(re8, ""));
   }
 };
-let items = [
-  entry,
-  {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      const removed = BackHandler.removeEventListener("hardwareBackPress", this.handleBack);
-    }
-  },
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      return jsx(BackButton(4588).__HistoryContext.Consumer, {
-        children(history) {
-          self.history = history;
-          return self.props.children || null;
+let items = [entry, , , ];
+const entry1 = { key: "componentDidMount", value: null };
+closure_1 = asyncGeneratorStep(async function() {
+  const self = this;
+  c4 = 0;
+  c5 = 0;
+  return (async (arg0, value) => {
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_3 = self;
+            closure_2 = self;
+            closure_1 = tmp2;
+            closure_129_0 = undefined;
+            c4 = 1;
+            c5 = 1;
+            const obj4 = { value: c5.getInitialURL(), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          closure_129_0 = value;
+          if (closure_129_0) {
+            closure_3.push(closure_129_0);
+          }
+          const listener = c5.addEventListener("url", closure_3.handleChange);
+          c5 = 3;
+          return { value: "IconComponent", done: null };
         }
-      });
+      } catch (tmp17) {
+        c5 = tmp;
+        throw tmp17;
+      }
     }
+  })();
+});
+entry1.value = function componentDidMount() {
+  const self = this;
+  const apply = closure_1.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
   }
-];
+  return applyArgumentsResult;
+};
+items[1] = entry1;
+items[2] = {
+  key: "componentWillUnmount",
+  value: function componentWillUnmount() {
+    const removed = Linking.removeEventListener("url", this.handleChange);
+  }
+};
+items[3] = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    return jsx(DeepLinking(closure_1[9]).__HistoryContext.Consumer, {
+      children(history) {
+        self.history = history;
+        return self.props.children || null;
+      }
+    });
+  }
+};
 
-export default _createClass(BackButton, items);
+export default _createClass(DeepLinking, items);

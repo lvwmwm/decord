@@ -1,12 +1,12 @@
-// Module ID: 1875
-// Function ID: 1876
+// Module ID: 1879
+// Function ID: 1880
 // Name: KeyboardManagerUtils
-// Dependencies: [17, 1364, 1876, 2]
+// Dependencies: [17, 1368, 1880, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 1875 (KeyboardManagerUtils)
+// Module 1879 (KeyboardManagerUtils)
 import _mod17 from "module_17" /* 17 */;
-import NativeKeyboardModuleDefault from "NativeKeyboardModule" /* 1876 */;
+import NativeKeyboardModuleDefault from "NativeKeyboardModule" /* 1880 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

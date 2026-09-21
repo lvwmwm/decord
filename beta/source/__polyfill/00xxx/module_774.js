@@ -1,36 +1,24 @@
 // Module ID: 774
 // Function ID: 775
-// Dependencies: [687, 713, 752]
+// Dependencies: [773]
+// Exports: getTraceMetaTags
 
 // Module 774
-import setupIntegration from "setupIntegration" /* 752 */;
+import _mod773 from "module_773" /* 773 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const weakMap = new WeakMap();
+require = arg1;
+const dependencyMap = arg6;
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 
-export const functionToStringIntegration = setupIntegration.defineIntegration(() => ({
-  name: "FunctionToString",
-  setupOnce() {
-    toString = Function.prototype.toString;
-    try {
-      const _Function = Function;
-      Function.prototype.toString = function() {
-        const items = [...arguments];
-        const originalFunction = closure_1_0(687).getOriginalFunction(this);
-        const obj = closure_1_0(687);
-        let self = this;
-        if (set.has(obj2.getClient())) {
-          self = this;
-          if (undefined !== originalFunction) {
-            self = originalFunction;
-          }
-        }
-        return toString.apply(self, items);
-      };
-    } catch (err) {
-    }
-  },
-  setup(arg0) {
-    const result = weakMap.set(arg0, true);
+export const getTraceMetaTags = function getTraceMetaTags(arg0) {
+  let traceData = arg0;
+  if (!arg0) {
+    traceData = _mod773.getTraceData();
   }
-}));
+  const entries = Object.entries(traceData);
+  const mapped = entries.map((item) => {
+    [tmp, tmp2] = item;
+    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
+  });
+  return mapped.join("\n");
+};

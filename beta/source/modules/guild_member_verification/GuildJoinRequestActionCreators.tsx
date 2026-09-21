@@ -1,15 +1,15 @@
-// Module ID: 5758
-// Function ID: 5759
+// Module ID: 5760
+// Function ID: 5761
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2045, 5759, 4578, 1074, 4580, 573, 1271, 5760, 5108, 1115, 5628, 2]
+// Dependencies: [5, 2049, 5761, 4581, 1078, 4583, 577, 1275, 5762, 5110, 1119, 5630, 2]
 
-// Module 5758 (GuildJoinRequestActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5760 */;
+// Module 5760 (GuildJoinRequestActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 5762 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5759 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5761 */;
 
 require = fn;
 let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
@@ -23,7 +23,7 @@ let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -66,7 +66,7 @@ let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
           closure_130_9 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -99,7 +99,7 @@ let closure_9 = async function _fetchGuildJoinRequests(arg0, value) {
             }
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else if (2 === tmp7) {
         c5 = 0;
@@ -168,7 +168,7 @@ let closure_11 = async function _removeGuildJoinRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -188,7 +188,7 @@ let closure_11 = async function _removeGuildJoinRequest(arg0, value) {
           closure_129_1 = undefined;
           c4 = 1;
           const HTTP = HTTPUtils.HTTP;
-          const obj4 = { url: React6.GUILD_MEMBER_REQUEST_TO_JOIN(closure_0), rejectWithError: HTTPUtils.rejectWithMigratedError() };
+          const obj4 = { url: closure_2_8.GUILD_MEMBER_REQUEST_TO_JOIN(closure_0), rejectWithError: HTTPUtils.rejectWithMigratedError() };
           c5 = 2;
           c6 = 1;
           const obj5 = { value: HTTP.del(obj4), done: false };
@@ -236,7 +236,7 @@ let closure_12 = async function _ackUserGuildJoinRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -256,7 +256,7 @@ let closure_12 = async function _ackUserGuildJoinRequest(arg0, value) {
           closure_130_1 = closure_1;
           c5 = 2;
           const HTTP = HTTPUtils.HTTP;
-          const obj5 = { url: React6.GUILD_JOIN_REQUEST_ACK(closure_0, closure_1), rejectWithError: HTTPUtils.rejectWithMigratedError() };
+          const obj5 = { url: closure_2_8.GUILD_JOIN_REQUEST_ACK(closure_0, closure_1), rejectWithError: HTTPUtils.rejectWithMigratedError() };
           c6 = 3;
           c7 = 1;
           const obj6 = { value: HTTP.post(obj5), done: false };
@@ -272,7 +272,7 @@ let closure_12 = async function _ackUserGuildJoinRequest(arg0, value) {
         const obj10 = { type: "ACK_APPROVED_GUILD_JOIN_REQUEST", id: closure_130_1, guildId: closure_130_0 };
         closure_131_1(closure_131_2[6]).dispatch(obj10);
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else if (arg0 === 1) {
         c7 = 3;
         throw value;
@@ -321,17 +321,17 @@ let closure_13 = async function _updateGuildJoinRequest() {
     }
     if (body) {
       const obj2 = { title: null, body: null };
-      const intl = closure_1_0(1115).intl;
-      obj2.title = intl.string(closure_1_0(1115).t.DxJj4e);
-      const intl2 = closure_1_0(1115).intl;
-      obj2.body = intl2.string(closure_1_0(1115).t.rSAOk9);
-      closure_1_1(5108).show(obj2);
-      const obj = closure_1_1(5108);
+      const intl = closure_1_0(1119).intl;
+      obj2.title = intl.string(closure_1_0(1119).t.DxJj4e);
+      const intl2 = closure_1_0(1119).intl;
+      obj2.body = intl2.string(closure_1_0(1119).t.rSAOk9);
+      closure_1_1(5110).show(obj2);
+      const obj = closure_1_1(5110);
     }
     return Promise.reject(error);
   });
   closure_134_1(closure_134_2[6]).dispatch({ type: "GUILD_JOIN_REQUEST_UPDATE", guildId: closure_133_0, status: closure_133_5.body.application_status, request: closure_133_5.body });
-  await "HermesInternal";
+  await "IconComponent";
   closure_6 = tmp3;
   closure_5 = tmp2;
   closure_133_0 = closure_0;
@@ -343,7 +343,7 @@ let closure_13 = async function _updateGuildJoinRequest() {
   }
   closure_133_3 = APPROVED;
   closure_133_4 = closure_4;
-  return "PX_16";
+  return "Set";
 };
 let closure_14 = async function _resetGuildJoinRequest(arg0, value) {
   if (c6 === 2) {
@@ -356,7 +356,7 @@ let closure_14 = async function _resetGuildJoinRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -376,7 +376,7 @@ let closure_14 = async function _resetGuildJoinRequest(arg0, value) {
           let body;
           c4 = 1;
           const HTTP = HTTPUtils.HTTP;
-          const obj4 = { url: React6.GUILD_MEMBER_REQUEST_TO_JOIN(closure_0), rejectWithError: HTTPUtils.rejectWithMigratedError() };
+          const obj4 = { url: closure_2_8.GUILD_MEMBER_REQUEST_TO_JOIN(closure_0), rejectWithError: HTTPUtils.rejectWithMigratedError() };
           c5 = 2;
           c6 = 1;
           const obj5 = { value: HTTP.post(obj4), done: false };
@@ -424,7 +424,7 @@ let closure_15 = async function _fetchRequestToJoinGuilds(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -460,7 +460,7 @@ let closure_15 = async function _fetchRequestToJoinGuilds(arg0, value) {
         const obj7 = { type: "USER_JOIN_REQUEST_GUILDS_FETCH", guilds: closure_128_0.body };
         closure_129_1(closure_129_2[6]).dispatch(obj7);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp12) {
       c3 = tmp;
@@ -488,7 +488,7 @@ let closure_17 = async function _createOrEnterJoinRequestInterview(arg0, value) 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -515,7 +515,7 @@ let closure_17 = async function _createOrEnterJoinRequestInterview(arg0, value) 
           closure_130_3 = undefined;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -559,9 +559,9 @@ let closure_17 = async function _createOrEnterJoinRequestInterview(arg0, value) 
     }
   }
 };
-let closure_4 = fn(2045).createChannelRecordFromServer;
-const joinRequestFromServer = fn(4578).joinRequestFromServer;
-const Constants = fn(1074);
+let closure_4 = fn(2049).createChannelRecordFromServer;
+const joinRequestFromServer = fn(4581).joinRequestFromServer;
+const Constants = fn(1078);
 ({ AbortCodes: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestActionCreators.tsx");

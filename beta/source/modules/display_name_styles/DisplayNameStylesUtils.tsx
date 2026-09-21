@@ -1,33 +1,33 @@
-// Module ID: 1389
-// Function ID: 1390
+// Module ID: 1393
+// Function ID: 1394
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1390, 1391, 672, 1092, 1392, 2]
+// Dependencies: [32, 1394, 1395, 676, 1096, 1396, 2]
 // Exports: applyFlywheelViewingFallback, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, parseServerDisplayNameStyles, rebuildGummySourceColor, wrapHue
 
-// Module 1389 (DisplayNameStylesUtils)
-import _modDef672 from "module_672" /* 672 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
-import DisplayNameFont from "DisplayNameFont" /* 1392 */;
+// Module 1393 (DisplayNameStylesUtils)
+import _modDef676 from "module_676" /* 676 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1395 */;
+import DisplayNameFont from "DisplayNameFont" /* 1396 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const DisplayNameStylesConstants = fn(1390);
+const DisplayNameStylesConstants = fn(1394);
 ({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: hasOwnProperty, FLYWHEEL_EFFECTS: metroRequire, FLYWHEEL_FONTS: closure_7, getColorPresetsForEffect: closure_8 } = DisplayNameStylesConstants);
-let items = [fn(1391).DisplayNameEffect.NEON, fn(1391).DisplayNameEffect.TOON, fn(1391).DisplayNameEffect.POP, fn(1391).DisplayNameEffect.GUMMY];
+let items = [fn(1395).DisplayNameEffect.NEON, fn(1395).DisplayNameEffect.TOON, fn(1395).DisplayNameEffect.POP, fn(1395).DisplayNameEffect.GUMMY];
 const set = new Set(items);
 const items1 = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -5, saturation: 0.66, lightness: 0.6 }, { hueShift: 9, saturation: 0.56, lightness: 0.68 }, { hueShift: 22, saturation: 0.6, lightness: 0.63 }];
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
 
-export const getEffectColorCount = function getEffectColorCount(effectId) {
-  if (DisplayNameEffect.DisplayNameEffect.GRADIENT === effectId) {
+export const getEffectColorCount = function getEffectColorCount(selectedEffectId) {
+  if (DisplayNameEffect.DisplayNameEffect.GRADIENT === selectedEffectId) {
     return 2;
-  } else if (tmp(1391).DisplayNameEffect.GUMMY === effectId) {
+  } else if (tmp(1395).DisplayNameEffect.GUMMY === selectedEffectId) {
     return 4;
-  } else if (tmp(1391).DisplayNameEffect.PRISM === effectId) {
+  } else if (tmp(1395).DisplayNameEffect.PRISM === selectedEffectId) {
     return 5;
   } else {
     return 1;
@@ -37,7 +37,7 @@ export const doesEffectImpactLayout = function doesEffectImpactLayout(effectId) 
   return set.has(effectId);
 };
 export const generateColorVariants = function generateColorVariants(displayNameStylesAccessibleColors) {
-  const alphaResult = _modDef672(displayNameStylesAccessibleColors).alpha(1);
+  const alphaResult = _modDef676(displayNameStylesAccessibleColors).alpha(1);
   value = alphaResult.get("hsl.l");
   const bound = Math.min(1, 1.2 * alphaResult.get("hsl.s"));
   const obj2 = { main: displayNameStylesAccessibleColors, light1: null, light2: null, dark1: null, dark2: null, toonStroke: null, neonStroke: null };
@@ -62,7 +62,7 @@ export const wrapHue = function wrapHue(h) {
 };
 export const GUMMY_STRIPES = items1;
 export const buildGummyColors = function buildGummyColors(color) {
-  const tmp = _modDef672;
+  const tmp = _modDef676;
   let obj = require("utils/ColorUtils");
   const tmp3 = _slicedToArray(tmp(require("utils/ColorUtils").int2hex(color)).hsl(), 3);
   const first = tmp3[0];
@@ -74,16 +74,16 @@ export const buildGummyColors = function buildGummyColors(color) {
   _require = _slicedToArray(items, 1)[0];
   return items1.map((item) => {
     ({ hueShift, saturation, lightness } = item);
-    return _modDef672.hsl(((closure_0 + hueShift) % 360 + 360) % 360, saturation, lightness).num();
+    return _modDef676.hsl(((closure_0 + hueShift) % 360 + 360) % 360, saturation, lightness).num();
   });
 };
 export const rebuildGummySourceColor = function rebuildGummySourceColor(selectedColors) {
   const first = selectedColors[0];
   if (null == first) {
-    return _modDef672.hsl(0, hasOwnProperty, React4).num();
+    return _modDef676.hsl(0, hasOwnProperty, React4).num();
   } else {
     const tmp10 = importDefault;
-    const tmp12 = _modDef672;
+    const tmp12 = _modDef676;
     const tmp15 = _slicedToArray(tmp12(utils_ColorUtils.int2hex(first)).hsl(), 3);
     const first1 = tmp15[0];
     const _Number = Number;
@@ -94,12 +94,12 @@ export const rebuildGummySourceColor = function rebuildGummySourceColor(selected
     const items = [num, tmp15[1], tmp15[2]];
     const result = (_slicedToArray(items, 1)[0] - items1[0].hueShift) % 360;
     const tmp12Result = tmp12(utils_ColorUtils.int2hex(first));
-    const tmp10Result = tmp10(672);
-    return tmp10(672).hsl((result + 360) % 360, hasOwnProperty, React4).num();
+    const tmp10Result = tmp10(676);
+    return tmp10(676).hsl((result + 360) % 360, hasOwnProperty, React4).num();
   }
 };
 export const hueToGummyColor = function hueToGummyColor(sharedValue) {
-  return _modDef672.hsl(sharedValue, hasOwnProperty, React4).num();
+  return _modDef676.hsl(sharedValue, hasOwnProperty, React4).num();
 };
 export const parseServerDisplayNameStyles = function parseServerDisplayNameStyles(display_name_styles) {
   let tmp = null;
@@ -112,7 +112,7 @@ export const parseServerDisplayNameStyles = function parseServerDisplayNameStyle
 };
 export const generateRandomDisplayNameStyles = function generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder) {
   const tmp = visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)];
-  const arr = React6(tmp);
+  const arr = closure_1_8(tmp);
   const obj = { fontId: visibleFontOrder[Math.floor(Math, Math.random(Math) * visibleFontOrder.length)], effectId: tmp, colors: null };
   const items = [...arr[Math.floor(Math, Math.random(Math) * arr.length)]];
   obj.colors = items;

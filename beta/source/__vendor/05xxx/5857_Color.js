@@ -754,15 +754,15 @@ const point = {
     hslResult.color[0] = sum;
     return hslResult;
   },
-  mix(gradientSecondaryBackground, hexResult) {
-    if (gradientSecondaryBackground) {
-      if (gradientSecondaryBackground.rgb) {
+  mix(cResult, BLACK) {
+    if (cResult) {
+      if (cResult.rgb) {
         const self = this;
-        const color = gradientSecondaryBackground.rgb();
+        const color = cResult.rgb();
         const color2 = this.rgb();
         let num = 0.5;
-        if (undefined !== hexResult) {
-          num = hexResult;
+        if (undefined !== BLACK) {
+          num = BLACK;
         }
         const diff = 2 * num - 1;
         const diff1 = color.alpha() - color2.alpha();
@@ -782,7 +782,7 @@ const point = {
         return Color.rgb(result2 + result3, result4 + result5, result6 + result7, result8 + color2.alpha() * (1 - num));
       }
     }
-    const error = new Error("Argument to \"mix\" was not a Color instance, but rather an instance of " + typeof gradientSecondaryBackground);
+    const error = new Error("Argument to \"mix\" was not a Color instance, but rather an instance of " + typeof cResult);
     throw error;
   }
 };

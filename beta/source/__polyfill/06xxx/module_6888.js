@@ -1,45 +1,47 @@
 // Module ID: 6888
 // Function ID: 6889
-// Dependencies: [6870, 1637]
-// Exports: animate
+// Dependencies: [19, 6871, 6880]
+// Exports: useScrollableSetter
 
 // Module 6888
-import value2 from "value2" /* 6870 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6880 */;
+import noop from "module_19" /* 19 */;
 
-const cancelAnimation = tmp3(1637);
-require = fn;
-const dependencyMap = arg6;
-fn = function n(arg0) {
-  ({ point, configs, velocity } = arg0);
-  if (velocity === undefined) {
-    velocity = 0;
+const require = globalThis.__r;
+
+({ useCallback: c2, useEffect: c3 } = noop);
+
+export const useScrollableSetter = (arg0, value, arg2, value3) => {
+  _require = arg0;
+  dependencyMap = value;
+  value2 = arg2;
+  let tmp = arg4;
+  if (arg4 === undefined) {
+    tmp = value3;
   }
-  ({ overrideReduceMotion, onComplete } = arg0);
-  if (!configs) {
-    configs = value2.ANIMATION_CONFIGS;
-  }
-  if (overrideReduceMotion) {
-    configs.reduceMotion = overrideReduceMotion;
-  }
-  if (!("duration" in configs)) {
-    if (!("easing" in configs)) {
-      let TIMING = value2.ANIMATION_METHOD.SPRING;
-    }
-    if (TIMING === value2.ANIMATION_METHOD.TIMING) {
-      let withTimingResult = cancelAnimation.withTiming(point, configs, onComplete);
-      const tmp3Result = cancelAnimation;
+  const bottomSheetInternal = require("module_6871").useBottomSheetInternal();
+  const animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const isContentHeightFixed = bottomSheetInternal.isContentHeightFixed;
+  const isScrollableRefreshable = bottomSheetInternal.isScrollableRefreshable;
+  const setScrollableRef = bottomSheetInternal.setScrollableRef;
+  const removeScrollableRef = bottomSheetInternal.removeScrollableRef;
+  const items = [arg0, value, value3, animatedScrollableType, animatedScrollableContentOffsetY, arg2, isScrollableRefreshable, isContentHeightFixed, setScrollableRef, removeScrollableRef];
+  tmp(value2(() => {
+    animatedScrollableContentOffsetY.value = value2.value;
+    animatedScrollableType.value = value;
+    isScrollableRefreshable.value = value3;
+    isContentHeightFixed.value = false;
+    const findNodeHandleResult = normalizeSnapPoint.findNodeHandle(ref.current);
+    if (findNodeHandleResult) {
+      const obj2 = { id: findNodeHandleResult, node: ref };
+      setScrollableRef(obj2);
     } else {
-      const _Object = Object;
-      const obj = { velocity };
-      withTimingResult = cancelAnimation.withSpring(point, Object.assign(obj, configs), onComplete);
-      const tmp3Result2 = cancelAnimation;
+      const _console = console;
+      console.warn("Couldn't find the scrollable node handle id!");
     }
-    return withTimingResult;
-  }
-  TIMING = value2.ANIMATION_METHOD.TIMING;
+    return () => {
+      removeScrollableRef(ref);
+    };
+  }, items));
 };
-fn.__closure = { ANIMATION_CONFIGS: fn(6870).ANIMATION_CONFIGS, ANIMATION_METHOD: fn(6870).ANIMATION_METHOD, withTiming: fn(1637).withTiming, withSpring: fn(1637).withSpring };
-fn.__workletHash = 17032227615993;
-fn.__initData = { code: "function pnpm_animateTs1({point:point,configs:configs,velocity=0,overrideReduceMotion:overrideReduceMotion,onComplete:onComplete}){const{ANIMATION_CONFIGS,ANIMATION_METHOD,withTiming,withSpring}=this.__closure;if(!configs){configs=ANIMATION_CONFIGS;}if(overrideReduceMotion){configs.reduceMotion=overrideReduceMotion;}const type='duration'in configs||'easing'in configs?ANIMATION_METHOD.TIMING:ANIMATION_METHOD.SPRING;if(type===ANIMATION_METHOD.TIMING){return withTiming(point,configs,onComplete);}return withSpring(point,Object.assign({velocity:velocity},configs),onComplete);}" };
-
-export const animate = fn;

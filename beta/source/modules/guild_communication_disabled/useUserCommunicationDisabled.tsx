@@ -1,21 +1,72 @@
-// Module ID: 8235
-// Function ID: 8236
+// Module ID: 8240
+// Function ID: 8241
 // Name: useUserCommunicationDisabled
-// Dependencies: [2105, 1372, 504, 4383, 2]
-// Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
+// Dependencies: [2109, 1376, 558, 568, 504, 4387, 2]
+// Exports: userCommunicationDisabled
 
-// Module 8235 (useUserCommunicationDisabled)
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4383 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserStore from "UserStore" /* 1372 */;
-
-const require = globalThis.__r;
+// Module 8240 (useUserCommunicationDisabled)
+import initialize from "initialize" /* 504 */;
+import c from "c" /* 568 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4387 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_communication_disabled/useUserCommunicationDisabled.tsx");
-
-export default function useUserCommunicationDisabled(arg0, arg1) {
+fn(558);
+const ReactCompilerGating = fn(558);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  dependencyMap = arg1;
+  const cResult = require("c").c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildMemberStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    if (cResult[2] === arg0) {
+      let tmp6 = cResult[3];
+      let tmp7 = cResult[4];
+    }
+    const stateFromStores = tmp(504).useStateFromStores(first, tmp6, tmp7);
+    if (cResult[5] !== stateFromStores) {
+      let prop;
+      if (stateFromStores != null) {
+        prop = stateFromStores.communicationDisabledUntil;
+      }
+      if (prop == null) {
+        prop = null;
+      }
+      const items1 = [prop, tmp(4387).isMemberCommunicationDisabled(stateFromStores)];
+      cResult[5] = stateFromStores;
+      cResult[6] = items1;
+      let tmp9 = items1;
+      const tmpResult2 = tmp(4387);
+    } else {
+      tmp9 = cResult[6];
+    }
+    return tmp9;
+  }
+  const fn = function s() {
+    let member = null;
+    if (null != closure_1) {
+      member = null;
+      if (null != tmp) {
+        member = GuildMemberStore.getMember(tmp2, tmp);
+      }
+    }
+    return member;
+  };
+  const items2 = [arg1, arg0];
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  cResult[4] = items2;
+  tmp7 = items2;
+  tmp6 = fn;
+}) : ((arg0, arg1) => {
   _require = arg0;
   dependencyMap = arg1;
   const items = [GuildMemberStore];
@@ -41,40 +92,41 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
   const obj = require("initialize");
   items2[1] = require("CommunicationDisabledUtils").isMemberCommunicationDisabled(stateFromStores);
   return items2;
-};
-export const useCurrentUserCommunicationDisabled = function useCurrentUserCommunicationDisabled(guild_id) {
-  const items = [UserStore];
-  const stateFromStores = id(504).useStateFromStores(items, () => currentUser.getCurrentUser());
-  id = undefined;
+});
+let closure_4 = tmp3;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/guild_communication_disabled/useUserCommunicationDisabled.tsx");
+
+export default tmp3;
+export const useCurrentUserCommunicationDisabled = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  let id;
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  dependencyMap = guild_id;
-  const obj = id(504);
-  const items1 = [GuildMemberStore];
-  const items2 = [guild_id, id];
-  const stateFromStores1 = id(504).useStateFromStores(items1, () => {
-    let member = null;
-    if (null != closure_1) {
-      member = null;
-      if (null != tmp) {
-        member = GuildMemberStore.getMember(tmp2, tmp);
-      }
-    }
-    return member;
-  }, items2);
-  let prop;
-  if (stateFromStores1 != null) {
-    prop = stateFromStores1.communicationDisabledUntil;
+  return closure_4(id, arg0);
+}) : ((arg0) => {
+  const items = [UserStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let id;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
   }
-  if (prop == null) {
-    prop = null;
-  }
-  const items3 = [prop, ];
-  const tmpResult = id(504);
-  items3[1] = id(4383).isMemberCommunicationDisabled(stateFromStores1);
-  return items3;
-};
+  return closure_4(id, arg0);
+});
 export const userCommunicationDisabled = function userCommunicationDisabled(id, guildId) {
   let member = null;
   if (null != guildId) {

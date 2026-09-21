@@ -1,9 +1,9 @@
 // Module ID: 4697
 // Function ID: 4698
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 4697
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "262032a99df43d5b5fc14dd6e335ec5e", name: "UserMinusIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "021d4551cb2e4d8e923e934b6403ea10", name: "UserPlatformIcon", type: "png" });

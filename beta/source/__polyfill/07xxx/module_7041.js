@@ -1,16 +1,49 @@
 // Module ID: 7041
 // Function ID: 7042
-// Dependencies: []
-// Exports: snapPoint
+// Dependencies: [19, 1641]
+// Exports: useReactiveSharedValue
 
 // Module 7041
-const fn = function t(arg0, arg1, arr) {
-  closure_0 = arg0 + 0.2 * arg1;
-  closure_1 = min.apply(null, arr.map((item) => Math.abs(closure_0 - item)));
-  return arr.filter((item) => Math.abs(closure_0 - item) === closure_1)[0];
-};
-fn.__closure = {};
-fn.__workletHash = 8913698095371;
-fn.__initData = { code: "function pnpm_snapPointTs1(value,velocity,points){const point=value+0.2*velocity;const deltas=points.map(function(p){return Math.abs(point-p);});const minDelta=Math.min.apply(null,deltas);return points.filter(function(p){return Math.abs(point-p)===minDelta;})[0];}" };
+import noop from "module_19" /* 19 */;
 
-export const snapPoint = fn;
+const require = globalThis.__r;
+
+({ useEffect: c2, useRef: c3 } = noop);
+
+export const useReactiveSharedValue = (current) => {
+  const tmp = closure_3(null);
+  const tmp2 = closure_3(null);
+  _require = tmp2;
+  let tmp3 = current;
+  if (current) {
+    tmp3 = typeof current === "object";
+  }
+  if (tmp3) {
+    tmp3 = "value" in current;
+  }
+  if (!tmp3) {
+    if (null === tmp2.current) {
+      tmp.current = current;
+      if (typeof current === "object") {
+        const obj2 = {};
+        const merged = Object.assign(current);
+        let mutable = require("cancelAnimation").makeMutable(obj2);
+        let obj = require("cancelAnimation");
+      } else {
+        mutable = require("cancelAnimation").makeMutable(current);
+        const obj3 = require("cancelAnimation");
+      }
+      tmp2.current = mutable;
+    } else if (tmp.current !== current) {
+      tmp2.current.value = current;
+    }
+  }
+  closure_2(() => () => {
+    if (ref.current) {
+      ref(dependencyMap[1]).cancelAnimation(tmp.current);
+      const obj = ref(dependencyMap[1]);
+    }
+  }, []);
+  current = tmp2.current;
+  return current;
+};

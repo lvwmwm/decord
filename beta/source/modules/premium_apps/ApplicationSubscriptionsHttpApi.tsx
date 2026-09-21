@@ -1,12 +1,12 @@
-// Module ID: 9605
-// Function ID: 9606
+// Module ID: 9601
+// Function ID: 9602
 // Name: ApplicationSubscriptionsHttpApi
-// Dependencies: [5, 1074, 1271, 573, 4657, 2]
+// Dependencies: [5, 1078, 1275, 577, 4660, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 9605 (ApplicationSubscriptionsHttpApi)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import APIErrorDefault from "APIError" /* 4657 */;
+// Module 9601 (ApplicationSubscriptionsHttpApi)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import APIErrorDefault from "APIError" /* 4660 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let closure_8 = async function _fetchEligibleApplicationSubscriptionGuilds(appli
     return value.body;
   })();
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionsHttpApi.tsx");
 

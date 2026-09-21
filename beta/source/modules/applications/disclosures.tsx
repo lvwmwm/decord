@@ -1,12 +1,12 @@
-// Module ID: 9332
-// Function ID: 9333
+// Module ID: 9330
+// Function ID: 9331
 // Name: disclosures
-// Dependencies: [5, 1074, 1271, 9333, 1115, 2]
+// Dependencies: [5, 1078, 1275, 9331, 1119, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9332 (disclosures)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import applications from "applications" /* 9333 */;
+// Module 9330 (disclosures)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import applications from "applications" /* 9331 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -32,7 +32,7 @@ let closure_5 = async function _ackDisclosures(arg0, disclosures) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -66,7 +66,7 @@ let closure_5 = async function _ackDisclosures(arg0, disclosures) {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c2 = tmp;
@@ -75,11 +75,11 @@ let closure_5 = async function _ackDisclosures(arg0, disclosures) {
     }
   })();
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/applications/disclosures.tsx");
 
-export const ApplicationDisclosure = fn(9333).ApplicationDisclosureType;
+export const ApplicationDisclosure = fn(9331).ApplicationDisclosureType;
 export const getDisclosures = function getDisclosures() {
   const self = this;
   const apply = closure_4.apply;
@@ -102,11 +102,11 @@ export const ackDisclosures = function ackDisclosures() {
 };
 export const getTextForDisclosure = function getTextForDisclosure(disclosure) {
   if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    const intl2 = tmp(1115).intl;
-    return intl2.string(tmp(1115).t["6wPmjo"]);
-  } else if (tmp(9333).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-    const intl = tmp(1115).intl;
-    return intl.string(tmp(1115).t["/uOMKZ"]);
+    const intl2 = tmp(1119).intl;
+    return intl2.string(tmp(1119).t["6wPmjo"]);
+  } else if (tmp(9331).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
+    const intl = tmp(1119).intl;
+    return intl.string(tmp(1119).t["/uOMKZ"]);
   } else {
     return null;
   }

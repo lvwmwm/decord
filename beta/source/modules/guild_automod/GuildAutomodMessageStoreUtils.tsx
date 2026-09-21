@@ -1,11 +1,11 @@
-// Module ID: 14031
-// Function ID: 14032
+// Module ID: 14034
+// Function ID: 14035
 // Name: GuildAutomodMessageStoreUtils
-// Dependencies: [1096, 2]
+// Dependencies: [1100, 2]
 // Exports: isNotAutomodEmbed
 
-// Module 14031 (GuildAutomodMessageStoreUtils)
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
+// Module 14034 (GuildAutomodMessageStoreUtils)
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1100 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStoreUtils.tsx");

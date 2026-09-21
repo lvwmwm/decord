@@ -1,18 +1,79 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12347
+// Function ID: 12348
 // Name: PollDurationActionSheet
-// Dependencies: [19, 21, 12453, 4467, 4723, 5902, 1115, 5905, 7442, 2]
-// Exports: default
+// Dependencies: [32, 19, 21, 558, 568, 12346, 4472, 4725, 1119, 5900, 5901, 7449, 2]
 
-// Module 12454 (PollDurationActionSheet)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ActionSheet from "ActionSheet" /* 7442 */;
-import usePollDurationOptionsDefault from "usePollDurationOptions" /* 12453 */;
+// Module 12347 (PollDurationActionSheet)
+import c from "c" /* 568 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import usePollDurationOptionsDefault from "usePollDurationOptions" /* 12346 */;
+import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+const ActionSheet = tmp(7449);
 require = fn;
-function PollDurationRadioGroup(onChange) {
+const jsx = fn(21).jsx;
+let ReactCompilerGating = fn(558);
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = onChange(568).c(10);
+  ({ selectedDuration, onChange } = arg0);
+  const tmp4 = usePollDurationOptionsDefault();
+  importDefault = tmp4;
+  if (cResult[0] === onChange) {
+    if (cResult[1] === tmp4) {
+      let tmp5 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1119).intl;
+      const stringResult = intl.string(tmp(1119).t["0ZStp9"]);
+      cResult[3] = stringResult;
+      let tmp7 = stringResult;
+    } else {
+      tmp7 = cResult[3];
+    }
+    if (cResult[4] !== tmp4) {
+      const _Object = Object;
+      const entries = Object.entries(tmp4);
+      const mapped = entries.map((item) => {
+        const tmp = _slicedToArray(item, 2);
+        const first = tmp[0];
+        return jsx(onChange(dependencyMap[9]).TableRadioRow, { value: parseInt(first), label: tmp[1] }, first);
+      });
+      cResult[4] = tmp4;
+      cResult[5] = mapped;
+      let tmp9 = mapped;
+    } else {
+      tmp9 = cResult[5];
+    }
+    if (cResult[6] === tmp5) {
+      if (cResult[7] === selectedDuration) {
+        if (cResult[8] === tmp9) {
+          let tmp11 = cResult[9];
+        }
+        return tmp11;
+      }
+    }
+    const obj2 = { title: tmp7, hasIcons: false, onChange: tmp5, defaultValue: selectedDuration, children: tmp9 };
+    const tmp13 = jsx(tmp(5901).TableRadioGroup, { title: tmp7, hasIcons: false, onChange: tmp5, defaultValue: selectedDuration, children: tmp9 });
+    cResult[6] = tmp5;
+    cResult[7] = selectedDuration;
+    cResult[8] = tmp9;
+    cResult[9] = tmp13;
+    tmp11 = tmp13;
+  }
+  const fn = function l(arg0) {
+    onChange(arg0);
+    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+    AccessibilityAnnouncer.announce(closure_1[arg0]);
+    ActionSheetActionCreatorsDefault.hideActionSheet();
+  };
+  cResult[0] = onChange;
+  cResult[1] = tmp4;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : ((onChange) => {
   onChange = onChange.onChange;
   const tmp = usePollDurationOptionsDefault();
   importDefault = tmp;
@@ -24,22 +85,36 @@ function PollDurationRadioGroup(onChange) {
     ActionSheetActionCreatorsDefault.hideActionSheet();
   }, items);
   const obj = { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null };
-  const intl = onChange(1115).intl;
-  obj.title = intl.string(onChange(1115).t["0ZStp9"]);
+  const intl = onChange(1119).intl;
+  obj.title = intl.string(onChange(1119).t["0ZStp9"]);
   obj.onChange = callback;
   obj.defaultValue = onChange.selectedDuration;
   const entries = Object.entries(tmp);
   obj.children = entries.map((item) => {
     [tmp, tmp2] = item;
-    return jsx(onChange(dependencyMap[7]).TableRadioRow, { value: parseInt(tmp), label: tmp2 }, tmp);
+    return jsx(onChange(dependencyMap[9]).TableRadioRow, { value: parseInt(tmp), label: tmp2 }, tmp);
   });
-  return jsx(onChange(5902).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
-}
-const jsx = fn(21).jsx;
+  return jsx(onChange(5901).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
+});
+ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
 
-export default function PollDurationActionSheet(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(3);
   ({ selectedDuration, onChange } = arg0);
-  return jsx(ActionSheet.ActionSheet, { children: <PollDurationRadioGroup selectedDuration={selectedDuration} onChange={onChange} /> });
-};
+  if (cResult[0] === onChange) {
+    if (cResult[1] === selectedDuration) {
+      let tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const tmp5 = jsx(ActionSheet.ActionSheet, { children: <closure_6 selectedDuration={selectedDuration} onChange={onChange} /> });
+  cResult[0] = onChange;
+  cResult[1] = selectedDuration;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : ((arg0) => {
+  ({ selectedDuration, onChange } = arg0);
+  return jsx(ActionSheet.ActionSheet, { children: <closure_6 selectedDuration={selectedDuration} onChange={onChange} /> });
+});

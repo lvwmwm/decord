@@ -1,9 +1,23 @@
 // Module ID: 11365
 // Function ID: 11366
-// Dependencies: [1121]
+// Dependencies: [11357, 11358, 11359, 11366]
 
 // Module 11365
-import registerAsset from "module_1121" /* 1121 */;
+const require = globalThis.__r;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "3712e3aa74966ab918e86302cf0f502f", name: "SpendEarnOrbs", type: "lottie" });
+for (const key10013 in require("RNIapAmazonModule")) {
+  arg5[key10013] = require("RNIapAmazonModule")[key10013];
+  continue;
+}
+for (const key10017 in require("module_11358")) {
+  arg5[key10017] = require("module_11358")[key10017];
+  continue;
+}
+for (const key10021 in require("module_11359")) {
+  arg5[key10021] = require("module_11359")[key10021];
+  continue;
+}
+for (const key10025 in require("module_11366")) {
+  arg5[key10025] = require("module_11366")[key10025];
+  continue;
+}

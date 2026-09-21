@@ -1,20 +1,20 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 13975
+// Function ID: 13976
 // Name: GuildProductsStore
-// Dependencies: [1091, 11, 4391, 504, 573, 2]
+// Dependencies: [1095, 11, 4395, 504, 577, 2]
 
-// Module 13972 (GuildProductsStore)
+// Module 13975 (GuildProductsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
 
 const FetchState = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
 let closure_3 = {};
 let closure_4 = {};
 let closure_5 = {};
 let closure_6 = 10 * DurationsDefault.Millis.MINUTE;
-const secondaryIndexMap = new fn(4391).SecondaryIndexMap((guild_id) => {
+const secondaryIndexMap = new fn(4395).SecondaryIndexMap((guild_id) => {
   const items = ["guild:" + guild_id.guild_id];
   if (guild_id.published) {
     const _HermesInternal = HermesInternal;

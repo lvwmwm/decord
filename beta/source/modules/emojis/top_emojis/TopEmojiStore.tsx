@@ -1,11 +1,11 @@
-// Module ID: 5679
-// Function ID: 5680
+// Module ID: 5681
+// Function ID: 5682
 // Name: TopEmojiStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 5679 (TopEmojiStore)
+// Module 5681 (TopEmojiStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const obj = { topEmojisByGuildId: {} };
 let closure_1 = obj;

@@ -1,20 +1,20 @@
 // Module ID: 4196
 // Function ID: 4197
-// Dependencies: [3845, 3846]
+// Dependencies: [4197, 3850]
 // Exports: default
 
 // Module 4196
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import module_4197_mod from "module_4197" /* 4197 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let module_4197 = module_4197_mod;
+if (!module_4197) {
+  const obj = { default: module_4197 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_4197;
 }
-_typeof = tmp3;
+module_4197 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,16 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameMonth(arg0, arg1) {
+export default function isSameISOWeek(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const defaultResult2 = _typeof.default(arg1);
-  const fullYear = defaultResult1.getFullYear();
-  let tmp3 = fullYear === defaultResult2.getFullYear();
-  if (tmp3) {
-    const month = defaultResult1.getMonth();
-    tmp3 = month === defaultResult2.getMonth();
-  }
-  return tmp3;
+  return module_4197.default(arg0, arg1, { weekStartsOn: 1 });
 };
 export default exports.default;

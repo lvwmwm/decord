@@ -1,26 +1,27 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 10048
+// Function ID: 10049
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 2046, 5631, 1074, 2047, 21, 4756, 576, 4959, 5339, 1115, 1177, 7334, 8678, 5801, 504, 7458, 8871, 4752, 10011, 10070, 10071, 5203, 1241, 1875, 8669, 7461, 4656, 10072, 10073, 8681, 5186, 7368, 5795, 2]
+// Dependencies: [5, 32, 19, 17, 2050, 5633, 1078, 2051, 21, 4758, 580, 4961, 558, 568, 1119, 5341, 1181, 7336, 8683, 5799, 7460, 504, 8876, 4754, 10017, 10049, 10050, 5203, 1245, 1879, 8674, 7463, 4659, 10051, 10052, 8686, 5188, 7371, 7287, 2]
 
-// Module 10069 (StartStageChannelModal)
+// Module 10048 (StartStageChannelModal)
 import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import Pressables from "Pressables" /* 5339 */;
-import GuildIcon from "GuildIcon" /* 5801 */;
-import _modDef7334 from "module_7334" /* 7334 */;
-import HotspotStore2 from "HotspotStore" /* 7458 */;
-import StageSparkleDefault from "StageSparkle" /* 8678 */;
-import Form from "Form" /* 8871 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1879 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import Pressables from "Pressables" /* 5341 */;
+import GuildIcon from "GuildIcon" /* 5799 */;
+import _modDef7336 from "module_7336" /* 7336 */;
+import HotspotStore2 from "HotspotStore" /* 7460 */;
+import StageSparkleDefault from "StageSparkle" /* 8683 */;
+import Form from "Form" /* 8876 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 2046 */;
+import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 
 const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
@@ -29,85 +30,15 @@ require = fn;
 function closeModal() {
   ModalActionCreatorsDefault.popWithKey(closure_1_11);
 }
-function NavigationBar(guild) {
-  let tmp2 = null;
-  if (null == guild.guild) {
-    const obj = { style: null, children: null };
-    const items = [, ];
-    ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp);
-    obj.style = items;
-    const obj2 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-    const intl = util.intl;
-    obj2.accessibilityLabel = intl.string(util.t.cpT0Cq);
-    obj2.onPress = closeModal;
-    const obj3 = { source: _modDef7334 };
-    obj2.children = closure_1_14(native.Icon, obj3);
-    obj.children = closure_1_14(Pressables.PressableOpacity, obj2);
-    tmp2 = closure_1_14(React5, obj);
-  }
-  return tmp2;
-}
-function HeaderIcon(guild) {
-  guild = guild.guild;
-  if (null == guild) {
-    let tmp7 = closure_1_14(StageSparkleDefault, {});
-  } else {
-    const obj = { style: tmp.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
-    tmp7 = closure_1_14(GuildIconDefault, obj);
-  }
-  return tmp7;
-}
-class NotificationToggle {
-  constructor(arg0) {
-    ({ sendStartNotification, onToggle } = global);
-    tmp = closure_16();
-    tmp2 = closure_0;
-    tmp3 = closure_3;
-    obj = closure_0(closure_3[18]);
-    items = [];
-    items[0] = closure_0(closure_3[19]).HotspotStore;
-    tmp5 = jsx;
-    stateFromStores = obj.useStateFromStores(items, () => {
-      const HotspotStore = HotspotStore2.HotspotStore;
-      return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
-    });
-    obj1 = { DEPRECATED_style: tmp.notificationToggle, label: null, onPress: null, trailing: null };
-    tmp7 = View;
-    obj7 = { style: tmp.label, children: null };
-    tmp6 = jsxs;
-    obj8 = { text: null };
-    intl = closure_0(closure_3[13]).intl;
-    obj8.text = intl.string(closure_0(closure_3[13]).t.BYJgew);
-    items1 = [, ];
-    items1[0] = jsx(closure_0(closure_3[20]).FormLabel, obj8);
-    tmp5Result = null;
-    if (stateFromStores) {
-      obj9 = { style: null, children: null };
-      obj9.style = tmp.pill;
-      obj10 = { style: null, variant: "text-xxs/bold", color: "text-overlay-light", children: null };
-      obj10.style = tmp.pillLabel;
-      intl2 = tmp2(tmp3[13]).intl;
-      obj10.children = intl2.string(tmp2(tmp3[13]).t.y2b7CA);
-      obj9.children = tmp5(tmp2(tmp3[21]).Text, obj10);
-      tmp5Result = tmp5(tmp7, obj9);
-    }
-    items1[1] = tmp5Result;
-    obj7.children = items1;
-    obj1.label = tmp6(tmp7, obj7);
-    obj1.onPress = onToggle;
-    obj1.trailing = tmp5(tmp2(tmp3[14]).Checkbox, { selected: sendStartNotification });
-    return tmp5(closure_0(closure_3[20]).FormRow, obj1);
-  }
-}
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const StageChannelsConstants = fn(5631);
+const StageChannelsConstants = fn(5633);
 ({ MAX_STAGE_TOPIC_LENGTH: c10, START_STAGE_CHANNEL_EVENT_MODAL_KEY: closure_11 } = StageChannelsConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
-let constants = fn(2047).GuildScheduledEventPrivacyLevel;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+let constants = fn(2051).GuildScheduledEventPrivacyLevel;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { keyboardAwareView: { flex: 1 }, closeButtonContainer: { right: 10 }, container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, contentContainer: { paddingHorizontal: 16 }, contentTopSpacing: { paddingTop: 16 }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 16, marginBottom: 8 }, headerSubtitle: { textAlign: "center" }, textInput: null, startButton: null, error: null, optionExplanation: null, guildIcon: null, label: null, pill: null, pillLabel: null, notificationToggle: null, ageVerificationNotice: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.textInput = { padding: 12, width: "100%", borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 16 };
@@ -124,7 +55,230 @@ let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingHori
 obj.notificationToggle = { marginTop: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
 let obj7 = { marginTop: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
 obj.ageVerificationNotice = { marginBottom: nativeDefault.space.PX_16 };
-const value = createStyles.createStyles(obj);
+let closure_16 = createStyles.createStyles(obj);
+let ReactCompilerGating = fn(558);
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  const cResult = c.c(7);
+  const tmp4 = closure_16();
+  if (null != guild.guild) {
+    return null;
+  } else {
+    if (cResult[0] === tmp4.contentContainer) {
+      if (cResult[1] === tmp4.contentTopSpacing) {
+        let tmp5 = cResult[2];
+      }
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(1119).intl;
+        const stringResult = intl.string(tmp(1119).t.cpT0Cq);
+        cResult[3] = stringResult;
+        let tmp7 = stringResult;
+      } else {
+        tmp7 = cResult[3];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = { accessibilityRole: "button", accessibilityLabel: tmp7, onPress: closeModal, children: null };
+        const obj3 = { source: _modDef7336 };
+        obj2.children = state(tmp(1181).Icon, obj3);
+        const tmp13 = state(tmp(5341).PressableOpacity, obj2);
+        cResult[4] = tmp13;
+        let tmp9 = tmp13;
+      } else {
+        tmp9 = cResult[4];
+      }
+      if (cResult[5] !== tmp5) {
+        const obj4 = { style: tmp5, children: tmp9 };
+        const tmp17 = state(React5, obj4);
+        cResult[5] = tmp5;
+        cResult[6] = tmp17;
+      }
+    }
+    const items = [, ];
+    ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp4);
+    cResult[0] = tmp4.contentContainer;
+    cResult[1] = tmp4.contentTopSpacing;
+    cResult[2] = items;
+    tmp5 = items;
+  }
+}) : ((guild) => {
+  let tmp2 = null;
+  if (null == guild.guild) {
+    const obj = { style: null, children: null };
+    const items = [, ];
+    ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp);
+    obj.style = items;
+    const obj2 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
+    const intl = util.intl;
+    obj2.accessibilityLabel = intl.string(util.t.cpT0Cq);
+    obj2.onPress = closeModal;
+    const obj3 = { source: _modDef7336 };
+    obj2.children = state(native.Icon, obj3);
+    obj.children = state(Pressables.PressableOpacity, obj2);
+    tmp2 = state(React5, obj);
+  }
+  return tmp2;
+});
+ReactCompilerGating = fn(558);
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+  let tmp2 = dependencyMap;
+  const cResult = c.c(4);
+  guild = guild.guild;
+  const tmp4 = closure_16();
+  if (null == guild) {
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      tmp2 = state(StageSparkleDefault, {});
+      cResult[0] = tmp2;
+      let first = tmp2;
+    } else {
+      first = cResult[0];
+    }
+  } else {
+    if (cResult[1] === guild) {
+      if (cResult[2] === tmp4.guildIcon) {
+        let tmp5 = cResult[3];
+      }
+      return tmp5;
+    }
+    const obj2 = { style: tmp4.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
+    const tmp9 = state(GuildIconDefault, obj2);
+    cResult[1] = guild;
+    cResult[2] = tmp4.guildIcon;
+    cResult[3] = tmp9;
+    tmp5 = tmp9;
+  }
+}) : ((guild) => {
+  guild = guild.guild;
+  if (null == guild) {
+    let tmp7 = state(StageSparkleDefault, {});
+  } else {
+    const obj = { style: tmp.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
+    tmp7 = state(GuildIconDefault, obj);
+  }
+  return tmp7;
+});
+ReactCompilerGating = fn(558);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(17);
+  ({ sendStartNotification, onToggle } = arg0);
+  const tmp4 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [tmp(7460).HotspotStore];
+    const fn = function n() {
+      const HotspotStore = HotspotStore2.HotspotStore;
+      return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { text: null };
+    const intl = tmp(1119).intl;
+    obj2.text = intl.string(tmp(1119).t.BYJgew);
+    const tmp10 = state(tmp(8876).FormLabel, obj2);
+    cResult[2] = tmp10;
+    let tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === tmp4.pill) {
+      if (cResult[5] === tmp4.pillLabel) {
+        let tmp11 = cResult[6];
+      }
+      if (cResult[7] === tmp4.label) {
+        if (cResult[8] === tmp11) {
+          let tmp15 = cResult[9];
+        }
+        if (cResult[10] !== sendStartNotification) {
+          const obj3 = { selected: sendStartNotification };
+          const tmp21 = state(tmp(1181).Checkbox, obj3);
+          cResult[10] = sendStartNotification;
+          cResult[11] = tmp21;
+          let tmp19 = tmp21;
+        } else {
+          tmp19 = cResult[11];
+        }
+        if (cResult[12] === onToggle) {
+          if (cResult[13] === tmp4.notificationToggle) {
+            if (cResult[14] === tmp15) {
+              if (cResult[15] === tmp19) {
+                let tmp22 = cResult[16];
+              }
+              return tmp22;
+            }
+          }
+        }
+        const obj4 = { DEPRECATED_style: tmp4.notificationToggle, label: tmp15, onPress: onToggle, trailing: tmp19 };
+        const tmp24 = state(tmp(8876).FormRow, obj4);
+        cResult[12] = onToggle;
+        cResult[13] = tmp4.notificationToggle;
+        cResult[14] = tmp15;
+        cResult[15] = tmp19;
+        cResult[16] = tmp24;
+        tmp22 = tmp24;
+      }
+      const obj5 = { style: tmp4.label, children: null };
+      const items1 = [tmp8, tmp11];
+      obj5.children = items1;
+      const tmp18 = closure_1_15(React5, obj5);
+      cResult[7] = tmp4.label;
+      cResult[8] = tmp11;
+      cResult[9] = tmp18;
+      tmp15 = tmp18;
+    }
+  }
+  let tmp12 = null;
+  if (stateFromStores) {
+    const obj6 = { style: tmp4.pill, children: null };
+    const obj7 = { style: tmp4.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: null };
+    const intl2 = tmp(1119).intl;
+    obj7.children = intl2.string(tmp(1119).t.y2b7CA);
+    obj6.children = state(tmp(4754).Text, obj7);
+    tmp12 = state(React5, obj6);
+  }
+  cResult[3] = stateFromStores;
+  cResult[4] = tmp4.pill;
+  cResult[5] = tmp4.pillLabel;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : ((arg0) => {
+  ({ sendStartNotification, onToggle } = arg0);
+  const tmp = closure_16();
+  const items = [HotspotStore2.HotspotStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => {
+    const HotspotStore = HotspotStore2.HotspotStore;
+    return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+  });
+  const obj2 = { DEPRECATED_style: tmp.notificationToggle, label: null, onPress: null, trailing: null };
+  const obj3 = { style: tmp.label, children: null };
+  const obj4 = { text: null };
+  const intl = util.intl;
+  obj4.text = intl.string(util.t.BYJgew);
+  const items1 = [state(Form.FormLabel, obj4), ];
+  let tmp5Result = null;
+  if (stateFromStores) {
+    const obj5 = { style: tmp.pill, children: null };
+    const obj6 = { style: tmp.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: null };
+    const intl2 = tmp2(1119).intl;
+    obj6.children = intl2.string(tmp2(1119).t.y2b7CA);
+    obj5.children = tmp5(tmp2(4754).Text, obj6);
+    tmp5Result = tmp5(tmp7, obj5);
+  }
+  items1[1] = tmp5Result;
+  obj3.children = items1;
+  obj2.label = closure_1_15(React5, obj3);
+  obj2.onPress = onToggle;
+  obj2.trailing = state(native.Checkbox, { selected: sendStartNotification });
+  return state(Form.FormRow, obj2);
+});
+let closure_20 = tmp5;
 let obj8 = { marginBottom: nativeDefault.space.PX_16 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
@@ -156,7 +310,7 @@ export default noop.forwardRef((channel, ref) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -175,23 +329,23 @@ export default noop.forwardRef((channel, ref) => {
             closure_128_0 = undefined;
             if ("" !== first1) {
               if (null != first2) {
-                React6(true);
+                closure_2_8(true);
                 StageInstanceStore(null);
-                const result = tmp66(1875).dismissGlobalKeyboard();
+                const result = tmp66(1879).dismissGlobalKeyboard();
                 dependencyMap = 1;
                 if (null != memo) {
                   c4 = 3;
                   c5 = 1;
-                  const obj8 = { value: tmp66(8669).editStage(channel, tmp75, tmp47), done: false };
+                  const obj8 = { value: tmp66(8674).editStage(channel, tmp75, tmp47), done: false };
                   return obj8;
                 } else {
-                  obj5 = tmp66(8669);
+                  obj5 = tmp66(8674);
                   c4 = 2;
                   c5 = 1;
                   const obj9 = { value: obj5.startStage(channel, tmp75, tmp47, first3), done: false };
                   return obj9;
                 }
-                const obj4 = tmp66(1875);
+                const obj4 = tmp66(1879);
               }
             }
           }
@@ -199,7 +353,7 @@ export default noop.forwardRef((channel, ref) => {
           if (1 === tmp7) {
             dependencyMap = 0;
             closure_128_1 = tmp66;
-            const aPIError = new closure_0(4656).APIError(closure_128_1);
+            const aPIError = new closure_0(4659).APIError(closure_128_1);
             closure_128_0 = aPIError;
             closure_129_9(closure_128_0);
             closure_129_8(false);
@@ -214,8 +368,8 @@ export default noop.forwardRef((channel, ref) => {
                   tmp8 = closure_129_13;
                 }
                 if (tmp8) {
-                  tmp66(7461).hideHotspot(closure_0(7458).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
-                  const obj2 = tmp66(7461);
+                  tmp66(7463).hideHotspot(closure_0(7460).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                  const obj2 = tmp66(7463);
                 }
               }
             } else if (arg0 === 1) {
@@ -262,7 +416,7 @@ export default noop.forwardRef((channel, ref) => {
       const tmp = c16();
       const intl = require("util").intl;
       obj.accessibilityLabel = intl.string(require("util").t.cpT0Cq);
-      obj.source = require("module_7334");
+      obj.source = require("module_7336");
       obj.onPress = onPress;
       return obj5(require("TouchableHitBox"), obj);
     }
@@ -347,24 +501,24 @@ export default noop.forwardRef((channel, ref) => {
     AnalyticsUtilsDefault.track(AnalyticEvents.START_STAGE_OPENED, { stage_instance_id: id, can_start_public_stage: !c16, guild_id: first.guild_id });
   });
   let obj6 = { style: tmp.header, children: null };
-  const items3 = [obj5(HeaderIcon, { guild }), , ];
+  const items3 = [obj5(closure_19, { guild }), , ];
   const obj7 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: null };
   if (null == memo) {
-    const intl2 = tmp16(tmp17[13]).intl;
-    let stringResult = intl2.string(tmp16(tmp17[13]).t.DDF0cJ);
+    const intl2 = tmp16(tmp17[14]).intl;
+    let stringResult = intl2.string(tmp16(tmp17[14]).t.DDF0cJ);
   } else {
-    let intl = tmp16(tmp17[13]).intl;
-    stringResult = intl.string(tmp16(tmp17[13]).t["5BKP4y"]);
+    let intl = tmp16(tmp17[14]).intl;
+    stringResult = intl.string(tmp16(tmp17[14]).t["5BKP4y"]);
   }
   obj7.children = stringResult;
   items3[1] = obj5(require("Text/Text").Text, obj7);
   let obj8 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
   if (null == memo) {
-    const intl4 = tmp16(tmp17[13]).intl;
-    let stringResult1 = intl4.string(tmp16(tmp17[13]).t.bqQIwa);
+    const intl4 = tmp16(tmp17[14]).intl;
+    let stringResult1 = intl4.string(tmp16(tmp17[14]).t.bqQIwa);
   } else {
-    const intl3 = tmp16(tmp17[13]).intl;
-    stringResult1 = intl3.string(tmp16(tmp17[13]).t["I+9bLx"]);
+    const intl3 = tmp16(tmp17[14]).intl;
+    stringResult1 = intl3.string(tmp16(tmp17[14]).t["I+9bLx"]);
   }
   obj8.children = stringResult1;
   items3[2] = obj5(require("Text/Text").Text, obj8);
@@ -382,24 +536,24 @@ export default noop.forwardRef((channel, ref) => {
   let obj10 = { children: null };
   const tmp29Result = ref(closure_7, obj6);
   const tmp35 = c8;
-  const intl5 = tmp16(tmp17[13]).intl;
+  const intl5 = tmp16(tmp17[14]).intl;
   obj10.children = intl5.string(require("util").t["5FPBOB"]);
   items5[1] = obj5(require("FormHeader"), obj10);
   const obj11 = { style: tmp.textInput, showBorder: false, showTopContainer: false, multiline: false, maxLength: canSendStageStartNotification, value: first1, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
-  const intl6 = tmp16(tmp17[13]).intl;
+  const intl6 = tmp16(tmp17[14]).intl;
   obj11.placeholder = intl6.string(require("util").t.ZwWruY);
   obj11.clearButtonVisibility = require("native").ClearButtonVisibility.WITH_CONTENT;
   items5[2] = obj5(require("Form").FormInput, obj11);
   let tmp31Result = null != helpText;
   if (tmp31Result) {
     const obj12 = { style: tmp.optionExplanation, variant: "text-xs/medium", color: "text-default", children: helpText };
-    tmp31Result = tmp31(tmp16(tmp17[21]).Text, obj12);
+    tmp31Result = tmp31(tmp16(tmp17[23]).Text, obj12);
   }
   items5[3] = tmp31Result;
   let tmp31Result5 = null != guild;
   if (tmp31Result5) {
     const obj13 = { guild, channel, onChangeChannel: tmp4[1] };
-    tmp31Result5 = tmp31(tmp26(tmp17[32]), obj13);
+    tmp31Result5 = tmp31(tmp26(tmp17[34]), obj13);
   }
   items5[4] = tmp31Result5;
   let tmp31Result6 = null;
@@ -411,23 +565,23 @@ export default noop.forwardRef((channel, ref) => {
           closure_12(!first3);
         }
     };
-    tmp31Result6 = tmp31(NotificationToggle, obj14);
+    tmp31Result6 = tmp31(closure_20, obj14);
   }
   items5[5] = tmp31Result6;
   items5[6] = obj5(require("StageChannelAgeVerificationNotice"), { onConfirmPress, style: tmp.ageVerificationNotice, channelId: channel.id });
   let tmp31Result7 = null;
   if (null != obj2) {
     const obj16 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj2.getAnyErrorMessage() };
-    tmp31Result7 = tmp31(tmp16(tmp17[21]).Text, obj16);
+    tmp31Result7 = tmp31(tmp16(tmp17[23]).Text, obj16);
   }
   items5[7] = tmp31Result7;
   const obj17 = { style: tmp.startButton, children: null };
   if (null == memo) {
-    const intl8 = tmp16(tmp17[13]).intl;
-    let stringResult2 = intl8.string(tmp16(tmp17[13]).t.s8mM8A);
+    const intl8 = tmp16(tmp17[14]).intl;
+    let stringResult2 = intl8.string(tmp16(tmp17[14]).t.s8mM8A);
   } else {
-    const intl7 = tmp16(tmp17[13]).intl;
-    stringResult2 = intl7.string(tmp16(tmp17[13]).t.K344S7);
+    const intl7 = tmp16(tmp17[14]).intl;
+    stringResult2 = intl7.string(tmp16(tmp17[14]).t.K344S7);
   }
   obj17.children = obj5(require("components/Button/Button").Button, {
     text: stringResult2,
@@ -452,12 +606,12 @@ export default noop.forwardRef((channel, ref) => {
     const rect = { top: true, bottom: true, style: tmp.container, children: null };
     const obj19 = { style: tmp.keyboardAwareView, children: null };
     const obj20 = { guild };
-    const items6 = [tmp31(NavigationBar, obj20), tmp29Result2];
+    const items6 = [tmp31(closure_18, obj20), tmp29Result2];
     obj19.children = items6;
-    rect.children = tmp29(tmp26(tmp17[36]), obj19);
-    tmp31Result8 = tmp31(tmp16(tmp17[35]).SafeAreaPaddingView, rect);
-    const tmp26Result2 = tmp26(tmp17[36]);
+    rect.children = tmp29(tmp26(tmp17[38]), obj19);
+    tmp31Result8 = tmp31(tmp16(tmp17[37]).SafeAreaPaddingView, rect);
+    const tmp26Result2 = tmp26(tmp17[38]);
   }
   return tmp31Result8;
 });
-export { NotificationToggle };
+export const NotificationToggle = tmp5;

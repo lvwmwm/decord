@@ -1,16 +1,32 @@
-// Module ID: 14970
-// Function ID: 14971
+// Module ID: 14959
+// Function ID: 14960
 // Name: useHighlightSettingItem
-// Dependencies: [14966, 2]
-// Exports: useHighlightSettingItem
+// Dependencies: [14955, 558, 568, 2]
 
-// Module 14970 (useHighlightSettingItem)
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14966 */;
+// Module 14959 (useHighlightSettingItem)
+import c from "c" /* 568 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14955 */;
 
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/settings/native/renderer/hooks/useHighlightSettingItem.tsx");
 
-export const useHighlightSettingItem = function useHighlightSettingItem(setting) {
-  closure_0 = setting;
+export const useHighlightSettingItem = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  closure_0 = arg0;
+  const cResult = c.c(2);
+  if (cResult[0] !== arg0) {
+    const fn = function s(selected) {
+      return selected.selected === closure_0;
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return UserSettingSearchStore.useState(tmp2);
+}) : ((arg0) => {
+  closure_0 = arg0;
   return UserSettingSearchStore.useState((selected) => selected.selected === closure_0);
-};
+});

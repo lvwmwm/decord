@@ -1,16 +1,16 @@
-// Module ID: 2002
-// Function ID: 2003
+// Module ID: 2006
+// Function ID: 2007
 // Name: ApplicationRecord
-// Dependencies: [1387, 2003, 1386, 2004, 1349, 1086, 2005, 1397, 2007, 11, 2]
+// Dependencies: [1391, 2007, 1390, 2008, 1353, 1090, 2009, 1401, 2011, 11, 2]
 
-// Module 2002 (ApplicationRecord)
+// Module 2006 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2007 */;
-import Record from "Record" /* 1387 */;
-import CompanyRecord from "CompanyRecord" /* 2003 */;
-import UserRecord from "UserRecord" /* 1386 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2011 */;
+import Record from "Record" /* 1391 */;
+import CompanyRecord from "CompanyRecord" /* 2007 */;
+import UserRecord from "UserRecord" /* 1390 */;
 
 require = fn;
 function createExecutable(os) {
@@ -27,9 +27,9 @@ function createExecutable(os) {
   }
   return obj;
 }
-const Constants = fn(2004);
+const Constants = fn(2008);
 ({ END_GAME_APPLICATION_ID, POKER_NIGHT_APPLICATION_ID } = Constants);
-const ApplicationTypes = fn(1349).ApplicationTypes;
+const ApplicationTypes = fn(1353).ApplicationTypes;
 let closure_7 = { [POKER_NIGHT_APPLICATION_ID]: 7, [END_GAME_APPLICATION_ID]: 12 };
 let BasicApplicationRecord;
 class BasicApplicationRecord extends tmp2 {
@@ -471,7 +471,7 @@ prototype2["mergeFromApplicationUpdate"] = function mergeFromApplicationUpdate(i
     guildId = self.guildId;
   }
   obj.guildId = guildId;
-  let guild = id.guild;
+  guild = id.guild;
   if (guild == null) {
     guild = self.guild;
   }

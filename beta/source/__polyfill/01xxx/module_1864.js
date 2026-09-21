@@ -1,53 +1,18 @@
 // Module ID: 1864
 // Function ID: 1865
-// Dependencies: [19, 21, 1856, 1857, 1862, 1829, 1855]
+// Dependencies: [19, 17, 21, 1859]
 // Exports: default
 
 // Module 1864
-import _mod1829 from "module_1829" /* 1829 */;
-import disabledDefault from "disabled" /* 1856 */;
-import _modDef1857 from "module_1857" /* 1857 */;
+import TEST_ID_KEYBOARD_TOOLBAR from "TEST_ID_KEYBOARD_TOOLBAR" /* 1859 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-fn(19).useCallback;
+get_ActivityIndicator = fn(17);
+({ StyleSheet, View: c2 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
+const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export default function _default(icon) {
-  ({ children, onPress } = icon);
-  ({ disabled, button } = icon);
-  ({ rippleRadius, style } = icon);
-  if (button === undefined) {
-    button = disabledDefault;
-  }
-  icon = icon.icon;
-  if (icon === undefined) {
-    icon = _modDef1857;
-  }
-  const toolbarContext = onPress(1862).useToolbarContext();
-  const theme = toolbarContext.theme;
-  if (disabled == null) {
-    disabled = toolbarContext.isPrevDisabled;
-  }
-  const items = [onPress];
-  const obj2 = { accessibilityHint: "Moves focus to the previous field", accessibilityLabel: "Previous", disabled, rippleRadius, style, testID: null, theme: null, onPress: null, children: null };
-  const obj = onPress(1862);
-  const tmp5 = onPress;
-  obj2.testID = tmp5(1855).TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS;
-  obj2.theme = theme;
-  obj2.onPress = useCallback((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
-    }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = _mod1829.KeyboardController;
-      KeyboardController.setFocusTo("prev");
-    }
-  }, items);
-  if (children == null) {
-    const obj3 = { disabled, theme, type: "prev" };
-    children = tmp9(icon, obj3);
-  }
-  obj2.children = children;
-  return <button accessibilityHint="Moves focus to the previous field" accessibilityLabel="Previous" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={null} theme={null} onPress={null}>{null}</button>;
+export default function _default(children) {
+  return <React2 style={styles.flex} testID={TEST_ID_KEYBOARD_TOOLBAR.TEST_ID_KEYBOARD_TOOLBAR_CONTENT}>{arg0.children}</React2>;
 };

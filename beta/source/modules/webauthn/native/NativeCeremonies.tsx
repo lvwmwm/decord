@@ -1,12 +1,12 @@
-// Module ID: 7192
-// Function ID: 7193
+// Module ID: 7190
+// Function ID: 7191
 // Name: NativeCeremonies
-// Dependencies: [5, 3, 6841, 6838, 1115, 1364, 7193, 7194, 1609, 2]
+// Dependencies: [5, 3, 6839, 6836, 1119, 1368, 7191, 7192, 1613, 2]
 
-// Module 7192 (NativeCeremonies)
+// Module 7190 (NativeCeremonies)
 import LoggerDefault from "Logger" /* 3 */;
-import util from "util" /* 1115 */;
-import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6841 */;
+import util from "util" /* 1119 */;
+import NativeSecurityKeyManagerModuleDefault from "NativeSecurityKeyManagerModule" /* 6839 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let closure_5 = async function _promptForRegisterCredential(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -48,7 +48,7 @@ let closure_5 = async function _promptForRegisterCredential(arg0, value) {
           let challenge;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp6) {
         if (arg0 === 1) {
@@ -135,7 +135,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
               closure_129_0 = closure_0;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -216,7 +216,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
   });
 };
 obj.registerAndroidCredentialManagerPasskey = function registerAndroidCredentialManagerPasskey(setError) {
-  setRegistering(6841).registerPasskey;
+  setRegistering(6839).registerPasskey;
   setError = undefined;
   setError = setError.setError;
   setRegistering = setError.setRegistering;
@@ -269,7 +269,7 @@ obj.registerAndroidCredentialManagerPasskey = function registerAndroidCredential
   }).finally(() => setRegistering(false));
 };
 obj.registerAndroidDevicePasskey = function registerAndroidDevicePasskey(setError) {
-  setRegistering(6841).register;
+  setRegistering(6839).register;
   setError = undefined;
   setError = setError.setError;
   setRegistering = setError.setRegistering;
@@ -322,8 +322,8 @@ obj.registerAndroidDevicePasskey = function registerAndroidDevicePasskey(setErro
   }).finally(() => setRegistering(false));
 };
 obj.registerPasskey = function registerPasskey(setError) {
-  const obj = setError(1364);
-  const tmp2 = setRegistering(6841);
+  const obj = setError(1368);
+  const tmp2 = setRegistering(6839);
   if (isAndroidResult) {
     setError = undefined;
     const setError2 = setError.setError;
@@ -465,7 +465,7 @@ obj.registerPasskey = function registerPasskey(setError) {
 obj.registerSecurityKey = function registerSecurityKey(setError, fn) {
   let register = fn;
   if (fn === undefined) {
-    register = setRegistering(6841).register;
+    register = setRegistering(6839).register;
   }
   setError = undefined;
   setError = setError.setError;

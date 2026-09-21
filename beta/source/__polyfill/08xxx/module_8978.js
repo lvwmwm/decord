@@ -1,9 +1,9 @@
 // Module ID: 8978
 // Function ID: 8979
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 8978
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "eb011b89d6ca95998a19fc9752810bf1", name: "MinecraftNeutralIcon-tertiary", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8490caddc6d6fe2d04f984b90b4d2807", name: "XboxNeutralIcon", type: "png" });

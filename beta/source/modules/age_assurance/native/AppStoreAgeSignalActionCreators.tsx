@@ -1,11 +1,11 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8850
+// Function ID: 8851
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1074, 1271, 2]
+// Dependencies: [5, 1078, 1275, 2]
 // Exports: requestAgeSignalChallenge, submitAgeSignal
 
-// Module 8845 (AppStoreAgeSignalActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 8850 (AppStoreAgeSignalActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -37,7 +37,7 @@ let closure_6 = async function _submitAgeSignal(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -64,7 +64,7 @@ let closure_6 = async function _submitAgeSignal(arg0, value) {
           closure_133_3 = str;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -123,7 +123,7 @@ let closure_6 = async function _submitAgeSignal(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 let closure_4 = { result: "skipped", reason: null };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/age_assurance/native/AppStoreAgeSignalActionCreators.tsx");

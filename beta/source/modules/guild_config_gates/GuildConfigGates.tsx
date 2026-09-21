@@ -1,16 +1,16 @@
-// Module ID: 18075
-// Function ID: 18076
+// Module ID: 18078
+// Function ID: 18079
 // Name: GuildConfigGates
-// Dependencies: [5, 18076, 1074, 504, 1271, 573, 2]
+// Dependencies: [5, 18079, 1078, 504, 1275, 577, 558, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 18075 (GuildConfigGates)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 18078 (GuildConfigGates)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 18076 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 18079 */;
 
 require = fn;
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const initialize = fn(504);
 let obj2 = {
   getQueryId(arg0) {
@@ -45,7 +45,7 @@ let closure_3 = asyncGeneratorStep(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -114,10 +114,14 @@ obj2.load = function() {
   return applyArgumentsResult;
 };
 let closure_6 = initialize.createFetchStore(GuildConfigGatesStore, obj2);
+let ReactCompilerGating = fn(558);
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
+const result2 = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
 
-export const useGuildVerificationRoleEnabled = function useGuildVerificationRoleEnabled(arg0) {
+export const useGuildVerificationRoleEnabled = (arg0) => {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {
@@ -128,7 +132,7 @@ export const useGuildVerificationRoleEnabled = function useGuildVerificationRole
   }
   return flag;
 };
-export const useApplicationIdentityLinkedRolesEnabled = function useApplicationIdentityLinkedRolesEnabled(arg0) {
+export const useApplicationIdentityLinkedRolesEnabled = (arg0) => {
   const data = closure_6(arg0).data;
   let flag;
   if (data != null) {

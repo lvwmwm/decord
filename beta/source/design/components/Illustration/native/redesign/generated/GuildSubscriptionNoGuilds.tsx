@@ -1,64 +1,97 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 13800
+// Function ID: 13801
 // Name: GuildSubscriptionNoGuilds
-// Dependencies: [19, 17, 21, 8502, 13798, 13799, 13800, 4607, 2]
-// Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
+// Dependencies: [19, 17, 21, 8507, 13801, 13802, 13803, 558, 568, 4610, 2]
+// Exports: getGuildSubscriptionNoGuildsSource
 
-// Module 13797 (GuildSubscriptionNoGuilds)
-import shared from "shared" /* 4607 */;
-import _mod8502 from "module_8502" /* 8502 */;
+// Module 13800 (GuildSubscriptionNoGuilds)
+import c from "c" /* 568 */;
+import shared from "shared" /* 4610 */;
+import _mod8507 from "module_8507" /* 8507 */;
 import noop from "module_19" /* 19 */;
-
-const require = globalThis.__r;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
+let ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const theme = shared.useThemeContext().theme;
+  if (cResult[0] !== theme) {
+    const obj3 = {
+      dark() {
+          return require("module_13801");
+        },
+      darker() {
+          return require("module_13802");
+        },
+      light() {
+          return require("module_13803");
+        }
+    };
+    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    cResult[0] = theme;
+    cResult[1] = illustrationSource;
+    let tmp4 = illustrationSource;
+    const tmpResult = _mod8507;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const obj = shared;
+  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_13801");
+    },
+    darker() {
+      return require("module_13802");
+    },
+    light() {
+      return require("module_13803");
+    }
+  });
+});
+let closure_4 = tmp3;
+ReactCompilerGating = fn(558);
+function getGuildSubscriptionNoGuildsSource(theme) {
+  return _mod8507.getIllustrationSource(theme, {
+    dark() {
+      return require("module_13801");
+    },
+    darker() {
+      return require("module_13802");
+    },
+    light() {
+      return require("module_13803");
+    }
+  });
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionNoGuilds.tsx");
 
-export const getGuildSubscriptionNoGuildsSource = function getGuildSubscriptionNoGuildsSource(theme) {
-  return _mod8502.getIllustrationSource(theme, {
-    dark() {
-      return require("module_13798");
-    },
-    darker() {
-      return require("module_13799");
-    },
-    light() {
-      return require("module_13800");
+export { getGuildSubscriptionNoGuildsSource };
+export const useGuildSubscriptionNoGuildsSource = tmp3;
+export const GuildSubscriptionNoGuilds = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(3);
+  const tmp2 = closure_4();
+  if (cResult[0] === arg0) {
+    if (cResult[1] === tmp2) {
+      let tmp3 = cResult[2];
     }
-  });
-};
-export const useGuildSubscriptionNoGuildsSource = function useGuildSubscriptionNoGuildsSource() {
-  const obj = shared;
-  return _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_13798");
-    },
-    darker() {
-      return require("module_13799");
-    },
-    light() {
-      return require("module_13800");
-    }
-  });
-};
-export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0) {
-  const obj = shared;
-  const obj4 = {};
-  const illustrationSource = _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_13798");
-    },
-    darker() {
-      return require("module_13799");
-    },
-    light() {
-      return require("module_13800");
-    }
-  });
+    return tmp3;
+  }
+  const obj2 = {};
   const merged = Object.assign(arg0);
-  obj4.source = illustrationSource;
+  obj2.source = tmp2;
+  const tmp5 = <Image />;
+  cResult[0] = arg0;
+  cResult[1] = tmp2;
+  cResult[2] = tmp5;
+  tmp3 = tmp5;
+}) : ((arg0) => {
+  const obj = {};
+  const merged = Object.assign(arg0);
+  obj.source = closure_4();
   return <Image />;
-};
+});

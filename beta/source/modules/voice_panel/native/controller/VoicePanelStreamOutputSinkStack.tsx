@@ -1,13 +1,15 @@
-// Module ID: 17545
-// Function ID: 17546
+// Module ID: 17553
+// Function ID: 17554
 // Name: VoicePanelStreamOutputSinkStack
-// Dependencies: [32, 19, 2]
-// Exports: useSetHasActiveVideoOutputSink
+// Dependencies: [32, 19, 558, 568, 2]
 
-// Module 17545 (VoicePanelStreamOutputSinkStack)
+// Module 17553 (VoicePanelStreamOutputSinkStack)
+import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/controller/VoicePanelStreamOutputSinkStack.tsx");
 class VoicePanelStreamOutputSinkStack {
@@ -105,13 +107,57 @@ prototype["sourceId"] = function sourceId(dependencyMap) {
 };
 
 export default VoicePanelStreamOutputSinkStack;
-export const useSetHasActiveVideoOutputSink = function useSetHasActiveVideoOutputSink(streamOutputSinkStack) {
+export const useSetHasActiveVideoOutputSink = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const hasActiveVideoOutputSink = arg0;
+  const cResult = c.c(10);
   const id = noop.useId();
-  const items = [id, streamOutputSinkStack];
+  if (cResult[0] === id) {
+    if (cResult[1] === arg0) {
+      let tmp3 = cResult[2];
+    }
+    if (cResult[3] === id) {
+      if (cResult[4] === arg0) {
+        let tmp4 = cResult[5];
+      }
+      if (cResult[6] === id) {
+        if (cResult[7] === tmp3) {
+          if (cResult[8] === arg0) {
+            let tmp5 = cResult[9];
+          }
+          const effect = noop.useEffect(tmp4, tmp5);
+          return tmp3;
+        }
+      }
+      const items = [id, tmp3, arg0];
+      cResult[6] = id;
+      cResult[7] = tmp3;
+      cResult[8] = arg0;
+      cResult[9] = items;
+      tmp5 = items;
+    }
+    const fn2 = function o() {
+      return () => hasActiveVideoOutputSink.clearLock(id);
+    };
+    cResult[3] = id;
+    cResult[4] = arg0;
+    cResult[5] = fn2;
+    tmp4 = fn2;
+  }
+  const fn = function c(arg0, arg1) {
+    const result = hasActiveVideoOutputSink.setHasActiveVideoOutputSink(id, arg0, arg1);
+  };
+  cResult[0] = id;
+  cResult[1] = arg0;
+  cResult[2] = fn;
+  tmp3 = fn;
+}) : ((arg0) => {
+  const hasActiveVideoOutputSink = arg0;
+  const id = noop.useId();
+  const items = [id, arg0];
   const callback = noop.useCallback((arg0, arg1) => {
-    const result = streamOutputSinkStack.setHasActiveVideoOutputSink(id, arg0, arg1);
+    const result = hasActiveVideoOutputSink.setHasActiveVideoOutputSink(id, arg0, arg1);
   }, items);
-  const items1 = [id, callback, streamOutputSinkStack];
-  const effect = noop.useEffect(() => () => streamOutputSinkStack.clearLock(id), items1);
+  const items1 = [id, callback, arg0];
+  const effect = noop.useEffect(() => () => hasActiveVideoOutputSink.clearLock(id), items1);
   return callback;
-};
+});

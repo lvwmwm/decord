@@ -1,15 +1,15 @@
-// Module ID: 16194
-// Function ID: 16195
+// Module ID: 16183
+// Function ID: 16184
 // Name: UserSettingsSafetySelectedGuildStore
-// Dependencies: [560, 2]
+// Dependencies: [562, 2]
 // Exports: getSelectedGuildId, setSelectedGuildId
 
-// Module 16194 (UserSettingsSafetySelectedGuildStore)
-import module_560 from "module_560" /* 560 */;
+// Module 16183 (UserSettingsSafetySelectedGuildStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = { selectedGuildId: "0" };
-const useUserSafetySettingsSelectedGuildStore = module_560.create((arg0) => {
+const useUserSafetySettingsSelectedGuildStore = module_562.create((arg0) => {
   closure_0 = arg0;
   const obj = {};
   const merged = Object.assign(closure_0);

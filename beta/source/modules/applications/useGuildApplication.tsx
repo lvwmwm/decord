@@ -1,14 +1,14 @@
-// Module ID: 18138
-// Function ID: 18139
+// Module ID: 18141
+// Function ID: 18142
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 4983, 504, 7408, 4656, 2]
+// Dependencies: [5, 32, 19, 4985, 504, 7410, 4659, 2]
 // Exports: default
 
-// Module 18138 (useGuildApplication)
+// Module 18141 (useGuildApplication)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+import ApplicationStore from "ApplicationStore" /* 4985 */;
 
 const require = globalThis.__r;
 
@@ -38,7 +38,7 @@ export default function useGuildApplication(arg0, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

@@ -1,0 +1,22 @@
+// Module ID: 5431
+// Function ID: 5432
+// Dependencies: []
+
+// Module 5431
+class MetadataMissingError {
+  constructor(arg0) {
+    obj = { name: "MetadataMissingError" };
+    str = arg0;
+    if (!arg0) {
+      str = "No Exif data";
+    }
+    obj.message = str;
+    error = new Error();
+    obj.stack = error.stack;
+    return;
+  }
+}
+let error = new Error();
+MetadataMissingError.prototype = error;
+
+export default { MetadataMissingError };

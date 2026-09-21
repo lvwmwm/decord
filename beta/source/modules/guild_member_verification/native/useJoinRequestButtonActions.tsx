@@ -1,25 +1,25 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12797
+// Function ID: 12798
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2041, 1074, 21, 4454, 1115, 7489, 4723, 5758, 4580, 4715, 576, 12887, 1980, 2]
+// Dependencies: [5, 32, 19, 2045, 1078, 21, 4458, 1119, 7491, 4725, 5760, 4583, 4717, 580, 12798, 1984, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12886 (useJoinRequestButtonActions)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+// Module 12797 (useJoinRequestButtonActions)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-const Routes = fn(1074).Routes;
+const Routes = fn(1078).Routes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/useJoinRequestButtonActions.tsx");
 
-export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, callback) {
-  const onDismiss = callback;
+export const useJoinRequestButtonActions = function useJoinRequestButtonActions(joinRequest, interviewChannelId, cResult) {
+  const onDismiss = cResult;
   let obj = joinRequest;
   if (joinRequest == null) {
     obj = {};
@@ -49,7 +49,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -226,7 +226,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             const intl = tmp4(tmp44[7]).intl;
             obj10.content = intl.string(tmp4(tmp44[7]).t.WXHcq5);
             obj10.icon = function icon() {
-              return closure_1_8(closure_1_0(4715).CircleCheckIcon, { color: closure_1_1(576).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: closure_1_1(576).colors.STATUS_POSITIVE_TEXT });
+              return closure_1_8(closure_1_0(4717).CircleCheckIcon, { color: closure_1_1(580).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: closure_1_1(580).colors.STATUS_POSITIVE_TEXT });
             };
             tmp42(tmp44[6]).open(obj10);
             c3 = 1;
@@ -253,7 +253,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
       }
     }
   }), items1);
-  const items2 = [guildId, joinRequestId, joinRequest, callback, onError, userId];
+  const items2 = [guildId, joinRequestId, joinRequest, cResult, onError, userId];
   obj2.rejectRequest = joinRequestId.useCallback(() => {
     let tmp2 = null != joinRequest;
     if (tmp2) {
@@ -269,8 +269,8 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
       const _HermesInternal = HermesInternal;
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { joinRequest, onError, onDismiss };
-      obj.openLazy(asyncRequireImpl(12887, dependencyMap.paths), "RejectionReason-" + joinRequestId, obj2);
-      const tmp9 = asyncRequireImpl(12887, dependencyMap.paths);
+      obj.openLazy(asyncRequireImpl(12798, dependencyMap.paths), "RejectionReason-" + joinRequestId, obj2);
+      const tmp9 = asyncRequireImpl(12798, dependencyMap.paths);
     }
   }, items2);
   obj2.submitting = submitting;

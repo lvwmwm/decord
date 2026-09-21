@@ -1,23 +1,42 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12704
+// Function ID: 12705
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 12794, 1980, 5110, 2]
-// Exports: default
+// Dependencies: [19, 21, 12705, 1984, 558, 568, 5112, 2]
 
-// Module 12793 (useGuildPowerupOnShowDeactivate)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import useAlertStore from "useAlertStore" /* 5110 */;
+// Module 12704 (useGuildPowerupOnShowDeactivate)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import useAlertStore from "useAlertStore" /* 5112 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-let closure_4 = noop.lazy(() => asyncRequireImpl(12794, dependencyMap.paths));
+let closure_4 = noop.lazy(() => asyncRequireImpl(12705, dependencyMap.paths));
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowDeactivate.tsx");
 
-export default function useGuildPowerupOnShowDeactivate(guildId, powerup) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, powerup) => {
+  _require = guildId;
+  dependencyMap = powerup;
+  const cResult = require("c").c(3);
+  if (cResult[0] === guildId) {
+    if (cResult[1] === powerup) {
+      let tmp2 = cResult[2];
+    }
+    return tmp2;
+  }
+  const fn = function p() {
+    useAlertStore.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
+  };
+  cResult[0] = guildId;
+  cResult[1] = powerup;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((guildId, powerup) => {
   const items = [guildId, powerup];
   return noop.useCallback(() => {
     useAlertStore.openAlert("guild-powerups-deactivate-alert", <closure_4 guildId={guildId} powerup={powerup} />);
   }, items);
-};
+});

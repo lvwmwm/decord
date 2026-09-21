@@ -1,25 +1,60 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 11849
+// Function ID: 11850
 // Name: useVoteReactors
-// Dependencies: [8004, 1074, 504, 8005, 1331, 2]
-// Exports: default
+// Dependencies: [8009, 1078, 558, 568, 8010, 504, 1335, 2]
 
-// Module 11976 (useVoteReactors)
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8005 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 8004 */;
+// Module 11849 (useVoteReactors)
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8010 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8009 */;
 
 require = fn;
-let closure_4 = fn(1074).DEFAULT_NUM_REACTION_USERS;
+let closure_4 = fn(1078).DEFAULT_NUM_REACTION_USERS;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/useVoteReactors.tsx");
 
-export default function useVoteReactors(channelId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const cResult = channelId(reaction[3]).c(9);
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
-  const reaction = channelId.reaction;
-  let items = [MessageReactionsStore];
-  const items1 = [channelId, messageId, reaction.emoji];
-  const stateFromStores = channelId(reaction[2]).useStateFromStores(items, () => {
+  reaction = channelId.reaction;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [MessageReactionsStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === channelId) {
+    if (cResult[2] === messageId) {
+      if (cResult[3] === reaction.emoji) {
+        let tmp6 = cResult[4];
+        let tmp7 = cResult[5];
+      }
+      const tmpResult = channelId(tmp2[5]);
+      const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7, messageId(tmp2[6]));
+      const count_details = reaction.count_details;
+      let num2;
+      if (count_details != null) {
+        num2 = count_details.vote;
+      }
+      if (num2 == null) {
+        num2 = 0;
+      }
+      if (cResult[6] === stateFromStores) {
+        if (cResult[7] === tmp14) {
+          let tmp15 = cResult[8];
+        }
+        return tmp15;
+      }
+      const obj2 = { reactors: stateFromStores, hasMore: num2 > stateFromStores.length };
+      cResult[6] = stateFromStores;
+      cResult[7] = num2 > stateFromStores.length;
+      cResult[8] = obj2;
+      tmp15 = obj2;
+    }
+  }
+  const fn = function c() {
     const reactions = MessageReactionsStore.getReactions(channelId, messageId, reaction.emoji, closure_4, MessageReactionsTypes.ReactionTypes.VOTE);
     let items;
     if (reactions != null) {
@@ -29,7 +64,32 @@ export default function useVoteReactors(channelId) {
       items = [];
     }
     return Array.from(items);
-  }, items1, messageId(reaction[4]));
+  };
+  const items1 = [channelId, messageId, reaction.emoji];
+  cResult[1] = channelId;
+  cResult[2] = messageId;
+  cResult[3] = reaction.emoji;
+  cResult[4] = fn;
+  cResult[5] = items1;
+  tmp7 = items1;
+  tmp6 = fn;
+}) : ((channelId) => {
+  channelId = channelId.channelId;
+  const messageId = channelId.messageId;
+  const reaction = channelId.reaction;
+  let items = [MessageReactionsStore];
+  const items1 = [channelId, messageId, reaction.emoji];
+  const stateFromStores = channelId(reaction[5]).useStateFromStores(items, () => {
+    const reactions = MessageReactionsStore.getReactions(channelId, messageId, reaction.emoji, closure_4, MessageReactionsTypes.ReactionTypes.VOTE);
+    let items;
+    if (reactions != null) {
+      items = reactions.values();
+    }
+    if (items == null) {
+      items = [];
+    }
+    return Array.from(items);
+  }, items1, messageId(reaction[6]));
   const obj2 = { reactors: stateFromStores, hasMore: null };
   const count_details = reaction.count_details;
   let num;
@@ -41,4 +101,4 @@ export default function useVoteReactors(channelId) {
   }
   obj2.hasMore = num > stateFromStores.length;
   return obj2;
-};
+});

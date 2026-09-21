@@ -1,13 +1,13 @@
-// Module ID: 8254
-// Function ID: 8255
+// Module ID: 8259
+// Function ID: 8260
 // Name: PrivateChannelIntegrationSystemMessageUtils
-// Dependencies: [1074, 1115, 2108, 2]
+// Dependencies: [1078, 1119, 2112, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 8254 (PrivateChannelIntegrationSystemMessageUtils)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import Constants from "Constants" /* 1074 */;
+// Module 8259 (PrivateChannelIntegrationSystemMessageUtils)
+import util from "util" /* 1119 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ HelpdeskArticles: c3, NOOP: closure_4 } = Constants);

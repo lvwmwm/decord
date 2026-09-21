@@ -1,20 +1,78 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11336
+// Function ID: 11337
 // Name: PremiumWishlistItemCard
-// Dependencies: [19, 21, 9052, 9053, 2]
-// Exports: default
+// Dependencies: [109, 19, 21, 558, 568, 9050, 9051, 2]
 
-// Module 11305 (PremiumWishlistItemCard)
-import SKUPreview from "SKUPreview" /* 9052 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9053 */;
+// Module 11336 (PremiumWishlistItemCard)
+import SKUPreview from "SKUPreview" /* 9050 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 9051 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
+
 require = fn;
+let closure_3 = ["sku", "source", "size"];
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/native/PremiumWishlistItemCard.tsx");
 
-export default function PremiumWishlistItemCard(size) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(13);
+  if (cResult[0] !== arg0) {
+    ({ sku, source, size } = arg0);
+    _require = size;
+    const tmp9 = _objectWithoutProperties(arg0, closure_3);
+    cResult[0] = arg0;
+    cResult[1] = tmp9;
+    cResult[2] = size;
+    cResult[3] = sku;
+    cResult[4] = source;
+    let tmp6 = source;
+    let tmp5 = sku;
+    let tmp3 = tmp9;
+  } else {
+    tmp3 = cResult[1];
+    _require = cResult[2];
+    tmp5 = cResult[3];
+    tmp6 = cResult[4];
+  }
+  if (cResult[5] !== tmp4) {
+    class P {
+      constructor() {
+        obj = { size: closure_0 };
+        return jsx(closure_0(closure_2[5]).PremiumSKUPreview, obj);
+      }
+    }
+    cResult[5] = tmp4;
+    cResult[6] = P;
+  } else {
+    class P {
+      constructor() {
+        obj = { size: closure_0 };
+        return jsx(closure_0(closure_2[5]).PremiumSKUPreview, obj);
+      }
+    }
+  }
+  if (cResult[7] === tmp3) {
+    class P {
+      constructor() {
+        obj = { size: closure_0 };
+        return jsx(closure_0(closure_2[5]).PremiumSKUPreview, obj);
+      }
+    }
+  }
+  const obj = require("c");
+  const obj2 = { accessibilityLabel: tmp5.name, renderPreview: tmp10, source: tmp6, size: tmp4 };
+  const merged = Object.assign(tmp3);
+  cResult[7] = tmp3;
+  cResult[8] = tmp10;
+  cResult[9] = tmp4;
+  cResult[10] = tmp5.name;
+  cResult[11] = tmp6;
+  cResult[12] = jsx(WishlistItemCardBaseDefault, { accessibilityLabel: tmp5.name, renderPreview: tmp10, source: tmp6, size: tmp4 });
+}) : ((size) => {
   size = size.size;
   ({ sku, source } = size);
   const merged = Object.assign(size, Object.assign({ sku: 0, source: 0, size: 0 }));
@@ -22,4 +80,4 @@ export default function PremiumWishlistItemCard(size) {
   const callback = noop.useCallback(() => jsx(SKUPreview.PremiumSKUPreview, { size }), items);
   const merged1 = Object.assign(merged);
   return jsx(WishlistItemCardBaseDefault, { accessibilityLabel: sku.name, renderPreview: callback, source, size });
-};
+});

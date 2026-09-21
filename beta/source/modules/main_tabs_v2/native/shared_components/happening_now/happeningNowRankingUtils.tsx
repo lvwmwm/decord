@@ -1,19 +1,19 @@
-// Module ID: 16406
-// Function ID: 16407
+// Module ID: 16404
+// Function ID: 16405
 // Name: happeningNowRankingUtils
-// Dependencies: [4405, 4775, 15566, 1370, 12, 2]
+// Dependencies: [4409, 4777, 15555, 1374, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 16406 (happeningNowRankingUtils)
+// Module 16404 (happeningNowRankingUtils)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 const _modDef12 = _mod12;
 
 require = fn;
-const HappeningNowConstants = fn(15566);
+const HappeningNowConstants = fn(15555);
 ({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: hasOwnProperty, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: metroRequire, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: closure_7 } = HappeningNowConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx");
@@ -52,8 +52,8 @@ export const cardSize = function cardSize(kind) {
 };
 export const HappeningNowWeights = { Stage: 7, Voice: 6, Stream: 5, Game: 4, Listening: 3, CustomStatus: 3, User: 2, Base: 1 };
 export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
-export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
-  return arr.filter((voiceState) => {
+export const filterHappeningNowCards = function filterHappeningNowCards(length) {
+  return length.filter((voiceState) => {
     let flag = false;
     if ("voiceState" in voiceState) {
       flag = false;

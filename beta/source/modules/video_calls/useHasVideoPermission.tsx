@@ -1,21 +1,57 @@
-// Module ID: 10204
-// Function ID: 10205
+// Module ID: 10201
+// Function ID: 10202
 // Name: useHasVideoPermission
-// Dependencies: [2063, 4395, 504, 7962, 2]
-// Exports: default, getVideoPermission
+// Dependencies: [2067, 4399, 558, 568, 7967, 504, 2]
+// Exports: getVideoPermission
 
-// Module 10204 (useHasVideoPermission)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7962 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 10201 (useHasVideoPermission)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7967 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 const require = globalThis.__r;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
 
-export default function useHasVideoPermission(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      let tmp = null != closure_0;
+      if (tmp) {
+        let isPrivateResult = obj.isPrivate();
+        if (!isPrivateResult) {
+          const obj2 = StreamPermissionUtils;
+          isPrivateResult = obj2.canStreamInChannel(obj, GuildStore, PermissionStore, false);
+        }
+        tmp = isPrivateResult;
+      }
+      return tmp;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp8 = items1;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp7, tmp8);
+}) : ((arg0) => {
   _require = arg0;
   const items = [GuildStore, PermissionStore];
   const items1 = [arg0];
@@ -31,7 +67,7 @@ export default function useHasVideoPermission(arg0) {
     }
     return tmp;
   }, items1);
-};
+});
 export const getVideoPermission = function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {

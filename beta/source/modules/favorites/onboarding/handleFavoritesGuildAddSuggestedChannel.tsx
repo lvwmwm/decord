@@ -1,11 +1,11 @@
 // Module ID: 16543
 // Function ID: 16544
 // Name: handleFavoritesGuildAddSuggestedChannel
-// Dependencies: [5, 11247, 10481, 1115, 2]
+// Dependencies: [5, 11279, 10605, 1119, 2]
 // Exports: default
 
 // Module 16543 (handleFavoritesGuildAddSuggestedChannel)
-import formatResults from "formatResults" /* 11247 */;
+import formatResults from "formatResults" /* 11279 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let closure_3 = async function _handleFavoritesGuildAddSuggestedChannel(arg0, va
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -74,7 +74,7 @@ let closure_3 = async function _handleFavoritesGuildAddSuggestedChannel(arg0, va
           return obj;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp18) {
       c4 = tmp;

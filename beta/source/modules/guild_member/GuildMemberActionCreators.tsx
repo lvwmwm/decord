@@ -1,17 +1,17 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7367
+// Function ID: 7368
 // Name: GuildMemberActionCreators
-// Dependencies: [2098, 1074, 5769, 573, 1271, 2]
+// Dependencies: [2102, 1078, 5771, 577, 1275, 2]
 // Exports: updateGuildSelfMember
 
-// Module 7365 (GuildMemberActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5769 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+// Module 7367 (GuildMemberActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import ImpersonateActionCreators from "ImpersonateActionCreators" /* 5771 */;
+import ImpersonateStore from "ImpersonateStore" /* 2102 */;
 
 require = fn;
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_member/GuildMemberActionCreators.tsx");
 

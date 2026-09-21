@@ -1,33 +1,33 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16422
+// Function ID: 16423
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1372, 15566, 1074, 21, 4756, 576, 563, 16425, 7413, 1241, 7427, 13180, 1980, 16397, 4492, 9048, 1249, 16408, 15567, 5278, 5804, 16421, 2]
+// Dependencies: [32, 19, 17, 1376, 15555, 1078, 21, 4758, 580, 565, 16423, 7415, 1245, 7429, 13179, 1984, 16395, 4497, 9046, 1253, 16406, 15556, 5280, 5802, 16419, 2]
 // Exports: default
 
-// Module 16424 (HappeningNowCardEmbeddedActivity)
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+// Module 16422 (HappeningNowCardEmbeddedActivity)
+import nativeDefault from "native" /* 580 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const View = fn(17).View;
-const HappeningNowConstants = fn(15566);
+const HappeningNowConstants = fn(15555);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7 } = HappeningNowConstants);
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { content: { flexShrink: 1, gap: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12 }, activityBackground: null, cardTitle: null };
 let size = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.activityBackground = size;
 obj2.cardTitle = { marginTop: 2 };
 let closure_11 = createStyles.createStyles(obj2);
-const __initData = { code: "function HappeningNowCardEmbeddedActivityTsx1(){const{viewableCardKeys,cardKey}=this.__closure;return viewableCardKeys.get().find(function(key){return key===cardKey;})!=null;}" };
+const __initData = { code: "function HappeningNowCardEmbeddedActivityTsx1(){const{viewableCardKeys,cardKey}=this.__closure;return viewableCardKeys.get().find(function(key_1){return key_1===cardKey;})!=null;}" };
 const __initData2 = { code: "function HappeningNowCardEmbeddedActivityTsx2(isViewable,previous){const{runOnJS,setHasViewed}=this.__closure;if(!isViewable||isViewable===previous)return;runOnJS(setHasViewed)(true);}" };
 size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardEmbeddedActivity.tsx");
@@ -87,7 +87,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
   items3[4] = index;
   items3[5] = userId;
   const callback = cardKey.useCallback(() => {
-    const obj2 = { order: index, guild_id: guildId, type: constants.EMBEDDED_ACTIVITY_CARD, location_stack: null, application_id: null, activity_session_id: null, destination_channel_id: null, highlighted_user_ids: null };
+    const obj2 = { order: index, guild_id: guildId, type: React5.EMBEDDED_ACTIVITY_CARD, location_stack: null, application_id: null, activity_session_id: null, destination_channel_id: null, highlighted_user_ids: null };
     const items = [AnalyticsLocationDefault.HAPPENING_NOW_EMBEDDED_ACTIVITY];
     obj2.location_stack = items;
     let id;
@@ -104,7 +104,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     const items1 = [userId];
     obj2.highlighted_user_ids = items1;
     AnalyticsUtilsDefault.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    asyncRequireImpl(13180, dependencyMap.paths).then((result) => {
+    asyncRequireImpl(13179, dependencyMap.paths).then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);
       }
@@ -129,14 +129,16 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
   }, items4);
   const tmp6 = index(activity[11]);
-  const fn = function b() {
-    value = context.get();
-    return null != value.find((item) => item === cardKey);
-  };
-  fn.__closure = { viewableCardKeys: context, cardKey };
-  fn.__workletHash = 3043999664691;
-  fn.__initData = __initData;
   class T {
+    constructor() {
+      value = closure_7.get();
+      return null != value.find((item) => item === cardKey);
+    }
+  }
+  T.__closure = { viewableCardKeys: context, cardKey };
+  T.__workletHash = 16153422262707;
+  T.__initData = __initData;
+  class H {
     constructor(arg0, arg1) {
       tmp = guildId;
       if (guildId) {
@@ -155,10 +157,10 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
   }
   const tmp2Result = guildId(activity[17]);
-  T.__closure = { runOnJS: guildId(activity[17]).runOnJS, setHasViewed: tmp8Result[1] };
-  T.__workletHash = 17292462926115;
-  T.__initData = __initData2;
-  const animatedReaction = tmp2Result.useAnimatedReaction(fn, T);
+  H.__closure = { runOnJS: guildId(activity[17]).runOnJS, setHasViewed: tmp8Result[1] };
+  H.__workletHash = 17292462926115;
+  H.__initData = __initData2;
+  const animatedReaction = tmp2Result.useAnimatedReaction(T, H);
   const obj3 = { runOnJS: guildId(activity[17]).runOnJS, setHasViewed: tmp8Result[1] };
   if (tmp8Result[0]) {
     const obj5 = { type: tmp2(tmp3[19]).ImpressionTypes.VIEW, name: tmp2(tmp3[19]).ImpressionNames.EMBEDDED_ACTIVITY_HAPPENING_NOW, properties: null };

@@ -1,44 +1,138 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12532
+// Function ID: 12533
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4748, 12212, 21, 4756, 576, 504, 4492, 4757, 1177, 12638, 9113, 4752, 2]
-// Exports: default
+// Dependencies: [19, 17, 4750, 12089, 21, 4758, 580, 558, 568, 504, 4497, 4759, 1181, 12533, 9111, 4754, 2]
 
-// Module 12637 (DiceRollBar)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
+// Module 12532 (DiceRollBar)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import timing from "timing" /* 4759 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 require = fn;
 const View = fn(17).View;
-const useDiceRollState = fn(12212).useDiceRollState;
+const useDiceRollState = fn(12089).useDiceRollState;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+let c9 = 300;
+const createStyles = fn(4758);
 let obj2 = { animatedContainer: { overflow: "hidden" }, container: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, gap: 12, borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_9 = createStyles.createStyles(obj2);
-const __initData = { code: "function DiceRollBarTsx1(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };
-const __initData2 = { code: "function DiceRollBarTsx2(){const{rotation}=this.__closure;return{transform:[{rotate:rotation.get()+\"deg\"}]};}" };
+let closure_10 = createStyles.createStyles(obj2);
+let closure_11 = { code: "function DiceRollBarTsx1(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };
+let closure_12 = { code: "function DiceRollBarTsx2(){const{rotation}=this.__closure;return{transform:[{rotate:rotation.get()+\"deg\"}]};}" };
+const __initData = { code: "function DiceRollBarTsx3(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };
+const __initData2 = { code: "function DiceRollBarTsx4(){const{rotation}=this.__closure;return{transform:[{rotate:rotation.get()+\"deg\"}]};}" };
+const ReactCompilerGating = fn(558);
+let obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, gap: 12, borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/dice_roll/native/DiceRollBar.tsx");
 
-export default function DiceRollBar(channelId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+  const cResult = stateFromStores(sharedValue1[8]).c(30);
+  closure_10();
+  const tmp5 = useDiceRollState(channelId.channelId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [flag];
+    class D {
+      constructor() {
+        return c5.useReducedMotion;
+      }
+    }
+    cResult[0] = items;
+    cResult[1] = D;
+    tmp6 = items;
+    tmp7 = D;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  let obj = stateFromStores(sharedValue1[8]);
+  stateFromStores = stateFromStores(sharedValue1[9]).useStateFromStores(tmp6, tmp7);
+  const tmpResult = stateFromStores(sharedValue1[9]);
+  const sharedValue = stateFromStores(sharedValue1[10]).useSharedValue(0);
+  const tmpResult4 = stateFromStores(sharedValue1[10]);
+  sharedValue1 = stateFromStores(sharedValue1[10]).useSharedValue(0);
+  const tmpResult5 = stateFromStores(sharedValue1[10]);
+  const sharedValue2 = stateFromStores(sharedValue1[10]).useSharedValue(0);
+  closure_4 = tmp13;
+  flag = undefined;
+  if (tmp5 != null) {
+    flag = tmp5.rolling;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  if (cResult[2] === sharedValue) {
+    if (cResult[3] === tmp13) {
+      if (cResult[4] === sharedValue1) {
+        let tmp14 = cResult[5];
+        let tmp15 = cResult[6];
+      }
+      const effect = sharedValue2.useEffect(tmp14, tmp15);
+      class D {
+        constructor() {
+          return c5.useReducedMotion;
+        }
+      }
+      const fn = function w() {
+        if (flag) {
+          if (!stateFromStores) {
+            const obj = ReanimatedRexport;
+            const obj3 = { duration: 800, easing: ReanimatedRexport.Easing.linear };
+            const result = sharedValue2.set(obj.withRepeat(timing.withTiming(360, obj3), -1, false));
+          }
+        }
+        const result1 = sharedValue2.set(0);
+      };
+      const items1 = [flag, stateFromStores, sharedValue2];
+      cResult[7] = flag;
+      cResult[8] = sharedValue2;
+      cResult[9] = stateFromStores;
+      cResult[10] = fn;
+      cResult[11] = items1;
+    }
+  }
+  class N {
+    constructor() {
+      num = 0;
+      tmp = closure_1;
+      tmp2 = closure_4;
+      if (closure_4) {
+        num = 56;
+      }
+      result = closure_1.set(num);
+      num2 = 0;
+      tmp4 = closure_2;
+      if (tmp2) {
+        num2 = 1;
+      }
+      result1 = closure_2.set(num2);
+      return;
+    }
+  }
+  const items2 = [null != tmp5 && !tmp5.dismissing, sharedValue, sharedValue1];
+  cResult[2] = sharedValue;
+  cResult[3] = null != tmp5 && !tmp5.dismissing;
+  cResult[4] = sharedValue1;
+  cResult[5] = N;
+  cResult[6] = items2;
+  tmp15 = items2;
+  tmp14 = N;
+}) : ((channelId) => {
   let stateFromStores;
   let sharedValue1;
   let flag;
-  const tmp = closure_9();
+  const tmp = closure_10();
   const tmp2 = useDiceRollState(channelId.channelId);
   let items = [flag];
-  stateFromStores = stateFromStores(sharedValue1[7]).useStateFromStores(items, () => flag.useReducedMotion);
-  let obj = stateFromStores(sharedValue1[7]);
-  const sharedValue = stateFromStores(sharedValue1[8]).useSharedValue(0);
-  let obj2 = stateFromStores(sharedValue1[8]);
-  sharedValue1 = stateFromStores(sharedValue1[8]).useSharedValue(0);
-  let obj3 = stateFromStores(sharedValue1[8]);
-  const sharedValue2 = stateFromStores(sharedValue1[8]).useSharedValue(0);
+  stateFromStores = stateFromStores(sharedValue1[9]).useStateFromStores(items, () => flag.useReducedMotion);
+  let obj = stateFromStores(sharedValue1[9]);
+  const sharedValue = stateFromStores(sharedValue1[10]).useSharedValue(0);
+  let obj2 = stateFromStores(sharedValue1[10]);
+  sharedValue1 = stateFromStores(sharedValue1[10]).useSharedValue(0);
+  let obj3 = stateFromStores(sharedValue1[10]);
+  const sharedValue2 = stateFromStores(sharedValue1[10]).useSharedValue(0);
   closure_4 = tmp9;
   flag = undefined;
   if (tmp2 != null) {
@@ -71,32 +165,32 @@ export default function DiceRollBar(channelId) {
     }
     const result1 = sharedValue2.set(0);
   }, items2);
-  let obj4 = stateFromStores(sharedValue1[8]);
+  let obj4 = stateFromStores(sharedValue1[10]);
   const fn = function w() {
     const obj = { height: null, opacity: null };
     if (stateFromStores) {
       obj.height = sharedValue.get();
       obj.opacity = sharedValue1.get();
-      let tmp7 = obj;
+      let tmp8 = obj;
     } else {
-      const obj3 = { duration: 300, easing: null };
+      const obj3 = { duration, easing: null };
       value = sharedValue.get();
       obj3.easing = native.DECELERATED_EASING;
       obj.height = timing.withTiming(value, obj3);
-      const obj5 = { duration: 300, easing: null };
+      const obj5 = { duration, easing: null };
       value2 = sharedValue1.get();
       obj5.easing = native.DECELERATED_EASING;
       obj.opacity = timing.withTiming(value2, obj5);
-      tmp7 = obj;
+      tmp8 = obj;
     }
-    return tmp7;
+    return tmp8;
   };
-  const tmp3Result = stateFromStores(sharedValue1[8]);
-  fn.__closure = { useReducedMotion: stateFromStores, height: sharedValue, opacity: sharedValue1, withTiming: stateFromStores(sharedValue1[9]).withTiming, ANIMATION_DURATION_MS: 300, DECELERATED_EASING: stateFromStores(sharedValue1[10]).DECELERATED_EASING };
-  fn.__workletHash = 2405066513233;
+  const tmp3Result = stateFromStores(sharedValue1[10]);
+  fn.__closure = { useReducedMotion: stateFromStores, height: sharedValue, opacity: sharedValue1, withTiming: stateFromStores(sharedValue1[11]).withTiming, ANIMATION_DURATION_MS, DECELERATED_EASING: stateFromStores(sharedValue1[12]).DECELERATED_EASING };
+  fn.__workletHash = 16638560059795;
   fn.__initData = __initData;
   const animatedStyle = tmp3Result.useAnimatedStyle(fn);
-  stateFromStores(sharedValue1[8]);
+  stateFromStores(sharedValue1[10]);
   const fn2 = function p() {
     const obj = { transform: null };
     const items = [{ rotate: "" + sharedValue2.get() + "deg" }];
@@ -104,23 +198,23 @@ export default function DiceRollBar(channelId) {
     return obj;
   };
   fn2.__closure = { rotation: sharedValue2 };
-  fn2.__workletHash = 12265072947874;
+  fn2.__workletHash = 13860284266724;
   fn2.__initData = __initData2;
   if (null == tmp2) {
     return null;
   } else {
-    const barText = tmp3(tmp4[11]).getBarText(flag, tmp2.results);
+    const barText = tmp3(tmp4[13]).getBarText(flag, tmp2.results);
     const obj6 = { style: null, children: null };
     const items3 = [animatedStyle, tmp.animatedContainer];
     obj6.style = items3;
     const obj7 = { style: tmp.container, children: null };
-    const obj8 = { style: tmp14, children: closure_7(tmp3(tmp4[12]).DiceIcon, { size: "md" }) };
-    const items4 = [closure_7(sharedValue(tmp4[8]).View, obj8), ];
+    const obj8 = { style: tmp14, children: closure_7(tmp3(tmp4[14]).DiceIcon, { size: "md" }) };
+    const items4 = [closure_7(sharedValue(tmp4[10]).View, obj8), ];
     const obj9 = { variant: "text-sm/normal", color: "text-default", children: barText };
-    items4[1] = closure_7(tmp3(tmp4[13]).Text, obj9);
+    items4[1] = closure_7(tmp3(tmp4[15]).Text, obj9);
     obj7.children = items4;
     obj6.children = closure_8(closure_4, obj7);
-    return closure_7(sharedValue(tmp4[8]).View, obj6);
+    return closure_7(sharedValue(tmp4[10]).View, obj6);
   }
-  let obj5 = { useReducedMotion: stateFromStores, height: sharedValue, opacity: sharedValue1, withTiming: stateFromStores(sharedValue1[9]).withTiming, ANIMATION_DURATION_MS: 300, DECELERATED_EASING: stateFromStores(sharedValue1[10]).DECELERATED_EASING };
-};
+  let obj5 = { useReducedMotion: stateFromStores, height: sharedValue, opacity: sharedValue1, withTiming: stateFromStores(sharedValue1[11]).withTiming, ANIMATION_DURATION_MS, DECELERATED_EASING: stateFromStores(sharedValue1[12]).DECELERATED_EASING };
+});

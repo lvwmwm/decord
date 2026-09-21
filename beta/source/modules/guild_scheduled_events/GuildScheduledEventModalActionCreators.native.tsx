@@ -1,15 +1,15 @@
-// Module ID: 9887
-// Function ID: 9888
+// Module ID: 9865
+// Function ID: 9866
 // Name: guild_scheduled_events/GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2047, 9784, 4723, 9888, 1980, 9753, 9903, 2]
+// Dependencies: [5, 2051, 9761, 4725, 9866, 1984, 9749, 9881, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9887 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+// Module 9865 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const ScheduleUtils = tmp2(9753);
+const ScheduleUtils = tmp2(9749);
 require = fn;
 function openGuildEventDetails(arg0) {
   ({ event, recurrenceId } = arg0);
@@ -21,7 +21,7 @@ function openGuildEventDetails(arg0) {
     const tmp2Result = ScheduleUtils;
   }
   obj2.recurrenceId = recurrenceId;
-  obj.openLazy(asyncRequireImpl(9888, dependencyMap.paths), closure_5, obj2, "stack");
+  obj.openLazy(asyncRequireImpl(9866, dependencyMap.paths), closure_5, obj2, "stack");
 }
 let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) {
   if (c5 === 2) {
@@ -34,7 +34,7 @@ let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -73,7 +73,7 @@ let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) 
         obj.recurrenceId = recurrenceId;
         closure_131_6(obj);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp17) {
       c5 = tmp;
@@ -81,8 +81,8 @@ let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) 
     }
   }
 };
-let closure_4 = fn(2047).EXPLICIT_END_EVENT_SHEET_KEY;
-let closure_5 = fn(9784).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
+let closure_4 = fn(2051).EXPLICIT_END_EVENT_SHEET_KEY;
+let closure_5 = fn(9761).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 
@@ -98,5 +98,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
   return applyArgumentsResult;
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9903, dependencyMap.paths), closure_4, { channel });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9881, dependencyMap.paths), closure_4, { channel });
 };

@@ -1,16 +1,16 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13267
+// Function ID: 13268
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4492, 11788, 4757, 1177, 13265, 6897, 4493, 7368, 7399, 13266, 13256, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 580, 4497, 11656, 4759, 1181, 13268, 6891, 4498, 7371, 7401, 13269, 13259, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13264 (MediaModalOverlayFooter)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11788 */;
+// Module 13267 (MediaModalOverlayFooter)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import timing from "timing" /* 4759 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11656 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,8 +18,8 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "w" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+const createStyles = fn(4758);
+let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "code" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "emoji" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 let c9 = -1;
 function clamp(arg0, arg1, arg2) {

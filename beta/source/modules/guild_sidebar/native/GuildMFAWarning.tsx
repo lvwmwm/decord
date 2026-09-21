@@ -1,16 +1,17 @@
 // Module ID: 16538
 // Function ID: 16539
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1074, 21, 4756, 576, 10375, 2108, 1980, 4451, 5339, 16539, 4752, 1115, 1177, 2]
-// Exports: default, getScaledGuildMFAWarningHeight
+// Dependencies: [5, 19, 17, 1078, 21, 4758, 580, 11291, 2112, 1984, 4455, 558, 568, 16539, 1119, 4754, 1181, 5341, 2]
+// Exports: getScaledGuildMFAWarningHeight
 
 // Module 16538 (GuildMFAWarning)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10375 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import native from "native" /* 1181 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import Pressables from "Pressables" /* 5341 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
 import _modDef16539 from "module_16539" /* 16539 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -37,7 +38,7 @@ let closure_10 = async function _handlePress(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -70,7 +71,7 @@ let closure_10 = async function _handlePress(arg0, value) {
         closure_128_0 = value.default;
         closure_129_1(closure_129_2[10]).openURL(closure_128_0.getArticleURL(closure_129_5.SETTING_UP_TWO_FACTOR));
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp17) {
       c3 = tmp;
@@ -79,19 +80,81 @@ let closure_10 = async function _handlePress(arg0, value) {
   }
 };
 const Image = fn(17).Image;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ HelpdeskArticles: hasOwnProperty, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { MFAWarning: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" }, MFAWarningIcon: { marginVertical: 10, width: 98, height: 53 }, MFAWarningLink: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" };
 obj2.MFAWarningLink = { color: nativeDefault.unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { color: nativeDefault.unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/GuildMFAWarning.tsx");
 
-export default function GuildMFAWarning() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(10);
+  const tmp4 = closure_8();
+  if (cResult[0] !== tmp4.MFAWarningIcon) {
+    const obj2 = { style: tmp4.MFAWarningIcon, source: _modDef16539 };
+    const tmp9 = timestampProducer(Image, obj2);
+    cResult[0] = tmp4.MFAWarningIcon;
+    cResult[1] = tmp9;
+    let tmp5 = tmp9;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.ZIf8Ag);
+    cResult[2] = stringResult;
+    let tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t.hvVgAZ);
+    cResult[3] = stringResult1;
+    let tmp12 = stringResult1;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.MFAWarningLink) {
+    const obj3 = { variant: "text-xs/medium", color: "text-default", children: null };
+    const items = [tmp10, ];
+    const obj4 = { style: tmp4.MFAWarningLink, children: null };
+    const items1 = [" ", tmp12];
+    obj4.children = items1;
+    items[1] = React5(tmp(1181).LegacyText, obj4);
+    obj3.children = items;
+    const tmp16 = React5(tmp(4754).Text, obj3);
+    cResult[4] = tmp4.MFAWarningLink;
+    cResult[5] = tmp16;
+    let tmp14 = tmp16;
+  } else {
+    tmp14 = cResult[5];
+  }
+  if (cResult[6] === tmp4.MFAWarning) {
+    if (cResult[7] === tmp5) {
+      if (cResult[8] === tmp14) {
+        let tmp17 = cResult[9];
+      }
+      return tmp17;
+    }
+  }
+  const obj5 = { accessibilityRole: "button", style: tmp4.MFAWarning, onPress: handlePress, children: null };
+  const items2 = [tmp5, tmp14];
+  obj5.children = items2;
+  const tmp18 = React5(Pressables.PressableOpacity, obj5);
+  cResult[6] = tmp4.MFAWarning;
+  cResult[7] = tmp5;
+  cResult[8] = tmp14;
+  cResult[9] = tmp18;
+  tmp17 = tmp18;
+}) : (() => {
   const tmp = closure_8();
   const obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
   const items = [timestampProducer(Image, { style: tmp.MFAWarningIcon, source: _modDef16539 }), ];
@@ -107,7 +170,7 @@ export default function GuildMFAWarning() {
   items[1] = React5(Text_Text.Text, obj3);
   obj.children = items;
   return React5(Pressables.PressableOpacity, obj);
-};
+});
 export const getScaledGuildMFAWarningHeight = function getScaledGuildMFAWarningHeight(fontScale) {
   return 83 + 5 * useScaledTextLineHeight.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
 };

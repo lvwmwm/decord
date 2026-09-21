@@ -1,17 +1,43 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18177
+// Function ID: 18178
 // Name: useCreatorMonetizationIneligibleReasons
-// Dependencies: [18146, 2]
-// Exports: useCreatorMonetizationIneligibleReasons
+// Dependencies: [558, 568, 18149, 2]
 
-// Module 18174 (useCreatorMonetizationIneligibleReasons)
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18146 */;
+// Module 18177 (useCreatorMonetizationIneligibleReasons)
+import c from "c" /* 568 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18149 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationIneligibleReasons.tsx");
 
-export const useCreatorMonetizationIneligibleReasons = function useCreatorMonetizationIneligibleReasons(eligibility) {
-  const obj = useCreatorMonetizationEligibilityItemsDefault(eligibility);
+export const useCreatorMonetizationIneligibleReasons = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(2);
+  const obj2 = useCreatorMonetizationEligibilityItemsDefault(arg0);
+  if (cResult[0] !== obj2) {
+    let flatMapResult;
+    if (obj2 != null) {
+      flatMapResult = obj2.flatMap((checked) => {
+        if (checked.checked) {
+          let items = [];
+        } else {
+          items = [checked.key];
+        }
+        return items;
+      });
+    }
+    cResult[0] = obj2;
+    cResult[1] = flatMapResult;
+    let tmp2 = flatMapResult;
+  } else {
+    tmp2 = cResult[1];
+  }
+  if (tmp2 == null) {
+    tmp2 = null;
+  }
+  return tmp2;
+}) : ((arg0) => {
+  const obj = useCreatorMonetizationEligibilityItemsDefault(arg0);
   let flatMapResult;
   if (obj != null) {
     flatMapResult = obj.flatMap((checked) => {
@@ -27,4 +53,4 @@ export const useCreatorMonetizationIneligibleReasons = function useCreatorMoneti
     flatMapResult = null;
   }
   return flatMapResult;
-};
+});

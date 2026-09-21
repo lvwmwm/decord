@@ -1,12 +1,12 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14028
+// Function ID: 14029
 // Name: StatusPageStore
-// Dependencies: [510, 504, 573, 2]
+// Dependencies: [510, 504, 577, 2]
 
-// Module 14025 (StatusPageStore)
+// Module 14028 (StatusPageStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 require = fn;
 const MaintenanceStore = "MaintenanceStore";

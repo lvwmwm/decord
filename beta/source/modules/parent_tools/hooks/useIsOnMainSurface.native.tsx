@@ -1,13 +1,14 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17695
+// Function ID: 17696
 // Name: useIsOnMainSurface
-// Dependencies: [32, 19, 4614, 2]
-// Exports: useIsOnMainSurface
+// Dependencies: [32, 19, 4617, 558, 568, 2]
 
-// Module 17461 (useIsOnMainSurface)
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
+// Module 17695 (useIsOnMainSurface)
+import RootNavigationRef from "RootNavigationRef" /* 4617 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
+
+const require = globalThis.__r;
 
 require = fn;
 function getIsOnMainSurface() {
@@ -32,7 +33,7 @@ function getIsOnMainSurface() {
       if ("main" !== name) {
         return false;
       } else {
-        const state = tmp2.state;
+        state = tmp2.state;
         let tmp4;
         if (null != state) {
           if (0 !== state.routes.length) {
@@ -54,16 +55,46 @@ function getIsOnMainSurface() {
   return false;
 }
 const set = new Set(["tabs", "channel"]);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsOnMainSurface.native.tsx");
 
-export const useIsOnMainSurface = function useIsOnMainSurface() {
+export const useIsOnMainSurface = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(2);
+  const tmp2 = _slicedToArray(noop.useState(getIsOnMainSurface), 2);
+  _require = tmp2[1];
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function u() {
+      const rootNavigationRef = closure_0(dependencyMap[2]).getRootNavigationRef();
+      if (null != rootNavigationRef) {
+        function handleNavigationChange() {
+          return rootNavigationRef(getIsOnMainSurface());
+        }
+        rootNavigationRef(getIsOnMainSurface());
+        rootNavigationRef.addListener("state", handleNavigationChange);
+        return () => {
+          rootNavigationRef.removeListener("state", handleNavigationChange);
+        };
+      }
+      const obj = closure_0(dependencyMap[2]);
+    };
+    const items = [];
+    cResult[0] = fn;
+    cResult[1] = items;
+    tmp3 = fn;
+    tmp4 = items;
+  } else {
+    [tmp3, tmp4] = cResult;
+  }
+  const effect = noop.useEffect(tmp3, tmp4);
+  return tmp2[0];
+}) : (() => {
   [tmp2, require] = noop.useState(getIsOnMainSurface);
   const effect = noop.useEffect(() => {
     function handleNavigationChange() {
       return rootNavigationRef(getIsOnMainSurface());
     }
-    const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
+    const rootNavigationRef = require("RootNavigationRef").getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef(getIsOnMainSurface());
       rootNavigationRef.addListener("state", handleNavigationChange);
@@ -71,6 +102,7 @@ export const useIsOnMainSurface = function useIsOnMainSurface() {
         rootNavigationRef.removeListener("state", handleNavigationChange);
       };
     }
+    const obj = require("RootNavigationRef");
   }, []);
   return tmp2;
-};
+});

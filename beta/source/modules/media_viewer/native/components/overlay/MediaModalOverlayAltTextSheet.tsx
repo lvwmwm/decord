@@ -1,27 +1,87 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 11655
+// Function ID: 11656
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 4756, 576, 11788, 5342, 7395, 7394, 1115, 4752, 2]
-// Exports: default
+// Dependencies: [19, 21, 4758, 580, 558, 568, 11656, 5344, 7396, 1119, 4754, 7397, 2]
 
-// Module 11787 (MediaModalOverlayAltTextSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11788 */;
+// Module 11655 (MediaModalOverlayAltTextSheet)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11656 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const obj2 = { container: { padding: nativeDefault.space.PX_16 } };
+const createStyles = fn(4758);
+let obj2 = { container: { padding: nativeDefault.space.PX_16 } };
 let closure_3 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { padding: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx");
 
-export default function MediaViewerAltTextSheet(children) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
+  const cResult = c.c(11);
+  description = description.description;
+  const tmp4 = closure_3();
+  const messagePreviewCollapsedheight = useMessagePreviewHeight.useMessagePreviewCollapsedheight();
+  let num = 70;
+  if (!obj3.useIsScreenLandscape()) {
+    num = messagePreviewCollapsedheight + 20 + 50;
+  }
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { title: null };
+    const intl = tmp(1119).intl;
+    obj4.title = intl.string(tmp(1119).t.J3IOO1);
+    const tmp8 = jsx(tmp(7396).BottomSheetTitleHeader, { title: null });
+    cResult[0] = tmp8;
+    let first = tmp8;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== num) {
+    const obj5 = { minHeight: num };
+    cResult[1] = num;
+    cResult[2] = obj5;
+    let tmp9 = obj5;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] === tmp4.container) {
+    if (cResult[4] === tmp9) {
+      let tmp10 = cResult[5];
+    }
+    if (cResult[6] !== description) {
+      const obj6 = { accessibilityRole: "text", variant: "text-md/normal", children: description };
+      const tmp13 = jsx(tmp(4754).Text, { accessibilityRole: "text", variant: "text-md/normal", children: description });
+      cResult[6] = description;
+      cResult[7] = tmp13;
+      let tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[7];
+    }
+    if (cResult[8] === tmp10) {
+      if (cResult[9] === tmp11) {
+        let tmp14 = cResult[10];
+      }
+      return tmp14;
+    }
+    const obj7 = { header: first, contentStyles: tmp10, children: tmp11 };
+    const tmp16 = jsx(tmp(7397).BottomSheet, { header: first, contentStyles: tmp10, children: tmp11 });
+    cResult[8] = tmp10;
+    cResult[9] = tmp11;
+    cResult[10] = tmp16;
+    tmp14 = tmp16;
+  }
+  const items = [tmp4.container, tmp9];
+  cResult[3] = tmp4.container;
+  cResult[4] = tmp9;
+  cResult[5] = items;
+  tmp10 = items;
+}) : ((children) => {
   const tmp = closure_3();
   const messagePreviewCollapsedheight = useMessagePreviewHeight.useMessagePreviewCollapsedheight();
   let num = 70;
@@ -30,11 +90,11 @@ export default function MediaViewerAltTextSheet(children) {
   }
   const obj3 = { header: null, contentStyles: null, children: null };
   const obj4 = { title: null };
-  const intl = tmp2(1115).intl;
+  const intl = tmp2(1119).intl;
   obj4.title = intl.string(util.t.J3IOO1);
   obj3.header = jsx(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: null });
   const items = [tmp.container, { minHeight: num }];
   obj3.contentStyles = items;
   obj3.children = jsx(Text_Text.Text, { accessibilityRole: "text", variant: "text-md/normal", children: children.description });
   return jsx(Sheet_BottomSheet.BottomSheet, { header: null, contentStyles: null, children: null });
-};
+});

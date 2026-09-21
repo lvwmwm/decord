@@ -1,12 +1,12 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 14948
+// Function ID: 14949
 // Name: TinyBroncoExperiment
-// Dependencies: [1434, 14960, 2]
+// Dependencies: [1438, 14949, 2]
 // Exports: isTinyBroncoEnabled, useIsTinyBroncoEnabled
 
-// Module 14959 (TinyBroncoExperiment)
-import TinyBroncoGate from "TinyBroncoGate" /* 14960 */;
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14948 (TinyBroncoExperiment)
+import TinyBroncoGate from "TinyBroncoGate" /* 14949 */;
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-08-tiny-bronco", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

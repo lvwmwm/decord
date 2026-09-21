@@ -1,12 +1,11 @@
 // Module ID: 4111
 // Function ID: 4112
-// Dependencies: [3845, 4112, 3846]
+// Dependencies: [3849, 3850]
 // Exports: default
 
 // Module 4111
-import _typeof_mod from "module_3845" /* 3845 */;
-import module_4112_mod from "module_4112" /* 4112 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _typeof_mod from "module_3849" /* 3849 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -16,35 +15,17 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let module_4112 = module_4112_mod;
-if (!module_4112) {
-  const obj2 = { default: module_4112 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_4112;
-}
-module_4112 = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function getDaysInYear(arg0) {
+export default function getDate(arg0) {
   requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  if ("Invalid Date" === String(date)) {
-    return NaN;
-  } else {
-    let num = 365;
-    if (module_4112.default(defaultResult1)) {
-      num = 366;
-    }
-    return num;
-  }
-  date = new Date(defaultResult1);
+  return _typeof.default(arg0).getDate();
 };
 export default exports.default;

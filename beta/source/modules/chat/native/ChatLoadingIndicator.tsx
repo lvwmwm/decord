@@ -1,26 +1,25 @@
-// Module ID: 13576
-// Function ID: 13577
+// Module ID: 13579
+// Function ID: 13580
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 4748, 5494, 4976, 2095, 1372, 1979, 1074, 21, 4756, 576, 5109, 5205, 1980, 504, 4752, 13577, 4492, 4757, 1115, 5339, 2]
-// Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
+// Dependencies: [32, 19, 17, 4750, 5496, 4978, 2099, 1376, 1983, 1078, 21, 4758, 580, 5111, 5207, 1984, 558, 568, 504, 4754, 13580, 4497, 4759, 1119, 5341, 2]
 
-// Module 13576 (ChatLoadingIndicator)
+// Module 13579 (ChatLoadingIndicator)
 import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import timing from "timing" /* 4757 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import timing from "timing" /* 4759 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
-import MessageStore from "MessageStore" /* 4976 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import UserStore from "UserStore" /* 1372 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import MessageStore from "MessageStore" /* 4978 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import UserStore from "UserStore" /* 1376 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
 
-const require = globalThis.__r;
 const ReanimatedRexportDefault = ReanimatedRexport;
 
 require = fn;
@@ -57,15 +56,138 @@ function openLoadingIndicatorDebugBody() {
   }
 }
 const View = fn(17).View;
-const AppStates = fn(1074).AppStates;
+const AppStates = fn(1078).AppStates;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { container: { flexDirection: "row", alignItems: "center", gap: 4 }, pulse: null };
 let size = { height: 8, width: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj.pulse = size;
 let closure_16 = createStyles.createStyles(obj);
-let closure_18 = noop.memo(() => {
+let ReactCompilerGating = fn(558);
+let closure_18 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(16);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageStore, GatewayConnectionStore, SelectedChannelStore];
+    const fn = function n() {
+      channelId = channelId.getChannelId();
+      const isConnectedResult = connected.isConnected();
+      if (null == channelId) {
+        const obj2 = { messagesCached: false, messagesReady: false, connected: isConnectedResult };
+        return obj2;
+      } else {
+        messages = messages.getMessages(channelId);
+        const obj = { messagesCached: null, messagesReady: null, connected: null };
+        ({ cached: obj.messagesCached, ready: obj.messagesReady } = messages);
+        obj.connected = isConnectedResult;
+        return obj;
+      }
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStoresObject = initialize.useStateFromStoresObject(tmp4, tmp5);
+  ({ messagesCached, messagesReady, connected } = stateFromStoresObject);
+  let tmp10 = messagesCached;
+  if (!messagesCached) {
+    tmp10 = !messagesReady;
+  }
+  if (!tmp10) {
+    tmp10 = !connected;
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function s(arg0, arg1, arg2) {
+      const children = [arg0, ":", " ", , ];
+      let str = "text-feedback-critical";
+      if (arg1) {
+        str = "text-feedback-positive";
+      }
+      const obj = { variant: "text-md/normal", color: str, children: null };
+      let str2 = "false";
+      let str3 = "false";
+      if (arg1) {
+        str3 = "true";
+      }
+      obj.children = str3;
+      children[3] = closure_1_13(require("Text/Text").Text, obj);
+      let tmpResult = null;
+      if (null != arg2) {
+        tmpResult = null;
+        if (arg1 !== arg2) {
+          if (arg2) {
+            str2 = "true";
+          }
+          const obj2 = { variant: "text-md/normal", color: "text-muted", children: null };
+          const items1 = [" ", "(should be ", str2, " to hide loading indicator)"];
+          obj2.children = items1;
+          tmpResult = tmp(require("Text/Text").Text, obj2);
+        }
+      }
+      children[4] = tmpResult;
+      return closure_1_14(closure_1_15, { children });
+    };
+    cResult[2] = fn2;
+    let tmp11 = fn2;
+  } else {
+    tmp11 = cResult[2];
+  }
+  if (cResult[3] !== messagesCached) {
+    const tmp11Result = tmp11("messages.cached", messagesCached, false);
+    cResult[3] = messagesCached;
+    cResult[4] = tmp11Result;
+    let tmp12 = tmp11Result;
+  } else {
+    tmp12 = cResult[4];
+  }
+  if (cResult[5] !== messagesReady) {
+    const tmp11Result4 = tmp11("messages.ready", messagesReady, true);
+    cResult[5] = messagesReady;
+    cResult[6] = tmp11Result4;
+    let tmp14 = tmp11Result4;
+  } else {
+    tmp14 = cResult[6];
+  }
+  if (cResult[7] !== connected) {
+    const tmp11Result5 = tmp11("connected", connected, true);
+    cResult[7] = connected;
+    cResult[8] = tmp11Result5;
+    let tmp16 = tmp11Result5;
+  } else {
+    tmp16 = cResult[8];
+  }
+  if (cResult[9] !== tmp10) {
+    const tmp11Result6 = tmp11("should show chat indicator", tmp10);
+    cResult[9] = tmp10;
+    cResult[10] = tmp11Result6;
+    let tmp18 = tmp11Result6;
+  } else {
+    tmp18 = cResult[10];
+  }
+  if (cResult[11] === tmp12) {
+    if (cResult[12] === tmp14) {
+      if (cResult[13] === tmp16) {
+        if (cResult[14] === tmp18) {
+          let tmp20 = cResult[15];
+        }
+        return tmp20;
+      }
+    }
+  }
+  let obj2 = { variant: "text-md/normal", color: "text-default", children: null };
+  let items1 = [tmp12, "\n", tmp14, "\n", tmp16, "\n", tmp18];
+  obj2.children = items1;
+  const tmp21 = state(Text_Text.Text, obj2);
+  cResult[11] = tmp12;
+  cResult[12] = tmp14;
+  cResult[13] = tmp16;
+  cResult[14] = tmp18;
+  cResult[15] = tmp21;
+  tmp20 = tmp21;
+}) : (() => {
   const items = [MessageStore, GatewayConnectionStore, SelectedChannelStore];
   const stateFromStoresObject = initialize.useStateFromStoresObject(items, () => {
     channelId = channelId.getChannelId();
@@ -95,16 +217,16 @@ let closure_18 = noop.memo(() => {
     str4 = "true";
   }
   obj2.children = str4;
-  items1[3] = map1(Text_Text.Text, obj2);
+  items1[3] = __initData2(Text_Text.Text, obj2);
   let tmp4Result = null;
   if (messagesCached !== false) {
     const obj3 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
     obj3.children = items2;
-    tmp4Result = tmp4(tmp(4752).Text, obj3);
+    tmp4Result = tmp4(tmp(4754).Text, obj3);
   }
   items1[4] = tmp4Result;
-  const items3 = [closure_1_14(__initData, { children: items1 }), "\n", , , , , ];
+  const items3 = [state(closure_1_15, { children: items1 }), "\n", , , , , ];
   const items4 = ["messages.ready", ":", " ", , ];
   let str6 = str;
   if (messagesReady) {
@@ -116,16 +238,16 @@ let closure_18 = noop.memo(() => {
     str7 = "true";
   }
   obj4.children = str7;
-  items4[3] = map1(Text_Text.Text, obj4);
+  items4[3] = __initData2(Text_Text.Text, obj4);
   let tmp4Result3 = null;
   if (messagesReady !== true) {
     const obj5 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
     obj5.children = items5;
-    tmp4Result3 = tmp4(tmp(4752).Text, obj5);
+    tmp4Result3 = tmp4(tmp(4754).Text, obj5);
   }
   items4[4] = tmp4Result3;
-  items3[2] = closure_1_14(__initData, { children: items4 });
+  items3[2] = state(closure_1_15, { children: items4 });
   items3[3] = "\n";
   const items6 = ["connected", ":", " ", , ];
   let str10 = str;
@@ -138,16 +260,16 @@ let closure_18 = noop.memo(() => {
     str11 = "true";
   }
   obj6.children = str11;
-  items6[3] = map1(Text_Text.Text, obj6);
+  items6[3] = __initData2(Text_Text.Text, obj6);
   let tmp4Result4 = null;
   if (connected !== true) {
     const obj7 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
     obj7.children = items7;
-    tmp4Result4 = tmp4(tmp(4752).Text, obj7);
+    tmp4Result4 = tmp4(tmp(4754).Text, obj7);
   }
   items6[4] = tmp4Result4;
-  items3[4] = closure_1_14(__initData, { children: items6 });
+  items3[4] = state(closure_1_15, { children: items6 });
   items3[5] = "\n";
   if (!messagesCached) {
     messagesCached = !messagesReady;
@@ -164,19 +286,111 @@ let closure_18 = noop.memo(() => {
     str3 = "true";
   }
   obj8.children = str3;
-  items8[3] = map1(Text_Text.Text, obj8);
+  items8[3] = __initData2(Text_Text.Text, obj8);
   const obj9 = { variant: "text-md/normal", color: "text-default", children: null };
   items8[4] = null;
-  items3[6] = closure_1_14(__initData, { children: items8 });
+  items3[6] = state(closure_1_15, { children: items8 });
   obj9.children = items3;
-  return closure_1_14(Text_Text.Text, obj9);
-});
+  return state(Text_Text.Text, obj9);
+}));
+fn(558);
 const __initData = { code: "function ChatLoadingIndicatorTsx1(){const{useReducedMotion,withRepeat,withSequence,withTiming,Easing}=this.__closure;if(useReducedMotion){return{transform:[]};}return{transform:[{scale:withRepeat(withSequence(withTiming(1,{duration:0}),withTiming(0.5,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)}),withTiming(1,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)})),-1)}]};}" };
-size = fn(2);
-const result = size.fileFinishedImporting("modules/chat/native/ChatLoadingIndicator.tsx");
-
-export const useShouldChannelShowLoadingIndicator = function useShouldChannelShowLoadingIndicator(channelId) {
-  _require = channelId;
+const __initData2 = { code: "function ChatLoadingIndicatorTsx2(){const{useReducedMotion,withRepeat,withSequence,withTiming,Easing}=this.__closure;if(useReducedMotion){return{transform:[]};}return{transform:[{scale:withRepeat(withSequence(withTiming(1,{duration:0}),withTiming(0.5,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)}),withTiming(1,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)})),-1)}]};}" };
+ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: "ChatLoadingIndicatorGuard" };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const ChatLoadingIndicatorExperiment = tmp(tmp2[20]).ChatLoadingIndicatorExperiment;
+  const enabled = ChatLoadingIndicatorExperiment.useConfig(first).enabled;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [MessageStore, GatewayConnectionStore, AppStateStore];
+    cResult[1] = items;
+    let tmp5 = items;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === arg0) {
+    if (cResult[3] === enabled) {
+      let tmp9 = cResult[4];
+    }
+    stateFromStores = tmp(tmp2[18]).useStateFromStores(tmp5, tmp9);
+    const obj4 = noop;
+    const tmpResult = tmp(tmp2[18]);
+    [tmp13, _slicedToArray] = noop.useState(false);
+    if (cResult[5] !== stateFromStores) {
+      const fn = function v() {
+        if (stateFromStores) {
+          const _setTimeout = setTimeout;
+          const timeout = setTimeout(() => {
+            closure_1_3(true);
+          }, 3000);
+          return () => {
+            clearTimeout(closure_0);
+          };
+        } else {
+          closure_3(false);
+        }
+      };
+      const items1 = [stateFromStores];
+      cResult[5] = stateFromStores;
+      cResult[6] = fn;
+      cResult[7] = items1;
+      let tmp15 = items1;
+      let tmp14 = fn;
+    } else {
+      tmp14 = cResult[6];
+      tmp15 = cResult[7];
+    }
+    const effect = obj4.useEffect(tmp14, tmp15);
+    return tmp13;
+  }
+  class S {
+    constructor() {
+      if (enabled) {
+        tmp2 = null;
+        if (null == closure_0) {
+          flag3 = false;
+          return false;
+        } else {
+          tmp3 = closure_11;
+          tmp4 = AppStates;
+          if (closure_11.getState() !== AppStates.ACTIVE) {
+            flag2 = false;
+            return false;
+          } else {
+            tmp5 = closure_8;
+            messages = closure_8.getMessages(tmp);
+            tmp7 = closure_7;
+            cached = messages.cached;
+            isConnectedResult = closure_7.isConnected();
+            if (!cached) {
+              cached = !messages.ready;
+            }
+            if (!cached) {
+              cached = !isConnectedResult;
+            }
+            return cached;
+          }
+        }
+      } else {
+        flag = false;
+        return false;
+      }
+    }
+  }
+  cResult[2] = arg0;
+  cResult[3] = enabled;
+  cResult[4] = S;
+  tmp9 = S;
+}) : ((arg0) => {
+  _require = arg0;
   const ChatLoadingIndicatorExperiment = require("ChatLoadingIndicatorExperiment").ChatLoadingIndicatorExperiment;
   const enabled = ChatLoadingIndicatorExperiment.useConfig({ location: "ChatLoadingIndicatorGuard" }).enabled;
   const items = [MessageStore, GatewayConnectionStore, AppStateStore];
@@ -218,8 +432,155 @@ export const useShouldChannelShowLoadingIndicator = function useShouldChannelSho
     }
   }, items1);
   return tmp2[0];
-};
-export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndicator() {
+});
+size = fn(2);
+const result = size.fileFinishedImporting("modules/chat/native/ChatLoadingIndicator.tsx");
+
+export const useShouldChannelShowLoadingIndicator = tmp3;
+export const ChannelHeaderLoadingIndicator = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let PressableOpacity = stateFromStores;
+  let tmp = dependencyMap;
+  const cResult = stateFromStores(568).c(13);
+  const tmp3 = closure_16();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [AccessibilityStore];
+    const fn = function n() {
+      return useReducedMotion.useReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  let obj = stateFromStores(568);
+  stateFromStores = PressableOpacity(504).useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    const fn2 = function f() {
+      currentUser = currentUser.getCurrentUser();
+      let isStaffResult;
+      if (currentUser != null) {
+        isStaffResult = currentUser.isStaff();
+      }
+      if (!isStaffResult) {
+        let isStaffPersonalResult;
+        if (currentUser != null) {
+          isStaffPersonalResult = currentUser.isStaffPersonal();
+        }
+        isStaffResult = isStaffPersonalResult;
+      }
+      return isStaffResult;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp9 = fn2;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const PressableOpacityResult = PressableOpacity(504);
+  const stateFromStores1 = PressableOpacity(504).useStateFromStores(tmp8, tmp9);
+  const PressableOpacityResult1 = PressableOpacity(504);
+  class S {
+    constructor() {
+      obj = { transform: null };
+      if (closure_0) {
+        obj.transform = [];
+        tmp7 = obj;
+      } else {
+        obj1 = { scale: null };
+        tmp = closure_0;
+        tmp2 = closure_2;
+        obj3 = closure_0(closure_2[21]);
+        obj4 = closure_0(closure_2[21]);
+        obj5 = closure_0(closure_2[22]);
+        num = 1;
+        withTimingResult = obj5.withTiming(1, { duration: 0 });
+        obj6 = closure_0(closure_2[22]);
+        obj10 = { duration: 1500, easing: null };
+        Easing = closure_0(closure_2[21]).Easing;
+        num2 = 0.2;
+        num3 = 0.4;
+        tmp4 = Easing;
+        num4 = 0.4;
+        num5 = 0;
+        num6 = 0.2;
+        num7 = 1;
+        obj10.easing = Easing.bezier(0.4, 0, 0.2, 1);
+        num8 = 0.5;
+        withTimingResult1 = obj6.withTiming(0.5, obj10);
+        obj8 = closure_0(closure_2[22]);
+        obj11 = { duration: 1500, easing: null };
+        Easing2 = closure_0(closure_2[21]).Easing;
+        tmp6 = Easing2;
+        num9 = 0.4;
+        num10 = 0;
+        obj11.easing = Easing2.bezier(0.4, 0, 0.2, 1);
+        num11 = -1;
+        obj1.scale = obj3.withRepeat(obj4.withSequence(withTimingResult, withTimingResult1, obj8.withTiming(1, obj11)), -1);
+        items = [];
+        items[0] = obj1;
+        obj.transform = items;
+        tmp7 = obj;
+      }
+      return tmp7;
+    }
+  }
+  const PressableOpacityResult2 = PressableOpacity(4497);
+  S.__closure = { useReducedMotion: stateFromStores, withRepeat: PressableOpacity(4497).withRepeat, withSequence: PressableOpacity(4497).withSequence, withTiming: PressableOpacity(4759).withTiming, Easing: PressableOpacity(4497).Easing };
+  S.__workletHash = 17454673879926;
+  S.__initData = __initData;
+  const animatedStyle = PressableOpacityResult2.useAnimatedStyle(S);
+  if (cResult[4] === animatedStyle) {
+    if (cResult[5] === tmp3.pulse) {
+      let tmp13 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      let obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
+      const intl = PressableOpacity(1119).intl;
+      obj3.children = intl.string(PressableOpacity(1119).t.JwIJMV);
+      const tmp17 = closure_13(PressableOpacity(4754).Text, obj3);
+      cResult[7] = tmp17;
+      let tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[7];
+    }
+    if (cResult[8] === tmp3.container) {
+      if (cResult[9] === tmp13) {
+        let tmp18 = cResult[10];
+      }
+      if (!stateFromStores1) {
+        return tmp18;
+      } else if (cResult[11] !== tmp18) {
+        PressableOpacity = PressableOpacity(5341).PressableOpacity;
+        let obj4 = { onPress: openLoadingIndicatorDebugBody, children: tmp18 };
+        tmp = closure_13(PressableOpacity, obj4);
+        cResult[11] = tmp18;
+        cResult[12] = tmp;
+      }
+    }
+    let obj5 = { style: tmp3.container, children: null };
+    const items2 = [tmp13, tmp15];
+    obj5.children = items2;
+    const tmp21 = closure_14(View, obj5);
+    cResult[8] = tmp3.container;
+    cResult[9] = tmp13;
+    cResult[10] = tmp21;
+    tmp18 = tmp21;
+  }
+  let obj6 = { style: null };
+  const items3 = [tmp3.pulse, animatedStyle];
+  obj6.style = items3;
+  const tmp14 = closure_13(ReanimatedRexportDefault.View, obj6);
+  cResult[4] = animatedStyle;
+  cResult[5] = tmp3.pulse;
+  cResult[6] = tmp14;
+  tmp13 = tmp14;
+}) : (() => {
   const tmp = closure_16();
   let items = [AccessibilityStore];
   stateFromStores = stateFromStores(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -266,10 +627,10 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return tmp7;
   };
-  let obj3 = stateFromStores(4492);
-  fn.__closure = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4492).withRepeat, withSequence: stateFromStores(4492).withSequence, withTiming: stateFromStores(4757).withTiming, Easing: stateFromStores(4492).Easing };
-  fn.__workletHash = 17454673879926;
-  fn.__initData = __initData;
+  let obj3 = stateFromStores(4497);
+  fn.__closure = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4497).withRepeat, withSequence: stateFromStores(4497).withSequence, withTiming: stateFromStores(4759).withTiming, Easing: stateFromStores(4497).Easing };
+  fn.__workletHash = 9356373946997;
+  fn.__initData = __initData2;
   let obj5 = { style: tmp.container, children: null };
   const animatedStyle = obj3.useAnimatedStyle(fn);
   let obj6 = { style: null };
@@ -277,15 +638,15 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
   obj6.style = items2;
   const items3 = [closure_13(ReanimatedRexportDefault.View, obj6), ];
   let obj7 = { variant: "text-xs/medium", color: "text-muted", children: null };
-  const intl = stateFromStores(1115).intl;
-  obj7.children = intl.string(stateFromStores(1115).t.JwIJMV);
-  items3[1] = closure_13(stateFromStores(4752).Text, obj7);
+  const intl = stateFromStores(1119).intl;
+  obj7.children = intl.string(stateFromStores(1119).t.JwIJMV);
+  items3[1] = closure_13(stateFromStores(4754).Text, obj7);
   obj5.children = items3;
   const tmp8 = closure_14(View, obj5);
   let tmp7Result = tmp8;
   if (stateFromStores1) {
     let obj8 = { onPress: openLoadingIndicatorDebugBody, children: tmp8 };
-    tmp7Result = closure_13(tmp2(5339).PressableOpacity, obj8);
+    tmp7Result = closure_13(tmp2(5341).PressableOpacity, obj8);
   }
   return tmp7Result;
-};
+});

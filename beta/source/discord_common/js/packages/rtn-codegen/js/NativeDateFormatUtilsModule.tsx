@@ -1,9 +1,9 @@
-// Module ID: 4442
-// Function ID: 4443
+// Module ID: 4446
+// Function ID: 4447
 // Name: NativeDateFormatUtilsModule
 // Dependencies: [17, 2]
 
-// Module 4442 (NativeDateFormatUtilsModule)
+// Module 4446 (NativeDateFormatUtilsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

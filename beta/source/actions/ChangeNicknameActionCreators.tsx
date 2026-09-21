@@ -1,12 +1,12 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 9415
+// Function ID: 9416
 // Name: ChangeNicknameActionCreators
-// Dependencies: [1074, 1271, 7698, 1115, 2]
+// Dependencies: [1078, 1275, 7703, 1119, 2]
 
-// Module 9417 (ChangeNicknameActionCreators)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+// Module 9415 (ChangeNicknameActionCreators)
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

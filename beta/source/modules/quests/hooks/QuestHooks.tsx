@@ -1,120 +1,63 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11607
+// Function ID: 11608
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7936, 2109, 2041, 5498, 1372, 7938, 7940, 7939, 5661, 1074, 1374, 504, 11739, 11542, 1364, 11563, 7935, 1091, 7958, 7960, 7963, 11553, 12, 1240, 11740, 11556, 11741, 2108, 11751, 5669, 11767, 7964, 7413, 9624, 11558, 11311, 5668, 11770, 1115, 1881, 4941, 5664, 7954, 4690, 4607, 11548, 4414, 11771, 1241, 1370, 11775, 11744, 11776, 2019, 4954, 4946, 2]
-// Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedAccounts, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useExpiredQuestsMap, useFetchQuestHomeBounties, useFilteredQuests, useGetOrFetchApplicationForConsoleQuests, useIsPreviewerOnAnyQuest, useIsQuestAccessSuspended, useIsQuestEligibleForMembersListPopout, useIsQuestExpired, useIsQuestProgressingOnConsole, useIsQuestProgressingOnDesktop, useIsQuestProgressingVideoQuest, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCollectibles, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeHeroShelf, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useSelectedTaskPlatform, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem, useThirdPartyTaskDetails, useWaitingForConsoleConnection
+// Dependencies: [5, 32, 19, 7941, 2113, 2045, 5500, 1376, 7943, 7945, 7944, 5663, 1078, 1378, 558, 568, 504, 11608, 10564, 1368, 10585, 7940, 1095, 7963, 7965, 7968, 10575, 12, 1244, 11609, 10578, 11610, 2112, 11620, 5671, 11636, 7969, 7415, 9620, 10580, 11342, 5670, 11639, 1119, 1885, 4943, 5666, 7959, 4693, 4610, 10570, 4418, 11640, 1245, 1374, 11644, 11613, 11645, 2023, 4956, 4948, 2]
+// Exports: useFetchQuestHomeBounties, useManuallyStartConsoleQuest, useQuestForMemberListSocialEntryPoint, useShouldShowPreviewToolTab
 
-// Module 11738 (hooks/QuestHooks)
+// Module 11607 (hooks/QuestHooks)
 import initialize from "initialize" /* 504 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import PremiumUtils from "PremiumUtils" /* 4414 */;
-import shared from "shared" /* 4607 */;
-import _mod4941 from "module_4941" /* 4941 */;
-import QualtricsActionCreators from "QualtricsActionCreators" /* 4946 */;
-import SurveyActionTypes from "SurveyActionTypes" /* 4954 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5669 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7413 */;
-import QuestDataUtils from "QuestDataUtils" /* 7935 */;
-import AnalyticsActions from "AnalyticsActions" /* 7954 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7958 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 9624 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11311 */;
-import QuestActionCreators from "QuestActionCreators" /* 11542 */;
-import AssetUtils from "AssetUtils" /* 11548 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 11553 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 11558 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 11563 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11751 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11767 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 11770 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 11771 */;
+import c from "c" /* 568 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import util from "util" /* 1119 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1244 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import PremiumUtils from "PremiumUtils" /* 4418 */;
+import shared from "shared" /* 4610 */;
+import _mod4943 from "module_4943" /* 4943 */;
+import QualtricsActionCreators from "QualtricsActionCreators" /* 4948 */;
+import SurveyActionTypes from "SurveyActionTypes" /* 4956 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import AdCreativeType from "AdCreativeType" /* 5670 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5671 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7415 */;
+import QuestDataUtils from "QuestDataUtils" /* 7940 */;
+import AnalyticsActions from "AnalyticsActions" /* 7959 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7963 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7965 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7969 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 9620 */;
+import QuestActionCreators from "QuestActionCreators" /* 10564 */;
+import AssetUtils from "AssetUtils" /* 10570 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10575 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10578 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10580 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 10585 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11342 */;
+import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 11609 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11620 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11636 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 11639 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 11640 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7936 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
-import UserStore from "UserStore" /* 1372 */;
-import BountyStore from "BountyStore" /* 7938 */;
-import QuestStore from "QuestStore" /* 7939 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7941 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import UserStore from "UserStore" /* 1376 */;
+import BountyStore from "BountyStore" /* 7943 */;
+import QuestStore from "QuestStore" /* 7944 */;
 
 const require = globalThis.__r;
 
+const NumberUtils = formatPercent(1885);
 require = fn;
-function useQuests(arg0) {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = { fetchPolicy: "cache-only", callerSource: "unknown" };
-  }
-  let lastFetchedCurrentQuests;
-  let isEligibleForQuests;
-  const tmp = lastFetchedCurrentQuests(isEligibleForQuests.useState(false), 2);
-  const hasFetched = tmp[0];
-  dependencyMap = tmp[1];
-  let items = [QuestStore];
-  let quests = obj(504).useStateFromStoresArray(items, () => {
-    const quests = QuestStore.quests;
-    const items = [...quests.values()];
-    return items;
-  });
-  obj2 = obj(504);
-  const items1 = [QuestStore];
-  let excludedQuests = obj(504).useStateFromStoresArray(items1, () => {
-    const excludedQuests = QuestStore.excludedQuests;
-    const items = [...excludedQuests.values()];
-    return items;
-  });
-  let obj3 = obj(504);
-  const items2 = [QuestStore];
-  const stateFromStoresObject = obj(504).useStateFromStoresObject(items2, () => ({ isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests }));
-  const isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
-  lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
-  const obj4 = obj(504);
-  isEligibleForQuests = obj(11739).getIsEligibleForQuests();
-  const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
-  const effect = isEligibleForQuests.useEffect(() => {
-    const fetchPolicy = obj.fetchPolicy;
-    if ("cache-only" !== fetchPolicy) {
-      if ("cache-or-network" === fetchPolicy) {
-        let flag = 0 === lastFetchedCurrentQuests;
-      } else {
-        flag = true;
-        if ("cache-and-network" !== fetchPolicy) {
-          const fetchPolicy2 = tmp.fetchPolicy;
-        }
-      }
-      if (flag) {
-        flag = isEligibleForQuests;
-      }
-      if (flag) {
-        flag = !hasFetched;
-      }
-      if (flag) {
-        flag = !isFetchingCurrentQuests;
-      }
-      if (flag) {
-        closure_2(true);
-        obj = QuestActionCreators;
-        const currentQuests = obj.fetchCurrentQuests();
-        if (obj2.isMac()) {
-          const state = DiscordAppStateDefault.getState();
-        }
-        obj2 = PlatformUtils;
-      }
-    }
-  }, items3);
-  return { quests, excludedQuests, isFetchingCurrentQuests, hasFetched };
-}
 function defaultSortFn(id, id2, questHomeHero, get) {
-  let tmp2 = id.id === __initData;
+  let tmp2 = id.id === guild;
   if (tmp2) {
     const userStatus = id.userStatus;
     let completedAt;
@@ -123,7 +66,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
     }
     tmp2 = null == completedAt;
   }
-  let tmp5 = id2.id === __initData;
+  let tmp5 = id2.id === guild;
   if (tmp5) {
     const userStatus2 = id2.userStatus;
     let completedAt1;
@@ -221,7 +164,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
       } else {
         const expiresAt2 = id.config.expiresAt;
         let num12 = 1;
-        if (constants8.DESC === constants8.DESC) {
+        if (constants9.DESC === constants9.DESC) {
           num12 = c29;
         }
         result1 = expiresAt2.localeCompare(id2.config.expiresAt) * num12;
@@ -231,8 +174,8 @@ function defaultSortFn(id, id2, questHomeHero, get) {
       questHomeHero = questHomeHero.questHomeHero;
       if (null != questHomeHero) {
         if (!questHomeHero.isQuestHomeHeroShelfEnabled) {
-          const result2 = tmp50(7958).isQuestFeaturedByHero(questHomeHero, id.id);
-          const tmp50Result = tmp50(7958);
+          const result2 = tmp50(7963).isQuestFeaturedByHero(questHomeHero, id.id);
+          const tmp50Result = tmp50(7963);
           let num2 = 1;
           if (result2) {
             num2 = c29;
@@ -240,13 +183,13 @@ function defaultSortFn(id, id2, questHomeHero, get) {
           return num2;
         }
       }
-      const questType = tmp50(7958).getQuestType(id.config);
-      const tmp50Result7 = tmp50(7958);
-      const questType1 = tmp50(7958).getQuestType(id2.config);
-      const tmp50Result8 = tmp50(7958);
-      const result3 = tmp50(7960).hasWatchVideoOnMobileTasks(id);
-      const tmp50Result9 = tmp50(7960);
-      const result4 = tmp50(7960).hasWatchVideoOnMobileTasks(id2);
+      const questType = tmp50(7963).getQuestType(id.config);
+      const tmp50Result7 = tmp50(7963);
+      const questType1 = tmp50(7963).getQuestType(id2.config);
+      const tmp50Result8 = tmp50(7963);
+      const result3 = tmp50(7965).hasWatchVideoOnMobileTasks(id);
+      const tmp50Result9 = tmp50(7965);
+      const result4 = tmp50(7965).hasWatchVideoOnMobileTasks(id2);
       if (result3 !== result4) {
         if (!result3) {
           return num3;
@@ -259,7 +202,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
       }
       if (questType !== questType1) {
         num3 = 1;
-        if (questType === tmp50(7963).QuestType.VIDEO) {
+        if (questType === tmp50(7968).QuestType.VIDEO) {
           num3 = c29;
         }
       }
@@ -282,16 +225,16 @@ function defaultSortFn(id, id2, questHomeHero, get) {
             let num4 = 1;
             if (null == value2) {
               const expiresAt = id.config.expiresAt;
-              if (constants8.ASC === tmp56.DESC) {
+              if (constants9.ASC === tmp56.DESC) {
                 num4 = c29;
               }
               const num5 = expiresAt.localeCompare(id2.config.expiresAt) * num4;
             }
           }
-          tmp56 = constants8;
+          tmp56 = constants9;
         }
       }
-      const tmp50Result10 = tmp50(7960);
+      const tmp50Result10 = tmp50(7965);
     }
     const tmp19 = null != completedAt2;
     const tmp30 = null != completedAt3;
@@ -300,7 +243,7 @@ function defaultSortFn(id, id2, questHomeHero, get) {
 function recentSortFn(config, config2) {
   const startsAt = config.config.startsAt;
   let num = 1;
-  if (constants8.DESC === constants8.DESC) {
+  if (constants9.DESC === constants9.DESC) {
     num = c29;
   }
   return startsAt.localeCompare(config2.config.startsAt) * num;
@@ -319,7 +262,7 @@ function recentlyEnrolledSortFn(userStatus, userStatus2) {
     if (null == enrolledAt) {
       const expiresAt = userStatus.config.expiresAt;
       let num3 = 1;
-      if (constants8.DESC === constants8.DESC) {
+      if (constants9.DESC === constants9.DESC) {
         num3 = c29;
       }
       let num = expiresAt.localeCompare(userStatus2.config.expiresAt) * num3;
@@ -333,7 +276,7 @@ function recentlyEnrolledSortFn(userStatus, userStatus2) {
   }
   if (null != enrolledAt1) {
     let num2 = 1;
-    if (constants8.DESC === constants8.DESC) {
+    if (constants9.DESC === constants9.DESC) {
       num2 = c29;
     }
     num = enrolledAt1.localeCompare(enrolledAt) * num2;
@@ -344,7 +287,7 @@ function recentlyEnrolledSortFn(userStatus, userStatus2) {
 function expiringSoonSortFn(config, config2) {
   const expiresAt = config.config.expiresAt;
   let num = 1;
-  if (constants8.ASC === constants8.DESC) {
+  if (constants9.ASC === constants9.DESC) {
     num = c29;
   }
   return expiresAt.localeCompare(config2.config.expiresAt) * num;
@@ -353,24 +296,24 @@ function doesQuestPassTaskFilter(quest, arg1) {
   if (constants4.VIDEO === arg1) {
     return QuestTaskUtils.hasWatchVideoTasks(quest);
   } else if (tmp.PLAY === arg1) {
-    obj2 = { quest };
+    const obj2 = { quest };
     let hasPlayOnDesktopTaskResult = QuestTaskUtils.hasPlayOnDesktopTask(obj2);
     if (!hasPlayOnDesktopTaskResult) {
-      const obj3 = { quest };
-      hasPlayOnDesktopTaskResult = tmp2(7960).hasStreamOnDesktopTask(obj3);
-      const tmp2Result = tmp2(7960);
+      obj3 = { quest };
+      hasPlayOnDesktopTaskResult = tmp2(7965).hasStreamOnDesktopTask(obj3);
+      const tmp2Result = tmp2(7965);
     }
     if (!hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = tmp2(7960).hasPlayActivityTask(quest);
-      const tmp2Result4 = tmp2(7960);
+      hasPlayOnDesktopTaskResult = tmp2(7965).hasPlayActivityTask(quest);
+      const tmp2Result4 = tmp2(7965);
     }
     if (!hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = tmp2(7960).isConsoleQuest(quest);
-      const tmp2Result5 = tmp2(7960);
+      hasPlayOnDesktopTaskResult = tmp2(7965).isConsoleQuest(quest);
+      const tmp2Result5 = tmp2(7965);
     }
     if (!hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = tmp2(7960).isInGameQuest(quest);
-      const tmp2Result6 = tmp2(7960);
+      hasPlayOnDesktopTaskResult = tmp2(7965).isInGameQuest(quest);
+      const tmp2Result6 = tmp2(7965);
     }
     return hasPlayOnDesktopTaskResult;
   } else {
@@ -393,13 +336,13 @@ function doesQuestPassRewardFilter(config, arg1) {
     return false;
   }
 }
-function sortQuests(arr, arg1, memo) {
+function sortQuests(arr, arg1, arg2) {
   let tmp = arg1;
   if (arg1 === undefined) {
     tmp = closure_37;
   }
-  let tmp2 = memo;
-  if (memo === undefined) {
+  let tmp2 = arg2;
+  if (arg2 === undefined) {
     tmp2 = closure_38;
   }
   ({ sortMethod, filters } = tmp);
@@ -424,7 +367,7 @@ function sortQuests(arr, arg1, memo) {
             return 0 === arr.length || arr.some((item) => closure_1(closure_0, item.filter));
           });
         });
-        obj2 = require("module_12");
+        let obj2 = require("module_12");
       }
       obj = found;
     }
@@ -449,7 +392,7 @@ function sortQuests(arr, arg1, memo) {
         const nextResult = iter.next();
         while (iter !== undefined) {
           let tmp8 = nextResult;
-          obj2 = closure_0(dependencyMap[21]);
+          let obj2 = closure_0(dependencyMap[23]);
           if (obj2.hasVariant(nextResult, constants.RENEWABLE_END_DATE)) {
             let result = map.set(tmp8.id, seededQuestSortKey(currentUserId, tmp8.id));
           }
@@ -479,45 +422,462 @@ function seededQuestSortKey(arg0, arg1) {
   return MurmurHashV3Default.v3("" + arg0 + ":" + arg1) >>> 0;
 }
 function useAllQuests(quests, sortMethod) {
-  _require = quests;
-  importDefault = sortMethod;
-  const items = [ref3];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => null);
-  closure_129_0 = stateFromStores;
-  closure_130_1 = undefined;
-  const obj = require("initialize");
-  const tmp = _require;
-  const items1 = [QuestStore];
-  const stateFromStores1 = require("initialize").useStateFromStores(items1, () => quests.quests);
-  closure_130_0 = stateFromStores1;
-  let questIds;
-  if (stateFromStores != null) {
-    questIds = stateFromStores.questIds;
-  }
-  closure_130_1 = questIds;
-  const items2 = [stateFromStores1, questIds];
-  const isShelfEnabled = noop.useMemo(() => {
-    if (null == questIds) {
-      obj2 = { shelfQuests: [], isShelfEnabled: false };
-      return obj2;
+  const tmp = closure_42();
+  const current = tmp;
+  noop.useRef([]);
+  noop.useRef(sortMethod.sortMethod);
+  noop = noop.useRef(sortMethod.filters);
+  noop.useRef(0);
+  noop.useRef(tmp);
+  const items = [quests, sortMethod, tmp];
+  return noop.useMemo(() => {
+    if (0 === quests.length) {
+      return [];
     } else {
-      const mapped = arr.map((item) => stateFromStores.get(item));
-      const found = mapped.filter(GlobalUtils.isNotNullish);
-      const found1 = found.filter((item) => !stateFromStores(closure_1_2[19]).isQuestExpired(item));
-      if (found1.length <= 1) {
-        const obj3 = { shelfQuests: [], isShelfEnabled: false };
-        let obj = obj3;
-      } else {
-        obj = { shelfQuests: found1, isShelfEnabled: true };
+      if (ref.current.length > 0) {
+        if (ref4.current === arr.length) {
+          if (ref2.current === sortMethod.sortMethod) {
+            if (ref3.current === tmp3.filters) {
+              if (ref5.current === current) {
+                return tmp15.current;
+              }
+            }
+          }
+        }
       }
-      return obj;
+      const mapped = sortQuests(arr, sortMethod, current).map((id) => id.id);
+      ref.current = mapped;
+      ref2.current = sortMethod.sortMethod;
+      ref3.current = sortMethod.filters;
+      ref4.current = arr.length;
+      ref5.current = current;
+      return mapped;
     }
-    arr = questIds;
-  }, items2).isShelfEnabled;
-  closure_129_1 = isShelfEnabled;
-  obj2 = require("initialize");
-  const items3 = [UserStore];
-  const stateFromStores2 = tmp(memo[14]).useStateFromStores(items3, () => {
+  }, items);
+}
+function useCompletedAndClaimedQuests(quests) {
+  const items = [quests];
+  const memo = noop.useMemo(() => quests.filter((userStatus) => {
+    userStatus = userStatus.userStatus;
+    let completedAt;
+    if (userStatus != null) {
+      completedAt = userStatus.completedAt;
+    }
+    let tmp2 = null != completedAt;
+    const userStatus2 = userStatus.userStatus;
+    if (userStatus2 != null) {
+      const claimedAt = userStatus2.claimedAt;
+    }
+    if (tmp2) {
+      tmp2 = null != claimedAt;
+    }
+    return tmp2;
+  }), items);
+  noop.useRef([]);
+  const items1 = [memo];
+  return noop.useMemo(() => {
+    if (0 === memo.length) {
+      return [];
+    } else {
+      if (ref.current.length > 0) {
+        if (tmp.current.length === arr.length) {
+          return tmp.current;
+        }
+      }
+      const sorted = arr.sort((userStatus, userStatus2) => {
+        userStatus = userStatus.userStatus;
+        let claimedAt;
+        if (userStatus != null) {
+          claimedAt = userStatus.claimedAt;
+        }
+        userStatus2 = userStatus2.userStatus;
+        let claimedAt1;
+        if (userStatus2 != null) {
+          claimedAt1 = userStatus2.claimedAt;
+        }
+        if (null == claimedAt !== (null == claimedAt1)) {
+          let num2 = 1;
+          if (tmp2) {
+            num2 = closure_1_29;
+          }
+          let result = num2;
+        } else {
+          const rewardsExpireAt = userStatus.config.rewardsConfig.rewardsExpireAt;
+          let num = 1;
+          if (constants.DESC === constants.DESC) {
+            num = closure_1_29;
+          }
+          result = rewardsExpireAt.localeCompare(userStatus2.config.rewardsConfig.rewardsExpireAt) * num;
+        }
+        return result;
+      });
+      const mapped = sorted.map((id) => id.id);
+      ref.current = mapped;
+      return mapped;
+    }
+  }, items1);
+}
+function isQuestHiddenFromQuestHome(userStatus) {
+  let isQuestExpiredResult = QuestDataUtils.isQuestExpired(userStatus);
+  if (isQuestExpiredResult) {
+    isQuestExpiredResult = !QuestDataUtils.hasUnclaimedReward(userStatus.userStatus);
+    const tmpResult = QuestDataUtils;
+  }
+  return isQuestExpiredResult;
+}
+const useConsoleQuestUIStore = fn(7945).useConsoleQuestUIStore;
+const QuestConstants = fn(5663);
+({ QuestTaskPlatform: closure_14, QuestsExperimentLocations: closure_15, MEMBER_LIST_SOCIAL_ENTRY_POINT_ALLOWED_TASK_TYPES: closure_16, QuestHomeSortMethods: closure_17, SORTED_QUEST_HOME_FILTER_GROUPS: closure_18, TaskFilterTypes: closure_19, RewardFilterTypes: closure_20, MOBILE_ORBS_INTRO_QUEST_ID: closure_21, ORBS_INTRO_QUEST_ID: closure_22, QuestVariants: closure_23 } = QuestConstants);
+const Constants = fn(1078);
+({ HelpdeskArticles: closure_24, PlatformTypes: closure_25, ThemeTypes: closure_26, AnalyticEvents: closure_27 } = Constants);
+const PremiumTypes = fn(1378).PremiumTypes;
+let c29 = -1;
+let ReactCompilerGating = fn(558);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(25);
+  if (cResult[0] !== arg0) {
+    let obj2 = arg0;
+    if (undefined === arg0) {
+      obj2 = { fetchPolicy: "cache-only", callerSource: "unknown" };
+    }
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  _require = tmp4;
+  const tmp5 = lastFetchedCurrentQuests(noop.useState(false), 2);
+  const first = tmp5[0];
+  dependencyMap = tmp5[1];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [QuestStore];
+    const fn = function l() {
+      const quests = QuestStore.quests;
+      const items = [...quests.values()];
+      return items;
+    };
+    cResult[2] = items;
+    cResult[3] = fn;
+    let tmp8 = fn;
+    let tmp7 = items;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  let obj = require("c");
+  obj3 = noop;
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(tmp7, tmp8);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [QuestStore];
+    class T {
+      constructor() {
+        excludedQuests = closure_1_13.excludedQuests;
+        items = [...excludedQuests.values()];
+        return items;
+      }
+    }
+    cResult[4] = items1;
+    cResult[5] = T;
+    let tmp12 = T;
+    let tmp11 = items1;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStoresArray1 = require("initialize").useStateFromStoresArray(tmp11, tmp12);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [QuestStore];
+    class Q {
+      constructor() {
+        obj = { isFetchingCurrentQuests: closure_1_13.isFetchingCurrentQuests, lastFetchedCurrentQuests: closure_1_13.lastFetchedCurrentQuests };
+        return obj;
+      }
+    }
+    cResult[6] = items2;
+    cResult[7] = Q;
+    let tmp16 = Q;
+    let tmp15 = items2;
+  } else {
+    tmp15 = cResult[6];
+    tmp16 = cResult[7];
+  }
+  const tmpResult4 = require("initialize");
+  const stateFromStoresObject = require("initialize").useStateFromStoresObject(tmp15, tmp16);
+  const isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
+  lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const isEligibleForQuests = tmp(11608).getIsEligibleForQuests();
+    class Q {
+      constructor() {
+        obj = { isFetchingCurrentQuests: closure_1_13.isFetchingCurrentQuests, lastFetchedCurrentQuests: closure_1_13.lastFetchedCurrentQuests };
+        return obj;
+      }
+    }
+    let tmp19 = isEligibleForQuests;
+    const tmpResult6 = tmp(11608);
+  } else {
+    tmp19 = cResult[8];
+  }
+  noop = tmp19;
+  if (cResult[9] === first) {
+    if (cResult[10] === isFetchingCurrentQuests) {
+      if (cResult[11] === lastFetchedCurrentQuests) {
+        if (cResult[12] === tmp4.fetchPolicy) {
+          let tmp21 = cResult[13];
+        }
+        if (cResult[14] === first) {
+          if (cResult[15] === isFetchingCurrentQuests) {
+            if (cResult[16] === lastFetchedCurrentQuests) {
+              if (cResult[17] === tmp4.callerSource) {
+                if (cResult[18] === tmp4.fetchPolicy) {
+                  let tmp22 = cResult[19];
+                }
+                const effect = obj3.useEffect(tmp21, tmp22);
+                if (cResult[20] === stateFromStoresArray1) {
+                  if (cResult[21] === first) {
+                    if (cResult[22] === isFetchingCurrentQuests) {
+                      if (cResult[23] === stateFromStoresArray) {
+                        let tmp24 = cResult[24];
+                      }
+                      return tmp24;
+                    }
+                  }
+                }
+                class Q {
+                  constructor() {
+                    obj = { isFetchingCurrentQuests: closure_1_13.isFetchingCurrentQuests, lastFetchedCurrentQuests: closure_1_13.lastFetchedCurrentQuests };
+                    return obj;
+                  }
+                }
+                tmp25[0] = stateFromStoresArray;
+                tmp25[1] = stateFromStoresArray1;
+                tmp25[2] = isFetchingCurrentQuests;
+                tmp25[3] = first;
+                cResult[20] = stateFromStoresArray1;
+                cResult[21] = first;
+                cResult[22] = isFetchingCurrentQuests;
+                cResult[23] = stateFromStoresArray;
+                cResult[24] = tmp25;
+                tmp24 = tmp25;
+              }
+            }
+          }
+        }
+        const items3 = [, , , , , ];
+        class Q {
+          constructor() {
+            obj = { isFetchingCurrentQuests: closure_1_13.isFetchingCurrentQuests, lastFetchedCurrentQuests: closure_1_13.lastFetchedCurrentQuests };
+            return obj;
+          }
+        }
+        items3[1] = tmp19;
+        items3[2] = first;
+        items3[3] = isFetchingCurrentQuests;
+        items3[4] = lastFetchedCurrentQuests;
+        items3[5] = tmp4.callerSource;
+        cResult[14] = first;
+        cResult[15] = isFetchingCurrentQuests;
+        cResult[16] = lastFetchedCurrentQuests;
+        cResult[17] = tmp4.callerSource;
+        cResult[18] = tmp4.fetchPolicy;
+        cResult[19] = items3;
+        tmp22 = items3;
+      }
+    }
+  }
+  class F {
+    constructor() {
+      fetchPolicy = closure_0.fetchPolicy;
+      if ("cache-only" !== fetchPolicy) {
+        str2 = "cache-or-network";
+        if ("cache-or-network" === fetchPolicy) {
+          tmp = lastFetchedCurrentQuests;
+          num = 0;
+          flag = 0 === lastFetchedCurrentQuests;
+        } else {
+          str = "cache-and-network";
+          flag = true;
+        }
+        if (flag) {
+          flag = closure_5;
+        }
+        if (flag) {
+          tmp2 = closure_1;
+          flag = !closure_1;
+        }
+        if (flag) {
+          tmp3 = isFetchingCurrentQuests;
+          flag = !isFetchingCurrentQuests;
+        }
+        if (flag) {
+          tmp4 = closure_2;
+          flag2 = true;
+          tmp5 = closure_2(true);
+          tmp6 = closure_0;
+          tmp7 = closure_2;
+          obj = closure_0(closure_2[18]);
+          currentQuests = obj.fetchCurrentQuests();
+          obj2 = closure_0(closure_2[19]);
+          if (obj2.isMac()) {
+            tmp9 = closure_1;
+            obj3 = closure_1(tmp7[20]);
+            state = obj3.getState();
+          }
+        }
+        return;
+      }
+      return;
+    }
+  }
+  cResult[9] = first;
+  cResult[10] = isFetchingCurrentQuests;
+  cResult[11] = lastFetchedCurrentQuests;
+  cResult[12] = tmp4.fetchPolicy;
+  cResult[13] = F;
+  tmp21 = F;
+}) : (() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = { fetchPolicy: "cache-only", callerSource: "unknown" };
+  }
+  let lastFetchedCurrentQuests;
+  let isEligibleForQuests;
+  const tmp = lastFetchedCurrentQuests(isEligibleForQuests.useState(false), 2);
+  const hasFetched = tmp[0];
+  dependencyMap = tmp[1];
+  let items = [QuestStore];
+  let quests = obj(504).useStateFromStoresArray(items, () => {
+    const quests = QuestStore.quests;
+    const items = [...quests.values()];
+    return items;
+  });
+  let obj2 = obj(504);
+  const items1 = [QuestStore];
+  let excludedQuests = obj(504).useStateFromStoresArray(items1, () => {
+    const excludedQuests = QuestStore.excludedQuests;
+    const items = [...excludedQuests.values()];
+    return items;
+  });
+  obj3 = obj(504);
+  const items2 = [QuestStore];
+  const stateFromStoresObject = obj(504).useStateFromStoresObject(items2, () => ({ isFetchingCurrentQuests: QuestStore.isFetchingCurrentQuests, lastFetchedCurrentQuests: QuestStore.lastFetchedCurrentQuests }));
+  const isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
+  lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
+  const obj4 = obj(504);
+  isEligibleForQuests = obj(11608).getIsEligibleForQuests();
+  const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
+  const effect = isEligibleForQuests.useEffect(() => {
+    const fetchPolicy = obj.fetchPolicy;
+    if ("cache-only" !== fetchPolicy) {
+      if ("cache-or-network" === fetchPolicy) {
+        let flag = 0 === lastFetchedCurrentQuests;
+      } else {
+        flag = true;
+        if ("cache-and-network" !== fetchPolicy) {
+          const fetchPolicy2 = tmp.fetchPolicy;
+        }
+      }
+      if (flag) {
+        flag = isEligibleForQuests;
+      }
+      if (flag) {
+        flag = !hasFetched;
+      }
+      if (flag) {
+        flag = !isFetchingCurrentQuests;
+      }
+      if (flag) {
+        closure_2(true);
+        obj = QuestActionCreators;
+        const currentQuests = obj.fetchCurrentQuests();
+        if (obj2.isMac()) {
+          state = DiscordAppStateDefault.getState();
+        }
+        obj2 = PlatformUtils;
+      }
+    }
+  }, items3);
+  return { quests, excludedQuests, isFetchingCurrentQuests, hasFetched };
+});
+let closure_30 = tmp4;
+let closure_37 = {};
+let closure_38 = { questHomeHero: null, isQuestHomeHeroShelfEnabled: false, currentUserId: null, isRenewableEndDateSortEnabled: false };
+const constants9 = { DESC: 0, [0]: "DESC", ASC: 1, [1]: "ASC" };
+ReactCompilerGating = fn(558);
+let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(10);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AdDeliveryStore];
+    const fn = function s() {
+      return null;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  const isShelfEnabled = closure_61(stateFromStores).isShelfEnabled;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    const fn2 = function a() {
+      currentUser = currentUser.getCurrentUser();
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      if (id == null) {
+        id = null;
+      }
+      return id;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp9 = fn2;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = initialize;
+  const stateFromStores1 = initialize.useStateFromStores(tmp8, tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { location: constants2.QUEST_HOME_MOBILE };
+    cResult[4] = obj2;
+    let tmp12 = obj2;
+  } else {
+    tmp12 = cResult[4];
+  }
+  const tmpResult2 = initialize;
+  const enabled = RenewableEndDateSortExperimentDefault.useConfig(tmp12).enabled;
+  if (cResult[5] === stateFromStores1) {
+    if (cResult[6] === enabled) {
+      if (cResult[7] === isShelfEnabled) {
+        if (cResult[8] === stateFromStores) {
+          let tmp14 = cResult[9];
+        }
+        return tmp14;
+      }
+    }
+  }
+  obj3 = { questHomeHero: stateFromStores, isQuestHomeHeroShelfEnabled: isShelfEnabled, currentUserId: stateFromStores1, isRenewableEndDateSortEnabled: enabled };
+  cResult[5] = stateFromStores1;
+  cResult[6] = enabled;
+  cResult[7] = isShelfEnabled;
+  cResult[8] = stateFromStores;
+  cResult[9] = obj3;
+  tmp14 = obj3;
+}) : (() => {
+  const items = [AdDeliveryStore];
+  stateFromStores = stateFromStores(stateFromStores1[16]).useStateFromStores(items, () => null);
+  const isShelfEnabled = closure_61(stateFromStores).isShelfEnabled;
+  const obj = stateFromStores(stateFromStores1[16]);
+  const items1 = [UserStore];
+  stateFromStores1 = stateFromStores(stateFromStores1[16]).useStateFromStores(items1, () => {
     currentUser = currentUser.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -528,301 +888,77 @@ function useAllQuests(quests, sortMethod) {
     }
     return id;
   });
-  closure_129_2 = stateFromStores2;
-  const tmpResult = tmp(memo[14]);
-  const enabled = require("RenewableEndDateSortExperiment").useConfig({ location: constants2.QUEST_HOME_MOBILE }).enabled;
-  closure_129_3 = enabled;
-  const items4 = [stateFromStores, isShelfEnabled, stateFromStores2, enabled];
-  memo = noop.useMemo(() => ({ questHomeHero, isQuestHomeHeroShelfEnabled, currentUserId: memo, isRenewableEndDateSortEnabled }), items4);
-  const isRenewableEndDateSortEnabled = noop.useRef([]);
-  noop.useRef(sortMethod.sortMethod);
-  noop = noop.useRef(sortMethod.filters);
-  const obj3 = { location: constants2.QUEST_HOME_MOBILE };
-  const obj4 = require("RenewableEndDateSortExperiment");
-  noop.useRef(memo);
-  const items5 = [quests, sortMethod, memo];
-  return noop.useMemo(() => {
-    if (0 === questHomeHero.length) {
-      return [];
-    } else {
-      if (isRenewableEndDateSortEnabled.current.length > 0) {
-        if (ref3.current === arr.length) {
-          if (ref.current === isQuestHomeHeroShelfEnabled.sortMethod) {
-            if (ref2.current === tmp3.filters) {
-              if (ref4.current === memo) {
-                return tmp15.current;
-              }
-            }
-          }
-        }
-      }
-      const mapped = sortQuests(arr, isQuestHomeHeroShelfEnabled, memo).map((id) => id.id);
-      isRenewableEndDateSortEnabled.current = mapped;
-      ref.current = isQuestHomeHeroShelfEnabled.sortMethod;
-      ref2.current = isQuestHomeHeroShelfEnabled.filters;
-      ref3.current = arr.length;
-      ref4.current = memo;
-      return mapped;
-    }
-  }, items5);
-}
-function isQuestHiddenFromQuestHome(userStatus) {
-  let isQuestExpiredResult = QuestDataUtils.isQuestExpired(userStatus);
-  if (isQuestExpiredResult) {
-    isQuestExpiredResult = !QuestDataUtils.hasUnclaimedReward(userStatus.userStatus);
-    const tmpResult = QuestDataUtils;
-  }
-  return isQuestExpiredResult;
-}
-function useIsQuestProgressing(quest) {
-  _require = quest;
-  const items = [QuestStore];
-  let stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.isProgressingOnDesktop(quest.id));
-  closure_129_0 = quest;
-  const items1 = [quest];
-  closure_130_0 = quest;
-  const memo = noop.useMemo(() => QuestTaskUtils.isQuestProgressingOnConsole(closure_0), items1);
-  const obj = require("initialize");
-  const items2 = [QuestStore];
-  const items3 = [quest, require("initialize").useStateFromStores(items2, () => QuestStore.getOptimisticProgress(quest.id, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO))];
-  const memo1 = noop.useMemo(() => VideoQuestUtils.isVideoQuestProgressing(closure_0), items3);
-  if (!stateFromStores) {
-    stateFromStores = memo;
-  }
-  if (!stateFromStores) {
-    stateFromStores = memo1;
-  }
-  return stateFromStores;
-}
-function useTaskPlatformScreen(quest, questTaskDetails) {
-  _require = quest;
-  closure_1 = questTaskDetails;
-  const id = quest.id;
-  closure_129_0 = id;
-  const items = [QuestStore];
-  const items1 = [require("initialize").useStateFromStores(items, () => QuestStore.selectedTaskPlatform(closure_0)), ];
-  const items2 = [id];
-  items1[1] = memo2.useCallback((platform) => QuestActionCreators.selectTaskPlatform(closure_0, platform), items2);
-  const tmp = hasItem1(items1, 2);
-  selectedPlatform = tmp[0];
-  const items3 = [quest];
-  const memo = memo2.useMemo(() => QuestPlatformUtils.supportedTaskPlatforms(closure_0), items3);
-  const hasItem = memo.includes(constants.DESKTOP);
-  hasItem1 = memo.includes(constants.CONSOLE);
-  closure_130_0 = quest;
-  let obj = require("initialize");
-  obj2 = memo2;
-  const items4 = [QuestStore];
-  closure_131_0 = quest;
-  const items5 = [quest];
-  const stateFromStores = require("initialize").useStateFromStores(items4, () => QuestStore.isProgressingOnDesktop(quest.id));
-  const items6 = [questTaskDetails];
-  const memo1 = memo2.useMemo(() => QuestTaskUtils.isQuestProgressingOnConsole(closure_0), items5);
-  memo2 = memo2.useMemo(() => {
-    const match = _mod4941.match(closure_1);
-    const withResult = match.with({ percentComplete: 0 }, () => null);
-    const obj = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
-    const withResult1 = withResult.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP }, () => constants.DESKTOP);
-    obj2 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
-    const withResult2 = withResult1.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ACTIVITY }, () => constants.DESKTOP);
-    const obj3 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO };
-    const withResult3 = withResult2.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO }, () => constants.DESKTOP);
-    const obj4 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE };
-    const withResult4 = withResult3.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE }, () => constants.DESKTOP);
-    const obj5 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
-    const withResult5 = withResult4.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP }, () => constants.DESKTOP);
-    const obj6 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
-    const withResult6 = withResult5.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX }, () => constants.CONSOLE);
-    const obj7 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
-    const withResult7 = withResult6.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION }, () => constants.CONSOLE);
-    const obj8 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
-    const withResult8 = withResult7.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME }, () => constants.DESKTOP);
-    const obj9 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
-    return withResult8.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY }, () => constants.DESKTOP).exhaustive();
-  }, items6);
-  if (stateFromStores) {
-    let DESKTOP = tmp3.DESKTOP;
-  } else {
-    DESKTOP = null;
-    if (memo1) {
-      DESKTOP = tmp3.CONSOLE;
-    }
-  }
-  const items7 = [hasItem1, hasItem, memo2, DESKTOP, selectedPlatform];
-  const items8 = [
-    obj2.useMemo(() => {
-      const match = _mod4941.match({ lastPlatformProgress: memo2, currentProgressingPlatform: DESKTOP, selectedPlatform });
-      const obj = { lastPlatformProgress: memo2, currentProgressingPlatform: DESKTOP, selectedPlatform };
-      obj2 = { currentProgressingPlatform: constants.CONSOLE };
-      const obj3 = { currentProgressingPlatform: constants.DESKTOP };
-      const withResult = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE);
-      const obj4 = { currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE };
-      const withResult1 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP);
-      const obj5 = { currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP };
-      const withResult2 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE);
-      const obj6 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE };
-      const withResult3 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP);
-      const obj7 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP };
-      const withResult4 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE);
-      const withResult5 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP);
-      return match.with({ currentProgressingPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE }, () => quest(5664).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP }, () => quest(5664).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null }, () => {
-        if (hasItem1) {
-          if (hasItem) {
-            let SELECT = closure_0(first[44]).TaskPlatformScreen.SELECT;
-          }
-          return SELECT;
-        }
-        const TaskPlatformScreen = closure_0(first[44]).TaskPlatformScreen;
-        SELECT = hasItem1 ? TaskPlatformScreen.CONSOLE : TaskPlatformScreen.DESKTOP;
-      }).exhaustive();
-    }, items7),
-    memo,
-    tmp[1]
-  ];
-  return items8;
-}
-const useConsoleQuestUIStore = fn(7940).useConsoleQuestUIStore;
-const QuestConstants = fn(5661);
-({ QuestTaskPlatform: closure_14, QuestsExperimentLocations: closure_15, MEMBER_LIST_SOCIAL_ENTRY_POINT_ALLOWED_TASK_TYPES: closure_16, QuestHomeSortMethods: closure_17, SORTED_QUEST_HOME_FILTER_GROUPS: closure_18, TaskFilterTypes: closure_19, RewardFilterTypes: closure_20, MOBILE_ORBS_INTRO_QUEST_ID: closure_21, ORBS_INTRO_QUEST_ID: closure_22, QuestVariants: closure_23 } = QuestConstants);
-const Constants = fn(1074);
-({ HelpdeskArticles: closure_24, PlatformTypes: closure_25, ThemeTypes: closure_26, AnalyticEvents: closure_27 } = Constants);
-const PremiumTypes = fn(1374).PremiumTypes;
-let c29 = -1;
-let closure_37 = {};
-let closure_38 = { questHomeHero: null, isQuestHomeHeroShelfEnabled: false, currentUserId: null, isRenewableEndDateSortEnabled: false };
-const constants8 = { DESC: 0, [0]: "DESC", ASC: 1, [1]: "ASC" };
-const QuestTabs = { ALL: "all", CLAIMED: "claimed", PREVIEW_TOOL: "preview_tool" };
-function useQuestTaskDetails(quest) {
-  closure_0 = quest;
-  const items = [quest];
-  const callback = noop.useCallback(() => QuestTaskUtils.getQuestTaskDetails(closure_0), items);
-  const tmp2 = _slicedToArray(noop.useState(callback()), 2);
-  closure_2 = tmp2[1];
-  const items1 = [callback];
-  const callback1 = noop.useCallback(() => dependencyMap(importDefault()), items1);
-  const tmp4 = useIsQuestProgressing(quest);
-  _slicedToArray = tmp4;
-  const items2 = [quest, tmp4, callback1];
-  const effect = noop.useEffect(() => {
-    userStatus = userStatus.userStatus;
-    let enrolledAt;
-    if (userStatus != null) {
-      enrolledAt = userStatus.enrolledAt;
-    }
-    if (null != enrolledAt) {
-      const userStatus2 = tmp.userStatus;
-      let completedAt;
-      if (userStatus2 != null) {
-        completedAt = userStatus2.completedAt;
-      }
-      if (null == completedAt) {
-        const userStatus3 = tmp.userStatus;
-        let claimedAt;
-        if (userStatus3 != null) {
-          claimedAt = userStatus3.claimedAt;
-        }
-        if (null == claimedAt) {
-          if (closure_4) {
-            const _window = window;
-            userStatus = window.setInterval(() => {
-              closure_1_3();
-            }, DurationsDefault.Millis.SECOND);
-            return () => {
-              clearInterval(closure_0);
-              asyncGeneratorStep();
-            };
-          }
-        }
-      }
-    }
-    closure_3();
-  }, items2);
-  return tmp2[0];
-}
-let obj2 = { UNACCEPTED: 0, [0]: "UNACCEPTED", ACCEPTED: 1, [1]: "ACCEPTED", IN_PROGRESS: 2, [2]: "IN_PROGRESS", COMPLETED: 3, [3]: "COMPLETED", CLAIMED: 4, [4]: "CLAIMED" };
-let closure_49 = 6 * DurationsDefault.Millis.HOUR;
-const MINUTE = DurationsDefault.Millis.MINUTE;
-const size = fn(2);
-let result = size.fileFinishedImporting("modules/quests/hooks/QuestHooks.tsx");
-
-export { useQuests };
-export { sortQuests };
-export { QuestTabs };
-export const QuestQueryParams = { TAB: "tab", QUEST_ID: "quest_id", SORT: "sort", FILTER: "filter", AD_CREATIVE_IDS: "ad_creative_ids" };
-export const useFilteredQuests = function useFilteredQuests(ALL, quests) {
-  let tmp = quests;
-  if (quests === undefined) {
+  const obj2 = stateFromStores(stateFromStores1[16]);
+  const enabled = isShelfEnabled(stateFromStores1[29]).useConfig({ location: constants2.QUEST_HOME_MOBILE }).enabled;
+  const items2 = [stateFromStores, isShelfEnabled, stateFromStores1, enabled];
+  return noop.useMemo(() => ({ questHomeHero: stateFromStores, isQuestHomeHeroShelfEnabled: isShelfEnabled, currentUserId: stateFromStores1, isRenewableEndDateSortEnabled: enabled }), items2);
+});
+let obj3 = { ALL: "all", CLAIMED: "claimed", PREVIEW_TOOL: "preview_tool" };
+fn(558);
+ReactCompilerGating = fn(558);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, sortMethod) => {
+  let tmp = sortMethod;
+  const cResult = c.c(2);
+  if (undefined === sortMethod) {
     tmp = closure_37;
   }
-  let tmp2 = useQuests({ fetchPolicy: "cache-and-network", callerSource: "use_filtered_quests" });
-  quests = tmp2.quests;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { fetchPolicy: "cache-and-network", callerSource: "use_filtered_quests" };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const tmp4 = closure_30(first);
+  const quests = tmp4.quests;
+  ({ excludedQuests, isFetchingCurrentQuests, hasFetched } = tmp4);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function a(id) {
+      const items = [id.id, id];
+      return items;
+    };
+    cResult[1] = fn;
+    let tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const map = new Map(quests.map(tmp5));
+  const tmp7 = useCompletedAndClaimedQuests(quests);
+  const quests1 = [];
+  const tmp6 = useAllQuests(quests, tmp);
+  while (tmp8 !== undefined) {
+    value = map.get(tmp9);
+    let tmp11 = value;
+    let removeExpiredQuests = null != value;
+    if (removeExpiredQuests) {
+      removeExpiredQuests = arg0 === obj3.ALL;
+    }
+    if (removeExpiredQuests) {
+      removeExpiredQuests = tmp.removeExpiredQuests;
+    }
+    if (removeExpiredQuests) {
+      removeExpiredQuests = isQuestHiddenFromQuestHome(tmp11);
+    }
+    let tmp17 = null == tmp11 || removeExpiredQuests;
+    if (!tmp17) {
+      let arr = quests1.push(tmp11);
+    }
+    continue;
+  }
+  return { quests: quests1, excludedQuests, isFetchingCurrentQuests, hasFetched };
+}) : ((arg0, sortMethod) => {
+  let tmp = sortMethod;
+  if (sortMethod === undefined) {
+    tmp = closure_37;
+  }
+  const tmp2 = closure_30({ fetchPolicy: "cache-and-network", callerSource: "use_filtered_quests" });
+  const quests = tmp2.quests;
   ({ excludedQuests, isFetchingCurrentQuests, hasFetched } = tmp2);
   const map = new Map(quests.map((id) => {
     const items = [id.id, id];
     return items;
   }));
-  const tmp4 = (function useCompletedAndClaimedQuests(quests) {
-    const items = [quests];
-    const memo = React.useMemo(() => quests.filter((userStatus) => {
-      userStatus = userStatus.userStatus;
-      let completedAt;
-      if (userStatus != null) {
-        completedAt = userStatus.completedAt;
-      }
-      let tmp2 = null != completedAt;
-      const userStatus2 = userStatus.userStatus;
-      if (userStatus2 != null) {
-        const claimedAt = userStatus2.claimedAt;
-      }
-      if (tmp2) {
-        tmp2 = null != claimedAt;
-      }
-      return tmp2;
-    }), items);
-    React.useRef([]);
-    const items1 = [memo];
-    return React.useMemo(() => {
-      if (0 === memo.length) {
-        return [];
-      } else {
-        if (ref.current.length > 0) {
-          if (tmp.current.length === arr.length) {
-            return tmp.current;
-          }
-        }
-        const sorted = arr.sort((userStatus, userStatus2) => {
-          userStatus = userStatus.userStatus;
-          let claimedAt;
-          if (userStatus != null) {
-            claimedAt = userStatus.claimedAt;
-          }
-          userStatus2 = userStatus2.userStatus;
-          let claimedAt1;
-          if (userStatus2 != null) {
-            claimedAt1 = userStatus2.claimedAt;
-          }
-          if (null == claimedAt !== (null == claimedAt1)) {
-            let num2 = 1;
-            if (tmp2) {
-              num2 = closure_1_29;
-            }
-            let result = num2;
-          } else {
-            const rewardsExpireAt = userStatus.config.rewardsConfig.rewardsExpireAt;
-            let num = 1;
-            if (constants.DESC === constants.DESC) {
-              num = closure_1_29;
-            }
-            result = rewardsExpireAt.localeCompare(userStatus2.config.rewardsConfig.rewardsExpireAt) * num;
-          }
-          return result;
-        });
-        const mapped = sorted.map((id) => id.id);
-        ref.current = mapped;
-        return mapped;
-      }
-    }, items1);
-  })(quests);
+  const tmp4 = useCompletedAndClaimedQuests(quests);
   const quests1 = [];
   const tmp3 = useAllQuests(quests, tmp);
   while (tmp5 !== undefined) {
@@ -830,7 +966,7 @@ export const useFilteredQuests = function useFilteredQuests(ALL, quests) {
     let tmp8 = value;
     let removeExpiredQuests = null != value;
     if (removeExpiredQuests) {
-      removeExpiredQuests = ALL === obj.ALL;
+      removeExpiredQuests = arg0 === obj3.ALL;
     }
     if (removeExpiredQuests) {
       removeExpiredQuests = tmp.removeExpiredQuests;
@@ -845,8 +981,118 @@ export const useFilteredQuests = function useFilteredQuests(ALL, quests) {
     continue;
   }
   return { quests: quests1, excludedQuests, isFetchingCurrentQuests, hasFetched };
-};
-export const useClaimedQuests = function useClaimedQuests() {
+});
+ReactCompilerGating = fn(558);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(10);
+  _require = noop.useRef(false);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    const fn = function s() {
+      const claimedQuests = QuestStore.claimedQuests;
+      return Array.from(claimedQuests.values());
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  let obj = require("c");
+  const obj2 = noop;
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [QuestStore];
+    const fn2 = function l() {
+      return QuestStore.isFetchingClaimedQuests;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp9 = fn2;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStores = require("initialize").useStateFromStores(tmp8, tmp9);
+  if (cResult[4] !== stateFromStores) {
+    class S {
+      constructor() {
+        current = closure_1;
+        if (!closure_1) {
+          tmp = closure_0;
+          current = closure_0.current;
+        }
+        if (!current) {
+          tmp2 = closure_0;
+          flag = true;
+          closure_0.current = true;
+          tmp3 = closure_0;
+          tmp4 = closure_2;
+          obj = closure_0(closure_2[18]);
+          claimedQuests = obj.fetchClaimedQuests();
+        }
+        return;
+      }
+    }
+    const items2 = [stateFromStores];
+    cResult[4] = stateFromStores;
+    cResult[5] = S;
+    cResult[6] = items2;
+    let tmp13 = items2;
+    const tmp12 = S;
+  } else {
+    class S {
+      constructor() {
+        current = closure_1;
+        if (!closure_1) {
+          tmp = closure_0;
+          current = closure_0.current;
+        }
+        if (!current) {
+          tmp2 = closure_0;
+          flag = true;
+          closure_0.current = true;
+          tmp3 = closure_0;
+          tmp4 = closure_2;
+          obj = closure_0(closure_2[18]);
+          claimedQuests = obj.fetchClaimedQuests();
+        }
+        return;
+      }
+    }
+    tmp13 = cResult[6];
+  }
+  const effect = obj2.useEffect(tmp12, tmp13);
+  if (cResult[7] === stateFromStoresArray) {
+    class S {
+      constructor() {
+        current = closure_1;
+        if (!closure_1) {
+          tmp = closure_0;
+          current = closure_0.current;
+        }
+        if (!current) {
+          tmp2 = closure_0;
+          flag = true;
+          closure_0.current = true;
+          tmp3 = closure_0;
+          tmp4 = closure_2;
+          obj = closure_0(closure_2[18]);
+          claimedQuests = obj.fetchClaimedQuests();
+        }
+        return;
+      }
+    }
+    return obj3;
+  }
+  obj3 = { claimedQuests: stateFromStoresArray, isFetchingClaimedQuests: stateFromStores };
+  cResult[7] = stateFromStoresArray;
+  cResult[8] = stateFromStores;
+  cResult[9] = obj3;
+}) : (() => {
   _require = noop.useRef(false);
   const items = [QuestStore];
   let claimedQuests = require("initialize").useStateFromStoresArray(items, () => {
@@ -868,42 +1114,156 @@ export const useClaimedQuests = function useClaimedQuests() {
     }
   }, items2);
   return { claimedQuests, isFetchingClaimedQuests };
-};
-export const useExpiredQuestsMap = function useExpiredQuestsMap() {
+});
+ReactCompilerGating = fn(558);
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    const fn = function s() {
+      return expiredQuestsMap.getExpiredQuestsMap();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [QuestStore];
   return initialize.useStateFromStores(items, () => expiredQuestsMap.getExpiredQuestsMap());
-};
-export const useShouldShowBonusOrbsUX = function useShouldShowBonusOrbsUX(quest, questOrbMultiplierEligibility) {
-  _require = quest;
-  const items = [QuestStore];
-  const items1 = [quest];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let isQuestExpiredResult = null != c0;
-    if (isQuestExpiredResult) {
-      isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
-    }
-    return isQuestExpiredResult;
-  }, items1);
-  const obj = require("initialize");
-  const result = require("QuestRewardUtils").hasVirtualCurrencyReward(quest.config);
-  obj2 = require("QuestRewardUtils");
-  const result1 = require("QuestRewardUtils").hasPremiumOrbQuantity(quest.config);
-  let tmp4 = !stateFromStores;
-  if (!stateFromStores) {
+});
+ReactCompilerGating = fn(558);
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((config, arg1) => {
+  const cResult = c.c(4);
+  const tmp4 = closure_47(config);
+  if (cResult[0] !== config.config) {
+    const result = tmp(10575).hasVirtualCurrencyReward(config.config);
+    cResult[0] = config.config;
+    cResult[1] = result;
+    let tmp5 = result;
+    const tmpResult = tmp(10575);
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== config.config) {
+    const result1 = tmp(10575).hasPremiumOrbQuantity(config.config);
+    cResult[2] = config.config;
+    cResult[3] = result1;
+    let tmp7 = result1;
+    const tmpResult2 = tmp(10575);
+  } else {
+    tmp7 = cResult[3];
+  }
+  let tmp9 = !tmp4;
+  if (!tmp4) {
+    tmp9 = tmp5;
+  }
+  if (tmp9) {
+    tmp9 = tmp7;
+  }
+  if (tmp9) {
+    tmp9 = arg1 !== tmp(10578).QuestOrbMultiplierEligibilityType.INELIGIBLE;
+  }
+  return tmp9;
+}) : ((config, arg1) => {
+  const tmp = closure_47(config);
+  const result = QuestRewardUtils.hasVirtualCurrencyReward(config.config);
+  const result1 = QuestRewardUtils.hasPremiumOrbQuantity(config.config);
+  let tmp4 = !tmp;
+  if (!tmp) {
     tmp4 = result;
   }
   if (tmp4) {
     tmp4 = result1;
   }
   if (tmp4) {
-    tmp4 = questOrbMultiplierEligibility !== require("QuestOrbMultiplierUtils").QuestOrbMultiplierEligibilityType.INELIGIBLE;
+    tmp4 = arg1 !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE;
   }
   return tmp4;
-};
-export const useQuestOrbRewardMultiplier = function useQuestOrbRewardMultiplier(questId) {
-  _require = questId;
+});
+ReactCompilerGating = fn(558);
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      let isQuestExpiredResult = null != closure_0;
+      if (isQuestExpiredResult) {
+        isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
+      }
+      return isQuestExpiredResult;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  _require = arg0;
   const items = [QuestStore];
-  const items1 = [questId];
+  const items1 = [arg0];
+  return require("initialize").useStateFromStores(items, () => {
+    let isQuestExpiredResult = null != closure_0;
+    if (isQuestExpiredResult) {
+      isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
+    }
+    return isQuestExpiredResult;
+  }, items1);
+});
+let closure_47 = tmp10;
+ReactCompilerGating = fn(558);
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      const quest = QuestStore.getQuest(closure_0);
+      let questOrbMultiplier = null;
+      if (null != quest) {
+        questOrbMultiplier = QuestRewardUtils.getQuestOrbMultiplier(quest.config);
+      }
+      return questOrbMultiplier;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  let obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  _require = arg0;
+  const items = [QuestStore];
+  const items1 = [arg0];
   return require("initialize").useStateFromStores(items, () => {
     const quest = QuestStore.getQuest(closure_0);
     let questOrbMultiplier = null;
@@ -912,24 +1272,176 @@ export const useQuestOrbRewardMultiplier = function useQuestOrbRewardMultiplier(
     }
     return questOrbMultiplier;
   }, items1);
-};
-export const useIsQuestExpired = function useIsQuestExpired(deliveredQuest) {
-  _require = deliveredQuest;
-  const items = [QuestStore];
-  const items1 = [deliveredQuest];
-  return require("initialize").useStateFromStores(items, () => {
-    let isQuestExpiredResult = null != c0;
-    if (isQuestExpiredResult) {
-      isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
-    }
-    return isQuestExpiredResult;
-  }, items1);
-};
-export const useIsQuestAccessSuspended = function useIsQuestAccessSuspended() {
+});
+ReactCompilerGating = fn(558);
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    const fn = function s() {
+      return QuestStore.isQuestAccessSuspended;
+    };
+    const items1 = [];
+    cResult[0] = items;
+    cResult[1] = fn;
+    cResult[2] = items1;
+    tmp4 = items;
+    tmp5 = fn;
+    tmp6 = items1;
+  } else {
+    [tmp4, tmp5, tmp6] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5, tmp6);
+}) : (() => {
   const items = [QuestStore];
   return initialize.useStateFromStores(items, () => QuestStore.isQuestAccessSuspended, []);
-};
-export const useIsQuestEligibleForMembersListPopout = function useIsQuestEligibleForMembersListPopout(userStatus, arg1, arg2) {
+});
+ReactCompilerGating = fn(558);
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, channelId, arg2) => {
+  _require = arg0;
+  const cResult = require("c").c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  channelId = undefined;
+  if (channelId != null) {
+    channelId = channelId.channelId;
+  }
+  if (cResult[1] !== channelId) {
+    let channelId1;
+    if (channelId != null) {
+      channelId1 = channelId.channelId;
+    }
+    const fn = function u() {
+      channelId = undefined;
+      if (channelId != null) {
+        channelId = channelId.channelId;
+      }
+      let channel = ChannelStore.getChannel(channelId);
+      if (channel == null) {
+        channel = null;
+      }
+      return channel;
+    };
+    cResult[1] = channelId1;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [QuestStore];
+    const fn2 = function f() {
+      return null != QuestStore.questEnrollmentBlockedUntil;
+    };
+    const items2 = [];
+    cResult[3] = items1;
+    cResult[4] = fn2;
+    cResult[5] = items2;
+    let tmp12 = items2;
+    let tmp11 = fn2;
+    let tmp10 = items1;
+  } else {
+    tmp10 = cResult[3];
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp10, tmp11, tmp12);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items3 = [UserStore];
+    class T {
+      constructor() {
+        currentUser = closure_1_10.getCurrentUser();
+        id = undefined;
+        if (currentUser != null) {
+          id = currentUser.id;
+        }
+        return id;
+      }
+    }
+    cResult[6] = items3;
+    cResult[7] = T;
+    let tmp16 = T;
+    let tmp15 = items3;
+  } else {
+    tmp15 = cResult[6];
+    tmp16 = cResult[7];
+  }
+  const tmpResult4 = require("initialize");
+  const stateFromStores2 = require("initialize").useStateFromStores(tmp15, tmp16);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const items4 = [QuestStore];
+    class T {
+      constructor() {
+        currentUser = closure_1_10.getCurrentUser();
+        id = undefined;
+        if (currentUser != null) {
+          id = currentUser.id;
+        }
+        return id;
+      }
+    }
+    cResult[8] = items4;
+  }
+  if (cResult[9] !== arg0) {
+    class Q {
+      constructor() {
+        isQuestExpiredResult = null != closure_0;
+        if (isQuestExpiredResult) {
+          tmp3 = closure_13;
+          isQuestExpiredResult = closure_13.isQuestExpired(tmp.id);
+        }
+        return isQuestExpiredResult;
+      }
+    }
+    const items5 = [arg0];
+    class T {
+      constructor() {
+        currentUser = closure_1_10.getCurrentUser();
+        id = undefined;
+        if (currentUser != null) {
+          id = currentUser.id;
+        }
+        return id;
+      }
+    }
+    cResult[9] = arg0;
+    cResult[10] = Q;
+    cResult[11] = items5;
+  } else {
+    class Q {
+      constructor() {
+        isQuestExpiredResult = null != closure_0;
+        if (isQuestExpiredResult) {
+          tmp3 = closure_13;
+          isQuestExpiredResult = closure_13.isQuestExpired(tmp.id);
+        }
+        return isQuestExpiredResult;
+      }
+    }
+  }
+  require("initialize");
+  if (null != arg0) {
+    class Q {
+      constructor() {
+        isQuestExpiredResult = null != closure_0;
+        if (isQuestExpiredResult) {
+          tmp3 = closure_13;
+          isQuestExpiredResult = closure_13.isQuestExpired(tmp.id);
+        }
+        return isQuestExpiredResult;
+      }
+    }
+  }
+  return false;
+}) : ((userStatus, arg1, arg2) => {
   _require = userStatus;
   let channelId = arg1;
   const items = [ChannelStore];
@@ -947,7 +1459,7 @@ export const useIsQuestEligibleForMembersListPopout = function useIsQuestEligibl
   const obj = require("initialize");
   const items1 = [QuestStore];
   const stateFromStores1 = require("initialize").useStateFromStores(items1, () => null != QuestStore.questEnrollmentBlockedUntil, []);
-  obj2 = require("initialize");
+  const obj2 = require("initialize");
   const items2 = [UserStore];
   const stateFromStores2 = require("initialize").useStateFromStores(items2, () => {
     currentUser = currentUser.getCurrentUser();
@@ -957,7 +1469,7 @@ export const useIsQuestEligibleForMembersListPopout = function useIsQuestEligibl
     }
     return id;
   });
-  const obj3 = require("initialize");
+  obj3 = require("initialize");
   const items3 = [QuestStore];
   const items4 = [userStatus];
   if (null != userStatus) {
@@ -985,9 +1497,52 @@ export const useIsQuestEligibleForMembersListPopout = function useIsQuestEligibl
     }
   }
   return false;
-};
-export const useQuestFormattedDate = function useQuestFormattedDate(rewardsExpireAt, arg1) {
-  _require = rewardsExpireAt;
+});
+ReactCompilerGating = fn(558);
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  const cResult = c.c(8);
+  if (cResult[0] !== arg1) {
+    let obj2 = arg1;
+    if (undefined === arg1) {
+      obj2 = { dateStyle: "short" };
+    }
+    cResult[0] = arg1;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  let toLocaleDateStringResult = globalThis;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function l() {
+      return locale.locale;
+    };
+    cResult[2] = items;
+    cResult[3] = fn;
+    let tmp7 = fn;
+    let tmp6 = items;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp6, tmp7);
+  if (null == arg0) {
+    return "";
+  } else {
+    if (cResult[4] === arg0) {
+      if (cResult[5] === tmp4) {
+      }
+    }
+    const date = new toLocaleDateStringResult.Date(arg0);
+    toLocaleDateStringResult = date.toLocaleDateString(stateFromStores, tmp4);
+    cResult[4] = arg0;
+    cResult[5] = tmp4;
+    cResult[6] = stateFromStores;
+    cResult[7] = toLocaleDateStringResult;
+  }
+}) : ((arg0) => {
+  _require = arg0;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = { dateStyle: "short" };
@@ -995,7 +1550,7 @@ export const useQuestFormattedDate = function useQuestFormattedDate(rewardsExpir
   let stateFromStores;
   const items = [LocaleStore];
   stateFromStores = require("initialize").useStateFromStores(items, () => locale.locale);
-  const items1 = [rewardsExpireAt, obj, stateFromStores];
+  const items1 = [arg0, obj, stateFromStores];
   return noop.useMemo(() => {
     let str = "";
     if (null != closure_0) {
@@ -1005,97 +1560,377 @@ export const useQuestFormattedDate = function useQuestFormattedDate(rewardsExpir
     }
     return str;
   }, items1);
-};
-export const useOnOpenGameClick = function useOnOpenGameClick(quest) {
+});
+ReactCompilerGating = fn(558);
+let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  const cResult = require("c").c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function n() {
+      return QuestStore.isProgressingOnDesktop(id.id);
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  _require = arg0;
+  const items = [QuestStore];
+  return require("initialize").useStateFromStores(items, () => QuestStore.isProgressingOnDesktop(id.id));
+});
+let closure_48 = tmp15;
+ReactCompilerGating = fn(558);
+let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== quest) {
+    const result = QuestTaskUtils.isQuestProgressingOnConsole(quest);
+    cResult[0] = quest;
+    cResult[1] = result;
+    let tmp4 = result;
+    const tmpResult = QuestTaskUtils;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((arg0) => {
+  closure_0 = arg0;
+  const items = [arg0];
+  return noop.useMemo(() => QuestTaskUtils.isQuestProgressingOnConsole(closure_0), items);
+});
+let closure_49 = tmp16;
+ReactCompilerGating = fn(558);
+let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  const cResult = require("c").c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function n() {
+      return QuestStore.getOptimisticProgress(id.id, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO);
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  if (cResult[3] !== id) {
+    const result = tmp(11636).isVideoQuestProgressing(id);
+    cResult[3] = id;
+    cResult[4] = result;
+    let tmp8 = result;
+    const tmpResult2 = tmp(11636);
+  } else {
+    tmp8 = cResult[4];
+  }
+  return tmp8;
+}) : ((arg0) => {
+  _require = arg0;
+  const items = [QuestStore];
+  const items1 = [arg0, require("initialize").useStateFromStores(items, () => QuestStore.getOptimisticProgress(id.id, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO))];
+  return noop.useMemo(() => VideoQuestUtils.isVideoQuestProgressing(closure_0), items1);
+});
+let closure_50 = tmp17;
+ReactCompilerGating = fn(558);
+let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp = closure_48(arg0);
+  const tmp2 = closure_49(arg0);
+  if (!tmp) {
+    tmp = tmp2;
+  }
+  if (!tmp) {
+    tmp = tmp3;
+  }
+  return tmp;
+}) : ((arg0) => {
+  let tmp = closure_48(arg0);
+  const tmp2 = closure_49(arg0);
+  if (!tmp) {
+    tmp = tmp2;
+  }
+  if (!tmp) {
+    tmp = tmp3;
+  }
+  return tmp;
+});
+let closure_51 = tmp18;
+ReactCompilerGating = fn(558);
+let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(11);
+  if (cResult[0] !== arg0) {
+    const fn = function o() {
+      return QuestTaskUtils.getQuestTaskDetails(closure_0);
+    };
+    cResult[0] = arg0;
+    cResult[1] = fn;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+  }
+  importDefault = tmp2;
+  if (cResult[2] !== tmp2) {
+    const tmp2Result = tmp2();
+    cResult[2] = tmp2;
+    cResult[3] = tmp2Result;
+    let tmp3 = tmp2Result;
+  } else {
+    tmp3 = cResult[3];
+  }
+  const obj = require("c");
+  const obj2 = noop;
+  [tmp6, dependencyMap] = noop.useState(tmp3);
+  if (cResult[4] !== tmp2) {
+    const fn2 = function c() {
+      return dependencyMap(closure_1());
+    };
+    cResult[4] = tmp2;
+    cResult[5] = fn2;
+    let tmp7 = fn2;
+  } else {
+    tmp7 = cResult[5];
+  }
+  asyncGeneratorStep = tmp7;
+  const tmp8 = closure_51(arg0);
+  _slicedToArray = tmp8;
+  if (cResult[6] === tmp8) {
+    if (cResult[7] === arg0) {
+      if (cResult[8] === tmp7) {
+        let tmp9 = cResult[9];
+        let tmp10 = cResult[10];
+      }
+      const effect = obj2.useEffect(tmp9, tmp10);
+      return tmp6;
+    }
+  }
+  class C {
+    constructor() {
+      tmp = closure_0;
+      userStatus = closure_0.userStatus;
+      enrolledAt = undefined;
+      if (userStatus != null) {
+        enrolledAt = userStatus.enrolledAt;
+      }
+      if (null != enrolledAt) {
+        userStatus2 = tmp.userStatus;
+        completedAt = undefined;
+        if (userStatus2 != null) {
+          completedAt = userStatus2.completedAt;
+        }
+        if (null == completedAt) {
+          userStatus3 = tmp.userStatus;
+          claimedAt = undefined;
+          if (userStatus3 != null) {
+            claimedAt = userStatus3.claimedAt;
+          }
+          if (null == claimedAt) {
+            tmp5 = closure_4;
+            if (closure_4) {
+              tmp7 = globalThis;
+              _window = window;
+              tmp8 = closure_1;
+              tmp9 = closure_2;
+              num = 1;
+              closure_0 = window.setInterval(() => {
+                closure_1_3();
+              }, closure_1(closure_2[22]).Millis.SECOND);
+              return () => {
+                clearInterval(closure_0);
+                closure_3();
+              };
+            }
+          }
+        }
+      }
+      tmp6 = closure_3();
+      return;
+    }
+  }
+  const items = [arg0, tmp8, tmp7];
+  cResult[6] = tmp8;
+  cResult[7] = arg0;
+  cResult[8] = tmp7;
+  cResult[9] = C;
+  cResult[10] = items;
+  tmp10 = items;
+  tmp9 = C;
+}) : ((arg0) => {
+  let userStatus = arg0;
+  const items = [arg0];
+  const callback = noop.useCallback(() => QuestTaskUtils.getQuestTaskDetails(closure_0), items);
+  const tmp2 = _slicedToArray(noop.useState(callback()), 2);
+  dependencyMap = tmp2[1];
+  const items1 = [callback];
+  const callback1 = noop.useCallback(() => dependencyMap(callback()), items1);
+  const tmp4 = closure_51(arg0);
+  _slicedToArray = tmp4;
+  const items2 = [arg0, tmp4, callback1];
+  const effect = noop.useEffect(() => {
+    userStatus = userStatus.userStatus;
+    let enrolledAt;
+    if (userStatus != null) {
+      enrolledAt = userStatus.enrolledAt;
+    }
+    if (null != enrolledAt) {
+      const userStatus2 = tmp.userStatus;
+      let completedAt;
+      if (userStatus2 != null) {
+        completedAt = userStatus2.completedAt;
+      }
+      if (null == completedAt) {
+        const userStatus3 = tmp.userStatus;
+        let claimedAt;
+        if (userStatus3 != null) {
+          claimedAt = userStatus3.claimedAt;
+        }
+        if (null == claimedAt) {
+          if (closure_4) {
+            const _window = window;
+            userStatus = window.setInterval(() => {
+              callback1();
+            }, callback(1095).Millis.SECOND);
+            return () => {
+              clearInterval(closure_0);
+              callback1();
+            };
+          }
+        }
+      }
+    }
+    callback1();
+  }, items2);
+  return tmp2[0];
+});
+let closure_52 = tmp19;
+ReactCompilerGating = fn(558);
+const tmp20 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== config) {
+    const thirdPartyTaskDetails = QuestTaskUtils.getThirdPartyTaskDetails(config);
+    cResult[0] = config;
+    cResult[1] = thirdPartyTaskDetails;
+    let tmp4 = thirdPartyTaskDetails;
+    const tmpResult = QuestTaskUtils;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : ((arg0) => {
+  closure_0 = arg0;
+  const items = [arg0];
+  return noop.useMemo(() => QuestTaskUtils.getThirdPartyTaskDetails(closure_0), items);
+});
+let closure_53 = tmp20;
+ReactCompilerGating = fn(558);
+let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  const cResult = quest(ctaContent[15]).c(6);
+  quest = quest.quest;
+  const content = quest.content;
+  ctaContent = quest.ctaContent;
+  const sourceQuestContent = quest.sourceQuestContent;
+  let obj = quest(ctaContent[15]);
+  const getQuestImpressionId = quest(ctaContent[31]).useGetQuestImpressionId();
+  if (cResult[0] === content) {
+    if (cResult[1] === ctaContent) {
+      if (cResult[2] === getQuestImpressionId) {
+        if (cResult[3] === quest) {
+          if (cResult[4] === sourceQuestContent) {
+            let tmp3 = cResult[5];
+          }
+          return tmp3;
+        }
+      }
+    }
+  }
+  const fn = function s() {
+    if (quest.id !== closure_2_22) {
+      obj3 = { content, ctaContent, impressionId: getQuestImpressionId(), sourceQuestContent };
+      QuestPlatformUtils.openGameLinkDirectly(tmp, obj3);
+    } else {
+      const _window = window;
+      window.open(HelpdeskUtilsDefault.getArticleURL(constants6.VIRTUAL_CURRENCY_LEARN_MORE));
+    }
+  };
+  cResult[0] = content;
+  cResult[1] = ctaContent;
+  cResult[2] = getQuestImpressionId;
+  cResult[3] = quest;
+  cResult[4] = sourceQuestContent;
+  cResult[5] = fn;
+  tmp3 = fn;
+}) : ((quest) => {
   quest = quest.quest;
   const content = quest.content;
   const ctaContent = quest.ctaContent;
   const sourceQuestContent = quest.sourceQuestContent;
-  const getQuestImpressionId = quest(ctaContent[29]).useGetQuestImpressionId();
+  const getQuestImpressionId = quest(ctaContent[31]).useGetQuestImpressionId();
   const items = [quest, content, ctaContent, getQuestImpressionId, sourceQuestContent];
   return noop.useCallback(() => {
-    if (quest.id !== __initData2) {
-      const obj3 = { content, ctaContent, impressionId: getQuestImpressionId(), sourceQuestContent };
+    if (quest.id !== closure_2_22) {
+      obj3 = { content, ctaContent, impressionId: getQuestImpressionId(), sourceQuestContent };
       QuestPlatformUtils.openGameLinkDirectly(tmp, obj3);
     } else {
       const _window = window;
       window.open(HelpdeskUtilsDefault.getArticleURL(constants6.VIRTUAL_CURRENCY_LEARN_MORE));
     }
   }, items);
-};
-export const useIsQuestProgressingOnDesktop = function useIsQuestProgressingOnDesktop(arg0) {
-  _require = arg0;
-  const items = [QuestStore];
-  return require("initialize").useStateFromStores(items, () => QuestStore.isProgressingOnDesktop(quest.id));
-};
-export const useIsQuestProgressingOnConsole = function useIsQuestProgressingOnConsole(arg0) {
-  closure_0 = arg0;
-  const items = [arg0];
-  return noop.useMemo(() => QuestTaskUtils.isQuestProgressingOnConsole(closure_0), items);
-};
-export const useIsQuestProgressingVideoQuest = function useIsQuestProgressingVideoQuest(arg0) {
-  _require = arg0;
-  const items = [QuestStore];
-  const items1 = [arg0, require("initialize").useStateFromStores(items, () => QuestStore.getOptimisticProgress(quest.id, FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO))];
-  return noop.useMemo(() => VideoQuestUtils.isVideoQuestProgressing(closure_0), items1);
-};
-export { useIsQuestProgressing };
-export { useQuestTaskDetails };
-export const useThirdPartyTaskDetails = function useThirdPartyTaskDetails(quest) {
-  closure_0 = quest;
-  const items = [quest];
-  return noop.useMemo(() => QuestTaskUtils.getThirdPartyTaskDetails(closure_0), items);
-};
-export const useConnectedConsoleLinkOnClick = function useConnectedConsoleLinkOnClick(quest) {
-  quest = quest.quest;
-  ({ questContent: importDefault, sourceQuestContent: dependencyMap } = quest);
-  c3 = undefined;
-  closure_4 = undefined;
-  const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = quest(504).useStateFromStoresObject(items, () => ({ fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() }));
-  ({ fetching, accounts } = stateFromStoresObject);
-  closure_129_0 = accounts;
-  const items1 = [accounts];
-  const memo = noop.useMemo(() => {
-    const found = accounts.filter((revoked) => false === revoked.revoked);
-    const found1 = found.filter((type) => type.type === constants.XBOX);
-    const found2 = found.filter((type) => type.type === constants.PLAYSTATION);
-    return { xboxAccounts: found1, playstationAccounts: found2, xboxAndPlaystationAccounts: found1.concat(found2) };
-  }, items1);
-  ({ xboxAccounts, playstationAccounts } = memo);
-  let obj = quest(504);
-  const tmp = quest;
-  const tmp5 = useIsQuestProgressing(quest);
-  let isConsoleQuestResult = quest(7960).isConsoleQuest(quest);
-  if (isConsoleQuestResult) {
-    isConsoleQuestResult = 0 === memo.xboxAndPlaystationAccounts.length;
-  }
-  if (isConsoleQuestResult) {
-    isConsoleQuestResult = !tmp5;
-  }
-  c3 = isConsoleQuestResult;
-  obj2 = quest(7960);
-  closure_4 = tmp(11741).useGetQuestImpressionId();
-  return () => {
-    const obj = QuestPlatformUtils;
-    if (c3) {
-      obj2 = { quest };
-      const obj3 = { content, ctaContent: AnalyticsTypes.QuestContentCTA.CONNECT_CONSOLE_LINK, impressionId: closure_4(), sourceQuestContent };
-      const result = obj.openAddConsoleConnectionModal(obj2, obj3);
-    } else {
-      const obj4 = { quest };
-      const obj5 = { content, ctaContent: AnalyticsTypes.QuestContentCTA.VIEW_CONSOLE_CONNECTIONS_LINK, impressionId: closure_4(), sourceQuestContent };
-      const result1 = obj.openConsoleConnectionSettings(obj4, obj5);
+});
+ReactCompilerGating = fn(558);
+let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(4);
+  if (cResult[0] !== arg0) {
+    const _Set = Set;
+    const set = new Set();
+    const tmp8 = arg0[Symbol.iterator]();
+    while (tmp8 !== undefined) {
+      obj3 = QuestTaskUtils;
+      let consoleApplicationId = obj3.getConsoleApplicationId(tmp11);
+      if (null != consoleApplicationId) {
+        let addResult = set.add(tmp16);
+      }
+      continue;
     }
-  };
-};
-export const useGetOrFetchApplicationForConsoleQuests = function useGetOrFetchApplicationForConsoleQuests(arg0) {
-  closure_0 = arg0;
+    cResult[0] = arg0;
+    cResult[1] = set;
+    let tmp2 = set;
+  } else {
+    tmp2 = cResult[1];
+  }
+  if (cResult[2] !== tmp2) {
+    const _Array = Array;
+    const arr = Array.from(tmp2);
+    cResult[2] = tmp2;
+    cResult[3] = arr;
+    let tmp19 = arr;
+  } else {
+    tmp19 = cResult[3];
+  }
+  return useGetOrFetchApplicationsDefault(tmp19);
+}) : ((arg0) => {
+  dependencyMap = arg0;
   const items = [arg0];
   const memo = noop.useMemo(() => {
     const set = new Set();
     while (tmp2 !== undefined) {
-      obj2 = QuestTaskUtils;
+      let obj2 = QuestTaskUtils;
       let consoleApplicationId = obj2.getConsoleApplicationId(tmp3);
       if (null != consoleApplicationId) {
         let addResult = set.add(tmp7);
@@ -1105,48 +1940,120 @@ export const useGetOrFetchApplicationForConsoleQuests = function useGetOrFetchAp
     return Array.from(set);
   }, items);
   return useGetOrFetchApplicationsDefault(memo);
-};
-export const useQuestForMemberListSocialEntryPoint = function useQuestForMemberListSocialEntryPoint(arg0) {
-  _require = arg0;
-  const items = [QuestStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => quests.quests);
-  const arr = Array.from(stateFromStores.values());
-  closure_129_0 = arr;
-  const items1 = [arr];
-  const memo = noop.useMemo(() => {
-    const set = new Set();
-    while (tmp2 !== undefined) {
-      obj2 = QuestTaskUtils;
-      let consoleApplicationId = obj2.getConsoleApplicationId(tmp3);
-      if (null != consoleApplicationId) {
-        let addResult = set.add(tmp7);
-      }
-      continue;
-    }
-    return Array.from(set);
-  }, items1);
-  const items2 = [arg0, stateFromStores, stateFromStores(7413)(memo)];
-  const memo1 = noop.useMemo(() => {
-    const result = utils_QuestUtils.filterQuestsForSocialEntrypoints(stateFromStores, value2);
-    return QuestMatchingUtils.getQuestsFromActivities(result, closure_0);
-  }, items2);
-  closure_130_0 = memo1;
-  let obj = require("initialize");
-  const items3 = [QuestStore];
-  const items4 = [memo1];
-  let tmp4 = null;
-  if (!obj3.useStateFromStores(items3, () => {
-    let isQuestExpiredResult = null != c0;
-    if (isQuestExpiredResult) {
-      isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
-    }
-    return isQuestExpiredResult;
-  }, items4)) {
-    tmp4 = memo1;
+});
+let closure_54 = tmp22;
+ReactCompilerGating = fn(558);
+let tmp21 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  const cResult = quest(sourceQuestContent[15]).c(8);
+  quest = quest.quest;
+  const questContent = quest.questContent;
+  sourceQuestContent = quest.sourceQuestContent;
+  if (cResult[0] !== quest) {
+    let obj2 = { quest };
+    cResult[0] = quest;
+    cResult[1] = obj2;
+    let tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
   }
-  return tmp4;
-};
-export const useQuestCollectibles = function useQuestCollectibles(config) {
+  const tmp5 = closure_56(tmp4);
+  closure_3 = tmp5;
+  let obj = quest(sourceQuestContent[15]);
+  const getQuestImpressionId = quest(sourceQuestContent[31]).useGetQuestImpressionId();
+  if (cResult[2] === getQuestImpressionId) {
+    if (cResult[3] === quest) {
+      if (cResult[4] === questContent) {
+        if (cResult[5] === sourceQuestContent) {
+          if (cResult[6] === tmp5) {
+            let tmp7 = cResult[7];
+          }
+          return tmp7;
+        }
+      }
+    }
+  }
+  const fn = function l() {
+    const obj = QuestPlatformUtils;
+    if (closure_3) {
+      const obj2 = { quest };
+      obj3 = { content: questContent, ctaContent: AnalyticsTypes.QuestContentCTA.CONNECT_CONSOLE_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
+      const result = obj.openAddConsoleConnectionModal(obj2, obj3);
+    } else {
+      const obj4 = { quest };
+      const obj5 = { content: questContent, ctaContent: AnalyticsTypes.QuestContentCTA.VIEW_CONSOLE_CONNECTIONS_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
+      const result1 = obj.openConsoleConnectionSettings(obj4, obj5);
+    }
+  };
+  cResult[2] = getQuestImpressionId;
+  cResult[3] = quest;
+  cResult[4] = questContent;
+  cResult[5] = sourceQuestContent;
+  cResult[6] = tmp5;
+  cResult[7] = fn;
+  tmp7 = fn;
+}) : ((quest) => {
+  quest = quest.quest;
+  ({ questContent: importDefault, sourceQuestContent: dependencyMap } = quest);
+  closure_3 = closure_56({ quest });
+  closure_4 = quest(11610).useGetQuestImpressionId();
+  return () => {
+    const obj = QuestPlatformUtils;
+    if (closure_3) {
+      const obj2 = { quest };
+      obj3 = { content, ctaContent: AnalyticsTypes.QuestContentCTA.CONNECT_CONSOLE_LINK, impressionId: closure_4(), sourceQuestContent };
+      const result = obj.openAddConsoleConnectionModal(obj2, obj3);
+    } else {
+      const obj4 = { quest };
+      const obj5 = { content, ctaContent: AnalyticsTypes.QuestContentCTA.VIEW_CONSOLE_CONNECTIONS_LINK, impressionId: closure_4(), sourceQuestContent };
+      const result1 = obj.openConsoleConnectionSettings(obj4, obj5);
+    }
+  };
+});
+ReactCompilerGating = fn(558);
+let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+  const cResult = c.c(8);
+  if (cResult[0] !== config) {
+    const result = tmp(10575).hasCollectiblesQuestReward(config);
+    cResult[0] = config;
+    cResult[1] = result;
+    let tmp4 = result;
+    const tmpResult = tmp(10575);
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== config) {
+    const defaultReward = tmp(10580).getDefaultReward(config);
+    cResult[2] = config;
+    cResult[3] = defaultReward;
+    let tmp6 = defaultReward;
+    const tmpResult3 = tmp(10580);
+  } else {
+    tmp6 = cResult[3];
+  }
+  const fetchCollectiblesProduct = useFetchCollectiblesProduct.useFetchCollectiblesProduct(tmp6.skuId);
+  ({ product, isFetching } = fetchCollectiblesProduct);
+  let first;
+  if (product != null) {
+    const items = product.items;
+    if (items != null) {
+      first = items[0];
+    }
+  }
+  if (cResult[4] === first) {
+    if (cResult[5] === tmp4) {
+      if (cResult[6] === isFetching) {
+        let tmp10 = cResult[7];
+      }
+      return tmp10;
+    }
+  }
+  const obj2 = { hasQuestCollectibles: tmp4, avatarDecoration: first, isFetching };
+  cResult[4] = first;
+  cResult[5] = tmp4;
+  cResult[6] = isFetching;
+  cResult[7] = obj2;
+  tmp10 = obj2;
+}) : ((config) => {
   const hasQuestCollectibles = QuestRewardUtils.hasCollectiblesQuestReward(config);
   const defaultReward = QuestCopyUtils.getDefaultReward(config);
   const isFetching = useFetchCollectiblesProduct.useFetchCollectiblesProduct(defaultReward.skuId);
@@ -1159,33 +2066,101 @@ export const useQuestCollectibles = function useQuestCollectibles(config) {
     }
   }
   return { hasQuestCollectibles, avatarDecoration, isFetching: isFetching.isFetching };
-};
-export const useQuestPreviewActions = function useQuestPreviewActions(id) {
-  closure_0 = id;
-  let items = [id];
-  return noop.useMemo(() => ({
-    handleComplete() {
-      return closure_0(11542).completeQuestPreview(id);
-    },
-    handleProgress(random) {
-      return closure_0(11542).completeQuestPreview(id, random);
-    },
-    handleResetStatusClick() {
-      return closure_0(11542).resetQuestPreviewStatus(id);
-    },
-    handleResetDismissibilityClick() {
-      return closure_0(11542).resetQuestDismissibilityStatus(id);
-    },
-    handleOverridePreviewClick(placement) {
-      return closure_0(11542).overrideQuestForPlacement(placement, id);
-    },
-    handleResetHasBeenSeenClick() {
-      const items = [id];
-      return closure_0(11542).markAdContentUnseen(closure_0(5668).AdCreativeType.QUEST, items);
+});
+ReactCompilerGating = fn(558);
+let tmp25 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(18);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConnectedAccountsStore];
+    const fn = function s() {
+      return { fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStoresObject = initialize.useStateFromStoresObject(tmp4, tmp5);
+  ({ fetching, accounts } = stateFromStoresObject);
+  if (cResult[2] !== accounts) {
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor(arg0) {
+          return false === arg0.revoked;
+        }
+      }
+      cResult[6] = E;
+      const tmp11 = E;
+    } else {
+      class E {
+        constructor(arg0) {
+          return false === arg0.revoked;
+        }
+      }
     }
-  }), items);
-};
-export const useConnectedAccounts = function useConnectedAccounts() {
+    const found = accounts.filter(tmp11);
+    const _Symbol2 = Symbol;
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+      class E {
+        constructor(arg0) {
+          return false === arg0.revoked;
+        }
+      }
+      cResult[7] = tmp13;
+      const tmp12 = tmp13;
+    } else {
+      class E {
+        constructor(arg0) {
+          return false === arg0.revoked;
+        }
+      }
+    }
+    const found1 = found.filter(tmp12);
+    const _Symbol3 = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor(arg0) {
+          return arg0.type === closure_1_25.PLAYSTATION;
+        }
+      }
+      cResult[8] = C;
+      const tmp14 = C;
+    } else {
+      class C {
+        constructor(arg0) {
+          return arg0.type === closure_1_25.PLAYSTATION;
+        }
+      }
+    }
+    const found2 = found.filter(tmp14);
+    const combined = found1.concat(found2);
+    cResult[2] = accounts;
+    cResult[3] = found2;
+    cResult[4] = combined;
+    cResult[5] = found1;
+  } else {
+    class C {
+      constructor(arg0) {
+        return arg0.type === closure_1_25.PLAYSTATION;
+      }
+    }
+    if (cResult[9] === tmp8) {
+      class C {
+        constructor(arg0) {
+          return arg0.type === closure_1_25.PLAYSTATION;
+        }
+      }
+    }
+    const obj2 = { xboxAccounts: cResult[5], playstationAccounts: tmp8, xboxAndPlaystationAccounts: cResult[4] };
+    cResult[9] = tmp8;
+    cResult[10] = cResult[5];
+    cResult[11] = cResult[4];
+    cResult[12] = obj2;
+  }
+}) : (() => {
   const items = [ConnectedAccountsStore];
   const stateFromStoresObject = accounts(504).useStateFromStoresObject(items, () => ({ fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() }));
   accounts = stateFromStoresObject.accounts;
@@ -1197,7 +2172,2134 @@ export const useConnectedAccounts = function useConnectedAccounts() {
     return { xboxAccounts: found1, playstationAccounts: found2, xboxAndPlaystationAccounts: found1.concat(found2) };
   }, items1);
   return { fetching: stateFromStoresObject.fetching, xboxAccounts: memo.xboxAccounts, playstationAccounts: memo.playstationAccounts, xboxAndPlaystationAccounts: memo.xboxAndPlaystationAccounts };
+});
+let closure_55 = tmp25;
+ReactCompilerGating = fn(558);
+let tmp26 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  const cResult = c.c(4);
+  quest = quest.quest;
+  const tmp4 = closure_51(quest);
+  const tmp5 = 0 === closure_55().xboxAndPlaystationAccounts.length;
+  if (cResult[0] === tmp5) {
+    if (cResult[1] === tmp4) {
+      if (cResult[2] === quest) {
+        let tmp6 = cResult[3];
+      }
+      return tmp6;
+    }
+  }
+  const tmp7 = QuestTaskUtils.isConsoleQuest(quest) && tmp5 && !tmp4;
+  cResult[0] = tmp5;
+  cResult[1] = tmp4;
+  cResult[2] = quest;
+  cResult[3] = tmp7;
+  tmp6 = tmp7;
+}) : ((quest) => {
+  quest = quest.quest;
+  const tmp = closure_51(quest);
+  let isConsoleQuestResult = QuestTaskUtils.isConsoleQuest(quest);
+  if (isConsoleQuestResult) {
+    isConsoleQuestResult = 0 === closure_55().xboxAndPlaystationAccounts.length;
+  }
+  if (isConsoleQuestResult) {
+    isConsoleQuestResult = !tmp;
+  }
+  return isConsoleQuestResult;
+});
+let closure_56 = tmp26;
+ReactCompilerGating = fn(558);
+const obj27 = { UNACCEPTED: 0, [0]: "UNACCEPTED", ACCEPTED: 1, [1]: "ACCEPTED", IN_PROGRESS: 2, [2]: "IN_PROGRESS", COMPLETED: 3, [3]: "COMPLETED", CLAIMED: 4, [4]: "CLAIMED" };
+let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(2);
+  if (cResult[0] !== arg0) {
+    const obj2 = {
+      handleComplete() {
+          return QuestActionCreators.completeQuestPreview(closure_0);
+        },
+      handleProgress(random) {
+          return QuestActionCreators.completeQuestPreview(closure_0, random);
+        },
+      handleResetStatusClick() {
+          return QuestActionCreators.resetQuestPreviewStatus(closure_0);
+        },
+      handleResetDismissibilityClick() {
+          return QuestActionCreators.resetQuestDismissibilityStatus(closure_0);
+        },
+      handleOverridePreviewClick(placement) {
+          return QuestActionCreators.overrideQuestForPlacement(placement, closure_0);
+        },
+      handleResetHasBeenSeenClick() {
+          const items = [closure_0];
+          return QuestActionCreators.markAdContentUnseen(AdCreativeType.AdCreativeType.QUEST, items);
+        }
+    };
+    cResult[0] = arg0;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  return tmp2;
+}) : ((arg0) => {
+  closure_0 = arg0;
+  let items = [arg0];
+  return noop.useMemo(() => ({
+    handleComplete() {
+      return closure_0(10564).completeQuestPreview(closure_1_0);
+    },
+    handleProgress(random) {
+      return closure_0(10564).completeQuestPreview(closure_1_0, random);
+    },
+    handleResetStatusClick() {
+      return closure_0(10564).resetQuestPreviewStatus(closure_1_0);
+    },
+    handleResetDismissibilityClick() {
+      return closure_0(10564).resetQuestDismissibilityStatus(closure_1_0);
+    },
+    handleOverridePreviewClick(placement) {
+      return closure_0(10564).overrideQuestForPlacement(placement, closure_1_0);
+    },
+    handleResetHasBeenSeenClick() {
+      const items = [closure_1_0];
+      return closure_0(10564).markAdContentUnseen(closure_0(5670).AdCreativeType.QUEST, items);
+    }
+  }), items);
+});
+ReactCompilerGating = fn(558);
+const tmp27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(9);
+  const tmp4 = closure_55();
+  if (cResult[0] !== tmp4.playstationAccounts.length > 0) {
+    const articleURL = HelpdeskUtilsDefault.getArticleURL(constants6.QUEST_HOW_TO_PLAYSTATION);
+    const articleURL1 = HelpdeskUtilsDefault.getArticleURL(constants6.QUEST_HOW_TO_XBOX);
+    const intl = tmp(1119).intl;
+    const obj4 = { psHelpdeskArticle: articleURL, xboxHelpdeskArticle: articleURL1 };
+    const formatResult = intl.format(tmp(1119).t.beN4DG, obj4);
+    const intl2 = tmp(1119).intl;
+    let tmp16 = articleURL1;
+    if (tmp6) {
+      tmp16 = articleURL;
+    }
+    const obj5 = { helpdeskArticle: tmp16 };
+    const formatResult1 = intl2.format(tmp(1119).t.HVS7nh, obj5);
+    cResult[0] = tmp6;
+    cResult[1] = formatResult;
+    cResult[2] = articleURL;
+    cResult[3] = formatResult1;
+    cResult[4] = articleURL1;
+    let tmp10 = articleURL1;
+    let tmp9 = formatResult1;
+    let tmp8 = articleURL;
+    let tmp7 = formatResult;
+  } else {
+    tmp7 = cResult[1];
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+    tmp10 = cResult[4];
+  }
+  if (tmp4.xboxAccounts.length <= 0) {
+    let tmp18 = tmp7;
+    if (!tmp5) {
+      tmp18 = tmp7;
+    }
+    if (cResult[5] === tmp8) {
+      if (cResult[6] === tmp18) {
+        if (cResult[7] === tmp10) {
+          let tmp19 = cResult[8];
+        }
+        return tmp19;
+      }
+    }
+    const obj6 = { message: tmp18, xboxURL: tmp10, playstationURL: tmp8 };
+    cResult[5] = tmp8;
+    cResult[6] = tmp18;
+    cResult[7] = tmp10;
+    cResult[8] = obj6;
+    tmp19 = obj6;
+  }
+  tmp18 = tmp9;
+}) : (() => {
+  const tmp = closure_55();
+  const articleURL = HelpdeskUtilsDefault.getArticleURL(constants6.QUEST_HOW_TO_PLAYSTATION);
+  const articleURL1 = HelpdeskUtilsDefault.getArticleURL(constants6.QUEST_HOW_TO_XBOX);
+  const intl = util.intl;
+  const formatResult = intl.format(util.t.beN4DG, { psHelpdeskArticle: articleURL, xboxHelpdeskArticle: articleURL1 });
+  const intl2 = util.intl;
+  let tmp7 = articleURL1;
+  if (tmp.playstationAccounts.length > 0) {
+    tmp7 = articleURL;
+  }
+  if (tmp.xboxAccounts.length <= 0) {
+    let tmp9 = formatResult;
+    if (!tmp2) {
+      tmp9 = formatResult;
+    }
+    obj3 = { message: tmp9, xboxURL: articleURL1, playstationURL: articleURL };
+    return obj3;
+  }
+  tmp9 = intl2.format(util.t.HVS7nh, { helpdeskArticle: tmp7 });
+});
+ReactCompilerGating = fn(558);
+let tmp28 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+  userStatus = userStatus.userStatus;
+  let enrolledAt;
+  if (userStatus != null) {
+    enrolledAt = userStatus.enrolledAt;
+  }
+  const userStatus2 = userStatus.userStatus;
+  let completedAt;
+  if (userStatus2 != null) {
+    completedAt = userStatus2.completedAt;
+  }
+  const userStatus3 = userStatus.userStatus;
+  let claimedAt;
+  if (userStatus3 != null) {
+    claimedAt = userStatus3.claimedAt;
+  }
+  if (tmp6) {
+    let IN_PROGRESS = obj27.CLAIMED;
+  } else if (tmp4) {
+    IN_PROGRESS = obj27.COMPLETED;
+  } else {
+    if (tmp7) {
+      if (tmp2) {
+        IN_PROGRESS = obj27.IN_PROGRESS;
+      }
+    }
+    IN_PROGRESS = tmp2 ? tmp8.ACCEPTED : tmp8.UNACCEPTED;
+  }
+  return IN_PROGRESS;
+}) : ((userStatus) => {
+  userStatus = userStatus.userStatus;
+  let enrolledAt;
+  if (userStatus != null) {
+    enrolledAt = userStatus.enrolledAt;
+  }
+  const userStatus2 = userStatus.userStatus;
+  let completedAt;
+  if (userStatus2 != null) {
+    completedAt = userStatus2.completedAt;
+  }
+  const userStatus3 = userStatus.userStatus;
+  let claimedAt;
+  if (userStatus3 != null) {
+    claimedAt = userStatus3.claimedAt;
+  }
+  if (tmp6) {
+    let IN_PROGRESS = obj27.CLAIMED;
+  } else if (tmp4) {
+    IN_PROGRESS = obj27.COMPLETED;
+  } else {
+    if (tmp7) {
+      if (tmp2) {
+        IN_PROGRESS = obj27.IN_PROGRESS;
+      }
+    }
+    IN_PROGRESS = tmp2 ? tmp8.ACCEPTED : tmp8.UNACCEPTED;
+  }
+  return IN_PROGRESS;
+});
+ReactCompilerGating = fn(558);
+let tmp30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(8);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function n() {
+      return QuestStore.selectedTaskPlatform(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  if (cResult[3] !== arg0) {
+    const fn2 = function u(platform) {
+      return QuestActionCreators.selectTaskPlatform(closure_0, platform);
+    };
+    cResult[3] = arg0;
+    cResult[4] = fn2;
+    let tmp8 = fn2;
+  } else {
+    tmp8 = cResult[4];
+  }
+  if (cResult[5] === tmp8) {
+    if (cResult[6] === stateFromStores) {
+      let tmp9 = cResult[7];
+    }
+    return tmp9;
+  }
+  const items1 = [stateFromStores, tmp8];
+  cResult[5] = tmp8;
+  cResult[6] = stateFromStores;
+  cResult[7] = items1;
+  tmp9 = items1;
+}) : ((arg0) => {
+  _require = arg0;
+  const items = [QuestStore];
+  const items1 = [require("initialize").useStateFromStores(items, () => QuestStore.selectedTaskPlatform(closure_0)), ];
+  const items2 = [arg0];
+  items1[1] = noop.useCallback((platform) => QuestActionCreators.selectTaskPlatform(closure_0, platform), items2);
+  return items1;
+});
+let closure_58 = tmp30;
+ReactCompilerGating = fn(558);
+const tmp31 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+  let withResult16 = _require;
+  let exhaustiveResult1 = dependencyMap;
+  const cResult = require("c").c(37);
+  const obj2 = require("c");
+  [tmp4, r10016] = closure_58(id.id);
+  if (cResult[0] !== id) {
+    const result = withResult16(11620).supportedTaskPlatforms(id);
+    cResult[0] = id;
+    cResult[1] = result;
+    obj3 = result;
+    const withResult16Result = withResult16(11620);
+  } else {
+    obj3 = cResult[1];
+  }
+  if (cResult[2] !== obj3) {
+    const hasItem = obj3.includes(constants.DESKTOP);
+    cResult[2] = obj3;
+    cResult[3] = hasItem;
+    let tmp6 = hasItem;
+  } else {
+    tmp6 = cResult[3];
+  }
+  _require = tmp6;
+  if (cResult[4] !== obj3) {
+    const hasItem1 = obj3.includes(constants.CONSOLE);
+    cResult[4] = obj3;
+    cResult[5] = hasItem1;
+    let tmp9 = hasItem1;
+  } else {
+    tmp9 = cResult[5];
+  }
+  closure_1 = tmp9;
+  const tmp3 = _slicedToArray(closure_58(id.id), 2);
+  if (cResult[6] !== arg1) {
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn = function _() {
+        return null;
+      };
+      cResult[8] = fn;
+      let PLAY_ON_DESKTOP = fn;
+    } else {
+      PLAY_ON_DESKTOP = cResult[8];
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+      class P {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[9] = P;
+      let PLAY_ACTIVITY = P;
+    } else {
+      class P {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol3 = Symbol;
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class Q {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[10] = Q;
+      let WATCH_VIDEO = Q;
+    } else {
+      class Q {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol4 = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class Q {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[11] = tmp16;
+      let WATCH_VIDEO_ON_MOBILE = tmp16;
+    } else {
+      class Q {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol5 = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class Q {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[12] = tmp17;
+      let STREAM_ON_DESKTOP = tmp17;
+    } else {
+      class Q {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol6 = Symbol;
+    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+      class O {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[13] = O;
+      let PLAY_ON_XBOX = O;
+    } else {
+      class O {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol7 = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class A {
+        constructor() {
+          return closure_1_14.CONSOLE;
+        }
+      }
+      cResult[14] = A;
+      let PLAY_ON_PLAYSTATION = A;
+    } else {
+      class A {
+        constructor() {
+          return closure_1_14.CONSOLE;
+        }
+      }
+    }
+    const _Symbol8 = Symbol;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      class A {
+        constructor() {
+          return closure_1_14.CONSOLE;
+        }
+      }
+      cResult[15] = tmp18;
+      let ACHIEVEMENT_IN_GAME = tmp18;
+    } else {
+      class A {
+        constructor() {
+          return closure_1_14.CONSOLE;
+        }
+      }
+    }
+    const _Symbol9 = Symbol;
+    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+      class F {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[16] = F;
+      let ACHIEVEMENT_IN_ACTIVITY = F;
+    } else {
+      class F {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol10 = Symbol;
+    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
+      class I {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      cResult[17] = I;
+      const tmp19 = I;
+    } else {
+      class I {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const match = withResult16(4943).match(arg1);
+    const str2 = withResult16(4943);
+    const obj = { taskType: null };
+    PLAY_ON_DESKTOP = withResult16(5671).FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP;
+    obj.taskType = PLAY_ON_DESKTOP;
+    const withResult = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP);
+    const obj4 = { taskType: null };
+    PLAY_ACTIVITY = withResult16(5671).FirstPartyQuestTaskTypes.PLAY_ACTIVITY;
+    obj4.taskType = PLAY_ACTIVITY;
+    const withResult1 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY);
+    const obj5 = { taskType: null };
+    WATCH_VIDEO = withResult16(5671).FirstPartyQuestTaskTypes.WATCH_VIDEO;
+    obj5.taskType = WATCH_VIDEO;
+    const withResult2 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO);
+    const obj6 = { taskType: null };
+    WATCH_VIDEO_ON_MOBILE = withResult16(5671).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE;
+    obj6.taskType = WATCH_VIDEO_ON_MOBILE;
+    const withResult3 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE);
+    const obj7 = { taskType: null };
+    STREAM_ON_DESKTOP = withResult16(5671).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP;
+    obj7.taskType = STREAM_ON_DESKTOP;
+    const withResult4 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP);
+    const obj8 = { taskType: null };
+    PLAY_ON_XBOX = withResult16(5671).FirstPartyQuestTaskTypes.PLAY_ON_XBOX;
+    obj8.taskType = PLAY_ON_XBOX;
+    const withResult5 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP).with(obj7, PLAY_ON_XBOX);
+    const obj9 = { taskType: null };
+    PLAY_ON_PLAYSTATION = withResult16(5671).FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION;
+    obj9.taskType = PLAY_ON_PLAYSTATION;
+    const withResult6 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP).with(obj7, PLAY_ON_XBOX).with(obj8, PLAY_ON_PLAYSTATION);
+    const obj10 = { taskType: null };
+    ACHIEVEMENT_IN_GAME = withResult16(5671).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME;
+    obj10.taskType = ACHIEVEMENT_IN_GAME;
+    const withResult7 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP).with(obj7, PLAY_ON_XBOX).with(obj8, PLAY_ON_PLAYSTATION).with(obj9, ACHIEVEMENT_IN_GAME);
+    const obj11 = { taskType: null };
+    ACHIEVEMENT_IN_ACTIVITY = withResult16(5671).FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY;
+    obj11.taskType = ACHIEVEMENT_IN_ACTIVITY;
+    const withResult8 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP).with(obj7, PLAY_ON_XBOX).with(obj8, PLAY_ON_PLAYSTATION).with(obj9, ACHIEVEMENT_IN_GAME).with(obj10, ACHIEVEMENT_IN_ACTIVITY);
+    const exhaustiveResult = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP).with(obj7, PLAY_ON_XBOX).with(obj8, PLAY_ON_PLAYSTATION).with(obj9, ACHIEVEMENT_IN_GAME).with(obj10, ACHIEVEMENT_IN_ACTIVITY).with(obj11, tmp19).exhaustive();
+    cResult[6] = arg1;
+    cResult[7] = exhaustiveResult;
+    const withResult9 = match.with({ percentComplete: 0 }, PLAY_ON_DESKTOP).with(obj, PLAY_ACTIVITY).with(obj4, WATCH_VIDEO).with(obj5, WATCH_VIDEO_ON_MOBILE).with(obj6, STREAM_ON_DESKTOP).with(obj7, PLAY_ON_XBOX).with(obj8, PLAY_ON_PLAYSTATION).with(obj9, ACHIEVEMENT_IN_GAME).with(obj10, ACHIEVEMENT_IN_ACTIVITY).with(obj11, tmp19);
+  } else {
+    class I {
+      constructor() {
+        return closure_1_14.DESKTOP;
+      }
+    }
+    if (tmp12) {
+      class I {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      let CONSOLE = constants.DESKTOP;
+    } else {
+      class I {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+      if (tmp13) {
+        class I {
+          constructor() {
+            return closure_1_14.DESKTOP;
+          }
+        }
+        CONSOLE = constants.CONSOLE;
+      }
+    }
+    if (cResult[18] === CONSOLE) {
+      class I {
+        constructor() {
+          return closure_1_14.DESKTOP;
+        }
+      }
+    }
+    const _Symbol11 = Symbol;
+    if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
+      class N {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+      cResult[24] = N;
+      let DESKTOP = N;
+    } else {
+      class N {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+    }
+    const _Symbol12 = Symbol;
+    if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+      class L {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.DESKTOP;
+        }
+      }
+      cResult[25] = L;
+      let CONSOLE2 = L;
+    } else {
+      class L {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.DESKTOP;
+        }
+      }
+    }
+    const _Symbol13 = Symbol;
+    if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+      class M {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+      cResult[26] = M;
+      let DESKTOP2 = M;
+    } else {
+      class M {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+    }
+    const _Symbol14 = Symbol;
+    if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+      class M {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+      cResult[27] = tmp24;
+    } else {
+      class M {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+    }
+    const _Symbol15 = Symbol;
+    if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+      cResult[28] = H;
+      const tmp25 = H;
+    } else {
+      class H {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+    }
+    const _Symbol16 = Symbol;
+    if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+      cResult[29] = tmp27;
+      const tmp26 = tmp27;
+    } else {
+      class H {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+    }
+    if (cResult[30] === tmp9) {
+      class H {
+        constructor() {
+          return closure_0(closure_1_2[46]).TaskPlatformScreen.CONSOLE;
+        }
+      }
+      const obj12 = { lastPlatformProgress: tmp14, currentProgressingPlatform: CONSOLE, selectedPlatform: tmp4 };
+      const match1 = withResult16(4943).match(obj12);
+      const obj13 = { currentProgressingPlatform: constants.CONSOLE };
+      const str4 = withResult16(4943);
+      const obj14 = { currentProgressingPlatform: null };
+      DESKTOP = constants.DESKTOP;
+      obj14.currentProgressingPlatform = DESKTOP;
+      const withResult10 = match1.with(obj13, DESKTOP);
+      const obj15 = { currentProgressingPlatform: null, lastPlatformProgress: null };
+      CONSOLE2 = constants.CONSOLE;
+      obj15.lastPlatformProgress = CONSOLE2;
+      const withResult11 = match1.with(obj13, DESKTOP).with(obj14, CONSOLE2);
+      const obj16 = { currentProgressingPlatform: null, lastPlatformProgress: null };
+      DESKTOP2 = constants.DESKTOP;
+      obj16.lastPlatformProgress = DESKTOP2;
+      const withResult12 = match1.with(obj13, DESKTOP).with(obj14, CONSOLE2).with(obj15, DESKTOP2);
+      const obj17 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null };
+      class B {
+        constructor() {
+          tmp = closure_1;
+          if (closure_1) {
+            tmp2 = closure_0;
+            if (closure_0) {
+              tmp3 = closure_0;
+              tmp4 = closure_2;
+              SELECT = closure_0(closure_2[46]).TaskPlatformScreen.SELECT;
+            }
+            return SELECT;
+          }
+          TaskPlatformScreen = closure_0(closure_2[46]).TaskPlatformScreen;
+          SELECT = tmp ? TaskPlatformScreen.CONSOLE : TaskPlatformScreen.DESKTOP;
+          return;
+        }
+      }
+      obj17.selectedPlatform = tmp23;
+      const withResult13 = match1.with(obj13, DESKTOP).with(obj14, CONSOLE2).with(obj15, DESKTOP2).with(obj16, tmp23);
+      const obj18 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP };
+      const withResult14 = match1.with(obj13, DESKTOP).with(obj14, CONSOLE2).with(obj15, DESKTOP2).with(obj16, tmp23).with(obj17, tmp25);
+      withResult16 = match1.with(obj13, DESKTOP).with(obj14, CONSOLE2).with(obj15, DESKTOP2).with(obj16, tmp23).with(obj17, tmp25).with(obj18, tmp26).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null }, tmp28);
+      exhaustiveResult1 = withResult16.exhaustive();
+      cResult[18] = CONSOLE;
+      cResult[19] = tmp9;
+      cResult[20] = tmp6;
+      cResult[21] = tmp14;
+      cResult[22] = tmp4;
+      cResult[23] = exhaustiveResult1;
+      const withResult15 = match1.with(obj13, DESKTOP).with(obj14, CONSOLE2).with(obj15, DESKTOP2).with(obj16, tmp23).with(obj17, tmp25).with(obj18, tmp26);
+    }
+    class B {
+      constructor() {
+        tmp = closure_1;
+        if (closure_1) {
+          tmp2 = closure_0;
+          if (closure_0) {
+            tmp3 = closure_0;
+            tmp4 = closure_2;
+            SELECT = closure_0(closure_2[46]).TaskPlatformScreen.SELECT;
+          }
+          return SELECT;
+        }
+        TaskPlatformScreen = closure_0(closure_2[46]).TaskPlatformScreen;
+        SELECT = tmp ? TaskPlatformScreen.CONSOLE : TaskPlatformScreen.DESKTOP;
+        return;
+      }
+    }
+    cResult[30] = tmp9;
+    cResult[31] = tmp6;
+    cResult[32] = B;
+    tmp28 = B;
+  }
+}) : ((id, arg1) => {
+  closure_0 = id;
+  closure_1 = arg1;
+  const tmp = hasItem1(closure_58(id.id), 2);
+  const selectedPlatform = tmp[0];
+  const items = [id];
+  const memo = memo1.useMemo(() => QuestPlatformUtils.supportedTaskPlatforms(closure_0), items);
+  const hasItem = memo.includes(constants.DESKTOP);
+  hasItem1 = memo.includes(constants.CONSOLE);
+  const items1 = [arg1];
+  let obj = memo1;
+  const tmp6 = closure_48(id);
+  memo1 = memo1.useMemo(() => {
+    const match = _mod4943.match(closure_1);
+    const withResult = match.with({ percentComplete: 0 }, () => null);
+    const obj = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP };
+    const withResult1 = withResult.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP }, () => constants.DESKTOP);
+    const obj2 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ACTIVITY };
+    const withResult2 = withResult1.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ACTIVITY }, () => constants.DESKTOP);
+    obj3 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO };
+    const withResult3 = withResult2.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO }, () => constants.DESKTOP);
+    const obj4 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE };
+    const withResult4 = withResult3.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE }, () => constants.DESKTOP);
+    const obj5 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP };
+    const withResult5 = withResult4.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP }, () => constants.DESKTOP);
+    const obj6 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX };
+    const withResult6 = withResult5.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_XBOX }, () => constants.CONSOLE);
+    const obj7 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION };
+    const withResult7 = withResult6.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.PLAY_ON_PLAYSTATION }, () => constants.CONSOLE);
+    const obj8 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME };
+    const withResult8 = withResult7.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_GAME }, () => constants.DESKTOP);
+    const obj9 = { taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY };
+    return withResult8.with({ taskType: FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypes.ACHIEVEMENT_IN_ACTIVITY }, () => constants.DESKTOP).exhaustive();
+  }, items1);
+  if (tmp6) {
+    let DESKTOP = tmp3.DESKTOP;
+  } else {
+    DESKTOP = null;
+    if (tmp7) {
+      DESKTOP = tmp3.CONSOLE;
+    }
+  }
+  const items2 = [hasItem1, hasItem, memo1, DESKTOP, selectedPlatform];
+  const items3 = [
+    obj.useMemo(() => {
+      const match = _mod4943.match({ lastPlatformProgress: memo1, currentProgressingPlatform: DESKTOP, selectedPlatform });
+      const obj = { lastPlatformProgress: memo1, currentProgressingPlatform: DESKTOP, selectedPlatform };
+      const obj2 = { currentProgressingPlatform: constants.CONSOLE };
+      obj3 = { currentProgressingPlatform: constants.DESKTOP };
+      const withResult = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE);
+      const obj4 = { currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE };
+      const withResult1 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP);
+      const obj5 = { currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP };
+      const withResult2 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE);
+      const obj6 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE };
+      const withResult3 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP);
+      const obj7 = { currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP };
+      const withResult4 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE);
+      const withResult5 = match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP);
+      return match.with({ currentProgressingPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.CONSOLE }, () => id(5666).TaskPlatformScreen.CONSOLE).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: constants.DESKTOP }, () => id(5666).TaskPlatformScreen.DESKTOP).with({ currentProgressingPlatform: null, lastPlatformProgress: null, selectedPlatform: null }, () => {
+        if (hasItem1) {
+          if (hasItem) {
+            let SELECT = closure_0(first[46]).TaskPlatformScreen.SELECT;
+          }
+          return SELECT;
+        }
+        const TaskPlatformScreen = closure_0(first[46]).TaskPlatformScreen;
+        SELECT = hasItem1 ? TaskPlatformScreen.CONSOLE : TaskPlatformScreen.DESKTOP;
+      }).exhaustive();
+    }, items2),
+    memo,
+    tmp[1]
+  ];
+  return items3;
+});
+let closure_59 = tmp31;
+ReactCompilerGating = fn(558);
+const tmp29 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  let formatPercent = require;
+  let obj = dependencyMap;
+  const cResult = c.c(11);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function o() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp3 = items;
+    tmp4 = fn;
+  } else {
+    [tmp3, tmp4] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp3, tmp4);
+  let percentComplete = closure_52(arg0).percentComplete;
+  const tmp7 = closure_53(arg0);
+  if (null != tmp7) {
+    percentComplete = tmp7.percentComplete;
+  }
+  const result = 100 * percentComplete;
+  if (cResult[2] === percentComplete) {
+    if (cResult[3] === stateFromStores) {
+      if (cResult[4] === tmp7) {
+        if (cResult[5] === tmp2) {
+          if (cResult[7] === percentComplete) {
+            if (cResult[8] === tmp9) {
+              if (cResult[9] === result) {
+                let tmp15 = cResult[10];
+              }
+              return tmp15;
+            }
+          }
+          obj3 = { completedRatio: percentComplete, percentComplete: result, completedRatioDisplay: cResult[6] };
+          cResult[7] = percentComplete;
+          cResult[8] = cResult[6];
+          cResult[9] = result;
+          cResult[10] = obj3;
+          tmp15 = obj3;
+        }
+      }
+    }
+  }
+  if (null != tmp7) {
+    if (!tmp2) {
+      let progress;
+      if (tmp7 != null) {
+        progress = tmp7.progress;
+      }
+      let target;
+      if (tmp7 != null) {
+        target = tmp7.target;
+      }
+      const _HermesInternal = HermesInternal;
+      let combined = "" + progress + "/" + target;
+    }
+    cResult[2] = percentComplete;
+    cResult[3] = stateFromStores;
+    cResult[4] = tmp7;
+    cResult[5] = tmp2;
+    cResult[6] = combined;
+  }
+  const formatPercentResult = initialize;
+  formatPercent = NumberUtils.formatPercent;
+  obj = { roundingMode: "floor" };
+  combined = formatPercent(stateFromStores, percentComplete, obj);
+}) : ((arg0) => {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
+  }
+  const items = [LocaleStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => locale.locale);
+  let percentComplete = closure_52(arg0).percentComplete;
+  const tmp4 = closure_53(arg0);
+  if (null != tmp4) {
+    percentComplete = tmp4.percentComplete;
+  }
+  const obj2 = { completedRatio: percentComplete, percentComplete: 100 * percentComplete, completedRatioDisplay: null };
+  if (null != tmp4) {
+    if (!flag) {
+      let progress;
+      if (tmp4 != null) {
+        progress = tmp4.progress;
+      }
+      let target;
+      if (tmp4 != null) {
+        target = tmp4.target;
+      }
+      const _HermesInternal = HermesInternal;
+      let combined = "" + progress + "/" + target;
+    }
+    obj2.completedRatioDisplay = combined;
+    return obj2;
+  }
+  combined = NumberUtils.formatPercent(stateFromStores, percentComplete, { roundingMode: "floor" });
+});
+ReactCompilerGating = fn(558);
+let tmp32 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+  const cResult = c.c(14);
+  const tmp5 = closure_52(userStatus);
+  userStatus = userStatus.userStatus;
+  let enrolledAt;
+  const tmp4 = closure_53(userStatus);
+  if (userStatus != null) {
+    enrolledAt = userStatus.enrolledAt;
+  }
+  let tmp8 = null != enrolledAt;
+  const userStatus2 = userStatus.userStatus;
+  if (userStatus2 != null) {
+    const completedAt = userStatus2.completedAt;
+  }
+  if (cResult[0] === tmp5.percentComplete) {
+    if (cResult[1] === tmp5.taskType) {
+      let tmp10 = cResult[2];
+    }
+    if (tmp8) {
+      tmp8 = !tmp9;
+    }
+    if (tmp8) {
+      tmp8 = !tmp6;
+    }
+    if (tmp8) {
+      tmp8 = null == tmp4;
+    }
+    if (tmp8) {
+      if (!tmp10) {
+        tmp10 = 0 === tmp5.percentComplete && _slicedToArray(closure_59(userStatus, tmp5), 1)[0] === tmp(5666).TaskPlatformScreen.DESKTOP;
+        const tmp12 = 0 === tmp5.percentComplete && _slicedToArray(closure_59(userStatus, tmp5), 1)[0] === tmp(5666).TaskPlatformScreen.DESKTOP;
+      }
+      tmp8 = tmp10;
+    }
+    if (cResult[3] === tmp8) {
+      if (cResult[4] === userStatus) {
+        let tmp13 = cResult[5];
+      }
+      if (cResult[6] === tmp8) {
+        if (cResult[7] === tmp5.taskType) {
+          let tmp15 = cResult[8];
+        }
+        if (cResult[9] === tmp15) {
+          if (cResult[10] === tmp13) {
+            let tmp17 = cResult[11];
+          }
+          return tmp17;
+        }
+        const items = [];
+        if (!tmp15) {
+          if (!tmp13) {
+            cResult[9] = tmp15;
+            cResult[10] = tmp13;
+            cResult[11] = items;
+            tmp17 = items;
+          } else {
+            const _Symbol2 = Symbol;
+            if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl2 = tmp(1119).intl;
+              const stringResult = intl2.string(tmp(1119).t.BV6xDm);
+              cResult[13] = stringResult;
+              let tmp23 = stringResult;
+            } else {
+              tmp23 = cResult[13];
+            }
+            items.push(tmp23);
+          }
+        } else {
+          const _Symbol = Symbol;
+          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl = tmp(1119).intl;
+            const stringResult1 = intl.string(tmp(1119).t.MFGxFM);
+            cResult[12] = stringResult1;
+            let tmp19 = stringResult1;
+          } else {
+            tmp19 = cResult[12];
+          }
+          items.push(tmp19);
+        }
+      }
+      let isMacResult = tmp(1368).isMac();
+      if (isMacResult) {
+        isMacResult = tmp5.taskType === tmp(5671).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP;
+      }
+      if (isMacResult) {
+        isMacResult = tmp8;
+      }
+      cResult[6] = tmp8;
+      cResult[7] = tmp5.taskType;
+      cResult[8] = isMacResult;
+      tmp15 = isMacResult;
+      const tmpResult = tmp(1368);
+    }
+    let tmp14 = tmp(1368).isWeb() && tmp8;
+    if (tmp14) {
+      tmp14 = !tmp(11620).isQuestSupportedOnWeb(userStatus);
+      const tmpResult4 = tmp(11620);
+    }
+    cResult[3] = tmp8;
+    cResult[4] = userStatus;
+    cResult[5] = tmp14;
+    tmp13 = tmp14;
+    const tmpResult3 = tmp(1368);
+  }
+  const DESKTOP = tmp(5671).FirstPartyQuestTaskTypesSets.DESKTOP;
+  let hasItem = DESKTOP.has(tmp5.taskType);
+  if (hasItem) {
+    hasItem = tmp5.percentComplete > 0;
+  }
+  ({ percentComplete: tmp3[0], taskType: tmp3[1] } = tmp5);
+  cResult[2] = hasItem;
+  tmp10 = hasItem;
+}) : ((userStatus) => {
+  const tmp2 = closure_52(userStatus);
+  userStatus = userStatus.userStatus;
+  let enrolledAt;
+  const tmp = closure_53(userStatus);
+  if (userStatus != null) {
+    enrolledAt = userStatus.enrolledAt;
+  }
+  let tmp5 = null != enrolledAt;
+  const userStatus2 = userStatus.userStatus;
+  let completedAt;
+  if (userStatus2 != null) {
+    completedAt = userStatus2.completedAt;
+  }
+  const DESKTOP = FirstPartyQuestTaskTypes.FirstPartyQuestTaskTypesSets.DESKTOP;
+  let hasItem = DESKTOP.has(tmp2.taskType);
+  if (hasItem) {
+    hasItem = tmp2.percentComplete > 0;
+  }
+  if (tmp5) {
+    tmp5 = !tmp7;
+  }
+  if (tmp5) {
+    tmp5 = !tmp3;
+  }
+  if (tmp5) {
+    tmp5 = null == tmp;
+  }
+  if (tmp5) {
+    if (!hasItem) {
+      hasItem = 0 === tmp2.percentComplete && _slicedToArray(closure_59(userStatus, tmp2), 1)[0] === tmp8(5666).TaskPlatformScreen.DESKTOP;
+      const tmp11 = 0 === tmp2.percentComplete && _slicedToArray(closure_59(userStatus, tmp2), 1)[0] === tmp8(5666).TaskPlatformScreen.DESKTOP;
+    }
+    tmp5 = hasItem;
+  }
+  tmp3 = closure_47(userStatus);
+  tmp7 = null != completedAt;
+  let tmp12 = PlatformUtils.isWeb() && tmp5;
+  if (tmp12) {
+    tmp12 = !tmp8(11620).isQuestSupportedOnWeb(userStatus);
+    const tmp8Result3 = tmp8(11620);
+  }
+  const tmp8Result = PlatformUtils;
+  let isMacResult = PlatformUtils.isMac();
+  if (isMacResult) {
+    isMacResult = tmp2.taskType === tmp8(5671).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP;
+  }
+  if (isMacResult) {
+    isMacResult = tmp5;
+  }
+  const items = [];
+  if (isMacResult) {
+    const intl = tmp8(1119).intl;
+    items.push(intl.string(tmp8(1119).t.MFGxFM));
+  }
+  if (tmp12) {
+    const intl2 = tmp8(1119).intl;
+    items.push(intl2.string(tmp8(1119).t.BV6xDm));
+  }
+  return items;
+});
+ReactCompilerGating = fn(558);
+const tmp33 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    const fn = function n() {
+      return quests.quests;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === arg0) {
+    if (cResult[3] === stateFromStores) {
+      let tmp7 = cResult[4];
+    }
+    return tmp7;
+  }
+  value = stateFromStores.get(arg0);
+  if (value == null) {
+    value = null;
+  }
+  cResult[2] = arg0;
+  cResult[3] = stateFromStores;
+  cResult[4] = value;
+  tmp7 = value;
+}) : ((arg0) => {
+  const items = [QuestStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => quests.quests);
+  value = stateFromStores.get(arg0);
+  if (value == null) {
+    value = null;
+  }
+  return value;
+});
+ReactCompilerGating = fn(558);
+const tmp34 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) => {
+  _require = questId;
+  closure_1 = arg1;
+  const cResult = require("c").c(5);
+  let obj = require("c");
+  let items = [QuestStore];
+  const items1 = [questId];
+  stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.getQuest(closure_0), items1);
+  if (stateFromStores == null) {
+    stateFromStores = null;
+  }
+  if (cResult[0] === arg1) {
+    if (cResult[1] === stateFromStores) {
+      if (cResult[2] === questId) {
+        let tmp3 = cResult[3];
+        let tmp4 = cResult[4];
+      }
+      const effect = noop.useEffect(tmp3, tmp4);
+      return stateFromStores;
+    }
+  }
+  const fn = function o() {
+    if (null == stateFromStores) {
+      const quests = QuestStore.quests;
+      const items = [];
+      HermesBuiltin.arraySpread(quests.keys(), 0);
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const error = new Error("Quest unexpectedly missing from store: " + questId);
+      const obj2 = { tags: { source: "useNonNullableQuest" }, extra: null };
+      const obj5 = { questId, storeQuestIds: items, storeSize: items.length, isFetchingCurrentQuests: null, lastFetchedCurrentQuests: null };
+      ({ isFetchingCurrentQuests: obj3.isFetchingCurrentQuests, lastFetchedCurrentQuests: obj3.lastFetchedCurrentQuests } = QuestStore);
+      obj2.extra = obj5;
+      const result = QuestDataUtils.captureQuestsException(error, obj2);
+      if (closure_1 != null) {
+        closure_1();
+      }
+    }
+  };
+  const items2 = [stateFromStores, questId, arg1];
+  cResult[0] = arg1;
+  cResult[1] = stateFromStores;
+  cResult[2] = questId;
+  cResult[3] = fn;
+  cResult[4] = items2;
+  tmp4 = items2;
+  tmp3 = fn;
+}) : ((questId, arg1) => {
+  _require = questId;
+  closure_1 = arg1;
+  let items = [QuestStore];
+  const items1 = [questId];
+  stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.getQuest(closure_0), items1);
+  if (stateFromStores == null) {
+    stateFromStores = null;
+  }
+  const items2 = [stateFromStores, questId, arg1];
+  const effect = noop.useEffect(() => {
+    if (null == stateFromStores) {
+      const quests = QuestStore.quests;
+      const items = [];
+      HermesBuiltin.arraySpread(quests.keys(), 0);
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const error = new Error("Quest unexpectedly missing from store: " + questId);
+      const obj2 = { tags: { source: "useNonNullableQuest" }, extra: null };
+      const obj5 = { questId, storeQuestIds: items, storeSize: items.length, isFetchingCurrentQuests: null, lastFetchedCurrentQuests: null };
+      ({ isFetchingCurrentQuests: obj3.isFetchingCurrentQuests, lastFetchedCurrentQuests: obj3.lastFetchedCurrentQuests } = QuestStore);
+      obj2.extra = obj5;
+      const result = QuestDataUtils.captureQuestsException(error, obj2);
+      if (closure_1 != null) {
+        closure_1();
+      }
+    }
+  }, items2);
+  return stateFromStores;
+});
+ReactCompilerGating = fn(558);
+const tmp35 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
+  const cResult = require("c").c(19);
+  mode = mode.mode;
+  const questContent = mode.questContent;
+  const sourceQuestContent = mode.sourceQuestContent;
+  if (cResult[0] !== mode) {
+    if ("questId" in mode) {
+      const questId = mode.questId;
+      dependencyMap = questId;
+    } else {
+      _require = mode.adContentId;
+      let adCreativeType = mode.adCreativeType;
+    }
+    cResult[0] = mode;
+    cResult[1] = tmp5;
+    cResult[2] = tmp6;
+    cResult[3] = tmp7;
+  } else {
+    _require = tmp2;
+    adCreativeType = tmp3;
+    let tmp4 = cResult[3];
+    dependencyMap = tmp4;
+    if (cResult[4] === cResult[1]) {
+      if (cResult[5] === tmp3) {
+        if (cResult[6] === questContent) {
+          if (cResult[7] === tmp4) {
+            if (cResult[8] === sourceQuestContent) {
+              let tmp11 = cResult[9];
+            }
+            AdDeliveryStore = tmp11;
+            if (tmp4 == null) {
+              tmp4 = tmp2;
+            }
+            closure_7 = tmp4;
+            ChannelStore = sourceQuestContent.useRef(null);
+            if (cResult[10] === tmp4) {
+              if (cResult[11] === mode) {
+                if (cResult[12] === tmp11) {
+                  let tmp13 = cResult[13];
+                  let tmp14 = cResult[14];
+                }
+                const effect = obj2.useEffect(tmp13, tmp14);
+                if (cResult[15] === tmp4) {
+                  if (cResult[16] === tmp11) {
+                    let tmp16 = cResult[17];
+                    let tmp17 = cResult[18];
+                  }
+                  const effect1 = obj2.useEffect(tmp16, tmp17);
+                }
+                class C {
+                  constructor() {
+                    return null != closure_7 ? (() => {
+                      closure_1_6(null, ref.current);
+                    }) : undefined;
+                  }
+                }
+                const items = [tmp4, tmp11];
+                class E {
+                  constructor() {
+                    tmp = null != closure_7;
+                    if (tmp) {
+                      tmp2 = closure_8;
+                      tmp3 = mode;
+                      tmp = closure_8.current !== mode;
+                    }
+                    if (tmp) {
+                      tmp4 = closure_6;
+                      tmp5 = mode;
+                      tmp6 = closure_8;
+                      tmp7 = closure_6(mode, closure_8.current);
+                      closure_8.current = mode;
+                    }
+                    return;
+                  }
+                }
+                cResult[16] = tmp11;
+                cResult[17] = C;
+                cResult[18] = items;
+                tmp17 = items;
+                tmp16 = C;
+              }
+            }
+            class E {
+              constructor() {
+                tmp = null != closure_7;
+                if (tmp) {
+                  tmp2 = closure_8;
+                  tmp3 = mode;
+                  tmp = closure_8.current !== mode;
+                }
+                if (tmp) {
+                  tmp4 = closure_6;
+                  tmp5 = mode;
+                  tmp6 = closure_8;
+                  tmp7 = closure_6(mode, closure_8.current);
+                  closure_8.current = mode;
+                }
+                return;
+              }
+            }
+            const items1 = [mode, tmp4, tmp11];
+            cResult[10] = tmp4;
+            cResult[11] = mode;
+            cResult[12] = tmp11;
+            cResult[13] = E;
+            cResult[14] = items1;
+            tmp14 = items1;
+            tmp13 = E;
+          }
+        }
+      }
+    }
+    const fn = function a(mode, prevMode) {
+      if (null != closure_2) {
+        const obj2 = { mode, prevMode, questContent, questId: tmp, sourceQuestContent };
+        const result = AnalyticsActions.trackQuestContentQuestBarOrDockModeChange(obj2);
+      } else {
+        let tmp3 = null != closure_0;
+        if (tmp3) {
+          tmp3 = null != adCreativeType;
+        }
+        if (tmp3) {
+          const obj4 = { adContentId: tmp2, adCreativeType, mode, prevMode, questContent, sourceQuestContent };
+          const result1 = AnalyticsActions.trackAdContentQuestBarOrDockModeChange(obj4);
+        }
+        tmp2 = closure_0;
+      }
+    };
+    cResult[4] = cResult[1];
+    cResult[5] = cResult[2];
+    cResult[6] = questContent;
+    cResult[7] = tmp4;
+    cResult[8] = sourceQuestContent;
+    cResult[9] = fn;
+    tmp11 = fn;
+  }
+}) : ((mode) => {
+  mode = mode.mode;
+  const questContent = mode.questContent;
+  const sourceQuestContent = mode.sourceQuestContent;
+  if ("questId" in mode) {
+    const questId = mode.questId;
+    let tmp3 = questId;
+  } else {
+    const adContentId = mode.adContentId;
+    const adCreativeType = mode.adCreativeType;
+  }
+  const items = [questContent, sourceQuestContent, tmp3, tmp, tmp2];
+  const callback = sourceQuestContent.useCallback((mode, prevMode) => {
+    if (null != questId) {
+      const obj2 = { mode, prevMode, questContent, questId: tmp, sourceQuestContent };
+      const result = AnalyticsActions.trackQuestContentQuestBarOrDockModeChange(obj2);
+    } else {
+      let tmp3 = null != adContentId;
+      if (tmp3) {
+        tmp3 = null != adCreativeType;
+      }
+      if (tmp3) {
+        const obj4 = { adContentId: tmp2, adCreativeType, mode, prevMode, questContent, sourceQuestContent };
+        const result1 = AnalyticsActions.trackAdContentQuestBarOrDockModeChange(obj4);
+      }
+      tmp2 = adContentId;
+    }
+  }, items);
+  if (tmp3 == null) {
+    tmp3 = tmp;
+  }
+  LocaleStore = tmp3;
+  sourceQuestContent.useRef(null);
+  const items1 = [mode, tmp3, callback];
+  const effect = obj.useEffect(() => {
+    let tmp = null != closure_7;
+    if (tmp) {
+      tmp = ref.current !== mode;
+    }
+    if (tmp) {
+      callback(mode, ref.current);
+      ref.current = mode;
+    }
+  }, items1);
+  const items2 = [tmp3, callback];
+  const effect1 = obj.useEffect(() => null != closure_7 ? (() => {
+    callback(null, ref.current);
+  }) : undefined, items2);
+});
+ReactCompilerGating = fn(558);
+const tmp36 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, DARK) => {
+  _require = arg0;
+  let questAsset = dependencyMap;
+  const cResult = require("c").c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function o() {
+      return QuestStore.getQuest(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6, tmp7);
+  if (null == stateFromStores) {
+    return null;
+  } else if (DARK != null) {
+    if (cResult[4] === stateFromStores) {
+    }
+    questAsset = tmp(10570).getQuestAsset(stateFromStores, tmp(10570).QuestAssetType.COSPONSOR_LOGO_TYPE, DARK);
+    cResult[4] = stateFromStores;
+    cResult[5] = DARK;
+    cResult[6] = questAsset;
+    const tmpResult3 = tmp(10570);
+  } else {
+    tmp(4610).isThemeDark(tmp9) ? constants3.DARK : constants3.LIGHT;
+    const tmpResult4 = tmp(4610);
+  }
+}) : ((arg0, arg1) => {
+  _require = arg0;
+  importDefault = arg1;
+  const items = [QuestStore];
+  const items1 = [arg0];
+  stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.getQuest(closure_0), items1);
+  const tmp2 = require("useTheme")();
+  closure_3 = tmp2;
+  const items2 = [tmp2, arg1, stateFromStores];
+  return noop.useMemo(() => {
+    if (null == stateFromStores) {
+      return null;
+    } else if (closure_1 != null) {
+      return AssetUtils.getQuestAsset(tmp, AssetUtils.QuestAssetType.COSPONSOR_LOGO_TYPE, tmp11);
+    } else {
+      shared.isThemeDark(closure_3) ? constants3.DARK : constants3.LIGHT;
+    }
+  }, items2);
+});
+ReactCompilerGating = fn(558);
+const tmp37 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+  const cResult = c.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function n() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
+  if (cResult[2] === stateFromStores) {
+    if (cResult[3] === config) {
+      let tmp8 = cResult[4];
+      const _Symbol = Symbol;
+      if (cResult[5] !== Symbol.for("react.early_return_sentinel")) {
+        tmp8 = tmp9;
+      }
+      return tmp8;
+    }
+  }
+  const tmpResult = initialize;
+  const forResult = Symbol.for("react.early_return_sentinel");
+  const defaultRewardName = QuestRewardUtils.getDefaultRewardName(config, stateFromStores);
+  const tmpResult7 = QuestRewardUtils;
+  const collectibleQuestRewardDuration = QuestRewardUtils.getCollectibleQuestRewardDuration(config);
+  const tmpResult8 = QuestRewardUtils;
+  const collectibleQuestRewardExtendableExpirationDate = QuestRewardUtils.getCollectibleQuestRewardExtendableExpirationDate(config);
+  const tmpResult9 = QuestRewardUtils;
+  const result = QuestRewardUtils.isCollectibleQuestRewardPermanentWithPremiumSubscription(config);
+  const tmpResult10 = QuestRewardUtils;
+  const result1 = QuestRewardUtils.isCollectibleQuestRewardPremiumExtendable(config);
+  const tmpResult11 = QuestRewardUtils;
+  const isPremiumResult = PremiumUtils.isPremium(stateFromStores, PremiumTypes.TIER_2);
+  if (null == collectibleQuestRewardDuration) {
+    const intl = tmp(1119).intl;
+    const obj2 = { decorationName: defaultRewardName };
+    const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.l9uXL8, obj2);
+    cResult[2] = stateFromStores;
+    cResult[3] = config;
+    cResult[4] = undefined;
+    cResult[5] = formatToPlainStringResult;
+  }
+  const intl2 = tmp(1119).intl;
+  const tmpResult12 = PremiumUtils;
+  const intl3 = tmp(1119).intl;
+  const formatToPlainStringResult1 = intl2.formatToPlainString(util.t.o97tNn, { rewardName: defaultRewardName });
+  const intl4 = tmp(1119).intl;
+  let formatToPlainStringResult3 = intl4.formatToPlainString(tmp(1119).t.ie4YK0, { rewardName: defaultRewardName, duration: collectibleQuestRewardDuration });
+  const intl5 = tmp(1119).intl;
+  intl5.formatToPlainString(util.t.yCpc0U, { duration: collectibleQuestRewardDuration, rewardName: defaultRewardName });
+  if (!result1) {
+    const intl6 = tmp(1119).intl;
+    obj3 = { duration: collectibleQuestRewardDuration, decorationName: defaultRewardName };
+    intl6.formatToPlainString(tmp(1119).t.tTlItm, obj3);
+  }
+  if (result) {
+    if (isPremiumResult) {
+      formatToPlainStringResult3 = formatToPlainStringResult1;
+    }
+  }
+}) : ((config) => {
+  const items = [UserStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const defaultRewardName = QuestRewardUtils.getDefaultRewardName(config, stateFromStores);
+  const collectibleQuestRewardDuration = QuestRewardUtils.getCollectibleQuestRewardDuration(config);
+  const collectibleQuestRewardExtendableExpirationDate = QuestRewardUtils.getCollectibleQuestRewardExtendableExpirationDate(config);
+  const result = QuestRewardUtils.isCollectibleQuestRewardPermanentWithPremiumSubscription(config);
+  const result1 = QuestRewardUtils.isCollectibleQuestRewardPremiumExtendable(config);
+  const isPremiumResult = PremiumUtils.isPremium(stateFromStores, PremiumTypes.TIER_2);
+  if (null == collectibleQuestRewardDuration) {
+    const intl2 = tmp(1119).intl;
+    const obj8 = { decorationName: defaultRewardName };
+    return intl2.formatToPlainString(tmp(1119).t.l9uXL8, obj8);
+  } else {
+    const intl3 = tmp(1119).intl;
+    const obj9 = { rewardName: defaultRewardName };
+    const intl4 = tmp(1119).intl;
+    const obj10 = { rewardName: defaultRewardName, expirationDate: collectibleQuestRewardExtendableExpirationDate };
+    const formatToPlainStringResult = intl3.formatToPlainString(tmp(1119).t.o97tNn, obj9);
+    const intl5 = tmp(1119).intl;
+    const obj11 = { rewardName: defaultRewardName, duration: collectibleQuestRewardDuration };
+    let formatToPlainStringResult2 = intl5.formatToPlainString(tmp(1119).t.ie4YK0, obj11);
+    const intl6 = tmp(1119).intl;
+    const obj12 = { duration: collectibleQuestRewardDuration, rewardName: defaultRewardName };
+    let formatToPlainStringResult3 = intl6.formatToPlainString(tmp(1119).t.yCpc0U, obj12);
+    if (result1) {
+      if (result) {
+        if (isPremiumResult) {
+          formatToPlainStringResult2 = formatToPlainStringResult;
+        }
+        formatToPlainStringResult3 = formatToPlainStringResult2;
+      } else if (isPremiumResult) {
+        formatToPlainStringResult3 = formatToPlainStringResult1;
+      }
+    } else {
+      const intl = tmp(1119).intl;
+      const obj13 = { duration: collectibleQuestRewardDuration, decorationName: defaultRewardName };
+      return intl.formatToPlainString(tmp(1119).t.tTlItm, obj13);
+    }
+    formatToPlainStringResult1 = intl4.formatToPlainString(tmp(1119).t.PkyRZo, obj10);
+  }
+});
+ReactCompilerGating = fn(558);
+const tmp39 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [QuestStore];
+    const fn = function s() {
+      quests = quests.quests;
+      const items = [...quests.values()];
+      return items;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStoresArray = initialize.useStateFromStoresArray(tmp4, tmp5);
+  if (cResult[2] !== stateFromStoresArray) {
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function u(preview) {
+        return preview.preview;
+      };
+      cResult[4] = fn2;
+      let tmp7 = fn2;
+    } else {
+      tmp7 = cResult[4];
+    }
+    const someResult = stateFromStoresArray.some(tmp7);
+    cResult[2] = stateFromStoresArray;
+    cResult[3] = someResult;
+  } else {
+    return cResult[3];
+  }
+}) : (() => {
+  let items = [QuestStore];
+  const stateFromStoresArray = initialize.useStateFromStoresArray(items, () => {
+    quests = quests.quests;
+    const items = [...quests.values()];
+    return items;
+  });
+  return stateFromStoresArray.some((preview) => preview.preview);
+});
+let closure_60 = tmp39;
+ReactCompilerGating = fn(558);
+ReactCompilerGating.isReactCompilerEnabled();
+ReactCompilerGating = fn(558);
+const tmp38 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+  const cResult = c.c(6);
+  if (cResult[0] !== quest) {
+    const activityApplicationId = QuestTaskUtils.getActivityApplicationId(quest);
+    cResult[0] = quest;
+    cResult[1] = activityApplicationId;
+    let tmp4 = activityApplicationId;
+    const tmpResult = QuestTaskUtils;
+  } else {
+    tmp4 = cResult[1];
+  }
+  if (cResult[2] !== tmp4) {
+    const obj2 = { applicationId: tmp4 };
+    cResult[2] = tmp4;
+    cResult[3] = obj2;
+    let tmp6 = obj2;
+  } else {
+    tmp6 = cResult[3];
+  }
+  const tmp7 = useRefocusOrLaunchActivityDefault(tmp6);
+  if (cResult[4] !== tmp7) {
+    obj3 = { launchInGameActivity: tmp7 };
+    cResult[4] = tmp7;
+    cResult[5] = obj3;
+    let tmp8 = obj3;
+  } else {
+    tmp8 = cResult[5];
+  }
+  return tmp8;
+}) : ((quest) => {
+  const obj2 = { launchInGameActivity: null };
+  const activityApplicationId = QuestTaskUtils.getActivityApplicationId(quest);
+  obj2.launchInGameActivity = useRefocusOrLaunchActivityDefault({ applicationId: activityApplicationId });
+  return obj2;
+});
+ReactCompilerGating = fn(558);
+const tmp41 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+  const cResult = c.c(5);
+  if (cResult[0] !== userStatus) {
+    let userStatus1;
+    if (userStatus != null) {
+      userStatus1 = userStatus.userStatus;
+    }
+    let isDismissedResult = null != userStatus1;
+    if (isDismissedResult) {
+      isDismissedResult = tmp(7940).isDismissed(userStatus.userStatus, tmp(5666).QuestContent.ACTIVITY_PANEL);
+      const tmpResult = tmp(7940);
+    }
+    cResult[0] = userStatus;
+    cResult[1] = isDismissedResult;
+    let tmp4 = isDismissedResult;
+  } else {
+    tmp4 = cResult[1];
+  }
+  let tmp9 = userStatus;
+  if (userStatus == null) {
+    tmp9 = null;
+  }
+  let claimedAt;
+  if (userStatus != null) {
+    userStatus = userStatus.userStatus;
+    if (userStatus != null) {
+      claimedAt = userStatus.claimedAt;
+    }
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    const fn = function u() {
+      return null != QuestStore.questEnrollmentBlockedUntil;
+    };
+    const items1 = [];
+    cResult[2] = items;
+    cResult[3] = fn;
+    cResult[4] = items1;
+    let tmp15 = items1;
+    let tmp14 = fn;
+    let tmp13 = items;
+  } else {
+    tmp13 = cResult[2];
+    tmp14 = cResult[3];
+    tmp15 = cResult[4];
+  }
+  const tmp12 = null != claimedAt;
+  const tmp8Result = closure_47(tmp9);
+  const stateFromStores = initialize.useStateFromStores(tmp13, tmp14, tmp15);
+  if (!tmp4) {
+    tmp4 = tmp8Result;
+  }
+  if (!tmp4) {
+    tmp4 = tmp12;
+  }
+  if (!tmp4) {
+    tmp4 = stateFromStores;
+  }
+  return !tmp4;
+}) : ((userStatus) => {
+  let userStatus1;
+  if (userStatus != null) {
+    userStatus1 = userStatus.userStatus;
+  }
+  let isDismissedResult = null != userStatus1;
+  if (isDismissedResult) {
+    isDismissedResult = QuestDataUtils.isDismissed(userStatus.userStatus, QuestTypes.QuestContent.ACTIVITY_PANEL);
+  }
+  let tmp6 = userStatus;
+  if (userStatus == null) {
+    tmp6 = null;
+  }
+  let claimedAt;
+  if (userStatus != null) {
+    userStatus = userStatus.userStatus;
+    if (userStatus != null) {
+      claimedAt = userStatus.claimedAt;
+    }
+  }
+  const tmp5Result = closure_47(tmp6);
+  const tmp9 = null != claimedAt;
+  const items = [QuestStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => null != QuestStore.questEnrollmentBlockedUntil, []);
+  if (!isDismissedResult) {
+    isDismissedResult = tmp5Result;
+  }
+  if (!isDismissedResult) {
+    isDismissedResult = tmp9;
+  }
+  if (!isDismissedResult) {
+    isDismissedResult = stateFromStores;
+  }
+  return !isDismissedResult;
+});
+ReactCompilerGating = fn(558);
+const tmp42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [QuestStore];
+    const fn = function s() {
+      quests = quests.quests;
+      const items = [...quests.values()];
+      return items;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStoresArray = initialize.useStateFromStoresArray(tmp4, tmp5);
+  if (cResult[2] !== stateFromStoresArray) {
+    const _Symbol = Symbol;
+    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+      const fn2 = function u(preview) {
+        return preview.preview;
+      };
+      cResult[4] = fn2;
+      let tmp7 = fn2;
+    } else {
+      tmp7 = cResult[4];
+    }
+    const found = stateFromStoresArray.filter(tmp7);
+    cResult[2] = stateFromStoresArray;
+    cResult[3] = found;
+  } else {
+    return cResult[3];
+  }
+}) : (() => {
+  let items = [QuestStore];
+  stateFromStoresArray = stateFromStoresArray(504).useStateFromStoresArray(items, () => {
+    quests = quests.quests;
+    const items = [...quests.values()];
+    return items;
+  });
+  const items1 = [stateFromStoresArray];
+  return noop.useMemo(() => stateFromStoresArray.filter((preview) => preview.preview), items1);
+});
+ReactCompilerGating = fn(558);
+const tmp43 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const mapped = collapsedCategories.map((item) => {
+      const obj = { heading: null, options: null };
+      [tmp2, tmp3] = item;
+      const tmp = _slicedToArray(item, 2);
+      obj.heading = require("QuestCopyUtils").getFilterGroupHeadingText(tmp2);
+      obj.options = tmp3;
+      return obj;
+    });
+    cResult[0] = mapped;
+    let first = mapped;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => {
+  closure_0 = closure_18;
+  const items = [closure_18];
+  return noop.useMemo(() => closure_0.map((item) => {
+    [tmp, tmp2] = item;
+    const obj = { heading: closure_1_0(closure_1_2[39]).getFilterGroupHeadingText(tmp), options: tmp2 };
+    return obj;
+  }), items);
+});
+ReactCompilerGating = fn(558);
+const tmp44 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const _Object = Object;
+    const keys = Object.keys(constants3);
+    cResult[0] = keys;
+    let first = keys;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const mapped = first.map((item) => {
+      const obj = { label: require("QuestCopyUtils").getSortMethodText(dependencyMap[item]), value: dependencyMap[item] };
+      return obj;
+    });
+    cResult[1] = mapped;
+    let tmp4 = mapped;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => noop.useMemo(() => {
+  const keys = Object.keys(constants3);
+  return keys.map((item) => {
+    const obj = { label: closure_1_0(closure_1_2[39]).getSortMethodText(dependencyMap[item]), value: dependencyMap[item] };
+    return obj;
+  });
+}, []));
+ReactCompilerGating = fn(558);
+const tmp45 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedSortMethod) => {
+  const cResult = selectedSortMethod(numQuestsVisible[15]).c(7);
+  selectedSortMethod = selectedSortMethod.selectedSortMethod;
+  const selectedFilters = selectedSortMethod.selectedFilters;
+  numQuestsVisible = selectedSortMethod.numQuestsVisible;
+  noop.useRef(null);
+  noop.useRef(null);
+  if (cResult[0] !== selectedSortMethod) {
+    const fn = function s() {
+      AnalyticsUtilsDefault.track(constants8.QUEST_HOME_SORT_METHOD_CHANGED, { sort_method: selectedSortMethod, previous_sort_method: ref.current });
+      ref.current = selectedSortMethod;
+    };
+    const items = [selectedSortMethod];
+    cResult[0] = selectedSortMethod;
+    cResult[1] = fn;
+    cResult[2] = items;
+    let tmp3 = items;
+    let tmp2 = fn;
+  } else {
+    tmp2 = cResult[1];
+    tmp3 = cResult[2];
+  }
+  const effect = obj2.useEffect(tmp2, tmp3);
+  if (cResult[3] === numQuestsVisible) {
+    if (cResult[4] === selectedFilters) {
+      let tmp5 = cResult[5];
+      let tmp6 = cResult[6];
+    }
+    const effect1 = obj2.useEffect(tmp5, tmp6);
+  }
+  const fn2 = function u() {
+    const mapped = selectedFilters.map((item) => item.filter);
+    const obj2 = { filters: mapped, previous_filters: null, num_quests_visible: null };
+    let current = ref2.current;
+    if (current == null) {
+      current = [];
+    }
+    obj2.previous_filters = current;
+    obj2.num_quests_visible = numQuestsVisible;
+    AnalyticsUtilsDefault.track(constants8.QUEST_HOME_FILTERS_CHANGED, obj2);
+    ref2.current = mapped;
+  };
+  const items1 = [selectedFilters, numQuestsVisible];
+  cResult[3] = numQuestsVisible;
+  cResult[4] = selectedFilters;
+  cResult[5] = fn2;
+  cResult[6] = items1;
+  tmp6 = items1;
+  tmp5 = fn2;
+}) : ((selectedSortMethod) => {
+  selectedSortMethod = selectedSortMethod.selectedSortMethod;
+  const selectedFilters = selectedSortMethod.selectedFilters;
+  const numQuestsVisible = selectedSortMethod.numQuestsVisible;
+  noop.useRef(null);
+  noop.useRef(null);
+  const items = [selectedSortMethod];
+  const effect = noop.useEffect(() => {
+    AnalyticsUtilsDefault.track(constants8.QUEST_HOME_SORT_METHOD_CHANGED, { sort_method: selectedSortMethod, previous_sort_method: ref.current });
+    ref.current = selectedSortMethod;
+  }, items);
+  const items1 = [selectedFilters, numQuestsVisible];
+  const effect1 = noop.useEffect(() => {
+    const mapped = selectedFilters.map((item) => item.filter);
+    const obj2 = { filters: mapped, previous_filters: null, num_quests_visible: null };
+    let current = ref2.current;
+    if (current == null) {
+      current = [];
+    }
+    obj2.previous_filters = current;
+    obj2.num_quests_visible = numQuestsVisible;
+    AnalyticsUtilsDefault.track(constants8.QUEST_HOME_FILTERS_CHANGED, obj2);
+    ref2.current = mapped;
+  }, items1);
+});
+ReactCompilerGating = fn(558);
+const tmp47 = ReactCompilerGating.isReactCompilerEnabled() ? ((questIds) => {
+  let found1 = dependencyMap;
+  const cResult = stateFromStores(568).c(12);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [QuestStore];
+    const fn = function n() {
+      return quests.quests;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const obj = stateFromStores(568);
+  stateFromStores = stateFromStores(504).useStateFromStores(tmp4, tmp5);
+  questIds = undefined;
+  if (questIds != null) {
+    questIds = questIds.questIds;
+  }
+  if (null != questIds) {
+    if (cResult[3] === questIds) {
+      if (cResult[4] === stateFromStores) {
+        if (cResult[5].length <= 1) {
+          const _Symbol2 = Symbol;
+          if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj2 = { shelfQuests: [], isShelfEnabled: false };
+            cResult[9] = obj2;
+          }
+        } else {
+          if (cResult[10] !== arr2) {
+            obj3 = { shelfQuests: arr2, isShelfEnabled: true };
+            cResult[10] = arr2;
+            cResult[11] = obj3;
+            let tmp14 = obj3;
+          } else {
+            tmp14 = cResult[11];
+          }
+          let tmp9 = tmp14;
+        }
+      }
+    }
+    if (cResult[6] !== stateFromStores) {
+      class S {
+        constructor(arg0) {
+          return closure_0.get(questIds);
+        }
+      }
+      cResult[6] = stateFromStores;
+      cResult[7] = S;
+      let mapped = S;
+    } else {
+      class S {
+        constructor(arg0) {
+          return closure_0.get(questIds);
+        }
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor(arg0) {
+          return closure_0.get(questIds);
+        }
+      }
+      cResult[8] = tmp12;
+      const tmp11 = tmp12;
+    } else {
+      class S {
+        constructor(arg0) {
+          return closure_0.get(questIds);
+        }
+      }
+    }
+    mapped = questIds.map(mapped);
+    const found = mapped.filter(tmp(1374).isNotNullish);
+    found1 = found.filter(tmp11);
+    cResult[3] = questIds;
+    cResult[4] = stateFromStores;
+    cResult[5] = found1;
+  } else {
+    class S {
+      constructor(arg0) {
+        return closure_0.get(questIds);
+      }
+    }
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      class S {
+        constructor(arg0) {
+          return closure_0.get(questIds);
+        }
+      }
+      tmp10[0] = [];
+      cResult[2] = tmp10;
+      tmp9 = tmp10;
+    } else {
+      class S {
+        constructor(arg0) {
+          return closure_0.get(questIds);
+        }
+      }
+    }
+  }
+  return tmp9;
+}) : ((questIds) => {
+  const items = [QuestStore];
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => quests.quests);
+  questIds = undefined;
+  if (questIds != null) {
+    questIds = questIds.questIds;
+  }
+  const items1 = [stateFromStores, questIds];
+  return noop.useMemo(() => {
+    if (null == questIds) {
+      const obj2 = { shelfQuests: [], isShelfEnabled: false };
+      return obj2;
+    } else {
+      const mapped = arr.map((item) => stateFromStores.get(item));
+      const found = mapped.filter(GlobalUtils.isNotNullish);
+      const found1 = found.filter((item) => !stateFromStores(closure_1_2[21]).isQuestExpired(item));
+      if (found1.length <= 1) {
+        obj3 = { shelfQuests: [], isShelfEnabled: false };
+        let obj = obj3;
+      } else {
+        obj = { shelfQuests: found1, isShelfEnabled: true };
+      }
+      return obj;
+    }
+    arr = questIds;
+  }, items1);
+});
+let closure_61 = tmp47;
+let closure_62 = 6 * DurationsDefault.Millis.HOUR;
+const MINUTE = DurationsDefault.Millis.MINUTE;
+ReactCompilerGating = fn(558);
+const tmp46 = ReactCompilerGating.isReactCompilerEnabled() ? ((preview) => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const currentUser = UserStore.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    cResult[0] = isStaffResult;
+    let first = isStaffResult;
+  } else {
+    first = cResult[0];
+  }
+  preview = true === first;
+  if (!preview) {
+    preview = preview.preview;
+  }
+  return preview;
+}) : ((preview) => {
+  preview = noop.useMemo(() => {
+    currentUser = currentUser.getCurrentUser();
+    let isStaffResult;
+    if (currentUser != null) {
+      isStaffResult = currentUser.isStaff();
+    }
+    return true === isStaffResult;
+  }, []);
+  if (!preview) {
+    preview = preview.preview;
+  }
+  return preview;
+});
+ReactCompilerGating = fn(558);
+const tmp48 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [BountyStore];
+    const fn = function s() {
+      return { questHomeBounties: BountyStore.questHomeBounties, isFetching: BountyStore.isFetchingQuestHomeBounties };
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStoresObject(tmp4, tmp5);
+}) : (() => {
+  const items = [BountyStore];
+  return initialize.useStateFromStoresObject(items, () => ({ questHomeBounties: BountyStore.questHomeBounties, isFetching: BountyStore.isFetchingQuestHomeBounties }));
+});
+fn = () => closure_60();
+const size = fn(2);
+let result1 = size.fileFinishedImporting("modules/quests/hooks/QuestHooks.tsx");
+
+export const useQuests = tmp4;
+export { sortQuests };
+export const QuestTabs = obj3;
+export const QuestQueryParams = { TAB: "tab", QUEST_ID: "quest_id", SORT: "sort", FILTER: "filter", AD_CREATIVE_IDS: "ad_creative_ids" };
+export const useFilteredQuests = tmp5;
+export const useClaimedQuests = tmp6;
+export const useExpiredQuestsMap = tmp7;
+export const useShouldShowBonusOrbsUX = tmp8;
+export const useQuestOrbRewardMultiplier = tmp9;
+export const useIsQuestExpired = tmp10;
+export const useIsQuestAccessSuspended = tmp11;
+export const useIsQuestEligibleForMembersListPopout = tmp12;
+export const useQuestFormattedDate = tmp13;
+export const useOnOpenGameClick = tmp14;
+export const useIsQuestProgressingOnDesktop = tmp15;
+export const useIsQuestProgressingOnConsole = tmp16;
+export const useIsQuestProgressingVideoQuest = tmp17;
+export const useIsQuestProgressing = tmp18;
+export const useQuestTaskDetails = tmp19;
+export const useThirdPartyTaskDetails = tmp20;
+export const useConnectedConsoleLinkOnClick = tmp21;
+export const useGetOrFetchApplicationForConsoleQuests = tmp22;
+export const useQuestForMemberListSocialEntryPoint = function useQuestForMemberListSocialEntryPoint(arg0) {
+  _require = arg0;
+  const items = [QuestStore];
+  const stateFromStores = require("initialize").useStateFromStores(items, () => quests.quests);
+  const items1 = [arg0, stateFromStores, closure_54(Array.from(stateFromStores.values()))];
+  const memo = noop.useMemo(() => {
+    const result = utils_QuestUtils.filterQuestsForSocialEntrypoints(stateFromStores, value2);
+    return QuestMatchingUtils.getQuestsFromActivities(result, closure_0);
+  }, items1);
+  let tmp2 = null;
+  if (!closure_47(memo)) {
+    tmp2 = memo;
+  }
+  return tmp2;
 };
+export const useQuestCollectibles = tmp23;
+export const useQuestPreviewActions = tmp24;
+export const useConnectedAccounts = tmp25;
 export const useManuallyStartConsoleQuest = function useManuallyStartConsoleQuest(questId) {
   questId = questId.questId;
   const preview = questId.preview;
@@ -1209,19 +4311,19 @@ export const useManuallyStartConsoleQuest = function useManuallyStartConsoleQues
   startingConsoleQuest = tmp[0];
   noop = tmp[1];
   const items = [ConnectedAccountsStore];
-  const stateFromStores = questId(beforeRequest[14]).useStateFromStores(items, () => accounts.getAccounts());
+  const stateFromStores = questId(beforeRequest[16]).useStateFromStores(items, () => accounts.getAccounts());
   const tmp4 = useConsoleQuestUIStore((clearErrorHintsByType) => clearErrorHintsByType.clearErrorHintsByType);
   closure_6 = tmp4;
   const items1 = [questId];
   const callback = noop.useCallback((arg0) => {
-    const state = useConsoleQuestUIStore.getState();
+    state = useConsoleQuestUIStore.getState();
     return state.setErrorHints(questId, arg0);
   }, items1);
   const items2 = [stateFromStores, tmp4, questId];
   const effect = noop.useEffect(() => {
     closure_6(questId, QuestConsoleStartError.QuestConsoleStartError.EXPIRED_CREDENTIAL);
   }, items2);
-  obj2 = { startConsoleQuest: null, startingConsoleQuest };
+  const obj2 = { startConsoleQuest: null, startingConsoleQuest };
   const items3 = [startingConsoleQuest, beforeRequest, afterRequest, preview, questId, callback];
   obj2.startConsoleQuest = noop.useCallback(afterRequest(function*(arg0, value) {
     if (c5 === 2) {
@@ -1231,10 +4333,10 @@ export const useManuallyStartConsoleQuest = function useManuallyStartConsoleQues
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
+        obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1262,7 +4364,7 @@ export const useManuallyStartConsoleQuest = function useManuallyStartConsoleQues
               c3 = 1;
               c4 = 2;
               c5 = 1;
-              const obj5 = { value: questId(tmp33[16]).manuallyStartConsoleQuest(questId, preview), done: false };
+              const obj5 = { value: questId(tmp33[18]).manuallyStartConsoleQuest(questId, preview), done: false };
               return obj5;
             }
           }
@@ -1305,666 +4407,29 @@ export const useManuallyStartConsoleQuest = function useManuallyStartConsoleQues
   }), items3);
   return obj2;
 };
-export const useWaitingForConsoleConnection = function useWaitingForConsoleConnection(quest) {
-  quest = quest.quest;
-  accounts = undefined;
-  const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = accounts(504).useStateFromStoresObject(items, () => ({ fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() }));
-  ({ fetching, accounts } = stateFromStoresObject);
-  const items1 = [accounts];
-  const memo = noop.useMemo(() => {
-    const found = accounts.filter((revoked) => false === revoked.revoked);
-    const found1 = found.filter((type) => type.type === constants.XBOX);
-    const found2 = found.filter((type) => type.type === constants.PLAYSTATION);
-    return { xboxAccounts: found1, playstationAccounts: found2, xboxAndPlaystationAccounts: found1.concat(found2) };
-  }, items1);
-  ({ xboxAccounts, playstationAccounts } = memo);
-  const obj = accounts(504);
-  const tmp3 = useIsQuestProgressing(quest);
-  let isConsoleQuestResult = accounts(7960).isConsoleQuest(quest);
-  if (isConsoleQuestResult) {
-    isConsoleQuestResult = 0 === memo.xboxAndPlaystationAccounts.length;
-  }
-  if (isConsoleQuestResult) {
-    isConsoleQuestResult = !tmp3;
-  }
-  return isConsoleQuestResult;
-};
-export const useQuestHowToHelpArticle = function useQuestHowToHelpArticle() {
-  const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = accounts(504).useStateFromStoresObject(items, () => ({ fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() }));
-  ({ fetching, accounts } = stateFromStoresObject);
-  const items1 = [accounts];
-  const memo = noop.useMemo(() => {
-    const found = accounts.filter((revoked) => false === revoked.revoked);
-    const found1 = found.filter((type) => type.type === constants.XBOX);
-    const found2 = found.filter((type) => type.type === constants.PLAYSTATION);
-    return { xboxAccounts: found1, playstationAccounts: found2, xboxAndPlaystationAccounts: found1.concat(found2) };
-  }, items1);
-  const obj = accounts(504);
-  const articleURL = HelpdeskUtilsDefault.getArticleURL(constants6.QUEST_HOW_TO_PLAYSTATION);
-  const articleURL1 = HelpdeskUtilsDefault.getArticleURL(constants6.QUEST_HOW_TO_XBOX);
-  const intl = accounts(1115).intl;
-  const formatResult = intl.format(accounts(1115).t.beN4DG, { psHelpdeskArticle: articleURL, xboxHelpdeskArticle: articleURL1 });
-  const intl2 = accounts(1115).intl;
-  let tmp8 = articleURL1;
-  if (memo.playstationAccounts.length > 0) {
-    tmp8 = articleURL;
-  }
-  if (memo.xboxAccounts.length <= 0) {
-    let tmp10 = formatResult;
-    if (!tmp3) {
-      tmp10 = formatResult;
-    }
-    const obj4 = { message: tmp10, xboxURL: articleURL1, playstationURL: articleURL };
-    return obj4;
-  }
-  tmp10 = intl2.format(accounts(1115).t.HVS7nh, { helpdeskArticle: tmp8 });
-};
-export const QuestProgressState = obj2;
-export const useProgressState = function useProgressState(quest) {
-  const userStatus = quest.userStatus;
-  let enrolledAt;
-  if (userStatus != null) {
-    enrolledAt = userStatus.enrolledAt;
-  }
-  const userStatus2 = quest.userStatus;
-  let completedAt;
-  if (userStatus2 != null) {
-    completedAt = userStatus2.completedAt;
-  }
-  const userStatus3 = quest.userStatus;
-  if (userStatus3 != null) {
-    const claimedAt = userStatus3.claimedAt;
-  }
-  if (typeof useQuestTaskDetails === "function") {
-    closure_0 = quest;
-    const items = [quest];
-    const callback = noop.useCallback(() => QuestTaskUtils.getQuestTaskDetails(closure_0), items);
-    [first, closure_2] = noop.useState(callback());
-    const items1 = [callback];
-    const callback1 = noop.useCallback(() => dependencyMap(importDefault()), items1);
-    const tmp13 = useIsQuestProgressing(quest);
-    _slicedToArray = tmp13;
-    const items2 = [quest, tmp13, callback1];
-    const effect = noop.useEffect(() => {
-      userStatus = userStatus.userStatus;
-      let enrolledAt;
-      if (userStatus != null) {
-        enrolledAt = userStatus.enrolledAt;
-      }
-      if (null != enrolledAt) {
-        const userStatus2 = tmp.userStatus;
-        let completedAt;
-        if (userStatus2 != null) {
-          completedAt = userStatus2.completedAt;
-        }
-        if (null == completedAt) {
-          const userStatus3 = tmp.userStatus;
-          let claimedAt;
-          if (userStatus3 != null) {
-            claimedAt = userStatus3.claimedAt;
-          }
-          if (null == claimedAt) {
-            if (closure_4) {
-              const _window = window;
-              userStatus = window.setInterval(() => {
-                closure_1_3();
-              }, DurationsDefault.Millis.SECOND);
-              return () => {
-                clearInterval(closure_0);
-                asyncGeneratorStep();
-              };
-            }
-          }
-        }
-      }
-      closure_3();
-    }, items2);
-    if (tmp5) {
-      let IN_PROGRESS = obj2.CLAIMED;
-    } else if (tmp4) {
-      IN_PROGRESS = obj2.COMPLETED;
-    } else {
-      if (tmp15) {
-        if (tmp2) {
-          IN_PROGRESS = obj2.IN_PROGRESS;
-        }
-      }
-      IN_PROGRESS = tmp2 ? tmp16.ACCEPTED : tmp16.UNACCEPTED;
-    }
-    return IN_PROGRESS;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  tmp4 = null != completedAt;
-};
-export const useQuestCompletionDetails = function useQuestCompletionDetails(quest) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  require("initialize");
-  [][0] = LocaleStore;
-  if (typeof useQuestTaskDetails === "function") {
-    _require = quest;
-    const items = [quest];
-    const callback = noop.useCallback(() => QuestTaskUtils.getQuestTaskDetails(closure_0), items);
-    const tmp9 = _slicedToArray(noop.useState(callback()), 2);
-    dependencyMap = tmp9[1];
-    const items1 = [callback];
-    const callback1 = noop.useCallback(() => dependencyMap(importDefault()), items1);
-    const tmp12 = useIsQuestProgressing(quest);
-    _slicedToArray = tmp12;
-    const items2 = [quest, tmp12, callback1];
-    const effect = noop.useEffect(() => {
-      userStatus = userStatus.userStatus;
-      let enrolledAt;
-      if (userStatus != null) {
-        enrolledAt = userStatus.enrolledAt;
-      }
-      if (null != enrolledAt) {
-        const userStatus2 = tmp.userStatus;
-        let completedAt;
-        if (userStatus2 != null) {
-          completedAt = userStatus2.completedAt;
-        }
-        if (null == completedAt) {
-          const userStatus3 = tmp.userStatus;
-          let claimedAt;
-          if (userStatus3 != null) {
-            claimedAt = userStatus3.claimedAt;
-          }
-          if (null == claimedAt) {
-            if (closure_4) {
-              const _window = window;
-              userStatus = window.setInterval(() => {
-                closure_1_3();
-              }, DurationsDefault.Millis.SECOND);
-              return () => {
-                clearInterval(closure_0);
-                asyncGeneratorStep();
-              };
-            }
-          }
-        }
-      }
-      closure_3();
-    }, items2);
-    let percentComplete = tmp9[0].percentComplete;
-    closure_129_0 = quest;
-    const items3 = [quest];
-    const memo = noop.useMemo(() => QuestTaskUtils.getThirdPartyTaskDetails(closure_0), items3);
-    if (null != memo) {
-      percentComplete = memo.percentComplete;
-    }
-    const obj = { completedRatio: percentComplete, percentComplete: 100 * percentComplete, completedRatioDisplay: null };
-    if (null != memo) {
-      if (!flag) {
-        let progress;
-        if (memo != null) {
-          progress = memo.progress;
-        }
-        let target;
-        if (memo != null) {
-          target = memo.target;
-        }
-        const _HermesInternal = HermesInternal;
-        let combined = "" + progress + "/" + target;
-      }
-      obj.completedRatioDisplay = combined;
-      return obj;
-    }
-    combined = require("NumberUtils").formatPercent(tmp4, percentComplete, { roundingMode: "floor" });
-    const tmpResult = require("NumberUtils");
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const useSelectedTaskPlatform = function useSelectedTaskPlatform(arg0) {
-  _require = arg0;
-  const items = [QuestStore];
-  const items1 = [require("initialize").useStateFromStores(items, () => QuestStore.selectedTaskPlatform(closure_0)), ];
-  const items2 = [arg0];
-  items1[1] = noop.useCallback((platform) => QuestActionCreators.selectTaskPlatform(closure_0, platform), items2);
-  return items1;
-};
-export { useTaskPlatformScreen };
-export const useQuestWarningTips = function useQuestWarningTips(userStatus) {
-  _require = userStatus;
-  [][0] = userStatus;
-  if (typeof useQuestTaskDetails === "function") {
-    closure_129_0 = userStatus;
-    const items = [userStatus];
-    const callback = obj.useCallback(() => QuestTaskUtils.getQuestTaskDetails(closure_0), items);
-    closure_129_1 = callback;
-    [tmp5, closure_129_2] = obj.useState(callback());
-    const items1 = [callback];
-    const callback1 = obj.useCallback(() => dependencyMap(importDefault()), items1);
-    closure_129_3 = callback1;
-    const tmp8 = useIsQuestProgressing(userStatus);
-    closure_129_4 = tmp8;
-    const items2 = [userStatus, tmp8, callback1];
-    const effect = obj.useEffect(() => {
-      userStatus = userStatus.userStatus;
-      let enrolledAt;
-      if (userStatus != null) {
-        enrolledAt = userStatus.enrolledAt;
-      }
-      if (null != enrolledAt) {
-        const userStatus2 = tmp.userStatus;
-        let completedAt;
-        if (userStatus2 != null) {
-          completedAt = userStatus2.completedAt;
-        }
-        if (null == completedAt) {
-          const userStatus3 = tmp.userStatus;
-          let claimedAt;
-          if (userStatus3 != null) {
-            claimedAt = userStatus3.claimedAt;
-          }
-          if (null == claimedAt) {
-            if (closure_4) {
-              const _window = window;
-              userStatus = window.setInterval(() => {
-                closure_1_3();
-              }, DurationsDefault.Millis.SECOND);
-              return () => {
-                clearInterval(closure_0);
-                asyncGeneratorStep();
-              };
-            }
-          }
-        }
-      }
-      closure_3();
-    }, items2);
-    closure_130_0 = userStatus;
-    const tmp4 = _slicedToArray(obj.useState(callback()), 2);
-    const items3 = [QuestStore];
-    const items4 = [userStatus];
-    userStatus = userStatus.userStatus;
-    let enrolledAt;
-    const stateFromStores = require("initialize").useStateFromStores(items3, () => {
-      let isQuestExpiredResult = null != c0;
-      if (isQuestExpiredResult) {
-        isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
-      }
-      return isQuestExpiredResult;
-    }, items4);
-    if (userStatus != null) {
-      enrolledAt = userStatus.enrolledAt;
-    }
-    let tmp17 = null != enrolledAt;
-    let userStatus2 = userStatus.userStatus;
-    let completedAt;
-    if (userStatus2 != null) {
-      completedAt = userStatus2.completedAt;
-    }
-    const DESKTOP = tmp11(5669).FirstPartyQuestTaskTypesSets.DESKTOP;
-    let hasItem = DESKTOP.has(tmp5.taskType);
-    if (hasItem) {
-      hasItem = tmp5.percentComplete > 0;
-    }
-    if (tmp17) {
-      tmp17 = !tmp19;
-    }
-    if (tmp17) {
-      tmp17 = !stateFromStores;
-    }
-    if (tmp17) {
-      tmp17 = null == tmp;
-    }
-    if (tmp17) {
-      if (!hasItem) {
-        hasItem = 0 === tmp5.percentComplete && _slicedToArray(useTaskPlatformScreen(userStatus, tmp5), 1)[0] === tmp11(5664).TaskPlatformScreen.DESKTOP;
-        const tmp21 = 0 === tmp5.percentComplete && _slicedToArray(useTaskPlatformScreen(userStatus, tmp5), 1)[0] === tmp11(5664).TaskPlatformScreen.DESKTOP;
-      }
-      tmp17 = hasItem;
-    }
-    obj2 = require("initialize");
-    tmp19 = null != completedAt;
-    let tmp22 = require("PlatformUtils").isWeb() && tmp17;
-    if (tmp22) {
-      tmp22 = !tmp11(11751).isQuestSupportedOnWeb(userStatus);
-      const tmp11Result3 = tmp11(11751);
-    }
-    const tmp11Result = require("PlatformUtils");
-    let isMacResult = require("PlatformUtils").isMac();
-    if (isMacResult) {
-      isMacResult = tmp5.taskType === tmp11(5669).FirstPartyQuestTaskTypes.STREAM_ON_DESKTOP;
-    }
-    if (isMacResult) {
-      isMacResult = tmp17;
-    }
-    const items5 = [];
-    if (isMacResult) {
-      const intl = tmp11(1115).intl;
-      items5.push(intl.string(tmp11(1115).t.MFGxFM));
-    }
-    if (tmp22) {
-      const intl2 = tmp11(1115).intl;
-      items5.push(intl2.string(tmp11(1115).t.BV6xDm));
-    }
-    return items5;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export const useQuest = function useQuest(arg0) {
-  const items = [QuestStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => quests.quests);
-  value = stateFromStores.get(arg0);
-  if (value == null) {
-    value = null;
-  }
-  return value;
-};
-export const useNonNullableQuest = function useNonNullableQuest(questId, callback) {
-  _require = questId;
-  closure_1 = callback;
-  let items = [QuestStore];
-  const items1 = [questId];
-  stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.getQuest(closure_0), items1);
-  if (stateFromStores == null) {
-    stateFromStores = null;
-  }
-  const items2 = [stateFromStores, questId, callback];
-  const effect = noop.useEffect(() => {
-    if (null == stateFromStores) {
-      const quests = QuestStore.quests;
-      const items = [];
-      HermesBuiltin.arraySpread(quests.keys(), 0);
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const error = new Error("Quest unexpectedly missing from store: " + questId);
-      obj2 = { tags: { source: "useNonNullableQuest" }, extra: null };
-      const obj5 = { questId, storeQuestIds: items, storeSize: items.length, isFetchingCurrentQuests: null, lastFetchedCurrentQuests: null };
-      ({ isFetchingCurrentQuests: obj3.isFetchingCurrentQuests, lastFetchedCurrentQuests: obj3.lastFetchedCurrentQuests } = QuestStore);
-      obj2.extra = obj5;
-      const result = QuestDataUtils.captureQuestsException(error, obj2);
-      if (closure_1 != null) {
-        closure_1();
-      }
-    }
-  }, items2);
-  return stateFromStores;
-};
-export const useQuestBarOrDockModeChangeTracking = function useQuestBarOrDockModeChangeTracking(mode) {
-  mode = mode.mode;
-  const questContent = mode.questContent;
-  const sourceQuestContent = mode.sourceQuestContent;
-  if ("questId" in mode) {
-    const questId = mode.questId;
-    let tmp3 = questId;
-  } else {
-    const adContentId = mode.adContentId;
-    const adCreativeType = mode.adCreativeType;
-  }
-  const items = [questContent, sourceQuestContent, tmp3, tmp, tmp2];
-  const callback = sourceQuestContent.useCallback((mode, prevMode) => {
-    if (null != questId) {
-      obj2 = { mode, prevMode, questContent, questId: tmp, sourceQuestContent };
-      const result = AnalyticsActions.trackQuestContentQuestBarOrDockModeChange(obj2);
-    } else {
-      let tmp3 = null != adContentId;
-      if (tmp3) {
-        tmp3 = null != adCreativeType;
-      }
-      if (tmp3) {
-        const obj4 = { adContentId: tmp2, adCreativeType, mode, prevMode, questContent, sourceQuestContent };
-        const result1 = AnalyticsActions.trackAdContentQuestBarOrDockModeChange(obj4);
-      }
-      tmp2 = adContentId;
-    }
-  }, items);
-  if (tmp3 == null) {
-    tmp3 = tmp;
-  }
-  LocaleStore = tmp3;
-  sourceQuestContent.useRef(null);
-  const items1 = [mode, tmp3, callback];
-  const effect = obj.useEffect(() => {
-    let tmp = null != closure_7;
-    if (tmp) {
-      tmp = ref.current !== mode;
-    }
-    if (tmp) {
-      callback(mode, ref.current);
-      ref.current = mode;
-    }
-  }, items1);
-  const items2 = [tmp3, callback];
-  const effect1 = obj.useEffect(() => null != closure_7 ? (() => {
-    callback(null, ref.current);
-  }) : undefined, items2);
-};
-export const useCosponsoredLogotypeAsset = function useCosponsoredLogotypeAsset(arg0, arg1) {
-  _require = arg0;
-  importDefault = arg1;
-  const items = [QuestStore];
-  const items1 = [arg0];
-  stateFromStores = require("initialize").useStateFromStores(items, () => QuestStore.getQuest(closure_0), items1);
-  const tmp2 = require("useTheme")();
-  closure_3 = tmp2;
-  const items2 = [tmp2, arg1, stateFromStores];
-  return noop.useMemo(() => {
-    if (null == stateFromStores) {
-      return null;
-    } else if (closure_1 != null) {
-      return AssetUtils.getQuestAsset(tmp, AssetUtils.QuestAssetType.COSPONSOR_LOGO_TYPE, tmp11);
-    } else {
-      shared.isThemeDark(closure_3) ? constants.DARK : constants.LIGHT;
-    }
-  }, items2);
-};
-export const useClaimedCollectibleRewardMessage = function useClaimedCollectibleRewardMessage(config) {
-  const items = [UserStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const defaultRewardName = QuestRewardUtils.getDefaultRewardName(config, stateFromStores);
-  const collectibleQuestRewardDuration = QuestRewardUtils.getCollectibleQuestRewardDuration(config);
-  const collectibleQuestRewardExtendableExpirationDate = QuestRewardUtils.getCollectibleQuestRewardExtendableExpirationDate(config);
-  const result = QuestRewardUtils.isCollectibleQuestRewardPermanentWithPremiumSubscription(config);
-  const result1 = QuestRewardUtils.isCollectibleQuestRewardPremiumExtendable(config);
-  const isPremiumResult = PremiumUtils.isPremium(stateFromStores, PremiumTypes.TIER_2);
-  if (null == collectibleQuestRewardDuration) {
-    const intl2 = tmp(1115).intl;
-    const obj8 = { decorationName: defaultRewardName };
-    return intl2.formatToPlainString(tmp(1115).t.l9uXL8, obj8);
-  } else {
-    const intl3 = tmp(1115).intl;
-    const obj9 = { rewardName: defaultRewardName };
-    const intl4 = tmp(1115).intl;
-    const obj10 = { rewardName: defaultRewardName, expirationDate: collectibleQuestRewardExtendableExpirationDate };
-    const formatToPlainStringResult = intl3.formatToPlainString(tmp(1115).t.o97tNn, obj9);
-    const intl5 = tmp(1115).intl;
-    const obj11 = { rewardName: defaultRewardName, duration: collectibleQuestRewardDuration };
-    let formatToPlainStringResult2 = intl5.formatToPlainString(tmp(1115).t.ie4YK0, obj11);
-    const intl6 = tmp(1115).intl;
-    const obj12 = { duration: collectibleQuestRewardDuration, rewardName: defaultRewardName };
-    let formatToPlainStringResult3 = intl6.formatToPlainString(tmp(1115).t.yCpc0U, obj12);
-    if (result1) {
-      if (result) {
-        if (isPremiumResult) {
-          formatToPlainStringResult2 = formatToPlainStringResult;
-        }
-        formatToPlainStringResult3 = formatToPlainStringResult2;
-      } else if (isPremiumResult) {
-        formatToPlainStringResult3 = formatToPlainStringResult1;
-      }
-    } else {
-      const intl = tmp(1115).intl;
-      const obj13 = { duration: collectibleQuestRewardDuration, decorationName: defaultRewardName };
-      return intl.formatToPlainString(tmp(1115).t.tTlItm, obj13);
-    }
-    formatToPlainStringResult1 = intl4.formatToPlainString(tmp(1115).t.PkyRZo, obj10);
-  }
-};
-export const useLaunchInGameActivityQuest = function useLaunchInGameActivityQuest(quest) {
-  obj2 = { launchInGameActivity: null };
-  const activityApplicationId = QuestTaskUtils.getActivityApplicationId(quest);
-  obj2.launchInGameActivity = useRefocusOrLaunchActivityDefault({ applicationId: activityApplicationId });
-  return obj2;
-};
-export const useIsPreviewerOnAnyQuest = function useIsPreviewerOnAnyQuest() {
-  const items = [QuestStore];
-  const stateFromStoresArray = initialize.useStateFromStoresArray(items, () => {
-    quests = quests.quests;
-    const items = [...quests.values()];
-    return items;
-  });
-  return stateFromStoresArray.some((preview) => preview.preview);
-};
-export const useShouldShowPreviewToolTab = function useShouldShowPreviewToolTab() {
-  let items = [QuestStore];
-  const stateFromStoresArray = initialize.useStateFromStoresArray(items, () => {
-    quests = quests.quests;
-    const items = [...quests.values()];
-    return items;
-  });
-  return stateFromStoresArray.some((preview) => preview.preview);
-};
-export const useShouldShowQuestsActivityPanelItem = function useShouldShowQuestsActivityPanelItem(userStatus) {
-  let userStatus1;
-  if (userStatus != null) {
-    userStatus1 = userStatus.userStatus;
-  }
-  let isDismissedResult = null != userStatus1;
-  if (isDismissedResult) {
-    isDismissedResult = require("QuestDataUtils").isDismissed(userStatus.userStatus, require("QuestTypes").QuestContent.ACTIVITY_PANEL);
-    const obj = require("QuestDataUtils");
-  }
-  let tmp5 = userStatus;
-  if (userStatus == null) {
-    tmp5 = null;
-  }
-  _require = tmp5;
-  const items = [QuestStore];
-  const items1 = [tmp5];
-  let claimedAt;
-  const stateFromStores = require("initialize").useStateFromStores(items, () => {
-    let isQuestExpiredResult = null != c0;
-    if (isQuestExpiredResult) {
-      isQuestExpiredResult = QuestStore.isQuestExpired(tmp.id);
-    }
-    return isQuestExpiredResult;
-  }, items1);
-  if (userStatus != null) {
-    userStatus = userStatus.userStatus;
-    if (userStatus != null) {
-      claimedAt = userStatus.claimedAt;
-    }
-  }
-  obj2 = require("initialize");
-  const tmp11 = null != claimedAt;
-  const tmp8 = QuestStore;
-  const items2 = [tmp8];
-  const stateFromStores1 = require("initialize").useStateFromStores(items2, () => null != QuestStore.questEnrollmentBlockedUntil, []);
-  if (!isDismissedResult) {
-    isDismissedResult = stateFromStores;
-  }
-  if (!isDismissedResult) {
-    isDismissedResult = tmp11;
-  }
-  if (!isDismissedResult) {
-    isDismissedResult = stateFromStores1;
-  }
-  return !isDismissedResult;
-};
-export const useQuestsWithPreviewAccess = function useQuestsWithPreviewAccess() {
-  let items = [QuestStore];
-  stateFromStoresArray = stateFromStoresArray(504).useStateFromStoresArray(items, () => {
-    quests = quests.quests;
-    const items = [...quests.values()];
-    return items;
-  });
-  const items1 = [stateFromStoresArray];
-  return noop.useMemo(() => stateFromStoresArray.filter((preview) => preview.preview), items1);
-};
-export const useQuestHomeFilterOptions = function useQuestHomeFilterOptions() {
-  closure_0 = closure_18;
-  const items = [closure_18];
-  return noop.useMemo(() => closure_0.map((item) => {
-    [tmp, tmp2] = item;
-    const obj = { heading: closure_1_0(closure_1_2[37]).getFilterGroupHeadingText(tmp), options: tmp2 };
-    return obj;
-  }), items);
-};
-export const useQuestHomeSortOptions = function useQuestHomeSortOptions() {
-  return noop.useMemo(() => {
-    const keys = Object.keys(constants3);
-    return keys.map((item) => {
-      const obj = { label: closure_1_0(closure_1_2[37]).getSortMethodText(dependencyMap[item]), value: dependencyMap[item] };
-      return obj;
-    });
-  }, []);
-};
-export const useQuestHomeSortingFilteringAnalytics = function useQuestHomeSortingFilteringAnalytics(selectedSortMethod) {
-  selectedSortMethod = selectedSortMethod.selectedSortMethod;
-  const selectedFilters = selectedSortMethod.selectedFilters;
-  const numQuestsVisible = selectedSortMethod.numQuestsVisible;
-  noop.useRef(null);
-  noop.useRef(null);
-  const items = [selectedSortMethod];
-  const effect = noop.useEffect(() => {
-    AnalyticsUtilsDefault.track(constants7.QUEST_HOME_SORT_METHOD_CHANGED, { sort_method: selectedSortMethod, previous_sort_method: ref.current });
-    ref.current = selectedSortMethod;
-  }, items);
-  const items1 = [selectedFilters, numQuestsVisible];
-  const effect1 = noop.useEffect(() => {
-    const mapped = selectedFilters.map((item) => item.filter);
-    obj2 = { filters: mapped, previous_filters: null, num_quests_visible: null };
-    let current = ref2.current;
-    if (current == null) {
-      current = [];
-    }
-    obj2.previous_filters = current;
-    obj2.num_quests_visible = numQuestsVisible;
-    AnalyticsUtilsDefault.track(constants7.QUEST_HOME_FILTERS_CHANGED, obj2);
-    ref2.current = mapped;
-  }, items1);
-};
-export const useShouldShowQuestPreviewOverrides = function useShouldShowQuestPreviewOverrides(quest) {
-  let preview = noop.useMemo(() => {
-    currentUser = currentUser.getCurrentUser();
-    let isStaffResult;
-    if (currentUser != null) {
-      isStaffResult = currentUser.isStaff();
-    }
-    return true === isStaffResult;
-  }, []);
-  if (!preview) {
-    preview = quest.preview;
-  }
-  return preview;
-};
-export const useQuestHomeHeroShelf = function useQuestHomeHeroShelf(questIds) {
-  const items = [QuestStore];
-  stateFromStores = stateFromStores(504).useStateFromStores(items, () => quests.quests);
-  questIds = undefined;
-  if (questIds != null) {
-    questIds = questIds.questIds;
-  }
-  const items1 = [stateFromStores, questIds];
-  return noop.useMemo(() => {
-    if (null == questIds) {
-      obj2 = { shelfQuests: [], isShelfEnabled: false };
-      return obj2;
-    } else {
-      const mapped = arr.map((item) => stateFromStores.get(item));
-      const found = mapped.filter(GlobalUtils.isNotNullish);
-      const found1 = found.filter((item) => !stateFromStores(closure_1_2[19]).isQuestExpired(item));
-      if (found1.length <= 1) {
-        const obj3 = { shelfQuests: [], isShelfEnabled: false };
-        let obj = obj3;
-      } else {
-        obj = { shelfQuests: found1, isShelfEnabled: true };
-      }
-      return obj;
-    }
-    arr = questIds;
-  }, items1);
-};
+export const useWaitingForConsoleConnection = tmp26;
+export const useQuestHowToHelpArticle = tmp27;
+export const QuestProgressState = obj27;
+export const useProgressState = tmp28;
+export const useQuestCompletionDetails = tmp29;
+export const useSelectedTaskPlatform = tmp30;
+export const useTaskPlatformScreen = tmp31;
+export const useQuestWarningTips = tmp32;
+export const useQuest = tmp33;
+export const useNonNullableQuest = tmp34;
+export const useQuestBarOrDockModeChangeTracking = tmp35;
+export const useCosponsoredLogotypeAsset = tmp36;
+export const useClaimedCollectibleRewardMessage = tmp37;
+export const useLaunchInGameActivityQuest = tmp38;
+export const useIsPreviewerOnAnyQuest = tmp39;
+export const useShouldShowPreviewToolTab = fn;
+export const useShouldShowQuestsActivityPanelItem = tmp41;
+export const useQuestsWithPreviewAccess = tmp42;
+export const useQuestHomeFilterOptions = tmp43;
+export const useQuestHomeSortOptions = tmp44;
+export const useQuestHomeSortingFilteringAnalytics = tmp45;
+export const useShouldShowQuestPreviewOverrides = tmp46;
+export const useQuestHomeHeroShelf = tmp47;
 export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
@@ -1973,16 +4438,16 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
   const previewAdCreativeIds = obj.previewAdCreativeIds;
   let enabled2;
   c3 = undefined;
-  const QuestHomeBountiesFeatureGateExperiment = previewAdCreativeIds(enabled2[53]).QuestHomeBountiesFeatureGateExperiment;
+  const QuestHomeBountiesFeatureGateExperiment = previewAdCreativeIds(enabled2[55]).QuestHomeBountiesFeatureGateExperiment;
   const enabled = QuestHomeBountiesFeatureGateExperiment.useConfig({ location: constants2.QUEST_HOME_MOBILE }).enabled;
-  const BountyStaleRefreshQuestHomeExperiment = previewAdCreativeIds(enabled2[54]).BountyStaleRefreshQuestHomeExperiment;
+  const BountyStaleRefreshQuestHomeExperiment = previewAdCreativeIds(enabled2[56]).BountyStaleRefreshQuestHomeExperiment;
   enabled2 = BountyStaleRefreshQuestHomeExperiment.useConfig({ location: constants2.QUEST_HOME_MOBILE }).enabled;
   [tmp2, c3] = noop.useState(enabled);
-  obj2 = { location: constants2.QUEST_HOME_MOBILE };
-  const obj3 = { location: constants2.QUEST_HOME_MOBILE };
+  let obj2 = { location: constants2.QUEST_HOME_MOBILE };
+  obj3 = { location: constants2.QUEST_HOME_MOBILE };
   const tmp = _slicedToArray(noop.useState(enabled), 2);
   const items = [BountyStore];
-  const stateFromStoresObject = previewAdCreativeIds(enabled2[14]).useStateFromStoresObject(items, () => ({ isFetching: BountyStore.isFetchingQuestHomeBounties, questHomeBounties: BountyStore.questHomeBounties }));
+  const stateFromStoresObject = previewAdCreativeIds(enabled2[16]).useStateFromStoresObject(items, () => ({ isFetching: BountyStore.isFetchingQuestHomeBounties, questHomeBounties: BountyStore.questHomeBounties }));
   const items1 = [enabled, enabled2, previewAdCreativeIds];
   ({ isFetching, questHomeBounties } = stateFromStoresObject);
   const effect = noop.useEffect(() => {
@@ -2004,10 +4469,10 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          obj2 = { value, done: true };
+          const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2029,13 +4494,13 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
                 if (arr.length > 0) {
                   c1 = 3;
                   c4 = 1;
-                  const obj6 = { value: previewAdCreativeIds(11776).fetchBountyPreview(arr, previewAdCreativeIds(5664).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
+                  const obj6 = { value: previewAdCreativeIds(11645).fetchBountyPreview(arr, previewAdCreativeIds(5666).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
                   return obj6;
                 }
               }
               c1 = 2;
               c4 = 1;
-              const obj7 = { value: previewAdCreativeIds(11776).fetchQuestHomeBounties(previewAdCreativeIds(5664).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
+              const obj7 = { value: previewAdCreativeIds(11645).fetchQuestHomeBounties(previewAdCreativeIds(5666).AdPlacement.VIDEO_MODAL_MOBILE), done: false };
               return obj7;
             }
           } else if (1 === tmp7) {
@@ -2075,7 +4540,7 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
               v0(false);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp34) {
           closure_2 = tmp34;
@@ -2095,7 +4560,7 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
       if (interval) {
         const _window = window;
         interval = window.setInterval(() => {
-          if (Date.now() - c1 > closure_49) {
+          if (Date.now() - c1 > closure_62) {
             loadBounties();
           }
         }, MINUTE);
@@ -2118,27 +4583,56 @@ export const useFetchQuestHomeBounties = function useFetchQuestHomeBounties(arg0
   }
   return obj6;
 };
-export const useQuestHomeBounties = function useQuestHomeBounties() {
-  const items = [BountyStore];
-  return initialize.useStateFromStoresObject(items, () => ({ questHomeBounties: BountyStore.questHomeBounties, isFetching: BountyStore.isFetchingQuestHomeBounties }));
-};
-export const useQuestBarImpressionSurvey = function useQuestBarImpressionSurvey(quest) {
-  _require = quest;
+export const useQuestHomeBounties = tmp48;
+export const useQuestBarImpressionSurvey = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus) => {
+  _require = userStatus;
+  const cResult = require("c").c(4);
   const DropsOptedOut = require("UserSettings").DropsOptedOut;
   const setting = DropsOptedOut.useSetting();
-  const userStatus = quest.userStatus;
+  userStatus = userStatus.userStatus;
+  let enrolledAt;
+  if (userStatus != null) {
+    enrolledAt = userStatus.enrolledAt;
+  }
+  dependencyMap = tmp4;
+  if (cResult[0] === setting) {
+    if (cResult[1] === tmp4) {
+      if (cResult[2] === userStatus.id) {
+        let tmp5 = cResult[3];
+      }
+      return tmp5;
+    }
+  }
+  const fn = function s() {
+    if (!closure_2) {
+      const fireSurveyAction = QualtricsActionCreators.fireSurveyAction;
+      const obj = { quest_id: userStatus.id };
+      fireSurveyAction(setting ? fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_OUT : fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_IN, obj);
+      const tmp4 = setting ? fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_OUT : fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_IN;
+    }
+  };
+  cResult[0] = setting;
+  cResult[1] = null != enrolledAt;
+  cResult[2] = userStatus.id;
+  cResult[3] = fn;
+  tmp5 = fn;
+}) : ((userStatus) => {
+  _require = userStatus;
+  const DropsOptedOut = require("UserSettings").DropsOptedOut;
+  const setting = DropsOptedOut.useSetting();
+  userStatus = userStatus.userStatus;
   let enrolledAt;
   if (userStatus != null) {
     enrolledAt = userStatus.enrolledAt;
   }
   dependencyMap = tmp3;
-  const items = [setting, null != enrolledAt, quest.id];
+  const items = [setting, null != enrolledAt, userStatus.id];
   return noop.useCallback(() => {
     if (!closure_2) {
       const fireSurveyAction = QualtricsActionCreators.fireSurveyAction;
-      const obj = { quest_id: quest.id };
+      const obj = { quest_id: userStatus.id };
       fireSurveyAction(setting ? fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_OUT : fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_IN, obj);
       const tmp4 = setting ? fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_OUT : fireSurveyAction.AD_IMPRESSION_QUEST_BAR_OPT_IN;
     }
   }, items);
-};
+});

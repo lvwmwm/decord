@@ -1,19 +1,20 @@
-// Module ID: 5323
-// Function ID: 5324
+// Module ID: 5325
+// Function ID: 5326
 // Name: useGameMentionData
-// Dependencies: [2000, 5324, 1372, 5327, 504, 558, 2]
-// Exports: getGameMentionData, useGameMentionData
+// Dependencies: [2004, 5326, 1376, 5329, 558, 568, 504, 560, 2]
+// Exports: getGameMentionData
 
-// Module 5323 (useGameMentionData)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5327 */;
-import GameStore from "GameStore" /* 2000 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5324 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 5325 (useGameMentionData)
+import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5329 */;
+import GameStore from "GameStore" /* 2004 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5326 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
 
@@ -44,10 +45,60 @@ export const getGameMentionData = function getGameMentionData(gameId) {
   }
   return tmp4;
 };
-export const useGameMentionData = function useGameMentionData(gameId) {
-  _require = gameId;
+export const useGameMentionData = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameStore, GameAutocompleteStore, UserStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function c() {
+      const currentUser = UserStore.getCurrentUser();
+      const game = GameStore.getGame(closure_0);
+      const gameById = GameAutocompleteStore.getGameById(closure_0);
+      if (null != game) {
+        let nsfwAllowed;
+        if (currentUser != null) {
+          nsfwAllowed = currentUser.nsfwAllowed;
+        }
+        if (!obj2.isGameProfileObscured(game, nsfwAllowed)) {
+          const obj4 = { gameId: tmp, gameName: null, gameIcon: null };
+          ({ name: obj3.gameName, media } = game);
+          let icon;
+          if (media != null) {
+            icon = media.icon;
+          }
+          obj4.gameIcon = icon;
+          let tmp5 = obj4;
+        }
+        obj2 = useGameProfileObscured;
+      } else if (null != gameById) {
+        const obj = { gameId: tmp, gameName: null, gameIcon: null };
+        ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
+        tmp5 = obj;
+      }
+      return tmp5;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp9 = items1;
+    let tmp8 = fn;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  let obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp8, tmp9, discord_common_shallowEqualDefault);
+}) : ((arg0) => {
+  _require = arg0;
   const items = [GameStore, GameAutocompleteStore, UserStore];
-  const items1 = [gameId];
+  const items1 = [arg0];
   return require("initialize").useStateFromStores(items, () => {
     const currentUser = UserStore.getCurrentUser();
     const game = GameStore.getGame(closure_0);
@@ -75,4 +126,4 @@ export const useGameMentionData = function useGameMentionData(gameId) {
     }
     return tmp5;
   }, items1, discord_common_shallowEqualDefault);
-};
+});

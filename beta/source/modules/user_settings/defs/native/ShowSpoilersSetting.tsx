@@ -1,47 +1,113 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15733
+// Function ID: 15734
 // Name: ShowSpoilersSetting
-// Dependencies: [19, 8233, 1074, 2019, 1115, 11725, 2]
+// Dependencies: [19, 8238, 1078, 2023, 558, 568, 1119, 11594, 2]
 
-// Module 15744 (ShowSpoilersSetting)
-import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
+// Module 15733 (ShowSpoilersSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import UserSettings from "UserSettings" /* 2023 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SpoilerRenderSetting = fn(1074).SpoilerRenderSetting;
-const SettingBuilders = fn(11725);
+const SpoilerRenderSetting = fn(1078).SpoilerRenderSetting;
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { label: null, value: null };
+    const intl = tmp(1119).intl;
+    obj2.label = intl.string(tmp(1119).t["KFH/me"]);
+    obj2.value = SpoilerRenderSetting.ON_CLICK;
+    const items = [obj2, , ];
+    const obj3 = { label: null, value: null };
+    const intl2 = tmp(1119).intl;
+    obj3.label = intl2.string(tmp(1119).t.Pe1RbL);
+    obj3.value = SpoilerRenderSetting.ALWAYS;
+    items[1] = obj3;
+    const obj4 = { label: null, value: null };
+    const intl3 = tmp(1119).intl;
+    obj4.label = intl3.string(tmp(1119).t.K5VTBE);
+    obj4.value = SpoilerRenderSetting.IF_MODERATOR;
+    items[2] = obj4;
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => noop.useMemo(() => {
+  const obj = { label: null, value: null };
+  const intl = util.intl;
+  obj.label = intl.string(util.t["KFH/me"]);
+  obj.value = constants.ON_CLICK;
+  const items = [obj, , ];
+  const obj2 = { label: null, value: null };
+  const intl2 = util.intl;
+  obj2.label = intl2.string(util.t.Pe1RbL);
+  obj2.value = constants.ALWAYS;
+  items[1] = obj2;
+  const obj3 = { label: null, value: null };
+  const intl3 = util.intl;
+  obj3.label = intl3.string(util.t.K5VTBE);
+  obj3.value = constants.IF_MODERATOR;
+  items[2] = obj3;
+  return items;
+}, []));
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.QgwmVz);
   },
-  parent: fn(8233).MobileUserSettings.CHAT,
-  useValue: fn(2019).RenderSpoilers.useSetting,
+  parent: fn(8238).MobileUserSettings.CHAT,
+  useValue: fn(2023).RenderSpoilers.useSetting,
   onValueChange: function onShowSpoilersChange(arg0) {
     const RenderSpoilers = UserSettings.RenderSpoilers;
     RenderSpoilers.updateSetting(arg0);
   },
-  useOptions: function useShowSpoilersOptions() {
-    return noop.useMemo(() => {
-      const obj = { label: null, value: null };
-      const intl = util.intl;
-      obj.label = intl.string(util.t["KFH/me"]);
-      obj.value = constants.ON_CLICK;
-      const items = [obj, , ];
+  useOptions: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(1);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { label: null, value: null };
-      const intl2 = util.intl;
-      obj2.label = intl2.string(util.t.Pe1RbL);
-      obj2.value = constants.ALWAYS;
-      items[1] = obj2;
+      const intl = tmp(1119).intl;
+      obj2.label = intl.string(tmp(1119).t["KFH/me"]);
+      obj2.value = SpoilerRenderSetting.ON_CLICK;
+      const items = [obj2, , ];
       const obj3 = { label: null, value: null };
-      const intl3 = util.intl;
-      obj3.label = intl3.string(util.t.K5VTBE);
-      obj3.value = constants.IF_MODERATOR;
-      items[2] = obj3;
-      return items;
-    }, []);
-  }
+      const intl2 = tmp(1119).intl;
+      obj3.label = intl2.string(tmp(1119).t.Pe1RbL);
+      obj3.value = SpoilerRenderSetting.ALWAYS;
+      items[1] = obj3;
+      const obj4 = { label: null, value: null };
+      const intl3 = tmp(1119).intl;
+      obj4.label = intl3.string(tmp(1119).t.K5VTBE);
+      obj4.value = SpoilerRenderSetting.IF_MODERATOR;
+      items[2] = obj4;
+      cResult[0] = items;
+      let first = items;
+    } else {
+      first = cResult[0];
+    }
+    return first;
+  }) : (() => noop.useMemo(() => {
+    const obj = { label: null, value: null };
+    const intl = util.intl;
+    obj.label = intl.string(util.t["KFH/me"]);
+    obj.value = constants.ON_CLICK;
+    const items = [obj, , ];
+    const obj2 = { label: null, value: null };
+    const intl2 = util.intl;
+    obj2.label = intl2.string(util.t.Pe1RbL);
+    obj2.value = constants.ALWAYS;
+    items[1] = obj2;
+    const obj3 = { label: null, value: null };
+    const intl3 = util.intl;
+    obj3.label = intl3.string(util.t.K5VTBE);
+    obj3.value = constants.IF_MODERATOR;
+    items[2] = obj3;
+    return items;
+  }, []))
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowSpoilersSetting.tsx");

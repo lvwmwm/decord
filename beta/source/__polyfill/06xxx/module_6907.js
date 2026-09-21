@@ -1,23 +1,14 @@
 // Module ID: 6907
 // Function ID: 6908
-// Dependencies: [6908, 6996, 6997, 7008]
+// Dependencies: [106, 65]
 
 // Module 6907
-import _mod6908 from "module_6908" /* 6908 */;
-import ScrollView from "ScrollView" /* 6996 */;
-import hitSlopDefault from "hitSlop" /* 6997 */;
-import Touchable from "Touchable" /* 7008 */;
+import weakSet from "weakSet" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerDetector", directEventTypes: { topGestureHandlerEvent: { registrationName: "onGestureHandlerEvent" }, topGestureHandlerStateChange: { registrationName: "onGestureHandlerStateChange" }, topGestureHandlerTouchEvent: { registrationName: "onGestureHandlerTouchEvent" }, topGestureHandlerReanimatedEvent: { registrationName: "onGestureHandlerReanimatedEvent" }, topGestureHandlerReanimatedStateChange: { registrationName: "onGestureHandlerReanimatedStateChange" }, topGestureHandlerReanimatedTouchEvent: { registrationName: "onGestureHandlerReanimatedTouchEvent" }, topGestureHandlerAnimatedEvent: { registrationName: "onGestureHandlerAnimatedEvent" } }, validAttributes: null };
+const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onGestureHandlerEvent: true, onGestureHandlerStateChange: true, onGestureHandlerTouchEvent: true, onGestureHandlerReanimatedEvent: true, onGestureHandlerReanimatedStateChange: true, onGestureHandlerReanimatedTouchEvent: true, onGestureHandlerAnimatedEvent: true }));
+__INTERNAL_VIEW_CONFIG.validAttributes = { handlerTags: true, moduleId: true, virtualChildren: true, pointerEvents: true };
 
-export const BaseButton = _mod6908.BaseButton;
-export const BorderlessButton = _mod6908.BorderlessButton;
-export const PureNativeButton = _mod6908.PureNativeButton;
-export const RawButton = _mod6908.RawButton;
-export const RectButton = _mod6908.RectButton;
-export const FlatList = ScrollView.FlatList;
-export const RefreshControl = ScrollView.RefreshControl;
-export const ScrollView = ScrollView.ScrollView;
-export const Switch = ScrollView.Switch;
-export const TextInput = ScrollView.TextInput;
-export const Pressable = hitSlopDefault;
-export const Touchable = Touchable.Touchable;
+export default module_65.get("RNGestureHandlerDetector", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

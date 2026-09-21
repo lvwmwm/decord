@@ -1,9 +1,9 @@
 // Module ID: 5283
 // Function ID: 5284
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 5283
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0e8c9cd01e5a3da643cc71e6763376dc", name: "ExperimentalLfgLockIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7a4c4444d71334d193c868d5d6b78800", name: "BookCheckIcon", type: "png" });

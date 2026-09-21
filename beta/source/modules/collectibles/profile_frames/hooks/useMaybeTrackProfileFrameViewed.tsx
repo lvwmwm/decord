@@ -1,13 +1,13 @@
-// Module ID: 8482
-// Function ID: 8483
+// Module ID: 8487
+// Function ID: 8488
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: [19, 7784, 563, 8460, 2]
+// Dependencies: [19, 7789, 565, 8465, 2]
 // Exports: default
 
-// Module 8482 (useMaybeTrackProfileFrameViewed)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8460 */;
+// Module 8487 (useMaybeTrackProfileFrameViewed)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8465 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7789 */;
 import size from "module_2" /* 2 */;
 
 ({ useEffect: c2, useRef: c3 } = noop);
@@ -43,7 +43,7 @@ export default function useMaybeTrackProfileFrameViewed(skuId) {
         if (ref.current == null) {
           tmp9.current = timestamp - tmp22;
         }
-        let state;
+        state = undefined;
         if (stateFromStores != null) {
           state = tmp10.state;
         }

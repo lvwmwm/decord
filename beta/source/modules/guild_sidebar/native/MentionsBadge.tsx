@@ -1,19 +1,34 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16570
+// Function ID: 16571
 // Name: MentionsBadge
-// Dependencies: [19, 21, 1177, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 1181, 2]
 
-// Module 16569 (MentionsBadge)
-import native from "native" /* 1177 */;
+// Module 16570 (MentionsBadge)
+import c from "c" /* 568 */;
+import native from "native" /* 1181 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/MentionsBadge.tsx");
 
-export default function MentionsBadge(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(3);
+  ({ mentionsCount, isMentionLowImportance } = arg0);
+  if (cResult[0] === isMentionLowImportance) {
+    if (cResult[1] === mentionsCount) {
+      let tmp4 = cResult[2];
+    }
+    return tmp4;
+  }
+  const tmp5 = jsx(native.Badge, { value: mentionsCount, isMentionLowImportance });
+  cResult[0] = isMentionLowImportance;
+  cResult[1] = mentionsCount;
+  cResult[2] = tmp5;
+  tmp4 = tmp5;
+}) : ((arg0) => {
   ({ mentionsCount, isMentionLowImportance } = arg0);
   return jsx(native.Badge, { value, isMentionLowImportance });
-};
+});

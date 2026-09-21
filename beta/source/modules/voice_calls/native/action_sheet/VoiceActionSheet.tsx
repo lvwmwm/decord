@@ -1,33 +1,163 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14036
+// Function ID: 14037
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 4780, 21, 4756, 7407, 7427, 504, 4613, 4963, 14034, 14035, 7442, 14045, 14048, 14049, 5174, 14052, 2]
-// Exports: default
+// Dependencies: [19, 17, 4782, 21, 4758, 558, 568, 7409, 7429, 504, 4616, 4965, 14037, 14038, 7449, 14048, 14051, 14052, 5176, 14055, 2]
 
-// Module 14033 (VoiceActionSheet)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
-import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14034 */;
+// Module 14036 (VoiceActionSheet)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4616 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14037 */;
 import noop from "module_19" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
 
+const VisualEffectViewDefault = tmp5(5176);
+const NUFVoiceChannelsTemplateDefault = tmp5(14048);
+const GuildEventVoiceBannerDefault = tmp5(14051);
+const VoiceEmptyStateDefault = tmp5(14052);
+const VoiceMemberListDefault = tmp5(14055);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
-const obj2 = { container: { flex: 1 }, visualEffectView: null };
+const createStyles = fn(4758);
+let obj2 = { container: { flex: 1 }, visualEffectView: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3.overflow = "hidden";
 obj2.visualEffectView = obj3;
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceActionSheet.tsx");
 
-export default function VoiceActionSheet(channel) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = channel(568).c(21);
+  channel = channel.channel;
+  const tmp4 = closure_8();
+  let tmp5 = importDefault;
+  let obj = channel(568);
+  const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.VOICE_ACTION_SHEET).analyticsLocations;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SortedVoiceStateStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel.id) {
+    const fn = function s() {
+      return 0 === SortedVoiceStateStore.countVoiceStatesForChannel(channel.id);
+    };
+    cResult[1] = channel.id;
+    cResult[2] = fn;
+    let tmp9 = fn;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const stateFromStores = channel(504).useStateFromStores(first, tmp9);
+  if (cResult[3] !== channel) {
+    const fn2 = function y() {
+      const obj = NavigationRouteUtils;
+      if (!obj.isModalOpen(obj2.getVoiceChannelKey(channel.id))) {
+        VoiceActionSheetManagerDefault.initialize(channel);
+      }
+      return () => {
+        closure_1_1(closure_1_2[12]).terminate();
+      };
+    };
+    const items1 = [channel];
+    cResult[3] = channel;
+    cResult[4] = fn2;
+    cResult[5] = items1;
+    let tmp12 = items1;
+    let tmp11 = fn2;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const effect = noop.useEffect(tmp11, tmp12);
+  const tmpResult = channel(504);
+  if (tmp5Result.requiresVoiceChannelsOnboard()) {
+    if (cResult[6] !== channel) {
+      const obj2 = { children: null };
+      tmp5 = NUFVoiceChannelsTemplateDefault;
+      let obj3 = { channel };
+      obj2.children = closure_6(tmp5, obj3);
+      const tmp31 = closure_6(tmp(7449).ActionSheet, obj2);
+      cResult[6] = channel;
+      cResult[7] = tmp31;
+    }
+  } else {
+    if (stateFromStores) {
+      if (cResult[8] !== channel) {
+        const obj4 = { children: null };
+        const obj5 = { channel };
+        const items2 = [closure_6(GuildEventVoiceBannerDefault, obj5), ];
+        const obj6 = { channel };
+        items2[1] = closure_6(VoiceEmptyStateDefault, obj6);
+        obj4.children = items2;
+        const tmp28 = closure_7(tmp(7449).ActionSheet, obj4);
+        cResult[8] = channel;
+        cResult[9] = tmp28;
+        let tmp25 = tmp28;
+      } else {
+        tmp25 = cResult[9];
+      }
+      let tmp20 = tmp25;
+    } else {
+      if (cResult[10] !== tmp4.visualEffectView) {
+        const obj7 = { blurTheme: "dark", style: tmp4.visualEffectView };
+        const tmp16 = closure_6(VisualEffectViewDefault, obj7);
+        cResult[10] = tmp4.visualEffectView;
+        cResult[11] = tmp16;
+        let tmp14 = tmp16;
+      } else {
+        tmp14 = cResult[11];
+      }
+      if (cResult[12] !== channel) {
+        const obj8 = { channel };
+        const tmp19 = closure_6(VoiceMemberListDefault, obj8);
+        cResult[12] = channel;
+        cResult[13] = tmp19;
+        let tmp17 = tmp19;
+      } else {
+        tmp17 = cResult[13];
+      }
+      if (cResult[14] === tmp4.container) {
+        if (cResult[15] === tmp14) {
+          if (cResult[16] === tmp17) {
+            tmp20 = cResult[17];
+          }
+        }
+      }
+      const obj9 = { scrollable: true, startExpanded: true, children: null };
+      const obj10 = { style: tmp4.container, children: null };
+      const items3 = [tmp14, tmp17];
+      obj10.children = items3;
+      obj9.children = closure_7(closure_4, obj10);
+      const tmp24 = closure_6(tmp(7449).ActionSheet, obj9);
+      cResult[14] = tmp4.container;
+      cResult[15] = tmp14;
+      cResult[16] = tmp17;
+      cResult[17] = tmp24;
+      tmp20 = tmp24;
+    }
+    if (cResult[18] === analyticsLocations) {
+      if (cResult[19] === tmp20) {
+        let tmp33 = cResult[20];
+      }
+      return tmp33;
+    }
+    const obj11 = { value: analyticsLocations, children: tmp20 };
+    const tmp35 = closure_6(tmp(7409).AnalyticsLocationProvider, obj11);
+    cResult[18] = analyticsLocations;
+    cResult[19] = tmp20;
+    cResult[20] = tmp35;
+    tmp33 = tmp35;
+  }
+}) : ((channel) => {
   channel = channel.channel;
   const tmp = closure_8();
   const tmp4 = useAnalyticsLocationsDefault;
@@ -40,36 +170,36 @@ export default function VoiceActionSheet(channel) {
       VoiceActionSheetManagerDefault.initialize(channel);
     }
     return () => {
-      closure_1_1(closure_1_2[10]).terminate();
+      closure_1_1(closure_1_2[12]).terminate();
     };
   }, items1);
   let obj = channel(504);
   if (obj2.requiresVoiceChannelsOnboard()) {
     let obj3 = { children: null };
     const obj4 = { channel };
-    obj3.children = closure_6(tmp2(14045), obj4);
-    let children = closure_6(tmp5(7442).ActionSheet, obj3);
+    obj3.children = closure_6(tmp2(14048), obj4);
+    let children = closure_6(tmp5(7449).ActionSheet, obj3);
     let tmp8 = closure_6;
   } else if (stateFromStores) {
     const obj5 = { children: null };
     const obj6 = { channel };
-    const items2 = [closure_6(tmp2(14048), obj6), ];
+    const items2 = [closure_6(tmp2(14051), obj6), ];
     const obj7 = { channel };
-    items2[1] = closure_6(tmp2(14049), obj7);
+    items2[1] = closure_6(tmp2(14052), obj7);
     obj5.children = items2;
-    children = closure_7(tmp5(7442).ActionSheet, obj5);
+    children = closure_7(tmp5(7449).ActionSheet, obj5);
     tmp8 = closure_6;
   } else {
     tmp8 = closure_6;
     const obj8 = { scrollable: true, startExpanded: true, children: null };
     const obj9 = { style: tmp.container, children: null };
     const obj10 = { blurTheme: "dark", style: tmp.visualEffectView };
-    const items3 = [closure_6(tmp2(5174), obj10), ];
+    const items3 = [closure_6(tmp2(5176), obj10), ];
     const obj11 = { channel };
-    items3[1] = closure_6(tmp2(14052), obj11);
+    items3[1] = closure_6(tmp2(14055), obj11);
     obj9.children = items3;
     obj8.children = closure_7(closure_4, obj9);
-    children = closure_6(tmp5(7442).ActionSheet, obj8);
+    children = closure_6(tmp5(7449).ActionSheet, obj8);
   }
-  return tmp8(channel(7407).AnalyticsLocationProvider, { value: tmp4(AnalyticsLocationDefault.VOICE_ACTION_SHEET).analyticsLocations, children });
-};
+  return tmp8(channel(7409).AnalyticsLocationProvider, { value: tmp4(AnalyticsLocationDefault.VOICE_ACTION_SHEET).analyticsLocations, children });
+});

@@ -1,21 +1,21 @@
-// Module ID: 8148
-// Function ID: 8149
+// Module ID: 8153
+// Function ID: 8154
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7840, 7837, 8149, 1095, 8150, 8151, 504, 8154, 8153, 8156, 1115, 2]
+// Dependencies: [5, 19, 7845, 7842, 8154, 1099, 8155, 8156, 504, 8159, 8158, 8161, 1119, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 8148 (useConversationsHeaderButton)
-import util from "util" /* 1115 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 8151 */;
-import PaperIcon from "PaperIcon" /* 8154 */;
+// Module 8153 (useConversationsHeaderButton)
+import util from "util" /* 1119 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 8156 */;
+import PaperIcon from "PaperIcon" /* 8159 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7840 */;
+import ConversationsStore from "ConversationsStore" /* 7845 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ConversationConstants = fn(7837);
+const ConversationConstants = fn(7842);
 ({ CONVERSATION_HAS_MORE_EXPIRATION_MS: hasOwnProperty, MOBILE_FETCH_LIMIT: metroRequire, MOBILE_PREVIEW_MESSAGE_COUNT: closure_7 } = ConversationConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/conversations/components/native/useConversationsHeaderButton.tsx");
@@ -51,7 +51,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

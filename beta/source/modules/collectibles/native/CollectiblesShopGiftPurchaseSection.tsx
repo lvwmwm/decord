@@ -1,30 +1,30 @@
-// Module ID: 11282
-// Function ID: 11283
+// Module ID: 11313
+// Function ID: 11314
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8461, 7666, 1074, 1374, 21, 4756, 576, 7226, 11000, 504, 8453, 11004, 7407, 11273, 1241, 11283, 573, 4959, 5109, 11284, 1980, 1364, 11018, 4752, 1115, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 8466, 7668, 1078, 1378, 21, 4758, 580, 7224, 11037, 504, 8458, 11041, 7409, 11127, 1245, 11314, 577, 4961, 5111, 11315, 1984, 1368, 11055, 4754, 1119, 5188, 2]
 // Exports: default
 
-// Module 11282 (CollectiblesShopGiftPurchaseSection)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+// Module 11313 (CollectiblesShopGiftPurchaseSection)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import nativeDefault from "native" /* 580 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8461 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
 
 let require = fn;
 const View = fn(17).View;
-const useNativeCheckoutStore = fn(7666).useNativeCheckoutStore;
-const Constants = fn(1074);
+const useNativeCheckoutStore = fn(7668).useNativeCheckoutStore;
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_9, MarketingURLs: c10 } = Constants);
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ GiftingOrigin: closure_11, PremiumGiftStyles: closure_12 } = PremiumConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_15 = createStyles.createStyles((arg0) => {
   const obj = { container: null, disclaimer: null };
   const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_HIGH);
@@ -192,7 +192,7 @@ export default function CollectiblesShopGiftPurchaseSection(disabled) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

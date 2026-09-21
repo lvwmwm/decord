@@ -1,21 +1,22 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15599
+// Function ID: 15600
 // Name: DisplayNameStylesEffectOrder
-// Dependencies: [19, 1390, 9997, 2]
-// Exports: useVisibleEffectOrder
+// Dependencies: [19, 1394, 558, 9975, 2]
 
-// Module 15610 (DisplayNameStylesEffectOrder)
+// Module 15599 (DisplayNameStylesEffectOrder)
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 9975 */;
 import noop from "module_19" /* 19 */;
 
-const require = fn;
-const DisplayNameStylesConstants = fn(1390);
+require = fn;
+const DisplayNameStylesConstants = fn(1394);
 const EFFECT_ORDER = DisplayNameStylesConstants.EFFECT_ORDER;
 let items = [...tmp2.FLYWHEEL_EFFECTS];
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesEffectOrder.tsx");
 
-export const useVisibleEffectOrder = function useVisibleEffectOrder() {
-  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(9997).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
+export const useVisibleEffectOrder = ReactCompilerGating.isReactCompilerEnabled() ? (() => DisplayNameStylesFlywheelExperiment.useIsDisplayNameStylesFlywheelSettersEnabled("effect-order") ? items : EFFECT_ORDER) : (() => {
+  isDisplayNameStylesFlywheelSettersEnabled = isDisplayNameStylesFlywheelSettersEnabled(9975).useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
   items = [isDisplayNameStylesFlywheelSettersEnabled];
   return noop.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? items : EFFECT_ORDER, items);
-};
+});

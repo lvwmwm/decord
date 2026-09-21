@@ -1,23 +1,23 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8296
+// Function ID: 8297
 // Name: GuildAlertModeSystemMessage
-// Dependencies: [2041, 4756, 576, 8211, 8218, 8220, 1115, 8292, 8222, 1400, 1397, 2]
+// Dependencies: [2045, 4758, 580, 8216, 8223, 8225, 1119, 8297, 8227, 1404, 1401, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 8291 (GuildAlertModeSystemMessage)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8292 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 8296 (GuildAlertModeSystemMessage)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1404 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8216 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8225 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8227 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8297 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 const nativeStyleProperties = createStyles.createNativeStyleProperties({ automodUsernameColor: nativeDefault.colors.TEXT_BRAND });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildAlertModeSystemMessage.tsx");
@@ -34,14 +34,14 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   if ("" !== message.content) {
     const _Date = Date;
     const date = new Date(message.content);
-    str = date.toLocaleString(tmp5(1115).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
+    str = date.toLocaleString(tmp5(1119).intl.currentLocale, { hour: "numeric", minute: "2-digit" });
   }
   obj2.time = str;
   const obj3 = {};
-  const merged = Object.assign(tmp(8222)(roleStyle));
-  const intl = tmp5(1115).intl;
+  const merged = Object.assign(tmp(8227)(roleStyle));
+  const intl = tmp5(1119).intl;
   obj3.content = intl.formatToParts(util.t.ig55n6, obj2);
-  const intl2 = tmp5(1115).intl;
+  const intl2 = tmp5(1119).intl;
   obj3.username = intl2.string(util.t.hG1StD);
   if (automodUsernameColor == null) {
     automodUsernameColor = null;
@@ -59,7 +59,7 @@ export const createGuildAlertModeDisabledSystemMessage = function createGuildAle
   let automodUsernameColor = nativeStyleProperties(theme).automodUsernameColor;
   const tmp2 = resolveMessageContentColorsDefault(theme);
   const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
-  const obj3 = { message, channel: "HermesInternal", isSystemDM: null, colors: tmp2 };
+  const obj3 = { message, channel: "IconComponent", isSystemDM: null, colors: tmp2 };
   const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
   const obj4 = {};
   const merged = Object.assign(createCommonMessageDefault(roleStyle));

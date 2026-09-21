@@ -1,10 +1,10 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13914
+// Function ID: 13915
 // Name: ActionBatcher
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 
-// Module 13911 (ActionBatcher)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 13914 (ActionBatcher)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 let ActionBatcher;

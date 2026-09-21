@@ -1,41 +1,95 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 11858
+// Function ID: 11859
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1375, 21, 4756, 576, 4607, 5339, 1115, 9037, 7375, 1397, 4412, 2]
-// Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
+// Dependencies: [19, 17, 1379, 21, 4758, 580, 558, 568, 4610, 1119, 9035, 5341, 7377, 1401, 4416, 2]
+// Exports: getEmojiKey
 
-// Module 11985 (EmojiReactionRowButton)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import EmojiTypes from "EmojiTypes" /* 4412 */;
-import shared from "shared" /* 4607 */;
-import Pressables from "Pressables" /* 5339 */;
-import EmojiDefault from "Emoji" /* 7375 */;
-import ReactionIcon from "ReactionIcon" /* 9037 */;
+// Module 11858 (EmojiReactionRowButton)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import EmojiTypes from "EmojiTypes" /* 4416 */;
+import shared from "shared" /* 4610 */;
+import Pressables from "Pressables" /* 5341 */;
+import EmojiDefault from "Emoji" /* 7377 */;
+import ReactionIcon from "ReactionIcon" /* 9035 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
-const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
+const EMOJI_URL_BASE_SIZE = fn(1379).EMOJI_URL_BASE_SIZE;
 const jsx = fn(21).jsx;
-let createStyles = fn(4756);
+let createStyles = fn(4758);
 let closure_6 = createStyles.createStyles((width) => {
   const obj = { emojiContainer: null };
   const size = { width, height: width, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.MOBILE_EMOJI_BUTTON_BACKGROUND, borderRadius: nativeDefault.modules.button.BORDER_RADIUS, overflow: "hidden" };
   obj.emojiContainer = size;
   return obj;
 });
-createStyles = fn(4756);
+createStyles = fn(4758);
 let closure_7 = createStyles.createStyles((width, fontSize, lineHeight) => {
   const obj = { emojiImage: { width, height: width }, emojiText: null };
   const size = { lineHeight, fontSize, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center", width: lineHeight, height: lineHeight };
   obj.emojiText = size;
   return obj;
 });
-let size = fn(2);
-const result = size.fileFinishedImporting("modules/reactions/native/EmojiReactionRowButton.tsx");
-
-export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
+fn(558);
+const ReactCompilerGating = fn(558);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) => {
+  const cResult = c.c(11);
+  ({ onPress, iconSize, styles } = emojiContainerSize);
+  const tmp4 = closure_6(emojiContainerSize.emojiContainerSize);
+  const obj2 = shared;
+  const unsafe_rawColors = nativeDefault.unsafe_rawColors;
+  const tmp6 = shared.isThemeLight(obj2.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.lfIHs4);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === tmp4.emojiContainer) {
+    if (cResult[2] === styles) {
+      let tmp9 = cResult[3];
+    }
+    if (iconSize == null) {
+      iconSize = "md";
+    }
+    if (cResult[4] === tmp6) {
+      if (cResult[5] === iconSize) {
+        let tmp11 = cResult[6];
+      }
+      if (cResult[7] === onPress) {
+        if (cResult[8] === tmp9) {
+          if (cResult[9] === tmp11) {
+            let tmp14 = cResult[10];
+          }
+          return tmp14;
+        }
+      }
+      const obj4 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: first, hitSlop: 4, onPress, style: tmp9, children: tmp11 };
+      const tmp16 = jsx(tmp(5341).PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: first, hitSlop: 4, onPress, style: tmp9, children: tmp11 });
+      cResult[7] = onPress;
+      cResult[8] = tmp9;
+      cResult[9] = tmp11;
+      cResult[10] = tmp16;
+      tmp14 = tmp16;
+    }
+    const obj5 = { color: tmp6, size: iconSize };
+    const tmp13 = jsx(tmp(9035).ReactionIcon, { color: tmp6, size: iconSize });
+    cResult[4] = tmp6;
+    cResult[5] = iconSize;
+    cResult[6] = tmp13;
+    tmp11 = tmp13;
+  }
+  const items = [tmp4.emojiContainer, styles];
+  cResult[1] = tmp4.emojiContainer;
+  cResult[2] = styles;
+  cResult[3] = items;
+  tmp9 = items;
+}) : ((iconSize) => {
   let str = iconSize.iconSize;
   ({ onPress, styles } = iconSize);
   const tmp = closure_6(iconSize.emojiContainerSize);
@@ -43,7 +97,7 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const isThemeLightResult = shared.isThemeLight(obj.useThemeContext().theme);
   const obj3 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 4, onPress: null, style: null, children: null };
-  const intl = tmp2(1115).intl;
+  const intl = tmp2(1119).intl;
   obj3.accessibilityLabel = intl.string(util.t.lfIHs4);
   obj3.onPress = onPress;
   const items = [tmp.emojiContainer, styles];
@@ -55,8 +109,110 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
   obj4.size = str;
   obj3.children = jsx(ReactionIcon.ReactionIcon, { color: shared.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
   return jsx(Pressables.PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 4, onPress: null, style: null, children: null });
-};
-export const EmojiReactionRowButton = function EmojiReactionRowButton(emoji) {
+});
+let size = fn(2);
+const result = size.fileFinishedImporting("modules/reactions/native/EmojiReactionRowButton.tsx");
+
+export const EmojiPickerRowButton = tmp2;
+export const EmojiReactionRowButton = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiContainerSize) => {
+  const cResult = c.c(15);
+  ({ emoji, onPress, styles } = emojiContainerSize);
+  ({ emojiSize, emojiFontSize, emojiLineHeight } = emojiContainerSize);
+  const tmp4 = closure_6(emojiContainerSize.emojiContainerSize);
+  const tmp5 = closure_7(emojiSize, emojiFontSize, emojiLineHeight);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { foreground: true };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  let name;
+  if (emoji != null) {
+    name = emoji.name;
+  }
+  if (cResult[1] !== name) {
+    const intl = tmp(1119).intl;
+    let name1;
+    if (emoji != null) {
+      name1 = emoji.name;
+    }
+    const obj3 = { emojiName: name1 };
+    const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["/iYSo6"], obj3);
+    let name2;
+    if (emoji != null) {
+      name2 = emoji.name;
+    }
+    cResult[1] = name2;
+    cResult[2] = formatToPlainStringResult;
+    let tmp8 = formatToPlainStringResult;
+  } else {
+    tmp8 = cResult[2];
+  }
+  if (cResult[3] === tmp4.emojiContainer) {
+    if (cResult[4] === styles) {
+      let tmp13 = cResult[5];
+    }
+    if (cResult[6] === emoji) {
+      if (cResult[7] === tmp5) {
+        let tmp14 = cResult[8];
+      }
+      if (cResult[9] === onPress) {
+        if (cResult[10] === tmp8) {
+          if (cResult[11] === tmp12) {
+            if (cResult[12] === tmp13) {
+              if (cResult[13] === tmp14) {
+                let tmp21 = cResult[14];
+              }
+              return tmp21;
+            }
+          }
+        }
+      }
+      const obj6 = { androidRippleConfig: first, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp8, disabled: tmp12, hitSlop: 4, onPress, style: tmp13, children: tmp14 };
+      const tmp23 = jsx(tmp(5341).PressableOpacity, { androidRippleConfig: first, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp8, disabled: tmp12, hitSlop: 4, onPress, style: tmp13, children: tmp14 });
+      cResult[9] = onPress;
+      cResult[10] = tmp8;
+      cResult[11] = tmp12;
+      cResult[12] = tmp13;
+      cResult[13] = tmp14;
+      cResult[14] = tmp23;
+      tmp21 = tmp23;
+    }
+    if (null == emoji) {
+      cResult[6] = emoji;
+      cResult[7] = tmp5;
+      cResult[8] = null;
+      tmp14 = null;
+    } else {
+      let getEmojiURL = importDefault;
+      const obj11 = { textEmojiStyle: null, fastImageStyle: null, name: null, src: null };
+      ({ emojiText: obj4.textEmojiStyle, emojiImage: obj4.fastImageStyle } = tmp5);
+      let str = "";
+      if (null == emoji.id) {
+        str = emoji.surrogates;
+      }
+      obj11.name = str;
+      if (null != emoji.id) {
+        const emojiURL = getEmojiURL(1401);
+        getEmojiURL = emojiURL.getEmojiURL;
+        const obj12 = { id: null, animated: null, size: null };
+        ({ id: obj5.id, animated: obj5.animated } = emoji);
+        obj12.size = EMOJI_URL_BASE_SIZE;
+        let url = getEmojiURL(obj12);
+      } else {
+        url = emoji.url;
+      }
+      obj11.src = url;
+      jsx(EmojiDefault, { textEmojiStyle: null, fastImageStyle: null, name: null, src: null });
+    }
+  }
+  const items = [tmp4.emojiContainer, styles];
+  cResult[3] = tmp4.emojiContainer;
+  cResult[4] = styles;
+  cResult[5] = items;
+  tmp13 = items;
+}) : ((emoji) => {
   animated = emoji.emoji;
   ({ emojiSize, emojiFontSize, emojiLineHeight, onPress, styles } = emoji);
   const tmp = closure_6(emoji.emojiContainerSize);
@@ -86,7 +242,7 @@ export const EmojiReactionRowButton = function EmojiReactionRowButton(emoji) {
     }
     obj5.name = str;
     if (null != animated.id) {
-      const emojiURL = getEmojiURL(1397);
+      const emojiURL = getEmojiURL(1401);
       getEmojiURL = emojiURL.getEmojiURL;
       obj = { id: null, animated: null, size: null };
       ({ id: obj.id, animated } = animated);
@@ -99,7 +255,7 @@ export const EmojiReactionRowButton = function EmojiReactionRowButton(emoji) {
     obj5.src = url;
     tmp4(EmojiDefault, obj5);
   }
-};
+});
 export const getEmojiKey = function getEmojiKey(type, index) {
   if (null == type) {
     return index;

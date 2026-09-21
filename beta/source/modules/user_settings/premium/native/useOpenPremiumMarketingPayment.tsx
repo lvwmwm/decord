@@ -1,29 +1,124 @@
-// Module ID: 13758
-// Function ID: 13759
+// Module ID: 13761
+// Function ID: 13762
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1074, 1374, 7407, 7689, 7688, 7664, 1115, 4414, 2]
-// Exports: default
+// Dependencies: [19, 1078, 1378, 558, 568, 7409, 7694, 7693, 7666, 1119, 4418, 2]
 
-// Module 13758 (useOpenPremiumMarketingPayment)
-import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4414 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7664 */;
+// Module 13761 (useOpenPremiumMarketingPayment)
+import util from "util" /* 1119 */;
+import PremiumUtils from "PremiumUtils" /* 4418 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7666 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = Constants);
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ SubscriptionIntervalTypes: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
 let closure_6 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
+const ReactCompilerGating = fn(558);
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/premium/native/useOpenPremiumMarketingPayment.tsx");
+let result = size.fileFinishedImporting("modules/user_settings/premium/native/useOpenPremiumMarketingPayment.tsx");
 
-export default function useOpenPremiumMarketingPayment(arg0) {
-  const analyticsLocations = premiumTrialOffer(premiumTrialOfferPremiumType[3])(arg0).analyticsLocations;
-  premiumTrialOffer = analyticsLocations(premiumTrialOfferPremiumType[4]).usePremiumTrialOffer();
-  let obj = analyticsLocations(premiumTrialOfferPremiumType[4]);
-  premiumTrialOfferPremiumType = analyticsLocations(premiumTrialOfferPremiumType[5]).usePremiumTrialOfferPremiumType();
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let formatTrialCtaIntervalDuration = analyticsLocations;
+  let result1 = dependencyMap;
+  const cResult = analyticsLocations(568).c(10);
+  analyticsLocations = premiumTrialOfferPremiumType(7409)(arg0).analyticsLocations;
+  let obj = analyticsLocations(568);
+  const premiumTrialOffer = analyticsLocations(7694).usePremiumTrialOffer();
+  const obj2 = analyticsLocations(7694);
+  premiumTrialOfferPremiumType = analyticsLocations(7693).usePremiumTrialOfferPremiumType();
+  if (cResult[0] === analyticsLocations) {
+    if (cResult[1] === premiumTrialOfferPremiumType) {
+      let tmp5 = cResult[2];
+    }
+    if (null != premiumTrialOfferPremiumType) {
+      let interval;
+      if (premiumTrialOffer != null) {
+        const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
+        if (subscriptionTrial != null) {
+          interval = subscriptionTrial.interval;
+        }
+      }
+      let intervalCount;
+      if (premiumTrialOffer != null) {
+        const subscriptionTrial2 = premiumTrialOffer.subscriptionTrial;
+        if (subscriptionTrial2 != null) {
+          intervalCount = subscriptionTrial2.intervalCount;
+        }
+      }
+      if (cResult[4] === interval) {
+      }
+      const result = formatTrialCtaIntervalDuration(4418);
+      formatTrialCtaIntervalDuration = result.formatTrialCtaIntervalDuration;
+      const obj4 = { intervalType: interval, intervalCount };
+      result1 = formatTrialCtaIntervalDuration(obj4);
+      cResult[4] = interval;
+      cResult[5] = intervalCount;
+      cResult[6] = result1;
+    } else {
+      const _Symbol = Symbol;
+      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = formatTrialCtaIntervalDuration(1119).intl;
+        const stringResult = intl.string(formatTrialCtaIntervalDuration(1119).t["8x0jKT"]);
+        cResult[3] = stringResult;
+        let tmp8 = stringResult;
+      } else {
+        tmp8 = cResult[3];
+      }
+      if (cResult[7] === tmp8) {
+        if (cResult[8] === tmp5) {
+          let tmp15 = cResult[9];
+        }
+        return tmp15;
+      }
+      const obj5 = { openPayment: tmp5, buttonText: tmp8 };
+      cResult[7] = tmp8;
+      cResult[8] = tmp5;
+      cResult[9] = obj5;
+      tmp15 = obj5;
+    }
+  }
+  let fn = function n() {
+    const obj = { analyticsLocation, analyticsLocations, predicate: null, initialSelectedCriteria: null, premiumType: null, showFormTitle: false };
+    let fn;
+    if (null == premiumTrialOfferPremiumType) {
+      fn = (additionalPlans) => {
+        let tmp = 0 === additionalPlans.additionalPlans.length;
+        ({ numPremiumGuild, interval, premiumTier } = additionalPlans);
+        if (tmp) {
+          tmp = !additionalPlans.isDeprecated;
+        }
+        if (tmp) {
+          tmp = 0 === numPremiumGuild;
+        }
+        if (tmp) {
+          tmp = interval === constants.MONTH;
+        }
+        if (tmp) {
+          tmp = premiumTier !== closure_1_5.TIER_1;
+        }
+        return tmp;
+      };
+    }
+    obj.predicate = fn;
+    let fn2;
+    if (null == premiumTrialOfferPremiumType) {
+      fn2 = (premiumTier) => premiumTier.premiumTier === closure_1_5.TIER_2;
+    }
+    obj.initialSelectedCriteria = fn2;
+    obj.premiumType = premiumTrialOfferPremiumType;
+    openPremiumPlanSelectionActionSheetDefault(obj);
+  };
+  cResult[0] = analyticsLocations;
+  cResult[1] = premiumTrialOfferPremiumType;
+  cResult[2] = fn;
+  tmp5 = fn;
+}) : (function useOpenPremiumMarketingPayment(arg0) {
+  const analyticsLocations = premiumTrialOffer(premiumTrialOfferPremiumType[5])(arg0).analyticsLocations;
+  premiumTrialOffer = analyticsLocations(premiumTrialOfferPremiumType[6]).usePremiumTrialOffer();
+  let obj = analyticsLocations(premiumTrialOfferPremiumType[6]);
+  premiumTrialOfferPremiumType = analyticsLocations(premiumTrialOfferPremiumType[7]).usePremiumTrialOfferPremiumType();
   const obj3 = { openPayment: null, buttonText: null };
   const items = [analyticsLocations, premiumTrialOfferPremiumType];
   obj3.openPayment = noop.useCallback(() => {
@@ -100,4 +195,4 @@ export default function useOpenPremiumMarketingPayment(arg0) {
     return stringResult;
   }, items1);
   return obj3;
-};
+});

@@ -1,9 +1,9 @@
 // Module ID: 5247
 // Function ID: 5248
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 5247
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "36842ff43e56d815a37333dfec1ce713", name: "AnnouncementsIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45e56b0ad20f9774b74dbe6cbb00fca0", name: "GroupIcon", type: "png" });

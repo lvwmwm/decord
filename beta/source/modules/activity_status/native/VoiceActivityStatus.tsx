@@ -1,24 +1,124 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11196
+// Function ID: 11197
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4756, 1115, 11155, 11147, 2]
-// Exports: default, getVoiceActivityStatusText
+// Dependencies: [19, 21, 4758, 1119, 558, 568, 11197, 11189, 2]
+// Exports: getVoiceActivityStatusText
 
-// Module 11154 (VoiceActivityStatus)
-import util from "util" /* 1115 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 11147 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11155 */;
+// Module 11196 (VoiceActivityStatus)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 11189 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 11197 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_6 = createStyles.createStyles({ icon: { flexShrink: 0 } });
+const ReactCompilerGating = fn(558);
+function getVoiceActivityStatusText(voiceChannel) {
+  if (!voiceChannel.isDM()) {
+    if (!voiceChannel.isGroupDM()) {
+      const intl = util.intl;
+      const string = intl.string;
+      const t = util.t;
+      if (isGuildStageVoiceResult) {
+        let stringResult = string(t.QygGCN);
+      } else {
+        stringResult = string(t.msxteM);
+      }
+      isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
+    }
+    return stringResult;
+  }
+  const intl2 = util.intl;
+  stringResult = intl2.string(util.t["9FaEzi"]);
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/VoiceActivityStatus.tsx");
 
-export default function VoiceActivityStatus(hideText) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let v9FaEzi = dependencyMap;
+  const cResult = c.c(13);
+  ({ channel, iconStyle, textStyle, maxFontSizeMultiplier, hideIcon, hideText } = arg0);
+  const tmp6 = closure_6();
+  if (undefined !== hideIcon && hideIcon) {
+    if (tmp5) {
+      return null;
+    }
+  }
+  if (cResult[0] === channel) {
+    if (cResult[1] === tmp4) {
+      if (cResult[2] === iconStyle) {
+        if (cResult[3] === tmp6) {
+          let tmp8 = cResult[4];
+        }
+        if (cResult[5] === channel) {
+          if (cResult[6] === tmp5) {
+            if (cResult[7] === maxFontSizeMultiplier) {
+              if (cResult[8] === textStyle) {
+                let tmp12 = cResult[9];
+              }
+              if (cResult[10] === tmp8) {
+              }
+              const obj2 = { children: null };
+              const items = [tmp8, tmp12];
+              obj2.children = items;
+              const tmp23 = hasOwnProperty(React4, obj2);
+              cResult[10] = tmp8;
+              cResult[11] = tmp12;
+              cResult[12] = tmp23;
+            }
+          }
+        }
+        if (tmp5) {
+          cResult[5] = channel;
+          cResult[6] = tmp5;
+          cResult[7] = maxFontSizeMultiplier;
+          cResult[8] = textStyle;
+          cResult[9] = tmp13;
+          tmp12 = tmp13;
+        } else {
+          const obj3 = { style: textStyle, maxFontSizeMultiplier, children: null };
+          if (!channel.isDM()) {
+            if (!channel.isGroupDM()) {
+              const intl = tmp(1119).intl;
+              const string = intl.string;
+              const t = tmp(1119).t;
+              if (isGuildStageVoiceResult) {
+                let stringResult = string(t.QygGCN);
+              } else {
+                stringResult = string(t.msxteM);
+              }
+              isGuildStageVoiceResult = channel.isGuildStageVoice();
+            }
+            obj3.children = stringResult;
+            tmp14(tmp16, obj3);
+          }
+          const intl2 = tmp(1119).intl;
+          v9FaEzi = tmp(1119).t["9FaEzi"];
+          stringResult = intl2.string(v9FaEzi);
+          tmp14 = React3;
+          tmp16 = ActivityStatusTextDefault;
+        }
+      }
+    }
+  }
+  let tmp9 = !tmp4;
+  if (!(undefined !== hideIcon && hideIcon)) {
+    const obj4 = { channel, size: "xxs", color: "status-positive", style: null };
+    const items1 = [tmp6.icon, iconStyle];
+    obj4.style = items1;
+    tmp9 = React3(UserProfileVoiceActivityIconDefault, obj4);
+  }
+  cResult[0] = channel;
+  cResult[1] = undefined !== hideIcon && hideIcon;
+  cResult[2] = iconStyle;
+  cResult[3] = tmp6;
+  cResult[4] = tmp9;
+  tmp8 = tmp9;
+}) : ((hideText) => {
   ({ channel, hideIcon } = hideText);
   ({ iconStyle, textStyle, maxFontSizeMultiplier } = hideText);
   if (hideIcon === undefined) {
@@ -72,22 +172,5 @@ export default function VoiceActivityStatus(hideText) {
     tmp3Result = null;
   }
   return tmp3Result;
-};
-export const getVoiceActivityStatusText = function getVoiceActivityStatusText(voiceChannel) {
-  if (!voiceChannel.isDM()) {
-    if (!voiceChannel.isGroupDM()) {
-      const intl = util.intl;
-      const string = intl.string;
-      const t = util.t;
-      if (isGuildStageVoiceResult) {
-        let stringResult = string(t.QygGCN);
-      } else {
-        stringResult = string(t.msxteM);
-      }
-      isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
-    }
-    return stringResult;
-  }
-  const intl2 = util.intl;
-  stringResult = intl2.string(util.t["9FaEzi"]);
-};
+});
+export { getVoiceActivityStatusText };

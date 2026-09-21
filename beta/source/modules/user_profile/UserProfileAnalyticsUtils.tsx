@@ -1,23 +1,23 @@
-// Module ID: 8460
-// Function ID: 8461
+// Module ID: 8465
+// Function ID: 8466
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [8461, 7352, 7895, 4778, 2105, 4796, 4405, 1372, 7857, 8452, 1074, 1085, 1397, 8455, 1241, 4936, 8467, 2]
+// Dependencies: [8466, 7354, 7900, 4780, 2109, 4798, 4409, 1376, 7862, 8457, 1078, 1089, 1401, 8460, 1245, 4938, 8472, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8460 (UserProfileAnalyticsUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import useDisplayProfile from "useDisplayProfile" /* 8455 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8461 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7352 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7857 */;
+// Module 8465 (UserProfileAnalyticsUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
+import useDisplayProfile from "useDisplayProfile" /* 8460 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
+import UserProfileStore from "UserProfileStore" /* 7862 */;
 
 require = fn;
 function getProfileProperties(guildMemberProfile) {
@@ -264,11 +264,11 @@ function trackUserProfileAction(dependencyMap) {
   obj2.widget_type = widgetType;
   obj.track(constants3.USER_PROFILE_ACTION, obj2);
 }
-const FetchState = fn(7352).FetchState;
-const constants = fn(8452).TrackUserProfileProperties;
-const Constants = fn(1074);
+const FetchState = fn(7354).FetchState;
+const constants = fn(8457).TrackUserProfileProperties;
+const Constants = fn(1078);
 ({ ActivityTypes: closure_14, AnalyticEvents: closure_15 } = Constants);
-const StatusTypes = fn(1085).StatusTypes;
+const StatusTypes = fn(1089).StatusTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/UserProfileAnalyticsUtils.tsx");
 
@@ -356,9 +356,9 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
     if (!tmp5) {
       let obj3 = {};
       const obj2 = AnalyticsUtilsDefault;
-      const merged = Object.assign(tmp(4936).collectGuildAnalyticsMetadata(guildId));
-      const tmpResult = tmp(4936);
-      const merged1 = Object.assign(tmp(4936).collectChannelAnalyticsMetadataFromId(channelId));
+      const merged = Object.assign(tmp(4938).collectGuildAnalyticsMetadata(guildId));
+      const tmpResult = tmp(4938);
+      const merged1 = Object.assign(tmp(4938).collectChannelAnalyticsMetadataFromId(channelId));
       const merged2 = Object.assign(getTrackUserProfileProperties(userId));
       userId = userId.userId;
       if (null == userId) {
@@ -392,7 +392,7 @@ export const maybeTrackUserProfileUiViewed = function maybeTrackUserProfileUiVie
       obj3.time_to_load_ms = timeToLoadMs;
       obj3.time_to_fetch_ms = timeToFetchMs;
       obj3 = obj2.track(constants3.USER_PROFILE_UI_VIEWED, obj3);
-      const tmpResult2 = tmp(4936);
+      const tmpResult2 = tmp(4938);
     }
   }
 };

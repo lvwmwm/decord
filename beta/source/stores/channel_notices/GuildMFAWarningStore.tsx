@@ -1,13 +1,13 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14029
+// Function ID: 14030
 // Name: GuildMFAWarningStore
-// Dependencies: [2096, 1372, 1074, 504, 573, 2]
+// Dependencies: [2100, 1376, 1078, 504, 577, 2]
 
-// Module 14026 (GuildMFAWarningStore)
+// Module 14029 (GuildMFAWarningStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import UserStore from "UserStore" /* 1372 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import UserStore from "UserStore" /* 1376 */;
 
 function handleUserStoreUpdates() {
   const currentUser = UserStore.getCurrentUser();
@@ -18,7 +18,7 @@ function handleUserStoreUpdates() {
   }
   return false;
 }
-const MFALevels = fn(1074).MFALevels;
+const MFALevels = fn(1078).MFALevels;
 let mfaEnabled = null;
 const Store = initializeDefault.Store;
 class GuildMFAWarningStore extends Store {

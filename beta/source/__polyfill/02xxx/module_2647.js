@@ -1,9 +1,9 @@
 // Module ID: 2647
 // Function ID: 2648
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 2647
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/overlay/web/v3", scales: [1], hash: "6c39ef1bf213cec6bbd51be68d36c0f1", name: "OverlayWidgets.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "aed5e6f1b2825567e8fdc906d2ca521e", name: "uk.messages.aed5e6f1b2825567e8fdc906d2ca521e.compiled.messages", type: "jsona" });

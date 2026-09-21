@@ -1,12 +1,12 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9670
+// Function ID: 9671
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [19, 21, 5109, 9675, 1980, 2]
+// Dependencies: [19, 21, 5111, 9671, 1984, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 9674 (openIgnoreThermalStateAlert)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+// Module 9670 (openIgnoreThermalStateAlert)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ export const openIgnoreThermalStateAlert = function openIgnoreThermalStateAlert(
   closure_0 = arg0;
   actions_AlertActionCreatorsDefault.openLazy({
     importer() {
-      return asyncRequireImpl(9675, dependencyMap.paths).then((IgnoreThermalStateAlert) => {
+      return asyncRequireImpl(9671, dependencyMap.paths).then((IgnoreThermalStateAlert) => {
         IgnoreThermalStateAlert = IgnoreThermalStateAlert.IgnoreThermalStateAlert;
         return (arg0) => {
           const obj = {};

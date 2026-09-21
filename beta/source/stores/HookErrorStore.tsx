@@ -1,12 +1,12 @@
-// Module ID: 4804
-// Function ID: 4805
+// Module ID: 4806
+// Function ID: 4807
 // Name: HookErrorStore
-// Dependencies: [1074, 504, 573, 2]
+// Dependencies: [1078, 504, 577, 2]
 
-// Module 4804 (HookErrorStore)
+// Module 4806 (HookErrorStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const MediaEngineHookTypes = Constants.MediaEngineHookTypes;

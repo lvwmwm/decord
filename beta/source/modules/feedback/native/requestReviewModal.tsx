@@ -1,12 +1,12 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 13965
+// Function ID: 13966
 // Name: requestReviewModal
-// Dependencies: [5, 17, 3, 13963, 1364, 2]
+// Dependencies: [5, 17, 3, 13966, 1368, 2]
 // Exports: default
 
-// Module 13962 (requestReviewModal)
+// Module 13965 (requestReviewModal)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeAppRatingRequestModuleDefault from "NativeAppRatingRequestModule" /* 13963 */;
+import NativeAppRatingRequestModuleDefault from "NativeAppRatingRequestModule" /* 13966 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -21,7 +21,7 @@ let closure_6 = async function _showAndroidRatingRequest(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {

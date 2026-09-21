@@ -1,20 +1,20 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9895
+// Function ID: 9896
 // Name: applyBackgroundOption
-// Dependencies: [5, 1372, 9918, 7232, 1074, 9920, 4811, 9923, 1397, 9928, 9919, 9922, 9929, 2]
+// Dependencies: [5, 1376, 9896, 7233, 1078, 9898, 4813, 9901, 1401, 9906, 9897, 9900, 9907, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9917 (applyBackgroundOption)
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9920 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9922 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9923 */;
-import getFilterImageDefault from "getFilterImage" /* 9928 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9929 */;
+// Module 9895 (applyBackgroundOption)
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4813 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9898 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9900 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 9901 */;
+import getFilterImageDefault from "getFilterImage" /* 9906 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9907 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1372 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 9918 */;
+import UserStore from "UserStore" /* 1376 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 9896 */;
 
 require = fn;
 let closure_9 = async function _getFilterBlob() {
@@ -49,7 +49,7 @@ let closure_12 = async function _applyBackgroundOption(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -74,11 +74,11 @@ let closure_12 = async function _applyBackgroundOption(arg0, value) {
           if (null == closure_2) {
             applyBackgroundMediaFilterSettings(tmp58, tmp59, BaseConnectionEvent.FilterSettingsGraph.NONE);
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else if (tmp60 === React5) {
             applyBackgroundMediaFilterSettings(tmp58, tmp59, BaseConnectionEvent.FilterSettingsGraph.BACKGROUND_BLUR);
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else {
             if (typeof tmp60 !== "string") {
               if (typeof tmp60 !== "number") {
@@ -205,7 +205,7 @@ let closure_14 = async function _applyBackgroundOptionLive(arg0, arg1) {
       const result = closure_131_0(closure_131_2[10]).trackBackgroundOptionUpdated(closure_130_0, _location, "Enabled");
       closure_131_0(closure_131_2[10]);
     }
-    await "HermesInternal";
+    await "IconComponent";
     closure_2 = tmp2;
     closure_130_0 = closure_0;
     let flag = track.track;
@@ -214,7 +214,7 @@ let closure_14 = async function _applyBackgroundOptionLive(arg0, arg1) {
     }
     closure_130_1 = flag;
     _location = track.location;
-    return "PX_16";
+    return "Set";
   })();
   iter.next();
   return iter;
@@ -232,7 +232,7 @@ let closure_15 = async function _applyBackgroundOptionPreview(arg0, arg1, arg2) 
       const result1 = closure_132_0(closure_132_2[10]).trackBackgroundOptionUpdated(closure_131_0, _location, "Preview");
       closure_132_0(closure_132_2[10]);
     }
-    await "HermesInternal";
+    await "IconComponent";
     closure_3 = tmp2;
     closure_131_0 = closure_0;
     closure_131_1 = closure_1;
@@ -242,14 +242,14 @@ let closure_15 = async function _applyBackgroundOptionPreview(arg0, arg1, arg2) 
     }
     closure_131_2 = flag;
     _location = track.location;
-    return "PX_16";
+    return "Set";
   })();
   iter.next();
   return iter;
 };
-const VideoBackgroundConstants = fn(7232);
+const VideoBackgroundConstants = fn(7233);
 ({ BACKGROUND_REPLACEMENT_SIZE: metroRequire, BLUR_BACKGROUND_OPTION: closure_7 } = VideoBackgroundConstants);
-const NOOP = fn(1074).NOOP;
+const NOOP = fn(1078).NOOP;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/video_backgrounds/applyBackgroundOption.tsx");
 

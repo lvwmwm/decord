@@ -1,13 +1,13 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15204
+// Function ID: 15205
 // Name: AuthorizedAppsSetting
-// Dependencies: [1074, 11725, 1115, 7201, 15216, 2]
+// Dependencies: [1078, 11594, 1119, 7199, 15205, 2]
 
-// Module 15215 (AuthorizedAppsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import KeyIcon from "KeyIcon" /* 7201 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 15204 (AuthorizedAppsSetting)
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import KeyIcon from "KeyIcon" /* 7199 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

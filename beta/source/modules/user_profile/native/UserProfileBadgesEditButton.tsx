@@ -1,15 +1,15 @@
-// Module ID: 14895
-// Function ID: 14896
+// Module ID: 14884
+// Function ID: 14885
 // Name: UserProfileBadgesEditButton
-// Dependencies: [32, 19, 17, 2038, 21, 4756, 576, 11458, 7407, 7630, 2027, 4723, 14896, 1980, 14894, 1115, 4752, 11464, 11457, 2]
+// Dependencies: [32, 19, 17, 2042, 21, 4758, 580, 11446, 7409, 7632, 2031, 4725, 14885, 1984, 14883, 1119, 4754, 11452, 11445, 2]
 // Exports: default
 
-// Module 14895 (UserProfileBadgesEditButton)
-import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11457 */;
-import BadgeUtils from "BadgeUtils" /* 11464 */;
+// Module 14884 (UserProfileBadgesEditButton)
+import nativeDefault from "native" /* 580 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11445 */;
+import BadgeUtils from "BadgeUtils" /* 11452 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,10 +18,10 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { content: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, badge: { width: 32, height: 32 }, overflowCount: { marginLeft: 2 } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -61,7 +61,7 @@ export default function UserProfileBadgesEditButton(arg0) {
   closure_5 = tmp8;
   const items2 = [analyticsLocations, tmp8, tmp6[1]];
   onPress = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14896, dependencyMap.paths), "Customize Badges", { analyticsLocations });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14885, dependencyMap.paths), "Customize Badges", { analyticsLocations });
     if (closure_5) {
       closure_4(ContentDismissActionType.TAKE_ACTION);
     }
@@ -136,10 +136,10 @@ export default function UserProfileBadgesEditButton(arg0) {
             const obj2 = { style: closure_1.badge, source: null };
             const obj3 = { uri: value };
             obj2.source = obj3;
-            let tmp6 = React6(hasOwnProperty, obj2, badge_id.badge_id);
+            let tmp6 = closure_2_8(hasOwnProperty, obj2, badge_id.badge_id);
           } else {
             const obj = { badge: badge_id, size: 32, style: closure_1.badge };
-            tmp6 = React6(BadgeCatalogIconDefault, obj, badge_id.badge_id);
+            tmp6 = closure_2_8(BadgeCatalogIconDefault, obj, badge_id.badge_id);
           }
           return tmp6;
         });
@@ -148,7 +148,7 @@ export default function UserProfileBadgesEditButton(arg0) {
           const obj = { style: closure_1.badge, source: null };
           const obj2 = { uri: BadgeUtils.getProfileBadgeIconUrl(id) };
           obj.source = obj2;
-          return React6(hasOwnProperty, obj, id.id);
+          return closure_2_8(hasOwnProperty, obj, id.id);
         });
       }
       const items4 = [mapped1, ];

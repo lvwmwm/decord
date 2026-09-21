@@ -1,20 +1,20 @@
 // Module ID: 4205
 // Function ID: 4206
-// Dependencies: [4197, 3846]
+// Dependencies: [4194, 3850]
 // Exports: default
 
 // Module 4205
-import module_4197_mod from "module_4197" /* 4197 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import module_4194_mod from "module_4194" /* 4194 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let module_4197 = module_4197_mod;
-if (!module_4197) {
-  const obj = { default: module_4197 };
+let module_4194 = module_4194_mod;
+if (!module_4194) {
+  const obj = { default: module_4194 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4197;
+  tmp3 = module_4194;
 }
-module_4197 = tmp3;
+module_4194 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isThisQuarter(arg0) {
+export default function isThisHour(arg0) {
   requiredArgs.default(1, arguments);
-  return module_4197.default(Date.now(), arg0);
+  return module_4194.default(Date.now(), arg0);
 };
 export default exports.default;

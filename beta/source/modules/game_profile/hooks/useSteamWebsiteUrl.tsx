@@ -1,27 +1,103 @@
-// Module ID: 8961
-// Function ID: 8962
+// Module ID: 8959
+// Function ID: 8960
 // Name: useSteamWebsiteUrl
-// Dependencies: [2000, 1074, 504, 8962, 8960, 2009, 2]
-// Exports: buildSteamStoreUrl, useSteamWebsiteUrl
+// Dependencies: [2004, 1078, 558, 568, 8960, 8958, 2013, 504, 2]
+// Exports: buildSteamStoreUrl
 
-// Module 8961 (useSteamWebsiteUrl)
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8962 */;
-import GameStore from "GameStore" /* 2000 */;
+// Module 8959 (useSteamWebsiteUrl)
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8960 */;
+import GameStore from "GameStore" /* 2004 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Distributors = fn(1074).Distributors;
+const Distributors = fn(1078).Distributors;
+const ReactCompilerGating = fn(558);
+function buildSteamStoreUrl(arg0) {
+  return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useSteamWebsiteUrl.tsx");
 
-export const buildSteamStoreUrl = function buildSteamStoreUrl(arg0) {
-  return "https://store.steampowered.com/app/" + encodeURIComponent(arg0);
-};
-export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
-  _require = id;
+export { buildSteamStoreUrl };
+export const useSteamWebsiteUrl = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GameStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function s() {
+      if (null == closure_0) {
+        return null;
+      } else {
+        const game = GameStore.getGame(tmp);
+        if (null == game) {
+          return null;
+        } else if (game.steamReleaseStatus === SteamReleaseStatus.SteamReleaseStatus.RETIRED_ABANDONED) {
+          return null;
+        } else {
+          const websites = game.websites;
+          const found = websites.find((category) => category.category === closure_1_0(8958).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          if (found != null) {
+            const url = found.url;
+          }
+          const thirdPartySkus = game.thirdPartySkus;
+          const found1 = thirdPartySkus.filter((distributor) => {
+            let tmp = distributor.distributor === constants.STEAM;
+            if (tmp) {
+              tmp = !closure_1_0(2013).isNullOrEmpty(distributor.id);
+              const obj = closure_1_0(2013);
+            }
+            return tmp;
+          });
+          const first = found1[0];
+          let id;
+          if (first != null) {
+            id = first.id;
+          }
+          let combined = null;
+          if (!tmp11Result.isNullOrEmpty(id)) {
+            const _encodeURIComponent = encodeURIComponent;
+            const _HermesInternal = HermesInternal;
+            combined = "https://store.steampowered.com/app/" + encodeURIComponent(id);
+          }
+          if (found1.length <= 1) {
+            if (null == combined) {
+              let tmp8 = null;
+              if (null != url) {
+                tmp8 = url;
+              }
+              combined = tmp8;
+            }
+            let tmp7 = combined;
+          } else {
+            tmp7 = url;
+          }
+          return tmp7;
+        }
+      }
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  let obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  _require = arg0;
   const items = [GameStore];
-  const items1 = [id];
+  const items1 = [arg0];
   return require("initialize").useStateFromStores(items, () => {
     if (null == closure_0) {
       return null;
@@ -33,7 +109,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
         return null;
       } else {
         const websites = game.websites;
-        const found = websites.find((category) => category.category === id(8960).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+        const found = websites.find((category) => category.category === closure_1_0(8958).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         if (found != null) {
           const url = found.url;
         }
@@ -41,13 +117,13 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
         const found1 = thirdPartySkus.filter((distributor) => {
           let tmp = distributor.distributor === constants.STEAM;
           if (tmp) {
-            tmp = !id(2009).isNullOrEmpty(distributor.id);
-            const obj = id(2009);
+            tmp = !closure_1_0(2013).isNullOrEmpty(distributor.id);
+            const obj = closure_1_0(2013);
           }
           return tmp;
         });
         const first = found1[0];
-        id = undefined;
+        let id;
         if (first != null) {
           id = first.id;
         }
@@ -73,4 +149,4 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
       }
     }
   }, items1);
-};
+});

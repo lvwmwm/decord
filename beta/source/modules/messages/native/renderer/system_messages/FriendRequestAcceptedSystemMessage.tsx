@@ -1,16 +1,16 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8337
+// Function ID: 8338
 // Name: FriendRequestAcceptedSystemMessage
-// Dependencies: [2041, 1372, 8218, 8220, 4756, 576, 1115, 8204, 8333, 8222, 2]
+// Dependencies: [2045, 1376, 8223, 8225, 4758, 580, 1119, 8209, 8338, 8227, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8332 (FriendRequestAcceptedSystemMessage)
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8204 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
-import _modDef8333 from "module_8333" /* 8333 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 8337 (FriendRequestAcceptedSystemMessage)
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8209 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8223 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8225 */;
+import _modDef8338 from "module_8338" /* 8338 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 const size = fn(2);
@@ -32,10 +32,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           let content = message.content;
           if (null != content) {
             if ("" !== content) {
-              const obj3 = { baseTextColor: tmp17(576).colors.TEXT_SUBTLE };
-              const intl2 = tmp15(1115).intl;
+              const obj3 = { baseTextColor: tmp17(580).colors.TEXT_SUBTLE };
+              const intl2 = tmp15(1119).intl;
               const formatToParts2 = intl2.formatToParts;
-              let t1 = tmp15(1115).t;
+              let t1 = tmp15(1119).t;
               if (tmp18) {
                 t1 = {};
                 obj2 = Object.assign(obj2);
@@ -53,22 +53,22 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
                 obj4.formattedNote = obj5;
                 formatToParts2Result = formatToParts2(t1.bNrwDM, obj4);
               }
-              const baseTextColor = tmp15(4756).createNativeStyleProperties(obj3)(message.theme).baseTextColor;
-              const tmp15Result = tmp15(4756);
+              const baseTextColor = tmp15(4758).createNativeStyleProperties(obj3)(message.theme).baseTextColor;
+              const tmp15Result = tmp15(4758);
             }
           }
-          const intl = tmp15(1115).intl;
+          const intl = tmp15(1119).intl;
           const formatToParts = intl.formatToParts;
-          const t = tmp15(1115).t;
+          const t = tmp15(1119).t;
           if (message.author.id === currentUser.id) {
             let formatToPartsResult = formatToParts(t.REfFZs, obj2);
           } else {
             formatToPartsResult = formatToParts(t.hyPOTm, obj2);
           }
           const obj6 = { content: formatToPartsResult, iconUrl: null, textColor: null };
-          obj6.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8333);
+          obj6.iconUrl = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8338);
           obj6.textColor = undefined;
-          const merged1 = Object.assign(tmp17(8222)(message));
+          const merged1 = Object.assign(tmp17(8227)(message));
           return obj6;
         }
       }

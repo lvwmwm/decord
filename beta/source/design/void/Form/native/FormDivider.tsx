@@ -1,31 +1,94 @@
-// Module ID: 8877
-// Function ID: 8878
+// Module ID: 8882
+// Function ID: 8883
 // Name: FormDivider
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 4466, 7429, 4605, 5903, 2]
-// Exports: default
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 4471, 7431, 4608, 5902, 2]
 
-// Module 8877 (FormDivider)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4466 */;
-import RedesignCompat from "RedesignCompat" /* 5903 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7429 */;
+// Module 8882 (FormDivider)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 4471 */;
+import RedesignCompat from "RedesignCompat" /* 5902 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7431 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty, Platform } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles(() => {
   const obj = { divider: {}, dividerOuter: { marginLeft: 0, height: hasOwnProperty.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * hasOwnProperty.hairlineWidth }, dividerHasIcon: { marginLeft: 56 } };
   return obj;
 });
 let obj2 = { [LIGHT]: nativeDefault.unsafe_rawColors.BLACK, [ASH]: nativeDefault.unsafe_rawColors.WHITE, [DARK]: nativeDefault.unsafe_rawColors.WHITE, [ONYX]: nativeDefault.unsafe_rawColors.WHITE };
-({ LIGHT, ASH, DARK, ONYX } = fn(1074).ThemeTypes);
+({ LIGHT, ASH, DARK, ONYX } = fn(1078).ThemeTypes);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormDivider.tsx");
 
-export default function Divider(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(10);
+  ({ outer, iconPush, style } = arg0);
+  let dividerHasIcon = undefined !== iconPush && iconPush;
+  const tmp5 = closure_7();
+  const themeContext = native.useThemeContext();
+  ({ theme, primaryColor } = themeContext);
+  const tmpResult = native;
+  const profileThemeValues = useProfileThemeValues.useProfileThemeValues(theme);
+  let tmp8 = null;
+  if (null != undefined !== outer && outer ? tmp5.dividerOuter : tmp5.divider.backgroundColor) {
+    tmp8 = null;
+    if (null != primaryColor) {
+      tmp8 = null;
+      if (null != profileThemeValues) {
+        if (cResult[0] === profileThemeValues.dividerOpacity) {
+          if (cResult[1] === tmp10) {
+            let tmp11 = cResult[2];
+          }
+          if (cResult[3] !== tmp11) {
+            obj2 = { backgroundColor: tmp11 };
+            cResult[3] = tmp11;
+            cResult[4] = obj2;
+          }
+        }
+        const hexOpacityToRgbaResult = tmp(4608).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity);
+        cResult[0] = profileThemeValues.dividerOpacity;
+        cResult[1] = obj2[theme];
+        cResult[2] = hexOpacityToRgbaResult;
+        tmp11 = hexOpacityToRgbaResult;
+        const tmpResult4 = tmp(4608);
+      }
+    }
+  }
+  if (noop.useContext(RedesignCompat.RedesignCompatContext)) {
+    return null;
+  } else {
+    const tmp15 = tmp4 ? tmp5.dividerOuter : tmp5.divider;
+    if (dividerHasIcon) {
+      dividerHasIcon = tmp5.dividerHasIcon;
+    }
+    if (cResult[5] === style) {
+      if (cResult[6] === tmp15) {
+        if (cResult[7] === dividerHasIcon) {
+          if (cResult[8] === tmp8) {
+            let tmp16 = cResult[9];
+          }
+          return tmp16;
+        }
+      }
+    }
+    const obj3 = { style: null };
+    const items = [tmp15, dividerHasIcon, style, tmp8];
+    obj3.style = items;
+    const tmp19 = <React4 style={null} />;
+    cResult[5] = style;
+    cResult[6] = tmp15;
+    cResult[7] = dividerHasIcon;
+    cResult[8] = tmp8;
+    cResult[9] = tmp19;
+    tmp16 = tmp19;
+  }
+}) : ((arg0) => {
   let flag = arg0.outer;
   if (flag === undefined) {
     flag = false;
@@ -41,9 +104,9 @@ export default function Divider(arg0) {
   const profileThemeValues = obj2.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
-    const obj3 = { backgroundColor: tmp2(4605).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
+    const obj3 = { backgroundColor: tmp2(4608).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
     tmp7 = obj3;
-    const tmp2Result = tmp2(4605);
+    const tmp2Result = tmp2(4608);
   }
   let tmp10Result = null;
   if (!noop.useContext(RedesignCompat.RedesignCompatContext)) {
@@ -59,5 +122,5 @@ export default function Divider(arg0) {
     tmp10Result = <React4 style={null} />;
   }
   return tmp10Result;
-};
+});
 export const DIVIDER_COLORS = obj2;

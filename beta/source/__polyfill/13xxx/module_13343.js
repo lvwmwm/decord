@@ -1,9 +1,9 @@
 // Module ID: 13343
 // Function ID: 13344
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 13343
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ef42f58d92ae3022fbec5decb610cbf2", name: "ThreadMinusIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ae439aad7c7ee77514ad4b1f3601a8e9", name: "VideoSlashIcon", type: "png" });

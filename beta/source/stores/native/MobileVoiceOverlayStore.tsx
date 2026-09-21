@@ -1,16 +1,16 @@
-// Module ID: 10237
-// Function ID: 10238
+// Module ID: 10234
+// Function ID: 10235
 // Name: MobileVoiceOverlayStore
-// Dependencies: [1074, 1241, 1364, 1609, 504, 573, 2]
+// Dependencies: [1078, 1245, 1368, 1613, 504, 577, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 10237 (MobileVoiceOverlayStore)
+// Module 10234 (MobileVoiceOverlayStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1613 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

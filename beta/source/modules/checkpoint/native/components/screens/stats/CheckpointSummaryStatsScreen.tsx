@@ -1,17 +1,26 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 15977
+// Function ID: 15978
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [21, 15980, 2]
-// Exports: default
+// Dependencies: [21, 558, 568, 15969, 2]
 
-// Module 15988 (CheckpointSummaryStatsScreen)
+// Module 15977 (CheckpointSummaryStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15980 */;
+import c from "c" /* 568 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15969 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointSummaryStatsScreen.tsx");
 
-export default function CheckpointSummaryStatsScreen() {
-  return jsx(CheckpointStatsScreenDefault, { name: "Summary" });
-};
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = jsx(CheckpointStatsScreenDefault, { name: "Summary" });
+    cResult[0] = tmp6;
+    let first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Summary" }));

@@ -1,15 +1,15 @@
-// Module ID: 5084
-// Function ID: 5085
+// Module ID: 5086
+// Function ID: 5087
 // Name: MonitoringAgent
-// Dependencies: [1074, 1364, 5085, 5086, 17, 5087, 5088, 1271, 2]
+// Dependencies: [1078, 1368, 5087, 5088, 17, 5089, 5090, 1275, 2]
 
-// Module 5084 (MonitoringAgent)
-import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import NativeMetricMonitorModule from "NativeMetricMonitorModule" /* 5087 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5088 */;
+// Module 5086 (MonitoringAgent)
+import Constants from "Constants" /* 1078 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import NativeMetricMonitorModule from "NativeMetricMonitorModule" /* 5089 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 5090 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -52,23 +52,23 @@ prototype["_getMetricWithDefaults"] = function _getMetricWithDefaults(name, COUN
   }
   let str = "web";
   if (!tmpResult.isWeb()) {
-    const platformName = tmp(1364).getPlatformName();
+    const platformName = tmp(1368).getPlatformName();
     let tmp6 = null;
     if (set.has(platformName)) {
       tmp6 = platformName;
     }
     str = tmp6;
-    const tmpResult2 = tmp(1364);
+    const tmpResult2 = tmp(1368);
   }
   if (null != str) {
     const tags1 = obj.tags;
     const _HermesInternal = HermesInternal;
     tags1.push("platform:" + str);
   }
-  const CurrentReleaseChannel = tmp(5085).CurrentReleaseChannel;
+  const CurrentReleaseChannel = tmp(5087).CurrentReleaseChannel;
   let tmp9 = null;
   if (null != CurrentReleaseChannel) {
-    const ALL = tmp(5086).ReleaseChannelsSets.ALL;
+    const ALL = tmp(5088).ReleaseChannelsSets.ALL;
     tmp9 = null;
     if (ALL.has(CurrentReleaseChannel)) {
       tmp9 = CurrentReleaseChannel;
@@ -121,7 +121,7 @@ prototype["_flush"] = function _flush() {
     HermesBuiltin.arraySpread(self._metrics, 0);
     const HTTP = HTTPUtils.HTTP;
     const request = { url: Endpoints.METRICS_V2, body: null, retries: 1, rejectWithError: true };
-    const body = { metrics: items, client_info: { built_at: "1789971507969", build_number: "6473" } };
+    const body = { metrics: items, client_info: { built_at: "1790009203932", build_number: "6478" } };
     request.body = body;
     HTTP.post(request).catch(() => {
       if (self._metrics.length + items.length < 100) {

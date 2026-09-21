@@ -1,21 +1,93 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11404
+// Function ID: 11405
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 4796, 1074, 504, 9630, 2]
-// Exports: default
+// Dependencies: [502, 4798, 1078, 558, 568, 504, 9626, 2]
 
-// Module 11417 (useCustomStatusActivityForUser)
+// Module 11404 (useCustomStatusActivityForUser)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ActivityTypes = fn(1074).ActivityTypes;
+const ActivityTypes = fn(1078).ActivityTypes;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/custom_status/utils/useCustomStatusActivityForUser.tsx");
 
-export default function useCustomStatusActivityForUser(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+    cResult[1] = arg0;
+    cResult[2] = S;
+    const tmp6 = S;
+  } else {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  const tmpResult = require("initialize");
+  const customStatusActivity = require("userSettingToActivity").useCustomStatusActivity();
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+    const items1 = [PresenceStore];
+    cResult[3] = items1;
+    const tmp9 = items1;
+  } else {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  if (cResult[4] !== arg0) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+    cResult[4] = arg0;
+    cResult[5] = tmp11;
+    const tmp10 = tmp11;
+  } else {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  const tmpResult3 = require("userSettingToActivity");
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp9, tmp10);
+  if (stateFromStores) {
+    class S {
+      constructor() {
+        return closure_2.getId() === closure_0;
+      }
+    }
+  }
+  return stateFromStores1;
+}) : ((arg0) => {
   _require = arg0;
   const items = [AuthenticationStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => AuthenticationStore.getId() === closure_0);
@@ -28,4 +100,4 @@ export default function useCustomStatusActivityForUser(arg0) {
     stateFromStores1 = customStatusActivity;
   }
   return stateFromStores1;
-};
+});

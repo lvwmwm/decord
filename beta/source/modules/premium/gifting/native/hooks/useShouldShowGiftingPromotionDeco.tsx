@@ -1,18 +1,18 @@
-// Module ID: 11012
-// Function ID: 11013
+// Module ID: 11049
+// Function ID: 11050
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1374, 10959, 2]
-// Exports: default
+// Dependencies: [1378, 558, 10997, 2]
 
-// Module 11012 (useShouldShowGiftingPromotionDeco)
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import NativeGiftContext from "NativeGiftContext" /* 10959 */;
+// Module 11049 (useShouldShowGiftingPromotionDeco)
+import PremiumConstants from "PremiumConstants" /* 1378 */;
+import NativeGiftContext from "NativeGiftContext" /* 10997 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");
 
-export default function useShouldShowGiftingPromotionDeco(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const nativeGiftContext = NativeGiftContext.useNativeGiftContext();
   const claimableRewards = nativeGiftContext.claimableRewards;
   if (null != arg0) {
@@ -28,4 +28,20 @@ export default function useShouldShowGiftingPromotionDeco(arg0) {
     tmp6 = tmp4;
   }
   return tmp6;
-};
+}) : ((arg0) => {
+  const nativeGiftContext = NativeGiftContext.useNativeGiftContext();
+  const claimableRewards = nativeGiftContext.claimableRewards;
+  if (null != arg0) {
+    let tmp4 = arg0 === PremiumTypes.TIER_2;
+  } else {
+    tmp4 = tmp2 === PremiumTypes.TIER_2;
+  }
+  let tmp6 = null != claimableRewards;
+  if (tmp6) {
+    tmp6 = claimableRewards.length > 0;
+  }
+  if (tmp6) {
+    tmp6 = tmp4;
+  }
+  return tmp6;
+});

@@ -1,19 +1,19 @@
-// Module ID: 2009
-// Function ID: 2010
+// Module ID: 2013
+// Function ID: 2014
 // Name: StringUtils
-// Dependencies: [2, 2010]
+// Dependencies: [2, 2014]
 // Exports: isNullOrEmpty
 
-// Module 2009 (StringUtils)
-import utils_StringUtils from "utils/StringUtils" /* 2010 */;
+// Module 2013 (StringUtils)
+import utils_StringUtils from "utils/StringUtils" /* 2014 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/StringUtils.tsx");
 
-export const isNullOrEmpty = function isNullOrEmpty(application_id) {
-  let tmp = null == application_id;
+export const isNullOrEmpty = function isNullOrEmpty(id) {
+  let tmp = null == id;
   if (!tmp) {
-    tmp = 0 === application_id.length;
+    tmp = 0 === id.length;
   }
   return tmp;
 };

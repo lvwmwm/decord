@@ -1,23 +1,21 @@
-// Module ID: 7617
-// Function ID: 7618
+// Module ID: 7619
+// Function ID: 7620
 // Name: canChannelUseSoundboard
-// Dependencies: [2041, 4395, 2095, 1074, 504, 2]
-// Exports: canSelectedVoiceChannelUseSoundboard, default, useCanChannelUseSoundboard
+// Dependencies: [2045, 4399, 2099, 1078, 558, 568, 504, 2]
+// Exports: canSelectedVoiceChannelUseSoundboard, default
 
-// Module 7617 (canChannelUseSoundboard)
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 7619 (canChannelUseSoundboard)
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypesSets: hasOwnProperty, Permissions: metroRequire } = Constants);
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
-
-export default function canChannelUseSoundboard(type) {
+const ReactCompilerGating = fn(558);
+function canChannelUseSoundboard(type) {
   if (null == type) {
     return false;
   } else {
@@ -30,7 +28,11 @@ export default function canChannelUseSoundboard(type) {
       return type.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, type);
     }
   }
-};
+}
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/soundboard/canChannelUseSoundboard.tsx");
+
+export default canChannelUseSoundboard;
 export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceChannelUseSoundboard() {
   const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
   let flag = false;
@@ -46,7 +48,44 @@ export const canSelectedVoiceChannelUseSoundboard = function canSelectedVoiceCha
   }
   return flag;
 };
-export const useCanChannelUseSoundboard = function useCanChannelUseSoundboard(arg0) {
+export const useCanChannelUseSoundboard = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let flag = false;
+      if (null != closure_0) {
+        const CALLABLE = constants.CALLABLE;
+        flag = true;
+        if (!CALLABLE.has(obj.type)) {
+          const canResult = PermissionStore.can(constants2.USE_SOUNDBOARD, obj);
+          const canResult1 = PermissionStore.can(constants2.SPEAK, obj);
+          flag = obj.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, obj);
+          const tmp6 = obj.isGuildVoiceOrThread() && canResult && PermissionStore.can(constants2.SPEAK, obj);
+        }
+      }
+      return flag;
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
   _require = arg0;
   const items = [PermissionStore];
   const items1 = [arg0];
@@ -64,4 +103,4 @@ export const useCanChannelUseSoundboard = function useCanChannelUseSoundboard(ar
     }
     return flag;
   }, items1);
-};
+});

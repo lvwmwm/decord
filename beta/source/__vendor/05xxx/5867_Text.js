@@ -1,13 +1,13 @@
 // Module ID: 5867
 // Function ID: 5868
 // Name: Text
-// Dependencies: [17, 21, 1485]
+// Dependencies: [17, 21, 1489]
 // Exports: Text
 
 // Module 5867 (Text)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import Link from "Link" /* 1485 */;
+import Link from "Link" /* 1489 */;
 
 const Text = _mod17.Text;
 const jsx = jsxProd.jsx;

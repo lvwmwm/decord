@@ -1,14 +1,14 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15499
+// Function ID: 15500
 // Name: EmojiIcon
-// Dependencies: [19, 21, 15511, 5804, 10560, 7375, 1397, 2]
+// Dependencies: [19, 21, 15500, 5802, 10477, 7377, 1401, 2]
 // Exports: default
 
-// Module 15510 (EmojiIcon)
-import FastImageDefault from "FastImage" /* 5804 */;
-import EmojiDefault from "Emoji" /* 7375 */;
-import _modDef10560 from "module_10560" /* 10560 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15511 */;
+// Module 15499 (EmojiIcon)
+import FastImageDefault from "FastImage" /* 5802 */;
+import EmojiDefault from "Emoji" /* 7377 */;
+import _modDef10477 from "module_10477" /* 10477 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15500 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -37,7 +37,7 @@ export default function EmojiIcon(size) {
       const obj2 = { resizeMode: "contain", style: null, source: null };
       size = { width: num, height: num };
       obj2.style = size;
-      obj2.source = _modDef10560;
+      obj2.source = _modDef10477;
       tmp4 = jsx(FastImageDefault, { resizeMode: "contain", style: null, source: null });
     }
     let tmp8Result = tmp4;
@@ -66,8 +66,8 @@ export default function EmojiIcon(size) {
       const obj6 = { id: null, animated: null, size: null };
       ({ id: obj4.id, animated: obj4.animated } = emojiByIdOrName);
       obj6.size = num;
-      let url = tmp9(1397).getEmojiURL(obj6);
-      const tmp9Result = tmp9(1397);
+      let url = tmp9(1401).getEmojiURL(obj6);
+      const tmp9Result = tmp9(1401);
     } else {
       url = emojiByIdOrName.url;
     }

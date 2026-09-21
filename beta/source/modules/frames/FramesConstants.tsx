@@ -1,11 +1,11 @@
-// Module ID: 9314
-// Function ID: 9315
+// Module ID: 9312
+// Function ID: 9313
 // Name: FramesConstants
-// Dependencies: [1074, 2]
+// Dependencies: [1078, 2]
 // Exports: asLaunched, getChannelIdForSurface, getFrameIntentForSurface, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 9314 (FramesConstants)
-import Constants from "Constants" /* 1074 */;
+// Module 9312 (FramesConstants)
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -62,20 +62,20 @@ export const getChannelIdForSurface = function getChannelIdForSurface(type) {
   }
 };
 export const isLaunched = function isLaunched(mainFrame) {
-  let state;
+  state = undefined;
   if (mainFrame != null) {
     state = mainFrame.state;
   }
   return "launched" === state;
 };
-export const asLaunched = function asLaunched(frameByIframeId) {
-  let state;
-  if (frameByIframeId != null) {
-    state = frameByIframeId.state;
+export const asLaunched = function asLaunched(mainFrame) {
+  state = undefined;
+  if (mainFrame != null) {
+    state = mainFrame.state;
   }
   let tmp2 = null;
   if ("launched" === state) {
-    tmp2 = frameByIframeId;
+    tmp2 = mainFrame;
   }
   return tmp2;
 };

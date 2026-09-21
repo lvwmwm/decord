@@ -1,35 +1,117 @@
-// Module ID: 16156
-// Function ID: 16157
+// Module ID: 16145
+// Function ID: 16146
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1074, 21, 4756, 576, 4451, 2108, 7395, 4752, 1115, 5650, 5186, 8855, 4723, 2]
-// Exports: default
+// Dependencies: [19, 1078, 21, 4758, 580, 558, 568, 4455, 2112, 1119, 4754, 5188, 8860, 5652, 4725, 7397, 2]
 
-// Module 16156 (PersonalizationDisclaimerActionSheet)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import LinkingDefault from "Linking" /* 4451 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import ButtonGroup from "ButtonGroup" /* 5650 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8855 */;
+// Module 16145 (PersonalizationDisclaimerActionSheet)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import LinkingDefault from "Linking" /* 4455 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import ButtonGroup from "ButtonGroup" /* 5652 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8860 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, header: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.header = { paddingVertical: nativeDefault.space.PX_8, alignSelf: "center", textAlign: "center" };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { paddingVertical: nativeDefault.space.PX_8, alignSelf: "center", textAlign: "center" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/PersonalizationDisclaimerActionSheet.tsx");
 
-export default function PersonalizationDisclaimerActionSheet() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(10);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const obj = LinkingDefault;
+      obj.openURL(HelpdeskUtilsDefault.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  ({ container, header } = tmp4);
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t.euks4U);
+    cResult[1] = stringResult;
+    let tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.header) {
+    const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: header, children: tmp6 };
+    const tmp10 = hasOwnProperty(tmp(4754).Text, obj2);
+    cResult[2] = tmp4.header;
+    cResult[3] = tmp10;
+    let tmp8 = tmp10;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t.hvVgAZ);
+    cResult[4] = stringResult1;
+    let tmp11 = stringResult1;
+  } else {
+    tmp11 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { size: "lg", text: tmp11, onPress: first, icon: null, iconPosition: "end" };
+    const obj4 = { color: nativeDefault.colors.WHITE };
+    obj3.icon = hasOwnProperty(tmp(8860).LinkExternalSmallIcon, obj4);
+    const tmp16 = hasOwnProperty(tmp(5188).Button, obj3);
+    cResult[5] = tmp16;
+    let tmp13 = tmp16;
+  } else {
+    tmp13 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj5 = { children: null };
+    const items = [tmp13, ];
+    const obj6 = { variant: "tertiary", size: "lg", text: null, onPress: null };
+    const intl3 = tmp(1119).intl;
+    obj6.text = intl3.string(tmp(1119).t.WAI6xu);
+    obj6.onPress = function onPress() {
+      return ActionSheetActionCreatorsDefault.hideActionSheet();
+    };
+    items[1] = hasOwnProperty(tmp(5188).Button, obj6);
+    obj5.children = items;
+    const tmp20 = timestampProducer(tmp(5652).ButtonGroup, obj5);
+    cResult[6] = tmp20;
+    let tmp17 = tmp20;
+  } else {
+    tmp17 = cResult[6];
+  }
+  if (cResult[7] === tmp4.container) {
+    if (cResult[8] === tmp8) {
+      let tmp21 = cResult[9];
+    }
+    return tmp21;
+  }
+  const obj7 = { contentStyles: container, children: null };
+  const items1 = [tmp8, tmp17];
+  obj7.children = items1;
+  const tmp22 = timestampProducer(Sheet_BottomSheet.BottomSheet, obj7);
+  cResult[7] = tmp4.container;
+  cResult[8] = tmp8;
+  cResult[9] = tmp22;
+  tmp21 = tmp22;
+}) : (() => {
   const tmp = closure_7();
   const callback = noop.useCallback(() => {
     const obj = LinkingDefault;
@@ -58,4 +140,4 @@ export default function PersonalizationDisclaimerActionSheet() {
   items[1] = timestampProducer(ButtonGroup.ButtonGroup, obj3);
   obj.children = items;
   return timestampProducer(Sheet_BottomSheet.BottomSheet, obj);
-};
+});

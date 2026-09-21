@@ -1,13 +1,13 @@
-// Module ID: 13545
-// Function ID: 13546
+// Module ID: 13548
+// Function ID: 13549
 // Name: transformStickers
-// Dependencies: [5103, 8257, 8209, 1115, 2]
+// Dependencies: [5105, 8262, 8214, 1119, 2]
 // Exports: default
 
-// Module 13545 (transformStickers)
-import util from "util" /* 1115 */;
-import StickersUtils from "StickersUtils" /* 5103 */;
-import getAccessibilityLabelOrCheapFallbackUnsafe from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 8209 */;
+// Module 13548 (transformStickers)
+import util from "util" /* 1119 */;
+import StickersUtils from "StickersUtils" /* 5105 */;
+import getAccessibilityLabelOrCheapFallbackUnsafe from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 8214 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
@@ -32,7 +32,7 @@ export default function transformStickers(message) {
     obj2.url = str2;
     obj2.width = 160;
     obj2.height = 160;
-    const NativeLottieRenderMode = tmp(8257).NativeLottieRenderMode;
+    const NativeLottieRenderMode = tmp(8262).NativeLottieRenderMode;
     obj2.renderMode = shouldAnimateStickerResult ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
     const obj3 = { isPreview: !shouldAnimateStickerResult };
     const tmpResult = StickersUtils;
@@ -43,10 +43,10 @@ export default function transformStickers(message) {
       },
       cheap: null
     };
-    let intl = tmp(1115).intl;
+    let intl = tmp(1119).intl;
     obj4.cheap = intl.string(util.t["fT+Yjp"]);
     obj2.accessibilityLabel = getAccessibilityLabelOrCheapFallbackUnsafe.getAccessibilityLabelOrCheapFallbackUnsafe(obj4);
-    const intl2 = tmp(1115).intl;
+    const intl2 = tmp(1119).intl;
     obj2.accessibilityHint = intl2.string(util.t.GCEruV);
     return obj2;
   });

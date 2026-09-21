@@ -1,93 +1,29 @@
 // Module ID: 13169
 // Function ID: 13170
-// Dependencies: [377, 41, 42]
+// Dependencies: [13050]
+// Exports: vercelWaitUntil
 
 // Module 13169
-import _readOnlyError from "_readOnlyError" /* 377 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod13050 from "module_13050" /* 13050 */;
 
-let _classCallCheck = _classCallCheck_mod;
-class LRUMap {
-  constructor(arg0) {
-    tmp = closure_0(this, LRUMap);
-    this._maxSize = global;
-    map = new Map();
-    this._cache = map;
-    return;
-  }
-}
-_classCallCheck = LRUMap;
-let items = [
-  {
-    key: "size",
-    get() {
-      return this._cache.size;
-    }
-  },
-  {
-    key: "get",
-    value: function get(arg0) {
-      const self = this;
-      const _cache = this._cache;
-      value = _cache.get(arg0);
-      if (undefined !== value) {
-        const _cache2 = self._cache;
-        _cache2.delete(arg0);
-        const _cache3 = self._cache;
-        const result = _cache3.set(arg0, value);
-        return value;
+require = arg1;
+const dependencyMap = arg6;
+
+export const vercelWaitUntil = function vercelWaitUntil(arg0) {
+  const obj = _mod13050.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
+  if (obj) {
+    if (obj.get) {
+      if (obj.get()) {
+        let obj1 = obj.get();
       }
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      const self = this;
-      if (this._cache.size >= this._maxSize) {
-        ({ _cache, _cache: _cache2 } = self);
-        _cache.delete(_cache2.keys().next().value);
-        const iter = _cache2.keys();
+      let waitUntil = obj1;
+      if (obj1) {
+        waitUntil = obj1.waitUntil;
       }
-      const _cache3 = self._cache;
-      const result = _cache3.set(arg0, arg1);
-    }
-  },
-  {
-    key: "remove",
-    value: function remove(arg0) {
-      const _cache = this._cache;
-      value = _cache.get(arg0);
-      if (value) {
-        const _cache2 = this._cache;
-        _cache2.delete(arg0);
+      if (waitUntil) {
+        obj1.waitUntil(arg0);
       }
-      return value;
-    }
-  },
-  {
-    key: "clear",
-    value: function clear() {
-      const _cache = this._cache;
-      _cache.clear();
-    }
-  },
-  {
-    key: "keys",
-    value: function keys() {
-      const _cache = this._cache;
-      return Array.from(_cache.keys());
-    }
-  },
-  {
-    key: "values",
-    value: function values() {
-      const items = [];
-      const _cache = this._cache;
-      const item = _cache.forEach((item) => items.push(item));
-      return items;
     }
   }
-];
-
-export const LRUMap = _createClass(LRUMap, items);
+  obj1 = {};
+};

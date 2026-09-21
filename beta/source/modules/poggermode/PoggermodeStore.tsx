@@ -1,17 +1,17 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8078
+// Function ID: 8079
 // Name: PoggermodeStore
-// Dependencies: [502, 2095, 7914, 7915, 1074, 4391, 2036, 8074, 1110, 504, 573, 2]
+// Dependencies: [502, 2099, 7919, 7920, 1078, 4395, 2040, 8079, 1114, 504, 577, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 8073 (PoggermodeStore)
+// Module 8078 (PoggermodeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import PoggermodeUtils from "PoggermodeUtils" /* 8074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
+import PoggermodeUtils from "PoggermodeUtils" /* 8079 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7914 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7919 */;
 
 require = fn;
 function updateCombo(userId) {
@@ -49,7 +49,7 @@ function updateCombo(userId) {
     decayInterval1 = iter.decayInterval;
   }
   if (decayInterval1 == null) {
-    decayInterval1 = new obj2(2036).Interval();
+    decayInterval1 = new obj2(2040).Interval();
   }
   obj2.decayInterval = decayInterval1;
   const result = secondaryIndexMap.set("" + userId.userId + "-" + userId.channelId, obj2);
@@ -86,16 +86,16 @@ function updateCombo(userId) {
     }
   }
 }
-const PoggermodeConstants = fn(7915);
+const PoggermodeConstants = fn(7920);
 ({ ShakeLevel: hasOwnProperty, ShakeLocation: metroRequire } = PoggermodeConstants);
-const ComponentActions = fn(1074).ComponentActions;
+const ComponentActions = fn(1078).ComponentActions;
 const set = new Set();
-const secondaryIndexMap = new fn(4391).SecondaryIndexMap((arg0) => {
+const secondaryIndexMap = new fn(4395).SecondaryIndexMap((arg0) => {
   const items = [, ];
   ({ userId: arr[0], channelId: arr[1] } = arg0);
   return items;
 }, (channelId) => "" + channelId.channelId + "-" + channelId.userId);
-const secondaryIndexMap1 = new fn(4391).SecondaryIndexMap((combo) => {
+const secondaryIndexMap1 = new fn(4395).SecondaryIndexMap((combo) => {
   const items = [, , ];
   ({ messageId: arr[0], channelId: arr[1] } = combo);
   items[2] = combo.combo.userId;

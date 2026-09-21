@@ -1,35 +1,159 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11403
+// Function ID: 11404
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1372, 7453, 21, 4756, 576, 504, 11417, 4908, 1115, 11418, 8526, 11379, 2]
-// Exports: default
+// Dependencies: [19, 17, 1376, 7455, 21, 4758, 580, 558, 568, 504, 11404, 4910, 1119, 8531, 11391, 11405, 2]
 
-// Module 11416 (UserProfileCustomStatusActionSheet)
-import nativeDefault from "native" /* 576 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8526 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11379 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11417 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11418 */;
+// Module 11403 (UserProfileCustomStatusActionSheet)
+import nativeDefault from "native" /* 580 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8531 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11391 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11404 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11405 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = fn;
 const View = fn(17).View;
-const Constants = fn(7453);
+const Constants = fn(7455);
 ({ AVATAR_CONTAINER_SIZE, AVATAR_CUSTOM_STATUS_GAP } = Constants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { statusPreviewContainer: { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: nativeDefault.space.PX_16 }, avatarContainer: { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" }, avatarStatus: null, customStatusBubble: null };
 let obj3 = { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: nativeDefault.space.PX_16 };
 obj2.avatarStatus = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.customStatusBubble = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let obj5 = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx");
 
-export default function UserProfileCustomStatusActionSheet(user) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  const cResult = user(568).c(26);
+  user = user.user;
+  ({ previewEmoji, previewText } = user);
+  ({ guildId, channelId } = user);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== user.id) {
+    const fn = function o() {
+      const currentUser = UserStore.getCurrentUser();
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      return id === user.id;
+    };
+    cResult[1] = user.id;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] !== user) {
+    const items1 = [user];
+    cResult[3] = user;
+    cResult[4] = items1;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[4];
+  }
+  const obj = user(568);
+  const stateFromStores = user(504).useStateFromStores(first, tmp7, tmp8);
+  const tmp11 = useCustomStatusActivityForUserDefault(user.id);
+  const tmpResult = user(504);
+  const name = NicknameUtilsDefault.useName(guildId, channelId, user);
+  if (cResult[5] === name) {
+    if (cResult[6] === stateFromStores) {
+      if (cResult[8] === tmp4.avatarStatus) {
+        if (cResult[9] === user) {
+          let tmp15 = cResult[10];
+        }
+        if (cResult[11] === tmp4.avatarContainer) {
+          if (cResult[12] === tmp15) {
+            let tmp18 = cResult[13];
+          }
+          if (cResult[14] === tmp11) {
+            if (cResult[15] === previewEmoji) {
+              if (cResult[16] === previewText) {
+                if (cResult[17] === tmp4.customStatusBubble) {
+                  let tmp22 = cResult[18];
+                }
+                if (cResult[19] === tmp4.statusPreviewContainer) {
+                  if (cResult[20] === tmp18) {
+                    if (cResult[21] === tmp22) {
+                      let tmp25 = cResult[22];
+                    }
+                    if (cResult[23] === tmp25) {
+                      if (cResult[24] === tmp13) {
+                        let tmp29 = cResult[25];
+                      }
+                      return tmp29;
+                    }
+                    const obj2 = { title: tmp13, children: tmp25 };
+                    const tmp31 = closure_5(tmp10(11405), obj2);
+                    cResult[23] = tmp25;
+                    cResult[24] = tmp13;
+                    cResult[25] = tmp31;
+                    tmp29 = tmp31;
+                  }
+                }
+                const obj4 = { style: tmp4.statusPreviewContainer, children: null };
+                const items2 = [tmp18, tmp22];
+                obj4.children = items2;
+                const tmp28 = closure_6(View, obj4);
+                cResult[19] = tmp4.statusPreviewContainer;
+                cResult[20] = tmp18;
+                cResult[21] = tmp22;
+                cResult[22] = tmp28;
+                tmp25 = tmp28;
+              }
+            }
+          }
+          const obj5 = { customStatusActivity: tmp11, hasCustomProfileTheme: false, showFullStatus: true, style: tmp4.customStatusBubble, previewEmoji, previewText };
+          const tmp24 = closure_5(tmp10(11391), obj5);
+          cResult[14] = tmp11;
+          cResult[15] = previewEmoji;
+          cResult[16] = previewText;
+          cResult[17] = tmp4.customStatusBubble;
+          cResult[18] = tmp24;
+          tmp22 = tmp24;
+        }
+        const obj6 = { style: tmp4.avatarContainer, children: tmp15 };
+        const tmp21 = closure_5(View, obj6);
+        cResult[11] = tmp4.avatarContainer;
+        cResult[12] = tmp15;
+        cResult[13] = tmp21;
+        tmp18 = tmp21;
+      }
+      const obj7 = { user, statusStyle: tmp4.avatarStatus };
+      const tmp17 = closure_5(tmp10(8531), obj7);
+      cResult[8] = tmp4.avatarStatus;
+      cResult[9] = user;
+      cResult[10] = tmp17;
+      tmp15 = tmp17;
+    }
+  }
+  const intl = tmp(1119).intl;
+  if (stateFromStores) {
+    let stringResult = intl.string(tmp(1119).t.AHoLf4);
+  } else {
+    const obj8 = { username: name };
+    stringResult = intl.formatToPlainString(tmp(1119).t["pP5Aa+"], obj8);
+  }
+  cResult[5] = name;
+  cResult[6] = stateFromStores;
+  cResult[7] = stringResult;
+}) : ((user) => {
   user = user.user;
   ({ guildId, channelId, previewEmoji, previewText } = user);
   const tmp = closure_7();
@@ -46,12 +170,12 @@ export default function UserProfileCustomStatusActionSheet(user) {
   const obj = user(504);
   const tmp6 = useCustomStatusActivityForUserDefault(user.id);
   const name = NicknameUtilsDefault.useName(guildId, channelId, user);
-  const intl = user(1115).intl;
+  const intl = user(1119).intl;
   if (stateFromStores) {
-    let stringResult = intl.string(tmp2(1115).t.AHoLf4);
+    let stringResult = intl.string(tmp2(1119).t.AHoLf4);
   } else {
     const obj3 = { username: name };
-    stringResult = intl.formatToPlainString(tmp2(1115).t["pP5Aa+"], obj3);
+    stringResult = intl.formatToPlainString(tmp2(1119).t["pP5Aa+"], obj3);
   }
   const obj4 = { title: stringResult, children: null };
   const obj5 = { style: tmp.statusPreviewContainer, children: null };
@@ -61,4 +185,4 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj5.children = items2;
   obj4.children = closure_6(View, obj5);
   return closure_5(UserProfileStackedActionSheetDefault, obj4);
-};
+});

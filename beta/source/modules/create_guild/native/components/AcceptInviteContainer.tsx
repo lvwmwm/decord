@@ -1,23 +1,23 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 12863
+// Function ID: 12864
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 2105, 2063, 4740, 1074, 4382, 21, 4756, 576, 1484, 504, 5841, 1385, 7340, 1980, 7977, 9783, 7557, 8649, 10552, 12970, 7368, 4466, 2]
+// Dependencies: [5, 19, 2109, 2067, 4742, 1078, 4386, 21, 4758, 580, 1488, 504, 5839, 1389, 7342, 1984, 7982, 9760, 7559, 8654, 10469, 12864, 7371, 4471, 2]
 // Exports: default
 
-// Module 12969 (AcceptInviteContainer)
-import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+// Module 12863 (AcceptInviteContainer)
+import nativeDefault from "native" /* 580 */;
+import NavigatorHeader from "NavigatorHeader" /* 5839 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import InviteStore from "InviteStore" /* 4740 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import InviteStore from "InviteStore" /* 4742 */;
 
 require = fn;
-const ThemeTypes = fn(1074).ThemeTypes;
-const GuildMemberFlags = fn(4382).GuildMemberFlags;
+const ThemeTypes = fn(1078).ThemeTypes;
+const GuildMemberFlags = fn(4386).GuildMemberFlags;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { flex: { flex: 1 }, paddingContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -37,7 +37,7 @@ export default function AcceptInviteContainer(code) {
   const items = [InviteStore, stateFromStoresObject, callback];
   stateFromStoresObject = code(inviteInstanceId[11]).useStateFromStoresObject(items, () => {
     const invite = InviteStore.getInvite(code);
-    let guild;
+    guild = undefined;
     const inviteError = InviteStore.getInviteError(code);
     if (invite != null) {
       guild = invite.guild;
@@ -106,7 +106,7 @@ export default function AcceptInviteContainer(code) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -168,7 +168,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c3 = tmp;
         throw tmp14;
@@ -187,7 +187,7 @@ export default function AcceptInviteContainer(code) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ export default function AcceptInviteContainer(code) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -250,7 +250,7 @@ export default function AcceptInviteContainer(code) {
                             }
                             if (null == prop) {
                               c6 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "IconComponent", done: null };
                             } else {
                               closure_1();
                               const result = tmp11(tmp12[17]).transitionToEventDetailsFromInvite(prop);
@@ -259,7 +259,7 @@ export default function AcceptInviteContainer(code) {
                               return obj6;
                             }
                           } else {
-                            const guild = tmp37.guild;
+                            guild = tmp37.guild;
                             if (guild != null) {
                               const id = guild.id;
                             }

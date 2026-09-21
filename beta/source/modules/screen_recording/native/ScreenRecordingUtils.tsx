@@ -1,14 +1,14 @@
-// Module ID: 16264
-// Function ID: 16265
+// Module ID: 16253
+// Function ID: 16254
 // Name: ScreenRecordingUtils
-// Dependencies: [5, 17, 16263, 5108, 16265, 16266, 4723, 16267, 1980, 10444, 5344, 8474, 10443, 1478, 2]
+// Dependencies: [5, 17, 16252, 5110, 16254, 16255, 4725, 16256, 1984, 13011, 5346, 8479, 13010, 1482, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 16264 (ScreenRecordingUtils)
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 10444 */;
-import ScreenRecordingManagerDefault from "ScreenRecordingManager" /* 16265 */;
-import StudyConfig from "StudyConfig" /* 16266 */;
+// Module 16253 (ScreenRecordingUtils)
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
+import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 13011 */;
+import ScreenRecordingManagerDefault from "ScreenRecordingManager" /* 16254 */;
+import StudyConfig from "StudyConfig" /* 16255 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -23,7 +23,7 @@ let closure_7 = async function _getLatestVideo(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_8 = async function _checkAndRequestPermissions(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -181,7 +181,7 @@ let closure_9 = async function _startRecordingProcess(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -213,7 +213,7 @@ let closure_9 = async function _startRecordingProcess(arg0, value) {
         const _HermesInternal = HermesInternal;
         obj7.body = "Failed to start screen recording, error: " + closure_129_3;
         closure_130_1(closure_130_2[3]).show(obj7);
-        const state = closure_130_4.getState();
+        state = closure_130_4.getState();
         state.stopRecording();
         c6 = 3;
         const obj8 = { value: { success: false }, done: true };
@@ -275,7 +275,7 @@ let closure_10 = async function _stopRecordingProcess(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -304,7 +304,7 @@ let closure_10 = async function _stopRecordingProcess(arg0, value) {
         const _HermesInternal = HermesInternal;
         obj6.body = "Failed to stop screen recording, error: " + closure_128_0;
         closure_129_1(closure_129_2[3]).show(obj6);
-        const state = closure_129_4.getState();
+        state = closure_129_4.getState();
         state.stopRecording();
         c5 = 3;
         return { value: false, done: true };
@@ -350,7 +350,7 @@ let closure_11 = async function _submitBugReportWithScreenRecording(arg0, value)
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -574,7 +574,7 @@ let closure_11 = async function _submitBugReportWithScreenRecording(arg0, value)
                 const obj22 = { name: closure_133_2.uploadConfig.reportTitle, description: closure_133_2.uploadConfig.reportDescription, priority: closure_133_2.uploadConfig.priority, feature: null, url: "" };
                 let obj24 = closure_133_3;
                 if (closure_133_3 == null) {
-                  obj24 = { name: closure_133_2.uploadConfig.featureName, squad: closure_133_2.uploadConfig.squadName, asana_inbox_id: "r" };
+                  obj24 = { name: closure_133_2.uploadConfig.featureName, squad: closure_133_2.uploadConfig.squadName, asana_inbox_id: "Array" };
                 }
                 obj22.feature = obj24;
                 closure_133_14 = obj22;
@@ -630,7 +630,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -660,7 +660,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
                     const obj = { value, done: true };
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -707,7 +707,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
                       const state1 = closure_2_4.getState();
                       state1.stopRecording();
                       c2 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp13) {
                     c2 = tmp;
@@ -753,7 +753,7 @@ let closure_12 = async function _handleStopAndSend(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp9) {
       c1 = tmp;
@@ -831,7 +831,7 @@ let closure_13 = async function _handleRecordingPhase(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
-const useScreenRecordingStore = fn(16263).useScreenRecordingStore;
+const useScreenRecordingStore = fn(16252).useScreenRecordingStore;
 const DCDPhotos = NativeModules.DCDPhotos;
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.DCDScreenRecordingManager);
 let size = fn(2);

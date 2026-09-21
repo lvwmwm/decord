@@ -1,20 +1,122 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12339
+// Function ID: 12340
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4748, 1364, 1878, 4624, 1610, 1478, 11619, 5815, 11618, 2]
-// Exports: default
+// Dependencies: [19, 4750, 1368, 1882, 4627, 1614, 558, 568, 1482, 10347, 5813, 10346, 2]
 
-// Module 12333 (useCustomKeyboardBottomSheetConfig)
+// Module 12339 (useCustomKeyboardBottomSheetConfig)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/action_sheet/native/useCustomKeyboardBottomSheetConfig.tsx");
 
-export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(15);
+  ({ forceMaxHeight, enablePanDownToClose } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { ignoreKeyboard: true };
+    cResult[0] = obj2;
+    let first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const tmp8 = minimum(1482)(first);
+  _require = tmp8;
+  const tmp9 = minimum(10347)();
+  minimum = tmp9.minimum;
+  const maximum = tmp9.maximum;
+  if (cResult[1] === minimum) {
+    if (cResult[2] === tmp8.height) {
+      let tmp10 = cResult[3];
+    }
+    ({ initialPosition, animateOnMount } = minimum(5813)(tmp10));
+    if (cResult[4] === maximum) {
+      if (cResult[5] === minimum) {
+        if (cResult[6] === tmp4) {
+          if (cResult[8] === maximum) {
+            if (cResult[9] === animateOnMount) {
+              if (cResult[10] === tmp5) {
+                if (cResult[11] === initialPosition) {
+                  if (cResult[12] === tmp12) {
+                    if (cResult[13] === tmp8.height) {
+                      let tmp15 = cResult[14];
+                    }
+                    return tmp15;
+                  }
+                }
+              }
+            }
+          }
+          let obj3 = { animateOnMount, enablePanDownToClose: tmp5, accessible: null, contentHeight: null, containerHeight: null, enableDynamicSizing: false, initialPosition: null, keyboardBehavior: "extend", android_keyboardInputMode: null, snapPoints: null };
+          let tmpResult = tmp(1368);
+          obj3.accessible = tmp(1368).isAndroid() && undefined;
+          obj3.contentHeight = maximum;
+          obj3.containerHeight = tmp8.height;
+          obj3.initialPosition = initialPosition;
+          let str;
+          if (tmp(10346).IS_SYSTEM_KEYBOARD_EXTERNAL) {
+            str = "adjustResize";
+          }
+          obj3.android_keyboardInputMode = str;
+          obj3.snapPoints = cResult[7];
+          cResult[8] = maximum;
+          cResult[9] = animateOnMount;
+          cResult[10] = tmp5;
+          cResult[11] = initialPosition;
+          cResult[12] = cResult[7];
+          cResult[13] = tmp8.height;
+          cResult[14] = obj3;
+          tmp15 = obj3;
+          const tmp16 = tmp(1368).isAndroid() && undefined;
+        }
+      }
+    }
+    const items = [, ];
+    if (tmp4) {
+      items[0] = maximum;
+      items[1] = maximum;
+      let tmp13 = items;
+    } else {
+      items[0] = minimum;
+      items[1] = maximum;
+      tmp13 = items;
+    }
+    cResult[4] = maximum;
+    cResult[5] = minimum;
+    cResult[6] = tmp4;
+    cResult[7] = tmp13;
+    const tmp11 = minimum(5813)(tmp10);
+  }
+  const fn = function c() {
+    const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
+    let tmp3 = obj;
+    if (!obj2.isAndroid()) {
+      tmp3 = obj;
+      if (!AccessibilityStore.useReducedMotion) {
+        let obj3 = obj;
+        if (0 === tmpResult.getSystemKeyboardHeight()) {
+          const keyboardTypePrevious = tmp(4627).getKeyboardTypePrevious();
+          obj3 = obj;
+          if (keyboardTypePrevious === tmp(1614).KeyboardTypes.SYSTEM) {
+            obj3 = { animateOnMount: true };
+          }
+          const tmpResult2 = tmp(4627);
+        }
+        tmp3 = obj3;
+        tmpResult = tmp(1882);
+      }
+    }
+    return tmp3;
+  };
+  cResult[1] = minimum;
+  cResult[2] = tmp8.height;
+  cResult[3] = fn;
+  tmp10 = fn;
+}) : ((forceMaxHeight) => {
   let flag = forceMaxHeight.forceMaxHeight;
   if (flag === undefined) {
     flag = false;
@@ -39,15 +141,15 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4624).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4627).getKeyboardTypePrevious();
           obj3 = obj;
-          if (keyboardTypePrevious === tmp(1610).KeyboardTypes.SYSTEM) {
+          if (keyboardTypePrevious === tmp(1614).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4624);
+          const tmpResult2 = tmp(4627);
         }
         tmp3 = obj3;
-        tmpResult = tmp(1878);
+        tmpResult = tmp(1882);
       }
     }
     return tmp3;
@@ -71,15 +173,15 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4624).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4627).getKeyboardTypePrevious();
           obj3 = obj;
-          if (keyboardTypePrevious === tmp(1610).KeyboardTypes.SYSTEM) {
+          if (keyboardTypePrevious === tmp(1614).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4624);
+          const tmpResult2 = tmp(4627);
         }
         tmp3 = obj3;
-        tmpResult = tmp(1878);
+        tmpResult = tmp(1882);
       }
     }
     return tmp3;
@@ -91,10 +193,10 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   obj.containerHeight = tmp2.height;
   obj.initialPosition = initialPosition;
   let str;
-  if (tmp6(tmp[9]).IS_SYSTEM_KEYBOARD_EXTERNAL) {
+  if (tmp6(tmp[11]).IS_SYSTEM_KEYBOARD_EXTERNAL) {
     str = "adjustResize";
   }
   obj.android_keyboardInputMode = str;
   obj.snapPoints = memo;
   return obj;
-};
+});

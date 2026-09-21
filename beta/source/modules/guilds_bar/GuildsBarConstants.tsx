@@ -1,12 +1,12 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16631
+// Function ID: 16632
 // Name: guilds_bar/GuildsBarConstants
-// Dependencies: [1092, 575, 2]
+// Dependencies: [1096, 579, 2]
 // Exports: isDefaultFolderColor, normalizeFolderColor
 
-// Module 16629 (guilds_bar/GuildsBarConstants)
-import ColorUtils from "utils/ColorUtils" /* 1092 */;
-import shims from "shims" /* 575 */;
+// Module 16631 (guilds_bar/GuildsBarConstants)
+import ColorUtils from "utils/ColorUtils" /* 1096 */;
+import shims from "shims" /* 579 */;
 import size from "module_2" /* 2 */;
 
 const hex2intResult = ColorUtils.hex2int(shims.unsafe_getResolvedRawColor("BRAND_500", { saturation: 1 }));

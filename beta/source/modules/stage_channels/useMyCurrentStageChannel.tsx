@@ -1,19 +1,46 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 10184
+// Function ID: 10185
 // Name: useMyCurrentStageChannel
-// Dependencies: [2041, 2095, 504, 2]
-// Exports: default
+// Dependencies: [2045, 2099, 558, 568, 504, 2]
 
-// Module 9771 (useMyCurrentStageChannel)
+// Module 10184 (useMyCurrentStageChannel)
 import initialize from "initialize" /* 504 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import c from "c" /* 568 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannel.tsx");
 
-export default function useMyCurrentStageChannel() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectedChannelStore, ChannelStore];
+    const fn = function u() {
+      voiceChannelId = voiceChannelId.getVoiceChannelId();
+      if (null != voiceChannelId) {
+        channel = channel.getChannel(voiceChannelId);
+        let isGuildStageVoiceResult;
+        if (channel != null) {
+          isGuildStageVoiceResult = channel.isGuildStageVoice();
+        }
+        if (isGuildStageVoiceResult) {
+          return channel;
+        }
+      }
+      return null;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [SelectedChannelStore, ChannelStore];
   return initialize.useStateFromStores(items, () => {
     voiceChannelId = voiceChannelId.getVoiceChannelId();
@@ -29,4 +56,4 @@ export default function useMyCurrentStageChannel() {
     }
     return null;
   });
-};
+});

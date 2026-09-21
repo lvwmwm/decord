@@ -1,17 +1,20 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14183
+// Function ID: 14184
 // Name: useIsServerThemeAvailableForGuild
-// Dependencies: [4684, 4640, 2]
+// Dependencies: [558, 4687, 4643, 2]
 // Exports: default
 
-// Module 14180 (useIsServerThemeAvailableForGuild)
-import GuildThemeResolver from "GuildThemeResolver" /* 4640 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4684 */;
+// Module 14183 (useIsServerThemeAvailableForGuild)
+import GuildThemeResolver from "GuildThemeResolver" /* 4643 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4687 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsServerThemeAvailableForGuild.tsx");
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const result1 = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsServerThemeAvailableForGuild.tsx");
 
-export default function useIsServerThemeAvailableForGuild(guildId, GuildThemeNuxTrigger) {
-  const serverThemeEnabled = ServerThemeExperiment.useServerThemeEnabled(guildId, GuildThemeNuxTrigger);
-  return null != GuildThemeResolver.useEnabledGuildThemeForGuildId(guildId, GuildThemeNuxTrigger);
+export default (arg0, arg1) => {
+  const serverThemeEnabled = ServerThemeExperiment.useServerThemeEnabled(arg0, arg1);
+  return null != GuildThemeResolver.useEnabledGuildThemeForGuildId(arg0, arg1);
 };

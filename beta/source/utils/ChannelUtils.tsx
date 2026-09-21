@@ -1,27 +1,27 @@
-// Module ID: 4901
-// Function ID: 4902
+// Module ID: 4903
+// Function ID: 4904
 // Name: ChannelUtils
-// Dependencies: [2045, 2041, 2096, 4395, 2095, 4780, 1074, 1374, 4400, 1086, 1978, 4902, 4903, 1115, 4600, 4904, 11, 2, 4911]
+// Dependencies: [2049, 2045, 2100, 4399, 2099, 4782, 1078, 1378, 4404, 1090, 1982, 4904, 4905, 1119, 4603, 4906, 11, 2, 4913]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4901 (ChannelUtils)
+// Module 4903 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import util from "util" /* 1115 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import Server from "Server" /* 1978 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import ChannelListUtils from "ChannelListUtils" /* 4902 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4903 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4911 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
-import Constants from "Constants" /* 1074 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import util from "util" /* 1119 */;
+import PremiumConstants from "PremiumConstants" /* 1378 */;
+import Server from "Server" /* 1982 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import ChannelListUtils from "ChannelListUtils" /* 4904 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4905 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4913 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,30 +30,30 @@ function allowChannelAccess(id, channelType, ROLE) {
   const NONE = PermissionUtilsAll.NONE;
   let tmp3 = React4(channelType);
   if (!tmp3) {
-    tmp3 = channelType === __initData2;
+    tmp3 = channelType === closure_1_22;
   }
   let addResult = NONE;
   if (tmp3) {
-    addResult = tmp(1086).add(NONE, constants.VIEW_CHANNEL);
-    const tmpResult = tmp(1086);
+    addResult = tmp(1090).add(NONE, constants.VIEW_CHANNEL);
+    const tmpResult = tmp(1090);
   }
-  let tmp7 = channelType === __initData;
+  let tmp7 = channelType === guild;
   if (!tmp7) {
-    tmp7 = channelType === __initData2;
+    tmp7 = channelType === closure_1_22;
   }
   if (!tmp7) {
-    let tmp10 = channelType === __initData3;
+    let tmp10 = channelType === closure_1_23;
     if (!tmp10) {
-      tmp10 = channelType === __initData2;
+      tmp10 = channelType === closure_1_22;
     }
     tmp7 = tmp10;
   }
   let addResult2 = addResult;
   if (tmp7) {
-    const tmpResult3 = tmp(1086);
-    const addResult1 = tmp(1086).add(addResult, constants.VIEW_CHANNEL);
-    addResult2 = tmp(1086).add(addResult1, constants.CONNECT);
-    const tmpResult4 = tmp(1086);
+    const tmpResult3 = tmp(1090);
+    const addResult1 = tmp(1090).add(addResult, constants.VIEW_CHANNEL);
+    addResult2 = tmp(1090).add(addResult1, constants.CONNECT);
+    const tmpResult4 = tmp(1090);
   }
   return { id, type: ROLE, deny: PermissionUtilsAll.NONE, allow: addResult2 };
 }
@@ -94,8 +94,8 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     }
     let addResult = NONE;
     if (tmp6) {
-      addResult = tmp4(1086).add(NONE, constants.VIEW_CHANNEL);
-      const tmp4Result = tmp4(1086);
+      addResult = tmp4(1090).add(NONE, constants.VIEW_CHANNEL);
+      const tmp4Result = tmp4(1090);
     }
     let tmp11 = channelType === closure_21;
     if (!tmp11) {
@@ -103,10 +103,10 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     }
     let addResult2 = addResult;
     if (tmp11) {
-      const tmp4Result3 = tmp4(1086);
-      const addResult1 = tmp4(1086).add(addResult, constants.VIEW_CHANNEL);
-      addResult2 = tmp4(1086).add(addResult1, constants.CONNECT);
-      const tmp4Result4 = tmp4(1086);
+      const tmp4Result3 = tmp4(1090);
+      const addResult1 = tmp4(1090).add(addResult, constants.VIEW_CHANNEL);
+      addResult2 = tmp4(1090).add(addResult1, constants.CONNECT);
+      const tmp4Result4 = tmp4(1090);
     }
     const obj = { id: guildId, type: require("Server").PermissionOverwriteType.ROLE, allow: PermissionUtilsAll.NONE, deny: addResult2 };
     items.push(obj);
@@ -128,7 +128,7 @@ export const permissionOverwritesForAnnouncement = function permissionOverwrites
 };
 export const isChannelFull = function isChannelFull(channel, VoiceStateStore, GuildStore) {
   const guildId = channel.getGuildId();
-  const guild = GuildStore.getGuild(guildId);
+  guild = GuildStore.getGuild(guildId);
   let num;
   if (guild != null) {
     num = guild.maxVideoChannelUsers;
@@ -146,7 +146,7 @@ export const isChannelFull = function isChannelFull(channel, VoiceStateStore, Gu
   const result = SortedVoiceStateStore.countVoiceStatesForChannel(channel.id);
   const voiceStatesForChannel = SortedVoiceStateStore.getVoiceStatesForChannel(channel);
   const tmp6 = PermissionStore.can(constants.MOVE_MEMBERS, channel) && PermissionStore.can(constants.CONNECT, channel);
-  if (channel.type === __initData3) {
+  if (channel.type === closure_1_23) {
     let tmp8 = null != guildId;
     if (tmp8) {
       let hasVideoResult = VoiceStateStore.hasVideo(channel.id);
@@ -187,7 +187,7 @@ export const isChannelFull = function isChannelFull(channel, VoiceStateStore, Gu
 export const sanitizeGuildTextChannelName = sanitizeGuildTextChannelNameDefault;
 export const getBitrateLimit = function getBitrateLimit(guild, channel) {
   if (channel.isGuildStageVoice()) {
-    let bound = closure_1_17;
+    let bound = constants;
   } else if (null == guild) {
     bound = value2;
   } else {

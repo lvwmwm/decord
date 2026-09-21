@@ -1,32 +1,68 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 13840
+// Function ID: 13841
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4650, 1979, 504, 1094, 7661, 4653, 2]
-// Exports: default
+// Dependencies: [5, 32, 19, 4653, 1983, 558, 568, 504, 1098, 7663, 4656, 2]
 
-// Module 13837 (useFetchGuildBoostSlots)
+// Module 13840 (useFetchGuildBoostSlots)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4650 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4653 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
 
-export default function useFetchGuildBoostSlots() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = first(stateFromStores[6]).c(9);
   [first, closure_1] = noop.useState(true);
-  let items = [GuildBoostSlotStore];
-  stateFromStores = first(stateFromStores[5]).useStateFromStores(items, () => hasFetched.hasFetched);
-  let obj = first(stateFromStores[5]);
-  const items1 = [AppStateStore];
-  const stateFromStores1 = first(stateFromStores[5]).useStateFromStores(items1, () => state.getState());
-  _slicedToArray = noop.useRef(stateFromStores1);
-  const items2 = [stateFromStores1, stateFromStores, first];
-  const effect = noop.useEffect(() => {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [GuildBoostSlotStore];
+    const fn = function l() {
+      return hasFetched.hasFetched;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  let obj = first(stateFromStores[6]);
+  stateFromStores = first(stateFromStores[7]).useStateFromStores(tmp6, tmp7);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [AppStateStore];
+    class F {
+      constructor() {
+        return closure_1_7.getState();
+      }
+    }
+    cResult[2] = items1;
+    cResult[3] = F;
+    let tmp11 = F;
+    let tmp10 = items1;
+  } else {
+    tmp10 = cResult[2];
+    tmp11 = cResult[3];
+  }
+  const tmpResult = first(stateFromStores[7]);
+  const stateFromStores1 = first(stateFromStores[7]).useStateFromStores(tmp10, tmp11);
+  _slicedToArray = obj2.useRef(stateFromStores1);
+  if (cResult[4] === stateFromStores1) {
+    if (cResult[5] === stateFromStores) {
+      if (cResult[6] === first) {
+        let tmp14 = cResult[7];
+        let tmp15 = cResult[8];
+      }
+      const effect = obj2.useEffect(tmp14, tmp15);
+      return first;
+    }
+  }
+  const fn2 = function b() {
     if (closure_0) {
-      closure_0 = async function _fetch(arg0, value) {
+      closure_0 = stateFromStores1(function*(arg0, value) {
         if (c2 === 2) {
           c2 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -37,7 +73,102 @@ export default function useFetchGuildBoostSlots() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c2 = 2;
+            if (0 === v1) {
+              if (arg0 === 1) {
+                c2 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c2 = 3;
+                const obj5 = { value, done: true };
+                return obj5;
+              } else {
+                let resolve = globalThis;
+                let appliedGuildBoostsForUser = stateFromStores;
+                let items = [closure_2_1(stateFromStores[9]).init(), , ];
+                if (c2) {
+                  resolve = resolve.Promise.resolve;
+                  let resolveResult = resolve();
+                  const _Promise = resolve.Promise;
+                } else {
+                  resolveResult = tmp2(appliedGuildBoostsForUser[10]).fetchGuildBoostSlots();
+                  const obj2 = tmp2(appliedGuildBoostsForUser[10]);
+                }
+                items[1] = resolveResult;
+                const obj6 = closure_2_1(stateFromStores[9]);
+                appliedGuildBoostsForUser = tmp2(appliedGuildBoostsForUser[10]).fetchAppliedGuildBoostsForUser();
+                items[2] = appliedGuildBoostsForUser;
+                items = Promise.all(items);
+                v1 = 1;
+                c2 = 1;
+                const obj3 = tmp2(appliedGuildBoostsForUser[10]);
+              }
+            } else if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              v1(false);
+              c2 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp13) {
+            c2 = tmp;
+            throw tmp13;
+          }
+        }
+      });
+      ref.current = stateFromStores1;
+      (function fetch() {
+        const self = this;
+        const apply = closure_0.apply;
+        if (typeof apply === "unknown") {
+          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+        } else {
+          applyArgumentsResult = apply(self, arguments);
+        }
+        return applyArgumentsResult;
+      })();
+    }
+  };
+  const items2 = [stateFromStores1, stateFromStores, first];
+  cResult[4] = stateFromStores1;
+  cResult[5] = stateFromStores;
+  cResult[6] = first;
+  cResult[7] = fn2;
+  cResult[8] = items2;
+  tmp15 = items2;
+  tmp14 = fn2;
+}) : (() => {
+  [first, closure_1] = noop.useState(true);
+  let items = [GuildBoostSlotStore];
+  stateFromStores = first(stateFromStores[7]).useStateFromStores(items, () => hasFetched.hasFetched);
+  let obj = first(stateFromStores[7]);
+  const items1 = [AppStateStore];
+  const stateFromStores1 = first(stateFromStores[7]).useStateFromStores(items1, () => state.getState());
+  _slicedToArray = noop.useRef(stateFromStores1);
+  const items2 = [stateFromStores1, stateFromStores, first];
+  const effect = noop.useEffect(() => {
+    if (closure_0) {
+      closure_0 = async function _fetch2(arg0, value) {
+        if (c2 === 2) {
+          c2 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -54,23 +185,23 @@ export default function useFetchGuildBoostSlots() {
                 closure_0 = tmp2;
                 let resolve = globalThis;
                 let appliedGuildBoostsForUser = stateFromStores;
-                let items = [closure_2_1(stateFromStores[7]).init(), , ];
+                let items = [closure_2_1(stateFromStores[9]).init(), , ];
                 if (c2) {
                   resolve = resolve.Promise.resolve;
                   let resolveResult = resolve();
                   const _Promise = resolve.Promise;
                 } else {
-                  resolveResult = first(appliedGuildBoostsForUser[8]).fetchGuildBoostSlots();
-                  const obj2 = first(appliedGuildBoostsForUser[8]);
+                  resolveResult = first(appliedGuildBoostsForUser[10]).fetchGuildBoostSlots();
+                  const obj2 = first(appliedGuildBoostsForUser[10]);
                 }
                 items[1] = resolveResult;
-                const obj6 = closure_2_1(stateFromStores[7]);
-                appliedGuildBoostsForUser = first(appliedGuildBoostsForUser[8]).fetchAppliedGuildBoostsForUser();
+                const obj6 = closure_2_1(stateFromStores[9]);
+                appliedGuildBoostsForUser = first(appliedGuildBoostsForUser[10]).fetchAppliedGuildBoostsForUser();
                 items[2] = appliedGuildBoostsForUser;
                 items = Promise.all(items);
                 v1 = 1;
                 c2 = 1;
-                const obj3 = first(appliedGuildBoostsForUser[8]);
+                const obj3 = first(appliedGuildBoostsForUser[10]);
               }
             } else if (arg0 === 1) {
               c2 = 3;
@@ -82,7 +213,7 @@ export default function useFetchGuildBoostSlots() {
             } else {
               v1(false);
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp13) {
             c2 = tmp;
@@ -104,4 +235,4 @@ export default function useFetchGuildBoostSlots() {
     }
   }, items2);
   return first;
-};
+});

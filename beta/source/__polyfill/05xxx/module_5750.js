@@ -1,36 +1,15 @@
 // Module ID: 5750
 // Function ID: 5751
-// Dependencies: [17]
-// Exports: parsePossibleSources
+// Dependencies: [5751, 5754]
 
 // Module 5750
-import _mod17 from "module_17" /* 17 */;
+import _mod5751 from "module_5751" /* 5751 */;
 
-const Image = _mod17.Image;
+const require = globalThis.__r;
 
-export const parsePossibleSources = function parsePossibleSources(source) {
-  const uri = source.uri;
-  if (typeof source === "string") {
-    const obj2 = { sourceName: source };
-    let obj = obj2;
-  } else {
-    if (typeof source === "object") {
-      if (!uri) {
-        obj = { sourceJson: null };
-        const _JSON = JSON;
-        obj.sourceJson = JSON.stringify(source);
-      }
-    }
-    if (typeof source !== "object") {
-      if (typeof source === "number") {
-        const obj3 = { sourceDotLottieURI: Image.resolveAssetSource(source).uri };
-      }
-    }
-    if (uri.includes(".lottie")) {
-      const obj4 = { sourceDotLottieURI: uri };
-    } else {
-      const obj5 = { sourceURL: uri };
-    }
-  }
-  return obj;
-};
+for (const key10016 in require("module_5754")) {
+  arg5[key10016] = require("module_5754")[key10016];
+  continue;
+}
+
+export default _mod5751.LottieView;

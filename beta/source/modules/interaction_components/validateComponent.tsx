@@ -1,12 +1,12 @@
-// Module ID: 8384
-// Function ID: 8385
+// Module ID: 8389
+// Function ID: 8390
 // Name: validateComponent
-// Dependencies: [1978, 4980, 1115, 38, 2]
+// Dependencies: [1982, 4982, 1119, 38, 2]
 // Exports: default
 
-// Module 8384 (validateComponent)
+// Module 8389 (validateComponent)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1978 */;
+import Server from "Server" /* 1982 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/validateComponent.tsx");
@@ -20,19 +20,19 @@ export default function validateComponent(type, arg1, modal) {
   if (Server.ComponentType.BUTTON === type) {
     return null;
   } else {
-    if (tmp4(1978).ComponentType.STRING_SELECT !== type) {
-      if (tmp4(1978).ComponentType.USER_SELECT !== type) {
-        if (tmp4(1978).ComponentType.ROLE_SELECT !== type) {
-          if (tmp4(1978).ComponentType.MENTIONABLE_SELECT !== type) {
-            if (tmp4(1978).ComponentType.CHANNEL_SELECT !== type) {
-              if (tmp4(1978).ComponentType.TEXT_INPUT === type) {
+    if (tmp4(1982).ComponentType.STRING_SELECT !== type) {
+      if (tmp4(1982).ComponentType.USER_SELECT !== type) {
+        if (tmp4(1982).ComponentType.ROLE_SELECT !== type) {
+          if (tmp4(1982).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp4(1982).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp4(1982).ComponentType.TEXT_INPUT === type) {
                 ({ minLength, maxLength, required } = type);
                 if (null != values) {
                   if (0 !== values.value.length) {
                     if (values.value.length < minLength) {
-                      const intl8 = tmp4(1115).intl;
+                      const intl8 = tmp4(1119).intl;
                       const range = { min: minLength, max: maxLength };
-                      let formatToPlainStringResult = intl8.formatToPlainString(tmp4(1115).t.ONSqYd, range);
+                      let formatToPlainStringResult = intl8.formatToPlainString(tmp4(1119).t.ONSqYd, range);
                     } else {
                       formatToPlainStringResult = null;
                     }
@@ -41,11 +41,11 @@ export default function validateComponent(type, arg1, modal) {
                 }
                 let stringResult = null;
                 if (required) {
-                  const intl9 = tmp4(1115).intl;
-                  stringResult = intl9.string(tmp4(1115).t.eJEUvD);
+                  const intl9 = tmp4(1119).intl;
+                  stringResult = intl9.string(tmp4(1119).t.eJEUvD);
                 }
                 formatToPlainStringResult = stringResult;
-              } else if (tmp4(1978).ComponentType.FILE_UPLOAD === type) {
+              } else if (tmp4(1982).ComponentType.FILE_UPLOAD === type) {
                 ({ minValues: minValues2, maxValues: maxValues2 } = type);
                 let num3;
                 if (values != null) {
@@ -57,35 +57,35 @@ export default function validateComponent(type, arg1, modal) {
                 if (0 === num3) {
                   let stringResult1 = null;
                   if (type.required) {
-                    const intl7 = tmp4(1115).intl;
-                    stringResult1 = intl7.string(tmp4(1115).t.eJEUvD);
+                    const intl7 = tmp4(1119).intl;
+                    stringResult1 = intl7.string(tmp4(1119).t.eJEUvD);
                   }
                   let formatToPlainStringResult1 = stringResult1;
                 } else if (num3 < minValues2) {
-                  const intl6 = tmp4(1115).intl;
+                  const intl6 = tmp4(1119).intl;
                   const obj2 = { minValues: minValues2 };
-                  formatToPlainStringResult1 = intl6.formatToPlainString(tmp4(1115).t.pmAt62, obj2);
+                  formatToPlainStringResult1 = intl6.formatToPlainString(tmp4(1119).t.pmAt62, obj2);
                 } else {
                   formatToPlainStringResult1 = null;
                   if (num3 > maxValues2) {
-                    const intl5 = tmp4(1115).intl;
+                    const intl5 = tmp4(1119).intl;
                     const obj3 = { maxValues: maxValues2 };
-                    formatToPlainStringResult1 = intl5.formatToPlainString(tmp4(1115).t.dy6viJ, obj3);
+                    formatToPlainStringResult1 = intl5.formatToPlainString(tmp4(1119).t.dy6viJ, obj3);
                   }
                 }
                 return formatToPlainStringResult1;
-              } else if (tmp4(1978).ComponentType.RADIO_GROUP === type) {
+              } else if (tmp4(1982).ComponentType.RADIO_GROUP === type) {
                 if (null == values) {
                   let stringResult2 = null;
                   if (tmp10) {
-                    const intl4 = tmp4(1115).intl;
-                    stringResult2 = intl4.string(tmp4(1115).t.eJEUvD);
+                    const intl4 = tmp4(1119).intl;
+                    stringResult2 = intl4.string(tmp4(1119).t.eJEUvD);
                   }
                 } else {
                   stringResult2 = null;
                 }
                 return stringResult2;
-              } else if (tmp4(1978).ComponentType.CHECKBOX_GROUP === type) {
+              } else if (tmp4(1982).ComponentType.CHECKBOX_GROUP === type) {
                 ({ minValues, maxValues } = type);
                 let num;
                 if (values != null) {
@@ -97,24 +97,24 @@ export default function validateComponent(type, arg1, modal) {
                 if (0 === num) {
                   let stringResult3 = null;
                   if (type.required) {
-                    const intl3 = tmp4(1115).intl;
-                    stringResult3 = intl3.string(tmp4(1115).t.eJEUvD);
+                    const intl3 = tmp4(1119).intl;
+                    stringResult3 = intl3.string(tmp4(1119).t.eJEUvD);
                   }
                   let formatToPlainStringResult2 = stringResult3;
                 } else if (num < minValues) {
-                  const intl2 = tmp4(1115).intl;
+                  const intl2 = tmp4(1119).intl;
                   const obj4 = { count: minValues };
-                  formatToPlainStringResult2 = intl2.formatToPlainString(tmp4(1115).t.Jmwzdx, obj4);
+                  formatToPlainStringResult2 = intl2.formatToPlainString(tmp4(1119).t.Jmwzdx, obj4);
                 } else {
                   formatToPlainStringResult2 = null;
                   if (num > maxValues) {
-                    const intl = tmp4(1115).intl;
+                    const intl = tmp4(1119).intl;
                     const obj = { count: maxValues };
-                    formatToPlainStringResult2 = intl.formatToPlainString(tmp4(1115).t.LDvfRP, obj);
+                    formatToPlainStringResult2 = intl.formatToPlainString(tmp4(1119).t.LDvfRP, obj);
                   }
                 }
                 return formatToPlainStringResult2;
-              } else if (tmp4(1978).ComponentType.CHECKBOX === type) {
+              } else if (tmp4(1982).ComponentType.CHECKBOX === type) {
                 return null;
               } else {
                 _modDef38(false, "missing validator for this component");
@@ -130,14 +130,14 @@ export default function validateComponent(type, arg1, modal) {
         const obj5 = { minValues: minValues3, required: tmp16 };
         let stringResult4 = null;
         if (!tmp4Result.canSelectBeEmpty(obj5, modal)) {
-          const intl10 = tmp4(1115).intl;
-          stringResult4 = intl10.string(tmp4(1115).t.eJEUvD);
+          const intl10 = tmp4(1119).intl;
+          stringResult4 = intl10.string(tmp4(1119).t.eJEUvD);
         }
         const tmp18 = stringResult4;
-        tmp4Result = tmp4(4980);
+        tmp4Result = tmp4(4982);
       }
       return tmp18;
-    } else if (values.type === tmp4(1978).ComponentType.STRING_SELECT) {
+    } else if (values.type === tmp4(1982).ComponentType.STRING_SELECT) {
       ({ values, length } = values);
     } else {
       length = values.selectedOptions.length;

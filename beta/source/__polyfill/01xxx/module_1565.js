@@ -1,53 +1,21 @@
 // Module ID: 1565
 // Function ID: 1566
-// Dependencies: [19, 1514, 1525]
-// Exports: useOnPreventRemove
+// Dependencies: [19, 1518, 1566]
+// Exports: useScheduleUpdate
 
 // Module 1565
+import NavigationBuilderContext from "NavigationBuilderContext" /* 1518 */;
+import _mod1566 from "module_1566" /* 1566 */;
 import noop from "module_19" /* 19 */;
 
-const require = arg1;
-let closure_3 = Symbol("VISITED_ROUTE_KEYS");
-function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, target) {
-  let tmp = target;
-  closure_0 = routes2.map((key) => key.key);
-  const found = routes.filter((key) => !closure_0.includes(key.key));
-  let reversed = found.reverse();
-  let tmp3 = closure_3;
-  if (!(closure_3 in target)) {
-    const _Set2 = Set;
-    let set = new Set();
-    const obj = {};
-    const merged = Object.assign(tmp);
-    obj[tmp3] = set;
-    tmp = reversed;
-    tmp3 = reversed[Symbol.iterator]();
-    reversed = null;
-  } else {
-    const _Set = Set;
-  }
-  set = tmp[tmp3];
-}
+require = arg1;
 
-export { shouldPreventRemove };
-export const useOnPreventRemove = function useOnPreventRemove(getState) {
-  getState = getState.getState;
-  const emitter = getState.emitter;
-  const beforeRemoveListeners = getState.beforeRemoveListeners;
-  const addKeyedListener = beforeRemoveListeners.useContext(getState(emitter[1]).NavigationBuilderContext).addKeyedListener;
-  const context = beforeRemoveListeners.useContext(getState(emitter[2]).NavigationRouteContext);
-  let key;
-  if (context != null) {
-    key = context.key;
-  }
-  const items = [addKeyedListener, beforeRemoveListeners, emitter, getState, key];
-  const effect = beforeRemoveListeners.useEffect(() => {
-    if (key) {
-      let tmp2Result;
-      if (addKeyedListener != null) {
-        tmp2Result = tmp2("beforeRemove", tmp, (arg0) => key(emitter, beforeRemoveListeners, getState().routes, [], arg0));
-      }
-      return tmp2Result;
-    }
-  }, items);
+export const useScheduleUpdate = function useScheduleUpdate(arg0) {
+  closure_0 = arg0;
+  const context = noop.useContext(NavigationBuilderContext.NavigationBuilderContext);
+  ({ scheduleUpdate: dependencyMap, flushUpdates } = context);
+  const insertionEffect = noop.useInsertionEffect(() => {
+    dependencyMap(closure_0);
+  });
+  const clientLayoutEffect = _mod1566.useClientLayoutEffect(flushUpdates);
 };

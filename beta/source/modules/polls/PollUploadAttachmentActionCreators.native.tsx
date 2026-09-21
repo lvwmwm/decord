@@ -1,13 +1,13 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12350
+// Function ID: 12351
 // Name: PollUploadAttachmentActionCreators
-// Dependencies: [5, 5105, 8071, 12458, 8474, 5354, 5344, 9421, 2]
+// Dependencies: [5, 5107, 8076, 12351, 8479, 5356, 5346, 9419, 2]
 // Exports: handlePollGifAttachmentAdd, handlePollMediaAttachmentAdd, removeAllPollUploadAttachments, removePollUploadAttachment
 
-// Module 12457 (PollUploadAttachmentActionCreators)
-import FileManagerUtils from "FileManagerUtils" /* 8474 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9421 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12458 */;
+// Module 12350 (PollUploadAttachmentActionCreators)
+import FileManagerUtils from "FileManagerUtils" /* 8479 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9419 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12351 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -22,7 +22,7 @@ let closure_6 = async function _handlePollGifAttachmentAdd(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -56,7 +56,7 @@ let closure_6 = async function _handlePollGifAttachmentAdd(arg0, value) {
       } else if (1 === tmp8) {
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } else if (2 === tmp8) {
         if (arg0 === 1) {
           c8 = 3;
@@ -71,7 +71,7 @@ let closure_6 = async function _handlePollGifAttachmentAdd(arg0, value) {
           if (null == closure_131_3) {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else {
             filePathForGif = closure_132_0(closure_132_2[3]).getFilePathForGif(fileNameFromGifUrl);
             const obj9 = closure_132_0(closure_132_2[4]);
@@ -95,7 +95,7 @@ let closure_6 = async function _handlePollGifAttachmentAdd(arg0, value) {
           if (null == closure_131_5) {
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } else {
             c7 = 4;
             c8 = 1;
@@ -172,8 +172,8 @@ let closure_8 = async function _removeAllPollUploadAttachments(arg0, arg1) {
   }
   return arg1;
 };
-const DraftType = fn(5105).DraftType;
-const POLL_ATTACHMENT_FOLDER = fn(8071).POLL_ATTACHMENT_FOLDER;
+const DraftType = fn(5107).DraftType;
+const POLL_ATTACHMENT_FOLDER = fn(8076).POLL_ATTACHMENT_FOLDER;
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/polls/PollUploadAttachmentActionCreators.native.tsx");
 

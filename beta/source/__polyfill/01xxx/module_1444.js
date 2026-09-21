@@ -1,100 +1,254 @@
 // Module ID: 1444
 // Function ID: 1445
-// Dependencies: [1445, 1315]
+// Dependencies: []
 
 // Module 1444
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
-import _mod1445 from "module_1445" /* 1445 */;
-
-let closure_0 = _mod1445();
-let closure_1 = callBoundIntrinsic("Object.prototype.toString");
-function isArguments(obj) {
-  let tmp = closure_0;
-  if (closure_0) {
-    tmp = obj;
+class PseudoMap {
+  constructor(arg0) {
+    self = this;
+    if (this instanceof PseudoMap) {
+      tmp7 = global;
+      clearResult = self.clear();
+      if (global) {
+        if (!(global instanceof tmp)) {
+          tmp9 = globalThis;
+          _Map = Map;
+          if (typeof Map === "function") {
+            _Map2 = Map;
+          }
+          _Array = Array;
+          if (Array.isArray(global)) {
+            item = global.forEach(function(item) {
+              const result = this.set(item[0], item[1]);
+            }, self);
+          } else {
+            _TypeError2 = TypeError;
+            tmp10 = new.target;
+            str2 = "invalid argument";
+            tmp11 = new.target;
+            typeError = new TypeError("invalid argument");
+            tmp13 = typeError;
+            throw typeError;
+          }
+        }
+        item1 = global.forEach(function(item, index) {
+          const result = this.set(index, item);
+        }, self);
+      }
+      return;
+    } else {
+      tmp2 = globalThis;
+      _TypeError = TypeError;
+      tmp3 = new.target;
+      str = "Constructor PseudoMap requires 'new'";
+      tmp4 = new.target;
+      typeError1 = new TypeError("Constructor PseudoMap requires 'new'");
+      tmp6 = typeError1;
+      throw typeError1;
+    }
   }
-  if (tmp) {
-    tmp = typeof obj === "object";
+  forEach(arg0, arg1) {
+    self = this;
+    closure_0 = global;
+    tmp = require;
+    self = require;
+    if (!require) {
+      tmp = self;
+    }
+    self = tmp;
+    keys = Object.keys(self._data);
+    item = keys.forEach(function(item) {
+      if ("size" !== item) {
+        self = this;
+        const call = closure_0.call;
+        value = this._data[item].value;
+        if (typeof call === "unknown") {
+          tmp(value, key);
+        } else {
+          call(tmp2, value, key);
+        }
+        tmp = closure_0;
+        tmp2 = self;
+      }
+    }, self);
+    return;
   }
-  if (tmp) {
-    const _Symbol = Symbol;
-    tmp = Symbol.toStringTag in obj;
+  has(arg0) {
+    _data = this._data;
+    text = `_${global}`;
+    tmp2 = hasOwnProperty;
+    call = hasOwnProperty.call;
+    tmp3 = text;
+    num = 0;
+    tmp4 = undefined;
+    if (typeof call === "unknown" ? tmp2(`_${global}`) : call(_data, `_${global}`)) {
+      while (true) {
+        key = _data[tmp3].key;
+        tmp5 = key === global;
+        tmp6 = tmp3;
+        tmp7 = num;
+        if (!tmp5) {
+          tmp8 = key != key && global != global;
+          tmp5 = tmp8;
+        }
+        if (tmp5) {
+          break;
+        } else {
+          sum = text + num;
+          tmp10 = hasOwnProperty;
+          call2 = hasOwnProperty.call;
+          num = num + 1;
+          tmp3 = sum;
+        }
+      }
+      tmp4 = _data[tmp3];
+    }
+    return tmp4;
   }
-  let tmp3 = !tmp;
-  if (!tmp) {
-    tmp3 = "[object Arguments]" === closure_1(obj);
+  get(arg0) {
+    _data = this._data;
+    text = `_${global}`;
+    tmp2 = hasOwnProperty;
+    call = hasOwnProperty.call;
+    tmp3 = text;
+    num = 0;
+    tmp4 = undefined;
+    if (typeof call === "unknown" ? tmp2(`_${global}`) : call(_data, `_${global}`)) {
+      while (true) {
+        key = _data[tmp3].key;
+        tmp5 = key === global;
+        tmp6 = tmp3;
+        tmp7 = num;
+        if (!tmp5) {
+          tmp8 = key != key && global != global;
+          tmp5 = tmp8;
+        }
+        if (tmp5) {
+          break;
+        } else {
+          sum = text + num;
+          tmp10 = hasOwnProperty;
+          call2 = hasOwnProperty.call;
+          num = num + 1;
+          tmp3 = sum;
+        }
+      }
+      tmp4 = _data[tmp3];
+    }
+    value = tmp4;
+    if (tmp4) {
+      value = tmp4.value;
+    }
+    return value;
   }
-  return tmp3;
+  set(arg0, arg1) {
+    _data = this._data;
+    text = `_${global}`;
+    tmp2 = hasOwnProperty;
+    call = hasOwnProperty.call;
+    tmp3 = text;
+    num = 0;
+    tmp4 = text;
+    if (!(typeof call === "unknown" ? tmp2(`_${global}`) : call(_data, `_${global}`))) {
+      _data.size = _data.size + 1;
+      tmp11 = Entry;
+      obj1 = Object.create(Entry.prototype);
+      obj = {};
+      obj.key = global;
+      obj.value = require;
+      obj._index = tmp4;
+      _data[tmp4] = obj;
+    } else {
+      while (true) {
+        key = _data[tmp3].key;
+        tmp5 = key === global;
+        tmp6 = tmp3;
+        tmp7 = num;
+        if (!tmp5) {
+          tmp8 = key != key && global != global;
+          tmp5 = tmp8;
+        }
+        if (tmp5) {
+          break;
+        } else {
+          sum = text + num;
+          tmp10 = hasOwnProperty;
+          call2 = hasOwnProperty.call;
+          num = num + 1;
+          tmp3 = sum;
+          tmp4 = sum;
+        }
+      }
+      _data[tmp3].value = require;
+    }
+    return;
+  }
+  delete(arg0) {
+    self = this;
+    _data = this._data;
+    text = `_${global}`;
+    tmp4 = hasOwnProperty;
+    call = hasOwnProperty.call;
+    tmp5 = text;
+    num = 0;
+    tmp6 = undefined;
+    if (typeof call === "unknown" ? tmp4(`_${global}`) : call(_data, `_${global}`)) {
+      while (true) {
+        key = _data[tmp5].key;
+        tmp7 = key === global;
+        tmp8 = tmp5;
+        tmp9 = num;
+        if (!tmp7) {
+          tmp10 = key != key && global != global;
+          tmp7 = tmp10;
+        }
+        if (tmp7) {
+          break;
+        } else {
+          sum = text + num;
+          tmp12 = hasOwnProperty;
+          call2 = hasOwnProperty.call;
+          num = num + 1;
+          tmp5 = sum;
+        }
+      }
+      tmp6 = _data[tmp5];
+    }
+    if (tmp6) {
+      _data2 = self._data;
+      _index = tmp6._index;
+      delete tmp2[tmp];
+      _data3 = self._data;
+      _data3.size = _data3.size - 1;
+    }
+    return;
+  }
+  clear() {
+    obj = Object.create(null);
+    obj.size = 0;
+    definePropertyResult = Object.defineProperty(this, "_data", { value: obj, enumerable: false, configurable: true, writable: false });
+    return;
+  }
 }
-let isArguments2 = function isArguments(callee) {
-  if (typeof isArguments === "function") {
-    let tmp2 = closure_0;
-    if (closure_0) {
-      tmp2 = callee;
-    }
-    if (tmp2) {
-      tmp2 = typeof callee === "object";
-    }
-    if (tmp2) {
-      const _Symbol = Symbol;
-      tmp2 = Symbol.toStringTag in callee;
-    }
-    let tmp4 = !tmp2;
-    if (!tmp2) {
-      tmp4 = "[object Arguments]" === closure_1(callee);
-    }
-    let tmp6 = tmp4;
-    if (!tmp6) {
-      let tmp8 = null !== callee && typeof callee === "object";
-      if (tmp8) {
-        tmp8 = "length" in callee;
-      }
-      if (tmp8) {
-        tmp8 = typeof callee.length === "number";
-      }
-      if (tmp8) {
-        tmp8 = callee.length >= 0;
-      }
-      if (tmp8) {
-        tmp8 = "[object Array]" !== closure_1(callee);
-      }
-      if (tmp8) {
-        tmp8 = "callee" in callee;
-      }
-      if (tmp8) {
-        tmp8 = "[object Function]" === closure_1(callee.callee);
-      }
-      tmp6 = tmp8;
-    }
-    return tmp6;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+function Entry(arg0, arg1, arg2) {
+
+}
+Object.defineProperty(PseudoMap.prototype, "size", {
+  get() {
+    return this._data.size;
+  },
+  set(arg0) {
+
+  },
+  enumerable: true,
+  configurable: true
+});
+const fn = () => {
+  const error = new Error("iterators are not implemented in this version");
+  throw error;
 };
-isArguments.isLegacyArguments = isArguments2;
-if ((() => {
-  if (typeof isArguments === "function") {
-    let tmp = closure_0;
-    if (closure_0) {
-      tmp = arguments;
-    }
-    if (tmp) {
-      tmp = typeof arguments === "object";
-    }
-    if (tmp) {
-      const _Symbol = Symbol;
-      tmp = Symbol.toStringTag in arguments;
-    }
-    let tmp9 = !tmp;
-    if (!tmp) {
-      tmp9 = "[object Arguments]" === closure_1(arguments);
-    }
-    return tmp9;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-})()) {
-  isArguments2 = isArguments;
-}
+PseudoMap.prototype.entries = fn;
+PseudoMap.prototype.keys = fn;
+PseudoMap.prototype.values = fn;
 
-export default isArguments2;
+export default PseudoMap;

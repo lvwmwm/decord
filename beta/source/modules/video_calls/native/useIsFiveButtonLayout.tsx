@@ -1,21 +1,128 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 9665
+// Function ID: 9666
 // Name: useIsFiveButtonLayout
-// Dependencies: [2041, 2063, 504, 9644, 9670, 9671, 7513, 2]
-// Exports: useIsFiveButtonLayout
+// Dependencies: [2045, 2067, 558, 568, 504, 9640, 9666, 9667, 7515, 2]
 
-// Module 9669 (useIsFiveButtonLayout)
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 9665 (useIsFiveButtonLayout)
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/useIsFiveButtonLayout.tsx");
 
-export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
-  _require = id;
+export const useIsFiveButtonLayout = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(9);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      return ChannelStore.getChannel(closure_0);
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp6);
+  const tmpResult = require("initialize");
+  let isConnectedToVoiceChannel = require("VoiceChatHooks").useIsConnectedToVoiceChannel(stateFromStores);
+  let guild_id;
+  if (stateFromStores != null) {
+    guild_id = stateFromStores.guild_id;
+  }
+  if (guild_id == null) {
+    guild_id = null;
+  }
+  let guild_id1;
+  const tmpResult3 = require("VoiceChatHooks");
+  if (stateFromStores != null) {
+    guild_id1 = stateFromStores.guild_id;
+  }
+  if (guild_id1 == null) {
+    guild_id1 = null;
+  }
+  let id;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
+  }
+  const tmp10 = guild_id(9666);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [GuildStore];
+    cResult[3] = items1;
+    let tmp14 = items1;
+  } else {
+    tmp14 = cResult[3];
+  }
+  if (cResult[4] !== guild_id) {
+    const fn2 = function _() {
+      return GuildStore.getGuild(guild_id);
+    };
+    const items2 = [guild_id];
+    cResult[4] = guild_id;
+    cResult[5] = fn2;
+    cResult[6] = items2;
+    let tmp17 = items2;
+    let tmp16 = fn2;
+  } else {
+    tmp16 = cResult[5];
+    tmp17 = cResult[6];
+  }
+  const tmp10Result = guild_id(9666)(guild_id1, id);
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp14, tmp16, tmp17);
+  if (stateFromStores1 != null) {
+    const afkChannelId = stateFromStores1.afkChannelId;
+  }
+  if (cResult[7] !== stateFromStores) {
+    let flag;
+    if (stateFromStores != null) {
+      flag = stateFromStores.isGuildVoice();
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    cResult[7] = stateFromStores;
+    cResult[8] = flag;
+    let tmp19 = flag;
+  } else {
+    tmp19 = cResult[8];
+  }
+  let id1;
+  const tmpResult4 = require("initialize");
+  if (stateFromStores != null) {
+    id1 = stateFromStores.id;
+  }
+  const tmp9Result = guild_id(9667);
+  const tmp9ResultResult = guild_id(9667)(id1);
+  if (isConnectedToVoiceChannel) {
+    isConnectedToVoiceChannel = tmp10Result;
+  }
+  if (isConnectedToVoiceChannel) {
+    if (!tmp19) {
+      tmp19 = tmp9ResultResult;
+    }
+    isConnectedToVoiceChannel = tmp19;
+  }
+  if (isConnectedToVoiceChannel) {
+    isConnectedToVoiceChannel = !tmp23;
+  }
+  if (isConnectedToVoiceChannel) {
+    isConnectedToVoiceChannel = afkChannelId !== arg0;
+  }
+  return isConnectedToVoiceChannel;
+}) : ((arg0) => {
+  _require = arg0;
   const items = [ChannelStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
   const obj = require("initialize");
@@ -36,12 +143,12 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (guild_id1 == null) {
     guild_id1 = null;
   }
-  id = undefined;
+  let id;
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp6 = guild_id(9670);
-  const tmp6Result = guild_id(9670)(guild_id1, id);
+  const tmp6 = guild_id(9666);
+  const tmp6Result = guild_id(9666)(guild_id1, id);
   const items1 = [GuildStore];
   const items2 = [guild_id];
   const stateFromStores1 = tmp(504).useStateFromStores(items1, () => GuildStore.getGuild(guild_id), items2);
@@ -60,8 +167,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  const tmp5Result = guild_id(9671);
-  const tmp5ResultResult = guild_id(9671)(id1);
+  const tmp5Result = guild_id(9667);
+  const tmp5ResultResult = guild_id(9667)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }
@@ -75,7 +182,7 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
     isConnectedToVoiceChannel = !tmp14;
   }
   if (isConnectedToVoiceChannel) {
-    isConnectedToVoiceChannel = afkChannelId !== id;
+    isConnectedToVoiceChannel = afkChannelId !== arg0;
   }
   return isConnectedToVoiceChannel;
-};
+});

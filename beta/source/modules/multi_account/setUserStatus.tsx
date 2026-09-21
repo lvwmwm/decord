@@ -1,13 +1,13 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 12956
+// Function ID: 12957
 // Name: setUserStatus
-// Dependencies: [5, 7360, 5496, 1074, 4600, 1115, 10349, 2024, 1217, 4608, 1241, 2]
+// Dependencies: [5, 7362, 5498, 1078, 4603, 1119, 12957, 2028, 1221, 4611, 1245, 2]
 // Exports: default
 
-// Module 10348 (setUserStatus)
+// Module 12956 (setUserStatus)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7360 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7362 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
 
 const require = fn;
 let closure_7 = async function _setUserStatus() {
@@ -23,7 +23,7 @@ let closure_7 = async function _setUserStatus() {
   closure_129_5 = str;
   const PreloadedUserSettingsActionCreators = closure_130_0(closure_130_2[7]).PreloadedUserSettingsActionCreators;
   await PreloadedUserSettingsActionCreators.updateAsync("status", async (statusCreatedAtMs) => {
-    const StringValue = value(1217).StringValue;
+    const StringValue = value(1221).StringValue;
     statusCreatedAtMs.status = StringValue.create({ value });
     statusCreatedAtMs.statusExpiresAtMs = statusExpiresAtMs;
     if (closure_1_1 === value) {
@@ -32,30 +32,30 @@ let closure_7 = async function _setUserStatus() {
       }
       statusCreatedAtMs.statusCreatedAtMs = statusCreatedAtMs;
     }
-    const UInt64Value = value(1217).UInt64Value;
+    const UInt64Value = value(1221).UInt64Value;
     statusCreatedAtMs = UInt64Value.create({ value: "" + Date.now() });
   }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION);
-  closure_129_6 = (function getStatusUpdateAnnouncement(DND, arg1) {
-    const humanizeStatusResult = value(4600).humanizeStatus(DND);
+  closure_129_6 = (function getStatusUpdateAnnouncement(status, arg1) {
+    const humanizeStatusResult = value(4603).humanizeStatus(status);
     if ("0" === arg1) {
-      const intl3 = tmp(1115).intl;
+      const intl3 = tmp(1119).intl;
       const obj2 = { statusLabel: humanizeStatusResult };
-      return intl3.formatToPlainString(tmp(1115).t.dO2aLi, obj2);
+      return intl3.formatToPlainString(tmp(1119).t.dO2aLi, obj2);
     } else {
-      const statusExpiryParts = tmp(10349).getStatusExpiryParts(arg1);
+      const statusExpiryParts = tmp(12957).getStatusExpiryParts(arg1);
       const timeString = statusExpiryParts.timeString;
       if ("today" === statusExpiryParts.kind) {
-        const intl2 = tmp(1115).intl;
+        const intl2 = tmp(1119).intl;
         const obj3 = { statusLabel: humanizeStatusResult, timeString };
-        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t["r50t/S"], obj3);
+        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t["r50t/S"], obj3);
       } else {
-        const intl = tmp(1115).intl;
+        const intl = tmp(1119).intl;
         const obj4 = { statusLabel: humanizeStatusResult, dateString: tmp6, timeString };
-        formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t["J+GJHv"], obj4);
+        formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["J+GJHv"], obj4);
       }
       return formatToPlainStringResult;
     }
-    const obj = value(4600);
+    const obj = value(4603);
   })(closure_129_0, closure_129_5);
   const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(closure_129_6);
@@ -80,16 +80,16 @@ let closure_7 = async function _setUserStatus() {
     closure_130_1(closure_130_2[10]).track(closure_130_6.USER_STATUS_UPDATED, closure_129_7);
     closure_130_1(closure_130_2[10]);
   }
-  await "HermesInternal";
+  await "IconComponent";
   closure_1 = tmp2;
   ({ nextStatus: closure_129_0, prevStatus: closure_129_1, analyticsContext: closure_129_2, durationMillis: closure_129_3, disableTracking } = value);
   if (disableTracking === undefined) {
     disableTracking = false;
   }
   closure_129_4 = disableTracking;
-  return "PX_16";
+  return "Set";
 };
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/multi_account/setUserStatus.tsx");
 

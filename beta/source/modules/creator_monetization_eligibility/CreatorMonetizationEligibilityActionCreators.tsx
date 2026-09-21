@@ -1,11 +1,11 @@
-// Module ID: 18144
-// Function ID: 18145
+// Module ID: 18147
+// Function ID: 18148
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1074, 1349, 1271, 573, 7408, 2]
+// Dependencies: [5, 1078, 1353, 1275, 577, 7410, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 18144 (CreatorMonetizationEligibilityActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 18147 (CreatorMonetizationEligibilityActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let closure_6 = async function _createCreatorMonetizationEnableRequest(arg0, val
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -50,7 +50,7 @@ let closure_6 = async function _createCreatorMonetizationEnableRequest(arg0, val
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp5) {
       c1 = tmp;
@@ -74,7 +74,7 @@ let closure_8 = async function _acceptCreatorMonetizationTerms(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -104,7 +104,7 @@ let closure_8 = async function _acceptCreatorMonetizationTerms(arg0, value) {
         return obj;
       } else {
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp5) {
       c2 = tmp;
@@ -123,7 +123,7 @@ let closure_9 = async function _acceptCreatorMonetizationTermsV(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -153,7 +153,7 @@ let closure_9 = async function _acceptCreatorMonetizationTermsV(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp5) {
       c1 = tmp;
@@ -195,7 +195,7 @@ let closure_12 = async function _requestRemoveMonetization(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -225,7 +225,7 @@ let closure_12 = async function _requestRemoveMonetization(arg0, value) {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp5) {
       c1 = tmp;
@@ -249,8 +249,8 @@ let closure_13 = async function _removeMonetization() {
   await closure_130_1(closure_130_2[5]).getApplicationsForGuild(closure_129_0, { type: closure_130_5.GUILD_ROLE_SUBSCRIPTIONS, includeTeam: true });
   return arg1;
 };
-const Endpoints = fn(1074).Endpoints;
-const ApplicationTypes = fn(1349).ApplicationTypes;
+const Endpoints = fn(1078).Endpoints;
+const ApplicationTypes = fn(1353).ApplicationTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
 

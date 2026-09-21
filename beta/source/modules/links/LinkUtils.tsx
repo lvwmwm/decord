@@ -1,19 +1,19 @@
-// Module ID: 4910
-// Function ID: 4911
+// Module ID: 4912
+// Function ID: 4913
 // Name: LinkUtils
-// Dependencies: [2041, 2063, 4395, 1074, 2048, 4743, 2]
+// Dependencies: [2045, 2067, 4399, 1078, 2052, 4745, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 4910 (LinkUtils)
-import RegexUtilsDefault from "RegexUtils" /* 4743 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 4912 (LinkUtils)
+import RegexUtilsDefault from "RegexUtils" /* 4745 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
-const Constants = fn(1074);
+const Constants = fn(1078);
 const ME = Constants.ME;
 const Permissions = Constants.Permissions;
-const mapped = Array.from(fn(2048).StaticChannelRoutes).map((item) => RegexUtilsDefault.escape(item));
+const mapped = Array.from(fn(2052).StaticChannelRoutes).map((item) => RegexUtilsDefault.escape(item));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");

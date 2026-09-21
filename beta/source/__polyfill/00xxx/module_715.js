@@ -1,59 +1,47 @@
 // Module ID: 715
 // Function ID: 716
-// Dependencies: [688, 689, 698]
-// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
+// Dependencies: []
 
 // Module 715
-import _mod688 from "module_688" /* 688 */;
-
-require = arg1;
 Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
-const dependencyMap = {};
-let closure_3 = {};
-
-export const addHandler = function addHandler(arg0, arg1) {
-  dependencyMap[arg0] = dependencyMap[arg0] || [];
-  dependencyMap[arg0].push(arg1);
-};
-export const maybeInstrument = function maybeInstrument(arg0, fn) {
-  if (!closure_3[arg0]) {
-    tmp2[arg0] = true;
-    try {
-      fn();
-    } catch (tmp5) {
-      if (_mod688.DEBUG_BUILD) {
-        const debug = tmp6(689).debug;
-        const _HermesInternal = HermesInternal;
-        debug.error("Error while instrumenting " + tmp, tmp5);
-      }
-      tmp6 = require;
-    }
+function merge(arg0, obj) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 2;
   }
-};
-export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
-  const keys = Object.keys(closure_2);
-  const item = keys.forEach((item) => {
-    dependencyMap[item] = undefined;
-  });
-};
-export const triggerHandlers = function triggerHandlers(arg0, arg1) {
-  let tmp8 = arg0;
-  if (arg0) {
-    tmp8 = dependencyMap[arg0];
-  }
-  if (tmp8) {
-    const iter = tmp8[Symbol.iterator]();
-    if (iter !== undefined) {
-      try {
-        tmp15(arg1);
-      } catch (tmp18) {
-        if (_mod688.DEBUG_BUILD) {
-          const debug = tmp19(689).debug;
-          debug.error(tmp2 + tmp6 + tmp3 + tmp19(698).getFunctionName(tmp7) + tmp4, tmp18);
-          const tmp19Result = tmp19(698);
+  if (obj) {
+    if (typeof obj === "object") {
+      if (num > 0) {
+        if (arg0) {
+          const _Object = Object;
+          if (0 === Object.keys(obj).length) {
+            return arg0;
+          }
         }
+        obj = {};
+        const merged = Object.assign(arg0);
+        for (const key10016 in arg1) {
+          let _Object2 = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          let call = hasOwnProperty.call;
+          if (typeof call === "unknown") {
+            let hasOwnPropertyResult = hasOwnProperty(key10016);
+          } else {
+            hasOwnPropertyResult = call(arg1, key10016);
+          }
+          if (!hasOwnPropertyResult) {
+            continue;
+          } else {
+            obj[key10016] = merge(obj[key10016], arg1[key10016], num - 1);
+            continue;
+          }
+          continue;
+        }
+        return obj;
       }
     }
-    const nextResult = iter.next();
   }
-};
+  return obj;
+}
+
+export { merge };

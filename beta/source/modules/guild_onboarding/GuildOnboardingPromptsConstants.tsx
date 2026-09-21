@@ -1,20 +1,20 @@
-// Module ID: 7346
-// Function ID: 7347
+// Module ID: 7348
+// Function ID: 7349
 // Name: GuildOnboardingPromptsConstants
-// Dependencies: [32, 109, 1074, 1331, 1115, 2009, 2]
+// Dependencies: [32, 109, 1078, 1335, 1119, 2013, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 7346 (GuildOnboardingPromptsConstants)
-import util from "util" /* 1115 */;
-import _modDef1331 from "module_1331" /* 1331 */;
-import StringUtils from "StringUtils" /* 2009 */;
+// Module 7348 (GuildOnboardingPromptsConstants)
+import util from "util" /* 1119 */;
+import _modDef1335 from "module_1335" /* 1335 */;
+import StringUtils from "StringUtils" /* 2013 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
 function serverPromptToClientPrompt(id) {
   let obj = { id: id.id, options: null, title: id.title, singleSelect: id.single_select, disabled: id.disabled, required: id.required, inOnboarding: id.in_onboarding, type: id.type };
-  const options = id.options;
+  options = id.options;
   obj.options = options.map((id) => {
     const obj = { id: id.id, channelIds: id.channel_ids, roleIds: id.role_ids, emoji: id.emoji, title: id.title, description: null };
     let str = id.description;
@@ -65,7 +65,7 @@ function validateOnboardingConnection(connection_type) {
 }
 let closure_3 = ["id"];
 let closure_4 = ["id"];
-const PlatformTypes = fn(1074).PlatformTypes;
+const PlatformTypes = fn(1078).PlatformTypes;
 const OnboardingPromptType = { MULTIPLE_CHOICE: 0, [0]: "MULTIPLE_CHOICE", DROPDOWN: 1, [1]: "DROPDOWN" };
 let obj2 = { APPLICATION: 0, [0]: "APPLICATION", PROVIDER_CONNECTED_ACCOUNT: 1, [1]: "PROVIDER_CONNECTED_ACCOUNT" };
 let items = [, , , , , , , ];
@@ -107,7 +107,7 @@ export const isDefaultPrompt = function isDefaultPrompt(options) {
     const id = obj.id;
     const id2 = options.id;
     const tmp7 = _objectWithoutProperties(obj, closure_3);
-    return _modDef1331(tmp7, _objectWithoutProperties(options, closure_4));
+    return _modDef1335(tmp7, _objectWithoutProperties(options, closure_4));
   }
 };
 export const getDefaultPrompt = function getDefaultPrompt() {
@@ -124,7 +124,7 @@ export const getEmptyPrompt = function getEmptyPrompt(inOnboarding) {
 };
 export const clientPromptToServerPrompt = function clientPromptToServerPrompt(id) {
   let obj = { id: id.id, options: null, title: id.title, single_select: id.singleSelect, disabled: id.disabled, required: id.required, in_onboarding: id.inOnboarding, type: id.type };
-  const options = id.options;
+  options = id.options;
   obj.options = options.map((id) => {
     const obj = { id: id.id, channel_ids: id.channelIds, role_ids: id.roleIds, emoji: id.emoji, emoji_id: null, emoji_name: null, emoji_animated: null, title: null, description: null };
     const emoji = id.emoji;

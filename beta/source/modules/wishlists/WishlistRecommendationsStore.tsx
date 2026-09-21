@@ -1,12 +1,12 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11092
+// Function ID: 11093
 // Name: WishlistRecommendationsStore
-// Dependencies: [2109, 504, 573, 2]
+// Dependencies: [2113, 504, 577, 2]
 
-// Module 11055 (WishlistRecommendationsStore)
+// Module 11092 (WishlistRecommendationsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
 
 function handleUserSettingsStoreUpdate() {
   if (locale === LocaleStore.locale) {
@@ -26,16 +26,16 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleUserSettingsStoreUpdate);
   locale = LocaleStore.locale;
 };
-prototype["getRecommendations"] = function getRecommendations(userIdsAndWishlistIds, memo3) {
-  if (0 !== userIdsAndWishlistIds.length) {
-    if (0 !== memo3.length) {
-      if (0 === userIdsAndWishlistIds.length) {
+prototype["getRecommendations"] = function getRecommendations(userIds, applicationIds) {
+  if (0 !== userIds.length) {
+    if (0 !== applicationIds.length) {
+      if (0 === userIds.length) {
         const _Error = Error;
         const error = new Error("No user IDs provided");
         throw error;
       } else {
         const items = [];
-        HermesBuiltin.arraySpread(memo3, HermesBuiltin.arraySpread(userIdsAndWishlistIds, 0));
+        HermesBuiltin.arraySpread(applicationIds, HermesBuiltin.arraySpread(userIds, 0));
         return tmp2[items.join(items, ",")];
       }
     }
@@ -100,7 +100,7 @@ obj = {
           const items = [];
           HermesBuiltin.arraySpread(applicationIds, HermesBuiltin.arraySpread(userIds, 0));
           const joined = items.join(",");
-          let state;
+          state = undefined;
           if (obj[joined] != null) {
             state = tmp18.state;
           }

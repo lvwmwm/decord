@@ -4,4 +4,4 @@
 
 // Module 1303
 
-export default SyntaxError;
+export default Error;

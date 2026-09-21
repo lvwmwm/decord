@@ -1,11 +1,11 @@
-// Module ID: 2034
-// Function ID: 2035
+// Module ID: 2038
+// Function ID: 2039
 // Name: LoginRequiredActionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 2034 (LoginRequiredActionStore)
+// Module 2038 (LoginRequiredActionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 function handleUpdateUser(user) {
   id = user.user.id;

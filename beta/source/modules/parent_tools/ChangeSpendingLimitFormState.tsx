@@ -1,15 +1,15 @@
-// Module ID: 15186
-// Function ID: 15187
+// Module ID: 15175
+// Function ID: 15176
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7779, 15103, 504, 7480, 15105, 2]
+// Dependencies: [5, 32, 19, 7784, 15092, 504, 7482, 15094, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 15186 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15105 */;
+// Module 15175 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15094 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
 
 const require = globalThis.__r;
 
@@ -107,7 +107,7 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -125,13 +125,13 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
               closure_8(true);
               c3 = 1;
               if (closure_5) {
-                const ParentalControlledSpendingLimit2 = tmp3(15103).ParentalControlledSpendingLimit;
+                const ParentalControlledSpendingLimit2 = tmp3(15092).ParentalControlledSpendingLimit;
                 dependencyMap = 2;
                 c4 = 1;
                 const obj4 = { value: ParentalControlledSpendingLimit2.updateControlledSetting(tmp3, null), done: false };
                 return obj4;
               } else if (null != rounded) {
-                const ParentalControlledSpendingLimit = tmp3(15103).ParentalControlledSpendingLimit;
+                const ParentalControlledSpendingLimit = tmp3(15092).ParentalControlledSpendingLimit;
                 const obj5 = { amount: tmp16, currency: formatted };
                 dependencyMap = 3;
                 c4 = 1;
@@ -140,7 +140,7 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === tmp7) {
           c3 = 0;

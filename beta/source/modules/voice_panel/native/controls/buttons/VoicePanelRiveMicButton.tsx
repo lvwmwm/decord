@@ -1,20 +1,76 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10258
+// Function ID: 10259
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 4466, 9947, 10262, 2]
-// Exports: VoicePanelRiveMicButton
+// Dependencies: [19, 17, 21, 558, 568, 9925, 10259, 4471, 2]
 
-// Module 10261 (VoicePanelRiveMicButton)
-import native from "native" /* 4466 */;
+// Module 10258 (VoicePanelRiveMicButton)
+import c from "c" /* 568 */;
+import native from "native" /* 4471 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const size = fn(2);
+const ReactCompilerGating = fn(558);
+let size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelRiveMicButton.tsx");
 
-export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
+export const VoicePanelRiveMicButton = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(11);
+  ({ color, muted } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const size = { width: 24, height: 24, pointerEvents: "none" };
+    cResult[0] = size;
+    let first = size;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === color) {
+    if (cResult[2] === tmp5) {
+      let tmp6 = cResult[3];
+    }
+    let str = "On";
+    if (muted) {
+      str = "Off";
+    }
+    if (cResult[4] === color) {
+      if (cResult[5] === muted) {
+        if (cResult[7] === tmp6) {
+          if (cResult[8] === str) {
+            if (cResult[9] === tmp7) {
+              let tmp11 = cResult[10];
+            }
+            return tmp11;
+          }
+        }
+        const obj2 = { style: first, children: null };
+        const obj3 = { dataBinding: tmp6, defaultViewModelInstance: str, fallback: cResult[6] };
+        obj2.children = jsx(tmp(4471).MicrophoneRive, { dataBinding: tmp6, defaultViewModelInstance: str, fallback: cResult[6] });
+        const tmp14 = <View style={first}>{null}</View>;
+        cResult[7] = tmp6;
+        cResult[8] = str;
+        cResult[9] = cResult[6];
+        cResult[10] = tmp14;
+        tmp11 = tmp14;
+      }
+    }
+    if (muted) {
+      let MicrophoneIcon = tmp(9925).MicrophoneSlashIcon;
+    } else {
+      MicrophoneIcon = tmp(10259).MicrophoneIcon;
+    }
+    const obj4 = { color };
+    const tmp8Result = <MicrophoneIcon color={color} />;
+    cResult[4] = color;
+    cResult[5] = muted;
+    cResult[6] = tmp8Result;
+  }
+  const obj5 = { fill: color, on: !muted };
+  cResult[1] = color;
+  cResult[2] = !muted;
+  cResult[3] = obj5;
+  tmp6 = obj5;
+}) : ((arg0) => {
   ({ color, muted } = arg0);
   const obj = { style: { width: 24, height: 24, pointerEvents: "none" }, children: null };
   const obj2 = { dataBinding: { fill: color, on: !muted }, defaultViewModelInstance: null, fallback: null };
@@ -24,11 +80,11 @@ export const VoicePanelRiveMicButton = function VoicePanelRiveMicButton(arg0) {
   }
   obj2.defaultViewModelInstance = str;
   if (muted) {
-    let MicrophoneIcon = tmp3(9947).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9925).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(10262).MicrophoneIcon;
+    MicrophoneIcon = tmp3(10259).MicrophoneIcon;
   }
   obj2.fallback = <MicrophoneIcon color={color} />;
   obj.children = jsx(native.MicrophoneRive, { dataBinding: { fill: color, on: !muted }, defaultViewModelInstance: null, fallback: null });
   return <View style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</View>;
-};
+});

@@ -1,22 +1,22 @@
-// Module ID: 1386
-// Function ID: 1387
+// Module ID: 1390
+// Function ID: 1391
 // Name: UserRecord
-// Dependencies: [1387, 1074, 1374, 1388, 1389, 1393, 1394, 1378, 1395, 1396, 1086, 11, 1397, 1385, 1969, 1380, 1965, 1970, 2]
+// Dependencies: [1391, 1078, 1378, 1392, 1393, 1397, 1398, 1382, 1399, 1400, 1090, 11, 1401, 1389, 1973, 1384, 1969, 1974, 2]
 
-// Module 1386 (UserRecord)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import AvatarUtils from "AvatarUtils" /* 1397 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1965 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import Record from "Record" /* 1387 */;
+// Module 1390 (UserRecord)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import AvatarUtils from "AvatarUtils" /* 1401 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1969 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1973 */;
+import Record from "Record" /* 1391 */;
 
 const AvatarUtilsDefault = AvatarUtils;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ LOCAL_BOT_ID: closure_4, NON_USER_BOT_DISCRIMINATOR: hasOwnProperty, PREMIUM_TYPE_NONE: metroRequire, UserFlags: closure_7 } = Constants);
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ SKU_ID_PURCHASED_FLAGS: closure_8, PremiumTypes: closure_9, PurchasedFlags: c10 } = PremiumConstants);
 class UserRecord extends tmp2 {
   constructor(arg0) {
@@ -363,10 +363,11 @@ prototype["removeGuildAvatarHash"] = function removeGuildAvatarHash(guildId) {
     return self.merge(obj2);
   }
 };
-prototype["getAvatarSource"] = function getAvatarSource(guildId, flag, size) {
+prototype["getAvatarSource"] = function getAvatarSource(guildId, hasItem, size) {
   const self = this;
   importDefault = guildId;
-  if (flag === undefined) {
+  let flag = hasItem;
+  if (hasItem === undefined) {
     flag = false;
   }
   let avatar;
@@ -420,10 +421,10 @@ prototype["hasHadPremium"] = function hasHadPremium(arg0) {
   if (arg0 === undefined) {
     tmp = null;
   }
-  const hasPurchasedFlagResult = this.hasPurchasedFlag(closure_1_10.PREMIUM_TIER_0);
-  const hasPurchasedFlagResult1 = this.hasPurchasedFlag(closure_1_10.PREMIUM_TIER_1);
-  const hasPurchasedFlagResult2 = this.hasPurchasedFlag(closure_1_10.PREMIUM_TIER_2);
-  if (React7.TIER_0 === tmp) {
+  const hasPurchasedFlagResult = this.hasPurchasedFlag(v65535.PREMIUM_TIER_0);
+  const hasPurchasedFlagResult1 = this.hasPurchasedFlag(v65535.PREMIUM_TIER_1);
+  const hasPurchasedFlagResult2 = this.hasPurchasedFlag(v65535.PREMIUM_TIER_2);
+  if (options.TIER_0 === tmp) {
     return hasPurchasedFlagResult;
   } else if (tmp5.TIER_1 === tmp) {
     return hasPurchasedFlagResult1;
@@ -477,7 +478,7 @@ prototype["isOnReverseTrial"] = function isOnReverseTrial() {
   return isPremiumResult;
 };
 prototype["isPremiumWithPremiumGroup"] = function isPremiumWithPremiumGroup() {
-  let isPremiumResult = PremiumTypeUtils.isPremium(this, React7.TIER_2);
+  let isPremiumResult = PremiumTypeUtils.isPremium(this, options.TIER_2);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let premiumSource;
@@ -489,7 +490,7 @@ prototype["isPremiumWithPremiumGroup"] = function isPremiumWithPremiumGroup() {
   return isPremiumResult;
 };
 prototype["hasPaidTier2Subscription"] = function hasPaidTier2Subscription() {
-  let isPremiumResult = PremiumTypeUtils.isPremium(this, React7.TIER_2);
+  let isPremiumResult = PremiumTypeUtils.isPremium(this, options.TIER_2);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let prop;
@@ -502,21 +503,21 @@ prototype["hasPaidTier2Subscription"] = function hasPaidTier2Subscription() {
 };
 prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFractionalPremiumOnly() {
   const self = this;
-  let isPremiumResult = PremiumTypeUtils.isPremium(this, React7.TIER_2);
+  let isPremiumResult = PremiumTypeUtils.isPremium(this, options.TIER_2);
   if (isPremiumResult) {
     const premiumState = self.premiumState;
     let prop;
     if (premiumState != null) {
       prop = premiumState.premiumSubscriptionType;
     }
-    let tmp6 = prop === tmp(1380).PremiumSubscriptionType.NONE_UNSPECIFIED;
+    let tmp6 = prop === tmp(1384).PremiumSubscriptionType.NONE_UNSPECIFIED;
     if (!tmp6) {
       const premiumState2 = self.premiumState;
       let prop1;
       if (premiumState2 != null) {
         prop1 = premiumState2.premiumSubscriptionType;
       }
-      tmp6 = prop1 === tmp(1380).PremiumSubscriptionType.BOOST_ONLY;
+      tmp6 = prop1 === tmp(1384).PremiumSubscriptionType.BOOST_ONLY;
     }
     isPremiumResult = tmp6;
   }
@@ -526,28 +527,28 @@ prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFraction
     if (premiumState3 != null) {
       premiumSource = premiumState3.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1380).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1384).PremiumSource.FRACTIONAL_NITRO;
   }
   return isPremiumResult;
 };
 prototype["isFractionalPremiumWithNoStandardSub"] = function isFractionalPremiumWithNoStandardSub() {
   const self = this;
-  let isPremiumResult = PremiumTypeUtils.isPremium(this, React7.TIER_2);
+  let isPremiumResult = PremiumTypeUtils.isPremium(this, options.TIER_2);
   if (isPremiumResult) {
     const premiumState = self.premiumState;
     let premiumSource;
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1380).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1384).PremiumSource.FRACTIONAL_NITRO;
   }
   if (isPremiumResult) {
-    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1380).PremiumSubscriptionType.TIER_2;
+    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1384).PremiumSubscriptionType.TIER_2;
   }
   return isPremiumResult;
 };
 prototype["isFractionalPremium"] = function isFractionalPremium() {
-  let isPremiumResult = PremiumTypeUtils.isPremium(this, React7.TIER_2);
+  let isPremiumResult = PremiumTypeUtils.isPremium(this, options.TIER_2);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let premiumSource;

@@ -1,15 +1,15 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8729
+// Function ID: 8730
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 8725, 8690, 8709, 573, 2]
+// Dependencies: [5, 32, 19, 8730, 8695, 8714, 577, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 8724 (useAgeVerificationMethodsV2)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8729 (useAgeVerificationMethodsV2)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8725 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8730 */;
 
 const require = fn;
 const size = fn(2);
@@ -49,7 +49,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -80,8 +80,8 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
             tmp75(true);
             v0(false);
             v0 = 2;
-            const result = closure_0(8690).isCurrentUserSuspended();
-            const obj7 = closure_0(8709);
+            const result = closure_0(8695).isCurrentUserSuspended();
+            const obj7 = closure_0(8714);
             if (result) {
               c5 = 4;
               c6 = 1;
@@ -93,7 +93,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               const obj9 = { value: obj7.fetchAgeVerificationMethodsV2(), done: false };
               return obj9;
             }
-            const obj6 = closure_0(8690);
+            const obj6 = closure_0(8695);
           }
         } else if (1 === tmp9) {
           v0 = 0;
@@ -148,7 +148,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
             tmp75(false);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp75) {
         if (tmp5 === v0) {

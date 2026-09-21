@@ -1,27 +1,81 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17680
+// Function ID: 17681
 // Name: UnreadBadge
-// Dependencies: [19, 17, 10374, 4938, 21, 4756, 17133, 5193, 8113, 2]
+// Dependencies: [19, 17, 12213, 4940, 21, 4758, 558, 568, 17136, 5195, 8117, 2]
 
-// Module 17447 (UnreadBadge)
-import useFontScale from "useFontScale" /* 5193 */;
-import Badge from "Badge" /* 8113 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17133 */;
+// Module 17680 (UnreadBadge)
+import c from "c" /* 568 */;
+import useFontScale from "useFontScale" /* 5195 */;
+import Badge from "Badge" /* 8117 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
 import noop from "module_19" /* 19 */;
 
 const BadgeDefault = Badge;
 
 require = fn;
 const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(10374).MUTED_OPACITY_CONTENT;
-const UnreadSetting = fn(4938).UnreadSetting;
+const MUTED_OPACITY_CONTENT = fn(12213).MUTED_OPACITY_CONTENT;
+const UnreadSetting = fn(4940).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" } });
+const ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/launchpad/native/shared/UnreadBadge.tsx");
 
-export default noop.memo(function UnreadBadge(arg0) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(7);
+  ({ unread, resolvedUnreadSetting, muted } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp7 = getLayoutStylesDefault();
+    cResult[0] = tmp7;
+    let first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  const fontScale = useFontScale.useFontScale();
+  if (cResult[1] === fontScale) {
+    if (cResult[2] === muted) {
+      if (cResult[3] === resolvedUnreadSetting) {
+        if (cResult[4] === tmp4) {
+          if (cResult[5] === unread) {
+            let tmp9 = cResult[6];
+          }
+          return tmp9;
+        }
+      }
+    }
+  }
+  let tmp11Result = null;
+  if (unread) {
+    const obj2 = { style: null, children: null };
+    const items = [tmp4.unreadBadge, first.unreadBadge.position, ];
+    const size = { width: first.unreadBadge.size, height: first.unreadBadge.size };
+    items[2] = size;
+    obj2.style = items;
+    const obj3 = { classic: true, size: null, badgeStyle: null };
+    const _Math = Math;
+    obj3.size = tmp(8117).CHANNEL_BADGE_SIZE * Math.max(fontScale, 1);
+    if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
+      let num3 = MUTED_OPACITY_CONTENT;
+    } else {
+      num3 = 1;
+    }
+    const obj4 = { opacity: num3 };
+    const items1 = [obj4];
+    obj3.badgeStyle = items1;
+    obj2.children = jsx(BadgeDefault, { classic: true, size: null, badgeStyle: null });
+    tmp11Result = tmp11(View, obj2);
+  }
+  cResult[1] = fontScale;
+  cResult[2] = muted;
+  cResult[3] = resolvedUnreadSetting;
+  cResult[4] = tmp4;
+  cResult[5] = unread;
+  cResult[6] = tmp11Result;
+  tmp9 = tmp11Result;
+}) : ((arg0) => {
   ({ unread, resolvedUnreadSetting, muted } = arg0);
   const tmp4 = getLayoutStylesDefault();
   useFontScale;
@@ -48,4 +102,4 @@ export default noop.memo(function UnreadBadge(arg0) {
     const tmp2Result = BadgeDefault;
   }
   return tmp9Result;
-});
+}));

@@ -1,25 +1,28 @@
-// Module ID: 12971
-// Function ID: 12972
+// Module ID: 12865
+// Function ID: 12866
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 12667, 1386, 1372, 1074, 12972, 21, 4756, 576, 5658, 7977, 1177, 12912, 4600, 1115, 5807, 4752, 1397, 5804, 1241, 504, 12973, 9869, 5186, 5650, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 12562, 1390, 1376, 1078, 12866, 21, 4758, 580, 5660, 558, 568, 7982, 1181, 12867, 4603, 1119, 5805, 4754, 1401, 5802, 1245, 504, 5188, 5652, 12869, 9847, 2]
 
-// Module 12971 (InviteDetails)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import GuildBadgeDefault from "GuildBadge" /* 5807 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7977 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12912 */;
-import InviteRolesListDefault from "InviteRolesList" /* 12973 */;
+// Module 12865 (InviteDetails)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import ButtonGroup from "ButtonGroup" /* 5652 */;
+import FastImageDefault from "FastImage" /* 5802 */;
+import GuildBadgeDefault from "GuildBadge" /* 5805 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7982 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12867 */;
+import InviteRolesListDefault from "InviteRolesList" /* 12869 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 12667 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import UserStore from "UserStore" /* 1372 */;
+import MultiAccountStore from "MultiAccountStore" /* 12562 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function shouldShowInviter(invite, isGuildMember) {
@@ -57,7 +60,101 @@ function shouldShowInviter(invite, isGuildMember) {
   }
   return tmp;
 }
-function InviteDestinationIcon(invite) {
+let View = fn(17).View;
+const Constants = fn(1078);
+({ AnalyticEvents: closure_9, InviteStates: c10 } = Constants);
+let closure_11 = fn(12866).INVITE_ROUTING_HUB_GUILD_ID;
+const jsxProd = fn(21);
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { avatar: null, avatarContainer: null, inviteJoinContainer: null, inviteJoinText: null, inviterIconWrapper: null, inviterIcon: null, guildNameContainer: null, guildNameText: null, featureIcon: null, memberInfo: null, rolesList: null, dotOnline: null, dotOffline: null, embedDetailsCard: null };
+let size = { height: 64, width: 64, margin: 0, borderRadius: nativeDefault.radii.lg };
+obj2.avatar = size;
+const size1 = { borderRadius: nativeDefault.radii.none, height: 64, width: 64, marginBottom: 24, marginTop: 24 };
+obj2.avatarContainer = size1;
+obj2.inviteJoinContainer = { flexDirection: "row", alignItems: "flex-start", marginBottom: 8, marginLeft: 16, marginRight: 16 };
+obj2.inviteJoinText = { textAlign: "center" };
+obj2.inviterIconWrapper = { borderRadius: nativeDefault.radii.none, marginRight: 8 };
+const size2 = { width: 20, height: 20, borderRadius: nativeDefault.radii.md };
+obj2.inviterIcon = size2;
+obj2.guildNameContainer = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
+obj2.guildNameText = { textAlign: "center" };
+let obj3 = { borderRadius: nativeDefault.radii.none, marginRight: 8 };
+obj2.featureIcon = { flexGrow: 0, marginRight: 8, opacity: fn(5660).DARK_1_LIGHT_04 };
+obj2.memberInfo = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
+obj2.rolesList = { marginTop: 8, marginBottom: 8, alignItems: "center" };
+const size3 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
+obj2.dotOnline = size3;
+const size4 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
+obj2.dotOffline = size4;
+let obj4 = { flexGrow: 0, marginRight: 8, opacity: fn(5660).DARK_1_LIGHT_04 };
+obj2.embedDetailsCard = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 16, marginBottom: 8 };
+let closure_15 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
+  const cResult = invite(568).c(10);
+  invite = invite.invite;
+  const tmp2 = closure_15();
+  const user = tmp2;
+  if (cResult[0] === invite) {
+    if (cResult[1] === tmp2.avatar) {
+      let tmp3 = cResult[2];
+    }
+    if (cResult[3] !== tmp2.avatarContainer) {
+      const items = [tmp2.avatarContainer];
+      cResult[3] = tmp2.avatarContainer;
+      cResult[4] = items;
+      let tmp4 = items;
+    } else {
+      tmp4 = cResult[4];
+    }
+    if (cResult[5] !== tmp3) {
+      const tmp3Result = tmp3();
+      cResult[5] = tmp3;
+      cResult[6] = tmp3Result;
+      let tmp5 = tmp3Result;
+    } else {
+      tmp5 = cResult[6];
+    }
+    if (cResult[7] === tmp4) {
+      if (cResult[8] === tmp5) {
+        let tmp7 = cResult[9];
+      }
+      return tmp7;
+    }
+    let obj2 = { style: tmp4, children: tmp5 };
+    let tmp10 = closure_12(View, obj2);
+    cResult[7] = tmp4;
+    cResult[8] = tmp5;
+    cResult[9] = tmp10;
+    tmp7 = tmp10;
+  }
+  const fn = function n() {
+    if (obj.isGroupDMInvite(invite)) {
+      if (null != tmp3.inviter) {
+        let tmp10 = null;
+        if (null != tmp3.inviter) {
+          const obj2 = { avatarStyle: user.avatar, user: null, guildId: "Array", size: true };
+          const tmp16 = new UserRecord(tmp3.inviter);
+          obj2.user = tmp16;
+          obj2.size = tmp(1181).AvatarSizes.XLARGE;
+          tmp10 = __initData(tmp(1181).Avatar, obj2);
+        }
+        let tmp5 = tmp10;
+      }
+      return tmp5;
+    }
+    tmp5 = null;
+    if (null != invite.guild) {
+      const obj3 = { style: user.avatar, guild: tmp3.guild, size: GuildInviteIconDefault.Sizes.LARGE, textScale: 2 };
+      tmp5 = __initData(GuildInviteIconDefault, obj3);
+    }
+  };
+  cResult[0] = invite;
+  cResult[1] = tmp2.avatar;
+  cResult[2] = fn;
+  tmp3 = fn;
+}) : ((invite) => {
   invite = invite.invite;
   const tmp = closure_15();
   const obj = { style: null, children: null };
@@ -70,8 +167,8 @@ function InviteDestinationIcon(invite) {
         const obj3 = { avatarStyle: tmp.avatar, user: null, guildId: "Array", size: true };
         const tmp14 = new UserRecord(invite.inviter);
         obj3.user = tmp14;
-        obj3.size = tmp4(1177).AvatarSizes.XLARGE;
-        tmp2Result = tmp2(tmp4(1177).Avatar, obj3);
+        obj3.size = tmp4(1181).AvatarSizes.XLARGE;
+        tmp2Result = tmp2(tmp4(1181).Avatar, obj3);
       }
       let tmp2Result2 = tmp2Result;
     }
@@ -83,8 +180,83 @@ function InviteDestinationIcon(invite) {
     const obj4 = { style: tmp.avatar, guild: invite.guild, size: GuildInviteIconDefault.Sizes.LARGE, textScale: 2 };
     tmp2Result2 = tmp2(GuildInviteIconDefault, obj4);
   }
-}
-function InviteHeader(invite) {
+});
+ReactCompilerGating = fn(558);
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
+  const cResult = c.c(14);
+  invite = invite.invite;
+  let guildNameContainer = closure_15();
+  if (cResult[0] !== invite) {
+    if (tmpResult.isGroupDMInvite(invite)) {
+      const channel = invite.channel;
+      let name1;
+      if (channel != null) {
+        name1 = channel.name;
+      }
+      if (name1 == null) {
+        name1 = UserUtilsDefault.getFormattedName(invite.inviter);
+      }
+      let name = name1;
+    } else {
+      guild = invite.guild;
+      if (guild != null) {
+        name = guild.name;
+      }
+    }
+    cResult[0] = invite;
+    cResult[1] = name;
+    tmpResult = tmp(7982);
+  } else {
+    if (!tmpResult2.isFriendInvite(invite)) {
+      if (null == tmp4) {
+        return null;
+      } else {
+        if (cResult[4] === invite.guild) {
+          if (cResult[5] === guildNameContainer.featureIcon) {
+            let tmp15 = cResult[6];
+          }
+          if (cResult[7] === guildNameContainer.guildNameText) {
+            if (cResult[8] === tmp4) {
+              let tmp19 = cResult[9];
+            }
+            if (cResult[10] === guildNameContainer.guildNameContainer) {
+              if (cResult[11] === tmp15) {
+              }
+            }
+            const obj2 = { style: guildNameContainer.guildNameContainer, children: null };
+            const items = [tmp15, tmp19];
+            obj2.children = items;
+            const tmp25 = __initData2(View, obj2);
+            guildNameContainer = guildNameContainer.guildNameContainer;
+            cResult[10] = guildNameContainer;
+            cResult[11] = tmp15;
+            cResult[12] = tmp19;
+            cResult[13] = tmp25;
+          }
+          const obj4 = { style: guildNameContainer.guildNameText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp4 };
+          const tmp21 = __initData(tmp(4754).Heading, obj4);
+          cResult[7] = guildNameContainer.guildNameText;
+          cResult[8] = tmp4;
+          cResult[9] = tmp21;
+          tmp19 = tmp21;
+        }
+        const obj5 = { guild: invite.guild, style: guildNameContainer.featureIcon, disableColor: true };
+        const tmp18 = __initData(GuildBadgeDefault, obj5);
+        cResult[4] = invite.guild;
+        cResult[5] = guildNameContainer.featureIcon;
+        cResult[6] = tmp18;
+        tmp15 = tmp18;
+      }
+    } else if (cResult[2] !== invite.inviter) {
+      const intl = tmp(1119).intl;
+      const obj7 = { username: UserUtilsDefault.getFormattedName(invite.inviter) };
+      const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t["4aF92R"], obj7);
+      cResult[2] = invite.inviter;
+      cResult[3] = formatToPlainStringResult;
+    }
+    tmpResult2 = tmp(7982);
+  }
+}) : ((invite) => {
   invite = invite.invite;
   const tmp = closure_15();
   if (obj.isGroupDMInvite(invite)) {
@@ -98,30 +270,224 @@ function InviteHeader(invite) {
     }
     let name = name1;
   } else {
-    const guild = invite.guild;
+    guild = invite.guild;
     if (guild != null) {
       name = guild.name;
     }
   }
   obj = InviteTypeUtils;
   if (tmp2Result.isFriendInvite(invite)) {
-    const intl = tmp2(1115).intl;
+    const intl = tmp2(1119).intl;
     const obj3 = { username: UserUtilsDefault.getFormattedName(invite.inviter) };
-    name = intl.formatToPlainString(tmp2(1115).t["4aF92R"], obj3);
+    name = intl.formatToPlainString(tmp2(1119).t["4aF92R"], obj3);
   }
   let tmp9 = null;
   if (null != name) {
     const obj4 = { style: tmp.guildNameContainer, children: null };
     const obj6 = { guild: invite.guild, style: tmp.featureIcon, disableColor: true };
-    const items = [closure_1_12(GuildBadgeDefault, obj6), ];
+    const items = [__initData(GuildBadgeDefault, obj6), ];
     const obj7 = { style: tmp.guildNameText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: name };
-    items[1] = closure_1_12(tmp2(4752).Heading, obj7);
+    items[1] = __initData(tmp2(4754).Heading, obj7);
     obj4.children = items;
-    tmp9 = map1(View, obj4);
+    tmp9 = __initData2(View, obj4);
   }
   return tmp9;
-}
-function InviteJoinContext(invite) {
+});
+ReactCompilerGating = fn(558);
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRegistration) => {
+  const cResult = c.c(28);
+  ({ invite, isGuildMember } = isRegistration);
+  const tmp4 = closure_15();
+  if (obj2.isStreamInvite(invite)) {
+    if (null != invite.target_user) {
+      if (cResult[0] !== invite.target_user) {
+        const userAvatarSource = AvatarUtilsDefault.getUserAvatarSource(invite.target_user);
+        cResult[0] = invite.target_user;
+        cResult[1] = userAvatarSource;
+      }
+    }
+  }
+  let tmp6 = null;
+  if (shouldShowInviter(invite, isGuildMember)) {
+    tmp6 = null;
+    if (null != invite.inviter) {
+      if (cResult[2] !== invite.inviter) {
+        const userAvatarSource1 = AvatarUtilsDefault.getUserAvatarSource(invite.inviter);
+        cResult[2] = invite.inviter;
+        cResult[3] = userAvatarSource1;
+        let tmp7 = userAvatarSource1;
+      } else {
+        tmp7 = cResult[3];
+      }
+      tmp6 = tmp7;
+    }
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t["3rE1P8"]);
+    cResult[4] = stringResult;
+    let tmp14 = stringResult;
+  } else {
+    tmp14 = cResult[4];
+  }
+  obj2 = InviteTypeUtils;
+  if (tmpResult.isFriendInvite(invite)) {
+    if (cResult[5] !== invite.inviter) {
+      const intl8 = tmp(1119).intl;
+      const obj5 = { username: UserUtilsDefault.getFormattedName(invite.inviter) };
+      const formatResult = intl8.format(tmp(1119).t.Quj7HX, obj5);
+      cResult[5] = invite.inviter;
+      cResult[6] = formatResult;
+    }
+  } else {
+    if (tmpResult4.isGroupDMInvite(invite)) {
+      if (null != invite.channel) {
+        if (null != invite.inviter) {
+          if (cResult[7] !== invite.inviter) {
+            const intl7 = tmp(1119).intl;
+            const obj6 = { username: UserUtilsDefault.getFormattedName(invite.inviter) };
+            const formatResult1 = intl7.format(tmp(1119).t.Lu4h18, obj6);
+            cResult[7] = invite.inviter;
+            cResult[8] = formatResult1;
+            let tmp35 = formatResult1;
+          } else {
+            tmp35 = cResult[8];
+          }
+          tmp14 = tmp35;
+        }
+      }
+      const _Symbol3 = Symbol;
+      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl6 = tmp(1119).intl;
+        const stringResult1 = intl6.string(tmp(1119).t.OsdY8B);
+        cResult[9] = stringResult1;
+        let tmp33 = stringResult1;
+      } else {
+        tmp33 = cResult[9];
+      }
+      tmp14 = tmp33;
+    } else {
+      if (tmpResult5.isStreamInvite(invite)) {
+        if (null != invite.target_user) {
+          if (cResult[10] !== invite.target_user) {
+            const intl5 = tmp(1119).intl;
+            const obj7 = { username: UserUtilsDefault.getFormattedName(invite.target_user) };
+            const formatToPlainStringResult = intl5.formatToPlainString(tmp(1119).t.x2L32Q, obj7);
+            cResult[10] = invite.target_user;
+            cResult[11] = formatToPlainStringResult;
+            let tmp29 = formatToPlainStringResult;
+          } else {
+            tmp29 = cResult[11];
+          }
+          tmp14 = tmp29;
+        }
+      }
+      let tmp17 = isGuildMember;
+      if (isGuildMember) {
+        tmp17 = invite.state !== constants2.ACCEPTED;
+      }
+      if (tmp17) {
+        if (isRegistration.isRegistration) {
+          const _Symbol2 = Symbol;
+          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl4 = tmp(1119).intl;
+            const stringResult2 = intl4.string(tmp(1119).t.jpwYbt);
+            cResult[12] = stringResult2;
+            let tmp27 = stringResult2;
+          } else {
+            tmp27 = cResult[12];
+          }
+          tmp14 = tmp27;
+        } else {
+          const _Symbol = Symbol;
+          if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl3 = tmp(1119).intl;
+            const stringResult3 = intl3.string(tmp(1119).t["FDsl+J"]);
+            cResult[13] = stringResult3;
+            let tmp25 = stringResult3;
+          } else {
+            tmp25 = cResult[13];
+          }
+          tmp14 = tmp25;
+        }
+      } else {
+        let tmp20 = shouldShowInviter(invite, isGuildMember);
+        if (tmp20) {
+          tmp20 = null != invite.inviter;
+        }
+        if (tmp20) {
+          if (cResult[14] !== invite.inviter) {
+            const intl2 = tmp(1119).intl;
+            const obj8 = { username: UserUtilsDefault.getFormattedName(invite.inviter) };
+            const formatResult2 = intl2.format(tmp(1119).t.spU2mI, obj8);
+            cResult[14] = invite.inviter;
+            cResult[15] = formatResult2;
+            let tmp22 = formatResult2;
+          } else {
+            tmp22 = cResult[15];
+          }
+          tmp14 = tmp22;
+        }
+      }
+      tmpResult5 = tmp(7982);
+    }
+    if (cResult[16] === invite) {
+      if (cResult[17] === tmp6) {
+        if (cResult[18] === tmp4.inviterIcon) {
+          if (cResult[19] === tmp4.inviterIconWrapper) {
+            let tmp42 = cResult[20];
+          }
+          if (cResult[21] === tmp14) {
+            if (cResult[22] === tmp4.inviteJoinText) {
+              let tmp48 = cResult[23];
+            }
+            if (cResult[24] === tmp4.inviteJoinContainer) {
+              if (cResult[25] === tmp42) {
+                if (cResult[26] === tmp48) {
+                  let tmp51 = cResult[27];
+                }
+                return tmp51;
+              }
+            }
+            const obj10 = { style: tmp4.inviteJoinContainer, children: null };
+            const items = [tmp42, tmp48];
+            obj10.children = items;
+            const tmp54 = __initData2(View, obj10);
+            cResult[24] = tmp4.inviteJoinContainer;
+            cResult[25] = tmp42;
+            cResult[26] = tmp48;
+            cResult[27] = tmp54;
+            tmp51 = tmp54;
+          }
+          const obj12 = { style: tmp4.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: tmp14 };
+          const tmp50 = __initData(tmp(4754).Text, obj12);
+          cResult[21] = tmp14;
+          cResult[22] = tmp4.inviteJoinText;
+          cResult[23] = tmp50;
+          tmp48 = tmp50;
+        }
+      }
+    }
+    let tmp44 = null;
+    if (null != tmp6) {
+      tmp44 = null;
+      if (!tmpResult6.isFriendInvite(invite)) {
+        const obj14 = { style: tmp4.inviterIconWrapper, children: null };
+        const obj16 = { source: tmp6, style: tmp4.inviterIcon };
+        obj14.children = __initData(FastImageDefault, obj16);
+        tmp44 = __initData(View, obj14);
+      }
+      tmpResult6 = tmp(7982);
+    }
+    cResult[16] = invite;
+    cResult[17] = tmp6;
+    cResult[18] = tmp4.inviterIcon;
+    cResult[19] = tmp4.inviterIconWrapper;
+    cResult[20] = tmp44;
+    tmp42 = tmp44;
+    tmpResult4 = tmp(7982);
+  }
+}) : ((invite) => {
   invite = invite.invite;
   const isGuildMember = invite.isGuildMember;
   const tmp = closure_15();
@@ -141,33 +507,33 @@ function InviteJoinContext(invite) {
       }
     }
   }, items);
-  const intl = invite(1115).intl;
-  const stringResult = intl.string(invite(1115).t["3rE1P8"]);
+  const intl = invite(1119).intl;
+  const stringResult = intl.string(invite(1119).t["3rE1P8"]);
   if (obj.isFriendInvite(invite)) {
-    const intl7 = tmp3(1115).intl;
-    let obj2 = { username: isGuildMember(4600).getFormattedName(invite.inviter) };
-    let formatResult = intl7.format(tmp3(1115).t.Quj7HX, obj2);
-    const obj11 = isGuildMember(4600);
+    const intl7 = tmp3(1119).intl;
+    let obj2 = { username: isGuildMember(4603).getFormattedName(invite.inviter) };
+    let formatResult = intl7.format(tmp3(1119).t.Quj7HX, obj2);
+    const obj11 = isGuildMember(4603);
   } else {
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         if (null != invite.inviter) {
-          const intl6 = tmp3(1115).intl;
-          let obj3 = { username: isGuildMember(4600).getFormattedName(invite.inviter) };
-          let formatResult1 = intl6.format(tmp3(1115).t.Lu4h18, obj3);
-          const obj9 = isGuildMember(4600);
+          const intl6 = tmp3(1119).intl;
+          let obj3 = { username: isGuildMember(4603).getFormattedName(invite.inviter) };
+          let formatResult1 = intl6.format(tmp3(1119).t.Lu4h18, obj3);
+          const obj9 = isGuildMember(4603);
         }
         formatResult = formatResult1;
       }
-      const intl5 = tmp3(1115).intl;
-      formatResult1 = intl5.string(tmp3(1115).t.OsdY8B);
+      const intl5 = tmp3(1119).intl;
+      formatResult1 = intl5.string(tmp3(1119).t.OsdY8B);
     } else {
       if (tmp3Result3.isStreamInvite(invite)) {
         if (null != invite.target_user) {
-          const intl4 = tmp3(1115).intl;
-          const obj4 = { username: isGuildMember(4600).getFormattedName(invite.target_user) };
-          formatResult = intl4.formatToPlainString(tmp3(1115).t.x2L32Q, obj4);
-          const obj7 = isGuildMember(4600);
+          const intl4 = tmp3(1119).intl;
+          const obj4 = { username: isGuildMember(4603).getFormattedName(invite.target_user) };
+          formatResult = intl4.formatToPlainString(tmp3(1119).t.x2L32Q, obj4);
+          const obj7 = isGuildMember(4603);
         }
       }
       let tmp7 = isGuildMember;
@@ -175,9 +541,9 @@ function InviteJoinContext(invite) {
         tmp7 = invite.state !== constants2.ACCEPTED;
       }
       if (tmp7) {
-        const intl3 = tmp3(1115).intl;
+        const intl3 = tmp3(1119).intl;
         const string = intl3.string;
-        const t = tmp3(1115).t;
+        const t = tmp3(1119).t;
         if (invite.isRegistration) {
           let stringResult1 = string(t.jpwYbt);
         } else {
@@ -191,15 +557,15 @@ function InviteJoinContext(invite) {
         }
         formatResult = stringResult;
         if (tmp10) {
-          const intl2 = tmp3(1115).intl;
-          const obj6 = { username: isGuildMember(4600).getFormattedName(invite.inviter) };
-          formatResult = intl2.format(tmp3(1115).t.spU2mI, obj6);
-          const obj5 = isGuildMember(4600);
+          const intl2 = tmp3(1119).intl;
+          const obj6 = { username: isGuildMember(4603).getFormattedName(invite.inviter) };
+          formatResult = intl2.format(tmp3(1119).t.spU2mI, obj6);
+          const obj5 = isGuildMember(4603);
         }
       }
-      tmp3Result3 = tmp3(7977);
+      tmp3Result3 = tmp3(7982);
     }
-    tmp3Result = tmp3(7977);
+    tmp3Result = tmp3(7982);
   }
   const obj8 = { style: tmp.inviteJoinContainer, children: null };
   let tmp22 = null;
@@ -208,16 +574,130 @@ function InviteJoinContext(invite) {
     if (!tmp3Result4.isFriendInvite(invite)) {
       const obj10 = { style: tmp.inviterIconWrapper, children: null };
       const obj12 = { source: memo, style: tmp.inviterIcon };
-      obj10.children = closure_12(isGuildMember(5804), obj12);
+      obj10.children = closure_12(isGuildMember(5802), obj12);
       tmp22 = closure_12(tmp21, obj10);
     }
-    tmp3Result4 = tmp3(7977);
+    tmp3Result4 = tmp3(7982);
   }
-  const items1 = [tmp22, closure_12(invite(4752).Text, { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult })];
+  const items1 = [tmp22, closure_12(invite(4754).Text, { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult })];
   obj8.children = items1;
   return closure_13(View, obj8);
-}
-function InviteMemberCounts(invite) {
+});
+ReactCompilerGating = fn(558);
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(13);
+  ({ invite, isGuildMember } = arg0);
+  const tmp4 = closure_15();
+  if (cResult[0] === invite) {
+    if (cResult[1] === isGuildMember) {
+      if (cResult[2] === tmp4) {
+        let tmp5 = cResult[3];
+        let tmp6 = cResult[4];
+        let tmp7 = cResult[5];
+        let tmp8 = cResult[6];
+        let tmp9 = cResult[7];
+      }
+      const _Symbol = Symbol;
+      if (tmp9 !== Symbol.for("react.early_return_sentinel")) {
+        return tmp9;
+      } else {
+        if (cResult[8] === tmp5) {
+          if (cResult[9] === tmp6) {
+            if (cResult[10] === tmp7) {
+            }
+          }
+        }
+        const obj2 = { style: tmp6, children: null };
+        const items = [tmp7, tmp8];
+        obj2.children = items;
+        const tmp31 = __initData2(tmp5, obj2);
+        cResult[8] = tmp5;
+        cResult[9] = tmp6;
+        cResult[10] = tmp7;
+        cResult[11] = tmp8;
+        cResult[12] = tmp31;
+      }
+    }
+  }
+  let num = invite.approximate_presence_count;
+  if (num == null) {
+    num = 0;
+  }
+  const obj3 = { onlineCount: num, memberCount: null };
+  let num2 = invite.approximate_member_count;
+  if (num2 == null) {
+    num2 = 0;
+  }
+  obj3.memberCount = num2;
+  let tmp11 = null;
+  if (0 !== obj3.memberCount) {
+    tmp11 = obj3;
+  }
+  let tmp12 = null;
+  let tmp13;
+  let tmp14;
+  let memberInfo;
+  let tmp16;
+  if (null != tmp11) {
+    tmp12 = null;
+    if (!shouldShowInviter(invite, isGuildMember)) {
+      let id;
+      if (invite != null) {
+        guild = invite.guild;
+        if (guild != null) {
+          id = guild.id;
+        }
+      }
+      tmp12 = null;
+      if (id !== closure_11) {
+        let tmp23 = null;
+        if (null != tmp11.onlineCount) {
+          const obj4 = { children: null };
+          const obj5 = { style: tmp4.dotOnline };
+          const items1 = [__initData(tmp33, obj5), ];
+          const obj6 = { variant: "text-xs/medium", color: "text-default", children: null };
+          const intl = tmp(1119).intl;
+          const obj7 = { membersOnline: tmp11.onlineCount };
+          obj6.children = intl.format(tmp(1119).t["LC+S+m"], obj7);
+          items1[1] = __initData(tmp(4754).Text, obj6);
+          obj4.children = items1;
+          tmp23 = __initData2(state, obj4);
+        }
+        let tmp24 = null;
+        if (null != tmp11.memberCount) {
+          const obj8 = { children: null };
+          const obj9 = { style: tmp4.dotOffline };
+          const items2 = [__initData(tmp33, obj9), ];
+          const obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
+          const intl2 = tmp(1119).intl;
+          const obj11 = { count: tmp11.memberCount };
+          obj10.children = intl2.format(tmp(1119).t.zRl6XR, obj11);
+          items2[1] = __initData(tmp(4754).Text, obj10);
+          obj8.children = items2;
+          tmp24 = __initData2(state, obj8);
+        }
+        tmp13 = tmp24;
+        tmp12 = forResult;
+        tmp14 = tmp23;
+        memberInfo = tmp4.memberInfo;
+        tmp16 = tmp33;
+      }
+    }
+  }
+  cResult[0] = invite;
+  cResult[1] = isGuildMember;
+  cResult[2] = tmp4;
+  cResult[3] = tmp16;
+  cResult[4] = memberInfo;
+  cResult[5] = tmp14;
+  cResult[6] = tmp13;
+  cResult[7] = tmp12;
+  tmp9 = tmp12;
+  tmp8 = tmp13;
+  tmp7 = tmp14;
+  tmp6 = memberInfo;
+  tmp5 = tmp16;
+}) : ((invite) => {
   invite = invite.invite;
   const tmp = closure_15();
   let num = invite.approximate_presence_count;
@@ -240,7 +720,7 @@ function InviteMemberCounts(invite) {
     if (!shouldShowInviter(invite, invite.isGuildMember)) {
       let id;
       if (invite != null) {
-        const guild = invite.guild;
+        guild = invite.guild;
         if (guild != null) {
           id = guild.id;
         }
@@ -252,28 +732,28 @@ function InviteMemberCounts(invite) {
         if (null != tmp2.onlineCount) {
           const obj3 = { children: null };
           const obj4 = { style: tmp.dotOnline };
-          const items = [closure_1_12(tmp18, obj4), ];
+          const items = [__initData(tmp18, obj4), ];
           const obj5 = { variant: "text-xs/medium", color: "text-default", children: null };
           const intl = util.intl;
           const obj6 = { membersOnline: tmp2.onlineCount };
           obj5.children = intl.format(util.t["LC+S+m"], obj6);
-          items[1] = closure_1_12(Text_Text.Text, obj5);
+          items[1] = __initData(Text_Text.Text, obj5);
           obj3.children = items;
-          tmp17Result = tmp17(closure_1_14, obj3);
+          tmp17Result = tmp17(state, obj3);
         }
         const items1 = [tmp17Result, ];
         let tmp17Result3 = null;
         if (null != tmp2.memberCount) {
           const obj7 = { children: null };
           const obj8 = { style: tmp.dotOffline };
-          const items2 = [closure_1_12(tmp18, obj8), ];
+          const items2 = [__initData(tmp18, obj8), ];
           const obj9 = { variant: "text-xs/medium", color: "text-default", children: null };
           const intl2 = util.intl;
           const obj10 = { count: tmp2.memberCount };
           obj9.children = intl2.format(util.t.zRl6XR, obj10);
-          items2[1] = closure_1_12(Text_Text.Text, obj9);
+          items2[1] = __initData(Text_Text.Text, obj9);
           obj7.children = items2;
-          tmp17Result3 = tmp17(closure_1_14, obj7);
+          tmp17Result3 = tmp17(state, obj7);
         }
         items1[1] = tmp17Result3;
         obj2.children = items1;
@@ -282,42 +762,368 @@ function InviteMemberCounts(invite) {
     }
   }
   return tmp17Result4;
-}
-const View = fn(17).View;
-const Constants = fn(1074);
-({ AnalyticEvents: closure_9, InviteStates: c10 } = Constants);
-let closure_11 = fn(12972).INVITE_ROUTING_HUB_GUILD_ID;
-const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { avatar: null, avatarContainer: null, inviteJoinContainer: null, inviteJoinText: null, inviterIconWrapper: null, inviterIcon: null, guildNameContainer: null, guildNameText: null, featureIcon: null, memberInfo: null, rolesList: null, dotOnline: null, dotOffline: null, embedDetailsCard: null };
-let size = { height: 64, width: 64, margin: 0, borderRadius: nativeDefault.radii.lg };
-obj2.avatar = size;
-const size1 = { borderRadius: nativeDefault.radii.none, height: 64, width: 64, marginBottom: 24, marginTop: 24 };
-obj2.avatarContainer = size1;
-obj2.inviteJoinContainer = { flexDirection: "row", alignItems: "flex-start", marginBottom: 8, marginLeft: 16, marginRight: 16 };
-obj2.inviteJoinText = { textAlign: "center" };
-obj2.inviterIconWrapper = { borderRadius: nativeDefault.radii.none, marginRight: 8 };
-const size2 = { width: 20, height: 20, borderRadius: nativeDefault.radii.md };
-obj2.inviterIcon = size2;
-obj2.guildNameContainer = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
-obj2.guildNameText = { textAlign: "center" };
-let obj3 = { borderRadius: nativeDefault.radii.none, marginRight: 8 };
-obj2.featureIcon = { flexGrow: 0, marginRight: 8, opacity: fn(5658).DARK_1_LIGHT_04 };
-obj2.memberInfo = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
-obj2.rolesList = { marginTop: 8, marginBottom: 8, alignItems: "center" };
-const size3 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
-obj2.dotOnline = size3;
-const size4 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
-obj2.dotOffline = size4;
-let obj4 = { flexGrow: 0, marginRight: 8, opacity: fn(5658).DARK_1_LIGHT_04 };
-obj2.embedDetailsCard = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 16, marginBottom: 8 };
-let closure_15 = createStyles.createStyles(obj2);
+});
 const constants3 = { ACCEPT: 0, [0]: "ACCEPT", DECLINE: 1, [1]: "DECLINE" };
+ReactCompilerGating = fn(558);
+let obj5 = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 16, marginBottom: 8 };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/accept_invite/native/InviteDetails.tsx");
 
-export default function InviteDetails(invite) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((invite) => {
+  const cResult = invite(onPressJoin[13]).c(43);
+  invite = invite.invite;
+  const isGuildMember = invite.isGuildMember;
+  onPressJoin = invite.onPressJoin;
+  const onPressClose = invite.onPressClose;
+  const isRegistration = invite.isRegistration;
+  const tmp4 = closure_15();
+  const tmp5 = onPressClose(first.useState(), 2);
+  first = tmp5[0];
+  View = tmp5[1];
+  if (cResult[0] !== onPressJoin) {
+    const fn = function v() {
+      closure_5(constants.ACCEPT);
+      onPressJoin();
+    };
+    cResult[0] = onPressJoin;
+    cResult[1] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[1];
+  }
+  MultiAccountStore = tmp7;
+  if (cResult[2] === invite.code) {
+    guild = invite.guild;
+    let id;
+    if (guild != null) {
+      id = guild.id;
+    }
+    if (cResult[3] === id) {
+      if (cResult[4] === onPressClose) {
+        let tmp10 = cResult[5];
+      }
+      const onPress2 = tmp10;
+      if (cResult[6] === invite) {
+        if (cResult[7] === isGuildMember) {
+          if (cResult[8] === isRegistration) {
+            let tmp12 = cResult[9];
+          }
+          const guild_scheduled_event = invite.guild_scheduled_event;
+          const _Symbol = Symbol;
+          if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+            let items = [stateFromStores];
+            const fn2 = function z() {
+              return stateFromStores.getCurrentUser();
+            };
+            cResult[10] = items;
+            cResult[11] = fn2;
+            let tmp16 = fn2;
+            let tmp15 = items;
+          } else {
+            tmp15 = cResult[10];
+            tmp16 = cResult[11];
+          }
+          stateFromStores = tmp(tmp2[24]).useStateFromStores(tmp15, tmp16);
+          const _Symbol2 = Symbol;
+          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+            const items1 = [MultiAccountStore];
+            class Q {
+              constructor() {
+                return closure_6.getCanUseMultiAccountMobile();
+              }
+            }
+            cResult[12] = items1;
+            cResult[13] = Q;
+            let tmp20 = Q;
+            let tmp19 = items1;
+          } else {
+            tmp19 = cResult[12];
+            tmp20 = cResult[13];
+          }
+          const tmpResult = tmp(tmp2[24]);
+          const stateFromStores1 = tmp(tmp2[24]).useStateFromStores(tmp19, tmp20);
+          if (cResult[14] === first) {
+            if (cResult[15] === stateFromStores) {
+              if (cResult[16] === tmp7) {
+                if (cResult[17] === tmp10) {
+                  if (cResult[18] === invite) {
+                    if (cResult[19] === isGuildMember) {
+                      if (cResult[20] === stateFromStores1) {
+                        let tmp23 = cResult[21];
+                      }
+                      if (cResult[22] !== tmp12) {
+                        class Q {
+                          constructor() {
+                            return closure_6.getCanUseMultiAccountMobile();
+                          }
+                        }
+                        const merged = Object.assign(tmp12);
+                        const tmp32 = closure_12(closure_17, {});
+                        let obj3 = {};
+                        const merged1 = Object.assign(tmp12);
+                        const tmp37 = closure_12(closure_19, obj3);
+                        const obj4 = {};
+                        const merged2 = Object.assign(tmp12);
+                        const tmp42 = closure_12(closure_18, obj4);
+                        let obj5 = {};
+                        const merged3 = Object.assign(tmp12);
+                        const tmp47 = closure_12(closure_20, obj5);
+                        cResult[22] = tmp12;
+                        cResult[23] = tmp37;
+                        cResult[24] = tmp42;
+                        cResult[25] = tmp47;
+                        class L {
+                          constructor() {
+                            tmp = closure_5(closure_21.DECLINE);
+                            obj = closure_1(closure_2[23]);
+                            obj1 = { invite_code: invite.code, guild_id: null };
+                            guild = invite.guild;
+                            id = undefined;
+                            if (guild != null) {
+                              id = guild.id;
+                            }
+                            obj1.guild_id = id;
+                            trackResult = obj.track(AnalyticEvents.INVITE_ACCEPT_DISMISSED, obj1);
+                            tmp4 = onPressClose();
+                            return;
+                          }
+                        }
+                        cResult[26] = tmp32;
+                        let tmp26 = tmp47;
+                        let tmp25 = tmp42;
+                        let tmp24 = tmp37;
+                        let obj2 = {};
+                      } else {
+                        tmp24 = cResult[23];
+                        tmp25 = cResult[24];
+                        tmp26 = cResult[25];
+                        class Q {
+                          constructor() {
+                            return closure_6.getCanUseMultiAccountMobile();
+                          }
+                        }
+                      }
+                      if (cResult[27] === invite) {
+                        if (cResult[28] === tmp4.rolesList) {
+                          let tmp48 = cResult[29];
+                        }
+                        if (cResult[30] === guild_scheduled_event) {
+                          if (cResult[31] === tmp4.embedDetailsCard) {
+                            let tmp51 = cResult[32];
+                          }
+                          if (cResult[33] !== tmp23) {
+                            const tmp23Result = tmp23();
+                            cResult[33] = tmp23;
+                            class Q {
+                              constructor() {
+                                return closure_6.getCanUseMultiAccountMobile();
+                              }
+                            }
+                            cResult[34] = tmp23Result;
+                            let tmp57 = tmp23Result;
+                          } else {
+                            tmp57 = cResult[34];
+                          }
+                          if (cResult[35] === tmp24) {
+                            if (cResult[36] === tmp25) {
+                              if (cResult[37] === tmp26) {
+                                if (cResult[38] === tmp48) {
+                                  if (cResult[39] === tmp51) {
+                                    if (cResult[40] === tmp57) {
+                                      if (cResult[41] === tmp27) {
+                                        let tmp59 = cResult[42];
+                                      }
+                                      return tmp59;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          class Q {
+                            constructor() {
+                              return closure_6.getCanUseMultiAccountMobile();
+                            }
+                          }
+                          const obj6 = { children: null };
+                          const items2 = [tmp27, tmp24, tmp25, tmp26, tmp48, tmp51, tmp57];
+                          obj6.children = items2;
+                          const tmp61 = closure_13(closure_14, obj6);
+                          cResult[35] = tmp24;
+                          cResult[36] = tmp25;
+                          cResult[37] = tmp26;
+                          cResult[38] = tmp48;
+                          cResult[39] = tmp51;
+                          cResult[40] = tmp57;
+                          cResult[41] = tmp27;
+                          cResult[42] = tmp61;
+                          tmp59 = tmp61;
+                        }
+                        class Q {
+                          constructor() {
+                            return closure_6.getCanUseMultiAccountMobile();
+                          }
+                        }
+                        if (tmp53) {
+                          const obj7 = { style: null, children: null };
+                          class Q {
+                            constructor() {
+                              return closure_6.getCanUseMultiAccountMobile();
+                            }
+                          }
+                          const obj8 = { event: guild_scheduled_event };
+                          const items3 = [closure_12(tmp(tmp2[28]).GuildEventCardHeader, obj8), , ];
+                          const obj9 = { event: guild_scheduled_event };
+                          items3[1] = closure_12(tmp(tmp2[28]).GuildEventCardMetaInfo, obj9);
+                          const obj10 = { event: guild_scheduled_event };
+                          items3[2] = closure_12(tmp(tmp2[28]).GuildEventCardGuildInfo, obj10);
+                          obj7.children = items3;
+                          tmp53 = closure_13(View, obj7);
+                        }
+                        cResult[30] = guild_scheduled_event;
+                        cResult[31] = tmp4.embedDetailsCard;
+                        cResult[32] = tmp53;
+                        tmp51 = tmp53;
+                      }
+                      class Q {
+                        constructor() {
+                          return closure_6.getCanUseMultiAccountMobile();
+                        }
+                      }
+                      const obj11 = { invite, style: tmp4.rolesList };
+                      const tmp50 = closure_12(isGuildMember(tmp2[27]), obj11);
+                      cResult[27] = invite;
+                      cResult[28] = tmp4.rolesList;
+                      cResult[29] = tmp50;
+                      tmp48 = tmp50;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const fn3 = function j() {
+            let tmp = isGuildMember;
+            if (isGuildMember) {
+              tmp = invite.state !== constants2.ACCEPTED;
+            }
+            let userAvatarSource = null;
+            if (null != stateFromStores) {
+              userAvatarSource = AvatarUtilsDefault.getUserAvatarSource(tmp3, false, 20);
+            }
+            let tmp7;
+            if (null != userAvatarSource) {
+              const obj2 = { source: userAvatarSource, variant: "entity" };
+              tmp7 = __initData(components_Button_Button.Button.Icon, obj2);
+            }
+            if (null != stateFromStores) {
+              const intl = util.intl;
+              const obj3 = {
+                usernameHook() {
+                    let str = "";
+                    if (!stateFromStores.hasUniqueUsername()) {
+                      const _HermesInternal = HermesInternal;
+                      str = "#" + stateFromStores.discriminator;
+                    }
+                    return "" + stateFromStores.username + str;
+                  }
+              };
+              const formatToPlainStringResult = intl.formatToPlainString(util.t["9sWQNT"], obj3);
+            }
+            const intl2 = util.intl;
+            if (tmp) {
+              const intl3 = tmp14(1119).intl;
+              let stringResult = intl3.string(tmp14(1119).t.IRoQXr);
+              let tmp19 = stringResult;
+            } else {
+              let tmp17 = stateFromStores1;
+              if (stateFromStores1) {
+                tmp17 = null != formatToPlainStringResult;
+              }
+              stringResult = formatToPlainStringResult;
+              tmp19 = tmp16;
+              if (tmp17) {
+                stringResult = formatToPlainStringResult;
+                tmp19 = formatToPlainStringResult;
+              }
+            }
+            const items = [__initData(components_Button_Button.Button, { icon: tmp7, variant: "primary", size: "lg", text: tmp19, accessibilityLabel: stringResult, onPress, loading: first === constants.ACCEPT, disabled: first === constants.ACCEPT }), ];
+            const intl4 = tmp14(1119).intl;
+            const string = intl4.string;
+            const t = tmp14(1119).t;
+            if (tmp) {
+              let stringResult1 = string(t.WAI6xu);
+            } else {
+              stringResult1 = string(t.ndsK4Z);
+            }
+            const obj5 = { children: null };
+            items[1] = __initData(components_Button_Button.Button, { variant: "secondary", size: "lg", text: stringResult1, onPress: onPress2, loading: first === constants.DECLINE, disabled: first === constants.DECLINE });
+            obj5.children = items;
+            return __initData2(ButtonGroup.ButtonGroup, obj5);
+          };
+          cResult[14] = first;
+          cResult[15] = stateFromStores;
+          cResult[16] = tmp7;
+          cResult[17] = tmp10;
+          cResult[18] = invite;
+          cResult[19] = isGuildMember;
+          cResult[20] = stateFromStores1;
+          class L {
+            constructor() {
+              tmp = closure_5(closure_21.DECLINE);
+              obj = closure_1(closure_2[23]);
+              obj1 = { invite_code: invite.code, guild_id: null };
+              guild = invite.guild;
+              id = undefined;
+              if (guild != null) {
+                id = guild.id;
+              }
+              obj1.guild_id = id;
+              trackResult = obj.track(AnalyticEvents.INVITE_ACCEPT_DISMISSED, obj1);
+              tmp4 = onPressClose();
+              return;
+            }
+          }
+          tmp23 = fn3;
+          const tmpResult2 = tmp(tmp2[24]);
+        }
+      }
+      tmp13[0] = invite;
+      tmp13[1] = isGuildMember;
+      tmp13[2] = isRegistration;
+      cResult[6] = invite;
+      cResult[7] = isGuildMember;
+      cResult[8] = isRegistration;
+      cResult[9] = tmp13;
+      tmp12 = tmp13;
+    }
+  }
+  ({ code: tmp3[2], guild: guild2 } = invite);
+  let id1;
+  if (guild2 != null) {
+    id1 = guild2.id;
+  }
+  class L {
+    constructor() {
+      tmp = closure_5(closure_21.DECLINE);
+      obj = closure_1(closure_2[23]);
+      obj1 = { invite_code: invite.code, guild_id: null };
+      guild = invite.guild;
+      id = undefined;
+      if (guild != null) {
+        id = guild.id;
+      }
+      obj1.guild_id = id;
+      trackResult = obj.track(AnalyticEvents.INVITE_ACCEPT_DISMISSED, obj1);
+      tmp4 = onPressClose();
+      return;
+    }
+  }
+  cResult[3] = id1;
+  cResult[4] = onPressClose;
+  cResult[5] = L;
+  tmp10 = L;
+}) : ((invite) => {
   invite = invite.invite;
   ({ isGuildMember, onPressJoin: importDefault, onPressClose: dependencyMap } = invite);
   _slicedToArray = undefined;
@@ -333,23 +1139,23 @@ export default function InviteDetails(invite) {
   const items1 = [MultiAccountStore];
   let stateFromStores1 = invite(504).useStateFromStores(items1, () => canUseMultiAccountMobile.getCanUseMultiAccountMobile());
   const merged = Object.assign(obj);
-  const items2 = [closure_12(InviteDestinationIcon, {}), , , , , , ];
+  const items2 = [closure_12(closure_17, {}), , , , , , ];
   const merged1 = Object.assign(obj);
-  items2[1] = closure_12(InviteJoinContext, {});
+  items2[1] = closure_12(closure_19, {});
   const merged2 = Object.assign(obj);
-  items2[2] = closure_12(InviteHeader, {});
+  items2[2] = closure_12(closure_18, {});
   const merged3 = Object.assign(obj);
-  items2[3] = closure_12(InviteMemberCounts, {});
+  items2[3] = closure_12(closure_20, {});
   items2[4] = closure_12(InviteRolesListDefault, { invite, style: tmp.rolesList });
   let tmp8Result = null != guild_scheduled_event;
   if (tmp8Result) {
     const obj9 = { style: tmp.embedDetailsCard, children: null };
     const obj10 = { event: guild_scheduled_event };
-    const items3 = [tmp10(tmp4(9869).GuildEventCardHeader, obj10), , ];
+    const items3 = [tmp10(tmp4(9847).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = tmp10(tmp4(9869).GuildEventCardMetaInfo, obj11);
+    items3[1] = tmp10(tmp4(9847).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = tmp10(tmp4(9869).GuildEventCardGuildInfo, obj12);
+    items3[2] = tmp10(tmp4(9847).GuildEventCardGuildInfo, obj12);
     obj9.children = items3;
     tmp8Result = tmp8(View, obj9);
   }
@@ -365,10 +1171,10 @@ export default function InviteDetails(invite) {
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj13 = { source: userAvatarSource, variant: "entity" };
-    tmp10Result = tmp10(tmp4(5186).Button.Icon, obj13);
+    tmp10Result = tmp10(tmp4(5188).Button.Icon, obj13);
   }
   if (null != stateFromStores) {
-    const intl = tmp4(1115).intl;
+    const intl = tmp4(1119).intl;
     const obj14 = {
       usernameHook() {
           let str = "";
@@ -379,12 +1185,12 @@ export default function InviteDetails(invite) {
           return "" + stateFromStores.username + str;
         }
     };
-    const formatToPlainStringResult = intl.formatToPlainString(tmp4(1115).t["9sWQNT"], obj14);
+    const formatToPlainStringResult = intl.formatToPlainString(tmp4(1119).t["9sWQNT"], obj14);
   }
-  const intl2 = tmp4(1115).intl;
+  const intl2 = tmp4(1119).intl;
   if (isGuildMember) {
-    const intl3 = tmp4(1115).intl;
-    let stringResult = intl3.string(tmp4(1115).t.IRoQXr);
+    const intl3 = tmp4(1119).intl;
+    let stringResult = intl3.string(tmp4(1119).t.IRoQXr);
     let tmp24 = stringResult;
   } else {
     if (stateFromStores1) {
@@ -401,10 +1207,10 @@ export default function InviteDetails(invite) {
     _undefined(constants.ACCEPT);
     importDefault();
   }
-  const items4 = [closure_12(invite(5186).Button, { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT }), ];
-  const intl4 = tmp4(1115).intl;
+  const items4 = [closure_12(invite(5188).Button, { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT }), ];
+  const intl4 = tmp4(1119).intl;
   const string = intl4.string;
-  const t = tmp4(1115).t;
+  const t = tmp4(1119).t;
   if (isGuildMember) {
     let stringResult1 = string(t.WAI6xu);
   } else {
@@ -412,14 +1218,14 @@ export default function InviteDetails(invite) {
   }
   const obj16 = { children: null };
   const obj17 = { children: null };
-  items4[1] = closure_12(invite(5186).Button, {
+  items4[1] = closure_12(invite(5188).Button, {
     variant: "secondary",
     size: "lg",
     text: stringResult1,
     onPress: function handleCancelPress() {
       _undefined(constants.DECLINE);
       const obj2 = { invite_code: invite.code, guild_id: null };
-      const guild = invite.guild;
+      guild = invite.guild;
       let id;
       if (guild != null) {
         id = guild.id;
@@ -432,7 +1238,7 @@ export default function InviteDetails(invite) {
     disabled: tmp3 === constants3.DECLINE
   });
   obj17.children = items4;
-  items2[6] = closure_13(invite(5650).ButtonGroup, obj17);
+  items2[6] = closure_13(invite(5652).ButtonGroup, obj17);
   obj16.children = items2;
   return closure_13(closure_14, obj16);
-};
+});

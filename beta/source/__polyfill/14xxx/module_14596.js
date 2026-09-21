@@ -1,35 +1,26 @@
 // Module ID: 14596
 // Function ID: 14597
-// Dependencies: [14581, 14577, 14597]
+// Dependencies: [14580, 14581, 14597]
 
 // Module 14596
-import _mod14577 from "module_14577" /* 14577 */;
+import _mod14580 from "module_14580" /* 14580 */;
 import _mod14581 from "module_14581" /* 14581 */;
+import _mod14597 from "module_14597" /* 14597 */;
 
-let prop = Object.getOwnPropertySymbols;
-if (prop) {
-  prop = !_mod14581(() => {
-    const SymbolResult = Symbol("symbol detection");
-    const StringResult = _mod14577.String(SymbolResult);
-    let tmp5 = !StringResult;
-    if (StringResult) {
-      const _Object = Object;
-      const _Symbol = Symbol;
-      tmp5 = !(Object(SymbolResult) instanceof Symbol);
-    }
-    if (!tmp5) {
-      const _Symbol2 = Symbol;
-      let tmp2Result = !sham;
-      if (!sham) {
-        tmp2Result = tmp2(14597);
-      }
-      if (tmp2Result) {
-        tmp2Result = tmp2(14597) < 41;
-      }
-      tmp5 = tmp2Result;
-    }
-    return tmp5;
-  });
+let prop = _mod14580["__core-js_shared__"];
+if (!prop) {
+  prop = _mod14581("__core-js_shared__", {});
 }
+let versions = prop.versions;
+if (!versions) {
+  const items = [];
+  prop.versions = items;
+  versions = items;
+}
+let str2 = "global";
+if (_mod14597) {
+  str2 = "pure";
+}
+versions.push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
 export default prop;

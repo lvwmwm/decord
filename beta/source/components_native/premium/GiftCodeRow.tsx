@@ -1,23 +1,23 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 13831
+// Function ID: 13832
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 4466, 11693, 4994, 8632, 6863, 4752, 5186, 1115, 4348, 1177, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 4471, 11562, 4996, 8637, 6856, 4754, 5188, 1119, 4352, 1181, 2]
 
-// Module 13828 (GiftCodeRow)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 4994 */;
-import showShareActionSheet from "showShareActionSheet" /* 8632 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11693 */;
+// Module 13831 (GiftCodeRow)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 4996 */;
+import showShareActionSheet from "showShareActionSheet" /* 8637 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11562 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, TouchableWithoutFeedback: closure_4, StyleSheet } = get_ActivityIndicator);
-const AnalyticsSections = fn(1074).AnalyticsSections;
+const AnalyticsSections = fn(1078).AnalyticsSections;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { giftCodeRow: { paddingHorizontal: 16 }, giftCodeRowLegacy: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, giftCodeShare: null, giftCodeInput: null, giftCodeInputContent: null, giftCodeShareButton: null, codeText: null, subTextRow: null, expiryText: null, revokeHint: null, firstRow: null, buttonContainer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.giftCodeShare = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginVertical: 8, padding: 8, borderRadius: nativeDefault.radii.xs, borderWidth: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
@@ -95,7 +95,7 @@ prototype["render"] = function render() {
     const intl2 = tmp6(tmp7[13]).intl;
     const obj11 = { hours: null, revokeHook: null };
     const expiresAt = giftCode.expiresAt;
-    obj11.hours = expiresAt.diff(require("module_4348")(), "h");
+    obj11.hours = expiresAt.diff(require("module_4352")(), "h");
     obj11.revokeHook = function revokeHook(children, arg1) {
       const obj = {
         accessibilityRole: "button",
@@ -119,7 +119,7 @@ prototype["render"] = function render() {
   obj.children = items3;
   return closure_7(closure_3, obj);
 };
-GiftCodeRow.contextType = fn(4466).ThemeContext;
+GiftCodeRow.contextType = fn(4471).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/GiftCodeRow.tsx");
 

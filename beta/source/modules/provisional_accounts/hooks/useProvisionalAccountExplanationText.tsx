@@ -1,21 +1,60 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12793
+// Function ID: 12794
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1074, 12883, 1115, 2108, 2]
-// Exports: useProvisionalAccountExplanationText
+// Dependencies: [19, 1078, 558, 568, 12794, 1119, 2112, 2]
 
-// Module 12882 (useProvisionalAccountExplanationText)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12883 */;
+// Module 12793 (useProvisionalAccountExplanationText)
+import c from "c" /* 568 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12794 */;
 import noop from "module_19" /* 19 */;
 
+const util = rSUACb(1119);
+const HelpdeskUtilsDefault = tmp2(2112);
 require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");
 
-export const useProvisionalAccountExplanationText = function useProvisionalAccountExplanationText(renderApplicationName) {
+export const useProvisionalAccountExplanationText = ReactCompilerGating.isReactCompilerEnabled() ? ((renderApplicationName) => {
+  let rSUACb = require;
+  let getArticleURL = dependencyMap;
+  const cResult = c.c(4);
+  renderApplicationName = renderApplicationName.renderApplicationName;
+  let tmp2 = importDefault;
+  const tmp3 = useProvisionalAccountApplicationDefault(renderApplicationName.userId);
+  closure_1 = tmp3;
+  if (null != tmp3) {
+    if (cResult[0] === tmp3) {
+    }
+    const intl2 = util.intl;
+    rSUACb = util.t.rSUACb;
+    const obj2 = { helpdeskArticle: null, applicationName: null };
+    tmp2 = HelpdeskUtilsDefault;
+    getArticleURL = tmp2.getArticleURL;
+    obj2.helpdeskArticle = getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS);
+    obj2.applicationName = function applicationName() {
+      return renderApplicationName(closure_1);
+    };
+    const formatResult = intl2.format(rSUACb, obj2);
+    cResult[0] = tmp3;
+    cResult[1] = renderApplicationName;
+    cResult[2] = formatResult;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = util.intl;
+      const obj3 = { helpdeskArticle: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
+      const formatResult1 = intl.format(util.t["q+N8L6"], obj3);
+      cResult[3] = formatResult1;
+      let tmp4 = formatResult1;
+      const tmp2Result = HelpdeskUtilsDefault;
+    } else {
+      tmp4 = cResult[3];
+    }
+    return tmp4;
+  }
+}) : ((renderApplicationName) => {
   renderApplicationName = renderApplicationName.renderApplicationName;
   const tmp = useProvisionalAccountApplicationDefault(renderApplicationName.userId);
   importDefault = tmp;
@@ -37,4 +76,4 @@ export const useProvisionalAccountExplanationText = function useProvisionalAccou
     }
     return formatResult;
   }, items);
-};
+});

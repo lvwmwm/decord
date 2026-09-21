@@ -1,32 +1,230 @@
-// Module ID: 8526
-// Function ID: 8527
+// Module ID: 8531
+// Function ID: 8532
 // Name: HeaderAvatar
-// Dependencies: [19, 17, 4748, 2105, 4796, 1074, 21, 4756, 576, 1177, 504, 8527, 8435, 8528, 8516, 5339, 2]
+// Dependencies: [109, 19, 17, 4750, 2109, 4798, 1078, 21, 4758, 580, 558, 568, 1181, 504, 8440, 8532, 8533, 8521, 5341, 2]
 
-// Module 8526 (HeaderAvatar)
-import nativeDefault from "native" /* 576 */;
+// Module 8531 (HeaderAvatar)
+import nativeDefault from "native" /* 580 */;
+import native from "native" /* 1181 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8521 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
 
-const require = fn;
+const require = globalThis.__r;
+
+require = fn;
+let closure_3 = ["user", "guildId", "disableStatus", "pendingAvatarSrc", "pendingAvatarDecoration", "style", "statusStyle", "onPress", "size", "animate"];
 const View = fn(17).View;
-const ActivityTypes = fn(1074).ActivityTypes;
+const ActivityTypes = fn(1078).ActivityTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { avatarStatusStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_9 = createStyles.createStyles(obj);
+let closure_11 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
 
-export default noop.forwardRef((animate, ref) => {
+export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((user, arg1) => {
+  const cResult = require("c").c(53);
+  if (cResult[0] !== user) {
+    user = user.user;
+    dependencyMap = user;
+    const guildId = user.guildId;
+    _require = guildId;
+    ({ disableStatus, pendingAvatarSrc } = user);
+    closure_1 = pendingAvatarSrc;
+    ({ pendingAvatarDecoration, style, statusStyle, onPress, size, animate } = user);
+    const tmp16 = stateFromStores(user, id);
+    cResult[0] = user;
+    cResult[1] = tmp16;
+    cResult[2] = disableStatus;
+    cResult[3] = guildId;
+    cResult[4] = onPress;
+    cResult[5] = pendingAvatarDecoration;
+    cResult[6] = pendingAvatarSrc;
+    cResult[7] = statusStyle;
+    cResult[8] = style;
+    cResult[9] = size;
+    class H {
+      constructor() {
+        member = null;
+        if (null != closure_0) {
+          tmp3 = closure_7;
+          tmp4 = id;
+          member = closure_7.getMember(tmp, id);
+        }
+        return member;
+      }
+    }
+    cResult[10] = animate;
+    cResult[11] = user;
+    let XXLARGE = size;
+    let tmp8 = pendingAvatarDecoration;
+  } else {
+    _require = cResult[3];
+    tmp8 = cResult[5];
+    closure_1 = cResult[6];
+    XXLARGE = cResult[9];
+    dependencyMap = cResult[11];
+  }
+  if (undefined === XXLARGE) {
+    XXLARGE = tmp(1181).AvatarSizes.XXLARGE;
+  }
+  closure_11();
+  id = tmp13.id;
+  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    class F {
+      constructor() {
+        return closure_1_6.useReducedMotion;
+      }
+    }
+    cResult[12] = items;
+    cResult[13] = F;
+    let tmp19 = F;
+    let tmp18 = items;
+  } else {
+    tmp18 = cResult[12];
+    tmp19 = cResult[13];
+  }
+  let obj = require("c");
+  stateFromStores = require("initialize").useStateFromStores(tmp18, tmp19);
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [PresenceStore];
+    class F {
+      constructor() {
+        return closure_1_6.useReducedMotion;
+      }
+    }
+    cResult[14] = items1;
+    let tmp22 = items1;
+  } else {
+    tmp22 = cResult[14];
+  }
+  if (cResult[15] !== id) {
+    class E {
+      constructor() {
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+        return obj;
+      }
+    }
+    const items2 = [id];
+    class F {
+      constructor() {
+        return closure_1_6.useReducedMotion;
+      }
+    }
+    cResult[15] = id;
+    cResult[16] = E;
+    cResult[17] = items2;
+    let tmp25 = items2;
+    const tmp24 = E;
+  } else {
+    class E {
+      constructor() {
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+        return obj;
+      }
+    }
+    tmp25 = cResult[17];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStoresObject = require("initialize").useStateFromStoresObject(tmp22, tmp24, tmp25);
+  ({ isMobileOnline, isVROnline, activities } = stateFromStoresObject);
+  if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+        return obj;
+      }
+    }
+    const items3 = [GuildMemberStore];
+    class F {
+      constructor() {
+        return closure_1_6.useReducedMotion;
+      }
+    }
+    cResult[18] = items3;
+    const tmp27 = items3;
+  } else {
+    class E {
+      constructor() {
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+        return obj;
+      }
+    }
+  }
+  if (cResult[19] === tmp6) {
+    class E {
+      constructor() {
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+        return obj;
+      }
+    }
+    const stateFromStores1 = tmp(504).useStateFromStores(tmp27, H);
+    class F {
+      constructor() {
+        return closure_1_6.useReducedMotion;
+      }
+    }
+    if (tmp13 != null) {
+      class E {
+        constructor() {
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+          return obj;
+        }
+      }
+    }
+    if (stateFromStores1 != null) {
+      class E {
+        constructor() {
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+          return obj;
+        }
+      }
+    }
+    if (cResult[22] === tmp6) {
+      class E {
+        constructor() {
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { ... }) };
+          return obj;
+        }
+      }
+    }
+    const tmpResult5 = tmp(504);
+    let obj2 = { pendingValue: tmp8, userValue: undefined, guildValue: undefined, guildId: tmp6 };
+    const profilePreviewValue = tmp(8440).getProfilePreviewValue(obj2);
+    cResult[22] = tmp6;
+    cResult[23] = tmp8;
+    cResult[24] = undefined;
+    cResult[25] = undefined;
+    cResult[26] = profilePreviewValue;
+    const tmpResult6 = tmp(8440);
+  }
+  class H {
+    constructor() {
+      member = null;
+      if (null != closure_0) {
+        tmp3 = closure_7;
+        tmp4 = id;
+        member = closure_7.getMember(tmp, id);
+      }
+      return member;
+    }
+  }
+  cResult[19] = tmp6;
+  cResult[20] = id;
+  cResult[21] = H;
+}) : ((animate, ref) => {
   ({ user, guildId } = animate);
   ({ pendingAvatarSrc, style, onPress, size } = animate);
   ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
   if (size === undefined) {
-    size = guildId(1177).AvatarSizes.XXLARGE;
+    size = guildId(1181).AvatarSizes.XXLARGE;
   }
   let flag = animate.animate;
   if (flag === undefined) {
@@ -36,7 +234,7 @@ export default noop.forwardRef((animate, ref) => {
   const id = user.id;
   let obj = guildId;
   let avatarSource = dependencyMap;
-  const tmp4 = closure_9();
+  const tmp4 = closure_11();
   const items = [AccessibilityStore];
   const stateFromStores = guildId(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = guildId(504);
@@ -55,7 +253,7 @@ export default noop.forwardRef((animate, ref) => {
   });
   const obj4 = guildId(504);
   const tmp9 = id;
-  const tmp10 = id(8527);
+  const tmp10 = id(8532);
   const obj6 = { pendingValue: pendingAvatarDecoration, userValue: null, guildValue: null, guildId: null };
   let avatarDecoration;
   if (user != null) {
@@ -70,25 +268,25 @@ export default noop.forwardRef((animate, ref) => {
   obj6.guildId = guildId;
   let obj7 = { isMobileOnline, isVROnline, size, status: null, statusStyle: null, streaming: null, animate: null, avatarDecoration: null };
   let tmp14 = null;
-  const obj5 = guildId(8435);
+  const obj5 = guildId(8440);
   if (!disableStatus) {
     tmp14 = status;
   }
   obj7.status = tmp14;
   const items4 = [tmp4.avatarStatusStyle, statusStyle];
   obj7.statusStyle = items4;
-  obj7.streaming = tmp9(8528)(activities);
+  obj7.streaming = tmp9(8533)(activities);
   if (flag) {
     flag = !stateFromStores;
   }
   obj7.animate = flag;
-  obj7.avatarDecoration = tmp10(guildId(8435).getProfilePreviewValue(obj6));
+  obj7.avatarDecoration = tmp10(guildId(8440).getProfilePreviewValue(obj6));
   if (null != onPress) {
     const obj8 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
     const merged1 = Object.assign(merged);
     if (undefined !== pendingAvatarSrc) {
       const obj9 = { source: null };
-      obj = obj(8516);
+      obj = obj(8521);
       avatarSource = obj.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
       obj9.source = avatarSource;
       obj7 = Object.assign(obj7);
@@ -97,14 +295,14 @@ export default noop.forwardRef((animate, ref) => {
       obj10 = { user, guildId };
       const merged2 = Object.assign(obj7);
     }
-    obj8.children = jsx(obj(1177).Avatar, obj10);
-    jsx(obj(5339).PressableOpacity, { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
+    obj8.children = jsx(obj(1181).Avatar, obj10);
+    jsx(obj(5341).PressableOpacity, { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
   } else {
     const obj11 = { ref, style, accessibilityRole: "image", accessible: true };
     const merged3 = Object.assign(merged);
     if (undefined !== pendingAvatarSrc) {
       const obj12 = { source: null };
-      const objResult = obj(8516);
+      const objResult = obj(8521);
       obj12.source = objResult.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
       const merged4 = Object.assign(obj7);
       let obj13 = obj12;
@@ -112,7 +310,7 @@ export default noop.forwardRef((animate, ref) => {
       obj13 = { user, guildId };
       const merged5 = Object.assign(obj7);
     }
-    obj11.children = jsx(obj(1177).Avatar, obj13);
+    obj11.children = jsx(obj(1181).Avatar, obj13);
     return <View ref={arg1} style={style} accessibilityRole="image" accessible />;
   }
-});
+}));

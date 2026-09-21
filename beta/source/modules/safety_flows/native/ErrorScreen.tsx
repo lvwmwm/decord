@@ -1,11 +1,11 @@
-// Module ID: 18343
-// Function ID: 18344
+// Module ID: 18346
+// Function ID: 18347
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4756, 576, 1484, 18324, 18328, 4752, 1115, 5184, 5186, 6834, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4758, 580, 1488, 18327, 18331, 4754, 1119, 5186, 5188, 6832, 2]
 // Exports: default
 
-// Module 18343 (ErrorScreen)
-import nativeDefault from "native" /* 576 */;
+// Module 18346 (ErrorScreen)
+import nativeDefault from "native" /* 580 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,7 +16,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_16, alignItems: "center" }, buttonContainer: null };
 let obj3 = { flexDirection: "column", justifyContent: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_16, alignItems: "center" };
 obj2.buttonContainer = { marginTop: nativeDefault.space.PX_8 };
@@ -36,7 +36,7 @@ export default function ErrorScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ export default function ErrorScreen() {
           c3 = 0;
           closure_129_0(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp32) {
         if (tmp4 === c3) {

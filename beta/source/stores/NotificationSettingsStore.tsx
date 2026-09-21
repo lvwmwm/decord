@@ -1,13 +1,13 @@
-// Module ID: 10338
-// Function ID: 10339
+// Module ID: 12948
+// Function ID: 12949
 // Name: NotificationSettingsStore
-// Dependencies: [1074, 1364, 504, 573, 2]
+// Dependencies: [1078, 1368, 504, 577, 2]
 
-// Module 10338 (NotificationSettingsStore)
+// Module 12948 (NotificationSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const DesktopNotificationTypes = Constants.DesktopNotificationTypes;

@@ -1,10 +1,10 @@
-// Module ID: 5490
-// Function ID: 5491
+// Module ID: 5492
+// Function ID: 5493
 // Name: EnsureReceivedMessagesAddedInOrderExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 
-// Module 5490 (EnsureReceivedMessagesAddedInOrderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 5492 (EnsureReceivedMessagesAddedInOrderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-ensure-received-messages-added-in-order", kind: "user", defaultConfig: { enabled: false }, variations: null };

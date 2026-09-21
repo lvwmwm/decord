@@ -1,20 +1,55 @@
-// Module ID: 17450
-// Function ID: 17451
+// Module ID: 17684
+// Function ID: 17685
 // Name: usePressUnderlayColor
-// Dependencies: [17451, 4690, 4457, 576, 4605, 4607, 2]
-// Exports: default
+// Dependencies: [17685, 558, 568, 4693, 4462, 580, 4608, 4610, 2]
 
-// Module 17450 (usePressUnderlayColor)
-import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4457 */;
-import useThemeDefault from "useTheme" /* 4690 */;
-import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17451 */;
+// Module 17684 (usePressUnderlayColor)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useToken from "useToken" /* 4462 */;
+import useThemeDefault from "useTheme" /* 4693 */;
+import ChannelEmojiConstants from "ChannelEmojiConstants" /* 17685 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ChannelEmojiConstants.DEFAULT_CHANNEL_EMOJI_BACKGROUND_COLOR;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/usePressUnderlayColor.tsx");
 
-export default function usePressUnderlayColor(arr) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+  const cResult = c.c(4);
+  const tmp4 = useThemeDefault();
+  const token = useToken.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);
+  if (cResult[0] === arr) {
+    if (cResult[1] === token) {
+      if (cResult[2] === tmp4) {
+        let tmp6 = cResult[3];
+      }
+      return tmp6;
+    }
+  }
+  let substr;
+  if (arr != null) {
+    substr = arr.slice(0, arr.length - 2);
+  }
+  let hexWithOpacityResult = token;
+  if (null != substr) {
+    hexWithOpacityResult = token;
+    if (arr !== closure_3) {
+      const tmpResult = tmp(4608);
+      let num3 = 0.08;
+      if (tmpResult2.isThemeDark(tmp4)) {
+        num3 = 0.12;
+      }
+      hexWithOpacityResult = tmpResult.hexWithOpacity(substr, num3);
+      tmpResult2 = tmp(4610);
+    }
+  }
+  cResult[0] = arr;
+  cResult[1] = token;
+  cResult[2] = tmp4;
+  cResult[3] = hexWithOpacityResult;
+  tmp6 = hexWithOpacityResult;
+}) : ((arr) => {
   const tmp2 = useThemeDefault();
   const token = useToken.useToken(nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE);
   let substr;
@@ -25,14 +60,14 @@ export default function usePressUnderlayColor(arr) {
   if (null != substr) {
     hexWithOpacityResult = token;
     if (arr !== closure_3) {
-      const tmp3Result = tmp3(4605);
+      const tmp3Result = tmp3(4608);
       let num3 = 0.08;
       if (tmp3Result2.isThemeDark(tmp2)) {
         num3 = 0.12;
       }
       hexWithOpacityResult = tmp3Result.hexWithOpacity(substr, num3);
-      tmp3Result2 = tmp3(4607);
+      tmp3Result2 = tmp3(4610);
     }
   }
   return hexWithOpacityResult;
-};
+});

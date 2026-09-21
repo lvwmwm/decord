@@ -1,18 +1,42 @@
-// Module ID: 9411
-// Function ID: 9412
+// Module ID: 9409
+// Function ID: 9410
 // Name: useNSFWAllowed
-// Dependencies: [1372, 504, 2]
-// Exports: useNSFWAllowed
+// Dependencies: [1376, 558, 568, 504, 2]
 
-// Module 9411 (useNSFWAllowed)
+// Module 9409 (useNSFWAllowed)
 import initialize from "initialize" /* 504 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/useNSFWAllowed.tsx");
 
-export const useNSFWAllowed = function useNSFWAllowed() {
+export const useNSFWAllowed = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function s() {
+      currentUser = currentUser.getCurrentUser();
+      let nsfwAllowed;
+      if (currentUser != null) {
+        nsfwAllowed = currentUser.nsfwAllowed;
+      }
+      if (nsfwAllowed == null) {
+        nsfwAllowed = null;
+      }
+      return nsfwAllowed;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [UserStore];
   return initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -25,4 +49,4 @@ export const useNSFWAllowed = function useNSFWAllowed() {
     }
     return nsfwAllowed;
   });
-};
+});

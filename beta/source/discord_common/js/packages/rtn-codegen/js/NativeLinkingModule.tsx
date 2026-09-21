@@ -1,9 +1,9 @@
-// Module ID: 4449
-// Function ID: 4450
+// Module ID: 4453
+// Function ID: 4454
 // Name: NativeLinkingModule
 // Dependencies: [17, 2]
 
-// Module 4449 (NativeLinkingModule)
+// Module 4453 (NativeLinkingModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

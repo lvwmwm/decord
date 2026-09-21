@@ -1,42 +1,64 @@
 // Module ID: 4266
 // Function ID: 4267
-// Dependencies: [3849, 3845, 3846]
+// Dependencies: [3850, 3854]
 // Exports: default
 
 // Module 4266
-import module_3849_mod from "module_3849" /* 3849 */;
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _mod3854 from "module_3854" /* 3854 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
-let module_3849 = module_3849_mod;
-if (!module_3849) {
-  const obj = { default: module_3849 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3849;
-}
-module_3849 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
-} else {
-  tmp5 = _typeof;
-}
-_typeof = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  let obj = { default: requiredArgs };
+  let tmp3 = obj;
 } else {
-  tmp7 = requiredArgs;
+  tmp3 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp3;
 
-export default function setMilliseconds(module_3849, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(module_3849);
-  defaultResult1.setMilliseconds(module_3849.default(arg1));
-  return defaultResult1;
+export default function setDefaultOptions(obj) {
+  requiredArgs.default(1, arguments);
+  obj = {};
+  const defaultOptions = _mod3854.getDefaultOptions();
+  for (const key10017 in defaultOptions) {
+    let _Object = Object;
+    hasOwnProperty = Object.prototype.hasOwnProperty;
+    let call = hasOwnProperty.call;
+    if (typeof call === "unknown") {
+      let hasOwnPropertyResult = hasOwnProperty(key10017);
+    } else {
+      hasOwnPropertyResult = call(defaultOptions, key10017);
+    }
+    if (!hasOwnPropertyResult) {
+      continue;
+    } else {
+      obj[key10017] = defaultOptions[key10017];
+      continue;
+    }
+    continue;
+  }
+  for (const key10023 in arg0) {
+    let _Object2 = Object;
+    let call2 = hasOwnProperty2.call;
+    if (typeof call2 === "unknown") {
+      let hasOwnProperty2Result = hasOwnProperty2(key10023);
+    } else {
+      hasOwnProperty2Result = call2(arg0, key10023);
+    }
+    if (!hasOwnProperty2Result) {
+      continue;
+    } else {
+      if (undefined === arg0[key10023]) {
+        delete tmp[tmp2];
+        continue;
+      } else {
+        obj[key10023] = arg0[key10023];
+        continue;
+      }
+      continue;
+    }
+    continue;
+  }
+  _mod3854.setDefaultOptions(obj);
 };
 export default exports.default;

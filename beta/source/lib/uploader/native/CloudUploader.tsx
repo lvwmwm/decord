@@ -1,21 +1,21 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8086
+// Function ID: 8087
 // Name: CloudUploader
-// Dependencies: [5, 17, 1074, 4749, 3, 8082, 7997, 1115, 8083, 5392, 8084, 1364, 8085, 5343, 5344, 12, 2]
+// Dependencies: [5, 17, 1078, 4751, 3, 8087, 8002, 1119, 8088, 5394, 8089, 1368, 8090, 5345, 5346, 12, 2]
 
-// Module 8081 (CloudUploader)
+// Module 8086 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import Upload from "Upload" /* 5344 */;
+import Upload from "Upload" /* 5346 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UploaderBase from "UploaderBase" /* 8082 */;
+import UploaderBase from "UploaderBase" /* 8087 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AbortCodes: closure_4, NOOP: hasOwnProperty } = Constants);
-const FileUploadErrorTypes = fn(4749).FileUploadErrorTypes;
+const FileUploadErrorTypes = fn(4751).FileUploadErrorTypes;
 let closure_7 = new LoggerDefault("CloudUploader(Native).tsx");
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.MediaManager);
 class CloudUploader extends tmp6 {
@@ -47,7 +47,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -69,7 +69,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             closure_130_4 = undefined;
             closure_130_5 = undefined;
             let uploadTarget;
-            closure_130_0 = files(7997).backgroundTaskIdentifierInvalid;
+            closure_130_0 = files(8002).backgroundTaskIdentifierInvalid;
             self.once("start", tmp4(function*(arg0, value) {
               if (c2 === 2) {
                 c2 = 3;
@@ -81,7 +81,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -96,13 +96,13 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                       return obj3;
                     } else {
                       const obj4 = { title: null, content: null };
-                      const intl = closure_2_0(1115).intl;
-                      obj4.title = intl.string(closure_2_0(1115).t["B/HSDd"]);
-                      const intl2 = closure_2_0(1115).intl;
+                      const intl = closure_2_0(1119).intl;
+                      obj4.title = intl.string(closure_2_0(1119).t["B/HSDd"]);
+                      const intl2 = closure_2_0(1119).intl;
                       const obj5 = { count: length.length };
-                      obj4.content = intl2.formatToPlainString(closure_2_0(1115).t.D0noUt, obj5);
+                      obj4.content = intl2.formatToPlainString(closure_2_0(1119).t.D0noUt, obj5);
                       c2 = 1;
-                      const obj7 = { value: files(7997).startBackgroundTask(obj4), done: false };
+                      const obj7 = { value: files(8002).startBackgroundTask(obj4), done: false };
                       return obj7;
                     }
                   } else if (arg0 === 1) {
@@ -115,11 +115,11 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
                   } else {
                     closure_128_0 = value;
                     if (tmp2._aborted) {
-                      files(7997).endBackgroundTask(closure_128_0);
-                      const obj = files(7997);
+                      files(8002).endBackgroundTask(closure_128_0);
+                      const obj = files(8002);
                     }
                     c2 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp13) {
                   c2 = tmp;
@@ -198,7 +198,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
           closure_130_3 = closure_130_3 + closure_130_5;
           closure_131_0._file.totalPreCompressionSize = closure_130_3;
           closure_131_0._file.currentSize = closure_130_3;
-          uploadTarget = _self(5392).getUploadTarget(closure_130_4.item.target);
+          uploadTarget = _self(5394).getUploadTarget(closure_130_4.item.target);
           if (closure_130_5 > uploadTarget.getMaxFileSize(closure_130_4.channelId)) {
             const obj6 = { code: tmp61.ENTITY_TOO_LARGE, reason: null };
             let obj7 = { type: constants.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
@@ -226,7 +226,7 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
             if (_self === undefined) {
               const _HermesInternal2 = HermesInternal;
               logger.log("" + closure_131_0.id + " queued");
-              files(8084).enqueue(() => {
+              files(8089).enqueue(() => {
                 closure_1_0.startUpload();
                 return closure_1_0;
               });
@@ -239,11 +239,11 @@ prototype["uploadFiles"] = function uploadFiles(arg0) {
               closure_130_4 = tmp47;
               constants = 3;
               logger = 1;
-              const obj14 = { value: _self(8083).getPreCompressionFileSize(closure_130_4.item), done: false };
+              const obj14 = { value: _self(8088).getPreCompressionFileSize(closure_130_4.item), done: false };
               return obj14;
             }
           }
-          const obj15 = _self(5392);
+          const obj15 = _self(5394);
         }
       } catch (tmp61) {
         if (tmp5 === c5) {
@@ -271,7 +271,7 @@ prototype["startUpload"] = function startUpload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -356,7 +356,7 @@ prototype["startUpload"] = function startUpload() {
           } else {
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
           const _HermesInternal2 = HermesInternal;
           logger.log("All uploads cancelled for " + closure_129_0.id);

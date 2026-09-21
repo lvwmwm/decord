@@ -1,11 +1,11 @@
-// Module ID: 2035
-// Function ID: 2036
+// Module ID: 2039
+// Function ID: 2040
 // Name: UserRequiredActionStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 2035 (UserRequiredActionStore)
+// Module 2039 (UserRequiredActionStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 function handleRequiredAction(requiredAction) {
   requiredAction = requiredAction.requiredAction;

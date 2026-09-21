@@ -1,26 +1,62 @@
-// Module ID: 15689
-// Function ID: 15690
+// Module ID: 15678
+// Function ID: 15679
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [4748, 8233, 504, 14717, 11725, 1115, 2]
+// Dependencies: [4750, 8238, 558, 568, 504, 14720, 11594, 1119, 2]
 
-// Module 15689 (SyncReducedMotionWithDeviceSetting)
+// Module 15678 (SyncReducedMotionWithDeviceSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14717 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14720 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function o() {
+      return "auto" === AccessibilityStore.rawPrefersReducedMotion;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [AccessibilityStore];
+  return initialize.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);
+});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["St+DJK"]);
   },
-  parent: fn(8233).MobileUserSettings.ACCESSIBILITY,
-  useValue: function useReducedMotionSyncSettingValue() {
+  parent: fn(8238).MobileUserSettings.ACCESSIBILITY,
+  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [AccessibilityStore];
+      const fn = function o() {
+        return "auto" === AccessibilityStore.rawPrefersReducedMotion;
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [AccessibilityStore];
     return initialize.useStateFromStores(items, () => "auto" === AccessibilityStore.rawPrefersReducedMotion);
-  },
+  }),
   onValueChange: function onReducedMotionSyncSettingValueChange(arg0) {
     let str = "auto";
     if (!arg0) {

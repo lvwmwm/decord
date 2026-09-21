@@ -1,11 +1,11 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17815
+// Function ID: 17816
 // Name: InstantInviteManager
-// Dependencies: [7363, 4454, 1115, 2]
+// Dependencies: [7365, 4458, 1119, 2]
 
-// Module 17812 (InstantInviteManager)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+// Module 17815 (InstantInviteManager)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
 const prototype = function InstantInviteManager() {
@@ -18,8 +18,8 @@ const prototype = function InstantInviteManager() {
   };
   applyArgumentsResult.shareInviteFailed = function shareInviteFailed() {
     const obj2 = { key: "GROUP_DM_ADD_ERROR", content: null };
-    const intl = applyArgumentsResult(1115).intl;
-    obj2.content = intl.string(applyArgumentsResult(1115).t["N/9OFy"]);
+    const intl = applyArgumentsResult(1119).intl;
+    obj2.content = intl.string(applyArgumentsResult(1119).t["N/9OFy"]);
     ToastActionCreatorsDefault.open(obj2);
   };
   return applyArgumentsResult;

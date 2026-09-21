@@ -1,21 +1,17 @@
 // Module ID: 7278
 // Function ID: 7279
-// Dependencies: [19, 7272]
-// Exports: useCardAnimation
+// Dependencies: []
+// Exports: findLastIndex
 
 // Module 7278
-import CardAnimationContext from "CardAnimationContext" /* 7272 */;
-import noop from "module_19" /* 19 */;
 
-require = arg1;
-
-export const useCardAnimation = function useCardAnimation() {
-  const context = noop.useContext(CardAnimationContext.CardAnimationContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const error = new Error("Couldn't find values for card animation. Are you inside a screen in Stack?");
-    throw error;
-  } else {
-    return context;
+export const findLastIndex = function findLastIndex(arg0, fn) {
+  let diff = arg0.length - 1;
+  if (0 <= diff) {
+    while (!fn(arg0[diff])) {
+      diff = diff - 1;
+    }
+    return diff;
   }
+  return -1;
 };

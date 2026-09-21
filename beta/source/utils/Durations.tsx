@@ -1,9 +1,9 @@
-// Module ID: 1091
-// Function ID: 1092
+// Module ID: 1095
+// Function ID: 1096
 // Name: Durations
 // Dependencies: [2]
 
-// Module 1091 (Durations)
+// Module 1095 (Durations)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/Durations.tsx");

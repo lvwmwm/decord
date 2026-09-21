@@ -1,26 +1,62 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15735
+// Function ID: 15736
 // Name: TextAndMediaSyncSetting
-// Dependencies: [1183, 8233, 504, 11725, 1115, 9472, 2]
+// Dependencies: [1187, 8238, 558, 568, 504, 11594, 1119, 9470, 2]
 
-// Module 15746 (TextAndMediaSyncSetting)
+// Module 15735 (TextAndMediaSyncSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9472 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9470 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1187 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const ReactCompilerGating = fn(558);
+const SettingBuilders = fn(11594);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [SelectivelySyncedUserSettingsStore];
+    const fn = function s() {
+      return SelectivelySyncedUserSettingsStore.shouldSync("text");
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
+  const items = [SelectivelySyncedUserSettingsStore];
+  return initialize.useStateFromStores(items, () => SelectivelySyncedUserSettingsStore.shouldSync("text"));
+});
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["3340dY"]);
   },
-  parent: fn(8233).MobileUserSettings.CHAT,
-  useValue: function useTextAndMediaSyncSettingValue() {
+  parent: fn(8238).MobileUserSettings.CHAT,
+  useValue: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const items = [SelectivelySyncedUserSettingsStore];
+      const fn = function s() {
+        return SelectivelySyncedUserSettingsStore.shouldSync("text");
+      };
+      cResult[0] = items;
+      cResult[1] = fn;
+      tmp4 = items;
+      tmp5 = fn;
+    } else {
+      [tmp4, tmp5] = cResult;
+    }
+    return initialize.useStateFromStores(tmp4, tmp5);
+  }) : (() => {
     const items = [SelectivelySyncedUserSettingsStore];
     return initialize.useStateFromStores(items, () => SelectivelySyncedUserSettingsStore.shouldSync("text"));
-  },
+  }),
   onValueChange: UserSettingsActionCreatorsDefault.setShouldSyncTextSettings
 });
 const size = fn(2);

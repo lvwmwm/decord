@@ -1,16 +1,16 @@
-// Module ID: 4396
-// Function ID: 4397
+// Module ID: 4400
+// Function ID: 4401
 // Name: LurkingStore
-// Dependencies: [2059, 2105, 2063, 1372, 1074, 504, 573, 2]
+// Dependencies: [2063, 2109, 2067, 1376, 1078, 504, 577, 2]
 
-// Module 4396 (LurkingStore)
+// Module 4400 (LurkingStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GuildRecord from "GuildRecord" /* 2063 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;
@@ -36,7 +36,7 @@ prototype["mostRecentLurkedGuildId"] = function mostRecentLurkedGuildId() {
   return tmp;
 };
 prototype["isLurking"] = function isLurking(guildId) {
-  const guild = GuildStore.getGuild(guildId);
+  guild = GuildStore.getGuild(guildId);
   if (null == guild) {
     return false;
   } else {

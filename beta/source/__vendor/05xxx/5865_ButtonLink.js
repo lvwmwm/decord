@@ -1,11 +1,11 @@
 // Module ID: 5865
 // Function ID: 5866
 // Name: ButtonLink
-// Dependencies: [19, 17, 21, 1485, 5857, 5866, 5867]
+// Dependencies: [19, 17, 21, 1489, 5857, 5866, 5867]
 // Exports: Button
 
 // Module 5865 (ButtonLink)
-import Link from "Link" /* 1485 */;
+import Link from "Link" /* 1489 */;
 import ColorDefault from "Color" /* 5857 */;
 import _mod5866 from "module_5866" /* 5866 */;
 import Text from "Text" /* 5867 */;

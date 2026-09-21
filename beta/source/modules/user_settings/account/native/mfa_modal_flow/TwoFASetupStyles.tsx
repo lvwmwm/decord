@@ -1,13 +1,13 @@
-// Module ID: 15063
-// Function ID: 15064
+// Module ID: 15052
+// Function ID: 15053
 // Name: TwoFASetupStyles
-// Dependencies: [1074, 4756, 5741, 576, 2]
+// Dependencies: [1078, 4758, 5743, 580, 2]
 
-// Module 15063 (TwoFASetupStyles)
-import nativeDefault from "native" /* 576 */;
-import Constants from "Constants" /* 1074 */;
-import createStyles from "createStyles" /* 4756 */;
-import TextStyles from "TextStyles" /* 5741 */;
+// Module 15052 (TwoFASetupStyles)
+import nativeDefault from "native" /* 580 */;
+import Constants from "Constants" /* 1078 */;
+import createStyles from "createStyles" /* 4758 */;
+import TextStyles from "TextStyles" /* 5743 */;
 import size from "module_2" /* 2 */;
 
 const obj = { text: { textAlign: "center", marginLeft: 20, marginRight: 20 }, modalHeader: null, modalBody: null };

@@ -1,9 +1,9 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8089
+// Function ID: 8090
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 8084 (UploaderQueue)
+// Module 8089 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -42,7 +42,7 @@ prototype["drainQueue"] = function drainQueue() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -67,7 +67,7 @@ prototype["drainQueue"] = function drainQueue() {
               tmp3.log("drainQueue() - No uploads left, setting drainingQueue to false");
               self.drainingQueue = false;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               c3 = 1;
               tmp3.log("drainQueue() - start uploader");

@@ -1,10 +1,10 @@
-// Module ID: 1083
-// Function ID: 1084
+// Module ID: 1087
+// Function ID: 1088
 // Name: utils/PathUtils
 // Dependencies: [2]
 // Exports: getLoginPath, wrapPaths
 
-// Module 1083 (utils/PathUtils)
+// Module 1087 (utils/PathUtils)
 import size from "module_2" /* 2 */;
 
 function getAuthenticationPath(login, arg1, flag, arg3) {

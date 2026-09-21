@@ -1,11 +1,12 @@
-// Module ID: 16209
-// Function ID: 16210
+// Module ID: 16198
+// Function ID: 16199
 // Name: ReactCompilerSetting
-// Dependencies: [11725, 15839, 2]
+// Dependencies: [11594, 15828, 558, 2]
 
-// Module 16209 (ReactCompilerSetting)
-import WrenchIcon from "WrenchIcon" /* 15839 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+// Module 16198 (ReactCompilerSetting)
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import WrenchIcon from "WrenchIcon" /* 15828 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
 const obj = {
@@ -15,10 +16,14 @@ const obj = {
   parent: null,
   IconComponent: WrenchIcon.WrenchIcon,
   useTrailing() {
-    return "Enabled";
+    let str = "Disabled";
+    if (obj.isReactCompilerEnabled()) {
+      str = "Enabled";
+    }
+    return str;
   },
   usePredicate() {
-    return false;
+    return ReactCompilerGating.isReactCompilerBuild();
   }
 };
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
@@ -30,9 +35,13 @@ export default SettingBuilders.createStatic({
   parent: null,
   IconComponent: WrenchIcon.WrenchIcon,
   useTrailing() {
-    return "Enabled";
+    let str = "Disabled";
+    if (obj.isReactCompilerEnabled()) {
+      str = "Enabled";
+    }
+    return str;
   },
   usePredicate() {
-    return false;
+    return ReactCompilerGating.isReactCompilerBuild();
   }
 });

@@ -1,24 +1,24 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10074
+// Function ID: 10075
 // Name: UserSearchManager
-// Dependencies: [2045, 1386, 2041, 2105, 4405, 1372, 1074, 4600, 1385, 1255, 7363, 10096, 1370, 1231, 12, 11, 2]
+// Dependencies: [2049, 1390, 2045, 2109, 4409, 1376, 1078, 4603, 1389, 1259, 7365, 10075, 1374, 1235, 12, 11, 2]
 
-// Module 10095 (UserSearchManager)
+// Module 10074 (UserSearchManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1074 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import UserSearchWorkerManager from "UserSearchWorkerManager" /* 10096 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import Constants from "Constants" /* 1078 */;
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import FlagUtilsAll from "FlagUtils" /* 1389 */;
+import ChannelRecord from "ChannelRecord" /* 2049 */;
+import UserUtilsDefault from "UserUtils" /* 4603 */;
+import UserSearchWorkerManager from "UserSearchWorkerManager" /* 10075 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 import size from "module_2" /* 2 */;
 
 function getTransformedUser(user) {
@@ -956,7 +956,7 @@ prototype2["getUserSearchContext"] = function getUserSearchContext(parseUserResu
       }
     };
     obj._worker = _worker;
-    obj._uuid = obj(1255).v4();
+    obj._uuid = obj(1259).v4();
     obj._callback = parseUserResults;
     obj._limit = num;
     obj._currentQuery = null;

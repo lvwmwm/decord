@@ -1,18 +1,18 @@
-// Module ID: 14249
-// Function ID: 14250
+// Module ID: 14252
+// Function ID: 14253
 // Name: ProductCatalog
-// Dependencies: [1374, 3, 14250, 8096, 9473, 14251, 1380, 14252, 1378, 2]
+// Dependencies: [1378, 3, 14253, 8101, 9471, 14254, 1384, 14255, 1382, 2]
 // Exports: canUserUse
 
-// Module 14249 (ProductCatalog)
+// Module 14252 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
-import user from "user" /* 1380 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8096 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9473 */;
-import SKUListingDefault from "SKUListing" /* 14251 */;
-import DenormalizedPerksReadExperimentDefault from "DenormalizedPerksReadExperiment" /* 14252 */;
-import PremiumConstants from "PremiumConstants" /* 1374 */;
-import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 14250 */;
+import user from "user" /* 1384 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9471 */;
+import SKUListingDefault from "SKUListing" /* 14254 */;
+import DenormalizedPerksReadExperimentDefault from "DenormalizedPerksReadExperiment" /* 14255 */;
+import PremiumConstants from "PremiumConstants" /* 1378 */;
+import PremiumSKUFeature_mod from "PremiumSKUFeature" /* 14253 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = require;
@@ -1109,14 +1109,14 @@ export const canUserUse = function canUserUse(COLLECTIBLES, isPremiumWithFractio
     }
     if (null != perks) {
       const config = DenormalizedPerksReadExperimentDefault.getConfig({ location: "product_catalog_can_user_use" });
-      if (config !== closure_0(14252).DenormalizedPerksReadConfig.CONTROL) {
+      if (config !== closure_0(14255).DenormalizedPerksReadConfig.CONTROL) {
         let featureValue = COLLECTIBLES.getFeatureValue(isPremiumWithFractionalPremiumOnly);
         let perks1;
         if (isPremiumWithFractionalPremiumOnly != null) {
           perks1 = isPremiumWithFractionalPremiumOnly.perks;
         }
-        const tmp9Result = tmp9(1378);
-        if (config === tmp9(14252).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
+        const tmp9Result = tmp9(1382);
+        if (config === tmp9(14255).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
           featureValue = hasPerkResult;
         }
         return featureValue;

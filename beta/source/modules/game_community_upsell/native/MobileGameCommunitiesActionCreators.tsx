@@ -1,17 +1,17 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16606
+// Function ID: 16607
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 13981, 15900, 1074, 13982, 15901, 1271, 1472, 573, 504, 1091, 2]
+// Dependencies: [5, 13984, 15889, 1078, 13985, 15890, 1275, 1476, 577, 504, 1095, 2]
 // Exports: dismissGuild
 
-// Module 16605 (MobileGameCommunitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef1472 from "module_1472" /* 1472 */;
+// Module 16606 (MobileGameCommunitiesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import _modDef1476 from "module_1476" /* 1476 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13981 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15900 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13984 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15889 */;
 
 require = fn;
 let closure_7 = async function _fetchDetectedGameCommunities(arg0, value) {
@@ -25,7 +25,7 @@ let closure_7 = async function _fetchDetectedGameCommunities(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -57,7 +57,7 @@ let closure_7 = async function _fetchDetectedGameCommunities(arg0, value) {
           const obj4 = { game_ids: tmp19, limit: 20, ignored_guild_ids: null };
           const _Array = Array;
           obj4.ignored_guild_ids = Array.from(dismissedGuildIds.getDismissedGuildIds());
-          request.query = _modDef1472.stringify(obj4);
+          request.query = _modDef1476.stringify(obj4);
           c2 = 1;
           c3 = 1;
           const obj5 = { value: HTTP.get(request), done: false };
@@ -75,7 +75,7 @@ let closure_7 = async function _fetchDetectedGameCommunities(arg0, value) {
         const obj7 = { type: "MOBILE_GAME_COMMUNITIES_FETCH_SUCCESS", guilds, gameIds: closure_128_0 };
         closure_129_1(closure_129_2[8]).dispatch(obj7);
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp14) {
       c3 = tmp;
@@ -83,7 +83,7 @@ let closure_7 = async function _fetchDetectedGameCommunities(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const initialize = fn(504);
 let obj2 = {
   getQueryId(arg0) {
@@ -111,7 +111,7 @@ let closure_8 = asyncGeneratorStep(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -155,7 +155,7 @@ let closure_8 = asyncGeneratorStep(async (arg0, value) => {
         return obj;
       }
       c0 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     } catch (tmp8) {
       c0 = tmp;
       throw tmp8;

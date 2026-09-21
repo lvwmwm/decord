@@ -1,22 +1,119 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11112
+// Function ID: 11113
 // Name: HeadlessSlayerStorefrontPurchaseRunner
-// Dependencies: [19, 7666, 1074, 1241, 11076, 1364, 2]
-// Exports: HeadlessSlayerStorefrontPurchaseRunner
+// Dependencies: [19, 7668, 1078, 558, 568, 1245, 1368, 11113, 2]
 
-// Module 11075 (HeadlessSlayerStorefrontPurchaseRunner)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+// Module 11112 (HeadlessSlayerStorefrontPurchaseRunner)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let useNativeCheckoutStore = fn(7666).useNativeCheckoutStore;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+let useNativeCheckoutStore = fn(7668).useNativeCheckoutStore;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/headless_components/HeadlessSlayerStorefrontPurchaseRunner.tsx");
 
-export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerStorefrontPurchaseRunner(attempt) {
+export const HeadlessSlayerStorefrontPurchaseRunner = ReactCompilerGating.isReactCompilerEnabled() ? ((onPurchaseComplete) => {
+  const cResult = attempt(onPurchaseError[4]).c(27);
+  ({ skuId, sku, analyticsLocations, attempt } = onPurchaseComplete);
+  onPurchaseComplete = onPurchaseComplete.onPurchaseComplete;
+  onPurchaseError = onPurchaseComplete.onPurchaseError;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s(analyticsFields) {
+      return analyticsFields.analyticsFields;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp4 = useNativeCheckoutStore(first);
+  noop = tmp4;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor(arg0) {
+        return onPurchaseComplete.setCheckoutFailed;
+      }
+    }
+    cResult[1] = P;
+    const tmp5 = P;
+  } else {
+    class P {
+      constructor(arg0) {
+        return onPurchaseComplete.setCheckoutFailed;
+      }
+    }
+  }
+  const tmp3Result = useNativeCheckoutStore(tmp5);
+  useNativeCheckoutStore = tmp3Result;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor(arg0) {
+        return onPurchaseComplete.orderRecord;
+      }
+    }
+    cResult[2] = S;
+    const tmp7 = S;
+  } else {
+    class S {
+      constructor(arg0) {
+        return onPurchaseComplete.orderRecord;
+      }
+    }
+  }
+  let obj = attempt(onPurchaseError[4]);
+  closure_5 = useNativeCheckoutStore(tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor(arg0) {
+        return onPurchaseComplete.orderRequired;
+      }
+    }
+    cResult[3] = C;
+    const tmp9 = C;
+  } else {
+    class C {
+      constructor(arg0) {
+        return onPurchaseComplete.orderRequired;
+      }
+    }
+  }
+  const tmp3Result3 = useNativeCheckoutStore(tmp7);
+  closure_6 = useNativeCheckoutStore(tmp9);
+  noop.useRef(false);
+  if (cResult[4] === tmp4) {
+    class C {
+      constructor(arg0) {
+        return onPurchaseComplete.orderRequired;
+      }
+    }
+  }
+  class L {
+    constructor() {
+      if (!closure_7.current) {
+        flag = true;
+        tmp.current = true;
+        tmp2 = closure_1;
+        tmp3 = closure_2;
+        obj = closure_1(closure_2[5]);
+        tmp4 = AnalyticEvents;
+        tmp5 = closure_3;
+        trackResult = obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_3);
+        tmp7 = closure_4;
+        tmp8 = closure_4();
+      }
+      tmp9 = onPurchaseError();
+      return;
+    }
+  }
+  cResult[4] = tmp4;
+  cResult[5] = onPurchaseError;
+  cResult[6] = tmp3Result;
+  cResult[7] = L;
+}) : ((attempt) => {
   attempt = attempt.attempt;
   ({ onPurchaseComplete: importDefault, onPurchaseError } = attempt);
   useNativeCheckoutStore = undefined;
@@ -78,4 +175,4 @@ export const HeadlessSlayerStorefrontPurchaseRunner = function HeadlessSlayerSto
     }
   }, items1);
   return null;
-};
+});

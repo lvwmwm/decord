@@ -1,11 +1,11 @@
 // Module ID: 4208
 // Function ID: 4209
-// Dependencies: [4200, 3846]
+// Dependencies: [4200, 3850]
 // Exports: default
 
 // Module 4208
 import module_4200_mod from "module_4200" /* 4200 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import requiredArgs_mod from "requiredArgs" /* 3850 */;
 
 let module_4200 = module_4200_mod;
 if (!module_4200) {
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isThisYear(arg0) {
+export default function isThisMonth(arg0) {
   requiredArgs.default(1, arguments);
-  return module_4200.default(arg0, Date.now());
+  return module_4200.default(Date.now(), arg0);
 };
 export default exports.default;

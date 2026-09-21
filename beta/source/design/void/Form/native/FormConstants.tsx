@@ -1,16 +1,16 @@
-// Module ID: 1181
-// Function ID: 1182
+// Module ID: 1185
+// Function ID: 1186
 // Name: FormConstants
-// Dependencies: [1182, 1364, 576, 4735, 4607, 2]
+// Dependencies: [1186, 1368, 580, 4737, 4610, 2]
 // Exports: getThemedRippleConfig
 
-// Module 1181 (FormConstants)
-import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4607 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+// Module 1185 (FormConstants)
+import nativeDefault from "native" /* 580 */;
+import shared from "shared" /* 4610 */;
+import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
-const PlatformUtils = fn(1364);
+const PlatformUtils = fn(1368);
 let num = 24;
 if (PlatformUtils.isAndroid()) {
   num = 32;
@@ -19,7 +19,7 @@ const internal = nativeDefault.internal;
 const semanticColor = internal.resolveSemanticColor(nativeDefault.themes.DARK, nativeDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
 const internal2 = nativeDefault.internal;
 const semanticColor1 = internal2.resolveSemanticColor(nativeDefault.themes.LIGHT, nativeDefault.colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
-const DeviceUtils = fn(4735);
+const DeviceUtils = fn(4737);
 const systemVersionMajor = DeviceUtils.getSystemVersionMajor();
 let frozen = Object.freeze({ foreground: true });
 let closure_6 = Object.freeze({});

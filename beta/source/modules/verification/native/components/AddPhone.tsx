@@ -1,29 +1,29 @@
-// Module ID: 7289
-// Function ID: 7290
+// Module ID: 7291
+// Function ID: 7292
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 7186, 2035, 1372, 1074, 1085, 21, 4756, 576, 504, 6833, 7290, 4656, 4752, 1115, 7291, 7206, 4959, 7292, 1980, 5186, 5109, 7322, 2]
+// Dependencies: [5, 32, 19, 17, 7184, 2039, 1376, 1078, 1089, 21, 4758, 580, 504, 6831, 7292, 4659, 4754, 1119, 7293, 7204, 4961, 7294, 1984, 5188, 5111, 7324, 2]
 // Exports: default
 
-// Module 7289 (AddPhone)
-import nativeDefault from "native" /* 576 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+// Module 7291 (AddPhone)
+import nativeDefault from "native" /* 580 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7186 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
-import UserStore from "UserStore" /* 1372 */;
+import PhoneStore from "PhoneStore" /* 7184 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const UserFlags = fn(1074).UserFlags;
-const NOOP_NULL = fn(1085).NOOP_NULL;
+const UserFlags = fn(1078).UserFlags;
+const NOOP_NULL = fn(1089).NOOP_NULL;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { background: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: { padding: 16, flex: 1 }, title: { textAlign: "center" }, input: { marginTop: 24 }, redesignInput: null, button: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.redesignInput = { borderRadius: nativeDefault.radii.lg };
@@ -54,7 +54,7 @@ export default function AddPhone(reason) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

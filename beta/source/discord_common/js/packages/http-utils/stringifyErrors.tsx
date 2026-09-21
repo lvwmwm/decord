@@ -1,9 +1,9 @@
-// Module ID: 1327
-// Function ID: 1328
+// Module ID: 1331
+// Function ID: 1332
 // Name: stringifyErrors
 // Dependencies: [2]
 
-// Module 1327 (stringifyErrors)
+// Module 1331 (stringifyErrors)
 import size from "module_2" /* 2 */;
 
 function stringifyErrors(message) {

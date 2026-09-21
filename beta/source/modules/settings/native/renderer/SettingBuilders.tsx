@@ -1,11 +1,11 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11594
+// Function ID: 11595
 // Name: SettingBuilders
-// Dependencies: [11726, 2]
+// Dependencies: [11595, 2]
 // Exports: createGuildSelector, createList, createPressable, createRadio, createRoute, createSegmentedControl, createSlider, createStatic, createToggle, createVolumeSlider
 
-// Module 11725 (SettingBuilders)
-import SettingRendererConstants from "SettingRendererConstants" /* 11726 */;
+// Module 11594 (SettingBuilders)
+import SettingRendererConstants from "SettingRendererConstants" /* 11595 */;
 import size from "module_2" /* 2 */;
 
 const NodeType = SettingRendererConstants.NodeType;
@@ -43,8 +43,8 @@ export const createRadio = function createRadio(arg0) {
   const merged = Object.assign(arg0);
   return { type: NodeType.RADIO };
 };
-export const createList = function createList(arg0) {
-  const merged = Object.assign(arg0);
+export const createList = function createList(list) {
+  const merged = Object.assign(list);
   return { type: NodeType.LIST };
 };
 export const createSegmentedControl = function createSegmentedControl(arg0) {

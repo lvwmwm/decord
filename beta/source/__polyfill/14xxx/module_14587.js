@@ -3,14 +3,27 @@
 // Dependencies: [14588]
 
 // Module 14587
-import _mod14588 from "module_14588" /* 14588 */;
+import module_14588_mod from "module_14588" /* 14588 */;
 
+const call = prototype.call;
+let module_14588 = module_14588_mod;
+if (module_14588) {
+  const bind = prototype.bind;
+  module_14588 = bind.bind(call, call);
+}
+if (!module_14588) {
+  module_14588 = (arg0) => {
+    closure_0 = arg0;
+    return () => {
+      const apply = call.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(tmp2);
+      } else {
+        applyArgumentsResult = apply(tmp2, arguments);
+      }
+      return applyArgumentsResult;
+    };
+  };
+}
 
-export default (arg0) => {
-  if (_mod14588(arg0)) {
-    const tmp4 = new TypeError("Can't call method on " + arg0);
-    throw tmp4;
-  } else {
-    return arg0;
-  }
-};
+export default module_14588;

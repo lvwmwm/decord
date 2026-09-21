@@ -1,9 +1,9 @@
 // Module ID: 16771
 // Function ID: 16772
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 16771
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 20, height: 20, scales: [2, 3], hash: "abac82ff1ac426da4eac76f9342c367b", name: "ic_person_waving", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notification_center/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "6840fde776aba6730d4f566b68c449e7", name: "ic_highlight", type: "png" });

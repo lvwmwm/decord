@@ -1,13 +1,13 @@
-// Module ID: 9600
-// Function ID: 9601
+// Module ID: 9596
+// Function ID: 9597
 // Name: ActivitiesInTextUtils
-// Dependencies: [2041, 4395, 1085, 1095, 504, 2]
-// Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
+// Dependencies: [2045, 4399, 1089, 1099, 558, 568, 504, 2]
+// Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled
 
-// Module 9600 (ActivitiesInTextUtils)
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 9596 (ActivitiesInTextUtils)
+import ChannelTypes from "ChannelTypes" /* 1099 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
 
 const require = globalThis.__r;
 
@@ -32,7 +32,83 @@ function isActivityInTextSupportedForChannel(channel) {
     return hasItem;
   }
 }
-const Permissions = fn(1085).Permissions;
+const Permissions = fn(1089).Permissions;
+fn(558);
+const ReactCompilerGating = fn(558);
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore, PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      const channel = ChannelStore.getChannel(closure_0);
+      let flag = false;
+      if (null != channel) {
+        flag = false;
+        if (undefined !== channel) {
+          flag = false;
+          if (isActivityInTextSupportedForChannel(channel)) {
+            flag = true;
+            if (null != channel.guild_id) {
+              flag = true;
+              if (!PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
+                flag = false;
+              }
+            }
+          }
+        }
+      }
+      return flag;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp7);
+}) : ((arg0) => {
+  _require = arg0;
+  const items = [ChannelStore, PermissionStore];
+  return require("initialize").useStateFromStores(items, () => {
+    const channel = ChannelStore.getChannel(closure_0);
+    let flag = false;
+    if (null != channel) {
+      flag = false;
+      if (undefined !== channel) {
+        flag = false;
+        if (isActivityInTextSupportedForChannel(channel)) {
+          flag = true;
+          if (null != channel.guild_id) {
+            flag = true;
+            if (!PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
+              flag = false;
+            }
+          }
+        }
+      }
+    }
+    return flag;
+  });
+});
+function getIsAppLauncherEnabled(channel) {
+  let guild_id;
+  if (channel != null) {
+    guild_id = channel.guild_id;
+  }
+  let tmp2 = null != guild_id;
+  if (!tmp2) {
+    tmp2 = isActivityInTextSupportedForChannel(channel);
+  }
+  return tmp2;
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
 
@@ -56,43 +132,45 @@ export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(chan
   }
   return flag;
 };
-export const useIsActivitiesInTextEnabled = function useIsActivitiesInTextEnabled(id) {
-  _require = id;
-  const items = [ChannelStore, PermissionStore];
-  return require("initialize").useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(closure_0);
-    let flag = false;
-    if (null != channel) {
-      flag = false;
-      if (undefined !== channel) {
-        flag = false;
-        if (isActivityInTextSupportedForChannel(channel)) {
-          flag = true;
-          if (null != channel.guild_id) {
-            flag = true;
-            if (!PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
-              flag = false;
-            }
-          }
+export const useIsActivitiesInTextEnabled = tmp2;
+export { getIsAppLauncherEnabled };
+export const useIsAppLauncherEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  _require = arg0;
+  const cResult = require("c").c(3);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      const channel = ChannelStore.getChannel(closure_0);
+      let tmp2 = null != channel;
+      if (tmp2) {
+        let guild_id;
+        if (channel != null) {
+          guild_id = channel.guild_id;
         }
+        let tmp4 = null != guild_id;
+        if (!tmp4) {
+          tmp4 = isActivityInTextSupportedForChannel(channel);
+        }
+        tmp2 = tmp4;
       }
-    }
-    return flag;
-  });
-};
-export const getIsAppLauncherEnabled = function getIsAppLauncherEnabled(channel) {
-  let guild_id;
-  if (channel != null) {
-    guild_id = channel.guild_id;
+      return tmp2;
+    };
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
   }
-  let tmp2 = null != guild_id;
-  if (!tmp2) {
-    tmp2 = isActivityInTextSupportedForChannel(channel);
-  }
-  return tmp2;
-};
-export const useIsAppLauncherEnabled = function useIsAppLauncherEnabled(id) {
-  _require = id;
+  const obj = require("c");
+  return require("initialize").useStateFromStores(first, tmp6);
+}) : ((arg0) => {
+  _require = arg0;
   const items = [ChannelStore];
   return require("initialize").useStateFromStores(items, () => {
     const channel = ChannelStore.getChannel(closure_0);
@@ -110,4 +188,4 @@ export const useIsAppLauncherEnabled = function useIsAppLauncherEnabled(id) {
     }
     return tmp2;
   });
-};
+});

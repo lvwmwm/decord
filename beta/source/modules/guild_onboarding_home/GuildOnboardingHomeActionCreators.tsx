@@ -1,19 +1,19 @@
-// Module ID: 12538
-// Function ID: 12539
+// Module ID: 12432
+// Function ID: 12433
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 2098, 2041, 4943, 4944, 1074, 573, 1271, 12539, 1241, 4767, 11, 2]
+// Dependencies: [5, 2102, 2045, 4945, 4946, 1078, 577, 1275, 12433, 1245, 4769, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 12538 (GuildOnboardingHomeActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import transitionToChannel from "transitionToChannel" /* 4767 */;
+// Module 12432 (GuildOnboardingHomeActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import transitionToChannel from "transitionToChannel" /* 4769 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4943 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4944 */;
+import ImpersonateStore from "ImpersonateStore" /* 2102 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4945 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4946 */;
 
 require = fn;
 let closure_10 = async function _fetchGuildHomeSettings(guildId) {
@@ -27,7 +27,7 @@ let closure_10 = async function _fetchGuildHomeSettings(guildId) {
     const HTTP = HTTPUtils.HTTP;
     await HTTP.get({ url: closure_2_9.GUILD_HOME_SETTINGS(guildId), oldFormErrors: true, rejectWithError: true });
     closure_130_1(closure_130_2[6]).dispatch({ type: "GUILD_HOME_SETTINGS_FETCH_FAIL", guildId: closure_129_0 });
-    closure_129_1 = await "HermesInternal";
+    closure_129_1 = await "IconComponent";
     closure_129_2 = closure_130_0(closure_130_2[8]).settingsFromServer(closure_129_1.body);
     closure_130_0(closure_130_2[8]);
     closure_130_1(closure_130_2[6]).dispatch({ type: "GUILD_HOME_SETTINGS_FETCH_SUCCESS", guildId: closure_129_0, homeSettings: closure_129_2 });
@@ -45,7 +45,7 @@ let closure_11 = async function _fetchNewMemberActions(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -70,7 +70,7 @@ let closure_11 = async function _fetchNewMemberActions(arg0, value) {
             DispatcherDefault.dispatch(obj6);
             c4 = 1;
             const HTTP = HTTPUtils.HTTP;
-            const obj7 = { url: React7.GUILD_MEMBER_ACTIONS(tmp37), oldFormErrors: true, rejectWithError: true };
+            const obj7 = { url: options.GUILD_MEMBER_ACTIONS(tmp37), oldFormErrors: true, rejectWithError: true };
             c5 = 2;
             c6 = 1;
             const obj8 = { value: HTTP.get(obj7), done: false };
@@ -139,7 +139,7 @@ let closure_12 = async function _clearNewMemberActions(guildId) {
     return value;
   })();
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingHomeActionCreators.tsx");
@@ -174,17 +174,17 @@ export const clearNewMemberActions = function clearNewMemberActions() {
   }
   return applyArgumentsResult;
 };
-export const selectHomeResourceChannel = function selectHomeResourceChannel(guildId, channelId) {
+export const selectHomeResourceChannel = function selectHomeResourceChannel(guild_id, channelId) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
   if (null != channelId) {
     const channel = ChannelStore.getChannel(channelId);
-    let isFullServerPreviewResult = null == guildId;
-    const resourceForChannel = GuildOnboardingHomeSettingsStore.getResourceForChannel(guildId, channelId);
+    let isFullServerPreviewResult = null == guild_id;
+    const resourceForChannel = GuildOnboardingHomeSettingsStore.getResourceForChannel(guild_id, channelId);
     if (!isFullServerPreviewResult) {
-      isFullServerPreviewResult = ImpersonateStore.isFullServerPreview(guildId);
+      isFullServerPreviewResult = ImpersonateStore.isFullServerPreview(guild_id);
     }
     if (!isFullServerPreviewResult) {
       isFullServerPreviewResult = null == channel;
@@ -193,7 +193,7 @@ export const selectHomeResourceChannel = function selectHomeResourceChannel(guil
       isFullServerPreviewResult = null == resourceForChannel;
     }
     if (!isFullServerPreviewResult) {
-      const obj2 = { guild_id: guildId, channel_id: channel.id, server_guide_channel_type: "resource", channel_action_type: -1 };
+      const obj2 = { guild_id, channel_id: channel.id, server_guide_channel_type: "resource", channel_action_type: -1 };
       AnalyticsUtilsDefault.track(constants.SERVER_GUIDE_CHANNEL_SELECTED, obj2);
     }
     if (flag) {
@@ -247,12 +247,12 @@ export const completeNewMemberAction = function completeNewMemberAction(guildId,
           }
           return hasItem;
         }, true);
-        tmp(1241).track(constants.SERVER_GUIDE_ACTION_COMPLETED, obj4);
-        const tmpResult2 = tmp(1241);
+        tmp(1245).track(constants.SERVER_GUIDE_ACTION_COMPLETED, obj4);
+        const tmpResult2 = tmp(1245);
       }
     }
     const HTTP = HTTPUtils.HTTP;
-    const obj5 = { url: React7.GUILD_MEMBER_ACTION_UPDATE(guildId, channelId), rejectWithError: true };
+    const obj5 = { url: options.GUILD_MEMBER_ACTION_UPDATE(guildId, channelId), rejectWithError: true };
     HTTP.post(obj5);
     obj3 = GuildOnboardingHomeSettingsStore;
   }

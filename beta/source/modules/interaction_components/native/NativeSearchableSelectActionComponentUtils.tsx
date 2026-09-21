@@ -1,31 +1,31 @@
-// Module ID: 8391
-// Function ID: 8392
+// Module ID: 8396
+// Function ID: 8397
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [2041, 2099, 2063, 1372, 1074, 4987, 1370, 1400, 7432, 8392, 1092, 576, 8393, 5239, 2]
+// Dependencies: [2045, 2103, 2067, 1376, 1078, 4989, 1374, 1404, 7434, 8397, 1096, 580, 8398, 5241, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8391 (NativeSearchableSelectActionComponentUtils)
-import nativeDefault from "native" /* 576 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 4987 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import _modDef8392 from "module_8392" /* 8392 */;
-import _modDef8393 from "module_8393" /* 8393 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 8396 (NativeSearchableSelectActionComponentUtils)
+import nativeDefault from "native" /* 580 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 4989 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
+import _modDef8397 from "module_8397" /* 8397 */;
+import _modDef8398 from "module_8398" /* 8398 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes: closure_7, DEFAULT_ROLE_COLOR: closure_8 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/native/NativeSearchableSelectActionComponentUtils.tsx");
 
 export const transformSearchableSelectOptions = function transformSearchableSelectOptions(initialSnowflakeSelectOptions, guildId) {
   _require = guildId;
-  const guild = GuildStore.getGuild(guildId);
+  guild = GuildStore.getGuild(guildId);
   const mapped = initialSnowflakeSelectOptions.map((type) => {
     type = type.type;
     if (InteractionComponentTypes.SelectOptionType.USER === type) {
@@ -34,12 +34,12 @@ export const transformSearchableSelectOptions = function transformSearchableSele
       if (null != user) {
         const obj = {};
         const merged = Object.assign(type);
-        obj.iconSrc = tmp(1400).ensureAvatarSource(user.getAvatarSource(closure_0, false)).uri;
+        obj.iconSrc = tmp(1404).ensureAvatarSource(user.getAvatarSource(closure_0, false)).uri;
         tmp34 = obj;
-        const tmpResult = tmp(1400);
+        const tmpResult = tmp(1404);
       }
       return tmp34;
-    } else if (tmp(4987).SelectOptionType.ROLE === type) {
+    } else if (tmp(4989).SelectOptionType.ROLE === type) {
       let role = null;
       if (null != closure_1) {
         role = GuildRoleStore.getRole(tmp14.id, type.value);
@@ -50,22 +50,22 @@ export const transformSearchableSelectOptions = function transformSearchableSele
         if (null != tmp14) {
           let roleIconData = null;
           if (tmpResult7.canGuildUseRoleIcons(tmp14, role)) {
-            roleIconData = tmp(7432).getRoleIconData(role);
-            const tmpResult8 = tmp(7432);
+            roleIconData = tmp(7434).getRoleIconData(role);
+            const tmpResult8 = tmp(7434);
           }
           if (null == roleIconData) {
             const obj2 = {};
             const merged1 = Object.assign(type);
-            obj2.iconSrc = tmp(1400).ensureAvatarSource(_modDef8392).uri;
+            obj2.iconSrc = tmp(1404).ensureAvatarSource(_modDef8397).uri;
             if (null != role.colorString) {
-              let hex2intResult = tmp(1092).hex2int(role.colorString);
-              const tmpResult10 = tmp(1092);
+              let hex2intResult = tmp(1096).hex2int(role.colorString);
+              const tmpResult10 = tmp(1096);
             } else {
-              hex2intResult = React6;
+              hex2intResult = closure_2_8;
             }
             obj2.iconColor = 4278190080 | hex2intResult;
             tmp18 = obj2;
-            const tmpResult9 = tmp(1400);
+            const tmpResult9 = tmp(1404);
           } else {
             ({ customIconSrc, unicodeEmoji } = roleIconData);
             if (null != unicodeEmoji) {
@@ -82,27 +82,27 @@ export const transformSearchableSelectOptions = function transformSearchableSele
               tmp18 = obj5;
             }
           }
-          tmpResult7 = tmp(7432);
+          tmpResult7 = tmp(7434);
         }
       }
       return tmp18;
-    } else if (tmp(4987).SelectOptionType.CHANNEL === type) {
+    } else if (tmp(4989).SelectOptionType.CHANNEL === type) {
       const channel = ChannelStore.getChannel(type.value);
       if (null == channel) {
         return type;
       } else {
         const obj6 = {};
         const merged4 = Object.assign(type);
-        let tmpResult11 = tmp(1400);
+        let tmpResult11 = tmp(1404);
         let hex2int = tmpResult11.ensureAvatarSource;
         if (channel.type === constants.GUILD_CATEGORY) {
-          let channelIconWithGuild = _modDef8393;
+          let channelIconWithGuild = _modDef8398;
         } else {
-          channelIconWithGuild = tmp(5239).getChannelIconWithGuild(channel, tmp4);
-          const tmpResult12 = tmp(5239);
+          channelIconWithGuild = tmp(5241).getChannelIconWithGuild(channel, tmp4);
+          const tmpResult12 = tmp(5241);
         }
         obj6.iconSrc = hex2int(channelIconWithGuild).uri;
-        tmpResult11 = tmp(1092);
+        tmpResult11 = tmp(1096);
         hex2int = tmpResult11.hex2int;
         obj6.iconColor = 4278190080 | hex2int(nativeDefault.unsafe_rawColors.PRIMARY_330);
       }
@@ -115,7 +115,7 @@ export const transformSearchableSelectOptions = function transformSearchableSele
 };
 export const getChannelIconData = function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = _modDef8393;
+    let channelIconWithGuild = _modDef8398;
   } else {
     channelIconWithGuild = utils_ChannelUtils.getChannelIconWithGuild(channel, guild);
   }

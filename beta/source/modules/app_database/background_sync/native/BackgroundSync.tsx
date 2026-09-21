@@ -1,26 +1,26 @@
-// Module ID: 17742
-// Function ID: 17743
+// Module ID: 17745
+// Function ID: 17746
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2045, 2041, 4771, 1979, 7721, 1074, 5719, 5676, 2063, 3, 1091, 510, 7997, 1364, 573, 1231, 1241, 2070, 1271, 11, 12, 7889, 7892, 7890, 13933, 15850, 7719, 1370, 7729, 2]
+// Dependencies: [32, 5, 2049, 2045, 4773, 1983, 7726, 1078, 5721, 5678, 2067, 3, 1095, 510, 8002, 1368, 577, 1235, 1245, 2074, 1275, 11, 12, 7894, 7897, 7895, 13936, 15839, 7724, 1374, 7734, 2]
 // Exports: backgroundSync
 
-// Module 17742 (background_sync/BackgroundSync)
+// Module 17745 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
-import modules_Messages from "modules/Messages" /* 7719 */;
-import GuildVersionsDefault from "GuildVersions" /* 7889 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7890 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7892 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import modules_Messages from "modules/Messages" /* 7724 */;
+import GuildVersionsDefault from "GuildVersions" /* 7894 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7895 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7897 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
-import FileSystemStore from "FileSystemStore" /* 7721 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
+import FileSystemStore from "FileSystemStore" /* 7726 */;
 
 require = fn;
 let closure_17 = async function _backgroundSync(arg0) {
@@ -39,7 +39,7 @@ let closure_17 = async function _backgroundSync(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let closure_17 = async function _backgroundSync(arg0) {
             closure_130_7 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp8) {
           if (arg0 === 1) {
@@ -276,7 +276,7 @@ let closure_20 = async function _backgroundSyncPrivateChannels(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -398,7 +398,7 @@ let closure_22 = async function _backgroundSyncGuildData(arg0, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -614,7 +614,7 @@ let closure_24 = async function _backgroundSyncGuildChannels(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     while (true) {
@@ -680,7 +680,7 @@ let closure_24 = async function _backgroundSyncGuildChannels(arg0, value) {
             let iter = sortByResult.slice(0, 25);
             let valueResult = iter.value();
             closure_145_5 = valueResult;
-            let verboseResult = value.verbose("Guild Message Background Syncing for ", valueResult.map((channelId) => channelId.channelId));
+            let verboseResult = state.verbose("Guild Message Background Syncing for ", valueResult.map((channelId) => channelId.channelId));
             if (0 !== valueResult.length) {
               let _Promise = Promise;
               c21 = 1;
@@ -689,7 +689,7 @@ let closure_24 = async function _backgroundSyncGuildChannels(arg0, value) {
               return obj6;
             }
           } else {
-            let logResult = value.log("Aborting BG sync because there is no database");
+            let logResult = state.log("Aborting BG sync because there is no database");
           }
         }
       } else {
@@ -911,7 +911,7 @@ let closure_26 = async function _processChannelChanges(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     while (true) {
@@ -971,7 +971,7 @@ let closure_26 = async function _processChannelChanges(arg0, value) {
             }
           }
           c12 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else if (1 === tmp4) {
         if (arg0 === 1) {
@@ -1032,14 +1032,14 @@ function writeMessageChanges(transaction, arg1, arg2, arg3, arg4) {
     }
   }, "Background Sync");
 }
-const ChannelRecord = fn(2045);
+const ChannelRecord = fn(2049);
 ({ isPrivate: hasOwnProperty, isThread: metroRequire } = ChannelRecord);
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_11, Endpoints: closure_12, MAX_MESSAGES_PER_CHANNEL: map1 } = Constants);
-const StickersStore = fn(5719);
-const ChannelStore = fn(2041);
-const EmojiStore = fn(5676);
-const GuildStore = fn(2063);
+const StickersStore = fn(5721);
+const ChannelStore = fn(2045);
+const EmojiStore = fn(5678);
+const GuildStore = fn(2067);
 let closure_14 = new LoggerDefault("BackgroundSync");
 let closure_15 = 4 * DurationsDefault.Millis.HOUR;
 const lastSyncTime = "lastSyncTime";

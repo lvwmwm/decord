@@ -1,25 +1,84 @@
-// Module ID: 9353
-// Function ID: 9354
+// Module ID: 9351
+// Function ID: 9352
 // Name: XboxLinkPreConnect
-// Dependencies: [19, 9344, 1074, 21, 4756, 1484, 9354, 9355, 1115, 2]
-// Exports: default
+// Dependencies: [19, 9342, 1078, 21, 4758, 558, 568, 1488, 9352, 1119, 9353, 2]
 
-// Module 9353 (XboxLinkPreConnect)
-import _modDef9354 from "module_9354" /* 9354 */;
+// Module 9351 (XboxLinkPreConnect)
+import _modDef9352 from "module_9352" /* 9352 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const XboxLinkModalScenes = fn(9344).XboxLinkModalScenes;
-const PlatformTypes = fn(1074).PlatformTypes;
+const XboxLinkModalScenes = fn(9342).XboxLinkModalScenes;
+const PlatformTypes = fn(1078).PlatformTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_7 = createStyles.createStyles({ image: { width: 231, height: 160 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkPreConnect.tsx");
 
-export default function XboxLinkPreConnect() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = navigation(568).c(11);
+  const tmp4 = closure_7();
+  const obj = navigation(568);
+  navigation = navigation(1488).useNavigation();
+  if (cResult[0] !== navigation) {
+    const fn = function t(arg0) {
+      navigation.push(XboxLinkModalScenes.DISCORD_CONSENT, arg0);
+    };
+    cResult[0] = navigation;
+    cResult[1] = fn;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] !== navigation) {
+    const fn2 = function _() {
+      navigation.push(XboxLinkModalScenes.ERROR);
+    };
+    cResult[2] = navigation;
+    cResult[3] = fn2;
+    let tmp7 = fn2;
+  } else {
+    tmp7 = cResult[3];
+  }
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { uri: _modDef9352 };
+    cResult[4] = obj3;
+    let tmp8 = obj3;
+  } else {
+    tmp8 = cResult[4];
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t["e/z3na"]);
+    const intl2 = tmp(1119).intl;
+    const stringResult1 = intl2.string(tmp(1119).t["7tXu0i"]);
+    cResult[5] = stringResult;
+    cResult[6] = stringResult1;
+    let tmp11 = stringResult1;
+    let tmp10 = stringResult;
+  } else {
+    tmp10 = cResult[5];
+    tmp11 = cResult[6];
+  }
+  if (cResult[7] === tmp7) {
+    if (cResult[8] === tmp6) {
+      if (cResult[9] === tmp4.image) {
+        let tmp14 = cResult[10];
+      }
+      return tmp14;
+    }
+  }
+  const tmp15 = jsx(navigation(9353).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: tmp4.image, title: tmp10, body: tmp11 });
+  cResult[7] = tmp7;
+  cResult[8] = tmp6;
+  cResult[9] = tmp4.image;
+  cResult[10] = tmp15;
+  tmp14 = tmp15;
+}) : (() => {
   const tmp = closure_7();
-  navigation = navigation(1484).useNavigation();
+  navigation = navigation(1488).useNavigation();
   const items = [navigation];
   const items1 = [navigation];
   const callback = noop.useCallback((arg0) => {
@@ -28,11 +87,11 @@ export default function XboxLinkPreConnect() {
   const callback1 = noop.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const memo = noop.useMemo(() => ({ uri: _modDef9354 }), []);
+  const memo = noop.useMemo(() => ({ uri: _modDef9352 }), []);
   const obj2 = { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null };
-  const intl = navigation(1115).intl;
-  obj2.title = intl.string(navigation(1115).t["e/z3na"]);
-  const intl2 = navigation(1115).intl;
-  obj2.body = intl2.string(navigation(1115).t["7tXu0i"]);
-  return jsx(navigation(9355).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null });
-};
+  const intl = navigation(1119).intl;
+  obj2.title = intl.string(navigation(1119).t["e/z3na"]);
+  const intl2 = navigation(1119).intl;
+  obj2.body = intl2.string(navigation(1119).t["7tXu0i"]);
+  return jsx(navigation(9353).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: tmp.image, title: null, body: null });
+});

@@ -1,11 +1,11 @@
-// Module ID: 7561
-// Function ID: 7562
+// Module ID: 7563
+// Function ID: 7564
 // Name: MobileWebHandoffUtils
-// Dependencies: [5, 1074, 1255, 1271, 2]
+// Dependencies: [5, 1078, 1259, 1275, 2]
 
-// Module 7561 (MobileWebHandoffUtils)
-import v1 from "v1" /* 1255 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 7563 (MobileWebHandoffUtils)
+import v1 from "v1" /* 1259 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -20,7 +20,7 @@ let closure_4 = async function _createHandoffToken(key, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -70,7 +70,7 @@ let closure_4 = async function _createHandoffToken(key, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/mobile_web_handoff/MobileWebHandoffUtils.tsx");
 

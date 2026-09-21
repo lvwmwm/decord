@@ -1,11 +1,11 @@
-// Module ID: 9726
-// Function ID: 9727
+// Module ID: 9721
+// Function ID: 9722
 // Name: UIDensityConstants
-// Dependencies: [1186, 2]
+// Dependencies: [1190, 2]
 // Exports: resolveUIDensity
 
-// Module 9726 (UIDensityConstants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+// Module 9721 (UIDensityConstants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/themes/UIDensityConstants.tsx");
@@ -15,11 +15,11 @@ export const RESPONSIVE_DENSITY_FALLBACK = "cozy";
 export const resolveUIDensity = function resolveUIDensity(arg0, arg1) {
   if (preloaded_user_settings.UIDensity.RESPONSIVE === arg0) {
     return arg1;
-  } else if (tmp(1186).UIDensity.COZY === arg0) {
+  } else if (tmp(1190).UIDensity.COZY === arg0) {
     return "cozy";
-  } else if (tmp(1186).UIDensity.DEFAULT === arg0) {
+  } else if (tmp(1190).UIDensity.DEFAULT === arg0) {
     return "default";
-  } else if (tmp(1186).UIDensity.COMPACT === arg0) {
+  } else if (tmp(1190).UIDensity.COMPACT === arg0) {
     return "compact";
   } else {
     return "default";

@@ -1,466 +1,172 @@
 // Module ID: 1810
 // Function ID: 1811
-// Dependencies: [1640, 1648]
-// Exports: advanceAnimationByFrame, advanceAnimationByTime, getAnimatedStyle, setUpTests, withReanimatedTimer
+// Dependencies: [1652]
+// Exports: clamp, interpolate
 
 // Module 1810
-import _mod1648 from "module_1648" /* 1648 */;
-import module_1640 from "module_1640" /* 1640 */;
+import _mod1652 from "module_1652" /* 1652 */;
 
-const require = globalThis.__r;
-
-let obj = { fps: 60 };
-function getStylesFromObject(jestInlineStyle) {
-  if (undefined === jestInlineStyle) {
-    let fromEntriesResult = {};
-  } else {
-    const _Object = Object;
-    const _Object2 = Object;
-    const entries = Object.entries(jestInlineStyle);
-    fromEntriesResult = Object.fromEntries(entries.map((item) => {
-      [tmp, iter] = item;
-      const items = [tmp, ];
-      value = iter;
-      if (iter._isReanimatedSharedValue) {
-        value = iter.value;
-      }
-      items[1] = value;
-      return items;
-    }));
-  }
-  return fromEntriesResult;
-}
-function getCurrentStyle(props) {
-  const style = props.props.style;
-  obj = {};
-  if (Array.isArray(style)) {
-    const item = style.forEach((item) => {
-      obj = {};
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(item);
-    });
-  }
-  const jestInlineStyle = props.props.jestInlineStyle;
-  if (props.props.jestAnimatedStyle != null) {
-    value = iter.value;
-  }
-  if (Array.isArray(jestInlineStyle)) {
-    const iter2 = jestInlineStyle[Symbol.iterator]();
-    const nextResult = iter2.next();
-    while (iter2 !== undefined) {
-      if (!("jestAnimatedValues" in nextResult)) {
-        let tmp18 = getStylesFromObject(tmp15);
-        let obj2 = {};
-        let merged = Object.assign(obj);
-        let merged1 = Object.assign(tmp18);
-        obj = obj2;
-      }
-      continue;
+require = arg1;
+const dependencyMap = arg6;
+const Extrapolation = { IDENTITY: "identity", CLAMP: "clamp", EXTEND: "extend" };
+function getVal(arg0, arg1, arg2, arg3, arg4, arg5) {
+  if (obj.IDENTITY === arg0) {
+    return arg5;
+  } else if (tmp.CLAMP === arg0) {
+    let tmp5 = arg4;
+    if (arg1 * arg2 < arg1 * arg3) {
+      tmp5 = arg3;
     }
-    const obj3 = {};
-    const merged2 = Object.assign(obj);
-    const merged3 = Object.assign(value);
-    obj = obj3;
-    return obj3;
+    return tmp5;
   } else {
-    const tmp3 = getStylesFromObject(jestInlineStyle);
-    obj = {};
-    if (((value) => {
-      let tmp = !value;
-      if (value) {
-        const _Object = Object;
-        tmp = 0 === Object.keys(value).length;
-      }
-      return tmp;
-    })(value)) {
-      const merged4 = Object.assign(tmp3);
-      let tmp7 = obj;
-    } else {
-      const merged5 = Object.assign(value);
-      tmp7 = obj;
-    }
-    obj = tmp7;
-    return tmp7;
+    const EXTEND = tmp.EXTEND;
+    return arg2;
   }
 }
-function checkEqual(arr2, arr3) {
-  if (Array.isArray(arr3)) {
-    const _Array = Array;
-    if (Array.isArray(arr2)) {
-      if (arr3.length === arr2.length) {
-        let num4 = 0;
-        if (0 < arr2.length) {
-          while (checkEqual(arr2[num4], arr3[num4])) {
-            num4 = num4 + 1;
-          }
-          return false;
-        }
-      }
-    }
-    return false;
-  } else {
-    if (typeof arr2 === "object") {
-      if (arr2) {
-        if (typeof arr3 === "object") {
-          if (arr3) {
-            for (const key10009 in arg1) {
-              if (checkEqual(arg0[key10009], arg1[key10009])) {
-                continue;
-              } else {
-                let flag = false;
-                return false;
-              }
-            }
-          }
-        }
-        return false;
-      }
-    }
-    return arr2 === arr3;
-  }
-  return true;
+getVal.__closure = { Extrapolation };
+getVal.__workletHash = 15103214376416;
+getVal.__initData = { code: "function getVal_Pnpm_interpolationTs1(type,coef,val,leftEdgeOutput,rightEdgeOutput,x){const{Extrapolation}=this.__closure;switch(type){case Extrapolation.IDENTITY:return x;case Extrapolation.CLAMP:if(coef*val<coef*leftEdgeOutput){return leftEdgeOutput;}return rightEdgeOutput;case Extrapolation.EXTEND:default:return val;}}" };
+function isExtrapolate(arg0) {
+  return arg0 === obj.EXTEND || arg0 === obj.CLAMP || arg0 === obj.IDENTITY;
 }
-function compareAndFormatDifferences(arg0, arg1) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  closure_0 = undefined;
-  closure_1 = undefined;
-  closure_2 = undefined;
-  const items = [];
-  let flag2 = true;
-  let flag3 = true;
-  const keys = Object.keys();
-  if (keys !== undefined) {
-    flag3 = flag2;
-    while (keys[tmp] !== undefined) {
-      let arr4 = arg0[tmp4];
-      let arr5 = arg1[tmp4];
-      if (typeof checkEqual === "function") {
-        let _Array = Array;
-        if (Array.isArray(arr5)) {
-          let _Array4 = Array;
-          let flag4 = false;
-          if (Array.isArray(arr4)) {
-            flag4 = false;
-            if (arr5.length === arr4.length) {
-              let num3 = 0;
-              flag4 = true;
-              if (0 < arr4.length) {
-                let arr2 = arr4[num3];
-                let arr3 = arr5[num3];
-                let sum1 = num3;
-                while (typeof checkEqual === "function") {
-                  let _Array5 = Array;
-                  if (Array.isArray(arr3)) {
-                    let _Array6 = Array;
-                    let flag6 = false;
-                    if (Array.isArray(arr2)) {
-                      flag6 = false;
-                      if (arr3.length === arr2.length) {
-                        let num2 = 0;
-                        flag6 = true;
-                        if (0 < arr2.length) {
-                          let sum = num2;
-                          flag6 = false;
-                          while (checkEqual(arr2[num2], arr3[num2])) {
-                            sum = sum + 1;
-                            num2 = sum;
-                            flag6 = true;
-                            if (sum >= arr2.length) {
-                              break;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  } else {
-                    if (typeof arr2 === "object") {
-                      if (arr2) {
-                        flag6 = false;
-                        if (typeof arr3 === "object") {
-                          flag6 = false;
-                          if (arr3) {
-                            flag6 = true;
-                            let keys1 = Object.keys();
-                            if (keys1 !== undefined) {
-                              flag6 = true;
-                              let tmp17 = keys1[sum];
-                              while (tmp17 !== undefined) {
-                                flag6 = false;
-                                if (checkEqual(arr2[tmp17], arr3[tmp17])) {
-                                  continue;
-                                } else {
-                                  break;
-                                }
-                                break;
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                    flag6 = arr2 === arr3;
-                  }
-                  flag4 = false;
-                  if (flag6) {
-                    sum1 = sum1 + 1;
-                    num3 = sum1;
-                    flag4 = true;
-                  }
-                  continue;
-                }
-                let str4 = "Trying to call a non-function";
-                throw new TypeError("Trying to call a non-function");
-              }
-            }
-          }
+isExtrapolate.__closure = { Extrapolation };
+isExtrapolate.__workletHash = 1560831703072;
+isExtrapolate.__initData = { code: "function isExtrapolate_Pnpm_interpolationTs2(value){const{Extrapolation}=this.__closure;return value===Extrapolation.EXTEND||value===Extrapolation.CLAMP||value===Extrapolation.IDENTITY;}" };
+function validateType(extrapolateLeft) {
+  obj = { extrapolateLeft: obj.EXTEND, extrapolateRight: obj.EXTEND };
+  if (extrapolateLeft) {
+    if (typeof extrapolateLeft === "string") {
+      if (typeof isExtrapolate === "function") {
+        if (tmp15) {
+          obj.extrapolateLeft = extrapolateLeft;
+          obj.extrapolateRight = extrapolateLeft;
+          return obj;
         } else {
-          if (typeof arr4 === "object") {
-            if (arr4) {
-              flag4 = false;
-              if (typeof arr5 === "object") {
-                flag4 = false;
-                if (arr5) {
-                  flag4 = true;
-                  let keys2 = Object.keys();
-                  if (keys2 !== undefined) {
-                    flag4 = true;
-                    let tmp7 = keys2[sum1];
-                    while (tmp7 !== undefined) {
-                      let arr6 = arr4[tmp7];
-                      let arr7 = arr5[tmp7];
-                      if (typeof checkEqual === "function") {
-                        let _Array2 = Array;
-                        if (Array.isArray(arr7)) {
-                          let _Array3 = Array;
-                          let flag5 = false;
-                          if (Array.isArray(arr6)) {
-                            flag5 = false;
-                            if (arr7.length === arr6.length) {
-                              let num = 0;
-                              flag5 = true;
-                              if (0 < arr6.length) {
-                                sum = num;
-                                flag5 = false;
-                                while (checkEqual(arr6[num], arr7[num])) {
-                                  sum = sum + 1;
-                                  num = sum;
-                                  flag5 = true;
-                                  if (sum >= arr6.length) {
-                                    break;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        } else {
-                          if (typeof arr6 === "object") {
-                            if (arr6) {
-                              flag5 = false;
-                              if (typeof arr7 === "object") {
-                                flag5 = false;
-                                if (arr7) {
-                                  flag5 = true;
-                                  let keys3 = Object.keys();
-                                  if (keys3 !== undefined) {
-                                    flag5 = true;
-                                    let tmp10 = keys3[sum];
-                                    while (tmp10 !== undefined) {
-                                      flag5 = false;
-                                      if (checkEqual(arr6[tmp10], arr7[tmp10])) {
-                                        continue;
-                                      } else {
-                                        break;
-                                      }
-                                      break;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                          flag5 = arr6 === arr7;
-                        }
-                        flag4 = false;
-                        if (flag5) {
-                          continue;
-                        } else {
-                          break;
-                        }
-                        break;
-                      } else {
-                        let str3 = "Trying to call a non-function";
-                        throw new TypeError("Trying to call a non-function");
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-          flag4 = arr4 === arr5;
+          const reanimatedError = new _mod1652.ReanimatedError("Unsupported value for \"interpolate\" \nSupported values: [\"extend\", \"clamp\", \"identity\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n        interpolate(value, [inputRange], [outputRange], \"clamp\")");
+          throw reanimatedError;
         }
-        if (flag4) {
-          continue;
-        } else {
-          obj = { property: tmp4, current: arg0[tmp4], expect: arg1[tmp4] };
-          let arr = items.push(obj);
-          flag2 = false;
-          continue;
-        }
-        continue;
+        tmp15 = extrapolateLeft === tmp.EXTEND || extrapolateLeft === tmp.CLAMP || extrapolateLeft === tmp.IDENTITY;
       } else {
-        let str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else {
+      if (!extrapolateLeft.extrapolateLeft) {
+        if (extrapolateLeft.extrapolateRight) {
+          const extrapolateRight = extrapolateLeft.extrapolateRight;
+          if (typeof isExtrapolate === "function") {
+            const tmp5 = extrapolateRight === tmp.EXTEND || extrapolateRight === tmp.CLAMP || extrapolateRight === tmp.IDENTITY;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
+        }
+        const _Object = Object;
+        const merged = Object.assign(obj, extrapolateLeft);
+        return obj;
+      } else {
+        extrapolateLeft = extrapolateLeft.extrapolateLeft;
+        if (typeof isExtrapolate === "function") {
+          const tmp3 = extrapolateLeft === tmp.EXTEND || extrapolateLeft === tmp.CLAMP || extrapolateLeft === tmp.IDENTITY;
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      const reanimatedError1 = new _mod1652.ReanimatedError("Unsupported value for \"interpolate\" \nSupported values: [\"extend\", \"clamp\", \"identity\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n      interpolate(value, [inputRange], [outputRange], {\n        extrapolateLeft: Extrapolation.CLAMP,\n        extrapolateRight: Extrapolation.IDENTITY\n      }})");
+      throw reanimatedError1;
+    }
+  } else {
+    return obj;
+  }
+}
+validateType.__closure = { Extrapolation, isExtrapolate };
+validateType.__workletHash = 9722315466599;
+validateType.__initData = { code: "function validateType_Pnpm_interpolationTs3(type){const{Extrapolation,isExtrapolate}=this.__closure;const extrapolationConfig={extrapolateLeft:Extrapolation.EXTEND,extrapolateRight:Extrapolation.EXTEND};if(!type){return extrapolationConfig;}if(typeof type==='string'){if(!isExtrapolate(type)){throw new ReanimatedError(\"Unsupported value for \\\"interpolate\\\" \\nSupported values: [\\\"extend\\\", \\\"clamp\\\", \\\"identity\\\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\\n Valid example:\\n        interpolate(value, [inputRange], [outputRange], \\\"clamp\\\")\");}extrapolationConfig.extrapolateLeft=type;extrapolationConfig.extrapolateRight=type;return extrapolationConfig;}if(type.extrapolateLeft&&!isExtrapolate(type.extrapolateLeft)||type.extrapolateRight&&!isExtrapolate(type.extrapolateRight)){throw new ReanimatedError(\"Unsupported value for \\\"interpolate\\\" \\nSupported values: [\\\"extend\\\", \\\"clamp\\\", \\\"identity\\\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\\n Valid example:\\n      interpolate(value, [inputRange], [outputRange], {\\n        extrapolateLeft: Extrapolation.CLAMP,\\n        extrapolateRight: Extrapolation.IDENTITY\\n      }})\");}Object.assign(extrapolationConfig,type);return extrapolationConfig;}" };
+function internalInterpolate(arg0, arg1, extrapolateLeft) {
+  ({ leftEdgeInput, rightEdgeInput, leftEdgeOutput, rightEdgeOutput } = arg1);
+  if (rightEdgeInput - leftEdgeInput == 0) {
+    return leftEdgeOutput;
+  } else {
+    const sum = leftEdgeOutput + (arg0 - leftEdgeInput) / (rightEdgeInput - leftEdgeInput) * (rightEdgeOutput - leftEdgeOutput);
+    let num = -1;
+    if (rightEdgeOutput >= leftEdgeOutput) {
+      num = 1;
+    }
+    if (num * sum < num * leftEdgeOutput) {
+      extrapolateLeft = extrapolateLeft.extrapolateLeft;
+      if (typeof getVal === "function") {
+        if (obj.IDENTITY !== extrapolateLeft) {
+          if (tmp9.CLAMP !== extrapolateLeft) {
+            const EXTEND2 = tmp9.EXTEND;
+          }
+        }
+        const result = num * sum;
+        num = num * leftEdgeOutput;
+        if (result < num) {
+          rightEdgeOutput = leftEdgeOutput;
+        }
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    } else if (num * rightEdgeOutput >= num * sum) {
+      return sum;
+    } else {
+      const extrapolateRight = extrapolateLeft.extrapolateRight;
+      if (typeof getVal === "function") {
+        if (obj.IDENTITY !== extrapolateRight) {
+          if (tmp4.CLAMP !== extrapolateRight) {
+            const EXTEND = tmp4.EXTEND;
+          }
+        }
+      } else {
         throw new TypeError("Trying to call a non-function");
       }
     }
   }
-  let flag7 = flag3;
-  if (flag) {
-    const _Object = Object;
-    const _Object2 = Object;
-    flag7 = flag3;
-    if (Object.keys(arg0).length !== Object.keys(arg1).length) {
-      flag7 = false;
-      const keys4 = Object.keys();
-      if (keys4 !== undefined) {
-        flag7 = false;
-        const first = keys4[0];
-        while (first !== undefined) {
-          if (undefined !== arg1[first]) {
-            continue;
-          } else {
-            let obj2 = { property: first, current: arg0[first], expect: arg1[first] };
-            let arr9 = items.push(obj2);
-            continue;
+}
+internalInterpolate.__closure = { getVal };
+internalInterpolate.__workletHash = 16257995045856;
+internalInterpolate.__initData = { code: "function internalInterpolate_Pnpm_interpolationTs4(x,narrowedInput,extrapolationConfig){const{getVal}=this.__closure;const{leftEdgeInput:leftEdgeInput,rightEdgeInput:rightEdgeInput,leftEdgeOutput:leftEdgeOutput,rightEdgeOutput:rightEdgeOutput}=narrowedInput;if(rightEdgeInput-leftEdgeInput===0){return leftEdgeOutput;}const progress=(x-leftEdgeInput)/(rightEdgeInput-leftEdgeInput);const val=leftEdgeOutput+progress*(rightEdgeOutput-leftEdgeOutput);const coef=rightEdgeOutput>=leftEdgeOutput?1:-1;if(coef*val<coef*leftEdgeOutput){return getVal(extrapolationConfig.extrapolateLeft,coef,val,leftEdgeOutput,rightEdgeOutput,x);}else if(coef*val>coef*rightEdgeOutput){return getVal(extrapolationConfig.extrapolateRight,coef,val,leftEdgeOutput,rightEdgeOutput,x);}return val;}" };
+function interpolate(arg0, arg1, arg2, extrapolateLeft) {
+  if (arg1.length >= 2) {
+    if (arg2.length >= 2) {
+      const obj = { leftEdgeInput: null, rightEdgeInput: null, leftEdgeOutput: null, rightEdgeOutput: null };
+      [obj.leftEdgeInput, obj.rightEdgeInput] = arg1;
+      [obj.leftEdgeOutput, obj.rightEdgeOutput] = arg2;
+      if (arg1.length > 2) {
+        if (arg0 > arg1[length - 1]) {
+          obj.leftEdgeInput = arg1[length - 2];
+          obj.rightEdgeInput = arg1[length - 1];
+          obj.leftEdgeOutput = arg2[length - 2];
+          obj.rightEdgeOutput = arg2[length - 1];
+        } else {
+          let num = 1;
+          if (1 < length) {
+            while (arg0 > arg1[num]) {
+              num = num + 1;
+            }
+            const diff = num - 1;
+            obj.leftEdgeInput = arg1[diff];
+            obj.rightEdgeInput = arg1[num];
+            obj.leftEdgeOutput = arg2[diff];
+            obj.rightEdgeOutput = arg2[num];
           }
-          continue;
         }
       }
+      return internalInterpolate(arg0, obj, validateType(extrapolateLeft));
     }
   }
-  if (flag7) {
-    const obj3 = {
-      message() {
-          return "ok";
-        },
-      pass: true
-    };
-    return obj3;
-  } else {
-    const _JSON = JSON;
-    closure_0 = JSON.stringify(arg0);
-    const _JSON2 = JSON;
-    closure_1 = JSON.stringify(arg1);
-    const mapped = items.map((expect) => {
-      const json = JSON.stringify(expect.expect);
-      return "- '" + expect.property + "' should be " + json + ", but is " + JSON.stringify(expect.current);
-    });
-    closure_2 = mapped.join("\n");
-    const obj4 = {
-      message() {
-          return "Expected: " + closure_1 + "\nReceived: " + closure_0 + "\n\nDifferences:\n" + closure_2;
-        },
-      pass: false
-    };
-    return obj4;
-  }
+  const reanimatedError = new _mod1652.ReanimatedError("Interpolation input and output ranges should contain at least two values.");
+  throw reanimatedError;
 }
-let closure_8 = Math.round(1000 / obj.fps);
-if (!module_1640.isJest()) {
-  require = () => {
-    const reanimatedError = new _mod1648.ReanimatedError("`setUpTests` is available only in Jest environment.");
-    throw reanimatedError;
-  };
+interpolate.__closure = { validateType, internalInterpolate };
+interpolate.__workletHash = 16263308339935;
+interpolate.__initData = { code: "function interpolate_Pnpm_interpolationTs5(x,inputRange,outputRange,type){const{validateType,internalInterpolate}=this.__closure;if(inputRange.length<2||outputRange.length<2){throw new ReanimatedError('Interpolation input and output ranges should contain at least two values.');}const extrapolationConfig=validateType(type);const length=inputRange.length;const narrowedInput={leftEdgeInput:inputRange[0],rightEdgeInput:inputRange[1],leftEdgeOutput:outputRange[0],rightEdgeOutput:outputRange[1]};if(length>2){if(x>inputRange[length-1]){narrowedInput.leftEdgeInput=inputRange[length-2];narrowedInput.rightEdgeInput=inputRange[length-1];narrowedInput.leftEdgeOutput=outputRange[length-2];narrowedInput.rightEdgeOutput=outputRange[length-1];}else{for(let i=1;i<length;++i){if(x<=inputRange[i]){narrowedInput.leftEdgeInput=inputRange[i-1];narrowedInput.rightEdgeInput=inputRange[i];narrowedInput.leftEdgeOutput=outputRange[i-1];narrowedInput.rightEdgeOutput=outputRange[i];break;}}}}return internalInterpolate(x,narrowedInput,extrapolationConfig);}" };
+function clamp(arg0, arg1, arg2) {
+  return Math.min(Math.max(arg0, arg1), arg2);
 }
+clamp.__closure = {};
+clamp.__workletHash = 13846341562950;
+clamp.__initData = { code: "function clamp_Pnpm_interpolationTs6(value,min,max){return Math.min(Math.max(value,min),max);}" };
 
-export const withReanimatedTimer = (fn) => {
-  console.warn("This method is deprecated, you should define your own before and after test hooks to enable jest.useFakeTimers(). Check out the documentation for details on testing");
-  const fakeTimers = globalThis.jest.useFakeTimers();
-  fn();
-  globalThis.jest.runOnlyPendingTimers();
-  const realTimers = globalThis.jest.useRealTimers();
-};
-export const advanceAnimationByTime = () => {
-  let tmp = arg0;
-  if (arg0 === undefined) {
-    tmp = closure_8;
-  }
-  console.warn("This method is deprecated, use jest.advanceTimersByTime directly");
-  globalThis.jest.advanceTimersByTime(tmp);
-  globalThis.jest.runOnlyPendingTimers();
-};
-export const advanceAnimationByFrame = (arg0) => {
-  console.warn("This method is deprecated, use jest.advanceTimersByTime directly");
-  globalThis.jest.advanceTimersByTime(arg0 * closure_8);
-  globalThis.jest.runOnlyPendingTimers();
-};
-export const setUpTests = () => {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let _default = global.expect;
-  if (undefined === _default) {
-    const tmp2 = require("expect");
-    _default = tmp2;
-    if (!tmp3) {
-      _default = tmp2.default;
-    }
-    tmp3 = undefined !== tmp2 && undefined !== tmp2.extend;
-  }
-  let merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  closure_8 = Math.round(1000 / {}.fps);
-  _default.extend({
-    toHaveAnimatedProps(props, arg1) {
-      if (props.props.jestAnimatedProps) {
-        const _Object = Object;
-        if (0 === Object.keys(props.props.jestAnimatedProps.value).length) {
-          const obj2 = {
-            message() {
-                  return "Component doesn't have props.";
-                },
-            pass: false
-          };
-          let tmp7 = obj2;
-        }
-        return tmp7;
-      }
-      value = undefined;
-      if (props.props.jestAnimatedProps != null) {
-        value = iter.value;
-      }
-      obj = {};
-      if (value) {
-        const merged = Object.assign(value);
-        let tmp3 = obj;
-      } else {
-        tmp3 = obj;
-      }
-      tmp7 = compareAndFormatDifferences(tmp3, arg1);
-    }
-  });
-  _default.extend({
-    toHaveAnimatedStyle(props, arg1) {
-      obj = arg2;
-      if (arg2 === undefined) {
-        obj = {};
-      }
-      if (props.props.style) {
-        let obj2 = compareAndFormatDifferences(getCurrentStyle(props), arg1, obj.shouldMatchAllProps);
-      } else {
-        obj2 = {
-          message() {
-              return "Component doesn't have a style.";
-            },
-          pass: false
-        };
-      }
-      return obj2;
-    }
-  });
-};
-export const getAnimatedStyle = (props) => getCurrentStyle(props);
+export { Extrapolation };
+export { interpolate };
+export { clamp };

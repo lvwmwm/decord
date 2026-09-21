@@ -1,20 +1,20 @@
-// Module ID: 5763
-// Function ID: 5764
+// Module ID: 5765
+// Function ID: 5766
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4740, 4578, 1074, 504, 5764, 2]
+// Dependencies: [5, 32, 19, 4742, 4581, 1078, 504, 5766, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 5763 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 5765 (useCanReapplyToRejectedMemberVerificationApplication)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4740 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4578 */;
+import InviteStore from "InviteStore" /* 4742 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4581 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildFeatures = fn(1074).GuildFeatures;
+const GuildFeatures = fn(1078).GuildFeatures;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useCanReapplyToRejectedMemberVerificationApplication.tsx");
 
@@ -41,7 +41,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         c4 = 0;
         tmp3(false);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp18) {
         closure_3 = tmp18;
         if (tmp4 === c4) {

@@ -1,16 +1,16 @@
-// Module ID: 16648
-// Function ID: 16649
+// Module ID: 16650
+// Function ID: 16651
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [2095, 4577, 1074, 4614, 4613, 4767, 7584, 2]
+// Dependencies: [2099, 4580, 1078, 4617, 4616, 4769, 7586, 2]
 // Exports: default
 
-// Module 16648 (transitionGuildsBarToGuildOrOpenSelectedChannel)
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+// Module 16650 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import RootNavigationRef from "RootNavigationRef" /* 4617 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
 
 require = fn;
-const ME = fn(1074).ME;
+const ME = fn(1078).ME;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
 
@@ -22,7 +22,7 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
   }
   let tmp4;
   if (true === isReadyResult) {
-    const coerceGuildsRouteResult = tmp(4613).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
+    const coerceGuildsRouteResult = tmp(4616).coerceGuildsRoute(rootNavigationRef.getCurrentRoute());
     let drawerOpen;
     if (coerceGuildsRouteResult != null) {
       const params = coerceGuildsRouteResult.params;
@@ -46,13 +46,13 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
       }
       tmp4 = tmp10;
     }
-    const tmpResult = tmp(4613);
+    const tmpResult = tmp(4616);
   }
   if (null != tmp4) {
-    tmp(4767).transitionToChannel(tmp4);
-    const tmpResult3 = tmp(4767);
+    tmp(4769).transitionToChannel(tmp4);
+    const tmpResult3 = tmp(4769);
   } else {
-    tmp(7584).transitionToGuild(arg0);
-    const tmpResult4 = tmp(7584);
+    tmp(7586).transitionToGuild(arg0);
+    const tmpResult4 = tmp(7586);
   }
 };

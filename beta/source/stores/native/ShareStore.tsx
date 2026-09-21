@@ -1,28 +1,28 @@
-// Module ID: 14675
-// Function ID: 14676
+// Module ID: 14678
+// Function ID: 14679
 // Name: ShareStore
-// Dependencies: [502, 2041, 2063, 2095, 4577, 1372, 1074, 1370, 8633, 1249, 1241, 504, 573, 2]
+// Dependencies: [502, 2045, 2067, 2099, 4580, 1376, 1078, 1374, 8638, 1253, 1245, 504, 577, 2]
 
-// Module 14675 (ShareStore)
+// Module 14678 (ShareStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8633 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8638 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function handleTokenUpdated(token) {
   token = token.token;
   return false;
 }
-const AppStates = fn(1074).AppStates;
+const AppStates = fn(1078).AppStates;
 const Store = initializeDefault.Store;
 class ShareStore extends Store {
 }
@@ -53,7 +53,7 @@ const shareStore = new ShareStore(DispatcherDefault, {
     state = state.state;
     if (state === AppStates.INACTIVE) {
       if (null != c4) {
-        const guild = GuildStore.getGuild(c3);
+        guild = GuildStore.getGuild(c3);
         let json = null;
         if (null != guild) {
           const _JSON = JSON;

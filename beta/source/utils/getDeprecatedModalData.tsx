@@ -1,13 +1,13 @@
-// Module ID: 4961
-// Function ID: 4962
+// Module ID: 4963
+// Function ID: 4964
 // Name: getDeprecatedModalData
-// Dependencies: [4748, 1074, 2]
+// Dependencies: [4750, 1078, 2]
 // Exports: default
 
-// Module 4961 (getDeprecatedModalData)
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+// Module 4963 (getDeprecatedModalData)
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
-const ModalAnimation = fn(1074).ModalAnimation;
+const ModalAnimation = fn(1078).ModalAnimation;
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/getDeprecatedModalData.tsx");
 

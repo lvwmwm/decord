@@ -1,25 +1,74 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16584
+// Function ID: 16585
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1074, 2048, 2038, 21, 16584, 16585, 1115, 1101, 2]
-// Exports: default
+// Dependencies: [19, 1078, 2052, 2042, 21, 558, 568, 1105, 1119, 16585, 16586, 2]
 
-// Module 16583 (IAPUpsellActionSheet)
-import router_utils from "router_utils" /* 1101 */;
-import util from "util" /* 1115 */;
+// Module 16584 (IAPUpsellActionSheet)
+import router_utils from "router_utils" /* 1105 */;
+import util from "util" /* 1119 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Routes = fn(1074).Routes;
-const StaticChannelRoute = fn(2048).StaticChannelRoute;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const Routes = fn(1078).Routes;
+const StaticChannelRoute = fn(2052).StaticChannelRoute;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/feature_education/IAPUpsellActionSheet.tsx");
 
-export default function IAPUpsellActionSheet(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = guildId(568).c(9);
+  guildId = guildId.guildId;
+  const markAsDismissed = guildId.markAsDismissed;
+  if (cResult[0] === guildId) {
+    if (cResult[1] === markAsDismissed) {
+      let tmp4 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1119).intl;
+      const stringResult = intl.string(tmp(1119).t.rBw4cE);
+      const intl2 = tmp(1119).intl;
+      const stringResult1 = intl2.string(tmp(1119).t.mKHibc);
+      const intl3 = tmp(1119).intl;
+      const stringResult2 = intl3.string(tmp(1119).t.RzWDqY);
+      cResult[3] = stringResult;
+      cResult[4] = stringResult1;
+      cResult[5] = stringResult2;
+      let tmp8 = stringResult2;
+      let tmp7 = stringResult1;
+      let tmp6 = stringResult;
+    } else {
+      tmp6 = cResult[3];
+      tmp7 = cResult[4];
+      tmp8 = cResult[5];
+    }
+    if (cResult[6] === tmp4) {
+      if (cResult[7] === markAsDismissed) {
+        let tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+    const obj2 = { imageSource: markAsDismissed(16586), header: tmp6, body: tmp7, cta: tmp8, onCTAPress: tmp4, markAsDismissed };
+    const tmp16 = jsx(markAsDismissed(16585), { imageSource: markAsDismissed(16586), header: tmp6, body: tmp7, cta: tmp8, onCTAPress: tmp4, markAsDismissed });
+    cResult[6] = tmp4;
+    cResult[7] = markAsDismissed;
+    cResult[8] = tmp16;
+    tmp12 = tmp16;
+    const tmp15 = markAsDismissed(16585);
+  }
+  const fn = function l() {
+    router_utils.transitionTo(Routes.CHANNEL(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
+    markAsDismissed(ContentDismissActionType.UNKNOWN);
+  };
+  cResult[0] = guildId;
+  cResult[1] = markAsDismissed;
+  cResult[2] = fn;
+  tmp4 = fn;
+}) : ((arg0) => {
   ({ guildId: require, markAsDismissed } = arg0);
-  const obj = { imageSource: markAsDismissed(16585), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
+  const obj = { imageSource: markAsDismissed(16586), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
   const intl = util.intl;
   obj.header = intl.string(util.t.rBw4cE);
   const intl2 = util.intl;
@@ -31,5 +80,5 @@ export default function IAPUpsellActionSheet(arg0) {
     markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
   obj.markAsDismissed = markAsDismissed;
-  return jsx(markAsDismissed(16584), { imageSource: markAsDismissed(16585), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
-};
+  return jsx(markAsDismissed(16585), { imageSource: markAsDismissed(16586), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
+});

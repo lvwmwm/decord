@@ -1,16 +1,16 @@
-// Module ID: 18266
-// Function ID: 18267
+// Module ID: 18269
+// Function ID: 18270
 // Name: FriendOnlineTimer
-// Dependencies: [5, 5496, 18267, 1074, 1085, 1091, 1271, 1231, 573, 7363, 2019, 2]
+// Dependencies: [5, 5498, 18270, 1078, 1089, 1095, 1275, 1235, 577, 7365, 2023, 2]
 
-// Module 18266 (FriendOnlineTimer)
-import DurationsDefault from "Durations" /* 1091 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import UserSettings from "UserSettings" /* 2019 */;
+// Module 18269 (FriendOnlineTimer)
+import DurationsDefault from "Durations" /* 1095 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import UserSettings from "UserSettings" /* 2023 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 18267 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 18270 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
 let closure_9 = async function _reportSessionMeaningfullyOnline() {
@@ -41,8 +41,8 @@ let closure_9 = async function _reportSessionMeaningfullyOnline() {
   }
   return arg1;
 };
-const Endpoints = fn(1074).Endpoints;
-const StatusTypes = fn(1085).StatusTypes;
+const Endpoints = fn(1078).Endpoints;
+const StatusTypes = fn(1089).StatusTypes;
 let closure_8 = 5 * DurationsDefault.Millis.MINUTE;
 class FriendOnlineTimerManager extends tmp2 {
   constructor() {

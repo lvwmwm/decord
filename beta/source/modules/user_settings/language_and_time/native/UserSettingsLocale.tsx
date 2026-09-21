@@ -1,16 +1,16 @@
-// Module ID: 15696
-// Function ID: 15697
+// Module ID: 15685
+// Function ID: 15686
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2110, 2109, 21, 4756, 576, 9472, 504, 7368, 5902, 1115, 5905, 15697, 2]
+// Dependencies: [5, 19, 17, 2114, 2113, 21, 4758, 580, 9470, 558, 568, 504, 1119, 5900, 15686, 7371, 5901, 2]
 
-// Module 15696 (UserSettingsLocale)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1115 */;
-import TableRadioRow from "TableRadioRow" /* 5905 */;
-import flags from "flags" /* 15697 */;
+// Module 15685 (UserSettingsLocale)
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import TableRadioRow from "TableRadioRow" /* 5900 */;
+import flags from "flags" /* 15686 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
 
 const require = globalThis.__r;
 
@@ -36,7 +36,7 @@ let closure_11 = async function _handleLanguageChange(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -68,7 +68,7 @@ let closure_11 = async function _handleLanguageChange(arg0, value) {
       } else {
         closure_130_1(closure_130_2[8]).updateLocale(closure_129_0);
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp14) {
       c4 = tmp;
@@ -78,16 +78,75 @@ let closure_11 = async function _handleLanguageChange(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const setAppLocale = fn(2110).setAppLocale;
+const setAppLocale = fn(2114).setAppLocale;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { content: { padding: nativeDefault.space.PX_16 }, flagImage: { width: 27, height: 18 } };
 let closure_9 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 let obj3 = { padding: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");
 
-export default noop.memo(function UserSettingsLocale() {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(10);
+  const tmp4 = closure_9();
+  _require = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [LocaleStore];
+    const fn = function l() {
+      return locale.locale;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  let obj = require("c");
+  const stateFromStores = require("initialize").useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== tmp4.flagImage) {
+    const availableLocales = tmp(1119).getAvailableLocales();
+    const mapped = availableLocales.map((localizedName) => {
+      ({ name, value } = localizedName);
+      const obj = { value, label: name, subLabel: null, icon: null };
+      const intl = util.intl;
+      obj.subLabel = intl.string(localizedName.localizedName);
+      obj.icon = <React4 style={flagImage.flagImage} source={flags.flags[value]} />;
+      return jsx(TableRadioRow.TableRadioRow, { value, label: name, subLabel: null, icon: null }, name);
+    });
+    cResult[2] = tmp4.flagImage;
+    cResult[3] = mapped;
+    let tmp9 = mapped;
+    const tmpResult2 = tmp(1119);
+  } else {
+    tmp9 = cResult[3];
+  }
+  if (cResult[4] === stateFromStores) {
+    if (cResult[5] === tmp9) {
+      let tmp11 = cResult[6];
+    }
+    if (cResult[7] === tmp4.content) {
+      if (cResult[8] === tmp11) {
+        let tmp13 = cResult[9];
+      }
+      return tmp13;
+    }
+    const obj2 = { contentContainerStyle: tmp4.content, children: tmp11 };
+    const tmp16 = <closure_5 contentContainerStyle={tmp4.content}>{tmp11}</closure_5>;
+    cResult[7] = tmp4.content;
+    cResult[8] = tmp11;
+    cResult[9] = tmp16;
+    tmp13 = tmp16;
+  }
+  const obj3 = { bottom: true, children: jsx(require("TableRadioGroup").TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: tmp9 }) };
+  const tmp12 = jsx(require("common/SafeAreaView").SafeAreaPaddingView, { bottom: true, children: jsx(require("TableRadioGroup").TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: tmp9 }) });
+  cResult[4] = stateFromStores;
+  cResult[5] = tmp9;
+  cResult[6] = tmp12;
+  tmp11 = tmp12;
+}) : (() => {
   const tmp = closure_9();
   _require = tmp;
   const items = [LocaleStore];
@@ -108,4 +167,4 @@ export default noop.memo(function UserSettingsLocale() {
   obj3.children = jsx(require("TableRadioGroup").TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
   obj2.children = jsx(require("common/SafeAreaView").SafeAreaPaddingView, { bottom: true, children: null });
   return <closure_5 contentContainerStyle={tmp.content}>{null}</closure_5>;
-});
+}));

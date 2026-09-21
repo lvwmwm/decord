@@ -1,16 +1,16 @@
-// Module ID: 12013
-// Function ID: 12014
+// Module ID: 11888
+// Function ID: 11889
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7353, 4774, 1074, 1365, 1385, 9632, 2]
+// Dependencies: [7355, 4776, 1078, 1369, 1389, 9628, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 12013 (getRemoteJoinableActivityPlatform)
-import FlagUtils from "FlagUtils" /* 1385 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 7353 */;
-import SessionsStore from "SessionsStore" /* 4774 */;
+// Module 11888 (getRemoteJoinableActivityPlatform)
+import FlagUtils from "FlagUtils" /* 1389 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 7355 */;
+import SessionsStore from "SessionsStore" /* 4776 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ActivityFlags: closure_4, ActivityGamePlatforms: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
@@ -45,7 +45,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 tmp9 = platform1;
               }
               tmp4 = tmp9;
-              tmp11Result4 = tmp11(1385);
+              tmp11Result4 = tmp11(1389);
             } else {
               tmp4 = null;
               if (!ConnectedAppsStore.isConnected(remoteApplicationActivity.application_id)) {
@@ -53,18 +53,18 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 if (tmp11Result5.isAndroid()) {
                   let isIOSResult = platform === constants2.ANDROID;
                 } else {
-                  isIOSResult = tmp11(1365).isIOS();
+                  isIOSResult = tmp11(1369).isIOS();
                   if (isIOSResult) {
                     isIOSResult = platform === constants2.IOS;
                   }
-                  const tmp11Result6 = tmp11(1365);
+                  const tmp11Result6 = tmp11(1369);
                 }
                 tmp4 = null;
-                tmp11Result5 = tmp11(1365);
+                tmp11Result5 = tmp11(1369);
               }
             }
           }
-          tmp11Result = tmp11(9632);
+          tmp11Result = tmp11(9628);
         }
         return tmp4;
       }

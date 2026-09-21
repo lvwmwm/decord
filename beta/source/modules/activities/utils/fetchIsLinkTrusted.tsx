@@ -1,12 +1,12 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 14767
+// Function ID: 14768
 // Name: fetchIsLinkTrusted
-// Dependencies: [5, 1074, 1271, 1366, 2]
+// Dependencies: [5, 1078, 1275, 1370, 2]
 // Exports: fetchIsLinkTrusted
 
-// Module 14764 (fetchIsLinkTrusted)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import URLUtilsDefault from "URLUtils" /* 1366 */;
+// Module 14767 (fetchIsLinkTrusted)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import URLUtilsDefault from "URLUtils" /* 1370 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -26,7 +26,7 @@ let closure_6 = async function _requestIsLinkTrusted(arg0, url) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -94,7 +94,7 @@ let closure_7 = async function _fetchIsLinkTrusted(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -205,7 +205,7 @@ let closure_7 = async function _fetchIsLinkTrusted(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const map = new Map();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/activities/utils/fetchIsLinkTrusted.tsx");

@@ -1,28 +1,64 @@
-// Module ID: 9707
-// Function ID: 9708
+// Module ID: 9688
+// Function ID: 9689
 // Name: StreamQualityUtils
-// Dependencies: [19, 4802, 502, 2063, 4779, 1372, 1074, 4803, 1374, 4781, 1115, 504, 4892, 1241, 2]
-// Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
+// Dependencies: [19, 4804, 502, 2067, 4781, 1376, 1078, 4805, 1378, 4783, 1119, 558, 568, 504, 4894, 1245, 2]
+// Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate
 
-// Module 9707 (StreamQualityUtils)
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4892 */;
+// Module 9688 (StreamQualityUtils)
+import initialize from "initialize" /* 504 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4894 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4802 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AnalyticEvents = fn(1074).AnalyticEvents;
-const StreamSettingsConstants = fn(4803);
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const StreamSettingsConstants = fn(4805);
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: closure_11, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = StreamSettingsConstants);
-let closure_15 = fn(1374).StreamQualitiesToPremiumType;
-const ResolutionTypes = fn(4781).ResolutionTypes;
+let closure_15 = fn(1378).StreamQualitiesToPremiumType;
+const ResolutionTypes = fn(4783).ResolutionTypes;
+const ReactCompilerGating = fn(558);
+function isPremiumRequirement(quality) {
+  return null != quality.quality || null != quality.guildPremiumTier;
+}
+function getPremiumRequirement(arg0, arg1, arg2) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  closure_2 = arg2;
+  return __initData.find((preset) => {
+    let tmp = null == preset.preset;
+    if (!tmp) {
+      tmp = preset.preset === closure_0;
+    }
+    if (tmp) {
+      tmp = preset.resolution === closure_1;
+    }
+    if (tmp) {
+      tmp = preset.fps === closure_2;
+    }
+    return tmp;
+  });
+}
+function getMaxQuality(participant) {
+  let tmp = null;
+  if (null != participant.maxResolution) {
+    tmp = null;
+    if (null != participant.maxFrameRate) {
+      const obj = { maxFrameRate: null, maxResolution: null };
+      ({ maxFrameRate: obj.maxFrameRate, maxResolution: obj.maxResolution } = participant);
+      tmp = obj;
+    }
+  }
+  return tmp;
+}
 let size = fn(2);
 const result = size.fileFinishedImporting("utils/StreamQualityUtils.tsx");
 
@@ -34,12 +70,12 @@ export const isPremiumResolution = function isPremiumResolution(maxQuality) {
       height = maxQuality.maxResolution.height;
     }
     closure_0 = closure_14(height);
-    let tmp6 = closure_13(maxQuality.maxFrameRate) !== closure_10.FPS_5;
+    let tmp6 = closure_13(maxQuality.maxFrameRate) !== FPS_5.FPS_5;
     if (tmp6) {
       tmp6 = null == closure_12.find((resolution) => {
         let tmp = resolution.resolution === closure_0;
         if (tmp) {
-          tmp = resolution.fps !== closure_2_10.FPS_5;
+          tmp = resolution.fps !== v65535.FPS_5;
         }
         if (tmp) {
           tmp = !(null != resolution.quality || null != resolution.guildPremiumTier);
@@ -53,8 +89,8 @@ export const isPremiumResolution = function isPremiumResolution(maxQuality) {
 };
 export const isPremiumFPS = function isPremiumFPS(maxQuality) {
   if (null != maxQuality) {
-    closure_0 = map1(maxQuality.maxFrameRate);
-    return null == closure_1_12.find((fps) => {
+    closure_0 = __initData2(maxQuality.maxFrameRate);
+    return null == __initData.find((fps) => {
       let tmp = fps.fps === closure_0;
       if (tmp) {
         tmp = !(null != fps.quality || null != fps.guildPremiumTier);
@@ -64,27 +100,8 @@ export const isPremiumFPS = function isPremiumFPS(maxQuality) {
     });
   }
 };
-export const isPremiumRequirement = function isPremiumRequirement(quality) {
-  return null != quality.quality || null != quality.guildPremiumTier;
-};
-export const getPremiumRequirement = function getPremiumRequirement(arg0, arg1, arg2) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  closure_2 = arg2;
-  return closure_1_12.find((preset) => {
-    let tmp = null == preset.preset;
-    if (!tmp) {
-      tmp = preset.preset === closure_0;
-    }
-    if (tmp) {
-      tmp = preset.resolution === closure_1;
-    }
-    if (tmp) {
-      tmp = preset.fps === closure_2;
-    }
-    return tmp;
-  });
-};
+export { isPremiumRequirement };
+export { getPremiumRequirement };
 export const getResolutionText = function getResolutionText(maxResolution) {
   if (maxResolution.type === ResolutionTypes.SOURCE) {
     const intl2 = util.intl;
@@ -100,20 +117,103 @@ export const getFPSText = function getFPSText(maxFrameRate) {
   const intl = util.intl;
   return intl.formatToPlainString(util.t.Qb44XH, { fps: maxFrameRate });
 };
-export const getMaxQuality = function getMaxQuality(participant) {
-  let tmp = null;
-  if (null != participant.maxResolution) {
-    tmp = null;
-    if (null != participant.maxFrameRate) {
-      const obj = { maxFrameRate: null, maxResolution: null };
-      ({ maxFrameRate: obj.maxFrameRate, maxResolution: obj.maxResolution } = participant);
-      tmp = obj;
-    }
+export { getMaxQuality };
+export const useMaxQuality = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+  const cResult = c.c(16);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ApplicationStreamingSettingsStore];
+    const fn = function o() {
+      return state.getState();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
   }
-  return tmp;
-};
-export const useMaxQuality = function useMaxQuality(participant) {
-  _require = participant;
+  let fps = initialize.useStateFromStoresObject(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [AuthenticationStore];
+    const fn2 = function p() {
+      return id.getId();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp8 = fn2;
+    let tmp7 = items1;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = initialize;
+  const stateFromStores = initialize.useStateFromStores(tmp7, tmp8);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [RTCConnectionStore];
+    const fn3 = function c() {
+      return guildId.getGuildId();
+    };
+    cResult[4] = items2;
+    cResult[5] = fn3;
+    let tmp12 = fn3;
+    let tmp11 = items2;
+  } else {
+    tmp11 = cResult[4];
+    tmp12 = cResult[5];
+  }
+  const tmpResult3 = initialize;
+  const stateFromStores1 = initialize.useStateFromStores(tmp11, tmp12);
+  if (stateFromStores === user.user.id) {
+    if (0 === fps.resolution) {
+      let FIXED = ResolutionTypes.SOURCE;
+    } else {
+      FIXED = ResolutionTypes.FIXED;
+    }
+    if (cResult[6] === stateFromStores1) {
+      if (cResult[7] === fps.fps) {
+        if (cResult[8] === fps.resolution) {
+          if (cResult[9] === FIXED) {
+            let tmp20 = cResult[10];
+          }
+          if (cResult[11] === fps.fps) {
+          }
+          const obj2 = { maxFrameRate: fps.fps, maxResolution: tmp20 };
+          fps = fps.fps;
+          cResult[11] = fps;
+          cResult[12] = tmp20;
+          cResult[13] = obj2;
+        }
+      }
+    }
+    const size = { height: fps.resolution, width: 0, type: FIXED };
+    const tmp24 = getReportedStreamResolutionDefault("useMaxQuality", stateFromStores1, size, fps.fps);
+    cResult[6] = stateFromStores1;
+    cResult[7] = fps.fps;
+    cResult[8] = fps.resolution;
+    cResult[9] = FIXED;
+    cResult[10] = tmp24;
+    tmp20 = tmp24;
+  } else {
+    if (cResult[14] !== user) {
+      let tmp17 = null;
+      if (null != user.maxResolution) {
+        tmp17 = null;
+        if (null != user.maxFrameRate) {
+          ({ maxFrameRate: obj5.maxFrameRate, maxResolution: obj5.maxResolution } = user);
+          tmp17 = { maxFrameRate: null, maxResolution: null };
+          const obj3 = { maxFrameRate: null, maxResolution: null };
+        }
+      }
+      cResult[14] = user;
+      cResult[15] = tmp17;
+      let tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[15];
+    }
+    return tmp15;
+  }
+}) : ((arg0) => {
+  _require = arg0;
   const items = [ApplicationStreamingSettingsStore];
   const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => state.getState());
   let obj = require("initialize");
@@ -122,9 +222,9 @@ export const useMaxQuality = function useMaxQuality(participant) {
   let obj2 = require("initialize");
   const items2 = [RTCConnectionStore];
   const stateFromStores1 = require("initialize").useStateFromStores(items2, () => guildId.getGuildId());
-  const items3 = [stateFromStores, stateFromStores1, participant, stateFromStoresObject];
+  const items3 = [stateFromStores, stateFromStores1, arg0, stateFromStoresObject];
   return stateFromStores1.useMemo(() => {
-    if (stateFromStores === participant.user.id) {
+    if (stateFromStores === user.user.id) {
       const obj2 = { maxFrameRate: null, maxResolution: null };
       let tmp7Result = stateFromStoresObject;
       obj2.maxFrameRate = stateFromStoresObject.fps;
@@ -150,12 +250,12 @@ export const useMaxQuality = function useMaxQuality(participant) {
       return tmp3;
     }
   }, items3);
-};
+});
 export const trackStreamSettingsUpdate = function trackStreamSettingsUpdate(preset, resolution, frameRate, sound) {
   closure_0 = preset;
   closure_1 = resolution;
   closure_2 = frameRate;
-  const found = closure_1_12.find((preset) => {
+  const found = __initData.find((preset) => {
     let tmp = null == preset.preset;
     if (!tmp) {
       tmp = preset.preset === closure_0;
@@ -170,7 +270,7 @@ export const trackStreamSettingsUpdate = function trackStreamSettingsUpdate(pres
   });
   const currentUser = UserStore.getCurrentUser();
   const guildId = RTCConnectionStore.getGuildId();
-  let guild = null;
+  guild = null;
   if (null != guildId) {
     guild = GuildStore.getGuild(guildId);
   }

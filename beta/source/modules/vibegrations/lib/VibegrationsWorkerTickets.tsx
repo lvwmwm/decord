@@ -1,11 +1,11 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13366
+// Function ID: 13367
 // Name: VibegrationsWorkerTickets
-// Dependencies: [5, 1074, 1271, 13364, 2]
+// Dependencies: [5, 1078, 1275, 13367, 2]
 // Exports: mintRemixTicket, mintWorkerTicket
 
-// Module 13363 (VibegrationsWorkerTickets)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 13366 (VibegrationsWorkerTickets)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -38,7 +38,7 @@ let closure_5 = async function _mintTicket(url) {
     return obj7;
   })();
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWorkerTickets.tsx");
 

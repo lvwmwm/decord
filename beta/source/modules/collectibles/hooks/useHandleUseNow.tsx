@@ -1,24 +1,24 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11384
+// Function ID: 11385
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1076, 1973, 1115, 8440, 11354, 8436, 7229, 2]
+// Dependencies: [5, 32, 19, 1080, 1977, 1119, 8445, 11385, 8441, 7230, 2]
 // Exports: useHandleUseNow
 
-// Module 11353 (hooks/useHandleUseNow)
+// Module 11384 (hooks/useHandleUseNow)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 let require = fn;
-const isExternalProduct = fn(1076).isExternalProduct;
+const isExternalProduct = fn(1080).isExternalProduct;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
-export const useHandleUseNow = function useHandleUseNow(product) {
-  product = product.product;
+export const useHandleUseNow = function useHandleUseNow(cResult) {
+  const product = cResult.product;
   require = product;
-  const onSuccess = product.onSuccess;
-  const onError = product.onError;
+  const onSuccess = cResult.onSuccess;
+  const onError = cResult.onError;
   _slicedToArray = undefined;
   let firstAvatarDecoration;
   let memo;
@@ -84,7 +84,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
             closure_130_0 = undefined;
             if (!memo) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "IconComponent", done: null };
             } else {
               tmp4(true);
               const obj5 = {};

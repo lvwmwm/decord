@@ -1,83 +1,175 @@
-// Module ID: 15193
-// Function ID: 15194
+// Module ID: 15182
+// Function ID: 15183
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 7780, 21, 4756, 576, 8924, 8923, 12174, 1115, 2482, 4752, 15194, 15196, 5339, 4959, 15199, 1980, 1177, 15201, 2]
-// Exports: default
+// Dependencies: [19, 17, 7785, 21, 4758, 580, 558, 568, 8922, 8921, 12050, 1119, 2486, 4754, 15183, 15185, 5341, 4961, 15188, 1984, 1181, 15190, 2]
 
-// Module 15193 (FamilyCenterAcceptedLinks)
-import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import useUserLinks from "useUserLinks" /* 8923 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8924 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12174 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15196 */;
-import _modDef15201 from "module_15201" /* 15201 */;
+// Module 15182 (FamilyCenterAcceptedLinks)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import useUserLinks from "useUserLinks" /* 8921 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8922 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15185 */;
+import _modDef15190 from "module_15190" /* 15190 */;
 import noop from "module_19" /* 19 */;
 
+const util = intl(1119);
+const Text_Text = intl(4754);
+const useAgeSpecificText2 = intl(12050);
 require = fn;
 function FamilyCenterAcceptedLinkRow(otherUser) {
   const str = otherUser.otherUser;
   let tmp4Result = null;
   if (undefined !== str) {
     const obj2 = { otherUser: str, actions: null };
-    const intl = str(1115).intl;
+    const intl = str(1119).intl;
     let str1;
     if (str != null) {
       str1 = str.toString();
     }
     const obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
     const obj3 = { name: str1 };
-    obj.accessibilityLabel = intl.formatToPlainString(_modDef2482.T7DUoU, obj3);
+    obj.accessibilityLabel = intl.formatToPlainString(_modDef2486.T7DUoU, obj3);
     obj.onPress = function onPress() {
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15199, dependencyMap.paths), { otherUser: str });
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(15188, dependencyMap.paths), { otherUser: str });
     };
     obj.style = tmp.actionButton;
-    const obj4 = { size: str(1177).Icon.Sizes.SMALL, disableColor: true, source: _modDef15201 };
-    obj.children = closure_6(str(1177).Icon, obj4);
-    obj2.actions = closure_6(str(5339).PressableOpacity, obj);
+    const obj4 = { size: str(1181).Icon.Sizes.SMALL, disableColor: true, source: _modDef15190 };
+    obj.children = closure_6(str(1181).Icon, obj4);
+    obj2.actions = closure_6(str(5341).PressableOpacity, obj);
     tmp4Result = tmp4(FamilyCenterLinkRowDefault, obj2);
   }
   return tmp4Result;
 }
 const View = fn(17).View;
-const FamilyCenterConstants = fn(7780);
+const FamilyCenterConstants = fn(7785);
 ({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: closure_4, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: hasOwnProperty } = FamilyCenterConstants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4756);
+let createStyles = fn(4758);
 let obj2 = { container: { marginTop: 24 }, content: { display: "flex", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md }, empty: { padding: 20, alignSelf: "center" }, header: { marginBottom: 10 } };
 let closure_8 = createStyles.createStyles(obj2);
-createStyles = fn(4756);
-let obj5 = { actionButton: null };
+const ReactCompilerGating = fn(558);
+let obj3 = { display: "flex", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md };
+createStyles = fn(4758);
+let obj6 = { actionButton: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
-obj5.actionButton = size;
-let closure_9 = createStyles.createStyles(obj5);
+obj6.actionButton = size;
+let closure_9 = createStyles.createStyles(obj6);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterAcceptedLinks.tsx");
 
-export default function FamilyCenterAcceptedLinks() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl = require;
+  let stringResult = dependencyMap;
+  const cResult = c.c(18);
+  const tmp3 = closure_8();
+  const tmp5 = useIsInAdultAgeGroupDefault();
+  let activeLinkUsers = useUserLinks.useActiveLinkUsers();
+  const tmp6 = tmp5 ? React4 : hasOwnProperty;
+  if (cResult[0] === activeLinkUsers.length) {
+    if (cResult[1] === tmp6) {
+      let tmp7 = cResult[2];
+      let tmp8 = cResult[3];
+      let tmp9 = cResult[4];
+    }
+    const tmp7Result = tmp7(tmp8, tmp9);
+    if (cResult[5] === tmp7Result) {
+      if (cResult[6] === tmp3.header) {
+        let tmp13 = cResult[7];
+      }
+      if (cResult[8] === activeLinkUsers) {
+        if (cResult[9] === tmp3.empty) {
+          if (cResult[11] === tmp3.content) {
+            if (cResult[12] === tmp16) {
+              let tmp22 = cResult[13];
+            }
+            if (cResult[14] === tmp3.container) {
+              if (cResult[15] === tmp13) {
+                if (cResult[16] === tmp22) {
+                  let tmp26 = cResult[17];
+                }
+                return tmp26;
+              }
+            }
+            const obj3 = { style: tmp3.container, children: null };
+            const items = [tmp13, tmp22];
+            obj3.children = items;
+            const tmp29 = React5(View, obj3);
+            cResult[14] = tmp3.container;
+            cResult[15] = tmp13;
+            cResult[16] = tmp22;
+            cResult[17] = tmp29;
+            tmp26 = tmp29;
+          }
+          const obj4 = { style: tmp3.content, children: cResult[10] };
+          const tmp25 = timestampProducer(View, obj4);
+          cResult[11] = tmp3.content;
+          cResult[12] = cResult[10];
+          cResult[13] = tmp25;
+          tmp22 = tmp25;
+        }
+      }
+      if (0 === activeLinkUsers.length) {
+        const obj5 = { style: tmp3.empty, children: null };
+        const obj6 = { text: null };
+        intl = util.intl;
+        stringResult = intl.string(tmp4(2486).C4ScLD);
+        obj6.text = stringResult;
+        obj5.children = timestampProducer(tmp4(15183), obj6);
+        let mapped = timestampProducer(View, obj5);
+        const tmp4Result = tmp4(15183);
+      } else {
+        mapped = activeLinkUsers.map((otherUser) => closure_1_6(FamilyCenterAcceptedLinkRow, { otherUser }, "accepted-" + otherUser.id));
+      }
+      cResult[8] = activeLinkUsers;
+      activeLinkUsers = tmp3.empty;
+      cResult[9] = activeLinkUsers;
+      cResult[10] = mapped;
+    }
+    const obj7 = { style: tmp3.header, variant: "eyebrow", color: "text-default", children: tmp7Result };
+    const tmp15 = timestampProducer(Text_Text.Text, obj7);
+    cResult[5] = tmp7Result;
+    cResult[6] = tmp3.header;
+    cResult[7] = tmp15;
+    tmp13 = tmp15;
+  }
+  const obj8 = { count: activeLinkUsers.length, max: tmp6 };
+  const useAgeSpecificText = useAgeSpecificText2.useAgeSpecificText;
+  const intl2 = util.intl;
+  const formatToPlainStringResult = intl2.formatToPlainString(_modDef2486["+tnO34"], obj8);
+  const intl3 = util.intl;
+  const formatToPlainStringResult1 = intl3.formatToPlainString(_modDef2486["pu6/U0"], obj8);
+  cResult[0] = activeLinkUsers.length;
+  cResult[1] = tmp6;
+  cResult[2] = useAgeSpecificText;
+  cResult[3] = formatToPlainStringResult;
+  cResult[4] = formatToPlainStringResult1;
+  tmp9 = formatToPlainStringResult1;
+  tmp8 = formatToPlainStringResult;
+  tmp7 = useAgeSpecificText;
+}) : (() => {
   const tmp = closure_8();
   const tmp4 = useIsInAdultAgeGroupDefault();
   const activeLinkUsers = useUserLinks.useActiveLinkUsers();
   const obj2 = { count: activeLinkUsers.length, max: tmp4 ? React4 : hasOwnProperty };
-  const intl = tmp5(1115).intl;
-  const tmp5Result = useAgeSpecificText;
-  const intl2 = tmp5(1115).intl;
+  const intl = tmp5(1119).intl;
+  const tmp5Result = useAgeSpecificText2;
+  const intl2 = tmp5(1119).intl;
   const obj3 = { style: tmp.container, children: null };
-  const ageSpecificText = tmp5Result.useAgeSpecificText(intl.formatToPlainString(_modDef2482["+tnO34"], obj2), intl2.formatToPlainString(tmp2(2482)["pu6/U0"], obj2));
+  const ageSpecificText = tmp5Result.useAgeSpecificText(intl.formatToPlainString(_modDef2486["+tnO34"], obj2), intl2.formatToPlainString(tmp2(2486)["pu6/U0"], obj2));
   const items = [timestampProducer(Text_Text.Text, { style: tmp.header, variant: "eyebrow", color: "text-default", children: ageSpecificText }), ];
   const obj5 = { style: tmp.content, children: null };
   if (0 === activeLinkUsers.length) {
     const obj6 = { style: tmp.empty, children: null };
     const obj7 = { text: null };
-    const intl3 = tmp5(1115).intl;
-    obj7.text = intl3.string(tmp2(2482).C4ScLD);
-    obj6.children = tmp10(tmp2(15194), obj7);
+    const intl3 = tmp5(1119).intl;
+    obj7.text = intl3.string(tmp2(2486).C4ScLD);
+    obj6.children = tmp10(tmp2(15183), obj7);
     let mapped = tmp10(tmp9, obj6);
-    const tmp2Result = tmp2(15194);
+    const tmp2Result = tmp2(15183);
   } else {
     mapped = activeLinkUsers.map((otherUser) => closure_1_6(FamilyCenterAcceptedLinkRow, { otherUser }, "accepted-" + otherUser.id));
   }
@@ -85,4 +177,4 @@ export default function FamilyCenterAcceptedLinks() {
   items[1] = timestampProducer(View, obj5);
   obj3.children = items;
   return React5(View, obj3);
-};
+});

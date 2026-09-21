@@ -1,11 +1,11 @@
-// Module ID: 13278
-// Function ID: 13279
+// Module ID: 13281
+// Function ID: 13282
 // Name: MediaViewerItemPresenter
-// Dependencies: [19, 17, 21, 13277, 8535, 13276, 4492, 4493, 2]
+// Dependencies: [19, 17, 21, 13280, 8540, 13279, 4497, 4498, 2]
 // Exports: default
 
-// Module 13278 (MediaViewerItemPresenter)
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+// Module 13281 (MediaViewerItemPresenter)
+import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

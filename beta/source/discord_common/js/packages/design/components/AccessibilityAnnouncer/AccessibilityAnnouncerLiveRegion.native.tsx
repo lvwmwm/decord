@@ -1,18 +1,21 @@
-// Module ID: 4468
-// Function ID: 4469
+// Module ID: 4473
+// Function ID: 4474
 // Name: AccessibilityAnnouncerLiveRegion
-// Dependencies: [19, 17, 21, 4469, 2]
+// Dependencies: [19, 17, 21, 4474, 558, 568, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 4468 (AccessibilityAnnouncerLiveRegion)
+// Module 4473 (AccessibilityAnnouncerLiveRegion)
+import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 
+require = fn;
 get_ActivityIndicator = fn(17);
-({ StyleSheet, Text: closure_0 } = get_ActivityIndicator);
+({ StyleSheet, Text: c2 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const module_4469 = fn(4469);
-const state = module_4469.create(() => ({ message: "ip", version: false }));
-const liveRegion = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
+const module_4474 = fn(4474);
+const state = module_4474.create(() => ({ message: "duration", version: false }));
+const styles = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncerLiveRegion.native.tsx");
 
@@ -20,7 +23,21 @@ export const updateAccessibilityAnnouncerLiveRegionMessage = function updateAcce
   const message = intl;
   state.setState((version) => ({ message, version: version.version + 1 }));
 };
-export const AccessibilityAnnouncerLiveRegion = noop.memo(() => {
+export const AccessibilityAnnouncerLiveRegion = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  ({ message, version } = state());
+  if (cResult[0] === message) {
+    if (cResult[1] === version) {
+      let tmp3 = cResult[2];
+    }
+    return tmp3;
+  }
+  const tmp4 = <React2 key={version} accessibilityLiveRegion="polite" pointerEvents="none" style={closure_5.liveRegion}>{message}</React2>;
+  cResult[0] = message;
+  cResult[1] = version;
+  cResult[2] = tmp4;
+  tmp3 = tmp4;
+}) : (() => {
   const tmp = state();
-  return <React key={tmp.version} accessibilityLiveRegion="polite" pointerEvents="none" style={liveRegion.liveRegion}>{tmp.message}</React>;
-});
+  return <React2 key={tmp.version} accessibilityLiveRegion="polite" pointerEvents="none" style={closure_5.liveRegion}>{tmp.message}</React2>;
+}));

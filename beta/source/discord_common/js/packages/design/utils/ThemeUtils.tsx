@@ -1,11 +1,11 @@
-// Module ID: 4478
-// Function ID: 4479
+// Module ID: 4483
+// Function ID: 4484
 // Name: ThemeUtils
-// Dependencies: [577, 2]
+// Dependencies: [581, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 4478 (ThemeUtils)
-import ThemeTypes from "ThemeTypes" /* 577 */;
+// Module 4483 (ThemeUtils)
+import ThemeTypes from "ThemeTypes" /* 581 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/utils/ThemeUtils.tsx");
@@ -15,8 +15,8 @@ export const isThemeLight = function isThemeLight(arg0) {
 };
 export const isThemeDark = function isThemeDark(arg0) {
   if (ThemeTypes.ThemeTypes.ASH !== arg0) {
-    if (tmp(577).ThemeTypes.ONYX !== arg0) {
-      if (tmp(577).ThemeTypes.DARK !== arg0) {
+    if (tmp(581).ThemeTypes.ONYX !== arg0) {
+      if (tmp(581).ThemeTypes.DARK !== arg0) {
         return false;
       }
     }

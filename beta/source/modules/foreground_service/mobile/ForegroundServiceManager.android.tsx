@@ -1,12 +1,12 @@
-// Module ID: 7998
-// Function ID: 7999
+// Module ID: 8003
+// Function ID: 8004
 // Name: ForegroundServiceManager
-// Dependencies: [17, 7999, 1331, 1982, 2]
+// Dependencies: [17, 8004, 1335, 1986, 2]
 
-// Module 7998 (ForegroundServiceManager)
+// Module 8003 (ForegroundServiceManager)
 import _mod17 from "module_17" /* 17 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7999 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8004 */;
+import LifecycleManager from "LifecycleManager" /* 1986 */;
 import size from "module_2" /* 2 */;
 
 let obj = importDefault;
@@ -76,7 +76,7 @@ prototype["updateServiceHandler"] = function updateServiceHandler(arg0, usesGate
       const result = serviceNotifications.set(arg0, usesGateway);
       self.handleChange();
     }
-    tmp16 = obj(1331);
+    tmp16 = obj(1335);
   }
 };
 prototype["removeServiceHandler"] = function removeServiceHandler(arg0) {

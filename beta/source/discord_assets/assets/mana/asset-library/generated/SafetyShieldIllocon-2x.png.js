@@ -1,8 +1,8 @@
-// Module ID: 6643
-// Function ID: 6644
+// Module ID: 6641
+// Function ID: 6642
 // Dependencies: [2]
 
-// Module 6643
+// Module 6641
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyShieldIllocon-2x.png.js");

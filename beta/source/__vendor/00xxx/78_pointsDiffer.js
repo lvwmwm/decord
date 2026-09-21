@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 78 (pointsDiffer)
-let closure_0 = { x: "paths", y: "scales" };
+let closure_0 = { x: "Array", y: "Set" };
 
 export default function pointsDiffer(arg0, arg1) {
   let point = arg0;

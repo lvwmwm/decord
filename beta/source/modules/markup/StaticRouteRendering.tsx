@@ -1,11 +1,11 @@
-// Module ID: 5216
-// Function ID: 5217
+// Module ID: 5218
+// Function ID: 5219
 // Name: StaticRouteRendering
-// Dependencies: [1115, 2]
+// Dependencies: [1119, 2]
 // Exports: staticRouteToItemString, staticRouteToTranslation
 
-// Module 5216 (StaticRouteRendering)
-import util from "util" /* 1115 */;
+// Module 5218 (StaticRouteRendering)
+import util from "util" /* 1119 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/StaticRouteRendering.tsx");

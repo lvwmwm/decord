@@ -79,7 +79,7 @@ class KeyboardAvoidingView {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ class KeyboardAvoidingView {
             props.onLayout(closure_129_0);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         } catch (tmp18) {
           c4 = tmp;
           throw tmp18;
@@ -165,7 +165,7 @@ class KeyboardAvoidingView {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -267,7 +267,7 @@ dependencyMap = asyncGeneratorStep(async function(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

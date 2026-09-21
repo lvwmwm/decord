@@ -1,11 +1,11 @@
 // Module ID: 5825
 // Function ID: 5826
 // Name: CardTokens
-// Dependencies: [4756, 576, 2]
+// Dependencies: [4758, 580, 2]
 // Exports: createCardShadowToken
 
 // Module 5825 (CardTokens)
-import nativeDefault from "native" /* 576 */;
+import nativeDefault from "native" /* 580 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

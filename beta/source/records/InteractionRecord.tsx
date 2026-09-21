@@ -1,11 +1,11 @@
-// Module ID: 4979
-// Function ID: 4980
+// Module ID: 4981
+// Function ID: 4982
 // Name: InteractionRecord
-// Dependencies: [1387, 1386, 2]
+// Dependencies: [1391, 1390, 2]
 
-// Module 4979 (InteractionRecord)
-import Record from "Record" /* 1387 */;
-import UserRecord from "UserRecord" /* 1386 */;
+// Module 4981 (InteractionRecord)
+import Record from "Record" /* 1391 */;
+import UserRecord from "UserRecord" /* 1390 */;
 
 const prototype = function InteractionRecord(name) {
   const tmp = new prototype(new.target, name, new.target);

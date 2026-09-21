@@ -1,18 +1,42 @@
-// Module ID: 1878
-// Function ID: 1879
+// Module ID: 1882
+// Function ID: 1883
 // Name: useSystemKeyboardHeight
-// Dependencies: [1481, 1482, 2]
-// Exports: default, getSystemKeyboardHeight
+// Dependencies: [1485, 1486, 558, 568, 2]
+// Exports: getSystemKeyboardHeight
 
-// Module 1878 (useSystemKeyboardHeight)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1482 */;
+// Module 1882 (useSystemKeyboardHeight)
+import c from "c" /* 568 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1485 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1486 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = { excludeSafeAreaInsets: false };
 const result = size.fileFinishedImporting("modules/keyboard/native/useSystemKeyboardHeight.native.tsx");
 
-export default function useSystemKeyboardHeight() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp = arg0;
+  const cResult = c.c(3);
+  if (undefined === arg0) {
+    tmp = closure_3;
+  }
+  const excludeSafeAreaInsets = tmp.excludeSafeAreaInsets;
+  closure_0 = tmp5;
+  const appEntryKey = AppEntryKeyContext.useAppEntryKey();
+  if (cResult[0] === appEntryKey) {
+    if (cResult[1] === tmp5) {
+      let tmp7 = cResult[2];
+    }
+    return KeyboardUIStoreDefault(tmp7);
+  }
+  const fn = function s(arg0) {
+    return closure_0 ? arg0.byAppEntry[appEntryKey].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[appEntryKey].keyboardHeight;
+  };
+  cResult[0] = appEntryKey;
+  cResult[1] = undefined !== excludeSafeAreaInsets && excludeSafeAreaInsets;
+  cResult[2] = fn;
+  tmp7 = fn;
+}) : (() => {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_3;
@@ -23,7 +47,7 @@ export default function useSystemKeyboardHeight() {
   }
   closure_1 = AppEntryKeyContext.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => flag ? arg0.byAppEntry[closure_1].keyboardHeightExcludingSafeAreaInsets : arg0.byAppEntry[closure_1].keyboardHeight);
-};
+});
 export const getSystemKeyboardHeight = function getSystemKeyboardHeight(arg0) {
   let tmp = arg0;
   if (arg0 === undefined) {

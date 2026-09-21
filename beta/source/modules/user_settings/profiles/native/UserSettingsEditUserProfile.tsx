@@ -1,23 +1,152 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 14853
+// Function ID: 14854
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1372, 21, 7407, 7427, 504, 8456, 14865, 2]
-// Exports: default
+// Dependencies: [19, 1376, 21, 558, 568, 7409, 7429, 504, 8461, 14854, 2]
 
-// Module 14864 (UserSettingsEditUserProfile)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8456 */;
+// Module 14853 (UserSettingsEditUserProfile)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserStore from "UserStore" /* 1376 */;
 
-const UserProfileEditFormDefault = tmp(14865);
+const UserProfileEditFormDefault = tmp3(14854);
 const require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditUserProfile.tsx");
+let result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditUserProfile.tsx");
 
-export default function UserSettingsEditUserProfile(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let AnalyticsLocationProvider = stateFromStores;
+  let tmp = dependencyMap;
+  const cResult = stateFromStores(568).c(11);
+  const obj = stateFromStores(568);
+  const analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.USER_SETTINGS_USER_PROFILE).analyticsLocations;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function u() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const result = AnalyticsLocationProvider(504);
+  stateFromStores = result.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] !== stateFromStores) {
+    class S {
+      constructor() {
+        obj = closure_0;
+        if (null != closure_0) {
+          tmp = closure_1;
+          tmp2 = closure_2;
+          num = 80;
+          tmp3 = closure_1(closure_2[8]);
+          tmp3Result = tmp3(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+        }
+        return;
+      }
+    }
+    const items1 = [stateFromStores];
+    cResult[2] = stateFromStores;
+    cResult[3] = S;
+    cResult[4] = items1;
+    let tmp10 = items1;
+    const tmp9 = S;
+  } else {
+    class S {
+      constructor() {
+        obj = closure_0;
+        if (null != closure_0) {
+          tmp = closure_1;
+          tmp2 = closure_2;
+          num = 80;
+          tmp3 = closure_1(closure_2[8]);
+          tmp3Result = tmp3(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+        }
+        return;
+      }
+    }
+    tmp10 = cResult[4];
+  }
+  const effect = noop.useEffect(tmp9, tmp10);
+  if (null == stateFromStores) {
+    class S {
+      constructor() {
+        obj = closure_0;
+        if (null != closure_0) {
+          tmp = closure_1;
+          tmp2 = closure_2;
+          num = 80;
+          tmp3 = closure_1(closure_2[8]);
+          tmp3Result = tmp3(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+        }
+        return;
+      }
+    }
+  } else {
+    class S {
+      constructor() {
+        obj = closure_0;
+        if (null != closure_0) {
+          tmp = closure_1;
+          tmp2 = closure_2;
+          num = 80;
+          tmp3 = closure_1(closure_2[8]);
+          tmp3Result = tmp3(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+        }
+        return;
+      }
+    }
+    if (cResult[5] === stateFromStores) {
+      class S {
+        constructor() {
+          obj = closure_0;
+          if (null != closure_0) {
+            tmp = closure_1;
+            tmp2 = closure_2;
+            num = 80;
+            tmp3 = closure_1(closure_2[8]);
+            tmp3Result = tmp3(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+          }
+          return;
+        }
+      }
+      if (cResult[8] === analyticsLocations) {
+        class S {
+          constructor() {
+            obj = closure_0;
+            if (null != closure_0) {
+              tmp = closure_1;
+              tmp2 = closure_2;
+              num = 80;
+              tmp3 = closure_1(closure_2[8]);
+              tmp3Result = tmp3(obj.id, obj.getAvatarURL(undefined, 80), { dispatchWait: true });
+            }
+            return;
+          }
+        }
+      }
+      AnalyticsLocationProvider = AnalyticsLocationProvider(7409).AnalyticsLocationProvider;
+      const obj2 = { value: analyticsLocations, children: tmp12 };
+      tmp = <AnalyticsLocationProvider value={analyticsLocations}>{tmp12}</AnalyticsLocationProvider>;
+      cResult[8] = analyticsLocations;
+      cResult[9] = tmp12;
+      cResult[10] = tmp;
+    }
+    const obj3 = { currentUser: stateFromStores };
+    const merged = Object.assign(arg0);
+    const tmp18 = jsx(UserProfileEditFormDefault, { currentUser: stateFromStores });
+    cResult[5] = stateFromStores;
+    cResult[6] = arg0;
+    cResult[7] = tmp18;
+    const tmp3Result = UserProfileEditFormDefault;
+  }
+}) : ((arg0) => {
   let tmp3 = useAnalyticsLocationsDefault;
   const tmp4 = stateFromStores;
   const items = [UserStore];
@@ -34,8 +163,8 @@ export default function UserSettingsEditUserProfile(arg0) {
     const obj3 = { currentUser: stateFromStores };
     const merged = Object.assign(arg0);
     obj2.children = jsx(UserProfileEditFormDefault, { currentUser: stateFromStores });
-    tmp7 = jsx(tmp4(7407).AnalyticsLocationProvider, { value: tmp3(AnalyticsLocationDefault.USER_SETTINGS_USER_PROFILE).analyticsLocations, children: null });
+    tmp7 = jsx(tmp4(7409).AnalyticsLocationProvider, { value: tmp3(AnalyticsLocationDefault.USER_SETTINGS_USER_PROFILE).analyticsLocations, children: null });
     const tmpResult = UserProfileEditFormDefault;
   }
   return tmp7;
-};
+});

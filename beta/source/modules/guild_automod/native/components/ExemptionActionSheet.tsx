@@ -1,13 +1,12 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 17976
+// Function ID: 17977
 // Name: ExemptionActionSheet
-// Dependencies: [32, 19, 17, 21, 4756, 576, 7294, 5734, 5821, 7395, 7394, 9803, 1115, 4723, 7295, 7300, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 7296, 5736, 4725, 5819, 1119, 9781, 7396, 7297, 7302, 7397, 2]
 
-// Module 17973 (ExemptionActionSheet)
-import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5734 */;
+// Module 17976 (ExemptionActionSheet)
+import nativeDefault from "native" /* 580 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5736 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,15 +16,192 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { search: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, list: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.list = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+const obj4 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptionActionSheet.tsx");
 
-export default function ExemptionActionSheet(getSearchText) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((getId) => {
+  const cResult = initialSelected(getSearchText[7]).c(39);
+  ({ title, searchPlaceholder, listId, items, initialSelected } = getId);
+  getId = getId.getId;
+  getSearchText = getId.getSearchText;
+  const renderLabel = getId.renderLabel;
+  const renderIcon = getId.renderIcon;
+  const onSave = getId.onSave;
+  closure_8();
+  getId(getSearchText[8])();
+  if (cResult[0] !== initialSelected) {
+    class S {
+      constructor() {
+        set = new Set(initialSelected);
+        return set;
+      }
+    }
+    cResult[0] = initialSelected;
+    cResult[1] = S;
+    let tmp4 = S;
+  } else {
+    class S {
+      constructor() {
+        set = new Set(initialSelected);
+        return set;
+      }
+    }
+  }
+  const tmp5 = renderLabel(renderIcon.useState(tmp4), 2);
+  const first = tmp5[0];
+  closure_7 = tmp5[1];
+  let obj = initialSelected(getSearchText[7]);
+  const str = renderLabel(renderIcon.useState(""), 2)[0];
+  if ("" === str) {
+    class S {
+      constructor() {
+        set = new Set(initialSelected);
+        return set;
+      }
+    }
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class M {
+        constructor(arg0) {
+          closure_0 = getId;
+          tmp = closure_7((items) => {
+            const set = new Set(items);
+            if (!set.delete(closure_0)) {
+              set.add(closure_0);
+            }
+            return set;
+          });
+          return;
+        }
+      }
+      cResult[6] = M;
+      const tmp11 = M;
+    } else {
+      class M {
+        constructor(arg0) {
+          closure_0 = getId;
+          tmp = closure_7((items) => {
+            const set = new Set(items);
+            if (!set.delete(closure_0)) {
+              set.add(closure_0);
+            }
+            return set;
+          });
+          return;
+        }
+      }
+    }
+    closure_10 = tmp11;
+    if (cResult[7] === onSave) {
+      class M {
+        constructor(arg0) {
+          closure_0 = getId;
+          tmp = closure_7((items) => {
+            const set = new Set(items);
+            if (!set.delete(closure_0)) {
+              set.add(closure_0);
+            }
+            return set;
+          });
+          return;
+        }
+      }
+      if (cResult[10] === getId) {
+        class M {
+          constructor(arg0) {
+            closure_0 = getId;
+            tmp = closure_7((items) => {
+              const set = new Set(items);
+              if (!set.delete(closure_0)) {
+                set.add(closure_0);
+              }
+              return set;
+            });
+            return;
+          }
+        }
+      }
+      const fn = function q(arg0, arg1) {
+        const tmp2 = getId(length[arg1]);
+        closure_0 = tmp2;
+        const obj = { start: 0 === arg1, end: arg1 === length.length - 1, icon: null, label: null, labelLineClamp: 1, checked: null, onPress: null };
+        let tmp4;
+        if (renderIcon != null) {
+          tmp4 = renderIcon(tmp);
+        }
+        obj.icon = tmp4;
+        obj.label = renderLabel(length[arg1]);
+        obj.checked = first.has(tmp2);
+        obj.onPress = function onPress() {
+          return closure_10(closure_0);
+        };
+        return first(initialSelected(getSearchText[11]).TableCheckboxRow, obj, tmp2);
+      };
+      cResult[10] = getId;
+      cResult[11] = renderIcon;
+      class O {
+        constructor() {
+          obj = closure_1(closure_2[10]);
+          hideActionSheetResult = obj.hideActionSheet();
+          tmp2 = onSave(closure_6);
+          return;
+        }
+      }
+      cResult[13] = first;
+      cResult[14] = items;
+      cResult[15] = fn;
+    }
+    class O {
+      constructor() {
+        obj = closure_1(closure_2[10]);
+        hideActionSheetResult = obj.hideActionSheet();
+        tmp2 = onSave(closure_6);
+        return;
+      }
+    }
+    cResult[7] = onSave;
+    cResult[8] = first;
+    cResult[9] = O;
+  } else {
+    class M {
+      constructor(arg0) {
+        closure_0 = getId;
+        tmp = closure_7((items) => {
+          const set = new Set(items);
+          if (!set.delete(closure_0)) {
+            set.add(closure_0);
+          }
+          return set;
+        });
+        return;
+      }
+    }
+    closure_8 = str.toLowerCase();
+    const found = items.filter((item) => {
+      const tmp = fuzzysearchDefault;
+      return tmp(closure_8, getSearchText(item).toLowerCase());
+    });
+    cResult[2] = getSearchText;
+    cResult[3] = items;
+    cResult[4] = str;
+    class O {
+      constructor() {
+        obj = closure_1(closure_2[10]);
+        hideActionSheetResult = obj.hideActionSheet();
+        tmp2 = onSave(closure_6);
+        return;
+      }
+    }
+    cResult[5] = found;
+  }
+}) : ((getSearchText) => {
   let items = getSearchText.items;
   ({ initialSelected: importDefault, getId } = getSearchText);
   getSearchText = getSearchText.getSearchText;
@@ -78,7 +254,7 @@ export default function ExemptionActionSheet(getSearchText) {
     obj.onPress = function onPress() {
       return callback(closure_0);
     };
-    return onSave(items(getId[8]).TableCheckboxRow, obj, tmp2);
+    return onSave(items(getId[11]).TableCheckboxRow, obj, tmp2);
   }, items2);
   let obj = { scrollable: true, startExpanded: true, header: null, children: null };
   const obj2 = { title, trailing: null };
@@ -89,14 +265,14 @@ export default function ExemptionActionSheet(getSearchText) {
     ActionSheetActionCreatorsDefault.hideActionSheet();
     onSave(first);
   };
-  obj2.trailing = onSave(items(getId[11]).ActionSheetHeaderPressableText, obj3);
-  obj.header = onSave(items(getId[10]).BottomSheetTitleHeader, obj2);
+  obj2.trailing = onSave(items(getId[13]).ActionSheetHeaderPressableText, obj3);
+  obj.header = onSave(items(getId[14]).BottomSheetTitleHeader, obj2);
   let tmp2 = require("useScaledRowHeight")();
-  const items3 = [onSave(renderIcon, { style: tmp.search, children: onSave(items(getId[14]).SearchField, { size: "md", onChange: tmp5[1], placeholder: searchPlaceholder }) }), ];
+  const items3 = [onSave(renderIcon, { style: tmp.search, children: onSave(items(getId[15]).SearchField, { size: "md", onChange: tmp5[1], placeholder: searchPlaceholder }) }), ];
   const obj5 = { inActionSheet: true, keyboardShouldPersistTaps: "handled", style: tmp.list, listId, estimatedListSize: "windowSize", itemSize: tmp2, sections: null, renderItem: callback1 };
   const items4 = [memo.length];
   obj5.sections = items4;
   items3[1] = onSave(require("FastestList"), obj5);
   obj.children = items3;
-  return first(items(getId[9]).BottomSheet, obj);
-};
+  return first(items(getId[17]).BottomSheet, obj);
+});

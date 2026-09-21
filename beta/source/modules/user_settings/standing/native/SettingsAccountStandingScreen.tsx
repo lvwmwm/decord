@@ -1,17 +1,26 @@
-// Module ID: 15042
-// Function ID: 15043
+// Module ID: 15031
+// Function ID: 15032
 // Name: SettingsAccountStandingScreen
-// Dependencies: [21, 15043, 2]
-// Exports: default
+// Dependencies: [21, 558, 568, 15032, 2]
 
-// Module 15042 (SettingsAccountStandingScreen)
+// Module 15031 (SettingsAccountStandingScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 15043 */;
+import c from "c" /* 568 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 15032 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/standing/native/SettingsAccountStandingScreen.tsx");
 
-export default function SettingsAccountStandingScreen() {
-  return jsx(SafetyHubPageDefault, { visible: true });
-};
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = jsx(SafetyHubPageDefault, { visible: true });
+    cResult[0] = tmp6;
+    let first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => jsx(SafetyHubPageDefault, { visible: true }));

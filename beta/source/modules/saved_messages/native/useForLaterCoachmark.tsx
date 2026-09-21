@@ -1,38 +1,134 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16744
+// Function ID: 16745
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 17, 2038, 21, 2027, 4756, 13601, 8098, 7630, 1115, 11394, 2]
-// Exports: default
+// Dependencies: [32, 19, 17, 2042, 21, 2031, 4758, 558, 568, 13604, 8103, 7632, 1119, 10452, 2]
 
-// Module 16741 (useForLaterCoachmark)
-import util from "util" /* 1115 */;
-import _modDef13601 from "module_13601" /* 13601 */;
+// Module 16744 (useForLaterCoachmark)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import _modDef13604 from "module_13604" /* 13604 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
+
 require = fn;
-function CoachmarkImg() {
-  const obj = { source: _modDef13601, style: closure_9().imageContainer };
-  return <Image source={_modDef13601} style={closure_9().imageContainer} />;
-}
 const Image = fn(17).Image;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-let closure_8 = fn(2027).DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
-const createStyles = fn(4756);
+let closure_8 = fn(2031).DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
+const createStyles = fn(4758);
 let closure_9 = createStyles.createStyles({ imageContainer: { width: 100, height: 80 } });
+let ReactCompilerGating = fn(558);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const tmp3 = closure_9();
+  if (cResult[0] !== tmp3.imageContainer) {
+    const obj2 = { source: _modDef13604, style: tmp3.imageContainer };
+    const tmp8 = <Image source={_modDef13604} style={tmp3.imageContainer} />;
+    cResult[0] = tmp3.imageContainer;
+    cResult[1] = tmp8;
+    let tmp4 = tmp8;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const obj = { source: _modDef13604, style: closure_9().imageContainer };
+  return <Image source={_modDef13604} style={closure_9().imageContainer} />;
+});
+ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
 
-export default function useForLaterCoachmark(targetRef) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(10);
+  const obj = require("c");
+  const isForLaterExperimentOn = require("ForLaterExperiment").useIsForLaterExperimentOn("forLaterCoachmark");
+  if (cResult[0] !== isForLaterExperimentOn) {
+    if (isForLaterExperimentOn) {
+      const items = [closure_8];
+      let items1 = items;
+    } else {
+      items1 = [];
+    }
+    cResult[0] = isForLaterExperimentOn;
+    cResult[1] = items1;
+  } else {
+    const tmp8 = _slicedToArray(tmp(7632).useSelectedDismissibleContent(cResult[1], undefined, true), 2);
+    _require = tmp9;
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1119).intl;
+      const stringResult = intl.string(tmp(1119).t.qPbFK2);
+      const intl2 = tmp(1119).intl;
+      const stringResult1 = intl2.string(tmp(1119).t.URrJq1);
+      cResult[2] = stringResult;
+      cResult[3] = stringResult1;
+      let tmp12 = stringResult1;
+      let tmp11 = stringResult;
+    } else {
+      tmp11 = cResult[2];
+      tmp12 = cResult[3];
+    }
+    if (cResult[4] !== tmp8[1]) {
+      class R {
+        constructor() {
+          tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+          return;
+        }
+      }
+      cResult[4] = tmp9;
+      cResult[5] = R;
+    } else {
+      class R {
+        constructor() {
+          tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+          return;
+        }
+      }
+    }
+    const _Symbol2 = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      class D {
+        constructor() {
+          return closure_1_7(closure_1_10, {});
+        }
+      }
+      cResult[6] = D;
+      const tmp17 = D;
+    } else {
+      class D {
+        constructor() {
+          return closure_1_7(closure_1_10, {});
+        }
+      }
+    }
+    if (cResult[7] === tmp8[0] === closure_8) {
+      class D {
+        constructor() {
+          return closure_1_7(closure_1_10, {});
+        }
+      }
+      const coachmark = tmp(10452).useCoachmark(arg0, tmp19);
+      return tmp9;
+    }
+    const obj3 = { title: tmp11, description: tmp12, position: "bottom", visible: tmp8[0] === closure_8, onDismiss: tmp16, renderImgComponent: tmp17 };
+    cResult[7] = tmp8[0] === closure_8;
+    cResult[8] = tmp16;
+    cResult[9] = obj3;
+    tmp19 = obj3;
+    const tmpResult = tmp(7632);
+  }
+}) : ((arg0) => {
   if (obj.useIsForLaterExperimentOn("forLaterCoachmark")) {
     const items = [closure_8];
     let items1 = items;
   } else {
     items1 = [];
   }
-  obj = first(8098);
-  const tmp4 = _slicedToArray(first(7630).useSelectedDismissibleContent(items1, undefined, true), 2);
+  obj = first(8103);
+  const tmp4 = _slicedToArray(first(7632).useSelectedDismissibleContent(items1, undefined, true), 2);
   first = tmp4[0];
   closure_1 = tmp6;
   const items2 = [tmp4[1], first];
@@ -51,7 +147,7 @@ export default function useForLaterCoachmark(targetRef) {
     };
     return obj;
   }, items2);
-  const tmpResult = first(7630);
-  const coachmark = first(11394).useCoachmark(targetRef, memo);
+  const tmpResult = first(7632);
+  const coachmark = first(10452).useCoachmark(arg0, memo);
   return tmp4[1];
-};
+});

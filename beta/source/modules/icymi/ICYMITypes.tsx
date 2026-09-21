@@ -1,11 +1,11 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 8624
+// Function ID: 8625
 // Name: ICYMITypes
-// Dependencies: [1074, 2]
+// Dependencies: [1078, 2]
 // Exports: typeToString
 
-// Module 8619 (ICYMITypes)
-import Constants from "Constants" /* 1074 */;
+// Module 8624 (ICYMITypes)
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ ChannelTypes: closure_0, MessageEmbedTypes } = Constants);

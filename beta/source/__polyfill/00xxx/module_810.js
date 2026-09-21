@@ -1,76 +1,117 @@
 // Module ID: 810
 // Function ID: 811
-// Dependencies: [32, 803, 805, 811, 705]
-// Exports: cleanupPendingSpansForTransport, completeSpanWithResults, storeSpanForRequest
+// Dependencies: [809, 708, 811, 807, 812, 717, 813, 735]
+// Exports: buildMcpServerSpanConfig, createMcpNotificationSpan, createMcpOutgoingNotificationSpan
 
 // Module 810
-import SPAN_STATUS_ERROR from "SPAN_STATUS_ERROR" /* 705 */;
-import extractClientInfo from "extractClientInfo" /* 803 */;
-import extractPromptResultAttributes from "extractPromptResultAttributes" /* 811 */;
-import _slicedToArray from "module_32" /* 32 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 708 */;
+import _mod717 from "module_717" /* 717 */;
+import _mod735 from "module_735" /* 735 */;
+import extractClientInfo from "extractClientInfo" /* 807 */;
+import CLIENT_ADDRESS_ATTRIBUTE from "CLIENT_ADDRESS_ATTRIBUTE" /* 809 */;
+import extractTargetInfo from "extractTargetInfo" /* 811 */;
+import _mod812 from "module_812" /* 812 */;
+import filterMcpPiiFromSpanData from "filterMcpPiiFromSpanData" /* 813 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-const weakMap = new WeakMap();
+require = arg1;
+const dependencyMap = arg6;
+function createMcpSpan(arg0) {
+  ({ type, message, options } = arg0);
+  ({ method, params } = message);
+  let name = method;
+  ({ transport, extra, callback } = arg0);
+  if ("request" === type) {
+    let obj2 = params;
+    if (!params) {
+      obj2 = {};
+    }
+    const target = extractTargetInfo.extractTargetInfo(method, obj2).target;
+    let combined = method;
+    if (target) {
+      const _HermesInternal = HermesInternal;
+      combined = "" + method + " " + target;
+    }
+    name = combined;
+  }
+  const obj3 = {};
+  const merged = Object.assign(extractClientInfo.buildTransportAttributes(transport, extra));
+  obj3[CLIENT_ADDRESS_ATTRIBUTE.MCP_METHOD_NAME_ATTRIBUTE] = method;
+  let recordInputs;
+  if (options != null) {
+    recordInputs = options.recordInputs;
+  }
+  const merged1 = Object.assign(_mod812.buildTypeSpecificAttributes(type, message, params, recordInputs));
+  if ("request" === type) {
+    let MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = tmp6(809).MCP_SERVER_OP_VALUE;
+    let MCP_NOTIFICATION_ORIGIN_VALUE = tmp6(809).MCP_FUNCTION_ORIGIN_VALUE;
+  } else if ("notification-incoming" === type) {
+    MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = tmp6(809).MCP_NOTIFICATION_CLIENT_TO_SERVER_OP_VALUE;
+    MCP_NOTIFICATION_ORIGIN_VALUE = tmp6(809).MCP_NOTIFICATION_ORIGIN_VALUE;
+  } else if ("notification-outgoing" === type) {
+    MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE = tmp6(809).MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE;
+    MCP_NOTIFICATION_ORIGIN_VALUE = tmp6(809).MCP_NOTIFICATION_ORIGIN_VALUE;
+  }
+  const obj6 = {};
+  obj6[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP] = MCP_NOTIFICATION_SERVER_TO_CLIENT_OP_VALUE;
+  obj6[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = MCP_NOTIFICATION_ORIGIN_VALUE;
+  obj6[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = CLIENT_ADDRESS_ATTRIBUTE.MCP_ROUTE_SOURCE_VALUE;
+  const merged2 = Object.assign(obj6);
+  const client = _mod717.getClient();
+  let sendDefaultPii;
+  if (client != null) {
+    sendDefaultPii = client.getOptions().sendDefaultPii;
+  }
+  const tmp6Result = _mod717;
+  const BooleanResult = Boolean(sendDefaultPii);
+  const attributes = filterMcpPiiFromSpanData.filterMcpPiiFromSpanData(obj3, BooleanResult);
+  const tmp6Result3 = filterMcpPiiFromSpanData;
+  return _mod735.startSpan({ name, forceTransaction: true, attributes }, callback);
+}
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
 
-export const cleanupPendingSpansForTransport = function cleanupPendingSpansForTransport(arg0) {
-  value = weakMap.get(arg0);
-  if (value) {
-    const tmp2 = value[Symbol.iterator]();
-    while (tmp2 !== undefined) {
-      let tmp7 = _slicedToArray(tmp4, 2)[1];
-      let span = tmp7.span;
-      let obj = { code: null, message: "cancelled" };
-      obj.code = SPAN_STATUS_ERROR.SPAN_STATUS_ERROR;
-      let setStatusResult = span.setStatus(obj);
-      let span2 = tmp7.span;
-      let endResult = span2.end();
-      continue;
-    }
-    value.clear();
+export const buildMcpServerSpanConfig = function buildMcpServerSpanConfig(message, self, extra, recordInputs) {
+  ({ method, params } = message);
+  let obj2 = params;
+  if (!params) {
+    obj2 = {};
   }
+  const target = extractTargetInfo.extractTargetInfo(method, obj2).target;
+  let combined = method;
+  if (target) {
+    const _HermesInternal = HermesInternal;
+    combined = "" + method + " " + target;
+  }
+  const obj3 = {};
+  const merged = Object.assign(extractClientInfo.buildTransportAttributes(self, extra));
+  obj3[CLIENT_ADDRESS_ATTRIBUTE.MCP_METHOD_NAME_ATTRIBUTE] = method;
+  const tmpResult = extractClientInfo;
+  recordInputs = undefined;
+  if (recordInputs != null) {
+    recordInputs = recordInputs.recordInputs;
+  }
+  const merged1 = Object.assign(_mod812.buildTypeSpecificAttributes("request", message, params, recordInputs));
+  const obj4 = {};
+  obj4[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP] = CLIENT_ADDRESS_ATTRIBUTE.MCP_SERVER_OP_VALUE;
+  obj4[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = CLIENT_ADDRESS_ATTRIBUTE.MCP_FUNCTION_ORIGIN_VALUE;
+  obj4[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = CLIENT_ADDRESS_ATTRIBUTE.MCP_ROUTE_SOURCE_VALUE;
+  const merged2 = Object.assign(obj4);
+  const tmpResult4 = _mod812;
+  const client = _mod717.getClient();
+  let sendDefaultPii;
+  if (client != null) {
+    sendDefaultPii = client.getOptions().sendDefaultPii;
+  }
+  const tmpResult5 = _mod717;
+  const BooleanResult = Boolean(sendDefaultPii);
+  const obj5 = { name: combined, op: null, forceTransaction: true, attributes: null };
+  const result = filterMcpPiiFromSpanData.filterMcpPiiFromSpanData(obj3, BooleanResult);
+  obj5.op = CLIENT_ADDRESS_ATTRIBUTE.MCP_SERVER_OP_VALUE;
+  obj5.attributes = result;
+  return obj5;
 };
-export const completeSpanWithResults = function completeSpanWithResults(arg0, id, result, self) {
-  value = weakMap.get(arg0);
-  if (!value) {
-    const _Map = Map;
-    const map = new Map();
-    result = weakMap.set(arg0, map);
-    value = map;
-  }
-  value2 = value.get(id);
-  if (value2) {
-    let protocolVersion = result;
-    ({ span, method } = value2);
-    if ("initialize" === method) {
-      const result1 = extractClientInfo.extractSessionDataFromInitializeResponse(protocolVersion);
-      let obj2 = {};
-      const tmp10 = require;
-      const merged = Object.assign(extractClientInfo.buildServerAttributesFromInfo(result1.serverInfo));
-      protocolVersion = result1.protocolVersion;
-      if (protocolVersion) {
-        obj2[tmp10(805).MCP_PROTOCOL_VERSION_ATTRIBUTE] = result1.protocolVersion;
-      }
-      span.setAttributes(obj2);
-      span.end();
-      value.delete(id);
-    } else {
-      obj2 = self;
-      if ("tools/call" !== method) {
-        if ("prompts/get" === method) {
-          span.setAttributes(extractPromptResultAttributes.extractPromptResultAttributes(protocolVersion, obj2.recordOutputs));
-        }
-      }
-    }
-    obj2 = span.setAttributes(extractPromptResultAttributes.extractToolResultAttributes(protocolVersion, obj2.recordOutputs));
-  }
+export const createMcpNotificationSpan = function createMcpNotificationSpan(message, self, extra, options, callback) {
+  return createMcpSpan({ type: "notification-incoming", message, transport: self, extra, callback, options });
 };
-export const storeSpanForRequest = function storeSpanForRequest(self, id, startInactiveSpanResult, method) {
-  value = weakMap.get(self);
-  if (!value) {
-    const _Map = Map;
-    const map = new Map();
-    const result = weakMap.set(self, map);
-    value = map;
-  }
-  const result1 = value.set(id, { span: startInactiveSpanResult, method, startTime: Date.now() });
+export const createMcpOutgoingNotificationSpan = function createMcpOutgoingNotificationSpan(message, transport, self, callback) {
+  return createMcpSpan({ type: "notification-outgoing", message, transport, options: self, callback });
 };

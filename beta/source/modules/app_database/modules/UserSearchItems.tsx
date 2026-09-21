@@ -1,20 +1,20 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7898
+// Function ID: 7899
 // Name: UserSearchItems
-// Dependencies: [5, 7894, 7895, 4405, 1372, 1074, 3, 2070, 7897, 2]
+// Dependencies: [5, 7899, 7900, 4409, 1376, 1078, 3, 2074, 7902, 2]
 
-// Module 7893 (UserSearchItems)
+// Module 7898 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
-import UserSearchUtils from "UserSearchUtils" /* 7897 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
+import UserSearchUtils from "UserSearchUtils" /* 7902 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7894 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const RelationshipTypes = fn(1074).RelationshipTypes;
+const RelationshipTypes = fn(1078).RelationshipTypes;
 let closure_9 = new LoggerDefault("UserSearchItems");
 let c10 = false;
 class UserSearchItems {
@@ -43,7 +43,7 @@ prototype["getAll"] = function getAll() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

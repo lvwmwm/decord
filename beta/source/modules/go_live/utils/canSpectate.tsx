@@ -1,11 +1,11 @@
-// Module ID: 14069
-// Function ID: 14070
+// Module ID: 14072
+// Function ID: 14073
 // Name: canSpectate
-// Dependencies: [4781, 2]
+// Dependencies: [4783, 2]
 // Exports: default
 
-// Module 14069 (canSpectate)
-import Constants from "Constants" /* 4781 */;
+// Module 14072 (canSpectate)
+import Constants from "Constants" /* 4783 */;
 import size from "module_2" /* 2 */;
 
 const Features = Constants.Features;

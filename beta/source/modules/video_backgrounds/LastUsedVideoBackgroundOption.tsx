@@ -1,19 +1,22 @@
-// Module ID: 9922
-// Function ID: 9923
+// Module ID: 9900
+// Function ID: 9901
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1220, 1372, 9919, 4414, 504, 2]
-// Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
+// Dependencies: [19, 1224, 1376, 9897, 4418, 558, 568, 504, 2]
+// Exports: getLastUsedVideoBackgroundOption
 
-// Module 9922 (LastUsedVideoBackgroundOption)
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9919 */;
+// Module 9900 (LastUsedVideoBackgroundOption)
+import c from "c" /* 568 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
 import noop from "module_19" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import UserStore from "UserStore" /* 1372 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
+import UserStore from "UserStore" /* 1376 */;
 
+const initialize = obj(504);
+const VideoBackgroundUtils = obj(9897);
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
+let result = size.fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");
 
 export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgroundOption(currentUser) {
   const voiceAndVideo = UserSettingsProtoStore.settings.voiceAndVideo;
@@ -35,7 +38,67 @@ export const getLastUsedVideoBackgroundOption = function getLastUsedVideoBackgro
   }
   return tmp6;
 };
-export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgroundOption() {
+export const useLastUsedVideoBackgroundOption = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let obj = require;
+  let result = dependencyMap;
+  const cResult = c.c(7);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserSettingsProtoStore];
+    const fn = function s() {
+      return settings.settings;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp3 = items;
+    tmp4 = fn;
+  } else {
+    [tmp3, tmp4] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp3, tmp4);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [UserStore];
+    const fn2 = function l() {
+      return currentUser.getCurrentUser();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp8 = fn2;
+    let tmp7 = items1;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const objResult = initialize;
+  const stateFromStores1 = initialize.useStateFromStores(tmp7, tmp8);
+  const voiceAndVideo = stateFromStores.voiceAndVideo;
+  if (voiceAndVideo != null) {
+    const videoBackgroundFilterDesktop = voiceAndVideo.videoBackgroundFilterDesktop;
+  }
+  if (null == stateFromStores1) {
+    return null;
+  } else {
+    if (cResult[4] === stateFromStores1) {
+    }
+    const videoBackgroundOptionFromProto = VideoBackgroundUtils.getVideoBackgroundOptionFromProto(videoBackgroundFilterDesktop, stateFromStores1.id);
+    const objResult5 = VideoBackgroundUtils;
+    if (!objResult6.isCustomBackgroundOption(videoBackgroundOptionFromProto)) {
+      if (typeof videoBackgroundOptionFromProto !== "number") {
+        let tmp15 = videoBackgroundOptionFromProto;
+      } else {
+        obj = VideoBackgroundUtils;
+        result = obj.isDefaultBackgroundOption(videoBackgroundOptionFromProto);
+        tmp15 = null;
+      }
+      let tmp14 = tmp15;
+    } else {
+      tmp14 = null;
+    }
+    cResult[4] = stateFromStores1;
+    cResult[5] = videoBackgroundFilterDesktop;
+    cResult[6] = tmp14;
+    objResult6 = VideoBackgroundUtils;
+  }
+}) : (() => {
   const items = [UserSettingsProtoStore];
   const stateFromStores = stateFromStores1(504).useStateFromStores(items, () => settings.settings);
   let obj = stateFromStores1(504);
@@ -57,7 +120,7 @@ export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgro
           let tmp9 = videoBackgroundOptionFromProto;
         } else {
           tmp9 = null;
-          const tmp4Result = tmp4(9919);
+          const tmp4Result = tmp4(9897);
         }
         let tmp8 = tmp9;
       } else {
@@ -68,4 +131,4 @@ export const useLastUsedVideoBackgroundOption = function useLastUsedVideoBackgro
     }
     return tmp2;
   }, items2);
-};
+});

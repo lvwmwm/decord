@@ -1,25 +1,251 @@
-// Module ID: 11086
-// Function ID: 11087
+// Module ID: 11123
+// Function ID: 11124
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 5727, 1074, 21, 504, 7407, 7427, 1364, 9479, 5203, 1241, 11059, 4427, 11087, 1115, 11084, 11066, 11088, 11271, 11272, 2]
-// Exports: default
+// Dependencies: [19, 5729, 1078, 21, 558, 568, 504, 7429, 7409, 1368, 9477, 1245, 11096, 5203, 4431, 1119, 11124, 11125, 11126, 11128, 11121, 11103, 2]
 
-// Module 11086 (SocialLayerStorefrontGiftModal)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11059 */;
-import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 11271 */;
-import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 11272 */;
+// Module 11123 (SocialLayerStorefrontGiftModal)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11096 */;
+import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 11125 */;
+import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 11126 */;
 import noop from "module_19" /* 19 */;
-import SKUStore from "SKUStore" /* 5727 */;
+import SKUStore from "SKUStore" /* 5729 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_4, PaymentGateways: hasOwnProperty } = Constants);
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontGiftModal.tsx");
 
-export default function SocialLayerStorefrontGiftModal(skuId) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+  const cResult = skuId(stateFromStores[5]).c(45);
+  skuId = skuId.skuId;
+  ({ analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin } = skuId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [analyticsLocations2];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== skuId) {
+    const fn = function u() {
+      return SKUStore.get(skuId);
+    };
+    const items1 = [skuId];
+    cResult[1] = skuId;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const obj = skuId(stateFromStores[5]);
+  stateFromStores = skuId(stateFromStores[6]).useStateFromStores(first, tmp6, tmp7);
+  if (cResult[4] !== analyticsLocations) {
+    const items2 = [];
+    items2[HermesBuiltin.arraySpread(analyticsLocations, 0)] = giftingOrigin(tmp2[7]).SLAYER_STOREFRONT_NATIVE_GIFT_MODAL;
+    cResult[4] = analyticsLocations;
+    cResult[5] = items2;
+    let tmp9 = items2;
+    const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
+  } else {
+    tmp9 = cResult[5];
+  }
+  analyticsLocations2 = giftingOrigin(tmp2[8])(tmp9).analyticsLocations;
+  const tmpResult = skuId(stateFromStores[6]);
+  if (tmpResult3.isIOS()) {
+    let GOOGLE = tmp15.APPLE_ADVANCED_COMMERCE;
+    let tmp16 = tmp15;
+  } else {
+    GOOGLE = tmp15.GOOGLE;
+    tmp16 = tmp15;
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = { location: "SocialLayerStorefrontGiftModal" };
+    cResult[6] = obj2;
+    let tmp17 = obj2;
+  } else {
+    tmp17 = cResult[6];
+  }
+  const GiftACOMOrderExperiment = tmp(tmp2[10]).GiftACOMOrderExperiment;
+  let enabled = GiftACOMOrderExperiment.useConfig(tmp17).enabled;
+  if (cResult[7] === analyticsLocations2) {
+    let applicationId;
+    if (stateFromStores != null) {
+      applicationId = stateFromStores.applicationId;
+    }
+    if (cResult[8] === applicationId) {
+      if (cResult[9] === skuId) {
+        let tmp20 = cResult[10];
+      }
+      tmp14(tmp2[13])(tmp20);
+      if (null == stateFromStores) {
+        return null;
+      } else {
+        if (tmpResult4.isSocialLayerStorefrontGiftingSupported()) {
+          const _Symbol = Symbol;
+          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+            const items3 = [];
+            cResult[14] = items3;
+          }
+          if (enabled) {
+            enabled = GOOGLE === tmp16.APPLE_ADVANCED_COMMERCE;
+          }
+          if (cResult[15] !== skuId) {
+            const items4 = [skuId];
+            cResult[15] = skuId;
+            cResult[16] = items4;
+          }
+          if (cResult[17] === analyticsLocations2) {
+            if (cResult[18] === stateFromStores.applicationId) {
+              if (cResult[19] === stateFromStores.productLine) {
+                if (cResult[20] === stateFromStores.type) {
+                  const _Symbol2 = Symbol;
+                  if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+                    const fn2 = function b() {
+                      return Promise.resolve(true);
+                    };
+                    cResult[23] = fn2;
+                  }
+                  if (cResult[24] !== stateFromStores) {
+                    class N {
+                      constructor() {
+                        obj = { sku: closure_2 };
+                        return jsx(closure_1(closure_2[17]), obj);
+                      }
+                    }
+                    cResult[24] = stateFromStores;
+                    cResult[25] = N;
+                  } else {
+                    class N {
+                      constructor() {
+                        obj = { sku: closure_2 };
+                        return jsx(closure_1(closure_2[17]), obj);
+                      }
+                    }
+                  }
+                  if (cResult[26] === analyticsLocations2) {
+                    class N {
+                      constructor() {
+                        obj = { sku: closure_2 };
+                        return jsx(closure_1(closure_2[17]), obj);
+                      }
+                    }
+                  }
+                  class F {
+                    constructor(arg0) {
+                      ({ isPurchaseDisabled, giftOptions } = skuId);
+                      obj = { skuId, sku: closure_2, isPurchaseDisabled, giftOptions, giftingOrigin, analyticsLocations };
+                      return jsx(closure_1(closure_2[18]), obj);
+                    }
+                  }
+                  cResult[26] = analyticsLocations2;
+                  cResult[27] = giftingOrigin;
+                  cResult[28] = stateFromStores;
+                  cResult[29] = skuId;
+                  cResult[30] = F;
+                }
+              }
+            }
+          }
+          tmp30[1] = analyticsLocations2;
+          tmp30[3] = skuId;
+          ({ type: tmp30[4], productLine: tmp30[5], applicationId: tmp30[6] } = stateFromStores);
+          cResult[17] = analyticsLocations2;
+          cResult[18] = stateFromStores.applicationId;
+          cResult[19] = stateFromStores.productLine;
+          cResult[20] = stateFromStores.type;
+          cResult[21] = skuId;
+          cResult[22] = tmp30;
+        } else {
+          class N {
+            constructor() {
+              obj = { sku: closure_2 };
+              return jsx(closure_1(closure_2[17]), obj);
+            }
+          }
+          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+            class N {
+              constructor() {
+                obj = { sku: closure_2 };
+                return jsx(closure_1(closure_2[17]), obj);
+              }
+            }
+            const stringResult = obj5.string(tmp(tmp2[15]).t["JCFN/y"]);
+            cResult[11] = stringResult;
+            const tmp23 = stringResult;
+          } else {
+            class N {
+              constructor() {
+                obj = { sku: closure_2 };
+                return jsx(closure_1(closure_2[17]), obj);
+              }
+            }
+          }
+          if (cResult[12] !== onGiftModalDismiss) {
+            class N {
+              constructor() {
+                obj = { sku: closure_2 };
+                return jsx(closure_1(closure_2[17]), obj);
+              }
+            }
+            const obj3 = { onDismiss: onGiftModalDismiss, title: tmp23 };
+            const tmp26 = jsx(tmp14(tmp2[16]), { onDismiss: onGiftModalDismiss, title: tmp23 });
+            class F {
+              constructor(arg0) {
+                ({ isPurchaseDisabled, giftOptions } = skuId);
+                obj = { skuId, sku: closure_2, isPurchaseDisabled, giftOptions, giftingOrigin, analyticsLocations };
+                return jsx(closure_1(closure_2[18]), obj);
+              }
+            }
+            cResult[13] = tmp26;
+            const tmp25 = tmp26;
+          } else {
+            class N {
+              constructor() {
+                obj = { sku: closure_2 };
+                return jsx(closure_1(closure_2[17]), obj);
+              }
+            }
+          }
+          return tmp25;
+        }
+        tmpResult4 = tmp(tmp2[14]);
+      }
+    }
+  }
+  cResult[7] = analyticsLocations2;
+  if (stateFromStores != null) {
+    class N {
+      constructor() {
+        obj = { sku: closure_2 };
+        return jsx(closure_1(closure_2[17]), obj);
+      }
+    }
+  }
+  class R {
+    constructor() {
+      obj = closure_1(closure_2[11]);
+      obj1 = { location_stack: analyticsLocations, type: closure_0(closure_2[12]).SOCIAL_LAYER_STOREFRONT_GIFT_MODAL_KEY, sku_id: skuId, application_id: null };
+      applicationId = undefined;
+      if (closure_2 != null) {
+        applicationId = closure_2.applicationId;
+      }
+      obj1.application_id = applicationId;
+      trackResult = obj.track(AnalyticEvents.OPEN_MODAL, obj1);
+      return;
+    }
+  }
+  cResult[8] = undefined;
+  cResult[9] = skuId;
+  cResult[10] = R;
+  tmp20 = R;
+}) : ((skuId) => {
   skuId = skuId.skuId;
   ({ analyticsLocations, onGiftModalDismiss, giftingOrigin } = skuId);
   let applicationId;
@@ -28,12 +254,12 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
   let tmp = applicationId;
   const items = [analyticsLocations2];
   const items1 = [skuId];
-  applicationId = skuId(applicationId[4]).useStateFromStores(items, () => SKUStore.get(skuId), items1);
+  applicationId = skuId(applicationId[6]).useStateFromStores(items, () => SKUStore.get(skuId), items1);
   let tmp2 = giftingOrigin;
   const items2 = [];
-  const obj = skuId(applicationId[4]);
-  const tmp3 = giftingOrigin(applicationId[5]);
-  items2[HermesBuiltin.arraySpread(analyticsLocations, 0)] = giftingOrigin(applicationId[6]).SLAYER_STOREFRONT_NATIVE_GIFT_MODAL;
+  const obj = skuId(applicationId[6]);
+  const tmp3 = giftingOrigin(applicationId[8]);
+  items2[HermesBuiltin.arraySpread(analyticsLocations, 0)] = giftingOrigin(applicationId[7]).SLAYER_STOREFRONT_NATIVE_GIFT_MODAL;
   analyticsLocations2 = tmp3(items2).analyticsLocations;
   const arraySpreadResult = HermesBuiltin.arraySpread(analyticsLocations, 0);
   if (obj2.isIOS()) {
@@ -43,9 +269,9 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
     GOOGLE = tmp5.GOOGLE;
     APPLE_ADVANCED_COMMERCE = tmp5;
   }
-  const GiftACOMOrderExperiment = productLine(tmp[8]).GiftACOMOrderExperiment;
+  const GiftACOMOrderExperiment = productLine(tmp[10]).GiftACOMOrderExperiment;
   let enabled = GiftACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontGiftModal" }).enabled;
-  tmp2(tmp[9])(() => {
+  tmp2(tmp[13])(() => {
     const obj2 = { location_stack: analyticsLocations2, type: SocialLayerStorefrontNativeActionCreators.SOCIAL_LAYER_STOREFRONT_GIFT_MODAL_KEY, sku_id: skuId, application_id: null };
     applicationId = undefined;
     if (applicationId != null) {
@@ -67,14 +293,14 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
       obj5.orderRequired = enabled;
       const items3 = [skuId];
       obj5.skuIds = items3;
-      obj5.onOrderRetryCancellation = productLine(tmp[11]).closeSocialLayerStorefrontGiftModal;
+      obj5.onOrderRetryCancellation = productLine(tmp[12]).closeSocialLayerStorefrontGiftModal;
       enabled = { is_gift: true, location_stack: analyticsLocations2, payment_type: "sku", sku_id: skuId, sku_type: null, sku_product_line: null, application_id: null };
       ({ type: obj3.sku_type, productLine } = applicationId);
       enabled.sku_product_line = productLine;
       applicationId = applicationId.applicationId;
       enabled.application_id = applicationId;
       obj5.checkoutAnalyticsFields = enabled;
-      tmp2 = tmp2(tmp[17]);
+      tmp2 = tmp2(tmp[19]);
       const obj6 = {
         skuId,
         analyticsLocations: analyticsLocations2,
@@ -97,16 +323,16 @@ export default function SocialLayerStorefrontGiftModal(skuId) {
       };
       tmp = tmp7(tmp2, obj6);
       obj5.children = tmp;
-      obj4.children = tmp7(tmp2(tmp[16]), obj5, skuId);
-      let tmp7Result = tmp7(productLine(tmp[15]).NativePaymentContextProvider, obj4);
-      const tmp2Result = tmp2(tmp[16]);
+      obj4.children = tmp7(tmp2(tmp[21]), obj5, skuId);
+      let tmp7Result = tmp7(productLine(tmp[20]).NativePaymentContextProvider, obj4);
+      const tmp2Result = tmp2(tmp[21]);
     } else {
       const obj7 = { onDismiss: onGiftModalDismiss, title: null };
-      const intl = productLine(tmp[14]).intl;
-      obj7.title = intl.string(productLine(tmp[14]).t["JCFN/y"]);
-      tmp7Result = tmp7(tmp2(tmp[13]), obj7);
-      const tmp2Result2 = tmp2(tmp[13]);
+      const intl = productLine(tmp[15]).intl;
+      obj7.title = intl.string(productLine(tmp[15]).t["JCFN/y"]);
+      tmp7Result = tmp7(tmp2(tmp[16]), obj7);
+      const tmp2Result2 = tmp2(tmp[16]);
     }
-    productLineResult = productLine(tmp[12]);
+    productLineResult = productLine(tmp[14]);
   }
-};
+});

@@ -1,18 +1,18 @@
-// Module ID: 5728
-// Function ID: 5729
+// Module ID: 5730
+// Function ID: 5731
 // Name: SKURecord
-// Dependencies: [1387, 2002, 5729, 1074, 4348, 5730, 5731, 1385, 2]
+// Dependencies: [1391, 2006, 5731, 1078, 4352, 5732, 5733, 1389, 2]
 
-// Module 5728 (SKURecord)
-import _modDef4348 from "module_4348" /* 4348 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 5730 */;
-import transformSKUTenantMetadataDefault from "transformSKUTenantMetadata" /* 5731 */;
-import Record from "Record" /* 1387 */;
-import ApplicationRecord from "ApplicationRecord" /* 2002 */;
+// Module 5730 (SKURecord)
+import _modDef4352 from "module_4352" /* 4352 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 5732 */;
+import transformSKUTenantMetadataDefault from "transformSKUTenantMetadata" /* 5733 */;
+import Record from "Record" /* 1391 */;
+import ApplicationRecord from "ApplicationRecord" /* 2006 */;
 
 const require = fn;
-fn(5729).THE_GAME_AWARD_WINNER_SKUS;
-const Constants = fn(1074);
+fn(5731).THE_GAME_AWARD_WINNER_SKUS;
+const Constants = fn(1078);
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: closure_7, SKUTypes: closure_8 } = Constants);
 let SKURecord;
 class SKURecord extends tmp2 {
@@ -50,12 +50,12 @@ SKURecord["createFromServer"] = function createFromServer(id) {
   obj.name = name;
   let tmp6 = null;
   if (null != id.release_date) {
-    tmp6 = _modDef4348(id.release_date);
+    tmp6 = _modDef4352(id.release_date);
   }
   obj.releaseDate = tmp6;
   let tmp9 = null;
   if (null != id.preorder_release_at) {
-    tmp9 = _modDef4348(id.preorder_release_at);
+    tmp9 = _modDef4352(id.preorder_release_at);
   }
   obj.preorderReleaseAt = tmp9;
   ({ preorder_approximate_release_date: obj.preorderApproximateReleaseDate, summary: obj.summary } = id);
@@ -280,8 +280,8 @@ prototype["isPremiumPerk"] = function isPremiumPerk() {
   if (premium) {
     let hasFlagResult = require("FlagUtils").hasFlag(self.flags, constants2.PREMIUM_PURCHASE);
     if (!hasFlagResult) {
-      hasFlagResult = tmp(1385).hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
-      const tmpResult = tmp(1385);
+      hasFlagResult = tmp(1389).hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
+      const tmpResult = tmp(1389);
     }
     premium = hasFlagResult;
     const obj = require("FlagUtils");

@@ -1,115 +1,71 @@
 // Module ID: 1586
 // Function ID: 1587
-// Dependencies: [19, 21, 1487, 1587]
-// Exports: createStaticNavigation
+// Dependencies: [109, 19, 21, 1491, 1587, 1589]
+// Exports: createStandardNavigationFactories
 
 // Module 1586
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1487 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1491 */;
+import _mod1587 from "module_1587" /* 1587 */;
+import _mod1589 from "module_1589" /* 1589 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
+
 require = fn;
+let closure_2 = ["children", "id", "initialRouteName", "layout", "screenLayout", "screenListeners", "screenOptions", "UNSTABLE_routeNamesChangeBehavior", "UNSTABLE_router"];
 const jsx = fn(21).jsx;
 
-export const createStaticNavigation = function createStaticNavigation(getComponent) {
-  const component = getComponent.getComponent();
-  return noop.forwardRef(function Navigation(linking, ref) {
-    linking = linking.linking;
-    let merged = Object.assign(linking, Object.assign({ linking: 0 }));
-    let memo;
-    let enabled;
-    if (linking != null) {
-      enabled = linking.enabled;
+export const createStandardNavigationFactories = function createStandardNavigationFactories(arg0, arg1, arg2) {
+  _require = arg1;
+  dependencyMap = arg2;
+  ({ type, version, NavigatorContent: closure_2 } = arg0);
+  if ("standard" !== type) {
+    let str3 = "unknown type.";
+    if (typeof type === "string") {
+      const _HermesInternal2 = HermesInternal;
+      str3 = "type \"" + type + "\".";
     }
-    const items = [enabled, , ];
-    let path;
-    if (linking != null) {
-      let config = linking.config;
-      if (config != null) {
-        path = config.path;
-      }
-    }
-    items[1] = path;
-    let initialRouteName;
-    if (linking != null) {
-      let config2 = linking.config;
-      if (config2 != null) {
-        initialRouteName = config2.initialRouteName;
-      }
-    }
-    items[2] = initialRouteName;
-    memo = React.useMemo(() => {
-      let initialRouteName;
-      if (linking != null) {
-        const config = tmp2.config;
-        if (config != null) {
-          initialRouteName = config.initialRouteName;
-        }
-      }
-      let enabled;
-      if (linking != null) {
-        enabled = tmp2.enabled;
-      }
-      const pathConfigForStaticNavigation = BaseNavigationContainer.createPathConfigForStaticNavigation(closure_0, { initialRouteName }, "auto" === enabled);
-      if (pathConfigForStaticNavigation) {
-        let path;
-        if (tmp2 != null) {
-          const config2 = tmp2.config;
-          if (config2 != null) {
-            path = config2.path;
+    const error = new Error("createStandardNavigationFactories only works with standard navigator objects, but got navigator of " + str3);
+    throw error;
+  } else if (1 !== version) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const error1 = new Error("createStandardNavigationFactories only works with version 1 of standard navigator objects, but got version " + version + ".");
+    throw error1;
+  } else {
+    let obj = {
+      createNavigator: require("BaseNavigationContainer").createNavigatorFactory(function StandardNavigationNavigator(UNSTABLE_routeNamesChangeBehavior) {
+          const navigationBuilder = BaseNavigationContainer.useNavigationBuilder(closure_0, UNSTABLE_routeNamesChangeBehavior);
+          closure_1 = _mod1587.useBuildHref();
+          let tmp2 = _mod1589;
+          let flag = tmp2.useMemoArray;
+          if (!("preloadedRoutes" in navigationBuilder.state)) {
+            let routes1 = navigationBuilder.state.routes;
+            const flagResult = flag(routes1.map((key) => {
+              const tmp = closure_1(key.name, key.params);
+              const items = [{ key: key.key, name: key.name, params: key.params, href: tmp }, ];
+              const items1 = [, , , ];
+              ({ key: arr2[0], name: arr2[1], params: arr2[2] } = key);
+              items1[3] = tmp;
+              items[1] = items1;
+              return items;
+            }));
+            closure_2 = flagResult;
+            let items = [navigationBuilder.state.index, flagResult];
+            const routes2 = noop.useMemo(() => ({ index: navigationBuilder.state.index, routes: flagResult }), items).routes;
+            tmp2 = routes2[Symbol.iterator]();
+            flag = true;
+          } else {
+            const _Array = Array;
           }
-        }
-        const obj2 = { path, initialRouteName: null, screens: null };
-        let initialRouteName1;
-        if (tmp2 != null) {
-          const config3 = tmp2.config;
-          if (config3 != null) {
-            initialRouteName1 = config3.initialRouteName;
-          }
-        }
-        obj2.initialRouteName = initialRouteName1;
-        obj2.screens = pathConfigForStaticNavigation;
-        return obj2;
-      }
-    }, items);
-    const items1 = [linking, memo];
-    let enabled1;
-    const memo1 = React.useMemo(() => {
-      if (linking) {
-        if (typeof tmp.enabled === "boolean") {
-          let enabled = tmp.enabled;
-        } else {
-          let screens;
-          if (memo != null) {
-            screens = memo.screens;
-          }
-          enabled = null != screens;
-        }
-        const obj = {};
-        const merged = Object.assign(tmp);
-        obj.enabled = enabled;
-        obj.config = memo;
-        return obj;
-      }
-    }, items1);
-    if (linking != null) {
-      enabled1 = linking.enabled;
-    }
-    if (true === enabled1) {
-      let screens;
-      if (memo != null) {
-        screens = memo.screens;
-      }
-      if (null == screens) {
-        const _Error = Error;
-        const error = new Error("Linking is enabled but no linking configuration was found for the screens.\n\nTo solve this:\n- Specify a 'linking' property for the screens you want to link to.\n- Or set 'linking.enabled' to 'auto' to generate paths automatically.\n\nSee usage guide: https://reactnavigation.org/docs/static-configuration#linking");
-        throw error;
-      }
-    }
-    let obj2 = {};
-    const merged1 = Object.assign(merged);
-    obj2.ref = ref;
-    obj2.linking = memo1;
-    obj2.children = <memo />;
-    return jsx(getComponent(closure_1[3]).NavigationContainer, {});
-  });
+          const routes = navigationBuilder.state.routes;
+          routes1 = routes.concat(navigationBuilder.state.preloadedRoutes);
+        }),
+      createScreen: null
+    };
+    const obj2 = require("BaseNavigationContainer");
+    obj.createScreen = require("BaseNavigationContainer").createScreenFactory();
+    return obj;
+  }
 };

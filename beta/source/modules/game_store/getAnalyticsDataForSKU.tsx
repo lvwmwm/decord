@@ -1,13 +1,13 @@
-// Module ID: 5099
-// Function ID: 5100
+// Module ID: 5101
+// Function ID: 5102
 // Name: getAnalyticsDataForSKU
-// Dependencies: [4983, 1074, 2]
+// Dependencies: [4985, 1078, 2]
 // Exports: default
 
-// Module 5099 (getAnalyticsDataForSKU)
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+// Module 5101 (getAnalyticsDataForSKU)
+import ApplicationStore from "ApplicationStore" /* 4985 */;
 
-const SKUFeatureTypes = fn(1074).SKUFeatureTypes;
+const SKUFeatureTypes = fn(1078).SKUFeatureTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_store/getAnalyticsDataForSKU.tsx");
 

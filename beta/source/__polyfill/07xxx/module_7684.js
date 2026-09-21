@@ -1,24 +1,9 @@
 // Module ID: 7684
 // Function ID: 7685
-// Dependencies: [19, 7685]
-// Exports: default
+// Dependencies: [1125]
 
 // Module 7684
-import _mod19 from "module_19" /* 19 */;
-import _modDef7685 from "module_7685" /* 7685 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-const useRef = _mod19.useRef;
-let closure_3 = [];
 
-export default function useStableMemo(fn, items) {
-  const tmp = useRef();
-  const tmp2 = useRef(closure_3);
-  if (tmp2.current === closure_3) {
-    tmp.current = fn();
-    tmp2.current = items;
-  } else if (!_modDef7685(items, tmp2.current)) {
-    tmp.current = fn();
-    tmp2.current = items;
-  }
-  return tmp.current;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 343, height: 112, scales: [2, 3], hash: "a236f8cc27bca615087c819a6d4db4e6", name: "img_clouds_header_tier_2", type: "png" });

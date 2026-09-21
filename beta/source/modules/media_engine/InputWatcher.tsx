@@ -1,14 +1,14 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 14347
+// Function ID: 14348
 // Name: InputWatcher
-// Dependencies: [32, 5, 4798, 4, 2036, 4811, 1365, 14283, 4377, 5782, 573, 2]
+// Dependencies: [32, 5, 4800, 4, 2040, 4813, 1369, 14286, 4381, 5784, 577, 2]
 
-// Module 14344 (InputWatcher)
+// Module 14347 (InputWatcher)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
-let closure_5 = fn(4798).WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER;
+let closure_5 = fn(4800).WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER;
 const logger = new fn(4).Logger("InputWatcher");
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_engine/InputWatcher.tsx");
@@ -32,7 +32,7 @@ class InputWatcher {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -155,7 +155,7 @@ class InputWatcher {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -192,7 +192,7 @@ class InputWatcher {
             const obj6 = { type: "AUDIO_INPUT_DETECTED", inputDetected: closure_128_1.inputDetected, lastUpdateTime: closure_128_1.lastUpdateTime };
             v1(inputDetected[10]).dispatch(obj6);
             inputDetected = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           } catch (tmp12) {
             inputDetected = tmp;
             throw tmp12;

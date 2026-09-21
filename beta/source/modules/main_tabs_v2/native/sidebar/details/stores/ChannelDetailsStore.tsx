@@ -1,19 +1,78 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8125
+// Function ID: 8126
 // Name: ChannelDetailsStore
-// Dependencies: [560, 1248, 2]
-// Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
+// Dependencies: [562, 1252, 558, 568, 2]
+// Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive
 
-// Module 8120 (ChannelDetailsStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import module_560 from "module_560" /* 560 */;
+// Module 8125 (ChannelDetailsStore)
+import c from "c" /* 568 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
+import module_562 from "module_562" /* 562 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+
 let closure_2 = { isSearchActive: false, searchActiveSource: "initial" };
-const useChannelDetailsStore = module_560.create(() => {
+const useChannelDetailsStore = module_562.create(() => {
   const obj = { states: new Map() };
   return obj;
 });
+let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  dependencyMap = arg1;
+  let obj = require("c");
+  const cResult = obj.c(3);
+  if (cResult[0] === arg0) {
+    if (cResult[1] === arg1) {
+      let tmp2 = cResult[2];
+    }
+    return obj(tmp2);
+  }
+  const fn = function s(states) {
+    states = states.states;
+    value = states.get(closure_0);
+    if (value == null) {
+      const obj = {};
+      const merged = Object.assign(closure_2);
+      value = obj;
+    }
+    return closure_1(value);
+  };
+  cResult[0] = arg0;
+  cResult[1] = arg1;
+  cResult[2] = fn;
+  tmp2 = fn;
+}) : ((arg0, arg1) => {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  return obj((states) => {
+    states = states.states;
+    value = states.get(closure_0);
+    if (value == null) {
+      const obj = {};
+      const merged = Object.assign(closure_2);
+      value = obj;
+    }
+    return closure_1(value);
+  });
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(isSearchActive) {
+      return isSearchActive.isSearchActive;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(arg0, first);
+}) : ((arg0) => closure_4(arg0, (isSearchActive) => isSearchActive.isSearchActive));
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/stores/ChannelDetailsStore.tsx");
 
 export { useChannelDetailsStore };
@@ -23,34 +82,20 @@ export const deleteChannelStates = function deleteChannelStates() {
     return state.setState(obj);
   });
 };
-export const useIsChannelDetailsSearchActive = function useIsChannelDetailsSearchActive(arg0) {
-  closure_0 = arg0;
-  const f84783 = (isSearchActive) => isSearchActive.isSearchActive;
-  return obj((states) => {
-    states = states.states;
-    value = states.get(closure_0);
-    if (value == null) {
-      const obj = {};
-      const merged = Object.assign(closure_2);
-      value = obj;
-    }
-    return f84784(value);
-  });
-};
-export const useChannelDetailsSearchActiveSource = function useChannelDetailsSearchActiveSource(arg0) {
-  closure_0 = arg0;
-  const f84784 = (searchActiveSource) => searchActiveSource.searchActiveSource;
-  return obj((states) => {
-    states = states.states;
-    value = states.get(closure_0);
-    if (value == null) {
-      const obj = {};
-      const merged = Object.assign(closure_2);
-      value = obj;
-    }
-    return f84784(value);
-  });
-};
+export const useIsChannelDetailsSearchActive = tmp3;
+export const useChannelDetailsSearchActiveSource = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function n(searchActiveSource) {
+      return searchActiveSource.searchActiveSource;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return closure_4(arg0, first);
+}) : ((arg0) => closure_4(arg0, (searchActiveSource) => searchActiveSource.searchActiveSource));
 export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {
   let obj = { isSearchActive, searchActiveSource };
   const states = obj.getState().states;
@@ -64,7 +109,7 @@ export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearc
   const merged2 = Object.assign(obj);
   const map = new Map(states);
   const result = map.set(arg0, {});
-  map(1248).batchUpdates(() => {
+  map(1252).batchUpdates(() => {
     const obj = { states: map };
     return obj.setState(obj);
   });
@@ -83,7 +128,7 @@ export const deleteChannelDetailsSearchState = function deleteChannelDetailsSear
   const states = obj.getState().states;
   states.delete(arg0);
   const map = new Map(states);
-  obj = map(1248);
+  obj = map(1252);
   obj.batchUpdates(() => {
     const obj = { states: map };
     return obj.setState(obj);

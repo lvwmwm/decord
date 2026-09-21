@@ -1,15 +1,15 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13266
+// Function ID: 13267
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 4756, 576, 7368, 1364, 5174, 13256, 5186, 2]
-// Exports: MediaModalOverlayFooterAction
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1368, 5176, 13259, 5188, 7371, 2]
 
-// Module 13263 (MediaModalOverlayFooterAction)
-import nativeDefault from "native" /* 576 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5174 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13256 */;
+// Module 13266 (MediaModalOverlayFooterAction)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5176 */;
+import components_Button_Button from "components/Button/Button" /* 5188 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13259 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,22 +17,102 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, buttonContainer: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.buttonContainer = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayFooterAction.tsx");
 
-export const MediaModalOverlayFooterAction = function MediaModalOverlayFooterAction(arg0) {
+export const MediaModalOverlayFooterAction = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(15);
+  ({ footerAction, sliderElement, syncer } = arg0);
+  const tmp4 = closure_8();
+  if (cResult[0] === syncer.sources.length > 1) {
+    if (cResult[1] === tmp6) {
+      if (cResult[2] === sliderElement) {
+        if (cResult[3] === syncer) {
+          let tmp7 = cResult[4];
+        }
+        if (cResult[5] === footerAction.onPress) {
+          if (cResult[6] === footerAction.text) {
+            let tmp18 = cResult[7];
+          }
+          if (cResult[8] === tmp4.buttonContainer) {
+            if (cResult[9] === tmp18) {
+              let tmp21 = cResult[10];
+            }
+            if (cResult[11] === tmp4.container) {
+              if (cResult[12] === tmp7) {
+                if (cResult[13] === tmp21) {
+                  let tmp25 = cResult[14];
+                }
+                return tmp25;
+              }
+            }
+            const rect = { bottom: true, left: true, right: true, style: tmp4.container, children: null };
+            const items = [tmp7, tmp21];
+            rect.children = items;
+            const tmp27 = React5(tmp(7371).SafeAreaPaddingView, rect);
+            cResult[11] = tmp4.container;
+            cResult[12] = tmp7;
+            cResult[13] = tmp21;
+            cResult[14] = tmp27;
+            tmp25 = tmp27;
+          }
+          const obj2 = { style: tmp4.buttonContainer, children: tmp18 };
+          const tmp24 = hasOwnProperty(React4, obj2);
+          cResult[8] = tmp4.buttonContainer;
+          cResult[9] = tmp18;
+          cResult[10] = tmp24;
+          tmp21 = tmp24;
+        }
+        ({ text: obj6.text, onPress: obj6.onPress } = footerAction);
+        const tmp20 = hasOwnProperty(tmp(5188).Button, { size: "lg", text: null, onPress: null });
+        cResult[5] = footerAction.onPress;
+        cResult[6] = footerAction.text;
+        cResult[7] = tmp20;
+        tmp18 = tmp20;
+        const obj3 = { size: "lg", text: null, onPress: null };
+      }
+    }
+  }
+  let tmp9Result = null;
+  if (null != sliderElement || syncer.sources.length > 1) {
+    let isIOSResult = tmp(1368).isIOS();
+    if (isIOSResult) {
+      const obj4 = { blurTheme: "dark", style: React3.absoluteFill };
+      isIOSResult = hasOwnProperty(VisualEffectViewDefault, obj4);
+    }
+    const items1 = [isIOSResult, sliderElement, ];
+    let tmp15 = null;
+    if (tmp5) {
+      const obj5 = { syncer };
+      tmp15 = hasOwnProperty(MediaViewerThumbnailsDefault, obj5);
+    }
+    const obj7 = { children: null };
+    items1[2] = tmp15;
+    obj7.children = items1;
+    tmp9Result = React5(timestampProducer, obj7);
+    const tmpResult = tmp(1368);
+  }
+  cResult[0] = syncer.sources.length > 1;
+  cResult[1] = null != sliderElement || syncer.sources.length > 1;
+  cResult[2] = sliderElement;
+  cResult[3] = syncer;
+  cResult[4] = tmp9Result;
+  tmp7 = tmp9Result;
+}) : ((arg0) => {
   ({ footerAction, sliderElement, syncer } = arg0);
   const tmp = closure_8();
   const rect = { bottom: true, left: true, right: true, style: tmp.container, children: null };
   if (null != sliderElement) {
-    let isIOSResult = tmp4(1364).isIOS();
+    let isIOSResult = tmp4(1368).isIOS();
     if (isIOSResult) {
-      const obj = { blurTheme: "dark", style: absoluteFill.absoluteFill };
+      const obj = { blurTheme: "dark", style: React3.absoluteFill };
       isIOSResult = hasOwnProperty(VisualEffectViewDefault, obj);
     }
     const items = [isIOSResult, sliderElement, ];
@@ -45,7 +125,7 @@ export const MediaModalOverlayFooterAction = function MediaModalOverlayFooterAct
     items[2] = tmp12;
     obj3.children = items;
     let tmp3Result = tmp3(timestampProducer, obj3);
-    const tmp4Result = tmp4(1364);
+    const tmp4Result = tmp4(1368);
   } else {
     tmp3Result = null;
   }
@@ -54,4 +134,4 @@ export const MediaModalOverlayFooterAction = function MediaModalOverlayFooterAct
   items1[1] = hasOwnProperty(React4, obj4);
   rect.children = items1;
   return React5(common_SafeAreaView.SafeAreaPaddingView, rect);
-};
+});

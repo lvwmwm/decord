@@ -1,13 +1,13 @@
-// Module ID: 4989
-// Function ID: 4990
+// Module ID: 4991
+// Function ID: 4992
 // Name: useDisplayNameStyles
-// Dependencies: [19, 2105, 1372, 4990, 504, 4992, 2]
+// Dependencies: [19, 2109, 1376, 4992, 504, 4994, 2]
 // Exports: default
 
-// Module 4989 (useDisplayNameStyles)
+// Module 4991 (useDisplayNameStyles)
 import _mod19 from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import UserStore from "UserStore" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

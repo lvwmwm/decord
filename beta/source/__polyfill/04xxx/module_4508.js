@@ -1,50 +1,54 @@
 // Module ID: 4508
 // Function ID: 4509
-// Dependencies: [17, 65]
-// Exports: callback, getHostComponent
+// Dependencies: [4500]
+// Exports: getHybridObjectConstructor
 
 // Module 4508
-import _mod17 from "module_17" /* 17 */;
-import _modAll65 from "module_65" /* 65 */;
+import _mod4500 from "module_4500" /* 4500 */;
 
-const Platform = _mod17.Platform;
+require = arg1;
+const dependencyMap = arg6;
+const map = new Map();
 
-export const getHostComponent = function getHostComponent(RiveView, arg1) {
-  closure_0 = arg1;
-  if (null == _modAll65) {
-    const _Error = Error;
-    const error = new Error("NativeComponentRegistry is not available on android!");
-    throw error;
+export const getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
+  closure_0 = arg0;
+  if (map.has(arg0)) {
+    return obj.get(arg0);
   } else {
-    return _modAll65.get(RiveView, () => {
-      const tmp = closure_0();
-      const validAttributes = tmp.validAttributes;
-      (function wrapValidAttributes(validAttributes) {
-        const keys = Object.keys(validAttributes);
-        for (const item10009 of keys) {
-          let obj = {
-            diff(arg0, arg1) {
-                return arg0 !== arg1;
-              },
-            process(arg0) {
-                return arg0;
-              }
-          };
-          arg0[item10009] = obj;
-          continue;
+    function constructorFunc() {
+      const NitroModules = _mod4500.NitroModules;
+      const hybridObject = NitroModules.createHybridObject(closure_0);
+      const prototypeOf = Object.getPrototypeOf(hybridObject);
+      if (constructorFunc.prototype !== prototypeOf) {
+        tmp3.prototype = prototypeOf;
+        tmp3.prototypeInitialized = true;
+      }
+      return hybridObject;
+    }
+    constructorFunc.prototypeInitialized = false;
+    let _Object = Object;
+    const _Symbol = Symbol;
+    const obj2 = {
+      value(arg0) {
+          if (!constructorFunc.prototypeInitialized) {
+            const NitroModules = _mod4500.NitroModules;
+            const _Object = Object;
+            tmp.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
+            tmp.prototypeInitialized = true;
+          }
+          let prototypeOf = Object.getPrototypeOf(arg0);
+          if (null != prototypeOf) {
+            while (prototypeOf !== constructorFunc.prototype) {
+              let _Object2 = Object;
+              prototypeOf = Object.getPrototypeOf(prototypeOf);
+            }
+            return true;
+          }
+          return false;
         }
-        return validAttributes;
-      })(validAttributes);
-      tmp.validAttributes = validAttributes;
-      return tmp;
-    });
+    };
+    Object.defineProperty(constructorFunc, Symbol.hasInstance, obj2);
+    const result = obj.set(arg0, constructorFunc);
+    return constructorFunc;
   }
-};
-export const callback = function callback(f) {
-  let tmp = f;
-  if (typeof f === "function") {
-    const obj = { f };
-    tmp = obj;
-  }
-  return tmp;
 };

@@ -1,116 +1,446 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12630
+// Function ID: 12631
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2045, 2041, 2096, 4395, 4771, 4405, 1372, 12215, 1074, 21, 12542, 504, 1370, 1115, 4909, 4936, 1101, 11, 12702, 2]
+// Dependencies: [19, 2049, 2045, 2100, 4399, 4773, 4409, 1376, 12092, 1078, 21, 558, 568, 12436, 504, 1374, 1119, 4911, 4938, 1105, 11, 12597, 2]
 
-// Module 12721 (ChatInputGuardReadonly)
+// Module 12630 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import router_utils from "router_utils" /* 1101 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
+import c from "c" /* 568 */;
+import router_utils from "router_utils" /* 1105 */;
+import util from "util" /* 1119 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12597 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import UserStore from "UserStore" /* 1372 */;
-
-const require = globalThis.__r;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore from "GuildChannelStore" /* 2100 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
+import RelationshipStore from "RelationshipStore" /* 4409 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
 function sortChannelsByLastMessageId(id, id2) {
   const obj = SnowflakeUtilsDefault;
   return obj.compare(ReadStateStore.lastMessageId(id2.id), ReadStateStore.lastMessageId(id.id));
 }
-const isTextChannel = fn(2045).isTextChannel;
-let closure_6 = fn(2096).GUILD_SELECTABLE_CHANNELS_KEY;
-const TextAreaCta = fn(12215).TextAreaCta;
-const Constants = fn(1074);
+const isTextChannel = fn(2049).isTextChannel;
+let closure_6 = fn(2100).GUILD_SELECTABLE_CHANNELS_KEY;
+const TextAreaCta = fn(12092).TextAreaCta;
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, Permissions: map1 } = Constants);
 const jsx = fn(21).jsx;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReadonly.tsx");
-
-export default noop.memo(function ChatInputGuardReadonly(guildId) {
-  guildId = guildId.guildId;
-  importDefault = undefined;
-  let stateFromStores;
-  let stateFromStoresArray;
-  let stateFromStoresArray1;
-  const channelAction = guildId(stateFromStores[11]).useMemberActionsForChannel(guildId, guildId.channel).channelAction;
-  let obj = guildId(stateFromStores[11]);
+let ReactCompilerGating = fn(558);
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  const cResult = require("c").c(29);
+  let obj = require("c");
+  const channelAction = require("MemberActionUtils").useMemberActionsForChannel(arg0, arg1).channelAction;
+  let obj2 = require("MemberActionUtils");
   let channelId;
   if (channelAction != null) {
     channelId = channelAction.channelId;
   }
-  importDefault = guildId(stateFromStores[11]).useNextMemberAction(guildId, channelId);
-  let obj2 = guildId(stateFromStores[11]);
+  const nextMemberAction = require("MemberActionUtils").useNextMemberAction(arg0, channelId);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [stateFromStoresArray1];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  let channelId1;
+  if (nextMemberAction != null) {
+    channelId1 = nextMemberAction.channelId;
+  }
+  if (cResult[1] !== channelId1) {
+    let channelId2;
+    if (nextMemberAction != null) {
+      channelId2 = nextMemberAction.channelId;
+    }
+    class S {
+      constructor() {
+        channelId = undefined;
+        tmp = closure_4;
+        if (closure_1 != null) {
+          channelId = closure_1.channelId;
+        }
+        return closure_4.getChannel(channelId);
+      }
+    }
+    cResult[1] = channelId2;
+    cResult[2] = S;
+    let tmp9 = S;
+  } else {
+    tmp9 = cResult[2];
+  }
+  const obj3 = require("MemberActionUtils");
+  stateFromStores = require("initialize").useStateFromStores(first, tmp9);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [];
+    class S {
+      constructor() {
+        channelId = undefined;
+        tmp = closure_4;
+        if (closure_1 != null) {
+          channelId = closure_1.channelId;
+        }
+        return closure_4.getChannel(channelId);
+      }
+    }
+    cResult[3] = items1;
+    let tmp12 = items1;
+  } else {
+    tmp12 = cResult[3];
+  }
+  if (cResult[4] !== arg0) {
+    const fn = function p() {
+      const mapped = GuildChannelStore.getChannels(closure_0)[closure_6].map((channel) => channel.channel);
+      return mapped.sort(sortChannelsByLastMessageId);
+    };
+    class S {
+      constructor() {
+        channelId = undefined;
+        tmp = closure_4;
+        if (closure_1 != null) {
+          channelId = closure_1.channelId;
+        }
+        return closure_4.getChannel(channelId);
+      }
+    }
+    cResult[5] = fn;
+    let tmp14 = fn;
+  } else {
+    tmp14 = cResult[5];
+  }
+  const tmpResult = require("initialize");
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(tmp12, tmp14);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = [];
+    class S {
+      constructor() {
+        channelId = undefined;
+        tmp = closure_4;
+        if (closure_1 != null) {
+          channelId = closure_1.channelId;
+        }
+        return closure_4.getChannel(channelId);
+      }
+    }
+    cResult[6] = items2;
+    let tmp16 = items2;
+  } else {
+    tmp16 = cResult[6];
+  }
+  if (cResult[7] !== stateFromStoresArray) {
+    class P {
+      constructor() {
+        found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+        found1 = found.filter((type) => stateFromStoresArray(type.type));
+        return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+      }
+    }
+    const items3 = [];
+    class S {
+      constructor() {
+        channelId = undefined;
+        tmp = closure_4;
+        if (closure_1 != null) {
+          channelId = closure_1.channelId;
+        }
+        return closure_4.getChannel(channelId);
+      }
+    }
+    cResult[7] = stateFromStoresArray;
+    cResult[8] = P;
+    cResult[9] = items3;
+    let tmp19 = items3;
+    const tmp18 = P;
+  } else {
+    class P {
+      constructor() {
+        found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+        found1 = found.filter((type) => stateFromStoresArray(type.type));
+        return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+      }
+    }
+    tmp19 = cResult[9];
+  }
+  const tmpResult3 = require("initialize");
+  stateFromStoresArray1 = require("initialize").useStateFromStoresArray(tmp16, tmp18, tmp19);
+  if (null != stateFromStores) {
+    class P {
+      constructor() {
+        found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+        found1 = found.filter((type) => stateFromStoresArray(type.type));
+        return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+      }
+    }
+    if (cResult[12] === arg0) {
+      class P {
+        constructor() {
+          found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+          found1 = found.filter((type) => stateFromStoresArray(type.type));
+          return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+        }
+      }
+      if (cResult[15] === tmp29) {
+        class P {
+          constructor() {
+            found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+            found1 = found.filter((type) => stateFromStoresArray(type.type));
+            return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+          }
+        }
+      }
+      class D {
+        constructor() {
+          obj = closure_1(closure_2[18]);
+          obj1 = { cta_type: TextAreaCta.CHANNEL_LINK };
+          trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
+          obj3 = closure_0(closure_2[19]);
+          transitionToGuildResult = obj3.transitionToGuild(closure_0, closure_2.id);
+          return;
+        }
+      }
+      tmp32[0] = tmp29;
+      tmp32[1] = tmp30;
+      cResult[15] = tmp29;
+      cResult[16] = tmp30;
+      cResult[17] = tmp32;
+    }
+    class D {
+      constructor() {
+        obj = closure_1(closure_2[18]);
+        obj1 = { cta_type: TextAreaCta.CHANNEL_LINK };
+        trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
+        obj3 = closure_0(closure_2[19]);
+        transitionToGuildResult = obj3.transitionToGuild(closure_0, closure_2.id);
+        return;
+      }
+    }
+    cResult[12] = arg0;
+    cResult[13] = stateFromStores;
+    cResult[14] = D;
+  } else {
+    class P {
+      constructor() {
+        found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+        found1 = found.filter((type) => stateFromStoresArray(type.type));
+        return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+      }
+    }
+    if (0 === stateFromStoresArray1.length) {
+      class P {
+        constructor() {
+          found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+          found1 = found.filter((type) => stateFromStoresArray(type.type));
+          return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+        }
+      }
+      class D {
+        constructor() {
+          obj = closure_1(closure_2[18]);
+          obj1 = { cta_type: TextAreaCta.CHANNEL_LINK };
+          trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
+          obj3 = closure_0(closure_2[19]);
+          transitionToGuildResult = obj3.transitionToGuild(closure_0, closure_2.id);
+          return;
+        }
+      }
+      if (cResult[19] !== arg0) {
+        class P {
+          constructor() {
+            found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+            found1 = found.filter((type) => stateFromStoresArray(type.type));
+            return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+          }
+        }
+        tmp27[0] = tmp25;
+        class D {
+          constructor() {
+            obj = closure_1(closure_2[18]);
+            obj1 = { cta_type: TextAreaCta.CHANNEL_LINK };
+            trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
+            obj3 = closure_0(closure_2[19]);
+            transitionToGuildResult = obj3.transitionToGuild(closure_0, closure_2.id);
+            return;
+          }
+        }
+        tmp27[1] = tmp25;
+        cResult[19] = arg0;
+        cResult[20] = tmp27;
+      } else {
+        class P {
+          constructor() {
+            found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+            found1 = found.filter((type) => stateFromStoresArray(type.type));
+            return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+          }
+        }
+      }
+    } else {
+      class P {
+        constructor() {
+          found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+          found1 = found.filter((type) => stateFromStoresArray(type.type));
+          return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+        }
+      }
+      if (cResult[23] === stateFromStoresArray1[0]) {
+        class P {
+          constructor() {
+            found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+            found1 = found.filter((type) => stateFromStoresArray(type.type));
+            return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+          }
+        }
+        if (cResult[26] === tmp20) {
+          class P {
+            constructor() {
+              found = closure_3.filter(closure_0(closure_2[15]).isNotNullish);
+              found1 = found.filter((type) => stateFromStoresArray(type.type));
+              return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
+            }
+          }
+          return tmp22;
+        }
+        class D {
+          constructor() {
+            obj = closure_1(closure_2[18]);
+            obj1 = { cta_type: TextAreaCta.CHANNEL_LINK };
+            trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
+            obj3 = closure_0(closure_2[19]);
+            transitionToGuildResult = obj3.transitionToGuild(closure_0, closure_2.id);
+            return;
+          }
+        }
+        tmp23[0] = tmp20;
+        tmp23[1] = tmp21;
+        cResult[26] = tmp20;
+        cResult[27] = tmp21;
+        cResult[28] = tmp23;
+        tmp22 = tmp23;
+      }
+      class D {
+        constructor() {
+          obj = closure_1(closure_2[18]);
+          obj1 = { cta_type: TextAreaCta.CHANNEL_LINK };
+          trackWithMetadataResult = obj.trackWithMetadata(AnalyticEvents.TEXT_AREA_CTA_CLICKED, obj1);
+          obj3 = closure_0(closure_2[19]);
+          transitionToGuildResult = obj3.transitionToGuild(closure_0, closure_2.id);
+          return;
+        }
+      }
+      cResult[23] = stateFromStoresArray1[0];
+      cResult[24] = arg0;
+      cResult[25] = H;
+    }
+  }
+}) : ((arg0, arg1) => {
+  _require = arg0;
+  const channelAction = require("MemberActionUtils").useMemberActionsForChannel(arg0, arg1).channelAction;
+  let obj = require("MemberActionUtils");
+  let channelId;
+  if (channelAction != null) {
+    channelId = channelAction.channelId;
+  }
+  channelId = require("MemberActionUtils").useNextMemberAction(arg0, channelId);
+  let obj2 = require("MemberActionUtils");
   const items = [stateFromStoresArray1];
-  stateFromStores = guildId(stateFromStores[12]).useStateFromStores(items, () => {
+  stateFromStores = require("initialize").useStateFromStores(items, () => {
     channelId = undefined;
     if (channelId != null) {
       channelId = channelId.channelId;
     }
     return ChannelStore.getChannel(channelId);
   });
-  const tmpResult = guildId(stateFromStores[12]);
+  const tmpResult = require("initialize");
   const items1 = [GuildChannelStore];
-  stateFromStoresArray = guildId(stateFromStores[12]).useStateFromStoresArray(items1, () => {
-    const mapped = GuildChannelStore.getChannels(guildId)[closure_6].map((channel) => channel.channel);
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items1, () => {
+    const mapped = GuildChannelStore.getChannels(closure_0)[closure_6].map((channel) => channel.channel);
     return mapped.sort(sortChannelsByLastMessageId);
   });
-  const tmpResult5 = guildId(stateFromStores[12]);
+  const tmpResult5 = require("initialize");
   const items2 = [PermissionStore];
   const items3 = [stateFromStoresArray];
-  stateFromStoresArray1 = guildId(stateFromStores[12]).useStateFromStoresArray(items2, () => {
+  stateFromStoresArray1 = require("initialize").useStateFromStoresArray(items2, () => {
     const found = stateFromStoresArray.filter(GlobalUtils.isNotNullish);
     const found1 = found.filter((type) => stateFromStoresArray(type.type));
     return found1.filter((item) => closure_1_7.can(constants.SEND_MESSAGES, item));
   }, items3);
   if (null != stateFromStores) {
     const obj3 = { text: null, handlePress: null };
-    const intl2 = tmp(tmp2[14]).intl;
-    const obj4 = { channelName: tmp(tmp2[15]).computeChannelName(stateFromStores, UserStore, RelationshipStore) };
-    obj3.text = intl2.formatToPlainString(tmp(tmp2[14]).t.q1krfU, obj4);
+    const intl2 = tmp(tmp2[16]).intl;
+    const obj4 = { channelName: tmp(tmp2[17]).computeChannelName(stateFromStores, UserStore, RelationshipStore) };
+    obj3.text = intl2.formatToPlainString(tmp(tmp2[16]).t.q1krfU, obj4);
     obj3.handlePress = function handlePress() {
       AppAnalyticsUtilsDefault.trackWithMetadata(constants.TEXT_AREA_CTA_CLICKED, { cta_type: TextAreaCta.CHANNEL_LINK });
       const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
-      router_utils.transitionToGuild(guildId, stateFromStores.id);
+      router_utils.transitionToGuild(closure_0, stateFromStores.id);
     };
     let obj6 = obj3;
-    const tmpResult7 = tmp(tmp2[15]);
+    const tmpResult7 = tmp(tmp2[17]);
   } else if (0 === stateFromStoresArray1.length) {
     const obj5 = { text: null, handlePress: null };
-    const intl = tmp(tmp2[14]).intl;
-    obj5.text = intl.string(tmp(tmp2[14]).t["gHD/nZ"]);
+    const intl = tmp(tmp2[16]).intl;
+    obj5.text = intl.string(tmp(tmp2[16]).t["gHD/nZ"]);
     obj5.handlePress = function handlePress() {
       AppAnalyticsUtilsDefault.trackWithMetadata(constants.TEXT_AREA_CTA_CLICKED, { cta_type: TextAreaCta.CHANNEL_LIST });
       const obj2 = { cta_type: TextAreaCta.CHANNEL_LIST };
-      router_utils.transitionToGuild(guildId, undefined);
+      router_utils.transitionToGuild(closure_0, undefined);
     };
     obj6 = obj5;
   } else {
-    const intl4 = tmp(tmp2[14]).intl;
+    const intl3 = tmp(tmp2[16]).intl;
     let str = "";
     if (null != stateFromStoresArray1[0]) {
-      str = tmp(tmp2[15]).computeChannelName(stateFromStoresArray1[0], UserStore, RelationshipStore);
-      const tmpResult8 = tmp(tmp2[15]);
+      str = tmp(tmp2[17]).computeChannelName(stateFromStoresArray1[0], UserStore, RelationshipStore);
+      const tmpResult8 = tmp(tmp2[17]);
     }
     obj6 = { text: null, handlePress: null };
     const obj7 = { channelName: str };
-    obj6.text = intl4.formatToPlainString(tmp(tmp2[14]).t.q1krfU, obj7);
+    obj6.text = intl3.formatToPlainString(tmp(tmp2[16]).t.q1krfU, obj7);
     obj6.handlePress = function handlePress() {
       AppAnalyticsUtilsDefault.trackWithMetadata(constants.TEXT_AREA_CTA_CLICKED, { cta_type: TextAreaCta.CHANNEL_LINK });
       const obj2 = { cta_type: TextAreaCta.CHANNEL_LINK };
-      router_utils.transitionToGuild(guildId, stateFromStoresArray1[0].id);
+      router_utils.transitionToGuild(closure_0, stateFromStoresArray1[0].id);
     };
   }
-  ({ text, handlePress } = obj6);
-  const obj8 = { type: "simple-action", actionOnPress: handlePress, actionLabel: null, message: null };
-  const tmpResult6 = guildId(stateFromStores[12]);
-  const intl3 = tmp(tmp2[14]).intl;
-  obj8.actionLabel = intl3.string(guildId(stateFromStores[14]).t["9cs5LM"]);
-  obj8.message = text;
-  return jsx(require("ChatInputGuard"), { type: "simple-action", actionOnPress: handlePress, actionLabel: null, message: null });
+  return obj6;
 });
+ReactCompilerGating = fn(558);
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardReadonly.tsx");
+
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+  const cResult = c.c(4);
+  ({ text, handlePress } = closure_15(guildId.guildId, guildId.channel));
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t["9cs5LM"]);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === handlePress) {
+    if (cResult[2] === text) {
+      let tmp7 = cResult[3];
+    }
+    return tmp7;
+  }
+  const tmp8 = jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: handlePress, actionLabel: first, message: text });
+  cResult[1] = handlePress;
+  cResult[2] = text;
+  cResult[3] = tmp8;
+  tmp7 = tmp8;
+}) : ((guildId) => {
+  ({ text, handlePress } = closure_15(guildId.guildId, guildId.channel));
+  const obj = { type: "simple-action", actionOnPress: handlePress, actionLabel: null, message: null };
+  const tmp = closure_15(guildId.guildId, guildId.channel);
+  const intl = util.intl;
+  obj.actionLabel = intl.string(util.t["9cs5LM"]);
+  obj.message = text;
+  return jsx(ChatInputGuardDefault, { type: "simple-action", actionOnPress: handlePress, actionLabel: null, message: null });
+}));

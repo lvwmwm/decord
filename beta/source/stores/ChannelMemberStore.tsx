@@ -1,26 +1,26 @@
-// Module ID: 7521
-// Function ID: 7522
+// Module ID: 7523
+// Function ID: 7524
 // Name: ChannelMemberStore
-// Dependencies: [4671, 4778, 502, 2041, 4675, 2105, 2099, 2063, 4796, 5496, 1372, 1074, 1115, 4400, 1240, 12, 1086, 504, 573, 2]
+// Dependencies: [4674, 4780, 502, 2045, 4678, 2109, 2103, 2067, 4798, 5498, 1376, 1078, 1119, 4404, 1244, 12, 1090, 504, 577, 2]
 
-// Module 7521 (ChannelMemberStore)
+// Module 7523 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1244 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4678 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import GuildRoleStore from "GuildRoleStore" /* 2103 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PresenceStore from "PresenceStore" /* 4798 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
+import UserStore from "UserStore" /* 1376 */;
 
 let require = fn;
 function getMemberListId(arg0) {
@@ -71,7 +71,7 @@ function handleLocalPresenceUpdate() {
   const id = AuthenticationStore.getId();
   const item = merged.forEach(null, (rebuildMember) => rebuildMember.rebuildMember(closure_0));
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ StatusTypes: closure_15, Permissions: closure_16 } = Constants);
 const everyone = "everyone";
 const MemberListRowTypes = { GROUP: "GROUP", MEMBER: "MEMBER", CONTENT_INVENTORY: "CONTENT_INVENTORY", CONTENT_INVENTORY_GROUP: "CONTENT_INVENTORY_GROUP", HIDDEN_CONTENT_INVENTORY: "HIDDEN_CONTENT_INVENTORY", CONTENT_INVENTORY_LEADERBOARD: "CONTENT_INVENTORY_LEADERBOARD" };
@@ -90,7 +90,7 @@ class MemberList {
 const prototype = MemberList.prototype;
 prototype["updateOwnerId"] = function updateOwnerId() {
   const self = this;
-  const guild = GuildStore.getGuild(this.guildId);
+  guild = GuildStore.getGuild(this.guildId);
   if (null == guild) {
     return false;
   } else {
@@ -117,7 +117,7 @@ prototype["setGroups"] = function setGroups(groups) {
     if (constants.ONLINE !== id) {
       if (tmp4.OFFLINE !== id) {
         if (tmp4.UNKNOWN !== id) {
-          const guild = GuildStore.getGuild(tmp3);
+          guild = GuildStore.getGuild(tmp3);
           let role = null;
           if (null != guild) {
             role = GuildRoleStore.getRole(guild.id, id);
@@ -141,14 +141,14 @@ prototype["setGroups"] = function setGroups(groups) {
     Object.defineProperty(obj2, "title", {
       get: () => {
         if (constants.ONLINE === id) {
-          const intl3 = id(1115).intl;
-          return intl3.string(id(1115).t.WbGtnH);
+          const intl3 = id(1119).intl;
+          return intl3.string(id(1119).t.WbGtnH);
         } else if (tmp2.OFFLINE === tmp) {
-          const intl2 = id(1115).intl;
-          return intl2.string(id(1115).t.Vv0abJ);
+          const intl2 = id(1119).intl;
+          return intl2.string(id(1119).t.Vv0abJ);
         } else {
-          const intl = id(1115).intl;
-          return intl.string(id(1115).t["UQMV/E"]);
+          const intl = id(1119).intl;
+          return intl.string(id(1119).t["UQMV/E"]);
         }
       },
       set: undefined
@@ -193,12 +193,12 @@ prototype["insert"] = function insert(arg0, arg1) {
     if (constants.ONLINE !== id) {
       if (tmp17.OFFLINE !== id) {
         if (tmp17.UNKNOWN !== id) {
-          const guild = GuildStore.getGuild(tmp16);
+          guild = GuildStore.getGuild(tmp16);
           let role = null;
           if (null != guild) {
             role = GuildRoleStore.getRole(guild.id, id);
           }
-          let obj2 = { type: obj.GROUP, key: id, id, title: null, count: null, index: "accessible" };
+          let obj2 = { type: obj.GROUP, key: id, id, title: null, count: null, index: "applicationId" };
           let str = "";
           if (null != role) {
             str = role.name;
@@ -214,14 +214,14 @@ prototype["insert"] = function insert(arg0, arg1) {
     Object.defineProperty(obj3, "title", {
       get: () => {
           if (constants.ONLINE === id) {
-            const intl3 = id(1115).intl;
-            return intl3.string(id(1115).t.WbGtnH);
+            const intl3 = id(1119).intl;
+            return intl3.string(id(1119).t.WbGtnH);
           } else if (tmp2.OFFLINE === tmp) {
-            const intl2 = id(1115).intl;
-            return intl2.string(id(1115).t.Vv0abJ);
+            const intl2 = id(1119).intl;
+            return intl2.string(id(1119).t.Vv0abJ);
           } else {
-            const intl = id(1115).intl;
-            return intl.string(id(1115).t["UQMV/E"]);
+            const intl = id(1119).intl;
+            return intl.string(id(1119).t["UQMV/E"]);
           }
         },
       set: undefined
@@ -288,12 +288,12 @@ prototype["update"] = function update(arg0, arg1) {
     if (constants.ONLINE !== id2) {
       if (tmp21.OFFLINE !== id2) {
         if (tmp21.UNKNOWN !== id2) {
-          const guild = GuildStore.getGuild(tmp20);
+          guild = GuildStore.getGuild(tmp20);
           let role = null;
           if (null != guild) {
             role = GuildRoleStore.getRole(guild.id, id2);
           }
-          let obj2 = { type: obj.GROUP, key: id2, id: id2, title: null, count: null, index: "accessible" };
+          let obj2 = { type: obj.GROUP, key: id2, id: id2, title: null, count: null, index: "applicationId" };
           let str = "";
           if (null != role) {
             str = role.name;
@@ -309,14 +309,14 @@ prototype["update"] = function update(arg0, arg1) {
     Object.defineProperty(obj3, "title", {
       get: () => {
           if (constants.ONLINE === id) {
-            const intl3 = id(1115).intl;
-            return intl3.string(id(1115).t.WbGtnH);
+            const intl3 = id(1119).intl;
+            return intl3.string(id(1119).t.WbGtnH);
           } else if (tmp2.OFFLINE === tmp) {
-            const intl2 = id(1115).intl;
-            return intl2.string(id(1115).t.Vv0abJ);
+            const intl2 = id(1119).intl;
+            return intl2.string(id(1119).t.Vv0abJ);
           } else {
-            const intl = id(1115).intl;
-            return intl.string(id(1115).t["UQMV/E"]);
+            const intl = id(1119).intl;
+            return intl.string(id(1119).t["UQMV/E"]);
           }
         },
       set: undefined
@@ -438,7 +438,7 @@ prototype["rebuildGroup"] = function rebuildGroup(id) {
     if (constants.ONLINE !== str) {
       if (tmp12.OFFLINE !== str) {
         if (tmp12.UNKNOWN !== str) {
-          const guild = GuildStore.getGuild(tmp11);
+          guild = GuildStore.getGuild(tmp11);
           let role = null;
           if (null != guild) {
             role = GuildRoleStore.getRole(guild.id, str);
@@ -464,14 +464,14 @@ prototype["rebuildGroup"] = function rebuildGroup(id) {
     Object.defineProperty(obj2, "title", {
       get: () => {
           if (constants.ONLINE === id) {
-            const intl3 = id(1115).intl;
-            return intl3.string(id(1115).t.WbGtnH);
+            const intl3 = id(1119).intl;
+            return intl3.string(id(1119).t.WbGtnH);
           } else if (tmp2.OFFLINE === tmp) {
-            const intl2 = id(1115).intl;
-            return intl2.string(id(1115).t.Vv0abJ);
+            const intl2 = id(1119).intl;
+            return intl2.string(id(1119).t.Vv0abJ);
           } else {
-            const intl = id(1115).intl;
-            return intl.string(id(1115).t["UQMV/E"]);
+            const intl = id(1119).intl;
+            return intl.string(id(1119).t["UQMV/E"]);
           }
         },
       set: undefined

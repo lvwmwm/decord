@@ -1,19 +1,19 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17513
+// Function ID: 17514
 // Name: TopSoundboardSoundsActionCreators
-// Dependencies: [1372, 5224, 5225, 1074, 17529, 4595, 573, 1271, 2]
+// Dependencies: [1376, 5226, 5227, 1078, 17512, 4598, 577, 1275, 2]
 // Exports: fetchTopSoundboardSounds, maybeFetchTopSoundboardSoundsByGuild
 
-// Module 17530 (TopSoundboardSoundsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserStore from "UserStore" /* 1372 */;
-import SoundboardStore from "SoundboardStore" /* 5224 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5225 */;
+// Module 17513 (TopSoundboardSoundsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserStore from "UserStore" /* 1376 */;
+import SoundboardStore from "SoundboardStore" /* 5226 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5227 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundboard/top_sounds/TopSoundboardSoundsActionCreators.tsx");
 
@@ -34,7 +34,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
           if (!tmp9Result.isPseudoGuildId(id)) {
             const obj = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH", guildId: id };
             DispatcherDefault.dispatch(obj);
-            const HTTP = tmp9(1271).HTTP;
+            const HTTP = tmp9(1275).HTTP;
             const obj3 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(id), oldFormErrors: true, rejectWithError: true };
             value = HTTP.get(obj3);
             value.then((body) => {
@@ -45,7 +45,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
               return DispatcherDefault.dispatch(obj2);
             }, () => DispatcherDefault.dispatch({ type: "TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE", guildId }));
           }
-          tmp9Result = tmp9(4595);
+          tmp9Result = tmp9(4598);
         }
       }
     }

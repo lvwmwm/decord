@@ -1,17 +1,17 @@
-// Module ID: 14676
-// Function ID: 14677
+// Module ID: 14679
+// Function ID: 14680
 // Name: PermissionVADStore
-// Dependencies: [502, 2041, 1992, 4395, 4779, 4775, 1074, 573, 504, 2]
+// Dependencies: [502, 2045, 1996, 4399, 4781, 4777, 1078, 577, 504, 2]
 
-// Module 14676 (PermissionVADStore)
+// Module 14679 (PermissionVADStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
+import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 function handleUpdateVADPermission() {
   const channelId = RTCConnectionStore.getChannelId();
@@ -42,7 +42,7 @@ function handleUpdateVADPermission() {
   }
   return flag2;
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ InputModes: closure_8, Permissions: closure_9 } = Constants);
 let c11 = true;
 const Store = initializeDefault.Store;

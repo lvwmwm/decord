@@ -1,11 +1,11 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14344
+// Function ID: 14345
 // Name: IOSAudioInterruptExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 // Exports: getIOSAudioInterruptExperimentConfig
 
-// Module 14341 (IOSAudioInterruptExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 14344 (IOSAudioInterruptExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-ios-audio-interrupt-handling", kind: "user", defaultConfig: { enabled: false }, variations: null };

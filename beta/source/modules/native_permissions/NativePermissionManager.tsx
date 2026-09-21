@@ -1,15 +1,15 @@
-// Module ID: 5356
-// Function ID: 5357
+// Module ID: 5358
+// Function ID: 5359
 // Name: NativePermissionManager
-// Dependencies: [4965, 1074, 1982, 1364, 5357, 573, 5355, 2]
+// Dependencies: [4967, 1078, 1986, 1368, 5359, 577, 5357, 2]
 
-// Module 5356 (NativePermissionManager)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 4965 */;
-import NativePermissionUtils from "NativePermissionUtils" /* 5355 */;
-import LifecycleManager from "LifecycleManager" /* 1982 */;
+// Module 5358 (NativePermissionManager)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 4967 */;
+import NativePermissionUtils from "NativePermissionUtils" /* 5357 */;
+import LifecycleManager from "LifecycleManager" /* 1986 */;
 import size from "module_2" /* 2 */;
 
 const NativePermissionTypes = NativePermissionConstants.NativePermissionTypes;
@@ -20,11 +20,11 @@ const prototype = NativePermissionManager.prototype;
 prototype["isEnabled"] = function isEnabled() {
   let isDesktopResult = PlatformUtils.isDesktop();
   if (isDesktopResult) {
-    isDesktopResult = tmp(1364).isMac();
-    const tmpResult = tmp(1364);
+    isDesktopResult = tmp(1368).isMac();
+    const tmpResult = tmp(1368);
   }
   if (isDesktopResult) {
-    const ProcessArgs = tmp(5357).ProcessArgs;
+    const ProcessArgs = tmp(5359).ProcessArgs;
     isDesktopResult = !ProcessArgs.isDiscordTestSet();
   }
   return isDesktopResult;

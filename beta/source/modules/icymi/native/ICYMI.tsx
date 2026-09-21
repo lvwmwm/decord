@@ -1,61 +1,62 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16792
+// Function ID: 16793
 // Name: ICYMI
-// Dependencies: [32, 19, 17, 4748, 502, 2063, 8618, 8606, 16790, 2038, 21, 4756, 576, 16791, 8179, 15277, 8622, 4723, 16793, 1980, 4710, 16804, 4752, 1115, 7188, 7368, 5341, 4574, 5339, 16740, 16742, 5897, 8621, 1478, 1612, 1485, 7717, 504, 16730, 16824, 16827, 7631, 2027, 16814, 1484, 8619, 8103, 8104, 15358, 1095, 16828, 16834, 16839, 16852, 16853, 16854, 16855, 16856, 16857, 16858, 16859, 8116, 16860, 8997, 1364, 12151, 4609, 16861, 16792, 4466, 2]
-// Exports: ICYMITab
+// Dependencies: [32, 19, 17, 4750, 502, 2067, 8623, 8611, 16793, 2042, 21, 4758, 580, 16794, 8178, 15266, 8627, 4725, 16796, 1984, 558, 568, 4712, 16807, 4754, 1119, 7186, 5343, 4577, 5341, 16743, 16745, 5846, 7371, 8626, 1482, 1616, 1489, 7722, 504, 16733, 16827, 16830, 7633, 2031, 16817, 1488, 8624, 8108, 8109, 15347, 1099, 16831, 16835, 16842, 16855, 16856, 16857, 16858, 16859, 16860, 16861, 16862, 8121, 16863, 8995, 1368, 12026, 4612, 4471, 16864, 16795, 2]
 
-// Module 16789 (ICYMI)
-import nativeDefault from "native" /* 576 */;
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4574 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4609 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4710 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5341 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import IconButton from "IconButton" /* 8179 */;
-import ICYMITypes from "ICYMITypes" /* 8619 */;
-import ICYMIUtils from "ICYMIUtils" /* 8621 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8622 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15277 */;
-import NativeICYMIUtils from "NativeICYMIUtils" /* 16804 */;
-import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 16828 */;
-import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 16834 */;
-import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 16839 */;
-import ICYMILoading from "ICYMILoading" /* 16852 */;
-import ICYMIBottomLoading from "ICYMIBottomLoading" /* 16853 */;
-import CaughtUpRowDefault from "CaughtUpRow" /* 16854 */;
-import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 16855 */;
-import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 16856 */;
-import ICYMIHeaderDefault from "ICYMIHeader" /* 16857 */;
-import ICYMIForumThreadRow from "ICYMIForumThreadRow" /* 16858 */;
-import CardHeightMeasurer from "CardHeightMeasurer" /* 16859 */;
-import AppFreezerDefault from "AppFreezer" /* 16861 */;
+// Module 16792 (ICYMI)
+import initialize from "initialize" /* 504 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import ChannelTypes from "ChannelTypes" /* 1099 */;
+import util from "util" /* 1119 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4577 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4612 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import Pressables from "Pressables" /* 5341 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7371 */;
+import IconButton from "IconButton" /* 8178 */;
+import ICYMITypes from "ICYMITypes" /* 8624 */;
+import ICYMIUtils from "ICYMIUtils" /* 8626 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8627 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15266 */;
+import notifications_Notifications from "notifications/Notifications" /* 16743 */;
+import NativeICYMIUtils from "NativeICYMIUtils" /* 16807 */;
+import AnnouncementMessageRowDefault from "AnnouncementMessageRow" /* 16831 */;
+import ICYMIMessageRowDefault from "ICYMIMessageRow" /* 16835 */;
+import ContentInventoryEntryRowDefault from "ContentInventoryEntryRow" /* 16842 */;
+import ICYMILoading from "ICYMILoading" /* 16855 */;
+import ICYMIBottomLoading from "ICYMIBottomLoading" /* 16856 */;
+import CaughtUpRowDefault from "CaughtUpRow" /* 16857 */;
+import ICYMIGuildEventRowDefault from "ICYMIGuildEventRow" /* 16858 */;
+import ICYMIServerRecommendationRow from "ICYMIServerRecommendationRow" /* 16859 */;
+import ICYMIHeaderDefault from "ICYMIHeader" /* 16860 */;
+import ICYMIForumThreadRow from "ICYMIForumThreadRow" /* 16861 */;
+import CardHeightMeasurer from "CardHeightMeasurer" /* 16862 */;
+import AppFreezerDefault from "AppFreezer" /* 16864 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8618 */;
-import ICYMIStore from "ICYMIStore" /* 8606 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8623 */;
+import ICYMIStore from "ICYMIStore" /* 8611 */;
 
 const require = globalThis.__r;
 
-const util = LeftBackIconWithBadge(1115);
-const Pressables = LeftBackIconWithBadge(5339);
-const XSmallIcon = LeftBackIconWithBadge(5897);
-const notifications_Notifications = LeftBackIconWithBadge(16740);
-const BackIconWithBadge = LeftBackIconWithBadge(16742);
+const XSmallIcon = LeftBackIconWithBadge(5846);
+const BackIconWithBadge = LeftBackIconWithBadge(16745);
 require = fn;
 function SettingsButton() {
-  return closure_1_14(IconButton.IconButton, {
+  return state(IconButton.IconButton, {
     accessibilityLabel: "button",
     variant: "tertiary",
     size: "sm",
-    icon: closure_1_14(FiltersHorizontalIcon.FiltersHorizontalIcon, { size: "sm" }),
+    icon: state(FiltersHorizontalIcon.FiltersHorizontalIcon, { size: "sm" }),
     onPress() {
       require("ICYMIActionCreators").itemInteracted("filters_button", "filters_button", "press_info_button");
       const obj = require("ICYMIActionCreators");
@@ -63,38 +64,6 @@ function SettingsButton() {
       const obj2 = require("ICYMIActionCreators");
       require("ActionSheetActionCreators").openLazy(require("asyncRequireImpl")(paths[18], paths.paths), "ICYMISettingsActionSheet", {});
     }
-  });
-}
-function InfoButton() {
-  return closure_1_14(IconButton.IconButton, {
-    accessibilityLabel: "button",
-    variant: "tertiary",
-    size: "sm",
-    icon: closure_1_14(CircleInformationIcon.CircleInformationIcon, { size: "sm" }),
-    onPress() {
-      ICYMIActionCreatorsDefault.itemInteracted("info_button", "info_button", "press_info_button");
-      ICYMIActionCreatorsDefault.feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
-      require("NativeICYMIUtils").pushICYMIInfoModal({ extendedOnboarding: true });
-    }
-  });
-}
-function ICYMIHeaderTextWrapper() {
-  const tmp = closure_18();
-  return closure_1_14(hasOwnProperty, {
-    style: closure_18().headerText,
-    children: noop.useMemo(() => {
-      const obj = { children: null };
-      const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
-      const intl = require("util").intl;
-      obj2.children = intl.string(require("util").t.SY4sdZ);
-      const items = [closure_1_14(require("Text/Text").Text, obj2), ];
-      const obj3 = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 }, children: null };
-      const intl2 = require("util").intl;
-      obj3.children = intl2.string(require("util").t.Ac2OZA);
-      items[1] = closure_1_14(require("Text/Text").Text, obj3);
-      obj.children = items;
-      return closure_1_16(closure_1_15, obj);
-    }, [])
   });
 }
 function handleEndReached() {
@@ -110,38 +79,38 @@ function ICYMI(inNestedNavigator) {
   let stateFromStores3;
   closure_11 = undefined;
   const tmp = closure_18();
-  ({ height, width } = stateFromStores(visibleItemIds[33])());
-  const tmp3 = stateFromStores(visibleItemIds[33])();
-  isFocused = isFocused(visibleItemIds[35]).useIsFocused();
+  ({ height, width } = stateFromStores(visibleItemIds[35])());
+  const tmp3 = stateFromStores(visibleItemIds[35])();
+  isFocused = isFocused(visibleItemIds[37]).useIsFocused();
   const layoutEffect = handleOnRefresh.useLayoutEffect(() => {
-    isFocused(visibleItemIds[36]).trackAppUIViewed();
+    isFocused(visibleItemIds[38]).trackAppUIViewed();
   });
-  let obj = isFocused(visibleItemIds[35]);
+  let obj = isFocused(visibleItemIds[37]);
   const items = [stateFromStores2];
-  stateFromStores = isFocused(visibleItemIds[37]).useStateFromStores(items, () => stateFromStores2.useReducedMotion);
-  let obj2 = isFocused(visibleItemIds[37]);
+  stateFromStores = isFocused(visibleItemIds[39]).useStateFromStores(items, () => stateFromStores2.useReducedMotion);
+  let obj2 = isFocused(visibleItemIds[39]);
   const items1 = [closure_11];
-  const stateFromStores1 = isFocused(visibleItemIds[37]).useStateFromStores(items1, () => closure_11.notificationItem(), []);
+  const stateFromStores1 = isFocused(visibleItemIds[39]).useStateFromStores(items1, () => closure_11.notificationItem(), []);
   const items2 = [isFocused];
   const effect = handleOnRefresh.useEffect(() => {
     ICYMIActionCreatorsDefault.setTabFocused(isFocused);
   }, items2);
-  let obj3 = isFocused(visibleItemIds[37]);
-  const sharedICYMILogic = isFocused(visibleItemIds[39]).useSharedICYMILogic({ showDot: stateFromStores(visibleItemIds[38])().showDot, notificationItem: stateFromStores1 });
+  let obj3 = isFocused(visibleItemIds[39]);
+  const sharedICYMILogic = isFocused(visibleItemIds[41]).useSharedICYMILogic({ showDot: stateFromStores(visibleItemIds[40])().showDot, notificationItem: stateFromStores1 });
   ({ loading, visibleItemIds } = sharedICYMILogic);
   const endVisible = sharedICYMILogic.endVisible;
   ({ isRefreshing, handleOnRefresh } = sharedICYMILogic);
   ({ data, version, stickyHeaderIndices, viewabilityConfigCallbackPairs } = sharedICYMILogic);
-  let obj4 = isFocused(visibleItemIds[39]);
-  const iCYMIEmptyLoadingAnalytics = isFocused(visibleItemIds[40]).useICYMIEmptyLoadingAnalytics(loading, isFocused);
-  let obj5 = isFocused(visibleItemIds[40]);
-  const items3 = [isFocused(visibleItemIds[42]).DismissibleContent.ICYMI_ALPHA_UPSELL];
-  const tmp12 = endVisible(isFocused(visibleItemIds[41]).useGetDismissibleContent(items3), 2);
+  let obj4 = isFocused(visibleItemIds[41]);
+  const iCYMIEmptyLoadingAnalytics = isFocused(visibleItemIds[42]).useICYMIEmptyLoadingAnalytics(loading, isFocused);
+  let obj5 = isFocused(visibleItemIds[42]);
+  const items3 = [isFocused(visibleItemIds[44]).DismissibleContent.ICYMI_ALPHA_UPSELL];
+  const tmp12 = endVisible(isFocused(visibleItemIds[43]).useGetDismissibleContent(items3), 2);
   const first = tmp12[0];
   closure_6 = tmp14;
-  let obj6 = isFocused(visibleItemIds[41]);
+  let obj6 = isFocused(visibleItemIds[43]);
   const items4 = [ref1];
-  stateFromStores2 = isFocused(visibleItemIds[37]).useStateFromStores(items4, () => ref1.getGuildCount());
+  stateFromStores2 = isFocused(visibleItemIds[39]).useStateFromStores(items4, () => ref1.getGuildCount());
   const items5 = [first, tmp12[1], stateFromStores2];
   const effect1 = handleOnRefresh.useEffect(() => {
     if (null != first) {
@@ -157,7 +126,7 @@ function ICYMI(inNestedNavigator) {
       hasOpenedEnoughTimesResult = ICYMIStore.hasOpenedEnoughTimes();
     }
     if (hasOpenedEnoughTimesResult) {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16814, dependencyMap.paths), "ICYMIFeedbackSheet", {});
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16817, dependencyMap.paths), "ICYMIFeedbackSheet", {});
     }
   }, items6);
   const ref = handleOnRefresh.useRef(null);
@@ -170,7 +139,7 @@ function ICYMI(inNestedNavigator) {
       }
     }
   });
-  let obj7 = isFocused(visibleItemIds[37]);
+  let obj7 = isFocused(visibleItemIds[39]);
   const obj8 = {
     scrollToTop() {
       const current = ref.current;
@@ -180,12 +149,12 @@ function ICYMI(inNestedNavigator) {
       }
     }
   };
-  const scrollToTop = isFocused(visibleItemIds[35]).useScrollToTop(ref1);
-  const obj9 = isFocused(visibleItemIds[35]);
+  const scrollToTop = isFocused(visibleItemIds[37]).useScrollToTop(ref1);
+  const obj9 = isFocused(visibleItemIds[37]);
   const items7 = [stateFromStores3];
-  stateFromStores3 = isFocused(visibleItemIds[37]).useStateFromStores(items7, () => stateFromStores3.getDoubleTapBehavior());
-  const obj10 = isFocused(visibleItemIds[37]);
-  const items8 = [stateFromStores3, isFocused(visibleItemIds[44]).useNavigation(), stateFromStores];
+  stateFromStores3 = isFocused(visibleItemIds[39]).useStateFromStores(items7, () => stateFromStores3.getDoubleTapBehavior());
+  const obj10 = isFocused(visibleItemIds[39]);
+  const items8 = [stateFromStores3, isFocused(visibleItemIds[46]).useNavigation(), stateFromStores];
   const effect3 = handleOnRefresh.useEffect(() => {
     if (stateFromStores3 === ICYMITypes.GravityICYMIDoubleTapBehavior.DEFAULT) {
       const obj2 = {
@@ -201,7 +170,7 @@ function ICYMI(inNestedNavigator) {
     } else {
       let obj = {
         scrollToTop() {
-            isFocused(8103).showForLaterModal(isFocused(8104).SavedMessageSortTypes.BOOKMARK);
+            isFocused(8108).showForLaterModal(isFocused(8109).SavedMessageSortTypes.BOOKMARK);
           }
       };
       ref1.current = obj;
@@ -215,67 +184,67 @@ function ICYMI(inNestedNavigator) {
       current.scrollToOffset(obj);
     }
   }, items9);
-  const obj11 = isFocused(visibleItemIds[44]);
+  const obj11 = isFocused(visibleItemIds[46]);
   const items10 = [visibleItemIds, endVisible];
-  const mobileQuestDockHeight = isFocused(visibleItemIds[48]).useMobileQuestDockHeight();
+  const mobileQuestDockHeight = isFocused(visibleItemIds[50]).useMobileQuestDockHeight();
   const callback = handleOnRefresh.useCallback((item) => {
     item = item.item;
     const kind = item.data.kind;
     if ("message" === kind) {
       if (item.channelType === ChannelTypes.ChannelTypes.GUILD_ANNOUNCEMENT) {
         const obj2 = { unread: item.unread, message: item.data.message, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
-        let tmp41 = closure_2_14(AnnouncementMessageRowDefault, obj2);
+        let tmp41 = state(AnnouncementMessageRowDefault, obj2);
       } else {
         const obj3 = { message: item.data.message, messageContext: item.data.messageContext, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
-        tmp41 = closure_2_14(ICYMIMessageRowDefault, obj3);
+        tmp41 = state(ICYMIMessageRowDefault, obj3);
       }
     } else {
       if ("contentInventory" === kind) {
         const obj4 = { visible: null != visibleItemIds.find((item) => item.item.id === item.id), content: item.data.content };
-        let tmp7 = closure_2_14(ContentInventoryEntryRowDefault, obj4);
+        let tmp7 = state(ContentInventoryEntryRowDefault, obj4);
       } else if ("loading" === kind) {
-        return closure_2_14(ICYMILoading.ICYMILoading, {});
+        return state(ICYMILoading.ICYMILoading, {});
       } else if ("bottomLoading" === kind) {
-        return closure_2_14(ICYMIBottomLoading.ICYMIBottomLoading, {});
+        return state(ICYMIBottomLoading.ICYMIBottomLoading, {});
       } else if ("end" === kind) {
         const obj5 = { visible: endVisible };
-        return closure_2_14(CaughtUpRowDefault, obj5);
+        return state(CaughtUpRowDefault, obj5);
       } else if ("guildEvent" === kind) {
         const obj6 = { eventId: item.data.eventId };
-        tmp7 = closure_2_14(ICYMIGuildEventRowDefault, obj6);
+        tmp7 = state(ICYMIGuildEventRowDefault, obj6);
       } else if ("recommendedGuilds" === kind) {
-        tmp7 = closure_2_14(ICYMIServerRecommendationRow.ICYMIServerRecommendationRow, {});
+        tmp7 = state(ICYMIServerRecommendationRow.ICYMIServerRecommendationRow, {});
       } else if ("icymiHeader" === kind) {
-        return closure_2_14(ICYMIHeaderDefault, {});
+        return state(ICYMIHeaderDefault, {});
       } else if ("forumThread" === kind) {
         const obj = { message: item.data.message, channel: item.data.threadChannel, visible: null != visibleItemIds.find((item) => item.item.id === item.id) };
-        tmp7 = closure_2_14(ICYMIForumThreadRow.ICYMIForumThreadRow, obj);
+        tmp7 = state(ICYMIForumThreadRow.ICYMIForumThreadRow, obj);
       } else {
         return null;
       }
       const obj7 = { itemId: item.id, children: tmp7 };
-      return closure_2_14(CardHeightMeasurer.CardHeightMeasurer, obj7);
+      return state(CardHeightMeasurer.CardHeightMeasurer, obj7);
     }
   }, items10);
   const memo = handleOnRefresh.useMemo(() => ({ backgroundColor: "transparent" }), []);
-  const obj12 = isFocused(visibleItemIds[48]);
-  const clientThemesOverride = isFocused(visibleItemIds[61]).useClientThemesOverride();
-  const obj13 = isFocused(visibleItemIds[61]);
+  const obj12 = isFocused(visibleItemIds[50]);
+  const clientThemesOverride = isFocused(visibleItemIds[63]).useClientThemesOverride();
+  const obj13 = isFocused(visibleItemIds[63]);
   const items11 = [closure_11];
   const obj15 = { style: null, children: null };
   const items12 = [, ];
   ({ containerInPanels: arr13[0], containerBackground: arr13[1] } = tmp);
   obj15.style = items12;
-  const stateFromStores4 = isFocused(visibleItemIds[37]).useStateFromStores(items11, () => closure_11.hasNewContent(), []);
+  const stateFromStores4 = isFocused(visibleItemIds[39]).useStateFromStores(items11, () => closure_11.hasNewContent(), []);
   const items13 = [closure_14(closure_22, { inNestedNavigator: inNestedNavigator.inNestedNavigator }), ];
   const obj16 = { style: null, children: null };
   const items14 = [tmp.flashListWrapper, , ];
-  const size = { height: height - stateFromStores(visibleItemIds[34])().top - 32 - 24 - mobileQuestDockHeight, width, marginHorizontal: "auto" };
+  const size = { height: height - stateFromStores(visibleItemIds[36])().top - 32 - 24 - mobileQuestDockHeight, width, marginHorizontal: "auto" };
   items14[1] = size;
   items14[2] = clientThemesOverride;
   obj16.style = items14;
   const items15 = [
-    closure_14(stateFromStores(visibleItemIds[62]), {
+    closure_14(stateFromStores(visibleItemIds[64]), {
       onPress() {
         ICYMIActionCreatorsDefault.itemInteracted("refresh_button", "refresh_button", "press_refresh_button");
         ICYMIActionCreatorsDefault.feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "new_content_pill", actionIntentType: "refresh", actionDestinationType: null } });
@@ -288,8 +257,8 @@ function ICYMI(inNestedNavigator) {
 
   ];
   const obj18 = { ref, scrollEnabled: !loading, extraData: { endVisible }, contentContainerStyle: memo, accessibilityLabel: null, data: null, refreshing: null, refreshControl: null, onEndReachedThreshold: 3, onEndReached: null, keyExtractor: null, renderItem: null, getItemType: null, drawDistance: 100, stickyHeaderIndices: null, viewabilityConfigCallbackPairs: null };
-  const intl = isFocused(visibleItemIds[23]).intl;
-  obj18.accessibilityLabel = intl.string(isFocused(visibleItemIds[23]).t.OIgYlQ);
+  const intl = isFocused(visibleItemIds[25]).intl;
+  obj18.accessibilityLabel = intl.string(isFocused(visibleItemIds[25]).t.OIgYlQ);
   obj18.data = data;
   obj18.refreshing = isRefreshing;
   const obj19 = { onRefresh: handleOnRefresh, refreshing: isRefreshing, tintColor: tmp.refreshing.color, style: null };
@@ -303,8 +272,8 @@ function ICYMI(inNestedNavigator) {
   obj18.onEndReached = handleEndReached;
   obj18.keyExtractor = keyExtractor;
   obj18.renderItem = callback;
-  obj18.getItemType = isFocused(visibleItemIds[32]).itemToType;
-  const obj14 = isFocused(visibleItemIds[37]);
+  obj18.getItemType = isFocused(visibleItemIds[34]).itemToType;
+  const obj14 = isFocused(visibleItemIds[39]);
   const obj17 = {
     onPress() {
       ICYMIActionCreatorsDefault.itemInteracted("refresh_button", "refresh_button", "press_refresh_button");
@@ -314,14 +283,14 @@ function ICYMI(inNestedNavigator) {
     },
     isRefreshing
   };
-  isFocused(visibleItemIds[64]).isAndroid();
+  isFocused(visibleItemIds[66]).isAndroid();
   obj18.stickyHeaderIndices = stickyHeaderIndices;
   obj18.viewabilityConfigCallbackPairs = viewabilityConfigCallbackPairs;
   if (!loading) {
     num = version;
   }
-  items15[1] = closure_14(isFocused(visibleItemIds[63]).FlashList, obj18, "Version-" + num);
-  items15[2] = closure_14(isFocused(visibleItemIds[65]).TTIFirstContentfulPaint, { label: "icymi" });
+  items15[1] = closure_14(isFocused(visibleItemIds[65]).FlashList, obj18, "Version-" + num);
+  items15[2] = closure_14(isFocused(visibleItemIds[67]).TTIFirstContentfulPaint, { label: "icymi" });
   obj16.children = items15;
   items13[1] = closure_16(first, obj16);
   obj15.children = items13;
@@ -332,16 +301,16 @@ function keyExtractor(id) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, RefreshControl: metroRequire } = get_ActivityIndicator);
-let closure_12 = fn(16790).NUM_GUILDS_EXTENDED_ONBOARDING;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+let closure_12 = fn(16793).NUM_GUILDS_EXTENDED_ONBOARDING;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let closure_17 = createStyles.createStyles((paddingTop) => {
   const obj = { containerOuterTablet: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHorizontal: nativeDefault.space.PX_8, overflow: "hidden", flex: 1, paddingTop } };
   return obj;
 });
-const createICYMIStyles = fn(16791);
+const createICYMIStyles = fn(16794);
 let closure_18 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { container: { flex: 1, flexShrink: 1, flexGrow: 1 }, containerInPanels: { flex: 1, flexShrink: 1, flexGrow: 1, overflow: "hidden", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm }, containerBackground: null, flashListWrapper: null, refreshing: null, header: null, headerLeft: null, headerClose: null, headerTitle: null, headerText: null, headerActions: null, notificationBadge: null, loading: null, headerBorder: null };
   const obj2 = { flex: 1, flexShrink: 1, flexGrow: 1, overflow: "hidden", borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
@@ -368,7 +337,230 @@ let closure_18 = createICYMIStyles.createICYMIStyles((margin) => {
   obj.headerBorder = rect;
   return obj;
 });
-let closure_22 = noop.memo((inNestedNavigator) => {
+let ReactCompilerGating = fn(558);
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let obj2 = {
+      accessibilityLabel: "button",
+      variant: "tertiary",
+      size: "sm",
+      icon: state(tmp(4712).CircleInformationIcon, { size: "sm" }),
+      onPress() {
+          ICYMIActionCreatorsDefault.itemInteracted("info_button", "info_button", "press_info_button");
+          ICYMIActionCreatorsDefault.feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
+          require("NativeICYMIUtils").pushICYMIInfoModal({ extendedOnboarding: true });
+        }
+    };
+    const tmp6 = state(tmp(8178).IconButton, obj2);
+    cResult[0] = tmp6;
+    let first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => state(IconButton.IconButton, {
+  accessibilityLabel: "button",
+  variant: "tertiary",
+  size: "sm",
+  icon: state(CircleInformationIcon.CircleInformationIcon, { size: "sm" }),
+  onPress() {
+    ICYMIActionCreatorsDefault.itemInteracted("info_button", "info_button", "press_info_button");
+    ICYMIActionCreatorsDefault.feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
+    require("NativeICYMIUtils").pushICYMIInfoModal({ extendedOnboarding: true });
+  }
+}));
+ReactCompilerGating = fn(558);
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(4);
+  const tmp4 = closure_18();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
+    const intl = tmp(1119).intl;
+    obj2.children = intl.string(tmp(1119).t.SY4sdZ);
+    const tmp7 = state(tmp(4754).Text, obj2);
+    cResult[0] = tmp7;
+    let first = tmp7;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { children: null };
+    const items = [first, ];
+    const obj4 = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 }, children: null };
+    const intl2 = tmp(1119).intl;
+    obj4.children = intl2.string(tmp(1119).t.Ac2OZA);
+    items[1] = state(tmp(4754).Text, obj4);
+    obj3.children = items;
+    const tmp12 = value2(closure_1_15, obj3);
+    cResult[1] = tmp12;
+    let tmp8 = tmp12;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] !== tmp4.headerText) {
+    const obj5 = { style: tmp4.headerText, children: tmp8 };
+    const tmp16 = state(hasOwnProperty, obj5);
+    cResult[2] = tmp4.headerText;
+    cResult[3] = tmp16;
+    let tmp13 = tmp16;
+  } else {
+    tmp13 = cResult[3];
+  }
+  return tmp13;
+}) : (() => {
+  const tmp = closure_18();
+  return state(hasOwnProperty, {
+    style: closure_18().headerText,
+    children: noop.useMemo(() => {
+      const obj = { children: null };
+      const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
+      const intl = require("util").intl;
+      obj2.children = intl.string(require("util").t.SY4sdZ);
+      const items = [closure_1_14(require("Text/Text").Text, obj2), ];
+      const obj3 = { color: "text-brand", variant: "text-xs/bold", style: { marginTop: 4 }, children: null };
+      const intl2 = require("util").intl;
+      obj3.children = intl2.string(require("util").t.Ac2OZA);
+      items[1] = closure_1_14(require("Text/Text").Text, obj3);
+      obj.children = items;
+      return closure_1_16(closure_1_15, obj);
+    }, [])
+  });
+});
+ReactCompilerGating = fn(558);
+let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((inNestedNavigator) => {
+  const cResult = c.c(24);
+  inNestedNavigator = inNestedNavigator.inNestedNavigator;
+  const tmp4 = closure_18();
+  const tmp6 = useIsWindowLargeDefault();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
+    const obj3 = { dark: tmp(4577).OverlayOpacity.LEVEL_7, light: tmp(4577).OverlayOpacity.LEVEL_8 };
+    obj2.mixAmount = obj3;
+    const tmp11 = state(ThemedGradientDefault, obj2);
+    cResult[0] = tmp11;
+    let first = tmp11;
+    const tmp5Result = ThemedGradientDefault;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === inNestedNavigator) {
+    if (cResult[2] === tmp6) {
+      if (cResult[3] === tmp4.headerClose) {
+        let tmp12 = cResult[4];
+      }
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp20 = state(closure_21, {});
+        cResult[5] = tmp20;
+        let tmp17 = tmp20;
+      } else {
+        tmp17 = cResult[5];
+      }
+      if (cResult[6] === tmp4.headerLeft) {
+        if (cResult[7] === tmp12) {
+          let tmp21 = cResult[8];
+        }
+        const _Symbol2 = Symbol;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          const tmp29 = state(closure_20, {});
+          const tmp31 = state(SettingsButton, {});
+          cResult[9] = tmp29;
+          cResult[10] = tmp31;
+          let tmp26 = tmp31;
+          let tmp25 = tmp29;
+        } else {
+          tmp25 = cResult[9];
+          tmp26 = cResult[10];
+        }
+        if (cResult[11] !== tmp4.headerActions) {
+          const obj4 = { style: tmp4.headerActions, children: null };
+          const items = [tmp25, tmp26];
+          obj4.children = items;
+          const tmp35 = value2(hasOwnProperty, obj4);
+          cResult[11] = tmp4.headerActions;
+          cResult[12] = tmp35;
+          let tmp32 = tmp35;
+        } else {
+          tmp32 = cResult[12];
+        }
+        if (cResult[13] === tmp4.headerTitle) {
+          if (cResult[14] === tmp21) {
+            if (cResult[15] === tmp32) {
+              let tmp36 = cResult[16];
+            }
+            if (cResult[17] !== tmp4.headerBorder) {
+              const obj5 = { style: tmp4.headerBorder };
+              const tmp43 = state(hasOwnProperty, obj5);
+              cResult[17] = tmp4.headerBorder;
+              cResult[18] = tmp43;
+              let tmp40 = tmp43;
+            } else {
+              tmp40 = cResult[18];
+            }
+            if (cResult[19] === tmp4.header) {
+              if (cResult[20] === tmp7) {
+                if (cResult[21] === tmp40) {
+                  if (cResult[22] === tmp36) {
+                    let tmp44 = cResult[23];
+                  }
+                  return tmp44;
+                }
+              }
+            }
+            const obj6 = { top: tmp7, style: tmp4.header, children: null };
+            const items1 = [first, tmp36, tmp40];
+            obj6.children = items1;
+            const tmp46 = value2(tmp(7371).SafeAreaPaddingView, obj6);
+            cResult[19] = tmp4.header;
+            cResult[20] = tmp7;
+            cResult[21] = tmp40;
+            cResult[22] = tmp36;
+            cResult[23] = tmp46;
+            tmp44 = tmp46;
+          }
+        }
+        const obj7 = { style: tmp4.headerTitle, children: null };
+        const items2 = [tmp21, tmp32];
+        obj7.children = items2;
+        const tmp39 = value2(hasOwnProperty, obj7);
+        cResult[13] = tmp4.headerTitle;
+        cResult[14] = tmp21;
+        cResult[15] = tmp32;
+        cResult[16] = tmp39;
+        tmp36 = tmp39;
+      }
+      const obj8 = { style: tmp4.headerLeft, children: null };
+      const items3 = [tmp12, tmp17];
+      obj8.children = items3;
+      const tmp24 = value2(hasOwnProperty, obj8);
+      cResult[6] = tmp4.headerLeft;
+      cResult[7] = tmp12;
+      cResult[8] = tmp24;
+      tmp21 = tmp24;
+    }
+  }
+  if (!tmp6) {
+    if (!inNestedNavigator) {
+      cResult[1] = inNestedNavigator;
+      cResult[2] = tmp6;
+      cResult[3] = tmp4.headerClose;
+      cResult[4] = null;
+      tmp12 = null;
+    }
+  }
+  const obj9 = { style: tmp4.headerClose, accessibilityLabel: null, onPress: null, children: null };
+  const intl = tmp(1119).intl;
+  obj9.accessibilityLabel = intl.string(util.t["13/7kX"]);
+  obj9.onPress = notifications_Notifications.goBack;
+  if (inNestedNavigator) {
+    let tmp14Result = tmp14(tmp(16745).LeftBackIconWithBadge, { includeNotificationsCount: true });
+  } else {
+    tmp14Result = tmp14(tmp(5846).XSmallIcon, { color: "interactive-text-default" });
+  }
+  obj9.children = tmp14Result;
+  state(Pressables.PressableOpacity, obj9);
+}) : ((inNestedNavigator) => {
   inNestedNavigator = inNestedNavigator.inNestedNavigator;
   const tmp = closure_18();
   let obj = dependencyMap;
@@ -378,16 +570,16 @@ let closure_22 = noop.memo((inNestedNavigator) => {
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7, light: client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8 };
   obj3.mixAmount = obj4;
-  const items = [closure_1_14(ThemedGradientDefault, obj3), , ];
+  const items = [state(ThemedGradientDefault, obj3), , ];
   const obj5 = { style: tmp.headerTitle, children: null };
   const obj6 = { style: tmp.headerLeft, children: null };
   if (!tmp2) {
     if (!inNestedNavigator) {
-      const items1 = [null, tmp4(ICYMIHeaderTextWrapper, {})];
+      const items1 = [null, tmp4(closure_21, {})];
       obj6.children = items1;
       const items2 = [tmp3(tmp6, obj6), ];
       const obj7 = { style: tmp.headerActions, children: null };
-      const items3 = [tmp4(InfoButton, {}), tmp4(SettingsButton, {})];
+      const items3 = [tmp4(closure_20, {}), tmp4(SettingsButton, {})];
       obj7.children = items3;
       items2[1] = tmp3(tmp6, obj7);
       obj5.children = items2;
@@ -410,12 +602,114 @@ let closure_22 = noop.memo((inNestedNavigator) => {
     tmp4Result = tmp4(XSmallIcon.XSmallIcon, { color: "interactive-text-default" });
   }
   obj9.children = tmp4Result;
-  closure_1_14(Pressables.PressableOpacity, obj9);
-});
+  state(Pressables.PressableOpacity, obj9);
+}));
+ReactCompilerGating = fn(558);
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/icymi/native/ICYMI.tsx");
 
-export const ICYMITab = function ICYMITab(route) {
+export const ICYMITab = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+  const cResult = c.c(16);
+  route = route.route;
+  const tmp5 = useColorThemeBackgroundDefault();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AuthenticationStore];
+    const fn = function l() {
+      return id.getId();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp6 = items;
+    tmp7 = fn;
+  } else {
+    [tmp6, tmp7] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp6, tmp7);
+  const tmp10 = useIsWindowLargeDefault();
+  if (route != null) {
+    const params = route.params;
+    if (params != null) {
+      const inNestedNavigator = params.inNestedNavigator;
+    }
+  }
+  let containerOuterTablet;
+  if (tmp10) {
+    containerOuterTablet = closure_17(tmp4(1616)().top).containerOuterTablet;
+  }
+  if (tmp10) {
+    let Fragment = hasOwnProperty;
+  } else {
+    Fragment = noop.Fragment;
+  }
+  if (cResult[2] === tmp10) {
+    if (cResult[3] === containerOuterTablet) {
+      const _Symbol = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp16 = state(tmp4(5343), { absolute: true });
+        cResult[5] = tmp16;
+        let tmp14 = tmp16;
+      } else {
+        tmp14 = cResult[5];
+      }
+      const _HermesInternal = HermesInternal;
+      const combined = "" + stateFromStores;
+      if (cResult[6] === inNestedNavigator) {
+        if (cResult[7] === combined) {
+          let tmp18 = cResult[8];
+        }
+        if (cResult[9] === tmp5) {
+          if (cResult[10] === tmp18) {
+            let tmp22 = cResult[11];
+          }
+          if (cResult[12] === Fragment) {
+            if (cResult[13] === tmp13) {
+              if (cResult[14] === tmp22) {
+                let tmp25 = cResult[15];
+              }
+              return tmp25;
+            }
+          }
+          const obj2 = { children: null };
+          const obj3 = { children: null };
+          const obj4 = {};
+          const merged = Object.assign(tmp13);
+          const items1 = [tmp14, tmp22];
+          obj4.children = items1;
+          obj3.children = value2(Fragment, obj4);
+          obj2.children = state(tmp(16795).ICYMIContextProvider, obj3);
+          const tmp32 = state(tmp4(16864), obj2);
+          cResult[12] = Fragment;
+          cResult[13] = tmp13;
+          cResult[14] = tmp22;
+          cResult[15] = tmp32;
+          tmp25 = tmp32;
+          const tmp4Result = tmp4(16864);
+        }
+        const obj5 = { gradient: tmp5, children: tmp18 };
+        const tmp24 = state(tmp(4471).ThemeContextProvider, obj5);
+        cResult[9] = tmp5;
+        cResult[10] = tmp18;
+        cResult[11] = tmp24;
+        tmp22 = tmp24;
+      }
+      const obj6 = { inNestedNavigator };
+      const tmp21 = state(ICYMI, obj6, combined);
+      cResult[6] = inNestedNavigator;
+      cResult[7] = combined;
+      cResult[8] = tmp21;
+      tmp18 = tmp21;
+    }
+  }
+  if (tmp10) {
+    const obj7 = { style: containerOuterTablet };
+    let obj8 = obj7;
+  } else {
+    obj8 = {};
+  }
+  cResult[2] = tmp10;
+  cResult[3] = containerOuterTablet;
+  cResult[4] = obj8;
+}) : ((route) => {
   route = route.route;
   _require = undefined;
   importDefault = undefined;
@@ -461,4 +755,4 @@ export const ICYMITab = function ICYMITab(route) {
   obj5.children = tmp14(tmp11, obj6);
   obj4.children = closure_14(require("ICYMIContext").ICYMIContextProvider, obj5);
   return closure_14(tmpResult, obj4);
-};
+});

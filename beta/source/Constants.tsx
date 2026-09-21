@@ -1,24 +1,24 @@
-// Module ID: 1074
-// Function ID: 1075
+// Module ID: 1078
+// Function ID: 1079
 // Name: Constants
-// Dependencies: [16, 1075, 1084, 1085, 1090, 1083, 1091, 1092, 1086, 1093, 2, 1094, 1095, 1096, 1097, 1098]
+// Dependencies: [16, 1079, 1088, 1089, 1094, 1087, 1095, 1096, 1090, 1097, 2, 1098, 1099, 1100, 1101, 1102]
 // Exports: MARKDOWN_SPOILER_WRAPPER, YOUTUBE_EMBED_URL, YOUTUBE_PREVIEW_URL
 
-// Module 1074 (Constants)
-import MessageTypes from "MessageTypes" /* 1090 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import ApplicationDistributors from "ApplicationDistributors" /* 1093 */;
-import ConstantsIOS2 from "ConstantsIOS" /* 1094 */;
-import ChannelTypes from "ChannelTypes" /* 1095 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
-import MessageReferenceTypes from "MessageReferenceTypes" /* 1097 */;
-import SKUFlags from "SKUFlags" /* 1098 */;
+// Module 1078 (Constants)
+import MessageTypes from "MessageTypes" /* 1094 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import ApplicationDistributors from "ApplicationDistributors" /* 1097 */;
+import ConstantsIOS2 from "ConstantsIOS" /* 1098 */;
+import ChannelTypes from "ChannelTypes" /* 1099 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1100 */;
+import MessageReferenceTypes from "MessageReferenceTypes" /* 1101 */;
+import SKUFlags from "SKUFlags" /* 1102 */;
 import checkEnv from "checkEnv" /* 16 */;
-import RouteConstants from "RouteConstants" /* 1075 */;
-import Constants_mod from "Constants" /* 1085 */;
-import PathUtils from "utils/PathUtils" /* 1083 */;
-import ColorUtils from "utils/ColorUtils" /* 1092 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
+import RouteConstants from "RouteConstants" /* 1079 */;
+import Constants_mod from "Constants" /* 1089 */;
+import PathUtils from "utils/PathUtils" /* 1087 */;
+import ColorUtils from "utils/ColorUtils" /* 1096 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1090 */;
 import size from "module_2" /* 2 */;
 import "Constants";
 
@@ -199,8 +199,8 @@ const frozen2 = Object.freeze({
   GUILD_ROLE_MEMBERS(id, id2) {
     return "/guilds/" + id + "/roles/" + id2 + "/members";
   },
-  GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, id) {
-    return "/guilds/" + guildId + "/roles/" + id + "/connections/eligibility";
+  GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, roleId) {
+    return "/guilds/" + guildId + "/roles/" + roleId + "/connections/eligibility";
   },
   GUILD_ROLE_CONNECTIONS_ASSIGN(arg0, arg1) {
     return "/guilds/" + arg0 + "/roles/" + arg1 + "/connections/assign";
@@ -1434,8 +1434,8 @@ const frozen2 = Object.freeze({
   GUILD_EVENT_EXCEPTIONS(guild_id, id) {
     return "/guilds/" + guild_id + "/scheduled-events/" + id + "/exceptions";
   },
-  GUILD_EVENT_EXCEPTION(guild_id, id, event_exception_id) {
-    return "/guilds/" + guild_id + "/scheduled-events/" + id + "/exceptions/" + event_exception_id;
+  GUILD_EVENT_EXCEPTION(guild_id, id, c2) {
+    return "/guilds/" + guild_id + "/scheduled-events/" + id + "/exceptions/" + c2;
   },
   MEMBER_SAFETY_SUPPLEMENTAL(arg0) {
     return "/guilds/" + arg0 + "/members/supplemental";
@@ -2215,8 +2215,8 @@ const obj2 = {
   GUILD_ROLE_MEMBERS(id, id2) {
     return "/guilds/" + id + "/roles/" + id2 + "/members";
   },
-  GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, id) {
-    return "/guilds/" + guildId + "/roles/" + id + "/connections/eligibility";
+  GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, roleId) {
+    return "/guilds/" + guildId + "/roles/" + roleId + "/connections/eligibility";
   },
   GUILD_ROLE_CONNECTIONS_ASSIGN(arg0, arg1) {
     return "/guilds/" + arg0 + "/roles/" + arg1 + "/connections/assign";
@@ -3450,8 +3450,8 @@ const obj2 = {
   GUILD_EVENT_EXCEPTIONS(guild_id, id) {
     return "/guilds/" + guild_id + "/scheduled-events/" + id + "/exceptions";
   },
-  GUILD_EVENT_EXCEPTION(guild_id, id, event_exception_id) {
-    return "/guilds/" + guild_id + "/scheduled-events/" + id + "/exceptions/" + event_exception_id;
+  GUILD_EVENT_EXCEPTION(guild_id, id, c2) {
+    return "/guilds/" + guild_id + "/scheduled-events/" + id + "/exceptions/" + c2;
   },
   MEMBER_SAFETY_SUPPLEMENTAL(arg0) {
     return "/guilds/" + arg0 + "/members/supplemental";

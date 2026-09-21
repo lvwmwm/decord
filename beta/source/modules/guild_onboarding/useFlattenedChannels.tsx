@@ -1,13 +1,12 @@
-// Module ID: 7354
-// Function ID: 7355
+// Module ID: 7356
+// Function ID: 7357
 // Name: useFlattenedChannels
-// Dependencies: [2041, 12, 1370, 504, 2]
-// Exports: useFlattenedChannels
+// Dependencies: [2045, 12, 1374, 558, 568, 504, 2]
 
-// Module 7354 (useFlattenedChannels)
+// Module 7356 (useFlattenedChannels)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
 
@@ -86,11 +85,41 @@ function getFlattenedChannels(guildId, set, found, flag) {
   }
   return sortByResult;
 }
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
 
 export { getFlattenedChannels };
-export const useFlattenedChannels = function useFlattenedChannels(arg0, arg1) {
+export const useFlattenedChannels = ReactCompilerGating.isReactCompilerEnabled() ? (function useFlattenedChannels(arg0, arg1, arg2) {
+  _require = arg0;
+  closure_1 = arg1;
+  const cResult = require("c").c(5);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    if (cResult[2] === arg0) {
+      if (cResult[3] === tmp4) {
+        let tmp7 = cResult[4];
+      }
+      return require("initialize").useStateFromStoresArray(first, tmp7);
+    }
+  }
+  const fn = function u() {
+    const mapped = Array.from(closure_1).map((item) => channel.getChannel(item));
+    return getFlattenedChannels(closure_0, closure_1, mapped.filter(GlobalUtils.isNotNullish), closure_2);
+  };
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = undefined !== arg2 && arg2;
+  cResult[4] = fn;
+  tmp7 = fn;
+}) : (function useFlattenedChannels(arg0, arg1) {
   _require = arg0;
   closure_1 = arg1;
   let flag = arg2;
@@ -102,4 +131,4 @@ export const useFlattenedChannels = function useFlattenedChannels(arg0, arg1) {
     const mapped = Array.from(closure_1).map((item) => channel.getChannel(item));
     return getFlattenedChannels(closure_0, closure_1, mapped.filter(GlobalUtils.isNotNullish), flag);
   });
-};
+});

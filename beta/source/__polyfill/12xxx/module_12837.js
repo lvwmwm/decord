@@ -1,9 +1,9 @@
 // Module ID: 12837
 // Function ID: 12838
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 12837
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "18fb368a457a812267e823f947169b18", name: "BoostTier1Icon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 102, height: 106, scales: [1, 2, 3], hash: "22ff64f3c42212e7404d5af41f019eda", name: "mallow", type: "png" });

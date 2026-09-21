@@ -1,23 +1,23 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16440
+// Function ID: 16441
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 16361, 1612, 15358, 16391, 2]
-// Exports: default
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 16361, 1616, 15347, 16441, 2]
 
-// Module 16390 (ChannelListPanelBackdrop)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import QuestHooks from "QuestHooks" /* 15358 */;
+// Module 16440 (ChannelListPanelBackdrop)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import QuestHooks from "QuestHooks" /* 15347 */;
 import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const DM_WIDTH = fn(1074).DM_WIDTH;
+const DM_WIDTH = fn(1078).DM_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { container: { flex: 1, position: "relative", overflow: "hidden" }, panelTint: null, listWrapper: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -25,10 +25,136 @@ obj3.backgroundColor = nativeDefault.colors.PANEL_BG;
 obj2.panelTint = obj3;
 obj2.listWrapper = { flex: 1 };
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/ChannelListPanelBackdrop.tsx");
 
-export default function ChannelListPanelBackdrop(children) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let tmp = require;
+  const cResult = c.c(22);
+  ({ style, contentInset, children } = arg0);
+  const tmp4 = closure_8();
+  const isHomeDrawerEnabled = useHomeDrawerGesture.useIsHomeDrawerEnabled();
+  const top = useSafeAreaInsetsDefault().top;
+  const tmp6 = importDefault;
+  let num;
+  const mobileQuestDockHeight = QuestHooks.useMobileQuestDockHeight();
+  if (contentInset != null) {
+    num = contentInset.top;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  let num2;
+  if (contentInset != null) {
+    num2 = contentInset.bottom;
+  }
+  if (num2 == null) {
+    num2 = 0;
+  }
+  const sum = num2 + mobileQuestDockHeight;
+  let num3;
+  if (contentInset != null) {
+    num3 = contentInset.left;
+  }
+  if (num3 == null) {
+    num3 = 0;
+  }
+  let num4;
+  if (contentInset != null) {
+    num4 = contentInset.right;
+  }
+  if (num4 == null) {
+    num4 = 0;
+  }
+  if (cResult[0] === num) {
+    if (cResult[1] === sum) {
+      if (cResult[2] === num3) {
+        if (cResult[3] === num4) {
+          let tmp9 = cResult[4];
+        }
+        if (cResult[5] === style) {
+          if (cResult[6] === tmp4.container) {
+            if (cResult[7] === tmp9) {
+              let tmp10 = cResult[8];
+            }
+            if (cResult[9] === isHomeDrawerEnabled) {
+              if (cResult[10] === top) {
+                if (cResult[12] !== tmp4.panelTint) {
+                  const obj4 = { pointerEvents: "none", style: tmp4.panelTint };
+                  const tmp18 = timestampProducer(React4, obj4);
+                  cResult[12] = tmp4.panelTint;
+                  cResult[13] = tmp18;
+                  let tmp15 = tmp18;
+                } else {
+                  tmp15 = cResult[13];
+                }
+                if (cResult[14] === children) {
+                  if (cResult[15] === tmp4.listWrapper) {
+                    let tmp19 = cResult[16];
+                  }
+                  if (cResult[17] === tmp10) {
+                    if (cResult[18] === tmp11) {
+                      if (cResult[19] === tmp15) {
+                        if (cResult[20] === tmp19) {
+                          let tmp23 = cResult[21];
+                        }
+                        return tmp23;
+                      }
+                    }
+                  }
+                  const obj5 = { style: tmp10, children: null };
+                  const items = [tmp11, tmp15, tmp19];
+                  obj5.children = items;
+                  const tmp26 = React5(React4, obj5);
+                  cResult[17] = tmp10;
+                  cResult[18] = tmp11;
+                  cResult[19] = tmp15;
+                  cResult[20] = tmp19;
+                  cResult[21] = tmp26;
+                  tmp23 = tmp26;
+                }
+                const obj6 = { style: tmp4.listWrapper, children };
+                const tmp22 = timestampProducer(React4, obj6);
+                cResult[14] = children;
+                cResult[15] = tmp4.listWrapper;
+                cResult[16] = tmp22;
+                tmp19 = tmp22;
+              }
+            }
+            let tmp12Result = 16441;
+            if (isHomeDrawerEnabled) {
+              let ScreenAlignedThemedGradientSliding = tmp(tmp12Result).ScreenAlignedThemedGradientSliding;
+            } else {
+              ScreenAlignedThemedGradientSliding = tmp6(tmp12Result);
+            }
+            const obj7 = { offsetX: null, offsetY: null };
+            tmp = DM_WIDTH;
+            obj7.offsetX = DM_WIDTH;
+            obj7.offsetY = top;
+            tmp12Result = timestampProducer(ScreenAlignedThemedGradientSliding, obj7);
+            cResult[9] = isHomeDrawerEnabled;
+            cResult[10] = top;
+            cResult[11] = tmp12Result;
+          }
+        }
+        const items1 = [tmp4.container, tmp9, style];
+        cResult[5] = style;
+        cResult[6] = tmp4.container;
+        cResult[7] = tmp9;
+        cResult[8] = items1;
+        tmp10 = items1;
+      }
+    }
+  }
+  const obj8 = { marginTop: num, paddingBottom: sum, marginLeft: num3, marginRight: num4 };
+  cResult[0] = num;
+  cResult[1] = sum;
+  cResult[2] = num3;
+  cResult[3] = num4;
+  cResult[4] = obj8;
+  tmp9 = obj8;
+}) : ((children) => {
   const style = children.style;
   const contentInset = children.contentInset;
   const tmp = closure_8();
@@ -89,4 +215,4 @@ export default function ChannelListPanelBackdrop(children) {
   const items1 = [timestampProducer(ScreenAlignedThemedGradientSliding, { offsetX: DM_WIDTH, offsetY: useSafeAreaInsetsDefault().top }), timestampProducer(React4, { pointerEvents: "none", style: tmp.panelTint }), timestampProducer(React4, { style: tmp.listWrapper, children: children.children })];
   obj3.children = items1;
   return tmp6(React4, obj3);
-};
+});

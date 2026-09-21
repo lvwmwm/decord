@@ -1,13 +1,13 @@
-// Module ID: 2020
-// Function ID: 2021
+// Module ID: 2024
+// Function ID: 2025
 // Name: UserSettingsOverridesStore
-// Dependencies: [1220, 504, 510, 573, 2]
+// Dependencies: [1224, 504, 510, 577, 2]
 
-// Module 2020 (UserSettingsOverridesStore)
+// Module 2024 (UserSettingsOverridesStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 require = fn;
 function updateExistingSettings() {
@@ -21,7 +21,7 @@ function updateExistingSettings() {
   }
   obj = { gifAutoPlay: value, animateEmoji: null, animateStickers: null };
   const textAndImages2 = settings.textAndImages;
-  let value3;
+  value3 = undefined;
   if (textAndImages2 != null) {
     if (textAndImages2.animateEmoji != null) {
       value3 = iter2.value;
@@ -93,7 +93,7 @@ obj = {
     }
     obj = { gifAutoPlay: value, animateEmoji: null, animateStickers: null };
     const textAndImages2 = settings.textAndImages;
-    let value3;
+    value3 = undefined;
     if (textAndImages2 != null) {
       if (textAndImages2.animateEmoji != null) {
         value3 = iter2.value;

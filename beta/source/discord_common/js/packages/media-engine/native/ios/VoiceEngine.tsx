@@ -1,12 +1,12 @@
-// Module ID: 1995
-// Function ID: 1996
+// Module ID: 1999
+// Function ID: 2000
 // Name: VoiceEngine
-// Dependencies: [17, 4, 1996, 2]
+// Dependencies: [17, 4, 2000, 2]
 
-// Module 1995 (VoiceEngine)
+// Module 1999 (VoiceEngine)
 import logger_Logger from "logger/Logger" /* 4 */;
 import _mod17 from "module_17" /* 17 */;
-import VoiceEngineModule from "VoiceEngineModule" /* 1996 */;
+import VoiceEngineModule from "VoiceEngineModule" /* 2000 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -131,15 +131,15 @@ class VoiceConnection {
         closure_0(Buffer.from(arg0, "base64").buffer);
       });
     };
-    obj.prepareMLSCommitTransition = function prepareMLSCommitTransition(g_v, arg1, arg2) {
+    obj.prepareMLSCommitTransition = function prepareMLSCommitTransition(compareResult, arg1, arg2) {
       const str = Buffer.from(arg1);
       const result = obj.boundConnectionMethod("prepareMLSCommitTransitionB64");
-      result(g_v, Buffer.from(arg1).toString("base64"), obj.wrapRosterCallback(arg2));
+      result(compareResult, Buffer.from(arg1).toString("base64"), obj.wrapRosterCallback(arg2));
     };
-    obj.processMLSWelcome = function processMLSWelcome(g_v, arg1, arg2) {
+    obj.processMLSWelcome = function processMLSWelcome(compareResult, arg1, arg2) {
       const str = Buffer.from(arg1);
       const result = obj.boundConnectionMethod("processMLSWelcomeB64");
-      result(g_v, Buffer.from(arg1).toString("base64"), obj.wrapRosterCallback(arg2));
+      result(compareResult, Buffer.from(arg1).toString("base64"), obj.wrapRosterCallback(arg2));
     };
     obj.getMLSPairwiseFingerprint = function getMLSPairwiseFingerprint(arg0, arg1, arg2) {
       closure_0 = arg2;

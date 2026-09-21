@@ -1,30 +1,256 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15263
+// Function ID: 15264
 // Name: QuestHomeSetting
-// Dependencies: [32, 19, 12021, 5661, 21, 4756, 576, 1484, 4379, 7235, 15275, 15279, 2]
-// Exports: default
+// Dependencies: [32, 19, 11896, 5663, 21, 4758, 580, 558, 568, 1488, 4383, 7236, 15264, 15268, 2]
 
-// Module 15274 (QuestHomeSetting)
-import nativeDefault from "native" /* 576 */;
-import _mod4379 from "module_4379" /* 4379 */;
-import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 15275 */;
-import QuestHomeDefault from "QuestHome" /* 15279 */;
+// Module 15263 (QuestHomeSetting)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import useNavigation from "useNavigation" /* 1488 */;
+import _mod4383 from "module_4383" /* 4383 */;
+import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 15264 */;
+import QuestHomeDefault from "QuestHome" /* 15268 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 12021 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 11896 */;
 
 require = fn;
-const QuestConstants = fn(5661);
+const QuestConstants = fn(5663);
 ({ QuestHomeSortMethods: metroRequire, getQuestHomeFilterOptionItem: closure_7 } = QuestConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
+const createStyles = fn(4758);
+let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
 let closure_9 = createStyles.createStyles(obj2);
-let closure_10 = [];
+let ReactCompilerGating = fn(558);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(3);
+  const navigation = useNavigation.useNavigation();
+  const obj3 = noop;
+  [tmp4, importDefault] = noop.useState(false);
+  if (cResult[0] !== navigation) {
+    const fn = function o() {
+      return navigation.addListener("transitionEnd", () => closure_1_1(true));
+    };
+    const items = [navigation];
+    cResult[0] = navigation;
+    cResult[1] = fn;
+    cResult[2] = items;
+    let tmp6 = items;
+    let tmp5 = fn;
+  } else {
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+  }
+  const effect = obj3.useEffect(tmp5, tmp6);
+  return tmp4;
+}) : (() => {
+  const navigation = useNavigation.useNavigation();
+  const tmp2 = _slicedToArray(noop.useState(false), 2);
+  closure_1 = tmp2[1];
+  const items = [navigation];
+  const effect = noop.useEffect(() => navigation.addListener("transitionEnd", () => closure_1_1(true)), items);
+  return tmp2[0];
+});
+let closure_11 = [];
+ReactCompilerGating = fn(558);
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestHomeSetting.tsx");
 
-export default function QuestHomeSetting() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(16);
+  const tmp3 = closure_9();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function l() {
+      let SUGGESTED = QuestHomeNavigationStore.getField("sort");
+      if (null == SUGGESTED) {
+        SUGGESTED = constants.SUGGESTED;
+      } else {
+        const _Object = Object;
+        const values = Object.values(constants);
+      }
+      return SUGGESTED;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const tmp5 = _slicedToArray;
+  [tmp7, tmp8] = noop.useState(first);
+  const require = tmp8;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn2 = function v() {
+      const str = QuestHomeNavigationStore.getField("filter");
+      if (null == str) {
+        let found = closure_1_11;
+      } else {
+        const parts = str.split(",");
+        const mapped = parts.map((item) => closure_1_7(item));
+        found = mapped.filter((item) => null != item);
+        if (found.length <= 0) {
+          found = closure_1_11;
+        }
+      }
+      return found;
+    };
+    cResult[1] = fn2;
+    let tmp9 = fn2;
+  } else {
+    tmp9 = cResult[1];
+  }
+  const tmp6 = _slicedToArray(noop.useState(first), 2);
+  [tmp11, tmp12] = tmp5(noop.useState(tmp9), 2);
+  importDefault = tmp12;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        obj = { equalityFn: closure_0(closure_2[10]).shallow, fireImmediately: true };
+        return closure_5.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
+          if (self.sort !== self2.sort) {
+            let SUGGESTED = self.sort;
+            if (null == SUGGESTED) {
+              SUGGESTED = constants.SUGGESTED;
+            } else {
+              const _Object = Object;
+              const values = Object.values(constants);
+            }
+            closure_1_0(SUGGESTED);
+          }
+          if (self.filter !== self2.filter) {
+            if (null == self.filter) {
+              let found = closure_2_11;
+            } else {
+              const parts = str.split(",");
+              const mapped = parts.map((item) => closure_1_7(item));
+              found = mapped.filter((item) => null != item);
+              if (found.length <= 0) {
+                found = closure_2_11;
+              }
+            }
+            closure_1_1(found);
+          }
+        }, obj);
+      }
+    }
+    const items = [];
+    cResult[2] = E;
+    cResult[3] = items;
+    let tmp14 = items;
+    const tmp13 = E;
+  } else {
+    class E {
+      constructor() {
+        obj = { equalityFn: closure_0(closure_2[10]).shallow, fireImmediately: true };
+        return closure_5.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
+          if (self.sort !== self2.sort) {
+            let SUGGESTED = self.sort;
+            if (null == SUGGESTED) {
+              SUGGESTED = constants.SUGGESTED;
+            } else {
+              const _Object = Object;
+              const values = Object.values(constants);
+            }
+            closure_1_0(SUGGESTED);
+          }
+          if (self.filter !== self2.filter) {
+            if (null == self.filter) {
+              let found = closure_2_11;
+            } else {
+              const parts = str.split(",");
+              const mapped = parts.map((item) => closure_1_7(item));
+              found = mapped.filter((item) => null != item);
+              if (found.length <= 0) {
+                found = closure_2_11;
+              }
+            }
+            closure_1_1(found);
+          }
+        }, obj);
+      }
+    }
+    tmp14 = cResult[3];
+  }
+  const effect = obj2.useEffect(tmp13, tmp14);
+  const tmp16 = closure_10();
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        tmp = closure_1(closure_11);
+        return;
+      }
+    }
+    cResult[4] = T;
+    const tmp17 = T;
+  } else {
+    class T {
+      constructor() {
+        tmp = closure_1(closure_11);
+        return;
+      }
+    }
+  }
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class O {
+      constructor() {
+        return () => {
+          closure_1_1(closure_1_2[11]).close();
+          closure_1_5.resetState();
+        };
+      }
+    }
+    const items1 = [];
+    cResult[5] = O;
+    cResult[6] = items1;
+    let tmp19 = items1;
+    const tmp18 = O;
+  } else {
+    class O {
+      constructor() {
+        return () => {
+          closure_1_1(closure_1_2[11]).close();
+          closure_1_5.resetState();
+        };
+      }
+    }
+    tmp19 = cResult[6];
+  }
+  const effect1 = obj2.useEffect(tmp18, tmp19);
+  const field = QuestHomeNavigationStore.useField("scrollToQuestId");
+  if (cResult[7] === tmp11) {
+    class O {
+      constructor() {
+        return () => {
+          closure_1_1(closure_1_2[11]).close();
+          closure_1_5.resetState();
+        };
+      }
+    }
+    useQuestHomeHeaderDefault(obj4);
+    if (cResult[10] === tmp16) {
+      class O {
+        constructor() {
+          return () => {
+            closure_1_1(closure_1_2[11]).close();
+            closure_1_5.resetState();
+          };
+        }
+      }
+    }
+    const obj3 = { containerStyle: tmp3.container, isNavigationComplete: tmp16, scrollToQuestId: field, sortMethod: tmp7, filters: tmp11, onClearFilters: tmp17 };
+    const tmp26 = jsx(QuestHomeDefault, { containerStyle: tmp3.container, isNavigationComplete: tmp16, scrollToQuestId: field, sortMethod: tmp7, filters: tmp11, onClearFilters: tmp17 });
+    cResult[10] = tmp16;
+    cResult[11] = field;
+    cResult[12] = tmp11;
+    cResult[13] = tmp7;
+    cResult[14] = tmp3.container;
+    cResult[15] = tmp26;
+  }
+  obj4 = { setSelectedSortMethod: tmp8, setSelectedFilters: tmp12, selectedFilters: tmp11, selectedSortMethod: tmp7 };
+  cResult[7] = tmp11;
+  cResult[8] = tmp7;
+  cResult[9] = obj4;
+}) : (() => {
   let tmp = closure_9();
   [tmp3, tmp4] = noop.useState(() => {
     let SUGGESTED = QuestHomeNavigationStore.getField("sort");
@@ -36,6 +262,7 @@ export default function QuestHomeSetting() {
     }
     return SUGGESTED;
   });
+  const require = tmp4;
   const tmp2 = _slicedToArray(noop.useState(() => {
     let SUGGESTED = QuestHomeNavigationStore.getField("sort");
     if (null == SUGGESTED) {
@@ -49,17 +276,18 @@ export default function QuestHomeSetting() {
   [tmp6, tmp7] = noop.useState(() => {
     const str = QuestHomeNavigationStore.getField("filter");
     if (null == str) {
-      let found = closure_1_10;
+      let found = closure_1_11;
     } else {
       const parts = str.split(",");
       const mapped = parts.map((item) => closure_1_7(item));
       found = mapped.filter((item) => null != item);
       if (found.length <= 0) {
-        found = closure_1_10;
+        found = closure_1_11;
       }
     }
     return found;
   });
+  importDefault = tmp7;
   const effect = noop.useEffect(() => QuestHomeNavigationStore.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
     if (self.sort !== self2.sort) {
       let SUGGESTED = self.sort;
@@ -69,50 +297,45 @@ export default function QuestHomeSetting() {
         const _Object = Object;
         const values = Object.values(constants);
       }
-      navigation(SUGGESTED);
+      closure_1_0(SUGGESTED);
     }
     if (self.filter !== self2.filter) {
       if (null == self.filter) {
-        let found = closure_2_10;
+        let found = closure_2_11;
       } else {
         const parts = str.split(",");
         const mapped = parts.map((item) => closure_1_7(item));
         found = mapped.filter((item) => null != item);
         if (found.length <= 0) {
-          found = closure_2_10;
+          found = closure_2_11;
         }
       }
       closure_1_1(found);
     }
-  }, { equalityFn: _mod4379.shallow, fireImmediately: true }), []);
-  let navigation;
+  }, { equalityFn: _mod4383.shallow, fireImmediately: true }), []);
   const tmp5 = _slicedToArray(noop.useState(() => {
     const str = QuestHomeNavigationStore.getField("filter");
     if (null == str) {
-      let found = closure_1_10;
+      let found = closure_1_11;
     } else {
       const parts = str.split(",");
       const mapped = parts.map((item) => closure_1_7(item));
       found = mapped.filter((item) => null != item);
       if (found.length <= 0) {
-        found = closure_1_10;
+        found = closure_1_11;
       }
     }
     return found;
   }), 2);
-  navigation = navigation(1484).useNavigation();
-  const tmp10 = _slicedToArray(noop.useState(false), 2);
-  importDefault = tmp10[1];
-  const items = [navigation];
-  const effect1 = noop.useEffect(() => navigation.addListener("transitionEnd", () => closure_1_1(true)), items);
   const callback = noop.useCallback(() => {
-    closure_1(closure_10);
+    tmp7(closure_11);
   }, []);
-  const effect2 = noop.useEffect(() => () => {
-    closure_1_1(closure_1_2[9]).close();
+  const effect1 = noop.useEffect(() => () => {
+    closure_1_1(closure_1_2[11]).close();
     closure_1_5.resetState();
   }, []);
   const field = QuestHomeNavigationStore.useField("scrollToQuestId");
   useQuestHomeHeaderDefault({ setSelectedSortMethod: tmp4, setSelectedFilters: tmp7, selectedFilters: tmp6, selectedSortMethod: tmp3 });
-  return jsx(QuestHomeDefault, { containerStyle: tmp.container, isNavigationComplete: tmp10[0], scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
-};
+  const tmp9 = closure_10();
+  return jsx(QuestHomeDefault, { containerStyle: tmp.container, isNavigationComplete: closure_10(), scrollToQuestId: field, sortMethod: tmp3, filters: tmp6, onClearFilters: callback });
+});

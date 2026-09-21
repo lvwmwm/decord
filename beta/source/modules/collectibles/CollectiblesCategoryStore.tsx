@@ -1,17 +1,17 @@
-// Module ID: 7784
-// Function ID: 7785
+// Module ID: 7789
+// Function ID: 7790
 // Name: CollectiblesCategoryStore
-// Dependencies: [2109, 7785, 1091, 559, 573, 12, 7796, 504, 2]
+// Dependencies: [2113, 7790, 1095, 561, 577, 12, 7801, 504, 2]
 
-// Module 7784 (CollectiblesCategoryStore)
+// Module 7789 (CollectiblesCategoryStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import BackoffDefault from "Backoff" /* 559 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7785 */;
+import BackoffDefault from "Backoff" /* 561 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7790 */;
 
 require = fn;
 function updateCategoriesAndProducts(map) {
@@ -87,7 +87,7 @@ Object.defineProperty(prototype, "isFetchingCategories", {
 prototype["isFetchingProduct"] = function isFetchingProduct(arg0) {
   let tmp = null != arg0;
   if (tmp) {
-    let state;
+    state = undefined;
     if (dependencyMap2[arg0] != null) {
       state = tmp3.state;
     }

@@ -1,10 +1,10 @@
-// Module ID: 574
-// Function ID: 575
+// Module ID: 578
+// Function ID: 579
 // Name: Constants
-// Dependencies: [575, 2]
+// Dependencies: [579, 2]
 
-// Module 574 (Constants)
-import shims from "shims" /* 575 */;
+// Module 578 (Constants)
+import shims from "shims" /* 579 */;
 import size from "module_2" /* 2 */;
 
 const result = 2 * shims.getRadii().xl;

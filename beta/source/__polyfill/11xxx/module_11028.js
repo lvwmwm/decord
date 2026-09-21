@@ -1,40 +1,9 @@
 // Module ID: 11028
 // Function ID: 11029
-// Dependencies: [19]
-// Exports: usePropsErrorBoundary
+// Dependencies: [1125]
 
 // Module 11028
-import noop from "module_19" /* 19 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export const usePropsErrorBoundary = function usePropsErrorBoundary(arg0) {
-  closure_0 = arg0;
-  const items = [arg0];
-  const effect = noop.useEffect(() => {
-    const size = closure_0;
-    ({ defaultIndex, dataLength } = closure_0);
-    if (typeof defaultIndex === "number") {
-      if (dataLength > 0) {
-        const _Error3 = Error;
-        const error = new Error("DefaultIndex must be in the range of data length.");
-        throw error;
-      }
-    }
-    if (!size.mode) {
-      if (!size.vertical) {
-        if (!size.width) {
-          const _Error = Error;
-          const error1 = new Error("`width` must be specified for horizontal carousels.");
-          throw error1;
-        }
-      }
-      if (size.vertical) {
-        if (!size.height) {
-          const _Error2 = Error;
-          const error2 = new Error("`height` must be specified for vertical carousels.");
-          throw error2;
-        }
-      }
-    }
-  }, items);
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 101, height: 19, scales: [2, 3], hash: "dc1cee3a8f17b01e1093a161d78cdfbe", name: "img_logo_plus_boost", type: "png" });

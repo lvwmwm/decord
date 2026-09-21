@@ -1,19 +1,61 @@
-// Module ID: 13205
-// Function ID: 13206
+// Module ID: 13204
+// Function ID: 13205
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [19, 21, 5822, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 5822, 2]
 
-// Module 13205 (InAppReportsUpsellsTableRow)
+// Module 13204 (InAppReportsUpsellsTableRow)
+import c from "c" /* 568 */;
 import TableRow from "TableRow" /* 5822 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
 
-export default function InAppReportsUpsellsTableRow(disabled) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
+  const cResult = c.c(7);
+  ({ title, disabledTitle, variant, disabled, onPress, icon } = description);
+  let str = "default";
+  if (undefined !== variant) {
+    str = variant;
+  }
+  let tmp4 = title;
+  if (disabled) {
+    tmp4 = title;
+    if (null != disabledTitle) {
+      tmp4 = disabledTitle;
+    }
+  }
+  description = null;
+  if (!disabled) {
+    description = description.description;
+  }
+  if (cResult[0] === disabled) {
+    if (cResult[1] === icon) {
+      if (cResult[2] === onPress) {
+        if (cResult[3] === tmp4) {
+          if (cResult[4] === description) {
+            if (cResult[5] === str) {
+              let tmp7 = cResult[6];
+            }
+            return tmp7;
+          }
+        }
+      }
+    }
+  }
+  const tmp8 = jsx(TableRow.TableRow, { label: tmp4, subLabel: description, onPress, icon, disabled, variant: str });
+  cResult[0] = disabled;
+  cResult[1] = icon;
+  cResult[2] = onPress;
+  cResult[3] = tmp4;
+  cResult[4] = description;
+  cResult[5] = str;
+  cResult[6] = tmp8;
+  tmp7 = tmp8;
+}) : ((disabled) => {
   ({ title, disabledTitle, variant } = disabled);
   if (variant === undefined) {
     variant = "default";
@@ -38,4 +80,4 @@ export default function InAppReportsUpsellsTableRow(disabled) {
   obj.disabled = disabled;
   obj.variant = variant;
   return jsx(TableRow.TableRow, { label: tmp2, subLabel: null, onPress: null, icon: null, disabled: null, variant: null });
-};
+});

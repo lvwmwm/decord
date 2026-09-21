@@ -1,47 +1,41 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14055
+// Function ID: 14056
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 2040, 1386, 4778, 4395, 1372, 4780, 1074, 1181, 7396, 1085, 21, 4756, 14048, 10195, 504, 8871, 13731, 1115, 10288, 11841, 10076, 4752, 9706, 7407, 1875, 5628, 9637, 4963, 14053, 14054, 1478, 14061, 4613, 12, 4723, 8448, 4466, 14062, 7317, 2]
+// Dependencies: [32, 109, 5, 19, 17, 2044, 1390, 4780, 4399, 1376, 4782, 1078, 1185, 7398, 1089, 21, 4758, 558, 568, 14051, 10174, 504, 13734, 1119, 10285, 8876, 11710, 10055, 4754, 9687, 7409, 1879, 5630, 9633, 4965, 14056, 14057, 1482, 14064, 4616, 12, 4725, 8453, 14065, 7319, 4471, 2]
 
-// Module 14052 (VoiceMemberList)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
-import Form from "Form" /* 8871 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10076 */;
-import _modDef10288 from "module_10288" /* 10288 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11841 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14048 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 14054 */;
+// Module 14055 (VoiceMemberList)
+import c from "c" /* 568 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
+import Form from "Form" /* 8876 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10055 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11710 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14051 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 14057 */;
 import _slicedToArray from "module_32" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import UserRecord from "UserRecord" /* 1386 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import UserStore from "UserStore" /* 1372 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import UserRecord from "UserRecord" /* 1390 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import UserStore from "UserStore" /* 1376 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4782 */;
 
+const require = globalThis.__r;
 const VoiceMemberUserDefault = VoiceMemberUser;
 
+const _modDef10285 = tmp3(10285);
 require = fn;
-function ItemSeparator() {
-  const tmp = closure_24();
-  return __initData(Form.FormDivider, { style: closure_24().rowFormDivider });
-}
-function VoiceMemberListSectionHeader(title) {
-  const tmp = closure_24();
-  const obj = { style: tmp.sectionContainer, children: __initData(Text_Text.Text, { style: tmp.sectionTitle, variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() }) };
-  return __initData(React6, obj);
-}
 function renderSectionHeader(section) {
   const title = section.section.title;
   let tmp = null;
   if (null != title) {
     const obj = { title };
-    tmp = __initData(VoiceMemberListSectionHeader, obj);
+    tmp = closure_1_23(closure_30, obj);
   }
   return tmp;
 }
@@ -58,13 +52,355 @@ function extractKey(id) {
   }
   return id;
 }
-function VoiceSectionRow(arg0) {
+let closure_4 = ["channel", "isActionSheet", "disableFooter"];
+get_ActivityIndicator = fn(17);
+({ SectionList: closure_9, View: c10 } = get_ActivityIndicator);
+const Constants = fn(1078);
+({ AnalyticsPages: closure_17, InstantInviteSources: closure_18, Permissions: closure_19 } = Constants);
+const FORM_ROW_VERTICAL_PADDING = fn(1185).FORM_ROW_VERTICAL_PADDING;
+const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
+const ThemeTypes = fn(1089).ThemeTypes;
+const jsxProd = fn(21);
+({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = jsxProd);
+const createStyles = fn(4758);
+let closure_26 = createStyles.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
+let ReactCompilerGating = fn(558);
+let closure_27 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  const cResult = c.c(2);
+  channel = channel.channel;
+  if (cResult[0] !== channel) {
+    const obj2 = { channel };
+    const tmp6 = closure_1_23(GuildEventVoiceBannerDefault, obj2);
+    cResult[0] = channel;
+    cResult[1] = tmp6;
+    let tmp3 = tmp6;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return tmp3;
+}) : ((channel) => closure_1_23(GuildEventVoiceBannerDefault, { channel: channel.channel })));
+ReactCompilerGating = fn(558);
+let closure_28 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+  let FormRow = channel;
+  let tmp = dependencyMap;
+  const cResult = channel(568).c(9);
+  channel = channel.channel;
+  let obj = channel(568);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [PermissionStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== channel) {
+    const fn = function o() {
+      return PermissionStore.can(constants3.CREATE_INSTANT_INVITE, channel) || channel.isPrivate();
+    };
+    const items1 = [channel];
+    cResult[1] = channel;
+    cResult[2] = fn;
+    cResult[3] = items1;
+  }
+  FormRow(504);
+  let tmp11 = null;
+  if (!tmp4) {
+    tmp11 = null;
+    if (tmp10) {
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp15 = closure_23(closure_29, {});
+        cResult[4] = tmp15;
+        let tmp12 = tmp15;
+      } else {
+        tmp12 = cResult[4];
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+        let obj2 = { accessibilityLabel: null, accessibilityHidden: true, source: null, size: null };
+        const intl = FormRow(1119).intl;
+        obj2.accessibilityLabel = intl.string(FormRow(1119).t["6Qgrev"]);
+        obj2.source = _modDef10285;
+        obj2.size = FormRow(13734).CircularIconButton.Sizes.MEDIUM_32;
+        const tmp19 = closure_23(FormRow(13734).CircularIconButton, obj2);
+        const intl2 = FormRow(1119).intl;
+        const stringResult = intl2.string(FormRow(1119).t["6Qgrev"]);
+        cResult[5] = tmp19;
+        cResult[6] = stringResult;
+        let tmp17 = stringResult;
+        let tmp16 = tmp19;
+      } else {
+        tmp16 = cResult[5];
+        tmp17 = cResult[6];
+      }
+      if (cResult[7] !== channel) {
+        const obj3 = { children: null };
+        const items2 = [tmp12, ];
+        FormRow = FormRow(8876).FormRow;
+        const obj4 = {
+          leading: tmp16,
+          label: tmp17,
+          onPress() {
+                  if (channel.isPrivate()) {
+                    openGroupDMAddMembersDefault(tmp.id, constants.CHANNEL_CALL);
+                  } else {
+                    const obj2 = { source: constants2.VOICE_CHANNEL };
+                    const result = instant_invite_InstantInviteUtils.showInstantInviteActionSheet(tmp, obj2);
+                  }
+                }
+        };
+        tmp = closure_23(FormRow, obj4);
+        items2[1] = tmp;
+        obj3.children = items2;
+        const tmp25 = closure_24(noop.Fragment, obj3);
+        cResult[7] = channel;
+        cResult[8] = tmp25;
+      }
+    }
+  }
+  return tmp11;
+}) : ((channel) => {
+  channel = channel.channel;
+  channel(504);
+  [][0] = channel;
+  let tmp7 = null;
+  if (!tmp3) {
+    tmp7 = null;
+    if (tmp6) {
+      let obj = { children: null };
+      const items = [closure_23(closure_29, {}), ];
+      let obj2 = { leading: null, label: null, onPress: null };
+      const obj3 = { accessibilityLabel: null, accessibilityHidden: true, source: null, size: null };
+      const intl = tmp4(1119).intl;
+      obj3.accessibilityLabel = intl.string(tmp4(1119).t["6Qgrev"]);
+      obj3.source = _modDef10285;
+      obj3.size = tmp4(13734).CircularIconButton.Sizes.MEDIUM_32;
+      obj2.leading = closure_23(tmp4(13734).CircularIconButton, obj3);
+      const intl2 = tmp4(1119).intl;
+      obj2.label = intl2.string(tmp4(1119).t["6Qgrev"]);
+      obj2.onPress = function onPress() {
+        if (channel.isPrivate()) {
+          openGroupDMAddMembersDefault(tmp.id, constants.CHANNEL_CALL);
+        } else {
+          const obj2 = { source: constants2.VOICE_CHANNEL };
+          const result = instant_invite_InstantInviteUtils.showInstantInviteActionSheet(tmp, obj2);
+        }
+      };
+      items[1] = closure_23(tmp4(8876).FormRow, obj2);
+      obj.children = items;
+      tmp7 = closure_24(noop.Fragment, obj);
+    }
+  }
+  return tmp7;
+}));
+ReactCompilerGating = fn(558);
+const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const tmp4 = closure_26();
+  if (cResult[0] !== tmp4.rowFormDivider) {
+    const obj2 = { style: tmp4.rowFormDivider };
+    const tmp7 = closure_1_23(Form.FormDivider, obj2);
+    cResult[0] = tmp4.rowFormDivider;
+    cResult[1] = tmp7;
+    let tmp5 = tmp7;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  const tmp = closure_26();
+  return closure_1_23(Form.FormDivider, { style: closure_26().rowFormDivider });
+});
+ReactCompilerGating = fn(558);
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+  const cResult = c.c(8);
+  const tmp4 = closure_26();
+  ({ sectionContainer, sectionTitle } = tmp4);
+  if (cResult[0] !== title.title) {
+    const formatted = str.toUpperCase();
+    cResult[0] = str;
+    cResult[1] = formatted;
+    let tmp5 = formatted;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] === tmp4.sectionTitle) {
+    if (cResult[3] === tmp5) {
+      let tmp7 = cResult[4];
+    }
+    if (cResult[5] === tmp4.sectionContainer) {
+      if (cResult[6] === tmp7) {
+        let tmp9 = cResult[7];
+      }
+      return tmp9;
+    }
+    const obj2 = { style: sectionContainer, children: tmp7 };
+    const tmp12 = closure_1_23(v65535, obj2);
+    cResult[5] = tmp4.sectionContainer;
+    cResult[6] = tmp7;
+    cResult[7] = tmp12;
+    tmp9 = tmp12;
+  }
+  const tmp8 = closure_1_23(Text_Text.Text, { style: sectionTitle, variant: "text-xs/bold", color: "text-default", children: tmp5 });
+  cResult[2] = tmp4.sectionTitle;
+  cResult[3] = tmp5;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : ((title) => {
+  const tmp = closure_26();
+  const obj = { style: tmp.sectionContainer, children: closure_1_23(Text_Text.Text, { style: tmp.sectionTitle, variant: "text-xs/bold", color: "text-default", children: title.title.toUpperCase() }) };
+  return closure_1_23(v65535, obj);
+});
+const constants4 = { VOICE: 0, [0]: "VOICE", SPECTATING: 1, [1]: "SPECTATING", DISCONNECTED: 2, [2]: "DISCONNECTED" };
+ReactCompilerGating = fn(558);
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = require("c").c(13);
+  ({ item, channelId, onPressUser, isActionSheet } = arg0);
+  _require = isActionSheet;
+  let obj = require("c");
+  const analyticsContext = require("analytics").useAnalyticsContext();
+  let analyticsLocations = analyticsContext(7409)().analyticsLocations;
+  if (tmp5) {
+    if (cResult[0] === analyticsContext) {
+      if (cResult[1] === analyticsLocations) {
+        if (cResult[2] === isActionSheet) {
+          let tmp13 = cResult[3];
+        }
+        if (cResult[4] === channelId) {
+          if (cResult[5] === isActionSheet) {
+            if (cResult[6] === tmp13) {
+              if (cResult[7] === item) {
+                let tmp15 = cResult[8];
+              }
+              return tmp15;
+            }
+          }
+        }
+        let obj3 = { embeddedActivity: item, channelId, onItemPress: tmp13, isActionSheet };
+        const tmp17 = closure_23(tmp4(14056), obj3);
+        cResult[4] = channelId;
+        cResult[5] = isActionSheet;
+        cResult[6] = tmp13;
+        cResult[7] = item;
+        cResult[8] = tmp17;
+        tmp15 = tmp17;
+      }
+    }
+    _require = asyncGeneratorStep(async (arg0, arg1, analyticsLocations) => {
+      closure_0 = arg0;
+      const _location = arg1;
+      c5 = 0;
+      c6 = 0;
+      return (async (arg0, value, arg2) => {
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp4 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj5 = { value, done: true };
+                return obj5;
+              } else {
+                closure_4 = tmp2;
+                closure_3 = tmp5;
+                closure_131_0 = closure_0;
+                let tmp13 = null != closure_0;
+                if (tmp13) {
+                  tmp13 = null != _location;
+                }
+                if (tmp13) {
+                  tmp13 = null != tmp29;
+                }
+                if (tmp13) {
+                  const result = analyticsLocations(1879).dismissGlobalKeyboard();
+                  const obj3 = analyticsLocations(1879);
+                  const voiceChannel = analyticsContext(5630).selectVoiceChannel(tmp28.id);
+                  const obj6 = { applicationId: tmp29.applicationId, activityChannelId: tmp28.id, locationObject: _location.location, analyticsLocations };
+                  c5 = 1;
+                  c6 = 1;
+                  const obj7 = { value: analyticsContext(9633)(obj6), done: false };
+                  return obj7;
+                } else {
+                  c6 = 3;
+                }
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 !== 2) {
+              if (closure_0) {
+                const result1 = closure_0(4965).hideVoiceChannelActionSheet(closure_131_0);
+                const obj = closure_0(4965);
+              }
+            }
+            c6 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } catch (tmp23) {
+            c6 = tmp;
+            throw tmp23;
+          }
+        }
+      })();
+    });
+    function onItemPress() {
+      const self = this;
+      const apply = closure_0.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+      return applyArgumentsResult;
+    }
+    cResult[0] = analyticsContext;
+    cResult[1] = analyticsLocations;
+    cResult[2] = isActionSheet;
+    cResult[3] = onItemPress;
+    tmp13 = onItemPress;
+  } else {
+    if (cResult[9] === isActionSheet) {
+      if (cResult[10] === onPressUser) {
+        if (cResult[11] === item) {
+          let tmp6 = cResult[12];
+        }
+        return tmp6;
+      }
+    }
+    const obj4 = {};
+    const merged = Object.assign(item);
+    obj4.onPress = onPressUser;
+    obj4.isActionSheet = isActionSheet;
+    const tmp12 = closure_23(tmp4(14057), obj4);
+    cResult[9] = isActionSheet;
+    cResult[10] = onPressUser;
+    cResult[11] = item;
+    cResult[12] = tmp12;
+    tmp6 = tmp12;
+    const tmp4Result = tmp4(14057);
+  }
+}) : ((arg0) => {
   ({ item, isActionSheet } = arg0);
   ({ channelId, onPressUser } = arg0);
-  importDefault = isActionSheet(9706).useAnalyticsContext();
+  importDefault = isActionSheet(9687).useAnalyticsContext();
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   if (tmp3) {
-    dependencyMap = async function _onItemPress(arg0, value) {
+    dependencyMap = async function _onItemPress2(arg0, value) {
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -75,7 +411,7 @@ function VoiceSectionRow(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -99,13 +435,13 @@ function VoiceSectionRow(arg0) {
                 tmp13 = null != tmp29;
               }
               if (tmp13) {
-                const result = analyticsLocations(tmp5[28]).dismissGlobalKeyboard();
-                const obj3 = analyticsLocations(tmp5[28]);
-                const voiceChannel = closure_1(tmp5[29]).selectVoiceChannel(tmp28.id);
+                const result = analyticsLocations(tmp5[31]).dismissGlobalKeyboard();
+                const obj3 = analyticsLocations(tmp5[31]);
+                const voiceChannel = closure_1(tmp5[32]).selectVoiceChannel(tmp28.id);
                 const obj6 = { applicationId: tmp29.applicationId, activityChannelId: tmp28.id, locationObject: _location.location, analyticsLocations };
                 c5 = 1;
                 c6 = 1;
-                const obj7 = { value: closure_1(tmp5[30])(obj6), done: false };
+                const obj7 = { value: closure_1(tmp5[33])(obj6), done: false };
                 return obj7;
               } else {
                 c6 = 3;
@@ -116,8 +452,8 @@ function VoiceSectionRow(arg0) {
             throw value;
           } else if (arg0 !== 2) {
             if (closure_132_0) {
-              const result1 = isActionSheet(tmp5[31]).hideVoiceChannelActionSheet(closure_131_0);
-              const obj = isActionSheet(tmp5[31]);
+              const result1 = isActionSheet(tmp5[34]).hideVoiceChannelActionSheet(closure_131_0);
+              const obj = isActionSheet(tmp5[34]);
             }
           }
           c6 = 3;
@@ -144,68 +480,231 @@ function VoiceSectionRow(arg0) {
         },
       isActionSheet
     };
-    return closure_21(tmp2(14053), obj2);
+    return closure_23(tmp2(14056), obj2);
   } else {
     let obj3 = {};
     const merged = Object.assign(item);
     obj3.onPress = onPressUser;
     obj3.isActionSheet = isActionSheet;
-    return closure_21(tmp2(14054), obj3);
+    return closure_23(tmp2(14057), obj3);
   }
-  let obj = isActionSheet(9706);
+  let obj = isActionSheet(9687);
   tmp3 = undefined !== item.url && undefined !== item.applicationId;
-}
-get_ActivityIndicator = fn(17);
-({ SectionList: closure_7, View: closure_8 } = get_ActivityIndicator);
-const Constants = fn(1074);
-({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = Constants);
-const FORM_ROW_VERTICAL_PADDING = fn(1181).FORM_ROW_VERTICAL_PADDING;
-const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
-const ThemeTypes = fn(1085).ThemeTypes;
-const jsxProd = fn(21);
-({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
-const createStyles = fn(4756);
-let closure_24 = createStyles.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = noop.memo((channel) => __initData(GuildEventVoiceBannerDefault, { channel: channel.channel }));
-let closure_26 = noop.memo((channel) => {
-  channel = channel.channel;
-  channel(504);
-  [][0] = channel;
-  let tmp7 = null;
-  if (!tmp3) {
-    tmp7 = null;
-    if (tmp6) {
-      let obj = { children: null };
-      const items = [closure_21(ItemSeparator, {}), ];
-      let obj2 = { leading: null, label: null, onPress: null };
-      const obj3 = { accessibilityLabel: null, accessibilityHidden: true, source: null, size: null };
-      const intl = tmp4(1115).intl;
-      obj3.accessibilityLabel = intl.string(tmp4(1115).t["6Qgrev"]);
-      obj3.source = _modDef10288;
-      obj3.size = tmp4(13731).CircularIconButton.Sizes.MEDIUM_32;
-      obj2.leading = closure_21(tmp4(13731).CircularIconButton, obj3);
-      const intl2 = tmp4(1115).intl;
-      obj2.label = intl2.string(tmp4(1115).t["6Qgrev"]);
-      obj2.onPress = function onPress() {
-        if (channel.isPrivate()) {
-          openGroupDMAddMembersDefault(tmp.id, constants.CHANNEL_CALL);
-        } else {
-          const obj2 = { source: constants2.VOICE_CHANNEL };
-          const result = instant_invite_InstantInviteUtils.showInstantInviteActionSheet(tmp, obj2);
-        }
-      };
-      items[1] = closure_21(tmp4(8871).FormRow, obj2);
-      obj.children = items;
-      tmp7 = closure_22(noop.Fragment, obj);
-    }
-  }
-  return tmp7;
 });
-const constants4 = { VOICE: 0, [0]: "VOICE", SPECTATING: 1, [1]: "SPECTATING", DISCONNECTED: 2, [2]: "DISCONNECTED" };
+ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberList.tsx");
 
-export default noop.forwardRef(function VoiceMemberList(channel, ref) {
+export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberList(channel, arg1) {
+  const cResult = require("c").c(88);
+  if (cResult[0] !== channel) {
+    channel = channel.channel;
+    _require = channel;
+    ({ isActionSheet, disableFooter } = channel);
+    let tmp9 = stateFromStoresArray(channel, bound);
+    cResult[0] = channel;
+    cResult[1] = channel;
+    cResult[2] = tmp9;
+    cResult[3] = isActionSheet;
+    cResult[4] = disableFooter;
+    let tmp5 = isActionSheet;
+  } else {
+    _require = cResult[1];
+    tmp5 = cResult[3];
+  }
+  importDefault = undefined === tmp5 || tmp5;
+  let obj = require("c");
+  const rowFormDivider = closure_26();
+  analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
+  bound = Math.min(require("useWindowDimensions")().width, ACTION_SHEET_MAX_WIDTH);
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [SortedVoiceStateStore];
+    cResult[5] = items;
+    let tmp13 = items;
+  } else {
+    tmp13 = cResult[5];
+  }
+  if (cResult[6] !== obj2) {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+    const items1 = [obj2];
+    cResult[6] = obj2;
+    cResult[7] = P;
+    cResult[8] = items1;
+    let tmp16 = items1;
+    const tmp15 = P;
+  } else {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+    tmp16 = cResult[8];
+  }
+  const tmp10 = closure_26();
+  const tmp11 = importDefault;
+  const stateFromStores = require("initialize").useStateFromStores(tmp13, tmp15, tmp16);
+  const tmp17 = tmp11(analyticsLocations[38])(obj2);
+  const ownerId = tmp17;
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+    const items2 = [ApplicationStreamingStore];
+    cResult[9] = items2;
+    let tmp18 = items2;
+  } else {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+  }
+  if (cResult[10] !== tmp17) {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+    cResult[10] = tmp17;
+    cResult[11] = tmp20;
+    const tmp19 = tmp20;
+  } else {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+  }
+  const tmpResult = require("initialize");
+  stateFromStoresArray = require("initialize").useStateFromStoresArray(tmp18, tmp19);
+  if (cResult[12] !== obj2.id) {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+    const voiceChannelKey = obj5.getVoiceChannelKey(obj2.id);
+    cResult[12] = obj2.id;
+    cResult[13] = voiceChannelKey;
+    const tmp22 = voiceChannelKey;
+  } else {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+  }
+  const tmpResult4 = require("initialize");
+  const isModalOpen = require("NavigationRouteUtils").useIsModalOpen(tmp22);
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+    const items3 = [EmbeddedActivitiesStore];
+    cResult[14] = items3;
+    const tmp25 = items3;
+  } else {
+    class P {
+      constructor() {
+        return closure_16.getVoiceStatesForChannel(closure_0);
+      }
+    }
+  }
+  if (cResult[15] !== obj2.id) {
+    class Z {
+      constructor() {
+        return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+      }
+    }
+    cResult[15] = obj2.id;
+    cResult[16] = Z;
+    const tmp26 = Z;
+  } else {
+    class Z {
+      constructor() {
+        return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+      }
+    }
+  }
+  const tmpResult5 = require("NavigationRouteUtils");
+  const stateFromStores1 = require("initialize").useStateFromStores(tmp25, tmp26);
+  if (cResult[17] !== stateFromStores) {
+    class Z {
+      constructor() {
+        return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+      }
+    }
+    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+      class Z {
+        constructor() {
+          return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+        }
+      }
+      cResult[19] = tmp30;
+      const tmp29 = tmp30;
+    } else {
+      class Z {
+        constructor() {
+          return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+        }
+      }
+    }
+    const _Set = Set;
+    const set = new Set(stateFromStores.map(tmp29));
+    cResult[17] = stateFromStores;
+    cResult[18] = set;
+  } else {
+    class Z {
+      constructor() {
+        return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+      }
+    }
+    asyncGeneratorStep = tmp28;
+    if (cResult[20] === obj2) {
+      class Z {
+        constructor() {
+          return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+        }
+      }
+    }
+    const items4 = [];
+    if (obj2.isPrivate()) {
+      class Z {
+        constructor() {
+          return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+        }
+      }
+      const reduced = arr7.reduce((arr, item) => {
+        user = UserStore.getUser(item);
+        let hasItem = null == user;
+        if (!hasItem) {
+          hasItem = tmp28.has(user.id);
+        }
+        if (!hasItem) {
+          arr.push(user);
+        }
+        return arr;
+      }, items4);
+    } else {
+      class Z {
+        constructor() {
+          return closure_11.getEmbeddedActivitiesForChannel(closure_0.id);
+        }
+      }
+    }
+    cResult[20] = obj2;
+    cResult[21] = tmp28;
+    cResult[22] = reduced;
+  }
+}) : (function VoiceMemberList(channel, ref) {
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -220,18 +719,18 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
   let items5;
   let callback;
   let callback1;
-  const tmp2 = closure_24();
+  const tmp2 = closure_26();
   const rowFormDivider = tmp2;
-  analyticsLocations = flag(analyticsLocations[27])().analyticsLocations;
-  _slicedToArray = Math.min(flag(analyticsLocations[34])().width, ACTION_SHEET_MAX_WIDTH);
+  analyticsLocations = flag(analyticsLocations[30])().analyticsLocations;
+  closure_4 = Math.min(flag(analyticsLocations[37])().width, ACTION_SHEET_MAX_WIDTH);
   let items = [SortedVoiceStateStore];
   const items1 = [channel];
-  const stateFromStores = channel(analyticsLocations[18]).useStateFromStores(items, () => SortedVoiceStateStore.getVoiceStatesForChannel(channel), items1);
-  const tmp6 = flag(analyticsLocations[35])(channel);
-  const ownerId = tmp6;
-  let obj = channel(analyticsLocations[18]);
+  const stateFromStores = channel(analyticsLocations[21]).useStateFromStores(items, () => SortedVoiceStateStore.getVoiceStatesForChannel(channel), items1);
+  const tmp6 = flag(analyticsLocations[38])(channel);
+  _slicedToArray = tmp6;
+  let obj = channel(analyticsLocations[21]);
   const items2 = [ApplicationStreamingStore];
-  const stateFromStoresArray = channel(analyticsLocations[18]).useStateFromStoresArray(items2, () => {
+  const stateFromStoresArray = channel(analyticsLocations[21]).useStateFromStoresArray(items2, () => {
     if (null != closure_5) {
       let viewerIds = ApplicationStreamingStore.getViewerIds(tmp);
     } else {
@@ -239,18 +738,18 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
     }
     return viewerIds;
   });
-  let obj2 = channel(analyticsLocations[18]);
-  let obj3 = channel(analyticsLocations[36]);
-  const isModalOpen = obj3.useIsModalOpen(channel(analyticsLocations[31]).getVoiceChannelKey(channel.id));
-  const obj4 = channel(analyticsLocations[31]);
-  const items3 = [callback];
-  const stateFromStores1 = channel(analyticsLocations[18]).useStateFromStores(items3, () => EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id));
+  let obj2 = channel(analyticsLocations[21]);
+  let obj3 = channel(analyticsLocations[39]);
+  const isModalOpen = obj3.useIsModalOpen(channel(analyticsLocations[34]).getVoiceChannelKey(channel.id));
+  const obj4 = channel(analyticsLocations[34]);
+  const items3 = [EmbeddedActivitiesStore];
+  const stateFromStores1 = channel(analyticsLocations[21]).useStateFromStores(items3, () => EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id));
   const set = new Set(stateFromStores.map((voiceState) => voiceState.voiceState.userId));
   const items4 = [];
   if (channel.isPrivate()) {
     const recipients = channel.recipients;
     let reduced = recipients.reduce((arr, item) => {
-      const user = UserStore.getUser(item);
+      user = UserStore.getUser(item);
       let hasItem = null == user;
       if (!hasItem) {
         hasItem = set.has(user.id);
@@ -275,46 +774,46 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
         if (str == null) {
           str = "";
         }
-        const tmp3Result = tmp3(tmp4[37]);
-        [arr10, arr11] = tmp3(tmp4[37]).partition(stateFromStores, (user) => stateFromStoresArray.includes(user.user.id));
+        const tmp3Result = tmp3(tmp4[40]);
+        [arr10, arr11] = tmp3(tmp4[40]).partition(stateFromStores, (user) => stateFromStoresArray.includes(user.user.id));
         if (arr10.length > 0) {
           const obj6 = { type: constants4.SPECTATING, title: null, data: null };
-          const intl = tmp5(tmp4[21]).intl;
+          const intl = tmp5(tmp4[23]).intl;
           const obj7 = { username: str };
-          obj6.title = intl.formatToPlainString(tmp5(tmp4[21]).t.Fb0eT9, obj7);
+          obj6.title = intl.formatToPlainString(tmp5(tmp4[23]).t.Fb0eT9, obj7);
           obj6.data = arr10;
           items5.push(obj6);
         }
         if (arr11.length > 0) {
           const obj8 = { type: constants4.VOICE, title: null, data: null };
-          const intl2 = tmp5(tmp4[21]).intl;
-          obj8.title = intl2.string(tmp5(tmp4[21]).t.C7iIKB);
+          const intl2 = tmp5(tmp4[23]).intl;
+          obj8.title = intl2.string(tmp5(tmp4[23]).t.C7iIKB);
           obj8.data = stateFromStores1.concat(arr11);
           items5.push(obj8);
         }
         if (reduced.length > 0) {
           const obj9 = { type: constants4.DISCONNECTED, title: null, data: null };
-          const intl3 = tmp5(tmp4[21]).intl;
-          obj9.title = intl3.string(tmp5(tmp4[21]).t.BnSq1I);
+          const intl3 = tmp5(tmp4[23]).intl;
+          obj9.title = intl3.string(tmp5(tmp4[23]).t.BnSq1I);
           obj9.data = reduced;
           items5.push(obj9);
         }
-        const tmp14 = _slicedToArray(tmp3(tmp4[37]).partition(stateFromStores, (user) => stateFromStoresArray.includes(user.user.id)), 2);
+        const tmp14 = _slicedToArray(tmp3(tmp4[40]).partition(stateFromStores, (user) => stateFromStoresArray.includes(user.user.id)), 2);
       }
       const items6 = [channel.id, analyticsLocations];
-      callback = stateFromStoresArray.useCallback((id) => {
+      callback = items5.useCallback((id) => {
         ActionSheetActionCreatorsDefault.hideActionSheet();
         showUserProfileActionSheetDefault({ userId: id.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
       }, items6);
       const items7 = [channel, flag, callback];
-      callback1 = stateFromStoresArray.useCallback((item) => {
+      callback1 = items5.useCallback((item) => {
         item = item.item;
         const type = item.section.type;
         if (constants.VOICE === type) {
           let tmp18 = null;
           if (!(item instanceof UserRecord)) {
             const obj2 = { item, channelId: channel.id, onPressUser: onPress, isActionSheet: flag };
-            tmp18 = __initData(VoiceSectionRow, obj2);
+            tmp18 = closure_2_23(closure_34, obj2);
           }
           return tmp18;
         } else if (tmp.SPECTATING === type) {
@@ -323,19 +822,19 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
           obj3.onPress = onPress;
           obj3.isSpectating = true;
           obj3.isActionSheet = true;
-          return __initData(VoiceMemberUserDefault, obj3);
+          return closure_2_23(VoiceMemberUserDefault, obj3);
         } else if (tmp.DISCONNECTED === type) {
           const obj = { user: item, channel, isActionSheet: flag, onPress };
-          return __initData(VoiceMemberUser.DisconnectedUserRow, obj);
+          return closure_2_23(VoiceMemberUser.DisconnectedUserRow, obj);
         }
       }, items7);
       if (flag) {
         const obj10 = { theme: ThemeTypes.DARK, children: null };
         const obj11 = { style: tmp2.container, children: null };
         const obj12 = { channel };
-        const items8 = [tmp24(tmp5(tmp4[41]).VoiceChannelHeader, obj12), , ];
+        const items8 = [tmp24(tmp5(tmp4[43]).VoiceChannelHeader, obj12), , ];
         const obj13 = { style: tmp2.headerFormDivider };
-        items8[1] = tmp24(tmp5(tmp4[19]).FormDivider, obj13);
+        items8[1] = tmp24(tmp5(tmp4[25]).FormDivider, obj13);
         const obj14 = { inActionSheet: true, style: tmp2.voiceChannelContainer };
         const merged1 = Object.assign(merged);
         obj14.renderItem = function renderRow(arg0, arg1) {
@@ -346,9 +845,9 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
             const obj2 = { children: null };
             const items = [callback1(obj), ];
             const obj3 = { style: rowFormDivider.rowFormDivider };
-            items[1] = __initData(Form.FormDivider, obj3);
+            items[1] = closure_2_23(Form.FormDivider, obj3);
             obj2.children = items;
-            return __initData2(__initData3, obj2);
+            return closure_2_24(closure_2_25, obj2);
           }
         };
         obj14.itemSize = function getRowHeight(arg0, arg1) {
@@ -365,7 +864,7 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
               return sum;
             } else {
               if (tmp) {
-                tmp4 = tmp4(14053);
+                tmp4 = tmp4(14056);
                 calculateActivityRowHeight = tmp4.calculateActivityRowHeight;
                 let result = calculateActivityRowHeight(tmp9);
               } else {
@@ -385,31 +884,31 @@ export default noop.forwardRef(function VoiceMemberList(channel, ref) {
           }
         };
         obj14.sections = items5.map((data) => data.data.length);
-        items8[2] = tmp24(tmp3(tmp4[42]), obj14);
+        items8[2] = tmp24(tmp3(tmp4[44]), obj14);
         obj11.children = items8;
-        obj10.children = closure_22(items5, obj11);
-        let tmp24Result = tmp24(tmp5(tmp4[40]).ThemeContextProvider, obj10);
-        const tmp3Result2 = tmp3(tmp4[42]);
+        obj10.children = closure_24(callback1, obj11);
+        let tmp24Result = tmp24(tmp5(tmp4[45]).ThemeContextProvider, obj10);
+        const tmp3Result2 = tmp3(tmp4[44]);
       } else {
-        const obj15 = { ref, sections: items5, renderSectionHeader, renderItem: callback1, keyExtractor: extractKey, ItemSeparatorComponent: ItemSeparator, ListFooterComponent: null, ListHeaderComponent: null, stickySectionHeadersEnabled: false };
+        const obj15 = { ref, sections: items5, renderSectionHeader, renderItem: callback1, keyExtractor: extractKey, ItemSeparatorComponent, ListFooterComponent: null, ListHeaderComponent: null, stickySectionHeadersEnabled: false };
         let tmp24Result2 = null;
         if (!flag2) {
           const obj16 = { channel };
-          tmp24Result2 = tmp24(closure_26, obj16);
+          tmp24Result2 = tmp24(closure_28, obj16);
         }
         obj15.ListFooterComponent = tmp24Result2;
         const obj17 = { channel };
-        obj15.ListHeaderComponent = tmp24(closure_25, obj17);
+        obj15.ListHeaderComponent = tmp24(closure_27, obj17);
         const merged2 = Object.assign(merged);
-        tmp24Result = tmp24(set, obj15);
+        tmp24Result = tmp24(callback, obj15);
       }
       return tmp24Result;
     }
   }
-  const obj5 = channel(analyticsLocations[18]);
+  const obj5 = channel(analyticsLocations[21]);
   items5.push({ type: constants4.VOICE, title: null, data: stateFromStores1.concat(stateFromStores) });
   if (reduced.length > 0) {
     const obj19 = { type: constants4.DISCONNECTED, title: null, data: reduced };
     items5.push(obj19);
   }
-});
+}));

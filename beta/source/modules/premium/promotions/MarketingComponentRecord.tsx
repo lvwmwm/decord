@@ -1,14 +1,14 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10965
+// Function ID: 10966
 // Name: MarketingComponentRecord
-// Dependencies: [1387, 1223, 10928, 1091, 1240, 2]
+// Dependencies: [1391, 1227, 10966, 1095, 1244, 2]
 
-// Module 10927 (MarketingComponentRecord)
-import DurationsDefault from "Durations" /* 1091 */;
-import ProtoUtils from "ProtoUtils" /* 1223 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10928 */;
-import Record from "Record" /* 1387 */;
+// Module 10965 (MarketingComponentRecord)
+import DurationsDefault from "Durations" /* 1095 */;
+import ProtoUtils from "ProtoUtils" /* 1227 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1244 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10966 */;
+import Record from "Record" /* 1391 */;
 
 require = fn;
 let MarketingComponentRecord;

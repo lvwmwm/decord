@@ -1,14 +1,14 @@
-// Module ID: 10551
-// Function ID: 10552
+// Module ID: 10468
+// Function ID: 10469
 // Name: useComputeEmojiPickerFunctions
-// Dependencies: [32, 19, 5680, 10548, 10552, 4409, 12, 10543, 2017, 2]
-// Exports: default
+// Dependencies: [32, 19, 5682, 10439, 10469, 4413, 12, 10440, 558, 568, 2021, 2]
 
-// Module 10551 (useComputeEmojiPickerFunctions)
-import FunctionUtils from "FunctionUtils" /* 2017 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 10543 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 10552 */;
+// Module 10468 (useComputeEmojiPickerFunctions)
+import c from "c" /* 568 */;
+import FunctionUtils from "FunctionUtils" /* 2021 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 10440 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 10469 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -204,16 +204,29 @@ function pushNativeCategory(emojiSections) {
   emojiSections = emojiSections.emojiSections;
   emojiSections.push(emojiSections.renderingData);
 }
-const EmojiPickerConstants = fn(5680);
+const EmojiPickerConstants = fn(5682);
 ({ EmojiCategories: hasOwnProperty, EmojiCategoryTypes: metroRequire } = EmojiPickerConstants);
-const constants3 = fn(10548).EmojiPickerRenderingDataType;
+const constants3 = fn(10439).EmojiPickerRenderingDataType;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/useComputeEmojiPickerFunctions.tsx");
 
-export default function useComputeEmojiPickerFunctions() {
-  return _slicedToArray(noop.useState(() => {
-    const obj = { computeCategories: FunctionUtils.cachedFunction(_computeCategories), computeSearchResults: null };
-    obj.computeSearchResults = FunctionUtils.cachedFunction(_computeSearchResults);
-    return obj;
-  }), 1)[0];
-};
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function s() {
+      const obj = { computeCategories: FunctionUtils.cachedFunction(_computeCategories), computeSearchResults: null };
+      obj.computeSearchResults = FunctionUtils.cachedFunction(_computeSearchResults);
+      return obj;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return _slicedToArray(noop.useState(first), 1)[0];
+}) : (() => _slicedToArray(noop.useState(() => {
+  const obj = { computeCategories: FunctionUtils.cachedFunction(_computeCategories), computeSearchResults: null };
+  obj.computeSearchResults = FunctionUtils.cachedFunction(_computeSearchResults);
+  return obj;
+}), 1)[0]);

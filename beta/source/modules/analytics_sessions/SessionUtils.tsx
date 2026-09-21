@@ -1,11 +1,11 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7718
+// Function ID: 7719
 // Name: SessionUtils
-// Dependencies: [1091, 2]
+// Dependencies: [1095, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 7713 (SessionUtils)
-import DurationsDefault from "Durations" /* 1091 */;
+// Module 7718 (SessionUtils)
+import DurationsDefault from "Durations" /* 1095 */;
 
 const result = 30 * DurationsDefault.Millis.MINUTE;
 const size = fn(2);

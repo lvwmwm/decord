@@ -1,48 +1,48 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8221
+// Function ID: 8222
 // Name: SystemMessage
-// Dependencies: [1074, 8217, 8236, 8237, 8240, 8241, 8242, 8243, 8261, 8263, 8264, 8265, 8266, 8267, 8269, 8270, 8271, 8281, 8282, 8284, 8285, 8286, 8287, 8288, 8289, 8290, 8291, 8298, 8299, 8300, 8302, 8303, 8304, 8305, 8311, 8328, 8332, 8334, 2]
+// Dependencies: [1078, 8222, 8241, 8242, 8245, 8246, 8247, 8248, 8266, 8268, 8269, 8270, 8271, 8272, 8274, 8275, 8276, 8286, 8287, 8289, 8290, 8291, 8292, 8293, 8294, 8295, 8296, 8303, 8304, 8305, 8307, 8308, 8309, 8310, 8316, 8333, 8337, 8339, 2]
 // Exports: createSystemMessageContent
 
-// Module 8216 (SystemMessage)
-import AddRecipientSystemMessage from "AddRecipientSystemMessage" /* 8217 */;
-import RemoveRecipientSystemMessage from "RemoveRecipientSystemMessage" /* 8236 */;
-import CallSystemMessage from "CallSystemMessage" /* 8237 */;
-import ChangeChannelNameSystemMessage from "ChangeChannelNameSystemMessage" /* 8240 */;
-import ChangeChannelIconSystemMessage from "ChangeChannelIconSystemMessage" /* 8241 */;
-import ChannelPinnedMessageSystemMessage from "ChannelPinnedMessageSystemMessage" /* 8242 */;
-import UserJoinSystemMessage from "UserJoinSystemMessage" /* 8243 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8261 */;
-import UserPremiumGuildSubscriptionTierAchievedSystemMessage from "UserPremiumGuildSubscriptionTierAchievedSystemMessage" /* 8263 */;
-import ChannelFollowAddSystemMessage from "ChannelFollowAddSystemMessage" /* 8264 */;
-import GuildStreamSystemMessage from "GuildStreamSystemMessage" /* 8265 */;
-import GuildDiscoverySystemMessage from "GuildDiscoverySystemMessage" /* 8266 */;
-import ApplicationCommandSourceSystemMessage from "ApplicationCommandSourceSystemMessage" /* 8267 */;
-import NewThreadSystemMessage from "NewThreadSystemMessage" /* 8269 */;
-import ThreadStarterSystemMessage from "ThreadStarterSystemMessage" /* 8270 */;
-import AutoModerationActionSystemMessage from "AutoModerationActionSystemMessage" /* 8271 */;
-import RoleSubscriptionPurchaseSystemMessage from "RoleSubscriptionPurchaseSystemMessage" /* 8281 */;
-import PurchaseNotificationSystemMessage from "PurchaseNotificationSystemMessage" /* 8282 */;
-import StageStartSystemMessage from "StageStartSystemMessage" /* 8284 */;
-import StageEndSystemMessage from "StageEndSystemMessage" /* 8285 */;
-import StageTopicSystemMessage from "StageTopicSystemMessage" /* 8286 */;
-import StageSpeakerSystemMessage from "StageSpeakerSystemMessage" /* 8287 */;
-import StageRaiseHandSystemMessage from "StageRaiseHandSystemMessage" /* 8288 */;
-import ApplicationSubscriptionPurchaseSystemMessage from "ApplicationSubscriptionPurchaseSystemMessage" /* 8289 */;
-import PrivateChannelIntegrationSystemMessage from "PrivateChannelIntegrationSystemMessage" /* 8290 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8291 */;
-import GuildReportRaidSystemMessage from "GuildReportRaidSystemMessage" /* 8298 */;
-import GuildReportFalseAlarmSystemMessage from "GuildReportFalseAlarmSystemMessage" /* 8299 */;
-import PollResultSystemMessage from "PollResultSystemMessage" /* 8300 */;
-import ChannelLinkedToLobbySystemMessage from "ChannelLinkedToLobbySystemMessage" /* 8302 */;
-import InGameMessageNuxSystemMessage from "InGameMessageNuxSystemMessage" /* 8303 */;
-import JoinRequestNotificationSystemMessage from "JoinRequestNotificationSystemMessage" /* 8304 */;
-import PremiumGroupInviteSystemMessage from "PremiumGroupInviteSystemMessage" /* 8305 */;
-import ReferralSystemMessage from "ReferralSystemMessage" /* 8311 */;
-import VoiceSessionSystemMessage from "VoiceSessionSystemMessage" /* 8328 */;
-import FriendRequestAcceptedSystemMessage from "FriendRequestAcceptedSystemMessage" /* 8332 */;
-import GiftIntentSystemMessage from "GiftIntentSystemMessage" /* 8334 */;
-import Constants from "Constants" /* 1074 */;
+// Module 8221 (SystemMessage)
+import AddRecipientSystemMessage from "AddRecipientSystemMessage" /* 8222 */;
+import RemoveRecipientSystemMessage from "RemoveRecipientSystemMessage" /* 8241 */;
+import CallSystemMessage from "CallSystemMessage" /* 8242 */;
+import ChangeChannelNameSystemMessage from "ChangeChannelNameSystemMessage" /* 8245 */;
+import ChangeChannelIconSystemMessage from "ChangeChannelIconSystemMessage" /* 8246 */;
+import ChannelPinnedMessageSystemMessage from "ChannelPinnedMessageSystemMessage" /* 8247 */;
+import UserJoinSystemMessage from "UserJoinSystemMessage" /* 8248 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8266 */;
+import UserPremiumGuildSubscriptionTierAchievedSystemMessage from "UserPremiumGuildSubscriptionTierAchievedSystemMessage" /* 8268 */;
+import ChannelFollowAddSystemMessage from "ChannelFollowAddSystemMessage" /* 8269 */;
+import GuildStreamSystemMessage from "GuildStreamSystemMessage" /* 8270 */;
+import GuildDiscoverySystemMessage from "GuildDiscoverySystemMessage" /* 8271 */;
+import ApplicationCommandSourceSystemMessage from "ApplicationCommandSourceSystemMessage" /* 8272 */;
+import NewThreadSystemMessage from "NewThreadSystemMessage" /* 8274 */;
+import ThreadStarterSystemMessage from "ThreadStarterSystemMessage" /* 8275 */;
+import AutoModerationActionSystemMessage from "AutoModerationActionSystemMessage" /* 8276 */;
+import RoleSubscriptionPurchaseSystemMessage from "RoleSubscriptionPurchaseSystemMessage" /* 8286 */;
+import PurchaseNotificationSystemMessage from "PurchaseNotificationSystemMessage" /* 8287 */;
+import StageStartSystemMessage from "StageStartSystemMessage" /* 8289 */;
+import StageEndSystemMessage from "StageEndSystemMessage" /* 8290 */;
+import StageTopicSystemMessage from "StageTopicSystemMessage" /* 8291 */;
+import StageSpeakerSystemMessage from "StageSpeakerSystemMessage" /* 8292 */;
+import StageRaiseHandSystemMessage from "StageRaiseHandSystemMessage" /* 8293 */;
+import ApplicationSubscriptionPurchaseSystemMessage from "ApplicationSubscriptionPurchaseSystemMessage" /* 8294 */;
+import PrivateChannelIntegrationSystemMessage from "PrivateChannelIntegrationSystemMessage" /* 8295 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8296 */;
+import GuildReportRaidSystemMessage from "GuildReportRaidSystemMessage" /* 8303 */;
+import GuildReportFalseAlarmSystemMessage from "GuildReportFalseAlarmSystemMessage" /* 8304 */;
+import PollResultSystemMessage from "PollResultSystemMessage" /* 8305 */;
+import ChannelLinkedToLobbySystemMessage from "ChannelLinkedToLobbySystemMessage" /* 8307 */;
+import InGameMessageNuxSystemMessage from "InGameMessageNuxSystemMessage" /* 8308 */;
+import JoinRequestNotificationSystemMessage from "JoinRequestNotificationSystemMessage" /* 8309 */;
+import PremiumGroupInviteSystemMessage from "PremiumGroupInviteSystemMessage" /* 8310 */;
+import ReferralSystemMessage from "ReferralSystemMessage" /* 8316 */;
+import VoiceSessionSystemMessage from "VoiceSessionSystemMessage" /* 8333 */;
+import FriendRequestAcceptedSystemMessage from "FriendRequestAcceptedSystemMessage" /* 8337 */;
+import GiftIntentSystemMessage from "GiftIntentSystemMessage" /* 8339 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 ({ MessageTypes: c2, BoostedGuildTiers: c3 } = Constants);

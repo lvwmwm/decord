@@ -1,10 +1,10 @@
-// Module ID: 1974
-// Function ID: 1975
+// Module ID: 1978
+// Function ID: 1979
 // Name: constants
-// Dependencies: [1975, 2]
+// Dependencies: [1979, 2]
 
-// Module 1974 (constants)
-import types from "types" /* 1975 */;
+// Module 1978 (constants)
+import types from "types" /* 1979 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

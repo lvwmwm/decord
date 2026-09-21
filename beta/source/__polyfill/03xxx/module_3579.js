@@ -1,9 +1,9 @@
 // Module ID: 3579
 // Function ID: 3580
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 3579
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/slayer_storefront/intl", scales: [1], hash: "afd14af49e4070af889bb0f550515981", name: "SlayerStorefront.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "1ba7bc7d9a3ed8a2b617866de32b8ca2", name: "uk.messages.1ba7bc7d9a3ed8a2b617866de32b8ca2.compiled.messages", type: "jsona" });

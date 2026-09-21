@@ -1,16 +1,16 @@
-// Module ID: 8219
-// Function ID: 8220
+// Module ID: 8224
+// Function ID: 8225
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
-// Dependencies: [32, 19, 17, 1182, 1085, 672, 1370, 5215, 2]
+// Dependencies: [32, 19, 17, 1186, 1089, 676, 1374, 5217, 558, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 8219 (enhanced_role_colors/EnhancedRoleColorUtils)
-import _modDef672 from "module_672" /* 672 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5215 */;
+// Module 8224 (enhanced_role_colors/EnhancedRoleColorUtils)
+import _modDef676 from "module_676" /* 676 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5217 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import ThemeStore from "ThemeStore" /* 1186 */;
 
 const useHasEnhancedRoleColorsDefault = useHasEnhancedRoleColors;
 
@@ -20,32 +20,32 @@ function processColorStrings(colorStrings) {
     const primaryColor = colorStrings.primaryColor;
     if (ThemeStore.theme === ThemeTypes.LIGHT) {
       if (null != primaryColor) {
-        const obj = _modDef672(primaryColor);
+        const obj = _modDef676(primaryColor);
         let tmp10 = processColor;
-        [tmp7, tmp8, tmp9] = _modDef672(primaryColor).hsl();
-        const tmp6 = _slicedToArray(_modDef672(primaryColor).hsl(), 3);
-        let tmp12Result = processColor(_modDef672.hsl(tmp7, tmp8, 0.85 * tmp9).hex());
-        const hslResult = _modDef672.hsl(tmp7, tmp8, 0.85 * tmp9);
+        [tmp7, tmp8, tmp9] = _modDef676(primaryColor).hsl();
+        const tmp6 = _slicedToArray(_modDef676(primaryColor).hsl(), 3);
+        let tmp12Result = processColor(_modDef676.hsl(tmp7, tmp8, 0.85 * tmp9).hex());
+        const hslResult = _modDef676.hsl(tmp7, tmp8, 0.85 * tmp9);
       }
       const obj3 = { primaryColor: tmp12Result, secondaryColor: null, tertiaryColor: null };
       const secondaryColor = colorStrings.secondaryColor;
       if (tmp.theme === tmp2.LIGHT) {
         if (null != secondaryColor) {
-          const obj5 = _modDef672(secondaryColor);
-          [tmp17, tmp18, tmp19] = _modDef672(secondaryColor).hsl();
-          const tmp16 = _slicedToArray(_modDef672(secondaryColor).hsl(), 3);
-          let tmp10Result = tmp10(_modDef672.hsl(tmp17, tmp18, 0.85 * tmp19).hex());
-          const hslResult1 = _modDef672.hsl(tmp17, tmp18, 0.85 * tmp19);
+          const obj5 = _modDef676(secondaryColor);
+          [tmp17, tmp18, tmp19] = _modDef676(secondaryColor).hsl();
+          const tmp16 = _slicedToArray(_modDef676(secondaryColor).hsl(), 3);
+          let tmp10Result = tmp10(_modDef676.hsl(tmp17, tmp18, 0.85 * tmp19).hex());
+          const hslResult1 = _modDef676.hsl(tmp17, tmp18, 0.85 * tmp19);
         }
         obj3.secondaryColor = tmp10Result;
         const tertiaryColor = colorStrings.tertiaryColor;
         if (tmp.theme === tmp2.LIGHT) {
           if (null != tertiaryColor) {
-            const obj8 = _modDef672(tertiaryColor);
-            [tmp25, tmp26, tmp27] = _modDef672(tertiaryColor).hsl();
-            const tmp24 = _slicedToArray(_modDef672(tertiaryColor).hsl(), 3);
-            let tmp10Result2 = tmp10(_modDef672.hsl(tmp25, tmp26, 0.85 * tmp27).hex());
-            const hslResult2 = _modDef672.hsl(tmp25, tmp26, 0.85 * tmp27);
+            const obj8 = _modDef676(tertiaryColor);
+            [tmp25, tmp26, tmp27] = _modDef676(tertiaryColor).hsl();
+            const tmp24 = _slicedToArray(_modDef676(tertiaryColor).hsl(), 3);
+            let tmp10Result2 = tmp10(_modDef676.hsl(tmp25, tmp26, 0.85 * tmp27).hex());
+            const hslResult2 = _modDef676.hsl(tmp25, tmp26, 0.85 * tmp27);
           }
           obj3.tertiaryColor = tmp10Result2;
           return obj3;
@@ -59,9 +59,11 @@ function processColorStrings(colorStrings) {
   }
 }
 const processColor = fn(17).processColor;
-const ThemeTypes = fn(1085).ThemeTypes;
+const ThemeTypes = fn(1089).ThemeTypes;
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
+const result1 = size.fileFinishedImporting("modules/premium/enhanced_role_colors/native/EnhancedRoleColorUtils.tsx");
 
 export { processColorStrings };
 export const processColorStringsArray = function processColorStringsArray(colorStrings) {
@@ -105,13 +107,13 @@ export const useProcessColorStringsArray = function useProcessColorStringsArray(
 export const isNativeMessageEligibleForEnhancedRoleColors = function isNativeMessageEligibleForEnhancedRoleColors(guildId, id) {
   return useHasEnhancedRoleColors.getHasEnhancedRoleColors(guildId, id);
 };
-export const useIsRoleStyleAndRoleColorsEligibleForERC = function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
-  let tmp = useHasEnhancedRoleColorsDefault(guildId, id);
+export const useIsRoleStyleAndRoleColorsEligibleForERC = (arg0, arg1, arg2, arg3) => {
+  let tmp = useHasEnhancedRoleColorsDefault(arg0, arg1);
   if (tmp) {
-    tmp = "username" === stateFromStores;
+    tmp = "username" === arg2;
   }
   if (tmp) {
-    tmp = processColorStringsArray.length > 1;
+    tmp = arg3.length > 1;
   }
   return tmp;
 };

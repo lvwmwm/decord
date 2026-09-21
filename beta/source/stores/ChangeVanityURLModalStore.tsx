@@ -1,12 +1,12 @@
-// Module ID: 18079
-// Function ID: 18080
+// Module ID: 18082
+// Function ID: 18083
 // Name: ChangeVanityURLModalStore
-// Dependencies: [1074, 504, 573, 2]
+// Dependencies: [1078, 504, 577, 2]
 
-// Module 18079 (ChangeVanityURLModalStore)
+// Module 18082 (ChangeVanityURLModalStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 const FormStates = Constants.FormStates;

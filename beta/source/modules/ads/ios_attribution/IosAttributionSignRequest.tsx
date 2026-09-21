@@ -1,10 +1,10 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11619
+// Function ID: 11620
 // Name: IosAttributionSignRequest
-// Dependencies: [5, 1074, 1271, 1231, 2]
+// Dependencies: [5, 1078, 1275, 1235, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 11750 (IosAttributionSignRequest)
+// Module 11619 (IosAttributionSignRequest)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -19,7 +19,7 @@ let closure_5 = async function _fetchIosAttributionSignedPayloads(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -42,7 +42,7 @@ let closure_5 = async function _fetchIosAttributionSignedPayloads(arg0, value) {
           ({ metadataSealed: closure_130_0, impressionId: closure_130_1, specs: closure_130_2, signal: closure_130_3 } = closure_0);
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "Set", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {
@@ -101,7 +101,7 @@ let closure_5 = async function _fetchIosAttributionSignedPayloads(arg0, value) {
     }
   }
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionSignRequest.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 7749
-// Function ID: 7750
+// Module ID: 7754
+// Function ID: 7755
 // Name: isSpam
-// Dependencies: [1372, 1074, 7750, 2]
+// Dependencies: [1376, 1078, 7755, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7749 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7750 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 7754 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7755 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ UserFlags: c3, ChannelTypes: closure_4 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/isSpam.tsx");

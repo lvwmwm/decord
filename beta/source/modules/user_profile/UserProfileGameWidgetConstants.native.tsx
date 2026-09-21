@@ -1,15 +1,15 @@
-// Module ID: 9194
-// Function ID: 9195
+// Module ID: 9192
+// Function ID: 9193
 // Name: UserProfileGameWidgetConstants
-// Dependencies: [9195, 9196, 8170, 8172, 4455, 2]
+// Dependencies: [9193, 9194, 8174, 8176, 4459, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 9194 (UserProfileGameWidgetConstants)
-import FriendsIcon from "FriendsIcon" /* 4455 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 8170 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 8172 */;
-import RibbonIcon from "RibbonIcon" /* 9196 */;
-import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 9195 */;
+// Module 9192 (UserProfileGameWidgetConstants)
+import FriendsIcon from "FriendsIcon" /* 4459 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 8174 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 8176 */;
+import RibbonIcon from "RibbonIcon" /* 9194 */;
+import UserProfileGameWidgetTagMetadata from "UserProfileGameWidgetTagMetadata" /* 9193 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

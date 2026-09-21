@@ -1,17 +1,17 @@
-// Module ID: 7583
-// Function ID: 7584
+// Module ID: 7585
+// Function ID: 7586
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4396, 4675, 2063, 1074, 1101, 7584, 7489, 5737, 1241, 1271, 1472, 2]
+// Dependencies: [5, 4400, 4678, 2067, 1078, 1105, 7586, 7491, 5739, 1245, 1275, 1476, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7583 (GuildDiscoveryUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1271 */;
-import _modDef1472 from "module_1472" /* 1472 */;
+// Module 7585 (GuildDiscoveryUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import HTTPUtils from "HTTPUtils" /* 1275 */;
+import _modDef1476 from "module_1476" /* 1476 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4396 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import LurkingStore from "LurkingStore" /* 4400 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4678 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 let closure_11 = async function _startLurking(arg0, value) {
@@ -34,7 +34,7 @@ let closure_11 = async function _startLurking(arg0, value) {
       }
       closure_133_9 = tmp24;
       const history = closure_134_0(closure_134_2[5]).getHistory();
-      const guild = closure_134_6.getGuild(closure_133_0);
+      guild = closure_134_6.getGuild(closure_133_0);
       const obj8 = { sourceLocationStack: closure_133_3, state: null };
       obj8.state = { analyticsSource: closure_133_1 };
       closure_133_12 = obj8;
@@ -126,7 +126,7 @@ let closure_11 = async function _startLurking(arg0, value) {
   if (onSuccess != null) {
     tmp102();
   }
-  await "HermesInternal";
+  await "IconComponent";
   closure_5 = tmp2;
   closure_133_0 = closure_0;
   closure_133_1 = closure_1;
@@ -136,7 +136,7 @@ let closure_11 = async function _startLurking(arg0, value) {
   }
   closure_133_2 = obj5;
   closure_133_3 = closure_3;
-  return "PX_16";
+  return "Set";
 };
 function makeDiscoverableGuild(body) {
   const obj = { id: body.id, name: body.name, description: body.description, splash: body.splash, banner: body.banner, icon: body.icon, features: new Set(body.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: null, preferredLocale: null, discoverySplash: null, emojis: null, emojiCount: null, stickers: null, stickerCount: null, keywords: null };
@@ -158,7 +158,7 @@ let closure_13 = async function _getDiscoverableGuild(guild_ids) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -180,7 +180,7 @@ let closure_13 = async function _getDiscoverableGuild(guild_ids) {
             const HTTP = HTTPUtils.HTTP;
             const request = { url: constants.GUILD_DISCOVERY, query: null, oldFormErrors: true, rejectWithError: true };
             const obj4 = { guild_ids };
-            request.query = _modDef1472.stringify(obj4);
+            request.query = _modDef1476.stringify(obj4);
             c5 = 2;
             c6 = 1;
             const obj5 = { value: HTTP.get(request), done: false };
@@ -238,7 +238,7 @@ let closure_14 = async function _fetchPublicDiscoveryGuild(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -258,7 +258,7 @@ let closure_14 = async function _fetchPublicDiscoveryGuild(arg0, value) {
           const HTTP = HTTPUtils.HTTP;
           const obj4 = { url: null, oldFormErrors: true, rejectWithError: true };
           const _String = String;
-          obj4.url = React7.GUILD_DISCOVERY_SLUG(String(closure_0));
+          obj4.url = options.GUILD_DISCOVERY_SLUG(String(closure_0));
           c2 = 2;
           c4 = 1;
           const obj5 = { value: HTTP.get(obj4), done: false };
@@ -278,7 +278,7 @@ let closure_14 = async function _fetchPublicDiscoveryGuild(arg0, value) {
         return obj6;
       } else {
         body = value.body;
-        let guild;
+        guild = undefined;
         if (body != null) {
           guild = body.guild;
         }
@@ -309,7 +309,7 @@ let closure_14 = async function _fetchPublicDiscoveryGuild(arg0, value) {
     }
   }
 };
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ AnalyticEvents: closure_7, SearchTypes: closure_8, Endpoints: closure_9, Routes: c10 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/GuildDiscoveryUtils.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12433
+// Function ID: 12434
 // Name: GuildOnboardingHomeTypes
-// Dependencies: [2041, 1074, 1370, 4400, 2]
+// Dependencies: [2045, 1078, 1374, 4404, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 12539 (GuildOnboardingHomeTypes)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+// Module 12433 (GuildOnboardingHomeTypes)
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
 
 require = fn;
 function newMemberActionFromServer(channelId) {
@@ -85,7 +85,7 @@ function isSettingsEmpty(welcomeMessage) {
   }
   return tmp;
 }
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes: closure_4, Permissions: hasOwnProperty } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/GuildOnboardingHomeTypes.tsx");

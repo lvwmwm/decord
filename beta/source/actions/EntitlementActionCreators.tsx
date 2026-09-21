@@ -1,11 +1,11 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7644
+// Function ID: 7645
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1074, 573, 1271, 4997, 2]
+// Dependencies: [5, 1078, 577, 1275, 4999, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7642 (EntitlementActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 7644 (EntitlementActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let closure_5 = async function _fetchUserEntitlements(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -66,7 +66,7 @@ let closure_5 = async function _fetchUserEntitlements(arg0) {
             closure_129_4 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -143,7 +143,7 @@ let closure_6 = async function _fetchGiftableEntitlements() {
   }
   return arg1;
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/EntitlementActionCreators.tsx");
 

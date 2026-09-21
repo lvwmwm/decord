@@ -1,11 +1,11 @@
-// Module ID: 8611
-// Function ID: 8612
+// Module ID: 8616
+// Function ID: 8617
 // Name: SpotifyConstants
-// Dependencies: [1074, 5500, 1364, 2]
+// Dependencies: [1078, 5502, 1368, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8611 (SpotifyConstants)
-import Platforms from "Platforms" /* 5500 */;
+// Module 8616 (SpotifyConstants)
+import Platforms from "Platforms" /* 5502 */;
 
 const spotify = "spotify";
 let c1 = "spotify:";
@@ -58,7 +58,7 @@ const obj2 = {
   APP_STORE: null,
   IOS_APP_STORE: "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8"
 };
-const PlatformUtils = fn(1364);
+const PlatformUtils = fn(1368);
 let str = "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8";
 if (PlatformUtils.isAndroid()) {
   str = "https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_US&gl=US";
@@ -70,7 +70,7 @@ const result = size.fileFinishedImporting("modules/spotify/SpotifyConstants.tsx"
 
 export const SPOTIFY_APP_PROTOCOL = "spotify";
 export const SPOTIFY_PARTY_PREFIX = "spotify:";
-export const SPOTIFY_PLATFORM_NAME = Platforms.get(fn(1074).PlatformTypes.SPOTIFY).name;
+export const SPOTIFY_PLATFORM_NAME = Platforms.get(fn(1078).PlatformTypes.SPOTIFY).name;
 export const isSpotifyParty = function isSpotifyParty(id) {
   let startsWithResult = null != id;
   if (startsWithResult) {

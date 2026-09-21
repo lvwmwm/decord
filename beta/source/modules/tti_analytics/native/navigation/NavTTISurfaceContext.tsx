@@ -1,17 +1,17 @@
-// Module ID: 16875
-// Function ID: 16876
+// Module ID: 16878
+// Function ID: 16879
 // Name: NavTTISurfaceContext
-// Dependencies: [19, 2]
+// Dependencies: [19, 558, 2]
 // Exports: useNavTTISurface
 
-// Module 16875 (NavTTISurfaceContext)
+// Module 16878 (NavTTISurfaceContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext(null);
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavTTISurfaceContext.tsx");
+const result1 = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavTTISurfaceContext.tsx");
 
 export const NavTTISurfaceContext = context;
-export const useNavTTISurface = function useNavTTISurface() {
-  return noop.useContext(context);
-};
+export const useNavTTISurface = () => noop.useContext(context);

@@ -1,9 +1,9 @@
-// Module ID: 8002
-// Function ID: 8003
+// Module ID: 8007
+// Function ID: 8008
 // Name: SentMessageIntentsHandler
 // Dependencies: [2]
 
-// Module 8002 (SentMessageIntentsHandler)
+// Module 8007 (SentMessageIntentsHandler)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");

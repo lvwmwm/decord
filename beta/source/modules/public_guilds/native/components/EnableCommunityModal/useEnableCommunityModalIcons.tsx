@@ -1,16 +1,17 @@
-// Module ID: 18102
-// Function ID: 18103
+// Module ID: 18105
+// Function ID: 18106
 // Name: useEnableCommunityModalIcons
-// Dependencies: [32, 19, 1085, 4607, 18103, 18104, 18105, 18109, 18110, 7237, 4690, 2]
-// Exports: default
+// Dependencies: [32, 19, 1089, 4610, 18106, 18107, 18108, 18112, 18113, 7238, 558, 568, 4693, 2]
 
-// Module 18102 (useEnableCommunityModalIcons)
-import useThemeDefault from "useTheme" /* 4690 */;
+// Module 18105 (useEnableCommunityModalIcons)
+import useThemeDefault from "useTheme" /* 4693 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
+
 const require = fn;
-const ThemeTypes = fn(1085).ThemeTypes;
+const ThemeTypes = fn(1089).ThemeTypes;
 class EnableCommunityModalIcons {
   constructor(arg0) {
     merged = Object.assign({ theme: null });
@@ -23,9 +24,9 @@ const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(18103);
+      let tmpResult = tmp(18106);
     } else {
-      tmpResult = tmp(18104);
+      tmpResult = tmp(18107);
     }
     return tmpResult;
   },
@@ -40,9 +41,9 @@ Object.defineProperty(prototype, "channelSetup", {
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(18109);
+      let tmpResult = tmp(18112);
     } else {
-      tmpResult = tmp(18110);
+      tmpResult = tmp(18113);
     }
     return tmpResult;
   },
@@ -50,14 +51,37 @@ Object.defineProperty(prototype, "finishingTouches", {
 });
 Object.defineProperty(prototype, "close", {
   get: function close() {
-    return require("module_7237");
+    return require("module_7238");
   },
   set: undefined
 });
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
 
-export default function useEnableCommunityModalIcons() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = require("c").c(2);
+  const tmp2 = useThemeDefault();
+  _require = tmp2;
+  if (cResult[0] !== tmp2) {
+    const fn = function s() {
+      if (typeof EnableCommunityModalIcons === "function") {
+        const merged = Object.assign({ theme: null });
+        merged[0] = ThemeTypes.LIGHT;
+        merged.theme = tmp;
+        return merged;
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    };
+    cResult[0] = tmp2;
+    cResult[1] = fn;
+    let tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+  }
+  return _slicedToArray(noop.useState(tmp3), 1)[0];
+}) : (() => {
   closure_0 = useThemeDefault();
   return _slicedToArray(noop.useState(() => {
     if (typeof EnableCommunityModalIcons === "function") {
@@ -69,4 +93,4 @@ export default function useEnableCommunityModalIcons() {
       throw new TypeError("Trying to call a non-function");
     }
   }), 1)[0];
-};
+});

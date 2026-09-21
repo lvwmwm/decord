@@ -1,30 +1,263 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17343
+// Function ID: 17344
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1074, 21, 4756, 576, 4959, 9048, 1249, 7717, 1612, 17341, 1364, 16976, 2]
-// Exports: default
+// Dependencies: [109, 19, 17, 1078, 21, 4758, 580, 558, 568, 4961, 1253, 9046, 7722, 1616, 17344, 1368, 16979, 2]
 
-// Module 17340 (modal/ModalScreen)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9048 */;
+// Module 17343 (modal/ModalScreen)
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 let closure_3 = ["impressionName", "impressionProperties"];
+let closure_4 = ["impressionName", "impressionProperties"];
 get_ActivityIndicator = fn(17);
-({ View: metroRequire, StyleSheet: closure_7 } = get_ActivityIndicator);
-const NOOP = fn(1074).NOOP;
+({ View: closure_7, StyleSheet: closure_8 } = get_ActivityIndicator);
+const NOOP = fn(1078).NOOP;
 const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
-const obj2 = { containerWithPadding: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
-let closure_11 = createStyles.createStyles(obj2);
+({ jsx: c10, jsxs: closure_11 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { containerWithPadding: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
+let closure_12 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");
 
-export default function Modal(route) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
+  const cResult = modal(568).c(35);
+  modal = route.route.params.modal;
+  const tmp4 = closure_12();
+  if (cResult[0] !== modal.props) {
+    let props = modal.props;
+    if (props == null) {
+      props = {};
+    }
+    cResult[0] = modal.props;
+    cResult[1] = props;
+    let tmp5 = props;
+  } else {
+    tmp5 = cResult[1];
+  }
+  if (cResult[2] !== tmp5) {
+    ({ impressionName, impressionProperties } = tmp5);
+    const tmp12 = _objectWithoutProperties(tmp5, closure_3);
+    cResult[2] = tmp5;
+    cResult[3] = impressionName;
+    cResult[4] = impressionProperties;
+    cResult[5] = tmp12;
+    let tmp8 = impressionProperties;
+    let tmp7 = impressionName;
+  } else {
+    tmp7 = cResult[3];
+    tmp8 = cResult[4];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function h() {
+      closure_1(4961).pop();
+    };
+    cResult[6] = fn;
+  }
+  if (cResult[7] === tmp7) {
+    if (cResult[8] === tmp8) {
+      let tmp14 = cResult[9];
+    }
+    useTrackImpressionDefault(tmp14);
+    let callbacks = modal.callbacks;
+    let onExited;
+    if (callbacks != null) {
+      onExited = callbacks.onExited;
+    }
+    importDefault = noop.useRef(onExited);
+    const callbacks2 = modal.callbacks;
+    let onExited1;
+    if (callbacks2 != null) {
+      onExited1 = callbacks2.onExited;
+    }
+    if (cResult[10] !== onExited1) {
+      const callbacks3 = modal.callbacks;
+      let onExited2;
+      if (callbacks3 != null) {
+        onExited2 = callbacks3.onExited;
+      }
+      class M {
+        constructor() {
+          callbacks = modal.callbacks;
+          onExited = undefined;
+          tmp = closure_1;
+          if (callbacks != null) {
+            onExited = callbacks.onExited;
+          }
+          tmp.current = onExited;
+          return;
+        }
+      }
+      cResult[10] = onExited2;
+      cResult[11] = M;
+      let tmp20 = M;
+    } else {
+      tmp20 = cResult[11];
+    }
+    const effect = obj4.useEffect(tmp20);
+    const _Symbol = Symbol;
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      class R {
+        constructor() {
+          return () => {
+            const current = ref.current;
+            let currentResult;
+            if (current != null) {
+              currentResult = current();
+            }
+            return currentResult;
+          };
+        }
+      }
+      const items = [];
+      class M {
+        constructor() {
+          callbacks = modal.callbacks;
+          onExited = undefined;
+          tmp = closure_1;
+          if (callbacks != null) {
+            onExited = callbacks.onExited;
+          }
+          tmp.current = onExited;
+          return;
+        }
+      }
+      cResult[13] = items;
+      let tmp24 = items;
+      const tmp23 = R;
+    } else {
+      class R {
+        constructor() {
+          return () => {
+            const current = ref.current;
+            let currentResult;
+            if (current != null) {
+              currentResult = current();
+            }
+            return currentResult;
+          };
+        }
+      }
+      tmp24 = cResult[13];
+    }
+    const effect1 = obj4.useEffect(tmp23, tmp24);
+    const _Symbol2 = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      class C {
+        constructor() {
+          obj = modal(closure_1_2[12]);
+          return obj.trackAppUIViewed("ModalScreen");
+        }
+      }
+      const items1 = [];
+      class M {
+        constructor() {
+          callbacks = modal.callbacks;
+          onExited = undefined;
+          tmp = closure_1;
+          if (callbacks != null) {
+            onExited = callbacks.onExited;
+          }
+          tmp.current = onExited;
+          return;
+        }
+      }
+      cResult[15] = C;
+      let tmp27 = C;
+      const tmp26 = items1;
+    } else {
+      class C {
+        constructor() {
+          obj = modal(closure_1_2[12]);
+          return obj.trackAppUIViewed("ModalScreen");
+        }
+      }
+      tmp27 = cResult[15];
+    }
+    const layoutEffect = obj4.useLayoutEffect(tmp27, tmp26);
+    ({ left, right } = useSafeAreaInsetsDefault());
+    if (cResult[16] !== modal.key) {
+      class C {
+        constructor() {
+          obj = modal(closure_1_2[12]);
+          return obj.trackAppUIViewed("ModalScreen");
+        }
+      }
+      const result = obj5.shouldExcludeSafeAreaForModalKey(modal.key);
+      class M {
+        constructor() {
+          callbacks = modal.callbacks;
+          onExited = undefined;
+          tmp = closure_1;
+          if (callbacks != null) {
+            onExited = callbacks.onExited;
+          }
+          tmp.current = onExited;
+          return;
+        }
+      }
+      cResult[17] = result;
+    } else {
+      class C {
+        constructor() {
+          obj = modal(closure_1_2[12]);
+          return obj.trackAppUIViewed("ModalScreen");
+        }
+      }
+    }
+    if (cResult[18] === tmp30) {
+      class C {
+        constructor() {
+          obj = modal(closure_1_2[12]);
+          return obj.trackAppUIViewed("ModalScreen");
+        }
+      }
+    }
+    let tmp33;
+    if (!tmp30) {
+      class C {
+        constructor() {
+          obj = modal(closure_1_2[12]);
+          return obj.trackAppUIViewed("ModalScreen");
+        }
+      }
+      tmp34[0] = tmp4.containerWithPadding;
+      const obj2 = { paddingLeft: null, paddingRight: null };
+      class M {
+        constructor() {
+          callbacks = modal.callbacks;
+          onExited = undefined;
+          tmp = closure_1;
+          if (callbacks != null) {
+            onExited = callbacks.onExited;
+          }
+          tmp.current = onExited;
+          return;
+        }
+      }
+      obj2.paddingRight = right;
+      tmp34[1] = obj2;
+      tmp33 = tmp34;
+    }
+    cResult[18] = tmp30;
+    cResult[19] = left;
+    cResult[20] = right;
+    cResult[21] = tmp4;
+    cResult[22] = tmp33;
+    const tmp29 = useSafeAreaInsetsDefault();
+  }
+  const obj3 = { type: modal(1253).ImpressionTypes.MODAL, name: tmp7, properties: tmp8 };
+  cResult[7] = tmp7;
+  cResult[8] = tmp8;
+  cResult[9] = obj3;
+  tmp14 = obj3;
+}) : ((route) => {
   const modal = route.route.params.modal;
   importDefault = undefined;
   let props = modal.props;
@@ -32,13 +265,13 @@ export default function Modal(route) {
     props = {};
   }
   ({ impressionName, impressionProperties } = props);
-  const tmp = closure_11();
+  const tmp = closure_12();
   const callback = noop.useCallback(() => {
-    closure_1(4959).pop();
+    closure_1(4961).pop();
   }, []);
   const obj = { type: null, name: null, properties: null };
-  const tmp2 = _objectWithoutProperties(props, closure_3);
-  obj.type = modal(1249).ImpressionTypes.MODAL;
+  const tmp2 = _objectWithoutProperties(props, closure_4);
+  obj.type = modal(1253).ImpressionTypes.MODAL;
   obj.name = impressionName;
   obj.properties = impressionProperties;
   useTrackImpressionDefault(obj);
@@ -64,7 +297,7 @@ export default function Modal(route) {
     }
     return currentResult;
   }, []);
-  const layoutEffect = obj2.useLayoutEffect(() => modal(7717).trackAppUIViewed("ModalScreen"), []);
+  const layoutEffect = obj2.useLayoutEffect(() => modal(7722).trackAppUIViewed("ModalScreen"), []);
   ({ left, right } = useSafeAreaInsetsDefault());
   const tmp13 = useSafeAreaInsetsDefault();
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -78,7 +311,7 @@ export default function Modal(route) {
   const obj4 = { style: items, onAccessibilityEscape: null, children: null };
   items[1] = tmp16;
   if (modal.closable) {
-    let pop = tmp4(4959).pop;
+    let pop = tmp4(4961).pop;
   } else {
     pop = NOOP;
   }
@@ -89,14 +322,14 @@ export default function Modal(route) {
   obj5.transitionState = null;
   obj5.onClose = callback;
   const items2 = [<modal.modal />, ];
-  const tmp14 = closure_10;
-  const tmp15 = closure_6;
-  tmp7Result = modal(17341);
-  let isIOSResult = modal(1364).isIOS();
+  const tmp14 = closure_11;
+  const tmp15 = closure_7;
+  tmp7Result = modal(17344);
+  let isIOSResult = modal(1368).isIOS();
   if (isIOSResult) {
-    isIOSResult = closure_9(tmp7(16976).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = closure_10(tmp7(16979).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj4.children = items2;
   return tmp14(tmp15, obj4);
-};
+});

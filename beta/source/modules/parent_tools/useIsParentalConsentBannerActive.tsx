@@ -1,17 +1,44 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15132
+// Function ID: 15133
 // Name: useIsParentalConsentBannerActive
-// Dependencies: [15144, 15146, 2]
-// Exports: useIsParentalConsentBannerActive
+// Dependencies: [558, 568, 15133, 15135, 2]
 
-// Module 15143 (useIsParentalConsentBannerActive)
-import useParentalConsentWarning from "useParentalConsentWarning" /* 15144 */;
-import ParentalConsentWarningTypes from "ParentalConsentWarningTypes" /* 15146 */;
+// Module 15132 (useIsParentalConsentBannerActive)
+import c from "c" /* 568 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 15133 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+const ParentalConsentWarningTypes = tmp(15135);
 const result = size.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
 
-export const useIsParentalConsentBannerActive = function useIsParentalConsentBannerActive() {
+export const useIsParentalConsentBannerActive = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
+  let surfaces1;
+  if (parentalConsentWarning != null) {
+    surfaces1 = parentalConsentWarning.surfaces;
+  }
+  if (cResult[0] !== surfaces1) {
+    let hasItem;
+    if (parentalConsentWarning != null) {
+      const surfaces = parentalConsentWarning.surfaces;
+      if (surfaces != null) {
+        hasItem = surfaces.includes(ParentalConsentWarningTypes.ParentalConsentWarningSurface.BANNER);
+      }
+    }
+    let surfaces2;
+    if (parentalConsentWarning != null) {
+      surfaces2 = parentalConsentWarning.surfaces;
+    }
+    cResult[0] = surfaces2;
+    cResult[1] = hasItem;
+    let tmp6 = hasItem;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return true === tmp6;
+}) : (() => {
   const parentalConsentWarning = useParentalConsentWarning.useParentalConsentWarning();
   let hasItem;
   if (parentalConsentWarning != null) {
@@ -21,4 +48,4 @@ export const useIsParentalConsentBannerActive = function useIsParentalConsentBan
     }
   }
   return true === hasItem;
-};
+});

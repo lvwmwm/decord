@@ -1,34 +1,111 @@
 // Module ID: 1833
 // Function ID: 1834
-// Dependencies: [32, 19, 17, 1627]
-// Exports: useWindowDimensions
+// Dependencies: [5, 1631]
 
 // Module 1833
-import _slicedToArray from "module_32" /* 32 */;
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const require = fn;
-const noop = fn(19);
-({ useEffect: c3, useState: closure_4 } = noop);
-const Dimensions = fn(17).Dimensions;
-const size = Dimensions.get("window");
-let global = { width: size.width, height: size.height };
-let WindowDimensionsEvents = fn(1627).WindowDimensionsEvents;
-WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+let c2 = true;
+let obj = { height: 0, duration: 0, timestamp: null, target: -1, type: "default", appearance: "light" };
+obj.timestamp = new Date().getTime();
+let global = obj;
+let KeyboardEvents = fn(1631).KeyboardEvents;
+KeyboardEvents.addListener("keyboardDidHide", (arg0) => {
+  c2 = true;
   global = arg0;
 });
+const KeyboardEvents2 = fn(1631).KeyboardEvents;
+KeyboardEvents2.addListener("keyboardWillShow", (arg0) => {
+  c2 = false;
+  global = arg0;
+});
+let closure_0 = asyncGeneratorStep(async (arg0, value) => {
+  if (c3 === 2) {
+    c3 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      c3 = 2;
+      if (arg0 === 1) {
+        c3 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c3 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        let keepFocus;
+        if (closure_0 != null) {
+          keepFocus = tmp18.keepFocus;
+        }
+        c1 = keepFocus;
+        if (keepFocus == null) {
+          c1 = false;
+        }
+        closure_0 = c1;
+        let animated;
+        if (closure_0 != null) {
+          animated = tmp18.animated;
+        }
+        c2 = animated;
+        if (animated == null) {
+          c2 = true;
+        }
+        dependencyMap = c2;
+        const promise = new Promise((fn) => {
+          closure_0 = fn;
+          if (c2) {
+            fn();
+          } else {
+            const KeyboardEvents = closure_0(1631).KeyboardEvents;
+            closure_1 = KeyboardEvents.addListener("keyboardDidHide", () => {
+              closure_0(undefined);
+              closure_1.remove();
+            });
+            const KeyboardControllerNative = closure_0(1631).KeyboardControllerNative;
+            KeyboardControllerNative.dismiss(closure_0, closure_1);
+          }
+        });
+        c3 = 3;
+        const obj = { value: promise, done: true };
+        return obj;
+      }
+    } catch (tmp13) {
+      c3 = tmp;
+      throw tmp13;
+    }
+  }
+});
+const date = new Date();
 
-export const useWindowDimensions = () => {
-  const tmp = _slicedToArray(closure_4(global), 2);
-  closure_0 = tmp[1];
-  closure_3(() => {
-    const WindowDimensionsEvents = closure_0(dependencyMap[3]).WindowDimensionsEvents;
-    closure_0 = WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
-      closure_0(arg0);
-    });
-    closure_0(global);
-    return () => {
-      closure_0.remove();
-    };
-  }, []);
-  return tmp[0];
+export const KeyboardController = {
+  setDefaultMode: fn(1631).KeyboardControllerNative.setDefaultMode,
+  setInputMode: fn(1631).KeyboardControllerNative.setInputMode,
+  setFocusTo: fn(1631).KeyboardControllerNative.setFocusTo,
+  preload: fn(1631).KeyboardControllerNative.preload,
+  dismiss(arg0) {
+    const self = this;
+    const apply = closure_0.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+    } else {
+      applyArgumentsResult = apply(self, arguments);
+    }
+    return applyArgumentsResult;
+  },
+  isVisible() {
+    return !c2;
+  },
+  state() {
+    return global;
+  }
 };

@@ -1,23 +1,83 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 17349
+// Function ID: 17350
 // Name: useMessageRequestTimestampText
-// Dependencies: [4771, 11, 12847, 504, 4348, 8023, 2]
-// Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
+// Dependencies: [4773, 11, 558, 568, 12758, 504, 4352, 8028, 2]
 
-// Module 17346 (useMessageRequestTimestampText)
+// Module 17349 (useMessageRequestTimestampText)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
+import _modDef4352 from "module_4352" /* 4352 */;
+import ReadStateStore from "ReadStateStore" /* 4773 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const size = fn(2);
-const result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
-
-export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
-  _require = channel;
-  const messageRequestPreview = require("useMessageRequestPreview").useMessageRequestPreview(channel);
+fn(558);
+const ReactCompilerGating = fn(558);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  const cResult = require("c").c(7);
+  const obj = require("c");
+  const tmp = _require;
+  const messageRequestPreview = require("useMessageRequestPreview").useMessageRequestPreview(id);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function l() {
+      return ReadStateStore.lastMessageId(id.id);
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj2 = require("useMessageRequestPreview");
+  const stateFromStores = tmp(504).useStateFromStores(first, tmp7);
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === messageRequestPreview) {
+      let tmp9 = cResult[5];
+      let tmp10 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    if (tmp10 !== Symbol.for("react.early_return_sentinel")) {
+      tmp9 = tmp10;
+    }
+    return tmp9;
+  }
+  const obj3 = { lastMessageId: stateFromStores };
+  const tmpResult = tmp(504);
+  const merged = Object.assign(messageRequestPreview);
+  ({ lastMessageId, message } = obj3);
+  if (obj3.loaded) {
+    if (null != message) {
+      let extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(message.id);
+    }
+    let str = "";
+    let calendarResult;
+    if (null != extractTimestampResult) {
+      calendarResult = _modDef4352(extractTimestampResult).calendar();
+      str = forResult;
+      const obj7 = _modDef4352(extractTimestampResult);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = messageRequestPreview;
+    cResult[5] = calendarResult;
+    cResult[6] = str;
+    tmp10 = str;
+    tmp9 = calendarResult;
+  }
+  extractTimestampResult = null;
+  if (null != lastMessageId) {
+    extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(lastMessageId);
+  }
+}) : ((arg0) => {
+  _require = arg0;
+  const messageRequestPreview = require("useMessageRequestPreview").useMessageRequestPreview(arg0);
   const obj2 = { lastMessageId: null };
   const obj = require("useMessageRequestPreview");
   const items = [ReadStateStore];
@@ -30,8 +90,8 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = _modDef4348(extractTimestampResult).calendar();
-      const obj6 = _modDef4348(extractTimestampResult);
+      str = _modDef4352(extractTimestampResult).calendar();
+      const obj6 = _modDef4352(extractTimestampResult);
     }
     return str;
   }
@@ -39,10 +99,75 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
   if (null != lastMessageId) {
     extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(lastMessageId);
   }
-};
-export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
-  _require = channel;
-  const messageRequestPreview = require("useMessageRequestPreview").useMessageRequestPreview(channel);
+});
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
+
+export const useMessageRequestTimestampText = tmp2;
+export const useMessageRequestRelativeTimestampText = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+  _require = id;
+  const cResult = require("c").c(7);
+  const obj = require("c");
+  const messageRequestPreview = require("useMessageRequestPreview").useMessageRequestPreview(id);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ReadStateStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id.id) {
+    const fn = function l() {
+      return ReadStateStore.lastMessageId(id.id);
+    };
+    cResult[1] = id.id;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj2 = require("useMessageRequestPreview");
+  const stateFromStores = require("initialize").useStateFromStores(first, tmp7);
+  if (cResult[3] === stateFromStores) {
+    if (cResult[4] === messageRequestPreview) {
+      let tmp9 = cResult[5];
+      let tmp10 = cResult[6];
+    }
+    const _Symbol = Symbol;
+    if (tmp10 !== Symbol.for("react.early_return_sentinel")) {
+      tmp9 = tmp10;
+    }
+    return tmp9;
+  }
+  const obj3 = { lastMessageId: stateFromStores };
+  const tmpResult = require("initialize");
+  const merged = Object.assign(messageRequestPreview);
+  ({ lastMessageId, message } = obj3);
+  if (obj3.loaded) {
+    if (null != message) {
+      let extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(message.id);
+    }
+    let str = "";
+    let timestampString;
+    if (null != extractTimestampResult) {
+      timestampString = tmp(8028).getTimestampString(extractTimestampResult);
+      str = forResult;
+      const tmpResult2 = tmp(8028);
+    }
+    cResult[3] = stateFromStores;
+    cResult[4] = messageRequestPreview;
+    cResult[5] = timestampString;
+    cResult[6] = str;
+    tmp10 = str;
+    tmp9 = timestampString;
+  }
+  extractTimestampResult = null;
+  if (null != lastMessageId) {
+    extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(lastMessageId);
+  }
+}) : ((arg0) => {
+  _require = arg0;
+  const messageRequestPreview = require("useMessageRequestPreview").useMessageRequestPreview(arg0);
   const obj2 = { lastMessageId: null };
   const obj = require("useMessageRequestPreview");
   const tmp = _require;
@@ -56,8 +181,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = tmp(8023).getTimestampString(extractTimestampResult);
-      const tmpResult = tmp(8023);
+      str = tmp(8028).getTimestampString(extractTimestampResult);
+      const tmpResult = tmp(8028);
     }
     return str;
   }
@@ -65,4 +190,4 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
   if (null != lastMessageId) {
     extractTimestampResult = SnowflakeUtilsDefault.extractTimestamp(lastMessageId);
   }
-};
+});

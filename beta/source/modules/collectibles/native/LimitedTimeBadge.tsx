@@ -1,82 +1,198 @@
-// Module ID: 9115
-// Function ID: 9116
+// Module ID: 9113
+// Function ID: 9114
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2109, 1182, 21, 4756, 576, 1115, 504, 4607, 7681, 4752, 2]
-// Exports: default
+// Dependencies: [19, 17, 2113, 1186, 21, 4758, 580, 1119, 558, 568, 4610, 504, 7686, 4754, 2]
 
-// Module 9115 (LimitedTimeBadge)
+// Module 9113 (LimitedTimeBadge)
 import initialize from "initialize" /* 504 */;
-import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4607 */;
-import useCountdownDefault from "useCountdown" /* 7681 */;
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import util from "util" /* 1119 */;
+import shared from "shared" /* 4610 */;
+import Text_Text from "Text/Text" /* 4754 */;
+import useCountdownDefault from "useCountdown" /* 7686 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
-import ThemeStore from "ThemeStore" /* 1182 */;
+import LocaleStore from "LocaleStore" /* 2113 */;
+import ThemeStore from "ThemeStore" /* 1186 */;
 
 require = fn;
+function getBadgeString(hasItem, days, hours) {
+  if (hasItem) {
+    if (days > 1) {
+      const intl6 = util.intl;
+      const obj2 = { days };
+      let formatToPlainStringResult = intl6.formatToPlainString(util.t.DkxLY0, obj2);
+    } else {
+      if (days <= 1) {
+        if (hours > 0) {
+          const intl5 = util.intl;
+          const obj = { hours };
+          formatToPlainStringResult = intl5.formatToPlainString(util.t.WJieZ2, obj);
+        }
+      }
+      const intl4 = util.intl;
+      formatToPlainStringResult = intl4.formatToPlainString(util.t.WJieZ2, { hours: 0 });
+    }
+    return formatToPlainStringResult;
+  } else {
+    const intl = util.intl;
+    let sum = days + intl.string(util.t.QJyuxY);
+    const intl2 = util.intl;
+    let sum1 = hours + intl2.string(util.t["1LyF1h"]);
+    if (days <= 1) {
+      if (days > 1) {
+        const intl3 = tmp(1119).intl;
+        sum1 = `0${tmp5(tmp(1119).t["1LyF1h"])}`;
+      }
+      sum = sum1;
+    }
+    return sum;
+  }
+}
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { root: { borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 }, backgroundDarkMode: null, backgroundLightMode: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 2 };
 obj2.backgroundDarkMode = { backgroundColor: nativeDefault.colors.WHITE };
 let obj4 = { backgroundColor: nativeDefault.colors.WHITE };
 obj2.backgroundLightMode = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_7 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/LimitedTimeBadge.tsx");
 
-export default function LimitedTimeBadge(unpublishedAt) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(22);
+  ({ unpublishedAt, style } = arg0);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ThemeStore];
+    const fn = function h() {
+      return shared.isThemeDark(theme.theme);
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = items;
+    tmp6 = fn;
+  } else {
+    [tmp5, tmp6] = cResult;
+  }
+  const stateFromStores = initialize.useStateFromStores(tmp5, tmp6);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [LocaleStore];
+    const fn2 = function k() {
+      return locale.locale;
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp10 = fn2;
+    let tmp9 = items1;
+  } else {
+    tmp9 = cResult[2];
+    tmp10 = cResult[3];
+  }
+  const tmpResult = initialize;
+  const stateFromStores1 = initialize.useStateFromStores(tmp9, tmp10);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items2 = ["en-US", "en-GB"];
+    cResult[4] = items2;
+    let obj4 = items2;
+  } else {
+    obj4 = cResult[4];
+  }
+  const hasItem = obj4.includes(stateFromStores1);
+  const tmpResult2 = initialize;
+  ({ days, hours } = useCountdownDefault(unpublishedAt, 1000, undefined, true));
+  if (cResult[5] === days) {
+    if (cResult[6] === hours) {
+      if (cResult[7] === hasItem) {
+        let tmp15 = cResult[8];
+      }
+      const tmp17 = stateFromStores ? tmp4.backgroundDarkMode : tmp4.backgroundLightMode;
+      if (cResult[9] === style) {
+        if (cResult[10] === tmp4.root) {
+          if (cResult[11] === tmp17) {
+            let tmp18 = cResult[12];
+          }
+          let str = "text-overlay-light";
+          if (stateFromStores) {
+            str = "text-overlay-dark";
+          }
+          if (cResult[13] !== days) {
+            const intl = tmp(1119).intl;
+            const obj2 = { daysLeft: days };
+            const formatToPlainStringResult = intl.formatToPlainString(tmp(1119).t.TlZULM, obj2);
+            cResult[13] = days;
+            cResult[14] = formatToPlainStringResult;
+            let tmp19 = formatToPlainStringResult;
+          } else {
+            tmp19 = cResult[14];
+          }
+          if (cResult[15] === tmp19) {
+            if (cResult[16] === str) {
+              if (cResult[17] === tmp15) {
+                let tmp21 = cResult[18];
+              }
+              if (cResult[19] === tmp21) {
+                if (cResult[20] === tmp18) {
+                  let tmp24 = cResult[21];
+                }
+                return tmp24;
+              }
+              const obj3 = { style: tmp18, children: tmp21 };
+              const tmp27 = <View style={tmp18}>{tmp21}</View>;
+              cResult[19] = tmp21;
+              cResult[20] = tmp18;
+              cResult[21] = tmp27;
+              tmp24 = tmp27;
+            }
+          }
+          const obj5 = { color: str, variant: "text-xs/bold", accessibilityLabel: tmp19, allowFontScaling: false, children: tmp15 };
+          const tmp23 = jsx(tmp(4754).Text, { color: str, variant: "text-xs/bold", accessibilityLabel: tmp19, allowFontScaling: false, children: tmp15 });
+          cResult[15] = tmp19;
+          cResult[16] = str;
+          cResult[17] = tmp15;
+          cResult[18] = tmp23;
+          tmp21 = tmp23;
+        }
+      }
+      const items3 = [tmp4.root, tmp17, style];
+      cResult[9] = style;
+      cResult[10] = tmp4.root;
+      cResult[11] = tmp17;
+      cResult[12] = items3;
+      tmp18 = items3;
+    }
+  }
+  const tmp16 = getBadgeString(hasItem, days, hours);
+  cResult[5] = days;
+  cResult[6] = hours;
+  cResult[7] = hasItem;
+  cResult[8] = tmp16;
+  tmp15 = tmp16;
+}) : ((unpublishedAt) => {
   const tmp = closure_7();
   const items = [ThemeStore];
   const stateFromStores = initialize.useStateFromStores(items, () => shared.isThemeDark(theme.theme));
   const items1 = [LocaleStore];
   const items2 = ["en-US", "en-GB"];
   const hasItem = items2.includes(initialize.useStateFromStores(items1, () => locale.locale));
-  ({ days, hours } = useCountdownDefault(unpublishedAt.unpublishedAt, 1000, undefined, true));
-  if (hasItem) {
-    if (days > 1) {
-      const intl6 = tmp2(1115).intl;
-      const obj3 = { days };
-      let formatToPlainStringResult = intl6.formatToPlainString(tmp2(1115).t.DkxLY0, obj3);
-    } else {
-      if (days <= 1) {
-        if (hours > 0) {
-          const intl5 = tmp2(1115).intl;
-          const obj4 = { hours };
-          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1115).t.WJieZ2, obj4);
-        }
-      }
-      const intl4 = tmp2(1115).intl;
-      formatToPlainStringResult = intl4.formatToPlainString(tmp2(1115).t.WJieZ2, { hours: 0 });
-    }
-  } else {
-    const intl = tmp2(1115).intl;
-    let sum = days + intl.string(tmp2(1115).t.QJyuxY);
-    const intl2 = tmp2(1115).intl;
-    let sum1 = hours + intl2.string(tmp2(1115).t["1LyF1h"]);
-    if (days <= 1) {
-      if (days > 1) {
-        const intl3 = tmp2(1115).intl;
-        sum1 = `0${tmp9(tmp2(1115).t["1LyF1h"])}`;
-      }
-      sum = sum1;
-    }
-    const items3 = [tmp.root, , ];
-    const obj5 = { style: null, children: null };
-    items3[1] = stateFromStores ? tmp.backgroundDarkMode : tmp.backgroundLightMode;
-    items3[2] = unpublishedAt.style;
-    obj5.style = items3;
-    let str2 = "text-overlay-light";
-    if (stateFromStores) {
-      str2 = "text-overlay-dark";
-    }
-    const obj6 = { color: str2, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null };
-    const intl7 = tmp2(1115).intl;
-    const obj7 = { daysLeft: days };
-    obj6.accessibilityLabel = intl7.formatToPlainString(tmp2(1115).t.TlZULM, obj7);
-    obj6.children = sum;
-    obj5.children = jsx(tmp2(4752).Text, { color: str2, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
-    return <View style={null}>{null}</View>;
+  const tmp6 = useCountdownDefault(unpublishedAt.unpublishedAt, 1000, undefined, true);
+  const days = tmp6.days;
+  const items3 = [tmp.root, , ];
+  const obj3 = { style: items3, children: null };
+  items3[1] = stateFromStores ? tmp.backgroundDarkMode : tmp.backgroundLightMode;
+  items3[2] = unpublishedAt.style;
+  let str = "text-overlay-light";
+  if (stateFromStores) {
+    str = "text-overlay-dark";
   }
-};
+  const obj4 = { color: str, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null };
+  const intl = tmp2(1119).intl;
+  obj4.accessibilityLabel = intl.formatToPlainString(util.t.TlZULM, { daysLeft: days });
+  obj4.children = getBadgeString(hasItem, days, tmp6.hours);
+  obj3.children = jsx(Text_Text.Text, { color: str, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
+  return <View style={items3}>{null}</View>;
+});

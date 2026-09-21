@@ -1,21 +1,44 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14434
+// Function ID: 14435
 // Name: NitroGem9Lottie
-// Dependencies: [19, 21, 10206, 14432, 2]
+// Dependencies: [19, 21, 558, 568, 14435, 10204, 2]
 
-// Module 14431 (NitroGem9Lottie)
-import LottieIcon from "LottieIcon" /* 10206 */;
-import _mod14432 from "module_14432" /* 14432 */;
+// Module 14434 (NitroGem9Lottie)
+import c from "c" /* 568 */;
+import LottieIcon from "LottieIcon" /* 10204 */;
+import _mod14435 from "module_14435" /* 14435 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 const layers = ["I"];
 const items = [{ name: "all", start: 0, duration: 71 }];
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/LottieIcon/native/generated/NitroGem9Lottie.tsx");
 
-export const NitroGem9Lottie = noop.forwardRef((arg0, ref) => {
+export const NitroGem9Lottie = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+  const cResult = c.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmpResult = tmp(14435);
+    cResult[0] = tmpResult;
+    let first = tmpResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg0) {
+    if (cResult[2] === ref) {
+      let tmp6 = cResult[3];
+    }
+    return tmp6;
+  }
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14432, animation: "all", ref, layers, markers: items });
-});
+  const tmp8 = jsx(LottieIcon.LottieIcon, { dotLottie: first, animation: "all", ref, layers, markers: items });
+  cResult[1] = arg0;
+  cResult[2] = ref;
+  cResult[3] = tmp8;
+  tmp6 = tmp8;
+}) : ((arg0, ref) => {
+  const merged = Object.assign(arg0);
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14435, animation: "all", ref, layers, markers: items });
+}));

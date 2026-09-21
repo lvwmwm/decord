@@ -1,11 +1,11 @@
-// Module ID: 575
-// Function ID: 576
+// Module ID: 579
+// Function ID: 580
 // Name: shims
-// Dependencies: [576, 2]
+// Dependencies: [580, 2]
 // Exports: getRadii, getThemes, unsafe_getRawColor, unsafe_getResolvedRawColor
 
-// Module 575 (shims)
-import nativeDefault from "native" /* 576 */;
+// Module 579 (shims)
+import nativeDefault from "native" /* 580 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/shims.native.tsx");
@@ -13,9 +13,9 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/tokens/
 export const unsafe_getRawColor = function unsafe_getRawColor(RED_400) {
   return nativeDefault.unsafe_rawColors[RED_400];
 };
-export const unsafe_getResolvedRawColor = function unsafe_getResolvedRawColor(BRAND_500, saturation) {
+export const unsafe_getResolvedRawColor = function unsafe_getResolvedRawColor(PRIMARY_530, saturation) {
   const internal = nativeDefault.internal;
-  return internal.adjustColorSaturation(nativeDefault.unsafe_rawColors[BRAND_500], saturation.saturation, "generic");
+  return internal.adjustColorSaturation(nativeDefault.unsafe_rawColors[PRIMARY_530], saturation.saturation, "generic");
 };
 export const getThemes = function getThemes() {
   return nativeDefault.themes;

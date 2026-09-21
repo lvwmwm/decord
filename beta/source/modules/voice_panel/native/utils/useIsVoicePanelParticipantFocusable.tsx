@@ -1,19 +1,18 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17580
+// Function ID: 17581
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [2040, 4772, 4778, 1992, 4777, 9710, 1370, 504, 2]
-// Exports: default
+// Dependencies: [2044, 4774, 4780, 1996, 4779, 9705, 1374, 558, 568, 504, 2]
 
-// Module 17544 (useIsVoicePanelParticipantFocusable)
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+// Module 17580 (useIsVoicePanelParticipantFocusable)
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore) {
+function isVoicePanelParticipantFocusable(guildId, channelId, id2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore) {
   let obj = ChannelRTCStore;
   if (ChannelRTCStore === undefined) {
     obj = ChannelRTCStore;
@@ -33,7 +32,7 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
   if (null == id2) {
     return false;
   } else {
-    const participant = obj.getParticipant(guildId, id2);
+    const participant = obj.getParticipant(channelId, id2);
     if (null == participant) {
       return false;
     } else if (timestampProducer(participant)) {
@@ -45,28 +44,59 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
       return null != applicationId && participant.applicationId === currentEmbeddedActivity.applicationId;
     } else {
       if (React5(participant)) {
-        let result = null != obj3.getActiveStreamForUser(participant.user.id, channelId);
-      } else if (React6(participant)) {
-        result = tmp4(9710).canRenderParticipantVideo(participant, tmp);
-        const tmp4Result = tmp4(9710);
+        let result = null != obj3.getActiveStreamForUser(participant.user.id, guildId);
+      } else if (closure_1_8(participant)) {
+        result = tmp4(9705).canRenderParticipantVideo(participant, tmp);
+        const tmp4Result = tmp4(9705);
       } else {
-        tmp4(1370).assertNever(participant);
-        const tmp4Result2 = tmp4(1370);
+        tmp4(1374).assertNever(participant);
+        const tmp4Result2 = tmp4(1374);
       }
       return result;
     }
   }
 }
-const CallConstants = fn(4777);
+const CallConstants = fn(4779);
 ({ isActivityParticipant: metroRequire, isStreamParticipant: closure_7, isUserParticipant: closure_8 } = CallConstants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");
 
-export default function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+  _require = arg0;
+  dependencyMap = arg1;
+  closure_2 = arg2;
+  const cResult = require("c").c(5);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelRTCStore, MediaEngineStore, closure_2, ApplicationStreamingStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === arg1) {
+    if (cResult[2] === arg0) {
+      if (cResult[3] === arg2) {
+        let tmp9 = cResult[4];
+      }
+      return require("initialize").useStateFromStores(first, tmp9);
+    }
+  }
+  class P {
+    constructor() {
+      return isVoicePanelParticipantFocusable(closure_0, closure_1, closure_2, closure_3, closure_5, closure_2, closure_4);
+    }
+  }
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = arg2;
+  cResult[4] = P;
+  tmp9 = P;
+}) : ((arg0, arg1, arg2) => {
   _require = arg0;
   dependencyMap = arg1;
   closure_2 = arg2;
   const items = [ChannelRTCStore, MediaEngineStore, closure_2, ApplicationStreamingStore];
   return require("initialize").useStateFromStores(items, () => isVoicePanelParticipantFocusable(closure_0, closure_1, closure_2, ChannelRTCStore, MediaEngineStore, EmbeddedActivitiesStore, ApplicationStreamingStore));
-};
+});
 export { isVoicePanelParticipantFocusable };

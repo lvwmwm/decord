@@ -1,11 +1,11 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14017
+// Function ID: 14018
 // Name: GeoRestrictedGuildStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 14014 (GeoRestrictedGuildStore)
+// Module 14017 (GeoRestrictedGuildStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 let found = [];
 const Store = initializeDefault.Store;

@@ -1,52 +1,146 @@
-// Module ID: 17614
-// Function ID: 17615
+// Module ID: 17570
+// Function ID: 17571
 // Name: ActivityShelfItem
-// Dependencies: [19, 1074, 1181, 21, 4756, 576, 4605, 12394, 12310, 5806, 17612, 1879, 9576, 7765, 9740, 9133, 5339, 4466, 17611, 12339, 1177, 17615, 17613, 4908, 13031, 4752, 12399, 1115, 2]
-// Exports: default
+// Dependencies: [19, 1078, 1185, 21, 4758, 580, 4608, 558, 568, 12281, 12187, 5804, 17568, 1883, 9572, 7770, 9735, 9131, 17567, 12226, 1181, 17571, 4471, 5341, 17569, 4910, 12286, 1119, 12942, 4754, 2]
 
-// Module 17614 (ActivityShelfItem)
-import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1177 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1879 */;
-import native2 from "native" /* 4466 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
-import Pressables from "Pressables" /* 5339 */;
-import NativeViewDefault from "NativeView" /* 5806 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
-import TestModeUtils from "TestModeUtils" /* 9133 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9576 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9740 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12310 */;
-import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12394 */;
-import _modDef13031 from "module_13031" /* 13031 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17611 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17612 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17613 */;
+// Module 17570 (ActivityShelfItem)
+import c from "c" /* 568 */;
+import nativeDefault from "native" /* 580 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1883 */;
+import native2 from "native" /* 4471 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
+import Pressables from "Pressables" /* 5341 */;
+import NativeViewDefault from "NativeView" /* 5804 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7770 */;
+import TestModeUtils from "TestModeUtils" /* 9131 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9572 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9735 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12187 */;
+import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12281 */;
+import _modDef12942 from "module_12942" /* 12942 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17567 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17568 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17569 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityShelfItemDefault = useActivityShelfItem;
 
+const util = getItemSubtitleForMaxPlayersShort(1119);
+const native = getItemSubtitleForMaxPlayersShort(1181);
+const Text_Text = getItemSubtitleForMaxPlayersShort(4754);
+const getItemSubtitleForMaxPlayers = getItemSubtitleForMaxPlayersShort(12286);
 require = fn;
-function ActivityActionOverlay(arg0) {
+const ThemeTypes = fn(1078).ThemeTypes;
+const ANDROID_FOREGROUND_RIPPLE = fn(1185).ANDROID_FOREGROUND_RIPPLE;
+const jsxProd = fn(21);
+({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
+const createStyles = fn(4758);
+let obj2 = { container: { borderRadius: nativeDefault.radii.md, overflow: "hidden", height: 120, position: "relative", backgroundColor: "black", justifyContent: "center" }, imageOuterContainer: { justifyContent: "center", alignItems: "center" }, ongoingActivityJoinedContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(255,255,255,0.5)", zIndex: 1 }, overlayBubble: null, participantsContainer: null, participantsText: null, developerIconContainer: null, developerIconColor: null };
+let obj4 = { backgroundColor: null, borderRadius: null };
+const ColorUtils = fn(4608);
+obj4.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.5);
+obj4.borderRadius = nativeDefault.radii.round;
+obj2.overlayBubble = obj4;
+obj2.participantsContainer = { paddingHorizontal: 8, position: "absolute", left: 8, bottom: 8, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", height: 20 };
+obj2.participantsText = { marginLeft: 4, lineHeight: 20 };
+let size = { position: "absolute", top: 4, right: 4, width: 22, height: 22, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, alignItems: "center", justifyContent: "center" };
+obj2.developerIconContainer = size;
+let obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", height: 120, position: "relative", backgroundColor: "black", justifyContent: "center" };
+obj2.developerIconColor = { color: nativeDefault.colors.WHITE };
+let closure_9 = createStyles.createStyles(obj2);
+let ReactCompilerGating = fn(558);
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(15);
+  ({ action, applicationId, context, launchingComponentId } = arg0);
+  if (cResult[0] === applicationId) {
+    if (cResult[1] === context) {
+      if (cResult[2] === launchingComponentId) {
+        let tmp5 = cResult[3];
+      }
+      const submitting = useLaunchingActivityButtonStateDefault(tmp5).submitting;
+      const tmp8 = closure_9();
+      ({ id, name } = tmp4.application);
+      if (tmp(12187).ActivityAction.JOIN !== action) {
+        if (tmp(12187).ActivityAction.LEAVE !== action) {
+          return null;
+        }
+      }
+      if (cResult[4] === action) {
+        if (cResult[5] === tmp8) {
+          let tmp10 = cResult[6];
+        }
+        let id1;
+        if ("channel" === context.type) {
+          id1 = context.channel.id;
+        }
+        if (cResult[7] === id) {
+          if (cResult[8] === name) {
+            if (cResult[9] === submitting) {
+              if (cResult[10] === id1) {
+                let tmp14 = cResult[11];
+              }
+              if (cResult[12] === tmp10) {
+                if (cResult[13] === tmp14) {
+                  let tmp17 = cResult[14];
+                }
+                return tmp17;
+              }
+              const obj2 = { children: null };
+              const items = [tmp10, tmp14];
+              obj2.children = items;
+              const tmp20 = closure_1_8(React5, obj2);
+              cResult[12] = tmp10;
+              cResult[13] = tmp14;
+              cResult[14] = tmp20;
+              tmp17 = tmp20;
+            }
+          }
+        }
+        const obj3 = { channelId: id1, applicationId: id, applicationName: name, submitting };
+        const tmp16 = timestampProducer(tmp6(17568), obj3);
+        cResult[7] = id;
+        cResult[8] = name;
+        cResult[9] = submitting;
+        cResult[10] = id1;
+        cResult[11] = tmp16;
+        tmp14 = tmp16;
+      }
+      let tmp11 = action === tmp(12187).ActivityAction.LEAVE;
+      if (tmp11) {
+        const obj4 = { style: tmp8.ongoingActivityJoinedContainer };
+        tmp11 = timestampProducer(tmp6(5804), obj4);
+      }
+      cResult[4] = action;
+      cResult[5] = tmp8;
+      cResult[6] = tmp11;
+      tmp10 = tmp11;
+    }
+  }
+  const obj5 = { applicationId, context, launchingComponentId };
+  cResult[0] = applicationId;
+  cResult[1] = context;
+  cResult[2] = launchingComponentId;
+  cResult[3] = obj5;
+  tmp5 = obj5;
+}) : ((arg0) => {
   ({ action, context } = arg0);
   ({ applicationId, activityItem, launchingComponentId } = arg0);
   ({ id, name } = activityItem.application);
   if (useActivityShelfItem.ActivityAction.JOIN !== action) {
-    if (tmp4(12310).ActivityAction.LEAVE !== action) {
+    if (tmp4(12187).ActivityAction.LEAVE !== action) {
       return null;
     }
   }
-  let tmp8 = action === tmp4(12310).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(12187).ActivityAction.LEAVE;
   if (tmp8) {
     const obj = { style: tmp3.ongoingActivityJoinedContainer };
-    tmp8 = timestampProducer(tmp(5806), obj);
+    tmp8 = timestampProducer(tmp(5804), obj);
   }
   const items = [tmp8, ];
   let id1;
   const tmp10 = timestampProducer;
   tmp3 = closure_9();
-  const tmp6 = React6;
+  const tmp6 = closure_1_8;
   const tmp7 = React5;
   if ("channel" === context.type) {
     id1 = context.channel.id;
@@ -55,8 +149,141 @@ function ActivityActionOverlay(arg0) {
   items[1] = tmp10(ActivityShelfItemSummaryDefault, { channelId: id1, applicationId: id, applicationName: name, submitting: useLaunchingActivityButtonStateDefault({ applicationId, context, launchingComponentId }).submitting });
   obj2.children = items;
   return tmp6(tmp7, obj2);
-}
-function ParticipantsText(arg0) {
+});
+fn(558);
+let obj6 = { color: nativeDefault.colors.WHITE };
+ReactCompilerGating = fn(558);
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let getItemSubtitleForMaxPlayersShort = require;
+  let num = dependencyMap;
+  const cResult = c.c(33);
+  ({ action, activityItem, channelId, guildId } = arg0);
+  let str = closure_9();
+  const arr = useActivityUsersDefault(activityItem.application.id, channelId);
+  if (cResult[0] === action) {
+    if (cResult[1] === activityItem.application.maxParticipants) {
+      if (cResult[2] === arr) {
+        if (cResult[3] === channelId) {
+          if (cResult[4] === guildId) {
+            if (cResult[5] === str.overlayBubble) {
+              if (cResult[6] === str.participantsContainer) {
+                if (cResult[7] === str.participantsText) {
+                  if (cResult[21] === cResult[8]) {
+                    if (cResult[22] === tmp5) {
+                      if (cResult[23] === tmp6) {
+                        if (cResult[24] === tmp7) {
+                          if (cResult[25] === tmp8) {
+                            if (cResult[26] === tmp9) {
+                              let tmp28 = cResult[27];
+                            }
+                            if (cResult[28] === tmp4) {
+                              if (cResult[29] === tmp10) {
+                                if (cResult[30] === tmp11) {
+                                  if (cResult[31] === tmp28) {
+                                    let tmp31 = cResult[32];
+                                  }
+                                  return tmp31;
+                                }
+                              }
+                            }
+                            const obj2 = { style: tmp10, children: null };
+                            const items = [tmp11, tmp28];
+                            obj2.children = items;
+                            const tmp33 = closure_1_8(tmp4, obj2);
+                            cResult[28] = tmp4;
+                            cResult[29] = tmp10;
+                            cResult[30] = tmp11;
+                            cResult[31] = tmp28;
+                            cResult[32] = tmp33;
+                            tmp31 = tmp33;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  const obj3 = { lineClamp: cResult[10], style: cResult[11], variant: cResult[12], color: cResult[13], children: cResult[14] };
+                  const tmp30 = timestampProducer(cResult[8], obj3);
+                  cResult[21] = cResult[8];
+                  cResult[22] = cResult[10];
+                  cResult[23] = cResult[11];
+                  cResult[24] = cResult[12];
+                  cResult[25] = cResult[13];
+                  cResult[26] = cResult[14];
+                  cResult[27] = tmp30;
+                  tmp28 = tmp30;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  let first;
+  if (arr != null) {
+    first = arr[0];
+  }
+  const name = NicknameUtilsDefault.getName(guildId, channelId, first);
+  const tmp2Result2 = NativeViewDefault;
+  if (cResult[17] === str.overlayBubble) {
+    if (cResult[18] === str.participantsContainer) {
+      let tmp15 = cResult[19];
+    }
+    const _Symbol = Symbol;
+    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { source: tmp2(12942), size: native.Icon.Sizes.EXTRA_SMALL, color: "white" };
+      const tmp19 = timestampProducer(native.Icon, obj4);
+      cResult[20] = tmp19;
+      let tmp17 = tmp19;
+    } else {
+      tmp17 = cResult[20];
+    }
+    const Text = Text_Text.Text;
+    const participantsText = str.participantsText;
+    if (action === useActivityShelfItem.ActivityAction.START) {
+      const itemSubtitleForMaxPlayersShort = getItemSubtitleForMaxPlayers;
+      getItemSubtitleForMaxPlayersShort = itemSubtitleForMaxPlayersShort.getItemSubtitleForMaxPlayersShort;
+      num = activityItem.application.maxParticipants;
+      if (num == null) {
+        num = 0;
+      }
+      let itemSubtitleForMaxPlayersShort1 = getItemSubtitleForMaxPlayersShort(num);
+    } else {
+      itemSubtitleForMaxPlayersShort1 = name;
+      if (arr.length > 1) {
+        const intl = util.intl;
+        const obj5 = { count: arr.length - 1, username: name };
+        itemSubtitleForMaxPlayersShort1 = intl.formatToPlainString(util.t.cpe6CK, obj5);
+      }
+    }
+    cResult[0] = action;
+    activityItem = activityItem.application.maxParticipants;
+    cResult[1] = activityItem;
+    cResult[2] = arr;
+    cResult[3] = channelId;
+    cResult[4] = guildId;
+    cResult[5] = str.overlayBubble;
+    cResult[6] = str.participantsContainer;
+    cResult[7] = str.participantsText;
+    cResult[8] = Text;
+    cResult[9] = tmp2Result2;
+    cResult[10] = 1;
+    cResult[11] = participantsText;
+    str = "text-xxs/medium";
+    cResult[12] = "text-xxs/medium";
+    guildId = "text-overlay-light";
+    cResult[13] = "text-overlay-light";
+    cResult[14] = itemSubtitleForMaxPlayersShort1;
+    cResult[15] = tmp15;
+    cResult[16] = tmp17;
+  }
+  const items1 = [, ];
+  ({ participantsContainer: arr2[0], overlayBubble: arr2[1] } = str);
+  cResult[17] = str.overlayBubble;
+  cResult[18] = str.participantsContainer;
+  cResult[19] = items1;
+  tmp15 = items1;
+}) : ((arg0) => {
   ({ activityItem, channelId } = arg0);
   ({ action, guildId } = arg0);
   const tmp = closure_9();
@@ -70,53 +297,290 @@ function ParticipantsText(arg0) {
   const items = [, ];
   ({ participantsContainer: arr2[0], overlayBubble: arr2[1] } = tmp);
   obj2.style = items;
-  const tmp6 = React6;
+  const tmp6 = closure_1_8;
   const tmp2Result = NativeViewDefault;
   const tmp8 = timestampProducer;
-  const items1 = [timestampProducer(native.Icon, { source: _modDef13031, size: native.Icon.Sizes.EXTRA_SMALL, color: "white" }), ];
+  const items1 = [timestampProducer(native.Icon, { source: _modDef12942, size: native.Icon.Sizes.EXTRA_SMALL, color: "white" }), ];
   const obj4 = { lineClamp: 1, style: tmp.participantsText, variant: "text-xxs/medium", color: "text-overlay-light", children: null };
   if (action === useActivityShelfItem.ActivityAction.START) {
     let num2 = activityItem.application.maxParticipants;
     if (num2 == null) {
       num2 = 0;
     }
-    let itemSubtitleForMaxPlayersShort = tmp9(12399).getItemSubtitleForMaxPlayersShort(num2);
-    const tmp9Result = tmp9(12399);
+    let itemSubtitleForMaxPlayersShort = tmp9(12286).getItemSubtitleForMaxPlayersShort(num2);
+    const tmp9Result = tmp9(12286);
   } else {
     itemSubtitleForMaxPlayersShort = name;
     if (arr.length > 1) {
-      const intl = tmp9(1115).intl;
+      const intl = tmp9(1119).intl;
       const obj5 = { count: arr.length - 1, username: name };
-      itemSubtitleForMaxPlayersShort = intl.formatToPlainString(tmp9(1115).t.cpe6CK, obj5);
+      itemSubtitleForMaxPlayersShort = intl.formatToPlainString(tmp9(1119).t.cpe6CK, obj5);
     }
   }
   obj4.children = itemSubtitleForMaxPlayersShort;
   items1[1] = tmp8(Text_Text.Text, obj4);
   obj2.children = items1;
   return tmp6(tmp2Result, obj2);
-}
-const ThemeTypes = fn(1074).ThemeTypes;
-const ANDROID_FOREGROUND_RIPPLE = fn(1181).ANDROID_FOREGROUND_RIPPLE;
-const jsxProd = fn(21);
-({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { container: { borderRadius: nativeDefault.radii.md, overflow: "hidden", height: 120, position: "relative", backgroundColor: "black", justifyContent: "center" }, imageOuterContainer: { justifyContent: "center", alignItems: "center" }, ongoingActivityJoinedContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(255,255,255,0.5)", zIndex: 1 }, overlayBubble: null, participantsContainer: null, participantsText: null, developerIconContainer: null, developerIconColor: null };
-let obj4 = { backgroundColor: null, borderRadius: null };
-const ColorUtils = fn(4605);
-obj4.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.BLACK, 0.5);
-obj4.borderRadius = nativeDefault.radii.round;
-obj2.overlayBubble = obj4;
-obj2.participantsContainer = { paddingHorizontal: 8, position: "absolute", left: 8, bottom: 8, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", height: 20 };
-obj2.participantsText = { marginLeft: 4, lineHeight: 20 };
-let size = { position: "absolute", top: 4, right: 4, width: 22, height: 22, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, alignItems: "center", justifyContent: "center" };
-obj2.developerIconContainer = size;
-let obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", height: 120, position: "relative", backgroundColor: "black", justifyContent: "center" };
-obj2.developerIconColor = { color: nativeDefault.colors.WHITE };
-let closure_9 = createStyles.createStyles(obj2);
+});
 size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItem.tsx");
 
-export default function ActivityShelfItem(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(56);
+  ({ itemDimensions, activityItem, context, guildId, locationObject, onActivityItemSelected, disableBadges } = arg0);
+  const tmp5 = closure_9();
+  let channel = null;
+  if ("channel" === context.type) {
+    channel = context.channel;
+  }
+  ({ width, height } = itemDimensions);
+  const result = width * getDevicePixelRatioDefault();
+  const id = noop.useId();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = ["embedded_cover"];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === activityItem) {
+    if (cResult[2] === result) {
+      if (cResult[3] === id) {
+        if (cResult[4] === context) {
+          if (cResult[5] === guildId) {
+            if (cResult[6] === locationObject) {
+              if (cResult[7] === onActivityItemSelected) {
+                let tmp11 = cResult[8];
+              }
+              const tmp12 = tmp7(12187)(tmp11);
+              ({ activityAction, onActivityItemSelected: onActivityItemSelected2, labelType } = tmp12);
+              const _Symbol = Symbol;
+              if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+                const items1 = ["embedded_background"];
+                cResult[9] = items1;
+                let tmp13 = items1;
+              } else {
+                tmp13 = cResult[9];
+              }
+              if (cResult[10] === activityItem.application.id) {
+                if (cResult[11] === result) {
+                  let tmp14 = cResult[12];
+                }
+                let imageBackground = tmp7(9735)(tmp14);
+                if (cResult[13] === activityAction) {
+                  if (cResult[14] === tmp4) {
+                    let tmp15 = cResult[15];
+                  }
+                  let isTestModeForApplication = tmp15;
+                  if (tmp15) {
+                    isTestModeForApplication = tmpResult.useIsTestModeForApplication(activityItem.application.id);
+                  }
+                  if (cResult[16] === height) {
+                    if (cResult[17] === width) {
+                      let tmp19 = cResult[18];
+                    }
+                    if (cResult[19] === tmp5.container) {
+                      if (cResult[20] === tmp19) {
+                        let tmp20 = cResult[21];
+                      }
+                      if (activityAction === tmp(12187).ActivityAction.START) {
+                        imageBackground = tmp12.imageBackground;
+                      }
+                      const result1 = width / height;
+                      if (cResult[22] === activityItem.application.name) {
+                        if (cResult[23] === imageBackground) {
+                          if (cResult[24] === result1) {
+                            let tmp22 = cResult[25];
+                          }
+                          if (cResult[26] === activityAction) {
+                            if (cResult[27] === activityItem) {
+                              if (cResult[28] === id) {
+                                if (cResult[29] === context) {
+                                  let tmp25 = cResult[30];
+                                }
+                                if (cResult[31] === tmp5.imageOuterContainer) {
+                                  if (cResult[32] === tmp22) {
+                                    if (cResult[33] === tmp25) {
+                                      let tmp29 = cResult[34];
+                                    }
+                                    if (cResult[35] === tmp15) {
+                                      if (cResult[36] === labelType) {
+                                        let tmp32 = cResult[37];
+                                      }
+                                      if (cResult[38] === isTestModeForApplication) {
+                                        if (cResult[39] === tmp5.developerIconColor) {
+                                          if (cResult[40] === tmp5.developerIconContainer) {
+                                            let tmp35 = cResult[41];
+                                          }
+                                          if (cResult[42] === tmp29) {
+                                            if (cResult[43] === tmp32) {
+                                              if (cResult[44] === tmp35) {
+                                                let tmp39 = cResult[45];
+                                              }
+                                              if (cResult[46] === activityAction) {
+                                                if (cResult[47] === activityItem) {
+                                                  if (cResult[48] === channel) {
+                                                    let tmp43 = cResult[49];
+                                                  }
+                                                  if (cResult[50] === onActivityItemSelected2) {
+                                                    if (cResult[51] === tmp39) {
+                                                      if (cResult[52] === tmp43) {
+                                                        if (cResult[53] === tmp49) {
+                                                          if (cResult[54] === tmp20) {
+                                                            let tmp50 = cResult[55];
+                                                          }
+                                                          return tmp50;
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                  const obj2 = { activeOpacity: 0.7, onPress: onActivityItemSelected2, disabled: activityAction === tmp18, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, style: tmp20, children: null };
+                                                  const items2 = [tmp39, tmp43];
+                                                  obj2.children = items2;
+                                                  const tmp53 = closure_1_8(tmp(5341).PressableOpacity, obj2);
+                                                  cResult[50] = onActivityItemSelected2;
+                                                  cResult[51] = tmp39;
+                                                  cResult[52] = tmp43;
+                                                  cResult[53] = activityAction === tmp18;
+                                                  cResult[54] = tmp20;
+                                                  cResult[55] = tmp53;
+                                                  tmp50 = tmp53;
+                                                }
+                                              }
+                                              let tmp45Result = activityAction === tmp(12187).ActivityAction.START;
+                                              if (tmp45Result) {
+                                                const obj3 = { action: activityAction, channelId: null, guildId: null, activityItem: null };
+                                                let id1;
+                                                if (channel != null) {
+                                                  id1 = channel.id;
+                                                }
+                                                obj3.channelId = id1;
+                                                let guildId1;
+                                                if (channel != null) {
+                                                  guildId1 = channel.getGuildId();
+                                                }
+                                                obj3.guildId = guildId1;
+                                                obj3.activityItem = activityItem;
+                                                tmp45Result = timestampProducer(closure_11, obj3);
+                                              }
+                                              cResult[46] = activityAction;
+                                              cResult[47] = activityItem;
+                                              cResult[48] = channel;
+                                              cResult[49] = tmp45Result;
+                                              tmp43 = tmp45Result;
+                                            }
+                                          }
+                                          const obj4 = { theme: ThemeTypes.DARK, children: null };
+                                          const items3 = [tmp29, tmp32, tmp35];
+                                          obj4.children = items3;
+                                          const tmp42 = closure_1_8(tmp(4471).ThemeContextProvider, obj4);
+                                          cResult[42] = tmp29;
+                                          cResult[43] = tmp32;
+                                          cResult[44] = tmp35;
+                                          cResult[45] = tmp42;
+                                          tmp39 = tmp42;
+                                        }
+                                      }
+                                      let tmp36 = null;
+                                      if (isTestModeForApplication) {
+                                        const obj5 = { style: tmp5.developerIconContainer, children: null };
+                                        const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp7(17571), color: tmp5.developerIconColor.color };
+                                        obj5.children = timestampProducer(tmp(1181).Icon, obj6);
+                                        tmp36 = timestampProducer(tmp7(5804), obj5);
+                                        const tmp7Result = tmp7(5804);
+                                      }
+                                      cResult[38] = isTestModeForApplication;
+                                      cResult[39] = tmp5.developerIconColor;
+                                      cResult[40] = tmp5.developerIconContainer;
+                                      cResult[41] = tmp36;
+                                      tmp35 = tmp36;
+                                    }
+                                    let tmp33 = null;
+                                    if (tmp15) {
+                                      const obj7 = { labelType };
+                                      tmp33 = timestampProducer(tmp7(12226), obj7);
+                                    }
+                                    cResult[35] = tmp15;
+                                    cResult[36] = labelType;
+                                    cResult[37] = tmp33;
+                                    tmp32 = tmp33;
+                                  }
+                                }
+                                const obj8 = { style: tmp5.imageOuterContainer, children: null };
+                                const items4 = [tmp22, tmp25];
+                                obj8.children = items4;
+                                const tmp31 = closure_1_8(tmp7(5804), obj8);
+                                cResult[31] = tmp5.imageOuterContainer;
+                                cResult[32] = tmp22;
+                                cResult[33] = tmp25;
+                                cResult[34] = tmp31;
+                                tmp29 = tmp31;
+                              }
+                            }
+                          }
+                          const obj9 = { action: activityAction, applicationId: activityItem.application.id, context, activityItem, launchingComponentId: id };
+                          const tmp28 = timestampProducer(closure_10, obj9);
+                          cResult[26] = activityAction;
+                          cResult[27] = activityItem;
+                          cResult[28] = id;
+                          cResult[29] = context;
+                          cResult[30] = tmp28;
+                          tmp25 = tmp28;
+                        }
+                      }
+                      const obj10 = { accessibilityLabel: activityItem.application.name, imageBackground, aspectRatio: result1 };
+                      const tmp24 = timestampProducer(tmp7(17567), obj10);
+                      cResult[22] = activityItem.application.name;
+                      cResult[23] = imageBackground;
+                      cResult[24] = result1;
+                      cResult[25] = tmp24;
+                      tmp22 = tmp24;
+                    }
+                    const items5 = [tmp5.container, tmp19];
+                    cResult[19] = tmp5.container;
+                    cResult[20] = tmp19;
+                    cResult[21] = items5;
+                    tmp20 = items5;
+                  }
+                  const size = { width, height };
+                  cResult[16] = height;
+                  cResult[17] = width;
+                  cResult[18] = size;
+                  tmp19 = size;
+                  tmpResult = tmp(9131);
+                }
+                let tmp16 = !tmp4;
+                if (!tmp4) {
+                  const items6 = [tmp(12187).ActivityAction.LEAVE, tmp(12187).ActivityAction.JOIN];
+                  tmp16 = !items6.includes(activityAction);
+                }
+                cResult[13] = activityAction;
+                cResult[14] = tmp4;
+                cResult[15] = tmp16;
+                tmp15 = tmp16;
+              }
+              const obj11 = { applicationId: activityItem.application.id, size: result, names: tmp13 };
+              cResult[10] = activityItem.application.id;
+              cResult[11] = result;
+              cResult[12] = obj11;
+              tmp14 = obj11;
+            }
+          }
+        }
+      }
+    }
+  }
+  const obj12 = { activityItem, context, guildId, locationObject, onActivityItemSelected, embeddedActivitiesManager: EmbeddedActivitiesNativeManagerDefault, backgroundResolution: result, assetNames: first, launchingComponentId: id, commandOrigin: ApplicationCommandTypes.CommandOrigin.VOICE_UI };
+  cResult[1] = activityItem;
+  cResult[2] = result;
+  cResult[3] = id;
+  cResult[4] = context;
+  cResult[5] = guildId;
+  cResult[6] = locationObject;
+  cResult[7] = onActivityItemSelected;
+  cResult[8] = obj12;
+  tmp11 = obj12;
+}) : ((arg0) => {
   ({ itemDimensions, activityItem, context, disableBadges } = arg0);
   ({ guildId, locationObject, onActivityItemSelected } = arg0);
   if (disableBadges === undefined) {
@@ -135,7 +599,7 @@ export default function ActivityShelfItem(arg0) {
   let tmp10 = useEmbeddedActivityBackgroundDefault({ applicationId: activityItem.application.id, size: result, names: ["embedded_background"] });
   let tmp11 = !disableBadges;
   if (!disableBadges) {
-    const items = [tmp8(12310).ActivityAction.LEAVE, tmp8(12310).ActivityAction.JOIN];
+    const items = [tmp8(12187).ActivityAction.LEAVE, tmp8(12187).ActivityAction.JOIN];
     tmp11 = !items.includes(activityAction);
   }
   const obj2 = { applicationId: activityItem.application.id, size: result, names: ["embedded_background"] };
@@ -154,13 +618,13 @@ export default function ActivityShelfItem(arg0) {
   }
   obj6.imageBackground = tmp10;
   obj6.aspectRatio = width / height;
-  const items2 = [timestampProducer(ActivityShelfItemBackgroundDefault, obj6), timestampProducer(ActivityActionOverlay, { action: activityAction, applicationId: activityItem.application.id, context, activityItem, launchingComponentId: id })];
+  const items2 = [timestampProducer(ActivityShelfItemBackgroundDefault, obj6), timestampProducer(closure_10, { action: activityAction, applicationId: activityItem.application.id, context, activityItem, launchingComponentId: id })];
   obj5.children = items2;
-  const items3 = [React6(tmp3Result, obj5), , ];
+  const items3 = [closure_1_8(tmp3Result, obj5), , ];
   let tmp15Result = null;
   if (tmp11) {
     const obj8 = { labelType };
-    tmp15Result = tmp15(tmp3(12339), obj8);
+    tmp15Result = tmp15(tmp3(12226), obj8);
   }
   items3[1] = tmp15Result;
   let tmp15Result3 = null;
@@ -168,16 +632,16 @@ export default function ActivityShelfItem(arg0) {
     tmp15Result3 = null;
     if (isTestModeForApplication) {
       const obj9 = { style: tmp.developerIconContainer, children: null };
-      const obj10 = { size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(17615), color: tmp.developerIconColor.color };
-      obj9.children = tmp15(tmp8(1177).Icon, obj10);
-      tmp15Result3 = tmp15(tmp3(5806), obj9);
-      const tmp3Result4 = tmp3(5806);
+      const obj10 = { size: tmp8(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(17571), color: tmp.developerIconColor.color };
+      obj9.children = tmp15(tmp8(1181).Icon, obj10);
+      tmp15Result3 = tmp15(tmp3(5804), obj9);
+      const tmp3Result4 = tmp3(5804);
     }
   }
   items3[2] = tmp15Result3;
   obj4.children = items3;
-  const items4 = [React6(native2.ThemeContextProvider, obj4), ];
-  let tmp15Result4 = activityAction === tmp8(12310).ActivityAction.START;
+  const items4 = [closure_1_8(native2.ThemeContextProvider, obj4), ];
+  let tmp15Result4 = activityAction === tmp8(12187).ActivityAction.START;
   if (tmp15Result4) {
     const obj11 = { action: activityAction, channelId: null, guildId: null, activityItem: null };
     let id1;
@@ -191,9 +655,9 @@ export default function ActivityShelfItem(arg0) {
     }
     obj11.guildId = guildId1;
     obj11.activityItem = activityItem;
-    tmp15Result4 = tmp15(ParticipantsText, obj11);
+    tmp15Result4 = tmp15(closure_11, obj11);
   }
   items4[1] = tmp15Result4;
   obj3.children = items4;
-  return React6(Pressables.PressableOpacity, obj3);
-};
+  return closure_1_8(Pressables.PressableOpacity, obj3);
+});

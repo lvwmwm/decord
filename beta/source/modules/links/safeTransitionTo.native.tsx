@@ -1,16 +1,16 @@
-// Module ID: 7489
-// Function ID: 7490
+// Module ID: 7491
+// Function ID: 7492
 // Name: safeTransitionTo
-// Dependencies: [5, 2063, 1074, 4910, 7490, 1101, 7491, 5109, 1115, 7518, 2614, 7557, 2]
+// Dependencies: [5, 2067, 1078, 4912, 7492, 1105, 7493, 5111, 1119, 7520, 2618, 7559, 2]
 // Exports: default
 
-// Module 7489 (safeTransitionTo)
-import router_utils from "router_utils" /* 1101 */;
-import LinkUtils from "LinkUtils" /* 4910 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7490 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7491 */;
+// Module 7491 (safeTransitionTo)
+import router_utils from "router_utils" /* 1105 */;
+import LinkUtils from "LinkUtils" /* 4912 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7492 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7493 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 require = fn;
 let closure_6 = async function _safeTransitionTo(arg0, value) {
@@ -24,7 +24,7 @@ let closure_6 = async function _safeTransitionTo(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -43,7 +43,7 @@ let closure_6 = async function _safeTransitionTo(arg0, value) {
           closure_131_0 = closure_0;
           closure_131_1 = closure_1;
           closure_131_2 = undefined;
-          let guild;
+          guild = undefined;
           let channelId2;
           const tryParseDiceRollLinkResult = LinkUtils.tryParseDiceRollLink(closure_0);
           if (null != tryParseDiceRollLinkResult) {
@@ -125,7 +125,7 @@ let closure_6 = async function _safeTransitionTo(arg0, value) {
       }
       closure_2 = closure_131_2;
       if (closure_131_2 == null) {
-        closure_2 = { guildId: "r" };
+        closure_2 = { guildId: "emoji" };
       }
       c5 = 2;
       c6 = 1;
@@ -137,7 +137,7 @@ let closure_6 = async function _safeTransitionTo(arg0, value) {
     }
   }
 };
-const Routes = fn(1074).Routes;
+const Routes = fn(1078).Routes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/links/safeTransitionTo.native.tsx");
 

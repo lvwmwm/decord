@@ -1,19 +1,12 @@
 // Module ID: 6875
 // Function ID: 6876
-// Dependencies: [19, 6876]
-// Exports: useBottomSheet
+// Dependencies: [19]
 
 // Module 6875
 import _mod19 from "module_19" /* 19 */;
-import _mod6876 from "module_6876" /* 6876 */;
 
-const useContext = _mod19.useContext;
+const createContext = _mod19.createContext;
+const context = createContext(null);
 
-export const useBottomSheet = () => {
-  const tmp = useContext(_mod6876.BottomSheetContext);
-  if (null === tmp) {
-    throw "'useBottomSheet' cannot be used out of the BottomSheet!";
-  } else {
-    return tmp;
-  }
-};
+export const BottomSheetGestureHandlersContext = context;
+export const BottomSheetDraggableContext = createContext(null);

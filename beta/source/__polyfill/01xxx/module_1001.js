@@ -1,20 +1,56 @@
 // Module ID: 1001
 // Function ID: 1002
-// Dependencies: [19, 682, 889]
-// Exports: init
+// Dependencies: [873]
+// Exports: getBodySize, parseContentLengthHeader
 
 // Module 1001
-import _mod682 from "module_682" /* 682 */;
-import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 889 */;
-import noop from "module_19" /* 19 */;
+import encodeUTF8 from "encodeUTF8" /* 873 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+require = arg1;
+const dependencyMap = arg6;
 
-export const init = function init(arg0) {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  _mod682.applySdkMetadata(obj, "react");
-  feedbackAsyncIntegration.setContext("react", { version: noop.version });
-  const obj4 = { version: noop.version };
-  return feedbackAsyncIntegration.init(obj);
+export const parseContentLengthHeader = function parseContentLengthHeader(responseHeader) {
+  if (responseHeader) {
+    const _parseInt = parseInt;
+    const parsed = parseInt(responseHeader, 10);
+    const _isNaN = isNaN;
+    let tmp3;
+    if (!isNaN(parsed)) {
+      tmp3 = parsed;
+    }
+    return tmp3;
+  }
+};
+export const getBodySize = function getBodySize(size) {
+  if (size) {
+    try {
+      if (typeof size === "string") {
+        return encodeUTF8.encodeUTF8(size).length;
+      } else {
+        const _URLSearchParams = URLSearchParams;
+        if (size instanceof URLSearchParams) {
+          return encodeUTF8.encodeUTF8(size.toString()).length;
+        } else {
+          const _FormData = FormData;
+          if (size instanceof FormData) {
+            const tmp = (function _serializeFormData(size) {
+              return new URLSearchParams(size).toString();
+            })(size);
+            return encodeUTF8.encodeUTF8(tmp).length;
+          } else {
+            const _Blob = Blob;
+            if (size instanceof Blob) {
+              return size.size;
+            } else {
+              const _ArrayBuffer = ArrayBuffer;
+              if (size instanceof ArrayBuffer) {
+                return size.byteLength;
+              }
+            }
+          }
+        }
+      }
+    } catch (err) {
+    }
+  }
 };

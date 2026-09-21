@@ -1,12 +1,13 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16028
+// Function ID: 16029
 // Name: DevToolsPerformanceTestingScreen
-// Dependencies: [19, 17, 21, 4756, 576, 1484, 1612, 5904, 15858, 5822, 14858, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 1488, 1616, 15847, 5903, 5822, 14847, 2]
 
-// Module 16039 (DevToolsPerformanceTestingScreen)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14858 */;
+// Module 16028 (DevToolsPerformanceTestingScreen)
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14847 */;
+import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,15 +15,97 @@ const require = globalThis.__r;
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 } };
-let closure_5 = createStyles.createStyles(obj);
-const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
+let closure_6 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
+let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");
 
-export default noop.memo(function DevToolsPerformanceTestingScreen() {
-  const tmp = closure_5();
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = navigation(568).c(9);
+  const tmp4 = closure_6();
+  let obj = navigation(568);
+  navigation = navigation(1488).useNavigation();
+  const sum = useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16;
+  if (cResult[0] !== sum) {
+    const obj3 = { paddingBottom: sum };
+    cResult[0] = sum;
+    cResult[1] = obj3;
+    let tmp7 = obj3;
+  } else {
+    tmp7 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const _Object = Object;
+    const entries = Object.entries(tmp(15847).PerformanceTestingScreens);
+    cResult[2] = entries;
+    let arr = entries;
+  } else {
+    arr = cResult[2];
+  }
+  if (cResult[3] !== navigation) {
+    const obj4 = {
+      hasIcons: true,
+      children: arr.map((item) => {
+          [screenKey, { headerTitle, Icon }] = item;
+          return jsx(navigation(5822).TableRow, {
+            label: headerTitle,
+            icon: jsx(navigation(5822).TableRow.Icon, { IconComponent: Icon }),
+            arrow: true,
+            onPress() {
+              if (null != navigation.push) {
+                navigation.push(screenKey);
+              } else {
+                const obj2 = { screenKey };
+                DevToolsNavigator.navigateToDevTools(obj2);
+              }
+            }
+          }, screenKey);
+        })
+    };
+    const tmp11 = jsx(tmp(5903).TableRowGroup, {
+      hasIcons: true,
+      children: arr.map((item) => {
+          [screenKey, { headerTitle, Icon }] = item;
+          return jsx(navigation(5822).TableRow, {
+            label: headerTitle,
+            icon: jsx(navigation(5822).TableRow.Icon, { IconComponent: Icon }),
+            arrow: true,
+            onPress() {
+              if (null != navigation.push) {
+                navigation.push(screenKey);
+              } else {
+                const obj2 = { screenKey };
+                DevToolsNavigator.navigateToDevTools(obj2);
+              }
+            }
+          }, screenKey);
+        })
+    });
+    cResult[3] = navigation;
+    cResult[4] = tmp11;
+    let tmp9 = tmp11;
+  } else {
+    tmp9 = cResult[4];
+  }
+  if (cResult[5] === tmp4.container) {
+    if (cResult[6] === tmp7) {
+      if (cResult[7] === tmp9) {
+        let tmp12 = cResult[8];
+      }
+      return tmp12;
+    }
+  }
+  const tmp13 = <ScrollView style={tmp4.container} contentContainerStyle={tmp7}>{tmp9}</ScrollView>;
+  cResult[5] = tmp4.container;
+  cResult[6] = tmp7;
+  cResult[7] = tmp9;
+  cResult[8] = tmp13;
+  tmp12 = tmp13;
+}) : (() => {
+  const tmp = closure_6();
   _require = require("useNavigation").useNavigation();
   let obj2 = { style: tmp.container, contentContainerStyle: null, children: null };
   let obj = require("useNavigation");
@@ -47,4 +130,4 @@ export default noop.memo(function DevToolsPerformanceTestingScreen() {
   });
   obj2.children = jsx(require("TableRowGroup").TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView style={tmp.container} contentContainerStyle={null}>{null}</ScrollView>;
-});
+}));

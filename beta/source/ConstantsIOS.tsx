@@ -1,9 +1,9 @@
-// Module ID: 1094
-// Function ID: 1095
+// Module ID: 1098
+// Function ID: 1099
 // Name: ConstantsIOS
 // Dependencies: [2]
 
-// Module 1094 (ConstantsIOS)
+// Module 1098 (ConstantsIOS)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ START: { x: 0, y: 0 }, END: { x: 1, y: 0 } });

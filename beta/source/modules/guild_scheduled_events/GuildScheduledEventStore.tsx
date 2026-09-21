@@ -1,15 +1,15 @@
-// Module ID: 7768
-// Function ID: 7769
+// Module ID: 7773
+// Function ID: 7774
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2105, 2047, 4391, 12, 11, 504, 573, 2]
+// Dependencies: [502, 2109, 2051, 4395, 12, 11, 504, 577, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7768 (GuildScheduledEventStore)
+// Module 7773 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
 function scheduledEventSort(status) {
   ({ id, scheduled_start_time } = status);
@@ -173,7 +173,7 @@ function handleGuildScheduledEventExceptionCreateOrUpdate(eventException) {
   }
   obj = secondaryIndexMap;
 }
-const GuildScheduledEventsConstants = fn(2047);
+const GuildScheduledEventsConstants = fn(2051);
 ({ GuildScheduledEventStatus: closure_4, GuildScheduledEventStatusDone: hasOwnProperty, GuildScheduledEventUserResponses: metroRequire } = GuildScheduledEventsConstants);
 const StaticGuildEventIndexes = {
   EVENT: "event",
@@ -185,8 +185,8 @@ const StaticGuildEventIndexes = {
   GUILD_EVENT_ACTIVE(guild_id) {
     return "" + guild_id + "-" + obj.EVENT_ACTIVE;
   },
-  GUILD_EVENT_UPCOMING(guild_id) {
-    return "" + guild_id + "-" + obj.EVENT_UPCOMING;
+  GUILD_EVENT_UPCOMING(id) {
+    return "" + id + "-" + obj.EVENT_UPCOMING;
   },
   CHANNEL_EVENT(channel_id) {
     return "" + channel_id + "-" + obj.EVENT;
@@ -198,7 +198,7 @@ const StaticGuildEventIndexes = {
     return "" + channel_id + "-" + obj.EVENT_UPCOMING;
   }
 };
-const secondaryIndexMap = new fn(4391).SecondaryIndexMap(function scheduledEventIndex(status) {
+const secondaryIndexMap = new fn(4395).SecondaryIndexMap(function scheduledEventIndex(status) {
   ({ guild_id, entity_id, channel_id } = status);
   const items = [guild_id];
   if (null != entity_id) {
@@ -273,12 +273,12 @@ prototype["getGuildScheduledEventsByIndex"] = function getGuildScheduledEventsBy
 prototype["getRsvpVersion"] = function getRsvpVersion() {
   return closure_9;
 };
-prototype["getRsvp"] = function getRsvp(id, c1, id2) {
+prototype["getRsvp"] = function getRsvp(id, nextRecurrenceIdInEvent, id2) {
   if (null == id) {
     return null;
   } else {
-    let tmp = c1;
-    if (c1 == null) {
+    let tmp = nextRecurrenceIdInEvent;
+    if (nextRecurrenceIdInEvent == null) {
       tmp = SERIES;
     }
     let tmp4;
@@ -290,10 +290,10 @@ prototype["getRsvp"] = function getRsvp(id, c1, id2) {
     return tmp4;
   }
 };
-prototype["isInterestedInEventRecurrence"] = function isInterestedInEventRecurrence(id, c1) {
+prototype["isInterestedInEventRecurrence"] = function isInterestedInEventRecurrence(id, nextRecurrenceIdInEvent) {
   id = AuthenticationStore.getId();
   const rsvp = this.getRsvp(id, null, id);
-  const rsvp1 = this.getRsvp(id, c1, id);
+  const rsvp1 = this.getRsvp(id, nextRecurrenceIdInEvent, id);
   let response;
   if (rsvp != null) {
     response = rsvp.response;

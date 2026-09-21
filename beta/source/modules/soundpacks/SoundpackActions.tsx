@@ -1,15 +1,15 @@
-// Module ID: 17791
-// Function ID: 17792
+// Module ID: 17794
+// Function ID: 17795
 // Name: SoundpackActions
-// Dependencies: [10159, 1074, 1241, 573, 2]
+// Dependencies: [10138, 1078, 1245, 577, 2]
 // Exports: setSoundpack
 
-// Module 17791 (SoundpackActions)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SoundpackStore from "SoundpackStore" /* 10159 */;
+// Module 17794 (SoundpackActions)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import SoundpackStore from "SoundpackStore" /* 10138 */;
 
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundpacks/SoundpackActions.tsx");
 

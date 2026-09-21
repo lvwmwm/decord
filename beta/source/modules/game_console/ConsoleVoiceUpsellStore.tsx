@@ -1,17 +1,17 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17538
+// Function ID: 17539
 // Name: ConsoleVoiceUpsellStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [562, 1252, 2]
 // Exports: setShowConsoleVoiceSparkles, setVoiceUpsellDismissed
 
-// Module 17583 (ConsoleVoiceUpsellStore)
-import module_560 from "module_560" /* 560 */;
+// Module 17538 (ConsoleVoiceUpsellStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let closure_2 = Object.freeze({ voiceUpsellDismissed: false, showSparkles: false });
-const useConsoleVoiceUpsellStore = module_560.create(() => closure_2);
+const useConsoleVoiceUpsellStore = module_562.create(() => closure_2);
 const result = size.fileFinishedImporting("modules/game_console/ConsoleVoiceUpsellStore.tsx");
 
 export { useConsoleVoiceUpsellStore };

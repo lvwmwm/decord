@@ -1,26 +1,142 @@
-// Module ID: 8428
-// Function ID: 8429
+// Module ID: 8433
+// Function ID: 8434
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 8429, 8432, 563, 8433, 8435, 8436, 2]
-// Exports: default
+// Dependencies: [19, 8434, 558, 568, 8437, 565, 8438, 8440, 8441, 2]
 
-// Module 8428 (usePendingAvatarSettings)
+// Module 8433 (usePendingAvatarSettings)
 import _mod19 from "module_19" /* 19 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8433 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8435 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8438 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8440 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8434 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 _mod19.useCallback;
 let result = size.fileFinishedImporting("modules/user_profile/hooks/usePendingAvatarSettings.tsx");
 
-export default function usePendingAvatarSettings(isTryItOut) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((isTryItOut) => {
+  const cResult = isTryItOut(568).c(15);
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
-  const tmp2 = guildId(8432)(isTryItOut.analyticsLocations);
+  const tmp4 = guildId(8437)(isTryItOut.analyticsLocations);
+  dependencyMap = tmp4;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserProfileSettingsStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === guildId) {
+    if (cResult[2] === isTryItOut) {
+      let tmp7 = cResult[3];
+    }
+    const stateFromStoresObject = tmp(565).useStateFromStoresObject(first, tmp7);
+    ({ pendingAvatar, pendingAvatarDecoration, pendingErrors } = stateFromStoresObject);
+    if (cResult[4] !== guildId) {
+      const fn2 = function l(avatar) {
+        UserProfileSettingsActionCreators.setPendingChanges({ guildId, avatar });
+        const obj2 = { guildId, avatar };
+        let str = "set";
+        if (null == avatar) {
+          str = "remove";
+        }
+        const result = ProfileCustomizationUtils.announcePendingAvatarChange(str);
+      };
+      cResult[4] = guildId;
+      cResult[5] = fn2;
+      let setTryItOutAvatar = fn2;
+    } else {
+      setTryItOutAvatar = cResult[5];
+    }
+    if (cResult[6] === guildId) {
+      if (cResult[7] === tmp4) {
+        let setTryItOutAvatarDecoration = cResult[8];
+      }
+      if (isTryItOut) {
+        setTryItOutAvatar = tmp(8441).setTryItOutAvatar;
+      }
+      if (isTryItOut) {
+        setTryItOutAvatarDecoration = tmp(8441).setTryItOutAvatarDecoration;
+      }
+      if (cResult[9] === pendingAvatar) {
+        if (cResult[10] === pendingAvatarDecoration) {
+          if (cResult[11] === pendingErrors) {
+            if (cResult[12] === setTryItOutAvatar) {
+              if (cResult[13] === setTryItOutAvatarDecoration) {
+                let tmp9 = cResult[14];
+              }
+              return tmp9;
+            }
+          }
+        }
+      }
+      let obj2 = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: null, setPendingAvatarDecoration: null };
+      class P {
+        constructor(arg0) {
+          obj = closure_0(closure_2[6]);
+          obj1 = { guildId, avatarDecoration: isTryItOut };
+          setPendingChangesResult = obj.setPendingChanges(obj1);
+          if (null != isTryItOut) {
+            tmp2 = closure_2;
+            tmp3 = closure_2(isTryItOut);
+          }
+          return;
+        }
+      }
+      obj2.setPendingAvatarDecoration = setTryItOutAvatarDecoration;
+      cResult[9] = pendingAvatar;
+      cResult[10] = pendingAvatarDecoration;
+      cResult[11] = pendingErrors;
+      cResult[12] = setTryItOutAvatar;
+      cResult[13] = setTryItOutAvatarDecoration;
+      cResult[14] = obj2;
+      tmp9 = obj2;
+    }
+    class P {
+      constructor(arg0) {
+        obj = closure_0(closure_2[6]);
+        obj1 = { guildId, avatarDecoration: isTryItOut };
+        setPendingChangesResult = obj.setPendingChanges(obj1);
+        if (null != isTryItOut) {
+          tmp2 = closure_2;
+          tmp3 = closure_2(isTryItOut);
+        }
+        return;
+      }
+    }
+    cResult[6] = guildId;
+    cResult[7] = tmp4;
+    cResult[8] = P;
+    setTryItOutAvatarDecoration = P;
+    const tmpResult = tmp(565);
+  }
+  const fn = function s() {
+    if (isTryItOut) {
+      const tryItOutChanges = obj.getTryItOutChanges();
+      const obj5 = { pendingAvatar: null, pendingAvatarDecoration: null, pendingErrors: null };
+      ({ tryItOutAvatar: obj3.pendingAvatar, tryItOutAvatarDecoration: obj3.pendingAvatarDecoration } = tryItOutChanges);
+      obj5.pendingErrors = UserProfileSettingsStore.getErrors(guildId).avatarDecoration;
+      return obj5;
+    } else {
+      const pendingChanges = obj.getPendingChanges(guildId);
+      const obj6 = { pendingAvatar: null, pendingAvatarDecoration: null, pendingErrors: null };
+      ({ pendingAvatar: obj2.pendingAvatar, pendingAvatarDecoration: obj2.pendingAvatarDecoration } = pendingChanges);
+      obj6.pendingErrors = UserProfileSettingsStore.getErrors(guildId).avatarDecoration;
+      return obj6;
+    }
+  };
+  cResult[1] = guildId;
+  cResult[2] = isTryItOut;
+  cResult[3] = fn;
+  tmp7 = fn;
+}) : ((isTryItOut) => {
+  isTryItOut = isTryItOut.isTryItOut;
+  const guildId = isTryItOut.guildId;
+  const tmp2 = guildId(8437)(isTryItOut.analyticsLocations);
   dependencyMap = tmp2;
   const items = [UserProfileSettingsStore];
-  const stateFromStoresObject = isTryItOut(563).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = isTryItOut(565).useStateFromStoresObject(items, () => {
     if (isTryItOut) {
       const tryItOutChanges = obj.getTryItOutChanges();
       const obj5 = { pendingAvatar: null, pendingAvatarDecoration: null, pendingErrors: null };
@@ -55,12 +171,12 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   let obj2 = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: null, setPendingAvatarDecoration: null };
   if (isTryItOut) {
-    setTryItOutAvatar = tmp3(8436).setTryItOutAvatar;
+    setTryItOutAvatar = tmp3(8441).setTryItOutAvatar;
   }
   obj2.setPendingAvatar = setTryItOutAvatar;
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = tmp3(8436).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = tmp3(8441).setTryItOutAvatarDecoration;
   }
   obj2.setPendingAvatarDecoration = setTryItOutAvatarDecoration;
   return obj2;
-};
+});

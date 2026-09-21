@@ -1,9 +1,9 @@
-// Module ID: 1325
-// Function ID: 1326
+// Module ID: 1329
+// Function ID: 1330
 // Name: V8APIError
 // Dependencies: [32, 2]
 
-// Module 1325 (V8APIError)
+// Module 1329 (V8APIError)
 import _slicedToArray from "module_32" /* 32 */;
 
 function convertStringArrayToSkemaErrorItems(arr) {
@@ -179,8 +179,8 @@ prototype["getAllFieldErrorsUnder"] = function getAllFieldErrorsUnder(errors) {
   }
   return obj;
 };
-prototype["getFirstFieldErrorMessage"] = function getFirstFieldErrorMessage(name) {
-  const fieldErrors = this.getFieldErrors(name);
+prototype["getFirstFieldErrorMessage"] = function getFirstFieldErrorMessage(banner) {
+  const fieldErrors = this.getFieldErrors(banner);
   let message = null;
   if (null != fieldErrors) {
     message = null;

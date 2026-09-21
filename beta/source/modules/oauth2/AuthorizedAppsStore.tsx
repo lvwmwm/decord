@@ -1,16 +1,16 @@
-// Module ID: 7352
-// Function ID: 7353
+// Module ID: 7354
+// Function ID: 7355
 // Name: AuthorizedAppsStore
-// Dependencies: [32, 2041, 7353, 4976, 1370, 504, 573, 2]
+// Dependencies: [32, 2045, 7355, 4978, 1374, 504, 577, 2]
 
-// Module 7352 (AuthorizedAppsStore)
+// Module 7354 (AuthorizedAppsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GlobalUtils from "GlobalUtils" /* 1370 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GlobalUtils from "GlobalUtils" /* 1374 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 7353 */;
-import MessageStore from "MessageStore" /* 4976 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 7355 */;
+import MessageStore from "MessageStore" /* 4978 */;
 
 require = fn;
 function recomputeFromAppTokens() {
@@ -46,10 +46,10 @@ const prototype = AuthorizedAppsStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(ChannelStore, ConnectedAppsStore, MessageStore);
 };
-prototype["getNewestTokenForApplication"] = function getNewestTokenForApplication(applicationId) {
+prototype["getNewestTokenForApplication"] = function getNewestTokenForApplication(application_id) {
   let tmp = null;
-  if (null != applicationId) {
-    value = map.get(applicationId);
+  if (null != application_id) {
+    value = map.get(application_id);
     if (value == null) {
       value = null;
     }

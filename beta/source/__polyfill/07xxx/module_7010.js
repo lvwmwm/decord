@@ -1,321 +1,491 @@
 // Module ID: 7010
 // Function ID: 7011
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 7011, 6993, 6903]
-// Exports: LegacyBorderlessButton, LegacyPureNativeButton, LegacyRectButton
+// Dependencies: [32, 109, 19, 17, 21, 6896, 6992, 6993, 6994, 6995, 7011, 6989, 6914, 6987]
+// Exports: default
 
 // Module 7010
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import ButtonComponentDefault from "ButtonComponent" /* 6993 */;
+import tagMessage2 from "tagMessage" /* 6896 */;
+import touchDataToPressEvent from "touchDataToPressEvent" /* 6992 */;
+import StateMachineEvent2 from "StateMachineEvent" /* 6995 */;
+import GestureObjects2 from "GestureObjects" /* 7011 */;
+import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
-import module_7011 from "module_7011" /* 7011 */;
+import noop_mod from "module_19" /* 19 */;
 
-let InnerBorderlessButton = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_3 = ["rippleColor", "style"];
-let closure_4 = ["children", "style", "activeOpacity"];
-let closure_5 = ["children", "style", "innerRef", "activeOpacity"];
-_possibleConstructorReturnDefault;
-get_ActivityIndicator = fn(17);
-const Animated = get_ActivityIndicator.Animated;
-({ Platform, StyleSheet } = get_ActivityIndicator);
+require = fn;
+let closure_2 = ["testOnly_pressed", "hitSlop", "pressRetentionOffset", "delayHoverIn", "delayHoverOut", "delayLongPress", "unstable_pressDelay", "onHoverIn", "onHoverOut", "onPress", "onPressIn", "onPressOut", "onLongPress", "onLayout", "style", "children", "android_disableSound", "android_ripple", "disabled", "accessible", "simultaneousWithExternalGesture", "requireExternalGestureToFail", "blocksExternalGesture"];
+let noop = fn(19);
+({ useCallback: hasOwnProperty, useEffect: metroRequire, useMemo: closure_7, useRef: closure_8, useState: closure_9 } = noop);
+let noop = noop_mod;
+const Platform = fn(17).Platform;
 const jsxProd = fn(21);
-({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const ButtonComponent = module_7011(ButtonComponentDefault, { shouldCancelWhenOutside: false, shouldActivateOnStart: false });
-class LegacyRawButton {
-  constructor(arg0) {
-    obj = {};
-    merged = Object.assign(global);
-    obj.needsOffscreenAlphaCompositing = true;
-    return jsx(closure_15, obj);
-  }
-}
-class InnerBaseButton {
-  constructor(arg0) {
-    self = this;
-    tmp = closure_7(this, InnerBorderlessButton);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_9;
-    obj = closure_9(InnerBorderlessButton);
-    tmp3 = closure_8;
-    if (closure_2_14()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.handleEvent = (nativeEvent) => {
-      nativeEvent = nativeEvent.nativeEvent;
-      ({ state, pointerInside } = nativeEvent);
-      let tmp = pointerInside;
-      if (pointerInside) {
-        let tmp4 = state === InnerBorderlessButton(6903).State.BEGAN;
-        if (!tmp4) {
-          tmp4 = state === InnerBorderlessButton(6903).State.ACTIVE;
-        }
-        tmp = tmp4;
-      }
-      if (tmp8) {
-        const props = tmp7.props;
-        props.onActiveStateChange(tmp);
-      }
-      const longPressDetected = tmp7.longPressDetected;
-      let onPress = !longPressDetected;
-      if (!longPressDetected) {
-        onPress = nativeEvent.oldState === InnerBorderlessButton(6903).State.ACTIVE;
-      }
-      if (onPress) {
-        onPress = state !== InnerBorderlessButton(6903).State.CANCELLED;
-      }
-      if (onPress) {
-        onPress = tmp7.lastIsPressed;
-      }
-      if (onPress) {
-        onPress = tmp7.props.onPress;
-      }
-      if (onPress) {
-        const props2 = tmp7.props;
-        props2.onPress(pointerInside);
-      }
-      if (!closure_0.lastIsPressed) {
-        if (state === InnerBorderlessButton(6903).State.BEGAN) {
-          if (pointerInside) {
-            tmp7.longPressDetected = false;
-            if (tmp7.props.onLongPress) {
-              const _setTimeout = setTimeout;
-              tmp7.longPressTimeout = setTimeout(tmp7.onLongPress, tmp7.props.delayLongPress);
-            }
-          }
-          tmp7.lastIsPressed = tmp;
-        }
-      }
-      let tmp18 = state !== InnerBorderlessButton(6903).State.ACTIVE || pointerInside || undefined === tmp7.longPressTimeout;
-      if (tmp18) {
-        let tmp19 = undefined === tmp7.longPressTimeout;
-        if (!tmp19) {
-          let tmp22 = state !== InnerBorderlessButton(6903).State.END;
-          if (tmp22) {
-            tmp22 = state !== InnerBorderlessButton(6903).State.CANCELLED;
-          }
-          if (tmp22) {
-            tmp22 = state !== InnerBorderlessButton(6903).State.FAILED;
-          }
-          tmp19 = tmp22;
-        }
-        tmp18 = tmp19;
-      }
-      if (!tmp18) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp7.longPressTimeout);
-        tmp7.longPressTimeout = undefined;
-      }
-    };
-    tmp3Result.onLongPress = () => {
-      closure_0.longPressDetected = true;
-      const props = closure_0.props;
-      const onLongPress = props.onLongPress;
-      if (onLongPress != null) {
-        onLongPress();
-      }
-    };
-    tmp3Result.onHandlerStateChange = (arg0) => {
-      const props = closure_0.props;
-      if (props.onHandlerStateChange != null) {
-        onHandlerStateChange(arg0);
-      }
-      closure_0.handleEvent(arg0);
-    };
-    tmp3Result.onGestureEvent = (arg0) => {
-      const props = closure_0.props;
-      const onGestureEvent = props.onGestureEvent;
-      if (onGestureEvent != null) {
-        onGestureEvent(arg0);
-      }
-      closure_0.handleEvent(arg0);
-    };
-    tmp3Result.lastIsPressed = false;
-    tmp3Result.longPressDetected = false;
-    return tmp3Result;
-  }
-}
-InnerBorderlessButton = InnerBaseButton;
-_inherits(InnerBaseButton, noop.Component);
-const entry = {
-  key: "render",
-  value: function render() {
-    const props = this.props;
-    ({ rippleColor, style } = props);
-    const obj = { ref: this.props.innerRef, rippleColor, style: null };
-    const items = [style, false];
-    obj.style = items;
-    const merged = Object.assign(_objectWithoutProperties(props, closure_3));
-    ({ onGestureEvent: obj.onGestureEvent, onHandlerStateChange: obj.onHandlerStateChange } = this);
-    return closure_1_12(LegacyRawButton, obj);
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(InnerBaseButton, items);
-importDefaultResultResult.defaultProps = { delayLongPress: 600 };
-let closure_18 = Animated.createAnimatedComponent(importDefaultResultResult);
-class LegacyBaseButton {
-  constructor(arg0) {
-    obj = { innerRef: global.ref };
-    merged = Object.assign(Object.assign(global, Object.assign({ ref: 0 })));
-    return jsx(closure_17, obj);
-  }
-}
-function AnimatedBaseButton(innerRef) {
-  const merged = Object.assign(Object.assign(innerRef, Object.assign({ ref: 0 })));
-  return closure_1_12(closure_18, { innerRef: innerRef.ref });
-}
-const underlay = StyleSheet.create({ underlay: { position: "absolute", left: 0, right: 0, bottom: 0, top: 0 } });
-class InnerRectButton {
-  constructor(arg0) {
-    self = this;
-    tmp = closure_7(this, InnerBorderlessButton);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_9;
-    obj = closure_9(InnerBorderlessButton);
-    tmp3 = closure_8;
-    if (closure_2_14()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.onActiveStateChange = (arg0) => {
-      props = props.props;
-      const onActiveStateChange = props.onActiveStateChange;
-      if (onActiveStateChange != null) {
-        onActiveStateChange(arg0);
-      }
-    };
-    value = new c10.Value(0);
-    tmp3Result.opacity = value;
-    return tmp3Result;
-  }
-}
-InnerBorderlessButton = InnerRectButton;
-_inherits(InnerRectButton, noop.Component);
-const entry1 = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const props = this.props;
-    ({ children, style } = props);
-    let flattenResult = StyleSheet.flatten(style);
-    if (flattenResult == null) {
-      flattenResult = {};
-    }
-    const obj = {};
-    const merged = Object.assign(_objectWithoutProperties(props, closure_4));
-    obj.ref = self.props.innerRef;
-    obj.style = flattenResult;
-    obj.onActiveStateChange = self.onActiveStateChange;
-    const obj2 = { style: null };
-    const items = [underlay.underlay, { opacity: self.opacity, backgroundColor: self.props.underlayColor, borderRadius: flattenResult.borderRadius, borderTopLeftRadius: flattenResult.borderTopLeftRadius, borderTopRightRadius: flattenResult.borderTopRightRadius, borderBottomLeftRadius: flattenResult.borderBottomLeftRadius, borderBottomRightRadius: flattenResult.borderBottomRightRadius }];
-    obj2.style = items;
-    const items1 = [closure_1_12(Animated.View, obj2), children];
-    obj.children = items1;
-    return map1(LegacyBaseButton, obj);
-  }
-};
-let items1 = [entry1];
-const importDefaultResultResult1 = _createClass(InnerRectButton, items1);
-importDefaultResultResult1.defaultProps = { activeOpacity: 0.105, underlayColor: "black" };
-class InnerBorderlessButton {
-  constructor(arg0) {
-    self = this;
-    tmp = closure_7(this, InnerBorderlessButton);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_9;
-    obj = closure_9(InnerBorderlessButton);
-    tmp3 = closure_8;
-    if (closure_2_14()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.onActiveStateChange = (arg0) => {
-      props = props.props;
-      const onActiveStateChange = props.onActiveStateChange;
-      if (onActiveStateChange != null) {
-        onActiveStateChange(arg0);
-      }
-    };
-    value = new c10.Value(1);
-    tmp3Result.opacity = value;
-    return tmp3Result;
-  }
-}
-_inherits(InnerBorderlessButton, noop.Component);
-const entry2 = {
-  key: "render",
-  value: function render() {
-    const props = this.props;
-    ({ children, style, innerRef } = props);
-    const obj = {};
-    const merged = Object.assign(_objectWithoutProperties(props, closure_5));
-    obj.innerRef = innerRef;
-    obj.onActiveStateChange = this.onActiveStateChange;
-    const items = [style, false];
-    obj.style = items;
-    obj.children = children;
-    return closure_1_12(AnimatedBaseButton, obj);
-  }
-};
-const items2 = [entry2];
-const importDefaultResultResult2 = _createClass(InnerBorderlessButton, items2);
-importDefaultResultResult2.defaultProps = { activeOpacity: 0.3, borderless: true };
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+const tagMessage = fn(6896);
+let closure_13 = tagMessage.isTestEnv();
+let closure_14 = { code: "function pnpm_PressableTsx1(event){const{hoverInTimeout,clearTimeout,delayHoverOut,hoverOutTimeout,setTimeout,onHoverOut,gestureToPressableEvent}=this.__closure;var _onHoverOut2;if(hoverInTimeout.current){clearTimeout(hoverInTimeout.current);}if(delayHoverOut){hoverOutTimeout.current=setTimeout(function(){var _onHoverOut;return(_onHoverOut=onHoverOut)===null||_onHoverOut===void 0?void 0:_onHoverOut(gestureToPressableEvent(event));},delayHoverOut);return;}(_onHoverOut2=onHoverOut)===null||_onHoverOut2===void 0||_onHoverOut2(gestureToPressableEvent(event));}" };
+let closure_15 = { code: "function pnpm_PressableTsx2(event){const{hoverOutTimeout,clearTimeout,delayHoverIn,hoverInTimeout,setTimeout,onHoverIn,gestureToPressableEvent}=this.__closure;var _onHoverIn2;if(hoverOutTimeout.current){clearTimeout(hoverOutTimeout.current);}if(delayHoverIn){hoverInTimeout.current=setTimeout(function(){var _onHoverIn;return(_onHoverIn=onHoverIn)===null||_onHoverIn===void 0?void 0:_onHoverIn(gestureToPressableEvent(event));},delayHoverIn);return;}(_onHoverIn2=onHoverIn)===null||_onHoverIn2===void 0||_onHoverIn2(gestureToPressableEvent(event));}" };
+let closure_16 = { code: "function pnpm_PressableTsx3(_event,success){const{Platform,stateMachine,StateMachineEvent,handleFinalize}=this.__closure;if(Platform.OS==='web'){if(success){stateMachine.handleEvent(StateMachineEvent.FINALIZE);}else{stateMachine.handleEvent(StateMachineEvent.CANCEL);}handleFinalize();}}" };
+let closure_17 = { code: "function pnpm_PressableTsx4(event){const{gestureTouchToPressableEvent,stateMachine,handlePressOut}=this.__closure;const pressableEvent=gestureTouchToPressableEvent(event);stateMachine.reset();handlePressOut(pressableEvent,false);}" };
+let closure_18 = { code: "function pnpm_PressableTsx5(){const{Platform,isScreenReaderEnabled,stateMachine,handleFinalize}=this.__closure;if(Platform.OS==='android'&&!isScreenReaderEnabled){stateMachine.reset();handleFinalize();}}" };
+let closure_19 = { code: "function pnpm_PressableTsx6(event){const{gestureTouchToPressableEvent,stateMachine,StateMachineEvent}=this.__closure;const pressableEvent=gestureTouchToPressableEvent(event);stateMachine.handleEvent(StateMachineEvent.LONG_PRESS_TOUCHES_DOWN,pressableEvent);}" };
+let closure_20 = { code: "function pnpm_PressableTsx7(_event,success){const{Platform,stateMachine,StateMachineEvent,handleFinalize}=this.__closure;if(Platform.OS!=='web'){if(success){stateMachine.handleEvent(StateMachineEvent.FINALIZE);}else{stateMachine.handleEvent(StateMachineEvent.CANCEL);}if(Platform.OS!=='ios'){handleFinalize();}}}" };
+let closure_21 = { code: "function pnpm_PressableTsx8(){const{Platform,stateMachine,StateMachineEvent}=this.__closure;if(Platform.OS!=='android'){stateMachine.handleEvent(StateMachineEvent.NATIVE_START);}}" };
+let closure_22 = { code: "function pnpm_PressableTsx9(){const{Platform,isScreenReaderEnabled,stateMachine,StateMachineEvent,viewCenterToPressableEvent,dimensions}=this.__closure;if(Platform.OS==='android'&&isScreenReaderEnabled){stateMachine.handleEvent(StateMachineEvent.NATIVE_BEGIN,viewCenterToPressableEvent(dimensions.current));return;}stateMachine.handleEvent(StateMachineEvent.NATIVE_BEGIN);}" };
+let closure_23 = { code: "function pnpm_PressableTsx10(event){const{Platform,gestureTouchToPressableEvent,stateMachine,handlePressOut}=this.__closure;if(Platform.OS!=='macos'&&Platform.OS!=='web'){const pressableEvent=gestureTouchToPressableEvent(event);stateMachine.reset();handlePressOut(pressableEvent,false);}}" };
 
-export { LegacyRawButton };
-export { LegacyBaseButton };
-export const LegacyRectButton = (innerRef) => {
-  const merged = Object.assign(Object.assign(innerRef, Object.assign({ ref: 0 })));
-  return closure_1_12(importDefaultResultResult1, { innerRef: innerRef.ref });
-};
-export const LegacyBorderlessButton = (innerRef) => {
-  const merged = Object.assign(Object.assign(innerRef, Object.assign({ ref: 0 })));
-  return closure_1_12(importDefaultResultResult2, { innerRef: innerRef.ref });
-};
-export const LegacyPureNativeButton = (arg0) => {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  obj.needsOffscreenAlphaCompositing = true;
-  return closure_1_12(ButtonComponentDefault, obj);
+export default function _default(pressRetentionOffset) {
+  ({ testOnly_pressed, hitSlop } = pressRetentionOffset);
+  pressRetentionOffset = pressRetentionOffset.pressRetentionOffset;
+  const delayHoverIn = pressRetentionOffset.delayHoverIn;
+  const delayHoverOut = pressRetentionOffset.delayHoverOut;
+  const delayLongPress = pressRetentionOffset.delayLongPress;
+  const unstable_pressDelay = pressRetentionOffset.unstable_pressDelay;
+  const onHoverIn = pressRetentionOffset.onHoverIn;
+  const onHoverOut = pressRetentionOffset.onHoverOut;
+  const onPress = pressRetentionOffset.onPress;
+  const onPressIn = pressRetentionOffset.onPressIn;
+  const onPressOut = pressRetentionOffset.onPressOut;
+  const onLongPress = pressRetentionOffset.onLongPress;
+  const onLayout = pressRetentionOffset.onLayout;
+  ({ style, children, android_disableSound, android_ripple } = pressRetentionOffset);
+  ({ disabled, accessible, simultaneousWithExternalGesture, requireExternalGestureToFail, blocksExternalGesture } = pressRetentionOffset);
+  __initData = { simultaneousWithExternalGesture, requireExternalGestureToFail, blocksExternalGesture };
+  if (testOnly_pressed == null) {
+    testOnly_pressed = false;
+  }
+  const tmp = delayLongPress(pressRetentionOffset, delayHoverIn);
+  [tmp4, closure_15] = delayHoverOut(onPressIn(testOnly_pressed), 2);
+  __initData3 = onPress(null);
+  __initData4 = onPress(null);
+  __initData5 = onPress(true);
+  __initData6 = onPress(false);
+  onPress({ width: 0, height: 0 });
+  const items = [hitSlop];
+  const tmp5 = onHoverOut(() => {
+    if (typeof hitSlop === "number") {
+      let numberAsInsetResult = touchDataToPressEvent.numberAsInset(tmp);
+    } else {
+      numberAsInsetResult = tmp;
+      if (tmp == null) {
+        numberAsInsetResult = {};
+      }
+    }
+    return numberAsInsetResult;
+  }, items);
+  __initData7 = tmp5;
+  const items1 = [pressRetentionOffset];
+  let tmp3 = delayHoverOut(onPressIn(testOnly_pressed), 2);
+  const tmp6 = onHoverOut(() => {
+    if (typeof pressRetentionOffset === "number") {
+      let numberAsInsetResult = touchDataToPressEvent.numberAsInset(tmp);
+    } else {
+      numberAsInsetResult = tmp;
+      if (tmp == null) {
+        numberAsInsetResult = {};
+      }
+    }
+    return numberAsInsetResult;
+  }, items1);
+  const addInsetsResult = hitSlop(pressRetentionOffset[6]).addInsets(tmp5, tmp6);
+  const tmp8 = unstable_pressDelay(() => {
+    if (__initData3.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp.current);
+      tmp.current = null;
+      closure_18.current = true;
+    }
+  }, []);
+  __initData9 = tmp8;
+  let tmp9 = unstable_pressDelay(() => {
+    if (__initData4.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp.current);
+      tmp.current = null;
+    }
+  }, []);
+  closure_24 = tmp9;
+  const items2 = [onLongPress, tmp8, delayLongPress];
+  const tmp10 = unstable_pressDelay((arg0) => {
+    closure_0 = arg0;
+    if (onLongPress) {
+      __initData9();
+      let num = delayLongPress;
+      if (delayLongPress == null) {
+        num = 500;
+      }
+      closure_16.current = setTimeout(() => {
+        closure_18.current = false;
+        onLongPress(closure_0);
+      }, num);
+    }
+  }, items2);
+  closure_25 = tmp10;
+  const items3 = [onPressIn, tmp10];
+  const tmp11 = unstable_pressDelay((arg0) => {
+    if (onPressIn != null) {
+      tmp(arg0);
+    }
+    closure_25(arg0);
+    __initData2(true);
+    if (__initData4.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp5.current);
+      tmp5.current = null;
+    }
+  }, items3);
+  closure_26 = tmp11;
+  const items4 = [tmp9, tmp8];
+  const tmp12 = unstable_pressDelay(() => {
+    closure_19.current = false;
+    __initData9();
+    closure_24();
+    __initData2(false);
+  }, items4);
+  const handleFinalize = tmp12;
+  const items5 = [tmp11, tmp5, unstable_pressDelay];
+  const tmp13 = unstable_pressDelay((nativeEvent) => {
+    closure_0 = nativeEvent;
+    const changedTouches = nativeEvent.nativeEvent.changedTouches;
+    if (obj.isTouchWithinInset(ref.current, closure_21, changedTouches.at(-1))) {
+      closure_19.current = true;
+      if (unstable_pressDelay) {
+        const _setTimeout = setTimeout;
+        closure_17.current = setTimeout(() => {
+          closure_26(closure_0);
+        }, tmp2);
+      } else {
+        closure_26(nativeEvent);
+      }
+    }
+  }, items5);
+  closure_28 = tmp13;
+  const items6 = [tmp12, tmp11, onPress, onPressOut];
+  const tmp14 = unstable_pressDelay((arg0) => {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = true;
+    }
+    if (__initData6.current) {
+      tmp.current = false;
+      if (__initData4.current) {
+        closure_26(arg0);
+      }
+      if (onPressOut != null) {
+        onPressOut(arg0);
+      }
+      if (tmp9) {
+        if (onPress != null) {
+          onPress(arg0);
+        }
+      }
+      handleFinalize();
+      tmp9 = __initData5.current && flag;
+    }
+  }, items6);
+  const handlePressOut = tmp14;
+  const tmp15 = onHoverOut(() => {
+    const pressableStateMachine = new hitSlop(pressRetentionOffset[7]).PressableStateMachine();
+    return pressableStateMachine;
+  }, []);
+  const stateMachine = tmp15;
+  let obj = hitSlop(pressRetentionOffset[6]);
+  const isScreenReaderEnabled = hitSlop(pressRetentionOffset[8]).useIsScreenReaderEnabled();
+  const items7 = [tmp13, tmp14, tmp15, isScreenReaderEnabled];
+  onHoverIn(() => {
+    stateMachine.setStates(StateMachineEvent2.getStatesConfig(closure_28, closure_29, isScreenReaderEnabled));
+  }, items7);
+  const hoverInTimeout = onPress(null);
+  const hoverOutTimeout = onPress(null);
+  const items8 = [delayHoverIn, delayHoverOut, onHoverIn, onHoverOut];
+  const items9 = [tmp15, tmp12, tmp14, isScreenReaderEnabled];
+  let obj2 = hitSlop(pressRetentionOffset[8]);
+  const items10 = [tmp15, tmp14, tmp12, isScreenReaderEnabled];
+  const tmp18 = onHoverOut(() => {
+    const GestureObjects = GestureObjects2.GestureObjects;
+    const HoverResult = GestureObjects.Hover();
+    const manualActivationResult = GestureObjects.Hover().manualActivation(true);
+    const fn = function n(arg0) {
+      closure_0 = arg0;
+      if (ref2.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(tmp.current);
+      }
+      if (closure_2) {
+        const _setTimeout = setTimeout;
+        closure_32.current = setTimeout(() => {
+          let tmpResult;
+          if (onHoverIn != null) {
+            tmpResult = tmp(hitSlop(pressRetentionOffset[6]).gestureToPressableEvent(closure_0));
+            const obj = hitSlop(pressRetentionOffset[6]);
+          }
+          return tmpResult;
+        }, tmp4);
+      } else if (closure_6 != null) {
+        tmp5(hitSlop(6992).gestureToPressableEvent(arg0));
+        let obj = hitSlop(6992);
+      }
+    };
+    const cancelsTouchesInViewResult = GestureObjects.Hover().manualActivation(true).cancelsTouchesInView(false);
+    fn.__closure = { hoverOutTimeout, clearTimeout: clearTimeout, delayHoverIn, hoverInTimeout, setTimeout: setTimeout, onHoverIn, gestureToPressableEvent: touchDataToPressEvent.gestureToPressableEvent };
+    fn.__workletHash = 145410820733;
+    fn.__initData = __initData2;
+    let obj = { hoverOutTimeout, clearTimeout: clearTimeout, delayHoverIn, hoverInTimeout, setTimeout: setTimeout, onHoverIn, gestureToPressableEvent: touchDataToPressEvent.gestureToPressableEvent };
+    const fn2 = function t(arg0) {
+      closure_0 = arg0;
+      if (ref.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(tmp.current);
+      }
+      if (closure_3) {
+        const _setTimeout = setTimeout;
+        closure_33.current = setTimeout(() => {
+          let tmpResult;
+          if (onHoverOut != null) {
+            tmpResult = tmp(hitSlop(pressRetentionOffset[6]).gestureToPressableEvent(closure_0));
+            const obj = hitSlop(pressRetentionOffset[6]);
+          }
+          return tmpResult;
+        }, tmp4);
+      } else if (closure_7 != null) {
+        tmp5(hitSlop(6992).gestureToPressableEvent(arg0));
+        let obj = hitSlop(6992);
+      }
+    };
+    const onBeginResult = cancelsTouchesInViewResult.onBegin(fn);
+    fn2.__closure = { hoverInTimeout, clearTimeout: clearTimeout, delayHoverOut, hoverOutTimeout, setTimeout: setTimeout, onHoverOut, gestureToPressableEvent: touchDataToPressEvent.gestureToPressableEvent };
+    fn2.__workletHash = 117886059607;
+    fn2.__initData = __initData;
+    return onBeginResult.onFinalize(fn2);
+  }, items8);
+  closure_34 = tmp20;
+  const items11 = [
+    onHoverOut(() => {
+      const GestureObjects = GestureObjects2.GestureObjects;
+      const fn = function o(arg0) {
+        const result = hitSlop(pressRetentionOffset[6]).gestureTouchToPressableEvent(arg0);
+        navigation.reset();
+        handlePressOut(result, false);
+      };
+      const NativeResult = GestureObjects.Native();
+      fn.__closure = { Platform, gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, handlePressOut };
+      fn.__workletHash = 9061249296673;
+      fn.__initData = __initData9;
+      let obj = { Platform, gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, handlePressOut };
+      const fn2 = function s() {
+        const handleEvent = navigation.handleEvent;
+        const NATIVE_BEGIN = hitSlop(pressRetentionOffset[9]).StateMachineEvent.NATIVE_BEGIN;
+        if (isScreenReaderEnabled) {
+          handleEvent(NATIVE_BEGIN, hitSlop(pressRetentionOffset[6]).viewCenterToPressableEvent(ref.current));
+          const obj = hitSlop(pressRetentionOffset[6]);
+        } else {
+          handleEvent(NATIVE_BEGIN);
+        }
+      };
+      const onTouchesCancelledResult = NativeResult.onTouchesCancelled(fn);
+      fn2.__closure = { Platform, isScreenReaderEnabled, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent, viewCenterToPressableEvent: touchDataToPressEvent.viewCenterToPressableEvent, dimensions: ref };
+      fn2.__workletHash = 9788273325262;
+      fn2.__initData = __initData8;
+      const obj2 = { Platform, isScreenReaderEnabled, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent, viewCenterToPressableEvent: touchDataToPressEvent.viewCenterToPressableEvent, dimensions: ref };
+      const fn3 = function n() {
+
+      };
+      const onBeginResult = onTouchesCancelledResult.onBegin(fn2);
+      fn3.__closure = { Platform, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent };
+      fn3.__workletHash = 1583717288778;
+      fn3.__initData = __initData7;
+      const obj3 = { Platform, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent };
+      const fn4 = function t(arg0, arg1) {
+        const handleEvent = navigation.handleEvent;
+        const StateMachineEvent = hitSlop(pressRetentionOffset[9]).StateMachineEvent;
+        if (arg1) {
+          handleEvent(StateMachineEvent.FINALIZE);
+        } else {
+          handleEvent(StateMachineEvent.CANCEL);
+        }
+        handleFinalize();
+      };
+      const onStartResult = onBeginResult.onStart(fn3);
+      fn4.__closure = { Platform, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent, handleFinalize };
+      fn4.__workletHash = 13697558324309;
+      fn4.__initData = ref;
+      const obj4 = { Platform, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent, handleFinalize };
+      return onStartResult.onFinalize(fn4).shouldActivateOnStart(false);
+    }, items10),
+    onHoverOut(() => {
+      const GestureObjects = GestureObjects2.GestureObjects;
+      const LongPressResult = GestureObjects.LongPress();
+      const minDurationResult = GestureObjects.LongPress().minDuration(tagMessage2.INT32_MAX);
+      const maxDistanceResult = GestureObjects.LongPress().minDuration(tagMessage2.INT32_MAX).maxDistance(tagMessage2.INT32_MAX);
+      const fn = function o(arg0) {
+        const result = hitSlop(pressRetentionOffset[6]).gestureTouchToPressableEvent(arg0);
+        navigation.handleEvent(hitSlop(pressRetentionOffset[9]).StateMachineEvent.LONG_PRESS_TOUCHES_DOWN, result);
+      };
+      const cancelsTouchesInViewResult = GestureObjects.LongPress().minDuration(tagMessage2.INT32_MAX).maxDistance(tagMessage2.INT32_MAX).cancelsTouchesInView(false);
+      fn.__closure = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent };
+      fn.__workletHash = 5538605329543;
+      fn.__initData = __initData6;
+      const obj = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent };
+      const fn2 = function s() {
+        if (!isScreenReaderEnabled) {
+          navigation.reset();
+          handleFinalize();
+        }
+      };
+      fn2.__closure = { Platform, isScreenReaderEnabled, stateMachine, handleFinalize };
+      fn2.__workletHash = 8055694403599;
+      fn2.__initData = __initData5;
+      const obj2 = { Platform, isScreenReaderEnabled, stateMachine, handleFinalize };
+      const onTouchesDownResult = cancelsTouchesInViewResult.onTouchesDown(fn);
+      const fn3 = function n(arg0) {
+        const result = hitSlop(pressRetentionOffset[6]).gestureTouchToPressableEvent(arg0);
+        navigation.reset();
+        handlePressOut(result, false);
+      };
+      const onTouchesUpResult = cancelsTouchesInViewResult.onTouchesDown(fn).onTouchesUp(fn2);
+      fn3.__closure = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, handlePressOut };
+      fn3.__workletHash = 8223505277740;
+      fn3.__initData = __initData4;
+      const obj3 = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, handlePressOut };
+      const fn4 = function t(arg0, arg1) {
+
+      };
+      const onTouchesCancelledResult = onTouchesUpResult.onTouchesCancelled(fn3);
+      fn4.__closure = { Platform, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent, handleFinalize };
+      fn4.__workletHash = 946627735228;
+      fn4.__initData = __initData3;
+      return onTouchesCancelledResult.onFinalize(fn4);
+    }, items9),
+    tmp18
+  ];
+  function _loop(iter) {
+    closure_0 = iter;
+    iter.enabled(closure_34);
+    iter.runOnJS(true);
+    iter.hitSlop(addInsetsResult);
+    const entries = Object.entries(closure_14);
+    const item = entries.forEach((item) => {
+      [tmp, tmp2] = item;
+      hitSlop(pressRetentionOffset[11]).applyRelationProp(closure_0, tmp, tmp2);
+    });
+  }
+  const iter = items11[Symbol.iterator]();
+  while (iter !== undefined) {
+    let _loopResult = _loop(iter.next());
+    continue;
+  }
+  let GestureObjects = hitSlop(pressRetentionOffset[10]).GestureObjects;
+  const items12 = [...items11];
+  let style1 = style;
+  const tmp19 = onHoverOut(() => {
+    const GestureObjects = GestureObjects2.GestureObjects;
+    const LongPressResult = GestureObjects.LongPress();
+    const minDurationResult = GestureObjects.LongPress().minDuration(tagMessage2.INT32_MAX);
+    const maxDistanceResult = GestureObjects.LongPress().minDuration(tagMessage2.INT32_MAX).maxDistance(tagMessage2.INT32_MAX);
+    const fn = function o(arg0) {
+      const result = hitSlop(pressRetentionOffset[6]).gestureTouchToPressableEvent(arg0);
+      navigation.handleEvent(hitSlop(pressRetentionOffset[9]).StateMachineEvent.LONG_PRESS_TOUCHES_DOWN, result);
+    };
+    const cancelsTouchesInViewResult = GestureObjects.LongPress().minDuration(tagMessage2.INT32_MAX).maxDistance(tagMessage2.INT32_MAX).cancelsTouchesInView(false);
+    fn.__closure = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent };
+    fn.__workletHash = 5538605329543;
+    fn.__initData = __initData6;
+    const obj = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent };
+    const fn2 = function s() {
+      if (!isScreenReaderEnabled) {
+        navigation.reset();
+        handleFinalize();
+      }
+    };
+    fn2.__closure = { Platform, isScreenReaderEnabled, stateMachine, handleFinalize };
+    fn2.__workletHash = 8055694403599;
+    fn2.__initData = __initData5;
+    const obj2 = { Platform, isScreenReaderEnabled, stateMachine, handleFinalize };
+    const onTouchesDownResult = cancelsTouchesInViewResult.onTouchesDown(fn);
+    const fn3 = function n(arg0) {
+      const result = hitSlop(pressRetentionOffset[6]).gestureTouchToPressableEvent(arg0);
+      navigation.reset();
+      handlePressOut(result, false);
+    };
+    const onTouchesUpResult = cancelsTouchesInViewResult.onTouchesDown(fn).onTouchesUp(fn2);
+    fn3.__closure = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, handlePressOut };
+    fn3.__workletHash = 8223505277740;
+    fn3.__initData = __initData4;
+    const obj3 = { gestureTouchToPressableEvent: touchDataToPressEvent.gestureTouchToPressableEvent, stateMachine, handlePressOut };
+    const fn4 = function t(arg0, arg1) {
+
+    };
+    const onTouchesCancelledResult = onTouchesUpResult.onTouchesCancelled(fn3);
+    fn4.__closure = { Platform, stateMachine, StateMachineEvent: StateMachineEvent2.StateMachineEvent, handleFinalize };
+    fn4.__workletHash = 946627735228;
+    fn4.__initData = __initData3;
+    return onTouchesCancelledResult.onFinalize(fn4);
+  }, items9);
+  if (typeof style === "function") {
+    let obj3 = { pressed: tmp4 };
+    style1 = style(obj3);
+  }
+  let childrenResult = children;
+  if (typeof children === "function") {
+    let obj4 = { pressed: tmp4 };
+    childrenResult = children(obj4);
+  }
+  const items13 = [android_ripple];
+  const items14 = [onLayout];
+  const applyResult = GestureObjects.Simultaneous.apply(items12);
+  const tmp27 = onHoverOut(() => {
+    let color;
+    if (android_ripple != null) {
+      color = tmp.color;
+    }
+    if (color == null) {
+      color = str;
+    }
+    return color;
+  }, items13);
+  const obj5 = { gesture: applyResult, children: null };
+  const obj6 = {};
+  const merged = Object.assign(tmp);
+  obj6.needsOffscreenAlphaCompositing = true;
+  obj6.onLayout = unstable_pressDelay((nativeEvent) => {
+    if (onLayout != null) {
+      tmp(nativeEvent);
+    }
+    closure_20.current = nativeEvent.nativeEvent.layout;
+  }, items14);
+  obj6.accessible = false !== accessible;
+  obj6.hitSlop = addInsetsResult;
+  obj6.enabled = true !== disabled;
+  obj6.touchSoundDisabled = android_disableSound;
+  obj6.rippleColor = tmp27;
+  let radius;
+  if (android_ripple != null) {
+    radius = android_ripple.radius;
+  }
+  obj6.rippleRadius = radius;
+  const items15 = [{}, style1];
+  obj6.style = items15;
+  let tmp34;
+  if (android_ripple) {
+    tmp34 = onPress;
+  }
+  obj6.testOnly_onPress = tmp34;
+  let tmp35;
+  if (android_ripple) {
+    tmp35 = onPressIn;
+  }
+  obj6.testOnly_onPressIn = tmp35;
+  let tmp36;
+  if (android_ripple) {
+    tmp36 = onPressOut;
+  }
+  obj6.testOnly_onPressOut = tmp36;
+  let tmp37;
+  if (android_ripple) {
+    tmp37 = onLongPress;
+  }
+  obj6.testOnly_onLongPress = tmp37;
+  const items16 = [childrenResult, null];
+  obj6.children = items16;
+  obj5.children = onLayout(hitSlop(pressRetentionOffset[13]).ButtonComponent, obj6);
+  return onLongPress(hitSlop(pressRetentionOffset[12]).GestureDetector, obj5);
 };

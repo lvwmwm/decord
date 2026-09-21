@@ -1,12 +1,12 @@
-// Module ID: 4774
-// Function ID: 4775
+// Module ID: 4776
+// Function ID: 4777
 // Name: SessionsStore
-// Dependencies: [502, 504, 12, 573, 2]
+// Dependencies: [502, 504, 12, 577, 2]
 
-// Module 4774 (SessionsStore)
+// Module 4776 (SessionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 function handleUpdate(sessions) {

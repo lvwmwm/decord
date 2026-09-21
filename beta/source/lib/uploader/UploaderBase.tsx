@@ -1,19 +1,19 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8087
+// Function ID: 8088
 // Name: UploaderBase
-// Dependencies: [5, 1074, 4749, 3, 568, 12, 5392, 5352, 5353, 2]
+// Dependencies: [5, 1078, 4751, 3, 572, 12, 5394, 5354, 5355, 2]
 
-// Module 8082 (UploaderBase)
+// Module 8087 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5352 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 5354 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const AbortCodes = fn(1074).AbortCodes;
-const FileUploadErrorTypes = fn(4749).FileUploadErrorTypes;
+const AbortCodes = fn(1078).AbortCodes;
+const FileUploadErrorTypes = fn(4751).FileUploadErrorTypes;
 const logger = new LoggerDefault("UploaderBase.tsx");
-const EventEmitter = fn(568).EventEmitter;
+const EventEmitter = fn(572).EventEmitter;
 class UploaderBase extends EventEmitter {
   constructor() {
     tmp3 = new UploaderBase(tmp2, new.target, new.target, tmp);
@@ -24,8 +24,8 @@ class UploaderBase extends EventEmitter {
     tmp3._lastUpdate = 0;
     tmp3._loaded = 0;
     tmp3.alreadyStarted = false;
-    tmp3._handleStart = function _handleStart(_cancel) {
-      closure_0._cancel = _cancel;
+    tmp3._handleStart = function _handleStart(c5) {
+      closure_0._cancel = c5;
       if (!closure_0.alreadyStarted) {
         obj.emit("start", obj._file);
       }
@@ -80,7 +80,7 @@ class UploaderBase extends EventEmitter {
     };
     obj = closure_1(closure_2[5]);
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "call" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "unicodeVersion" };
     return tmp3;
   }
 }
@@ -108,7 +108,7 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -324,7 +324,7 @@ prototype["cancelItem"] = function cancelItem(itemId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

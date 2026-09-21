@@ -1,22 +1,63 @@
-// Module ID: 15258
-// Function ID: 15259
+// Module ID: 15247
+// Function ID: 15248
 // Name: PremiumSetting
-// Dependencies: [19, 1372, 4420, 1074, 21, 13664, 4414, 1115, 7659, 11696, 15259, 11725, 8940, 15261, 2]
+// Dependencies: [19, 1376, 4424, 1078, 21, 13667, 4418, 1119, 558, 568, 7661, 11565, 15248, 11594, 8938, 15250, 2]
 
-// Module 15258 (PremiumSetting)
-import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4414 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7659 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11696 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13664 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15259 */;
+// Module 15247 (PremiumSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import PremiumUtils from "PremiumUtils" /* 4418 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7661 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11565 */;
+import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13667 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15248 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1372 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import UserStore from "UserStore" /* 1376 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11725);
+fn(558);
+const ReactCompilerGating = fn(558);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+      let flag = !isPaymentsBlocked;
+      if (isPaymentsBlocked) {
+        openBlockedPaymentsCountryActionSheetDefault();
+        flag = false;
+      }
+      return flag;
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => noop.useCallback(() => {
+  const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+  let flag = !isPaymentsBlocked;
+  if (isPaymentsBlocked) {
+    openBlockedPaymentsCountryActionSheetDefault();
+    flag = false;
+  }
+  return flag;
+}, []));
+const SettingBuilders = fn(11594);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp6 = jsx(PremiumTabBadgeDefault, {});
+    cResult[0] = tmp6;
+    let first = tmp6;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => jsx(PremiumTabBadgeDefault, {}));
 const route = SettingBuilders.createRoute({
   useTitle: function getPremiumSettingTitle() {
     const mobileNitroManageSubscriptionsSettingsExperiment = MobileNitroManageSubscriptionsSettingsExperiment.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
@@ -37,23 +78,21 @@ const route = SettingBuilders.createRoute({
     }
   },
   parent: null,
-  IconComponent: fn(8940).NitroWheelIcon,
-  usePreNavigationAction: function useCanNavigateToPaymentSetting() {
-    return noop.useCallback(() => {
-      const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
-      let flag = !isPaymentsBlocked;
-      if (isPaymentsBlocked) {
-        openBlockedPaymentsCountryActionSheetDefault();
-        flag = false;
-      }
-      return flag;
-    }, []);
-  },
-  useTrailing: function usePremiumSettingTrailing() {
-    return jsx(PremiumTabBadgeDefault, {});
-  },
+  IconComponent: fn(8938).NitroWheelIcon,
+  usePreNavigationAction: tmp2,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(1);
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp6 = jsx(PremiumTabBadgeDefault, {});
+      cResult[0] = tmp6;
+      let first = tmp6;
+    } else {
+      first = cResult[0];
+    }
+    return first;
+  }) : (() => jsx(PremiumTabBadgeDefault, {})),
   screen: {
-    route: fn(1074).UserSettingsSections.PREMIUM,
+    route: fn(1078).UserSettingsSections.PREMIUM,
     getComponent() {
       return require("PremiumSettingScreen").default;
     }

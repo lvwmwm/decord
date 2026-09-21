@@ -1,24 +1,13 @@
 // Module ID: 7083
 // Function ID: 7084
-// Dependencies: [19, 6874]
-// Exports: useBottomSheetContentSizeSetter
+// Dependencies: [19, 17, 1641, 7076, 6864]
 
 // Module 7083
-import _mod19 from "module_19" /* 19 */;
-import _mod6874 from "module_6874" /* 6874 */;
+import cancelAnimation from "cancelAnimation" /* 1641 */;
 
-_mod19.useCallback;
+const animatedComponent = cancelAnimation.createAnimatedComponent(fn(17).SectionList);
+const module_7076 = fn(7076);
+const memoResult = fn(19).memo(module_7076.createBottomSheetScrollableComponent(fn(6864).SCROLLABLE_TYPE.SECTIONLIST, animatedComponent));
+memoResult.displayName = "BottomSheetSectionList";
 
-export const useBottomSheetContentSizeSetter = function useBottomSheetContentSizeSetter() {
-  const bottomSheetInternal = _mod6874.useBottomSheetInternal();
-  const enableDynamicSizing = bottomSheetInternal.enableDynamicSizing;
-  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
-  const obj2 = { setContentSize: null };
-  const items = [enableDynamicSizing, animatedContentHeight];
-  obj2.setContentSize = useCallback((arg0) => {
-    if (enableDynamicSizing) {
-      const result = animatedContentHeight.set(arg0);
-    }
-  }, items);
-  return obj2;
-};
+export default memoResult;

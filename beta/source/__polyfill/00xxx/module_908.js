@@ -1,34 +1,10 @@
 // Module ID: 908
 // Function ID: 909
-// Dependencies: [904]
-// Exports: getNavigationEntry
+// Dependencies: [686]
 
 // Module 908
-import _mod904 from "module_904" /* 904 */;
+import _mod686 from "module_686" /* 686 */;
 
-require = arg1;
-const dependencyMap = arg6;
-Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getNavigationEntry = () => {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  const _performance = _mod904.WINDOW.performance;
-  let first;
-  if (_performance != null) {
-    const getEntriesByType = _performance.getEntriesByType;
-    if (getEntriesByType != null) {
-      first = getEntriesByType("navigation")[0];
-    }
-  }
-  if (flag) {
-    if (first) {
-      if (first.responseStart > 0) {
-        const _performance2 = performance;
-      }
-    }
-  }
-  return first;
-};
+export const WINDOW = _mod686.GLOBAL_OBJ;

@@ -1,13 +1,13 @@
-// Module ID: 13188
-// Function ID: 13189
+// Module ID: 13187
+// Function ID: 13188
 // Name: VibegrationsCreateErrors
-// Dependencies: [1074, 1115, 3678, 2]
+// Dependencies: [1078, 1119, 3682, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getVibegrationsCreateErrorMessage
 
-// Module 13188 (VibegrationsCreateErrors)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
+// Module 13187 (VibegrationsCreateErrors)
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import _modDef3682 from "module_3682" /* 3682 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -66,12 +66,12 @@ export const getVibegrationsCreateErrorMessage = function getVibegrationsCreateE
   }
   if ("project_limit" === str) {
     const intl3 = util.intl;
-    return intl3.string(_modDef3678.Asusmn);
+    return intl3.string(_modDef3682.Asusmn);
   } else if ("rate_limited" === str) {
     const intl2 = util.intl;
-    return intl2.string(_modDef3678.DT6qly);
+    return intl2.string(_modDef3682.DT6qly);
   } else {
     const intl = util.intl;
-    return intl.string(_modDef3678.KKkp5Y);
+    return intl.string(_modDef3682.KKkp5Y);
   }
 };

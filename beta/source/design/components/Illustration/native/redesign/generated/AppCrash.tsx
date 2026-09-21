@@ -1,64 +1,97 @@
-// Module ID: 10105
-// Function ID: 10106
+// Module ID: 10084
+// Function ID: 10085
 // Name: AppCrash
-// Dependencies: [19, 17, 21, 8502, 10106, 10107, 10108, 4607, 2]
-// Exports: AppCrash, getAppCrashSource, useAppCrashSource
+// Dependencies: [19, 17, 21, 8507, 10085, 10086, 10087, 558, 568, 4610, 2]
+// Exports: getAppCrashSource
 
-// Module 10105 (AppCrash)
-import shared from "shared" /* 4607 */;
-import _mod8502 from "module_8502" /* 8502 */;
+// Module 10084 (AppCrash)
+import c from "c" /* 568 */;
+import shared from "shared" /* 4610 */;
+import _mod8507 from "module_8507" /* 8507 */;
 import noop from "module_19" /* 19 */;
-
-const require = globalThis.__r;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
+let ReactCompilerGating = fn(558);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const theme = shared.useThemeContext().theme;
+  if (cResult[0] !== theme) {
+    const obj3 = {
+      dark() {
+          return require("module_10085");
+        },
+      darker() {
+          return require("module_10086");
+        },
+      light() {
+          return require("module_10087");
+        }
+    };
+    const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
+    cResult[0] = theme;
+    cResult[1] = illustrationSource;
+    let tmp4 = illustrationSource;
+    const tmpResult = _mod8507;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const obj = shared;
+  return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
+    dark() {
+      return require("module_10085");
+    },
+    darker() {
+      return require("module_10086");
+    },
+    light() {
+      return require("module_10087");
+    }
+  });
+});
+let closure_4 = tmp3;
+ReactCompilerGating = fn(558);
+function getAppCrashSource(theme) {
+  return _mod8507.getIllustrationSource(theme, {
+    dark() {
+      return require("module_10085");
+    },
+    darker() {
+      return require("module_10086");
+    },
+    light() {
+      return require("module_10087");
+    }
+  });
+}
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
 
-export const getAppCrashSource = function getAppCrashSource(theme) {
-  return _mod8502.getIllustrationSource(theme, {
-    dark() {
-      return require("module_10106");
-    },
-    darker() {
-      return require("module_10107");
-    },
-    light() {
-      return require("module_10108");
+export { getAppCrashSource };
+export const useAppCrashSource = tmp3;
+export const AppCrash = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(3);
+  const tmp2 = closure_4();
+  if (cResult[0] === arg0) {
+    if (cResult[1] === tmp2) {
+      let tmp3 = cResult[2];
     }
-  });
-};
-export const useAppCrashSource = function useAppCrashSource() {
-  const obj = shared;
-  return _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_10106");
-    },
-    darker() {
-      return require("module_10107");
-    },
-    light() {
-      return require("module_10108");
-    }
-  });
-};
-export const AppCrash = function AppCrash(arg0) {
-  const obj = shared;
-  const obj4 = {};
-  const illustrationSource = _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
-    dark() {
-      return require("module_10106");
-    },
-    darker() {
-      return require("module_10107");
-    },
-    light() {
-      return require("module_10108");
-    }
-  });
+    return tmp3;
+  }
+  const obj2 = {};
   const merged = Object.assign(arg0);
-  obj4.source = illustrationSource;
+  obj2.source = tmp2;
+  const tmp5 = <Image />;
+  cResult[0] = arg0;
+  cResult[1] = tmp2;
+  cResult[2] = tmp5;
+  tmp3 = tmp5;
+}) : ((arg0) => {
+  const obj = {};
+  const merged = Object.assign(arg0);
+  obj.source = closure_4();
   return <Image />;
-};
+});

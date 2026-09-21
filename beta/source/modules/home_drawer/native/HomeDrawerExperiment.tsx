@@ -1,10 +1,10 @@
-// Module ID: 4619
-// Function ID: 4620
+// Module ID: 4622
+// Function ID: 4623
 // Name: HomeDrawerExperiment
-// Dependencies: [1435, 2]
+// Dependencies: [1439, 2]
 
-// Module 4619 (HomeDrawerExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
+// Module 4622 (HomeDrawerExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
 const obj = { name: "2025-10-mobile-home-drawer", kind: "user", defaultConfig: { enableHome: false, landOnHome: false, enablePeekHint: false }, variations: null };
 const obj2 = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };

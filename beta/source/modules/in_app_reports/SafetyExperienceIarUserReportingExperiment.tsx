@@ -1,11 +1,13 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13285
+// Function ID: 13286
 // Name: SafetyExperienceIarUserReportingExperiment
-// Dependencies: [4669, 2]
-// Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
+// Dependencies: [4672, 558, 568, 2]
+// Exports: isIarUserReportingEnabled
 
-// Module 13282 (SafetyExperienceIarUserReportingExperiment)
-import createExperiment from "module_4669" /* 4669 */;
+// Module 13285 (SafetyExperienceIarUserReportingExperiment)
+import c from "c" /* 568 */;
+import createExperiment from "module_4672" /* 4672 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false }, treatments: null };
@@ -15,9 +17,25 @@ const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/in_app_reports/SafetyExperienceIarUserReportingExperiment.tsx");
 
 export default experiment;
-export const useIsIarUserReportingEnabled = function useIsIarUserReportingEnabled(location) {
-  return experiment.useExperiment({ location }, { autoTrackExposure: true }).enabled;
-};
+export const useIsIarUserReportingEnabled = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+  const cResult = c.c(3);
+  if (cResult[0] !== location) {
+    const obj2 = { location };
+    cResult[0] = location;
+    cResult[1] = obj2;
+    let tmp2 = obj2;
+  } else {
+    tmp2 = cResult[1];
+  }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { autoTrackExposure: true };
+    cResult[2] = obj3;
+    let tmp3 = obj3;
+  } else {
+    tmp3 = cResult[2];
+  }
+  return experiment.useExperiment(tmp2, tmp3).enabled;
+}) : ((location) => experiment.useExperiment({ location }, { autoTrackExposure: true }).enabled);
 export const isIarUserReportingEnabled = function isIarUserReportingEnabled(location) {
   return experiment.getCurrentConfig({ location }, { autoTrackExposure: true }).enabled;
 };

@@ -1,14 +1,14 @@
-// Module ID: 18346
-// Function ID: 18347
+// Module ID: 18349
+// Function ID: 18350
 // Name: SentryExperimentFeatureFlagManager
-// Dependencies: [4671, 1235, 4577, 1231, 7363, 2]
+// Dependencies: [4674, 1239, 4580, 1235, 7365, 2]
 
-// Module 18346 (SentryExperimentFeatureFlagManager)
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+// Module 18349 (SentryExperimentFeatureFlagManager)
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 function isLikelyControl(registeredExperiments, variantId2) {
   if (null == registeredExperiments) {
@@ -154,7 +154,7 @@ function syncAllExperimentFlags() {
     let tmp28 = evaluatedExperiments == null;
     let tmp29;
     if (!tmp28) {
-      const guild = evaluatedExperiments.guild;
+      guild = evaluatedExperiments.guild;
       tmp28 = guild == null;
       if (!tmp28) {
         tmp29 = guild[guildId];

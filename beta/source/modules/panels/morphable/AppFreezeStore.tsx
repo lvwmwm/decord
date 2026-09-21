@@ -1,15 +1,15 @@
-// Module ID: 8561
-// Function ID: 8562
+// Module ID: 8566
+// Function ID: 8567
 // Name: AppFreezeStore
-// Dependencies: [560, 1248, 2]
+// Dependencies: [562, 1252, 2]
 
-// Module 8561 (AppFreezeStore)
-import module_560 from "module_560" /* 560 */;
+// Module 8566 (AppFreezeStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/panels/morphable/AppFreezeStore.tsx");
 
-export default module_560.create((arg0) => {
+export default module_562.create((arg0) => {
   closure_0 = arg0;
   let obj = {
     lockKeys: new Set(),

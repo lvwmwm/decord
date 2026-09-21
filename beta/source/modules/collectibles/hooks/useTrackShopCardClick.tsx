@@ -1,22 +1,101 @@
-// Module ID: 9108
-// Function ID: 9109
+// Module ID: 9106
+// Function ID: 9107
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9109, 1074, 9047, 8447, 7796, 7795, 1241, 2]
-// Exports: useTrackShopCardClick
+// Dependencies: [19, 9107, 1078, 558, 568, 9045, 8452, 7801, 7800, 1245, 2]
 
-// Module 9108 (useTrackShopCardClick)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7795 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
+// Module 9106 (useTrackShopCardClick)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7800 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7801 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useSelectedVariantIndex = fn(9109).useSelectedVariantIndex;
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const useSelectedVariantIndex = fn(9107).useSelectedVariantIndex;
+const AnalyticEvents = fn(1078).AnalyticEvents;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackShopCardClick.tsx");
 
-export const useTrackShopCardClick = function useTrackShopCardClick(product) {
+export const useTrackShopCardClick = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+  const cResult = require("c").c(10);
+  product = product.product;
+  require = product;
+  const analyticsLocations = product.analyticsLocations;
+  let obj = require("c");
+  let collectiblesAnalyticsContext = require("CollectiblesAnalyticsContext").useCollectiblesAnalyticsContext();
+  if (collectiblesAnalyticsContext == null) {
+    collectiblesAnalyticsContext = {};
+  }
+  cardId = collectiblesAnalyticsContext.cardId;
+  const sessionId = collectiblesAnalyticsContext.sessionId;
+  const tilePosition = collectiblesAnalyticsContext.tilePosition;
+  let tmp4 = tilePosition(product);
+  closure_5 = tmp4;
+  let obj2 = require("CollectiblesAnalyticsContext");
+  const currentUserIfAvailable = require("useCurrentUser").useCurrentUserIfAvailable();
+  if (cResult[0] !== currentUserIfAvailable) {
+    const shopDiscountSource = tmp(tmp2[7]).getShopDiscountSource(currentUserIfAvailable);
+    cResult[0] = currentUserIfAvailable;
+    cResult[1] = shopDiscountSource;
+    let tmp6 = shopDiscountSource;
+    const tmpResult2 = tmp(tmp2[7]);
+  } else {
+    tmp6 = cResult[1];
+  }
+  closure_6 = tmp6;
+  if (cResult[2] === analyticsLocations) {
+    if (cResult[3] === cardId) {
+      if (cResult[4] === tmp6) {
+        if (cResult[5] === product) {
+          if (cResult[6] === tmp4) {
+            if (cResult[7] === sessionId) {
+              if (cResult[8] === tilePosition) {
+                let tmp8 = cResult[9];
+              }
+              return tmp8;
+            }
+          }
+        }
+      }
+    }
+  }
+  const fn = function v(cta, arg1) {
+    if (obj.getIsVariantProduct(product)) {
+      let tmp4 = arg1;
+      if (arg1 == null) {
+        tmp4 = closure_5;
+      }
+      let skuId1;
+      if (tmp3.variants[tmp4] != null) {
+        skuId1 = tmp6.skuId;
+      }
+      if (skuId1 == null) {
+        skuId1 = tmp3.skuId;
+      }
+      let skuId = skuId1;
+    } else {
+      skuId = tmp3.skuId;
+    }
+    obj = CollectiblesProductUtils;
+    const obj3 = { sku_id: skuId, cta, shop_session_id: sessionId, card_id: cardId, product_sku_ids: null, location_stack: null, position_in_section: null, discount_source: null };
+    const obj2 = AnalyticsUtilsDefault;
+    obj3.product_sku_ids = CollectiblesProductUtils.getProductSkuIds(product);
+    obj3.location_stack = analyticsLocations;
+    obj3.position_in_section = tilePosition;
+    const tmpResult = CollectiblesProductUtils;
+    obj3.discount_source = CollectiblesUtils.getAnalyticsShopDiscountSource(closure_6);
+    obj2.track(AnalyticEvents.SHOP_CARD_CLICKED, obj3);
+  };
+  cResult[2] = analyticsLocations;
+  cResult[3] = cardId;
+  cResult[4] = tmp6;
+  cResult[5] = product;
+  cResult[6] = tmp4;
+  cResult[7] = sessionId;
+  cResult[8] = tilePosition;
+  cResult[9] = fn;
+  tmp8 = fn;
+}) : ((product) => {
   product = product.product;
   require = product;
   const analyticsLocations = product.analyticsLocations;
@@ -66,4 +145,4 @@ export const useTrackShopCardClick = function useTrackShopCardClick(product) {
     obj3.discount_source = CollectiblesUtils.getAnalyticsShopDiscountSource(shopDiscountSource);
     obj2.track(AnalyticEvents.SHOP_CARD_CLICKED, obj3);
   }, items);
-};
+});

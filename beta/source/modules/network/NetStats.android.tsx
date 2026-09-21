@@ -1,21 +1,21 @@
-// Module ID: 7701
-// Function ID: 7702
+// Module ID: 7706
+// Function ID: 7707
 // Name: NetStats
-// Dependencies: [5, 17, 5494, 7702, 2063, 1074, 3, 1464, 1463, 7716, 1091, 510, 573, 4620, 7703, 7717, 9, 2]
+// Dependencies: [5, 17, 5496, 7707, 2067, 1078, 3, 1468, 1467, 7721, 1095, 510, 577, 4623, 7708, 7722, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7701 (NetStats)
+// Module 7706 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import configure from "configure" /* 1464 */;
-import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4620 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 7716 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import configure from "configure" /* 1468 */;
+import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4623 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 7721 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7702 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import NetworkUtils_mod from "utils/NetworkUtils" /* 1463 */;
-import Dispatcher_mod from "Dispatcher" /* 573 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7707 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import NetworkUtils_mod from "utils/NetworkUtils" /* 1467 */;
+import Dispatcher_mod from "Dispatcher" /* 577 */;
 
 require = fn;
 function receiveNetworkInfoformation(result) {
@@ -52,12 +52,12 @@ function updateNetworkUsage() {
 }
 get_ActivityIndicator = fn(17);
 ({ NativeModules: closure_4, AppState } = get_ActivityIndicator);
-const AnalyticEvents = fn(1074).AnalyticEvents;
+const AnalyticEvents = fn(1078).AnalyticEvents;
 let closure_9 = new LoggerDefault("NetStats");
 let closure_10 = { signalStrengthLevel: null, isNetworkRoaming: false, cellularReceiveBytes: 0, cellularSendBytes: 0, totalReceiveBytes: 0, totalSendBytes: 0, uidReceiveBytes: 0, uidSendBytes: 0, socketBytesReceived: 0, otaBytesReceived: 0, otaNumRequests: 0, xhrBytesReceived: 0, xhrNumRequests: 0, frescoBytesReceived: 0, frescoNumRequests: 0, downloadBytesReceived: 0, downloadNumRequests: 0, mediaPlayerBytesReceived: 0 };
 let c11 = null;
 const tmp3 = new LoggerDefault("NetStats");
-let global = { type: fn(1464).NetInfoStateType.unknown, effectiveSpeed: null, serviceProvider: null };
+let global = { type: fn(1468).NetInfoStateType.unknown, effectiveSpeed: null, serviceProvider: null };
 global = null;
 let closure_14 = "active" === AppState.currentState;
 let closure_15 = 0;
@@ -161,7 +161,7 @@ prototype["writeExistingEventStorage"] = function writeExistingEventStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -229,7 +229,7 @@ prototype["track"] = function track() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

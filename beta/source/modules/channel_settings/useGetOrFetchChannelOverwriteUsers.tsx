@@ -1,25 +1,197 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 17297
+// Function ID: 17298
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 2105, 1372, 1978, 504, 17295, 5737, 1370, 2]
-// Exports: default
+// Dependencies: [32, 19, 2109, 1376, 1982, 558, 568, 504, 17298, 5739, 1374, 2]
 
-// Module 17294 (useGetOrFetchChannelOverwriteUsers)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
-import _modDef17295 from "module_17295" /* 17295 */;
+// Module 17297 (useGetOrFetchChannelOverwriteUsers)
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
+import _modDef17298 from "module_17298" /* 17298 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserStore from "UserStore" /* 1372 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel_settings/useGetOrFetchChannelOverwriteUsers.tsx");
 
-export default function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+  _require = arg0;
+  const cResult = require("c").c(17);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildMemberStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function f() {
+      return GuildMemberStore.getMemberIds(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    let tmp7 = items1;
+    let tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  let obj = require("c");
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(first, tmp6, tmp7);
+  if (cResult[4] === stateFromStoresArray) {
+    if (cResult[5] === arg1) {
+      const tmp14 = _slicedToArray(cResult[6], 2);
+      first1 = tmp14[0];
+      _slicedToArray = tmp16;
+      if (cResult[9] === arg0) {
+        if (cResult[10] === tmp16) {
+          let tmp17 = cResult[11];
+          let tmp18 = cResult[12];
+        }
+        const effect = noop.useEffect(tmp17, tmp18);
+        const _Symbol = Symbol;
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          const items2 = [UserStore];
+          cResult[13] = items2;
+        }
+        if (cResult[14] !== first1) {
+          class I {
+            constructor() {
+              mapped = closure_2.map(closure_6.getUser);
+              return mapped.filter(closure_0(closure_2[10]).isNotNullish);
+            }
+          }
+          const items3 = [first1];
+          cResult[14] = first1;
+          cResult[15] = I;
+          class F {
+            constructor() {
+              tmp2 = closure_3.length > 0;
+              tmp = closure_3;
+              if (tmp2) {
+                tmp3 = closure_0;
+                tmp4 = null;
+                tmp2 = null != closure_0;
+              }
+              if (tmp2) {
+                tmp5 = closure_1;
+                tmp6 = closure_2;
+                obj = closure_1(closure_2[9]);
+                tmp7 = closure_0;
+                flag = false;
+                membersById = obj.requestMembersById(closure_0, tmp, false);
+              }
+              return;
+            }
+          }
+        } else {
+          class I {
+            constructor() {
+              mapped = closure_2.map(closure_6.getUser);
+              return mapped.filter(closure_0(closure_2[10]).isNotNullish);
+            }
+          }
+        }
+        tmp(tmp2[7]);
+        class F {
+          constructor() {
+            tmp2 = closure_3.length > 0;
+            tmp = closure_3;
+            if (tmp2) {
+              tmp3 = closure_0;
+              tmp4 = null;
+              tmp2 = null != closure_0;
+            }
+            if (tmp2) {
+              tmp5 = closure_1;
+              tmp6 = closure_2;
+              obj = closure_1(closure_2[9]);
+              tmp7 = closure_0;
+              flag = false;
+              membersById = obj.requestMembersById(closure_0, tmp, false);
+            }
+            return;
+          }
+        }
+      }
+      class F {
+        constructor() {
+          tmp2 = closure_3.length > 0;
+          tmp = closure_3;
+          if (tmp2) {
+            tmp3 = closure_0;
+            tmp4 = null;
+            tmp2 = null != closure_0;
+          }
+          if (tmp2) {
+            tmp5 = closure_1;
+            tmp6 = closure_2;
+            obj = closure_1(closure_2[9]);
+            tmp7 = closure_0;
+            flag = false;
+            membersById = obj.requestMembersById(closure_0, tmp, false);
+          }
+          return;
+        }
+      }
+      const items4 = [tmp14[1], arg0];
+      cResult[9] = arg0;
+      cResult[10] = tmp14[1];
+      cResult[11] = F;
+      cResult[12] = items4;
+      tmp18 = items4;
+      tmp17 = F;
+    }
+  }
+  if (cResult[7] !== stateFromStoresArray) {
+    class I {
+      constructor() {
+        mapped = closure_2.map(closure_6.getUser);
+        return mapped.filter(closure_0(closure_2[10]).isNotNullish);
+      }
+    }
+    cResult[7] = stateFromStoresArray;
+    cResult[8] = S;
+    const tmp9 = S;
+  } else {
+    class I {
+      constructor() {
+        mapped = closure_2.map(closure_6.getUser);
+        return mapped.filter(closure_0(closure_2[10]).isNotNullish);
+      }
+    }
+  }
+  const tmpResult = require("initialize");
+  if (null == arg1) {
+    class I {
+      constructor() {
+        mapped = closure_2.map(closure_6.getUser);
+        return mapped.filter(closure_0(closure_2[10]).isNotNullish);
+      }
+    }
+  } else {
+    class I {
+      constructor() {
+        mapped = closure_2.map(closure_6.getUser);
+        return mapped.filter(closure_0(closure_2[10]).isNotNullish);
+      }
+    }
+    const values = Object.values(arg1);
+    const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
+    let mapped = found.map((id) => id.id);
+  }
+  const tmp10 = stateFromStoresArray(first1[8]);
+  cResult[4] = stateFromStoresArray;
+  cResult[5] = arg1;
+  cResult[6] = stateFromStoresArray(first1[8])(mapped, tmp9);
+}) : ((arg0, arg1) => {
   _require = arg0;
   closure_1 = arg1;
   let items = [GuildMemberStore];
@@ -35,7 +207,7 @@ export default function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
       const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
       items = found.map((id) => id.id);
     }
-    return _modDef17295(items, (arg0) => stateFromStoresArray.includes(arg0));
+    return _modDef17298(items, (arg0) => stateFromStoresArray.includes(arg0));
   }, items2), 2);
   first = tmp2[0];
   noop = tmp4;
@@ -56,4 +228,4 @@ export default function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
     const mapped = first.map(UserStore.getUser);
     return mapped.filter(GlobalUtils.isNotNullish);
   }, items5);
-};
+});

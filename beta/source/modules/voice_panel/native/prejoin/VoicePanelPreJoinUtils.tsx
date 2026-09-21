@@ -1,11 +1,11 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17585
+// Function ID: 17586
 // Name: VoicePanelPreJoinUtils
-// Dependencies: [558, 2]
+// Dependencies: [560, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 17627 (VoicePanelPreJoinUtils)
-import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
+// Module 17585 (VoicePanelPreJoinUtils)
+import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinUtils.tsx");

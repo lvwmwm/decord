@@ -1,21 +1,92 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12785
+// Function ID: 12786
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [19, 21, 5114, 1115, 5114, 2]
-// Exports: default
+// Dependencies: [19, 21, 558, 568, 1119, 5116, 5116, 2]
 
-// Module 12874 (UserProfileConfirmCancelFriendRequest)
-import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5114 */;
+// Module 12785 (UserProfileConfirmCancelFriendRequest)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import AlertModal from "AlertModal" /* 5116 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileConfirmCancelFriendRequest.tsx");
 
-export default function UserProfileConfirmCancelFriendRequest(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = c.c(12);
+  ({ userDisplayName, onConfirm } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1119).intl;
+    const stringResult = intl.string(tmp(1119).t["bTfA//"]);
+    cResult[0] = stringResult;
+    let first = stringResult;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== userDisplayName) {
+    const intl2 = tmp(1119).intl;
+    const obj2 = { name: userDisplayName };
+    const formatToPlainStringResult = intl2.formatToPlainString(tmp(1119).t["72FwjH"], obj2);
+    cResult[1] = userDisplayName;
+    cResult[2] = formatToPlainStringResult;
+    let tmp6 = formatToPlainStringResult;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1119).intl;
+    const stringResult1 = intl3.string(tmp(1119).t["bTfA//"]);
+    cResult[3] = stringResult1;
+    let tmp8 = stringResult1;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] !== onConfirm) {
+    const obj3 = { variant: "destructive", text: tmp8, onPress: onConfirm };
+    const tmp12 = React2(tmp(5116).AlertActionButton, obj3, "cancel-friend-request");
+    cResult[4] = onConfirm;
+    cResult[5] = tmp12;
+    let tmp10 = tmp12;
+  } else {
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { variant: "secondary", text: null };
+    const intl4 = tmp(1119).intl;
+    obj4.text = intl4.string(tmp(1119).t["eN6+rI"]);
+    const tmp15 = React2(tmp(5116).AlertActionButton, obj4, "nevermind");
+    cResult[6] = tmp15;
+    let tmp13 = tmp15;
+  } else {
+    tmp13 = cResult[6];
+  }
+  if (cResult[7] !== tmp10) {
+    const obj5 = { children: null };
+    const items = [tmp10, tmp13];
+    obj5.children = items;
+    const tmp18 = React3(tmp(5116).AlertActions, obj5);
+    cResult[7] = tmp10;
+    cResult[8] = tmp18;
+    let tmp16 = tmp18;
+  } else {
+    tmp16 = cResult[8];
+  }
+  if (cResult[9] === tmp6) {
+    if (cResult[10] === tmp16) {
+      let tmp19 = cResult[11];
+    }
+    return tmp19;
+  }
+  const tmp20 = React2(AlertModal.AlertModal, { title: first, content: tmp6, actions: tmp16 });
+  cResult[9] = tmp6;
+  cResult[10] = tmp16;
+  cResult[11] = tmp20;
+  tmp19 = tmp20;
+}) : ((arg0) => {
   ({ userDisplayName, onConfirm } = arg0);
   const obj = { title: null, content: null, actions: null };
   const intl = util.intl;
@@ -35,4 +106,4 @@ export default function UserProfileConfirmCancelFriendRequest(arg0) {
   obj2.children = items;
   obj.actions = React3(AlertModal.AlertActions, obj2);
   return React2(AlertModal.AlertModal, obj);
-};
+});

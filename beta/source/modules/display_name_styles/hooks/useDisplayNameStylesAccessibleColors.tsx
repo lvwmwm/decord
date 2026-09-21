@@ -1,24 +1,107 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11204
+// Function ID: 11205
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4748, 504, 1391, 11163, 4605, 672, 2]
-// Exports: useDisplayNameStylesAccessibleColors
+// Dependencies: [19, 4750, 558, 568, 504, 1395, 11205, 4608, 676, 2]
 
-// Module 11162 (useDisplayNameStylesAccessibleColors)
+// Module 11204 (useDisplayNameStylesAccessibleColors)
+import _modDef676 from "module_676" /* 676 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1395 */;
+import ColorUtils from "ColorUtils" /* 4608 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
-const require = fn;
+require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");
 
-export const useDisplayNameStylesAccessibleColors = function useDisplayNameStylesAccessibleColors(displayNameStyles) {
+export const useDisplayNameStylesAccessibleColors = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  const cResult = backgroundColor(effectId[3]).c(14);
+  ({ displayNameStyles, backgroundColor } = arg0);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [AccessibilityStore];
+    const fn = function l() {
+      let num = 1;
+      if (AccessibilityStore.desaturateUserColors) {
+        num = AccessibilityStore.saturation;
+      }
+      return num;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const obj = backgroundColor(effectId[3]);
+  const stateFromStores = backgroundColor(effectId[4]).useStateFromStores(tmp4, tmp5);
+  effectId = undefined;
+  if (displayNameStyles != null) {
+    effectId = displayNameStyles.effectId;
+  }
+  if (effectId == null) {
+    effectId = tmp(tmp2[5]).DisplayNameEffect.SOLID;
+  }
+  const tmpResult = backgroundColor(effectId[4]);
+  let minContrastRatio = backgroundColor(effectId[6]).useDisplayNameStylesEffectConfig(effectId);
+  if (null != displayNameStyles) {
+    if (cResult[9] === backgroundColor) {
+      if (cResult[10] === minContrastRatio.minContrastRatio) {
+        if (cResult[11] === effectId) {
+          if (cResult[12] === stateFromStores) {
+            let tmp10 = cResult[13];
+          }
+          const colors = displayNameStyles.colors;
+          const mapped = colors.map(tmp10);
+          cResult[3] = backgroundColor;
+          displayNameStyles = displayNameStyles.colors;
+          cResult[4] = displayNameStyles;
+          minContrastRatio = minContrastRatio.minContrastRatio;
+          cResult[5] = minContrastRatio;
+          cResult[6] = effectId;
+          cResult[7] = stateFromStores;
+          cResult[8] = mapped;
+        }
+      }
+    }
+    const fn2 = function b(arg0) {
+      const obj2 = { foreground: _modDef676(arg0), background: null, ratio: null, saturationFactor: null };
+      if (effectId === DisplayNameEffect.DisplayNameEffect.TOON) {
+        let tmp4 = tmp2(676)("#333");
+      } else {
+        tmp4 = tmp2(676)(backgroundColor);
+      }
+      obj2.background = tmp4;
+      obj2.ratio = minContrastRatio.minContrastRatio;
+      obj2.saturationFactor = stateFromStores;
+      const accessibleForegroundColor = ColorUtils.getAccessibleForegroundColor(obj2);
+      return accessibleForegroundColor.hex();
+    };
+    cResult[9] = backgroundColor;
+    cResult[10] = minContrastRatio.minContrastRatio;
+    cResult[11] = effectId;
+    cResult[12] = stateFromStores;
+    cResult[13] = fn2;
+    tmp10 = fn2;
+  } else {
+    const _Symbol = Symbol;
+    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [];
+      cResult[2] = items1;
+      let tmp9 = items1;
+    } else {
+      tmp9 = cResult[2];
+    }
+    return tmp9;
+  }
+}) : ((displayNameStyles) => {
   displayNameStyles = displayNameStyles.displayNameStyles;
   const backgroundColor = displayNameStyles.backgroundColor;
   let stateFromStores;
   let displayNameStylesEffectConfig;
   let items = [displayNameStylesEffectConfig];
-  stateFromStores = displayNameStyles(stateFromStores[2]).useStateFromStores(items, () => {
+  stateFromStores = displayNameStyles(stateFromStores[4]).useStateFromStores(items, () => {
     let num = 1;
     if (displayNameStylesEffectConfig.desaturateUserColors) {
       num = displayNameStylesEffectConfig.saturation;
@@ -30,10 +113,10 @@ export const useDisplayNameStylesAccessibleColors = function useDisplayNameStyle
     effectId = displayNameStyles.effectId;
   }
   if (effectId == null) {
-    effectId = tmp(tmp2[3]).DisplayNameEffect.SOLID;
+    effectId = tmp(tmp2[5]).DisplayNameEffect.SOLID;
   }
-  const obj = displayNameStyles(stateFromStores[2]);
-  displayNameStylesEffectConfig = displayNameStyles(stateFromStores[4]).useDisplayNameStylesEffectConfig(effectId);
+  const obj = displayNameStyles(stateFromStores[4]);
+  displayNameStylesEffectConfig = displayNameStyles(stateFromStores[6]).useDisplayNameStylesEffectConfig(effectId);
   const items1 = [displayNameStyles, effectId, displayNameStylesEffectConfig.minContrastRatio, stateFromStores, backgroundColor];
   return effectId.useMemo(() => {
     if (null == displayNameStyles) {
@@ -41,19 +124,19 @@ export const useDisplayNameStylesAccessibleColors = function useDisplayNameStyle
     } else {
       const colors = tmp.colors;
       items = colors.map((item) => {
-        const obj2 = { foreground: backgroundColor(stateFromStores[6])(item), background: null, ratio: null, saturationFactor: null };
-        if (effectId === displayNameStyles(stateFromStores[3]).DisplayNameEffect.TOON) {
-          let tmp4 = tmp2(tmp[6])("#333");
+        const obj2 = { foreground: backgroundColor(stateFromStores[8])(item), background: null, ratio: null, saturationFactor: null };
+        if (effectId === displayNameStyles(stateFromStores[5]).DisplayNameEffect.TOON) {
+          let tmp4 = tmp2(tmp[8])("#333");
         } else {
-          tmp4 = tmp2(tmp[6])(closure_1_1);
+          tmp4 = tmp2(tmp[8])(closure_1_1);
         }
         obj2.background = tmp4;
         obj2.ratio = minContrastRatio.minContrastRatio;
         obj2.saturationFactor = saturationFactor;
-        const accessibleForegroundColor = displayNameStyles(stateFromStores[5]).getAccessibleForegroundColor(obj2);
+        const accessibleForegroundColor = displayNameStyles(stateFromStores[7]).getAccessibleForegroundColor(obj2);
         return accessibleForegroundColor.hex();
       });
     }
     return items;
   }, items1);
-};
+});

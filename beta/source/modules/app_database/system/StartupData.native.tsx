@@ -1,13 +1,13 @@
-// Module ID: 2088
-// Function ID: 2089
+// Module ID: 2092
+// Function ID: 2093
 // Name: StartupData
-// Dependencies: [17, 1364, 2089, 2]
+// Dependencies: [17, 1368, 2093, 2]
 // Exports: getUserId, setUserId
 
-// Module 2088 (StartupData)
+// Module 2092 (StartupData)
 import _mod17 from "module_17" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import NativeAppDatabaseModuleDefault from "NativeAppDatabaseModule" /* 2089 */;
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import NativeAppDatabaseModuleDefault from "NativeAppDatabaseModule" /* 2093 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

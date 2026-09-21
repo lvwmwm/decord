@@ -1,12 +1,12 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 11967
+// Function ID: 11968
 // Name: GuildSettingsModalMembersStore
-// Dependencies: [2105, 1074, 504, 573, 2]
+// Dependencies: [2109, 1078, 504, 577, 2]
 
-// Module 12091 (GuildSettingsModalMembersStore)
+// Module 11967 (GuildSettingsModalMembersStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 
 function handleStopEditingRoles() {
   SUBMITTING = null;
@@ -18,7 +18,7 @@ function handleStopEditingRoles() {
 function handleChangeNicknameSuccess() {
   error = null;
 }
-const FormStates = fn(1074).FormStates;
+const FormStates = fn(1078).FormStates;
 let SUBMITTING = null;
 let c3 = false;
 let error = null;

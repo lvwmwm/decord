@@ -1,31 +1,107 @@
-// Module ID: 11249
-// Function ID: 11250
+// Module ID: 11281
+// Function ID: 11282
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4756, 576, 1612, 5848, 8107, 5841, 1364, 7188, 2]
-// Exports: default
+// Dependencies: [19, 21, 4758, 580, 558, 568, 1616, 8112, 5839, 1368, 7186, 5848, 2]
 
-// Module 11249 (SearchableDestinationListHeader)
-import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+// Module 11281 (SearchableDestinationListHeader)
+import nativeDefault from "native" /* 580 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
+import NavigatorHeader from "NavigatorHeader" /* 5839 */;
 import _mod5848 from "module_5848" /* 5848 */;
-import HeaderShared from "HeaderShared" /* 8107 */;
+import HeaderShared from "HeaderShared" /* 8112 */;
 import noop from "module_19" /* 19 */;
 
-const useIsWindowLarge = tmp5(7188);
+const useIsWindowLarge = tmp5(7186);
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj2 = { headerLeftContainer: { paddingLeft: nativeDefault.space.PX_16 }, headerRightContainer: null, header: null };
 const obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj2.headerRightContainer = { paddingRight: nativeDefault.space.PX_16 };
 const obj4 = { paddingRight: nativeDefault.space.PX_16 };
 obj2.header = { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_4 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
+const obj5 = { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/share/native/SearchableDestinationListHeader.tsx");
 
-export default function SearchableDestinationListHeader(arg0) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
+  const cResult = subtitle(568).c(16);
+  ({ title, subtitle } = subtitleColor);
+  subtitleColor = subtitleColor.subtitleColor;
+  ({ headerRight, onClose } = subtitleColor);
+  const tmp4 = closure_4();
+  const top = subtitleColor(1616)().top;
+  if (cResult[0] === subtitle) {
+    if (cResult[1] === subtitleColor) {
+      let tmp7 = cResult[2];
+    }
+    if (cResult[3] !== onClose) {
+      const headerCloseButton = tmp(5839).getHeaderCloseButton(onClose);
+      cResult[3] = onClose;
+      cResult[4] = headerCloseButton;
+      let tmp8 = headerCloseButton;
+      const tmpResult = tmp(5839);
+    } else {
+      tmp8 = cResult[4];
+    }
+    if (cResult[5] !== top) {
+      if (!tmpResult3.isIOS()) {
+        let num3 = top;
+      } else {
+        num3 = 0;
+        const tmpResult4 = tmp(7186);
+      }
+      cResult[5] = top;
+      cResult[6] = num3;
+      let tmp10 = num3;
+      tmpResult3 = tmp(1368);
+    } else {
+      tmp10 = cResult[6];
+    }
+    const sum = tmp10 + subtitleColor(580).space.PX_8;
+    if (cResult[7] === headerRight) {
+      if (cResult[8] === tmp4.header) {
+        if (cResult[9] === tmp4.headerLeftContainer) {
+          if (cResult[10] === tmp4.headerRightContainer) {
+            if (cResult[11] === tmp7) {
+              if (cResult[12] === tmp8) {
+                if (cResult[13] === sum) {
+                  if (cResult[14] === title) {
+                    let tmp12 = cResult[15];
+                  }
+                  return tmp12;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    const obj2 = { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: null };
+    ({ headerLeftContainer: obj5.headerLeftContainerStyle, headerRightContainer: obj5.headerRightContainerStyle } = tmp4);
+    obj2.headerStatusBarHeight = sum;
+    const tmp14 = jsx(tmp(5848).Header, { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: null });
+    cResult[7] = headerRight;
+    cResult[8] = tmp4.header;
+    cResult[9] = tmp4.headerLeftContainer;
+    cResult[10] = tmp4.headerRightContainer;
+    cResult[11] = tmp7;
+    cResult[12] = tmp8;
+    cResult[13] = sum;
+    cResult[14] = title;
+    cResult[15] = tmp14;
+    tmp12 = tmp14;
+  }
+  const fn = function o(children) {
+    return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle, subtitleColor, variant: "redesign/heading-18/bold" });
+  };
+  cResult[0] = subtitle;
+  cResult[1] = subtitleColor;
+  cResult[2] = fn;
+  tmp7 = fn;
+}) : ((arg0) => {
   ({ subtitle: require, subtitleColor: importDefault } = arg0);
   ({ title, headerRight, onClose } = arg0);
   const tmp = closure_4();
@@ -52,4 +128,4 @@ export default function SearchableDestinationListHeader(arg0) {
   }
   obj.headerStatusBarHeight = num + nativeDefault.space.PX_8;
   return tmp4(_mod5848.Header, obj);
-};
+});

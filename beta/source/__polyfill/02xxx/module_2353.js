@@ -1,9 +1,9 @@
 // Module ID: 2353
 // Function ID: 2354
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 2353
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", scales: [1], hash: "3b05b81e91810e320c6eda5d22d2b595", name: "da.messages.3b05b81e91810e320c6eda5d22d2b595.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/go_live", scales: [1], hash: "f6e3c365e8a3adf05325d11d5ed6a02b", name: "MobileGoLiveActionSheet.compiled.messages", type: "jsona" });

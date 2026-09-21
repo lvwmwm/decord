@@ -1,24 +1,24 @@
-// Module ID: 7364
-// Function ID: 7365
+// Module ID: 7366
+// Function ID: 7367
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 4937, 1074, 4408, 1084, 573, 7359, 7361, 11, 4607, 1115, 1385, 1271, 2]
+// Dependencies: [5, 4939, 1078, 4412, 1088, 577, 7361, 7363, 11, 4610, 1119, 1389, 1275, 2]
 
-// Module 7364 (NotificationSettingsModalActionCreators)
+// Module 7366 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1115 */;
-import shared from "shared" /* 4607 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7359 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7361 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import util from "util" /* 1119 */;
+import shared from "shared" /* 4610 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7363 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const Endpoints = fn(1074).Endpoints;
-const constants = fn(4408).NotificationSettingsUpdateType;
-let closure_7 = fn(1084).ChannelNotificationSettingsFlags;
+const Endpoints = fn(1078).Endpoints;
+const constants = fn(4412).NotificationSettingsUpdateType;
+let closure_7 = fn(1088).ChannelNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/NotificationSettingsModalActionCreators.tsx");
 
@@ -57,16 +57,16 @@ export default {
       const result = NotificationSettingsUtils.trackChannelNotificationSettingsUpdate({ guildId, channelId, change: channel_overrides.channel_overrides[channelId], previous: value, label, location: _location });
     });
   },
-  updateChannelOverrideSettings(guildId, id, muteSettings, NotificationLabel, location) {
-    const currentChannelSettings = NotificationSettingsUtils.getCurrentChannelSettings(guildId, id);
-    const result = UserGuildSettingsManagerDefault.saveUserGuildSettings(guildId, { channel_overrides: { [id]: muteSettings } });
+  updateChannelOverrideSettings(guild_id, id, muteSettings, NotificationLabel, location) {
+    const currentChannelSettings = NotificationSettingsUtils.getCurrentChannelSettings(guild_id, id);
+    const result = UserGuildSettingsManagerDefault.saveUserGuildSettings(guild_id, { channel_overrides: { [id]: muteSettings } });
     const obj3 = { channel_overrides: { [id]: muteSettings } };
-    DispatcherDefault.dispatch({ type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings: muteSettings });
+    DispatcherDefault.dispatch({ type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId: guild_id, channelId: id, settings: muteSettings });
     const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
     const intl = util.intl;
     AccessibilityAnnouncer.announce(intl.string(util.t.MlIsJ8));
-    const obj5 = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings: muteSettings };
-    const result1 = NotificationSettingsUtils.trackChannelNotificationSettingsUpdate({ guildId, channelId: id, change: muteSettings, previous: currentChannelSettings, label: NotificationLabel, location });
+    const obj5 = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId: guild_id, channelId: id, settings: muteSettings };
+    const result1 = NotificationSettingsUtils.trackChannelNotificationSettingsUpdate({ guildId: guild_id, channelId: id, change: muteSettings, previous: currentChannelSettings, label: NotificationLabel, location });
   },
   updateChannelOverrideSettingsBulk(guildId, channel_overrides, OptedOut, _location) {
     _require = guildId;
@@ -85,16 +85,16 @@ export default {
       return obj.trackChannelNotificationSettingsUpdate({ guildId, channelId, change: closure_1[channelId], previous: closure_4.get(channelId), label, location: _location });
     });
   },
-  updateAppDMOverrideSettings(guildId, id, id2, settings, NotificationLabel2) {
-    const currentChannelSettings = NotificationSettingsUtils.getCurrentChannelSettings(guildId, id);
-    const result = UserGuildSettingsManagerDefault.saveUserGuildSettings(guildId, { channel_overrides: { [id]: settings } });
-    const obj3 = { channel_overrides: { [id]: settings } };
-    DispatcherDefault.dispatch({ type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings });
+  updateAppDMOverrideSettings(guildId, id2, id, settings, NotificationLabel2) {
+    const currentChannelSettings = NotificationSettingsUtils.getCurrentChannelSettings(guildId, id2);
+    const result = UserGuildSettingsManagerDefault.saveUserGuildSettings(guildId, { channel_overrides: { [id2]: settings } });
+    const obj3 = { channel_overrides: { [id2]: settings } };
+    DispatcherDefault.dispatch({ type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id2, settings });
     const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
     const intl = util.intl;
     AccessibilityAnnouncer.announce(intl.string(util.t.MlIsJ8));
-    const obj5 = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id, settings };
-    const result1 = NotificationSettingsUtils.trackChannelNotificationSettingsUpdate({ updateType: constants.AUTHORIZED_APP_DM, guildId, channelId: id, applicationId: id2, change: settings, previous: currentChannelSettings, label: NotificationLabel2 });
+    const obj5 = { type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE", guildId, channelId: id2, settings };
+    const result1 = NotificationSettingsUtils.trackChannelNotificationSettingsUpdate({ updateType: constants.AUTHORIZED_APP_DM, guildId, channelId: id2, applicationId: id, change: settings, previous: currentChannelSettings, label: NotificationLabel2 });
   },
   setForumThreadsCreated(channel, arg1) {
     if (arg1) {
@@ -121,7 +121,7 @@ export default {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -137,14 +137,14 @@ export default {
             } else {
               closure_0 = tmp5;
               closure_128_0 = undefined;
-              const setFlagResult = closure_0(1385).setFlag(UserGuildSettingsStore.accountNotificationSettings.flags, closure_0, tmp2);
+              const setFlagResult = closure_0(1389).setFlag(UserGuildSettingsStore.accountNotificationSettings.flags, closure_0, tmp2);
               closure_128_0 = setFlagResult;
-              const HTTP = closure_0(1271).HTTP;
+              const HTTP = closure_0(1275).HTTP;
               const request = { url: constants.ACCOUNT_NOTIFICATION_SETTINGS, body: null, rejectWithError: null };
               const obj5 = { flags: setFlagResult };
               request.body = obj5;
-              const obj10 = closure_0(1385);
-              request.rejectWithError = closure_0(1271).rejectWithMigratedError();
+              const obj10 = closure_0(1389);
+              request.rejectWithError = closure_0(1275).rejectWithMigratedError();
               dependencyMap = 1;
               c3 = 1;
               const obj6 = { value: HTTP.patch(request), done: false };
@@ -164,7 +164,7 @@ export default {
               obj8.settings = obj9;
               dependencyMap = 2;
               c3 = 1;
-              const obj11 = { value: tmp2(573).dispatch(obj8), done: false };
+              const obj11 = { value: tmp2(577).dispatch(obj8), done: false };
               return obj11;
             }
           } else if (arg0 === 1) {
@@ -176,7 +176,7 @@ export default {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = tmp;

@@ -1,12 +1,12 @@
-// Module ID: 9422
-// Function ID: 9423
+// Module ID: 9420
+// Function ID: 9421
 // Name: imagePreConvert
-// Dependencies: [32, 5, 5344, 5388, 5483, 1980, 5389, 5390, 5373, 2]
+// Dependencies: [32, 5, 5346, 5390, 5485, 1984, 5391, 5392, 5375, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 9422 (imagePreConvert)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import Upload from "Upload" /* 5344 */;
+// Module 9420 (imagePreConvert)
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import Upload from "Upload" /* 5346 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -25,10 +25,10 @@ function preConversionFormat(platform) {
             str2 = "jxr";
           }
           str = str2;
-          tmpResult2 = tmp(5388);
+          tmpResult2 = tmp(5390);
         }
         tmp3 = str;
-        tmpResult = tmp(5388);
+        tmpResult = tmp(5390);
       }
     }
   }
@@ -45,7 +45,7 @@ let closure_5 = async function _maybePreConvertImageItem(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -253,10 +253,10 @@ export const itemNeedsImagePreConversion = function itemNeedsImagePreConversion(
             str2 = "jxr";
           }
           str = str2;
-          tmpResult2 = tmp(5388);
+          tmpResult2 = tmp(5390);
         }
         tmp3 = str;
-        tmpResult = tmp(5388);
+        tmpResult = tmp(5390);
       }
     }
   }

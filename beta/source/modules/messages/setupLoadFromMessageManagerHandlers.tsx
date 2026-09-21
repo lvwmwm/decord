@@ -1,13 +1,13 @@
-// Module ID: 17828
-// Function ID: 17829
+// Module ID: 17831
+// Function ID: 17832
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: [7522, 2095, 1091, 2]
+// Dependencies: [7524, 2099, 1095, 2]
 // Exports: default
 
-// Module 17828 (setupLoadFromMessageManagerHandlers)
-import DurationsDefault from "Durations" /* 1091 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7522 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 17831 (setupLoadFromMessageManagerHandlers)
+import DurationsDefault from "Durations" /* 1095 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7524 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 
 let closure_2 = 5 * DurationsDefault.Millis.SECOND;
 const size = fn(2);
@@ -135,7 +135,7 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
   const onBeforeBatch = obj.onBeforeBatch;
   const set = new Set();
   let map = new Map();
-  map1 = new Map();
+  const map1 = new Map();
   let obj2 = {};
   const merged = Object.assign(actions.actions);
   obj2.POST_CONNECTION_OPEN = function POST_CONNECTION_OPEN() {

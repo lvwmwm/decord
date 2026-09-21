@@ -1,20 +1,20 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 10469
+// Function ID: 10470
 // Name: age_gate/AgeGateUtils
-// Dependencies: [2063, 4395, 1372, 1074, 1364, 4959, 10553, 1980, 9410, 2]
+// Dependencies: [2067, 4399, 1376, 1078, 1368, 4961, 10470, 1984, 9408, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite, shouldNSFWGateGuild
 
-// Module 10552 (age_gate/AgeGateUtils)
-import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import UserStore from "UserStore" /* 1372 */;
+// Module 10469 (age_gate/AgeGateUtils)
+import PlatformUtils from "PlatformUtils" /* 1368 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import PermissionStore from "PermissionStore" /* 4399 */;
+import UserStore from "UserStore" /* 1376 */;
 
-const asyncRequireImpl = tmp(1980);
-const AgeRestrictedContentSettingsUtils = tmp(9410);
+const asyncRequireImpl = tmp(1984);
+const AgeRestrictedContentSettingsUtils = tmp(9408);
 require = fn;
-const Constants = fn(1074);
+const Constants = fn(1078);
 const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
 const Permissions = Constants.Permissions;
 const items = [, ];
@@ -40,7 +40,7 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
   if (obj.isIOS()) {
     let nsfw_level;
     if (invite != null) {
-      const guild = invite.guild;
+      guild = invite.guild;
       if (guild != null) {
         nsfw_level = guild.nsfw_level;
       }
@@ -70,9 +70,9 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
         }
       }
       const obj3 = { guildId: id1 };
-      obj2.pushLazy(asyncRequireImpl(10553, tmp2.paths), obj3);
+      obj2.pushLazy(asyncRequireImpl(10470, tmp2.paths), obj3);
       flag2 = true;
-      const tmp12 = asyncRequireImpl(10553, tmp2.paths);
+      const tmp12 = asyncRequireImpl(10470, tmp2.paths);
     }
     return flag2;
   } else {
@@ -83,7 +83,7 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
 };
 export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
   if (obj.isIOS()) {
-    const guild = GuildStore.getGuild(guildId);
+    guild = GuildStore.getGuild(guildId);
     const currentUser = UserStore.getCurrentUser();
     if (null != guild) {
       if (null != currentUser) {

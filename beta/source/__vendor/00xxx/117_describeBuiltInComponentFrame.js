@@ -3596,7 +3596,7 @@ function updateActionStateImpl(queue, c166, memoizedState) {
       queue = tmp6.queue;
       if (memoizedState !== tmp6.memoizedState) {
         _null.flags = _null.flags | 2048;
-        pushSimpleEffect(9, { destroy: "r" }, actionStateActionEffect.bind(null, queue, memoizedState), null);
+        pushSimpleEffect(9, { destroy: "emoji" }, actionStateActionEffect.bind(null, queue, memoizedState), null);
       }
       items = [tmp2, queue.dispatch, tmp];
       return items;
@@ -4233,7 +4233,7 @@ function constructClassInstance(_reactInternals, type3, memoizedProps) {
     }
   }
   const tmp6 = new type3(memoizedProps, tmp);
-  let state = null;
+  state = null;
   if (null !== tmp6.state) {
     state = null;
     if (undefined !== tmp6.state) {
@@ -5341,7 +5341,7 @@ function finishClassComponent(updateQueue, ref, type3, flag3, arg4, current) {
       return bailoutOnAlreadyFinishedWork(tmp, ref, current);
     }
   }
-  let state = ref.stateNode;
+  state = ref.stateNode;
   if (!(128 & ref.flags)) {
     let renderResult = state.render();
   } else {
@@ -5911,7 +5911,7 @@ function updateSuspenseListComponent(child, pendingProps, current) {
           if ("together" === revealOrder) {
             memoizedState = pendingProps.memoizedState;
             if (null === memoizedState) {
-              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "ip", treeForkCount: false };
+              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "duration", treeForkCount: false };
             } else {
               memoizedState.isBackwards = false;
               memoizedState.rendering = null;
@@ -15908,7 +15908,7 @@ function createChildReconciler(arg0) {
                   tmp100 = tmp103;
                 } else {
                   const _Map = Map;
-                  map1 = new Map();
+                  const map1 = new Map();
                   let sibling7 = sibling6;
                   if (null !== sibling6) {
                     do {
@@ -16286,7 +16286,7 @@ function updateSyncExternalStore(serializer, getSnapshot) {
     return tmp3;
   }
   _null.flags = _null.flags | 2048;
-  const lastEffect = { tag: 9, create: updateStoreInstance.bind(null, tmp, queue, tmp3, getSnapshot), deps: null, inst: { destroy: "r" }, next: null };
+  const lastEffect = { tag: 9, create: updateStoreInstance.bind(null, tmp, queue, tmp3, getSnapshot), deps: null, inst: { destroy: "emoji" }, next: null };
   let updateQueue = _null.updateQueue;
   if (null === updateQueue) {
     obj2 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -16626,7 +16626,7 @@ function mountEffect(create, arg1) {
   if (undefined !== arg1) {
     tmp4 = arg1;
   }
-  obj2 = { tag: 9, create, deps: tmp4, inst: { destroy: "r" }, next: null };
+  obj2 = { tag: 9, create, deps: tmp4, inst: { destroy: "emoji" }, next: null };
   let updateQueue = _null.updateQueue;
   if (null === updateQueue) {
     const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -16699,11 +16699,11 @@ let closure_210 = {
   },
   useContext: readContext,
   useEffect: mountEffect,
-  useImperativeHandle(ref, chatInputRefObjectCallback, items) {
+  useImperativeHandle(ref, cResult, cResult2) {
     let combined = null;
-    if (null != items) {
+    if (null != cResult2) {
       items = [ref];
-      combined = items.concat(items);
+      combined = cResult2.concat(items);
     }
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
@@ -16716,7 +16716,7 @@ let closure_210 = {
     if (undefined !== combined) {
       tmp6 = combined;
     }
-    obj2 = { tag: 5, create: imperativeHandleEffect.bind(null, chatInputRefObjectCallback, ref), deps: tmp6, inst: { destroy: "r" }, next: null };
+    obj2 = { tag: 5, create: imperativeHandleEffect.bind(null, cResult, ref), deps: tmp6, inst: { destroy: "emoji" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -16733,7 +16733,7 @@ let closure_210 = {
     }
     next.memoizedState = obj2;
   },
-  useLayoutEffect(create, items) {
+  useLayoutEffect(fn, items) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       _null.memoizedState = next;
@@ -16745,7 +16745,7 @@ let closure_210 = {
     if (undefined !== items) {
       tmp4 = items;
     }
-    obj2 = { tag: 5, create, deps: tmp4, inst: { destroy: "r" }, next: null };
+    obj2 = { tag: 5, create: fn, deps: tmp4, inst: { destroy: "emoji" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -16762,7 +16762,7 @@ let closure_210 = {
     }
     next.memoizedState = obj2;
   },
-  useInsertionEffect(create, items) {
+  useInsertionEffect(cResult, items) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       _null.memoizedState = next;
@@ -16774,7 +16774,7 @@ let closure_210 = {
     if (undefined !== items) {
       tmp4 = items;
     }
-    obj2 = { tag: 3, create, deps: tmp4, inst: { destroy: "r" }, next: null };
+    obj2 = { tag: 3, create: cResult, deps: tmp4, inst: { destroy: "emoji" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -16812,7 +16812,7 @@ let closure_210 = {
     mountWorkInProgressHook().memoizedState = items;
     return tmp5;
   },
-  useReducer(lastRenderedReducer, arg1, fn) {
+  useReducer(cResult, arg1, fn) {
     const tmp3 = mountWorkInProgressHook();
     let tmp4 = arg1;
     if (undefined !== fn) {
@@ -16833,15 +16833,15 @@ let closure_210 = {
     }
     tmp3.baseState = tmp4;
     tmp3.memoizedState = tmp4;
-    const queue = { pending: null, lanes: 0, dispatch: null, lastRenderedReducer, lastRenderedState: tmp4 };
+    const queue = { pending: null, lanes: 0, dispatch: null, lastRenderedReducer: cResult, lastRenderedState: tmp4 };
     tmp3.queue = queue;
     const bindResult = dispatchReducerAction.bind(null, c165, queue);
     queue.dispatch = bindResult;
     items = [tmp3.memoizedState, bindResult];
     return items;
   },
-  useRef(set) {
-    memoizedState = { current: set };
+  useRef(cResult) {
+    memoizedState = { current: cResult };
     obj2 = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === memoizedState) {
       memoizedState = obj2;
@@ -16952,7 +16952,7 @@ let closure_210 = {
         next = obj5;
       }
       _null.flags = _null.flags | 8390656;
-      obj6 = { tag: 9, create: subscribeToStore.bind(null, tmp, obj4, subscribe), deps: items2, inst: { destroy: "r" }, next: null };
+      obj6 = { tag: 9, create: subscribeToStore.bind(null, tmp, obj4, subscribe), deps: items2, inst: { destroy: "emoji" }, next: null };
       let updateQueue2 = _null.updateQueue;
       if (null === updateQueue2) {
         obj7 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -16969,7 +16969,7 @@ let closure_210 = {
       }
       next.memoizedState = obj6;
       tmp.flags = tmp.flags | 2048;
-      const obj8 = { tag: 9, create: updateStoreInstance.bind(null, tmp, obj4, tmp4, get), deps: null, inst: { destroy: "r" }, next: null };
+      const obj8 = { tag: 9, create: updateStoreInstance.bind(null, tmp, obj4, tmp4, get), deps: null, inst: { destroy: "emoji" }, next: null };
       let updateQueue3 = _null.updateQueue;
       if (null === updateQueue3) {
         obj9 = { lastEffect: null, events: null, stores: null, memoCache: null };
@@ -17030,14 +17030,14 @@ let closure_210 = {
     next.memoizedState = bindResult;
     return bindResult;
   },
-  useEffectEvent(impl) {
+  useEffectEvent(cResult) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       c165.memoizedState = next;
     } else {
       tmp.next = next;
     }
-    obj2 = { impl };
+    obj2 = { impl: cResult };
     next.memoizedState = obj2;
     return () => {
       if (2 & closure_277) {

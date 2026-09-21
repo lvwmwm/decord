@@ -1,15 +1,15 @@
-// Module ID: 7579
-// Function ID: 7580
+// Module ID: 7581
+// Function ID: 7582
 // Name: StickerSendability
-// Dependencies: [2105, 5721, 1074, 4414, 5103, 4400, 2]
+// Dependencies: [2109, 5723, 1078, 4418, 5105, 4404, 2]
 // Exports: isSendableSticker
 
-// Module 7579 (StickerSendability)
-import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import StickersUtils from "StickersUtils" /* 5103 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import StickersPackStore from "StickersPackStore" /* 5721 */;
+// Module 7581 (StickerSendability)
+import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
+import StickersUtils from "StickersUtils" /* 5105 */;
+import GuildMemberStore from "GuildMemberStore" /* 2109 */;
+import StickersPackStore from "StickersPackStore" /* 5723 */;
 
 require = fn;
 function getStickerSendability(item10030, currentUser, channel) {
@@ -51,7 +51,7 @@ function getStickerSendability(item10030, currentUser, channel) {
     obj5 = StickersUtils;
   }
 }
-const Permissions = fn(1074).Permissions;
+const Permissions = fn(1078).Permissions;
 const StickerSendability = { SENDABLE: 0, [0]: "SENDABLE", SENDABLE_WITH_PREMIUM: 1, [1]: "SENDABLE_WITH_PREMIUM", NONSENDABLE: 2, [2]: "NONSENDABLE", SENDABLE_WITH_BOOSTED_GUILD: 3, [3]: "SENDABLE_WITH_BOOSTED_GUILD" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/stickers/StickerSendability.tsx");

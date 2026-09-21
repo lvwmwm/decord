@@ -1,13 +1,15 @@
-// Module ID: 11735
-// Function ID: 11736
+// Module ID: 11604
+// Function ID: 11605
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 4671, 4672, 8137, 4676, 8135, 504, 2]
-// Exports: getLegacyExperiments, useLegacyExperiments
+// Dependencies: [32, 19, 4674, 4675, 8142, 4679, 8140, 558, 568, 504, 2]
+// Exports: getLegacyExperiments
 
-// Module 11735 (useLegacyExperiments)
-import ExperimentManager from "ExperimentManager" /* 4676 */;
+// Module 11604 (useLegacyExperiments)
+import initialize from "initialize" /* 504 */;
+import c from "c" /* 568 */;
+import ExperimentManager from "ExperimentManager" /* 4679 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
 
 require = fn;
 function parseRegisteredExperiments(stateFromStoresObject) {
@@ -26,17 +28,17 @@ function parseRegisteredExperiments(stateFromStoresObject) {
       if (typeof type.description === "object") {
         let experimentBucketName = tmp.description[index];
       } else {
-        experimentBucketName = closure_1(8135).getExperimentBucketName(item);
-        const obj3 = closure_1(8135);
+        experimentBucketName = closure_1(8140).getExperimentBucketName(item);
+        const obj3 = closure_1(8140);
       }
       obj.label = experimentBucketName;
-      obj.shortLabel = closure_1(8135).getExperimentBucketName(item);
+      obj.shortLabel = closure_1(8140).getExperimentBucketName(item);
       if (item === constants.CONTROL) {
-        let TREATMENT = obj(8137).Variation_Type.CONTROL;
+        let TREATMENT = obj(8142).Variation_Type.CONTROL;
       } else if (item === tmp4.NOT_ELIGIBLE) {
-        TREATMENT = obj(8137).Variation_Type.UNSPECIFIED;
+        TREATMENT = obj(8142).Variation_Type.UNSPECIFIED;
       } else {
-        TREATMENT = obj(8137).Variation_Type.TREATMENT;
+        TREATMENT = obj(8142).Variation_Type.TREATMENT;
       }
       obj.type = TREATMENT;
       return obj;
@@ -68,8 +70,9 @@ function getLegacyOverridesInfo(stateFromStoresObject1) {
   return obj;
 }
 const useMemo = fn(19).useMemo;
-const ExperimentConstants = fn(4672);
+const ExperimentConstants = fn(4675);
 ({ ExperimentBuckets: metroRequire, ExperimentTypes: closure_7 } = ExperimentConstants);
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/client_override_hooks/useLegacyExperiments.tsx");
 
@@ -83,7 +86,64 @@ export const getLegacyExperiments = function getLegacyExperiments() {
   obj.overridesInfo = getLegacyOverridesInfo(allExperimentOverrideDescriptors);
   return obj;
 };
-export const useLegacyExperiments = function useLegacyExperiments() {
+export const useLegacyExperiments = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyExperiments() {
+  const cResult = c.c(11);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ExperimentStore];
+    const fn = function s() {
+      return ExperimentStore.getRegisteredExperiments();
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const stateFromStoresObject = initialize.useStateFromStoresObject(tmp4, tmp5);
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ExperimentStore];
+    const fn2 = function c() {
+      return ExperimentStore.getAllExperimentOverrideDescriptors();
+    };
+    cResult[2] = items1;
+    cResult[3] = fn2;
+    let tmp9 = fn2;
+    let tmp8 = items1;
+  } else {
+    tmp8 = cResult[2];
+    tmp9 = cResult[3];
+  }
+  const tmpResult = initialize;
+  const stateFromStoresObject1 = initialize.useStateFromStoresObject(tmp8, tmp9);
+  if (cResult[4] !== stateFromStoresObject) {
+    const tmp14 = parseRegisteredExperiments(stateFromStoresObject);
+    cResult[4] = stateFromStoresObject;
+    cResult[5] = tmp14;
+    let tmp12 = tmp14;
+  } else {
+    tmp12 = cResult[5];
+  }
+  if (cResult[6] !== stateFromStoresObject1) {
+    const tmp17 = getLegacyOverridesInfo(stateFromStoresObject1);
+    cResult[6] = stateFromStoresObject1;
+    cResult[7] = tmp17;
+    let tmp15 = tmp17;
+  } else {
+    tmp15 = cResult[7];
+  }
+  if (cResult[8] === tmp12) {
+    if (cResult[9] === tmp15) {
+      let tmp18 = cResult[10];
+    }
+    return tmp18;
+  }
+  const obj2 = { experiments: tmp12, overridesInfo: tmp15 };
+  cResult[8] = tmp12;
+  cResult[9] = tmp15;
+  cResult[10] = obj2;
+  tmp18 = obj2;
+}) : (function useLegacyExperiments() {
   const items = [ExperimentStore];
   stateFromStoresObject = stateFromStoresObject(504).useStateFromStoresObject(items, () => ExperimentStore.getRegisteredExperiments());
   const obj = stateFromStoresObject(504);
@@ -95,4 +155,4 @@ export const useLegacyExperiments = function useLegacyExperiments() {
   const items3 = [stateFromStoresObject1];
   obj3.overridesInfo = useMemo(() => getLegacyOverridesInfo(stateFromStoresObject1), items3);
   return obj3;
-};
+});

@@ -1,14 +1,14 @@
-// Module ID: 13958
-// Function ID: 13959
+// Module ID: 13961
+// Function ID: 13962
 // Name: MobileExperimentTriggerPointStore
-// Dependencies: [4671, 1235, 13959, 504, 573, 2]
+// Dependencies: [4674, 1239, 13962, 504, 577, 2]
 
-// Module 13958 (MobileExperimentTriggerPointStore)
+// Module 13961 (MobileExperimentTriggerPointStore)
 import initializeDefault from "initialize" /* 504 */;
-import Dispatcher2 from "Dispatcher" /* 573 */;
-import MobileConnectionOpenTriggerPoint2 from "MobileConnectionOpenTriggerPoint" /* 13959 */;
-import ExperimentStore from "ExperimentStore" /* 4671 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
+import Dispatcher2 from "Dispatcher" /* 577 */;
+import MobileConnectionOpenTriggerPoint2 from "MobileConnectionOpenTriggerPoint" /* 13962 */;
+import ExperimentStore from "ExperimentStore" /* 4674 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
 
 const Dispatcher = Dispatcher2;
 
@@ -35,4 +35,4 @@ let obj = { CONNECTION_OPEN: handleConnectionOpen };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/experiments/native/MobileExperimentTriggerPointStore.tsx");
 
-export default new "initialize"(Dispatcher, obj, fn(573).DispatchBand.Early, prototype, MobileExperimentTriggerPointStore, "initialize", Dispatcher, obj);
+export default new "initialize"(Dispatcher, obj, fn(577).DispatchBand.Early, prototype, MobileExperimentTriggerPointStore, "initialize", Dispatcher, obj);

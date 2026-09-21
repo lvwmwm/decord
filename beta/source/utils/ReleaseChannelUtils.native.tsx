@@ -1,13 +1,13 @@
-// Module ID: 5085
-// Function ID: 5086
+// Module ID: 5087
+// Function ID: 5088
 // Name: ReleaseChannelUtils
-// Dependencies: [1363, 1364, 2]
+// Dependencies: [1367, 1368, 2]
 
-// Module 5085 (ReleaseChannelUtils)
-import ClientInfoUtils from "ClientInfoUtils" /* 1363 */;
+// Module 5087 (ReleaseChannelUtils)
+import ClientInfoUtils from "ClientInfoUtils" /* 1367 */;
 
 const ReleaseChannel = ClientInfoUtils.getConstants().ReleaseChannel;
-let PlatformUtils = fn(1364);
+let PlatformUtils = fn(1368);
 PlatformUtils = PlatformUtils.isAndroid();
 if (PlatformUtils) {
   PlatformUtils = -1 === ReleaseChannel.indexOf("canary");

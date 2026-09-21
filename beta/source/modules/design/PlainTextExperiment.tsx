@@ -1,11 +1,11 @@
-// Module ID: 14850
-// Function ID: 14851
+// Module ID: 16272
+// Function ID: 16273
 // Name: PlainTextExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1438, 2]
 // Exports: usePlainTextExperiment
 
-// Module 14850 (PlainTextExperiment)
-import ApexExperiment from "ApexExperiment" /* 1434 */;
+// Module 16272 (PlainTextExperiment)
+import ApexExperiment from "ApexExperiment" /* 1438 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-react-native-plain-text", kind: "user", defaultConfig: { enabled: false }, variations: null };

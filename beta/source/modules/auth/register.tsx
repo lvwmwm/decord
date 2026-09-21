@@ -1,17 +1,17 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16291
+// Function ID: 16292
 // Name: auth/register
-// Dependencies: [5, 16289, 502, 1074, 1099, 4348, 1241, 4949, 1249, 4657, 5082, 573, 16290, 16291, 2]
+// Dependencies: [5, 16292, 502, 1078, 1103, 4352, 1245, 4951, 1253, 4660, 5084, 577, 16293, 16294, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 16288 (auth/register)
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import APIErrorDefault from "APIError" /* 4657 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5082 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16291 */;
+// Module 16291 (auth/register)
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;
+import APIErrorDefault from "APIError" /* 4660 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4951 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5084 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16294 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -31,7 +31,7 @@ let closure_11 = async function _scorePassword(password) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ let closure_12 = async function _registerPhone(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -125,7 +125,7 @@ let closure_12 = async function _registerPhone(arg0) {
             phone2 = phone.phone;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp8) {
           if (arg0 === 1) {
@@ -204,12 +204,12 @@ function registerFull(giftCodeSKUId) {
   }
   DispatcherDefault.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    tmp4(16290)(birthday, constants2.REGISTER);
+    tmp4(16293)(birthday, constants2.REGISTER);
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
-    tmp4(1241).track(constants.AGE_GATE_ACTION, obj2);
+    tmp4(1245).track(constants.AGE_GATE_ACTION, obj2);
     const tmp14 = constants;
-    const tmp4Result = tmp4(1241);
-    const diffResult = tmp4(4348)().diff(birthday, "years");
+    const tmp4Result = tmp4(1245);
+    const diffResult = tmp4(4352)().diff(birthday, "years");
     if (diffResult >= 13) {
       if (diffResult < 13) {
         let str3 = "23+";
@@ -224,10 +224,10 @@ function registerFull(giftCodeSKUId) {
         str = "13-17";
       }
       let obj3 = { age_bucket: str };
-      tmp4(1241).track(tmp14.USER_AGE_SUBMITTED, obj3);
-      const tmp4Result3 = tmp4(1241);
+      tmp4(1245).track(tmp14.USER_AGE_SUBMITTED, obj3);
+      const tmp4Result3 = tmp4(1245);
     }
-    const obj11 = tmp4(4348)();
+    const obj11 = tmp4(4352)();
   }
   const request = { url: constants3.REGISTER, body: null, trackedActionData: null, rejectWithError: false };
   const user = { fingerprint: AuthenticationStore.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken, date_of_birth: null, gift_code_sku_id: null, guild_template_code: null, promotional_email_opt_in: null };
@@ -279,10 +279,10 @@ function registerFull(giftCodeSKUId) {
     }
   });
 }
-const ParentalConsentStore = fn(16289);
-const Constants = fn(1074);
+const ParentalConsentStore = fn(16292);
+const Constants = fn(1078);
 ({ AnalyticEvents: metroRequire, AnalyticsSections: closure_7, Endpoints: closure_8 } = Constants);
-const AgeGateConstants = fn(1099);
+const AgeGateConstants = fn(1103);
 ({ AgeGateAnalyticAction: closure_9, AgeGateSource: c10 } = AgeGateConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/auth/register.tsx");

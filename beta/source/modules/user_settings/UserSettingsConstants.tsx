@@ -1,10 +1,10 @@
-// Module ID: 1084
-// Function ID: 1085
+// Module ID: 1088
+// Function ID: 1089
 // Name: UserSettingsConstants
 // Dependencies: [2]
 // Exports: createEmptyEditInfo
 
-// Module 1084 (UserSettingsConstants)
+// Module 1088 (UserSettingsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/UserSettingsConstants.tsx");
@@ -23,7 +23,7 @@ export const UserSettingsTypes = { PRELOADED_USER_SETTINGS: 1, [1]: "PRELOADED_U
 export const PrivacySettingSurfaces = { USER_SETTINGS_PRIVACY_SAFETY: "user_settings_privacy_safety", USER_SETTINGS_ACTIVITY_PRIVACY: "user_settings_activity_privacy", SERVER_PRIVACY_MODAL: "server_privacy_modal" };
 export const UserSettingsDelay = { INFREQUENT_USER_ACTION: 0, [0]: "INFREQUENT_USER_ACTION", FREQUENT_USER_ACTION: 10, [10]: "FREQUENT_USER_ACTION", SLOW_USER_ACTION: 20, [20]: "SLOW_USER_ACTION", AUTOMATED: 30, [30]: "AUTOMATED", DAILY: 86400, [86400]: "DAILY" };
 export const createEmptyEditInfo = function createEmptyEditInfo() {
-  const obj = { protoToSave: "Array", timeout: "PX_16", timeoutDelay: Number.MIN_SAFE_INTEGER, rateLimited: null, cleanupFuncs: [], errorCallbacks: [], loaded: false, loading: "channel", triggeredMigrations: "<string:629363483>", offlineEditDataVersion: "<string:15240862>" };
+  const obj = { protoToSave: "Array", timeout: "Set", timeoutDelay: Number.MIN_SAFE_INTEGER, rateLimited: null, cleanupFuncs: [], errorCallbacks: [], loaded: false, loading: "unicodeVersion", triggeredMigrations: true, offlineEditDataVersion: true };
   return obj;
 };
 export const UserSettingsPath = { ACCOUNT: "account", ACCOUNT_STANDING: "account-standing", ACCOUNT_ACCOUNT_STANDING: "account/account-standing", PROFILE_CUSTOMIZATION: "profile-customization", CONTENT_AND_SOCIAL: "content-and-social", CONNECTED_GAMES: "connected-games", CONTENT_AND_SOCIAL_CONNECTED_GAMES: "content-and-social/connected-games", DATA_AND_PRIVACY: "data-and-privacy", PRIVACY_AND_SAFETY: "privacy-and-safety", FAMILY_CENTER: "family-center", SESSIONS: "sessions", AUTHORIZED_APPS: "authorized-apps", CONNECTIONS: "connections", CLIPS: "clips", PREMIUM: "premium", GUILD_BOOSTING: "guild-boosting", SUBSCRIPTIONS: "subscriptions", SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS: "subscriptions/role-subscriptions", INVENTORY: "inventory", BILLING: "billing", APPEARANCE: "appearance", ACCESSIBILITY: "accessibility", VOICE: "voice", POGGERMODE: "poggermode", TEXT: "text", NOTIFICATIONS: "notifications", EMAILS: "emails", NOTIFICATIONS_EMAILS: "notifications/emails", KEYBINDS: "keybinds", SYSTEM: "system", LANGUAGE: "language", WINDOWS: "windows", LINUX: "linux", STREAMER_MODE: "streamer-mode", ADVANCED: "advanced", ACTIVITY_PRIVACY: "activity-privacy", REGISTERED_GAMES: "registered-games", OVERLAY: "overlay", EXPERIMENTS: "experiments", DEVELOPER_OPTIONS: "developer-options" };

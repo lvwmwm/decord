@@ -1,41 +1,70 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 9986
+// Function ID: 9987
 // Name: guild_profile/GuildProfileUtils
-// Dependencies: [32, 4748, 1397, 8401, 7794, 2]
-// Exports: getProfilePrimaryColor, useProfilePrimaryColor
+// Dependencies: [32, 4750, 558, 568, 1401, 8406, 7799, 2]
+// Exports: getProfilePrimaryColor
 
-// Module 10019 (guild_profile/GuildProfileUtils)
-import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import useAvatarColor from "useAvatarColor" /* 8401 */;
+// Module 9986 (guild_profile/GuildProfileUtils)
+import c from "c" /* 568 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
+import useAvatarColor from "useAvatarColor" /* 8406 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 
 const useAvatarColorDefault = useAvatarColor;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_profile/native/GuildProfileUtils.tsx");
 
-export const useProfilePrimaryColor = function useProfilePrimaryColor(guildProfile, token) {
+export const useProfilePrimaryColor = ReactCompilerGating.isReactCompilerEnabled() ? ((brandColorPrimary, arg1) => {
+  const cResult = c.c(2);
+  if (cResult[0] !== brandColorPrimary) {
+    let guildIconURL = null;
+    if (null != brandColorPrimary) {
+      guildIconURL = null;
+      if (null == brandColorPrimary.brandColorPrimary) {
+        ({ id: obj3.id, icon: obj3.icon } = brandColorPrimary);
+        guildIconURL = AvatarUtilsDefault.getGuildIconURL({ id: null, icon: null, size: 64 });
+        const obj4 = { id: null, icon: null, size: 64 };
+      }
+    }
+    cResult[0] = brandColorPrimary;
+    cResult[1] = guildIconURL;
+    let tmp3 = guildIconURL;
+  } else {
+    tmp3 = cResult[1];
+  }
+  brandColorPrimary = useAvatarColorDefault(tmp3, arg1);
+  let brandColorPrimary1;
+  if (brandColorPrimary != null) {
+    brandColorPrimary1 = brandColorPrimary.brandColorPrimary;
+  }
+  if (null != brandColorPrimary1) {
+    brandColorPrimary = brandColorPrimary.brandColorPrimary;
+  }
+  return brandColorPrimary;
+}) : ((brandColorPrimary, arg1) => {
   let guildIconURL = null;
-  if (null != guildProfile) {
+  if (null != brandColorPrimary) {
     guildIconURL = null;
-    if (null == guildProfile.brandColorPrimary) {
-      ({ id: obj2.id, icon: obj2.icon } = guildProfile);
+    if (null == brandColorPrimary.brandColorPrimary) {
+      ({ id: obj2.id, icon: obj2.icon } = brandColorPrimary);
       guildIconURL = AvatarUtilsDefault.getGuildIconURL({ id: null, icon: null, size: 64 });
       const obj3 = { id: null, icon: null, size: 64 };
     }
   }
-  let brandColorPrimary = useAvatarColorDefault(guildIconURL, token);
+  brandColorPrimary = useAvatarColorDefault(guildIconURL, arg1);
   let brandColorPrimary1;
-  if (guildProfile != null) {
-    brandColorPrimary1 = guildProfile.brandColorPrimary;
+  if (brandColorPrimary != null) {
+    brandColorPrimary1 = brandColorPrimary.brandColorPrimary;
   }
   if (null != brandColorPrimary1) {
-    brandColorPrimary = guildProfile.brandColorPrimary;
+    brandColorPrimary = brandColorPrimary.brandColorPrimary;
   }
   return brandColorPrimary;
-};
+});
 export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfileFromInvite) {
   if (null == guildProfileFromInvite) {
     return null;
@@ -58,15 +87,15 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         [tmp4, tmp5, tmp6] = first;
         const obj = { r: tmp4, g: tmp5, b: tmp6 };
         const tmp3 = _slicedToArray(first, 3);
-        const obj2 = tmp8(7794)(obj);
+        const obj2 = tmp8(7799)(obj);
         let num2 = 1;
-        ({ h, s, l } = tmp8(7794)(obj).toHsl());
+        ({ h, s, l } = tmp8(7799)(obj).toHsl());
         if (AccessibilityStore.desaturateUserColors) {
           num2 = AccessibilityStore.saturation;
         }
         const obj9 = { h, s: s * num2, l };
-        const toHslResult = tmp8(7794)(obj).toHsl();
-        return tmp8(7794)(obj9).toHexString();
+        const toHslResult = tmp8(7799)(obj).toHsl();
+        return tmp8(7799)(obj9).toHexString();
       } else {
         return null;
       }

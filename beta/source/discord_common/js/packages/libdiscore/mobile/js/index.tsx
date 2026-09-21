@@ -1,13 +1,13 @@
-// Module ID: 1351
-// Function ID: 1352
+// Module ID: 1355
+// Function ID: 1356
 // Name: LIBDISCORE_JSI
-// Dependencies: [17, 1352, 2, 1353]
+// Dependencies: [17, 1356, 2, 1357]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1351 (LIBDISCORE_JSI)
+// Module 1355 (LIBDISCORE_JSI)
 import _mod17 from "module_17" /* 17 */;
-import global_types from "global_types" /* 1352 */;
-import clock from "clock" /* 1353 */;
+import global_types from "global_types" /* 1356 */;
+import clock from "clock" /* 1357 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;

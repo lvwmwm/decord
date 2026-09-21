@@ -1,19 +1,49 @@
-// Module ID: 17713
-// Function ID: 17714
+// Module ID: 17716
+// Function ID: 17717
 // Name: useFormattedEndTime
-// Dependencies: [1372, 1115, 504, 2]
-// Exports: default
+// Dependencies: [1376, 1119, 558, 568, 504, 2]
 
-// Module 17713 (useFormattedEndTime)
+// Module 17716 (useFormattedEndTime)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1115 */;
-import UserStore from "UserStore" /* 1372 */;
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import UserStore from "UserStore" /* 1376 */;
 
 require = fn;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");
 
-export default function useFormattedEndTime() {
+export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [UserStore];
+    const fn = function o() {
+      currentUser = currentUser.getCurrentUser();
+      let nextEndTime;
+      if (currentUser != null) {
+        const restrictedSchedule = currentUser.restrictedSchedule;
+        if (restrictedSchedule != null) {
+          nextEndTime = restrictedSchedule.getNextEndTime();
+        }
+      }
+      let formatResult = null;
+      if (null != nextEndTime) {
+        const _Intl = Intl;
+        const dateTimeFormat = new Intl.DateTimeFormat(util.intl.currentLocale, { hour: "numeric", minute: "2-digit", weekday: "long" });
+        formatResult = dateTimeFormat.format(nextEndTime);
+      }
+      return formatResult;
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  return initialize.useStateFromStores(tmp4, tmp5);
+}) : (() => {
   const items = [UserStore];
   return initialize.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -32,4 +62,4 @@ export default function useFormattedEndTime() {
     }
     return formatResult;
   });
-};
+});

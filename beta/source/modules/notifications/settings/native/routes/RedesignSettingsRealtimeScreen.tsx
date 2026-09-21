@@ -1,20 +1,45 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16238
+// Function ID: 16239
 // Name: RedesignSettingsRealtimeScreen
-// Dependencies: [19, 21, 11725, 16244, 14964, 2]
+// Dependencies: [19, 21, 558, 568, 11594, 16233, 14953, 2]
 
-// Module 16249 (RedesignSettingsRealtimeScreen)
-import SettingBuilders from "SettingBuilders" /* 11725 */;
-import SettingLayoutDefault from "SettingLayout" /* 14964 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16244 */;
+// Module 16238 (RedesignSettingsRealtimeScreen)
+import c from "c" /* 568 */;
+import SettingBuilders from "SettingBuilders" /* 11594 */;
+import SettingLayoutDefault from "SettingLayout" /* 14953 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16233 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsRealtimeScreen.tsx");
 
-export default noop.memo(() => {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { sections: null };
+    const tmpResult = tmp(11594);
+    const items = [tmp(16233).buildRealtimeSettingsSection()];
+    obj2.sections = items;
+    const list = tmpResult.createList(obj2);
+    cResult[0] = list;
+    let first = list;
+    const tmpResult2 = tmp(16233);
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { node: first };
+    const tmp9 = jsx(SettingLayoutDefault, { node: first });
+    cResult[1] = tmp9;
+    let tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[1];
+  }
+  return tmp6;
+}) : (() => {
   const node = noop.useMemo(() => {
     const obj2 = { sections: null };
     const obj = SettingBuilders;
@@ -23,4 +48,4 @@ export default noop.memo(() => {
     return obj.createList(obj2);
   }, []);
   return jsx(SettingLayoutDefault, { node });
-});
+}));

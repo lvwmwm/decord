@@ -1,0 +1,9 @@
+// Module ID: 11022
+// Function ID: 11023
+// Dependencies: [1125]
+
+// Module 11022
+import registerAsset from "module_1125" /* 1125 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 279, height: 48, scales: [2, 3], hash: "1fff7418e65eeae25a3f248ccb7dea3b", name: "img_nitro_tier_1_activated_light", type: "png" });

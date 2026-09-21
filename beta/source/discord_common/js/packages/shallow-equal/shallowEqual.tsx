@@ -1,10 +1,10 @@
-// Module ID: 558
-// Function ID: 559
+// Module ID: 560
+// Function ID: 561
 // Name: discord_common/shallowEqual
 // Dependencies: [2]
 // Exports: areArraysShallowEqual, default
 
-// Module 558 (discord_common/shallowEqual)
+// Module 560 (discord_common/shallowEqual)
 import size from "module_2" /* 2 */;
 
 let closure_0 = {};
@@ -49,12 +49,12 @@ export default function shallowEqual(arg0, arg1, arr) {
     return tmp2;
   }
 };
-export const areArraysShallowEqual = function areArraysShallowEqual(items1, current) {
+export const areArraysShallowEqual = function areArraysShallowEqual(memo, current) {
   closure_0 = current;
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = closure_0;
   }
   ({ logCallback, shouldWarnLargeObjects } = tmp);
-  return null != current && items1.length === current.length && items1.every((item, index) => closure_0[index] === item);
+  return null != current && memo.length === current.length && memo.every((item, index) => closure_0[index] === item);
 };

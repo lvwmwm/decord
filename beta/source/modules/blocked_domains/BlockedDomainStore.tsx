@@ -1,12 +1,12 @@
-// Module ID: 8642
-// Function ID: 8643
+// Module ID: 8647
+// Function ID: 8648
 // Name: BlockedDomainStore
-// Dependencies: [1074, 1350, 1241, 2]
+// Dependencies: [1078, 1354, 1245, 2]
 
-// Module 8642 (BlockedDomainStore)
-import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import js_shim_shim from "js_shim/shim" /* 1350 */;
+// Module 8647 (BlockedDomainStore)
+import Constants from "Constants" /* 1078 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import js_shim_shim from "js_shim/shim" /* 1354 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

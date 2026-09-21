@@ -1,12 +1,12 @@
-// Module ID: 1967
-// Function ID: 1968
+// Module ID: 1971
+// Function ID: 1972
 // Name: CollectiblesAssetUtils
-// Dependencies: [1370, 2, 1966]
+// Dependencies: [1374, 2, 1970]
 // Exports: getCollectiblesItemAssetUrl
 
-// Module 1967 (CollectiblesAssetUtils)
-import GlobalUtils from "GlobalUtils" /* 1370 */;
-import mappers from "mappers" /* 1966 */;
+// Module 1971 (CollectiblesAssetUtils)
+import GlobalUtils from "GlobalUtils" /* 1374 */;
+import mappers from "mappers" /* 1970 */;
 import size from "module_2" /* 2 */;
 
 let c2 = "media/v1/collectibles-shop";

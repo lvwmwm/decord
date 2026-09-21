@@ -1,8 +1,8 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14151
+// Function ID: 14152
 // Dependencies: [2]
 
-// Module 14148
+// Module 14151
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/images/consoles/social_layer_link_success_illustration-2x.png.js");

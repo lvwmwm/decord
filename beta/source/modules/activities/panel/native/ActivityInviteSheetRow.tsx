@@ -1,30 +1,370 @@
-// Module ID: 17492
-// Function ID: 17493
+// Module ID: 17462
+// Function ID: 17463
 // Name: ActivityInviteSheetRow
-// Dependencies: [19, 17, 2041, 2063, 1372, 7978, 21, 4756, 576, 504, 4909, 10078, 5339, 1177, 9901, 4600, 1115, 1397, 2009, 4752, 5822, 10152, 2]
+// Dependencies: [19, 17, 2045, 2067, 1376, 7983, 21, 4758, 580, 558, 568, 504, 4911, 10057, 5341, 1181, 9879, 4603, 1119, 1401, 2013, 4754, 10131, 5822, 2]
 
-// Module 17492 (ActivityInviteSheetRow)
-import nativeDefault from "native" /* 576 */;
+// Module 17462 (ActivityInviteSheetRow)
+import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import UserStore from "UserStore" /* 1372 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildStore from "GuildStore" /* 2067 */;
+import UserStore from "UserStore" /* 1376 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const InviteSendStates = fn(7978).InviteSendStates;
+const InviteSendStates = fn(7983).InviteSendStates;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4758);
 let obj = { acronym: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
 obj.acronym = size;
 let closure_9 = createStyles.createStyles(obj);
+const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetRow.tsx");
 
-export default noop.memo(function ActivityInviteSheetRow(row) {
+export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAvatar) => {
+  const cResult = onInviteSent(row[10]).c(47);
+  ({ end, onInviteSent } = onPressAvatar);
+  onPressAvatar = onPressAvatar.onPressAvatar;
+  row = onPressAvatar.row;
+  ({ sendState, start } = onPressAvatar);
+  ({ error, isSubmitting } = onPressAvatar);
+  const tmp4 = closure_9();
+  const id = row.item.id;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ChannelStore];
+    cResult[0] = items;
+    let first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== id) {
+    const fn = function y() {
+      return ChannelStore.getChannel(id);
+    };
+    cResult[1] = id;
+    cResult[2] = fn;
+    let tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+  }
+  const obj = onInviteSent(row[10]);
+  const stateFromStores = onInviteSent(row[11]).useStateFromStores(first, tmp7);
+  let str = onPressAvatar(tmp2[12])(stateFromStores);
+  if (cResult[3] === onInviteSent) {
+    if (cResult[4] === row) {
+      let tmp10 = cResult[5];
+    }
+    const type = row.type;
+    if (tmp(tmp2[13]).RowTypes.DM !== type) {
+      if (tmp(tmp2[13]).RowTypes.FRIEND !== type) {
+        if (tmp(tmp2[13]).RowTypes.GROUP_DM === type) {
+          if (cResult[23] !== stateFromStores) {
+            let tmp34 = null;
+            if (null != stateFromStores) {
+              const obj2 = { source: null, size: null };
+              const tmp9Result = tmp9(tmp2[19]);
+              ({ id: obj12.id, icon: obj12.icon, application_id: obj12.applicationId } = stateFromStores);
+              obj2.source = tmp9Result.makeSource(tmp9(tmp2[19]).getChannelIconURL({ id: null, icon: null, applicationId: null, size: 32 }));
+              obj2.size = tmp(tmp2[15]).AvatarSizes.REFRESH_MEDIUM_32;
+              tmp34 = jsx(tmp(tmp2[15]).Avatar, { source: null, size: null });
+              const obj3 = { id: null, icon: null, applicationId: null, size: 32 };
+              const tmp9Result6 = tmp9(tmp2[19]);
+            }
+            cResult[23] = stateFromStores;
+            cResult[24] = tmp34;
+            let tmp33 = tmp34;
+          } else {
+            tmp33 = cResult[24];
+          }
+          if (str == null) {
+            str = "";
+          }
+          let str4 = str;
+          let tmp13 = tmp33;
+        } else if (tmp(tmp2[13]).RowTypes.CHANNEL === type) {
+          if (cResult[25] === stateFromStores) {
+            if (cResult[26] === tmp4) {
+              tmp13 = cResult[28];
+              const _Symbol2 = Symbol;
+              if (cResult[27] !== Symbol.for("react.early_return_sentinel")) {
+                return tmp12;
+              } else {
+                str4 = "";
+                if (null != str) {
+                  const _HermesInternal = HermesInternal;
+                  str4 = "#" + str;
+                }
+              }
+            }
+          }
+          const _Symbol = Symbol;
+          const forResult = Symbol.for("react.early_return_sentinel");
+          let guild_id;
+          if (stateFromStores != null) {
+            guild_id = stateFromStores.guild_id;
+          }
+          icon = undefined;
+          if (null != guild_id) {
+            icon = GuildStore.getGuild(stateFromStores.guild_id);
+          }
+          let tmp18 = null;
+          if (null == icon) {
+            cResult[25] = stateFromStores;
+            cResult[26] = tmp4;
+            cResult[27] = tmp18;
+            cResult[28] = tmp19;
+          } else if (null == icon.icon) {
+            const acronym = tmp(tmp2[20]).getAcronym(icon.name);
+            if (cResult[29] !== acronym) {
+              const obj4 = { variant: "text-sm/bold", children: acronym };
+              const tmp22 = jsx(tmp(tmp2[21]).Text, { variant: "text-sm/bold", children: acronym });
+              cResult[29] = acronym;
+              cResult[30] = tmp22;
+              let tmp20 = tmp22;
+            } else {
+              tmp20 = cResult[30];
+            }
+            if (cResult[31] === tmp4.acronym) {
+              if (cResult[32] === tmp20) {
+                let tmp23 = cResult[33];
+              }
+              tmp19 = tmp23;
+              tmp18 = forResult;
+            }
+            const obj5 = { style: tmp4.acronym, children: tmp20 };
+            const tmp26 = <id style={tmp4.acronym}>{tmp20}</id>;
+            cResult[31] = tmp4.acronym;
+            cResult[32] = tmp20;
+            cResult[33] = tmp26;
+            tmp23 = tmp26;
+            const tmpResult2 = tmp(tmp2[20]);
+          }
+          const obj6 = { source: null, size: null };
+          const tmp9Result7 = tmp9(tmp2[19]);
+          const obj7 = { id: null, icon: null, size: 32 };
+          ({ id: obj8.id, icon } = icon);
+          obj7.icon = icon;
+          obj6.source = tmp9Result7.makeSource(tmp9(tmp2[19]).getGuildIconURL(obj7));
+          obj6.size = tmp(tmp2[15]).AvatarSizes.REFRESH_MEDIUM_32;
+          tmp19 = jsx(tmp(tmp2[15]).Avatar, { source: null, size: null });
+          tmp18 = forResult;
+          const tmp9Result8 = tmp9(tmp2[19]);
+        } else {
+          return null;
+        }
+        if (cResult[34] === tmp10) {
+          if (cResult[35] === sendState) {
+            let tmp65 = cResult[36];
+          }
+          let tmp69 = null != error || isSubmitting;
+          if (!tmp69) {
+            tmp69 = sendState === InviteSendStates.SENT;
+          }
+          if (cResult[37] === tmp32) {
+            if (cResult[38] === end) {
+              if (cResult[39] === tmp10) {
+                if (cResult[40] === str4) {
+                  if (cResult[41] === tmp13) {
+                    if (cResult[42] === tmp31) {
+                      if (cResult[43] === start) {
+                        if (cResult[44] === tmp65) {
+                          if (cResult[45] === tmp69) {
+                            let tmp71 = cResult[46];
+                          }
+                          return tmp71;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          const obj9 = { start, end, icon: tmp13, label: str4, trailing: tmp65, onPress: tmp10, disabled: tmp69, accessibilityActions: tmp32, onAccessibilityAction: tmp31 };
+          const tmp73 = jsx(tmp(tmp2[23]).TableRow, { start, end, icon: tmp13, label: str4, trailing: tmp65, onPress: tmp10, disabled: tmp69, accessibilityActions: tmp32, onAccessibilityAction: tmp31 });
+          cResult[37] = tmp32;
+          cResult[38] = end;
+          cResult[39] = tmp10;
+          cResult[40] = str4;
+          cResult[41] = tmp13;
+          cResult[42] = tmp31;
+          cResult[43] = start;
+          cResult[44] = tmp65;
+          class M {
+            constructor() {
+              tmp = onInviteSent(row);
+              return;
+            }
+          }
+          cResult[45] = tmp69;
+          cResult[46] = tmp73;
+          tmp71 = tmp73;
+        }
+        const obj10 = { sendState, onPressSend: tmp10 };
+        const tmp67 = jsx(tmp9(tmp2[22]), { sendState, onPressSend: tmp10 });
+        cResult[34] = tmp10;
+        cResult[35] = sendState;
+        cResult[36] = tmp67;
+        tmp65 = tmp67;
+      }
+    }
+    if (cResult[6] === id) {
+      if (cResult[7] === onPressAvatar) {
+        let tmp37 = cResult[8];
+        let tmp38 = cResult[9];
+        let tmp39 = cResult[10];
+      }
+      if (cResult[13] === tmp37) {
+        if (cResult[14] === tmp38) {
+          if (cResult[17] === onPressAvatar) {
+            let tag;
+            if (tmp39 != null) {
+              tag = tmp39.tag;
+            }
+            if (cResult[20] === id) {
+            }
+            class B {
+              constructor(arg0) {
+                tmp = "viewProfile" === onPressAvatar.nativeEvent.actionName;
+                if (tmp) {
+                  tmp2 = onPressAvatar;
+                  tmp3 = null;
+                  tmp = null !== onPressAvatar;
+                }
+                if (tmp) {
+                  tmp5 = null;
+                  if (onPressAvatar != null) {
+                    tmp6 = id;
+                    tmp4Result = tmp4(id);
+                  }
+                }
+                return;
+              }
+            }
+            cResult[20] = id;
+            cResult[21] = onPressAvatar;
+            cResult[22] = B;
+          }
+          let tmp56;
+          if (null != onPressAvatar) {
+            const intl = tmp(tmp2[18]).intl;
+            let tag1;
+            if (tmp39 != null) {
+              tag1 = tmp39.tag;
+            }
+            const obj11 = { name: "viewProfile", label: null };
+            class B {
+              constructor(arg0) {
+                tmp = "viewProfile" === onPressAvatar.nativeEvent.actionName;
+                if (tmp) {
+                  tmp2 = onPressAvatar;
+                  tmp3 = null;
+                  tmp = null !== onPressAvatar;
+                }
+                if (tmp) {
+                  tmp5 = null;
+                  if (onPressAvatar != null) {
+                    tmp6 = id;
+                    tmp4Result = tmp4(id);
+                  }
+                }
+                return;
+              }
+            }
+            tmp58[0] = tag1;
+            obj11.label = intl.formatToPlainString(tmp(tmp2[18]).t.uCenkh, tmp58);
+            const items1 = [obj11];
+            tmp56 = items1;
+          }
+          let tag2;
+          if (tmp39 != null) {
+            tag2 = tmp39.tag;
+          }
+          cResult[18] = tag2;
+          cResult[19] = tmp56;
+        }
+      }
+      const obj13 = { nick: tmp38, user: tmp39 };
+      cResult[13] = tmp37;
+      cResult[14] = tmp38;
+      cResult[15] = tmp39;
+      cResult[16] = tmp51;
+    }
+    const user = UserStore.getUser(id);
+    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj14 = { padding: 8, margin: -8 };
+      cResult[12] = obj14;
+      let tmp42 = obj14;
+    } else {
+      tmp42 = cResult[12];
+    }
+    const obj15 = {
+      importantForAccessibility: "no-hide-descendants",
+      accessibilityElementsHidden: true,
+      onPress(stopPropagation) {
+          stopPropagation.stopPropagation();
+          if (onPressAvatar != null) {
+            tmp2(id);
+          }
+        },
+      style: tmp42,
+      children: null
+    };
+    let avatarSource;
+    if (user != null) {
+      avatarSource = user.getAvatarSource(undefined);
+    }
+    if (avatarSource == null) {
+      avatarSource = null;
+    }
+    const obj16 = { source: avatarSource, size: tmp(tmp2[15]).AvatarSizes.REFRESH_MEDIUM_32 };
+    obj15.children = jsx(tmp(tmp2[15]).Avatar, { source: avatarSource, size: tmp(tmp2[15]).AvatarSizes.REFRESH_MEDIUM_32 });
+    const tmp43Result = jsx(tmp(tmp2[14]).PressableOpacity, {
+      importantForAccessibility: "no-hide-descendants",
+      accessibilityElementsHidden: true,
+      onPress(stopPropagation) {
+          stopPropagation.stopPropagation();
+          if (onPressAvatar != null) {
+            tmp2(id);
+          }
+        },
+      style: tmp42,
+      children: null
+    });
+    const tmp9Result9 = tmp9(tmp2[16]);
+    const globalName = tmp9(tmp2[17]).getGlobalName(user);
+    cResult[6] = id;
+    cResult[7] = onPressAvatar;
+    cResult[8] = tmp9Result9;
+    class M {
+      constructor() {
+        tmp = onInviteSent(row);
+        return;
+      }
+    }
+    cResult[9] = globalName;
+    cResult[10] = user;
+    cResult[11] = tmp43Result;
+    tmp39 = user;
+    tmp38 = globalName;
+    tmp37 = tmp9Result9;
+    const tmp9Result10 = tmp9(tmp2[17]);
+  }
+  class M {
+    constructor() {
+      tmp = onInviteSent(row);
+      return;
+    }
+  }
+  cResult[3] = onInviteSent;
+  cResult[4] = row;
+  cResult[5] = M;
+  tmp10 = M;
+}) : ((row) => {
   ({ onInviteSent: require, onPressAvatar } = row);
   row = row.row;
   const sendState = row.sendState;
@@ -33,33 +373,34 @@ export default noop.memo(function ActivityInviteSheetRow(row) {
   let tmp = closure_9();
   const items = [ChannelStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => ChannelStore.getChannel(id));
-  let str = onPressAvatar(row[10])(stateFromStores);
+  let str = onPressAvatar(row[12])(stateFromStores);
   const type = row.type;
   if (require("InstantInviteUtils").RowTypes.DM !== type) {
-    if (tmp2(tmp3[11]).RowTypes.FRIEND !== type) {
-      if (tmp2(tmp3[11]).RowTypes.GROUP_DM === type) {
+    if (tmp2(tmp3[13]).RowTypes.FRIEND !== type) {
+      if (tmp2(tmp3[13]).RowTypes.GROUP_DM === type) {
         let tmp19 = null;
         if (null != stateFromStores) {
           const obj2 = { source: null, size: null };
-          const tmp5Result = tmp5(tmp3[17]);
+          const tmp5Result = tmp5(tmp3[19]);
           ({ id: obj12.id, icon: obj12.icon, application_id: obj12.applicationId } = stateFromStores);
-          obj2.source = tmp5Result.makeSource(tmp5(tmp3[17]).getChannelIconURL({ id: null, icon: null, applicationId: null, size: 32 }));
-          obj2.size = tmp2(tmp3[13]).AvatarSizes.REFRESH_MEDIUM_32;
-          tmp19 = jsx(tmp2(tmp3[13]).Avatar, { source: null, size: null });
+          obj2.source = tmp5Result.makeSource(tmp5(tmp3[19]).getChannelIconURL({ id: null, icon: null, applicationId: null, size: 32 }));
+          obj2.size = tmp2(tmp3[15]).AvatarSizes.REFRESH_MEDIUM_32;
+          tmp19 = jsx(tmp2(tmp3[15]).Avatar, { source: null, size: null });
           const obj3 = { id: null, icon: null, applicationId: null, size: 32 };
-          const tmp5Result6 = tmp5(tmp3[17]);
+          const tmp5Result6 = tmp5(tmp3[19]);
         }
         if (str == null) {
           str = "";
         }
         let str2 = str;
+        let P;
         let tmp14 = tmp19;
-      } else if (tmp2(tmp3[11]).RowTypes.CHANNEL === type) {
+      } else if (tmp2(tmp3[13]).RowTypes.CHANNEL === type) {
         let guild_id;
         if (stateFromStores != null) {
           guild_id = stateFromStores.guild_id;
         }
-        let guild;
+        guild = undefined;
         if (null != guild_id) {
           guild = GuildStore.getGuild(stateFromStores.guild_id);
         }
@@ -68,26 +409,27 @@ export default noop.memo(function ActivityInviteSheetRow(row) {
         } else {
           if (null != guild.icon) {
             const obj4 = { source: null, size: null };
-            const tmp5Result7 = tmp5(tmp3[17]);
+            const tmp5Result7 = tmp5(tmp3[19]);
             ({ id: obj8.id, icon: obj8.icon } = guild);
-            obj4.source = tmp5Result7.makeSource(tmp5(tmp3[17]).getGuildIconURL({ id: null, icon: null, size: 32 }));
-            obj4.size = tmp2(tmp3[13]).AvatarSizes.REFRESH_MEDIUM_32;
-            tmp14 = jsx(tmp2(tmp3[13]).Avatar, { source: null, size: null });
+            obj4.source = tmp5Result7.makeSource(tmp5(tmp3[19]).getGuildIconURL({ id: null, icon: null, size: 32 }));
+            obj4.size = tmp2(tmp3[15]).AvatarSizes.REFRESH_MEDIUM_32;
+            tmp14 = jsx(tmp2(tmp3[15]).Avatar, { source: null, size: null });
             const obj5 = { id: null, icon: null, size: 32 };
-            const tmp5Result8 = tmp5(tmp3[17]);
+            const tmp5Result8 = tmp5(tmp3[19]);
           } else {
             const obj6 = { style: tmp.acronym, children: null };
-            const acronym = tmp2(tmp3[18]).getAcronym(guild.name);
+            const acronym = tmp2(tmp3[20]).getAcronym(guild.name);
             const obj7 = { variant: "text-sm/bold", children: acronym };
-            obj6.children = jsx(tmp2(tmp3[19]).Text, { variant: "text-sm/bold", children: acronym });
+            obj6.children = jsx(tmp2(tmp3[21]).Text, { variant: "text-sm/bold", children: acronym });
             tmp14 = <id style={tmp.acronym}>{null}</id>;
-            const tmp2Result = tmp2(tmp3[18]);
+            const tmp2Result = tmp2(tmp3[20]);
           }
           str2 = "";
           if (null != str) {
             const _HermesInternal = HermesInternal;
             str2 = "#" + str;
           }
+          P = undefined;
         }
       } else {
         return null;
@@ -98,7 +440,7 @@ export default noop.memo(function ActivityInviteSheetRow(row) {
     }
     const obj9 = { start, end, icon: tmp14, label: str2, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null };
     const obj10 = { sendState, onPressSend: handlePress };
-    obj9.trailing = jsx(tmp5(tmp3[21]), { sendState, onPressSend: handlePress });
+    obj9.trailing = jsx(tmp5(tmp3[22]), { sendState, onPressSend: handlePress });
     obj9.onPress = handlePress;
     let tmp30 = null != error || isSubmitting;
     if (!tmp30) {
@@ -106,8 +448,8 @@ export default noop.memo(function ActivityInviteSheetRow(row) {
     }
     obj9.disabled = tmp30;
     obj9.accessibilityActions = tmp26;
-    obj9.onAccessibilityAction = fn;
-    return jsx(tmp2(tmp3[20]).TableRow, { start, end, icon: tmp14, label: str2, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null });
+    obj9.onAccessibilityAction = P;
+    return jsx(tmp2(tmp3[23]).TableRow, { start, end, icon: tmp14, label: str2, trailing: null, onPress: null, disabled: null, accessibilityActions: null, onAccessibilityAction: null });
   }
   const user = UserStore.getUser(id);
   const obj11 = {
@@ -145,34 +487,41 @@ export default noop.memo(function ActivityInviteSheetRow(row) {
     style: { padding: 8, margin: -8 },
     children: null
   });
-  const tmp5Result9 = onPressAvatar(row[14]);
-  obj14.nick = onPressAvatar(row[15]).getGlobalName(user);
+  const tmp5Result9 = onPressAvatar(row[16]);
+  obj14.nick = onPressAvatar(row[17]).getGlobalName(user);
   obj14.user = user;
   tmp26 = undefined;
-  const tmp5Result10 = onPressAvatar(row[15]);
+  const tmp5Result10 = onPressAvatar(row[17]);
   if (null != onPressAvatar) {
-    const intl = tmp2(tmp3[16]).intl;
+    const intl = tmp2(tmp3[18]).intl;
     let tag;
     if (user != null) {
       tag = user.tag;
     }
     const obj15 = { name: "viewProfile", label: null };
     const obj16 = { username: tag };
-    obj15.label = intl.formatToPlainString(tmp2(tmp3[16]).t.uCenkh, obj16);
+    obj15.label = intl.formatToPlainString(tmp2(tmp3[18]).t.uCenkh, obj16);
     const items1 = [obj15];
     tmp26 = items1;
   }
-  fn = function w(nativeEvent) {
-    let tmp = "viewProfile" === nativeEvent.nativeEvent.actionName;
-    if (tmp) {
-      tmp = null !== onPressAvatar;
-    }
-    if (tmp) {
-      if (onPressAvatar != null) {
-        tmp4(id);
+  class P {
+    constructor(arg0) {
+      tmp = "viewProfile" === row.nativeEvent.actionName;
+      if (tmp) {
+        tmp2 = onPressAvatar;
+        tmp3 = null;
+        tmp = null !== onPressAvatar;
       }
+      if (tmp) {
+        tmp5 = null;
+        if (onPressAvatar != null) {
+          tmp6 = id;
+          tmp4Result = tmp4(id);
+        }
+      }
+      return;
     }
-  };
+  }
   str2 = <tmp5Result9 nick={null} user={null} />;
   tmp14 = tmp21Result;
-});
+}));

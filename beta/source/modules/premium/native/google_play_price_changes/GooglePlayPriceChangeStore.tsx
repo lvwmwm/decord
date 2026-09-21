@@ -1,12 +1,12 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17402
+// Function ID: 17403
 // Name: GooglePlayPriceChangeStore
-// Dependencies: [4420, 1074, 1364, 504, 573, 2]
+// Dependencies: [4424, 1078, 1368, 504, 577, 2]
 
-// Module 17399 (GooglePlayPriceChangeStore)
+// Module 17402 (GooglePlayPriceChangeStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 const require = fn;
 function onInitializeSync() {
@@ -36,7 +36,7 @@ function onInitializeSync() {
   }
 }
 let items = [, , ];
-({ ACTIVE: arr[0], PAST_DUE: arr[1], UNPAID: arr[2] } = fn(1074).SubscriptionStatusTypes);
+({ ACTIVE: arr[0], PAST_DUE: arr[1], UNPAID: arr[2] } = fn(1078).SubscriptionStatusTypes);
 const set = new Set(items);
 let c4 = false;
 let priceChange = null;

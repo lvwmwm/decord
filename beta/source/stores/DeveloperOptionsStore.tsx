@@ -1,23 +1,23 @@
-// Module ID: 1346
-// Function ID: 1347
+// Module ID: 1350
+// Function ID: 1351
 // Name: DeveloperOptionsStore
-// Dependencies: [1074, 559, 1091, 1271, 1100, 1347, 510, 1231, 504, 573, 2]
+// Dependencies: [1078, 561, 1095, 1275, 1104, 1351, 510, 1235, 504, 577, 2]
 
-// Module 1346 (DeveloperOptionsStore)
+// Module 1350 (DeveloperOptionsStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import Constants from "Constants" /* 1074 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import Backoff from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import Constants from "Constants" /* 1078 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import Backoff from "Backoff" /* 561 */;
 import size from "module_2" /* 2 */;
 
 const UserFlags = Constants.UserFlags;
 function refreshSourceMapCookie() {
-  const HTTP = url(1271).HTTP;
+  const HTTP = url(1275).HTTP;
   obj = { url, headers: null, oldFormErrors: true, rejectWithError: true };
-  const obj2 = { Authorization: importDefaultResult1(1100).getToken() };
+  const obj2 = { Authorization: importDefaultResult1(1104).getToken() };
   obj.headers = obj2;
-  const obj3 = importDefaultResult1(1100);
+  const obj3 = importDefaultResult1(1104);
   HTTP.put(obj).then((status) => {
     if (401 !== status.status) {
       if (403 !== status.status) {
@@ -51,12 +51,12 @@ let closure_5 = {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
         timeout = null;
-        const HTTP = url(1271).HTTP;
+        const HTTP = url(1275).HTTP;
         obj = { url, headers: null, oldFormErrors: true, rejectWithError: true };
-        const obj2 = { Authorization: importDefaultResult1(1100).getToken() };
+        const obj2 = { Authorization: importDefaultResult1(1104).getToken() };
         obj.headers = obj2;
         HTTP.del(obj);
-        const obj3 = importDefaultResult1(1100);
+        const obj3 = importDefaultResult1(1104);
       }
     }
   }

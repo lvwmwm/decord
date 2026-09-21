@@ -1,11 +1,11 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 11558
+// Function ID: 11559
 // Name: MediaPostEmbedStore
-// Dependencies: [504, 573, 2]
+// Dependencies: [504, 577, 2]
 
-// Module 11689 (MediaPostEmbedStore)
+// Module 11558 (MediaPostEmbedStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
 
 const FetchState = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", FAILED: 3, [3]: "FAILED" };
 let closure_1 = {};

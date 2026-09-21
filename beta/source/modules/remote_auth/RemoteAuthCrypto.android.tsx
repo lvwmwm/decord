@@ -1,10 +1,10 @@
-// Module ID: 16321
-// Function ID: 16322
+// Module ID: 16324
+// Function ID: 16325
 // Name: RemoteAuthCrypto
-// Dependencies: [5, 16322, 2]
+// Dependencies: [5, 16325, 2]
 
-// Module 16321 (RemoteAuthCrypto)
-import NativeRemoteAuthCryptoModuleDefault from "NativeRemoteAuthCryptoModule" /* 16322 */;
+// Module 16324 (RemoteAuthCrypto)
+import NativeRemoteAuthCryptoModuleDefault from "NativeRemoteAuthCryptoModule" /* 16325 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 let closure_3 = {};
@@ -36,8 +36,8 @@ prototype["decryptEncodedCiphertext"] = function decryptEncodedCiphertext(curren
     return decoder.decode(closure_128_1);
   })();
 };
-prototype["decryptNonce"] = function decryptNonce(arg0, arg1) {
-  closure_0 = arg1;
+prototype["decryptNonce"] = function decryptNonce(arg0, encrypted_nonce) {
+  closure_0 = encrypted_nonce;
   return (async () => {
     v3(dependencyMap[1]);
     await v3(c1[1]).decrypt(closure_0).then((result) => result.replace(/\//g, "_").replace(/\+/g, "-"));

@@ -1,24 +1,26 @@
-// Module ID: 18146
-// Function ID: 18147
+// Module ID: 18149
+// Function ID: 18150
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1074, 18147, 18148, 1115, 2108, 4445, 18149, 2]
+// Dependencies: [5, 19, 1078, 558, 18150, 18151, 1119, 2112, 4449, 18152, 2]
 // Exports: default
 
-// Module 18146 (useCreatorMonetizationEligibilityItems)
-import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import formatDurationFromDaysDefault from "formatDurationFromDays" /* 18149 */;
+// Module 18149 (useCreatorMonetizationEligibilityItems)
+import util from "util" /* 1119 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;
+import formatDurationFromDaysDefault from "formatDurationFromDays" /* 18152 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const HelpdeskArticles = fn(1074).HelpdeskArticles;
+const HelpdeskArticles = fn(1078).HelpdeskArticles;
+let ReactCompilerGating = fn(558);
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const size = fn(2);
-let result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
+const result1 = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
 
-export default function useCreatorMonetizationEligibilityItems(arg0) {
+export default function useCreatorMonetizationEligibilityItems_unoptimized(arg0) {
   _require = arg0;
   let obj = arg1;
   if (arg1 === undefined) {
@@ -42,7 +44,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -106,7 +108,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp13();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp16) {
         c2 = tmp;
         throw tmp16;
@@ -132,83 +134,83 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       obj2.checked = tmp.noRecentViolations;
       let stringResult;
       if (!noRecentViolations) {
-        const intl = tmp23(1115).intl;
-        stringResult = intl.string(tmp23(1115).t["xU2fl+"]);
+        const intl = tmp23(1119).intl;
+        stringResult = intl.string(tmp23(1119).t["xU2fl+"]);
       }
       obj2.actionLabel = stringResult;
       let fn;
       if (!noRecentViolations) {
         fn = () => {
-          const tmp = onEligibilityBecameStale(4445);
-          return tmp(onEligibilityBecameStale(2108).getSubmitRequestURL());
+          const tmp = onEligibilityBecameStale(4449);
+          return tmp(onEligibilityBecameStale(2112).getSubmitRequestURL());
         };
       }
       obj2.actionHandler = fn;
       const items = [obj2];
       if (tmp3) {
         const obj = { key: "owner_age_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
-        const intl2 = tmp23(1115).intl;
-        obj.checkedLabel = intl2.string(tmp23(1115).t["+F8haD"]);
-        const intl3 = tmp23(1115).intl;
-        obj.uncheckedLabel = intl3.string(tmp23(1115).t["5BwC/O"]);
-        const intl4 = tmp23(1115).intl;
+        const intl2 = tmp23(1119).intl;
+        obj.checkedLabel = intl2.string(tmp23(1119).t["+F8haD"]);
+        const intl3 = tmp23(1119).intl;
+        obj.uncheckedLabel = intl3.string(tmp23(1119).t["5BwC/O"]);
+        const intl4 = tmp23(1119).intl;
         const obj4 = { minimumOwnerAgeInYears };
-        obj.description = intl4.formatToPlainString(tmp23(1115).t.DW1Vae, obj4);
+        obj.description = intl4.formatToPlainString(tmp23(1119).t.DW1Vae, obj4);
         obj.checked = tmp.meetsOwnerAgeRequirement;
         items.push(obj);
       }
       if (tmp5) {
         const obj5 = { key: "member_count_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
-        const intl5 = tmp23(1115).intl;
-        obj5.checkedLabel = intl5.string(tmp23(1115).t.j7wXWo);
-        const intl6 = tmp23(1115).intl;
-        obj5.uncheckedLabel = intl6.string(tmp23(1115).t.W0suNz);
-        const intl7 = tmp23(1115).intl;
+        const intl5 = tmp23(1119).intl;
+        obj5.checkedLabel = intl5.string(tmp23(1119).t.j7wXWo);
+        const intl6 = tmp23(1119).intl;
+        obj5.uncheckedLabel = intl6.string(tmp23(1119).t.W0suNz);
+        const intl7 = tmp23(1119).intl;
         const obj6 = { minimumSize };
-        obj5.description = intl7.formatToPlainString(tmp23(1115).t.up53zR, obj6);
+        obj5.description = intl7.formatToPlainString(tmp23(1119).t.up53zR, obj6);
         obj5.checked = tmp.hasSufficientMembers;
         items.push(obj5);
       }
       if (tmp7) {
         const obj7 = { key: "server_age_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
-        const intl8 = tmp23(1115).intl;
-        obj7.checkedLabel = intl8.string(tmp23(1115).t.mjbvWw);
-        const intl9 = tmp23(1115).intl;
-        obj7.uncheckedLabel = intl9.string(tmp23(1115).t["9BV6L6"]);
-        const intl10 = tmp23(1115).intl;
+        const intl8 = tmp23(1119).intl;
+        obj7.checkedLabel = intl8.string(tmp23(1119).t.mjbvWw);
+        const intl9 = tmp23(1119).intl;
+        obj7.uncheckedLabel = intl9.string(tmp23(1119).t["9BV6L6"]);
+        const intl10 = tmp23(1119).intl;
         const obj8 = { minimumAge: formatDurationFromDaysDefault(tmp.minimumAgeInDays) };
-        obj7.description = intl10.formatToPlainString(tmp23(1115).t.Zwv84O, obj8);
+        obj7.description = intl10.formatToPlainString(tmp23(1119).t.Zwv84O, obj8);
         obj7.checked = tmp.meetsServerAgeRequirement;
         items.push(obj7);
       }
       if (null != tmp.weeklyCommunicators) {
         const obj9 = { key: "weekly_communicator_count_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
-        const intl21 = tmp23(1115).intl;
-        obj9.checkedLabel = intl21.string(tmp23(1115).t.Qw7qv4);
-        const intl22 = tmp23(1115).intl;
-        obj9.uncheckedLabel = intl22.string(tmp23(1115).t.b45kGG);
-        const intl23 = tmp23(1115).intl;
-        obj9.description = intl23.string(tmp23(1115).t.NbtjEC);
+        const intl21 = tmp23(1119).intl;
+        obj9.checkedLabel = intl21.string(tmp23(1119).t.Qw7qv4);
+        const intl22 = tmp23(1119).intl;
+        obj9.uncheckedLabel = intl22.string(tmp23(1119).t.b45kGG);
+        const intl23 = tmp23(1119).intl;
+        obj9.description = intl23.string(tmp23(1119).t.NbtjEC);
         obj9.checked = tmp.weeklyCommunicators;
         items.push(obj9);
       }
       if (null != tmp.hasMemberRetention) {
         const obj10 = { key: "member_retention_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
-        const intl24 = tmp23(1115).intl;
-        obj10.checkedLabel = intl24.string(tmp23(1115).t.Qvq39M);
-        const intl25 = tmp23(1115).intl;
-        obj10.uncheckedLabel = intl25.string(tmp23(1115).t.azHboI);
-        const intl26 = tmp23(1115).intl;
-        obj10.description = intl26.string(tmp23(1115).t.u4rCYO);
+        const intl24 = tmp23(1119).intl;
+        obj10.checkedLabel = intl24.string(tmp23(1119).t.Qvq39M);
+        const intl25 = tmp23(1119).intl;
+        obj10.uncheckedLabel = intl25.string(tmp23(1119).t.azHboI);
+        const intl26 = tmp23(1119).intl;
+        obj10.description = intl26.string(tmp23(1119).t.u4rCYO);
         obj10.checked = tmp.hasMemberRetention;
         items.push(obj10);
       }
       const obj11 = { key: "nsfw_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null };
-      const intl11 = tmp23(1115).intl;
+      const intl11 = tmp23(1119).intl;
       obj11.checkedLabel = intl11.string(util.t.bymfTb);
-      const intl12 = tmp23(1115).intl;
+      const intl12 = tmp23(1119).intl;
       obj11.uncheckedLabel = intl12.string(util.t["718pRA"]);
-      const intl13 = tmp23(1115).intl;
+      const intl13 = tmp23(1119).intl;
       obj11.description = intl13.string(util.t["5ZqX+j"]);
       obj11.checked = tmp.notNSFW;
       items.push(obj11);
@@ -241,18 +243,18 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp11 = tmp13;
         }
         const obj13 = { key: "2fa_requirement", checkedLabel: null, uncheckedLabel: null, description: null, checked: null, actionLabel: null, actionHandler: null };
-        const intl14 = tmp23(1115).intl;
-        obj13.checkedLabel = intl14.string(tmp23(1115).t.NqVyFk);
-        const intl15 = tmp23(1115).intl;
-        obj13.uncheckedLabel = intl15.string(tmp23(1115).t.VcDNIV);
-        const intl16 = tmp23(1115).intl;
+        const intl14 = tmp23(1119).intl;
+        obj13.checkedLabel = intl14.string(tmp23(1119).t.NqVyFk);
+        const intl15 = tmp23(1119).intl;
+        obj13.uncheckedLabel = intl15.string(tmp23(1119).t.VcDNIV);
+        const intl16 = tmp23(1119).intl;
         const obj14 = { enableMFAHook };
-        obj13.description = intl16.format(tmp23(1115).t["7NzkfV"], obj14);
+        obj13.description = intl16.format(tmp23(1119).t["7NzkfV"], obj14);
         obj13.checked = tmp.hasEnabled2FA;
         let stringResult1;
         if (tmp11) {
-          const intl17 = tmp23(1115).intl;
-          stringResult1 = intl17.string(tmp23(1115).t.BU4Diu);
+          const intl17 = tmp23(1119).intl;
+          stringResult1 = intl17.string(tmp23(1119).t.BU4Diu);
         }
         obj13.actionLabel = stringResult1;
         let tmp18;

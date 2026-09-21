@@ -1,20 +1,20 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7697
+// Function ID: 7698
 // Name: UserOfferStore
-// Dependencies: [7693, 7694, 8322, 7696, 1372, 7636, 4420, 1374, 1085, 504, 13606, 4414, 573, 2]
+// Dependencies: [7698, 7699, 8327, 7701, 1376, 7638, 4424, 1378, 1089, 504, 13609, 4418, 577, 2]
 
-// Module 7692 (UserOfferStore)
+// Module 7697 (UserOfferStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import PremiumUtils from "PremiumUtils" /* 4414 */;
-import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 13606 */;
-import DiscountRecord from "DiscountRecord" /* 7693 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7694 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8322 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7696 */;
-import UserStore from "UserStore" /* 1372 */;
-import EntitlementStore from "EntitlementStore" /* 7636 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import PremiumUtils from "PremiumUtils" /* 4418 */;
+import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 13609 */;
+import DiscountRecord from "DiscountRecord" /* 7698 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7699 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8327 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7701 */;
+import UserStore from "UserStore" /* 1376 */;
+import EntitlementStore from "EntitlementStore" /* 7638 */;
+import SubscriptionStore from "SubscriptionStore" /* 4424 */;
 
 require = fn;
 function emitChanges() {
@@ -70,7 +70,7 @@ function handleSubscriptionStoreUpdate() {
       obj2[tmp3] = closure_19.userDiscountOffers[tmp3];
       closure_19.userDiscountOffers = obj2;
       closure_19.userTrialOffers = {};
-    } else if (null == closure_19.userDiscountOffers[closure_1_12]) {
+    } else if (null == closure_19.userDiscountOffers[__initData]) {
       closure_19.userDiscountOffers = {};
     }
     const userDiscountOffers = {};
@@ -84,11 +84,11 @@ function handlePaymentSourceChange() {
 function handleReferralTrialStoreUpdate() {
   return false;
 }
-const PremiumConstants = fn(1374);
+const PremiumConstants = fn(1378);
 ({ ANNUAL_DISCOUNT_IDS: closure_9, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: c10, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: closure_11, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_12, SubscriptionPlanInfo: map1, SubscriptionTrials: closure_14, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_15 } = PremiumConstants);
-const OfferTriggerTypes = fn(1085).OfferTriggerTypes;
+const OfferTriggerTypes = fn(1089).OfferTriggerTypes;
 let closure_17 = performance.now();
-let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: "\u{1F471}\u{1F3FB}\u200D\u2640\uFE0F", isFetching: true, lastFetchSuccessful: null, shouldTriggerOffer: 8, cooldownExpirationTimestamps: { [OfferTriggerTypes.CHANNEL_OPENED]: 0, [OfferTriggerTypes.JOIN_VOICE_CHANNEL]: 0, [OfferTriggerTypes.PREMIUM_UPSELL_VIEWED]: 0, [OfferTriggerTypes.USER_PROFILE_ACTION]: 0, [OfferTriggerTypes.VIDEO_STREAM_ENDED]: 0 } };
+let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: {}, userDiscountOffers: {}, userDiscounts: "\u{1F469}\u{1F3FC}", isFetching: true, lastFetchSuccessful: null, shouldTriggerOffer: 8, cooldownExpirationTimestamps: { [OfferTriggerTypes.CHANNEL_OPENED]: 0, [OfferTriggerTypes.JOIN_VOICE_CHANNEL]: 0, [OfferTriggerTypes.PREMIUM_UPSELL_VIEWED]: 0, [OfferTriggerTypes.USER_PROFILE_ACTION]: 0, [OfferTriggerTypes.VIDEO_STREAM_ENDED]: 0 } };
 let closure_19 = obj;
 const PersistedStore = initializeDefault.PersistedStore;
 class UserOfferStore extends PersistedStore {
@@ -209,7 +209,7 @@ prototype["shouldFetchReferralOffer"] = function shouldFetchReferralOffer(tmp9Re
   }
 };
 prototype["shouldShowTrialOfferReminder"] = function shouldShowTrialOfferReminder(trialId) {
-  const hasItem = __initData.includes(trialId.trialId);
+  const hasItem = closure_1_15.includes(trialId.trialId);
   let result = !hasItem;
   if (hasItem) {
     result = PremiumOfferReminderExperiment.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
@@ -254,7 +254,7 @@ prototype["getAlmostExpiringTrialOffersForReminder"] = function getAlmostExpirin
   });
 };
 prototype["shouldShowDiscountOfferReminder"] = function shouldShowDiscountOfferReminder(discountId) {
-  const hasItem = closure_1_10.includes(discountId.discountId);
+  const hasItem = v65535.includes(discountId.discountId);
   let result = !hasItem;
   if (hasItem) {
     result = PremiumOfferReminderExperiment.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });

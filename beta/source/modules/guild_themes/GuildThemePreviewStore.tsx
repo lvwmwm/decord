@@ -1,13 +1,13 @@
-// Module ID: 4641
-// Function ID: 4642
+// Module ID: 4644
+// Function ID: 4645
 // Name: GuildThemePreviewStore
-// Dependencies: [502, 4642, 2036, 573, 2062, 12, 504, 2]
+// Dependencies: [502, 4645, 2040, 577, 2066, 12, 504, 2]
 
-// Module 4641 (GuildThemePreviewStore)
+// Module 4644 (GuildThemePreviewStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 2062 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 2066 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -24,9 +24,9 @@ function handleEnd() {
   }
   return flag;
 }
-const GuildThemePreviewConstants = fn(4642);
+const GuildThemePreviewConstants = fn(4645);
 ({ GuildThemePreviewOrigin, GuildThemePreviewOwner } = GuildThemePreviewConstants);
-const timeout = new fn(2036).Timeout();
+const timeout = new fn(2040).Timeout();
 let closure_5 = { guildId: null, draft: null, original: null, draftEnabled: false, originalEnabled: false, origin: null, owner: null, isSaving: false, isAwaitingGuildUpdate: false, saveError: null };
 const Store = initializeDefault.Store;
 class GuildThemePreviewStore extends Store {
@@ -133,7 +133,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(DispatcherDefault, {
     if (null == closure_5.guildId) {
       return false;
     } else {
-      const obj2 = { presetId: tmp, customUserThemeSettings: "r" };
+      const obj2 = { presetId: tmp, customUserThemeSettings: "Array" };
       const isEqualResult = _mod12.isEqual(closure_5.draft, obj2);
       let flag = !isEqualResult;
       if (isEqualResult) {

@@ -1,13 +1,13 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17016
+// Function ID: 17017
 // Name: trackVoiceFeedback
-// Dependencies: [109, 5, 1992, 14078, 1241, 2]
+// Dependencies: [109, 5, 1996, 14081, 1245, 2]
 // Exports: default
 
-// Module 17013 (trackVoiceFeedback)
+// Module 17016 (trackVoiceFeedback)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 
 let closure_6 = async function _trackVoiceFeedback() {
   const settings = closure_133_5.getSettings();
@@ -54,11 +54,11 @@ let closure_6 = async function _trackVoiceFeedback() {
   obj7.audio_output_mode = closure_132_20;
   const merged = Object.assign(closure_132_21);
   closure_133_0(closure_133_1[4]).track(closure_132_0, obj7);
-  await "HermesInternal";
+  await "IconComponent";
   closure_4 = tmp2;
   closure_132_0 = closure_0;
   ({ rating: closure_132_1, category: closure_132_2, reasonCode: closure_132_3, reasonDescription: closure_132_4, variant: closure_132_5, feedback: closure_132_6, analyticsData: closure_132_7 } = closure_1);
-  return "PX_16";
+  return "Set";
 };
 let closure_2 = ["output_audio_route_type"];
 const size = fn(2);

@@ -1,8 +1,8 @@
-// Module ID: 6429
-// Function ID: 6430
+// Module ID: 6427
+// Function ID: 6428
 // Dependencies: [2]
 
-// Module 6429
+// Module 6427
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeadphonesPairSpotIllustration-2x.png.js");

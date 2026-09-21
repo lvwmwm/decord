@@ -1,10 +1,10 @@
-// Module ID: 10384
-// Function ID: 10385
+// Module ID: 12221
+// Function ID: 12222
 // Name: MarkupInlineChannelMentionRules
-// Dependencies: [19, 21, 8354, 1177, 1370, 2]
+// Dependencies: [19, 21, 8359, 1181, 1374, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 10384 (MarkupInlineChannelMentionRules)
+// Module 12221 (MarkupInlineChannelMentionRules)
 import noop from "module_19" /* 19 */;
 
 const jsxs = fn(21).jsxs;
@@ -14,14 +14,14 @@ const result = size.fileFinishedImporting("modules/markup/native/MarkupInlineCha
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, fn, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = u1F4AC(8354).smartOutput(inContent, fn, key);
-    const obj3 = u1F4AC(8354);
+    let smartOutputResult = u1F4AC(8359).smartOutput(inContent, fn, key);
+    const obj3 = u1F4AC(8359);
   } else {
     const obj = { children: null };
-    const items = [fn(inContent.inContent, key), " \u203A ", u1F4AC(8354).smartOutput(inContent, fn, key)];
+    const items = [fn(inContent.inContent, key), " \u203A ", u1F4AC(8359).smartOutput(inContent, fn, key)];
     obj.children = items;
-    smartOutputResult = jsxs(u1F4AC(1177).LegacyText, { children: null }, key.key);
-    const obj2 = u1F4AC(8354);
+    smartOutputResult = jsxs(u1F4AC(1181).LegacyText, { children: null }, key.key);
+    const obj2 = u1F4AC(8359);
   }
   return smartOutputResult;
 };
@@ -35,10 +35,10 @@ export function createInlineChannelReact(arg0) {
       case "text":
         let str2 = "#";
         str = undefined;
-        let tmp9 = str(1177);
+        let tmp9 = str(1181);
         let obj2 = { children: null };
         let items = [str2, , ];
-        let obj3 = str(8354);
+        let obj3 = str(8359);
         let smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -48,10 +48,10 @@ export function createInlineChannelReact(arg0) {
       case "text-nsfw":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -61,10 +61,10 @@ export function createInlineChannelReact(arg0) {
       case "text-spoiler":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -74,10 +74,10 @@ export function createInlineChannelReact(arg0) {
       case "announcement":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -87,10 +87,10 @@ export function createInlineChannelReact(arg0) {
       case "announcement-nsfw":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -100,10 +100,10 @@ export function createInlineChannelReact(arg0) {
       case "announcement-spoiler":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -113,10 +113,10 @@ export function createInlineChannelReact(arg0) {
       case "forum":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -126,10 +126,10 @@ export function createInlineChannelReact(arg0) {
       case "forum-nsfw":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -139,10 +139,10 @@ export function createInlineChannelReact(arg0) {
       case "forum-spoiler":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -152,10 +152,10 @@ export function createInlineChannelReact(arg0) {
       case "media":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -165,10 +165,10 @@ export function createInlineChannelReact(arg0) {
       case "media-nsfw":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -178,10 +178,10 @@ export function createInlineChannelReact(arg0) {
       case "app":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -191,10 +191,10 @@ export function createInlineChannelReact(arg0) {
       case "app-nsfw":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -204,10 +204,10 @@ export function createInlineChannelReact(arg0) {
       case "app-spoiler":
         str2 = "#";
         str = undefined;
-        tmp9 = str(1177);
+        tmp9 = str(1181);
         obj2 = { children: null };
         items = [str2, , ];
-        obj3 = str(8354);
+        obj3 = str(8359);
         smartOutputResult = obj3.smartOutput(iconType, output, key);
         items[1] = smartOutputResult;
         items[2] = str;
@@ -250,8 +250,8 @@ export function createInlineChannelReact(arg0) {
       case "linked-roles":
       break;
       default:
-        str(1370).assertNever(iconType);
-        const obj = str(1370);
+        str(1374).assertNever(iconType);
+        const obj = str(1374);
     }
   };
 }
@@ -261,10 +261,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "text":
       let str2 = "#";
       str = undefined;
-      let tmp9 = str(1177);
+      let tmp9 = str(1181);
       let obj2 = { children: null };
       let items = [str2, , ];
-      let obj3 = str(8354);
+      let obj3 = str(8359);
       let smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -274,10 +274,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "text-nsfw":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -287,10 +287,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "text-spoiler":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -300,10 +300,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "announcement":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -313,10 +313,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "announcement-nsfw":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -326,10 +326,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "announcement-spoiler":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -339,10 +339,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "forum":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -352,10 +352,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "forum-nsfw":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -365,10 +365,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "forum-spoiler":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -378,10 +378,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "media":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -391,10 +391,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "media-nsfw":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -404,10 +404,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "app":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -417,10 +417,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "app-nsfw":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -430,10 +430,10 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "app-spoiler":
       str2 = "#";
       str = undefined;
-      tmp9 = str(1177);
+      tmp9 = str(1181);
       obj2 = { children: null };
       items = [str2, , ];
-      obj3 = str(8354);
+      obj3 = str(8359);
       smartOutputResult = obj3.smartOutput(iconType, output, key);
       items[1] = smartOutputResult;
       items[2] = str;
@@ -476,7 +476,7 @@ export const inlineChannelReact = (iconType, output, key) => {
     case "linked-roles":
     break;
     default:
-      str(1370).assertNever(iconType);
-      const obj = str(1370);
+      str(1374).assertNever(iconType);
+      const obj = str(1374);
   }
 };

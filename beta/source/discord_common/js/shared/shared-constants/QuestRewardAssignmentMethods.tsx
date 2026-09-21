@@ -1,9 +1,9 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 10581
+// Function ID: 10582
 // Name: QuestRewardAssignmentMethods
 // Dependencies: [2]
 
-// Module 11559 (QuestRewardAssignmentMethods)
+// Module 10581 (QuestRewardAssignmentMethods)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardAssignmentMethods.tsx");

@@ -1,31 +1,15 @@
 // Module ID: 7048
 // Function ID: 7049
-// Dependencies: [19, 6892]
-// Exports: useBoundingClientRect
+// Dependencies: [17]
 
 // Module 7048
-import _mod19 from "module_19" /* 19 */;
+import _mod17 from "module_17" /* 17 */;
 
-const useLayoutEffect = _mod19.useLayoutEffect;
+const StyleSheet = _mod17.StyleSheet;
+const obj = { container: null };
+const obj2 = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj2.pointerEvents = "box-none";
+obj.container = obj2;
 
-export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  if (obj.isFabricInstalled()) {
-    useLayoutEffect(() => {
-      if (closure_0) {
-        if (tmp.current) {
-          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
-            if (typeof tmp.current.getBoundingClientRect === "function") {
-              const current2 = tmp.current;
-              closure_1(current2.getBoundingClientRect());
-            }
-          } else {
-            const current = tmp.current;
-            closure_1(current.unstable_getBoundingClientRect());
-          }
-        }
-      }
-    });
-  }
-};
+export const styles = StyleSheet.create(obj);

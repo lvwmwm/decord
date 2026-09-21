@@ -1,26 +1,374 @@
-// Module ID: 7205
-// Function ID: 7206
+// Module ID: 7203
+// Function ID: 7204
 // Name: PhoneOrEmailInput
-// Dependencies: [32, 19, 21, 7206, 7207, 1115, 7209, 2]
+// Dependencies: [32, 109, 19, 21, 558, 568, 7204, 7205, 1119, 7207, 2]
 
-// Module 7205 (PhoneOrEmailInput)
-import util from "util" /* 1115 */;
+// Module 7203 (PhoneOrEmailInput)
+import util from "util" /* 1119 */;
+import useStableCallbackDefault from "useStableCallback" /* 7205 */;
 import _slicedToArray from "module_32" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
+
 require = fn;
+let closure_3 = ["onChange", "alpha2", "countryCode", "onPressCountrySelector", "forceMode"];
 const jsx = fn(21).jsx;
+const ReactCompilerGating = fn(558);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/phone/native/PhoneOrEmailInput.tsx");
 
-export default noop.forwardRef((onChange, ref) => {
+export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((onChange, ref) => {
+  const cResult = require("c").c(27);
+  if (cResult[0] !== onChange) {
+    onChange = onChange.onChange;
+    dependencyMap = onChange;
+    ({ alpha2, countryCode } = onChange);
+    _require = countryCode;
+    ({ onPressCountrySelector, forceMode } = onChange);
+    importDefault = forceMode;
+    const tmp12 = _objectWithoutProperties(onChange, closure_3);
+    cResult[0] = onChange;
+    cResult[1] = alpha2;
+    cResult[2] = countryCode;
+    cResult[3] = forceMode;
+    cResult[4] = onChange;
+    cResult[5] = onPressCountrySelector;
+    cResult[6] = tmp12;
+    let tmp9 = tmp12;
+    let tmp8 = onPressCountrySelector;
+    class L {
+      constructor(arg0) {
+        tmp = closure_3(onChange);
+        obj = closure_0(closure_2[6]);
+        str = "";
+        if (obj.shouldShowCountryCodeSelector(closure_1, onChange)) {
+          str = closure_0;
+        }
+        if (closure_2 != null) {
+          tmp2 = closure_2(onChange, str);
+        }
+        return;
+      }
+    }
+    let tmp4 = alpha2;
+  } else {
+    tmp4 = cResult[1];
+    _require = cResult[2];
+    importDefault = cResult[3];
+    dependencyMap = cResult[4];
+    tmp8 = cResult[5];
+    tmp9 = cResult[6];
+  }
+  const obj = require("c");
+  closure_3 = ref(noop.useState(""), 2)[1];
+  ref = noop.useRef(null);
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function p() {
+      return {
+        blur() {
+          const current = ref.current;
+          let blurResult;
+          if (current != null) {
+            blurResult = current.blur();
+          }
+          return blurResult;
+        },
+        focus() {
+          const current = ref.current;
+          let focusResult;
+          if (current != null) {
+            focusResult = current.focus();
+          }
+          return focusResult;
+        },
+        isFocused() {
+          const current = ref.current;
+          let flag;
+          if (current != null) {
+            flag = current.isFocused();
+          }
+          if (flag == null) {
+            flag = false;
+          }
+          return flag;
+        },
+        setText(arg0) {
+          closure_1_3(arg0);
+          const current = ref.current;
+          if (current != null) {
+            current.setText(arg0);
+          }
+        },
+        getText() {
+          const current = ref.current;
+          let str;
+          if (current != null) {
+            str = current.getText();
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        },
+        measure(arg0) {
+          const current = ref.current;
+          let measureResult;
+          if (current != null) {
+            measureResult = current.measure(arg0);
+          }
+          return measureResult;
+        },
+        measureInWindow(arg0) {
+          const current = ref.current;
+          let measureInWindowResult;
+          if (current != null) {
+            measureInWindowResult = current.measureInWindow(arg0);
+          }
+          return measureInWindowResult;
+        },
+        measureLayout(arg0, arg1, arg2) {
+          const current = ref.current;
+          let measureLayoutResult;
+          if (current != null) {
+            measureLayoutResult = current.measureLayout(arg0, arg1, arg2);
+          }
+          return measureLayoutResult;
+        }
+      };
+    };
+    const items = [];
+    cResult[7] = fn;
+    cResult[8] = items;
+    let tmp16 = items;
+    let tmp15 = fn;
+  } else {
+    tmp15 = cResult[7];
+    tmp16 = cResult[8];
+  }
+  const imperativeHandle = obj2.useImperativeHandle(ref, tmp15, tmp16);
+  require("PhoneOrEmailUtils");
+  if (cResult[9] === tmp5) {
+    if (cResult[10] === tmp6) {
+      if (cResult[11] === tmp7) {
+        let tmp20 = cResult[12];
+      }
+      const tmp22 = useStableCallbackDefault(tmp20);
+      _objectWithoutProperties = tmp22;
+      if (cResult[13] !== tmp22) {
+        class W {
+          constructor() {
+            current = closure_4.current;
+            str = undefined;
+            tmp = closure_5;
+            if (current != null) {
+              str = current.getText();
+            }
+            if (str == null) {
+              str = "";
+            }
+            tmpResult = tmp(str);
+            return;
+          }
+        }
+        cResult[13] = tmp22;
+        cResult[14] = W;
+        const tmp23 = W;
+      } else {
+        class W {
+          constructor() {
+            current = closure_4.current;
+            str = undefined;
+            tmp = closure_5;
+            if (current != null) {
+              str = current.getText();
+            }
+            if (str == null) {
+              str = "";
+            }
+            tmpResult = tmp(str);
+            return;
+          }
+        }
+      }
+      if (cResult[15] === tmp5) {
+        class W {
+          constructor() {
+            current = closure_4.current;
+            str = undefined;
+            tmp = closure_5;
+            if (current != null) {
+              str = current.getText();
+            }
+            if (str == null) {
+              str = "";
+            }
+            tmpResult = tmp(str);
+            return;
+          }
+        }
+        const effect = obj2.useEffect(tmp23, tmp24);
+        let combined;
+        if (tmp19) {
+          class W {
+            constructor() {
+              current = closure_4.current;
+              str = undefined;
+              tmp = closure_5;
+              if (current != null) {
+                str = current.getText();
+              }
+              if (str == null) {
+                str = "";
+              }
+              tmpResult = tmp(str);
+              return;
+            }
+          }
+          const _HermesInternal = HermesInternal;
+          combined = "" + tmp4 + " " + tmp5;
+        }
+        if (combined == null) {
+          class W {
+            constructor() {
+              current = closure_4.current;
+              str = undefined;
+              tmp = closure_5;
+              if (current != null) {
+                str = current.getText();
+              }
+              if (str == null) {
+                str = "";
+              }
+              tmpResult = tmp(str);
+              return;
+            }
+          }
+        }
+        const _Symbol = Symbol;
+        if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+          class W {
+            constructor() {
+              current = closure_4.current;
+              str = undefined;
+              tmp = closure_5;
+              if (current != null) {
+                str = current.getText();
+              }
+              if (str == null) {
+                str = "";
+              }
+              tmpResult = tmp(str);
+              return;
+            }
+          }
+          const stringResult = obj3.string(tmp(1119).t.GwAW3k);
+          cResult[18] = stringResult;
+          const tmp28 = stringResult;
+        } else {
+          class W {
+            constructor() {
+              current = closure_4.current;
+              str = undefined;
+              tmp = closure_5;
+              if (current != null) {
+                str = current.getText();
+              }
+              if (str == null) {
+                str = "";
+              }
+              tmpResult = tmp(str);
+              return;
+            }
+          }
+        }
+        if (cResult[19] === tmp8) {
+          class W {
+            constructor() {
+              current = closure_4.current;
+              str = undefined;
+              tmp = closure_5;
+              if (current != null) {
+                str = current.getText();
+              }
+              if (str == null) {
+                str = "";
+              }
+              tmpResult = tmp(str);
+              return;
+            }
+          }
+          if (cResult[22] === combined) {
+            class W {
+              constructor() {
+                current = closure_4.current;
+                str = undefined;
+                tmp = closure_5;
+                if (current != null) {
+                  str = current.getText();
+                }
+                if (str == null) {
+                  str = "";
+                }
+                tmpResult = tmp(str);
+                return;
+              }
+            }
+          }
+          const obj4 = {};
+          const merged = Object.assign(tmp9);
+          obj4.ref = ref;
+          obj4.onChange = tmp20;
+          obj4.leadingText = combined;
+          obj4.leadingPressableProps = tmp30;
+          const tmp36 = jsx(tmp(7207).SplitTextInput, {});
+          cResult[22] = combined;
+          cResult[23] = tmp20;
+          cResult[24] = tmp30;
+          cResult[25] = tmp9;
+          cResult[26] = tmp36;
+        }
+        const obj5 = { onPress: tmp8, accessibilityRole: "button", accessibilityLabel: combined, accessibilityHint: tmp28 };
+        cResult[19] = tmp8;
+        cResult[20] = combined;
+        cResult[21] = obj5;
+      }
+      const items1 = [tmp5, tmp22];
+      cResult[15] = tmp5;
+      cResult[16] = tmp22;
+      cResult[17] = items1;
+      tmp24 = items1;
+    }
+  }
+  class L {
+    constructor(arg0) {
+      tmp = closure_3(onChange);
+      obj = closure_0(closure_2[6]);
+      str = "";
+      if (obj.shouldShowCountryCodeSelector(closure_1, onChange)) {
+        str = closure_0;
+      }
+      if (closure_2 != null) {
+        tmp2 = closure_2(onChange, str);
+      }
+      return;
+    }
+  }
+  cResult[9] = tmp5;
+  cResult[10] = tmp6;
+  cResult[11] = tmp7;
+  cResult[12] = L;
+  tmp20 = L;
+}) : ((onChange, ref) => {
   onChange = onChange.onChange;
   ({ alpha2, countryCode } = onChange);
   const onPressCountrySelector = onChange.onPressCountrySelector;
   const forceMode = onChange.forceMode;
   const merged = Object.assign(onChange, Object.assign({ onChange: 0, alpha2: 0, countryCode: 0, onPressCountrySelector: 0, forceMode: 0 }));
+  _slicedToArray = undefined;
   noop = undefined;
-  [tmp3, c4] = forceMode(noop.useState(""), 2);
+  [tmp3, c4] = noop.useState("");
   ref = noop.useRef(null);
   const imperativeHandle = noop.useImperativeHandle(ref, () => ({
     blur() {
@@ -94,23 +442,23 @@ export default noop.forwardRef((onChange, ref) => {
     }
   }), []);
   let obj = noop;
-  const tmp2 = forceMode(noop.useState(""), 2);
+  const tmp2 = _slicedToArray(noop.useState(""), 2);
   const tmp6 = onChange;
   const tmp7 = onPressCountrySelector;
   const items = [countryCode, forceMode, onChange];
-  const result = onChange(onPressCountrySelector[3]).shouldShowCountryCodeSelector(forceMode, tmp3);
-  const callback = noop.useCallback((value) => {
-    _undefined(value);
+  const result = onChange(onPressCountrySelector[6]).shouldShowCountryCodeSelector(forceMode, tmp3);
+  const callback = noop.useCallback((cResult) => {
+    _undefined(cResult);
     let str = "";
-    if (obj.shouldShowCountryCodeSelector(forceMode, value)) {
+    if (obj.shouldShowCountryCodeSelector(forceMode, cResult)) {
       str = countryCode;
     }
     if (onChange != null) {
-      onChange(value, str);
+      onChange(cResult, str);
     }
   }, items);
-  const tmp10 = countryCode(onPressCountrySelector[4])(callback);
-  closure_6 = tmp10;
+  const tmp10 = countryCode(onPressCountrySelector[7])(callback);
+  noop = tmp10;
   const items1 = [countryCode, tmp10];
   const effect = noop.useEffect(() => {
     const current = ref.current;
@@ -149,5 +497,5 @@ export default noop.forwardRef((onChange, ref) => {
   obj3.onChange = callback;
   obj3.leadingText = combined;
   obj3.leadingPressableProps = memo;
-  return ref(tmp6(tmp7[6]).SplitTextInput, obj3);
-});
+  return combined(tmp6(tmp7[9]).SplitTextInput, obj3);
+}));

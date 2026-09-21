@@ -1,40 +1,80 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15750
+// Function ID: 15751
 // Name: InAppNotificationsSetting
-// Dependencies: [8233, 1074, 2019, 10347, 1115, 2808, 1241, 11725, 14730, 15762, 2]
+// Dependencies: [8238, 1078, 558, 2023, 568, 12955, 1119, 2812, 1245, 11594, 14733, 15751, 2]
 
-// Module 15761 (InAppNotificationsSetting)
-import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import _modDef2808 from "module_2808" /* 2808 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import FocusModeUtils from "FocusModeUtils" /* 10347 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14730 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15762 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11725 */;
+// Module 15750 (InAppNotificationsSetting)
+import c from "c" /* 568 */;
+import Constants from "Constants" /* 1078 */;
+import util from "util" /* 1119 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import UserSettings from "UserSettings" /* 2023 */;
+import _modDef2812 from "module_2812" /* 2812 */;
+import SettingsConstants from "SettingsConstants" /* 8238 */;
+import FocusModeUtils from "FocusModeUtils" /* 12955 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14733 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15751 */;
+import "ReactCompilerGating";
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11594 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const obj = {
-  useValue: function useInAppNotificationsSettingValue() {
-    const FocusMode = UserSettings.FocusMode;
-    const setting = FocusMode.useSetting();
-    const ShowInAppNotifications = UserSettings.ShowInAppNotifications;
-    let setting1 = !setting;
-    if (!setting) {
-      setting1 = ShowInAppNotifications.useSetting();
-    }
-    return setting1;
-  },
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const FocusMode = UserSettings.FocusMode;
+  const setting = FocusMode.useSetting();
+  const ShowInAppNotifications = UserSettings.ShowInAppNotifications;
+  let setting1 = !setting;
+  if (!setting) {
+    setting1 = ShowInAppNotifications.useSetting();
+  }
+  return setting1;
+}) : (() => {
+  const FocusMode = UserSettings.FocusMode;
+  const setting = FocusMode.useSetting();
+  const ShowInAppNotifications = UserSettings.ShowInAppNotifications;
+  let setting1 = !setting;
+  if (!setting) {
+    setting1 = ShowInAppNotifications.useSetting();
+  }
+  return setting1;
+});
+let ReactCompilerGating = ReactCompilerGating_mod;
+let obj = {
+  useValue: tmp2,
   onValueChange: function updateInAppNotificationSettings(notifications_in_app_enabled) {
     const ShowInAppNotifications = UserSettings.ShowInAppNotifications;
     ShowInAppNotifications.updateSetting(notifications_in_app_enabled);
     AnalyticsUtilsDefault.track(AnalyticEvents.LOCAL_SETTINGS_UPDATED, { notifications_in_app_enabled });
   },
-  useIsDisabled: FocusModeUtils.useFocusModeEnabled
+  useIsDisabled: null
 };
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
+  if (cResult[0] !== focusModeEnabled) {
+    let stringResult;
+    if (focusModeEnabled) {
+      const intl = tmp(1119).intl;
+      stringResult = intl.string(tmp(1119).t.cIRG0s);
+    }
+    cResult[0] = focusModeEnabled;
+    cResult[1] = stringResult;
+    let tmp5 = stringResult;
+  } else {
+    tmp5 = cResult[1];
+  }
+  return tmp5;
+}) : (() => {
+  let stringResult;
+  if (obj.useFocusModeEnabled()) {
+    const intl = tmp(1119).intl;
+    stringResult = intl.string(tmp(1119).t.cIRG0s);
+  }
+  return stringResult;
+});
+obj.useIsDisabled = FocusModeUtils.useFocusModeEnabled;
 let SettingBuilders = SettingBuilders_mod;
 const obj2 = {};
 const merged = Object.assign(obj);
@@ -42,14 +82,7 @@ obj2.useTitle = function useTitle() {
   const intl = util.intl;
   return intl.string(util.t.rqEZdu);
 };
-obj2.useDescription = function useInAppNotificationsDescription() {
-  let stringResult;
-  if (obj.useFocusModeEnabled()) {
-    const intl = tmp(1115).intl;
-    stringResult = intl.string(tmp(1115).t.cIRG0s);
-  }
-  return stringResult;
-};
+obj2.useDescription = tmp3;
 obj2.parent = SettingsConstants.MobileUserSettings.NOTIFICATIONS;
 obj2.usePredicate = function usePredicate() {
   return !notifications_NotificationSettingsUtils.useIsDeclarativeSettingsUIAvailable("InAppNotificationsSetting");
@@ -60,19 +93,37 @@ const obj3 = {};
 const merged1 = Object.assign(obj);
 obj3.useTitle = function useTitle() {
   const intl = util.intl;
-  return intl.string(_modDef2808.sH5mu9);
+  return intl.string(_modDef2812.sH5mu9);
 };
-obj3.useDescription = function useRedesignInAppNotificationsDescription() {
+obj3.useDescription = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let cIRG0s = dependencyMap;
+  const cResult = c.c(2);
+  const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
+  if (cResult[0] !== focusModeEnabled) {
+    const intl = tmp(1119).intl;
+    const string = intl.string;
+    if (focusModeEnabled) {
+      cIRG0s = tmp(1119).t.cIRG0s;
+      let stringResult = string(cIRG0s);
+    } else {
+      stringResult = string(_modDef2812["T/zMdV"]);
+    }
+    cResult[0] = focusModeEnabled;
+    cResult[1] = stringResult;
+  } else {
+    return cResult[1];
+  }
+}) : (() => {
   const focusModeEnabled = FocusModeUtils.useFocusModeEnabled();
   const intl = util.intl;
   const string = intl.string;
   if (focusModeEnabled) {
     let stringResult = string(util.t.cIRG0s);
   } else {
-    stringResult = string(_modDef2808["T/zMdV"]);
+    stringResult = string(_modDef2812["T/zMdV"]);
   }
   return stringResult;
-};
+});
 obj3.parent = MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN;
 obj3.usePredicate = function usePredicate() {
   return notifications_NotificationSettingsUtils.useIsDeclarativeSettingsUIAvailable("RedesignInAppNotificationsSetting");

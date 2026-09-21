@@ -1,32 +1,26 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 15259
+// Function ID: 15260
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1074, 21, 7659, 11696, 13819, 1177, 11725, 1115, 11299, 4427, 13818, 2]
+// Dependencies: [19, 1078, 21, 558, 568, 7661, 11565, 13822, 1181, 11594, 1119, 11330, 4431, 13821, 2]
 
-// Module 15270 (PremiumGiftingSetting)
-import util from "util" /* 1115 */;
-import native from "native" /* 1177 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4427 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7659 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11696 */;
-import PromotionsHooks from "PromotionsHooks" /* 13819 */;
+// Module 15259 (PremiumGiftingSetting)
+import c from "c" /* 568 */;
+import util from "util" /* 1119 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4431 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7661 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11565 */;
+import PromotionsHooks from "PromotionsHooks" /* 13822 */;
 import noop from "module_19" /* 19 */;
 
+const native = tmp(1181);
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11725);
-const route = SettingBuilders.createRoute({
-  useTitle() {
-    const intl = util.intl;
-    return intl.string(util.t["jcSP+g"]);
-  },
-  parent: null,
-  IconComponent: fn(11299).GiftIcon,
-  usePredicate() {
-    return BillingPlatformUtils.isPremiumGiftingSupported();
-  },
-  usePreNavigationAction: function useCanNavigateToPaymentSetting() {
-    return noop.useCallback(() => {
+fn(558);
+const ReactCompilerGating = fn(558);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
       const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
       let flag = !isPaymentsBlocked;
       if (isPaymentsBlocked) {
@@ -34,15 +28,71 @@ const route = SettingBuilders.createRoute({
         flag = false;
       }
       return flag;
-    }, []);
+    };
+    cResult[0] = fn;
+    let first = fn;
+  } else {
+    first = cResult[0];
+  }
+  return first;
+}) : (() => noop.useCallback(() => {
+  const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();
+  let flag = !isPaymentsBlocked;
+  if (isPaymentsBlocked) {
+    openBlockedPaymentsCountryActionSheetDefault();
+    flag = false;
+  }
+  return flag;
+}, []));
+const SettingBuilders = fn(11594);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  const cResult = c.c(2);
+  const unseenOutboundPromotions = PromotionsHooks.useUnseenOutboundPromotions();
+  if (cResult[0] !== unseenOutboundPromotions.length) {
+    const obj3 = { value: unseenOutboundPromotions.length };
+    const tmp6 = jsx(native.Badge, { value: unseenOutboundPromotions.length });
+    cResult[0] = unseenOutboundPromotions.length;
+    cResult[1] = tmp6;
+    let tmp4 = tmp6;
+  } else {
+    tmp4 = cResult[1];
+  }
+  return tmp4;
+}) : (() => {
+  const unseenOutboundPromotions = PromotionsHooks.useUnseenOutboundPromotions();
+  return jsx(native.Badge, { value: unseenOutboundPromotions.length });
+});
+const route = SettingBuilders.createRoute({
+  useTitle() {
+    const intl = util.intl;
+    return intl.string(util.t["jcSP+g"]);
   },
-  useTrailing: function usePremiumGiftingSettingTrailing() {
+  parent: null,
+  IconComponent: fn(11330).GiftIcon,
+  usePredicate() {
+    return BillingPlatformUtils.isPremiumGiftingSupported();
+  },
+  usePreNavigationAction: tmp2,
+  useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+    const cResult = c.c(2);
+    const unseenOutboundPromotions = PromotionsHooks.useUnseenOutboundPromotions();
+    if (cResult[0] !== unseenOutboundPromotions.length) {
+      const obj3 = { value: unseenOutboundPromotions.length };
+      const tmp6 = jsx(native.Badge, { value: unseenOutboundPromotions.length });
+      cResult[0] = unseenOutboundPromotions.length;
+      cResult[1] = tmp6;
+      let tmp4 = tmp6;
+    } else {
+      tmp4 = cResult[1];
+    }
+    return tmp4;
+  }) : (() => {
     const unseenOutboundPromotions = PromotionsHooks.useUnseenOutboundPromotions();
     return jsx(native.Badge, { value: unseenOutboundPromotions.length });
-  },
+  }),
   unsearchable: true,
   screen: {
-    route: fn(1074).UserSettingsSections.PREMIUM_GIFTING,
+    route: fn(1078).UserSettingsSections.PREMIUM_GIFTING,
     getComponent() {
       return require("UserSettingsPremiumGifting").default;
     }

@@ -1,9 +1,9 @@
 // Module ID: 13600
 // Function ID: 13601
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 13600
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 297, height: 238, scales: [1], hash: "2a38db2647d78740ca056c705d4301a7", name: "wumpus-clock", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ce5302624e28acc38af07d238a4e16fe", name: "BellZIcon", type: "png" });

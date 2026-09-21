@@ -1,15 +1,15 @@
-// Module ID: 7892
-// Function ID: 7893
+// Module ID: 7897
+// Function ID: 7898
 // Name: NonGuildVersions
-// Dependencies: [5, 4577, 3, 7885, 12, 2070, 1091, 2]
+// Dependencies: [5, 4580, 3, 7890, 12, 2074, 1095, 2]
 
-// Module 7892 (NonGuildVersions)
+// Module 7897 (NonGuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1091 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import DurationsDefault from "Durations" /* 1095 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2074 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
 
 const require = fn;
 let closure_5 = new LoggerDefault("NonGuildVersions");
@@ -41,13 +41,13 @@ class NonGuildVersions {
               const _isNaN = isNaN;
               const _Number = Number;
               if (!isNaN(Number(guildId))) {
-                const result = closure_1_1(2070).nonGuildVersionsTransaction(database);
+                const result = closure_1_1(2074).nonGuildVersionsTransaction(database);
                 const obj2 = { id: "initial_guild_id", versionString: guildId };
                 result.put(obj2);
-                const obj = closure_1_1(2070);
+                const obj = closure_1_1(2074);
               }
             }
-            const result1 = closure_1_1(2070).nonGuildVersionsTransaction(database);
+            const result1 = closure_1_1(2074).nonGuildVersionsTransaction(database);
             result1.delete("initial_guild_id");
           });
         }
@@ -69,7 +69,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -161,7 +161,7 @@ obj.actions = {
     return obj3.handleConnectionOpen(arg0, arg1);
   }
 };
-const isCacheEnabled = fn(7885);
+const isCacheEnabled = fn(7890);
 if (isCacheEnabled.isCacheEnabled()) {
   SelectedGuildStore.addChangeListener(_modDef12.throttle(() => {
     const databaseResult = DatabaseDaosDefault.database();
@@ -172,13 +172,13 @@ if (isCacheEnabled.isCacheEnabled()) {
           const _isNaN = isNaN;
           const _Number = Number;
           if (!isNaN(Number(guildId))) {
-            const result = closure_1_1(2070).nonGuildVersionsTransaction(database);
+            const result = closure_1_1(2074).nonGuildVersionsTransaction(database);
             const obj2 = { id: "initial_guild_id", versionString: guildId };
             result.put(obj2);
-            const obj = closure_1_1(2070);
+            const obj = closure_1_1(2074);
           }
         }
-        const result1 = closure_1_1(2070).nonGuildVersionsTransaction(database);
+        const result1 = closure_1_1(2074).nonGuildVersionsTransaction(database);
         result1.delete("initial_guild_id");
       });
     }

@@ -1,23 +1,23 @@
-// Module ID: 17694
-// Function ID: 17695
+// Module ID: 17697
+// Function ID: 17698
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 17695, 17697, 17, 17717, 2110, 2095, 1979, 7702, 17718, 1074, 9, 3, 18350, 7734, 18351, 12045, 504, 1248, 1233, 18353, 1983, 1364, 10, 18354, 9563, 573, 18355, 7717, 1231, 18356, 18357, 9557, 510, 1241, 13902, 2087, 9407, 2121, 1154, 18358, 1980, 8603, 18360, 14670, 7910, 18377, 18378, 18379, 10199, 7730, 7718, 4615, 1182, 4748, 14718, 17427, 17428, 1100, 14471, 7701, 14723, 14737, 7872, 18380, 6897, 7703, 7718, 2]
+// Dependencies: [32, 5, 17698, 17700, 17, 17720, 2114, 2099, 1983, 7707, 17721, 1078, 9, 3, 18353, 7739, 18354, 11920, 504, 1252, 1237, 18356, 1987, 1368, 10, 18357, 9559, 577, 18358, 7722, 1235, 18359, 18360, 9553, 510, 1245, 13905, 2091, 9405, 2125, 1158, 18361, 1984, 8608, 18363, 14673, 7915, 18380, 18381, 18383, 18384, 10196, 7735, 7723, 4618, 1186, 4750, 14721, 17430, 17431, 1104, 14474, 7706, 14726, 14740, 7877, 18385, 6891, 7708, 7723, 2]
 // Exports: init, initHeadlessTask
 
-// Module 17694 (NativeAppStartup)
+// Module 17697 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1100 */;
-import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2087 */;
-import timeRequireDefault from "timeRequire" /* 7734 */;
-import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13902 */;
+import TokenManagerAll from "TokenManager" /* 1104 */;
+import SentryUtilsDefault from "SentryUtils" /* 1235 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2091 */;
+import timeRequireDefault from "timeRequire" /* 7739 */;
+import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13905 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import AppStateStore from "AppStateStore" /* 1979 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
+import AppStateStore from "AppStateStore" /* 1983 */;
 
 require = fn;
 function linkFromAppsFlyer(arg0) {
@@ -219,7 +219,7 @@ function sharedInit() {
   closure_2 = [];
   const obj7 = new closure_7(require("NativeAppLifecycleModule"));
   const result3 = require("PushNotification").addNotificationEventListener("notification", (arg0) => {
-    const state = AppStateStore.getState();
+    state = AppStateStore.getState();
     closure_20.log("Push notification received, the app state is " + state);
     if (state !== constants.ACTIVE) {
       if (c0) {
@@ -253,7 +253,7 @@ let closure_27 = async function _trackFirstLaunched(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -383,10 +383,10 @@ let closure_36 = async function _initializeIntl(arg0) {
     closure_129_1 = value.default;
     await closure_129_1();
     closure_130_11(() => closure_1_1());
-    await "HermesInternal";
+    await "IconComponent";
     closure_2 = tmp2;
     log2 = log.log;
-    return "PX_16";
+    return "Set";
   })();
   iter.next();
   return iter;
@@ -402,7 +402,7 @@ let closure_38 = async function _init(_payload, value) {
       let obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -440,13 +440,13 @@ let closure_38 = async function _init(_payload, value) {
           closure_128_18 = undefined;
           closure_128_19 = undefined;
           if (Full !== Full.Full) {
-            closure_128_0 = tmp170;
-            Full = tmp234.Full;
+            closure_128_0 = tmp173;
+            Full = tmp237.Full;
             onStorageInitialize = nextPromise;
-            if (Full !== tmp234.HeadlessRan) {
+            if (Full !== tmp237.HeadlessRan) {
               onStorageInitialize = sharedInit().onStorageInitialize;
             }
-            const obj14 = require("PlatformUtils");
+            const obj15 = require("PlatformUtils");
             let _Promise6 = require("DeviceOrientation");
             if (isAndroidResult) {
               _Promise6.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
@@ -464,7 +464,7 @@ let closure_38 = async function _init(_payload, value) {
             items[2] = loadStorage();
             items[3] = loadKvStorage();
             num2 = require("asyncRequireImpl");
-            const obj15 = require("PushNotification");
+            const obj16 = require("PushNotification");
             nextPromise = num2(paths[44], paths.paths).then((result) => result.default());
             items[4] = nextPromise;
             Promise.all(items);
@@ -474,7 +474,7 @@ let closure_38 = async function _init(_payload, value) {
           } else {
             require("SentryUtils").addBreadcrumb({ message: "Init called when already initialized" });
             c3 = 3;
-            const obj13 = require("SentryUtils");
+            const obj14 = require("SentryUtils");
           }
         }
       } else {
@@ -484,8 +484,8 @@ let closure_38 = async function _init(_payload, value) {
             throw value;
           } else if (_payload === 2) {
             c3 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
+            const obj10 = { value, done: true };
+            return obj10;
           } else {
             closure_128_2 = value;
             closure_128_3 = closure_129_4(closure_128_2, 2);
@@ -493,16 +493,16 @@ let closure_38 = async function _init(_payload, value) {
             closure_128_5 = closure_128_3[1];
             const loadStorageEnd = closure_129_1(closure_129_3[12]).imports.loadStorageEnd;
             loadStorageEnd.record();
-            if (obj18.isAndroid()) {
+            if (obj19.isAndroid()) {
               if (closure_129_0(closure_129_3[45]).isTTITest) {
                 closure_128_6 = closure_129_0(closure_129_3[46]).default;
                 c2 = 2;
                 c3 = 1;
-                const obj11 = { value: closure_128_6.yieldConfig(), done: false };
-                return obj11;
+                const obj12 = { value: closure_128_6.yieldConfig(), done: false };
+                return obj12;
               }
             }
-            obj18 = closure_129_0(closure_129_3[23]);
+            obj19 = closure_129_0(closure_129_3[23]);
           }
         } else if (2 === tmp6) {
           if (_payload === 1) {
@@ -510,8 +510,8 @@ let closure_38 = async function _init(_payload, value) {
             throw value;
           } else if (_payload === 2) {
             c3 = 3;
-            const obj12 = { value, done: true };
-            return obj12;
+            const obj13 = { value, done: true };
+            return obj13;
           }
         } else if (_payload === 1) {
           c3 = 3;
@@ -533,9 +533,9 @@ let closure_38 = async function _init(_payload, value) {
           if (!closure_128_0) {
             closure_128_19.init();
           }
-          closure_129_0(closure_129_3[66]);
-          const sessionHeartbeatScheduler = closure_129_0(closure_129_3[67]).initSessionHeartbeatScheduler();
-          obj = closure_129_0(closure_129_3[67]);
+          closure_129_0(closure_129_3[67]);
+          const sessionHeartbeatScheduler = closure_129_0(closure_129_3[68]).initSessionHeartbeatScheduler();
+          obj = closure_129_0(closure_129_3[68]);
         }
         if (closure_128_0) {
           let resolved = Promise.resolve();
@@ -589,9 +589,11 @@ let closure_38 = async function _init(_payload, value) {
           });
           const obj5 = closure_129_1(closure_129_3[24]);
         }
-        closure_129_1(closure_129_3[48])();
         const obj4 = closure_129_1(closure_129_3[24]);
-        const result3 = closure_129_0(closure_129_3[49]).setupLibdiscoreTimersMonitor();
+        const result3 = closure_129_0(closure_129_3[48]).persistReactCompilerGate();
+        closure_129_1(closure_129_3[49])();
+        const obj7 = closure_129_0(closure_129_3[48]);
+        const result4 = closure_129_0(closure_129_3[50]).setupLibdiscoreTimersMonitor();
         const item = closure_128_4.forEach((url) => {
           url = url.url;
           closure_1_1(paths[15])("handleURL", () => closure_1_0(paths[16])).default(url, true);
@@ -605,9 +607,9 @@ let closure_38 = async function _init(_payload, value) {
         if (!closure_128_8) {
           channelId = closure_129_12.getChannelId();
           if (null != channelId) {
-            const obj16 = { channelId, isPreload: true, skipLocalFetch: true, fetchKey: closure_129_0(closure_129_3[51]).INITIAL_MESSAGE_FETCH_KEY };
-            const messages = closure_129_1(closure_129_3[50]).fetchMessages(obj16);
-            const obj8 = closure_129_1(closure_129_3[50]);
+            const obj17 = { channelId, isPreload: true, skipLocalFetch: true, fetchKey: closure_129_0(closure_129_3[52]).INITIAL_MESSAGE_FETCH_KEY };
+            const messages = closure_129_1(closure_129_3[51]).fetchMessages(obj17);
+            const obj9 = closure_129_1(closure_129_3[51]);
           }
         }
         const loadMiniCacheStart = closure_129_1(closure_129_3[12]).imports.loadMiniCacheStart;
@@ -615,33 +617,33 @@ let closure_38 = async function _init(_payload, value) {
         let items2 = globalThis;
         promise = new Promise((arg0) => {
           closure_0 = arg0;
-          closure_0(paths[42])(paths[52], paths.paths).then((result) => result.default.loadCacheAsync(closure_2_4(closure_2_0(paths[53]).computeInitialNavigationState(), 1)[0], async () => {
-            closure_0(14718).updateSaturation(closure_0(4748).default.saturation);
-            obj = closure_0(14718);
-            closure_0(17427).updateVisualRefresh(true);
-            const obj2 = closure_0(17427);
-            closure_0(17428).updateTheme(closure_0(1182).default.theme);
+          closure_0(paths[42])(paths[53], paths.paths).then((result) => result.default.loadCacheAsync(closure_2_4(closure_2_0(paths[54]).computeInitialNavigationState(), 1)[0], async () => {
+            closure_0(14721).updateSaturation(closure_0(4750).default.saturation);
+            obj = closure_0(14721);
+            closure_0(17430).updateVisualRefresh(true);
+            const obj2 = closure_0(17430);
+            closure_0(17431).updateTheme(closure_0(1186).default.theme);
             closure_1_0();
           }));
         });
         closure_128_11 = promise;
         promise2 = null;
-        const obj7 = closure_129_0(closure_129_3[49]);
-        if (null != obj10.getToken()) {
+        const obj8 = closure_129_0(closure_129_3[50]);
+        if (null != obj11.getToken()) {
           promise2 = items2.Promise.resolve();
           const _Promise3 = items2.Promise;
         } else {
-          closure_128_13 = closure_129_0(closure_129_3[60]);
-          const result4 = closure_128_13.beginLoadedExperimentsTimeout();
+          closure_128_13 = closure_129_0(closure_129_3[61]);
+          const result5 = closure_128_13.beginLoadedExperimentsTimeout();
           promise2 = closure_128_13.getPromise();
         }
         const items1 = [closure_128_11, promise2];
         const _Promise4 = items2.Promise;
-        obj10 = closure_129_2(closure_129_3[59]);
+        obj11 = closure_129_2(closure_129_3[60]);
         items2.Promise.all(items1).then(() => {
           closure_1_32.resolve();
         });
-        items2 = [closure_129_0(closure_129_3[42])(closure_129_3[61], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[62], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[63], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[64], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[65], closure_129_3.paths), closure_128_7];
+        items2 = [closure_129_0(closure_129_3[42])(closure_129_3[62], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[63], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[64], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[65], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[66], closure_129_3.paths), closure_128_7];
         items2.Promise.all(items2);
         c2 = 3;
         c3 = 1;
@@ -649,11 +651,11 @@ let closure_38 = async function _init(_payload, value) {
         const allResult = items2.Promise.all(items1);
       }
       c3 = 3;
-      const obj17 = { value, done: true };
-      return obj17;
-    } catch (tmp198) {
+      const obj18 = { value, done: true };
+      return obj18;
+    } catch (tmp201) {
       c3 = tmp;
-      throw tmp198;
+      throw tmp201;
     }
   }
 };
@@ -668,7 +670,7 @@ let closure_39 = async function _initHeadlessTask(arg0, value) {
       obj = { value, done: true };
       return obj;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -686,8 +688,8 @@ let closure_39 = async function _initHeadlessTask(arg0, value) {
           closure_0 = tmp2;
           let onStorageInitialize;
           closure_128_1 = undefined;
-          if (HeadlessRan === __initData12.None) {
-            HeadlessRan = __initData12.HeadlessRan;
+          if (HeadlessRan === __initData6.None) {
+            HeadlessRan = __initData6.HeadlessRan;
             onStorageInitialize = sharedInit().onStorageInitialize;
             const items = [loadStorage(), loadKvStorage(), initializeIntl({ log: false })];
             c2 = 1;
@@ -709,16 +711,16 @@ let closure_39 = async function _initHeadlessTask(arg0, value) {
         } else {
           closure_129_40();
           onStorageInitialize();
-          closure_129_0(closure_129_3[68]);
+          closure_129_0(closure_129_3[69]);
           closure_129_0(closure_129_3[47]);
           closure_129_1(closure_129_3[18]).initialize();
           const obj8 = closure_129_1(closure_129_3[18]);
-          closure_129_0(closure_129_3[42])(closure_129_3[52], closure_129_3.paths).then((result) => {
+          closure_129_0(closure_129_3[42])(closure_129_3[53], closure_129_3.paths).then((result) => {
             const cacheAsync = result.default.loadCacheAsync({ page: "other" }, async () => {
               closure_1_32.resolve();
             });
           });
-          const items1 = [closure_129_0(closure_129_3[42])(closure_129_3[65], closure_129_3.paths)];
+          const items1 = [closure_129_0(closure_129_3[42])(closure_129_3[66], closure_129_3.paths)];
           c2 = 2;
           c3 = 1;
           const obj5 = { value: Promise.all(items1), done: false };
@@ -731,7 +733,7 @@ let closure_39 = async function _initHeadlessTask(arg0, value) {
         closure_128_1 = value;
         const first = closure_129_4(closure_128_1, 1)[0];
         first.init();
-        closure_129_1(closure_129_3[48])();
+        closure_129_1(closure_129_3[49])();
       }
       c3 = 3;
       const obj6 = { value, done: true };
@@ -744,7 +746,7 @@ let closure_39 = async function _initHeadlessTask(arg0, value) {
 };
 function initializeTokenStorage() {
   const Storage = Storage4.Storage;
-  if (null == Storage.get(closure_1_17)) {
+  if (null == Storage.get(constants)) {
     const token = NativeFastConnectModuleDefault.getConstants().token;
     if (null != token) {
       closure_20.log("Applying token storage fix.");
@@ -762,25 +764,25 @@ function initializeTokenStorage() {
   TokenManagerAll.init();
   const Storage3 = tmp(510).Storage;
   const tmp12 = null != TokenManagerAll.getToken();
-  obj.verbose("Token manager has initialized", { storageHasToken: null != Storage3.get(closure_1_17), tokenManagerHasToken: null != TokenManagerAll.getToken() });
+  obj.verbose("Token manager has initialized", { storageHasToken: null != Storage3.get(constants), tokenManagerHasToken: null != TokenManagerAll.getToken() });
   global();
 }
-const module_17695 = fn(17695);
-const superagentPatch = fn(17697);
+const module_17698 = fn(17698);
+const superagentPatch = fn(17700);
 get_ActivityIndicator = fn(17);
 ({ AppState: metroRequire, NativeEventEmitter: closure_7, Linking: closure_8, LogBox: closure_9, NativeModules: c10 } = get_ActivityIndicator);
-const logThirdPartyImportsDone = fn(17717);
-let closure_11 = fn(2110).subscribeToIntlLoadingSuccess;
-const AnalyticsTrackingStore = fn(7702);
-const ManagerRegistry = fn(17718);
-const Constants = fn(1074);
+const logThirdPartyImportsDone = fn(17720);
+let closure_11 = fn(2114).subscribeToIntlLoadingSuccess;
+const AnalyticsTrackingStore = fn(7707);
+const ManagerRegistry = fn(17721);
+const Constants = fn(1078);
 ({ AppStates: closure_14, AnalyticEvents: closure_15, FIRST_RUN_DATE_KEY: closure_16, TOKEN_KEY: closure_17, STORAGE_SECURE_KEYS: closure_18, Platforms: closure_19 } = Constants);
 const loadImports = TTITrackerDefault.loadImports;
 loadImports.recordEnd();
 let closure_20 = new LoggerDefault("index.native.tsx");
 let c21 = false;
 let c25 = null;
-const future = new fn(9407).Future();
+const future = new fn(9405).Future();
 let obj = { None: 0, [0]: "None", HeadlessRan: 1, [1]: "HeadlessRan", Full: 2, [2]: "Full" };
 const None = obj.None;
 let promise = new Promise((arg0) => {

@@ -1,71 +1,29 @@
 // Module ID: 1563
 // Function ID: 1564
-// Dependencies: [19, 1528]
-// Exports: useFocusEvents
+// Dependencies: [32, 19, 1497, 1523]
+// Exports: useRegisterNavigator
 
 // Module 1563
-import NavigationContext from "NavigationContext" /* 1528 */;
+import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-require = arg1;
+const require = arg1;
 
-export const useFocusEvents = function useFocusEvents(arg0) {
-  ({ state, emitter } = arg0);
-  const context = noop.useContext(NavigationContext.NavigationContext);
-  noop.useRef(undefined);
-  const key = state.routes[state.index].key;
-  const items = [key, emitter, context];
-  const effect = noop.useEffect(() => {
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = context.addListener("focus", () => {
-        ref.current = target;
-        emitter.emit({ type: "focus", target });
-      });
-    }
-    return addListenerResult;
-  }, items);
-  const items1 = [key, emitter, context];
-  const effect1 = noop.useEffect(() => {
-    let addListenerResult;
-    if (context != null) {
-      addListenerResult = context.addListener("blur", () => {
-        ref.current = undefined;
-        emitter.emit({ type: "blur", target });
-      });
-    }
-    return addListenerResult;
-  }, items1);
-  const items2 = [key, emitter, context];
-  const effect2 = noop.useEffect(() => {
-    const current = ref.current;
-    let isFocusedResult = !context;
-    if (context) {
-      isFocusedResult = obj.isFocused();
-    }
-    if (isFocusedResult) {
-      ref.current = key;
-    }
-    let tmp5 = tmp4;
-    if (undefined === current) {
-      tmp5 = obj;
-    }
-    if (!tmp5) {
-      const obj2 = { type: "focus", target: key };
-      emitter.emit(obj2);
-    }
-    let tmp10 = current !== key;
-    if (tmp10) {
-      tmp10 = isFocusedResult;
-    }
-    if (tmp10) {
-      tmp10 = tmp4;
-    }
-    if (tmp10) {
-      const obj3 = { type: "blur", target: current };
-      emitter.emit(obj3);
-      const obj4 = { type: "focus", target: key };
-      emitter.emit(obj4);
-    }
-  }, items2);
+export const useRegisterNavigator = function useRegisterNavigator() {
+  const first = _slicedToArray(noop.useState(() => first(context[2]).nanoid()), 1)[0];
+  context = noop.useContext(first(context[3]).SingleNavigatorContext);
+  if (undefined === context) {
+    const _Error = Error;
+    const error = new Error("Couldn't register the navigator. Have you wrapped your app with 'NavigationContainer'?\n\nThis can also happen if there are multiple copies of '@react-navigation' packages installed.");
+    throw error;
+  } else {
+    const items = [context, first];
+    const effect = obj.useEffect(() => {
+      const unregister = context.unregister;
+      context.register(unregister);
+      return () => unregister(first);
+    }, items);
+    return first;
+  }
+  obj = noop;
 };

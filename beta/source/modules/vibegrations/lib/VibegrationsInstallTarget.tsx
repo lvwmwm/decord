@@ -1,11 +1,11 @@
-// Module ID: 16963
-// Function ID: 16964
+// Module ID: 16966
+// Function ID: 16967
 // Name: VibegrationsInstallTarget
-// Dependencies: [5, 9310, 2]
+// Dependencies: [5, 9308, 2]
 // Exports: repairVibegrationsGuildHints, vibegrationsInstallGuildId
 
-// Module 16963 (VibegrationsInstallTarget)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9310 */;
+// Module 16966 (VibegrationsInstallTarget)
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9308 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -25,7 +25,7 @@ let closure_3 = async function _repairVibegrationsGuildHints(arg0, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -60,7 +60,7 @@ let closure_3 = async function _repairVibegrationsGuildHints(arg0, arg1) {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "IconComponent", done: null };
       } catch (tmp8) {
         c2 = tmp;
         throw tmp8;

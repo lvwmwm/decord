@@ -1,10 +1,9 @@
 // Module ID: 11492
 // Function ID: 11493
-// Dependencies: [17]
+// Dependencies: [1125]
 
 // Module 11492
-import _mod17 from "module_17" /* 17 */;
+import registerAsset from "module_1125" /* 1125 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
 
-export const NativeDocumentPicker = TurboModuleRegistry.getEnforcing("RNDocumentPicker");
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "367021fc812df044b1b4d5405a1e12c2", name: "CircleQuestionIcon-primary", type: "png" });

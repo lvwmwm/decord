@@ -1,30 +1,135 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12256
+// Function ID: 12257
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1483, 2038, 21, 4756, 576, 5278, 11402, 1115, 2]
-// Exports: default
+// Dependencies: [19, 17, 1487, 2042, 21, 4758, 580, 558, 568, 5280, 1119, 10460, 2]
 
-// Module 12369 (AppLauncherGlobalSearchOnboardingBanner)
-import nativeDefault from "native" /* 576 */;
-import AppsIcon from "AppsIcon" /* 5278 */;
+// Module 12256 (AppLauncherGlobalSearchOnboardingBanner)
+import nativeDefault from "native" /* 580 */;
+import AppsIcon from "AppsIcon" /* 5280 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const DEFAULT_CONTENT_PADDING = fn(1483).DEFAULT_CONTENT_PADDING;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const DEFAULT_CONTENT_PADDING = fn(1487).DEFAULT_CONTENT_PADDING;
+const ContentDismissActionType = fn(2042).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-const obj2 = { appsIcon: null, appsIconImage: null };
+const createStyles = fn(4758);
+let obj2 = { appsIcon: null, appsIconImage: null };
 let size = { height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
 obj2.appsIcon = size;
 let size1 = { height: 24, width: 24, tintColor: nativeDefault.unsafe_rawColors.WHITE };
 obj2.appsIconImage = size1;
 let closure_8 = createStyles.createStyles(obj2);
+const ReactCompilerGating = fn(558);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/AppLauncherGlobalSearchOnboardingBanner.tsx");
 
-export default function GlobalSearchCoachmark(markAsDismissed) {
+export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+  let Coachmark = markAsDismissed;
+  let tmp = dependencyMap;
+  const cResult = markAsDismissed(568).c(21);
+  markAsDismissed = markAsDismissed.markAsDismissed;
+  const visible = markAsDismissed.visible;
+  const windowDimensions = markAsDismissed.windowDimensions;
+  const tmp3 = closure_8();
+  dependencyMap = tmp3;
+  const diff = windowDimensions.width - 2 * DEFAULT_CONTENT_PADDING;
+  if (cResult[0] === markAsDismissed) {
+    if (cResult[1] === visible) {
+      let tmp5 = cResult[2];
+      let tmp6 = cResult[3];
+    }
+    const effect = noop.useEffect(tmp5, tmp6);
+    if (cResult[4] === tmp3.appsIcon) {
+      if (cResult[5] === tmp3.appsIconImage) {
+        let tmp9 = cResult[6];
+      }
+      if (!visible) {
+        return null;
+      } else {
+        const _Symbol = Symbol;
+        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+          const intl = Coachmark(1119).intl;
+          const stringResult = intl.string(Coachmark(1119).t.bCPN5y);
+          const intl2 = Coachmark(1119).intl;
+          const stringResult1 = intl2.string(Coachmark(1119).t["0TBExc"]);
+          cResult[7] = stringResult;
+          cResult[8] = stringResult1;
+          let tmp13 = stringResult1;
+          let tmp12 = stringResult;
+        } else {
+          tmp12 = cResult[7];
+          tmp13 = cResult[8];
+        }
+        if (cResult[9] !== markAsDismissed) {
+          const fn3 = function w() {
+            markAsDismissed({ actionType: ContentDismissActionType.TAKE_ACTION });
+          };
+          cResult[9] = markAsDismissed;
+          cResult[10] = fn3;
+          let tmp16 = fn3;
+        } else {
+          tmp16 = cResult[10];
+        }
+        if (cResult[11] !== diff) {
+          const size = { x: 0, y: -40, width: diff, height: 40 };
+          cResult[11] = diff;
+          cResult[12] = size;
+          let tmp17 = size;
+        } else {
+          tmp17 = cResult[12];
+        }
+        if (cResult[13] === diff) {
+          if (cResult[14] === windowDimensions.height) {
+            let tmp18 = cResult[15];
+          }
+          if (cResult[16] === tmp9) {
+            if (cResult[17] === tmp16) {
+              if (cResult[18] === tmp17) {
+              }
+            }
+          }
+          Coachmark = Coachmark(10460).Coachmark;
+          const obj2 = { renderImgComponent: tmp9, title: tmp12, description: tmp13, onDismiss: tmp16, targetMeasurements: tmp17, surfaceMeasurements: tmp18, position: "bottom" };
+          tmp = <Coachmark renderImgComponent={tmp9} title={tmp12} description={tmp13} onDismiss={tmp16} targetMeasurements={tmp17} surfaceMeasurements={tmp18} position="bottom" />;
+          cResult[16] = tmp9;
+          cResult[17] = tmp16;
+          cResult[18] = tmp17;
+          cResult[19] = tmp18;
+          cResult[20] = tmp;
+        }
+        const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
+        cResult[13] = diff;
+        cResult[14] = windowDimensions.height;
+        cResult[15] = size1;
+        tmp18 = size1;
+      }
+    }
+    const fn2 = function u() {
+      const obj = { style: closure_2.appsIcon, children: jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }) };
+      return <View style={closure_2.appsIcon}>{jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE })}</View>;
+    };
+    cResult[4] = tmp3.appsIcon;
+    cResult[5] = tmp3.appsIconImage;
+    cResult[6] = fn2;
+    tmp9 = fn2;
+  }
+  const fn = function h() {
+    return () => {
+      if (visible) {
+        const obj = { actionType: constants.USER_DISMISS };
+        markAsDismissed(obj);
+      }
+    };
+  };
+  const items = [markAsDismissed, visible];
+  cResult[0] = markAsDismissed;
+  cResult[1] = visible;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp6 = items;
+  tmp5 = fn;
+}) : ((markAsDismissed) => {
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visible = markAsDismissed.visible;
   const windowDimensions = markAsDismissed.windowDimensions;
@@ -51,10 +156,10 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
       surfaceMeasurements: null,
       position: "bottom"
     };
-    const intl = markAsDismissed(1115).intl;
-    obj.title = intl.string(markAsDismissed(1115).t.bCPN5y);
-    const intl2 = markAsDismissed(1115).intl;
-    obj.description = intl2.string(markAsDismissed(1115).t["0TBExc"]);
+    const intl = markAsDismissed(1119).intl;
+    obj.title = intl.string(markAsDismissed(1119).t.bCPN5y);
+    const intl2 = markAsDismissed(1119).intl;
+    obj.description = intl2.string(markAsDismissed(1119).t["0TBExc"]);
     obj.onDismiss = function onDismiss() {
       markAsDismissed({ actionType: ContentDismissActionType.TAKE_ACTION });
     };
@@ -62,7 +167,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     obj.targetMeasurements = size;
     const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     obj.surfaceMeasurements = size1;
-    tmp3 = jsx(markAsDismissed(11402).Coachmark, {
+    tmp3 = jsx(markAsDismissed(10460).Coachmark, {
       renderImgComponent: function appsIcon() {
           const obj = { style: closure_2.appsIcon, children: jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }) };
           return <View style={closure_2.appsIcon}>{jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE })}</View>;
@@ -76,4 +181,4 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     });
   }
   return tmp3;
-};
+});

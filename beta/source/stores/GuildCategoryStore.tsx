@@ -1,17 +1,17 @@
-// Module ID: 7356
-// Function ID: 7357
+// Module ID: 7358
+// Function ID: 7359
 // Name: GuildCategoryStore
-// Dependencies: [2044, 502, 2041, 2096, 2063, 1074, 7357, 504, 573, 2]
+// Dependencies: [2048, 502, 2045, 2100, 2067, 1078, 7359, 504, 577, 2]
 
-// Module 7356 (GuildCategoryStore)
+// Module 7358 (GuildCategoryStore)
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7357 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7359 */;
+import FavoriteStore from "FavoriteStore" /* 2048 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 2096 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2045 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 2100 */;
+import GuildStore from "GuildStore" /* 2067 */;
 
 function setIndex(arg0, index) {
   arg0.index = index;
@@ -226,7 +226,7 @@ function handleFavoritesUpdate() {
     }
     _null.push({ channel, index: -1 });
   }
-  const channels = GuildChannelStore.getChannels(closure_1_10);
+  const channels = GuildChannelStore.getChannels(v65535);
   const obj = { _categories: [], null: [] };
   const item = channels[constants.GUILD_CATEGORY].forEach((channel) => {
     channel = channel.channel;
@@ -237,12 +237,12 @@ function handleFavoritesUpdate() {
   const item1 = channels[hasOwnProperty].forEach(updateChannel);
   const item2 = channels[timestampProducer].forEach(updateChannel);
   const item3 = getFlattedChannelListDefault(obj._categories, obj).forEach(setIndex);
-  closure_12[closure_1_10] = obj;
+  closure_12[v65535] = obj;
 }
-let GuildChannelStore = fn(2096);
+let GuildChannelStore = fn(2100);
 ({ GUILD_SELECTABLE_CHANNELS_KEY: hasOwnProperty, GUILD_VOCAL_CHANNELS_KEY: metroRequire } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
-const Constants = fn(1074);
+const Constants = fn(1078);
 ({ ChannelTypes: closure_9, FAVORITES: c10 } = Constants);
 let c11 = null;
 const dependencyMap = {};

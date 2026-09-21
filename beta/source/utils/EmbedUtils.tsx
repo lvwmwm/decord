@@ -1,16 +1,16 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5103
+// Function ID: 5104
 // Name: EmbedUtils
-// Dependencies: [1074, 5102, 11, 1385, 12, 4348, 1092, 4980, 2]
+// Dependencies: [1078, 5104, 11, 1389, 12, 4352, 1096, 4982, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 5101 (EmbedUtils)
+// Module 5103 (EmbedUtils)
 import _modDef12 from "module_12" /* 12 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import FlagUtils from "FlagUtils" /* 1385 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 4980 */;
-import EmbedConstants from "EmbedConstants" /* 5102 */;
-import Constants from "Constants" /* 1074 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1096 */;
+import FlagUtils from "FlagUtils" /* 1389 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 4982 */;
+import EmbedConstants from "EmbedConstants" /* 5104 */;
+import Constants from "Constants" /* 1078 */;
 import size from "module_2" /* 2 */;
 
 function getEffectiveVideoProvider(name, url) {
@@ -67,8 +67,8 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   if (null != footer.timestamp) {
     const _Date = Date;
     const date = new Date(footer.timestamp);
-    obj.timestamp = tmp(4348)(date);
-    const tmpResult = tmp(4348);
+    obj.timestamp = tmp(4352)(date);
+    const tmpResult = tmp(4352);
   }
   if (null != footer.color) {
     obj.color = utils_ColorUtils.int2hsl(footer.color, false);

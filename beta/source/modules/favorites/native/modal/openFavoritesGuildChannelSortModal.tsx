@@ -1,12 +1,12 @@
 // Module ID: 16480
 // Function ID: 16481
 // Name: openFavoritesGuildChannelSortModal
-// Dependencies: [4959, 16481, 1980, 2]
+// Dependencies: [4961, 16481, 1984, 2]
 // Exports: closeFavoritesGuildChannelSortModal, default
 
 // Module 16480 (openFavoritesGuildChannelSortModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import size from "module_2" /* 2 */;
 
 const FavoritesGuildChannelSortModal = "FavoritesGuildChannelSortModal";

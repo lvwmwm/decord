@@ -1,10 +1,10 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8024
+// Function ID: 8025
 // Name: DraftActionCreators
-// Dependencies: [573, 2]
+// Dependencies: [577, 2]
 
-// Module 8019 (DraftActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8024 (DraftActionCreators)
+import DispatcherDefault from "Dispatcher" /* 577 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/DraftActionCreators.tsx");

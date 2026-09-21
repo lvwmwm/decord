@@ -1,13 +1,13 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 11831
+// Function ID: 11832
 // Name: SavedMessagesActions
-// Dependencies: [5, 11911, 1074, 1271, 8104, 573, 4978, 2]
+// Dependencies: [5, 11782, 1078, 1275, 8109, 577, 4980, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 11958 (SavedMessagesActions)
-import HTTPUtils from "HTTPUtils" /* 1271 */;
+// Module 11831 (SavedMessagesActions)
+import HTTPUtils from "HTTPUtils" /* 1275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11911 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11782 */;
 
 require = fn;
 let closure_6 = async function _upsertSavedMessage() {
@@ -32,21 +32,21 @@ let closure_8 = async function _fetchAndUpdateSavedMessages() {
   const HTTP = HTTPUtils.HTTP;
   await HTTP.get({ url: constants.GET_SAVED_MESSAGES, rejectWithError: HTTPUtils.rejectWithMigratedError() });
   await closure_129_1(closure_129_2[5]).dispatch({ type: "SAVED_MESSAGES_UPDATE", savedMessages: [] });
-  closure_128_0 = await "HermesInternal";
+  closure_128_0 = await "IconComponent";
   const results = closure_128_0.body.results;
   closure_128_1 = results.map((message) => {
     let messageRecord = null;
     if (null != message.message) {
-      messageRecord = closure_1_0(4978).createMessageRecord(message.message);
-      const obj = closure_1_0(4978);
+      messageRecord = closure_1_0(4980).createMessageRecord(message.message);
+      const obj = closure_1_0(4980);
     }
-    const obj2 = { message: messageRecord, saveData: closure_1_0(8104).savedMessageDataToClient(message.save_data) };
+    const obj2 = { message: messageRecord, saveData: closure_1_0(8109).savedMessageDataToClient(message.save_data) };
     return obj2;
   });
   await closure_129_1(closure_129_2[5]).dispatch({ type: "SAVED_MESSAGES_UPDATE", savedMessages: closure_128_1 });
   { url: constants.GET_SAVED_MESSAGES, rejectWithError: HTTPUtils.rejectWithMigratedError() };
 };
-const Endpoints = fn(1074).Endpoints;
+const Endpoints = fn(1078).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessagesActions.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 4950
-// Function ID: 4951
+// Module ID: 4952
+// Function ID: 4953
 // Name: QualtricsResponseStore
-// Dependencies: [560, 2]
+// Dependencies: [562, 2]
 
-// Module 4950 (QualtricsResponseStore)
-import module_560 from "module_560" /* 560 */;
+// Module 4952 (QualtricsResponseStore)
+import module_562 from "module_562" /* 562 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/qualtrics/QualtricsResponseStore.tsx");
 
-export const useQualtricsResponseStore = module_560.create((arg0, arg1) => {
+export const useQualtricsResponseStore = module_562.create((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   return {

@@ -1,11 +1,11 @@
-// Module ID: 1337
-// Function ID: 1338
+// Module ID: 1341
+// Function ID: 1342
 // Name: getSystemLocale
-// Dependencies: [1116, 2]
+// Dependencies: [1120, 2]
 // Exports: getSystemLocale
 
-// Module 1337 (getSystemLocale)
-import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1116 */;
+// Module 1341 (getSystemLocale)
+import NativeDeviceLocaleModule from "NativeDeviceLocaleModule" /* 1120 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/getSystemLocale.tsx");

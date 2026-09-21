@@ -1,16 +1,16 @@
-// Module ID: 8330
-// Function ID: 8331
+// Module ID: 8335
+// Function ID: 8336
 // Name: maybeSortByProbability
-// Dependencies: [8331, 2]
+// Dependencies: [8336, 2]
 // Exports: maybeSortByProbability
 
-// Module 8330 (maybeSortByProbability)
-import VoiceUserAffinityExperiment from "VoiceUserAffinityExperiment" /* 8331 */;
+// Module 8335 (maybeSortByProbability)
+import VoiceUserAffinityExperiment from "VoiceUserAffinityExperiment" /* 8336 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_affinities/maybeSortByProbability.tsx");
 
-export const maybeSortByProbability = function maybeSortByProbability(reduced, userAffinitiesMap, location) {
+export const maybeSortByProbability = function maybeSortByProbability(reduced, stateFromStores, location) {
   let sort = reduced;
   const voiceUserAffinitySortType = VoiceUserAffinityExperiment.getVoiceUserAffinitySortType(location);
   if (null == voiceUserAffinitySortType) {
@@ -20,7 +20,7 @@ export const maybeSortByProbability = function maybeSortByProbability(reduced, u
     HermesBuiltin.arraySpread(sort, 0);
     sort = items.sort;
     let sorted = sort((id, id2) => {
-      value = userAffinitiesMap.get(id2.id);
+      value = stateFromStores.get(id2.id);
       let num;
       if (value != null) {
         num = value.vcProbability;
@@ -28,7 +28,7 @@ export const maybeSortByProbability = function maybeSortByProbability(reduced, u
       if (num == null) {
         num = 0;
       }
-      value2 = userAffinitiesMap.get(id.id);
+      value2 = stateFromStores.get(id.id);
       let num2;
       if (value2 != null) {
         num2 = value2.vcProbability;
@@ -42,7 +42,7 @@ export const maybeSortByProbability = function maybeSortByProbability(reduced, u
     const items1 = [];
     HermesBuiltin.arraySpread(sort, 0);
     sorted = items1.sort((id, id2) => {
-      value = userAffinitiesMap.get(id2.id);
+      value = stateFromStores.get(id2.id);
       let num;
       if (value != null) {
         num = value.communicationProbability;
@@ -50,7 +50,7 @@ export const maybeSortByProbability = function maybeSortByProbability(reduced, u
       if (num == null) {
         num = 0;
       }
-      value2 = userAffinitiesMap.get(id.id);
+      value2 = stateFromStores.get(id.id);
       let num2;
       if (value2 != null) {
         num2 = value2.communicationProbability;

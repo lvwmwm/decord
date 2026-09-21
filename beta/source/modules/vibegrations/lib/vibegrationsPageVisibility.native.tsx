@@ -1,13 +1,13 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 17036
+// Function ID: 17037
 // Name: vibegrationsPageVisibility
-// Dependencies: [1979, 1074, 2]
+// Dependencies: [1983, 1078, 2]
 // Exports: isPageHidden, subscribePageVisibility
 
-// Module 17033 (vibegrationsPageVisibility)
-import AppStateStore from "AppStateStore" /* 1979 */;
+// Module 17036 (vibegrationsPageVisibility)
+import AppStateStore from "AppStateStore" /* 1983 */;
 
-const AppStates = fn(1074).AppStates;
+const AppStates = fn(1078).AppStates;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsPageVisibility.native.tsx");
 

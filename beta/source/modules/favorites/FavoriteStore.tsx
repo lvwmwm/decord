@@ -1,14 +1,14 @@
-// Module ID: 2044
-// Function ID: 2045
+// Module ID: 2048
+// Function ID: 2049
 // Name: FavoriteStore
-// Dependencies: [1220, 2045, 2054, 1074, 1186, 12, 504, 573, 2]
+// Dependencies: [1224, 2049, 2058, 1078, 1190, 12, 504, 577, 2]
 
-// Module 2044 (FavoriteStore)
+// Module 2048 (FavoriteStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 573 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import DispatcherDefault from "Dispatcher" /* 577 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1190 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 
 require = fn;
 function initializeFromUserSettings() {
@@ -97,9 +97,9 @@ function initializeFromUserSettings() {
   }
   return flag3;
 }
-const createChannelRecord = fn(2045).createChannelRecord;
-let closure_5 = fn(2054).FAVORITES_UNCATEGORIZED_PARENT_ID;
-const Constants = fn(1074);
+const createChannelRecord = fn(2049).createChannelRecord;
+let closure_5 = fn(2058).FAVORITES_UNCATEGORIZED_PARENT_ID;
+const Constants = fn(1078);
 ({ ChannelTypes: metroRequire, FAVORITES: closure_7 } = Constants);
 let closure_12 = false;
 const Store = initializeDefault.Store;

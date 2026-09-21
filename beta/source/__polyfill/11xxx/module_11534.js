@@ -1,9 +1,9 @@
 // Module ID: 11534
 // Function ID: 11535
-// Dependencies: [1121]
+// Dependencies: [1125]
 
 // Module 11534
-import registerAsset from "module_1121" /* 1121 */;
+import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "36e39be8b33ba48e0db05b6e6fe9d9e1", name: "ic_add_reaction_v2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3446a422668528039c87de87a6054a15", name: "KeyboardIcon", type: "png" });
