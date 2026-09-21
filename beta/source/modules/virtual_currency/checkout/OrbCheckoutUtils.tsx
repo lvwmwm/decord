@@ -1,14 +1,14 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 7486
+// Function ID: 7487
 // Name: OrbCheckoutUtils
-// Dependencies: [1074, 1076, 7345, 1114, 7346, 4316, 2]
+// Dependencies: [1074, 1076, 7487, 1115, 7488, 4436, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7344 (OrbCheckoutUtils)
+// Module 7486 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
-import util from "util" /* 1114 */;
-import OrderConstants from "OrderConstants" /* 7345 */;
-import OrderActionCreators from "OrderActionCreators" /* 7346 */;
+import util from "util" /* 1115 */;
+import OrderConstants from "OrderConstants" /* 7487 */;
+import OrderActionCreators from "OrderActionCreators" /* 7488 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -52,11 +52,11 @@ export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimer
   const intl3 = util.intl;
   let stringResult = intl3.string(util.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-    const intl5 = tmp(1114).intl;
-    stringResult = intl5.string(tmp(1114).t.APcKRo);
+    const intl5 = tmp(1115).intl;
+    stringResult = intl5.string(tmp(1115).t.APcKRo);
   } else if (skuId === tmp5.FRACTIONAL_PREMIUM) {
-    const intl4 = tmp(1114).intl;
-    stringResult = intl4.string(tmp(1114).t.FhJ74j);
+    const intl4 = tmp(1115).intl;
+    stringResult = intl4.string(tmp(1115).t.FhJ74j);
   }
   const items = [intl.format(util.t["5qdUrO"], obj), " ", stringResult];
   return items;
@@ -68,39 +68,39 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     let keFvXM = dependencyMap;
     let OrderSigningFailedWithConstraintsError = OrderActionCreators.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(7346).OrderProcessingPendingError) {
-        const intl5 = tmp(1114).intl;
-        let stringResult = intl5.string(tmp(1114).t["2BmwgV"]);
-      } else if (code.code === tmp(4316).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
-        const intl4 = tmp(1114).intl;
-        stringResult = intl4.string(tmp(1114).t.keFvXM);
-      } else if (code.code === tmp(4316).ErrorCodes.ALREADY_PURCHASED) {
-        const intl3 = tmp(1114).intl;
-        stringResult = intl3.string(tmp(1114).t.m371Mx);
-      } else if (code.code === tmp(4316).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
-        const intl2 = tmp(1114).intl;
-        stringResult = intl2.string(tmp(1114).t.ZHgEG7);
+      if (code instanceof tmp(7488).OrderProcessingPendingError) {
+        const intl5 = tmp(1115).intl;
+        let stringResult = intl5.string(tmp(1115).t["2BmwgV"]);
+      } else if (code.code === tmp(4436).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+        const intl4 = tmp(1115).intl;
+        stringResult = intl4.string(tmp(1115).t.keFvXM);
+      } else if (code.code === tmp(4436).ErrorCodes.ALREADY_PURCHASED) {
+        const intl3 = tmp(1115).intl;
+        stringResult = intl3.string(tmp(1115).t.m371Mx);
+      } else if (code.code === tmp(4436).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+        const intl2 = tmp(1115).intl;
+        stringResult = intl2.string(tmp(1115).t.ZHgEG7);
       } else {
-        const intl = tmp(1114).intl;
-        stringResult = intl.string(tmp(1114).t.fqJZ11);
+        const intl = tmp(1115).intl;
+        stringResult = intl.string(tmp(1115).t.fqJZ11);
       }
     } else {
       OrderSigningFailedWithConstraintsError = arg1;
     }
     if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === OrderSigningFailedWithConstraintsError) {
-      const intl9 = tmp(1114).intl;
-      keFvXM = tmp(1114).t.keFvXM;
+      const intl9 = tmp(1115).intl;
+      keFvXM = tmp(1115).t.keFvXM;
       let stringResult1 = intl9.string(keFvXM);
     } else {
       if (tmp3.SKU_ALREADY_OWNED === OrderSigningFailedWithConstraintsError) {
-        const intl8 = tmp(1114).intl;
-        stringResult1 = intl8.string(tmp(1114).t.m371Mx);
+        const intl8 = tmp(1115).intl;
+        stringResult1 = intl8.string(tmp(1115).t.m371Mx);
       } else if (tmp3.BUNDLE_PARTIALLY_OWNED !== OrderSigningFailedWithConstraintsError) {
-        const intl6 = tmp(1114).intl;
-        stringResult1 = intl6.string(tmp(1114).t.fqJZ11);
+        const intl6 = tmp(1115).intl;
+        stringResult1 = intl6.string(tmp(1115).t.fqJZ11);
       }
-      const intl7 = tmp(1114).intl;
-      stringResult1 = intl7.string(tmp(1114).t.v9oC0p);
+      const intl7 = tmp(1115).intl;
+      stringResult1 = intl7.string(tmp(1115).t.v9oC0p);
     }
   }
 };

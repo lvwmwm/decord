@@ -1,17 +1,17 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 8017
+// Function ID: 8018
 // Name: trackChannelOpenedClickstream
-// Dependencies: [1957, 1074, 1964, 7568, 2]
+// Dependencies: [2041, 1074, 2048, 7707, 2]
 // Exports: default
 
-// Module 7877 (trackChannelOpenedClickstream)
-import Clickstream from "Clickstream" /* 7568 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+// Module 8017 (trackChannelOpenedClickstream)
+import Clickstream from "Clickstream" /* 7707 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ ChannelTypes: c3, AnalyticEvents: closure_4 } = Constants);
-const StaticChannelRoute = fn(1964).StaticChannelRoute;
+const StaticChannelRoute = fn(2048).StaticChannelRoute;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_analytics/track/channel_opened/trackChannelOpenedClickstream.tsx");
 

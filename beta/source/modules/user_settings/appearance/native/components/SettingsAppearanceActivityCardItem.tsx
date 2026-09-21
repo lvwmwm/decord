@@ -1,28 +1,28 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15565
+// Function ID: 15566
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2025, 15380, 21, 4373, 1176, 4636, 576, 563, 8940, 5668, 4632, 1880, 15381, 15382, 15383, 2]
+// Dependencies: [19, 17, 2109, 15566, 21, 4492, 1177, 4756, 576, 563, 9094, 5804, 4752, 1881, 15567, 15568, 15569, 2]
 // Exports: default
 
-// Module 15379 (SettingsAppearanceActivityCardItem)
+// Module 15565 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import ClipViewDefault from "ClipView" /* 8940 */;
+import native from "native" /* 1177 */;
+import ClipViewDefault from "ClipView" /* 9094 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15380);
+const HappeningNowConstants = fn(15566);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(1176).Icon);
-const createStyles = fn(4636);
+let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(1177).Icon);
+const createStyles = fn(4756);
 let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" }, cardBadgeWrapper: { position: "absolute", top: 0, right: 0 }, cardImage: null, cardBadge: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageAsset: null, shiftedAvatar: null, userCounter: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj.cardImage = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, position: "relative" };
@@ -36,7 +36,7 @@ const size2 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTE
 obj.cardImageAsset = size2;
 obj.shiftedAvatar = { marginLeft: -4 };
 let obj5 = { height: "100%", backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.sm };
-obj.userCounter = { flexDirection: "row", alignItems: "center", justifyContent: "center", marginLeft: -4, height: fn(1176).AVATAR_SIZE_MAP[fn(undefined, 1176).AvatarSizes.XSMALL_20], minWidth: fn(1176).AVATAR_SIZE_MAP[fn(undefined, 1176).AvatarSizes.XSMALL_20], borderRadius: nativeDefault.radii.round, paddingHorizontal: 4, paddingTop: 1 };
+obj.userCounter = { flexDirection: "row", alignItems: "center", justifyContent: "center", marginLeft: -4, height: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.XSMALL_20], minWidth: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.XSMALL_20], borderRadius: nativeDefault.radii.round, paddingHorizontal: 4, paddingTop: 1 };
 let closure_8 = createStyles.createStyles(obj);
 size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceActivityCardItem.tsx");
@@ -73,7 +73,7 @@ export default function ActivityCardItem(arg0) {
       const obj2 = { style: shiftedAvatar, children: null };
       if (index !== diff) {
         const obj3 = { cutouts: null, children: null };
-        const point = { shape: tmp3(8940).CutoutShape.Circle, x: tmp3(1176).AVATAR_SIZE_MAP[tmp3(undefined, 1176).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1176).AVATAR_SIZE_MAP[tmp3(undefined, 1176).AvatarSizes.XSMALL_20] + 4 };
+        const point = { shape: tmp3(9094).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
         const items = [point];
         obj3.cutouts = items;
         obj3.children = tmp5;

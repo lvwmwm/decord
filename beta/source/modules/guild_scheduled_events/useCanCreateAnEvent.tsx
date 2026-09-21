@@ -1,20 +1,20 @@
-// Module ID: 9803
-// Function ID: 9804
+// Module ID: 9761
+// Function ID: 9762
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 2012, 1979, 4275, 1074, 504, 9801, 2]
+// Dependencies: [32, 2096, 2063, 4395, 1074, 504, 9759, 2]
 // Exports: default
 
-// Module 9803 (useCanCreateAnEvent)
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9801 */;
+// Module 9761 (useCanCreateAnEvent)
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9759 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GUILD_VOCAL_CHANNELS_KEY = fn(2012).GUILD_VOCAL_CHANNELS_KEY;
+const GUILD_VOCAL_CHANNELS_KEY = fn(2096).GUILD_VOCAL_CHANNELS_KEY;
 const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/useCanCreateAnEvent.tsx");

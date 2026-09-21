@@ -1,19 +1,19 @@
-// Module ID: 8894
-// Function ID: 8895
+// Module ID: 9048
+// Function ID: 9049
 // Name: useTrackImpression
-// Dependencies: [19, 1957, 2011, 4458, 1241, 1248, 1240, 573, 4816, 1330, 4840, 5073, 2]
+// Dependencies: [19, 2041, 2095, 4577, 1242, 1249, 1241, 573, 4936, 1331, 4960, 5203, 2]
 // Exports: default
 
-// Module 8894 (useTrackImpression)
+// Module 9048 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtils2 from "AnalyticsUtils" /* 1240 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import _modDef1330 from "module_1330" /* 1330 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
+import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import _modDef1331 from "module_1331" /* 1331 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 
 require = fn;
 function trackImpression(type, disableTrack, arg2) {
@@ -59,18 +59,18 @@ function trackImpression(type, disableTrack, arg2) {
     React7(null, null);
   } else {
     if (tmp15) {
-      tmp(1240).debugLogEvent(name, result);
+      tmp(1241).debugLogEvent(name, result);
       closure_12(name, result);
-      const tmpResult6 = tmp(1240);
+      const tmpResult6 = tmp(1241);
     }
     React7(name, result);
     tmp15 = null != name && null != type;
   }
 }
-const ImpressionStore = fn(1241);
+const ImpressionStore = fn(1242);
 ({ setCurrentImpression: closure_7, cleanupImpression: closure_8, setDebugTrackedData: closure_9, getLocation: c10, getImpressionStack: closure_11 } = ImpressionStore);
-const AnalyticsUtils = fn(1248);
-let closure_12 = AnalyticsUtils.trackMaker({ analyticEventConfigs: fn(1240).AnalyticEventConfigs, dispatcher: DispatcherDefault, TRACK_ACTION_NAME: "TRACK" });
+const AnalyticsUtils = fn(1249);
+let closure_12 = AnalyticsUtils.trackMaker({ analyticEventConfigs: fn(1241).AnalyticEventConfigs, dispatcher: DispatcherDefault, TRACK_ACTION_NAME: "TRACK" });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_analytics/useTrackImpression.tsx");
 
@@ -84,20 +84,20 @@ export default function useTrackImpression(arg0, arg1, current) {
   noop = undefined;
   noop = noop.useRef(undefined);
   noop.useRef(undefined);
-  obj(5073)(() => {
+  obj(5203)(() => {
     if (obj.trackOnInitialLoad) {
-      const tmp6 = _modDef1330(ref.current, closure_0);
+      const tmp6 = _modDef1331(ref.current, closure_0);
       if (!tmp6) {
         ref.current = tmp5;
       }
-      const tmp10 = _modDef1330(ref2.current, current);
+      const tmp10 = _modDef1331(ref2.current, current);
       if (!tmp10) {
         ref2.current = current;
       }
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(4840)("impression_");
+        obj.sequenceId = tmp2(4960)("impression_");
         trackImpression(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {
@@ -110,18 +110,18 @@ export default function useTrackImpression(arg0, arg1, current) {
   });
   const effect = noop.useEffect(() => {
     if (!obj.trackOnInitialLoad) {
-      const tmp6 = _modDef1330(ref.current, closure_0);
+      const tmp6 = _modDef1331(ref.current, closure_0);
       if (!tmp6) {
         ref.current = tmp5;
       }
-      const tmp10 = _modDef1330(ref2.current, current);
+      const tmp10 = _modDef1331(ref2.current, current);
       if (!tmp10) {
         ref2.current = current;
       }
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(4840)("impression_");
+        obj.sequenceId = tmp2(4960)("impression_");
         trackImpression(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {

@@ -1,28 +1,40 @@
 // Module ID: 4215
 // Function ID: 4216
-// Dependencies: []
+// Dependencies: [4026, 4216, 3846]
+// Exports: default
 
 // Module 4215
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: null, locale: "pt" };
-    const obj3 = { conjunction: null, disjunction: null, unit: null };
-    const obj4 = { long: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" } };
-    obj3.conjunction = obj4;
-    const obj5 = { long: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, narrow: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, short: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" } };
-    obj3.disjunction = obj5;
-    const obj6 = { long: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" } };
-    obj3.unit = obj6;
-    obj2.data = obj3;
-    ListFormat.__addLocaleData(obj2);
-  }
+import module_4026_mod from "module_4026" /* 4026 */;
+import subDays_mod from "subDays" /* 4216 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
+
+let module_4026 = module_4026_mod;
+if (!module_4026) {
+  const obj = { default: module_4026 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_4026;
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-if (!prop) {
-  prop = [];
+module_4026 = tmp3;
+let subDays = subDays_mod;
+if (!subDays) {
+  const obj2 = { default: subDays };
+  let tmp5 = obj2;
+} else {
+  tmp5 = subDays;
 }
-globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: { conjunction: { long: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" }, narrow: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0}, {1}", start: "{0}, {1}" }, short: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, narrow: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" }, short: { end: "{0} ou {1}", middle: "{0}, {1}", pair: "{0} ou {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} e {1}", middle: "{0}, {1}", pair: "{0} e {1}", start: "{0}, {1}" } } }, locale: "pt" };
-prop.push(obj);
+subDays = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
+
+export default function isYesterday(arg0) {
+  requiredArgs.default(1, arguments);
+  return module_4026.default(arg0, subDays.default(Date.now(), 1));
+};
+export default exports.default;

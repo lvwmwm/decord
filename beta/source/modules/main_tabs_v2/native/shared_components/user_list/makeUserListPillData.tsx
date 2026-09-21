@@ -1,12 +1,12 @@
-// Module ID: 10995
-// Function ID: 10996
+// Module ID: 11125
+// Function ID: 11126
 // Name: makeUserListPillData
-// Dependencies: [19, 21, 4481, 1176, 2]
+// Dependencies: [19, 21, 4600, 1177, 2]
 // Exports: default
 
-// Module 10995 (makeUserListPillData)
-import native from "native" /* 1176 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
+// Module 11125 (makeUserListPillData)
+import native from "native" /* 1177 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,6 +16,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_co
 
 export default function makeUserListPillData(id) {
   const obj = { id: id.id, text: UserUtilsDefault.getName(id), icon: null };
+  const obj3 = { user: id, guildId: "Array", size: native.AvatarSizes.XXSMALL };
   obj.icon = jsx(native.Avatar, { user: id, guildId: "Array", size: native.AvatarSizes.XXSMALL });
   return obj;
 };

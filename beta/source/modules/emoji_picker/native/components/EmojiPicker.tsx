@@ -1,11 +1,11 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 10542
+// Function ID: 10543
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1074, 1374, 21, 4636, 576, 1240, 4373, 10414, 7265, 7285, 10417, 10412, 7153, 1114, 10418, 10457, 5068, 4486, 10476, 2]
+// Dependencies: [19, 17, 1074, 1375, 21, 4756, 576, 1241, 4492, 10543, 7407, 7427, 10546, 10541, 7295, 1115, 10547, 10587, 5198, 4605, 10606, 2]
 
-// Module 10413 (EmojiPicker)
+// Module 10542 (EmojiPicker)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -13,10 +13,10 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, ChatInputComponentViewedTypes: metroRequire, VerticalGradient: closure_7 } = Constants);
-const EmojiIntention = fn(1374).EmojiIntention;
+const EmojiIntention = fn(1375).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { flex: 1 }, list: { overflow: "hidden", flex: 1 }, header: { flexDirection: "row", paddingTop: nativeDefault.space.PX_8, paddingBottom: 1, gap: nativeDefault.space.PX_12 }, headerGradientColor: null, headerGradient: null };
 let obj3 = { flexDirection: "row", paddingTop: nativeDefault.space.PX_8, paddingBottom: 1, gap: nativeDefault.space.PX_12 };
 obj.headerGradientColor = { color: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };
@@ -67,7 +67,7 @@ export default noop.memo(function EmojiPicker(inPortalKeyboard) {
   const obj3 = { value: tmp7(ref1(handleTextChange[11]).EMOJI_PICKER).analyticsLocations, children: null };
   const obj4 = { style: tmp.container, children: null };
   const obj5 = { style: tmp.header, children: null };
-  const obj6 = { ref: ref1, size: "md", placeholder: null, onChange: null, onFocus: null, isRound: true };
+  const obj6 = { ref: ref1, size: "md", placeholder: null, onChange: null, onFocus: null, round: true };
   const intl = channel(handleTextChange[15]).intl;
   obj6.placeholder = intl.string(channel(handleTextChange[15]).t.KgK5qg);
   obj6.onChange = handleTextChange;

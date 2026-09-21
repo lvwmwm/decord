@@ -1,13 +1,13 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6624
+// Function ID: 6625
 // Name: RewardsLaptopSpotIllustration
-// Dependencies: [21, 5668, 6485, 2]
+// Dependencies: [21, 5804, 6625, 2]
 // Exports: RewardsLaptopSpotIllustration
 
-// Module 6484 (RewardsLaptopSpotIllustration)
+// Module 6624 (RewardsLaptopSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6485 from "module_6485" /* 6485 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6625 from "module_6625" /* 6625 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const RewardsLaptopSpotIllustration = function RewardsLaptopSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6485 };
+  const obj2 = { uri: _modDef6625 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

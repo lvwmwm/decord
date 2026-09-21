@@ -1,18 +1,18 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 14124
+// Function ID: 14125
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1074, 21, 4636, 576, 1114, 4632, 6714, 13945, 9175, 9171, 4334, 1240, 4348, 7188, 5056, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 1115, 4752, 6855, 14125, 10007, 10003, 4453, 1241, 4467, 7330, 5186, 2]
 
-// Module 13944 (AddFriendById)
+// Module 14124 (AddFriendById)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import ToastUtils from "ToastUtils" /* 4334 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import TextField from "TextField" /* 6714 */;
-import FriendsUtils from "FriendsUtils" /* 9175 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 13945 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ToastUtils from "ToastUtils" /* 4453 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import TextField from "TextField" /* 6855 */;
+import FriendsUtils from "FriendsUtils" /* 10007 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 14125 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -30,7 +30,7 @@ const Constants = fn(1074);
 ({ PLACEHOLDER_TAG: closure_7, AnalyticEvents: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 }, textInputContainer: { alignSelf: "stretch" }, placeholderText: null, inputAccessoryText: null, redesignInputAccessoryText: null, inputHeaderText: null, redesignGrow: null, errorStateText: null, friendMessageContainer: null, messageLabel: null, messageFooterText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, alignItems: "center", justifyContent: "center", paddingHorizontal: 16 };
 obj.placeholderText = { color: nativeDefault.colors.TEXT_MUTED };
@@ -82,7 +82,7 @@ let closure_16 = noop.forwardRef((headerTextStyle, ref) => {
     a11yMessage = validationState.a11yMessage;
   }
   obj3.accessibilityHint = a11yMessage;
-  const intl3 = tmp10(1114).intl;
+  const intl3 = tmp10(1115).intl;
   obj3.placeholder = intl3.string(util.t.qRaqel);
   obj3.placeholderTextColor = tmp3.placeholderText.color;
   obj3.onChange = onChangeText;
@@ -120,8 +120,8 @@ export default noop.forwardRef((arg0, ref) => {
     const trimmed1 = first2.trim();
     if (trimmed.length <= 0) {
       let obj2 = { status: constants.ERROR, field: constants2.DISCORD_TAG, message: null };
-      let intl = sourcePage(1114).intl;
-      obj2.message = intl.string(sourcePage(1114).t.mxnceg);
+      let intl = sourcePage(1115).intl;
+      obj2.message = intl.string(sourcePage(1115).t.mxnceg);
       closure_6(obj2);
     } else {
       const hasItem = trimmed.includes("#");
@@ -134,21 +134,21 @@ export default noop.forwardRef((arg0, ref) => {
         substr = trimmed.substring(1);
         tmp2 = substr;
       }
-      const validateDiscordTagResult = sourcePage(9175).validateDiscordTag(tmp2);
+      const validateDiscordTagResult = sourcePage(10007).validateDiscordTag(tmp2);
       if (null != validateDiscordTagResult) {
         let obj3 = { status: constants.ERROR, field: constants2.DISCORD_TAG, message: validateDiscordTagResult };
         closure_6(obj3);
       } else {
         let obj4 = { status: constants.LOADING };
         closure_6(obj4);
-        const obj6 = { discordTag: tmp2, context: { location: "Search - Add Friend Search" }, errorUxConfig: sourcePage(9171).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED, note: null };
+        const obj6 = { discordTag: tmp2, context: { location: "Search - Add Friend Search" }, errorUxConfig: sourcePage(10003).RelationshipErrorUXConfig.SHOW_ONLY_IF_ACTION_NEEDED, note: null };
         let tmp9;
         if (trimmed1.length > 0) {
           tmp9 = trimmed1;
         }
         obj6.note = tmp9;
-        const obj5 = ref(9171);
-        ref(9171).sendRequest(obj6).then(() => {
+        const obj5 = ref(10003);
+        ref(10003).sendRequest(obj6).then(() => {
           const obj = { validatedText: "", hint: null };
           const intl = util.intl;
           obj.hint = intl.string(util.t["6p7Mhh"]);
@@ -203,9 +203,9 @@ export default noop.forwardRef((arg0, ref) => {
           }
           closure_6(obj3);
         });
-        const sendRequestResult = ref(9171).sendRequest(obj6);
+        const sendRequestResult = ref(10003).sendRequest(obj6);
       }
-      let obj = sourcePage(9175);
+      let obj = sourcePage(10007);
     }
   }
   ({ style, onFocus, autoFocusInput, headerText } = arg0);
@@ -214,8 +214,8 @@ export default noop.forwardRef((arg0, ref) => {
   dependencyMap = noop.useRef("");
   let tmp2 = textState(noop.useState(() => {
     const obj = { validatedText: "", hint: null };
-    const intl = sourcePage(1114).intl;
-    obj.hint = intl.string(sourcePage(1114).t["6p7Mhh"]);
+    const intl = sourcePage(1115).intl;
+    obj.hint = intl.string(sourcePage(1115).t["6p7Mhh"]);
     return obj;
   }), 2);
   textState = tmp2[0];
@@ -317,12 +317,12 @@ export default noop.forwardRef((arg0, ref) => {
     let obj6 = { style: tmp.redesignGrow };
     items6[1] = tmp17(tmp16, obj6);
     const obj7 = { size: "lg", text: null, disabled: null, onPress: null, loading: null, grow: false };
-    const intl3 = sourcePage(1114).intl;
-    obj7.text = intl3.string(sourcePage(1114).t["PMsq/b"]);
+    const intl3 = sourcePage(1115).intl;
+    obj7.text = intl3.string(sourcePage(1115).t["PMsq/b"]);
     obj7.disabled = str.trim().length <= 0;
     obj7.onPress = handleSubmitEditing;
     obj7.loading = first1.status === tmp4.LOADING;
-    items6[2] = tmp17(sourcePage(5056).Button, obj7);
+    items6[2] = tmp17(sourcePage(5186).Button, obj7);
     obj5.children = items6;
     return tmp14(closure_11, obj5);
   } else {
@@ -332,9 +332,9 @@ export default noop.forwardRef((arg0, ref) => {
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items7[2] = headerTextStyle;
     obj9.style = items7;
-    let intl = sourcePage(1114).intl;
-    obj9.children = intl.string(sourcePage(1114).t.Yi6Mpu);
-    const items8 = [tmp17(sourcePage(4632).Text, obj9), , ];
+    let intl = sourcePage(1115).intl;
+    obj9.children = intl.string(sourcePage(1115).t.Yi6Mpu);
+    const items8 = [tmp17(sourcePage(4752).Text, obj9), , ];
     const obj10 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: null };
     let str2;
     if (first1.field === constants3.MESSAGE) {
@@ -343,12 +343,12 @@ export default noop.forwardRef((arg0, ref) => {
       }
     }
     obj10.status = str2;
-    items8[1] = tmp17(sourcePage(7188).TextArea, obj10);
+    items8[1] = tmp17(sourcePage(7330).TextArea, obj10);
     if (first1.status !== tmp4.ERROR) {
       const obj11 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: null };
-      let intl2 = tmp18(1114).intl;
-      obj11.children = intl2.string(tmp18(1114).t.UtfQNw);
-      let tmp17Result = tmp17(tmp18(4632).Text, obj11);
+      let intl2 = tmp18(1115).intl;
+      obj11.children = intl2.string(tmp18(1115).t.UtfQNw);
+      let tmp17Result = tmp17(tmp18(4752).Text, obj11);
       items8[2] = tmp17Result;
       obj8.children = items8;
       tmp14(tmp16, obj8);

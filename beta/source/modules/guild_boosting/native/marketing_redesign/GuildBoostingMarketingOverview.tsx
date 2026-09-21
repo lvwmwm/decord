@@ -1,16 +1,16 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7626
+// Function ID: 7627
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 1979, 1371, 1074, 21, 4636, 7488, 504, 1483, 7265, 5679, 7496, 1379, 1240, 573, 7360, 4960, 7504, 13663, 13670, 13675, 13685, 13690, 13694, 2]
+// Dependencies: [32, 19, 17, 2063, 1372, 1074, 21, 4756, 7627, 504, 1484, 7407, 5815, 7635, 1380, 1241, 573, 7499, 5079, 7643, 13838, 13845, 13850, 13860, 13865, 13869, 2]
 // Exports: default
 
-// Module 7487 (GuildBoostingMarketingOverview)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7504 */;
+// Module 7626 (GuildBoostingMarketingOverview)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7643 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
@@ -18,7 +18,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, AnalyticsPages: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_13 = createStyles.createStyles({ wrapper: { paddingBottom: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingOverview.tsx");
@@ -84,9 +84,9 @@ export default function GuildBoostingMarketingOverview(guildId) {
   }, items3);
   const effect1 = obj4.useEffect(() => {
     guildBoostSlots(stateFromStores[16]).wait(() => {
-      const premiumSubscriptionPlans = guildId(7360).fetchPremiumSubscriptionPlans();
-      const obj = guildId(7360);
-      const paymentSources = guildId(4960).fetchPaymentSources();
+      const premiumSubscriptionPlans = guildId(7499).fetchPremiumSubscriptionPlans();
+      const obj = guildId(7499);
+      const paymentSources = guildId(5079).fetchPaymentSources();
     });
   }, []);
   let tmp18 = null;

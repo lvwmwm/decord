@@ -1,140 +1,45 @@
 // Module ID: 6888
 // Function ID: 6889
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 6889]
+// Dependencies: [6870, 1637]
+// Exports: animate
 
 // Module 6888
-import _modDef6889 from "module_6889" /* 6889 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import metroRequire from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import value2 from "value2" /* 6870 */;
 
-const TouchableHighlight = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+const cancelAnimation = tmp3(1637);
+require = fn;
+const dependencyMap = arg6;
+fn = function n(arg0) {
+  ({ point, configs, velocity } = arg0);
+  if (velocity === undefined) {
+    velocity = 0;
   }
-}
-let closure_3 = ["style"];
-get_ActivityIndicator = fn(17);
-({ StyleSheet: closure_9, View: c10 } = get_ActivityIndicator);
-const jsx = fn(21).jsx;
-class TouchableHighlight {
-  constructor(arg0) {
-    self = this;
-    tmp = hasOwnProperty(this, TouchableHighlight);
-    items = [];
-    items[0] = global;
-    tmp2 = closure_7;
-    obj = closure_7(TouchableHighlight);
-    tmp3 = metroRequire;
-    if (closure_12()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.showUnderlay = () => {
-      if (closure_0.hasPressHandler()) {
-        const obj2 = { extraChildStyle: null, extraUnderlayStyle: null };
-        const obj3 = { opacity: obj.props.activeOpacity };
-        obj2.extraChildStyle = obj3;
-        const obj4 = { backgroundColor: obj.props.underlayColor };
-        obj2.extraUnderlayStyle = obj4;
-        obj.setState(obj2);
-        const props = obj.props;
-        const onShowUnderlay = props.onShowUnderlay;
-        if (onShowUnderlay != null) {
-          onShowUnderlay();
-        }
-      }
-    };
-    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
-    tmp3Result.hideUnderlay = () => {
-      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
-      const props = closure_0.props;
-      const onHideUnderlay = props.onHideUnderlay;
-      if (onHideUnderlay != null) {
-        onHideUnderlay();
-      }
-    };
-    tmp3Result.onStateChange = (arg0, arg1) => {
-      if (arg1 === TouchableHighlight(6889).TOUCHABLE_STATE.BEGAN) {
-        closure_0.showUnderlay();
-      } else {
-        if (!tmp3) {
-          closure_0.hideUnderlay();
-        }
-        tmp3 = arg1 !== tmp(6889).TOUCHABLE_STATE.UNDETERMINED && arg1 !== tmp(6889).TOUCHABLE_STATE.MOVED_OUTSIDE;
-      }
-    };
-    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
-    return tmp3Result;
+  ({ overrideReduceMotion, onComplete } = arg0);
+  if (!configs) {
+    configs = value2.ANIMATION_CONFIGS;
   }
-}
-_inherits(TouchableHighlight, fn(19).Component);
-const entry = {
-  key: "renderChildren",
-  value: function renderChildren() {
-    const self = this;
-    if (this.props.children) {
-      const Children = noop.Children;
-      const onlyResult = Children.only(self.props.children);
-      const obj = { style: React7.compose(onlyResult.props.style, self.state.extraChildStyle) };
-      return noop.cloneElement(onlyResult, obj);
-    } else {
-      return <closure_1_10 />;
-    }
+  if (overrideReduceMotion) {
+    configs.reduceMotion = overrideReduceMotion;
   }
+  if (!("duration" in configs)) {
+    if (!("easing" in configs)) {
+      let TIMING = value2.ANIMATION_METHOD.SPRING;
+    }
+    if (TIMING === value2.ANIMATION_METHOD.TIMING) {
+      let withTimingResult = cancelAnimation.withTiming(point, configs, onComplete);
+      const tmp3Result = cancelAnimation;
+    } else {
+      const _Object = Object;
+      const obj = { velocity };
+      withTimingResult = cancelAnimation.withSpring(point, Object.assign(obj, configs), onComplete);
+      const tmp3Result2 = cancelAnimation;
+    }
+    return withTimingResult;
+  }
+  TIMING = value2.ANIMATION_METHOD.TIMING;
 };
-let items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let style = props.style;
-      if (undefined === style) {
-        style = {};
-      }
-      const obj = {};
-      const tmp = _objectWithoutProperties(props, closure_3);
-      const merged = Object.assign(tmp);
-      const items = [style, self.state.extraUnderlayStyle];
-      obj.style = items;
-      obj.onStateChange = self.onStateChange;
-      obj.children = self.renderChildren();
-      return jsx(_modDef6889, {});
-    }
-  }
-];
-const importDefaultResultResult = _createClass(TouchableHighlight, items);
-let obj = {};
-let merged = Object.assign(_modDef6889.defaultProps);
-obj.activeOpacity = 0.85;
-obj.delayPressOut = 100;
-obj.underlayColor = "black";
-importDefaultResultResult.defaultProps = obj;
+fn.__closure = { ANIMATION_CONFIGS: fn(6870).ANIMATION_CONFIGS, ANIMATION_METHOD: fn(6870).ANIMATION_METHOD, withTiming: fn(1637).withTiming, withSpring: fn(1637).withSpring };
+fn.__workletHash = 17032227615993;
+fn.__initData = { code: "function pnpm_animateTs1({point:point,configs:configs,velocity=0,overrideReduceMotion:overrideReduceMotion,onComplete:onComplete}){const{ANIMATION_CONFIGS,ANIMATION_METHOD,withTiming,withSpring}=this.__closure;if(!configs){configs=ANIMATION_CONFIGS;}if(overrideReduceMotion){configs.reduceMotion=overrideReduceMotion;}const type='duration'in configs||'easing'in configs?ANIMATION_METHOD.TIMING:ANIMATION_METHOD.SPRING;if(type===ANIMATION_METHOD.TIMING){return withTiming(point,configs,onComplete);}return withSpring(point,Object.assign({velocity:velocity},configs),onComplete);}" };
 
-export default importDefaultResultResult;
+export const animate = fn;

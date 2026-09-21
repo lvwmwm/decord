@@ -1,9 +1,9 @@
 // Module ID: 10144
 // Function ID: 10145
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10144
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 6, height: 6, scales: [2, 3], hash: "96f4f50193c5df13e000233d90f42a59", name: "ic_sparkle2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "bc9640d059e4504fae6e197e103e15f0", name: "whatsapp", type: "png" });

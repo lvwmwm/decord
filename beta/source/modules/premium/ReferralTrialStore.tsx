@@ -1,13 +1,13 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7694
+// Function ID: 7695
 // Name: ReferralTrialStore
-// Dependencies: [1371, 1074, 7556, 573, 1089, 504, 2]
+// Dependencies: [1372, 1074, 7695, 573, 1090, 504, 2]
 
-// Module 7555 (ReferralTrialStore)
+// Module 7694 (ReferralTrialStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7556 */;
-import UserStore from "UserStore" /* 1371 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7695 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function emitChanges() {
@@ -17,7 +17,7 @@ function handleLoadMessages(messages) {
   messages = messages.messages;
   const item = messages.forEach((type) => {
     let content = null;
-    if (type.type === content(1089).MessageTypes.PREMIUM_REFERRAL) {
+    if (type.type === content(1090).MessageTypes.PREMIUM_REFERRAL) {
       content = type.content;
     }
     if (null != content) {
@@ -144,8 +144,8 @@ const referralTrialStore = new ReferralTrialStore(DispatcherDefault, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     if (!c8) {
-      const referralsRemaining = userTrialOfferId(7556).fetchReferralsRemaining();
-      const obj = userTrialOfferId(7556);
+      const referralsRemaining = userTrialOfferId(7695).fetchReferralsRemaining();
+      const obj = userTrialOfferId(7695);
     }
     if (!set1.has(userTrialOfferId)) {
       set1.add(userTrialOfferId);
@@ -239,7 +239,7 @@ const referralTrialStore = new ReferralTrialStore(DispatcherDefault, {
   MESSAGE_CREATE: function handleMessage(message) {
     message = message.message;
     let content = null;
-    if (message.type === content(1089).MessageTypes.PREMIUM_REFERRAL) {
+    if (message.type === content(1090).MessageTypes.PREMIUM_REFERRAL) {
       content = message.content;
     }
     if (null != content) {

@@ -1,45 +1,9 @@
 // Module ID: 3780
 // Function ID: 3781
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3780
-let closure_0 = {
-  lastWeek(getUTCDay) {
-    const uTCDay = getUTCDay.getUTCDay();
-    if (0 === uTCDay) {
-      return "'pro\u0161lu nedjelju u' p";
-    } else if (3 === uTCDay) {
-      return "'pro\u0161lu srijedu u' p";
-    } else if (6 === uTCDay) {
-      return "'pro\u0161lu subotu u' p";
-    } else {
-      return "'pro\u0161li' EEEE 'u' p";
-    }
-  },
-  yesterday: "'ju\u010Der u' p",
-  today: "'danas u' p",
-  tomorrow: "'sutra u' p",
-  nextWeek(getUTCDay) {
-    const uTCDay = getUTCDay.getUTCDay();
-    if (0 === uTCDay) {
-      return "'idu\u0107u nedjelju u' p";
-    } else if (3 === uTCDay) {
-      return "'idu\u0107u srijedu u' p";
-    } else if (6 === uTCDay) {
-      return "'idu\u0107u subotu u' p";
-    } else {
-      return "'pro\u0161li' EEEE 'u' p";
-    }
-  },
-  other: "P"
-};
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  let tmpResult = tmp;
-  if (typeof closure_0[arg0] === "function") {
-    tmpResult = tmp(arg1);
-  }
-  return tmpResult;
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "84127ef737eb364f9ba0eee53ff038ea", name: "de.messages.84127ef737eb364f9ba0eee53ff038ea.compiled.messages", type: "jsona" });

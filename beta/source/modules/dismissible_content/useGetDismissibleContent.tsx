@@ -1,22 +1,22 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7631
+// Function ID: 7632
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1219, 4458, 1947, 1949, 1074, 1084, 1240, 1943, 7493, 1945, 504, 4479, 1942, 4457, 11, 2]
+// Dependencies: [32, 19, 1220, 4577, 2031, 2033, 1074, 1084, 1241, 2027, 7632, 2029, 504, 4598, 2026, 4576, 11, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 7492 (useGetDismissibleContent)
+// Module 7631 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 1942 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 1945 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2026 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 1947 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 1949 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2031 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2033 */;
 
 const require = globalThis.__r;
 
@@ -39,8 +39,8 @@ function useGetVisibleContent(found1, stateFromStores, GUILD_HEADER_TOOLTIPS, la
   closure_6 = tmp6;
   let result = null != found1;
   if (result) {
-    result = tmp2(1945).isDismissibleContentBlockedByOverlay(found1, first, tmp6);
-    const tmp2Result = tmp2(1945);
+    result = tmp2(2029).isDismissibleContentBlockedByOverlay(found1, first, tmp6);
+    const tmp2Result = tmp2(2029);
   }
   let obj = require("OverlayTrackingUtils");
   const items = [ref];
@@ -156,7 +156,7 @@ function canShowTimeRecurringContent(arg0, lastDismissedAtMs, numTimesDismissed,
   }
   return hasLoadedResult;
 }
-const removeCandidateContent = fn(1949).removeCandidateContent;
+const removeCandidateContent = fn(2033).removeCandidateContent;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const UserSettingsTypes = fn(1084).UserSettingsTypes;
 let closure_13 = {};
@@ -312,7 +312,7 @@ export const useGetTimeRecurringDismissibleContent = function useGetTimeRecurrin
     }
     dependencyMap = tmp10;
     tmp5 = tmp10;
-    tmpResult = tmp(4479);
+    tmpResult = tmp(4598);
   }
   const items2 = [useGetVisibleContent(tmp5, stateFromStores1, groupName), ];
   const items3 = [tmp5, groupName, stateFromStores1];

@@ -1,10 +1,10 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 1930
+// Function ID: 1931
 // Name: markdownRules
-// Dependencies: [4333, 2]
+// Dependencies: [1929, 2]
 
-// Module 17390 (markdownRules)
-import t_mod from "module_4333" /* 4333 */;
+// Module 1930 (markdownRules)
+import t_mod from "module_1929" /* 1929 */;
 import size from "module_2" /* 2 */;
 
 const link = t.defaultRules.link;

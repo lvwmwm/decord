@@ -1,18 +1,19 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 17301
+// Function ID: 17302
 // Name: guild_automod/PermissionUtils
-// Dependencies: [1979, 4275, 1074, 504, 2]
-// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
+// Dependencies: [2063, 4395, 12117, 1074, 504, 2]
+// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
 
-// Module 16948 (guild_automod/PermissionUtils)
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+// Module 17301 (guild_automod/PermissionUtils)
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 
 const require = globalThis.__r;
 
 const require = fn;
+const AutomodTriggerType = fn(12117).AutomodTriggerType;
 const Constants = fn(1074);
-({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
+({ GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
 
@@ -54,10 +55,29 @@ export const useCanCurrentUserManageAutomod = function useCanCurrentUserManageAu
     }
   }, items1);
 };
-export const useIsUserProfileRuleEnabled = function useIsUserProfileRuleEnabled(arg0) {
-  _require = arg0;
+export const useIsUndeletableMentionSpamRule = function useIsUndeletableMentionSpamRule(guildId, triggerType) {
+  _require = guildId;
+  dependencyMap = triggerType;
   const items = [GuildStore];
-  const items1 = [arg0];
+  const items1 = [guildId, triggerType];
+  return require("initialize").useStateFromStores(items, () => {
+    if (closure_1 !== AutomodTriggerType.MENTION_SPAM) {
+      return false;
+    } else {
+      const guild = GuildStore.getGuild(closure_0);
+      let hasItem = null != guild;
+      if (hasItem) {
+        const features = guild.features;
+        hasItem = features.has(constants.COMMUNITY);
+      }
+      return hasItem;
+    }
+  }, items1);
+};
+export const useIsUserProfileRuleEnabled = function useIsUserProfileRuleEnabled(guildId) {
+  _require = guildId;
+  const items = [GuildStore];
+  const items1 = [guildId];
   return require("initialize").useStateFromStores(items, () => {
     const guild = GuildStore.getGuild(closure_0);
     let flag;

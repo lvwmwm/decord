@@ -1,14 +1,14 @@
-// Module ID: 5507
-// Function ID: 5508
+// Module ID: 5643
+// Function ID: 5644
 // Name: GuildMemberRequesterStore
-// Dependencies: [1957, 2021, 5508, 573, 504, 2]
+// Dependencies: [2041, 2105, 5644, 573, 504, 2]
 
-// Module 5507 (GuildMemberRequesterStore)
+// Module 5643 (GuildMemberRequesterStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5508 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5644 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
 function handleConnectionReset() {
   navigation.reset();
@@ -112,6 +112,22 @@ const guildMemberRequesterStore = new GuildMemberRequesterStore(DispatcherDefaul
     return false;
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
+  INTELLIGENCE_SEARCH_FETCH_SUCCESS: function handleIntelligenceSearchFetchSuccess(arg0) {
+    ({ messages, guildId: importDefault } = arg0);
+    const item = messages.forEach((item) => {
+      ({ author, mentions } = item);
+      if (null != author) {
+        closure_4.request(guild_id, author.id);
+      }
+      if (mentions != null) {
+        item = mentions.forEach((id) => {
+          navigation.request(guild_id, id.id);
+          return false;
+        });
+      }
+    });
+    return false;
+  },
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
   LOCAL_MESSAGES_LOADED: handleLoadMessages,
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,

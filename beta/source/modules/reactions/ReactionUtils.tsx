@@ -1,21 +1,21 @@
-// Module ID: 4287
-// Function ID: 4288
+// Module ID: 4407
+// Function ID: 4408
 // Name: ReactionUtils
-// Dependencies: [502, 1074, 4288, 4289, 1114, 7865, 1935, 1240, 2]
+// Dependencies: [502, 1074, 4408, 4409, 1115, 8005, 2019, 1241, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4287 (ReactionUtils)
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7865 */;
+// Module 4407 (ReactionUtils)
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8005 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticsSections: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
-const constants3 = fn(4288).NotificationSettingsUpdateType;
+const constants3 = fn(4408).NotificationSettingsUpdateType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/reactions/ReactionUtils.tsx");
 
@@ -45,7 +45,7 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
       PirBBE = t.PirBBE;
       tmp5 = tmp;
     }
-    const intl = tmp5(1114).intl;
+    const intl = tmp5(1115).intl;
     const obj = { reactions: count, emojiName: null };
     if (null == emoji.id) {
       let str2 = UnicodeEmojisDefault.convertSurrogateToName(emoji.name);

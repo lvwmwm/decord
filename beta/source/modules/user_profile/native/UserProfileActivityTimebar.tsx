@@ -1,13 +1,13 @@
-// Module ID: 13156
-// Function ID: 13157
+// Module ID: 13315
+// Function ID: 13316
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 4636, 576, 13157, 4632, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 13316, 4752, 2]
 // Exports: default
 
-// Module 13156 (UserProfileActivityTimebar)
+// Module 13315 (UserProfileActivityTimebar)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useActivityTimer from "useActivityTimer" /* 13157 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useActivityTimer from "useActivityTimer" /* 13316 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityTimerDefault = useActivityTimer;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { bar: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 4, marginBottom: 4 }, progress: null, textRow: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.xs, height: 4, marginBottom: 4 };
 obj2.progress = { backgroundColor: nativeDefault.colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: nativeDefault.radii.xs, height: "100%", minWidth: 4 };

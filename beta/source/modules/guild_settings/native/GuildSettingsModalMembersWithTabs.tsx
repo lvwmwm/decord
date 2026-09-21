@@ -1,29 +1,29 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16918
+// Function ID: 16919
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [32, 19, 17, 1979, 4275, 1371, 21, 4636, 576, 16312, 504, 7368, 1114, 16673, 16674, 16680, 4461, 1483, 8789, 16675, 7480, 9930, 9922, 12747, 12747, 12749, 2]
+// Dependencies: [32, 19, 17, 2063, 4395, 1372, 21, 4756, 576, 16554, 504, 7507, 1115, 16919, 16920, 16926, 4580, 1484, 8174, 16921, 7619, 9898, 9890, 12867, 12867, 12869, 2]
 
-// Module 16672 (GuildSettingsModalMembersWithTabs)
+// Module 16918 (GuildSettingsModalMembersWithTabs)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4461 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7368 */;
-import ContextMenu from "ContextMenu" /* 8789 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16673 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16674 */;
-import showMembersManagementActionSheet from "showMembersManagementActionSheet" /* 16675 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16680 */;
+import util from "util" /* 1115 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7507 */;
+import ContextMenu from "ContextMenu" /* 8174 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 16919 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 16920 */;
+import showMembersManagementActionSheet from "showMembersManagementActionSheet" /* 16921 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 16926 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };
 let closure_11 = createStyles.createStyles(obj);
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -81,7 +81,7 @@ export default noop.memo((guildId) => {
     obj3.page = React7(GuildSettingsModalMemberApplicationsDefault, obj4);
     items[1] = obj3;
     const obj5 = { label: null, id: null, page: null };
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1115).intl;
     obj5.label = intl3.string(util.t.bSZkla);
     obj5.id = MemberSafetyPageTypes.MemberSafetyPageTab.REJECTED;
     const obj6 = { guildId, applicationStatus: null };
@@ -91,7 +91,7 @@ export default noop.memo((guildId) => {
     obj5.page = React7(GuildSettingsModalMemberApplicationsDefault, obj6);
     items[2] = obj5;
     const obj7 = { label: null, id: null, page: null };
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1115).intl;
     obj7.label = intl4.string(util.t.aURgY2);
     obj7.id = MemberSafetyPageTypes.MemberSafetyPageTab.APPROVED;
     const obj8 = { guildId, applicationStatus: null };
@@ -116,12 +116,12 @@ export default noop.memo((guildId) => {
       items: membersManagementActions,
       children(ref) {
         const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-        const obj = { source: closure_1_1(9930), accessibilityLabel: null, ref: null };
-        const intl = guildId(1114).intl;
-        obj.accessibilityLabel = intl.string(guildId(1114).t.ogxXGq);
+        const obj = { source: closure_1_1(9898), accessibilityLabel: null, ref: null };
+        const intl = guildId(1115).intl;
+        obj.accessibilityLabel = intl.string(guildId(1115).t.ogxXGq);
         obj.ref = ref.ref;
         const merged1 = Object.assign(merged);
-        return closure_1_9(guildId(7480).HeaderActionButton, obj);
+        return closure_1_9(guildId(7619).HeaderActionButton, obj);
       }
     });
   }, items5);

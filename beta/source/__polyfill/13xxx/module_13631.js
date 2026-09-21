@@ -1,9 +1,9 @@
 // Module ID: 13631
 // Function ID: 13632
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13631
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 106, height: 26, scales: [2, 3], hash: "cb40a06625eace58731dea1b5da68381", name: "img_logo_nitro_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 36, scales: [2, 3], hash: "f2d705f9d582bb6c65065afe8639e152", name: "img_classic_error_mobile", type: "png" });

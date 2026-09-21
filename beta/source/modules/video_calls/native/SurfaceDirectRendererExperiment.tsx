@@ -1,16 +1,16 @@
-// Module ID: 9735
-// Function ID: 9736
+// Module ID: 9692
+// Function ID: 9693
 // Name: SurfaceDirectRendererExperiment
-// Dependencies: [502, 1433, 504, 2]
+// Dependencies: [502, 1434, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 9735 (SurfaceDirectRendererExperiment)
+// Module 9692 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ApexExperiment = fn(1433);
+const ApexExperiment = fn(1434);
 const obj2 = { kind: "user", name: "2026-03-surface-direct-renderer", defaultConfig: { enableSurfaceDirectRenderer: false }, variations: null };
 const obj3 = { 1: null };
 obj3[1] = { enableSurfaceDirectRenderer: true };

@@ -1,21 +1,21 @@
-// Module ID: 7624
-// Function ID: 7625
+// Module ID: 7763
+// Function ID: 7764
 // Name: ApplicationCommandUtils
-// Dependencies: [1961, 4977, 5080, 1074, 1085, 7625, 1894, 7626, 1086, 12, 38, 14, 4816, 2]
+// Dependencies: [2045, 5105, 5210, 1074, 1085, 7764, 1978, 7765, 1086, 12, 38, 14, 4936, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 7624 (ApplicationCommandUtils)
+// Module 7763 (ApplicationCommandUtils)
 import _modDef12 from "module_12" /* 12 */;
 import IntegerDefault from "Integer" /* 14 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1085 */;
-import Server from "Server" /* 1894 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
-import DraftStore from "DraftStore" /* 4977 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7625 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7626 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5080 */;
+import Server from "Server" /* 1978 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
+import DraftStore from "DraftStore" /* 5105 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7764 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5210 */;
 import Constants from "Constants" /* 1074 */;
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;
 import size from "module_2" /* 2 */;
@@ -333,7 +333,7 @@ function buildSubCommands(arg0) {
     return items;
   } else {
     if (command.type !== Server.ApplicationCommandOptionType.SUB_COMMAND) {
-      if (command.type !== tmp(1894).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+      if (command.type !== tmp(1978).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
         const obj = { rootCommand, command, applicationId, subCommandPath, useKeyedPermissions };
         const items1 = [buildCommand(obj)];
         return items1;
@@ -486,11 +486,11 @@ export const getMatchingGroupCommands = function getMatchingGroupCommands(contex
 export const getApplicationCommandOptionQueryOptions = function getApplicationCommandOptionQueryOptions(activeOption) {
   let tmp3 = activeOption.type === Server.ApplicationCommandOptionType.USER;
   if (!tmp3) {
-    tmp3 = activeOption.type === tmp(1894).ApplicationCommandOptionType.MENTIONABLE;
+    tmp3 = activeOption.type === tmp(1978).ApplicationCommandOptionType.MENTIONABLE;
   }
-  let tmp4 = activeOption.type === tmp(1894).ApplicationCommandOptionType.ROLE;
+  let tmp4 = activeOption.type === tmp(1978).ApplicationCommandOptionType.ROLE;
   if (!tmp4) {
-    tmp4 = activeOption.type === tmp(1894).ApplicationCommandOptionType.MENTIONABLE;
+    tmp4 = activeOption.type === tmp(1978).ApplicationCommandOptionType.MENTIONABLE;
   }
   const tmp5 = activeOption.type === Server.ApplicationCommandOptionType.STRING;
   let tmp6 = tmp5;

@@ -1,17 +1,17 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 17264
+// Function ID: 17265
 // Name: YouScreenNavIconNitroSubscriber
-// Dependencies: [32, 19, 7555, 13484, 1954, 21, 8161, 504, 7491, 1943, 16906, 16908, 8785, 1114, 2]
+// Dependencies: [32, 19, 7694, 13663, 2038, 21, 8315, 504, 7630, 2027, 17259, 17261, 8940, 1115, 2]
 
-// Module 16911 (YouScreenNavIconNitroSubscriber)
+// Module 17264 (YouScreenNavIconNitroSubscriber)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7555 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 13484 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7694 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 13663 */;
 
 const require = fn;
-const NitroHomeSectionId = fn(13484).NitroHomeSectionId;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const NitroHomeSectionId = fn(13663).NitroHomeSectionId;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
@@ -24,7 +24,7 @@ export default noop.memo(function SubscriberNitroIcon(onPress) {
   if (showReferralNotificationDot) {
     showReferralNotificationDot = obj.useIsEligibleSenderForReferralProgram(!showReferralNotificationDot);
   }
-  obj = onPress(8161);
+  obj = onPress(8315);
   const items = [ReferralTrialStore];
   const items1 = [showReferralNotificationDot];
   const stateFromStores = onPress(504).useStateFromStores(items, () => ReferralTrialStore.getReferralsRemaining({ bypassFetch: !showReferralNotificationDot }), items1);
@@ -35,14 +35,14 @@ export default noop.memo(function SubscriberNitroIcon(onPress) {
     if (null != stateFromStores) {
       prop = null;
       if (stateFromStores > 0) {
-        prop = tmp(1943).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
+        prop = tmp(2027).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
       }
     }
   }
-  const tmpResult2 = onPress(7491);
-  const tmp5 = _slicedToArray(tmpResult2.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: onPress(16906).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS }, undefined, true), 2);
+  const tmpResult2 = onPress(7630);
+  const tmp5 = _slicedToArray(tmpResult2.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: onPress(17259).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS }, undefined, true), 2);
   dependencyMap = tmp6;
-  const tmp7 = tmp5[0] === onPress(1943).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
+  const tmp7 = tmp5[0] === onPress(2027).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
   _slicedToArray = tmp7;
   const items2 = [tmp7, tmp5[1], onPress];
   const callback = noop.useCallback(() => {
@@ -54,11 +54,11 @@ export default noop.memo(function SubscriberNitroIcon(onPress) {
     onPress();
   }, items2);
   const obj3 = { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null };
-  const obj2 = { cooldownDurationMs: onPress(16906).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
-  obj3.IconComponent = onPress(8785).NitroWheelIcon;
-  const intl = tmp(1114).intl;
-  obj3.accessibilityLabel = intl.string(onPress(1114).t.Ipxkog);
+  const obj2 = { cooldownDurationMs: onPress(17259).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  obj3.IconComponent = onPress(8940).NitroWheelIcon;
+  const intl = tmp(1115).intl;
+  obj3.accessibilityLabel = intl.string(onPress(1115).t.Ipxkog);
   obj3.onPress = callback;
   obj3.showRedDot = tmp7;
-  return jsx(showReferralNotificationDot(16908), { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null });
+  return jsx(showReferralNotificationDot(17261), { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null });
 });

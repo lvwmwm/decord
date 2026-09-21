@@ -1,25 +1,25 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12998
+// Function ID: 12999
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 2012, 1979, 21, 4636, 5763, 504, 1483, 5705, 1114, 4649, 4537, 7226, 5665, 1396, 4632, 6706, 5056, 7042, 2]
+// Dependencies: [5, 32, 19, 17, 2096, 2063, 21, 4756, 5899, 504, 1484, 5841, 1115, 4769, 4656, 7368, 5801, 1397, 4752, 6847, 5186, 7184, 2]
 // Exports: default
 
-// Module 12878 (ChannelPrompt)
-import util from "util" /* 1114 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
+// Module 12998 (ChannelPrompt)
+import util from "util" /* 1115 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
-let obj2 = { flex: { flex: 1 }, safePadding: { marginTop: fn(5763).NAV_BAR_HEIGHT, flex: 1 }, contentContainer: { paddingHorizontal: 16 }, guildIcon: { alignSelf: "center" }, guildName: { marginTop: 8, textAlign: "center" }, title: { marginTop: 16, textAlign: "center" }, subTitle: { marginTop: 8, textAlign: "center" }, topicInput: { marginTop: 24 }, buttonWrapper: { marginTop: 8 }, error: { marginTop: 4 } };
+const createStyles = fn(4756);
+let obj2 = { flex: { flex: 1 }, safePadding: { marginTop: fn(5899).NAV_BAR_HEIGHT, flex: 1 }, contentContainer: { paddingHorizontal: 16 }, guildIcon: { alignSelf: "center" }, guildName: { marginTop: 8, textAlign: "center" }, title: { marginTop: 16, textAlign: "center" }, subTitle: { marginTop: 8, textAlign: "center" }, topicInput: { marginTop: 24 }, buttonWrapper: { marginTop: 8 }, error: { marginTop: 4 } };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/nuf/native/components/ChannelPrompt.tsx");

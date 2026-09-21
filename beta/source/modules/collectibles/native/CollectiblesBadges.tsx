@@ -1,24 +1,24 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 9111
+// Function ID: 9112
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1373, 21, 4636, 576, 4632, 1114, 8958, 5176, 8785, 2]
+// Dependencies: [19, 17, 1374, 21, 4756, 576, 4752, 1115, 9112, 5313, 8940, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 8957 (CollectiblesBadges)
+// Module 9111 (CollectiblesBadges)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import LockIcon from "LockIcon" /* 5176 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8785 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 8958 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import LockIcon from "LockIcon" /* 5313 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8940 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9112 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { badgeTextUppercase: { textTransform: "uppercase" }, badgeSurfaceDarkMode: { backgroundColor: nativeDefault.colors.WHITE }, badgeSurfaceLightMode: null, newIconBadge: null, limitedTimeBadge: null, lockIconBadge: null, newLockIconBadge: null, badgePill: null, iconTextBadge: null };
 let obj3 = { backgroundColor: nativeDefault.colors.WHITE };
 obj2.badgeSurfaceLightMode = { backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };

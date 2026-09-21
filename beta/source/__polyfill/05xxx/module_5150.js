@@ -1,9 +1,13 @@
 // Module ID: 5150
 // Function ID: 5151
-// Dependencies: [1120]
+// Dependencies: [17, 65]
 
 // Module 5150
-import registerAsset from "module_1120" /* 1120 */;
+import _mod17 from "module_17" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
+const codegenNativeComponent = _mod17.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenContainer", validAttributes: {} };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fd096310d044f29ce2db7e98b6b0b4d7", name: "AppsLockIcon", type: "png" });
+export default module_65.get("RNSScreenContainer", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,16 +1,16 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 15252
+// Function ID: 15253
 // Name: SettingsClipsScreen
-// Dependencies: [19, 8079, 21, 11605, 14776, 2]
+// Dependencies: [19, 8233, 21, 11725, 14964, 2]
 // Exports: default
 
-// Module 15064 (SettingsClipsScreen)
-import SettingBuilders from "SettingBuilders" /* 11605 */;
-import SettingLayoutDefault from "SettingLayout" /* 14776 */;
+// Module 15252 (SettingsClipsScreen)
+import SettingBuilders from "SettingBuilders" /* 11725 */;
+import SettingLayoutDefault from "SettingLayout" /* 14964 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8079).MobileUserSettings;
+const MobileUserSettings = fn(8233).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/clips/native/SettingsClipsScreen.tsx");

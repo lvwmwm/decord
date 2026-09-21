@@ -1,13 +1,13 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8865
+// Function ID: 8866
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1074, 8517, 1090, 1270, 8536, 8529, 8522, 2]
+// Dependencies: [5, 502, 1074, 8670, 1091, 1271, 8690, 8682, 8675, 2]
 // Exports: handleManualReviewCta, invalidateManualReviewCache
 
-// Module 8710 (ManualReviewActionCreators)
-import DurationsDefault from "Durations" /* 1090 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8536 */;
+// Module 8865 (ManualReviewActionCreators)
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8690 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -64,7 +64,7 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
               tmp23 = Date.now() - map1 >= MINUTE;
             }
             if (tmp23) {
-              if (obj6.isCurrentUserSuspended()) {
+              if (obj8.isCurrentUserSuspended()) {
                 (function requestManualReviewSuspendedUser() {
                   const self = this;
                   const apply = closure_1_10.apply;
@@ -89,19 +89,26 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
               }
               c4 = 3;
               c5 = 1;
-              obj6 = SafetyHubUtils;
+              obj8 = SafetyHubUtils;
+            } else if (closure_128_0.status === closure_129_7.SUBMITTED) {
+              const result = closure_129_1(closure_129_2[7]).showManualReviewPendingModal();
+              c3 = 0;
+              closure_129_11 = false;
+              c5 = 3;
+              const obj9 = { value: undefined, done: true };
+              return obj9;
             } else if (closure_128_0.status !== closure_129_7.DECIDED_TEEN) {
-              const result = closure_129_1(closure_129_2[7]).showManualReviewWebview(closure_128_0.verification_webview_url);
+              const result1 = closure_129_1(closure_129_2[7]).showManualReviewWebview(closure_128_0.verification_webview_url);
               c3 = 1;
               const obj3 = closure_129_1(closure_129_2[7]);
             }
           }
-          const result1 = closure_129_1(closure_129_2[7]).showManualReviewDecidedTeenModal(closure_128_0.teen_age_range);
+          const result2 = closure_129_1(closure_129_2[7]).showManualReviewDecidedTeenModal(closure_128_0.teen_age_range);
           c3 = 0;
           closure_129_11 = false;
           c5 = 3;
-          const obj8 = { value: undefined, done: true };
-          return obj8;
+          const obj10 = { value: undefined, done: true };
+          return obj10;
         }
       } else if (1 === tmp8) {
         c3 = 0;
@@ -128,12 +135,12 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
       }
       c3 = 0;
       closure_129_11 = false;
-    } catch (tmp48) {
-      closure_2 = tmp48;
+    } catch (tmp53) {
+      closure_2 = tmp53;
       if (tmp5 === c3) {
         c5 = tmp3;
-        throw tmp48;
-      } else if (tmp2 === tmp50) {
+        throw tmp53;
+      } else if (tmp2 === tmp55) {
         c4 = tmp2;
       } else {
         c4 = tmp;
@@ -142,8 +149,8 @@ let closure_14 = async function _handleManualReviewCta(arg0, value) {
   }
 };
 const Endpoints = fn(1074).Endpoints;
-const SafetyToastType = fn(8517).SafetyToastType;
-const ManualReviewStatus = { IN_PROGRESS: "in_progress", DECIDED_TEEN: "decided_teen" };
+const SafetyToastType = fn(8670).SafetyToastType;
+const ManualReviewStatus = { IN_PROGRESS: "in_progress", SUBMITTED: "submitted", DECIDED_TEEN: "decided_teen" };
 const MINUTE = DurationsDefault.Millis.MINUTE;
 let c11 = false;
 let c12 = null;

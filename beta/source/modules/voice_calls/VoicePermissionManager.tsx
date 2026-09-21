@@ -1,23 +1,23 @@
-// Module ID: 17431
-// Function ID: 17432
+// Module ID: 17738
+// Function ID: 17739
 // Name: VoicePermissionManager
-// Dependencies: [5502, 4656, 502, 1957, 1908, 4659, 1074, 4846, 5220, 17432, 4783, 7221, 2]
+// Dependencies: [5638, 4776, 502, 2041, 1992, 4779, 1074, 4965, 5355, 17739, 4903, 7363, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 17431 (VoicePermissionManager)
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4783 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5220 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5502 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4656 */;
+// Module 17738 (VoicePermissionManager)
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4903 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5355 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5638 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4776 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 const InputModes = fn(1074).InputModes;
-const NativePermissionTypes = fn(4846).NativePermissionTypes;
+const NativePermissionTypes = fn(4965).NativePermissionTypes;
 let c11 = null;
 class VoicePermissionManager extends tmp2 {
   constructor() {
@@ -71,8 +71,8 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(voiceSta
                   }
                 });
                 if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {
-                  const permission3 = tmp13(5220).requestPermission(tmp14.INPUT_MONITORING);
-                  const tmp13Result = tmp13(5220);
+                  const permission3 = tmp13(5355).requestPermission(tmp14.INPUT_MONITORING);
+                  const tmp13Result = tmp13(5355);
                 }
                 tmp13 = importDefault;
                 tmp14 = constants2;

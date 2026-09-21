@@ -1,16 +1,16 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9979
+// Function ID: 9980
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 9281, 9279, 2]
+// Dependencies: [5, 32, 19, 9972, 9970, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9288 (useIsPersistentSecureFramesFingerprint)
+// Module 9979 (useIsPersistentSecureFramesFingerprint)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-let closure_5 = fn(9281).SECURE_FRAMES_PUBLIC_KEY_VERSION;
+let closure_5 = fn(9972).SECURE_FRAMES_PUBLIC_KEY_VERSION;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useIsPersistentSecureFramesFingerprint.tsx");
 

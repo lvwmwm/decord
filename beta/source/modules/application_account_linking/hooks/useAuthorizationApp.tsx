@@ -1,18 +1,18 @@
-// Module ID: 7270
-// Function ID: 7271
+// Module ID: 7412
+// Function ID: 7413
 // Name: useAuthorizationApp
-// Dependencies: [19, 4864, 1918, 1348, 1894, 7271, 2]
+// Dependencies: [19, 4983, 2002, 1349, 1978, 7413, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7270 (useAuthorizationApp)
+// Module 7412 (useAuthorizationApp)
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4864 */;
-import ApplicationRecord from "ApplicationRecord" /* 1918 */;
+import ApplicationStore from "ApplicationStore" /* 4983 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ApplicationTypes = fn(1348).ApplicationTypes;
+const ApplicationTypes = fn(1349).ApplicationTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useAuthorizationApp.tsx");
 

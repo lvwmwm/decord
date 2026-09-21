@@ -1,9 +1,9 @@
-// Module ID: 7074
-// Function ID: 7075
+// Module ID: 7216
+// Function ID: 7217
 // Name: WideAuthScrollContext
 // Dependencies: [19, 2]
 
-// Module 7074 (WideAuthScrollContext)
+// Module 7216 (WideAuthScrollContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext(() => {

@@ -1,17 +1,17 @@
-// Module ID: 9942
-// Function ID: 9943
+// Module ID: 10068
+// Function ID: 10069
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 1957, 4659, 4458, 1963, 1074, 38, 8511, 8516, 5492, 1100, 2]
+// Dependencies: [5, 2041, 4779, 4577, 2047, 1074, 38, 8664, 8669, 5628, 1101, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9942 (StartEventPlatformUtils)
+// Module 10068 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
-import router_utils from "router_utils" /* 1100 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 8511 */;
+import router_utils from "router_utils" /* 1101 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 8664 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 
 require = fn;
 let closure_10 = async function _navigateToEvent(arg0, value) {
@@ -62,8 +62,8 @@ let closure_10 = async function _navigateToEvent(arg0, value) {
               const channel1 = ChannelStore.getChannel(tmp52.channel_id);
               _modDef38(null != channel1, "could not find channel");
               if (channelId1 !== channel1.id) {
-                const voiceChannel = tmp21(5492).selectVoiceChannel(channel1.id);
-                const tmp21Result = tmp21(5492);
+                const voiceChannel = tmp21(5628).selectVoiceChannel(channel1.id);
+                const tmp21Result = tmp21(5628);
               }
               if (tmp27 != null) {
                 tmp27 = tmp27();
@@ -124,7 +124,7 @@ let closure_10 = async function _navigateToEvent(arg0, value) {
     }
   }
 };
-let closure_8 = fn(1963).GuildScheduledEventEntityTypes;
+let closure_8 = fn(2047).GuildScheduledEventEntityTypes;
 const Routes = fn(1074).Routes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/StartEventPlatformUtils.native.tsx");

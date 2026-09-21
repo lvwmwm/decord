@@ -1,10 +1,10 @@
-// Module ID: 12336
-// Function ID: 12337
+// Module ID: 12456
+// Function ID: 12457
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1114, 4538, 2]
+// Dependencies: [5, 32, 19, 1115, 4657, 2]
 // Exports: default
 
-// Module 12336 (useRequest)
+// Module 12456 (useRequest)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

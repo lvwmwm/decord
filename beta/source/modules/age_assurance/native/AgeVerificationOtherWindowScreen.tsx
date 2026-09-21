@@ -1,24 +1,24 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8726
+// Function ID: 8727
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 4636, 1114, 2946, 8539, 8540, 5054, 7061, 576, 4632, 2]
+// Dependencies: [19, 21, 4756, 1115, 3034, 8693, 8694, 5184, 7203, 576, 4752, 2]
 // Exports: default
 
-// Module 8572 (AgeVerificationOtherWindowScreen)
+// Module 8726 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import _modDef2946 from "module_2946" /* 2946 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7061 */;
-import ModalScreen from "ModalScreen" /* 8539 */;
-import ModalContent from "ModalContent" /* 8540 */;
+import util from "util" /* 1115 */;
+import _modDef3034 from "module_3034" /* 3034 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7203 */;
+import ModalScreen from "ModalScreen" /* 8693 */;
+import ModalContent from "ModalContent" /* 8694 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch" }, text: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationOtherWindowScreen.tsx");
@@ -32,7 +32,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (title == null) {
     const intl = util.intl;
-    title = intl.string(_modDef2946.MLPgsX);
+    title = intl.string(_modDef3034.MLPgsX);
   }
   let description;
   if (copy != null) {
@@ -40,7 +40,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (description == null) {
     const intl2 = util.intl;
-    description = intl2.string(_modDef2946.VcZF1q);
+    description = intl2.string(_modDef3034.VcZF1q);
   }
   const obj = { children: null };
   const obj2 = { children: null };

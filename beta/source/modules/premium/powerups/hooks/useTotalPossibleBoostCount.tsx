@@ -1,12 +1,12 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16561
+// Function ID: 16562
 // Name: useTotalPossibleBoostCount
-// Dependencies: [19, 4526, 1074, 2]
+// Dependencies: [19, 4645, 1074, 2]
 // Exports: default
 
-// Module 16319 (useTotalPossibleBoostCount)
+// Module 16561 (useTotalPossibleBoostCount)
 import _mod19 from "module_19" /* 19 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4526 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4645 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

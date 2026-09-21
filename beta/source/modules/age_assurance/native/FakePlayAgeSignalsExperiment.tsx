@@ -1,11 +1,11 @@
-// Module ID: 8695
-// Function ID: 8696
+// Module ID: 8849
+// Function ID: 8850
 // Name: FakePlayAgeSignalsExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: getFakePlayAgeSignalsConfig, isFakePlayAgeSignalsEnabled
 
-// Module 8695 (FakePlayAgeSignalsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 8849 (FakePlayAgeSignalsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { OFF: "off", ADULT: "adult", TEEN: "teen", UNDER_13: "under_13", UNDER_13_DECLINED: "under_13_declined", SUPERVISED_PENDING: "supervised_pending", SUPERVISED_DECLINED: "supervised_declined", NOT_SHARED: "not_shared", ADULT_SELF_DECLARED: "adult_self_declared", EMPTY: "empty", ERROR: "error", VERIFICATION_REQUIRED: "verification_required", ADULT_ASSESSED: "adult_assessed", SUPERVISED_APPROVED: "supervised_approved", CHECK_ERROR: "check_error" };

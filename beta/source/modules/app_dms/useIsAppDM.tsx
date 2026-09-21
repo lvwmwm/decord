@@ -1,11 +1,11 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12398
+// Function ID: 12399
 // Name: useIsAppDM
-// Dependencies: [1371, 563, 2]
+// Dependencies: [1372, 563, 2]
 // Exports: default
 
-// Module 12278 (useIsAppDM)
-import UserStore from "UserStore" /* 1371 */;
+// Module 12398 (useIsAppDM)
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 

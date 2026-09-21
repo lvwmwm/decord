@@ -1,30 +1,30 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 13027
+// Function ID: 13028
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5358, 1961, 1957, 1979, 4676, 4285, 1371, 1074, 1964, 1954, 21, 4636, 5605, 576, 504, 1114, 5109, 4789, 11008, 12908, 12909, 1176, 12910, 12911, 5668, 12912, 10423, 5204, 4632, 4481, 8375, 9179, 4457, 1943, 10754, 12913, 2]
+// Dependencies: [19, 17, 5494, 2045, 2041, 2063, 4796, 4405, 1372, 1074, 2048, 2038, 21, 4756, 5741, 576, 504, 1115, 5239, 4909, 11138, 13028, 13029, 1177, 13030, 13031, 5804, 13032, 10552, 5339, 4752, 4600, 8528, 10011, 4576, 2027, 10885, 13033, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 12907 (ChannelNavbar)
+// Module 13027 (ChannelNavbar)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useChannelName from "useChannelName" /* 4789 */;
-import Pressables from "Pressables" /* 5204 */;
-import isStreamingDefault from "isStreaming" /* 8375 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11008 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useChannelName from "useChannelName" /* 4909 */;
+import Pressables from "Pressables" /* 5339 */;
+import isStreamingDefault from "isStreaming" /* 8528 */;
+import ActivityStatusDefault from "ActivityStatus" /* 11138 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PresenceStore from "PresenceStore" /* 4676 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
-import TextStyles from "TextStyles" /* 5605 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PresenceStore from "PresenceStore" /* 4796 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 require = fn;
 function ChannelTitleContent(arg0) {
@@ -85,10 +85,10 @@ function DMChannelName(style) {
     return str;
   }, items1);
   const obj2 = { numberOfLines: 1, style: style.style, accessibilityLabel: null, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: null };
-  const intl = userId(1114).intl;
-  obj2.accessibilityLabel = intl.formatToPlainString(userId(1114).t.fYqXVY, { channelName: stateFromStores });
+  const intl = userId(1115).intl;
+  obj2.accessibilityLabel = intl.formatToPlainString(userId(1115).t.fYqXVY, { channelName: stateFromStores });
   obj2.children = stateFromStores;
-  return closure_16(userId(1176).LegacyText, obj2);
+  return closure_16(userId(1177).LegacyText, obj2);
 }
 function ConnectedStatus(style) {
   const userId = style.userId;
@@ -99,18 +99,18 @@ function ConnectedStatus(style) {
   });
   ({ status, isMobileOnline, isVROnline, streaming } = stateFromStoresObject);
   let obj = userId(504);
-  return closure_16(userId(1176).Status, { isMobileOnline, isVROnline, status, streaming, size: userId(1176).StatusSizes.SMALL, style: style.style });
+  return closure_16(userId(1177).Status, { isMobileOnline, isVROnline, status, streaming, size: userId(1177).StatusSizes.SMALL, style: style.style });
 }
 const View = fn(17).View;
-const THREAD_CHANNEL_TYPES = fn(1961).THREAD_CHANNEL_TYPES;
+const THREAD_CHANNEL_TYPES = fn(2045).THREAD_CHANNEL_TYPES;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_12, Fonts } = Constants);
-const StaticChannelRoute = fn(1964).StaticChannelRoute;
-const DismissibleContentConstants = fn(1954);
+const StaticChannelRoute = fn(2048).StaticChannelRoute;
+const DismissibleContentConstants = fn(2038);
 ({ ContentDismissActionType: closure_14, DismissibleContentGroupName: closure_15 } = DismissibleContentConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { navbarTitleContainer: { height: "100%", flex: 1, flexDirection: "row", alignItems: "center" }, navbarTitlePrimaryText: null, navbarTitleSecondaryText: null, channelIcon: null, channelIconColor: null, homeIcon: null, premiumIcon: null, status: null, channelTextContainer: null, channelNameContainer: null, channelName: null, flexRow: null };
 let obj3 = {};
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
@@ -172,13 +172,13 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    channelIcon = tmp2(5109).getChannelIcon(stateFromStores);
-    const tmp2Result = tmp2(5109);
+    channelIcon = tmp2(5239).getChannelIcon(stateFromStores);
+    const tmp2Result = tmp2(5239);
   }
   let channelName = null;
   if (null != stateFromStores) {
-    channelName = tmp2(4789).computeChannelName(stateFromStores, UserStore, RelationshipStore);
-    const tmp2Result2 = tmp2(4789);
+    channelName = tmp2(4909).computeChannelName(stateFromStores, UserStore, RelationshipStore);
+    const tmp2Result2 = tmp2(4909);
   }
   let isDMResult;
   if (stateFromStores != null) {
@@ -423,11 +423,11 @@ export const ChannelButtons = function ChannelButtons(buttons) {
       obj.disabled = disabled;
       obj.style = style;
       obj.children = children;
-      const children1 = [closure_16(closure_1(9179), obj), ];
+      const children1 = [closure_16(closure_1(10011), obj), ];
       let tmp3Result = null;
       if (hasActivitiesPrivateChannelTooltip) {
         const obj2 = { contentTypes: null, groupName: null, children: null };
-        const items1 = [onPress(1943).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP];
+        const items1 = [onPress(2027).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP];
         obj2.contentTypes = items1;
         obj2.groupName = constants2.CHANNEL_HEADER_CALL_BUTTON_TOOLTIPS;
         obj2.children = function children(markAsDismissed) {
@@ -443,8 +443,8 @@ export const ChannelButtons = function ChannelButtons(buttons) {
           }
           return tmp2;
         };
-        tmp3Result = tmp3(closure_1(10754), obj2);
-        const tmp4Result = closure_1(10754);
+        tmp3Result = tmp3(closure_1(10885), obj2);
+        const tmp4Result = closure_1(10885);
       }
       children1[1] = tmp3Result;
       return closure_17(closure_4, { children: children1 }, index);

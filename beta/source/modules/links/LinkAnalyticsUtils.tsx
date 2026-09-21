@@ -1,17 +1,17 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8646
+// Function ID: 8647
 // Name: LinkAnalyticsUtils
-// Dependencies: [1074, 8494, 1365, 4790, 1240, 2]
+// Dependencies: [1074, 8647, 1366, 4910, 1241, 2]
 
-// Module 8493 (LinkAnalyticsUtils)
+// Module 8646 (LinkAnalyticsUtils)
 import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import URLUtilsDefault from "URLUtils" /* 1365 */;
-import LinkUtils from "LinkUtils" /* 4790 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import LinkUtils from "LinkUtils" /* 4910 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-const constants = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };
+const constants = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link", USER_PROFILE: "Discord User Profile Link" };
 const items = [
   (substr) => {
     let SERVER_INVITE = null;
@@ -50,6 +50,18 @@ const items = [
       DISCOVERY = constants.DISCOVERY;
     }
     return DISCOVERY;
+  },
+  (target) => {
+    const safeParseWithQueryResult = URLUtilsDefault.safeParseWithQuery(target);
+    let USER_PROFILE = null;
+    if (null != safeParseWithQueryResult) {
+      USER_PROFILE = null;
+      if (null != obj2.tryParseUserProfilePath(safeParseWithQueryResult.pathname)) {
+        USER_PROFILE = constants.USER_PROFILE;
+      }
+      obj2 = LinkUtils;
+    }
+    return USER_PROFILE;
   }
 ];
 const result = size.fileFinishedImporting("modules/links/LinkAnalyticsUtils.tsx");

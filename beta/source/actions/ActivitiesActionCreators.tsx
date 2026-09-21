@@ -1,23 +1,21 @@
-// Module ID: 11609
-// Function ID: 11610
+// Module ID: 11729
+// Function ID: 11730
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 1957, 1074, 4629, 573, 1270, 7784, 7559, 4816, 11610, 11611, 4649, 2]
+// Dependencies: [5, 2041, 1074, 4749, 573, 1271, 7918, 7698, 4936, 4769, 2]
 
-// Module 11609 (ActivitiesActionCreators)
+// Module 11729 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4649 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
-import getActivitySessionKey from "getActivitySessionKey" /* 11610 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;
 
-const RichPresenceInviteBarActionCreators = tmp8(11611);
-require = fn;
+const require = fn;
 const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, ActivityTypes: metroRequire, AnalyticEvents: closure_7, LoggingInviteTypes: closure_8 } = Constants);
-const MessageSendLocation = fn(4629).MessageSendLocation;
+const MessageSendLocation = fn(4749).MessageSendLocation;
 const size = fn(2);
 const result = size.fileFinishedImporting("actions/ActivitiesActionCreators.tsx");
 
@@ -77,7 +75,7 @@ export default {
       }
       const parsed = require("MessageParser").parse(channel, content);
       const tmp7Result = require("MessageActionCreators");
-      let obj = { activityAction: null, location: null };
+      const obj = { activityAction: null, location: null };
       let obj2 = { type, activity, targetUserId };
       obj.activityAction = obj2;
       obj.location = MessageSendLocation.ACTIVITY_SHARE;
@@ -99,11 +97,6 @@ export default {
         }
         obj2.message_id = id;
         AppAnalyticsUtilsDefault.trackWithMetadata(constants3.INVITE_SENT, obj2);
-        const activitySessionKey = getActivitySessionKey.getActivitySessionKey(tmp2);
-        if (null != activitySessionKey) {
-          RichPresenceInviteBarActionCreators.markChannelInvited(activitySessionKey, tmp5.id);
-          const tmp8Result = RichPresenceInviteBarActionCreators;
-        }
         return Promise.resolve(channel);
       }, (arg0) => Promise.reject(arg0));
     }
@@ -127,8 +120,8 @@ export default {
       if (null != message_id) {
         obj4.message_id = message_id;
       }
-      const HTTP = tmp4(1270).HTTP;
-      const request = { url: constants.USER_ACTIVITY_JOIN(tmp4, closure_1, closure_2), retries: 3, query: obj4, rejectWithError: tmp4(1270).rejectWithMigratedError() };
+      const HTTP = tmp4(1271).HTTP;
+      const request = { url: constants.USER_ACTIVITY_JOIN(tmp4, closure_1, closure_2), retries: 3, query: obj4, rejectWithError: tmp4(1271).rejectWithMigratedError() };
       closure_128_0 = await HTTP.get(request);
       return { secret: closure_128_0.body.secret, joinUrl: closure_128_0.body.join_url };
     })();
@@ -137,8 +130,8 @@ export default {
     closure_0 = items;
     return (async () => {
       const mapped = v3.map((userId) => ({ user_id: userId.userId, application_id: userId.applicationId, party_id: userId.partyId, message_id: userId.messageId, channel_id: userId.channelId }));
-      const HTTP = v3(1270).HTTP;
-      const request = { url: constants.USER_ACTIVITY_SUBSCRIBE, body: { subscriptions: mapped }, retries: 1, rejectWithError: v3(1270).rejectWithMigratedError() };
+      const HTTP = v3(1271).HTTP;
+      const request = { url: constants.USER_ACTIVITY_SUBSCRIBE, body: { subscriptions: mapped }, retries: 1, rejectWithError: v3(1271).rejectWithMigratedError() };
       await HTTP.post(request);
       return arg1.body;
     })();

@@ -1,11 +1,11 @@
-// Module ID: 5965
-// Function ID: 5966
+// Module ID: 6103
+// Function ID: 6104
 // Dependencies: [2]
 
-// Module 5965
+// Module 6103
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CoinBagSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/837058105bb3d10b5f47e78fc608185c5f24e6db50c89867483de6de651d40ca.png";
-export const metadata = { fileBytes: 20758 };
+export default "https://cdn.discordapp.com/assets/content/2575a5620a38b6a6263b50c5d9c0468715b6d0bdff205f0d0ff785908589116f.png";
+export const metadata = { fileBytes: 20755 };

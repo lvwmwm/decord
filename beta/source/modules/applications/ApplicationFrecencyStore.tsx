@@ -1,15 +1,15 @@
-// Module ID: 9420
-// Function ID: 9421
+// Module ID: 9405
+// Function ID: 9406
 // Name: ApplicationFrecencyStore
-// Dependencies: [1956, 1219, 1348, 1084, 1894, 4673, 12, 504, 573, 2]
+// Dependencies: [2040, 1220, 1349, 1084, 1978, 4793, 12, 504, 573, 2]
 
-// Module 9420 (ApplicationFrecencyStore)
+// Module 9405 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4673 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import FrecencyDefault from "Frecency" /* 4793 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 function handleUserSettingsProtoStoreChange() {
   const applicationFrecency = UserSettingsProtoStore.frecencyWithoutFetchingLatest.applicationFrecency;
@@ -30,7 +30,7 @@ function handleUserSettingsProtoStoreChange() {
   }), global.pendingUsages);
 }
 const UserSettingsTypes = fn(1084).UserSettingsTypes;
-let items = [fn(1894).ApplicationCommandType.CHAT, fn(1894).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+let items = [fn(1978).ApplicationCommandType.CHAT, fn(1978).ApplicationCommandType.PRIMARY_ENTRY_POINT];
 let global = { pendingUsages: [] };
 let obj = {
   computeBonus() {
@@ -42,7 +42,7 @@ let obj = {
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1348).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1349).FREQUENCY_ITEM_LIMIT
 };
 let closure_7 = new FrecencyDefault({
   computeBonus() {
@@ -54,7 +54,7 @@ let closure_7 = new FrecencyDefault({
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1348).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1349).FREQUENCY_ITEM_LIMIT
 });
 const PersistedStore = initializeDefault.PersistedStore;
 class ApplicationFrecencyStore extends PersistedStore {

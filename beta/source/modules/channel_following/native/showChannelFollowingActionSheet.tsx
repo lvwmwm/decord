@@ -1,11 +1,11 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11588
+// Function ID: 11589
 // Name: showChannelFollowingActionSheet
-// Dependencies: [19, 21, 4603, 11463, 1896, 4981, 11470, 2]
+// Dependencies: [19, 21, 4723, 11589, 1980, 5109, 11596, 2]
 // Exports: showChannelFollowingActionSheet
 
-// Module 11462 (showChannelFollowingActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+// Module 11588 (showChannelFollowingActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
   _require = id;
   importDefault = guildId;
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(require("asyncRequireImpl")(11463, dependencyMap.paths), "NewChannelFollower." + id, {
+  obj.openLazy(require("asyncRequireImpl")(11589, dependencyMap.paths), "NewChannelFollower." + id, {
     sourceChannelId: id,
     sourceGuildId: guildId,
     targetChannelId,
@@ -58,7 +58,7 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
                   obj.openLazy(closure_2_0(closure_2_2[4])(closure_2_2[3], closure_2_2.paths), "NewChannelFollower." + closure_1_0, { sourceChannelId: closure_1_0, sourceGuildId: closure_1_1, targetChannelId, targetGuildId, reopenActionSheetWithTarget() { ... }, onSuccess() { ... }, onCancel() { ... } });
                 },
                 onSuccess() {
-                  closure_1(dependencyMap[5]).openLazy({ importer() { ... }, hideActionSheet: true });
+                  closure_1(dependencyMap[5]).openLazy({ importer() { ... }, hideActionSheet: true, isDismissable: false });
                 },
                 onCancel() {
                   return closure_1(dependencyMap[2]).hideActionSheet();
@@ -70,7 +70,8 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
                 importer() {
                   return closure_1_0(paths[4])(paths[6], paths.paths).then(() => { ... });
                 },
-                hideActionSheet: true
+                hideActionSheet: true,
+                isDismissable: false
               });
             },
             onCancel() {
@@ -86,7 +87,8 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
                 return () => { ... };
               });
             },
-            hideActionSheet: true
+            hideActionSheet: true,
+            isDismissable: false
           });
         },
         onCancel() {
@@ -105,7 +107,8 @@ export const showChannelFollowingActionSheet = function showChannelFollowingActi
             };
           });
         },
-        hideActionSheet: true
+        hideActionSheet: true,
+        isDismissable: false
       });
     },
     onCancel() {

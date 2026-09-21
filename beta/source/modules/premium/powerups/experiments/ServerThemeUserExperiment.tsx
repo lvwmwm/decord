@@ -1,11 +1,11 @@
-// Module ID: 4564
-// Function ID: 4565
+// Module ID: 4683
+// Function ID: 4684
 // Name: ServerThemeUserExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: getServerThemeUserEnabled, useServerThemeUserEnabled
 
-// Module 4564 (ServerThemeUserExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 4683 (ServerThemeUserExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-05-server-theme-user", defaultConfig: { enabled: false }, variations: null };

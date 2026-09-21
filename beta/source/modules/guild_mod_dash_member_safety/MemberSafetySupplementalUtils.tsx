@@ -1,15 +1,15 @@
-// Module ID: 7605
-// Function ID: 7606
+// Module ID: 7744
+// Function ID: 7745
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1074, 1114, 5364, 7606, 4571, 4488, 1270, 2]
+// Dependencies: [5, 1074, 1115, 5500, 7745, 4690, 4607, 1271, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 7605 (MemberSafetySupplementalUtils)
-import util from "util" /* 1114 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import shared from "shared" /* 4488 */;
-import PlatformsDefault from "Platforms" /* 5364 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7606 */;
+// Module 7744 (MemberSafetySupplementalUtils)
+import util from "util" /* 1115 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import shared from "shared" /* 4607 */;
+import PlatformsDefault from "Platforms" /* 5500 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7745 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

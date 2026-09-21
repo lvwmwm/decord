@@ -1,12 +1,12 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15189
+// Function ID: 15190
 // Name: useUserIsTeenAgeGroup
-// Dependencies: [7640, 504, 2]
+// Dependencies: [7779, 504, 2]
 // Exports: default
 
-// Module 15001 (useUserIsTeenAgeGroup)
+// Module 15189 (useUserIsTeenAgeGroup)
 import initialize from "initialize" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
 
 require = fn;
 const size = fn(2);

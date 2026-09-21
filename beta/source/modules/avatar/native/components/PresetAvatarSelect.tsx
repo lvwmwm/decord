@@ -1,23 +1,23 @@
-// Module ID: 17551
-// Function ID: 17552
+// Module ID: 17841
+// Function ID: 17842
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 17552, 17553, 17554, 17555, 17556, 17557, 17558, 17559, 1114, 4636, 576, 4632, 5204, 5668, 2]
+// Dependencies: [19, 17, 21, 17842, 17843, 17844, 17845, 17846, 17847, 17848, 17849, 1115, 4756, 576, 4752, 5339, 5804, 2]
 // Exports: default
 
-// Module 17551 (PresetAvatarSelect)
+// Module 17841 (PresetAvatarSelect)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Pressables from "Pressables" /* 5204 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 17552 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 17553 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 17554 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 17555 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 17556 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 17557 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 17558 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 17559 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Pressables from "Pressables" /* 5339 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 17842 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 17843 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 17844 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 17845 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 17846 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 17847 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 17848 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 17849 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ function DefaultAvatarButton(selected) {
   }
   const obj = { style: items, accessibilityRole: "button", accessibilityLabel, accessibilityState: { selected }, accessibilityHint: null, onPress: null, children: null };
   items[1] = prop;
-  const intl = tmp3(1114).intl;
+  const intl = tmp3(1115).intl;
   obj.accessibilityHint = intl.string(util.t.vw2RsD);
   obj.onPress = onSelect;
   obj.children = React4(FastImageDefault, { style: tmp.defaultAvatarButton, source: { uri: source } });
@@ -158,7 +158,7 @@ items1[7] = {
     return intl.string(util.t.zpfUeg);
   }
 };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj10 = { container: { display: "flex", alignItems: "center", flex: 1 }, buttonsContainer: { display: "flex", flexDirection: "row", marginTop: 20, justifyContent: "space-between" }, defaultAvatarButton: null, defaultAvatarContainer: null, defaultAvatarSelected: null };
 let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xl };
 obj10.defaultAvatarButton = size;

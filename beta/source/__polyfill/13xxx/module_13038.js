@@ -1,75 +1,164 @@
 // Module ID: 13038
 // Function ID: 13039
-// Dependencies: [12957, 12978, 13003]
-// Exports: getCurrentHub, getCurrentHubShim
+// Dependencies: [5, 41, 42, 93, 95, 98, 19, 17, 21, 4588]
 
 // Module 13038
-import _mod12957 from "module_12957" /* 12957 */;
-import _flush from "_flush" /* 12978 */;
-import _mod13003 from "module_13003" /* 13003 */;
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
-function getCurrentHubShim() {
-  return {
-    bindClient(arg0) {
-      const currentScope = _mod12957.getCurrentScope();
-      currentScope.setClient(arg0);
-    },
-    withScope: _mod12957.withScope,
-    getClient() {
-      return _mod12957.getClient();
-    },
-    getScope: _mod12957.getCurrentScope,
-    getIsolationScope: _mod12957.getIsolationScope,
-    captureException(arg0, arg1) {
-      const currentScope = _mod12957.getCurrentScope();
-      return currentScope.captureException(arg0, arg1);
-    },
-    captureMessage(arg0, arg1, arg2) {
-      const currentScope = _mod12957.getCurrentScope();
-      return currentScope.captureMessage(arg0, arg1, arg2);
-    },
-    captureEvent: _flush.captureEvent,
-    addBreadcrumb: _mod13003.addBreadcrumb,
-    setUser: _flush.setUser,
-    setTags: _flush.setTags,
-    setTag: _flush.setTag,
-    setExtra: _flush.setExtra,
-    setExtras: _flush.setExtras,
-    setContext: _flush.setContext,
-    getIntegration(id) {
-      const client = _mod12957.getClient();
-      let integrationByName = client;
-      if (client) {
-        integrationByName = client.getIntegrationByName(id.id);
-      }
-      if (!integrationByName) {
-        integrationByName = null;
-      }
-      return integrationByName;
-    },
-    startSession: _flush.startSession,
-    endSession: _flush.endSession,
-    captureSession(arg0) {
-      if (arg0) {
-        return tmp(tmp2[1]).endSession();
+const DeepLinking = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const Linking = fn(17).Linking;
+const jsx = fn(21).jsx;
+const re8 = /.*?:\/\//g;
+let closure_1;
+class DeepLinking {
+  constructor() {
+    self = this;
+    items = [...arguments];
+    closure_0 = undefined;
+    tmp = c2(this, DeepLinking);
+    items1 = [...items];
+    tmp2 = closure_4;
+    obj = closure_4(DeepLinking);
+    tmp3 = closure_3;
+    if (closure_7()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.handleChange = (url) => {
+      closure_0.push(url.url);
+    };
+    return tmp3Result;
+  }
+}
+_inherits(DeepLinking, noop.Component);
+const entry = {
+  key: "push",
+  value: function push(str) {
+    const history = this.history;
+    history.push(str.replace(re8, ""));
+  }
+};
+let items = [entry, , , ];
+const entry1 = { key: "componentDidMount", value: null };
+closure_1 = asyncGeneratorStep(async function() {
+  const self = this;
+  c4 = 0;
+  c5 = 0;
+  return (async (arg0, value) => {
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const currentScope = tmp(tmp2[0]).getCurrentScope();
-        const tmpResult3 = tmp(tmp2[0]);
-        const client = tmp(tmp2[0]).getClient();
-        const session = currentScope.getSession();
-        let tmp4 = client;
-        if (client) {
-          tmp4 = session;
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_3 = self;
+            closure_2 = self;
+            closure_1 = tmp2;
+            closure_129_0 = undefined;
+            c4 = 1;
+            c5 = 1;
+            const obj4 = { value: c5.getInitialURL(), done: false };
+            return obj4;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          closure_129_0 = value;
+          if (closure_129_0) {
+            closure_3.push(closure_129_0);
+          }
+          const listener = c5.addEventListener("url", closure_3.handleChange);
+          c5 = 3;
+          return { value: "HermesInternal", done: null };
         }
-        if (tmp4) {
-          client.captureSession(session);
-        }
+      } catch (tmp17) {
+        c5 = tmp;
+        throw tmp17;
       }
     }
-  };
-}
+  })();
+});
+entry1.value = function componentDidMount() {
+  const self = this;
+  const apply = closure_1.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+};
+items[1] = entry1;
+items[2] = {
+  key: "componentWillUnmount",
+  value: function componentWillUnmount() {
+    const removed = Linking.removeEventListener("url", this.handleChange);
+  }
+};
+items[3] = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    return jsx(DeepLinking(closure_1[9]).__HistoryContext.Consumer, {
+      children(history) {
+        self.history = history;
+        return self.props.children || null;
+      }
+    });
+  }
+};
 
-export const getCurrentHub = getCurrentHubShim;
-export { getCurrentHubShim };
+export default _createClass(DeepLinking, items);

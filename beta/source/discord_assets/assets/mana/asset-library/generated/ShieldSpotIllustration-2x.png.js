@@ -1,11 +1,11 @@
-// Module ID: 6555
-// Function ID: 6556
+// Module ID: 6695
+// Function ID: 6696
 // Dependencies: [2]
 
-// Module 6555
+// Module 6695
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShieldSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/826d70aefbabd9d4d36e03815ef8370a0b3d4e3419db48cc8e647230b51a7396.png";
-export const metadata = { fileBytes: 42812 };
+export default "https://cdn.discordapp.com/assets/content/bafea80356544f3487b6860a22117961caec774fae9310a3c4d79a730b2139c1.png";
+export const metadata = { fileBytes: 39719 };

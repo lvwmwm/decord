@@ -1,22 +1,30 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 8697
+// Function ID: 8698
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 17, 3, 560, 1363, 2]
+// Dependencies: [5, 3, 560, 4722, 1364, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8543 (AgeVerificationAuthSession)
+// Module 8697 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4722 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
+function release() {
+  if (_null != null) {
+    _null.remove();
+  }
+  _null = null;
+  closure_5.setState({ isOpen: false });
+}
 function discard() {
   if (_null != null) {
     _null.remove();
   }
   _null = null;
-  closure_6.setState({ isOpen: false });
-  c7 = false;
+  closure_5.setState({ isOpen: false });
+  c6 = false;
 }
 let closure_10 = async function _openAgeVerificationAuthSession(arg0, value) {
   if (c6 === 2) {
@@ -46,38 +54,33 @@ let closure_10 = async function _openAgeVerificationAuthSession(arg0, value) {
           closure_2 = tmp3;
           closure_1 = tmp7;
           closure_129_0 = undefined;
-          if (obj7.isIOS()) {
+          if (obj8.isIOS()) {
             (function subscribeToFinish() {
-              if (_null != null) {
-                _null.remove();
+              if (closure_7 != null) {
+                closure_7.remove();
               }
-              _null = new closure_1_3(closure_1_4).addListener("authSessionDidFinish", () => {
-                if (_null != null) {
-                  _null.remove();
-                }
-                _null = null;
-                state.setState({ isOpen: false });
-              });
+              closure_7 = closure_1_1(closure_1_2[3]).onAuthSessionDidFinish(closure_1_8);
             })();
             state.setState({ isOpen: true });
-            c7 = true;
+            c6 = true;
             c4 = 1;
             c5 = 2;
             c6 = 1;
-            const obj4 = { value: BrowserManager.openAuthSessionURL(tmp34, true), done: false };
-            return obj4;
+            const obj5 = { value: require("NativeBrowserManagerModuleIOS").openAuthSessionURL(tmp34, true), done: false };
+            return obj5;
           } else {
             c6 = 3;
             return { value: false, done: true };
           }
-          obj7 = PlatformUtils;
+          obj8 = PlatformUtils;
           tmp34 = closure_0;
+          tmp36 = dependencyMap;
         }
       } else if (1 === tmp7) {
         c4 = 0;
         closure_129_1 = closure_3;
-        const obj5 = { error: closure_129_1 };
-        closure_130_5.warn("Failed to open the verification auth session", obj5);
+        const obj6 = { error: closure_129_1 };
+        closure_130_4.warn("Failed to open the verification auth session", obj6);
         closure_130_9();
         c6 = 3;
         return { value: false, done: true };
@@ -87,8 +90,8 @@ let closure_10 = async function _openAgeVerificationAuthSession(arg0, value) {
       } else if (arg0 === 2) {
         c4 = 0;
         c6 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
+        const obj7 = { value, done: true };
+        return obj7;
       } else {
         closure_129_0 = value;
         if (!closure_129_0) {
@@ -110,14 +113,11 @@ let closure_10 = async function _openAgeVerificationAuthSession(arg0, value) {
     }
   }
 };
-get_ActivityIndicator = fn(17);
-const NativeEventEmitter = get_ActivityIndicator.NativeEventEmitter;
-const BrowserManager = get_ActivityIndicator.NativeModules.BrowserManager;
-let closure_5 = new LoggerDefault("AgeVerificationAuthSession");
+let closure_4 = new LoggerDefault("AgeVerificationAuthSession");
 const module_560 = fn(560);
-let closure_6 = module_560.create(() => ({ isOpen: false }));
-let c7 = false;
-let c8 = null;
+let closure_5 = module_560.create(() => ({ isOpen: false }));
+let c6 = false;
+let c7 = null;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationAuthSession.tsx");
 
@@ -136,18 +136,18 @@ export const closeAgeVerificationAuthSession = function closeAgeVerificationAuth
     _null.remove();
   }
   _null = null;
-  closure_6.setState({ isOpen: false });
-  c7 = false;
-  if (closure_6.getState().isOpen) {
-    BrowserManager.closeAuthSession();
+  closure_5.setState({ isOpen: false });
+  c6 = false;
+  if (closure_5.getState().isOpen) {
+    NativeBrowserManagerModuleIOSDefault.closeAuthSession();
   }
 };
 export function getIsAgeVerificationAuthSessionAwaitingResult() {
-  return c7;
+  return c6;
 }
 export const useIsAgeVerificationAuthSessionOpen = function useIsAgeVerificationAuthSessionOpen() {
-  return closure_6((isOpen) => isOpen.isOpen);
+  return closure_5((isOpen) => isOpen.isOpen);
 };
 export const getIsAgeVerificationAuthSessionOpen = function getIsAgeVerificationAuthSessionOpen() {
-  return closure_6.getState().isOpen;
+  return closure_5.getState().isOpen;
 };

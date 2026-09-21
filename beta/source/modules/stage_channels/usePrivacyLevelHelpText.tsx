@@ -1,20 +1,20 @@
-// Module ID: 9945
-// Function ID: 9946
+// Module ID: 10071
+// Function ID: 10072
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4275, 1074, 1963, 1085, 504, 4280, 1086, 1114, 2024, 2]
+// Dependencies: [4395, 1074, 2047, 1085, 504, 4400, 1086, 1115, 2108, 2]
 // Exports: default
 
-// Module 9945 (usePrivacyLevelHelpText)
+// Module 10071 (usePrivacyLevelHelpText)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const constants = fn(1963).GuildScheduledEventPrivacyLevel;
+const constants = fn(2047).GuildScheduledEventPrivacyLevel;
 const Permissions = fn(1085).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/usePrivacyLevelHelpText.tsx");
@@ -31,24 +31,24 @@ export default function useStagePrivacyLevelSettings(channel, privacy_level, arg
     privacy_level = privacy_level.privacy_level;
   }
   if (privacy_level === constants.PUBLIC) {
-    const intl4 = tmp(1114).intl;
-    let stringResult = intl4.string(tmp(1114).t.GFq5Rg);
+    const intl4 = tmp(1115).intl;
+    let stringResult = intl4.string(tmp(1115).t.GFq5Rg);
   } else if (stateFromStores) {
     if (canEveryoneRoleResult) {
       let formatResult = null;
       if (arg2 === tmp6.PUBLIC) {
-        const intl3 = tmp(1114).intl;
+        const intl3 = tmp(1115).intl;
         const obj4 = { articleURL: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES) };
-        formatResult = intl3.format(tmp(1114).t["ew/Jq4"], obj4);
+        formatResult = intl3.format(tmp(1115).t["ew/Jq4"], obj4);
       }
       let stringResult1 = formatResult;
     } else {
-      const intl2 = tmp(1114).intl;
-      stringResult1 = intl2.string(tmp(1114).t.E5T7a3);
+      const intl2 = tmp(1115).intl;
+      stringResult1 = intl2.string(tmp(1115).t.E5T7a3);
     }
   } else {
-    const intl = tmp(1114).intl;
-    stringResult = intl.string(tmp(1114).t.BOjr7t);
+    const intl = tmp(1115).intl;
+    stringResult = intl.string(tmp(1115).t.BOjr7t);
   }
   const obj6 = { helpText: stringResult, guildOnlyDisabled: null, publicDisabled: null };
   let privacy_level1;

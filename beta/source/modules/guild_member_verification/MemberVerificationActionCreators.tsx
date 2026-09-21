@@ -1,19 +1,19 @@
-// Module ID: 5628
-// Function ID: 5629
+// Module ID: 5764
+// Function ID: 5765
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 2014, 2021, 4620, 1371, 1074, 1270, 4621, 573, 5629, 5633, 4461, 5634, 4980, 1114, 4537, 1240, 2]
+// Dependencies: [5, 2098, 2105, 4740, 1372, 1074, 1271, 4741, 573, 5765, 5769, 4580, 5770, 5108, 1115, 4656, 1241, 2]
 // Exports: showCoachmark
 
-// Module 5628 (MemberVerificationActionCreators)
+// Module 5764 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4621 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4741 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2014 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import InviteStore from "InviteStore" /* 4620 */;
-import UserStore from "UserStore" /* 1371 */;
+import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import InviteStore from "InviteStore" /* 4740 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let closure_10 = async function _fetchVerificationForm() {

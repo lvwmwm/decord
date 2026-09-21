@@ -1,13 +1,13 @@
-// Module ID: 5042
-// Function ID: 5043
+// Module ID: 5170
+// Function ID: 5171
 // Name: AccessibilityFocusLockManager
-// Dependencies: [3, 1898, 5043, 4984, 2]
+// Dependencies: [3, 1982, 5171, 5112, 2]
 
-// Module 5042 (AccessibilityFocusLockManager)
+// Module 5170 (AccessibilityFocusLockManager)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 4984 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5043 */;
-import LifecycleManager from "LifecycleManager" /* 1898 */;
+import NativeDeviceAccessibilityModuleDefault from "NativeDeviceAccessibilityModule" /* 5112 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5171 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 require = fn;
 const logger = new LoggerDefault("AccessibilityFocusLockManager");
@@ -50,9 +50,9 @@ prototype["_updateAccessibilityFocusLock"] = function _updateAccessibilityFocusL
     }
   }
   if (self._focusLockEnabled) {
-    item10014(4984).disableFocusLock();
+    item10014(5112).disableFocusLock();
     self._focusLockEnabled = false;
-    const obj = item10014(4984);
+    const obj = item10014(5112);
   }
 };
 prototype["_initialize"] = function _initialize() {

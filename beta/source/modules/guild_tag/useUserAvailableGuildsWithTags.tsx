@@ -1,13 +1,13 @@
-// Module ID: 14729
-// Function ID: 14730
+// Module ID: 14917
+// Function ID: 14918
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [2021, 1979, 504, 8282, 2]
+// Dependencies: [2105, 2063, 504, 8434, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 14729 (useUserAvailableGuildsWithTags)
+// Module 14917 (useUserAvailableGuildsWithTags)
 import initialize from "initialize" /* 504 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 const size = fn(2);

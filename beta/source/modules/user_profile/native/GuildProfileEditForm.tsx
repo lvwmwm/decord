@@ -1,24 +1,24 @@
-// Module ID: 14739
-// Function ID: 14740
+// Module ID: 14927
+// Function ID: 14928
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2021, 7723, 7311, 1074, 1373, 21, 4294, 7265, 7285, 14679, 4603, 14680, 1896, 8283, 1114, 8281, 9443, 8357, 14691, 8279, 6726, 7084, 576, 11284, 14734, 504, 8303, 11248, 8358, 8286, 14049, 14740, 8343, 8354, 4632, 4347, 14741, 11249, 11250, 11290, 14701, 4481, 14702, 14711, 14713, 14714, 14718, 14722, 14710, 9522, 9492, 2]
+// Dependencies: [109, 19, 17, 2105, 7857, 7453, 1074, 1374, 21, 4414, 7407, 7427, 14867, 4723, 14868, 1980, 8435, 1115, 8433, 9427, 8510, 14879, 8431, 6867, 7226, 576, 11413, 14922, 504, 8455, 9630, 8511, 8438, 14230, 14928, 8496, 8507, 4752, 4466, 14929, 11378, 11379, 11419, 14889, 4600, 14890, 14899, 14901, 14902, 14906, 14910, 14898, 9506, 9476, 2]
 // Exports: default
 
-// Module 14739 (GuildProfileEditForm)
-import util from "util" /* 1114 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8281 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8283 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9492 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9522 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14679 */;
+// Module 14927 (GuildProfileEditForm)
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8433 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8435 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9476 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14867 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import UserProfileStore from "UserProfileStore" /* 7723 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import UserProfileStore from "UserProfileStore" /* 7857 */;
 
 require = fn;
 function EditGuildProfileBanner(user) {
@@ -37,14 +37,14 @@ function EditGuildProfileBanner(user) {
   obj3.onPressEdit = function onPressEdit() {
     if (c4) {
       const obj = { user, analyticsLocations, showRemoveBanner: null, removeText: null, onBannerChange: null };
-      const tmpResult = tmp(4603);
-      const tmp13 = asyncRequireImpl(14680, dependencyMap.paths);
+      const tmpResult = tmp(4723);
+      const tmp13 = asyncRequireImpl(14868, dependencyMap.paths);
       banner = undefined;
       if (banner != null) {
         banner = banner.banner;
       }
       obj.showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner(pendingBanner, banner);
-      const intl = tmp9(1114).intl;
+      const intl = tmp9(1115).intl;
       obj.removeText = intl.string(util.t.jHlJNS);
       obj.onBannerChange = function onBannerChange(banner) {
         return user(banner[18]).setPendingChanges({ guildId, banner });
@@ -57,24 +57,24 @@ function EditGuildProfileBanner(user) {
       obj2.analyticsLocations = analyticsLocations;
       const obj4 = { type: PremiumUpsellTypes.PREMIUM_GUILD_IDENTITY_MODAL };
       obj2.analyticsProperties = obj4;
-      const result = tmp(9443).handleShowUpsellAlert(obj2);
-      const tmpResult2 = tmp(9443);
+      const result = tmp(9427).handleShowUpsellAlert(obj2);
+      const tmpResult2 = tmp(9427);
     }
   };
-  let intl = tmp5(1114).intl;
-  obj3.editButtonAccessibilityLabel = intl.string(user(1114).t["95hPAe"]);
+  let intl = tmp5(1115).intl;
+  obj3.editButtonAccessibilityLabel = intl.string(user(1115).t["95hPAe"]);
   obj3.editDisabled = disabled;
   obj2.children = closure_17(UserProfileEditBannerButtonDefault, obj3);
-  return closure_17(user(7265).AnalyticsLocationProvider, obj2);
+  return closure_17(user(7407).AnalyticsLocationProvider, obj2);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 get_ActivityIndicator = fn(17);
 ({ ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const FLOATING_UPSELL_HEIGHT = fn(7311).FLOATING_UPSELL_HEIGHT;
+const FLOATING_UPSELL_HEIGHT = fn(7453).FLOATING_UPSELL_HEIGHT;
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_11, AnalyticsSections } = Constants);
 ({ DISPLAY_NAME_MAX_LENGTH: map1, PRONOUNS_MAX_LENGTH: closure_14, UpsellTypes: closure_15, AnalyticsPages } = Constants);
-const PremiumUpsellTypes = fn(1373).PremiumUpsellTypes;
+const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
 let closure_19 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
@@ -331,7 +331,7 @@ export default function GuildProfileEditForm(currentUser) {
         }
       }
       const items12 = [tmp45, , , , , , , , , ];
-      const obj30 = { inputRef: ref1, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, isDisabled: null };
+      const obj30 = { inputRef: ref1, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, disabled: null };
       const intl2 = tmp5(tmp2[17]).intl;
       obj30.label = intl2.string(tmp5(tmp2[17]).t.me1lRk);
       obj30.errorMessage = first;
@@ -350,7 +350,7 @@ export default function GuildProfileEditForm(currentUser) {
       if (canEditNickname) {
         tmp51 = isDisabled;
       }
-      obj30.isDisabled = tmp51;
+      obj30.disabled = tmp51;
       items12[1] = tmp58(tmpResult14, obj30);
       let tmp58Result6 = result;
       if (result) {
@@ -358,7 +358,7 @@ export default function GuildProfileEditForm(currentUser) {
         tmp58Result6 = tmp58(tmp(tmp2[45]), obj31);
       }
       items12[2] = tmp58Result6;
-      const obj32 = { inputRef: ref2, label: null, errorMessage: null, description: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, spellCheck: false, autoCorrect: false, isDisabled: null };
+      const obj32 = { inputRef: ref2, label: null, errorMessage: null, description: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, spellCheck: false, autoCorrect: false, disabled: null };
       const tmpResult15 = tmp(tmp2[44]);
       const intl3 = tmp5(tmp2[17]).intl;
       obj32.label = intl3.string(tmp5(tmp2[17]).t["+T3RI/"]);
@@ -372,11 +372,11 @@ export default function GuildProfileEditForm(currentUser) {
       };
       obj32.placeholder = str3;
       obj32.maxLength = maxLength2;
-      obj32.isDisabled = isDisabled;
+      obj32.disabled = isDisabled;
       items12[3] = tmp58(tmp(tmp2[43]), obj32);
       let tmp58Result7 = null;
       if (result) {
-        const obj33 = { inputRef: ref3, label: null, errorMessage: null, description: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, numberOfLines: 5, isDisabled: null };
+        const obj33 = { inputRef: ref3, label: null, errorMessage: null, description: null, value: null, onFocus: null, onChange: null, placeholder: null, maxLength: null, numberOfLines: 5, disabled: null };
         const intl5 = tmp5(tmp2[17]).intl;
         obj33.label = intl5.string(tmp5(tmp2[17]).t.ZzAR2Y);
         obj33.errorMessage = first2;
@@ -392,7 +392,7 @@ export default function GuildProfileEditForm(currentUser) {
         };
         obj33.placeholder = str5;
         obj33.maxLength = bioMaxLength;
-        obj33.isDisabled = isDisabled;
+        obj33.disabled = isDisabled;
         tmp58Result7 = tmp58(tmp(tmp2[43]), obj33);
         const tmpResult17 = tmp(tmp2[43]);
       }

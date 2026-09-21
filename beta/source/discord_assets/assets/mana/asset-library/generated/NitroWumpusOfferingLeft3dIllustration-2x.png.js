@@ -1,11 +1,11 @@
-// Module ID: 6423
-// Function ID: 6424
+// Module ID: 6563
+// Function ID: 6564
 // Dependencies: [2]
 
-// Module 6423
+// Module 6563
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusOfferingLeft3dIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/0d8192495ed73de2381103f061bb6a13f481d93f60e26090c2776f6329bd1bc3.png";
-export const metadata = { fileBytes: 156350 };
+export default "https://cdn.discordapp.com/assets/content/5c0ab98610e9aa5f1564d303516953a1a18c39231c6349f350ac1310f4d1e51b.png";
+export const metadata = { fileBytes: 168977 };

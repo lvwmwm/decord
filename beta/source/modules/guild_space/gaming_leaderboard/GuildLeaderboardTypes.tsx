@@ -1,10 +1,10 @@
-// Module ID: 4264
-// Function ID: 4265
+// Module ID: 4384
+// Function ID: 4385
 // Name: GuildLeaderboardTypes
 // Dependencies: [2]
 // Exports: parseServerMemberGamingLeaderboardData
 
-// Module 4264 (GuildLeaderboardTypes)
+// Module 4384 (GuildLeaderboardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/GuildLeaderboardTypes.tsx");

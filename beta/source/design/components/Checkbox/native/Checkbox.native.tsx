@@ -1,17 +1,17 @@
-// Module ID: 9559
-// Function ID: 9560
+// Module ID: 9543
+// Function ID: 9544
 // Name: Checkbox
-// Dependencies: [17, 21, 4636, 4355, 1114, 5054, 5698, 4632, 2]
+// Dependencies: [17, 21, 4756, 4474, 1115, 5184, 5834, 4752, 2]
 // Exports: Checkbox
 
-// Module 9559 (Checkbox)
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import FormCheckbox from "FormCheckbox" /* 5698 */;
+// Module 9543 (Checkbox)
+import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import FormCheckbox from "FormCheckbox" /* 5834 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4756 */;
 import size from "module_2" /* 2 */;
 
 ({ Pressable: c2, View: c3 } = get_ActivityIndicator);
@@ -28,9 +28,9 @@ export const Checkbox = function Checkbox(onToggle) {
   let str = "";
   let str2 = "";
   if (required) {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     const _HermesInternal = HermesInternal;
-    str2 = " (" + intl.string(tmp2(1114).t.EkokLy) + ")";
+    str2 = " (" + intl.string(tmp2(1115).t.EkokLy) + ")";
   }
   const sum = label + str2;
   if (null != description) {
@@ -48,10 +48,10 @@ export const Checkbox = function Checkbox(onToggle) {
   const items1 = [label, ];
   if (required) {
     const obj5 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": null, children: null };
-    const intl2 = tmp2(1114).intl;
-    obj5["aria-label"] = intl2.string(tmp2(1114).t.EkokLy);
+    const intl2 = tmp2(1115).intl;
+    obj5["aria-label"] = intl2.string(tmp2(1115).t.EkokLy);
     obj5.children = [" ", "*"];
-    required = tmp10(tmp2(4632).Text, obj5);
+    required = tmp10(tmp2(4752).Text, obj5);
   }
   items1[1] = required;
   obj4.children = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", children: items1 });
@@ -59,7 +59,7 @@ export const Checkbox = function Checkbox(onToggle) {
   let tmp5Result = null != description;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(4632).Text, obj6);
+    tmp5Result = tmp5(tmp2(4752).Text, obj6);
   }
   const obj7 = { direction: "horizontal", children: null };
   items2[1] = tmp5Result;

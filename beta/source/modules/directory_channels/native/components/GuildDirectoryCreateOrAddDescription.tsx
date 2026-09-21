@@ -1,11 +1,11 @@
-// Module ID: 12452
-// Function ID: 12453
+// Module ID: 12573
+// Function ID: 12574
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4636, 12453, 1971, 12454, 12441, 12442, 4632, 1114, 12450, 2]
+// Dependencies: [5, 19, 17, 21, 4756, 12574, 2055, 12575, 12562, 12563, 4752, 1115, 12571, 2]
 // Exports: default
 
-// Module 12452 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12450 */;
+// Module 12573 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 12571 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_8 = createStyles.createStyles({ container: { flex: 1 }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, header: { alignItems: "center", justifyContent: "center", padding: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAddDescription.tsx");
@@ -105,13 +105,13 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   let obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: null };
   let obj3 = { style: tmp.header, children: null };
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = directoryChannelId(1114).intl;
-  obj4.children = intl.string(directoryChannelId(1114).t["5bQcoa"]);
-  const items = [closure_6(directoryChannelId(4632).Text, obj4), ];
+  const intl = directoryChannelId(1115).intl;
+  obj4.children = intl.string(directoryChannelId(1115).t["5bQcoa"]);
+  const items = [closure_6(directoryChannelId(4752).Text, obj4), ];
   let obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = directoryChannelId(1114).intl;
-  obj5.children = intl2.string(directoryChannelId(1114).t.Ie60Wc);
-  items[1] = closure_6(directoryChannelId(4632).Text, obj5);
+  const intl2 = directoryChannelId(1115).intl;
+  obj5.children = intl2.string(directoryChannelId(1115).t.Ie60Wc);
+  items[1] = closure_6(directoryChannelId(4752).Text, obj5);
   obj3.children = items;
   const items1 = [closure_7(closure_4, obj3), ];
   let obj6 = {
@@ -128,11 +128,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
     buttonLabel: null,
     directoryChannelId: null
   };
-  const intl3 = directoryChannelId(1114).intl;
-  obj6.buttonLabel = intl3.string(directoryChannelId(1114).t.H9jxS1);
+  const intl3 = directoryChannelId(1115).intl;
+  obj6.buttonLabel = intl3.string(directoryChannelId(1115).t.H9jxS1);
   obj6.directoryChannelId = directoryChannelId;
   items1[1] = closure_6(GuildDirectoryEditDescriptionTemplateDefault, obj6);
   obj2.children = items1;
   obj.children = closure_7(closure_5, obj2);
-  return closure_6(directoryChannelId(12442).GuildDirectoryAddModalScreen, obj);
+  return closure_6(directoryChannelId(12563).GuildDirectoryAddModalScreen, obj);
 };

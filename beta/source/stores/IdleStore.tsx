@@ -1,17 +1,17 @@
-// Module ID: 5491
-// Function ID: 5492
+// Module ID: 5627
+// Function ID: 5628
 // Name: IdleStore
-// Dependencies: [502, 1074, 4661, 1363, 1935, 1090, 573, 4257, 5492, 551, 504, 2]
+// Dependencies: [502, 1074, 4781, 1364, 2019, 1091, 573, 4377, 5628, 551, 504, 2]
 
-// Module 5491 (IdleStore)
+// Module 5627 (IdleStore)
 import initializeDefault from "initialize" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import DiscordNativeDefault from "DiscordNative" /* 4257 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5492 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import DiscordNativeDefault from "DiscordNative" /* 4377 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -43,9 +43,9 @@ function checkIdleAFK() {
             tmp17 = c12;
           }
           if (!tmp17) {
-            const tmp14Result = tmp14(1363);
-            tmp17 = tmp14(1363).isAndroid() && closure_13;
-            const tmp18 = tmp14(1363).isAndroid() && closure_13;
+            const tmp14Result = tmp14(1364);
+            tmp17 = tmp14(1364).isAndroid() && closure_13;
+            const tmp18 = tmp14(1364).isAndroid() && closure_13;
           }
           if (!tmp17) {
             if (afk) {
@@ -69,14 +69,14 @@ function checkIdleAFK() {
 }
 const Constants = fn(1074);
 ({ IDLE_DURATION: hasOwnProperty, AppStates: metroRequire } = Constants);
-const SpeakingFlags = fn(4661).SpeakingFlags;
+const SpeakingFlags = fn(4781).SpeakingFlags;
 const idleSince = Date.now();
 let idle = false;
 let afk = false;
 let c11 = false;
 let c12 = false;
 let closure_13 = false;
-if (fn(1363).isPlatformEmbedded) {
+if (fn(1364).isPlatformEmbedded) {
   const importDefaultResult = DiscordNativeDefault;
   let powerMonitor1;
   if (importDefaultResult != null) {
@@ -93,7 +93,7 @@ if (fn(1363).isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4257).powerMonitor;
+        const powerMonitor2 = tmp(4377).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(result) {
@@ -124,7 +124,7 @@ if (fn(1363).isPlatformEmbedded) {
           }
           checkIdleAFK();
           const _setTimeout = setTimeout;
-          let timerId = setTimeout(checkNativeIdle, 10 * tmp(1090).Millis.SECOND);
+          let timerId = setTimeout(checkNativeIdle, 10 * tmp(1091).Millis.SECOND);
         }
       }
     }

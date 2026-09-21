@@ -1,12 +1,12 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12373
+// Function ID: 12374
 // Name: AppLauncherLastUsedCommandStore
-// Dependencies: [1090, 504, 573, 2]
+// Dependencies: [1091, 504, 573, 2]
 
-// Module 12253 (AppLauncherLastUsedCommandStore)
+// Module 12373 (AppLauncherLastUsedCommandStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
+import DurationsDefault from "Durations" /* 1091 */;
 
 let closure_0 = 10 * DurationsDefault.Millis.MINUTE;
 const lastUsedTimeMs = { lastUsedCommandId: null, lastUsedTimeMs: null };

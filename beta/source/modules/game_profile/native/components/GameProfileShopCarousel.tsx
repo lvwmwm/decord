@@ -1,18 +1,18 @@
-// Module ID: 8889
-// Function ID: 8890
+// Module ID: 9043
+// Function ID: 9044
 // Name: GameProfileShopCarousel
-// Dependencies: [19, 17, 21, 4636, 576, 8890, 8859, 8877, 8997, 8998, 8809, 7644, 7285, 1114, 9003, 8845, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9044, 9012, 9031, 9151, 9152, 8957, 7783, 7427, 1115, 8997, 8998, 2]
 // Exports: default
 
-// Module 8889 (GameProfileShopCarousel)
+// Module 9043 (GameProfileShopCarousel)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7644 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
-import GameProfileSection from "GameProfileSection" /* 8859 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 8877 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8890 */;
-import SkeletonCardDefault from "SkeletonCard" /* 8997 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7783 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
+import GameProfileSection from "GameProfileSection" /* 9012 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9031 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9044 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9151 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ function GameProfileShopCarouselContent(trackAction) {
   trackAction = trackAction.trackAction;
   const tmp = closure_6();
   dependencyMap = tmp;
-  const gameProfileShopCollectionProducts = closeModal(8998).useGameProfileShopCollectionProducts(collectionId);
+  const gameProfileShopCollectionProducts = closeModal(9152).useGameProfileShopCollectionProducts(collectionId);
   const products = gameProfileShopCollectionProducts.products;
   let items = [trackAction, closeModal];
   if (gameProfileShopCollectionProducts.isLoading) {
@@ -34,12 +34,12 @@ function GameProfileShopCarouselContent(trackAction) {
     if (0 !== products.length) {
       const obj3 = { style: null, headerStyle: null, title: null, onPressViewAll: null, children: null };
       ({ container: obj2.style, header: obj2.headerStyle } = tmp);
-      const intl = tmp2(1114).intl;
-      obj3.title = intl.string(tmp2(1114).t["5DYPT8"]);
+      const intl = tmp2(1115).intl;
+      obj3.title = intl.string(tmp2(1115).t["5DYPT8"]);
       obj3.onPressViewAll = tmp5;
       const obj5 = {
         horizontal: true,
-        renderScrollComponent: trackAction(8845),
+        renderScrollComponent: trackAction(8998),
         data: products,
         renderItem(item) {
               item = item.item;
@@ -66,11 +66,11 @@ function GameProfileShopCarouselContent(trackAction) {
         ListHeaderComponent: HorizontalSpacing,
         ListFooterComponent: HorizontalSpacing,
         decelerationRate: "fast",
-        snapToInterval: tmp2(8890).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(8890).COLLECTIBLES_SHOP_CARD_GAP
+        snapToInterval: tmp2(9044).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(9044).COLLECTIBLES_SHOP_CARD_GAP
       };
-      obj3.children = jsx(tmp2(9003).FlashList, {
+      obj3.children = jsx(tmp2(8997).FlashList, {
         horizontal: true,
-        renderScrollComponent: trackAction(8845),
+        renderScrollComponent: trackAction(8998),
         data: products,
         renderItem(item) {
               item = item.item;
@@ -97,26 +97,26 @@ function GameProfileShopCarouselContent(trackAction) {
         ListHeaderComponent: HorizontalSpacing,
         ListFooterComponent: HorizontalSpacing,
         decelerationRate: "fast",
-        snapToInterval: tmp2(8890).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(8890).COLLECTIBLES_SHOP_CARD_GAP
+        snapToInterval: tmp2(9044).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(9044).COLLECTIBLES_SHOP_CARD_GAP
       }, collectionId);
-      tmp6 = jsx(trackAction(8859), { style: null, headerStyle: null, title: null, onPressViewAll: null, children: null });
-      const tmp11 = trackAction(8859);
+      tmp6 = jsx(trackAction(9012), { style: null, headerStyle: null, title: null, onPressViewAll: null, children: null });
+      const tmp11 = trackAction(9012);
     }
   }
   return tmp6;
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 }, header: null, card: null, skeletonCards: null, horizontalSpacing: null };
 let obj3 = { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 };
 obj.header = { paddingHorizontal: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16 };
 const obj4 = { paddingHorizontal: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16 };
 obj.card = { borderRadius: nativeDefault.radii.lg };
 let obj5 = { borderRadius: nativeDefault.radii.lg };
-obj.skeletonCards = { paddingHorizontal: fn(8890).COLLECTIBLES_SHOP_CARD_GAP };
-const obj6 = { paddingHorizontal: fn(8890).COLLECTIBLES_SHOP_CARD_GAP };
-obj.horizontalSpacing = { width: fn(8890).COLLECTIBLES_SHOP_CARD_GAP };
+obj.skeletonCards = { paddingHorizontal: fn(9044).COLLECTIBLES_SHOP_CARD_GAP };
+const obj6 = { paddingHorizontal: fn(9044).COLLECTIBLES_SHOP_CARD_GAP };
+obj.horizontalSpacing = { width: fn(9044).COLLECTIBLES_SHOP_CARD_GAP };
 let closure_6 = createStyles.createStyles(obj);
 let closure_7 = noop.memo(() => {
   const tmp = closure_6();

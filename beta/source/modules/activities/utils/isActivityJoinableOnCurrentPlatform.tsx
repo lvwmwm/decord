@@ -1,12 +1,12 @@
-// Module ID: 13169
-// Function ID: 13170
+// Module ID: 13328
+// Function ID: 13329
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [1074, 1364, 1608, 7416, 2]
+// Dependencies: [1074, 1365, 1609, 7555, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 13169 (isActivityJoinableOnCurrentPlatform)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1364 */;
-import hasFlagDefault from "hasFlag" /* 7416 */;
+// Module 13328 (isActivityJoinableOnCurrentPlatform)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import hasFlagDefault from "hasFlag" /* 7555 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -37,9 +37,9 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
           DESKTOP = tmp8.DESKTOP;
           tmp9 = tmp8;
         }
-        tmp6Result2 = tmp6(1364);
+        tmp6Result2 = tmp6(1365);
       }
-      tmp6Result = tmp6(1608);
+      tmp6Result = tmp6(1609);
     }
     let platform;
     if (type != null) {
@@ -73,10 +73,10 @@ export const getCurrentActivityGamePlatform = function getCurrentActivityGamePla
     if (tmpResult.isMetaQuest()) {
       META_QUEST = constants2.META_QUEST;
     } else {
-      META_QUEST = tmp(1364).isAndroid() ? tmp3.ANDROID : tmp3.DESKTOP;
-      const tmpResult2 = tmp(1364);
+      META_QUEST = tmp(1365).isAndroid() ? tmp3.ANDROID : tmp3.DESKTOP;
+      const tmpResult2 = tmp(1365);
     }
-    tmpResult = tmp(1608);
+    tmpResult = tmp(1609);
   }
   return META_QUEST;
 };

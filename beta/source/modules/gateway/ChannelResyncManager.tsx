@@ -1,21 +1,21 @@
-// Module ID: 17444
-// Function ID: 17445
+// Module ID: 17751
+// Function ID: 17752
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 1957, 4978, 1979, 5358, 1074, 1964, 3, 1090, 7221, 1240, 573, 7754, 13758, 1384, 1254, 2]
+// Dependencies: [5, 502, 2041, 5106, 2063, 5494, 1074, 2048, 3, 1091, 7363, 1241, 573, 7888, 13933, 1385, 1255, 2]
 
-// Module 17444 (ChannelResyncManager)
+// Module 17751 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import FlagUtils from "FlagUtils" /* 1384 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7754 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7888 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 4978 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5106 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 function handleGuildCreate(guild) {
@@ -328,7 +328,7 @@ let closure_30 = async function _scheduleGuildResyncs(arg0, value) {
                   }
                   if (null == guild.getGuild(tmp6)) {
                     const obj3 = { guild_id: tmp6, request_id: str, failure_reason: "guild_not_found" };
-                    closure_2_1(1240).track(constants.GUILD_CHANNEL_RESYNC_FAILED, obj3);
+                    closure_2_1(1241).track(constants.GUILD_CHANNEL_RESYNC_FAILED, obj3);
                     if (null != dependencyMap2[tmp6]) {
                       let _clearTimeout2 = clearTimeout;
                       clearTimeout(tmp31[tmp6]);
@@ -339,7 +339,7 @@ let closure_30 = async function _scheduleGuildResyncs(arg0, value) {
                       clearTimeout(tmp5[tmp6]);
                       delete tmp3[tmp2];
                     }
-                    const obj5 = closure_2_1(1240);
+                    const obj5 = closure_2_1(1241);
                   } else {
                     const items = [];
                     mutableGuildChannelsForGuild = mutableGuildChannelsForGuild.getMutableGuildChannelsForGuild(tmp6);
@@ -349,7 +349,7 @@ let closure_30 = async function _scheduleGuildResyncs(arg0, value) {
                     if (keys !== undefined) {
                       num = num2;
                       while (keys[tmp] !== undefined) {
-                        let obj7 = closure_2_0(1384);
+                        let obj7 = closure_2_0(1385);
                         if (obj7.hasFlag(mutableGuildChannelsForGuild[tmp13].flags, constants2.OBFUSCATED)) {
                           let arr = items.push(tmp13);
                         }
@@ -358,7 +358,7 @@ let closure_30 = async function _scheduleGuildResyncs(arg0, value) {
                       }
                     }
                     const obj4 = { guild_id: tmp6, request_id: str, num_obfuscated_channels: items.length, num_total_channels: num };
-                    closure_2_1(1240).track(constants.GUILD_CHANNEL_RESYNC_EXECUTED, obj4);
+                    closure_2_1(1241).track(constants.GUILD_CHANNEL_RESYNC_EXECUTED, obj4);
                     socket = socket.getSocket();
                     const result = socket.triggerGuildChannelResync(tmp6, items);
                     const guild_id = tmp6;
@@ -382,7 +382,7 @@ let closure_30 = async function _scheduleGuildResyncs(arg0, value) {
                       }
                     }, closure_2_15);
                     closure_2_32(tmp6);
-                    const obj2 = closure_2_1(1240);
+                    const obj2 = closure_2_1(1241);
                   }
                 }
               }, Math.ceil(Math.random() * closure_2_12));
@@ -509,7 +509,7 @@ function scheduleIntegrityCheck(guild_id) {
   }
 }
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ChannelFlags = fn(1964).ChannelFlags;
+const ChannelFlags = fn(2048).ChannelFlags;
 let closure_11 = new LoggerDefault("ChannelResyncManager");
 let closure_12 = 2 * DurationsDefault.Millis.SECOND;
 let closure_13 = 30 * DurationsDefault.Millis.SECOND;

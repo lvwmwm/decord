@@ -1,16 +1,31 @@
 // Module ID: 4192
 // Function ID: 4193
-// Dependencies: [2030]
+// Dependencies: [4193, 3846]
+// Exports: default
 
 // Module 4192
-import module_2030 from "module_2030" /* 2030 */;
+import module_4193_mod from "module_4193" /* 4193 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
-if (!module_2030) {
-  const obj2 = { default: module_2030 };
-  let obj = obj2;
+let module_4193 = module_4193_mod;
+if (!module_4193) {
+  const obj = { default: module_4193 };
+  let tmp3 = obj;
 } else {
-  obj = module_2030;
+  tmp3 = module_4193;
 }
+module_4193 = tmp3;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
 
-export default { date: obj.default({ formats: { full: "EEEE, do MMMM, y", long: "do MMMM, y", medium: "d MMM, y", short: "dd/MM/yyyy" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "h:mm:ss a zzzz", long: "h:mm:ss a z", medium: "h:mm:ss a", short: "h:mm a" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} '\u0915\u094B' {{time}}", long: "{{date}} '\u0915\u094B' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
+export default function isSameISOWeek(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  return module_4193.default(arg0, arg1, { weekStartsOn: 1 });
+};
 export default exports.default;

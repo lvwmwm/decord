@@ -1,31 +1,9 @@
 // Module ID: 3834
 // Function ID: 3835
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3834
-let closure_0 = {
-  lastWeek(getUTCDay) {
-    const uTCDay = getUTCDay.getUTCDay();
-    if (0 === uTCDay) {
-      let str = "\u00FAltimo";
-    } else {
-      str = "\u00FAltima";
-    }
-    return "'" + str + "' eeee '\u00E0s' p";
-  },
-  yesterday: "'ontem \u00E0s' p",
-  today: "'hoje \u00E0s' p",
-  tomorrow: "'amanh\u00E3 \u00E0s' p",
-  nextWeek: "eeee '\u00E0s' p",
-  other: "P"
-};
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  let tmpResult = tmp;
-  if (typeof closure_0[arg0] === "function") {
-    tmpResult = tmp(arg1);
-  }
-  return tmpResult;
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "9b0a10bf48638ee8431013b2a1a635d9", name: "tr.messages.9b0a10bf48638ee8431013b2a1a635d9.compiled.messages", type: "jsona" });

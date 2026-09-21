@@ -1,19 +1,19 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11826
+// Function ID: 11827
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 5489, 21, 4636, 576, 1114, 11709, 11710, 12, 1880, 4632, 1176, 5488, 2]
+// Dependencies: [19, 17, 5625, 21, 4756, 576, 1115, 11827, 11828, 12, 1881, 4752, 1177, 5624, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11708 (ConnectionMetadataVanityItems)
+// Module 11826 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import NumberUtils from "NumberUtils" /* 1880 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5488 */;
-import _modDef11709 from "module_11709" /* 11709 */;
-import _modDef11710 from "module_11710" /* 11710 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import NumberUtils from "NumberUtils" /* 1881 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5624 */;
+import _modDef11827 from "module_11827" /* 11827 */;
+import _modDef11828 from "module_11828" /* 11828 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,11 +38,11 @@ function VanityMetric(label) {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     const obj2 = { name: label, value: sum };
-    let formatResult = intl.format(tmp2(1114).t.HLoinF, obj2);
+    let formatResult = intl.format(tmp2(1115).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1114).intl;
+    const intl2 = tmp2(1115).intl;
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }
@@ -87,11 +87,11 @@ function VanityDate(arg0) {
   return timestampProducer(Text_Text.Text, obj);
 }
 const View = fn(17).View;
-const Constants = fn(5489);
+const Constants = fn(5625);
 ({ MetadataFields: closure_4, MetadataItemTypes: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { connectedAccountVanityMetadata: { marginTop: 4, paddingRight: 8 }, connectedAccountVanityMetadataItem: { flexDirection: "row", alignItems: "center" }, connectedAccountVanityMetadataItemIcon: { height: 18, width: 18, marginRight: 8 }, connectedAccountVanityMetadataTag: { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 }, paypalVerifiedTag: null, paypalVerifiedTagText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, paddingHorizontal: 8, paddingVertical: 1, marginRight: 8 };
 obj2.paypalVerifiedTag = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
@@ -196,7 +196,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl = util.intl;
     const obj3 = { count: NumberResult1 };
     obj2.label = intl.format(util.t.Y88M5x, obj3);
-    obj2.imageSrc = _modDef11709;
+    obj2.imageSrc = _modDef11827;
     const intl2 = util.intl;
     obj2.imageAlt = intl2.string(util.t.HKUEZo);
     items.push(timestampProducer(VanityItem, obj2, tmp2.STEAM_ITEM_COUNT_DOTA2));
@@ -206,7 +206,7 @@ export const generateSteamMetadataItems = function generateSteamMetadataItems(me
     const intl3 = util.intl;
     const obj5 = { count: NumberResult2 };
     obj4.label = intl3.format(util.t.Y88M5x, obj5);
-    obj4.imageSrc = _modDef11710;
+    obj4.imageSrc = _modDef11828;
     const intl4 = util.intl;
     obj4.imageAlt = intl4.string(util.t.C8p1Sh);
     items.push(timestampProducer(VanityItem, obj4, tmp2.STEAM_ITEM_COUNT_TF2));

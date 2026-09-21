@@ -1,10 +1,10 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 14108
+// Function ID: 14109
 // Name: visibleInlineChannels
 // Dependencies: [2]
 // Exports: isChannelVisibleInline, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 13928 (visibleInlineChannels)
+// Module 14108 (visibleInlineChannels)
 import size from "module_2" /* 2 */;
 
 const map = new Map();

@@ -1,14 +1,14 @@
-// Module ID: 17864
-// Function ID: 17865
+// Module ID: 18206
+// Function ID: 18207
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 13984, 1114, 15315, 4603, 9556, 1896, 2]
+// Dependencies: [19, 21, 14164, 1115, 15501, 4723, 9540, 1980, 2]
 // Exports: default
 
-// Module 17864 (FormTrialIntervalPicker)
-import util from "util" /* 1114 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import FormDropdownDefault from "FormDropdown" /* 13984 */;
+// Module 18206 (FormTrialIntervalPicker)
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import FormDropdownDefault from "FormDropdown" /* 14164 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -23,11 +23,11 @@ export default function FormTrialIntervalPicker(disabled) {
   const interval = disabled.interval;
   ({ onChange: importDefault, trialIntervalOptions: dependencyMap } = disabled);
   if (null == interval) {
-    let intl = interval(1114).intl;
-    let stringResult = intl.string(interval(1114).t.WZG1BU);
+    let intl = interval(1115).intl;
+    let stringResult = intl.string(interval(1115).t.WZG1BU);
   } else {
-    stringResult = interval(15315).formatPlanIntervalDuration(interval);
-    let obj = interval(15315);
+    stringResult = interval(15501).formatPlanIntervalDuration(interval);
+    let obj = interval(15501);
   }
   return jsx(FormDropdownDefault, {
     label: stringResult,
@@ -48,7 +48,7 @@ export default function FormTrialIntervalPicker(disabled) {
         tmp3 = null;
       }
       obj2.selectedItem = tmp3;
-      obj.openLazy(asyncRequireImpl(9556, dependencyMap.paths), GuildRoleSubscriptionTrialIntervalSelect, obj2);
+      obj.openLazy(asyncRequireImpl(9540, dependencyMap.paths), GuildRoleSubscriptionTrialIntervalSelect, obj2);
     },
     disabled: disabled.disabled
   });

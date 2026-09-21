@@ -1,14 +1,14 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 17198
+// Function ID: 17199
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 7982, 12491, 2]
+// Dependencies: [19, 8122, 12612, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 16837 (useAutoTrackSearchTabCountsViewedAnalytics)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12491 */;
+// Module 17198 (useAutoTrackSearchTabCountsViewedAnalytics)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12612 */;
 import noop from "module_19" /* 19 */;
 
-const SearchTabs = fn(7982).SearchTabs;
+const SearchTabs = fn(8122).SearchTabs;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoTrackSearchTabCountsViewedAnalytics.tsx");
 

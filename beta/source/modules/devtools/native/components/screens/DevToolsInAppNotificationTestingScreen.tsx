@@ -1,26 +1,26 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 16040
+// Function ID: 16041
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 5583, 1961, 4286, 1957, 1979, 2011, 1371, 1074, 21, 4636, 576, 4335, 8711, 10223, 10225, 5349, 11, 1611, 1176, 5768, 5686, 15672, 5693, 2]
+// Dependencies: [19, 17, 5719, 2045, 4406, 2041, 2063, 2095, 1372, 1074, 21, 4756, 576, 4454, 8866, 10351, 10353, 5485, 11, 1612, 1177, 5904, 5822, 15863, 5829, 2]
 // Exports: default
 
-// Module 15817 (DevToolsInAppNotificationTestingScreen)
+// Module 16040 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import StickersTypes from "StickersTypes" /* 5349 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10223 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10225 */;
+import native from "native" /* 1177 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
+import StickersTypes from "StickersTypes" /* 5485 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10351 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10353 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5583 */;
-import MessageRecord from "MessageRecord" /* 4286 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import UserStore from "UserStore" /* 1371 */;
+import StickersStore from "StickersStore" /* 5719 */;
+import MessageRecord from "MessageRecord" /* 4406 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -215,12 +215,12 @@ function buildReactionNotification(arg0, items) {
   }
 }
 const ScrollView = fn(17).ScrollView;
-const createChannelRecord = fn(1961).createChannelRecord;
+const createChannelRecord = fn(2045).createChannelRecord;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_12, InAppNotificationTypes } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16 };
@@ -556,14 +556,14 @@ export default function DevToolsInAppNotificationTestingScreen() {
       const options = title.options;
       obj2.children = options.map((label) => {
         closure_0 = label;
-        return closure_1_14(closure_1_0(5686).TableRow, {
+        return closure_1_14(closure_1_0(5822).TableRow, {
           label: label.label,
           subLabel: label.subLabel,
-          icon: closure_1_14(closure_1_0(15672).BeakerIcon, {}),
+          icon: closure_1_14(closure_1_0(15863).BeakerIcon, {}),
           onPress() {
             return closure_2_0(closure_0);
           },
-          trailing: closure_1_14(closure_1_0(5693).TableRowArrow, {})
+          trailing: closure_1_14(closure_1_0(5829).TableRowArrow, {})
         }, label.label);
       });
       items = [closure_2_14(TableRowGroup.TableRowGroup, obj2), closure_2_14(native.Spacer, { size: nativeDefault.space.PX_16 })];
@@ -576,14 +576,14 @@ export default function DevToolsInAppNotificationTestingScreen() {
   items1[2] = closure_14(require("TableRowGroup").TableRowGroup, {
     title: "Other Notification Types",
     hasIcons: true,
-    children: items3.map((label) => closure_1_14(label(5686).TableRow, {
+    children: items3.map((label) => closure_1_14(label(5822).TableRow, {
       label: label.label,
       subLabel: label.subLabel,
-      icon: closure_1_14(label(15672).BeakerIcon, {}),
+      icon: closure_1_14(label(15863).BeakerIcon, {}),
       onPress() {
         return label(label);
       },
-      trailing: closure_1_14(label(5693).TableRowArrow, {})
+      trailing: closure_1_14(label(5829).TableRowArrow, {})
     }, label.label))
   });
   obj.children = items1;

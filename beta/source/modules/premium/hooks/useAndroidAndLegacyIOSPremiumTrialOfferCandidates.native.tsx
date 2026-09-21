@@ -1,17 +1,17 @@
-// Module ID: 7551
-// Function ID: 7552
+// Module ID: 7690
+// Function ID: 7691
 // Name: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
-// Dependencies: [7340, 1373, 7552, 7343, 563, 2]
+// Dependencies: [7482, 1374, 7691, 7485, 563, 2]
 // Exports: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
 
-// Module 7551 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
+// Module 7690 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ProductIds from "ProductIds" /* 7343 */;
-import useTrialOffer from "useTrialOffer" /* 7552 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import ProductIds from "ProductIds" /* 7485 */;
+import useTrialOffer from "useTrialOffer" /* 7691 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 require = fn;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: c3, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_4, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: hasOwnProperty, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: metroRequire, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_7, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: closure_8 } = PremiumConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/hooks/useAndroidAndLegacyIOSPremiumTrialOfferCandidates.native.tsx");
@@ -26,28 +26,28 @@ export const useAndroidAndLegacyIOSPremiumTrialOfferCandidates = function useAnd
     tmp4 = trialOffer;
   }
   const trialOffer1 = useTrialOffer.useTrialOffer(React3);
-  const values6 = Object.values(tmp(7343).TrialIdToProductOfferId[React3]);
+  const values6 = Object.values(tmp(7485).TrialIdToProductOfferId[React3]);
   let tmp6 = null;
   if (values6.every((item) => offerIds.has(item))) {
     tmp6 = trialOffer1;
   }
   const tmpResult = useTrialOffer;
   const trialOffer2 = useTrialOffer.useTrialOffer(React4);
-  const values7 = Object.values(tmp(7343).TrialIdToProductOfferId[React4]);
+  const values7 = Object.values(tmp(7485).TrialIdToProductOfferId[React4]);
   let tmp8 = null;
   if (values7.every((item) => offerIds.has(item))) {
     tmp8 = trialOffer2;
   }
   const tmpResult5 = useTrialOffer;
   const trialOffer3 = useTrialOffer.useTrialOffer(hasOwnProperty);
-  const values8 = Object.values(tmp(7343).TrialIdToProductOfferId[hasOwnProperty]);
+  const values8 = Object.values(tmp(7485).TrialIdToProductOfferId[hasOwnProperty]);
   let tmp10 = null;
   if (values8.every((item) => offerIds.has(item))) {
     tmp10 = trialOffer3;
   }
   const tmpResult6 = useTrialOffer;
   const trialOffer4 = useTrialOffer.useTrialOffer(React5);
-  const values9 = Object.values(tmp(7343).TrialIdToProductOfferId[React5]);
+  const values9 = Object.values(tmp(7485).TrialIdToProductOfferId[React5]);
   let tmp12 = null;
   if (values9.every((item) => offerIds.has(item))) {
     tmp12 = trialOffer4;
@@ -55,7 +55,7 @@ export const useAndroidAndLegacyIOSPremiumTrialOfferCandidates = function useAnd
   const items1 = [tmp12, tmp4, tmp6, tmp8, , ];
   const tmpResult7 = useTrialOffer;
   const trialOffer5 = useTrialOffer.useTrialOffer(React6);
-  const values10 = Object.values(tmp(7343).TrialIdToProductOfferId[React6]);
+  const values10 = Object.values(tmp(7485).TrialIdToProductOfferId[React6]);
   let tmp14 = null;
   if (values10.every((item) => offerIds.has(item))) {
     tmp14 = trialOffer5;

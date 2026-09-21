@@ -1,9 +1,9 @@
-// Module ID: 1334
-// Function ID: 1335
+// Module ID: 1335
+// Function ID: 1336
 // Name: AnalyticsSchema
 // Dependencies: [1085, 2]
 
-// Module 1334 (AnalyticsSchema)
+// Module 1335 (AnalyticsSchema)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

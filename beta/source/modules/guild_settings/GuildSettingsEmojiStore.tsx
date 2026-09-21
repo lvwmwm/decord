@@ -1,15 +1,15 @@
-// Module ID: 17677
-// Function ID: 17678
+// Module ID: 17997
+// Function ID: 17998
 // Name: GuildSettingsEmojiStore
-// Dependencies: [17678, 4458, 1437, 1090, 504, 573, 2]
+// Dependencies: [17998, 4577, 1438, 1091, 504, 573, 2]
 
-// Module 17677 (GuildSettingsEmojiStore)
+// Module 17997 (GuildSettingsEmojiStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import EmojiRecord from "EmojiRecord" /* 17678 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import priv from "priv" /* 1437 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import EmojiRecord from "EmojiRecord" /* 17998 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import priv from "priv" /* 1438 */;
 
 const dependencyMap = {};
 const dependencyMap2 = {};

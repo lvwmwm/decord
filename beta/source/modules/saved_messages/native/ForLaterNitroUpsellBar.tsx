@@ -1,16 +1,16 @@
-// Module ID: 13430
-// Function ID: 13431
+// Module ID: 13603
+// Function ID: 13604
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 1373, 7954, 21, 7265, 11839, 12354, 4294, 1114, 2]
+// Dependencies: [19, 1374, 8095, 21, 7407, 11959, 12474, 4414, 1115, 2]
 // Exports: default
 
-// Module 13430 (ForLaterNitroUpsellBar)
-import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11839 */;
+// Module 13603 (ForLaterNitroUpsellBar)
+import openForLaterLimitUpsellDefault from "openForLaterLimitUpsell" /* 11959 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const PremiumTypes = fn(1373).PremiumTypes;
-const SavedMessagesConstants = fn(7954);
+const PremiumTypes = fn(1374).PremiumTypes;
+const SavedMessagesConstants = fn(8095);
 ({ SAVED_BOOKMARKS_MAX: hasOwnProperty, SAVED_REMINDERS_MAX: metroRequire } = SavedMessagesConstants);
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -20,15 +20,15 @@ export default function ForLaterNitroUpsellBar(isReminder) {
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7265)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7407)().analyticsLocations;
   const items = [isReminder, analyticsLocations];
   const callback = noop.useCallback(() => openForLaterLimitUpsellDefault(isReminder, analyticsLocations), items);
   const tmp2 = jsx;
-  const tmp3 = analyticsLocations(12354);
-  const premiumTypeDisplayName = isReminder(4294).getPremiumTypeDisplayName(PremiumTypes.TIER_2);
-  const intl = isReminder(1114).intl;
+  const tmp3 = analyticsLocations(12474);
+  const premiumTypeDisplayName = isReminder(4414).getPremiumTypeDisplayName(PremiumTypes.TIER_2);
+  const intl = isReminder(1115).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = isReminder(1114).t;
+  const t = isReminder(1115).t;
   if (isAtLimit) {
     const obj2 = { nitroTierName: premiumTypeDisplayName, premiumMax: isReminder ? closure_6 : closure_5 };
     formatToPlainString(isReminder ? t["E+mhMh"] : t["5VsCaT"], obj2);

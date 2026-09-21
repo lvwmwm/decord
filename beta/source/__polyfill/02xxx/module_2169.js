@@ -1,9 +1,9 @@
 // Module ID: 2169
 // Function ID: 2170
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2169
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "6a429731d2a9e33e0bfb2eab2a72054e", name: "GiftCard.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "c6f49eec9b99c372d63f00a1b0f74821", name: "ja.messages.c6f49eec9b99c372d63f00a1b0f74821.compiled.messages", type: "jsona" });

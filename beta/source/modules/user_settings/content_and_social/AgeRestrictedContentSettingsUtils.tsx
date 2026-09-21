@@ -1,16 +1,16 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9410
+// Function ID: 9411
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1371, 1935, 4849, 9426, 5504, 5505, 2]
+// Dependencies: [1372, 2019, 4968, 9411, 5640, 5641, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 9425 (AgeRestrictedContentSettingsUtils)
-import UserSettings from "UserSettings" /* 1935 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4849 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5504 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5505 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 9426 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 9410 (AgeRestrictedContentSettingsUtils)
+import UserSettings from "UserSettings" /* 2019 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 4968 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5641 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 9411 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

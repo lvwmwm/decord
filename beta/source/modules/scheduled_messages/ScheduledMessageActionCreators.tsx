@@ -1,12 +1,12 @@
-// Module ID: 7946
-// Function ID: 7947
+// Module ID: 8087
+// Function ID: 8088
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1074, 1954, 573, 1270, 7947, 4457, 1943, 1384, 2]
+// Dependencies: [32, 5, 1074, 2038, 573, 1271, 8088, 4576, 2027, 1385, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 7946 (ScheduledMessageActionCreators)
+// Module 8087 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -474,7 +474,7 @@ let closure_13 = async function _fetchScheduledMessages() {
 };
 const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, MessageFlags: metroRequire } = Constants);
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/scheduled_messages/ScheduledMessageActionCreators.tsx");
 

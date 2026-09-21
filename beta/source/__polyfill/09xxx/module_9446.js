@@ -1,9 +1,9 @@
 // Module ID: 9446
 // Function ID: 9447
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9446
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 120, height: 80, scales: [2, 3], hash: "0e96bcd2b2f1118c31b249938bd6d191", name: "img_nitro_animated_avatar", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MatteDarkIcon", width: 60, height: 60, scales: [2, 3], hash: "5e2f785032385a803c0dd3d91ffe95da", name: "MatteDarkIcon", type: "png" });

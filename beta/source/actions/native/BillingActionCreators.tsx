@@ -1,39 +1,39 @@
-// Module ID: 7522
-// Function ID: 7523
+// Module ID: 7661
+// Function ID: 7662
 // Name: BillingActionCreators
-// Dependencies: [109, 5, 19, 7523, 7524, 1371, 4300, 7340, 1074, 1085, 21, 3, 1239, 510, 1240, 1270, 4309, 4960, 1363, 11185, 7360, 11186, 573, 12, 7343, 7520, 11570, 1114, 10792, 4981, 10838, 1896, 4839, 7515, 10834, 4537, 13437, 4316, 4829, 1248, 13439, 13440, 1969, 13441, 10940, 10948, 1254, 9495, 2]
+// Dependencies: [109, 5, 19, 7662, 7663, 1372, 4420, 7482, 1074, 1085, 21, 3, 1240, 510, 1241, 1271, 4429, 5079, 1364, 11316, 7499, 11317, 573, 12, 7485, 7659, 11696, 1115, 10923, 5109, 10969, 1980, 4959, 7654, 10965, 4656, 13615, 13617, 4436, 4949, 1249, 13618, 13619, 2053, 13620, 11070, 11078, 1255, 9479, 2]
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
-// Module 7522 (BillingActionCreators)
+// Module 7661 (BillingActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import MurmurHashV3Default from "MurmurHashV3" /* 1239 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4537 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4829 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
-import ProductIds from "ProductIds" /* 7343 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7520 */;
-import ACOMExperiments from "ACOMExperiments" /* 9495 */;
-import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10834 */;
-import IAPUtils from "IAPUtils" /* 11185 */;
-import _mod11186 from "module_11186" /* 11186 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11570 */;
-import ErrorUtilsAll from "ErrorUtils" /* 13437 */;
-import APBRequestOperations from "APBRequestOperations" /* 13439 */;
+import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4656 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+import ProductIds from "ProductIds" /* 7485 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7659 */;
+import ACOMExperiments from "ACOMExperiments" /* 9479 */;
+import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10965 */;
+import IAPUtils from "IAPUtils" /* 11316 */;
+import _mod11317 from "module_11317" /* 11317 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11696 */;
+import ErrorUtilsAll from "ErrorUtils" /* 13615 */;
+import APBRequestOperations from "APBRequestOperations" /* 13618 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7523 */;
-import UserStore from "UserStore" /* 1371 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7662 */;
+import UserStore from "UserStore" /* 1372 */;
+import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 const IAPUtilsDefault = IAPUtils;
 
-const AnalyticsUtilsDefault = tmp2(1240);
+const AnalyticsUtilsDefault = tmp2(1241);
 require = fn;
 function applyAppleReceipt(arg0) {
   ({ encodedReceipt, entitlementSkuId, giftInfoOptions, isGift, jwsRepresentation, jwsRepresentations, source } = arg0);
@@ -118,76 +118,110 @@ function handlePurchaseException(code, purchase_type) {
   if (!set.has(code.code)) {
     let billingError = code;
     if (!(code instanceof V6OrEarlierAPIError.BillingError)) {
-      billingError = new tmp(4537).BillingError(code);
+      billingError = new tmp(4656).BillingError(code);
     }
     if (obj.isSpendingLimitError(billingError)) {
-      const result = tmp(10834).showSpendingLimitReachedAlert();
-      const tmpResult = tmp(10834);
+      const result = tmp(10965).showSpendingLimitReachedAlert();
+      const tmpResult = tmp(10965);
     } else {
       const message = code.message;
-      const _JSON = JSON;
-      const json = JSON.stringify(code);
+      obj2 = {};
+      const merged = Object.assign(code);
+      let name;
+      if (code != null) {
+        name = code.name;
+      }
+      obj2.name = name;
+      let message1;
+      if (code != null) {
+        message1 = code.message;
+      }
+      obj2.message = message1;
+      let stack;
+      if (code != null) {
+        stack = code.stack;
+      }
+      obj2.stack = stack;
+      const json = JSON.stringify(obj2);
       const underlyingIOSError = ErrorUtilsAll.getUnderlyingIOSError(code);
-      if (null != underlyingIOSError) {
-        const obj4 = { title: null, body: null };
-        const intl2 = tmp(1114).intl;
-        obj4.title = intl2.string(tmp(1114).t.POsVOt);
-        obj4.body = underlyingIOSError;
-        actions_AlertActionCreatorsDefault.show(obj4);
-        throw code;
-      } else {
-        const intl3 = tmp(1114).intl;
-        const stringResult = intl3.string(tmp(1114).t.PjfUXe);
-        let tmp12 = stringResult;
-        if ("HTTPResponseError" !== code.name) {
-          if (!("status" in code)) {
-            tmp12 = code.message || stringResult;
-            const tmp13 = code.message || stringResult;
-          } else {
-            tmp12 = stringResult;
-          }
+      const purchaseExceptionAlert = tmp(13617).getPurchaseExceptionAlert(code.message);
+      if (null == purchaseExceptionAlert) {
+        if (null != underlyingIOSError) {
+          const obj4 = { title: null, body: null };
+          const intl2 = tmp(1115).intl;
+          obj4.title = intl2.string(tmp(1115).t.POsVOt);
+          obj4.body = underlyingIOSError;
+          actions_AlertActionCreatorsDefault.show(obj4);
+          throw code;
         }
-        let message2 = tmp12;
+      }
+      let title;
+      if (purchaseExceptionAlert != null) {
+        title = purchaseExceptionAlert.title;
+      }
+      if (title == null) {
+        const intl = tmp(1115).intl;
+        title = intl.string(tmp(1115).t.zrhHH3);
+      }
+      let body1;
+      if (purchaseExceptionAlert != null) {
+        body1 = purchaseExceptionAlert.body;
+      }
+      if (body1 == null) {
+        const intl3 = tmp(1115).intl;
+        const stringResult = intl3.string(tmp(1115).t.PjfUXe);
+        let tmp22 = "HTTPResponseError" === code.name;
+        if (!tmp22) {
+          let tmp21 = "status" in code;
+          if (tmp21) {
+            tmp21 = "method" in code;
+          }
+          tmp22 = tmp21;
+        }
+        let tmp23 = stringResult;
+        if (!tmp22) {
+          tmp23 = code.message || stringResult;
+          const tmp24 = code.message || stringResult;
+        }
+        let message2 = tmp23;
         if (null != code.body) {
           const body = code.body;
-          message2 = tmp12;
+          message2 = tmp23;
           if (null != body.apple_error_code) {
             const _HermesInternal = HermesInternal;
             message2 = "" + stringResult + " (code: " + body.apple_error_code + ")";
           }
         }
         let billingError1 = code;
-        if (!(code instanceof tmp(4537).BillingError)) {
-          billingError1 = new tmp(4537).BillingError(code);
+        if (!(code instanceof tmp(4656).BillingError)) {
+          billingError1 = new tmp(4656).BillingError(code);
         }
-        let tmp19 = message2 === stringResult && flag;
-        if (tmp19) {
-          tmp19 = billingError1.code !== tmp(4316).ErrorCodes.UNKNOWN;
+        let tmp30 = message2 === stringResult && flag;
+        if (tmp30) {
+          tmp30 = billingError1.code !== tmp(4436).ErrorCodes.UNKNOWN;
         }
-        if (tmp19) {
-          tmp19 = -1 !== billingError1.code;
+        if (tmp30) {
+          tmp30 = -1 !== billingError1.code;
         }
-        if (tmp19) {
-          tmp19 = null != billingError1.message;
+        if (tmp30) {
+          tmp30 = null != billingError1.message;
         }
-        if (tmp19) {
+        if (tmp30) {
           message2 = billingError1.message;
         }
-        const obj5 = { title: null, body: null, isDismissable: true, hideActionSheet: null };
-        const intl = tmp(1114).intl;
-        obj5.title = intl.string(tmp(1114).t.zrhHH3);
-        obj5.body = message2;
-        obj5.hideActionSheet = flag;
-        actions_AlertActionCreatorsDefault.show(obj5);
-        const obj6 = { tags: null };
-        const obj7 = { source: BILLING, purchase_type };
-        obj6.tags = obj7;
-        const result1 = tmp(4309).captureBillingException(code, obj6);
-        if (flag) {
-          throw code;
-        }
-        const tmpResult2 = tmp(4309);
+        body1 = message2;
       }
+      const tmpResult3 = tmp(13617);
+      const obj6 = { title, body: body1, isDismissable: true, hideActionSheet: flag };
+      actions_AlertActionCreatorsDefault.show(obj6);
+      const obj7 = { tags: null };
+      const obj8 = { source: BILLING, purchase_type };
+      obj7.tags = obj8;
+      const result1 = tmp(4429).captureBillingException(code, obj7);
+      if (flag) {
+        throw code;
+      }
+      const tmpResult4 = tmp(4429);
     }
     obj = showSpendingLimitReachedAlert;
   }
@@ -223,7 +257,7 @@ let closure_30 = async function _clearAndMakeIAPRequest() {
   closure_132_1 = closure_1;
   closure_132_2 = closure_2;
   closure_132_3 = closure_3;
-  await _mod11186.clearTransactionIOS();
+  await _mod11317.clearTransactionIOS();
   return closure_133_31(closure_132_0, closure_132_1, closure_132_2, closure_132_3);
 };
 function makeTrackedIAPRequest(arg0, arg1, arg2, arg3) {
@@ -382,9 +416,9 @@ let closure_34 = async function _getIAPJWTRequestData(body) {
       trackedActionData: {
         event: discord_common_AnalyticsUtils.NetworkActionNames.APPLE_JWT_TOKEN_CREATE,
         properties(body) {
-          if (closure_1_0.operation !== closure_0(c3[40]).APBRequestOperations.CREATE) {
-            if (tmp.operation !== tmp2(tmp3[41]).ACRequestOperations.CREATE) {
-              if (tmp.operation === tmp2(tmp3[41]).ACRequestOperations.MODIFY) {
+          if (closure_1_0.operation !== closure_0(c3[41]).APBRequestOperations.CREATE) {
+            if (tmp.operation !== tmp2(tmp3[42]).ACRequestOperations.CREATE) {
+              if (tmp.operation === tmp2(tmp3[42]).ACRequestOperations.MODIFY) {
                 const obj3 = { subscription_items_json_string: null };
                 const _JSON2 = JSON;
                 obj3.subscription_items_json_string = JSON.stringify(tmp.subscription_items);
@@ -392,8 +426,8 @@ let closure_34 = async function _getIAPJWTRequestData(body) {
                 let obj = obj3;
                 const tmp15 = closure_2_7(tmp, closure_2_5);
               } else {
-                if (tmp.operation !== tmp2(tmp3[40]).APBRequestOperations.CHARGE) {
-                  if (tmp.operation !== tmp2(tmp3[41]).ACRequestOperations.CHARGE) {
+                if (tmp.operation !== tmp2(tmp3[41]).APBRequestOperations.CHARGE) {
+                  if (tmp.operation !== tmp2(tmp3[42]).ACRequestOperations.CHARGE) {
                     obj = {};
                     const merged1 = Object.assign(tmp);
                   }
@@ -425,7 +459,7 @@ let closure_34 = async function _getIAPJWTRequestData(body) {
             }
             const obj5 = { jwt_token_exists: str.length > 0 };
             const merged3 = Object.assign(obj);
-            return tmp2(tmp3[42]).exact(obj5);
+            return tmp2(tmp3[43]).exact(obj5);
           }
           ({ items, country_code } = closure_1_0);
           const obj6 = { subscription_items_json_string: JSON.stringify(items), request_country_code: country_code };
@@ -494,7 +528,7 @@ let closure_36 = async function _updateAppleSubscription(body) {
                           str = "";
                         }
                         const merged1 = Object.assign({});
-                        return closure_0(dependencyMap[42]).exact({ jwt_token_exists: str.length > 0 });
+                        return closure_0(dependencyMap[43]).exact({ jwt_token_exists: str.length > 0 });
                       }
             };
             request.trackedActionData = obj4;
@@ -523,18 +557,18 @@ let closure_36 = async function _updateAppleSubscription(body) {
 };
 function determineProductId(arg0) {
   if (APBRequestOperations.APBRequestOperations.CREATE !== arg0) {
-    if (tmp(13439).APBRequestOperations.CANCEL !== arg0) {
-      if (tmp(13439).APBRequestOperations.RESUBSCRIBE !== arg0) {
-        if (tmp(13439).APBRequestOperations.REACTIVATE !== arg0) {
-          if (tmp(13439).APBRequestOperations.CHARGE === arg0) {
-            return tmp(7343).ProductIds.GENERIC_CONSUMABLE;
+    if (tmp(13618).APBRequestOperations.CANCEL !== arg0) {
+      if (tmp(13618).APBRequestOperations.RESUBSCRIBE !== arg0) {
+        if (tmp(13618).APBRequestOperations.REACTIVATE !== arg0) {
+          if (tmp(13618).APBRequestOperations.CHARGE === arg0) {
+            return tmp(7485).ProductIds.GENERIC_CONSUMABLE;
           } else {
-            if (tmp(13440).ACRequestOperations.CREATE !== arg0) {
-              if (tmp(13440).ACRequestOperations.CANCEL !== arg0) {
-                if (tmp(13440).ACRequestOperations.REACTIVATE !== arg0) {
-                  if (tmp(13440).ACRequestOperations.MODIFY !== arg0) {
-                    if (tmp(13440).ACRequestOperations.CHARGE === arg0) {
-                      return tmp(7343).ProductIds.GENERIC_CONSUMABLE;
+            if (tmp(13619).ACRequestOperations.CREATE !== arg0) {
+              if (tmp(13619).ACRequestOperations.CANCEL !== arg0) {
+                if (tmp(13619).ACRequestOperations.REACTIVATE !== arg0) {
+                  if (tmp(13619).ACRequestOperations.MODIFY !== arg0) {
+                    if (tmp(13619).ACRequestOperations.CHARGE === arg0) {
+                      return tmp(7485).ProductIds.GENERIC_CONSUMABLE;
                     } else {
                       const _Error = Error;
                       const error = new Error("Invalid operation");
@@ -544,7 +578,7 @@ function determineProductId(arg0) {
                 }
               }
             }
-            return tmp(7343).ProductIds.GENERIC_SUBSCRIPTION;
+            return tmp(7485).ProductIds.GENERIC_SUBSCRIPTION;
           }
         }
       }
@@ -588,9 +622,9 @@ let closure_38 = async function _cancelGenericSubscription(arg0, value) {
             let tmp32 = require;
             let dispatchResult = dependencyMap;
             if (tmp46) {
-              let CANCEL = tmp32(dispatchResult[41]).ACRequestOperations.CANCEL;
+              let CANCEL = tmp32(dispatchResult[42]).ACRequestOperations.CANCEL;
             } else {
-              CANCEL = tmp32(dispatchResult[40]).APBRequestOperations.CANCEL;
+              CANCEL = tmp32(dispatchResult[41]).APBRequestOperations.CANCEL;
             }
             closure_131_3 = CANCEL;
             tmp32 = determineProductId(CANCEL);
@@ -717,7 +751,7 @@ let closure_41 = async function _createGenericSubscription(arg0, value) {
           return obj4;
         } else if (closure_130_28()) {
           if (closure_130_39(closure_129_2)) {
-            closure_129_5 = closure_130_37(closure_130_0(closure_130_3[41]).ACRequestOperations.CREATE);
+            closure_129_5 = closure_130_37(closure_130_0(closure_130_3[42]).ACRequestOperations.CREATE);
             const obj5 = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: closure_129_5 };
             c5 = 2;
             c6 = 1;
@@ -748,7 +782,7 @@ let closure_41 = async function _createGenericSubscription(arg0, value) {
           c4 = 1;
           const obj13 = { request_identifier: closure_129_0, items: closure_129_1.map((planId) => ({ plan_id: planId.planId, quantity: planId.quantity })), currency: closure_129_2, country_code: closure_129_3, order_id: closure_129_4 };
           closure_129_7 = obj13;
-          const obj15 = { operation: closure_130_0(closure_130_3[41]).ACRequestOperations.CREATE };
+          const obj15 = { operation: closure_130_0(closure_130_3[42]).ACRequestOperations.CREATE };
           const merged = Object.assign(closure_129_7);
           c5 = 4;
           c6 = 1;
@@ -933,7 +967,7 @@ let closure_42 = async function _modifyGenericSubscription(arg0, value) {
           } else {
             closure_129_6 = false;
             c4 = 1;
-            const obj15 = { operation: closure_130_0(closure_130_3[41]).ACRequestOperations.MODIFY, request_identifier: closure_129_0, subscription_id: closure_129_1, subscription_items: closure_129_2.map((planId) => ({ plan_id: planId.planId, quantity: planId.quantity })), order_id: closure_129_3 };
+            const obj15 = { operation: closure_130_0(closure_130_3[42]).ACRequestOperations.MODIFY, request_identifier: closure_129_0, subscription_id: closure_129_1, subscription_items: closure_129_2.map((planId) => ({ plan_id: planId.planId, quantity: planId.quantity })), order_id: closure_129_3 };
             c5 = 4;
             c6 = 1;
             const obj16 = { value: closure_130_33(obj15), done: false };
@@ -989,7 +1023,7 @@ let closure_42 = async function _modifyGenericSubscription(arg0, value) {
           } else {
             c5 = 6;
             c6 = 1;
-            const obj24 = { value: closure_130_0(closure_130_3[43]).retryACOMRequest(() => closure_2_31(closure_1_0, closure_1_7, closure_1_5, true)), done: false };
+            const obj24 = { value: closure_130_0(closure_130_3[44]).retryACOMRequest(() => closure_2_31(closure_1_0, closure_1_7, closure_1_5, true)), done: false };
             return obj24;
           }
         break;
@@ -1168,9 +1202,9 @@ let closure_43 = async function _resubscribeGenericSubscription(arg0, value) {
           let tmp60 = closure_131_0;
           let obj7 = closure_131_3;
           if (closure_130_2) {
-            let REACTIVATE = tmp60(obj7[41]).ACRequestOperations.REACTIVATE;
+            let REACTIVATE = tmp60(obj7[42]).ACRequestOperations.REACTIVATE;
           } else {
-            REACTIVATE = tmp60(obj7[40]).APBRequestOperations.REACTIVATE;
+            REACTIVATE = tmp60(obj7[41]).APBRequestOperations.REACTIVATE;
           }
           closure_130_4 = obj22(REACTIVATE);
           obj22 = closure_131_1(closure_131_3[22]);
@@ -1195,14 +1229,14 @@ let closure_43 = async function _resubscribeGenericSubscription(arg0, value) {
         } else {
           c5 = 1;
           if (closure_130_2) {
-            const obj10 = { operation: closure_131_0(closure_131_3[41]).ACRequestOperations.REACTIVATE };
+            const obj10 = { operation: closure_131_0(closure_131_3[42]).ACRequestOperations.REACTIVATE };
             const merged = Object.assign(closure_130_3);
             c6 = 4;
             c7 = 1;
             const obj11 = { value: closure_131_33(obj10), done: false };
             return obj11;
           } else {
-            const obj12 = { operation: closure_131_0(closure_131_3[40]).APBRequestOperations.REACTIVATE };
+            const obj12 = { operation: closure_131_0(closure_131_3[41]).APBRequestOperations.REACTIVATE };
             const merged1 = Object.assign(closure_130_3);
             c6 = 5;
             c7 = 1;
@@ -1560,7 +1594,7 @@ let closure_45 = async function _mobilePurchaseSKU(arg0, value) {
             return obj6;
           } else if (closure_133_28()) {
             if (closure_133_39(closure_132_2)) {
-              closure_132_11 = closure_133_37(closure_133_0(closure_133_3[41]).ACRequestOperations.CHARGE);
+              closure_132_11 = closure_133_37(closure_133_0(closure_133_3[42]).ACRequestOperations.CHARGE);
               const obj7 = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: closure_132_11 };
               c8 = 2;
               c9 = 1;
@@ -1589,7 +1623,7 @@ let closure_45 = async function _mobilePurchaseSKU(arg0, value) {
             return obj15;
           } else {
             const obj16 = { sku_id: closure_132_1, load_id: closure_132_5, location_stack: closure_132_4, payment_gateway: closure_133_19.APPLE_ADVANCED_COMMERCE };
-            const result = closure_133_0(closure_133_3[44]).trackPaymentFlowStartedAnalyticsAndCTP(obj16);
+            const result = closure_133_0(closure_133_3[45]).trackPaymentFlowStartedAnalyticsAndCTP(obj16);
             closure_132_12 = false;
             c7 = 1;
             c8 = 4;
@@ -1621,14 +1655,14 @@ let closure_45 = async function _mobilePurchaseSKU(arg0, value) {
           if (null != currentUser) {
             if (currentUser.isStaff()) {
               if (closure_132_8) {
-                if (closure_132_20.code === closure_133_0(closure_133_3[37]).ErrorCodes.BILLING_CANNOT_CHARGE_ZERO_AMOUNT) {
+                if (closure_132_20.code === closure_133_0(closure_133_3[38]).ErrorCodes.BILLING_CANNOT_CHARGE_ZERO_AMOUNT) {
                   let purchaseSKU = closure_132_10;
                   if (closure_132_10 == null) {
-                    purchaseSKU = closure_133_0(closure_133_3[45]).purchaseSKU;
+                    purchaseSKU = closure_133_0(closure_133_3[46]).purchaseSKU;
                   }
                   closure_132_22 = purchaseSKU;
                   c7 = 2;
-                  const obj19 = { countryCode: closure_132_3, expectedAmount: 0, expectedCurrency: closure_133_17.USD, loadId: closure_133_0(closure_133_3[46]).v4(), isGift: closure_132_6, giftInfoOptions: closure_132_7 };
+                  const obj19 = { countryCode: closure_132_3, expectedAmount: 0, expectedCurrency: closure_133_17.USD, loadId: closure_133_0(closure_133_3[47]).v4(), isGift: closure_132_6, giftInfoOptions: closure_132_7 };
                   c8 = 10;
                   c9 = 1;
                   const obj21 = { value: closure_132_22("collectibles", closure_132_1, obj19), done: false };
@@ -1663,7 +1697,7 @@ let closure_45 = async function _mobilePurchaseSKU(arg0, value) {
           } else {
             const obj24 = { sku_id: closure_132_1, request_identifier: closure_132_0, currency: closure_132_2, country_code: closure_132_3, is_gift: closure_132_6, gift_info_options: closure_132_7, order_id: orderId };
             closure_132_13 = obj24;
-            const obj25 = { operation: closure_133_0(closure_133_3[41]).ACRequestOperations.CHARGE };
+            const obj25 = { operation: closure_133_0(closure_133_3[42]).ACRequestOperations.CHARGE };
             const merged = Object.assign(closure_132_13);
             c8 = 5;
             c9 = 1;
@@ -1771,7 +1805,7 @@ let closure_45 = async function _mobilePurchaseSKU(arg0, value) {
         case 9:
           c7 = 0;
           closure_132_24 = closure_6;
-          if (closure_132_24.code === closure_133_0(closure_133_3[37]).ErrorCodes.BILLING_PURCHASE_REQUEST_INVALID) {
+          if (closure_132_24.code === closure_133_0(closure_133_3[38]).ErrorCodes.BILLING_PURCHASE_REQUEST_INVALID) {
             const result1 = closure_133_0(closure_133_3[16]).captureBillingException(closure_132_24, {});
             const obj40 = closure_133_0(closure_133_3[16]);
           }
@@ -1907,7 +1941,7 @@ let closure_46 = async function _migrateToACOM(arg0, value) {
 let closure_4 = ["items", "country_code"];
 let closure_5 = ["subscription_items"];
 let closure_6 = ["sku_id", "country_code", "is_gift", "gift_info_options"];
-const PremiumPlanPurchasedStore = fn(7524);
+const PremiumPlanPurchasedStore = fn(7663);
 ({ setPaymentSuccess: c10, showOldPaymentFlowSuccess: closure_11 } = PremiumPlanPurchasedStore);
 const Constants = fn(1074);
 ({ SubscriptionTypes: closure_15, AnalyticEvents: closure_16, CurrencyCodes: closure_17, Endpoints: closure_18, StoreKitErrors } = Constants);
@@ -1916,7 +1950,7 @@ const jsx = fn(21).jsx;
 const localAppleReceiptHash = "localAppleReceiptHash";
 const BILLING = "BILLING";
 new LoggerDefault("BillingActionCreators.tsx");
-let items = [fn(11186).ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
+let items = [fn(11317).ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
 const set = new Set(items);
 let obj2 = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 const size = fn(2);
@@ -1924,8 +1958,8 @@ let result = size.fileFinishedImporting("actions/native/BillingActionCreators.ts
 
 export default {
   applyAppleReceipt,
-  fetchMostRecentSubscription: fn(4960).fetchMostRecentSubscription,
-  fetchIpCountryCode: fn(4960).fetchIpCountryCode,
+  fetchMostRecentSubscription: fn(5079).fetchMostRecentSubscription,
+  fetchIpCountryCode: fn(5079).fetchIpCountryCode,
   init() {
     const self = this;
     return (async (arg0, value) => {
@@ -2075,7 +2109,7 @@ export default {
               c3 = 1;
               c4 = 2;
               c5 = 1;
-              const obj4 = { value: _mod11186.initConnection(), done: false };
+              const obj4 = { value: _mod11317.initConnection(), done: false };
               return obj4;
             }
           } else if (1 === tmp7) {
@@ -2493,7 +2527,8 @@ export default {
                         closure_0 = result.default;
                         return () => { ... };
                       });
-                    }
+                    },
+                    isDismissable: false
                   });
                 });
               }
@@ -2686,7 +2721,7 @@ export default {
                       if (jwsRepresentation == null) {
                         transactionReceipt = purchaseResponse.transactionReceipt;
                       }
-                      const v3Result = closure_2_1(1239).v3(transactionReceipt);
+                      const v3Result = closure_2_1(1240).v3(transactionReceipt);
                       closure_130_2 = v3Result;
                       giftOptionsForKey = giftOptionsForKey.getGiftOptionsForKey(v3Result);
                       const obj6 = { jwsRepresentation: null, encodedReceipt: null, presentmentCurrency: null, presentmentAmount: null, appStoreRegion: null, giftInfoOptions: null, source: "restoreSubscription", skipDupCheck: null };
@@ -2757,7 +2792,7 @@ export default {
                       return obj22;
                     } else if (closure_134_3.length > 0) {
                       const item = closure_134_3.forEach((item) => {
-                        const result = closure_1_0(4309).captureBillingException(item);
+                        const result = closure_1_0(4429).captureBillingException(item);
                       });
                       const _Error = Error;
                       const error = new Error("There were some errors while trying to restore");

@@ -1,14 +1,14 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15429
+// Function ID: 15430
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5525, 21, 5768, 5686, 9008, 1114, 9352, 2]
+// Dependencies: [19, 5661, 21, 5904, 5822, 9161, 1115, 9348, 2]
 // Exports: default
 
-// Module 15243 (QuestBottomSheetTaskSelect)
+// Module 15429 (QuestBottomSheetTaskSelect)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const QuestTaskPlatform = fn(5525).QuestTaskPlatform;
+const QuestTaskPlatform = fn(5661).QuestTaskPlatform;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
 const size = fn(2);
@@ -17,9 +17,9 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestBottomShee
 export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: null };
-  const obj2 = { arrow: true, icon: closure_3(onTaskSelect(9008).ScreenIcon, {}), label: null, onPress: null };
-  const intl = onTaskSelect(1114).intl;
-  obj2.label = intl.string(onTaskSelect(1114).t["QXc01+"]);
+  const obj2 = { arrow: true, icon: closure_3(onTaskSelect(9161).ScreenIcon, {}), label: null, onPress: null };
+  const intl = onTaskSelect(1115).intl;
+  obj2.label = intl.string(onTaskSelect(1115).t["QXc01+"]);
   obj2.onPress = function onPress() {
     let tmpResult;
     if (onTaskSelect != null) {
@@ -27,10 +27,10 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
     }
     return tmpResult;
   };
-  const items = [closure_3(onTaskSelect(5686).TableRow, obj2), ];
-  const obj3 = { arrow: true, icon: closure_3(onTaskSelect(9352).GameControllerIcon, {}), label: null, onPress: null };
-  const intl2 = onTaskSelect(1114).intl;
-  obj3.label = intl2.string(onTaskSelect(1114).t["8lAfuB"]);
+  const items = [closure_3(onTaskSelect(5822).TableRow, obj2), ];
+  const obj3 = { arrow: true, icon: closure_3(onTaskSelect(9348).GameControllerIcon, {}), label: null, onPress: null };
+  const intl2 = onTaskSelect(1115).intl;
+  obj3.label = intl2.string(onTaskSelect(1115).t["8lAfuB"]);
   obj3.onPress = function onPress() {
     let tmpResult;
     if (onTaskSelect != null) {
@@ -38,7 +38,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
     }
     return tmpResult;
   };
-  items[1] = closure_3(onTaskSelect(5686).TableRow, obj3);
+  items[1] = closure_3(onTaskSelect(5822).TableRow, obj3);
   obj.children = items;
-  return closure_4(onTaskSelect(5768).TableRowGroup, obj);
+  return closure_4(onTaskSelect(5904).TableRowGroup, obj);
 };

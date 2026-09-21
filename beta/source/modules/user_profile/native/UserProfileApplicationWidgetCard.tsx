@@ -1,14 +1,14 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9201
+// Function ID: 9202
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2025, 502, 21, 4636, 576, 9053, 9054, 9146, 9147, 9148, 9149, 504, 9055, 7271, 7412, 8798, 8809, 9150, 7268, 9138, 8457, 7310, 7726, 9159, 4632, 1114, 2]
+// Dependencies: [19, 17, 2109, 502, 21, 4756, 576, 9202, 9203, 9295, 9296, 9297, 9298, 504, 9204, 7413, 7551, 8946, 8957, 9299, 7410, 9308, 13189, 9287, 8610, 7452, 7860, 13193, 4752, 1115, 5339, 10437, 2]
 // Exports: default
 
-// Module 9052 (UserProfileApplicationWidgetCard)
+// Module 9201 (UserProfileApplicationWidgetCard)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9055 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9204 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -16,14 +16,16 @@ get_ActivityIndicator = fn(17);
 ({ Image: closure_4, Pressable: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
-let obj2 = { appIcon: null, header: null, divider: null, stillSyncing: null };
+const createStyles = fn(4756);
+let obj2 = { appIcon: null, header: null, refresh: null, divider: null, stillSyncing: null };
 let size = { width: 16, height: 16, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
 obj2.appIcon = size;
 obj2.header = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj2.refresh = { flexDirection: "row", alignItems: "center", alignSelf: "flex-end", gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_12 };
+let obj4 = { flexDirection: "row", alignItems: "center", alignSelf: "flex-end", gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_12 };
 obj2.divider = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_24 };
-let obj4 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_24 };
+let obj5 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_24 };
 obj2.stillSyncing = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_11 = createStyles.createStyles(obj2);
 size = fn(2);
@@ -43,87 +45,90 @@ export default function UserProfileApplicationWidgetCard(userId) {
   const items2 = [AuthenticationStore];
   const stateFromStores1 = userId(504).useStateFromStores(items2, () => AuthenticationStore.getId() === userId);
   const obj2 = userId(504);
-  const getOrFetchApplication = userId(7271).useGetOrFetchApplication(widget.applicationId);
+  const getOrFetchApplication = userId(7413).useGetOrFetchApplication(widget.applicationId);
   let iconURL;
   if (getOrFetchApplication != null) {
     iconURL = getOrFetchApplication.getIconURL(16);
   }
-  const obj3 = userId(7271);
+  const obj3 = userId(7413);
   let canonicalGameId;
   if (getOrFetchApplication != null) {
     canonicalGameId = getOrFetchApplication.getCanonicalGameId();
   }
-  const data = userId(7412).useGame(canonicalGameId).data;
+  const data = userId(7551).useGame(canonicalGameId).data;
   let id;
-  const tmp2Result = userId(7412);
+  const tmp2Result = userId(7551);
   if (data != null) {
     id = data.id;
   }
-  const tmp10 = stateFromStores(8798);
-  const tmp10Result = tmp10({ location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(8809).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" });
+  const tmp10 = stateFromStores(8946);
+  const tmp10Result = tmp10({ location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(8957).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" });
   dependencyMap = tmp10Result;
-  const obj4 = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(8809).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = stateFromStores(9150)(userId, widget.applicationId));
-  const tmp14 = stateFromStores(7268)(getOrFetchApplication);
+  const obj4 = { location: "UserProfileApplicationWidgetCard", applicationId: id, source: userId(8957).GameProfileSources.UserProfileApplicationWidget, sourceUserId: userId, trackEntryPointImpression: true, stackingBehavior: "stack" };
+  ({ surfaceConfigs, resolutionContext, isLoading, hasIdentity } = stateFromStores(9299)(userId, widget.applicationId));
+  const tmp14 = stateFromStores(7410)(getOrFetchApplication);
   token = tmp14.token;
   ({ fetched, canStartAuthorization } = tmp14);
-  const tmp15 = surfaceConfigs[userId(undefined, 9138).ApplicationWidgetConfigSurface.WIDGET_TOP];
-  const tmp16 = surfaceConfigs[userId(undefined, 9138).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
-  let tmp17 = null;
+  const tmp13 = stateFromStores(9299)(userId, widget.applicationId);
+  const tmp15 = stateFromStores(9308)(widget.applicationId, stateFromStores1);
+  ({ pending, refresh } = stateFromStores(13189)(widget.applicationId));
+  const tmp17 = surfaceConfigs[userId(undefined, 9287).ApplicationWidgetConfigSurface.WIDGET_TOP];
+  const tmp18 = surfaceConfigs[userId(undefined, 9287).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+  let tmp19 = null;
   if (null != iconURL) {
     const obj5 = { source: null, style: null };
     const obj6 = { uri: iconURL };
     obj5.source = obj6;
     obj5.style = tmp.appIcon;
-    tmp17 = closure_9(closure_4, obj5);
+    tmp19 = closure_9(closure_4, obj5);
   }
   if (stateFromStores1) {
     if (!isLoading) {
       if (!hasIdentity) {
-        let tmp20 = null != token;
-        if (tmp20) {
+        let tmp22 = null != token;
+        if (tmp22) {
           const _Array = Array;
-          let someResult = Array.from(tmp2(8457).OAuth2ScopesSets.APPLICATION_IDENTITIES_SCOPES).some((item) => {
+          let someResult = Array.from(tmp2(8610).OAuth2ScopesSets.APPLICATION_IDENTITIES_SCOPES).some((item) => {
             const scopes = token.scopes;
             return scopes.includes(item);
           });
           if (!someResult) {
             let scopes = token.scopes;
-            someResult = scopes.includes(tmp2(8457).OAuth2Scopes.SDK_SOCIAL_LAYER);
+            someResult = scopes.includes(tmp2(8610).OAuth2Scopes.SDK_SOCIAL_LAYER);
           }
           if (!someResult) {
             const scopes2 = token.scopes;
-            someResult = scopes2.includes(tmp2(8457).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE);
+            someResult = scopes2.includes(tmp2(8610).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE);
           }
-          tmp20 = someResult;
-          const arr = Array.from(tmp2(8457).OAuth2ScopesSets.APPLICATION_IDENTITIES_SCOPES);
+          tmp22 = someResult;
+          const arr = Array.from(tmp2(8610).OAuth2ScopesSets.APPLICATION_IDENTITIES_SCOPES);
         }
         if (fetched) {
           if (canStartAuthorization) {
-            let tmp23 = null;
+            let tmp25 = null;
           }
-          return tmp23;
+          return tmp25;
         }
         const obj7 = { style: cardStyle, title: null, titleLeadingIcon: null, children: null };
-        const tmp9Result = tmp9(7310);
-        obj7.title = tmp2(7726).getWidgetTitle(widget);
-        obj7.titleLeadingIcon = tmp17;
+        const tmp9Result = tmp9(7452);
+        obj7.title = tmp2(7860).getWidgetTitle(widget);
+        obj7.titleLeadingIcon = tmp19;
         const obj8 = { style: tmp.stillSyncing, children: null };
         const obj9 = { size: "xs", color: tmp9(576).colors.TEXT_MUTED };
-        const items3 = [closure_9(tmp2(9159).HourglassIcon, obj9), ];
+        const items3 = [closure_9(tmp2(13193).HourglassIcon, obj9), ];
         const obj10 = { variant: "text-sm/medium", color: "text-muted", children: null };
-        const intl = tmp2(1114).intl;
-        obj10.children = intl.string(tmp2(1114).t.z5K4Uv);
-        items3[1] = closure_9(tmp2(4632).Text, obj10);
+        const intl = tmp2(1115).intl;
+        obj10.children = intl.string(tmp2(1115).t.z5K4Uv);
+        items3[1] = closure_9(tmp2(4752).Text, obj10);
         obj8.children = items3;
         obj7.children = closure_10(closure_6, obj8);
-        tmp23 = closure_9(tmp9Result, obj7);
-        const tmp2Result5 = tmp2(7726);
+        tmp25 = closure_9(tmp9Result, obj7);
+        const tmp2Result5 = tmp2(7860);
       }
     }
   }
-  const tmp13 = stateFromStores(9150)(userId, widget.applicationId);
-  const result = userId(9055).bindResolveFieldValue(resolutionContext);
+  const tmp16 = stateFromStores(13189)(widget.applicationId);
+  const result = userId(9204).bindResolveFieldValue(resolutionContext);
   const obj11 = {
     style: tmp.header,
     onPress() {
@@ -138,64 +143,81 @@ export default function UserProfileApplicationWidgetCard(userId) {
     accessibilityLabel: null,
     children: null
   };
-  const tmp29 = closure_10;
-  const tmp2Result6 = userId(9055);
-  obj11.accessibilityLabel = userId(7726).getWidgetTitle(widget);
-  const items4 = [tmp17, ];
+  const tmp2Result6 = userId(9204);
+  obj11.accessibilityLabel = userId(7860).getWidgetTitle(widget);
+  const items4 = [tmp19, ];
   const obj12 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: null };
-  const tmp2Result7 = userId(7726);
-  obj12.children = userId(7726).getWidgetTitle(widget);
-  items4[1] = closure_9(userId(4632).Text, obj12);
+  const tmp2Result7 = userId(7860);
+  obj12.children = userId(7860).getWidgetTitle(widget);
+  items4[1] = closure_9(userId(4752).Text, obj12);
   obj11.children = items4;
-  const tmp31 = closure_10(closure_5, obj11);
-  if (tmp15 != null) {
-    const layout = tmp15.layout;
+  const tmp33 = closure_10(closure_5, obj11);
+  if (tmp17 != null) {
+    const layout = tmp17.layout;
   }
-  let tmp30Result = null;
-  if (null != tmp15) {
-    if (tmp2(9053).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
-      const obj13 = { header: tmp31, topConfig: tmp15, resolveFieldValue: result, numberFormat: memo };
-      tmp30Result = tmp30(tmp9(9054), obj13);
+  let tmp32Result = null;
+  if (null != tmp17) {
+    if (tmp2(9202).ApplicationWidgetLayoutName.WIDGET_TOP_HERO === layout) {
+      const obj13 = { header: tmp33, topConfig: tmp17, resolveFieldValue: result, numberFormat: memo };
+      tmp32Result = tmp32(tmp9(9203), obj13);
     } else {
-      tmp30Result = null;
-      if (tmp2(9053).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
-        const obj14 = { header: tmp31, topConfig: tmp15, resolveFieldValue: result, numberFormat: memo };
-        tmp30Result = tmp30(tmp9(9146), obj14);
+      tmp32Result = null;
+      if (tmp2(9202).ApplicationWidgetLayoutName.WIDGET_TOP_CONTAINED === layout) {
+        const obj14 = { header: tmp33, topConfig: tmp17, resolveFieldValue: result, numberFormat: memo };
+        tmp32Result = tmp32(tmp9(9295), obj14);
       }
     }
   }
-  if (tmp16 != null) {
-    const layout2 = tmp16.layout;
+  if (tmp18 != null) {
+    const layout2 = tmp18.layout;
   }
-  let tmp30Result2 = null;
-  if (null != tmp16) {
-    if (tmp2(9053).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
-      const obj15 = { bottomConfig: tmp16, resolveFieldValue: result, numberFormat: memo };
-      tmp30Result2 = tmp30(tmp9(9147), obj15);
-    } else if (tmp2(9053).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
-      const obj16 = { bottomConfig: tmp16, resolveFieldValue: result };
-      tmp30Result2 = tmp30(tmp9(9148), obj16);
+  let tmp32Result2 = null;
+  if (null != tmp18) {
+    if (tmp2(9202).ApplicationWidgetLayoutName.WIDGET_BOTTOM_STATS === layout2) {
+      const obj15 = { bottomConfig: tmp18, resolveFieldValue: result, numberFormat: memo };
+      tmp32Result2 = tmp32(tmp9(9296), obj15);
+    } else if (tmp2(9202).ApplicationWidgetLayoutName.WIDGET_BOTTOM_PROGRESS === layout2) {
+      const obj16 = { bottomConfig: tmp18, resolveFieldValue: result };
+      tmp32Result2 = tmp32(tmp9(9297), obj16);
     } else {
-      tmp30Result2 = null;
-      if (tmp2(9053).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
-        const obj17 = { bottomConfig: tmp16, resolveFieldValue: result };
-        tmp30Result2 = tmp30(tmp9(9149), obj17);
+      tmp32Result2 = null;
+      if (tmp2(9202).ApplicationWidgetLayoutName.WIDGET_BOTTOM_COLLECTION === layout2) {
+        const obj17 = { bottomConfig: tmp18, resolveFieldValue: result };
+        tmp32Result2 = tmp32(tmp9(9298), obj17);
       }
     }
   }
-  let tmp29Result = null;
-  if (null != tmp30Result) {
-    tmp29Result = null;
-    if (null != tmp30Result2) {
+  let tmp31Result2 = null;
+  if (null != tmp32Result) {
+    tmp31Result2 = null;
+    if (null != tmp32Result2) {
       const obj18 = { style: cardStyle, children: null };
-      const items5 = [tmp30Result, , ];
+      const items5 = [tmp32Result, , , ];
       const obj19 = { style: tmp.divider };
-      items5[1] = tmp30(closure_6, obj19);
-      items5[2] = tmp30Result2;
+      items5[1] = tmp32(closure_6, obj19);
+      items5[2] = tmp32Result2;
+      let tmp31Result = null;
+      if (true === tmp15) {
+        const obj20 = { accessibilityRole: "button", accessibilityLabel: null, hitSlop: 8, disabled: null, onPress: null, style: null, children: null };
+        const intl2 = tmp2(1115).intl;
+        obj20.accessibilityLabel = intl2.string(tmp2(1115).t.wzzjk9);
+        obj20.disabled = pending;
+        obj20.onPress = refresh;
+        obj20.style = tmp.refresh;
+        const obj21 = { size: "xs", color: tmp9(576).colors.TEXT_MUTED };
+        const items6 = [tmp32(tmp2(10437).RetryIcon, obj21), ];
+        const obj22 = { variant: "text-xs/medium", color: "text-muted", children: null };
+        const intl3 = tmp2(1115).intl;
+        obj22.children = intl3.string(tmp2(1115).t.wzzjk9);
+        items6[1] = tmp32(tmp2(4752).Text, obj22);
+        obj20.children = items6;
+        tmp31Result = tmp31(tmp2(5339).PressableOpacity, obj20);
+      }
+      items5[3] = tmp31Result;
       obj18.children = items5;
-      tmp29Result = tmp29(tmp9(7310), obj18);
-      const tmp9Result2 = tmp9(7310);
+      tmp31Result2 = tmp31(tmp9(7452), obj18);
+      const tmp9Result2 = tmp9(7452);
     }
   }
-  return tmp29Result;
+  return tmp31Result2;
 };

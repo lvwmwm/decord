@@ -1,22 +1,22 @@
-// Module ID: 17660
-// Function ID: 17661
+// Module ID: 17980
+// Function ID: 17981
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1371, 17651, 1074, 21, 4636, 576, 1114, 4481, 17653, 4355, 11077, 5770, 1611, 1483, 5598, 17661, 1176, 10158, 17662, 5769, 7153, 8348, 9003, 7143, 2]
+// Dependencies: [32, 19, 17, 1372, 17976, 1074, 21, 4756, 576, 1115, 4600, 17978, 4474, 11207, 5906, 1612, 1484, 5734, 17981, 1177, 10286, 17982, 5905, 7295, 8501, 8997, 7285, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17660 (GuildSettingsModalAuditLogFilter)
+// Module 17980 (GuildSettingsModalAuditLogFilter)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import FormRadio from "FormRadio" /* 5770 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11077 */;
-import AuditLogUtils from "AuditLogUtils" /* 17653 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17661 */;
+import util from "util" /* 1115 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import FormRadio from "FormRadio" /* 5906 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11207 */;
+import AuditLogUtils from "AuditLogUtils" /* 17978 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 17981 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17651 */;
+import UserStore from "UserStore" /* 1372 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17976 */;
 
 const require = globalThis.__r;
 
@@ -25,7 +25,7 @@ const View = fn(17).View;
 const AuditLogFilterTypes = fn(1074).AuditLogFilterTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { searchBar: { paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_16 }, allUsersIconContainer: { height: 30, width: 30, alignItems: "center" } };
 let closure_12 = createStyles.createStyles(obj);
 let closure_13 = noop.memo((selected) => {

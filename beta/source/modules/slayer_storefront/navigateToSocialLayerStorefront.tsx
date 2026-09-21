@@ -1,16 +1,16 @@
-// Module ID: 13516
-// Function ID: 13517
+// Module ID: 13695
+// Function ID: 13696
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 1979, 7331, 1074, 10930, 7329, 1100, 7444, 8496, 2]
+// Dependencies: [5, 2063, 7473, 1074, 11060, 7471, 1101, 7583, 8649, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 13516 (navigateToSocialLayerStorefront)
-import router_utils from "router_utils" /* 1100 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7329 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10930 */;
+// Module 13695 (navigateToSocialLayerStorefront)
+import router_utils from "router_utils" /* 1101 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7471 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 11060 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7331 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7473 */;
 
 require = fn;
 function navigateToSocialLayerStorefrontWithGuildPreview() {

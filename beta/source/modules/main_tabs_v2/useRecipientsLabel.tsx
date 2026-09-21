@@ -1,14 +1,14 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11175
+// Function ID: 11176
 // Name: useRecipientsLabel
-// Dependencies: [19, 1371, 1114, 504, 1369, 4481, 2]
+// Dependencies: [19, 1372, 1115, 504, 1370, 4600, 2]
 // Exports: useRecipientsLabel
 
-// Module 11046 (useRecipientsLabel)
-import util from "util" /* 1114 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
+// Module 11175 (useRecipientsLabel)
+import util from "util" /* 1115 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 

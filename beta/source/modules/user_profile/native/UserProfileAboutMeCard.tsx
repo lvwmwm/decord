@@ -1,29 +1,29 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11473
+// Function ID: 11474
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2025, 2021, 1979, 7311, 1074, 1482, 21, 4636, 4338, 576, 4632, 1114, 11345, 504, 5488, 11, 10950, 5665, 11346, 1176, 8488, 7265, 8307, 11347, 4603, 4495, 1100, 7141, 4502, 1609, 8296, 11348, 5056, 7310, 2]
+// Dependencies: [19, 17, 2109, 2105, 2063, 7453, 1074, 1483, 21, 4756, 4457, 576, 4752, 1115, 11474, 504, 5624, 11, 11080, 5801, 11475, 1177, 8641, 7407, 8459, 11476, 4723, 4614, 1101, 7283, 4622, 1610, 8448, 11477, 5186, 7452, 2]
 // Exports: default
 
-// Module 11344 (UserProfileAboutMeCard)
+// Module 11473 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import KeyboardTypes from "KeyboardTypes" /* 1609 */;
-import useToken from "useToken" /* 4338 */;
-import ChatInputUtils from "ChatInputUtils" /* 4502 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7310 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8488 */;
-import BioTextDefault from "BioText" /* 11345 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 11346 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11348 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+import useToken from "useToken" /* 4457 */;
+import ChatInputUtils from "ChatInputUtils" /* 4622 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7452 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8641 */;
+import BioTextDefault from "BioText" /* 11474 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 11475 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11477 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
-const GuildIconDefault = tmp9(5665);
+const GuildIconDefault = tmp9(5801);
 require = fn;
 function Heading(children) {
   const themeType = children.themeType;
@@ -122,36 +122,36 @@ function MemberJoinDates(userId) {
     return member;
   });
   const obj3 = userId(504);
-  const obj4 = userId(5488);
+  const obj4 = userId(5624);
   const createdAtDate = obj4.getCreatedAtDate(SnowflakeUtilsDefault.extractTimestamp(userId), stateFromStores);
   let joinedAt;
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
-  const createdAtDate1 = userId(5488).getCreatedAtDate(joinedAt, stateFromStores);
+  const createdAtDate1 = userId(5624).getCreatedAtDate(joinedAt, stateFromStores);
   const obj7 = { themeType, children: null };
-  const intl = tmp4(1114).intl;
-  obj7.children = intl.string(userId(1114).t.a6XYD9);
+  const intl = tmp4(1115).intl;
+  obj7.children = intl.string(userId(1115).t.a6XYD9);
   const items3 = [closure_11(Heading, obj7), ];
   const obj8 = { style: null, children: null };
   const items4 = [tmp.memberJoinDates, { columnGap }];
   obj8.style = items4;
-  const obj9 = { themeType, icon: closure_11(userId(10950).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
-  const intl2 = tmp4(1114).intl;
-  obj9.accessibilityLabel = intl2.formatToPlainString(userId(1114).t["9t7w53"], { date: createdAtDate });
+  const obj9 = { themeType, icon: closure_11(userId(11080).ClydeIcon, { size: "xs" }), accessibilityLabel: null, children: null };
+  const intl2 = tmp4(1115).intl;
+  obj9.accessibilityLabel = intl2.formatToPlainString(userId(1115).t["9t7w53"], { date: createdAtDate });
   obj9.children = createdAtDate;
   const items5 = [closure_11(TextWithIcon, obj9), ];
   let tmp13Result = null != stateFromStores1 && null != createdAtDate1;
   if (tmp13Result) {
     const obj10 = { children: null };
     const obj11 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    const items6 = [tmp15(tmp4(4632).Text, obj11), ];
+    const items6 = [tmp15(tmp4(4752).Text, obj11), ];
     const obj12 = { themeType, icon: null, accessibilityLabel: null, children: null };
-    const obj13 = { guild: stateFromStores1, size: tmp4(5665).GuildIconSizes.XXSMALL };
+    const obj13 = { guild: stateFromStores1, size: tmp4(5801).GuildIconSizes.XXSMALL };
     obj12.icon = tmp15(GuildIconDefault, obj13);
-    const intl3 = tmp4(1114).intl;
+    const intl3 = tmp4(1115).intl;
     const obj14 = { guildName: stateFromStores1.name, date: createdAtDate1 };
-    obj12.accessibilityLabel = intl3.formatToPlainString(tmp4(1114).t.FdLNDK, obj14);
+    obj12.accessibilityLabel = intl3.formatToPlainString(tmp4(1115).t.FdLNDK, obj14);
     obj12.children = createdAtDate1;
     items6[1] = tmp15(TextWithIcon, obj12);
     obj10.children = items6;
@@ -179,11 +179,11 @@ function FriendsSinceDate(themeType) {
   if (null != friendsSinceDate) {
     const obj2 = { children: null };
     const obj3 = { themeType, children: null };
-    const intl = tmp3(1114).intl;
-    obj3.children = intl.string(tmp3(1114).t.wlTO8v);
+    const intl = tmp3(1115).intl;
+    obj3.children = intl.string(tmp3(1115).t.wlTO8v);
     const items = [closure_1_11(Heading, obj3), ];
     const obj4 = { variant: tmp.textVariant, color: "text-default", children: friendsSinceDate };
-    items[1] = closure_1_11(tmp3(4632).Text, obj4);
+    items[1] = closure_1_11(tmp3(4752).Text, obj4);
     obj2.children = items;
     tmp6 = closure_1_12(View, obj2);
   }
@@ -200,8 +200,8 @@ function PolicyLinks(arg0) {
     let tmp5Result = null != termsOfServiceUrl;
     if (tmp5Result) {
       const obj3 = { url: termsOfServiceUrl, label: null, themeType: null };
-      const intl2 = tmp7(1114).intl;
-      obj3.label = intl2.string(tmp7(1114).t.s7STcY);
+      const intl2 = tmp7(1115).intl;
+      obj3.label = intl2.string(tmp7(1115).t.s7STcY);
       obj3.themeType = themeType;
       tmp5Result = tmp5(PolicyLink, obj3);
     }
@@ -209,8 +209,8 @@ function PolicyLinks(arg0) {
     let tmp5Result2 = null != privacyPolicyUrl;
     if (tmp5Result2) {
       const obj4 = { url: privacyPolicyUrl, label: null, themeType: null };
-      const intl3 = tmp7(1114).intl;
-      obj4.label = intl3.string(tmp7(1114).t.kH3JR5);
+      const intl3 = tmp7(1115).intl;
+      obj4.label = intl3.string(tmp7(1115).t.kH3JR5);
       obj4.themeType = themeType;
       tmp5Result2 = tmp5(PolicyLink, obj4);
     }
@@ -285,15 +285,15 @@ function BotSlashCommands(channel) {
   return tmp8Result;
 }
 const View = fn(17).View;
-const Constants = fn(7311);
+const Constants = fn(7453);
 ({ DIVIDER_DOT: closure_8, UserProfileThemeTypes } = Constants);
 const Routes = fn(1074).Routes;
-const AppLauncherRouteName = fn(1482).AppLauncherRouteName;
+const AppLauncherRouteName = fn(1483).AppLauncherRouteName;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let closure_14 = { headingVariant: "text-sm/semibold", textVariant: "text-md/normal", headingSpacing: 8, rowGap: 24, columnGap: 6 };
 const dependencyMap = { [UserProfileThemeTypes.PREVIEW]: { headingVariant: "text-xs/semibold", textVariant: "text-sm/normal", headingSpacing: 4, rowGap: 12, columnGap: 3 } };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_16 = createStyles.createStyles({ card: { flexDirection: "column" }, textWithIcon: { flexDirection: "row", alignItems: "center" }, memberJoinDates: { flexDirection: "row", flexWrap: "wrap" }, slashCommands: { flex: 1, flexDirection: "row", flexWrap: "wrap", marginBottom: 12 }, policyLinks: { rowGap: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCard.tsx");

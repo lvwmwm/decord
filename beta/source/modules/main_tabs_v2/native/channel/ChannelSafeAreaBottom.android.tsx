@@ -1,12 +1,12 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 12895
+// Function ID: 12896
 // Name: ChannelSafeAreaBottom
-// Dependencies: [11487, 12776, 12777, 2]
+// Dependencies: [11613, 12896, 12897, 2]
 
-// Module 12775 (ChannelSafeAreaBottom)
-import ChannelSafeAreaBottomNoopDefault from "ChannelSafeAreaBottomNoop" /* 12776 */;
-import ChannelSafeAreaBottomAnimatedDefault from "ChannelSafeAreaBottomAnimated" /* 12777 */;
-import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11487 */;
+// Module 12895 (ChannelSafeAreaBottom)
+import ChannelSafeAreaBottomNoopDefault from "ChannelSafeAreaBottomNoop" /* 12896 */;
+import ChannelSafeAreaBottomAnimatedDefault from "ChannelSafeAreaBottomAnimated" /* 12897 */;
+import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11613 */;
 import size from "module_2" /* 2 */;
 
 if (AnimatedKeyboardExperiment.isAnimatedAndroidKeyboard()) {

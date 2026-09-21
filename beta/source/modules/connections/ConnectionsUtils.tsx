@@ -1,30 +1,26 @@
-// Module ID: 5488
-// Function ID: 5489
+// Module ID: 5624
+// Function ID: 5625
 // Name: ConnectionsUtils
-// Dependencies: [2015, 1979, 4275, 5489, 1074, 1365, 38, 1114, 12, 5490, 504, 4457, 1943, 2]
-// Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
+// Dependencies: [2099, 2063, 5625, 1074, 1366, 38, 1115, 12, 5626, 2]
+// Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible
 
-// Module 5488 (ConnectionsUtils)
+// Module 5624 (ConnectionsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import util from "util" /* 1114 */;
-import URLUtilsDefault from "URLUtils" /* 1365 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 5490 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import util from "util" /* 1115 */;
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 5626 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let Constants = fn(5489);
-({ MetadataFields: metroRequire, OperatorTypes: closure_7 } = Constants);
-Constants = fn(1074);
-({ Permissions: closure_8, PlatformTypes: closure_9 } = Constants);
+const Constants = fn(5625);
+({ MetadataFields: hasOwnProperty, OperatorTypes: metroRequire } = Constants);
+const PlatformTypes = fn(1074).PlatformTypes;
 const size = fn(2);
-let result = size.fileFinishedImporting("modules/connections/ConnectionsUtils.tsx");
+const result = size.fileFinishedImporting("modules/connections/ConnectionsUtils.tsx");
 
 export const officialApplicationIds = ["426537812993638400", "1042836142560645130", "296023718839451649", "979802510766268446", "1031611223235637258", "512333785338216465"];
 export const ConnectionConfigurationRuleOperator = { AND: 0, [0]: "AND", OR: 1, [1]: "OR" };
@@ -53,13 +49,13 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
   const rounded = Math.round(Number(value.value));
   _require = rounded;
   if (constants2.EQUAL === operator) {
-    let tmp14 = connectionType === constants4.PAYPAL;
+    let tmp14 = connectionType === PlatformTypes.PAYPAL;
     if (tmp14) {
       tmp14 = connectionMetadataField === constants.PAYPAL_VERIFIED;
     }
     let H97H4S = require("util").t.H97H4S;
     if (tmp14) {
-      H97H4S = tmp11(1114).t["N95b+f"];
+      H97H4S = tmp11(1115).t["N95b+f"];
     }
     tmp11 = _require;
   } else if (tmp2.NOT_EQUAL === operator) {
@@ -85,7 +81,7 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
   if (null != H97H4S) {
     formatResult = H97H4S;
     if (null != operator) {
-      if (constants4.REDDIT === connectionType) {
+      if (PlatformTypes.REDDIT === connectionType) {
         if (constants.CREATED_AT === connectionMetadataField) {
           const intl26 = require("util").intl;
           const obj2 = {
@@ -108,8 +104,8 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           const intl24 = require("util").intl;
           const obj4 = {
             platformQuantityHook() {
-                      const intl = closure_0(1114).intl;
-                      return intl.string(closure_0(1114).t["+/5TCx"]);
+                      const intl = closure_0(1115).intl;
+                      return intl.string(closure_0(1115).t["+/5TCx"]);
                     }
           };
           formatResult = intl24.format(H97H4S, obj4);
@@ -117,8 +113,8 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           const intl23 = require("util").intl;
           const obj5 = {
             platformQuantityHook() {
-                      const intl = closure_0(1114).intl;
-                      return intl.string(closure_0(1114).t["9rPbEs"]);
+                      const intl = closure_0(1115).intl;
+                      return intl.string(closure_0(1115).t["9rPbEs"]);
                     }
           };
           formatResult = intl23.format(H97H4S, obj5);
@@ -210,8 +206,8 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           const intl14 = require("util").intl;
           const obj14 = {
             platformQuantityHook() {
-                      const intl = closure_0(1114).intl;
-                      return intl.string(closure_0(1114).t.xRygZL);
+                      const intl = closure_0(1115).intl;
+                      return intl.string(closure_0(1115).t.xRygZL);
                     }
           };
           formatResult = intl14.format(H97H4S, obj14);
@@ -250,8 +246,8 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           const intl10 = require("util").intl;
           const obj18 = {
             platformQuantityHook() {
-                      const intl = closure_0(1114).intl;
-                      return intl.string(closure_0(1114).t.slSQuB);
+                      const intl = closure_0(1115).intl;
+                      return intl.string(closure_0(1115).t.slSQuB);
                     }
           };
           formatResult = intl10.format(H97H4S, obj18);
@@ -272,8 +268,8 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           const intl8 = require("util").intl;
           const obj20 = {
             platformQuantityHook() {
-                      const intl = closure_0(1114).intl;
-                      return intl.string(closure_0(1114).t.TEEYwa);
+                      const intl = closure_0(1115).intl;
+                      return intl.string(closure_0(1115).t.TEEYwa);
                     }
           };
           formatResult = intl8.format(H97H4S, obj20);
@@ -312,8 +308,8 @@ export const getConnectionsCheckText = function getConnectionsCheckText(value) {
           const intl4 = require("util").intl;
           const obj24 = {
             platformQuantityHook() {
-                      const intl = closure_0(1114).intl;
-                      return intl.string(closure_0(1114).t.uv7ety);
+                      const intl = closure_0(1115).intl;
+                      return intl.string(closure_0(1115).t.uv7ety);
                     }
           };
           formatResult = intl4.format(H97H4S, obj24);
@@ -423,21 +419,4 @@ export const getCreatedAtDate = function getCreatedAtDate(metadata, locale) {
     }
   }
   return null;
-};
-export const useShowLinkedRolesAdminNux = function useShowLinkedRolesAdminNux(arg0) {
-  _require = arg0;
-  const items = [GuildRoleStore, PermissionStore];
-  return require("initialize").useStateFromStores(items, () => {
-    const sortedRoles = GuildRoleStore.getSortedRoles(id.id);
-    const someResult = sortedRoles.some((tags) => null === tags.tags.guild_connections);
-    const result = DismissibleContentUnsafeUtils.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CONNECTIONS_NUX);
-    let tmp4 = !someResult;
-    if (!someResult) {
-      tmp4 = result;
-    }
-    if (tmp4) {
-      tmp4 = canResult;
-    }
-    return tmp4;
-  });
 };

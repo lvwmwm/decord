@@ -1,23 +1,23 @@
-// Module ID: 7657
-// Function ID: 7658
+// Module ID: 7796
+// Function ID: 7797
 // Name: CollectiblesUtils
-// Dependencies: [7650, 1887, 7651, 7652, 7658, 1076, 1074, 1085, 4294, 1377, 1379, 7337, 1363, 1889, 12, 1114, 7656, 2]
+// Dependencies: [7789, 1971, 7790, 7791, 7797, 1076, 1074, 1085, 4414, 1378, 1380, 7479, 1364, 1973, 12, 1115, 7795, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 7657 (CollectiblesUtils)
+// Module 7796 (CollectiblesUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import PerksStateUtils from "PerksStateUtils" /* 1377 */;
-import NameplateRecord from "NameplateRecord" /* 1887 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
-import PriceUtils from "PriceUtils" /* 7337 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7650 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7651 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7652 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7656 */;
-import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7658 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import PerksStateUtils from "PerksStateUtils" /* 1378 */;
+import NameplateRecord from "NameplateRecord" /* 1971 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
+import PriceUtils from "PriceUtils" /* 7479 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7789 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7790 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7791 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7795 */;
+import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7797 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
@@ -32,21 +32,21 @@ function getItemRecordsFromPurchases(arr, PROFILE_EFFECT) {
     const found = tmp(12).flatMap(items, "items").filter(isAvatarDecorationRecord);
     const flatMapResult = tmp(12).flatMap(items, "items");
     return tmp(12).uniqBy(found, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1889).CollectiblesItemType.NAMEPLATE) {
+  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.NAMEPLATE) {
     const items1 = [];
     HermesBuiltin.arraySpread(arr.values(), 0);
     const tmpResult9 = tmp(12);
     const found1 = tmp(12).flatMap(items1, "items").filter(isNameplateRecord);
     const flatMapResult1 = tmp(12).flatMap(items1, "items");
     return tmp(12).uniqBy(found1, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1889).CollectiblesItemType.PROFILE_EFFECT) {
+  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_EFFECT) {
     const items2 = [];
     HermesBuiltin.arraySpread(arr.values(), 0);
     const tmpResult11 = tmp(12);
     const found2 = tmp(12).flatMap(items2, "items").filter(isProfileEffectRecord);
     const flatMapResult2 = tmp(12).flatMap(items2, "items");
     return tmp(12).uniqBy(found2, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1889).CollectiblesItemType.PROFILE_FRAME) {
+  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_FRAME) {
     const items3 = [];
     HermesBuiltin.arraySpread(arr.values(), 0);
     const tmpResult13 = tmp(12);
@@ -87,17 +87,17 @@ function getItemRecordsFromCategories(arr, PROFILE_EFFECT) {
     const found = tmp(12).flatMap(uniqByResult, "items").filter(isAvatarDecorationRecord);
     const flatMapResult1 = tmp(12).flatMap(uniqByResult, "items");
     return tmp(12).uniqBy(found, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1889).CollectiblesItemType.NAMEPLATE) {
+  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.NAMEPLATE) {
     const tmpResult9 = tmp(12);
     const found1 = tmp(12).flatMap(uniqByResult, "items").filter(isNameplateRecord);
     const flatMapResult2 = tmp(12).flatMap(uniqByResult, "items");
     return tmp(12).uniqBy(found1, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1889).CollectiblesItemType.PROFILE_EFFECT) {
+  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_EFFECT) {
     const tmpResult11 = tmp(12);
     const found2 = tmp(12).flatMap(uniqByResult, "items").filter(isProfileEffectRecord);
     const flatMapResult3 = tmp(12).flatMap(uniqByResult, "items");
     return tmp(12).uniqBy(found2, "skuId");
-  } else if (PROFILE_EFFECT === tmp(1889).CollectiblesItemType.PROFILE_FRAME) {
+  } else if (PROFILE_EFFECT === tmp(1973).CollectiblesItemType.PROFILE_FRAME) {
     const tmpResult13 = tmp(12);
     const found3 = tmp(12).flatMap(uniqByResult, "items").filter(isProfileFrameRecord);
     const flatMapResult4 = tmp(12).flatMap(uniqByResult, "items");
@@ -139,17 +139,17 @@ export const getShopDiscountSource = function getShopDiscountSource(currentUser)
       if (currentUser != null) {
         perks = currentUser.perks;
       }
-      const perkSource = PerksStateUtils.getPerkSource(perks, tmp4(1379).Perk.SHOP_DISCOUNTS);
+      const perkSource = PerksStateUtils.getPerkSource(perks, tmp4(1380).Perk.SHOP_DISCOUNTS);
       let hasItem;
       if (perkSource != null) {
-        hasItem = perkSource.includes(tmp4(1379).PerkSource.SOURCE_NITRO);
+        hasItem = perkSource.includes(tmp4(1380).PerkSource.SOURCE_NITRO);
       }
       if (hasItem) {
         let NITRO = obj.NITRO;
       } else {
         let hasItem1;
         if (perkSource != null) {
-          hasItem1 = perkSource.includes(tmp4(1379).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+          hasItem1 = perkSource.includes(tmp4(1380).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         }
         NITRO = null;
         if (hasItem1) {
@@ -287,7 +287,7 @@ export const getBundleItemsPriceSum = function getBundleItemsPriceSum(bundledPro
         return acc + num;
       }, 0);
     } else {
-      const tmpResult = tmp(1363);
+      const tmpResult = tmp(1364);
     }
     DEFAULT = constants3.DEFAULT;
     obj = require("PlatformUtils");
@@ -396,7 +396,7 @@ export const getProductDiscount = function getProductDiscount(product, hasShopDi
           return acc + num;
         }, 0);
       } else {
-        const tmpResult = tmp(1363);
+        const tmpResult = tmp(1364);
       }
       DEFAULT = constants3.DEFAULT;
       obj = require("PlatformUtils");
@@ -551,17 +551,17 @@ export { getItemRecordsFromPurchases };
 export { getItemRecordsFromCategories };
 export const getCollectibleTypeLabel = function getCollectibleTypeLabel(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl4 = tmp(1114).intl;
-    return intl4.string(tmp(1114).t["7v0T9P"]);
-  } else if (tmp(1889).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl3 = tmp(1114).intl;
-    return intl3.string(tmp(1114).t.wR5wOo);
-  } else if (tmp(1889).CollectiblesItemType.NAMEPLATE === type) {
-    const intl2 = tmp(1114).intl;
-    return intl2.string(tmp(1114).t.x5CoXR);
-  } else if (tmp(1889).CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp(1114).intl;
-    return intl.string(tmp(1114).t.GWrZOd);
+    const intl4 = tmp(1115).intl;
+    return intl4.string(tmp(1115).t["7v0T9P"]);
+  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
+    const intl3 = tmp(1115).intl;
+    return intl3.string(tmp(1115).t.wR5wOo);
+  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === type) {
+    const intl2 = tmp(1115).intl;
+    return intl2.string(tmp(1115).t.x5CoXR);
+  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
+    const intl = tmp(1115).intl;
+    return intl.string(tmp(1115).t.GWrZOd);
   } else {
     return null;
   }
@@ -776,10 +776,10 @@ export const getStrikeThroughPriceAmountForCollectiblesProduct = function getStr
           return acc + num;
         }, 0);
       } else {
-        const tmp2Result2 = tmp2(1363);
+        const tmp2Result2 = tmp2(1364);
       }
       DEFAULT = constants3.DEFAULT;
-      tmp2Result = tmp2(1363);
+      tmp2Result = tmp2(1364);
     }
   } else if (!c5) {
     const tmp5 = stateFromStores.prices[arg2 ? tmp16.MOBILE_PREMIUM_TIER_2 : tmp16.PREMIUM_TIER_2];
@@ -820,15 +820,15 @@ export const canActionOnProduct = function canActionOnProduct(arg0) {
 export const getProductTypeNameForLogging = function getProductTypeNameForLogging(arg0, arg1) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === arg0) {
     return "avatar decoration";
-  } else if (tmp(1889).CollectiblesItemType.PROFILE_EFFECT === arg0) {
+  } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === arg0) {
     return "profile effect";
-  } else if (tmp(1889).CollectiblesItemType.NAMEPLATE === arg0) {
+  } else if (tmp(1973).CollectiblesItemType.NAMEPLATE === arg0) {
     return "nameplate";
-  } else if (tmp(1889).CollectiblesItemType.PROFILE_FRAME === arg0) {
+  } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === arg0) {
     return "profile frame";
-  } else if (tmp(1889).CollectiblesItemType.BUNDLE === arg0) {
+  } else if (tmp(1973).CollectiblesItemType.BUNDLE === arg0) {
     return "bundle";
-  } else if (tmp(1889).CollectiblesItemType.EXTERNAL_SKU === arg0) {
+  } else if (tmp(1973).CollectiblesItemType.EXTERNAL_SKU === arg0) {
     let str3 = "3-day nitro credit";
     if (arg1 !== constants.FRACTIONAL_PREMIUM) {
       let str4 = "1-day nitro credit";
@@ -842,7 +842,7 @@ export const getProductTypeNameForLogging = function getProductTypeNameForLoggin
       str3 = str4;
     }
     return str3;
-  } else if (tmp(1889).CollectiblesItemType.VARIANTS_GROUP === arg0) {
+  } else if (tmp(1973).CollectiblesItemType.VARIANTS_GROUP === arg0) {
     return "variants group";
   } else {
     return "unknown";

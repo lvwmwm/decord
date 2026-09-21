@@ -1,15 +1,15 @@
-// Module ID: 1430
-// Function ID: 1431
+// Module ID: 1431
+// Function ID: 1432
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1074, 1431, 1437, 559, 1461, 1471, 1365, 1474, 1432, 1878, 12, 2]
+// Dependencies: [32, 5, 1074, 1432, 1438, 559, 1462, 1472, 1366, 1475, 1433, 1879, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1430 (ImageLoaderUtils)
-import URLUtilsDefault from "URLUtils" /* 1365 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1431 */;
-import privDefault from "priv" /* 1437 */;
-import ImageUtils from "ImageUtils" /* 1474 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1878 */;
+// Module 1431 (ImageLoaderUtils)
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1432 */;
+import privDefault from "priv" /* 1438 */;
+import ImageUtils from "ImageUtils" /* 1475 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1879 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -46,8 +46,8 @@ function getSrcWithWidthAndHeight(quality) {
       const items = [, ];
       [arr[0], tmp6] = src.split("?");
       let tmp5 = _slicedToArray(src.split("?"), 2);
-      items[1] = tmp2(1471).parse(tmp6);
-      const tmp2Result = tmp2(1471);
+      items[1] = tmp2(1472).parse(tmp6);
+      const tmp2Result = tmp2(1472);
       [tmp8, tmp9] = items;
       if (null != format) {
         tmp9.format = format;
@@ -91,10 +91,10 @@ function getSrcWithWidthAndHeight(quality) {
         let size = { width, height };
         if (null != tmp18) {
           const obj2 = { targetWidth: width, targetHeight: height, sourceWidth, sourceHeight, maxUpscale: null };
-          const tmp15Result = tmp15(1432);
-          obj2.maxUpscale = tmp15(1432).getSnapDownMaxUpscale(tmp18, tmp2(1878)());
+          const tmp15Result = tmp15(1433);
+          obj2.maxUpscale = tmp15(1433).getSnapDownMaxUpscale(tmp18, tmp2(1879)());
           size = tmp15Result.snapAttachmentDimensions(obj2);
-          const tmp15Result2 = tmp15(1432);
+          const tmp15Result2 = tmp15(1433);
         }
         if (!tmp19) {
           tmp9.width = size.width | 0;
@@ -105,7 +105,7 @@ function getSrcWithWidthAndHeight(quality) {
       const fitResult = ImageUtils.fit(size1);
       let text = tmp8;
       if (!tmp2Result3.isEmpty(tmp9)) {
-        tmp2(1471);
+        tmp2(1472);
         text = `${tmp8}?${obj9.stringify(tmp9)}`;
       }
       return text;
@@ -262,7 +262,7 @@ export const loadImage = function loadImage(url, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = closure_2_4(/* F108946 */ function() { ... });
+                            image.onerror = closure_2_4(/* F110811 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = backoff.url;
                           });

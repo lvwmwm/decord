@@ -1,14 +1,14 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12755
+// Function ID: 12756
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [7491, 1943, 12628, 12635, 2]
+// Dependencies: [7630, 2027, 12749, 12756, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 12634 (GuildPowerupsNotificationsDCF)
-import dismissible_content from "dismissible_content" /* 1943 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7491 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12628 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12635 */;
+// Module 12755 (GuildPowerupsNotificationsDCF)
+import dismissible_content from "dismissible_content" /* 2027 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12749 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12756 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
@@ -35,7 +35,7 @@ export const useNewPerkAvailableCoachmarkDCF = function useNewPerkAvailableCoach
 export const useGuildPowerupNotificationDCF = function useGuildPowerupNotificationDCF(arg0) {
   let prop = null;
   if (arg0) {
-    prop = tmp(1943).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
+    prop = tmp(2027).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
   }
   const obj = useSelectedDismissibleContent;
   return obj.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: GuildPowerupsNotification.GUILD_POWERUP_NOTIFICATION_COOLDOWN });
@@ -68,7 +68,7 @@ export const useBoostToUnlockCoachmarkDCF = function useBoostToUnlockCoachmarkDC
   if (arg0) {
     prop = null;
     if (obj.useConfig({ location: _location }).showCoachmark) {
-      prop = tmp2(1943).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
+      prop = tmp2(2027).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }
   const obj2 = useSelectedDismissibleContent;

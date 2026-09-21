@@ -1,16 +1,9 @@
 // Module ID: 14438
 // Function ID: 14439
-// Dependencies: [14411]
+// Dependencies: [1121]
 
 // Module 14438
-import _mod14411 from "module_14411" /* 14411 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0) => {
-  if (_mod14411(arg0)) {
-    return arg0;
-  } else {
-    const tmp5 = new TypeError(String(arg0) + " is not an object");
-    throw tmp5;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "f8abc9efddaeaee5956e3c3ac3b829de", name: "NitroGem18", type: "lottie" });

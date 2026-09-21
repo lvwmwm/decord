@@ -1,13 +1,13 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15231
+// Function ID: 15232
 // Name: ConnectionsSetting
-// Dependencies: [1074, 11605, 1114, 15044, 15046, 2]
+// Dependencies: [1074, 11725, 1115, 15232, 15234, 2]
 
-// Module 15043 (ConnectionsSetting)
+// Module 15231 (ConnectionsSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1114 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 15044 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+import util from "util" /* 1115 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 15232 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

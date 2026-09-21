@@ -1,11 +1,11 @@
 // Module ID: 4080
 // Function ID: 4081
-// Dependencies: [3725, 3726]
+// Dependencies: [3845, 3846]
 // Exports: default
 
 // Module 4080
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3845" /* 3845 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -23,11 +23,14 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
+let c2 = 86400000;
 
-export default function isSameYear(arg0, arg1) {
-  requiredArgs.default(2, arguments);
+export default function getUTCDayOfYear(arg0) {
+  requiredArgs.default(1, arguments);
   const defaultResult1 = _typeof.default(arg0);
-  const fullYear = defaultResult1.getFullYear();
-  return fullYear === _typeof.default(arg1).getFullYear();
+  const time = defaultResult1.getTime();
+  defaultResult1.setUTCMonth(0, 1);
+  defaultResult1.setUTCHours(0, 0, 0, 0);
+  return Math.floor((time - defaultResult1.getTime()) / c2) + 1;
 };
 export default exports.default;

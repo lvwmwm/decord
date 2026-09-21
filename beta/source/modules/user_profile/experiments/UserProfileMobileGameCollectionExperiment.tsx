@@ -1,11 +1,11 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 13196
+// Function ID: 13197
 // Name: UserProfileMobileGameCollectionExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: useIsMobileGameCollectionExperimentEnabled
 
-// Module 9162 (UserProfileMobileGameCollectionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 13196 (UserProfileMobileGameCollectionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-mobile-game-collection", kind: "user", defaultConfig: { enabled: false }, variations: null };
@@ -15,6 +15,6 @@ obj.variations = obj2;
 let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileMobileGameCollectionExperiment.tsx");
 
-export const useIsMobileGameCollectionExperimentEnabled = function useIsMobileGameCollectionExperimentEnabled(UserProfileWidgetsBoard) {
-  return closure_0.useConfig({ location: UserProfileWidgetsBoard }).enabled;
+export const useIsMobileGameCollectionExperimentEnabled = function useIsMobileGameCollectionExperimentEnabled(UserProfileContent) {
+  return closure_0.useConfig({ location: UserProfileContent }).enabled;
 };

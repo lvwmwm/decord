@@ -1,11 +1,11 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 14950
+// Function ID: 14951
 // Name: useAnnounceError
-// Dependencies: [19, 4348, 2]
+// Dependencies: [19, 4467, 2]
 // Exports: useAnnounceError
 
-// Module 14762 (useAnnounceError)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
+// Module 14950 (useAnnounceError)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

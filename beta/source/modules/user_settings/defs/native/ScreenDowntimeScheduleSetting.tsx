@@ -1,16 +1,14 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15793
+// Function ID: 15794
 // Name: ScreenDowntimeScheduleSetting
-// Dependencies: [8079, 7696, 15001, 8768, 11605, 1114, 1935, 2]
+// Dependencies: [8233, 15189, 8923, 11725, 1115, 2019, 2]
 
-// Module 15604 (ScreenDowntimeScheduleSetting)
-import util from "util" /* 1114 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import FamilyCenterV3Experiment from "FamilyCenterV3Experiment" /* 7696 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import useUserLinks from "useUserLinks" /* 8768 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15001 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15793 (ScreenDowntimeScheduleSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15189 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({
@@ -29,16 +27,11 @@ const toggle = SettingBuilders.createToggle({
     return EnableScreenDowntimeScheduleNotifications.updateSetting(arg0);
   },
   usePredicate() {
-    let isFamilyCenterV3Enabled = FamilyCenterV3Experiment.useIsFamilyCenterV3Enabled({ location: "ScreenDowntimeScheduleSetting" });
-    const tmp2 = useUserIsTeenAgeGroupDefault();
-    const hasActiveParentLinks = useUserLinks.useHasActiveParentLinks();
-    if (isFamilyCenterV3Enabled) {
-      isFamilyCenterV3Enabled = tmp2;
+    let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
+    if (hasActiveParentLinks) {
+      hasActiveParentLinks = obj.useHasActiveParentLinks();
     }
-    if (isFamilyCenterV3Enabled) {
-      isFamilyCenterV3Enabled = hasActiveParentLinks;
-    }
-    return isFamilyCenterV3Enabled;
+    return hasActiveParentLinks;
   }
 });
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeScheduleSetting.tsx");

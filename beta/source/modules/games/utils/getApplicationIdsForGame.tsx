@@ -1,13 +1,16 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 9633
+// Function ID: 9634
 // Name: getApplicationIdsForGame
-// Dependencies: [4864, 1916, 2]
-// Exports: default
+// Dependencies: [4983, 2000, 504, 2]
+// Exports: default, useApplicationIdsForGame
 
-// Module 11653 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 4864 */;
-import GameStore from "GameStore" /* 1916 */;
+// Module 9633 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 4983 */;
+import GameStore from "GameStore" /* 2000 */;
 
+const require = globalThis.__r;
+
+const require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/games/utils/getApplicationIdsForGame.tsx");
 
@@ -15,20 +18,20 @@ export default function getApplicationIdsForGame(gameId) {
   const set = new Set();
   if (null != gameId) {
     set.add(gameId);
-    let game = GameStore.getGame(gameId);
+    const game = GameStore.getGame(gameId);
     if (game != null) {
-      let linkedApplications = game.linkedApplications;
+      const linkedApplications = game.linkedApplications;
       if (linkedApplications != null) {
-        let item = linkedApplications.forEach((id) => set.add(id.id));
+        const item = linkedApplications.forEach((id) => set.add(id.id));
       }
     }
-    const application = set.getApplication(gameId);
+    const application = ApplicationStore.getApplication(gameId);
     if (application != null) {
       const linkedGames = application.linkedGames;
       if (linkedGames != null) {
         const item1 = linkedGames.forEach((id) => {
           set.add(id.id);
-          const game = GameStore.getGame(id.id);
+          game = game.getGame(id.id);
           if (game != null) {
             const linkedApplications = game.linkedApplications;
             if (linkedApplications != null) {
@@ -40,4 +43,39 @@ export default function getApplicationIdsForGame(gameId) {
     }
   }
   return set;
+};
+export const useApplicationIdsForGame = function useApplicationIdsForGame(gameId) {
+  _require = gameId;
+  const items = [GameStore, ApplicationStore];
+  const items1 = [gameId];
+  return require("initialize").useStateFromStoresArray(items, () => {
+    const set = new Set();
+    if (null != closure_0) {
+      set.add(tmp);
+      game = GameStore.getGame(tmp);
+      if (game != null) {
+        let linkedApplications = game.linkedApplications;
+        if (linkedApplications != null) {
+          let item = linkedApplications.forEach((id) => set.add(id.id));
+        }
+      }
+      const application = ApplicationStore.getApplication(tmp);
+      if (application != null) {
+        const linkedGames = application.linkedGames;
+        if (linkedGames != null) {
+          const item1 = linkedGames.forEach((id) => {
+            set.add(id.id);
+            game = game.getGame(id.id);
+            if (game != null) {
+              const linkedApplications = game.linkedApplications;
+              if (linkedApplications != null) {
+                const item = linkedApplications.forEach((id) => set.add(id.id));
+              }
+            }
+          });
+        }
+      }
+    }
+    return Array.from(set);
+  }, items1);
 };

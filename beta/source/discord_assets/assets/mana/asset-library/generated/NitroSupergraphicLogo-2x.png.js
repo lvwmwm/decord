@@ -1,11 +1,11 @@
-// Module ID: 6403
-// Function ID: 6404
+// Module ID: 6543
+// Function ID: 6544
 // Dependencies: [2]
 
-// Module 6403
+// Module 6543
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroSupergraphicLogo-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/9d21bbe06819bc213bd29dbc98db9225913da0efe533bd72bdcd0e7dbc74d058.png";
-export const metadata = { fileBytes: 2044 };
+export default "https://cdn.discordapp.com/assets/content/b91d6359e9756d0fb60e42301859f4ddf39fdc00f6afa82529c57427fd325faa.png";
+export const metadata = { fileBytes: 2019 };

@@ -1,10 +1,9 @@
 // Module ID: 11363
 // Function ID: 11364
-// Dependencies: [17]
+// Dependencies: [1121]
 
 // Module 11363
-import _mod17 from "module_17" /* 17 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const TurboModuleRegistry = _mod17.TurboModuleRegistry;
 
-export const NativeDocumentPicker = TurboModuleRegistry.getEnforcing("RNDocumentPicker");
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "6ab310fc9336bead9d2a9726051f2397", name: "SpendEarnOrbsLightTheme", type: "lottie" });

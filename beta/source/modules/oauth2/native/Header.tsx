@@ -1,14 +1,14 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9551
+// Function ID: 9552
 // Name: oauth2/Header
-// Dependencies: [19, 17, 1074, 21, 4636, 576, 1396, 1176, 4632, 9568, 1384, 1114, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 1397, 1177, 4752, 9552, 1385, 1115, 2]
 // Exports: default
 
-// Module 9567 (oauth2/Header)
+// Module 9551 (oauth2/Header)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import native from "native" /* 1177 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 const UserFlags = fn(1074).UserFlags;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { header: { paddingBottom: 16, marginHorizontal: 16, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm, flexDirection: "column", justifyContent: "center", alignItems: "center" }, applicationNameWrapper: { flexDirection: "row" }, headerIcons: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 24 }, ellipseGroup: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 24 }, ellipse: null, botTag: null };
 let size = { width: 4, height: 4, marginHorizontal: 2, backgroundColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, opacity: 0.1, borderRadius: 2 };
 obj2.ellipse = size;
@@ -31,8 +31,8 @@ export default function Header(accountScopes) {
   let userAvatarSource;
   const applicationIconSource = AvatarUtilsDefault.getApplicationIconSource({ id: application.id, icon: application.icon });
   if (null != user) {
-    userAvatarSource = tmp2(1396).getUserAvatarSource(user);
-    const tmp2Result = tmp2(1396);
+    userAvatarSource = tmp2(1397).getUserAvatarSource(user);
+    const tmp2Result = tmp2(1397);
   }
   const obj3 = { style: tmp.header, children: null };
   const obj4 = { style: tmp.headerIcons, children: null };
@@ -56,22 +56,22 @@ export default function Header(accountScopes) {
     const obj13 = { style: tmp.botTag, verified: null };
     let hasFlagResult = null != bot.public_flags;
     if (hasFlagResult) {
-      hasFlagResult = tmp9(1384).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
-      const tmp9Result = tmp9(1384);
+      hasFlagResult = tmp9(1385).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
+      const tmp9Result = tmp9(1385);
     }
     obj13.verified = hasFlagResult;
-    tmp8Result = tmp8(tmp2(9568), obj13);
-    const tmp2Result2 = tmp2(9568);
+    tmp8Result = tmp8(tmp2(9552), obj13);
+    const tmp2Result2 = tmp2(9552);
   }
   items3[1] = tmp8Result;
   obj11.children = items3;
   items2[1] = timestampProducer(View, obj11);
   if (accountScopes.accountScopes.length > 0) {
-    const intl2 = tmp9(1114).intl;
-    let stringResult = intl2.string(tmp9(1114).t.jFbDnJ);
+    const intl2 = tmp9(1115).intl;
+    let stringResult = intl2.string(tmp9(1115).t.jFbDnJ);
   } else {
-    const intl = tmp9(1114).intl;
-    stringResult = intl.string(tmp9(1114).t["X+Fdpo"]);
+    const intl = tmp9(1115).intl;
+    stringResult = intl.string(tmp9(1115).t["X+Fdpo"]);
   }
   items2[2] = hasOwnProperty(Text_Text.Text, { variant: "heading-md/normal", color: "text-default", children: stringResult });
   obj3.children = items2;

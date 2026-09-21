@@ -1,13 +1,13 @@
-// Module ID: 4339
-// Function ID: 4340
+// Module ID: 4458
+// Function ID: 4459
 // Name: SemanticColorContext
-// Dependencies: [1091, 672, 4340, 4346, 4455, 2]
+// Dependencies: [1092, 672, 4459, 4465, 4574, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 4339 (SemanticColorContext)
+// Module 4458 (SemanticColorContext)
 import _modDef672 from "module_672" /* 672 */;
-import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4346 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4455 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4465 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4574 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
@@ -21,13 +21,13 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
     ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
     let tmp9 = null;
     if (null != primaryColor2) {
-      const int2hexResult = tmp(1091).int2hex(primaryColor2);
-      const tmpResult = tmp(1091);
+      const int2hexResult = tmp(1092).int2hex(primaryColor2);
+      const tmpResult = tmp(1092);
       if (secondaryColor == null) {
         secondaryColor = primaryColor2;
       }
-      const int2hexResult1 = tmp(1091).int2hex(secondaryColor);
-      const tmpResult3 = tmp(1091);
+      const int2hexResult1 = tmp(1092).int2hex(secondaryColor);
+      const tmpResult3 = tmp(1092);
       const obj5 = _modDef672(int2hexResult);
       const mixResult = _modDef672(int2hexResult).mix(int2hexResult1, 0.5);
       const hexResult = _modDef672(int2hexResult).mix(int2hexResult1, 0.5).hex();
@@ -39,7 +39,7 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
       const obj4 = { "gradient.start": int2hexResult, "gradient.mid": hexResult, "gradient.end": int2hexResult1, "gradient.top": int2hexResult, "gradient.bottom": int2hexResult1, "gradient.primary": int2hexResult, "gradient.secondary": int2hexResult1 };
       obj3.colors = obj4;
       tmp9 = obj3;
-      tmpResult4 = tmp(4340);
+      tmpResult4 = tmp(4459);
     }
     gradientThemeMetadata = tmp9;
   }

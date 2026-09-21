@@ -1,17 +1,17 @@
-// Module ID: 9927
-// Function ID: 9928
+// Module ID: 9895
+// Function ID: 9896
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 7629, 504, 9928, 9795, 12, 11, 1090, 9911, 2]
+// Dependencies: [32, 19, 7768, 504, 9896, 9753, 12, 11, 1091, 9879, 2]
 // Exports: default
 
-// Module 9927 (useGuildEventRecurrences)
+// Module 9895 (useGuildEventRecurrences)
 import _modDef12 from "module_12" /* 12 */;
-import ScheduleUtils from "ScheduleUtils" /* 9795 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9911 */;
-import usePrevValueDefault from "usePrevValue" /* 9928 */;
+import ScheduleUtils from "ScheduleUtils" /* 9753 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9879 */;
+import usePrevValueDefault from "usePrevValue" /* 9896 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7629 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
 
 const require = globalThis.__r;
 
@@ -29,12 +29,12 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
   closure_4 = tmp4;
   if (null != byWeekday) {
     if (null != stateFromStores) {
-      const tmpResult = tmp(9795);
+      const tmpResult = tmp(9753);
       let _Date = Date;
-      let rRule = tmp(9795).getRRule(byWeekday);
+      let rRule = tmp(9753).getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);
       const nextRecurrences = tmpResult.generateNextRecurrences(4, rRule, date);
-      const tmpResult2 = tmp(9795);
+      const tmpResult2 = tmp(9753);
     }
     const tmp14 = stateFromStores(tmp5([]), 2);
     recurrenceStartTimes = tmp14[0];
@@ -60,8 +60,8 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
       if (null != closure_1) {
         const mapped = first.map((getTime) => {
           const time = getTime.getTime();
-          const rounded = Math.floor(time / closure_1_1(1090).Millis.SECOND);
-          return closure_1_1(11).fromTimestamp(rounded * closure_1_1(1090).Millis.SECOND);
+          const rounded = Math.floor(time / closure_1_1(1091).Millis.SECOND);
+          return closure_1_1(11).fromTimestamp(rounded * closure_1_1(1091).Millis.SECOND);
         });
         const guildEventUserCounts = GuildScheduledEventManagerDefault.getGuildEventUserCounts(tmp, closure_0, mapped);
       }

@@ -1,13 +1,13 @@
-// Module ID: 8859
-// Function ID: 8860
+// Module ID: 9012
+// Function ID: 9013
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 4636, 576, 8860, 4632, 5056, 1114, 7312, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9013, 4752, 5186, 1115, 7454, 2]
 // Exports: GameProfileSectionSkeleton, default
 
-// Module 8859 (GameProfileSection)
+// Module 9012 (GameProfileSection)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8860 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9013 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { gap: nativeDefault.space.PX_8 }, header: null, skeletonTitle: null };
 let obj3 = { gap: nativeDefault.space.PX_8 };
 obj2.header = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, minHeight: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_8 };
@@ -40,11 +40,11 @@ export default function GameProfileSection(onPressViewAll) {
   let tmp4Result = null != onPressViewAll;
   if (tmp4Result) {
     const obj3 = { text: null, variant: "tertiary", size: "sm", icon: null, iconPosition: "end", onPress: null };
-    const intl = tmp5(1114).intl;
-    obj3.text = intl.string(tmp5(1114).t.budhsM);
-    obj3.icon = tmp4(tmp5(7312).ChevronSmallRightIcon, { size: "sm" });
+    const intl = tmp5(1115).intl;
+    obj3.text = intl.string(tmp5(1115).t.budhsM);
+    obj3.icon = tmp4(tmp5(7454).ChevronSmallRightIcon, { size: "sm" });
     obj3.onPress = onPressViewAll;
-    tmp4Result = tmp4(tmp5(5056).Button, obj3);
+    tmp4Result = tmp4(tmp5(5186).Button, obj3);
   }
   items2[1] = tmp4Result;
   obj2.children = items2;

@@ -1,14 +1,14 @@
-// Module ID: 7068
-// Function ID: 7069
+// Module ID: 7210
+// Function ID: 7211
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 6722, 6715, 6716, 6720, 6724, 2]
+// Dependencies: [19, 17, 21, 6863, 6856, 6857, 6861, 6865, 2]
 
-// Module 7068 (SplitTextField)
-import useTextField from "useTextField" /* 6715 */;
-import useInputClearButton from "useInputClearButton" /* 6716 */;
-import useInputAttachments from "useInputAttachments" /* 6720 */;
-import InputFieldContainer from "InputFieldContainer" /* 6722 */;
-import BaseTextField from "BaseTextField" /* 6724 */;
+// Module 7210 (SplitTextField)
+import useTextField from "useTextField" /* 6856 */;
+import useInputClearButton from "useInputClearButton" /* 6857 */;
+import useInputAttachments from "useInputAttachments" /* 6861 */;
+import InputFieldContainer from "InputFieldContainer" /* 6863 */;
+import BaseTextField from "BaseTextField" /* 6865 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,8 +19,8 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/SplitTextInput/native/SplitTextField.native.tsx");
 
 export const SplitTextField = noop.forwardRef((size, ref) => {
-  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, isRound: size.isRound });
-  const obj2 = { size: size.size, isRound: size.isRound };
+  const inputStyles = InputFieldContainer.useInputStyles({ size: size.size, round: size.round });
+  const obj2 = { size: size.size, round: size.round };
   const textField = useTextField.useTextField(size, ref);
   ({ inputProps, innerRef, state } = textField);
   const inputClearButtonConfig = useInputClearButton.useInputClearButtonConfig(size, state);
@@ -48,7 +48,7 @@ export const SplitTextField = noop.forwardRef((size, ref) => {
             }
       };
       const merged = Object.assign(size.leadingPressableProps);
-      obj8.children = tmp(6720).renderInputAttachment(undefined, size.leadingText, inputStyles.text);
+      obj8.children = tmp(6861).renderInputAttachment(undefined, size.leadingText, inputStyles.text);
       obj7.children = <React2 style={function style(pressed) {
         let obj;
         if (pressed.pressed) {
@@ -58,7 +58,7 @@ export const SplitTextField = noop.forwardRef((size, ref) => {
         return items;
       }} />;
       tmp8 = <React3 style={inputStyles.splitBorder}>{null}</React3>;
-      const tmpResult2 = tmp(6720);
+      const tmpResult2 = tmp(6861);
     }
   }
   const obj9 = {};

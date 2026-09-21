@@ -1,18 +1,18 @@
-// Module ID: 12667
-// Function ID: 12668
+// Module ID: 12788
+// Function ID: 12789
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4525, 4526, 504, 12632, 1114, 2428, 2]
+// Dependencies: [19, 4644, 4645, 504, 12754, 1115, 2514, 2]
 // Exports: default
 
-// Module 12667 (useCanGuildPowerupBeToggled)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12632 */;
+// Module 12788 (useCanGuildPowerupBeToggled)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12754 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4525 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PowerupActiveStatusType = fn(4526).PowerupActiveStatusType;
+const PowerupActiveStatusType = fn(4645).PowerupActiveStatusType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");
 
@@ -59,8 +59,8 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
           let formatToPlainStringResult;
           if (null != found1) {
             if (null != allPowerups[found1]) {
-              const intl = closure_0(1114).intl;
-              const tmp11 = skuId(2428);
+              const intl = closure_0(1115).intl;
+              const tmp11 = skuId(2514);
               let title;
               if (allPowerups[found1] != null) {
                 title = tmp13.title;

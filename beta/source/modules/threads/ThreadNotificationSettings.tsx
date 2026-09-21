@@ -1,14 +1,14 @@
-// Module ID: 10217
-// Function ID: 10218
+// Module ID: 10345
+// Function ID: 10346
 // Name: ThreadNotificationSettings
-// Dependencies: [1957, 4817, 4277, 1113, 1074, 1384, 504, 2]
+// Dependencies: [2041, 4937, 4397, 1114, 1074, 1385, 504, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10217 (ThreadNotificationSettings)
-import FlagUtils from "FlagUtils" /* 1384 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4277 */;
+// Module 10345 (ThreadNotificationSettings)
+import FlagUtils from "FlagUtils" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 
 const require = globalThis.__r;
 
@@ -54,14 +54,14 @@ function computeThreadNotificationSetting(channel) {
             return NO_MESSAGES;
           }
         }
-        tmp6Result2 = tmp6(1384);
+        tmp6Result2 = tmp6(1385);
       }
-      tmp6Result = tmp6(1384);
+      tmp6Result = tmp6(1385);
     }
     obj6 = FlagUtils;
   }
 }
-const ThreadMemberFlags = fn(1113).ThreadMemberFlags;
+const ThreadMemberFlags = fn(1114).ThreadMemberFlags;
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadNotificationSettings.tsx");

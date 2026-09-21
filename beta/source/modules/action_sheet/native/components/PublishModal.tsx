@@ -1,13 +1,13 @@
-// Module ID: 11803
-// Function ID: 11804
+// Module ID: 11921
+// Function ID: 11922
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4636, 5522, 11804, 1176, 1114, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 5658, 11922, 1177, 1115, 2]
 // Exports: default
 
-// Module 11803 (PublishModal)
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11804 */;
+// Module 11921 (PublishModal)
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11922 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -15,8 +15,8 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
-let obj2 = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5522).DARK_PRIMARY_300_LIGHT_PRIMARY_400 } };
+const createStyles = fn(4756);
+let obj2 = { alertContainer: { paddingTop: 16 }, alertLoading: { paddingTop: 62, paddingBottom: 46 }, alertBodyText: { marginBottom: 16, fontSize: 16, lineHeight: 24, color: fn(5658).DARK_PRIMARY_300_LIGHT_PRIMARY_400 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/PublishModal.tsx");
@@ -53,10 +53,10 @@ export default function PublishModal(channelId) {
         num2 = 0;
       }
       const obj4 = { numGuildsFollowing: num2 };
-      obj3.children = intl.format(tmp11(1114).t.GCGrNP, obj4);
+      obj3.children = intl.format(tmp11(1115).t.GCGrNP, obj4);
       let tmp12 = obj3;
     } else {
-      obj3.children = intl.string(tmp11(1114).t["8FpqOs"]);
+      obj3.children = intl.string(tmp11(1115).t["8FpqOs"]);
       tmp12 = obj3;
     }
     obj.children = jsx(native.LegacyText, tmp12);

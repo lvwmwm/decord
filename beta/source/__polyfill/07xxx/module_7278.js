@@ -1,9 +1,21 @@
 // Module ID: 7278
 // Function ID: 7279
-// Dependencies: [1120]
+// Dependencies: [19, 7272]
+// Exports: useCardAnimation
 
 // Module 7278
-import registerAsset from "module_1120" /* 1120 */;
+import CardAnimationContext from "CardAnimationContext" /* 7272 */;
+import noop from "module_19" /* 19 */;
 
+require = arg1;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 80, height: 80, scales: [2, 3], hash: "09576100b2002c71d4fb565492fcbdfb", name: "img_nitro_icon_80px", type: "png" });
+export const useCardAnimation = function useCardAnimation() {
+  const context = noop.useContext(CardAnimationContext.CardAnimationContext);
+  if (undefined === context) {
+    const _Error = Error;
+    const error = new Error("Couldn't find values for card animation. Are you inside a screen in Stack?");
+    throw error;
+  } else {
+    return context;
+  }
+};

@@ -1,13 +1,13 @@
-// Module ID: 10220
-// Function ID: 10221
+// Module ID: 10348
+// Function ID: 10349
 // Name: setUserStatus
-// Dependencies: [5, 7218, 5360, 1074, 4481, 1114, 10221, 1940, 1216, 4489, 1240, 2]
+// Dependencies: [5, 7360, 5496, 1074, 4600, 1115, 10349, 2024, 1217, 4608, 1241, 2]
 // Exports: default
 
-// Module 10220 (setUserStatus)
+// Module 10348 (setUserStatus)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7218 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5360 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7360 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 
 const require = fn;
 let closure_7 = async function _setUserStatus() {
@@ -23,7 +23,7 @@ let closure_7 = async function _setUserStatus() {
   closure_129_5 = str;
   const PreloadedUserSettingsActionCreators = closure_130_0(closure_130_2[7]).PreloadedUserSettingsActionCreators;
   await PreloadedUserSettingsActionCreators.updateAsync("status", async (statusCreatedAtMs) => {
-    const StringValue = value(1216).StringValue;
+    const StringValue = value(1217).StringValue;
     statusCreatedAtMs.status = StringValue.create({ value });
     statusCreatedAtMs.statusExpiresAtMs = statusExpiresAtMs;
     if (closure_1_1 === value) {
@@ -32,30 +32,30 @@ let closure_7 = async function _setUserStatus() {
       }
       statusCreatedAtMs.statusCreatedAtMs = statusCreatedAtMs;
     }
-    const UInt64Value = value(1216).UInt64Value;
+    const UInt64Value = value(1217).UInt64Value;
     statusCreatedAtMs = UInt64Value.create({ value: "" + Date.now() });
   }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION);
   closure_129_6 = (function getStatusUpdateAnnouncement(DND, arg1) {
-    const humanizeStatusResult = value(4481).humanizeStatus(DND);
+    const humanizeStatusResult = value(4600).humanizeStatus(DND);
     if ("0" === arg1) {
-      const intl3 = tmp(1114).intl;
+      const intl3 = tmp(1115).intl;
       const obj2 = { statusLabel: humanizeStatusResult };
-      return intl3.formatToPlainString(tmp(1114).t.dO2aLi, obj2);
+      return intl3.formatToPlainString(tmp(1115).t.dO2aLi, obj2);
     } else {
-      const statusExpiryParts = tmp(10221).getStatusExpiryParts(arg1);
+      const statusExpiryParts = tmp(10349).getStatusExpiryParts(arg1);
       const timeString = statusExpiryParts.timeString;
       if ("today" === statusExpiryParts.kind) {
-        const intl2 = tmp(1114).intl;
+        const intl2 = tmp(1115).intl;
         const obj3 = { statusLabel: humanizeStatusResult, timeString };
-        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t["r50t/S"], obj3);
+        let formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t["r50t/S"], obj3);
       } else {
-        const intl = tmp(1114).intl;
+        const intl = tmp(1115).intl;
         const obj4 = { statusLabel: humanizeStatusResult, dateString: tmp6, timeString };
-        formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t["J+GJHv"], obj4);
+        formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t["J+GJHv"], obj4);
       }
       return formatToPlainStringResult;
     }
-    const obj = value(4481);
+    const obj = value(4600);
   })(closure_129_0, closure_129_5);
   const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(closure_129_6);

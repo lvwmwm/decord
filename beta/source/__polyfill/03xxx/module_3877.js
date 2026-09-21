@@ -1,31 +1,46 @@
 // Module ID: 3877
 // Function ID: 3878
-// Dependencies: [3725, 3726]
-// Exports: default
+// Dependencies: [2112, 2115, 2116, 2118, 3878]
 
 // Module 3877
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_2112 from "module_2112" /* 2112 */;
+import module_2115 from "module_2115" /* 2115 */;
+import date_mod from "module_2116" /* 2116 */;
+import date_mod from "module_2118" /* 2118 */;
+import module_3878 from "module_3878" /* 3878 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+if (!module_2112) {
+  const obj = { default: module_2112 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_2112;
 }
-_typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+if (!module_2115) {
+  const obj2 = { default: module_2115 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_2115;
 }
-requiredArgs = tmp5;
+let date = date_mod;
+if (!date) {
+  const obj3 = { default: date };
+  let tmp7 = obj3;
+} else {
+  tmp7 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+if (!module_3878) {
+  const obj5 = { default: module_3878 };
+  let tmp11 = obj5;
+} else {
+  tmp11 = module_3878;
+}
 
-export default function isSunday(arg0) {
-  requiredArgs.default(1, arguments);
-  return 0 === _typeof.default(arg0).getDay();
-};
+export default { code: "en-GB", formatDistance: tmp3.default, formatLong: tmp11.default, formatRelative: tmp5.default, localize: tmp7.default, match: tmp9.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

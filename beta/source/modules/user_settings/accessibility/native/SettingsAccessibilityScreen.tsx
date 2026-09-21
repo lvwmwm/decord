@@ -1,21 +1,21 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15601
+// Function ID: 15602
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4628, 1936, 8079, 1074, 21, 1114, 2024, 2786, 7485, 7141, 15416, 1483, 563, 11605, 14776, 2]
+// Dependencies: [19, 4748, 2020, 8233, 1074, 21, 1115, 2108, 2872, 7624, 7283, 15602, 1484, 563, 11725, 14964, 2]
 // Exports: default
 
-// Module 15415 (SettingsAccessibilityScreen)
-import util from "util" /* 1114 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import _modDef2786 from "module_2786" /* 2786 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15416 */;
+// Module 15601 (SettingsAccessibilityScreen)
+import util from "util" /* 1115 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import _modDef2872 from "module_2872" /* 2872 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15602 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 1936 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2020 */;
 
 require = fn;
-const MobileUserSettings = fn(8079).MobileUserSettings;
+const MobileUserSettings = fn(8233).MobileUserSettings;
 const Constants = fn(1074);
 ({ HelpdeskArticles: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsx = fn(21).jsx;
@@ -57,7 +57,7 @@ export default function SettingsAccessibilityScreen() {
     const items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
     obj6.settings = items3;
     const intl3 = util.intl;
-    obj6.subLabel = intl3.format(_modDef2786.L8U56h, {
+    obj6.subLabel = intl3.format(_modDef2872.L8U56h, {
       onClickOpenModal() {
         closure_0(animateEmojiOverrideReason[9]).openUserSettings({ screen: constants.PROFILE_CUSTOMIZATION }, () => {
           closure_1_0(closure_1_2[10]).runAfterInteractions(() => {
@@ -149,10 +149,10 @@ export default function SettingsAccessibilityScreen() {
     const items13 = [, ];
     ({ YOU_BAR_NAMEPLATE_ACCESSIBILITY: arr14[0], YOU_BAR_AVATAR_DECO_ACCESSSIBILITY: arr14[1] } = MobileUserSettings);
     obj20.settings = items13;
-    const intl12 = tmp(1114).intl;
+    const intl12 = tmp(1115).intl;
     obj20.label = intl12.string(util.t.Loi61N);
-    const intl13 = tmp(1114).intl;
-    const t = tmp(1114).t;
+    const intl13 = tmp(1115).intl;
+    const t = tmp(1115).t;
     const obj21 = { sections: null };
     obj20.subLabel = intl13.string(tmp6 ? t["SZC/D5"] : t.c7VVKU);
     items1[12] = obj20;

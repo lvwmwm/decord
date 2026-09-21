@@ -1,9 +1,9 @@
 // Module ID: 15007
 // Function ID: 15008
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15007
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 244, height: 82, scales: [1, 2, 3], hash: "245663cd177e246da48f58dd5c39e32f", name: "family_center_empty", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "8ae50f303624d1def080fc76fb185577", name: "fr.messages.8ae50f303624d1def080fc76fb185577.compiled.messages", type: "jsona" });

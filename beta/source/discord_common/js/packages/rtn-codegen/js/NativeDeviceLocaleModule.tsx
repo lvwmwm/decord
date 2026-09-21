@@ -1,9 +1,9 @@
-// Module ID: 1115
-// Function ID: 1116
+// Module ID: 1116
+// Function ID: 1117
 // Name: NativeDeviceLocaleModule
 // Dependencies: [17, 2]
 
-// Module 1115 (NativeDeviceLocaleModule)
+// Module 1116 (NativeDeviceLocaleModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

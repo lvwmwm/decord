@@ -1,13 +1,13 @@
-// Module ID: 16888
-// Function ID: 16889
+// Module ID: 17241
+// Function ID: 17242
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1074, 21, 4636, 576, 7265, 7285, 1240, 16143, 8296, 16885, 5206, 10998, 11130, 1114, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 7407, 7427, 1241, 16385, 17234, 8448, 17238, 5341, 11128, 11260, 1115, 2]
 // Exports: default
 
-// Module 16888 (SuggestedFriendsScreen)
+// Module 17241 (SuggestedFriendsScreen)
 import nativeDefault from "native" /* 576 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
-import ContactSuggestionRow from "ContactSuggestionRow" /* 16885 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import ContactSuggestionRow from "ContactSuggestionRow" /* 17238 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,8 +16,8 @@ const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
-let obj2 = { emptyContainer: { flex: 1, paddingTop: nativeDefault.space.PX_32 }, container: { flex: 1 } };
+const createStyles = fn(4756);
+const obj2 = { emptyContainer: { flex: 1, paddingTop: nativeDefault.space.PX_32 }, container: { flex: 1 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/SuggestedFriendsScreen.tsx");
@@ -26,12 +26,17 @@ export default function SuggestedFriendsScreen() {
   const tmp = closure_9();
   const analyticsLocations = added(setAdded[6])(added(setAdded[7]).SUGGESTED_FRIENDS).analyticsLocations;
   const effect = friendSuggestions.useEffect(() => {
-    added(setAdded[8]).track(constants.FRIEND_ADD_VIEWED, { friend_add_type: constants2.FRIENDS_SUGGESTED_FRIENDS_MODAL });
+    added(setAdded[8]).track(userRowWithSubLabelHeight1.FRIEND_ADD_VIEWED, { friend_add_type: callback.FRIENDS_SUGGESTED_FRIENDS_MODAL });
   }, []);
   const tmp6 = added(setAdded[9])();
   added = tmp6.added;
   setAdded = tmp6.setAdded;
   friendSuggestions = tmp6.friendSuggestions;
+  const tmp2 = added;
+  const tmp4 = added(setAdded[6]);
+  const userRowWithSubLabelHeight = analyticsLocations(setAdded[10]).useUserRowWithSubLabelHeight(1);
+  const obj = analyticsLocations(setAdded[10]);
+  const userRowWithSubLabelHeight1 = analyticsLocations(setAdded[10]).useUserRowWithSubLabelHeight(2);
   let items = [analyticsLocations];
   const onPress = friendSuggestions.useCallback((id) => {
     showUserProfileActionSheetDefault({ userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations });
@@ -40,6 +45,7 @@ export default function SuggestedFriendsScreen() {
   const callback1 = friendSuggestions.useCallback((arg0, arg1) => {
     closure_0 = arg1;
     const suggestedFriend = tmp;
+    const end = arg1 === friendSuggestions.length - 1;
     let mutualFriendsCount;
     if (friendSuggestions[arg1] != null) {
       mutualFriendsCount = tmp.mutualFriendsCount;
@@ -52,7 +58,6 @@ export default function SuggestedFriendsScreen() {
       }
       tmp3 = mutualFriendsCount1 > 0;
     }
-    const end = arg1 === friendSuggestions.length - 1;
     let str = "contactSuggestionNoMutualCount";
     if (tmp3) {
       str = "contactSuggestionMutualCount";
@@ -80,30 +85,47 @@ export default function SuggestedFriendsScreen() {
       }
     };
   }, items1);
+  const items2 = [friendSuggestions, userRowWithSubLabelHeight, userRowWithSubLabelHeight1];
   const callback2 = friendSuggestions.useCallback(() => {
 
   }, []);
-  const obj = { value: analyticsLocations, children: null };
-  const items2 = [closure_7(added(setAdded[12]), { absolute: true }), ];
-  const obj2 = { style: tmp.container, children: null };
+  const callback3 = friendSuggestions.useCallback((arg0, arg1) => {
+    let mutualFriendsCount;
+    if (friendSuggestions[arg1] != null) {
+      mutualFriendsCount = tmp.mutualFriendsCount;
+    }
+    let tmp3 = null != mutualFriendsCount;
+    if (tmp3) {
+      let mutualFriendsCount1;
+      if (tmp != null) {
+        mutualFriendsCount1 = tmp.mutualFriendsCount;
+      }
+      tmp3 = mutualFriendsCount1 > 0;
+    }
+    return tmp3 ? userRowWithSubLabelHeight1 : userRowWithSubLabelHeight;
+  }, items2);
+  const obj3 = { value: analyticsLocations, children: null };
+  const items3 = [closure_7(added(setAdded[13]), { absolute: true }), ];
+  const obj4 = { style: tmp.container, children: null };
   if (0 !== friendSuggestions.length) {
-    const obj3 = { sections: null, getItemProps: null, getSectionProps: null, insetStart: 8 };
-    const items3 = [friendSuggestions.length];
-    obj3.sections = items3;
-    obj3.getItemProps = callback1;
-    obj3.getSectionProps = callback2;
-    let tmp12Result = tmp12(tmp11(tmp3[13]).UsersFastList, obj3);
+    const obj5 = { sections: null, getItemProps: null, getSectionProps: null, getItemSize: null, insetStart: 8 };
+    const items4 = [friendSuggestions.length];
+    obj5.sections = items4;
+    obj5.getItemProps = callback1;
+    obj5.getSectionProps = callback2;
+    obj5.getItemSize = callback3;
+    let tmp15Result = tmp15(tmp7(tmp3[14]).UsersFastList, obj5);
   } else {
-    const obj4 = { style: tmp.emptyContainer, children: null };
-    const obj5 = { title: null, disableBackgroundOverlay: true };
-    const intl = tmp11(tmp3[15]).intl;
-    obj5.title = intl.string(tmp11(tmp3[15]).t.pxFW8V);
-    obj4.children = tmp12(added(tmp3[14]), obj5);
-    tmp12Result = tmp12(tmp13, obj4);
-    const tmp2Result = added(tmp3[14]);
+    const obj6 = { style: tmp.emptyContainer, children: null };
+    const obj7 = { title: null, disableBackgroundOverlay: true };
+    const intl = tmp7(tmp3[16]).intl;
+    obj7.title = intl.string(tmp7(tmp3[16]).t.pxFW8V);
+    obj6.children = tmp15(tmp2(tmp3[15]), obj7);
+    tmp15Result = tmp15(tmp16, obj6);
+    const tmp2Result = tmp2(tmp3[15]);
   }
-  obj2.children = tmp12Result;
-  items2[1] = closure_7(onPress, obj2);
-  obj.children = items2;
-  return closure_8(analyticsLocations(setAdded[6]).AnalyticsLocationProvider, obj);
+  obj4.children = tmp15Result;
+  items3[1] = closure_7(userRowWithSubLabelHeight, obj4);
+  obj3.children = items3;
+  return closure_8(analyticsLocations(setAdded[6]).AnalyticsLocationProvider, obj3);
 };

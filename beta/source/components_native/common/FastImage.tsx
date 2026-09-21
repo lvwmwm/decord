@@ -1,10 +1,10 @@
-// Module ID: 5668
-// Function ID: 5669
+// Module ID: 5804
+// Function ID: 5805
 // Name: FastImage
-// Dependencies: [19, 17, 21, 4636, 5669, 1363, 2]
+// Dependencies: [19, 17, 21, 4756, 5805, 1364, 2]
 
-// Module 5668 (FastImage)
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5669 */;
+// Module 5804 (FastImage)
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5805 */;
 import noop from "module_19" /* 19 */;
 
 class FastImageAndroid {
@@ -19,7 +19,7 @@ class FastImageAndroid {
 get_ActivityIndicator = fn(17);
 ({ Image: c2, NativeModules: c3 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ base: { overflow: "hidden" } });
 let merged = Object.assign(noop.memo((fade) => {
   ({ placeholder, enableAnimation } = fade);
@@ -94,7 +94,7 @@ FastImageAndroid.preload = (arg0, arg1) => {
   }
   return racePromise;
 };
-const PlatformUtils = fn(1363);
+const PlatformUtils = fn(1364);
 if (PlatformUtils.isAndroid()) {
   merged = FastImageAndroid;
 }

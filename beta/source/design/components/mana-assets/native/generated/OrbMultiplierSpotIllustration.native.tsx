@@ -1,13 +1,13 @@
-// Module ID: 6432
-// Function ID: 6433
+// Module ID: 6572
+// Function ID: 6573
 // Name: OrbMultiplierSpotIllustration
-// Dependencies: [21, 5668, 6433, 2]
+// Dependencies: [21, 5804, 6573, 2]
 // Exports: OrbMultiplierSpotIllustration
 
-// Module 6432 (OrbMultiplierSpotIllustration)
+// Module 6572 (OrbMultiplierSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6433 from "module_6433" /* 6433 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6573 from "module_6573" /* 6573 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const OrbMultiplierSpotIllustration = function OrbMultiplierSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6433 };
+  const obj2 = { uri: _modDef6573 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

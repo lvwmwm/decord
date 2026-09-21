@@ -1,19 +1,19 @@
-// Module ID: 2013
-// Function ID: 2014
+// Module ID: 2097
+// Function ID: 2098
 // Name: GatedChannelStore
-// Dependencies: [2014, 1961, 2016, 1957, 2021, 2015, 1979, 1371, 1074, 4266, 4267, 4268, 504, 573, 2]
+// Dependencies: [2098, 2045, 2100, 2041, 2105, 2099, 2063, 1372, 1074, 4386, 4387, 4388, 504, 573, 2]
 
-// Module 2013 (GatedChannelStore)
+// Module 2097 (GatedChannelStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4266 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4267 */;
-import ImpersonateStore from "ImpersonateStore" /* 2014 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4386 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4387 */;
+import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function isSubscriptionGated(role) {
@@ -166,8 +166,8 @@ function handleChannelUpdate(channel) {
   }
   return tmp;
 }
-const THREAD_CHANNEL_TYPES = fn(1961).THREAD_CHANNEL_TYPES;
-const hasPermission = fn(2016).hasPermission;
+const THREAD_CHANNEL_TYPES = fn(2045).THREAD_CHANNEL_TYPES;
+const hasPermission = fn(2100).hasPermission;
 const Constants = fn(1074);
 ({ Permissions: c10, GuildFeatures: closure_11 } = Constants);
 const dependencyMap = {};

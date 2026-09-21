@@ -1,9 +1,22 @@
 // Module ID: 14618
 // Function ID: 14619
-// Dependencies: [1120]
+// Dependencies: [14584, 14605, 14619, 14629, 14630]
 
 // Module 14618
-import registerAsset from "module_1120" /* 1120 */;
+import _mod14584 from "module_14584" /* 14584 */;
+import _mod14605 from "module_14605" /* 14605 */;
+import f2 from "f" /* 14619 */;
+import _mod14629 from "module_14629" /* 14629 */;
+import _mod14630 from "module_14630" /* 14630 */;
 
+let closure_2 = _mod14584([].concat);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "f6cc137da3a192935ccaaac37e4eb9a2", name: "ic_call_status_green_24px", type: "png" });
+export default _mod14605("Reflect", "ownKeys") || (function ownKeys(arg0) {
+  const fResult = f2.f(_mod14629(arg0));
+  const f = _mod14630.f;
+  let tmp2 = fResult;
+  if (f) {
+    tmp2 = closure_2(fResult, f(arg0));
+  }
+  return tmp2;
+});

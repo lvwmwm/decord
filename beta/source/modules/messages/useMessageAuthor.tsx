@@ -1,18 +1,18 @@
-// Module ID: 4869
-// Function ID: 4870
+// Module ID: 4988
+// Function ID: 4989
 // Name: useMessageAuthor
-// Dependencies: [1957, 2021, 2015, 1979, 4285, 1371, 38, 504, 4481, 4870, 2]
+// Dependencies: [2041, 2105, 2099, 2063, 4405, 1372, 38, 504, 4600, 4989, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4869 (useMessageAuthor)
+// Module 4988 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 function useNullableMessageAuthor(message) {

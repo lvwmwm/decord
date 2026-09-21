@@ -1,36 +1,9 @@
 // Module ID: 5614
 // Function ID: 5615
-// Dependencies: [17]
-// Exports: parsePossibleSources
+// Dependencies: [1121]
 
 // Module 5614
-import _mod17 from "module_17" /* 17 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const Image = _mod17.Image;
 
-export const parsePossibleSources = function parsePossibleSources(source) {
-  const uri = source.uri;
-  if (typeof source === "string") {
-    const obj2 = { sourceName: source };
-    let obj = obj2;
-  } else {
-    if (typeof source === "object") {
-      if (!uri) {
-        obj = { sourceJson: null };
-        const _JSON = JSON;
-        obj.sourceJson = JSON.stringify(source);
-      }
-    }
-    if (typeof source !== "object") {
-      if (typeof source === "number") {
-        const obj3 = { sourceDotLottieURI: Image.resolveAssetSource(source).uri };
-      }
-    }
-    if (uri.includes(".lottie")) {
-      const obj4 = { sourceDotLottieURI: uri };
-    } else {
-      const obj5 = { sourceURL: uri };
-    }
-  }
-  return obj;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "e3f87032d39c6463934b80bdbb1aa83c", name: "img_domain_light", type: "svg" });

@@ -1,11 +1,11 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12578
+// Function ID: 12579
 // Name: ListSelectionItem
-// Dependencies: [19, 21, 5686, 2]
+// Dependencies: [19, 21, 5822, 2]
 // Exports: default
 
-// Module 12457 (ListSelectionItem)
-import TableRow from "TableRow" /* 5686 */;
+// Module 12578 (ListSelectionItem)
+import TableRow from "TableRow" /* 5822 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

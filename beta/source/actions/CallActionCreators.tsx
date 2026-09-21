@@ -1,19 +1,19 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 10002
+// Function ID: 10003
 // Name: CallActionCreators
-// Dependencies: [1957, 4285, 1371, 1074, 5492, 1270, 1240, 4980, 1114, 9171, 9303, 573, 2]
+// Dependencies: [2041, 4405, 1372, 1074, 5628, 1271, 1241, 5108, 1115, 10003, 9994, 573, 2]
 
-// Module 9311 (CallActionCreators)
+// Module 10002 (CallActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5492 */;
-import useCanRing from "useCanRing" /* 9303 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
+import useCanRing from "useCanRing" /* 9994 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -60,9 +60,9 @@ export default {
             str = user.username;
           }
           obj3.body = intl2.format(util.t.IdKo2z, { username: str });
-          const intl3 = tmp3(1114).intl;
+          const intl3 = tmp3(1115).intl;
           obj3.confirmText = intl3.string(util.t["PMsq/b"]);
-          const intl4 = tmp3(1114).intl;
+          const intl4 = tmp3(1115).intl;
           obj3.cancelText = intl4.string(util.t.BddRzS);
           obj3.onConfirm = function onConfirm() {
             closure_1(closure_2[9]).addRelationship({ userId, context: { location: "Call" } });
@@ -86,7 +86,7 @@ export default {
       const CALLABLE = constants2.CALLABLE;
       const result = useCanRing.canRingUsersInChannel(channel);
       if (result) {
-        const HTTP = tmp3(1270).HTTP;
+        const HTTP = tmp3(1271).HTTP;
         const request = { url: timestampProducer.CALL_RING(channelId), body: null, oldFormErrors: true, rejectWithError: true };
         const obj3 = { recipients: items, analytics_location: gdm_invite };
         request.body = obj3;

@@ -1,16 +1,16 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8265
+// Function ID: 8266
 // Name: GuildStreamSystemMessage
-// Dependencies: [4678, 8084, 8064, 8066, 1114, 8068, 2]
+// Dependencies: [4798, 8238, 8218, 8220, 1115, 8222, 2]
 // Exports: createGuildStreamSystemMessage
 
-// Module 8111 (GuildStreamSystemMessage)
-import util from "util" /* 1114 */;
-import Constants from "Constants" /* 4678 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8064 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8066 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8068 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8084 */;
+// Module 8265 (GuildStreamSystemMessage)
+import util from "util" /* 1115 */;
+import Constants from "Constants" /* 4798 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8238 */;
 import size from "module_2" /* 2 */;
 
 const StreamTypes = Constants.StreamTypes;

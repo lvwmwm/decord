@@ -1,17 +1,17 @@
-// Module ID: 16654
-// Function ID: 16655
+// Module ID: 16900
+// Function ID: 16901
 // Name: OnboardingHomeScrollView
-// Dependencies: [19, 17, 21, 4636, 576, 1611, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1612, 2]
 // Exports: default
 
-// Module 16654 (OnboardingHomeScrollView)
+// Module 16900 (OnboardingHomeScrollView)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import noop from "module_19" /* 19 */;
 
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { guildFeedBackground: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,20 +1,20 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 12077
+// Function ID: 12078
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 17, 2015, 1979, 4676, 1371, 1074, 21, 4636, 576, 7230, 8237, 11958, 4868, 1176, 7290, 7308, 9882, 11956, 9933, 4632, 11959, 1114, 2]
+// Dependencies: [19, 17, 2099, 2063, 4796, 1372, 1074, 21, 4756, 576, 7372, 8389, 12078, 4987, 1177, 7432, 7450, 9840, 12076, 9901, 4752, 12079, 1115, 2]
 // Exports: default
 
-// Module 11957 (MentionableSelectComponentActionSheet)
+// Module 12077 (MentionableSelectComponentActionSheet)
 import nativeDefault from "native" /* 576 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 4868 */;
-import RoleIconDefault from "RoleIcon" /* 7308 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8237 */;
-import DiscordTagDefault from "DiscordTag" /* 9933 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 4987 */;
+import RoleIconDefault from "RoleIcon" /* 7450 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8389 */;
+import DiscordTagDefault from "DiscordTag" /* 9901 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PresenceStore from "PresenceStore" /* 4676 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PresenceStore from "PresenceStore" /* 4796 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
@@ -22,7 +22,7 @@ const Constants = fn(1074);
 ({ Fonts, DEFAULT_ROLE_COLOR_HEX: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { name: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 }, discriminator: null, roleCountContainer: null, roleCountText: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
 obj2.discriminator = { color: nativeDefault.colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
@@ -59,24 +59,24 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
       } else {
         const isMobileOnlineResult = PresenceStore.isMobileOnline(user.id);
         const status = PresenceStore.getStatus(user.id);
-        const obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: PresenceStore.isVROnline(user.id), status, guildId, size: tmp(1176).AvatarSizes.XSMALL };
-        return closure_2_10(tmp(1176).Avatar, obj);
+        const obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: PresenceStore.isVROnline(user.id), status, guildId, size: tmp(1177).AvatarSizes.XSMALL };
+        return closure_2_10(tmp(1177).Avatar, obj);
       }
-    } else if (type.type === tmp(4868).SelectOptionType.ROLE) {
+    } else if (type.type === tmp(4987).SelectOptionType.ROLE) {
       if (null != guild) {
         const role = GuildRoleStore.getRole(tmp3.id, type.value);
       }
       if (null != guild) {
         if (null != role) {
           if (tmpResult.canGuildUseRoleIcons(tmp3, role)) {
-            const roleIconData = tmp(7290).getRoleIconData(role);
+            const roleIconData = tmp(7432).getRoleIconData(role);
             if (null != roleIconData) {
               const obj2 = { src: null, unicodeEmoji: null, size: 24, name: null };
               ({ customIconSrc: obj3.src, unicodeEmoji: obj3.unicodeEmoji } = roleIconData);
               obj2.name = role.name;
               return closure_2_10(RoleIconDefault, obj2);
             }
-            const tmpResult2 = tmp(7290);
+            const tmpResult2 = tmp(7432);
           }
           let colorString;
           if (role != null) {
@@ -86,7 +86,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
             colorString = React7;
           }
           const obj4 = { color: colorString };
-          return closure_2_10(tmp(9882).ShieldUserIcon, obj4);
+          return closure_2_10(tmp(9840).ShieldUserIcon, obj4);
         }
       }
       return null;
@@ -120,7 +120,7 @@ export default function MentionableSelectComponentActionSheet(selectionActionCom
         if (null != tmp7) {
           const obj = { style: closure_3.roleCountContainer, children: null };
           const obj2 = { style: closure_3.roleCountText, variant: "text-sm/medium", color: "interactive-text-default", children: tmp7 };
-          const items = [closure_2_10(tmp(4632).Text, obj2), closure_2_10(tmp(11959).UserIcon, { size: "xs" })];
+          const items = [closure_2_10(tmp(4752).Text, obj2), closure_2_10(tmp(12079).UserIcon, { size: "xs" })];
           obj.children = items;
           return closure_2_11(View, obj);
         }

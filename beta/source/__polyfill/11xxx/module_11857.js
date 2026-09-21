@@ -1,9 +1,9 @@
 // Module ID: 11857
 // Function ID: 11858
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11857
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 138, height: 130, scales: [2, 3], hash: "2b9e354438218d1560976bef68047eb2", name: "load-issue-dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "17f7b21a5b26889a6dffe34b080f6103", name: "TimerIcon", type: "png" });

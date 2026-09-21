@@ -1,19 +1,19 @@
-// Module ID: 12012
-// Function ID: 12013
+// Module ID: 12133
+// Function ID: 12134
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 4636, 576, 4839, 5705, 12013, 12043, 12044, 12015, 1484, 7103, 1114, 2]
+// Dependencies: [19, 21, 4756, 576, 4959, 5841, 12134, 12164, 12165, 12136, 1485, 7245, 1115, 2]
 // Exports: default
 
-// Module 12012 (ClassificationDetailModal)
+// Module 12133 (ClassificationDetailModal)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12015 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12136 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
 const constants = { CLASSIFICATION_DETAIL: "CLASSIFICATION_DETAIL" };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -28,15 +28,15 @@ export default function ClassificationDetailModal(classificationId) {
   }
   const tmp = closure_7();
   dependencyMap = tmp;
-  const safetyHubInitialized = classificationId(12044).useSafetyHubInitialized();
+  const safetyHubInitialized = classificationId(12165).useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
     if (!safetyHubInitialized) {
       const safetyHubData = SafetyHubActionCreatorsAll.getSafetyHubData();
     }
   }, items);
-  let obj = classificationId(12044);
-  const isFocused = classificationId(1484).useIsFocused();
+  let obj = classificationId(12165);
+  const isFocused = classificationId(1485).useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
     closure_1 = flag;
@@ -47,23 +47,23 @@ export default function ClassificationDetailModal(classificationId) {
         return null;
       },
       headerLeft: NavigatorHeader.getHeaderCloseButton(function closeModal() {
-        return closure_1(4839).pop();
+        return closure_1(4959).pop();
       }),
       render() {
-        return jsx(source(12013), {
+        return jsx(source(12134), {
           classificationId,
           source,
           onClose() {
-            closure_1(4839).pop();
+            closure_1(4959).pop();
             if (closure_1_1) {
-              closure_0(12043).openAccountStanding();
-              const obj = closure_0(12043);
+              closure_0(12164).openAccountStanding();
+              const obj = closure_0(12164);
             }
           },
           onError() {
-            closure_1_1(4839).pop();
-            const arr = closure_1_1(4839);
-            classificationId(12043).openAccountStanding();
+            closure_1_1(4959).pop();
+            const arr = closure_1_1(4959);
+            classificationId(12164).openAccountStanding();
           }
         });
       }
@@ -72,7 +72,7 @@ export default function ClassificationDetailModal(classificationId) {
     return obj;
   }, items1);
   const obj3 = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null };
-  const intl = classificationId(1114).intl;
-  obj3.headerBackTitle = intl.string(classificationId(1114).t["13/7kX"]);
-  return jsx(classificationId(7103).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
+  const intl = classificationId(1115).intl;
+  obj3.headerBackTitle = intl.string(classificationId(1115).t["13/7kX"]);
+  return jsx(classificationId(7245).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
 };

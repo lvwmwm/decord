@@ -1,13 +1,13 @@
-// Module ID: 7747
-// Function ID: 7748
+// Module ID: 7881
+// Function ID: 7882
 // Name: AppDatabaseManager
-// Dependencies: [32, 502, 3, 2003, 1987, 573, 7748, 2]
+// Dependencies: [32, 502, 3, 2087, 2071, 573, 7882, 2]
 
-// Module 7747 (AppDatabaseManager)
+// Module 7881 (AppDatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Dispatcher from "Dispatcher" /* 573 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2003 */;
-import actions2 from "actions" /* 7748 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2087 */;
+import actions2 from "actions" /* 7882 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -74,7 +74,7 @@ prototype["executeModules"] = function executeModules(type, databaseResult) {
   if (null != value) {
     if (0 !== value.length) {
       if (null != databaseResult) {
-        if (stateResult === require("module_1987").DatabaseState.Open) {
+        if (stateResult === require("module_2071").DatabaseState.Open) {
           let combined = null;
           if (!set.has(type.type)) {
             const _HermesInternal2 = HermesInternal;

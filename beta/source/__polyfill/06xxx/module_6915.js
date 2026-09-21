@@ -1,10 +1,16 @@
 // Module ID: 6915
 // Function ID: 6916
-// Dependencies: [17]
+// Dependencies: [19, 17, 6916]
+// Exports: useEnsureGestureHandlerRootView
 
 // Module 6915
 import _mod17 from "module_17" /* 17 */;
+import _mod19 from "module_19" /* 19 */;
+import _modDef6916 from "module_6916" /* 6916 */;
 
-const StyleSheet = _mod17.StyleSheet;
+const use = _mod19.use;
+const Platform = _mod17.Platform;
 
-export const styles = StyleSheet.create({ container: { flexDirection: "column-reverse", position: "absolute", top: 0, left: 0, right: 0 } });
+export const useEnsureGestureHandlerRootView = function useEnsureGestureHandlerRootView() {
+  use(_modDef6916);
+};

@@ -1,28 +1,9 @@
 // Module ID: 4719
 // Function ID: 4720
-// Dependencies: [660, 658, 659, 4715]
+// Dependencies: [1121]
 
 // Module 4719
-import arrayPush from "arrayPush" /* 658 */;
-import stubArray from "stubArray" /* 659 */;
-import _mod660 from "module_660" /* 660 */;
-import _mod4715 from "module_4715" /* 4715 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-if (Object.getOwnPropertySymbols) {
-  let fn = (arg0) => {
-    let tmp = arg0;
-    const items = [];
-    if (arg0) {
-      do {
-        let tmp4 = arrayPush;
-        let tmp4Result = tmp4(items, stubArray(tmp));
-        tmp = _mod4715(tmp);
-      } while (tmp);
-    }
-    return items;
-  };
-} else {
-  fn = _mod660;
-}
 
-export default fn;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d43523873b246ea97ff723dd8970498f", name: "ClockIcon", type: "png" });

@@ -1,24 +1,24 @@
-// Module ID: 10477
-// Function ID: 10478
+// Module ID: 10607
+// Function ID: 10608
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 5544, 1074, 21, 4636, 576, 4373, 4637, 4640, 5204, 5665, 10478, 5176, 2]
+// Dependencies: [32, 19, 17, 5680, 1074, 21, 4756, 576, 4492, 4757, 4760, 5339, 5801, 10608, 5313, 2]
 
-// Module 10477 (EmojiPickerCategoriesItem)
+// Module 10607 (EmojiPickerCategoriesItem)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
-import timingPresets from "timingPresets" /* 4640 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import timing from "timing" /* 4757 */;
+import timingPresets from "timingPresets" /* 4760 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let EmojiCategoryTypes = fn(5544).EmojiCategoryTypes;
+let EmojiCategoryTypes = fn(5680).EmojiCategoryTypes;
 const Constants = fn(1074);
 ({ CATEGORY_ICON_RIPPLE_CONFIG: closure_7, CATEGORY_ICON_SIZE, NODE_SIZE } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { itemInner: null, fadedItem: { backgroundColor: nativeDefault.colors.ICON_TRANSPARENT }, activeItem: null, guildItem: null, lockContainer: null, lock: null };
 let size = { justifyContent: "center", alignItems: "center", height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2 };
 obj.itemInner = size;

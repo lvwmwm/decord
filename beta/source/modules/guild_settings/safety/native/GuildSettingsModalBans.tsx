@@ -1,27 +1,27 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 18086
+// Function ID: 18087
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 1979, 1371, 9193, 21, 4636, 576, 504, 7152, 1935, 5598, 5601, 9192, 5686, 1176, 5693, 1114, 7292, 4334, 7297, 7142, 17768, 7153, 8348, 7158, 7143, 2]
+// Dependencies: [32, 19, 17, 2063, 1372, 9856, 21, 4756, 576, 504, 7294, 2019, 5734, 5737, 9855, 5822, 1177, 5829, 1115, 7434, 4453, 7439, 7284, 18087, 7295, 8501, 7300, 7285, 2]
 // Exports: default
 
-// Module 17767 (GuildSettingsModalBans)
+// Module 18086 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5598 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5601 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7297 */;
+import util from "util" /* 1115 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5734 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7439 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9193 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { containerInner: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, searchField: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 obj2.searchField = { paddingVertical: nativeDefault.space.PX_16 };
@@ -156,8 +156,8 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
           const items = [obj2];
           if (setting) {
             let obj = { label: null, onPress: null };
-            const intl = tmp6(1114).intl;
-            obj.label = intl.string(tmp6(1114).t["/AXYnE"]);
+            const intl = tmp6(1115).intl;
+            obj.label = intl.string(tmp6(1115).t["/AXYnE"]);
             obj.onPress = function onPress() {
               guildId(bans[19]).copy(user.id);
               const obj = guildId(bans[19]);
@@ -166,14 +166,14 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
             items.push(obj);
           }
           const obj3 = { title: null, subtitle: null };
-          const intl2 = tmp6(1114).intl;
+          const intl2 = tmp6(1115).intl;
           const obj4 = { user: user.username };
           obj3.title = intl2.formatToPlainString(util.t.XvAG5t, obj4);
-          const string = tmp6(1114).intl.string;
+          const string = tmp6(1115).intl.string;
           let result = value;
           if (null == value.reason) {
-            const intl3 = tmp6(1114).intl;
-            let reason = intl3.string(tmp6(1114).t["t+2Zci"]);
+            const intl3 = tmp6(1115).intl;
+            let reason = intl3.string(tmp6(1115).t["t+2Zci"]);
             const obj5 = { key: "GuildSettingsUnban", header: null, options: null, hasIcons: false };
             const _HermesInternal = HermesInternal;
             obj3.subtitle = "" + tmp3 + ": " + reason;

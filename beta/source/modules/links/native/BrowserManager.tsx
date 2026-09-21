@@ -1,70 +1,115 @@
-// Module ID: 4601
-// Function ID: 4602
+// Module ID: 4720
+// Function ID: 4721
 // Name: BrowserManager
-// Dependencies: [17, 560, 1363, 4602, 1093, 4331, 1369, 2]
-// Exports: browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
+// Dependencies: [5, 17, 1364, 4721, 4722, 560, 1094, 4451, 1370, 2]
+// Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 4601 (BrowserManager)
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import LinkingDefault from "Linking" /* 4331 */;
-import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4602 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import module_560 from "module_560" /* 560 */;
-import size from "module_2" /* 2 */;
+// Module 4720 (BrowserManager)
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
+import PlatformUtils2 from "PlatformUtils" /* 1364 */;
+import LinkingDefault from "Linking" /* 4451 */;
+import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4721 */;
+import NativeBrowserManagerModuleIOSDefault from "NativeBrowserManagerModuleIOS" /* 4722 */;
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-({ AppState: c3, NativeEventEmitter: closure_4, NativeModules } = get_ActivityIndicator);
-let BrowserManager = NativeModules.BrowserManager;
-let closure_7 = module_560.create(() => {
-  if (obj.isAndroid()) {
-    let isChromeInstalled = NativeBrowserManagerModuleDefault.getConstants().isChromeInstalled;
+const require = globalThis.__r;
+
+require = fn;
+let closure_8 = async function _browserManagerClearWebsiteData(arg0, value) {
+  if (c0 === 2) {
+    c0 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj4 = { value, done: true };
+      return obj4;
+    } else {
+      return { value: "HermesInternal", done: null };
+    }
   } else {
-    isChromeInstalled = BrowserManager.isChromeInstalled;
+    try {
+      c0 = 2;
+      if (0 === c1) {
+        if (arg0 === 1) {
+          c0 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c0 = 3;
+          const obj5 = { value, done: true };
+          return obj5;
+        } else {
+          if (obj2.isIOS()) {
+            c1 = 1;
+            c0 = 1;
+            const obj6 = { value: require("NativeBrowserManagerModuleIOS").clearWebsiteData(), done: false };
+            return obj6;
+          }
+          obj2 = PlatformUtils2;
+          tmp6 = dependencyMap;
+        }
+      } else if (arg0 === 1) {
+        c0 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c0 = 3;
+        const obj = { value, done: true };
+        return obj;
+      }
+      c0 = 3;
+      return { value: "HermesInternal", done: null };
+    } catch (tmp8) {
+      c0 = tmp;
+      throw tmp8;
+    }
   }
-  const obj3 = { isChromeInstalled, selectedBrowser: null, supportsInAppBrowser: null, isInAppBrowserOpen: false };
-  obj = PlatformUtils;
-  if (tmpResult.isAndroid()) {
-    let selectedBrowser = NativeBrowserManagerModuleDefault.getConstants().selectedBrowser;
-  } else {
-    selectedBrowser = BrowserManager.selectedBrowser;
-  }
-  obj3.selectedBrowser = selectedBrowser;
-  tmpResult = PlatformUtils;
-  if (tmpResult2.isAndroid()) {
-    let supportsInAppBrowser = NativeBrowserManagerModuleDefault.getConstants().supportsInAppBrowser;
-  } else {
-    supportsInAppBrowser = BrowserManager.supportsInAppBrowser;
-  }
-  obj3.supportsInAppBrowser = supportsInAppBrowser;
-  return obj3;
+};
+const AppState = fn(17).AppState;
+const PlatformUtils = fn(1364);
+if (PlatformUtils.isAndroid()) {
+  let importDefaultResult = NativeBrowserManagerModuleDefault;
+} else {
+  importDefaultResult = NativeBrowserManagerModuleIOSDefault;
+}
+const hasOwnProperty = importDefaultResult;
+function getBrowserManagerIsChromeInstalled() {
+  return closure_6.getState().isChromeInstalled;
+}
+function getBrowserManagerSelectedBrowser() {
+  return closure_6.getState().selectedBrowser;
+}
+const module_560 = fn(560);
+let closure_6 = module_560.create(() => {
+  const obj = {};
+  const merged = Object.assign(importDefaultResult.getConstants());
+  obj.isInAppBrowserOpen = false;
+  return obj;
 });
-let c8 = null;
+let c7 = null;
+const size = fn(2);
 let result = size.fileFinishedImporting("modules/links/native/BrowserManager.tsx");
 
 export const useBrowserManagerIsChromeInstalled = function useBrowserManagerIsChromeInstalled() {
-  return closure_7((isChromeInstalled) => isChromeInstalled.isChromeInstalled);
+  return closure_6((isChromeInstalled) => isChromeInstalled.isChromeInstalled);
 };
-export const getBrowserManagerIsChromeInstalled = function getBrowserManagerIsChromeInstalled() {
-  return closure_7.getState().isChromeInstalled;
-};
+export { getBrowserManagerIsChromeInstalled };
 export const useBrowserManagerSupportsInAppBrowser = function useBrowserManagerSupportsInAppBrowser() {
-  return closure_7((supportsInAppBrowser) => supportsInAppBrowser.supportsInAppBrowser);
+  return closure_6((supportsInAppBrowser) => supportsInAppBrowser.supportsInAppBrowser);
 };
 export const useBrowserManagerSelectedBrowser = function useBrowserManagerSelectedBrowser() {
-  return closure_7((selectedBrowser) => selectedBrowser.selectedBrowser);
+  return closure_6((selectedBrowser) => selectedBrowser.selectedBrowser);
 };
-export const getBrowserManagerSelectedBrowser = function getBrowserManagerSelectedBrowser() {
-  return closure_7.getState().selectedBrowser;
-};
+export { getBrowserManagerSelectedBrowser };
 export const useIsInAppBrowserOpen = function useIsInAppBrowserOpen() {
-  return closure_7((isInAppBrowserOpen) => isInAppBrowserOpen.isInAppBrowserOpen);
+  return closure_6((isInAppBrowserOpen) => isInAppBrowserOpen.isInAppBrowserOpen);
 };
 export const getIsInAppBrowserOpen = function getIsInAppBrowserOpen() {
-  return closure_7.getState().isInAppBrowserOpen;
+  return closure_6.getState().isInAppBrowserOpen;
 };
 export const subscribeToIsInAppBrowserOpen = function subscribeToIsInAppBrowserOpen(arg0) {
   closure_0 = arg0;
-  return closure_7.subscribe((isInAppBrowserOpen, isInAppBrowserOpen2) => {
+  return closure_6.subscribe((isInAppBrowserOpen, isInAppBrowserOpen2) => {
     if (isInAppBrowserOpen.isInAppBrowserOpen !== isInAppBrowserOpen2.isInAppBrowserOpen) {
       closure_0(isInAppBrowserOpen.isInAppBrowserOpen, isInAppBrowserOpen2.isInAppBrowserOpen);
     }
@@ -76,17 +121,12 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
     selectedBrowser = state.getState().selectedBrowser;
   }
   if (selectedBrowser !== ConstantsIOS.WebBrowserType.SAFARI) {
-    if (selectedBrowser !== tmp2(1093).WebBrowserType.CHROME) {
-      if (selectedBrowser === tmp2(1093).WebBrowserType.IN_APP) {
-        let tmp2Result = tmp2(1363);
+    if (selectedBrowser !== tmp2(1094).WebBrowserType.CHROME) {
+      if (selectedBrowser === tmp2(1094).WebBrowserType.IN_APP) {
+        let tmp2Result = tmp2(1364);
       }
-      if (tmp2(1093).WebBrowserType.IN_APP === selectedBrowser) {
-        if (tmp2Result4.isAndroid()) {
-          let openInAppURLResult = NativeBrowserManagerModuleDefault.openInAppURL(href);
-        } else {
-          openInAppURLResult = BrowserManager.openInAppURL(href);
-        }
-        return openInAppURLResult.then((result) => {
+      if (tmp2(1094).WebBrowserType.IN_APP === selectedBrowser) {
+        return importDefaultResult.openInAppURL(href).then((result) => {
           if (false !== result) {
             state.setState({ isInAppBrowserOpen: true });
             if (_null != null) {
@@ -94,48 +134,49 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
             }
             _null = null;
             if (obj.isIOS()) {
-              const obj3 = new closure_1_4(BrowserManager);
-              _null = obj3.addListener("safariViewControllerDidFinish", () => {
+              _null = require("NativeBrowserManagerModuleIOS").onSafariViewControllerDidFinish(() => {
                 state.setState({ isInAppBrowserOpen: false });
                 if (_null != null) {
                   _null.remove();
                 }
                 _null = null;
               });
+              const obj3 = require("NativeBrowserManagerModuleIOS");
             } else {
               if (tmp2Result.isAndroid()) {
-                _null = closure_1_3.addEventListener("change", (event) => {
+                _null = AppState.addEventListener("change", (event) => {
                   let isInAppBrowserOpen = "active" === event;
                   if (isInAppBrowserOpen) {
                     isInAppBrowserOpen = state.getState().isInAppBrowserOpen;
                   }
                   if (isInAppBrowserOpen) {
                     state.setState({ isInAppBrowserOpen: false });
-                    if (c8 != null) {
+                    if (c7 != null) {
                       obj.remove();
                     }
-                    c8 = null;
-                    obj = c8;
+                    c7 = null;
+                    obj = c7;
                   }
                 });
               }
               tmp2Result = tmp2(tmp3[2]);
             }
-            obj = PlatformUtils;
+            obj = PlatformUtils2;
             obj4 = _null;
             tmp2 = require;
-            tmp3 = dependencyMap;
           }
         });
-      } else if (tmp2(1093).WebBrowserType.CHROME === selectedBrowser) {
-        if (tmp2Result5.isAndroid()) {
-          let openInChromeURLResult = NativeBrowserManagerModuleDefault.openInChromeURL(href);
+      } else if (tmp2(1094).WebBrowserType.CHROME === selectedBrowser) {
+        if (tmp2Result3.isAndroid()) {
+          let openInChromeURLResult = tmp6(4721).openInChromeURL(href);
+          const tmp6Result = tmp6(4721);
         } else {
-          openInChromeURLResult = BrowserManager.openInChromeURL(href, true);
+          openInChromeURLResult = tmp6(4722).openInChromeURL(href, true);
+          const tmp6Result2 = tmp6(4722);
         }
         return openInChromeURLResult;
       } else {
-        return tmp2(1369).assertNever(selectedBrowser);
+        return tmp2(1370).assertNever(selectedBrowser);
       }
     }
   }
@@ -144,25 +185,33 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
 };
 export const browserManagerSelectBrowser = function browserManagerSelectBrowser(selectedBrowser) {
   if (obj.isAndroid()) {
-    if (tmp(1093).WebBrowserType.SAFARI === selectedBrowser) {
-      const browser = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4602).BrowserType.SAFARI);
-    } else if (tmp(1093).WebBrowserType.IN_APP === selectedBrowser) {
-      const browser1 = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4602).BrowserType.IN_APP);
-    } else if (tmp(1093).WebBrowserType.CHROME === selectedBrowser) {
-      const browser2 = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4602).BrowserType.CHROME);
+    const obj3 = {};
+    obj3[tmp(1094).WebBrowserType.SAFARI] = tmp(4721).BrowserType.SAFARI;
+    obj3[tmp(1094).WebBrowserType.IN_APP] = tmp(4721).BrowserType.IN_APP;
+    obj3[tmp(1094).WebBrowserType.CHROME] = tmp(4721).BrowserType.CHROME;
+    if (null != obj3[selectedBrowser]) {
+      const browser = NativeBrowserManagerModuleDefault.selectBrowser(tmp5);
     }
   } else {
-    BrowserManager = NativeModules.BrowserManager;
-    const browser3 = BrowserManager.selectBrowser(selectedBrowser);
+    const browser1 = NativeBrowserManagerModuleIOSDefault.selectBrowser(selectedBrowser);
   }
-  closure_7.setState({ selectedBrowser });
+  closure_6.setState({ selectedBrowser });
 };
 export const browserManagerCloseBrowser = function browserManagerCloseBrowser() {
-  closure_7.setState({ isInAppBrowserOpen: false });
-  if (!obj.isAndroid()) {
-    BrowserManager = NativeModules.BrowserManager;
-    BrowserManager.closeBrowser();
+  closure_6.setState({ isInAppBrowserOpen: false });
+  if (obj.isIOS()) {
+    NativeBrowserManagerModuleIOSDefault.closeBrowser();
   }
+};
+export const browserManagerClearWebsiteData = function browserManagerClearWebsiteData() {
+  const self = this;
+  const apply = closure_8.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
 };
 export const openPlayStoreInlineInstall = function openPlayStoreInlineInstall(url, appId, arg2, impressionToken) {
   closure_0 = arg2;
@@ -177,7 +226,7 @@ export const openPlayStoreInlineInstall = function openPlayStoreInlineInstall(ur
     openPlayStoreInlineResult = Promise.resolve(false);
   } else {
     if (null != arg2) {
-      const result = BrowserManager.setOpenAppStoreDismissCallback(() => {
+      const result = NativeBrowserManagerModuleIOSDefault.setOpenAppStoreDismissCallback(() => {
         closure_0(Date.now() - closure_1);
       });
     }
@@ -188,7 +237,7 @@ export const openPlayStoreInlineInstall = function openPlayStoreInlineInstall(ur
     if (impressionToken == null) {
       impressionToken = null;
     }
-    openPlayStoreInlineResult = BrowserManager.openAppStoreInline(url, appId, impressionToken);
+    openPlayStoreInlineResult = NativeBrowserManagerModuleIOSDefault.openAppStoreInline(url, appId, impressionToken);
   }
   return openPlayStoreInlineResult;
 };

@@ -1,45 +1,12 @@
 // Module ID: 7435
 // Function ID: 7436
-// Dependencies: []
+// Dependencies: [7436, 7437]
 
 // Module 7435
-function _extends() {
-  if (Object.assign) {
-    const _Object = Object;
-    exports = assign.bind();
-  } else {
-    exports = (arg0) => {
-      for (let num = 1; num < arguments.length; num = num + 1) {
-        let tmp = arguments[num];
-        for (const key10011 in tmp) {
-          hasOwnProperty = {}.hasOwnProperty;
-          let call = hasOwnProperty.call;
-          if (typeof call === "unknown") {
-            let hasOwnPropertyResult = hasOwnProperty(key10011);
-          } else {
-            hasOwnPropertyResult = call(tmp, key10011);
-          }
-          if (!hasOwnPropertyResult) {
-            continue;
-          } else {
-            arg0[key10011] = tmp[key10011];
-            continue;
-          }
-          continue;
-        }
-      }
-      return arg0;
-    };
-  }
-  module.exports = exports;
-  const apply = exports.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(null);
-  } else {
-    applyArgumentsResult = apply(null, arguments);
-  }
-  return applyArgumentsResult;
-}
-let exports = _extends;
+import _mod7437 from "module_7437" /* 7437 */;
 
-export default _extends;
+const require = globalThis.__r;
+
+
+export const useClipboard = require("module_7436").useClipboard;
+export default _mod7437.Clipboard;

@@ -1,20 +1,20 @@
-// Module ID: 10948
-// Function ID: 10949
+// Module ID: 11078
+// Function ID: 11079
 // Name: SKUActionCreators
-// Dependencies: [5, 8912, 5591, 1074, 573, 4878, 1270, 4317, 8979, 7691, 4537, 4316, 4309, 4960, 4969, 1369, 2]
+// Dependencies: [5, 9066, 5727, 1074, 573, 4997, 1271, 4437, 9133, 7830, 4656, 4436, 4429, 5079, 5097, 1370, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10948 (SKUActionCreators)
+// Module 11078 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import BillingUtils from "BillingUtils" /* 4309 */;
-import StoreUtils from "StoreUtils" /* 4878 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 4969 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7691 */;
-import TestModeUtils from "TestModeUtils" /* 8979 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import BillingUtils from "BillingUtils" /* 4429 */;
+import StoreUtils from "StoreUtils" /* 4997 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5097 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7830 */;
+import TestModeUtils from "TestModeUtils" /* 9133 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8912 */;
-import SKUStore from "SKUStore" /* 5591 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9066 */;
+import SKUStore from "SKUStore" /* 5727 */;
 
 require = fn;
 let closure_8 = async function _fetchSKU(arg0, value) {

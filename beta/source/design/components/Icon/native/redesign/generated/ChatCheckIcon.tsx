@@ -1,13 +1,13 @@
-// Module ID: 14977
-// Function ID: 14978
+// Module ID: 15165
+// Function ID: 15166
 // Name: ChatCheckIcon
-// Dependencies: [19, 21, 576, 4337, 14978, 2]
+// Dependencies: [19, 21, 576, 4456, 15166, 2]
 // Exports: ChatCheckIcon
 
-// Module 14977 (ChatCheckIcon)
+// Module 15165 (ChatCheckIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod14978 from "module_14978" /* 14978 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod15166 from "module_15166" /* 15166 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChatCheckIcon = function ChatCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod14978, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15166, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

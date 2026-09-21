@@ -1,16 +1,16 @@
-// Module ID: 17201
-// Function ID: 17202
+// Module ID: 17547
+// Function ID: 17548
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [12406, 12404, 12407, 4373, 16803, 17122, 4338, 576, 9625, 17025, 17123, 12410, 11491, 2]
+// Dependencies: [12526, 12524, 12527, 4492, 17164, 17474, 4457, 576, 9664, 17379, 17475, 12530, 11617, 2]
 // Exports: default
 
-// Module 17201 (usePIPAvoidanceSpecs)
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11491 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12404 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12406 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12407 */;
-import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 17025 */;
-import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 17123 */;
+// Module 17547 (usePIPAvoidanceSpecs)
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11617 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12524 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12526 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12527 */;
+import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 17379 */;
+import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 17475 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
@@ -67,7 +67,7 @@ export default function usePIPAvoidanceSpecs(mode) {
       if (mode === VoicePanelModes.PANEL) {
         num4 = 0;
         if (controlsSpecs.mode === VoicePanelControlsModes.FLOATING_DEFAULT) {
-          num4 = tmp9(12410)(safeArea, token).height;
+          num4 = tmp9(12530)(safeArea, token).height;
         }
       }
       const rect = { top: num4, bottom: sum };

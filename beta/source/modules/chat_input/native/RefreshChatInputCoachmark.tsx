@@ -1,20 +1,20 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12238
+// Function ID: 12239
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 1954, 7491, 1943, 1114, 4347, 11265, 2]
+// Dependencies: [32, 19, 2038, 7630, 2027, 1115, 4466, 11394, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 12118 (RefreshChatInputCoachmark)
-import util from "util" /* 1114 */;
-import native from "native" /* 4347 */;
-import useCoachmark from "useCoachmark" /* 11265 */;
+// Module 12238 (RefreshChatInputCoachmark)
+import util from "util" /* 1115 */;
+import native from "native" /* 4466 */;
+import useCoachmark from "useCoachmark" /* 11394 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 
@@ -29,7 +29,7 @@ export const useRefreshChatInputCoachmark = function useRefreshChatInputCoachmar
   if (disabled.disabled) {
     let items = [];
   } else {
-    items = [tmp(1943).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(2027).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
   const tmp3 = _slicedToArray(require("useSelectedDismissibleContent").useSelectedDismissibleContent(items), 2);
   _require = tmp4;

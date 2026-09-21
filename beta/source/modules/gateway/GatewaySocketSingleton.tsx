@@ -1,21 +1,21 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 13893
+// Function ID: 13894
 // Name: GatewaySocketSingleton
-// Dependencies: [13719, 502, 3, 13720, 13760, 13763, 11437, 1240, 7859, 1363, 4257, 1461, 573, 2]
+// Dependencies: [13894, 502, 3, 13895, 13935, 13938, 11563, 1241, 7999, 1364, 4377, 1462, 573, 2]
 
-// Module 13718 (GatewaySocketSingleton)
+// Module 13893 (GatewaySocketSingleton)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import DiscordNativeDefault from "DiscordNative" /* 4257 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7859 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 11437 */;
-import GatewaySocketDefault from "GatewaySocket" /* 13720 */;
-import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13760 */;
-import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13763 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13719 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import DiscordNativeDefault from "DiscordNative" /* 4377 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7999 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 11563 */;
+import GatewaySocketDefault from "GatewaySocket" /* 13895 */;
+import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13935 */;
+import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13938 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13894 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkUtils_mod from "NetworkUtils" /* 1461 */;
+import NetworkUtils_mod from "NetworkUtils" /* 1462 */;
 
 let closure_5 = new LoggerDefault("ConnectionStore");
 const socket = new GatewaySocketDefault();
@@ -55,7 +55,7 @@ socket.handleIdentify = () => {
   }
   const obj2 = { hasToken: null != token };
 };
-const PlatformUtils = fn(1363);
+const PlatformUtils = fn(1364);
 if (PlatformUtils.isDesktop()) {
   const powerMonitor = DiscordNativeDefault.powerMonitor;
   powerMonitor.on("resume", () => {

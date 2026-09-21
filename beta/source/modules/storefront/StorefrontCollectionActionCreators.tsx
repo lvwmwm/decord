@@ -1,20 +1,20 @@
-// Module ID: 9002
-// Function ID: 9003
+// Module ID: 9156
+// Function ID: 9157
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2025, 9000, 7663, 1074, 1090, 573, 4878, 4538, 2]
+// Dependencies: [5, 2109, 9154, 7802, 1074, 8489, 573, 4997, 4657, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9002 (StorefrontCollectionActionCreators)
+// Module 9156 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import StoreUtils from "StoreUtils" /* 4878 */;
+import StoreUtils from "StoreUtils" /* 4997 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8489 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9000 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7663 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9154 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7802 */;
 
 require = fn;
-let closure_10 = async function _maybeFetchCollectionsWithProducts(arg0, value) {
+let closure_8 = async function _maybeFetchCollectionsWithProducts(arg0, value) {
   if (c6 === 2) {
     c6 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -22,7 +22,7 @@ let closure_10 = async function _maybeFetchCollectionsWithProducts(arg0, value) 
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
+      let obj2 = { value, done: true };
       return obj2;
     } else {
       return { value: "HermesInternal", done: null };
@@ -45,23 +45,29 @@ let closure_10 = async function _maybeFetchCollectionsWithProducts(arg0, value) 
           closure_129_1 = undefined;
           closure_129_2 = undefined;
           closure_129_3 = undefined;
+          closure_129_4 = undefined;
           ({ collectionIds: closure_129_0, includeUnpublishedProducts } = closure_0);
           if (includeUnpublishedProducts === undefined) {
             includeUnpublishedProducts = false;
           }
           closure_129_1 = includeUnpublishedProducts;
-          let flag = tmp55.includeUnpublishedCollections;
+          let flag = tmp58.includeUnpublishedCollections;
           if (flag === undefined) {
             flag = false;
           }
           closure_129_2 = flag;
-          let flag2 = tmp55.ignoreCache;
+          let flag2 = tmp58.ignoreCache;
           if (flag2 === undefined) {
             flag2 = false;
           }
           closure_129_3 = flag2;
-          closure_129_4 = undefined;
+          let flag3 = tmp58.includePricing;
+          if (flag3 === undefined) {
+            flag3 = false;
+          }
+          closure_129_4 = flag3;
           closure_129_5 = undefined;
+          closure_129_6 = undefined;
           c5 = 1;
           c6 = 1;
           return { value: "PX_16", done: true };
@@ -76,32 +82,22 @@ let closure_10 = async function _maybeFetchCollectionsWithProducts(arg0, value) 
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            closure_129_4 = closure_129_0.filter((item) => {
-              if (Boolean(item)) {
-                fetchState = fetchState.getFetchState(item);
-                if ("loading" === fetchState) {
-                  return false;
-                } else {
-                  const fetchedAt = obj.getFetchedAt(item);
-                  if (null != fetchedAt) {
-                    const _Date = Date;
-                    return Date.now() - fetchedAt > ("error" === fetchState ? closure_1_9 : closure_1_8);
-                  } else {
-                    return true;
-                  }
-                }
-                obj = fetchState;
-              } else {
-                return false;
+            closure_129_5 = closure_129_0.filter((item) => {
+              let shouldRefetchEntryResult = Boolean(item);
+              if (shouldRefetchEntryResult) {
+                const obj2 = { fetchState: c5.getFetchState(item), fetchedAt: c5.getFetchedAt(item), needsPricing, hasPricingCoverage: c5.hasPricingCoverage(item) };
+                shouldRefetchEntryResult = closure_0(dependencyMap[5]).shouldRefetchEntry(obj2);
+                const obj = closure_0(dependencyMap[5]);
               }
+              return shouldRefetchEntryResult;
             });
-            if (0 !== closure_129_4.length) {
+            if (0 !== closure_129_5.length) {
               c4 = 1;
-              const obj7 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH", collectionIds: closure_129_4 };
+              const obj7 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH", collectionIds: closure_129_5, includePricing: closure_129_4 };
               closure_130_1(closure_130_2[6]).dispatch(obj7);
               const obj6 = closure_130_1(closure_130_2[6]);
               const request = { url: closure_130_7.STOREFRONT_COLLECTIONS_WITH_PRODUCTS, query: null, rejectWithError: true };
-              const obj9 = { collection_ids: closure_129_4, locale: closure_130_4.locale, with_bundled_skus: true, include_google_sku_ids: true, include_unpublished_products: closure_129_1, include_unpublished_collections: closure_129_2, ignore_cache: closure_129_3 };
+              const obj9 = { collection_ids: closure_129_5, locale: closure_130_4.locale, with_bundled_skus: true, include_pricing: closure_129_4, include_google_sku_ids: true, include_unpublished_products: closure_129_1, include_unpublished_collections: closure_129_2, ignore_cache: closure_129_3 };
               request.query = obj9;
               c5 = 3;
               c6 = 1;
@@ -112,20 +108,21 @@ let closure_10 = async function _maybeFetchCollectionsWithProducts(arg0, value) 
         } else {
           if (2 === tmp7) {
             c4 = 0;
-            closure_129_6 = closure_3;
-            const obj11 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_FAILURE", collectionIds: closure_129_4, apiError: null };
-            const tmp28 = new closure_130_1(closure_130_2[8])(closure_129_6);
-            obj11.apiError = tmp28;
+            closure_129_7 = closure_3;
+            const obj11 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_FAILURE", collectionIds: closure_129_5, apiError: null };
+            const tmp29 = new closure_130_1(closure_130_2[8])(closure_129_7);
+            obj11.apiError = tmp29;
             closure_130_1(closure_130_2[6]).dispatch(obj11);
             const obj4 = closure_130_1(closure_130_2[6]);
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 !== 2) {
-            closure_129_5 = value;
-            const obj12 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_SUCCESS", collectionIds: closure_129_4, collections: null };
-            const collections = closure_129_5.body.collections;
+            closure_129_6 = value;
+            const obj12 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_SUCCESS", collectionIds: closure_129_5, collections: null, includePricing: null };
+            const collections = closure_129_6.body.collections;
             obj12.collections = collections.map(closure_130_6.fromServer);
+            obj12.includePricing = closure_129_4;
             closure_130_1(closure_130_2[6]).dispatch(obj12);
             c4 = 0;
             let obj = closure_130_1(closure_130_2[6]);
@@ -137,11 +134,11 @@ let closure_10 = async function _maybeFetchCollectionsWithProducts(arg0, value) 
         }
         c6 = 3;
       }
-    } catch (tmp45) {
-      closure_3 = tmp45;
+    } catch (tmp48) {
+      closure_3 = tmp48;
       if (tmp4 === c4) {
         c6 = tmp2;
-        throw tmp45;
+        throw tmp48;
       } else {
         c5 = tmp;
       }
@@ -178,7 +175,7 @@ function getCollectionPageKey(includeUnpublishedProducts) {
   }
   return "" + "" + applicationId + ":" + useShopOrdering + ":" + flag + ":" + flag2 + ":" + includeUnpublishedProducts.offset + ":" + includeUnpublishedProducts.limit;
 }
-let closure_13 = async function _maybeFetchCollectionsForApplicationPage(arg0, value) {
+let closure_11 = async function _maybeFetchCollectionsForApplicationPage(arg0, value) {
   if (c6 === 2) {
     c6 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -217,38 +214,38 @@ let closure_13 = async function _maybeFetchCollectionsForApplicationPage(arg0, v
           if (!tmp24) {
             tmp24 = useShopOrdering;
           }
-          const includeUnpublishedProducts = tmp61.includeUnpublishedProducts;
+          const includeUnpublishedProducts = tmp64.includeUnpublishedProducts;
           let tmp25 = undefined !== includeUnpublishedProducts;
           if (tmp25) {
             tmp25 = includeUnpublishedProducts;
           }
-          const includeUnpublishedCollections = tmp61.includeUnpublishedCollections;
+          const includeUnpublishedCollections = tmp64.includeUnpublishedCollections;
           let tmp26 = undefined !== includeUnpublishedCollections;
           if (tmp26) {
             tmp26 = includeUnpublishedCollections;
           }
-          const ignoreCache = tmp61.ignoreCache;
+          const ignoreCache = tmp64.ignoreCache;
           let tmp27 = undefined !== ignoreCache;
           if (tmp27) {
             tmp27 = ignoreCache;
           }
           const _Boolean = Boolean;
           if (Boolean(applicationId)) {
-            const tmp29 = getCollectionPageKey(tmp61);
+            const tmp29 = getCollectionPageKey(tmp64);
             closure_129_1 = tmp29;
-            closure_129_2 = getCollectionListKey(tmp61);
+            closure_129_2 = getCollectionListKey(tmp64);
             collectionPageFetchState = collectionPageFetchState.getCollectionPageFetchState(tmp29);
             if ("loading" !== collectionPageFetchState) {
               const collectionPageFetchedAt = obj4.getCollectionPageFetchedAt(tmp29);
               if (!tmp27) {
                 if (null != collectionPageFetchedAt) {
                   if ("error" === collectionPageFetchState) {
-                    let tmp33 = React7;
+                    let TWELVE_HOURS_MS = StorefrontCacheUtils.ERROR_STALE_THRESHOLD_MS;
                   } else {
-                    tmp33 = React6;
+                    TWELVE_HOURS_MS = StorefrontCacheUtils.TWELVE_HOURS_MS;
                   }
                   const _Date = Date;
-                  if (Date.now() - collectionPageFetchedAt <= tmp33) {
+                  if (Date.now() - collectionPageFetchedAt <= TWELVE_HOURS_MS) {
                     c6 = 3;
                     return { value: "HermesInternal", done: null };
                   }
@@ -296,11 +293,11 @@ let closure_13 = async function _maybeFetchCollectionsForApplicationPage(arg0, v
         return obj;
       }
       c6 = 3;
-    } catch (tmp41) {
-      closure_3 = tmp41;
+    } catch (tmp44) {
+      closure_3 = tmp44;
       if (tmp4 === c4) {
         c6 = tmp2;
-        throw tmp41;
+        throw tmp44;
       } else {
         c5 = tmp;
       }
@@ -318,7 +315,7 @@ function getCollectionsAfterKey(includeUnpublishedCollections) {
   }
   return "" + applicationId + ":after:" + anchorCollectionId + ":" + limit + ":" + includeUnpublishedProducts + ":" + flag;
 }
-let closure_15 = async function _maybeFetchCollectionsAfter(arg0) {
+let closure_13 = async function _maybeFetchCollectionsAfter(arg0) {
   let limit = arg0;
   c5 = 0;
   c6 = 0;
@@ -357,12 +354,12 @@ let closure_15 = async function _maybeFetchCollectionsAfter(arg0) {
             if (tmp31) {
               tmp31 = includeUnpublishedProducts;
             }
-            const includeUnpublishedCollections = tmp55.includeUnpublishedCollections;
+            const includeUnpublishedCollections = tmp58.includeUnpublishedCollections;
             let tmp32 = undefined !== includeUnpublishedCollections;
             if (tmp32) {
               tmp32 = includeUnpublishedCollections;
             }
-            const ignoreCache = tmp55.ignoreCache;
+            const ignoreCache = tmp58.ignoreCache;
             let tmp33 = undefined !== ignoreCache;
             if (tmp33) {
               tmp33 = ignoreCache;
@@ -371,7 +368,7 @@ let closure_15 = async function _maybeFetchCollectionsAfter(arg0) {
             if (Boolean(applicationId)) {
               const _Boolean2 = Boolean;
               if (Boolean(anchorCollectionId)) {
-                const tmp35 = getCollectionsAfterKey(tmp55);
+                const tmp35 = getCollectionsAfterKey(tmp58);
                 closure_129_0 = tmp35;
                 collectionsAfterFetchState = collectionsAfterFetchState.getCollectionsAfterFetchState(tmp35);
                 if ("loading" !== collectionsAfterFetchState) {
@@ -379,12 +376,12 @@ let closure_15 = async function _maybeFetchCollectionsAfter(arg0) {
                   if (!tmp33) {
                     if (null != collectionsAfterFetchedAt) {
                       if ("error" === collectionsAfterFetchState) {
-                        let tmp38 = closure_2_9;
+                        let TWELVE_HOURS_MS = StorefrontCacheUtils.ERROR_STALE_THRESHOLD_MS;
                       } else {
-                        tmp38 = closure_2_8;
+                        TWELVE_HOURS_MS = StorefrontCacheUtils.TWELVE_HOURS_MS;
                       }
                       const _Date = Date;
-                      if (Date.now() - collectionsAfterFetchedAt <= tmp38) {
+                      if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                         c6 = 3;
                         return { value: "HermesInternal", done: null };
                       }
@@ -432,11 +429,11 @@ let closure_15 = async function _maybeFetchCollectionsAfter(arg0) {
           return obj13;
         }
         c6 = 3;
-      } catch (tmp46) {
-        closure_3 = tmp46;
+      } catch (tmp49) {
+        closure_3 = tmp49;
         if (tmp4 === c4) {
           c6 = tmp2;
-          throw tmp46;
+          throw tmp49;
         } else {
           c5 = tmp;
         }
@@ -444,7 +441,7 @@ let closure_15 = async function _maybeFetchCollectionsAfter(arg0) {
     }
   })();
 };
-let closure_16 = async function _maybeFetchCollectionsForApplication(arg0, value) {
+let closure_14 = async function _maybeFetchCollectionsForApplication(arg0, value) {
   if (c6 === 2) {
     c6 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -482,12 +479,12 @@ let closure_16 = async function _maybeFetchCollectionsForApplication(arg0, value
             includeUnpublishedProducts = false;
           }
           closure_129_1 = includeUnpublishedProducts;
-          let flag = tmp98.includeUnpublishedCollections;
+          let flag = tmp102.includeUnpublishedCollections;
           if (flag === undefined) {
             flag = false;
           }
           closure_129_2 = flag;
-          let flag2 = tmp98.ignoreCache;
+          let flag2 = tmp102.ignoreCache;
           if (flag2 === undefined) {
             flag2 = false;
           }
@@ -523,11 +520,11 @@ let closure_16 = async function _maybeFetchCollectionsForApplication(arg0, value
                 fetchedAtForApplication = closure_130_5.getFetchedAtForApplication(closure_129_0);
                 if (null != fetchedAtForApplication) {
                   if ("error" === fetchStateForApplication) {
-                    let tmp34 = closure_130_9;
+                    let TWELVE_HOURS_MS = closure_130_0(closure_130_2[5]).ERROR_STALE_THRESHOLD_MS;
                   } else {
-                    tmp34 = closure_130_8;
+                    TWELVE_HOURS_MS = closure_130_0(closure_130_2[5]).TWELVE_HOURS_MS;
                   }
-                  closure_129_8 = tmp34;
+                  closure_129_8 = TWELVE_HOURS_MS;
                   const _Date = Date;
                   if (Date.now() - fetchedAtForApplication <= closure_129_8) {
                     fetchParamsForApplication = closure_130_5.getFetchParamsForApplication(closure_129_0);
@@ -564,7 +561,7 @@ let closure_16 = async function _maybeFetchCollectionsForApplication(arg0, value
                 httpGetWithCountryCodeQuery = httpGetWithCountryCodeQuery(request);
                 c5 = 3;
                 c6 = 1;
-                const tmp55 = closure_130_0(closure_130_2[7]);
+                const tmp59 = closure_130_0(closure_130_2[7]);
               }
             }
           }
@@ -598,11 +595,11 @@ let closure_16 = async function _maybeFetchCollectionsForApplication(arg0, value
         }
         c6 = 3;
       }
-    } catch (tmp73) {
-      closure_3 = tmp73;
+    } catch (tmp77) {
+      closure_3 = tmp77;
       if (tmp4 === c4) {
         c6 = tmp2;
-        throw tmp73;
+        throw tmp77;
       } else {
         c5 = tmp;
       }
@@ -610,14 +607,12 @@ let closure_16 = async function _maybeFetchCollectionsForApplication(arg0, value
   }
 };
 const Endpoints = fn(1074).Endpoints;
-let closure_8 = 12 * DurationsDefault.Millis.HOUR;
-let closure_9 = 10 * DurationsDefault.Millis.MINUTE;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/storefront/StorefrontCollectionActionCreators.tsx");
 
 export const maybeFetchCollectionsWithProducts = function maybeFetchCollectionsWithProducts() {
   const self = this;
-  const apply = closure_10.apply;
+  const apply = closure_8.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -629,7 +624,7 @@ export { getCollectionListKey };
 export { getCollectionPageKey };
 export const maybeFetchCollectionsForApplicationPage = function maybeFetchCollectionsForApplicationPage() {
   const self = this;
-  const apply = closure_13.apply;
+  const apply = closure_11.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -640,7 +635,7 @@ export const maybeFetchCollectionsForApplicationPage = function maybeFetchCollec
 export { getCollectionsAfterKey };
 export const maybeFetchCollectionsAfter = function maybeFetchCollectionsAfter() {
   const self = this;
-  const apply = closure_15.apply;
+  const apply = closure_13.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -650,7 +645,7 @@ export const maybeFetchCollectionsAfter = function maybeFetchCollectionsAfter() 
 };
 export const maybeFetchCollectionsForApplication = function maybeFetchCollectionsForApplication() {
   const self = this;
-  const apply = closure_16.apply;
+  const apply = closure_14.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {

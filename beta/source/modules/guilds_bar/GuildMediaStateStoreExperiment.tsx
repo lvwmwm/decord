@@ -1,11 +1,11 @@
-// Module ID: 16430
-// Function ID: 16431
+// Module ID: 16672
+// Function ID: 16673
 // Name: GuildMediaStateStoreExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useGuildMediaStateSource
 
-// Module 16430 (GuildMediaStateStoreExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1434 */;
+// Module 16672 (GuildMediaStateStoreExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { HOOK: "hook", STORE: "store", SHADOW: "shadow" };
 const obj2 = { kind: "user", name: "2026-08-guilds-bar-media-state-store", defaultConfig: { source: obj.HOOK }, variations: { 0: { source: obj.HOOK }, 1: { source: obj.STORE }, 2: { source: obj.SHADOW } } };

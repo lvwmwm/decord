@@ -1,11 +1,11 @@
-// Module ID: 12108
-// Function ID: 12109
+// Module ID: 12228
+// Function ID: 12229
 // Dependencies: [2]
 
-// Module 12108
+// Module 12228
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiEzExample-1x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/ac2fa236a3143baca270ce98ceb346358615b3fc299f035d3dec94767b161e1f.png";
-export const metadata = { fileBytes: 1863 };
+export default "https://cdn.discordapp.com/assets/content/d7a785c4938dc0d0a645ed569ad7bfa2a2daa7669d0f46b792679702e3843143.png";
+export const metadata = { fileBytes: 1847 };

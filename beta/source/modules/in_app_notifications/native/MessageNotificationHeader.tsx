@@ -1,19 +1,19 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10429
+// Function ID: 10430
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4628, 4285, 1371, 21, 4636, 576, 4632, 4789, 1094, 5152, 5154, 5109, 504, 2]
+// Dependencies: [19, 17, 4748, 4405, 1372, 21, 4756, 576, 4752, 4909, 1095, 5289, 5291, 5239, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10300 (MessageNotificationHeader)
+// Module 10429 (MessageNotificationHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ChannelTypes from "ChannelTypes" /* 1094 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useChannelName from "useChannelName" /* 4789 */;
+import ChannelTypes from "ChannelTypes" /* 1095 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useChannelName from "useChannelName" /* 4909 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function LocationText(channel) {
@@ -40,14 +40,14 @@ function LocationText(channel) {
       }
       return element;
     } else {
-      if (tmp.type !== tmp3(1094).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5109).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5109);
+      if (tmp.type !== tmp3(1095).ChannelTypes.PUBLIC_THREAD) {
+        const simpleChannelIconComponent = tmp3(5239).getSimpleChannelIconComponent(tmp);
+        const tmp3Result = tmp3(5239);
       }
       if (null == tmp2) {
-        const ThreadIcon = tmp3(5154).ThreadIcon;
+        const ThreadIcon = tmp3(5291).ThreadIcon;
       }
-      tmp3Result2 = tmp3(5152);
+      tmp3Result2 = tmp3(5289);
       const ChatIcon = tmp3Result2.ChatIcon;
     }
   }, items);
@@ -62,7 +62,7 @@ function LocationText(channel) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -88,28 +88,28 @@ export default function MessageNotificationHeader(locationTextColor) {
   const type = channel.type;
   let tmp10 = channelName;
   if (ChannelTypes.ChannelTypes.GROUP_DM !== type) {
-    if (tmp2(1094).ChannelTypes.GUILD_FORUM !== type) {
-      if (tmp2(1094).ChannelTypes.GUILD_MEDIA !== type) {
-        if (tmp2(1094).ChannelTypes.GUILD_TEXT !== type) {
-          if (tmp2(1094).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
-            if (tmp2(1094).ChannelTypes.GUILD_APP !== type) {
-              if (tmp2(1094).ChannelTypes.GUILD_VOICE !== type) {
-                if (tmp2(1094).ChannelTypes.GUILD_STAGE_VOICE !== type) {
-                  if (tmp2(1094).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
-                    if (tmp2(1094).ChannelTypes.PUBLIC_THREAD !== type) {
-                      if (tmp2(1094).ChannelTypes.PRIVATE_THREAD !== type) {
-                        if (tmp2(1094).ChannelTypes.MEDIA_THREAD !== type) {
+    if (tmp2(1095).ChannelTypes.GUILD_FORUM !== type) {
+      if (tmp2(1095).ChannelTypes.GUILD_MEDIA !== type) {
+        if (tmp2(1095).ChannelTypes.GUILD_TEXT !== type) {
+          if (tmp2(1095).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
+            if (tmp2(1095).ChannelTypes.GUILD_APP !== type) {
+              if (tmp2(1095).ChannelTypes.GUILD_VOICE !== type) {
+                if (tmp2(1095).ChannelTypes.GUILD_STAGE_VOICE !== type) {
+                  if (tmp2(1095).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
+                    if (tmp2(1095).ChannelTypes.PUBLIC_THREAD !== type) {
+                      if (tmp2(1095).ChannelTypes.PRIVATE_THREAD !== type) {
+                        if (tmp2(1095).ChannelTypes.MEDIA_THREAD !== type) {
                           tmp10 = null;
-                          if (tmp2(1094).ChannelTypes.DM !== type) {
+                          if (tmp2(1095).ChannelTypes.DM !== type) {
                             tmp10 = null;
-                            if (tmp2(1094).ChannelTypes.GUILD_CATEGORY !== type) {
+                            if (tmp2(1095).ChannelTypes.GUILD_CATEGORY !== type) {
                               tmp10 = null;
-                              if (tmp2(1094).ChannelTypes.GUILD_STORE !== type) {
+                              if (tmp2(1095).ChannelTypes.GUILD_STORE !== type) {
                                 tmp10 = null;
-                                if (tmp2(1094).ChannelTypes.GUILD_DIRECTORY !== type) {
+                                if (tmp2(1095).ChannelTypes.GUILD_DIRECTORY !== type) {
                                   tmp10 = null;
-                                  if (tmp2(1094).ChannelTypes.GUILD_SPACE !== type) {
-                                    const UNKNOWN = tmp2(1094).ChannelTypes.UNKNOWN;
+                                  if (tmp2(1095).ChannelTypes.GUILD_SPACE !== type) {
+                                    const UNKNOWN = tmp2(1095).ChannelTypes.UNKNOWN;
                                     tmp10 = null;
                                   }
                                 }
@@ -122,8 +122,8 @@ export default function MessageNotificationHeader(locationTextColor) {
                   }
                   let channelName1 = null;
                   if (null != parentChannel) {
-                    channelName1 = tmp2(4789).computeChannelName(parentChannel, UserStore, RelationshipStore);
-                    const tmp2Result2 = tmp2(4789);
+                    channelName1 = tmp2(4909).computeChannelName(parentChannel, UserStore, RelationshipStore);
+                    const tmp2Result2 = tmp2(4909);
                   }
                   if (null != channelName1) {
                     const _HermesInternal2 = HermesInternal;
@@ -158,7 +158,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     const items1 = [tmp.primaryText, tmp6];
     obj5.style = items1;
     obj5.children = author.nick;
-    tmp17Result = tmp17(tmp2(4632).Text, obj5);
+    tmp17Result = tmp17(tmp2(4752).Text, obj5);
   }
   const items2 = [tmp17Result, ];
   let tmp17Result2 = null != tmp10;
@@ -184,9 +184,9 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   if (tmp2Result) {
     const obj3 = { style: tmp.secondaryTextContainer, children: null };
     const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    const items2 = [tmp4(tmp5(4632).Text, obj4), ];
+    const items2 = [tmp4(tmp5(4752).Text, obj4), ];
     const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
-    items2[1] = tmp4(tmp5(4632).Text, obj5);
+    items2[1] = tmp4(tmp5(4752).Text, obj5);
     obj3.children = items2;
     tmp2Result = tmp2(tmp3, obj3);
   }

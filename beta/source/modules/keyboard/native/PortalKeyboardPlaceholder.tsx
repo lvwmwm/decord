@@ -1,19 +1,19 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12505
+// Function ID: 12506
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 4636, 1363, 576, 1609, 1611, 7046, 1477, 5660, 7975, 4504, 1877, 2]
+// Dependencies: [19, 17, 21, 4756, 1364, 576, 1610, 1612, 7188, 1478, 5796, 8116, 4624, 1878, 2]
 
-// Module 12385 (PortalKeyboardPlaceholder)
+// Module 12505 (PortalKeyboardPlaceholder)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import KeyboardTypes from "KeyboardTypes" /* 1609 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1877 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4504 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5660 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7046 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7975 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1878 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4624 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5796 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7188 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8116 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,7 +30,7 @@ function PortalKeyboardPlaceholderInner(keyboardType) {
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
   let absoluteFillObject = null;
   if (obj.isIOS()) {
@@ -60,7 +60,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
     hairlineWidth1 = tmp6.hairlineWidth;
   }
   obj2.borderLeftWidth = hairlineWidth1;
-  const APP_LAUNCHER = tmp(1609).KeyboardTypes.APP_LAUNCHER;
+  const APP_LAUNCHER = tmp(1610).KeyboardTypes.APP_LAUNCHER;
   obj2.backgroundColor = nativeDefault.colors.BACKGROUND_BASE_LOW;
   obj = PlatformUtils;
   if (tmpResult.isIOS()) {

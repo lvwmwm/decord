@@ -1,13 +1,9 @@
 // Module ID: 14418
 // Function ID: 14419
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 14418
+import registerAsset from "module_1121" /* 1121 */;
 
-export default (arg0) => {
-  try {
-    return String(arg0);
-  } catch (err) {
-    return "Object";
-  }
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42c5142fba4f2f3f3d86c5b7ea6fd4ac", name: "YouTab", type: "lottie" });

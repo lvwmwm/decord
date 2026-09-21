@@ -1,28 +1,30 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 17083
+// Function ID: 17084
 // Name: VibegrationsAppChannelView
-// Dependencies: [32, 19, 17, 9640, 7979, 9641, 21, 4636, 576, 16107, 1877, 7347, 16719, 9698, 9637, 16720, 4632, 1114, 3590, 5056, 2]
+// Dependencies: [32, 19, 17, 9313, 13558, 9314, 21, 4756, 576, 1878, 5274, 16965, 9562, 9571, 16966, 13562, 7698, 16967, 17084, 4752, 1115, 3678, 5186, 2]
 // Exports: default
 
-// Module 16718 (VibegrationsAppChannelView)
+// Module 17083 (VibegrationsAppChannelView)
 import nativeDefault from "native" /* 576 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9637 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9698 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9562 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9571 */;
+import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13562 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9640 */;
-import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 7979 */;
+import FramesStore from "FramesStore" /* 9313 */;
+import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 13558 */;
 
 const require = globalThis.__r;
 
-const require = fn;
+require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FramesConstants = fn(9641);
+const FramesConstants = fn(9314);
 ({ EmbeddedSurfaceType: closure_9, FrameLayoutModes: c10, isLaunched: closure_11 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_14 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: { flex: 1, paddingBottom }, centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_12 }, copy: null };
   const obj2 = { flex: 1, paddingBottom };
@@ -34,37 +36,38 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsAppChannelView.tsx");
 
 export default function VibegrationsAppChannelView(channel) {
-  channel = channel.channel;
-  _require = channel;
-  let disallowGesture;
-  let disallowGesture1;
+  importDefault = undefined;
+  let guild_id;
   let first;
   noop = undefined;
+  let id;
   closure_7 = undefined;
   closure_8 = undefined;
-  let tmp2 = disallowGesture1;
-  let container = closure_14(disallowGesture(disallowGesture1[10])());
-  let InlineFrameView = _require;
-  let result = require("VibegrationsUtils").vibegrationsAppIdFromTopic(channel.topic);
-  disallowGesture = result;
-  const guild_id = channel.guild_id;
-  disallowGesture1 = guild_id;
-  const tmp4 = first(noop.useState(false), 2);
-  first = tmp4[0];
-  noop = tmp4[1];
-  const items = [channel.id, guild_id];
-  const memo = noop.useMemo(() => ({ type: constants.APP_CHANNEL, channelId: user.id, guildId: disallowGesture1 }), items);
-  const tmp7 = disallowGesture(tmp2[12])(result, memo);
-  let id = null;
-  if (null != tmp7) {
-    id = null;
-    if (closure_11(tmp7)) {
-      id = tmp7;
+  let id2;
+  let tmp = importDefault;
+  let tmp2 = guild_id;
+  let items3 = closure_14(require("useSystemKeyboardHeight")());
+  let tmp3 = id;
+  let result = id(guild_id[10]).vibegrationsAppIdFromTopic(id.topic);
+  importDefault = result;
+  guild_id = id.guild_id;
+  const tmp5 = first(noop.useState(false), 2);
+  first = tmp5[0];
+  noop = tmp5[1];
+  const items = [id.id, guild_id];
+  const memo = noop.useMemo(() => ({ type: constants.APP_CHANNEL, channelId: id.id, guildId: guild_id }), items);
+  const tmp8 = tmp(tmp2[11])(result, memo);
+  id = tmp8;
+  let id1 = null;
+  if (null != tmp8) {
+    id1 = null;
+    if (closure_11(tmp8)) {
+      id1 = tmp8;
     }
   }
-  const items1 = [result, first, tmp7, memo];
+  const items1 = [result, first, tmp8, memo];
   const effect = obj2.useEffect(() => {
-    if (null != disallowGesture) {
+    if (null != c1) {
       if (!first) {
         if (null == closure_6) {
           const mainFrame = FramesStore.getMainFrame();
@@ -79,8 +82,8 @@ export default function VibegrationsAppChannelView(channel) {
     }
   }, items1);
   closure_7 = obj2.useRef(null);
-  closure_8 = obj2.useRef(channel.id);
-  const items2 = [tmp7, channel.id];
+  closure_8 = obj2.useRef(id.id);
+  const items2 = [tmp8, id.id];
   const effect1 = obj2.useEffect(() => {
     id = undefined;
     if (id != null) {
@@ -90,7 +93,7 @@ export default function VibegrationsAppChannelView(channel) {
       id = null;
     }
     closure_7.current = id;
-    closure_8.current = user.id;
+    closure_8.current = id.id;
   }, items2);
   const effect2 = obj2.useEffect(() => () => {
     let isChatOpenResult = null == ref.current;
@@ -98,69 +101,53 @@ export default function VibegrationsAppChannelView(channel) {
       isChatOpenResult = ref2.isChatOpen(ref2.current);
     }
     if (!isChatOpenResult) {
-      disallowGesture(disallowGesture1[13]).leaveFrame(ref.current);
-      const obj = disallowGesture(disallowGesture1[13]);
+      c1(guild_id[12]).leaveFrame(ref.current);
+      const obj = c1(guild_id[12]);
     }
   }, []);
-  _require = tmp13;
-  disallowGesture = obj2.useContext(tmp(tmp2[9])).disallowGesture;
-  const context = obj2.useContext(InlineFrameView(tmp2[9]).MainTabsChannelScreenStackContext);
-  disallowGesture1 = undefined;
-  if (context != null) {
-    disallowGesture1 = context.disallowGesture;
-  }
-  if (disallowGesture1 == null) {
-    disallowGesture1 = null;
-  }
-  const items3 = [null != id, disallowGesture, disallowGesture1];
-  const effect3 = obj2.useEffect(() => {
-    if (closure_0) {
-      let result = disallowGesture.set(true);
-      if (disallowGesture1 != null) {
-        let result1 = disallowGesture1.set(true);
-      }
-      return () => {
-        const result = disallowGesture.set(false);
-        if (disallowGesture1 != null) {
-          const result1 = disallowGesture1.set(false);
-        }
-      };
-    }
-  }, items3);
+  tmp(tmp2[14])(null != id1);
+  id2 = id.id;
+  [][0] = id2;
+  const callback = obj2.useCallback(() => closure_4(false), []);
   if (null == result) {
     return null;
-  } else if (null != id) {
-    let obj3 = { style: null, children: null };
-    container = container.container;
-    obj3.style = container;
-    InlineFrameView = InlineFrameView(tmp2[15]).InlineFrameView;
+  } else if (null != id1) {
+    let obj3 = { style: items3.container, children: null };
     const obj4 = { frameId: null, layoutMode: null };
-    id = id.id;
-    obj4.frameId = id;
+    id1 = id1.id;
+    obj4.frameId = id1;
     obj4.layoutMode = constants2.FOCUSED;
-    tmp2 = closure_12(InlineFrameView, obj4);
-    obj3.children = tmp2;
-    let tmp21 = closure_12(id, obj3);
+    tmp3 = closure_12(tmp3(tmp2[17]).InlineFrameView, obj4);
+    items3 = [tmp3, ];
+    tmp = tmp(tmp2[18]);
+    const obj5 = { channelId: null, onOpenChat: null };
+    id = id.id;
+    obj5.channelId = id;
+    obj5.onOpenChat = tmp16;
+    tmp2 = closure_12(tmp, obj5);
+    items3[1] = tmp2;
+    obj3.children = items3;
+    let tmp20 = closure_13(id, obj3);
   } else if (first) {
-    const obj5 = { style: container.centered, children: null };
-    const obj6 = { style: container.copy, children: null };
-    const obj7 = { variant: "heading-lg/bold", color: "text-default", children: channel.name };
-    const items4 = [closure_12(InlineFrameView(tmp2[16]).Text, obj7), ];
-    const obj8 = { variant: "text-md/normal", color: "text-muted", children: null };
-    const intl = InlineFrameView(tmp2[17]).intl;
-    obj8.children = intl.string(tmp(tmp2[18]).QM4w4h);
-    items4[1] = closure_12(InlineFrameView(tmp2[16]).Text, obj8);
-    obj6.children = items4;
-    const items5 = [closure_13(id, obj6), ];
-    const obj9 = { variant: "primary", text: null, onPress: null };
-    const intl2 = InlineFrameView(tmp2[17]).intl;
-    obj9.text = intl2.string(tmp(tmp2[18]).jLMpUv);
-    obj9.onPress = tmp17;
-    items5[1] = closure_12(InlineFrameView(tmp2[19]).Button, obj9);
-    obj5.children = items5;
-    tmp21 = closure_13(id, obj5);
+    const obj6 = { style: items3.centered, children: null };
+    const obj7 = { style: items3.copy, children: null };
+    const obj8 = { variant: "heading-lg/bold", color: "text-default", children: id.name };
+    const items4 = [closure_12(tmp3(tmp2[19]).Text, obj8), ];
+    const obj9 = { variant: "text-md/normal", color: "text-muted", children: null };
+    const intl = tmp3(tmp2[20]).intl;
+    obj9.children = intl.string(tmp(tmp2[21]).QM4w4h);
+    items4[1] = closure_12(tmp3(tmp2[19]).Text, obj9);
+    obj7.children = items4;
+    const items5 = [closure_13(id, obj7), ];
+    const obj10 = { variant: "primary", text: null, onPress: null };
+    const intl2 = tmp3(tmp2[20]).intl;
+    obj10.text = intl2.string(tmp(tmp2[21]).jLMpUv);
+    obj10.onPress = callback;
+    items5[1] = closure_12(tmp3(tmp2[22]).Button, obj10);
+    obj6.children = items5;
+    tmp20 = closure_13(id, obj6);
   } else {
-    const obj10 = { style: container.centered, children: closure_12(memo, {}) };
-    tmp21 = closure_12(id, obj10);
+    const obj11 = { style: items3.centered, children: closure_12(memo, {}) };
+    tmp20 = closure_12(id, obj11);
   }
 };

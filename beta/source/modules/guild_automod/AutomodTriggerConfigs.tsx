@@ -1,16 +1,16 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 17944
+// Function ID: 17945
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 11996, 1114, 16948, 10228, 2]
+// Dependencies: [19, 12117, 1115, 17301, 10356, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 17658 (AutomodTriggerConfigs)
-import util from "util" /* 1114 */;
-import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 10228 */;
+// Module 17944 (AutomodTriggerConfigs)
+import util from "util" /* 1115 */;
+import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 10356 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(11996);
+const Constants = fn(12117);
 ({ AutomodActionType, AutomodEventType, AutomodTriggerType } = Constants);
 const mentionTotalLimit = Constants.MENTION_SPAM_LIMIT_DEFAULT;
 let obj = { NEW: "new", RECOMMENDED: "recommended", BETA: "beta", ALPHA: "alpha" };
@@ -163,7 +163,18 @@ obj9.flags = new Set(items11);
 const set19 = new Set(items11);
 obj9.defaultActionTypes = new Set();
 obj2[AutomodTriggerType.SERVER_POLICY] = obj9;
-const obj10 = { type: AutomodTriggerType.APPLICATION, perGuildMaxCount: 0, availableActionTypes: null, flags: null, defaultActionTypes: null };
+const obj10 = {
+  getDefaultRuleName() {
+    const intl = util.intl;
+    return intl.string(util.t.VxE3o6);
+  },
+  type: AutomodTriggerType.APPLICATION,
+  eventType: AutomodEventType.MESSAGE_SEND,
+  perGuildMaxCount: Constants.MAX_APPLICATION_RULES_PER_GUILD,
+  availableActionTypes: null,
+  flags: null,
+  defaultActionTypes: null
+};
 const set20 = new Set();
 obj10.availableActionTypes = new Set();
 const set21 = new Set();
@@ -174,7 +185,7 @@ obj2[AutomodTriggerType.APPLICATION] = obj10;
 const obj11 = { MEMBERS: "members", CONTENT: "content" };
 const obj12 = { [obj11.MEMBERS]: items12, [obj11.CONTENT]: items13 };
 items12 = [obj2[AutomodTriggerType.USER_PROFILE]];
-items13 = [obj2[AutomodTriggerType.SERVER_POLICY], obj2[AutomodTriggerType.MENTION_SPAM], obj2[AutomodTriggerType.ML_SPAM], obj2[AutomodTriggerType.DEFAULT_KEYWORD_LIST], obj2[AutomodTriggerType.KEYWORD]];
+items13 = [obj2[AutomodTriggerType.SERVER_POLICY], obj2[AutomodTriggerType.MENTION_SPAM], obj2[AutomodTriggerType.ML_SPAM], obj2[AutomodTriggerType.DEFAULT_KEYWORD_LIST], obj2[AutomodTriggerType.KEYWORD], obj2[AutomodTriggerType.APPLICATION]];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodTriggerConfigs.tsx");
 
@@ -186,8 +197,8 @@ export const checkTriggerTypeForFlag = function checkTriggerTypeForFlag(arg0, ar
   const flags = obj2[arg0].flags;
   return flags.has(arg1);
 };
-export const getAvailableActionTypes = function getAvailableActionTypes(arg0) {
-  return Array.from(obj2[arg0].availableActionTypes);
+export const getAvailableActionTypes = function getAvailableActionTypes(triggerType) {
+  return Array.from(obj2[triggerType].availableActionTypes);
 };
 export const validateRuleByTriggerConfigOrThrow = function validateRuleByTriggerConfigOrThrow(actions, arr) {
   ({ id: require, triggerType } = actions);
@@ -217,9 +228,11 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
     throw error2;
   }
 };
-export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) {
-  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16948).useIsUserProfileRuleEnabled(arg0);
-  const items = [isUserProfileRuleEnabled];
+export const useAvailableTriggerTypes = function useAvailableTriggerTypes(guildId) {
+  isUserProfileRuleEnabled = isUserProfileRuleEnabled(isApplicationRuleEnabled[3]).useIsUserProfileRuleEnabled(guildId);
+  const obj = isUserProfileRuleEnabled(isApplicationRuleEnabled[3]);
+  isApplicationRuleEnabled = isUserProfileRuleEnabled(isApplicationRuleEnabled[4]).useIsApplicationRuleEnabled(guildId);
+  const items = [isUserProfileRuleEnabled, isApplicationRuleEnabled];
   return noop.useMemo(() => {
     const keys = Object.keys(obj12);
     return keys.reduce((acc, item) => {
@@ -232,7 +245,15 @@ export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) 
           }
           let tmp5 = !tmp3;
           if (!tmp3) {
-            tmp5 = type.perGuildMaxCount > 0;
+            let tmp6 = type.type === tmp.APPLICATION;
+            if (tmp6) {
+              tmp6 = !closure_1_1;
+            }
+            let tmp8 = !tmp6;
+            if (!tmp6) {
+              tmp8 = type.perGuildMaxCount > 0;
+            }
+            tmp5 = tmp8;
           }
           tmp2 = tmp5;
         }
@@ -254,6 +275,8 @@ export const getDefaultTriggerMetadataForTriggerType = function getDefaultTrigge
         if (tmp3.MENTION_SPAM === triggerType) {
           const obj = { mentionTotalLimit, mentionRaidProtectionEnabled: tmp2 };
           return obj;
+        } else if (tmp3.APPLICATION === triggerType) {
+          return { applicationId: null };
         } else if (tmp3.ML_SPAM !== triggerType) {
           const SERVER_POLICY = tmp3.SERVER_POLICY;
         }

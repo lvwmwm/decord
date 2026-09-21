@@ -1,23 +1,23 @@
-// Module ID: 8749
-// Function ID: 8750
+// Module ID: 8904
+// Function ID: 8905
 // Name: ChannelSettingsStore
-// Dependencies: [1961, 8498, 1385, 1957, 1074, 1113, 4287, 4289, 1966, 1967, 1270, 573, 12, 1971, 4228, 504, 2]
+// Dependencies: [2045, 8651, 1386, 2041, 1074, 1114, 4407, 4409, 2050, 2051, 1271, 573, 12, 2055, 4348, 504, 2]
 
-// Module 8749 (ChannelSettingsStore)
+// Module 8904 (ChannelSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ThreadConstants from "ThreadConstants" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 1966 */;
-import ForumLayout from "ForumLayout" /* 1967 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 1971 */;
-import _modDef4228 from "module_4228" /* 4228 */;
-import ReactionUtils from "ReactionUtils" /* 4287 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
-import InviteRecord from "InviteRecord" /* 8498 */;
-import UserRecord from "UserRecord" /* 1385 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ThreadConstants from "ThreadConstants" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2050 */;
+import ForumLayout from "ForumLayout" /* 2051 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import _modDef4348 from "module_4348" /* 4348 */;
+import ReactionUtils from "ReactionUtils" /* 4407 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
+import InviteRecord from "InviteRecord" /* 8651 */;
+import UserRecord from "UserRecord" /* 1386 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 import Constants from "Constants" /* 1074 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -102,7 +102,7 @@ function _createInvite(code) {
   }
   obj.guild = fromInviteGuildResult;
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
-  obj.createdAt = _modDef4228(code.created_at);
+  obj.createdAt = _modDef4348(code.created_at);
   ({ type: obj.type, roles: obj.roles } = code);
   return new InviteRecord(obj);
 }

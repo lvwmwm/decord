@@ -1,13 +1,13 @@
-// Module ID: 14628
-// Function ID: 14629
+// Module ID: 14819
+// Function ID: 14820
 // Name: BaseSoundboardManager
-// Dependencies: [502, 1908, 1898, 573, 2]
+// Dependencies: [502, 1992, 1982, 573, 2]
 
-// Module 14628 (BaseSoundboardManager)
+// Module 14819 (BaseSoundboardManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import LifecycleManager from "LifecycleManager" /* 1898 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 class BaseSoundboardManager extends tmp2 {
   constructor() {

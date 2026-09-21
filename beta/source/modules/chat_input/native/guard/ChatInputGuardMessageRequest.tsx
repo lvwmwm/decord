@@ -1,13 +1,13 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12693
+// Function ID: 12694
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1371, 21, 1483, 12573, 504, 12575, 4335, 1114, 5678, 4647, 12581, 2]
+// Dependencies: [5, 19, 1372, 21, 1484, 12694, 504, 12696, 4454, 1115, 5814, 4767, 12702, 2]
 
-// Module 12572 (ChatInputGuardMessageRequest)
-import ChatInputGuardDefault from "ChatInputGuard" /* 12581 */;
+// Module 12693 (ChatInputGuardMessageRequest)
+import ChatInputGuardDefault from "ChatInputGuard" /* 12702 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -116,14 +116,14 @@ export default noop.memo(function ChatInputGuardMessageRequest(channel) {
       }
     }
   };
-  importDefault = channel(1483).useNavigation();
-  let obj = channel(1483);
-  const isMessageRequestRestrictedViewer = channel(12573).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
-  let obj2 = channel(12573);
+  importDefault = channel(1484).useNavigation();
+  let obj = channel(1484);
+  const isMessageRequestRestrictedViewer = channel(12694).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(12694);
   const items = [closure_4];
   const stateFromStores = channel(504).useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
   let obj3 = channel(504);
-  const messageRequestActions = channel(12575).useMessageRequestActions({
+  const messageRequestActions = channel(12696).useMessageRequestActions({
     user: stateFromStores,
     onError: function handleRequestError() {
       const obj2 = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
@@ -151,7 +151,7 @@ export default noop.memo(function ChatInputGuardMessageRequest(channel) {
     tmp6 = isOptimisticRejected;
   }
   const obj6 = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  let obj4 = channel(12575);
+  let obj4 = channel(12696);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -166,13 +166,13 @@ export default noop.memo(function ChatInputGuardMessageRequest(channel) {
     }
   };
   const tmp7 = closure_5;
-  let intl = tmp(1114).intl;
-  obj6.message = intl.string(channel(1114).t["e/eQVB"]);
-  const intl2 = tmp(1114).intl;
-  const t = tmp(1114).t;
+  let intl = tmp(1115).intl;
+  obj6.message = intl.string(channel(1115).t["e/eQVB"]);
+  const intl2 = tmp(1115).intl;
+  const t = tmp(1115).t;
   obj6.subtext = intl2.string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI);
-  const intl3 = tmp(1114).intl;
-  obj6.buttonPrimaryText = intl3.string(channel(1114).t.Kz8Pwr);
+  const intl3 = tmp(1115).intl;
+  obj6.buttonPrimaryText = intl3.string(channel(1115).t.Kz8Pwr);
   obj6.buttonPrimaryOnPress = function onAcceptClick(arg0) {
     const self = this;
     const apply = closure_4.apply;
@@ -191,8 +191,8 @@ export default noop.memo(function ChatInputGuardMessageRequest(channel) {
     isAcceptLoading = isOptimisticAccepted;
   }
   obj6.buttonPrimaryLoading = isAcceptLoading;
-  const intl4 = tmp(1114).intl;
-  const t2 = tmp(1114).t;
+  const intl4 = tmp(1115).intl;
+  const t2 = tmp(1115).t;
   obj6.buttonSecondaryText = intl4.string(isMessageRequestRestrictedViewer ? t2.BVN4pL : t2.B2nygW);
   obj6.buttonSecondaryOnPress = function onRejectClick(arg0) {
     const self = this;

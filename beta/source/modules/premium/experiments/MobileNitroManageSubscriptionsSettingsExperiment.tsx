@@ -1,11 +1,11 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13664
+// Function ID: 13665
 // Name: MobileNitroManageSubscriptionsSettingsExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment, useMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 13485 (MobileNitroManageSubscriptionsSettingsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 13664 (MobileNitroManageSubscriptionsSettingsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-macaron", kind: "user", defaultConfig: { enabled: false }, variations: null };

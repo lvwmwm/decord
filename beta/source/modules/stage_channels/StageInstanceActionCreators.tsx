@@ -1,11 +1,11 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8677
+// Function ID: 8678
 // Name: StageInstanceActionCreators
-// Dependencies: [5, 1074, 1270, 2]
+// Dependencies: [5, 1074, 1271, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8524 (StageInstanceActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+// Module 8677 (StageInstanceActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

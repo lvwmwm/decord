@@ -1,15 +1,15 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 14908
+// Function ID: 14909
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7645, 7660, 563, 7657, 1114, 2]
+// Dependencies: [32, 19, 7784, 7799, 563, 7796, 1115, 2]
 // Exports: default
 
-// Module 14720 (useProfileFrameSections)
-import util from "util" /* 1114 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7657 */;
+// Module 14908 (useProfileFrameSections)
+import util from "util" /* 1115 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7660 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7799 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;

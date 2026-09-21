@@ -1,11 +1,11 @@
-// Module ID: 6663
-// Function ID: 6664
+// Module ID: 6803
+// Function ID: 6804
 // Dependencies: [2]
 
-// Module 6663
+// Module 6803
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VoiceFiltersSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/4ebbba074225969880f91867e949a50faf9e6e0fa8b2895159b5eeee2e252ad3.png";
-export const metadata = { fileBytes: 50635 };
+export default "https://cdn.discordapp.com/assets/content/b2c327a7def568a6d1bc7c77d245a0260b041234b9b5cb915486e529d5744502.png";
+export const metadata = { fileBytes: 51786 };

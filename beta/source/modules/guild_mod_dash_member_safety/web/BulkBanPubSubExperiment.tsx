@@ -1,11 +1,11 @@
-// Module ID: 7425
-// Function ID: 7426
+// Module ID: 7564
+// Function ID: 7565
 // Name: BulkBanPubSubExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: useBulkBanPubSubExperimentConfig
 
-// Module 7425 (BulkBanPubSubExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 7564 (BulkBanPubSubExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-pubsub-bulk-ban-users", kind: "user", defaultConfig: { usePubSub: false }, variations: null };

@@ -1,19 +1,19 @@
-// Module ID: 4878
-// Function ID: 4879
+// Module ID: 4997
+// Function ID: 4998
 // Name: StoreUtils
-// Dependencies: [5, 502, 4296, 4297, 4300, 1074, 4879, 4877, 4958, 1430, 4960, 1270, 1363, 1114, 2]
+// Dependencies: [5, 502, 4416, 4417, 4420, 1074, 4998, 4996, 5077, 1431, 5079, 1271, 1364, 1115, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4878 (StoreUtils)
-import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1430 */;
+// Module 4997 (StoreUtils)
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4296 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4297 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
-import allSettled_mod from "allSettled" /* 4879 */;
+import BillingInfoStore from "BillingInfoStore" /* 4416 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4417 */;
+import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import allSettled_mod from "allSettled" /* 4998 */;
 
 require = fn;
 let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
@@ -246,14 +246,14 @@ const Constants = fn(1074);
 ({ Endpoints: closure_7, OperatingSystems: closure_8 } = Constants);
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
-const isMobile = fn(4877).isMobile;
+const isMobile = fn(4996).isMobile;
 let tmp4 = !isMobile;
 if (!isMobile) {
-  tmp4 = !fn(4877).isTablet;
+  tmp4 = !fn(4996).isTablet;
 }
 if (tmp4) {
-  tmp4 = -1 !== fn(4958).getChromeVersion();
-  let obj2 = fn(4958);
+  tmp4 = -1 !== fn(5077).getChromeVersion();
+  let obj2 = fn(5077);
 }
 let closure_9 = tmp4;
 const size = fn(2);
@@ -307,9 +307,9 @@ export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery(
 export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTypeToSKUOperatingSystem(platform) {
   if (PlatformUtils.PlatformTypes.WINDOWS === platform) {
     return constants.WINDOWS;
-  } else if (tmp(1363).PlatformTypes.OSX === platform) {
+  } else if (tmp(1364).PlatformTypes.OSX === platform) {
     return constants.MACOS;
-  } else if (tmp(1363).PlatformTypes.LINUX === platform) {
+  } else if (tmp(1364).PlatformTypes.LINUX === platform) {
     return constants.LINUX;
   } else {
     return null;

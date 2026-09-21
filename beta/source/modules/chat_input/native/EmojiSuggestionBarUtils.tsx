@@ -1,16 +1,16 @@
-// Module ID: 12559
-// Function ID: 12560
+// Module ID: 12680
+// Function ID: 12681
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4628, 1074, 21, 1176, 4373, 5055, 4347, 4637, 504, 12524, 12560, 12561, 9443, 2]
+// Dependencies: [32, 19, 4748, 1074, 21, 1177, 4492, 5185, 4466, 4757, 504, 12645, 12681, 12682, 9427, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 12559 (EmojiSuggestionBarUtils)
-import native from "native" /* 4347 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
+// Module 12680 (EmojiSuggestionBarUtils)
+import native from "native" /* 4466 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import spring from "spring" /* 5185 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
 const require = globalThis.__r;
 
@@ -18,7 +18,7 @@ require = fn;
 const UpsellTypes = fn(1074).UpsellTypes;
 const jsx = fn(21).jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
-const SUGGESTION_BAR_HEIGHT_TIMING = { duration: 250, easing: fn(1176).STANDARD_EASING };
+const SUGGESTION_BAR_HEIGHT_TIMING = { duration: 250, easing: fn(1177).STANDARD_EASING };
 let closure_10 = { duration: 200, dampingRatio: 0.7 };
 const __initData = { code: "function EmojiSuggestionBarUtilsTsx1(){const{progress}=this.__closure;return{opacity:progress.get(),transform:[{scale:progress.get()}]};}" };
 let closure_12 = { code: "function EmojiSuggestionBarUtilsTsx2(finished){const{runOnJS,cleanUp}=this.__closure;if(finished){runOnJS(cleanUp)();}}" };
@@ -85,7 +85,7 @@ export const EmojiEntranceAnimation = function EmojiEntranceAnimation(children) 
     const result = sharedValue.set(obj.withDelay(num, spring.withSpring(1, closure_10)));
   }, items);
   obj = index(sharedValue[6]);
-  const fn = function c() {
+  const fn = function u() {
     obj = { opacity: sharedValue.get(), transform: null };
     const items = [{ scale: sharedValue.get() }];
     obj.transform = items;
@@ -108,14 +108,14 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
       if (closure_3 != null) {
         tmp11(0);
       }
-      const tmpResult = tmp(4637);
+      const tmpResult = tmp(4757);
       const fn = function n(arg0) {
         if (arg0) {
           closure_0(dependencyMap[6]).runOnJS(cleanUp)();
           obj = closure_0(dependencyMap[6]);
         }
       };
-      const __closure = { runOnJS: tmp(4373).runOnJS, cleanUp };
+      const __closure = { runOnJS: tmp(4492).runOnJS, cleanUp };
       fn.__closure = __closure;
       fn.__workletHash = 15923583203906;
       fn.__initData = __initData;
@@ -124,13 +124,13 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
       if (closure_3 != null) {
         tmp3(dependencyMap);
       }
-      const result1 = sharedValue.set(tmp(4637).withTiming(dependencyMap, __closure));
-      const tmpResult2 = tmp(4637);
+      const result1 = sharedValue.set(tmp(4757).withTiming(dependencyMap, __closure));
+      const tmpResult2 = tmp(4757);
     }
   }, items);
   return sharedValue;
 };
-export const useEmojiSuggestionBarState = function useEmojiSuggestionBarState(merged, MAX_SUGGESTIONS_LARGE, ref) {
+export const useEmojiSuggestionBarState = function useEmojiSuggestionBarState(merged, MAX_SUGGESTIONS_LARGE, minUnlockedEmojis, ref) {
   const chatInputRef = merged.chatInputRef;
   const chatInputStateRef = merged.chatInputStateRef;
   let setData;
@@ -150,13 +150,14 @@ export const useEmojiSuggestionBarState = function useEmojiSuggestionBarState(me
   setDataImmediate = tmp4.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = queryStart.useImperativeHandle(ref, () => ({ setData }), items1);
-  const obj3 = { channel, text, selectionStart, selectionEnd, enabled: null, maxCount: null };
+  const obj3 = { channel, text, selectionStart, selectionEnd, enabled: null, maxCount: null, minUnlockedEmojis: null };
   const obj2 = chatInputRef(setData[10]);
   if (focused) {
     focused = !suppressed;
   }
   obj3.enabled = focused;
   obj3.maxCount = MAX_SUGGESTIONS_LARGE;
+  obj3.minUnlockedEmojis = minUnlockedEmojis;
   const tmp6Result = chatInputStateRef(setData[12])(obj3);
   queryStart = tmp6Result.queryStart;
   queryEnd = tmp6Result.queryEnd;

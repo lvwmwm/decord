@@ -1,9 +1,9 @@
-// Module ID: 1623
-// Function ID: 1624
+// Module ID: 1624
+// Function ID: 1625
 // Name: NativeSafeAreaInsetsModule
 // Dependencies: [17, 2]
 
-// Module 1623 (NativeSafeAreaInsetsModule)
+// Module 1624 (NativeSafeAreaInsetsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

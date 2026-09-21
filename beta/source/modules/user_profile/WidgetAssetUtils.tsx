@@ -1,12 +1,12 @@
-// Module ID: 8784
-// Function ID: 8785
+// Module ID: 8939
+// Function ID: 8940
 // Name: WidgetAssetUtils
-// Dependencies: [1074, 1396, 2]
+// Dependencies: [1074, 1397, 2]
 // Exports: getWidgetAssetURL
 
-// Module 8784 (WidgetAssetUtils)
+// Module 8939 (WidgetAssetUtils)
 import Constants from "Constants" /* 1074 */;
-import AvatarUtils from "AvatarUtils" /* 1396 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 const DEFAULT_CDN_HOST = Constants.DEFAULT_CDN_HOST;

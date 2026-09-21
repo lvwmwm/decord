@@ -1,14 +1,14 @@
-// Module ID: 2025
-// Function ID: 2026
+// Module ID: 2109
+// Function ID: 2110
 // Name: LocaleStore
-// Dependencies: [5, 2026, 1219, 4257, 1114, 504, 573, 2]
+// Dependencies: [5, 2110, 1220, 4377, 1115, 504, 573, 2]
 
-// Module 2025 (LocaleStore)
+// Module 2109 (LocaleStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DiscordNativeDefault from "DiscordNative" /* 4257 */;
+import DiscordNativeDefault from "DiscordNative" /* 4377 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 const require = fn;
 let closure_6 = async function _getSystemLocale(arg0, value) {
@@ -48,7 +48,7 @@ let closure_6 = async function _getSystemLocale(arg0, value) {
             }
           }
           if (null != prop) {
-            const app2 = tmp22(4257).app;
+            const app2 = tmp22(4377).app;
             const preferredSystemLanguages = app2.getPreferredSystemLanguages();
             c2 = 1;
             c3 = 1;
@@ -105,9 +105,9 @@ function handleUpdate() {
   }
   return flag;
 }
-const setAppLocale = fn(2026).setAppLocale;
-let locale = fn(1114).intl.currentLocale;
-let global = fn(1114).systemLocale;
+const setAppLocale = fn(2110).setAppLocale;
+let locale = fn(1115).intl.currentLocale;
+let global = fn(1115).systemLocale;
 (function getSystemLocale() {
   const self = this;
   const apply = closure_6.apply;

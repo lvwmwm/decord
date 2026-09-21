@@ -1,9 +1,9 @@
 // Module ID: 15013
 // Function ID: 15014
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15013
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "cb49d7446dbcac5ce6ba16b6a9b83961", name: "Small", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "eff6b7f98fce97ae078f4120c2b08128", name: "ko.messages.eff6b7f98fce97ae078f4120c2b08128.compiled.messages", type: "jsona" });

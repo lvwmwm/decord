@@ -1,12 +1,9 @@
 // Module ID: 3804
 // Function ID: 3805
-// Dependencies: []
-// Exports: default
+// Dependencies: [1121]
 
 // Module 3804
-let closure_0 = { lastWeek: "'\uC9C0\uB09C' eeee p", yesterday: "'\uC5B4\uC81C' p", today: "'\uC624\uB298' p", tomorrow: "'\uB0B4\uC77C' p", nextWeek: "'\uB2E4\uC74C' eeee p", other: "P" };
+import registerAsset from "module_1121" /* 1121 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "d849ea05cf5551bea659282fd0c02ce4", name: "vi.messages.d849ea05cf5551bea659282fd0c02ce4.compiled.messages", type: "jsona" });

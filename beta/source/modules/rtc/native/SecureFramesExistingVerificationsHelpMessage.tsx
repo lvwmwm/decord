@@ -1,14 +1,14 @@
-// Module ID: 9292
-// Function ID: 9293
+// Module ID: 9983
+// Function ID: 9984
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4636, 9293, 1176, 1114, 2]
+// Dependencies: [17, 21, 4756, 9984, 1177, 1115, 2]
 // Exports: default
 
-// Module 9292 (SecureFramesExistingVerificationsHelpMessage)
+// Module 9983 (SecureFramesExistingVerificationsHelpMessage)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9293 */;
-import createStyles from "createStyles" /* 4636 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9984 */;
+import createStyles from "createStyles" /* 4756 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;
@@ -25,11 +25,11 @@ export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
     const obj2 = { style: null, children: null };
     const items = [tmp.container, style];
     obj2.style = items;
-    const obj3 = { messageType: tmp2(1176).HelpMessageTypes.INFO, children: null };
-    const intl = tmp2(1114).intl;
+    const obj3 = { messageType: tmp2(1177).HelpMessageTypes.INFO, children: null };
+    const intl = tmp2(1115).intl;
     const obj4 = { count: secureFramesUserVerifiedKeysCount };
-    obj3.children = intl.format(tmp2(1114).t.uZDkz0, obj4);
-    obj2.children = jsx(tmp2(1176).HelpMessage, { messageType: tmp2(1176).HelpMessageTypes.INFO, children: null });
+    obj3.children = intl.format(tmp2(1115).t.uZDkz0, obj4);
+    obj2.children = jsx(tmp2(1177).HelpMessage, { messageType: tmp2(1177).HelpMessageTypes.INFO, children: null });
     tmp5 = <View style={null}>{null}</View>;
   }
   return tmp5;

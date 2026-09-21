@@ -1,16 +1,16 @@
-// Module ID: 14526
-// Function ID: 14527
+// Module ID: 14717
+// Function ID: 14718
 // Name: AccessibilityActionCreators
-// Dependencies: [4628, 1074, 1938, 1084, 573, 1240, 9488, 2]
+// Dependencies: [4748, 1074, 2022, 1084, 573, 1241, 9472, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 14526 (AccessibilityActionCreators)
+// Module 14717 (AccessibilityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const StickerAnimationSettings = fn(1938).StickerAnimationSettings;
+const StickerAnimationSettings = fn(2022).StickerAnimationSettings;
 const constants = fn(1084).SettingsOverrideReasonKeys;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/a11y/AccessibilityActionCreators.tsx");
@@ -76,16 +76,16 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(reduce) 
       obj3.animateEmoji = obj5;
       const obj6 = { value: StickerAnimationSettings.ANIMATE_ON_INTERACTION, reasonKey: constants.REDUCED_MOTION_STICKERS };
       obj3.animateStickers = obj6;
-      const result = tmp(9488).applySettingsOverride(obj3);
-      const tmpResult = tmp(9488);
+      const result = tmp(9472).applySettingsOverride(obj3);
+      const tmpResult = tmp(9472);
     }
   }
   if (useReducedMotion) {
     useReducedMotion = !useReducedMotion2;
   }
   if (useReducedMotion) {
-    const result1 = tmp(9488).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
-    const tmpResult2 = tmp(9488);
+    const result1 = tmp(9472).clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
+    const tmpResult2 = tmp(9472);
   }
 };
 export const setSyncForcedColors = function setSyncForcedColors(syncForcedColors) {

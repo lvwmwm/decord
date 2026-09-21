@@ -1,9 +1,36 @@
 // Module ID: 7095
 // Function ID: 7096
-// Dependencies: [1120]
+// Dependencies: [17]
+// Exports: isNewArch
 
 // Module 7095
-import registerAsset from "module_1120" /* 1120 */;
+import _mod17 from "module_17" /* 17 */;
 
+const Platform = _mod17.Platform;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "133f082cc6a7642a4a6e08e490a58839", name: "ic_close_24px", type: "png" });
+export const isNewArch = function isNewArch() {
+  if (undefined !== c1) {
+    return c1;
+  } else {
+    try {
+      let prop;
+      if (global != null) {
+        prop = tmp2.nativeFabricUIManager;
+      }
+      let flag = Boolean(prop);
+      if (global != null) {
+        const __turboModuleProxy = tmp2.__turboModuleProxy;
+      }
+      if (!flag) {
+        flag = Boolean(__turboModuleProxy);
+      }
+      if (!flag) {
+        flag = false;
+      }
+      c1 = flag;
+      return c1;
+    } catch (err) {
+      c1 = true;
+    }
+  }
+};

@@ -1,21 +1,21 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8237
+// Function ID: 8238
 // Name: CallSystemMessage
-// Dependencies: [4652, 502, 4655, 1074, 4657, 8084, 8085, 1114, 1399, 4318, 8068, 2]
+// Dependencies: [4772, 502, 4775, 1074, 4777, 8238, 8239, 1115, 1400, 4438, 8222, 2]
 // Exports: createCallSystemMessage
 
-// Module 8083 (CallSystemMessage)
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1399 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8068 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8084 */;
-import useIsCallActive from "useIsCallActive" /* 8085 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+// Module 8237 (CallSystemMessage)
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8238 */;
+import useIsCallActive from "useIsCallActive" /* 8239 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4655 */;
+import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 
 require = fn;
 const ME = fn(1074).ME;
-const ParticipantTypes = fn(4657).ParticipantTypes;
+const ParticipantTypes = fn(4777).ParticipantTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");
 
@@ -36,15 +36,15 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
     const participants1 = call.participants;
     tmp9 = -1 === participants1.indexOf(id);
   }
-  const intl = tmp7(1114).intl;
+  const intl = tmp7(1115).intl;
   const string = intl.string;
-  const t = tmp7(1114).t;
+  const t = tmp7(1115).t;
   if (checkIsCallActiveResult) {
     let str2 = "";
     if (checkIsCallActiveResult) {
       if (null == userVoiceChannelId) {
-        const intl3 = tmp7(1114).intl;
-        str2 = intl3.string(tmp7(1114).t.DqA3mi);
+        const intl3 = tmp7(1115).intl;
+        str2 = intl3.string(tmp7(1115).t.DqA3mi);
       } else {
         str2 = "";
       }
@@ -64,17 +64,17 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
       stringResult1 = string(t.v05Xd6);
     }
     if (null != tmp6) {
-      const intl2 = tmp7(1114).intl;
-      const obj2 = { duration: tmp6, timestamp: tmp7(4318).calendarFormat(message.timestamp) };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp7(1114).t.SBDnp1, obj2);
-      const tmp7Result = tmp7(4318);
+      const intl2 = tmp7(1115).intl;
+      const obj2 = { duration: tmp6, timestamp: tmp7(4438).calendarFormat(message.timestamp) };
+      formatToPlainStringResult = intl2.formatToPlainString(tmp7(1115).t.SBDnp1, obj2);
+      const tmp7Result = tmp7(4438);
     } else {
-      formatToPlainStringResult = tmp7(4318).calendarFormat(message.timestamp);
-      const tmp7Result3 = tmp7(4318);
+      formatToPlainStringResult = tmp7(4438).calendarFormat(message.timestamp);
+      const tmp7Result3 = tmp7(4438);
     }
     const author = message.author;
-    mapped = [tmp7(1399).ensureAvatarSource(author.getAvatarSource(undefined)).uri];
-    const tmp7Result4 = tmp7(1399);
+    mapped = [tmp7(1400).ensureAvatarSource(author.getAvatarSource(undefined)).uri];
+    const tmp7Result4 = tmp7(1400);
   }
   const obj3 = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp9, avatarURLs: mapped, rawMilliseconds: null };
   const timestamp = message.timestamp;

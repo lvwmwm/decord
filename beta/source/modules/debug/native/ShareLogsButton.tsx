@@ -1,14 +1,14 @@
-// Module ID: 15654
-// Function ID: 15655
+// Module ID: 15843
+// Function ID: 15844
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 5204, 1114, 8479, 7, 9182, 2]
+// Dependencies: [19, 21, 5339, 1115, 8632, 7, 13207, 2]
 
-// Module 15654 (ShareLogsButton)
+// Module 15843 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
-import util from "util" /* 1114 */;
-import Pressables from "Pressables" /* 5204 */;
-import showShareActionSheet from "showShareActionSheet" /* 8479 */;
-import ShareIcon from "ShareIcon" /* 9182 */;
+import util from "util" /* 1115 */;
+import Pressables from "Pressables" /* 5339 */;
+import showShareActionSheet from "showShareActionSheet" /* 8632 */;
+import ShareIcon from "ShareIcon" /* 13207 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

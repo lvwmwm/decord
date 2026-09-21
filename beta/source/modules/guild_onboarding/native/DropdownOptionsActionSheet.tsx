@@ -1,16 +1,16 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7380
+// Function ID: 7381
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 5540, 7203, 1374, 21, 4636, 563, 7233, 1396, 1176, 1114, 4632, 7239, 1611, 4603, 7252, 7253, 6728, 5056, 2]
+// Dependencies: [19, 17, 5676, 7345, 1375, 21, 4756, 563, 7375, 1397, 1177, 1115, 4752, 7381, 1612, 4723, 7394, 7395, 6869, 5186, 2]
 // Exports: default
 
-// Module 7238 (DropdownOptionsActionSheet)
+// Module 7380 (DropdownOptionsActionSheet)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5540 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7203 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7345 */;
 
 require = fn;
 function DropdownOptionRow(option) {
@@ -98,10 +98,10 @@ function DropdownOptionRow(option) {
   return closure_8(onSelect(selected[13]), { label, selected, leading, trailing, onPress });
 }
 const View = fn(17).View;
-const EMOJI_URL_BASE_SIZE = fn(1374).EMOJI_URL_BASE_SIZE;
+const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_10 = createStyles.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
@@ -117,26 +117,26 @@ export default function DropdownOptionsActionSheet(arg0) {
     return null;
   } else {
     const obj3 = { title: null };
-    const intl = tmp3(1114).intl;
-    obj3.title = intl.string(tmp3(1114).t.E2ICbC);
-    const obj4 = { scrollable: true, header: closure_8(tmp3(7252).BottomSheetTitleHeader, obj3), children: null };
+    const intl = tmp3(1115).intl;
+    obj3.title = intl.string(tmp3(1115).t.E2ICbC);
+    const obj4 = { scrollable: true, header: closure_8(tmp3(7394).BottomSheetTitleHeader, obj3), children: null };
     const obj5 = { contentContainerStyle: null, children: null };
     const obj6 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj5.contentContainerStyle = obj6;
     const obj7 = { accessibilityRole: "radiogroup", accessibilityLabel: null, children: null };
-    const intl2 = tmp3(1114).intl;
-    obj7.accessibilityLabel = intl2.string(tmp3(1114).t.E2ICbC);
+    const intl2 = tmp3(1115).intl;
+    obj7.accessibilityLabel = intl2.string(tmp3(1115).t.E2ICbC);
     const options = stateFromStores.options;
     obj7.children = options.map((option) => React6(DropdownOptionRow, { option, responses, onSelect, canBeNew: Boolean(dependencyMap) }, option.id));
-    const items2 = [closure_8(tmp3(1176).CardSection, obj7), ];
+    const items2 = [closure_8(tmp3(1177).CardSection, obj7), ];
     const obj8 = { style: tmp.closeButtonWrapper, children: null };
     const obj9 = { onPress: tmp5, text: null, grow: true };
-    const intl3 = tmp3(1114).intl;
-    obj9.text = intl3.string(tmp3(1114).t.cpT0Cq);
-    obj8.children = closure_8(tmp3(5056).Button, obj9);
+    const intl3 = tmp3(1115).intl;
+    obj9.text = intl3.string(tmp3(1115).t.cpT0Cq);
+    obj8.children = closure_8(tmp3(5186).Button, obj9);
     items2[1] = closure_8(responses, obj8);
     obj5.children = items2;
-    obj4.children = closure_9(tmp3(6728).BottomSheetScrollView, obj5);
-    return closure_8(tmp3(7253).BottomSheet, obj4);
+    obj4.children = closure_9(tmp3(6869).BottomSheetScrollView, obj5);
+    return closure_8(tmp3(7395).BottomSheet, obj4);
   }
 };

@@ -1,9 +1,9 @@
 // Module ID: 2153
 // Function ID: 2154
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2153
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", scales: [1], hash: "c26b03f92fba2fb640e47067d1641297", name: "no.messages.c26b03f92fba2fb640e47067d1641297.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/intl", scales: [1], hash: "f509ae9aaefafe2bbe9a4b7e1dac8ae9", name: "Mana.compiled.messages", type: "jsona" });

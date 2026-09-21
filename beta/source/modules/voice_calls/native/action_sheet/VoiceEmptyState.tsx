@@ -1,25 +1,25 @@
-// Module ID: 13870
-// Function ID: 13871
+// Module ID: 14049
+// Function ID: 14050
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1074, 21, 4636, 5605, 576, 1611, 1176, 1114, 13871, 13872, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 5741, 576, 1612, 1177, 1115, 14050, 14051, 2]
 // Exports: default
 
-// Module 13870 (VoiceEmptyState)
+// Module 14049 (VoiceEmptyState)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import _modDef13871 from "module_13871" /* 13871 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 13872 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import _modDef14050 from "module_14050" /* 14050 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14051 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5605 */;
+import TextStyles_mod from "TextStyles" /* 5741 */;
 
 require = fn;
 const View = fn(17).View;
 const Fonts = fn(1074).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { container: { justifyContent: "center" }, button: { paddingHorizontal: 12, paddingTop: 16 }, emptyTitle: null, emptyBody: null };
 const obj3 = {};
 let TextStyles = TextStyles_mod;
@@ -47,8 +47,8 @@ export default function VoiceEmptyState(channel) {
   obj4.title = intl.string(util.t["/HABZo"]);
   const intl2 = util.intl;
   obj4.body = intl2.string(util.t["5Jy2FY"]);
-  obj4.lightSource = _modDef13871;
-  obj4.darkSource = _modDef13871;
+  obj4.lightSource = _modDef14050;
+  obj4.darkSource = _modDef14050;
   ({ emptyTitle: obj3.titleStyle, emptyBody: obj3.bodyStyle } = tmp);
   obj4.imageStyle = { marginBottom: 16, marginTop: 20 };
   const items1 = [React4(native.ThemedEmptyState, obj4), React4(JoinVoiceChannelButtonDefault, { channel: channel.channel, style: tmp.button })];

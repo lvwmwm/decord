@@ -1,19 +1,19 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12477
+// Function ID: 12478
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 576, 4636, 1176, 2]
+// Dependencies: [19, 17, 21, 576, 4756, 1177, 2]
 // Exports: default
 
-// Module 12357 (MessageBlock)
+// Module 12477 (MessageBlock)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
+import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
 const MessageBlockColors = { RED: 0, [0]: "RED", YELLOW: 1, [1]: "YELLOW" };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles((arg0) => {
   if (obj.RED === arg0) {
     obj = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL };

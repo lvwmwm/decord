@@ -1,75 +1,9 @@
 // Module ID: 14440
 // Function ID: 14441
-// Dependencies: [14389, 14441, 14438, 14398, 14421]
+// Dependencies: [1121]
 
 // Module 14440
-import _mod14389 from "module_14389" /* 14389 */;
-import text from "text" /* 14398 */;
-import _mod14421 from "module_14421" /* 14421 */;
-import _mod14438 from "module_14438" /* 14438 */;
-import _mod14441 from "module_14441" /* 14441 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const enumerable = "enumerable";
-const configurable = "configurable";
-const writable = "writable";
-if (_mod14389) {
-  if (_mod14441) {
-    defineProperty = function defineProperty(fn, arg1, value) {
-      _mod14438(fn);
-      const tmp2 = text(arg1);
-      _mod14438(value);
-      let tmp4 = value;
-      if (typeof fn === "function") {
-        tmp4 = value;
-        if ("prototype" === tmp2) {
-          tmp4 = value;
-          if ("value" in value) {
-            tmp4 = value;
-            if (writable in value) {
-              tmp4 = value;
-              if (!value[tmp5]) {
-                const tmp7 = getOwnPropertyDescriptor(fn, tmp2);
-                let tmp8 = tmp7;
-                if (tmp7) {
-                  tmp8 = tmp7[tmp5];
-                }
-                tmp4 = value;
-                if (tmp8) {
-                  fn[tmp2] = value.value;
-                  const obj = { configurable: configurable in value ? value[configurable] : tmp7[configurable], enumerable: enumerable in value ? value[enumerable] : tmp7[enumerable], writable: false };
-                }
-              }
-            }
-          }
-        }
-      }
-      return defineProperty(fn, tmp2, tmp4);
-    };
-  }
-  let defineProperty2 = defineProperty;
-} else {
-  defineProperty2 = function defineProperty(arg0, arg1, value) {
-    _mod14438(arg0);
-    const tmp2 = text(arg1);
-    _mod14438(value);
-    if (!_mod14421) {
-      if (!("get" in value)) {
-        if (!("set" in value)) {
-          if ("value" in value) {
-            arg0[tmp2] = value.value;
-          }
-          return arg0;
-        }
-      }
-      const tmp8 = new TypeError("Accessors not supported");
-      throw tmp8;
-    } else {
-      try {
-        return defineProperty(arg0, tmp2, value);
-      } catch (err) {
-      }
-    }
-  };
-}
 
-export const f = defineProperty2;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "2c315f321285573a3e0f3421e17e59ea", name: "NitroGem24", type: "lottie" });

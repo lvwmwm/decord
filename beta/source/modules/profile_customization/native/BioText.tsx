@@ -1,14 +1,14 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11474
+// Function ID: 11475
 // Name: BioText
-// Dependencies: [19, 17, 1074, 2010, 21, 4636, 4331, 1240, 4632, 9549, 1363, 2009, 1114, 2]
+// Dependencies: [19, 17, 1074, 2094, 21, 4756, 4451, 1241, 4752, 9533, 1364, 2093, 1115, 2]
 // Exports: default
 
-// Module 11345 (BioText)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import LinkingDefault from "Linking" /* 4331 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 9549 */;
+// Module 11474 (BioText)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import LinkingDefault from "Linking" /* 4451 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 9533 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,10 +31,10 @@ function LinkButton(arg0) {
 }
 const Pressable = fn(17).Pressable;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const CHANGELOG_URL = fn(2010).CHANGELOG_URL;
+const CHANGELOG_URL = fn(2094).CHANGELOG_URL;
 const jsxProd = fn(21);
 ({ jsxs: closure_7, jsx: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_10 = createStyles.createStyles({ text: { alignSelf: "stretch", textAlignVertical: "top", width: "100%", flexGrow: 1, paddingTop: 2, lineHeight: 24 }, span: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, display: "flex", paddingBottom: 2 }, link: { alignSelf: "stretch", textAlignVertical: "bottom", width: "100%", flexGrow: 1, bottom: -4, position: "relative" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/profile_customization/native/BioText.tsx");

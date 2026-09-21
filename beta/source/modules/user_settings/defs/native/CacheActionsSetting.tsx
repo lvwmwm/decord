@@ -1,52 +1,68 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15846
+// Function ID: 15847
 // Name: CacheActionsSetting
-// Dependencies: [5, 5358, 21, 4603, 4335, 4591, 1114, 504, 1935, 7300, 7252, 7302, 15626, 15658, 15659, 15661, 11605, 2]
+// Dependencies: [5, 32, 19, 5494, 21, 4723, 4454, 4710, 1115, 504, 2019, 15847, 7442, 7394, 5904, 5822, 15815, 15850, 15848, 10390, 5794, 15851, 4720, 11725, 2]
 
-// Module 15657 (CacheActionsSetting)
+// Module 15846 (CacheActionsSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7252 */;
-import ActionSheet from "ActionSheet" /* 7300 */;
-import ActionSheetRow from "ActionSheetRow" /* 7302 */;
-import FileUpIcon from "FileUpIcon" /* 15626 */;
-import CacheActionCreators from "CacheActionCreators" /* 15658 */;
-import FileWarningIcon from "FileWarningIcon" /* 15659 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15661 */;
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4710 */;
+import BrowserManager from "BrowserManager" /* 4720 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import TableRow from "TableRow" /* 5822 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
+import ActionSheet from "ActionSheet" /* 7442 */;
+import FileUpIcon from "FileUpIcon" /* 15815 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15847 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15848 */;
+import CacheActionCreators from "CacheActionCreators" /* 15850 */;
+import FileWarningIcon from "FileWarningIcon" /* 15851 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
+import _slicedToArray from "module_32" /* 32 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+
+const CacheActionsDiskUsageSectionDefault = CacheActionsDiskUsageSection;
 
 require = fn;
 function handleCacheActionPress(key) {
   ToastActionCreatorsDefault.open({
     key,
     icon() {
-      return closure_1_5(closure_1_0(dependencyMap[5]).CircleInformationIcon, {});
+      return closure_1_7(CircleInformationIcon.CircleInformationIcon, {});
     },
     content: key
   });
   const obj2 = {
     key,
     icon() {
-      return closure_1_5(closure_1_0(dependencyMap[5]).CircleInformationIcon, {});
+      return closure_1_7(CircleInformationIcon.CircleInformationIcon, {});
     },
     content: key
   };
   ActionSheetActionCreatorsDefault.hideActionSheet(CacheActionsActionSheet);
 }
 function CacheActionsActionSheet() {
-  let obj = { header: null, children: null };
-  let obj2 = { title: null };
-  let intl = util.intl;
-  obj2.title = intl.string(util.t.ZVZVwR);
-  obj.header = hasOwnProperty(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2);
-  let obj3 = { hasIcons: true, children: null };
-  let obj4 = { icon: hasOwnProperty(FileUpIcon.FileUpIcon, {}), label: null, onPress: null };
-  const intl2 = util.intl;
-  obj4.label = intl2.string(util.t["/GUaXh"]);
+  const diskUsageMeasurement = CacheActionsDiskUsageSection.useDiskUsageMeasurement();
+  ({ diskUsageState, isCalculating } = diskUsageMeasurement);
+  const tmp4 = _slicedToArray(useState(false), 2);
+  let first = isCalculating;
+  if (!isCalculating) {
+    first = tmp4[0];
+  }
+  let obj2 = { header: null, dismissAccessibilityLabel: null, children: null };
+  let obj3 = { title: null };
+  let intl = tmp(1115).intl;
+  obj3.title = intl.string(util.t.ZVZVwR);
+  obj2.header = React5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj3);
+  const intl2 = tmp(1115).intl;
+  obj2.dismissAccessibilityLabel = intl2.string(util.t.AVZpFH);
+  let obj4 = { icon: React5(FileUpIcon.FileUpIcon, {}), label: null, disabled: null, onPress: null };
+  const intl3 = tmp(1115).intl;
+  obj4.label = intl3.string(util.t["/GUaXh"]);
+  obj4.disabled = first;
   obj4.onPress = asyncGeneratorStep(async (arg0, value) => {
     if (c2 === 2) {
       c2 = 3;
@@ -86,8 +102,8 @@ function CacheActionsActionSheet() {
           const obj = { value, done: true };
           return obj;
         } else {
-          const intl = closure_128_0(closure_128_2[6]).intl;
-          closure_128_8(intl.string(closure_128_0(closure_128_2[6]).t.GgUIfl));
+          const intl = closure_128_0(closure_128_2[8]).intl;
+          closure_128_10(intl.string(closure_128_0(closure_128_2[8]).t.GgUIfl));
           c2 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -97,47 +113,106 @@ function CacheActionsActionSheet() {
       }
     }
   });
-  const items = [hasOwnProperty(ActionSheetRow.ActionSheetRow, obj4), ];
-  let obj5 = { variant: "danger", icon: hasOwnProperty(FileWarningIcon.FileWarningIcon, { color: "text-feedback-critical" }), label: null, onPress: null };
-  const intl3 = util.intl;
-  obj5.label = intl3.string(util.t.tgwiMO);
-  obj5.onPress = function onPress() {
-    DiskUsageManagerDefault.clearCaches();
-    CacheActionCreators.clearCaches();
-    const intl = util.intl;
-    const stringResult = intl.string(util.t["23xR5w"]);
-    ToastActionCreatorsDefault.open({
-      key: stringResult,
-      icon() {
-        return closure_1_5(closure_1_0(dependencyMap[5]).CircleInformationIcon, {});
-      },
-      content: stringResult
-    });
-    const obj4 = {
-      key: stringResult,
-      icon() {
-        return closure_1_5(closure_1_0(dependencyMap[5]).CircleInformationIcon, {});
-      },
-      content: stringResult
-    };
-    ActionSheetActionCreatorsDefault.hideActionSheet(CacheActionsActionSheet);
-  };
-  items[1] = hasOwnProperty(ActionSheetRow.ActionSheetRow, obj5);
-  obj3.children = items;
-  obj.children = timestampProducer(ActionSheetRow.ActionSheetRow.Group, obj3);
-  return hasOwnProperty(ActionSheet.ActionSheet, obj);
+  const items = [React5(TableRow.TableRow, obj4), , ];
+  let tmp7Result3 = null != DiskUsageManagerDefault.calculateSize;
+  if (tmp7Result3) {
+    let obj5 = { icon: tmp7(tmp(10390).FileIcon, {}), label: null, trailing: null, disabled: null, accessibilityState: null, onPress: null };
+    const intl4 = tmp(1115).intl;
+    const t = tmp(1115).t;
+    obj5.label = intl4.string(isCalculating ? t.Ynmbie : t.iAFGRu);
+    let tmp7Result = null;
+    if (isCalculating) {
+      tmp7Result = tmp7(tmp(5794).ActivityIndicator, { size: "small", accessible: false });
+    }
+    obj5.trailing = tmp7Result;
+    obj5.disabled = first;
+    let obj6 = { busy: isCalculating, disabled: first };
+    obj5.accessibilityState = obj6;
+    obj5.onPress = diskUsageMeasurement.handleCalculateSize;
+    tmp7Result3 = tmp7(tmp(5822).TableRow, obj5);
+  }
+  let obj7 = { hasIcons: true, children: null };
+  items[1] = tmp7Result3;
+  const obj8 = { variant: "danger", icon: React5(FileWarningIcon.FileWarningIcon, { color: "text-feedback-critical" }), label: null, disabled: null, onPress: null };
+  const intl5 = tmp(1115).intl;
+  obj8.label = intl5.string(util.t.tgwiMO);
+  obj8.disabled = first;
+  obj8.onPress = asyncGeneratorStep(async (arg0, value) => {
+    if (c2 === 2) {
+      c2 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj5 = { value, done: true };
+        return obj5;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c2 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c2 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            closure_0 = tmp2;
+            DiskUsageManagerDefault.clearCaches();
+            CacheActionCreators.clearCaches();
+            c1 = 1;
+            c2 = 1;
+            const obj7 = { value: BrowserManager.browserManagerClearWebsiteData(), done: false };
+            return obj7;
+          }
+        } else if (arg0 === 1) {
+          c2 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 3;
+          const obj = { value, done: true };
+          return obj;
+        } else {
+          const intl = closure_128_0(closure_128_2[8]).intl;
+          closure_128_10(intl.string(closure_128_0(closure_128_2[8]).t["23xR5w"]));
+          c2 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp21) {
+        c2 = tmp;
+        throw tmp21;
+      }
+    }
+  });
+  items[2] = React5(TableRow.TableRow, obj8);
+  obj7.children = items;
+  const items1 = [React6(TableRowGroup.TableRowGroup, obj7), ];
+  let tmp7Result4 = null != diskUsageState;
+  if (tmp7Result4) {
+    const obj9 = { state: diskUsageState, onDiagnosticsBusyChange: tmp4[1] };
+    tmp7Result4 = tmp7(CacheActionsDiskUsageSectionDefault, obj9);
+  }
+  items1[1] = tmp7Result4;
+  obj2.children = items1;
+  return React6(ActionSheet.ActionSheet, obj2);
 }
+const useState = fn(19).useState;
 const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 const pressable = SettingBuilders.createPressable({
   useTitle: function useCacheActionsTitle() {
     const intl = util.intl;
     return intl.string(util.t.ZVZVwR);
   },
   parent: null,
-  IconComponent: fn(15659).FileWarningIcon,
+  IconComponent: fn(15851).FileWarningIcon,
   onPress: function handleCacheActionsPress() {
     ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: CacheActionsActionSheet }), CacheActionsActionSheet);
   },

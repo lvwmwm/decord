@@ -1,11 +1,11 @@
-// Module ID: 8996
-// Function ID: 8997
+// Module ID: 9150
+// Function ID: 9151
 // Name: PremiumGroupExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: default
 
-// Module 8996 (PremiumGroupExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 9150 (PremiumGroupExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

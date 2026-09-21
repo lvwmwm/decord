@@ -1,13 +1,13 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7696
+// Function ID: 7697
 // Name: UserTrialOfferRecord
-// Dependencies: [1386, 7558, 1373, 2]
+// Dependencies: [1387, 7697, 1374, 2]
 
-// Module 7557 (UserTrialOfferRecord)
-import Record from "Record" /* 1386 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7558 */;
+// Module 7696 (UserTrialOfferRecord)
+import Record from "Record" /* 1387 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7697 */;
 
-let closure_1 = fn(1373).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
+let closure_1 = fn(1374).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 let UserTrialOfferRecord;
 class UserTrialOfferRecord extends tmp2 {
   constructor(arg0) {

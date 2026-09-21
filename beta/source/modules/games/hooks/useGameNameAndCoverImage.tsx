@@ -1,11 +1,11 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9198
+// Function ID: 9199
 // Name: useGameNameAndCoverImage
-// Dependencies: [7412, 1114, 2]
+// Dependencies: [7551, 1115, 2]
 // Exports: default
 
-// Module 9049 (useGameNameAndCoverImage)
-import useGame from "useGame" /* 7412 */;
+// Module 9198 (useGameNameAndCoverImage)
+import useGame from "useGame" /* 7551 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
@@ -26,8 +26,8 @@ export default function useGameNameAndCoverImage(arg0, arg1, size) {
     name = arg1;
   }
   if (name == null) {
-    const intl = tmp(1114).intl;
-    name = intl.string(tmp(1114).t.GIWFlF);
+    const intl = tmp(1115).intl;
+    name = intl.string(tmp(1115).t.GIWFlF);
   }
   obj2.gameName = name;
   obj2.isLoading = game.isLoading;

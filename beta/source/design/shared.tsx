@@ -1,12 +1,12 @@
-// Module ID: 4488
-// Function ID: 4489
+// Module ID: 4607
+// Function ID: 4608
 // Name: shared
-// Dependencies: [2, 4489, 4345, 4453]
+// Dependencies: [2, 4608, 4464, 4572]
 
-// Module 4488 (shared)
-import themes from "themes" /* 4345 */;
-import Colors from "Colors" /* 4453 */;
-import design_shared from "design/shared" /* 4489 */;
+// Module 4607 (shared)
+import themes from "themes" /* 4464 */;
+import Colors from "Colors" /* 4572 */;
+import design_shared from "design/shared" /* 4608 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/shared.tsx");

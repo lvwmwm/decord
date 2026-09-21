@@ -1,11 +1,11 @@
-// Module ID: 5877
-// Function ID: 5878
+// Module ID: 6015
+// Function ID: 6016
 // Dependencies: [2]
 
-// Module 5877
+// Module 6015
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarRoseExample-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/a2c5310314c11cece6e4bcf1bbb82a117c9508b0408668c590a981523175655a.png";
-export const metadata = { fileBytes: 23232 };
+export default "https://cdn.discordapp.com/assets/content/616d1cee53887a0fe45c2edadf117628a371c533d3f5d9286f2ba35c91522da9.png";
+export const metadata = { fileBytes: 23367 };

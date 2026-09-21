@@ -1,18 +1,18 @@
-// Module ID: 1181
-// Function ID: 1182
+// Module ID: 1182
+// Function ID: 1183
 // Name: ThemeStore
-// Dependencies: [1182, 1183, 1219, 1184, 1084, 1074, 1218, 1225, 14171, 504, 1940, 573, 2]
+// Dependencies: [1183, 1184, 1220, 1185, 1084, 1074, 1219, 1226, 14353, 504, 2024, 573, 2]
 
-// Module 1181 (ThemeStore)
+// Module 1182 (ThemeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1218 */;
-import resolveThemeDefault from "resolveTheme" /* 1225 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 1940 */;
-import updateBackgroundColorDefault from "updateBackgroundColor" /* 14171 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1183 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1219 */;
+import resolveThemeDefault from "resolveTheme" /* 1226 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
+import updateBackgroundColorDefault from "updateBackgroundColor" /* 14353 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 function handleThemeChange() {
@@ -25,7 +25,7 @@ function handleThemeChange() {
   }
   return flag;
 }
-const ThemeConstants = fn(1184);
+const ThemeConstants = fn(1185);
 ({ SystemTheme: metroRequire, THEME_PREFERENCES_WEB_REFRESH, THEME_PREFERENCES_MOBILE } = ThemeConstants);
 const UserSettingsDelay = fn(1084).UserSettingsDelay;
 const ThemeTypes = fn(1074).ThemeTypes;
@@ -154,7 +154,7 @@ const themeStore = new ThemeStore(DispatcherDefault, {
       let flag = tmp7 !== closure_13;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(14171)(closure_13);
+        tmp2(14353)(closure_13);
         flag = true;
       }
       tmp = flag;

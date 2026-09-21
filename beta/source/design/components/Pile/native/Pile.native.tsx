@@ -1,19 +1,19 @@
-// Module ID: 11138
-// Function ID: 11139
+// Module ID: 11269
+// Function ID: 11270
 // Name: Pile
-// Dependencies: [19, 17, 21, 4636, 1369, 12, 8940, 11139, 2]
+// Dependencies: [19, 17, 21, 4756, 1370, 12, 9094, 11270, 2]
 // Exports: Pile
 
-// Module 11138 (Pile)
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import ClipViewDefault from "ClipView" /* 8940 */;
-import PileOverflow from "PileOverflow" /* 11139 */;
+// Module 11269 (Pile)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ClipViewDefault from "ClipView" /* 9094 */;
+import PileOverflow from "PileOverflow" /* 11270 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles({ pile: { flexDirection: "row" } });
 let size = fn(2);
 let result = size.fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
@@ -47,7 +47,7 @@ export const Pile = function Pile(aria_label) {
         if (tmp3Result.isArray(tmp5)) {
           sum = tmp5[arg1 + 1];
         }
-        if (tmp3(8940).CutoutShape.Circle === closure_1_0) {
+        if (tmp3(9094).CutoutShape.Circle === closure_1_0) {
           const point = { shape: tmp10, x: null, y: null, size: null };
           if (null == closure_1_3) {
             let result = -dependencyMap;
@@ -63,7 +63,7 @@ export const Pile = function Pile(aria_label) {
           point.y = result1;
           sum = sum + 2 * dependencyMap;
           point.size = sum;
-        } else if (tmp3(8940).CutoutShape.RoundedRect === tmp10) {
+        } else if (tmp3(9094).CutoutShape.RoundedRect === tmp10) {
           size = { shape: tmp10, x: null, y: null, width: null, height: null, cornerRadius: null };
           if (null == closure_1_3) {
             let result2 = -dependencyMap;
@@ -82,8 +82,8 @@ export const Pile = function Pile(aria_label) {
           size.cornerRadius = sum / 3 + dependencyMap;
           tmp8 = size;
         } else {
-          tmp3(1369).assertNever(tmp10);
-          const tmp3Result3 = tmp3(1369);
+          tmp3(1370).assertNever(tmp10);
+          const tmp3Result3 = tmp3(1370);
         }
         tmp3Result = tmp3(12);
       }

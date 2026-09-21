@@ -1,16 +1,16 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7695
+// Function ID: 7696
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7557, 1385, 2011, 1074, 1270, 573, 1230, 7559, 2]
+// Dependencies: [5, 7696, 1386, 2095, 1074, 1271, 573, 1231, 7698, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 7556 (ReferralTrialActionCreators)
+// Module 7695 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7557 */;
-import UserRecord from "UserRecord" /* 1385 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7696 */;
+import UserRecord from "UserRecord" /* 1386 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 let closure_11 = async function _fetchReferralEligibleUsers(index, searchQuery, arg2) {

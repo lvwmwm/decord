@@ -1,13 +1,13 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13851
+// Function ID: 13852
 // Name: ServerGridIcon
-// Dependencies: [19, 21, 576, 4337, 13677, 2]
+// Dependencies: [19, 21, 576, 4456, 13852, 2]
 // Exports: ServerGridIcon
 
-// Module 13676 (ServerGridIcon)
+// Module 13851 (ServerGridIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod13677 from "module_13677" /* 13677 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod13852 from "module_13852" /* 13852 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ServerGridIcon = function ServerGridIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13677, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13852, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

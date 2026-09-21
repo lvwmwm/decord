@@ -1,25 +1,25 @@
-// Module ID: 1956
-// Function ID: 1957
+// Module ID: 2040
+// Function ID: 2041
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 1957, 2011, 1371, 1920, 9635, 1074, 9609, 9610, 4265, 9642, 14073, 1109, 9664, 573, 9658, 9540, 1363, 1894, 7626, 504, 2]
+// Dependencies: [32, 502, 2041, 2095, 1372, 2004, 9315, 1074, 9619, 9620, 4385, 9316, 14254, 1110, 9638, 573, 9614, 9524, 1364, 1978, 7765, 504, 2]
 
-// Module 1956 (EmbeddedActivitiesStore)
+// Module 2040 (EmbeddedActivitiesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import Server from "Server" /* 1894 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4265 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7626 */;
-import getPlatformDefault from "getPlatform" /* 9540 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 9609 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 9610 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9642 */;
+import Server from "Server" /* 1978 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9316 */;
+import getPlatformDefault from "getPlatform" /* 9524 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 9619 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 9620 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserStore from "UserStore" /* 1372 */;
 
-const isVoiceEmbeddedActivityDefault = combined(9658);
+const isVoiceEmbeddedActivityDefault = combined(9614);
 require = fn;
 function participantFromServer(userId) {
   return { userId: userId.user_id, sessionId: userId.session_id, nonce: userId.nonce };
@@ -30,7 +30,7 @@ function updateEmbeddedActivities(content_classification) {
   let combined = importDefault;
   const tmp3 = getURLForApplicationDefault(application_id);
   if (null != tmp3) {
-    const embeddedActivityLocationChannelId = application_id(4265).getEmbeddedActivityLocationChannelId(_location);
+    const embeddedActivityLocationChannelId = application_id(4385).getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {
       value = map2.get(embeddedActivityLocationChannelId);
       items = undefined;
@@ -57,7 +57,7 @@ function updateEmbeddedActivities(content_classification) {
     if (found1 != null) {
       const sessionId = found1.sessionId;
     }
-    const obj19 = application_id(4265);
+    const obj19 = application_id(4385);
     const value9 = map.get(application_id);
     let tmp12 = embeddedActivityLocationChannelId;
     if (embeddedActivityLocationChannelId == null) {
@@ -139,7 +139,7 @@ function updateEmbeddedActivities(content_classification) {
               }
             }
             value11.upsert(application_id, _location.id, tmp61);
-            const embeddedActivityLocationChannelId1 = tmp76(4265).getEmbeddedActivityLocationChannelId(_location);
+            const embeddedActivityLocationChannelId1 = tmp76(4385).getEmbeddedActivityLocationChannelId(_location);
             if (null != embeddedActivityLocationChannelId1) {
               let value12 = map2.get(embeddedActivityLocationChannelId1);
               if (null == value12) {
@@ -153,7 +153,7 @@ function updateEmbeddedActivities(content_classification) {
                 }
               }
               value12.upsert(application_id, _location.id, tmp61);
-              let str5 = tmp76(4265).getEmbeddedActivityLocationGuildId(_location);
+              let str5 = tmp76(4385).getEmbeddedActivityLocationGuildId(_location);
               if (str5 == null) {
                 str5 = "0";
               }
@@ -171,15 +171,15 @@ function updateEmbeddedActivities(content_classification) {
               value13.upsert(application_id, _location.id, tmp61);
               obj17 = map1;
               obj22 = map2;
-              const tmp76Result4 = tmp76(4265);
+              const tmp76Result4 = tmp76(4385);
             }
-            const tmp76Result = tmp76(4265);
+            const tmp76Result = tmp76(4385);
           } else {
             const _Array = Array;
             const arr = Array.from(value9.userIds);
           }
           obj5.delete(value9.applicationId);
-          const ComponentDispatch = tmp76(1109).ComponentDispatch;
+          const ComponentDispatch = tmp76(1110).ComponentDispatch;
           ComponentDispatch.dispatch(constants.RELEASE_ACTIVITY_WEB_VIEW);
         }
       }
@@ -202,7 +202,7 @@ function updateEmbeddedActivities(content_classification) {
               id1 = value14.location.id;
             }
             if (id1 !== _location.id) {
-              const embeddedActivityLocationChannelId2 = tmp76(4265).getEmbeddedActivityLocationChannelId(_location);
+              const embeddedActivityLocationChannelId2 = tmp76(4385).getEmbeddedActivityLocationChannelId(_location);
               const channel = ChannelStore.getChannel(embeddedActivityLocationChannelId2);
               if (channel != null) {
                 const guildId = channel.getGuildId();
@@ -229,10 +229,10 @@ function updateEmbeddedActivities(content_classification) {
                 obj7.proxyTicket = obj.proxyTicket;
                 obj7.renderInFramePool = renderInFramePool;
                 const result4 = obj5.set(application_id, obj7);
-                const ComponentDispatch2 = tmp76(1109).ComponentDispatch;
+                const ComponentDispatch2 = tmp76(1110).ComponentDispatch;
                 const obj8 = { location: _location, applicationId: application_id, isFirstActivityInChannel: 0 === arr2.length, isStart: tmp78, participants: mapped, embeddedActivity: obj7, inviterUserId };
                 ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj8);
-                tmp76(9664);
+                tmp76(9638);
                 if (true === renderInFramePool) {
                   let ACTIVITY_POPOUT_WINDOW = ActivityPanelModes.DISCONNECTED;
                   const _HermesInternal2 = HermesInternal;
@@ -255,7 +255,7 @@ function updateEmbeddedActivities(content_classification) {
                 const combinedResult = DispatcherDefault;
                 const tmp41 = 0 === arr2.length;
               }
-              const tmp76Result5 = tmp76(4265);
+              const tmp76Result5 = tmp76(4385);
             }
           }
         }
@@ -269,10 +269,10 @@ function updateEmbeddedActivities(content_classification) {
       obj6.delete("" + application_id + ":" + tmp59);
     }
     obj6 = map4;
-    const someResult1 = mapped.some((item) => application_id(14073).isActivityParticipantCurrentUserCurrentSession(item));
+    const someResult1 = mapped.some((item) => application_id(14254).isActivityParticipantCurrentUserCurrentSession(item));
   }
 }
-const ActivityPanelConstants = fn(9635);
+const ActivityPanelConstants = fn(9315);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const FocusedActivityLayouts = ActivityPanelConstants.FocusedActivityLayouts;
 const Constants = fn(1074);
@@ -369,7 +369,7 @@ const map11 = new Map();
 let c29;
 let PIP = ActivityPanelModes.DISCONNECTED;
 let focusedActivityLayout = FocusedActivityLayouts.RESIZABLE;
-let layout = fn(1920).ActivityPopoutWindowLayouts.NORMAL;
+let layout = fn(2004).ActivityPopoutWindowLayouts.NORMAL;
 const PersistedStore = initializeDefault.PersistedStore;
 class EmbeddedActivitiesStoreClass extends PersistedStore {
 }
@@ -898,7 +898,7 @@ const embeddedActivitiesStoreClass = new EmbeddedActivitiesStoreClass(Dispatcher
     }
     const result = map5.set(guildId, activities);
     const timestamp = Date.now();
-    obj = timestamp(1363);
+    obj = timestamp(1364);
     importDefault = getPlatformDefault(obj.getOS());
     obj.dateRangesForSurfaces = activities.reduce((acc, item) => {
       closure_1 = tmp;

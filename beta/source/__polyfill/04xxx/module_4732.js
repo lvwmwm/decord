@@ -1,17 +1,22 @@
 // Module ID: 4732
 // Function ID: 4733
-// Dependencies: [539, 540, 4733]
+// Dependencies: [4733]
 
 // Module 4732
-import _process from "_process" /* 539 */;
-import baseUnary from "baseUnary" /* 540 */;
-import baseIsSet from "baseIsSet" /* 4733 */;
+import PATTERN_CHARS_mod from "PATTERN_CHARS" /* 4733 */;
 
-const tmp = _process && _process.isSet;
-if (tmp) {
-  let _module = baseUnary(tmp);
-} else {
-  _module = baseIsSet;
-}
+const obj = { success: null, error: null, warning: null, heartbeat: null, tripleClick: null, notification: null };
+let PATTERN_CHARS = PATTERN_CHARS_mod;
+obj.success = PATTERN_CHARS.pattern("oO.O");
+let PATTERN_CHARS = PATTERN_CHARS_mod;
+obj.error = PATTERN_CHARS.pattern("OO.OO");
+let PATTERN_CHARS = PATTERN_CHARS_mod;
+obj.warning = PATTERN_CHARS.pattern("O.O");
+let PATTERN_CHARS = PATTERN_CHARS_mod;
+obj.heartbeat = PATTERN_CHARS.pattern("oO--oO");
+let PATTERN_CHARS = PATTERN_CHARS_mod;
+obj.tripleClick = PATTERN_CHARS.pattern("o.o.o");
+let PATTERN_CHARS = PATTERN_CHARS_mod;
+obj.notification = PATTERN_CHARS.pattern("o-O=o");
 
-export default _module;
+export const Patterns = obj;

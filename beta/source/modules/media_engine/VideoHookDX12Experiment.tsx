@@ -1,10 +1,10 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14277
+// Function ID: 14278
 // Name: VideoHookDX12Experiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 14095 (VideoHookDX12Experiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 14277 (VideoHookDX12Experiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-video-hook-dx12", kind: "user", defaultConfig: { enabled: false }, variations: null };

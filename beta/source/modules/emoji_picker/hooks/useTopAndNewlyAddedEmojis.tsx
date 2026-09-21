@@ -1,16 +1,16 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10539
+// Function ID: 10540
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5540, 1374, 563, 2]
+// Dependencies: [5676, 1375, 563, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 10410 (useTopAndNewlyAddedEmojis)
-import EmojiStore from "EmojiStore" /* 5540 */;
+// Module 10539 (useTopAndNewlyAddedEmojis)
+import EmojiStore from "EmojiStore" /* 5676 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const EmojiIntention = fn(1374).EmojiIntention;
+const EmojiIntention = fn(1375).EmojiIntention;
 let closure_4 = [];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useTopAndNewlyAddedEmojis.tsx");

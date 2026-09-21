@@ -1,8 +1,8 @@
-// Module ID: 6303
-// Function ID: 6304
+// Module ID: 6441
+// Function ID: 6442
 // Dependencies: [2]
 
-// Module 6303
+// Module 6441
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeroIllocon-2x.png.js");

@@ -1,72 +1,148 @@
 // Module ID: 8604
 // Function ID: 8605
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8605, 8589, 8598]
+// Dependencies: [17]
 
 // Module 8604
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8598 from "module_8598" /* 8598 */;
-import _modDef8605 from "module_8605" /* 8605 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import _mod17 from "module_17" /* 17 */;
 
-const ClipPath = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
+const Orientation = _mod17.NativeModules.Orientation;
+const Platform = _mod17.Platform;
+const DeviceEventEmitter = _mod17.DeviceEventEmitter;
+const dependencyMap = {};
+let c3 = 0;
+const __listener_id = "__listener_id";
+
+export default {
+  getOrientation(arg0) {
+    closure_0 = arg0;
+    const orientation = Orientation.getOrientation((arg0, arg1) => {
+      closure_0(arg0, arg1);
+    });
+  },
+  getSpecificOrientation(arg0) {
+    closure_0 = arg0;
+    const specificOrientation = Orientation.getSpecificOrientation((arg0, arg1) => {
+      closure_0(arg0, arg1);
+    });
+  },
+  ignoreAutoRotate(flag) {
+    Orientation.ignoreAutoRotate(flag);
+  },
+  lockToPortrait() {
+    Orientation.lockToPortrait();
+  },
+  lockToLandscape() {
+    Orientation.lockToLandscape();
+  },
+  lockToLandscapeRight() {
+    Orientation.lockToLandscapeRight();
+  },
+  lockToLandscapeLeft() {
+    Orientation.lockToLandscapeLeft();
+  },
+  unlockAllOrientations() {
+    const result = Orientation.unlockAllOrientations();
+  },
+  addOrientationListener(handleOrientationChange) {
+    if (handleOrientationChange.hasOwnProperty(__listener_id)) {
+      let str = handleOrientationChange[tmp];
     } else {
-      callResult = call(constructResult);
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(handleOrientationChange)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(handleOrientationChange, tmp, obj);
+      }
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-_possibleConstructorReturnDefault;
-const jsx = fn(21).jsx;
-class ClipPath {
-  constructor() {
-    self = this;
-    tmp = closure_3(this, ClipPath);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(ClipPath);
-    tmp3 = closure_4;
-    if (closure_7()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    closure_2[str] = DeviceEventEmitter.addListener("orientationDidChange", (orientation) => {
+      handleOrientationChange(orientation.orientation);
+    });
+  },
+  addOrientationDegreesChangeListener(arg0) {
+    closure_0 = arg0;
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(ClipPath, _modDef8598);
-const entry = {
-  key: "render",
-  value: function render() {
-    const props = this.props;
-    const obj = { ref: this.refMethod };
-    const merged = Object.assign(ClipPath(8589).extract(this, props));
-    obj.children = props.children;
-    return <tmp ref={this.refMethod} />;
+    closure_2[str] = DeviceEventEmitter.addListener("orientationDegreesDidChange", (orientationDegrees) => {
+      closure_0(orientationDegrees.orientationDegrees);
+    });
+  },
+  removeOrientationListener(arg0) {
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
+    } else {
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
+    }
+    if (dependencyMap[str]) {
+      tmp6[str].remove();
+      tmp6[str] = null;
+    }
+  },
+  addSpecificOrientationListener(arg0) {
+    closure_0 = arg0;
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
+    } else {
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
+    }
+    closure_2[str] = DeviceEventEmitter.addListener("specificOrientationDidChange", (specificOrientation) => {
+      closure_0(specificOrientation.specificOrientation);
+    });
+  },
+  removeSpecificOrientationListener(arg0) {
+    if (arg0.hasOwnProperty(__listener_id)) {
+      let str = arg0[tmp];
+    } else {
+      const _Object = Object;
+      str = "F";
+      if (Object.isExtensible(arg0)) {
+        const _Object2 = Object;
+        const obj = { value: null };
+        const sum = c3 + 1;
+        c3 = sum;
+        obj.value = `L${tmp4}`;
+        Object.defineProperty(arg0, tmp, obj);
+      }
+    }
+    if (dependencyMap[str]) {
+      tmp6[str].remove();
+      tmp6[str] = null;
+    }
+  },
+  getInitialOrientation() {
+    return Orientation.initialOrientation;
   }
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(ClipPath, items);
-importDefaultResultResult.displayName = "ClipPath";
-
-export default importDefaultResultResult;

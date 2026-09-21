@@ -1,10 +1,10 @@
-// Module ID: 9961
-// Function ID: 9962
+// Module ID: 10087
+// Function ID: 10088
 // Name: HubProgressBarConstants
-// Dependencies: [1185, 2]
+// Dependencies: [1186, 2]
 
-// Module 9961 (HubProgressBarConstants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
+// Module 10087 (HubProgressBarConstants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import size from "module_2" /* 2 */;
 
 const items = [preloaded_user_settings.HubProgressStep.JOIN_GUILD, preloaded_user_settings.HubProgressStep.INVITE_USER, preloaded_user_settings.HubProgressStep.CONTACT_SYNC];

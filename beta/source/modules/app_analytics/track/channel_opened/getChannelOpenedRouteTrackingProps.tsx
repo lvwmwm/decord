@@ -1,13 +1,13 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 17215
+// Function ID: 17216
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [1957, 7876, 1100, 2]
+// Dependencies: [2041, 8016, 1101, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 16854 (getChannelOpenedRouteTrackingProps)
-import router_utils from "router_utils" /* 1100 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7876 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+// Module 17215 (getChannelOpenedRouteTrackingProps)
+import router_utils from "router_utils" /* 1101 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8016 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 const size = fn(2);

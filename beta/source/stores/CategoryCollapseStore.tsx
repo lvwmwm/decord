@@ -1,17 +1,17 @@
-// Module ID: 7220
-// Function ID: 7221
+// Module ID: 7362
+// Function ID: 7363
 // Name: CategoryCollapseStore
-// Dependencies: [1219, 1957, 4978, 2012, 1074, 1185, 1369, 1982, 504, 573, 2]
+// Dependencies: [1220, 2041, 5106, 2096, 1074, 1186, 1370, 2066, 504, 573, 2]
 
-// Module 7220 (CategoryCollapseStore)
+// Module 7362 (CategoryCollapseStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
-import FavoritesUtils from "FavoritesUtils" /* 1982 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 4978 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import FavoritesUtils from "FavoritesUtils" /* 2066 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5106 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 
 require = fn;
 function incrementVersion() {

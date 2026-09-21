@@ -1,34 +1,34 @@
-// Module ID: 5079
-// Function ID: 5080
+// Module ID: 5209
+// Function ID: 5210
 // Name: MarkupRules
-// Dependencies: [32, 718, 1957, 2015, 1979, 1371, 1074, 5080, 5081, 5082, 1114, 5085, 2018, 4788, 4481, 4333, 5086, 5087, 5090, 4289, 5092, 5103, 5104, 5105, 5106, 5107, 5078, 5108, 12, 2]
+// Dependencies: [32, 718, 2041, 2099, 2063, 1372, 1074, 5210, 5211, 5212, 1115, 5215, 2102, 4908, 4600, 5216, 1929, 5217, 5218, 5221, 4409, 5223, 5234, 5235, 5236, 5237, 5208, 5238, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 5079 (MarkupRules)
-import util from "util" /* 1114 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2018 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 5082 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5085 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5086 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5087 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5090 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5092 */;
-import TimestampUtils from "TimestampUtils" /* 5103 */;
-import StaticRouteRendering from "StaticRouteRendering" /* 5104 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 5105 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 5106 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 5107 */;
-import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 5108 */;
+// Module 5209 (MarkupRules)
+import util from "util" /* 1115 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2102 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 5212 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5215 */;
+import StaticRouteRendering from "StaticRouteRendering" /* 5216 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5217 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5218 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5221 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5223 */;
+import TimestampUtils from "TimestampUtils" /* 5234 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 5235 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 5236 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 5237 */;
+import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 5238 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _toArray from "_toArray" /* 718 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
-import t_mod from "module_4333" /* 4333 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5078 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
+import t_mod from "module_1929" /* 1929 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5208 */;
 import "module_12";
 import apply_mod from "module_12" /* 12 */;
 
@@ -137,8 +137,8 @@ function hydrateUserMention(everyoneOrHere, channelId) {
     if (null != channel) {
       let nickname = NicknameUtilsDefault.getNickname(channel.getGuildId(), channelId.channelId, str);
       if (nickname == null) {
-        nickname = tmp4(4481).getName(str);
-        const tmp4Result = tmp4(4481);
+        nickname = tmp4(4600).getName(str);
+        const tmp4Result = tmp4(4600);
       }
       str1 = nickname;
       tmp4 = importDefault;
@@ -179,10 +179,63 @@ function hydrateUserMention(everyoneOrHere, channelId) {
   obj.content = items;
   return obj;
 }
+function hydrateStaticRouteLink(id, itemId, guildId) {
+  const result = StaticRouteRendering.staticRouteToTranslation(id);
+  if (null != guildId.guildId) {
+    let guild = GuildStore.getGuild(guildId.guildId);
+  } else {
+    guild = null;
+    if (null != guildId.channelId) {
+      const channel = ChannelStore.getChannel(guildId.channelId);
+      guildId = undefined;
+      if (channel != null) {
+        guildId = channel.getGuildId();
+      }
+      guild = GuildStore.getGuild(guildId);
+    }
+  }
+  id = undefined;
+  if (guild != null) {
+    id = guild.id;
+  }
+  const result1 = StaticRouteRendering.staticRouteToItemString(GuildRoleStore, id, itemId, id);
+  let str = "";
+  if (null != result1) {
+    const _HermesInternal = HermesInternal;
+    str = " \u203A " + result1;
+  }
+  const obj3 = { type: "staticRouteLink", content: null, mainContent: null, itemContent: null, itemId: null, id: null, guildId: null, channelId: null };
+  const items = [{ type: "text", content: result + str }];
+  obj3.content = items;
+  let tmp11 = null;
+  if (null != result) {
+    const obj5 = { type: "text", content: result };
+    const items1 = [obj5];
+    tmp11 = items1;
+  }
+  obj3.mainContent = tmp11;
+  let tmp12 = null;
+  if (null != result1) {
+    const obj6 = { type: "text", content: result1 };
+    const items2 = [obj6];
+    tmp12 = items2;
+  }
+  obj3.itemContent = tmp12;
+  obj3.itemId = itemId;
+  obj3.id = id;
+  const channel1 = ChannelStore.getChannel(guildId.channelId);
+  let guildId1;
+  if (channel1 != null) {
+    guildId1 = channel1.getGuildId();
+  }
+  obj3.guildId = guildId1;
+  obj3.channelId = id;
+  return obj3;
+}
 const Constants = fn(1074);
 ({ ID_REGEX: closure_9, MARKDOWN_SPOILER_REGEXP: c10, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: closure_11 } = Constants);
-const SUB_COMMAND_KEY_SEPARATOR = fn(5080).SUB_COMMAND_KEY_SEPARATOR;
-const GAME_MENTION_RAW_RE = fn(5081).GAME_MENTION_RAW_RE;
+const SUB_COMMAND_KEY_SEPARATOR = fn(5210).SUB_COMMAND_KEY_SEPARATOR;
+const GAME_MENTION_RAW_RE = fn(5211).GAME_MENTION_RAW_RE;
 const re14 = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/;
 const re15 = /^$|\n *$/;
 const re16 = /^ *>>> ?/;
@@ -805,57 +858,7 @@ obj.staticRouteLink = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = _slicedToArray(arg0, 3);
-    const result = StaticRouteRendering.staticRouteToTranslation(tmp2);
-    if (null != guildId.guildId) {
-      let guild = GuildStore.getGuild(guildId.guildId);
-    } else {
-      guild = null;
-      if (null != guildId.channelId) {
-        const channel = ChannelStore.getChannel(guildId.channelId);
-        guildId = undefined;
-        if (channel != null) {
-          guildId = channel.getGuildId();
-        }
-        guild = GuildStore.getGuild(guildId);
-      }
-    }
-    let id;
-    if (guild != null) {
-      id = guild.id;
-    }
-    const result1 = StaticRouteRendering.staticRouteToItemString(tmp2, tmp3, id);
-    let str = "";
-    if (null != result1) {
-      const _HermesInternal = HermesInternal;
-      str = " \u203A " + result1;
-    }
-    const obj3 = { content: null, mainContent: null, itemContent: null, itemId: null, id: null, guildId: null, channelId: null };
-    const items = [{ type: "text", content: result + str }];
-    obj3.content = items;
-    let tmp13 = null;
-    if (null != result) {
-      const obj5 = { type: "text", content: result };
-      const items1 = [obj5];
-      tmp13 = items1;
-    }
-    obj3.mainContent = tmp13;
-    let tmp14 = null;
-    if (null != result1) {
-      const obj6 = { type: "text", content: result1 };
-      const items2 = [obj6];
-      tmp14 = items2;
-    }
-    obj3.itemContent = tmp14;
-    obj3.itemId = tmp[2];
-    obj3.id = tmp[1];
-    const channel1 = ChannelStore.getChannel(guildId.channelId);
-    let guildId1;
-    if (channel1 != null) {
-      guildId1 = channel1.getGuildId();
-    }
-    obj3.guildId = guildId1;
-    obj3.channelId = tmp[1];
-    return obj3;
+    return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
   }
 };
 obj.heading = MarkupHeadingRuleDefault;
@@ -873,57 +876,7 @@ const obj23 = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = _slicedToArray(arg0, 3);
-    const result = StaticRouteRendering.staticRouteToTranslation(tmp2);
-    if (null != guildId.guildId) {
-      let guild = GuildStore.getGuild(guildId.guildId);
-    } else {
-      guild = null;
-      if (null != guildId.channelId) {
-        const channel = ChannelStore.getChannel(guildId.channelId);
-        guildId = undefined;
-        if (channel != null) {
-          guildId = channel.getGuildId();
-        }
-        guild = GuildStore.getGuild(guildId);
-      }
-    }
-    let id;
-    if (guild != null) {
-      id = guild.id;
-    }
-    const result1 = StaticRouteRendering.staticRouteToItemString(tmp2, tmp3, id);
-    let str = "";
-    if (null != result1) {
-      const _HermesInternal = HermesInternal;
-      str = " \u203A " + result1;
-    }
-    const obj3 = { content: null, mainContent: null, itemContent: null, itemId: null, id: null, guildId: null, channelId: null };
-    const items = [{ type: "text", content: result + str }];
-    obj3.content = items;
-    let tmp13 = null;
-    if (null != result) {
-      const obj5 = { type: "text", content: result };
-      const items1 = [obj5];
-      tmp13 = items1;
-    }
-    obj3.mainContent = tmp13;
-    let tmp14 = null;
-    if (null != result1) {
-      const obj6 = { type: "text", content: result1 };
-      const items2 = [obj6];
-      tmp14 = items2;
-    }
-    obj3.itemContent = tmp14;
-    obj3.itemId = tmp[2];
-    obj3.id = tmp[1];
-    const channel1 = ChannelStore.getChannel(guildId.channelId);
-    let guildId1;
-    if (channel1 != null) {
-      guildId1 = channel1.getGuildId();
-    }
-    obj3.guildId = guildId1;
-    obj3.channelId = tmp[1];
-    return obj3;
+    return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
   }
 };
 let apply = apply_mod;
@@ -1195,3 +1148,4 @@ export const hydrateCommandMention = function hydrateCommandMention(name, comman
   obj.content = items1;
   return obj;
 };
+export { hydrateStaticRouteLink };

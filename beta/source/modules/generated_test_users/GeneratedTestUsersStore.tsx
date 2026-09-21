@@ -1,12 +1,12 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15868
+// Function ID: 15869
 // Name: GeneratedTestUsersStore
-// Dependencies: [1385, 504, 573, 2]
+// Dependencies: [1386, 504, 573, 2]
 
-// Module 15677 (GeneratedTestUsersStore)
+// Module 15868 (GeneratedTestUsersStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserRecord from "UserRecord" /* 1385 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 function handleAddUser(id) {
   if (null == closure_1.users) {

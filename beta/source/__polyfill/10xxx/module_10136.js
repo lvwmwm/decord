@@ -1,9 +1,9 @@
 // Module ID: 10136
 // Function ID: 10137
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10136
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls/light_theme", width: 24, height: 24, scales: [2, 3], hash: "a9eb64c7670ac900f200e86de988df53", name: "voice_bar_mute_on", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "811fb35960f597c4ee3417f16bd2f9e6", name: "messages", type: "png" });

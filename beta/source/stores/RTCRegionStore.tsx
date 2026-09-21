@@ -1,13 +1,13 @@
-// Module ID: 4686
-// Function ID: 4687
+// Module ID: 4806
+// Function ID: 4807
 // Name: RTCRegionStore
-// Dependencies: [1090, 504, 12, 573, 2]
+// Dependencies: [1091, 504, 12, 573, 2]
 
-// Module 4686 (RTCRegionStore)
+// Module 4806 (RTCRegionStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
+import DurationsDefault from "Durations" /* 1091 */;
 
 let obj = { preferredRegions: null, lastTestTimestamp: null, lastGeoRankedOrder: null };
 let closure_3 = obj;

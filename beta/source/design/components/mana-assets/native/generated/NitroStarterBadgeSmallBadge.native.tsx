@@ -1,13 +1,13 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6540
+// Function ID: 6541
 // Name: NitroStarterBadgeSmallBadge
-// Dependencies: [21, 5668, 6401, 2]
+// Dependencies: [21, 5804, 6541, 2]
 // Exports: NitroStarterBadgeSmallBadge
 
-// Module 6400 (NitroStarterBadgeSmallBadge)
+// Module 6540 (NitroStarterBadgeSmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6401 from "module_6401" /* 6401 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6541 from "module_6541" /* 6541 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroStarterBadgeSmallBadge = function NitroStarterBadgeSmallBadge(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6401 };
+  const obj2 = { uri: _modDef6541 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

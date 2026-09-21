@@ -1,11 +1,11 @@
-// Module ID: 16175
-// Function ID: 16176
+// Module ID: 16417
+// Function ID: 16418
 // Name: utils/EmojiColorUtils
-// Dependencies: [5, 17, 1437, 2]
+// Dependencies: [5, 17, 1438, 2]
 // Exports: getEmojiDominantColors
 
-// Module 16175 (utils/EmojiColorUtils)
-import privDefault from "priv" /* 1437 */;
+// Module 16417 (utils/EmojiColorUtils)
+import privDefault from "priv" /* 1438 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 function _getEmojiCacheKey(name) {

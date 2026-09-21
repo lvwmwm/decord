@@ -1,15 +1,9 @@
 // Module ID: 5611
 // Function ID: 5612
-// Dependencies: [5612, 5615]
+// Dependencies: [1121]
 
 // Module 5611
-import _mod5612 from "module_5612" /* 5612 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-const require = globalThis.__r;
 
-for (const key10016 in require("module_5615")) {
-  arg5[key10016] = require("module_5615")[key10016];
-  continue;
-}
-
-export default _mod5612.LottieView;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 500, height: 500, scales: [1], hash: "537a5a5a0fd47a14c531a6a53114ce50", name: "img_account_sync_crunchyroll_white", type: "svg" });

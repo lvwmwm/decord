@@ -1,13 +1,13 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9545
+// Function ID: 9546
 // Name: EmbedIcon
-// Dependencies: [19, 21, 576, 4337, 9562, 2]
+// Dependencies: [19, 21, 576, 4456, 9546, 2]
 // Exports: EmbedIcon
 
-// Module 9561 (EmbedIcon)
+// Module 9545 (EmbedIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod9562 from "module_9562" /* 9562 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod9546 from "module_9546" /* 9546 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmbedIcon = function EmbedIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9562, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9546, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

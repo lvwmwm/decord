@@ -1,21 +1,21 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15795
+// Function ID: 15796
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10209, 21, 4636, 504, 11, 8716, 5054, 5768, 7303, 1114, 1940, 2]
+// Dependencies: [19, 10337, 21, 4756, 504, 11, 8871, 5184, 5904, 7445, 1115, 2024, 2]
 // Exports: default
 
-// Module 15606 (UserSettingsCommunityNotifications)
+// Module 15795 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1114 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import TableSwitchRow from "TableSwitchRow" /* 7303 */;
+import util from "util" /* 1115 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import TableSwitchRow from "TableSwitchRow" /* 7445 */;
 import noop from "module_19" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10209 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10337 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles({ container: { paddingHorizontal: 16 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsCommunityNotifications.tsx");
@@ -40,9 +40,9 @@ export default function UserSettingsCommunityNotifications() {
           obj2.label = intl.string(util.t.u6dc5B);
           obj2.value = !stateFromStores[item].disableRaidAlertNag;
           obj2.onValueChange = function onValueChange() {
-            const result = stateFromStores(1940).updateUserGuildSettings(closure_0, (disableRaidAlertNag) => {
+            const result = stateFromStores(2024).updateUserGuildSettings(closure_0, (disableRaidAlertNag) => {
               disableRaidAlertNag.disableRaidAlertNag = !disableRaidAlertNag.disableRaidAlertNag;
-            }, stateFromStores(1940).UserSettingsDelay.INFREQUENT_USER_ACTION);
+            }, stateFromStores(2024).UserSettingsDelay.INFREQUENT_USER_ACTION);
           };
           const items = [React4(TableSwitchRow.TableSwitchRow, obj2), ];
           const obj3 = { label: null, value: null, onValueChange: null };
@@ -50,17 +50,17 @@ export default function UserSettingsCommunityNotifications() {
           obj3.label = intl2.string(util.t.P8MG6q);
           obj3.value = !stateFromStores[item].disableRaidAlertPush;
           obj3.onValueChange = function onValueChange() {
-            const result = stateFromStores(1940).updateUserGuildSettings(closure_0, (disableRaidAlertPush) => {
+            const result = stateFromStores(2024).updateUserGuildSettings(closure_0, (disableRaidAlertPush) => {
               disableRaidAlertPush.disableRaidAlertPush = !disableRaidAlertPush.disableRaidAlertPush;
-            }, stateFromStores(1940).UserSettingsDelay.INFREQUENT_USER_ACTION);
+            }, stateFromStores(2024).UserSettingsDelay.INFREQUENT_USER_ACTION);
           };
           items[1] = React4(TableSwitchRow.TableSwitchRow, obj3);
           obj.children = items;
           return hasOwnProperty(TableRowGroup.TableRowGroup, obj, item);
         })
     };
-    obj3.children = closure_4(tmp2(5054).Stack, obj4);
-    tmp5 = closure_4(tmp2(8716).Form, obj3);
+    obj3.children = closure_4(tmp2(5184).Stack, obj4);
+    tmp5 = closure_4(tmp2(8871).Form, obj3);
   }
   return tmp5;
 };

@@ -1,13 +1,13 @@
-// Module ID: 10213
-// Function ID: 10214
+// Module ID: 10341
+// Function ID: 10342
 // Name: MessageUtils
-// Dependencies: [1957, 1371, 4847, 2]
+// Dependencies: [2041, 1372, 4966, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10213 (MessageUtils)
-import AgeGateUtils from "AgeGateUtils" /* 4847 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 10341 (MessageUtils)
+import AgeGateUtils from "AgeGateUtils" /* 4966 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

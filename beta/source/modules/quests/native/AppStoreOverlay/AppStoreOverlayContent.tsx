@@ -1,12 +1,12 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 11753
+// Function ID: 11754
 // Name: AppStoreOverlayContent
-// Dependencies: [5, 4331, 4325, 1114, 11636, 2]
+// Dependencies: [5, 4451, 4445, 1115, 11754, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 11635 (AppStoreOverlayContent)
-import openURL from "openURL" /* 4325 */;
-import LinkingDefault from "Linking" /* 4331 */;
+// Module 11753 (AppStoreOverlayContent)
+import openURL from "openURL" /* 4445 */;
+import LinkingDefault from "Linking" /* 4451 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -69,8 +69,8 @@ let closure_4 = async function _getAppStoreOverlayContent(arg0, value) {
             const items = [];
             if (tmp) {
               const obj = { type: "rating", label: null, rating: null, ratingCount: null };
-              const intl = closure_1_0(1114).intl;
-              obj.label = intl.string(closure_1_0(1114).t["9bEWZJ"]);
+              const intl = closure_1_0(1115).intl;
+              obj.label = intl.string(closure_1_0(1115).t["9bEWZJ"]);
               ({ rating: obj.rating, rating_count } = rating);
               obj.ratingCount = rating_count;
               items.push(obj);
@@ -81,17 +81,17 @@ let closure_4 = async function _getAppStoreOverlayContent(arg0, value) {
             }
             if (tmp5) {
               const obj2 = { type: "age", label: null, ageRating: null, ageRatingLabel: null };
-              const intl2 = closure_1_0(1114).intl;
-              obj2.label = intl2.string(closure_1_0(1114).t.ncrlHJ);
+              const intl2 = closure_1_0(1115).intl;
+              obj2.label = intl2.string(closure_1_0(1115).t.ncrlHJ);
               obj2.ageRating = rating.age_rating;
-              const intl3 = closure_1_0(1114).intl;
-              obj2.ageRatingLabel = intl3.string(closure_1_0(1114).t.wK1svU);
+              const intl3 = closure_1_0(1115).intl;
+              obj2.ageRatingLabel = intl3.string(closure_1_0(1115).t.wK1svU);
               items.push(obj2);
             }
             if (null != rating.chart_rank) {
               const obj7 = { type: "chart", label: null, rank: null, category: null };
-              const intl4 = closure_1_0(1114).intl;
-              obj7.label = intl4.string(closure_1_0(1114).t["x/ERbV"]);
+              const intl4 = closure_1_0(1115).intl;
+              obj7.label = intl4.string(closure_1_0(1115).t["x/ERbV"]);
               ({ chart_rank: obj3.rank, category } = rating);
               obj7.category = category;
               items.push(obj7);

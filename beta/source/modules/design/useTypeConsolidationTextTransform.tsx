@@ -1,10 +1,10 @@
-// Module ID: 7082
-// Function ID: 7083
+// Module ID: 7224
+// Function ID: 7225
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [7083, 2]
+// Dependencies: [7225, 2]
 // Exports: useTypeConsolidationEyebrow, useTypeConsolidationTextTransform
 
-// Module 7082 (useTypeConsolidationTextTransform)
+// Module 7224 (useTypeConsolidationTextTransform)
 import size from "module_2" /* 2 */;
 
 const style = { textTransform: "none" };
@@ -22,7 +22,7 @@ export const useTypeConsolidationEyebrow = function useTypeConsolidationEyebrow(
     const obj2 = { variant: "experimental/body-sm/medium", style };
     let obj3 = obj2;
   } else {
-    obj3 = { variant, style: "Array" };
+    obj3 = { variant, style: "r" };
   }
   return obj3;
 };

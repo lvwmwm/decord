@@ -1,9 +1,9 @@
 // Module ID: 11511
 // Function ID: 11512
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11511
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/explicit_media_redaction/assets", width: 86, height: 100, scales: [1, 2, 3], hash: "a7ccb6b54d1f9e097b1427e3e452e7f9", name: "safety_shield", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "e71bfb9b43d4bbd3706e078113315f40", name: "ic_image", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14358
+// Function ID: 14359
 // Name: CloseIcon
-// Dependencies: [19, 21, 8574, 2]
+// Dependencies: [19, 21, 8728, 2]
 // Exports: default
 
-// Module 14176 (CloseIcon)
-import inlineStyles from "inlineStyles" /* 8574 */;
+// Module 14358 (CloseIcon)
+import inlineStyles from "inlineStyles" /* 8728 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

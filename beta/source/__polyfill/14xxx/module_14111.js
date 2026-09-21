@@ -1,25 +1,9 @@
 // Module ID: 14111
 // Function ID: 14112
-// Dependencies: [14103]
+// Dependencies: [1121]
 
 // Module 14111
-import _mod14103 from "module_14103" /* 14103 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (version, pre, major2, arg3, arg4) => {
-  let tmp = arg4;
-  let tmp2 = arg3;
-  if (typeof major2 === "string") {
-    tmp = arg3;
-    tmp2 = major2;
-  }
-  try {
-    if (version instanceof _mod14103) {
-      version = version.version;
-    }
-    const tmp72 = new _mod14103(version, tmp3);
-    return tmp72.inc(pre, tmp2, tmp).version;
-  } catch (err) {
-    return null;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ebf39623cd7d642af1c5756d58046968", name: "SignPostIcon", type: "png" });

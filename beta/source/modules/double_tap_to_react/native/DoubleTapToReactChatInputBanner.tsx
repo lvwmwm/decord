@@ -1,30 +1,30 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12544
+// Function ID: 12545
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 4628, 1954, 1374, 21, 4636, 576, 1363, 563, 7233, 1396, 4632, 1114, 12424, 5204, 5761, 8894, 1248, 4373, 4637, 1176, 4603, 12514, 1896, 8390, 5074, 9031, 1935, 8075, 8072, 10754, 1943, 2]
+// Dependencies: [32, 19, 17, 4748, 2038, 1375, 21, 4756, 576, 1364, 563, 7375, 1397, 4752, 1115, 12545, 5339, 5897, 9048, 1249, 4492, 4757, 1177, 4723, 12635, 1980, 8543, 5204, 9184, 2019, 8229, 8226, 10885, 2027, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 12423 (DoubleTapToReactChatInputBanner)
+// Module 12544 (DoubleTapToReactChatInputBanner)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import timing from "timing" /* 4637 */;
-import Pressables from "Pressables" /* 5204 */;
-import XSmallIcon from "XSmallIcon" /* 5761 */;
-import EmojiDefault from "Emoji" /* 7233 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8075 */;
-import renderChannelBadge from "renderChannelBadge" /* 12424 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import timing from "timing" /* 4757 */;
+import Pressables from "Pressables" /* 5339 */;
+import XSmallIcon from "XSmallIcon" /* 5897 */;
+import EmojiDefault from "Emoji" /* 7375 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8229 */;
+import renderChannelBadge from "renderChannelBadge" /* 12545 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
-const AvatarUtilsDefault = tmp8(1396);
+const AvatarUtilsDefault = tmp8(1397);
 require = fn;
 function DoubleTapToReactChatInputBannerInner(emoji) {
   emoji = emoji.emoji;
@@ -59,13 +59,13 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj6 = { style: tmp.text, children: null };
   const obj7 = { style: tmp.header, children: null };
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   obj8.children = intl.string(util.t["6RUX7d"]);
   const items3 = [React7(Text_Text.Text, obj8), React7(renderChannelBadge.NewBadge, {})];
   obj7.children = items3;
   const items4 = [closure_1_10(View, obj7), ];
   const obj9 = { variant: "text-xs/medium", color: "text-default", children: null };
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1115).intl;
   obj9.children = intl2.format(util.t["5/l2rR"], {
     emojiName: emoji.name,
     emojiNameHook(children, arg1) {
@@ -79,7 +79,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   obj6.children = items4;
   items2[1] = closure_1_10(View, obj6);
   const obj11 = { hitSlop: 8, accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-  const intl3 = tmp2(1114).intl;
+  const intl3 = tmp2(1115).intl;
   obj11.accessibilityLabel = intl3.string(util.t.cpT0Cq);
   obj11.onPress = emoji.handleDismissBanner;
   obj11.style = tmp.closeButton;
@@ -146,7 +146,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   }, []);
   const items3 = [markAsDismissed];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12514, dependencyMap.paths), "DoubleTapToReactActionSheet", { emoji });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12635, dependencyMap.paths), "DoubleTapToReactActionSheet", { emoji });
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items2);
   const callback2 = noop.useCallback(() => {
@@ -184,12 +184,12 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   return closure_10(closure_11, obj7);
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
-const EMOJI_URL_BASE_SIZE = fn(1374).EMOJI_URL_BASE_SIZE;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 const androidRippleConfig = { cornerRadius: 0 };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { animatedContainer: { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, measurement: { opacity: 0, position: "absolute" }, container: { display: "flex", flexDirection: "row", alignItems: "center", padding: 12 }, highlight: null, text: null, emojiContainer: null, emoji: null, textEmoji: null, header: null, closeButton: null };
 let obj3 = { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.highlight = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -197,13 +197,13 @@ obj2.text = { marginHorizontal: 12, flex: 1 };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.emojiContainer = { borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.md, flexDirection: "row", gap: 8, alignItems: "center", justifyContent: "center", padding: 12 };
 obj2.emoji = { width: 28, height: 28 };
-let PlatformUtils = fn(1363);
+let PlatformUtils = fn(1364);
 let num = 22;
 if (PlatformUtils.isIOS()) {
   num = 28;
 }
 let obj7 = { fontSize: num, textAlign: "center", lineHeight: null, color: null };
-PlatformUtils = fn(1363);
+PlatformUtils = fn(1364);
 let num2;
 if (PlatformUtils.isIOS()) {
   num2 = 32;

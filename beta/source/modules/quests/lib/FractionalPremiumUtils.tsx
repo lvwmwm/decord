@@ -1,15 +1,15 @@
-// Module ID: 11431
-// Function ID: 11432
+// Module ID: 11557
+// Function ID: 11558
 // Name: FractionalPremiumUtils
-// Dependencies: [4294, 1114, 7810, 4318, 1090, 2]
+// Dependencies: [4414, 1115, 7944, 4438, 1091, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 11431 (FractionalPremiumUtils)
-import DurationsDefault from "Durations" /* 1090 */;
-import util from "util" /* 1114 */;
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import DateUtils from "DateUtils" /* 4318 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7810 */;
+// Module 11557 (FractionalPremiumUtils)
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
+import PremiumUtils from "PremiumUtils" /* 4414 */;
+import DateUtils from "DateUtils" /* 4438 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7944 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
@@ -17,13 +17,13 @@ const result = size.fileFinishedImporting("modules/quests/lib/FractionalPremiumU
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {
   const fractionalPremiumUnitsHoursFromSkuIds = PremiumUtils.getFractionalPremiumUnitsHoursFromSkuIds(arr.map((skuId) => skuId.skuId));
   if (fractionalPremiumUnitsHoursFromSkuIds % 24 === 0) {
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1115).intl;
     const obj2 = { days: fractionalPremiumUnitsHoursFromSkuIds / 24 };
-    let formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t.Cz1G97, obj2);
+    let formatToPlainStringResult = intl2.formatToPlainString(tmp(1115).t.Cz1G97, obj2);
   } else {
-    const intl = tmp(1114).intl;
+    const intl = tmp(1115).intl;
     const obj3 = { hours: fractionalPremiumUnitsHoursFromSkuIds };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t.J9Lu4h, obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t.J9Lu4h, obj3);
   }
   return formatToPlainStringResult;
 };

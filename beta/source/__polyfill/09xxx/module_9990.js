@@ -1,9 +1,0 @@
-// Module ID: 9990
-// Function ID: 9991
-// Dependencies: [1120]
-
-// Module 9990
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 32, height: 32, scales: [2, 3], hash: "6745f221b3e662876db35721a519454b", name: "copy", type: "png" });

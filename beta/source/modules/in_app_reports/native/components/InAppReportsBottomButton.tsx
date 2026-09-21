@@ -1,20 +1,20 @@
-// Module ID: 9209
-// Function ID: 9210
+// Module ID: 13217
+// Function ID: 13218
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1085, 21, 4636, 576, 1114, 2528, 4632, 5056, 1176, 2]
+// Dependencies: [19, 17, 1085, 21, 4756, 576, 1115, 2614, 4752, 5186, 1177, 2]
 // Exports: default
 
-// Module 9209 (InAppReportsBottomButton)
+// Module 13217 (InAppReportsBottomButton)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import _modDef2528 from "module_2528" /* 2528 */;
+import util from "util" /* 1115 */;
+import _modDef2614 from "module_2614" /* 2614 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 }, divider: { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 }, descriptionText: { lineHeight: 16, textAlign: "center", marginBottom: 12 }, errorText: null };
 let obj3 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 };
 obj2.errorText = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1085).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
@@ -32,33 +32,33 @@ export default function InAppReportsBottomButton(button) {
   } else {
     const string3 = util.intl.string;
     if ("submit" === button.type) {
-      const intl2 = tmp17(1114).intl;
+      const intl2 = tmp17(1115).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(_modDef2528.ZUyreS);
+        let stringResult = string(_modDef2614.ZUyreS);
       } else {
-        const intl3 = tmp17(1114).intl;
-        const stringResult1 = string(tmp17(1114).t["G+vU89"]);
+        const intl3 = tmp17(1115).intl;
+        const stringResult1 = string(tmp17(1115).t["G+vU89"]);
         stringResult = stringResult1;
-        const formatResult = intl3.format(tmp17(1114).t.Q0tSKT, {});
+        const formatResult = intl3.format(tmp17(1115).t.Q0tSKT, {});
       }
     } else {
       if ("next" === button.type) {
-        const intl = tmp17(1114).intl;
-        let stringResult2 = intl.string(tmp17(1114).t.PDTjLN);
+        const intl = tmp17(1115).intl;
+        let stringResult2 = intl.string(tmp17(1115).t.PDTjLN);
       } else {
         stringResult2 = tmp19;
         if ("cancel" === button.type) {
-          const intl5 = tmp17(1114).intl;
-          stringResult2 = intl5.string(tmp17(1114).t["ETE/oC"]);
+          const intl5 = tmp17(1115).intl;
+          stringResult2 = intl5.string(tmp17(1115).t["ETE/oC"]);
         }
       }
-      const intl4 = tmp17(1114).intl;
+      const intl4 = tmp17(1115).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(_modDef2528.psKFdJ);
+        let string2Result = string2(_modDef2614.psKFdJ);
       } else {
-        string2Result = string2(tmp17(1114).t.h6D8Vy);
+        string2Result = string2(tmp17(1115).t.h6D8Vy);
       }
       const obj = { style: tmp.container, children: null };
       const obj2 = { style: tmp.divider };
@@ -67,7 +67,7 @@ export default function InAppReportsBottomButton(button) {
       let tmp14Result = null;
       if (null != tmp3) {
         const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-        tmp14Result = tmp14(tmp17(4632).Text, obj4);
+        tmp14Result = tmp14(tmp17(4752).Text, obj4);
       }
       const items1 = [tmp14Result, , ];
       const obj5 = {
@@ -78,11 +78,11 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult2,
         variant: str2
       };
-      items1[1] = React4(tmp17(5056).Button, obj5);
+      items1[1] = React4(tmp17(5186).Button, obj5);
       let tmp14Result2 = null;
       if (hasError) {
         const obj6 = { style: tmp.errorText, children: string2Result };
-        tmp14Result2 = tmp14(tmp17(1176).LegacyText, obj6);
+        tmp14Result2 = tmp14(tmp17(1177).LegacyText, obj6);
       }
       items1[2] = tmp14Result2;
       obj3.children = items1;

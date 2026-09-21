@@ -1,13 +1,13 @@
-// Module ID: 15457
-// Function ID: 15458
+// Module ID: 15644
+// Function ID: 15645
 // Name: EmojiFaceVomitingIcon
-// Dependencies: [19, 21, 576, 4337, 15458, 2]
+// Dependencies: [19, 21, 576, 4456, 15645, 2]
 // Exports: EmojiFaceVomitingIcon
 
-// Module 15457 (EmojiFaceVomitingIcon)
+// Module 15644 (EmojiFaceVomitingIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15458 from "module_15458" /* 15458 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod15645 from "module_15645" /* 15645 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiFaceVomitingIcon = function EmojiFaceVomitingIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15458, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15645, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

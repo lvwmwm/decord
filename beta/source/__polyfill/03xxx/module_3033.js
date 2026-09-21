@@ -1,9 +1,9 @@
 // Module ID: 3033
 // Function ID: 3034
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3033
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl9hY2NvdW50X2xpbmtpbmc=", scales: [1], hash: "4f5efb8cbc7dccaf0b4e625d96b0eb15", name: "ru.messages.4f5efb8cbc7dccaf0b4e625d96b0eb15.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkpoint", scales: [1], hash: "f17c0b66c72c9b92a20f7233b52a1318", name: "Checkpoint2026.compiled.messages", type: "jsona" });

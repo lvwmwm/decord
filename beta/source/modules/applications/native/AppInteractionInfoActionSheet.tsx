@@ -1,23 +1,23 @@
-// Module ID: 11860
-// Function ID: 11861
+// Module ID: 11980
+// Function ID: 11981
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1385, 1979, 1371, 21, 4636, 1611, 11861, 9374, 504, 8298, 5665, 4632, 1114, 5204, 8296, 1176, 7253, 2]
+// Dependencies: [19, 17, 1386, 2063, 1372, 21, 4756, 1612, 11981, 9318, 504, 8450, 5801, 4752, 1115, 5339, 8448, 1177, 7395, 2]
 // Exports: default
 
-// Module 11860 (AppInteractionInfoActionSheet)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
-import UserActionCreators from "UserActionCreators" /* 8298 */;
-import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 11861 */;
+// Module 11980 (AppInteractionInfoActionSheet)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import UserActionCreators from "UserActionCreators" /* 8450 */;
+import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 11981 */;
 import noop from "module_19" /* 19 */;
-import UserRecord from "UserRecord" /* 1385 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserRecord from "UserRecord" /* 1386 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_10 = createStyles.createStyles({ itemContainer: { flexDirection: "row", paddingVertical: 12, paddingHorizontal: 16, alignItems: "center" }, itemLabel: { flexDirection: "column", alignItems: "flex-start", paddingLeft: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/applications/native/AppInteractionInfoActionSheet.tsx");
@@ -35,13 +35,13 @@ export default function AppInteractionInfoActionSheet(message) {
   let tmp5;
   const memo = noop.useMemo(() => React6(ContextMenuSubmenuActionSheetHeaderDefault, { onBack }), items);
   if (interactionMetadata != null) {
-    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 9374).ApplicationIntegrationType.USER_INSTALL];
+    tmp5 = interactionMetadata.authorizing_integration_owners[message(undefined, 9318).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp5;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp7;
   if (interactionMetadata2 != null) {
-    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 9374).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp7 = interactionMetadata2.authorizing_integration_owners[message(undefined, 9318).ApplicationIntegrationType.GUILD_INSTALL];
   }
   noop = tmp7;
   const interactionMetadata3 = message.interactionMetadata;
@@ -83,21 +83,21 @@ export default function AppInteractionInfoActionSheet(message) {
   }
   if (null != stateFromStores1) {
     const obj5 = { style: tmp.itemContainer, children: null };
-    const obj6 = { guild: stateFromStores1, size: tmp10(5665).GuildIconSizes.SMALL_32 };
-    const items5 = [closure_8(tmp2(5665), obj6), ];
+    const obj6 = { guild: stateFromStores1, size: tmp10(5801).GuildIconSizes.SMALL_32 };
+    const items5 = [closure_8(tmp2(5801), obj6), ];
     const obj7 = { style: tmp.itemLabel, children: null };
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
-    const items6 = [closure_8(tmp10(4632).Text, obj8), ];
+    const items6 = [closure_8(tmp10(4752).Text, obj8), ];
     const obj9 = { variant: "text-xs/medium", color: "text-subtle", children: null };
-    const intl2 = tmp10(1114).intl;
+    const intl2 = tmp10(1115).intl;
     const obj10 = { application: message.author.username };
-    obj9.children = intl2.format(tmp10(1114).t.ShLXXB, obj10);
-    items6[1] = closure_8(tmp10(4632).Text, obj9);
+    obj9.children = intl2.format(tmp10(1115).t.ShLXXB, obj10);
+    items6[1] = closure_8(tmp10(4752).Text, obj9);
     obj7.children = items6;
     items5[1] = closure_9(id, obj7);
     obj5.children = items5;
     let tmp26 = closure_9(id, obj5);
-    const tmp2Result = tmp2(5665);
+    const tmp2Result = tmp2(5801);
   } else {
     tmp26 = null;
     if (null != stateFromStores) {
@@ -108,24 +108,24 @@ export default function AppInteractionInfoActionSheet(message) {
         children: null
       };
       const obj12 = { style: tmp.itemContainer, children: null };
-      const obj13 = { user: stateFromStores, size: tmp10(1176).AvatarSizes.REFRESH_MEDIUM_32, guildId };
-      const items7 = [closure_8(tmp10(1176).Avatar, obj13), ];
+      const obj13 = { user: stateFromStores, size: tmp10(1177).AvatarSizes.REFRESH_MEDIUM_32, guildId };
+      const items7 = [closure_8(tmp10(1177).Avatar, obj13), ];
       const obj14 = { style: tmp.itemLabel, children: null };
       const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.username };
-      const items8 = [closure_8(tmp10(4632).Text, obj15), ];
+      const items8 = [closure_8(tmp10(4752).Text, obj15), ];
       const obj16 = { variant: "text-xs/medium", color: "text-subtle", children: null };
-      const intl = tmp10(1114).intl;
+      const intl = tmp10(1115).intl;
       const obj17 = { application: message.author.username };
-      obj16.children = intl.format(tmp10(1114).t.ShLXXB, obj17);
-      items8[1] = closure_8(tmp10(4632).Text, obj16);
+      obj16.children = intl.format(tmp10(1115).t.ShLXXB, obj17);
+      items8[1] = closure_8(tmp10(4752).Text, obj16);
       obj14.children = items8;
       items7[1] = closure_9(id, obj14);
       obj12.children = items7;
       obj11.children = closure_9(id, obj12);
-      tmp26 = closure_8(tmp10(5204).PressableOpacity, obj11);
+      tmp26 = closure_8(tmp10(5339).PressableOpacity, obj11);
     }
   }
-  const obj18 = { header: memo, bodyStyles: { paddingBottom: onBack(1611)().bottom }, children: null };
+  const obj18 = { header: memo, bodyStyles: { paddingBottom: onBack(1612)().bottom }, children: null };
   const items9 = [tmp26, ];
   let tmp32 = null;
   if (null != tmp15) {
@@ -136,22 +136,22 @@ export default function AppInteractionInfoActionSheet(message) {
       children: null
     };
     const obj20 = { style: tmp.itemContainer, children: null };
-    const obj21 = { user: tmp15, size: tmp10(1176).AvatarSizes.REFRESH_MEDIUM_32, guildId };
-    const items10 = [closure_8(tmp10(1176).Avatar, obj21), ];
+    const obj21 = { user: tmp15, size: tmp10(1177).AvatarSizes.REFRESH_MEDIUM_32, guildId };
+    const items10 = [closure_8(tmp10(1177).Avatar, obj21), ];
     const obj22 = { style: tmp.itemLabel, children: null };
     const obj23 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp15.username };
-    const items11 = [closure_8(tmp10(4632).Text, obj23), ];
+    const items11 = [closure_8(tmp10(4752).Text, obj23), ];
     const obj24 = { variant: "text-xs/medium", color: "text-subtle", children: null };
-    const intl3 = tmp10(1114).intl;
-    obj24.children = intl3.string(tmp10(1114).t["04gxNg"]);
-    items11[1] = closure_8(tmp10(4632).Text, obj24);
+    const intl3 = tmp10(1115).intl;
+    obj24.children = intl3.string(tmp10(1115).t["04gxNg"]);
+    items11[1] = closure_8(tmp10(4752).Text, obj24);
     obj22.children = items11;
     items10[1] = tmp31(id, obj22);
     obj20.children = items10;
     obj19.children = tmp31(id, obj20);
-    tmp32 = closure_8(tmp10(5204).PressableOpacity, obj19);
+    tmp32 = closure_8(tmp10(5339).PressableOpacity, obj19);
   }
   items9[1] = tmp32;
   obj18.children = items9;
-  return closure_9(message(7253).BottomSheet, obj18);
+  return closure_9(message(7395).BottomSheet, obj18);
 };

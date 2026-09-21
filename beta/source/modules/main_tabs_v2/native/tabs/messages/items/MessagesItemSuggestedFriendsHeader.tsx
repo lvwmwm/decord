@@ -1,23 +1,23 @@
-// Module ID: 16194
-// Function ID: 16195
+// Module ID: 16436
+// Function ID: 16437
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 4632, 576, 4636, 4373, 8385, 5206, 1114, 2]
+// Dependencies: [19, 17, 21, 4752, 576, 4756, 4492, 8538, 5341, 1115, 2]
 
-// Module 16194 (MessagesItemSuggestedFriendsHeader)
+// Module 16436 (MessagesItemSuggestedFriendsHeader)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import util from "util" /* 1115 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 
-const ThemedGradientDefault = tmp5(5206);
+const ThemedGradientDefault = tmp5(5341);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const sum = fn(4632).TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
-const createStyles = fn(4636);
+const sum = fn(4752).TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
+const createStyles = fn(4756);
 let obj = { headerContainer: { height: sum, justifyContent: "center", overflow: "hidden" }, stickyOverlay: null, headerText: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -61,7 +61,7 @@ export default noop.memo(function MessagesItemSuggestedFriendsHeader(stickyAt) {
   }
   const items2 = [tmp8Result, ];
   const obj6 = { style: tmp.headerText, maxFontSizeMultiplier: 2, lineClamp: 1, accessibilityRole: "header", variant: "text-md/semibold", color: "text-default", children: null };
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   obj6.children = intl.string(util.t["1uAmCw"]);
   items2[1] = hasOwnProperty(Text_Text.Text, obj6);
   obj2.children = items2;

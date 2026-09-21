@@ -1,11 +1,11 @@
-// Module ID: 5937
-// Function ID: 5938
+// Module ID: 6075
+// Function ID: 6076
 // Dependencies: [2]
 
-// Module 5937
+// Module 6075
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChatControllersSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/f7a6fe1da9a5344567135a60ed32fb1d17c9d2bdfce3ca99ba8f1cac6a0cee44.png";
-export const metadata = { fileBytes: 66495 };
+export default "https://cdn.discordapp.com/assets/content/2381c1d53fd32092bcf6271cfb421ad8b5d6b914270d5eec25add836f4d78835.png";
+export const metadata = { fileBytes: 67393 };

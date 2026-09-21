@@ -1,9 +1,9 @@
 // Module ID: 15720
 // Function ID: 15721
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15720
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "1146ad1374798af61befeddbf75c5f47", name: "es-ES.messages.1146ad1374798af61befeddbf75c5f47.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "d5073ab2ca9ee7c06c3f4d761968ac44", name: "ro", type: "png" });

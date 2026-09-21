@@ -1,9 +1,9 @@
 // Module ID: 17789
 // Function ID: 17790
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 17789
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "0b8a6fa235bbde823695fe5cdeccf7e4", name: "channel_setup_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/holidays/assets", scales: [1], hash: "61c603a95257100a1cc40f5088e9b6c8", name: "halloween_loading_light", type: "webm" });

@@ -1,0 +1,9 @@
+// Module ID: 10989
+// Function ID: 10990
+// Dependencies: [1121]
+
+// Module 10989
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 302, height: 42, scales: [2, 3], hash: "2192040384b5c0bcacd48b43d2555bec", name: "img_plan_activated_light", type: "png" });

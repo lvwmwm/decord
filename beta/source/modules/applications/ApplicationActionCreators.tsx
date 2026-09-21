@@ -1,14 +1,14 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7408
+// Function ID: 7409
 // Name: ApplicationActionCreators
-// Dependencies: [5, 7267, 1918, 4864, 1074, 573, 1270, 504, 2]
+// Dependencies: [5, 7409, 2002, 4983, 1074, 573, 1271, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 7266 (ApplicationActionCreators)
+// Module 7408 (ApplicationActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7267 */;
-import ApplicationRecord from "ApplicationRecord" /* 1918 */;
-import ApplicationStore from "ApplicationStore" /* 4864 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7409 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
+import ApplicationStore from "ApplicationStore" /* 4983 */;
 
 const require = globalThis.__r;
 
@@ -127,15 +127,15 @@ const Constants = fn(1074);
 const initialize = fn(504);
 const fetchStore = initialize.createFetchStore(ApplicationStore, {
   getQueryId: Constants.QueryIds.APPLICATIONS,
-  get(item) {
+  get(applicationId) {
     let flag = arg1;
     if (arg1 === undefined) {
       flag = false;
     }
     let tmp = null;
-    if (null != item) {
+    if (null != applicationId) {
       if (flag) {
-        let application = ApplicationStore.getApplication(item);
+        let application = ApplicationStore.getApplication(applicationId);
         if (application == null) {
           application = null;
         }
@@ -171,8 +171,8 @@ export default {
   createApplication(arg0) {
     ({ name: require, guildId: importDefault, type: dependencyMap, teamId: asyncGeneratorStep } = arg0);
     return (async () => {
-      const HTTP = tmp5(1270).HTTP;
-      const request = { url: constants.APPLICATIONS, body: { name, type, guild_id, team_id }, rejectWithError: tmp5(1270).rejectWithMigratedError() };
+      const HTTP = tmp5(1271).HTTP;
+      const request = { url: constants.APPLICATIONS, body: { name, type, guild_id, team_id }, rejectWithError: tmp5(1271).rejectWithMigratedError() };
       await HTTP.post(request);
       const body = arg1.body;
       let tmp8 = null != closure_129_1;
@@ -195,13 +195,13 @@ export default {
     const includeTeam = obj.includeTeam;
     closure_2 = Object.assign(obj, Object.assign({ includeTeam: 0 }));
     return (async () => {
-      const HTTP = tmp5(1270).HTTP;
+      const HTTP = tmp5(1271).HTTP;
       const request = { url: closure_1_7.GUILD_APPLICATIONS(tmp5), query: null, rejectWithError: null };
       const obj4 = {};
       const merged = Object.assign(closure_2);
       obj4.include_team = includeTeam;
       request.query = obj4;
-      request.rejectWithError = tmp5(1270).rejectWithMigratedError();
+      request.rejectWithError = tmp5(1271).rejectWithMigratedError();
       await HTTP.get(request);
       const body = arg1.body;
       tmp2(573).dispatch({ type: "APPLICATIONS_FETCH_SUCCESS", applications: body });
@@ -225,8 +225,8 @@ export default {
   transferApplication(arg0) {
     ({ applicationId: require, teamId: importDefault } = arg0);
     return (async () => {
-      const HTTP = tmp5(1270).HTTP;
-      const request = { url: closure_1_7.APPLICATION_OWNER_TRANSFER(_require), body: { team_id }, rejectWithError: tmp5(1270).rejectWithMigratedError() };
+      const HTTP = tmp5(1271).HTTP;
+      const request = { url: closure_1_7.APPLICATION_OWNER_TRANSFER(_require), body: { team_id }, rejectWithError: tmp5(1271).rejectWithMigratedError() };
       await HTTP.post(request);
       const body = arg1.body;
       tmp2(573).dispatch({ type: "APPLICATION_FETCH_SUCCESS", application: body });

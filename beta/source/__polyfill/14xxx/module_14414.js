@@ -1,26 +1,9 @@
 // Module ID: 14414
 // Function ID: 14415
-// Dependencies: [14412, 14386]
+// Dependencies: [1121]
 
 // Module 14414
-import _mod14386 from "module_14386" /* 14386 */;
-import _mod14412 from "module_14412" /* 14412 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default (arg0, arg1) => {
-  if (arguments.length < 2) {
-    const tmp7 = _mod14386[arg0];
-    let tmp8;
-    if (_mod14412(tmp7)) {
-      tmp8 = tmp7;
-    }
-    let tmp3 = tmp8;
-  } else {
-    tmp3 = _mod14386[arg0];
-    if (tmp3) {
-      tmp3 = tmp(14386)[arg0][arg1];
-    }
-    tmp = require;
-  }
-  return tmp3;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "99f159454017c9a8930c299b70fe8f24", name: "MessagesTab", type: "lottie" });

@@ -1,19 +1,19 @@
-// Module ID: 17272
-// Function ID: 17273
+// Module ID: 17625
+// Function ID: 17626
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 7412, 8798, 8809, 1114, 9312, 5686, 9307, 17273, 9247, 2]
+// Dependencies: [19, 21, 7551, 8946, 8957, 1115, 10012, 5822, 9998, 17626, 9938, 2]
 
-// Module 17272 (VoicePanelGamesSection)
-import util from "util" /* 1114 */;
-import useGame from "useGame" /* 7412 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8798 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
-import FormComponents from "FormComponents" /* 9247 */;
-import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9307 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17273 */;
+// Module 17625 (VoicePanelGamesSection)
+import util from "util" /* 1115 */;
+import useGame from "useGame" /* 7551 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8946 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
+import FormComponents from "FormComponents" /* 9938 */;
+import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9998 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17626 */;
 import noop from "module_19" /* 19 */;
 
-const GameActivityIconDefault = tmp3(9312);
+const GameActivityIconDefault = tmp3(10012);
 require = fn;
 function GameRow(gameId) {
   gameId = gameId.gameId;
@@ -28,8 +28,8 @@ function GameRow(gameId) {
     if ("" !== data.name) {
       let name = data.name;
     } else {
-      const intl = tmp(1114).intl;
-      name = intl.string(tmp(1114).t.GIWFlF);
+      const intl = tmp(1115).intl;
+      name = intl.string(tmp(1115).t.GIWFlF);
     }
     const obj3 = { game: data, size: 32, fallback: "placeholder" };
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
@@ -47,11 +47,11 @@ function GameRow(gameId) {
         accessibilityRole: "button",
         accessibilityLabel: null
       };
-      const intl2 = tmp(1114).intl;
+      const intl2 = tmp(1115).intl;
       const obj6 = { gameName: name };
-      obj5.accessibilityLabel = intl2.formatToPlainString(tmp(1114).t["9sZWVp"], obj6);
+      obj5.accessibilityLabel = intl2.formatToPlainString(tmp(1115).t["9sZWVp"], obj6);
     }
-    return jsx(tmp(5686).TableRow, obj5);
+    return jsx(tmp(5822).TableRow, obj5);
   }
 }
 const jsx = fn(21).jsx;

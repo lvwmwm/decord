@@ -1,23 +1,23 @@
-// Module ID: 9171
-// Function ID: 9172
+// Module ID: 10003
+// Function ID: 10004
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1371, 1074, 9172, 5634, 4980, 5603, 1114, 9173, 9174, 9175, 1270, 4481, 4488, 573, 9176, 8522, 2]
+// Dependencies: [32, 1372, 1074, 10004, 5770, 5108, 5739, 1115, 10005, 10006, 10007, 1271, 4600, 4607, 573, 10008, 8675, 2]
 
-// Module 9171 (RelationshipActionCreators)
+// Module 10003 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import shared from "shared" /* 4488 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5603 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5634 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8522 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 9173 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 9174 */;
-import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 9176 */;
+import util from "util" /* 1115 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import shared from "shared" /* 4607 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5739 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 5770 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8675 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 10005 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 10006 */;
+import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 10008 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
@@ -66,20 +66,20 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
               if (!num) {
                 num = 0;
               }
-              let humanizeAbortCodeResult = tmp18(9175).humanizeAbortCode(num, userTag);
-              const tmp18Result = tmp18(9175);
+              let humanizeAbortCodeResult = tmp18(10007).humanizeAbortCode(num, userTag);
+              const tmp18Result = tmp18(10007);
             } else {
-              const intl = tmp18(1114).intl;
-              humanizeAbortCodeResult = intl.string(tmp18(1114).t.paDJBM);
+              const intl = tmp18(1115).intl;
+              humanizeAbortCodeResult = intl.string(tmp18(1115).t.paDJBM);
             }
             const obj3 = { title: null, body: null, confirmText: null };
-            const intl2 = tmp18(1114).intl;
-            obj3.title = intl2.string(tmp18(1114).t["6moJ8s"]);
+            const intl2 = tmp18(1115).intl;
+            obj3.title = intl2.string(tmp18(1115).t["6moJ8s"]);
             obj3.body = humanizeAbortCodeResult;
-            const intl3 = tmp18(1114).intl;
-            obj3.confirmText = intl3.string(tmp18(1114).t.BddRzS);
-            tmp18(5634).closeContextMenu();
-            const tmp18Result2 = tmp18(5634);
+            const intl3 = tmp18(1115).intl;
+            obj3.confirmText = intl3.string(tmp18(1115).t.BddRzS);
+            tmp18(5770).closeContextMenu();
+            const tmp18Result2 = tmp18(5770);
             AlertActionCreatorsDefault.show(obj3);
           }
         }
@@ -91,7 +91,7 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
 }
 const Constants = fn(1074);
 ({ Endpoints: metroRequire, AbortCodes: closure_7, RelationshipTypes: closure_8 } = Constants);
-const ClearFriendRequestFilters = fn(9172).ClearFriendRequestFilters;
+const ClearFriendRequestFilters = fn(10004).ClearFriendRequestFilters;
 const RelationshipErrorUXConfig = { SHOW_ALWAYS: 0, [0]: "SHOW_ALWAYS", SHOW_ONLY_IF_ACTION_NEEDED: 1, [1]: "SHOW_ONLY_IF_ACTION_NEEDED" };
 let obj2 = {
   sendRequest(discordTag) {
@@ -102,15 +102,15 @@ let obj2 = {
       errorUxConfig = body.SHOW_ALWAYS;
     }
     [tmp3, tmp4] = str.split("#");
-    const HTTP = str(1270).HTTP;
+    const HTTP = str(1271).HTTP;
     const request = { url: closure_6.USER_RELATIONSHIPS(), body: null, context: null, oldFormErrors: true, rejectWithError: null };
     body = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
     request.body = body;
     request.context = context;
     const tmp2 = _slicedToArray(str.split("#"), 2);
-    request.rejectWithError = str(1270).rejectWithMigratedError();
-    const obj3 = str(1270);
+    request.rejectWithError = str(1271).rejectWithMigratedError();
+    const obj3 = str(1271);
     return HTTP.post(request).catch((error) => {
       handleRelationshipAddError(error, errorUxConfig, str);
     });
@@ -187,9 +187,9 @@ let obj2 = {
         tmp();
       }
     }).catch(() => {
-      const AccessibilityAnnouncer = closure_0(4488).AccessibilityAnnouncer;
-      const intl = closure_0(1114).intl;
-      AccessibilityAnnouncer.announce(intl.string(closure_0(1114).t.n6Jo3E));
+      const AccessibilityAnnouncer = closure_0(4607).AccessibilityAnnouncer;
+      const intl = closure_0(1115).intl;
+      AccessibilityAnnouncer.announce(intl.string(closure_0(1115).t.n6Jo3E));
     });
   },
   updateRelationship(userId, c0) {
@@ -255,10 +255,10 @@ let obj2 = {
       obj2 = DispatcherDefault;
       obj2.dispatch({ type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId, timestamp: Date.now() });
     }).catch(() => {
-      channelId(8522).showFailedToast();
-      const AccessibilityAnnouncer = userId(4488).AccessibilityAnnouncer;
-      const intl = userId(1114).intl;
-      AccessibilityAnnouncer.announce(intl.string(userId(1114).t.n6Jo3E));
+      channelId(8675).showFailedToast();
+      const AccessibilityAnnouncer = userId(4607).AccessibilityAnnouncer;
+      const intl = userId(1115).intl;
+      AccessibilityAnnouncer.announce(intl.string(userId(1115).t.n6Jo3E));
     });
   },
   unignoreUser(id, newestAnalyticsLocation, id2) {
@@ -274,10 +274,10 @@ let obj2 = {
       const intl = util.intl;
       AccessibilityAnnouncer.announce(intl.string(util.t.QlH5w6));
     }).catch(() => {
-      id2(8522).showFailedToast();
-      const AccessibilityAnnouncer = id(4488).AccessibilityAnnouncer;
-      const intl = id(1114).intl;
-      AccessibilityAnnouncer.announce(intl.string(id(1114).t.n6Jo3E));
+      id2(8675).showFailedToast();
+      const AccessibilityAnnouncer = id(4607).AccessibilityAnnouncer;
+      const intl = id(1115).intl;
+      AccessibilityAnnouncer.announce(intl.string(id(1115).t.n6Jo3E));
     });
   }
 };

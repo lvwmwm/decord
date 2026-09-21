@@ -1,13 +1,13 @@
-// Module ID: 5177
-// Function ID: 5178
+// Module ID: 5314
+// Function ID: 5315
 // Name: StageLockIcon
-// Dependencies: [19, 21, 576, 4337, 5124, 2]
+// Dependencies: [19, 21, 576, 4456, 5254, 2]
 // Exports: StageLockIcon
 
-// Module 5177 (StageLockIcon)
+// Module 5314 (StageLockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod5124 from "module_5124" /* 5124 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod5254 from "module_5254" /* 5254 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StageLockIcon = function StageLockIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5124, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5254, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

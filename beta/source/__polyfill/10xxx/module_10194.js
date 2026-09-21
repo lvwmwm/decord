@@ -1,9 +1,9 @@
 // Module ID: 10194
 // Function ID: 10195
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10194
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "436501dcf3af209f85edbd0cde1cf184", name: "ic_vr_headset_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f9f36b748bcc7c6393cf056bc860ba1e", name: "HandRequestSpeakIcon", type: "png" });

@@ -1,17 +1,17 @@
-// Module ID: 12498
-// Function ID: 12499
+// Module ID: 12619
+// Function ID: 12620
 // Name: SearchPeopleTabStore
-// Dependencies: [1957, 5590, 12, 12499, 10994, 1114, 504, 573, 2]
+// Dependencies: [2041, 5726, 12, 12620, 11124, 1115, 504, 573, 2]
 
-// Module 12498 (SearchPeopleTabStore)
+// Module 12619 (SearchPeopleTabStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import useUserListData from "useUserListData" /* 10994 */;
-import NewMessageUserList from "NewMessageUserList" /* 12499 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import FrecencyStore from "FrecencyStore" /* 5590 */;
+import util from "util" /* 1115 */;
+import useUserListData from "useUserListData" /* 11124 */;
+import NewMessageUserList from "NewMessageUserList" /* 12620 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import FrecencyStore from "FrecencyStore" /* 5726 */;
 
 require = fn;
 let closure_5 = [];
@@ -52,7 +52,7 @@ prototype["search"] = function search(str) {
       let items = [];
     } else {
       const values = _modDef12.chain(ChannelStore.getMutablePrivateChannels()).values();
-      const found = values.filter(trimmed1(12499).filterGroupDMs);
+      const found = values.filter(trimmed1(12620).filterGroupDMs);
       const mapped = found.map((id) => {
         const items = [id, NewMessageUserList.matchGroupDM(id, trimmed1), FrecencyStore.getScoreWithoutFetchingLatest(id.id)];
         return items;
@@ -92,8 +92,8 @@ prototype["processResults"] = function processResults() {
     arr3 = result;
     if ("" !== self.searchQueryString) {
       const obj3 = { title: null, items: null };
-      let intl = tmp(1114).intl;
-      obj3.title = intl.string(tmp(1114).t.qGlQrW);
+      let intl = tmp(1115).intl;
+      obj3.title = intl.string(tmp(1115).t.qGlQrW);
       obj3.items = self.groupDMs;
       const findIndexResult = result.findIndex((title) => {
         const intl = util.intl;

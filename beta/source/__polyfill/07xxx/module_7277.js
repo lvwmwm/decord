@@ -1,9 +1,17 @@
 // Module ID: 7277
 // Function ID: 7278
-// Dependencies: [1120]
+// Dependencies: []
+// Exports: findLastIndex
 
 // Module 7277
-import registerAsset from "module_1120" /* 1120 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 80, height: 80, scales: [2, 3], hash: "900d6a1aeefc6f4c571ad9d81203dc5c", name: "img_nitro_classic_icon_80px", type: "png" });
+export const findLastIndex = function findLastIndex(arg0, fn) {
+  let diff = arg0.length - 1;
+  if (0 <= diff) {
+    while (!fn(arg0[diff])) {
+      diff = diff - 1;
+    }
+    return diff;
+  }
+  return -1;
+};

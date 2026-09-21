@@ -1,16 +1,16 @@
-// Module ID: 7958
-// Function ID: 7959
+// Module ID: 8099
+// Function ID: 8100
 // Name: hasForLaterPremiumType
-// Dependencies: [1371, 1373, 1885, 504, 2]
+// Dependencies: [1372, 1374, 1969, 504, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 7958 (hasForLaterPremiumType)
+// Module 8099 (hasForLaterPremiumType)
 import initialize from "initialize" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1885 */;
-import UserStore from "UserStore" /* 1371 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");
 

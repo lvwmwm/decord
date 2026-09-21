@@ -1,30 +1,30 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 18252
+// Function ID: 18253
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 1957, 9951, 1979, 4275, 1074, 21, 4636, 576, 1483, 504, 38, 12, 17911, 9956, 4980, 1114, 5073, 573, 7480, 8716, 17912, 9952, 1248, 5705, 7103, 2]
+// Dependencies: [32, 19, 2041, 10077, 2063, 4395, 1074, 21, 4756, 576, 1484, 504, 38, 12, 18253, 10082, 5108, 1115, 5203, 573, 7619, 8871, 18254, 10078, 1249, 5841, 7245, 2]
 // Exports: default
 
-// Module 17910 (InviteSettingsModal)
+// Module 18252 (InviteSettingsModal)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
-import Navigator from "Navigator" /* 7103 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 9956 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 17911 */;
+import util from "util" /* 1115 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import Navigator from "Navigator" /* 7245 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10082 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18253 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9951 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10077 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 
 require = fn;
 function AdvancedInstantInviteScreen() {
   let tmp = closure_12();
-  navigation = navigation(1483).useNavigation();
-  let obj = navigation(1483);
+  navigation = navigation(1484).useNavigation();
+  let obj = navigation(1484);
   const items = [ChannelStore, CreateInviteModalStore, GuildStore];
   const stateFromStoresObject = navigation(504).useStateFromStoresObject(items, () => {
     const pendingSettings = CreateInviteModalStore.getPendingSettings();
@@ -64,7 +64,7 @@ function AdvancedInstantInviteScreen() {
         const obj3 = { channelId: invitableChannelForGuild.channel.id };
         CreateInviteModalActionCreatorsDefault.updateSettings(obj3);
       } else {
-        const obj5 = { title: null, body: null, onConfirm: null };
+        const obj5 = { title: null, body: null, onConfirm: null, isDismissable: false };
         const intl = util.intl;
         obj5.title = intl.string(util.t.VINpSK);
         const intl2 = util.intl;
@@ -75,8 +75,8 @@ function AdvancedInstantInviteScreen() {
     }
   }, items1);
   const tmp2Result = navigation(12);
-  const unmountEffect = navigation(5073).useUnmountEffect(() => {
-    channel(573).wait(channel(9956).resetSettings);
+  const unmountEffect = navigation(5203).useUnmountEffect(() => {
+    channel(573).wait(channel(10082).resetSettings);
   });
   const items2 = [channel];
   callback = obj3.useCallback(() => {
@@ -86,7 +86,7 @@ function AdvancedInstantInviteScreen() {
         CreateInviteModalActionCreatorsDefault.close();
       }
     }
-    const obj2 = { title: null, body: null, onConfirm: null };
+    const obj2 = { title: null, body: null, onConfirm: null, isDismissable: false };
     const intl = util.intl;
     obj2.title = intl.string(util.t.VINpSK);
     const intl2 = util.intl;
@@ -101,46 +101,46 @@ function AdvancedInstantInviteScreen() {
         let tmp;
         if (dependencyMap) {
           const obj = { onPress, text: null };
-          const intl = navigation(1114).intl;
-          obj.text = intl.string(navigation(1114).t["R3BPH+"]);
-          tmp = jsx(navigation(7480).HeaderActionButton, { onPress, text: null });
+          const intl = navigation(1115).intl;
+          obj.text = intl.string(navigation(1115).t["R3BPH+"]);
+          tmp = jsx(navigation(7619).HeaderActionButton, { onPress, text: null });
         }
         return tmp;
       }
     });
   }, items3);
   const callback1 = obj3.useCallback((maxUses) => {
-    channel(9956).updateSettings({ maxUses });
+    channel(10082).updateSettings({ maxUses });
   }, []);
   const callback2 = obj3.useCallback((maxAge) => {
-    channel(9956).updateSettings({ maxAge });
+    channel(10082).updateSettings({ maxAge });
   }, []);
   const callback3 = obj3.useCallback((temporary) => {
-    channel(9956).updateSettings({ temporary });
+    channel(10082).updateSettings({ temporary });
   }, []);
   const callback4 = obj3.useCallback((flags) => {
-    channel(9956).updateSettings({ flags });
+    channel(10082).updateSettings({ flags });
   }, []);
   const callback5 = obj3.useCallback((roleIds) => {
-    channel(9956).updateSettings({ roleIds });
+    channel(10082).updateSettings({ roleIds });
   }, []);
   let obj4 = { contentContainerStyle: tmp.formContainer, children: null };
   let obj5 = { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null };
-  const tmp2Result2 = navigation(5073);
-  obj5.maxUsesOptions = channel(9952).getMaxUsesOptions;
+  const tmp2Result2 = navigation(5203);
+  obj5.maxUsesOptions = channel(10078).getMaxUsesOptions;
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   obj5.onChangeMaxAge = callback2;
   obj5.onChangeMaxUses = callback1;
   obj5.onChangeTemporary = callback3;
   obj5.onChangeFlags = callback4;
   obj5.onChangeRoleIds = callback5;
-  obj4.children = jsx(channel(17912), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
-  return jsx(navigation(8716).Form, { contentContainerStyle: tmp.formContainer, children: null });
+  obj4.children = jsx(channel(18254), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
+  return jsx(navigation(8871).Form, { contentContainerStyle: tmp.formContainer, children: null });
 }
 const Constants = fn(1074);
 ({ InviteModalScenes: closure_9, Permissions: c10 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { formContainer: { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 }, formContent: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
 obj2.formContent = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };

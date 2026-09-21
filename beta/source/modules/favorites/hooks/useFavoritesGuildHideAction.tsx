@@ -1,15 +1,15 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16477
+// Function ID: 16478
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4458, 1074, 10353, 10352, 1982, 1100, 1114, 3236, 2]
+// Dependencies: [19, 4577, 1074, 10482, 10481, 2066, 1101, 1115, 3324, 2]
 // Exports: default
 
-// Module 16235 (useFavoritesGuildHideAction)
-import router_utils from "router_utils" /* 1100 */;
-import _modDef3236 from "module_3236" /* 3236 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10352 */;
+// Module 16477 (useFavoritesGuildHideAction)
+import router_utils from "router_utils" /* 1101 */;
+import _modDef3324 from "module_3324" /* 3324 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10481 */;
 import noop from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 
 require = fn;
 const Routes = fn(1074).Routes;
@@ -17,7 +17,7 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
 
 export default function useFavoritesGuildHideAction() {
-  hasAccess = hasAccess(10353).useFavoritesAccess().hasAccess;
+  hasAccess = hasAccess(10482).useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   const obj2 = { isPreview: !hasAccess, label: null, subLabel: null, perform: null };
   const callback = noop.useCallback(() => {
@@ -28,17 +28,17 @@ export default function useFavoritesGuildHideAction() {
       router_utils.transitionTo(Routes.ME);
     }
   }, items);
-  const intl = hasAccess(1114).intl;
+  const intl = hasAccess(1115).intl;
   if (hasAccess) {
-    let ojM1xJ = _modDef3236["8FO0y9"];
+    let ojM1xJ = _modDef3324["8FO0y9"];
   } else {
-    ojM1xJ = tmp(1114).t.ojM1xJ;
+    ojM1xJ = tmp(1115).t.ojM1xJ;
   }
   obj2.label = intl.string(ojM1xJ);
   let stringResult;
   if (hasAccess) {
-    const intl2 = tmp(1114).intl;
-    stringResult = intl2.string(_modDef3236.FaHxWl);
+    const intl2 = tmp(1115).intl;
+    stringResult = intl2.string(_modDef3324.FaHxWl);
   }
   obj2.subLabel = stringResult;
   obj2.perform = callback;

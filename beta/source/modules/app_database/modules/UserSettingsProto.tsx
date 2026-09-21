@@ -1,12 +1,12 @@
-// Module ID: 7592
-// Function ID: 7593
+// Module ID: 7731
+// Function ID: 7732
 // Name: UserSettingsProto
-// Dependencies: [5, 1219, 502, 3, 1986, 2003, 12, 2]
+// Dependencies: [5, 1220, 502, 3, 2070, 2087, 12, 2]
 
-// Module 7592 (UserSettingsProto)
+// Module 7731 (UserSettingsProto)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import apply from "module_12" /* 12 */;
 
@@ -36,7 +36,7 @@ class UserSettingsProto {
       if (databaseResult != null) {
         databaseResult.transaction((database) => {
           const state = closure_1_3.computeState();
-          const result = closure_1_0(1986).userSettingsTransaction(database);
+          const result = closure_1_0(2070).userSettingsTransaction(database);
           for (const key10014 in state) {
             obj2 = { id: null, value: null };
             let _Number = Number;
@@ -53,8 +53,8 @@ class UserSettingsProto {
           if (num == null) {
             num = -1;
           }
-          obj = closure_1_0(1986);
-          const result1 = closure_1_0(1986).nonGuildVersionsTransaction(database);
+          obj = closure_1_0(2070);
+          const result1 = closure_1_0(2070).nonGuildVersionsTransaction(database);
           result1.put({ id: "user_settings_version", version: num });
         }, "handleUserSettingsProtoChange");
       }
@@ -170,7 +170,7 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
   if (databaseResult != null) {
     databaseResult.transaction((database) => {
       const state = closure_1_3.computeState();
-      const result = closure_1_0(1986).userSettingsTransaction(database);
+      const result = closure_1_0(2070).userSettingsTransaction(database);
       for (const key10014 in state) {
         obj2 = { id: null, value: null };
         let _Number = Number;
@@ -187,8 +187,8 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
       if (num == null) {
         num = -1;
       }
-      obj = closure_1_0(1986);
-      const result1 = closure_1_0(1986).nonGuildVersionsTransaction(database);
+      obj = closure_1_0(2070);
+      const result1 = closure_1_0(2070).nonGuildVersionsTransaction(database);
       result1.put({ id: "user_settings_version", version: num });
     }, "handleUserSettingsProtoChange");
   }

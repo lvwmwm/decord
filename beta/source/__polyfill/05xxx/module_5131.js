@@ -1,9 +1,32 @@
 // Module ID: 5131
 // Function ID: 5132
-// Dependencies: [1120]
+// Dependencies: [17]
+// Exports: parseAndroidIconToNativeProps
 
 // Module 5131
-import registerAsset from "module_1120" /* 1120 */;
+import _mod17 from "module_17" /* 17 */;
 
+const Image = _mod17.Image;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "321fcdfdc6f79caac89fae29f0991750", name: "ForumWarningIcon", type: "png" });
+export const parseAndroidIconToNativeProps = function parseAndroidIconToNativeProps(icon) {
+  if (icon) {
+    if ("imageSource" === icon.type) {
+      const assetSource = Image.resolveAssetSource(icon.imageSource);
+      if (!assetSource) {
+        const _console = console;
+        console.error("[RNScreens] Failed to resolve an asset.");
+      }
+      const obj2 = { imageIconResource: assetSource };
+      return obj2;
+    } else if ("drawableResource" === icon.type) {
+      const obj = { drawableIconResourceName: icon.name };
+      return obj;
+    } else {
+      const _Error = Error;
+      const error = new Error("[RNScreens] Incorrect icon format for Android. You must provide `imageSource` or `drawableResource`.");
+      throw error;
+    }
+  } else {
+    return {};
+  }
+};

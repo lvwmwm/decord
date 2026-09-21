@@ -1,15 +1,15 @@
-// Module ID: 13979
-// Function ID: 13980
+// Module ID: 14159
+// Function ID: 14160
 // Name: RoleSubscriptionsOnboardingGuildPickerFeatureSpec
-// Dependencies: [4552, 1975, 1114, 504, 7363, 7364, 4268, 2]
+// Dependencies: [4671, 2059, 1115, 504, 7502, 7503, 4388, 2]
 
-// Module 13979 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
+// Module 14159 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import ExperimentStore from "ExperimentStore" /* 4552 */;
+import util from "util" /* 1115 */;
+import ExperimentStore from "ExperimentStore" /* 4671 */;
 
 require = fn;
-const isGuildOwner = fn(1975).isGuildOwner;
+const isGuildOwner = fn(2059).isGuildOwner;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsOnboardingGuildPickerFeatureSpec.tsx");
 
@@ -29,12 +29,12 @@ export default {
       let result = closure_1_3(guild, arg1);
       if (result) {
         const obj2 = { guild, isOwner: true, canManageGuildRoleSubscriptions: true, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
-        const obj = closure_1_0(7363);
-        obj2.isUserInCreatorMonetizationEligibleCountry = closure_1_0(7364).isUserInCreatorMonetizationEligibleCountry();
-        const obj3 = closure_1_0(7364);
-        obj2.shouldRestrictUpdatingRoleSubscriptionSettings = closure_1_0(4268).shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
+        const obj = closure_1_0(7502);
+        obj2.isUserInCreatorMonetizationEligibleCountry = closure_1_0(7503).isUserInCreatorMonetizationEligibleCountry();
+        const obj3 = closure_1_0(7503);
+        obj2.shouldRestrictUpdatingRoleSubscriptionSettings = closure_1_0(4388).shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj2);
-        const obj4 = closure_1_0(4268);
+        const obj4 = closure_1_0(4388);
       }
       return result;
     }, [], initialize.statesWillNeverBeEqual);

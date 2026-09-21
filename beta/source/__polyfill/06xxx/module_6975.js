@@ -1,15 +1,16 @@
 // Module ID: 6975
 // Function ID: 6976
-// Dependencies: [6973]
-// Exports: getInvertedTransformStyle
+// Dependencies: [19]
+// Exports: useInterceptingDetectorContext
 
 // Module 6975
-import PlatformConfig2 from "PlatformConfig" /* 6973 */;
+import noop from "module_19" /* 19 */;
 
-require = arg1;
-const dependencyMap = arg6;
+const use = noop.use;
+const context = noop.createContext(null);
 
-export const getInvertedTransformStyle = function getInvertedTransformStyle(horizontal) {
-  const PlatformConfig = PlatformConfig2.PlatformConfig;
-  return horizontal ? PlatformConfig.invertedTransformStyleHorizontal : PlatformConfig.invertedTransformStyle;
+export const InterceptingDetectorMode = { DEFAULT: 0, [0]: "DEFAULT", ANIMATED: 1, [1]: "ANIMATED", REANIMATED: 2, [2]: "REANIMATED" };
+export const InterceptingDetectorContext = context;
+export const useInterceptingDetectorContext = function useInterceptingDetectorContext() {
+  return use(context);
 };

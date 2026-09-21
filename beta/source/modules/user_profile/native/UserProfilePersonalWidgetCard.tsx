@@ -1,18 +1,18 @@
-// Module ID: 8781
-// Function ID: 8782
+// Module ID: 8936
+// Function ID: 8937
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1074, 21, 4636, 576, 8782, 8783, 4632, 1114, 1935, 8784, 4347, 5668, 5068, 8371, 504, 7310, 8785, 8786, 2]
+// Dependencies: [32, 19, 17, 502, 1074, 21, 4756, 576, 8937, 8938, 4752, 1115, 2019, 8939, 4466, 5804, 5198, 8524, 504, 7452, 8940, 8941, 2]
 // Exports: default
 
-// Module 8781 (UserProfilePersonalWidgetCard)
+// Module 8936 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 4347 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import GifTagDefault from "GifTag" /* 8371 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8782 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8783 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 8784 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 4466 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import GifTagDefault from "GifTag" /* 8524 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8937 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8938 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 8939 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -45,10 +45,10 @@ function PersonalWidgetShowMoreButton() {
     accessibilityState: { expanded: isExpanded },
     children: null
   };
-  const intl = tmp(1114).intl;
-  let t = tmp(1114).t;
+  const intl = tmp(1115).intl;
+  let t = tmp(1115).t;
   const tmp6 = hasOwnProperty;
-  t = tmp5(tmp(4632).Text, { variant: "text-sm/medium", color: "text-subtle", children: intl.string(isExpanded ? t["6MwJo/"] : t.lBeKY2) });
+  t = tmp5(tmp(4752).Text, { variant: "text-sm/medium", color: "text-subtle", children: intl.string(isExpanded ? t["6MwJo/"] : t.lBeKY2) });
   obj2.children = t;
   closure_1_10(tmp6, obj2);
 }
@@ -136,8 +136,8 @@ function CoverSection(section) {
     const obj5 = { style: tmp.coverContainer, children: null };
     if (canToggleAnimation) {
       const obj6 = { style: timestampProducer.absoluteFill, onPress: toggleAnimation, accessibilityRole: "button", accessibilityLabel: null, children: null };
-      const intl = tmp25(1114).intl;
-      obj6.accessibilityLabel = intl.string(tmp25(1114).t.MxXgrL);
+      const intl = tmp25(1115).intl;
+      obj6.accessibilityLabel = intl.string(tmp25(1115).t.MxXgrL);
       const obj7 = { source, style: timestampProducer.absoluteFill, resizeMode: "cover" };
       obj6.children = tmp24(FastImageDefault, obj7);
       let tmp24Result = tmp24(hasOwnProperty, obj6);
@@ -155,7 +155,7 @@ function CoverSection(section) {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5068), obj9);
+        tmp24Result4 = tmp24(tmp14(5198), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -165,7 +165,7 @@ function CoverSection(section) {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8371), obj10);
+      tmp24Result5 = tmp24(tmp14(8524), obj10);
     }
     items2[3] = tmp24Result5;
     obj5.children = items2;
@@ -247,7 +247,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   let obj2 = { style: style.cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   let obj = userId(504);
   const tmp5 = disableInteraction;
-  obj2.titleLeadingIcon = closure_10(userId(8785).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj2.titleLeadingIcon = closure_10(userId(8940).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj2.title = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -255,7 +255,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   }
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(8786), obj3);
+    tmp4Result = tmp4(tmp5(8941), obj3);
   }
   obj2.trailingAction = tmp4Result;
   const obj4 = { style: tmp.sectionsContainer, children: null };
@@ -282,7 +282,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   items1[1] = tmp4Result2;
   obj4.children = items1;
   obj2.children = closure_11(closure_7, obj4);
-  return closure_10(disableInteraction(7310), obj2);
+  return closure_10(disableInteraction(7452), obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
@@ -292,7 +292,7 @@ const jsxProd = fn(21);
 const colors = ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0.5)", "#000"];
 const locations = [0, 0.4, 1];
 const hitSlop = { top: 8, bottom: 8, left: 8, right: 8 };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { coverContainer: { borderRadius: nativeDefault.radii.md, overflow: "hidden", justifyContent: "flex-end" }, coverContent: null, coverContentWithImage: null, sectionsContainer: null, fieldsContainer: null, fieldRow: null, fieldImage: null, fieldContent: null, gifTag: null, gifTagSmall: null };
 let obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", justifyContent: "flex-end" };
 obj2.coverContent = { gap: nativeDefault.space.PX_4 };

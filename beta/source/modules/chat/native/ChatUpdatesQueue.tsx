@@ -1,9 +1,9 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11733
+// Function ID: 11734
 // Name: ChatUpdatesQueue
 // Dependencies: [17, 2]
 
-// Module 11615 (ChatUpdatesQueue)
+// Module 11733 (ChatUpdatesQueue)
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

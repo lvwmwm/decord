@@ -1,16 +1,16 @@
-// Module ID: 13482
-// Function ID: 13483
+// Module ID: 13661
+// Function ID: 13662
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 7497, 1074, 21, 4636, 576, 7275, 4294, 1114, 3074, 9505, 4632, 504, 12, 2]
+// Dependencies: [19, 17, 7636, 1074, 21, 4756, 576, 7417, 4414, 1115, 3162, 9489, 4752, 504, 12, 2]
 // Exports: default
 
-// Module 13482 (PremiumAccountCredit)
+// Module 13661 (PremiumAccountCredit)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import util from "util" /* 1115 */;
+import PremiumUtils from "PremiumUtils" /* 4414 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7497 */;
+import EntitlementStore from "EntitlementStore" /* 7636 */;
 
 const PremiumUtilsDefault = PremiumUtils;
 
@@ -29,8 +29,8 @@ function AccountCreditTier(arg0) {
     displayName = obj4.getTierDisplayNameByPlanId(planId);
   }
   if (hasPremiumGroup) {
-    const intl3 = tmp2(1114).intl;
-    let stringResult = intl3.string(tmp4(3074)["5asczk"]);
+    const intl3 = tmp2(1115).intl;
+    let stringResult = intl3.string(tmp4(3162)["5asczk"]);
   } else {
     if (null != currentSubscription) {
       if (currentSubscription.planId === planId) {
@@ -39,22 +39,22 @@ function AccountCreditTier(arg0) {
             const _Date2 = Date;
             let date = new Date(currentSubscription.pauseEndsAt);
           }
-          let num = tmp2(4294).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
-          const intl2 = tmp2(1114).intl;
+          let num = tmp2(4414).extendDateWithUnconsumedFractionalPremium(date, unconsumedFractionalPremiumUnits);
+          const intl2 = tmp2(1115).intl;
           if (num == null) {
             num = 0;
           }
           const obj5 = { date: num };
-          stringResult = intl2.formatToPlainString(tmp2(1114).t["5CNRRA"], obj5);
-          const tmp2Result = tmp2(4294);
+          stringResult = intl2.formatToPlainString(tmp2(1115).t["5CNRRA"], obj5);
+          const tmp2Result = tmp2(4414);
         }
         const _Date = Date;
         date = new Date(currentSubscription.currentPeriodEnd);
       }
     }
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     const obj6 = { planName: displayName };
-    stringResult = intl.formatToPlainString(tmp2(1114).t.eNXZ5O, obj6);
+    stringResult = intl.formatToPlainString(tmp2(1115).t.eNXZ5O, obj6);
   }
   let tmp18 = result1;
   if (!result1) {
@@ -71,31 +71,31 @@ function AccountCreditTier(arg0) {
   if (result1) {
     const obj8 = { style: tmp.boostIcon, children: null };
     const obj9 = { size: "md", color: tmp4(576).unsafe_rawColors.GUILD_BOOSTING_PINK };
-    obj8.children = tmp24(tmp2(9505).BoostGemIcon, obj9);
+    obj8.children = tmp24(tmp2(9489).BoostGemIcon, obj9);
     let tmp24Result = tmp24(tmp22, obj8);
     let tmp27 = tmp24;
   } else {
-    const obj10 = { size: tmp2(7275).GameIconSizes.SMALL, skuId: result };
-    tmp24Result = tmp24(tmp4(7275), obj10);
+    const obj10 = { size: tmp2(7417).GameIconSizes.SMALL, skuId: result };
+    tmp24Result = tmp24(tmp4(7417), obj10);
     tmp27 = tmp24;
-    const tmp4Result = tmp4(7275);
+    const tmp4Result = tmp4(7417);
   }
   const items1 = [tmp24Result, , ];
   const obj11 = { style: tmp.textContainer, children: null };
   const obj12 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl4 = tmp2(1114).intl;
+  const intl4 = tmp2(1115).intl;
   obj12.children = intl4.format(util.t.LzobT9, { planName: displayName });
   const items2 = [tmp27(Text_Text.Text, obj12), ];
   let tmp27Result = !tmp18;
   if (!tmp18) {
     const obj13 = { style: tmp.subText, variant: "text-xs/medium", color: "text-default", children: stringResult };
-    tmp27Result = tmp27(tmp2(4632).Text, obj13);
+    tmp27Result = tmp27(tmp2(4752).Text, obj13);
   }
   items2[1] = tmp27Result;
   obj11.children = items2;
   items1[1] = React5(View, obj11);
   const obj14 = { style: tmp.timeText, variant: "text-md/medium", color: "text-default", children: null };
-  const intl5 = tmp2(1114).intl;
+  const intl5 = tmp2(1115).intl;
   obj14.children = intl5.format(util.t["ess/xl"], { count: months });
   items1[2] = tmp27(Text_Text.Text, obj14);
   obj7.children = items1;
@@ -105,9 +105,9 @@ const View = fn(17).View;
 const SubscriptionStatusTypes = fn(1074).SubscriptionStatusTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { title: { marginBottom: 12 }, creditList: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, creditItem: { flexDirection: "row", alignItems: "center", padding: 16 }, boostIcon: null, textContainer: null, headerText: null, subText: null, timeText: null, divider: null, creditDescription: null };
-let size = { width: fn(7275).GameIconImageSize[fn(undefined, 7275).GameIconSizes.SMALL], height: fn(7275).GameIconImageSize[fn(undefined, 7275).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
+let size = { width: fn(7417).GameIconImageSize[fn(undefined, 7417).GameIconSizes.SMALL], height: fn(7417).GameIconImageSize[fn(undefined, 7417).GameIconSizes.SMALL], alignItems: "center", justifyContent: "center" };
 obj2.boostIcon = size;
 obj2.textContainer = { marginLeft: 16, marginRight: 16, flexDirection: "column", flex: 1 };
 obj2.headerText = { lineHeight: 20 };
@@ -147,9 +147,9 @@ export default function PremiumAccountCredit(currentSubscription) {
       c3 = valueResult;
       const obj2 = { style, children: null };
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
-      const intl = tmp2(1114).intl;
-      obj3.children = intl.string(tmp2(1114).t.YugZY0);
-      const items1 = [closure_6(tmp2(4632).Text, obj3), , , ];
+      const intl = tmp2(1115).intl;
+      obj3.children = intl.string(tmp2(1115).t.YugZY0);
+      const items1 = [closure_6(tmp2(4752).Text, obj3), , , ];
       const obj4 = { style: null, children: null };
       const items2 = [tmp.creditList, creditListContainerStyle];
       obj4.style = items2;
@@ -161,17 +161,17 @@ export default function PremiumAccountCredit(currentSubscription) {
       });
       items1[1] = closure_6(c3, obj4);
       const obj5 = { style: tmp.creditDescription, variant: "text-sm/medium", children: null };
-      const intl2 = tmp2(1114).intl;
-      obj5.children = intl2.string(tmp2(1114).t.Z5b2Gf);
-      items1[2] = closure_6(tmp2(4632).Text, obj5);
+      const intl2 = tmp2(1115).intl;
+      obj5.children = intl2.string(tmp2(1115).t.Z5b2Gf);
+      items1[2] = closure_6(tmp2(4752).Text, obj5);
       let tmp9Result = null;
       if (null != currentSubscription) {
         tmp9Result = null;
         if (currentSubscription.isPurchasedExternally) {
           const obj6 = { style: tmp.creditDescription, variant: "text-sm/medium", children: null };
-          const intl3 = tmp2(1114).intl;
-          obj6.children = intl3.string(tmp2(1114).t.azRP0E);
-          tmp9Result = closure_6(tmp2(4632).Text, obj6);
+          const intl3 = tmp2(1115).intl;
+          obj6.children = intl3.string(tmp2(1115).t.azRP0E);
+          tmp9Result = closure_6(tmp2(4752).Text, obj6);
         }
       }
       items1[3] = tmp9Result;

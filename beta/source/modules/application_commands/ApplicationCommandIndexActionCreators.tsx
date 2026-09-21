@@ -1,10 +1,10 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9408
+// Function ID: 9409
 // Name: ApplicationCommandIndexActionCreators
-// Dependencies: [5, 1074, 573, 1270, 1090, 1240, 1369, 2]
+// Dependencies: [5, 1074, 573, 1271, 1091, 1241, 1370, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 9423 (ApplicationCommandIndexActionCreators)
+// Module 9408 (ApplicationCommandIndexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -182,7 +182,7 @@ let closure_6 = async function _fetchApplicationCommandIndex(arg0, arg1) {
                   end({ error: true });
                 } else if (429 === status.status) {
                   failure_statuses.push(429);
-                  let dispatchResult = retry(status.body.retry_after * closure_1(1090).Millis.SECOND);
+                  let dispatchResult = retry(status.body.retry_after * closure_1(1091).Millis.SECOND);
                 } else {
                   let num2 = status.status;
                   if (num2 == null) {

@@ -1,28 +1,28 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9707
+// Function ID: 9708
 // Name: StreamQualityUtils
-// Dependencies: [19, 4682, 502, 1979, 4659, 1371, 1074, 4683, 1373, 4661, 1114, 504, 4772, 1240, 2]
+// Dependencies: [19, 4802, 502, 2063, 4779, 1372, 1074, 4803, 1374, 4781, 1115, 504, 4892, 1241, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9238 (StreamQualityUtils)
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4772 */;
+// Module 9707 (StreamQualityUtils)
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4892 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4682 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4802 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const StreamSettingsConstants = fn(4683);
+const StreamSettingsConstants = fn(4803);
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: closure_11, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = StreamSettingsConstants);
-let closure_15 = fn(1373).StreamQualitiesToPremiumType;
-const ResolutionTypes = fn(4661).ResolutionTypes;
+let closure_15 = fn(1374).StreamQualitiesToPremiumType;
+const ResolutionTypes = fn(4781).ResolutionTypes;
 let size = fn(2);
 const result = size.fileFinishedImporting("utils/StreamQualityUtils.tsx");
 

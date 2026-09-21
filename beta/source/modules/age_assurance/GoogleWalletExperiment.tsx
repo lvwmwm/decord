@@ -1,11 +1,11 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8860
+// Function ID: 8861
 // Name: GoogleWalletExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled
 
-// Module 8706 (GoogleWalletExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 8860 (GoogleWalletExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-03-age-verification-google-wallet", defaultConfig: { enabled: false }, variations: null };

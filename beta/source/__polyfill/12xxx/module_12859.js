@@ -1,9 +1,9 @@
 // Module ID: 12859
 // Function ID: 12860
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 12859
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 192.33333333333334, height: 416, scales: [3], hash: "313fd6dabf823cbd5c0b9608bb8b54d4", name: "invite-bg", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 240, height: 130, scales: [2, 3], hash: "bf9007773f0fafb040422c6eba8b56d6", name: "no_mutual_servers_darker", type: "png" });

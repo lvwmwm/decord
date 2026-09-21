@@ -1,14 +1,14 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7563
+// Function ID: 7564
 // Name: LurkerActionCreators
-// Dependencies: [5, 4659, 4276, 1074, 573, 1270, 1369, 2]
+// Dependencies: [5, 4779, 4396, 1074, 573, 1271, 1370, 2]
 // Exports: stopLurking
 
-// Module 7424 (LurkerActionCreators)
+// Module 7563 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import LurkingStore from "LurkingStore" /* 4276 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import LurkingStore from "LurkingStore" /* 4396 */;
 
 const require = fn;
 function stopLurkingAll() {
@@ -69,7 +69,7 @@ let closure_8 = async function _stopLurkingAll(arg0, value) {
                               _null = null;
                             }
                             closure_130_1 = _null;
-                            const HTTP = closure_0(1270).HTTP;
+                            const HTTP = closure_0(1271).HTTP;
                             const request = { url: closure_2_6.GUILD_LEAVE(closure_0), body: { lurking: true }, oldFormErrors: true, rejectWithError: true };
                             yield HTTP.del(request);
                             if (1 === tmp8) {

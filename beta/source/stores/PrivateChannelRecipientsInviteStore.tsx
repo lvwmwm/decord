@@ -1,23 +1,23 @@
-// Module ID: 13844
-// Function ID: 13845
+// Module ID: 14023
+// Function ID: 14024
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [4552, 7761, 1961, 1957, 6696, 5590, 2021, 1979, 4285, 1371, 1074, 1925, 4481, 9969, 504, 573, 2]
+// Dependencies: [4671, 7895, 2045, 2041, 6836, 5726, 2105, 2063, 4405, 1372, 1074, 2009, 4600, 10095, 504, 573, 2]
 
-// Module 13844 (PrivateChannelRecipientsInviteStore)
+// Module 14023 (PrivateChannelRecipientsInviteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import StringUtils from "StringUtils" /* 1925 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9969 */;
-import ExperimentStore from "ExperimentStore" /* 4552 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7761 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import ConsentStore from "ConsentStore" /* 6696 */;
-import FrecencyStore from "FrecencyStore" /* 5590 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import StringUtils from "StringUtils" /* 2009 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10095 */;
+import ExperimentStore from "ExperimentStore" /* 4671 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
+import FrecencyStore from "FrecencyStore" /* 5726 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function performQuery() {
@@ -224,7 +224,7 @@ function handleActionSheetDismiss(key) {
 function performQueryOnAffinityChange() {
   return false;
 }
-const PrivateChannelRecord = fn(1961).PrivateChannelRecord;
+const PrivateChannelRecord = fn(2045).PrivateChannelRecord;
 const Constants = fn(1074);
 ({ NEW_GROUP_DM_POPOUT_ID: closure_14, Consents } = Constants);
 let c15 = false;

@@ -1,29 +1,29 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18342
+// Function ID: 18343
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4636, 576, 4331, 8539, 8540, 5054, 4632, 1114, 2690, 12060, 17987, 11132, 8701, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4451, 8693, 8694, 5184, 4752, 1115, 2776, 12181, 18329, 11262, 8855, 2]
 // Exports: default
 
-// Module 18000 (AppStoreParentalRevocationScreen)
+// Module 18342 (AppStoreParentalRevocationScreen)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import _modDef2690 from "module_2690" /* 2690 */;
-import LinkingDefault from "Linking" /* 4331 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import ModalScreen from "ModalScreen" /* 8539 */;
-import ModalContent from "ModalContent" /* 8540 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8701 */;
-import ModalActionButton from "ModalActionButton" /* 11132 */;
-import ModalFooter from "ModalFooter" /* 12060 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17987 */;
+import util from "util" /* 1115 */;
+import _modDef2776 from "module_2776" /* 2776 */;
+import LinkingDefault from "Linking" /* 4451 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import ModalScreen from "ModalScreen" /* 8693 */;
+import ModalContent from "ModalContent" /* 8694 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8855 */;
+import ModalActionButton from "ModalActionButton" /* 11262 */;
+import ModalFooter from "ModalFooter" /* 12181 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18329 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { content: { flexGrow: 1, width: "100%" }, upperHalf: { flex: 1, justifyContent: "flex-end", alignItems: "center" }, lowerHalf: { flex: 1 }, text: { textAlign: "center" }, body: { paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -41,16 +41,16 @@ export default function AppStoreParentalRevocationScreen() {
   const obj5 = { align: "center", spacing: nativeDefault.space.PX_16, children: null };
   const obj6 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = util.intl;
-  obj6.children = intl.string(_modDef2690.Z87TFb);
+  obj6.children = intl.string(_modDef2776.Z87TFb);
   const items = [hasOwnProperty(Text_Text.Text, obj6), ];
   const obj7 = { align: "center", spacing: nativeDefault.space.PX_16, style: tmp.body, children: null };
   const obj8 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: null };
   const intl2 = util.intl;
-  obj8.children = intl2.string(_modDef2690.VS98dM);
+  obj8.children = intl2.string(_modDef2776.VS98dM);
   const items1 = [hasOwnProperty(Text_Text.Text, obj8), ];
   const obj9 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: null };
   const intl3 = util.intl;
-  obj9.children = intl3.string(_modDef2690.BaI6L4);
+  obj9.children = intl3.string(_modDef2776.BaI6L4);
   items1[1] = hasOwnProperty(Text_Text.Text, obj9);
   obj7.children = items1;
   items[1] = timestampProducer(Stack_Stack.Stack, obj7);
@@ -64,7 +64,7 @@ export default function AppStoreParentalRevocationScreen() {
   const items4 = [hasOwnProperty(LogOutDisclaimerDefault, {}), ];
   const obj12 = { variant: "primary", text: null, icon: null, iconPosition: "end", onPress: null };
   const intl4 = util.intl;
-  obj12.text = intl4.string(_modDef2690["6FXIU6"]);
+  obj12.text = intl4.string(_modDef2776["6FXIU6"]);
   obj12.icon = hasOwnProperty(LinkExternalSmallIcon.LinkExternalSmallIcon, { color: nativeDefault.colors.WHITE });
   obj12.onPress = callback;
   items4[1] = hasOwnProperty(ModalActionButton.ModalActionButton, obj12);

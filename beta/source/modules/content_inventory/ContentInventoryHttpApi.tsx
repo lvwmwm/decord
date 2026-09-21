@@ -1,12 +1,12 @@
-// Module ID: 13202
-// Function ID: 13203
+// Module ID: 13372
+// Function ID: 13373
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 8476, 1074, 1270, 4537, 573, 1114, 2]
+// Dependencies: [5, 8629, 1074, 1271, 4656, 573, 1115, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 13202 (ContentInventoryHttpApi)
+// Module 13372 (ContentInventoryHttpApi)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -311,7 +311,7 @@ let closure_9 = async function _postTrackToContentInventory(connection_id, arg1)
     }
   })();
 };
-const ContentInventoryFeedKey = fn(8476).ContentInventoryFeedKey;
+const ContentInventoryFeedKey = fn(8629).ContentInventoryFeedKey;
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryHttpApi.tsx");

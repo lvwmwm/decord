@@ -1,28 +1,28 @@
-// Module ID: 17795
-// Function ID: 17796
+// Module ID: 18137
+// Function ID: 18138
 // Name: GuildSettingsRoleSubscriptionsEmpty
-// Dependencies: [19, 1979, 1074, 1348, 21, 1483, 17796, 17797, 17798, 504, 2]
+// Dependencies: [19, 2063, 1074, 1349, 21, 1484, 18138, 18139, 18140, 504, 2]
 // Exports: default
 
-// Module 17795 (GuildSettingsRoleSubscriptionsEmpty)
-import useNavigation from "useNavigation" /* 1483 */;
-import PlaceholderDefault from "Placeholder" /* 17797 */;
+// Module 18137 (GuildSettingsRoleSubscriptionsEmpty)
+import useNavigation from "useNavigation" /* 1484 */;
+import PlaceholderDefault from "Placeholder" /* 18139 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   guild = guild.guild;
   const str = useNavigation.useNavigation();
   if (tmp3.loading) {
-    let tmp7 = jsx(tmp2(17797), {});
+    let tmp7 = jsx(tmp2(18139), {});
   } else {
     const features = guild.features;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
         const obj2 = { guild };
-        tmp7 = jsx(tmp2(17798), { guild });
+        tmp7 = jsx(tmp2(18140), { guild });
       }
     }
     if (null == tmp4) {
@@ -38,7 +38,7 @@ function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
 }
 const Constants = fn(1074);
 ({ GuildFeatures: closure_4, GuildSettingsSections: hasOwnProperty } = Constants);
-const ApplicationTypes = fn(1348).ApplicationTypes;
+const ApplicationTypes = fn(1349).ApplicationTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEmpty.tsx");

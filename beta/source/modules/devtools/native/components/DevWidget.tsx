@@ -1,19 +1,19 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16256
+// Function ID: 16257
 // Name: DevWidget
-// Dependencies: [19, 7821, 574, 21, 4636, 576, 4373, 11490, 12166, 6756, 5055, 5059, 5204, 14669, 15664, 16023, 15663, 2]
+// Dependencies: [19, 7955, 574, 21, 4756, 576, 4492, 11616, 12286, 6897, 5185, 5189, 5339, 14858, 15855, 16257, 15854, 2]
 // Exports: default
 
-// Module 16022 (DevWidget)
+// Module 16256 (DevWidget)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
-import springPresets from "springPresets" /* 5059 */;
-import Pressables from "Pressables" /* 5204 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15664 */;
-import VEVOODefault from "VEVOO" /* 16023 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import spring from "spring" /* 5185 */;
+import springPresets from "springPresets" /* 5189 */;
+import Pressables from "Pressables" /* 5339 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15855 */;
+import VEVOODefault from "VEVOO" /* 16257 */;
 import noop from "module_19" /* 19 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7821 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7955 */;
 
 const require = globalThis.__r;
 
@@ -134,7 +134,7 @@ function DraggableContainer(children) {
 const DEV_WIDGET_SIZE = fn(574).DEV_WIDGET_SIZE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { widgetContainer: { position: "absolute" }, widget: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center", height: DEV_WIDGET_SIZE, width: DEV_WIDGET_SIZE, borderRadius: nativeDefault.radii.xl };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_MOBILE_NAVIGATOR_X);

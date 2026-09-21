@@ -1,17 +1,18 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16967
+// Function ID: 16968
 // Name: FrameView
-// Dependencies: [32, 19, 9640, 9641, 1920, 21, 7266, 573, 9698, 16721, 9765, 16722, 16723, 9780, 504, 2]
+// Dependencies: [32, 19, 9313, 9314, 2004, 21, 7408, 573, 9562, 16968, 9723, 16969, 16970, 9738, 504, 16973, 2]
 // Exports: InlineFrameView
 
-// Module 16720 (FrameView)
+// Module 16967 (FrameView)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9698 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16721 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9562 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16968 */;
+import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 16973 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9640 */;
+import FramesStore from "FramesStore" /* 9313 */;
 
 require = fn;
 function FrameViewInner(frame) {
@@ -75,9 +76,9 @@ function FrameViewInner(frame) {
   }} applicationId={frame.applicationId} frameId={frame.id} activityUrl={frame.data.url} queryParams={null} onLoadError={null} allowPopups={null} referrerPolicy="origin" isPipOrGridMode={null} webViewKey={null} safeAreasConfig={null} />;
   return jsx(frame(setIsResetting[10]).BaseActivityView, { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null });
 }
-const FramesConstants = fn(9641);
+const FramesConstants = fn(9314);
 ({ asLaunched: metroRequire, FrameLayoutModes: closure_7 } = FramesConstants);
-const ActivityPlatform = fn(1920).ActivityPlatform;
+const ActivityPlatform = fn(2004).ActivityPlatform;
 const jsx = fn(21).jsx;
 const memoResult = noop.memo(function FrameViewGate(arg0) {
   const items = [FramesStore];
@@ -96,16 +97,25 @@ const result = size.fileFinishedImporting("modules/frames/native/FrameView.tsx")
 export default memoResult;
 export const InlineFrameView = function InlineFrameView(frameId) {
   frameId = frameId.frameId;
-  let tmp = null;
   const merged = Object.assign(frameId, Object.assign({ frameId: 0 }));
   const items = [FramesStore];
   const items1 = [frameId];
   const stateFromStores = frameId(504).useStateFromStores(items, () => timestampProducer(FramesStore.getFrame(frameId)), items1);
+  let applicationId;
+  const obj = frameId(504);
+  if (stateFromStores != null) {
+    applicationId = stateFromStores.applicationId;
+  }
+  if (applicationId == null) {
+    applicationId = null;
+  }
+  useInlineFrameOAuthNavigationDefault(applicationId);
+  let tmp6 = null;
   if (null != stateFromStores) {
     const obj2 = { frame: stateFromStores };
     const merged1 = Object.assign(merged);
-    tmp = <FrameViewInner frame={stateFromStores} />;
+    tmp6 = <FrameViewInner frame={stateFromStores} />;
   }
-  return tmp;
+  return tmp6;
 };
 export const FrameView = memoResult;

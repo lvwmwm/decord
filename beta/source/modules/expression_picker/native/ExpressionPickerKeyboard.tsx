@@ -1,18 +1,18 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16984
+// Function ID: 16985
 // Name: ExpressionPickerKeyboard
-// Dependencies: [32, 19, 12169, 21, 4373, 5043, 12561, 1874, 1609, 4504, 11493, 4347, 12212, 10405, 2]
+// Dependencies: [32, 19, 12289, 21, 4492, 5171, 12682, 1875, 1610, 4624, 11619, 4466, 12332, 10534, 2]
 
-// Module 16878 (ExpressionPickerKeyboard)
-import KeyboardTypes from "KeyboardTypes" /* 1609 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1874 */;
-import native from "native" /* 4347 */;
-import getEmojiTextDefault from "getEmojiText" /* 12561 */;
+// Module 16984 (ExpressionPickerKeyboard)
+import KeyboardTypes from "KeyboardTypes" /* 1610 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
+import native from "native" /* 4466 */;
+import getEmojiTextDefault from "getEmojiText" /* 12682 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const KEYBOARD_ANIMATION_CONFIG = fn(12169).KEYBOARD_ANIMATION_CONFIG;
+const KEYBOARD_ANIMATION_CONFIG = fn(12289).KEYBOARD_ANIMATION_CONFIG;
 const jsx = fn(21).jsx;
 let __initData = { code: "function ExpressionPickerKeyboardTsx1(){const{bottomSheetIndex}=this.__closure;return Math.max(bottomSheetIndex.get(),0)>0;}" };
 let closure_8 = { code: "function ExpressionPickerKeyboardTsx2(){const{bottomSheetExpandingOrExpanded,maximum,minimum}=this.__closure;return{height:bottomSheetExpandingOrExpanded.get()?maximum:minimum};}" };

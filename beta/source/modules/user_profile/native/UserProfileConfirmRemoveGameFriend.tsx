@@ -1,12 +1,12 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 12876
+// Function ID: 12877
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 8308, 11002, 4986, 1114, 4986, 2]
+// Dependencies: [19, 21, 8460, 11132, 5114, 1115, 5114, 2]
 // Exports: default
 
-// Module 12756 (UserProfileConfirmRemoveGameFriend)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8308 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11002 */;
+// Module 12876 (UserProfileConfirmRemoveGameFriend)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8460 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11132 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,21 +24,21 @@ export default function UserProfileConfirmRemoveGameFriend(gameName) {
     PeopleUtilsDefault.removeFriend({ userId, applicationId, location: "UserProfileConfirmRemoveGameFriend" });
   }, items);
   let obj = { title: null, content: null, actions: null };
-  const intl = userId(1114).intl;
-  obj.title = intl.formatToPlainString(userId(1114).t.fBKKfq, { name: userDisplayName });
-  const intl2 = userId(1114).intl;
-  obj.content = intl2.formatToPlainString(userId(1114).t.dsU5bl, { name: userDisplayName, gameName: gameName.gameName });
+  const intl = userId(1115).intl;
+  obj.title = intl.formatToPlainString(userId(1115).t.fBKKfq, { name: userDisplayName });
+  const intl2 = userId(1115).intl;
+  obj.content = intl2.formatToPlainString(userId(1115).t.dsU5bl, { name: userDisplayName, gameName: gameName.gameName });
   const obj2 = { children: null };
   const obj3 = { variant: "destructive", text: null, onPress: null };
-  const intl3 = userId(1114).intl;
-  obj3.text = intl3.string(userId(1114).t.RLcE6x);
+  const intl3 = userId(1115).intl;
+  obj3.text = intl3.string(userId(1115).t.RLcE6x);
   obj3.onPress = callback;
-  const items1 = [closure_4(userId(4986).AlertActionButton, obj3, "confirm-remove"), ];
+  const items1 = [closure_4(userId(5114).AlertActionButton, obj3, "confirm-remove"), ];
   const obj4 = { variant: "secondary", text: null };
-  const intl4 = userId(1114).intl;
-  obj4.text = intl4.string(userId(1114).t["eN6+rI"]);
-  items1[1] = closure_4(userId(4986).AlertActionButton, obj4, "nevermind");
+  const intl4 = userId(1115).intl;
+  obj4.text = intl4.string(userId(1115).t["eN6+rI"]);
+  items1[1] = closure_4(userId(5114).AlertActionButton, obj4, "nevermind");
   obj2.children = items1;
-  obj.actions = closure_5(userId(4986).AlertActions, obj2);
-  return closure_4(userId(4986).AlertModal, obj);
+  obj.actions = closure_5(userId(5114).AlertActions, obj2);
+  return closure_4(userId(5114).AlertModal, obj);
 };

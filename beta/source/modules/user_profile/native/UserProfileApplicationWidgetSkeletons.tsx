@@ -1,18 +1,18 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9292
+// Function ID: 9293
 // Name: UserProfileApplicationWidgetSkeletons
-// Dependencies: [19, 17, 21, 4636, 576, 4632, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4752, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 9143 (UserProfileApplicationWidgetSkeletons)
+// Module 9292 (UserProfileApplicationWidgetSkeletons)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { skeleton: { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL } };
 let closure_4 = createStyles.createStyles(obj2);
 let size = fn(2);

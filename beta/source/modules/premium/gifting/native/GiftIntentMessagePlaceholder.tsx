@@ -1,11 +1,11 @@
-// Module ID: 11951
-// Function ID: 11952
+// Module ID: 12071
+// Function ID: 12072
 // Name: GiftIntentMessagePlaceholder
-// Dependencies: [1114, 2]
+// Dependencies: [1115, 2]
 // Exports: getGiftIntentCustomMessagePlaceholder
 
-// Module 11951 (GiftIntentMessagePlaceholder)
-import util from "util" /* 1114 */;
+// Module 12071 (GiftIntentMessagePlaceholder)
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentMessagePlaceholder.tsx");

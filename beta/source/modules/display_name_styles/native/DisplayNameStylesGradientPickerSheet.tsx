@@ -1,14 +1,14 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15622
+// Function ID: 15623
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1074, 21, 4636, 576, 11034, 1388, 15431, 4604, 1240, 4603, 14683, 7253, 7252, 5056, 1114, 5068, 1091, 15436, 12, 5204, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 11163, 1389, 15618, 4724, 1241, 4723, 14871, 7395, 15615, 5186, 1115, 5198, 1092, 15623, 12, 5339, 2]
 // Exports: default
 
-// Module 15435 (DisplayNameStylesGradientPickerSheet)
+// Module 15622 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import HapticUtils from "HapticUtils" /* 4604 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import HapticUtils from "HapticUtils" /* 4724 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { body: { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 }, gradientContainer: null, dropperContainer: null, dropper: null, gradient: null, optionContainer: null, swatchWrapper: null, pressable: null, selected: null, option: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 };
 obj2.gradientContainer = { flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8 };
@@ -105,22 +105,23 @@ export default function DisplayNameStylesColorPickerSheet(selectedColors) {
   }, []);
   let obj3 = { header: null, children: null };
   let obj4 = { title: displayNameStylesEffectConfig.name, trailing: null };
+  let obj2 = onSelectColors(displayNameStylesEffectConfig[8]);
   const obj5 = { variant: "primary", size: "sm", text: null, onPress: null };
   let intl = onSelectColors(displayNameStylesEffectConfig[17]).intl;
   obj5.text = intl.string(onSelectColors(displayNameStylesEffectConfig[17]).t.XqMe3N);
   obj5.onPress = callback;
   obj4.trailing = closure_8(onSelectColors(displayNameStylesEffectConfig[16]).Button, obj5);
-  obj3.header = closure_8(onSelectColors(displayNameStylesEffectConfig[15]).BottomSheetTitleHeader, obj4);
+  obj3.header = closure_8(require("DisplayNameStylesSheetHeader"), obj4);
   const obj6 = { style: tmp.body, children: null };
   const obj7 = { style: tmp.gradientContainer, children: null };
   const obj8 = { style: tmp.gradient, colors: null, start: null, end: null };
-  let obj2 = onSelectColors(displayNameStylesEffectConfig[8]);
+  const tmp7 = require("DisplayNameStylesSheetHeader");
   obj8.colors = colors.map((item) => onSelectColors(displayNameStylesEffectConfig[19]).int2hex(item));
   obj8.start = { x: 0, y: 0 };
   obj8.end = { x: 1, y: 0 };
   const items3 = [closure_8(require("LinearGradient"), obj8), ];
   const obj9 = { style: tmp.dropperContainer, children: null };
-  const tmp7 = require("LinearGradient");
+  const tmp8 = require("LinearGradient");
   obj9.children = Array.from({ length: effectColorCount }).map((item, index) => {
     closure_0 = index;
     const obj = {

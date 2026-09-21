@@ -1,18 +1,18 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 9103
+// Function ID: 9104
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 8925, 7311, 21, 4636, 576, 8340, 4338, 8337, 8324, 5745, 5668, 8950, 2]
+// Dependencies: [19, 17, 9079, 7453, 21, 4756, 576, 8493, 4457, 8490, 8476, 5881, 5804, 9104, 2]
 // Exports: default
 
-// Module 8949 (ProfileFrameSamplePreview)
+// Module 9103 (ProfileFrameSamplePreview)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4338 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5745 from "module_5745" /* 5745 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8324 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8337 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8340 */;
-import _modDef8950 from "module_8950" /* 8950 */;
+import useToken from "useToken" /* 4457 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef5881 from "module_5881" /* 5881 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8476 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8490 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8493 */;
+import _modDef9104 from "module_9104" /* 9104 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,11 +21,11 @@ function filterLayer(responsive) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const UserProfileThemeTypes = fn(7311).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7453).UserProfileThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
-let obj2 = { profileFrameContainer: { flex: 1 }, profileContainer: { flex: 1, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.xs }, sampleProfile: { width: "100%", aspectRatio: fn(8925).SAMPLE_PROFILE_ASPECT_RATIO } };
+const createStyles = fn(4756);
+let obj2 = { profileFrameContainer: { flex: 1 }, profileContainer: { flex: 1, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.xs }, sampleProfile: { width: "100%", aspectRatio: fn(9079).SAMPLE_PROFILE_ASPECT_RATIO } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameSamplePreview.tsx");
@@ -78,9 +78,9 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   const obj7 = { style: { position: "absolute", top: overflowTop, bottom: overflowBottom, left: 0, width: overflowHorizontal, backgroundColor: "black" } };
   const obj8 = { style: { position: "absolute", top: overflowTop, bottom: overflowBottom, right: 0, width: overflowHorizontal, backgroundColor: "black" } };
   const obj9 = { style: { position: "absolute", top: overflowTop - xs, left: overflowHorizontal - xs, width: 2 * xs, height: 2 * xs, borderRadius: xs, backgroundColor: "black" } };
-  tmp13 = _modDef5745;
+  tmp13 = _modDef5881;
   const tmp14 = React5;
-  obj18.uri = _modDef8950;
+  obj18.uri = _modDef9104;
   obj17.source = obj18;
   obj17.style = tmp.sampleProfile;
   obj16.children = timestampProducer(FastImageDefault, obj17);

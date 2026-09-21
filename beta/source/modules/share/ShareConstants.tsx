@@ -1,11 +1,11 @@
-// Module ID: 11118
-// Function ID: 11119
+// Module ID: 11248
+// Function ID: 11249
 // Name: ShareConstants
-// Dependencies: [9965, 2]
+// Dependencies: [10091, 2]
 // Exports: isAllowedType
 
-// Module 11118 (ShareConstants)
-import sortByMatchScore from "sortByMatchScore" /* 9965 */;
+// Module 11248 (ShareConstants)
+import sortByMatchScore from "sortByMatchScore" /* 10091 */;
 import size from "module_2" /* 2 */;
 
 const items = [sortByMatchScore.AutocompleterResultTypes.USER, sortByMatchScore.AutocompleterResultTypes.TEXT_CHANNEL, sortByMatchScore.AutocompleterResultTypes.VOICE_CHANNEL, sortByMatchScore.AutocompleterResultTypes.GROUP_DM];

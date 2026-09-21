@@ -1,17 +1,17 @@
-// Module ID: 16895
-// Function ID: 16896
+// Module ID: 17248
+// Function ID: 17249
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4285, 1371, 10992, 1074, 21, 7265, 7285, 504, 16893, 8296, 10998, 2]
+// Dependencies: [19, 4405, 1372, 11122, 1074, 21, 7407, 7427, 504, 17246, 8448, 11128, 2]
 // Exports: default
 
-// Module 16895 (IgnoredUserRequestsScreen)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
+// Module 17248 (IgnoredUserRequestsScreen)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
-const UserRowModes = fn(10992).UserRowModes;
+const UserRowModes = fn(11122).UserRowModes;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);

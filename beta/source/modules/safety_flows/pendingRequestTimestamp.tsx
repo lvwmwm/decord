@@ -1,25 +1,25 @@
-// Module ID: 17999
-// Function ID: 18000
+// Module ID: 18341
+// Function ID: 18342
 // Name: pendingRequestTimestamp
-// Dependencies: [1114, 2690, 7695, 2]
+// Dependencies: [1115, 2776, 7834, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 17999 (pendingRequestTimestamp)
-import util from "util" /* 1114 */;
-import _modDef2690 from "module_2690" /* 2690 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7695 */;
+// Module 18341 (pendingRequestTimestamp)
+import util from "util" /* 1115 */;
+import _modDef2776 from "module_2776" /* 2776 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7834 */;
 import size from "module_2" /* 2 */;
 
 function SENT_TIMESTAMP_FORMATTER() {
   const time = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
   const intl = util.intl;
-  time.seconds = intl.string(_modDef2690.M4NOO3);
-  time.minutes = _modDef2690["9nem85"];
-  time.hours = _modDef2690.sJjWRY;
+  time.seconds = intl.string(_modDef2776.M4NOO3);
+  time.minutes = _modDef2776["9nem85"];
+  time.hours = _modDef2776.sJjWRY;
   const intl2 = util.intl;
-  time.yesterday = intl2.string(_modDef2690["7SxW32"]);
-  time.days = _modDef2690.tVHevX;
-  time.date = _modDef2690.q6jzya;
+  time.yesterday = intl2.string(_modDef2776["7SxW32"]);
+  time.days = _modDef2776.tVHevX;
+  time.date = _modDef2776.q6jzya;
   return time;
 }
 const result = size.fileFinishedImporting("modules/safety_flows/pendingRequestTimestamp.tsx");

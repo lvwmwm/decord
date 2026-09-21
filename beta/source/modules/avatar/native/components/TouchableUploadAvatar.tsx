@@ -1,24 +1,24 @@
-// Module ID: 17560
-// Function ID: 17561
+// Module ID: 17850
+// Function ID: 17851
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4636, 576, 13951, 5204, 1114, 5668, 1176, 12906, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 14131, 5339, 1115, 5804, 1177, 13026, 2]
 // Exports: default
 
-// Module 17560 (TouchableUploadAvatar)
+// Module 17850 (TouchableUploadAvatar)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Pressables from "Pressables" /* 5204 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef12906 from "module_12906" /* 12906 */;
-import _modDef13951 from "module_13951" /* 13951 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Pressables from "Pressables" /* 5339 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef13026 from "module_13026" /* 13026 */;
+import _modDef14131 from "module_14131" /* 14131 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { avatarContainer: { display: "flex", paddingTop: 24 }, defaultLogoStyle: { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, width: 96 }, uploadedAvatarStyle: { width: 200, height: 200, borderRadius: 100, position: "relative" }, avatarWrapper: null, uploadAvatarWrapper: null, uploadAvatarIcon: null };
 let size = { borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "dashed", borderWidth: 2, borderRadius: nativeDefault.radii.round, width: 200, height: 200, justifyContent: "center", alignItems: "center", position: "relative", overflow: "visible" };
 obj2.avatarWrapper = size;
@@ -37,7 +37,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
   }
   const tmp = closure_6();
   if (!showPendingAvatar) {
-    let tmp3 = _modDef13951;
+    let tmp3 = _modDef14131;
   } else {
     tmp3 = avatarSource;
   }
@@ -53,7 +53,7 @@ export default function TouchableUploadAvatar(onSelectAvatar) {
     const obj4 = { resizeMode: "contain", style: defaultLogoStyle, source: tmp3 };
     const items = [React4(FastImageDefault, obj4), ];
     const obj5 = { style: tmp.uploadAvatarWrapper, children: null };
-    const obj6 = { size: native.Icon.Sizes.MEDIUM, source: _modDef12906, style: tmp.uploadAvatarIcon };
+    const obj6 = { size: native.Icon.Sizes.MEDIUM, source: _modDef13026, style: tmp.uploadAvatarIcon };
     obj5.children = React4(native.Icon, obj6);
     items[1] = React4(View, obj5);
     obj3.children = items;

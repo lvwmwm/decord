@@ -1,16 +1,16 @@
-// Module ID: 12261
-// Function ID: 12262
+// Module ID: 12381
+// Function ID: 12382
 // Name: useNavigationTransitionEnded
-// Dependencies: [32, 19, 1482, 1484, 2]
+// Dependencies: [32, 19, 1483, 1485, 2]
 // Exports: default
 
-// Module 12261 (useNavigationTransitionEnded)
-import Link from "Link" /* 1484 */;
+// Module 12381 (useNavigationTransitionEnded)
+import Link from "Link" /* 1485 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useAppLauncherNavigation = fn(1482).useAppLauncherNavigation;
+const useAppLauncherNavigation = fn(1483).useAppLauncherNavigation;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useNavigationTransitionEnded.tsx");
 

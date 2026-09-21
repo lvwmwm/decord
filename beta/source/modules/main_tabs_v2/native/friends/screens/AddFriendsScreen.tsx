@@ -1,25 +1,25 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 17233
+// Function ID: 17234
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7760, 4285, 1371, 12832, 1074, 12811, 21, 4636, 576, 12809, 8496, 4334, 1114, 7861, 12813, 1363, 7265, 7285, 5073, 1240, 8296, 563, 12, 4481, 16143, 7271, 5206, 9985, 5658, 10998, 5686, 4336, 5171, 16882, 16883, 16885, 16886, 2]
+// Dependencies: [32, 5, 19, 17, 7894, 4405, 1372, 12952, 1074, 12931, 21, 4756, 576, 12929, 8649, 4453, 1115, 8001, 12933, 1364, 7407, 7427, 7294, 17234, 5203, 1241, 8448, 563, 12, 4600, 16385, 7413, 5341, 10111, 5794, 11128, 5822, 4455, 5308, 17235, 17236, 17238, 17239, 2]
 // Exports: default
 
-// Module 16881 (AddFriendsScreen)
+// Module 17233 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8496 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12809 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12813 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 16883 */;
-import ContactSuggestionRow from "ContactSuggestionRow" /* 16885 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8649 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12929 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12933 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 17236 */;
+import ContactSuggestionRow from "ContactSuggestionRow" /* 17238 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7760 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7894 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -63,14 +63,14 @@ function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const Sections = fn(12832).Sections;
+const Sections = fn(12952).Sections;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, AnalyticsSections: map1, InstantInviteSources: closure_14, RelationshipTypes: closure_15 } = Constants);
-const ContactPermissions = fn(12811).ContactPermissions;
+const ContactPermissions = fn(12931).ContactPermissions;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
 let closure_19 = { FIND_FRIENDS: 0, [0]: "FIND_FRIENDS", INCOMING_FRIEND_REQUESTS: 1, [1]: "INCOMING_FRIEND_REQUESTS", INCOMING_GAME_FRIEND_REQUESTS: 2, [2]: "INCOMING_GAME_FRIEND_REQUESTS", CONTACT_SUGGESTIONS: 3, [3]: "CONTACT_SUGGESTIONS" };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 1 }, inviteAppsContainerNonSticky: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingVertical: nativeDefault.space.PX_16 }, inviteAppsContentContainer: { paddingTop: 0, paddingBottom: 0, minWidth: "100%" }, emptyContainer: null, emptyActionContainer: null, loading: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingVertical: nativeDefault.space.PX_16 };
 obj2.emptyContainer = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -86,34 +86,41 @@ export default function AddFriendsScreen(navigation) {
   navigation = navigation.navigation;
   importDefault = navigation.route.params.sourcePage;
   let analyticsLocations;
-  _slicedToArray = undefined;
-  c4 = undefined;
-  noop = undefined;
   c6 = undefined;
+  c7 = undefined;
+  c8 = undefined;
+  c9 = undefined;
   first = undefined;
-  gameRelationshipsByType = undefined;
+  closure_11 = undefined;
   first1 = undefined;
-  closure_10 = undefined;
-  c17 = undefined;
-  c18 = undefined;
+  closure_13 = undefined;
+  c20 = undefined;
+  c21 = undefined;
   friendSuggestions = undefined;
-  closure_20 = undefined;
-  closure_21 = undefined;
-  onItemPressed = undefined;
+  closure_23 = undefined;
+  closure_24 = undefined;
+  c25 = undefined;
   let memo1;
-  let tmp = closure_20();
+  let callback1;
+  let tmp = c20();
   let tmp2 = importDefault;
   let obj = analyticsLocations;
   analyticsLocations = require("useAnalyticsLocations")(require("AnalyticsLocation").ADD_FRIENDS).analyticsLocations;
+  let tmp4 = require("useScaledRowHeight")();
+  _slicedToArray = tmp4;
   let tmp3 = require("useAnalyticsLocations");
-  [c3, c4] = noop.useState([]);
-  let tmp5 = _slicedToArray(noop.useState([]), 2);
-  [c5, c6] = noop.useState([]);
-  [first, gameRelationshipsByType] = noop.useState([]);
-  [first1, closure_10] = noop.useState([]);
-  closure_11 = noop.useCallback((userId, applicationId) => {
+  const userRowWithSubLabelHeight = navigation(analyticsLocations[23]).useUserRowWithSubLabelHeight(1);
+  let obj2 = navigation(analyticsLocations[23]);
+  const userRowWithSubLabelHeight1 = navigation(analyticsLocations[23]).useUserRowWithSubLabelHeight(2);
+  let obj3 = navigation(analyticsLocations[23]);
+  [c6, c7] = userRowWithSubLabelHeight1.useState([]);
+  const tmp9 = _slicedToArray(userRowWithSubLabelHeight1.useState([]), 2);
+  [c8, c9] = userRowWithSubLabelHeight1.useState([]);
+  [first, closure_11] = userRowWithSubLabelHeight1.useState([]);
+  [first1, closure_13] = userRowWithSubLabelHeight1.useState([]);
+  closure_14 = userRowWithSubLabelHeight1.useCallback((userId, applicationId) => {
     if (null != applicationId) {
-      closure_10((arg0) => {
+      closure_13((arg0) => {
         const items = [];
         items[HermesBuiltin.arraySpread(arg0, 0)] = { userId, applicationId };
         return items;
@@ -126,9 +133,9 @@ export default function AddFriendsScreen(navigation) {
       });
     }
   }, []);
-  closure_12 = noop.useCallback((userId, applicationId) => {
+  constants = userRowWithSubLabelHeight1.useCallback((userId, applicationId) => {
     if (null != applicationId) {
-      gameRelationshipsByType((arg0) => {
+      closure_11((arg0) => {
         const items = [];
         items[HermesBuiltin.arraySpread(arg0, 0)] = { userId, applicationId };
         return items;
@@ -145,16 +152,16 @@ export default function AddFriendsScreen(navigation) {
     AnalyticsUtilsDefault.track(constants.FRIEND_ADD_VIEWED, { friend_add_type: constants2.FRIENDS_ADD_FRIENDS_MODAL, source_page });
   });
   let items = [navigation];
-  const onPress = noop.useCallback(() => {
+  const onPress = userRowWithSubLabelHeight1.useCallback(() => {
     navigation.navigate("username-search");
   }, items);
   let items1 = [analyticsLocations];
-  closure_14 = noop.useCallback((id) => {
+  closure_17 = userRowWithSubLabelHeight1.useCallback((id) => {
     showUserProfileActionSheetDefault({ userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations, location: "Add Friends Modal User Profile" });
   }, items1);
-  let tmp6 = _slicedToArray(noop.useState([]), 2);
-  const items2 = [first1, closure_10];
-  const stateFromStoresArray = navigation(analyticsLocations[25]).useStateFromStoresArray(items2, () => {
+  let tmp10 = _slicedToArray(userRowWithSubLabelHeight1.useState([]), 2);
+  const items2 = [c9, first];
+  const stateFromStoresArray = navigation(analyticsLocations[27]).useStateFromStoresArray(items2, () => {
     const items = [];
     const mutableRelationships = RelationshipStore.getMutableRelationships();
     const keys = mutableRelationships.keys();
@@ -177,22 +184,22 @@ export default function AddFriendsScreen(navigation) {
     }
     const items1 = [];
     const item = _undefined3.forEach((item) => {
-      user = user.getUser(item);
+      const user = first.getUser(item);
       if (null != user) {
         items1.push(user);
       }
     });
     return _modDef12.unionBy(items1, items, (id) => id.id).sort((arg0, arg1) => {
-      const name = source_page(4481).getName(arg0);
-      const obj = source_page(4481);
-      return name.localeCompare(source_page(4481).getName(arg1));
+      const name = source_page(4600).getName(arg0);
+      const obj = source_page(4600);
+      return name.localeCompare(source_page(4600).getName(arg1));
     });
   });
-  let obj3 = navigation(analyticsLocations[25]);
-  const items3 = [gameRelationshipsByType, first1, closure_10];
+  let obj5 = navigation(analyticsLocations[27]);
+  const items3 = [c8, c9, first];
   const items4 = [first1, first];
-  const stateFromStores = navigation(analyticsLocations[25]).useStateFromStores(items3, () => {
-    gameRelationshipsByType = gameRelationshipsByType.getGameRelationshipsByType(stateFromStoresArray.PENDING_INCOMING);
+  const stateFromStores = navigation(analyticsLocations[27]).useStateFromStores(items3, () => {
+    const gameRelationshipsByType = _undefined3.getGameRelationshipsByType(constants.PENDING_INCOMING);
     const items = [];
     const item = gameRelationshipsByType.forEach((id) => {
       id = id.id;
@@ -218,28 +225,28 @@ export default function AddFriendsScreen(navigation) {
         items1.push(obj);
       }
     });
-    let obj = source_page(analyticsLocations[26]);
-    return source_page(analyticsLocations[26]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
-      const name = items1(4481).getName(user.user);
-      const obj = items1(4481);
-      return name.localeCompare(items1(4481).getName(user2.user));
+    let obj = source_page(analyticsLocations[28]);
+    return source_page(analyticsLocations[28]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
+      const name = items1(4600).getName(user.user);
+      const obj = items1(4600);
+      return name.localeCompare(items1(4600).getName(user2.user));
     });
-  }, items4, areHydratedGameFriendRequestRowStatesEqual);
-  let obj4 = navigation(analyticsLocations[25]);
-  ({ added: c17, setAdded: c18, friendSuggestions } = require("useSuggestedFriends")());
-  let tmp15 = friendSuggestions.length > 0;
-  if (tmp15) {
-    tmp15 = stateFromStoresArray.length > 3;
+  }, items4, closure_24);
+  let obj6 = navigation(analyticsLocations[27]);
+  ({ added: c20, setAdded: c21, friendSuggestions } = require("useSuggestedFriends")());
+  let tmp18 = friendSuggestions.length > 0;
+  if (tmp18) {
+    tmp18 = stateFromStoresArray.length > 3;
   }
-  closure_20 = tmp15;
-  let tmp16 = friendSuggestions.length > 0;
-  if (tmp16) {
-    tmp16 = stateFromStores.length > 3;
+  closure_23 = tmp18;
+  let tmp19 = friendSuggestions.length > 0;
+  if (tmp19) {
+    tmp19 = stateFromStores.length > 3;
   }
-  closure_21 = tmp16;
-  const items5 = [stateFromStores, tmp16];
-  const memo = obj2.useMemo(() => {
-    if (closure_21) {
+  closure_24 = tmp19;
+  const items5 = [stateFromStores, tmp19];
+  const memo = obj4.useMemo(() => {
+    if (closure_24) {
       const _Math = Math;
       let length = Math.min(stateFromStores.length, 3);
     } else {
@@ -254,26 +261,26 @@ export default function AddFriendsScreen(navigation) {
     }
     return items;
   }, items5);
-  tmp2(obj[29])(memo);
-  const tmp4Result = _slicedToArray(noop.useState(false), 2);
-  importDefault = tmp4Result[1];
+  tmp2(obj[31])(memo);
+  const tmp8Result = _slicedToArray(userRowWithSubLabelHeight1.useState(false), 2);
+  importDefault = tmp8Result[1];
   const items6 = [navigation];
-  const effect = obj2.useEffect(() => navigation.addListener("transitionEnd", () => {
+  const effect = obj4.useEffect(() => navigation.addListener("transitionEnd", () => {
     source_page(true);
   }), items6);
   closure_129_0 = undefined;
-  const tmp14 = require("useSuggestedFriends")();
+  const tmp17 = require("useSuggestedFriends")();
   const contactSyncAccount = navigation(obj[18]).useContactSyncAccount();
-  const tmp13Result = navigation(obj[18]);
+  const tmp5Result = navigation(obj[18]);
   const isContactSyncEnabledResult = navigation(obj[18]).isContactSyncEnabled(contactSyncAccount);
-  const tmp13Result3 = navigation(obj[18]);
-  [tmp24, closure_129_0] = noop.useState(false);
-  const effect1 = obj2.useEffect(() => {
+  const tmp5Result3 = navigation(obj[18]);
+  [tmp27, closure_129_0] = userRowWithSubLabelHeight1.useState(false);
+  const effect1 = obj4.useEffect(() => {
     if (obj.isContactSyncAvailable()) {
       const result = ContactSyncUtils.checkContactPermissions();
       result.then((result) => {
         const obj = navigation(analyticsLocations[19]);
-        let tmp3 = result === stateFromStores.NOT_DETERMINED;
+        let tmp3 = result === callback.NOT_DETERMINED;
         if (!tmp3) {
           tmp3 = tmp2;
         }
@@ -282,38 +289,57 @@ export default function AddFriendsScreen(navigation) {
       const tmpResult = ContactSyncUtils;
     }
   }, []);
-  const tmp4Result2 = _slicedToArray(noop.useState(false), 2);
+  const tmp8Result2 = _slicedToArray(userRowWithSubLabelHeight1.useState(false), 2);
   let result = navigation(obj[18]).isContactSyncAvailable();
   if (result) {
-    let tmp27 = !isContactSyncEnabledResult;
+    let tmp30 = !isContactSyncEnabledResult;
     if (isContactSyncEnabledResult) {
-      tmp27 = tmp24;
+      tmp30 = tmp27;
     }
-    result = tmp27;
+    result = tmp30;
   }
-  onItemPressed = result;
-  const items7 = [stateFromStoresArray.length, friendSuggestions.length, stateFromStores.length, result, tmp15, tmp16];
-  memo1 = obj2.useMemo(() => {
+  c25 = result;
+  const items7 = [stateFromStoresArray.length, friendSuggestions.length, stateFromStores.length, result, tmp18, tmp19];
+  memo1 = obj4.useMemo(() => {
     let num = 1;
-    if (c22) {
+    if (c25) {
       num = 2;
     }
     const items = [num, , , ];
     let num2 = 4;
     let num3 = 4;
-    if (!closure_20) {
+    if (!closure_23) {
       num3 = stateFromStoresArray.length;
     }
     items[1] = num3;
-    if (!closure_21) {
+    if (!closure_24) {
       num2 = stateFromStores.length;
     }
     items[2] = num2;
     items[3] = friendSuggestions.length;
     return items;
   }, items7);
-  const callback1 = obj2.useCallback((arg0) => {
-    if (friendSuggestions.FIND_FRIENDS !== arg0) {
+  const items8 = [memo1, tmp18, tmp19];
+  callback1 = obj4.useCallback((arg0, arg1) => {
+    let tmp = arg1 === memo1[arg0] - 1;
+    if (stateFromStores.INCOMING_FRIEND_REQUESTS === arg0) {
+      if (tmp) {
+        tmp = closure_23;
+      }
+      return tmp;
+    } else if (tmp2.INCOMING_GAME_FRIEND_REQUESTS === arg0) {
+      let tmp3 = tmp;
+      if (tmp) {
+        tmp3 = closure_24;
+      }
+      return tmp3;
+    } else {
+      return false;
+    }
+  }, items8);
+  const items9 = [callback1, tmp4, userRowWithSubLabelHeight, userRowWithSubLabelHeight1, friendSuggestions];
+  const callback2 = obj4.useCallback((arg0) => {
+    if (stateFromStores.FIND_FRIENDS !== arg0) {
       if (tmp.INCOMING_FRIEND_REQUESTS === arg0) {
         const element = { type: "section", props: null };
         const obj = { title: null };
@@ -338,50 +364,80 @@ export default function AddFriendsScreen(navigation) {
       }
     }
   }, []);
-  let obj5 = { value: analyticsLocations, children: null };
-  const items8 = [c17(tmp2(obj[30]), { absolute: true }), ];
-  let obj6 = { style: tmp.container, children: null };
-  let obj7 = { style: tmp.inviteAppsContainerNonSticky, children: c17(tmp2(obj[31]), { onItemPressed, contentContainerStyle: tmp.inviteAppsContentContainer }) };
-  const items9 = [c17(c6, obj7), ];
-  if (!tmp4Result[0]) {
-    if (!tmp28) {
-      const obj9 = { style: tmp.loading, children: tmp32(tmp13(obj[32]).ActivityIndicator, {}) };
-      items9[1] = tmp32(tmp33, obj9);
-      obj6.children = items9;
-      items8[1] = tmp31(tmp33, obj6);
-      obj5.children = items8;
-      return tmp31(tmp13(obj[20]).AnalyticsLocationProvider, obj5);
+  const callback3 = obj4.useCallback((arg0, arg1) => {
+    if (callback1(arg0, arg1)) {
+      return closure_3;
+    } else if (stateFromStores.FIND_FRIENDS === arg0) {
+      return closure_3;
+    } else {
+      if (tmp.INCOMING_FRIEND_REQUESTS !== arg0) {
+        if (tmp.INCOMING_GAME_FRIEND_REQUESTS !== arg0) {
+          if (tmp.CONTACT_SUGGESTIONS === arg0) {
+            let mutualFriendsCount;
+            if (friendSuggestions[arg1] != null) {
+              mutualFriendsCount = tmp4.mutualFriendsCount;
+            }
+            let tmp7 = null != mutualFriendsCount;
+            if (tmp7) {
+              let mutualFriendsCount1;
+              if (tmp4 != null) {
+                mutualFriendsCount1 = tmp4.mutualFriendsCount;
+              }
+              tmp7 = mutualFriendsCount1 > 0;
+            }
+            return tmp7 ? userRowWithSubLabelHeight1 : userRowWithSubLabelHeight;
+          } else {
+            return closure_3;
+          }
+        }
+      }
+      return userRowWithSubLabelHeight;
+    }
+  }, items9);
+  let obj7 = { value: analyticsLocations, children: null };
+  const items10 = [closure_17(tmp2(obj[32]), { absolute: true }), ];
+  const obj8 = { style: tmp.container, children: null };
+  const obj9 = { style: tmp.inviteAppsContainerNonSticky, children: closure_17(tmp2(obj[33]), { onItemPressed: friendSuggestions, contentContainerStyle: tmp.inviteAppsContentContainer }) };
+  const items11 = [closure_17(c6, obj9), ];
+  if (!tmp8Result[0]) {
+    if (!tmp31) {
+      const obj11 = { style: tmp.loading, children: tmp37(tmp5(obj[34]).ActivityIndicator, {}) };
+      items11[1] = tmp37(tmp38, obj11);
+      obj8.children = items11;
+      items10[1] = tmp36(tmp38, obj8);
+      obj7.children = items10;
+      return tmp36(tmp5(obj[20]).AnalyticsLocationProvider, obj7);
     }
   }
   if (0 === stateFromStoresArray.length && 0 === stateFromStores.length && 0 === friendSuggestions.length) {
-    const obj10 = { style: tmp.emptyContainer, children: null };
-    const obj11 = { style: tmp.emptyActionContainer, children: null };
-    const obj12 = { label: null, labelLineClamp: 1, icon: null, arrow: true, onPress: null, start: true, end: true };
-    let intl = tmp13(obj[16]).intl;
-    obj12.label = intl.string(tmp13(obj[16]).t.QzVsOs);
-    const obj13 = { IconComponent: tmp13(obj[36]).AtIcon };
-    obj12.icon = tmp32(tmp13(obj[34]).TableRow.Icon, obj13);
-    obj12.onPress = onPress;
-    obj11.children = tmp32(tmp13(obj[34]).TableRow, obj12);
-    const items10 = [tmp32(tmp33, obj11), ];
+    const obj12 = { style: tmp.emptyContainer, children: null };
+    const obj13 = { style: tmp.emptyActionContainer, children: null };
+    const obj14 = { label: null, labelLineClamp: 1, icon: null, arrow: true, onPress: null, start: true, end: true };
+    let intl = tmp5(obj[16]).intl;
+    obj14.label = intl.string(tmp5(obj[16]).t.QzVsOs);
+    const obj15 = { IconComponent: tmp5(obj[38]).AtIcon };
+    obj14.icon = tmp37(tmp5(obj[36]).TableRow.Icon, obj15);
+    obj14.onPress = onPress;
+    obj13.children = tmp37(tmp5(obj[36]).TableRow, obj14);
+    const items12 = [tmp37(tmp38, obj13), ];
     tmp = null;
     if (result) {
-      tmp2 = tmp2(obj[40]);
+      tmp2 = tmp2(obj[42]);
       obj = {};
-      tmp = tmp32(tmp2, obj);
+      tmp = tmp37(tmp2, obj);
     }
-    items10[1] = tmp;
-    obj10.children = items10;
-    tmp31(first, obj10);
+    items12[1] = tmp;
+    obj12.children = items12;
+    tmp36(c7, obj12);
   } else {
-    const obj14 = {
+    const obj16 = {
       sections: memo1,
       getItemProps(flag2, arg1) {
           const start = tmp;
-          const end = tmp2;
-          if (friendSuggestions.FIND_FRIENDS === flag2) {
+          const end = arg1 === memo1[flag2] - 1;
+          if (stateFromStores.FIND_FRIENDS === flag2) {
             if (tmp) {
-              if (c22) {
+              if (c25) {
                 const obj2 = {
                   type: "custom",
                   itemType: "showContactSyncCTA",
@@ -390,10 +446,10 @@ export default function AddFriendsScreen(navigation) {
                           const obj = { start: true, height: "100%", label: null, labelLineClamp: 1, icon: null, trailing: null, onPress: null };
                           const intl = start(user[16]).intl;
                           obj.label = intl.string(start(user[16]).t.j2POVo);
-                          obj.icon = closure_1_17(start(user[34]).TableRow.Icon, { IconComponent: start(user[35]).FriendsIcon });
-                          obj.trailing = closure_1_17(start(user[34]).TableRow.Arrow, {});
+                          obj.icon = onPress2(start(user[36]).TableRow.Icon, { IconComponent: start(user[37]).FriendsIcon });
+                          obj.trailing = onPress2(start(user[36]).TableRow.Arrow, {});
                           obj.onPress = onPress3;
-                          return closure_1_17(start(user[34]).TableRow, obj);
+                          return onPress2(start(user[36]).TableRow, obj);
                         }
                 };
                 let obj3 = obj2;
@@ -405,110 +461,109 @@ export default function AddFriendsScreen(navigation) {
               itemType: "addByUsername",
               key: "addByUsername",
               component() {
-                  const obj = { start: !closure_1_22, end: true, height: "100%", label: null, labelLineClamp: 1, icon: null, arrow: true, onPress: null };
+                  const obj = { start: !closure_1_25, end: true, height: "100%", label: null, labelLineClamp: 1, icon: null, arrow: true, onPress: null };
                   const intl = navigation(analyticsLocations[16]).intl;
                   obj.label = intl.string(navigation(analyticsLocations[16]).t.QzVsOs);
-                  obj.icon = c17(navigation(analyticsLocations[34]).TableRow.Icon, { IconComponent: navigation(analyticsLocations[36]).AtIcon });
+                  obj.icon = onPress2(navigation(analyticsLocations[36]).TableRow.Icon, { IconComponent: navigation(analyticsLocations[38]).AtIcon });
                   obj.onPress = onPress;
-                  return c17(navigation(analyticsLocations[34]).TableRow, obj);
+                  return onPress2(navigation(analyticsLocations[36]).TableRow, obj);
                 }
             };
-          } else if (tmp3.INCOMING_FRIEND_REQUESTS === flag2) {
-            if (tmp2) {
-              if (closure_20) {
-                const obj4 = {
-                  type: "custom",
-                  itemType: "viewAll",
-                  key: "friendRequestsViewAll",
-                  component() {
-                          const obj = {
-                            onPress() {
-                              closure_1(closure_2[23]).track(onDeclineIncomingRequest.FRIEND_FINDER_SECTION_EXPANDED, { section_id: onAcceptIncomingRequest.PENDING, truncated_count: 3, expanded_count: length.length, location: "AddFriends" });
-                              navigation.navigate("requests");
-                            },
-                            users: stateFromStoresArray.slice(3),
-                            count: stateFromStoresArray.length
-                          };
-                          return c17(end(analyticsLocations[37]), obj);
-                        }
-                };
-                return obj4;
-              }
+          } else if (tmp2.INCOMING_FRIEND_REQUESTS === flag2) {
+            if (callback1(flag2, arg1)) {
+              const obj4 = {
+                type: "custom",
+                itemType: "viewAll",
+                key: "friendRequestsViewAll",
+                component() {
+                      const obj = {
+                        onPress() {
+                          closure_1(closure_2[25]).track(constants2.FRIEND_FINDER_SECTION_EXPANDED, { section_id: constants.PENDING, truncated_count: 3, expanded_count: length.length, location: "AddFriends" });
+                          navigation.navigate("requests");
+                        },
+                        users: stateFromStoresArray.slice(3),
+                        count: stateFromStoresArray.length
+                      };
+                      return onPress2(end(analyticsLocations[39]), obj);
+                    }
+              };
+              return obj4;
+            } else {
+              let user = tmp15;
+              const obj5 = {
+                type: "custom",
+                itemType: "incomingRequest",
+                key: stateFromStoresArray[arg1].id,
+                component() {
+                      return closure_3_17(IncomingRequestRow.IncomingFriendRequestRow, { accepted: c8.includes(user.id), user, start, end, onPress: onPress2, onDeclineIncomingRequest, onAcceptIncomingRequest });
+                    }
+              };
+              return obj5;
             }
-            let user = tmp15;
-            const obj5 = {
-              type: "custom",
-              itemType: "incomingRequest",
-              key: stateFromStoresArray[arg1].id,
-              component() {
-                  return closure_3_17(IncomingRequestRow.IncomingFriendRequestRow, { accepted: suggestedFriend.includes(user.id), user, start, end, onPress: onPress2, onDeclineIncomingRequest, onAcceptIncomingRequest });
-                }
-            };
-            return obj5;
-          } else if (tmp3.INCOMING_GAME_FRIEND_REQUESTS === flag2) {
-            if (tmp2) {
-              if (onPress3) {
-                const obj6 = {
-                  type: "custom",
-                  itemType: "viewAll",
-                  key: "gameFriendRequestsViewAll",
-                  component() {
-                          const obj = {
-                            onPress() {
-                              navigation.navigate("requests");
-                            },
-                            users: null,
-                            count: null
-                          };
-                          const substr = stateFromStores.slice(3);
-                          obj.users = substr.map((user) => user.user);
-                          obj.count = stateFromStores.length;
-                          return c17(end(analyticsLocations[37]), obj);
-                        }
-                };
-                return obj6;
-              }
+          } else if (tmp2.INCOMING_GAME_FRIEND_REQUESTS === flag2) {
+            if (callback1(flag2, arg1)) {
+              const obj6 = {
+                type: "custom",
+                itemType: "viewAll",
+                key: "gameFriendRequestsViewAll",
+                component() {
+                      const obj = {
+                        onPress() {
+                          navigation.navigate("requests");
+                        },
+                        users: null,
+                        count: null
+                      };
+                      const substr = stateFromStores.slice(3);
+                      obj.users = substr.map((user) => user.user);
+                      obj.count = stateFromStores.length;
+                      return onPress2(end(analyticsLocations[39]), obj);
+                    }
+              };
+              return obj6;
+            } else {
+              user = tmp11.user;
+              const applicationId = tmp11.applicationId;
+              const obj7 = { type: "custom", itemType: "incomingRequest", key: null, component: null };
+              const _HermesInternal = HermesInternal;
+              obj7.key = "" + user.id + "-" + applicationId;
+              obj7.component = function component() {
+                return closure_3_17(IncomingRequestRow.ConnectedIncomingGameFriendRequestRow, { accepted: null != first1.find((userId) => userId.userId === id.id && userId.applicationId === tmp), applicationId, user, start, end, onPress: onPress2, onDeclineIncomingRequest, onAcceptIncomingRequest });
+              };
+              return obj7;
             }
-            user = tmp11.user;
-            const applicationId = tmp11.applicationId;
-            const obj7 = { type: "custom", itemType: "incomingRequest", key: null, component: null };
-            const _HermesInternal = HermesInternal;
-            obj7.key = "" + user.id + "-" + applicationId;
-            obj7.component = function component() {
-              return closure_3_17(IncomingRequestRow.ConnectedIncomingGameFriendRequestRow, { accepted: null != first1.find((userId) => userId.userId === id.id && userId.applicationId === tmp), applicationId, user, start, end, onPress: onPress2, onDeclineIncomingRequest, onAcceptIncomingRequest });
-            };
-            return obj7;
-          } else if (tmp3.CONTACT_SUGGESTIONS === flag2) {
-            const suggestedFriend = tmp5;
+          } else if (tmp2.CONTACT_SUGGESTIONS === flag2) {
+            const suggestedFriend = tmp4;
             let mutualFriendsCount;
             if (friendSuggestions[arg1] != null) {
-              mutualFriendsCount = tmp5.mutualFriendsCount;
+              mutualFriendsCount = tmp4.mutualFriendsCount;
             }
-            let str2 = "contactSuggestionNoMutualCount";
-            if (null != mutualFriendsCount) {
+            let tmp7 = null != mutualFriendsCount;
+            if (tmp7) {
               let mutualFriendsCount1;
-              if (tmp5 != null) {
-                mutualFriendsCount1 = tmp5.mutualFriendsCount;
+              if (tmp4 != null) {
+                mutualFriendsCount1 = tmp4.mutualFriendsCount;
               }
-              str2 = "contactSuggestionNoMutualCount";
-              if (mutualFriendsCount1 > 0) {
-                str2 = "contactSuggestionMutualCount";
-              }
+              tmp7 = mutualFriendsCount1 > 0;
+            }
+            let str = "contactSuggestionNoMutualCount";
+            if (tmp7) {
+              str = "contactSuggestionMutualCount";
             }
             let obj = {
               type: "custom",
-              itemType: str2,
+              itemType: str,
               key: friendSuggestions[arg1].user.id,
               component() {
                   return closure_3_17(ContactSuggestionRow.ContactSuggestionRow, {
-                    added: c17.includes(suggestedFriend),
+                    added: c20.includes(suggestedFriend),
                     suggestedFriend,
                     start,
                     end,
                     onPress: onPress2,
                     location: constants3.ADD_FRIENDS_MODAL,
                     onAddSuggestion() {
-                      return closure_2_18((arg0) => {
+                      return onPress3((arg0) => {
                         const items = [];
                         items[HermesBuiltin.arraySpread(arg0, 0)] = closure_1_5;
                         return items;
@@ -520,10 +575,11 @@ export default function AddFriendsScreen(navigation) {
             return obj;
           }
         },
-      getSectionProps: callback1,
+      getSectionProps: callback2,
+      getItemSize: callback3,
       insetEnd: 12,
       disableStickySections: true
     };
-    tmp32(tmp13(obj[33]).UsersFastList, obj14);
+    tmp37(tmp5(obj[35]).UsersFastList, obj16);
   }
 };

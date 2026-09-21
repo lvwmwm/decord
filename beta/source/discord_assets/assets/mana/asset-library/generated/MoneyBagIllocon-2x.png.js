@@ -1,8 +1,8 @@
-// Module ID: 6347
-// Function ID: 6348
+// Module ID: 6487
+// Function ID: 6488
 // Dependencies: [2]
 
-// Module 6347
+// Module 6487
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MoneyBagIllocon-2x.png.js");

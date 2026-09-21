@@ -1,23 +1,23 @@
-// Module ID: 15644
-// Function ID: 15645
+// Module ID: 15833
+// Function ID: 15834
 // Name: AppVersionSetting
-// Dependencies: [1362, 1114, 15645, 11605, 10950, 1935, 2]
+// Dependencies: [1363, 1115, 15834, 11725, 11080, 2019, 2]
 
-// Module 15644 (AppVersionSetting)
-import util from "util" /* 1114 */;
-import CopyClientInfoSetting from "CopyClientInfoSetting" /* 15645 */;
-import ClientInfoUtils from "ClientInfoUtils" /* 1362 */;
+// Module 15833 (AppVersionSetting)
+import util from "util" /* 1115 */;
+import CopyClientInfoSetting from "CopyClientInfoSetting" /* 15834 */;
+import ClientInfoUtils from "ClientInfoUtils" /* 1363 */;
 
 require = fn;
 const constants = ClientInfoUtils.getConstants();
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 let obj = {
   useTitle: function useAppVersionSettingTitle() {
     const intl = util.intl;
     return intl.string(util.t.H66MEk);
   },
   parent: null,
-  IconComponent: fn(10950).ClydeIcon,
+  IconComponent: fn(11080).ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
     const clientInfoString = CopyClientInfoSetting.getClientInfoString(closure_3.ReleaseChannel);
     const obj2 = CopyClientInfoSetting;
@@ -31,7 +31,7 @@ let obj = {
     }
     return combined;
   },
-  usePredicate: fn(1935).DeveloperMode.useSetting
+  usePredicate: fn(2019).DeveloperMode.useSetting
 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/AppVersionSetting.tsx");
@@ -42,7 +42,7 @@ export default SettingBuilders.createStatic({
     return intl.string(util.t.H66MEk);
   },
   parent: null,
-  IconComponent: fn(10950).ClydeIcon,
+  IconComponent: fn(11080).ClydeIcon,
   useTrailing: function useAppVersionSettingTrailing() {
     const clientInfoString = CopyClientInfoSetting.getClientInfoString(closure_3.ReleaseChannel);
     const obj2 = CopyClientInfoSetting;
@@ -56,5 +56,5 @@ export default SettingBuilders.createStatic({
     }
     return combined;
   },
-  usePredicate: fn(1935).DeveloperMode.useSetting
+  usePredicate: fn(2019).DeveloperMode.useSetting
 });

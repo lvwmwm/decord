@@ -1,17 +1,17 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 7633
+// Function ID: 7634
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 1947, 1954, 1948, 1944, 2]
+// Dependencies: [19, 2031, 2038, 2032, 2028, 2]
 // Exports: useSelectedDismissibleContentShared
 
-// Module 7494 (useSelectedDismissibleContentShared)
+// Module 7633 (useSelectedDismissibleContentShared)
 import noop from "module_19" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 1947 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2031 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/dismissible_content/useSelectedDismissibleContentShared.tsx");
 
@@ -40,7 +40,7 @@ export const useSelectedDismissibleContentShared = function useSelectedDismissib
       }
       let tmp6 = content !== closure_1_0;
       if (!tmp6) {
-        let result = closure_0(1944).isGuildDismissibleContent(tmp5);
+        let result = closure_0(2028).isGuildDismissibleContent(tmp5);
         if (result) {
           const lastDismissed2 = tmp2.lastDismissed;
           let guildId;
@@ -50,7 +50,7 @@ export const useSelectedDismissibleContentShared = function useSelectedDismissib
           result = guildId !== id;
         }
         tmp6 = result;
-        const obj = closure_0(1944);
+        const obj = closure_0(2028);
       }
       tmp = tmp6;
       tmp2 = lastDismissed;

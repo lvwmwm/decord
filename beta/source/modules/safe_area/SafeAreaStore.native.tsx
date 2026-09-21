@@ -1,10 +1,10 @@
-// Module ID: 1612
-// Function ID: 1613
+// Module ID: 1613
+// Function ID: 1614
 // Name: SafeAreaStore
-// Dependencies: [1613, 560, 2]
+// Dependencies: [1614, 560, 2]
 
-// Module 1612 (SafeAreaStore)
-import SafeAreaConstants from "SafeAreaConstants" /* 1613 */;
+// Module 1613 (SafeAreaStore)
+import SafeAreaConstants from "SafeAreaConstants" /* 1614 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

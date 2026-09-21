@@ -1,19 +1,19 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15576
+// Function ID: 15577
 // Name: useSyncedModeThemeName
-// Dependencies: [1181, 1228, 504, 1227, 1114, 2626, 2]
+// Dependencies: [1182, 1229, 504, 1228, 1115, 2712, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 15390 (useSyncedModeThemeName)
-import util from "util" /* 1114 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1227 */;
-import _modDef2626 from "module_2626" /* 2626 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
+// Module 15576 (useSyncedModeThemeName)
+import util from "util" /* 1115 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
+import _modDef2712 from "module_2712" /* 2712 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_4 = fn(1228).BACKGROUND_GRADIENT_PRESETS_MAP;
+let closure_4 = fn(1229).BACKGROUND_GRADIENT_PRESETS_MAP;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");
 
@@ -29,7 +29,7 @@ export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
     }
     if (null != prop) {
       const intl = util.intl;
-      let stringResult = intl.string(_modDef2626.yl1iMm);
+      let stringResult = intl.string(_modDef2712.yl1iMm);
     } else {
       let prop1;
       if (syncedClientTheme != null) {

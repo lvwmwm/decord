@@ -1,11 +1,11 @@
-// Module ID: 6493
-// Function ID: 6494
+// Module ID: 6633
+// Function ID: 6634
 // Dependencies: [2]
 
-// Module 6493
+// Module 6633
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/e94e33061189b967bb209ce81c0a2dc8e6f501ea9154b1fbcfff7dca9613f3ad.png";
-export const metadata = { fileBytes: 21642 };
+export default "https://cdn.discordapp.com/assets/content/9db908cabbdb10d8a5f5d504d1d232b1b1bd96c633b71fd6e9d81135a002beea.png";
+export const metadata = { fileBytes: 21691 };

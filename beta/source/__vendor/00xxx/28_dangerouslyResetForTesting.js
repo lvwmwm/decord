@@ -18,8 +18,8 @@ if (!tmp4) {
 let closure_5 = tmp4;
 
 export function createJavaScriptFlagGetter(animatedShouldDebounceQueueFlush, arg1) {
-  const f69417 = () => {
-    set.add(f69417);
+  const f70586 = () => {
+    set.add(f70586);
     let tmp5Result;
     if (global != null) {
       if (global[tmp] != null) {
@@ -31,7 +31,7 @@ export function createJavaScriptFlagGetter(animatedShouldDebounceQueueFlush, arg
   closure_1 = arg1;
   return () => {
     if (null == closure_2) {
-      let tmp2 = f69418();
+      let tmp2 = f70587();
       if (tmp2 == null) {
         tmp2 = closure_1;
       }
@@ -41,7 +41,7 @@ export function createJavaScriptFlagGetter(animatedShouldDebounceQueueFlush, arg
   };
 }
 export function createNativeFlagGetter(cdpInteractionMetricsEnabled, arg1) {
-  const f69418 = () => {
+  const f70587 = () => {
     let hasItem = NativeReactNativeFeatureFlagsCxxDefault;
     if (!hasItem) {
       hasItem = set1.has(tmp);
@@ -67,7 +67,7 @@ export function createNativeFlagGetter(cdpInteractionMetricsEnabled, arg1) {
   closure_1 = arg1;
   return () => {
     if (null == closure_2) {
-      let tmp2 = f69418();
+      let tmp2 = f70587();
       if (tmp2 == null) {
         tmp2 = closure_1;
       }

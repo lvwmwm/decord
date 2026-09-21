@@ -1,18 +1,18 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12430
+// Function ID: 12431
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4636, 576, 8716, 2]
+// Dependencies: [32, 19, 21, 4756, 576, 8871, 2]
 // Exports: default
 
-// Module 12310 (AppLauncherBooleanOption)
+// Module 12430 (AppLauncherBooleanOption)
 import nativeDefault from "native" /* 576 */;
-import Form from "Form" /* 8716 */;
+import Form from "Form" /* 8871 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { container: { flexDirection: "row", width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center" } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);

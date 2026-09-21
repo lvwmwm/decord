@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 64 (sizesDiffer)
-let closure_0 = { width: "icon", height: "call" };
+let closure_0 = { width: "paths", height: "scales" };
 
 export default function sizesDiffer(arg0, arg1) {
   let size = arg0;

@@ -1,70 +1,58 @@
 // Module ID: 13048
 // Function ID: 13049
-// Dependencies: [12936, 12933, 13046]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [13049, 13050, 13053]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 13048
-import stackParserFromStackParserOptions from "stackParserFromStackParserOptions" /* 12933 */;
-import _mod12936 from "module_12936" /* 12936 */;
+import _mod13049 from "module_13049" /* 13049 */;
 
 require = arg1;
-const dependencyMap = arg6;
+const dependencyMap = {};
+let closure_3 = {};
 
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
-  }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
-  }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
-  }
-  const obj2 = { filename: replaced, module: fn(replaced), function: null, colno: null, lineno: null, in_app: null };
-  const obj = _mod12936;
-  obj2.function = location.functionName || stackParserFromStackParserOptions.UNKNOWN_FUNCTION;
-  obj2.colno = sum;
-  obj2.lineno = sum1;
-  let filenameIsInAppResult;
-  if (replaced) {
-    filenameIsInAppResult = tmp4(13046).filenameIsInApp(replaced);
-    const tmp4Result = tmp4(13046);
-  }
-  obj2.in_app = filenameIsInAppResult;
-  return obj.dropUndefinedKeys(obj2);
+export const addHandler = function addHandler(arg0, arg1) {
+  dependencyMap[arg0] = dependencyMap[arg0] || [];
+  dependencyMap[arg0].push(arg1);
 };
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
-  closure_0 = arg1;
-  closure_1 = arg2;
-  closure_2 = arg3;
-  const navigation = fn();
-  c4 = false;
-  closure_5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    let tmp2 = false === c4;
-    if (tmp2) {
-      tmp2 = timeMs > closure_0 + closure_1;
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp2[arg0] = true;
+    try {
+      fn();
+    } catch (tmp5) {
+      if (_mod13049.DEBUG_BUILD) {
+        const logger = tmp6(13050).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + tmp, tmp5);
+      }
+      tmp6 = require;
     }
-    if (tmp2) {
-      c4 = true;
-      if (closure_5) {
-        closure_2();
+  }
+};
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    dependencyMap[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  let tmp8 = arg0;
+  if (arg0) {
+    tmp8 = dependencyMap[arg0];
+  }
+  if (tmp8) {
+    const iter = tmp8[Symbol.iterator]();
+    if (iter !== undefined) {
+      try {
+        tmp15(arg1);
+      } catch (tmp18) {
+        if (_mod13049.DEBUG_BUILD) {
+          const logger = tmp19(13050).logger;
+          logger.error(tmp2 + tmp6 + tmp3 + tmp19(13053).getFunctionName(tmp7) + tmp4, tmp18);
+          const tmp19Result = tmp19(13053);
+        }
       }
     }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
-    }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      closure_5 = arg0;
-    }
-  };
+    const nextResult = iter.next();
+  }
 };

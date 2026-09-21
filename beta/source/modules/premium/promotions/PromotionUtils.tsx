@@ -1,20 +1,20 @@
-// Module ID: 13511
-// Function ID: 13512
+// Module ID: 13690
+// Function ID: 13691
 // Name: PromotionUtils
-// Dependencies: [5, 1219, 10795, 10794, 1373, 1074, 1920, 4488, 1270, 1363, 1240, 1384, 1943, 11, 1945, 10826, 2]
+// Dependencies: [5, 1220, 10926, 10925, 1374, 1074, 2004, 4607, 1271, 1364, 1241, 1385, 2027, 11, 2029, 10957, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13511 (PromotionUtils)
+// Module 13690 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import FlagUtils from "FlagUtils" /* 1384 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 1945 */;
-import constants from "constants" /* 10826 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
+import constants from "constants" /* 10957 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
-import PromotionRecord from "PromotionRecord" /* 10795 */;
-import PromotionsStore from "PromotionsStore" /* 10794 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import PromotionRecord from "PromotionRecord" /* 10926 */;
+import PromotionsStore from "PromotionsStore" /* 10925 */;
 
 require = fn;
 function claimedOutboundPromotionCodeFromServer(code) {
@@ -114,10 +114,10 @@ let closure_12 = async function _claimOutboundPromotion(arg0, value) {
     }
   }
 };
-const PromotionFlags = fn(1373).PromotionFlags;
+const PromotionFlags = fn(1374).PromotionFlags;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9, Platforms: c10 } = Constants);
-const ActivityPlatform = fn(1920).ActivityPlatform;
+const ActivityPlatform = fn(2004).ActivityPlatform;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionUtils.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 17746
-// Function ID: 17747
+// Module ID: 18065
+// Function ID: 18066
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1385, 1074, 4859, 7854, 1114, 8298, 13429, 2]
+// Dependencies: [19, 1386, 1074, 4978, 7994, 1115, 8450, 13602, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 17746 (useGuildSettingsRoleExampleMessage)
-import util from "util" /* 1114 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4859 */;
-import createMessageDefault from "createMessage" /* 7854 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8298 */;
+// Module 18065 (useGuildSettingsRoleExampleMessage)
+import util from "util" /* 1115 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
+import createMessageDefault from "createMessage" /* 7994 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8450 */;
 import noop from "module_19" /* 19 */;
-import UserRecord from "UserRecord" /* 1385 */;
+import UserRecord from "UserRecord" /* 1386 */;
 
 require = fn;
 const MessageStates = fn(1074).MessageStates;

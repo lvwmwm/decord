@@ -1,14 +1,14 @@
-// Module ID: 14850
-// Function ID: 14851
+// Module ID: 15038
+// Function ID: 15039
 // Name: AccountStandingSetting
-// Dependencies: [8079, 1074, 11605, 1114, 14851, 14854, 2]
+// Dependencies: [8233, 1074, 11725, 1115, 15039, 15042, 2]
 
-// Module 14850 (AccountStandingSetting)
+// Module 15038 (AccountStandingSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1114 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 14851 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+import util from "util" /* 1115 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import useAccountStandingStatusLabel from "useAccountStandingStatusLabel" /* 15039 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

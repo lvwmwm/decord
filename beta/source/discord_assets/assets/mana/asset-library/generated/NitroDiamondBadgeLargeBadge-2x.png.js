@@ -1,12 +1,12 @@
-// Module ID: 6363
-// Function ID: 6364
+// Module ID: 6503
+// Function ID: 6504
 // Dependencies: [2]
 
-// Module 6363
+// Module 6503
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroDiamondBadgeLargeBadge-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/1c8a8ef5e38d46b3d6eb47bdd8d733fa0d46eb88808192a29d8ff21a80520cb8.png";
+export default "https://cdn.discordapp.com/assets/content/cc13696a4c8a273c0a7afcf717ad311dccfb6421062a29e5fb8d80f765aff6a9.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/NitroDiamondBadgeLargeBadge-2x.png";
-export const metadata = { fileBytes: 18913 };
+export const metadata = { fileBytes: 18856 };

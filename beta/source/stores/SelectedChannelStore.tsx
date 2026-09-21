@@ -1,25 +1,25 @@
-// Module ID: 2011
-// Function ID: 2012
+// Module ID: 2095
+// Function ID: 2096
 // Name: SelectedChannelStore
-// Dependencies: [1961, 502, 1957, 2012, 1979, 1908, 4275, 4458, 1074, 1964, 510, 12, 1369, 1086, 504, 573, 2]
+// Dependencies: [2045, 502, 2041, 2096, 2063, 1992, 4395, 4577, 1074, 2048, 510, 12, 1370, 1086, 504, 573, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 2011 (SelectedChannelStore)
+// Module 2095 (SelectedChannelStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import ChannelConstants from "ChannelConstants" /* 1964 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import ChannelConstants from "ChannelConstants" /* 2048 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -715,7 +715,7 @@ const selectedChannelStore = new SelectedChannelStore(DispatcherDefault, {
             const values = closure_1_1(12)(selectedChannelIds).values();
             const obj2 = closure_1_1(12)(selectedChannelIds);
             const combined = values.concat(closure_1_1(12).values(mostRecentSelectedTextChannelIds));
-            const found = combined.filter(closure_1_0(1369).isNotNullish);
+            const found = combined.filter(closure_1_0(1370).isNotNullish);
             const obj4 = closure_1_1(12);
             const uniqResult = found.uniq();
             obj.knownThreadIds = found.uniq().filter((item) => {

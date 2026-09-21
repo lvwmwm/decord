@@ -1,16 +1,16 @@
-// Module ID: 9671
-// Function ID: 9672
+// Module ID: 9607
+// Function ID: 9608
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 4636, 576, 9672, 4632, 1114, 4980, 1176, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9608, 4752, 1115, 5108, 1177, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 9671 (confirmActivityAgeGateAlert)
+// Module 9607 (confirmActivityAgeGateAlert)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 9672 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 9608 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ function ConfirmActivityGateContent(children) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, textAlign: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -35,7 +35,7 @@ export const confirmActivityAgeGateAlert = function confirmActivityAgeGateAlert(
   const intl = util.intl;
   const formatToPlainStringResult = intl.formatToPlainString(util.t.OgmIqy, { applicationName: application.name });
   const obj = { applicationName: application.name };
-  const obj3 = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, confirmColor: null };
+  const obj3 = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, confirmColor: null, isDismissable: false };
   const intl2 = util.intl;
   obj3.title = intl2.string(util.t.SSDPOF);
   obj3.children = React4(ConfirmActivityGateContent, { description: formatToPlainStringResult });

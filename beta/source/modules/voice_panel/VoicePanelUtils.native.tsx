@@ -1,46 +1,24 @@
-// Module ID: 9811
-// Function ID: 9812
+// Module ID: 9770
+// Function ID: 9771
 // Name: VoicePanelUtils
-// Dependencies: [1957, 4659, 4844, 4845, 563, 2]
-// Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
+// Dependencies: [2041, 4779, 4964, 563, 2]
+// Exports: useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 9811 (VoicePanelUtils)
+// Module 9770 (VoicePanelUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import StageVoicePanelExperiment from "StageVoicePanelExperiment" /* 4845 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import VoicePanelStore from "VoicePanelStore" /* 4844 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import VoicePanelStore from "VoicePanelStore" /* 4964 */;
 
 require = fn;
 const size = fn(2);
-let result = size.fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
+const result = size.fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
 
-export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
-  const result = StageVoicePanelExperiment.isStageVoicePanelEnabled("voice_panel_utils");
-  let tmp2 = !result;
-  if (!result) {
-    let isGuildStageVoiceResult;
-    if (channel2 != null) {
-      isGuildStageVoiceResult = channel2.isGuildStageVoice();
-    }
-    tmp2 = isGuildStageVoiceResult;
-  }
-  return !tmp2;
-};
 export const useIsVoicePanelShowing = function useIsVoicePanelShowing() {
   const items = [ChannelStore, RTCConnectionStore];
   return useStateFromStores.useStateFromStores(items, () => {
     channel = channel.getChannel(channelId.getChannelId());
-    let tmp = null != channel;
-    if (tmp) {
-      const isGuildStageVoiceResult = channel.isGuildStageVoice();
-      let result = !isGuildStageVoiceResult;
-      if (isGuildStageVoiceResult) {
-        result = StageVoicePanelExperiment.isStageVoicePanelEnabled("voice_panel_utils");
-      }
-      tmp = result;
-    }
-    return tmp;
+    return null != channel && !channel.isGuildStageVoice();
   });
 };
 export const useIsVoicePanelFullscreen = function useIsVoicePanelFullscreen() {

@@ -1,19 +1,19 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 9105
+// Function ID: 9106
 // Name: NameplateCardPreview
-// Dependencies: [17, 21, 4636, 576, 38, 1889, 1886, 8944, 1176, 2]
+// Dependencies: [17, 21, 4756, 576, 38, 1973, 1970, 9098, 1177, 2]
 // Exports: default
 
-// Module 8951 (NameplateCardPreview)
+// Module 9105 (NameplateCardPreview)
 import _mod17 from "module_17" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import utils from "utils" /* 1886 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 8944 */;
+import native from "native" /* 1177 */;
+import utils from "utils" /* 1970 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import NameplateDummyUserPreview from "NameplateDummyUserPreview" /* 9098 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4756 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = _mod17.View;

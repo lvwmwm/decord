@@ -1,14 +1,14 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12489
+// Function ID: 12490
 // Name: useUploadDisabled
-// Dependencies: [4977, 4275, 4976, 1074, 504, 7324, 2]
+// Dependencies: [5105, 4395, 5104, 1074, 504, 7466, 2]
 // Exports: default
 
-// Module 12369 (useUploadDisabled)
-import DraftStore from "DraftStore" /* 4977 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7324 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 4976 */;
+// Module 12489 (useUploadDisabled)
+import DraftStore from "DraftStore" /* 5105 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7466 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

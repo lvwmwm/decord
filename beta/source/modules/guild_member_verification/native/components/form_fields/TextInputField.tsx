@@ -1,20 +1,20 @@
-// Module ID: 7186
-// Function ID: 7187
+// Module ID: 7328
+// Function ID: 7329
 // Name: TextInputField
-// Dependencies: [19, 17, 5140, 21, 4636, 6707, 4632, 1114, 2]
+// Dependencies: [19, 17, 5270, 21, 4756, 6848, 4752, 1115, 2]
 // Exports: default
 
-// Module 7186 (TextInputField)
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import TextInput from "TextInput" /* 6707 */;
+// Module 7328 (TextInputField)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import TextInput from "TextInput" /* 6848 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const MAX_TEXT_RESPONSE_LENGTH = fn(5140).MAX_TEXT_RESPONSE_LENGTH;
+const MAX_TEXT_RESPONSE_LENGTH = fn(5270).MAX_TEXT_RESPONSE_LENGTH;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TextInputField.tsx");
@@ -28,7 +28,7 @@ export default function TextInputField(field) {
     str = "";
   }
   obj2.value = str;
-  const intl = tmp3(1114).intl;
+  const intl = tmp3(1115).intl;
   obj2.placeholder = intl.string(util.t["Sqn+Wh"]);
   obj2.onChange = field.onChange;
   obj.children = jsx(TextInput.TextInput, { label: jsx(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: field.label }), maxLength: MAX_TEXT_RESPONSE_LENGTH, value: null, placeholder: null, onChange: null });

@@ -1,13 +1,13 @@
-// Module ID: 12598
-// Function ID: 12599
+// Module ID: 12719
+// Function ID: 12720
 // Name: ChatXIcon
-// Dependencies: [19, 21, 576, 4337, 12599, 2]
+// Dependencies: [19, 21, 576, 4456, 12720, 2]
 // Exports: ChatXIcon
 
-// Module 12598 (ChatXIcon)
+// Module 12719 (ChatXIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod12599 from "module_12599" /* 12599 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod12720 from "module_12720" /* 12720 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChatXIcon = function ChatXIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12599, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12720, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

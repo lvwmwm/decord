@@ -1,12 +1,12 @@
-// Module ID: 7590
-// Function ID: 7591
+// Module ID: 7729
+// Function ID: 7730
 // Name: KvMessage
-// Dependencies: [32, 2021, 1371, 1074, 2]
+// Dependencies: [32, 2105, 1372, 1074, 2]
 
-// Module 7590 (KvMessage)
+// Module 7729 (KvMessage)
 import _slicedToArray from "module_32" /* 32 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 const prototype = function KvMessage() {

@@ -1,24 +1,24 @@
-// Module ID: 12154
-// Function ID: 12155
+// Module ID: 12274
+// Function ID: 12275
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 1964, 21, 4636, 7378, 12136, 12146, 12155, 12158, 2]
+// Dependencies: [32, 19, 17, 2048, 21, 4756, 7517, 12256, 12266, 12275, 12278, 2]
 // Exports: default
 
-// Module 12154 (ForumPostList)
-import ForumTagHooks from "ForumTagHooks" /* 7378 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12136 */;
-import ForumPostAppliedTags from "ForumPostAppliedTags" /* 12146 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 12155 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 12158 */;
+// Module 12274 (ForumPostList)
+import ForumTagHooks from "ForumTagHooks" /* 7517 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12256 */;
+import ForumPostAppliedTags from "ForumPostAppliedTags" /* 12266 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 12275 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 12278 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const ChannelFlags = fn(1964).ChannelFlags;
+const ChannelFlags = fn(2048).ChannelFlags;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_9 = createStyles.createStyles({ header: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 }, content: { flex: 1, marginBottom: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/list/ForumPostList.tsx");

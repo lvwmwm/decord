@@ -1,11 +1,11 @@
-// Module ID: 8469
-// Function ID: 8470
+// Module ID: 8622
+// Function ID: 8623
 // Name: ICYMIActionCreators
-// Dependencies: [5, 1074, 1270, 573, 1230, 8468, 1935, 2]
+// Dependencies: [5, 1074, 1271, 573, 1231, 8621, 2019, 2]
 
-// Module 8469 (ICYMIActionCreators)
+// Module 8622 (ICYMIActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ICYMIUtils from "ICYMIUtils" /* 8468 */;
+import ICYMIUtils from "ICYMIUtils" /* 8621 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -484,7 +484,7 @@ export default {
               closure_128_0 = undefined;
               if (obj9.icymiEnabled("guildChannelScores")) {
                 c3 = 1;
-                const HTTP = tmp31(1270).HTTP;
+                const HTTP = tmp31(1271).HTTP;
                 const obj5 = { url: constants.GRAVITY_CUSTOM_SCORES, rejectWithError: false };
                 c4 = 2;
                 c5 = 1;
@@ -559,7 +559,7 @@ export default {
               closure_128_0 = undefined;
               if (obj9.icymiEnabled("recommendedGuilds")) {
                 c3 = 1;
-                const HTTP = tmp31(1270).HTTP;
+                const HTTP = tmp31(1271).HTTP;
                 const obj5 = { url: constants.GRAVITY_RECOMMENDED_GUILDS, rejectWithError: false };
                 c4 = 2;
                 c5 = 1;
@@ -634,13 +634,13 @@ export default {
               closure_128_0 = undefined;
               closure_128_1 = undefined;
               if (obj9.icymiEnabled("mediaForCurrentStatus")) {
-                const CustomStatusSetting = tmp37(1935).CustomStatusSetting;
+                const CustomStatusSetting = tmp37(2019).CustomStatusSetting;
                 const setting = CustomStatusSetting.getSetting();
                 closure_128_0 = setting;
                 if (null != setting) {
                   if (null != setting.createdAtMs) {
                     c3 = 1;
-                    const HTTP = tmp37(1270).HTTP;
+                    const HTTP = tmp37(1271).HTTP;
                     const obj5 = { url: constants.GRAVITY_ATTACHMENTS, rejectWithError: false };
                     c4 = 2;
                     c5 = 1;

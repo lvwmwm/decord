@@ -1,13 +1,13 @@
-// Module ID: 10054
-// Function ID: 10055
+// Module ID: 10182
+// Function ID: 10183
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 9597, 1074, 21, 4636, 576, 5204, 4488, 5046, 1176, 2]
+// Dependencies: [19, 17, 9640, 1074, 21, 4756, 576, 5339, 4607, 5174, 1177, 2]
 // Exports: default
 
-// Module 10054 (ChannelCallNavigatorIcon)
+// Module 10182 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 576 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5046 */;
-import Pressables from "Pressables" /* 5204 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5174 */;
+import Pressables from "Pressables" /* 5339 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,12 +15,12 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
-const resetFocusTimer = fn(9597).resetFocusTimer;
+const resetFocusTimer = fn(9640).resetFocusTimer;
 const Constants = fn(1074);
 ({ ThemeTypes: metroRequire, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { pressableContainer: { marginHorizontal: 4 }, pressable: { borderRadius: nativeDefault.radii.lg }, container: null, text: null, disabled: null, iconColor: null };
 let size = { flexDirection: "row", height: 32, width: 32, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center", overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.container = size;
@@ -78,8 +78,8 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     const obj5 = { color: tmp2.iconColor.color, size: "sm" };
     let tmp3Result3 = tmp3(IconComponent, obj5);
   } else {
-    const obj6 = { source, color: tmp2.iconColor.color, size: tmp6(1176).Icon.Sizes.SMALL_20 };
-    tmp3Result3 = tmp3(tmp6(1176).Icon, obj6);
+    const obj6 = { source, color: tmp2.iconColor.color, size: tmp6(1177).Icon.Sizes.SMALL_20 };
+    tmp3Result3 = tmp3(tmp6(1177).Icon, obj6);
   }
   items1[1] = tmp3Result3;
   let tmp3Result4 = null != membersCount;
@@ -88,7 +88,7 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
   }
   if (tmp3Result4) {
     const obj7 = { style: tmp2.text, children: membersCount };
-    tmp3Result4 = tmp3(tmp6(1176).LegacyText, obj7);
+    tmp3Result4 = tmp3(tmp6(1177).LegacyText, obj7);
   }
   items1[2] = tmp3Result4;
   obj3.children = items1;

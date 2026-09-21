@@ -1,20 +1,20 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 17024
+// Function ID: 17025
 // Name: vibegrationsMessageAuthors
-// Dependencies: [1371, 8298, 2]
+// Dependencies: [1372, 8450, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 16710 (vibegrationsMessageAuthors)
-import UserActionCreatorsAll from "UserActionCreators" /* 8298 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 17024 (vibegrationsMessageAuthors)
+import UserActionCreatorsAll from "UserActionCreators" /* 8450 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const set = new Set();
 const map = new Map();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/vibegrationsMessageAuthors.tsx");
 
-export const resolveMessageAuthor = function resolveMessageAuthor(userId, user, currentUser) {
-  if (null == userId) {
+export const resolveMessageAuthor = function resolveMessageAuthor(stateFromStores, user, currentUser) {
+  if (null == stateFromStores) {
     let tmp2 = currentUser;
     if (currentUser == null) {
       tmp2 = null;
@@ -28,19 +28,19 @@ export const resolveMessageAuthor = function resolveMessageAuthor(userId, user, 
   }
   return tmp;
 };
-export const requestMessageAuthor = function requestMessageAuthor(userId) {
-  importAll = userId;
-  if (null != userId) {
-    if (!set.has(userId)) {
-      if (null == UserStore.getUser(userId)) {
-        let num = map.get(userId);
+export const requestMessageAuthor = function requestMessageAuthor(stateFromStores) {
+  importAll = stateFromStores;
+  if (null != stateFromStores) {
+    if (!set.has(stateFromStores)) {
+      if (null == UserStore.getUser(stateFromStores)) {
+        let num = map.get(stateFromStores);
         if (num == null) {
           num = 0;
         }
         if (num < 3) {
-          const result = obj3.set(userId, num + 1);
-          obj2.add(userId);
-          const user = UserActionCreatorsAll.getUser(userId);
+          const result = obj3.set(stateFromStores, num + 1);
+          obj2.add(stateFromStores);
+          const user = UserActionCreatorsAll.getUser(stateFromStores);
           user.finally(() => set.delete(closure_0)).catch(() => {
 
           });

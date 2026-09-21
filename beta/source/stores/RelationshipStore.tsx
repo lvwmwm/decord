@@ -1,14 +1,14 @@
-// Module ID: 4285
-// Function ID: 4286
+// Module ID: 4405
+// Function ID: 4406
 // Name: RelationshipStore
-// Dependencies: [32, 4286, 1371, 1074, 573, 504, 2]
+// Dependencies: [32, 4406, 1372, 1074, 573, 504, 2]
 
-// Module 4285 (RelationshipStore)
+// Module 4405 (RelationshipStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4286 */;
-import UserStore from "UserStore" /* 1371 */;
+import MessageRecord from "MessageRecord" /* 4406 */;
+import UserStore from "UserStore" /* 1372 */;
 
 function markAllUserIdListsStale() {
   set3.add("friends");

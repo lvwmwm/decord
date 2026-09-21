@@ -1,9 +1,11 @@
 // Module ID: 8796
 // Function ID: 8797
-// Dependencies: [1120]
+// Dependencies: [65]
 
 // Module 8796
-import registerAsset from "module_1120" /* 1120 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFilter", validAttributes: { name: true, x: true, y: true, height: true, width: true, filterUnits: true, primitiveUnits: true } };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3badf2b48a53beb45ce4acb0a2b90dbd", name: "MoreHorizontalIcon", type: "png" });
+export default module_65.get("RNSVGFilter", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

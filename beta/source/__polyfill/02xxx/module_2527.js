@@ -1,9 +1,9 @@
 // Module ID: 2527
 // Function ID: 2528
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2527
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/file_upload", scales: [1], hash: "23b8cc9c9f2f7ce0243fa024f7324767", name: "NitroFileUpload.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Bvd2VydXBz", scales: [1], hash: "12bf80652c04b0adf03c60ea761b25ff", name: "hu.messages.12bf80652c04b0adf03c60ea761b25ff.compiled.messages", type: "jsona" });

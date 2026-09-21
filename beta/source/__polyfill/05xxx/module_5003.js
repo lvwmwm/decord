@@ -1,32 +1,35 @@
 // Module ID: 5003
 // Function ID: 5004
-// Dependencies: [17]
-// Exports: parseAndroidIconToNativeProps
+// Dependencies: [5004]
 
 // Module 5003
-import _mod17 from "module_17" /* 17 */;
+import _mod5004 from "module_5004" /* 5004 */;
 
-const Image = _mod17.Image;
 
-export const parseAndroidIconToNativeProps = function parseAndroidIconToNativeProps(icon) {
-  if (icon) {
-    if ("imageSource" === icon.type) {
-      const assetSource = Image.resolveAssetSource(icon.imageSource);
-      if (!assetSource) {
-        const _console = console;
-        console.error("[RNScreens] Failed to resolve an asset.");
+export default function Type(num) {
+  let str = "Null";
+  if (null !== num) {
+    let str2 = "Undefined";
+    if (undefined !== num) {
+      let str3 = "Object";
+      if (!_mod5004(num)) {
+        let str4 = "Number";
+        if (typeof num !== "number") {
+          let str5 = "Boolean";
+          if (typeof num !== "boolean") {
+            let str6;
+            if (typeof num === "string") {
+              str6 = "String";
+            }
+            str5 = str6;
+          }
+          str4 = str5;
+        }
+        str3 = str4;
       }
-      const obj2 = { imageIconResource: assetSource };
-      return obj2;
-    } else if ("drawableResource" === icon.type) {
-      const obj = { drawableIconResourceName: icon.name };
-      return obj;
-    } else {
-      const _Error = Error;
-      const error = new Error("[RNScreens] Incorrect icon format for Android. You must provide `imageSource` or `drawableResource`.");
-      throw error;
+      str2 = str3;
     }
-  } else {
-    return {};
+    str = str2;
   }
+  return str;
 };

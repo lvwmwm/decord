@@ -1,10 +1,10 @@
-// Module ID: 7982
-// Function ID: 7983
+// Module ID: 8122
+// Function ID: 8123
 // Name: SearchConstants
-// Dependencies: [1074, 7983, 2]
+// Dependencies: [1074, 8123, 2]
 
-// Module 7982 (SearchConstants)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7983 */;
+// Module 8122 (SearchConstants)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8123 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -91,5 +91,5 @@ export const SearchLinkTypes = { TEXT: "text", EMBED: "embed" };
 export const SearchFileTypes = { AUDIO: "audio", MEDIA_ATTACHMENT: "media_attachment", ATTACHMENT: "attachment" };
 export const SEARCH_BAR_HEIGHT = 40;
 export const SearchQueryTagTypes = { COMPLETE: "complete", PREFIX: "prefix", ANSWER: "answer" };
-export const SearchQuerySource = { SEARCH_TEXT_INPUT: "search_text_input", SEARCH_POPOUT: "search_popout", SEARCH_FILTERS_MODAL: "search_filters_modal", SEARCH_XDM_SETTINGS: "search_xdm_settings" };
+export const SearchQuerySource = { SEARCH_TEXT_INPUT: "search_text_input", SEARCH_POPOUT: "search_popout", SEARCH_FILTERS_MODAL: "search_filters_modal", SEARCH_XDM_SETTINGS: "search_xdm_settings", SEARCH_RESULTS_HINT: "search_results_hint" };
 export const EMBED_TYPES_WITHOUT_DESCRIPTION = new Set(items13);

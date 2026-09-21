@@ -1,20 +1,20 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12472
+// Function ID: 12473
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 4636, 576, 12353, 4632, 1114, 10240, 12342, 11086, 2]
+// Dependencies: [17, 21, 4756, 576, 12473, 4752, 1115, 10368, 12462, 11216, 2]
 // Exports: default
 
-// Module 12352 (ScheduledMessagesIntro)
+// Module 12472 (ScheduledMessagesIntro)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import AttachmentIcon from "AttachmentIcon" /* 10240 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 11086 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12342 */;
-import _modDef12353 from "module_12353" /* 12353 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import AttachmentIcon from "AttachmentIcon" /* 10368 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11216 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12462 */;
+import _modDef12473 from "module_12473" /* 12473 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4756 */;
 import size_mod from "module_2" /* 2 */;
 
 function MenuRow(arg0) {
@@ -61,7 +61,7 @@ export default function ScheduledMessagesIntro() {
   const tmp = closure_8();
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const items = [timestampProducer(React3, { source: _modDef12353, style: tmp.upsellImage }), , ];
+  const items = [timestampProducer(React3, { source: _modDef12473, style: tmp.upsellImage }), , ];
   const obj4 = { style: tmp.textContainer, children: null };
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = util.intl;
@@ -88,7 +88,7 @@ export default function ScheduledMessagesIntro() {
   const obj12 = { style: tmp.chatInput, children: null };
   const obj13 = { style: tmp.plusButton, children: null };
   const obj10 = { style: tmp.menuDivider };
-  const obj3 = { source: _modDef12353, style: tmp.upsellImage };
+  const obj3 = { source: _modDef12473, style: tmp.upsellImage };
   obj13.children = timestampProducer(PlusLargeIcon.PlusLargeIcon, { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT });
   const items4 = [timestampProducer(hasOwnProperty, obj13), ];
   const obj15 = { variant: "text-sm/normal", color: "text-muted", children: null };

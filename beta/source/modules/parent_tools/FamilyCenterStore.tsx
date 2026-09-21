@@ -1,17 +1,16 @@
-// Module ID: 7640
-// Function ID: 7641
+// Module ID: 7779
+// Function ID: 7780
 // Name: FamilyCenterStore
-// Dependencies: [32, 4852, 1073, 1371, 7641, 1971, 11, 7642, 7695, 7696, 2]
+// Dependencies: [32, 4971, 1073, 1372, 7780, 2055, 11, 7781, 7834, 2]
 
-// Module 7640 (FamilyCenterStore)
+// Module 7779 (FamilyCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7642 */;
-import FamilyCenterV3Experiment from "FamilyCenterV3Experiment" /* 7696 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7781 */;
 import _slicedToArray from "module_32" /* 32 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
-require = fn;
+const require = fn;
 function freshTeenActivityWithMap() {
   const map = new Map();
   const result = map.set(TeenActionDisplayType.USER_ADD, new Map());
@@ -54,7 +53,7 @@ function handleInitialLoad(arg0) {
     const obj = {};
     const merged = Object.assign(acc);
     const obj2 = {};
-    const merged1 = Object.assign(closure_0(1971).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+    const merged1 = Object.assign(closure_0(2055).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
     let num = approximate_member_count.approximate_member_count;
     if (num == null) {
       num = 0;
@@ -176,7 +175,7 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       const obj = {};
       const merged = Object.assign(acc);
       const obj2 = {};
-      const merged1 = Object.assign(closure_0(1971).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+      const merged1 = Object.assign(closure_0(2055).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
       let num = approximate_member_count.approximate_member_count;
       if (num == null) {
         num = 0;
@@ -237,7 +236,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
     const obj = {};
     const merged = Object.assign(acc);
     const obj2 = {};
-    const merged1 = Object.assign(closure_0(1971).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+    const merged1 = Object.assign(closure_0(2055).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
     let num = approximate_member_count.approximate_member_count;
     if (num == null) {
       num = 0;
@@ -395,8 +394,8 @@ function reset() {
   c31 = null;
   c19 = false;
 }
-const getCountryCodeByAlpha2 = fn(4852).getCountryCodeByAlpha2;
-const FamilyCenterConstants = fn(7641);
+const getCountryCodeByAlpha2 = fn(4971).getCountryCodeByAlpha2;
+const FamilyCenterConstants = fn(7780);
 ({ FAMILY_CENTER_REFETCH_COOLDOWN: metroRequire, FAMILY_CENTER_SUB_ROUTES } = FamilyCenterConstants);
 const FamilyCenterSubPages = FamilyCenterConstants.FamilyCenterSubPages;
 const TeenActionDisplayType = FamilyCenterConstants.TeenActionDisplayType;
@@ -500,7 +499,7 @@ prototype["loadCache"] = function loadCache() {
       const obj = {};
       const merged = Object.assign(acc);
       const obj2 = {};
-      const merged1 = Object.assign(closure_0(1971).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
+      const merged1 = Object.assign(closure_0(2055).dangerouslyConstructGuildRecordFromUntypedObject(approximate_member_count));
       let num = approximate_member_count.approximate_member_count;
       if (num == null) {
         num = 0;
@@ -532,7 +531,7 @@ prototype["loadCache"] = function loadCache() {
     snapshot = teenActivityTotals.reduce((acc, item) => {
       [tmp2, tmp3] = item.split(":");
       const tmp = _slicedToArray(item.split(":"), 2);
-      const result = closure_0(7695).displayTypeFromString(tmp2);
+      const result = closure_0(7834).displayTypeFromString(tmp2);
       let tmp5 = acc;
       if (undefined !== result) {
         const obj2 = {};
@@ -692,23 +691,18 @@ prototype["canRefetch"] = function canRefetch() {
   return tmp;
 };
 prototype["isCurrentUserInRestrictedHours"] = function isCurrentUserInRestrictedHours() {
-  if (obj.getIsFamilyCenterV3Enabled({ location: "isInRestrictedHours" })) {
-    const currentUser = UserStore.getCurrentUser();
-    let flag2;
-    if (currentUser != null) {
-      const restrictedSchedule = currentUser.restrictedSchedule;
-      if (restrictedSchedule != null) {
-        flag2 = restrictedSchedule.isInRestrictedHours();
-      }
+  const currentUser = UserStore.getCurrentUser();
+  let flag;
+  if (currentUser != null) {
+    const restrictedSchedule = currentUser.restrictedSchedule;
+    if (restrictedSchedule != null) {
+      flag = restrictedSchedule.isInRestrictedHours();
     }
-    if (flag2 == null) {
-      flag2 = false;
-    }
-    return flag2;
-  } else {
-    return false;
   }
-  obj = FamilyCenterV3Experiment;
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
 };
 FamilyCenterStore.displayName = "FamilyCenterStore";
 FamilyCenterStore.LATEST_SNAPSHOT_VERSION = 3;

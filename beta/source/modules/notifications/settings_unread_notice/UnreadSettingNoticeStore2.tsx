@@ -1,20 +1,20 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11675
+// Function ID: 11676
 // Name: UnreadSettingNoticeStore2
-// Dependencies: [502, 1957, 1979, 2011, 4817, 1074, 4818, 1084, 1090, 11, 1384, 504, 10277, 573, 2]
+// Dependencies: [502, 2041, 2063, 2095, 4937, 1074, 4938, 1084, 1091, 11, 1385, 504, 10404, 573, 2]
 
-// Module 11549 (UnreadSettingNoticeStore2)
+// Module 11675 (UnreadSettingNoticeStore2)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import FlagUtils from "FlagUtils" /* 1384 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10277 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
 
 require = fn;
 function startInterval() {
@@ -126,7 +126,7 @@ function shouldTrackChannel(channelId) {
   }
 }
 const UserNotificationSettings = fn(1074).UserNotificationSettings;
-const UnreadSetting = fn(4818).UnreadSetting;
+const UnreadSetting = fn(4938).UnreadSetting;
 const constants = fn(1084).ChannelNotificationSettingsFlags;
 let items = [{ timeSinceJoin: DurationsDefault.Millis.HOUR, sends: 1, viewTime: DurationsDefault.Millis.MINUTE }, , , ];
 let obj = { timeSinceJoin: DurationsDefault.Millis.HOUR, sends: 1, viewTime: DurationsDefault.Millis.MINUTE };

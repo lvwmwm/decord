@@ -1,18 +1,18 @@
-// Module ID: 1371
-// Function ID: 1372
+// Module ID: 1372
+// Function ID: 1373
 // Name: UserStore
-// Dependencies: [1372, 1385, 502, 1073, 1074, 1373, 1387, 1382, 1881, 1882, 1388, 1392, 1393, 1394, 1384, 12, 1893, 1894, 1369, 2]
+// Dependencies: [1373, 1386, 502, 1073, 1074, 1374, 1388, 1383, 1965, 1966, 1389, 1393, 1394, 1395, 1385, 12, 1977, 1978, 1370, 2]
 
-// Module 1371 (UserStore)
+// Module 1372 (UserStore)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import UserStoreUtils from "UserStoreUtils" /* 1382 */;
-import FlagUtilsAll from "FlagUtils" /* 1384 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1387 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1893 */;
-import Server from "Server" /* 1894 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1372 */;
-import UserRecord from "UserRecord" /* 1385 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import UserStoreUtils from "UserStoreUtils" /* 1383 */;
+import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1388 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1977 */;
+import Server from "Server" /* 1978 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1373 */;
+import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
 
@@ -42,11 +42,11 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (!result) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        tmp2.primaryGuild = tmp5(1387).ensureUserPrimaryGuild(primary_guild.primary_guild);
+        tmp2.primaryGuild = tmp5(1388).ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[tmp2.id] = tmp2;
         closure_12 = closure_12 + 1;
         flag = true;
-        const tmp5Result = tmp5(1387);
+        const tmp5Result = tmp5(1388);
       }
       tmp8 = flag;
     }
@@ -96,15 +96,15 @@ function transformUser(mfa_enabled) {
   }
   const avatar_decoration_data = mfa_enabled.avatar_decoration_data;
   if (undefined !== avatar_decoration_data) {
-    mfa_enabled.avatarDecorationData = tmp4(1881).parseAvatarDecorationData(avatar_decoration_data);
+    mfa_enabled.avatarDecorationData = tmp4(1965).parseAvatarDecorationData(avatar_decoration_data);
     delete tmp[tmp3];
-    const tmp4Result = tmp4(1881);
+    const tmp4Result = tmp4(1965);
   }
   const collectibles = mfa_enabled.collectibles;
   if (undefined !== collectibles) {
     delete tmp[tmp3];
-    mfa_enabled.collectibles = tmp4(1882).parseServerUserCollectibles(collectibles);
-    const tmp4Result6 = tmp4(1882);
+    mfa_enabled.collectibles = tmp4(1966).parseServerUserCollectibles(collectibles);
+    const tmp4Result6 = tmp4(1966);
   }
   const global_name = mfa_enabled.global_name;
   if (undefined !== global_name) {
@@ -113,30 +113,30 @@ function transformUser(mfa_enabled) {
   }
   const primary_guild = mfa_enabled.primary_guild;
   if (undefined !== primary_guild) {
-    mfa_enabled.primary_guild = tmp4(1387).ensureUserPrimaryGuild(primary_guild);
-    const tmp4Result7 = tmp4(1387);
+    mfa_enabled.primary_guild = tmp4(1388).ensureUserPrimaryGuild(primary_guild);
+    const tmp4Result7 = tmp4(1388);
   }
   const display_name_styles = mfa_enabled.display_name_styles;
   if (undefined !== display_name_styles) {
-    mfa_enabled.displayNameStyles = tmp4(1388).parseServerDisplayNameStyles(display_name_styles);
+    mfa_enabled.displayNameStyles = tmp4(1389).parseServerDisplayNameStyles(display_name_styles);
     delete tmp[tmp3];
-    const tmp4Result8 = tmp4(1388);
+    const tmp4Result8 = tmp4(1389);
   }
   const typing_indicator_style = mfa_enabled.typing_indicator_style;
   if (undefined !== typing_indicator_style) {
-    mfa_enabled.typingIndicatorStyle = tmp4(1392).parseServerTypingIndicatorStyle(typing_indicator_style);
+    mfa_enabled.typingIndicatorStyle = tmp4(1393).parseServerTypingIndicatorStyle(typing_indicator_style);
     delete tmp[tmp3];
-    const tmp4Result9 = tmp4(1392);
+    const tmp4Result9 = tmp4(1393);
   }
   const premium_state = mfa_enabled.premium_state;
   if (undefined !== premium_state) {
-    mfa_enabled.premiumState = tmp4(1393).parseServerPremiumState(premium_state);
+    mfa_enabled.premiumState = tmp4(1394).parseServerPremiumState(premium_state);
     delete tmp[tmp3];
-    const tmp4Result10 = tmp4(1393);
+    const tmp4Result10 = tmp4(1394);
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp4(1394).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp4(1395).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -238,8 +238,8 @@ function mergeUser(user, arg1) {
       if (tmp16 !== true) {
         if (tmp17 !== true) {
           if (obj5.isUserPrimaryGuildEqual(obj.primaryGuild, user.primary_guild) !== true) {
-            user.primary_guild = tmp18(1387).ensureUserPrimaryGuild(user.primary_guild);
-            const tmp18Result = tmp18(1387);
+            user.primary_guild = tmp18(1388).ensureUserPrimaryGuild(user.primary_guild);
+            const tmp18Result = tmp18(1388);
           }
           obj5 = PrimaryGuildUtils;
           tmp18 = require;
@@ -606,6 +606,13 @@ function handleLoadSearchResults(data) {
   });
   return false;
 }
+function handleIntelligenceSearchFetchSuccess(messages) {
+  messages = messages.messages;
+  const item = messages.forEach((item) => {
+    mergeUsersFromMessage(item, true);
+  });
+  return false;
+}
 function handleLoadThreadsSuccess(arg0) {
   ({ firstMessages, owners } = arg0);
   if (null != firstMessages) {
@@ -691,9 +698,9 @@ function handleIncomingMessage(message) {
       let flag = null != obj3;
       if (flag) {
         id = AuthenticationStore.getId();
-        obj[id] = obj3.set("flags", tmp2(1384).setFlag(obj3.flags, constants.HAS_UNREAD_URGENT_MESSAGES, true));
+        obj[id] = obj3.set("flags", tmp2(1385).setFlag(obj3.flags, constants.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
-        const tmp2Result = tmp2(1384);
+        const tmp2Result = tmp2(1385);
       }
       return flag;
     }
@@ -727,7 +734,7 @@ function handlePresenceUpdates(updates) {
     if (null == closure_11[item.user.id]) {
       return false;
     } else {
-      const reduced = closure_43.reduce((acc, item) => {
+      const reduced = closure_44.reduce((acc, item) => {
         const user = item.user;
         let tmp2 = acc;
         if (user.hasOwnProperty(item)) {
@@ -1134,11 +1141,11 @@ function handleGuildStickersFetchSuccess(stickers) {
 }
 const Constants = fn(1074);
 ({ UserFlags: closure_7, MessageFlags: closure_8, ChannelTypes: closure_9 } = Constants);
-let closure_10 = fn(1373).UNSELECTED_PREMIUM_TYPE_OVERRIDE;
+let closure_10 = fn(1374).UNSELECTED_PREMIUM_TYPE_OVERRIDE;
 let users = {};
 let closure_12 = 0;
 let c13 = "47835198259242069";
-let closure_43 = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
+let closure_44 = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
 let UserStore;
 class UserStore extends tmp2 {
   constructor() {
@@ -1157,6 +1164,7 @@ class UserStore extends tmp2 {
       CURRENT_USER_UPDATE: handleCurrentUserUpdate,
       PRESENCE_UPDATES: handlePresenceUpdates,
       SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
+      INTELLIGENCE_SEARCH_FETCH_SUCCESS: handleIntelligenceSearchFetchSuccess,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
       LOAD_MESSAGES_SUCCESS: handleLoadMessages,
       LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
@@ -1215,7 +1223,7 @@ class UserStore extends tmp2 {
       CLOSE_AGE_VERIFICATION_MODAL: handleCloseAgeVerificationModal,
       INTERACTION_MODAL_CREATE: handleInteractionModalCreate
     };
-    tmp1 = new tmp(obj, handleCloseAgeVerificationModal, new.target, tmp);
+    tmp1 = new tmp(obj, handleIntelligenceSearchFetchSuccess, handleCloseAgeVerificationModal, new.target);
     closure_0 = tmp1;
     return tmp1;
   }

@@ -1,18 +1,18 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11842
+// Function ID: 11843
 // Name: GroupDMNitroUpsellModel
-// Dependencies: [1371, 1074, 1373, 1885, 504, 1114, 2]
+// Dependencies: [1372, 1074, 1374, 1969, 504, 1115, 2]
 // Exports: getGroupDMAddMembersEntryAction, getGroupDMNitroAudience, getGroupDMNitroCapCTAMessage, getGroupDMNitroUpsellRoute, isGroupDMNitroUpsellAudience, shouldUseGroupDMParticipantLimitUI, useGroupDMNitroAudience
 
-// Module 11724 (GroupDMNitroUpsellModel)
+// Module 11842 (GroupDMNitroUpsellModel)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1885 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const MAX_GROUP_DM_PARTICIPANTS = fn(1074).MAX_GROUP_DM_PARTICIPANTS;
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const GroupDMNitroAcquisitionStrategy = { MARKETING: "marketing", CHECKOUT: "checkout" };
 let obj2 = { NONE: "none", MANAGE: "manage", MARKETING: "marketing", CHECKOUT: "checkout" };
 const size = fn(2);

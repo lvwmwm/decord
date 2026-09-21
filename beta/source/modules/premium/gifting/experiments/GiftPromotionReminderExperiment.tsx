@@ -1,10 +1,10 @@
-// Module ID: 10870
-// Function ID: 10871
+// Module ID: 10998
+// Function ID: 10999
 // Name: GiftPromotionReminderExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 10870 (GiftPromotionReminderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 10998 (GiftPromotionReminderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-gift-promotion-reminder", kind: "user", defaultConfig: { enabled: false }, variations: null };

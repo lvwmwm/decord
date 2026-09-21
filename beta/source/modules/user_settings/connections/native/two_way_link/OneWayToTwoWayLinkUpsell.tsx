@@ -1,14 +1,14 @@
-// Module ID: 15056
-// Function ID: 15057
+// Module ID: 15244
+// Function ID: 15245
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1074, 1954, 21, 4636, 576, 5605, 1176, 10754, 4632, 5056, 1114, 2]
+// Dependencies: [19, 17, 1074, 2038, 21, 4756, 576, 5741, 1177, 10885, 4752, 5186, 1115, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 15056 (OneWayToTwoWayLinkUpsell)
+// Module 15244 (OneWayToTwoWayLinkUpsell)
 import nativeDefault from "native" /* 576 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10754 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10885 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5605 */;
+import TextStyles_mod from "TextStyles" /* 5741 */;
 
 const require = fn;
 function OneWayToTwoWayNewTag(markAsDismissed) {
@@ -16,14 +16,14 @@ function OneWayToTwoWayNewTag(markAsDismissed) {
   const items = [markAsDismissed];
   const effect = noop.useEffect(() => markAsDismissed(ContentDismissActionType.UNKNOWN), items);
   const tmp = closure_8();
-  return closure_6(markAsDismissed(1176).NewTag, { containerStyle: closure_8().newContainer, variant: "text-xs/bold" });
+  return closure_6(markAsDismissed(1177).NewTag, { containerStyle: closure_8().newContainer, variant: "text-xs/bold" });
 }
 const View = fn(17).View;
 const Fonts = fn(1074).Fonts;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, margin: 16, padding: 12, borderRadius: nativeDefault.radii.sm }, header: { flexDirection: "row", marginBottom: 4, alignItems: "center" }, titleContainer: { flexGrow: 1, flexShrink: 1 }, title: null, body: null, newContainer: null, reconnectButton: null };
 let TextStyles = TextStyles_mod;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_DEFAULT, 16));
@@ -57,17 +57,17 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
   };
   const items = [newIndicatorDismissibleContent];
   obj4.contentTypes = items;
-  const items1 = [closure_6(SelectedDismissibleContentDefault, obj4), closure_6(newIndicatorDismissibleContent(4632).Text, { style: tmp.title, variant: "text-md/semibold", children: title })];
+  const items1 = [closure_6(SelectedDismissibleContentDefault, obj4), closure_6(newIndicatorDismissibleContent(4752).Text, { style: tmp.title, variant: "text-md/semibold", children: title })];
   obj3.children = items1;
   const items2 = [closure_7(View, obj3), img];
   obj2.children = items2;
-  const items3 = [closure_7(View, obj2), closure_6(newIndicatorDismissibleContent(4632).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
+  const items3 = [closure_7(View, obj2), closure_6(newIndicatorDismissibleContent(4752).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
   const obj7 = { style: tmp.reconnectButton, children: null };
   const obj8 = { text: null, onPress: null };
-  const intl = newIndicatorDismissibleContent(1114).intl;
-  obj8.text = intl.string(newIndicatorDismissibleContent(1114).t.vD60Pv);
+  const intl = newIndicatorDismissibleContent(1115).intl;
+  obj8.text = intl.string(newIndicatorDismissibleContent(1115).t.vD60Pv);
   obj8.onPress = onPress;
-  obj7.children = closure_6(newIndicatorDismissibleContent(5056).Button, obj8);
+  obj7.children = closure_6(newIndicatorDismissibleContent(5186).Button, obj8);
   items3[2] = closure_6(View, obj7);
   obj.children = items3;
   return closure_7(View, obj);

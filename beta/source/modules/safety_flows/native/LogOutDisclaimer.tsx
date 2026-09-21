@@ -1,16 +1,16 @@
-// Module ID: 17987
-// Function ID: 17988
+// Module ID: 18329
+// Function ID: 18330
 // Name: LogOutDisclaimer
-// Dependencies: [21, 14265, 4632, 1114, 2690, 6694, 2]
+// Dependencies: [21, 14456, 4752, 1115, 2776, 6834, 2]
 // Exports: default
 
-// Module 17987 (LogOutDisclaimer)
+// Module 18329 (LogOutDisclaimer)
 import jsxProd from "jsxProd" /* 21 */;
-import util from "util" /* 1114 */;
-import _modDef2690 from "module_2690" /* 2690 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6694 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 14265 */;
+import util from "util" /* 1115 */;
+import _modDef2776 from "module_2776" /* 2776 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 14456 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export default function LogOutDisclaimer() {
   const obj = { children: null };
   const obj2 = { variant: "text-xs/medium", children: null };
   const intl = util.intl;
-  obj2.children = intl.format(_modDef2690["0DHxym"], {
+  obj2.children = intl.format(_modDef2776["0DHxym"], {
     handleLogOut() {
       AuthenticationActionCreatorsDefault.logout("safety_flows_enter_email_screen");
     }

@@ -1,22 +1,22 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15591
+// Function ID: 15592
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 5358, 1961, 502, 1957, 13808, 1074, 3, 7221, 12, 1986, 573, 1270, 15406, 2]
+// Dependencies: [32, 5, 5494, 2045, 502, 2041, 13987, 1074, 3, 7363, 12, 2070, 573, 1271, 15592, 2]
 
-// Module 15405 (MessagePreviewManager)
+// Module 15591 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import RemoteFetchData from "RemoteFetchData" /* 15406 */;
+import RemoteFetchData from "RemoteFetchData" /* 15592 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13808 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13987 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
-const isThread = fn(1961).isThread;
+const isThread = fn(2045).isThread;
 const Endpoints = fn(1074).Endpoints;
 let closure_11 = new LoggerDefault("MessagePreviewManager");
 class MessagePreviewManager extends tmp3 {
@@ -367,7 +367,7 @@ prototype["fetchDms"] = function fetchDms(nextWants) {
               let body;
               const _HermesInternal = HermesInternal;
               closure_1_11.verbose("fetching dm previews (via: http, channel_ids: " + nextWantsResult.join(", ") + ")");
-              const HTTP = tmp2(1270).HTTP;
+              const HTTP = tmp2(1271).HTTP;
               const request = { url: constants.MESSAGE_PREVIEWS, body: null, rejectWithError: false };
               const obj4 = { channel_ids: nextWantsResult };
               request.body = obj4;

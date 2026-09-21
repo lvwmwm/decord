@@ -1,15 +1,15 @@
-// Module ID: 7040
-// Function ID: 7041
+// Module ID: 7182
+// Function ID: 7183
 // Name: FreeFormTextInput
-// Dependencies: [19, 17, 21, 4636, 576, 5204, 1114, 1176, 7041, 38, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5339, 1115, 1177, 7183, 38, 2]
 
-// Module 7040 (FreeFormTextInput)
+// Module 7182 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Pressables from "Pressables" /* 5204 */;
-import _modDef7041 from "module_7041" /* 7041 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Pressables from "Pressables" /* 5339 */;
+import _modDef7183 from "module_7183" /* 7183 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,14 +20,14 @@ function ClearButton(onPress) {
   obj.onPress = onPress.onPress;
   obj.hitSlop = { top: 8, bottom: 8, right: 8 };
   const tmp = closure_9();
-  obj.children = React5(native.Icon, { source: _modDef7041, style: closure_9().closeIcon, size: native.Icon.Sizes.MEDIUM });
+  obj.children = React5(native.Icon, { source: _modDef7183, style: closure_9().closeIcon, size: native.Icon.Sizes.MEDIUM });
   return React5(Pressables.PressableOpacity, obj);
 }
 get_ActivityIndicator = fn(17);
 ({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, TouchableOpacity: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" }, onPress: { flexDirection: "row" }, input: null, error: null, closeIcon: null, placeholder: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
 obj.input = { flex: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -64,13 +64,13 @@ export default noop.forwardRef((editable, ref) => {
   const imperativeHandle = noop.useImperativeHandle(ref, () => ref.current);
   let flag2 = true;
   if (native.ClearButtonVisibility.ALWAYS !== WITH_CONTENT) {
-    if (tmp7(1176).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
+    if (tmp7(1177).ClearButtonVisibility.WITH_CONTENT === WITH_CONTENT) {
       let tmp9 = null != value;
       if (tmp9) {
         tmp9 = "" !== value;
       }
       flag2 = tmp9;
-    } else if (tmp7(1176).ClearButtonVisibility.NEVER === WITH_CONTENT) {
+    } else if (tmp7(1177).ClearButtonVisibility.NEVER === WITH_CONTENT) {
       flag2 = false;
     }
   }

@@ -1,17 +1,17 @@
-// Module ID: 7375
-// Function ID: 7376
+// Module ID: 7514
+// Function ID: 7515
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 1957, 1074, 7376, 7377, 504, 7378, 7407, 38, 7412, 7266, 7414, 7416, 5589, 2]
+// Dependencies: [109, 19, 2041, 1074, 2048, 7515, 7516, 504, 7517, 7546, 38, 7551, 7408, 7553, 7555, 5725, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags, useFirstMessage, useGameInviteVoiceChatState, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 7375 (GameInvitesChannelUtils)
+// Module 7514 (GameInvitesChannelUtils)
 import _modDef38 from "module_38" /* 38 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5589 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7377 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 7407 */;
-import hasFlagDefault from "hasFlag" /* 7416 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5725 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7516 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 7546 */;
+import hasFlagDefault from "hasFlag" /* 7555 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;
 
@@ -20,8 +20,9 @@ let closure_3 = ["data"];
 const useMemo = fn(19).useMemo;
 const Constants = fn(1074);
 ({ ActivityFlags: closure_7, ActivityTypes: closure_8, MAX_CHANNEL_NAME_LENGTH: closure_9 } = Constants);
-const MAX_FORUM_POST_TAGS = fn(7376).MAX_FORUM_POST_TAGS;
-let c11 = "No Mic";
+const ChannelFlags = fn(2048).ChannelFlags;
+const MAX_FORUM_POST_TAGS = fn(7515).MAX_FORUM_POST_TAGS;
+let c12 = "No Mic";
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_invite_channels/GameInvitesChannelUtils.tsx");
 
@@ -92,7 +93,7 @@ export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoice
       tmp = tmp4;
     }
     return tmp;
-  }) && !appliedTags.some((name) => name.name === closure_1_11);
+  }) && !appliedTags.some((name) => name.name === closure_1_12);
 };
 export const useFirstMessage = function useFirstMessage(stateFromStores, enabled) {
   return ForumPostDataLoader.useFirstForumPostMessage(stateFromStores, { enabled, allowArchived: true });
@@ -188,7 +189,7 @@ export const useGameInviteVoiceChatState = function useGameInviteVoiceChatState(
   const tmp = useMemo(() => {
     let found;
     if (availableTags != null) {
-      found = availableTags.find((name) => name.name === closure_1_11);
+      found = availableTags.find((name) => name.name === closure_1_12);
     }
     return found;
   }, items);
@@ -218,19 +219,22 @@ export const useGameInvitesActiveAndArchivedThreads = function useGameInvitesAct
       while (iter !== undefined) {
         let tmp11 = nextResult;
         let channel = ChannelStore.getChannel(nextResult);
+        let obj2 = channel;
         if (null != channel) {
-          if (getThreadAutoArchiveTimeOnceDefault(tmp14) <= timestamp) {
-            let arr = items1.push(tmp11);
+          if (!obj2.hasFlag(ChannelFlags.PINNED)) {
+            if (getThreadAutoArchiveTimeOnceDefault(obj2) <= timestamp) {
+              let arr = items1.push(tmp11);
+            }
             continue;
           }
         }
         let arr2 = items.push(tmp11);
       }
-      const obj2 = { activeThreadIds: items, archivedThreadIds: null };
+      const obj3 = { activeThreadIds: items, archivedThreadIds: null };
       const items2 = [];
       HermesBuiltin.arraySpread(archivedThreadIds, HermesBuiltin.arraySpread(items1, 0));
-      obj2.archivedThreadIds = items2;
-      return obj2;
+      obj3.archivedThreadIds = items2;
+      return obj3;
     } else {
       const obj = { activeThreadIds, archivedThreadIds };
       return obj;

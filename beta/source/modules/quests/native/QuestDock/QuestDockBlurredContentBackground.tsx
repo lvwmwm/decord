@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15428
+// Function ID: 15429
 // Name: QuestDockBlurredContentBackground
-// Dependencies: [19, 17, 21, 5045, 2]
+// Dependencies: [19, 17, 21, 5173, 2]
 
-// Module 15242 (QuestDockBlurredContentBackground)
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5045 */;
+// Module 15428 (QuestDockBlurredContentBackground)
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5173 */;
 import noop from "module_19" /* 19 */;
 
 const StyleSheet = fn(17).StyleSheet;
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDock/Quest
 export default noop.memo(function QuestDockBlurredContentBackground(blurTheme) {
   blurTheme = blurTheme.blurTheme;
   let str = "dark";
-  ({ animatedStyle, animatedLayout } = blurTheme);
+  ({ layoutAnimatedStyle, opacityAnimatedStyle, layoutAnimation } = blurTheme);
   if (undefined !== blurTheme) {
     str = blurTheme;
   }
@@ -35,8 +35,8 @@ export default noop.memo(function QuestDockBlurredContentBackground(blurTheme) {
     }
     return str;
   }, items1);
-  const obj = { nativeID: "quest-dock-blurred-background", tintColor: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo, style: null, layout: animatedLayout };
-  const items2 = [StyleSheet.absoluteFillObject, animatedStyle];
+  const obj = { nativeID: "quest-dock-blurred-background", tintColor: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo, style: null, layout: layoutAnimation };
+  const items2 = [StyleSheet.absoluteFillObject, layoutAnimatedStyle, opacityAnimatedStyle];
   obj.style = items2;
-  return jsx(VisualEffectViewAnimatedDefault, { nativeID: "quest-dock-blurred-background", tintColor: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo, style: null, layout: animatedLayout });
+  return jsx(VisualEffectViewAnimatedDefault, { nativeID: "quest-dock-blurred-background", tintColor: memo1, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor: memo, style: null, layout: layoutAnimation });
 });

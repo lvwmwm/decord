@@ -1,21 +1,15 @@
 // Module ID: 7002
 // Function ID: 7003
-// Dependencies: [19]
-// Exports: useUnmountFlag
+// Dependencies: [7003, 6978]
 
 // Module 7002
-import noop from "module_19" /* 19 */;
+const require = globalThis.__r;
 
-({ useRef: closure_0, useLayoutEffect: closure_1 } = noop);
-
-export const useUnmountFlag = () => {
-  const tmp = React(false);
-  closure_0 = tmp;
-  framebus(() => {
-    closure_0.current = false;
-    return () => {
-      closure_1_0.current = true;
-    };
-  }, []);
-  return tmp;
-};
+for (const key10013 in require("module_7003")) {
+  arg5[key10013] = require("module_7003")[key10013];
+  continue;
+}
+for (const key10017 in require("transformLongPressProps")) {
+  arg5[key10017] = require("transformLongPressProps")[key10017];
+  continue;
+}

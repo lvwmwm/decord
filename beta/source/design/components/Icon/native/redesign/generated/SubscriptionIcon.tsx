@@ -1,13 +1,13 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15265
+// Function ID: 15266
 // Name: SubscriptionIcon
-// Dependencies: [19, 21, 576, 4337, 15078, 2]
+// Dependencies: [19, 21, 576, 4456, 15266, 2]
 // Exports: SubscriptionIcon
 
-// Module 15077 (SubscriptionIcon)
+// Module 15265 (SubscriptionIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15078 from "module_15078" /* 15078 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod15266 from "module_15266" /* 15266 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SubscriptionIcon = function SubscriptionIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15078, color: ICON_STRONG, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15266, color: ICON_STRONG, style: color.style });
 };

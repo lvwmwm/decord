@@ -1,18 +1,18 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15802
+// Function ID: 15803
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1371, 21, 4636, 9454, 5768, 1114, 15614, 13540, 504, 1885, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4756, 9438, 5904, 1115, 15803, 13720, 504, 1969, 2]
 // Exports: default
 
-// Module 15613 (AppIconRows)
+// Module 15802 (AppIconRows)
 import initialize from "initialize" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1885 */;
-import AppIconTypes from "AppIconTypes" /* 9454 */;
-import AppIconUtils from "AppIconUtils" /* 13540 */;
-import AppIconRowDefault from "AppIconRow" /* 15614 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
+import AppIconTypes from "AppIconTypes" /* 9438 */;
+import AppIconUtils from "AppIconUtils" /* 13720 */;
+import AppIconRowDefault from "AppIconRow" /* 15803 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function BackwardsCompatibleAppIconRows(arg0) {
@@ -34,8 +34,8 @@ function BackwardsCompatibleAppIconRows(arg0) {
     const icons = merged.icons;
     let obj = { style: tmp4.container, children: null };
     const obj2 = { title: merged.title, accessibilityRole: "radiogroup", accessibilityLabel: null, hasIcons: true, children: null };
-    const intl = merged(1114).intl;
-    obj2.accessibilityLabel = intl.string(merged(1114).t.N4YDao);
+    const intl = merged(1115).intl;
+    obj2.accessibilityLabel = intl.string(merged(1115).t.N4YDao);
     obj2.children = icons.map((id) => {
       const obj = {};
       merged = Object.assign(merged);
@@ -45,7 +45,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return createElement(AppIconRowDefault, {});
     });
-    obj.children = closure_8(merged(5768).TableRowGroup, obj2);
+    obj.children = closure_8(merged(5904).TableRowGroup, obj2);
     return closure_8(View, obj);
   }
 }
@@ -53,7 +53,7 @@ const View = fn(17).View;
 const createElement = fn(19).createElement;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_11 = createStyles.createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIconRows.tsx");
@@ -70,8 +70,8 @@ export default function AppIconRows(onSelect) {
   let tmp10 = null;
   if (tmp7) {
     const obj4 = { hasNitro: isPremiumResult, icons: limitedTimeAppIcons, currentAppIcon, title: null, onSelect: null };
-    const intl = tmp2(1114).intl;
-    obj4.title = intl.string(tmp2(1114).t.anqaFd);
+    const intl = tmp2(1115).intl;
+    obj4.title = intl.string(tmp2(1115).t.anqaFd);
     obj4.onSelect = onSelect;
     tmp10 = React6(BackwardsCompatibleAppIconRows, obj4);
   }
@@ -84,8 +84,8 @@ export default function AppIconRows(onSelect) {
   const obj6 = { hasNitro: isPremiumResult, icons: officialAppIcons, currentAppIcon, title: null, onSelect: null };
   let stringResult;
   if (tmp7) {
-    const intl2 = tmp2(1114).intl;
-    stringResult = intl2.string(tmp2(1114).t.Ipxkog);
+    const intl2 = tmp2(1115).intl;
+    stringResult = intl2.string(tmp2(1115).t.Ipxkog);
   }
   const obj7 = { children: null };
   obj6.title = stringResult;

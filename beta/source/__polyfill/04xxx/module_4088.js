@@ -1,31 +1,27 @@
 // Module ID: 4088
 // Function ID: 4089
-// Dependencies: [4080, 3726]
+// Dependencies: []
 // Exports: default
 
 // Module 4088
-import module_4080_mod from "module_4080" /* 4080 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let module_4080 = module_4080_mod;
-if (!module_4080) {
-  const obj = { default: module_4080 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_4080;
-}
-module_4080 = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
-} else {
-  tmp5 = requiredArgs;
-}
-requiredArgs = tmp5;
-
-export default function isThisYear(arg0) {
-  requiredArgs.default(1, arguments);
-  return module_4080.default(arg0, Date.now());
+export default function addLeadingZeros(arg0, arg1) {
+  let length;
+  let str = "";
+  if (arg0 < 0) {
+    str = "-";
+  }
+  const str1 = Math.abs(arg0).toString();
+  let tmp = str1;
+  let tmp2 = str1;
+  if (str1.length < arg1) {
+    do {
+      let text = `0${tmp}`;
+      tmp = text;
+      tmp2 = text;
+      length = `0${tmp}`.length;
+    } while (length < arg1);
+  }
+  return str + tmp2;
 };
 export default exports.default;

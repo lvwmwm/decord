@@ -1,13 +1,24 @@
 // Module ID: 5033
 // Function ID: 5034
-// Dependencies: [17, 65]
+// Dependencies: [1313]
 
 // Module 5033
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import _mod1313 from "module_1313" /* 1313 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSafeAreaView", validAttributes: { edges: true, insetType: true } };
 
-export default module_65.get("RNSSafeAreaView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function isFinite(num) {
+  let tmp = typeof num === "number";
+  if (typeof num !== "number") {
+    tmp = typeof num === "bigint";
+  }
+  if (tmp) {
+    tmp = !_mod1313(num);
+  }
+  if (tmp) {
+    tmp = num !== Infinity;
+  }
+  if (tmp) {
+    tmp = num !== -Infinity;
+  }
+  return tmp;
+};

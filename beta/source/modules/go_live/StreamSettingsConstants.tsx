@@ -1,13 +1,13 @@
-// Module ID: 4683
-// Function ID: 4684
+// Module ID: 4803
+// Function ID: 4804
 // Name: StreamSettingsConstants
-// Dependencies: [1074, 1373, 1114, 2]
+// Dependencies: [1074, 1374, 1115, 2]
 // Exports: getApplicationFramerate, getApplicationResolution, makeResolutionLabel
 
-// Module 4683 (StreamSettingsConstants)
+// Module 4803 (StreamSettingsConstants)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1114 */;
-import PremiumConstants from "PremiumConstants" /* 1373 */;
+import util from "util" /* 1115 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import size from "module_2" /* 2 */;
 
 const BoostedGuildTiers = Constants.BoostedGuildTiers;

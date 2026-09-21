@@ -1,11 +1,11 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7578
+// Function ID: 7579
 // Name: compareChannelsByScoreAndPosition
-// Dependencies: [1957, 1074, 2]
+// Dependencies: [2041, 1074, 2]
 // Exports: default
 
-// Module 7439 (compareChannelsByScoreAndPosition)
-import ChannelStore from "ChannelStore" /* 1957 */;
+// Module 7578 (compareChannelsByScoreAndPosition)
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const ChannelTypes = fn(1074).ChannelTypes;
 const size = fn(2);

@@ -1,24 +1,24 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 9627
+// Function ID: 9628
 // Name: StageChannelSelfRichPresenceStore
-// Dependencies: [1957, 1979, 4659, 4285, 2011, 1371, 5499, 1962, 5495, 1074, 4280, 11024, 5506, 4789, 5498, 1330, 504, 573, 2]
+// Dependencies: [2041, 2063, 4779, 4405, 2095, 1372, 5635, 2046, 5631, 1074, 4400, 9628, 5642, 4909, 5634, 1331, 504, 573, 2]
 
-// Module 11596 (StageChannelSelfRichPresenceStore)
+// Module 9627 (StageChannelSelfRichPresenceStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1330 from "module_1330" /* 1330 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import StageMediaHooks from "StageMediaHooks" /* 5498 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5506 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 11024 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import UserStore from "UserStore" /* 1371 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5499 */;
-import StageInstanceStore from "StageInstanceStore" /* 1962 */;
+import _modDef1331 from "module_1331" /* 1331 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+import StageMediaHooks from "StageMediaHooks" /* 5634 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5642 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 9628 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import UserStore from "UserStore" /* 1372 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5635 */;
+import StageInstanceStore from "StageInstanceStore" /* 2046 */;
 
 require = fn;
 function handleUpdateActivity() {
@@ -51,7 +51,7 @@ function handleUpdateActivity() {
               if (id === result) {
                 tmp15 = obj;
               }
-              const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(channel.id, tmp12(5506).StageChannelParticipantNamedIndex.SPEAKER);
+              const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(channel.id, tmp12(5642).StageChannelParticipantNamedIndex.SPEAKER);
               const length = mutableParticipants.filter((type) => type.type === StageChannelParticipants.StageChannelParticipantTypes.STREAM).length;
               const diff = mutableParticipants.length - length;
               let size;
@@ -72,8 +72,8 @@ function handleUpdateActivity() {
                 topic = channel.topic;
               }
               if (topic == null) {
-                topic = tmp12(4789).computeChannelName(channel, UserStore, RelationshipStore);
-                const tmp12Result = tmp12(4789);
+                topic = tmp12(4909).computeChannelName(channel, UserStore, RelationshipStore);
+                const tmp12Result = tmp12(4909);
               }
               obj.name = topic;
               obj.type = StageMediaHooks.getStageHasMedia(channel.id) ? map1.WATCHING : map1.LISTENING;
@@ -109,7 +109,7 @@ function handleUpdateActivity() {
       }
     }
   }
-  const tmp30 = _modDef1330(tmp2, obj);
+  const tmp30 = _modDef1331(tmp2, obj);
   let flag = !tmp30;
   if (!tmp30) {
     obj = tmp2;
@@ -117,7 +117,7 @@ function handleUpdateActivity() {
   }
   return flag;
 }
-const STAGE_APPLICATION_ID = fn(5495).STAGE_APPLICATION_ID;
+const STAGE_APPLICATION_ID = fn(5631).STAGE_APPLICATION_ID;
 const Constants = fn(1074);
 ({ ActivityTypes: map1, GuildFeatures: closure_14, Permissions: closure_15, RTCConnectionStates: closure_16 } = Constants);
 let obj = null;

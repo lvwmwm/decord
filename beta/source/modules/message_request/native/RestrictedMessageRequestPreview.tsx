@@ -1,23 +1,23 @@
-// Module ID: 17010
-// Function ID: 17011
+// Module ID: 17364
+// Function ID: 17365
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 1957, 4857, 1371, 21, 4636, 576, 1611, 504, 17011, 17013, 12572, 2]
+// Dependencies: [32, 19, 17, 2041, 4976, 1372, 21, 4756, 576, 1612, 504, 17365, 17367, 12693, 2]
 // Exports: default
 
-// Module 17010 (RestrictedMessageRequestPreview)
+// Module 17364 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4857 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 4976 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, scroll: { flex: 1 }, hidden: { opacity: 0 }, scrollContent: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.scrollContent = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
@@ -105,18 +105,18 @@ export default function RestrictedMessageRequestPreview(channelId) {
         }
       };
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [closure_10(tmp2(17011), obj6), ];
+      const items8 = [closure_10(tmp2(17365), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(tmp2(17013), obj7);
+      items8[1] = closure_10(tmp2(17367), obj7);
       obj5.children = items8;
       const items9 = [closure_11(closure_5, obj5), ];
       const obj8 = { style: null, children: null };
       const items10 = [tmp.footer, ];
-      const obj9 = { paddingBottom: tmp2(576).space.PX_8 + ref(1611)().bottom };
+      const obj9 = { paddingBottom: tmp2(576).space.PX_8 + ref(1612)().bottom };
       items10[1] = obj9;
       obj8.style = items10;
       const obj10 = { channel: stateFromStores };
-      obj8.children = closure_10(tmp2(12572), obj10);
+      obj8.children = closure_10(tmp2(12693), obj10);
       items9[1] = closure_10(first1, obj8);
       obj4.children = items9;
       tmp13Result = tmp13(tmp14, obj4);

@@ -1,15 +1,15 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8632
+// Function ID: 8633
 // Name: showShareActionSheet
-// Dependencies: [17, 1364, 8480, 8481, 8484, 1230, 2]
+// Dependencies: [17, 1365, 8633, 8634, 8637, 1231, 2]
 // Exports: showShareActionSheet
 
-// Module 8479 (showShareActionSheet)
+// Module 8632 (showShareActionSheet)
 import _mod17 from "module_17" /* 17 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8480 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8481 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1364 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8633 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8634 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,15 +23,15 @@ if (PlatformUtils.isAndroid()) {
 }
 let result = size.fileFinishedImporting("modules/action_sheet/native/showShareActionSheet.tsx");
 
-export const showShareActionSheet = function showShareActionSheet(source, PREMIUM_GIFT_SUCCESS_MODAL) {
+export const showShareActionSheet = function showShareActionSheet(source, SECURE_FRAMES_STREAM_BOTTOM_SHEET) {
   _require = source;
-  let tmp = PREMIUM_GIFT_SUCCESS_MODAL;
-  importDefault = PREMIUM_GIFT_SUCCESS_MODAL;
+  let tmp = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
+  importDefault = SECURE_FRAMES_STREAM_BOTTOM_SHEET;
   if (null != source.source) {
     let mediaShareParams = require("ShowShareActionSheetUtils").getMediaShareParams(source.source);
     const obj2 = require("ShowShareActionSheetUtils");
   } else {
-    mediaShareParams = { mediaFallbackUrl: "icon", mediaStagingOptions: "call" };
+    mediaShareParams = { mediaFallbackUrl: "paths", mediaStagingOptions: "scales" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {
@@ -40,7 +40,7 @@ export const showShareActionSheet = function showShareActionSheet(source, PREMIU
   if (null != mediaStagingOptions) {
     let obj = {
       onCancel() {
-          return PREMIUM_GIFT_SUCCESS_MODAL(fn[2]).cancelPendingShare();
+          return SECURE_FRAMES_STREAM_BOTTOM_SHEET(fn[2]).cancelPendingShare();
         }
     };
     fn = require("showSharePreparingModal").showSharePreparingModal(obj);

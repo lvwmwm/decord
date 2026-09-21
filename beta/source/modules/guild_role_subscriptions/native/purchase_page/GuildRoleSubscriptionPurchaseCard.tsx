@@ -1,22 +1,22 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16895
+// Function ID: 16896
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4636, 576, 7082, 1611, 15311, 16644, 7253, 4632, 1176, 16650, 6728, 1114, 15321, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 7224, 1612, 15497, 16890, 7395, 4752, 1177, 16896, 6869, 1115, 15507, 2]
 // Exports: default
 
-// Module 16649 (GuildRoleSubscriptionPurchaseCard)
+// Module 16895 (GuildRoleSubscriptionPurchaseCard)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import BottomSheetModal from "BottomSheetModal" /* 6728 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15311 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15321 */;
-import Elements from "Elements" /* 16644 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 16650 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import BottomSheetModal from "BottomSheetModal" /* 6869 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15507 */;
+import Elements from "Elements" /* 16890 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 16896 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -24,7 +24,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 }, header: { padding: 16, paddingBottom: 24 }, content: null, headerText: null, headerDot: null, seperator: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 };
 obj2.content = { padding: 16, paddingTop: 24, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };

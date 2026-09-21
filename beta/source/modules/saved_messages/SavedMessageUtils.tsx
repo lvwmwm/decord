@@ -1,16 +1,16 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11964
+// Function ID: 11965
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 1961, 1957, 1074, 1114, 4228, 504, 4649, 7350, 2]
+// Dependencies: [5, 19, 2045, 2041, 1074, 1115, 4348, 504, 4769, 7489, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11844 (SavedMessageUtils)
-import util from "util" /* 1114 */;
-import _modDef4228 from "module_4228" /* 4228 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4649 */;
+// Module 11964 (SavedMessageUtils)
+import util from "util" /* 1115 */;
+import _modDef4348 from "module_4348" /* 4348 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;
 
@@ -124,7 +124,7 @@ let closure_10 = async function _savedMessageJumpToMessage(arg0, arg1) {
     }
   })();
 };
-const UnknownChannelRecord = fn(1961).UnknownChannelRecord;
+const UnknownChannelRecord = fn(2045).UnknownChannelRecord;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_7, Routes: closure_8 } = Constants);
 const DueInStringTypes = { LONG: 0, [0]: "LONG", SHORT: 1, [1]: "SHORT" };
@@ -145,19 +145,19 @@ export const useDueInString = function useDueInString(arg0) {
       H4gnX9 = util.t.H4gnX9;
     }
     if (type === tmp9.LONG) {
-      let haia16 = tmp(1114).t.haia16;
+      let haia16 = tmp(1115).t.haia16;
     } else {
-      haia16 = tmp(1114).t["Uq7Y+7"];
+      haia16 = tmp(1115).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = haia16;
     }
     obj = { dueInText: null, isOverdue: null };
-    const intl = tmp(1114).intl;
+    const intl = tmp(1115).intl;
     const obj2 = { duration: null };
     const time = dueAt.getTime();
     tmp9 = obj;
-    obj2.duration = _modDef4228.duration(time - now.getTime(), "millisecond").humanize();
+    obj2.duration = _modDef4348.duration(time - now.getTime(), "millisecond").humanize();
     obj.dueInText = intl.formatToPlainString(H4gnX9, obj2);
     obj.isOverdue = now > dueAt;
     return obj;

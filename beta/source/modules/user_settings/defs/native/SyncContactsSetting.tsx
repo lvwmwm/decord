@@ -1,24 +1,24 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 15121
+// Function ID: 15122
 // Name: SyncContactsSetting
-// Dependencies: [5362, 1371, 8079, 1074, 12813, 14934, 11605, 1114, 2]
+// Dependencies: [5498, 1372, 8233, 1074, 12933, 15122, 11725, 1115, 2]
 
-// Module 14933 (SyncContactsSetting)
-import util from "util" /* 1114 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12813 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 14934 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 15121 (SyncContactsSetting)
+import util from "util" /* 1115 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12933 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 15122 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const PlatformTypes = fn(1074).PlatformTypes;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.uSvEy7);
   },
-  parent: fn(8079).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8233).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useContactSyncSettingValue() {
     const contactSyncAccount = ContactSyncUtils.useContactSyncAccount();
     return ContactSyncUtils.isContactSyncEnabled(contactSyncAccount);

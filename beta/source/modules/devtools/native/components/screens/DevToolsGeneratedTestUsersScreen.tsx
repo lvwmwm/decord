@@ -1,21 +1,21 @@
-// Module ID: 15676
-// Function ID: 15677
+// Module ID: 15867
+// Function ID: 15868
 // Name: DevToolsGeneratedTestUsersScreen
-// Dependencies: [5, 32, 19, 17, 15677, 502, 21, 11959, 9532, 11168, 15678, 12058, 15680, 10089, 15682, 13930, 15684, 15686, 15688, 15690, 10481, 15692, 15694, 15696, 15698, 7483, 4636, 576, 5054, 6707, 5056, 4603, 15700, 7253, 7252, 5768, 5686, 4587, 504, 7084, 2]
+// Dependencies: [5, 32, 19, 17, 15868, 502, 21, 12079, 9516, 11299, 15869, 12179, 15871, 10217, 15873, 14110, 15875, 15877, 15879, 15881, 10611, 15883, 15885, 15887, 15889, 7622, 4756, 576, 5184, 6848, 5186, 4723, 15891, 7395, 7394, 5904, 5822, 4706, 504, 7226, 2]
 // Exports: default
 
-// Module 15676 (DevToolsGeneratedTestUsersScreen)
+// Module 15867 (DevToolsGeneratedTestUsersScreen)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import TextInput from "TextInput" /* 6707 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7084 */;
-import GeneratedTestUserActionCreators from "GeneratedTestUserActionCreators" /* 15700 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import TextInput from "TextInput" /* 6848 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7226 */;
+import GeneratedTestUserActionCreators from "GeneratedTestUserActionCreators" /* 15891 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 15677 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 15868 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -98,7 +98,7 @@ function PoolIdInput(onSubmit) {
     }
   }), items);
   let obj = { spacing: 4, style: tmp.inputContainer, children: null };
-  const items1 = [closure_1_10(TextInput.TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp2[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", isClearable: true }), closure_1_10(TextInput.TextInput, { size: "md", secureTextEntry: true, placeholder: "Enter Password", onChange: tmp4[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", isClearable: true }), ];
+  const items1 = [closure_1_10(TextInput.TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp2[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), closure_1_10(TextInput.TextInput, { size: "md", secureTextEntry: true, placeholder: "Enter Password", onChange: tmp4[1], autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), ];
   let tmp11 = 0 === first.length;
   if (!tmp11) {
     tmp11 = 0 === first1.length;
@@ -119,17 +119,17 @@ function UserActionSheet(pool) {
     ActionSheetActionCreatorsDefault.hideActionSheet("generated-test-users");
     GeneratedTestUserActionCreators.loginAsGeneratedUser(pool.id, arg0);
   }, items);
-  let obj = { header: closure_10(pool(7252).BottomSheetTitleHeader, { title: pool.summary, subtitle: "" + usersForPool.length + " users" }), children: null };
+  let obj = { header: closure_10(pool(7394).BottomSheetTitleHeader, { title: pool.summary, subtitle: "" + usersForPool.length + " users" }), children: null };
   const obj3 = { style: null, children: null };
   const obj2 = { title: pool.summary, subtitle: "" + usersForPool.length + " users" };
   obj3.style = { paddingHorizontal: usersForPool(576).space.PX_12 };
   const obj4 = { paddingHorizontal: usersForPool(576).space.PX_12 };
-  obj3.children = closure_10(pool(5768).TableRowGroup, {
+  obj3.children = closure_10(pool(5904).TableRowGroup, {
     title: "Select User to Login As",
     hasIcons: true,
     children: usersForPool.map((id, index) => {
       const obj = {
-        icon: closure_1_10(pool(11959).UserIcon, { size: "md" }),
+        icon: closure_1_10(pool(12079).UserIcon, { size: "md" }),
         label: null,
         subLabel: null,
         onPress() {
@@ -143,16 +143,16 @@ function UserActionSheet(pool) {
       ({ username: obj.label, email: obj.subLabel } = id);
       let tmp2Result;
       if (id.id === dependencyMap) {
-        tmp2Result = tmp2(pool(4587).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
+        tmp2Result = tmp2(pool(4706).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
       }
       obj.trailing = tmp2Result;
       obj.start = 0 === index;
       obj.end = index === usersForPool.length - 1;
-      return closure_1_10(pool(5686).TableRow, obj, id.id);
+      return closure_1_10(pool(5822).TableRow, obj, id.id);
     })
   });
   obj.children = closure_10(closure_6, obj3);
-  return closure_10(pool(7253).BottomSheet, obj);
+  return closure_10(pool(7395).BottomSheet, obj);
 }
 function PoolUsers(pool) {
   pool = pool.pool;
@@ -163,14 +163,14 @@ function PoolUsers(pool) {
   const callback = noop.useCallback(() => {
     ActionSheetActionCreatorsDefault.openLazy(Promise.resolve({ default: UserActionSheet }), "generated-test-users", { pool });
   }, items);
-  return closure_10(pool(5686).TableRow, { icon: closure_10(items[Number(undefined, id) % items.length], { size: "md", color: length[Number(undefined, id) % length.length] }), label: pool.summary, subLabel: "" + usersForPool.length + " users", arrow: true, onPress: callback, start, end });
+  return closure_10(pool(5822).TableRow, { icon: closure_10(items[Number(undefined, id) % items.length], { size: "md", color: length[Number(undefined, id) % length.length] }), label: pool.summary, subLabel: "" + usersForPool.length + " users", arrow: true, onPress: callback, start, end });
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-let items = [fn(11959).UserIcon, fn(9532).ShieldIcon, fn(11168).GiftIcon, fn(15678).AchievementsIcon, fn(12058).PiggyBankIcon, fn(15680).TreehouseIcon, fn(10089).SpeedometerIcon, fn(15682).CompassIcon, fn(13930).SignPostIcon, fn(15684).CarIcon, fn(15686).TrainIcon, fn(15688).TeacupIcon, fn(15690).InventoryIcon, fn(10481).FoodIcon, fn(15692).BurgerIcon, fn(15694).MagicDoorIcon, fn(15696).PawPrintIcon, fn(15698).RecordPlayerIcon, fn(7483).SettingsIcon];
-const createStyles = fn(4636);
+let items = [fn(12079).UserIcon, fn(9516).ShieldIcon, fn(11299).GiftIcon, fn(15869).AchievementsIcon, fn(12179).PiggyBankIcon, fn(15871).TreehouseIcon, fn(10217).SpeedometerIcon, fn(15873).CompassIcon, fn(14110).SignPostIcon, fn(15875).CarIcon, fn(15877).TrainIcon, fn(15879).TeacupIcon, fn(15881).InventoryIcon, fn(10611).FoodIcon, fn(15883).BurgerIcon, fn(15885).MagicDoorIcon, fn(15887).PawPrintIcon, fn(15889).RecordPlayerIcon, fn(7622).SettingsIcon];
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, contentContainer: null, inputContainer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.contentContainer = { padding: nativeDefault.space.PX_16 };
@@ -257,15 +257,15 @@ export default function DevToolsGeneratedTestUsersScreen() {
   const items2 = [closure_10(PoolIdInput, { onSubmit: callback }), ];
   let tmp5Result = 0 === stateFromStoresArray.length;
   if (tmp5Result) {
-    tmp5Result = tmp5(stateFromStoresArray(5686).TableRow, { label: "No pools available." });
+    tmp5Result = tmp5(stateFromStoresArray(5822).TableRow, { label: "No pools available." });
   }
   let obj5 = { spacing: 16, children: null };
   const obj6 = { title: "Generated Test User Pools", hasIcons: true, children: null };
   const items3 = [tmp5Result, stateFromStoresArray.map((pool, index) => closure_2_10(PoolUsers, { pool, start: 0 === index, end: index === stateFromStoresArray.length - 1 }, pool.id))];
   obj6.children = items3;
-  items2[1] = closure_11(stateFromStoresArray(5768).TableRowGroup, obj6);
+  items2[1] = closure_11(stateFromStoresArray(5904).TableRowGroup, obj6);
   obj5.children = items2;
-  obj3.children = closure_11(stateFromStoresArray(5054).Stack, obj5);
+  obj3.children = closure_11(stateFromStoresArray(5184).Stack, obj5);
   obj2.children = closure_10(closure_7, obj3);
   return closure_10(closure_6, obj2);
 };

@@ -1,24 +1,24 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17375
+// Function ID: 17376
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 8079, 21, 1114, 1369, 15573, 4294, 11605, 14777, 2]
+// Dependencies: [19, 8233, 21, 1115, 1370, 15762, 4414, 11725, 14965, 2]
 // Exports: default
 
-// Module 17021 (SettingsOverviewScreen)
-import util from "util" /* 1114 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15573 */;
+// Module 17375 (SettingsOverviewScreen)
+import util from "util" /* 1115 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15762 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8079).MobileUserSettings;
+const MobileUserSettings = fn(8233).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 
 export default function SettingsOverviewScreen() {
-  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4294).useHasPremiumSubscriptionToDisplay();
+  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4414).useHasPremiumSubscriptionToDisplay();
   let items = [hasPremiumSubscriptionToDisplay];
   const node = noop.useMemo(() => {
     const obj2 = { label: null, settings: null };
@@ -33,7 +33,7 @@ export default function SettingsOverviewScreen() {
     obj2.settings = items.filter(GlobalUtils.isNotNullish);
     const items1 = [obj2, , , , , , , , , ];
     const obj3 = { label: null, settings: null };
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1115).intl;
     obj3.label = intl2.string(util.t["SuS+RB"]);
     const items2 = [, , , , , , , ];
     ({ COLLECTIBLES_SHOP: arr3[0], QUEST_HOME: arr3[1] } = MobileUserSettings);
@@ -47,7 +47,7 @@ export default function SettingsOverviewScreen() {
     obj3.settings = items2.filter(GlobalUtils.isNotNullish);
     items1[1] = obj3;
     const obj5 = { label: null, settings: null };
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1115).intl;
     obj5.label = intl3.string(util.t.f2n1TP);
     const items3 = [, , , , , , , , , , ];
     ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], TYPING_INDICATOR: arr4[5], WEB_BROWSER: arr4[6], NOTIFICATIONS: arr4[7] } = MobileUserSettings);
@@ -56,14 +56,14 @@ export default function SettingsOverviewScreen() {
     obj5.settings = items3.filter(GlobalUtils.isNotNullish);
     items1[2] = obj5;
     const obj6 = { label: null, settings: null };
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1115).intl;
     obj6.label = intl4.string(util.t["Yl/Riu"]);
     const items4 = [, , ];
     ({ SUPPORT: arr5[0], UPLOAD_DEBUG_LOGS: arr5[1], ACKNOWLEDGEMENTS: arr5[2] } = MobileUserSettings);
     obj6.settings = items4;
     items1[3] = obj6;
     const obj7 = { label: null, settings: null };
-    const intl5 = tmp(1114).intl;
+    const intl5 = tmp(1115).intl;
     obj7.label = intl5.string(util.t.LRmNAl);
     const items5 = [MobileUserSettings.CHANGE_LOG];
     obj7.settings = items5;
@@ -73,14 +73,14 @@ export default function SettingsOverviewScreen() {
     obj8.settings = items6;
     items1[5] = obj8;
     const obj9 = { label: null, settings: null };
-    const intl6 = tmp(1114).intl;
+    const intl6 = tmp(1115).intl;
     obj9.label = intl6.string(util.t.CbItOL);
     const items7 = [, , , , , , ];
     ({ APP_VERSION: arr8[0], DEVICE_INFO: arr8[1], COPY_CLIENT_INFO: arr8[2], VIEW_DEBUG_LOGS: arr8[3], CACHE_ACTIONS: arr8[4], REACT_COMPILER: arr8[5], UPLOAD_INTL_DATA: arr8[6] } = MobileUserSettings);
     obj9.settings = items7;
     items1[6] = obj9;
     const obj10 = { label: null, settings: null };
-    const intl7 = tmp(1114).intl;
+    const intl7 = tmp(1115).intl;
     obj10.label = intl7.string(util.t["/tZh0A"]);
     const items8 = [, ];
     ({ BUG_REPORTER: arr9[0], CREATE_BUG_REPORT: arr9[1] } = MobileUserSettings);
@@ -99,5 +99,5 @@ export default function SettingsOverviewScreen() {
     obj4.sections = items1;
     return SettingBuilders.createList(obj4);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(14777).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(14965).SearchableSettingsList, { node });
 };

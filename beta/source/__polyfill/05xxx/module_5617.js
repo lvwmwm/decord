@@ -1,0 +1,9 @@
+// Module ID: 5617
+// Function ID: 5618
+// Dependencies: [1121]
+
+// Module 5617
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "85e85e0480cc3ad94f292bfe35b1a958", name: "img_amazon_music", type: "svg" });

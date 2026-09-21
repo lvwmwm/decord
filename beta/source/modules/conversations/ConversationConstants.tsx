@@ -1,9 +1,9 @@
-// Module ID: 7700
-// Function ID: 7701
+// Module ID: 7837
+// Function ID: 7838
 // Name: ConversationConstants
 // Dependencies: [2]
 
-// Module 7700 (ConversationConstants)
+// Module 7837 (ConversationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");
@@ -17,6 +17,7 @@ export const MAX_CONVERSATIONS_PER_CHANNEL = 50;
 export const FETCH_BACKOFF_MIN_MS = 2000;
 export const FETCH_BACKOFF_MAX_MS = 180000;
 export const CONVERSATION_FEEDBACK_RATINGS_CACHE_MAX = 10;
+export const MAX_PREVIEW_CONVERSATIONS = 10;
 export const PREVIEW_MESSAGE_COUNT = 4;
 export const MOBILE_PREVIEW_MESSAGE_COUNT = 3;
 export const CONVERSATION_HAS_MORE_EXPIRATION_MS = 3600000;

@@ -1,9 +1,9 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9300
+// Function ID: 9301
 // Name: ApplicationAssetsV2Store
 // Dependencies: [12, 504, 573, 2]
 
-// Module 9151 (ApplicationAssetsV2Store)
+// Module 9300 (ApplicationAssetsV2Store)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 9865
-// Function ID: 9866
+// Module ID: 9820
+// Function ID: 9821
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1074, 1894, 1086, 9866, 4488, 1114, 2]
+// Dependencies: [5, 32, 19, 1074, 1978, 1086, 9821, 4607, 1115, 2]
 // Exports: default
 
-// Module 9865 (useCreateChannelSubmit)
-import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9866 */;
+// Module 9820 (useCreateChannelSubmit)
+import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9821 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -29,8 +29,8 @@ export default function useCreateChannelSubmit(arg0) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -43,8 +43,8 @@ export default function useCreateChannelSubmit(arg0) {
             throw value;
           } else if (arg0 === 2) {
             c8 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             closure_4 = tmp4;
             closure_3 = tmp8;
@@ -72,27 +72,27 @@ export default function useCreateChannelSubmit(arg0) {
             throw value;
           } else if (arg0 === 2) {
             c8 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             if (closure_131_3 === constants3.PREMIUM_CHANNEL) {
-              const obj7 = { id: closure_131_4, type: closure_0(1894).PermissionOverwriteType.ROLE, deny: constants2.VIEW_CHANNEL, allow: closure_2(1086).getFlag(0) };
-              closure_131_0.push(obj7);
-              const obj3 = closure_2(1086);
+              const obj6 = { id: closure_131_4, type: closure_0(1978).PermissionOverwriteType.ROLE, deny: constants2.VIEW_CHANNEL, allow: closure_2(1086).getFlag(0) };
+              closure_131_0.push(obj6);
+              const obj10 = closure_2(1086);
             }
             closure_1(true);
             c6 = 2;
-            const obj8 = { guildId: closure_131_4, type: closure_131_6, name: closure_131_5, permissionOverwrites: closure_131_0, bitrate: closure_131_1, userLimit: closure_131_2, parentId: null, applicationId: null };
-            let tmp70 = null;
+            const obj7 = { guildId: closure_131_4, type: closure_131_6, name: closure_131_5, permissionOverwrites: closure_131_0, bitrate: closure_131_1, userLimit: closure_131_2, parentId: null, applicationId: null };
+            let tmp60 = null;
             if (closure_131_6 !== constants.GUILD_CATEGORY) {
-              tmp70 = closure_131_7;
+              tmp60 = closure_131_7;
             }
-            obj8.parentId = tmp70;
-            obj8.applicationId = closure_131_8;
+            obj7.parentId = tmp60;
+            obj7.applicationId = closure_131_8;
             c7 = 4;
             c8 = 1;
-            const obj9 = { value: CreateChannelActionCreatorsDefault.createChannel(obj8), done: false };
-            return obj9;
+            const obj8 = { value: CreateChannelActionCreatorsDefault.createChannel(obj7), done: false };
+            return obj8;
           }
         } else if (2 === tmp8) {
           c6 = 0;
@@ -102,9 +102,9 @@ export default function useCreateChannelSubmit(arg0) {
           if (3 === tmp8) {
             c6 = 1;
             closure_131_13 = closure_5;
-            const AccessibilityAnnouncer = closure_0(4488).AccessibilityAnnouncer;
-            const intl = closure_0(1114).intl;
-            AccessibilityAnnouncer.announce(intl.string(closure_0(1114).t["0SbUzm"]));
+            const AccessibilityAnnouncer = closure_0(4607).AccessibilityAnnouncer;
+            const intl = closure_0(1115).intl;
+            AccessibilityAnnouncer.announce(intl.string(closure_0(1115).t["0SbUzm"]));
             const body = closure_131_13.body;
             let errors;
             if (body != null) {
@@ -133,12 +133,12 @@ export default function useCreateChannelSubmit(arg0) {
               id = closure_131_10.id;
               guild_id = closure_131_10.guild_id;
               if (null != id) {
-                const AccessibilityAnnouncer2 = closure_0(4488).AccessibilityAnnouncer;
-                const intl2 = closure_0(1114).intl;
-                const obj10 = { name: closure_131_5 };
-                AccessibilityAnnouncer2.announce(intl2.formatToPlainString(closure_0(1114).t.Wke70b, obj10));
+                const AccessibilityAnnouncer2 = closure_0(4607).AccessibilityAnnouncer;
+                const intl2 = closure_0(1115).intl;
+                const obj9 = { name: closure_131_5 };
+                AccessibilityAnnouncer2.announce(intl2.formatToPlainString(closure_0(1115).t.Wke70b, obj9));
                 if (closure_0 != null) {
-                  tmp96(id, guild_id);
+                  tmp86(id, guild_id);
                 }
               }
             }
@@ -150,12 +150,12 @@ export default function useCreateChannelSubmit(arg0) {
           const obj = { value, done: true };
           return obj;
         }
-      } catch (tmp74) {
-        closure_5 = tmp74;
+      } catch (tmp64) {
+        closure_5 = tmp64;
         if (tmp5 === c6) {
           c8 = tmp3;
-          throw tmp74;
-        } else if (tmp2 === tmp76) {
+          throw tmp64;
+        } else if (tmp2 === tmp66) {
           c7 = tmp;
         } else {
           c7 = tmp3;

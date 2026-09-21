@@ -1,9 +1,9 @@
 // Module ID: 12055
 // Function ID: 12056
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 12055
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5b00e6abae27bddaf8498fd271ace686", name: "PhoneIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "b62bcdbe576aad312fb756c1125d76bb", name: "ic_upload", type: "png" });

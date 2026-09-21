@@ -1,14 +1,13 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7194
+// Function ID: 7195
 // Name: MFAUtils
-// Dependencies: [17, 1608, 7053, 1230, 2]
+// Dependencies: [1609, 7195, 1231, 2]
 // Exports: captureWebAuthnException, encodeTotpSecret, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 7052 (MFAUtils)
-import _mod17 from "module_17" /* 17 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1608 */;
-import encodeDefault from "encode" /* 7053 */;
+// Module 7194 (MFAUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import encodeDefault from "encode" /* 7195 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
 import size from "module_2" /* 2 */;
 
 let _crypto;
@@ -29,18 +28,13 @@ if (tmp5) {
 if (tmp5) {
   tmp5 = tmp4;
 }
-let tmp6 = null != _mod17.NativeModules.DCDSecurityKeyManager;
-if (tmp6) {
-  const _module = MetaQuestUtils;
-  tmp6 = !_module.isMetaQuest();
-}
 function encodeTotpSecret(totpSecret) {
   return totpSecret.replace(/[\s._-]+/g, "").toUpperCase();
 }
 const result = size.fileFinishedImporting("utils/MFAUtils.tsx");
 
 export const hasCrypto = tmp5;
-export const hasWebAuthn = tmp6;
+export const hasWebAuthn = !MetaQuestUtils.isMetaQuest();
 export const generateTotpSecret = function generateTotpSecret() {
   const uint8Array = new Uint8Array(20);
   const randomValues = _crypto.getRandomValues(uint8Array);

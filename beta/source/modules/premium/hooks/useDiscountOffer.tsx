@@ -1,19 +1,19 @@
-// Module ID: 8166
-// Function ID: 8167
+// Module ID: 8320
+// Function ID: 8321
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1371, 7553, 1373, 504, 4294, 1952, 2]
+// Dependencies: [32, 19, 1372, 7692, 1374, 504, 4414, 2036, 2]
 // Exports: default
 
-// Module 8166 (useDiscountOffer)
+// Module 8320 (useDiscountOffer)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import UserOfferStore from "UserOfferStore" /* 7553 */;
+import UserStore from "UserStore" /* 1372 */;
+import UserOfferStore from "UserOfferStore" /* 7692 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_7 } = PremiumConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/hooks/useDiscountOffer.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15577
+// Function ID: 15578
 // Name: SettingsAppearanceLightModeThemePickerScreen
-// Dependencies: [19, 1184, 21, 15352, 1114, 2]
+// Dependencies: [19, 1185, 21, 15538, 1115, 2]
 // Exports: default
 
-// Module 15391 (SettingsAppearanceLightModeThemePickerScreen)
-import util from "util" /* 1114 */;
-import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 15352 */;
+// Module 15577 (SettingsAppearanceLightModeThemePickerScreen)
+import util from "util" /* 1115 */;
+import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 15538 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SystemTheme = fn(1184).SystemTheme;
+const SystemTheme = fn(1185).SystemTheme;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceLightModeThemePickerScreen.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 12040
+// Function ID: 12041
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1371, 5525, 21, 4636, 576, 504, 11427, 11620, 4632, 1114, 7811, 11215, 2]
+// Dependencies: [1372, 5661, 21, 4756, 576, 504, 11553, 11738, 4752, 1115, 7945, 11345, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 11920 (openQuestCollectibleRewardModal)
+// Module 12040 (openQuestCollectibleRewardModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import getQuestLogger from "getQuestLogger" /* 7811 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11215 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 11427 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 11620 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import getQuestLogger from "getQuestLogger" /* 7945 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11345 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 11553 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 11738 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function QuestCollectibleRewardModalMessages(quest) {
@@ -31,10 +31,10 @@ function QuestCollectibleRewardModalMessages(quest) {
   obj4.children = items1;
   return React5(timestampProducer, obj4);
 }
-const QuestsExperimentLocations = fn(5525).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5661).QuestsExperimentLocations;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { title: { textAlign: "center", marginHorizontal: nativeDefault.space.PX_32 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

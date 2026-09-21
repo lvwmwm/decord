@@ -1,13 +1,13 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14677
+// Function ID: 14678
 // Name: InteractionModalStore
-// Dependencies: [1894, 38, 8234, 1090, 7559, 504, 573, 2]
+// Dependencies: [1978, 38, 8386, 1091, 7698, 504, 573, 2]
 
-// Module 14486 (InteractionModalStore)
+// Module 14677 (InteractionModalStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7559 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8234 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8386 */;
 
 require = fn;
 const InteractionModalState = { IN_FLIGHT: 0, [0]: "IN_FLIGHT", ERRORED: 1, [1]: "ERRORED", SUCCEEDED: 2, [2]: "SUCCEEDED" };
@@ -54,11 +54,11 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1894).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1978).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (tmp(1894).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (tmp(1978).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp7 = null == nonce;
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.ERRORED;
@@ -82,7 +82,7 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
             nonce(dependencyMap[2]).setFailed(closure_1_0);
             const obj = nonce(dependencyMap[2]);
           }
-        }, 2 * tmp3(1090).Millis.MINUTE);
+        }, 2 * tmp3(1091).Millis.MINUTE);
         preflight.then(() => {
           if (typeof startTimeout === "function") {
             const _setTimeout = setTimeout;
@@ -128,7 +128,7 @@ const interactionModalStore = new InteractionModalStore(DispatcherDefault, {
             nonce(dependencyMap[2]).setFailed(closure_1_0);
             const obj = nonce(dependencyMap[2]);
           }
-        }, 10 * tmp3(1090).Millis.SECOND);
+        }, 10 * tmp3(1091).Millis.SECOND);
       }
       return true;
     } else {

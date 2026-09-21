@@ -1,9 +1,9 @@
 // Module ID: 11405
 // Function ID: 11406
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11405
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "36e39be8b33ba48e0db05b6e6fe9d9e1", name: "ic_add_reaction_v2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "1f7ad1fdc74f906f486dc69b445bb809", name: "wumpus-wump", type: "png" });

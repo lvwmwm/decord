@@ -1,9 +1,9 @@
 // Module ID: 13600
 // Function ID: 13601
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13600
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 48, height: 48, scales: [2, 3], hash: "375e827d318b23a5d1a3b7afbb840275", name: "tier_0_48px_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 297, height: 238, scales: [1], hash: "2a38db2647d78740ca056c705d4301a7", name: "wumpus-clock", type: "png" });

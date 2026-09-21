@@ -1,25 +1,25 @@
-// Module ID: 10509
-// Function ID: 10510
+// Module ID: 10639
+// Function ID: 10640
 // Name: GIFPickerItemActionSheet
-// Dependencies: [19, 17, 21, 4636, 576, 10499, 10495, 1477, 4603, 4335, 1114, 10510, 7292, 4334, 5056, 7253, 5668, 5514, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 10629, 10625, 1478, 4723, 4454, 1115, 10640, 7434, 4453, 5186, 7395, 5804, 5650, 2]
 // Exports: default
 
-// Module 10509 (GIFPickerItemActionSheet)
+// Module 10639 (GIFPickerItemActionSheet)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ToastUtils from "ToastUtils" /* 4334 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import ClipboardUtils from "ClipboardUtils" /* 7292 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10495 */;
-import GifIcon from "GifIcon" /* 10510 */;
+import util from "util" /* 1115 */;
+import ToastUtils from "ToastUtils" /* 4453 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10625 */;
+import GifIcon from "GifIcon" /* 10640 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { contentWrapper: { paddingHorizontal: nativeDefault.space.PX_16 }, gifContainer: { flexDirection: "column", alignItems: "center" }, gifImage: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.gifImage = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -80,9 +80,9 @@ export default function GIFPickerItemActionSheet(item) {
       str = "destructive";
     }
     const obj = { variant: str, onPress: callback1, text: null, grow: true };
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     const string = intl.string;
-    const t = tmp2(1114).t;
+    const t = tmp2(1115).t;
     if (isFavoriteGIF) {
       let stringResult = string(t["5/NS74"]);
     } else {

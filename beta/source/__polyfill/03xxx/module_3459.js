@@ -1,9 +1,9 @@
 // Module ID: 3459
 // Function ID: 3460
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3459
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_player", scales: [1], hash: "81026198b198a840d393b2692f40aeb8", name: "VideoPlayer.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJ0bmVyX3BlcmtzL3hib3gvcGFydG5lcl9wYXNz", scales: [1], hash: "e29e093df90ffd33c00e6f6372bf1dd6", name: "es-419.messages.e29e093df90ffd33c00e6f6372bf1dd6.compiled.messages", type: "jsona" });

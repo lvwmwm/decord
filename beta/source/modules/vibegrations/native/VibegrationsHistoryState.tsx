@@ -1,0 +1,60 @@
+// Module ID: 17069
+// Function ID: 17070
+// Name: VibegrationsHistoryState
+// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 3678, 2]
+// Exports: VibegrationsHistoryNotice, VibegrationsHistoryPlaceholder
+
+// Module 17069 (VibegrationsHistoryState)
+import nativeDefault from "native" /* 576 */;
+import util from "util" /* 1115 */;
+import _modDef3678 from "module_3678" /* 3678 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import noop from "module_19" /* 19 */;
+
+require = fn;
+const View = fn(17).View;
+const jsxProd = fn(21);
+({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
+const createStyles = fn(4756);
+let obj2 = { placeholder: { alignItems: "center", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_24 } };
+let closure_6 = createStyles.createStyles(obj2);
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsHistoryState.tsx");
+
+export const VibegrationsHistoryPlaceholder = function VibegrationsHistoryPlaceholder(state) {
+  ({ emptyTitle, emptyBody } = state);
+  const obj = { style: closure_6().placeholder, accessibilityRole: null, children: null };
+  let str;
+  if ("failed" === state.state.status) {
+    str = "alert";
+  }
+  obj.accessibilityRole = str;
+  if ("failed" === state.state.status) {
+    const intl = tmp5(1115).intl;
+    emptyTitle = intl.string(_modDef3678.TV42NS);
+  }
+  const items = [React4(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
+  if ("failed" === state.state.status) {
+    const intl2 = tmp5(1115).intl;
+    emptyBody = intl2.string(_modDef3678["+2AMt1"]);
+  }
+  items[1] = React4(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
+  obj.children = items;
+  return hasOwnProperty(View, obj);
+};
+export const VibegrationsHistoryNotice = function VibegrationsHistoryNotice(state) {
+  state = state.state;
+  if (!state.hasRows) {
+    return null;
+  } else if ("failed" === state.status) {
+    const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
+    const intl2 = util.intl;
+    obj2.children = intl2.string(_modDef3678.TV42NS);
+    let tmp = React4(Text_Text.Text, obj2);
+  } else if (state.truncated) {
+    const obj = { variant: "text-xs/normal", color: "text-muted", children: null };
+    const intl = util.intl;
+    obj.children = intl.string(_modDef3678["U/qDX9"]);
+    tmp = React4(Text_Text.Text, obj);
+  }
+};

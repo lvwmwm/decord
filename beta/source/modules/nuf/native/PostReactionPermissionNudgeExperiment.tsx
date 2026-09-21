@@ -1,10 +1,10 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12674
+// Function ID: 12675
 // Name: PostReactionPermissionNudgeExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 12553 (PostReactionPermissionNudgeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 12674 (PostReactionPermissionNudgeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-post-reaction-push-banner", kind: "user", defaultConfig: { enabled: false }, variations: null };

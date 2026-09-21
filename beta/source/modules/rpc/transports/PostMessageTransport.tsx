@@ -1,18 +1,18 @@
-// Module ID: 9682
-// Function ID: 9683
+// Module ID: 9579
+// Function ID: 9580
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 1956, 4541, 1074, 1090, 9683, 568, 1109, 1240, 4265, 9684, 9686, 1896, 9687, 2]
+// Dependencies: [5, 32, 2040, 4660, 1074, 1091, 9580, 568, 1110, 1241, 4385, 9581, 9583, 1980, 9584, 2]
 
-// Module 9682 (PostMessageTransport)
-import DurationsDefault from "Durations" /* 1090 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 9683 */;
-import RPCErrorDefault from "RPCError" /* 9684 */;
+// Module 9579 (PostMessageTransport)
+import DurationsDefault from "Durations" /* 1091 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 9580 */;
+import RPCErrorDefault from "RPCError" /* 9581 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 const require = fn;
-const RPC_EMBEDDED_APP_SCOPE = fn(4541).RPC_EMBEDDED_APP_SCOPE;
+const RPC_EMBEDDED_APP_SCOPE = fn(4660).RPC_EMBEDDED_APP_SCOPE;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, ComponentActions: closure_8, RPCCloseCodes: closure_9, RPCErrors: c10 } = Constants);
 let closure_11 = 10 * DurationsDefault.Millis.SECOND;
@@ -62,10 +62,10 @@ class PostMessageTransport extends EventEmitter {
         const item = Array.from(selfEmbeddedActivities.entries()).forEach((item) => {
           [tmp, tmp2] = item;
           const obj2 = { application_id: tmp, channel_id: null, guild_id: null, timeout_ms: null };
-          const obj = closure_1_1(1240);
-          obj2.channel_id = closure_1_0(4265).getEmbeddedActivityLocationChannelId(tmp2.location);
-          const obj3 = closure_1_0(4265);
-          obj2.guild_id = closure_1_0(4265).getEmbeddedActivityLocationGuildId(tmp2.location);
+          const obj = closure_1_1(1241);
+          obj2.channel_id = closure_1_0(4385).getEmbeddedActivityLocationChannelId(tmp2.location);
+          const obj3 = closure_1_0(4385);
+          obj2.guild_id = closure_1_0(4385).getEmbeddedActivityLocationGuildId(tmp2.location);
           obj2.timeout_ms = timeout_ms;
           obj.track(constants.ACTIVITY_HANDSHAKE_TIMED_OUT, obj2);
         });
@@ -440,30 +440,30 @@ PostMessageTransport.prototype["routeEvent"] = function routeEvent(value, iframe
     if (RPCOpcodesDefault.HANDSHAKE === tmp5) {
       if (null != value) {
         const obj2 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp35 = new tmp7(9684)(obj2, "Already connected");
+        const tmp35 = new tmp7(9581)(obj2, "Already connected");
         throw tmp35;
       } else {
         return self.handleHandshake(iframeId, tmp6, arg3);
       }
-    } else if (tmp7(9683).FRAME === tmp5) {
+    } else if (tmp7(9580).FRAME === tmp5) {
       if (null == value) {
         const obj3 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp27 = new tmp7(9684)(obj3, "Not connected");
+        const tmp27 = new tmp7(9581)(obj3, "Not connected");
         throw tmp27;
       } else {
         return self.handleFrame(iframeId, value, tmp6);
       }
-    } else if (tmp7(9683).CLOSE === tmp5) {
+    } else if (tmp7(9580).CLOSE === tmp5) {
       if (null == value) {
         const obj4 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp20 = new tmp7(9684)(obj4, "Not connected");
+        const tmp20 = new tmp7(9581)(obj4, "Not connected");
         throw tmp20;
       } else {
         return self.handleClose(value, tmp6);
       }
     } else {
       const obj = { closeCode: constants2.CLOSE_UNSUPPORTED };
-      const tmp13 = new tmp7(9684)(obj, "Invalid opcode");
+      const tmp13 = new tmp7(9581)(obj, "Invalid opcode");
       throw tmp13;
     }
     const tmp4 = _slicedToArray(arg2, 2);

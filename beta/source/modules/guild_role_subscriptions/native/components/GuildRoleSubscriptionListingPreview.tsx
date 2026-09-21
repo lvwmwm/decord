@@ -1,21 +1,21 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 18224
+// Function ID: 18225
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 19, 17, 21, 4636, 576, 4632, 7337, 1114, 15315, 15311, 5668, 17883, 17877, 17856, 15322, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 4752, 7479, 1115, 15501, 15497, 5804, 18225, 18219, 18198, 15508, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 17882 (GuildRoleSubscriptionListingPreview)
+// Module 18224 (GuildRoleSubscriptionListingPreview)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import PriceUtils from "PriceUtils" /* 7337 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15311 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15315 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15322 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 17856 */;
-import GuildRoleSubscriptionBenefitPreview from "GuildRoleSubscriptionBenefitPreview" /* 17877 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 17883 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import PriceUtils from "PriceUtils" /* 7479 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15501 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15508 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 18198 */;
+import GuildRoleSubscriptionBenefitPreview from "GuildRoleSubscriptionBenefitPreview" /* 18219 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 18225 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -155,7 +155,7 @@ class BenefitsSection {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { padding: 16 }, header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopStartRadius: 8, borderTopEndRadius: 8, display: "flex", flexDirection: "column", alignItems: "center", padding: 16 }, image: { width: 80, height: 80, borderRadius: 40, marginTop: 16 }, priceGroup: { marginTop: 16, alignItems: "center" }, priceInterval: { marginTop: 4 }, content: { paddingHorizontal: 16 }, contentWithBackground: null, separator: null, sectionLabel: null, benefitSpacing: null, roundedBenefitsContainer: null, footer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopStartRadius: 8, borderTopEndRadius: 8, display: "flex", flexDirection: "column", alignItems: "center", padding: 16 };
 obj2.contentWithBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
@@ -191,7 +191,7 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   if (tmp4Result) {
     const obj7 = { children: null };
     const items1 = [tmp6(Separator, {}), ];
-    const obj8 = { guildId, benefits: first, label: tmp8(1114).t.sqjII9, listingId };
+    const obj8 = { guildId, benefits: first, label: tmp8(1115).t.sqjII9, listingId };
     items1[1] = tmp6(BenefitsSection, obj8);
     obj7.children = items1;
     tmp4Result = tmp4(React6, obj7);
@@ -201,7 +201,7 @@ export const GuildRoleSubscriptionListingPreview = function GuildRoleSubscriptio
   if (tmp4Result2) {
     const obj9 = { children: null };
     const items2 = [tmp6(Separator, {}), ];
-    const obj10 = { guildId, benefits: first1, label: tmp8(1114).t.aBE7f9, listingId };
+    const obj10 = { guildId, benefits: first1, label: tmp8(1115).t.aBE7f9, listingId };
     items2[1] = tmp6(BenefitsSection, obj10);
     obj9.children = items2;
     tmp4Result2 = tmp4(React6, obj9);

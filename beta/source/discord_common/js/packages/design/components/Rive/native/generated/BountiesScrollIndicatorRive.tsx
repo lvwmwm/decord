@@ -1,11 +1,11 @@
-// Module ID: 4427
-// Function ID: 4428
+// Module ID: 4546
+// Function ID: 4547
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [109, 19, 21, 4367, 4428, 4422, 2]
+// Dependencies: [109, 19, 21, 4486, 4547, 4541, 2]
 
-// Module 4427 (BountiesScrollIndicatorRive)
-import BaseRive from "BaseRive" /* 4367 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4422 */;
+// Module 4546 (BountiesScrollIndicatorRive)
+import BaseRive from "BaseRive" /* 4486 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4541 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

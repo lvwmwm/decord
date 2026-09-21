@@ -1,23 +1,23 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8879
+// Function ID: 8880
 // Name: FormInput
-// Dependencies: [19, 1074, 21, 4636, 576, 1363, 4347, 4488, 5767, 7188, 6707, 1176, 2]
+// Dependencies: [19, 1074, 21, 4756, 576, 1364, 4466, 4607, 5903, 7330, 6848, 1177, 2]
 
-// Module 8724 (FormInput)
+// Module 8879 (FormInput)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import native2 from "native" /* 4347 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import native2 from "native" /* 4466 */;
 import noop from "module_19" /* 19 */;
 
-const native = TextArea(1176);
-const shared = TextArea(4488);
-const RedesignCompat = TextArea(5767);
-const TextInput = TextArea(6707);
-const TextArea2 = TextArea(7188);
+const native = TextArea(1177);
+const shared = TextArea(4607);
+const RedesignCompat = TextArea(5903);
+const TextInput = TextArea(6848);
+const TextArea2 = TextArea(7330);
 require = fn;
 const KeyboardThemes = fn(1074).KeyboardThemes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { inputViewContainer: { paddingVertical: 13, paddingHorizontal: 15 }, placeholderText: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, inputText: null };
 let obj3 = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
 obj.inputText = { color: nativeDefault.colors.TEXT_DEFAULT };
@@ -164,12 +164,12 @@ export default noop.forwardRef((helpText, ref) => {
     if (tmp7) {
       if (flag3) {
         TextArea = TextArea2.TextArea;
-        obj2 = { ref, returnKeyType: "default", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: null, placeholder: null, secureTextEntry: null, isDisabled: null, autoFocus: null, autoCapitalize: null, autoCorrect: null, maxLength: null, onEndEditing: null, value: null, errorMessage: null };
+        obj2 = { ref, returnKeyType: "default", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: null, placeholder: null, secureTextEntry: null, disabled: null, autoFocus: null, autoCapitalize: null, autoCorrect: null, maxLength: null, onEndEditing: null, value: null, errorMessage: null };
         color = color.placeholderText.color;
         obj2.placeholderTextColor = color;
         obj2.placeholder = placeholder;
         obj2.secureTextEntry = tmp9;
-        obj2.isDisabled = flag2;
+        obj2.disabled = flag2;
         obj2.autoFocus = flag4;
         obj2.autoCapitalize = autoCapitalize;
         obj2.autoCorrect = autoCorrect;
@@ -181,7 +181,7 @@ export default noop.forwardRef((helpText, ref) => {
         obj2.errorMessage = error;
         let tmp14Result = tmp14(TextArea, obj2);
       } else {
-        const obj3 = { ref, returnKeyType: "done", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: color.placeholderText.color, placeholder, secureTextEntry: tmp9, isDisabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, onEndEditing: onEndEditing.onEndEditing, value, errorMessage: error };
+        const obj3 = { ref, returnKeyType: "done", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: color.placeholderText.color, placeholder, secureTextEntry: tmp9, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, onEndEditing: onEndEditing.onEndEditing, value, errorMessage: error };
         tmp14Result = tmp14(TextInput.TextInput, obj3);
       }
     } else {

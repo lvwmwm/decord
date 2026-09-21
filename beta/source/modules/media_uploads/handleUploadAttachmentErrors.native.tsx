@@ -1,16 +1,16 @@
-// Module ID: 9439
-// Function ID: 9440
+// Module ID: 9423
+// Function ID: 9424
 // Name: handleUploadAttachmentErrors
-// Dependencies: [1074, 5260, 5215, 9440, 4980, 1114, 9523, 2]
+// Dependencies: [1074, 5350, 9424, 5378, 5108, 1115, 9507, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 9439 (handleUploadAttachmentErrors)
-import util from "util" /* 1114 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import FileUtils from "FileUtils" /* 5215 */;
-import KestrelExperiment from "KestrelExperiment" /* 5260 */;
-import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 9440 */;
-import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 9523 */;
+// Module 9423 (handleUploadAttachmentErrors)
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import FileUtils from "FileUtils" /* 5350 */;
+import UploadLimits from "UploadLimits" /* 5378 */;
+import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 9424 */;
+import getAttachmentUploadAbortAlert from "getAttachmentUploadAbortAlert" /* 9507 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -22,11 +22,10 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
   if (undefined === code) {
     return false;
   } else if (code === constants.ENTITY_TOO_LARGE) {
-    const kestrelConfig = KestrelExperiment.getKestrelConfig({ location: "native.handleUploadMessageAttachmentsErrors" });
     const maxFileSizeResult = FileUtils.maxFileSize(guildId);
-    const obj4 = { file: tmp, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null, errorReason: null };
+    const obj4 = { file: tmp, maxSize: null, baseMaxSize: null, guildId: null, analyticsLocations: null, errorReason: null, appEntryKey: null };
     const tmp27 = showUploadFileSizeErrorDefault;
-    obj4.maxSize = KestrelExperiment.getEffectiveKestrelLimit(kestrelConfig, maxFileSizeResult);
+    obj4.maxSize = UploadLimits.getEffectiveUploadLimit(maxFileSizeResult);
     obj4.baseMaxSize = maxFileSizeResult;
     obj4.guildId = guildId;
     obj4.analyticsLocations = tmp2;
@@ -35,6 +34,7 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
       type = reason.type;
     }
     obj4.errorReason = type;
+    obj4.appEntryKey = tmp3;
     tmp27(obj4);
     return true;
   } else if (code === tmp31.TOO_MANY_ATTACHMENTS) {
@@ -55,12 +55,12 @@ export const handleUploadMessageAttachmentsErrors = function handleUploadMessage
     AlertActionCreatorsDefault.show(obj9);
     return true;
   } else if (code === tmp31.INVALID_FILE_ASSET) {
-    const obj12 = { title: null, body: null };
+    const obj11 = { title: null, body: null };
     const intl = util.intl;
-    obj12.title = intl.string(util.t.B3vFdU);
+    obj11.title = intl.string(util.t.B3vFdU);
     const intl2 = util.intl;
-    obj12.body = intl2.string(util.t.zMEjJg);
-    AlertActionCreatorsDefault.show(obj12);
+    obj11.body = intl2.string(util.t.zMEjJg);
+    AlertActionCreatorsDefault.show(obj11);
     return true;
   } else {
     const attachmentUploadAbortAlertContent = getAttachmentUploadAbortAlert.getAttachmentUploadAbortAlertContent(code);

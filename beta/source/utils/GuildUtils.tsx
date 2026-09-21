@@ -1,17 +1,17 @@
-// Module ID: 5600
-// Function ID: 5601
+// Module ID: 5736
+// Function ID: 5737
 // Name: GuildUtils
-// Dependencies: [1979, 1371, 1437, 1090, 5601, 4481, 1114, 2]
+// Dependencies: [2063, 1372, 1438, 1091, 5737, 4600, 1115, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5600 (GuildUtils)
-import DurationsDefault from "Durations" /* 1090 */;
-import util from "util" /* 1114 */;
-import UserUtilsAll from "UserUtils" /* 4481 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5601 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
-import priv from "priv" /* 1437 */;
+// Module 5736 (GuildUtils)
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
+import UserUtilsAll from "UserUtils" /* 4600 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
+import priv from "priv" /* 1438 */;
 
 require = fn;
 function getGuildNameSuggestion(truncateUsername) {

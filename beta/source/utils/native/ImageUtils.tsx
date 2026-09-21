@@ -1,16 +1,16 @@
-// Module ID: 1476
-// Function ID: 1477
+// Module ID: 1477
+// Function ID: 1478
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1074, 1431, 1477, 1471, 1432, 1878, 12, 1399, 1396, 2]
+// Dependencies: [32, 17, 1074, 1432, 1478, 1472, 1433, 1879, 12, 1400, 1397, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1476 (utils/ImageUtils)
-import AvatarUtils from "AvatarUtils" /* 1396 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1399 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1431 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1432 */;
-import _modDef1471 from "module_1471" /* 1471 */;
-import useWindowDimensions from "useWindowDimensions" /* 1477 */;
+// Module 1477 (utils/ImageUtils)
+import AvatarUtils from "AvatarUtils" /* 1397 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1432 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1433 */;
+import _modDef1472 from "module_1472" /* 1472 */;
+import useWindowDimensions from "useWindowDimensions" /* 1478 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -24,7 +24,7 @@ function getSrcWithWidthAndHeight(animated) {
     flag = false;
   }
   const tmp = _slicedToArray(src.split("?"), 2);
-  const items = [tmp[0], _modDef1471.parse(tmp[1])];
+  const items = [tmp[0], _modDef1472.parse(tmp[1])];
   [tmp5, tmp6] = items;
   if (re8.test(tmp5)) {
     tmp6.format = "webp";
@@ -55,7 +55,7 @@ function getSrcWithWidthAndHeight(animated) {
     if (null != tmp9) {
       const obj3 = { targetWidth, targetHeight, sourceWidth, sourceHeight, maxUpscale: null };
       const obj2 = AttachmentImageLadder;
-      obj3.maxUpscale = AttachmentImageLadder.getSnapDownMaxUpscale(tmp9, tmp2(1878)());
+      obj3.maxUpscale = AttachmentImageLadder.getSnapDownMaxUpscale(tmp9, tmp2(1879)());
       size = obj2.snapAttachmentDimensions(obj3);
     }
     if (!tmp12) {
@@ -70,7 +70,7 @@ function getSrcWithWidthAndHeight(animated) {
   const tmp4 = _slicedToArray(items, 2);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2(1471);
+    tmp2(1472);
     text = `${tmp5}?${obj6.stringify(tmp6)}`;
   }
   return text;

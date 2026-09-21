@@ -1,16 +1,16 @@
-// Module ID: 17922
-// Function ID: 17923
+// Module ID: 18264
+// Function ID: 18265
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7738, 4651, 1074, 3, 17923, 9817, 11, 7221, 1363, 8322, 1240, 2]
+// Dependencies: [5, 17, 7872, 4771, 1074, 3, 18265, 9557, 11, 7363, 1364, 8474, 1241, 2]
 
-// Module 17922 (NativeNotificationsManager)
+// Module 18264 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
-import PushNotificationDefault from "PushNotification" /* 9817 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 17923 */;
+import PushNotificationDefault from "PushNotification" /* 9557 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18265 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7738 */;
-import ReadStateStore from "ReadStateStore" /* 4651 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
+import ReadStateStore from "ReadStateStore" /* 4771 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 function getDeliveredNotifications() {
@@ -307,7 +307,7 @@ const prototype = function NativeNotificationsManager() {
                 return rounded;
               }
             };
-            obj14 = applyArgumentsResult(1363);
+            obj14 = applyArgumentsResult(1364);
             let str2 = "cache";
             if (obj8.isIOS()) {
               str2 = "shared";
@@ -358,7 +358,7 @@ const prototype = function NativeNotificationsManager() {
                     applyArgumentsResult = closure_131_6[Symbol.iterator]();
                     const str = closure_131_3.trim();
                   }
-                  obj13 = applyArgumentsResult(1363);
+                  obj13 = applyArgumentsResult(1364);
                 }
               }
             } else if (3 === tmp9) {
@@ -391,7 +391,7 @@ const prototype = function NativeNotificationsManager() {
                   const obj9 = { value, done: true };
                   return obj9;
                 } else {
-                  const obj12 = applyArgumentsResult(1363);
+                  const obj12 = applyArgumentsResult(1364);
                 }
               } else if (arg0 === 1) {
                 logger = 3;
@@ -411,7 +411,7 @@ const prototype = function NativeNotificationsManager() {
           }
           c7 = 6;
           logger = 1;
-          const obj11 = { value: applyArgumentsResult(8322).removeFile(closure_131_0, closure_131_2), done: false };
+          const obj11 = { value: applyArgumentsResult(8474).removeFile(closure_131_0, closure_131_2), done: false };
           return obj11;
         }
       } catch (tmp41) {

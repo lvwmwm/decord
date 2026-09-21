@@ -1,14 +1,14 @@
-// Module ID: 7957
-// Function ID: 7958
+// Module ID: 8098
+// Function ID: 8099
 // Name: ForLaterExperiment
-// Dependencies: [7954, 1433, 38, 7958, 2]
+// Dependencies: [8095, 1434, 38, 8099, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, isForLaterLimitUpgradable, useForLaterLimit, useHasForLaterAccess, useIsForLaterExperimentOn, useIsForLaterLimitUpgradable
 
-// Module 7957 (ForLaterExperiment)
+// Module 8098 (ForLaterExperiment)
 import _modDef38 from "module_38" /* 38 */;
-import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 7958 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 7954 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1433 */;
+import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 8099 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 8095 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const hasForLaterPremiumTypeDefault = hasForLaterPremiumType2;

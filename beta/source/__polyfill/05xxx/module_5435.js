@@ -1,9 +1,23 @@
 // Module ID: 5435
 // Function ID: 5436
-// Dependencies: [1120]
+// Dependencies: []
 
 // Module 5435
-import registerAsset from "module_1120" /* 1120 */;
+let c0 = 18761;
+let c1 = 19789;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "269225999db4429a7f3e74da6725c7b9", name: "img_account_sync_playstation_white", type: "png" });
+export default {
+  BIG_ENDIAN: 19789,
+  LITTLE_ENDIAN: 18761,
+  getByteOrder(getUint16, c5) {
+    if (getUint16.getUint16(c5) === c0) {
+      return c0;
+    } else if (getUint16.getUint16(c5) === c1) {
+      return c1;
+    } else {
+      const _Error = Error;
+      const error = new Error("Illegal byte order value. Faulty image.");
+      throw error;
+    }
+  }
+};

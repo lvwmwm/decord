@@ -1,31 +1,31 @@
-// Module ID: 10772
-// Function ID: 10773
+// Module ID: 10903
+// Function ID: 10904
 // Name: MediaKeyboardList
-// Dependencies: [32, 19, 17, 1478, 1607, 7254, 4846, 21, 4636, 576, 4373, 10773, 10776, 1480, 1611, 1477, 5763, 6728, 9625, 5232, 12, 10777, 10784, 10786, 10450, 10787, 5228, 7175, 1114, 2]
+// Dependencies: [32, 19, 17, 1479, 1608, 7396, 4965, 21, 4756, 576, 4492, 10904, 10907, 1481, 1612, 1478, 5899, 6869, 9664, 5367, 12, 10908, 10915, 10917, 10580, 10918, 5363, 7317, 1115, 2]
 
-// Module 10772 (MediaKeyboardList)
+// Module 10903 (MediaKeyboardList)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10773 */;
-import MediaKeyboardItem from "MediaKeyboardItem" /* 10777 */;
-import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10784 */;
-import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10786 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10904 */;
+import MediaKeyboardItem from "MediaKeyboardItem" /* 10908 */;
+import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10915 */;
+import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10917 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1478 */;
+import DimensionsStore from "DimensionsStore" /* 1479 */;
 
 const MediaKeyboardItemDefault = MediaKeyboardItem;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
-let closure_7 = fn(1607).InAppCameraUsedCameraPreviewTypes;
-let closure_8 = fn(7254).ACTION_SHEET_START_HEIGHT_RATIO;
-const NativePermissionStatus = fn(4846).NativePermissionStatus;
+let closure_7 = fn(1608).InAppCameraUsedCameraPreviewTypes;
+let closure_8 = fn(7396).ACTION_SHEET_START_HEIGHT_RATIO;
+const NativePermissionStatus = fn(4965).NativePermissionStatus;
 const jsx = fn(21).jsx;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.PhotoLibraryHelper);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { listContainer: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, marginTop: 8, paddingTop: 8 } };
 let closure_12 = createStyles.createStyles(obj);
 let closure_13 = { code: "function MediaKeyboardListTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get();}" };

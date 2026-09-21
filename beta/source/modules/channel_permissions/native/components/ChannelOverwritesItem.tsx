@@ -1,23 +1,23 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9839
+// Function ID: 9840
 // Name: ChannelOverwritesItem
-// Dependencies: [19, 17, 1371, 8519, 21, 4636, 4986, 1114, 4649, 4334, 5204, 6717, 5686, 9882, 9868, 4632, 1176, 9883, 9884, 4355, 5698, 2]
+// Dependencies: [19, 17, 1372, 8672, 21, 4756, 5114, 1115, 4769, 4453, 5339, 6858, 5822, 9840, 9823, 4752, 1177, 9841, 9842, 4474, 5834, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 9881 (ChannelOverwritesItem)
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import AlertModal from "AlertModal" /* 4986 */;
-import TableRow from "TableRow" /* 5686 */;
-import FormCheckbox from "FormCheckbox" /* 5698 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9868 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9882 */;
-import _modDef9883 from "module_9883" /* 9883 */;
-import _modDef9884 from "module_9884" /* 9884 */;
+// Module 9839 (ChannelOverwritesItem)
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import AlertModal from "AlertModal" /* 5114 */;
+import TableRow from "TableRow" /* 5822 */;
+import FormCheckbox from "FormCheckbox" /* 5834 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9823 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9840 */;
+import _modDef9841 from "module_9841" /* 9841 */;
+import _modDef9842 from "module_9842" /* 9842 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function RemoveIcon(item) {
@@ -27,8 +27,8 @@ function RemoveIcon(item) {
   let tmp3Result = null;
   if (null != channelId) {
     const obj = { disabled: item.disabled, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
-    let intl = item(1114).intl;
-    obj.accessibilityLabel = intl.string(item(1114).t.N86XcP);
+    let intl = item(1115).intl;
+    obj.accessibilityLabel = intl.string(item(1115).t.N86XcP);
     obj.onPress = function onPress() {
       if (null != onRemove) {
         return tmp(item);
@@ -59,8 +59,8 @@ function RemoveIcon(item) {
       prop = tmp.rowRemoveIconDisabled;
     }
     let obj2 = { style: prop };
-    obj.children = closure_7(item(6717).CircleXIcon, obj2);
-    tmp3Result = tmp3(item(5204).PressableOpacity, obj);
+    obj.children = closure_7(item(6858).CircleXIcon, obj2);
+    tmp3Result = tmp3(item(5339).PressableOpacity, obj);
   }
   return tmp3Result;
 }
@@ -98,8 +98,8 @@ function MemberItem(arg0) {
   const items1 = [React5(Text_Text.Text, obj2), ];
   let tmp4Result = null;
   if (item.rowType === RowType.OWNER) {
-    const obj3 = { size: tmp5(1176).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9883, disableColor: true, style: tmp.ownerIcon };
-    tmp4Result = tmp4(tmp5(1176).Icon, obj3);
+    const obj3 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9841, disableColor: true, style: tmp.ownerIcon };
+    tmp4Result = tmp4(tmp5(1177).Icon, obj3);
   }
   items1[1] = tmp4Result;
   obj.children = items1;
@@ -131,7 +131,7 @@ function EmptyRoleItem(item) {
   item = item.item;
   const obj = { icon: null, label: null };
   const tmp = closure_9();
-  obj.icon = React5(native.Icon, { source: _modDef9884, color: item.colorString, size: native.IconSizes.MEDIUM, style: closure_9().roleIcon });
+  obj.icon = React5(native.Icon, { source: _modDef9842, color: item.colorString, size: native.IconSizes.MEDIUM, style: closure_9().roleIcon });
   obj.label = item.name;
   return React5(TableRow.TableRow, obj);
 }
@@ -177,10 +177,10 @@ class ChannelOverwritesItem {
   }
 }
 const View = fn(17).View;
-const RowType = fn(8519).RowType;
+const RowType = fn(8672).RowType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_9 = createStyles.createStyles({ nameWrapper: { flexDirection: "row", alignItems: "flex-end", marginRight: 16 }, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: { height: 30, width: 30 }, rowRemoveIconDisabled: { opacity: 0.3 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/channel_permissions/native/components/ChannelOverwritesItem.tsx");

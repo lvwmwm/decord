@@ -1,13 +1,13 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 12013
+// Function ID: 12014
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7211, 4654, 1074, 1364, 1384, 11599, 2]
+// Dependencies: [7353, 4774, 1074, 1365, 1385, 9632, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11893 (getRemoteJoinableActivityPlatform)
-import FlagUtils from "FlagUtils" /* 1384 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 7211 */;
-import SessionsStore from "SessionsStore" /* 4654 */;
+// Module 12013 (getRemoteJoinableActivityPlatform)
+import FlagUtils from "FlagUtils" /* 1385 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 7353 */;
+import SessionsStore from "SessionsStore" /* 4774 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -45,7 +45,7 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 tmp9 = platform1;
               }
               tmp4 = tmp9;
-              tmp11Result4 = tmp11(1384);
+              tmp11Result4 = tmp11(1385);
             } else {
               tmp4 = null;
               if (!ConnectedAppsStore.isConnected(remoteApplicationActivity.application_id)) {
@@ -53,18 +53,18 @@ export const getRemoteJoinableActivityPlatform = function getRemoteJoinableActiv
                 if (tmp11Result5.isAndroid()) {
                   let isIOSResult = platform === constants2.ANDROID;
                 } else {
-                  isIOSResult = tmp11(1364).isIOS();
+                  isIOSResult = tmp11(1365).isIOS();
                   if (isIOSResult) {
                     isIOSResult = platform === constants2.IOS;
                   }
-                  const tmp11Result6 = tmp11(1364);
+                  const tmp11Result6 = tmp11(1365);
                 }
                 tmp4 = null;
-                tmp11Result5 = tmp11(1364);
+                tmp11Result5 = tmp11(1365);
               }
             }
           }
-          tmp11Result = tmp11(11599);
+          tmp11Result = tmp11(9632);
         }
         return tmp4;
       }

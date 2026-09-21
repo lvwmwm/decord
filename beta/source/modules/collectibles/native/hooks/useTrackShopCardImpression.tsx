@@ -1,14 +1,14 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 9046
+// Function ID: 9047
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 8893, 7265, 1477, 8295, 7657, 8894, 1248, 7656, 7548, 2]
+// Dependencies: [19, 9047, 7407, 1478, 8447, 7796, 9048, 1249, 7795, 7687, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 8892 (useTrackShopCardImpression)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7656 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7657 */;
-import useTrackImpression from "useTrackImpression" /* 8894 */;
+// Module 9046 (useTrackShopCardImpression)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7795 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
+import useTrackImpression from "useTrackImpression" /* 9048 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

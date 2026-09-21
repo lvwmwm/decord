@@ -1,11 +1,11 @@
-// Module ID: 1998
-// Function ID: 1999
+// Module ID: 2082
+// Function ID: 2083
 // Name: GuildDao
-// Dependencies: [1991, 1993, 2]
+// Dependencies: [2075, 2077, 2]
 
-// Module 1998 (GuildDao)
-import Table from "Table" /* 1991 */;
-import TableId from "TableId" /* 1993 */;
+// Module 2082 (GuildDao)
+import Table from "Table" /* 2075 */;
+import TableId from "TableId" /* 2077 */;
 import size from "module_2" /* 2 */;
 
 let GuildDao;

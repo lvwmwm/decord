@@ -1,39 +1,39 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 17211
+// Function ID: 17212
 // Name: AutoAnalytics
-// Dependencies: [19, 4652, 5358, 7629, 1962, 1957, 2021, 1979, 1908, 4685, 4659, 2011, 4458, 5360, 4817, 1371, 1074, 1964, 21, 4816, 7877, 16851, 16852, 1982, 16853, 1240, 1369, 16854, 504, 16855, 16856, 2]
+// Dependencies: [19, 4772, 5494, 7768, 2046, 2041, 2105, 2063, 1992, 4805, 4779, 2095, 4577, 5496, 4937, 1372, 1074, 2048, 21, 4936, 8017, 17212, 17213, 2066, 17214, 1241, 1370, 17215, 504, 17216, 17217, 2]
 // Exports: default
 
-// Module 16850 (AutoAnalytics)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import FavoritesUtils from "FavoritesUtils" /* 1982 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7877 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 16851 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 16852 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16854 */;
+// Module 17211 (AutoAnalytics)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import FavoritesUtils from "FavoritesUtils" /* 2066 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8017 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 17212 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 17213 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 17215 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7629 */;
-import StageInstanceStore from "StageInstanceStore" /* 1962 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import NetworkStore from "NetworkStore" /* 4685 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5360 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
+import StageInstanceStore from "StageInstanceStore" /* 2046 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import NetworkStore from "NetworkStore" /* 4805 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_18, ActivityTypes: closure_19, GuildFeatures: closure_20 } = Constants);
-const isStaticChannelRoute = fn(1964).isStaticChannelRoute;
+const isStaticChannelRoute = fn(2048).isStaticChannelRoute;
 const jsx = fn(21).jsx;
 const PureComponent = noop.PureComponent;
 class AutoAnalytics extends PureComponent {
@@ -53,8 +53,8 @@ prototype["componentDidMount"] = function componentDidMount() {
     trackChannelOpenedClickstreamDefault(obj2);
     if (tmp) {
       const obj3 = { channel_is_nsfw: tmp2 };
-      tmp18(4816).trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj3);
-      const tmp18Result = tmp18(4816);
+      tmp18(4936).trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj3);
+      const tmp18Result = tmp18(4936);
     }
     tmp17 = constants;
     tmp18 = require;
@@ -76,7 +76,7 @@ prototype["componentDidMount"] = function componentDidMount() {
     trackGuildViewedClickstreamDefault(obj9);
     const tmp14 = importDefault;
     if (obj8.isFavoritesGuildId(selectedGuildId)) {
-      tmp14(16853)();
+      tmp14(17214)();
     }
     obj8 = FavoritesUtils;
   }
@@ -205,8 +205,8 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
     trackChannelOpenedClickstreamDefault(obj12);
     if (isTextInVoice) {
       const obj13 = { channel_is_nsfw: isNSFWChannel };
-      tmp44(4816).trackWithMetadata(tmp43.TEXT_IN_VOICE_OPENED, obj13);
-      const tmp44Result = tmp44(4816);
+      tmp44(4936).trackWithMetadata(tmp43.TEXT_IN_VOICE_OPENED, obj13);
+      const tmp44Result = tmp44(4936);
     }
   }
   if (isTextInVoice) {
@@ -234,7 +234,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(voiceChannelId) {
       trackGuildViewedClickstreamDefault(obj20);
       const tmp68 = importDefault;
       if (obj21.isFavoritesGuildId(selectedGuildId)) {
-        tmp68(16853)();
+        tmp68(17214)();
       }
       obj21 = FavoritesUtils;
     }
@@ -257,8 +257,8 @@ prototype["_trackWithMetadata"] = function _trackWithMetadata(CHANNEL_OPENED, fi
       const obj3 = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(self.collectDefaultAnalyticsMetadata(tmp, tmp2));
-      tmp3(1240).track(CHANNEL_OPENED, obj3);
-      const tmp3Result = tmp3(1240);
+      tmp3(1241).track(CHANNEL_OPENED, obj3);
+      const tmp3Result = tmp3(1241);
     }
     obj2 = AnalyticsUtilsDefault;
     tmp3 = importDefault;

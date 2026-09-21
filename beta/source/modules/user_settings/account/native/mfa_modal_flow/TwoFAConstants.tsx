@@ -1,9 +1,9 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 15060
+// Function ID: 15061
 // Name: TwoFAConstants
 // Dependencies: [1074, 2]
 
-// Module 14872 (TwoFAConstants)
+// Module 15060 (TwoFAConstants)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

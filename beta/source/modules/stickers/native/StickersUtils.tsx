@@ -1,22 +1,22 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10648
+// Function ID: 10649
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 1979, 1371, 10519, 1074, 1217, 5349, 7440, 10516, 504, 9451, 10520, 10521, 1609, 2]
+// Dependencies: [19, 17, 2063, 1372, 10649, 1074, 1218, 5485, 7579, 10646, 504, 9435, 10650, 10651, 1610, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10518 (stickers/StickersUtils)
-import KeyboardTypes from "KeyboardTypes" /* 1609 */;
+// Module 10648 (stickers/StickersUtils)
+import KeyboardTypes from "KeyboardTypes" /* 1610 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
-const useStickerPickerStore = fn(10519).useStickerPickerStore;
+const useStickerPickerStore = fn(10649).useStickerPickerStore;
 const GuildNSFWContentLevel = fn(1074).GuildNSFWContentLevel;
-const ExpressionPickerViewType = fn(1217).ExpressionPickerViewType;
+const ExpressionPickerViewType = fn(1218).ExpressionPickerViewType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stickers/native/StickersUtils.tsx");
 

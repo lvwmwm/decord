@@ -1,18 +1,18 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 17644
+// Function ID: 17645
 // Name: useControlsTranslation
-// Dependencies: [19, 12406, 12409, 12405, 4373, 5055, 2]
+// Dependencies: [19, 12526, 12529, 12525, 4492, 5185, 2]
 // Exports: default
 
-// Module 17291 (useControlsTranslation)
-import spring from "spring" /* 5055 */;
+// Module 17644 (useControlsTranslation)
+import spring from "spring" /* 5185 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const MODE_CHANGE_PHYSICS = fn(12406).MODE_CHANGE_PHYSICS;
-const CALL_TILE_GUTTER = fn(12409).CALL_TILE_GUTTER;
+const MODE_CHANGE_PHYSICS = fn(12526).MODE_CHANGE_PHYSICS;
+const CALL_TILE_GUTTER = fn(12529).CALL_TILE_GUTTER;
 const __initData = { code: "function useControlsTranslationTsx1(){const{withSpring,wrapperSpecs,MODE_CHANGE_PHYSICS,useReducedMotion,CALL_TILE_GUTTER,viewHeight}=this.__closure;return{transform:[{translateX:withSpring(wrapperSpecs.get().x,MODE_CHANGE_PHYSICS)},{translateY:withSpring(!useReducedMotion.get()&&wrapperSpecs.get().hidden?wrapperSpecs.get().height+CALL_TILE_GUTTER+viewHeight.get():wrapperSpecs.get().y,MODE_CHANGE_PHYSICS)}]};}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlsTranslation.tsx");

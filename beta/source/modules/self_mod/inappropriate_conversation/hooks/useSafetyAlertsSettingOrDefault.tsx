@@ -1,14 +1,14 @@
-// Module ID: 11106
-// Function ID: 11107
+// Module ID: 11236
+// Function ID: 11237
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1219, 1371, 504, 8767, 11107, 2]
+// Dependencies: [1220, 1372, 504, 8922, 11237, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 11106 (useSafetyAlertsSettingOrDefault)
+// Module 11236 (useSafetyAlertsSettingOrDefault)
 import initialize from "initialize" /* 504 */;
-import useUserIsTeen from "useUserIsTeen" /* 8767 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
-import UserStore from "UserStore" /* 1371 */;
+import useUserIsTeen from "useUserIsTeen" /* 8922 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

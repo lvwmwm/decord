@@ -1,17 +1,17 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 16006
+// Function ID: 16007
 // Name: PaymentFlowTest
-// Dependencies: [32, 19, 17, 1371, 21, 4636, 576, 563, 5054, 4632, 5688, 6707, 5056, 4603, 15784, 1896, 7084, 10954, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4756, 576, 563, 5184, 4752, 5824, 6848, 5186, 4723, 16007, 1980, 7226, 11084, 2]
 
-// Module 15783 (PaymentFlowTest)
+// Module 16006 (PaymentFlowTest)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7084 */;
-import NativePaymentContext from "NativePaymentContext" /* 10954 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7226 */;
+import NativePaymentContext from "NativePaymentContext" /* 11084 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function TestView() {
@@ -41,10 +41,10 @@ function TestView() {
       onChange(arg0) {
         return closure_1(arg0);
       },
-      isClearable: true
+      clearable: true
     }),
-    closure_7(value(first1[11]).TextInput, { containerStyle: tmp.textInput, label: "Gift Recipient ID", value: first1, placeholder: "Recipient User ID", onChange: tmp2Result[1], isClearable: true }),
-    closure_7(value(first1[11]).TextInput, { containerStyle: tmp.textInput, label: "Gift Message (Optional)", value: first2, placeholder: "Here's a gift for you!", onChange: tmp2Result2[1], isClearable: true }),
+    closure_7(value(first1[11]).TextInput, { containerStyle: tmp.textInput, label: "Gift Recipient ID", value: first1, placeholder: "Recipient User ID", onChange: tmp2Result[1], clearable: true }),
+    closure_7(value(first1[11]).TextInput, { containerStyle: tmp.textInput, label: "Gift Message (Optional)", value: first2, placeholder: "Here's a gift for you!", onChange: tmp2Result2[1], clearable: true }),
 
   ];
   let tmp15 = null === value;
@@ -63,7 +63,7 @@ function TestView() {
       if (tmp2) {
         const obj = { selectedSkuId: first, requestType: "giftSku", giftRecipientId: first1, giftMessage: first2 };
         ActionSheetActionCreatorsDefault.hideActionSheet();
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15784, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16007, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
       }
     }
   });
@@ -75,7 +75,7 @@ function TestView() {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: null, textInput: null, title: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.container = { padding: nativeDefault.space.PX_16 };

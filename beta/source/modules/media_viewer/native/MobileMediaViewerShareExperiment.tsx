@@ -1,11 +1,11 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8636
+// Function ID: 8637
 // Name: MobileMediaViewerShareExperiment
-// Dependencies: [1433, 2]
-// Exports: getMobileMediaViewerShareExperimentEnabled
+// Dependencies: [1434, 2]
+// Exports: getMobileMediaViewerShareExperimentEnabled, useMobileMediaViewerShareExperimentEnabled
 
-// Module 8483 (MobileMediaViewerShareExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 8636 (MobileMediaViewerShareExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-mobile-media-viewer-share", kind: "user", defaultConfig: { enabled: false }, variations: null };
@@ -18,4 +18,7 @@ const result = size.fileFinishedImporting("modules/media_viewer/native/MobileMed
 export const MobileMediaViewerShareExperiment = apexExperiment;
 export const getMobileMediaViewerShareExperimentEnabled = function getMobileMediaViewerShareExperimentEnabled(shareMediaSource) {
   return apexExperiment.getConfig({ location: shareMediaSource }).enabled;
+};
+export const useMobileMediaViewerShareExperimentEnabled = function useMobileMediaViewerShareExperimentEnabled(mediaViewerCopyLink) {
+  return apexExperiment.useConfig({ location: mediaViewerCopyLink }).enabled;
 };

@@ -1,16 +1,28 @@
 // Module ID: 8657
 // Function ID: 8658
-// Dependencies: [26, 106, 65]
+// Dependencies: [521, 518, 543, 616]
 
 // Module 8657
-import _mod26 from "module_26" /* 26 */;
-import weakSet from "weakSet" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import _mod521 from "module_521" /* 521 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGMask", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: null };
-const size = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, x: true, y: true, height: true, width: true, maskUnits: true, maskContentUnits: true, maskType: true };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
-__INTERNAL_VIEW_CONFIG.validAttributes = size;
 
-export default module_65.get("RNSVGMask", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function isIterateeCall(arg0, num, arg2) {
+  if (_mod521(arg2)) {
+    if (typeof num === "number") {
+      let tmp5 = tmp(518)(arg2) && tmp(543)(num, arg2.length);
+      const tmp4 = tmp(518)(arg2) && tmp(543)(num, arg2.length);
+    } else {
+      tmp5 = typeof num === "string";
+      if (typeof num === "string") {
+        tmp5 = num in arg2;
+      }
+    }
+    let tmp6 = tmp5;
+    if (tmp6) {
+      tmp6 = tmp(616)(arg2[num], arg0);
+    }
+    return tmp6;
+  } else {
+    return false;
+  }
+};

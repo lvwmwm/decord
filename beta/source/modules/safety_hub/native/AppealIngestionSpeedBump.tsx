@@ -1,25 +1,25 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12142
+// Function ID: 12143
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 8548, 8537, 1074, 21, 4636, 504, 12014, 12022, 1114, 12020, 12023, 12033, 12034, 4632, 2]
+// Dependencies: [19, 17, 8702, 8691, 1074, 21, 4756, 504, 12135, 12143, 1115, 12141, 12144, 12154, 12155, 4752, 2]
 // Exports: default
 
-// Module 12021 (AppealIngestionSpeedBump)
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 12023 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12033 */;
+// Module 12142 (AppealIngestionSpeedBump)
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 12144 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12154 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8548 */;
+import SafetyHubStore from "SafetyHubStore" /* 8702 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const SafetyHubConstants = fn(8537);
+const SafetyHubConstants = fn(8691);
 ({ SafetyHubAnalyticsActions: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_10 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionSpeedBump.tsx");
@@ -53,9 +53,9 @@ export default function AppealIngestionSpeedBump(arg0) {
   if (flagged_content == null) {
     flagged_content = [];
   }
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   const tmp2Result = require("useEmitAppealIngestionEvent");
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1115).intl;
   const stringResult = intl.string(require("util").t["C5q+pW"]);
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(require("util").t.URt7VI) }), ];
   const obj3 = { style: tmp.container, children: null };
@@ -68,14 +68,14 @@ export default function AppealIngestionSpeedBump(arg0) {
   let tmp9Result3 = isCoppa;
   if (isCoppa) {
     const obj6 = { text: null, url: null, onPress: null };
-    const intl3 = tmp2(1114).intl;
-    obj6.text = intl3.string(tmp2(1114).t["gJs+kf"]);
+    const intl3 = tmp2(1115).intl;
+    obj6.text = intl3.string(tmp2(1115).t["gJs+kf"]);
     obj6.url = constants.AGE_VERIFICATION_LINK;
     obj6.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickAgeVerificationLink);
     };
-    tmp9Result3 = tmp9(tmp13(12034), obj6);
-    const tmp13Result = tmp13(12034);
+    tmp9Result3 = tmp9(tmp13(12155), obj6);
+    const tmp13Result = tmp13(12155);
   }
   items2[2] = tmp9Result3;
   if (isSpam) {
@@ -83,46 +83,46 @@ export default function AppealIngestionSpeedBump(arg0) {
   }
   if (isSpam) {
     const obj7 = { text: null, url: null, onPress: null };
-    const intl4 = tmp2(1114).intl;
-    obj7.text = intl4.string(tmp2(1114).t.NBsJvm);
+    const intl4 = tmp2(1115).intl;
+    obj7.text = intl4.string(tmp2(1115).t.NBsJvm);
     obj7.url = constants.SPAM_LINK;
     obj7.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickSpamWebformLink);
     };
-    isSpam = tmp9(tmp13(12034), obj7);
-    const tmp13Result4 = tmp13(12034);
+    isSpam = tmp9(tmp13(12155), obj7);
+    const tmp13Result4 = tmp13(12155);
   }
   items2[3] = isSpam;
   if (isDeveloperClassification) {
     const obj8 = { text: null, url: null, onPress: null };
-    const intl5 = tmp2(1114).intl;
-    obj8.text = intl5.string(tmp2(1114).t.n9cZTH);
+    const intl5 = tmp2(1115).intl;
+    obj8.text = intl5.string(tmp2(1115).t.n9cZTH);
     obj8.url = constants.APP_APPEAL_LINK;
     obj8.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickAppAppealLink);
     };
-    isDeveloperClassification = tmp9(tmp13(12034), obj8);
-    const tmp13Result5 = tmp13(12034);
+    isDeveloperClassification = tmp9(tmp13(12155), obj8);
+    const tmp13Result5 = tmp13(12155);
   }
   items2[4] = isDeveloperClassification;
   let tmp9Result4 = !isCoppa;
   if (!isCoppa) {
     const obj9 = { text: null, url: null, onPress: null };
-    const intl6 = tmp2(1114).intl;
-    obj9.text = intl6.string(tmp2(1114).t["Vtyn/7"]);
+    const intl6 = tmp2(1115).intl;
+    obj9.text = intl6.string(tmp2(1115).t["Vtyn/7"]);
     obj9.url = str;
     obj9.onPress = function onPress() {
       return closure_0(hasOwnProperty.ClickLearnMoreLink);
     };
-    tmp9Result4 = tmp9(tmp13(12034), obj9);
-    const tmp13Result6 = tmp13(12034);
+    tmp9Result4 = tmp9(tmp13(12155), obj9);
+    const tmp13Result6 = tmp13(12155);
   }
   items2[5] = tmp9Result4;
   if (isDsaEligible) {
     const obj10 = { variant: "text-xs/normal", children: null };
-    const intl7 = tmp2(1114).intl;
-    obj10.children = intl7.format(tmp2(1114).t.WMUgCX, {});
-    isDsaEligible = tmp9(tmp2(4632).Text, obj10);
+    const intl7 = tmp2(1115).intl;
+    obj10.children = intl7.format(tmp2(1115).t.WMUgCX, {});
+    isDsaEligible = tmp9(tmp2(4752).Text, obj10);
   }
   const obj11 = { children: null };
   items2[6] = isDsaEligible;

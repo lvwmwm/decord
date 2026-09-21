@@ -1,9 +1,9 @@
 // Module ID: 3053
 // Function ID: 3054
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3053
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl93aWRnZXQ=", scales: [1], hash: "a20e92fcc9c5a61c45df560fb8f5f158", name: "hi.messages.a20e92fcc9c5a61c45df560fb8f5f158.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "e1ccf29cf22eb109061af741e9d651f7", name: "no.messages.e1ccf29cf22eb109061af741e9d651f7.compiled.messages", type: "jsona" });

@@ -1,17 +1,17 @@
-// Module ID: 9441
-// Function ID: 9442
+// Module ID: 9425
+// Function ID: 9426
 // Name: buildFileSizeLimitEventProperties
 // Dependencies: [2]
 // Exports: buildFileSizeLimitEventProperties
 
-// Module 9441 (buildFileSizeLimitEventProperties)
+// Module 9425 (buildFileSizeLimitEventProperties)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/buildFileSizeLimitEventProperties.tsx");
 
 export const buildFileSizeLimitEventProperties = function buildFileSizeLimitEventProperties(arg0) {
   ({ guildId, channelId } = arg0);
-  ({ userIndividualFileSizeLimit, numAttachments, preCompressionFileSizes, preCompressionAggregateSize, postCompressionFileSizes, postCompressionAggregateSize, attachmentMimeTypes, errorType, kestrelVariant } = arg0);
+  ({ userIndividualFileSizeLimit, numAttachments, preCompressionFileSizes, preCompressionAggregateSize, postCompressionFileSizes, postCompressionAggregateSize, attachmentMimeTypes, errorType } = arg0);
   if (undefined !== channelId) {
     const obj2 = { channel_id: channelId };
     let obj = obj2;
@@ -35,6 +35,5 @@ export const buildFileSizeLimitEventProperties = function buildFileSizeLimitEven
   obj3.post_compression_aggregate_file_size = postCompressionAggregateSize;
   obj3.attachment_mimetypes = attachmentMimeTypes;
   obj3.error_type = errorType;
-  obj3.kestrel_variant = kestrelVariant;
   return obj3;
 };

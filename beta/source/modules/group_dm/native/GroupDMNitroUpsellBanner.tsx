@@ -1,25 +1,25 @@
-// Module ID: 16802
-// Function ID: 16803
+// Module ID: 17163
+// Function ID: 17164
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 4628, 11726, 21, 576, 4636, 1611, 16803, 4338, 4373, 672, 5055, 5068, 504, 11727, 11724, 11731, 16804, 5056, 1114, 8156, 4632, 2]
+// Dependencies: [32, 19, 17, 4748, 11844, 21, 576, 4756, 1612, 17164, 4457, 4492, 672, 5185, 5198, 504, 11845, 11842, 11849, 17165, 5186, 1115, 8310, 4752, 2]
 // Exports: default
 
-// Module 16802 (GroupDMNitroUpsellBanner)
+// Module 17163 (GroupDMNitroUpsellBanner)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import spring from "spring" /* 5055 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import _modDef8156 from "module_8156" /* 8156 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11724 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11727 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11731 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 16804 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import spring from "spring" /* 5185 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import _modDef8310 from "module_8310" /* 8310 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11842 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11845 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11849 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17165 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
 require = fn;
 function FloatingBanner(children) {
@@ -153,7 +153,7 @@ function FloatingBanner(children) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const number = fn(11726).MAX_GROUP_DM_NITRO_PARTICIPANTS;
+const number = fn(11844).MAX_GROUP_DM_NITRO_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const PX_40 = nativeDefault.space.PX_40;
@@ -162,7 +162,7 @@ const PX_24 = nativeDefault.space.PX_24;
 const PX_8 = nativeDefault.space.PX_8;
 const locations = [0, 0.225, 1];
 let closure_16 = { mass: 0.8, stiffness: 400, damping: 32, overshootClamping: true };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { floatingOverlay: { position: "absolute", left: 0, right: 0, bottom: 0 }, floatingContent: { justifyContent: "flex-end" }, floatingBanner: { backgroundColor: "transparent", paddingTop: 0, paddingBottom: nativeDefault.space.PX_16 } };
 let closure_17 = createStyles.createStyles(obj2);
 const __initData = { code: "function GroupDMNitroUpsellBannerTsx1(){const{opacity,translateY}=this.__closure;return{opacity:opacity.get(),transform:[{translateY:translateY.get()}]};}" };
@@ -200,7 +200,7 @@ export default function GroupDMNitroUpsellBanner(wrapperStyle) {
   }
   const obj6 = { showLeadingIcon: false, wrapperStyle: tmp13, trailing: null, children: null };
   const obj7 = { text: null, size: "sm", variant: "experimental_premium-primary", shiny: null, icon: null, onPress: null };
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   const tmp5Result = GroupDMNitroCapBannerDefault;
   obj7.text = intl.string(GroupDMNitroUpsellModel.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
   let tmp15 = tmp9;
@@ -208,15 +208,15 @@ export default function GroupDMNitroUpsellBanner(wrapperStyle) {
     tmp15 = !stateFromStores;
   }
   obj7.shiny = tmp15;
-  obj7.icon = _modDef8156;
+  obj7.icon = _modDef8310;
   obj7.onPress = tmp7Result;
   obj6.trailing = React7(components_Button_Button.Button, obj7);
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1115).intl;
   obj8.children = intl2.string(util.t.KCD0Hp);
   const items2 = [React7(Text_Text.Text, obj8), ];
   const obj9 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
-  const intl3 = tmp2(1114).intl;
+  const intl3 = tmp2(1115).intl;
   obj9.children = intl3.formatToPlainString(util.t["8o8Zk5"], { number });
   items2[1] = React7(Text_Text.Text, obj9);
   obj6.children = items2;

@@ -1,22 +1,22 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14229
+// Function ID: 14230
 // Name: markGuildsAsRead
-// Dependencies: [7203, 5587, 1957, 2012, 4651, 1074, 4818, 12, 11, 1240, 7213, 2]
+// Dependencies: [7345, 5723, 2041, 2096, 4771, 1074, 4938, 12, 11, 1241, 7355, 2]
 // Exports: default
 
-// Module 14048 (markGuildsAsRead)
+// Module 14229 (markGuildsAsRead)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7203 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5587 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import ReadStateStore from "ReadStateStore" /* 4651 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7345 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import ReadStateStore from "ReadStateStore" /* 4771 */;
 
 const require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ReadStateTypes = fn(4818).ReadStateTypes;
+const ReadStateTypes = fn(4938).ReadStateTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild/markGuildsAsRead.tsx");
 
@@ -85,5 +85,5 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   });
   AnalyticsUtilsDefault.track(AnalyticEvents.MARK_AS_READ, { source, type: "guild" });
   let obj3 = { source, type: "guild" };
-  return mapped(7213).bulkAck(mapped, onFinished);
+  return mapped(7355).bulkAck(mapped, onFinished);
 };

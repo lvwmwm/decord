@@ -1,24 +1,24 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 17165
+// Function ID: 17166
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4636, 576, 4338, 13507, 5068, 8785, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4457, 13686, 5198, 8940, 2]
 // Exports: default
 
-// Module 16804 (GroupDMNitroCapBanner)
+// Module 17165 (GroupDMNitroCapBanner)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4338 */;
-import LinearGradientDefault from "LinearGradient" /* 5068 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13507 */;
+import useToken from "useToken" /* 4457 */;
+import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13686 */;
 import noop from "module_19" /* 19 */;
 
-const NitroWheelIcon = tmp2(8785);
+const NitroWheelIcon = tmp2(8940);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const locations = [0.0065, 0.5046, 0.9196];
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 }, pill: null, iconContainer: null, trailing: null, gradientClip: null, border: null, text: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };
 obj2.pill = { flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };

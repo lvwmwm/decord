@@ -1,16 +1,16 @@
-// Module ID: 1394
-// Function ID: 1395
+// Module ID: 1395
+// Function ID: 1396
 // Name: FamilyCenterModels
-// Dependencies: [1386, 1379, 2]
+// Dependencies: [1387, 1380, 2]
 // Exports: ensureRestrictedScheduleRecord
 
-// Module 1394 (FamilyCenterModels)
-import user from "user" /* 1379 */;
-import Record from "Record" /* 1386 */;
+// Module 1395 (FamilyCenterModels)
+import user from "user" /* 1380 */;
+import Record from "Record" /* 1387 */;
 
 require = fn;
-const frozen = Object.freeze({ 0: fn(1379).DayOfWeek.SUNDAY, 1: fn(1379).DayOfWeek.MONDAY, 2: fn(1379).DayOfWeek.TUESDAY, 3: fn(1379).DayOfWeek.WEDNESDAY, 4: fn(1379).DayOfWeek.THURSDAY, 5: fn(1379).DayOfWeek.FRIDAY, 6: fn(1379).DayOfWeek.SATURDAY });
-let closure_3 = Object.freeze({ [fn(1379).DayOfWeek.DAY_OF_WEEK_UNSPECIFIED]: 0, [fn(1379).DayOfWeek.MONDAY]: 1, [fn(1379).DayOfWeek.TUESDAY]: 2, [fn(1379).DayOfWeek.WEDNESDAY]: 3, [fn(1379).DayOfWeek.THURSDAY]: 4, [fn(1379).DayOfWeek.FRIDAY]: 5, [fn(1379).DayOfWeek.SATURDAY]: 6, [fn(1379).DayOfWeek.SUNDAY]: 0 });
+const frozen = Object.freeze({ 0: fn(1380).DayOfWeek.SUNDAY, 1: fn(1380).DayOfWeek.MONDAY, 2: fn(1380).DayOfWeek.TUESDAY, 3: fn(1380).DayOfWeek.WEDNESDAY, 4: fn(1380).DayOfWeek.THURSDAY, 5: fn(1380).DayOfWeek.FRIDAY, 6: fn(1380).DayOfWeek.SATURDAY });
+let closure_3 = Object.freeze({ [fn(1380).DayOfWeek.DAY_OF_WEEK_UNSPECIFIED]: 0, [fn(1380).DayOfWeek.MONDAY]: 1, [fn(1380).DayOfWeek.TUESDAY]: 2, [fn(1380).DayOfWeek.WEDNESDAY]: 3, [fn(1380).DayOfWeek.THURSDAY]: 4, [fn(1380).DayOfWeek.FRIDAY]: 5, [fn(1380).DayOfWeek.SATURDAY]: 6, [fn(1380).DayOfWeek.SUNDAY]: 0 });
 let ScheduleRuleRecord;
 class ScheduleRuleRecord extends tmp2 {
   constructor(arg0) {
@@ -70,7 +70,7 @@ prototype["isActiveAt"] = function isActiveAt(arg0, c1) {
           }
           if (sum > sum1) {
             if (arg0 === user.DayOfWeek.MONDAY) {
-              let SUNDAY = tmp6(1379).DayOfWeek.SUNDAY;
+              let SUNDAY = tmp6(1380).DayOfWeek.SUNDAY;
             } else {
               SUNDAY = arg0 - 1;
             }

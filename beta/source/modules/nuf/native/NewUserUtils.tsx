@@ -1,24 +1,24 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17852
+// Function ID: 17853
 // Name: NewUserUtils
-// Dependencies: [5, 17, 16055, 5362, 1371, 1074, 12811, 4846, 12813, 1363, 9950, 573, 1484, 12816, 4494, 17563, 4839, 1100, 12879, 2]
+// Dependencies: [5, 17, 16289, 5498, 1372, 1074, 12931, 4965, 12933, 1364, 10076, 573, 1485, 12936, 4613, 17853, 4959, 1101, 12999, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17562 (NewUserUtils)
+// Module 17852 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import router_utils from "router_utils" /* 1100 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import Link from "Link" /* 1484 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4494 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12813 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12816 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12879 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 17563 */;
+import router_utils from "router_utils" /* 1101 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import Link from "Link" /* 1485 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12933 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12936 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12999 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 17853 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16055 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
-import UserStore from "UserStore" /* 1371 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16289 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
@@ -78,7 +78,7 @@ let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
   NewUserAnalyticsUtils.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
   if (obj2.isModalOpen(NewUserModalTypes.NEW_USER_MODAL_KEY)) {
-    ModalActionCreatorsDefault.popWithKey(tmp(17563).NEW_USER_MODAL_KEY);
+    ModalActionCreatorsDefault.popWithKey(tmp(17853).NEW_USER_MODAL_KEY);
   }
   obj2 = NavigationRouteUtils;
   router_utils.transitionTo(constants2.ME, { navigationReplace: true });
@@ -232,8 +232,8 @@ let closure_18 = async function _getNextOnboardingStep(arg0, value) {
 const NativeModules = fn(17).NativeModules;
 const Constants = fn(1074);
 ({ PlatformTypes: closure_8, Routes: closure_9 } = Constants);
-const ContactPermissions = fn(12811).ContactPermissions;
-let closure_11 = fn(4846).NotificationAuthorizationStatus;
+const ContactPermissions = fn(12931).ContactPermissions;
+let closure_11 = fn(4965).NotificationAuthorizationStatus;
 let obj2 = { key: "enable-notification", shouldShowStep: null };
 let closure_13 = asyncGeneratorStep(async (arg0, value) => {
   if (c2 === 2) {
@@ -398,7 +398,7 @@ let items = [
   },
   {
     key: "accept-invite",
-    shouldShowStep: fn(9950).hasDeferredInvite,
+    shouldShowStep: fn(10076).hasDeferredInvite,
     transitionStep() {
       DispatcherDefault.dispatch({ type: "DEFERRED_INVITE_SHOW" });
     }

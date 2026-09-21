@@ -1,0 +1,111 @@
+// Module ID: 17081
+// Function ID: 17082
+// Name: VibegrationsDebugAnalytics
+// Dependencies: [19, 21, 17070, 1115, 3678, 17068, 17067, 2]
+// Exports: VibegrationsDebugAgentAnalyticsRows, VibegrationsDebugWorkerAnalyticsSection
+
+// Module 17081 (VibegrationsDebugAnalytics)
+import util from "util" /* 1115 */;
+import _modDef3678 from "module_3678" /* 3678 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17067 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17068 */;
+import VibegrationsDebugPrimitives from "VibegrationsDebugPrimitives" /* 17070 */;
+import noop from "module_19" /* 19 */;
+
+require = fn;
+const jsxProd = fn(21);
+({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsDebugAnalytics.tsx");
+
+export const VibegrationsDebugAgentAnalyticsRows = function VibegrationsDebugAgentAnalyticsRows(analytics) {
+  analytics = analytics.analytics;
+  if ("ok" !== analytics.status) {
+    const obj2 = { label: null, value: null, hint: null };
+    const intl4 = util.intl;
+    obj2.label = intl4.string(_modDef3678.H6PMwW);
+    const intl5 = util.intl;
+    obj2.value = intl5.string(_modDef3678.TLOZ8J);
+    obj2.hint = VibegrationsDebugLabels.analyticsUnavailableReason(analytics);
+    return React3(VibegrationsDebugPrimitives.DebugStatRow, obj2);
+  } else {
+    const objects = analytics.objects;
+    let found;
+    if (objects != null) {
+      found = objects.find((role) => "agent" === role.role);
+    }
+    if (null == found) {
+      const obj3 = { label: null, value: "\u2014", hint: null };
+      const intl2 = util.intl;
+      obj3.label = intl2.string(_modDef3678.H6PMwW);
+      const intl3 = util.intl;
+      obj3.hint = intl3.string(_modDef3678.uAzxdh);
+      return React3(VibegrationsDebugPrimitives.DebugStatRow, obj3);
+    } else {
+      const analyticsMemoryValueResult = VibegrationsDebugLabels.analyticsMemoryValue(found);
+      const obj4 = { label: null, value: null };
+      const intl6 = util.intl;
+      obj4.label = intl6.string(_modDef3678.awAqRi);
+      const tmp15 = hasOwnProperty;
+      const tmp16 = React4;
+      const tmp17 = React3;
+      const tmp18 = importDefault;
+      obj4.value = VibegrationsDebugFormat.formatMs(found.cpu_ms);
+      const items = [React3(VibegrationsDebugPrimitives.DebugStatRow, obj4), ];
+      let tmp17Result = null;
+      if (null != analyticsMemoryValueResult) {
+        const obj = { label: null, value: null };
+        const intl = tmp12(1115).intl;
+        obj.label = intl.string(tmp18(3678).WdGviA);
+        obj.value = analyticsMemoryValueResult;
+        tmp17Result = tmp17(tmp12(17070).DebugStatRow, obj);
+      }
+      const obj7 = { children: null };
+      items[1] = tmp17Result;
+      obj7.children = items;
+      return tmp15(tmp16, obj7);
+    }
+  }
+};
+export const VibegrationsDebugWorkerAnalyticsSection = function VibegrationsDebugWorkerAnalyticsSection(analytics) {
+  analytics = analytics.analytics;
+  let intl = util.intl;
+  const stringResult = intl.string(_modDef3678.Pgvj3h);
+  if ("ok" !== analytics.status) {
+    let obj2 = { title: stringResult, children: null };
+    let obj3 = { children: tmp(17068).analyticsUnavailableReason(analytics) };
+    obj2.children = React3(tmp(17070).DebugNote, obj3);
+    return React3(tmp(17070).DebugSection, obj2);
+  } else {
+    let items = analytics.objects;
+    if (items == null) {
+      items = [];
+    }
+    const mapped = items.map((object) => {
+      const obj = { object, label: VibegrationsDebugLabels.analyticsRoleLabel(object.role) };
+      return obj;
+    });
+    const found = mapped.filter((label) => null != label.label);
+    let obj = { title: stringResult, children: null };
+    if (0 === found.length) {
+      const obj4 = { children: null };
+      const intl2 = tmp(1115).intl;
+      obj4.children = intl2.string(_modDef3678.uAzxdh);
+      let mapped1 = tmp5(tmp(17070).DebugNote, obj4);
+    } else {
+      mapped1 = found.map((label) => {
+        const object = label.object;
+        const obj = { label: label.label, value: null, hint: null };
+        const intl = util.intl;
+        const obj2 = { cpu: VibegrationsDebugFormat.formatMs(object.cpu_ms) };
+        obj.value = intl.formatToPlainString(_modDef3678.AnRynJ, obj2);
+        const tmp = closure_1_3;
+        const analyticsMemoryValueResult = VibegrationsDebugLabels.analyticsMemoryValue(object);
+        obj.hint = analyticsMemoryValueResult;
+        return tmp(VibegrationsDebugPrimitives.DebugStatRow, obj, object.role);
+      });
+    }
+    obj.children = mapped1;
+    return React3(tmp(17070).DebugSection, obj);
+  }
+};

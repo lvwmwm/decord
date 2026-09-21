@@ -1,11 +1,11 @@
-// Module ID: 17467
-// Function ID: 17468
+// Module ID: 17003
+// Function ID: 17004
 // Name: SearchResultsFeedbackExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: getIsSearchResultsFeedbackExperimentEnabled, useIsSearchResultsFeedbackExperimentEnabled
 
-// Module 17467 (SearchResultsFeedbackExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 17003 (SearchResultsFeedbackExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2025-05-search-results-feedback", kind: "user", defaultConfig: { enabled: false }, variations: null };

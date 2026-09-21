@@ -1,13 +1,13 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11851
+// Function ID: 11852
 // Name: ChatPlusIcon
-// Dependencies: [19, 21, 576, 4337, 11734, 2]
+// Dependencies: [19, 21, 576, 4456, 11852, 2]
 // Exports: ChatPlusIcon
 
-// Module 11733 (ChatPlusIcon)
+// Module 11851 (ChatPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod11734 from "module_11734" /* 11734 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod11852 from "module_11852" /* 11852 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChatPlusIcon = function ChatPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11734, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11852, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

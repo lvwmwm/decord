@@ -1,14 +1,14 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16315
+// Function ID: 16316
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6695, 16043, 1074, 21, 4636, 4632, 1114, 4355, 5698, 8716, 16082, 2]
+// Dependencies: [19, 17, 6835, 16277, 1074, 21, 4756, 4752, 1115, 4474, 5834, 8871, 16316, 2]
 // Exports: default
 
-// Module 16081 (PrivacyHint)
-import util from "util" /* 1114 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16082 */;
+// Module 16315 (PrivacyHint)
+import util from "util" /* 1115 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16316 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,22 +26,22 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   const tmp = closure_10();
   const checkboxA11yNative = useA11yRolesNative.useCheckboxA11yNative({ checked: consent });
   const obj2 = { style: asCheckbox ? tmp.checkbox : tmp.radio, accessibilityState: checkboxA11yNative.accessibilityState, accessibilityRole: checkboxA11yNative.accessibilityRole, accessibilityLabel: null, onPress: null, hitSlop: null, children: null };
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   obj2.accessibilityLabel = intl.string(util.t.Y7Kgvf);
   obj2.onPress = onToggleConsent.onToggleConsent;
   obj2.hitSlop = { top: 11, bottom: 11, left: 11 };
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    let tmp7Result = tmp7(tmp2(5698).FormCheckbox, obj3);
+    let tmp7Result = tmp7(tmp2(5834).FormCheckbox, obj3);
     let tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8716).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8871).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   const items = [tmp7Result, ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: null };
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1115).intl;
   obj5.children = intl2.format(util.t.qMDAP0, { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY });
   items[1] = tmp9(Text_Text.Text, obj5);
   obj2.children = items;
@@ -49,12 +49,12 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
-const usePromoEmailConsentStore = fn(6695).usePromoEmailConsentStore;
-const useRegistrationUIStore = fn(16043).useRegistrationUIStore;
+const usePromoEmailConsentStore = fn(6835).usePromoEmailConsentStore;
+const useRegistrationUIStore = fn(16277).useRegistrationUIStore;
 const MarketingURLs = fn(1074).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_10 = createStyles.createStyles({ multiItem: { flexDirection: "column", gap: 16 }, checkbox: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, radio: { flexDirection: "row", alignItems: "center", gap: 8 }, checkboxLabel: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/PrivacyHint.tsx");

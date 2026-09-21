@@ -1,28 +1,9 @@
 // Module ID: 14376
 // Function ID: 14377
-// Dependencies: [14289, 14377]
-// Exports: getSupportedTimeZones
+// Dependencies: [1121]
 
 // Module 14376
-const require = globalThis.__r;
+import registerAsset from "module_1121" /* 1121 */;
 
-const require = arg1;
-const dependencyMap = arg6;
 
-export const getSupportedTimeZones = function getSupportedTimeZones(locale) {
-  _require = locale;
-  const timezones = require("module_14377").timezones;
-  return timezones.filter((item) => (function isSupported(timeZone, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
-    }
-    try {
-      const obj = { timeZone };
-      const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
-      return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
-    } catch (err) {
-      return false;
-    }
-  })(item, closure_0));
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 36, height: 24, scales: [2, 3], hash: "48a492306912f6e40271e3f606596ed0", name: "StatusVROnline", type: "png" });

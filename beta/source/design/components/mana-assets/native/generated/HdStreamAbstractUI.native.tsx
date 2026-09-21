@@ -1,13 +1,13 @@
-// Module ID: 6286
-// Function ID: 6287
+// Module ID: 6424
+// Function ID: 6425
 // Name: HdStreamAbstractUI
-// Dependencies: [21, 5668, 6287, 2]
+// Dependencies: [21, 5804, 6425, 2]
 // Exports: HdStreamAbstractUI
 
-// Module 6286 (HdStreamAbstractUI)
+// Module 6424 (HdStreamAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6287 from "module_6287" /* 6287 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6425 from "module_6425" /* 6425 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const HdStreamAbstractUI = function HdStreamAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6287 };
+  const obj2 = { uri: _modDef6425 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

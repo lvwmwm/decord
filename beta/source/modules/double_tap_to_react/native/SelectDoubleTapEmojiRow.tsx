@@ -1,33 +1,33 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12636
+// Function ID: 12637
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 4628, 7254, 1374, 21, 4636, 1363, 576, 504, 5204, 7233, 1396, 10414, 1477, 4293, 8072, 11259, 7865, 8883, 2]
+// Dependencies: [19, 17, 4748, 7396, 1375, 21, 4756, 1364, 576, 504, 5339, 7375, 1397, 10543, 1478, 4413, 8226, 11388, 8005, 9037, 2]
 
-// Module 12515 (SelectDoubleTapEmojiRow)
+// Module 12636 (SelectDoubleTapEmojiRow)
 import nativeDefault from "native" /* 576 */;
-import EmojiDefault from "Emoji" /* 7233 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7865 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11259 */;
+import EmojiDefault from "Emoji" /* 7375 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8005 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11388 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
-const AvatarUtilsDefault = tmp8(1396);
+const AvatarUtilsDefault = tmp8(1397);
 require = fn;
 const View = fn(17).View;
-const ACTION_SHEET_MAX_WIDTH = fn(7254).ACTION_SHEET_MAX_WIDTH;
-const EmojiConstants = fn(1374);
+const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
+const EmojiConstants = fn(1375);
 ({ EMOJI_URL_BASE_SIZE: closure_7, EmojiIntention: closure_8 } = EmojiConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { emoji: { width: 24, height: 24 }, customEmoji: { width: 24, height: 24 }, textEmoji: null, emojiRow: null, emojiPressable: null, selectedEmojiPressable: null, emojiWrapper: null, selectedEmojiWrapper: null, chooseEmojiButton: null, customReactionOverlay: null, selectedCustomReactionIcon: null };
-let PlatformUtils = fn(1363);
+let PlatformUtils = fn(1364);
 let num = 20;
 if (PlatformUtils.isIOS()) {
   num = 24;
 }
 let obj3 = { fontSize: num, lineHeight: null, textAlign: "center", color: null };
-PlatformUtils = fn(1363);
+PlatformUtils = fn(1364);
 let num2;
 if (PlatformUtils.isIOS()) {
   num2 = 28;
@@ -104,7 +104,7 @@ let closure_13 = noop.memo((emoji) => {
   obj4.src = url;
   obj3.children = closure_9(EmojiDefault, obj4);
   obj2.children = closure_9(tmp6, obj3);
-  return closure_9(emoji(5204).PressableOpacity, obj2);
+  return closure_9(emoji(5339).PressableOpacity, obj2);
 });
 const obj11 = { color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 size = fn(2);
@@ -124,7 +124,10 @@ export default noop.memo((selectedEmoji) => {
   let obj = selectedEmoji(substr[13]);
   const items = [onPressEmoji];
   const stateFromStores = selectedEmoji(substr[9]).useStateFromStores(items, () => onPressEmoji.useReducedMotion);
-  const found = frequentlyUsedReactionEmojis.filter((emoji) => !onPressEmoji(substr[15]).isEmojiFilteredOrLocked({ emoji, channel: "Array", intention: constants.DEFAULT_REACT_EMOJI }));
+  const found = frequentlyUsedReactionEmojis.filter((emoji) => {
+    const obj2 = { emoji, channel: "Array", intention: constants.DEFAULT_REACT_EMOJI };
+    return !onPressEmoji(substr[15]).isEmojiFilteredOrLocked(obj2);
+  });
   substr = found.slice(0, rounded - 1);
   const items1 = [substr, selectedEmoji];
   memo = memo.useMemo(() => substr.findIndex((item) => selectedEmoji(substr[16]).areEmojisEqual(closure_1_0, item)), items1);

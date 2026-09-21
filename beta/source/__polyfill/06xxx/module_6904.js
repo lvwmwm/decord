@@ -1,86 +1,151 @@
 // Module ID: 6904
 // Function ID: 6905
-// Dependencies: [19, 38, 6732]
-// Exports: usePropsValidator
+// Dependencies: [6902, 6903]
 
 // Module 6904
-import _mod19 from "module_19" /* 19 */;
-import _modDef38 from "module_38" /* 38 */;
+import tagMessage from "tagMessage" /* 6902 */;
+import _mod6903 from "module_6903" /* 6903 */;
 
-const useMemo = _mod19.useMemo;
-
-export const usePropsValidator = (index) => {
-  index = index.index;
-  const snapPoints = index.snapPoints;
-  const enableDynamicSizing = index.enableDynamicSizing;
-  const topInset = index.topInset;
-  const bottomInset = index.bottomInset;
-  let items = [index, snapPoints, topInset, bottomInset, enableDynamicSizing];
-  topInset(() => {
-    if (snapPoints) {
-      value = obj;
-      if ("get" in obj) {
-        value = obj.get();
-      }
-      let items = value;
-    } else {
-      items = [];
-    }
-    let tmp5 = items;
-    if (!items) {
-      tmp5 = enableDynamicSizing;
-    }
-    _modDef38(tmp5, "'snapPoints' was not provided! please provide at least one snap point.");
-    const mapped = items.map((item) => {
-      let parsed = item;
-      if (typeof item !== "number") {
-        const _Number = Number;
-        parsed = Number.parseInt(item.replace("%", ""), 10);
-      }
-      let tmp4 = parsed > 0;
-      if (!tmp4) {
-        tmp4 = parsed === index(enableDynamicSizing[2]).INITIAL_SNAP_POINT;
-      }
-      snapPoints(enableDynamicSizing[1])(tmp4, "Snap point '" + item + "' is invalid. if you want to allow user to close the sheet, Please use 'enablePanDownToClose' prop.");
-    });
-    let tmp9 = "value" in items;
-    if (!tmp9) {
-      tmp9 = items.length > 0;
-    }
-    if (!tmp9) {
-      tmp9 = enableDynamicSizing;
-    }
-    _modDef38(tmp9, "'snapPoints' was provided with no points! please provide at least one snap point.");
-    let tmp13 = typeof index === "number";
-    const tmp2Result = _modDef38;
-    if (typeof index !== "number") {
-      tmp13 = undefined === tmp12;
-    }
-    _modDef38(tmp13, "'index' was provided but with wrong type ! expected type is a number.");
-    let tmp16 = enableDynamicSizing;
-    const tmp2Result5 = _modDef38;
-    if (!enableDynamicSizing) {
-      tmp16 = typeof tmp12 !== "number";
-    }
-    if (!tmp16) {
-      let tmp17 = tmp12 >= -1;
-      if (tmp17) {
-        tmp17 = tmp12 <= items.length - 1;
-      }
-      tmp16 = tmp17;
-    }
-    _modDef38(tmp16, `'index' was provided but out of the provided snap points range! expected value to be between -1, ${arr.length - 1}`);
-    let tmp20 = typeof topInset === "number";
-    const tmp2Result6 = _modDef38;
-    if (typeof topInset !== "number") {
-      tmp20 = undefined === topInset;
-    }
-    _modDef38(tmp20, "'topInset' was provided but with wrong type ! expected type is a number.");
-    let tmp23 = typeof bottomInset === "number";
-    const tmp2Result7 = _modDef38;
-    if (typeof bottomInset !== "number") {
-      tmp23 = undefined === bottomInset;
-    }
-    _modDef38(tmp23, "'bottomInset' was provided but with wrong type ! expected type is a number.");
-  }, items);
+require = fn;
+const dependencyMap = arg6;
+let wrappedSetGestureState = function t(arg0, arg1) {
+  const _globalThis = globalThis;
+  if (globalThis._setGestureStateSync) {
+    _globalThis._setGestureStateSync(arg0, arg1);
+  } else if (_globalThis._setGestureStateAsync) {
+    const _globalThis2 = globalThis;
+    const result = globalThis._setGestureStateAsync(arg0, arg1);
+  } else {
+    const _Error = Error;
+    const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+    throw error;
+  }
 };
+wrappedSetGestureState.__closure = { tagMessage: fn(6902).tagMessage };
+wrappedSetGestureState.__workletHash = 727405139747;
+wrappedSetGestureState.__initData = { code: "function pnpm_gestureStateManagerTs1(handlerTag,state){const{tagMessage}=this.__closure;if(globalThis._setGestureStateSync){globalThis._setGestureStateSync(handlerTag,state);}else if(globalThis._setGestureStateAsync){globalThis._setGestureStateAsync(handlerTag,state);}else{throw new Error(tagMessage('Failed to set gesture state'));}}" };
+const __initData = { code: "function pnpm_gestureStateManagerTs3(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.BEGAN);}" };
+const __initData2 = { code: "function pnpm_gestureStateManagerTs4(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.ACTIVE);}" };
+const __initData3 = { code: "function pnpm_gestureStateManagerTs5(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.FAILED);}" };
+const __initData4 = { code: "function pnpm_gestureStateManagerTs6(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.END);}" };
+let obj2 = { create: null };
+function create(handlerTag) {
+  _require = handlerTag;
+  const obj = { handlerTag, begin: null, activate: null, fail: null, end: null };
+  const wrappedSetGestureState = function p() {
+    const BEGAN = _mod6903.State.BEGAN;
+    if (typeof fn === "function") {
+      const _globalThis = globalThis;
+      const _globalThis2 = globalThis;
+      if (globalThis._setGestureStateSync) {
+        _globalThis2._setGestureStateSync(tmp, BEGAN);
+      } else if (_globalThis2._setGestureStateAsync) {
+        const _globalThis3 = globalThis;
+        const result = globalThis._setGestureStateAsync(tmp, BEGAN);
+      } else {
+        const _Error = Error;
+        const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  wrappedSetGestureState.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  wrappedSetGestureState.__workletHash = 15218261064802;
+  wrappedSetGestureState.__initData = __initData;
+  obj.begin = wrappedSetGestureState;
+  const fn2 = function c() {
+    const ACTIVE = _mod6903.State.ACTIVE;
+    if (typeof fn === "function") {
+      const _globalThis = globalThis;
+      const _globalThis2 = globalThis;
+      if (globalThis._setGestureStateSync) {
+        _globalThis2._setGestureStateSync(tmp, ACTIVE);
+      } else if (_globalThis2._setGestureStateAsync) {
+        const _globalThis3 = globalThis;
+        const result = globalThis._setGestureStateAsync(tmp, ACTIVE);
+      } else {
+        const _Error = Error;
+        const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  const obj2 = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  fn2.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  fn2.__workletHash = 4587865373510;
+  fn2.__initData = __initData2;
+  obj.activate = fn2;
+  class S {
+    constructor() {
+      tmp = closure_0;
+      tmp2 = closure_0;
+      tmp3 = closure_1;
+      FAILED = closure_0(closure_1[1]).State.FAILED;
+      if (typeof t === "function") {
+        tmp4 = globalThis;
+        _globalThis = globalThis;
+        _globalThis2 = globalThis;
+        if (globalThis._setGestureStateSync) {
+          _setGestureStateSyncResult = _globalThis2._setGestureStateSync(tmp, FAILED);
+        } else if (_globalThis2._setGestureStateAsync) {
+          _globalThis3 = globalThis;
+          result = globalThis._setGestureStateAsync(tmp, FAILED);
+        } else {
+          _Error = Error;
+          tmp2Result = tmp2(tmp3[0]);
+          str = "Failed to set gesture state";
+          tmp5 = new.target;
+          tmp6 = new.target;
+          error = new Error(tmp2Result.tagMessage("Failed to set gesture state"));
+          tmp8 = error;
+          throw error;
+        }
+        return;
+      } else {
+        str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+  }
+  const obj3 = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  S.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  S.__workletHash = 12634480855880;
+  S.__initData = __initData3;
+  obj.fail = S;
+  const fn3 = function s() {
+    const END = _mod6903.State.END;
+    if (typeof fn === "function") {
+      const _globalThis = globalThis;
+      const _globalThis2 = globalThis;
+      if (globalThis._setGestureStateSync) {
+        _globalThis2._setGestureStateSync(tmp, END);
+      } else if (_globalThis2._setGestureStateAsync) {
+        const _globalThis3 = globalThis;
+        const result = globalThis._setGestureStateAsync(tmp, END);
+      } else {
+        const _Error = Error;
+        const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  const obj4 = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  fn3.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6903").State };
+  fn3.__workletHash = 6198601582791;
+  fn3.__initData = __initData4;
+  obj.end = fn3;
+  return obj;
+}
+let obj = { tagMessage: fn(6902).tagMessage };
+create.__closure = { wrappedSetGestureState, State: fn(6903).State };
+create.__workletHash = 1974124167608;
+create.__initData = { code: "function create_Pnpm_gestureStateManagerTs2(handlerTag){const{wrappedSetGestureState,State}=this.__closure;return{handlerTag:handlerTag,begin:function(){'worklet';wrappedSetGestureState(handlerTag,State.BEGAN);},activate:function(){'worklet';wrappedSetGestureState(handlerTag,State.ACTIVE);},fail:function(){'worklet';wrappedSetGestureState(handlerTag,State.FAILED);},end:function(){'worklet';wrappedSetGestureState(handlerTag,State.END);}};}" };
+obj2.create = create;
+
+export const GestureStateManager = obj2;

@@ -1,10 +1,10 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12294
+// Function ID: 12295
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 1940, 9540, 1363, 1894, 2]
+// Dependencies: [19, 2024, 9524, 1364, 1978, 2]
 // Exports: default
 
-// Module 12174 (useActivityShelfItemsSorting)
+// Module 12294 (useActivityShelfItemsSorting)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -55,17 +55,17 @@ export default function useActivityShelfItemsSorting(arg0) {
       const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
       let label_type;
       if (embeddedActivityConfig != null) {
-        const obj = items(1363);
-        const tmp7 = embeddedActivityConfig.client_platform_config[closure_1(9540)(undefined, obj.getOS(obj))];
+        const obj = items(1364);
+        const tmp7 = embeddedActivityConfig.client_platform_config[closure_1(9524)(undefined, obj.getOS(obj))];
         if (tmp7 != null) {
           label_type = tmp7.label_type;
         }
-        const tmp5 = closure_1(9540);
+        const tmp5 = closure_1(9524);
       }
       let tmp8 = null != label_type;
       if (tmp8) {
-        tmp8 = label_type === items(1894).EmbeddedActivityLabelTypes.NEW || label_type === items(1894).EmbeddedActivityLabelTypes.UPDATED;
-        const tmp11 = label_type === items(1894).EmbeddedActivityLabelTypes.NEW || label_type === items(1894).EmbeddedActivityLabelTypes.UPDATED;
+        tmp8 = label_type === items(1978).EmbeddedActivityLabelTypes.NEW || label_type === items(1978).EmbeddedActivityLabelTypes.UPDATED;
+        const tmp11 = label_type === items(1978).EmbeddedActivityLabelTypes.NEW || label_type === items(1978).EmbeddedActivityLabelTypes.UPDATED;
       }
       return tmp8;
     });

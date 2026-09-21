@@ -1,10 +1,10 @@
-// Module ID: 1888
-// Function ID: 1889
+// Module ID: 1972
+// Function ID: 1973
 // Name: BaseCollectiblesItemRecord
-// Dependencies: [1386, 2]
+// Dependencies: [1387, 2]
 
-// Module 1888 (BaseCollectiblesItemRecord)
-import Record from "Record" /* 1386 */;
+// Module 1972 (BaseCollectiblesItemRecord)
+import Record from "Record" /* 1387 */;
 
 const prototype = function BaseCollectiblesItemRecord(skuId) {
   const tmp = new prototype(new.target);

@@ -1,25 +1,26 @@
-// Module ID: 4790
-// Function ID: 4791
+// Module ID: 4910
+// Function ID: 4911
 // Name: LinkUtils
-// Dependencies: [1957, 1979, 4275, 1074, 1964, 4623, 2]
-// Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
+// Dependencies: [2041, 2063, 4395, 1074, 2048, 4743, 2]
+// Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 4790 (LinkUtils)
-import RegexUtilsDefault from "RegexUtils" /* 4623 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+// Module 4910 (LinkUtils)
+import RegexUtilsDefault from "RegexUtils" /* 4743 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 
 const Constants = fn(1074);
 const ME = Constants.ME;
 const Permissions = Constants.Permissions;
-const mapped = Array.from(fn(1964).StaticChannelRoutes).map((item) => RegexUtilsDefault.escape(item));
+const mapped = Array.from(fn(2048).StaticChannelRoutes).map((item) => RegexUtilsDefault.escape(item));
 const joined = mapped.join("|");
 const regExp = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)?(\\d+|" + joined + ")?");
 const regExp1 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+|" + joined + ")(?:/)(\\d+)");
 const regExp2 = new RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 const regExp3 = new RegExp("^/channels/(\\d+|" + ME + ")(?:/)(\\d+)/roll-dice(?:/(\\d+)d(\\d+))?$");
 const regExp4 = new RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?");
+const re12 = /^\/users\/(\d+)\/?$/;
 const regExp5 = new RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?");
 const regExp6 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+|" + ME + ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?");
 const regExp7 = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
@@ -73,6 +74,21 @@ export const tryParseEventDetailsPath = function tryParseEventDetailsPath(pathna
     }
     return tmp2;
   }
+};
+export const tryParseUserProfilePath = function tryParseUserProfilePath(pathname) {
+  let tmp = null;
+  if (null != pathname) {
+    const match = pathname.match(re12);
+    let tmp4;
+    if (match != null) {
+      tmp4 = match[1];
+    }
+    if (tmp4 == null) {
+      tmp4 = null;
+    }
+    tmp = tmp4;
+  }
+  return tmp;
 };
 export const canViewChannel = function canViewChannel(channel) {
   let canResult = channel.isPrivate();

@@ -1,17 +1,17 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11737
+// Function ID: 11738
 // Name: ApexActionCreators
-// Dependencies: [109, 5, 1234, 1074, 1270, 573, 7997, 1436, 504, 2]
+// Dependencies: [109, 5, 1235, 1074, 1271, 573, 8137, 1437, 504, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11619 (ApexActionCreators)
+// Module 11737 (ApexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import apex_ApexTypes from "apex/ApexTypes" /* 1436 */;
-import experiment from "experiment" /* 7997 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import apex_ApexTypes from "apex/ApexTypes" /* 1437 */;
+import experiment from "experiment" /* 8137 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 require = fn;
 let closure_8 = async function _fetchApexExperimentsMetadata(surface) {

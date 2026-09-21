@@ -1,12 +1,12 @@
-// Module ID: 17509
-// Function ID: 17510
+// Module ID: 17799
+// Function ID: 17800
 // Name: TextInputActionComponent
-// Dependencies: [32, 19, 21, 8229, 17506, 1894, 6714, 7189, 6708, 2]
+// Dependencies: [32, 19, 21, 8381, 17796, 1978, 6855, 7331, 6849, 2]
 
-// Module 17509 (TextInputActionComponent)
-import Server from "Server" /* 1894 */;
-import ComponentStateContext from "ComponentStateContext" /* 8229 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 17506 */;
+// Module 17799 (TextInputActionComponent)
+import Server from "Server" /* 1978 */;
+import ComponentStateContext from "ComponentStateContext" /* 8381 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 17796 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -29,7 +29,7 @@ export default noop.memo((type) => {
   ({ state: _slicedToArray, executeStateUpdate } = componentState);
   const error = componentState.error;
   const isFirstTextInputInModal = InteractionModalUtils.useIsFirstTextInputInModal(type.id);
-  const obj3 = { placeholder, maxLength, status: null, defaultValue: null, onChange: null, autoFocus: null, isClearable: true };
+  const obj3 = { placeholder, maxLength, status: null, defaultValue: null, onChange: null, autoFocus: null, clearable: true };
   let str = "default";
   const state = noop.useState(() => {
     type = undefined;
@@ -49,16 +49,16 @@ export default noop.memo((type) => {
   if (Server.TextInputComponentStyle.SMALL === style) {
     const obj5 = {};
     const merged = Object.assign(obj3);
-    let tmp7 = jsx(tmp(6714).TextField, {});
-  } else if (tmp(1894).TextInputComponentStyle.PARAGRAPH === style) {
+    let tmp7 = jsx(tmp(6855).TextField, {});
+  } else if (tmp(1978).TextInputComponentStyle.PARAGRAPH === style) {
     const obj6 = {};
     const merged1 = Object.assign(obj3);
-    tmp7 = jsx(tmp(7189).TextAreaField, {});
+    tmp7 = jsx(tmp(7331).TextAreaField, {});
   }
   let tmp16 = tmp7;
   if (null != label) {
     const obj7 = { label, required, errorMessage: error, children: tmp7 };
-    tmp16 = jsx(tmp(6708).Input, { label, required, errorMessage: error, children: tmp7 });
+    tmp16 = jsx(tmp(6849).Input, { label, required, errorMessage: error, children: tmp7 });
   }
   return tmp16;
 });

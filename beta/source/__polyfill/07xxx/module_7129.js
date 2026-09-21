@@ -1,22 +1,25 @@
 // Module ID: 7129
 // Function ID: 7130
-// Dependencies: [17]
+// Dependencies: []
 
 // Module 7129
-import _mod17 from "module_17" /* 17 */;
+function _getPrototypeOf(arg0) {
+  if (Object.setPrototypeOf) {
+    let _Object = Object;
+    exports = getPrototypeOf.bind();
+  } else {
+    exports = (arg0) => {
+      let __proto__ = arg0.__proto__;
+      if (!__proto__) {
+        const _Object = Object;
+        __proto__ = Object.getPrototypeOf(arg0);
+      }
+      return __proto__;
+    };
+  }
+  module.exports = exports;
+  return exports(arg0);
+}
+let exports = _getPrototypeOf;
 
-const constants = _mod17.Platform.constants;
-if (constants != null) {
-  const reactNativeVersion = constants.reactNativeVersion;
-}
-try {
-  let major;
-  if (reactNativeVersion != null) {
-    major = reactNativeVersion.major;
-  }
-  if (0 !== major) {
-    const InteractionManager = _mod17.InteractionManager;
-  }
-  exports.InteractionManager = InteractionManager;
-} catch (err) {
-}
+export default _getPrototypeOf;

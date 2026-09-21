@@ -1,11 +1,11 @@
-// Module ID: 6511
-// Function ID: 6512
+// Module ID: 6651
+// Function ID: 6652
 // Dependencies: [2]
 
-// Module 6511
+// Module 6651
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerBannerDefaultExample-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/c73065e53e3d4f56a487b1287b595f038ecc15df549fb139294943a8beb410ee.png";
-export const metadata = { fileBytes: 133863 };
+export default "https://cdn.discordapp.com/assets/content/3e3db8e925d09950eb154b0e4b3db4f1b3c67de03c502cf0b7d776aae9e7c7f0.png";
+export const metadata = { fileBytes: 133020 };

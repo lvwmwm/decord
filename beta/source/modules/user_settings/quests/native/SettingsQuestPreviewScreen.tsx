@@ -1,20 +1,20 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15438
+// Function ID: 15439
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7805, 1181, 21, 576, 4636, 1484, 504, 15253, 15255, 1114, 9922, 11413, 573, 15256, 9923, 12749, 15262, 2]
+// Dependencies: [32, 19, 17, 7939, 1182, 21, 576, 4756, 1485, 504, 15439, 15441, 1115, 9890, 11542, 573, 15442, 9891, 12869, 15448, 2]
 // Exports: default
 
-// Module 15252 (SettingsQuestPreviewScreen)
+// Module 15438 (SettingsQuestPreviewScreen)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import QuestActionCreators from "QuestActionCreators" /* 11413 */;
-import QuestCardPreview from "QuestCardPreview" /* 15253 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 15255 */;
+import util from "util" /* 1115 */;
+import QuestActionCreators from "QuestActionCreators" /* 11542 */;
+import QuestCardPreview from "QuestCardPreview" /* 15439 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 15441 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7805 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
+import QuestStore from "QuestStore" /* 7939 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, controlBarContainer: { paddingHorizontal: PX_16, paddingTop: PX_16 / 2, paddingBottom: PX_16 }, segmentedControlContainer: { paddingHorizontal: PX_16 }, pagesContainer: { flex: 1, width: "100%" }, activityIndicator: null, allSectionsContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let obj4 = { paddingHorizontal: PX_16, paddingTop: PX_16 / 2, paddingBottom: PX_16 };
@@ -115,17 +115,17 @@ export default function SettingsQuestPreviewScreen() {
     obj.page = tmp3;
     const items1 = [obj, , , ];
     const obj3 = { id: "bar", label: null, page: null };
-    const intl2 = tmp(1114).intl;
+    const intl2 = tmp(1115).intl;
     obj3.label = intl2.string(util.t.uL4oBf);
     obj3.page = callback2();
     items1[1] = obj3;
     const obj4 = { id: "card", label: null, page: null };
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1115).intl;
     obj4.label = intl3.string(util.t.MAvIf1);
     obj4.page = callback();
     items1[2] = obj4;
     const obj5 = { id: "embed", label: null, page: null };
-    const intl4 = tmp(1114).intl;
+    const intl4 = tmp(1115).intl;
     obj5.label = intl4.string(util.t.AswoU2);
     obj5.page = callback1();
     items1[3] = obj5;

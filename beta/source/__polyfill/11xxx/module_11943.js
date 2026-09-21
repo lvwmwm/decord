@@ -1,9 +1,9 @@
 // Module ID: 11943
 // Function ID: 11944
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11943
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 50, height: 50, scales: [2, 3], hash: "1f317b3826e833bdfd8eb425b9e3f548", name: "img_poop_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d25dc6aac0ffe1d35c3be44e5c9ce017", name: "ArrowAngleRightUpIcon", type: "png" });

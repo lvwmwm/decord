@@ -1,9 +1,0 @@
-// Module ID: 2050
-// Function ID: 2051
-// Dependencies: [1120]
-
-// Module 2050
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/ZGVzaWdu", scales: [1], hash: "4fcd6fb04379e74e023125876d1a082c", name: "hr.messages.4fcd6fb04379e74e023125876d1a082c.compiled.messages", type: "jsona" });

@@ -1,13 +1,13 @@
-// Module ID: 6212
-// Function ID: 6213
+// Module ID: 6350
+// Function ID: 6351
 // Name: GemLevel2Illocon
-// Dependencies: [21, 5668, 6213, 2]
+// Dependencies: [21, 5804, 6351, 2]
 // Exports: GemLevel2Illocon
 
-// Module 6212 (GemLevel2Illocon)
+// Module 6350 (GemLevel2Illocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6213 from "module_6213" /* 6213 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6351 from "module_6351" /* 6351 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const GemLevel2Illocon = function GemLevel2Illocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6213 };
+  const obj2 = { uri: _modDef6351 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

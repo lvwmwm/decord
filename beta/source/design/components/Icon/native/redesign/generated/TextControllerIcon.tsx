@@ -1,13 +1,13 @@
-// Module ID: 5160
-// Function ID: 5161
+// Module ID: 5297
+// Function ID: 5298
 // Name: TextControllerIcon
-// Dependencies: [19, 21, 576, 4337, 5144, 2]
+// Dependencies: [19, 21, 576, 4456, 5282, 2]
 // Exports: TextControllerIcon
 
-// Module 5160 (TextControllerIcon)
+// Module 5297 (TextControllerIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod5144 from "module_5144" /* 5144 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod5282 from "module_5282" /* 5282 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TextControllerIcon = function TextControllerIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5144, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5282, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

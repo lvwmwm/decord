@@ -1,13 +1,13 @@
-// Module ID: 9001
-// Function ID: 9002
+// Module ID: 9155
+// Function ID: 9156
 // Name: CollectiblesShopManager
-// Dependencies: [9000, 8336, 8335, 9002, 573, 2]
+// Dependencies: [9154, 8488, 8487, 9156, 573, 2]
 
-// Module 9001 (CollectiblesShopManager)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8335 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9002 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9000 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8336 */;
+// Module 9155 (CollectiblesShopManager)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8487 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9156 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9154 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8488 */;
 import Dispatcher from "Dispatcher" /* 573 */;
 
 require = fn;
@@ -42,9 +42,10 @@ function flushCollections() {
   const items = [...set1];
   set1.clear();
   c8 = false;
-  for (const item10018 of tmp3) {
+  includePricing = false;
+  for (const item10019 of tmp4) {
     let obj = StorefrontCollectionActionCreators;
-    let obj2 = { collectionIds: item10018, includeUnpublishedCollections: tmp, includeUnpublishedProducts: tmp };
+    let obj2 = { collectionIds: item10019, includeUnpublishedCollections: tmp, includeUnpublishedProducts: tmp, includePricing };
     let result = obj.maybeFetchCollectionsWithProducts(obj2);
     continue;
   }
@@ -54,6 +55,7 @@ const set1 = new Set();
 let c6 = null;
 let c7 = null;
 let c8 = false;
+let c9 = false;
 let obj = {
   requestProducts(items) {
     const iter = items[Symbol.iterator]();
@@ -87,15 +89,25 @@ let obj = {
     if (flag === undefined) {
       flag = false;
     }
+    let flag2 = obj.includePricing;
+    if (flag2 === undefined) {
+      flag2 = false;
+    }
     const iter = items[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp2 = nextResult;
-      let tmp3 = "" !== nextResult;
+      let obj2 = StorefrontCollectionStore;
+      let tmp3 = "loading" === StorefrontCollectionStore.getFetchState(nextResult);
       if (tmp3) {
-        tmp3 = "loading" !== StorefrontCollectionStore.getFetchState(tmp2);
+        let hasPricingCoverageResult = !flag2;
+        if (flag2) {
+          hasPricingCoverageResult = obj2.hasPricingCoverage(tmp2);
+        }
+        tmp3 = hasPricingCoverageResult;
       }
-      if (tmp3) {
+      let tmp8 = "" === tmp2 || tmp3;
+      if (!tmp8) {
         let addResult = set1.add(tmp2);
       }
       continue;
@@ -103,11 +115,14 @@ let obj = {
     if (flag) {
       c8 = true;
     }
-    let tmp9 = set1.size > 0;
-    if (tmp9) {
-      tmp9 = null == timeout;
+    if (flag2) {
+      c9 = true;
     }
-    if (tmp9) {
+    let tmp12 = set1.size > 0;
+    if (tmp12) {
+      tmp12 = null == timeout;
+    }
+    if (tmp12) {
       const _setTimeout = setTimeout;
       timeout = setTimeout(flushCollections, 32);
     }
@@ -116,6 +131,7 @@ let obj = {
     set.clear();
     set1.clear();
     c8 = false;
+    c9 = false;
     if (null != c6) {
       const _clearTimeout = clearTimeout;
       clearTimeout(c6);

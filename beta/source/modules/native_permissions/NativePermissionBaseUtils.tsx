@@ -1,15 +1,15 @@
-// Module ID: 5224
-// Function ID: 5225
+// Module ID: 5359
+// Function ID: 5360
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 5225, 4846, 1074, 1240, 5226, 1114, 2]
+// Dependencies: [5, 5360, 4965, 1074, 1241, 5361, 1115, 2]
 
-// Module 5224 (NativePermissionBaseUtils)
-import util from "util" /* 1114 */;
+// Module 5359 (NativePermissionBaseUtils)
+import util from "util" /* 1115 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import NativePermissionStore from "NativePermissionStore" /* 5225 */;
+import NativePermissionStore from "NativePermissionStore" /* 5360 */;
 
 require = fn;
-const NativePermissionConstants = fn(4846);
+const NativePermissionConstants = fn(4965);
 ({ NativePermissionTypes: hasOwnProperty, NativePermissionStates: metroRequire, NativePermissionStatus: closure_7 } = NativePermissionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let NativePermissionBaseUtils;
@@ -35,7 +35,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
       const error = new Error("requestAuthorization: Was provided with not a function for " + type + ".");
       throw error;
     }
-    tmp5(1240).track(constants2.PERMISSIONS_REQUESTED, { type });
+    tmp5(1241).track(constants2.PERMISSIONS_REQUESTED, { type });
     closure_128_0 = yield tmp45();
     let tmp10 = closure_128_0 === constants.AUTHORIZED;
     if (!tmp10) {
@@ -48,7 +48,7 @@ prototype["requestAuthorization"] = function requestAuthorization(arg0, hasPermi
       DENIED = tmp14.DENIED;
     }
     closure_128_2 = DENIED;
-    tmp5(5226).setPermission(closure_129_0, closure_128_2);
+    tmp5(5361).setPermission(closure_129_0, closure_128_2);
     let showAuthorizationError = !closure_128_1;
     if (!closure_128_1) {
       showAuthorizationError = closure_129_2.showAuthorizationError;
@@ -90,16 +90,16 @@ prototype["showAlert"] = function showAlert(arg0) {
   obj[constants.CONTACTS] = "" + intl9.string(util.t.kTtf7o) + ". " + intl10.string(util.t["5Jvu1R"]);
   if (null != obj[arg0]) {
     const obj2 = { title: null, body: null, onConfirm: null, cancelText: null, confirmText: null };
-    const intl11 = tmp(1114).intl;
-    obj2.title = intl11.string(tmp(1114).t.u1Gxpu);
+    const intl11 = tmp(1115).intl;
+    obj2.title = intl11.string(tmp(1115).t.u1Gxpu);
     obj2.body = tmp9;
     obj2.onConfirm = function onConfirm() {
       return self.openSettings(closure_0);
     };
-    const intl12 = tmp(1114).intl;
-    obj2.cancelText = intl12.string(tmp(1114).t["ETE/oC"]);
-    const intl13 = tmp(1114).intl;
-    obj2.confirmText = intl13.string(tmp(1114).t["XgZk+u"]);
+    const intl12 = tmp(1115).intl;
+    obj2.cancelText = intl12.string(tmp(1115).t["ETE/oC"]);
+    const intl13 = tmp(1115).intl;
+    obj2.confirmText = intl13.string(tmp(1115).t["XgZk+u"]);
     self.openAlertModal(obj2);
   }
 };

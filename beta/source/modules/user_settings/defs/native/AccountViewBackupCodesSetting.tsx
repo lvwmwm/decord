@@ -1,24 +1,24 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 15072
+// Function ID: 15073
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 8079, 1074, 14767, 1114, 1176, 14885, 11605, 14768, 14766, 2]
+// Dependencies: [19, 8233, 1074, 14955, 1115, 1177, 15073, 11725, 14956, 14954, 2]
 
-// Module 14884 (AccountViewBackupCodesSetting)
-import util from "util" /* 1114 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14767 */;
+// Module 15072 (AccountViewBackupCodesSetting)
+import util from "util" /* 1115 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14955 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ NOOP_NULL: closure_4, UserSettingsSections } = Constants);
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.xZEzbu);
   },
-  parent: fn(8079).MobileUserSettings.ACCOUNT,
-  usePredicate: fn(14768).useIs2FAEnabled,
+  parent: fn(8233).MobileUserSettings.ACCOUNT,
+  usePredicate: fn(14956).useIs2FAEnabled,
   usePreNavigationAction: function useOnViewBackups() {
     return noop.useCallback((arg0) => {
       closure_0 = arg0;
@@ -40,17 +40,17 @@ const route = SettingBuilders.createRoute({
               confirmColor: null,
               useKeyboardAwareWrapper: true
             };
-            const intl = onSuccess(1114).intl;
-            obj.title = intl.string(onSuccess(1114).t["mGppp/"]);
-            const intl2 = onSuccess(1114).intl;
-            obj.helpText = intl2.string(onSuccess(1114).t["37S9yU"]);
-            const intl3 = onSuccess(1114).intl;
-            obj.inputLabel = intl3.string(onSuccess(1114).t.TjGb4Q);
+            const intl = onSuccess(1115).intl;
+            obj.title = intl.string(onSuccess(1115).t["mGppp/"]);
+            const intl2 = onSuccess(1115).intl;
+            obj.helpText = intl2.string(onSuccess(1115).t["37S9yU"]);
+            const intl3 = onSuccess(1115).intl;
+            obj.inputLabel = intl3.string(onSuccess(1115).t.TjGb4Q);
             obj.onSuccess = onSuccess;
-            const intl4 = onSuccess(1114).intl;
-            obj.actionText = intl4.string(onSuccess(1114).t.geKm7t);
-            obj.confirmColor = onSuccess(1176).ButtonColors.BRAND;
-            closure_2_1(14885)(obj);
+            const intl4 = onSuccess(1115).intl;
+            obj.actionText = intl4.string(onSuccess(1115).t.geKm7t);
+            obj.confirmColor = onSuccess(1177).ButtonColors.BRAND;
+            closure_2_1(15073)(obj);
           });
         },
         onSuccess,
@@ -61,14 +61,14 @@ const route = SettingBuilders.createRoute({
         confirmColor: null,
         useKeyboardAwareWrapper: true
       };
-      let intl = closure_0(1114).intl;
-      obj.title = intl.string(closure_0(1114).t.PsQmzU);
-      let intl2 = closure_0(1114).intl;
-      obj.inputLabel = intl2.string(closure_0(1114).t["CIGa+7"]);
-      let intl3 = closure_0(1114).intl;
-      obj.actionText = intl3.string(closure_0(1114).t.PDTjLN);
-      obj.confirmColor = closure_0(1176).ButtonColors.BRAND;
-      closure_1(14885)(obj);
+      let intl = closure_0(1115).intl;
+      obj.title = intl.string(closure_0(1115).t.PsQmzU);
+      let intl2 = closure_0(1115).intl;
+      obj.inputLabel = intl2.string(closure_0(1115).t["CIGa+7"]);
+      let intl3 = closure_0(1115).intl;
+      obj.actionText = intl3.string(closure_0(1115).t.PDTjLN);
+      obj.confirmColor = closure_0(1177).ButtonColors.BRAND;
+      closure_1(15073)(obj);
       return false;
     }, []);
   },

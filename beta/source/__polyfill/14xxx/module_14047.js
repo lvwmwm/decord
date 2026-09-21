@@ -1,9 +1,9 @@
 // Module ID: 14047
 // Function ID: 14048
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 14047
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "b002cec8fdbd5414b4068fe272d35071", name: "phibi_1", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 275.5, height: 78, scales: [2, 3], hash: "b55be157bc31f9c933d8fe113de3e547", name: "voice_channels", type: "png" });

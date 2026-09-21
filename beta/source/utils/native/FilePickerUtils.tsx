@@ -1,10 +1,10 @@
-// Module ID: 11360
-// Function ID: 11361
+// Module ID: 11489
+// Function ID: 11490
 // Name: FilePickerUtils
-// Dependencies: [5, 1074, 11361, 1363, 4981, 1114, 4816, 2]
+// Dependencies: [5, 1074, 11490, 1364, 5109, 1115, 4936, 2]
 // Exports: handleDocumentSelection
 
-// Module 11360 (FilePickerUtils)
+// Module 11489 (FilePickerUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

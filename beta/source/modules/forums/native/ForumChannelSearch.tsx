@@ -1,19 +1,19 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13565
+// Function ID: 13566
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 1957, 7870, 21, 4636, 1484, 13393, 7966, 5056, 1114, 8002, 504, 7153, 7869, 2]
+// Dependencies: [19, 17, 2041, 8010, 21, 4756, 1485, 13566, 8107, 5186, 1115, 8142, 504, 7295, 8009, 2]
 
-// Module 13392 (ForumChannelSearch)
-import tracking_Tracking from "tracking/Tracking" /* 7869 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8002 */;
+// Module 13565 (ForumChannelSearch)
+import tracking_Tracking from "tracking/Tracking" /* 8009 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8142 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import ForumSearchStore from "ForumSearchStore" /* 7870 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import ForumSearchStore from "ForumSearchStore" /* 8010 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_8 = createStyles.createStyles({ inputContainer: { flexGrow: 1, marginLeft: 8 }, cancelButtonContainer: { paddingLeft: 8 } });
 const memoResult = noop.memo((channelId) => {
   channelId = channelId.channelId;
@@ -55,8 +55,8 @@ export const ForumChannelSearchInput = noop.memo((channelId) => {
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
   const tmp = closure_8();
-  const canSearchForumPostsByChannelId = channelId(13393).useCanSearchForumPostsByChannelId(channelId);
-  let obj = channelId(13393);
+  const canSearchForumPostsByChannelId = channelId(13566).useCanSearchForumPostsByChannelId(channelId);
+  let obj = channelId(13566);
   const items = [ForumSearchStore];
   const items1 = [channelId];
   const stateFromStores = channelId(504).useStateFromStores(items, () => {
@@ -105,8 +105,8 @@ export const ForumChannelSearchInput = noop.memo((channelId) => {
         obj3.children = tmp8(tmp10, obj4);
         tmp8Result = tmp8(tmp9, obj3);
       } else {
-        const intl = tmp2(1114).intl;
-        const t = tmp2(1114).t;
+        const intl = tmp2(1115).intl;
+        const t = tmp2(1115).t;
         intl.string(tmp6 ? t["5h0QOP"] : t.Iy2gnS);
       }
       tmp9 = View;

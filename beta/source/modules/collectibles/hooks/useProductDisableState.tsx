@@ -1,13 +1,13 @@
-// Module ID: 8994
-// Function ID: 8995
+// Module ID: 9148
+// Function ID: 9149
 // Name: useProductDisableState
-// Dependencies: [4300, 504, 1077, 1114, 2]
+// Dependencies: [4420, 504, 1077, 1115, 2]
 // Exports: useProductDisableState
 
-// Module 8994 (useProductDisableState)
+// Module 9148 (useProductDisableState)
 import initialize from "initialize" /* 504 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1077 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
+import SubscriptionStore from "SubscriptionStore" /* 4420 */;
 
 require = fn;
 const size = fn(2);
@@ -28,8 +28,8 @@ export const useProductDisableState = function useProductDisableState(skuId) {
     const obj2 = { isDisabled: stateFromStores, disabledReason: null };
     let stringResult = null;
     if (stateFromStores) {
-      const intl = tmp(1114).intl;
-      stringResult = intl.string(tmp(1114).t.NbveHD);
+      const intl = tmp(1115).intl;
+      stringResult = intl.string(tmp(1115).t.NbveHD);
     }
     obj2.disabledReason = stringResult;
     let obj3 = obj2;

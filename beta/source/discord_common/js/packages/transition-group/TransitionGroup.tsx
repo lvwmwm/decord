@@ -1,10 +1,10 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 12677
+// Function ID: 12678
 // Name: TransitionGroup
-// Dependencies: [109, 19, 12557, 2]
+// Dependencies: [109, 19, 12678, 2]
 
-// Module 12556 (TransitionGroup)
-import TransitionChildMapping from "TransitionChildMapping" /* 12557 */;
+// Module 12677 (TransitionGroup)
+import TransitionChildMapping from "TransitionChildMapping" /* 12678 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

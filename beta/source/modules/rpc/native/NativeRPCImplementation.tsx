@@ -1,29 +1,29 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 14745
+// Function ID: 14746
 // Name: NativeRPCImplementation
-// Dependencies: [4628, 1181, 1219, 14555, 14602, 14603, 14605, 14606, 14608, 14611, 14612, 14614, 9680, 2]
+// Dependencies: [4748, 1182, 1220, 14746, 14794, 14795, 14797, 14798, 14800, 14803, 14804, 14806, 9577, 2]
 
-// Module 14554 (NativeRPCImplementation)
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9680 */;
-import commands_activitiesDefault from "commands/activities" /* 14602 */;
-import authDefault from "auth" /* 14603 */;
-import voiceSettingsDefault from "voiceSettings" /* 14605 */;
-import unsupportedDefault from "unsupported" /* 14606 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14608 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 14614 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+// Module 14745 (NativeRPCImplementation)
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9577 */;
+import commands_activitiesDefault from "commands/activities" /* 14794 */;
+import authDefault from "auth" /* 14795 */;
+import voiceSettingsDefault from "voiceSettings" /* 14797 */;
+import unsupportedDefault from "unsupported" /* 14798 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14800 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 14806 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
-const merged = Object.assign(fn(14555).crossPlatformCommands);
+const merged = Object.assign(fn(14746).crossPlatformCommands);
 const activities = Object.assign(commands_activitiesDefault);
 const auth = Object.assign(authDefault);
 const voiceSettings = Object.assign(voiceSettingsDefault);
 const unsupported = Object.assign(unsupportedDefault);
 Object.assign(crossPlatformRPCEventHandlersDefault);
-const discordEnvironmentEvents = fn(14611);
+const discordEnvironmentEvents = fn(14803);
 const merged6 = Object.assign(discordEnvironmentEvents.createDiscordEnvironmentEvents(true));
-const merged7 = Object.assign(fn(14612).voiceSettingsEventHandlers);
+const merged7 = Object.assign(fn(14804).voiceSettingsEventHandlers);
 const obj4 = { server: NativeRPCServerDefault, commands: {}, events: {}, stores: null, transports: null, registerTransportsForEmbeddedPlatform: null };
 const items = [ThemeStore, AccessibilityStore, UserSettingsProtoStore];
 obj4.stores = items;

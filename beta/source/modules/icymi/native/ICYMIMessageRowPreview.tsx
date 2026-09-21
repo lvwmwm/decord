@@ -1,14 +1,14 @@
-// Module ID: 16593
-// Function ID: 16594
+// Module ID: 16835
+// Function ID: 16836
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 1074, 21, 8001, 7983, 8038, 7405, 4571, 4636, 576, 1935, 8036, 8775, 8243, 1114, 2]
+// Dependencies: [19, 1074, 21, 8141, 8123, 8192, 7544, 4690, 4756, 576, 2019, 8190, 8930, 8395, 1115, 2]
 
-// Module 16593 (ICYMIMessageRowPreview)
-import UserSettings from "UserSettings" /* 1935 */;
-import createStyles from "createStyles" /* 4636 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7983 */;
-import RowGeneratorDefault from "RowGenerator" /* 8036 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8243 */;
+// Module 16835 (ICYMIMessageRowPreview)
+import UserSettings from "UserSettings" /* 2019 */;
+import createStyles from "createStyles" /* 4756 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8123 */;
+import RowGeneratorDefault from "RowGenerator" /* 8190 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8395 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
   if (str === undefined) {
     str = "none";
   }
-  const tmp = messageOptions(4571)();
+  const tmp = messageOptions(4690)();
   let obj = createStyles;
   dependencyMap = obj.createNativeStyleProperties({ seeMoreLabelColor: messageOptions(576).colors.TEXT_DEFAULT })(tmp);
   const RenderEmbeds = UserSettings.RenderEmbeds;
@@ -35,15 +35,15 @@ function ICYMIMessageRowPreview(pointerEvents) {
     obj.setOptions({ renderEmbeds: setting, inlineEmbedMedia: setting1, inlineAttachmentMedia: setting2, renderReactions: false, animateEmoji: false, gifAutoPlay: false, renderReplies: false, renderCodedLinks: false, renderGiftCode: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, enableSwipeActions: false, renderExecutedCommands: false, useAlternateEmbedColors: true });
     return obj;
   }, items);
-  return setting2(messageOptions(8775), {
+  return setting2(messageOptions(8930), {
     pointerEvents: str,
     horizontalOffset: 0,
     modifyRow(arg0) {
       arg0.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
       if (null != closure_1_0) {
         const obj = { numberOfLines: tmp3, expandable: false, seeMoreLabel: null, seeMoreLabelColor: null };
-        const intl = tmp(1114).intl;
-        obj.seeMoreLabel = intl.string(tmp(1114).t.qCozu3);
+        const intl = tmp(1115).intl;
+        obj.seeMoreLabel = intl.string(tmp(1115).t.qCozu3);
         obj.seeMoreLabelColor = seeMoreLabelColor.seeMoreLabelColor;
         arg0.truncation = obj;
       }
@@ -163,11 +163,11 @@ export const MessageRowPreview = noop.memo((message) => {
     obj.pointerEvents = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(7405)(message);
+  const tmp3 = merged(7544)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   const obj2 = {};
-  const merged2 = Object.assign(message(8038).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8192).DEFAULT_OPTIONS);
   obj2.ignoreMentioned = true;
   obj2.renderReplies = false;
   obj2.renderThreadEmbeds = false;

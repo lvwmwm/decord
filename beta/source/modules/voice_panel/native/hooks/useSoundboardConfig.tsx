@@ -1,16 +1,16 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 17663
+// Function ID: 17664
 // Name: useSoundboardConfig
-// Dependencies: [19, 1957, 1908, 17148, 504, 4457, 1943, 17170, 7478, 1114, 2]
+// Dependencies: [19, 2041, 1992, 17500, 504, 17522, 7617, 1115, 2]
 // Exports: default
 
-// Module 17310 (useSoundboardConfig)
-import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 7478 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17148 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17170 */;
+// Module 17663 (useSoundboardConfig)
+import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 7617 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17500 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17522 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = globalThis.__r;
 
@@ -26,7 +26,6 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
   let obj = require("initialize");
   const items = [MediaEngineStore];
   const stateFromStores = obj.useStateFromStores(items, () => deaf.isDeaf());
-  let obj2 = require("DismissibleContentUnsafeUtils");
   if (tmp2) {
     if (obj.VOICE_CONTROLS === analyticsSource) {
       let flag = true;
@@ -44,19 +43,18 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
       const result = soundboard_SoundboardActionCreators.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  const obj3 = { visible: tmp2, handlePress: callback, disabled: null, disabledAccessibilityHint: null, showIndicator: null };
-  let tmp8 = stateFromStores;
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: null, disabledAccessibilityHint: null };
+  let tmp7 = stateFromStores;
   if (!stateFromStores) {
-    tmp8 = !noop.useMemo(() => canChannelUseSoundboardDefault(ChannelStore.getChannel(closure_0)), items2);
+    tmp7 = !noop.useMemo(() => canChannelUseSoundboardDefault(ChannelStore.getChannel(closure_0)), items2);
   }
-  obj3.disabled = tmp8;
+  obj2.disabled = tmp7;
   let stringResult;
   if (stateFromStores) {
-    const intl = tmp3(1114).intl;
-    stringResult = intl.string(tmp3(1114).t.X1lQli);
+    const intl = tmp3(1115).intl;
+    stringResult = intl.string(tmp3(1115).t.X1lQli);
   }
-  obj3.disabledAccessibilityHint = stringResult;
-  obj3.showIndicator = !require("DismissibleContentUnsafeUtils").useIsDismissibleContentDismissed_UNSAFE(require("dismissible_content").DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
-  return obj3;
+  obj2.disabledAccessibilityHint = stringResult;
+  return obj2;
 };
 export { SoundboardButtonLocation };

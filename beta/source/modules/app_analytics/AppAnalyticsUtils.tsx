@@ -1,39 +1,39 @@
-// Module ID: 4816
-// Function ID: 4817
+// Module ID: 4936
+// Function ID: 4937
 // Name: AppAnalyticsUtils
-// Dependencies: [1961, 502, 1957, 2012, 4556, 2021, 2015, 1979, 1908, 4275, 4676, 4659, 4651, 4285, 2011, 4458, 4817, 1371, 4655, 1074, 1964, 4280, 1086, 4819, 1240, 1090, 4820, 4822, 12, 2]
+// Dependencies: [2045, 502, 2041, 2096, 4675, 2105, 2099, 2063, 1992, 4395, 4796, 4779, 4771, 4405, 2095, 4577, 4937, 1372, 4775, 1074, 2048, 4400, 1086, 4939, 1241, 1091, 4940, 4942, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
-// Module 4816 (AppAnalyticsUtils)
+// Module 4936 (AppAnalyticsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
-import ChannelConstants from "ChannelConstants" /* 1964 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 4820 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 4822 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import ChannelConstants from "ChannelConstants" /* 2048 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 4940 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 4942 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 2012 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4556 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import PresenceStore from "PresenceStore" /* 4676 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import ReadStateStore from "ReadStateStore" /* 4651 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
-import UserStore from "UserStore" /* 1371 */;
-import VoiceStateStore from "VoiceStateStore" /* 4655 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 2096 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import PresenceStore from "PresenceStore" /* 4796 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import ReadStateStore from "ReadStateStore" /* 4771 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import UserStore from "UserStore" /* 1372 */;
+import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
-const AnalyticsUtilsDefault = track(1240);
+const AnalyticsUtilsDefault = track(1241);
 function collectGuildAnalyticsMetadata(guildId) {
   if (null == guildId) {
     return null;
@@ -108,7 +108,7 @@ function collectChannelAnalyticsMetadata(channel) {
           if (null != channel) {
             let hasItem = null != tmp2;
             if (hasItem) {
-              hasItem = BigFlagUtilsAll.has(tmp2.deny, constants3.VIEW_CHANNEL);
+              hasItem = BigFlagUtilsAll.has(tmp2.deny, constants4.VIEW_CHANNEL);
             }
             flag = hasItem;
           }
@@ -121,7 +121,7 @@ function collectChannelAnalyticsMetadata(channel) {
         if (null != channel) {
           let hasItem1 = null != tmp9;
           if (hasItem1) {
-            hasItem1 = BigFlagUtilsAll.has(tmp9.deny, constants3.VIEW_CHANNEL);
+            hasItem1 = BigFlagUtilsAll.has(tmp9.deny, constants4.VIEW_CHANNEL);
           }
           flag2 = hasItem1;
         }
@@ -226,7 +226,7 @@ const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: closure_7, GUILD_VOCAL_CHANNELS_KEY: closure_8 } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
-({ GuildFeatures: closure_25, AnalyticsLocations: closure_26, Permissions: closure_27, ActivityTypes: closure_28 } = Constants);
+({ GuildFeatures: closure_25, AnalyticsLocations: closure_26, ChannelTypes: closure_27, Permissions: closure_28, ActivityTypes: closure_29 } = Constants);
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const result = size.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
 
@@ -276,7 +276,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
       });
       const merged = Object.assign(obj3);
       const tmp9Result = obj3(12)(VoiceStateStore.getVoiceStates(guildId));
-      const merged1 = Object.assign(id(4819).getVoiceAnalyticsMetadataAdditional());
+      const merged1 = Object.assign(id(4939).getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
   }
@@ -303,39 +303,48 @@ export const getChannelOpenedMetadata = function getChannelOpenedMetadata(select
           }
         }
         if (channel.isDM()) {
-          let tmp5 = getRecipientFriendCounts(channel.recipients);
+          let tmp9 = getRecipientFriendCounts(channel.recipients);
         } else {
-          tmp5 = null;
+          tmp9 = null;
         }
-        const obj4 = { channel_id: selectedChannelId, is_app_dm: flag };
-        let tmp7 = null;
-        if (null != tmp5) {
-          ({ friendCount: obj3.friend_recipient_count, nonFriendCount: obj3.non_friend_recipient_count } = tmp5);
-          tmp7 = { friend_recipient_count: null, non_friend_recipient_count: null };
+        const obj3 = { channel_id: selectedChannelId, is_app_dm: flag };
+        let tmp11 = null;
+        if (null != tmp9) {
+          ({ friendCount: obj4.friend_recipient_count, nonFriendCount: obj4.non_friend_recipient_count } = tmp9);
+          tmp11 = { friend_recipient_count: null, non_friend_recipient_count: null };
           const obj5 = { friend_recipient_count: null, non_friend_recipient_count: null };
         }
-        const merged = Object.assign(tmp7);
-        return obj4;
+        const merged = Object.assign(tmp11);
+        return obj3;
       } else {
         const snapshot = ReadStateStore.getSnapshot(selectedChannelId, 10 * DurationsDefault.Millis.SECOND);
-        const obj14 = { channel_id: selectedChannelId, channel_was_unread: null, channel_mention_count: null, channel_is_muted: null, channel_is_nsfw: null, channel_is_spoiler: null, channel_resolved_unread_setting: null, channel_preset: null, guild_id: null, guild_was_unread: null, guild_mention_count: null, guild_is_muted: null, guild_resolved_unread_setting: null, guild_preset: null, parent_id: null, parent_channel_type: null, has_pending_member_action: null, can_send_message: null, is_app_dm: false };
-        ({ unread: obj6.channel_was_unread, mentionCount: obj6.channel_mention_count } = snapshot);
-        obj14.channel_is_muted = UserGuildSettingsStore.isChannelMuted(channel.guild_id, channel.id);
-        obj14.channel_is_nsfw = channel.isNSFW();
-        obj14.channel_is_spoiler = channel.isSpoilerChannel();
-        obj14.channel_resolved_unread_setting = UserGuildSettingsStore.resolveUnreadSetting(channel);
+        const obj6 = { channel_id: selectedChannelId, channel_was_unread: null, channel_mention_count: null, channel_is_muted: null, channel_is_nsfw: null, channel_is_spoiler: null, channel_resolved_unread_setting: null, channel_preset: null, guild_id: null, guild_was_unread: null, guild_mention_count: null, guild_is_muted: null, guild_resolved_unread_setting: null, guild_preset: null, parent_id: null, parent_channel_type: null, has_pending_member_action: null, can_send_message: null, is_app_dm: false };
+        ({ unread: obj7.channel_was_unread, mentionCount: obj7.channel_mention_count } = snapshot);
+        obj6.channel_is_muted = UserGuildSettingsStore.isChannelMuted(channel.guild_id, channel.id);
+        obj6.channel_is_nsfw = channel.isNSFW();
+        obj6.channel_is_spoiler = channel.isSpoilerChannel();
+        obj6.channel_resolved_unread_setting = UserGuildSettingsStore.resolveUnreadSetting(channel);
         const unreadSetting = UserGuildSettingsStore.resolveUnreadSetting(channel);
-        obj14.channel_preset = notificationSettingsPresetUtils.presetFromSettings(unreadSetting, UserGuildSettingsStore.resolvedMessageNotifications(channel));
-        obj14.guild_id = channel.guild_id;
-        ({ guildUnread: obj6.guild_was_unread, guildMentionCount: obj6.guild_mention_count } = snapshot);
-        obj14.guild_is_muted = UserGuildSettingsStore.isMuted(channel.guild_id);
-        obj14.guild_resolved_unread_setting = UserGuildSettingsStore.resolveGuildUnreadSetting(guild);
+        obj6.channel_preset = notificationSettingsPresetUtils.presetFromSettings(unreadSetting, UserGuildSettingsStore.resolvedMessageNotifications(channel));
+        obj6.guild_id = channel.guild_id;
+        ({ guildUnread: obj7.guild_was_unread, guildMentionCount: obj7.guild_mention_count } = snapshot);
+        obj6.guild_is_muted = UserGuildSettingsStore.isMuted(channel.guild_id);
+        obj6.guild_resolved_unread_setting = UserGuildSettingsStore.resolveGuildUnreadSetting(guild);
         const guildUnreadSetting = UserGuildSettingsStore.resolveGuildUnreadSetting(guild);
-        obj14.guild_preset = notificationSettingsPresetUtils.presetFromSettings(guildUnreadSetting, UserGuildSettingsStore.getMessageNotifications(channel.guild_id));
-        ({ parent_id: obj6.parent_id, parentChannelThreadType: obj6.parent_channel_type } = channel);
-        obj14.has_pending_member_action = hasPendingMemberAction.hasPendingMemberAction(channel.guild_id, selectedChannelId);
-        obj14.can_send_message = PermissionStore.can(constants3.SEND_MESSAGES, channel);
-        return obj14;
+        obj6.guild_preset = notificationSettingsPresetUtils.presetFromSettings(guildUnreadSetting, UserGuildSettingsStore.getMessageNotifications(channel.guild_id));
+        ({ parent_id: obj7.parent_id, parentChannelThreadType: obj7.parent_channel_type } = channel);
+        obj6.has_pending_member_action = hasPendingMemberAction.hasPendingMemberAction(channel.guild_id, selectedChannelId);
+        obj6.can_send_message = PermissionStore.can(constants4.SEND_MESSAGES, channel);
+        let tmp3 = null;
+        if (channel.type === constants3.GUILD_APP) {
+          tmp3 = null;
+          if (null != channel.application_id) {
+            const obj16 = { application_id: channel.application_id };
+            tmp3 = obj16;
+          }
+        }
+        const merged1 = Object.assign(tmp3);
+        return obj6;
       }
     }
   }

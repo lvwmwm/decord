@@ -1,23 +1,23 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15508
+// Function ID: 15509
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1371, 21, 4636, 576, 1114, 504, 4788, 1396, 7290, 5668, 4632, 1091, 1176, 7308, 2]
+// Dependencies: [19, 17, 1372, 21, 4756, 576, 1115, 504, 4908, 1397, 7432, 5804, 4752, 1092, 1177, 7450, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 15322 (GuildRoleSubscriptionMemberPreview)
+// Module 15508 (GuildRoleSubscriptionMemberPreview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import utils_ColorUtilsAll from "utils/ColorUtils" /* 1091 */;
-import util from "util" /* 1114 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
+import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;
+import util from "util" /* 1115 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -43,43 +43,43 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       avatarURL = stateFromStores.getAvatarURL(guildId, 40);
     }
     if (avatarURL == null) {
-      avatarURL = tmp6(1396).getDefaultAvatarURL(undefined, undefined);
-      const tmp6Result2 = tmp6(1396);
+      avatarURL = tmp6(1397).getDefaultAvatarURL(undefined, undefined);
+      const tmp6Result2 = tmp6(1397);
     }
-    const source = tmp6(1396).makeSource(avatarURL);
-    const tmp6Result = tmp6(1396);
-    const roleIconData = tmp4(7290).getRoleIconData(role, 16);
+    const source = tmp6(1397).makeSource(avatarURL);
+    const tmp6Result = tmp6(1397);
+    const roleIconData = tmp4(7432).getRoleIconData(role, 16);
     const obj2 = { style: null, children: null };
     const items1 = [tmp3.container, style];
     obj2.style = items1;
     const obj3 = { style: tmp3.avatar, source };
-    const items2 = [timestampProducer(tmp6(5668), obj3), ];
+    const items2 = [timestampProducer(tmp6(5804), obj3), ];
     const obj4 = { style: tmp3.content, children: null };
     const obj5 = { style: tmp3.contextRow, children: null };
     const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: null, children: null };
     const obj7 = { color: null };
-    const tmp4Result = tmp4(7290);
+    const tmp4Result = tmp4(7432);
     obj7.color = utils_ColorUtilsAll.int2hex(role.color);
     obj6.style = obj7;
     obj6.children = tmp8;
-    const items3 = [timestampProducer(tmp4(4632).Text, obj6), , , ];
+    const items3 = [timestampProducer(tmp4(4752).Text, obj6), , , ];
     let tmp12Result = null;
     if (null != roleIconData) {
       const obj8 = { children: null };
-      const items4 = [tmp14(tmp4(1176).Spacer, { size: 4 }), ];
+      const items4 = [tmp14(tmp4(1177).Spacer, { size: 4 }), ];
       const obj9 = { name: role.name, src: null, unicodeEmoji: null, size: 16 };
       ({ customIconSrc: obj13.src, unicodeEmoji: obj13.unicodeEmoji } = roleIconData);
-      items4[1] = tmp14(tmp6(7308), obj9);
+      items4[1] = tmp14(tmp6(7450), obj9);
       obj8.children = items4;
       tmp12Result = tmp12(React5, obj8);
     }
     items3[1] = tmp12Result;
-    items3[2] = timestampProducer(tmp4(1176).Spacer, { size: 8 });
-    items3[3] = timestampProducer(tmp4(4632).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    items3[2] = timestampProducer(tmp4(1177).Spacer, { size: 8 });
+    items3[3] = timestampProducer(tmp4(4752).Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
     obj5.children = items3;
     const items5 = [React6(View, obj5), ];
     const obj10 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
-    items5[1] = timestampProducer(tmp4(4632).Text, obj10);
+    items5[1] = timestampProducer(tmp4(4752).Text, obj10);
     obj4.children = items5;
     items2[1] = React6(View, obj4);
     obj2.children = items2;

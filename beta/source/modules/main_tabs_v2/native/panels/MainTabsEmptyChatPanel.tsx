@@ -1,21 +1,21 @@
-// Module ID: 16848
-// Function ID: 16849
+// Module ID: 17209
+// Function ID: 17210
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4636, 576, 11661, 1611, 10353, 16849, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 11779, 1612, 10482, 17210, 2]
 // Exports: default
 
-// Module 16848 (MainTabsEmptyChatPanel)
+// Module 17209 (MainTabsEmptyChatPanel)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import useDrawerWidth from "useDrawerWidth" /* 11661 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import useDrawerWidth from "useDrawerWidth" /* 11779 */;
 import noop from "module_19" /* 19 */;
 
-const FavoritesEmptyStateDefault = tmp3(16849);
+const FavoritesEmptyStateDefault = tmp3(17210);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles((left, marginTop) => {
   const obj = { container: null };
   const obj2 = {};

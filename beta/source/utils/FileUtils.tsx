@@ -1,15 +1,15 @@
-// Module ID: 5215
-// Function ID: 5216
+// Module ID: 5350
+// Function ID: 5351
 // Name: FileUtils
-// Dependencies: [1979, 1371, 1074, 1373, 12, 5216, 4562, 4294, 5210, 4533, 1114, 2]
-// Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
+// Dependencies: [2063, 1372, 1074, 1374, 12, 5351, 4681, 4414, 5345, 4652, 1115, 2]
+// Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5215 (FileUtils)
+// Module 5350 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import UploadUtils from "UploadUtils" /* 5210 */;
-import noConflictDefault from "noConflict" /* 5216 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import UploadUtils from "UploadUtils" /* 5345 */;
+import noConflictDefault from "noConflict" /* 5351 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getUploadFileSizeSum(arg0) {
@@ -23,7 +23,7 @@ function getUploadFileSizeSum(arg0) {
 const Constants = fn(1074);
 const GuildFeatures = Constants.GuildFeatures;
 const MAX_ATTACHMENT_SIZE = Constants.MAX_ATTACHMENT_SIZE;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let items = [{ reType: /^image\/vnd.adobe.photoshop/, klass: "photoshop" }, { reType: /^image\/svg\+xml/, klass: "webcode" }, { reType: /^image\//, klass: "image" }, { reType: /^video\//, klass: "video" }, { reName: /\.pdf$/, klass: "acrobat" }, { reName: /\.ae/, klass: "ae" }, { reName: /\.sketch$/, klass: "sketch" }, { reName: /\.ai$/, klass: "ai" }, { reName: /\.(?:rar|zip|7z|tar|tar\.gz)$/, klass: "archive" }, { reName: /\.(?:c\+\+|cpp|cc|c|h|hpp|mm|m|json|js|ts|rb|rake|py|asm|fs|pyc|dtd|cgi|bat|rss|java|graphml|idb|lua|o|gml|prl|sls|conf|cmake|make|sln|vbe|cxx|wbf|vbs|r|wml|php|bash|applescript|fcgi|yaml|ex|exs|sh|ml|actionscript)$/, klass: "code" }, { reName: /\.(?:txt|rtf|doc|docx|md|pages|ppt|pptx|pptm|key|log)$/, klass: "document" }, { reName: /\.(?:xls|xlsx|numbers|csv)$/, klass: "spreadsheet" }, { reName: /\.(?:html|xhtml|htm|xml|xsd|css|styl)$/, klass: "webcode" }, { reName: /\.(?:mp3|ogg|opus|wav|aiff|flac)$/, klass: "audio" }];
 const items1 = [GuildFeatures.MAX_FILE_SIZE_250_MB, PremiumConstants.MAX_GUILD_FILE_SIZE_250_MB];
@@ -124,13 +124,13 @@ export const sizeString = function sizeString(currentSize) {
 };
 export const maxFileSize = function maxFileSize(guildId) {
   const currentUser = UserStore.getCurrentUser();
-  const userMaxFileSize = enabled(4294).getUserMaxFileSize(currentUser);
+  const userMaxFileSize = enabled(4414).getUserMaxFileSize(currentUser);
   if (null == guildId) {
     return userMaxFileSize;
   } else {
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4562).FileUploadPowerupHoldoutExperiment;
+      const FileUploadPowerupHoldoutExperiment = guild(4681).FileUploadPowerupHoldoutExperiment;
       enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
       let reduced = items2.reduce((acc, item) => {
         [tmp, tmp2] = item;
@@ -155,46 +155,7 @@ export const maxFileSize = function maxFileSize(guildId) {
     const _Math = Math;
     return Math.max(reduced, userMaxFileSize);
   }
-  const obj = enabled(4294);
-};
-export const anyFileTooLarge = function anyFileTooLarge(arg0, arg1) {
-  let reduce = dependencyMap;
-  const currentUser = UserStore.getCurrentUser();
-  const userMaxFileSize = enabled(4294).getUserMaxFileSize(currentUser);
-  if (null == arg1) {
-    let guild = userMaxFileSize;
-    const _Array = Array;
-    return Array.from(arg0).some((size) => size.size > guild);
-  } else {
-    guild = GuildStore.getGuild(arg1);
-    if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4562).FileUploadPowerupHoldoutExperiment;
-      enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
-      guild = items2;
-      reduce = items2.reduce;
-      let reduced = reduce((acc, item) => {
-        [tmp, tmp2] = item;
-        if (!enabled) {
-          const features = _Math.features;
-          let tmp6 = acc;
-          if (features.has(tmp)) {
-            tmp6 = acc;
-            if (tmp2 > acc) {
-              tmp6 = tmp2;
-            }
-          }
-          let tmp4 = tmp6;
-        } else {
-          tmp4 = acc;
-        }
-        return tmp4;
-      }, MAX_ATTACHMENT_SIZE);
-    } else {
-      reduced = MAX_ATTACHMENT_SIZE;
-    }
-    const _Math = Math;
-    const bound = Math.max(reduced, userMaxFileSize);
-  }
+  const obj = enabled(4414);
 };
 export { getUploadFileSizeSum };
 export const uploadSumTooLarge = function uploadSumTooLarge(arg0) {
@@ -203,16 +164,15 @@ export const uploadSumTooLarge = function uploadSumTooLarge(arg0) {
 };
 export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadblockDescription(arg0) {
   ({ guildId, maxSize } = arg0);
-  ({ onClick, hideLearnMore } = arg0);
   if (maxSize == null) {
     const currentUser = UserStore.getCurrentUser();
-    const userMaxFileSize = enabled(4294).getUserMaxFileSize(currentUser);
+    const userMaxFileSize = enabled(4414).getUserMaxFileSize(currentUser);
     if (null == guildId) {
       maxSize = userMaxFileSize;
     } else {
       let _Math = GuildStore.getGuild(guildId);
       if (null != _Math) {
-        const FileUploadPowerupHoldoutExperiment = tmp(4562).FileUploadPowerupHoldoutExperiment;
+        const FileUploadPowerupHoldoutExperiment = tmp(4681).FileUploadPowerupHoldoutExperiment;
         enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
         let reduced = items2.reduce((acc, item) => {
           [tmp, tmp2] = item;
@@ -237,19 +197,11 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
       _Math = Math;
       const bound = Math.max(reduced, userMaxFileSize);
     }
-    const obj5 = enabled(4294);
+    const obj3 = enabled(4414);
   }
-  const formatSizeResult = _Math(4533).formatSize(maxSize / 1024, { useKibibytes: true });
-  const obj = _Math(4533);
-  const maxFileSizeForPremiumType = _Math(4294).getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
-  if (true === hideLearnMore) {
-    const intl2 = tmp(1114).intl;
-    const obj2 = { maxSize: formatSizeResult, premiumMaxSize: maxFileSizeForPremiumType };
-    let formatResult = intl2.format(tmp(1114).t["+R2TzS"], obj2);
-  } else {
-    const intl = tmp(1114).intl;
-    const obj3 = { maxSize: formatSizeResult, premiumMaxSize: maxFileSizeForPremiumType, onClick };
-    formatResult = intl.format(tmp(1114).t.tRuxk9, obj3);
-  }
-  return formatResult;
+  const maxSize1 = _Math(4652).formatSize(maxSize / 1024, { useKibibytes: true });
+  const obj = _Math(4652);
+  const premiumMaxSize = _Math(4414).getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
+  const intl = tmp(1115).intl;
+  return intl.format(_Math(1115).t["+R2TzS"], { maxSize: maxSize1, premiumMaxSize });
 };

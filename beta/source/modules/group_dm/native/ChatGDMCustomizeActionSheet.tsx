@@ -1,13 +1,13 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11184
+// Function ID: 11185
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 11056, 11059, 1114, 11061, 2]
+// Dependencies: [19, 21, 11185, 11188, 1115, 11190, 2]
 // Exports: default
 
-// Module 11055 (ChatGDMCustomizeActionSheet)
-import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 11056 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11059 */;
-import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 11061 */;
+// Module 11184 (ChatGDMCustomizeActionSheet)
+import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 11185 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11188 */;
+import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 11190 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -22,8 +22,8 @@ export default function ChatGDMCustomizeActionSheet(channelId) {
   ({ onGoBack: c1, ref: c2 } = useNavigatorConfirmChangesOnBackDefault());
   const obj = { screenKey: "kick", title: null, render: null };
   const tmp = useNavigatorConfirmChangesOnBackDefault();
-  const intl = channelId(1114).intl;
-  obj.title = intl.string(channelId(1114).t["1r5E+m"]);
+  const intl = channelId(1115).intl;
+  obj.title = intl.string(channelId(1115).t["1r5E+m"]);
   obj.render = function render() {
     return jsx(ChatGDMCustomizeDefault, { ref, onFinish, channelId });
   };

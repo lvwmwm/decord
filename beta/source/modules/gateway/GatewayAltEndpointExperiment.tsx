@@ -1,12 +1,12 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14832
+// Function ID: 14833
 // Name: GatewayAltEndpointExperiment
-// Dependencies: [1433, 2, 14642]
+// Dependencies: [1434, 2, 14833]
 // Exports: useShouldUseAltGateway
 
-// Module 14641 (GatewayAltEndpointExperiment)
-import GatewayAltEndpointCache from "GatewayAltEndpointCache" /* 14642 */;
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 14832 (GatewayAltEndpointExperiment)
+import GatewayAltEndpointCache from "GatewayAltEndpointCache" /* 14833 */;
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-aws-gateway", kind: "user", defaultConfig: { enableAltGateway: false }, variations: null };

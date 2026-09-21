@@ -1,32 +1,32 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13384
+// Function ID: 13385
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1371, 8300, 7535, 1954, 21, 4636, 576, 13215, 8307, 504, 4294, 10754, 1943, 1176, 4632, 1114, 5204, 5761, 5056, 8785, 12271, 2]
+// Dependencies: [19, 17, 1372, 8452, 7674, 2038, 21, 4756, 576, 13385, 8459, 504, 4414, 10885, 2027, 1177, 4752, 1115, 5339, 5897, 5186, 8940, 12391, 2]
 // Exports: default
 
-// Module 13214 (UserProfileDismissibleUpsells)
+// Module 13384 (UserProfileDismissibleUpsells)
 import nativeDefault from "native" /* 576 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
-const util = ShopIcon(1114);
-const native = ShopIcon(1176);
-const Text_Text = ShopIcon(4632);
-const components_Button_Button = ShopIcon(5056);
-const Pressables = ShopIcon(5204);
-const XSmallIcon = ShopIcon(5761);
-const NitroWheelIcon = ShopIcon(8785);
-const ShopIcon2 = ShopIcon(12271);
+const util = ShopIcon(1115);
+const native = ShopIcon(1177);
+const Text_Text = ShopIcon(4752);
+const components_Button_Button = ShopIcon(5186);
+const Pressables = ShopIcon(5339);
+const XSmallIcon = ShopIcon(5897);
+const NitroWheelIcon = ShopIcon(8940);
+const ShopIcon2 = ShopIcon(12391);
 require = fn;
 const View = fn(17).View;
-const TrackUserProfileActions = fn(8300).TrackUserProfileActions;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const TrackUserProfileActions = fn(8452).TrackUserProfileActions;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let items = [...fn(7535).Gradients.PREMIUM_GUILD];
+let items = [...fn(7674).Gradients.PREMIUM_GUILD];
 let closure_10 = items.reverse();
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { upsellContainer: { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, customProfileThemeUpsellContainer: null, header: null, upsellButtonsContainer: null, upsellButton: null };
 let obj3 = { paddingVertical: 16, paddingHorizontal: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.customProfileThemeUpsellContainer = { backgroundColor: nativeDefault.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME };

@@ -1,21 +1,21 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10636
+// Function ID: 10637
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1074, 21, 4636, 576, 10412, 10446, 1114, 10450, 6728, 1176, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 10541, 10576, 1115, 10580, 6869, 1177, 2]
 
-// Module 10506 (GIFPickerNoResults)
+// Module 10636 (GIFPickerNoResults)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10412 */;
-import SearchEmpty from "SearchEmpty" /* 10446 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10450 */;
+import native from "native" /* 1177 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10541 */;
+import SearchEmpty from "SearchEmpty" /* 10576 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10580 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 fn(1074).GIFPickerResultTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
 const obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
@@ -32,15 +32,15 @@ export default noop.memo(function GIFPickerNoResults(inActionSheet) {
   const memo = noop.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
   const searchEmptySource = SearchEmpty.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
-    const intl2 = tmp4(1114).intl;
-    let stringResult = intl2.string(tmp4(1114).t.ZH4o6l);
+    const intl2 = tmp4(1115).intl;
+    let stringResult = intl2.string(tmp4(1115).t.ZH4o6l);
   } else {
-    const intl = tmp4(1114).intl;
-    stringResult = intl.string(tmp4(1114).t["5dX4UM"]);
+    const intl = tmp4(1115).intl;
+    stringResult = intl.string(tmp4(1115).t["5dX4UM"]);
   }
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6728).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6869).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

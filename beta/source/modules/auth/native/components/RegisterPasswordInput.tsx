@@ -1,17 +1,17 @@
-// Module ID: 16070
-// Function ID: 16071
+// Module ID: 16304
+// Function ID: 16305
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7044, 16043, 21, 4636, 576, 4373, 16067, 1114, 4632, 16061, 7058, 504, 4854, 6707, 4343, 7069, 7071, 2]
+// Dependencies: [109, 32, 19, 7186, 16277, 21, 4756, 576, 4492, 16301, 1115, 4752, 16295, 7200, 504, 4973, 6848, 4462, 7211, 7213, 2]
 
-// Module 16070 (RegisterPasswordInput)
+// Module 16304 (RegisterPasswordInput)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import usePasswordScore from "usePasswordScore" /* 16067 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import usePasswordScore from "usePasswordScore" /* 16301 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7044 */;
+import PhoneStore from "PhoneStore" /* 7186 */;
 
 const require = globalThis.__r;
 
@@ -25,18 +25,18 @@ function PasswordStrength(passwordScore) {
       if (0 !== password.length) {
         if (null == passwordError) {
           if (passwordScore <= usePasswordScore.PasswordScore.WEAK) {
-            const intl2 = tmp9(1114).intl;
-            let str = intl2.string(tmp9(1114).t["w/8TuV"]);
+            const intl2 = tmp9(1115).intl;
+            let str = intl2.string(tmp9(1115).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(16067).PasswordScore.MEDIUM) {
-            const intl = tmp9(1114).intl;
-            str = intl.string(tmp9(1114).t["2fmTpT"]);
+          } else if (passwordScore === tmp9(16301).PasswordScore.MEDIUM) {
+            const intl = tmp9(1115).intl;
+            str = intl.string(tmp9(1115).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(16067).PasswordScore.STRONG) {
-              const intl4 = tmp9(1114).intl;
-              str = intl4.string(tmp9(1114).t.Xraqqc);
+            if (passwordScore === tmp9(16301).PasswordScore.STRONG) {
+              const intl4 = tmp9(1115).intl;
+              str = intl4.string(tmp9(1115).t.Xraqqc);
               strong = tmp.strong;
             }
           }
@@ -47,7 +47,7 @@ function PasswordStrength(passwordScore) {
           const items = [tmp.passwordStrength, strong];
           obj.style = items;
           obj.animated = true;
-          const intl3 = tmp9(1114).intl;
+          const intl3 = tmp9(1115).intl;
           const items1 = [intl3.string(util.t["5gbdUX"]), ": ", str];
           obj.children = items1;
           return closure_1_10(Text_Text.Text, obj);
@@ -58,11 +58,11 @@ function PasswordStrength(passwordScore) {
   return null;
 }
 let closure_3 = ["password"];
-const RegistrationUIStore = fn(16043);
+const RegistrationUIStore = fn(16277);
 ({ setRegistrationErrors: closure_8, useRegistrationUIStore: closure_9 } = RegistrationUIStore);
 const jsxProd = fn(21);
 ({ jsxs: c10, jsx: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { weak: { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL }, medium: null, strong: null, passwordStrength: null, inputHint: null };
 let obj3 = { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 obj.medium = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
@@ -72,16 +72,16 @@ obj.passwordStrength = { marginTop: 4, marginBottom: 4 };
 obj.inputHint = { width: "100%" };
 let closure_13 = createStyles.createStyles(obj);
 let obj6 = { entering: null, exiting: null };
-const FadeIn = fn(4373).FadeIn;
+const FadeIn = fn(4492).FadeIn;
 obj6.entering = FadeIn.duration(300);
-const FadeOut = fn(4373).FadeOut;
+const FadeOut = fn(4492).FadeOut;
 obj6.exiting = FadeOut.duration(300);
 const obj7 = { layout: null };
-const LinearTransition = fn(4373).LinearTransition;
-const Easing = fn(4373).Easing;
+const LinearTransition = fn(4492).LinearTransition;
+const Easing = fn(4492).Easing;
 const obj5 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
-obj7.layout = LinearTransition.easing(Easing.inOut(fn(4373).Easing.quad)).duration(300);
-const easingResult = LinearTransition.easing(Easing.inOut(fn(4373).Easing.quad));
+obj7.layout = LinearTransition.easing(Easing.inOut(fn(4492).Easing.quad)).duration(300);
+const easingResult = LinearTransition.easing(Easing.inOut(fn(4492).Easing.quad));
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/auth/native/components/RegisterPasswordInput.tsx");
 

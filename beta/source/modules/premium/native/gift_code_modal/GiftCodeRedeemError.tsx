@@ -1,17 +1,17 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11716
+// Function ID: 11717
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4636, 576, 1484, 7226, 11591, 11592, 4632, 1114, 5056, 4839, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1485, 7368, 11717, 11718, 4752, 1115, 5186, 4959, 2]
 // Exports: default
 
-// Module 11590 (GiftCodeRedeemError)
+// Module 11716 (GiftCodeRedeemError)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Link from "Link" /* 1484 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
+import util from "util" /* 1115 */;
+import Link from "Link" /* 1485 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, body: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 }, header: { marginTop: 32, textAlign: "center" }, message: { marginTop: 8, textAlign: "center" }, footer: { paddingHorizontal: 24 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -31,13 +31,13 @@ export default function GiftCodeRedeemError(children) {
   const obj2 = { bottom: true, style: tmp.container, children: null };
   const obj3 = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(11591);
+    let tmp9Result = tmp9(11717);
   } else {
-    tmp9Result = tmp9(11592);
+    tmp9Result = tmp9(11718);
   }
   const items = [timestampProducer(React3, { source: tmp9Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: null };
-  const intl = tmp2(1114).intl;
+  const intl = tmp2(1115).intl;
   obj4.children = intl.formatToMarkdownString(util.t.JUvC0s, {});
   items[1] = timestampProducer(Text_Text.Text, obj4);
   items[2] = timestampProducer(Text_Text.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
@@ -45,7 +45,7 @@ export default function GiftCodeRedeemError(children) {
   const items1 = [React5(hasOwnProperty, obj3), ];
   const obj6 = { style: tmp.footer, children: null };
   const obj7 = { text: null, size: "md", onPress: null };
-  const intl2 = tmp2(1114).intl;
+  const intl2 = tmp2(1115).intl;
   obj7.text = intl2.string(util.t.cpT0Cq);
   obj7.onPress = function onPress() {
     return ModalActionCreatorsDefault.pop();

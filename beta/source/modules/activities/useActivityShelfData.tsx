@@ -1,15 +1,15 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 12293
+// Function ID: 12294
 // Name: useActivityShelfData
-// Dependencies: [19, 1371, 8982, 1956, 504, 7271, 1369, 9540, 1363, 9536, 2]
+// Dependencies: [19, 1372, 9136, 2040, 504, 7413, 1370, 9524, 1364, 9520, 2]
 // Exports: useActivityShelfData
 
-// Module 12173 (useActivityShelfData)
-import GlobalUtils from "GlobalUtils" /* 1369 */;
+// Module 12293 (useActivityShelfData)
+import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import TestModeStore from "TestModeStore" /* 8982 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import UserStore from "UserStore" /* 1372 */;
+import TestModeStore from "TestModeStore" /* 9136 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 const require = globalThis.__r;
 
@@ -78,8 +78,8 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
       if (supported_platforms == null) {
         supported_platforms = [];
       }
-      const tmp = stateFromStores(9540);
-      return supported_platforms.includes(tmp(guildId(1363).getOS()));
+      const tmp = stateFromStores(9524);
+      return supported_platforms.includes(tmp(guildId(1364).getOS()));
     });
     const found1 = found.filter((activity) => {
       const requires_age_gate = activity.activity.requires_age_gate;

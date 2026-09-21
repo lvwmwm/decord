@@ -1,13 +1,13 @@
-// Module ID: 6224
-// Function ID: 6225
+// Module ID: 6362
+// Function ID: 6363
 // Name: GemSpotIllustration
-// Dependencies: [21, 5668, 6225, 2]
+// Dependencies: [21, 5804, 6363, 2]
 // Exports: GemSpotIllustration
 
-// Module 6224 (GemSpotIllustration)
+// Module 6362 (GemSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6225 from "module_6225" /* 6225 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6363 from "module_6363" /* 6363 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GemSpotIllustration = function GemSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6225 };
+  const obj2 = { uri: _modDef6363 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

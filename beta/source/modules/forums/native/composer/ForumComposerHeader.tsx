@@ -1,17 +1,17 @@
-// Module ID: 10395
-// Function ID: 10396
+// Module ID: 10524
+// Function ID: 10525
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4636, 576, 4789, 5204, 1114, 5761, 5169, 4632, 5156, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4909, 5339, 1115, 5897, 5306, 4752, 5293, 2]
 // Exports: default
 
-// Module 10395 (ForumComposerHeader)
+// Module 10524 (ForumComposerHeader)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useChannelNameDefault from "useChannelName" /* 4789 */;
-import ForumIcon from "ForumIcon" /* 5169 */;
-import Pressables from "Pressables" /* 5204 */;
-import XSmallIcon from "XSmallIcon" /* 5761 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useChannelNameDefault from "useChannelName" /* 4909 */;
+import ForumIcon from "ForumIcon" /* 5306 */;
+import Pressables from "Pressables" /* 5339 */;
+import XSmallIcon from "XSmallIcon" /* 5897 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_7 = createStyles.createStyles((height) => {
   const obj = { headerBar: { height, flexDirection: "row", alignItems: "center" }, headerBarContent: { flexDirection: "row", alignItems: "center", flex: 1 }, headerBarText: { marginHorizontal: nativeDefault.space.PX_16 }, headerBarSeparator: null, button: null };
   const obj4 = {};
@@ -56,8 +56,8 @@ export default function ForumComposerHeader(height) {
   const items1 = [hasOwnProperty(ForumIcon.ForumIcon, { size: "sm" }), ];
   const obj4 = { style: tmp.headerBarText, children: null };
   if ("" === title) {
-    const intl2 = tmp7(1114).intl;
-    title = intl2.string(tmp7(1114).t["7EjFCk"]);
+    const intl2 = tmp7(1115).intl;
+    title = intl2.string(tmp7(1115).t["7EjFCk"]);
   }
   const items2 = [hasOwnProperty(Text_Text.Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: useChannelNameDefault(channel) })];
   obj4.children = items2;
@@ -71,12 +71,12 @@ export default function ForumComposerHeader(height) {
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: null, style: null, onPress: null, children: null };
-    const intl3 = tmp7(1114).intl;
-    obj5.accessibilityLabel = intl3.string(tmp7(1114).t.yR6HwZ);
+    const intl3 = tmp7(1115).intl;
+    obj5.accessibilityLabel = intl3.string(tmp7(1115).t.yR6HwZ);
     obj5.style = tmp.button;
     obj5.onPress = onGuidelinesPress;
-    obj5.children = tmp6(tmp7(5156).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(5204).PressableOpacity, obj5);
+    obj5.children = tmp6(tmp7(5293).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(5339).PressableOpacity, obj5);
   }
   items[2] = tmp6Result;
   items[3] = hasOwnProperty(React4, { style: tmp.headerBarSeparator });

@@ -1,20 +1,20 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12303
+// Function ID: 12304
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 4636, 576, 12184, 5668, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 12304, 5804, 2]
 // Exports: default
 
-// Module 12183 (ApplicationsImage)
+// Module 12303 (ApplicationsImage)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12184 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12304 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { appIconContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.sm + 3, position: "absolute", padding: 3 }, appIconLeftContainer: null, appIconRightContainer: null, appIcon: null };
 let obj4 = { transform: null };
 let items = [{ rotate: "-10deg" }];

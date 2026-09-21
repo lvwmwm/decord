@@ -1,53 +1,60 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17548
+// Function ID: 17549
 // Name: useControllerPIPState
-// Dependencies: [32, 19, 1956, 4652, 9640, 1957, 5500, 12406, 9635, 9641, 17148, 504, 4265, 9676, 9625, 17196, 550, 17197, 17198, 17200, 2]
+// Dependencies: [32, 19, 2040, 4772, 9313, 2041, 5636, 12526, 9315, 9314, 17500, 504, 4385, 9600, 9664, 4492, 17549, 17550, 550, 17551, 17552, 17554, 2]
 // Exports: useControllerPIPState
 
-// Module 17195 (useControllerPIPState)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4265 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9676 */;
+// Module 17548 (useControllerPIPState)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9600 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17552 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
-import FramesStore from "FramesStore" /* 9640 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import SpeakingStore from "SpeakingStore" /* 5500 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
+import FramesStore from "FramesStore" /* 9313 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SpeakingStore from "SpeakingStore" /* 5636 */;
 
 require = fn;
-const VoicePanelModes = fn(12406).VoicePanelModes;
-const ActivityPanelModes = fn(9635).ActivityPanelModes;
-const asLaunched = fn(9641).asLaunched;
+const VoicePanelModes = fn(12526).VoicePanelModes;
+const ActivityPanelModes = fn(9315).ActivityPanelModes;
+const asLaunched = fn(9314).asLaunched;
+const __initData = { code: "function useControllerPIPStateTsx1(){const{scale,pipAvoidanceSpecs,windowDimensions,safeArea}=this.__closure;return{scale:scale.get(),pipAvoidanceSpecs:pipAvoidanceSpecs.get(),windowDimensions:windowDimensions.get(),safeArea:safeArea.get()};}" };
+const __initData2 = { code: "function useControllerPIPStateTsx2(current){const{clampPIPScale,pipState,scale}=this.__closure;const newScale=clampPIPScale({scale:current.scale,width:pipState.width,containerHeight:pipState.containerHeight,showSecondaryPIP:pipState.showSecondaryPIP,windowDimensions:current.windowDimensions,safeArea:current.safeArea,pipAvoidanceSpecs:current.pipAvoidanceSpecs});if(current.scale!==newScale){scale.set(newScale);}}" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/useControllerPIPState.tsx");
 
 export const useControllerPIPState = function useControllerPIPState(channelId) {
   channelId = channelId.channelId;
-  let obj4 = channelId;
   ({ connected, focusedId } = channelId);
   const layoutManager = channelId.layoutManager;
   dependencyMap = layoutManager;
-  const mode = channelId.mode;
-  let current;
-  noop = undefined;
-  c7 = undefined;
-  const ref = noop.useRef({ id: "sa", mode: "isArray", width: false, height: "four_leaf_clover", containerHeight: "animal", showSecondaryPIP: "bamboo" });
-  const tmp2 = current(noop.useState(undefined), 2);
-  current = tmp2[0];
-  noop = tmp2[1];
-  closure_5 = noop.useRef(current);
-  const insertionEffect = noop.useInsertionEffect(() => {
-    closure_5.current = current;
+  ({ mode, windowDimensions } = channelId);
+  const pipAvoidanceSpecs = channelId.pipAvoidanceSpecs;
+  const safeArea = channelId.safeArea;
+  c11 = undefined;
+  let obj6;
+  let obj = obj6(4492);
+  const sharedValue = obj.useSharedValue(obj6(17549).getVoicePanelPIPScaleCached());
+  const ref = pipAvoidanceSpecs.useRef({ id: "sa", mode: "isArray", width: false, height: null, containerHeight: "sku", showSecondaryPIP: null, scale: sharedValue });
+  let tmp5 = windowDimensions(pipAvoidanceSpecs.useState(undefined), 2);
+  const current = tmp5[0];
+  closure_8 = tmp5[1];
+  closure_9 = pipAvoidanceSpecs.useRef(current);
+  const insertionEffect = pipAvoidanceSpecs.useInsertionEffect(() => {
+    closure_9.current = current;
   });
   closure_129_0 = channelId;
   closure_129_1 = mode;
-  const tmp7 = ref(17148)(channelId);
-  closure_129_2 = tmp7;
-  let items = [closure_5, c7, ChannelStore];
-  const items1 = [channelId, tmp7, mode];
-  const stateFromStores = obj4(504).useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(obj4);
+  const tmp9 = ref(17500)(channelId);
+  closure_129_2 = tmp9;
+  const obj2 = obj6(17549);
+  const tmp8 = ref;
+  let items = [safeArea, current, closure_8];
+  const items1 = [channelId, tmp9, mode];
+  const stateFromStores = obj6(504).useStateFromStores(items, () => {
+    const channel = ChannelStore.getChannel(obj6);
     let isVocalResult;
     if (channel != null) {
       isVocalResult = channel.isVocal();
@@ -91,44 +98,70 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
     obj = ChannelStore;
     obj3 = EmbeddedActivitiesStore;
   }, items1);
-  let tmp10 = ref(17196)(channelId);
-  const first1 = current(noop.useState(() => ref(closure_2[16])((fn) => fn(), 1000, { leading: true })), 1)[0];
+  const tmp11 = ref(17550)(channelId);
+  const first1 = windowDimensions(pipAvoidanceSpecs.useState(() => ref(closure_2[18])((fn) => fn(), 1000, { leading: true })), 1)[0];
   const items2 = [first1];
-  const layoutEffect = noop.useLayoutEffect(() => () => first1.cancel(), items2);
-  const obj2 = obj4(504);
-  let tmp5 = ref;
-  [tmp14, c7] = current(noop.useState(() => closure_2.getTargetDimensions(ref)), 2);
-  let obj3 = { connected, mode, focusedId, participantTargetDimensions: tmp14, selfHasVideo: tmp10, showSecondaryPIP: stateFromStores };
-  let tmp13 = current(noop.useState(() => closure_2.getTargetDimensions(ref)), 2);
-  ({ participant, dimensions } = ref(17197)(channelId, layoutManager, focusedId, current, { connected, mode, focusedId, participantTargetDimensions: tmp14, selfHasVideo: tmp10, showSecondaryPIP: stateFromStores }));
-  obj4 = {};
+  const layoutEffect = pipAvoidanceSpecs.useLayoutEffect(() => () => first1.cancel(), items2);
+  const obj4 = obj6(504);
+  [tmp15, c11] = windowDimensions(pipAvoidanceSpecs.useState(() => closure_2.getTargetDimensions(ref)), 2);
+  const obj5 = { connected, mode, focusedId, participantTargetDimensions: tmp15, selfHasVideo: tmp11, showSecondaryPIP: stateFromStores };
+  const tmp14 = windowDimensions(pipAvoidanceSpecs.useState(() => closure_2.getTargetDimensions(ref)), 2);
+  ({ participant, dimensions } = ref(17551)(channelId, layoutManager, focusedId, current, { connected, mode, focusedId, participantTargetDimensions: tmp15, selfHasVideo: tmp11, showSecondaryPIP: stateFromStores }));
+  obj6 = {};
   const merged = Object.assign(ref.current);
   const merged1 = Object.assign(dimensions);
   let id;
   if (participant != null) {
     id = participant.id;
   }
-  obj4.id = id;
-  obj4.showSecondaryPIP = stateFromStores;
-  const tmp15 = ref(17197)(channelId, layoutManager, focusedId, current, { connected, mode, focusedId, participantTargetDimensions: tmp14, selfHasVideo: tmp10, showSecondaryPIP: stateFromStores });
-  obj4.mode = obj4(17198).getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp10 });
-  const tmp8Result = obj4(17198);
-  let result = obj4(9625).cheapWorkletShallowEqual(obj4, ref.current);
+  obj6.id = id;
+  obj6.showSecondaryPIP = stateFromStores;
+  const tmp16 = ref(17551)(channelId, layoutManager, focusedId, current, { connected, mode, focusedId, participantTargetDimensions: tmp15, selfHasVideo: tmp11, showSecondaryPIP: stateFromStores });
+  obj6.mode = obj6(17552).getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp11 });
+  const tmpResult = obj6(17552);
+  let result = obj6(9664).cheapWorkletShallowEqual(obj6, ref.current);
   dependencyMap = !result;
-  const effect = obj.useEffect(() => {
+  const effect = obj3.useEffect(() => {
     if (closure_2) {
-      ref.current = obj4;
+      ref.current = obj6;
     }
   });
   if (result) {
-    obj4 = ref.current;
+    obj6 = ref.current;
   }
+  const tmpResult3 = obj6(9664);
+  class N {
+    constructor() {
+      obj = { scale: closure_6.get(), pipAvoidanceSpecs: pipAvoidanceSpecs.get(), windowDimensions: windowDimensions.get(), safeArea: safeArea.get() };
+      return obj;
+    }
+  }
+  N.__closure = { scale: sharedValue, pipAvoidanceSpecs, windowDimensions, safeArea };
+  N.__workletHash = 16878800414836;
+  N.__initData = __initData;
+  class B {
+    constructor(arg0) {
+      obj = closure_0(closure_2[20]);
+      obj1 = { scale: channelId.scale, width: current.width, containerHeight: current.containerHeight, showSecondaryPIP: current.showSecondaryPIP, windowDimensions: channelId.windowDimensions, safeArea: channelId.safeArea, pipAvoidanceSpecs: channelId.pipAvoidanceSpecs };
+      clampPIPScaleResult = obj.clampPIPScale(obj1);
+      if (channelId.scale !== clampPIPScaleResult) {
+        tmp2 = closure_6;
+        result = closure_6.set(clampPIPScaleResult);
+      }
+      return;
+    }
+  }
+  const tmpResult4 = obj6(4492);
+  B.__closure = { clampPIPScale: obj6(17552).clampPIPScale, pipState: obj6, scale: sharedValue };
+  B.__workletHash = 9660590378927;
+  B.__initData = __initData2;
+  const animatedReaction = tmpResult4.useAnimatedReaction(N, B);
   const items3 = [channelId, first1];
-  const effect1 = obj.useEffect(() => {
-    const items = [SpeakingStore, first1];
-    const batchedStoreListener = new obj4(closure_2[11]).BatchedStoreListener(items, () => {
+  const effect1 = obj3.useEffect(() => {
+    const items = [ref, sharedValue];
+    const batchedStoreListener = new obj6(closure_2[11]).BatchedStoreListener(items, () => {
       const tmp = (() => {
-        speakers = speakers.getSpeakers();
+        const speakers = ref.getSpeakers();
         const iter = speakers[Symbol.iterator]();
         const nextResult = iter.next();
         while (iter !== undefined) {
@@ -145,17 +178,17 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
       }
       if (tmp3) {
         if (null == ref.current) {
-          closure_4(tmp);
+          closure_8(tmp);
         } else {
-          participant(() => closure_2_4(closure_0));
+          closure_10(() => closure_2_8(closure_0));
         }
       }
     });
     batchedStoreListener.attach("pipstate-change-listeners-" + batchedStoreListener);
     return () => batchedStoreListener.detach();
   }, items3);
-  const items4 = [focusedId, layoutManager, tmp14];
-  const effect2 = obj.useEffect(() => {
+  const items4 = [focusedId, layoutManager, tmp15];
+  const effect2 = obj3.useEffect(() => {
     _undefined((safeAreaState) => {
       targetDimensions = targetDimensions.getTargetDimensions(closure_1_1);
       if (obj.cheapWorkletShallowEqual(safeAreaState, targetDimensions)) {
@@ -173,6 +206,6 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
       });
     });
   }, items4);
-  tmp5(17200)(channelId, layoutManager, focusedId);
-  return obj4;
+  tmp8(17554)(channelId, layoutManager, focusedId);
+  return obj6;
 };

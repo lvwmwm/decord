@@ -1,11 +1,11 @@
-// Module ID: 6715
-// Function ID: 6716
+// Module ID: 6856
+// Function ID: 6857
 // Name: useTextField
-// Dependencies: [32, 19, 5052, 2]
+// Dependencies: [32, 19, 5180, 2]
 // Exports: useTextField, useTextFieldState
 
-// Module 6715 (useTextField)
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5052 */;
+// Module 6856 (useTextField)
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5180 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -158,19 +158,19 @@ export const useTextField = function useTextField(onClear, ref) {
       }
     }
   }), items3);
+  const disabled = onClear.disabled;
   const obj4 = { innerRef: ref, state: obj3, inputProps: null };
   const obj5 = {};
   const merged1 = Object.assign(onClear);
   obj5.onChange = undefined;
   obj5.onChangeText = obj3.setTextValue;
-  obj5.editable = !onClear.isDisabled;
-  const isDisabled = onClear.isDisabled;
-  let focusable = !isDisabled;
-  if (!isDisabled) {
+  obj5.editable = !(undefined !== disabled && disabled);
+  let focusable = !tmp8;
+  if (!(undefined !== disabled && disabled)) {
     focusable = onClear.focusable;
   }
   obj5.focusable = focusable;
-  obj5["aria-disabled"] = onClear.isDisabled;
+  obj5["aria-disabled"] = undefined !== disabled && disabled;
   obj4.inputProps = obj5;
   return obj4;
 };

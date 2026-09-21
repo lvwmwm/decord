@@ -1,11 +1,11 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7305
+// Function ID: 7306
 // Name: useFastestListPropsEstimatedListSize
-// Dependencies: [32, 19, 1477, 2]
+// Dependencies: [32, 19, 1478, 2]
 // Exports: default
 
-// Module 7163 (useFastestListPropsEstimatedListSize)
-import useWindowDimensions from "useWindowDimensions" /* 1477 */;
+// Module 7305 (useFastestListPropsEstimatedListSize)
+import useWindowDimensions from "useWindowDimensions" /* 1478 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

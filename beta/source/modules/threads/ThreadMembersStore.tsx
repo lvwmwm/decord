@@ -1,14 +1,14 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 8012
+// Function ID: 8013
 // Name: ThreadMembersStore
-// Dependencies: [1961, 1957, 12, 504, 573, 2]
+// Dependencies: [2045, 2041, 12, 504, 573, 2]
 
-// Module 7872 (ThreadMembersStore)
+// Module 8012 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 import size from "module_2" /* 2 */;
 
 function updateFromGuild(threads) {

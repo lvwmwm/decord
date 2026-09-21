@@ -1,18 +1,18 @@
-// Module ID: 9895
-// Function ID: 9896
+// Module ID: 9853
+// Function ID: 9854
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4636, 4632, 2]
+// Dependencies: [19, 17, 21, 4756, 4752, 2]
 // Exports: default
 
-// Module 9895 (EditGuildEventStepHeader)
-import Text_Text from "Text/Text" /* 4632 */;
+// Module 9853 (EditGuildEventStepHeader)
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 8, marginBottom: 8 }, headerSubtitle: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx");

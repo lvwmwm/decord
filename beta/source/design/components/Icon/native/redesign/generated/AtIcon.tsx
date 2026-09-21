@@ -1,13 +1,13 @@
-// Module ID: 5171
-// Function ID: 5172
+// Module ID: 5308
+// Function ID: 5309
 // Name: AtIcon
-// Dependencies: [19, 21, 576, 4337, 5116, 2]
+// Dependencies: [19, 21, 576, 4456, 5246, 2]
 // Exports: AtIcon
 
-// Module 5171 (AtIcon)
+// Module 5308 (AtIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod5116 from "module_5116" /* 5116 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod5246 from "module_5246" /* 5246 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AtIcon = function AtIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5116, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5246, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

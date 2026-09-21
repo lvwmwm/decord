@@ -1,12 +1,12 @@
-// Module ID: 10464
-// Function ID: 10465
+// Module ID: 10594
+// Function ID: 10595
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [2025, 504, 1114, 2]
+// Dependencies: [2109, 504, 1115, 2]
 // Exports: default
 
-// Module 10464 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 10594 (useMaybeAddPollsMarketingEasterEggNote)
 import initialize from "initialize" /* 504 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
 
 require = fn;
 const size = fn(2);
@@ -19,9 +19,9 @@ export default function useMaybeAddPollsMarketingEasterEggNote(emojiName) {
   if (":pizza:" === emojiName) {
     formatToPlainStringResult = emojiName;
     if (tmp4) {
-      const intl = tmp(1114).intl;
+      const intl = tmp(1115).intl;
       const obj = { emojiName };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t["1knDPI"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1115).t["1knDPI"], obj);
     }
   }
   return formatToPlainStringResult;

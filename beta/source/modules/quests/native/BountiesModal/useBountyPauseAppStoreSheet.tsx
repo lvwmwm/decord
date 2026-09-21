@@ -1,19 +1,19 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15297
+// Function ID: 15298
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5525, 1074, 11626, 11623, 15106, 1109, 15104, 5530, 7830, 11633, 7820, 5532, 2]
+// Dependencies: [19, 5661, 1074, 11546, 11741, 15295, 1110, 5666, 7964, 11751, 7954, 5668, 15292, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 15112 (useBountyPauseAppStoreSheet)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import AdCreativeType from "AdCreativeType" /* 5532 */;
-import AnalyticsActions from "AnalyticsActions" /* 7820 */;
-import apexExperiment from "apexExperiment" /* 11626 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15106 */;
+// Module 15297 (useBountyPauseAppStoreSheet)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import AdCreativeType from "AdCreativeType" /* 5668 */;
+import AnalyticsActions from "AnalyticsActions" /* 7954 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15292 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15295 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5525).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5661).QuestsExperimentLocations;
 const ComponentActions = fn(1074).ComponentActions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyPauseAppStoreSheet.tsx");
@@ -23,79 +23,111 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
   const sourceQuestContent = bounty.sourceQuestContent;
   const isActive = bounty.isActive;
   const playerRef = bounty.playerRef;
+  c5 = undefined;
+  let callback;
+  let callback1;
   const getQuestImpressionId = bounty(sourceQuestContent[4]).useGetQuestImpressionId();
-  const items = [bounty.cta, isActive];
+  const BountiesMobileQuestBarExperiment = bounty(sourceQuestContent[3]).BountiesMobileQuestBarExperiment;
+  const config = BountiesMobileQuestBarExperiment.getConfig({ location: playerRef.VIDEO_MODAL_MOBILE });
+  const ctrVariant = config.ctrVariant;
+  let tmp5 = null;
+  if (config.enabled) {
+    if (ctrVariant === tmp(tmp2[3]).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+      tmp5 = ctrVariant;
+    } else {
+      tmp5 = null;
+    }
+  }
+  c5 = tmp5;
+  isActive.useRef(false);
+  isActive.useRef(null);
+  const items = [bounty.id, isActive];
   const effect = isActive.useEffect(() => {
+    closure_6.current = false;
+  }, items);
+  const items1 = [bounty.cta, tmp5, isActive];
+  const effect1 = isActive.useEffect(() => {
     let tmp = isActive;
     if (isActive) {
-      const CustomAppStoreSqueezeBackExperiment = apexExperiment.CustomAppStoreSqueezeBackExperiment;
-      const obj = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
-      const config = CustomAppStoreSqueezeBackExperiment.getConfig(obj);
-      tmp = config.enabled && tmp7 === apexExperiment.BountiesCtrExperiment1Variant.OPEN_APP_SHEET_ON_PAUSE;
-      const tmp6 = config.enabled && tmp7 === apexExperiment.BountiesCtrExperiment1Variant.OPEN_APP_SHEET_ON_PAUSE;
+      tmp = null != c5;
     }
     if (tmp) {
       const result = QuestCustomAppStoreOverlayUtils.prefetchCustomAppStoreOverlayContent(bounty.cta);
     }
-  }, items);
-  isActive.useRef(null);
-  const callback = isActive.useCallback(() => {
-    if (null != ref.current) {
+  }, items1);
+  callback = isActive.useCallback(() => {
+    if (null != ref2.current) {
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       ComponentDispatch.unsubscribe(ComponentActions.QUEST_APP_STORE_OVERLAY_FINISHED, tmp.current);
       tmp.current = null;
     }
   }, []);
-  const items1 = [bounty.id, callback];
-  const effect1 = isActive.useEffect(() => () => callback(), items1);
-  let obj2 = { onPausedForAppStore: null };
-  const items2 = [bounty, getQuestImpressionId, isActive, playerRef, sourceQuestContent, callback];
-  obj2.onPausedForAppStore = isActive.useCallback((arg0) => {
-    if (isActive) {
-      if (arg0 === bounty(sourceQuestContent[7]).PlaybackTriggerSource.USER_INTERACTION) {
-        const CustomAppStoreSqueezeBackExperiment = tmp2(tmp3[3]).CustomAppStoreSqueezeBackExperiment;
-        const obj2 = { location: playerRef.VIDEO_MODAL_MOBILE };
-        const config = CustomAppStoreSqueezeBackExperiment.getConfig(obj2);
-        if (tmp4) {
-          let trackingCtx = { content: tmp2(tmp3[8]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: tmp2(tmp3[9]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
-          const directAppStoreLinkFromCta = tmp2(tmp3[10]).getDirectAppStoreLinkFromCta(trackingCtx.cta);
-          const tmp2Result = tmp2(tmp3[10]);
-          let url = directAppStoreLinkFromCta;
-          if (directAppStoreLinkFromCta == null) {
-            url = tmp7.cta.url;
-          }
-          const obj3 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null };
-          const tmp2Result3 = tmp2(tmp3[10]);
-          obj3.inlineStoreParams = tmp2(tmp3[10]).getInlineStoreParamsFromCta(trackingCtx.cta);
-          obj3.trackOverlayEvent = function trackOverlayEvent(event, inlineStoreAppId, overlayVariant, timeSpentMs, overlaySurface) {
-            trackingCtx = AnalyticsActions;
-            return trackingCtx.trackAdContentAppStoreOverlayEvent({ adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface });
-          };
-          const tmp2Result4 = tmp2(tmp3[10]);
-          tmp2Result3.openAppStoreOrUrl(obj3).then((result) => {
-            if (result) {
-              let current = ref.current;
-              if (current != null) {
-                current.pause();
-              }
-              function handleFinished() {
-                closure_1_6();
-                const current = ref.current;
-                if (current != null) {
-                  current.play();
-                }
-              }
-              callback();
-              const ComponentDispatch = bounty(sourceQuestContent[6]).ComponentDispatch;
-              const subscription = ComponentDispatch.subscribe(getQuestImpressionId.QUEST_APP_STORE_OVERLAY_FINISHED, handleFinished);
-              closure_1_5.current = handleFinished;
-            }
-          });
-          const openAppStoreOrUrlResult = tmp2Result3.openAppStoreOrUrl(obj3);
-        }
-        tmp4 = config.enabled && tmp13 === tmp2(tmp3[3]).BountiesCtrExperiment1Variant.OPEN_APP_SHEET_ON_PAUSE;
-      }
+  const items2 = [callback];
+  const effect2 = isActive.useEffect(() => () => callback(), items2);
+  const items3 = [bounty, getQuestImpressionId, playerRef, sourceQuestContent, callback];
+  callback1 = isActive.useCallback(() => {
+    let trackingCtx = { content: bounty(sourceQuestContent[7]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: bounty(sourceQuestContent[8]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
+    const directAppStoreLinkFromCta = bounty(sourceQuestContent[9]).getDirectAppStoreLinkFromCta(trackingCtx.cta);
+    const obj2 = bounty(sourceQuestContent[9]);
+    const tmp = bounty;
+    const tmp2 = sourceQuestContent;
+    let url = directAppStoreLinkFromCta;
+    if (directAppStoreLinkFromCta == null) {
+      url = tmp3.cta.url;
     }
-  }, items2);
-  return obj2;
+    const obj4 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null };
+    const obj3 = bounty(sourceQuestContent[9]);
+    obj4.inlineStoreParams = tmp(tmp2[9]).getInlineStoreParamsFromCta(trackingCtx.cta);
+    obj4.trackOverlayEvent = function trackOverlayEvent(event, inlineStoreAppId, overlayVariant, timeSpentMs, overlaySurface) {
+      trackingCtx = AnalyticsActions;
+      return trackingCtx.trackAdContentAppStoreOverlayEvent({ adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface });
+    };
+    obj4.trackOverlaySurfaceClick = function trackOverlaySurfaceClick(overlaySurface) {
+      trackingCtx = AnalyticsActions;
+      return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
+    };
+    const tmpResult = tmp(tmp2[9]);
+    return obj3.openAppStoreOrUrl(obj4).then((result) => {
+      if (result) {
+        const current = ref.current;
+        if (current != null) {
+          current.pause();
+        }
+        function handleFinished() {
+          closure_1_8();
+        }
+        callback();
+        const ComponentDispatch = bounty(sourceQuestContent[6]).ComponentDispatch;
+        const subscription = ComponentDispatch.subscribe(getQuestImpressionId.QUEST_APP_STORE_OVERLAY_FINISHED, handleFinished);
+        ref2.current = handleFinished;
+        return true;
+      } else {
+        return false;
+      }
+    });
+  }, items3);
+  let obj3 = { handleVideoPausedForAppStore: null };
+  const items4 = [tmp5, isActive, callback1];
+  obj3.handleVideoPausedForAppStore = isActive.useCallback((arg0) => {
+    if (isActive) {
+      if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
+        if (null != c5) {
+          if (tmp4 === tmp2(11546).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (!ref.current) {
+              tmp8.current = true;
+              callback1().then((result) => {
+                if (!result) {
+                  ref.current = false;
+                }
+              });
+            }
+          } else {
+            callback1();
+          }
+        }
+      }
+      tmp2 = require;
+    }
+  }, items4);
+  return obj3;
 };

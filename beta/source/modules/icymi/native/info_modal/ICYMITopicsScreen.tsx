@@ -1,33 +1,33 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16815
+// Function ID: 16816
 // Name: ICYMITopicsScreen
-// Dependencies: [5, 32, 19, 17, 16567, 16574, 21, 9352, 11015, 5169, 16575, 10041, 5156, 15346, 12058, 9565, 16576, 10481, 16578, 10483, 11380, 4636, 576, 4355, 5056, 1611, 1483, 16580, 1896, 8469, 4335, 1114, 504, 8477, 4632, 2]
+// Dependencies: [5, 32, 19, 17, 16809, 16816, 21, 9348, 11145, 5306, 16817, 10167, 5293, 15532, 12179, 9549, 16818, 10611, 16820, 10613, 11509, 4756, 576, 4474, 5186, 1612, 1484, 16822, 1980, 8622, 4454, 1115, 504, 8630, 4752, 2]
 // Exports: default
 
-// Module 16573 (ICYMITopicsScreen)
+// Module 16815 (ICYMITopicsScreen)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import BookCheckIcon from "BookCheckIcon" /* 5156 */;
-import ForumIcon from "ForumIcon" /* 5169 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 8477 */;
-import GameControllerIcon from "GameControllerIcon" /* 9352 */;
-import RobotIcon from "RobotIcon" /* 9565 */;
-import MusicIcon from "MusicIcon" /* 10041 */;
-import FoodIcon from "FoodIcon" /* 10481 */;
-import BicycleIcon from "BicycleIcon" /* 10483 */;
-import TvIcon from "TvIcon" /* 11015 */;
-import PencilSparkleIcon from "PencilSparkleIcon" /* 11380 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 12058 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 15346 */;
-import ScienceIcon from "ScienceIcon" /* 16575 */;
-import MedalIcon from "MedalIcon" /* 16576 */;
-import PaintbrushThinIcon from "PaintbrushThinIcon" /* 16578 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import BookCheckIcon from "BookCheckIcon" /* 5293 */;
+import ForumIcon from "ForumIcon" /* 5306 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 8630 */;
+import GameControllerIcon from "GameControllerIcon" /* 9348 */;
+import RobotIcon from "RobotIcon" /* 9549 */;
+import MusicIcon from "MusicIcon" /* 10167 */;
+import FoodIcon from "FoodIcon" /* 10611 */;
+import BicycleIcon from "BicycleIcon" /* 10613 */;
+import TvIcon from "TvIcon" /* 11145 */;
+import PencilSparkleIcon from "PencilSparkleIcon" /* 11509 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 12179 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 15532 */;
+import ScienceIcon from "ScienceIcon" /* 16817 */;
+import MedalIcon from "MedalIcon" /* 16818 */;
+import PaintbrushThinIcon from "PaintbrushThinIcon" /* 16820 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 16567 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 16809 */;
 
 require = fn;
 function WordTopic(categoryid) {
@@ -82,10 +82,10 @@ function WordTopic(categoryid) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7, StyleSheet } = get_ActivityIndicator);
-const GuildPrimaryCategory = fn(16574).GuildPrimaryCategory;
+const GuildPrimaryCategory = fn(16816).GuildPrimaryCategory;
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, footer: null, title: null, subtitle: null, separator: null, topicsContainer: null, scrollContentContainer: null };
 const rect = { position: "absolute", bottom: 0, left: nativeDefault.space.PX_24, right: nativeDefault.space.PX_24, paddingBottom: nativeDefault.space.PX_8 };
 obj2.footer = rect;
@@ -110,7 +110,7 @@ export default function ICYMITopicsScreen() {
   const tmp6 = _slicedToArray(noop.useState(false), 2);
   dependencyMap = tmp6[1];
   const set = new Set();
-  const navigation = first(1483).useNavigation();
+  const navigation = first(1484).useNavigation();
   const items = [navigation, first];
   const callback = noop.useCallback(navigation(function*(arg0, value) {
     if (c3 === 2) {
@@ -187,7 +187,7 @@ export default function ICYMITopicsScreen() {
       }
     }
   }), items);
-  let obj = first(1483);
+  let obj = first(1484);
   const items1 = [GuildDiscoveryCategoryStore];
   const stateFromStoresArray = first(504).useStateFromStoresArray(items1, () => allCategories.getAllCategories());
   const items2 = [first];
@@ -208,13 +208,13 @@ export default function ICYMITopicsScreen() {
     }
   }, items2);
   let obj3 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
-  let intl = first(1114).intl;
-  obj3.children = intl.string(first(1114).t.Y5d99L);
-  const children = [closure_10(first(4632).Text, obj3), , , , ];
+  let intl = first(1115).intl;
+  obj3.children = intl.string(first(1115).t.Y5d99L);
+  const children = [closure_10(first(4752).Text, obj3), , , , ];
   const obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.subtitle, children: null };
-  const intl2 = first(1114).intl;
-  obj4.children = intl2.string(first(1114).t.MGZsfv);
-  children[1] = closure_10(first(4632).Text, obj4);
+  const intl2 = first(1115).intl;
+  obj4.children = intl2.string(first(1115).t.MGZsfv);
+  children[1] = closure_10(first(4752).Text, obj4);
   children[2] = closure_10(closure_6, { style: tmp.separator });
   let obj6 = { showsVerticalScrollIndicator: false, style: tmp.container, contentContainerStyle: tmp.scrollContentContainer, contentInset: { bottom: 72 + bottom }, children: null };
   let obj2 = first(504);
@@ -232,10 +232,10 @@ export default function ICYMITopicsScreen() {
     const items4 = [obj10, tmp.footer];
     obj9.style = items4;
     const obj11 = { loading: tmp6[0], size: "lg", text: null, onPress: null };
-    const intl3 = tmp7(1114).intl;
-    obj11.text = intl3.string(tmp7(1114).t.PDTjLN);
+    const intl3 = tmp7(1115).intl;
+    obj11.text = intl3.string(tmp7(1115).t.PDTjLN);
     obj11.onPress = callback;
-    obj9.children = tmp12(tmp7(5056).Button, obj11);
+    obj9.children = tmp12(tmp7(5186).Button, obj11);
     tmp12Result = tmp12(tmp13, obj9);
   }
   children[4] = tmp12Result;

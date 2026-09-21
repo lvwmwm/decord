@@ -1,14 +1,14 @@
-// Module ID: 14983
-// Function ID: 14984
+// Module ID: 15171
+// Function ID: 15172
 // Name: useSelectedTeenUser
-// Dependencies: [1371, 7643, 7640, 8769, 563, 2]
+// Dependencies: [1372, 7782, 7779, 8924, 563, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 14983 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8769 */;
-import UserStore from "UserStore" /* 1371 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7643 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
+// Module 15171 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8924 */;
+import UserStore from "UserStore" /* 1372 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7782 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
 
 const require = globalThis.__r;
 

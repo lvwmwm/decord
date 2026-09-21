@@ -1,14 +1,14 @@
-// Module ID: 13886
-// Function ID: 13887
+// Module ID: 14065
+// Function ID: 14066
 // Name: OngoingCallTimer
-// Dependencies: [19, 5359, 21, 504, 11, 13887, 2]
+// Dependencies: [19, 5495, 21, 504, 11, 14066, 2]
 // Exports: default
 
-// Module 13886 (OngoingCallTimer)
+// Module 14065 (OngoingCallTimer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import TimerDefault from "Timer" /* 13887 */;
+import TimerDefault from "Timer" /* 14066 */;
 import noop from "module_19" /* 19 */;
-import CallStore from "CallStore" /* 5359 */;
+import CallStore from "CallStore" /* 5495 */;
 
 const require = fn;
 const jsx = fn(21).jsx;

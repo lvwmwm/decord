@@ -1,21 +1,21 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9419
+// Function ID: 9420
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7408, 502, 1957, 4977, 4857, 7789, 1113, 1074, 4629, 7372, 7784, 7377, 1114, 9435, 11, 1270, 7879, 9436, 7786, 1384, 5210, 9439, 7869, 4816, 7559, 4980, 573, 4488, 1090, 7855, 9524, 2]
+// Dependencies: [32, 5, 19, 7547, 502, 2041, 5105, 4976, 7923, 1114, 1074, 4749, 7511, 7918, 7516, 1115, 9420, 11, 1271, 8019, 9421, 7920, 1385, 5345, 9423, 8009, 4936, 7698, 5108, 573, 4607, 1091, 7995, 9508, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 9434 (ThreadCreationHooks)
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import ThreadHooks from "ThreadHooks" /* 7372 */;
-import MessageParserDefault from "MessageParser" /* 7784 */;
+// Module 9419 (ThreadCreationHooks)
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import ThreadHooks from "ThreadHooks" /* 7511 */;
+import MessageParserDefault from "MessageParser" /* 7918 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7408 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7547 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import DraftStore from "DraftStore" /* 4977 */;
-import MessageStore from "MessageStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import DraftStore from "DraftStore" /* 5105 */;
+import MessageStore from "MessageStore" /* 4976 */;
 
 require = fn;
 function getIsPrivate(threadSettingsDraft, privateThreadMode) {
@@ -86,8 +86,8 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
     }
     const tmp17 = importDefault;
     const str4 = MessageParserDefault.unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7377);
-    let str7 = tmp17(7377)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
+    const tmp17Result = tmp17(7516);
+    let str7 = tmp17(7516)(str4.split("\n")[0], true).replace(/^[ #-]+/, "");
     const items = [];
     const match = str7.match(/(?:\s|[!@#$%^&*()_\-+={}[\]:";'<>?,./])+/);
     while (null != match) {
@@ -414,13 +414,13 @@ let closure_27 = async function _createThread_(arg0, arg1, arg2, arg3) {
     return value;
   })();
 };
-const DraftType = fn(4977).DraftType;
-const SlowmodeType = fn(7789).SlowmodeType;
-const ThreadConstants = fn(1113);
+const DraftType = fn(5105).DraftType;
+const SlowmodeType = fn(7923).SlowmodeType;
+const ThreadConstants = fn(1114);
 ({ FORUM_POST_CREATION_AUTOMOD_ERRORS: map1, FORUM_POST_CREATION_UPLOAD_ERRORS: closure_14 } = ThreadConstants);
 const Constants = fn(1074);
 ({ AbortCodes: closure_15, AnalyticEvents: closure_16, ChannelTypes: closure_17, Endpoints: closure_18, LoggingInviteTypes: closure_19, MAX_MESSAGES_PER_CHANNEL: closure_20, MessageFlags: closure_21 } = Constants);
-const MessageSendLocation = fn(4629).MessageSendLocation;
+const MessageSendLocation = fn(4749).MessageSendLocation;
 const PrivateThreadMode = { Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled", PrivateOnly: 3, [3]: "PrivateOnly" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/threads/ThreadCreationHooks.tsx");
@@ -573,16 +573,16 @@ export const useCreateThreadCommon = function useCreateThreadCommon(parentChanne
                 }
                 if (null != items1) {
                   if (items1.length > 0) {
-                    const obj4 = closure_1_1(7559);
+                    const obj4 = closure_1_1(7698);
                     id = id.id;
                     const obj3 = { location: constants.THREAD_CREATION };
-                    let sendStickersResult = obj4.sendStickers(id, items1, closure_1_1(7784).parse(id, arg1), obj3);
-                    const obj5 = closure_1_1(7784);
+                    let sendStickersResult = obj4.sendStickers(id, items1, closure_1_1(7918).parse(id, arg1), obj3);
+                    const obj5 = closure_1_1(7918);
                   }
                   return sendStickersResult;
                 }
-                obj = closure_1_1(7559);
-                sendStickersResult = obj.sendMessage(id.id, closure_1_1(7784).parse(id, arg1), undefined, { location: constants.THREAD_CREATION });
+                obj = closure_1_1(7698);
+                sendStickersResult = obj.sendMessage(id.id, closure_1_1(7918).parse(id, arg1), undefined, { location: constants.THREAD_CREATION });
               })(closure_132_8, closure_132_0, closure_132_1, closure_132_2, c7);
               const obj10 = parentMessageId(threadSettings[19]);
             }

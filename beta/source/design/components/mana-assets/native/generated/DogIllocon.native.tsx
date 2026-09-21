@@ -1,13 +1,13 @@
-// Module ID: 6030
-// Function ID: 6031
+// Module ID: 6168
+// Function ID: 6169
 // Name: DogIllocon
-// Dependencies: [21, 5668, 6031, 2]
+// Dependencies: [21, 5804, 6169, 2]
 // Exports: DogIllocon
 
-// Module 6030 (DogIllocon)
+// Module 6168 (DogIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6031 from "module_6031" /* 6031 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6169 from "module_6169" /* 6169 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const DogIllocon = function DogIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6031 };
+  const obj2 = { uri: _modDef6169 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

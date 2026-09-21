@@ -1,12 +1,12 @@
-// Module ID: 13153
-// Function ID: 13154
+// Module ID: 13312
+// Function ID: 13313
 // Name: getActivityPlatformDisplayName
-// Dependencies: [1074, 1114, 13152, 2]
+// Dependencies: [1074, 1115, 13311, 2]
 // Exports: default
 
-// Module 13153 (getActivityPlatformDisplayName)
+// Module 13312 (getActivityPlatformDisplayName)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1114 */;
+import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

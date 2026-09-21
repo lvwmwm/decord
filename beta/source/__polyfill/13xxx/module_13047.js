@@ -1,54 +1,35 @@
 // Module ID: 13047
 // Function ID: 13048
-// Dependencies: []
-// Exports: makeFifoCache
+// Dependencies: [13048, 13051]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 13047
+import _mod13048 from "module_13048" /* 13048 */;
+import _mod13051 from "module_13051" /* 13051 */;
 
-export function makeFifoCache(arg0) {
-  closure_0 = arg0;
-  closure_1 = [];
-  dependencyMap = {};
-  return {
-    add(arg0, arg1) {
-      if (closure_1.length >= closure_0) {
-        do {
-          if (undefined !== closure_1.shift()) {
-            delete tmp[tmp2];
-          }
-        } while (closure_1.length >= closure_0);
-      }
-      if (dependencyMap[arg0]) {
-        const self = this;
-        this.delete(arg0);
-      }
-      closure_1.push(arg0);
-      dependencyMap[arg0] = arg1;
-    },
-    clear() {
-      closure_2 = {};
-      closure_1 = [];
-    },
-    get(arg0) {
-      return dependencyMap[arg0];
-    },
-    size() {
-      return closure_1.length;
-    },
-    delete(arg0) {
-      if (dependencyMap[arg0]) {
-        delete tmp[tmp2];
-        let num = 0;
-        if (0 < closure_1.length) {
-          while (closure_1[num] !== arg0) {
-            num = num + 1;
-          }
-          closure_1.splice(num, 1);
-        }
-        return true;
+require = arg1;
+const dependencyMap = arg6;
+function instrumentError() {
+  onerror = _mod13051.GLOBAL_OBJ.onerror;
+  _mod13051.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    _mod13048.triggerHandlers("error", { column, error, line, msg, url });
+    if (!onerror) {
+      return tmp2;
+    } else {
+      const self = this;
+      const apply = onerror.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
       } else {
-        return false;
+        applyArgumentsResult = apply(self, arguments);
       }
     }
   };
+  _mod13051.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
 }
+let onerror = null;
+
+export const addGlobalErrorInstrumentationHandler = function addGlobalErrorInstrumentationHandler(arg0) {
+  _mod13048.addHandler("error", arg0);
+  _mod13048.maybeInstrument("error", instrumentError);
+};

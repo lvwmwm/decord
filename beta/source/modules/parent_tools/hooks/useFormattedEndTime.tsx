@@ -1,13 +1,13 @@
-// Module ID: 17409
-// Function ID: 17410
+// Module ID: 17713
+// Function ID: 17714
 // Name: useFormattedEndTime
-// Dependencies: [1371, 1114, 504, 2]
+// Dependencies: [1372, 1115, 504, 2]
 // Exports: default
 
-// Module 17409 (useFormattedEndTime)
+// Module 17713 (useFormattedEndTime)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

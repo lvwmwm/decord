@@ -1,21 +1,21 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 17200
+// Function ID: 17201
 // Name: AutocompleteScreenUtils
-// Dependencies: [2021, 4285, 1371, 12472, 7982, 1074, 1114, 11821, 4579, 9561, 10767, 10240, 10238, 5168, 12661, 10242, 11959, 9565, 16840, 12473, 4481, 2]
+// Dependencies: [2105, 4405, 1372, 12593, 8122, 1074, 1115, 11941, 4698, 9545, 10898, 10368, 10366, 5305, 12782, 10370, 12079, 9549, 17201, 12594, 4600, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 16839 (AutocompleteScreenUtils)
-import util from "util" /* 1114 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11821 */;
-import SearchUtils from "SearchUtils" /* 12473 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
-import SearchQueryStore from "SearchQueryStore" /* 12472 */;
+// Module 17200 (AutocompleteScreenUtils)
+import util from "util" /* 1115 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11941 */;
+import SearchUtils from "SearchUtils" /* 12594 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
+import SearchQueryStore from "SearchQueryStore" /* 12593 */;
 
 require = fn;
-const SearchListItemTypes = fn(7982).SearchListItemTypes;
+const SearchListItemTypes = fn(8122).SearchListItemTypes;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/AutocompleteScreenUtils.tsx");
@@ -41,37 +41,37 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   if (intl.string(util.t.nrpA5E) === text) {
     return ForwardingIconDefault;
   } else {
-    const intl3 = tmp(1114).intl;
-    if (intl3.string(tmp(1114).t.ZNR2fi) === text) {
-      return tmp(4579).LinkIcon;
+    const intl3 = tmp(1115).intl;
+    if (intl3.string(tmp(1115).t.ZNR2fi) === text) {
+      return tmp(4698).LinkIcon;
     } else {
-      const intl4 = tmp(1114).intl;
-      if (intl4.string(tmp(1114).t["20uQR3"]) === text) {
-        return tmp(9561).EmbedIcon;
+      const intl4 = tmp(1115).intl;
+      if (intl4.string(tmp(1115).t["20uQR3"]) === text) {
+        return tmp(9545).EmbedIcon;
       } else {
-        const intl5 = tmp(1114).intl;
-        if (intl5.string(tmp(1114).t.L4lxyE) === text) {
-          return tmp(10767).PollsIcon;
+        const intl5 = tmp(1115).intl;
+        if (intl5.string(tmp(1115).t.L4lxyE) === text) {
+          return tmp(10898).PollsIcon;
         } else {
-          const intl6 = tmp(1114).intl;
-          if (intl6.string(tmp(1114).t["AV/v6i"]) === text) {
-            return tmp(10240).AttachmentIcon;
+          const intl6 = tmp(1115).intl;
+          if (intl6.string(tmp(1115).t["AV/v6i"]) === text) {
+            return tmp(10368).AttachmentIcon;
           } else {
-            const intl7 = tmp(1114).intl;
-            if (intl7.string(tmp(1114).t.XM9XGP) === text) {
-              return tmp(10238).VideoIcon;
+            const intl7 = tmp(1115).intl;
+            if (intl7.string(tmp(1115).t.XM9XGP) === text) {
+              return tmp(10366).VideoIcon;
             } else {
-              const intl8 = tmp(1114).intl;
-              if (intl8.string(tmp(1114).t.TNLcpx) === text) {
-                return tmp(5168).ImageIcon;
+              const intl8 = tmp(1115).intl;
+              if (intl8.string(tmp(1115).t.TNLcpx) === text) {
+                return tmp(5305).ImageIcon;
               } else {
-                const intl9 = tmp(1114).intl;
-                if (intl9.string(tmp(1114).t.F8Wf0e) === text) {
-                  return tmp(12661).SoundboardIcon;
+                const intl9 = tmp(1115).intl;
+                if (intl9.string(tmp(1115).t.F8Wf0e) === text) {
+                  return tmp(12782).SoundboardIcon;
                 } else {
-                  const intl2 = tmp(1114).intl;
-                  if (intl2.string(tmp(1114).t.PJgX2h) === text) {
-                    return tmp(10242).StickerIcon;
+                  const intl2 = tmp(1115).intl;
+                  if (intl2.string(tmp(1115).t.PJgX2h) === text) {
+                    return tmp(10370).StickerIcon;
                   }
                 }
               }
@@ -85,15 +85,15 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = util.intl;
   if (intl.string(util.t.tPZo4p) === text) {
-    return tmp(11959).UserIcon;
+    return tmp(12079).UserIcon;
   } else {
-    const intl3 = tmp(1114).intl;
-    if (intl3.string(tmp(1114).t.JL7sRS) === text) {
-      return tmp(9565).RobotIcon;
+    const intl3 = tmp(1115).intl;
+    if (intl3.string(tmp(1115).t.JL7sRS) === text) {
+      return tmp(9549).RobotIcon;
     } else {
-      const intl2 = tmp(1114).intl;
-      if (intl2.string(tmp(1114).t.WjkIKU) === text) {
-        return tmp(16840).WebhookIcon;
+      const intl2 = tmp(1115).intl;
+      if (intl2.string(tmp(1115).t.WjkIKU) === text) {
+        return tmp(17201).WebhookIcon;
       }
     }
   }

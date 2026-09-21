@@ -1,21 +1,21 @@
-// Module ID: 15305
-// Function ID: 15306
+// Module ID: 15491
+// Function ID: 15492
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4636, 576, 5204, 4632, 1176, 15306, 2]
+// Dependencies: [19, 21, 4756, 576, 5339, 4752, 1177, 15492, 2]
 // Exports: default
 
-// Module 15305 (NavigateForwardButton)
+// Module 15491 (NavigateForwardButton)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Pressables from "Pressables" /* 5204 */;
-import _modDef15306 from "module_15306" /* 15306 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Pressables from "Pressables" /* 5339 */;
+import _modDef15492 from "module_15492" /* 15492 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { container: { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 }, text: { flexGrow: 1 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -25,7 +25,7 @@ export default function NavigateForwardButton(arg0) {
   ({ onPress, text } = arg0);
   const tmp = closure_5();
   const obj = { style: tmp.container, onPress, children: null };
-  const items = [React3(Text_Text.Text, { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", children: text }), React3(native.Icon, { source: _modDef15306 })];
+  const items = [React3(Text_Text.Text, { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", children: text }), React3(native.Icon, { source: _modDef15492 })];
   obj.children = items;
   return React4(Pressables.PressableHighlight, obj);
 };

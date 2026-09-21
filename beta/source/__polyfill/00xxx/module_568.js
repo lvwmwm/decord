@@ -358,7 +358,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "c\u00E2mera", type: "cinema", listener: "entretenimento" };
+          obj = { fired: false, wrapFn: "a", target: "password", type: "default", listener: true };
           obj.target = this;
           obj.type = global;
           obj.listener = require;
@@ -383,7 +383,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "c\u00E2mera", type: "cinema", listener: "entretenimento" };
+          obj = { fired: false, wrapFn: "a", target: "password", type: "default", listener: true };
           obj.target = this;
           obj.type = global;
           obj.listener = require;

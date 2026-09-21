@@ -1,24 +1,24 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 11970
+// Function ID: 11971
 // Name: formatPollMessageChatData
-// Dependencies: [4628, 5540, 1957, 2021, 4857, 1371, 11564, 1074, 1085, 4821, 4289, 4293, 1396, 8880, 4281, 4263, 11851, 1114, 7863, 11853, 1363, 11854, 11855, 2]
+// Dependencies: [4748, 5676, 2041, 2105, 4976, 1372, 11690, 1074, 1085, 4941, 4409, 4413, 1397, 9034, 4401, 4383, 11971, 1115, 8003, 11973, 1364, 11974, 11975, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 11850 (formatPollMessageChatData)
-import util from "util" /* 1114 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4263 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4281 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4293 */;
-import _mod4821 from "module_4821" /* 4821 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8880 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import EmojiStore from "EmojiStore" /* 5540 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import MessageStore from "MessageStore" /* 4857 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 11970 (formatPollMessageChatData)
+import util from "util" /* 1115 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4383 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4401 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4413 */;
+import _mod4941 from "module_4941" /* 4941 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9034 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import MessageStore from "MessageStore" /* 4976 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function reactionForId(reactions, combined) {
@@ -168,7 +168,7 @@ function computeBasicPollChatData(message, arg1) {
     return obj6;
   }
 }
-const getPollState = fn(11564).getPollState;
+const getPollState = fn(11690).getPollState;
 const Constants = fn(1074);
 ({ MessageStates: c10, EMPTY_STRING_SNOWFLAKE_ID } = Constants);
 const ThemeTypes = fn(1085).ThemeTypes;
@@ -285,7 +285,7 @@ export default function formatPollMessageChatData(poll, arg1) {
             tmp6 = flag;
           }
           let tmp7 = isExpired;
-          const match = _mod4821.match({ didSelfVote: tmp6, hasVoted, isExpired, isSelected: hasItem, isLeader: num >= closure_14 && 0 !== num, showResults });
+          const match = _mod4941.match({ didSelfVote: tmp6, hasVoted, isExpired, isSelected: hasItem, isLeader: num >= closure_14 && 0 !== num, showResults });
           obj = { didSelfVote: tmp6, hasVoted, isExpired, isSelected: hasItem, isLeader: num >= closure_14 && 0 !== num, showResults };
           const withResult = match.with({ isExpired: true, isLeader: true, didSelfVote: true }, () => "victorSelected");
           const withResult1 = match.with({ isExpired: true, isLeader: true, didSelfVote: true }, () => "victorSelected").with({ isExpired: true, isLeader: true, didSelfVote: false }, () => "victorNotSelected");
@@ -326,9 +326,9 @@ export default function formatPollMessageChatData(poll, arg1) {
             obj2.shouldAnimateTransition = tmp20;
             const _Math = Math;
             obj2.votesPercentage = Math.round(100 * num2);
-            const match1 = tmp8(4821).match(layout_type);
-            const str2 = tmp8(4821);
-            obj2.votes = match1.with(tmp8(11853).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => "(" + num.toLocaleString() + ")").otherwise(() => {
+            const match1 = tmp8(4941).match(layout_type);
+            const str2 = tmp8(4941);
+            obj2.votes = match1.with(tmp8(11973).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => "(" + num.toLocaleString() + ")").otherwise(() => {
               const intl = flag(layout_type[17]).intl;
               return intl.formatToPlainString(flag(layout_type[17]).t.XRkuof, { count: num });
             });

@@ -1,13 +1,13 @@
-// Module ID: 15451
-// Function ID: 15452
+// Module ID: 15638
+// Function ID: 15639
 // Name: EmojiCowboyHatFaceIcon
-// Dependencies: [19, 21, 576, 4337, 15452, 2]
+// Dependencies: [19, 21, 576, 4456, 15639, 2]
 // Exports: EmojiCowboyHatFaceIcon
 
-// Module 15451 (EmojiCowboyHatFaceIcon)
+// Module 15638 (EmojiCowboyHatFaceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15452 from "module_15452" /* 15452 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod15639 from "module_15639" /* 15639 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiCowboyHatFaceIcon = function EmojiCowboyHatFaceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15452, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15639, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

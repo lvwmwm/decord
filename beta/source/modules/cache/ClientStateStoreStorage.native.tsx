@@ -1,11 +1,11 @@
-// Module ID: 14282
-// Function ID: 14283
+// Module ID: 14473
+// Function ID: 14474
 // Name: ClientStateStoreStorage
-// Dependencies: [13727, 2]
+// Dependencies: [13902, 2]
 // Exports: setClientState
 
-// Module 14282 (ClientStateStoreStorage)
-import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13727 */;
+// Module 14473 (ClientStateStoreStorage)
+import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13902 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/cache/ClientStateStoreStorage.native.tsx");

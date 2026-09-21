@@ -1,11 +1,11 @@
-// Module ID: 8696
-// Function ID: 8697
+// Module ID: 8850
+// Function ID: 8851
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8696 (AgeVerificationExpressiveModalEverywhereExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 8850 (AgeVerificationExpressiveModalEverywhereExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2025-11-age-verification-expressive-everywhere", defaultConfig: { enabled: false }, variations: null };

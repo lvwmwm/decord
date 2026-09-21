@@ -1,17 +1,17 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8947
+// Function ID: 8948
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 1916, 1074, 1240, 1384, 8800, 5193, 8801, 38, 2]
+// Dependencies: [19, 2000, 1074, 1241, 1385, 8948, 5328, 8949, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
 
-// Module 8799 (useShouldOpenGameProfileModal)
+// Module 8947 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import FlagUtilsAll from "FlagUtils" /* 1384 */;
-import utils from "utils" /* 5193 */;
-import GameFlags from "GameFlags" /* 8800 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import FlagUtilsAll from "FlagUtils" /* 1385 */;
+import utils from "utils" /* 5328 */;
+import GameFlags from "GameFlags" /* 8948 */;
 import noop from "module_19" /* 19 */;
-import GameStore from "GameStore" /* 1916 */;
+import GameStore from "GameStore" /* 2000 */;
 
 const require = globalThis.__r;
 
@@ -75,13 +75,13 @@ export default function useShouldOpenGameProfileModal(applicationId) {
         }
         tmp19Result = utils;
       }
-      track = track(1240).track;
+      track = track(1241).track;
       GAME_PROFILE_ENTRY_POINT_AVAILABLE = AnalyticEvents.GAME_PROFILE_ENTRY_POINT_AVAILABLE;
       obj = { game_profile_available: flag, application_id: gameRecord.id, rejection_reason: tmp11, source };
       track(GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj);
       flag = true;
       ref.current = true;
-      const trackResult = track(1240);
+      const trackResult = track(1241);
     }
   }, items);
   return { shouldOpenGameProfile, gameId: gameId2.gameId };

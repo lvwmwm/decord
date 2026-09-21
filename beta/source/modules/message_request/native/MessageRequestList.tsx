@@ -1,14 +1,14 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17344
+// Function ID: 17345
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1074, 21, 4636, 576, 1114, 4335, 5678, 4647, 4839, 12575, 1240, 5204, 16991, 1176, 9696, 15013, 8716, 1611, 16996, 16998, 12573, 17001, 1363, 4632, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 1115, 4454, 5814, 4767, 4959, 12696, 1241, 5339, 17345, 1177, 9621, 15201, 8871, 1612, 17350, 17352, 12694, 17355, 1364, 4752, 2]
 // Exports: default
 
-// Module 16990 (MessageRequestList)
+// Module 17344 (MessageRequestList)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import transitionToChannel from "transitionToChannel" /* 4647 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import transitionToChannel from "transitionToChannel" /* 4767 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -153,7 +153,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { sectionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 }, rowContainer: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 }, actionContainer: { flexDirection: "row", alignItems: "flex-start", height: "100%" }, actionButton: null, acceptButton: null, acceptButtonRestricted: null, pressableRow: null, activityIndicator: null, list: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 obj2.actionButton = size;

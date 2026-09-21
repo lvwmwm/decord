@@ -1,15 +1,15 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16723
+// Function ID: 16724
 // Name: YouBarNameplate
-// Dependencies: [19, 4628, 15179, 21, 4338, 576, 15265, 504, 4373, 5055, 8945, 2]
+// Dependencies: [19, 4748, 15365, 21, 4457, 576, 15451, 504, 4492, 5185, 9099, 2]
 
-// Module 16481 (YouBarNameplate)
-import spring from "spring" /* 5055 */;
+// Module 16723 (YouBarNameplate)
+import spring from "spring" /* 5185 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
 require = fn;
-const YOU_BAR_SPRING_CONFIG = fn(15179).YOU_BAR_SPRING_CONFIG;
+const YOU_BAR_SPRING_CONFIG = fn(15365).YOU_BAR_SPRING_CONFIG;
 const jsx = fn(21).jsx;
 const __initData = { code: "function YouBarNameplateTsx1(){const{withSpring,isQuestRendered,questDockAnimatedBorderRadius,borderRadius,YOU_BAR_SPRING_CONFIG}=this.__closure;return{borderTopRightRadius:withSpring(isQuestRendered?questDockAnimatedBorderRadius.get():borderRadius,YOU_BAR_SPRING_CONFIG)};}" };
 const size = fn(2);
@@ -20,10 +20,10 @@ export default noop.memo(function YouBarNameplate(isQuestRendered) {
   const avatarSize = isQuestRendered.avatarSize;
   let token;
   ({ nameplate, barWidth } = isQuestRendered);
-  token = isQuestRendered(4338).useToken(token(576).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(15265)(token);
+  token = isQuestRendered(4457).useToken(token(576).modules.mobile.YOU_BAR_BORDER_RADIUS);
+  const tmp4 = token(15451)(token);
   dependencyMap = tmp4;
-  let obj = isQuestRendered(4338);
+  let obj = isQuestRendered(4457);
   const tmp2 = token;
   const items = [AccessibilityStore];
   const stateFromStores = isQuestRendered(504).useStateFromStores(items, () => AccessibilityStore.animateYouBarNameplate);
@@ -36,8 +36,8 @@ export default noop.memo(function YouBarNameplate(isQuestRendered) {
     }
     return { borderTopRightRadius: spring.withSpring(value, YOU_BAR_SPRING_CONFIG) };
   };
-  const obj3 = isQuestRendered(4373);
-  fn.__closure = { withSpring: isQuestRendered(5055).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  const obj3 = isQuestRendered(4492);
+  fn.__closure = { withSpring: isQuestRendered(5185).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   fn.__workletHash = 17156260157738;
   fn.__initData = __initData;
   const animatedStyle = obj3.useAnimatedStyle(fn);
@@ -54,11 +54,11 @@ export default noop.memo(function YouBarNameplate(isQuestRendered) {
   obj5.style = items1;
   const obj6 = { nameplate, isFocused: true, animate: null };
   let str = stateFromStores;
-  const obj4 = { withSpring: isQuestRendered(5055).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
+  const obj4 = { withSpring: isQuestRendered(5185).withSpring, isQuestRendered, questDockAnimatedBorderRadius: tmp4, borderRadius: token, YOU_BAR_SPRING_CONFIG };
   if (str) {
     str = "always";
   }
   obj6.animate = str;
-  obj5.children = jsx(tmp2(8945), { nameplate, isFocused: true, animate: null });
-  return jsx(token(4373).View, { style: null, pointerEvents: "none", children: null });
+  obj5.children = jsx(tmp2(9099), { nameplate, isFocused: true, animate: null });
+  return jsx(token(4492).View, { style: null, pointerEvents: "none", children: null });
 });

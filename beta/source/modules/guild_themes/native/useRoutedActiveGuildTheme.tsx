@@ -1,14 +1,14 @@
-// Module ID: 4493
-// Function ID: 4494
+// Module ID: 4612
+// Function ID: 4613
 // Name: useRoutedActiveGuildTheme
-// Dependencies: [32, 19, 1074, 4494, 4495, 4520, 4521, 2]
+// Dependencies: [32, 19, 1074, 4613, 4614, 4639, 4640, 2]
 // Exports: default
 
-// Module 4493 (useRoutedActiveGuildTheme)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4494 */;
-import RootNavigationRef from "RootNavigationRef" /* 4495 */;
-import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4520 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 4521 */;
+// Module 4612 (useRoutedActiveGuildTheme)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
+import RootNavigationRef from "RootNavigationRef" /* 4614 */;
+import GuildThemeGuildIdOverrideContextDefault from "GuildThemeGuildIdOverrideContext" /* 4639 */;
+import GuildThemeResolver from "GuildThemeResolver" /* 4640 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

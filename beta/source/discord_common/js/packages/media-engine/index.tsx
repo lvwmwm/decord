@@ -1,15 +1,15 @@
-// Module ID: 4691
-// Function ID: 4692
+// Module ID: 4811
+// Function ID: 4812
 // Name: BaseConnectionEvent
-// Dependencies: [4661, 4692, 4763, 2, 4703, 4764]
+// Dependencies: [4781, 4812, 4883, 2, 4823, 4884]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 4691 (BaseConnectionEvent)
-import destroy from "destroy" /* 4692 */;
-import BaseConnection from "BaseConnection" /* 4703 */;
-import MediaEngineDummy from "MediaEngineDummy" /* 4763 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 4764 */;
-import Constants from "Constants" /* 4661 */;
+// Module 4811 (BaseConnectionEvent)
+import destroy from "destroy" /* 4812 */;
+import BaseConnection from "BaseConnection" /* 4823 */;
+import MediaEngineDummy from "MediaEngineDummy" /* 4883 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 4884 */;
+import Constants from "Constants" /* 4781 */;
 import size from "module_2" /* 2 */;
 
 const constants = Constants.MediaEngineImplementations;

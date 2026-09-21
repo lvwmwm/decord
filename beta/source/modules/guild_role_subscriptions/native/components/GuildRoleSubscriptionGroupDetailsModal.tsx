@@ -1,22 +1,22 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 18187
+// Function ID: 18188
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 17846, 15289, 1074, 21, 4636, 13986, 17841, 9946, 1114, 17847, 4632, 15301, 8716, 17850, 2]
+// Dependencies: [32, 19, 17, 18188, 15475, 1074, 21, 4756, 14166, 18183, 10072, 1115, 18189, 4752, 15487, 8871, 18192, 2]
 // Exports: default
 
-// Module 17845 (GuildRoleSubscriptionGroupDetailsModal)
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Form from "Form" /* 8716 */;
-import FormHeaderDefault from "FormHeader" /* 9946 */;
-import FormStylesDefault from "FormStyles" /* 13986 */;
-import FormSeparatorDefault from "FormSeparator" /* 15301 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17841 */;
-import FormImagePicker from "FormImagePicker" /* 17847 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17850 */;
+// Module 18187 (GuildRoleSubscriptionGroupDetailsModal)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Form from "Form" /* 8871 */;
+import FormHeaderDefault from "FormHeader" /* 10072 */;
+import FormStylesDefault from "FormStyles" /* 14166 */;
+import FormSeparatorDefault from "FormSeparator" /* 15487 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18183 */;
+import FormImagePicker from "FormImagePicker" /* 18189 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18192 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17846 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18188 */;
 
 require = fn;
 class Content {
@@ -61,12 +61,12 @@ class Content {
   }
 }
 const View = fn(17).View;
-const GuildRoleSubscriptionsConstants = fn(15289);
+const GuildRoleSubscriptionsConstants = fn(15475);
 ({ GuildRoleSubscriptionsTierScenes: metroRequire, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: closure_7 } = GuildRoleSubscriptionsConstants);
 const UPLOAD_BANNER_SIZE = fn(1074).UPLOAD_BANNER_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_12 = createStyles.createStyles({ coverPhoto: { height: 114, width: "100%" }, coverDescription: { marginTop: 16 }, paddedContainer: { paddingHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionGroupDetailsModal.tsx");

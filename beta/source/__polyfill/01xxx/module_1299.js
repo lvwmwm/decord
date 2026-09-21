@@ -4,4 +4,4 @@
 
 // Module 1299
 
-export default EvalError;
+export default Error;

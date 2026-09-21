@@ -4,16 +4,9 @@
 // Exports: default
 
 // Module 3888
+let closure_0 = { lastWeek: "'viime' eeee 'klo' p", yesterday: "'eilen klo' p", today: "'t\u00E4n\u00E4\u00E4n klo' p", tomorrow: "'huomenna klo' p", nextWeek: "'ensi' eeee 'klo' p", other: "P" };
 
-export default function getTimezoneOffsetInMilliseconds(getFullYear) {
-  const fullYear = getFullYear.getFullYear();
-  const month = getFullYear.getMonth();
-  const hours = getFullYear.getHours();
-  const minutes = getFullYear.getMinutes();
-  const seconds = getFullYear.getSeconds();
-  const date1 = new Date(Date.UTC(fullYear, month, getFullYear.getDate(), hours, minutes, seconds, getFullYear.getMilliseconds()));
-  date1.setUTCFullYear(getFullYear.getFullYear());
-  const time = getFullYear.getTime();
-  return time - date1.getTime();
+export default function formatRelative(arg0, arg1, arg2, arg3) {
+  return closure_0[arg0];
 };
 export default exports.default;

@@ -1,22 +1,22 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 8935
+// Function ID: 8936
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 4636, 576, 7082, 8357, 7732, 8781, 7725, 8797, 4632, 1114, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 7224, 8510, 7866, 8936, 7859, 8945, 4752, 1115, 2]
 // Exports: default
 
-// Module 8780 (InAppReportsWidgetPreviewElement)
+// Module 8935 (InAppReportsWidgetPreviewElement)
 import nativeDefault from "native" /* 576 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7732 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8357 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 8781 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7866 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8510 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 8936 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: { backgroundColor: nativeDefault.colors.USER_PROFILE_CONTAINER_BACKGROUND } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -41,16 +41,16 @@ export default function WidgetPreview(arg0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: null };
         const items1 = [tmp5.card, tmp.card];
         obj3.cardStyle = items1;
-        tmp6 = React4(tmp2(8797).WidgetSection, obj3);
+        tmp6 = React4(tmp2(8945).WidgetSection, obj3);
       }
     }
-    tmp2Result = tmp2(7725);
+    tmp2Result = tmp2(7859);
   }
   if (null === tmp6) {
     return null;
   } else {
     const obj4 = { style: tmp.container, children: null };
-    let Text = tmp2(4632).Text;
+    let Text = tmp2(4752).Text;
     if (null != typeConsolidationEyebrow.style) {
       const items2 = [tmp.title, typeConsolidationEyebrow.style];
       let title = items2;
@@ -59,13 +59,13 @@ export default function WidgetPreview(arg0) {
     }
     let obj5 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: null };
     if (null != typeConsolidationEyebrow.style) {
-      const intl2 = tmp2(1114).intl;
-      SpsnDY = tmp2(1114).t.SpsnDY;
+      const intl2 = tmp2(1115).intl;
+      SpsnDY = tmp2(1115).t.SpsnDY;
       let stringResult = intl2.string(SpsnDY);
     } else {
-      const intl = tmp2(1114).intl;
-      stringResult = intl.string(tmp2(1114).t.SpsnDY).toUpperCase();
-      const str = intl.string(tmp2(1114).t.SpsnDY);
+      const intl = tmp2(1115).intl;
+      stringResult = intl.string(tmp2(1115).t.SpsnDY).toUpperCase();
+      const str = intl.string(tmp2(1115).t.SpsnDY);
     }
     obj5.children = stringResult;
     Text = React4(Text, obj5);

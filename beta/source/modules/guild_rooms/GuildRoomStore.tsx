@@ -1,16 +1,16 @@
-// Module ID: 4794
-// Function ID: 4795
+// Module ID: 4914
+// Function ID: 4915
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 4659, 2011, 4795, 504, 573, 2]
+// Dependencies: [109, 502, 4779, 2095, 4915, 504, 573, 2]
 
-// Module 4794 (GuildRoomStore)
+// Module 4914 (GuildRoomStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 4795 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 4915 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 function resolveCreatingNotes(roomId, objects) {

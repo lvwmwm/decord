@@ -1,9 +1,11 @@
 // Module ID: 8820
 // Function ID: 8821
-// Dependencies: [1120]
+// Dependencies: [65]
 
 // Module 8820
-import registerAsset from "module_1120" /* 1120 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGRadialGradient", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, fx: true, fy: true, cx: true, cy: true, rx: true, ry: true, gradient: true, gradientUnits: true, gradientTransform: true } };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8c94b907df8972f3dc35ed38a2375c9f", name: "EpicGamesNeutralIcon", type: "png" });
+export default module_65.get("RNSVGRadialGradient", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

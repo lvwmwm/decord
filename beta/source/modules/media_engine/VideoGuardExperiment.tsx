@@ -1,10 +1,10 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 13568
+// Function ID: 13569
 // Name: VideoGuardExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 13395 (VideoGuardExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 13568 (VideoGuardExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-video-guard", kind: "user", defaultConfig: { videoEnabled: true }, variations: null };

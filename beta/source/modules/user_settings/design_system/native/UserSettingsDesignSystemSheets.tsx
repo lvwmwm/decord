@@ -1,22 +1,22 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 16113
+// Function ID: 16114
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1074, 21, 4636, 7300, 7252, 9848, 7301, 5054, 6707, 7302, 4603, 5056, 1114, 10359, 5915, 5688, 4632, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 7442, 7394, 9803, 7443, 5184, 6848, 7444, 4723, 5186, 1115, 10488, 6053, 5824, 4752, 2]
 // Exports: default
 
-// Module 15890 (UserSettingsDesignSystemSheets)
-import util from "util" /* 1114 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import Card from "Card" /* 5688 */;
-import _modDef5915 from "module_5915" /* 5915 */;
-import TextInput from "TextInput" /* 6707 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7252 */;
-import ActionSheet from "ActionSheet" /* 7300 */;
-import ActionSheetRow from "ActionSheetRow" /* 7302 */;
-import PromoSheet from "PromoSheet" /* 10359 */;
+// Module 16113 (UserSettingsDesignSystemSheets)
+import util from "util" /* 1115 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import Card from "Card" /* 5824 */;
+import _modDef6053 from "module_6053" /* 6053 */;
+import TextInput from "TextInput" /* 6848 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
+import ActionSheet from "ActionSheet" /* 7442 */;
+import ActionSheetRow from "ActionSheetRow" /* 7444 */;
+import PromoSheet from "PromoSheet" /* 10488 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -42,13 +42,13 @@ function DemoActionSheet() {
   let tmp14Result = first;
   if (first) {
     const obj2 = { onPress: NOOP, label: tmp12 };
-    tmp14Result = tmp14(tmp15(9848).ActionSheetHeaderPressableText, obj2);
+    tmp14Result = tmp14(tmp15(9803).ActionSheetHeaderPressableText, obj2);
   }
   obj.leading = tmp14Result;
   let tmp14Result2 = tmp2;
   if (tmp2) {
     const obj3 = { onPress: NOOP };
-    tmp14Result2 = tmp14(tmp15(7301).ActionSheetCloseButton, obj3);
+    tmp14Result2 = tmp14(tmp15(7443).ActionSheetCloseButton, obj3);
   }
   const obj4 = { header: React5(BottomSheetTitleHeader.BottomSheetTitleHeader, obj), children: null };
   obj.trailing = tmp14Result2;
@@ -61,7 +61,7 @@ function DemoActionSheet() {
       onChange: tmp10,
       label: "Subtitle",
       maxLength: 100,
-      isClearable: true,
+      clearable: true,
       onClear() {
         return tmp10("");
       }
@@ -77,8 +77,8 @@ function DemoActionSheet() {
     value: tmp12,
     onChange: tmp13,
     label: "Leading",
-    isDisabled: !first,
-    isClearable: true,
+    disabled: !first,
+    clearable: true,
     onClear() {
       return tmp13("");
     }
@@ -103,7 +103,7 @@ function DemoPromoSheet() {
   const obj2 = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
   const obj3 = { type: "image", src: null, aspectRatio: "16/9" };
   const tmp = React5(components_Button_Button.Button, obj);
-  obj3.src = { uri: _modDef5915 };
+  obj3.src = { uri: _modDef6053 };
   obj2.graphic = obj3;
   obj2.actions = tmp;
   return React5(PromoSheet.PromoSheet, obj2);
@@ -112,7 +112,7 @@ const ScrollView = fn(17).ScrollView;
 const NOOP = fn(1074).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemSheets.tsx");

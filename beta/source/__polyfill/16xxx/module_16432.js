@@ -1,9 +1,9 @@
 // Module ID: 16432
 // Function ID: 16433
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 16432
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "a6bdad4cfb0f8a1449a3c7f935d8448d", name: "ic_guild_video_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [1, 2, 3], hash: "bd1486d1560b353007e677fb6cc6f8f2", name: "ic_upload", type: "png" });

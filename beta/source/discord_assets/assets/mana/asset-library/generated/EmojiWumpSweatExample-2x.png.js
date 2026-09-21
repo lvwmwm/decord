@@ -1,11 +1,11 @@
-// Module ID: 6065
-// Function ID: 6066
+// Module ID: 6203
+// Function ID: 6204
 // Dependencies: [2]
 
-// Module 6065
+// Module 6203
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiWumpSweatExample-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/e1bfa757c5ed879ccc1ed0499d78eb04ca67599a848ea20f3d3a7c8a234746a2.png";
-export const metadata = { fileBytes: 15738 };
+export default "https://cdn.discordapp.com/assets/content/7546247608ec34bc70f5694dbcf55006245e2e86adb18b677b46f8f8d6f3c0f2.png";
+export const metadata = { fileBytes: 15914 };

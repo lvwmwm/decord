@@ -1,11 +1,11 @@
-// Module ID: 8910
-// Function ID: 8911
+// Module ID: 9064
+// Function ID: 9065
 // Name: useGetOrFetchStorefrontPrices
-// Dependencies: [19, 8911, 2]
+// Dependencies: [19, 9065, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 8910 (useGetOrFetchStorefrontPrices)
-import StorefrontActionCreators from "StorefrontActionCreators" /* 8911 */;
+// Module 9064 (useGetOrFetchStorefrontPrices)
+import StorefrontActionCreators from "StorefrontActionCreators" /* 9065 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

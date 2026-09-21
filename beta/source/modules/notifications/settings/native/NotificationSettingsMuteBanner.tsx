@@ -1,21 +1,21 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10406
+// Function ID: 10407
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4636, 576, 4632, 5056, 1114, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4752, 5186, 1115, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 10279 (NotificationSettingsMuteBanner)
+// Module 10406 (NotificationSettingsMuteBanner)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { card: { padding: 16, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.lg + 8, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);

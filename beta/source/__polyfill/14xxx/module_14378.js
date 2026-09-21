@@ -1,28 +1,9 @@
 // Module ID: 14378
 // Function ID: 14379
-// Dependencies: [14289, 14379]
-// Exports: getSupportedUnits
+// Dependencies: [1121]
 
 // Module 14378
-const require = globalThis.__r;
+import registerAsset from "module_1121" /* 1121 */;
 
-const require = arg1;
-const dependencyMap = arg6;
 
-export const getSupportedUnits = function getSupportedUnits(locale) {
-  _require = locale;
-  const units = require("module_14379").units;
-  return units.filter((item) => (function isSupported(unit, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
-    }
-    try {
-      const obj = { style: "unit", unit };
-      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-      return memoizedNumberFormat.resolvedOptions().unit === unit;
-    } catch (err) {
-      return false;
-    }
-  })(item, closure_0));
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "b452f17f7046013be582dffe125561c0", name: "StatusIdle", type: "png" });

@@ -1,27 +1,27 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13526
+// Function ID: 13527
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 1975, 1957, 1979, 4275, 4285, 1371, 1074, 7838, 8049, 1396, 1363, 1114, 5109, 4789, 2]
+// Dependencies: [32, 17, 2059, 2041, 2063, 4395, 4405, 1372, 1074, 7978, 8203, 1397, 1364, 1115, 5239, 4909, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 13356 (VoiceChannelLinkEmbed)
-import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import useChannelName from "useChannelName" /* 4789 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5109 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8049 */;
+// Module 13526 (VoiceChannelLinkEmbed)
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import useChannelName from "useChannelName" /* 4909 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8203 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const Image = fn(17).Image;
-const getGuildAcronym = fn(1975).getGuildAcronym;
+const getGuildAcronym = fn(2059).getGuildAcronym;
 const Permissions = fn(1074).Permissions;
-const InviteTypes = fn(7838).InviteTypes;
+const InviteTypes = fn(7978).InviteTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
 
@@ -50,8 +50,8 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
                 icon1 = guild.icon;
               }
               obj.icon = icon1;
-              const guildIconURL = tmp4(1396).getGuildIconURL(obj);
-              const tmp4Result = tmp4(1396);
+              const guildIconURL = tmp4(1397).getGuildIconURL(obj);
+              const tmp4Result = tmp4(1397);
             } else if (null != guild) {
               const tmp8 = getGuildAcronym(guild);
             }
@@ -66,9 +66,9 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj2.headerText = str;
             obj2.headerColor = colors.headerColor;
             obj5 = PlatformUtils;
-            const intl = tmp16(1114).intl;
+            const intl = tmp16(1115).intl;
             const string = intl.string;
-            const t = tmp16(1114).t;
+            const t = tmp16(1115).t;
             if (isGuildStageVoiceResult) {
               let stringResult = string(t["7vb2cc"]);
             } else {
@@ -99,7 +99,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj2.acceptLabelColor = colors.acceptLabelGreenColor;
             obj2.embedCanBeTapped = true;
             obj2.canBeAccepted = true;
-            const intl2 = tmp16(1114).intl;
+            const intl2 = tmp16(1115).intl;
             const obj3 = { guildName: guild.name };
             obj2.channelName = intl2.formatToPlainString(util.t["2wimj5"], obj3);
             obj2.subtitle = "";

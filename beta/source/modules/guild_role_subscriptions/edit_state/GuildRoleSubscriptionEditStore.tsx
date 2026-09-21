@@ -1,9 +1,9 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15498
+// Function ID: 15499
 // Name: GuildRoleSubscriptionEditStore
-// Dependencies: [560, 1247, 2]
+// Dependencies: [560, 1248, 2]
 
-// Module 15312 (GuildRoleSubscriptionEditStore)
+// Module 15498 (GuildRoleSubscriptionEditStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ export const useEditStateStore = module_560.create((arg0) => {
     setListing(arg0, arg1) {
       closure_0 = arg0;
       closure_1 = arg1;
-      return closure_0(1247).batchUpdates(() => closure_0((listings) => {
+      return closure_0(1248).batchUpdates(() => closure_0((listings) => {
         const obj = { listings: null };
         const obj2 = {};
         const merged = Object.assign(listings.listings);
@@ -30,7 +30,7 @@ export const useEditStateStore = module_560.create((arg0) => {
     setEditStateIdsForGroup(arg0, arg1) {
       closure_0 = arg0;
       closure_1 = arg1;
-      return closure_0(1247).batchUpdates(() => {
+      return closure_0(1248).batchUpdates(() => {
         closure_0((editStateIdsForGroup) => {
           const obj = { editStateIdsForGroup: null };
           const obj2 = {};

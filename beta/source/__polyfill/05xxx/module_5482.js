@@ -1,9 +1,46 @@
 // Module ID: 5482
 // Function ID: 5483
-// Dependencies: [1120]
+// Dependencies: [5430]
 
 // Module 5482
-import registerAsset from "module_1120" /* 1120 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
+let closure_2 = [6, 7, 99];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 128, height: 128, scales: [1], hash: "43cb25124fca194b4a6cf3676f39faf2", name: "img_meta_quest_light", type: "png" });
+export default {
+  get(buffer, Compression, arg2) {
+    let prop = Compression;
+    if (Compression) {
+      let hasItem = undefined === Compression.Compression;
+      if (!hasItem) {
+        hasItem = closure_2.includes(Compression.Compression.value);
+      }
+      prop = hasItem;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormat;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormat.value;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormatLength;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormatLength.value;
+    }
+    if (prop) {
+      Compression.type = "image/jpeg";
+      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
+      buffer = buffer.buffer;
+      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
+      require("module_5430").deferInit(Compression, "base64", function() {
+        return require("module_5430").getBase64Image(this.image);
+      });
+      const obj = require("module_5430");
+    }
+    return Compression;
+  }
+};

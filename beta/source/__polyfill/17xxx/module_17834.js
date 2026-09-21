@@ -1,9 +1,9 @@
 // Module ID: 17834
 // Function ID: 17835
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 17834
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images", width: 375, height: 187, scales: [2, 3], hash: "a089de21c15f6e03808f87d787c28c08", name: "role_subscription_settings_hero", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "633af95b6b643ea3b8457ce65540e36c", name: "ic_switch_accounts", type: "png" });

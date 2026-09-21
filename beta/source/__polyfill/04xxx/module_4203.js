@@ -1,28 +1,31 @@
 // Module ID: 4203
 // Function ID: 4204
-// Dependencies: []
+// Dependencies: [4195, 3846]
+// Exports: default
 
 // Module 4203
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: null, locale: "es" };
-    const obj3 = { conjunction: null, disjunction: null, unit: null };
-    const obj4 = { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, short: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } };
-    obj3.conjunction = obj4;
-    const obj5 = { long: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, narrow: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, short: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" } };
-    obj3.disjunction = obj5;
-    const obj6 = { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } };
-    obj3.unit = obj6;
-    obj2.data = obj3;
-    ListFormat.__addLocaleData(obj2);
-  }
+import module_4195_mod from "module_4195" /* 4195 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
+
+let module_4195 = module_4195_mod;
+if (!module_4195) {
+  const obj = { default: module_4195 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_4195;
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-if (!prop) {
-  prop = [];
+module_4195 = tmp3;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
+} else {
+  tmp5 = requiredArgs;
 }
-globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: { conjunction: { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, short: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, narrow: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, short: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } } }, locale: "es" };
-prop.push(obj);
+requiredArgs = tmp5;
+
+export default function isThisMinute(arg0) {
+  requiredArgs.default(1, arguments);
+  return module_4195.default(Date.now(), arg0);
+};
+export default exports.default;

@@ -1,11 +1,11 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9670
+// Function ID: 9671
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 9632, 9633, 9634, 2]
+// Dependencies: [19, 9612, 9671, 9593, 2]
 // Exports: default
 
-// Module 9631 (useIsActivitiesAvailableInShelf)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9634 */;
+// Module 9670 (useIsActivitiesAvailableInShelf)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9593 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

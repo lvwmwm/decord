@@ -1,15 +1,15 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12689
+// Function ID: 12690
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 1916, 8805, 1074, 504, 8803, 8809, 2]
+// Dependencies: [19, 2000, 8953, 1074, 504, 8951, 8957, 2]
 // Exports: default
 
-// Module 12568 (usePendingGameProfileReturn)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8803 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
+// Module 12689 (usePendingGameProfileReturn)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8951 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
 import noop from "module_19" /* 19 */;
-import GameStore from "GameStore" /* 1916 */;
-import GameProfileStore from "GameProfileStore" /* 8805 */;
+import GameStore from "GameStore" /* 2000 */;
+import GameProfileStore from "GameProfileStore" /* 8953 */;
 
 require = fn;
 const AVATAR_SIZE = fn(1074).AVATAR_SIZE;

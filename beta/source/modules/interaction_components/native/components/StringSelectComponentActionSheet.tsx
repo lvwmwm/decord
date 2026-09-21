@@ -1,21 +1,21 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 12075
+// Function ID: 12076
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4636, 576, 8236, 1894, 4603, 11956, 7233, 4632, 1114, 2]
+// Dependencies: [32, 19, 21, 4756, 576, 8388, 1978, 4723, 12076, 7375, 4752, 1115, 2]
 // Exports: default
 
-// Module 11955 (StringSelectComponentActionSheet)
+// Module 12075 (StringSelectComponentActionSheet)
 import nativeDefault from "native" /* 576 */;
-import Server from "Server" /* 1894 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import EmojiDefault from "Emoji" /* 7233 */;
+import Server from "Server" /* 1978 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import EmojiDefault from "Emoji" /* 7375 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 }, emojiWrapper: { flexShrink: 0, borderRadius: nativeDefault.radii.xs, overflow: "hidden" }, textEmoji: { fontSize: 16, color: "#000000" }, fastImageEmoji: { width: 24, height: 24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -30,8 +30,8 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8236);
-  let tmp3 = first(noop.useState(new Set(selectionActionComponent(8236).getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
+  let obj = selectionActionComponent(8388);
+  let tmp3 = first(noop.useState(new Set(selectionActionComponent(8388).getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
   first = tmp3[0];
   noop = tmp3[1];
   let items = [selectionActionComponent];
@@ -115,7 +115,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId: null,
     allowEmpty: null
   };
-  let set = new Set(selectionActionComponent(8236).getInitialStringSelectOptions(selectionActionComponent, containerId));
+  let set = new Set(selectionActionComponent(8388).getInitialStringSelectOptions(selectionActionComponent, containerId));
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;
@@ -141,5 +141,5 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   };
   obj2.channelId = channelId;
   obj2.allowEmpty = allowEmpty;
-  return tmp9(onSubmit(11956), obj2);
+  return tmp9(onSubmit(12076), obj2);
 };

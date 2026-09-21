@@ -1,14 +1,14 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 13814
+// Function ID: 13815
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 7527, 7340, 1373, 7512, 7343, 1363, 7337, 4309, 504, 2]
+// Dependencies: [19, 7666, 7482, 1374, 7651, 7485, 1364, 7479, 4429, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 13640 (usePremiumTier2DeltaPriceString)
-import BillingUtils from "BillingUtils" /* 4309 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7512 */;
+// Module 13814 (usePremiumTier2DeltaPriceString)
+import BillingUtils from "BillingUtils" /* 4429 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7651 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 const require = globalThis.__r;
 
@@ -20,9 +20,9 @@ function getViewerProductId(subscription) {
     try {
       const productIdFromSubscription = PremiumBundledPlansUtils.getProductIdFromSubscription(subscription, false);
       try {
-        const productIdFromSubscription1 = tmp3(7512).getProductIdFromSubscription(subscription, true);
-        const tmp8 = tmp3(7343).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-        const tmp10 = tmp3(7343).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        const productIdFromSubscription1 = tmp3(7651).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(7485).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(7485).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
         if (null != tmp8) {
           if (null != tmp10) {
             if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
@@ -32,7 +32,7 @@ function getViewerProductId(subscription) {
           }
         }
         tmp11 = productIdFromSubscription;
-        const tmp3Result = tmp3(7512);
+        const tmp3Result = tmp3(7651);
       } catch (err) {
         return tmp2;
       }
@@ -41,8 +41,8 @@ function getViewerProductId(subscription) {
     }
   }
 }
-const useNativeCheckoutStore = fn(7527).useNativeCheckoutStore;
-const PremiumTypes = fn(1373).PremiumTypes;
+const useNativeCheckoutStore = fn(7666).useNativeCheckoutStore;
+const PremiumTypes = fn(1374).PremiumTypes;
 const priceString = { priceString: null, failure: null };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/native/hooks/usePremiumTier2DeltaPriceString.tsx");
@@ -72,7 +72,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(7343).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(7485).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === plan.basePlanId && tmp11.numPremiumGuild < plan.numPremiumGuild;
         const tmp12 = null != tmp11 && tmp11.basePlanId === plan.basePlanId && tmp11.numPremiumGuild < plan.numPremiumGuild;
@@ -83,7 +83,7 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
     if (!tmp7) {
       if (null != currencyCode) {
         if (null != stateFromStores) {
-          const platformName = tmp4(1363).getPlatformName();
+          const platformName = tmp4(1364).getPlatformName();
           if (currencyCode.currencyCode !== stateFromStores.currencyCode) {
             let obj3 = { priceString: null, failure: null };
             const obj4 = { kind: "currency_mismatch", platform: platformName, productId: plan.productId, currencyCode: currencyCode.currencyCode };
@@ -98,24 +98,24 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
                   result = diff / 100;
                 }
                 const obj5 = { priceString: null, failure: null };
-                tmp4Result7 = tmp4(1363);
-                obj5.priceString = tmp4(7337).formatPrice(result, currencyCode.currencyCode, { convertToMajorUnits: false });
+                tmp4Result7 = tmp4(1364);
+                obj5.priceString = tmp4(7479).formatPrice(result, currencyCode.currencyCode, { convertToMajorUnits: false });
                 obj6 = obj5;
-                const tmp4Result8 = tmp4(7337);
+                const tmp4Result8 = tmp4(7479);
               }
             }
             obj6 = { priceString: null, failure: null };
             const obj7 = { kind: "delta_out_of_range", platform: platformName, productId: plan.productId, currencyCode: currencyCode.currencyCode };
             obj6.failure = obj7;
           }
-          const tmp4Result = tmp4(1363);
+          const tmp4Result = tmp4(1364);
         }
       }
       obj6 = priceString;
     }
     if (null == checkoutContext) {
     } else {
-      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(tmp4(7512).getSubscriptionItemsForProduct(plan.productId));
+      const availablePlanForItems = checkoutContext.getAvailablePlanForItems(tmp4(7651).getSubscriptionItemsForProduct(plan.productId));
       if (null == availablePlanForItems) {
       } else {
         const addOnPrice = availablePlanForItems.getAddOnPrice();
@@ -123,12 +123,12 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
           if (addOnPrice.majorUnits > 0) {
             let tmp17 = null;
             if (null != tmp3) {
-              tmp17 = tmp4(7343).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
+              tmp17 = tmp4(7485).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
             }
             if (null != tmp3) {
               if (null != tmp17) {
                 if (0 !== tmp17.numPremiumGuild) {
-                  const availablePlanForItems1 = checkoutContext.getAvailablePlanForItems(tmp4(7512).getSubscriptionItemsForProduct(tmp3));
+                  const availablePlanForItems1 = checkoutContext.getAvailablePlanForItems(tmp4(7651).getSubscriptionItemsForProduct(tmp3));
                   let addOnPrice1;
                   if (availablePlanForItems1 != null) {
                     addOnPrice1 = availablePlanForItems1.getAddOnPrice();
@@ -136,20 +136,20 @@ export const usePremiumTier2DeltaPriceString = function usePremiumTier2DeltaPric
                   if (null != addOnPrice1) {
                     const diff1 = addOnPrice.majorUnits - addOnPrice1.majorUnits;
                     if (diff1 > 0) {
-                      const obj8 = { priceString: tmp4(7337).formatPrice(diff1, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
-                      const tmp4Result11 = tmp4(7337);
+                      const obj8 = { priceString: tmp4(7479).formatPrice(diff1, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
+                      const tmp4Result11 = tmp4(7479);
                     }
                   }
-                  const tmp4Result10 = tmp4(7512);
+                  const tmp4Result10 = tmp4(7651);
                 }
               }
             }
-            const obj9 = { priceString: tmp4(7337).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
-            const tmp4Result12 = tmp4(7337);
+            const obj9 = { priceString: tmp4(7479).formatPrice(addOnPrice.majorUnits, addOnPrice.currency, { convertToMajorUnits: false }), failure: null };
+            const tmp4Result12 = tmp4(7479);
           }
         }
       }
-      const tmp4Result9 = tmp4(7512);
+      const tmp4Result9 = tmp4(7651);
     }
   } else {
     const failure = tmp13.failure;

@@ -1,12 +1,12 @@
-// Module ID: 7486
-// Function ID: 7487
+// Module ID: 7625
+// Function ID: 7626
 // Name: UserSettingsAccountStore
-// Dependencies: [1371, 1074, 504, 573, 2]
+// Dependencies: [1372, 1074, 504, 573, 2]
 
-// Module 7486 (UserSettingsAccountStore)
+// Module 7625 (UserSettingsAccountStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 function handleFormClose() {
   OPEN = FormStates.CLOSED;

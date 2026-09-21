@@ -1,9 +1,9 @@
 // Module ID: 7077
 // Function ID: 7078
-// Dependencies: [1120]
+// Dependencies: [7078]
 
 // Module 7077
-import registerAsset from "module_1120" /* 1120 */;
+import _modDef7078 from "module_7078" /* 7078 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/auth/native/images", width: 480, height: 413, scales: [2, 3], hash: "b25b2e24db6c14f15201cb7533aed65e", name: "register-background-dark", type: "png" });
+export default _modDef7078;

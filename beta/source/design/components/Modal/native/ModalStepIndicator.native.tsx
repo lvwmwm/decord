@@ -1,14 +1,14 @@
-// Module ID: 14264
-// Function ID: 14265
+// Module ID: 14455
+// Function ID: 14456
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 4636, 576, 4373, 4338, 5055, 1114, 2038, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4492, 4457, 5185, 1115, 2122, 2]
 // Exports: ModalStepIndicator
 
-// Module 14264 (ModalStepIndicator)
-import util from "util" /* 1114 */;
-import _modDef2038 from "module_2038" /* 2038 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import spring from "spring" /* 5055 */;
+// Module 14455 (ModalStepIndicator)
+import util from "util" /* 1115 */;
+import _modDef2122 from "module_2122" /* 2122 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import spring from "spring" /* 5185 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -79,7 +79,7 @@ function StepPill(isActive) {
 const View = fn(17).View;
 const jsx = fn(21).jsx;
 let closure_6 = { overshootClamping: true };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", gap: 4 }, stepPill: { height: 4, borderRadius: 2 } });
 const __initData = { code: "function ModalStepIndicatorNativeTsx1(){const{interpolate,sharedValue,WIDTH_INACTIVE,WIDTH_ACTIVE,interpolateColor,inactiveColor,activeColor,inactiveOpacity}=this.__closure;return{width:interpolate(sharedValue.get(),[0,1],[WIDTH_INACTIVE,WIDTH_ACTIVE]),backgroundColor:interpolateColor(sharedValue.get(),[0,1],[inactiveColor,activeColor]),opacity:interpolate(sharedValue.get(),[0,1],[inactiveOpacity,1])};}" };
 const size = fn(2);
@@ -103,12 +103,12 @@ export const ModalStepIndicator = function ModalStepIndicator(arg0) {
       return <View style={tmp.container}>{items}</View>;
     } else {
       const intl = util.intl;
-      const obj4 = { accessible: true, accessibilityRole: "progressbar", accessibilityLabel: intl.string(_modDef2038.KUwsC0), accessibilityValue: null, importantForAccessibility: "yes", style: null, children: null };
+      const obj4 = { accessible: true, accessibilityRole: "progressbar", accessibilityLabel: intl.string(_modDef2122.KUwsC0), accessibilityValue: null, importantForAccessibility: "yes", style: null, children: null };
       const range = { min: 1, max: totalSteps, now: currentStep + 1 };
       obj4.accessibilityValue = range;
       obj4.style = tmp.container;
       obj4.children = items;
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2038.KUwsC0)} accessibilityValue={null} importantForAccessibility="yes" style={null}>{null}</View>;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2122.KUwsC0)} accessibilityValue={null} importantForAccessibility="yes" style={null}>{null}</View>;
     }
   }
 };

@@ -1,41 +1,41 @@
-// Module ID: 8299
-// Function ID: 8300
+// Module ID: 8451
+// Function ID: 8452
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 1957, 2021, 1371, 8300, 1074, 21, 4636, 576, 8302, 1114, 5768, 5686, 1176, 4488, 4571, 504, 8303, 7265, 7285, 8307, 8316, 1240, 8298, 8296, 7253, 6728, 8034, 7070, 4632, 4788, 5056, 5204, 1935, 2]
+// Dependencies: [32, 19, 17, 2041, 2105, 1372, 8452, 1074, 21, 4756, 576, 8454, 1115, 5904, 5822, 1177, 4607, 4690, 504, 8455, 7407, 7427, 8459, 8468, 1241, 8450, 8448, 7395, 6869, 8188, 7212, 4752, 4908, 5186, 5339, 2019, 2]
 
-// Module 8299 (UserProfileSpeedBumpActionSheet)
+// Module 8451 (UserProfileSpeedBumpActionSheet)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import TableRow from "TableRow" /* 5686 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
-import UserActionCreators from "UserActionCreators" /* 8298 */;
-import _modDef8302 from "module_8302" /* 8302 */;
+import native from "native" /* 1177 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import TableRow from "TableRow" /* 5822 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import UserActionCreators from "UserActionCreators" /* 8450 */;
+import _modDef8454 from "module_8454" /* 8454 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function InformationTable(speedBumpType) {
   let items;
-  let obj = { icon: _modDef8302, text: null };
-  const intl = items(1114).intl;
-  obj.text = intl.string(items(1114).t.kcuWva);
+  let obj = { icon: _modDef8454, text: null };
+  const intl = items(1115).intl;
+  obj.text = intl.string(items(1115).t.kcuWva);
   items = [obj, ];
-  const obj2 = { icon: _modDef8302, text: null };
+  const obj2 = { icon: _modDef8454, text: null };
   if ("block" === speedBumpType.speedBumpType) {
-    const intl3 = tmp2(1114).intl;
-    let stringResult = intl3.string(tmp2(1114).t.QxrDY1);
+    const intl3 = tmp2(1115).intl;
+    let stringResult = intl3.string(tmp2(1115).t.QxrDY1);
   } else {
-    const intl2 = tmp2(1114).intl;
-    stringResult = intl2.string(tmp2(1114).t.W6fjkS);
+    const intl2 = tmp2(1115).intl;
+    stringResult = intl2.string(tmp2(1115).t.W6fjkS);
   }
   obj2.text = stringResult;
   items[1] = obj2;
-  return closure_12(items(5768).TableRowGroup, {
+  return closure_12(items(5904).TableRowGroup, {
     hasIcons: true,
     children: items.map((icon, index) => {
       const obj = { start: 0 === index, end: items.length === index, icon: closure_2_12(native.Icon, { size: native.Icon.Sizes.MEDIUM, source: icon.icon }), label: icon.text };
@@ -44,12 +44,12 @@ function InformationTable(speedBumpType) {
   });
 }
 const View = fn(17).View;
-const UserProfileAnalyticsTypes = fn(8300).UserProfileAnalyticsTypes;
+const UserProfileAnalyticsTypes = fn(8452).UserProfileAnalyticsTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { button: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 }, tableContainer: null, header: null, bodyText: null, headerText: null, avatar: null, avatarContainer: null, avatarIconContainer: null, suppress: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: 56 };
 obj.tableContainer = { marginBottom: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };

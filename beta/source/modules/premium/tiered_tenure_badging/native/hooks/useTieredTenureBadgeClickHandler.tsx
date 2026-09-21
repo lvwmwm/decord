@@ -1,26 +1,26 @@
-// Module ID: 11293
-// Function ID: 11294
+// Module ID: 11422
+// Function ID: 11423
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1371, 1373, 8311, 1074, 7311, 11294, 7736, 504, 7485, 4603, 11295, 1896, 11295, 1240, 2]
+// Dependencies: [19, 1372, 1374, 8463, 1074, 7453, 11423, 7870, 504, 7624, 4723, 11424, 1980, 11424, 1241, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 11293 (useTieredTenureBadgeClickHandler)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import openUserSettings from "openUserSettings" /* 7485 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11295 */;
+// Module 11422 (useTieredTenureBadgeClickHandler)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 11424 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const PremiumTypes = fn(1373).PremiumTypes;
-const DEFAULT_PREMIUM_BADGE_ID = fn(8311).DEFAULT_PREMIUM_BADGE_ID;
+const PremiumTypes = fn(1374).PremiumTypes;
+const DEFAULT_PREMIUM_BADGE_ID = fn(8463).DEFAULT_PREMIUM_BADGE_ID;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
-const UserProfileThemeTypes = fn(7311).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7453).UserProfileThemeTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useTieredTenureBadgeClickHandler.tsx");
 
@@ -30,8 +30,8 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
   let isPremiumSubscriber = require("useIsPremiumSubscriber").useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let tmp4 = typeof id === "string";
   if (typeof id === "string") {
-    tmp4 = null != tmp(7736).getTieredTenureBadge(id);
-    const tmpResult = tmp(7736);
+    tmp4 = null != tmp(7870).getTieredTenureBadge(id);
+    const tmpResult = tmp(7870);
   }
   let obj = require("useIsPremiumSubscriber");
   const items = [isPremiumSubscriber];
@@ -60,7 +60,7 @@ export const useTieredTenureBadgeClickHandler = function useTieredTenureBadgeCli
         openUserSettings.openUserSettings(obj2);
       } else {
         const obj = ActionSheetActionCreatorsDefault;
-        const tmp4 = asyncRequireImpl(11295, dependencyMap.paths);
+        const tmp4 = asyncRequireImpl(11424, dependencyMap.paths);
         const obj4 = { userId };
         obj.openLazy(tmp4, TieredTenureBadgeActionSheet.TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj4, "stack");
       }

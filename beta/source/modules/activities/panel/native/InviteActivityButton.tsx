@@ -1,15 +1,15 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17489
+// Function ID: 17490
 // Name: InviteActivityButton
-// Dependencies: [19, 11594, 5360, 21, 4603, 17138, 1896, 504, 11894, 5056, 10160, 1114, 2]
+// Dependencies: [19, 9625, 5496, 21, 4723, 17490, 1980, 504, 12014, 5186, 10288, 1115, 2]
 
-// Module 17137 (InviteActivityButton)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11894 */;
+// Module 17489 (InviteActivityButton)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12014 */;
 import noop from "module_19" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11594 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5360 */;
+import LocalActivityStore from "LocalActivityStore" /* 9625 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -26,9 +26,9 @@ export default noop.memo(function InviteActivityButton(applicationId) {
     const obj2 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17138, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17490, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
-      icon: stateFromStores(10160),
+      icon: stateFromStores(10288),
       text: null,
       accessibilityLabel: null,
       variant: "secondary-overlay",
@@ -36,16 +36,16 @@ export default noop.memo(function InviteActivityButton(applicationId) {
       shrink: true,
       maxFontSizeMultiplier: 1
     };
-    const intl = tmp(1114).intl;
-    obj2.text = intl.string(tmp(1114).t["OzOM/q"]);
-    const intl2 = tmp(1114).intl;
-    obj2.accessibilityLabel = intl2.string(tmp(1114).t["OzOM/q"]);
-    tmp4 = jsx(tmp(5056).Button, {
+    const intl = tmp(1115).intl;
+    obj2.text = intl.string(tmp(1115).t["OzOM/q"]);
+    const intl2 = tmp(1115).intl;
+    obj2.accessibilityLabel = intl2.string(tmp(1115).t["OzOM/q"]);
+    tmp4 = jsx(tmp(5186).Button, {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17138, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17490, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
-      icon: stateFromStores(10160),
+      icon: stateFromStores(10288),
       text: null,
       accessibilityLabel: null,
       variant: "secondary-overlay",

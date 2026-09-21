@@ -1,17 +1,17 @@
-// Module ID: 13435
-// Function ID: 13436
+// Module ID: 13608
+// Function ID: 13609
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 7527, 1363, 7512, 2]
+// Dependencies: [19, 7666, 1364, 7651, 2]
 // Exports: useCheckoutPlan, useCheckoutPlanDiscountPrices, useCheckoutPlanPriceString
 
-// Module 13435 (useCheckoutPlanPriceString)
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7512 */;
+// Module 13608 (useCheckoutPlanPriceString)
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7651 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const useNativeCheckoutStore = fn(7527).useNativeCheckoutStore;
+const useNativeCheckoutStore = fn(7666).useNativeCheckoutStore;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
 
@@ -44,7 +44,7 @@ export const useCheckoutPlanDiscountPrices = function useCheckoutPlanDiscountPri
   let memo = productId;
   const tmp2 = regularPriceString((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   const tmp = regularPriceString((orderRequired) => orderRequired.orderRequired);
-  let tmp3 = memo(1363).isIOS() && tmp;
+  let tmp3 = memo(1364).isIOS() && tmp;
   discountedPriceString = tmp3;
   const items = [tmp2, productId, tmp3];
   memo = discountedPriceString.useMemo(() => {

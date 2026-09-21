@@ -1,9 +1,9 @@
 // Module ID: 12858
 // Function ID: 12859
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 12858
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 48, height: 48, scales: [1, 2, 3], hash: "079f1f5099b5396d01af5ed23e7bac76", name: "ic_invites_disabled", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 240, height: 130, scales: [2, 3], hash: "931bea5d9b6a7fc7a53130a431abe666", name: "no_mutual_servers_dark", type: "png" });

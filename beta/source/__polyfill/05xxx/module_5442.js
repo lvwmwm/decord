@@ -1,9 +1,30 @@
 // Module ID: 5442
 // Function ID: 5443
-// Dependencies: [1120]
+// Dependencies: [5439]
 
 // Module 5442
-import registerAsset from "module_1120" /* 1120 */;
+import findOffsets from "findOffsets" /* 5439 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "eb232cce91e81121373a2c7b4cc58581", name: "img_account_sync_riot_light_and_dark", type: "png" });
+export default {
+  isAvifFile(getUint32) {
+    if (getUint32) {
+      try {
+        let parseBoxResult = findOffsets.parseBox(getUint32, 0);
+        if (parseBoxResult) {
+          parseBoxResult = "avif" === parseBoxResult.majorBrand;
+        }
+        return parseBoxResult;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  findAvifOffsets(byteLength) {
+    return findOffsets.findOffsets(byteLength);
+  }
+};

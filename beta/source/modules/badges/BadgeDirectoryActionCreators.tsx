@@ -1,14 +1,14 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 8466
+// Function ID: 8467
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1371, 1074, 573, 1270, 7704, 7709, 1230, 2]
+// Dependencies: [5, 1372, 1074, 573, 1271, 5084, 5089, 1231, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8314 (BadgeDirectoryActionCreators)
+// Module 8466 (BadgeDirectoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function urlUserId(arg0) {

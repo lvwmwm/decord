@@ -1,23 +1,23 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 17480
+// Function ID: 17481
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4628, 9788, 1957, 1956, 1920, 9635, 17129, 1074, 12407, 21, 1176, 4636, 576, 1611, 504, 1477, 17124, 11491, 4373, 17130, 4347, 4637, 5055, 17131, 17132, 1114, 6756, 4265, 17126, 9765, 2]
+// Dependencies: [19, 17, 4748, 9746, 2041, 2040, 2004, 9315, 17481, 1074, 12527, 21, 1177, 4756, 576, 1612, 504, 1478, 17476, 11617, 4492, 17482, 4466, 4757, 5185, 17483, 17484, 1115, 6897, 4385, 17478, 9723, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 17128 (ActivityPanelPIPView)
+// Module 17480 (ActivityPanelPIPView)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9765 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11491 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17126 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 17130 */;
+import util from "util" /* 1115 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9723 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11617 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17478 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17482 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9788 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9746 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 require = fn;
 class BaseActivityPanelPIPView {
@@ -255,18 +255,18 @@ class BaseActivityPanelPIPView {
   }
 }
 const View = fn(17).View;
-const ActivityLayoutMode = fn(1920).ActivityLayoutMode;
-const ActivityPanelConstants = fn(9635);
+const ActivityLayoutMode = fn(2004).ActivityLayoutMode;
+const ActivityPanelConstants = fn(9315);
 let ACTIVITY_PIP_SIZE = ActivityPanelConstants.ACTIVITY_PIP_SIZE;
 ({ ActivityPanelModes: closure_11, ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_12, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: map1, LANDSCAPE_IFRAME_HORIZONTAL_MARGIN: closure_14 } = ActivityPanelConstants);
-let closure_15 = fn(17129).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
+let closure_15 = fn(17481).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const ThemeTypes = fn(1074).ThemeTypes;
-const PIP_WINDOW_OFFSET = fn(12407).PIP_WINDOW_OFFSET;
+const PIP_WINDOW_OFFSET = fn(12527).PIP_WINDOW_OFFSET;
 const jsx = fn(21).jsx;
 const REDUCED_MOTION_TIMING = { duration: 300 };
-const native = fn(1176);
-const boxShadowStyle = native.generateBoxShadowStyle(fn(1176).EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS);
-const createStyles = fn(4636);
+const native = fn(1177);
+const boxShadowStyle = native.generateBoxShadowStyle(fn(1177).EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS);
+const createStyles = fn(4756);
 let obj = { wrapper: null, mask: null };
 let merged = Object.assign(ACTIVITY_PIP_SIZE);
 const merged1 = Object.assign(boxShadowStyle);
@@ -314,7 +314,7 @@ export default noop.memo((transitionState) => {
   const tmpResult = transitionState(504);
   const items2 = [memo];
   stateFromStores1 = transitionState(504).useStateFromStores(items2, () => ChannelStore.getChannel(c2));
-  const tmp8 = transitionCleanUp(1611)();
+  const tmp8 = transitionCleanUp(1612)();
   closure_129_0 = tmp8;
   const items3 = [tmp8.right];
   memo = activity.useMemo(() => {

@@ -1,10 +1,10 @@
-// Module ID: 1247
-// Function ID: 1248
+// Module ID: 1248
+// Function ID: 1249
 // Name: ReactBatchUpdates
 // Dependencies: [17, 2]
 // Exports: batchUpdates
 
-// Module 1247 (ReactBatchUpdates)
+// Module 1248 (ReactBatchUpdates)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

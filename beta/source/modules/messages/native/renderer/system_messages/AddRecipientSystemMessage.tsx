@@ -1,17 +1,17 @@
-// Module ID: 8063
-// Function ID: 8064
+// Module ID: 8217
+// Function ID: 8218
 // Name: AddRecipientSystemMessage
-// Dependencies: [1961, 1957, 1371, 8064, 8066, 1114, 8068, 2]
+// Dependencies: [2045, 2041, 1372, 8218, 8220, 1115, 8222, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 8063 (AddRecipientSystemMessage)
-import util from "util" /* 1114 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8064 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8066 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8068 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 8217 (AddRecipientSystemMessage)
+import util from "util" /* 1115 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;

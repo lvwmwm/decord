@@ -1,0 +1,9 @@
+// Module ID: 7336
+// Function ID: 7337
+// Dependencies: [1121]
+
+// Module 7336
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_member_verification/images", width: 88, height: 80, scales: [1, 2, 3], hash: "c8acaccaced63579ec708b5154ef923d", name: "updateAppIcon", type: "png" });

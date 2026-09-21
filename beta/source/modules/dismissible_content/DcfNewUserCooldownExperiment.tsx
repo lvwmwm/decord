@@ -1,12 +1,12 @@
-// Module ID: 4480
-// Function ID: 4481
+// Module ID: 4599
+// Function ID: 4600
 // Name: DcfNewUserCooldownExperiment
-// Dependencies: [1433, 1090, 2]
+// Dependencies: [1434, 1091, 2]
 // Exports: getDcfNewUserCooldown, useDcfNewUserCooldown
 
-// Module 4480 (DcfNewUserCooldownExperiment)
-import DurationsDefault from "Durations" /* 1090 */;
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 4599 (DcfNewUserCooldownExperiment)
+import DurationsDefault from "Durations" /* 1091 */;
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-dcf-new-user-cooldown", kind: "user", defaultConfig: { newUserCooldownMs: DurationsDefault.Millis.DAY }, variations: null };

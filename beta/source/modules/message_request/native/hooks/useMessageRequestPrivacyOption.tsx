@@ -1,23 +1,23 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 14178
+// Function ID: 14179
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 1935, 7098, 7302, 1114, 12578, 2]
+// Dependencies: [19, 21, 2019, 7240, 7444, 1115, 12699, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 13997 (useMessageRequestPrivacyOption)
-import UserSettings from "UserSettings" /* 1935 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7098 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12578 */;
+// Module 14178 (useMessageRequestPrivacyOption)
+import UserSettings from "UserSettings" /* 2019 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7240 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 12699 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function MessageRequestRestrictedGuildPrivacyOption(guild) {
   guild = guild.guild;
   const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(1935).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(2019).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(1935).RestrictedGuildIds;
+  const RestrictedGuildIds = id(2019).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -32,10 +32,10 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
   const obj = { label: null, subLabel: null, value: null, onValueChange: null, disabled: null };
-  const intl = id(1114).intl;
-  obj.label = intl.string(id(1114).t["7UgSGP"]);
-  const intl2 = id(1114).intl;
-  obj.subLabel = intl2.string(id(1114).t.INRaYb);
+  const intl = id(1115).intl;
+  obj.label = intl.string(id(1115).t["7UgSGP"]);
+  const intl2 = id(1115).intl;
+  obj.subLabel = intl2.string(id(1115).t.INRaYb);
   let tmp5 = !hasItem1;
   if (!hasItem1) {
     tmp5 = !hasItem;
@@ -43,7 +43,7 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
   obj.value = tmp5;
   obj.onValueChange = callback;
   obj.disabled = hasItem1;
-  return jsx(id(7302).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
+  return jsx(id(7444).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
 }
 const jsx = fn(21).jsx;
 const size = fn(2);

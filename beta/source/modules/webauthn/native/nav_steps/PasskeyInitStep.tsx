@@ -1,17 +1,17 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 14944
+// Function ID: 14945
 // Name: PasskeyInitStep
-// Dependencies: [32, 19, 17, 14744, 14745, 21, 4636, 576, 504, 5773, 4632, 1114, 5514, 8202, 4594, 4603, 14757, 1896, 10379, 5768, 5686, 14758, 1483, 6698, 7052, 7480, 8716, 2]
+// Dependencies: [32, 19, 17, 14932, 14933, 21, 4756, 576, 504, 5909, 4752, 1115, 5650, 8179, 4713, 4723, 14945, 1980, 10508, 5904, 5822, 14946, 1484, 6838, 7194, 7619, 8871, 2]
 // Exports: default
 
-// Module 14756 (PasskeyInitStep)
+// Module 14944 (PasskeyInitStep)
 import nativeDefault from "native" /* 576 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6698 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6838 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14744 */;
+import WebAuthnStore from "WebAuthnStore" /* 14932 */;
 
 require = fn;
 function CredentialList(navigation) {
@@ -26,17 +26,17 @@ function CredentialList(navigation) {
   [c2, c3] = noop.useState(false);
   if (0 === credentials.length) {
     let obj2 = { style: tmp3.upsellContainer, children: null };
-    const items1 = [closure_8(tmp(5773).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    const items1 = [closure_8(tmp(5909).PasskeysSpotIllustration, { scale: 0.6 }), ];
     let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: null };
-    let intl2 = tmp(1114).intl;
-    obj3.children = intl2.string(tmp(1114).t.FSNwFW);
-    items1[1] = closure_8(tmp(4632).Text, obj3);
+    let intl2 = tmp(1115).intl;
+    obj3.children = intl2.string(tmp(1115).t.FSNwFW);
+    items1[1] = closure_8(tmp(4752).Text, obj3);
     obj2.children = items1;
     return closure_9(View, obj2);
   } else {
     const obj4 = { title: null, hasIcons: false, children: null };
-    let intl = tmp(1114).intl;
-    obj4.title = intl.string(tmp(1114).t["4RIqrQ"]);
+    let intl = tmp(1115).intl;
+    obj4.title = intl.string(tmp(1115).t["4RIqrQ"]);
     obj4.children = credentials.map((label) => {
       const obj = { label: label.name, trailing: null, subLabel: null };
       const credential = label;
@@ -47,7 +47,7 @@ function CredentialList(navigation) {
       obj3.disabled = _undefined;
       obj3.loading = _undefined;
       obj3.onPress = function onPress() {
-        return ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14757, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", { credential, deleting, setDeleting });
+        return ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14945, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", { credential, deleting, setDeleting });
       };
       const items = [closure_1_8(navigation(_undefined[13]).IconButton, obj3), ];
       const obj5 = { variant: "secondary", icon: closure_1_8(navigation(_undefined[18]).PencilIcon, {}), accessibilityLabel: null, size: "sm", disabled: null, loading: null, onPress: null };
@@ -71,15 +71,15 @@ function CredentialList(navigation) {
       obj.subLabel = formatResult;
       return closure_1_8(navigation(_undefined[20]).TableRow, obj, label.id);
     });
-    return closure_8(tmp(5768).TableRowGroup, obj4);
+    return closure_8(tmp(5904).TableRowGroup, obj4);
   }
   const tmp4 = _slicedToArray(noop.useState(false), 2);
 }
 const View = fn(17).View;
-const WebAuthnScreens = fn(14745).WebAuthnScreens;
+const WebAuthnScreens = fn(14933).WebAuthnScreens;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8 }, upsellContainer: null, upsellText: null, iconButtonGroup: null, headerAddButton: null };
 let obj3 = { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: nativeDefault.space.PX_16, marginRight: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8 };
 obj2.upsellContainer = { marginTop: nativeDefault.space.PX_16, alignItems: "center" };

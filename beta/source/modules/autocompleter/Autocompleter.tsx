@@ -1,22 +1,22 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 10092
+// Function ID: 10093
 // Name: Autocompleter
-// Dependencies: [9967, 9968, 2012, 4285, 1371, 5596, 5523, 9969, 1940, 5600, 9971, 1925, 4619, 4624, 4333, 1365, 12, 5599, 2]
+// Dependencies: [10093, 10094, 2096, 4405, 1372, 5732, 5659, 10095, 2024, 5736, 10097, 2009, 4739, 4744, 1929, 1366, 12, 5735, 2]
 
-// Module 9966 (Autocompleter)
+// Module 10092 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
-import StringUtils from "StringUtils" /* 1925 */;
-import _modDef4333 from "module_4333" /* 4333 */;
-import findCodedLinks from "findCodedLinks" /* 4619 */;
-import CodedLink from "CodedLink" /* 4624 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5523 */;
-import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5599 */;
-import GuildUtilsDefault from "GuildUtils" /* 5600 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9969 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 9967 */;
-import LinkRecord from "LinkRecord" /* 9968 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import _modDef1929 from "module_1929" /* 1929 */;
+import StringUtils from "StringUtils" /* 2009 */;
+import findCodedLinks from "findCodedLinks" /* 4739 */;
+import CodedLink from "CodedLink" /* 4744 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5659 */;
+import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5735 */;
+import GuildUtilsDefault from "GuildUtils" /* 5736 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10095 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 10093 */;
+import LinkRecord from "LinkRecord" /* 10094 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const AutocompleteUtilsDefault = AutocompleteUtils;
 
@@ -29,8 +29,8 @@ function getAutocompleterBoosterMap(USER, options) {
   }
   return boosterMap;
 }
-const GUILD_VOCAL_CHANNELS_KEY = fn(2012).GUILD_VOCAL_CHANNELS_KEY;
-fn(5596).AutocompleterResultTypes;
+const GUILD_VOCAL_CHANNELS_KEY = fn(2096).GUILD_VOCAL_CHANNELS_KEY;
+fn(5732).AutocompleterResultTypes;
 const React7 = Object.freeze({});
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/autocompleter/Autocompleter.tsx");
@@ -547,11 +547,11 @@ prototype["queryLink"] = function queryLink(query) {
       type = findCodedLinkResult.type;
     }
     if (type === CodedLink.CodedLinkType.INVITE) {
-      const obj2 = { type: tmp.LINK, record: LinkRecord.fromInviteCode(findCodedLinkResult.code), score: tmp3(5523).calculateScore(11) };
+      const obj2 = { type: tmp.LINK, record: LinkRecord.fromInviteCode(findCodedLinkResult.code), score: tmp3(5659).calculateScore(11) };
       const items = [obj2];
       return items;
     } else {
-      const sanitizeUrlResult = _modDef4333.sanitizeUrl(query);
+      const sanitizeUrlResult = _modDef1929.sanitizeUrl(query);
       try {
         const _URL = URL;
         const uRL = new URL(sanitizeUrlResult);
@@ -560,7 +560,7 @@ prototype["queryLink"] = function queryLink(query) {
         if (undefined !== hostname) {
           str = hostname;
         }
-        let isDiscordHostnameResult = tmp17(1365).isDiscordHostname(str);
+        let isDiscordHostnameResult = tmp17(1366).isDiscordHostname(str);
         if (!isDiscordHostnameResult) {
           const _window = window;
           isDiscordHostnameResult = window.location.host === uRL.host;
@@ -568,16 +568,16 @@ prototype["queryLink"] = function queryLink(query) {
         if (null !== pathname) {
           if (isDiscordHostnameResult) {
             if (tmp17Result2.isAppRoute(pathname)) {
-              const obj3 = { type: tmp.LINK, record: LinkRecord.fromPath(pathname), score: tmp3(5523).calculateScore(11) };
+              const obj3 = { type: tmp.LINK, record: LinkRecord.fromPath(pathname), score: tmp3(5659).calculateScore(11) };
               const items1 = [obj3];
               let items2 = items1;
-              const tmp3Result2 = tmp3(5523);
+              const tmp3Result2 = tmp3(5659);
             }
             return items2;
           }
         }
         items2 = [];
-        const tmp17Result = tmp17(1365);
+        const tmp17Result = tmp17(1366);
       } catch (err) {
         return [];
       }

@@ -1,22 +1,22 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 15085
+// Function ID: 15086
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4285, 21, 4636, 576, 7265, 7285, 1176, 14891, 1114, 7226, 4632, 5768, 14898, 504, 2]
+// Dependencies: [19, 17, 4405, 21, 4756, 576, 7407, 7427, 1177, 15079, 1115, 7368, 4752, 5904, 15086, 504, 2]
 // Exports: default
 
-// Module 14897 (IgnoredUsersList)
+// Module 15085 (IgnoredUsersList)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7265 */;
-import Blocked from "Blocked" /* 14891 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 14898 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7407 */;
+import Blocked from "Blocked" /* 15079 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 15086 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
@@ -52,7 +52,7 @@ function IgnoredUsersList(userIds) {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { list: { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 }, sectionLabelStyle: null };
 let obj3 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.sectionLabelStyle = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };

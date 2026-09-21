@@ -1,10 +1,10 @@
-// Module ID: 5680
-// Function ID: 5681
+// Module ID: 5816
+// Function ID: 5817
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4636, 4461, 5681, 5700, 7186, 7187, 7191, 2]
+// Dependencies: [19, 17, 21, 4756, 4580, 5817, 5836, 7328, 7329, 7333, 2]
 // Exports: default
 
-// Module 5680 (MemberVerificationFormRenderer)
+// Module 5816 (MemberVerificationFormRenderer)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -13,7 +13,7 @@ const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Keyboard: c3, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationFormRenderer.tsx");

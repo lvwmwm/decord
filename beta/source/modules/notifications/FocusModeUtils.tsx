@@ -1,20 +1,20 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10347
+// Function ID: 10348
 // Name: FocusModeUtils
-// Dependencies: [5360, 4288, 1074, 1935, 1940, 1216, 1240, 4980, 1114, 10220, 2]
+// Dependencies: [5496, 4408, 1074, 2019, 2024, 1217, 1241, 5108, 1115, 10348, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10219 (FocusModeUtils)
-import wrappers from "wrappers" /* 1216 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5360 */;
+// Module 10347 (FocusModeUtils)
+import wrappers from "wrappers" /* 1217 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(4288).NotificationSettingsUpdateType;
+const constants = fn(4408).NotificationSettingsUpdateType;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const size = fn(2);
@@ -86,14 +86,14 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   }
   if (tmp7) {
     const obj3 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null };
-    const intl = tmp(1114).intl;
-    obj3.title = intl.string(tmp(1114).t["B+cbLS"]);
-    const intl2 = tmp(1114).intl;
-    obj3.body = intl2.string(tmp(1114).t.CYVgLI);
-    const intl3 = tmp(1114).intl;
-    obj3.cancelText = intl3.string(tmp(1114).t.f3Pet9);
-    const intl4 = tmp(1114).intl;
-    obj3.confirmText = intl4.string(tmp(1114).t.BddRzS);
+    const intl = tmp(1115).intl;
+    obj3.title = intl.string(tmp(1115).t["B+cbLS"]);
+    const intl2 = tmp(1115).intl;
+    obj3.body = intl2.string(tmp(1115).t.CYVgLI);
+    const intl3 = tmp(1115).intl;
+    obj3.cancelText = intl3.string(tmp(1115).t.f3Pet9);
+    const intl4 = tmp(1115).intl;
+    obj3.confirmText = intl4.string(tmp(1115).t.BddRzS);
     obj3.onConfirm = function onConfirm() {
       closure_1(dependencyMap[9])({ nextStatus: constants.ONLINE });
     };

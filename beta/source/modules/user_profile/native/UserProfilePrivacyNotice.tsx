@@ -1,18 +1,18 @@
-// Module ID: 13215
-// Function ID: 13216
+// Module ID: 13385
+// Function ID: 13386
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1074, 1954, 21, 4636, 576, 1185, 1114, 13216, 8767, 1935, 1943, 7491, 4632, 7485, 4591, 5204, 5761, 2]
+// Dependencies: [32, 19, 17, 1074, 2038, 21, 4756, 576, 1186, 1115, 13386, 8922, 2019, 2027, 7630, 4752, 7624, 4710, 5339, 5897, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 13215 (UserProfilePrivacyNotice)
+// Module 13385 (UserProfilePrivacyNotice)
 import nativeDefault from "native" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7491 */;
-import useUserIsTeen from "useUserIsTeen" /* 8767 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13216 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
+import useUserIsTeen from "useUserIsTeen" /* 8922 */;
+import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13386 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,10 +21,10 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8 }, icon: { flexShrink: 0, marginTop: 2 }, text: { flex: 1 }, closeButton: { flexShrink: 0 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -64,31 +64,31 @@ export default function UserProfilePrivacyNotice() {
   if (tmp9 !== dismissible_content.DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE) {
     return null;
   } else {
-    if (tmp2(1185).ProfileVisibility.FRIENDS_ONLY === setting1) {
-      let dqQ7AN = tmp2(1114).t["0UBDvq"];
-    } else if (tmp2(1185).ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === setting1) {
-      dqQ7AN = tmp2(1114).t["9AvQO/"];
+    if (tmp2(1186).ProfileVisibility.FRIENDS_ONLY === setting1) {
+      let dqQ7AN = tmp2(1115).t["0UBDvq"];
+    } else if (tmp2(1186).ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === setting1) {
+      dqQ7AN = tmp2(1115).t["9AvQO/"];
     } else {
-      const FRIENDS_AND_ALL_GUILDS = tmp2(1185).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
-      dqQ7AN = tmp2(1114).t.dqQ7AN;
+      const FRIENDS_AND_ALL_GUILDS = tmp2(1186).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+      dqQ7AN = tmp2(1115).t.dqQ7AN;
     }
     const obj4 = { style: tmp.container, children: null };
-    const obj5 = { style: tmp.icon, children: closure_7(tmp2(4591).CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
+    const obj5 = { style: tmp.icon, children: closure_7(tmp2(4710).CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     const items1 = [closure_7(View, obj5), , ];
     const obj6 = { style: tmp.text, variant: "text-sm/normal", color: "text-default", children: null };
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     const obj7 = { privacySettingsLink: callback };
     obj6.children = intl.format(dqQ7AN, obj7);
-    items1[1] = closure_7(tmp2(4632).Text, obj6);
+    items1[1] = closure_7(tmp2(4752).Text, obj6);
     const obj8 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    const intl2 = tmp2(1114).intl;
-    obj8.accessibilityLabel = intl2.string(tmp2(1114).t.WAI6xu);
+    const intl2 = tmp2(1115).intl;
+    obj8.accessibilityLabel = intl2.string(tmp2(1115).t.WAI6xu);
     obj8.onPress = function onPress() {
       return require(ContentDismissActionType.USER_DISMISS);
     };
     obj8.style = tmp.closeButton;
-    obj8.children = closure_7(tmp2(5761).XSmallIcon, { size: "xs", color: "icon-feedback-info" });
-    items1[2] = closure_7(tmp2(5204).PressableOpacity, obj8);
+    obj8.children = closure_7(tmp2(5897).XSmallIcon, { size: "xs", color: "icon-feedback-info" });
+    items1[2] = closure_7(tmp2(5339).PressableOpacity, obj8);
     obj4.children = items1;
     return closure_8(View, obj4);
   }

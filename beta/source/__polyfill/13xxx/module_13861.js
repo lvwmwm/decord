@@ -1,9 +1,9 @@
 // Module ID: 13861
 // Function ID: 13862
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13861
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 120, height: 120, scales: [1], hash: "b269fec2e8135bbc2e2d49cb182b352b", name: "amanda", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 30, height: 30, scales: [2, 3], hash: "565bfab9e414d3cdf97ad89eaffbf2b3", name: "member_list_icon", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12879
+// Function ID: 12880
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 4481, 4986, 1114, 4986, 2]
+// Dependencies: [19, 21, 4600, 5114, 1115, 5114, 2]
 // Exports: default
 
-// Module 12759 (UserProfileConfirmThreadRemove)
-import util from "util" /* 1114 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import AlertModal from "AlertModal" /* 4986 */;
+// Module 12879 (UserProfileConfirmThreadRemove)
+import util from "util" /* 1115 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import AlertModal from "AlertModal" /* 5114 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,17 +23,17 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   const intl = util.intl;
   const t = util.t;
   const obj2 = { title: intl.string(isForumPost ? t["8sKSjm"] : t.ZPm8jN), content: null, actions: null };
-  const intl2 = tmp4(1114).intl;
-  const t2 = tmp4(1114).t;
+  const intl2 = tmp4(1115).intl;
+  const t2 = tmp4(1115).t;
   obj2.content = intl2.formatToPlainString(isForumPost ? t2["6UGfnx"] : t2["hL+Znb"], { user: name });
   const obj3 = { children: null };
   const obj4 = { variant: "destructive", text: null, onPress: null };
-  const intl3 = tmp4(1114).intl;
+  const intl3 = tmp4(1115).intl;
   obj4.text = intl3.string(util.t.N86XcP);
   obj4.onPress = onConfirm;
   const items = [React3(AlertModal.AlertActionButton, obj4, "remove-user-from-thread"), ];
   const obj5 = { variant: "secondary", text: null };
-  const intl4 = tmp4(1114).intl;
+  const intl4 = tmp4(1115).intl;
   obj5.text = intl4.string(util.t.yNbnce);
   items[1] = React3(AlertModal.AlertActionButton, obj5, "cancel-remove-user-from-thread");
   obj3.children = items;

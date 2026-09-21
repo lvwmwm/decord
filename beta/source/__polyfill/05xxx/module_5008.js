@@ -1,18 +1,26 @@
 // Module ID: 5008
 // Function ID: 5009
-// Dependencies: [19]
-// Exports: usePrevious
+// Dependencies: [1455, 5009, 1315, 5013, 5028, 5011, 5074]
 
 // Module 5008
-import noop from "module_19" /* 19 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
+import properlyBoxed from "properlyBoxed" /* 5009 */;
+import _mod5011 from "module_5011" /* 5011 */;
+import RequireObjectCoercible from "RequireObjectCoercible" /* 5013 */;
+import shimArrayPrototypeMap from "shimArrayPrototypeMap" /* 5074 */;
+import callBind from "callBind" /* 1455 */;
+import defineProperty from "module_5028" /* 5028 */;
 
-({ useEffect: closure_0, useRef: closure_1 } = noop);
+let closure_2 = callBind.apply(properlyBoxed());
+let closure_3 = callBoundIntrinsic("Array.prototype.slice");
+function map(arg0, arg1) {
+  RequireObjectCoercible(arg0);
+  return closure_2(arg0, closure_3(arguments, 1));
+}
+const obj = { getPolyfill: null, implementation: null, shim: null };
+obj.getPolyfill = properlyBoxed;
+obj.implementation = _mod5011;
+obj.shim = shimArrayPrototypeMap;
+defineProperty(map, obj);
 
-export const usePrevious = function usePrevious(current) {
-  const tmp = framebus(undefined);
-  closure_1 = tmp;
-  React(() => {
-    closure_1.current = current;
-  });
-  return tmp.current;
-};
+export default map;

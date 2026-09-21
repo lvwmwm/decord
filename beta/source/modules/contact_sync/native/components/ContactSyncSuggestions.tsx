@@ -1,19 +1,19 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 12951
+// Function ID: 12952
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1074, 12832, 21, 4636, 576, 5763, 5063, 4632, 4481, 1396, 5685, 1176, 1114, 4338, 4486, 11, 8716, 9003, 5068, 1093, 5056, 1240, 2]
+// Dependencies: [32, 19, 17, 1074, 12952, 21, 4756, 576, 5899, 5193, 4752, 4600, 1397, 5821, 1177, 1115, 4457, 4605, 11, 8871, 8997, 5198, 1094, 5186, 1241, 2]
 // Exports: default
 
-// Module 12831 (ContactSyncSuggestions)
+// Module 12951 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import UserUtils from "UserUtils" /* 4481 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5685 */;
-import Form from "Form" /* 8716 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import UserUtils from "UserUtils" /* 4600 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5821 */;
+import Form from "Form" /* 8871 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -47,10 +47,10 @@ function SuggestionRow(suggestion) {
   let tmp8Result = null != suggestion.mutual_friends_count;
   if (tmp8Result) {
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: null };
-    const intl = tmp3(1114).intl;
+    const intl = tmp3(1115).intl;
     const obj6 = { count: suggestion.mutual_friends_count };
-    obj5.children = intl.format(tmp3(1114).t.z7y34b, obj6);
-    tmp8Result = tmp8(tmp3(4632).Text, obj5);
+    obj5.children = intl.format(tmp3(1115).t.z7y34b, obj6);
+    tmp8Result = tmp8(tmp3(4752).Text, obj5);
   }
   items[1] = tmp8Result;
   obj3.subLabel = closure_1_10(React7, { children: items });
@@ -61,12 +61,12 @@ function SuggestionRow(suggestion) {
 }
 const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const SuggestedFriendSource = fn(12832).SuggestedFriendSource;
+const SuggestedFriendSource = fn(12952).SuggestedFriendSource;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5763).NAV_BAR_HEIGHT + 32, justifyContent: "center" }, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
-let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5763).NAV_BAR_HEIGHT + 32, justifyContent: "center" };
+const createStyles = fn(4756);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5899).NAV_BAR_HEIGHT + 32, justifyContent: "center" }, header: null, title: null, subtitle: null, list: null, divider: null, linearGradient: null, redesignButton: null, sectionHeader: null };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingTop: fn(5899).NAV_BAR_HEIGHT + 32, justifyContent: "center" };
 obj2.header = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24 };
 obj2.title = { marginBottom: 8, textAlign: "center" };
 obj2.subtitle = { lineHeight: 18, textAlign: "center" };
@@ -94,16 +94,16 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     acc[suggested_user.suggested_user.id] = true;
     return acc;
   }, {});
-  const token = friendSuggestions(4338).useToken(onSubmit(576).colors.BACKGROUND_BASE_LOW);
-  let obj = friendSuggestions(4338);
-  let items = [friendSuggestions(4486).hexOpacityToRgba(token, 0), ];
-  let obj2 = friendSuggestions(4486);
-  items[1] = friendSuggestions(4486).hexOpacityToRgba(token, 100);
+  const token = friendSuggestions(4457).useToken(onSubmit(576).colors.BACKGROUND_BASE_LOW);
+  let obj = friendSuggestions(4457);
+  let items = [friendSuggestions(4605).hexOpacityToRgba(token, 0), ];
+  let obj2 = friendSuggestions(4605);
+  items[1] = friendSuggestions(4605).hexOpacityToRgba(token, 100);
   const tmp4 = first(noop.useState(reduced), 2);
   first = tmp4[0];
   noop = tmp4[1];
-  let obj3 = friendSuggestions(4486);
-  const fontScale = friendSuggestions(5063).useFontScale();
+  let obj3 = friendSuggestions(4605);
+  const fontScale = friendSuggestions(5193).useFontScale();
   const sum = onSubmit(576).space.PX_16 + onSubmit(576).space.PX_32 + 40;
   let items1 = [first];
   const sum1 = sum + Math.max(18 * Math.min(fontScale, 2) - 18, 0);
@@ -113,7 +113,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     obj[arg0] = !first[arg0];
     closure_4(obj);
   }, items1);
-  let obj4 = friendSuggestions(5063);
+  let obj4 = friendSuggestions(5193);
   let keys = onSubmit(11).keys(first);
   let items2 = [friendSuggestions, first];
   let obj5 = onSubmit(11);
@@ -174,17 +174,17 @@ export default function ContactSyncSuggestions(friendSuggestions) {
   obj7.contentContainerStyle = { paddingHorizontal: onSubmit(576).space.PX_16, paddingBottom: sum1 };
   obj7.data = memo;
   obj7.renderItem = callback1;
-  const items5 = [closure_8(friendSuggestions(9003).FlashList, obj7), , ];
+  const items5 = [closure_8(friendSuggestions(8997).FlashList, obj7), , ];
   const obj9 = { style: tmp.linearGradient, start: null, end: null, pointerEvents: "none", colors: null };
   let obj8 = { paddingHorizontal: onSubmit(576).space.PX_16, paddingBottom: sum1 };
-  obj9.start = friendSuggestions(1093).VerticalGradient.START;
-  obj9.end = friendSuggestions(1093).VerticalGradient.END;
+  obj9.start = friendSuggestions(1094).VerticalGradient.START;
+  obj9.end = friendSuggestions(1094).VerticalGradient.END;
   obj9.colors = items;
-  items5[1] = closure_8(onSubmit(5068), obj9);
+  items5[1] = closure_8(onSubmit(5198), obj9);
   const obj10 = { style: tmp.redesignButton, children: null };
   const obj11 = { variant: "primary", size: "lg", text: null, onPress: null, disabled: null };
-  let intl = friendSuggestions(1114).intl;
-  obj11.text = intl.string(friendSuggestions(1114).t["J5/69j"]);
+  let intl = friendSuggestions(1115).intl;
+  obj11.text = intl.string(friendSuggestions(1115).t["J5/69j"]);
   obj11.onPress = function onPress() {
     const keys = SnowflakeUtilsDefault.keys(first);
     const found = keys.filter((item) => first[item]);
@@ -194,7 +194,7 @@ export default function ContactSyncSuggestions(friendSuggestions) {
     });
   };
   obj11.disabled = !someResult;
-  obj10.children = closure_8(friendSuggestions(5056).Button, obj11);
+  obj10.children = closure_8(friendSuggestions(5186).Button, obj11);
   items5[2] = closure_8(onSelect, obj10);
   obj6.children = items5;
   return closure_10(onSelect, obj6);

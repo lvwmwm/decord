@@ -1,0 +1,87 @@
+// Module ID: 13980
+// Function ID: 13981
+// Name: IntelligenceSearchUtils
+// Dependencies: [4405, 1074, 12600, 12594, 4978, 13979, 2]
+// Exports: getIntelligenceSearchQuery, hydrateAndFilterCitations, isSupportedSearchContext, parseConversationId, resolveSearchStatus
+
+// Module 13980 (IntelligenceSearchUtils)
+import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
+import SearchUtils from "SearchUtils" /* 12594 */;
+import QueryTokenizer from "QueryTokenizer" /* 12600 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 13979 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+
+require = fn;
+function isUnsupportedFilterToken(type) {
+  let tmp = type.type !== QueryTokenizer.NON_TOKEN_TYPE;
+  if (tmp) {
+    tmp = !set.has(type.type);
+  }
+  return tmp;
+}
+const Constants = fn(1074);
+({ SearchTokenTypes, SearchTypes: c3 } = Constants);
+const items = [, ];
+({ FILTER_IN: arr[0], ANSWER_IN: arr[1] } = SearchTokenTypes);
+const set = new Set(items);
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchUtils.tsx");
+
+export const getIntelligenceSearchQuery = function getIntelligenceSearchQuery(searchQueryString) {
+  const tokenizeQueryResult = SearchUtils.tokenizeQuery(searchQueryString);
+  const searchQueryFromTokens = SearchUtils.getSearchQueryFromTokens(tokenizeQueryResult);
+  const nonTokenQuery = SearchUtils.getNonTokenQuery(tokenizeQueryResult);
+  let tmp2 = null;
+  if (0 !== nonTokenQuery.length) {
+    tmp2 = null;
+    if (!tokenizeQueryResult.some(isUnsupportedFilterToken)) {
+      const obj2 = { queryText: nonTokenQuery, channelIds: null };
+      let channel_id = searchQueryFromTokens.channel_id;
+      if (channel_id == null) {
+        channel_id = [];
+      }
+      obj2.channelIds = channel_id;
+      tmp2 = obj2;
+    }
+  }
+  return tmp2;
+};
+export const isSupportedSearchContext = function isSupportedSearchContext(type) {
+  return type.type === constants.GUILD || type.type === tmp.GUILD_CHANNEL;
+};
+export const hydrateAndFilterCitations = function hydrateAndFilterCitations(response) {
+  const message_citations = response.message_citations;
+  const mapped = message_citations.map((sourceId) => {
+    const obj = { sourceId: sourceId.source_id, sourceType: sourceId.source_type, guildId: sourceId.guild_id, channelId: sourceId.channel_id, messageId: sourceId.message_id, message: MessageRecordUtils.createMessageRecord(sourceId.message) };
+    return obj;
+  });
+  return mapped.filter((message) => !blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message.message));
+};
+export const resolveSearchStatus = function resolveSearchStatus(response, length) {
+  const search_status = response.search_status;
+  if ("not_qualified" === search_status) {
+    return IntelligenceSearchTypes.IntelligenceSearchStatus.NOT_QUALIFIED;
+  } else if ("no_results" === search_status) {
+    return IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY;
+  } else if ("success" === search_status) {
+    if (length > 0) {
+      let EMPTY = IntelligenceSearchTypes.IntelligenceSearchStatus.LOADED;
+    } else {
+      EMPTY = IntelligenceSearchTypes.IntelligenceSearchStatus.EMPTY;
+    }
+    return EMPTY;
+  } else {
+    return IntelligenceSearchTypes.IntelligenceSearchStatus.ERROR;
+  }
+};
+export const parseConversationId = function parseConversationId(sourceId) {
+  const match = /\/(\d+)$/.exec(sourceId);
+  let tmp2;
+  if (match != null) {
+    tmp2 = match[1];
+  }
+  if (tmp2 == null) {
+    tmp2 = sourceId;
+  }
+  return tmp2;
+};

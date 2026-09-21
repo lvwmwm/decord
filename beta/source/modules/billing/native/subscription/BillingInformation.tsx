@@ -1,10 +1,10 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13660
+// Function ID: 13661
 // Name: BillingInformation
-// Dependencies: [5, 1074, 4294, 1364, 1114, 11185, 2]
+// Dependencies: [5, 1074, 4414, 1365, 1115, 11316, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 13481 (BillingInformation)
+// Module 13660 (BillingInformation)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
     tmp5 = subscription.status === SubscriptionStatusTypes.ACTIVE;
   }
   if (tmp5) {
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     let obj3 = { renewalDate: subscriptionPeriodStart.subscriptionPeriodStart, onSubscriptionManagementClick: null };
     _require = asyncGeneratorStep(async (arg0, value) => {
       if (v3 === 2) {
@@ -89,7 +89,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
       }
       return applyArgumentsResult;
     };
-    billingInformationString = intl.format(tmp2(1114).t.gknRR3, obj3);
+    billingInformationString = intl.format(tmp2(1115).t.gknRR3, obj3);
   }
   return billingInformationString;
 };

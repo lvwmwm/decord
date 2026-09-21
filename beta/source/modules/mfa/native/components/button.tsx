@@ -1,11 +1,11 @@
-// Module ID: 15764
-// Function ID: 15765
+// Module ID: 15955
+// Function ID: 15956
 // Name: button
-// Dependencies: [19, 21, 5056, 2]
+// Dependencies: [19, 21, 5186, 2]
 // Exports: default
 
-// Module 15764 (button)
-import components_Button_Button from "components/Button/Button" /* 5056 */;
+// Module 15955 (button)
+import components_Button_Button from "components/Button/Button" /* 5186 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

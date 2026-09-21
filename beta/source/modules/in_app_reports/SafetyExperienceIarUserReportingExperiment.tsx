@@ -1,11 +1,11 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 13282
+// Function ID: 13283
 // Name: SafetyExperienceIarUserReportingExperiment
-// Dependencies: [4550, 2]
+// Dependencies: [4669, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 13123 (SafetyExperienceIarUserReportingExperiment)
-import createExperiment from "module_4550" /* 4550 */;
+// Module 13282 (SafetyExperienceIarUserReportingExperiment)
+import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false }, treatments: null };

@@ -1,11 +1,11 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14348
+// Function ID: 14349
 // Name: VoiceGatewayProtocolVersionExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: getVoiceGatewayProtocolVersion
 
-// Module 14166 (VoiceGatewayProtocolVersionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 14348 (VoiceGatewayProtocolVersionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-voice-gateway-protocol-version", kind: "user", defaultConfig: { enabled: false }, variations: null };

@@ -1,9 +1,9 @@
 // Module ID: 15928
 // Function ID: 15929
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15928
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/native/images", width: 375, height: 162, scales: [1], hash: "bda37cc0de8c36fb8217439574ac2fe2", name: "featured_page_footer_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "6bdaa502cba91b47ad61952eaeb744a8", name: "th.messages.6bdaa502cba91b47ad61952eaeb744a8.compiled.messages", type: "jsona" });

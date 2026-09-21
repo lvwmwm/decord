@@ -1,9 +1,9 @@
-// Module ID: 1344
-// Function ID: 1345
+// Module ID: 1345
+// Function ID: 1346
 // Name: SessionStorage
 // Dependencies: [2, 511]
 
-// Module 1344 (SessionStorage)
+// Module 1345 (SessionStorage)
 import storage_Storage from "storage/Storage" /* 511 */;
 import size from "module_2" /* 2 */;
 

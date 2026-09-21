@@ -1,12 +1,12 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12733
+// Function ID: 12734
 // Name: openGuildPowerupsModal
-// Dependencies: [4839, 12613, 1896, 2]
+// Dependencies: [4959, 12734, 1980, 2]
 // Exports: default
 
-// Module 12612 (openGuildPowerupsModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+// Module 12733 (openGuildPowerupsModal)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import size from "module_2" /* 2 */;
 
 let c3 = 0;
@@ -23,5 +23,5 @@ export default function openGuildPowerupsModal(navigationParams) {
     obj.autoOpenRequestId = sum;
     tmp2 = obj;
   }
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12613, dependencyMap.paths), tmp2, "guild_powerups_modal_key", navigationParams.navigationParams);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12734, dependencyMap.paths), tmp2, "guild_powerups_modal_key", navigationParams.navigationParams);
 };

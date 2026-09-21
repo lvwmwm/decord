@@ -1,17 +1,17 @@
-// Module ID: 11027
-// Function ID: 11028
+// Module ID: 11156
+// Function ID: 11157
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4636, 1935, 1396, 8883, 7233, 2]
+// Dependencies: [19, 21, 4756, 2019, 1397, 9037, 7375, 2]
 // Exports: default
 
-// Module 11027 (ActivityEmoji)
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import EmojiDefault from "Emoji" /* 7233 */;
+// Module 11156 (ActivityEmoji)
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import EmojiDefault from "Emoji" /* 7375 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "System" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
@@ -29,7 +29,7 @@ export default function ActivityEmoji(emoji) {
   importDefault = undefined;
   const tmp = closure_5();
   let ReactionIcon = emoji;
-  const AnimateEmoji = emoji(1935).AnimateEmoji;
+  const AnimateEmoji = emoji(2019).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   if (emoji != null) {
@@ -64,7 +64,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(8883).ReactionIcon;
+    ReactionIcon = ReactionIcon(9037).ReactionIcon;
     const obj = { style, size: "sm" };
     <ReactionIcon style={style} size="sm" />;
   } else {

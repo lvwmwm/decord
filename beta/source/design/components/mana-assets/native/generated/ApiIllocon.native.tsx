@@ -1,13 +1,13 @@
-// Module ID: 5846
-// Function ID: 5847
+// Module ID: 5982
+// Function ID: 5983
 // Name: ApiIllocon
-// Dependencies: [21, 5668, 5847, 2]
+// Dependencies: [21, 5804, 5983, 2]
 // Exports: ApiIllocon
 
-// Module 5846 (ApiIllocon)
+// Module 5982 (ApiIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5847 from "module_5847" /* 5847 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef5983 from "module_5983" /* 5983 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const ApiIllocon = function ApiIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5847 };
+  const obj2 = { uri: _modDef5983 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,17 +1,17 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9496
+// Function ID: 9497
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1373, 21, 9513, 7540, 5668, 4294, 2]
+// Dependencies: [19, 1374, 21, 9497, 7679, 5804, 4414, 2]
 // Exports: default
 
-// Module 9512 (PremiumFeaturesLogo)
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import _modDef7540 from "module_7540" /* 7540 */;
-import _modDef9513 from "module_9513" /* 9513 */;
+// Module 9496 (PremiumFeaturesLogo)
+import PremiumUtils from "PremiumUtils" /* 4414 */;
+import _modDef7679 from "module_7679" /* 7679 */;
+import _modDef9497 from "module_9497" /* 9497 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesLogo.tsx");
@@ -19,14 +19,14 @@ const result = size.fileFinishedImporting("modules/user_settings/premium/native/
 export default function PremiumFeaturesLogo(premiumType) {
   premiumType = premiumType.premiumType;
   if (premiumType === PremiumTypes.TIER_0) {
-    let tmp3 = _modDef9513;
+    let tmp3 = _modDef9497;
     let tmp = importDefault;
   } else {
     tmp = importDefault;
-    tmp3 = _modDef7540;
+    tmp3 = _modDef7679;
   }
   const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain", source: null };
-  const tmpResult = tmp(5668);
+  const tmpResult = tmp(5804);
   obj.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
   obj.style = premiumType.style;
   obj.source = tmp3;

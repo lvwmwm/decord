@@ -1,13 +1,13 @@
-// Module ID: 6304
-// Function ID: 6305
+// Module ID: 6442
+// Function ID: 6443
 // Name: HighFiveSpotIllustration
-// Dependencies: [21, 5668, 6305, 2]
+// Dependencies: [21, 5804, 6443, 2]
 // Exports: HighFiveSpotIllustration
 
-// Module 6304 (HighFiveSpotIllustration)
+// Module 6442 (HighFiveSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6305 from "module_6305" /* 6305 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6443 from "module_6443" /* 6443 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const HighFiveSpotIllustration = function HighFiveSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6305 };
+  const obj2 = { uri: _modDef6443 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

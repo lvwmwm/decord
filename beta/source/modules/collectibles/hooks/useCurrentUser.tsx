@@ -1,13 +1,13 @@
-// Module ID: 8295
-// Function ID: 8296
+// Module ID: 8447
+// Function ID: 8448
 // Name: useCurrentUser
-// Dependencies: [1371, 504, 38, 2]
+// Dependencies: [1372, 504, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8295 (useCurrentUser)
+// Module 8447 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

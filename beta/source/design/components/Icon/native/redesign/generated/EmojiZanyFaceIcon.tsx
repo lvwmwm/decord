@@ -1,13 +1,13 @@
-// Module ID: 15485
-// Function ID: 15486
+// Module ID: 15672
+// Function ID: 15673
 // Name: EmojiZanyFaceIcon
-// Dependencies: [19, 21, 576, 4337, 15486, 2]
+// Dependencies: [19, 21, 576, 4456, 15673, 2]
 // Exports: EmojiZanyFaceIcon
 
-// Module 15485 (EmojiZanyFaceIcon)
+// Module 15672 (EmojiZanyFaceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod15486 from "module_15486" /* 15486 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod15673 from "module_15673" /* 15673 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const EmojiZanyFaceIcon = function EmojiZanyFaceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15486, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15673, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

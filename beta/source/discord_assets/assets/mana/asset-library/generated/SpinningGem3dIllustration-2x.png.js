@@ -1,11 +1,11 @@
-// Module ID: 6585
-// Function ID: 6586
+// Module ID: 6725
+// Function ID: 6726
 // Dependencies: [2]
 
-// Module 6585
+// Module 6725
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpinningGem3dIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/c3ff003d752626ef26f3494c941233243c0a4cddc982dd04402a489c62ec4b69.png";
-export const metadata = { fileBytes: 74661 };
+export default "https://cdn.discordapp.com/assets/content/3f13b41f7df4be099807bb070e71345b7dcb4bd6cb6335f884e43a563dd0ff5c.png";
+export const metadata = { fileBytes: 75142 };

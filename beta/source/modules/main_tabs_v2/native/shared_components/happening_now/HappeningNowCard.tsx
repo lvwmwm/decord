@@ -1,25 +1,25 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15567
+// Function ID: 15568
 // Name: HappeningNowCard
-// Dependencies: [19, 17, 15380, 21, 4636, 7046, 4490, 5688, 4632, 2]
+// Dependencies: [19, 17, 15566, 21, 4756, 7188, 4609, 5824, 4752, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 15381 (HappeningNowCard)
-import Text_Text from "Text/Text" /* 4632 */;
-import Card from "Card" /* 5688 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7046 */;
+// Module 15567 (HappeningNowCard)
+import Text_Text from "Text/Text" /* 4752 */;
+import Card from "Card" /* 5824 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7188 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const HappeningNowConstants = fn(15380);
+const HappeningNowConstants = fn(15566);
 const HAPPENING_NOW_CARD_MARGIN_RIGHT = HappeningNowConstants.HAPPENING_NOW_CARD_MARGIN_RIGHT;
 ({ HAPPENING_NOW_CARD_PADDING: hasOwnProperty, HAPPENING_NOW_CARD_HEIGHT: metroRequire, HAPPENING_NOW_BADGE_SIZE } = HappeningNowConstants);
 ({ HAPPENING_NOW_CARD_WIDTH_SMALL_MIN: closure_8, HAPPENING_NOW_CARD_WIDTH_SMALL_MAX: closure_9, HAPPENING_NOW_CARD_WIDTH_MEDIUM_MIN: c10, HAPPENING_NOW_CARD_WIDTH_MEDIUM_MAX: closure_11, HAPPENING_NOW_CARD_WIDTH_LARGE_MIN: closure_12, HAPPENING_NOW_CARD_WIDTH_LARGE_MAX: map1, HAPPENING_NOW_CARD_PADDING_RIGHT: closure_14, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MIN: closure_15, HAPPENING_NOW_CARD_WIDTH_STRETCHY_MAX: closure_16, HAPPENING_NOW_CARD_WIDTH_LARGE_PANELS_MAX: closure_17, HAPPENING_NOW_PANELS_CONTAINER_PADDING } = HappeningNowConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, jsxs: closure_19 } = jsxProd);
 let closure_20 = HAPPENING_NOW_PANELS_CONTAINER_PADDING + HAPPENING_NOW_CARD_MARGIN_RIGHT;
-let createStyles = fn(4636);
+let createStyles = fn(4756);
 let closure_21 = createStyles.createStyles((arg0, arg1, arg2) => {
   if ("small" === arg0) {
     const obj2 = { minWidth, maxWidth };
@@ -62,7 +62,7 @@ let closure_21 = createStyles.createStyles((arg0, arg1, arg2) => {
   obj6.cardBadge = size;
   return obj6;
 });
-createStyles = fn(4636);
+createStyles = fn(4756);
 let obj3 = { cardHeaderMargin: { marginRight: HAPPENING_NOW_BADGE_SIZE + 4 } };
 let closure_22 = createStyles.createStyles(obj3);
 let size = fn(2);

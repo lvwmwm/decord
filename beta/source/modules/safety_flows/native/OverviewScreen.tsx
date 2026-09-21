@@ -1,26 +1,26 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18326
+// Function ID: 18327
 // Name: OverviewScreen
-// Dependencies: [19, 21, 4636, 17985, 1483, 17986, 8539, 8540, 5054, 576, 4632, 1114, 2690, 5768, 8700, 17980, 12060, 17987, 11132, 2]
+// Dependencies: [19, 21, 4756, 18327, 1484, 18328, 8693, 8694, 5184, 576, 4752, 1115, 2776, 5904, 8854, 18322, 12181, 18329, 11262, 2]
 // Exports: default
 
-// Module 17984 (OverviewScreen)
-import SafetyFlowsUtils from "SafetyFlowsUtils" /* 17986 */;
+// Module 18326 (OverviewScreen)
+import SafetyFlowsUtils from "SafetyFlowsUtils" /* 18328 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles({ content: { margin: "auto", overflow: "visible", justifyContent: "center", textAlign: "center", alignItems: "center" }, title: { textAlign: "center", textTransform: "uppercase", lineHeight: 50 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_flows/native/OverviewScreen.tsx");
 
 export default function OverviewScreen() {
   let tmp = closure_6();
-  task = task(17985).useSafetyFlowTask().task;
-  let obj = task(17985);
-  const navigation = task(1483).useNavigation();
+  task = task(18327).useSafetyFlowTask().task;
+  let obj = task(18327);
+  const navigation = task(1484).useNavigation();
   const items = [task, navigation];
   const callback = noop.useCallback(() => {
     const screensForTaskType = SafetyFlowsUtils.getScreensForTaskType(task.task_type);
@@ -37,13 +37,13 @@ export default function OverviewScreen() {
   }, items);
   const obj3 = { spacing: navigation(576).space.PX_16, style: tmp.content, children: null };
   const obj4 = { variant: "display-lg", style: tmp.title, children: null };
-  const intl = task(1114).intl;
-  obj4.children = intl.string(navigation(2690).RRamMH);
-  const items1 = [closure_4(task(4632).Text, obj4), , ];
+  const intl = task(1115).intl;
+  obj4.children = intl.string(navigation(2776).RRamMH);
+  const items1 = [closure_4(task(4752).Text, obj4), , ];
   const obj5 = { variant: "text-md/medium", color: "text-strong", children: null };
-  const intl2 = task(1114).intl;
-  obj5.children = intl2.string(navigation(2690).I2Ctk1);
-  items1[1] = closure_4(task(4632).Text, obj5);
+  const intl2 = task(1115).intl;
+  obj5.children = intl2.string(navigation(2776).I2Ctk1);
+  items1[1] = closure_4(task(4752).Text, obj5);
   const obj6 = { spacing: navigation(576).space.PX_8, children: null };
   const flow_context = task.flow_context;
   let mapped;
@@ -51,32 +51,32 @@ export default function OverviewScreen() {
     const tasks = flow_context.tasks;
     if (tasks != null) {
       mapped = tasks.map((task_type, index) => {
-        const obj = { tip: task(17980).TASK_TYPE_TO_TITLE[task_type.task_type], index: index + 1 };
-        return closure_1_4(navigation(8700), obj, task_type.task_type);
+        const obj = { tip: task(18322).TASK_TYPE_TO_TITLE[task_type.task_type], index: index + 1 };
+        return closure_1_4(navigation(8854), obj, task_type.task_type);
       });
     }
   }
   const obj7 = { children: null };
   const obj8 = { children: null };
-  const items2 = [closure_4(task(5768).TableRowGroup, { hasIcons: true, children: mapped }), ];
+  const items2 = [closure_4(task(5904).TableRowGroup, { hasIcons: true, children: mapped }), ];
   const obj9 = { variant: "text-xs/medium", color: "text-muted", children: null };
-  const intl3 = tmp2(1114).intl;
-  obj9.children = intl3.string(navigation(2690)["0TnUrG"]);
-  items2[1] = closure_4(task(4632).Text, obj9);
+  const intl3 = tmp2(1115).intl;
+  obj9.children = intl3.string(navigation(2776)["0TnUrG"]);
+  items2[1] = closure_4(task(4752).Text, obj9);
   obj6.children = items2;
-  items1[2] = closure_5(task(5054).Stack, obj6);
+  items1[2] = closure_5(task(5184).Stack, obj6);
   obj3.children = items1;
-  obj8.children = closure_5(task(5054).Stack, obj3);
-  const items3 = [closure_4(task(8540).ModalContent, obj8), ];
+  obj8.children = closure_5(task(5184).Stack, obj3);
+  const items3 = [closure_4(task(8694).ModalContent, obj8), ];
   const obj10 = { children: null };
-  const items4 = [closure_4(navigation(17987), {}), ];
+  const items4 = [closure_4(navigation(18329), {}), ];
   const obj11 = { variant: "primary", text: null, onPress: null };
-  const intl4 = tmp2(1114).intl;
-  obj11.text = intl4.string(navigation(2690).Ks6opt);
+  const intl4 = tmp2(1115).intl;
+  obj11.text = intl4.string(navigation(2776).Ks6opt);
   obj11.onPress = callback;
-  items4[1] = closure_4(task(11132).ModalActionButton, obj11);
+  items4[1] = closure_4(task(11262).ModalActionButton, obj11);
   obj10.children = items4;
-  items3[1] = closure_5(task(12060).ModalFooter, obj10);
+  items3[1] = closure_5(task(12181).ModalFooter, obj10);
   obj7.children = items3;
-  return closure_5(task(8539).ModalScreen, obj7);
+  return closure_5(task(8693).ModalScreen, obj7);
 };

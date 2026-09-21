@@ -1,15 +1,15 @@
-// Module ID: 15920
-// Function ID: 15921
+// Module ID: 16152
+// Function ID: 16153
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 576, 4636, 8893, 15921, 7265, 7285, 2]
+// Dependencies: [19, 17, 21, 576, 4756, 9047, 16153, 7407, 7427, 2]
 // Exports: default
 
-// Module 15920 (FeaturedBlock)
+// Module 16152 (FeaturedBlock)
 import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7265 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8893 */;
-import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 15921 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7407 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9047 */;
+import FeaturedCategorySubblockDefault from "FeaturedCategorySubblock" /* 16153 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
@@ -27,7 +27,7 @@ function Subblocks(style) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/FeaturedBlock.tsx");

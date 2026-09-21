@@ -1,25 +1,25 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17840
+// Function ID: 17841
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8277, 1074, 21, 4636, 576, 5763, 5605, 1611, 504, 14681, 17551, 8286, 8364, 5219, 8281, 8283, 4632, 1114, 17560, 1176, 5056, 17548, 1248, 7480, 5705, 7103, 2]
+// Dependencies: [5, 32, 19, 17, 8429, 1074, 21, 4756, 576, 5899, 5741, 1612, 504, 14869, 17841, 8438, 8517, 5354, 8433, 8435, 4752, 1115, 17850, 1177, 5186, 17838, 1249, 7619, 5841, 7245, 2]
 
-// Module 17550 (AddAvatarModal)
+// Module 17840 (AddAvatarModal)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
-import Navigator from "Navigator" /* 7103 */;
-import VideoBackground from "VideoBackground" /* 8364 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17548 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import Navigator from "Navigator" /* 7245 */;
+import VideoBackground from "VideoBackground" /* 8517 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 17838 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
-import TextStyles from "TextStyles" /* 5605 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 require = fn;
 function AddAvatarScreen() {
@@ -55,7 +55,7 @@ function AddAvatarScreen() {
             const obj7 = { size };
             dependencyMap = 1;
             c3 = 1;
-            const obj9 = { value: tmp2(5219).openImagePicker(obj7), done: false };
+            const obj9 = { value: tmp2(5354).openImagePicker(obj7), done: false };
             return obj9;
           }
         } else if (noop === 1) {
@@ -71,23 +71,23 @@ function AddAvatarScreen() {
             pendingImage = undefined;
             if (null != base64) {
               const obj11 = { imageUri: base64, description: null };
-              const obj = tmp2(14681);
-              obj11.description = tmp2(8286).generateAvatarDescription();
+              const obj = tmp2(14869);
+              obj11.description = tmp2(8438).generateAvatarDescription();
               pendingImage = obj.createPendingImage(obj11);
-              const obj3 = tmp2(8286);
+              const obj3 = tmp2(8438);
             }
             closure_128_1 = pendingImage;
             const obj12 = { avatar: closure_128_1 };
-            tmp2(8281).setPendingChanges(obj12);
-            const obj4 = tmp2(8281);
+            tmp2(8433).setPendingChanges(obj12);
+            const obj4 = tmp2(8433);
             let str = "set";
             if (null == closure_128_1) {
               str = "remove";
             }
-            const result = tmp2(8283).announcePendingAvatarChange(str);
+            const result = tmp2(8435).announcePendingAvatarChange(str);
             closure_129_2(undefined);
             c3 = 3;
-            const obj6 = tmp2(8283);
+            const obj6 = tmp2(8435);
           }
           closure_129_0(true);
         }
@@ -102,17 +102,17 @@ function AddAvatarScreen() {
   const tmp4 = _slicedToArray(noop.useState(), 2);
   const selectedAvatar = tmp4[0];
   dependencyMap = tmp6;
-  const bottom = selectedAvatar(1611)().bottom;
+  const bottom = selectedAvatar(1612)().bottom;
   const tmp2 = _slicedToArray(noop.useState(false), 2);
   const items = [UserProfileSettingsStore];
   let pendingImage;
   const stateFromStores = initialize.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(17551).DEFAULT_AVATARS[selectedAvatar], description: null };
-    const tmp9Result = tmp9(14681);
-    obj2.description = tmp9(8286).generateAvatarDescription();
+    let obj2 = { imageUri: tmp9(17841).DEFAULT_AVATARS[selectedAvatar], description: null };
+    const tmp9Result = tmp9(14869);
+    obj2.description = tmp9(8438).generateAvatarDescription();
     pendingImage = tmp9Result.createPendingImage(obj2);
-    const tmp9Result3 = tmp9(8286);
+    const tmp9Result3 = tmp9(8438);
   }
   if (pendingImage == null) {
     pendingImage = stateFromStores;
@@ -132,17 +132,17 @@ function AddAvatarScreen() {
   let obj4 = { style: tmp.headerContainer, children: null };
   let obj5 = { children: null };
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp9(1114).intl;
+  const intl = tmp9(1115).intl;
   obj6.children = intl.string(util.t.XQRWvR);
   const items2 = [closure_9(Text_Text.Text, obj6), ];
   let obj7 = { style: tmp.subtitle, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
-  const intl2 = tmp9(1114).intl;
+  const intl2 = tmp9(1115).intl;
   obj7.children = intl2.string(util.t.fH9TLT);
   items2[1] = closure_9(Text_Text.Text, obj7);
   obj5.children = items2;
   const items3 = [closure_10(View, obj5), , ];
   const memoizedImageSourceResult = VideoBackground.memoizedImageSource(imageUri);
-  items3[1] = closure_9(selectedAvatar(17560), {
+  items3[1] = closure_9(selectedAvatar(17850), {
     avatarSource: VideoBackground.memoizedImageSource(imageUri),
     showPendingAvatar: null != pendingImage,
     onSelectAvatar: function handleSelectAvatar() {
@@ -159,17 +159,17 @@ function AddAvatarScreen() {
   let obj9 = { style: tmp.errorContainer, children: null };
   let obj10 = { style: tmp.errorText, children: null };
   if (stringResult) {
-    const intl3 = tmp9(1114).intl;
-    stringResult = intl3.string(tmp9(1114).t.XyLlVm);
+    const intl3 = tmp9(1115).intl;
+    stringResult = intl3.string(tmp9(1115).t.XyLlVm);
   }
   obj10.children = stringResult;
   obj9.children = closure_9(native.LegacyText, obj10);
   items3[2] = closure_9(View, obj9);
   obj4.children = items3;
-  const items4 = [closure_10(View, obj4), closure_9(selectedAvatar(17551), { onAvatarSelect: tmp4[1], selectedAvatar }), ];
+  const items4 = [closure_10(View, obj4), closure_9(selectedAvatar(17841), { onAvatarSelect: tmp4[1], selectedAvatar }), ];
   let obj11 = { style: tmp.buttonContainer, children: null };
   let obj12 = { text: null, grow: true, onPress: null, disabled: null };
-  const intl4 = tmp9(1114).intl;
+  const intl4 = tmp9(1115).intl;
   obj12.text = intl4.string(util.t.PDTjLN);
   obj12.onPress = function onPress() {
     return AddAvatarModalActionCreators.handlePressNext(pendingImage, first);
@@ -188,12 +188,12 @@ class AddAvatarModal {
         impressionName: discord_common_AnalyticsUtils.ImpressionNames.AVATAR_UPLOAD,
         headerRight() {
           const obj = { text: null, onPress: null };
-          const intl = closure_1_0(1114).intl;
-          obj.text = intl.string(closure_1_0(1114).t["5Wxrcd"]);
+          const intl = closure_1_0(1115).intl;
+          obj.text = intl.string(closure_1_0(1115).t["5Wxrcd"]);
           obj.onPress = function onPress() {
             return closure_1_0(dependencyMap[25]).showSkipAvatarModal();
           };
-          return closure_1_9(closure_1_0(7480).HeaderActionButton, obj);
+          return closure_1_9(closure_1_0(7619).HeaderActionButton, obj);
         },
         headerLeft() {
           return null;
@@ -216,8 +216,8 @@ const Constants = fn(1074);
 ({ UPLOAD_MEDIUM_SIZE: closure_8, Fonts, ModalAnimation } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5763).NAV_BAR_HEIGHT + 32, alignItems: "center" }, headerContainer: { display: "flex", alignItems: "center" }, buttonContainer: { marginHorizontal: 16, marginBottom: 16 }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { textAlign: "center" }, errorContainer: { alignSelf: "center", paddingTop: 24 }, errorText: null };
+const createStyles = fn(4756);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center", paddingTop: fn(5899).NAV_BAR_HEIGHT + 32, alignItems: "center" }, headerContainer: { display: "flex", alignItems: "center" }, buttonContainer: { marginHorizontal: 16, marginBottom: 16 }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { textAlign: "center" }, errorContainer: { alignSelf: "center", paddingTop: 24 }, errorText: null };
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_MEDIUM, nativeDefault.unsafe_rawColors.RED_400, 12));
 obj2.errorText = {};
 let closure_11 = createStyles.createStyles(obj2);

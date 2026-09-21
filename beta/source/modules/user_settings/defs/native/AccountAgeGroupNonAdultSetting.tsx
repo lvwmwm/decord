@@ -1,17 +1,17 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 15033
+// Function ID: 15034
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8079, 8529, 8531, 4849, 1114, 5504, 14769, 11605, 2]
+// Dependencies: [8233, 8682, 8684, 4968, 1115, 5640, 14957, 11725, 2]
 
-// Module 14845 (AccountAgeGroupNonAdultSetting)
-import util from "util" /* 1114 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4849 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5504 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8531 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14769 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15033 (AccountAgeGroupNonAdultSetting)
+import util from "util" /* 1115 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 4968 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14957 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const pressable = SettingBuilders.createPressable({
@@ -25,8 +25,8 @@ const pressable = SettingBuilders.createPressable({
     const intl = util.intl;
     let stringResult = intl.string(util.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1114).intl;
-      stringResult = intl2.string(tmp(1114).t.sK0dmH);
+      const intl2 = tmp(1115).intl;
+      stringResult = intl2.string(tmp(1115).t.sK0dmH);
     }
     return stringResult;
   },

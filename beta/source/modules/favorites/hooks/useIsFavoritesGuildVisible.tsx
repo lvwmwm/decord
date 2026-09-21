@@ -1,15 +1,15 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15597
+// Function ID: 15598
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4458, 1960, 1982, 10367, 10353, 504, 2]
+// Dependencies: [4577, 2044, 2066, 10496, 10482, 504, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 15411 (useIsFavoritesGuildVisible)
-import FavoritesUtils from "FavoritesUtils" /* 1982 */;
-import FavoritesHooks from "FavoritesHooks" /* 10353 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10367 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import FavoriteStore from "FavoriteStore" /* 1960 */;
+// Module 15597 (useIsFavoritesGuildVisible)
+import FavoritesUtils from "FavoritesUtils" /* 2066 */;
+import FavoritesHooks from "FavoritesHooks" /* 10482 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10496 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import FavoriteStore from "FavoriteStore" /* 2044 */;
 
 require = fn;
 function computeIsFavoritesGuildVisible(FavoriteStore, SelectedGuildStore, isExperimentEnabled) {

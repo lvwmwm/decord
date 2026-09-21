@@ -1,12 +1,12 @@
-// Module ID: 14571
-// Function ID: 14572
+// Module ID: 14763
+// Function ID: 14764
 // Name: internalDeepLinks
-// Dependencies: [32, 1365, 4325, 8495, 2]
+// Dependencies: [32, 1366, 4445, 8648, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
-// Module 14571 (internalDeepLinks)
-import URLUtilsDefault from "URLUtils" /* 1365 */;
-import openURL from "openURL" /* 4325 */;
+// Module 14763 (internalDeepLinks)
+import URLUtilsDefault from "URLUtils" /* 1366 */;
+import openURL from "openURL" /* 4445 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -28,7 +28,7 @@ export const resolveInternalDeepLink = function resolveInternalDeepLink(url) {
           const _HermesInternal = HermesInternal;
           let combined = "/" + hostname + pathname;
         }
-        tmpResult4 = tmp(1365);
+        tmpResult4 = tmp(1366);
       }
       let combined1 = pathname;
       if (!pathname.startsWith("/")) {
@@ -41,7 +41,7 @@ export const resolveInternalDeepLink = function resolveInternalDeepLink(url) {
         if (!tmpResult6.isDiscordLocalhost(host, hostname2)) {
           return null;
         }
-        tmpResult6 = tmp(1365);
+        tmpResult6 = tmp(1366);
       }
       const tmp11 = _slicedToArray(toURLSafeResult.pathname.split("/"), 2)[1];
       let combined2 = null;
@@ -54,7 +54,7 @@ export const resolveInternalDeepLink = function resolveInternalDeepLink(url) {
       }
       return combined2;
     }
-    tmpResult = tmp(1365);
+    tmpResult = tmp(1366);
   }
 };
 export const openInternalDeepLink = function openInternalDeepLink(internalDeepLink) {

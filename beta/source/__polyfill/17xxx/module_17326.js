@@ -1,9 +1,9 @@
 // Module ID: 17326
 // Function ID: 17327
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 17326
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "28a4fc424c84aa1427fe3a27faf0383e", name: "settings", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/forum_channels", width: 343, height: 236, scales: [1], hash: "6e9bbbae1088530d5ab3c52a383f127c", name: "channel_settings_list_view_example_post", type: "png" });

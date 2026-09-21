@@ -1,65 +1,59 @@
 // Module ID: 4002
 // Function ID: 4003
-// Dependencies: [3725, 3726]
+// Dependencies: [3845, 4003, 3846]
 // Exports: default
 
 // Module 4002
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3845" /* 3845 */;
+import startOfISOWeek_mod from "startOfISOWeek" /* 4003 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
-  let obj = { default: _typeof };
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  let obj2 = { default: requiredArgs };
+let startOfISOWeek = startOfISOWeek_mod;
+if (!startOfISOWeek) {
+  const obj2 = { default: startOfISOWeek };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = startOfISOWeek;
 }
-requiredArgs = tmp5;
-let c2 = 86400000;
+startOfISOWeek = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function getOverlappingDaysInIntervals(arg0, arg1) {
-  let obj = arg0;
-  requiredArgs.default(2, arguments);
-  if (!arg0) {
-    obj = {};
-  }
-  let obj2 = arg1;
-  if (!arg1) {
-    obj2 = {};
-  }
-  const time = _typeof.default(obj.start).getTime();
-  const defaultResult1 = _typeof.default(obj.start);
-  const time1 = _typeof.default(obj.end).getTime();
-  const defaultResult2 = _typeof.default(obj.end);
-  let time2 = _typeof.default(obj2.start).getTime();
-  const defaultResult3 = _typeof.default(obj2.start);
-  let time3 = _typeof.default(obj2.end).getTime();
-  if (time <= time1) {
-    if (time2 <= time3) {
-      if (time < time3) {
-        if (time2 < time1) {
-          if (time3 > time1) {
-            time3 = time1;
-          }
-          if (time2 < time) {
-            time2 = time;
-          }
-          const _Math = Math;
-          return Math.ceil((time3 - time2) / c2);
-        }
-      }
-      return 0;
+export default function getISOWeekYear(arg0) {
+  requiredArgs.default(1, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const fullYear = defaultResult1.getFullYear();
+  const date = new Date(0);
+  date.setFullYear(fullYear + 1, 0, 4);
+  date.setHours(0, 0, 0, 0);
+  const date1 = new Date(0);
+  date1.setFullYear(fullYear, 0, 4);
+  date1.setHours(0, 0, 0, 0);
+  const defaultResult2 = startOfISOWeek.default(date);
+  const time = defaultResult1.getTime();
+  if (time >= defaultResult2.getTime()) {
+    let sum = fullYear + 1;
+  } else {
+    const time1 = defaultResult1.getTime();
+    sum = fullYear;
+    if (time1 < defaultResult3.getTime()) {
+      sum = fullYear - 1;
     }
   }
-  const rangeError = new RangeError("Invalid interval");
-  throw rangeError;
+  return sum;
 };
 export default exports.default;

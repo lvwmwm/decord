@@ -1,16 +1,16 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 9905
+// Function ID: 9906
 // Name: AudioRouteStore
-// Dependencies: [17, 4659, 9213, 1363, 9214, 504, 573, 2]
+// Dependencies: [17, 4779, 9906, 1364, 9907, 504, 573, 2]
 
-// Module 9212 (AudioRouteStore)
+// Module 9905 (AudioRouteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 9213 */;
-import NativeAudioRouteEmitterModuleDefault from "NativeAudioRouteEmitterModule" /* 9214 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 9906 */;
+import NativeAudioRouteEmitterModuleDefault from "NativeAudioRouteEmitterModule" /* 9907 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
 import size from "module_2" /* 2 */;
 
 function handleAudioRouteChanged(arr) {

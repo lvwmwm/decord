@@ -1,10 +1,10 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 7934
+// Function ID: 7935
 // Name: InteractionObserverUtils
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 7800 (InteractionObserverUtils)
+// Module 7934 (InteractionObserverUtils)
 import size from "module_2" /* 2 */;
 
 function __handleIntersections(arr, arg1) {

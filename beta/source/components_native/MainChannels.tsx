@@ -1,22 +1,25 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16354
+// Function ID: 16355
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 1074, 21, 16113, 5667, 4636, 576, 4497, 1611, 16114, 16115, 16116, 16200, 16378, 4373, 16117, 16459, 4500, 11666, 2]
+// Dependencies: [32, 19, 17, 16355, 1074, 16345, 21, 16357, 5803, 4756, 576, 4616, 1612, 16358, 16359, 16360, 16442, 16620, 4492, 16361, 16342, 16347, 16344, 16701, 4619, 11784, 2]
 
-// Module 16112 (MainChannels)
+// Module 16354 (MainChannels)
 import nativeDefault from "native" /* 576 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4500 */;
-import useRefValueDefault from "useRefValue" /* 5667 */;
-import StartupProfiler from "StartupProfiler" /* 11666 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 16113 */;
-import NativeFreezeScreens from "NativeFreezeScreens" /* 16115 */;
-import messages_MessagesDefault from "messages/Messages" /* 16116 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16117 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 16200 */;
-import HomePanelContent from "HomePanelContent" /* 16378 */;
-import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16459 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4619 */;
+import useRefValueDefault from "useRefValue" /* 5803 */;
+import StartupProfiler from "StartupProfiler" /* 11784 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16342 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 16347 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 16357 */;
+import NativeFreezeScreens from "NativeFreezeScreens" /* 16359 */;
+import messages_MessagesDefault from "messages/Messages" /* 16360 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 16442 */;
+import HomePanelContent from "HomePanelContent" /* 16620 */;
+import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16701 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16355 */;
 
 const StartupProfilerDefault = StartupProfiler;
 
@@ -24,7 +27,7 @@ require = fn;
 function LeftPanelContent(panelStyles) {
   panelStyles = panelStyles.panelStyles;
   let top;
-  const tmp = closure_11();
+  const tmp = closure_13();
   const tmp4 = _slicedToArray(useGuildsRouteGuildId.useGuildsRouteGuildAndChannelId(), 2);
   const current = tmp4[0];
   const ref = noop.useRef(current);
@@ -41,8 +44,8 @@ function LeftPanelContent(panelStyles) {
   if (tmp8) {
     tmp11 = current;
   }
-  isChatBesideChannelList = tmp10(4497)().isChatBesideChannelList;
-  top = tmp10(1611)().top;
+  isChatBesideChannelList = tmp10(4616)().isChatBesideChannelList;
+  top = tmp10(1612)().top;
   const items1 = [tmp, top];
   const memo = obj2.useMemo(() => {
     const items = [first.sideContainer, { marginTop: top }];
@@ -58,15 +61,15 @@ function LeftPanelContent(panelStyles) {
     items[1] = sideTablet;
     return items;
   }, items2);
-  const sum = DM_WIDTH + tmp10(16114)();
+  const sum = DM_WIDTH + tmp10(16358)();
   let num = 0;
   if (tmp8) {
     num = 1;
   }
   const obj3 = { activeIndex: num, children: null };
-  const items3 = [React7(messages_MessagesDefault, { style: memo1 }), React7(RedesignChannelListDefault, { style: memo1, selectedGuildId: tmp11, selectedChannelId: tmp4[1] })];
+  const items3 = [closure_1_11(messages_MessagesDefault, { style: memo1 }), closure_1_11(RedesignChannelListDefault, { style: memo1, selectedGuildId: tmp11, selectedChannelId: tmp4[1] })];
   obj3.children = items3;
-  const tmp15Result = closure_1_10(NativeFreezeScreens.NativeFreezeScreens, obj3);
+  const tmp15Result = closure_1_12(NativeFreezeScreens.NativeFreezeScreens, obj3);
   const items4 = [absoluteFill.absoluteFill, ];
   let tmp19;
   if (isChatBesideChannelList) {
@@ -74,7 +77,7 @@ function LeftPanelContent(panelStyles) {
   }
   const obj4 = { style: items4, children: null };
   items4[1] = { width: tmp19 };
-  const items5 = [React7(HomePanelContent.HomePanelContent, {}), ];
+  const items5 = [closure_1_11(HomePanelContent.HomePanelContent, {}), ];
   if (null == panelStyles) {
     const obj5 = { style: memo, pointerEvents: "box-none", nativeID: "messages-parent-view", children: tmp15Result };
     let tmp16Result = tmp16(tmp18, obj5);
@@ -83,35 +86,57 @@ function LeftPanelContent(panelStyles) {
     const items6 = [memo, panelStyles];
     obj6.style = items6;
     obj6.children = tmp15Result;
-    tmp16Result = tmp16(tmp10(4373).View, obj6);
+    tmp16Result = tmp16(tmp10(4492).View, obj6);
   }
   items5[1] = tmp16Result;
   obj4.children = items5;
-  return closure_1_10(hasOwnProperty, obj4);
+  return closure_1_12(hasOwnProperty, obj4);
+}
+function resolveHomeDrawerName() {
+  return HOME_DRAWER_SCREEN;
 }
 function LeftPanelHomeDrawerContainer() {
   const homeGesture = useHomeDrawerGesture.useHomeGesture();
-  ({ gesture, panelStyles, homeDrawerContext } = homeGesture);
+  const homeDrawerContext = homeGesture.homeDrawerContext;
+  ({ gesture, panelStyles } = homeGesture);
+  const tmp5 = HomeDrawerStore((maxX) => maxX.maxX);
   const obj2 = { value: homeDrawerContext, children: null };
-  obj2.children = React7(NonCollapsableGestureDetector.NonCollapsableGestureDetector, { gesture, children: React7(LeftPanelContent, { panelStyles }) });
-  return React7(useHomeDrawerGesture.HomeDrawerStateContext.Provider, obj2);
+  const tmp4 = HomeDrawerStore((panelX) => panelX.panelX);
+  const tmp6 = closure_1_12;
+  let tmp7 = null;
+  if (obj3.isJankScreenReportingEnabled()) {
+    tmp7 = null;
+    if (homeDrawerContext.enableHome) {
+      tmp7 = null;
+      if (tmp5 > 0) {
+        const obj4 = { position: tmp4, openAt: tmp5, closedAt: 0, resolveOpenName: resolveHomeDrawerName, resolveClosedName: tmp(16344).getBaseScreenName };
+        tmp7 = closure_1_11(JankSlidingSurfaceReporterDefault, obj4);
+      }
+    }
+  }
+  const items = [tmp7, ];
+  obj3 = isJankScreenReportingEnabled;
+  items[1] = closure_1_11(NonCollapsableGestureDetector.NonCollapsableGestureDetector, { gesture, children: closure_1_11(LeftPanelContent, { panelStyles }) });
+  obj2.children = items;
+  return tmp6(useHomeDrawerGesture.HomeDrawerStateContext.Provider, obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
 const Constants = fn(1074);
 const DM_WIDTH = Constants.DM_WIDTH;
 const ME = Constants.ME;
+const HOME_DRAWER_SCREEN = fn(16345).HOME_DRAWER_SCREEN;
 const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
+const createStyles = fn(4756);
 let obj = { fill: { flex: 1 }, sideContainer: null, side: null, sideTablet: null };
 const rect = { position: "absolute", top: 0, left: DM_WIDTH, bottom: 0, right: 0, flexDirection: "row", borderLeftWidth: 1, borderTopWidth: 1, borderColor: nativeDefault.colors.APP_FRAME_BORDER, borderTopLeftRadius: nativeDefault.radii.xl };
 obj.sideContainer = rect;
 obj.side = { borderTopLeftRadius: nativeDefault.radii.xl - 1, borderTopRightRadius: nativeDefault.radii.none };
 let obj3 = { borderTopLeftRadius: nativeDefault.radii.xl - 1, borderTopRightRadius: nativeDefault.radii.none };
 obj.sideTablet = { borderTopRightRadius: nativeDefault.modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
-let closure_11 = createStyles.createStyles(obj);
-let closure_14 = noop.memo(function LeftMenuTabsInner() {
+let closure_13 = createStyles.createStyles(obj);
+let closure_17 = noop.memo(function LeftMenuTabsInner() {
   const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
   if (MobileHomeDrawerExperiment.useConfig({ location: "gesture" }).enableHome) {
     let tmp2Result = tmp2(LeftPanelHomeDrawerContainer, {});
@@ -126,6 +151,6 @@ const size = fn(2);
 const result = size.fileFinishedImporting("components_native/MainChannels.tsx");
 
 export default noop.memo(function MainChannelsRedesignInner() {
-  const obj = { profile: StartupProfiler.Profiles.LeftPanel, children: React7(closure_14, {}) };
-  return React7(StartupProfilerDefault, obj);
+  const obj = { profile: StartupProfiler.Profiles.LeftPanel, children: closure_1_11(closure_17, {}) };
+  return closure_1_11(StartupProfilerDefault, obj);
 });

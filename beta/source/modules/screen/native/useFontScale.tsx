@@ -1,13 +1,13 @@
-// Module ID: 5063
-// Function ID: 5064
+// Module ID: 5193
+// Function ID: 5194
 // Name: useFontScale
-// Dependencies: [19, 1478, 1480, 2]
+// Dependencies: [19, 1479, 1481, 2]
 // Exports: getFontScale, useFontScale
 
-// Module 5063 (useFontScale)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1480 */;
+// Module 5193 (useFontScale)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
 import noop from "module_19" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1478 */;
+import DimensionsStore from "DimensionsStore" /* 1479 */;
 
 require = fn;
 const size = fn(2);

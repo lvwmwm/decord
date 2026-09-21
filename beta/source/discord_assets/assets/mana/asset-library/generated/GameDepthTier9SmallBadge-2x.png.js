@@ -1,12 +1,12 @@
-// Module ID: 6149
-// Function ID: 6150
+// Module ID: 6287
+// Function ID: 6288
 // Dependencies: [2]
 
-// Module 6149
+// Module 6287
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier9SmallBadge-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/b92c83c5d940baa024697835e75b7e035c9c641c327e1db69d11d7e753682b4e.png";
+export default "https://cdn.discordapp.com/assets/content/2d2a5db3a381d86d4a680dec7a55e8dedc48cd883fcf2436de43fbc5726395fa.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/GameDepthTier9SmallBadge-2x.png";
-export const metadata = { fileBytes: 1406 };
+export const metadata = { fileBytes: 1268 };

@@ -1,9 +1,26 @@
 // Module ID: 5445
 // Function ID: 5446
-// Dependencies: [1120]
+// Dependencies: [5430]
 
 // Module 5445
-import registerAsset from "module_1120" /* 1120 */;
+import _mod5430 from "module_5430" /* 5430 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 0;
+let c3 = "<?xpacket begin";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "153924e2c4b62b4b147186cc6eff6db0", name: "img_account_sync_riot_white", type: "svg" });
+export default {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      tmp = _mod5430.getStringFromDataView(dataView, c2, length.length) === length;
+    }
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    xmpChunks.push({ dataOffset, length: byteLength.byteLength });
+    return { xmpChunks };
+  }
+};

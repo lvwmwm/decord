@@ -1,15 +1,15 @@
 // Module ID: 4122
 // Function ID: 4123
-// Dependencies: [3725, 3726]
+// Dependencies: [3845, 3846]
 // Exports: default
 
 // Module 4122
-import _typeof_mod from "module_3725" /* 3725 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3845" /* 3845 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
-  const obj = { default: _typeof };
+  let obj = { default: _typeof };
   let tmp3 = obj;
 } else {
   tmp3 = _typeof;
@@ -17,50 +17,49 @@ if (!_typeof) {
 _typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+  let obj2 = { default: requiredArgs };
   let tmp5 = obj2;
 } else {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
+let c2 = 86400000;
 
-export default function parseJSON(str) {
-  requiredArgs.default(1, arguments);
-  if (typeof str === "string") {
-    const match = str.match(/(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2}):(\d{2})(?:\.(\d{0,7}))?(?:Z|(.)(\d{2}):?(\d{2})?)?/);
-    const _Date = Date;
-    if (match) {
-      const _Date2 = Date;
-      let num2 = +match[9];
-      if (!num2) {
-        num2 = 0;
-      }
-      let num3 = 1;
-      if ("-" == match[8]) {
-        num3 = -1;
-      }
-      let num4 = +match[10];
-      if (!num4) {
-        num4 = 0;
-      }
-      let num5 = 1;
-      if ("-" == match[8]) {
-        num5 = -1;
-      }
-      const diff = +match[2] - 1;
-      const text = `${tmp13}00`;
-      const diff1 = +match[4] - num2 * num3;
-      const diff2 = +match[5] - num4 * num5;
-      let _Date1 = new _Date(Date.UTC(tmp7, diff, tmp9, diff1, diff2, tmp12, +`${tmp13}00`.substring(0, 3)));
-      const tmp10 = +match[4];
-      const tmp11 = +match[5];
-      const tmp8 = +match[2];
-    } else {
-      _Date1 = new _Date(NaN);
-    }
-    return _Date1;
-  } else {
-    return _typeof.default(str);
+export default function getOverlappingDaysInIntervals(arg0, arg1) {
+  let obj = arg0;
+  requiredArgs.default(2, arguments);
+  if (!arg0) {
+    obj = {};
   }
+  let obj2 = arg1;
+  if (!arg1) {
+    obj2 = {};
+  }
+  const time = _typeof.default(obj.start).getTime();
+  const defaultResult1 = _typeof.default(obj.start);
+  const time1 = _typeof.default(obj.end).getTime();
+  const defaultResult2 = _typeof.default(obj.end);
+  let time2 = _typeof.default(obj2.start).getTime();
+  const defaultResult3 = _typeof.default(obj2.start);
+  let time3 = _typeof.default(obj2.end).getTime();
+  if (time <= time1) {
+    if (time2 <= time3) {
+      if (time < time3) {
+        if (time2 < time1) {
+          if (time3 > time1) {
+            time3 = time1;
+          }
+          if (time2 < time) {
+            time2 = time;
+          }
+          const _Math = Math;
+          return Math.ceil((time3 - time2) / c2);
+        }
+      }
+      return 0;
+    }
+  }
+  const rangeError = new RangeError("Invalid interval");
+  throw rangeError;
 };
 export default exports.default;

@@ -1,9 +1,31 @@
 // Module ID: 7276
 // Function ID: 7277
-// Dependencies: [1120]
+// Dependencies: []
+// Exports: getModalRouteKeys
 
 // Module 7276
-import registerAsset from "module_1120" /* 1120 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 80, height: 80, scales: [2, 3], hash: "f949eef54936cb2056a4a93d768a87c3", name: "img_nitro_tier_0_icon_80px", type: "png" });
+export const getModalRouteKeys = (arr, arg1) => {
+  closure_0 = arg1;
+  return arr.reduce((arr, key) => {
+    let options;
+    if (closure_0[key.key] != null) {
+      options = tmp.options;
+    }
+    if (options == null) {
+      options = {};
+    }
+    const presentation = options.presentation;
+    let tmp2 = arr.length && !presentation;
+    if (!tmp2) {
+      tmp2 = "modal" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "transparentModal" === presentation;
+    }
+    if (tmp2) {
+      arr.push(key.key);
+    }
+    return arr;
+  }, []);
+};

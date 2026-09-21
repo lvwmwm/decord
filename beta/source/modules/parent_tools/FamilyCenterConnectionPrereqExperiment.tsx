@@ -1,10 +1,10 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 12182
+// Function ID: 12183
 // Name: FamilyCenterConnectionPrereqExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 12061 (FamilyCenterConnectionPrereqExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 12182 (FamilyCenterConnectionPrereqExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-family-center-connection-prereq", kind: "user", defaultConfig: { enabled: false }, variations: null };

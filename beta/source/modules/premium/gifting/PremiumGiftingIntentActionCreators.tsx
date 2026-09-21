@@ -1,22 +1,22 @@
-// Module ID: 10873
-// Function ID: 10874
+// Module ID: 11001
+// Function ID: 11002
 // Name: PremiumGiftingIntentActionCreators
-// Dependencies: [7761, 502, 4857, 1373, 1074, 1270, 573, 1230, 1240, 2]
+// Dependencies: [7895, 502, 4976, 1374, 1074, 1271, 573, 1231, 1241, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 10873 (PremiumGiftingIntentActionCreators)
+// Module 11001 (PremiumGiftingIntentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7761 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 4857 */;
+import MessageStore from "MessageStore" /* 4976 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GiftIntentType = fn(1373).GiftIntentType;
+const GiftIntentType = fn(1374).GiftIntentType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, Endpoints: closure_8 } = Constants);
 const size = fn(2);
@@ -39,8 +39,8 @@ export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileG
       DispatcherDefault.dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
     }
   }, (arg0) => {
-    closure_1(1230).captureException(arg0, { tags: { feature: "gift_intent" } });
-    const obj = closure_1(1230);
+    closure_1(1231).captureException(arg0, { tags: { feature: "gift_intent" } });
+    const obj = closure_1(1231);
     closure_1(573).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
   });
 };

@@ -1,26 +1,26 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15598
+// Function ID: 15599
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1074, 1954, 21, 1943, 7491, 1176, 1114, 11605, 15413, 15415, 2]
+// Dependencies: [32, 19, 1074, 2038, 21, 2027, 7630, 1177, 1115, 11725, 15599, 15601, 2]
 
-// Module 15412 (AccessibilitySetting)
-import util from "util" /* 1114 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7491 */;
+// Module 15598 (AccessibilitySetting)
+import util from "util" /* 1115 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsx = fn(21).jsx;
-let items = [fn(1943).DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
-const SettingBuilders = fn(11605);
+let items = [fn(2027).DismissibleContent.MOBILE_ACCESSIBILITY_COLOR_SETTINGS];
+const SettingBuilders = fn(11725);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.G0neg7);
   },
   parent: null,
-  IconComponent: fn(15413).AccessibilityIcon,
+  IconComponent: fn(15599).AccessibilityIcon,
   useTrailing() {
     [tmp4, r10012] = useSelectedDismissibleContent.useSelectedDismissibleContent(items);
     let tmp5 = null;
@@ -32,15 +32,15 @@ const route = SettingBuilders.createRoute({
       tmp5 = null;
       if (hasItem) {
         const obj3 = { text: null };
-        const intl = tmp(1114).intl;
-        obj3.text = intl.string(tmp(1114).t.y2b7CA);
-        tmp5 = jsx(tmp(1176).TextBadge, { text: null });
+        const intl = tmp(1115).intl;
+        obj3.text = intl.string(tmp(1115).t.y2b7CA);
+        tmp5 = jsx(tmp(1177).TextBadge, { text: null });
       }
     }
     return tmp5;
   },
   usePreNavigationAction() {
-    const tmp = _slicedToArray(first(7491).useSelectedDismissibleContent(items), 2);
+    const tmp = _slicedToArray(first(7630).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     dependencyMap = tmp3;
     items = [tmp[1], first];

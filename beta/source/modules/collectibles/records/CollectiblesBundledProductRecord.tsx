@@ -1,9 +1,9 @@
-// Module ID: 7648
-// Function ID: 7649
+// Module ID: 7787
+// Function ID: 7788
 // Name: CollectiblesBundledProductRecord
-// Dependencies: [5594, 2]
+// Dependencies: [5730, 2]
 
-// Module 7648 (CollectiblesBundledProductRecord)
+// Module 7787 (CollectiblesBundledProductRecord)
 import size from "module_2" /* 2 */;
 
 const prototype = function CollectiblesBundledProductRecord(arg0) {

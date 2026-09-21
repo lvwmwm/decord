@@ -1,18 +1,18 @@
-// Module ID: 1226
-// Function ID: 1227
+// Module ID: 1227
+// Function ID: 1228
 // Name: CustomThemeMobileStore
-// Dependencies: [1182, 1181, 1183, 1219, 1084, 1227, 4484, 1185, 573, 504, 2]
+// Dependencies: [1183, 1182, 1184, 1220, 1084, 1228, 4603, 1186, 573, 504, 2]
 
-// Module 1226 (CustomThemeMobileStore)
+// Module 1227 (CustomThemeMobileStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1227 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4484 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1183 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4603 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 function reset() {
@@ -99,7 +99,7 @@ prototype["getState"] = function getState() {
     const obj2 = { theme, customTheme: prop };
     let obj = obj2;
   } else {
-    obj = { theme: "icon", customTheme: "call" };
+    obj = { theme: "paths", customTheme: "scales" };
   }
   return obj;
 };
@@ -178,8 +178,8 @@ prototype["getCustomThemeDisplaySettings"] = function getCustomThemeDisplaySetti
       if (null == prop) {
         let theme = obj2.theme;
       } else {
-        theme = tmp10(1227).getCustomThemeBaseTheme(obj2.theme);
-        const tmp10Result = tmp10(1227);
+        theme = tmp10(1228).getCustomThemeBaseTheme(obj2.theme);
+        const tmp10Result = tmp10(1228);
       }
       obj2 = { baseTheme: theme, customTheme: prop };
     } else {

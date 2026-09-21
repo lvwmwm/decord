@@ -1,13 +1,27 @@
 // Module ID: 5025
 // Function ID: 5026
-// Dependencies: [19, 21]
+// Dependencies: [5026]
 
 // Module 5025
-import noop from "module_19" /* 19 */;
+import _mod5026 from "module_5026" /* 5026 */;
 
-const jsxProd = fn(21);
-({ Fragment: closure_0, jsx: closure_1 } = jsxProd);
-const context = noop.createContext((children) => framebus(React, { children: children.children }));
 
-export const GHContext = context;
-export const RNSScreensRefContext = noop.createContext(null);
+export default function getPolyfill() {
+  if (String.prototype.trim) {
+    const trim = "\u200B".trim;
+    if ("\u200B" === "\u200B".trim()) {
+      const trim2 = "\u180E".trim;
+      if ("\u180E" === "\u180E".trim()) {
+        const trim3 = "_\u180E".trim;
+        if ("_\u180E" === "_\u180E".trim()) {
+          const trim4 = "\u180E_".trim;
+          if ("\u180E_" === "\u180E_".trim()) {
+            const _String = String;
+          }
+          return trim5;
+        }
+      }
+    }
+  }
+  trim5 = _mod5026;
+};

@@ -1,17 +1,17 @@
-// Module ID: 1231
-// Function ID: 1232
+// Module ID: 1232
+// Function ID: 1233
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1074, 1085, 675, 3, 1232, 1100, 1240, 14169, 7704, 7709, 1356, 1230, 1362, 7705, 1363, 4615, 1608, 1357, 1343, 2]
+// Dependencies: [5, 17, 1074, 1085, 675, 3, 1233, 1101, 1241, 14351, 5084, 5089, 1357, 1231, 1363, 5085, 1364, 4735, 1609, 1358, 1344, 2]
 // Exports: initSentry
 
-// Module 1231 (SentryInitUtils)
+// Module 1232 (SentryInitUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1100 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1232 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1362 */;
-import MetricEvents from "MetricEvents" /* 7709 */;
+import router_utils from "router_utils" /* 1101 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1233 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
+import MetricEvents from "MetricEvents" /* 5089 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -539,10 +539,10 @@ function trackCrash(event, hint, arg2) {
     tmp39 = 0 !== event_id2.length;
   }
   if (tmp39) {
-    tmp25(1230).markCrashHandled(event_id2);
-    const tmp25Result = tmp25(1230);
+    tmp25(1231).markCrashHandled(event_id2);
+    const tmp25Result = tmp25(1231);
   }
-  const AppCrashedReasons = tmp11(14169).AppCrashedReasons;
+  const AppCrashedReasons = tmp11(14351).AppCrashedReasons;
   const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: null };
   items = ["reason:" + tmp41, ];
@@ -551,7 +551,7 @@ function trackCrash(event, hint, arg2) {
   }
   items[1] = "level:" + level;
   obj6.tags = items;
-  tmp26(7704).increment(obj6, true);
+  tmp26(5084).increment(obj6, true);
 }
 const NativeModules = fn(17).NativeModules;
 const Constants = fn(1074);
@@ -570,7 +570,7 @@ let closure_11 = ["The operation couldn\u2019t be completed. (com.apple.CallKit.
 let c12 = 0.05;
 let c13 = 0.005;
 let c14 = false;
-const CommonSentryInitUtils = fn(1356);
+const CommonSentryInitUtils = fn(1357);
 let closure_20 = CommonSentryInitUtils.filterThrottle({ maxBudgetMinute: 1, maxBudgetHour: 15 });
 const size = fn(2);
 const result1 = size.fileFinishedImporting("modules/errors/native/SentryInitUtils.tsx");
@@ -632,7 +632,7 @@ export const initSentry = function initSentry() {
           if (tmp14Result11.isAndroid()) {
             str2 = "android";
           }
-          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6465", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@346.14.0-1+346114", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6473", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@347.6.0-1+347106", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           items = [PRIMARY_DOMAIN];
           obj3.tracePropagationTargets = items;
           const items1 = [registerSpanErrorInstrumentation, , ];
@@ -664,7 +664,7 @@ export const initSentry = function initSentry() {
           };
           tmp14Result10.init(obj3);
           const tmp14Result13 = require("module_675");
-          require("module_675").setTag("buildNumber", "6465");
+          require("module_675").setTag("buildNumber", "6473");
           const tmp14Result14 = require("module_675");
           require("module_675").setTag("appVersion", constants.Version);
           const tmp14Result15 = require("module_675");

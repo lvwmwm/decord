@@ -1,24 +1,24 @@
-// Module ID: 4280
-// Function ID: 4281
+// Module ID: 4400
+// Function ID: 4401
 // Name: PermissionUtils
-// Dependencies: [2014, 4276, 4277, 1961, 1975, 2016, 502, 1957, 2021, 2015, 1979, 1371, 1074, 1086, 12, 4281, 4263, 11, 1894, 4282, 2019, 2]
+// Dependencies: [2098, 4396, 4397, 2045, 2059, 2100, 502, 2041, 2105, 2099, 2063, 1372, 1074, 1086, 12, 4401, 4383, 11, 1978, 4402, 2103, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4280 (PermissionUtils)
+// Module 4400 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Server from "Server" /* 1894 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2019 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4281 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4282 */;
-import ImpersonateStore from "ImpersonateStore" /* 2014 */;
-import LurkingStore from "LurkingStore" /* 4276 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4277 */;
+import Server from "Server" /* 1978 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2103 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4401 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4402 */;
+import ImpersonateStore from "ImpersonateStore" /* 2098 */;
+import LurkingStore from "LurkingStore" /* 4396 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
 import apply from "module_12" /* 12 */;
 
@@ -76,13 +76,13 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
       found = tmp19(1086).filter(addResult4, closure_29);
       const tmp19Result7 = tmp19(1086);
     }
-    const tmp28Result = tmp28(4263);
+    const tmp28Result = tmp28(4383);
     found1 = found;
     if (tmp34) {
       found1 = tmp19(1086).filter(found, closure_28);
       const tmp19Result8 = tmp19(1086);
     }
-    tmp34 = tmp28(4263).isMemberCommunicationDisabled(member) && !hasItem;
+    tmp34 = tmp28(4383).isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }
@@ -356,11 +356,11 @@ function getSyncedPermissionOverwrites(guild_id, appChannelBotUserId) {
   }
   return obj;
 }
-const ChannelRecord = fn(1961);
+const ChannelRecord = fn(2045);
 ({ THREAD_CHANNEL_TYPES: closure_7, ChannelRecordBase: closure_8 } = ChannelRecord);
-const GuildRecord = fn(1975);
+const GuildRecord = fn(2059);
 ({ getGuildEveryoneRoleId: closure_9, isGuildOwner: c10 } = GuildRecord);
-const hasPermission = fn(2016).hasPermission;
+const hasPermission = fn(2100).hasPermission;
 const Constants = fn(1074);
 const Permissions = Constants.Permissions;
 ({ ElevatedPermissions: closure_19, MFALevels: closure_20, ChannelTypes: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22 } = Constants);
@@ -463,7 +463,7 @@ export const areChannelsLocked = function areChannelsLocked(c18, c19, appChannel
           const tmp12 = getSyncedPermissionOverwrites(c19, appChannelBotUserId);
           closure_1 = tmp12;
           if (null == obj2[guild_id]) {
-            let obj = { id: guild_id, type: obj2(1894).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
+            let obj = { id: guild_id, type: obj2(1978).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
             obj2[guild_id] = obj;
           }
           const _Object = Object;

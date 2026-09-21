@@ -1,12 +1,12 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7295
+// Function ID: 7296
 // Name: SearchField
-// Dependencies: [19, 21, 6714, 1114, 7154, 2]
+// Dependencies: [19, 21, 6855, 1115, 7296, 2]
 
-// Module 7153 (SearchField)
-import util from "util" /* 1114 */;
-import TextField from "TextField" /* 6714 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7154 */;
+// Module 7295 (SearchField)
+import util from "util" /* 1115 */;
+import TextField from "TextField" /* 6855 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7296 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,6 +24,6 @@ export const SearchField = noop.forwardRef((arg0, ref) => {
   obj.autoCapitalize = "none";
   obj.accessibilityRole = "search";
   obj.leadingIcon = MagnifyingGlassIcon.MagnifyingGlassIcon;
-  obj.isClearable = true;
+  obj.clearable = true;
   return jsx(TextField.TextField, { placeholder: null, returnKeyType: "search", ref: null });
 });

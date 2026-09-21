@@ -1,12 +1,12 @@
-// Module ID: 7886
-// Function ID: 7887
+// Module ID: 8026
+// Function ID: 8027
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 4293, 7887, 1396, 1363, 7924, 2]
+// Dependencies: [5, 32, 19, 17, 4413, 8027, 1397, 1364, 8064, 2]
 // Exports: useBurstReactionAnimationSource, useSuperReactionAnimationSourceFromLocalImage
 
-// Module 7886 (burst_reactions/BurstReactionEffectUtils)
-import EmojiUtils from "EmojiUtils" /* 4293 */;
-import getBurstAnimation from "getBurstAnimation" /* 7887 */;
+// Module 8026 (burst_reactions/BurstReactionEffectUtils)
+import EmojiUtils from "EmojiUtils" /* 4413 */;
+import getBurstAnimation from "getBurstAnimation" /* 8027 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

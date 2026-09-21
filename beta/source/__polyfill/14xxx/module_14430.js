@@ -1,43 +1,9 @@
 // Module ID: 14430
 // Function ID: 14431
-// Dependencies: [14393, 14391, 14409, 14431, 14432]
+// Dependencies: [1121]
 
 // Module 14430
-import _mod14391 from "module_14391" /* 14391 */;
-import _mod14393 from "module_14393" /* 14393 */;
-import _mod14409 from "module_14409" /* 14409 */;
-import _mod14431 from "module_14431" /* 14431 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-let closure_2 = _mod14393([].push);
 
-export default (arg0, arg1) => {
-  const tmp = _mod14391(arg0);
-  const items = [];
-  for (const key10010 in tmp) {
-    let tmp12 = require;
-    let tmp14 = _mod14409;
-    let tmp14Result = tmp14(_mod14431, key10010);
-    let tmp2 = !tmp14Result;
-    if (!tmp14Result) {
-      tmp2 = tmp12(14409)(tmp, key10010);
-    }
-    if (!tmp2) {
-      continue;
-    } else {
-      let tmp4 = closure_2(items, key10010);
-      continue;
-    }
-    continue;
-  }
-  for (let num = 0; arg1.length > num; num = num + 1) {
-    let tmp5 = require;
-    let tmp7 = arg1[num];
-    if (_mod14409(tmp, tmp7)) {
-      let tmp5Result = tmp5(14432);
-      if (!~tmp5Result.indexOf(items, tmp7)) {
-        let tmp10 = closure_2(items, tmp7);
-      }
-    }
-  }
-  return items;
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42a20b8c34f5da51714fe4afb6b4ab7f", name: "NitroGem6", type: "lottie" });

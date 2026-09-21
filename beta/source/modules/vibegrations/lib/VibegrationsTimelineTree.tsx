@@ -1,12 +1,12 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 17034
+// Function ID: 17035
 // Name: VibegrationsTimelineTree
-// Dependencies: [32, 3590, 1114, 2]
+// Dependencies: [32, 3678, 1115, 2]
 // Exports: announcementNotes, currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 16708 (VibegrationsTimelineTree)
-import util from "util" /* 1114 */;
-import _modDef3590 from "module_3590" /* 3590 */;
+// Module 17034 (VibegrationsTimelineTree)
+import util from "util" /* 1115 */;
+import _modDef3678 from "module_3678" /* 3678 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -378,48 +378,48 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { assembling: _modDef3590["9G3ZmA"], installing_deps: _modDef3590.VZuRug, building: _modDef3590["s+ylXP"], bundling: _modDef3590.rEQlMx, committing: _modDef3590.Yvyw1H, built: _modDef3590.hOcVAj, build_error: _modDef3590["6L9Vwt"], healthchecking: _modDef3590.sz8yAj, awaiting_auth: _modDef3590["orD+xo"], healthcheck_passed: _modDef3590["x+sqTG"], healthcheck_failed: _modDef3590.FUWbq1, deploying: _modDef3590.wcXX8Z, preview_ready: _modDef3590["78YNh7"], working: _modDef3590.nv6pUM, error: _modDef3590.j3hBoA };
+let obj = { assembling: _modDef3678["9G3ZmA"], installing_deps: _modDef3678.VZuRug, building: _modDef3678["s+ylXP"], bundling: _modDef3678.rEQlMx, committing: _modDef3678.Yvyw1H, built: _modDef3678.hOcVAj, build_error: _modDef3678["6L9Vwt"], healthchecking: _modDef3678.sz8yAj, awaiting_auth: _modDef3678["orD+xo"], healthcheck_passed: _modDef3678["x+sqTG"], healthcheck_failed: _modDef3678.FUWbq1, deploying: _modDef3678.wcXX8Z, preview_ready: _modDef3678["78YNh7"], working: _modDef3678.nv6pUM, error: _modDef3678.j3hBoA };
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTimelineTree.tsx");
 
-export const describeNode = function describeNode(labelText) {
-  if (null != labelText.labelText) {
-    if ("" !== labelText.labelText) {
-      return labelText.labelText;
+export const describeNode = function describeNode(currentStepResult) {
+  if (null != currentStepResult.labelText) {
+    if ("" !== currentStepResult.labelText) {
+      return currentStepResult.labelText;
     }
   }
   let nv6pUM;
-  if (null != labelText.labelKey) {
-    nv6pUM = obj[labelText.labelKey];
+  if (null != currentStepResult.labelKey) {
+    nv6pUM = obj[currentStepResult.labelKey];
   }
   const intl = util.intl;
   if (nv6pUM == null) {
-    nv6pUM = _modDef3590.nv6pUM;
+    nv6pUM = _modDef3678.nv6pUM;
   }
   return intl.string(nv6pUM);
 };
-export const describeTaskStatus = function describeTaskStatus(status) {
-  if ("running" === status) {
+export const describeTaskStatus = function describeTaskStatus(arg0) {
+  if ("running" === arg0) {
     const intl5 = util.intl;
-    return intl5.string(_modDef3590["fW7T+d"]);
-  } else if ("done" === status) {
+    return intl5.string(_modDef3678["fW7T+d"]);
+  } else if ("done" === arg0) {
     const intl4 = util.intl;
-    return intl4.string(_modDef3590.X3c4hc);
-  } else if ("failed" === status) {
+    return intl4.string(_modDef3678.X3c4hc);
+  } else if ("failed" === arg0) {
     const intl3 = util.intl;
-    return intl3.string(_modDef3590.LK4Wsd);
-  } else if ("cancelled" === status) {
+    return intl3.string(_modDef3678.LK4Wsd);
+  } else if ("cancelled" === arg0) {
     const intl2 = util.intl;
-    return intl2.string(_modDef3590.msWvKA);
-  } else if ("incomplete" === status) {
+    return intl2.string(_modDef3678.msWvKA);
+  } else if ("incomplete" === arg0) {
     const intl = util.intl;
-    return intl.string(_modDef3590.esfcU6);
+    return intl.string(_modDef3678.esfcU6);
   }
 };
 export { buildTimelineTree };
-export const currentStep = function currentStep(productId) {
+export const currentStep = function currentStep(steps) {
   let tmp;
-  const iter = productId[Symbol.iterator]();
+  const iter = steps[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp5 = null == tmp;

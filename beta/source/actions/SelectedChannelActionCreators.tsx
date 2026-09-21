@@ -1,16 +1,16 @@
-// Module ID: 5492
-// Function ID: 5493
+// Module ID: 5628
+// Function ID: 5629
 // Name: SelectedChannelActionCreators
-// Dependencies: [4653, 1957, 1908, 1074, 5493, 573, 1100, 9578, 2]
+// Dependencies: [4773, 2041, 1992, 1074, 5629, 573, 1101, 10044, 2]
 
-// Module 5492 (SelectedChannelActionCreators)
+// Module 5628 (SelectedChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import router_utils from "router_utils" /* 1100 */;
-import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 5493 */;
-import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 9578 */;
-import GameConsoleStore from "GameConsoleStore" /* 4653 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MediaEngineStore from "MediaEngineStore" /* 1908 */;
+import router_utils from "router_utils" /* 1101 */;
+import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 5629 */;
+import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 10044 */;
+import GameConsoleStore from "GameConsoleStore" /* 4773 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 require = fn;
 const Constants = fn(1074);

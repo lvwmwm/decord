@@ -1,17 +1,17 @@
-// Module ID: 16296
-// Function ID: 16297
+// Module ID: 16538
+// Function ID: 16539
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1074, 21, 4636, 576, 10247, 2024, 1896, 4331, 5204, 16297, 4632, 1114, 1176, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4756, 576, 10375, 2108, 1980, 4451, 5339, 16539, 4752, 1115, 1177, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 16296 (GuildMFAWarning)
+// Module 16538 (GuildMFAWarning)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Pressables from "Pressables" /* 5204 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10247 */;
-import _modDef16297 from "module_16297" /* 16297 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Pressables from "Pressables" /* 5339 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10375 */;
+import _modDef16539 from "module_16539" /* 16539 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -83,7 +83,7 @@ const Constants = fn(1074);
 ({ HelpdeskArticles: hasOwnProperty, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { MFAWarning: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" }, MFAWarningIcon: { marginVertical: 10, width: 98, height: 53 }, MFAWarningLink: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" };
 obj2.MFAWarningLink = { color: nativeDefault.unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
@@ -94,7 +94,7 @@ const result = size.fileFinishedImporting("modules/guild_sidebar/native/GuildMFA
 export default function GuildMFAWarning() {
   const tmp = closure_8();
   const obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
-  const items = [timestampProducer(Image, { style: tmp.MFAWarningIcon, source: _modDef16297 }), ];
+  const items = [timestampProducer(Image, { style: tmp.MFAWarningIcon, source: _modDef16539 }), ];
   const obj3 = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl = util.intl;
   const items1 = [intl.string(util.t.ZIf8Ag), ];

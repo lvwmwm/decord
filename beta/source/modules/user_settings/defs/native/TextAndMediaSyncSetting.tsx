@@ -1,22 +1,22 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15746
+// Function ID: 15747
 // Name: TextAndMediaSyncSetting
-// Dependencies: [1182, 8079, 504, 11605, 1114, 9488, 2]
+// Dependencies: [1183, 8233, 504, 11725, 1115, 9472, 2]
 
-// Module 15558 (TextAndMediaSyncSetting)
+// Module 15746 (TextAndMediaSyncSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9488 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
+import util from "util" /* 1115 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9472 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 
 require = fn;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["3340dY"]);
   },
-  parent: fn(8079).MobileUserSettings.CHAT,
+  parent: fn(8233).MobileUserSettings.CHAT,
   useValue: function useTextAndMediaSyncSettingValue() {
     const items = [SelectivelySyncedUserSettingsStore];
     return initialize.useStateFromStores(items, () => SelectivelySyncedUserSettingsStore.shouldSync("text"));

@@ -1,13 +1,13 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12498
+// Function ID: 12499
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 12095, 21, 4636, 12379, 12372, 1114, 12370, 12381, 4338, 576, 4347, 2]
+// Dependencies: [19, 17, 12215, 21, 4756, 12499, 12492, 1115, 12490, 12501, 4457, 576, 4466, 2]
 
-// Module 12378 (ChatInputActionButtonGiftOrThread)
+// Module 12498 (ChatInputActionButtonGiftOrThread)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4338 */;
-import native from "native" /* 4347 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12379 */;
+import useToken from "useToken" /* 4457 */;
+import native from "native" /* 4466 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12499 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,19 +18,19 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
   const obj = { cleanup, state, children: null };
   if (shouldShowThread) {
     const obj2 = { accessible, accessibilityLabel: null, disabled: null, IconComponent: null, onPress: null, style: null };
-    const intl = onPress(1114).intl;
-    obj2.accessibilityLabel = intl.string(onPress(1114).t["4WNcpu"]);
+    const intl = onPress(1115).intl;
+    obj2.accessibilityLabel = intl.string(onPress(1115).t["4WNcpu"]);
     obj2.disabled = !canStartThreads;
-    obj2.IconComponent = onPress(12370).ThreadPlusIcon;
+    obj2.IconComponent = onPress(12490).ThreadPlusIcon;
     obj2.onPress = function onPress(arg0) {
       return onPress(arg0, ChatInputActionType.THREAD);
     };
     obj2.style = styleButton;
-    let tmpResult = tmp(tmp2(12372), obj2);
-    const tmp2Result = tmp2(12372);
+    let tmpResult = tmp(tmp2(12492), obj2);
+    const tmp2Result = tmp2(12492);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(12381), obj3);
+    tmpResult = tmp(tmp2(12501), obj3);
   }
   obj.children = tmpResult;
   return jsx(ChatInputActionButtonTransitionItemDefault, { cleanup, state, children: null }, arg0);
@@ -43,9 +43,9 @@ function getChatInputActionButtonGiftAndThreadKey(shouldShowThread) {
   return str;
 }
 const View = fn(17).View;
-const ChatInputActionType = fn(12095).ChatInputActionType;
+const ChatInputActionType = fn(12215).ChatInputActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_7 = createStyles.createStyles((height, arg1) => {
   const obj = { container: null };
   const size = { width: height + 2 * arg1, height };

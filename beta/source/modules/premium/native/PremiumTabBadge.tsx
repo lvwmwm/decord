@@ -1,31 +1,31 @@
-// Module ID: 15071
-// Function ID: 15072
+// Module ID: 15259
+// Function ID: 15260
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4300, 1373, 7535, 21, 4636, 576, 4353, 4488, 4571, 4632, 8894, 1248, 10871, 1176, 15072, 7550, 8165, 4294, 4457, 1943, 504, 7491, 8161, 8160, 13508, 1114, 5068, 1093, 1363, 2]
+// Dependencies: [32, 19, 17, 4420, 1374, 7674, 21, 4756, 576, 4472, 4607, 4690, 4752, 9048, 1249, 10999, 1177, 15260, 7689, 8319, 4414, 4576, 2027, 504, 7630, 8315, 8314, 13687, 1115, 5198, 1094, 1364, 2]
 // Exports: default
 
-// Module 15071 (PremiumTabBadge)
+// Module 15259 (PremiumTabBadge)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 4353 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
-import shared from "shared" /* 4488 */;
-import useThemeDefault from "useTheme" /* 4571 */;
-import LinearGradientDefault from "LinearGradient" /* 5068 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7491 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7550 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8165 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8894 */;
-import MarketingComponentType from "MarketingComponentType" /* 10871 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import PremiumUtils from "PremiumUtils" /* 4414 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 4472 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
+import shared from "shared" /* 4607 */;
+import useThemeDefault from "useTheme" /* 4690 */;
+import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7689 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8319 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9048 */;
+import MarketingComponentType from "MarketingComponentType" /* 10999 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
+import SubscriptionStore from "SubscriptionStore" /* 4420 */;
 
-const Text_Text = tmp(4632);
-const _modDef15072 = tmp5(15072);
+const Text_Text = tmp(4752);
+const _modDef15260 = tmp5(15260);
 require = fn;
 function ThemedTabBadge(label) {
   const badgeTextVariant = useBadgeTextVariant.useBadgeTextVariant();
@@ -60,14 +60,14 @@ function OfferBadge(componentId) {
   tmp6(obj2, { disableTrack: null == componentId });
   if (acked) {
     const obj5 = { style: tmp4.acked, children: null };
-    const obj6 = { source: _modDef15072, size: tmp(1176).Icon.Sizes.EXTRA_SMALL, color: tmp4.icon.color, style: tmp4.icon };
-    const items = [React6(tmp(1176).Icon, obj6), ];
+    const obj6 = { source: _modDef15260, size: tmp(1177).Icon.Sizes.EXTRA_SMALL, color: tmp4.icon.color, style: tmp4.icon };
+    const items = [React6(tmp(1177).Icon, obj6), ];
     const obj7 = { variant: badgeTextVariant, color: "interactive-text-default", style: null, children: null };
     const items1 = [, ];
     ({ uppercase: arr2[0], text: arr2[1] } = tmp4);
     obj7.style = items1;
     obj7.children = ackedBadgeCopy;
-    items[1] = React6(tmp(4632).Text, obj7);
+    items[1] = React6(tmp(4752).Text, obj7);
     obj5.children = items;
     let tmp10 = React7(View, obj5);
   } else {
@@ -77,11 +77,11 @@ function OfferBadge(componentId) {
   return tmp10;
 }
 const View = fn(17).View;
-let closure_6 = fn(1373).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
-const Gradients = fn(7535).Gradients;
+let closure_6 = fn(1374).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
+const Gradients = fn(7674).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { tag: { paddingVertical: 4, paddingHorizontal: 8, borderRadius: nativeDefault.radii.round }, badge: null, badgeBackgroundLightTheme: null, badgeBackgroundDarkTheme: null, acked: null, ackedBadge: null, icon: null, uppercase: null, text: null, premiumDiscountBadge: null };
 let obj3 = { paddingVertical: 4, paddingHorizontal: 8, borderRadius: nativeDefault.radii.round };
 obj2.badge = { display: "flex", minWidth: 16, minHeight: 16, paddingHorizontal: 8, justifyContent: "center", alignItems: "center", gap: 4, borderRadius: nativeDefault.radii.round };
@@ -123,27 +123,27 @@ export default function PremiumTabBadge() {
   useSelectedDismissibleContent;
   if (trialId === closure_6) {
     if (!tmp7) {
-      let items1 = [tmp(1943).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
+      let items1 = [tmp(2027).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
     }
     [tmp14, r10055] = tmp11(items1, undefined, true);
-    tmp(7491);
+    tmp(7630);
     if (!tmp7) {
       if (hasTier2Premium) {
-        let items2 = [tmp(1943).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
+        let items2 = [tmp(2027).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
       [tmp18, r10067] = tmp12(tmp16(items2, undefined, true), 2);
       const tmp12Result = tmp12(tmp16(items2, undefined, true), 2);
-      const isEligibleSenderForReferralProgram = tmp(8161).useIsEligibleSenderForReferralProgram();
-      const tmpResult11 = tmp(8161);
-      const isReferralProgramEntrypointBadgeAcknowledged = tmp(8160).useIsReferralProgramEntrypointBadgeAcknowledged();
-      const tmpResult12 = tmp(8160);
-      const promotionMarketingComponent = tmp(13508).usePromotionMarketingComponent(tmp(10871).MarketingComponentType.PREMIUM_TAB);
-      const tmpResult14 = tmp(7491);
+      const isEligibleSenderForReferralProgram = tmp(8315).useIsEligibleSenderForReferralProgram();
+      const tmpResult11 = tmp(8315);
+      const isReferralProgramEntrypointBadgeAcknowledged = tmp(8314).useIsReferralProgramEntrypointBadgeAcknowledged();
+      const tmpResult12 = tmp(8314);
+      const promotionMarketingComponent = tmp(13687).usePromotionMarketingComponent(tmp(10999).MarketingComponentType.PREMIUM_TAB);
+      const tmpResult14 = tmp(7630);
       let prop = null;
       if (null != promotionMarketingComponent) {
         prop = null;
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
-          prop = tmp(1943).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          prop = tmp(2027).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
         }
       }
       let str2;
@@ -153,34 +153,34 @@ export default function PremiumTabBadge() {
       if (str2 == null) {
         str2 = "";
       }
-      const tmpResult13 = tmp(13508);
+      const tmpResult13 = tmp(13687);
       if (null != promotionMarketingComponent) {
         if ("premiumTab" === promotionMarketingComponent.properties.properties.oneofKind) {
-          const obj4 = { acked: tmp27 !== tmp(1943).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, badgeCopy: promotionMarketingComponent.properties.properties.premiumTab.badgeLabel, ackedBadgeCopy: promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel, componentId: null, promotionId: null };
+          const obj4 = { acked: tmp27 !== tmp(2027).DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, badgeCopy: promotionMarketingComponent.properties.properties.premiumTab.badgeLabel, ackedBadgeCopy: promotionMarketingComponent.properties.properties.premiumTab.acknowledgedBadgeLabel, componentId: null, promotionId: null };
           ({ id: obj25.componentId, promotionId: obj25.promotionId } = promotionMarketingComponent);
           return React6(OfferBadge, obj4);
         }
       }
-      if (tmp14 === tmp(1943).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE) {
-        const intl3 = tmp(1114).intl;
-        let stringResult = intl3.string(tmp(1114).t.uO4bXn);
+      if (tmp14 === tmp(2027).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE) {
+        const intl3 = tmp(1115).intl;
+        let stringResult = intl3.string(tmp(1115).t.uO4bXn);
       } else {
         stringResult = null;
-        if (tmp18 === tmp(1943).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD) {
-          const intl2 = tmp(1114).intl;
-          stringResult = intl2.string(tmp(1114).t["jyYgZ+"]);
+        if (tmp18 === tmp(2027).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD) {
+          const intl2 = tmp(1115).intl;
+          stringResult = intl2.string(tmp(1115).t["jyYgZ+"]);
         }
       }
       if (isEligibleSenderForReferralProgram) {
         if (!isReferralProgramEntrypointBadgeAcknowledged) {
           const obj7 = { label: null };
-          const intl4 = tmp(1114).intl;
-          obj7.label = intl4.string(tmp(1114).t.RDE0Sc);
+          const intl4 = tmp(1115).intl;
+          obj7.label = intl4.string(tmp(1115).t.RDE0Sc);
           return React6(ThemedTabBadge, obj7);
         }
       }
       if (tmp7) {
-        const obj8 = { style: intl.tag, colors: Gradients.PREMIUM_TIER_2, start: tmp(1093).HorizontalGradient.START, end: tmp(1093).HorizontalGradient.END, children: null };
+        const obj8 = { style: intl.tag, colors: Gradients.PREMIUM_TIER_2, start: tmp(1094).HorizontalGradient.START, end: tmp(1094).HorizontalGradient.END, children: null };
         const obj9 = { variant: badgeTextVariant, color: "text-overlay-light", style: null, children: null };
         const items3 = [intl.uppercase, ];
         const tmp52 = LinearGradientDefault;
@@ -190,22 +190,22 @@ export default function PremiumTabBadge() {
         }
         items3[1] = text;
         obj9.style = items3;
-        intl = tmp(1114).intl;
-        badgeTextVariant = intl.string(tmp(1114).t.y2b7CA);
+        intl = tmp(1115).intl;
+        badgeTextVariant = intl.string(tmp(1115).t.y2b7CA);
         obj9.children = badgeTextVariant;
-        obj8.children = React6(tmp(4632).Text, obj9);
+        obj8.children = React6(tmp(4752).Text, obj9);
         let tmp47Result = tmp50(tmp52, obj8);
-        tmpResult15 = tmp(1363);
+        tmpResult15 = tmp(1364);
       } else if (null != premiumTrialOffer) {
         let hasAcknowledged;
         if (premiumTrialOffer != null) {
           hasAcknowledged = premiumTrialOffer.hasAcknowledged;
         }
         const obj10 = { acked: true === hasAcknowledged, badgeCopy: null, ackedBadgeCopy: null };
-        const intl7 = tmp(1114).intl;
-        obj10.badgeCopy = intl7.string(tmp(1114).t.OS9KPu);
-        const intl8 = tmp(1114).intl;
-        obj10.ackedBadgeCopy = intl8.string(tmp(1114).t.OS9KPu);
+        const intl7 = tmp(1115).intl;
+        obj10.badgeCopy = intl7.string(tmp(1115).t.OS9KPu);
+        const intl8 = tmp(1115).intl;
+        obj10.ackedBadgeCopy = intl8.string(tmp(1115).t.OS9KPu);
         tmp47Result = React6(OfferBadge, obj10);
       } else if (null != premiumDiscountOffer) {
         if (premiumDiscountOffer.hasAcknowledged()) {
@@ -213,32 +213,32 @@ export default function PremiumTabBadge() {
           const items4 = [, ];
           ({ premiumDiscountBadge: arr6[0], ackedBadge: arr6[1] } = intl);
           obj11.style = items4;
-          const obj12 = { source: _modDef15072, size: tmp(1176).Icon.Sizes.EXTRA_SMALL, color: intl.icon.color, style: intl.icon };
-          const items5 = [React6(tmp(1176).Icon, obj12), ];
+          const obj12 = { source: _modDef15260, size: tmp(1177).Icon.Sizes.EXTRA_SMALL, color: intl.icon.color, style: intl.icon };
+          const items5 = [React6(tmp(1177).Icon, obj12), ];
           const obj13 = { variant: badgeTextVariant, color: "interactive-text-default", style: null, children: null };
           const items6 = [, ];
           ({ uppercase: arr8[0], text: arr8[1] } = intl);
           obj13.style = items6;
-          const intl6 = tmp(1114).intl;
-          obj13.children = intl6.string(tmp(1114).t["/DTtr6"]);
-          items5[1] = React6(tmp(4632).Text, obj13);
+          const intl6 = tmp(1115).intl;
+          obj13.children = intl6.string(tmp(1115).t["/DTtr6"]);
+          items5[1] = React6(tmp(4752).Text, obj13);
           obj11.children = items5;
           let tmp41 = React7(View, obj11);
         } else {
-          const obj14 = { style: intl.premiumDiscountBadge, colors: ["#db00a4", "#5968f0"], start: tmp(1093).HorizontalGradient.START, end: tmp(1093).HorizontalGradient.END, children: null };
+          const obj14 = { style: intl.premiumDiscountBadge, colors: ["#db00a4", "#5968f0"], start: tmp(1094).HorizontalGradient.START, end: tmp(1094).HorizontalGradient.END, children: null };
           const obj15 = { variant: badgeTextVariant, color: "text-overlay-light", style: null, children: null };
           const items7 = [, ];
           ({ uppercase: arr5[0], text: arr5[1] } = intl);
           obj15.style = items7;
-          const intl5 = tmp(1114).intl;
-          obj15.children = intl5.string(tmp(1114).t["/DTtr6"]);
-          obj14.children = React6(tmp(4632).Text, obj15);
+          const intl5 = tmp(1115).intl;
+          obj15.children = intl5.string(tmp(1115).t["/DTtr6"]);
+          obj14.children = React6(tmp(4752).Text, obj15);
           tmp41 = React6(LinearGradientDefault, obj14);
         }
       } else {
         tmp47Result = null;
         if (null != stringResult) {
-          const obj16 = { style: intl.tag, colors: Gradients.PREMIUM_TIER_2, start: tmp(1093).HorizontalGradient.START, end: tmp(1093).HorizontalGradient.END, children: null };
+          const obj16 = { style: intl.tag, colors: Gradients.PREMIUM_TIER_2, start: tmp(1094).HorizontalGradient.START, end: tmp(1094).HorizontalGradient.END, children: null };
           const obj17 = { variant: badgeTextVariant, color: "text-overlay-light", style: null, children: null };
           const items8 = [intl.uppercase, ];
           const tmp34 = LinearGradientDefault;
@@ -249,9 +249,9 @@ export default function PremiumTabBadge() {
           items8[1] = text1;
           obj17.style = items8;
           obj17.children = stringResult;
-          obj16.children = React6(tmp(4632).Text, obj17);
+          obj16.children = React6(tmp(4752).Text, obj17);
           tmp47Result = tmp32(tmp34, obj16);
-          tmpResult16 = tmp(1363);
+          tmpResult16 = tmp(1364);
         }
       }
       const tmp12Result2 = tmp12(tmpResult14.useSelectedSnowflakeBoundDismissibleContent(prop, str2, undefined, true), 2);

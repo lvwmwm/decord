@@ -4,4 +4,4 @@
 
 // Module 1303
 
-export default URIError;
+export default SyntaxError;

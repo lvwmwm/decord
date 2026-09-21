@@ -1,24 +1,24 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 7888
+// Function ID: 7889
 // Name: GuildsRequiringChannelSync
-// Dependencies: [1961, 502, 1957, 2021, 2015, 1979, 4275, 1074, 1964, 1085, 1086, 3, 1986, 4266, 1254, 1240, 1384, 2]
+// Dependencies: [2045, 502, 2041, 2105, 2099, 2063, 4395, 1074, 2048, 1085, 1086, 3, 2070, 4386, 1255, 1241, 1385, 2]
 
-// Module 7754 (GuildsRequiringChannelSync)
+// Module 7888 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants2 from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import v1 from "v1" /* 1254 */;
-import FlagUtils from "FlagUtils" /* 1384 */;
-import ChannelConstants from "ChannelConstants" /* 1964 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 1986 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4266 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import v1 from "v1" /* 1255 */;
+import FlagUtils from "FlagUtils" /* 1385 */;
+import ChannelConstants from "ChannelConstants" /* 2048 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4386 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 import Constants from "Constants" /* 1074 */;
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;
 import size from "module_2" /* 2 */;
@@ -112,7 +112,7 @@ prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(
     let obj3 = PremiumRoleUtils;
     let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
     if (isSubscriptionRoleResult1) {
-      let tmp6Result = tmp6(4266);
+      let tmp6Result = tmp6(4386);
       isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
     }
     if (!isSubscriptionRoleResult) {

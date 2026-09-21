@@ -1,25 +1,25 @@
-// Module ID: 16689
-// Function ID: 16690
+// Module ID: 13362
+// Function ID: 13363
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 7640, 10210, 2011, 4458, 5360, 16690, 1074, 1964, 1114, 3590, 16691, 1935, 10032, 504, 573, 2]
+// Dependencies: [32, 109, 7779, 10338, 2095, 4577, 5496, 9309, 1074, 2048, 1115, 3678, 9312, 2019, 10158, 504, 573, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 16689 (VibegrationsChatStore)
+// Module 13362 (VibegrationsChatStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import _modDef3590 from "module_3590" /* 3590 */;
-import SoundUtils from "SoundUtils" /* 10032 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 16691 */;
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import _modDef3678 from "module_3678" /* 3678 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9312 */;
+import SoundUtils from "SoundUtils" /* 10158 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10210 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5360 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 16690 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10338 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
 
 require = fn;
 function newMessage(assistant, content, arg2) {
@@ -344,8 +344,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(16691).isWindowFocused();
-            const tmp68Result = tmp68(16691);
+            isWindowFocusedResult = tmp68(9312).isWindowFocused();
+            const tmp68Result = tmp68(9312);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -387,7 +387,7 @@ function recordThinkingTransition(projectId) {
                     if ("terminal_error" !== tmp47.kind) {
                       if ("preview_ready" === tmp47.kind) {
                         let intl = util.intl;
-                        content = intl.string(_modDef3590["78YNh7"]);
+                        content = intl.string(_modDef3678["78YNh7"]);
                       } else {
                         diff3 = diff3 - 1;
                         content = null;
@@ -550,7 +550,7 @@ let closure_4 = ["disposition"];
 let closure_5 = ["disposition"];
 const Constants = fn(1074);
 ({ Routes: closure_14, StatusTypes: closure_15 } = Constants);
-const StaticChannelRoute = fn(1964).StaticChannelRoute;
+const StaticChannelRoute = fn(2048).StaticChannelRoute;
 const bit_message1 = "bit_message1";
 let set = new Set(["reply", "plan_proposed", "terminal_error"]);
 const map = new Map();
@@ -591,8 +591,8 @@ prototype["hasPendingSettingsRequest"] = function hasPendingSettingsRequest(arg0
 prototype["isThinking"] = function isThinking(item10008) {
   return hasOpenTurn(map.get(item10008));
 };
-prototype["hasLoadedHistory"] = function hasLoadedHistory(arg0) {
-  return map5.has(arg0);
+prototype["hasLoadedHistory"] = function hasLoadedHistory(projectId) {
+  return map5.has(projectId);
 };
 prototype["getFinishedAt"] = function getFinishedAt(arg0) {
   let tmp = null;
@@ -612,8 +612,8 @@ prototype["getProjectUsage"] = function getProjectUsage(projectId) {
   }
   return value;
 };
-prototype["getThinkingActivity"] = function getThinkingActivity(arg0) {
-  value = map4.get(arg0);
+prototype["getThinkingActivity"] = function getThinkingActivity(projectId) {
+  value = map4.get(projectId);
   if (value == null) {
     value = null;
   }
@@ -1069,7 +1069,7 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
                 const items = [];
                 const obj2 = { type: "step", kind: "terminal_error", message: null };
                 const intl = util.intl;
-                obj2.message = intl.string(_modDef3590["wjWm+/"]);
+                obj2.message = intl.string(_modDef3678["wjWm+/"]);
                 items[HermesBuiltin.arraySpread(disposition.steps, 0)] = obj2;
                 obj.steps = items;
                 tmp2 = obj;

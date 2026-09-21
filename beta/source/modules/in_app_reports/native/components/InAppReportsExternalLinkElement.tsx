@@ -1,15 +1,15 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 13214
+// Function ID: 13215
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 4636, 7082, 4632, 1114, 8718, 5692, 9207, 4331, 2]
+// Dependencies: [17, 21, 4756, 7224, 4752, 1115, 8873, 5828, 13215, 4451, 2]
 // Exports: default
 
-// Module 9206 (InAppReportsExternalLinkElement)
+// Module 13214 (InAppReportsExternalLinkElement)
 import _mod17 from "module_17" /* 17 */;
-import LinkingDefault from "Linking" /* 4331 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
+import LinkingDefault from "Linking" /* 4451 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4756 */;
 import size from "module_2" /* 2 */;
 
 function ExternalLinkItem(data) {
@@ -18,12 +18,12 @@ function ExternalLinkItem(data) {
   let tmp3 = null;
   if (data.is_localized) {
     const obj = { label: tmp, subLabel: tmp2, trailing: null, onPress: null, arrow: false, accessibilityRole: "link" };
-    const obj2 = { IconComponent: url(9207).LinkExternalMediumIcon };
-    obj.trailing = closure_4(url(5692).TableRowIcon, obj2);
+    const obj2 = { IconComponent: url(13215).LinkExternalMediumIcon };
+    obj.trailing = closure_4(url(5828).TableRowIcon, obj2);
     obj.onPress = function onPress() {
       LinkingDefault.openURL(url);
     };
-    tmp3 = closure_4(url(8718).RowButton, obj);
+    tmp3 = closure_4(url(8873).RowButton, obj);
   }
   return tmp3;
 }
@@ -54,16 +54,16 @@ export default function ExternalLinksElement(elements) {
           }
           const obj3 = { style: headerText, variant: typeConsolidationEyebrow.variant, color: "text-default", accessibilityRole: "header", children: null };
           if (null != typeConsolidationEyebrow.style) {
-            const intl2 = tmp2(1114).intl;
-            hvVgAZ = tmp2(1114).t.hvVgAZ;
+            const intl2 = tmp2(1115).intl;
+            hvVgAZ = tmp2(1115).t.hvVgAZ;
             let stringResult = intl2.string(hvVgAZ);
           } else {
-            const intl = tmp2(1114).intl;
-            stringResult = intl.string(tmp2(1114).t.hvVgAZ).toUpperCase();
-            const str = intl.string(tmp2(1114).t.hvVgAZ);
+            const intl = tmp2(1115).intl;
+            stringResult = intl.string(tmp2(1115).t.hvVgAZ).toUpperCase();
+            const str = intl.string(tmp2(1115).t.hvVgAZ);
           }
           obj3.children = stringResult;
-          React4(tmp2(4632).Text, obj3);
+          React4(tmp2(4752).Text, obj3);
         }
         someResult = elements.some((data) => data.data.is_header_hidden);
       }

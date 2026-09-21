@@ -1,11 +1,11 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9757
+// Function ID: 9758
 // Name: useEventException
-// Dependencies: [7629, 504, 2]
+// Dependencies: [7768, 504, 2]
 // Exports: default, getEventException
 
-// Module 9799 (useEventException)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7629 */;
+// Module 9757 (useEventException)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
 
 const require = globalThis.__r;
 

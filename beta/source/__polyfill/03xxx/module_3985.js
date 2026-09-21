@@ -1,199 +1,32 @@
 // Module ID: 3985
 // Function ID: 3986
-// Dependencies: [3887, 3957, 3971, 3958, 3725, 3888, 3726, 3729, 3730]
-// Exports: default
+// Dependencies: [2117]
 
 // Module 3985
-import _mod3730 from "module_3730" /* 3730 */;
-import differenceInCalendarDays_mod from "differenceInCalendarDays" /* 3887 */;
-import format_mod from "module_3957" /* 3957 */;
-import code_mod from "module_3971" /* 3971 */;
-import subMilliseconds_mod from "subMilliseconds" /* 3958 */;
-import _typeof_mod from "module_3725" /* 3725 */;
-import module_3888_mod from "module_3888" /* 3888 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
-import module_3729_mod from "module_3729" /* 3729 */;
+import module_2117 from "module_2117" /* 2117 */;
 
-let differenceInCalendarDays = differenceInCalendarDays_mod;
-if (!differenceInCalendarDays) {
-  let obj = { default: differenceInCalendarDays };
-  let tmp3 = obj;
+if (!module_2117) {
+  const obj2 = { default: module_2117 };
+  let obj = obj2;
 } else {
-  tmp3 = differenceInCalendarDays;
+  obj = module_2117;
 }
-differenceInCalendarDays = tmp3;
-let format = format_mod;
-if (!format) {
-  let obj2 = { default: format };
-  let tmp5 = obj2;
-} else {
-  tmp5 = format;
-}
-format = tmp5;
-let code = code_mod;
-if (!code) {
-  const obj3 = { default: code };
-  let tmp7 = obj3;
-} else {
-  tmp7 = code;
-}
-code = tmp7;
-let subMilliseconds = subMilliseconds_mod;
-if (!subMilliseconds) {
-  const obj4 = { default: subMilliseconds };
-  let tmp9 = obj4;
-} else {
-  tmp9 = subMilliseconds;
-}
-subMilliseconds = tmp9;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj5 = { default: _typeof };
-  let tmp11 = obj5;
-} else {
-  tmp11 = _typeof;
-}
-_typeof = tmp11;
-let module_3888 = module_3888_mod;
-if (!module_3888) {
-  const obj6 = { default: module_3888 };
-  let tmp13 = obj6;
-} else {
-  tmp13 = module_3888;
-}
-module_3888 = tmp13;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj7 = { default: requiredArgs };
-  let tmp15 = obj7;
-} else {
-  tmp15 = requiredArgs;
-}
-requiredArgs = tmp15;
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj8 = { default: module_3729 };
-  let tmp17 = obj8;
-} else {
-  tmp17 = module_3729;
-}
-module_3729 = tmp17;
-
-export default function formatRelative(arg0, arg1, locale) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const defaultResult2 = _typeof.default(arg1);
-  const defaultOptions = _mod3730.getDefaultOptions();
-  let locale1;
-  if (null != locale) {
-    locale1 = locale.locale;
-  }
-  if (null === locale1) {
-    locale1 = defaultOptions.locale;
-  }
-  if (null === locale1) {
-    locale1 = code.default;
-  }
-  let weekStartsOn;
-  if (null != locale) {
-    weekStartsOn = locale.weekStartsOn;
-  }
-  if (null === weekStartsOn) {
-    let weekStartsOn1;
-    if (null != locale) {
-      locale = locale.locale;
-      if (null !== locale) {
-        if (undefined !== locale) {
-          const options = locale.options;
-          if (null !== options) {
-            if (undefined !== options) {
-              weekStartsOn1 = options.weekStartsOn;
-            }
-          }
-        }
-      }
+const date = {
+  ordinalNumber(arg0, arg1) {
+    return Number(arg0) + ".";
+  },
+  era: obj.default({ values: { narrow: ["M\u00D6", "MS"], abbreviated: ["M\u00D6", "MS"], wide: ["Milattan \u00D6nce", "Milattan Sonra"] }, defaultWidth: "wide" }),
+  quarter: obj.default({
+    values: { narrow: ["1", "2", "3", "4"], abbreviated: ["1\u00C7", "2\u00C7", "3\u00C7", "4\u00C7"], wide: ["\u0130lk \u00E7eyrek", "\u0130kinci \u00C7eyrek", "\u00DC\u00E7\u00FCnc\u00FC \u00E7eyrek", "Son \u00E7eyrek"] },
+    defaultWidth: "wide",
+    argumentCallback(arg0) {
+      return Number(arg0) - 1;
     }
-    weekStartsOn = weekStartsOn1;
-  }
-  if (null === weekStartsOn) {
-    weekStartsOn = defaultOptions.weekStartsOn;
-  }
-  if (null === weekStartsOn) {
-    const locale2 = defaultOptions.locale;
-    let weekStartsOn2;
-    if (null !== locale2) {
-      if (undefined !== locale2) {
-        const options2 = locale2.options;
-        if (null !== options2) {
-          if (undefined !== options2) {
-            weekStartsOn2 = options2.weekStartsOn;
-          }
-        }
-      }
-    }
-    weekStartsOn = weekStartsOn2;
-  }
-  let num = 0;
-  if (null !== weekStartsOn) {
-    num = 0;
-    if (undefined !== weekStartsOn) {
-      num = weekStartsOn;
-    }
-  }
-  const defaultResult3 = module_3729.default(num);
-  if (locale1.localize) {
-    if (locale1.formatLong) {
-      if (locale1.formatRelative) {
-        const defaultResult4 = differenceInCalendarDays.default(defaultResult1, defaultResult2);
-        const _isNaN = isNaN;
-        if (isNaN(defaultResult4)) {
-          const _RangeError4 = RangeError;
-          const rangeError = new RangeError("Invalid time value");
-          throw rangeError;
-        } else {
-          let str4 = "other";
-          let str5 = "other";
-          if (defaultResult4 >= -6) {
-            let str6 = "lastWeek";
-            if (defaultResult4 >= -1) {
-              let str7 = "yesterday";
-              if (defaultResult4 >= 0) {
-                let str8 = "today";
-                if (defaultResult4 >= 1) {
-                  let str9 = "tomorrow";
-                  if (defaultResult4 >= 2) {
-                    if (defaultResult4 < 7) {
-                      str4 = "nextWeek";
-                    }
-                    str9 = str4;
-                  }
-                  str8 = str9;
-                }
-                str7 = str8;
-              }
-              str6 = str7;
-            }
-            str5 = str6;
-          }
-          const defaultResult5 = subMilliseconds.default(defaultResult1, module_3888.default(defaultResult1));
-          const obj = { locale: locale1, weekStartsOn: defaultResult3 };
-          const obj2 = { locale: locale1, weekStartsOn: defaultResult3 };
-          return format.default(defaultResult1, locale1.formatRelative(str5, defaultResult5, subMilliseconds.default(defaultResult2, module_3888.default(defaultResult2)), obj), obj2);
-        }
-      } else {
-        const _RangeError3 = RangeError;
-        const rangeError1 = new RangeError("locale must contain formatRelative property");
-        throw rangeError1;
-      }
-    } else {
-      const _RangeError2 = RangeError;
-      const rangeError2 = new RangeError("locale must contain formatLong property");
-      throw rangeError2;
-    }
-  } else {
-    const _RangeError = RangeError;
-    const rangeError3 = new RangeError("locale must contain localize property");
-    throw rangeError3;
-  }
+  }),
+  month: obj.default({ values: { narrow: ["O", "\u015E", "M", "N", "M", "H", "T", "A", "E", "E", "K", "A"], abbreviated: ["Oca", "\u015Eub", "Mar", "Nis", "May", "Haz", "Tem", "A\u011Fu", "Eyl", "Eki", "Kas", "Ara"], wide: ["Ocak", "\u015Eubat", "Mart", "Nisan", "May\u0131s", "Haziran", "Temmuz", "A\u011Fustos", "Eyl\u00FCl", "Ekim", "Kas\u0131m", "Aral\u0131k"] }, defaultWidth: "wide" }),
+  day: obj.default({ values: { narrow: ["P", "P", "S", "\u00C7", "P", "C", "C"], short: ["Pz", "Pt", "Sa", "\u00C7a", "Pe", "Cu", "Ct"], abbreviated: ["Paz", "Pzt", "Sal", "\u00C7ar", "Per", "Cum", "Cts"], wide: ["Pazar", "Pazartesi", "Sal\u0131", "\u00C7ar\u015Famba", "Per\u015Fembe", "Cuma", "Cumartesi"] }, defaultWidth: "wide" }),
+  dayPeriod: obj.default({ values: { narrow: { am: "\u00F6\u00F6", pm: "\u00F6s", midnight: "gy", noon: "\u00F6", morning: "sa", afternoon: "\u00F6s", evening: "ak", night: "ge" }, abbreviated: { am: "\u00D6\u00D6", pm: "\u00D6S", midnight: "gece yar\u0131s\u0131", noon: "\u00F6\u011Fle", morning: "sabah", afternoon: "\u00F6\u011Fleden sonra", evening: "ak\u015Fam", night: "gece" }, wide: { am: "\u00D6.\u00D6.", pm: "\u00D6.S.", midnight: "gece yar\u0131s\u0131", noon: "\u00F6\u011Fle", morning: "sabah", afternoon: "\u00F6\u011Fleden sonra", evening: "ak\u015Fam", night: "gece" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "\u00F6\u00F6", pm: "\u00F6s", midnight: "gy", noon: "\u00F6", morning: "sa", afternoon: "\u00F6s", evening: "ak", night: "ge" }, abbreviated: { am: "\u00D6\u00D6", pm: "\u00D6S", midnight: "gece yar\u0131s\u0131", noon: "\u00F6\u011Flen", morning: "sabahleyin", afternoon: "\u00F6\u011Fleden sonra", evening: "ak\u015Famleyin", night: "geceleyin" }, wide: { am: "\u00F6.\u00F6.", pm: "\u00F6.s.", midnight: "gece yar\u0131s\u0131", noon: "\u00F6\u011Flen", morning: "sabahleyin", afternoon: "\u00F6\u011Fleden sonra", evening: "ak\u015Famleyin", night: "geceleyin" } }, defaultFormattingWidth: "wide" })
 };
+
+export default date;
 export default exports.default;

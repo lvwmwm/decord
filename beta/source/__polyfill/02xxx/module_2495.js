@@ -1,9 +1,9 @@
 // Module ID: 2495
 // Function ID: 2496
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2495
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "567fc188c37481444191c0dbf1996c76", name: "GiftingBadgeTier.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "2c3f7082f94e77d49996bb3c1e9099f0", name: "hu.messages.2c3f7082f94e77d49996bb3c1e9099f0.compiled.messages", type: "jsona" });

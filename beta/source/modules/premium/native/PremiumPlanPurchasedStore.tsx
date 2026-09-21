@@ -1,19 +1,19 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7663
+// Function ID: 7664
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [4327, 1373, 560, 1247, 7525, 7285, 2]
+// Dependencies: [4447, 1374, 560, 1248, 7664, 7427, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 7524 (PremiumPlanPurchasedStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7525 */;
-import ActionSheetStore from "ActionSheetStore" /* 4327 */;
+// Module 7663 (PremiumPlanPurchasedStore)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7664 */;
+import ActionSheetStore from "ActionSheetStore" /* 4447 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
 const module_560 = fn(560);
 const obj3 = module_560.create(() => ({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: null }));
@@ -21,11 +21,15 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanPurchasedStore.tsx");
 
 export const usePremiumPlanPurchasedStore = obj3;
-export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFromNewFlow(arg0) {
-  ({ productId: require, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap } = arg0);
-  ReactBatchUpdates.batchUpdates(() => {
+export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFromNewFlow(productId) {
+  productId = productId.productId;
+  ({ onPaymentStart, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap } = productId);
+  productId(1248).batchUpdates(() => {
     obj3.setState({ productId, initiatedPurchaseFromNewFlow: true, onPaymentSuccess, onPaymentDismiss });
   });
+  if (onPaymentStart != null) {
+    onPaymentStart(productId);
+  }
 };
 export const setPaymentSuccess = function setPaymentSuccess() {
   if (obj3.getState().initiatedPurchaseFromNewFlow) {
@@ -84,6 +88,6 @@ export const reset = function reset() {
         str = "dismissed";
       }
     }
-    obj3.setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "flexDirection" });
+    obj3.setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "channel" });
   });
 };

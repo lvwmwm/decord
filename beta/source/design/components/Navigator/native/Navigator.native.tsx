@@ -1,17 +1,18 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7245
+// Function ID: 7246
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 4636, 576, 7104, 5705, 4338, 7105, 1611, 1114, 12, 7138, 1484, 4571, 7144, 1231, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 7246, 5841, 4457, 7247, 1612, 1115, 12, 7280, 1485, 4690, 7286, 5848, 1232, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 7103 (Navigator)
+// Module 7245 (Navigator)
 import nativeDefault from "native" /* 576 */;
-import SentryInitUtils from "SentryInitUtils" /* 1231 */;
-import Link from "Link" /* 1484 */;
-import NavigatorHeader from "NavigatorHeader" /* 5705 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7104 */;
-import NavigatorScreen from "NavigatorScreen" /* 7138 */;
-import useNavigationTheme from "useNavigationTheme" /* 7144 */;
+import SentryInitUtils from "SentryInitUtils" /* 1232 */;
+import Link from "Link" /* 1485 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import _mod5848 from "module_5848" /* 5848 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7246 */;
+import NavigatorScreen from "NavigatorScreen" /* 7280 */;
+import useNavigationTheme from "useNavigationTheme" /* 7286 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -123,8 +124,8 @@ function NavigationStack(screens) {
       if (headerBackTitle == null) {
         let stringResult;
         if (1 === routes.length) {
-          const intl = tmp3(1114).intl;
-          stringResult = intl.string(tmp3(1114).t["13/7kX"]);
+          const intl = tmp3(1115).intl;
+          stringResult = intl.string(tmp3(1115).t["13/7kX"]);
         }
         tmp5 = stringResult;
       }
@@ -149,13 +150,13 @@ function NavigationStack(screens) {
           return obj;
         };
       } else {
-        fn2 = tmp3(7105).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(7247).CardStyleInterpolators.forHorizontalIOS;
       }
       obj.cardStyleInterpolator = fn2;
       if (disableHeaderAnimation) {
-        let fn3 = tmp3(7105).HeaderStyleInterpolators.forNoAnimation;
+        let fn3 = tmp3(7247).HeaderStyleInterpolators.forNoAnimation;
       } else if (tmp2) {
-        fn3 = tmp3(7105).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(7247).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           ({ current, next, layouts, direction } = arg0);
@@ -219,7 +220,7 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp4 = navigationContainerRef(4571)();
+  const tmp4 = navigationContainerRef(4690)();
   let navigationTheme1 = useNavigationTheme.useNavigationTheme(tmp4);
   const obj3 = { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null };
   if (null != navigationTheme) {
@@ -234,6 +235,7 @@ function WrappedNavigationStack(arg0) {
     initialRouteState = tmp7;
   }
   const obj4 = { children: null };
+  const obj5 = { value: "Array", children: 0 };
   obj3.initialState = initialRouteState;
   obj3.onReady = function onReady() {
     const routingInstrumentation = SentryInitUtils.routingInstrumentation;
@@ -242,13 +244,14 @@ function WrappedNavigationStack(arg0) {
   obj3.onStateChange = onStateChange;
   const merged1 = Object.assign(merged);
   obj3.children = <NavigationStack initialRouteName={initialRouteName} />;
-  obj4.children = jsx(Link.NavigationContainer, { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null });
+  obj5.children = jsx(Link.NavigationContainer, { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null });
+  obj4.children = jsx(_mod5848.HeaderBackContext.Provider, { value: "Array", children: 0 });
   return jsx(Link.NavigationIndependentTree, { children: null });
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: null, navbar: null, headerLeftContainerStyle: null, headerRightContainerStyle: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);

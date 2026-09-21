@@ -1,10 +1,10 @@
-// Module ID: 1432
-// Function ID: 1433
+// Module ID: 1433
+// Function ID: 1434
 // Name: AttachmentImageLadder
 // Dependencies: [2]
 // Exports: getSnapDownMaxUpscale, snapAttachmentDimensions
 
-// Module 1432 (AttachmentImageLadder)
+// Module 1433 (AttachmentImageLadder)
 import size from "module_2" /* 2 */;
 
 const items = [128, 192, 256, 320, 384, 512, 640, 768, 1024, 1280, 1536, 2048, 3072, 4096];

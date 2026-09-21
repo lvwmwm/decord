@@ -1,9 +1,9 @@
 // Module ID: 15464
 // Function ID: 15465
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15464
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d28a54af44f7516fe576101d4a6c7e22", name: "EmojiMeltingFaceIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 48, height: 45, scales: [1, 2, 3], hash: "fb99def53a2e7c887031d561bd6a6700", name: "wreath_light", type: "png" });

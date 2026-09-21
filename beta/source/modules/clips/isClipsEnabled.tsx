@@ -1,12 +1,12 @@
-// Module ID: 13764
-// Function ID: 13765
+// Module ID: 13939
+// Function ID: 13940
 // Name: isClipsEnabled
-// Dependencies: [1914, 13765, 504, 2]
+// Dependencies: [1998, 13940, 504, 2]
 // Exports: isClipsEnabled, useIsClipsEnabled
 
-// Module 13764 (isClipsEnabled)
-import ClipsExperiment from "ClipsExperiment" /* 13765 */;
-import ClipsStore from "ClipsStore" /* 1914 */;
+// Module 13939 (isClipsEnabled)
+import ClipsExperiment from "ClipsExperiment" /* 13940 */;
+import ClipsStore from "ClipsStore" /* 1998 */;
 
 require = fn;
 const size = fn(2);

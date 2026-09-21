@@ -1,14 +1,14 @@
 // Module ID: 6899
 // Function ID: 6900
-// Dependencies: []
-// Exports: clamp
+// Dependencies: [6900]
+// Exports: initialize
 
 // Module 6899
-const fn = function n(arg0, arg1, arg2) {
-  return Math.min(Math.max(arg1, arg0), arg2);
-};
-fn.__closure = {};
-fn.__workletHash = 4405247003092;
-fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
+import _mod6900 from "module_6900" /* 6900 */;
 
-export const clamp = fn;
+require = arg1;
+const dependencyMap = arg6;
+
+export const initialize = function initialize() {
+  _mod6900.startListening();
+};

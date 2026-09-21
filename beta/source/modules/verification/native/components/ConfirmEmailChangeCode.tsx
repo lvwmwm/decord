@@ -1,23 +1,23 @@
-// Module ID: 6704
-// Function ID: 6705
+// Module ID: 6845
+// Function ID: 6846
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5704, 21, 1483, 1093, 6705, 6702, 1114, 2]
+// Dependencies: [5, 19, 5840, 21, 1484, 1094, 6846, 6843, 1115, 2]
 // Exports: default
 
-// Module 6704 (ConfirmEmailChangeCode)
-import ConstantsIOS from "ConstantsIOS" /* 1093 */;
+// Module 6845 (ConfirmEmailChangeCode)
+import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const setEmailToken = fn(5704).setEmailToken;
+const setEmailToken = fn(5840).setEmailToken;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  const navigation = isChangeEmail(1483).useNavigation();
+  const navigation = isChangeEmail(1484).useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = noop.useCallback((arg0) => {
     let tmp = arg0;
@@ -34,7 +34,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
     }
   }, items);
   const obj2 = { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null };
-  let obj = isChangeEmail(1483);
+  let obj = isChangeEmail(1484);
   closure_129_0 = asyncGeneratorStep(async (arg0) => {
     await closure_0(c2[7]).confirmEmailChange(closure_0);
     return arg1;
@@ -97,9 +97,9 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       }
     }
   });
-  const intl = isChangeEmail(1114).intl;
-  obj2.headerText = intl.string(isChangeEmail(1114).t["2x/2Uo"]);
-  const intl2 = isChangeEmail(1114).intl;
-  obj2.confirmButtonText = intl2.string(isChangeEmail(1114).t.PDTjLN);
-  return jsx(navigation(6705), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  const intl = isChangeEmail(1115).intl;
+  obj2.headerText = intl.string(isChangeEmail(1115).t["2x/2Uo"]);
+  const intl2 = isChangeEmail(1115).intl;
+  obj2.confirmButtonText = intl2.string(isChangeEmail(1115).t.PDTjLN);
+  return jsx(navigation(6846), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

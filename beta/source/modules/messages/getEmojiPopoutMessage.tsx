@@ -1,12 +1,12 @@
-// Module ID: 10468
-// Function ID: 10469
+// Module ID: 10598
+// Function ID: 10599
 // Name: getEmojiPopoutMessage
-// Dependencies: [5666, 1114, 2]
+// Dependencies: [5802, 1115, 2]
 // Exports: getEmojiPopoutData
 
-// Module 10468 (getEmojiPopoutMessage)
-import util from "util" /* 1114 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5666 */;
+// Module 10598 (getEmojiPopoutMessage)
+import util from "util" /* 1115 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5802 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
@@ -40,8 +40,8 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
         if (isPremium3) {
           if (isDiscoverable3) {
             const obj3 = { type: obj.JOIN_GUILD, text: null, description: null };
-            const intl10 = tmp6(1114).intl;
-            obj3.text = intl10.string(tmp6(1114).t.riu2R5);
+            const intl10 = tmp6(1115).intl;
+            obj3.text = intl10.string(tmp6(1115).t.riu2R5);
             let obj5 = obj3;
           }
           const obj4 = {};
@@ -52,8 +52,8 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
         }
         if (!isPremium3) {
           obj5 = { type: obj.GET_PREMIUM, text: null, description: null };
-          const intl9 = tmp6(1114).intl;
-          obj5.text = intl9.string(tmp6(1114).t["gl/XHJ"]);
+          const intl9 = tmp6(1115).intl;
+          obj5.text = intl9.string(tmp6(1115).t["gl/XHJ"]);
         }
         const obj6 = { type: obj.UNAVAILABLE, text: null, description: null };
         obj5 = obj6;
@@ -132,11 +132,11 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
   } else {
     const intl = util.intl;
     if (isDiscoverable) {
-      formatToPlainStringResult = intl.string(tmp2(1114).t.FJ6Z01);
+      formatToPlainStringResult = intl.string(tmp2(1115).t.FJ6Z01);
       tmp6 = tmp2;
     } else {
       obj = { openPremiumSettings: onOpenPremiumSettings };
-      formatToPlainStringResult = intl.format(tmp2(1114).t.U6vLcA, obj);
+      formatToPlainStringResult = intl.format(tmp2(1115).t.U6vLcA, obj);
       tmp6 = tmp2;
     }
   }

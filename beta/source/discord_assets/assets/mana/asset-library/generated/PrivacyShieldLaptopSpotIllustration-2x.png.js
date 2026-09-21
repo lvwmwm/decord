@@ -1,11 +1,11 @@
-// Module ID: 6465
-// Function ID: 6466
+// Module ID: 6605
+// Function ID: 6606
 // Dependencies: [2]
 
-// Module 6465
+// Module 6605
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PrivacyShieldLaptopSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/5a139fcccdc916c0941c18276607d96d922063b04fcac5e9cd47a6ddc833dd3d.png";
-export const metadata = { fileBytes: 112362 };
+export default "https://cdn.discordapp.com/assets/content/7a9214b30de735fd1f943e5ce5adc7f1c40f57931d6966193a8182519c95920b.png";
+export const metadata = { fileBytes: 112123 };

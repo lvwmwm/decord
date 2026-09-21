@@ -1,13 +1,13 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15964
+// Function ID: 15965
 // Name: OverridePremiumTypeActions
-// Dependencies: [1371, 573, 7854, 2]
+// Dependencies: [1372, 573, 7994, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 15772 (OverridePremiumTypeActions)
+// Module 15964 (OverridePremiumTypeActions)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import createMessage from "createMessage" /* 7854 */;
-import UserStore from "UserStore" /* 1371 */;
+import createMessage from "createMessage" /* 7994 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);

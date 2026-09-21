@@ -1,16 +1,16 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7243
+// Function ID: 7244
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1371, 21, 4636, 576, 5702, 1114, 504, 5204, 4632, 2]
+// Dependencies: [19, 1372, 21, 4756, 576, 5838, 1115, 504, 5339, 4752, 2]
 // Exports: default
 
-// Module 7101 (UserSettingsAccountUnverifiedHeader)
+// Module 7243 (UserSettingsAccountUnverifiedHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5702 */;
+import util from "util" /* 1115 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5838 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function handleOpenEmailVerification() {
@@ -35,7 +35,7 @@ function getBannerText(currentUser) {
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { accountWarning: { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, height: 36, alignItems: "center", alignSelf: "stretch", flexDirection: "row", paddingHorizontal: 16 }, accountWarningText: { flex: 1, lineHeight: 16 }, accountWarningButton: null };
 let obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, height: 36, alignItems: "center", alignSelf: "stretch", flexDirection: "row", paddingHorizontal: 16 };
 obj2.accountWarningButton = { borderWidth: 1, borderColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
@@ -51,11 +51,11 @@ export default function UserSettingsAccountUnverifiedHeader() {
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: null };
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
-    const items1 = [React4(tmp2(4632).Text, obj3), ];
+    const items1 = [React4(tmp2(4752).Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };
-    items1[1] = React4(tmp2(4632).Text, obj4);
+    items1[1] = React4(tmp2(4752).Text, obj4);
     obj2.children = items1;
-    tmp5 = hasOwnProperty(tmp2(5204).PressableOpacity, obj2);
+    tmp5 = hasOwnProperty(tmp2(5339).PressableOpacity, obj2);
   }
   return tmp5;
 };

@@ -1,17 +1,17 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 15959
+// Function ID: 15960
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15766, 4632, 1114, 7045, 15761, 15767, 15764, 2]
+// Dependencies: [5, 32, 19, 21, 15957, 4752, 1115, 7187, 15952, 15958, 15955, 2]
 // Exports: default
 
-// Module 15768 (BackupScreen)
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7045 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15761 */;
-import buttonDefault from "button" /* 15764 */;
-import MFA from "MFA" /* 15766 */;
-import ClipboardCopyInputDefault from "ClipboardCopyInput" /* 15767 */;
+// Module 15959 (BackupScreen)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7187 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 15952 */;
+import buttonDefault from "button" /* 15955 */;
+import MFA from "MFA" /* 15957 */;
+import ClipboardCopyInputDefault from "ClipboardCopyInput" /* 15958 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -107,28 +107,28 @@ export default function BackupScreen(finish) {
   obj.subtitle = intl2.string(util.t.c5J7O0);
   if (first1 > 0) {
     const obj2 = { variant: "text-md/normal", children: null };
-    const intl3 = tmp16(1114).intl;
-    const items2 = [intl3.string(tmp16(1114).t.RRtlLg), ];
-    const intl4 = tmp16(1114).intl;
+    const intl3 = tmp16(1115).intl;
+    const items2 = [intl3.string(tmp16(1115).t.RRtlLg), ];
+    const intl4 = tmp16(1115).intl;
     const obj3 = { countdown: first1 };
-    items2[1] = intl4.format(tmp16(1114).t.tsWkAE, obj3);
+    items2[1] = intl4.format(tmp16(1115).t.tsWkAE, obj3);
     obj2.children = items2;
     let obj4 = obj2;
   } else {
     obj4 = { variant: "text-md/normal", children: null };
-    const intl8 = tmp16(1114).intl;
-    const items3 = [intl8.string(tmp16(1114).t.RRtlLg), ];
-    const intl9 = tmp16(1114).intl;
-    items3[1] = intl9.string(tmp16(1114).t.v3a6Pd);
+    const intl8 = tmp16(1115).intl;
+    const items3 = [intl8.string(tmp16(1115).t.RRtlLg), ];
+    const intl9 = tmp16(1115).intl;
+    items3[1] = intl9.string(tmp16(1115).t.v3a6Pd);
     obj4.children = items3;
   }
   const items4 = [timestampProducer(Text_Text.Text, obj4), ];
   const obj5 = { label: null, placeholder: null, isValidClipboardCode: null, maxLength: null, onChangeCode: null, error: null, isDisabled: null, autoFocus: null };
   const tmp15 = MfaOptionScreenDefault;
   const tmp18 = React6;
-  const intl5 = tmp16(1114).intl;
+  const intl5 = tmp16(1115).intl;
   obj5.label = intl5.string(util.t["C/ZAw/"]);
-  const intl6 = tmp16(1114).intl;
+  const intl6 = tmp16(1115).intl;
   obj5.placeholder = intl6.string(util.t.fZSi1D);
   obj5.isValidClipboardCode = isValidClipboardCode;
   obj5.maxLength = MFA.BACKUP_CODE_MAX_LENGTH;
@@ -149,7 +149,7 @@ export default function BackupScreen(finish) {
   obj.input = timestampProducer(tmp18, obj6);
   const obj7 = { variant: "primary", text: null, loading: null, onPress: null, disabled: null };
   const tmpResult = ClipboardCopyInputDefault;
-  const intl7 = tmp16(1114).intl;
+  const intl7 = tmp16(1115).intl;
   obj7.text = intl7.string(util.t.geKm7t);
   let tmp22 = tmp5;
   if (!tmp5) {
@@ -163,7 +163,7 @@ export default function BackupScreen(finish) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(15766).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(15957).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;

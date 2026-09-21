@@ -1,16 +1,16 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8250
+// Function ID: 8251
 // Name: GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [1979, 1371, 8097, 1074, 11, 1114, 7354, 4816, 2]
+// Dependencies: [2063, 1372, 8251, 1074, 11, 1115, 7493, 4936, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 8096 (GuildRoleSubscriptionSystemMessageUtils)
+// Module 8250 (GuildRoleSubscriptionSystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1114 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7354 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7493 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function identityHook(arg0) {
@@ -61,7 +61,7 @@ function getRoleSubscriptionPurchaseSystemMessageContent(usernameOnClickHandler)
     return obj;
   }
 }
-const GuildRoleSubscriptionSystemMessageConstants = fn(8097);
+const GuildRoleSubscriptionSystemMessageConstants = fn(8251);
 ({ getJoinButtonLabels: hasOwnProperty, getRenewButtonLabels: metroRequire, STICKERS: closure_7 } = GuildRoleSubscriptionSystemMessageConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, NOOP: closure_9 } = Constants);
@@ -140,7 +140,7 @@ export const getRoleSubscriptionPurchaseSystemMessageContentMobile = function ge
       OxP1NC = t["6Z1E+7"];
       tmp7 = tmp3;
     }
-    const intl = tmp7(1114).intl;
+    const intl = tmp7(1115).intl;
     let name;
     if (guild != null) {
       name = guild.name;

@@ -1,12 +1,12 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 7513
+// Function ID: 7514
 // Name: useIsRemote
-// Dependencies: [4653, 504, 2]
+// Dependencies: [4773, 504, 2]
 // Exports: default
 
-// Module 7374 (useIsRemote)
+// Module 7513 (useIsRemote)
 import initialize from "initialize" /* 504 */;
-import GameConsoleStore from "GameConsoleStore" /* 4653 */;
+import GameConsoleStore from "GameConsoleStore" /* 4773 */;
 
 require = fn;
 const size = fn(2);

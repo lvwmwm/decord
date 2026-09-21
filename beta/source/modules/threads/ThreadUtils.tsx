@@ -1,21 +1,21 @@
-// Module ID: 7883
-// Function ID: 7884
+// Module ID: 8023
+// Function ID: 8024
 // Name: ThreadUtils
-// Dependencies: [109, 4651, 4817, 4277, 1113, 1074, 1114, 7602, 4816, 1240, 7876, 7217, 1384, 504, 11, 4228, 2]
+// Dependencies: [109, 4771, 4937, 4397, 1114, 1074, 1115, 7741, 4936, 1241, 8016, 7359, 1385, 504, 11, 4348, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7883 (ThreadUtils)
+// Module 8023 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import _modDef4228 from "module_4228" /* 4228 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
-import getTimestampStringDefault from "getTimestampString" /* 7602 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7876 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import _modDef4348 from "module_4348" /* 4348 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
+import getTimestampStringDefault from "getTimestampString" /* 7741 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8016 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 4651 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4277 */;
+import ReadStateStore from "ReadStateStore" /* 4771 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 
 const require = globalThis.__r;
 
@@ -27,7 +27,7 @@ function getAccessibilityLabelFormatter() {
   return time;
 }
 let closure_3 = ["can_send_message", "parent_channel_type"];
-const ThreadMemberFlags = fn(1113).ThreadMemberFlags;
+const ThreadMemberFlags = fn(1114).ThreadMemberFlags;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, UserNotificationSettings: c10 } = Constants);
 const size = fn(2);
@@ -55,7 +55,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = getGuildId.getGuildId();
     const parent_id = getGuildId.parent_id;
-    const currentChannelSettings = tmp(7217).getCurrentChannelSettings(guildId, parent_id);
+    const currentChannelSettings = tmp(7359).getCurrentChannelSettings(guildId, parent_id);
     let num = JoinedThreadsStore.flags(getGuildId.id);
     if (num == null) {
       num = 0;
@@ -82,8 +82,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = JoinedThreadsStore.isMuted(getGuildId.id);
-    let tmpResult = tmp(7217);
-    let result1 = tmp(7217).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
+    let tmpResult = tmp(7359);
+    let result1 = tmp(7359).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
     ({ can_send_message, parent_channel_type } = result);
     const obj2 = {};
     const merged = Object.assign(_objectWithoutProperties(result, closure_3));
@@ -107,11 +107,11 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj2.new_thread_is_muted = muted;
     obj2.old_thread_muted_until = result1;
     if (null != flags.mute_config) {
-      result1 = tmp(7217).muteConfigToTimestamp(flags.mute_config);
-      const tmpResult4 = tmp(7217);
+      result1 = tmp(7359).muteConfigToTimestamp(flags.mute_config);
+      const tmpResult4 = tmp(7359);
     }
     obj2.new_thread_muted_until = result1;
-    const tmpResult3 = tmp(7217);
+    const tmpResult3 = tmp(7359);
     AnalyticsUtilsDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
 };
@@ -130,8 +130,8 @@ export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) 
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    valueOfResult = _modDef4228(createTimestamp).valueOf();
-    const obj3 = _modDef4228(createTimestamp);
+    valueOfResult = _modDef4348(createTimestamp).valueOf();
+    const obj3 = _modDef4348(createTimestamp);
   }
   if (extractTimestampResult == null) {
     extractTimestampResult = valueOfResult;

@@ -1,15 +1,17 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7516
+// Function ID: 7517
 // Name: sanitizeThreadName
 // Dependencies: [2]
 // Exports: default
 
-// Module 7377 (sanitizeThreadName)
+// Module 7516 (sanitizeThreadName)
 import size from "module_2" /* 2 */;
 
+const re0 = /\r\n|[\r\n]/g;
 const result = size.fileFinishedImporting("modules/threads/sanitizeThreadName.tsx");
 
 export default function sanitizeThreadName(str, arg1) {
+  str = str.replace(re0, " ");
   let trimmed = str;
   if (arg1) {
     trimmed = str.trim();

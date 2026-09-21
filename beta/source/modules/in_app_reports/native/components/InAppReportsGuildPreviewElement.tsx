@@ -1,15 +1,15 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 13199
+// Function ID: 13200
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4636, 576, 7082, 4486, 4632, 1114, 5665, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 7224, 4605, 4752, 1115, 5801, 2]
 // Exports: default
 
-// Module 9165 (InAppReportsGuildPreviewElement)
+// Module 13199 (InAppReportsGuildPreviewElement)
 import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4486 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import GuildIcon from "GuildIcon" /* 5665 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
+import ColorUtils from "ColorUtils" /* 4605 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, guildContainer: null, guildInfo: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.guildContainer = { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 12 };
@@ -40,12 +40,12 @@ export default function GuildPreview(guild) {
   }
   const obj4 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: null };
   if (null != typeConsolidationEyebrow.style) {
-    const intl2 = tmp2(1114).intl;
-    let stringResult = intl2.string(tmp2(1114).t["0ox7Hq"]);
+    const intl2 = tmp2(1115).intl;
+    let stringResult = intl2.string(tmp2(1115).t["0ox7Hq"]);
   } else {
-    const intl = tmp2(1114).intl;
-    stringResult = intl.string(tmp2(1114).t["0ox7Hq"]).toUpperCase();
-    const str = intl.string(tmp2(1114).t["0ox7Hq"]);
+    const intl = tmp2(1115).intl;
+    stringResult = intl.string(tmp2(1115).t["0ox7Hq"]).toUpperCase();
+    const str = intl.string(tmp2(1115).t["0ox7Hq"]);
   }
   obj4.children = stringResult;
   const items1 = [React4(Text_Text.Text, obj4), ];

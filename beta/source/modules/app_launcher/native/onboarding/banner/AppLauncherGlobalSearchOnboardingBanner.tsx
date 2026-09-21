@@ -1,20 +1,20 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12369
+// Function ID: 12370
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1482, 1954, 21, 4636, 576, 5187, 11273, 1114, 2]
+// Dependencies: [19, 17, 1483, 2038, 21, 4756, 576, 5278, 11402, 1115, 2]
 // Exports: default
 
-// Module 12249 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 12369 (AppLauncherGlobalSearchOnboardingBanner)
 import nativeDefault from "native" /* 576 */;
-import AppsIcon from "AppsIcon" /* 5187 */;
+import AppsIcon from "AppsIcon" /* 5278 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const DEFAULT_CONTENT_PADDING = fn(1482).DEFAULT_CONTENT_PADDING;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const DEFAULT_CONTENT_PADDING = fn(1483).DEFAULT_CONTENT_PADDING;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { appsIcon: null, appsIconImage: null };
 let size = { height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
 obj2.appsIcon = size;
@@ -51,10 +51,10 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
       surfaceMeasurements: null,
       position: "bottom"
     };
-    const intl = markAsDismissed(1114).intl;
-    obj.title = intl.string(markAsDismissed(1114).t.bCPN5y);
-    const intl2 = markAsDismissed(1114).intl;
-    obj.description = intl2.string(markAsDismissed(1114).t["0TBExc"]);
+    const intl = markAsDismissed(1115).intl;
+    obj.title = intl.string(markAsDismissed(1115).t.bCPN5y);
+    const intl2 = markAsDismissed(1115).intl;
+    obj.description = intl2.string(markAsDismissed(1115).t["0TBExc"]);
     obj.onDismiss = function onDismiss() {
       markAsDismissed({ actionType: ContentDismissActionType.TAKE_ACTION });
     };
@@ -62,7 +62,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     obj.targetMeasurements = size;
     const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     obj.surfaceMeasurements = size1;
-    tmp3 = jsx(markAsDismissed(11273).Coachmark, {
+    tmp3 = jsx(markAsDismissed(11402).Coachmark, {
       renderImgComponent: function appsIcon() {
           const obj = { style: closure_2.appsIcon, children: jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }) };
           return <View style={closure_2.appsIcon}>{jsx(AppsIcon.AppsIcon, { style: closure_2.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE })}</View>;

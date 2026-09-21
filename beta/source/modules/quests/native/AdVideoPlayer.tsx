@@ -1,21 +1,21 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15304
+// Function ID: 15305
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 1895, 1074, 21, 576, 8426, 4636, 672, 15104, 4373, 5055, 5059, 4637, 4640, 1109, 504, 1363, 1230, 1611, 1114, 5204, 15116, 15118, 15120, 15121, 10308, 8392, 8394, 15122, 15123, 2]
+// Dependencies: [32, 19, 17, 1979, 1074, 21, 576, 8579, 4756, 672, 15292, 4492, 5185, 5189, 4757, 4760, 1110, 504, 1364, 1231, 1612, 1115, 5339, 15305, 15307, 15309, 15310, 10437, 8545, 8547, 15311, 15312, 2]
 
-// Module 15115 (AdVideoPlayer)
+// Module 15304 (AdVideoPlayer)
 import nativeDefault from "native" /* 576 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import timing from "timing" /* 4637 */;
-import timingPresets from "timingPresets" /* 4640 */;
-import spring from "spring" /* 5055 */;
-import springPresets from "springPresets" /* 5059 */;
-import _modDef8426 from "module_8426" /* 8426 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15104 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import timing from "timing" /* 4757 */;
+import timingPresets from "timingPresets" /* 4760 */;
+import spring from "spring" /* 5185 */;
+import springPresets from "springPresets" /* 5189 */;
+import _modDef8579 from "module_8579" /* 8579 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15292 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1895 */;
+import AppStateStore from "AppStateStore" /* 1979 */;
 import n from "module_672" /* 672 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let rect = { left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, top: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
-const _isNativeReflectConstruct = noop.memo(_modDef8426);
+const _isNativeReflectConstruct = noop.memo(_modDef8579);
 function hasVideoEnded(arg0, arg1) {
   return arg0 >= arg1 - 1;
 }
@@ -53,7 +53,7 @@ function canSeekForward(arg0, arg1, arg2, arg3) {
 canSeekForward.__closure = { hasVideoEnded };
 canSeekForward.__workletHash = 14098132092693;
 canSeekForward.__initData = { code: "function canSeekForward_AdVideoPlayerTsx2(currentTime,maxTimestamp,videoDuration,allowUnrestrictedSeeking){const{hasVideoEnded}=this.__closure;return!hasVideoEnded(currentTime,videoDuration)&&(allowUnrestrictedSeeking||currentTime<=maxTimestamp-1);}" };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: null, loadingContainer: null, bufferingSpinner: null, bufferingSpinnerCentered: null, video: null, videoContainer: null, controls: null, controlsTopBottom: null, controlsMiddle: null, controlsTop: null, controlsBottom: null, progressContainer: null, progress: null, icon: null, iconDisabled: null, controlButton: null };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj.container = {};
@@ -412,25 +412,25 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
       flag = true;
     }
     if (first2 !== AdsVideoTypes.PlayerState.ERRORED) {
-      if (tmp !== tmp2(15104).PlayerState.PAUSED) {
-        if (tmp !== tmp2(15104).PlayerState.LOADING) {
-          if (tmp === tmp2(15104).PlayerState.PLAYING) {
-            callback(tmp2(15104).PlayerState.PAUSED);
+      if (tmp !== tmp2(15292).PlayerState.PAUSED) {
+        if (tmp !== tmp2(15292).PlayerState.LOADING) {
+          if (tmp === tmp2(15292).PlayerState.PLAYING) {
+            callback(tmp2(15292).PlayerState.PAUSED);
             if (onPausePlayback != null) {
-              tmp16(tmp2(15104).PlaybackTriggerSource.USER_INTERACTION);
+              tmp16(tmp2(15292).PlaybackTriggerSource.USER_INTERACTION);
             }
           }
         }
       }
-      callback(tmp2(15104).PlayerState.PLAYING);
+      callback(tmp2(15292).PlayerState.PLAYING);
       if (onResumePlayback != null) {
-        tmp6(tmp2(15104).PlaybackTriggerSource.USER_INTERACTION);
+        tmp6(tmp2(15292).PlaybackTriggerSource.USER_INTERACTION);
       }
     }
     callback4(0);
     callback(AdsVideoTypes.PlayerState.PLAYING);
     if (onResumePlayback != null) {
-      tmp11(tmp2(15104).PlaybackTriggerSource.USER_INTERACTION);
+      tmp11(tmp2(15292).PlaybackTriggerSource.USER_INTERACTION);
     }
   }, items6);
   const items7 = [callback6];
@@ -441,9 +441,9 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     closure_37.current = false;
     if (first2 === AdsVideoTypes.PlayerState.PLAYING) {
       closure_37.current = true;
-      callback(tmp2(15104).PlayerState.PAUSED);
+      callback(tmp2(15292).PlayerState.PAUSED);
       if (onPausePlayback != null) {
-        tmp6(tmp2(15104).PlaybackTriggerSource.SYSTEM_INITIATED);
+        tmp6(tmp2(15292).PlaybackTriggerSource.SYSTEM_INITIATED);
       }
     }
   }, items8);
@@ -452,9 +452,9 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
     if (ref5.current) {
       tmp.current = false;
       if (first2 !== AdsVideoTypes.PlayerState.ERRORED) {
-        callback(tmp3(15104).PlayerState.PLAYING);
+        callback(tmp3(15292).PlayerState.PLAYING);
         if (onResumePlayback != null) {
-          tmp7(tmp3(15104).PlaybackTriggerSource.SYSTEM_INITIATED);
+          tmp7(tmp3(15292).PlaybackTriggerSource.SYSTEM_INITIATED);
         }
       }
     }
@@ -642,7 +642,7 @@ export const AdVideoPlayer = noop.memo((initialProgress) => {
       }
     } else {
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        const tmp2Result = tmp2(1363);
+        const tmp2Result = tmp2(1364);
       }
       callback17(true);
       tmp2 = require;

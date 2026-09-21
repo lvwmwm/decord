@@ -1,26 +1,22 @@
 // Module ID: 6991
 // Function ID: 6992
-// Dependencies: [6992]
+// Dependencies: [6965, 6980, 6956]
+// Exports: useNativeGesture
 
 // Module 6991
-import _mod6992 from "module_6992" /* 6992 */;
+import ComposedGestureName from "ComposedGestureName" /* 6956 */;
+import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6965 */;
+import _mod6980 from "module_6980" /* 6980 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let closure_2 = {};
 
-export default function _inherits(value, fn) {
-  if (typeof fn !== "function") {
-    if (null !== fn) {
-      const _TypeError = TypeError;
-      const typeError = new TypeError("Super expression must either be null or a function");
-      throw typeError;
-    }
+export const useNativeGesture = function useNativeGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_2;
   }
-  let prototype = fn;
-  if (fn) {
-    prototype = fn.prototype;
-  }
-  value.prototype = Object.create(prototype, { constructor: { value, writable: true, configurable: true } });
-  Object.defineProperty(value, "prototype", { writable: false });
-  if (fn) {
-    _mod6992(value, fn);
-  }
+  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp);
+  return _mod6980.useGesture(ComposedGestureName.SingleGestureName.Native, clonedAndRemappedConfig);
 };

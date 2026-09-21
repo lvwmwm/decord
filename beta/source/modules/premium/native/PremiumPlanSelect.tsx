@@ -1,44 +1,44 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13806
+// Function ID: 13807
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7527, 1979, 4299, 4300, 7340, 13633, 1373, 1074, 7535, 4618, 21, 4636, 5605, 5522, 576, 5054, 5773, 4632, 1114, 4294, 13634, 13635, 13636, 13637, 13638, 13639, 8785, 4338, 504, 13640, 13435, 4571, 1176, 1240, 13467, 13468, 5686, 13641, 5658, 6756, 4488, 1364, 7512, 10792, 4981, 13642, 1896, 5768, 5068, 7513, 7343, 4309, 4839, 7515, 10838, 7265, 7360, 5679, 5073, 10940, 10832, 1483, 7520, 13477, 7285, 10833, 4960, 11572, 13443, 7507, 9495, 4306, 10936, 2]
+// Dependencies: [5, 32, 19, 17, 7666, 2063, 4419, 4420, 7482, 13807, 1374, 1074, 7674, 4738, 21, 4756, 5741, 5658, 576, 5184, 5909, 4752, 1115, 4414, 13808, 13809, 13810, 13811, 13812, 13813, 8940, 4457, 504, 13814, 13608, 4690, 1177, 1241, 13646, 13647, 5822, 13815, 5794, 6897, 4607, 1365, 7651, 10923, 5109, 13816, 1980, 5904, 5198, 7652, 7485, 4429, 4959, 7654, 10969, 7407, 7499, 5815, 5203, 11070, 10963, 1484, 7659, 13656, 7427, 10964, 5079, 11698, 13622, 7646, 9479, 4426, 11066, 2]
 // Exports: default
 
-// Module 13632 (PremiumPlanSelect)
+// Module 13806 (PremiumPlanSelect)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1364 */;
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import PremiumSubscription from "PremiumSubscription" /* 4306 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 4960 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import LinearGradientDefault from "LinearGradient" /* 5068 */;
-import TextStylesDefault from "TextStyles" /* 5605 */;
-import native2 from "native" /* 5773 */;
-import ProductIds from "ProductIds" /* 7343 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7360 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7512 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8785 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10792 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10940 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13467 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13468 */;
-import _modDef13634 from "module_13634" /* 13634 */;
-import _modDef13635 from "module_13635" /* 13635 */;
-import _modDef13636 from "module_13636" /* 13636 */;
-import _modDef13637 from "module_13637" /* 13637 */;
-import _modDef13638 from "module_13638" /* 13638 */;
-import _modDef13639 from "module_13639" /* 13639 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
+import PremiumUtils from "PremiumUtils" /* 4414 */;
+import PremiumSubscription from "PremiumSubscription" /* 4426 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5079 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import TextStylesDefault from "TextStyles" /* 5741 */;
+import native2 from "native" /* 5909 */;
+import ProductIds from "ProductIds" /* 7485 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7499 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7651 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8940 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10923 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 11070 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13646 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13647 */;
+import _modDef13808 from "module_13808" /* 13808 */;
+import _modDef13809 from "module_13809" /* 13809 */;
+import _modDef13810 from "module_13810" /* 13810 */;
+import _modDef13811 from "module_13811" /* 13811 */;
+import _modDef13812 from "module_13812" /* 13812 */;
+import _modDef13813 from "module_13813" /* 13813 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4299 */;
-import SubscriptionStore from "SubscriptionStore" /* 4300 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4419 */;
+import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 const require = globalThis.__r;
 const PremiumUtilsDefault = PremiumUtils;
@@ -83,12 +83,12 @@ function getPlanDescription(premiumTier) {
     const formatToPlainString = intl2.formatToPlainString;
     if (flag) {
       const obj4 = { numSubscriptions: premiumTier.numPremiumGuild };
-      formatToPlainStringResult = formatToPlainString(tmp7(1114).t.gDsyB9, obj4);
+      formatToPlainStringResult = formatToPlainString(tmp7(1115).t.gDsyB9, obj4);
     } else {
       if (premiumTier.premiumTier === closure_1_20.TIER_1) {
-        let u6dBsN = tmp7(1114).t.sexoHq;
+        let u6dBsN = tmp7(1115).t.sexoHq;
       } else {
-        u6dBsN = tmp7(1114).t.u6dBsN;
+        u6dBsN = tmp7(1115).t.u6dBsN;
       }
       const obj = { num: premiumTier.numPremiumGuild };
       formatToPlainStringResult = formatToPlainString(u6dBsN, obj);
@@ -102,9 +102,9 @@ function BoostDeltaPriceTrailing(arg0) {
   items = [__initData9(NitroWheelIcon.NitroWheelIcon, { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }), ];
   const intl = util.intl;
   if (interval === constants.MONTH) {
-    let AbOLNu = tmp2(1114).t.AbOLNu;
+    let AbOLNu = tmp2(1115).t.AbOLNu;
   } else {
-    AbOLNu = tmp2(1114).t["rS8FA+"];
+    AbOLNu = tmp2(1115).t["rS8FA+"];
   }
   const obj3 = { variant: "text-sm/medium", color: "text-muted", children: null };
   const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
@@ -372,7 +372,7 @@ function PlanSection(showBoostOnlyLabels) {
   c12 = undefined;
   const tmp = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   closure_11 = tmp;
-  let isIOSResult = shouldShowModernBoostFlow(1364).isIOS();
+  let isIOSResult = shouldShowModernBoostFlow(1365).isIOS();
   if (isIOSResult) {
     isIOSResult = null != tmp;
   }
@@ -446,7 +446,7 @@ function PlanSection(showBoostOnlyLabels) {
   }, plan.productId));
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: showBoostOnlyLabels.label, hasIcons: true, children: mapped };
-    let tmp7Result = tmp7(shouldShowModernBoostFlow(5768).TableRowGroup, obj2);
+    let tmp7Result = tmp7(shouldShowModernBoostFlow(5904).TableRowGroup, obj2);
   } else {
     let obj3 = { children: mapped };
     tmp7Result = tmp7(closure_7, obj3);
@@ -629,8 +629,8 @@ function PlanSections(showCurrentPlan) {
         if (!tmp4) {
           let result = PremiumBundledPlansUtils.productsHaveSamePerks(productId.productId, tmp);
           if (result) {
-            result = productId.interval === tmp8(7512).getPremiumBundledItemsFromProductId(tmp).interval;
-            const tmp8Result = tmp8(7512);
+            result = productId.interval === tmp8(7651).getPremiumBundledItemsFromProductId(tmp).interval;
+            const tmp8Result = tmp8(7651);
           }
           tmp7 = result;
           tmp8 = require;
@@ -705,26 +705,26 @@ function PlanSections(showCurrentPlan) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const useNativeCheckoutStore = fn(7527).useNativeCheckoutStore;
-const PremiumPlanSelectStore = fn(13633);
+const useNativeCheckoutStore = fn(7666).useNativeCheckoutStore;
+const PremiumPlanSelectStore = fn(13807);
 ({ setIsPurchasing: closure_14, usePremiumPlanSelectStore: closure_15 } = PremiumPlanSelectStore);
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_16, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_17, PRICE_PLACEHOLDER: closure_18, PremiumSubscriptionSKUs: closure_19, PremiumTypes: closure_20, SubscriptionIntervalTypes: closure_21, SubscriptionPlans: closure_22 } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_23, AnalyticsObjects: closure_24, AnalyticsObjectTypes: closure_25, Fonts, HorizontalGradient: closure_26, PaymentGateways: closure_27, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
-const ColorConstants = fn(7535);
+const ColorConstants = fn(7674);
 ({ getPremiumGradientColor: closure_28, Gradients: closure_29 } = ColorConstants);
-const ItemPurchaseType = fn(4618).ItemPurchaseType;
+const ItemPurchaseType = fn(4738).ItemPurchaseType;
 const jsxProd = fn(21);
 ({ jsx: items, jsxs: closure_32, Fragment: closure_33 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { header: null, row: null, rowDisabled: null, imgWumpusNitro: null, imgBoost: null, imgWumpusNitroBoost: null, imgWumpusNitroClassic: null, imgWumpusNitroClassicBoost: null, imgWumpusNitroTier0: null, rowText: null, rowPlanDescription: null, rowPlanDescriptionSubtext: null, rowPrice: null, purchasingSpinner: null, container: null, currentPlanGradient: null, currentPlanRow: null, loadingSpinnerContainer: null, offPlatformSubscriptionMessage: null, premiumHeaderLabel: null, boostContainer: null, boostRowIcon: null, nitroBanner: null, nitroBannerText: null, recommendedText: null };
 let obj3 = {};
 let merged = Object.assign(TextStylesDefault(Fonts.DISPLAY_EXTRABOLD, undefined, 24));
 obj3.marginTop = 16;
-obj3.color = fn(5522).DARK_WHITE_500_LIGHT_BLACK_500;
+obj3.color = fn(5658).DARK_WHITE_500_LIGHT_BLACK_500;
 obj.header = obj3;
-obj.row = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5522).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj.row = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5658).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 obj.rowDisabled = { opacity: 0.5 };
 obj.imgWumpusNitro = { height: 40, width: 40 };
 obj.imgBoost = { height: 40, width: 40 };
@@ -732,14 +732,14 @@ obj.imgWumpusNitroBoost = { width: 32, height: 32 };
 obj.imgWumpusNitroClassic = { width: 40, height: 40 };
 obj.imgWumpusNitroClassicBoost = { width: 32, height: 32 };
 obj.imgWumpusNitroTier0 = { width: 40, height: 40 };
-let obj4 = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5522).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
-obj.rowText = { fontSize: 16, color: fn(5522).DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj4 = { marginTop: 7, borderRadius: nativeDefault.radii.sm, flexDirection: "row", alignItems: "center", paddingVertical: 12, paddingHorizontal: 12, flexWrap: "wrap", backgroundColor: fn(5658).DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
+obj.rowText = { fontSize: 16, color: fn(5658).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.rowPlanDescription = { marginLeft: 12, fontFamily: Fonts.PRIMARY_SEMIBOLD, lineHeight: 20 };
 obj.rowPlanDescriptionSubtext = { fontSize: 12, marginLeft: 5, fontFamily: Fonts.PRIMARY_MEDIUM, fontWeight: "400" };
 obj.rowPrice = { marginLeft: "auto" };
 obj.purchasingSpinner = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" };
 obj.container = { marginHorizontal: 14.5, paddingBottom: 10 };
-let obj5 = { fontSize: 16, color: fn(5522).DARK_WHITE_500_LIGHT_BLACK_500 };
+let obj5 = { fontSize: 16, color: fn(5658).DARK_WHITE_500_LIGHT_BLACK_500 };
 obj.currentPlanGradient = { marginTop: 20, borderRadius: nativeDefault.radii.sm };
 obj.currentPlanRow = { marginTop: 0.5, marginRight: 0.5, marginLeft: 0.5, marginBottom: 0.5 };
 obj.loadingSpinnerContainer = { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" };
@@ -754,7 +754,7 @@ obj.nitroBannerText = { textAlign: "center" };
 let obj8 = { alignItems: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj.recommendedText = { color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_34 = createStyles.createStyles(obj);
-let closure_37 = { [_modDef13637]: "imgWumpusNitro", [_modDef13639]: "imgWumpusNitroBoost", [_modDef13636]: "imgWumpusNitroClassic", [_modDef13638]: "imgWumpusNitroClassicBoost", [_modDef13635]: "imgWumpusNitroTier0", [_modDef13634]: "imgBoost" };
+let closure_37 = { [_modDef13811]: "imgWumpusNitro", [_modDef13813]: "imgWumpusNitroBoost", [_modDef13810]: "imgWumpusNitroClassic", [_modDef13812]: "imgWumpusNitroClassicBoost", [_modDef13809]: "imgWumpusNitroTier0", [_modDef13808]: "imgBoost" };
 items = [
   {
     id: "premium",
@@ -930,8 +930,8 @@ let closure_45 = noop.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow,
                 let obj7 = {
                   value: v3(modifySubscriptionItemsForProduct.map((planId) => {
                               const obj = { sku_id: null, subscription_plan_id: null, quantity: null, purchase_type: null };
-                              const obj2 = applicationId(4294);
-                              obj.sku_id = obj2.castPremiumSubscriptionAsSkuId(closure_1_1(4294).getSkuIdForPlan(planId.planId));
+                              const obj2 = applicationId(4414);
+                              obj.sku_id = obj2.castPremiumSubscriptionAsSkuId(closure_1_1(4414).getSkuIdForPlan(planId.planId));
                               ({ planId: obj.subscription_plan_id, quantity: obj.quantity } = planId);
                               obj.purchase_type = constants.SUBSCRIPTION;
                               return obj;
@@ -999,29 +999,30 @@ let closure_45 = noop.forwardRef(function PremiumPlanSelect(isBoostPurchaseFlow,
           }
           obj13.orderId = id;
           obj13.onPurchaseComplete = function onPurchaseComplete(paymentGateway) {
-            closure_1(4981).close();
+            closure_1(5109).close();
             if (paymentGateway.paymentGateway === constants.APPLE_ADVANCED_COMMERCE) {
               premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
               if (null == premiumTypeSubscription) {
                 const _Error = Error;
                 const error = new Error("PremiumActivatedAlert: no premium subscription in store post-activation");
                 const obj2 = { tags: { source: "showPremiumActivatedAlert.nullSubscription" } };
-                const result = premiumTypeSubscription(4309).captureBillingException(error, obj2);
-                const obj4 = premiumTypeSubscription(4309);
-                tmp(4839).popWithKey(premiumTypeSubscription(7515).PREMIUM_KEY);
+                const result = premiumTypeSubscription(4429).captureBillingException(error, obj2);
+                const obj4 = premiumTypeSubscription(4429);
+                tmp(4959).popWithKey(premiumTypeSubscription(7654).PREMIUM_KEY);
                 if (closure_1_5.canGoBack()) {
                   obj7.goBack();
                 }
                 obj7 = closure_1_5;
-                const tmpResult = tmp(4839);
+                const tmpResult = tmp(4959);
               } else {
                 const obj3 = {
                   importer() {
                         return premiumTypeSubscription(basePurchaseFlowAnalyticsFields[50])(basePurchaseFlowAnalyticsFields[58], basePurchaseFlowAnalyticsFields.paths).then(() => { ... });
-                      }
+                      },
+                  isDismissable: false
                 };
-                tmp(4981).openLazy(obj3);
-                const tmpResult2 = tmp(4981);
+                tmp(5109).openLazy(obj3);
+                const tmpResult2 = tmp(5109);
               }
             }
           };

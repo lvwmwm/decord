@@ -1,13 +1,13 @@
-// Module ID: 6288
-// Function ID: 6289
+// Module ID: 6426
+// Function ID: 6427
 // Name: HeadphonesAndControllerSpotIllustration
-// Dependencies: [21, 5668, 6289, 2]
+// Dependencies: [21, 5804, 6427, 2]
 // Exports: HeadphonesAndControllerSpotIllustration
 
-// Module 6288 (HeadphonesAndControllerSpotIllustration)
+// Module 6426 (HeadphonesAndControllerSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6289 from "module_6289" /* 6289 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6427 from "module_6427" /* 6427 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const HeadphonesAndControllerSpotIllustration = function HeadphonesAndCon
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6289 };
+  const obj2 = { uri: _modDef6427 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

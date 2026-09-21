@@ -1,20 +1,20 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16589
+// Function ID: 16590
 // Name: useCanSeeNUFChannelsForGuild
-// Dependencies: [2021, 1979, 1371, 1074, 4262, 504, 4481, 1384, 2]
+// Dependencies: [2105, 2063, 1372, 1074, 4382, 504, 4600, 1385, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 16347 (useCanSeeNUFChannelsForGuild)
-import UserUtils from "UserUtils" /* 4481 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 16589 (useCanSeeNUFChannelsForGuild)
+import UserUtils from "UserUtils" /* 4600 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const GuildFeatures = fn(1074).GuildFeatures;
-const GuildMemberFlags = fn(4262).GuildMemberFlags;
+const GuildMemberFlags = fn(4382).GuildMemberFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/nuf_channels/native/useCanSeeNUFChannelsForGuild.tsx");
 
@@ -38,16 +38,16 @@ export const useCanSeeNUFChannelsForGuild = function useCanSeeNUFChannelsForGuil
               if (num == null) {
                 num = 0;
               }
-              hasFlagResult = tmp10(1384).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
-              const tmp10Result = tmp10(1384);
+              hasFlagResult = tmp10(1385).hasFlag(num, GuildMemberFlags.STARTED_ONBOARDING);
+              const tmp10Result = tmp10(1385);
             }
             if (hasFlagResult) {
               let num2 = selfMember.flags;
               if (num2 == null) {
                 num2 = 0;
               }
-              hasFlagResult = !tmp10(1384).hasFlag(num2, GuildMemberFlags.COMPLETED_ONBOARDING);
-              const tmp10Result2 = tmp10(1384);
+              hasFlagResult = !tmp10(1385).hasFlag(num2, GuildMemberFlags.COMPLETED_ONBOARDING);
+              const tmp10Result2 = tmp10(1385);
             }
             return !hasFlagResult;
           }

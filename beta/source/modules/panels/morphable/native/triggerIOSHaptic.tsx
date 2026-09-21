@@ -1,12 +1,12 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17485
+// Function ID: 17486
 // Name: triggerIOSHaptic
-// Dependencies: [12407, 4604, 2]
+// Dependencies: [12527, 4724, 2]
 // Exports: default
 
-// Module 17133 (triggerIOSHaptic)
-import HapticUtils from "HapticUtils" /* 4604 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12407 */;
+// Module 17485 (triggerIOSHaptic)
+import HapticUtils from "HapticUtils" /* 4724 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12527 */;
 import size from "module_2" /* 2 */;
 
 const IS_IOS = MorphablePanelConstants.IS_IOS;

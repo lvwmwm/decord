@@ -1,9 +1,9 @@
-// Module ID: 1959
-// Function ID: 1960
+// Module ID: 2043
+// Function ID: 2044
 // Name: GuildMembershipStore
 // Dependencies: [504, 573, 2]
 
-// Module 1959 (GuildMembershipStore)
+// Module 2043 (GuildMembershipStore)
 import initializeDefault from "initialize" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 573 */;
 

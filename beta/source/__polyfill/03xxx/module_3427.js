@@ -1,9 +1,9 @@
 // Module ID: 3427
 // Function ID: 3428
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 3427
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/game_pass_perks", scales: [1], hash: "0ed18d802f39ad8ae58ce024ccbaa690", name: "XboxGamePassPerks.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3lvdXR1YmVfM3Bw", scales: [1], hash: "90c7f6dd158ca140cc30ab366fd57154", name: "es-419.messages.90c7f6dd158ca140cc30ab366fd57154.compiled.messages", type: "jsona" });

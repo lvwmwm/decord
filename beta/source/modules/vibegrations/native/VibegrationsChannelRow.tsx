@@ -1,22 +1,22 @@
-// Module ID: 16313
-// Function ID: 16314
+// Module ID: 16555
+// Function ID: 16556
 // Name: VibegrationsChannelRow
-// Dependencies: [19, 1074, 1964, 10246, 21, 4636, 576, 1100, 12512, 1114, 3590, 10281, 2]
+// Dependencies: [19, 1074, 2048, 10374, 21, 4756, 576, 1101, 12633, 1115, 3678, 10408, 2]
 // Exports: default
 
-// Module 16313 (VibegrationsChannelRow)
+// Module 16555 (VibegrationsChannelRow)
 import nativeDefault from "native" /* 576 */;
-import router_utils from "router_utils" /* 1100 */;
-import _modDef3590 from "module_3590" /* 3590 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 12512 */;
+import router_utils from "router_utils" /* 1101 */;
+import _modDef3678 from "module_3678" /* 3678 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 12633 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Routes = fn(1074).Routes;
-const StaticChannelRoute = fn(1964).StaticChannelRoute;
+const StaticChannelRoute = fn(2048).StaticChannelRoute;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
-let obj2 = { container: { marginVertical: fn(10246).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const createStyles = fn(4756);
+let obj2 = { container: { marginVertical: fn(10374).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsChannelRow.tsx");
@@ -29,23 +29,23 @@ export default function VibegrationsChannelRow(selected) {
     router_utils.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.VIBEGRATIONS));
   }, items);
   if (true === selected) {
-    let DEFAULT = id(12512).ChannelModes.SELECTED;
+    let DEFAULT = id(12633).ChannelModes.SELECTED;
     let tmp5 = id;
   } else {
-    DEFAULT = id(12512).ChannelModes.DEFAULT;
+    DEFAULT = id(12633).ChannelModes.DEFAULT;
     tmp5 = id;
   }
   const obj = { onPress: callback, style: closure_7().container, accessible: true, accessibilityLabel: null, accessibilityState: null, mode: null, name: null, icon: null };
   const tmp = closure_7();
-  const intl = tmp5(1114).intl;
-  obj.accessibilityLabel = intl.string(_modDef3590.Xmvb23);
+  const intl = tmp5(1115).intl;
+  obj.accessibilityLabel = intl.string(_modDef3678.Xmvb23);
   obj.accessibilityState = { selected };
   obj.mode = DEFAULT;
   const obj2 = { name: null, mode: null };
-  const intl2 = tmp5(1114).intl;
-  obj2.name = intl2.string(_modDef3590.Xmvb23);
+  const intl2 = tmp5(1115).intl;
+  obj2.name = intl2.string(_modDef3678.Xmvb23);
   obj2.mode = DEFAULT;
-  obj.name = jsx(tmp5(12512).BaseChannelName, { name: null, mode: null });
-  obj.icon = jsx(tmp5(12512).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(10281).MagicWandIcon });
+  obj.name = jsx(tmp5(12633).BaseChannelName, { name: null, mode: null });
+  obj.icon = jsx(tmp5(12633).BaseChannelIcon, { mode: DEFAULT, IconComponent: tmp5(10408).MagicWandIcon });
   return <tmp8 onPress={callback} style={closure_7().container} accessible accessibilityLabel={null} accessibilityState={null} mode={null} name={null} icon={null} />;
 };

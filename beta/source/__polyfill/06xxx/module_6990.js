@@ -1,34 +1,22 @@
 // Module ID: 6990
 // Function ID: 6991
-// Dependencies: [6988]
+// Dependencies: [6965, 6980, 6956]
+// Exports: useManualGesture
 
 // Module 6990
-import _mod6988 from "module_6988" /* 6988 */;
+import ComposedGestureName from "ComposedGestureName" /* 6956 */;
+import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6965 */;
+import _mod6980 from "module_6980" /* 6980 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let closure_2 = {};
 
-export default function _superPropBase(arg0, key10009) {
-  hasOwnProperty = {}.hasOwnProperty;
-  const call = hasOwnProperty.call;
-  let tmp = arg0;
-  if (!(typeof call === "unknown" ? hasOwnProperty(key10009) : call(arg0, key10009))) {
-    let tmp4 = _mod6988(arg0);
-    tmp = tmp4;
-    if (null !== tmp4) {
-      while (true) {
-        let hasOwnProperty2 = {}.hasOwnProperty;
-        let call2 = hasOwnProperty2.call;
-        tmp = tmp4;
-        if (typeof call2 === "unknown" ? hasOwnProperty2(key10009) : call2(tmp4, key10009)) {
-          break;
-        } else {
-          tmp4 = _mod6988(tmp4);
-          tmp = tmp4;
-          if (null === tmp4) {
-            break;
-          }
-        }
-      }
-    }
+export const useManualGesture = function useManualGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_2;
   }
-  return tmp;
+  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp);
+  return _mod6980.useGesture(ComposedGestureName.SingleGestureName.Manual, clonedAndRemappedConfig);
 };

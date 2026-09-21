@@ -1,21 +1,43 @@
-// Module ID: 7525
-// Function ID: 7526
+// Module ID: 7664
+// Function ID: 7665
 // Name: openPremiumPlanSelectionActionSheet
-// Dependencies: [1373, 4603, 7526, 1896, 2]
+// Dependencies: [1374, 4723, 7665, 1980, 13610, 2]
 // Exports: default
 
-// Module 7525 (openPremiumPlanSelectionActionSheet)
-import PremiumConstants from "PremiumConstants" /* 1373 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+// Module 7664 (openPremiumPlanSelectionActionSheet)
+import PremiumConstants from "PremiumConstants" /* 1374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import premiumOrbsDeliveredModal from "premiumOrbsDeliveredModal" /* 13610 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+
 let closure_3 = PremiumConstants.PREMIUM_PLAN_SELECTION_ACTION_SHEET_KEY;
-const result = size.fileFinishedImporting("modules/premium/native/openPremiumPlanSelectionActionSheet.tsx");
+let result = size.fileFinishedImporting("modules/premium/native/openPremiumPlanSelectionActionSheet.tsx");
 
 export default function openPremiumPlanSelectionActionSheet(arg0, arg1) {
+  _require = arg0;
   if (null == arg1) {
     ActionSheetActionCreatorsDefault.hideActionSheet();
   }
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(7526, dependencyMap.paths), closure_3, arg0, arg1);
+  const obj2 = ActionSheetActionCreatorsDefault;
+  const obj3 = {};
+  const merged = Object.assign(arg0);
+  obj3.onPaymentStart = function onPaymentStart(productId) {
+    const onPaymentStart = closure_0.onPaymentStart;
+    if (onPaymentStart != null) {
+      onPaymentStart(productId);
+    }
+    const result = premiumOrbsDeliveredModal.anchorOrbsPurchaseStart();
+  };
+  obj3.onPaymentDismiss = function onPaymentDismiss(isSuccess) {
+    const onPaymentDismiss = closure_0.onPaymentDismiss;
+    if (onPaymentDismiss != null) {
+      onPaymentDismiss(isSuccess);
+    }
+    if (isSuccess.isSuccess) {
+      const result = premiumOrbsDeliveredModal.openOrbsModalIfDelivered();
+    }
+  };
+  obj2.openLazy(require("asyncRequireImpl")(7665, dependencyMap.paths), closure_3, obj3, arg1);
 };

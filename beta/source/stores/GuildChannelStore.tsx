@@ -1,23 +1,23 @@
-// Module ID: 2012
-// Function ID: 2013
+// Module ID: 2096
+// Function ID: 2097
 // Name: GuildChannelStore
-// Dependencies: [2013, 1960, 4274, 1961, 502, 1957, 2021, 1979, 4275, 4285, 1371, 1074, 1982, 12, 4789, 1086, 4280, 504, 573, 2]
+// Dependencies: [2097, 2044, 4394, 2045, 502, 2041, 2105, 2063, 4395, 4405, 1372, 1074, 2066, 12, 4909, 1086, 4400, 504, 573, 2]
 
-// Module 2012 (GuildChannelStore)
+// Module 2096 (GuildChannelStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import useChannelName from "useChannelName" /* 4789 */;
-import GatedChannelStore from "GatedChannelStore" /* 2013 */;
-import FavoriteStore from "FavoriteStore" /* 1960 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+import useChannelName from "useChannelName" /* 4909 */;
+import GatedChannelStore from "GatedChannelStore" /* 2097 */;
+import FavoriteStore from "FavoriteStore" /* 2044 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function comparator(comparator, comparator2) {
@@ -75,7 +75,7 @@ function rebuildGuildChannels(guildId) {
       }
     }
   }
-  obj2 = obj(1982);
+  obj2 = obj(2066);
   const item = id(12).forEach(tmp7, (channel) => {
     channel = channel.channel;
     obj.count = obj.count + 1;
@@ -192,8 +192,8 @@ function hasElevatedPermissions(user, context) {
 function handleFavoritesUpdate() {
   rebuildGuildChannels(closure_1_17);
 }
-let closure_6 = fn(4274).createFavoritesGuildChannelRecord;
-const ChannelRecord = fn(1961);
+let closure_6 = fn(4394).createFavoritesGuildChannelRecord;
+const ChannelRecord = fn(2045);
 ({ isGuildSelectableChannelType: closure_7, GUILD_NON_CATEGORY_CHANNEL_TYPES: closure_8, isGuildVocalChannelType: closure_9, createChannelRecord } = ChannelRecord);
 const Constants = fn(1074);
 ({ FAVORITES: closure_17, ChannelTypes } = Constants);
@@ -283,8 +283,8 @@ prototype["getSFWDefaultChannel"] = function getSFWDefaultChannel(id, flag) {
 prototype["getSelectableChannelIds"] = function getSelectableChannelIds(guildId) {
   return this.getChannels(guildId)[SELECTABLE].map((channel) => channel.channel.id);
 };
-prototype["getSelectableChannels"] = function getSelectableChannels(arg0) {
-  return this.getChannels(arg0)[SELECTABLE];
+prototype["getSelectableChannels"] = function getSelectableChannels(id) {
+  return this.getChannels(id)[SELECTABLE];
 };
 prototype["getVocalChannelIds"] = function getVocalChannelIds(set) {
   return this.getChannels(set)[VOCAL].map((channel) => channel.channel.id);

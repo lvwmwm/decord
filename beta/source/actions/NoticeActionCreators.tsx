@@ -1,9 +1,9 @@
-// Module ID: 16920
-// Function ID: 16921
+// Module ID: 17273
+// Function ID: 17274
 // Name: NoticeActionCreators
 // Dependencies: [573, 2]
 
-// Module 16920 (NoticeActionCreators)
+// Module 17273 (NoticeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

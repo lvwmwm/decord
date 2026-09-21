@@ -1,23 +1,23 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7340
+// Function ID: 7341
 // Name: doGuildOnboarding
-// Dependencies: [5, 17, 4458, 7199, 7200, 1074, 7201, 4603, 4839, 5601, 7202, 1396, 1878, 7206, 7207, 7208, 7224, 1896, 1100, 2]
+// Dependencies: [5, 17, 4577, 7341, 7342, 1074, 7343, 4723, 4959, 5737, 7344, 1397, 1879, 7348, 7349, 7350, 7366, 1980, 1101, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 7198 (doGuildOnboarding)
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1878 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import _mod7201 from "module_7201" /* 7201 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7208 */;
+// Module 7340 (doGuildOnboarding)
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1879 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+import _mod7343 from "module_7343" /* 7343 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7350 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7199 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7341 */;
 
 require = fn;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod7201));
+  return JSON.parse(JSON.stringify(_mod7343));
 }
 let closure_13 = async function _doGuildOnboarding(arg0) {
   let guildId = arg0;
@@ -220,7 +220,7 @@ function openAndWaitForOnboarding(guildId) {
       landingAnimation: dependencyMap[guildId],
       isFirstOpen: true
     };
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(7224, dependencyMap.paths), {
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(7366, dependencyMap.paths), {
       guildId,
       backShouldLeaveGuild: true,
       onFinish() {
@@ -237,7 +237,7 @@ function openAndWaitForOnboarding(guildId) {
   });
 }
 const NativeModules = fn(17).NativeModules;
-let closure_7 = fn(7200).GUILD_ONBOARDING_MODAL_KEY;
+let closure_7 = fn(7342).GUILD_ONBOARDING_MODAL_KEY;
 const Constants = fn(1074);
 ({ GuildFeatures: closure_8, Routes: closure_9 } = Constants);
 let closure_11 = {};

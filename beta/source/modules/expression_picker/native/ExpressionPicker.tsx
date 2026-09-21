@@ -1,26 +1,26 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10534
+// Function ID: 10535
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1217, 1074, 1374, 21, 4636, 576, 10406, 10407, 9922, 1481, 1609, 4816, 10409, 10412, 5043, 9923, 10413, 10493, 10515, 2]
+// Dependencies: [19, 17, 1218, 1074, 1375, 21, 4756, 576, 10535, 10536, 9890, 1482, 1610, 4936, 10538, 10541, 5171, 9891, 10542, 10623, 10645, 2]
 
-// Module 10405 (ExpressionPicker)
+// Module 10534 (ExpressionPicker)
 import nativeDefault from "native" /* 576 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 10407 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 10409 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 10536 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 10538 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ExpressionPickerConstants = fn(1217);
+const ExpressionPickerConstants = fn(1218);
 ({ ExpressionPickerViewType: hasOwnProperty, ExpressionPickerOrder: metroRequire, PADDING_HORIZONTAL } = ExpressionPickerConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const EmojiIntention = fn(1374).EmojiIntention;
+const EmojiIntention = fn(1375).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { expressionPickerContainer: { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, position: "relative", paddingHorizontal: PADDING_HORIZONTAL }, expressionPickerContent: { flex: 1 }, segmentedControl: { paddingTop: 2 * PADDING_HORIZONTAL, paddingHorizontal: 0 }, segmentedControlUnpadded: { paddingHorizontal: 0 } };
 let closure_11 = createStyles.createStyles(obj);
 let obj3 = { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, position: "relative", paddingHorizontal: PADDING_HORIZONTAL };

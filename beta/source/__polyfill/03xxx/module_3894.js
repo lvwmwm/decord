@@ -1,40 +1,12 @@
 // Module ID: 3894
 // Function ID: 3895
-// Dependencies: [3729, 3874, 3726]
+// Dependencies: []
 // Exports: default
 
 // Module 3894
-import module_3729_mod from "module_3729" /* 3729 */;
-import module_3874_mod from "module_3874" /* 3874 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+let closure_0 = { lastWeek: "eeee 'dernier \u00E0' p", yesterday: "'hier \u00E0' p", today: "'aujourd\u2019hui \u00E0' p", tomorrow: "'demain \u00E0' p'", nextWeek: "eeee 'prochain \u00E0' p", other: "P" };
 
-let module_3729 = module_3729_mod;
-if (!module_3729) {
-  const obj = { default: module_3729 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3729;
-}
-module_3729 = tmp3;
-let module_3874 = module_3874_mod;
-if (!module_3874) {
-  const obj2 = { default: module_3874 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3874;
-}
-module_3874 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
-
-export default function addYears(interval, arg1) {
-  requiredArgs.default(2, arguments);
-  return module_3874.default(interval, 12 * module_3729.default(arg1));
+export default function formatRelative(arg0, arg1, arg2, arg3) {
+  return closure_0[arg0];
 };
 export default exports.default;

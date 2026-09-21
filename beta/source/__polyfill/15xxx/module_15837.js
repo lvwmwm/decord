@@ -1,9 +1,9 @@
 // Module ID: 15837
 // Function ID: 15838
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15837
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6f5a76861191f4dd121da59ef71950f", name: "ArrowSmallUpIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "e0471dd70c51b44f6fe3c89ec72a7182", name: "MobilePhoneSettingsIcon", type: "png" });

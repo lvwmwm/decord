@@ -1,9 +1,9 @@
 // Module ID: 10192
 // Function ID: 10193
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 10192
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 18, height: 18, scales: [2, 3], hash: "ade8732f10573e5215aa029a138cb853", name: "watch", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9bcd40cb62b748b314b1aa933da9be99", name: "HandRequestDenyIcon", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 7267
-// Function ID: 7268
+// Module ID: 7409
+// Function ID: 7410
 // Name: ApplicationDirectoryApplicationsStore
-// Dependencies: [1918, 504, 573, 2]
+// Dependencies: [2002, 504, 573, 2]
 
-// Module 7267 (ApplicationDirectoryApplicationsStore)
+// Module 7409 (ApplicationDirectoryApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ApplicationRecord from "ApplicationRecord" /* 1918 */;
+import ApplicationRecord from "ApplicationRecord" /* 2002 */;
 
 let obj = { FETCHING: 0, [0]: "FETCHING", FETCHED: 1, [1]: "FETCHED", ERROR: 2, [2]: "ERROR" };
 obj = {};

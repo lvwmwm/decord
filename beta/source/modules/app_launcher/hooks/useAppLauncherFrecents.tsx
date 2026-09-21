@@ -1,16 +1,16 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12372
+// Function ID: 12373
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 7210, 1371, 12253, 1920, 5080, 1894, 9546, 504, 7273, 8457, 12254, 9536, 9418, 9701, 2]
+// Dependencies: [19, 7352, 1372, 12373, 2004, 5210, 1978, 9530, 504, 7415, 8610, 12374, 9520, 9403, 9601, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 12252 (useAppLauncherFrecents)
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7273 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9546 */;
+// Module 12372 (useAppLauncherFrecents)
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7415 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9530 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7210 */;
-import UserStore from "UserStore" /* 1371 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 12253 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7352 */;
+import UserStore from "UserStore" /* 1372 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 12373 */;
 
 const require = fn;
 function useFrecentApps(onlyActivityApps) {
@@ -101,12 +101,12 @@ function useFrecentApps(onlyActivityApps) {
     return found2;
   }, items5);
 }
-const FetchState = fn(7210).FetchState;
-const WATCH_YOUTUBE_PROD_APP_ID = fn(1920).WATCH_YOUTUBE_PROD_APP_ID;
-const ApplicationCommandConstants = fn(5080);
+const FetchState = fn(7352).FetchState;
+const WATCH_YOUTUBE_PROD_APP_ID = fn(2004).WATCH_YOUTUBE_PROD_APP_ID;
+const ApplicationCommandConstants = fn(5210);
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let filters = { commandTypes: null };
-let items = [fn(1894).ApplicationCommandType.CHAT, fn(1894).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+let items = [fn(1978).ApplicationCommandType.CHAT, fn(1978).ApplicationCommandType.PRIMARY_ENTRY_POINT];
 filters.commandTypes = items;
 const options = { placeholderCount: 0, limit: ApplicationCommandConstants.DISCOVERY_COMMANDS_QUERY_LIMIT, includeFrecency: true };
 const size = fn(2);

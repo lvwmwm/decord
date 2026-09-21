@@ -1,17 +1,17 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17672
+// Function ID: 17673
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 12406, 21, 4636, 576, 5667, 5011, 12403, 12405, 4373, 12412, 5055, 9625, 17320, 17331, 2]
+// Dependencies: [32, 19, 17, 12526, 21, 4756, 576, 5803, 5139, 12523, 12525, 4492, 12533, 5185, 9664, 17673, 17683, 2]
 
-// Module 17319 (VoicePanelControlsDrawer)
+// Module 17672 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 576 */;
-import Suspender from "Suspender" /* 5011 */;
-import spring from "spring" /* 5055 */;
-import useRefValueDefault from "useRefValue" /* 5667 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 12403 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12412 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17320 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17331 */;
+import Suspender from "Suspender" /* 5139 */;
+import spring from "spring" /* 5185 */;
+import useRefValueDefault from "useRefValue" /* 5803 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 12523 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12533 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 17673 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 17683 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,11 +22,11 @@ function renderChat(shown) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const VoicePanelConstants = fn(12406);
+const VoicePanelConstants = fn(12526);
 ({ MODE_CHANGE_PHYSICS: closure_7, VoicePanelModes: closure_8 } = VoicePanelConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { drawer: { flex: 1, zIndex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_11 = createStyles.createStyles(obj);
 const memoResult = noop.memo((shown) => {

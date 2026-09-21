@@ -1,21 +1,21 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 15096
+// Function ID: 15097
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 8517, 21, 14906, 7404, 14774, 1114, 4331, 2024, 8529, 8531, 2]
+// Dependencies: [19, 8670, 21, 15094, 7543, 14962, 1115, 4451, 2108, 8682, 8684, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14908 (SensitiveContentFiltersNotices)
-import util from "util" /* 1114 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import LinkingDefault from "Linking" /* 4331 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14774 */;
+// Module 15096 (SensitiveContentFiltersNotices)
+import util from "util" /* 1115 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import LinkingDefault from "Linking" /* 4451 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14962 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SafetySettingsNoticeType = fn(8517).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8670).SafetySettingsNoticeType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
@@ -25,10 +25,10 @@ export const SensitiveContentFiltersTeenNotice = function SensitiveContentFilter
   let obj = require("TinyBroncoSettingsNoticesLazy");
   _require = require("SensitiveMediaGoreRedactionSettingsUtils").useSensitiveContentFilterHelpArticle();
   if (isTinyBroncoSettingsNoticeEnabled) {
-    let tmp4Result = tmp4(tmp(14906).ContentFiltersTeenNotice, {});
+    let tmp4Result = tmp4(tmp(15094).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
-      label: tmp(1114).t.EUo0yj,
+      label: tmp(1115).t.EUo0yj,
       labelHook() {
           const obj = LinkingDefault;
           obj.openURL(HelpdeskUtilsDefault.getArticleURL(closure_0));

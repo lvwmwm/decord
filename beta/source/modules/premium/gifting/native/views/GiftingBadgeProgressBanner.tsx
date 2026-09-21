@@ -1,23 +1,23 @@
-// Module ID: 10888
-// Function ID: 10889
+// Module ID: 11018
+// Function ID: 11019
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4636, 576, 7265, 8894, 1248, 10881, 4632, 1114, 2492, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 7407, 9048, 1249, 11009, 4752, 1115, 2578, 2]
 // Exports: default
 
-// Module 10888 (GiftingBadgeProgressBanner)
+// Module 11018 (GiftingBadgeProgressBanner)
 import nativeDefault from "native" /* 576 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import _modDef2492 from "module_2492" /* 2492 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8894 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import _modDef2578 from "module_2578" /* 2578 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9048 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: null, iconContainer: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.container = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_MUTED };
@@ -47,13 +47,13 @@ export default function GiftingBadgeProgressBanner(arg0) {
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(10881), obj4);
+    tmp10Result = tmp10(tmp2(11009), obj4);
   }
   obj3.children = tmp10Result;
   const items2 = [React4(View, obj3), ];
   const obj5 = { variant: "text-md/semibold", children: null };
-  const intl = tmp6(1114).intl;
-  obj5.children = intl.formatToPlainString(_modDef2492["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  const intl = tmp6(1115).intl;
+  obj5.children = intl.formatToPlainString(_modDef2578["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
   items2[1] = React4(Text_Text.Text, obj5);
   obj2.children = items2;
   return hasOwnProperty(View, obj2);

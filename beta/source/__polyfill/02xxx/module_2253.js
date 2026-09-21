@@ -1,9 +1,9 @@
 // Module ID: 2253
 // Function ID: 2254
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2253
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZl", scales: [1], hash: "2fd5d7c41a3d9c8ad04fec80f7f38325", name: "no.messages.2fd5d7c41a3d9c8ad04fec80f7f38325.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "6a429731d2a9e33e0bfb2eab2a72054e", name: "GiftCard.compiled.messages", type: "jsona" });

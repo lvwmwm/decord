@@ -1,11 +1,11 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 14074
+// Function ID: 14075
 // Name: BrowserInvertedWantsExperiment
-// Dependencies: [1433, 1364, 2]
+// Dependencies: [1434, 1365, 2]
 // Exports: getBrowserInvertedWantsConfig
 
-// Module 13895 (BrowserInvertedWantsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 14074 (BrowserInvertedWantsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-03-browser-inverted-wants", defaultConfig: { invertWants: false }, variations: null };

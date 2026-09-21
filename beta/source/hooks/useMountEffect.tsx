@@ -1,10 +1,10 @@
-// Module ID: 5073
-// Function ID: 5074
+// Module ID: 5203
+// Function ID: 5204
 // Name: useMountEffect
-// Dependencies: [2, 5074]
+// Dependencies: [2, 5204]
 
-// Module 5073 (useMountEffect)
-import hooks_useMountEffect from "hooks/useMountEffect" /* 5074 */;
+// Module 5203 (useMountEffect)
+import hooks_useMountEffect from "hooks/useMountEffect" /* 5204 */;
 import size from "module_2" /* 2 */;
 
 const hooks_useMountEffectDefault = hooks_useMountEffect;

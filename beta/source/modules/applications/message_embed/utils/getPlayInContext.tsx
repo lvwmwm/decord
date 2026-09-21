@@ -1,13 +1,13 @@
-// Module ID: 12076
-// Function ID: 12077
+// Module ID: 12196
+// Function ID: 12197
 // Name: getPlayInContext
-// Dependencies: [1956, 2011, 504, 9712, 2]
+// Dependencies: [2040, 2095, 504, 9611, 2]
 // Exports: getPlayInContext, usePlayInContext
 
-// Module 12076 (getPlayInContext)
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 9712 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
+// Module 12196 (getPlayInContext)
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 9611 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 const require = globalThis.__r;
 
@@ -102,7 +102,7 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
       tmp11 = compositeInstanceId1 === compositeInstanceId;
     }
     obj3.isCurrentlyInInstance = tmp11;
-    obj3.canLaunchInChannel = NO_CHANNEL === tmp3(9712).EmbeddedActivityLaunchability.CAN_LAUNCH;
+    obj3.canLaunchInChannel = NO_CHANNEL === tmp3(9611).EmbeddedActivityLaunchability.CAN_LAUNCH;
     return obj3;
   }
 };

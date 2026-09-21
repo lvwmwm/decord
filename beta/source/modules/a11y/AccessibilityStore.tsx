@@ -1,18 +1,18 @@
-// Module ID: 4628
-// Function ID: 4629
+// Module ID: 4748
+// Function ID: 4749
 // Name: AccessibilityStore
-// Dependencies: [109, 1182, 1181, 1219, 1074, 4629, 4630, 1935, 504, 510, 4488, 573, 2]
+// Dependencies: [109, 1183, 1182, 1220, 1074, 4749, 4750, 2019, 504, 510, 4607, 573, 2]
 
-// Module 4628 (AccessibilityStore)
+// Module 4748 (AccessibilityStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import shared from "shared" /* 4488 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4630 */;
+import shared from "shared" /* 4607 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4750 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 require = fn;
 function maybeApplyNoTextColorForLightCustomTheme() {
@@ -96,7 +96,7 @@ let closure_3 = ["fontScale"];
 const Constants = fn(1074);
 const Accessibility = Constants.Accessibility;
 const ThemeTypes = Constants.ThemeTypes;
-const MessageConstants = fn(4629);
+const MessageConstants = fn(4749);
 ({ MESSAGE_GROUP_SPACING: c10, DEFAULT_COMPACT_SPACING: closure_11, DEFAULT_COZY_SPACING: closure_12 } = MessageConstants);
 let obj = { DEFAULT: "default", HIGH: "high" };
 let obj2 = { FLEXIBLE: "flexible", CONDENSED: "condensed", HIDDEN: "hidden" };

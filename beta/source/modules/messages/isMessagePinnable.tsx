@@ -1,13 +1,13 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11915
+// Function ID: 11916
 // Name: isMessagePinnable
-// Dependencies: [4275, 1074, 7373, 7372, 2]
+// Dependencies: [4395, 1074, 7512, 7511, 2]
 // Exports: default
 
-// Module 11797 (isMessagePinnable)
-import ThreadHooks from "ThreadHooks" /* 7372 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7373 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
+// Module 11915 (isMessagePinnable)
+import ThreadHooks from "ThreadHooks" /* 7511 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
 
 require = fn;
 const Constants = fn(1074);

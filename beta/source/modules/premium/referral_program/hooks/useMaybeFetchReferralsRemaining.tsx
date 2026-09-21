@@ -1,16 +1,16 @@
-// Module ID: 8162
-// Function ID: 8163
+// Module ID: 8316
+// Function ID: 8317
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1371, 7555, 1373, 504, 8163, 8164, 7496, 1885, 2]
+// Dependencies: [19, 1372, 7694, 1374, 504, 8317, 8318, 7635, 1969, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 8162 (useMaybeFetchReferralsRemaining)
+// Module 8316 (useMaybeFetchReferralsRemaining)
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7555 */;
+import UserStore from "UserStore" /* 1372 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7694 */;
 
 const require = fn;
-const PremiumConstants = fn(1373);
+const PremiumConstants = fn(1374);
 ({ PremiumTypes: metroRequire, FractionalPremiumStates: closure_7 } = PremiumConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useMaybeFetchReferralsRemaining.tsx");
@@ -24,18 +24,18 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   const stateFromStores = flag(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = flag(504);
   let tmp = flag;
-  const hasDiscountApplied = flag(8163).useHasDiscountApplied();
-  const obj2 = flag(8163);
-  const hasActiveTrial = flag(8164).useHasActiveTrial();
-  const tmp6 = fetched(7496)();
+  const hasDiscountApplied = flag(8317).useHasDiscountApplied();
+  const obj2 = flag(8317);
+  const hasActiveTrial = flag(8318).useHasActiveTrial();
+  const tmp6 = fetched(7635)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    fetched = tmp(1885).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const tmpResult = tmp(1885);
+    fetched = tmp(1969).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const tmpResult = tmp(1969);
   }
   if (fetched) {
     fetched = tmp6.fetched;

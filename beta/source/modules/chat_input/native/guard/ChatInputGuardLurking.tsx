@@ -1,21 +1,21 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 12709
+// Function ID: 12710
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4276, 1957, 12095, 1074, 21, 504, 1100, 4816, 11462, 9960, 1185, 7444, 5601, 12581, 1114, 2]
+// Dependencies: [19, 4396, 2041, 12215, 1074, 21, 504, 1101, 4936, 11588, 10086, 1186, 7583, 5737, 12702, 1115, 2]
 
-// Module 12588 (ChatInputGuardLurking)
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5601 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7444 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 9960 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11462 */;
+// Module 12709 (ChatInputGuardLurking)
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7583 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 10086 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11588 */;
 import noop from "module_19" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4276 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
+import LurkingStore from "LurkingStore" /* 4396 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
-const TextAreaCta = fn(12095).TextAreaCta;
+const TextAreaCta = fn(12215).TextAreaCta;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, JoinGuildSources: closure_9 } = Constants);
 const jsx = fn(21).jsx;
@@ -76,25 +76,25 @@ export default noop.memo(function ChatInputGuardLurking(channel) {
   }
   if (type === constants2.DIRECTORY_ENTRY) {
     let obj2 = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-    const intl6 = tmp2(1114).intl;
-    obj2.message = intl6.string(tmp2(1114).t.G42YmG);
-    const intl7 = tmp2(1114).intl;
-    obj2.buttonSecondaryText = intl7.string(tmp2(1114).t.GlKb5i);
+    const intl6 = tmp2(1115).intl;
+    obj2.message = intl6.string(tmp2(1115).t.G42YmG);
+    const intl7 = tmp2(1115).intl;
+    obj2.buttonSecondaryText = intl7.string(tmp2(1115).t.GlKb5i);
     obj2.buttonSecondaryOnPress = callback;
-    const intl8 = tmp2(1114).intl;
-    obj2.buttonPrimaryText = intl8.string(tmp2(1114).t.RLch70);
+    const intl8 = tmp2(1115).intl;
+    obj2.buttonPrimaryText = intl8.string(tmp2(1115).t.RLch70);
     obj2.buttonPrimaryOnPress = callback2;
-    let tmp15Result = jsx(guildId(12581), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
-    const tmp14 = guildId(12581);
+    let tmp15Result = jsx(guildId(12702), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
+    const tmp14 = guildId(12702);
   } else {
     if (channel.isReadonlyAnnouncementsChannel) {
       let obj3 = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-      const intl3 = tmp2(1114).intl;
-      obj3.message = intl3.string(tmp2(1114).t.Hl0Mqh);
+      const intl3 = tmp2(1115).intl;
+      obj3.message = intl3.string(tmp2(1115).t.Hl0Mqh);
       let stringResult;
       if (isLurking) {
-        const intl4 = tmp2(1114).intl;
-        stringResult = intl4.string(tmp2(1114).t.VJlc0S);
+        const intl4 = tmp2(1115).intl;
+        stringResult = intl4.string(tmp2(1115).t.VJlc0S);
       }
       obj3.buttonSecondaryText = stringResult;
       let tmp10;
@@ -102,20 +102,20 @@ export default noop.memo(function ChatInputGuardLurking(channel) {
         tmp10 = callback2;
       }
       obj3.buttonSecondaryOnPress = tmp10;
-      const intl5 = tmp2(1114).intl;
-      obj3.buttonPrimaryText = intl5.string(tmp2(1114).t["3aOv+h"]);
+      const intl5 = tmp2(1115).intl;
+      obj3.buttonPrimaryText = intl5.string(tmp2(1115).t["3aOv+h"]);
       obj3.buttonPrimaryOnPress = callback1;
       let obj4 = obj3;
     } else {
       obj4 = { type: "button-action", message: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
-      const intl = tmp2(1114).intl;
-      obj4.message = intl.string(tmp2(1114).t.G42YmG);
-      const intl2 = tmp2(1114).intl;
-      obj4.buttonPrimaryText = intl2.string(tmp2(1114).t.RLch70);
+      const intl = tmp2(1115).intl;
+      obj4.message = intl.string(tmp2(1115).t.G42YmG);
+      const intl2 = tmp2(1115).intl;
+      obj4.buttonPrimaryText = intl2.string(tmp2(1115).t.RLch70);
       obj4.buttonPrimaryOnPress = callback2;
     }
-    tmp15Result = jsx(guildId(12581), obj4);
-    const tmp17 = guildId(12581);
+    tmp15Result = jsx(guildId(12702), obj4);
+    const tmp17 = guildId(12702);
   }
   return tmp15Result;
 });

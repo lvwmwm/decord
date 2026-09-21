@@ -1,17 +1,17 @@
-// Module ID: 9312
-// Function ID: 9313
+// Module ID: 10012
+// Function ID: 10013
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 4636, 576, 4347, 8686, 4488, 5668, 1396, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4466, 8840, 4607, 5804, 1397, 2]
 
-// Module 9312 (GameActivityIcon)
+// Module 10012 (GameActivityIcon)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5668 */;
+import FastImageDefault from "FastImage" /* 5804 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj = { icon: { borderRadius: nativeDefault.radii.xs } };
 let closure_6 = createStyles.createStyles(obj);
 let obj3 = { borderRadius: nativeDefault.radii.xs };
@@ -39,16 +39,16 @@ export default noop.memo(function GameActivityIcon(style) {
       const obj2 = { size: "custom", style: null, color: null };
       const items1 = [tmp.icon, size1];
       obj2.style = items1;
-      const tmp2Result = tmp2(4488);
+      const tmp2Result = tmp2(4607);
       const colors = nativeDefault.colors;
-      obj2.color = tmp2(4488).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-      jsx(tmp2(8686).UnknownGameIcon, { size: "custom", style: null, color: null });
-      const isThemeDarkResult = tmp2(4488).isThemeDark(obj.useThemeContext().theme);
+      obj2.color = tmp2(4607).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
+      jsx(tmp2(8840).UnknownGameIcon, { size: "custom", style: null, color: null });
+      const isThemeDarkResult = tmp2(4607).isThemeDark(obj.useThemeContext().theme);
     }
   } else {
     const obj3 = { source: null, style: null };
     const tmp6 = jsx;
-    obj3.source = tmp2(1396).makeSource(iconURL);
+    obj3.source = tmp2(1397).makeSource(iconURL);
     const items2 = [tmp.icon, size1];
     obj3.style = items2;
     const tmp9 = <tmp8 source={null} style={null} />;

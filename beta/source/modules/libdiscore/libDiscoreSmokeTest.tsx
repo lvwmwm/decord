@@ -1,14 +1,14 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 18378
+// Function ID: 18379
 // Name: libDiscoreSmokeTest
-// Dependencies: [5, 1074, 3, 1353, 1349, 1983, 1240, 2]
+// Dependencies: [5, 1074, 3, 1354, 1350, 2067, 1241, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 18037 (libDiscoreSmokeTest)
+// Module 18378 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import initLibdiscore from "initLibdiscore" /* 1353 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 1983 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import initLibdiscore from "initLibdiscore" /* 1354 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2067 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

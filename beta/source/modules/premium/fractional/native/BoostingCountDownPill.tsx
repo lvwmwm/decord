@@ -1,18 +1,18 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13781
+// Function ID: 13782
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 4636, 576, 4603, 13608, 1896, 1114, 4632, 2]
+// Dependencies: [17, 21, 4756, 576, 4723, 13782, 1980, 1115, 4752, 2]
 // Exports: default
 
-// Module 13607 (BoostingCountDownPill)
+// Module 13781 (BoostingCountDownPill)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4636 */;
+import createStyles from "createStyles" /* 4756 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {
@@ -20,7 +20,7 @@ function handlePress() {
   const obj = ActionSheetActionCreatorsDefault;
   const intl = util.intl;
   obj2.aboutText = intl.string(util.t["07lzz7"]);
-  obj.openLazy(asyncRequireImpl(13608, dependencyMap.paths), "NitroCreditEducationActionSheet", obj2);
+  obj.openLazy(asyncRequireImpl(13782, dependencyMap.paths), "NitroCreditEducationActionSheet", obj2);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -58,7 +58,7 @@ export default function BoostingCountDownPill(style) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
   const obj6 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: null };
-  const intl = tmp10(1114).intl;
+  const intl = tmp10(1115).intl;
   obj6.children = intl.string(util.t["5nrJDO"]);
   obj5.children = hasOwnProperty(Text_Text.Text, obj6);
   items1[1] = hasOwnProperty(React4, obj5);

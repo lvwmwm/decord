@@ -1,14 +1,14 @@
-// Module ID: 7273
-// Function ID: 7274
+// Module ID: 7415
+// Function ID: 7416
 // Name: AuthorizedAppsActionCreators
-// Dependencies: [5, 7210, 1074, 1952, 573, 1270, 2]
+// Dependencies: [5, 7352, 1074, 2036, 573, 1271, 2]
 
-// Module 7273 (AuthorizedAppsActionCreators)
+// Module 7415 (AuthorizedAppsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import Timers from "Timers" /* 1952 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import Timers from "Timers" /* 2036 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7210 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7352 */;
 
 require = fn;
 function tokensToAppTokensMap(arg0, arr) {
@@ -110,9 +110,9 @@ let closure_10 = async function _fetchAuthorizedApps(application_ids) {
     }
   })();
 };
-const FetchState = fn(7210).FetchState;
+const FetchState = fn(7352).FetchState;
 const Endpoints = fn(1074).Endpoints;
-const batchInvocationManager = new fn(1952).BatchInvocationManager(fetchAuthorizedApps, {
+const batchInvocationManager = new fn(2036).BatchInvocationManager(fetchAuthorizedApps, {
   predicate(arg0) {
     return AuthorizedAppsStore.getFetchStateForApplication(arg0) !== FetchState.FETCHING;
   },

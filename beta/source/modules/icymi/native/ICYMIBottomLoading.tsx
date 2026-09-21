@@ -1,17 +1,17 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16853
+// Function ID: 16854
 // Name: ICYMIBottomLoading
-// Dependencies: [19, 17, 21, 4636, 576, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 2]
 // Exports: ICYMIBottomLoading
 
-// Module 16611 (ICYMIBottomLoading)
+// Module 16853 (ICYMIBottomLoading)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);
 ({ View: c2, ActivityIndicator: c3 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles(() => {
   const obj = { container: { paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_24, alignItems: "center", justifyContent: "center" } };
   return obj;

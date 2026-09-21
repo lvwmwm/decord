@@ -1,22 +1,22 @@
-// Module ID: 17886
-// Function ID: 17887
+// Module ID: 18228
+// Function ID: 18229
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 15289, 1074, 21, 13986, 17858, 15311, 15296, 17841, 9946, 1114, 17847, 8716, 1176, 17887, 17850, 2]
+// Dependencies: [32, 19, 15475, 1074, 21, 14166, 18200, 15497, 15482, 18183, 10072, 1115, 18189, 8871, 1177, 18229, 18192, 2]
 // Exports: default
 
-// Module 17886 (GuildRoleSubscriptionTierDetailsModal)
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Form from "Form" /* 8716 */;
-import FormHeaderDefault from "FormHeader" /* 9946 */;
-import FormStylesDefault from "FormStyles" /* 13986 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15296 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15311 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17841 */;
-import FormImagePicker from "FormImagePicker" /* 17847 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17850 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 17858 */;
-import FormPriceTierDefault from "FormPriceTier" /* 17887 */;
+// Module 18228 (GuildRoleSubscriptionTierDetailsModal)
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Form from "Form" /* 8871 */;
+import FormHeaderDefault from "FormHeader" /* 10072 */;
+import FormStylesDefault from "FormStyles" /* 14166 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18183 */;
+import FormImagePicker from "FormImagePicker" /* 18189 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18192 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18200 */;
+import FormPriceTierDefault from "FormPriceTier" /* 18229 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -53,12 +53,12 @@ function Content() {
   const tmp23 = closure_1_10;
   const tmp24 = React7;
   const tmp4Result2 = RoleSubscriptionSettingsDisabledContext;
-  const intl = tmp4(1114).intl;
+  const intl = tmp4(1115).intl;
   obj7.children = intl.string(util.t["6XpbbR"]);
   const items = [React7(FormHeaderDefault, obj7), , , , , , , ];
   const obj8 = { description: null, image: null, imageUploadSize: null, previewShape: null, setImage: null, disabled: null };
   const tmpResult = FormHeaderDefault;
-  const intl2 = tmp4(1114).intl;
+  const intl2 = tmp4(1115).intl;
   obj8.description = intl2.string(util.t.pNZfgG);
   obj8.image = tmp17;
   obj8.imageUploadSize = UPLOAD_MEDIUM_SIZE;
@@ -70,11 +70,11 @@ function Content() {
   items[1] = React7(FormImagePickerDefault, obj8);
   const obj9 = { style: tmp3.header, children: null };
   const tmpResult6 = FormImagePickerDefault;
-  const intl3 = tmp4(1114).intl;
+  const intl3 = tmp4(1115).intl;
   obj9.children = intl3.string(util.t.rJ6Oad);
   items[2] = React7(FormHeaderDefault, obj9);
   const obj10 = { style: tmp3.textInput, showTopContainer: false, multiline: false, maxLength: maxLength2, value: tmp7, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null, disabled: null };
-  const intl4 = tmp4(1114).intl;
+  const intl4 = tmp4(1115).intl;
   obj10.placeholder = intl4.string(util.t["i4/g+E"]);
   obj10.onChange = tmp8;
   obj10.clearButtonVisibility = native.ClearButtonVisibility.WITH_CONTENT;
@@ -82,18 +82,18 @@ function Content() {
   items[3] = React7(Form.FormInput, obj10);
   const obj11 = { style: tmp3.header, children: null };
   const tmpResult7 = FormHeaderDefault;
-  const intl5 = tmp4(1114).intl;
+  const intl5 = tmp4(1115).intl;
   obj11.children = intl5.string(util.t["74JctW"]);
   items[4] = React7(FormHeaderDefault, obj11);
   const obj12 = { style: tmp3.textInput, showTopContainer: false, multiline: true, maxLength, numberOfLines: 3, value: tmp15, placeholder: null, onChange: null, disabled: null };
-  const intl6 = tmp4(1114).intl;
+  const intl6 = tmp4(1115).intl;
   obj12.placeholder = intl6.string(util.t["3YHwoG"]);
   obj12.onChange = tmp16;
   obj12.disabled = roleSubscriptionSettingsDisabled;
   items[5] = React7(Form.FormInput, obj12);
   const obj13 = { style: tmp3.header, children: null };
   const tmpResult8 = FormHeaderDefault;
-  const intl7 = tmp4(1114).intl;
+  const intl7 = tmp4(1115).intl;
   obj13.children = intl7.string(util.t.CrRVAx);
   items[6] = React7(FormHeaderDefault, obj13);
   const tmpResult9 = FormHeaderDefault;
@@ -106,7 +106,7 @@ function Content() {
   obj15.children = items;
   return tmp22(tmp23, obj15);
 }
-const GuildRoleSubscriptionsConstants = fn(15289);
+const GuildRoleSubscriptionsConstants = fn(15475);
 ({ GuildRoleSubscriptionsTierScenes: hasOwnProperty, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: metroRequire, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: closure_7 } = GuildRoleSubscriptionsConstants);
 const UPLOAD_MEDIUM_SIZE = fn(1074).UPLOAD_MEDIUM_SIZE;
 const jsxProd = fn(21);
@@ -130,11 +130,11 @@ export default function GuildRoleSubscriptionTierDetailsModal(arg0) {
   if (tmp3) {
     tmp3 = null != _slicedToArray(obj3.useImage(editStateId), 1)[0];
   }
-  const obj6 = { title: null, description: null, canProceedToNextStep: null, nextStep: null, scrollable: false };
+  const obj6 = { title: null, description: null, canProceedToNextStep: null, nextStep: null };
   obj5 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const intl = tmp(1114).intl;
+  const intl = tmp(1115).intl;
   obj6.title = intl.string(util.t.o3pHas);
-  const intl2 = tmp(1114).intl;
+  const intl2 = tmp(1115).intl;
   obj6.description = intl2.string(util.t.oOOME5);
   obj6.canProceedToNextStep = tmp3;
   obj6.nextStep = constants.CHANNEL_BENEFITS;

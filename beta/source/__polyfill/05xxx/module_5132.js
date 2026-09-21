@@ -1,9 +1,36 @@
 // Module ID: 5132
 // Function ID: 5133
-// Dependencies: [1120]
+// Dependencies: [17]
+// Exports: enableFreeze, enableScreens, freezeEnabled, screensEnabled
 
 // Module 5132
-import registerAsset from "module_1120" /* 1120 */;
+import get_ActivityIndicator from "module_17" /* 17 */;
 
+({ Platform, UIManager: closure_0 } = get_ActivityIndicator);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "50398ad483a7c69d1d35b3cb9c9b7bde", name: "ForumSpoilerIcon", type: "png" });
+export const isNativePlatformSupported = true;
+export const enableScreens = function enableScreens() {
+  flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  if (flag) {
+    flag = !viewManagerConfig.getViewManagerConfig("RNSScreen");
+  }
+  if (flag) {
+    const _console = console;
+    console.error("Screen native module hasn't been linked. Please check the react-native-screens README for more details");
+  }
+};
+export function enableFreeze() {
+  flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+}
+export function screensEnabled() {
+  return flag;
+}
+export function freezeEnabled() {
+  return flag;
+}

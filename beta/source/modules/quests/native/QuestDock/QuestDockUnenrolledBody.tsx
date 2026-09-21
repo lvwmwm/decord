@@ -1,16 +1,16 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15466
+// Function ID: 15467
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 7805, 5525, 21, 15183, 15263, 15173, 563, 15172, 11620, 11429, 11430, 15180, 11907, 5528, 7830, 15199, 11413, 15205, 11908, 11900, 15281, 15246, 1114, 2]
+// Dependencies: [5, 19, 7939, 5661, 21, 15369, 15449, 15359, 563, 15358, 11738, 11555, 11556, 15366, 12027, 5664, 7964, 15385, 11542, 15391, 12028, 12020, 15467, 15432, 1115, 2]
 
-// Module 15280 (QuestDockUnenrolledBody)
-import QuestUtils from "QuestUtils" /* 11900 */;
+// Module 15466 (QuestDockUnenrolledBody)
+import QuestUtils from "QuestUtils" /* 12020 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7805 */;
+import QuestStore from "QuestStore" /* 7939 */;
 
 require = fn;
-const QuestConstants = fn(5525);
+const QuestConstants = fn(5661);
 ({ QuestDockMode: metroRequire, QuestsExperimentLocations: closure_7 } = QuestConstants);
 const jsx = fn(21).jsx;
 const size = fn(2);
@@ -50,10 +50,10 @@ export default noop.memo(function QuestDockUnenrolledBody() {
   const callback = obj2.useCallback(launchMobileActivity(function*(arg0, value) {
     const v0 = 0;
     if (isQuestAccessSuspended) {
-      trackQuestContentClickedWithImpression({ questId: questDockQuest.id, questContent: v0(5528).QuestContent.QUEST_BAR_MOBILE, questContentCTA: v0(7830).QuestContentCTA.QUEST_ACCESS_SUSPENDED, sourceQuestContent: v0(5528).QuestContent.QUEST_BAR_MOBILE });
-      v2(15199)();
+      trackQuestContentClickedWithImpression({ questId: questDockQuest.id, questContent: v0(5664).QuestContent.QUEST_BAR_MOBILE, questContentCTA: v0(7964).QuestContentCTA.QUEST_ACCESS_SUSPENDED, sourceQuestContent: v0(5664).QuestContent.QUEST_BAR_MOBILE });
+      v2(15385)();
     }
-    yield v0(11413).enrollInQuest(questDockQuest.id, { questContentCTA: v0(7830).QuestContentCTA.ACCEPT_QUEST, questContent: v0(5528).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: v0(5528).QuestContent.QUEST_BAR_MOBILE });
+    yield v0(11542).enrollInQuest(questDockQuest.id, { questContentCTA: v0(7964).QuestContentCTA.ACCEPT_QUEST, questContent: v0(5664).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: v0(5664).QuestContent.QUEST_BAR_MOBILE });
     if (1 === tmp4) {
       if (arg0 === 1) {
         dependencyMap = 3;
@@ -67,10 +67,10 @@ export default noop.memo(function QuestDockUnenrolledBody() {
         return { value: closure_128_3(), done: false };
       } else {
         if (closure_128_1) {
-          v2(15205)({ questId: closure_128_0.id, sourceQuestContent: v0(5528).QuestContent.QUEST_BAR_MOBILE });
+          v2(15391)({ questId: closure_128_0.id, sourceQuestContent: v0(5664).QuestContent.QUEST_BAR_MOBILE });
           closure_128_4(constants.COLLAPSED);
-          v2(15205);
-          { questId: closure_128_0.id, sourceQuestContent: v0(5528).QuestContent.QUEST_BAR_MOBILE };
+          v2(15391);
+          { questId: closure_128_0.id, sourceQuestContent: v0(5664).QuestContent.QUEST_BAR_MOBILE };
         }
         dependencyMap = 3;
       }
@@ -98,7 +98,7 @@ export default noop.memo(function QuestDockUnenrolledBody() {
   if (isQuestDockExpanded) {
     isQuestDockExpanded = isRendered;
   }
-  const obj12 = { rewardTile: jsx(questDockQuest(isMobileActivityQuest[22]).QuestDockBodyQuestRewardTile, { paused: tmp21, quest: questDockQuest, withAnimation: null }), premiumRewardPerkPill: null, title: null, description: null, ctaText: null, onCtaPress: null, renderCtaIcon: null, ctaLoading: null, showBonusOrbsGradient: null };
+  const obj12 = { rewardTile: jsx(questDockQuest(isMobileActivityQuest[22]).QuestDockBodyQuestRewardTile, { paused: tmp21, quest: questDockQuest, withAnimation: null }), premiumRewardPerkPill: null, title: null, description: null, ctaText: null, onCtaPress: null, renderCtaIcon: null, ctaButtonVariant: "shiny", ctaLoading: null, showBonusOrbsGradient: null };
   obj11.withAnimation = isQuestDockExpanded;
   let tmp19Result;
   if (shouldShowBonusOrbsUX) {
@@ -114,5 +114,5 @@ export default noop.memo(function QuestDockUnenrolledBody() {
   obj12.renderCtaIcon = callback1;
   obj12.ctaLoading = stateFromStores;
   obj12.showBonusOrbsGradient = tmp12;
-  return jsx(tmp4(isMobileActivityQuest[22]), { rewardTile: jsx(questDockQuest(isMobileActivityQuest[22]).QuestDockBodyQuestRewardTile, { paused: tmp21, quest: questDockQuest, withAnimation: null }), premiumRewardPerkPill: null, title: null, description: null, ctaText: null, onCtaPress: null, renderCtaIcon: null, ctaLoading: null, showBonusOrbsGradient: null });
+  return jsx(tmp4(isMobileActivityQuest[22]), { rewardTile: jsx(questDockQuest(isMobileActivityQuest[22]).QuestDockBodyQuestRewardTile, { paused: tmp21, quest: questDockQuest, withAnimation: null }), premiumRewardPerkPill: null, title: null, description: null, ctaText: null, onCtaPress: null, renderCtaIcon: null, ctaButtonVariant: "shiny", ctaLoading: null, showBonusOrbsGradient: null });
 });

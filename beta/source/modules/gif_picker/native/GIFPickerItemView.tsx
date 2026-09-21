@@ -1,22 +1,22 @@
-// Module ID: 10508
-// Function ID: 10509
+// Module ID: 10638
+// Function ID: 10639
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4636, 10498, 576, 1874, 4603, 10509, 1896, 1114, 5204, 5668, 2]
+// Dependencies: [19, 17, 21, 4756, 10628, 576, 1875, 4723, 10639, 1980, 1115, 5339, 5804, 2]
 // Exports: default
 
-// Module 10508 (GIFPickerItemView)
+// Module 10638 (GIFPickerItemView)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1874 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10498 */;
+import util from "util" /* 1115 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10628 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles((height) => {
   const obj = { container: null, gifImage: null, gifImageSelected: null };
   const size = { paddingBottom: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: gif_picker_GIFPickerUtils.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: nativeDefault.radii.xs, width: "100%", height, flex: 1 };
@@ -43,7 +43,7 @@ export default function GIFPickerItemView(onPressGIF) {
   }, items);
   const items2 = [index, item.src];
   const callback1 = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10509, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10639, dependencyMap.paths), "GIFPickerItemActionSheet", { item }, "stack");
     const obj2 = { item };
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
   }, items1);

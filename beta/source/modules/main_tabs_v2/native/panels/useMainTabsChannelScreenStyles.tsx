@@ -1,16 +1,16 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 16871
+// Function ID: 16872
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4636, 576, 4373, 2]
+// Dependencies: [19, 17, 4756, 576, 4492, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 16628 (useMainTabsChannelScreenStyles)
+// Module 16871 (useMainTabsChannelScreenStyles)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { elevation: null };
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
 const merged1 = Object.assign(nativeDefault.shadows.SHADOW_LOW);

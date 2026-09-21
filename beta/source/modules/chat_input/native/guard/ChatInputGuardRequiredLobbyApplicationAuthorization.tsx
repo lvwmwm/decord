@@ -1,18 +1,18 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12714
+// Function ID: 12715
 // Name: ChatInputGuardRequiredLobbyApplicationAuthorization
-// Dependencies: [19, 17, 21, 4636, 576, 12581, 1114, 4331, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 12702, 1115, 4451, 2]
 
-// Module 12593 (ChatInputGuardRequiredLobbyApplicationAuthorization)
+// Module 12714 (ChatInputGuardRequiredLobbyApplicationAuthorization)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4331 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12581 */;
+import LinkingDefault from "Linking" /* 4451 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12702 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { icon: null };
 let size = { height: 40, width: 40, resizeMode: "contain", borderRadius: nativeDefault.radii.md };
 obj.icon = size;
@@ -33,20 +33,20 @@ export default noop.memo(function ChatInputGuardRequiredLobbyApplicationAuthoriz
       }
       if (shouldRelaunchLinkedLobbyApplication) {
         const obj2 = { type: "simple-action", icon: tmp5, message: null };
-        const intl3 = connectionEntrypointUrl(1114).intl;
+        const intl3 = connectionEntrypointUrl(1115).intl;
         const obj3 = { name: requiredLinkedLobbyApplication.name };
-        obj2.message = intl3.format(connectionEntrypointUrl(1114).t["SU2mY/"], obj3);
+        obj2.message = intl3.format(connectionEntrypointUrl(1115).t["SU2mY/"], obj3);
         return jsx(ChatInputGuardDefault, { type: "simple-action", icon: tmp5, message: null });
       } else {
         connectionEntrypointUrl = requiredLinkedLobbyApplication.connectionEntrypointUrl;
         const obj4 = { type: "simple-action", icon: tmp5, message: null, actionLabel: null, actionOnPress: null };
-        const intl = connectionEntrypointUrl(1114).intl;
+        const intl = connectionEntrypointUrl(1115).intl;
         const obj5 = { name: requiredLinkedLobbyApplication.name };
-        obj4.message = intl.format(connectionEntrypointUrl(1114).t.EvDn1D, obj5);
+        obj4.message = intl.format(connectionEntrypointUrl(1115).t.EvDn1D, obj5);
         let stringResult;
         if (null != connectionEntrypointUrl) {
-          const intl2 = tmp10(1114).intl;
-          stringResult = intl2.string(tmp10(1114).t.S0W8Z5);
+          const intl2 = tmp10(1115).intl;
+          stringResult = intl2.string(tmp10(1115).t.S0W8Z5);
         }
         obj4.actionLabel = stringResult;
         let fn;

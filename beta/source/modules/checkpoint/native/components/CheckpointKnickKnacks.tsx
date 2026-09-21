@@ -1,0 +1,39 @@
+// Module ID: 15978
+// Function ID: 15979
+// Name: CheckpointKnickKnacks
+// Dependencies: [19, 17, 4748, 4981, 21, 4756, 504, 1364, 4466, 2]
+// Exports: default
+
+// Module 15978 (CheckpointKnickKnacks)
+import noop from "module_19" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+
+const require = fn;
+const View = fn(17).View;
+const CHECKPOINT_PRIMARY = fn(4981).CHECKPOINT_PRIMARY;
+const jsx = fn(21).jsx;
+const createStyles = fn(4756);
+let closure_7 = createStyles.createStyles({ rive: { width: 143, height: 32 } });
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointKnickKnacks.tsx");
+
+export default function CheckpointKnickKnacks(style) {
+  let stateFromStores;
+  const items = [AccessibilityStore];
+  stateFromStores = stateFromStores(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const items1 = [stateFromStores];
+  const obj = stateFromStores(504);
+  const tmp = stateFromStores;
+  const memo = noop.useMemo(() => ({ iconColor: CHECKPOINT_PRIMARY, reducedMotion: stateFromStores }), items1);
+  const tmp4 = closure_7();
+  let tmp6 = null;
+  if (!obj2.isAndroid()) {
+    const obj3 = { style: null, children: null };
+    const items2 = [tmp4.rive, style.style];
+    obj3.style = items2;
+    const obj4 = { artboard: "Entry", dataBinding: memo };
+    obj3.children = jsx(tmp(4466).CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: memo });
+    tmp6 = <View style={null}>{null}</View>;
+  }
+  return tmp6;
+};

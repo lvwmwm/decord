@@ -1,11 +1,11 @@
-// Module ID: 6655
-// Function ID: 6656
+// Module ID: 6795
+// Function ID: 6796
 // Dependencies: [2]
 
-// Module 6655
+// Module 6795
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VendingMachineSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/d9a71306a5658e5c930ffe289dbdca4b324569844f9251130cb87c6ae2362c77.png";
-export const metadata = { fileBytes: 42066 };
+export default "https://cdn.discordapp.com/assets/content/ddde1dc33e4cfc5d6b113e84c7bdff341ac2c99654e451a68e04996c3fb2e821.png";
+export const metadata = { fileBytes: 43766 };

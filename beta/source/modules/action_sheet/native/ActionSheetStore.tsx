@@ -1,9 +1,9 @@
-// Module ID: 4327
-// Function ID: 4328
+// Module ID: 4447
+// Function ID: 4448
 // Name: ActionSheetStore
 // Dependencies: [504, 573, 2]
 
-// Module 4327 (ActionSheetStore)
+// Module 4447 (ActionSheetStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

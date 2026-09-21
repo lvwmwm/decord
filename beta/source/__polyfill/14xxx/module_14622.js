@@ -1,9 +1,7 @@
 // Module ID: 14622
 // Function ID: 14623
-// Dependencies: [1120]
+// Dependencies: []
 
 // Module 14622
-import registerAsset from "module_1120" /* 1120 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "72603ac548e054665a7efcd4a8c834e5", name: "disconnect", type: "png" });
+export default {};

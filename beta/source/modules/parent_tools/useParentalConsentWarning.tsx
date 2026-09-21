@@ -1,12 +1,12 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 15144
+// Function ID: 15145
 // Name: useParentalConsentWarning
-// Dependencies: [14957, 504, 2]
+// Dependencies: [15145, 504, 2]
 // Exports: useParentalConsentWarning
 
-// Module 14956 (useParentalConsentWarning)
+// Module 15144 (useParentalConsentWarning)
 import initialize from "initialize" /* 504 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14957 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 15145 */;
 
 require = fn;
 const size = fn(2);

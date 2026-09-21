@@ -1,14 +1,14 @@
-// Module ID: 7552
-// Function ID: 7553
+// Module ID: 7691
+// Function ID: 7692
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1371, 7553, 504, 4294, 1952, 2]
+// Dependencies: [32, 19, 1372, 7692, 504, 4414, 2036, 2]
 // Exports: hasUserTrialOfferExpired, useTrialOffer
 
-// Module 7552 (useTrialOffer)
+// Module 7691 (useTrialOffer)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import UserOfferStore from "UserOfferStore" /* 7553 */;
+import UserStore from "UserStore" /* 1372 */;
+import UserOfferStore from "UserOfferStore" /* 7692 */;
 
 const require = globalThis.__r;
 

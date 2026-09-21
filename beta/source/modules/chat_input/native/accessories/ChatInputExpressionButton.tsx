@@ -1,19 +1,19 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12427
+// Function ID: 12428
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4636, 576, 4338, 5204, 1114, 1176, 11384, 8884, 2]
+// Dependencies: [19, 21, 4756, 576, 4457, 5339, 1115, 1177, 11513, 9038, 2]
 
-// Module 12307 (ChatInputExpressionButton)
+// Module 12427 (ChatInputExpressionButton)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import useToken from "useToken" /* 4338 */;
-import Pressables from "Pressables" /* 5204 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useToken from "useToken" /* 4457 */;
+import Pressables from "Pressables" /* 5339 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles((height) => {
   const obj = { expressionButton: null, expressionButtonIconTint: null };
   const size = { borderRadius: nativeDefault.radii.sm, height, width: height, alignItems: "center", justifyContent: "center" };
@@ -52,11 +52,11 @@ export default noop.memo((active) => {
     tmp12 = bound;
   }
   obj4.hitSlop = tmp12;
-  const intl = tmp(1114).intl;
+  const intl = tmp(1115).intl;
   obj4.accessibilityLabel = intl.string(util.t.iZ7Mz9);
   obj4.accessibilityState = { expanded: flag };
   obj4.onPress = callback;
   const ref = noop.useRef(null);
-  obj4.children = jsx(native.Icon, { size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11384 : 8884) });
+  obj4.children = jsx(native.Icon, { size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11513 : 9038) });
   return jsx(Pressables.PressableOpacity, { ref: noop.useRef(null), style: null, hitSlop: null, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, children: null });
 });

@@ -1,9 +1,9 @@
 // Module ID: 2417
 // Function ID: 2418
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2417
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "1f3726aa1191e45ea2aa7ee9dc43b93e", name: "pt-BR.messages.1f3726aa1191e45ea2aa7ee9dc43b93e.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_space", scales: [1], hash: "d156d4fa904a6540d04c61da0e865aa7", name: "GuildSpaceUntranslated.compiled.messages", type: "jsona" });

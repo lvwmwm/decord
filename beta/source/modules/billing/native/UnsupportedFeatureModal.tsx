@@ -1,11 +1,11 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 11087
+// Function ID: 11088
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 7103, 5705, 4839, 4632, 1114, 2]
+// Dependencies: [19, 17, 21, 7245, 5841, 4959, 4752, 1115, 2]
 // Exports: default
 
-// Module 10957 (UnsupportedFeatureModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+// Module 11087 (UnsupportedFeatureModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -20,7 +20,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   let obj2 = { Unsupported: null };
   const obj3 = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5705).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5841).getHeaderCloseButton(() => {
       ModalActionCreatorsDefault.pop();
       if (onDismiss != null) {
         onDismiss();
@@ -29,13 +29,13 @@ export default function UnsupportedFeatureModal(onDismiss) {
     render() {
       const obj = { style: { flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }, children: null };
       const obj2 = { variant: "text-lg/normal", color: "text-default", children: null };
-      const intl = onDismiss(1114).intl;
-      obj2.children = intl.string(onDismiss(1114).t.I22zuX);
-      obj.children = jsx(onDismiss(4632).Text, { variant: "text-lg/normal", color: "text-default", children: null });
+      const intl = onDismiss(1115).intl;
+      obj2.children = intl.string(onDismiss(1115).t.I22zuX);
+      obj.children = jsx(onDismiss(4752).Text, { variant: "text-lg/normal", color: "text-default", children: null });
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
   obj2.Unsupported = obj3;
   obj.screens = obj2;
-  return jsx(onDismiss(7103).Navigator, { initialRouteName: "Unsupported", screens: null });
+  return jsx(onDismiss(7245).Navigator, { initialRouteName: "Unsupported", screens: null });
 };

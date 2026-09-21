@@ -1,63 +1,69 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 16009
+// Function ID: 16010
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 17, 1074, 1076, 1954, 5525, 21, 5204, 4632, 1114, 10754, 1943, 1240, 11900, 5528, 15787, 8975, 4603, 11239, 1896, 7285, 7644, 11238, 4457, 5072, 4636, 576, 2]
+// Dependencies: [19, 1074, 1076, 2038, 5661, 21, 5822, 4752, 1115, 10885, 2027, 1241, 12020, 5664, 16010, 9129, 4723, 11369, 1980, 7427, 7783, 11368, 4576, 5202, 2]
 // Exports: default
 
-// Module 15786 (BalanceWidgetMenu)
-import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import dismissible_content from "dismissible_content" /* 1943 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Pressables from "Pressables" /* 5204 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
-import _mod8975 from "module_8975" /* 8975 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10754 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 11238 */;
-import OrbOnboardingPillDefault from "OrbOnboardingPill" /* 15787 */;
+// Module 16009 (BalanceWidgetMenu)
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import dismissible_content from "dismissible_content" /* 2027 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import QuestTypes from "QuestTypes" /* 5664 */;
+import TableRow from "TableRow" /* 5822 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import _mod9129 from "module_9129" /* 9129 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10885 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 11368 */;
+import QuestUtils from "QuestUtils" /* 12020 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-function BalanceWidget(arg0) {
-  ({ onPress, style, accessibilityLabel, accessibilityState, children } = arg0);
-  const tmp = closure_15();
-  const obj = { onPress, style: null, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityState, activeOpacity: 0.8, children: null };
-  const items = [tmp.pressable, style];
-  obj.style = items;
-  const obj2 = { variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
+function OrbsBalanceRow(isBusy) {
+  let flag = isBusy.isBusy;
+  ({ onPress, accessibilityLabel, trailing } = isBusy);
+  if (flag === undefined) {
+    flag = false;
+  }
+  const obj = { label: null, accessibilityLabel: null, accessibilityState: null, onPress: null, trailing: null, start: true, end: true };
+  const obj2 = { variant: "text-sm/semibold", color: "text-default", children: null };
   const intl = util.intl;
   obj2.children = intl.string(util.t.gGtZpz);
-  const items1 = [closure_1_10(Text_Text.Text, obj2), closure_1_10(View, { style: tmp.pill, children })];
-  obj.children = items1;
-  return closure_1_11(Pressables.PressableOpacity, obj);
+  obj.label = jsx(Text_Text.Text, { variant: "text-sm/semibold", color: "text-default", children: null });
+  obj.accessibilityLabel = accessibilityLabel;
+  let obj3;
+  if (flag) {
+    obj3 = { busy: true };
+  }
+  obj.accessibilityState = obj3;
+  obj.onPress = onPress;
+  obj.trailing = trailing;
+  return jsx(TableRow.TableRow, { label: null, accessibilityLabel: null, accessibilityState: null, onPress: null, trailing: null, start: true, end: true });
 }
 class OrbsOnboardingMenuDismissibleContent {
-  constructor(arg0) {
-    style = global.style;
+  constructor() {
     obj = { contentTypes: null, groupName: null, children: null };
-    tmp = closure_1(closure_2[10]);
+    tmp = closure_1(closure_2[9]);
     items = [];
-    items[0] = style(closure_2[11]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL;
+    items[0] = closure_0(closure_2[10]).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL;
     obj.contentTypes = items;
-    obj.groupName = closure_8.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
+    obj.groupName = closure_7.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
     obj.children = function children(markAsDismissed) {
       markAsDismissed = markAsDismissed.markAsDismissed;
-      if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
-        function handleOnboardingPress() {
+      if (markAsDismissed.visibleContent === markAsDismissed(2027).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL) {
+        let obj = { accessibilityLabel: null, onPress: null, trailing: null };
+        const intl = tmp(1115).intl;
+        obj.accessibilityLabel = intl.string(tmp(1115).t.Kt2QDh);
+        obj.onPress = function onPress() {
           markAsDismissed(constants2.TAKE_ACTION);
           AnalyticsUtilsDefault.track(constants.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
-          const obj2 = style(11900);
-          obj2.openQuestHome({ filter: constants3.VIRTUAL_CURRENCY, fromContent: style(5528).QuestContent.MOBILE_ORBS_ONBOARDING_DC });
-        }
-        let obj = { onPress: handleOnboardingPress, style, accessibilityLabel: null, children: null };
-        const intl = tmp(1114).intl;
-        obj.accessibilityLabel = intl.string(tmp(1114).t.Kt2QDh);
-        let obj2 = { onPress: handleOnboardingPress, accessible: false };
-        obj.children = closure_2_10(OrbOnboardingPillDefault, obj2);
-        return closure_2_10(BalanceWidget, obj);
+          const obj2 = QuestUtils;
+          obj2.openQuestHome({ filter: constants3.VIRTUAL_CURRENCY, fromContent: QuestTypes.QuestContent.MOBILE_ORBS_ONBOARDING_DC });
+        };
+        obj.trailing = closure_9(closure_1(16010), {});
+        return closure_9(closure_10, obj);
       } else {
         return null;
       }
@@ -65,9 +71,8 @@ class OrbsOnboardingMenuDismissibleContent {
     return jsx(tmp, obj);
   }
 }
-function BalanceWidgetMenu(style) {
-  let str;
-  str = str(8975).useFetchVirtualCurrencyBalance().balance;
+function BalanceWidgetMenu() {
+  str = str(9129).useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = noop.useCallback(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.USER_PROFILE_ACTION, { profile_action: "ORBS_BALANCE_PRESSED" });
@@ -85,7 +90,7 @@ function BalanceWidgetMenu(style) {
       obj5.analyticsLocations = items;
       obj5.analyticsSource = AnalyticsLocationDefault.COLLECTIBLES_SHOP;
       obj5.screen = constants2.ORBS;
-      const result = str(7644).openCollectiblesShopMobile(obj5);
+      const result = str(7783).openCollectiblesShopMobile(obj5);
     };
     obj3.primaryButtonConfig = obj4;
     let obj5 = { buttonText: null, onButtonPress: null };
@@ -96,15 +101,14 @@ function BalanceWidgetMenu(style) {
       obj.track(constants.ORB_BALANCE_ACTION_SHEET_ACTION, { type: "GO_TO_QUEST_HOME", source: AnalyticsLocationDefault.YOU_SCREEN, balance });
       const obj2 = { type: "GO_TO_QUEST_HOME", source: AnalyticsLocationDefault.YOU_SCREEN, balance };
       ActionSheetActionCreatorsDefault.hideActionSheet();
-      const obj4 = str(11900);
-      obj4.openQuestHome({ mergeExistingRoutes: true, filter: constants3.VIRTUAL_CURRENCY, fromContent: str(5528).QuestContent.ORBS_BALANCE_MENU });
+      const obj4 = str(12020);
+      obj4.openQuestHome({ mergeExistingRoutes: true, filter: constants3.VIRTUAL_CURRENCY, fromContent: str(5664).QuestContent.ORBS_BALANCE_MENU });
     };
     obj3.secondaryButtonConfig = obj5;
     obj3.source = AnalyticsLocationDefault.YOU_SCREEN;
-    ActionSheetActionCreatorsDefault.openLazy(() => balance(paths[19])(paths[18], paths.paths).then((result) => result.default), "BalanceWidgetMenu", obj3);
+    ActionSheetActionCreatorsDefault.openLazy(() => balance(paths[18])(paths[17], paths.paths).then((result) => result.default), "BalanceWidgetMenu", obj3);
   }, items);
-  let obj2 = { onPress: callback, style: style.style, accessibilityLabel: null, children: null };
-  let intl = str(1114).intl;
+  let intl = str(1115).intl;
   let str2;
   if (str != null) {
     str2 = str.toString();
@@ -112,57 +116,36 @@ function BalanceWidgetMenu(style) {
   if (str2 == null) {
     str2 = "";
   }
-  obj2.accessibilityLabel = intl.formatToPlainString(str(1114).t.zPaLL9, { balance: str2 });
-  obj2.children = closure_10(BalanceWidgetPillButtonDefault, { balance: str, onPress: callback, accessible: false });
-  return closure_10(BalanceWidget, obj2);
+  let obj = str(9129);
+  return <tmp4 accessibilityLabel={intl.formatToPlainString(str(1115).t.zPaLL9, { balance: str2 })} onPress={callback} trailing={jsx(BalanceWidgetPillButtonDefault, { balance: str, onPress: callback, accessible: false })} />;
 }
-const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-let closure_6 = fn(1076).CollectiblesMobileShopScreen;
-const DismissibleContentConstants = fn(1954);
-({ ContentDismissActionType: closure_7, DismissibleContentGroupName: closure_8 } = DismissibleContentConstants);
-const RewardFilterTypes = fn(5525).RewardFilterTypes;
-const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
-let closure_15 = createStyles.createStyles(() => {
-  const obj = { pressable: { flex: 1, flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md }, label: { flex: 1 }, pill: { alignItems: "center" }, loadingContainer: { height: 36, justifyContent: "center" } };
-  return obj;
-});
+let closure_5 = fn(1076).CollectiblesMobileShopScreen;
+const DismissibleContentConstants = fn(2038);
+({ ContentDismissActionType: metroRequire, DismissibleContentGroupName: closure_7 } = DismissibleContentConstants);
+const RewardFilterTypes = fn(5661).RewardFilterTypes;
+const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
-export default function BalanceWidgetMenuWrapper(style) {
-  const tmp = closure_15();
-  const balance = _mod8975.useFetchVirtualCurrencyBalance().balance;
+export default function BalanceWidgetMenuWrapper() {
+  const balance = _mod9129.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {
-    const obj2 = {
-      onPress() {
-
-        },
-      style: style.style,
-      accessibilityLabel: null,
-      accessibilityState: null,
-      children: null
-    };
-    const intl = tmp2(1114).intl;
-    obj2.accessibilityLabel = intl.string(tmp2(1114).t.cKwv4k);
-    obj2.accessibilityState = { busy: true };
-    const obj3 = { style: tmp.loadingContainer, children: closure_1_10(tmp2(5072).Ellipsis, { variant: "primary", size: "sm" }) };
-    obj2.children = closure_1_10(View, obj3);
-    let tmp6Result = closure_1_10(BalanceWidget, obj2);
+    const obj2 = { accessibilityLabel: null, trailing: null, isBusy: true };
+    const intl = tmp(1115).intl;
+    obj2.accessibilityLabel = intl.string(tmp(1115).t.cKwv4k);
+    obj2.trailing = jsx(tmp(5202).Ellipsis, { variant: "primary", size: "sm" });
+    let tmp5Result = <OrbsBalanceRow accessibilityLabel={null} trailing={null} isBusy />;
   } else {
     if (balance <= 0) {
-      if (!tmp5) {
-        let tmp7 = OrbsOnboardingMenuDismissibleContent;
+      if (!tmp4) {
+        let tmp6 = OrbsOnboardingMenuDismissibleContent;
       }
-      const obj4 = {};
-      const merged = Object.assign(style);
-      tmp6Result = tmp6(tmp7, obj4);
+      tmp5Result = tmp5(tmp6, {});
     }
-    tmp7 = BalanceWidgetMenu;
+    tmp6 = BalanceWidgetMenu;
   }
-  return tmp6Result;
+  return tmp5Result;
 };
 export { OrbsOnboardingMenuDismissibleContent };

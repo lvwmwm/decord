@@ -1,9 +1,18 @@
 // Module ID: 5136
 // Function ID: 5137
-// Dependencies: [1120]
+// Dependencies: [19]
+// Exports: usePrevious
 
 // Module 5136
-import registerAsset from "module_1120" /* 1120 */;
+import noop from "module_19" /* 19 */;
 
+({ useEffect: closure_0, useRef: closure_1 } = noop);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b84343ac07458c13e43241d47e243dd3", name: "AppsWarningIcon", type: "png" });
+export const usePrevious = function usePrevious(current) {
+  const tmp = framebus(undefined);
+  closure_1 = tmp;
+  React(() => {
+    closure_1.current = current;
+  });
+  return tmp.current;
+};

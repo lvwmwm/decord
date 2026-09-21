@@ -1,16 +1,16 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 15118
+// Function ID: 15119
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8079, 9425, 4847, 9426, 4849, 1363, 8529, 8531, 1935, 11605, 1114, 2]
+// Dependencies: [8233, 9410, 4966, 9411, 4968, 1364, 8682, 8684, 2019, 11725, 1115, 2]
 
-// Module 14930 (AndroidViewNsfwDmCommandsSetting)
-import util from "util" /* 1114 */;
-import AgeGateUtils from "AgeGateUtils" /* 4847 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9425 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 9426 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15118 (AndroidViewNsfwDmCommandsSetting)
+import util from "util" /* 1115 */;
+import AgeGateUtils from "AgeGateUtils" /* 4966 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9410 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 9411 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({
@@ -29,11 +29,11 @@ const toggle = SettingBuilders.createToggle({
   onValueChange: function handleValueChange(arg0) {
     if (obj.shouldAgeVerifyForSettingsToggles()) {
       if (arg0) {
-        const obj3 = { entryPoint: tmp(8531).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
+        const obj3 = { entryPoint: tmp(8684).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS };
         const result = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal(obj3);
       }
     }
-    const ViewNsfwCommands = tmp(1935).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(2019).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
   usePredicate() {
@@ -49,8 +49,8 @@ const toggle = SettingBuilders.createToggle({
       shouldAgeVerifyForSettingsToggles = flag;
     }
     if (shouldAgeVerifyForSettingsToggles) {
-      shouldAgeVerifyForSettingsToggles = tmp(1363).isAndroid();
-      const tmpResult2 = tmp(1363);
+      shouldAgeVerifyForSettingsToggles = tmp(1364).isAndroid();
+      const tmpResult2 = tmp(1364);
     }
     return shouldAgeVerifyForSettingsToggles;
   }

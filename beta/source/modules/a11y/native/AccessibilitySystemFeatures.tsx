@@ -1,16 +1,16 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14715
+// Function ID: 14716
 // Name: AccessibilitySystemFeatures
-// Dependencies: [17, 4628, 1347, 14525, 11491, 1240, 14526, 2]
+// Dependencies: [17, 4748, 1348, 14716, 11617, 1241, 14717, 2]
 
-// Module 14524 (AccessibilitySystemFeatures)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import AccessibilityConstants from "AccessibilityConstants" /* 1347 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11491 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14525 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14526 */;
+// Module 14715 (AccessibilitySystemFeatures)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import AccessibilityConstants from "AccessibilityConstants" /* 1348 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11617 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14716 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14717 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import size from "module_2" /* 2 */;
 
 ({ AccessibilityInfo: c3, Appearance: closure_4, AppState: hasOwnProperty } = get_ActivityIndicator);
@@ -62,7 +62,7 @@ export default {
     if (null != tmp5) {
       const obj2 = {};
       obj2[tmp5] = useReducedMotion;
-      updateSharedValueIfChangedDefault(tmp(14525).accessibilityPreferencesSharedValue, obj2);
+      updateSharedValueIfChangedDefault(tmp(14716).accessibilityPreferencesSharedValue, obj2);
     }
   },
   handleReduceTransparencyChanged(arg0) {
@@ -130,7 +130,7 @@ export default {
       if (null != tmp21) {
         const obj2 = {};
         obj2[tmp21] = false;
-        updateSharedValueIfChangedDefault(tmp19(14525).accessibilityPreferencesSharedValue, obj2);
+        updateSharedValueIfChangedDefault(tmp19(14716).accessibilityPreferencesSharedValue, obj2);
       }
       const PREFERS_COLOR_SCHEME_DARK2 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_DARK;
       closure_8 = closure_8 | PREFERS_COLOR_SCHEME_DARK2;
@@ -138,7 +138,7 @@ export default {
       if (null != tmp27) {
         const obj3 = {};
         obj3[tmp27] = true;
-        updateSharedValueIfChangedDefault(tmp19(14525).accessibilityPreferencesSharedValue, obj3);
+        updateSharedValueIfChangedDefault(tmp19(14716).accessibilityPreferencesSharedValue, obj3);
       }
     } else if ("light" === colorScheme) {
       const PREFERS_COLOR_SCHEME_DARK = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_DARK;
@@ -147,7 +147,7 @@ export default {
       if (null != tmp10) {
         const obj4 = {};
         obj4[tmp10] = false;
-        updateSharedValueIfChangedDefault(tmp8(14525).accessibilityPreferencesSharedValue, obj4);
+        updateSharedValueIfChangedDefault(tmp8(14716).accessibilityPreferencesSharedValue, obj4);
       }
       const PREFERS_COLOR_SCHEME_LIGHT2 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_LIGHT;
       closure_8 = closure_8 | PREFERS_COLOR_SCHEME_LIGHT2;
@@ -155,7 +155,7 @@ export default {
       if (null != tmp16) {
         const obj5 = {};
         obj5[tmp16] = true;
-        updateSharedValueIfChangedDefault(tmp8(14525).accessibilityPreferencesSharedValue, obj5);
+        updateSharedValueIfChangedDefault(tmp8(14716).accessibilityPreferencesSharedValue, obj5);
       }
     } else {
       const PREFERS_COLOR_SCHEME_DARK3 = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_DARK;
@@ -164,7 +164,7 @@ export default {
       if (null != tmp35) {
         const obj = {};
         obj[tmp35] = false;
-        updateSharedValueIfChangedDefault(tmp33(14525).accessibilityPreferencesSharedValue, obj);
+        updateSharedValueIfChangedDefault(tmp33(14716).accessibilityPreferencesSharedValue, obj);
       }
       const PREFERS_COLOR_SCHEME_LIGHT = AccessibilityFeatureFlags.PREFERS_COLOR_SCHEME_LIGHT;
       closure_8 = closure_8 & ~PREFERS_COLOR_SCHEME_LIGHT;
@@ -172,7 +172,7 @@ export default {
       if (null != tmp5) {
         const obj6 = {};
         obj6[tmp5] = false;
-        updateSharedValueIfChangedDefault(tmp33(14525).accessibilityPreferencesSharedValue, obj6);
+        updateSharedValueIfChangedDefault(tmp33(14716).accessibilityPreferencesSharedValue, obj6);
       }
     }
   },
@@ -188,7 +188,7 @@ export default {
     if (null != tmp6) {
       const obj = {};
       obj[tmp6] = useReducedMotion;
-      updateSharedValueIfChangedDefault(tmp4(14525).accessibilityPreferencesSharedValue, obj);
+      updateSharedValueIfChangedDefault(tmp4(14716).accessibilityPreferencesSharedValue, obj);
     }
     const REDUCED_MOTION_FROM_USER_SETTINGS = tmp.REDUCED_MOTION_FROM_USER_SETTINGS;
     if ("auto" !== AccessibilityStore.rawPrefersReducedMotion) {
@@ -200,7 +200,7 @@ export default {
     if (null != tmp12) {
       const obj2 = {};
       obj2[tmp12] = tmp10;
-      updateSharedValueIfChangedDefault(tmp4(14525).accessibilityPreferencesSharedValue, obj2);
+      updateSharedValueIfChangedDefault(tmp4(14716).accessibilityPreferencesSharedValue, obj2);
     }
     const SATURATION_LEVEL_DECREASED = tmp.SATURATION_LEVEL_DECREASED;
     if (AccessibilityStore.saturation < 1) {
@@ -212,7 +212,7 @@ export default {
     if (null != tmp18) {
       const obj3 = {};
       obj3[tmp18] = tmp16;
-      updateSharedValueIfChangedDefault(tmp4(14525).accessibilityPreferencesSharedValue, obj3);
+      updateSharedValueIfChangedDefault(tmp4(14716).accessibilityPreferencesSharedValue, obj3);
     }
     const CONTRAST_LEVEL_DECREASED = tmp.CONTRAST_LEVEL_DECREASED;
     if (AccessibilityStore.contrast < 1) {
@@ -224,7 +224,7 @@ export default {
     if (null != tmp24) {
       const obj4 = {};
       obj4[tmp24] = tmp22;
-      updateSharedValueIfChangedDefault(tmp4(14525).accessibilityPreferencesSharedValue, obj4);
+      updateSharedValueIfChangedDefault(tmp4(14716).accessibilityPreferencesSharedValue, obj4);
     }
     const CONTRAST_LEVEL_INCREASED = tmp.CONTRAST_LEVEL_INCREASED;
     if (AccessibilityStore.contrast > 1) {
@@ -236,7 +236,7 @@ export default {
     if (null != tmp30) {
       const obj5 = {};
       obj5[tmp30] = tmp28;
-      updateSharedValueIfChangedDefault(tmp4(14525).accessibilityPreferencesSharedValue, obj5);
+      updateSharedValueIfChangedDefault(tmp4(14716).accessibilityPreferencesSharedValue, obj5);
     }
   },
   handleAppStateChange(arg0) {
@@ -259,7 +259,7 @@ export default {
         if (null != tmp5) {
           const obj2 = {};
           obj2[tmp5] = useReducedMotion;
-          updateSharedValueIfChangedDefault(tmp(14525).accessibilityPreferencesSharedValue, obj2);
+          updateSharedValueIfChangedDefault(tmp(14716).accessibilityPreferencesSharedValue, obj2);
         }
       });
       const result1 = React3.prefersCrossFadeTransitions();
@@ -274,7 +274,7 @@ export default {
         if (null != tmp4) {
           const obj = {};
           obj[tmp4] = result;
-          updateSharedValueIfChangedDefault(tmp2(14525).accessibilityPreferencesSharedValue, obj);
+          updateSharedValueIfChangedDefault(tmp2(14716).accessibilityPreferencesSharedValue, obj);
         }
         result = AccessibilityActionCreators.systemPrefersCrossfadesChanged(result);
       });

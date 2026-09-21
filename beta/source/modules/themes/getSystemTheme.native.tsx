@@ -1,12 +1,12 @@
-// Module ID: 1218
-// Function ID: 1219
+// Module ID: 1219
+// Function ID: 1220
 // Name: getSystemTheme
-// Dependencies: [17, 1184, 2]
+// Dependencies: [17, 1185, 2]
 // Exports: default
 
-// Module 1218 (getSystemTheme)
+// Module 1219 (getSystemTheme)
 import _mod17 from "module_17" /* 17 */;
-import ThemeConstants from "ThemeConstants" /* 1184 */;
+import ThemeConstants from "ThemeConstants" /* 1185 */;
 import size from "module_2" /* 2 */;
 
 const Appearance = _mod17.Appearance;

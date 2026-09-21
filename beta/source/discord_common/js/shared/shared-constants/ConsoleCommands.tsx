@@ -1,9 +1,9 @@
-// Module ID: 9580
-// Function ID: 9581
+// Module ID: 10046
+// Function ID: 10047
 // Name: ConsoleCommands
 // Dependencies: [2]
 
-// Module 9580 (ConsoleCommands)
+// Module 10046 (ConsoleCommands)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["connect_voice"]) };

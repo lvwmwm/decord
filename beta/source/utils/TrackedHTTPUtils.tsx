@@ -1,10 +1,10 @@
-// Module ID: 4829
-// Function ID: 4830
+// Module ID: 4949
+// Function ID: 4950
 // Name: TrackedHTTPUtils
-// Dependencies: [109, 1240, 1270, 2]
+// Dependencies: [109, 1241, 1271, 2]
 
-// Module 4829 (TrackedHTTPUtils)
-import AnalyticsUtils from "AnalyticsUtils" /* 1240 */;
+// Module 4949 (TrackedHTTPUtils)
+import AnalyticsUtils from "AnalyticsUtils" /* 1241 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 require = fn;
@@ -60,12 +60,13 @@ export default {
       });
     });
   },
-  post(request) {
+  post(trackedActionData) {
     post = post(trackedActionData[2]).HTTP.post;
+    trackedActionData = undefined;
     closure_2 = undefined;
     _objectWithoutProperties = undefined;
-    trackedActionData = request.trackedActionData;
-    const tmp = _objectWithoutProperties(request, closure_2);
+    trackedActionData = trackedActionData.trackedActionData;
+    const tmp = _objectWithoutProperties(trackedActionData, closure_2);
     closure_2 = tmp;
     _objectWithoutProperties = { url: tmp.url, request_method: "post" };
     return new Promise((arg0, arg1) => {

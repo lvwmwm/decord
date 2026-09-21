@@ -1,9 +1,24 @@
 // Module ID: 5444
 // Function ID: 5445
-// Dependencies: [1120]
+// Dependencies: [5430]
 
 // Module 5444
-import registerAsset from "module_1120" /* 1120 */;
+import _mod5430 from "module_5430" /* 5430 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "8ce2f7584220a9c90fe76fd89217537a", name: "img_account_sync_riot_light_and_dark", type: "svg" });
+export default {
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      hasItem = closure_3.includes(_mod5430.getStringFromDataView(dataView, 0, c2));
+    }
+    return hasItem;
+  },
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
+  }
+};

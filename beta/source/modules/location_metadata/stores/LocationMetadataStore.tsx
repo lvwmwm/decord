@@ -1,12 +1,12 @@
-// Module ID: 13807
-// Function ID: 13808
+// Module ID: 13986
+// Function ID: 13987
 // Name: LocationMetadataStore
-// Dependencies: [4852, 504, 573, 2]
+// Dependencies: [4971, 504, 573, 2]
 
-// Module 13807 (LocationMetadataStore)
+// Module 13986 (LocationMetadataStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 4852 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 4971 */;
 import size from "module_2" /* 2 */;
 
 function handleSetLocationMetadata(countryCode) {

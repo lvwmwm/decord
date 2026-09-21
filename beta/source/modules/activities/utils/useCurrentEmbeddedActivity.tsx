@@ -1,12 +1,12 @@
-// Module ID: 9763
-// Function ID: 9764
+// Module ID: 9721
+// Function ID: 9722
 // Name: useCurrentEmbeddedActivity
-// Dependencies: [1956, 504, 2]
+// Dependencies: [2040, 504, 2]
 // Exports: default
 
-// Module 9763 (useCurrentEmbeddedActivity)
+// Module 9721 (useCurrentEmbeddedActivity)
 import initialize from "initialize" /* 504 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 require = fn;
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16661
+// Function ID: 16662
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 4632, 1114, 4788, 2]
+// Dependencies: [19, 21, 4752, 1115, 4908, 2]
 // Exports: default
 
-// Module 16419 (StreamingSubtitle)
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
+// Module 16661 (StreamingSubtitle)
+import util from "util" /* 1115 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

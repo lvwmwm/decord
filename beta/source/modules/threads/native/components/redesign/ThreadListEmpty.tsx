@@ -1,21 +1,21 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 17182
+// Function ID: 17183
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 4636, 576, 1176, 12371, 4632, 1114, 5056, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1177, 12491, 4752, 1115, 5186, 2]
 
-// Module 16821 (ThreadListEmpty)
+// Module 17182 (ThreadListEmpty)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import _modDef12371 from "module_12371" /* 12371 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import _modDef12491 from "module_12491" /* 12491 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { flex: 1, justifyContent: "center", alignItems: "center" }, iconWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, padding: 12 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 16 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 16, marginBottom: 16 } };
 let closure_6 = createStyles.createStyles(obj);
 const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, padding: 12 };
@@ -26,7 +26,7 @@ export default noop.memo((onCreateThreadPress) => {
   onCreateThreadPress = onCreateThreadPress.onCreateThreadPress;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
-  const obj2 = { style: tmp.iconWrapper, children: React4(native.Icon, { source: _modDef12371, size: native.Icon.Sizes.MEDIUM }) };
+  const obj2 = { style: tmp.iconWrapper, children: React4(native.Icon, { source: _modDef12491, size: native.Icon.Sizes.MEDIUM }) };
   const items = [React4(View, obj2), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", maxFontSizeMultiplier: 2, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
@@ -39,9 +39,9 @@ export default noop.memo((onCreateThreadPress) => {
   let tmp4Result = null != onCreateThreadPress;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: null };
-    const intl3 = tmp5(1114).intl;
-    obj6.text = intl3.string(tmp5(1114).t.rBIGBL);
-    tmp4Result = React4(tmp5(5056).Button, obj6);
+    const intl3 = tmp5(1115).intl;
+    obj6.text = intl3.string(tmp5(1115).t.rBIGBL);
+    tmp4Result = React4(tmp5(5186).Button, obj6);
   }
   items[3] = tmp4Result;
   obj.children = items;

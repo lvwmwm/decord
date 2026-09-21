@@ -1,17 +1,17 @@
-// Module ID: 7308
-// Function ID: 7309
+// Module ID: 7450
+// Function ID: 7451
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1363, 4632, 2]
+// Dependencies: [19, 17, 21, 1364, 4752, 2]
 // Exports: default
 
-// Module 7308 (RoleIcon)
-import Text_Text from "Text/Text" /* 4632 */;
+// Module 7450 (RoleIcon)
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
 const jsx = fn(21).jsx;
-const PlatformUtils = fn(1363);
+const PlatformUtils = fn(1364);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/roles/native/RoleIcon.tsx");
 
@@ -21,7 +21,7 @@ export default function RoleIcon(arg0) {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "call", textAlign: true, width: size, marginBottom: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001891525516440558 };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "call", textAlign: "st", width: size, marginBottom: "ip" };
   if (null != src) {
     const obj2 = { resizeMode: "contain", source: null, style: null };
     const obj3 = { uri: src };

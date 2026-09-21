@@ -1,12 +1,12 @@
-// Module ID: 7542
-// Function ID: 7543
+// Module ID: 7681
+// Function ID: 7682
 // Name: useCountdown
-// Dependencies: [19, 4318, 7543, 7548, 2]
+// Dependencies: [19, 4438, 7682, 7687, 2]
 // Exports: default
 
-// Module 7542 (useCountdown)
+// Module 7681 (useCountdown)
 import _mod19 from "module_19" /* 19 */;
-import DateUtils from "DateUtils" /* 4318 */;
+import DateUtils from "DateUtils" /* 4438 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

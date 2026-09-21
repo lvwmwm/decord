@@ -1,9 +1,9 @@
 // Module ID: 2807
 // Function ID: 2808
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2807
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9kaXNwbGF5X25hbWVfc3R5bGVz", scales: [1], hash: "b63ed03f08f771067ca67d844cf7e48d", name: "pt-BR.messages.b63ed03f08f771067ca67d844cf7e48d.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/safety_flows", scales: [1], hash: "f614c08c76b02de5adb2fd79d588a060", name: "SafetyFlows.compiled.messages", type: "jsona" });

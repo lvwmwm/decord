@@ -1,13 +1,13 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11690
+// Function ID: 11691
 // Name: PollsInteractionStore
-// Dependencies: [1242, 1247, 558, 11, 2]
+// Dependencies: [1243, 1248, 558, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 11564 (PollsInteractionStore)
+// Module 11690 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import identity from "module_1242" /* 1242 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

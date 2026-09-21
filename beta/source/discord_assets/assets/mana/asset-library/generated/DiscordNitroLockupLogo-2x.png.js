@@ -1,11 +1,11 @@
-// Module ID: 6009
-// Function ID: 6010
+// Module ID: 6147
+// Function ID: 6148
 // Dependencies: [2]
 
-// Module 6009
+// Module 6147
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordNitroLockupLogo-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/34586b1d142fcea6f1b2a05a9c05a0f6ff76e94f5b18cfca7fe20dc260fa16d4.png";
-export const metadata = { fileBytes: 4012 };
+export default "https://cdn.discordapp.com/assets/content/9082a2e2867c983f47ea613a73d70ea32242b484ccb40f2f4cd638c0afdcdd03.png";
+export const metadata = { fileBytes: 3971 };

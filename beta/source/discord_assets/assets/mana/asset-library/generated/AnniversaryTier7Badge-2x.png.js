@@ -1,12 +1,12 @@
-// Module ID: 5841
-// Function ID: 5842
+// Module ID: 5977
+// Function ID: 5978
 // Dependencies: [2]
 
-// Module 5841
+// Module 5977
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnniversaryTier7Badge-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/c991b9cf2bec509a6446138fa1e0fa4de6866ae348f791e958649437722ceb9e.png";
+export default "https://cdn.discordapp.com/assets/content/d5da666651c7310454c047f041b9f5021d827ae1a83466dd2c9dbd979231fe1c.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/AnniversaryTier7Badge-2x.png";
-export const metadata = { fileBytes: 1837 };
+export const metadata = { fileBytes: 1800 };

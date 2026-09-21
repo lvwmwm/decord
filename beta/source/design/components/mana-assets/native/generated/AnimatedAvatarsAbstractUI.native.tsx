@@ -1,13 +1,13 @@
-// Module ID: 5822
-// Function ID: 5823
+// Module ID: 5958
+// Function ID: 5959
 // Name: AnimatedAvatarsAbstractUI
-// Dependencies: [21, 5668, 5823, 2]
+// Dependencies: [21, 5804, 5959, 2]
 // Exports: AnimatedAvatarsAbstractUI
 
-// Module 5822 (AnimatedAvatarsAbstractUI)
+// Module 5958 (AnimatedAvatarsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef5823 from "module_5823" /* 5823 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef5959 from "module_5959" /* 5959 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AnimatedAvatarsAbstractUI = function AnimatedAvatarsAbstractUI(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5823 };
+  const obj2 = { uri: _modDef5959 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

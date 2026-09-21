@@ -1,19 +1,19 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 18220
+// Function ID: 18221
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 15312, 1074, 21, 4636, 576, 5605, 4355, 9179, 1176, 17879, 1114, 17880, 2]
+// Dependencies: [19, 17, 15498, 1074, 21, 4756, 576, 5741, 4474, 10011, 1177, 18221, 1115, 18222, 2]
 // Exports: default
 
-// Module 17878 (AllChannelsSwitch)
+// Module 18220 (AllChannelsSwitch)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9179 */;
-import _modDef17879 from "module_17879" /* 17879 */;
-import _modDef17880 from "module_17880" /* 17880 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10011 */;
+import _modDef18221 from "module_18221" /* 18221 */;
+import _modDef18222 from "module_18222" /* 18222 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5605 */;
+import TextStyles_mod from "TextStyles" /* 5741 */;
 
 const require = globalThis.__r;
 
@@ -49,11 +49,11 @@ function Row(arg0) {
   return tmp5(tmp6, obj2);
 }
 const View = fn(17).View;
-const AllChannelAccessOptions = fn(15312).AllChannelAccessOptions;
+const AllChannelAccessOptions = fn(15498).AllChannelAccessOptions;
 const Fonts = fn(1074).Fonts;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, row: { alignSelf: "stretch", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", padding: 16 }, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
 let obj4 = {};
 let TextStyles = TextStyles_mod;
@@ -81,7 +81,7 @@ export default function AllChannelsSwitch(style) {
   const obj = { style: null, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   const items = [tmp.container, style.style];
   obj.style = items;
-  const obj2 = { icon: _modDef17879, label: null, selected: null, onPress: null, disabled: null };
+  const obj2 = { icon: _modDef18221, label: null, selected: null, onPress: null, disabled: null };
   const intl = util.intl;
   obj2.label = intl.string(util.t["vs2T+B"]);
   obj2.selected = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -90,7 +90,7 @@ export default function AllChannelsSwitch(style) {
   };
   obj2.disabled = disabled;
   const items1 = [closure_5(Row, obj2), closure_5(View, { style: tmp.separator }), ];
-  const obj4 = { icon: _modDef17880, label: null, selected: null, onPress: null, disabled: null };
+  const obj4 = { icon: _modDef18222, label: null, selected: null, onPress: null, disabled: null };
   const intl2 = util.intl;
   obj4.label = intl2.string(util.t.l4Tr7X);
   obj4.selected = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;

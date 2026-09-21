@@ -1,22 +1,22 @@
-// Module ID: 13826
-// Function ID: 13827
+// Module ID: 14005
+// Function ID: 14006
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 1957, 1371, 13827, 1074, 21, 4636, 576, 4632, 4788, 1114, 504, 1369, 1176, 11959, 11045, 4596, 4591, 1240, 7300, 11511, 5768, 5686, 5056, 4603, 13828, 4649, 2]
+// Dependencies: [19, 17, 2041, 1372, 14006, 1074, 21, 4756, 576, 4752, 4908, 1115, 504, 1370, 1177, 12079, 11174, 4715, 4710, 1241, 7442, 11637, 5904, 5822, 5186, 4723, 14007, 4769, 2]
 // Exports: default
 
-// Module 13826 (BlockedUserInGdmActionSheet)
+// Module 14005 (BlockedUserInGdmActionSheet)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4649 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
-import TableRow from "TableRow" /* 5686 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13828 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
+import TableRow from "TableRow" /* 5822 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 14007 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getUserCalloutRowText(arg0) {
@@ -81,22 +81,22 @@ function UserCalloutAvatars(userIds) {
   const items = [UserStore];
   const items1 = [userIds];
   const stateFromStoresArray = userIds(504).useStateFromStoresArray(items, () => userIds.map((item) => user.getUser(item)), items1);
-  let found = stateFromStoresArray.filter(userIds(1369).isNotNullish);
+  let found = stateFromStoresArray.filter(userIds(1370).isNotNullish);
   if (1 === userIds.length) {
     if (null != UserStore.getUser(userIds[0])) {
       const obj3 = { user: null, guildId: null, size: null, "aria-hidden": true };
       found = found[0];
       obj3.user = found;
       obj3.guildId = userIds.guildId;
-      REFRESH_MEDIUM_32 = tmp(1176).AvatarSizes.REFRESH_MEDIUM_32;
+      REFRESH_MEDIUM_32 = tmp(1177).AvatarSizes.REFRESH_MEDIUM_32;
       obj3.size = REFRESH_MEDIUM_32;
-      let tmp6 = closure_11(tmp(1176).Avatar, obj3);
+      let tmp6 = closure_11(tmp(1177).Avatar, obj3);
     } else {
-      tmp6 = closure_11(tmp(11959).UserIcon, {});
+      tmp6 = closure_11(tmp(12079).UserIcon, {});
     }
   } else {
-    const obj4 = { users: found, size: tmp(1176).AvatarSizes.REFRESH_MEDIUM_32 };
-    return closure_11(tmp(11045).FacepileGroupDMAvatar, obj4);
+    const obj4 = { users: found, size: tmp(1177).AvatarSizes.REFRESH_MEDIUM_32 };
+    return closure_11(tmp(11174).FacepileGroupDMAvatar, obj4);
   }
 }
 function BlockedUserInGDMDescription(arg0) {
@@ -138,12 +138,12 @@ function BlockedUserInGDMDescription(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const SharedSpaceWarningConstants = fn(13827);
+const SharedSpaceWarningConstants = fn(14006);
 ({ BlockWarningEngagements: closure_8, GdmWarningMedium: closure_9 } = SharedSpaceWarningConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_11, Fragment: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" }, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: null, buttons: null, icon: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
 obj2.tableGroup = { paddingVertical: nativeDefault.space.PX_24 };

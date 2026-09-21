@@ -1,14 +1,14 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 12815
+// Function ID: 12816
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 12695, 4545, 504, 1114, 2428, 2]
+// Dependencies: [19, 12816, 4664, 504, 1115, 2514, 2]
 // Exports: default
 
-// Module 12694 (useGuildPowerupsWarningConfig)
-import util from "util" /* 1114 */;
-import _modDef2428 from "module_2428" /* 2428 */;
+// Module 12815 (useGuildPowerupsWarningConfig)
+import util from "util" /* 1115 */;
+import _modDef2514 from "module_2514" /* 2514 */;
 import noop from "module_19" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12695 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12816 */;
 
 const require = globalThis.__r;
 
@@ -54,10 +54,10 @@ export default function useGuildPowerupsWarningConfig(arg0, arg1) {
     } else {
       obj = { shouldShow: true, title: null, description: null, requiredBoostCount: null };
       const intl = util.intl;
-      obj.title = intl.string(_modDef2428.n5hQhc);
+      obj.title = intl.string(_modDef2514.n5hQhc);
       const intl2 = util.intl;
       const obj2 = { boostCount: tmp, perksString: closure_1.join(", ") };
-      obj.description = intl2.formatToPlainString(_modDef2428.iAaAiG, obj2);
+      obj.description = intl2.formatToPlainString(_modDef2514.iAaAiG, obj2);
       obj.requiredBoostCount = tmp;
     }
     return obj;

@@ -1,10 +1,10 @@
-// Module ID: 17212
-// Function ID: 17213
+// Module ID: 17565
+// Function ID: 17566
 // Name: MobileGoLiveEntrypointExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 17212 (MobileGoLiveEntrypointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 17565 (MobileGoLiveEntrypointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { CONTROL: 0, [0]: "CONTROL", SCREENSHARE_REPLACES_CHAT: 1, [1]: "SCREENSHARE_REPLACES_CHAT", SCREENSHARE_REPLACES_SOUNDBOARD: 2, [2]: "SCREENSHARE_REPLACES_SOUNDBOARD" };

@@ -1,11 +1,11 @@
-// Module ID: 15289
-// Function ID: 15290
+// Module ID: 15475
+// Function ID: 15476
 // Name: GuildRoleSubscriptionsConstants
-// Dependencies: [1373, 1085, 2]
+// Dependencies: [1374, 1085, 2]
 
-// Module 15289 (GuildRoleSubscriptionsConstants)
+// Module 15475 (GuildRoleSubscriptionsConstants)
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1373 */;
+import PremiumConstants from "PremiumConstants" /* 1374 */;
 import size from "module_2" /* 2 */;
 
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;

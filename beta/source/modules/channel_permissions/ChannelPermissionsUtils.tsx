@@ -1,25 +1,25 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9823
+// Function ID: 9824
 // Name: ChannelPermissionsUtils
-// Dependencies: [1961, 1975, 2016, 2021, 1371, 8519, 1074, 2019, 1114, 1086, 11, 4481, 1369, 4280, 9869, 1894, 4781, 2]
+// Dependencies: [2045, 2059, 2100, 2105, 1372, 8672, 1074, 2103, 1115, 1086, 11, 4600, 1370, 4400, 9824, 1978, 4901, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9868 (ChannelPermissionsUtils)
+// Module 9823 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import util from "util" /* 1114 */;
-import Server from "Server" /* 1894 */;
-import ChannelRecord from "ChannelRecord" /* 1961 */;
-import GuildRecord from "GuildRecord" /* 1975 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2019 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import ChannelUtils from "ChannelUtils" /* 4781 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8519 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9869 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2016 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import Server from "Server" /* 1978 */;
+import ChannelRecord from "ChannelRecord" /* 2045 */;
+import GuildRecord from "GuildRecord" /* 2059 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2103 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import ChannelUtils from "ChannelUtils" /* 4901 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8672 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9824 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import UserStore from "UserStore" /* 1372 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -329,8 +329,8 @@ export const getExistingRolesRows = function getExistingRolesRows(guild, sortedG
     const intl2 = require("util").intl;
     let stringResult = intl2.string(require("util").t.nZfHsf);
     if (stringResult === undefined) {
-      const intl = tmp4(1114).intl;
-      stringResult = intl.string(tmp4(1114).t["gnsna/"]);
+      const intl = tmp4(1115).intl;
+      stringResult = intl.string(tmp4(1115).t["gnsna/"]);
     }
     let obj = { rowType: RowType.EMPTY_STATE, colorString, name: stringResult, disabled: true, id: "EMPTY_STATE" };
     const items = [obj];
@@ -391,8 +391,8 @@ export const getExistingRolesRowWithPermissionDisabled = function getExistingRol
     const intl2 = require("util").intl;
     let stringResult = intl2.string(require("util").t.nZfHsf);
     if (stringResult === undefined) {
-      const intl = tmp4(1114).intl;
-      stringResult = intl.string(tmp4(1114).t["gnsna/"]);
+      const intl = tmp4(1115).intl;
+      stringResult = intl.string(tmp4(1115).t["gnsna/"]);
     }
     let obj = { rowType: RowType.EMPTY_STATE, colorString, name: stringResult, disabled: true, id: "EMPTY_STATE" };
     const items = [obj];

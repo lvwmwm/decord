@@ -1,7 +1,9 @@
 // Module ID: 13745
 // Function ID: 13746
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 13745
+import registerAsset from "module_1121" /* 1121 */;
 
-export default { 2: "need dictionary", 1: "stream end", 0: "", "-1": "file error", "-2": "stream error", "-3": "data error", "-4": "insufficient memory", "-5": "buffer error", "-6": "incompatible version" };
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 51, height: 13, scales: [2, 3], hash: "224e933808a00a22a9d03c8af389d91f", name: "img_logo_basic_small_dark", type: "png" });

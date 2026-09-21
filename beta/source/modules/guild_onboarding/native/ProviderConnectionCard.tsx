@@ -1,15 +1,15 @@
-// Module ID: 7281
-// Function ID: 7282
+// Module ID: 7423
+// Function ID: 7424
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1074, 21, 4571, 5364, 1114, 7282, 7283, 1240, 4816, 1396, 4488, 1176, 4579, 7280, 2]
+// Dependencies: [5, 19, 1074, 21, 4690, 5500, 1115, 7424, 7425, 1241, 4936, 1397, 4607, 1177, 4698, 7422, 2]
 // Exports: default
 
-// Module 7281 (ProviderConnectionCard)
-import native from "native" /* 1176 */;
-import AvatarUtils from "AvatarUtils" /* 1396 */;
-import shared from "shared" /* 4488 */;
-import LinkIcon from "LinkIcon" /* 4579 */;
-import PlatformsDefault from "Platforms" /* 5364 */;
+// Module 7423 (ProviderConnectionCard)
+import native from "native" /* 1177 */;
+import AvatarUtils from "AvatarUtils" /* 1397 */;
+import shared from "shared" /* 4607 */;
+import LinkIcon from "LinkIcon" /* 4698 */;
+import PlatformsDefault from "Platforms" /* 5500 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -75,8 +75,8 @@ export default function ProviderConnectionCard(connection) {
               return obj3;
             } else {
               const obj4 = {};
-              const obj5 = v3(1240);
-              const merged = Object.assign(provider_id(4816).collectGuildAnalyticsMetadata(guildId));
+              const obj5 = v3(1241);
+              const merged = Object.assign(provider_id(4936).collectGuildAnalyticsMetadata(guildId));
               obj4.connection_type = "provider";
               provider_id = connection.provider_id;
               if (provider_id == null) {

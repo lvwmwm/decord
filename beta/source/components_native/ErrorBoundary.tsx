@@ -1,20 +1,20 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 14852
+// Function ID: 14853
 // Name: ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11562, 21, 4636, 504, 11923, 5056, 1114, 4347, 1230, 573, 1176, 9979, 4632, 2]
+// Dependencies: [5, 32, 19, 17, 11688, 21, 4756, 504, 12043, 5186, 1115, 4466, 1231, 573, 1177, 10105, 4752, 2]
 
-// Module 14661 (ErrorBoundary)
+// Module 14852 (ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import util from "util" /* 1114 */;
-import native from "native" /* 1176 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import AppCrash from "AppCrash" /* 9979 */;
+import util from "util" /* 1115 */;
+import native from "native" /* 1177 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import AppCrash from "AppCrash" /* 10105 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11562 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11688 */;
 
 require = fn;
 function MaybeClearBuildOverride() {
@@ -50,8 +50,8 @@ function MaybeClearBuildOverride() {
     return null;
   } else {
     const obj2 = { variant: "secondary", loading: tmp[0], text: null, onPress: null };
-    const intl = tmp2(1114).intl;
-    obj2.text = intl.string(tmp2(1114).t["/Nz9rY"]);
+    const intl = tmp2(1115).intl;
+    obj2.text = intl.string(tmp2(1115).t["/Nz9rY"]);
     obj2.onPress = function clearOverride() {
       const self = this;
       const apply = closure_1.apply;
@@ -62,7 +62,7 @@ function MaybeClearBuildOverride() {
       }
       return applyArgumentsResult;
     };
-    return closure_9(tmp2(5056).Button, obj2);
+    return closure_9(tmp2(5186).Button, obj2);
   }
   obj = require("initialize");
 }
@@ -70,7 +70,7 @@ get_ActivityIndicator = fn(17);
 ({ NativeModules: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_11 = createStyles.createLegacyClassComponentStyles({ buttons: { position: "absolute", right: 32, bottom: 32, left: 32, gap: 12 }, debugLogsContainer: { position: "absolute", right: 32, top: 64, display: "flex", flexDirection: "row", alignItems: "center", gap: 12 }, error: { marginTop: 24, textAlign: "center" }, text: { textAlign: "center" } });
 const PureComponent = noop.PureComponent;
 class ErrorBoundary extends PureComponent {
@@ -147,7 +147,7 @@ prototype["render"] = function render() {
     const obj3 = { style: tmp.buttons, children: null };
     const items1 = [React7(MaybeClearBuildOverride, {}), ];
     const obj4 = { text: null, onPress: null };
-    const intl3 = tmp3(1114).intl;
+    const intl3 = tmp3(1115).intl;
     obj4.text = intl3.string(util.t["4n8OJn"]);
     obj4.onPress = self.handleReload;
     items1[1] = React7(components_Button_Button.Button, obj4);
@@ -161,7 +161,7 @@ prototype["render"] = function render() {
   }
   return children;
 };
-ErrorBoundary.contextType = fn(4347).ThemeContext;
+ErrorBoundary.contextType = fn(4466).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/ErrorBoundary.tsx");
 

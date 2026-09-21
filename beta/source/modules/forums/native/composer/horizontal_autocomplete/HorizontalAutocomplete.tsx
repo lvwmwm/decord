@@ -1,38 +1,38 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 10884
+// Function ID: 10885
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4628, 2015, 1979, 4285, 1371, 1074, 21, 4636, 5605, 576, 4373, 5073, 4637, 504, 1176, 4632, 4481, 7290, 7308, 8241, 5109, 4789, 5668, 2]
+// Dependencies: [19, 17, 4748, 2099, 2063, 4405, 1372, 1074, 21, 4756, 5741, 576, 4492, 5203, 4757, 504, 1177, 4752, 4600, 7432, 7450, 8393, 5239, 4909, 5804, 2]
 
-// Module 10753 (HorizontalAutocomplete)
+// Module 10884 (HorizontalAutocomplete)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4373 */;
-import UserUtilsDefault from "UserUtils" /* 4481 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import timing from "timing" /* 4637 */;
-import useMountEffectDefault from "useMountEffect" /* 5073 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import RoleIconDefault from "RoleIcon" /* 7308 */;
-import _modDef8241 from "module_8241" /* 8241 */;
+import native from "native" /* 1177 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
+import UserUtilsDefault from "UserUtils" /* 4600 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import timing from "timing" /* 4757 */;
+import useMountEffectDefault from "useMountEffect" /* 5203 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import RoleIconDefault from "RoleIcon" /* 7450 */;
+import _modDef8393 from "module_8393" /* 8393 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
-import TextStyles from "TextStyles" /* 5605 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import GuildRoleStore from "GuildRoleStore" /* 2099 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 require = fn;
 function HorizontalAutocompleteOption(arg0) {
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  sharedValue = sharedValue(4373).useSharedValue(0);
+  sharedValue = sharedValue(4492).useSharedValue(0);
   useMountEffectDefault(() => {
     const result = sharedValue.set(timing.withTiming(1));
   });
-  const obj = sharedValue(4373);
+  const obj = sharedValue(4492);
   const fn = function c() {
     return { opacity: sharedValue.get() };
   };
@@ -40,7 +40,7 @@ function HorizontalAutocompleteOption(arg0) {
   fn.__workletHash = 14159604656069;
   fn.__initData = __initData;
   const obj3 = { onPress, children: null };
-  const animatedStyle = sharedValue(4373).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4492).useAnimatedStyle(fn);
   const obj4 = { style: null, children };
   const items = [tmp.horizontalAutocompleteOption, animatedStyle];
   obj4.style = items;
@@ -53,7 +53,7 @@ const Constants = fn(1074);
 ({ ChannelTypes: c10, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { emoji: { width: 32, height: 32 }, emojiImage: { resizeMode: "contain" }, emojiText: { lineHeight: 32, fontSize: 27, textAlign: "center" }, emojiName: { marginLeft: 8 }, nickname: null, status: null, horizontalAutocompleteOption: null, roleIcon: null, channelName: null };
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_DEFAULT, 14));
 obj2.nickname = {};
@@ -106,8 +106,8 @@ export default {
     const stateFromStores = initialize.useStateFromStores(items, () => GuildRoleStore.getRole(require, importDefault));
     let roleIconData = null;
     if (null != stateFromStores) {
-      roleIconData = tmp2(7290).getRoleIconData(stateFromStores, 30);
-      const tmp2Result = tmp2(7290);
+      roleIconData = tmp2(7432).getRoleIconData(stateFromStores, 30);
+      const tmp2Result = tmp2(7432);
     }
     const obj2 = { onPress: onPress.onPress, children: null };
     let tmp8 = null;
@@ -138,17 +138,17 @@ export default {
     channel(504);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = _modDef8241;
+      let channelIconWithGuild = _modDef8393;
     } else {
-      channelIconWithGuild = tmp2(5109).getChannelIconWithGuild(channel, tmp5);
-      const tmp2Result = tmp2(5109);
+      channelIconWithGuild = tmp2(5239).getChannelIconWithGuild(channel, tmp5);
+      const tmp2Result = tmp2(5239);
     }
     const tmp = closure_13();
-    const tmp8 = closure_11(channel(1176).Icon, { source: channelIconWithGuild });
+    const tmp8 = closure_11(channel(1177).Icon, { source: channelIconWithGuild });
     const obj = { onPress: channel.onPress, children: null };
     const items = [tmp8, ];
-    const channelName = channel(4789).computeChannelName(channel, UserStore, RelationshipStore);
-    items[1] = closure_11(channel(4632).Text, { style: tmp.channelName, variant: "text-sm/semibold", children: channelName });
+    const channelName = channel(4909).computeChannelName(channel, UserStore, RelationshipStore);
+    items[1] = closure_11(channel(4752).Text, { style: tmp.channelName, variant: "text-sm/semibold", children: channelName });
     obj.children = items;
     return closure_12(HorizontalAutocompleteOption, obj);
   },

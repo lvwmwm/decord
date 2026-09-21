@@ -1,9 +1,9 @@
 // Module ID: 16558
 // Function ID: 16559
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 16558
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/icymi/native/images", width: 24.5, height: 24, scales: [2, 3], hash: "684bf0782561b9ed2466dcb8144cf582", name: "emoji-neutral", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "01ba5b6e261b3f78c312695fe4f7b0d7", name: "BoostTier2Icon", type: "png" });

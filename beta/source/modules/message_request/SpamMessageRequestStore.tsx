@@ -1,10 +1,10 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7465
+// Function ID: 7466
 // Name: SpamMessageRequestStore
-// Dependencies: [1957, 1073, 2]
+// Dependencies: [2041, 1073, 2]
 
-// Module 7323 (SpamMessageRequestStore)
-import ChannelStore from "ChannelStore" /* 1957 */;
+// Module 7465 (SpamMessageRequestStore)
+import ChannelStore from "ChannelStore" /* 2041 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
 
 function processChannel(isSpam) {

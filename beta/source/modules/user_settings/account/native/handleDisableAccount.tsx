@@ -1,15 +1,15 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 15088
+// Function ID: 15089
 // Name: handleDisableAccount
-// Dependencies: [1979, 1371, 1114, 7087, 14885, 4980, 2]
+// Dependencies: [2063, 1372, 1115, 7229, 15073, 5108, 2]
 // Exports: default
 
-// Module 14900 (handleDisableAccount)
-import util from "util" /* 1114 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14885 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 15088 (handleDisableAccount)
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15073 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);
@@ -30,9 +30,9 @@ export default function handleDisableAccount() {
   const string = intl.string;
   const t = util.t;
   if (someResult) {
-    const intl4 = tmp4(1114).intl;
+    const intl4 = tmp4(1115).intl;
     const stringResult = string(t.vJiTOL);
-    const stringResult1 = intl4.string(tmp4(1114).t.UyVVan);
+    const stringResult1 = intl4.string(tmp4(1115).t.UyVVan);
     const obj = { title: stringResult, body: stringResult1 };
     AlertActionCreatorsDefault.show(obj);
   } else {
@@ -40,22 +40,22 @@ export default function handleDisableAccount() {
     const obj2 = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     if (flag) {
       obj2.onSubmit = function onSubmit(password) {
-        return currentUser(7087).disableAccount(password, true);
+        return currentUser(7229).disableAccount(password, true);
       };
-      const intl3 = tmp4(1114).intl;
-      obj2.title = intl3.string(tmp4(1114).t["8lQ2rR"]).toUpperCase();
+      const intl3 = tmp4(1115).intl;
+      obj2.title = intl3.string(tmp4(1115).t["8lQ2rR"]).toUpperCase();
       obj2.placeholder = formatted;
       let tmp8 = obj2;
-      const str3 = intl3.string(tmp4(1114).t["8lQ2rR"]);
+      const str3 = intl3.string(tmp4(1115).t["8lQ2rR"]);
     } else {
       obj2.onSubmit = function onSubmit(password) {
-        return currentUser(7087).disableAccount(password, false);
+        return currentUser(7229).disableAccount(password, false);
       };
-      const intl2 = tmp4(1114).intl;
-      obj2.title = intl2.string(tmp4(1114).t.jf5GGb).toUpperCase();
+      const intl2 = tmp4(1115).intl;
+      obj2.title = intl2.string(tmp4(1115).t.jf5GGb).toUpperCase();
       obj2.placeholder = formatted;
       tmp8 = obj2;
-      const str2 = intl2.string(tmp4(1114).t.jf5GGb);
+      const str2 = intl2.string(tmp4(1115).t.jf5GGb);
     }
     showUserSettingsInputAlertDefault(tmp8);
     const str = string(t["CIGa+7"]);

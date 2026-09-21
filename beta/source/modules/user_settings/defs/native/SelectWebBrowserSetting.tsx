@@ -1,14 +1,14 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 15751
+// Function ID: 15752
 // Name: SelectWebBrowserSetting
-// Dependencies: [8079, 4601, 1114, 1093, 1363, 11605, 2]
+// Dependencies: [8233, 4720, 1115, 1094, 1364, 11725, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 15563 (SelectWebBrowserSetting)
-import util from "util" /* 1114 */;
-import BrowserManager from "BrowserManager" /* 4601 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15751 (SelectWebBrowserSetting)
+import util from "util" /* 1115 */;
+import BrowserManager from "BrowserManager" /* 4720 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 function useWebBrowserSettingOptions() {
@@ -17,36 +17,36 @@ function useWebBrowserSettingOptions() {
   const browserManagerIsChromeInstalled = BrowserManager.useBrowserManagerIsChromeInstalled();
   if (obj2.useBrowserManagerSupportsInAppBrowser()) {
     const obj3 = { label: null, value: null };
-    const intl = tmp(1114).intl;
-    obj3.label = intl.string(tmp(1114).t.YayR6P);
-    obj3.value = tmp(1093).WebBrowserType.IN_APP;
+    const intl = tmp(1115).intl;
+    obj3.label = intl.string(tmp(1115).t.YayR6P);
+    obj3.value = tmp(1094).WebBrowserType.IN_APP;
     items.push(obj3);
   }
   obj2 = BrowserManager;
   if (!tmpResult.isAndroid()) {
     const obj4 = { label: null, value: null };
-    const intl2 = tmp(1114).intl;
-    obj4.label = intl2.string(tmp(1114).t.kEfv89);
-    obj4.value = tmp(1093).WebBrowserType.SAFARI;
+    const intl2 = tmp(1115).intl;
+    obj4.label = intl2.string(tmp(1115).t.kEfv89);
+    obj4.value = tmp(1094).WebBrowserType.SAFARI;
     items.push(obj4);
   }
   if (!browserManagerIsChromeInstalled) {
     return items;
   } else {
-    const tmpResult2 = tmp(1363);
-    const intl3 = tmp(1114).intl;
+    const tmpResult2 = tmp(1364);
+    const intl3 = tmp(1115).intl;
     const string = intl3.string;
-    let t = tmp(1114).t;
+    let t = tmp(1115).t;
     if (isAndroidResult) {
       let stringResult = string(t.kEfv89);
     } else {
       stringResult = string(t.FfjVVt);
     }
     const obj5 = { label: stringResult, value: null };
-    CHROME = tmp(1093).WebBrowserType.CHROME;
+    CHROME = tmp(1094).WebBrowserType.CHROME;
     obj5.value = CHROME;
     t = items.push(obj5);
-    isAndroidResult = tmp(1363).isAndroid();
+    isAndroidResult = tmp(1364).isAndroid();
   }
 }
 const radio = SettingBuilders.createRadio({

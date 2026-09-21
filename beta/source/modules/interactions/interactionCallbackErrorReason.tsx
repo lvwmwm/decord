@@ -1,13 +1,13 @@
-// Module ID: 4863
-// Function ID: 4864
+// Module ID: 4982
+// Function ID: 4983
 // Name: interactionCallbackErrorReason
-// Dependencies: [4864, 4865, 1114, 2]
+// Dependencies: [4983, 4984, 1115, 2]
 // Exports: interactionCallbackErrorReason
 
-// Module 4863 (interactionCallbackErrorReason)
-import util from "util" /* 1114 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 4865 */;
-import ApplicationStore from "ApplicationStore" /* 4864 */;
+// Module 4982 (interactionCallbackErrorReason)
+import util from "util" /* 1115 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 4984 */;
+import ApplicationStore from "ApplicationStore" /* 4983 */;
 
 require = fn;
 const size = fn(2);
@@ -25,32 +25,32 @@ export const interactionCallbackErrorReason = function interactionCallbackErrorR
       formatToPlainStringResult = intl10.string(util.t["vGU8+r"]);
     }
     return formatToPlainStringResult;
-  } else if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_NOT_IN_EXPERIMENT === reason) {
+  } else if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_NOT_IN_EXPERIMENT === reason) {
     const intl9 = util.intl;
     return intl9.string(util.t.GyzcrS);
   } else {
-    if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_VERIFICATION_LEVEL !== reason) {
-      if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_PERMISSIONS !== reason) {
-        if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_CHANNEL !== reason) {
-          if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_GUILD !== reason) {
-            if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_TYPE !== reason) {
-              if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_NO_AFK !== reason) {
-                if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_AGE_GATE === reason) {
+    if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_VERIFICATION_LEVEL !== reason) {
+      if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_PERMISSIONS !== reason) {
+        if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_CHANNEL !== reason) {
+          if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_UNKNOWN_GUILD !== reason) {
+            if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_TYPE !== reason) {
+              if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CHANNEL_NO_AFK !== reason) {
+                if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_AGE_GATE === reason) {
                   const intl6 = util.intl;
                   return intl6.string(util.t["4WuFRE"]);
-                } else if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_DEV_PREVIEW_GUILD_SIZE === reason) {
+                } else if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_DEV_PREVIEW_GUILD_SIZE === reason) {
                   const intl5 = util.intl;
                   return intl5.string(util.t.RvkXdb);
                 } else {
-                  if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_SUPPORTED !== reason) {
-                    if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_RELEASED !== reason) {
-                      if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_NO_ACCESS_TO_ACTIVITY === reason) {
+                  if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_SUPPORTED !== reason) {
+                    if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_CONFIGURATION_PLATFORM_NOT_RELEASED !== reason) {
+                      if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_NO_ACCESS_TO_ACTIVITY === reason) {
                         const intl3 = util.intl;
                         return intl3.string(util.t.WjNAAA);
-                      } else if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_LOCATION_TYPE === reason) {
+                      } else if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_LOCATION_TYPE === reason) {
                         const intl2 = util.intl;
                         return intl2.string(util.t.PtobXW);
-                      } else if (tmp(4865).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION === reason) {
+                      } else if (tmp(4984).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION === reason) {
                         const intl = util.intl;
                         return intl.string(util.t.PrHIM5);
                       }

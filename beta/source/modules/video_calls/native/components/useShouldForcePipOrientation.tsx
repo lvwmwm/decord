@@ -1,19 +1,19 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 9658
+// Function ID: 9659
 // Name: useShouldForcePipOrientation
-// Dependencies: [1956, 4652, 502, 1920, 4657, 9620, 504, 9606, 8450, 2]
+// Dependencies: [2040, 4772, 502, 2004, 4777, 9659, 504, 9616, 8603, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 9619 (useShouldForcePipOrientation)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9606 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9620 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+// Module 9658 (useShouldForcePipOrientation)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9616 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9659 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const OrientationLockState = fn(1920).OrientationLockState;
-const CallConstants = fn(4657);
+const OrientationLockState = fn(2004).OrientationLockState;
+const CallConstants = fn(4777);
 ({ isStreamParticipant: closure_7, ParticipantTypes: closure_8 } = CallConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/useShouldForcePipOrientation.tsx");
@@ -83,17 +83,17 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != focusedEmbeddedActivityParticipant) {
     if (closure_7(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return tmp2(8450).OrientationType.LANDSCAPE;
+        return tmp2(8603).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    OrientationType = tmp2(8450).OrientationType;
+    OrientationType = tmp2(8603).OrientationType;
     let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === tmp8.PORTRAIT) {
-      LANDSCAPE = tmp2(8450).OrientationType.PORTRAIT;
+      LANDSCAPE = tmp2(8603).OrientationType.PORTRAIT;
     }
   }
 };

@@ -1,23 +1,23 @@
-// Module ID: 16760
-// Function ID: 16761
+// Module ID: 17121
+// Function ID: 17122
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4628, 4676, 4285, 1074, 21, 4636, 576, 4632, 4481, 11008, 504, 9568, 1176, 9883, 13592, 16761, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 4796, 4405, 1074, 21, 4756, 576, 4752, 4600, 11138, 504, 9552, 1177, 9841, 13766, 17122, 2]
 
-// Module 16760 (DMRow)
+// Module 17121 (DMRow)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import UserUtils from "UserUtils" /* 4481 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import BotTagDefault from "BotTag" /* 9568 */;
-import _modDef9883 from "module_9883" /* 9883 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11008 */;
-import _modDef13592 from "module_13592" /* 13592 */;
+import native from "native" /* 1177 */;
+import UserUtils from "UserUtils" /* 4600 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import BotTagDefault from "BotTag" /* 9552 */;
+import _modDef9841 from "module_9841" /* 9841 */;
+import ActivityStatusDefault from "ActivityStatus" /* 11138 */;
+import _modDef13766 from "module_13766" /* 13766 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import PresenceStore from "PresenceStore" /* 4676 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import PresenceStore from "PresenceStore" /* 4796 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
 
 const UserUtilsDefault = UserUtils;
 
@@ -42,7 +42,7 @@ const Constants = fn(1074);
 ({ StatusTypes: closure_11, RelationshipTypes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { activityStatusIcon: { width: 14, height: 14 }, activityStatusText: { color: nativeDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18, fontWeight: "400" }, tag: { marginLeft: 4 }, title: { flexDirection: "row" } };
 let closure_15 = createStyles.createStyles(obj);
 let obj3 = { color: nativeDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18, fontWeight: "400" };
@@ -166,16 +166,16 @@ export default noop.memo(function DMRow(user) {
       let tmp4Result = isOwner;
       if (isOwner) {
         const obj4 = { style: tmp3.tag, children: null };
-        const obj5 = { size: tmp5(1176).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9883, disableColor: true };
-        obj4.children = tmp4(tmp5(1176).Icon, obj5);
+        const obj5 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9841, disableColor: true };
+        obj4.children = tmp4(tmp5(1177).Icon, obj5);
         tmp4Result = tmp4(tmp2, obj4);
       }
       items[2] = tmp4Result;
       let tmp4Result3 = null != premiumSince;
       if (tmp4Result3) {
         const obj6 = { style: tmp3.tag, children: null };
-        const obj7 = { size: tmp5(1176).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13592, disableColor: true };
-        obj6.children = tmp4(tmp5(1176).Icon, obj7);
+        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13766, disableColor: true };
+        obj6.children = tmp4(tmp5(1177).Icon, obj7);
         tmp4Result3 = tmp4(tmp2, obj6);
       }
       items[3] = tmp4Result3;

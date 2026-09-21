@@ -1,14 +1,14 @@
-// Module ID: 4311
-// Function ID: 4312
+// Module ID: 4431
+// Function ID: 4432
 // Name: BraintreeStore
-// Dependencies: [1074, 1363, 1270, 504, 573, 2]
+// Dependencies: [1074, 1364, 1271, 504, 573, 2]
 
-// Module 4311 (BraintreeStore)
+// Module 4431 (BraintreeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
 import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 ({ Endpoints: closure_4, PaymentGateways: hasOwnProperty, PaymentSourceTypes: metroRequire } = Constants);

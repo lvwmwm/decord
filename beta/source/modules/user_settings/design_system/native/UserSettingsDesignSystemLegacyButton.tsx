@@ -1,15 +1,15 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 16075
+// Function ID: 16076
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1176, 4632, 5056, 4636, 576, 5054, 8716, 2]
+// Dependencies: [19, 17, 21, 1177, 4752, 5186, 4756, 576, 5184, 8871, 2]
 // Exports: default
 
-// Module 15852 (UserSettingsDesignSystemLegacyButton)
+// Module 16075 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import Form from "Form" /* 8716 */;
+import native from "native" /* 1177 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import Form from "Form" /* 8871 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,8 +20,8 @@ function ComparisonRow(entry) {
   const combined = "" + entry.color;
   let redesignVariant = null;
   if (entry.look !== native.ButtonLooks.LINK) {
-    redesignVariant = tmp4(1176).getRedesignVariant(entry.color);
-    const tmp4Result = tmp4(1176);
+    redesignVariant = tmp4(1177).getRedesignVariant(entry.color);
+    const tmp4Result = tmp4(1177);
   }
   items = [tmp.comparisonRow, ];
   let darkBg = hasItem;
@@ -50,7 +50,7 @@ function ComparisonRow(entry) {
   let darkText = null;
   if (hasItem) {
     darkText = null;
-    if (entry.look === tmp4(1176).ButtonLooks.FILLED) {
+    if (entry.look === tmp4(1177).ButtonLooks.FILLED) {
       darkText = tmp.darkText;
     }
   }
@@ -63,7 +63,7 @@ function ComparisonRow(entry) {
   const items4 = [React4(React3, obj4), ];
   if (null != redesignVariant) {
     const obj6 = { style: tmp.comparisonSide, children: null };
-    const items5 = [tmp9(tmp4(4632).Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
+    const items5 = [tmp9(tmp4(4752).Text, { variant: "text-xxs/medium", color: "text-muted", children: "mana" }), ];
     const obj7 = {
       variant: redesignVariant,
       size: "md",
@@ -72,11 +72,11 @@ function ComparisonRow(entry) {
 
         }
     };
-    items5[1] = tmp9(tmp4(5056).Button, obj7);
+    items5[1] = tmp9(tmp4(5186).Button, obj7);
     obj6.children = items5;
     let tmp9Result = tmp7(tmp8, obj6);
   } else {
-    const obj8 = { style: tmp.comparisonSide, children: tmp9(tmp4(4632).Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
+    const obj8 = { style: tmp.comparisonSide, children: tmp9(tmp4(4752).Text, { variant: "text-xs/medium", color: "text-muted", children: "no mapping" }) };
     tmp9Result = tmp9(tmp8, obj8);
   }
   items4[1] = tmp9Result;
@@ -114,7 +114,7 @@ function ComboRow(combo) {
   let darkText = null;
   if (hasItem) {
     darkText = null;
-    if (combo.look === tmp6(1176).ButtonLooks.FILLED) {
+    if (combo.look === tmp6(1177).ButtonLooks.FILLED) {
       darkText = tmp.darkText;
     }
   }
@@ -130,92 +130,92 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsxs: closure_4, jsx: hasOwnProperty } = jsxProd);
-let items = [{ look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.LARGE, shrink: false, count: 1 }, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
-let obj = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.LARGE, shrink: false, count: 1 };
-items[1] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 116 };
-let obj2 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 116 };
-items[2] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 12 };
-let obj3 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 12 };
-items[3] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 5 };
-let obj4 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 5 };
-items[4] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 2 };
-let obj5 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 2 };
-items[5] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 4 };
-let obj6 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 4 };
-items[6] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.XSMALL, shrink: true, count: 1 };
-let obj7 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.XSMALL, shrink: true, count: 1 };
-items[7] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-let obj8 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-items[8] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-const obj9 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-items[9] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 1 };
-const obj10 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 1 };
-items[10] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj11 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREEN, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[11] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 10 };
-const obj12 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 10 };
-items[12] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-const obj13 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-items[13] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 2 };
-const obj14 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 2 };
-items[14] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 1 };
-const obj15 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 1 };
-items[15] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj16 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[16] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.LIGHTGREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 2 };
-const obj17 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.LIGHTGREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 2 };
-items[17] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.LIGHTGREY, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj18 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.LIGHTGREY, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[18] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 2 };
-const obj19 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 2 };
-items[19] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 2 };
-const obj20 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 2 };
-items[20] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 2 };
-const obj21 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 2 };
-items[21] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.RED, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 8 };
-const obj22 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.RED, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 8 };
-items[22] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.RED, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-const obj23 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.RED, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-items[23] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.RED, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj24 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.RED, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[24] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 8 };
-const obj25 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 8 };
-items[25] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 3 };
-const obj26 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 3 };
-items[26] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj27 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[27] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.XSMALL, shrink: true, count: 1 };
-const obj28 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.XSMALL, shrink: true, count: 1 };
-items[28] = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.WHITE, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 1 };
-const obj29 = { look: fn(1176).ButtonLooks.FILLED, color: fn(1176).ButtonColors.WHITE, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 1 };
-items[29] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.XSMALL, shrink: true, count: 1 };
-const obj30 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.XSMALL, shrink: true, count: 1 };
-items[30] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 3 };
-const obj31 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 3 };
-items[31] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-const obj32 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.MEDIUM, shrink: true, count: 1 };
-items[32] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 2 };
-const obj33 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 2 };
-items[33] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 1 };
-const obj34 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.SMALL, shrink: true, count: 1 };
-items[34] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj35 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.LINK, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[35] = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-const obj36 = { look: fn(1176).ButtonLooks.LINK, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.XSMALL, shrink: false, count: 1 };
-items[36] = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 2 };
-const obj37 = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.BRAND, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 2 };
-items[37] = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-const obj38 = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.GREY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-items[38] = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-const obj39 = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.PRIMARY, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-items[39] = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-const obj40 = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.TRANSPARENT, size: fn(1176).ButtonSizes.MEDIUM, shrink: false, count: 1 };
-items[40] = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.WHITE, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 1 };
-let items1 = [fn(1176).ButtonColors.WHITE];
+let items = [{ look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.LARGE, shrink: false, count: 1 }, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+let obj = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.LARGE, shrink: false, count: 1 };
+items[1] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 116 };
+let obj2 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 116 };
+items[2] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 12 };
+let obj3 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 12 };
+items[3] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 5 };
+let obj4 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 5 };
+items[4] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 2 };
+let obj5 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 2 };
+items[5] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 4 };
+let obj6 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 4 };
+items[6] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.XSMALL, shrink: true, count: 1 };
+let obj7 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.XSMALL, shrink: true, count: 1 };
+items[7] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+let obj8 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+items[8] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+const obj9 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+items[9] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 1 };
+const obj10 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 1 };
+items[10] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj11 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREEN, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[11] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 10 };
+const obj12 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 10 };
+items[12] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+const obj13 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+items[13] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 2 };
+const obj14 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 2 };
+items[14] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 1 };
+const obj15 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 1 };
+items[15] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj16 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[16] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.LIGHTGREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 2 };
+const obj17 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.LIGHTGREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 2 };
+items[17] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.LIGHTGREY, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj18 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.LIGHTGREY, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[18] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 2 };
+const obj19 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 2 };
+items[19] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 2 };
+const obj20 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 2 };
+items[20] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 2 };
+const obj21 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 2 };
+items[21] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.RED, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 8 };
+const obj22 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.RED, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 8 };
+items[22] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.RED, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+const obj23 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.RED, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+items[23] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.RED, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj24 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.RED, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[24] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 8 };
+const obj25 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 8 };
+items[25] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 3 };
+const obj26 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 3 };
+items[26] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj27 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[27] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.XSMALL, shrink: true, count: 1 };
+const obj28 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.XSMALL, shrink: true, count: 1 };
+items[28] = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.WHITE, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 1 };
+const obj29 = { look: fn(1177).ButtonLooks.FILLED, color: fn(1177).ButtonColors.WHITE, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 1 };
+items[29] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.XSMALL, shrink: true, count: 1 };
+const obj30 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.XSMALL, shrink: true, count: 1 };
+items[30] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 3 };
+const obj31 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 3 };
+items[31] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+const obj32 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.MEDIUM, shrink: true, count: 1 };
+items[32] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 2 };
+const obj33 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 2 };
+items[33] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 1 };
+const obj34 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.SMALL, shrink: true, count: 1 };
+items[34] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj35 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.LINK, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[35] = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+const obj36 = { look: fn(1177).ButtonLooks.LINK, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.XSMALL, shrink: false, count: 1 };
+items[36] = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 2 };
+const obj37 = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.BRAND, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 2 };
+items[37] = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+const obj38 = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.GREY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+items[38] = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+const obj39 = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.PRIMARY, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+items[39] = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+const obj40 = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.TRANSPARENT, size: fn(1177).ButtonSizes.MEDIUM, shrink: false, count: 1 };
+items[40] = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.WHITE, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 1 };
+let items1 = [fn(1177).ButtonColors.WHITE];
 let set = new Set(items1);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj43 = { comboRow: null, darkText: null, darkBg: null, comparisonRow: null, comparisonButtons: null, comparisonSide: null, container: null, header: null };
-const obj41 = { look: fn(1176).ButtonLooks.OUTLINED, color: fn(1176).ButtonColors.WHITE, size: fn(1176).ButtonSizes.SMALL, shrink: false, count: 1 };
+const obj41 = { look: fn(1177).ButtonLooks.OUTLINED, color: fn(1177).ButtonColors.WHITE, size: fn(1177).ButtonSizes.SMALL, shrink: false, count: 1 };
 obj43.comboRow = { gap: 4, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_4 };
 const obj44 = { gap: 4, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_4 };
 obj43.darkText = { color: nativeDefault.unsafe_rawColors.GREEN_360 };

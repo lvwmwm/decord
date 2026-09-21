@@ -1,31 +1,31 @@
-// Module ID: 16150
-// Function ID: 16151
+// Module ID: 16392
+// Function ID: 16393
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4636, 1477, 1483, 8894, 1248, 5207, 15181, 16151, 4632, 1114, 5056, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 1478, 1484, 9048, 1249, 5342, 15367, 16393, 4752, 1115, 5186, 2]
 // Exports: default
 
-// Module 16150 (MessagesEmptyState)
-import util from "util" /* 1114 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import useNavigation from "useNavigation" /* 1483 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5207 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8894 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15181 */;
+// Module 16392 (MessagesEmptyState)
+import util from "util" /* 1115 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import useNavigation from "useNavigation" /* 1484 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5342 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9048 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15367 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const _modDef16151 = tmp2(16151);
+const _modDef16393 = tmp2(16393);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_10 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center" }, scrollViewContentContainer: { flexGrow: 2 }, innerContainer: { alignItems: "center", justifyContent: "center" }, imageContainer: { alignItems: "center", marginBottom: 24 }, textWrapper: { paddingHorizontal: 48 }, body: { marginBottom: 24, textAlign: "center" }, title: { textAlign: "center", fontSize: 18, marginBottom: 8 }, buttonWrapper: { paddingHorizontal: 16, paddingBottom: 16 } });
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesEmptyState.tsx");
@@ -64,7 +64,7 @@ export default function MessagesEmptyState() {
   const obj5 = { style: tmp.container, onLayout: callback, children: null };
   const obj6 = { style: tmp.innerContainer, children: null };
   const obj7 = { style: tmp.imageContainer, children: null };
-  const obj8 = { resizeMode: "contain", source: _modDef16151, style: null };
+  const obj8 = { resizeMode: "contain", source: _modDef16393, style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;
@@ -75,11 +75,11 @@ export default function MessagesEmptyState() {
   const items2 = [React6(hasOwnProperty, obj7), ];
   const obj9 = { style: tmp.textWrapper, children: null };
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp.title, children: null };
-  const intl = tmp7(1114).intl;
+  const intl = tmp7(1115).intl;
   obj10.children = intl.string(util.t["8JZof8"]);
   const items3 = [React6(Text_Text.Heading, obj10), ];
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.body, children: null };
-  const intl2 = tmp7(1114).intl;
+  const intl2 = tmp7(1115).intl;
   obj11.children = intl2.string(util.t["qm+H7x"]);
   items3[1] = React6(Text_Text.Text, obj11);
   obj9.children = items3;
@@ -88,7 +88,7 @@ export default function MessagesEmptyState() {
   const items4 = [React7(hasOwnProperty, obj6), ];
   const obj12 = { style: tmp.buttonWrapper, children: null };
   const obj13 = { text: null, onPress: null, size: "lg" };
-  const intl3 = tmp7(1114).intl;
+  const intl3 = tmp7(1115).intl;
   obj13.text = intl3.string(util.t.zIJnA6);
   obj13.onPress = callback1;
   obj12.children = React6(components_Button_Button.Button, obj13);

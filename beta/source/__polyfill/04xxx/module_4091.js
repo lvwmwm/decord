@@ -1,40 +1,16 @@
 // Module ID: 4091
 // Function ID: 4092
-// Dependencies: [3873, 3906, 3726]
-// Exports: default
+// Dependencies: [2111]
 
 // Module 4091
-import module_3873_mod from "module_3873" /* 3873 */;
-import module_3906_mod from "module_3906" /* 3906 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import code from "module_2111" /* 2111 */;
 
-let module_3873 = module_3873_mod;
-if (!module_3873) {
-  const obj = { default: module_3873 };
+if (!code) {
+  const obj = { default: code };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3873;
+  tmp3 = code;
 }
-module_3873 = tmp3;
-let module_3906 = module_3906_mod;
-if (!module_3906) {
-  const obj2 = { default: module_3906 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3906;
-}
-module_3906 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
 
-export default function isTomorrow(arg0) {
-  requiredArgs.default(1, arguments);
-  return module_3906.default(arg0, module_3873.default(Date.now(), 1));
-};
+export default tmp3.default;
 export default exports.default;

@@ -1,13 +1,13 @@
-// Module ID: 6584
-// Function ID: 6585
+// Module ID: 6724
+// Function ID: 6725
 // Name: SpinningGem3dIllustration
-// Dependencies: [21, 5668, 6585, 2]
+// Dependencies: [21, 5804, 6725, 2]
 // Exports: SpinningGem3dIllustration
 
-// Module 6584 (SpinningGem3dIllustration)
+// Module 6724 (SpinningGem3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5668 */;
-import _modDef6585 from "module_6585" /* 6585 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6725 from "module_6725" /* 6725 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SpinningGem3dIllustration = function SpinningGem3dIllustration(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6585 };
+  const obj2 = { uri: _modDef6725 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

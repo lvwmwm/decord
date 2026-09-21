@@ -1,17 +1,17 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11840
+// Function ID: 11841
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1957, 4275, 4285, 1371, 10342, 1074, 21, 4636, 563, 9868, 7152, 11723, 11732, 11733, 1114, 10160, 10161, 4457, 1943, 11735, 11740, 7483, 11741, 1874, 9950, 8718, 2]
+// Dependencies: [32, 19, 17, 2041, 4395, 4405, 1372, 10471, 1074, 21, 4756, 563, 9823, 7294, 11841, 11850, 11851, 1115, 10288, 10289, 4576, 2027, 11853, 11858, 7622, 11859, 1875, 10076, 8873, 2]
 // Exports: default
 
-// Module 11722 (useMemberListAction)
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11723 */;
+// Module 11840 (useMemberListAction)
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11841 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -20,9 +20,9 @@ const View = fn(17).View;
 const Constants = fn(1074);
 ({ Permissions: c10, AnalyticsSections: closure_11, InstantInviteSources: closure_12 } = Constants);
 const jsx = fn(21).jsx;
-let closure_14 = { listActionRenderer: "icon", listActionHeight: "call" };
-const createStyles = fn(4636);
-let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(10342).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
+let closure_14 = { listActionRenderer: "paths", listActionHeight: "scales" };
+const createStyles = fn(4756);
+let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(10471).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

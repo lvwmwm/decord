@@ -1,14 +1,14 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15789
+// Function ID: 15790
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [8079, 11605, 1114, 1935, 15601, 2]
+// Dependencies: [8233, 11725, 1115, 2019, 15790, 2]
 
-// Module 15600 (SummaryReminderNotificationSetting)
-import util from "util" /* 1114 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15601 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15789 (SummaryReminderNotificationSetting)
+import util from "util" /* 1115 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15790 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

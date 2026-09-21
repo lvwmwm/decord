@@ -1,16 +1,16 @@
-// Module ID: 13284
-// Function ID: 13285
+// Module ID: 13454
+// Function ID: 13455
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 1074, 1373, 7265, 7525, 2]
+// Dependencies: [19, 1074, 1374, 7407, 7664, 2]
 // Exports: default
 
-// Module 13284 (useOpenNitroSubscribeActionSheet)
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7525 */;
+// Module 13454 (useOpenNitroSubscribeActionSheet)
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7664 */;
 import noop from "module_19" /* 19 */;
 
 const Constants = fn(1074);
 ({ AnalyticsPages: c3, AnalyticsSections: closure_4 } = Constants);
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/useOpenNitroSubscribeActionSheet.tsx");
 

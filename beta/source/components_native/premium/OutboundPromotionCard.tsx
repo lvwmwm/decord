@@ -1,18 +1,18 @@
-// Module ID: 13646
-// Function ID: 13647
+// Module ID: 13821
+// Function ID: 13822
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1074, 21, 4636, 576, 5522, 7253, 7252, 1114, 4632, 4626, 4571, 13511, 13647, 4981, 13648, 1896, 13509, 5056, 4603, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 5658, 7395, 7394, 1115, 4752, 4746, 4690, 13690, 13822, 5109, 13823, 1980, 13688, 5186, 4723, 2]
 // Exports: default
 
-// Module 13646 (OutboundPromotionCard)
+// Module 13821 (OutboundPromotionCard)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4626 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7252 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
+import util from "util" /* 1115 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4746 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,9 +33,9 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { card: { flex: 1, flexDirection: "column", paddingHorizontal: fn(1074).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 }, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: null, image: null, title: null, subText: null, claimButton: null, moreDetails: null, termsAndConditionsText: null, buttonContainer: null };
-let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5522).DARK_BLACK_500_LIGHT_PRIMARY_100 };
+let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5658).DARK_BLACK_500_LIGHT_PRIMARY_100 };
 obj2.imageContainer = size;
 obj2.image = { width: 28, height: 28, resizeMode: "contain" };
 obj2.title = { lineHeight: 20 };
@@ -93,7 +93,8 @@ export default function OutboundPromotionCard(outboundPromotion) {
                 return closure_3_7(closure_0, obj);
               };
             });
-          }
+          },
+        isDismissable: false
       };
       actions_AlertActionCreatorsDefault.openLazy(obj2);
     }

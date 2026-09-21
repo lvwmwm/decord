@@ -1,17 +1,17 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8184
+// Function ID: 8185
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7698, 7700, 1074, 21, 4636, 576, 1483, 504, 8011, 8027, 8013, 5688, 4632, 1114, 5745, 5068, 8031, 8032, 8035, 2]
+// Dependencies: [19, 17, 7840, 7837, 1074, 21, 4756, 576, 1484, 504, 8151, 8167, 8153, 5824, 4752, 1115, 5881, 5198, 8185, 8186, 8189, 2]
 
-// Module 8030 (ConversationListItem)
+// Module 8184 (ConversationListItem)
 import nativeDefault from "native" /* 576 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 8011 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8013 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8027 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8032 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8035 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 8151 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8153 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8167 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8186 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8189 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7698 */;
+import ConversationsStore from "ConversationsStore" /* 7840 */;
 
 require = fn;
 function ConversationListItemBase(conversation) {
@@ -39,7 +39,7 @@ function ConversationListItemBase(conversation) {
   const items3 = [navigation, , , , ];
   ({ channelId: arr5[1], guildId: arr5[2], id: arr5[3], title: arr5[4] } = conversation);
   const callback = noop.useCallback(() => {
-    const conversationMessages = ConversationsActionCreators.fetchConversationMessages(conversation.channelId, conversation.guildId, conversation.id, { includeReactions: true, includeMessageReferences: true });
+    const conversationMessages = ConversationsActionCreators.fetchConversationMessages(conversation.channelId, conversation.id, { includeReactions: true, includeMessageReferences: true });
     navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title });
     const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
     const result = ConversationsAnalytics.trackTopicsUnitClicked({ channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false });
@@ -92,13 +92,13 @@ function ConversationListItemBase(conversation) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-let closure_6 = fn(7700).MOBILE_PREVIEW_MESSAGE_COUNT;
+let closure_6 = fn(7837).MOBILE_PREVIEW_MESSAGE_COUNT;
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const colors = ["black", "black"];
 const colors2 = ["black", "transparent"];
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { card: { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 }, title: { flexShrink: 1, minWidth: 0 }, timestamp: { flexShrink: 0 }, headerContainer: null, previewsMask: null, previews: null, maskColumn: null, maskOpaque: null, maskFade: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 };
 obj.headerContainer = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };

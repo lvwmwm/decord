@@ -1,28 +1,28 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 15157
+// Function ID: 15158
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7640, 7641, 21, 4636, 576, 563, 4603, 14970, 7253, 4632, 1114, 2396, 14971, 5056, 2]
+// Dependencies: [19, 17, 7779, 7780, 21, 4756, 576, 563, 4723, 15158, 7395, 4752, 1115, 2482, 15159, 5186, 2]
 // Exports: default
 
-// Module 14969 (ConnectGuardianBottomSheet)
+// Module 15157 (ConnectGuardianBottomSheet)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
-import _modDef2396 from "module_2396" /* 2396 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14970 */;
-import ConnectGuardianCard from "ConnectGuardianCard" /* 14971 */;
+import _modDef2482 from "module_2482" /* 2482 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15158 */;
+import ConnectGuardianCard from "ConnectGuardianCard" /* 15159 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7641).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
+let closure_6 = fn(7780).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, info: null, centered: null, cardContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 obj2.info = { alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -48,15 +48,15 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const obj4 = { style: tmp.info, children: null };
   const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   if (title == null) {
-    const intl = tmp2(1114).intl;
-    title = intl.string(tmp7(2396).aCUVfL);
+    const intl = tmp2(1115).intl;
+    title = intl.string(tmp7(2482).aCUVfL);
   }
   obj5.children = title;
   const items2 = [React5(Text_Text.Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: null };
   if (body == null) {
-    const intl2 = tmp2(1114).intl;
-    body = intl2.format(tmp7(2396)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
+    const intl2 = tmp2(1115).intl;
+    body = intl2.format(tmp7(2482)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   obj6.children = body;
   items2[1] = React5(Text_Text.Text, obj6);
@@ -76,8 +76,8 @@ export default function ConnectGuardianBottomSheet(arg0) {
   obj7.children = React5(ConnectGuardianCard.ConnectGuardianCard, obj8);
   items3[1] = React5(View, obj7);
   const obj10 = { variant: "secondary", size: "md", text: null, onPress: null };
-  const intl3 = tmp2(1114).intl;
-  obj10.text = intl3.string(_modDef2396.Hsm5IF);
+  const intl3 = tmp2(1115).intl;
+  obj10.text = intl3.string(_modDef2482.Hsm5IF);
   obj10.onPress = callback;
   items3[2] = React5(components_Button_Button.Button, obj10);
   obj3.children = items3;

@@ -1,18 +1,18 @@
-// Module ID: 11597
-// Function ID: 11598
+// Module ID: 9629
+// Function ID: 9630
 // Name: ExternalStreamingStore
-// Dependencies: [5, 5362, 4482, 1074, 1090, 1270, 5487, 573, 8256, 5364, 1330, 504, 2]
+// Dependencies: [5, 5498, 4601, 1074, 1091, 1271, 5623, 573, 8408, 5500, 1331, 504, 2]
 
-// Module 11597 (ExternalStreamingStore)
+// Module 9629 (ExternalStreamingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import HTTPUtils from "HTTPUtils" /* 1270 */;
-import _modDef1330 from "module_1330" /* 1330 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5487 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import HTTPUtils from "HTTPUtils" /* 1271 */;
+import _modDef1331 from "module_1331" /* 1331 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5623 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
-import StreamerModeStore from "StreamerModeStore" /* 4482 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import StreamerModeStore from "StreamerModeStore" /* 4601 */;
 
 require = fn;
 function makeTwitchRequest(arg0, query, arg2) {
@@ -503,7 +503,7 @@ prototype2["getStream"] = function getStream() {
 ExternalStreamingStore.displayName = "ExternalStreamingStore";
 const externalStreamingStore = new ExternalStreamingStore(DispatcherDefault, {
   STREAMING_UPDATE: function streamUpdate(stream) {
-    if (_modDef1330(stream.stream, stream)) {
+    if (_modDef1331(stream.stream, stream)) {
       return false;
     } else {
       stream = stream.stream;

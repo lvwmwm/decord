@@ -1,14 +1,14 @@
-// Module ID: 13841
-// Function ID: 13842
+// Module ID: 14020
+// Function ID: 14021
 // Name: PermissionSpeakStore
-// Dependencies: [1957, 1979, 510, 504, 573, 2]
+// Dependencies: [2041, 2063, 510, 504, 573, 2]
 
-// Module 13841 (PermissionSpeakStore)
+// Module 14020 (PermissionSpeakStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 const hideSuppressWarning = "hideSuppressWarning";

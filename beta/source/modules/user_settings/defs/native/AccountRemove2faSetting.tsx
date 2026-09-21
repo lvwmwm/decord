@@ -1,16 +1,16 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 15070
+// Function ID: 15071
 // Name: AccountRemove2faSetting
-// Dependencies: [8079, 14883, 4980, 1114, 14767, 11605, 14768, 2]
+// Dependencies: [8233, 15071, 5108, 1115, 14955, 11725, 14956, 2]
 
-// Module 14882 (AccountRemove2faSetting)
-import util from "util" /* 1114 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
-import SettingsConstants from "SettingsConstants" /* 8079 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14767 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14768 */;
-import account_MFAUtils from "account/MFAUtils" /* 14883 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+// Module 15070 (AccountRemove2faSetting)
+import util from "util" /* 1115 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14955 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14956 */;
+import account_MFAUtils from "account/MFAUtils" /* 15071 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const pressable = SettingBuilders.createPressable({

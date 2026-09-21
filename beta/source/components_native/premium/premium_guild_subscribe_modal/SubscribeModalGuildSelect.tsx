@@ -1,28 +1,28 @@
-// Module ID: 5518
-// Function ID: 5519
+// Module ID: 5654
+// Function ID: 5655
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 1979, 5519, 5517, 21, 4636, 576, 5522, 1483, 504, 5523, 7226, 7479, 1114, 5515, 5204, 5665, 1176, 2]
+// Dependencies: [32, 19, 17, 2063, 5655, 5653, 21, 4756, 576, 5658, 1484, 504, 5659, 7368, 7618, 1115, 5651, 5339, 5801, 1177, 2]
 // Exports: default
 
-// Module 5518 (SubscribeModalGuildSelect)
+// Module 5654 (SubscribeModalGuildSelect)
 import nativeDefault from "native" /* 576 */;
-import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5515 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5523 */;
-import SearchBarNavDefault from "SearchBarNav" /* 7479 */;
+import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5651 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5659 */;
+import SearchBarNavDefault from "SearchBarNav" /* 7618 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import SortedGuildStore from "SortedGuildStore" /* 5519 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 
 const require = fn;
 const ScrollView = fn(17).ScrollView;
-let closure_9 = fn(5517).PremiumGuildSubscribeModalScenes;
+let closure_9 = fn(5653).PremiumGuildSubscribeModalScenes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { safeArea: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexGrow: 1, flexShrink: 1 }, guildList: { padding: 16 }, guildOption: { flexDirection: "row", alignItems: "center", paddingVertical: 10 }, guildName: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexGrow: 1, flexShrink: 1 };
-obj2.guildName = { marginLeft: 32, fontSize: 16, lineHeight: 20, color: fn(5522).DARK_WHITE_500_LIGHT_PRIMARY_660 };
+obj2.guildName = { marginLeft: 32, fontSize: 16, lineHeight: 20, color: fn(5658).DARK_WHITE_500_LIGHT_PRIMARY_660 };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/SubscribeModalGuildSelect.tsx");
@@ -33,7 +33,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   first = undefined;
   const tmp = closure_12();
   dependencyMap = tmp;
-  _slicedToArray = guildBoostSlots(1483).useNavigation();
+  _slicedToArray = guildBoostSlots(1484).useNavigation();
   [first, obj4.onChange] = first.useState("");
   let items = [guildBoostSlots];
   const memo = first.useMemo(() => {
@@ -61,7 +61,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
     }
     return set;
   }, items);
-  let obj = guildBoostSlots(1483);
+  let obj = guildBoostSlots(1484);
   const items1 = [GuildStore, SortedGuildStore];
   const items2 = [first, memo];
   const stateFromStoresArray = guildBoostSlots(504).useStateFromStoresArray(items1, () => {
@@ -98,12 +98,12 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   const obj3 = { top: true, style: tmp.safeArea, children: null };
   const obj4 = { placeholder: null, onChange: null, onClose: null };
   let obj2 = guildBoostSlots(504);
-  const intl = guildBoostSlots(1114).intl;
-  obj4.placeholder = intl.string(guildBoostSlots(1114).t.vf3ZTa);
+  const intl = guildBoostSlots(1115).intl;
+  obj4.placeholder = intl.string(guildBoostSlots(1115).t.vf3ZTa);
   obj4.onClose = actions_BoostingActionCreatorsAll.closeApplyBoostModal;
   const items3 = [closure_10(SearchBarNavDefault, obj4), ];
   const obj5 = { style: tmp.guildList, keyboardShouldPersistTaps: "always", children: null };
-  obj5.children = closure_10(guildBoostSlots(7226).SafeAreaPaddingView, {
+  obj5.children = closure_10(guildBoostSlots(7368).SafeAreaPaddingView, {
     bottom: true,
     children: stateFromStoresArray.map((guild) => {
       const obj = {
@@ -122,5 +122,5 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   });
   items3[1] = closure_10(memo, obj5);
   obj3.children = items3;
-  return closure_11(guildBoostSlots(7226).SafeAreaPaddingView, obj3);
+  return closure_11(guildBoostSlots(7368).SafeAreaPaddingView, obj3);
 };

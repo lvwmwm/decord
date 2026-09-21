@@ -1,9 +1,9 @@
-// Module ID: 5669
-// Function ID: 5670
+// Module ID: 5805
+// Function ID: 5806
 // Name: FastImageNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 5669 (FastImageNativeComponent)
+// Module 5805 (FastImageNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

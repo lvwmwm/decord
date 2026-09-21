@@ -1,12 +1,12 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17756
+// Function ID: 17757
 // Name: VoiceChannelHoistingExperiment
-// Dependencies: [4553, 4550, 2]
+// Dependencies: [4672, 4669, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 17449 (VoiceChannelHoistingExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 4553 */;
-import createExperiment from "module_4550" /* 4550 */;
+// Module 17756 (VoiceChannelHoistingExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 4672 */;
+import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2025-12_voice_channel_hoisting", label: "Voice Channel Hoisting", commonTriggerPoint: ExperimentConstants.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enableWaveformIcon: false, enableHighlight: false }, treatments: null };

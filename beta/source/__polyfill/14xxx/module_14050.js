@@ -1,0 +1,9 @@
+// Module ID: 14050
+// Function ID: 14051
+// Dependencies: [1121]
+
+// Module 14050
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 230, height: 110, scales: [2, 3], hash: "13bbd5c08cf3fa23ae993ffb532d6b29", name: "empty_voice_channel", type: "png" });

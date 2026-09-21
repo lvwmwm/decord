@@ -1,12 +1,12 @@
-// Module ID: 9168
-// Function ID: 9169
+// Module ID: 13202
+// Function ID: 13203
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 4636, 576, 12, 4632, 8755, 1114, 2528, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 12, 4752, 8910, 1115, 2614, 2]
 // Exports: default
 
-// Module 9168 (InAppReportsBreadCrumbs)
+// Module 13202 (InAppReportsBreadCrumbs)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", marginBottom: 16, paddingHorizontal: 16 }, title: { lineHeight: 16, marginBottom: 8 }, breadCrumbItemContainer: { flexDirection: "row", justifyContent: "flex-start", marginBottom: 8, marginEnd: 32, overflow: "visible" }, breadCrumbDot: null, breadCrumbBar: null, breadCrumbText: null };
 let size = { marginStart: 2, marginTop: 8, width: 4, height: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.breadCrumbDot = size;
@@ -68,10 +68,10 @@ export default function Breadcrumbs(element) {
         const intl = require("util").intl;
         const string = intl.string;
         if (hasItem) {
-          prop = tmp7(2528)["6mx/DP"];
+          prop = tmp7(2614)["6mx/DP"];
           let stringResult = string(prop);
         } else {
-          stringResult = string(tmp12(1114).t["+3V9Tp"]);
+          stringResult = string(tmp12(1115).t["+3V9Tp"]);
         }
         obj4.children = stringResult;
         obj4 = [, ];

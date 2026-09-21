@@ -1,11 +1,11 @@
-// Module ID: 5617
-// Function ID: 5618
+// Module ID: 5753
+// Function ID: 5754
 // Name: MemberVerificationAlertPending
-// Dependencies: [19, 21, 5608, 5618, 5619, 1114, 5056, 2]
+// Dependencies: [19, 21, 5744, 5754, 5755, 1115, 5186, 2]
 // Exports: default
 
-// Module 5617 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5608 */;
+// Module 5753 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5744 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,23 +27,23 @@ export default function MemberVerificationAlertPending(guildId) {
   }, items);
   const obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = guildId(5619).ClipboardListIcon;
-  const intl = guildId(1114).intl;
-  obj.header = intl.string(guildId(1114).t.zhfXbs);
-  const intl2 = guildId(1114).intl;
-  obj.subtitle = intl2.string(guildId(1114).t["SRM/e/"]);
+  obj.icon = guildId(5755).ClipboardListIcon;
+  const intl = guildId(1115).intl;
+  obj.header = intl.string(guildId(1115).t.zhfXbs);
+  const intl2 = guildId(1115).intl;
+  obj.subtitle = intl2.string(guildId(1115).t["SRM/e/"]);
   const obj2 = { children: null };
   const obj3 = { variant: "secondary", text: null, onPress: null };
-  const intl3 = guildId(1114).intl;
-  obj3.text = intl3.string(guildId(1114).t.f293OM);
+  const intl3 = guildId(1115).intl;
+  obj3.text = intl3.string(guildId(1115).t.f293OM);
   obj3.onPress = onClose;
-  const items1 = [closure_4(guildId(5056).Button, obj3), ];
+  const items1 = [closure_4(guildId(5186).Button, obj3), ];
   const obj4 = { text: null, variant: "destructive", onPress: null };
-  const intl4 = guildId(1114).intl;
-  obj4.text = intl4.string(guildId(1114).t.mqtdmQ);
+  const intl4 = guildId(1115).intl;
+  obj4.text = intl4.string(guildId(1115).t.mqtdmQ);
   obj4.onPress = callback;
-  items1[1] = closure_4(guildId(5056).Button, obj4);
+  items1[1] = closure_4(guildId(5186).Button, obj4);
   obj2.children = items1;
   obj.buttons = closure_6(closure_5, obj2);
-  return closure_4(onClose(5618), obj);
+  return closure_4(onClose(5754), obj);
 };

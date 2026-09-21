@@ -1,10 +1,10 @@
-// Module ID: 14536
-// Function ID: 14537
+// Module ID: 14727
+// Function ID: 14728
 // Name: NotifSettingsExperiments
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 
-// Module 14536 (NotifSettingsExperiments)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 14727 (NotifSettingsExperiments)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-04-declarative-notif-settings", kind: "user", defaultConfig: { enabled: false, clearDeclarative: false }, variations: null };

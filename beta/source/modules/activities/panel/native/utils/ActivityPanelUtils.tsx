@@ -1,17 +1,17 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17471
+// Function ID: 17472
 // Name: ActivityPanelUtils
-// Dependencies: [1956, 9635, 504, 4265, 9658, 2]
+// Dependencies: [2040, 9315, 504, 4385, 9614, 2]
 // Exports: useIsActivityPanelFullscreen
 
-// Module 17119 (ActivityPanelUtils)
+// Module 17471 (ActivityPanelUtils)
 import initialize from "initialize" /* 504 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4265 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9658 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9614 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 
 require = fn;
-const ActivityPanelModes = fn(9635).ActivityPanelModes;
+const ActivityPanelModes = fn(9315).ActivityPanelModes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");
 

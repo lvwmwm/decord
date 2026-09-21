@@ -1,26 +1,26 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 15513
+// Function ID: 15514
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1371, 21, 7522, 4981, 1114, 15328, 1896, 504, 1363, 11605, 8785, 2]
+// Dependencies: [1372, 21, 7661, 5109, 1115, 15514, 1980, 504, 1364, 11725, 8940, 2]
 
-// Module 15327 (PremiumRestoreSubscriptionSetting)
+// Module 15513 (PremiumRestoreSubscriptionSetting)
 import initialize from "initialize" /* 504 */;
-import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7522 */;
-import UserStore from "UserStore" /* 1371 */;
+import util from "util" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7661 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.s9h22P);
   },
   parent: null,
-  IconComponent: fn(8785).NitroWheelIcon,
+  IconComponent: fn(8940).NitroWheelIcon,
   onPress: function handleNitroRestoreSettingPress() {
     const result = BillingActionCreatorsDefault.restoreAndApplyPurchases(true);
     result.then((result) => {
@@ -56,7 +56,8 @@ const pressable = SettingBuilders.createPressable({
             return closure_2_4(closure_0, {});
           };
         });
-      }
+      },
+      isDismissable: false
     });
   },
   withArrow: true,

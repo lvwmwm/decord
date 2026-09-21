@@ -1,12 +1,12 @@
-// Module ID: 1389
-// Function ID: 1390
+// Module ID: 1390
+// Function ID: 1391
 // Name: DisplayNameStylesConstants
-// Dependencies: [1390, 1391, 2]
+// Dependencies: [1391, 1392, 2]
 // Exports: getColorPresetsForEffect
 
-// Module 1389 (DisplayNameStylesConstants)
-import DisplayNameEffect from "DisplayNameEffect" /* 1390 */;
-import DisplayNameFont from "DisplayNameFont" /* 1391 */;
+// Module 1390 (DisplayNameStylesConstants)
+import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
+import DisplayNameFont from "DisplayNameFont" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let items = [DisplayNameEffect.DisplayNameEffect.SOLID, DisplayNameEffect.DisplayNameEffect.GRADIENT, DisplayNameEffect.DisplayNameEffect.NEON, DisplayNameEffect.DisplayNameEffect.TOON, DisplayNameEffect.DisplayNameEffect.POP];
@@ -32,11 +32,11 @@ export const DISPLAY_NAME_STYLES_PRISM_PRESETS = items6;
 export const getColorPresetsForEffect = function getColorPresetsForEffect(selectedEffectId) {
   if (DisplayNameEffect.DisplayNameEffect.GUMMY === selectedEffectId) {
     return items5;
-  } else if (tmp(1390).DisplayNameEffect.PRISM === selectedEffectId) {
+  } else if (tmp(1391).DisplayNameEffect.PRISM === selectedEffectId) {
     return items6;
   } else {
-    if (tmp(1390).DisplayNameEffect.GRADIENT !== selectedEffectId) {
-      if (tmp(1390).DisplayNameEffect.GLOW !== selectedEffectId) {
+    if (tmp(1391).DisplayNameEffect.GRADIENT !== selectedEffectId) {
+      if (tmp(1391).DisplayNameEffect.GLOW !== selectedEffectId) {
         return items3.map((item) => {
           const items = [item];
           return items;

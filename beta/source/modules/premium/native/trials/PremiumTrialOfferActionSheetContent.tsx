@@ -1,29 +1,29 @@
-// Module ID: 15779
-// Function ID: 15780
+// Module ID: 16002
+// Function ID: 16003
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1373, 21, 4636, 576, 11959, 1114, 9551, 5155, 5211, 4294, 5773, 4632, 15780, 5056, 8785, 2]
+// Dependencies: [19, 17, 1374, 21, 4756, 576, 12079, 1115, 9535, 5292, 5346, 4414, 5909, 4752, 16003, 5186, 8940, 2]
 
-// Module 15779 (PremiumTrialOfferActionSheetContent)
+// Module 16002 (PremiumTrialOfferActionSheetContent)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import PremiumUtils from "PremiumUtils" /* 4294 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import FolderIcon from "FolderIcon" /* 5155 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5211 */;
-import native from "native" /* 5773 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8785 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 9551 */;
-import UserIcon from "UserIcon" /* 11959 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 15780 */;
+import util from "util" /* 1115 */;
+import PremiumUtils from "PremiumUtils" /* 4414 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import FolderIcon from "FolderIcon" /* 5292 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5346 */;
+import native from "native" /* 5909 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8940 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 9535 */;
+import UserIcon from "UserIcon" /* 12079 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 16003 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const PremiumTypes = fn(1373).PremiumTypes;
+const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { contentContainer: { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 }, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } };
 let closure_7 = createStyles.createStyles(obj);
 let obj3 = { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 };
@@ -76,15 +76,15 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4294).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4294);
+    displayNameFromSku = tmp3(4414).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4414);
   }
   obj10.children = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = hasOwnProperty(Text_Text.Text, obj10);
   items1[2] = hasOwnProperty(PremiumPerksListDefault, { perks: items });
   const obj11 = { style: tmp.buttonContainer, children: null };
   const obj12 = { size: "lg", text: null, onPress: null, grow: true, icon: null };
-  const intl9 = tmp3(1114).intl;
+  const intl9 = tmp3(1115).intl;
   obj12.text = intl9.formatToPlainString(util.t.xASjq5, { duration: intervalDuration });
   obj12.onPress = onConfirm.onConfirm;
   const obj9 = { style: tmp.heroIllustrationContainer, children: hasOwnProperty(native.NitroWumpusFlightRight3dIllustration, { width: 180, height: 180 }) };

@@ -1,31 +1,53 @@
 // Module ID: 4085
 // Function ID: 4086
-// Dependencies: [4077, 3726]
+// Dependencies: [3845, 3848, 4086, 3846]
 // Exports: default
 
 // Module 4085
-import module_4077_mod from "module_4077" /* 4077 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3845" /* 3845 */;
+import startOfUTCWeek_mod from "startOfUTCWeek" /* 3848 */;
+import startOfUTCWeekYear_mod from "startOfUTCWeekYear" /* 4086 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
-let module_4077 = module_4077_mod;
-if (!module_4077) {
-  const obj = { default: module_4077 };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4077;
+  tmp3 = _typeof;
 }
-module_4077 = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+_typeof = tmp3;
+let startOfUTCWeek = startOfUTCWeek_mod;
+if (!startOfUTCWeek) {
+  const obj2 = { default: startOfUTCWeek };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = startOfUTCWeek;
 }
-requiredArgs = tmp5;
+startOfUTCWeek = tmp5;
+let startOfUTCWeekYear = startOfUTCWeekYear_mod;
+if (!startOfUTCWeekYear) {
+  const obj3 = { default: startOfUTCWeekYear };
+  let tmp7 = obj3;
+} else {
+  tmp7 = startOfUTCWeekYear;
+}
+startOfUTCWeekYear = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
+let c4 = 604800000;
 
-export default function isThisQuarter(arg0) {
+export default function getUTCWeek(arg0, arg1) {
   requiredArgs.default(1, arguments);
-  return module_4077.default(Date.now(), arg0);
+  const defaultResult1 = _typeof.default(arg0);
+  const time = startOfUTCWeek.default(defaultResult1, arg1).getTime();
+  const defaultResult2 = startOfUTCWeek.default(defaultResult1, arg1);
+  return Math.round((time - startOfUTCWeekYear.default(defaultResult1, arg1).getTime()) / c4) + 1;
 };
 export default exports.default;

@@ -1,14 +1,14 @@
-// Module ID: 10407
-// Function ID: 10408
+// Module ID: 10536
+// Function ID: 10537
 // Name: TopEmojisUtils
-// Dependencies: [1371, 5540, 5543, 10408, 2]
+// Dependencies: [1372, 5676, 5679, 10537, 2]
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 10407 (TopEmojisUtils)
-import TopEmojisActionCreators from "TopEmojisActionCreators" /* 10408 */;
-import UserStore from "UserStore" /* 1371 */;
-import EmojiStore from "EmojiStore" /* 5540 */;
-import TopEmojiStore from "TopEmojiStore" /* 5543 */;
+// Module 10536 (TopEmojisUtils)
+import TopEmojisActionCreators from "TopEmojisActionCreators" /* 10537 */;
+import UserStore from "UserStore" /* 1372 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
+import TopEmojiStore from "TopEmojiStore" /* 5679 */;
 
 require = fn;
 const size = fn(2);

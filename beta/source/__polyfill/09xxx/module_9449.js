@@ -1,9 +1,9 @@
 // Module ID: 9449
 // Function ID: 9450
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9449
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 49, height: 48.5, scales: [2, 3], hash: "6922badb2f007833b3becc6f00bcb5a4", name: "img_custom_app_icons", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/PirateIcon", width: 60, height: 60, scales: [2, 3], hash: "02ec404298afd1c009d52e4ac428845a", name: "PirateIcon", type: "png" });

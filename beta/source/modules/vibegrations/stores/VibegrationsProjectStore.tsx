@@ -1,15 +1,15 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 9309
+// Function ID: 9310
 // Name: VibegrationsProjectStore
-// Dependencies: [32, 1371, 7348, 504, 573, 2]
+// Dependencies: [32, 1372, 5275, 504, 573, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 16690 (VibegrationsProjectStore)
+// Module 9309 (VibegrationsProjectStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 7348 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
 import _slicedToArray from "module_32" /* 32 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function isProjectOwner(item10010) {
@@ -115,8 +115,8 @@ prototype["getSelectedProjectId"] = function getSelectedProjectId(guildId) {
   }
   return value;
 };
-prototype["getLogs"] = function getLogs(arg0) {
-  value = map4.get(arg0);
+prototype["getLogs"] = function getLogs(projectId) {
+  value = map4.get(projectId);
   if (value == null) {
     value = closure_11;
   }
@@ -151,8 +151,8 @@ prototype["getUnreadLogErrorCount"] = function getUnreadLogErrorCount(arg0) {
     return num2;
   }
 };
-prototype["getTrace"] = function getTrace(arg0) {
-  value = map7.get(arg0);
+prototype["getTrace"] = function getTrace(projectId) {
+  value = map7.get(projectId);
   if (value == null) {
     value = closure_16;
   }
@@ -175,8 +175,8 @@ prototype["getProjectsFetchState"] = function getProjectsFetchState() {
 prototype["hasFetchedGuildProjects"] = function hasFetchedGuildProjects(arg0) {
   return set.has(arg0);
 };
-prototype["getGuildProjectsFetchState"] = function getGuildProjectsFetchState(arg0) {
-  let str = map3.get(arg0);
+prototype["getGuildProjectsFetchState"] = function getGuildProjectsFetchState(guildId) {
+  let str = map3.get(guildId);
   if (str == null) {
     str = "unattempted";
   }

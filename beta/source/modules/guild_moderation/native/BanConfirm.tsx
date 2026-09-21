@@ -1,17 +1,17 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12106
+// Function ID: 12107
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 1979, 1371, 21, 1114, 1090, 4636, 576, 7084, 11284, 504, 5601, 11986, 4632, 4481, 5766, 5769, 7188, 5056, 2]
+// Dependencies: [32, 19, 17, 2063, 1372, 21, 1115, 1091, 4756, 576, 7226, 11413, 504, 5737, 12107, 4752, 4600, 5902, 5905, 7330, 5186, 2]
 
-// Module 11985 (BanConfirm)
+// Module 12106 (BanConfirm)
 import nativeDefault from "native" /* 576 */;
-import DurationsDefault from "Durations" /* 1090 */;
-import util from "util" /* 1114 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5601 */;
+import DurationsDefault from "Durations" /* 1091 */;
+import util from "util" /* 1115 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import UserStore from "UserStore" /* 1371 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -118,7 +118,7 @@ items[6] = {
     return intl.string(util.t.FA7IUk);
   }
 };
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj8 = { container: null, iconLabelBlock: null, iconStyles: null, blurb: null, redText: null, errorText: null };
 let obj7 = {
   value: 7 * DurationsDefault.Seconds.DAY,

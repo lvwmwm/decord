@@ -1,14 +1,14 @@
-// Module ID: 11484
-// Function ID: 11485
+// Module ID: 11610
+// Function ID: 11611
 // Name: ChannelSummariesExperiment
-// Dependencies: [1975, 1979, 1074, 1964, 1982, 563, 2]
+// Dependencies: [2059, 2063, 1074, 2048, 2066, 563, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 11484 (ChannelSummariesExperiment)
-import ChannelConstants from "ChannelConstants" /* 1964 */;
-import GuildRecord from "GuildRecord" /* 1975 */;
-import FavoritesUtils from "FavoritesUtils" /* 1982 */;
-import GuildStore from "GuildStore" /* 1979 */;
+// Module 11610 (ChannelSummariesExperiment)
+import ChannelConstants from "ChannelConstants" /* 2048 */;
+import GuildRecord from "GuildRecord" /* 2059 */;
+import FavoritesUtils from "FavoritesUtils" /* 2066 */;
+import GuildStore from "GuildStore" /* 2063 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

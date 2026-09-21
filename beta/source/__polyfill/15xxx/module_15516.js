@@ -1,9 +1,0 @@
-// Module ID: 15516
-// Function ID: 15517
-// Dependencies: [1120]
-
-// Module 15516
-import registerAsset from "module_1120" /* 1120 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "6bf3cf5d375d7561cb3b9bf74212ed45", name: "en-GB", type: "png" });

@@ -1,24 +1,24 @@
-// Module ID: 11386
-// Function ID: 11387
+// Module ID: 11515
+// Function ID: 11516
 // Name: AvailableForumTag
-// Dependencies: [19, 5540, 1374, 21, 4636, 576, 504, 10757, 9031, 7233, 1396, 4632, 2]
+// Dependencies: [19, 5676, 1375, 21, 4756, 576, 504, 10888, 9184, 7375, 1397, 4752, 2]
 // Exports: default
 
-// Module 11386 (AvailableForumTag)
+// Module 11515 (AvailableForumTag)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import EmojiDefault from "Emoji" /* 7233 */;
-import native from "native" /* 9031 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import EmojiDefault from "Emoji" /* 7375 */;
+import native from "native" /* 9184 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5540 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const EMOJI_URL_BASE_SIZE = fn(1374).EMOJI_URL_BASE_SIZE;
+const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { pill: { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 12, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, margin: 6, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden", height: 32 }, pillSelected: null, pillDisabled: null, emoji: null, imageEmoji: null, textEmoji: null };
 const obj3 = { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 12, borderRadius: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, margin: 6, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden", height: 32 };
 obj2.pillSelected = { borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderWidth: 1 };
@@ -85,8 +85,8 @@ export default function AvailableForumTag(tag) {
           const obj6 = { id: null, animated: null, size: null };
           ({ id: obj5.id, animated: obj5.animated } = tmp6);
           obj6.size = EMOJI_URL_BASE_SIZE;
-          emojiURL = tmp10(1396).getEmojiURL(obj6);
-          const tmp10Result = tmp10(1396);
+          emojiURL = tmp10(1397).getEmojiURL(obj6);
+          const tmp10Result = tmp10(1397);
         }
         obj4.src = emojiURL;
         let str = c7;

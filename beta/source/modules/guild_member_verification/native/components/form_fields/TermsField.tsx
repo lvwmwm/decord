@@ -1,20 +1,20 @@
-// Module ID: 5681
-// Function ID: 5682
+// Module ID: 5817
+// Function ID: 5818
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4636, 5682, 5685, 1114, 2]
+// Dependencies: [19, 17, 21, 4756, 5818, 5821, 1115, 2]
 // Exports: default
 
-// Module 5681 (TermsField)
-import util from "util" /* 1114 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5682 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5685 */;
+// Module 5817 (TermsField)
+import util from "util" /* 1115 */;
+import TermsFieldListDefault from "TermsFieldList" /* 5818 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5821 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/TermsField.tsx");
@@ -29,7 +29,7 @@ export default function TermsField(field) {
     flag = false;
   }
   const obj2 = { start: true, end: true, checked: flag, label: null, onPress: null };
-  const intl = tmp5(1114).intl;
+  const intl = tmp5(1115).intl;
   obj2.label = intl.string(util.t["2EXfGJ"]);
   obj2.onPress = onChange;
   items[1] = React4(TableCheckboxRow.TableCheckboxRow, obj2);

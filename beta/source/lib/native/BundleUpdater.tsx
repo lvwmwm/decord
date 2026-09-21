@@ -1,14 +1,14 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 12045
+// Function ID: 12046
 // Name: BundleUpdater
-// Dependencies: [5, 17, 1074, 3, 1363, 81, 1896, 4821, 1240, 7704, 2]
+// Dependencies: [5, 17, 1074, 3, 1364, 81, 1980, 4941, 1241, 5084, 2]
 
-// Module 11925 (BundleUpdater)
+// Module 12045 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import _mod4821 from "module_4821" /* 4821 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 7704 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import _mod4941 from "module_4941" /* 4941 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -128,7 +128,7 @@ prototype["setupOTAAssetFallback"] = function setupOTAAssetFallback() {
   })();
 };
 prototype["emitOtaMetric"] = function emitOtaMetric(item10010) {
-  const match = _mod4821.match(item10010);
+  const match = _mod4941.match(item10010);
   const withResult = match.with({ type: "OtaCheckAttempt" }, (result) => {
     closure_1_5.verbose("OTA check attempt", result);
     AnalyticsUtilsDefault.track(constants.MOBILE_OTA_CHECK_ATTEMPT, { result: result.result, duration_seconds: result.durationSeconds, bytes_received: result.bytesReceived, error: result.error, used_streaming: result.usedStreaming });

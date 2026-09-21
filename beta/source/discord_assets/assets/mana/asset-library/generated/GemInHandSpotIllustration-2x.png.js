@@ -1,11 +1,11 @@
-// Module ID: 6203
-// Function ID: 6204
+// Module ID: 6341
+// Function ID: 6342
 // Dependencies: [2]
 
-// Module 6203
+// Module 6341
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemInHandSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/0c5e09dcdcbb8f906457abf7d6b85637bd7f6724d21fe9e44af864de60770285.png";
-export const metadata = { fileBytes: 45992 };
+export default "https://cdn.discordapp.com/assets/content/26aad4194f988bc54e196888a2ae6686995acef6d9a050a7a2fbbfb3a3b6cb7e.png";
+export const metadata = { fileBytes: 44199 };

@@ -1,9 +1,9 @@
 // Module ID: 11510
 // Function ID: 11511
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11510
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "dd65d7e499998d0d8096b10bdc086bb5", name: "ic_close", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9d92aa1c45b82a477ca0857bf43b0863", name: "PencilSparkleIcon", type: "png" });

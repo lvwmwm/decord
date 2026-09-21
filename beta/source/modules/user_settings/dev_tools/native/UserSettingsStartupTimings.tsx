@@ -1,23 +1,23 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15844
+// Function ID: 15845
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1345, 1074, 21, 4636, 576, 4632, 4501, 1611, 10321, 504, 9, 7578, 8479, 9003, 5054, 5768, 5685, 1346, 5686, 9182, 2]
+// Dependencies: [5, 32, 19, 17, 1346, 1074, 21, 4756, 576, 4752, 4620, 1612, 10450, 504, 9, 7717, 8632, 8997, 5184, 5904, 5821, 1347, 5822, 13207, 2]
 // Exports: default
 
-// Module 15655 (UserSettingsStartupTimings)
+// Module 15844 (UserSettingsStartupTimings)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5685 */;
-import TableRow from "TableRow" /* 5686 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import ShareIcon from "ShareIcon" /* 9182 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 10321 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5821 */;
+import TableRow from "TableRow" /* 5822 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 10450 */;
+import ShareIcon from "ShareIcon" /* 13207 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1345 */;
-import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4501 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
+import NativeTTIManagerModule from "NativeTTIManagerModule" /* 4620 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ function Code(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, code: { fontFamily: fn(1074).Fonts.CODE_BOLD }, border: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.border = { height: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
@@ -97,7 +97,7 @@ export default function UserSettingsStartupTimings() {
             closure_128_1 = undefined;
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp5(4501).getAppFirstVisibleTimestamp(), done: false };
+            const obj5 = { value: tmp5(4620).getAppFirstVisibleTimestamp(), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -109,9 +109,9 @@ export default function UserSettingsStartupTimings() {
           return obj6;
         } else {
           closure_128_0 = value;
-          closure_128_1 = tmp5(10321)(closure_128_0);
+          closure_128_1 = tmp5(10450)(closure_128_0);
           const obj7 = { message: closure_128_1 };
-          tmp2(8479).showShareActionSheet(obj7, "Startup Timing");
+          tmp2(8632).showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
           return { value: "HermesInternal", done: null };
         }
@@ -124,7 +124,7 @@ export default function UserSettingsStartupTimings() {
   let obj4 = { style: tmp.wrap, children: null };
   let obj5 = { contentContainerStyle: null, ListHeaderComponent: null, data: null, renderItem: null };
   let obj3 = require("TTIAnalyticsUtils");
-  obj5.contentContainerStyle = { paddingBottom: checked(1611)().bottom + tmp2(576).space.PX_16 };
+  obj5.contentContainerStyle = { paddingBottom: checked(1612)().bottom + tmp2(576).space.PX_16 };
   obj5.ListHeaderComponent = function ListHeaderComponent() {
     const obj = { spacing: 16, style: { padding: 16 }, children: null };
     const obj2 = {
@@ -133,7 +133,7 @@ export default function UserSettingsStartupTimings() {
       children: React6(TableCheckboxRow.TableCheckboxRow, {
         label: "Show start times at launch",
         onPress() {
-          return closure_0(1346).setDeveloperOptionSettings({ alertStartupMetrics: !checked });
+          return closure_0(1347).setDeveloperOptionSettings({ alertStartupMetrics: !checked });
         },
         checked
       })
@@ -226,7 +226,7 @@ export default function UserSettingsStartupTimings() {
     const obj21 = { title: "Legend", hasIcons: false, children: null };
     const obj22 = { label: null };
     const obj23 = { children: null };
-    const items10 = [React7(Code, { children: ["\u2615", " - Java / Kotlin"] }), React7(Code, { children: ["\u{1F3A8}", " - React render"] }), React7(Code, { children: ["\u{1F4BE}", " - CacheStore"] }), React7(Code, { children: ["\u{1F9A5}", " - Slow Store Update / Handler"] }), React7(Code, { children: ["\u{1F3C3}", " - Startup Event"] }), React7(Code, { children: ["\u{1F310}", " - Socket Event"] })];
+    const items10 = [React6(Code, { children: "\u2615 - Java / Kotlin" }), React6(Code, { children: "\u{1F3A8} - React render" }), React6(Code, { children: "\u{1F4BE} - CacheStore" }), React6(Code, { children: "\u{1F9A5} - Slow Store Update / Handler" }), React6(Code, { children: "\u{1F3C3} - Startup Event" }), React6(Code, { children: "\u{1F310} - Socket Event" })];
     obj23.children = items10;
     obj22.label = React7(closure_2_10, obj23);
     obj21.children = React6(TableRow.TableRow, obj22);
@@ -261,6 +261,6 @@ export default function UserSettingsStartupTimings() {
   obj5.renderItem = function renderItem(children) {
     return closure_8(lastTrackedAppUiViewed2Properties, { children: children.item });
   };
-  obj4.children = closure_8(tmp10(9003).FlashList, obj5);
+  obj4.children = closure_8(tmp10(8997).FlashList, obj5);
   return closure_8(checked, obj4);
 };

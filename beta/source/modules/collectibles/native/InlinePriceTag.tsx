@@ -1,23 +1,23 @@
-// Module ID: 13283
-// Function ID: 13284
+// Module ID: 13453
+// Function ID: 13454
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 7340, 1076, 1074, 21, 4636, 576, 4632, 1889, 7656, 7657, 8962, 1114, 8295, 4294, 13284, 8994, 8973, 13285, 504, 8986, 1363, 8987, 8785, 2]
+// Dependencies: [19, 17, 7482, 1076, 1074, 21, 4756, 576, 4752, 1973, 7795, 7796, 9116, 1115, 8447, 4414, 13454, 9148, 9127, 13455, 504, 9140, 1364, 9141, 8940, 2]
 // Exports: default
 
-// Module 13283 (InlinePriceTag)
+// Module 13453 (InlinePriceTag)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7657 */;
-import useCurrentUser from "useCurrentUser" /* 8295 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8973 */;
-import useProductDisableState from "useProductDisableState" /* 8994 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13284 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 13285 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
+import useCurrentUser from "useCurrentUser" /* 8447 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9127 */;
+import useProductDisableState from "useProductDisableState" /* 9148 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13454 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 13455 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7340 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 require = fn;
 function PriceTag(accessibilityLabel) {
@@ -48,13 +48,13 @@ function OrbsPriceTag(arg0) {
   } else {
     let result = product.type === CollectiblesItemType.CollectiblesItemType.BUNDLE;
     if (result) {
-      result = tmp16(7656).isOrbsExclusiveProduct(product);
-      const tmp16Result = tmp16(7656);
+      result = tmp16(7795).isOrbsExclusiveProduct(product);
+      const tmp16Result = tmp16(7795);
     }
     const productDiscount = CollectiblesUtils.getProductDiscount(product, eligibleForShopDiscount, constants2.DISCORD_ORB);
     ({ original, discountPercentage } = productDiscount);
     if (result) {
-      result = discountPercentage >= tmp16(7657).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+      result = discountPercentage >= tmp16(7796).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
     }
     const items = [tmp.priceTagRow, ];
     const canAfford = vcData.canAfford;
@@ -72,10 +72,10 @@ function OrbsPriceTag(arg0) {
     if (result) {
       const obj2 = { priceFormatted: original.toString(), variant: "text-md/medium", style: tmp.strikedOrbPrice, icon: null, accessibilityLabel: null };
       const obj3 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      obj2.icon = React7(tmp16(8962).OrbsIcon, obj3);
-      const intl = tmp16(1114).intl;
+      obj2.icon = React7(tmp16(9116).OrbsIcon, obj3);
+      const intl = tmp16(1115).intl;
       const obj4 = { orbAmount: original.toString() };
-      obj2.accessibilityLabel = intl.formatToPlainString(tmp16(1114).t.QfcKZ5, obj4);
+      obj2.accessibilityLabel = intl.formatToPlainString(tmp16(1115).t.QfcKZ5, obj4);
       tmp7 = React7(PriceTag, obj2);
     }
     const items1 = [tmp7, , ];
@@ -83,12 +83,12 @@ function OrbsPriceTag(arg0) {
     let tmp10Result;
     if (!result) {
       const obj6 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      tmp10Result = tmp10(tmp16(8962).OrbsIcon, obj6);
+      tmp10Result = tmp10(tmp16(9116).OrbsIcon, obj6);
     }
     obj5.icon = tmp10Result;
-    const intl2 = tmp16(1114).intl;
+    const intl2 = tmp16(1115).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const t = tmp16(1114).t;
+    const t = tmp16(1115).t;
     if (result) {
       const obj7 = { orbAmount: vcData.price.amount.toString(), discountPercentage };
       let formatToPlainStringResult = formatToPlainString(t.ckguyq, obj7);
@@ -128,10 +128,10 @@ const Constants = fn(1074);
 ({ AnalyticsSections: closure_7, CurrencyCodes: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-let createStyles = fn(4636);
+let createStyles = fn(4756);
 let obj2 = { priceTag: { flexDirection: "row", alignItems: "center" }, strikedPrice: { textDecorationLine: "line-through", textDecorationStyle: "solid", opacity: 0.7 }, strikedOrbPrice: { textDecorationLine: "line-through", textDecorationStyle: "solid", opacity: 0.7, marginRight: 4 }, regularPrice: {}, nitroIcon: { width: 20, height: 20, marginLeft: 8, marginRight: 4 }, nitroIconSubscribeNow: { marginLeft: 0 }, container: { flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, priceTagRow: { flexDirection: "row", alignItems: "center" }, priceTagColumn: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, underline: { textDecorationLine: "underline" }, subscribeNowPressable: { marginBottom: -2, marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" }, androidTextPadding: { paddingBottom: 2 }, orbsIcon: { marginRight: 4 }, disabled: { opacity: 0.5 } };
 let closure_12 = createStyles.createStyles(obj2);
-createStyles = fn(4636);
+createStyles = fn(4756);
 let closure_15 = createStyles.createStyles(() => {
   const discount = { backgroundColor: "rgba(46, 204, 113, 0.25)", flexDirection: "row", flexShrink: 1, borderRadius: nativeDefault.radii.xs - 1, paddingHorizontal: 6, marginLeft: 6, paddingTop: null, paddingBottom: null };
   let num;
@@ -164,7 +164,7 @@ export default function InlinePriceTag(arg0) {
   const items = [IAPStore];
   if (obj7.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus())) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return closure_9(tmp2(8986).CollectiblesShopPricePlaceholder, {});
+      return closure_9(tmp2(9140).CollectiblesShopPricePlaceholder, {});
     }
   }
   if (null == formattedPriceForCollectiblesProduct) {
@@ -175,18 +175,18 @@ export default function InlinePriceTag(arg0) {
     }
     return tmp21;
   } else {
-    const formattedPriceForCollectiblesProduct1 = tmp2(8973).getFormattedPriceForCollectiblesProduct(product, true, true);
-    const tmp2Result = tmp2(8973);
+    const formattedPriceForCollectiblesProduct1 = tmp2(9127).getFormattedPriceForCollectiblesProduct(product, true, true);
+    const tmp2Result = tmp2(9127);
     const obj9 = { style: tmp.container, children: null };
     const obj10 = { style: tmp.priceTagColumn, children: null };
     const obj11 = { style: tmp.priceTagRow, children: null };
     const obj12 = { priceFormatted: formattedPriceForCollectiblesProduct, variant: "heading-md/semibold", style: canUseShopDiscountsResult ? tmp.strikedPrice : tmp.regularPrice, color: "interactive-text-active", accessibilityLabel: null };
-    const intl = tmp2(1114).intl;
+    const intl = tmp2(1115).intl;
     const obj13 = { price: formattedPriceForCollectiblesProduct };
-    obj12.accessibilityLabel = intl.formatToPlainString(tmp2(1114).t.sPvyr8, obj13);
+    obj12.accessibilityLabel = intl.formatToPlainString(tmp2(1115).t.sPvyr8, obj13);
     const items1 = [closure_9(PriceTag, obj12), , ];
     let tmp28Result = null;
-    if (product.type === tmp2(1889).CollectiblesItemType.BUNDLE) {
+    if (product.type === tmp2(1973).CollectiblesItemType.BUNDLE) {
       tmp28Result = null;
       if (!canUseShopDiscountsResult) {
         const obj14 = { discountPercentage: tmp2Result4.getProductDiscount(product, canUseShopDiscountsResult).discountPercentage };
@@ -216,25 +216,25 @@ export default function InlinePriceTag(arg0) {
         const items3 = [, ];
         ({ nitroIcon: arr4[0], nitroIconSubscribeNow: arr4[1] } = tmp);
         obj17.style = items3;
-        const items4 = [tmp28(tmp2(8785).NitroWheelIcon, obj17), ];
+        const items4 = [tmp28(tmp2(8940).NitroWheelIcon, obj17), ];
         let androidTextPadding;
         if (tmp2Result5.isAndroid()) {
           androidTextPadding = tmp.androidTextPadding;
         }
         const obj18 = { variant: "text-md/normal", color: "interactive-text-default", style: androidTextPadding, children: null };
-        const intl3 = tmp2(1114).intl;
+        const intl3 = tmp2(1115).intl;
         const obj19 = {
           price: formattedPriceForCollectiblesProduct1,
           subscribeNowHook(children, arg1) {
                   return React7(Text_Text.Text, { variant: "text-md/normal", style: underline.underline, children }, arg1);
                 }
         };
-        obj18.children = intl3.format(tmp2(1114).t.Kxw2LT, obj19);
-        items4[1] = tmp28(tmp2(4632).Text, obj18);
+        obj18.children = intl3.format(tmp2(1115).t.Kxw2LT, obj19);
+        items4[1] = tmp28(tmp2(4752).Text, obj18);
         obj16.children = items4;
         obj15.children = tmp26(closure_3, obj16);
         tmp28Result5 = tmp28(tmp27, obj15);
-        tmp2Result5 = tmp2(1363);
+        tmp2Result5 = tmp2(1364);
       }
       items2[1] = tmp28Result5;
       obj10.children = items2;
@@ -249,25 +249,25 @@ export default function InlinePriceTag(arg0) {
       return tmp26(tmp27, obj9);
     } else {
       const obj21 = { priceFormatted: formattedPriceForCollectiblesProduct1, variant: "text-md/medium", color: "interactive-text-active", accessibilityLabel: null, style: null, icon: null };
-      const intl2 = tmp2(1114).intl;
+      const intl2 = tmp2(1115).intl;
       const obj22 = { price: formattedPriceForCollectiblesProduct1 };
-      obj21.accessibilityLabel = intl2.formatToPlainString(tmp2(1114).t.kWkpdG, obj22);
+      obj21.accessibilityLabel = intl2.formatToPlainString(tmp2(1115).t.kWkpdG, obj22);
       let androidTextPadding1;
       if (tmp2Result6.isAndroid()) {
         androidTextPadding1 = tmp.androidTextPadding;
       }
       obj21.style = androidTextPadding1;
-      if (shopDiscountSource === tmp2(7657).ShopDiscountSource.THIRDPARTY) {
+      if (shopDiscountSource === tmp2(7796).ShopDiscountSource.THIRDPARTY) {
         const obj23 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        let tmp28Result7 = tmp28(tmp2(8987).TagIcon, obj23);
+        let tmp28Result7 = tmp28(tmp2(9141).TagIcon, obj23);
       } else {
         const obj24 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp28Result7 = tmp28(tmp2(8785).NitroWheelIcon, obj24);
+        tmp28Result7 = tmp28(tmp2(8940).NitroWheelIcon, obj24);
       }
       obj21.icon = tmp28Result7;
       tmp28(tmp29, obj21);
-      tmp2Result6 = tmp2(1363);
+      tmp2Result6 = tmp2(1364);
     }
-    tmp2Result4 = tmp2(7657);
+    tmp2Result4 = tmp2(7796);
   }
 };

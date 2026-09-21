@@ -1,13 +1,32 @@
 // Module ID: 5022
 // Function ID: 5023
-// Dependencies: [17, 65]
+// Dependencies: [1315, 1445]
 
 // Module 5022
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
+import _mod1445 from "module_1445" /* 1445 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenContainer", validAttributes: {} };
+let closure_0 = callBoundIntrinsic("Date.prototype.getDay");
+let closure_1 = callBoundIntrinsic("Object.prototype.toString");
+let closure_2 = _mod1445();
 
-export default module_65.get("RNSScreenContainer", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function isDateObject(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
+  }
+  if (!tmp) {
+    return tmp;
+  } else if (closure_2) {
+    let tmp4 = (function tryDateGetDayCall(arg0) {
+      try {
+        closure_1_0(arg0);
+        return true;
+      } catch (err) {
+        return false;
+      }
+    })(obj);
+  } else {
+    tmp4 = "[object Date]" === closure_1(obj);
+  }
+};

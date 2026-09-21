@@ -1,9 +1,9 @@
 // Module ID: 2686
 // Function ID: 2687
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 2686
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9mZWVkYmFjaw==", scales: [1], hash: "cf3c29da275532d8389d240f549a9a61", name: "vi.messages.cf3c29da275532d8389d240f549a9a61.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zL3Byb2ZpbGVfdXBkYXRlcy9zZW5kZXI=", scales: [1], hash: "7e3098a08e2bb06d34cf5d3e03fb2a0f", name: "en-GB.messages.7e3098a08e2bb06d34cf5d3e03fb2a0f.compiled.messages", type: "jsona" });

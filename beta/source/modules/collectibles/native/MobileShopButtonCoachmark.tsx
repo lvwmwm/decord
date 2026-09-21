@@ -1,19 +1,19 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 17263
+// Function ID: 17264
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 1954, 21, 4636, 576, 1114, 11265, 2]
+// Dependencies: [19, 17, 2038, 21, 4756, 576, 1115, 11394, 2]
 // Exports: default
 
-// Module 16910 (MobileShopButtonCoachmark)
+// Module 17263 (MobileShopButtonCoachmark)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
+import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Image = fn(17).Image;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { image: null };
 let size = { height: 80, width: 80, marginTop: nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_16 };
 obj2.image = size;

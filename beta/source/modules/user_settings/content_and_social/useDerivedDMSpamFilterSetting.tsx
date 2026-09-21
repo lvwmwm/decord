@@ -1,19 +1,19 @@
-// Module ID: 14929
-// Function ID: 14930
+// Module ID: 15117
+// Function ID: 15118
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1371, 1937, 1935, 504, 5504, 7402, 1185, 2]
+// Dependencies: [1372, 2021, 2019, 504, 5640, 7541, 1186, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 14929 (useDerivedDMSpamFilterSetting)
+// Module 15117 (useDerivedDMSpamFilterSetting)
 import initialize from "initialize" /* 504 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
-import UserSettings from "UserSettings" /* 1935 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5504 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7402 */;
-import UserStore from "UserStore" /* 1371 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import UserSettings from "UserSettings" /* 2019 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7541 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-let closure_3 = fn(1937).ExplicitContentFilterToDmSpamFilterV2;
+let closure_3 = fn(2021).ExplicitContentFilterToDmSpamFilterV2;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
 
@@ -36,10 +36,10 @@ export const useDerivedDmSpamFilterSettingValue = function useDerivedDmSpamFilte
     if (false !== nsfwAllowed) {
       let FRIENDS_AND_NON_FRIENDS = closure_3.get(setting1);
       if (FRIENDS_AND_NON_FRIENDS == null) {
-        FRIENDS_AND_NON_FRIENDS = tmp(1185).DmSpamFilterV2.NON_FRIENDS;
+        FRIENDS_AND_NON_FRIENDS = tmp(1186).DmSpamFilterV2.NON_FRIENDS;
       }
     }
-    DmSpamFilterV2 = tmp(1185).DmSpamFilterV2;
+    DmSpamFilterV2 = tmp(1186).DmSpamFilterV2;
     FRIENDS_AND_NON_FRIENDS = DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
   }
 };

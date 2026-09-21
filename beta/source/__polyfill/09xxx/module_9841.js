@@ -1,9 +1,9 @@
 // Module ID: 9841
 // Function ID: 9842
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 9841
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [1, 2, 3], hash: "9a9bbdc70f61ec2f6dad7a457855d73e", name: "ic_expand_more_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "04a2168426a5392d149f48315e795b77", name: "ic_crown_16px", type: "png" });

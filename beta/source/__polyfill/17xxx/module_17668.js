@@ -1,9 +1,9 @@
 // Module ID: 17668
 // Function ID: 17669
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 17668
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/audit_logs", width: 24, height: 24, scales: [2, 3], hash: "d8654e85ab963a57d73460b14bc376cd", name: "ic_audit_update_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "288b36dcd0b5f7e0f151e7250c6cbc9d", name: "MobilePhoneDenyIcon", type: "png" });

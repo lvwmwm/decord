@@ -1,15 +1,15 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 16184
+// Function ID: 16185
 // Name: SponsoredContentPreferencesSetting
-// Dependencies: [1074, 11605, 1114, 2070, 15084, 15950, 15953, 2]
+// Dependencies: [1074, 11725, 1115, 2154, 15272, 16182, 16185, 2]
 
-// Module 15952 (SponsoredContentPreferencesSetting)
+// Module 16184 (SponsoredContentPreferencesSetting)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1114 */;
-import _modDef2070 from "module_2070" /* 2070 */;
-import QuestsIcon from "QuestsIcon" /* 15084 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 15950 */;
-import SettingBuilders from "SettingBuilders" /* 11605 */;
+import util from "util" /* 1115 */;
+import _modDef2154 from "module_2154" /* 2154 */;
+import QuestsIcon from "QuestsIcon" /* 15272 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 16182 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2070.XUj46U);
+    return intl.string(_modDef2154.XUj46U);
   },
   parent: null,
   IconComponent: QuestsIcon.QuestsIcon,

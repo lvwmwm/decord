@@ -1,13 +1,13 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9771
+// Function ID: 9772
 // Name: useMyCurrentStageChannel
-// Dependencies: [1957, 2011, 504, 2]
+// Dependencies: [2041, 2095, 504, 2]
 // Exports: default
 
-// Module 9812 (useMyCurrentStageChannel)
+// Module 9771 (useMyCurrentStageChannel)
 import initialize from "initialize" /* 504 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 const size = fn(2);

@@ -1,10 +1,10 @@
-// Module ID: 14530
-// Function ID: 14531
+// Module ID: 14721
+// Function ID: 14722
 // Name: CallKitManager
-// Dependencies: [1898, 2]
+// Dependencies: [1982, 2]
 
-// Module 14530 (CallKitManager)
-import LifecycleManager from "LifecycleManager" /* 1898 */;
+// Module 14721 (CallKitManager)
+import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 class CallKitLifecycleManager extends tmp2 {
 }

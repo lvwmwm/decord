@@ -1,43 +1,44 @@
-// Module ID: 11815
-// Function ID: 11816
+// Module ID: 11934
+// Function ID: 11935
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7698, 8453, 1957, 4857, 8478, 11816, 10992, 21, 4636, 576, 1477, 11117, 504, 11814, 11813, 5711, 11817, 4335, 1114, 1369, 11818, 4982, 11819, 10071, 4647, 11820, 11821, 4781, 4604, 4605, 4334, 7292, 1363, 11119, 7480, 4579, 5206, 11120, 11824, 11131, 2]
+// Dependencies: [5, 32, 19, 17, 7836, 7840, 8606, 2041, 4976, 8631, 11935, 11122, 21, 4756, 576, 1478, 11247, 504, 11933, 11932, 5847, 11936, 4454, 1115, 1370, 11938, 5110, 11939, 10199, 4767, 11940, 11941, 4901, 4724, 4725, 4453, 7434, 1364, 11249, 7619, 4698, 5341, 11250, 11944, 11261, 2]
 // Exports: default
 
-// Module 11815 (ForwardModal)
+// Module 11934 (ForwardModal)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ToastUtils from "ToastUtils" /* 4334 */;
-import LinkIcon from "LinkIcon" /* 4579 */;
-import HapticUtils from "HapticUtils" /* 4604 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4605 */;
-import ChannelUtils from "ChannelUtils" /* 4781 */;
-import ClipboardUtils from "ClipboardUtils" /* 7292 */;
-import HeaderActionButton from "HeaderActionButton" /* 7480 */;
-import formatResults from "formatResults" /* 11117 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11813 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11814 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11817 */;
+import util from "util" /* 1115 */;
+import ToastUtils from "ToastUtils" /* 4453 */;
+import LinkIcon from "LinkIcon" /* 4698 */;
+import HapticUtils from "HapticUtils" /* 4724 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;
+import ChannelUtils from "ChannelUtils" /* 4901 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import formatResults from "formatResults" /* 11247 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11932 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11933 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11936 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7698 */;
-import ICYMIStore from "ICYMIStore" /* 8453 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4857 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8478 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7836 */;
+import ConversationsStore from "ConversationsStore" /* 7840 */;
+import ICYMIStore from "ICYMIStore" /* 8606 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 4976 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8631 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const MAX_DESTINATION_COUNT = fn(11816).MAX_DESTINATION_COUNT;
-let UserRowModes = fn(10992).UserRowModes;
+const MAX_DESTINATION_COUNT = fn(11935).MAX_DESTINATION_COUNT;
+let UserRowModes = fn(11122).UserRowModes;
 const jsxProd = fn(21);
-({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4636);
+({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
+const createStyles = fn(4756);
 let obj2 = { container: { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
-let closure_16 = createStyles.createStyles(obj2);
+let closure_17 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/forwarding/native/ForwardModal.tsx");
 
@@ -57,23 +58,24 @@ export default function ForwardModal(message) {
   closure_10 = undefined;
   let trackForwardAddRecipientOnce;
   let trackForwardEditSearchOnce;
+  let ref;
   UserRowModes = undefined;
-  let ref2;
   let first;
   closure_16 = undefined;
+  let ref3;
   let first1;
   closure_19 = undefined;
   let callback4;
   let onPress;
-  let tmp = closure_16();
-  let height = forwardOptions(source[14])({ ignoreKeyboard: true }).height;
+  let tmp = ref3();
+  let height = forwardOptions(source[15])({ ignoreKeyboard: true }).height;
   const channel_id = message.channel_id;
   const id = message.id;
   const items = [channel_id];
   const memo = channel_id.useMemo(() => formatResults.getDestinationIdFromChannelId(channel_id), items);
   [tmp7, c7] = height(channel_id.useState(false), 2);
   const tmp6 = height(channel_id.useState(false), 2);
-  const items1 = [closure_10, stateFromStores, trackForwardAddRecipientOnce, c7];
+  const items1 = [trackForwardAddRecipientOnce, stateFromStores1, trackForwardEditSearchOnce, stateFromStores, c7];
   const items2 = [channel_id, id, source, message];
   stateFromStores = require("initialize").useStateFromStores(items1, () => {
     if ("checkpoint" === source) {
@@ -89,12 +91,15 @@ export default function ForwardModal(message) {
       if (message == null) {
         message = ConversationsStore.getMessage(tmp2, tmp3);
       }
+      if (message == null) {
+        message = ConversationPreviewStore.getMessage(tmp3);
+      }
       tmp2 = channel_id;
     }
     return message;
   }, items2);
   let obj2 = require("initialize");
-  const items3 = [stateFromStores1];
+  const items3 = [closure_10];
   const items4 = [channel_id];
   stateFromStores1 = require("initialize").useStateFromStores(items3, () => ChannelStore.getChannel(channel_id), items4);
   let id1;
@@ -106,12 +111,12 @@ export default function ForwardModal(message) {
   trackForwardAddRecipientOnce = require("ForwardingAnalyticsUtils").useTrackForwardAddRecipientOnce();
   const tmp8Result = require("ForwardingAnalyticsUtils");
   trackForwardEditSearchOnce = require("ForwardingAnalyticsUtils").useTrackForwardEditSearchOnce();
+  ref = obj.useRef(0);
   UserRowModes = obj.useRef(0);
-  ref2 = obj.useRef(0);
   const tmp5Result = height(channel_id.useState(""), 2);
   first = tmp5Result[0];
   closure_16 = tmp5Result[1];
-  channel_id.useRef("");
+  ref3 = obj.useRef("");
   const items5 = [channel_id, id, trackForwardEditSearchOnce];
   const callback = obj.useCallback((current) => {
     closure_16(current);
@@ -142,7 +147,7 @@ export default function ForwardModal(message) {
     const obj2 = { channelId: channel_id, messageId: id, numDestinationChanges: ref.current, numQueryChanges: ref2.current };
     ForwardModalUtils.closeForwardModal();
   }, items7);
-  const tmp18 = trackForwardEditSearchOnce;
+  const tmp18 = ref;
   const tmp8Result3 = require("ForwardingAnalyticsUtils");
   require("useNavigatorBackPressHandler").useNavigatorBackPressHandler(() => {
     ForwardingAnalyticsUtils.trackForwardCancel({ channelId: channel_id, messageId: id, numDestinationChanges: ref.current, numQueryChanges: ref2.current });
@@ -194,14 +199,14 @@ export default function ForwardModal(message) {
                 _undefined(true);
                 c3 = 2;
                 c4 = 1;
-                const obj6 = { value: Promise.all(first1.map(closure_0(source[15]).getOrResolveChannelIdFromDestinationId)), done: false };
+                const obj6 = { value: Promise.all(first1.map(closure_0(source[16]).getOrResolveChannelIdFromDestinationId)), done: false };
                 return obj6;
               } else {
                 const obj7 = { key: "FORWARD_ERROR", content: null };
-                const intl2 = closure_0(source[22]).intl;
-                obj7.content = intl2.string(closure_0(source[22]).t.R0RpRX);
-                forwardOptions(source[21]).open(obj7);
-                const obj28 = forwardOptions(source[21]);
+                const intl2 = closure_0(source[23]).intl;
+                obj7.content = intl2.string(closure_0(source[23]).t.R0RpRX);
+                forwardOptions(source[22]).open(obj7);
+                const obj28 = forwardOptions(source[22]);
               }
             } else {
               const obj8 = { withMessage: tmp118 };
@@ -231,11 +236,11 @@ export default function ForwardModal(message) {
                 const obj12 = { value, done: true };
                 return obj12;
               } else {
-                closure_129_1 = value.filter(closure_0(source[23]).isNotNullish);
-                if (forwardOptions(source[24])(message, closure_129_1)) {
+                closure_129_1 = value.filter(closure_0(source[24]).isNotNullish);
+                if (forwardOptions(source[25])(message, closure_129_1)) {
                   const promise = new Promise((arg0) => {
                     closure_0 = arg0;
-                    closure_1_0(4982).openAlert("staff-to-non-staff-forward", ref2(forwardOptions(11819), {
+                    closure_1_0(5110).openAlert("staff-to-non-staff-forward", closure_1_15(forwardOptions(11939), {
                       onConfirm() {
                         return closure_0(true);
                       },
@@ -270,15 +275,15 @@ export default function ForwardModal(message) {
                   c4 = 3;
                   throw value;
                 } else if (arg0 !== 2) {
-                  closure_0(source[28]).transitionToChannel(closure_129_1[0], { navigationReplace: true, openTextInVoiceIfVoiceChannel: true });
-                  const obj9 = closure_0(source[28]);
+                  closure_0(source[29]).transitionToChannel(closure_129_1[0], { navigationReplace: true, openTextInVoiceIfVoiceChannel: true });
+                  const obj9 = closure_0(source[29]);
                   const obj19 = {};
                   const merged = Object.assign(forwardOptions);
                   obj19.withMessage = closure_129_0;
-                  forwardOptions(source[29]).sendForwards(message, closure_129_1, obj19);
+                  forwardOptions(source[30]).sendForwards(message, closure_129_1, obj19);
                   c3 = 5;
                   c4 = 1;
-                  const obj14 = forwardOptions(source[29]);
+                  const obj14 = forwardOptions(source[30]);
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -303,24 +308,24 @@ export default function ForwardModal(message) {
                   obj27.trackForwardSent(obj);
                   closure_129_3 = first1.filter((item, index) => "rejected" === dependencyMap[index].status);
                   const obj21 = { message, failedDestinations: closure_129_3, forwardOptions };
-                  const result = closure_0(source[18]).showForwardFailedAlertModal(obj21);
-                  const obj2 = closure_0(source[18]);
+                  const result = closure_0(source[19]).showForwardFailedAlertModal(obj21);
+                  const obj2 = closure_0(source[19]);
                 }
-                obj27 = closure_0(source[17]);
+                obj27 = closure_0(source[18]);
               }
               c4 = 3;
               const obj22 = { value, done: true };
               return obj22;
             }
-            closure_0(source[18]).closeForwardModal();
+            closure_0(source[19]).closeForwardModal();
             if (1 === closure_129_1.length) {
               const obj23 = { channelId: closure_129_1[0] };
               c3 = 4;
               c4 = 1;
-              const obj24 = { value: forwardOptions(source[27]).fetchMessages(obj23), done: false };
+              const obj24 = { value: forwardOptions(source[28]).fetchMessages(obj23), done: false };
               return obj24;
             }
-            const obj13 = closure_0(source[18]);
+            const obj13 = closure_0(source[19]);
           }
           const obj25 = { channelId, messageId, hasError: false, hasContextMessage: null, numDestinations: null, numDestinationChanges: null, numQueryChanges: null, source: null };
           let tmp31 = null != closure_129_0;
@@ -333,10 +338,10 @@ export default function ForwardModal(message) {
           obj25.numQueryChanges = ref2.current;
           obj25.source = source;
           tmp109(obj25);
-          const obj26 = { key: "FORWARD_SUCCESS", IconComponent: forwardOptions(source[30]), content: null };
-          const intl = closure_0(source[22]).intl;
-          obj26.content = intl.string(closure_0(source[22]).t.kwmYkt);
-          forwardOptions(source[21]).open(obj26);
+          const obj26 = { key: "FORWARD_SUCCESS", IconComponent: forwardOptions(source[31]), content: null };
+          const intl = closure_0(source[23]).intl;
+          obj26.content = intl.string(closure_0(source[23]).t.kwmYkt);
+          forwardOptions(source[22]).open(obj26);
           c4 = 3;
           const obj29 = { value: undefined, done: true };
           return obj29;
@@ -382,23 +387,23 @@ export default function ForwardModal(message) {
     return { height };
   }, items12);
   if (first1.length <= 1) {
-    let intl2 = tmp8(tmp3[22]).intl;
-    let stringResult = intl2.string(tmp8(tmp3[22]).t.TXNS7S);
+    let intl2 = tmp8(tmp3[23]).intl;
+    let stringResult = intl2.string(tmp8(tmp3[23]).t.TXNS7S);
   } else {
-    let intl = tmp8(tmp3[22]).intl;
+    let intl = tmp8(tmp3[23]).intl;
     let obj4 = { count: length };
-    stringResult = intl.formatToPlainString(tmp8(tmp3[22]).t.jWtYUm, obj4);
+    stringResult = intl.formatToPlainString(tmp8(tmp3[23]).t.jWtYUm, obj4);
   }
   const obj5 = { style: memo1, children: null };
   let obj6 = { title: null, subtitleColor: "text-feedback-warning", subtitle: null, headerRight: null, onClose: null };
   const tmp8Result4 = require("useNavigatorBackPressHandler");
-  const intl3 = tmp8(tmp3[22]).intl;
+  const intl3 = tmp8(tmp3[23]).intl;
   obj6.title = intl3.string(require("util").t["+SkRRj"]);
   let formatToPlainStringResult;
-  if (first1.length >= trackForwardEditSearchOnce) {
-    const intl4 = tmp8(tmp3[22]).intl;
+  if (first1.length >= ref) {
+    const intl4 = tmp8(tmp3[23]).intl;
     let obj7 = { count: tmp18 };
-    formatToPlainStringResult = intl4.formatToPlainString(tmp8(tmp3[22]).t["3Fbkir"], obj7);
+    formatToPlainStringResult = intl4.formatToPlainString(tmp8(tmp3[23]).t["3Fbkir"], obj7);
   }
   obj6.subtitle = formatToPlainStringResult;
   obj6.headerRight = function headerRight(arg0) {
@@ -410,26 +415,26 @@ export default function ForwardModal(message) {
       const intl = util.intl;
       obj.accessibilityLabel = intl.string(util.t.Xrt5Po);
       obj.IconComponent = LinkIcon.LinkIcon;
-      tmp = closure_2_14(HeaderActionButton.HeaderActionButton, obj);
+      tmp = __initData(HeaderActionButton.HeaderActionButton, obj);
     }
     return tmp;
   };
   obj6.onClose = callback2;
-  const items13 = [ref2(forwardOptions(source[37]), obj6), ];
+  const items13 = [first(forwardOptions(source[38]), obj6), ];
   let obj8 = { style: tmp.container, children: null };
-  const items14 = [ref2(forwardOptions(source[40]), { absolute: true }), ref2(forwardOptions(source[41]), { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: prop, onSelectedDestinationChange: callback1, onSearchTextChange: callback, getRowIsUnavailable: callback3, originDestination: memo, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first1.length >= trackForwardEditSearchOnce }), ];
+  const items14 = [first(forwardOptions(source[41]), { absolute: true }), first(forwardOptions(source[42]), { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: prop, onSelectedDestinationChange: callback1, onSearchTextChange: callback, getRowIsUnavailable: callback3, originDestination: memo, insetEnd: 0, disableGradient: true, disableStickySections: true, disableSelection: first1.length >= ref }), ];
   if (null != stateFromStores) {
     let obj10 = { message: stateFromStores, forwardOptions, sendLabel: stringResult, canSend: length > 0, selectedDestinations: first1, isSending: tmp7, onSend: callback4 };
-    let tmp31Result = tmp31(tmp8(tmp3[42]).ForwardMessageFooter, obj10);
+    let tmp31Result = tmp31(tmp8(tmp3[43]).ForwardMessageFooter, obj10);
   } else {
     let obj11 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: null, onPress: null, loading: null };
     if (1 === length) {
-      const intl6 = tmp8(tmp3[22]).intl;
-      let stringResult1 = intl6.string(tmp8(tmp3[22]).t.TXNS7S);
+      const intl6 = tmp8(tmp3[23]).intl;
+      let stringResult1 = intl6.string(tmp8(tmp3[23]).t.TXNS7S);
     } else {
-      const intl5 = tmp8(tmp3[22]).intl;
+      const intl5 = tmp8(tmp3[23]).intl;
       let obj12 = { count: length };
-      stringResult1 = intl5.formatToPlainString(tmp8(tmp3[22]).t.jWtYUm, obj12);
+      stringResult1 = intl5.formatToPlainString(tmp8(tmp3[23]).t.jWtYUm, obj12);
     }
     obj11.text = stringResult1;
     let tmp35;
@@ -438,11 +443,11 @@ export default function ForwardModal(message) {
     }
     obj11.onPress = tmp35;
     obj11.loading = tmp7;
-    tmp31Result = tmp31(tmp8(tmp3[43]).ModalFloatingAction, obj11);
+    tmp31Result = tmp31(tmp8(tmp3[44]).ModalFloatingAction, obj11);
   }
   items14[2] = tmp31Result;
   obj8.children = items14;
-  items13[1] = first(id, obj8);
+  items13[1] = closure_16(id, obj8);
   obj5.children = items13;
-  return first(id, obj5);
+  return closure_16(id, obj5);
 };

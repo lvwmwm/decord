@@ -1,11 +1,11 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9998
+// Function ID: 9999
 // Name: VoiceChannelGamesExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: default
 
-// Module 9307 (VoiceChannelGamesExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1434 */;
+// Module 9998 (VoiceChannelGamesExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const tmp2 = apex_ApexExperimentDefault({ kind: "user", name: "2026-08-mobile-voice-channel-games", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let closure_0 = tmp2;

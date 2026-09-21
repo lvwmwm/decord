@@ -1,15 +1,15 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9158
+// Function ID: 9159
 // Name: useSimilarGames
-// Dependencies: [1916, 1371, 8887, 8886, 7412, 504, 8799, 5192, 2]
+// Dependencies: [2000, 1372, 9041, 9040, 7551, 504, 8947, 5327, 2]
 // Exports: default
 
-// Module 9005 (useSimilarGames)
-import GameStore from "GameStore" /* 1916 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 9158 (useSimilarGames)
+import GameStore from "GameStore" /* 2000 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
-fn(8887).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+fn(9041).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 let closure_5 = [];
 const similarGames = [];
 const size = fn(2);
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/game_profile/hooks/useSimilar
 
 export default function useSimilarGames(arg0) {
   const hasItem = set.has(arg0);
-  const similarGameIds = data(8886).useSimilarGameIds(arg0, !hasItem);
+  const similarGameIds = data(9040).useSimilarGameIds(arg0, !hasItem);
   ({ data, isLoading, error } = similarGameIds);
   if (hasItem) {
     let tmp7 = closure_5;
@@ -25,10 +25,10 @@ export default function useSimilarGames(arg0) {
     tmp7 = data;
   }
   data = tmp7;
-  const obj = data(8886);
+  const obj = data(9040);
   const tmp2 = !hasItem;
-  const games = data(7412).useGames(tmp7);
-  const tmp3Result = data(7412);
+  const games = data(7551).useGames(tmp7);
+  const tmp3Result = data(7551);
   const items = [GameStore];
   const items1 = [tmp7];
   const stateFromStores = data(504).useStateFromStores(items, () => data.some((item) => null == game.getGame(item) && !game.hasNoData(item) && !game.didFetchingFail(item)), items1);

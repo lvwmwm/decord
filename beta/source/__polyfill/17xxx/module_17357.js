@@ -1,27 +1,9 @@
 // Module ID: 17357
 // Function ID: 17358
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 17357
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "da",
-  pluralRuleFunction(arg0, arg1) {
-    const parts = String(arg0).split(".");
-    const first = parts[0];
-    if (arg1) {
-      let str3 = "other";
-    } else {
-      str3 = "one";
-      if (1 != arg0) {
-        if (!tmp3) {
-          str3 = "one";
-          if (0 != first) {
-            str3 = "one";
-          }
-        }
-      }
-    }
-    return str3;
-  }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "da-GL", parentLocale: "da" });
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 414.5, height: 200, scales: [2, 3], hash: "98918a2680690cf1174a4749a18c1a4a", name: "pending_dark", type: "png" });

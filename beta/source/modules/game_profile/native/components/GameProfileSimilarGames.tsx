@@ -1,19 +1,19 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 9157
+// Function ID: 9158
 // Name: GameProfileSimilarGames
-// Dependencies: [32, 19, 17, 8837, 8887, 21, 576, 4636, 8799, 8809, 8803, 1114, 8860, 4632, 8859, 8877, 9005, 1477, 9003, 8845, 2]
+// Dependencies: [32, 19, 17, 8985, 9041, 21, 576, 4756, 8947, 8957, 8951, 1115, 9013, 4752, 9012, 9031, 9158, 1478, 8997, 8998, 2]
 // Exports: default
 
-// Module 9004 (GameProfileSimilarGames)
+// Module 9157 (GameProfileSimilarGames)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8803 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8860 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 8877 */;
-import _mod9003 from "module_9003" /* 9003 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 9005 */;
+import util from "util" /* 1115 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8951 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
+import _mod8997 from "module_8997" /* 8997 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9013 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9031 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 9158 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,13 +28,13 @@ function ListPadding() {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, Pressable: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let closure_8 = fn(8837).MOBILE_GAME_PROFILE_MAX_WIDTH;
-fn(8887).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+let closure_8 = fn(8985).MOBILE_GAME_PROFILE_MAX_WIDTH;
+fn(9041).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 }, header: null, card: null, spacer: null, listPadding: null, coverArtContainer: null, coverArt: null, coverArtPlaceholder: null, coverArtFallback: null, skeletonCards: null, skeletonArtwork: null };
 let obj3 = { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 };
 obj.header = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -144,7 +144,7 @@ let closure_20 = noop.memo((cardWidth) => {
   const obj = { style: tmp.container, headerStyle: tmp.header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: null };
   const obj2 = { contentContainerStyle: tmp.skeletonCards, children: Array.from({ length: 4 }, (arg0, arg1) => closure_2_10(closure_19, { animationDelayMs: arg1 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS, cardWidth }, arg1)) };
   obj.children = closure_10(GameProfileSkeletonCardRowDefault, obj2);
-  return closure_10(cardWidth(8859).GameProfileSectionSkeleton, obj);
+  return closure_10(cardWidth(9012).GameProfileSectionSkeleton, obj);
 });
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSimilarGames.tsx");
@@ -167,7 +167,7 @@ export default function GameProfileSimilarGames(arg0) {
     obj3.title = intl.string(util.t["6rLyQB"]);
     const obj5 = {
       horizontal: true,
-      renderScrollComponent: tmp2(8845),
+      renderScrollComponent: tmp2(8998),
       data: similarGames,
       renderItem(game) {
           return closure_2_10(closure_18, { game: game.item, trackAction, cardWidth });
@@ -179,8 +179,8 @@ export default function GameProfileSimilarGames(arg0) {
       decelerationRate: "fast",
       snapToInterval: result + PX_12
     };
-    obj3.children = closure_10(_mod9003.FlashList, obj5);
-    tmp7 = closure_10(tmp2(8859), obj3);
-    const tmp2Result = tmp2(8859);
+    obj3.children = closure_10(_mod8997.FlashList, obj5);
+    tmp7 = closure_10(tmp2(9012), obj3);
+    const tmp2Result = tmp2(9012);
   }
 };

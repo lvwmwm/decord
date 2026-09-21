@@ -1,22 +1,22 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 16041
+// Function ID: 16042
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1371, 1389, 21, 1390, 11038, 1114, 11034, 2786, 4636, 576, 5054, 4632, 5056, 11031, 11032, 504, 15819, 5768, 5686, 9559, 4872, 2]
+// Dependencies: [32, 19, 17, 1372, 1390, 21, 1391, 11167, 1115, 11163, 2872, 4756, 576, 5184, 4752, 5186, 11160, 11161, 504, 16042, 5904, 5822, 9543, 4991, 2]
 // Exports: default
 
-// Module 15818 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 16041 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import _modDef2786 from "module_2786" /* 2786 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11031 */;
-import types from "types" /* 11032 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 11034 */;
-import _mod11038 from "module_11038" /* 11038 */;
+import util from "util" /* 1115 */;
+import _modDef2872 from "module_2872" /* 2872 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11160 */;
+import types from "types" /* 11161 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 11163 */;
+import _mod11167 from "module_11167" /* 11167 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
@@ -25,7 +25,7 @@ function effectName(arg0) {
   const intl = util.intl;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef2786.OpWJ3f;
+    OpWJ3f = _modDef2872.OpWJ3f;
   }
   return intl.string(OpWJ3f);
 }
@@ -68,10 +68,10 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let items = [...fn(1389).EFFECT_ORDER, fn(1390).DisplayNameEffect.GUMMY];
+let items = [...fn(1390).EFFECT_ORDER, fn(1391).DisplayNameEffect.GUMMY];
 let closure_12 = [10, 50, 100, 200];
 let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 }, container: null, batchRow: null, optionButtons: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.container = { paddingVertical: nativeDefault.space.PX_16 };
@@ -118,7 +118,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   }, items1);
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
-  const memo1 = first1.useMemo(() => _mod11038.splitGraphemes(memo).length, items3);
+  const memo1 = first1.useMemo(() => _mod11167.splitGraphemes(memo).length, items3);
   const items4 = [first];
   const memo2 = first1.useMemo(() => items.filter((item) => set.has(item)), items4);
   const items5 = [memo2];
@@ -245,7 +245,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
         const StringResult = String(arg1);
         const tmp = React6;
         const tmp2 = BenchmarkRow;
-        const splitGraphemesResult = _mod11038.splitGraphemes(run.params.name);
+        const splitGraphemesResult = _mod11167.splitGraphemes(run.params.name);
         let sum = padStartResult;
         if (splitGraphemesResult.length > length) {
           const substr = splitGraphemesResult.slice(0, splitGraphemesResult.length - length);

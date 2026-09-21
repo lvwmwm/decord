@@ -1,18 +1,18 @@
-// Module ID: 4293
-// Function ID: 4294
+// Module ID: 4413
+// Function ID: 4414
 // Name: EmojiUtils
-// Dependencies: [5, 1961, 4275, 1371, 1074, 1374, 4292, 4294, 5545, 4268, 7885, 1474, 1396, 2]
+// Dependencies: [5, 2045, 4395, 1372, 1074, 1375, 4412, 4414, 5681, 4388, 8025, 1475, 1397, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4293 (EmojiUtils)
-import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import ImageUtils from "ImageUtils" /* 1474 */;
-import EmojiTypes from "EmojiTypes" /* 4292 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7885 */;
+// Module 4413 (EmojiUtils)
+import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
+import ImageUtils from "ImageUtils" /* 1475 */;
+import EmojiTypes from "EmojiTypes" /* 4412 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 8025 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import UserStore from "UserStore" /* 1371 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
@@ -42,7 +42,7 @@ function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
         }
         let tmp13 = null != emoji && null != guildId;
         if (tmp13) {
-          const tmp14 = emoji.type === tmp3(4292).EmojiTypes.GUILD || null != emoji.guildId;
+          const tmp14 = emoji.type === tmp3(4412).EmojiTypes.GUILD || null != emoji.guildId;
           let tmp15 = !tmp14;
           if (tmp14) {
             tmp15 = guildId === emoji.guildId;
@@ -61,7 +61,7 @@ function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
           if (!closure_1_14(intention)) {
             let tmp19 = null != emoji && null != guildId;
             if (tmp19) {
-              const tmp20 = emoji.type === tmp3(4292).EmojiTypes.GUILD || null != emoji.guildId;
+              const tmp20 = emoji.type === tmp3(4412).EmojiTypes.GUILD || null != emoji.guildId;
               let tmp21 = !tmp20;
               if (tmp20) {
                 tmp21 = guildId === emoji.guildId;
@@ -100,8 +100,8 @@ function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
             obj = PremiumUtilsDefault;
           }
           if (tmp3Result.isUnusableRoleSubscriptionEmoji(emoji, guildId)) {
-            tmp3(4268).shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
-            const tmp3Result3 = tmp3(4268);
+            tmp3(4388).shouldHideGuildPurchaseEntryPoints(emoji.guildId) ? EmojiDisabledReasons.ROLE_SUBSCRIPTION_UNAVAILABLE : EmojiDisabledReasons.ROLE_SUBSCRIPTION_LOCKED;
+            const tmp3Result3 = tmp3(4388);
           } else {
             let PREMIUM_LOCKED = null;
             if (emoji.animated) {
@@ -113,14 +113,14 @@ function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
                   if (!tmp3Result4.isPurchasableRoleSubscriptionEmoji(emoji)) {
                     PREMIUM_LOCKED = EmojiDisabledReasons.PREMIUM_LOCKED;
                   }
-                  tmp3Result4 = tmp3(5545);
+                  tmp3Result4 = tmp3(5681);
                 }
                 obj3 = PremiumUtilsDefault;
               }
             }
             return PREMIUM_LOCKED;
           }
-          tmp3Result = tmp3(5545);
+          tmp3Result = tmp3(5681);
         }
       }
     }
@@ -133,10 +133,10 @@ let closure_19 = async function _getEmojiColors() {
   await EmojiUtilsPlatformedDefault.getEmojiColors(closure_0);
   return arg1;
 };
-const ChannelRecord = fn(1961);
+const ChannelRecord = fn(2045);
 ({ isGuildTextChannelType: closure_4, isGuildVocalChannelType: hasOwnProperty } = ChannelRecord);
 const Permissions = fn(1074).Permissions;
-const EmojiConstants = fn(1374);
+const EmojiConstants = fn(1375);
 ({ EMOJI_MAX_FILESIZE: closure_9, EMOJI_MAX_LENGTH: c10, EMOJI_RE: closure_11, EmojiDisabledReasons } = EmojiConstants);
 ({ EmojiIntention: map1, isExternalEmojiAllowedForIntention: closure_14 } = EmojiConstants);
 const items = [, ];

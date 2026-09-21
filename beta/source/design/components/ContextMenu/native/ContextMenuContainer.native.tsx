@@ -1,13 +1,13 @@
-// Module ID: 14256
-// Function ID: 14257
+// Module ID: 14447
+// Function ID: 14448
 // Name: ContextMenuContainer
-// Dependencies: [19, 17, 21, 4636, 14257, 8790, 1625, 5053, 4987, 5039, 4347, 2]
+// Dependencies: [19, 17, 21, 4756, 14448, 8175, 1626, 5115, 5167, 4466, 2]
 // Exports: ContextMenuContainer
 
-// Module 14256 (ContextMenuContainer)
-import OverlayViewDefault from "OverlayView" /* 4987 */;
-import Dialog from "Dialog" /* 5039 */;
-import ContextMenuPopout from "ContextMenuPopout" /* 14257 */;
+// Module 14447 (ContextMenuContainer)
+import OverlayViewDefault from "OverlayView" /* 5115 */;
+import Dialog from "Dialog" /* 5167 */;
+import ContextMenuPopout from "ContextMenuPopout" /* 14448 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ function getItemKey(key) {
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { overlayView: null, wrapperView: null };
 const obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -76,20 +76,9 @@ export const ContextMenuContainer = function ContextMenuContainer() {
   onDismiss = noop.useCallback(() => {
     requestClose(true);
   }, items1);
-  let ignoreKeyboardHide;
-  let obj = require("ContextMenuState");
-  let obj2 = noop;
-  const tmp2 = _require;
-  if (activeContextMenu != null) {
-    ignoreKeyboardHide = activeContextMenu.ignoreKeyboardHide;
-  }
-  requestClose(onDismiss[7])(() => {
-    callback();
-    return true;
-  }, true === ignoreKeyboardHide);
   const items2 = [onDismiss, , ];
   ({ overlayView: arr3[1], wrapperView: arr3[2] } = tmp);
-  const callback1 = obj2.useCallback((children, arg1) => {
+  const callback1 = noop.useCallback((children, arg1) => {
     const obj = { style: closure_0.overlayView, children: null };
     let str = "auto";
     if (0 === arg1.length) {
@@ -99,5 +88,5 @@ export const ContextMenuContainer = function ContextMenuContainer() {
     obj.children = <React4 pointerEvents={str} style={closure_0.wrapperView}>{jsx(Dialog.Dialog, { onDismiss, children: arg0 })}</React4>;
     return jsx(OverlayViewDefault, { style: closure_0.overlayView, children: null });
   }, items2);
-  return jsx(tmp2(onDismiss[10]).TransitionGroup, { wrapChildren: callback1, items: tmp5, renderItem, getItemKey });
+  return jsx(require("native").TransitionGroup, { wrapChildren: callback1, items: tmp5, renderItem, getItemKey });
 };

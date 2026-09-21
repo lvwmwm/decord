@@ -1,24 +1,24 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 15050
+// Function ID: 15051
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 8548, 8537, 1074, 21, 4636, 576, 9179, 8711, 4632, 1114, 13661, 11291, 8536, 11, 14863, 8538, 4839, 12012, 1896, 12016, 504, 1240, 12014, 2]
+// Dependencies: [32, 19, 17, 8702, 8691, 1074, 21, 4756, 576, 10011, 8866, 4752, 1115, 13836, 11420, 8690, 11, 15051, 8692, 4959, 12133, 1980, 12137, 504, 1241, 12135, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14862 (SafetyHubViolationsContainer)
+// Module 15050 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8536 */;
-import SafetyHubModels from "SafetyHubModels" /* 8538 */;
-import WarningIcon from "WarningIcon" /* 8711 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9179 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12014 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8690 */;
+import SafetyHubModels from "SafetyHubModels" /* 8692 */;
+import WarningIcon from "WarningIcon" /* 8866 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10011 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12135 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8548 */;
+import SafetyHubStore from "SafetyHubStore" /* 8702 */;
 
 require = fn;
 function SafetyHubViolationsHeader(count) {
@@ -36,9 +36,9 @@ function SafetyHubViolationsHeader(count) {
   const obj4 = { style: null, children: null };
   const items3 = [tmp.headerTextContainer];
   obj4.style = items3;
-  const intl = tmp7(1114).intl;
+  const intl = tmp7(1115).intl;
   const formatToPlainString = intl.formatToPlainString;
-  const t = tmp7(1114).t;
+  const t = tmp7(1115).t;
   if ("active" === status) {
     const obj5 = { count: str.toString() };
     let formatToPlainStringResult = formatToPlainString(t.IeV2oY, obj5);
@@ -47,9 +47,9 @@ function SafetyHubViolationsHeader(count) {
     formatToPlainStringResult = formatToPlainString(t.fZAHBT, obj6);
   }
   const items4 = [closure_1_11(Text_Text.Text, { variant: "heading-sm/semibold", children: formatToPlainStringResult }), ];
-  const intl2 = tmp7(1114).intl;
+  const intl2 = tmp7(1115).intl;
   const string = intl2.string;
-  const t2 = tmp7(1114).t;
+  const t2 = tmp7(1115).t;
   if ("active" === status) {
     let stringResult = string(t2.XJ2YVR);
   } else {
@@ -59,9 +59,9 @@ function SafetyHubViolationsHeader(count) {
   obj4.children = items4;
   items2[1] = closure_1_12(timestampProducer, obj4);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(13661).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(13836).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(11291).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(11420).ChevronSmallDownIcon;
   }
   const obj7 = { size: "md", style: null };
   const items5 = [tmp.chevron];
@@ -141,8 +141,8 @@ function ClassificationDetail(classification) {
       let Lb0HVv = require;
       let obj = dependencyMap;
       if (member_type === SafetyHubModels.MemberType.OWNER) {
-        const intl3 = Lb0HVv(1114).intl;
-        Lb0HVv = Lb0HVv(1114).t.Lb0HVv;
+        const intl3 = Lb0HVv(1115).intl;
+        Lb0HVv = Lb0HVv(1115).t.Lb0HVv;
         obj = {};
         const merged = Object.assign(obj2);
         tmp4 = tmp3 == tmp4;
@@ -153,14 +153,14 @@ function ClassificationDetail(classification) {
         obj.guildName = obj2;
         let formatResult = intl3.format(Lb0HVv, obj);
       } else {
-        const intl2 = Lb0HVv(1114).intl;
+        const intl2 = Lb0HVv(1115).intl;
         const obj4 = { classification_type: tmp2, classificationHook: hook, guildName: null };
         let name;
         if (tmp3 != tmp4) {
           name = tmp3.name;
         }
         obj4.guildName = name;
-        formatResult = intl2.format(Lb0HVv(1114).t.rmpEPD, obj4);
+        formatResult = intl2.format(Lb0HVv(1115).t.rmpEPD, obj4);
       }
     } else {
       const intl = util.intl;
@@ -174,7 +174,7 @@ function ClassificationDetail(classification) {
   items1[1] = prop;
   let obj4 = {
     onPress() {
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12012, dependencyMap.paths), { classificationId: id, source: React6.StandingTab });
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12133, dependencyMap.paths), { classificationId: id, source: React6.StandingTab });
     },
     children: null
   };
@@ -337,12 +337,12 @@ class SafetyHubViolationsContainer {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8537);
+const SafetyHubConstants = fn(8691);
 ({ SafetyHubAnalyticsActionSource: closure_8, SafetyHubAnalyticsActions: closure_9 } = SafetyHubConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { connectedContainer: { display: "flex", marginTop: nativeDefault.space.PX_12, marginBottom: 36, gap: nativeDefault.space.PX_12 }, container: null, header: null, detailContainerOuter: null, detailContainerOuterNew: null, detailContainerInner: null, iconBackground: null, chevron: null, incidentDate: null, incidentDateNew: null, newText: null, emptyState: null, separator: null, moreButtonContainer: null, moreButton: null, headerTextContainer: null };
 let obj3 = { display: "flex", marginTop: nativeDefault.space.PX_12, marginBottom: 36, gap: nativeDefault.space.PX_12 };
 obj2.container = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_8, width: "100%" };

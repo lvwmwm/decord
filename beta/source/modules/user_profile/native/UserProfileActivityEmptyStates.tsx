@@ -1,17 +1,17 @@
-// Module ID: 13203
-// Function ID: 13204
+// Module ID: 13373
+// Function ID: 13374
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1074, 21, 1114, 4636, 576, 4632, 4788, 12, 4649, 4603, 5056, 7485, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 1115, 4756, 576, 4752, 4908, 12, 4769, 4723, 5186, 7624, 2]
 
-// Module 13203 (UserProfileActivityEmptyStates)
+// Module 13373 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4649 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import openUserSettings from "openUserSettings" /* 7485 */;
+import util from "util" /* 1115 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -97,7 +97,7 @@ let items = [
     return intl.string(util.t.YolGh4);
   }
 ];
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { alignItems: "center", paddingVertical: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_16 }, text: null, centeredText: null, buttons: null };
 let obj3 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_32, gap: nativeDefault.space.PX_16 };
 obj.text = { gap: nativeDefault.space.PX_8, alignItems: "center" };
@@ -111,12 +111,12 @@ const memoResult = noop.memo((user) => {
   let name;
   ({ guildId, channelId } = user);
   const tmp = closure_10();
-  name = name(4788).getName(guildId, channelId, user);
-  const intl = user(1114).intl;
-  let obj = name(4788);
+  name = name(4908).getName(guildId, channelId, user);
+  const intl = user(1115).intl;
+  let obj = name(4908);
   items = [user.id];
   let obj2 = {
-    heading: intl.formatToPlainString(user(1114).t.sjSitP, { name }),
+    heading: intl.formatToPlainString(user(1115).t.sjSitP, { name }),
     bodyText: _slicedToArray(noop.useState(() => {
       let sampleResult = _mod12.sample(items);
       if (sampleResult == null) {
@@ -133,10 +133,10 @@ const memoResult = noop.memo((user) => {
     ActionSheetActionCreatorsDefault.hideAllActionSheets();
   }, items);
   const obj4 = { size: "sm", variant: "secondary", text: null, onPress: null };
-  const intl2 = user(1114).intl;
-  obj4.text = intl2.string(user(1114).t["g33r/P"]);
+  const intl2 = user(1115).intl;
+  obj4.text = intl2.string(user(1115).t["g33r/P"]);
   obj4.onPress = callback;
-  obj3.children = closure_7(user(5056).Button, obj4);
+  obj3.children = closure_7(user(5186).Button, obj4);
   obj2.children = closure_7(View, obj3);
   return closure_7(EmptyState, obj2);
 });

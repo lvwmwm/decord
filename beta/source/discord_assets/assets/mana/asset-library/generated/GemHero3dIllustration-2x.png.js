@@ -1,11 +1,11 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6337
+// Function ID: 6338
 // Dependencies: [2]
 
-// Module 6199
+// Module 6337
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemHero3dIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/521ee94fd9e5fca98825debb720388443c23889cf46c6ec38d3068fdf99ec996.png";
-export const metadata = { fileBytes: 108747 };
+export default "https://cdn.discordapp.com/assets/content/6766e883bbb1a3b69937bf0314f907a583b4e2b8a42e235d552ec8b5a9999e3b.png";
+export const metadata = { fileBytes: 109167 };

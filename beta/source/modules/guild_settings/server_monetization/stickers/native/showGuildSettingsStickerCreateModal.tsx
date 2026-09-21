@@ -1,18 +1,18 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 18012
+// Function ID: 18013
 // Name: showGuildSettingsStickerCreateModal
-// Dependencies: [4603, 4839, 17693, 1896, 2]
+// Dependencies: [4723, 4959, 18013, 1980, 2]
 // Exports: default
 
-// Module 17692 (showGuildSettingsStickerCreateModal)
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+// Module 18012 (showGuildSettingsStickerCreateModal)
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/showGuildSettingsStickerCreateModal.tsx");
 
 export default function showGuildSettingsStickerCreateModal(merged) {
   ActionSheetActionCreatorsDefault.hideActionSheet();
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(17693, dependencyMap.paths), merged, "guild-settings-sticker-create", { presentation: "modal" });
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(18013, dependencyMap.paths), merged, "guild-settings-sticker-create", { presentation: "modal" });
 };

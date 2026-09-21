@@ -1,133 +1,114 @@
 // Module ID: 4260
 // Function ID: 4261
-// Dependencies: [32]
-// Exports: shallow
+// Dependencies: [3993, 3845, 3849, 3846, 3850]
+// Exports: default
 
 // Module 4260
-import _slicedToArray from "module_32" /* 32 */;
+import _mod3850 from "module_3850" /* 3850 */;
+import module_3993_mod from "module_3993" /* 3993 */;
+import _typeof_mod from "module_3845" /* 3845 */;
+import module_3849_mod from "module_3849" /* 3849 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
-function isIterable(arg0) {
-
+let module_3993 = module_3993_mod;
+if (!module_3993) {
+  const obj = { default: module_3993 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3993;
 }
-function hasIterableEntries(arg0) {
-
+module_3993 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
 }
-function compareEntries(arr, arr2) {
-  let map = arr;
-  if (!(arr instanceof Map)) {
-    const _Map = Map;
-    map = new Map(arr.entries());
-  }
-  map1 = arr2;
-  if (!(arr2 instanceof Map)) {
-    const _Map2 = Map;
-    map1 = new Map(arr2.entries());
-  }
-  if (map.size !== map1.size) {
-    return false;
-  } else {
-    const obj2 = map[Symbol.iterator]();
-    while (obj2 !== undefined) {
-      let tmp11 = _slicedToArray(tmp8, 2);
-      [tmp12, tmp14] = tmp11;
-      if (map1.has(tmp12)) {
-        let _Object = Object;
-      }
-      obj2.return();
-      let flag = false;
-      return false;
-    }
-    return true;
-  }
+_typeof = tmp5;
+let module_3849 = module_3849_mod;
+if (!module_3849) {
+  const obj3 = { default: module_3849 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_3849;
 }
+module_3849 = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export const shallow = function shallow(current, current2) {
-  closure_0 = current;
-  closure_1 = current2;
-  let isResult = Object.is(current, current2);
-  if (!isResult) {
-    let tmp2 = typeof current === "object";
-    if (typeof current === "object") {
-      tmp2 = null !== current;
-    }
-    if (tmp2) {
-      tmp2 = typeof current2 === "object";
-    }
-    if (tmp2) {
-      tmp2 = null !== current2;
-    }
-    if (tmp2) {
-      const _Object = Object;
-      const _Object2 = Object;
-      const prototypeOf = Object.getPrototypeOf(current);
-      const tmp5 = prototypeOf === Object.getPrototypeOf(current2);
-      if (!tmp5) {
-        tmp2 = tmp5;
-      } else if (typeof isIterable === "function") {
-        const _Symbol = Symbol;
-        if (!(Symbol.iterator in current)) {
-          const obj = {
-            entries() {
-                      return Object.entries(closure_0);
-                    }
-          };
-          const obj2 = {
-            entries() {
-                      return Object.entries(closure_1);
-                    }
-          };
-          compareEntries(obj, obj2);
-        } else if (typeof tmp6 === "function") {
-          const _Symbol2 = Symbol;
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-        if (typeof hasIterableEntries === "function") {
-          if (!("entries" in current)) {
-            const _Symbol3 = Symbol;
-            const iter = current[Symbol.iterator]();
-            const _Symbol4 = Symbol;
-            const iter2 = current2[Symbol.iterator]();
-            const iter3 = iter.next();
-            const iter4 = iter2.next();
-            let iter5 = iter4;
-            let iter6 = iter3;
-            if (!iter3.done) {
-              let iter7 = iter4;
-              let iter8 = iter3;
-              iter5 = iter4;
-              iter6 = iter3;
-              if (!iter4.done) {
-                const _Object3 = Object;
-                let flag = false;
-                while (Object.is(iter8.value, iter7.value)) {
-                  let iter9 = iter.next();
-                  let iter10 = iter2.next();
-                  iter5 = iter10;
-                  iter6 = iter9;
-                  if (!iter9.done) {
-                    iter7 = iter10;
-                    iter8 = iter9;
-                    iter5 = iter10;
-                    iter6 = iter9;
-                  }
-                }
-              }
+export default function setDay(arg0, arg1, weekStartsOn) {
+  requiredArgs.default(2, arguments);
+  const defaultOptions = _mod3850.getDefaultOptions();
+  weekStartsOn = undefined;
+  if (null != weekStartsOn) {
+    weekStartsOn = weekStartsOn.weekStartsOn;
+  }
+  if (null === weekStartsOn) {
+    let weekStartsOn1;
+    if (null != weekStartsOn) {
+      locale = weekStartsOn.locale;
+      if (null !== locale) {
+        if (undefined !== locale) {
+          const options = locale.options;
+          if (null !== options) {
+            if (undefined !== options) {
+              weekStartsOn1 = options.weekStartsOn;
             }
-            flag = iter6.done && iter5.done;
-            const tmp9 = iter6.done && iter5.done;
-          } else if (typeof tmp8 !== "function") {
-            throw new TypeError("Trying to call a non-function");
           }
-          flag = compareEntries(current, current2);
-        } else {
-          throw new TypeError("Trying to call a non-function");
         }
-      } else {
-        throw new TypeError("Trying to call a non-function");
       }
     }
-    isResult = tmp2;
+    weekStartsOn = weekStartsOn1;
   }
-  return isResult;
+  if (null === weekStartsOn) {
+    weekStartsOn = defaultOptions.weekStartsOn;
+  }
+  if (null === weekStartsOn) {
+    const locale2 = defaultOptions.locale;
+    let weekStartsOn2;
+    if (null !== locale2) {
+      if (undefined !== locale2) {
+        const options2 = locale2.options;
+        if (null !== options2) {
+          if (undefined !== options2) {
+            weekStartsOn2 = options2.weekStartsOn;
+          }
+        }
+      }
+    }
+    weekStartsOn = weekStartsOn2;
+  }
+  let num = 0;
+  if (null !== weekStartsOn) {
+    num = 0;
+    if (undefined !== weekStartsOn) {
+      num = weekStartsOn;
+    }
+  }
+  const defaultResult1 = module_3849.default(num);
+  if (defaultResult1 >= 0) {
+    if (defaultResult1 <= 6) {
+      const defaultResult2 = _typeof.default(arg0);
+      const defaultResult3 = module_3849.default(arg1);
+      const day = defaultResult2.getDay();
+      const diff = 7 - defaultResult1;
+      if (defaultResult3 >= 0) {
+        if (defaultResult3 <= 6) {
+          let diff1 = ((defaultResult3 % 7 + 7) % 7 + diff) % 7 - (day + diff) % 7;
+        }
+        return module_3993.default(defaultResult2, diff1);
+      }
+      diff1 = defaultResult3 - (day + diff) % 7;
+    }
+  }
+  const rangeError = new RangeError("weekStartsOn must be between 0 and 6 inclusively");
+  throw rangeError;
 };
+export default exports.default;

@@ -1,12 +1,12 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14941
+// Function ID: 14942
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [32, 19, 17, 1954, 21, 14754, 14751, 10359, 1114, 1363, 14750, 5514, 5056, 7050, 2]
+// Dependencies: [32, 19, 17, 2038, 21, 14942, 14939, 10488, 1115, 1364, 14938, 5650, 5186, 7192, 2]
 // Exports: default
 
-// Module 14753 (PasskeyUpsellPromoSheet)
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7050 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 14750 */;
+// Module 14941 (PasskeyUpsellPromoSheet)
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7192 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 14938 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const Image = fn(17).Image;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const size = fn(2);
@@ -26,8 +26,8 @@ export default function PasswordlessUpsellPromoSheet() {
     const obj = setRegistering(onRegisterSuccess[6]);
     const result1 = setRegistering(onRegisterSuccess[6]).openPasskeyUpsellPromoModal(merged);
   }
-  let obj = { source: require("module_14754"), style: { height: 190, width: 220, resizeMode: "contain" } };
-  const tmp4 = closure_7(Image, { source: require("module_14754"), style: { height: 190, width: 220, resizeMode: "contain" } });
+  let obj = { source: require("module_14942"), style: { height: 190, width: 220, resizeMode: "contain" } };
+  const tmp4 = closure_7(Image, { source: require("module_14942"), style: { height: 190, width: 220, resizeMode: "contain" } });
   [r10018, require] = noop.useState("");
   const tmp5 = _slicedToArray(noop.useState(""), 2);
   [tmp7, importDefault] = noop.useState(false);

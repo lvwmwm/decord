@@ -1,13 +1,34 @@
 // Module ID: 5031
 // Function ID: 5032
-// Dependencies: [17, 65]
+// Dependencies: []
 
 // Module 5031
-import _mod17 from "module_17" /* 17 */;
-import module_65 from "module_65" /* 65 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenContentWrapper", validAttributes: {} };
-
-export default module_65.get("RNSScreenContentWrapper", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function isArguments(callee) {
+  const call = toString.call;
+  const tmp2 = typeof call === "unknown" ? toString() : call(callee);
+  let tmp3 = "[object Arguments]" === tmp2;
+  if (!tmp3) {
+    let tmp4 = "[object Array]" !== tmp2;
+    if (tmp4) {
+      tmp4 = null !== callee;
+    }
+    if (tmp4) {
+      tmp4 = typeof callee === "object";
+    }
+    if (tmp4) {
+      tmp4 = typeof callee.length === "number";
+    }
+    if (tmp4) {
+      tmp4 = callee.length >= 0;
+    }
+    if (!tmp4) {
+      tmp3 = tmp4;
+    } else {
+      const call2 = tmp.call;
+      const str2 = "[object Function]";
+      const tmp6 = typeof call2 === "unknown" ? tmp() : call2(str2);
+    }
+  }
+  return tmp3;
+};

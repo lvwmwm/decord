@@ -1,13 +1,13 @@
-// Module ID: 14268
-// Function ID: 14269
+// Module ID: 14459
+// Function ID: 14460
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2025, 1074, 1178, 21, 4636, 576, 1363, 4488, 504, 4632, 1880, 8735, 2]
+// Dependencies: [19, 17, 2109, 1074, 1179, 21, 4756, 576, 1364, 4607, 504, 4752, 1881, 8890, 2]
 // Exports: MaskedBadge
 
-// Module 14268 (Badge/Badge)
+// Module 14459 (Badge/Badge)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2025 */;
+import LocaleStore from "LocaleStore" /* 2109 */;
 
 let require = fn;
 class Badge {
@@ -132,19 +132,19 @@ class Badge {
   }
 }
 const View = fn(17).View;
-const BadgeConstants = fn(1178);
+const BadgeConstants = fn(1179);
 ({ BADGE_MASK_SIZE: metroRequire, BADGE_MASK_UNREAD_SIZE: closure_7, BADGE_PADDING, BADGE_SIZE } = BadgeConstants);
 const BADGE_SIZE_UNREAD = BadgeConstants.BADGE_SIZE_UNREAD;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { badgeMask: { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 }, badge: { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" }, badgeText: null, experimentalBadgeText: null, noCount: null, unread: null, mention: null, lowImportanceMention: null, eventsMentionBadge: null };
 let obj4 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE, fontSize: 12, lineHeight: null, fontFamily: null, textAlign: "center", textAlignVertical: null };
-let PlatformUtils = fn(1363);
+let PlatformUtils = fn(1364);
 PlatformUtils = PlatformUtils.isAndroid();
 const space = nativeDefault.space;
 obj4.lineHeight = PlatformUtils ? space.PX_12 : space.PX_16;
 obj4.fontFamily = fn(1074).Fonts.PRIMARY_BOLD;
-PlatformUtils = fn(1363);
+PlatformUtils = fn(1364);
 let str;
 if (PlatformUtils.isAndroid()) {
   str = "center";

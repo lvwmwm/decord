@@ -1,11 +1,11 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 7965
+// Function ID: 7966
 // Name: AdAnalyticsInterfaceExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: shouldMigrateToAdAnalyticsInterface
 
-// Module 11329 (AdAnalyticsInterfaceExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 7965 (AdAnalyticsInterfaceExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { STEP_1_LOADED: 0, [0]: "STEP_1_LOADED", STEP_2_CLICKED_INTERNAL: 1, [1]: "STEP_2_CLICKED_INTERNAL", STEP_3_CLICKED_EXTERNAL: 2, [2]: "STEP_3_CLICKED_EXTERNAL", STEP_4_VIEWED_NON_IMPRESSION: 3, [3]: "STEP_4_VIEWED_NON_IMPRESSION", STEP_5_VIEWED_IMPRESSION: 4, [4]: "STEP_5_VIEWED_IMPRESSION" };
@@ -15,8 +15,8 @@ const result = size.fileFinishedImporting("modules/quests/experiments/AdAnalytic
 
 export const AdAnalyticsInterfaceExperimentStep = obj;
 export const AdAnalyticsInterfaceExperiment = apexExperiment;
-export const shouldMigrateToAdAnalyticsInterface = function shouldMigrateToAdAnalyticsInterface(STEP_2_CLICKED_INTERNAL, quest_bottom_sheet_console_connect) {
-  const config = apexExperiment.getConfig({ location: quest_bottom_sheet_console_connect });
+export const shouldMigrateToAdAnalyticsInterface = function shouldMigrateToAdAnalyticsInterface(STEP_2_CLICKED_INTERNAL, app_store_overlay_surface_click) {
+  const config = apexExperiment.getConfig({ location: app_store_overlay_surface_click });
   let enabled = config.enabled;
   if (enabled) {
     enabled = STEP_2_CLICKED_INTERNAL <= config.maxStep;

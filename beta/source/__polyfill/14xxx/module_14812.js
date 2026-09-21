@@ -1,9 +1,9 @@
 // Module ID: 14812
 // Function ID: 14813
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 14812
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "560f2e7edfe9f2e8b0852a3f5220d4e5", name: "da.messages.560f2e7edfe9f2e8b0852a3f5220d4e5.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "d63daceced7ceb0d84c7aba817626689", name: "ic_call_status_yellow_24px", type: "png" });

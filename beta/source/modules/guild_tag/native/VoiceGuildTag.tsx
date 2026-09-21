@@ -1,28 +1,28 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16464
+// Function ID: 16465
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1371, 8048, 21, 1363, 4636, 576, 504, 8282, 9313, 4632, 2]
+// Dependencies: [19, 17, 1372, 8202, 21, 1364, 4756, 576, 504, 8434, 10013, 4752, 2]
 // Exports: default
 
-// Module 16222 (VoiceGuildTag)
+// Module 16464 (VoiceGuildTag)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 const View = fn(17).View;
-const GuildTagBadgeSize = fn(8048).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8202).GuildTagBadgeSize;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let PlatformUtils = fn(1363);
+let PlatformUtils = fn(1364);
 let num = 10;
 if (PlatformUtils.isAndroid()) {
   num = 14;
 }
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj3 = { gapContainer: { height: num }, tagContainer: { alignItems: "center", justifyContent: "center", flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 4, paddingHorizontal: 4, marginVertical: (num - 16) / 2, height: 16, gap: 2 }, tag: null };
 let num2 = 16;
-PlatformUtils = fn(1363);
+PlatformUtils = fn(1364);
 if (PlatformUtils.isAndroid()) {
   num2 = 13;
 }
@@ -42,20 +42,20 @@ export default function VoiceGuildTagChiplet(userId) {
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
-  const userPrimaryGuild = userId(8282).getUserPrimaryGuild(primaryGuild);
+  const userPrimaryGuild = userId(8434).getUserPrimaryGuild(primaryGuild);
   ({ tag, guildId } = userPrimaryGuild);
   if (null != guildId) {
     if (null != tag) {
       const obj3 = { style: tmp.gapContainer, children: null };
       const obj4 = { style: tmp.tagContainer, children: null };
-      const guildTagBadgeUrl = tmp2(8282).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
+      const guildTagBadgeUrl = tmp2(8434).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
       const obj5 = { source: null, size: null };
       const obj6 = { uri: guildTagBadgeUrl };
       obj5.source = obj6;
       obj5.size = GuildTagBadgeSize.SIZE_12;
-      const items2 = [closure_5(tmp2(9313).GuildTagBadge, obj5), ];
+      const items2 = [closure_5(tmp2(10013).GuildTagBadge, obj5), ];
       const obj7 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(tmp2(4632).Text, obj7);
+      items2[1] = closure_5(tmp2(4752).Text, obj7);
       obj4.children = items2;
       obj3.children = closure_6(View, obj4);
       return closure_5(View, obj3);

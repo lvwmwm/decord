@@ -1,12 +1,12 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15342
+// Function ID: 15343
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1371, 1076, 15157, 15158, 15159, 504, 4294, 7656, 2]
+// Dependencies: [19, 1372, 1076, 15343, 15344, 15345, 504, 4414, 7795, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 15156 (useFilteredAndSortedProducts)
+// Module 15342 (useFilteredAndSortedProducts)
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 let closure_5 = fn(1076).CollectiblesMobileShopScreen;

@@ -1,20 +1,20 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12439
+// Function ID: 12440
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 1957, 4285, 1371, 1074, 21, 7265, 504, 12, 1369, 11722, 11725, 11724, 4338, 576, 12320, 1114, 8785, 12321, 8296, 10998, 2]
+// Dependencies: [32, 19, 17, 2041, 4405, 1372, 1074, 21, 7407, 504, 12, 1370, 11840, 11843, 11842, 4457, 576, 12440, 1115, 8940, 12441, 8448, 11128, 2]
 
-// Module 12319 (PrivateChannelUserList)
+// Module 12439 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
-import util from "util" /* 1114 */;
-import GlobalUtils from "GlobalUtils" /* 1369 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8785 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12321 */;
+import util from "util" /* 1115 */;
+import GlobalUtils from "GlobalUtils" /* 1370 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8940 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12441 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
-import UserStore from "UserStore" /* 1371 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;

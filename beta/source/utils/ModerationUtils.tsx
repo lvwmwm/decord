@@ -1,34 +1,34 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 15115
+// Function ID: 15116
 // Name: ModerationUtils
-// Dependencies: [1074, 1937, 575, 14928, 1114, 1185, 2]
+// Dependencies: [1074, 2021, 575, 15116, 1115, 1186, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 14927 (ModerationUtils)
+// Module 15115 (ModerationUtils)
 import shims from "shims" /* 575 */;
-import util from "util" /* 1114 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 1937 */;
+import util from "util" /* 1115 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 2021 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
-    return tmp(14928).HighlightColors.ACCENT;
+    return tmp(15116).HighlightColors.ACCENT;
   } else {
     if (tmpResult.unsafe_getRawColor("GREEN_360") === arg0) {
-      return tmp(14928).HighlightColors.GREEN;
+      return tmp(15116).HighlightColors.GREEN;
     } else {
       if (tmpResult4.unsafe_getRawColor("YELLOW_360") === arg0) {
-        return tmp(14928).HighlightColors.YELLOW;
+        return tmp(15116).HighlightColors.YELLOW;
       } else {
         if (tmpResult5.unsafe_getRawColor("ORANGE_345") === arg0) {
-          return tmp(14928).HighlightColors.ORANGE;
+          return tmp(15116).HighlightColors.ORANGE;
         } else {
           if (tmpResult6.unsafe_getRawColor("RED_400") === arg0) {
-            return tmp(14928).HighlightColors.RED;
+            return tmp(15116).HighlightColors.RED;
           } else {
-            return tmp(14928).HighlightColors.NONE;
+            return tmp(15116).HighlightColors.NONE;
           }
           tmpResult6 = tmp(575);
         }
@@ -73,9 +73,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   obj.disabled = flag;
   const items = [obj, , , , ];
   const obj2 = { name: null, desc: null, value: null, color: null };
-  const intl3 = tmp(1114).intl;
+  const intl3 = tmp(1115).intl;
   obj2.name = intl3.string(util.t.SsCK8I);
-  const intl4 = tmp(1114).intl;
+  const intl4 = tmp(1115).intl;
   obj2.desc = intl4.string(util.t["8GCOX6"]);
   obj2.value = constants.LOW;
   let unsafe_getRawColorResult;
@@ -86,9 +86,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   obj2.color = unsafe_getRawColorResult;
   items[1] = obj2;
   const obj3 = { name: null, desc: null, value: null, color: null };
-  const intl5 = tmp(1114).intl;
+  const intl5 = tmp(1115).intl;
   obj3.name = intl5.string(util.t.WwNoR4);
-  const intl6 = tmp(1114).intl;
+  const intl6 = tmp(1115).intl;
   obj3.desc = intl6.formatToPlainString(util.t.VS14ga, { min: constants2.ACCOUNT_AGE });
   obj3.value = constants.MEDIUM;
   let unsafe_getRawColorResult1;
@@ -99,9 +99,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   obj3.color = unsafe_getRawColorResult1;
   items[2] = obj3;
   const obj5 = { name: null, desc: null, value: null, color: null };
-  const intl7 = tmp(1114).intl;
+  const intl7 = tmp(1115).intl;
   obj5.name = intl7.string(util.t.I2jMUF);
-  const intl8 = tmp(1114).intl;
+  const intl8 = tmp(1115).intl;
   obj5.desc = intl8.formatToPlainString(util.t["r+b3I4"], { min: constants2.MEMBER_AGE });
   obj5.value = constants.HIGH;
   let unsafe_getRawColorResult2;
@@ -112,9 +112,9 @@ export const generateVerificationLevelOptions = function generateVerificationLev
   obj5.color = unsafe_getRawColorResult2;
   items[3] = obj5;
   const obj7 = { name: null, desc: null, value: null, color: null };
-  const intl9 = tmp(1114).intl;
+  const intl9 = tmp(1115).intl;
   obj7.name = intl9.string(util.t.cJY8w9);
-  const intl10 = tmp(1114).intl;
+  const intl10 = tmp(1115).intl;
   obj7.desc = intl10.string(util.t.PWaKme);
   obj7.value = constants.VERY_HIGH;
   let unsafe_getRawColorResult3;
@@ -156,11 +156,11 @@ export const generateContentFilterHighlightedOptions = function generateContentF
   obj3.color = shims.unsafe_getRawColor("YELLOW_360");
   items[1] = obj3;
   const obj4 = { name: null, desc: null, value: null, disabled: null, color: null };
-  const intl5 = tmp(1114).intl;
+  const intl5 = tmp(1115).intl;
   obj4.name = intl5.string(util.t.VbSyAx);
-  const intl6 = tmp(1114).intl;
+  const intl6 = tmp(1115).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1114).t;
+  const t2 = tmp(1115).t;
   if (flag) {
     let string2Result = string2(t2.j9WtHx);
   } else {
@@ -202,11 +202,11 @@ export const generateContentFilterOptions = function generateContentFilterOption
   obj2.disabled = flag;
   items[1] = obj2;
   const obj3 = { name: null, desc: null, value: null, disabled: null };
-  const intl5 = tmp(1114).intl;
+  const intl5 = tmp(1115).intl;
   obj3.name = intl5.string(util.t.VbSyAx);
-  const intl6 = tmp(1114).intl;
+  const intl6 = tmp(1115).intl;
   const string2 = intl6.string;
-  const t2 = tmp(1114).t;
+  const t2 = tmp(1115).t;
   if (flag) {
     let string2Result = string2(t2.j9WtHx);
   } else {

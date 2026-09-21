@@ -1,19 +1,19 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 12891
+// Function ID: 12892
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9615, 21, 4636, 576, 1611, 7084, 1477, 12772, 12773, 12774, 4373, 2]
+// Dependencies: [19, 17, 9654, 21, 4756, 576, 1612, 7226, 1478, 12892, 12893, 12894, 4492, 2]
 
-// Module 12771 (ChatPlaceholder)
+// Module 12891 (ChatPlaceholder)
 import nativeDefault from "native" /* 576 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12773 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12774 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 12893 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 12894 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-let closure_3 = fn(9615).useChatInputContainerHeight;
+let closure_3 = fn(9654).useChatInputContainerHeight;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { placeholder: null };
 const obj3 = {};
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);

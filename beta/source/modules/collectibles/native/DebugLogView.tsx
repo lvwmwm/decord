@@ -1,23 +1,23 @@
-// Module ID: 15935
-// Function ID: 15936
+// Module ID: 16167
+// Function ID: 16168
 // Name: DebugLogView
-// Dependencies: [19, 17, 4635, 7659, 21, 4636, 576, 504, 4632, 2]
+// Dependencies: [19, 17, 4755, 7798, 21, 4756, 576, 504, 4752, 2]
 // Exports: default
 
-// Module 15935 (DebugLogView)
+// Module 16167 (DebugLogView)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
+import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4635 */;
+import DevSettingsStore from "DevSettingsStore" /* 4755 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4, TouchableOpacity: hasOwnProperty } = get_ActivityIndicator);
-const CollectiblesDebugStore = fn(7659);
+const CollectiblesDebugStore = fn(7798);
 ({ useCollectiblesDebugStore: closure_7, addDebugLog: closure_8 } = CollectiblesDebugStore);
 const jsxProd = fn(21);
 ({ jsxs: closure_9, jsx: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { debugLogContainer: { backgroundColor: "rgba(0, 0, 0, 0.8)", padding: 10, maxHeight: 350, width: "100%", position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 9999, borderTopWidth: 1, borderTopColor: "#ff0000" }, debugLogHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 5 }, debugLogText: { color: "#00ff00", fontSize: 12, marginBottom: 2, fontFamily: "monospace" }, clearButton: { backgroundColor: "#ff0000", paddingHorizontal: 8, paddingVertical: 2, borderRadius: nativeDefault.radii.xs }, clearButtonText: { color: "#ffffff", fontSize: 10, fontWeight: "bold" } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -49,7 +49,7 @@ export default function DebugLogView() {
       obj4.style = obj5;
       const items2 = ["Debug Log (", arr.length, " entries)"];
       obj4.children = items2;
-      const items3 = [closure_9(tmp2(4632).Text, obj4), ];
+      const items3 = [closure_9(tmp2(4752).Text, obj4), ];
       const obj6 = {
         onPress() {
               closure_1();
@@ -58,7 +58,7 @@ export default function DebugLogView() {
         children: null
       };
       const obj7 = { variant: "text-xs/bold", style: tmp.clearButtonText, children: "Clear" };
-      obj6.children = closure_10(tmp2(4632).Text, obj7);
+      obj6.children = closure_10(tmp2(4752).Text, obj7);
       items3[1] = closure_10(closure_5, obj6);
       obj3.children = items3;
       const items4 = [closure_9(stateFromStores, obj3), ];

@@ -1,22 +1,22 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16479
+// Function ID: 16480
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1371, 1960, 10353, 504, 10352, 1114, 3236, 2]
+// Dependencies: [19, 1372, 2044, 10482, 504, 10481, 1115, 3324, 2]
 // Exports: default
 
-// Module 16237 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10352 */;
+// Module 16479 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10481 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
-import FavoriteStore from "FavoriteStore" /* 1960 */;
+import UserStore from "UserStore" /* 1372 */;
+import FavoriteStore from "FavoriteStore" /* 2044 */;
 
 require = fn;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildAutoAddedThreadsAction.tsx");
 
 export default function useFavoritesGuildAutoAddedThreadsAction() {
-  hasAccess = hasAccess(10353).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
-  let obj = hasAccess(10353);
+  hasAccess = hasAccess(10482).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
+  let obj = hasAccess(10482);
   const items = [UserStore];
   if (hasAccess) {
     hasAccess = obj2.useStateFromStores(items, () => {
@@ -41,10 +41,10 @@ export default function useFavoritesGuildAutoAddedThreadsAction() {
       const result = FavoritesActionCreators.setFavoritesAutoAddJoinedThreads(!stateFromStores);
     }
   }, items2);
-  const intl = tmp(1114).intl;
-  obj3.label = intl.string(stateFromStores(3236).DIyQIF);
-  const intl2 = tmp(1114).intl;
-  obj3.subLabel = intl2.string(stateFromStores(3236).g2vHYJ);
+  const intl = tmp(1115).intl;
+  obj3.label = intl.string(stateFromStores(3324).DIyQIF);
+  const intl2 = tmp(1115).intl;
+  obj3.subLabel = intl2.string(stateFromStores(3324).g2vHYJ);
   obj3.toggle = callback;
   return obj3;
 };

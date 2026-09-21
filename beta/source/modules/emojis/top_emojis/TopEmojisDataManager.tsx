@@ -1,15 +1,15 @@
-// Module ID: 17460
-// Function ID: 17461
+// Module ID: 17767
+// Function ID: 17768
 // Name: TopEmojisDataManager
-// Dependencies: [4458, 1374, 7221, 10407, 2]
+// Dependencies: [4577, 1375, 7363, 10536, 2]
 
-// Module 17460 (TopEmojisDataManager)
-import TopEmojisUtils from "TopEmojisUtils" /* 10407 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
+// Module 17767 (TopEmojisDataManager)
+import TopEmojisUtils from "TopEmojisUtils" /* 10536 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
-const EmojiInteractionPoint = fn(1374).EmojiInteractionPoint;
+const EmojiInteractionPoint = fn(1375).EmojiInteractionPoint;
 class TopEmojisDataManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

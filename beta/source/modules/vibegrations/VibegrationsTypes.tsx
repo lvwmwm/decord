@@ -1,10 +1,10 @@
-// Module ID: 7348
-// Function ID: 7349
+// Module ID: 5275
+// Function ID: 5276
 // Name: VibegrationsTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 7348 (VibegrationsTypes)
+// Module 5275 (VibegrationsTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });
@@ -42,29 +42,29 @@ export const projectSupportsCollaboratorRoles = function projectSupportsCollabor
 export const runesFromUsd = function runesFromUsd(cost_usd) {
   return Math.floor(100 * cost_usd);
 };
-export const runeCount = function runeCount(input_tokens) {
-  return input_tokens.input_tokens + input_tokens.output_tokens + input_tokens.cache_creation_input_tokens + input_tokens.cache_read_input_tokens;
+export const runeCount = function runeCount(total) {
+  return total.input_tokens + total.output_tokens + total.cache_creation_input_tokens + total.cache_read_input_tokens;
 };
 export const promptRunes = function promptRunes(input_tokens) {
   return input_tokens.input_tokens + input_tokens.cache_creation_input_tokens + input_tokens.cache_read_input_tokens;
 };
-export const cacheHitRate = function cacheHitRate(input_tokens) {
-  const sum = input_tokens.input_tokens + input_tokens.cache_creation_input_tokens + input_tokens.cache_read_input_tokens;
+export const cacheHitRate = function cacheHitRate(sumTokenUsageResult1) {
+  const sum = sumTokenUsageResult1.input_tokens + sumTokenUsageResult1.cache_creation_input_tokens + sumTokenUsageResult1.cache_read_input_tokens;
   let num = 0;
   if (0 !== sum) {
-    num = input_tokens.cache_read_input_tokens / sum;
+    num = sumTokenUsageResult1.cache_read_input_tokens / sum;
   }
   return num;
 };
-export const usageOrEmpty = function usageOrEmpty(arg0) {
-  let obj = arg0;
-  if (arg0 == null) {
+export const usageOrEmpty = function usageOrEmpty(compaction) {
+  let obj = compaction;
+  if (compaction == null) {
     obj = { input_tokens: 0, output_tokens: 0, cache_creation_input_tokens: 0, cache_read_input_tokens: 0 };
   }
   return obj;
 };
-export const sumTokenUsage = function sumTokenUsage(input_tokens, input_tokens2) {
-  return { input_tokens: input_tokens.input_tokens + input_tokens2.input_tokens, output_tokens: input_tokens.output_tokens + input_tokens2.output_tokens, cache_creation_input_tokens: input_tokens.cache_creation_input_tokens + input_tokens2.cache_creation_input_tokens, cache_read_input_tokens: input_tokens.cache_read_input_tokens + input_tokens2.cache_read_input_tokens };
+export const sumTokenUsage = function sumTokenUsage(orchestrator, codegen) {
+  return { input_tokens: orchestrator.input_tokens + codegen.input_tokens, output_tokens: orchestrator.output_tokens + codegen.output_tokens, cache_creation_input_tokens: orchestrator.cache_creation_input_tokens + codegen.cache_creation_input_tokens, cache_read_input_tokens: orchestrator.cache_read_input_tokens + codegen.cache_read_input_tokens };
 };
 export const VIBEGRATIONS_VIEWABLE_IMAGE_TYPES = set;
 export const VIBEGRATIONS_MAX_IMAGE_ATTACHMENT_BYTES = 5242880;
@@ -76,8 +76,8 @@ export const vibegrationsAttachmentLimit = function vibegrationsAttachmentLimit(
 export const isVibegrationsAttachmentWithinLimit = function isVibegrationsAttachmentWithinLimit(size, contentType) {
   return size <= (set.has(contentType) ? c2 : c3);
 };
-export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(arg0) {
-  return "" + Math.round(arg0 / 1048576) + " MB";
+export const formatVibegrationsAttachmentLimit = function formatVibegrationsAttachmentLimit(tmpResult2) {
+  return "" + Math.round(tmpResult2 / 1048576) + " MB";
 };
 export const VIBEGRATIONS_FALLBACK_MODEL_CHOICES = obj;
 export const VIBEGRATIONS_DEV_FALLBACK_MODEL_CHOICES = { main: items1, subagent: items1, thinking: obj.thinking };

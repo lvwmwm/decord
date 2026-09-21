@@ -1,15 +1,15 @@
-// Module ID: 7290
-// Function ID: 7291
+// Module ID: 7432
+// Function ID: 7433
 // Name: RoleIconUtils
-// Dependencies: [1074, 1363, 4289, 1430, 1396, 2]
+// Dependencies: [1074, 1364, 4409, 1431, 1397, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7290 (RoleIconUtils)
-import AvatarUtils from "AvatarUtils" /* 1396 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1430 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
+// Module 7432 (RoleIconUtils)
+import AvatarUtils from "AvatarUtils" /* 1397 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
 import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 ({ Endpoints: c3, GuildFeatures: closure_4 } = Constants);
@@ -34,8 +34,8 @@ export const getRoleIconData = function getRoleIconData(role, size) {
         let str3 = "quality=lossless";
         let str5 = "";
         if (null != size) {
-          tmp2(1430);
-          tmp2(1430);
+          tmp2(1431);
+          tmp2(1431);
           let str7 = "";
           const text = `size=${tmp6(size * obj.getDevicePixelRatio())}`;
           if (!closure_7) {

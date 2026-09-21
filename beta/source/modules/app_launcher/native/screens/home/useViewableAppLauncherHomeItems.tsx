@@ -1,12 +1,12 @@
-// Module ID: 12220
-// Function ID: 12221
+// Module ID: 12340
+// Function ID: 12341
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 9538, 4373, 12221, 8894, 1248, 2]
+// Dependencies: [19, 9522, 4492, 12341, 9048, 1249, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 12220 (useViewableAppLauncherHomeItems)
+// Module 12340 (useViewableAppLauncherHomeItems)
 import noop from "module_19" /* 19 */;
-import AppLauncherStore from "AppLauncherStore" /* 9538 */;
+import AppLauncherStore from "AppLauncherStore" /* 9522 */;
 
 const require = fn;
 const size = fn(2);

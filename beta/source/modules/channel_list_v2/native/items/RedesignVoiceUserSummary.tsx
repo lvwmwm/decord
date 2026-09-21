@@ -1,14 +1,14 @@
-// Module ID: 16228
-// Function ID: 16229
+// Module ID: 16470
+// Function ID: 16471
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 2011, 4660, 21, 504, 4781, 16227, 2]
+// Dependencies: [19, 2095, 4780, 21, 504, 4901, 16469, 2]
 // Exports: default
 
-// Module 16228 (RedesignVoiceUserSummary)
-import ChannelUtils from "ChannelUtils" /* 4781 */;
+// Module 16470 (RedesignVoiceUserSummary)
+import ChannelUtils from "ChannelUtils" /* 4901 */;
 import noop from "module_19" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4660 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -28,7 +28,8 @@ export default function RedesignVoiceUserSummary(channels) {
   const items3 = [channels, stateFromStores1, stateFromStores];
   const stageIcon = stateFromStores1.useMemo(() => ChannelUtils.isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
   const obj2 = channels(stateFromStores[4]);
-  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers({ channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores });
+  const obj4 = { channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores };
+  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers(obj4);
   const users = summarizedVoiceUsers.filter((item) => null != item);
   return jsx(guildId(stateFromStores[6]), { users, max: 8, renderIcon: true, guildId, stageIcon });
 };

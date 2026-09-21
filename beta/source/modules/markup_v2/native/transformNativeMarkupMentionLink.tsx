@@ -1,12 +1,12 @@
-// Module ID: 8220
-// Function ID: 8221
+// Module ID: 8372
+// Function ID: 8373
 // Name: transformNativeMarkupMentionLink
-// Dependencies: [5087, 8219, 5077, 2]
+// Dependencies: [5218, 8370, 5207, 2]
 // Exports: transformNativeMentionLink
 
-// Module 8220 (transformNativeMarkupMentionLink)
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5087 */;
-import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8219 */;
+// Module 8372 (transformNativeMarkupMentionLink)
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5218 */;
+import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8370 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMentionLink.tsx");
@@ -22,46 +22,51 @@ export const transformNativeMentionLink = function transformNativeMentionLink(va
         if ("ephemeral_attachments" === value.bucket) {
           str = "ephemeral-attachments";
         }
+        let str3 = "";
+        if (null != value.query) {
+          const _HermesInternal = HermesInternal;
+          str3 = "?" + value.query;
+        }
         ({ channel_id, domain, attachment_id } = value);
-        const _HermesInternal = HermesInternal;
+        const _HermesInternal2 = HermesInternal;
         const obj2 = { type: null, content: null, attachmentUrl: null, attachmentName: null };
-        const combined = "https://" + domain + "/" + str + "/" + channel_id.toString() + "/" + attachment_id.toString() + "/" + value.name;
-        obj2.type = tmp(5077).AST_KEY.ATTACHMENT_LINK;
-        const obj3 = { type: tmp(5077).AST_KEY.TEXT, content: value.name };
+        const combined = "https://" + domain + "/" + str + "/" + channel_id.toString() + "/" + attachment_id.toString() + "/" + value.name + str3;
+        obj2.type = tmp(5207).AST_KEY.ATTACHMENT_LINK;
+        const obj3 = { type: tmp(5207).AST_KEY.TEXT, content: value.name };
         const items = [obj3];
         obj2.content = items;
         obj2.attachmentUrl = combined;
         obj2.attachmentName = value.name;
         return obj2;
       } else {
-        const obj4 = { type: tmp(5077).AST_KEY.TEXT, content: "" };
+        const obj4 = { type: tmp(5207).AST_KEY.TEXT, content: "" };
         return obj4;
       }
     }
   }
   value2 = value.value;
-  const str17 = value2.channel_id.toString();
-  let str18;
+  const str19 = value2.channel_id.toString();
+  let str20;
   if ("message" === value.type) {
-    str18 = value.value.message_id.toString();
+    str20 = value.value.message_id.toString();
   }
-  let str12 = "@me";
+  let str14 = "@me";
   if ("@me" !== value2.guild_id) {
-    str12 = str11.toString();
+    str14 = str13.toString();
   }
-  let str13 = "";
-  if (null != str18) {
-    const _HermesInternal2 = HermesInternal;
-    str13 = "/" + str18;
+  let str15 = "";
+  if (null != str20) {
+    const _HermesInternal3 = HermesInternal;
+    str15 = "/" + str20;
   }
-  const combined1 = "https://" + value2.domain + "/channels/" + str12 + "/" + str17 + str13;
-  const channel = MarkupChannelMentionRule.getChannel(str17, null);
+  const combined1 = "https://" + value2.domain + "/channels/" + str14 + "/" + str19 + str15;
+  const channel = MarkupChannelMentionRule.getChannel(str19, null);
   if (null == channel) {
-    const tmpResult4 = tmp(5087);
-    let handleUnknownChannelResult = tmpResult4.handleUnknownChannel(str12, str17, str18, guildIdFromChannelId, combined1);
+    const tmpResult4 = tmp(5218);
+    let handleUnknownChannelResult = tmpResult4.handleUnknownChannel(str14, str19, str20, guildIdFromChannelId, combined1);
   } else {
-    const tmpResult5 = tmp(5087);
-    handleUnknownChannelResult = tmpResult5.parseChannel(channel, str18, guildIdFromChannelId, combined1);
+    const tmpResult5 = tmp(5218);
+    handleUnknownChannelResult = tmpResult5.parseChannel(channel, str20, guildIdFromChannelId, combined1);
   }
   const tmpResult = MarkupChannelMentionRule;
   return transformNativeMarkupMention.applyChannelMentionIcons(handleUnknownChannelResult);

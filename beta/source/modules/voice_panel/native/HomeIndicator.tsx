@@ -1,9 +1,9 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 9652
+// Function ID: 9653
 // Name: HomeIndicator
-// Dependencies: [19, 17, 560, 1247, 1363, 1623, 2]
+// Dependencies: [19, 17, 560, 1248, 1364, 1624, 2]
 
-// Module 9613 (HomeIndicator)
+// Module 9652 (HomeIndicator)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -62,12 +62,12 @@ HomeIndicator["_updatePropsStack"] = function _updatePropsStack() {
     const prefersHidden = obj.prefersHidden;
     const autoHideHomeIndicator = tmp;
     const prefersDeferringSystemGestures = obj.prefersDeferringSystemGestures;
-    autoHideHomeIndicator(1247).batchUpdates(() => state.setState({ autoHideHomeIndicator }));
-    const obj2 = autoHideHomeIndicator(1247);
+    autoHideHomeIndicator(1248).batchUpdates(() => state.setState({ autoHideHomeIndicator }));
+    const obj2 = autoHideHomeIndicator(1248);
     const tmp2 = undefined !== prefersDeferringSystemGestures && prefersDeferringSystemGestures;
     if (obj3.isAndroid()) {
-      const result = closure_1(1623).setNavigationBarVisible(!tmp);
-      const obj4 = closure_1(1623);
+      const result = closure_1(1624).setNavigationBarVisible(!tmp);
+      const obj4 = closure_1(1624);
     } else if (DCDHomeIndicator.DCDHomeIndicator) {
       DCDHomeIndicator = tmp5.DCDHomeIndicator;
       DCDHomeIndicator.setPrefersAutoHidden(tmp);

@@ -1,18 +1,18 @@
-// Module ID: 15832
-// Function ID: 15833
+// Module ID: 16055
+// Function ID: 16056
 // Name: InternalBuildUpdateSetting
-// Dependencies: [14483, 21, 13994, 504, 4228, 14932, 4585, 15239, 11605, 2]
+// Dependencies: [14674, 21, 14175, 504, 4348, 15120, 4704, 15425, 11725, 2]
 
-// Module 15832 (InternalBuildUpdateSetting)
+// Module 16055 (InternalBuildUpdateSetting)
 import initialize from "initialize" /* 504 */;
-import _modDef4228 from "module_4228" /* 4228 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13994 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14932 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14483 */;
+import _modDef4348 from "module_4348" /* 4348 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14175 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15120 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14674 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11605);
+const SettingBuilders = fn(11725);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "Internal Build Update";
@@ -21,9 +21,9 @@ const pressable = SettingBuilders.createPressable({
   IconComponent: function InstallNativeUpdateIcon() {
     const items = [MobileNativeUpdateStore];
     if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp(4585).DownloadIcon;
+      let RefreshIcon = tmp(4704).DownloadIcon;
     } else {
-      RefreshIcon = tmp(15239).RefreshIcon;
+      RefreshIcon = tmp(15425).RefreshIcon;
     }
     return <RefreshIcon />;
   },
@@ -46,8 +46,8 @@ const pressable = SettingBuilders.createPressable({
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        str = "Last refreshed " + _modDef4228(stateFromStores1).fromNow();
-        const obj3 = _modDef4228(stateFromStores1);
+        str = "Last refreshed " + _modDef4348(stateFromStores1).fromNow();
+        const obj3 = _modDef4348(stateFromStores1);
       }
     }
     return str;

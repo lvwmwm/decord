@@ -1,18 +1,18 @@
-// Module ID: 7971
-// Function ID: 7972
+// Module ID: 8112
+// Function ID: 8113
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4636, 576, 1176, 7972, 2]
+// Dependencies: [19, 21, 4756, 576, 1177, 8113, 2]
 // Exports: default
 
-// Module 7971 (MaskedBadge)
+// Module 8112 (MaskedBadge)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
-import BadgeDefault from "Badge" /* 7972 */;
+import native from "native" /* 1177 */;
+import BadgeDefault from "Badge" /* 8113 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,15 +1,15 @@
-// Module ID: 15316
-// Function ID: 15317
+// Module ID: 15502
+// Function ID: 15503
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 15289, 1373, 1114, 15315, 2]
+// Dependencies: [19, 15475, 1374, 1115, 15501, 2]
 // Exports: default
 
-// Module 15316 (useTrialIntervalOptions)
+// Module 15502 (useTrialIntervalOptions)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const TIER_TRIAL_INTERVALS = fn(15289).TIER_TRIAL_INTERVALS;
-const SubscriptionIntervalTypes = fn(1373).SubscriptionIntervalTypes;
+const TIER_TRIAL_INTERVALS = fn(15475).TIER_TRIAL_INTERVALS;
+const SubscriptionIntervalTypes = fn(1374).SubscriptionIntervalTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useTrialIntervalOptions.tsx");
 
@@ -21,10 +21,10 @@ export default function useTrialIntervalOptions(arg0) {
       const obj = { value, label: null, isDefault: null };
       if (value.interval === constants.DAY) {
         if (7 === value.interval_count) {
-          const intl = closure_1_0(1114).intl;
-          const obj3 = { defaultLimit: closure_1_0(15315).formatPlanIntervalDuration(value) };
-          let formatToPlainStringResult = intl.formatToPlainString(closure_1_0(1114).t.XfSsr1, obj3);
-          const obj4 = closure_1_0(15315);
+          const intl = closure_1_0(1115).intl;
+          const obj3 = { defaultLimit: closure_1_0(15501).formatPlanIntervalDuration(value) };
+          let formatToPlainStringResult = intl.formatToPlainString(closure_1_0(1115).t.XfSsr1, obj3);
+          const obj4 = closure_1_0(15501);
         }
         obj.label = formatToPlainStringResult;
         let tmp5 = value.interval === tmp.DAY;
@@ -34,7 +34,7 @@ export default function useTrialIntervalOptions(arg0) {
         obj.isDefault = tmp5;
         return obj;
       }
-      formatToPlainStringResult = closure_1_0(15315).formatPlanIntervalDuration(value);
+      formatToPlainStringResult = closure_1_0(15501).formatPlanIntervalDuration(value);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

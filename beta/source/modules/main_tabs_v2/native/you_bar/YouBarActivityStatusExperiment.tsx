@@ -1,11 +1,11 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16706
+// Function ID: 16707
 // Name: YouBarActivityStatusExperiment
-// Dependencies: [1434, 2]
+// Dependencies: [1435, 2]
 // Exports: useYouBarActivityStatusEnabled
 
-// Module 16464 (YouBarActivityStatusExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1434 */;
+// Module 16706 (YouBarActivityStatusExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const tmp2 = apex_ApexExperimentDefault({ name: "2026-05-you-bar-activity-status", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let closure_0 = tmp2;

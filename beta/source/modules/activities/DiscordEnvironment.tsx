@@ -1,16 +1,16 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9725
+// Function ID: 9726
 // Name: DiscordEnvironment
-// Dependencies: [4628, 1181, 9768, 1935, 2]
+// Dependencies: [4748, 1182, 9726, 2019, 2]
 // Exports: getDiscordBaseTheme, getDiscordCustomTheme, getDiscordEnvQueryParams, getDiscordEnvironment, getDiscordFontScale, getDiscordUIDensity
 
-// Module 9767 (DiscordEnvironment)
-import UserSettings from "UserSettings" /* 1935 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import ThemeStore from "ThemeStore" /* 1181 */;
+// Module 9725 (DiscordEnvironment)
+import UserSettings from "UserSettings" /* 2019 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
-const UIDensityConstants = fn(9768);
+const UIDensityConstants = fn(9726);
 ({ RESPONSIVE_DENSITY_FALLBACK: closure_4, RESPONSIVE_DENSITY_MEDIA_QUERY: hasOwnProperty, resolveUIDensity: metroRequire } = UIDensityConstants);
 const frozen = Object.freeze({ baseTheme: "dark", customTheme: null, uiDensity: "default", messageDisplayCompact: false, fontScale: 100, reducedMotion: false, highContrast: false, forcedColors: false, underlineLinks: false });
 let closure_8 = ["custom-theme-background", "custom-client-theme"];

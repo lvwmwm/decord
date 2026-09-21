@@ -1,13 +1,13 @@
-// Module ID: 13423
-// Function ID: 13424
+// Module ID: 13596
+// Function ID: 13597
 // Name: BellZIcon
-// Dependencies: [19, 21, 576, 4337, 13424, 2]
+// Dependencies: [19, 21, 576, 4456, 13597, 2]
 // Exports: BellZIcon
 
-// Module 13423 (BellZIcon)
+// Module 13596 (BellZIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod13424 from "module_13424" /* 13424 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod13597 from "module_13597" /* 13597 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BellZIcon = function BellZIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13424, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13597, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

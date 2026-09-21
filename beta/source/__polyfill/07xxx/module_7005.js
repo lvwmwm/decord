@@ -1,70 +1,63 @@
 // Module ID: 7005
 // Function ID: 7006
-// Dependencies: [6958, 19, 7003]
-// Exports: useOnListLoad
+// Dependencies: [6965, 6902, 6940]
+// Exports: useComposedGesture
 
 // Module 7005
-import _mod7003 from "module_7003" /* 7003 */;
-import _slicedToArray from "module_6958" /* 6958 */;
+const require = arg1;
+const dependencyMap = arg6;
 
-require = fn;
-const noop = fn(19);
-({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useState: metroRequire } = noop);
-function useOnLoad(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  closure_2 = hasOwnProperty(false);
-  React3(() => {
-    let isFirstLayoutComplete = getDataLength.getIsFirstLayoutComplete();
-    if (isFirstLayoutComplete) {
-      isFirstLayoutComplete = !ref.current;
+export const useComposedGesture = function useComposedGesture(type) {
+  const substr = [...arguments].slice();
+  const flatMapResult = substr.flatMap((handlerTags) => {
+    if (obj.isComposedGesture(handlerTags)) {
+      handlerTags = handlerTags.handlerTags;
+    } else {
+      handlerTags = [handlerTags.handlerTag];
     }
-    if (isFirstLayoutComplete) {
-      ref.current = true;
-      f81297();
-    }
+    return handlerTags;
   });
-}
-
-export const useOnListLoad = (getDataLength, arg1) => {
-  let f81297 = arg1;
-  hasOwnProperty(Date.now());
-  [tmp3, closure_3] = timestampProducer(false);
-  const dataLength = getDataLength.getDataLength();
-  const tmp = hasOwnProperty;
-  const tmp2 = _slicedToArray(timestampProducer(false), 2);
-  const requestAnimationFrame = _mod7003.useUnmountAwareAnimationFrame().requestAnimationFrame;
-  const items = [dataLength];
-  React4(() => {
-    closure_2.current = Date.now();
-  }, items);
-  if (typeof useOnLoad === "function") {
-    f81297 = () => {
-      const elapsedTimeInMs = Date.now() - ref.current;
-      requestAnimationFrame(() => {
-        elapsedTimeInMs.isFirstPaintOnUiComplete = true;
-        if (f81297 != null) {
-          const obj = { elapsedTimeInMs };
-          tmp(obj);
-        }
-        closure_2_3(true);
-      });
-    };
-    tmp(false);
-    React3(() => {
-      let isFirstLayoutComplete = getDataLength.getIsFirstLayoutComplete();
-      if (isFirstLayoutComplete) {
-        isFirstLayoutComplete = !ref.current;
-      }
-      if (isFirstLayoutComplete) {
-        ref.current = true;
-        f81297();
-      }
-    });
-    const obj2 = { isLoaded: tmp3 };
-    return obj2;
+  if (obj.containsDuplicates(flatMapResult)) {
+    const _Error2 = Error;
+    const error = new Error(tmp2(6902).tagMessage("Each gesture can be used only once in the gesture composition."));
+    throw error;
   } else {
-    throw new TypeError("Trying to call a non-function");
+    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
+    if (obj2.shouldUseReanimatedDetector) {
+      if (obj2.dispatchesAnimatedEvents) {
+        const _Error = Error;
+        const error1 = new Error(tmp2(6902).tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
+        throw error1;
+      }
+    }
+    const Reanimated = tmp2(6940).Reanimated;
+    let composedEventHandler;
+    if (Reanimated != null) {
+      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
+    }
+    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
+    let animatedEventHandler;
+    if (found.length > 0) {
+      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
+    }
+    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: null, externalSimultaneousHandlers: null, gestures: null };
+    const obj4 = {
+      jsEventHandler(arg0) {
+          for (const item10007 of substr) {
+            if (item10007.detectorCallbacks.jsEventHandler) {
+              let detectorCallbacks = tmp.detectorCallbacks;
+              let jsEventHandlerResult = detectorCallbacks.jsEventHandler(arg0);
+            }
+            continue;
+          }
+        },
+      reanimatedEventHandler: composedEventHandler,
+      animatedEventHandler
+    };
+    obj3.detectorCallbacks = obj4;
+    obj3.externalSimultaneousHandlers = [];
+    obj3.gestures = substr;
+    return obj3;
   }
+  obj = substr(6965);
 };
-export { useOnLoad };

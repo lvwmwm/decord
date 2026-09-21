@@ -1,9 +1,9 @@
 // Module ID: 15372
 // Function ID: 15373
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15372
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 161, scales: [1], hash: "1b6a1fd726ebdfc69d47b037085b4f19", name: "graggle_2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "d34103fd5e89ba1cd4ca70f2429c1570", name: "ic_wreath", type: "png" });

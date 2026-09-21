@@ -1,14 +1,14 @@
-// Module ID: 8190
-// Function ID: 8191
+// Module ID: 8343
+// Function ID: 8344
 // Name: EphemeralIndication
-// Dependencies: [8042, 1074, 8191, 1114, 2024, 2]
+// Dependencies: [8196, 1074, 8344, 1115, 2108, 2]
 // Exports: createEphemeralIndication
 
-// Module 8190 (EphemeralIndication)
-import util from "util" /* 1114 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8191 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8042 */;
+// Module 8343 (EphemeralIndication)
+import util from "util" /* 1115 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8344 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8196 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -31,14 +31,14 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       }
       const obj = { content: null, helpArticleLink: null, helpButtonAccessibilityLabel: null };
       const ephemeralReasonMessage = ApplicationCommandUserAppUtils.getEphemeralReasonMessage(ephemerality_reason1);
-      const intl2 = tmp3(1114).intl;
+      const intl2 = tmp3(1115).intl;
       const obj3 = { handleDelete: null, reason: null };
       const obj4 = { action: "bindDismissMessage", message };
       obj3.handleDelete = obj4;
       obj3.reason = ephemeralReasonMessage;
       obj.content = intl2.formatToParts(util.t.xgCMRQ, obj3);
       obj.helpArticleLink = HelpdeskUtilsDefault.getArticleURL(constants.USING_APPS_FAQ);
-      const intl3 = tmp3(1114).intl;
+      const intl3 = tmp3(1115).intl;
       obj.helpButtonAccessibilityLabel = intl3.string(util.t.OIWSJe);
       return obj;
     } else {
@@ -53,8 +53,8 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       obj5.helpButtonAccessibilityLabel = intl5.string(util.t.htHOrp);
       if (null != GuildAutomodMessageStore.getMessage(message.id)) {
         obj5.helpArticleLink = HelpdeskUtilsDefault.getArticleURL(constants.GUILD_AUTOMOD_BLOCKED_MESSAGE);
-        const intl = tmp9(1114).intl;
-        obj5.helpButtonAccessibilityLabel = intl.string(tmp9(1114).t.OiCBhP);
+        const intl = tmp9(1115).intl;
+        obj5.helpButtonAccessibilityLabel = intl.string(tmp9(1115).t.OiCBhP);
         const tmp11Result = HelpdeskUtilsDefault;
       }
       return obj5;

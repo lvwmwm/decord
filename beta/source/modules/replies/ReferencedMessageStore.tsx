@@ -1,18 +1,19 @@
-// Module ID: 7697
-// Function ID: 7698
+// Module ID: 7835
+// Function ID: 7836
 // Name: ReferencedMessageStore
-// Dependencies: [32, 7698, 1957, 4857, 1074, 1437, 4859, 7702, 504, 573, 2]
+// Dependencies: [32, 7836, 7840, 2041, 4976, 1074, 1438, 4978, 7842, 504, 573, 2]
 
-// Module 7697 (ReferencedMessageStore)
+// Module 7835 (ReferencedMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import privDefault from "priv" /* 1437 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4859 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7702 */;
+import privDefault from "priv" /* 1438 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7842 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConversationsStore from "ConversationsStore" /* 7698 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4857 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7836 */;
+import ConversationsStore from "ConversationsStore" /* 7840 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 4976 */;
 
 require = fn;
 function processMessage(message) {
@@ -51,12 +52,15 @@ function processMessage(message) {
         if (message == null) {
           message = ConversationsStore.getMessage(message_reference.channel_id, message_id);
         }
+        if (message == null) {
+          message = ConversationPreviewStore.getMessage(message_id);
+        }
         if (null != message) {
           const obj4 = { state: obj.LOADED, message };
           const result2 = obj.set(message_reference.channel_id, message_id, obj4);
           flag2 = true;
         } else {
-          const result3 = obj.set(message_reference.channel_id, message_id, closure_10);
+          const result3 = obj.set(message_reference.channel_id, message_id, closure_11);
           flag2 = true;
         }
       }
@@ -64,9 +68,9 @@ function processMessage(message) {
   }
   return flag2;
 }
-function anyChanged(data, fn) {
+function anyChanged(messages, fn) {
   let flag = false;
-  const iter = data[Symbol.iterator]();
+  const iter = messages[Symbol.iterator]();
   while (iter !== undefined) {
     let tmp = false !== fn(iter.next()) || flag;
     flag = tmp;
@@ -78,7 +82,7 @@ function handleLoadMessages(messages) {
   return anyChanged(messages.messages, (arg0) => processMessage(arg0));
 }
 function handleSearchMessagesSuccess(data) {
-  return anyChanged(data.data, (messages) => anyChanged(messages.messages, (arg0) => closure_1_15(arg0, (arg0) => closure_1_14(arg0))));
+  return anyChanged(data.data, (messages) => anyChanged(messages.messages, (arg0) => closure_1_16(arg0, (arg0) => closure_1_15(arg0))));
 }
 function handleChannelDelete(channel) {
   return merged.deleteChannelCache(channel.channel.id);
@@ -95,9 +99,9 @@ function handleLoadThreadsSuccess(firstMessages) {
   return tmp;
 }
 const Constants = fn(1074);
-({ MessageTypes: closure_7, MessageTypesWithLazyLoadedReferences: closure_8 } = Constants);
+({ MessageTypes: closure_8, MessageTypesWithLazyLoadedReferences: closure_9 } = Constants);
 const ReferencedMessageState = { LOADED: 0, [0]: "LOADED", NOT_LOADED: 1, [1]: "NOT_LOADED", DELETED: 2, [2]: "DELETED" };
-let closure_10 = Object.freeze({ state: ReferencedMessageState.NOT_LOADED });
+let closure_11 = Object.freeze({ state: ReferencedMessageState.NOT_LOADED });
 let set = new Set();
 class ChannelReferencedMessageCache {
   constructor() {
@@ -109,7 +113,7 @@ class ChannelReferencedMessageCache {
             return obj.handleCacheDisposed(arg0, arg1);
           }
     };
-    tmp2 = new closure_1(closure_2[5])(obj);
+    tmp2 = new closure_1(closure_2[6])(obj);
     obj1._cachedMessages = tmp2;
     set = new Set();
     obj1._cachedMessageIds = set;
@@ -266,7 +270,7 @@ class ReferencedMessageStore extends Store {
 }
 const prototype3 = ReferencedMessageStore.prototype;
 prototype3["initialize"] = function initialize() {
-  this.waitFor(MessageStore, ChannelStore, ConversationsStore);
+  this.waitFor(MessageStore, ChannelStore, ConversationsStore, ConversationPreviewStore);
 };
 prototype3["getMessageByReference"] = function getMessageByReference(messageReference) {
   value = undefined;
@@ -274,14 +278,14 @@ prototype3["getMessageByReference"] = function getMessageByReference(messageRefe
     value = merged.get(messageReference.channel_id, messageReference.message_id);
   }
   if (value == null) {
-    value = closure_10;
+    value = closure_11;
   }
   return value;
 };
 prototype3["getMessage"] = function getMessage(arg0, arg1) {
   value = merged.get(arg0, arg1);
   if (value == null) {
-    value = closure_10;
+    value = closure_11;
   }
   return value;
 };
@@ -298,12 +302,15 @@ prototype3["getReplyIdsForChannel"] = function getReplyIdsForChannel(id) {
 ReferencedMessageStore.displayName = "ReferencedMessageStore";
 const referencedMessageStore = new ReferencedMessageStore(DispatcherDefault, {
   CACHE_LOADED: function handleCacheLoaded(messages) {
-    return anyChanged(Object.values(messages.messages), (arg0) => anyChanged(Object.values(arg0), (arg0) => closure_1_14(arg0)));
+    return anyChanged(Object.values(messages.messages), (arg0) => anyChanged(Object.values(arg0), (arg0) => closure_1_15(arg0)));
   },
   LOCAL_MESSAGES_LOADED: handleLoadMessages,
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
   SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
+  INTELLIGENCE_SEARCH_FETCH_SUCCESS: function handleIntelligenceSearchFetchSuccess(messages) {
+    return anyChanged(messages.messages, (arg0) => processMessage(arg0));
+  },
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: handleSearchMessagesSuccess,
   CONVERSATION_FETCH_SUCCESS: function handleConversationFetchSuccess(messages) {
     messages = messages.messages;
@@ -315,7 +322,7 @@ const referencedMessageStore = new ReferencedMessageStore(DispatcherDefault, {
       if (messages == null) {
         messages = [];
       }
-      return anyChanged(messages, (arg0) => closure_1_14(arg0));
+      return anyChanged(messages, (arg0) => closure_1_15(arg0));
     });
   },
   LOAD_THREADS_SUCCESS: handleLoadThreadsSuccess,

@@ -1,11 +1,11 @@
-// Module ID: 5963
-// Function ID: 5964
+// Module ID: 6101
+// Function ID: 6102
 // Dependencies: [2]
 
-// Module 5963
+// Module 6101
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeShieldSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/dffeb6f968b626fdbc242eeeb4bf57cb72b911245e773b45804c4d3f291c11bf.png";
-export const metadata = { fileBytes: 25643 };
+export default "https://cdn.discordapp.com/assets/content/5e785062624aeef95b9e3b421e616510c73db22882540a23afdb868d21f532dd.png";
+export const metadata = { fileBytes: 25787 };

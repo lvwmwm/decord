@@ -1,26 +1,26 @@
-// Module ID: 11287
-// Function ID: 11288
+// Module ID: 11416
+// Function ID: 11417
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1371, 7311, 21, 4636, 576, 504, 11288, 4788, 1114, 11289, 8373, 11250, 2]
+// Dependencies: [19, 17, 1372, 7453, 21, 4756, 576, 504, 11417, 4908, 1115, 11418, 8526, 11379, 2]
 // Exports: default
 
-// Module 11287 (UserProfileCustomStatusActionSheet)
+// Module 11416 (UserProfileCustomStatusActionSheet)
 import nativeDefault from "native" /* 576 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8373 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11250 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11288 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11289 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8526 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 11379 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 11417 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11418 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
 const View = fn(17).View;
-const Constants = fn(7311);
+const Constants = fn(7453);
 ({ AVATAR_CONTAINER_SIZE, AVATAR_CUSTOM_STATUS_GAP } = Constants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { statusPreviewContainer: { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: nativeDefault.space.PX_16 }, avatarContainer: { height: AVATAR_CONTAINER_SIZE, width: AVATAR_CONTAINER_SIZE, alignItems: "center", justifyContent: "center" }, avatarStatus: null, customStatusBubble: null };
 let obj3 = { flexDirection: "row", columnGap: AVATAR_CUSTOM_STATUS_GAP, marginHorizontal: nativeDefault.space.PX_16 };
 obj2.avatarStatus = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -46,12 +46,12 @@ export default function UserProfileCustomStatusActionSheet(user) {
   const obj = user(504);
   const tmp6 = useCustomStatusActivityForUserDefault(user.id);
   const name = NicknameUtilsDefault.useName(guildId, channelId, user);
-  const intl = user(1114).intl;
+  const intl = user(1115).intl;
   if (stateFromStores) {
-    let stringResult = intl.string(tmp2(1114).t.AHoLf4);
+    let stringResult = intl.string(tmp2(1115).t.AHoLf4);
   } else {
     const obj3 = { username: name };
-    stringResult = intl.formatToPlainString(tmp2(1114).t["pP5Aa+"], obj3);
+    stringResult = intl.formatToPlainString(tmp2(1115).t["pP5Aa+"], obj3);
   }
   const obj4 = { title: stringResult, children: null };
   const obj5 = { style: tmp.statusPreviewContainer, children: null };

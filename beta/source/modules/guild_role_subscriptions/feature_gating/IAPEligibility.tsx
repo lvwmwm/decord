@@ -1,15 +1,15 @@
-// Module ID: 5580
-// Function ID: 5581
+// Module ID: 5716
+// Function ID: 5717
 // Name: IAPEligibility
-// Dependencies: [19, 1979, 1074, 1363, 5581, 563, 2]
+// Dependencies: [19, 2063, 1074, 1364, 5717, 563, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5580 (IAPEligibility)
-import PlatformUtils from "PlatformUtils" /* 1363 */;
+// Module 5716 (IAPEligibility)
+import PlatformUtils from "PlatformUtils" /* 1364 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 1979 */;
+import GuildStore from "GuildStore" /* 2063 */;
 
-const getSystemVersion = tmp(5581);
+const getSystemVersion = tmp(5717);
 require = fn;
 let c4 = "13.2";
 let items = [fn(1074).GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
@@ -79,7 +79,7 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
   _require = guildId;
   const memo = noop.useMemo(() => {
-    const str = guildId(5581).getSystemVersion();
+    const str = guildId(5717).getSystemVersion();
     let tmp = null != str;
     if (tmp) {
       const parts = str.split(".");
@@ -124,7 +124,7 @@ export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIA
     }
     return tmp;
   }, []);
-  let memo1 = noop.useMemo(() => guildId(1363).isIOS(), []);
+  let memo1 = noop.useMemo(() => guildId(1364).isIOS(), []);
   items = [GuildStore];
   if (memo1) {
     memo1 = obj.useStateFromStores(items, () => {

@@ -1,9 +1,9 @@
 // Module ID: 11159
 // Function ID: 11160
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 11159
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 216, height: 115, scales: [1], hash: "fe842af4f5691380d31cd9c08c20f016", name: "gift_coffee", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f55d97ba12842f12a33d545b3d0fbaea", name: "CrownIcon", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7708
+// Function ID: 7709
 // Name: ClickstreamExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: clickstreamExperimentEnabled
 
-// Module 7569 (ClickstreamExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 7708 (ClickstreamExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-clickstream-analytics", kind: "user", defaultConfig: { enabled: false }, variations: null };

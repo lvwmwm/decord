@@ -1,27 +1,27 @@
-// Module ID: 17752
-// Function ID: 17753
+// Module ID: 18071
+// Function ID: 18072
 // Name: GuildSettingsRoleEditConnectionsControls
-// Dependencies: [19, 17, 7231, 17725, 1074, 5489, 21, 4636, 576, 5488, 12, 6711, 4632, 1114, 5054, 5204, 2024, 5766, 5769, 17753, 5056, 11341, 4603, 17755, 1896, 17756, 17758, 504, 8716, 17739, 2]
+// Dependencies: [19, 17, 7373, 18044, 1074, 5625, 21, 4756, 576, 5624, 12, 6852, 4752, 1115, 5184, 5339, 2108, 5902, 5905, 18072, 5186, 11470, 4723, 18074, 1980, 18075, 18077, 504, 8871, 18058, 2]
 // Exports: default
 
-// Module 17752 (GuildSettingsRoleEditConnectionsControls)
+// Module 18071 (GuildSettingsRoleEditConnectionsControls)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5488 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6711 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11341 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17739 */;
-import GuildSettingsRoleEditConnectionConfigurationDefault from "GuildSettingsRoleEditConnectionConfiguration" /* 17753 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5624 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6852 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11470 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18058 */;
+import GuildSettingsRoleEditConnectionConfigurationDefault from "GuildSettingsRoleEditConnectionConfiguration" /* 18072 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7231 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17725 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7373 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18044 */;
 
 require = fn;
 function HeaderSection(arg0) {
@@ -49,10 +49,10 @@ function HeaderSection(arg0) {
   if (hasConnections) {
     const obj6 = { hitSlop: 8, onPress: clearConnections, disabled: locked, children: null };
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: null };
-    const intl3 = tmp10(1114).intl;
-    obj7.children = intl3.string(tmp10(1114).t.ntW1cc);
-    obj6.children = tmp13(tmp10(4632).Text, obj7);
-    tmp13Result = tmp13(tmp10(5204).PressableOpacity, obj6);
+    const intl3 = tmp10(1115).intl;
+    obj7.children = intl3.string(tmp10(1115).t.ntW1cc);
+    obj6.children = tmp13(tmp10(4752).Text, obj7);
+    tmp13Result = tmp13(tmp10(5339).PressableOpacity, obj6);
   }
   const obj8 = { children: null };
   const obj9 = { children: null };
@@ -60,7 +60,7 @@ function HeaderSection(arg0) {
   obj4.children = items2;
   const items3 = [closure_1_11(View, obj4), ];
   const obj10 = { variant: "text-sm/medium", children: null };
-  const intl4 = tmp10(1114).intl;
+  const intl4 = tmp10(1115).intl;
   const obj11 = { helpdeskArticleUrl: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
   obj10.children = intl4.format(util.t.q5f7tK, obj11);
   items3[1] = closure_1_10(Text_Text.Text, obj10);
@@ -84,28 +84,28 @@ function AndOrRadios(setPendingRoleConfigurations) {
     const _Object = Object;
     const values = Object.values(_modDef12.groupBy(roleConnectionConfigurations, (connectionType) => "" + connectionType.connectionType + ":" + connectionType.applicationId));
     const obj2 = { title: null, value: null, onChange: null, hasIcons: false, children: null };
-    const intl = tmp(1114).intl;
-    obj2.title = intl.string(tmp(1114).t.Xs7PHX);
+    const intl = tmp(1115).intl;
+    obj2.title = intl.string(tmp(1115).t.Xs7PHX);
     obj2.value = setPendingRoleConfigurations.currentOperator;
     obj2.onChange = function onChange(arg0) {
       closure_1(roleConnectionConfigurations, arg0);
     };
-    const obj3 = { value: tmp(5488).ConnectionConfigurationRuleOperator.OR, label: null, disabled: null };
-    const intl2 = tmp(1114).intl;
-    obj3.label = intl2.string(tmp(1114).t.W3iY58);
+    const obj3 = { value: tmp(5624).ConnectionConfigurationRuleOperator.OR, label: null, disabled: null };
+    const intl2 = tmp(1115).intl;
+    obj3.label = intl2.string(tmp(1115).t.W3iY58);
     let tmp11 = locked;
     if (!locked) {
       tmp11 = values.length < 2;
     }
     obj3.disabled = tmp11;
-    const items2 = [closure_1_10(tmp(5769).TableRadioRow, obj3), ];
-    const obj4 = { value: tmp(5488).ConnectionConfigurationRuleOperator.AND, label: null, disabled: null };
-    const intl3 = tmp(1114).intl;
-    obj4.label = intl3.string(tmp(1114).t.gHXS9A);
+    const items2 = [closure_1_10(tmp(5905).TableRadioRow, obj3), ];
+    const obj4 = { value: tmp(5624).ConnectionConfigurationRuleOperator.AND, label: null, disabled: null };
+    const intl3 = tmp(1115).intl;
+    obj4.label = intl3.string(tmp(1115).t.gHXS9A);
     obj4.disabled = locked;
-    items2[1] = closure_1_10(tmp(5769).TableRadioRow, obj4);
+    items2[1] = closure_1_10(tmp(5905).TableRadioRow, obj4);
     obj2.children = items2;
-    return closure_1_11(tmp(5766).TableRadioGroup, obj2);
+    return closure_1_11(tmp(5902).TableRadioGroup, obj2);
   }
 }
 function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integrations) {
@@ -217,17 +217,17 @@ function AddConnectionButton(locked) {
     obj2.onCompleteIdentityApplication = function onCompleteIdentityApplication(arg0) {
       return closure_1_0(closure_2_9, arg0);
     };
-    obj.openLazy(asyncRequireImpl(17755, dependencyMap.paths), combined, obj2);
+    obj.openLazy(asyncRequireImpl(18074, dependencyMap.paths), combined, obj2);
   };
   return closure_10(components_Button_Button.Button, obj);
 }
 const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const Constants = fn(5489);
+const Constants = fn(5625);
 ({ GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE: closure_8, GUILD_ROLE_CONNECTION_APPLICATION_IDENTITY_CONNECTION_TYPE: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { formContent: { paddingTop: 16, paddingBottom: 0 }, warningContainer: { display: "flex", flexDirection: "row", alignItems: "center", padding: 8, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING, borderWidth: 1, borderRadius: nativeDefault.radii.xs }, warningText: { flex: 1, marginLeft: 10 }, headerTitleContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between" } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -361,7 +361,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
   const obj9 = {
     handleConnectionTapped(connectionType, applicationId) {
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "surrogates", value: 81657858 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "paths", value: 73007106 };
       items.push(obj);
       if (AND === ConnectionsUtils.ConnectionConfigurationRuleOperator.AND) {
         if (0 === items.length) {

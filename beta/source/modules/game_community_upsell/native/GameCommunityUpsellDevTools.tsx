@@ -1,14 +1,14 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 15899
+// Function ID: 15900
 // Name: GameCommunityUpsellDevTools
-// Dependencies: [19, 17, 13801, 15709, 21, 4636, 576, 504, 15710, 13803, 13802, 5768, 5686, 15239, 5693, 1940, 1943, 10366, 2]
+// Dependencies: [19, 17, 13981, 15900, 21, 4756, 576, 504, 15901, 13983, 13982, 5904, 5822, 15425, 5829, 2]
 // Exports: default
 
-// Module 15708 (GameCommunityUpsellDevTools)
+// Module 15899 (GameCommunityUpsellDevTools)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13801 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15709 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13981 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15900 */;
 
 const require = fn;
 function MultiGuildDevTools() {
@@ -90,7 +90,7 @@ function MultiGuildDevTools() {
   const obj10 = { style: tmp.section, children: null };
   const obj11 = { title: "Actions", hasIcons: true, children: null };
   const obj9 = { label: "Dismissed Guilds", subLabel: String(dismissedCount), disabled: true };
-  const items4 = [closure_7(require("TableRow").TableRow, { label: "Refresh Upsell Guilds", subLabel: "Redects games and suggested guilds", onPress, icon: closure_7(require("RefreshIcon").RefreshIcon, {}), trailing: closure_7(require("TableRowArrow").TableRowArrow, {}) }), , , ];
+  const items4 = [closure_7(require("TableRow").TableRow, { label: "Refresh Upsell Guilds", subLabel: "Redects games and suggested guilds", onPress, icon: closure_7(require("RefreshIcon").RefreshIcon, {}), trailing: closure_7(require("TableRowArrow").TableRowArrow, {}) }), , ];
   const obj12 = { label: "Refresh Upsell Guilds", subLabel: "Redects games and suggested guilds", onPress, icon: closure_7(require("RefreshIcon").RefreshIcon, {}), trailing: closure_7(require("TableRowArrow").TableRowArrow, {}) };
   items4[1] = closure_7(require("TableRow").TableRow, {
     label: "Clear Dismissed Guilds",
@@ -121,26 +121,6 @@ function MultiGuildDevTools() {
     icon: closure_7(require("RefreshIcon").RefreshIcon, {}),
     trailing: closure_7(require("TableRowArrow").TableRowArrow, {})
   });
-  const obj14 = {
-    label: "Clear All Store State",
-    subLabel: "Reset all MobileGameCommunitiesStore state (guilds, dismissed, fetch cache)",
-    onPress() {
-      MobileGameCommunitiesStore.DEV_clearState();
-    },
-    icon: closure_7(require("RefreshIcon").RefreshIcon, {}),
-    trailing: closure_7(require("TableRowArrow").TableRowArrow, {})
-  };
-  items4[3] = closure_7(require("TableRow").TableRow, {
-    label: "Reset Upsell Animation",
-    subLabel: "Clear the dismissed state for the create button NUX animation so it can replay",
-    onPress() {
-      const result = closure_0(callback[15]).removeDismissedContent(closure_0(callback[16]).DismissibleContent.MOBILE_MULTI_GUILD_CREATE_UPSELL_ANIMATION);
-      const obj = closure_0(callback[15]);
-      const result1 = closure_0(callback[17]).resetDismissibleContentFrameworkStore();
-    },
-    icon: closure_7(require("RefreshIcon").RefreshIcon, {}),
-    trailing: closure_7(require("TableRowArrow").TableRowArrow, {})
-  });
   obj11.children = items4;
   obj10.children = closure_8(require("TableRowGroup").TableRowGroup, obj11);
   items2[2] = closure_7(closure_3, obj10);
@@ -152,7 +132,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, scrollView: { flex: 1 }, section: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.section = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };

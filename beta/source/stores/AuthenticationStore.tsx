@@ -1,26 +1,26 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1073, 1074, 1098, 3, 1099, 510, 1100, 1240, 14279, 573, 14280, 7049, 4538, 1253, 14281, 1230, 12548, 504, 11619, 14282, 7770, 1894, 2]
+// Dependencies: [503, 1073, 1074, 1099, 3, 1100, 510, 1101, 1241, 14470, 573, 14471, 7191, 4657, 1254, 14472, 1231, 12669, 504, 11737, 14473, 7904, 1978, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1099 */;
-import router_utils from "router_utils" /* 1100 */;
-import SentryUtilsDefault from "SentryUtils" /* 1230 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import FingerprintUtils from "FingerprintUtils" /* 1253 */;
-import Server from "Server" /* 1894 */;
-import APIErrorDefault from "APIError" /* 4538 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7049 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7770 */;
-import ApexActionCreators from "ApexActionCreators" /* 11619 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12548 */;
-import fetchExperiments from "fetchExperiments" /* 14279 */;
-import awaitExperiments from "awaitExperiments" /* 14280 */;
-import ClientStateStoreStorage from "ClientStateStoreStorage" /* 14282 */;
+import TokenManagerAll from "TokenManager" /* 1100 */;
+import router_utils from "router_utils" /* 1101 */;
+import SentryUtilsDefault from "SentryUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import Server from "Server" /* 1978 */;
+import APIErrorDefault from "APIError" /* 4657 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7191 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7904 */;
+import ApexActionCreators from "ApexActionCreators" /* 11737 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12669 */;
+import fetchExperiments from "fetchExperiments" /* 14470 */;
+import awaitExperiments from "awaitExperiments" /* 14471 */;
+import ClientStateStoreStorage from "ClientStateStoreStorage" /* 14473 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
 import Dispatcher from "Dispatcher" /* 573 */;
@@ -74,8 +74,8 @@ function fetchFingerprint(arg0) {
           }
           const obj3 = { withGuildExperiments: true, headers: obj2, context: null };
           const obj5 = { location: null };
-          const tmpResult3 = tmp(14279);
-          obj5.location = tmp(1100).getFingerprintLocation();
+          const tmpResult3 = tmp(14470);
+          obj5.location = tmp(1101).getFingerprintLocation();
           obj3.context = obj5;
           const experiments = tmpResult3.fetchExperiments(obj3);
           let nextPromise = experiments.then((body) => {
@@ -102,13 +102,13 @@ function fetchFingerprint(arg0) {
             Dispatcher.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
           });
           closure_33 = nextPromise;
-          const tmpResult4 = tmp(1100);
+          const tmpResult4 = tmp(1101);
         }
         return nextPromise;
       }
     }
     nextPromise = Promise.resolve();
-    tmpResult = tmp(1100);
+    tmpResult = tmp(1101);
   }
 }
 function handleLogout(isSwitchingAccount) {
@@ -182,7 +182,7 @@ function handleLogout(isSwitchingAccount) {
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, LoginStates } = Constants);
 ({ Platforms: c10, Routes: closure_11, TOKEN_KEY: closure_12 } = Constants);
-const AgeGateConstants = fn(1098);
+const AgeGateConstants = fn(1099);
 ({ EXISTING_USER_AGE_GATE_MODAL_KEY, NEW_USER_AGE_GATE_MODAL_KEY } = AgeGateConstants);
 let closure_13 = new LoggerDefault("AuthenticationStore");
 let fingerprint = "fingerprint";
@@ -347,16 +347,16 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
           const Storage3 = tmp4(510).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
         }
-        tmp6Result = tmp6(14281);
+        tmp6Result = tmp6(14472);
       }
     }
     const Storage4 = tmp4(510).Storage;
     if (Storage4.get(constants.APP_FIRST_LOGIN, true)) {
       const obj4 = { platform: constants2.IOS };
-      tmp6(1240).track(tmp15.APP_FIRST_LOGIN, obj4);
+      tmp6(1241).track(tmp15.APP_FIRST_LOGIN, obj4);
       const Storage5 = tmp4(510).Storage;
       const result2 = Storage5.set(tmp15.APP_FIRST_LOGIN, false);
-      const tmp6Result2 = tmp6(1240);
+      const tmp6Result2 = tmp6(1241);
     }
   },
   OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
@@ -373,14 +373,14 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
       tmp8 = id2 === id;
     }
     if (!tmp8) {
-      tmp4(1099).removeAnalyticsToken();
-      const tmp4Result = tmp4(1099);
+      tmp4(1100).removeAnalyticsToken();
+      const tmp4Result = tmp4(1100);
     }
     const obj3 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage.get(closure_1_12) };
     TokenManagerAll.setToken(token, id2);
     if (null != analyticsToken) {
-      tmp4(1099).setAnalyticsToken(analyticsToken);
-      const tmp4Result4 = tmp4(1099);
+      tmp4(1100).setAnalyticsToken(analyticsToken);
+      const tmp4Result4 = tmp4(1100);
     }
     closure_22 = c21;
     c21 = null;
@@ -636,8 +636,8 @@ const authenticationStore = new AuthenticationStore(Dispatcher, {
       tmp8 = userId === id;
     }
     if (!tmp8) {
-      tmp(1099).removeAnalyticsToken();
-      const tmpResult = tmp(1099);
+      tmp(1100).removeAnalyticsToken();
+      const tmpResult = tmp(1100);
     }
     const obj4 = { tokenManagerHasToken: null != TokenManagerAll.getToken(), storageHasToken: null != Storage2.get(closure_1_12) };
     TokenManagerAll.setToken(userId.token, userId);

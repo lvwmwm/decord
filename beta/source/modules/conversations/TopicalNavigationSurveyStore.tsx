@@ -1,9 +1,9 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8152
+// Function ID: 8153
 // Name: TopicalNavigationSurveyStore
 // Dependencies: [504, 573, 2]
 
-// Module 8012 (TopicalNavigationSurveyStore)
+// Module 8152 (TopicalNavigationSurveyStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

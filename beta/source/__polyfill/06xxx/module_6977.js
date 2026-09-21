@@ -1,18 +1,10 @@
 // Module ID: 6977
 // Function ID: 6978
-// Dependencies: [19]
-// Exports: useFlashListContext, useRecyclerViewContext
+// Dependencies: []
+// Exports: useNativeGestureRole
 
 // Module 6977
-import noop from "module_19" /* 19 */;
 
-const useContext = noop.useContext;
-const context = noop.createContext(undefined);
+export function useNativeGestureRole(arg0, children) {
 
-export const RecyclerViewContextProvider = context.Provider;
-export const useRecyclerViewContext = function useRecyclerViewContext() {
-  return useContext(context);
-};
-export const useFlashListContext = function useFlashListContext() {
-  return useContext(context);
-};
+}

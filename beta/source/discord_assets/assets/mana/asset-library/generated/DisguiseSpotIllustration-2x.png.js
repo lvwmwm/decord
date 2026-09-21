@@ -1,11 +1,11 @@
-// Module ID: 6021
-// Function ID: 6022
+// Module ID: 6159
+// Function ID: 6160
 // Dependencies: [2]
 
-// Module 6021
+// Module 6159
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisguiseSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/772e1c5481189f4080d25330ba6f571b384f0ff11c338d9369bf1c7c92394ad1.png";
-export const metadata = { fileBytes: 24645 };
+export default "https://cdn.discordapp.com/assets/content/77abb37f0701eb0be7f94c8410b3cd07c1bc3b013dd43f3fe1f8dd2fce5042b8.png";
+export const metadata = { fileBytes: 24594 };

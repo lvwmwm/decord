@@ -1,16 +1,16 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15579
+// Function ID: 15580
 // Name: SettingsAppearanceDarkModeThemePickerScreen
-// Dependencies: [19, 1184, 21, 15352, 1114, 2]
+// Dependencies: [19, 1185, 21, 15538, 1115, 2]
 // Exports: default
 
-// Module 15393 (SettingsAppearanceDarkModeThemePickerScreen)
-import util from "util" /* 1114 */;
-import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 15352 */;
+// Module 15579 (SettingsAppearanceDarkModeThemePickerScreen)
+import util from "util" /* 1115 */;
+import SettingsAppearanceThemePickerScreenDefault from "SettingsAppearanceThemePickerScreen" /* 15538 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SystemTheme = fn(1184).SystemTheme;
+const SystemTheme = fn(1185).SystemTheme;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceDarkModeThemePickerScreen.tsx");

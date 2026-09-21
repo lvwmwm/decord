@@ -1,9 +1,9 @@
-// Module ID: 4694
-// Function ID: 4695
+// Module ID: 4814
+// Function ID: 4815
 // Name: TypedEventEmitter
 // Dependencies: [568, 2]
 
-// Module 4694 (TypedEventEmitter)
+// Module 4814 (TypedEventEmitter)
 import _mod568 from "module_568" /* 568 */;
 import size from "module_2" /* 2 */;
 

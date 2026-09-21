@@ -1,11 +1,11 @@
-// Module ID: 6245
-// Function ID: 6246
+// Module ID: 6383
+// Function ID: 6384
 // Dependencies: [2]
 
-// Module 6245
+// Module 6383
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardStack3dIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/0438dfc6de3cdd8f1cf1f46f08e88f24785eab8bcb60429d8c384465d648a21b.png";
-export const metadata = { fileBytes: 68893 };
+export default "https://cdn.discordapp.com/assets/content/5d853912dca84b3615c2bdb036301dc2d461dc25a9079611eeb9fc4576121121.png";
+export const metadata = { fileBytes: 68456 };

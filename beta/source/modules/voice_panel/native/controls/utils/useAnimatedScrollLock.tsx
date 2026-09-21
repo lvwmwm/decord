@@ -1,15 +1,15 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12356
+// Function ID: 12357
 // Name: useAnimatedScrollLock
-// Dependencies: [19, 1363, 4373, 2]
+// Dependencies: [19, 1364, 4492, 2]
 // Exports: useAnimatedScrollLock
 
-// Module 12236 (useAnimatedScrollLock)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+// Module 12356 (useAnimatedScrollLock)
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const PlatformUtils = fn(1363);
+const PlatformUtils = fn(1364);
 let closure_3 = PlatformUtils.isAndroid();
 let context = noop.createContext(null);
 let closure_5 = { code: "function onBeginDrag_useAnimatedScrollLockTsx1(_,context){const{isDragScrolling}=this.__closure;context.momentumEndCount=0;isDragScrolling.set(true);}" };

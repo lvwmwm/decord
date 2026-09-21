@@ -1,16 +1,16 @@
-// Module ID: 16776
-// Function ID: 16777
+// Module ID: 17137
+// Function ID: 17138
 // Name: ChannelTitle
-// Dependencies: [19, 4818, 21, 4636, 576, 16772, 4632, 2]
+// Dependencies: [19, 4938, 21, 4756, 576, 17133, 4752, 2]
 
-// Module 16776 (ChannelTitle)
+// Module 17137 (ChannelTitle)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const UnreadSetting = fn(4818).UnreadSetting;
+const UnreadSetting = fn(4938).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_6 = createStyles.createStyleProperties({ muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT });
 let obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
 const size = fn(2);

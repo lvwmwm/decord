@@ -1,19 +1,19 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 16023
+// Function ID: 16024
 // Name: DevToolsAgeVerificationScreen
-// Dependencies: [5, 19, 17, 21, 4636, 576, 8535, 8529, 4335, 8531, 1611, 5768, 5686, 7059, 5693, 2]
+// Dependencies: [5, 19, 17, 21, 4756, 576, 8689, 8682, 4454, 8684, 1612, 5904, 5822, 7201, 5829, 2]
 // Exports: default
 
-// Module 15800 (DevToolsAgeVerificationScreen)
+// Module 16023 (DevToolsAgeVerificationScreen)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import TableRow from "TableRow" /* 5686 */;
-import TableRowArrow from "TableRowArrow" /* 5693 */;
-import TableRowGroup from "TableRowGroup" /* 5768 */;
-import KeyIcon from "KeyIcon" /* 7059 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8531 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8535 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
+import TableRow from "TableRow" /* 5822 */;
+import TableRowArrow from "TableRowArrow" /* 5829 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import KeyIcon from "KeyIcon" /* 7201 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8689 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -69,7 +69,7 @@ let closure_9 = async function _showAgeVerificationTestModal() {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, content: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.content = { padding: nativeDefault.space.PX_16 };

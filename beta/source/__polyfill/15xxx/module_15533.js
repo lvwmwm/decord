@@ -1,9 +1,9 @@
 // Module ID: 15533
 // Function ID: 15534
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15533
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "d5073ab2ca9ee7c06c3f4d761968ac44", name: "ro", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "805fda450615a79e013d34cae4b4a783", name: "PaintPaletteIcon", type: "png" });

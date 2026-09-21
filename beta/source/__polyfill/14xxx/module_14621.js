@@ -1,9 +1,43 @@
 // Module ID: 14621
 // Function ID: 14622
-// Dependencies: [1120]
+// Dependencies: [14584, 14582, 14600, 14622, 14623]
 
 // Module 14621
-import registerAsset from "module_1120" /* 1120 */;
+import _mod14582 from "module_14582" /* 14582 */;
+import _mod14584 from "module_14584" /* 14584 */;
+import _mod14600 from "module_14600" /* 14600 */;
+import _mod14622 from "module_14622" /* 14622 */;
 
+let closure_2 = _mod14584([].push);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "d63daceced7ceb0d84c7aba817626689", name: "ic_call_status_yellow_24px", type: "png" });
+export default (arg0, arg1) => {
+  const tmp = _mod14582(arg0);
+  const items = [];
+  for (const key10010 in tmp) {
+    let tmp12 = require;
+    let tmp14 = _mod14600;
+    let tmp14Result = tmp14(_mod14622, key10010);
+    let tmp2 = !tmp14Result;
+    if (!tmp14Result) {
+      tmp2 = tmp12(14600)(tmp, key10010);
+    }
+    if (!tmp2) {
+      continue;
+    } else {
+      let tmp4 = closure_2(items, key10010);
+      continue;
+    }
+    continue;
+  }
+  for (let num = 0; arg1.length > num; num = num + 1) {
+    let tmp5 = require;
+    let tmp7 = arg1[num];
+    if (_mod14600(tmp, tmp7)) {
+      let tmp5Result = tmp5(14623);
+      if (!~tmp5Result.indexOf(items, tmp7)) {
+        let tmp10 = closure_2(items, tmp7);
+      }
+    }
+  }
+  return items;
+};

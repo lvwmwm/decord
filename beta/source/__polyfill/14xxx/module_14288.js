@@ -1,25 +1,25 @@
 // Module ID: 14288
 // Function ID: 14289
 // Dependencies: []
-// Exports: default
 
 // Module 14288
-const weakMap = new WeakMap();
+if (typeof process === "object") {
+  const _process3 = process;
+  if (process.env) {
+    const _process = process;
+    if (process.env.NODE_DEBUG) {
+      const _process2 = process;
+      if (obj.test(process.env.NODE_DEBUG)) {
+        let fn = () => {
+          const items = ["SEMVER"];
+          HermesBuiltin.arraySpread(HermesBuiltin.copyRestArgs(), 1);
+          return console.error.apply(items);
+        };
+      }
+      module.exports = fn;
+    }
+  }
+}
+fn = () => {
 
-export default function getInternalSlots(arg0, arg1) {
-  let items = arg1;
-  if (undefined === arg1) {
-    items = [];
-  }
-  value = weakMap.get(arg0);
-  if (!value) {
-    const _Object = Object;
-    const obj2 = Object.create(null, items.reduce((acc, item) => {
-      acc[item] = { enumerable: false, writable: true, configurable: true };
-      return acc;
-    }, {}));
-    const result = weakMap.set(arg0, obj2);
-    value = obj2;
-  }
-  return value;
 };

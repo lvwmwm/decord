@@ -1,15 +1,15 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12277
+// Function ID: 12278
 // Name: useNativeForumPostContent
-// Dependencies: [1074, 4636, 1114, 7373, 4975, 2]
+// Dependencies: [1074, 4756, 1115, 7512, 5103, 2]
 // Exports: default
 
-// Module 12157 (useNativeForumPostContent)
+// Module 12277 (useNativeForumPostContent)
 import Constants from "Constants" /* 1074 */;
-import util from "util" /* 1114 */;
-import StickersUtils from "StickersUtils" /* 4975 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7373 */;
-import createStyles from "createStyles" /* 4636 */;
+import util from "util" /* 1115 */;
+import StickersUtils from "StickersUtils" /* 5103 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
+import createStyles from "createStyles" /* 4756 */;
 import size from "module_2" /* 2 */;
 
 const MessageFlags = Constants.MessageFlags;
@@ -75,26 +75,26 @@ export default function useNativeForumPostContent(arg0) {
               let stringResult = intl6.string(util.t.mE3KJN);
             } else {
               if (obj5.getMessageStickers(message).length > 0) {
-                const intl5 = tmp28(1114).intl;
-                stringResult = intl5.string(tmp28(1114).t["7K5Lma"]);
+                const intl5 = tmp28(1115).intl;
+                stringResult = intl5.string(tmp28(1115).t["7K5Lma"]);
               } else {
                 if (null != message.interaction) {
                   if ("" === message.content) {
-                    const intl4 = tmp28(1114).intl;
-                    stringResult = intl4.string(tmp28(1114).t["2v7kfl"]);
+                    const intl4 = tmp28(1115).intl;
+                    stringResult = intl4.string(tmp28(1115).t["2v7kfl"]);
                   }
                 }
                 if (message.hasFlag(MessageFlags.IS_VOICE_MESSAGE)) {
-                  const intl3 = tmp28(1114).intl;
-                  stringResult = intl3.string(tmp28(1114).t["6bhHrc"]);
+                  const intl3 = tmp28(1115).intl;
+                  stringResult = intl3.string(tmp28(1115).t["6bhHrc"]);
                 } else if (message.hasFlag(tmp14.IS_COMPONENTS_V2)) {
-                  const intl2 = tmp28(1114).intl;
-                  stringResult = intl2.string(tmp28(1114).t.Xxm5i3);
+                  const intl2 = tmp28(1115).intl;
+                  stringResult = intl2.string(tmp28(1115).t.Xxm5i3);
                 } else {
                   stringResult = null;
                   if (tmp15) {
-                    const intl = tmp28(1114).intl;
-                    stringResult = intl.string(tmp28(1114).t.JAKsM8);
+                    const intl = tmp28(1115).intl;
+                    stringResult = intl.string(tmp28(1115).t.JAKsM8);
                   }
                   tmp15 = message.embeds.length > 0 || message.attachments.length > 0;
                 }

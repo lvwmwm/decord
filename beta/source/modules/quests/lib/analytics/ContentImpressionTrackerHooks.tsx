@@ -1,15 +1,15 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11741
+// Function ID: 11742
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 7805, 5532, 504, 7830, 8390, 11624, 2]
+// Dependencies: [19, 7939, 5668, 504, 7964, 8543, 11742, 2]
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpression, useQuestImpressionId, useQuestImpressionRef, useQuestStatusChanged
 
-// Module 11623 (ContentImpressionTrackerHooks)
-import AdCreativeType from "AdCreativeType" /* 5532 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7830 */;
-import ContentImpressionTracker from "ContentImpressionTracker" /* 11624 */;
+// Module 11741 (ContentImpressionTrackerHooks)
+import AdCreativeType from "AdCreativeType" /* 5668 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
+import ContentImpressionTracker from "ContentImpressionTracker" /* 11742 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7805 */;
+import QuestStore from "QuestStore" /* 7939 */;
 
 require = fn;
 const size = fn(2);

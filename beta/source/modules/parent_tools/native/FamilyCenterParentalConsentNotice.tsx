@@ -1,20 +1,20 @@
-// Module ID: 14963
-// Function ID: 14964
+// Module ID: 15151
+// Function ID: 15152
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4636, 576, 14955, 14956, 4331, 4632, 14964, 1114, 2396, 2]
+// Dependencies: [19, 21, 4756, 576, 15143, 15144, 4451, 4752, 15152, 1115, 2482, 2]
 // Exports: default
 
-// Module 14963 (FamilyCenterParentalConsentNotice)
+// Module 15151 (FamilyCenterParentalConsentNotice)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14964 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15152 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, link: { textDecorationLine: "underline" } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -44,13 +44,13 @@ export default function FamilyCenterParentalConsentNotice() {
         }
         const obj3 = { style: tmp.container, text: null };
         if (0 === daysRemaining) {
-          const intl2 = tmp2(1114).intl;
+          const intl2 = tmp2(1115).intl;
           const obj4 = { learnMoreHook };
-          let formatResult = intl2.format(tmp9(2396).S5kmfO, obj4);
+          let formatResult = intl2.format(tmp9(2482).S5kmfO, obj4);
         } else {
-          const intl = tmp2(1114).intl;
+          const intl = tmp2(1115).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2396)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2482)["5jm+T3"], obj5);
         }
         obj3.text = formatResult;
         return jsx(FamilyCenterInlineWarningNoticeDefault, { style: tmp.container, text: null });

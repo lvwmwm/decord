@@ -1,14 +1,14 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 17183
+// Function ID: 17184
 // Name: ThreadListLoadingIndicator
-// Dependencies: [19, 21, 4636, 9743, 2]
+// Dependencies: [19, 21, 4756, 9700, 2]
 
-// Module 16822 (ThreadListLoadingIndicator)
-import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 9743 */;
+// Module 17183 (ThreadListLoadingIndicator)
+import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 9700 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_3 = createStyles.createStyles({ spinner: { width: 32, height: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListLoadingIndicator.tsx");

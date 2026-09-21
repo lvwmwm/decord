@@ -1,33 +1,33 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 10013
+// Function ID: 10014
 // Name: GuildTag
-// Dependencies: [19, 17, 1371, 8048, 21, 4636, 576, 1363, 1114, 4632, 5204, 504, 8282, 4603, 9314, 1896, 2]
+// Dependencies: [19, 17, 1372, 8202, 21, 4756, 576, 1364, 1115, 4752, 5339, 504, 8434, 4723, 10014, 1980, 2]
 
-// Module 9313 (GuildTag)
+// Module 10013 (GuildTag)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import GuildTagUtils from "GuildTagUtils" /* 8282 */;
+import util from "util" /* 1115 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import GuildTagUtils from "GuildTagUtils" /* 8434 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const GuildTagBadgeSize = fn(8048).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8202).GuildTagBadgeSize;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 4, paddingHorizontal: 4, paddingVertical: 1, columnGap: 2 }, tag: null };
-let PlatformUtils = fn(1363);
+let PlatformUtils = fn(1364);
 let num = 16;
 if (PlatformUtils.isAndroid()) {
   num = 14;
 }
 let obj4 = { lineHeight: num, textAlignVertical: null, overflow: "hidden" };
-PlatformUtils = fn(1363);
+PlatformUtils = fn(1364);
 let str;
 if (PlatformUtils.isAndroid()) {
   str = "center";

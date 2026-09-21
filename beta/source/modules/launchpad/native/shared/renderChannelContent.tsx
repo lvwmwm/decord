@@ -1,15 +1,15 @@
-// Module ID: 16775
-// Function ID: 16776
+// Module ID: 17136
+// Function ID: 17137
 // Name: renderChannelContent
-// Dependencies: [19, 17, 10246, 4818, 21, 4636, 1363, 16772, 5143, 16776, 4632, 5176, 8711, 16215, 2]
+// Dependencies: [19, 17, 10374, 4938, 21, 4756, 1364, 17133, 5277, 17137, 4752, 5313, 8866, 16457, 2]
 // Exports: default
 
-// Module 16775 (renderChannelContent)
-import Text_Text from "Text/Text" /* 4632 */;
-import LockIcon from "LockIcon" /* 5176 */;
-import WarningIcon from "WarningIcon" /* 8711 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16772 */;
-import ChannelTitleDefault from "ChannelTitle" /* 16776 */;
+// Module 17136 (renderChannelContent)
+import Text_Text from "Text/Text" /* 4752 */;
+import LockIcon from "LockIcon" /* 5313 */;
+import WarningIcon from "WarningIcon" /* 8866 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17133 */;
+import ChannelTitleDefault from "ChannelTitle" /* 17137 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function ChannelContent(arg0) {
   let tmp9Result5 = null != channel;
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(5143)(channel);
+      locked = tmp2(5277)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -90,7 +90,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(16215), obj12);
+      isSubscriptionGated = tmp9(tmp2(16457), obj12);
     }
     items3[2] = isSubscriptionGated;
     obj8.children = items3;
@@ -152,19 +152,19 @@ function ChannelContent(arg0) {
   return React5(View, obj2);
 }
 const View = fn(17).View;
-const SUBTITLE_OPACITY_NORMAL = fn(10246).SUBTITLE_OPACITY_NORMAL;
-const UnreadSetting = fn(4818).UnreadSetting;
+const SUBTITLE_OPACITY_NORMAL = fn(10374).SUBTITLE_OPACITY_NORMAL;
+const UnreadSetting = fn(4938).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
-let PlatformUtils = fn(1363);
+const createStyles = fn(4756);
+let PlatformUtils = fn(1364);
 let num = -1;
 if (PlatformUtils.isIOS()) {
   num = 2;
 }
 let obj3 = { channelContent: { flex: 1, marginTop: num }, channelContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, leftBox: { flexDirection: "column", alignItems: "flex-start", flexShrink: 1 }, rightBox: { flexDirection: "column", alignItems: "flex-end" }, rightContentAbsolute: { position: "absolute", right: 0, top: 0 }, channelTraits: { display: "flex", flexDirection: "row", alignItems: "center" }, channelTraitIcon: null };
 let obj4 = { opacity: SUBTITLE_OPACITY_NORMAL, marginRight: 4, marginTop: null };
-PlatformUtils = fn(1363);
+PlatformUtils = fn(1364);
 let num2 = 0;
 if (PlatformUtils.isAndroid()) {
   num2 = 2;

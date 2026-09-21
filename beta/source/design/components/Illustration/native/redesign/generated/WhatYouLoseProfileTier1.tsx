@@ -1,12 +1,12 @@
-// Module ID: 13469
-// Function ID: 13470
+// Module ID: 13648
+// Function ID: 13649
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 17, 21, 8349, 13470, 13471, 13472, 4488, 2]
+// Dependencies: [19, 17, 21, 8502, 13649, 13650, 13651, 4607, 2]
 // Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
-// Module 13469 (WhatYouLoseProfileTier1)
-import shared from "shared" /* 4488 */;
-import _mod8349 from "module_8349" /* 8349 */;
+// Module 13648 (WhatYouLoseProfileTier1)
+import shared from "shared" /* 4607 */;
+import _mod8502 from "module_8502" /* 8502 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/WhatYouLoseProfileTier1.tsx");
 
 export const getWhatYouLoseProfileTier1Source = function getWhatYouLoseProfileTier1Source(theme) {
-  return _mod8349.getIllustrationSource(theme, {
+  return _mod8502.getIllustrationSource(theme, {
     dark() {
-      return require("module_13470");
+      return require("module_13649");
     },
     darker() {
-      return require("module_13471");
+      return require("module_13650");
     },
     light() {
-      return require("module_13472");
+      return require("module_13651");
     }
   });
 };
 export const useWhatYouLoseProfileTier1Source = function useWhatYouLoseProfileTier1Source() {
   const obj = shared;
-  return _mod8349.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13470");
+      return require("module_13649");
     },
     darker() {
-      return require("module_13471");
+      return require("module_13650");
     },
     light() {
-      return require("module_13472");
+      return require("module_13651");
     }
   });
 };
 export const WhatYouLoseProfileTier1 = function WhatYouLoseProfileTier1(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod8349.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_13470");
+      return require("module_13649");
     },
     darker() {
-      return require("module_13471");
+      return require("module_13650");
     },
     light() {
-      return require("module_13472");
+      return require("module_13651");
     }
   });
   const merged = Object.assign(arg0);

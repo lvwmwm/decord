@@ -1,14 +1,14 @@
-// Module ID: 13366
-// Function ID: 13367
+// Module ID: 13536
+// Function ID: 13537
 // Name: InviteEmbedTextUtils
-// Dependencies: [1371, 1074, 1114, 2882, 4788, 2]
+// Dependencies: [1372, 1074, 1115, 2968, 4908, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 13366 (InviteEmbedTextUtils)
-import util from "util" /* 1114 */;
-import _modDef2882 from "module_2882" /* 2882 */;
-import NicknameUtils from "NicknameUtils" /* 4788 */;
-import UserStore from "UserStore" /* 1371 */;
+// Module 13536 (InviteEmbedTextUtils)
+import util from "util" /* 1115 */;
+import _modDef2968 from "module_2968" /* 2968 */;
+import NicknameUtils from "NicknameUtils" /* 4908 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 function getAskToJoinText(author, appName, isPrivate, id2, arg4) {
@@ -76,7 +76,7 @@ export const getHeaderText = function getHeaderText(name, arg1, arg2) {
     return stringResult;
   } else if (tmp.STREAM_REQUEST === arg1) {
     const intl2 = util.intl;
-    return intl2.string(_modDef2882.DKHhec);
+    return intl2.string(_modDef2968.DKHhec);
   } else {
     const JOIN_REQUEST = tmp.JOIN_REQUEST;
     const intl = util.intl;
@@ -86,11 +86,11 @@ export const getHeaderText = function getHeaderText(name, arg1, arg2) {
 export const getRequestToStreamText = function getRequestToStreamText(author, guild_id, id) {
   if (author.author.id === id) {
     const intl2 = util.intl;
-    let stringResult = intl2.string(_modDef2882["8B3U5O"]);
+    let stringResult = intl2.string(_modDef2968["8B3U5O"]);
   } else {
     const intl = util.intl;
     const obj = { username: NicknameUtils.getName(guild_id.guild_id, guild_id.id, author.author) };
-    stringResult = intl.formatToPlainString(_modDef2882["d/qbC0"], obj);
+    stringResult = intl.formatToPlainString(_modDef2968["d/qbC0"], obj);
   }
   return stringResult;
 };
@@ -107,11 +107,11 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
         if (tmp2.STREAM_REQUEST === type) {
           if (activity.author.id === id2) {
             const intl2 = util.intl;
-            let stringResult = intl2.string(_modDef2882["8B3U5O"]);
+            let stringResult = intl2.string(_modDef2968["8B3U5O"]);
           } else {
             const intl = util.intl;
             const obj = { username: NicknameUtils.getName(guild_id.guild_id, guild_id.id, activity.author) };
-            stringResult = intl.formatToPlainString(_modDef2882["d/qbC0"], obj);
+            stringResult = intl.formatToPlainString(_modDef2968["d/qbC0"], obj);
           }
           return stringResult;
         } else {

@@ -1,19 +1,19 @@
-// Module ID: 12529
-// Function ID: 12530
+// Module ID: 12650
+// Function ID: 12651
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 2021, 21, 4636, 576, 504, 12364, 1114, 5668, 4632, 2]
+// Dependencies: [19, 17, 2105, 21, 4756, 576, 504, 12484, 1115, 5804, 4752, 2]
 // Exports: default
 
-// Module 12529 (ApplicationSectionHeader)
+// Module 12650 (ApplicationSectionHeader)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2021 */;
+import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { applicationHeaderWrapper: { flexDirection: "row", alignItems: "center", height: 32, backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingHorizontal: 16 }, applicationIcon: null };
 let size = { width: 16, height: 16, borderRadius: nativeDefault.radii.sm, marginRight: 8 };
 obj2.applicationIcon = size;
@@ -38,7 +38,7 @@ export default function ApplicationSectionHeader(section) {
     }
   });
   const obj = section(504);
-  const applicationCommandsIconSource = section(12364).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(12484).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;
@@ -49,14 +49,14 @@ export default function ApplicationSectionHeader(section) {
     name = section.name;
   }
   const obj3 = { style: tmp.applicationHeaderWrapper, accessibilityLabel: null, children: null };
-  const intl = tmp2(1114).intl;
-  obj3.accessibilityLabel = intl.formatToPlainString(section(1114).t["Ocw/sM"], { applicationName: name });
+  const intl = tmp2(1115).intl;
+  obj3.accessibilityLabel = intl.formatToPlainString(section(1115).t["Ocw/sM"], { applicationName: name });
   let tmp9 = null != applicationCommandsIconSource;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(5668), obj4);
+    tmp9 = closure_5(guildId(5804), obj4);
   }
-  const items1 = [tmp9, closure_5(section(4632).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
+  const items1 = [tmp9, closure_5(section(4752).Text, { variant: "eyebrow", color: "interactive-text-default", children: name })];
   obj3.children = items1;
   return closure_6(View, obj3);
 };

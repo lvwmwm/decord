@@ -1,17 +1,17 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7317
+// Function ID: 7318
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 558, 5670, 4632, 1363, 4373, 7176, 7177, 6728, 7178, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 558, 5806, 4752, 1364, 4492, 7318, 7319, 6869, 7320, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7175 (FastList)
+// Module 7317 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqual from "discord_common/shallowEqual" /* 558 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4373 */;
-import NativeViewDefault from "NativeView" /* 5670 */;
-import BottomSheetModal from "BottomSheetModal" /* 6728 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7178 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
+import NativeViewDefault from "NativeView" /* 5806 */;
+import BottomSheetModal from "BottomSheetModal" /* 6869 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7320 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -1623,8 +1623,7 @@ class FastList extends PureComponent {
           const result = obj.queueViewabilityChange();
         };
         tmp1.handleLayout = function handleLayout(nativeEvent) {
-          const state = closure_0.state;
-          const fastListComputer = state.fastListComputer;
+          ({ isFirstLayout, fastListComputer } = closure_0.state);
           ({ contentInset, onLayout, horizontal, chunkBase } = closure_0.props);
           const layout = nativeEvent.nativeEvent.layout;
           let num = horizontal ? contentInset.left : contentInset.top;
@@ -1642,11 +1641,14 @@ class FastList extends PureComponent {
           if (onLayout != null) {
             onLayout(nativeEvent, obj);
           }
-          if (state.isFirstLayout) {
+          if (isFirstLayout) {
             if (null == chunkBase) {
               obj.setState(obj.getInitialState(obj.containerSize, fastListComputer, false));
             }
             const result = obj.queueViewabilityChange();
+          }
+          if (isFirstLayout) {
+            const result1 = obj.clampInitialScrollPosition();
           }
           const blocks = obj.computeBlocks();
         };
@@ -2043,6 +2045,28 @@ prototype4["restoreScrollPosition"] = function restoreScrollPosition() {
       const _requestAnimationFrame = requestAnimationFrame;
       self.deferredCompute = requestAnimationFrame(() => self.computeBlocks());
     }
+  }
+};
+prototype4["clampInitialScrollPosition"] = function clampInitialScrollPosition() {
+  const self = this;
+  ({ fastListComputer, initialContentOffset } = this.state);
+  if (null != initialContentOffset) {
+    const horizontal = self.props.horizontal;
+    if (horizontal != null) {
+      if (horizontal) {
+        let y = initialContentOffset.x;
+      }
+      const _Math = Math;
+      const _Math2 = Math;
+      const _Math3 = Math;
+      const bound = Math.max(0, Math.min(y, Math.max(0, fastListComputer.getSize() - self.containerSize)));
+      if (bound !== y) {
+        self.scrollPos = bound;
+        const scrollPosValue = self.scrollPosValue;
+        const result = scrollPosValue.set(bound);
+      }
+    }
+    y = initialContentOffset.y;
   }
 };
 prototype4["computeBlocks"] = function computeBlocks() {

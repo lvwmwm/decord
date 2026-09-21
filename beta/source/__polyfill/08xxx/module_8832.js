@@ -1,9 +1,99 @@
 // Module ID: 8832
 // Function ID: 8833
-// Dependencies: [1120]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8744, 8833, 8743, 8752]
 
 // Module 8832
-import registerAsset from "module_1120" /* 1120 */;
+import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
+import _modDef8752 from "module_8752" /* 8752 */;
+import _modDef8833 from "module_8833" /* 8833 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import noop from "module_19" /* 19 */;
 
+const Use = fn;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+_possibleConstructorReturnDefault;
+const jsx = fn(21).jsx;
+class Use {
+  constructor() {
+    self = this;
+    tmp = closure_3(this, Use);
+    tmp2 = hasOwnProperty;
+    obj = hasOwnProperty(Use);
+    tmp3 = closure_4;
+    if (closure_7()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(Use, _modDef8752);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const props = this.props;
+    let str = props.href;
+    ({ children, x, y, width, height } = props);
+    if (undefined === str) {
+      str = props.xlinkHref;
+    }
+    let match = str;
+    if (str) {
+      match = str.match(Use(8744).idPattern);
+    }
+    let tmp4 = match;
+    if (match) {
+      tmp4 = match[1];
+    }
+    if (!tmp4) {
+      const _console = console;
+      console.warn(`Invalid \`href\` prop for \`Use\` element, expected a href like "#id", but got: "${str}"`);
+    }
+    const size = { href: tmp4, x, y, width, height };
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const merged = Object.assign(Use(8743).withoutXY(this, props));
+    const merged1 = Object.assign(size);
+    obj.children = children;
+    return <tmp7 ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
+  }
+};
+const items = [entry];
+const importDefaultResultResult = _createClass(Use, items);
+importDefaultResultResult.displayName = "Use";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "8490caddc6d6fe2d04f984b90b4d2807", name: "XboxNeutralIcon", type: "png" });
+export default importDefaultResultResult;

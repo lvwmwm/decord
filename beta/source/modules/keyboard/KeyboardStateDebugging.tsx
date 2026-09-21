@@ -1,9 +1,9 @@
-// Module ID: 1873
-// Function ID: 1874
+// Module ID: 1874
+// Function ID: 1875
 // Name: KeyboardStateDebugging
-// Dependencies: [3, 1364, 2]
+// Dependencies: [3, 1365, 2]
 
-// Module 1873 (KeyboardStateDebugging)
+// Module 1874 (KeyboardStateDebugging)
 import LoggerDefault from "Logger" /* 3 */;
 
 const require = fn;

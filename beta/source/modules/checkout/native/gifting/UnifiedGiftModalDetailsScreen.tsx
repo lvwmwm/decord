@@ -1,11 +1,11 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 11090
+// Function ID: 11091
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 4636, 576, 1483, 10959, 10830, 10961, 4632, 1114, 10988, 10989, 10990, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 1484, 11089, 10961, 11091, 4752, 1115, 11118, 11119, 11120, 2]
 
-// Module 10960 (UnifiedGiftModalDetailsScreen)
+// Module 11090 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 576 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10959 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11089 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj = { container: { flex: 1, paddingTop: nativeDefault.space.PX_12, alignItems: "stretch" }, scrollView: null, sectionHeader: null };
 let obj3 = { flex: 1, paddingTop: nativeDefault.space.PX_12, alignItems: "stretch" };
 obj.scrollView = { paddingBottom: nativeDefault.space.PX_24 };

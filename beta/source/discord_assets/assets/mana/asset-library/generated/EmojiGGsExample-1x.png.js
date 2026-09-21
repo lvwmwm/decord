@@ -1,11 +1,11 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12231
+// Function ID: 12232
 // Dependencies: [2]
 
-// Module 12111
+// Module 12231
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiGGsExample-1x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/8d67e485390e00a77326c343eaf996873532bca18a9efe62293dd8bb59dda72c.png";
-export const metadata = { fileBytes: 2494 };
+export default "https://cdn.discordapp.com/assets/content/81cda478728a63278f1ae42ecc224906de3c6559459b36baf0cd32b805b054d7.png";
+export const metadata = { fileBytes: 2463 };

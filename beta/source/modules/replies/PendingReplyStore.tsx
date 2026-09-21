@@ -1,15 +1,15 @@
-// Module ID: 7782
-// Function ID: 7783
+// Module ID: 7916
+// Function ID: 7917
 // Name: PendingReplyStore
-// Dependencies: [32, 1957, 4857, 11, 504, 573, 2]
+// Dependencies: [32, 2041, 4976, 11, 504, 573, 2]
 
-// Module 7782 (PendingReplyStore)
+// Module 7916 (PendingReplyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import MessageStore from "MessageStore" /* 4976 */;
 
 const dependencyMap = {};
 const dependencyMap2 = {};
@@ -44,8 +44,8 @@ prototype["initialize"] = function initialize(arg0) {
 prototype["getPendingReply"] = function getPendingReply(id) {
   return dependencyMap[id];
 };
-prototype["getPendingReplyActionSource"] = function getPendingReplyActionSource(arg0) {
-  return closure_7[arg0];
+prototype["getPendingReplyActionSource"] = function getPendingReplyActionSource(c0) {
+  return closure_7[c0];
 };
 PendingReplyStore.displayName = "PendingReplyStore";
 PendingReplyStore.persistKey = "PendingReplyStore";

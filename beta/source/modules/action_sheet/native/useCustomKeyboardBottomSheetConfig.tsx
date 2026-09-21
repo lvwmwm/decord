@@ -1,12 +1,12 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12333
+// Function ID: 12334
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4628, 1363, 1877, 4504, 1609, 1477, 11493, 5679, 11492, 2]
+// Dependencies: [19, 4748, 1364, 1878, 4624, 1610, 1478, 11619, 5815, 11618, 2]
 // Exports: default
 
-// Module 12213 (useCustomKeyboardBottomSheetConfig)
+// Module 12333 (useCustomKeyboardBottomSheetConfig)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
 const require = globalThis.__r;
 
@@ -39,15 +39,15 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4504).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4624).getKeyboardTypePrevious();
           obj3 = obj;
-          if (keyboardTypePrevious === tmp(1609).KeyboardTypes.SYSTEM) {
+          if (keyboardTypePrevious === tmp(1610).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4504);
+          const tmpResult2 = tmp(4624);
         }
         tmp3 = obj3;
-        tmpResult = tmp(1877);
+        tmpResult = tmp(1878);
       }
     }
     return tmp3;
@@ -71,15 +71,15 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
       if (!AccessibilityStore.useReducedMotion) {
         let obj3 = obj;
         if (0 === tmpResult.getSystemKeyboardHeight()) {
-          const keyboardTypePrevious = tmp(4504).getKeyboardTypePrevious();
+          const keyboardTypePrevious = tmp(4624).getKeyboardTypePrevious();
           obj3 = obj;
-          if (keyboardTypePrevious === tmp(1609).KeyboardTypes.SYSTEM) {
+          if (keyboardTypePrevious === tmp(1610).KeyboardTypes.SYSTEM) {
             obj3 = { animateOnMount: true };
           }
-          const tmpResult2 = tmp(4504);
+          const tmpResult2 = tmp(4624);
         }
         tmp3 = obj3;
-        tmpResult = tmp(1877);
+        tmpResult = tmp(1878);
       }
     }
     return tmp3;

@@ -1,18 +1,18 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7217
+// Function ID: 7218
 // Name: AuthHeader
-// Dependencies: [19, 1074, 21, 4636, 5605, 576, 1176, 2]
+// Dependencies: [19, 1074, 21, 4756, 5741, 576, 1177, 2]
 // Exports: default
 
-// Module 7075 (AuthHeader)
+// Module 7217 (AuthHeader)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1176 */;
+import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5605 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 const obj2 = { header: null };
 const obj3 = {};
 const merged = Object.assign(TextStyles(fn(1074).Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));

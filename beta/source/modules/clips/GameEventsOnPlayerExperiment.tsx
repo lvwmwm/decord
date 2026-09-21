@@ -1,11 +1,11 @@
-// Module ID: 5214
-// Function ID: 5215
+// Module ID: 5349
+// Function ID: 5350
 // Name: GameEventsOnPlayerExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 5214 (GameEventsOnPlayerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 5349 (GameEventsOnPlayerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-07-clips-game-events-on-player", defaultConfig: { enableGameEventsOnPlayer: false }, variations: null };

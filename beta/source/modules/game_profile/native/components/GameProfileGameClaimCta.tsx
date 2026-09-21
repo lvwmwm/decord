@@ -1,10 +1,10 @@
-// Module ID: 9025
-// Function ID: 9026
+// Module ID: 9178
+// Function ID: 9179
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1074, 21, 8809, 7419, 1894, 5056, 1114, 2]
+// Dependencies: [5, 19, 1074, 21, 8957, 7558, 7562, 1978, 5186, 1115, 2]
 // Exports: default
 
-// Module 9025 (GameProfileGameClaimCta)
+// Module 9178 (GameProfileGameClaimCta)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -27,8 +27,8 @@ export default function GameProfileGameClaimCta(trackAction) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -41,14 +41,14 @@ export default function GameProfileGameClaimCta(trackAction) {
             throw value;
           } else if (arg0 === 2) {
             v3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            trackAction(v3(8809).GameProfileTrackActionActions.ClaimGame);
+            trackAction(v3(8957).GameProfileTrackActionActions.ClaimGame);
             v1 = 1;
             v3 = 1;
-            const obj5 = { value: v1(7419).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY), done: false };
-            return obj5;
+            const obj4 = { value: v1(7558).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7562).LoginHandoffSource.GAME_CLAIM), done: false };
+            return obj4;
           }
         } else if (arg0 === 1) {
           v3 = 3;
@@ -61,21 +61,21 @@ export default function GameProfileGameClaimCta(trackAction) {
           v3 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp11) {
+      } catch (tmp5) {
         v3 = tmp;
-        throw tmp11;
+        throw tmp5;
       }
     }
   }), items);
   if (linkedApplications != null) {
-    someResult = linkedApplications.some((type) => type.type === trackAction(dependencyMap[6]).GameLinkTypes.OFFICIAL);
+    someResult = linkedApplications.some((type) => type.type === trackAction(dependencyMap[7]).GameLinkTypes.OFFICIAL);
   }
   if (someResult == null) {
     let obj = { variant: "secondary", size: "md", text: null, onPress: null };
-    const intl = trackAction(1114).intl;
-    obj.text = intl.string(trackAction(1114).t["mqg+to"]);
+    const intl = trackAction(1115).intl;
+    obj.text = intl.string(trackAction(1115).t["mqg+to"]);
     obj.onPress = callback;
-    let tmp3 = jsx(trackAction(5056).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    let tmp3 = jsx(trackAction(5186).Button, { variant: "secondary", size: "md", text: null, onPress: null });
   } else {
     tmp3 = null;
   }

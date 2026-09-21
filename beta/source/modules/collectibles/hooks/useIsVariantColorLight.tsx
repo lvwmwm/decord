@@ -1,11 +1,11 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 9145
+// Function ID: 9146
 // Name: useIsVariantColorLight
-// Dependencies: [19, 1091, 2]
+// Dependencies: [19, 1092, 2]
 // Exports: default
 
-// Module 8991 (useIsVariantColorLight)
-import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
+// Module 9145 (useIsVariantColorLight)
+import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,9 +17,9 @@ export default function useIsVariantColorLight(variantValue) {
   return noop.useMemo(() => {
     let isValidHexResult = utils_ColorUtils.isValidHex(variantValue.variantValue);
     if (isValidHexResult) {
-      const tmpResult = tmp(1091);
-      isValidHexResult = tmpResult.getDarkness(tmp(1091).hex2int(variantValue.variantValue)) < 0.3;
-      const tmpResult2 = tmp(1091);
+      const tmpResult = tmp(1092);
+      isValidHexResult = tmpResult.getDarkness(tmp(1092).hex2int(variantValue.variantValue)) < 0.3;
+      const tmpResult2 = tmp(1092);
     }
     return isValidHexResult;
   }, items);

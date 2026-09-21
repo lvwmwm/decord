@@ -1,12 +1,12 @@
-// Module ID: 15349
-// Function ID: 15350
+// Module ID: 15535
+// Function ID: 15536
 // Name: FontScaleStore
-// Dependencies: [1363, 10248, 1242, 2]
+// Dependencies: [1364, 10376, 1243, 2]
 
-// Module 15349 (FontScaleStore)
-import NativeFontModuleDefault from "NativeFontModule" /* 10248 */;
-import PlatformUtils from "PlatformUtils" /* 1363 */;
-import identity from "module_1242" /* 1242 */;
+// Module 15535 (FontScaleStore)
+import NativeFontModuleDefault from "NativeFontModule" /* 10376 */;
+import PlatformUtils from "PlatformUtils" /* 1364 */;
+import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
 if (PlatformUtils.isAndroid()) {

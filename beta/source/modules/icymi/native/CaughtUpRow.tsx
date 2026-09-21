@@ -1,13 +1,13 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16854
+// Function ID: 16855
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 4373, 4632, 16549, 576, 8469, 16566, 16562, 4495, 4637, 4338, 13145, 1114, 5056, 16588, 5068, 1093, 672, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4492, 4752, 16791, 576, 8622, 16808, 16804, 4614, 4757, 4457, 13304, 1115, 5186, 16830, 5198, 1094, 672, 2]
 // Exports: default
 
-// Module 16612 (CaughtUpRow)
+// Module 16854 (CaughtUpRow)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
+import timing from "timing" /* 4757 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -18,8 +18,8 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(4632).Text);
-const createICYMIStyles = fn(16549);
+let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(4752).Text);
+const createICYMIStyles = fn(16791);
 let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { container: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 }, textContainer: null, recommendedGuildsContainer: null, iconWrapper: null, icon: null, headerText: null, subtitleText: null, buttonContainer: null, gradient: null };
   const obj2 = { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 };
@@ -47,7 +47,7 @@ export default function ExploreServersRow(visible) {
   visible = visible.visible;
   dependencyMap = undefined;
   const tmp = closure_10();
-  const sharedValue = visible(4373).useSharedValue(false);
+  const sharedValue = visible(4492).useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = noop.useEffect(() => {
     let tmp2 = visible;
@@ -88,14 +88,14 @@ export default function ExploreServersRow(visible) {
             return obj3;
           } else {
             dependencyMap(true);
-            v1(8469).itemInteracted("caught_up", "caught_up", "press_explore");
-            const obj5 = v1(8469);
+            v1(8622).itemInteracted("caught_up", "caught_up", "press_explore");
+            const obj5 = v1(8622);
             const obj4 = { itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "browse_servers_button", actionIntentType: "open", actionDestinationType: null } };
-            v1(8469).feedItemActioned(obj4);
-            const obj6 = v1(8469);
+            v1(8622).feedItemActioned(obj4);
+            const obj6 = v1(8622);
             v1 = 1;
             dependencyMap = 1;
-            const obj7 = { value: tmp4(16566).maybeFetchGuildDiscoveryCategories(), done: false };
+            const obj7 = { value: tmp4(16808).maybeFetchGuildDiscoveryCategories(), done: false };
             return obj7;
           }
         } else if (arg0 === 1) {
@@ -123,16 +123,16 @@ export default function ExploreServersRow(visible) {
     }
   }), []);
   const callback1 = noop.useCallback(() => {
-    sharedValue(8469).itemInteracted("caught_up", "caught_up", "press_home");
-    const obj = sharedValue(8469);
-    sharedValue(8469).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
-    const obj2 = sharedValue(8469);
-    const rootNavigationRef = visible(4495).getRootNavigationRef();
+    sharedValue(8622).itemInteracted("caught_up", "caught_up", "press_home");
+    const obj = sharedValue(8622);
+    sharedValue(8622).feedItemActioned({ itemId: "caught_up", itemType: "caught_up", actionParameters: { actionGestureType: "press", actionTargetElement: "back_to_home_button", actionIntentType: "navigate", actionDestinationType: "guild_home" } });
+    const obj2 = sharedValue(8622);
+    const rootNavigationRef = visible(4614).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("tabs", { screen: "guilds" });
     }
   }, []);
-  let obj = visible(4373);
+  let obj = visible(4492);
   class E {
     constructor() {
       obj = closure_1;
@@ -184,12 +184,12 @@ export default function ExploreServersRow(visible) {
       return obj7;
     }
   }
-  let obj2 = visible(4373);
-  E.__closure = { visibleSharedValue: sharedValue, withTiming: visible(4637).withTiming, Easing: visible(4373).Easing };
+  let obj2 = visible(4492);
+  E.__closure = { visibleSharedValue: sharedValue, withTiming: visible(4757).withTiming, Easing: visible(4492).Easing };
   E.__workletHash = 6575188656069;
   E.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(E);
-  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(4637).withTiming, Easing: visible(4373).Easing };
+  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(4757).withTiming, Easing: visible(4492).Easing };
   const fn = function b() {
     let num = 0;
     if (sharedValue.get()) {
@@ -209,12 +209,12 @@ export default function ExploreServersRow(visible) {
     obj7.transform = items;
     return obj7;
   };
-  let obj4 = visible(4373);
-  fn.__closure = { visibleSharedValue: sharedValue, withDelay: visible(4373).withDelay, withSequence: visible(4373).withSequence, withTiming: visible(4637).withTiming, Easing: visible(4373).Easing };
+  let obj4 = visible(4492);
+  fn.__closure = { visibleSharedValue: sharedValue, withDelay: visible(4492).withDelay, withSequence: visible(4492).withSequence, withTiming: visible(4757).withTiming, Easing: visible(4492).Easing };
   fn.__workletHash = 469742746264;
   fn.__initData = __initData2;
   const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(4373).withDelay, withSequence: visible(4373).withSequence, withTiming: visible(4637).withTiming, Easing: visible(4373).Easing };
+  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(4492).withDelay, withSequence: visible(4492).withSequence, withTiming: visible(4757).withTiming, Easing: visible(4492).Easing };
   const fn2 = function x() {
     let num = 0;
     if (sharedValue.get()) {
@@ -234,55 +234,55 @@ export default function ExploreServersRow(visible) {
     obj7.transform = items;
     return obj7;
   };
-  let obj6 = visible(4373);
-  fn2.__closure = { visibleSharedValue: sharedValue, withDelay: visible(4373).withDelay, withSequence: visible(4373).withSequence, withTiming: visible(4637).withTiming, Easing: visible(4373).Easing };
+  let obj6 = visible(4492);
+  fn2.__closure = { visibleSharedValue: sharedValue, withDelay: visible(4492).withDelay, withSequence: visible(4492).withSequence, withTiming: visible(4757).withTiming, Easing: visible(4492).Easing };
   fn2.__workletHash = 14933607481025;
   fn2.__initData = __initData3;
   const animatedStyle2 = obj6.useAnimatedStyle(fn2);
-  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(4373).withDelay, withSequence: visible(4373).withSequence, withTiming: visible(4637).withTiming, Easing: visible(4373).Easing };
-  const token = visible(4338).useToken(sharedValue(576).colors.BACKGROUND_BRAND);
+  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(4492).withDelay, withSequence: visible(4492).withSequence, withTiming: visible(4757).withTiming, Easing: visible(4492).Easing };
+  const token = visible(4457).useToken(sharedValue(576).colors.BACKGROUND_BRAND);
   const obj9 = { children: null };
   const obj10 = { style: tmp.container, children: null };
   const obj11 = { style: tmp.textContainer, children: null };
-  const obj12 = { style: null, children: closure_7(visible(13145).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" }) };
+  const obj12 = { style: null, children: closure_7(visible(13304).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" }) };
   const items1 = [tmp.iconWrapper, animatedStyle];
   obj12.style = items1;
-  const items2 = [closure_7(sharedValue(4373).View, obj12), , ];
+  const items2 = [closure_7(sharedValue(4492).View, obj12), , ];
   const obj14 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: null, children: null };
   const items3 = [tmp.headerText, animatedStyle1];
   obj14.style = items3;
-  const intl = visible(1114).intl;
-  obj14.children = intl.string(visible(1114).t.xjxffq);
+  const intl = visible(1115).intl;
+  obj14.children = intl.string(visible(1115).t.xjxffq);
   items2[1] = closure_7(closure_9, obj14);
   const obj15 = { variant: "text-md/normal", color: "text-default", style: null, children: null };
   const items4 = [tmp.subtitleText, animatedStyle2];
   obj15.style = items4;
-  const intl2 = visible(1114).intl;
-  obj15.children = intl2.string(visible(1114).t.sAApb0);
+  const intl2 = visible(1115).intl;
+  obj15.children = intl2.string(visible(1115).t.sAApb0);
   items2[2] = closure_7(closure_9, obj15);
   obj11.children = items2;
   const items5 = [closure_8(View, obj11), ];
   const obj16 = { style: tmp.buttonContainer, children: null };
   const obj17 = { size: "md", text: null, grow: true, variant: "primary", onPress: null, loading: null };
-  const intl3 = visible(1114).intl;
-  obj17.text = intl3.string(visible(1114).t.lNJYV8);
+  const intl3 = visible(1115).intl;
+  obj17.text = intl3.string(visible(1115).t.lNJYV8);
   obj17.onPress = callback;
-  const items6 = [closure_7(visible(5056).Button, obj17), ];
+  const items6 = [closure_7(visible(5186).Button, obj17), ];
   const obj18 = { size: "md", text: null, grow: true, variant: "secondary", onPress: null };
-  const intl4 = visible(1114).intl;
-  obj18.text = intl4.string(visible(1114).t.AGrUbj);
+  const intl4 = visible(1115).intl;
+  obj18.text = intl4.string(visible(1115).t.AGrUbj);
   obj18.onPress = callback1;
-  items6[1] = closure_7(visible(5056).Button, obj18);
+  items6[1] = closure_7(visible(5186).Button, obj18);
   obj16.children = items6;
   items5[1] = closure_8(View, obj16);
   obj10.children = items5;
-  const items7 = [closure_8(View, obj10), closure_7(visible(16588).Separator, {}), ];
+  const items7 = [closure_8(View, obj10), closure_7(visible(16830).Separator, {}), ];
   const obj19 = { style: tmp.gradient, start: null, end: null, colors: null, pointerEvents: "none" };
   const obj13 = { size: "custom", style: tmp.icon, color: "background-brand" };
-  const obj8 = visible(4338);
-  obj19.start = visible(1093).VerticalGradient.START;
-  obj19.end = visible(1093).VerticalGradient.END;
-  const tmp11 = sharedValue(5068);
+  const obj8 = visible(4457);
+  obj19.start = visible(1094).VerticalGradient.START;
+  obj19.end = visible(1094).VerticalGradient.END;
+  const tmp11 = sharedValue(5198);
   const obj20 = sharedValue(672)(token);
   const items8 = [sharedValue(672)(token).alpha(0.2).hex(), ];
   const alphaResult = sharedValue(672)(token).alpha(0.2);

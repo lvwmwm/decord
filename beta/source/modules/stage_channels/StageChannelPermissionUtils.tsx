@@ -1,24 +1,24 @@
-// Module ID: 5496
-// Function ID: 5497
+// Module ID: 5632
+// Function ID: 5633
 // Name: StageChannelPermissionUtils
-// Dependencies: [4276, 1975, 502, 1957, 1979, 4275, 1962, 1074, 1086, 4280, 1965, 504, 2]
+// Dependencies: [4396, 2059, 502, 2041, 2063, 4395, 2046, 1074, 1086, 4400, 2049, 504, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 5496 (StageChannelPermissionUtils)
+// Module 5632 (StageChannelPermissionUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 1965 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
-import LurkingStore from "LurkingStore" /* 4276 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2049 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
+import LurkingStore from "LurkingStore" /* 4396 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4275 */;
-import StageInstanceStore from "StageInstanceStore" /* 1962 */;
+import ChannelStore from "ChannelStore" /* 2041 */;
+import GuildStore from "GuildStore" /* 2063 */;
+import PermissionStore from "PermissionStore" /* 4395 */;
+import StageInstanceStore from "StageInstanceStore" /* 2046 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const isGuildOwner = fn(1975).isGuildOwner;
+const isGuildOwner = fn(2059).isGuildOwner;
 const Constants = fn(1074);
 ({ GuildFeatures: c10, Permissions: closure_11 } = Constants);
 const size = fn(2);
@@ -35,7 +35,7 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = tmp2(4280).NONE;
+    deny = tmp2(4400).NONE;
   }
   obj.deny = BigFlagUtilsAll.remove(deny, StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   let allow;
@@ -43,7 +43,7 @@ export const createModeratorOverwrite = function createModeratorOverwrite(id, ME
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = tmp2(4280).NONE;
+    allow = tmp2(4400).NONE;
   }
   obj.allow = BigFlagUtilsAll.combine(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
@@ -55,7 +55,7 @@ export const createOrUpdateModeratorOverwrite = function createOrUpdateModerator
     deny = deny.deny;
   }
   if (deny == null) {
-    deny = tmp(4280).NONE;
+    deny = tmp(4400).NONE;
   }
   obj.deny = BigFlagUtilsAll.remove(deny, StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS);
   let allow;
@@ -63,7 +63,7 @@ export const createOrUpdateModeratorOverwrite = function createOrUpdateModerator
     allow = deny.allow;
   }
   if (allow == null) {
-    allow = tmp(4280).NONE;
+    allow = tmp(4400).NONE;
   }
   obj.allow = BigFlagUtilsAll.combine(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, allow);
   return obj;
@@ -96,7 +96,7 @@ export const isEmptyOverwrite = function isEmptyOverwrite(arg0) {
   ({ allow, deny } = arg0);
   let equalsResult = BigFlagUtilsAll.equals(allow, PermissionUtilsAll.NONE);
   if (equalsResult) {
-    equalsResult = tmp(1086).equals(deny, tmp(4280).NONE);
+    equalsResult = tmp(1086).equals(deny, tmp(4400).NONE);
     const tmpResult = tmp(1086);
   }
   return equalsResult;

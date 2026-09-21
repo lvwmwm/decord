@@ -1,20 +1,21 @@
 // Module ID: 4084
 // Function ID: 4085
-// Dependencies: [4076, 3726]
+// Dependencies: [3845, 3846, 4082]
 // Exports: default
 
 // Module 4084
-import module_4076_mod from "module_4076" /* 4076 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import _typeof_mod from "module_3845" /* 3845 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import startOfUTCISOWeek_mod from "startOfUTCISOWeek" /* 4082 */;
 
-let module_4076 = module_4076_mod;
-if (!module_4076) {
-  const obj = { default: module_4076 };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4076;
+  tmp3 = _typeof;
 }
-module_4076 = tmp3;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -23,9 +24,36 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
+let startOfUTCISOWeek = startOfUTCISOWeek_mod;
+if (!startOfUTCISOWeek) {
+  const obj3 = { default: startOfUTCISOWeek };
+  let tmp7 = obj3;
+} else {
+  tmp7 = startOfUTCISOWeek;
+}
+startOfUTCISOWeek = tmp7;
 
-export default function isThisMonth(arg0) {
+export default function getUTCISOWeekYear(arg0) {
   requiredArgs.default(1, arguments);
-  return module_4076.default(Date.now(), arg0);
+  const defaultResult1 = _typeof.default(arg0);
+  const uTCFullYear = defaultResult1.getUTCFullYear();
+  const date = new Date(0);
+  date.setUTCFullYear(uTCFullYear + 1, 0, 4);
+  date.setUTCHours(0, 0, 0, 0);
+  const date1 = new Date(0);
+  date1.setUTCFullYear(uTCFullYear, 0, 4);
+  date1.setUTCHours(0, 0, 0, 0);
+  const defaultResult2 = startOfUTCISOWeek.default(date);
+  const time = defaultResult1.getTime();
+  if (time >= defaultResult2.getTime()) {
+    let sum = uTCFullYear + 1;
+  } else {
+    const time1 = defaultResult1.getTime();
+    sum = uTCFullYear;
+    if (time1 < defaultResult3.getTime()) {
+      sum = uTCFullYear - 1;
+    }
+  }
+  return sum;
 };
 export default exports.default;

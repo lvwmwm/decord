@@ -1,17 +1,17 @@
-// Module ID: 8085
-// Function ID: 8086
+// Module ID: 8239
+// Function ID: 8240
 // Name: useIsCallActive
-// Dependencies: [5359, 4652, 4657, 504, 2]
+// Dependencies: [5495, 4772, 4777, 504, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8085 (useIsCallActive)
-import CallStore from "CallStore" /* 5359 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+// Module 8239 (useIsCallActive)
+import CallStore from "CallStore" /* 5495 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ParticipantTypes = fn(4657).ParticipantTypes;
+const ParticipantTypes = fn(4777).ParticipantTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
 

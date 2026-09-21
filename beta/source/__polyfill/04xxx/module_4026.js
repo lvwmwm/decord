@@ -1,40 +1,33 @@
 // Module ID: 4026
 // Function ID: 4027
-// Dependencies: [4027, 3907, 3726]
+// Dependencies: [4009, 3846]
 // Exports: default
 
 // Module 4026
-import _typeof_mod from "module_4027" /* 4027 */;
-import module_3907_mod from "module_3907" /* 3907 */;
-import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import startOfDay_mod from "startOfDay" /* 4009 */;
+import requiredArgs_mod from "requiredArgs" /* 3846 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let startOfDay = startOfDay_mod;
+if (!startOfDay) {
+  const obj = { default: startOfDay };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = startOfDay;
 }
-_typeof = tmp3;
-let module_3907 = module_3907_mod;
-if (!module_3907) {
-  const obj2 = { default: module_3907 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3907;
-}
-module_3907 = tmp5;
+startOfDay = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function isMatch(arg0, arg1, arg2) {
+export default function isSameDay(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  return module_3907.default(_typeof.default(arg0, arg1, new Date(), arg2));
+  const defaultResult1 = startOfDay.default(arg0);
+  const time = defaultResult1.getTime();
+  return time === startOfDay.default(arg1).getTime();
 };
 export default exports.default;

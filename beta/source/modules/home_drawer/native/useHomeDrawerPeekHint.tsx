@@ -1,29 +1,29 @@
-// Module ID: 16121
-// Function ID: 16122
+// Module ID: 16363
+// Function ID: 16364
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4628, 16118, 1074, 1954, 4373, 1943, 1484, 16122, 504, 16113, 4457, 7491, 4637, 5055, 16117, 2]
+// Dependencies: [32, 19, 4748, 16355, 1074, 2038, 4492, 2027, 1485, 16364, 504, 16357, 4576, 7630, 4757, 5185, 16361, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 16121 (useHomeDrawerPeekHint)
-import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
-import timing from "timing" /* 4637 */;
-import spring from "spring" /* 5055 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16117 */;
+// Module 16363 (useHomeDrawerPeekHint)
+import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import timing from "timing" /* 4757 */;
+import spring from "spring" /* 5185 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4628 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 16118 */;
+import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16355 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const ME = fn(1074).ME;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 let c8 = 2000;
-const Easing = fn(4373).Easing;
-let closure_9 = Easing.inOut(fn(4373).Easing.cubic);
+const Easing = fn(4492).Easing;
+let closure_9 = Easing.inOut(fn(4492).Easing.cubic);
 let closure_10 = [];
-let items = [fn(1943).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
+let items = [fn(2027).DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
 let __initData = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };
 let __initData2 = { code: "function useHomeDrawerPeekHintTsx2(isDragged,wasDragged){const{isPeekGranted,runOnJS,handleDrawerDragged}=this.__closure;if(!isPeekGranted||wasDragged==null)return;if(isDragged&&!wasDragged){runOnJS(handleDrawerDragged)();}}" };
 const size = fn(2);

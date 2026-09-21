@@ -1,15 +1,15 @@
-// Module ID: 13801
-// Function ID: 13802
+// Module ID: 13981
+// Function ID: 13982
 // Name: LocalAppDetectionStore
-// Dependencies: [32, 6696, 1074, 504, 573, 13802, 13803, 2]
+// Dependencies: [32, 6836, 1074, 504, 573, 13982, 13983, 2]
 
-// Module 13801 (LocalAppDetectionStore)
+// Module 13981 (LocalAppDetectionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13802 */;
-import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 13803 */;
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13982 */;
+import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 13983 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ConsentStore from "ConsentStore" /* 6696 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
 
 require = fn;
 const Consents = fn(1074).Consents;
@@ -23,8 +23,8 @@ class LocalAppDetectionStore extends DeviceSettingsStore {
       POST_CONNECTION_OPEN() {
             return closure_0.handlePostConnectionOpen();
           },
-      LOCAL_APP_DETECTION_COMPLETE(arg0) {
-            return closure_0.handleLocalAppDetectionComplete(arg0);
+      LOCAL_APP_DETECTION_COMPLETE(result) {
+            return closure_0.handleLocalAppDetectionComplete(result);
           }
     };
     tmp21 = new tmp2(closure_1(closure_2[4]), obj, new.target, tmp2, tmp, new.target);
@@ -113,8 +113,8 @@ const object = new Object(DispatcherDefault, {
   POST_CONNECTION_OPEN() {
     return closure_0.handlePostConnectionOpen();
   },
-  LOCAL_APP_DETECTION_COMPLETE(arg0) {
-    return closure_0.handleLocalAppDetectionComplete(arg0);
+  LOCAL_APP_DETECTION_COMPLETE(result) {
+    return closure_0.handleLocalAppDetectionComplete(result);
   }
 }, tmp, LocalAppDetectionStore, Object, prototype, new.target, undefined, DEV_resetState);
 let closure_129_0 = object;

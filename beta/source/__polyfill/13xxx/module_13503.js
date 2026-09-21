@@ -1,9 +1,9 @@
 // Module ID: 13503
 // Function ID: 13504
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 13503
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "7d09a15a2a5682035199dcfee2a26d08", name: "badge", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/seasonal", width: 144, height: 150, scales: [1], hash: "fb690a4c8c2a3f037f38e87a73eb44db", name: "chest_idle", type: "png" });

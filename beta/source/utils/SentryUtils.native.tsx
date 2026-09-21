@@ -1,14 +1,14 @@
-// Module ID: 1230
-// Function ID: 1231
+// Module ID: 1231
+// Function ID: 1232
 // Name: SentryUtils
-// Dependencies: [17, 3, 1231, 675, 14170, 674, 1362, 2]
+// Dependencies: [17, 3, 1232, 675, 14352, 674, 1363, 2]
 
-// Module 1230 (SentryUtils)
+// Module 1231 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod17 from "module_17" /* 17 */;
 import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 674 */;
 import _modAll675 from "module_675" /* 675 */;
-import SentryInitUtils_mod from "SentryInitUtils" /* 1231 */;
+import SentryInitUtils_mod from "SentryInitUtils" /* 1232 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -209,7 +209,7 @@ export default {
                 if (str != null) {
                   formatted = str.toLowerCase();
                 }
-                const obj = { type: "y", event_id: timestamp.event_id, timestamp: result, level: formatted, tags: 157.372 };
+                const obj = { type: "y", event_id: timestamp.event_id, timestamp: result, level: formatted, tags: "BULK_ACK" };
                 const origin = timestamp.origin;
                 let tmp3 = typeof origin === "string";
                 if (typeof origin === "string") {

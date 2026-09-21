@@ -1,11 +1,11 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7629
+// Function ID: 7630
 // Name: GiftCardsExperiment
-// Dependencies: [1433, 2]
+// Dependencies: [1434, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 7490 (GiftCardsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1433 */;
+// Module 7629 (GiftCardsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-02-gift-cards", kind: "user", defaultConfig: { enabled: false }, variations: null };

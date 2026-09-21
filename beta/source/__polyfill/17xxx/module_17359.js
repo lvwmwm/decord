@@ -1,20 +1,9 @@
 // Module ID: 17359
 // Function ID: 17360
-// Dependencies: []
+// Dependencies: [1121]
 
 // Module 17359
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "el",
-  pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
-  }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "el-CY", parentLocale: "el" });
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 414.5, height: 200, scales: [2, 3], hash: "ad997b689c0c3a8b01184b1daa84d93c", name: "pending_light", type: "png" });

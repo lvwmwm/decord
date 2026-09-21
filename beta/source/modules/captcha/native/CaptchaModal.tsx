@@ -1,31 +1,31 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17705
+// Function ID: 17706
 // Name: CaptchaModal
-// Dependencies: [19, 17, 16043, 16044, 21, 4636, 7045, 1484, 17402, 7253, 5054, 5773, 4632, 1114, 5056, 11414, 17403, 16051, 2]
+// Dependencies: [19, 17, 16277, 16278, 21, 4756, 7187, 1485, 17706, 7395, 5184, 5909, 4752, 1115, 5186, 5082, 17707, 16285, 2]
 // Exports: default
 
-// Module 17401 (CaptchaModal)
-import util from "util" /* 1114 */;
-import Link from "Link" /* 1484 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import Stack_Stack from "Stack/Stack" /* 5054 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import native from "native" /* 5773 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 11414 */;
-import RegistrationUtils from "RegistrationUtils" /* 16051 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 17403 */;
+// Module 17705 (CaptchaModal)
+import util from "util" /* 1115 */;
+import Link from "Link" /* 1485 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5082 */;
+import Stack_Stack from "Stack/Stack" /* 5184 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import native from "native" /* 5909 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
+import RegistrationUtils from "RegistrationUtils" /* 16285 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 17707 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Keyboard: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_6 = fn(16043).doesRegistrationHaveIdentityType;
-const RegistrationConstants = fn(16044);
+let closure_6 = fn(16277).doesRegistrationHaveIdentityType;
+const RegistrationConstants = fn(16278);
 ({ RegisterTransitionSteps: closure_7, RegistrationTransitionActionTypes: closure_8 } = RegistrationConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let closure_11 = createStyles.createStyles((arg0) => {
   let num = 8;
   if (arg0) {
@@ -39,7 +39,7 @@ let result = size.fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx
 export default function CaptchaModal(arg0) {
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
-  const tmp2 = closure_11(onReject(7045)());
+  const tmp2 = closure_11(onReject(7187)());
   const navigation = Link.useNavigation();
   const items = [navigation];
   const memo = noop.useMemo(() => {
@@ -60,21 +60,21 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  closure_9 = onReject(17402)({ onReject, analyticsType: memo });
+  closure_9 = onReject(17706)({ onReject, analyticsType: memo });
   const effect = noop.useEffect(() => {
     closure_1_4.dismiss();
   }, []);
   let obj2 = { style: tmp2.contentContainer, spacing: 12, children: null };
   const items1 = [closure_9(native.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
-    const intl = tmp3(1114).intl;
-    headerText = intl.string(tmp3(1114).t.FpoiHe);
+    const intl = tmp3(1115).intl;
+    headerText = intl.string(tmp3(1115).t.FpoiHe);
   }
   const items2 = [closure_9(Text_Text.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   let obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
   if (bodyText == null) {
-    const intl2 = tmp3(1114).intl;
-    bodyText = intl2.string(tmp3(1114).t["/CidxO"]);
+    const intl2 = tmp3(1115).intl;
+    bodyText = intl2.string(tmp3(1115).t["/CidxO"]);
   }
   let obj4 = { startHeight: 900, startExpanded: true, children: null };
   let obj5 = { children: null };
@@ -131,7 +131,7 @@ export default function CaptchaModal(arg0) {
     },
     text: null
   };
-  const intl3 = tmp3(1114).intl;
+  const intl3 = tmp3(1115).intl;
   obj6.text = intl3.string(util.t["cY+Oob"]);
   items1[2] = closure_9(components_Button_Button.Button, obj6);
   obj2.children = items1;

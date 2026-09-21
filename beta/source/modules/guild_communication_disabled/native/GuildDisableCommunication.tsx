@@ -1,20 +1,20 @@
-// Module ID: 11975
-// Function ID: 11976
+// Module ID: 12096
+// Function ID: 12097
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2023, 1074, 21, 1114, 4636, 576, 7084, 11284, 5073, 1240, 11976, 4335, 4788, 9696, 4632, 5766, 5769, 7188, 5056, 2]
+// Dependencies: [5, 32, 19, 17, 2107, 1074, 21, 1115, 4756, 576, 7226, 11413, 5203, 1241, 12097, 4454, 4908, 9621, 4752, 5902, 5905, 7330, 5186, 2]
 
-// Module 11975 (GuildDisableCommunication)
+// Module 12096 (GuildDisableCommunication)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
-import Text_Text from "Text/Text" /* 4632 */;
-import components_Button_Button from "components/Button/Button" /* 5056 */;
-import useMountEffectDefault from "useMountEffect" /* 5073 */;
-import TableRadioGroup from "TableRadioGroup" /* 5766 */;
-import TableRadioRow from "TableRadioRow" /* 5769 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7084 */;
-import TextArea from "TextArea" /* 7188 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11284 */;
+import util from "util" /* 1115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
+import Text_Text from "Text/Text" /* 4752 */;
+import components_Button_Button from "components/Button/Button" /* 5186 */;
+import useMountEffectDefault from "useMountEffect" /* 5203 */;
+import TableRadioGroup from "TableRadioGroup" /* 5902 */;
+import TableRadioRow from "TableRadioRow" /* 5905 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7226 */;
+import TextArea from "TextArea" /* 7330 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11413 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -22,7 +22,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const GuildDisableCommunicationConstants = fn(2023);
+const GuildDisableCommunicationConstants = fn(2107);
 ({ DisableCommunicationDuration, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8, SET_COMMUNICATION_DISABLED_MODAL_NAME: closure_9 } = GuildDisableCommunicationConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
@@ -71,7 +71,7 @@ let items = [
     }
   }
 ];
-const createStyles = fn(4636);
+const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, reasonTextArea: null, buttonContainer: null };
 let obj = {
   value: DisableCommunicationDuration.DURATION_60_SEC,
@@ -119,7 +119,7 @@ export default noop.memo(function GuildDisableCommunication(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const obj4 = tmp4(11976);
+            const obj4 = tmp4(12097);
             dependencyMap = 1;
             c3 = 1;
             const obj5 = { value: obj4.setCommunicationDisabledDuration(guild_id, id.id, items[asyncGeneratorStep].value, ref.current), done: false };
@@ -133,17 +133,17 @@ export default noop.memo(function GuildDisableCommunication(arg0) {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          const intl = user(1114).intl;
-          const obj8 = tmp4(4335);
-          const name = tmp4(4788).getName(closure_129_1, null, closure_129_0);
+          const intl = user(1115).intl;
+          const obj8 = tmp4(4454);
+          const name = tmp4(4908).getName(closure_129_1, null, closure_129_0);
           user = name;
           if (name == null) {
             user = "";
           }
           const obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: null, icon: null };
           const obj7 = { user };
-          obj.content = intl.formatToPlainString(user(1114).t.O9C3Nt, obj7);
-          obj.icon = tmp4(9696);
+          obj.content = intl.formatToPlainString(user(1115).t.O9C3Nt, obj7);
+          obj.icon = tmp4(9621);
           obj8.open(obj);
           closure_129_2();
           c3 = 3;

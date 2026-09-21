@@ -1,16 +1,16 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12827
+// Function ID: 12828
 // Name: useMultiPerkStatusValues
-// Dependencies: [4526, 12632, 1114, 2428, 2]
+// Dependencies: [4645, 12754, 1115, 2514, 2]
 // Exports: default
 
-// Module 12706 (useMultiPerkStatusValues)
-import _modDef2428 from "module_2428" /* 2428 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4526 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12632 */;
+// Module 12827 (useMultiPerkStatusValues)
+import _modDef2514 from "module_2514" /* 2514 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4645 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12754 */;
 import size from "module_2" /* 2 */;
 
-const util = tmp(1114);
+const util = tmp(1115);
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");
 
@@ -44,7 +44,7 @@ export default function useMultiPerkStatusValues(powerups) {
     } else if (someResult) {
       const obj3 = { type: "active", statusText: null };
       const intl = util.intl;
-      obj3.statusText = intl.string(_modDef2428.FFLkmx);
+      obj3.statusText = intl.string(_modDef2514.FFLkmx);
       tmp4 = obj3;
     }
     const reduced1 = powerupsActiveStatuses.reduce((acc, type) => {

@@ -1,15 +1,15 @@
-// Module ID: 13346
-// Function ID: 13347
+// Module ID: 13516
+// Function ID: 13517
 // Name: FriendInvite
-// Dependencies: [17, 4285, 7838, 8049, 1114, 4481, 1396, 2]
+// Dependencies: [17, 4405, 7978, 8203, 1115, 4600, 1397, 2]
 // Exports: createFriendInvite
 
-// Module 13346 (FriendInvite)
+// Module 13516 (FriendInvite)
 import _mod17 from "module_17" /* 17 */;
-import util from "util" /* 1114 */;
-import Constants from "Constants" /* 7838 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8049 */;
-import RelationshipStore from "RelationshipStore" /* 4285 */;
+import util from "util" /* 1115 */;
+import Constants from "Constants" /* 7978 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8203 */;
+import RelationshipStore from "RelationshipStore" /* 4405 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -34,8 +34,8 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    str3 = tmp(4481).getUserTag(inviter.inviter);
-    const tmpResult = tmp(4481);
+    str3 = tmp(4600).getUserTag(inviter.inviter);
+    const tmpResult = tmp(4600);
   }
   let isFriendResult = null != inviter.inviter;
   if (isFriendResult) {
@@ -48,8 +48,8 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
   }
   let str4 = "";
   if (null != inviter.inviter) {
-    str4 = Image.resolveAssetSource(tmp(1396).getUserAvatarSource(inviter.inviter)).uri;
-    const tmpResult2 = tmp(1396);
+    str4 = Image.resolveAssetSource(tmp(1397).getUserAvatarSource(inviter.inviter)).uri;
+    const tmpResult2 = tmp(1397);
   }
   const inviter2 = inviter.inviter;
   let id1;
@@ -58,14 +58,14 @@ export const createFriendInvite = function createFriendInvite(inviter, arg1, arg
   }
   if (id1 === arg2) {
     ({ acceptLabelDisabledColor, acceptLabelDisabledBackgroundColor } = colors);
-    const intl3 = tmp5(1114).intl;
-    let stringResult = intl3.string(tmp5(1114).t.ib7Ng1);
+    const intl3 = tmp5(1115).intl;
+    let stringResult = intl3.string(tmp5(1115).t.ib7Ng1);
     let flag = false;
   } else {
     ({ acceptLabelGreenColor, acceptLabelGreenBackgroundColor } = colors);
-    const intl2 = tmp5(1114).intl;
+    const intl2 = tmp5(1115).intl;
     const string2 = intl2.string;
-    const t2 = tmp5(1114).t;
+    const t2 = tmp5(1115).t;
     if (isFriendResult) {
       stringResult = string2(t2.xhxnPn);
       flag = true;

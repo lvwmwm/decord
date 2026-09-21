@@ -1,9 +1,9 @@
 // Module ID: 15707
 // Function ID: 15708
-// Dependencies: [1120]
+// Dependencies: [1121]
 
 // Module 15707
-import registerAsset from "module_1120" /* 1120 */;
+import registerAsset from "module_1121" /* 1121 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4aac4b9e524273cde97c71cf7da9357a", name: "DoubleCheckmarkIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "02e75e392ab5d5a8ed5ab4f8fcae9c77", name: "fi", type: "png" });

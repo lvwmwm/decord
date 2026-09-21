@@ -1,9 +1,9 @@
-// Module ID: 14648
-// Function ID: 14649
+// Module ID: 14839
+// Function ID: 14840
 // Name: MainNavigationLogger
 // Dependencies: [3, 2]
 
-// Module 14648 (MainNavigationLogger)
+// Module 14839 (MainNavigationLogger)
 import LoggerDefault from "Logger" /* 3 */;
 
 const size = fn(2);

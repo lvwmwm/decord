@@ -1,13 +1,13 @@
-// Module ID: 5187
-// Function ID: 5188
+// Module ID: 5278
+// Function ID: 5279
 // Name: AppsIcon
-// Dependencies: [19, 21, 576, 4337, 5114, 2]
+// Dependencies: [19, 21, 576, 4456, 5244, 2]
 // Exports: AppsIcon
 
-// Module 5187 (AppsIcon)
+// Module 5278 (AppsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4337 */;
-import _mod5114 from "module_5114" /* 5114 */;
+import BaseIconImage from "BaseIconImage" /* 4456 */;
+import _mod5244 from "module_5244" /* 5244 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AppsIcon = function AppsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5114, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5244, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

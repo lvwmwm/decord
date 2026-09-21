@@ -1,17 +1,17 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 17270
+// Function ID: 17271
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1371, 1954, 504, 4294, 1114, 4347, 11265, 2]
+// Dependencies: [19, 1372, 2038, 504, 4414, 1115, 4466, 11394, 2]
 // Exports: default
 
-// Module 16917 (BadgeCustomizationProfileCoachmark)
-import util from "util" /* 1114 */;
-import native from "native" /* 4347 */;
+// Module 17270 (BadgeCustomizationProfileCoachmark)
+import util from "util" /* 1115 */;
+import native from "native" /* 4466 */;
 import noop from "module_19" /* 19 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ContentDismissActionType = fn(1954).ContentDismissActionType;
+const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");
 
@@ -35,7 +35,7 @@ export default function BadgeCustomizationProfileCoachmark(visible) {
     obj.onDismiss = function onDismiss() {
       return markAsDismissed(constants.USER_DISMISS);
     };
-    const intl3 = tmp(1114).intl;
+    const intl3 = tmp(1115).intl;
     obj.buttonLabel = intl3.string(util.t["4P5I8V"]);
     obj.onButtonPress = function onButtonPress() {
       markAsDismissed(constants.TAKE_ACTION);

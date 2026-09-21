@@ -1,12 +1,12 @@
-// Module ID: 8767
-// Function ID: 8768
+// Module ID: 8922
+// Function ID: 8923
 // Name: useUserIsTeen
-// Dependencies: [1371, 504, 2]
+// Dependencies: [1372, 504, 2]
 // Exports: useUserIsTeen
 
-// Module 8767 (useUserIsTeen)
+// Module 8922 (useUserIsTeen)
 import initialize from "initialize" /* 504 */;
-import UserStore from "UserStore" /* 1371 */;
+import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);
