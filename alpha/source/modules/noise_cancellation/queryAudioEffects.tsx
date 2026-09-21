@@ -1,10 +1,10 @@
-// Module ID: 14333
-// Function ID: 14334
+// Module ID: 14339
+// Function ID: 14340
 // Name: queryAudioEffects
 // Dependencies: [5, 1074, 4, 1365, 573, 1241, 2]
 // Exports: default
 
-// Module 14333 (queryAudioEffects)
+// Module 14339 (queryAudioEffects)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

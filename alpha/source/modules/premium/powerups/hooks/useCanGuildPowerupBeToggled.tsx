@@ -1,11 +1,11 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12788
+// Function ID: 12789
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4644, 4645, 504, 12752, 1115, 2514, 2]
+// Dependencies: [19, 4644, 4645, 504, 12754, 1115, 2514, 2]
 // Exports: default
 
-// Module 12786 (useCanGuildPowerupBeToggled)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12752 */;
+// Module 12788 (useCanGuildPowerupBeToggled)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12754 */;
 import noop from "module_19" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;
 

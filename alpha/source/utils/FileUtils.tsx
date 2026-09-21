@@ -1,13 +1,13 @@
-// Module ID: 5345
-// Function ID: 5346
+// Module ID: 5350
+// Function ID: 5351
 // Name: FileUtils
-// Dependencies: [2063, 1372, 1074, 1374, 12, 5346, 4681, 4414, 5340, 4652, 1115, 2]
+// Dependencies: [2063, 1372, 1074, 1374, 12, 5351, 4681, 4414, 5345, 4652, 1115, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5345 (FileUtils)
+// Module 5350 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import UploadUtils from "UploadUtils" /* 5340 */;
-import noConflictDefault from "noConflict" /* 5346 */;
+import UploadUtils from "UploadUtils" /* 5345 */;
+import noConflictDefault from "noConflict" /* 5351 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UserStore from "UserStore" /* 1372 */;
 

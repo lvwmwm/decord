@@ -1,10 +1,10 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 11399
+// Function ID: 11400
 // Name: TooltipConstants
 // Dependencies: [5185, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 11397 (TooltipConstants)
+// Module 11399 (TooltipConstants)
 import spring from "spring" /* 5185 */;
 import size from "module_2" /* 2 */;
 

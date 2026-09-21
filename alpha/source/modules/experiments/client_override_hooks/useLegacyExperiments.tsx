@@ -1,10 +1,10 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11735
+// Function ID: 11736
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 4671, 4672, 8136, 4676, 8134, 504, 2]
+// Dependencies: [32, 19, 4671, 4672, 8137, 4676, 8135, 504, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 11733 (useLegacyExperiments)
+// Module 11735 (useLegacyExperiments)
 import ExperimentManager from "ExperimentManager" /* 4676 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 4671 */;
@@ -26,17 +26,17 @@ function parseRegisteredExperiments(stateFromStoresObject) {
       if (typeof type.description === "object") {
         let experimentBucketName = tmp.description[index];
       } else {
-        experimentBucketName = closure_1(8134).getExperimentBucketName(item);
-        const obj3 = closure_1(8134);
+        experimentBucketName = closure_1(8135).getExperimentBucketName(item);
+        const obj3 = closure_1(8135);
       }
       obj.label = experimentBucketName;
-      obj.shortLabel = closure_1(8134).getExperimentBucketName(item);
+      obj.shortLabel = closure_1(8135).getExperimentBucketName(item);
       if (item === constants.CONTROL) {
-        let TREATMENT = obj(8136).Variation_Type.CONTROL;
+        let TREATMENT = obj(8137).Variation_Type.CONTROL;
       } else if (item === tmp4.NOT_ELIGIBLE) {
-        TREATMENT = obj(8136).Variation_Type.UNSPECIFIED;
+        TREATMENT = obj(8137).Variation_Type.UNSPECIFIED;
       } else {
-        TREATMENT = obj(8136).Variation_Type.TREATMENT;
+        TREATMENT = obj(8137).Variation_Type.TREATMENT;
       }
       obj.type = TREATMENT;
       return obj;

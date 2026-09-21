@@ -1,18 +1,18 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 16909
+// Function ID: 16910
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 16901, 21, 4457, 576, 16902, 12536, 4723, 7437, 7439, 1397, 5799, 2]
+// Dependencies: [19, 16907, 21, 4457, 576, 16908, 12538, 4723, 7442, 7444, 1397, 5804, 2]
 // Exports: default
 
-// Module 16903 (OnboardingHomeResourcesSheet)
+// Module 16909 (OnboardingHomeResourcesSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12536 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16902 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12538 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16908 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_3 = fn(16901).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
+let closure_3 = fn(16907).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 const jsx = fn(21).jsx;
 let size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeResourcesSheet.tsx");
@@ -23,7 +23,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
   let obj = guildId(4457);
   let obj2 = { children: null };
   const arr = useResourceChannelsDefault(guildId);
-  obj2.children = jsx(guildId(7439).ActionSheetRow.Group, {
+  obj2.children = jsx(guildId(7444).ActionSheetRow.Group, {
     hasIcons: true,
     children: useResourceChannelsDefault(guildId).map((label) => {
       const resourceChannelIconURL = height(dependencyMap[10]).getResourceChannelIconURL(label);
@@ -45,5 +45,5 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       return jsx(guildId(dependencyMap[9]).ActionSheetRow, { label: label.title, icon: null, onPress: null, arrow: true }, label.channelId);
     })
   });
-  return jsx(guildId(7437).ActionSheet, { children: null });
+  return jsx(guildId(7442).ActionSheet, { children: null });
 };

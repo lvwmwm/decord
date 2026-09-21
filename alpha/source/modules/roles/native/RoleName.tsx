@@ -1,14 +1,14 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12092
+// Function ID: 12093
 // Name: RoleName
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 504, 8218, 1177, 4752, 2]
+// Dependencies: [19, 17, 4748, 21, 4756, 576, 504, 8219, 1177, 4752, 2]
 // Exports: default
 
-// Module 12090 (RoleName)
+// Module 12092 (RoleName)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8218 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8219 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 

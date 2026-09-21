@@ -1,14 +1,14 @@
-// Module ID: 15430
-// Function ID: 15431
+// Module ID: 15436
+// Function ID: 15437
 // Name: QuestHomeRoundtripTracker
-// Dependencies: [1074, 1241, 5084, 5089, 11561, 2]
+// Dependencies: [1074, 1241, 5084, 5089, 11563, 2]
 
-// Module 15430 (QuestHomeRoundtripTracker)
+// Module 15436 (QuestHomeRoundtripTracker)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
 import MetricEvents from "MetricEvents" /* 5089 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 11561 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 11563 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,12 +1,12 @@
-// Module ID: 13443
-// Function ID: 13444
+// Module ID: 13445
+// Function ID: 13446
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4756, 8446, 8439, 1115, 1177, 2]
+// Dependencies: [19, 17, 21, 4756, 8447, 8440, 1115, 1177, 2]
 // Exports: default
 
-// Module 13443 (AvatarDecorationProductPreview)
-import useShopProductItems from "useShopProductItems" /* 8439 */;
-import useCurrentUser from "useCurrentUser" /* 8446 */;
+// Module 13445 (AvatarDecorationProductPreview)
+import useShopProductItems from "useShopProductItems" /* 8440 */;
+import useCurrentUser from "useCurrentUser" /* 8447 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

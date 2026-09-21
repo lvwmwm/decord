@@ -1,13 +1,13 @@
-// Module ID: 6007
-// Function ID: 6008
+// Module ID: 6012
+// Function ID: 6013
 // Name: AvatarNellyExample
-// Dependencies: [21, 5799, 6008, 2]
+// Dependencies: [21, 5804, 6013, 2]
 // Exports: AvatarNellyExample
 
-// Module 6007 (AvatarNellyExample)
+// Module 6012 (AvatarNellyExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6008 from "module_6008" /* 6008 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6013 from "module_6013" /* 6013 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AvatarNellyExample = function AvatarNellyExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6008 };
+  const obj2 = { uri: _modDef6013 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

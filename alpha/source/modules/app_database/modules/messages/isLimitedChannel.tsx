@@ -1,10 +1,10 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7727
+// Function ID: 7728
 // Name: isLimitedChannel
 // Dependencies: [2041, 4675, 1074, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 7725 (isLimitedChannel)
+// Module 7727 (isLimitedChannel)
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
 

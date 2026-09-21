@@ -1,10 +1,10 @@
-// Module ID: 15376
-// Function ID: 15377
+// Module ID: 15382
+// Function ID: 15383
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1074, 21, 4756, 576, 2019, 9399, 1115, 9167, 12077, 9347, 5904, 4752, 11556, 5819, 2108, 5186, 2]
+// Dependencies: [17, 1074, 21, 4756, 576, 2019, 9400, 1115, 9168, 12079, 9348, 5909, 4752, 11558, 5824, 2108, 5186, 2]
 // Exports: default
 
-// Module 15376 (QuestDisclosureModalInner)
+// Module 15382 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import Text_Text from "Text/Text" /* 4752 */;
@@ -42,22 +42,22 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const setting = DropsOptedOut.useSetting();
   let obj = { icon: null, text: null };
   if (setting) {
-    obj.icon = tmp5(tmp2(9399).ServerIcon, { size: "xs" });
+    obj.icon = tmp5(tmp2(9400).ServerIcon, { size: "xs" });
     const intl4 = tmp2(1115).intl;
     obj.text = intl4.string(tmp2(1115).t["2bL0wT"]);
     let items = [obj];
     let tmp6 = tmp5;
     items1 = items;
   } else {
-    obj.icon = tmp5(tmp2(9167).GlobeEarthIcon, { size: "xs" });
+    obj.icon = tmp5(tmp2(9168).GlobeEarthIcon, { size: "xs" });
     const intl = tmp2(1115).intl;
     obj.text = intl.string(tmp2(1115).t.xQSdPv);
     items1 = [obj, , ];
-    const obj2 = { icon: tmp5(tmp2(12077).UserIcon, { size: "xs" }), text: null };
+    const obj2 = { icon: tmp5(tmp2(12079).UserIcon, { size: "xs" }), text: null };
     const intl2 = tmp2(1115).intl;
     obj2.text = intl2.string(tmp2(1115).t.mYt7hQ);
     items1[1] = obj2;
-    const obj3 = { icon: tmp5(tmp2(9347).GameControllerIcon, { size: "xs" }), text: null };
+    const obj3 = { icon: tmp5(tmp2(9348).GameControllerIcon, { size: "xs" }), text: null };
     const intl3 = tmp2(1115).intl;
     obj3.text = intl3.string(tmp2(1115).t.XAsWxQ);
     items1[2] = obj3;
@@ -90,7 +90,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
           return React5(React4, obj, index);
         })
     };
-    isTargetedDisclosure = tmp6(tmp2(5819).Card, obj7);
+    isTargetedDisclosure = tmp6(tmp2(5824).Card, obj7);
   }
   items2[2] = isTargetedDisclosure;
   const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };

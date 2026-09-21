@@ -1,16 +1,16 @@
-// Module ID: 13712
-// Function ID: 13713
+// Module ID: 13718
+// Function ID: 13719
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 13697, 21, 4756, 576, 13699, 11356, 4752, 1115, 7373, 2]
+// Dependencies: [19, 17, 13703, 21, 4756, 576, 13705, 11358, 4752, 1115, 7378, 2]
 // Exports: default
 
-// Module 13712 (RewardGrantNotice)
+// Module 13718 (RewardGrantNotice)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7373 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 11356 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13699 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7378 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 11358 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13705 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,7 +40,7 @@ function DiscountGrantNotice(nRewardsGranted) {
   return React5(View, obj);
 }
 const View = fn(17).View;
-const Constants = fn(13697);
+const Constants = fn(13703);
 ({ REFERRAL_INCENTIVE_DISCOUNT_PERCENTAGE: closure_4, REFERRAL_INCENTIVE_ORBS_PER_CONVERSION: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
@@ -61,7 +61,7 @@ export default function RewardGrantNotice(arg0) {
     if (referralRewardType === PremiumReferralIncentivesExperiment.ReferralRewardType.ORBS) {
       const obj2 = { nRewardsGranted };
       let tmp3 = timestampProducer(OrbsGrantNotice, obj2);
-    } else if (referralRewardType === tmp(13699).ReferralRewardType.DISCOUNT) {
+    } else if (referralRewardType === tmp(13705).ReferralRewardType.DISCOUNT) {
       const obj = { nRewardsGranted };
       tmp3 = timestampProducer(DiscountGrantNotice, obj);
     }

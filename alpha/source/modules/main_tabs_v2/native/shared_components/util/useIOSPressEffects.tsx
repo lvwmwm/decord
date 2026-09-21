@@ -1,10 +1,10 @@
-// Module ID: 5822
-// Function ID: 5823
+// Module ID: 5827
+// Function ID: 5828
 // Name: useIOSPressEffects
 // Dependencies: [19, 1478, 4492, 1364, 5185, 2]
 // Exports: useIOSPressEffects
 
-// Module 5822 (useIOSPressEffects)
+// Module 5827 (useIOSPressEffects)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;

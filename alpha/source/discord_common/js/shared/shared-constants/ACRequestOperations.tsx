@@ -1,9 +1,9 @@
-// Module ID: 13613
-// Function ID: 13614
+// Module ID: 13619
+// Function ID: 13620
 // Name: ACRequestOperations
 // Dependencies: [2]
 
-// Module 13613 (ACRequestOperations)
+// Module 13619 (ACRequestOperations)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ACRequestOperations.tsx");

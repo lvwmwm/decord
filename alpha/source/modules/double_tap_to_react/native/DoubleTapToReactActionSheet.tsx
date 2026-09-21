@@ -1,10 +1,10 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12635
+// Function ID: 12636
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 4748, 5671, 1074, 1375, 21, 4756, 1364, 576, 4492, 4757, 5203, 504, 5185, 2019, 4409, 8225, 1397, 7370, 1241, 7422, 11389, 4723, 7437, 4752, 1115, 12543, 12634, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 5676, 1074, 1375, 21, 4756, 1364, 576, 4492, 4757, 5203, 504, 5185, 2019, 4409, 8226, 1397, 7375, 1241, 7427, 11391, 4723, 7442, 4752, 1115, 12545, 12636, 5186, 2]
 // Exports: default
 
-// Module 12633 (DoubleTapToReactActionSheet)
+// Module 12635 (DoubleTapToReactActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserSettings from "UserSettings" /* 2019 */;
@@ -12,12 +12,12 @@ import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import spring from "spring" /* 5185 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8225 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8226 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import EmojiStore from "EmojiStore" /* 5671 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
 
 const require = globalThis.__r;
 
@@ -341,7 +341,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
           const obj = { value, done: true };
           return obj;
         }
-        const obj7 = { emoji_id: closure_129_2.id, emoji_name: closure_129_2.name, emoji_animated: closure_129_2.animated, recommended: closure_129_4.current, location: tmp22(7422).DOUBLE_TAP_TO_REACT_ACTION_SHEET };
+        const obj7 = { emoji_id: closure_129_2.id, emoji_name: closure_129_2.name, emoji_animated: closure_129_2.animated, recommended: closure_129_4.current, location: tmp22(7427).DOUBLE_TAP_TO_REACT_ACTION_SHEET };
         tmp22(1241).track(constants.DOUBLE_TAP_REACT_EMOJI_UPDATED, obj7);
         const _setTimeout = setTimeout;
         const timerId = setTimeout(() => closure_0(emoji[24]).showDoubleTapEmojiUpdatedToast({ emoji }), 500);

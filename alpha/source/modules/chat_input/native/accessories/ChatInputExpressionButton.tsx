@@ -1,14 +1,14 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12427
+// Function ID: 12428
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4756, 576, 4457, 5334, 1115, 1177, 11511, 9037, 2]
+// Dependencies: [19, 21, 4756, 576, 4457, 5339, 1115, 1177, 11513, 9038, 2]
 
-// Module 12425 (ChatInputExpressionButton)
+// Module 12427 (ChatInputExpressionButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useToken from "useToken" /* 4457 */;
-import Pressables from "Pressables" /* 5334 */;
+import Pressables from "Pressables" /* 5339 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -57,6 +57,6 @@ export default noop.memo((active) => {
   obj4.accessibilityState = { expanded: flag };
   obj4.onPress = callback;
   const ref = noop.useRef(null);
-  obj4.children = jsx(native.Icon, { size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11511 : 9037) });
+  obj4.children = jsx(native.Icon, { size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11513 : 9038) });
   return jsx(Pressables.PressableOpacity, { ref: noop.useRef(null), style: null, hitSlop: null, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, children: null });
 });

@@ -1,48 +1,17 @@
 // Module ID: 14628
 // Function ID: 14629
-// Dependencies: [14597, 14629, 14572, 14625]
+// Dependencies: [14626]
 
 // Module 14628
-import _mod14597 from "module_14597" /* 14597 */;
+import _mod14626 from "module_14626" /* 14626 */;
 
 
-export default (arg0, arg1, value, arg3) => {
-  let obj = arg3;
-  if (!arg3) {
-    obj = {};
-  }
-  let flag = obj.enumerable;
-  let name = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod14597(value)) {
-    tmp3(14629)(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      tmp3(14572)(arg1, value);
-    }
+export default (arg0, arg1) => {
+  const tmp = _mod14626(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
   } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp[tmp2];
-      }
-      if (flag) {
-        arg0[arg1] = value;
-      } else {
-        const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-        tmp3(14625).f(arg0, arg1, obj2);
-        const tmp3Result = tmp3(14625);
-      }
-    } catch (err) {
-    }
+    tmp3 = min(tmp, arg1);
   }
-  return arg0;
+  return tmp3;
 };

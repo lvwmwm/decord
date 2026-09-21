@@ -1,10 +1,10 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11460
+// Function ID: 11461
 // Name: openBadgeDirectoryScreen
-// Dependencies: [4959, 11459, 1980, 2]
+// Dependencies: [4959, 11461, 1980, 2]
 // Exports: closeBadgeDirectoryScreen, openBadgeDirectoryScreen
 
-// Module 11458 (openBadgeDirectoryScreen)
+// Module 11460 (openBadgeDirectoryScreen)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export const openBadgeDirectoryScreen = function openBadgeDirectoryScreen(arg0) 
   if (arg0 === undefined) {
     obj = {};
   }
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11459, dependencyMap.paths), { targetUserId: obj.targetUserId }, c3);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11461, dependencyMap.paths), { targetUserId: obj.targetUserId }, c3);
 };
 export const closeBadgeDirectoryScreen = function closeBadgeDirectoryScreen() {
   ModalActionCreatorsDefault.popWithKey(c3);

@@ -1,10 +1,10 @@
-// Module ID: 5316
-// Function ID: 5317
+// Module ID: 5279
+// Function ID: 5280
 // Name: AppsLockIcon
 // Dependencies: [19, 21, 576, 4456, 5280, 2]
 // Exports: AppsLockIcon
 
-// Module 5316 (AppsLockIcon)
+// Module 5279 (AppsLockIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5280 from "module_5280" /* 5280 */;

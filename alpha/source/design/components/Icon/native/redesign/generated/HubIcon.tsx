@@ -1,10 +1,10 @@
-// Module ID: 5313
-// Function ID: 5314
+// Module ID: 5320
+// Function ID: 5321
 // Name: HubIcon
 // Dependencies: [19, 21, 576, 4456, 5250, 2]
 // Exports: HubIcon
 
-// Module 5313 (HubIcon)
+// Module 5320 (HubIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5250 from "module_5250" /* 5250 */;

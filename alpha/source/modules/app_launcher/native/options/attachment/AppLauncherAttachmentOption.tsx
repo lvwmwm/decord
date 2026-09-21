@@ -1,13 +1,13 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12428
+// Function ID: 12429
 // Name: AppLauncherAttachmentOption
-// Dependencies: [19, 17, 5105, 5104, 21, 4756, 576, 10453, 10389, 1978, 12409, 504, 9420, 12427, 1115, 5339, 11501, 2]
+// Dependencies: [19, 17, 5105, 5104, 21, 4756, 576, 10454, 10390, 1978, 12411, 504, 9421, 12429, 1115, 5344, 11503, 2]
 // Exports: default
 
-// Module 12426 (AppLauncherAttachmentOption)
+// Module 12428 (AppLauncherAttachmentOption)
 import nativeDefault from "native" /* 576 */;
-import FileIcon from "FileIcon" /* 10389 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 10453 */;
+import FileIcon from "FileIcon" /* 10390 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 10454 */;
 import noop from "module_19" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
 

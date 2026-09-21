@@ -1,16 +1,16 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10152
+// Function ID: 10153
 // Name: InviteButton
-// Dependencies: [19, 17, 7976, 21, 4756, 1115, 5186, 2]
+// Dependencies: [19, 17, 7978, 21, 4756, 1115, 5186, 2]
 
-// Module 10151 (InviteButton)
+// Module 10152 (InviteButton)
 import util from "util" /* 1115 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const InviteSendStates = fn(7976).InviteSendStates;
+const InviteSendStates = fn(7978).InviteSendStates;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
 let closure_5 = createStyles.createStyles({ buttonWrapper: { minWidth: 66, flexDirection: "row" } });

@@ -1,10 +1,10 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9919
+// Function ID: 9920
 // Name: VideoBackgroundUtils
-// Dependencies: [2041, 4779, 7227, 1074, 1397, 4936, 1241, 2]
+// Dependencies: [2041, 4779, 7232, 1074, 1397, 4936, 1241, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9918 (VideoBackgroundUtils)
+// Module 9919 (VideoBackgroundUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
@@ -97,7 +97,7 @@ function getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption) {
   }
   return str;
 }
-const VideoBackgroundConstants = fn(7227);
+const VideoBackgroundConstants = fn(7232);
 ({ DefaultVideoBackground: hasOwnProperty, VideoFilterType: metroRequire, ANIMATED_DEFAULT_VIDEO_BACKGROUNDS: closure_7 } = VideoBackgroundConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
@@ -170,7 +170,7 @@ export const trackBackgroundOptionDeleted = function trackBackgroundOptionDelete
 };
 export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProtoFromOption(type) {
   if (null == type) {
-    let obj = { oneofKind: "Array" };
+    let obj = { oneofKind: "r" };
   } else {
     let tmp = null != type && typeof type === "object";
     if (tmp) {

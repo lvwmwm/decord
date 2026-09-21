@@ -1,11 +1,11 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11488
+// Function ID: 11489
 // Name: navigateToThreadCreation
-// Dependencies: [8005, 4613, 4767, 2]
+// Dependencies: [8007, 4613, 4767, 2]
 // Exports: navigateToThreadCreation
 
-// Module 11486 (navigateToThreadCreation)
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8005 */;
+// Module 11488 (navigateToThreadCreation)
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8007 */;
 import size from "module_2" /* 2 */;
 
 const transitionToChannel = tmp3(4767);

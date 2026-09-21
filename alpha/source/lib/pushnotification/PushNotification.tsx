@@ -1,12 +1,12 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9557
+// Function ID: 9558
 // Name: PushNotification
-// Dependencies: [17, 1364, 9557, 9558, 9559, 2]
+// Dependencies: [17, 1364, 9558, 9559, 9560, 2]
 
-// Module 9556 (PushNotification)
-import RNCPushNotificationIOSDefault from "RNCPushNotificationIOS" /* 9557 */;
-import NativePushNotificationMonitorModule from "NativePushNotificationMonitorModule" /* 9558 */;
-import openNotificationSettingsDefault from "openNotificationSettings" /* 9559 */;
+// Module 9557 (PushNotification)
+import RNCPushNotificationIOSDefault from "RNCPushNotificationIOS" /* 9558 */;
+import NativePushNotificationMonitorModule from "NativePushNotificationMonitorModule" /* 9559 */;
+import openNotificationSettingsDefault from "openNotificationSettings" /* 9560 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

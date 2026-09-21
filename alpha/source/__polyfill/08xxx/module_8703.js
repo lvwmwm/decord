@@ -1,21 +1,12 @@
 // Module ID: 8703
 // Function ID: 8704
-// Dependencies: [514, 8704, 8705, 584]
+// Dependencies: [8704, 668]
 
 // Module 8703
-import _mod514 from "module_514" /* 514 */;
-import baseIteratee from "baseIteratee" /* 584 */;
+import baseAssignValue from "baseAssignValue" /* 668 */;
+import _mod8704 from "module_8704" /* 8704 */;
 
 
-export default function createAggregator(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  return (arg0, arg1) => {
-    if (_mod514(arg0)) {
-      let tmpResult = tmp(8704);
-    } else {
-      tmpResult = tmp(8705);
-    }
-    return tmpResult(arg0, closure_0, baseIteratee(arg1, 2), closure_1 ? closure_1() : {});
-  };
-};
+export default _mod8704((arg0, arg1, arg2) => {
+  baseAssignValue(arg0, arg2, arg1);
+});

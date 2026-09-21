@@ -1,15 +1,15 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10404
+// Function ID: 10405
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [32, 2041, 4937, 1074, 4938, 1084, 563, 4940, 10401, 7359, 10404, 7354, 2]
+// Dependencies: [32, 2041, 4937, 1074, 4938, 1084, 563, 4940, 10402, 7364, 10405, 7359, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting, useChannelPresetInheritance, useChannelPresetSettings
 
-// Module 10403 (notficationSettingsChannelFlagUtils)
+// Module 10404 (notficationSettingsChannelFlagUtils)
 import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 4940 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7354 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7359 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10401 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10404 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7359 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7364 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10402 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10405 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
@@ -67,19 +67,19 @@ export const updateChannelPreset = function updateChannelPreset(guild_id, id, ar
   const channelIdFlags = UserGuildSettingsStore.getChannelIdFlags(guild_id, id);
   if (arg2 === notificationSettingsPresetUtils.Presets.ALL_MESSAGES) {
     const obj4 = NotificationSettingsModalActionCreatorsDefault;
-    const obj2 = { message_notifications: UserNotificationSettings.ALL_MESSAGES, flags: tmp2(10404).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ALL_MESSAGES) };
-    const result = obj4.updateChannelOverrideSettings(guild_id, id, obj2, tmp2(7354).NotificationLabels.PresetAll);
-    const tmp2Result = tmp2(10404);
+    const obj2 = { message_notifications: UserNotificationSettings.ALL_MESSAGES, flags: tmp2(10405).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ALL_MESSAGES) };
+    const result = obj4.updateChannelOverrideSettings(guild_id, id, obj2, tmp2(7359).NotificationLabels.PresetAll);
+    const tmp2Result = tmp2(10405);
   } else if (arg2 === tmp2(4940).Presets.MENTIONS) {
     const obj = NotificationSettingsModalActionCreatorsDefault;
-    const obj3 = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2(10404).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
-    const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj3, tmp2(7354).NotificationLabels.PresetMentions);
-    const tmp2Result3 = tmp2(10404);
+    const obj3 = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2(10405).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
+    const result1 = obj.updateChannelOverrideSettings(guild_id, id, obj3, tmp2(7359).NotificationLabels.PresetMentions);
+    const tmp2Result3 = tmp2(10405);
   } else if (arg2 === tmp2(4940).Presets.NOTHING) {
     const obj7 = NotificationSettingsModalActionCreatorsDefault;
-    const obj5 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: tmp2(10404).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
-    const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj5, tmp2(7354).NotificationLabels.PresetNothing);
-    const tmp2Result4 = tmp2(10404);
+    const obj5 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: tmp2(10405).withChannelUnreadFlags(channelIdFlags, constants.UNREADS_ONLY_MENTIONS) };
+    const result2 = obj7.updateChannelOverrideSettings(guild_id, id, obj5, tmp2(7359).NotificationLabels.PresetNothing);
+    const tmp2Result4 = tmp2(10405);
   }
 };
 export const updateChannelToGuildDefault = function updateChannelToGuildDefault(guild_id, id) {

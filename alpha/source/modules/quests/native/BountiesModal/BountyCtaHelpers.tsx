@@ -1,10 +1,10 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15318
+// Function ID: 15319
 // Name: BountyCtaHelpers
 // Dependencies: [1115, 2]
 // Exports: getBountyCtaInfo
 
-// Module 15312 (BountyCtaHelpers)
+// Module 15318 (BountyCtaHelpers)
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 

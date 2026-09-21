@@ -1,12 +1,12 @@
-// Module ID: 5334
-// Function ID: 5335
+// Module ID: 5339
+// Function ID: 5340
 // Name: Pressables
-// Dependencies: [19, 17, 5195, 1181, 21, 4756, 576, 1364, 5335, 2]
+// Dependencies: [19, 17, 5195, 1181, 21, 4756, 576, 1364, 5340, 2]
 
-// Module 5334 (Pressables)
+// Module 5339 (Pressables)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import StyleSheetUtilsDefault from "StyleSheetUtils" /* 5335 */;
+import StyleSheetUtilsDefault from "StyleSheetUtils" /* 5340 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

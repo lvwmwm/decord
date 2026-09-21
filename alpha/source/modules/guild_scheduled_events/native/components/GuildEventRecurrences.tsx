@@ -1,14 +1,14 @@
-// Module ID: 9893
-// Function ID: 9894
+// Module ID: 9894
+// Function ID: 9895
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4756, 576, 9894, 4752, 1115, 11, 9896, 5186, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9895, 4752, 1115, 11, 9897, 5186, 2]
 // Exports: default
 
-// Module 9893 (GuildEventRecurrences)
+// Module 9894 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9894 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9896 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9895 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9897 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8019
+// Function ID: 8020
 // Name: DraftActionCreators
 // Dependencies: [573, 2]
 
-// Module 8017 (DraftActionCreators)
+// Module 8019 (DraftActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

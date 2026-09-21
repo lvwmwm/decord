@@ -1,10 +1,10 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 10070
+// Function ID: 10071
 // Name: LiveStageNotificationsUtils
 // Dependencies: [4675, 4395, 1085, 504, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 10069 (LiveStageNotificationsUtils)
+// Module 10070 (LiveStageNotificationsUtils)
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 

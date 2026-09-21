@@ -1,20 +1,20 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16705
+// Function ID: 16706
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4778, 2041, 4395, 4796, 4405, 5491, 4775, 1074, 4600, 16700, 16701, 2019, 11141, 8433, 504, 11139, 11140, 11147, 1115, 11149, 2]
+// Dependencies: [4778, 2041, 4395, 4796, 4405, 5496, 4775, 1074, 4600, 16706, 16707, 2019, 11142, 8434, 504, 11140, 11141, 11148, 1115, 11150, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 16699 (useYouBarAccessibilityLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11139 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 11140 */;
-import isGameActivityDefault from "isGameActivity" /* 11147 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 11149 */;
+// Module 16705 (useYouBarAccessibilityLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11140 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 11141 */;
+import isGameActivityDefault from "isGameActivity" /* 11148 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 11150 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import PresenceStore from "PresenceStore" /* 4796 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5491 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 
 const require = globalThis.__r;
@@ -53,13 +53,13 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
     if (stateFromStores != null) {
       primaryGuild = stateFromStores.primaryGuild;
     }
-    const userPrimaryGuild = tmp3(8433).getUserPrimaryGuild(primaryGuild);
+    const userPrimaryGuild = tmp3(8434).getUserPrimaryGuild(primaryGuild);
     let tag;
     if (userPrimaryGuild != null) {
       tag = userPrimaryGuild.tag;
     }
     tmp8 = tag;
-    const tmp3Result3 = tmp3(8433);
+    const tmp3Result3 = tmp3(8434);
   }
   tag = tmp8;
   const tmp3Result = require("useGameMentionsAsPlainText");

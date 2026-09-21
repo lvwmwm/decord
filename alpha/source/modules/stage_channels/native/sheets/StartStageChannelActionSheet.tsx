@@ -1,10 +1,10 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8668
+// Function ID: 8669
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 2046, 5626, 1074, 2047, 21, 4756, 576, 504, 5634, 5203, 1241, 1875, 8668, 4723, 4656, 8677, 4752, 1115, 7390, 7363, 6843, 8680, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2046, 5631, 1074, 2047, 21, 4756, 576, 504, 5639, 5203, 1241, 1875, 8669, 4723, 4656, 8678, 4752, 1115, 7395, 7368, 6848, 8681, 5186, 2]
 // Exports: default
 
-// Module 8667 (StartStageChannelActionSheet)
+// Module 8668 (StartStageChannelActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -14,7 +14,7 @@ import StageInstanceStore from "StageInstanceStore" /* 2046 */;
 
 const require = fn;
 const View = fn(17).View;
-const StageChannelsConstants = fn(5626);
+const StageChannelsConstants = fn(5631);
 ({ MAX_STAGE_TOPIC_LENGTH: closure_9, START_STAGE_CHANNEL_EVENT_SHEET_KEY: c10 } = StageChannelsConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Fonts } = Constants);
@@ -69,10 +69,10 @@ export default function StartStageChannelEventActionSheet(channel) {
               if (null != stateFromStores) {
                 c4 = 3;
                 c5 = 1;
-                const obj6 = { value: tmp33(8668).editStage(channel, tmp53, constants.GUILD_ONLY), done: false };
+                const obj6 = { value: tmp33(8669).editStage(channel, tmp53, constants.GUILD_ONLY), done: false };
                 return obj6;
               } else {
-                const tmp33Result2 = tmp33(8668);
+                const tmp33Result2 = tmp33(8669);
                 c4 = 2;
                 c5 = 1;
                 const obj7 = { value: tmp33Result2.startStage(channel, tmp53, constants.GUILD_ONLY, false), done: false };
@@ -140,7 +140,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   const tmp7 = _slicedToArray(noop.useState(false), 2);
   [obj3, c4] = _slicedToArray(noop.useState(null), 2);
   const tmp9 = _slicedToArray(noop.useState(null), 2);
-  const shouldAgeVerifyToSpeakForCurrentUser = channel(5634).useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
+  const shouldAgeVerifyToSpeakForCurrentUser = channel(5639).useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
   stateFromStores(5203)(() => {
     let id;
     if (stateFromStores != null) {
@@ -149,7 +149,7 @@ export default function StartStageChannelEventActionSheet(channel) {
     AnalyticsUtilsDefault.track(constants.START_STAGE_OPENED, { stage_instance_id: id, can_start_public_stage: false, guild_id: channel.guild_id });
   });
   let obj4 = { style: tmp.header, children: null };
-  const items1 = [closure_13(stateFromStores(8677), {}), , ];
+  const items1 = [closure_13(stateFromStores(8678), {}), , ];
   let obj5 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   if (null == stateFromStores) {
     const intl2 = tmp2(1115).intl;
@@ -173,7 +173,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   obj4.children = items1;
   let stringResult2;
   const tmp11 = stateFromStores;
-  const tmp2Result = channel(5634);
+  const tmp2Result = channel(5639);
   if (null == stateFromStores) {
     const intl5 = tmp2(1115).intl;
     stringResult2 = intl5.string(tmp2(1115).t.gR66jX);
@@ -198,8 +198,8 @@ export default function StartStageChannelEventActionSheet(channel) {
   const intl7 = tmp2(1115).intl;
   obj8.placeholder = intl7.string(channel(1115).t.ZwWruY);
   obj8.onSubmitEditing = handleSave;
-  items2[1] = closure_13(channel(6843).TextInput, obj8);
-  items2[2] = closure_13(tmp11(8680), {
+  items2[1] = closure_13(channel(6848).TextInput, obj8);
+  items2[2] = closure_13(tmp11(8681), {
     onConfirmPress() {
       return stateFromStores(_undefined[17]).hideActionSheet(closure_1_10);
     },
@@ -240,5 +240,5 @@ export default function StartStageChannelEventActionSheet(channel) {
   const tmp13Result = closure_14(View, obj4);
   items2[5] = tmp15Result2;
   obj7.children = items2;
-  return closure_13(channel(7390).BottomSheet, { keyboardShouldPersistTaps: "always", children: closure_14(channel(7363).SafeAreaPaddingView, obj7) });
+  return closure_13(channel(7395).BottomSheet, { keyboardShouldPersistTaps: "always", children: closure_14(channel(7368).SafeAreaPaddingView, obj7) });
 };

@@ -1,10 +1,10 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 13955
+// Function ID: 13956
 // Name: DebugExperiment
 // Dependencies: [1434, 2]
 // Exports: useDebugExperiment
 
-// Module 13949 (DebugExperiment)
+// Module 13955 (DebugExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 11144
+// Function ID: 11145
 // Name: ActivityStatusIcon
 // Dependencies: [19, 21, 4756, 2]
 // Exports: default
 
-// Module 11143 (ActivityStatusIcon)
+// Module 11144 (ActivityStatusIcon)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

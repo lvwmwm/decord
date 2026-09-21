@@ -1,10 +1,10 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 17867
+// Function ID: 17868
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7777, 7778, 1074, 2038, 21, 2027, 7779, 4614, 7622, 4962, 4756, 576, 1612, 1115, 2482, 1241, 573, 2029, 4723, 4959, 17857, 1980, 7390, 5184, 5904, 4752, 5186, 2]
+// Dependencies: [19, 17, 7779, 7780, 1074, 2038, 21, 2027, 7781, 4614, 7624, 4962, 4756, 576, 1612, 1115, 2482, 1241, 573, 2029, 4723, 4959, 17868, 1980, 7395, 5184, 5909, 4752, 5186, 2]
 // Exports: default
 
-// Module 17856 (ParentalConsentWarningModal)
+// Module 17867 (ParentalConsentWarningModal)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -13,13 +13,13 @@ import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7777 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const FamilyCenterConstants = fn(7778);
+const FamilyCenterConstants = fn(7780);
 ({ FamilyCenterSubPages: metroRequire, UserLinkStatus: closure_7, UserLinkType: closure_8 } = FamilyCenterConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, UserSettingsSections: c10 } = Constants);
@@ -85,21 +85,21 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       }
       return tmp;
     })) {
-      const tab = tmp2(7779).selectTab(constants.REQUESTS);
-      const tmp2Result = tmp2(7779);
+      const tab = tmp2(7781).selectTab(constants.REQUESTS);
+      const tmp2Result = tmp2(7781);
       const tmp9 = require;
       const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           const obj2 = { screen: constants3.FAMILY_CENTER };
-          tmp9(7622).openUserSettings(obj2);
-          const tmp9Result = tmp9(7622);
+          tmp9(7624).openUserSettings(obj2);
+          const tmp9Result = tmp9(7624);
         }
       }
       tmp2(4962).enqueue(() => daysRemaining(callback[10]).openUserSettings({ screen: constants3.FAMILY_CENTER }));
       const tmp2Result3 = tmp2(4962);
     } else {
-      tmp2(4959).pushLazy(asyncRequireImpl(17857, dependencyMap.paths));
+      tmp2(4959).pushLazy(asyncRequireImpl(17868, dependencyMap.paths));
       const tmp2Result4 = tmp2(4959);
     }
   }, items2);

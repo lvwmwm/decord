@@ -1,16 +1,16 @@
-// Module ID: 12141
-// Function ID: 12142
+// Module ID: 12143
+// Function ID: 12144
 // Name: useEmitAppealIngestionEvent
-// Dependencies: [19, 8701, 8690, 1074, 504, 12133, 12135, 1241, 2]
+// Dependencies: [19, 8702, 8691, 1074, 504, 12135, 12137, 1241, 2]
 // Exports: useEmitAppealIngestionEvent
 
-// Module 12141 (useEmitAppealIngestionEvent)
+// Module 12143 (useEmitAppealIngestionEvent)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8701 */;
+import SafetyHubStore from "SafetyHubStore" /* 8702 */;
 
 const require = fn;
-let closure_5 = fn(8690).SafetyHubAnalyticsActionSource;
+let closure_5 = fn(8691).SafetyHubAnalyticsActionSource;
 const Constants = fn(1074);
 ({ EMPTY_STRING_SNOWFLAKE_ID: metroRequire, AnalyticEvents: closure_7 } = Constants);
 const size = fn(2);

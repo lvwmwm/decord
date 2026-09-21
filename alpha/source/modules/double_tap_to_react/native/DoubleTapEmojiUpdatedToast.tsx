@@ -1,10 +1,10 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11391
+// Function ID: 11392
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [19, 4748, 1375, 21, 4756, 576, 1364, 504, 1397, 7370, 4752, 1115, 5171, 4467, 4454, 2]
+// Dependencies: [19, 4748, 1375, 21, 4756, 576, 1364, 504, 1397, 7375, 4752, 1115, 5171, 4467, 4454, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 11389 (DoubleTapEmojiUpdatedToast)
+// Module 11391 (DoubleTapEmojiUpdatedToast)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;

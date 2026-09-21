@@ -1,15 +1,15 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18339
+// Function ID: 18340
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 4756, 4752, 1115, 2776, 8681, 8683, 2]
+// Dependencies: [19, 21, 4756, 4752, 1115, 2776, 8682, 8684, 2]
 // Exports: default
 
-// Module 18328 (AgeUpdateFooter)
+// Module 18339 (AgeUpdateFooter)
 import util from "util" /* 1115 */;
 import _modDef2776 from "module_2776" /* 2776 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8681 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8683 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,19 +1,19 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15045
+// Function ID: 15046
 // Name: useShouldShowInitialGoogleWalletBanner
-// Dependencies: [5, 32, 19, 8701, 8690, 504, 1364, 8689, 8708, 1380, 8711, 2]
+// Dependencies: [5, 32, 19, 8702, 8691, 504, 1364, 8690, 8709, 1380, 8712, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 15039 (useShouldShowInitialGoogleWalletBanner)
+// Module 15045 (useShouldShowInitialGoogleWalletBanner)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8701 */;
+import SafetyHubStore from "SafetyHubStore" /* 8702 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AgeCheckStatus = fn(8690).AgeCheckStatus;
+const AgeCheckStatus = fn(8691).AgeCheckStatus;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useShouldShowInitialGoogleWalletBanner.tsx");
 
@@ -73,7 +73,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                 c2 = 1;
                 c3 = 2;
                 c4 = 1;
-                const obj6 = { value: _true(8708).fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
+                const obj6 = { value: _true(8709).fetchAgeVerificationMethodsV2SuspendedUser(), done: false };
                 return obj6;
               }
             } else {
@@ -121,7 +121,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
               }
               c3 = 3;
               c4 = 1;
-              const obj8 = { value: _true(8711).checkGoogleWalletAvailable(), done: false };
+              const obj8 = { value: _true(8712).checkGoogleWalletAvailable(), done: false };
               return obj8;
             }
           } catch (tmp27) {

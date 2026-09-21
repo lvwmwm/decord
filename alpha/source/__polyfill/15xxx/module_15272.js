@@ -1,9 +1,0 @@
-// Module ID: 15272
-// Function ID: 15273
-// Dependencies: [1121]
-
-// Module 15272
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a223df53550492950018c2a994e89fed", name: "FiltersHorizontalIcon", type: "png" });

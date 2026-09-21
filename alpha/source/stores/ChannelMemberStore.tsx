@@ -1,9 +1,9 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7521
+// Function ID: 7522
 // Name: ChannelMemberStore
-// Dependencies: [4671, 4778, 502, 2041, 4675, 2105, 2099, 2063, 4796, 5491, 1372, 1074, 1115, 4400, 1240, 12, 1086, 504, 573, 2]
+// Dependencies: [4671, 4778, 502, 2041, 4675, 2105, 2099, 2063, 4796, 5496, 1372, 1074, 1115, 4400, 1240, 12, 1086, 504, 573, 2]
 
-// Module 7519 (ChannelMemberStore)
+// Module 7521 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -19,7 +19,7 @@ import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PresenceStore from "PresenceStore" /* 4796 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5491 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 import UserStore from "UserStore" /* 1372 */;
 
 let require = fn;

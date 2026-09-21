@@ -1,10 +1,10 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7494
+// Function ID: 7495
 // Name: useHasRoleSubscriptionInGuild
 // Dependencies: [502, 2105, 2099, 2063, 1074, 504, 2]
 // Exports: default
 
-// Module 7492 (useHasRoleSubscriptionInGuild)
+// Module 7494 (useHasRoleSubscriptionInGuild)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;

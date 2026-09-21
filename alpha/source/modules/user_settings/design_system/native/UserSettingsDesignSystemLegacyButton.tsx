@@ -1,15 +1,15 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16075
+// Function ID: 16076
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1177, 4752, 5186, 4756, 576, 5184, 8870, 2]
+// Dependencies: [19, 17, 21, 1177, 4752, 5186, 4756, 576, 5184, 8871, 2]
 // Exports: default
 
-// Module 16069 (UserSettingsDesignSystemLegacyButton)
+// Module 16075 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
-import Form from "Form" /* 8870 */;
+import Form from "Form" /* 8871 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

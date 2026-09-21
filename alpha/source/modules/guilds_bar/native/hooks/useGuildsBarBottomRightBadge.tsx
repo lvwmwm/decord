@@ -1,14 +1,14 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16636
+// Function ID: 16637
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4756, 1177, 4457, 576, 16631, 16632, 16636, 2]
+// Dependencies: [32, 19, 21, 4756, 1177, 4457, 576, 16637, 16638, 16642, 2]
 // Exports: default
 
-// Module 16630 (useGuildsBarBottomRightBadge)
+// Module 16636 (useGuildsBarBottomRightBadge)
 import native from "native" /* 1177 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16631 */;
-import GuildsBarGuildJoinRequestBadgeDefault from "GuildsBarGuildJoinRequestBadge" /* 16632 */;
-import InvitesDisabledBadgeDefault from "InvitesDisabledBadge" /* 16636 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16637 */;
+import GuildsBarGuildJoinRequestBadgeDefault from "GuildsBarGuildJoinRequestBadge" /* 16638 */;
+import InvitesDisabledBadgeDefault from "InvitesDisabledBadge" /* 16642 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -105,7 +105,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
       obj8.cutouts = items2;
       return obj8;
     } else {
-      return { badge: null, cutout: "Array", cutouts: "isArray" };
+      return { badge: null, cutout: "Array", cutouts: "padding" };
     }
   }, items1);
 };

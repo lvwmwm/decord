@@ -1,11 +1,11 @@
-// Module ID: 16143
-// Function ID: 16144
+// Module ID: 16149
+// Function ID: 16150
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 4756, 9043, 16144, 9150, 16145, 2]
+// Dependencies: [19, 17, 21, 4756, 9044, 16150, 9151, 16151, 2]
 // Exports: default
 
-// Module 16143 (FeedProductList)
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 16145 */;
+// Module 16149 (FeedProductList)
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 16151 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -13,7 +13,7 @@ function SkeletonGrid(accessibilityLabel) {
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
   num = undefined;
   const tmp = closure_5();
-  const cardLayout = num(16144).useCardLayout();
+  const cardLayout = num(16150).useCardLayout();
   ({ columns, cardWidth: num } = cardLayout);
   const items = [];
   for (let num = 0; num < loadingCardsNum; num = num + columns) {
@@ -29,9 +29,9 @@ function SkeletonGrid(accessibilityLabel) {
     obj3.style = items1;
     obj3.children = arr.map((item, index) => {
       const obj = { width: require, style: null };
-      const obj2 = { marginBottom: num(9043).COLLECTIBLES_SHOP_CARD_GAP };
+      const obj2 = { marginBottom: num(9044).COLLECTIBLES_SHOP_CARD_GAP };
       obj.style = obj2;
-      return closure_4(closure_1(9150), obj, "" + num + "-" + index);
+      return closure_4(closure_1(9151), obj, "" + num + "-" + index);
     });
     let _HermesInternal = HermesInternal;
     let arr2 = items.push(<View key={"row-" + num} style={null}>{null}</View>);
@@ -41,7 +41,7 @@ function SkeletonGrid(accessibilityLabel) {
 const View = fn(17).View;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
-let obj2 = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: { flexDirection: "row", gap: fn(9043).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: fn(9043).COLLECTIBLES_SHOP_CARD_GAP } };
+let obj2 = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: { flexDirection: "row", gap: fn(9044).COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: fn(9044).COLLECTIBLES_SHOP_CARD_GAP } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/FeedProductList.tsx");

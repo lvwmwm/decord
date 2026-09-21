@@ -1,10 +1,10 @@
-// Module ID: 12356
-// Function ID: 12357
+// Module ID: 12358
+// Function ID: 12359
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12279, 9402, 12244, 7763, 5824, 5186, 1115, 4700, 2]
+// Dependencies: [5, 32, 19, 21, 12281, 9403, 12246, 7765, 5829, 5186, 1115, 4700, 2]
 // Exports: default, useCommandRowSend
 
-// Module 12356 (CommandRowButton)
+// Module 12358 (CommandRowButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/base_comp
 
 export default function CommandRowIcon(hasOptions) {
   if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(5824).TableRowArrow, {});
+    let tmp3Result = tmp3(tmp4(5829).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
     const intl = tmp4(1115).intl;
@@ -76,11 +76,11 @@ export const useCommandRowSend = function useCommandRowSend(command) {
             }
             c3 = 1;
             const obj6 = { command, optionValues: null, context: null, sectionName: null, commandOrigin: null };
-            const obj2 = tmp3(9402);
-            obj6.optionValues = tmp3(12244).parseOptionValuesForSend(commandContext.channel, command, {});
+            const obj2 = tmp3(9403);
+            obj6.optionValues = tmp3(12246).parseOptionValuesForSend(commandContext.channel, command, {});
             obj6.context = commandContext;
             obj6.sectionName = sectionName;
-            obj6.commandOrigin = tmp3(7763).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
+            obj6.commandOrigin = tmp3(7765).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
             dependencyMap = 2;
             c4 = 1;
             const obj7 = { value: obj2.executeAppLauncherCommand(obj6), done: false };

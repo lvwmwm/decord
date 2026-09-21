@@ -1,10 +1,10 @@
-// Module ID: 17900
-// Function ID: 17901
+// Module ID: 17911
+// Function ID: 17912
 // Name: SafetyFlowsExperiment
 // Dependencies: [1435, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 17900 (SafetyFlowsExperiment)
+// Module 17911 (SafetyFlowsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const tmp2 = apex_ApexExperimentDefault({ name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

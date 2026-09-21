@@ -1,14 +1,14 @@
-// Module ID: 11013
-// Function ID: 11014
+// Module ID: 11014
+// Function ID: 11015
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4348, 1091, 1115, 3548, 7685, 2]
+// Dependencies: [32, 19, 4348, 1091, 1115, 3548, 7687, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 11013 (SlayerStorefrontTimeUtils)
+// Module 11014 (SlayerStorefrontTimeUtils)
 import util from "util" /* 1115 */;
 import _modDef3548 from "module_3548" /* 3548 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import useIntervalDefault from "useInterval" /* 7685 */;
+import useIntervalDefault from "useInterval" /* 7687 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

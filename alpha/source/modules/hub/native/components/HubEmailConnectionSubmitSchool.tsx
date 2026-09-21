@@ -1,19 +1,19 @@
-// Module ID: 12987
-// Function ID: 12988
+// Module ID: 12989
+// Function ID: 12990
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12970, 1074, 21, 4756, 576, 1484, 7221, 12983, 4656, 12978, 1177, 1115, 4752, 6842, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 12972, 1074, 21, 4756, 576, 1484, 7226, 12985, 4656, 12980, 1177, 1115, 4752, 6847, 5186, 2]
 // Exports: default
 
-// Module 12987 (HubEmailConnectionSubmitSchool)
+// Module 12989 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1484 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6842 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7221 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12978 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6847 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7226 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12980 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -21,7 +21,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12970).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12972).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);

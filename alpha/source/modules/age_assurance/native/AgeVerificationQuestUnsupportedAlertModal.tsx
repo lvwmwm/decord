@@ -1,10 +1,10 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 8698
+// Function ID: 8699
 // Name: AgeVerificationQuestUnsupportedAlertModal
 // Dependencies: [19, 21, 5114, 1115, 3034, 5114, 2]
 // Exports: default
 
-// Module 8697 (AgeVerificationQuestUnsupportedAlertModal)
+// Module 8698 (AgeVerificationQuestUnsupportedAlertModal)
 import util from "util" /* 1115 */;
 import _modDef3034 from "module_3034" /* 3034 */;
 import AlertModal from "AlertModal" /* 5114 */;

@@ -1,22 +1,22 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11638
+// Function ID: 11639
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 11178, 1074, 21, 4756, 576, 11637, 4752, 1115, 11638, 7617, 4959, 7232, 1177, 1612, 563, 11631, 5084, 5089, 7240, 2]
+// Dependencies: [19, 17, 11179, 1074, 21, 4756, 576, 11639, 4752, 1115, 11640, 7619, 4959, 7237, 1177, 1612, 563, 11633, 5084, 5089, 7245, 2]
 // Exports: default
 
-// Module 11636 (MoreTipsModal)
+// Module 11638 (MoreTipsModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
-import _modDef7232 from "module_7232" /* 7232 */;
-import HeaderActionButton from "HeaderActionButton" /* 7617 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11631 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11637 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 11638 */;
+import _modDef7237 from "module_7237" /* 7237 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11633 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11639 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 11640 */;
 import noop from "module_19" /* 19 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11178 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11179 */;
 
 const MetricEvents = tmp(5089);
 require = fn;
@@ -92,7 +92,7 @@ export default function MoreTipsModal(headerStyle) {
             onPress() {
               return warningId(senderId[12]).popWithKey(channelId);
             },
-            source: _modDef7232,
+            source: _modDef7237,
             iconSize: native.IconSizes.MEDIUM,
             accessibilityLabel: null
           };

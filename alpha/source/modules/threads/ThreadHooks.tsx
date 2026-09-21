@@ -1,21 +1,21 @@
-// Module ID: 7509
-// Function ID: 7510
+// Module ID: 7511
+// Function ID: 7512
 // Name: ThreadHooks
-// Dependencies: [32, 4670, 2045, 502, 2041, 4395, 5718, 1074, 504, 1086, 7510, 11, 12, 7511, 7512, 4966, 2]
+// Dependencies: [32, 4670, 2045, 502, 2041, 4395, 5723, 1074, 504, 1086, 7512, 11, 12, 7513, 7514, 4966, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadModerator
 
-// Module 7509 (ThreadHooks)
+// Module 7511 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7510 */;
-import useIsRemoteDefault from "useIsRemote" /* 7511 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
+import useIsRemoteDefault from "useIsRemote" /* 7513 */;
 import _slicedToArray from "module_32" /* 32 */;
 import createExperiment from "createExperiment" /* 4670 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5718 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
 
 const require = globalThis.__r;
 

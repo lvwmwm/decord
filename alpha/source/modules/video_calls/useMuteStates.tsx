@@ -1,10 +1,10 @@
-// Module ID: 7585
-// Function ID: 7586
+// Module ID: 7587
+// Function ID: 7588
 // Name: useMuteStates
 // Dependencies: [2098, 502, 1992, 4395, 4775, 1074, 504, 2]
 // Exports: default
 
-// Module 7585 (useMuteStates)
+// Module 7587 (useMuteStates)
 import ImpersonateStore from "ImpersonateStore" /* 2098 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;

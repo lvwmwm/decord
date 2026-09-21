@@ -1,9 +1,9 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13232
+// Function ID: 13233
 // Name: ProtocolUtils
 // Dependencies: [5078, 2]
 
-// Module 13230 (ProtocolUtils)
+// Module 13232 (ProtocolUtils)
 import _modDef5078 from "module_5078" /* 5078 */;
 
 const os = _modDef5078.os;

@@ -1,13 +1,13 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12589
+// Function ID: 12590
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 2041, 2063, 1074, 21, 4756, 576, 504, 7582, 5732, 10085, 1186, 1397, 1115, 5819, 5796, 2055, 4752, 12565, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2041, 2063, 1074, 21, 4756, 576, 504, 7584, 5737, 10086, 1186, 1397, 1115, 5824, 5801, 2055, 4752, 12567, 5186, 2]
 
-// Module 12587 (GuildDirectoryRow)
+// Module 12589 (GuildDirectoryRow)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import GuildIconDefault from "GuildIcon" /* 5796 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12565 */;
+import GuildIconDefault from "GuildIcon" /* 5801 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12567 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -224,5 +224,5 @@ export default noop.memo(function GuildDirectoryRow(entry) {
   items7[3] = closure_10(entry(5186).Button, obj22);
   obj5.children = items7;
   obj4.children = closure_12(View, obj5);
-  return closure_10(entry(5819).Card, obj4);
+  return closure_10(entry(5824).Card, obj4);
 });

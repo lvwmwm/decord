@@ -1,13 +1,13 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 9973
+// Function ID: 9974
 // Name: SecureFramesActionCreators
-// Dependencies: [5, 502, 2041, 4775, 9971, 1074, 573, 9969, 4656, 5108, 1115, 9973, 5623, 2]
+// Dependencies: [5, 502, 2041, 4775, 9972, 1074, 573, 9970, 4656, 5108, 1115, 9974, 5628, 2]
 
-// Module 9972 (SecureFramesActionCreators)
+// Module 9973 (SecureFramesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9969 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9973 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9970 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9974 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -219,9 +219,9 @@ let closure_11 = async function _updatePersistentCodesEnabled(arg0, value) {
                       c0 = 1;
                       const obj4 = {
                         value: closure_1_9(closure_0, () => {
-                                  c1(5623).disconnect();
-                                  const obj = c1(5623);
-                                  const voiceChannel = c1(5623).selectVoiceChannel(dependencyMap);
+                                  c1(5628).disconnect();
+                                  const obj = c1(5628);
+                                  const voiceChannel = c1(5628).selectVoiceChannel(dependencyMap);
                                 }),
                         done: false
                       };
@@ -279,7 +279,7 @@ let closure_11 = async function _updatePersistentCodesEnabled(arg0, value) {
     }
   }
 };
-let closure_7 = fn(9971).SECURE_FRAMES_PUBLIC_KEY_VERSION;
+let closure_7 = fn(9972).SECURE_FRAMES_PUBLIC_KEY_VERSION;
 const ChannelTypes = fn(1074).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesActionCreators.tsx");

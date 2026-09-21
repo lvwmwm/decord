@@ -1,10 +1,10 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 14917
+// Function ID: 14918
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [2105, 2063, 504, 8433, 2]
+// Dependencies: [2105, 2063, 504, 8434, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 14911 (useUserAvailableGuildsWithTags)
+// Module 14917 (useUserAvailableGuildsWithTags)
 import initialize from "initialize" /* 504 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2063 */;

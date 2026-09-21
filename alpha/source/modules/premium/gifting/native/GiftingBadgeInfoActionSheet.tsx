@@ -1,24 +1,24 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 11008
+// Function ID: 11009
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4748, 8460, 1074, 21, 4756, 576, 1612, 504, 8452, 1241, 7390, 4752, 1115, 2578, 11008, 2]
+// Dependencies: [19, 17, 4748, 8461, 1074, 21, 4756, 576, 1612, 504, 8453, 1241, 7395, 4752, 1115, 2578, 11009, 2]
 // Exports: default
 
-// Module 11007 (GiftingBadgeInfoActionSheet)
+// Module 11008 (GiftingBadgeInfoActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef2578 from "module_2578" /* 2578 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11008 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11009 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8460 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8461 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(8460).getSingleRequirementThreshold;
+let closure_7 = fn(8461).getSingleRequirementThreshold;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
@@ -44,7 +44,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const tmp = closure_11();
   _require = tmp;
   let items = [BadgeDirectoryStore];
-  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(8452).BadgeId.GIFTING));
+  const stateFromStores = require("initialize").useStateFromStores(items, () => badgeById.getBadgeById(closure_0(8453).BadgeId.GIFTING));
   let obj = require("initialize");
   const items1 = [AccessibilityStore];
   importDefault = require("initialize").useStateFromStores(items1, () => useReducedMotion.useReducedMotion);

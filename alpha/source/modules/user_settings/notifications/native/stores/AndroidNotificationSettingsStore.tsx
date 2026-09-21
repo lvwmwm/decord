@@ -1,12 +1,12 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15756
+// Function ID: 15757
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1243, 1364, 9556, 1248, 4379, 2]
+// Dependencies: [5, 1243, 1364, 9557, 1248, 4379, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 15750 (AndroidNotificationSettingsStore)
+// Module 15756 (AndroidNotificationSettingsStore)
 import _mod4379 from "module_4379" /* 4379 */;
-import PushNotificationDefault from "PushNotification" /* 9556 */;
+import PushNotificationDefault from "PushNotification" /* 9557 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -131,7 +131,7 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
   }
 };
 const identity = fn(1243);
-let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "flexDirection", isSoundsEnabled: "y", isNotifyEveryTime: "HermesInternal" }));
+let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "call", isVibrationsEnabled: "delete", isSoundsEnabled: "i", isNotifyEveryTime: "Array" }));
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 

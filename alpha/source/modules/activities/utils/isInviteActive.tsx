@@ -1,10 +1,10 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12007
+// Function ID: 12008
 // Name: isInviteActive
 // Dependencies: [1091, 11, 2]
 // Exports: default
 
-// Module 12005 (isInviteActive)
+// Module 12007 (isInviteActive)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
 

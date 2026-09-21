@@ -1,15 +1,15 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16360
+// Function ID: 16361
 // Name: messages/Messages
-// Dependencies: [19, 4748, 5489, 21, 7402, 7422, 4492, 15361, 16355, 16359, 16378, 16380, 16381, 16382, 13716, 16383, 1364, 4614, 4613, 5793, 7715, 9, 15360, 1115, 16384, 9094, 576, 16360, 16386, 16388, 16434, 16435, 12149, 2]
+// Dependencies: [19, 4748, 5494, 21, 7407, 7427, 4492, 15367, 16361, 16365, 16384, 16386, 16387, 16388, 13722, 16389, 1364, 4614, 4613, 5798, 7717, 9, 15366, 1115, 16390, 9095, 576, 16366, 16392, 16394, 16440, 16441, 12151, 2]
 
-// Module 16354 (messages/Messages)
+// Module 16360 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7715 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7717 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5489 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
 
 require = fn;
 const jsxProd = fn(21);
@@ -64,8 +64,8 @@ export default noop.memo(function Messages(style) {
             const tmp5Result5 = tmp5(4614);
           }
           if (tmp2) {
-            const result = tmp5(5793).DeprecatedLayoutAnimation();
-            const tmp5Result6 = tmp5(5793);
+            const result = tmp5(5798).DeprecatedLayoutAnimation();
+            const tmp5Result6 = tmp5(5798);
           }
           const tmp5Result = tmp5(4614);
         }

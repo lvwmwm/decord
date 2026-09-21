@@ -1,13 +1,13 @@
-// Module ID: 13744
-// Function ID: 13745
+// Module ID: 13750
+// Function ID: 13751
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4420, 4428, 1115, 3162, 1380, 8307, 13745, 504, 2]
+// Dependencies: [4420, 4428, 1115, 3162, 1380, 8308, 13751, 504, 2]
 // Exports: default
 
-// Module 13744 (usePremiumGroupFeaturesTableCardText)
+// Module 13750 (usePremiumGroupFeaturesTableCardText)
 import initialize from "initialize" /* 504 */;
 import user from "user" /* 1380 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13745 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13751 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
 
 require = fn;
@@ -25,8 +25,8 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     return null;
   } else {
     if (arg0 === tmp(1380).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(8307).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult = tmp(8307);
+      let priceString = tmp(8308).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(8308);
     } else {
       priceString = null;
       if (null != tmp4) {

@@ -1,16 +1,16 @@
-// Module ID: 10893
-// Function ID: 10894
+// Module ID: 10894
+// Function ID: 10895
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 5105, 7391, 21, 4756, 576, 38, 5339, 1478, 1612, 5203, 4723, 5361, 10894, 4454, 6847, 5349, 11499, 11500, 7390, 6864, 5184, 4752, 1364, 8577, 10910, 5899, 5817, 11501, 11503, 1115, 5816, 11505, 9420, 5298, 11507, 5186, 4713, 2]
+// Dependencies: [32, 19, 17, 5105, 7396, 21, 4756, 576, 38, 5344, 1478, 1612, 5203, 4723, 5366, 10895, 4454, 6852, 5354, 11501, 11502, 7395, 6869, 5184, 4752, 1364, 8578, 10911, 5904, 5822, 11503, 11505, 1115, 5821, 11507, 9421, 5305, 11509, 5186, 4713, 2]
 // Exports: default
 
-// Module 10893 (UploadPreviewActionSheet)
+// Module 10894 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5349 */;
-import ImagePickerDefault from "ImagePicker" /* 5361 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9420 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11503 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5354 */;
+import ImagePickerDefault from "ImagePicker" /* 5366 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9421 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11505 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const DraftType = fn(5105).DraftType;
-const ACTION_SHEET_MAX_WIDTH = fn(7391).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);
@@ -112,7 +112,7 @@ export default function UploadPreviewActionSheet(onAdd) {
       }
     }).catch((error) => {
       if ("E_PICKER_CANCELLED" !== error.code) {
-        const obj2 = { key: "CROP_ERROR", IconComponent: onAdd(6847).CircleErrorIcon, content: error.message };
+        const obj2 = { key: "CROP_ERROR", IconComponent: onAdd(6852).CircleErrorIcon, content: error.message };
         onEdit(4454).open(obj2);
         const obj = onEdit(4454);
       }

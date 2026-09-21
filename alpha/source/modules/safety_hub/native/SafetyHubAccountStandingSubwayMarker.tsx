@@ -1,10 +1,10 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15049
+// Function ID: 15050
 // Name: SafetyHubAccountStandingSubwayMarker
 // Dependencies: [19, 17, 21, 4756, 576, 1115, 4752, 2]
 // Exports: default
 
-// Module 15043 (SafetyHubAccountStandingSubwayMarker)
+// Module 15049 (SafetyHubAccountStandingSubwayMarker)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;

@@ -1,22 +1,22 @@
-// Module ID: 18023
-// Function ID: 18024
+// Module ID: 18034
+// Function ID: 18035
 // Name: GuildSettingsModalIntegrationPlatform
-// Dependencies: [19, 17, 9855, 1074, 21, 4756, 576, 17984, 17954, 5495, 1397, 4607, 5899, 5817, 7440, 1115, 9854, 5109, 5205, 4457, 1484, 504, 4690, 5836, 7617, 7622, 2108, 8870, 5184, 4752, 7280, 2]
+// Dependencies: [19, 17, 9856, 1074, 21, 4756, 576, 17995, 17965, 5500, 1397, 4607, 5904, 5822, 7445, 1115, 9855, 5109, 5205, 4457, 1484, 504, 4690, 5841, 7619, 7624, 2108, 8871, 5184, 4752, 7285, 2]
 // Exports: default
 
-// Module 18023 (GuildSettingsModalIntegrationPlatform)
+// Module 18034 (GuildSettingsModalIntegrationPlatform)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;
-import PlatformsDefault from "Platforms" /* 5495 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import HeaderActionButton from "HeaderActionButton" /* 7617 */;
-import openUserSettings from "openUserSettings" /* 7622 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9854 */;
-import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 17984 */;
+import PlatformsDefault from "Platforms" /* 5500 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
+import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 17995 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9855 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -98,14 +98,14 @@ IntegrationItem.prototype["render"] = function render() {
   const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = GuildSettingsModalIntegrations.SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
   if (SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS.includes(integration.type)) {
     const type = integration.type;
-    if (tmp(17954).IntegrationTypes.YOUTUBE === type) {
+    if (tmp(17965).IntegrationTypes.YOUTUBE === type) {
       const account = integration.account;
       let name;
       if (account != null) {
         name = account.name;
       }
       let combined = name;
-    } else if (tmp(17954).IntegrationTypes.TWITCH === type) {
+    } else if (tmp(17965).IntegrationTypes.TWITCH === type) {
       const _HermesInternal = HermesInternal;
       combined = "twitch.tv/" + integration.name;
     }
@@ -139,7 +139,7 @@ IntegrationItem.prototype["render"] = function render() {
         }
         return enabled;
       };
-      const items = [closure_1_11(tmp(5817).TableRow, obj2), ];
+      const items = [closure_1_11(tmp(5822).TableRow, obj2), ];
       const obj5 = { value: null, disabled: null, onValueChange: null, label: null };
       const _Boolean = Boolean;
       obj5.value = Boolean(self.state.enabled);
@@ -147,9 +147,9 @@ IntegrationItem.prototype["render"] = function render() {
       obj5.onValueChange = self.handleToggleEnabled;
       const intl = tmp(1115).intl;
       obj5.label = intl.string(tmp(1115).t.vQC6vR);
-      items[1] = closure_1_11(tmp(7440).TableSwitchRow, obj5);
+      items[1] = closure_1_11(tmp(7445).TableSwitchRow, obj5);
       obj4.children = items;
-      return closure_1_12(tmp(5899).TableRowGroup, obj4);
+      return closure_1_12(tmp(5904).TableRowGroup, obj4);
     } else {
       const tmp12 = closure_1_11;
       const tmp13 = React4;
@@ -204,7 +204,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
       fn = () => null;
     }
     const obj3 = { headerLeft: fn, title: null, headerRight: null };
-    value = tmp3(5495).get(platformType);
+    value = tmp3(5500).get(platformType);
     let name;
     if (value != null) {
       name = value.name;
@@ -267,7 +267,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     items2[1] = closure_11(tmp(4752).Text, obj12);
     obj9.children = items2;
     obj8.children = closure_12(tmp(5184).Stack, obj9);
-    const items3 = [closure_11(tmp(8870).Form, obj8), closure_11(tmp(7280).NavScrim, {})];
+    const items3 = [closure_11(tmp(8871).Form, obj8), closure_11(tmp(7285).NavScrim, {})];
     obj11.children = items3;
     return closure_12(closure_13, obj11);
   }

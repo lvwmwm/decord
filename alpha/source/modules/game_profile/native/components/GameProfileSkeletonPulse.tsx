@@ -1,10 +1,10 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 9014
+// Function ID: 9015
 // Name: GameProfileSkeletonPulse
 // Dependencies: [19, 4748, 4492, 4757, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 9013 (GameProfileSkeletonPulse)
+// Module 9014 (GameProfileSkeletonPulse)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 

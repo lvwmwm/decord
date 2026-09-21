@@ -1,9 +1,9 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 7864
+// Function ID: 7865
 // Name: WidgetActionCreators
-// Dependencies: [5, 1372, 1074, 573, 1271, 7863, 1231, 2]
+// Dependencies: [5, 1372, 1074, 573, 1271, 7865, 1231, 2]
 
-// Module 7862 (WidgetActionCreators)
+// Module 7864 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -218,7 +218,7 @@ export default {
       const request1 = {
         url: upload_url,
         body: closure_129_0,
-        headers: { "Content-Type": closure_0(7863).WIDGET_CLIP_CONTENT_TYPE },
+        headers: { "Content-Type": closure_0(7865).WIDGET_CLIP_CONTENT_TYPE },
         onRequestProgress(direction) {
           let tmp = "upload" === direction.direction;
           if (tmp) {

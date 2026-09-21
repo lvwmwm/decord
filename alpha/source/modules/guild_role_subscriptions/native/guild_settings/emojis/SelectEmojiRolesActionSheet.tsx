@@ -1,20 +1,20 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18240
+// Function ID: 18241
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1181, 1085, 21, 4756, 576, 5736, 15476, 5334, 1177, 1115, 7389, 7437, 7312, 8870, 4752, 2]
+// Dependencies: [32, 19, 17, 1181, 1085, 21, 4756, 576, 5741, 15482, 5339, 1177, 1115, 7394, 7442, 7317, 8871, 4752, 2]
 // Exports: default
 
-// Module 18229 (SelectEmojiRolesActionSheet)
+// Module 18240 (SelectEmojiRolesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Pressables from "Pressables" /* 5334 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7389 */;
-import ActionSheet from "ActionSheet" /* 7437 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15476 */;
+import Pressables from "Pressables" /* 5339 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
+import ActionSheet from "ActionSheet" /* 7442 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5736 */;
+import TextStyles_mod from "TextStyles" /* 5741 */;
 
 const require = globalThis.__r;
 
@@ -148,6 +148,6 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   };
   const items1 = [subscriptionListingsForGuild.length];
   obj6.sections = items1;
-  obj5.children = closure_6(emoji(7312), obj6);
+  obj5.children = closure_6(emoji(7317), obj6);
   return closure_6(ActionSheet.ActionSheet, obj5);
 };

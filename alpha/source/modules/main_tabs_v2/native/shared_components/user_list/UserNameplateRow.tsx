@@ -1,16 +1,16 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11172
+// Function ID: 11173
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 4756, 576, 5818, 4457, 5819, 9098, 5817, 5814, 2]
+// Dependencies: [32, 19, 21, 4756, 576, 5823, 4457, 5824, 9099, 5822, 5819, 2]
 // Exports: UserNameplateRow
 
-// Module 11171 (UserNameplateRow)
+// Module 11172 (UserNameplateRow)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
-import TableRow from "TableRow" /* 5817 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5818 */;
-import Card from "Card" /* 5819 */;
-import NameplateDefault from "Nameplate" /* 9098 */;
+import TableRow from "TableRow" /* 5822 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 5823 */;
+import Card from "Card" /* 5824 */;
+import NameplateDefault from "Nameplate" /* 9099 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -87,7 +87,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
       const obj3 = { children: null };
       const items3 = [tmp12Result, ];
       const obj4 = { adjustSpacingForIcon: null != icon };
-      items3[1] = tmp15(tmp3(5814).TableRowDivider, obj4);
+      items3[1] = tmp15(tmp3(5819).TableRowDivider, obj4);
       obj3.children = items3;
       tmp12Result2 = tmp12(React5, obj3);
     }

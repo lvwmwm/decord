@@ -1,10 +1,10 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15971
+// Function ID: 15972
 // Name: CheckpointCharacterStage
 // Dependencies: [17, 21, 4756, 576, 4752, 2]
 // Exports: default
 
-// Module 15965 (CheckpointCharacterStage)
+// Module 15971 (CheckpointCharacterStage)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;

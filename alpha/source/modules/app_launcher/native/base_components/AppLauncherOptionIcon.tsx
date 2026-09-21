@@ -1,10 +1,10 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12432
+// Function ID: 12433
 // Name: AppLauncherOptionIcon
 // Dependencies: [19, 17, 21, 4756, 576, 2]
 // Exports: default
 
-// Module 12430 (AppLauncherOptionIcon)
+// Module 12432 (AppLauncherOptionIcon)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

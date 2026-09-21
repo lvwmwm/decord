@@ -1,14 +1,14 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10636
+// Function ID: 10637
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 10540, 10575, 1115, 10579, 6864, 1177, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 10541, 10576, 1115, 10580, 6869, 1177, 2]
 
-// Module 10635 (GIFPickerNoResults)
+// Module 10636 (GIFPickerNoResults)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10540 */;
-import SearchEmpty from "SearchEmpty" /* 10575 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10579 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10541 */;
+import SearchEmpty from "SearchEmpty" /* 10576 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10580 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,7 +40,7 @@ export default noop.memo(function GIFPickerNoResults(inActionSheet) {
   }
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6864).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6869).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

@@ -1,17 +1,17 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9310
+// Function ID: 9311
 // Name: VibegrationsActionCreators
-// Dependencies: [5, 9308, 1074, 573, 9310, 9311, 1271, 7485, 13186, 7403, 9304, 2]
+// Dependencies: [5, 9309, 1074, 573, 9311, 9312, 1271, 5275, 13188, 7408, 9305, 2]
 // Exports: createProject, deleteProject, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 9309 (VibegrationsActionCreators)
+// Module 9310 (VibegrationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 7485 */;
-import VibegrationsAnalytics from "VibegrationsAnalytics" /* 9310 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9311 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
+import VibegrationsAnalytics from "VibegrationsAnalytics" /* 9311 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9312 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9308 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
 
 require = fn;
 function reloadVibegrationsAppFrames(application_id) {

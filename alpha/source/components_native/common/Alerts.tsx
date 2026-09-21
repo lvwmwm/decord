@@ -1,21 +1,21 @@
-// Module ID: 17373
-// Function ID: 17374
+// Module ID: 17384
+// Function ID: 17385
 // Name: Alerts
-// Dependencies: [19, 17, 4748, 14014, 14670, 4947, 11794, 21, 17374, 17375, 17379, 17380, 4756, 576, 4466, 5109, 5167, 5790, 504, 558, 5181, 12675, 1177, 2]
+// Dependencies: [19, 17, 4748, 14020, 14676, 4947, 11796, 21, 17385, 17386, 17390, 17391, 4756, 576, 4466, 5109, 5167, 5795, 504, 558, 5181, 12677, 1177, 2]
 
-// Module 17373 (Alerts)
+// Module 17384 (Alerts)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 576 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
 import Dialog from "Dialog" /* 5167 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5790 */;
-import ModalRegistryDefault from "ModalRegistry" /* 17374 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 5795 */;
+import ModalRegistryDefault from "ModalRegistry" /* 17385 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 14014 */;
-import PermissionVADStore from "PermissionVADStore" /* 14670 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 14020 */;
+import PermissionVADStore from "PermissionVADStore" /* 14676 */;
 import SurveyStore from "SurveyStore" /* 4947 */;
-import AlertStore from "AlertStore" /* 11794 */;
+import AlertStore from "AlertStore" /* 11796 */;
 
 const require = globalThis.__r;
 
@@ -151,7 +151,7 @@ AlertWrapper.prototype["render"] = function render() {
   return map1(Dialog.Dialog, obj2);
 };
 AlertWrapper.contextType = fn(4466).ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "getChannel", renderKey: "call", props: "right" });
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "call", props: "error" });
 const tmp7 = new ModalRegistryDefault(items1);
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/Alerts.tsx");
@@ -183,7 +183,7 @@ export default noop.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "getChannel", renderKey: "call", props: "right" };
+        return { renderAlert: "Array", renderKey: "call", props: "error" };
       }
     }
   });

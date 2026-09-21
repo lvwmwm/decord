@@ -1,16 +1,16 @@
-// Module ID: 16676
-// Function ID: 16677
+// Module ID: 16682
+// Function ID: 16683
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 2045, 4405, 4937, 1372, 1085, 21, 4756, 504, 4909, 16677, 15583, 13590, 10409, 4752, 10364, 8122, 16639, 4619, 4616, 2]
+// Dependencies: [19, 17, 2045, 4405, 4937, 1372, 1085, 21, 4756, 504, 4909, 16683, 15589, 13596, 10410, 4752, 10365, 8123, 16645, 4619, 4616, 2]
 // Exports: default
 
-// Module 16676 (HomeDrawerDM)
+// Module 16682 (HomeDrawerDM)
 import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4619 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8122 */;
-import ChannelRowPreview from "ChannelRowPreview" /* 10364 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 15583 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8123 */;
+import ChannelRowPreview from "ChannelRowPreview" /* 10365 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 15589 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
@@ -39,9 +39,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp2;
   });
   let obj2 = channel(504);
-  const tmp3 = useMessagePreviewsDefault(channel, { unread: channel(16677).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = useMessagePreviewsDefault(channel, { unread: channel(16683).useBaseChannelUnreadBadgeState(channel, false).unread });
   closure_4 = tmp3;
-  const obj3 = channel(16677);
+  const obj3 = channel(16683);
   const items2 = [UserGuildSettingsStore];
   const stateFromStores1 = channel(504).useStateFromStores(items2, () => UserGuildSettingsStore.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -76,10 +76,10 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
       let tmp5Result = dependencyMap;
       if (isTemporary) {
-        tmp5Result = tmp5(13590);
+        tmp5Result = tmp5(13596);
         let BellSlashIcon = tmp5Result.BellZIcon;
       } else {
-        BellSlashIcon = tmp5(10409).BellSlashIcon;
+        BellSlashIcon = tmp5(10410).BellSlashIcon;
       }
     } else {
       const obj = { style: closure_1.title, children: null };
@@ -97,7 +97,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   }, items5);
-  return closure_10(channel(16639).HomeDrawerSharedItem, { title, subtitle });
+  return closure_10(channel(16645).HomeDrawerSharedItem, { title, subtitle });
 }
 const View = fn(17).View;
 const isMultiUserDM = fn(2045).isMultiUserDM;

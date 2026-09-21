@@ -1,22 +1,22 @@
-// Module ID: 16889
-// Function ID: 16890
+// Module ID: 16895
+// Function ID: 16896
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4756, 576, 7219, 1612, 15491, 16884, 7390, 4752, 1177, 16890, 6864, 1115, 15501, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 7224, 1612, 15497, 16890, 7395, 4752, 1177, 16896, 6869, 1115, 15507, 2]
 // Exports: default
 
-// Module 16889 (GuildRoleSubscriptionPurchaseCard)
+// Module 16895 (GuildRoleSubscriptionPurchaseCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import BottomSheetModal from "BottomSheetModal" /* 6864 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7219 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7390 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15491 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15501 */;
-import Elements from "Elements" /* 16884 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 16890 */;
+import BottomSheetModal from "BottomSheetModal" /* 6869 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15507 */;
+import Elements from "Elements" /* 16890 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 16896 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

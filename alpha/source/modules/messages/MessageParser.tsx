@@ -1,10 +1,10 @@
-// Module ID: 7916
-// Function ID: 7917
+// Module ID: 7918
+// Function ID: 7919
 // Name: MessageParser
-// Dependencies: [5671, 5718, 2041, 2096, 2105, 2099, 2063, 4395, 4405, 4601, 1372, 1074, 5211, 1375, 4909, 1929, 5209, 7917, 7918, 2019, 4409, 5217, 4600, 4908, 12, 5223, 1115, 7919, 5654, 1370, 4413, 2]
+// Dependencies: [5676, 5723, 2041, 2096, 2105, 2099, 2063, 4395, 4405, 4601, 1372, 1074, 5211, 1375, 4909, 1929, 5209, 7919, 7920, 2019, 4409, 5217, 4600, 4908, 12, 5223, 1115, 7921, 5659, 1370, 4413, 2]
 // Exports: parseAndRebuild
 
-// Module 7916 (MessageParser)
+// Module 7918 (MessageParser)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2019 */;
@@ -14,11 +14,11 @@ import UserUtilsDefault from "UserUtils" /* 4600 */;
 import useChannelName from "useChannelName" /* 4909 */;
 import MarkupRulesDefault from "MarkupRules" /* 5209 */;
 import MarkupTextRule2 from "MarkupTextRule" /* 5217 */;
-import AutocompleteBoundaryUtils from "AutocompleteBoundaryUtils" /* 7917 */;
-import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7918 */;
-import IsolateString from "IsolateString" /* 7919 */;
-import EmojiStore from "EmojiStore" /* 5671 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5718 */;
+import AutocompleteBoundaryUtils from "AutocompleteBoundaryUtils" /* 7919 */;
+import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7920 */;
+import IsolateString from "IsolateString" /* 7921 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
@@ -176,8 +176,8 @@ function createParserState(getGuildId, arr) {
   const mapped3 = _modDef12(GuildChannelStore.getTextChannelNameDisambiguations(guildId)).map((id) => ({ id: id.id, text: id.name }));
   if (null != guildId) {
     const tmp9Result3 = tmp9(12);
-    const found1 = tmp9(12)(guildId(5654).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).filter((item) => item !== closure_1_7);
-    const tmp9Result1Result = tmp9(12)(guildId(5654).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const found1 = tmp9(12)(guildId(5659).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).filter((item) => item !== closure_1_7);
+    const tmp9Result1Result = tmp9(12)(guildId(5659).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
     const flatMapResult = found1.flatMap((item) => GuildChannelStore.getChannels(guildId)[item].map((channel) => {
       channel = channel.channel;
       if (!channel.isCategory()) {

@@ -1,14 +1,14 @@
-// Module ID: 7686
-// Function ID: 7687
+// Module ID: 7688
+// Function ID: 7689
 // Name: MobileTrialUtils
-// Dependencies: [1374, 7687, 4576, 2027, 13601, 4414, 1115, 2]
+// Dependencies: [1374, 7689, 4576, 2027, 13607, 4414, 1115, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 7686 (MobileTrialUtils)
+// Module 7688 (MobileTrialUtils)
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import dismissible_content from "dismissible_content" /* 2027 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7687 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7689 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;
@@ -60,6 +60,6 @@ export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_p
     } else {
       return null;
     }
-    tmpResult = tmp(13601);
+    tmpResult = tmp(13607);
   }
 };

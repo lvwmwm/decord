@@ -1,10 +1,10 @@
-// Module ID: 17510
-// Function ID: 17511
+// Module ID: 17521
+// Function ID: 17522
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 1992, 4779, 563, 10040, 2027, 2]
+// Dependencies: [19, 1992, 4779, 563, 10041, 2027, 2]
 // Exports: default
 
-// Module 17510 (useChannelFloatingCTAContent)
+// Module 17521 (useChannelFloatingCTAContent)
 import dismissible_content from "dismissible_content" /* 2027 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;

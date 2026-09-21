@@ -1,12 +1,12 @@
-// Module ID: 11091
-// Function ID: 11092
+// Module ID: 11092
+// Function ID: 11093
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 4748, 21, 4756, 504, 8339, 11092, 5741, 2]
+// Dependencies: [32, 19, 17, 4748, 21, 4756, 504, 8340, 11093, 5746, 2]
 // Exports: default
 
-// Module 11091 (PremiumGiftBackgroundAnimation)
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8339 */;
-import GiftAnimationData from "GiftAnimationData" /* 11092 */;
+// Module 11092 (PremiumGiftBackgroundAnimation)
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8340 */;
+import GiftAnimationData from "GiftAnimationData" /* 11093 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
@@ -69,8 +69,8 @@ export default function PremiumGiftBackgroundAnimation(giftStyle) {
       closure_11(false);
     } else {
       if (!tmp4) {
-        closure_9(tmp2(8339).AnimationState.ACTION);
-        closure_5(tmp2(8339).AnimationState.LOOP);
+        closure_9(tmp2(8340).AnimationState.ACTION);
+        closure_5(tmp2(8340).AnimationState.LOOP);
       }
       tmp4 = first === PremiumGiftingUtils.AnimationState.LOOP || arg0;
     }

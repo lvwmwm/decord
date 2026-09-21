@@ -1,9 +1,9 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15753
+// Function ID: 15754
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 8232, 5114, 1115, 4720, 4454, 11723, 1364, 1094, 2]
+// Dependencies: [5, 8233, 5114, 1115, 4720, 4454, 11725, 1364, 1094, 2]
 
-// Module 15747 (ClearWebBrowserDataSetting)
+// Module 15753 (ClearWebBrowserDataSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import BrowserManager from "BrowserManager" /* 4720 */;
@@ -11,13 +11,13 @@ import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const ConstantsIOS = tmp(1094);
 require = fn;
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.HNqvOh);
   },
-  parent: fn(8232).MobileUserSettings.WEB_BROWSER,
+  parent: fn(8233).MobileUserSettings.WEB_BROWSER,
   variant: "danger",
   onPress: function showClearWebBrowserDataAlert() {
     const obj2 = { key: "clear-web-browser-data", title: null, content: null, confirmText: null, onConfirm: null };

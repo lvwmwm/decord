@@ -1,13 +1,13 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11663
+// Function ID: 11664
 // Name: SafetyToolsActionSheetHeader
-// Dependencies: [19, 17, 21, 4756, 576, 11652, 5836, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 11654, 5841, 4752, 2]
 // Exports: default
 
-// Module 11661 (SafetyToolsActionSheetHeader)
+// Module 11663 (SafetyToolsActionSheetHeader)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11652 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11654 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

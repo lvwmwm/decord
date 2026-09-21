@@ -1,21 +1,21 @@
-// Module ID: 7838
-// Function ID: 7839
+// Module ID: 7840
+// Function ID: 7841
 // Name: ConversationsStore
-// Dependencies: [502, 2041, 4405, 2095, 1372, 7839, 7835, 1438, 11, 7837, 7836, 1370, 4978, 504, 573, 2]
+// Dependencies: [502, 2041, 4405, 2095, 1372, 7841, 7837, 1438, 11, 7839, 7838, 1370, 4978, 504, 573, 2]
 
-// Module 7838 (ConversationsStore)
+// Module 7840 (ConversationsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1438 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
-import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7837 */;
+import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7839 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 import UserStore from "UserStore" /* 1372 */;
-import ConversationVisibilityStore from "ConversationVisibilityStore" /* 7839 */;
+import ConversationVisibilityStore from "ConversationVisibilityStore" /* 7841 */;
 
 require = fn;
 function removePendingListFetch(channelId, requestKey) {
@@ -153,9 +153,9 @@ function handleReaction(messageId) {
           }
           tmp7 = value2;
         }
-        const result = tmp4(7837).replaceHydratedMessage(tmp7, messageId, applyReactionResult);
+        const result = tmp4(7839).replaceHydratedMessage(tmp7, messageId, applyReactionResult);
         flag2 = true;
-        const tmp4Result = tmp4(7837);
+        const tmp4Result = tmp4(7839);
       }
       flag = flag2;
       tmp4 = require;
@@ -182,8 +182,8 @@ function handleRelationshipUpdate() {
             }
             tmp = value;
           }
-          const result1 = tmp5(7837).replaceHydratedMessage(tmp, index, result);
-          const tmp5Result = tmp5(7837);
+          const result1 = tmp5(7839).replaceHydratedMessage(tmp, index, result);
+          const tmp5Result = tmp5(7839);
         }
         tmp5 = require;
       }
@@ -224,7 +224,7 @@ function evictChannel(arg0) {
   }
   return hasItem;
 }
-const ConversationConstants = fn(7835);
+const ConversationConstants = fn(7837);
 ({ CONVERSATION_COLORS: closure_9, CONVERSATION_FEEDBACK_RATINGS_CACHE_MAX: c10, MAX_CONVERSATIONS_PER_CHANNEL: closure_11, MAX_CHANNELS_WITH_CONVERSATIONS } = ConversationConstants);
 const navigation = new privDefault({
   max: MAX_CHANNELS_WITH_CONVERSATIONS,
@@ -556,7 +556,7 @@ const conversationsStore = new ConversationsStore(DispatcherDefault, {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7836).mapConversation);
+      const mapped = rawConversations.map(set(7838).mapConversation);
       const found = mapped.filter(set(1370).isNotNullish);
       const peekResult = navigation.peek(channelId);
       if (isJump) {
@@ -1089,9 +1089,9 @@ const conversationsStore = new ConversationsStore(DispatcherDefault, {
               }
               tmp9 = value2;
             }
-            const result = tmp6(7837).replaceHydratedMessage(tmp9, id, updateMessageRecordResult);
+            const result = tmp6(7839).replaceHydratedMessage(tmp9, id, updateMessageRecordResult);
             flag2 = true;
-            const tmp6Result = tmp6(7837);
+            const tmp6Result = tmp6(7839);
           }
           flag = flag2;
           tmp6 = require;

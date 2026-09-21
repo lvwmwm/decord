@@ -1,13 +1,13 @@
-// Module ID: 6221
-// Function ID: 6222
+// Module ID: 6226
+// Function ID: 6227
 // Name: FamilySpotIllustration
-// Dependencies: [21, 5799, 6222, 2]
+// Dependencies: [21, 5804, 6227, 2]
 // Exports: FamilySpotIllustration
 
-// Module 6221 (FamilySpotIllustration)
+// Module 6226 (FamilySpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6222 from "module_6222" /* 6222 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6227 from "module_6227" /* 6227 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const FamilySpotIllustration = function FamilySpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6222 };
+  const obj2 = { uri: _modDef6227 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

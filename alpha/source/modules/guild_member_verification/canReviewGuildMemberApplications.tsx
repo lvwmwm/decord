@@ -1,10 +1,10 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7506
+// Function ID: 7507
 // Name: canReviewGuildMemberApplications
 // Dependencies: [2063, 4395, 1074, 504, 5269, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 7504 (canReviewGuildMemberApplications)
+// Module 7506 (canReviewGuildMemberApplications)
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 

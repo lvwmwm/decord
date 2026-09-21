@@ -1,0 +1,9 @@
+// Module ID: 14440
+// Function ID: 14441
+// Dependencies: [1121]
+
+// Module 14440
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "2c315f321285573a3e0f3421e17e59ea", name: "NitroGem24", type: "lottie" });

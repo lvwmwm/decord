@@ -1,17 +1,17 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 10020
+// Function ID: 10021
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2109, 502, 2105, 10020, 21, 4756, 576, 504, 7977, 11, 2055, 9022, 9021, 4454, 4723, 7582, 5796, 4752, 5334, 9019, 1115, 2]
+// Dependencies: [19, 17, 2109, 502, 2105, 10021, 21, 4756, 576, 504, 7979, 11, 2055, 9023, 9022, 4454, 4723, 7584, 5801, 4752, 5339, 9020, 1115, 2]
 // Exports: default
 
-// Module 10019 (GuildProfileHeader)
+// Module 10020 (GuildProfileHeader)
 import nativeDefault from "native" /* 576 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import transitionToGuild from "transitionToGuild" /* 7582 */;
-import BadgeCategory from "BadgeCategory" /* 9021 */;
-import GuildTraits from "GuildTraits" /* 9022 */;
+import transitionToGuild from "transitionToGuild" /* 7584 */;
+import BadgeCategory from "BadgeCategory" /* 9022 */;
+import GuildTraits from "GuildTraits" /* 9023 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -19,7 +19,7 @@ import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
 require = fn;
 const View = fn(17).View;
-const getBadgeTooltip = fn(10020).getBadgeTooltip;
+const getBadgeTooltip = fn(10021).getBadgeTooltip;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);

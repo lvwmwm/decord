@@ -1,9 +1,9 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12280
+// Function ID: 12281
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 4748, 21, 4756, 576, 504, 4492, 4757, 5819, 2]
+// Dependencies: [32, 19, 4748, 21, 4756, 576, 504, 4492, 4757, 5824, 2]
 
-// Module 12278 (ForumPostPlaceholder)
+// Module 12280 (ForumPostPlaceholder)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
@@ -55,6 +55,6 @@ export default noop.memo(() => {
   fn.__workletHash = 9488742940898;
   fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  let obj4 = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5819).Card, { variant: "secondary", style: tmp.postPlaceholder }) };
-  return jsx(timingConfig(4492).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5819).Card, { variant: "secondary", style: tmp.postPlaceholder }) });
+  let obj4 = { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5824).Card, { variant: "secondary", style: tmp.postPlaceholder }) };
+  return jsx(timingConfig(4492).View, { style: animatedStyle, pointerEvents: "none", children: jsx(stateFromStores(5824).Card, { variant: "secondary", style: tmp.postPlaceholder }) });
 });

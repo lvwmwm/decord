@@ -1,10 +1,10 @@
-// Module ID: 8121
-// Function ID: 8122
+// Module ID: 8122
+// Function ID: 8123
 // Name: SearchConstants
-// Dependencies: [1074, 8122, 2]
+// Dependencies: [1074, 8123, 2]
 
-// Module 8121 (SearchConstants)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8122 */;
+// Module 8122 (SearchConstants)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 8123 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

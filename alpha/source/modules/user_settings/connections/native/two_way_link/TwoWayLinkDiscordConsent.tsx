@@ -1,10 +1,10 @@
-// Module ID: 9358
-// Function ID: 9359
+// Module ID: 9359
+// Function ID: 9360
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 4756, 9350, 5618, 9326, 38, 5790, 7363, 5186, 1115, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 4756, 9351, 5623, 9327, 38, 5795, 7368, 5186, 1115, 2]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 9358 (TwoWayLinkDiscordConsent)
+// Module 9359 (TwoWayLinkDiscordConsent)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

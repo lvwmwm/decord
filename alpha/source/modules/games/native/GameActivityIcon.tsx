@@ -1,11 +1,11 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10012
+// Function ID: 10013
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 4756, 576, 4466, 8839, 4607, 5799, 1397, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4466, 8840, 4607, 5804, 1397, 2]
 
-// Module 10011 (GameActivityIcon)
+// Module 10012 (GameActivityIcon)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5799 */;
+import FastImageDefault from "FastImage" /* 5804 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -42,7 +42,7 @@ export default noop.memo(function GameActivityIcon(style) {
       const tmp2Result = tmp2(4607);
       const colors = nativeDefault.colors;
       obj2.color = tmp2(4607).isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-      jsx(tmp2(8839).UnknownGameIcon, { size: "custom", style: null, color: null });
+      jsx(tmp2(8840).UnknownGameIcon, { size: "custom", style: null, color: null });
       const isThemeDarkResult = tmp2(4607).isThemeDark(obj.useThemeContext().theme);
     }
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 16370
-// Function ID: 16371
+// Module ID: 16376
+// Function ID: 16377
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1074, 4749, 12516, 1101, 7696, 4454, 1115, 12515, 16371, 2]
+// Dependencies: [5, 32, 19, 1074, 4749, 12518, 1101, 7698, 4454, 1115, 12517, 16377, 2]
 // Exports: default
 
-// Module 16370 (usePrivateChannelWave)
+// Module 16376 (usePrivateChannelWave)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

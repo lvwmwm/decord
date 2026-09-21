@@ -1,13 +1,13 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 14051
+// Function ID: 14052
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4395, 1074, 21, 4756, 10194, 504, 1115, 1875, 5623, 5186, 2]
+// Dependencies: [19, 17, 4395, 1074, 21, 4756, 10195, 504, 1115, 1875, 5628, 5186, 2]
 // Exports: default
 
-// Module 14045 (JoinVoiceChannelButton)
+// Module 14051 (JoinVoiceChannelButton)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5623 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10194 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10195 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 

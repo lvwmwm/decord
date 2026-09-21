@@ -1,9 +1,9 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11160
+// Function ID: 11161
 // Name: UsernameWithEffects
-// Dependencies: [19, 17, 1390, 21, 1391, 4756, 576, 1365, 11160, 4989, 9996, 1389, 4990, 9995, 4457, 11161, 4752, 4762, 4460, 11164, 1370, 2]
+// Dependencies: [19, 17, 1390, 21, 1391, 4756, 576, 1365, 11161, 4989, 9997, 1389, 4990, 9996, 4457, 11162, 4752, 4762, 4460, 11165, 1370, 2]
 
-// Module 11159 (UsernameWithEffects)
+// Module 11160 (UsernameWithEffects)
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
@@ -105,7 +105,7 @@ export default noop.memo((userName) => {
   let STATIC = userName.effectDisplayType;
   ({ userId, guildId } = userName);
   if (STATIC === undefined) {
-    STATIC = userName(11160).EffectDisplayType.STATIC;
+    STATIC = userName(11161).EffectDisplayType.STATIC;
   }
   ({ defaultColor, containerStyle, ignoreDisabledStylesSetting, pendingDisplayNameStyles } = userName);
   if (ignoreDisabledStylesSetting === undefined) {
@@ -114,16 +114,16 @@ export default noop.memo((userName) => {
   const merged = Object.assign(userName, Object.assign({ userId: 0, guildId: 0, userName: 0, effectDisplayType: 0, pendingDisplayNameStyles: 0, defaultColor: 0, containerStyle: 0, ignoreDisabledStylesSetting: 0 }));
   let num2;
   const tmp6 = num2(4989)({ userId, guildId, pendingDisplayNameStyles, ignoreDisabledStylesSetting });
-  const isDisplayNameStylesFlywheelViewersEnabled = userName(9996).useIsDisplayNameStylesFlywheelViewersEnabled("UsernameWithEffects");
-  const obj = userName(9996);
+  const isDisplayNameStylesFlywheelViewersEnabled = userName(9997).useIsDisplayNameStylesFlywheelViewersEnabled("UsernameWithEffects");
+  const obj = userName(9997);
   const result = userName(1389).applyFlywheelViewingFallback(tmp6, isDisplayNameStylesFlywheelViewersEnabled);
   const obj2 = userName(1389);
   const displayNameStylesEnabled = userName(4990).useDisplayNameStylesEnabled({ location: "UsernameWithEffects" });
   const obj3 = userName(4990);
-  const displayNameStylesFont = userName(9995).useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
+  const displayNameStylesFont = userName(9996).useDisplayNameStylesFont({ displayNameStyles: result, ignoreDisabledStylesSetting });
   let tmp12;
   if (null != displayNameStylesFont) {
-    const obj5 = { fontFamily: displayNameStylesFont, lineHeight: "Array" };
+    const obj5 = { fontFamily: displayNameStylesFont, lineHeight: "y" };
     tmp12 = obj5;
   }
   let num = merged.lineClamp;
@@ -139,12 +139,12 @@ export default noop.memo((userName) => {
     }
     tmp13 = tmp14;
   }
-  const obj4 = userName(9995);
+  const obj4 = userName(9996);
   const token = userName(4457).useToken(tmp4(576).colors.BACKGROUND_BASE_LOW);
   const tmp7Result = userName(4457);
   const token1 = userName(4457).useToken(tmp4(576).colors.WHITE);
   const tmp7Result7 = userName(4457);
-  const displayNameStylesAccessibleColors = userName(11161).useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
+  const displayNameStylesAccessibleColors = userName(11162).useDisplayNameStylesAccessibleColors({ displayNameStyles: result, backgroundColor: token });
   let first;
   if (displayNameStylesAccessibleColors.length > 0) {
     first = displayNameStylesAccessibleColors[0];
@@ -217,14 +217,14 @@ export default noop.memo((userName) => {
   const tmp28Result = closure_12(str, num2);
   if (displayNameStylesEnabled) {
     if (null != tmp6) {
-      if (STATIC !== tmp7(11160).EffectDisplayType.PLAIN) {
+      if (STATIC !== tmp7(11161).EffectDisplayType.PLAIN) {
         if (null != colorVariants) {
           const items1 = [merged.style, tmp13];
           if (tmp7Result11.doesEffectImpactLayout(effectId)) {
             const layoutImpact = tmp28Result.layoutImpact;
           }
           if (effectId === tmp7(1391).DisplayNameEffect.GUMMY) {
-            const tmp4Result = tmp4(11164);
+            const tmp4Result = tmp4(11165);
             const tmp66 = closure_9;
             let str3 = tmp7(4460).getNodeText(userName);
             if (str3 == null) {

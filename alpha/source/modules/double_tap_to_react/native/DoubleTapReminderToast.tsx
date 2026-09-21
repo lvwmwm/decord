@@ -1,15 +1,15 @@
-// Module ID: 11388
-// Function ID: 11389
+// Module ID: 11390
+// Function ID: 11391
 // Name: DoubleTapReminderToast
-// Dependencies: [19, 2038, 21, 4756, 576, 4752, 1115, 4576, 2027, 2019, 8225, 4454, 11389, 2]
+// Dependencies: [19, 2038, 21, 4756, 576, 4752, 1115, 4576, 2027, 2019, 8226, 4454, 11391, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 11388 (DoubleTapReminderToast)
+// Module 11390 (DoubleTapReminderToast)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 11389 */;
+import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 11391 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -43,14 +43,14 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     if (flag == null) {
       flag = false;
     }
-    const result = tmp(8225).disambiguatedEmojiFromSettingsValue(setting);
+    const result = tmp(8226).disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !flag;
     if (!flag) {
       areEmojisEqualResult = null != result;
     }
     if (areEmojisEqualResult) {
-      areEmojisEqualResult = tmp(8225).areEmojisEqual(result, emoji);
-      const tmpResult3 = tmp(8225);
+      areEmojisEqualResult = tmp(8226).areEmojisEqual(result, emoji);
+      const tmpResult3 = tmp(8226);
     }
     if (areEmojisEqualResult) {
       const obj2 = {
@@ -68,6 +68,6 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
       const result1 = tmp(4576).UNSAFE_markDismissibleContentAsDismissed(tmp(2027).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj3);
       const tmpResult4 = tmp(4576);
     }
-    const tmpResult = tmp(8225);
+    const tmpResult = tmp(8226);
   }
 };

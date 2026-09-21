@@ -1,10 +1,10 @@
-// Module ID: 5291
-// Function ID: 5292
+// Module ID: 5298
+// Function ID: 5299
 // Name: TextIcon
 // Dependencies: [19, 21, 576, 4456, 5243, 2]
 // Exports: TextIcon
 
-// Module 5291 (TextIcon)
+// Module 5298 (TextIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5243 from "module_5243" /* 5243 */;

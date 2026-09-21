@@ -1,10 +1,10 @@
-// Module ID: 5308
-// Function ID: 5309
+// Module ID: 5315
+// Function ID: 5316
 // Name: StageIcon
 // Dependencies: [19, 21, 576, 4456, 5248, 2]
 // Exports: StageIcon
 
-// Module 5308 (StageIcon)
+// Module 5315 (StageIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5248 from "module_5248" /* 5248 */;

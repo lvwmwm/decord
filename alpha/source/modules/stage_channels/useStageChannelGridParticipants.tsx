@@ -1,17 +1,17 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10328
+// Function ID: 10329
 // Name: useStageChannelGridParticipants
-// Dependencies: [32, 19, 4772, 5630, 504, 5644, 5637, 12, 5643, 10328, 2]
+// Dependencies: [32, 19, 4772, 5635, 504, 5649, 5642, 12, 5648, 10329, 2]
 // Exports: useStageChannelParticipantsList, useStageChannelParticipantsListThrottled, useThrottleDurationForChannel
 
-// Module 10327 (useStageChannelGridParticipants)
+// Module 10328 (useStageChannelGridParticipants)
 import _mod12 from "module_12" /* 12 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5637 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5643 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5642 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5648 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5630 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5635 */;
 
 const require = globalThis.__r;
 

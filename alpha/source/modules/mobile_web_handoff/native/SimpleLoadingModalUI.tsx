@@ -1,10 +1,10 @@
-// Module ID: 7558
-// Function ID: 7559
+// Module ID: 7560
+// Function ID: 7561
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4756, 5789, 2]
+// Dependencies: [19, 17, 21, 4756, 5794, 2]
 // Exports: default
 
-// Module 7558 (SimpleLoadingModalUI)
+// Module 7560 (SimpleLoadingModalUI)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

@@ -1,18 +1,18 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 16987
+// Function ID: 16988
 // Name: VibegrationsPublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 2096, 2063, 4405, 1372, 1074, 4749, 21, 4756, 576, 7221, 504, 7484, 9417, 16980, 4723, 11591, 1115, 3678, 1101, 7916, 7696, 7437, 7389, 4752, 7325, 4909, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2096, 2063, 4405, 1372, 1074, 4749, 21, 4756, 576, 7226, 504, 5274, 9418, 16988, 4723, 11593, 1115, 3678, 1101, 7918, 7698, 7442, 7394, 4752, 7330, 4909, 5186, 2]
 // Exports: default
 
-// Module 16979 (VibegrationsPublishNotesSheet)
+// Module 16987 (VibegrationsPublishNotesSheet)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 7484 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11591 */;
-import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16980 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5274 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11593 */;
+import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16988 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -262,8 +262,8 @@ export default function VibegrationsPublishNotesSheet(guildId) {
                   const _HermesInternal = HermesInternal;
                   combined = "" + tmp26 + tmp34;
                 }
-                const parsed = tmp3(7916).parse(found, combined);
-                const tmp31Result = tmp3(7696);
+                const parsed = tmp3(7918).parse(found, combined);
+                const tmp31Result = tmp3(7698);
                 const obj5 = { location: _undefined2.VIBEGRATIONS_PATCH_NOTES };
                 c3 = 2;
                 c4 = 1;
@@ -292,10 +292,10 @@ export default function VibegrationsPublishNotesSheet(guildId) {
               ok = closure_128_0.ok;
             }
             if (false !== ok) {
-              const result = guildId(16980).rememberPatchNotesChannel(closure_129_0, closure_129_17.id);
+              const result = guildId(16988).rememberPatchNotesChannel(closure_129_0, closure_129_17.id);
               closure_129_20();
               dependencyMap = 0;
-              const obj = guildId(16980);
+              const obj = guildId(16988);
             }
           }
           const _Error = Error;

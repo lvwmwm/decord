@@ -1,10 +1,10 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10491
+// Function ID: 10492
 // Name: FavoritesGuildAnalytics
 // Dependencies: [4577, 1074, 2066, 1241, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 10490 (FavoritesGuildAnalytics)
+// Module 10491 (FavoritesGuildAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 

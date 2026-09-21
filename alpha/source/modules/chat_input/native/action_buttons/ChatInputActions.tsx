@@ -1,28 +1,28 @@
-// Module ID: 12486
-// Function ID: 12487
+// Module ID: 12488
+// Function ID: 12489
 // Name: ChatInputActions
-// Dependencies: [32, 19, 12213, 1074, 21, 4756, 576, 5191, 8114, 4457, 6862, 4624, 1610, 12487, 8086, 5180, 5362, 1115, 10912, 5298, 10897, 12488, 5317, 10367, 12460, 12462, 8088, 1241, 4492, 8173, 12490, 4462, 12491, 12492, 12496, 2]
+// Dependencies: [32, 19, 12215, 1074, 21, 4756, 576, 5191, 8116, 4457, 6867, 4624, 1610, 12489, 8088, 5180, 5367, 1115, 10913, 5305, 10898, 12490, 5278, 10368, 12462, 12464, 8090, 1241, 4492, 8174, 12492, 4462, 12493, 12494, 12498, 2]
 
-// Module 12486 (ChatInputActions)
+// Module 12488 (ChatInputActions)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import mergeProps from "mergeProps" /* 4462 */;
-import ImageIcon from "ImageIcon" /* 5298 */;
-import AppsIcon from "AppsIcon" /* 5317 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5362 */;
-import AttachmentIcon from "AttachmentIcon" /* 10367 */;
-import PollsIcon from "PollsIcon" /* 10897 */;
-import CameraIcon from "CameraIcon" /* 10912 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12460 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 12488 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12490 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 12491 */;
+import AppsIcon from "AppsIcon" /* 5278 */;
+import ImageIcon from "ImageIcon" /* 5305 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5367 */;
+import AttachmentIcon from "AttachmentIcon" /* 10368 */;
+import PollsIcon from "PollsIcon" /* 10898 */;
+import CameraIcon from "CameraIcon" /* 10913 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12462 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 12490 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12492 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 12493 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ChatInputConstants = fn(12213);
+const ChatInputConstants = fn(12215);
 ({ ChatInputActionType: hasOwnProperty, ChatInputOmniButtonActionType: metroRequire } = ChatInputConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

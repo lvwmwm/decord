@@ -1,10 +1,10 @@
-// Module ID: 12646
-// Function ID: 12647
+// Module ID: 12648
+// Function ID: 12649
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5210, 12647, 10520, 1074, 21, 12648, 4756, 576, 5193, 12649, 9529, 1978, 9411, 4467, 1115, 4936, 12, 12650, 7763, 12651, 12652, 1177, 10677, 2]
+// Dependencies: [32, 19, 17, 5210, 12649, 10521, 1074, 21, 12650, 4756, 576, 5193, 12651, 9530, 1978, 9412, 4467, 1115, 4936, 12, 12652, 7765, 12653, 12654, 1177, 10678, 2]
 // Exports: default
 
-// Module 12646 (ApplicationCommandDiscovery)
+// Module 12648 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -13,11 +13,11 @@ import Server from "Server" /* 1978 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
 import useFontScale from "useFontScale" /* 5193 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7763 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9411 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12648 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12649 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12650 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9412 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12650 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12651 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12652 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,8 +28,8 @@ get_ActivityIndicator = fn(17);
 ({ View: metroRequire, SectionList: closure_7 } = get_ActivityIndicator);
 const ApplicationCommandConstants = fn(5210);
 ({ BuiltInSectionId: closure_8, DISCOVERY_COMMANDS_QUERY_LIMIT: closure_9 } = ApplicationCommandConstants);
-const ITEM_HEIGHT = fn(12647).ITEM_HEIGHT;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(10520).AUTOCOMPLETE_ROW_HEIGHT;
+const ITEM_HEIGHT = fn(12649).ITEM_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = fn(10521).AUTOCOMPLETE_ROW_HEIGHT;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, SectionListElementType: map1 } = Constants);
 const jsxProd = fn(21);
@@ -70,7 +70,7 @@ export default function ApplicationCommandDiscovery(channel) {
   obj6.applicationCommands = !canOnlyUseTextCommands;
   obj5.filters = obj6;
   obj5.options = { placeholderCount: 3, limit: commandDiscoveryManager, includeFrecency: true };
-  const discovery = channel(9529).useDiscovery(obj5);
+  const discovery = channel(9530).useDiscovery(obj5);
   const sectionDescriptors = discovery.sectionDescriptors;
   ({ activeSections: c11, commandsByActiveSection } = discovery);
   ({ hasMoreAfter: c13, filteredSectionId } = discovery);
@@ -315,7 +315,7 @@ export default function ApplicationCommandDiscovery(channel) {
     const section = item.section;
     let found;
     if (item.inputType === ApplicationCommandTypes.ApplicationCommandInputType.PLACEHOLDER) {
-      return filteredSectionId(onHeightChange(12651), {});
+      return filteredSectionId(onHeightChange(12653), {});
     } else {
       found = sectionDescriptors.find((id) => id.id === item.applicationId);
       const obj = {
@@ -331,7 +331,7 @@ export default function ApplicationCommandDiscovery(channel) {
         showIcon: item.applicationId !== section.section.id,
         guildId: found.guild_id
       };
-      return filteredSectionId(onHeightChange(12652), obj);
+      return filteredSectionId(onHeightChange(12654), obj);
     }
   };
   obj9.renderSectionHeader = function renderSectionHeader(section) {
@@ -339,7 +339,7 @@ export default function ApplicationCommandDiscovery(channel) {
     const children = [closure_2_14(ApplicationSectionHeaderDefault, { section: section.section, guildId: channel.guild_id }, section.section.id), ];
     let tmp3Result = 0 === section.data.length;
     if (tmp3Result) {
-      const obj3 = { lightSource: tmp4(10677), darkSource: tmp4(10677), body: null, containerStyle: null, imageStyle: null };
+      const obj3 = { lightSource: tmp4(10678), darkSource: tmp4(10678), body: null, containerStyle: null, imageStyle: null };
       const intl = util.intl;
       const obj5 = { applicationName: section.section.name };
       obj3.body = intl.format(util.t.WoQXT6, obj5);

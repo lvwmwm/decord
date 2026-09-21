@@ -1,17 +1,17 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14073
+// Function ID: 14074
 // Name: RTCMediaSinkWantsManager
-// Dependencies: [32, 502, 1074, 4781, 1091, 5077, 14068, 4814, 4825, 2036, 9695, 11, 12, 1364, 558, 4811, 2]
+// Dependencies: [32, 502, 1074, 4781, 1091, 5077, 14074, 4814, 4825, 2036, 9696, 11, 12, 1364, 558, 4811, 2]
 
-// Module 14067 (RTCMediaSinkWantsManager)
+// Module 14073 (RTCMediaSinkWantsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9695 */;
-import BrowserInvertedWantsExperiment from "BrowserInvertedWantsExperiment" /* 14068 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9696 */;
+import BrowserInvertedWantsExperiment from "BrowserInvertedWantsExperiment" /* 14074 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 4814 */;
@@ -578,7 +578,7 @@ prototype["reset"] = function reset() {
     obj3 = { any };
   }
   self.latestWants = obj3;
-  const WindowVisibilityVideoManager = tmp3(9695).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = tmp3(9696).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager.off(WindowVisibilityVideoManager2.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {

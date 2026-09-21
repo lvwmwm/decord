@@ -1,13 +1,13 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 12949
+// Function ID: 12950
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4756, 576, 1115, 8105, 2]
+// Dependencies: [19, 21, 4756, 576, 1115, 8107, 2]
 // Exports: default
 
-// Module 12947 (SkipHeaderButton)
+// Module 12949 (SkipHeaderButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HeaderShared from "HeaderShared" /* 8105 */;
+import HeaderShared from "HeaderShared" /* 8107 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

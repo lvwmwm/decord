@@ -1,10 +1,10 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16735
+// Function ID: 16736
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 13945, 15359, 1074, 21, 4756, 576, 1115, 4457, 16730, 16732, 4752, 672, 4492, 5876, 5198, 504, 1241, 15358, 5185, 13946, 2]
+// Dependencies: [32, 19, 17, 13951, 15365, 1074, 21, 4756, 576, 1115, 4457, 16736, 16738, 4752, 672, 4492, 5881, 5198, 504, 1241, 15364, 5185, 13952, 2]
 // Exports: default
 
-// Module 16729 (ConnectionBanner)
+// Module 16735 (ConnectionBanner)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -13,10 +13,10 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import spring from "spring" /* 5185 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5876 from "module_5876" /* 5876 */;
+import _modDef5881 from "module_5881" /* 5881 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13945 */;
+import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 13951 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -33,12 +33,12 @@ function ConnectionBannerIcon(state) {
   } else if (tmp7.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: null };
     const obj5 = { size: "xs", color: tmp5(576).colors.INTERACTIVE_ICON_DEFAULT };
-    obj4.children = closure_1_12(tmp2(16730).ConnectionUnknownIcon, obj5);
+    obj4.children = closure_1_12(tmp2(16736).ConnectionUnknownIcon, obj5);
     return closure_1_12(timestampProducer, obj4);
   } else if (tmp7.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: null };
     const obj6 = { size: "xs", color: tmp5(576).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = closure_1_12(tmp2(16732).ConnectionFineIcon, obj6);
+    obj.children = closure_1_12(tmp2(16738).ConnectionFineIcon, obj6);
     return closure_1_12(timestampProducer, obj);
   }
 }
@@ -89,7 +89,7 @@ function BackOnlineGlow(opacity) {
   let obj = token(4457);
   obj3.maskElement = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors, locations, start, end });
   obj3.children = closure_12(LinearGradientDefault, { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 });
-  obj2.children = closure_12(_modDef5876, obj3);
+  obj2.children = closure_12(_modDef5881, obj3);
   return closure_12(ReanimatedRexportDefault.View, obj2);
 }
 function ConnectionBannerInner() {
@@ -178,8 +178,8 @@ function ConnectionBannerInner() {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const constants = fn(13945).ConnectivityIndicatorState;
-const YouBarConstants = fn(15359);
+const constants = fn(13951).ConnectivityIndicatorState;
+const YouBarConstants = fn(15365);
 const CONNECTION_BANNER_HEIGHT = YouBarConstants.CONNECTION_BANNER_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
 const AnalyticEvents = fn(1074).AnalyticEvents;
@@ -208,10 +208,10 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
 
 export default function ConnectionBanner() {
-  const config = stateFromStores(13946).useConfig({ location: "ConnectionBanner" });
+  const config = stateFromStores(13952).useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   stateFromStores = undefined;
-  let obj = stateFromStores(13946);
+  let obj = stateFromStores(13952);
   const items = [ConnectivityIndicatorStateStore];
   stateFromStores = hidden(504).useStateFromStores(items, () => state.getState());
   dependencyMap = noop.useRef(null);

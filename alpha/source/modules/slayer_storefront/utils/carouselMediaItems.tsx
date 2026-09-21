@@ -1,10 +1,10 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 11063
+// Function ID: 11064
 // Name: carouselMediaItems
-// Dependencies: [4997, 7466, 2]
+// Dependencies: [4997, 7471, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 11062 (carouselMediaItems)
+// Module 11063 (carouselMediaItems)
 import StoreUtils from "StoreUtils" /* 4997 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             let assetURL1;
             if (null != tmp4.backgroundAssetId) {
               let tmp26Result2 = tmp26(4997);
-              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(7466).LARGE_ASSET_FORMAT);
+              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(7471).LARGE_ASSET_FORMAT);
             }
             obj3.backgroundSrc = assetURL1;
             let arr2 = push(obj3);
@@ -81,7 +81,7 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             let assetURL3;
             if (null != tmp4.backgroundAssetId) {
               let tmp8Result2 = tmp8(4997);
-              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(7466).LARGE_ASSET_FORMAT);
+              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(7471).LARGE_ASSET_FORMAT);
             }
             obj.backgroundSrc = assetURL3;
             let arr3 = push(obj);

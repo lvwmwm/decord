@@ -1,14 +1,14 @@
-// Module ID: 9902
-// Function ID: 9903
+// Module ID: 9903
+// Function ID: 9904
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 2047, 1074, 21, 4756, 576, 9749, 4723, 9903, 8868, 1177, 1115, 4752, 5186, 9787, 2]
+// Dependencies: [19, 17, 2047, 1074, 21, 4756, 576, 9750, 4723, 9904, 8869, 1177, 1115, 4752, 5186, 9788, 2]
 // Exports: default
 
-// Module 9902 (EndEventActionSheet)
+// Module 9903 (EndEventActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9787 */;
-import CallsUtils from "CallsUtils" /* 9903 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9788 */;
+import CallsUtils from "CallsUtils" /* 9904 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,7 +25,7 @@ const result = size.fileFinishedImporting("modules/guild_scheduled_events/native
 export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   const tmp = closure_7();
-  const activeEvent = channel(9749).useActiveEvent(channel.id);
+  const activeEvent = channel(9750).useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
   } else {
@@ -65,7 +65,7 @@ export default function EndEventActionSheet(channel) {
     items[3] = closure_5(View, obj8);
     obj3.children = items;
     obj2.children = closure_6(View, obj3);
-    return closure_5(activeEvent(8868), obj2);
+    return closure_5(activeEvent(8869), obj2);
   }
-  let obj = channel(9749);
+  let obj = channel(9750);
 };

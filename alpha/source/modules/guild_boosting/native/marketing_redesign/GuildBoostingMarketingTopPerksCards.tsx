@@ -1,17 +1,17 @@
-// Module ID: 13859
-// Function ID: 13860
+// Module ID: 13865
+// Function ID: 13866
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 1115, 13860, 5741, 13861, 13862, 4752, 12816, 2]
+// Dependencies: [19, 17, 4748, 21, 4756, 576, 1115, 13866, 5746, 13867, 13868, 4752, 12818, 2]
 // Exports: default
 
-// Module 13859 (GuildBoostingMarketingTopPerksCards)
+// Module 13865 (GuildBoostingMarketingTopPerksCards)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5741 */;
-import _modDef13860 from "module_13860" /* 13860 */;
-import _mod13861 from "module_13861" /* 13861 */;
-import _modDef13862 from "module_13862" /* 13862 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5746 */;
+import _modDef13866 from "module_13866" /* 13866 */;
+import _mod13867 from "module_13867" /* 13867 */;
+import _modDef13868 from "module_13868" /* 13868 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
@@ -41,7 +41,7 @@ let items = [
       return intl.string(util.t.HTvLGu);
     },
     getGraphic(style) {
-      return timestampProducer(React3, { style, source: _modDef13860 });
+      return timestampProducer(React3, { style, source: _modDef13866 });
     }
   },
   {
@@ -54,7 +54,7 @@ let items = [
       return intl.string(util.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod13861, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod13867, autoPlay: !AccessibilityStore.useReducedMotion, style };
       return timestampProducer(LottieAnimationViewDefault, obj);
     }
   },
@@ -68,7 +68,7 @@ let items = [
       return intl.string(util.t.yCjoUC);
     },
     getGraphic(style) {
-      return timestampProducer(React3, { style, source: _modDef13862 });
+      return timestampProducer(React3, { style, source: _modDef13868 });
     }
   }
 ];

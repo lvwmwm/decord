@@ -1,22 +1,22 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16656
+// Function ID: 16657
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4397, 2045, 2041, 2096, 7870, 2063, 4771, 4405, 4937, 1372, 1074, 4938, 21, 4756, 504, 4619, 4616, 13590, 10409, 4752, 16651, 16652, 4909, 11, 16653, 16654, 12230, 16655, 16656, 16657, 16659, 16660, 16639, 2]
+// Dependencies: [19, 17, 4397, 2045, 2041, 2096, 7872, 2063, 4771, 4405, 4937, 1372, 1074, 4938, 21, 4756, 504, 4619, 4616, 13596, 10410, 4752, 16657, 16658, 4909, 11, 16659, 16660, 12232, 16661, 16662, 16663, 16665, 16666, 16645, 2]
 // Exports: default
 
-// Module 16650 (HomeDrawerGuildRow)
+// Module 16656 (HomeDrawerGuildRow)
 import Text_Text from "Text/Text" /* 4752 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 16655 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 16656 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 16657 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 16659 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 16660 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 16661 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 16662 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 16663 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 16665 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 16666 */;
 import noop from "module_19" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
@@ -66,10 +66,10 @@ function GuildRowWrapper(guild) {
     if (memo.isMuted) {
       let tmp3Result = dependencyMap;
       if (tmp.isTemporary) {
-        tmp3Result = tmp3(13590);
+        tmp3Result = tmp3(13596);
         let BellSlashIcon = tmp3Result.BellZIcon;
       } else {
-        BellSlashIcon = tmp3(10409).BellSlashIcon;
+        BellSlashIcon = tmp3(10410).BellSlashIcon;
       }
     } else {
       const obj = { style: closure_3.guildName, children: null };

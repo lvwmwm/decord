@@ -1,16 +1,16 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17460
+// Function ID: 17461
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7778, 1074, 21, 576, 4756, 1612, 15138, 15137, 17450, 9766, 4457, 7792, 1241, 7779, 7622, 4752, 5198, 1115, 2482, 2]
+// Dependencies: [19, 17, 7780, 1074, 21, 576, 4756, 1612, 15144, 15143, 17461, 9767, 4457, 7794, 1241, 7781, 7624, 4752, 5198, 1115, 2482, 2]
 // Exports: default
 
-// Module 17449 (ParentalConsentWarningBanner)
+// Module 17460 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import openUserSettings from "openUserSettings" /* 7622 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7779 */;
-import tinycolorDefault from "tinycolor" /* 7792 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7781 */;
+import tinycolorDefault from "tinycolor" /* 7794 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, StyleSheet } = get_ActivityIndicator);
 const View = get_ActivityIndicator.View;
-const FamilyCenterSubPages = fn(7778).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7780).FamilyCenterSubPages;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, UserSettingsSections: closure_9, VerticalGradient: c10 } = Constants);
 const jsxProd = fn(21);

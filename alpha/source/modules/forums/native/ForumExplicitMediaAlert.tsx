@@ -1,12 +1,12 @@
-// Module ID: 9508
-// Function ID: 9509
+// Module ID: 9509
+// Function ID: 9510
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4756, 576, 5205, 4752, 1115, 5186, 9509, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5205, 4752, 1115, 5186, 9510, 2]
 // Exports: default
 
-// Module 9508 (ForumExplicitMediaAlert)
+// Module 9509 (ForumExplicitMediaAlert)
 import nativeDefault from "native" /* 576 */;
-import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 9509 */;
+import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 9510 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

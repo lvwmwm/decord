@@ -1,18 +1,18 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12246
+// Function ID: 12247
 // Name: ApplicationCommandOptionValueParser
-// Dependencies: [32, 19, 5718, 2045, 2096, 2105, 2099, 4405, 1372, 5211, 12, 1370, 4909, 5654, 1978, 7916, 2]
+// Dependencies: [32, 19, 5723, 2045, 2096, 2105, 2099, 4405, 1372, 5211, 12, 1370, 4909, 5659, 1978, 7918, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 12244 (ApplicationCommandOptionValueParser)
+// Module 12246 (ApplicationCommandOptionValueParser)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import Server from "Server" /* 1978 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import MessageParser from "MessageParser" /* 7916 */;
+import MessageParser from "MessageParser" /* 7918 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5718 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;

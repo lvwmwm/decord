@@ -1,15 +1,15 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17029
+// Function ID: 17030
 // Name: VibegrationsNativeMarkdown
-// Dependencies: [19, 17, 21, 576, 4756, 17022, 4752, 4746, 17023, 2]
+// Dependencies: [19, 17, 21, 576, 4756, 17030, 4752, 4746, 17031, 2]
 // Exports: VibegrationsRevealedMarkdown
 
-// Module 17021 (VibegrationsNativeMarkdown)
+// Module 17029 (VibegrationsNativeMarkdown)
 import nativeDefault from "native" /* 576 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4746 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import VibegrationsMarkdownBlocks from "VibegrationsMarkdownBlocks" /* 17022 */;
-import useVibegrationsRevealedText from "useVibegrationsRevealedText" /* 17023 */;
+import VibegrationsMarkdownBlocks from "VibegrationsMarkdownBlocks" /* 17030 */;
+import useVibegrationsRevealedText from "useVibegrationsRevealedText" /* 17031 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

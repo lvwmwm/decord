@@ -1,14 +1,14 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 8377
+// Function ID: 8378
 // Name: RowGeneratorUtils
-// Dependencies: [17, 4748, 2041, 2063, 4749, 8190, 1074, 4756, 4605, 576, 7507, 4978, 1477, 2]
+// Dependencies: [17, 4748, 2041, 2063, 4749, 8191, 1074, 4756, 4605, 576, 7509, 4978, 1477, 2]
 
-// Module 8376 (RowGeneratorUtils)
+// Module 8377 (RowGeneratorUtils)
 import nativeDefault from "native" /* 576 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1477 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7507 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7509 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
@@ -16,7 +16,7 @@ import GuildStore from "GuildStore" /* 2063 */;
 require = fn;
 const MessageConstants = fn(4749);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: metroRequire, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: closure_7 } = MessageConstants);
-const SwipeActionsType = fn(8190).SwipeActionsType;
+const SwipeActionsType = fn(8191).SwipeActionsType;
 const Constants = fn(1074);
 ({ MessageFlags: closure_9, MessageTypes: c10 } = Constants);
 let createStyles = fn(4756);
@@ -86,7 +86,7 @@ export default {
             const obj6 = { backgroundColor: officialMessageColor | React5, gutterColor: ephemeralGutterColor };
             return obj6;
           }
-          tmp3Result = tmp3(7507);
+          tmp3Result = tmp3(7509);
         }
         obj = GuildOfficialMessageUtils;
       }

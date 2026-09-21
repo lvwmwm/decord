@@ -1,13 +1,13 @@
-// Module ID: 12161
-// Function ID: 12162
+// Module ID: 12163
+// Function ID: 12164
 // Name: AppealIngestionSpam
-// Dependencies: [19, 17, 21, 4756, 12139, 7363, 1177, 2]
+// Dependencies: [19, 17, 21, 4756, 12141, 7368, 1177, 2]
 // Exports: default
 
-// Module 12161 (AppealIngestionSpam)
+// Module 12163 (AppealIngestionSpam)
 import native from "native" /* 1177 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12139 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12141 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

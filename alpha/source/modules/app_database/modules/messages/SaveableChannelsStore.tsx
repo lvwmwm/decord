@@ -1,19 +1,19 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 7720
+// Function ID: 7721
 // Name: SaveableChannelsStore
-// Dependencies: [2041, 4675, 1073, 2095, 7719, 7720, 7721, 7723, 7724, 7725, 7726, 2]
+// Dependencies: [2041, 4675, 1073, 2095, 7721, 7722, 7723, 7725, 7726, 7727, 7728, 2]
 
-// Module 7718 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7720 */;
-import Lru from "Lru" /* 7721 */;
-import isPrivateChannel from "isPrivateChannel" /* 7723 */;
-import isReadableChannel from "isReadableChannel" /* 7724 */;
-import withFallbacks from "withFallbacks" /* 7726 */;
+// Module 7720 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7722 */;
+import Lru from "Lru" /* 7723 */;
+import isPrivateChannel from "isPrivateChannel" /* 7725 */;
+import isReadableChannel from "isReadableChannel" /* 7726 */;
+import withFallbacks from "withFallbacks" /* 7728 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import FileSystemStore from "FileSystemStore" /* 7719 */;
+import FileSystemStore from "FileSystemStore" /* 7721 */;
 
 require = fn;
 function handleSelectedChannelStoreChanged() {
@@ -86,9 +86,9 @@ function handleCacheLoadedLazyNoCache() {
 }
 let lastChannel = null;
 const bound = Math.max(25, 25, 1);
-let extendedMemoryLru = new fn(7720).ExtendedMemoryLru(750, 500);
+let extendedMemoryLru = new fn(7722).ExtendedMemoryLru(750, 500);
 let global = extendedMemoryLru;
-let lru = new fn(7721).Lru(15);
+let lru = new fn(7723).Lru(15);
 let c9 = false;
 let SaveableChannelsStore;
 class SaveableChannelsStore extends tmp3 {
@@ -220,7 +220,7 @@ SaveableChannelsStore["recordChannel"] = function recordChannel(id) {
           global.delete(id);
         }
       }
-      tmp8Result = tmp8(7725);
+      tmp8Result = tmp8(7727);
     }
     obj3 = isReadableChannel;
     tmp8 = require;

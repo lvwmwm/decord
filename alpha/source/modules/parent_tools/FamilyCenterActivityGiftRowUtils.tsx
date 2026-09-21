@@ -1,14 +1,14 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15182
+// Function ID: 15183
 // Name: FamilyCenterActivityGiftRowUtils
-// Dependencies: [1115, 3991, 7474, 2482, 2]
+// Dependencies: [1115, 3991, 7479, 2482, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 15176 (FamilyCenterActivityGiftRowUtils)
+// Module 15182 (FamilyCenterActivityGiftRowUtils)
 import util from "util" /* 1115 */;
 import _modDef2482 from "module_2482" /* 2482 */;
 import _mod3991 from "module_3991" /* 3991 */;
-import PriceUtils from "PriceUtils" /* 7474 */;
+import PriceUtils from "PriceUtils" /* 7479 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");

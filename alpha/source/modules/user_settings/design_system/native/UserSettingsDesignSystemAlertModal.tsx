@@ -1,10 +1,10 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16085
+// Function ID: 16086
 // Name: UserSettingsDesignSystemAlertModal
 // Dependencies: [5, 19, 17, 21, 5114, 5110, 4756, 5186, 2]
 // Exports: default
 
-// Module 16079 (UserSettingsDesignSystemAlertModal)
+// Module 16085 (UserSettingsDesignSystemAlertModal)
 import useAlertStore from "useAlertStore" /* 5110 */;
 import AlertModal from "AlertModal" /* 5114 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;

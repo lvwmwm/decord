@@ -1,26 +1,26 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16796
+// Function ID: 16797
 // Name: ICYMICustomScoresGuildScreen
-// Dependencies: [32, 19, 17, 7765, 2041, 2063, 4937, 8605, 21, 4756, 576, 504, 4909, 8620, 1115, 4723, 16791, 1980, 5239, 5817, 1177, 10399, 4752, 7768, 1612, 16792, 11418, 8996, 2]
+// Dependencies: [32, 19, 17, 7767, 2041, 2063, 4937, 8606, 21, 4756, 576, 504, 4909, 8621, 1115, 4723, 16797, 1980, 5239, 5822, 1177, 10400, 4752, 7770, 1612, 16798, 11420, 8997, 2]
 // Exports: default
 
-// Module 16790 (ICYMICustomScoresGuildScreen)
+// Module 16796 (ICYMICustomScoresGuildScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import ChannelListState from "ChannelListState" /* 7768 */;
-import ICYMIUtils from "ICYMIUtils" /* 8620 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11418 */;
-import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 16792 */;
+import ChannelListState from "ChannelListState" /* 7770 */;
+import ICYMIUtils from "ICYMIUtils" /* 8621 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11420 */;
+import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 16798 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelListStore from "ChannelListStore" /* 7765 */;
+import ChannelListStore from "ChannelListStore" /* 7767 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
-import ICYMIStore from "ICYMIStore" /* 8605 */;
+import ICYMIStore from "ICYMIStore" /* 8606 */;
 
 require = fn;
 function ICYMICustomScoreChannelRow(channelId) {
@@ -158,9 +158,9 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   const items2 = [ICYMIStore];
   const stateFromStores1 = navigation(504).useStateFromStores(items2, () => ICYMIStore.getCustomGuildScore(guildId));
   const tmp2Result = navigation(504);
-  const numberToCustomScoreResult = navigation(8620).numberToCustomScore(stateFromStores1);
+  const numberToCustomScoreResult = navigation(8621).numberToCustomScore(stateFromStores1);
   noop = numberToCustomScoreResult;
-  const tmp2Result3 = navigation(8620);
+  const tmp2Result3 = navigation(8621);
   const items3 = [ChannelListStore];
   guildChannels = navigation(504).useStateFromStoresObject(items3, () => ChannelListStore.getGuild(guildId)).guildChannels;
   const items4 = [numberToCustomScoreResult, guildChannels];
@@ -188,7 +188,7 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
               if (0 !== arr3.length) {
                 let intl3 = tmp27(1115).intl;
                 let stringResult = intl3.string(tmp27(1115).t.GSfOoo);
-                if (first === tmp27(7768).SECTION_INDEX_FAVORITES) {
+                if (first === tmp27(7770).SECTION_INDEX_FAVORITES) {
                   let intl2 = tmp27(1115).intl;
                   stringResult = intl2.string(tmp27(1115).t.mlPMCy);
                   let obj = { kind: "categoryHeader", index: null, title: null };
@@ -197,8 +197,8 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
                   let arr2 = items.push(obj);
                   let entries1 = arr3.entries();
                   let tmp23 = entries1[Symbol.iterator]();
-                } else if (first !== tmp27(7768).SECTION_INDEX_RECENTS) {
-                  if (first >= tmp27(7768).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+                } else if (first !== tmp27(7770).SECTION_INDEX_RECENTS) {
+                  if (first >= tmp27(7770).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
                     let namedCategoryFromSection = obj3.getNamedCategoryFromSection(first);
                     let str;
                     if (namedCategoryFromSection != null) {
@@ -274,6 +274,6 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   obj4.renderItem = callback;
   obj4.data = memo;
   obj4.keyExtractor = keyExtractor;
-  obj3.children = closure_11(navigation(8996).AnimatedFlashList, obj4);
+  obj3.children = closure_11(navigation(8997).AnimatedFlashList, obj4);
   return closure_11(guildChannels, obj3);
 };

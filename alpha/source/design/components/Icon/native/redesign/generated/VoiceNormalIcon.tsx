@@ -1,10 +1,10 @@
-// Module ID: 5312
-// Function ID: 5313
+// Module ID: 5319
+// Function ID: 5320
 // Name: VoiceNormalIcon
 // Dependencies: [19, 21, 576, 4456, 5249, 2]
 // Exports: VoiceNormalIcon
 
-// Module 5312 (VoiceNormalIcon)
+// Module 5319 (VoiceNormalIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5249 from "module_5249" /* 5249 */;

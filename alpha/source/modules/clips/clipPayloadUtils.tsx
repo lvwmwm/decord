@@ -1,16 +1,16 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 5347
+// Function ID: 5348
 // Name: clipPayloadUtils
-// Dependencies: [32, 5343, 1074, 4781, 5344, 1241, 2]
+// Dependencies: [32, 5348, 1074, 4781, 5349, 1241, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
-// Module 5342 (clipPayloadUtils)
+// Module 5347 (clipPayloadUtils)
 import _slicedToArray from "module_32" /* 32 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ClipsConstants = fn(5343);
+const ClipsConstants = fn(5348);
 ({ CLIPS_MAX_PARTICIPANTS: closure_4, CLIPS_MAX_TIMELINE_EVENTS: hasOwnProperty, ClipSignalTypes: metroRequire, GameEventType: closure_7, CLIP_RUNTIME: closure_8 } = ClipsConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const SpeakingFlags = fn(4781).SpeakingFlags;

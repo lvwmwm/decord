@@ -1,12 +1,12 @@
-// Module ID: 9048
-// Function ID: 9049
+// Module ID: 9049
+// Function ID: 9050
 // Name: CollectiblesWishlistUtils
-// Dependencies: [1973, 1115, 7794, 2]
+// Dependencies: [1973, 1115, 7796, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 9048 (CollectiblesWishlistUtils)
+// Module 9049 (CollectiblesWishlistUtils)
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7794 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 15975
+// Function ID: 15976
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1372, 21, 4756, 576, 1478, 504, 4600, 15970, 15971, 1115, 3000, 3032, 15972, 2]
+// Dependencies: [17, 1372, 21, 4756, 576, 1478, 504, 4600, 15976, 15977, 1115, 3000, 3032, 15978, 2]
 // Exports: default
 
-// Module 15969 (CheckpointWelcomeScreen)
+// Module 15975 (CheckpointWelcomeScreen)
 import _mod17 from "module_17" /* 17 */;
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
@@ -13,9 +13,9 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import _modDef3000 from "module_3000" /* 3000 */;
 import _modDef3032 from "module_3032" /* 3032 */;
 import UserUtils from "UserUtils" /* 4600 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15970 */;
-import CheckpointTextDefault from "CheckpointText" /* 15971 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15972 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15976 */;
+import CheckpointTextDefault from "CheckpointText" /* 15977 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15978 */;
 import UserStore from "UserStore" /* 1372 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4756 */;

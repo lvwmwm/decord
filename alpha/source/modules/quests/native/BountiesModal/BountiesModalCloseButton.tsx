@@ -1,14 +1,14 @@
-// Module ID: 15324
-// Function ID: 15325
+// Module ID: 15330
+// Function ID: 15331
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4756, 576, 5334, 1115, 5892, 2]
+// Dependencies: [19, 21, 4756, 576, 5339, 1115, 5897, 2]
 // Exports: default
 
-// Module 15324 (BountiesModalCloseButton)
+// Module 15330 (BountiesModalCloseButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5334 */;
-import XSmallIcon from "XSmallIcon" /* 5892 */;
+import Pressables from "Pressables" /* 5339 */;
+import XSmallIcon from "XSmallIcon" /* 5897 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

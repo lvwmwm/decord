@@ -1,14 +1,14 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18340
+// Function ID: 18341
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 1177, 504, 18327, 18330, 1397, 4752, 1115, 2776, 5334, 2482, 9075, 15195, 15149, 4454, 5184, 5904, 13205, 15154, 2]
+// Dependencies: [19, 17, 1372, 21, 4756, 576, 1177, 504, 18338, 18341, 1397, 4752, 1115, 2776, 5339, 2482, 9076, 15201, 15155, 4454, 5184, 5909, 13207, 15160, 2]
 // Exports: default
 
-// Module 18329 (PendingRequestList)
+// Module 18340 (PendingRequestList)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import _modDef2776 from "module_2776" /* 2776 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15149 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15155 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

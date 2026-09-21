@@ -1,22 +1,22 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15178
+// Function ID: 15179
 // Name: FamilyCenterActivityRow
-// Dependencies: [19, 17, 1372, 7777, 7778, 1074, 21, 4756, 576, 1177, 38, 563, 11, 4752, 4600, 7832, 5796, 5802, 1115, 2482, 15173, 15176, 15177, 2]
+// Dependencies: [19, 17, 1372, 7779, 7780, 1074, 21, 4756, 576, 1177, 38, 563, 11, 4752, 4600, 7834, 5801, 5807, 1115, 2482, 15179, 15182, 15183, 2]
 // Exports: default
 
-// Module 15172 (FamilyCenterActivityRow)
+// Module 15178 (FamilyCenterActivityRow)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7832 */;
-import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 15173 */;
-import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 15177 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7834 */;
+import FamilyCenterActivityPurchaseRowDefault from "FamilyCenterActivityPurchaseRow" /* 15179 */;
+import FamilyCenterActivityGiftRowDefault from "FamilyCenterActivityGiftRow" /* 15183 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7777 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
 
 require = fn;
 const View = fn(17).View;
-const ACTION_TO_TEXT = fn(7778).ACTION_TO_TEXT;
+const ACTION_TO_TEXT = fn(7780).ACTION_TO_TEXT;
 const GuildFeatures = fn(1074).GuildFeatures;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -53,7 +53,7 @@ const memoResult = noop.memo((action) => {
     const tmp3Result2 = tmp3(4600);
     const _Date = Date;
     const date = new Date(extractTimestampResult);
-    obj7.children = tmp6(7832).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
+    obj7.children = tmp6(7834).formatUserActivityTimestamp(date.getTime(), value.timestampFormatter);
     items2[1] = closure_8(tmp6(4752).Text, obj7);
     obj5.children = items2;
     items1[1] = closure_9(View, obj5);
@@ -97,16 +97,16 @@ const memoResult1 = noop.memo((action) => {
     const obj4 = { style: null, textStyle: null, guild: null, size: null, animate: true };
     ({ avatar: obj3.style, avatarText: obj3.textStyle } = tmp);
     obj4.guild = stateFromStores;
-    obj4.size = tmp2(5796).GuildIconSizes.NORMAL;
-    const items1 = [closure_8(tmp6(5796), obj4), ];
+    obj4.size = tmp2(5801).GuildIconSizes.NORMAL;
+    const items1 = [closure_8(tmp6(5801), obj4), ];
     const obj5 = { style: tmp.text, children: null };
     const obj6 = { style: tmp.headerContainer, children: null };
     const obj7 = { style: tmp.headerAndIconContainer, children: null };
     let tmp11Result = null;
     if (hasItem) {
-      const obj8 = { style: tmp.badge, guild: stateFromStores, size: tmp6(5802).Sizes.SMALL, disableColor: true };
-      tmp11Result = tmp11(tmp6(5802), obj8);
-      const tmp6Result2 = tmp6(5802);
+      const obj8 = { style: tmp.badge, guild: stateFromStores, size: tmp6(5807).Sizes.SMALL, disableColor: true };
+      tmp11Result = tmp11(tmp6(5807), obj8);
+      const tmp6Result2 = tmp6(5807);
     }
     const items2 = [tmp11Result, ];
     const obj9 = { style: tmp.header, variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: stateFromStores.name };
@@ -142,11 +142,11 @@ export default function FamilyCenterActivityRow(action) {
         if (!tmpResult8.isGift(action)) {
           return null;
         }
-        tmpResult8 = tmp(7832);
+        tmpResult8 = tmp(7834);
       }
-      tmpResult7 = tmp(7832);
+      tmpResult7 = tmp(7834);
     }
-    tmpResult = tmp(7832);
+    tmpResult = tmp(7834);
   }
   obj = FamilyCenterUtils;
   if (tmpResult9.isPurchase(action)) {
@@ -164,7 +164,7 @@ export default function FamilyCenterActivityRow(action) {
       if (null == giftInfo) {
         return null;
       } else {
-        const giftRowDisplayInfo = tmp(15176).getGiftRowDisplayInfo(giftInfo);
+        const giftRowDisplayInfo = tmp(15182).getGiftRowDisplayInfo(giftInfo);
         ({ skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt } = giftRowDisplayInfo);
         const obj3 = { skuId, subscriptionPlanId, price, gifterUserId, claimed, offeredAt, claimedAt };
         return React6(FamilyCenterActivityGiftRowDefault, obj3);
@@ -180,7 +180,7 @@ export default function FamilyCenterActivityRow(action) {
       const obj6 = { children: tmp4Result };
       return React6(View, obj6);
     }
-    tmpResult10 = tmp(7832);
+    tmpResult10 = tmp(7834);
   }
   tmpResult9 = FamilyCenterUtils;
 };

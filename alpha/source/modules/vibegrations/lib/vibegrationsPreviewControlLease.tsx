@@ -1,10 +1,10 @@
-// Module ID: 13181
-// Function ID: 13182
+// Module ID: 13183
+// Function ID: 13184
 // Name: vibegrationsPreviewControlLease
 // Dependencies: [19, 2]
 // Exports: acquireVibegrationsControlLease, beginVibegrationsControlOperation, endVibegrationsControlOperation, getVibegrationsControlActiveProjectIds, isVibegrationsControlActive, releaseVibegrationsControlLeases, useVibegrationsControlActive
 
-// Module 13181 (vibegrationsPreviewControlLease)
+// Module 13183 (vibegrationsPreviewControlLease)
 import noop from "module_19" /* 19 */;
 
 function emit() {

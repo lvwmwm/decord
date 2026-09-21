@@ -1,12 +1,12 @@
-// Module ID: 15060
-// Function ID: 15061
+// Module ID: 15066
+// Function ID: 15067
 // Name: TwoFASetupEnterCode
-// Dependencies: [32, 19, 1979, 15054, 21, 4756, 15057, 1484, 504, 7189, 14949, 1115, 15053, 7363, 1177, 15061, 5798, 2]
+// Dependencies: [32, 19, 1979, 15060, 21, 4756, 15063, 1484, 504, 7194, 14955, 1115, 15059, 7368, 1177, 15067, 5803, 2]
 // Exports: default
 
-// Module 15060 (TwoFASetupEnterCode)
-import MFAUtils from "MFAUtils" /* 7189 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14949 */;
+// Module 15066 (TwoFASetupEnterCode)
+import MFAUtils from "MFAUtils" /* 7194 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14955 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
@@ -14,7 +14,7 @@ import AppStateStore from "AppStateStore" /* 1979 */;
 const require = globalThis.__r;
 
 require = fn;
-const TwoFAModalSetupSections = fn(15054).TwoFAModalSetupSections;
+const TwoFAModalSetupSections = fn(15060).TwoFAModalSetupSections;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);

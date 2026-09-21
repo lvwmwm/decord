@@ -1,17 +1,17 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11412
+// Function ID: 11413
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 2038, 21, 4756, 576, 4576, 7390, 1177, 4752, 5186, 4723, 2]
+// Dependencies: [19, 17, 2038, 21, 4756, 576, 4576, 7395, 1177, 4752, 5186, 4723, 2]
 // Exports: default
 
-// Module 11410 (PremiumUpsellTooltipActionSheet)
+// Module 11412 (PremiumUpsellTooltipActionSheet)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7390 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

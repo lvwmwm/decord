@@ -1,13 +1,13 @@
-// Module ID: 18177
-// Function ID: 18178
+// Module ID: 18188
+// Function ID: 18189
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1248, 1243, 7496, 4379, 5203, 15476, 2]
+// Dependencies: [32, 5, 1248, 1243, 7498, 4379, 5203, 15482, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 18177 (RoleTierEditStore)
+// Module 18188 (RoleTierEditStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import _mod4379 from "module_4379" /* 4379 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15476 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -81,7 +81,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0) => {
     return (async () => {
       closure_1 = tmp3;
       priceTiers(1248).batchUpdates(() => priceTiers({ priceTierState: constants.LOADING }));
-      await closure_2_2(7496).getPriceTiers(priceTiers);
+      await closure_2_2(7498).getPriceTiers(priceTiers);
       if (1 === tmp7) {
         c2 = 0;
         priceTiers(1248).batchUpdates(() => priceTiers({ priceTierState: constants.ERROR }));

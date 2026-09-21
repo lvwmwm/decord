@@ -1,10 +1,10 @@
-// Module ID: 5635
-// Function ID: 5636
+// Module ID: 5640
+// Function ID: 5641
 // Name: RegionalFeatureConfigUtils
 // Dependencies: [4970, 504, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 5635 (RegionalFeatureConfigUtils)
+// Module 5640 (RegionalFeatureConfigUtils)
 import initialize from "initialize" /* 504 */;
 import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 4970 */;
 

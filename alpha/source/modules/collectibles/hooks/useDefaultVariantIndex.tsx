@@ -1,11 +1,11 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9045
+// Function ID: 9046
 // Name: useDefaultVariantIndex
-// Dependencies: [7797, 504, 7793, 2]
+// Dependencies: [7799, 504, 7795, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 9044 (useDefaultVariantIndex)
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7797 */;
+// Module 9045 (useDefaultVariantIndex)
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7799 */;
 
 const require = globalThis.__r;
 

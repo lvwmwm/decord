@@ -1,18 +1,18 @@
-// Module ID: 11340
-// Function ID: 11341
+// Module ID: 11342
+// Function ID: 11343
 // Name: PremiumGiftPurchaseSuccess
-// Dependencies: [19, 17, 5722, 1374, 1074, 21, 4756, 576, 10958, 1484, 10999, 4994, 10921, 8631, 5186, 1115, 4414, 7429, 4453, 11091, 4752, 9183, 4703, 2]
+// Dependencies: [19, 17, 5727, 1374, 1074, 21, 4756, 576, 10959, 1484, 11000, 4994, 10922, 8632, 5186, 1115, 4414, 7434, 4453, 11092, 4752, 9184, 4703, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 11340 (PremiumGiftPurchaseSuccess)
+// Module 11342 (PremiumGiftPurchaseSuccess)
 import nativeDefault from "native" /* 576 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 4994 */;
-import ClipboardUtils from "ClipboardUtils" /* 7429 */;
-import showShareActionSheet from "showShareActionSheet" /* 8631 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10921 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import showShareActionSheet from "showShareActionSheet" /* 8632 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10922 */;
 import noop from "module_19" /* 19 */;
-import SKUStore from "SKUStore" /* 5722 */;
+import SKUStore from "SKUStore" /* 5727 */;
 
 require = fn;
 const View = fn(17).View;
@@ -37,9 +37,9 @@ let result = size.fileFinishedImporting("modules/premium/native/gifting/PremiumG
 export default function PremiumGiftSuccessBody(giftCodeRecord) {
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   let tmp = closure_11();
-  const nativeGiftContext = giftCodeRecord(10958).useNativeGiftContext();
+  const nativeGiftContext = giftCodeRecord(10959).useNativeGiftContext();
   ({ giftStyle, premiumType, planInterval } = nativeGiftContext);
-  let obj = giftCodeRecord(10958);
+  let obj = giftCodeRecord(10959);
   const giftCodeURL = giftCodeRecord(4994).getGiftCodeURL(giftCodeRecord.code);
   if (null != giftCodeRecord.giftStyle) {
     giftStyle = giftCodeRecord.giftStyle;
@@ -65,7 +65,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
     tmp = giftCodeRecord;
     const result = ToastUtils.presentCopiedToClipboard();
   }, items);
-  obj3.children = closure_8(giftCodeURL(11091), { giftStyle });
+  obj3.children = closure_8(giftCodeURL(11092), { giftStyle });
   const items1 = [closure_8(View, obj3), , , , ];
   const obj6 = { style: tmp.title, variant: "heading-lg/bold", children: null };
   const intl = tmp2(1115).intl;
@@ -89,7 +89,7 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   obj5 = giftCodeURL(4414);
   const tmp10 = closure_9;
   const tmp12 = View;
-  items2[1] = closure_8(giftCodeRecord(9183).InputButton, { text: giftCodeURL, icon: tmp6(4703), iconPosition: "end", onPress: callback });
+  items2[1] = closure_8(giftCodeRecord(9184).InputButton, { text: giftCodeURL, icon: tmp6(4703), iconPosition: "end", onPress: callback });
   obj9.children = items2;
   items1[3] = closure_10(tmp12, obj9);
   const obj12 = { style: tmp.disclaimer, variant: "text-xs/normal", children: null };

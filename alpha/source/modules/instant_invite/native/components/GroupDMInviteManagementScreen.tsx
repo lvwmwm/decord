@@ -1,19 +1,19 @@
-// Module ID: 11194
-// Function ID: 11195
+// Module ID: 11195
+// Function ID: 11196
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8650, 8903, 1074, 21, 4756, 5203, 1271, 12, 576, 11195, 7279, 1177, 11213, 11214, 1115, 5836, 1249, 7240, 2]
+// Dependencies: [5, 32, 19, 17, 8651, 8904, 1074, 21, 4756, 5203, 1271, 12, 576, 11196, 7284, 1177, 11214, 11215, 1115, 5841, 1249, 7245, 2]
 
-// Module 11194 (GroupDMInviteManagementScreen)
+// Module 11195 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import InstantInviteDefault from "InstantInvite" /* 11195 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import InstantInviteDefault from "InstantInvite" /* 11196 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import InviteRecord from "InviteRecord" /* 8650 */;
+import InviteRecord from "InviteRecord" /* 8651 */;
 
 require = fn;
 function GroupDMInviteManagement(channelId) {
@@ -121,14 +121,14 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   const callback = noop.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp14 = jsx(channelId(7279).SceneLoadingIndicator, {});
+    let tmp14 = jsx(channelId(7284).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj2 = { lightSource: tmp4(11213), darkSource: tmp4(11214), title: null, body: null };
+    let obj2 = { lightSource: tmp4(11214), darkSource: tmp4(11215), title: null, body: null };
     const intl = channelId(1115).intl;
     obj2.title = intl.string(channelId(1115).t["+nLJkZ"]);
     const intl2 = channelId(1115).intl;
     obj2.body = intl2.string(channelId(1115).t.F53CAc);
-    tmp14 = jsx(channelId(1177).EmptyState, { lightSource: tmp4(11213), darkSource: tmp4(11214), title: null, body: null });
+    tmp14 = jsx(channelId(1177).EmptyState, { lightSource: tmp4(11214), darkSource: tmp4(11215), title: null, body: null });
   } else {
     let obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp11, initialNumToRender: 10, windowSize: tmp7[0] };
     tmp14 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp11} initialNumToRender={10} windowSize={tmp7[0]} />;
@@ -137,7 +137,7 @@ function GroupDMInviteManagement(channelId) {
 }
 get_ActivityIndicator = fn(17);
 ({ Platform, View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const ChannelSettingsStore = fn(8903);
+const ChannelSettingsStore = fn(8904);
 const Constants = fn(1074);
 ({ ChannelSettingsSections: closure_9, Endpoints: c10 } = Constants);
 const jsx = fn(21).jsx;
@@ -163,5 +163,5 @@ export default noop.memo(function GroupDMInviteManagementScreen(channelId) {
     obj[constants.INSTANT_INVITES_MANAGEMENT] = obj2;
     return obj;
   }, items);
-  return jsx(channelId(7240).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(7245).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });

@@ -1,22 +1,22 @@
-// Module ID: 12817
-// Function ID: 12818
+// Module ID: 12819
+// Function ID: 12820
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 4645, 1074, 12818, 21, 4756, 576, 5198, 9488, 7220, 12800, 12779, 4752, 1115, 2514, 12752, 12771, 12819, 12820, 12776, 2]
+// Dependencies: [19, 17, 4645, 1074, 12820, 21, 4756, 576, 5198, 9489, 7225, 12802, 12781, 4752, 1115, 2514, 12754, 12773, 12821, 12822, 12778, 2]
 // Exports: default
 
-// Module 12817 (GuildPowerupsLevelCard)
+// Module 12819 (GuildPowerupsLevelCard)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7220 */;
-import BoostGemIcon from "BoostGemIcon" /* 9488 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12752 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12771 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12776 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12819 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7225 */;
+import BoostGemIcon from "BoostGemIcon" /* 9489 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12754 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12773 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12778 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12821 */;
 import noop from "module_19" /* 19 */;
 
-const GuildPowerupsCardDefault = tmp5(12820);
+const GuildPowerupsCardDefault = tmp5(12822);
 require = fn;
 function GuildLevelPowerupHeader(arg0) {
   ({ active, nextActive, position } = arg0);
@@ -146,7 +146,7 @@ const GuildPowerupsConstants = fn(4645);
 ({ LevelCardPosition: hasOwnProperty, PowerupActiveStatusType: metroRequire } = GuildPowerupsConstants);
 const Constants = fn(1074);
 ({ BoostedGuildTiers: closure_7, HorizontalGradient: closure_8 } = Constants);
-const TIER_CARDS = fn(12818).TIER_CARDS;
+const TIER_CARDS = fn(12820).TIER_CARDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4756);

@@ -1,14 +1,14 @@
-// Module ID: 13545
-// Function ID: 13546
+// Module ID: 13547
+// Function ID: 13548
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 4755, 2041, 2063, 4577, 1372, 11687, 4904, 4910, 1115, 8217, 8219, 576, 4906, 13546, 7840, 4968, 4905, 2]
+// Dependencies: [17, 4755, 2041, 2063, 4577, 1372, 11689, 4904, 4910, 1115, 8218, 8220, 576, 4906, 13548, 7842, 4968, 4905, 2]
 // Exports: default
 
-// Module 13545 (createMediaPostPreviewEmbedContent)
+// Module 13547 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 576 */;
 import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4904 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8219 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11687 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11689 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 4755 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -61,14 +61,14 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
           if (null != mediaPostEmbedCommonData.authorName) {
             if (null != mediaPostEmbedCommonData.channelName) {
               if (null != user) {
-                const userAuthorWithProcessedColor = tmp(8217).getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
+                const userAuthorWithProcessedColor = tmp(8218).getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
                 const intl6 = tmp(1115).intl;
                 const obj3 = { username: mediaPostEmbedCommonData.authorName, usernameOnClick: null, channelName: null };
                 const obj4 = { userId: user.id, message, author: userAuthorWithProcessedColor, roleStyle, messageChannelId: mediaPostEmbedCommonData.threadId };
                 obj3.usernameOnClick = formatUsernameOnClickDefault(obj4);
                 obj3.channelName = mediaPostEmbedCommonData.channelName;
                 let formatToPartsResult = intl6.formatToParts(tmp(1115).t.mCytFr, obj3);
-                const tmpResult9 = tmp(8217);
+                const tmpResult9 = tmp(8218);
               }
               if (false === mediaPostEmbedCommonData.canAccess) {
                 let tmp11 = React4(nativeDefault.unsafe_rawColors.TEAL_430);
@@ -89,7 +89,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
                 const obj5 = {};
                 const merged = Object.assign(mediaPostEmbedCommonData);
-                obj5.blurredCoverImage = React3.resolveAssetSource(tmp10(13546)).uri;
+                obj5.blurredCoverImage = React3.resolveAssetSource(tmp10(13548)).uri;
                 obj5.footer = formatToPartsResult;
                 obj5.ctaButtonColor = tmp11;
                 return obj5;
@@ -101,11 +101,11 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 if (!value) {
                   value = obj7.get("obscure_blur_effect_self_harm_content_enabled");
                 }
-                const isPendingScanVersionResult = tmp(7840).isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
+                const isPendingScanVersionResult = tmp(7842).isPendingScanVersion(mediaPostEmbedCommonData.contentScanVersion);
                 let result = value;
                 if (value) {
-                  result = tmp(7840).shouldAgeVerifyForExplicitMedia();
-                  const tmpResult12 = tmp(7840);
+                  result = tmp(7842).shouldAgeVerifyForExplicitMedia();
+                  const tmpResult12 = tmp(7842);
                 }
                 let isVerifiedTeenResult = value;
                 if (value) {
@@ -162,7 +162,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 obj8.obscureHideControls = isVerifiedTeenResult;
                 obj8.obscureIsOpaque = value;
                 obj8.ctaButtonColor = tmp11;
-                const tmpResult11 = tmp(7840);
+                const tmpResult11 = tmp(7842);
               }
               tmp15 = null != mediaPostEmbedCommonData.coverImage && !mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage && isAnimatedImageUrlResult && flag;
             }

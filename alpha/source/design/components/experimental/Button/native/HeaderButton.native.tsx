@@ -1,9 +1,9 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9187
+// Function ID: 9188
 // Name: Button/HeaderButton
 // Dependencies: [19, 21, 5191, 4752, 4756, 5187, 2]
 
-// Module 9186 (Button/HeaderButton)
+// Module 9187 (Button/HeaderButton)
 import BaseTextButton from "BaseTextButton" /* 5187 */;
 import noop from "module_19" /* 19 */;
 

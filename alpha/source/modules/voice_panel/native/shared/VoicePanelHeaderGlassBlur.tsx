@@ -1,14 +1,14 @@
-// Module ID: 12533
-// Function ID: 12534
+// Module ID: 12535
+// Function ID: 12536
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 4756, 1364, 4492, 5185, 4690, 7313, 5173, 4607, 5801, 2]
+// Dependencies: [19, 17, 21, 4756, 1364, 4492, 5185, 4690, 7318, 5173, 4607, 5806, 2]
 
-// Module 12533 (VoicePanelHeaderGlassBlur)
+// Module 12535 (VoicePanelHeaderGlassBlur)
 import useThemeDefault from "useTheme" /* 4690 */;
 import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5173 */;
 import spring from "spring" /* 5185 */;
-import NativeViewDefault from "NativeView" /* 5801 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7313 */;
+import NativeViewDefault from "NativeView" /* 5806 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7318 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

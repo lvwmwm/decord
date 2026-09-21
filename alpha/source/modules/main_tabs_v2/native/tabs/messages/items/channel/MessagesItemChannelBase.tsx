@@ -1,13 +1,13 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16370
+// Function ID: 16371
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 4796, 4771, 4405, 2095, 4937, 1372, 1074, 21, 4756, 576, 504, 16365, 8485, 1364, 4769, 4767, 11176, 5334, 9866, 9098, 16366, 8122, 9094, 16367, 8527, 16368, 2]
+// Dependencies: [19, 17, 4796, 4771, 4405, 2095, 4937, 1372, 1074, 21, 4756, 576, 504, 16371, 8486, 1364, 4769, 4767, 11177, 5339, 9867, 9099, 16372, 8123, 9095, 16373, 8528, 16374, 2]
 
-// Module 16364 (MessagesItemChannelBase)
+// Module 16370 (MessagesItemChannelBase)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4767 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11176 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11177 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4796 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
@@ -75,7 +75,7 @@ export default noop.memo(function MessagesItemChannelBase(channel) {
       const obj2 = { status: PresenceStore.getStatus(obj.getRecipientId()), activities };
       let obj3 = obj2;
     } else {
-      obj3 = { status: "a", activities: "isArray" };
+      obj3 = { status: "Array", activities: "PX_16" };
     }
     return obj3;
   });

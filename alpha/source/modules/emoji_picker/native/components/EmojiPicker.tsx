@@ -1,9 +1,9 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10542
+// Function ID: 10543
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1074, 1375, 21, 4756, 576, 1241, 4492, 10542, 7402, 7422, 10545, 10540, 7290, 1115, 10546, 10586, 5198, 4605, 10605, 2]
+// Dependencies: [19, 17, 1074, 1375, 21, 4756, 576, 1241, 4492, 10543, 7407, 7427, 10546, 10541, 7295, 1115, 10547, 10587, 5198, 4605, 10606, 2]
 
-// Module 10541 (EmojiPicker)
+// Module 10542 (EmojiPicker)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;

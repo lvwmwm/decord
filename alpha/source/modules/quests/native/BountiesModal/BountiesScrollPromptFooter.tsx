@@ -1,19 +1,19 @@
-// Module ID: 15279
-// Function ID: 15280
+// Module ID: 15285
+// Function ID: 15286
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 4748, 5656, 21, 4756, 576, 4757, 4760, 504, 1612, 4492, 4466, 15280, 15281, 10225, 2]
+// Dependencies: [19, 17, 4748, 5661, 21, 4756, 576, 4757, 4760, 504, 1612, 4492, 4466, 15286, 15287, 10226, 2]
 // Exports: default
 
-// Module 15279 (BountiesScrollPromptFooter)
+// Module 15285 (BountiesScrollPromptFooter)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import timingPresets from "timingPresets" /* 4760 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10225 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15280 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 15281 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10226 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15286 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 15287 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
@@ -58,7 +58,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   return closure_8(ReanimatedRexportDefault.View, obj2);
 }
 const StyleSheet = fn(17).StyleSheet;
-const QuestsExperimentLocations = fn(5656).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5661).QuestsExperimentLocations;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);

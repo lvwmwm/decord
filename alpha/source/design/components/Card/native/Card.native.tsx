@@ -1,15 +1,15 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5824
+// Function ID: 5825
 // Name: Card
-// Dependencies: [109, 19, 17, 21, 4492, 576, 4756, 5820, 4457, 1364, 5185, 5189, 5821, 2]
+// Dependencies: [109, 19, 17, 21, 4492, 576, 4756, 5825, 4457, 1364, 5185, 5189, 5826, 2]
 
-// Module 5819 (Card)
+// Module 5824 (Card)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;
-import CardTokens from "CardTokens" /* 5820 */;
+import CardTokens from "CardTokens" /* 5825 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

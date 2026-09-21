@@ -1,7 +1,7 @@
 // Module ID: 4778
 // Function ID: 4779
 // Name: ApplicationStreamingStore
-// Dependencies: [4773, 1999, 502, 2041, 2063, 1992, 4395, 4779, 2095, 4775, 1074, 4798, 1091, 4808, 14091, 14092, 14093, 1980, 7960, 504, 14063, 573, 2]
+// Dependencies: [4773, 1999, 502, 2041, 2063, 1992, 4395, 4779, 2095, 4775, 1074, 4798, 1091, 4808, 14097, 14098, 14099, 1980, 7962, 504, 14069, 573, 2]
 
 // Module 4778 (ApplicationStreamingStore)
 import initializeDefault from "initialize" /* 504 */;
@@ -9,10 +9,10 @@ import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7960 */;
-import canSpectateDefault from "canSpectate" /* 14063 */;
-import windowSourceMatchesDefault from "windowSourceMatches" /* 14091 */;
-import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 14092 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7962 */;
+import canSpectateDefault from "canSpectate" /* 14069 */;
+import windowSourceMatchesDefault from "windowSourceMatches" /* 14097 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 14098 */;
 import GameConsoleStore from "GameConsoleStore" /* 4773 */;
 import RunningGameStore from "RunningGameStore" /* 1999 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -755,11 +755,11 @@ const applicationStreamingStore = new ApplicationStreamingStore(DispatcherDefaul
         FAILED = tmp22.FAILED;
       } else if (reason === tmp3.SAFETY_GUILD_RATE_LIMITED) {
         guildId = StreamKeyUtils.decodeStreamKey(streamKey).guildId;
-        asyncRequireImpl(14093, dependencyMap.paths).then((result) => {
+        asyncRequireImpl(14099, dependencyMap.paths).then((result) => {
           result.default(guildId);
         });
         FAILED = tmp22.ENDED;
-        const promise = asyncRequireImpl(14093, dependencyMap.paths);
+        const promise = asyncRequireImpl(14099, dependencyMap.paths);
       } else {
         if (tmp9) {
           FAILED = tmp22.FAILED;

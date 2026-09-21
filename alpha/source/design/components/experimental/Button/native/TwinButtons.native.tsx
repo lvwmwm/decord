@@ -1,10 +1,10 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9186
+// Function ID: 9187
 // Name: TwinButtons
 // Dependencies: [19, 17, 21, 4756, 576, 5193, 5186, 2]
 // Exports: TwinButtons
 
-// Module 9185 (TwinButtons)
+// Module 9186 (TwinButtons)
 import nativeDefault from "native" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
 import noop from "module_19" /* 19 */;

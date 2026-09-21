@@ -1,18 +1,18 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16884
+// Function ID: 16885
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1182, 2041, 2063, 1074, 21, 4756, 576, 4752, 1115, 1177, 10196, 7219, 15474, 15476, 15477, 563, 16879, 4909, 16881, 16882, 16883, 5239, 5799, 5796, 16884, 10604, 16886, 16887, 4451, 16888, 2]
+// Dependencies: [19, 17, 1182, 2041, 2063, 1074, 21, 4756, 576, 4752, 1115, 1177, 10197, 7224, 15480, 15482, 15483, 563, 16885, 4909, 16887, 16888, 16889, 5239, 5804, 5801, 16890, 10605, 16892, 16893, 4451, 16894, 2]
 // Exports: default
 
-// Module 16878 (GuildRoleSubscriptionPurchasePage)
+// Module 16884 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import LinkingDefault from "Linking" /* 4451 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import _modDef10196 from "module_10196" /* 10196 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16888 */;
+import _modDef10197 from "module_10197" /* 10197 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16894 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -44,7 +44,7 @@ function SocialBadge(onPress) {
   obj.onPress = onPress;
   const items = [closure_1_14(native.Icon, { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true }), closure_1_14(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
   if (tmp5Result) {
-    const obj3 = { source: _modDef10196, style: tmp.socialBadgeArrow };
+    const obj3 = { source: _modDef10197, style: tmp.socialBadgeArrow };
     tmp5Result = closure_1_14(native.Icon, obj3);
   }
   items[2] = tmp5Result;

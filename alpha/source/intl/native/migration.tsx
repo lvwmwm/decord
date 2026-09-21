@@ -1,10 +1,10 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14464
+// Function ID: 14465
 // Name: migration
 // Dependencies: [19, 21, 4756, 576, 4476, 4451, 1929, 1177, 2]
 // Exports: IntlLink
 
-// Module 14458 (migration)
+// Module 14464 (migration)
 import nativeDefault from "native" /* 576 */;
 import _modDef1929 from "module_1929" /* 1929 */;
 import LinkingDefault from "Linking" /* 4451 */;

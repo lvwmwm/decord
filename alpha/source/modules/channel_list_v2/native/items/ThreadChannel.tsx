@@ -1,15 +1,15 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16452
+// Function ID: 16453
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4397, 2041, 4395, 4771, 2095, 1372, 4775, 4780, 10373, 1074, 4938, 1114, 21, 4756, 576, 8727, 5193, 504, 12546, 4767, 10477, 16447, 16449, 9866, 16452, 1177, 16454, 16463, 4901, 2]
+// Dependencies: [19, 17, 4397, 2041, 4395, 4771, 2095, 1372, 4775, 4780, 10374, 1074, 4938, 1114, 21, 4756, 576, 8728, 5193, 504, 12548, 4767, 10478, 16453, 16455, 9867, 16458, 1177, 16460, 16469, 4901, 2]
 // Exports: default
 
-// Module 16446 (ThreadChannel)
+// Module 16452 (ThreadChannel)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4767 */;
-import inlineStyles from "inlineStyles" /* 8727 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10477 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16447 */;
+import inlineStyles from "inlineStyles" /* 8728 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10478 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16453 */;
 import noop from "module_19" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -191,7 +191,7 @@ function ThreadChannel(channel) {
   }
 }
 const View = fn(17).View;
-const RedesignChannelListConstants = fn(10373);
+const RedesignChannelListConstants = fn(10374);
 ({ getScaledChannelRowHeight: map1, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);
 const Permissions = fn(1074).Permissions;
 const UnreadSetting = fn(4938).UnreadSetting;

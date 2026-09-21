@@ -1,7 +1,7 @@
 // Module ID: 4800
 // Function ID: 4801
 // Name: StreamRTCConnection
-// Dependencies: [1998, 4801, 4802, 502, 2041, 4804, 1992, 4805, 4779, 4806, 1074, 4781, 1091, 4783, 4807, 2036, 4808, 4809, 12, 573, 4810, 4811, 4885, 1241, 4750, 4891, 4785, 4892, 4896, 4897, 13933, 7906, 2]
+// Dependencies: [1998, 4801, 4802, 502, 2041, 4804, 1992, 4805, 4779, 4806, 1074, 4781, 1091, 4783, 4807, 2036, 4808, 4809, 12, 573, 4810, 4811, 4885, 1241, 4750, 4891, 4785, 4892, 4896, 4897, 13939, 7908, 2]
 
 // Module 4800 (StreamRTCConnection)
 import _modDef12 from "module_12" /* 12 */;
@@ -694,9 +694,9 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(reason) {
     }
     let obj = { stream_application_name: obj5(4897).default.getApplicationNames() };
     if (self.isOwner) {
-      let obj2 = { clips_enabled: tmp5(13933).isClipsEnabled(), clips_buffer_length: tmp8.clipsLength };
+      let obj2 = { clips_enabled: tmp5(13939).isClipsEnabled(), clips_buffer_length: tmp8.clipsLength };
       obj3 = obj2;
-      const tmp5Result = tmp5(13933);
+      const tmp5Result = tmp5(13939);
     } else {
       obj3 = {};
     }
@@ -734,7 +734,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(reason) {
         obj.hardware_enabled = MediaEngineStore.getHardwareEncoding();
         let tmp = null;
         if (self.isOwner) {
-          tmp = tmp4(7906)();
+          tmp = tmp4(7908)();
         }
         obj.device_performance_class = tmp;
         obj.soundshare_experimental = MediaEngineStore.getExperimentalSoundshare();
@@ -777,7 +777,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(reason) {
         obj2.hardware_enabled = MediaEngineStore.getHardwareEncoding();
         let tmp2 = null;
         if (self.isOwner) {
-          tmp2 = tmp4(7906)();
+          tmp2 = tmp4(7908)();
         }
         obj2.device_performance_class = tmp2;
         obj.track(constants.VIDEO_STREAM_ENDED, obj2);

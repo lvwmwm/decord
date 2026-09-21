@@ -1,10 +1,10 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17021
+// Function ID: 17022
 // Name: VibegrationsConjureShimmer
-// Dependencies: [32, 19, 17, 4748, 21, 4756, 504, 4492, 4757, 672, 5876, 5198, 2]
+// Dependencies: [32, 19, 17, 4748, 21, 4756, 504, 4492, 4757, 672, 5881, 5198, 2]
 // Exports: default, shouldSweep
 
-// Module 17013 (VibegrationsConjureShimmer)
+// Module 17021 (VibegrationsConjureShimmer)
 import _modDef672 from "module_672" /* 672 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
@@ -122,9 +122,9 @@ export default function VibegrationsConjureShimmer(epoch) {
     const obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     obj8.children = closure_8(width(5198), obj10);
     obj6.children = closure_8(width(4492).View, obj8);
-    obj5.children = closure_8(width(5876), obj6);
+    obj5.children = closure_8(width(5881), obj6);
     tmp14 = closure_8(tmp13, obj5);
-    const tmp18 = width(5876);
+    const tmp18 = width(5881);
   }
   items3[1] = tmp14;
   obj4.children = items3;

@@ -1,13 +1,13 @@
-// Module ID: 11940
-// Function ID: 11941
+// Module ID: 11942
+// Function ID: 11943
 // Name: ArrowAngleRightUpIcon
-// Dependencies: [19, 21, 576, 4456, 11941, 2]
+// Dependencies: [19, 21, 576, 4456, 11943, 2]
 // Exports: ArrowAngleRightUpIcon
 
-// Module 11940 (ArrowAngleRightUpIcon)
+// Module 11942 (ArrowAngleRightUpIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod11941 from "module_11941" /* 11941 */;
+import _mod11943 from "module_11943" /* 11943 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ArrowAngleRightUpIcon = function ArrowAngleRightUpIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11941, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11943, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

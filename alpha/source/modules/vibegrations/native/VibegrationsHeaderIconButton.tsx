@@ -1,10 +1,10 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 16938
+// Function ID: 16939
 // Name: VibegrationsHeaderIconButton
-// Dependencies: [19, 21, 4756, 5334, 2]
+// Dependencies: [19, 21, 4756, 5339, 2]
 
-// Module 16931 (VibegrationsHeaderIconButton)
-import Pressables from "Pressables" /* 5334 */;
+// Module 16938 (VibegrationsHeaderIconButton)
+import Pressables from "Pressables" /* 5339 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

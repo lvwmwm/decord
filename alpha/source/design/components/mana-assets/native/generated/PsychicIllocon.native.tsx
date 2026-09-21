@@ -1,13 +1,13 @@
-// Module ID: 6605
-// Function ID: 6606
+// Module ID: 6610
+// Function ID: 6611
 // Name: PsychicIllocon
-// Dependencies: [21, 5799, 6606, 2]
+// Dependencies: [21, 5804, 6611, 2]
 // Exports: PsychicIllocon
 
-// Module 6605 (PsychicIllocon)
+// Module 6610 (PsychicIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6606 from "module_6606" /* 6606 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6611 from "module_6611" /* 6611 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const PsychicIllocon = function PsychicIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6606 };
+  const obj2 = { uri: _modDef6611 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

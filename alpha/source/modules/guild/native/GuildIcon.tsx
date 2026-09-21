@@ -1,15 +1,15 @@
-// Module ID: 5796
-// Function ID: 5797
+// Module ID: 5801
+// Function ID: 5802
 // Name: GuildIcon
-// Dependencies: [32, 19, 5797, 2059, 1074, 21, 4756, 576, 2009, 5798, 5799, 5801, 299, 2]
+// Dependencies: [32, 19, 5802, 2059, 1074, 21, 4756, 576, 2009, 5803, 5804, 5806, 299, 2]
 
-// Module 5796 (GuildIcon)
+// Module 5801 (GuildIcon)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-let closure_5 = fn(5797).ExpressionSourceGuildRecord;
+let closure_5 = fn(5802).ExpressionSourceGuildRecord;
 const GuildRecord = fn(2059);
 ({ getGuildIconSource: metroRequire, getGuildAcronym: closure_7 } = GuildRecord);
 const Fonts = fn(1074).Fonts;

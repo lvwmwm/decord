@@ -1,17 +1,17 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10346
+// Function ID: 10347
 // Name: isChannelFocused
-// Dependencies: [32, 19, 4772, 7568, 4964, 4615, 4613, 4614, 4616, 2]
+// Dependencies: [32, 19, 4772, 7570, 4964, 4615, 4613, 4614, 4616, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 10345 (isChannelFocused)
+// Module 10346 (isChannelFocused)
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
 import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4615 */;
 import useChatLayout from "useChatLayout" /* 4616 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
-import NavigationHistoryStore from "NavigationHistoryStore" /* 7568 */;
+import NavigationHistoryStore from "NavigationHistoryStore" /* 7570 */;
 import VoicePanelStore from "VoicePanelStore" /* 4964 */;
 
 const useChatLayoutDefault = useChatLayout;
@@ -147,7 +147,7 @@ function getFocusedChannelId() {
     }
   }
 }
-const CHANNEL_PREFIX = fn(7568).CHANNEL_PREFIX;
+const CHANNEL_PREFIX = fn(7570).CHANNEL_PREFIX;
 let c9 = null;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/panels/isChannelFocused.native.tsx");

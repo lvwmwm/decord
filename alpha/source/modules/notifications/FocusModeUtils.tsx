@@ -1,15 +1,15 @@
-// Module ID: 10346
-// Function ID: 10347
+// Module ID: 10347
+// Function ID: 10348
 // Name: FocusModeUtils
-// Dependencies: [5491, 4408, 1074, 2019, 2024, 1217, 1241, 5108, 1115, 10347, 2]
+// Dependencies: [5496, 4408, 1074, 2019, 2024, 1217, 1241, 5108, 1115, 10348, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10346 (FocusModeUtils)
+// Module 10347 (FocusModeUtils)
 import wrappers from "wrappers" /* 1217 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2019 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5491 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 
 const require = globalThis.__r;
 

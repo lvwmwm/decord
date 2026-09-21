@@ -1,10 +1,10 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12350
+// Function ID: 12351
 // Name: SearchBarBottomBorder
 // Dependencies: [19, 21, 4756, 576, 4492, 5185, 5189, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 12348 (SearchBarBottomBorder)
+// Module 12350 (SearchBarBottomBorder)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;

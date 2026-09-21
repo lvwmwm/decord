@@ -1,12 +1,12 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9611
+// Function ID: 9612
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [2041, 2063, 4395, 4775, 2004, 1074, 9611, 504, 1115, 2]
+// Dependencies: [2041, 2063, 4395, 4775, 2004, 1074, 9612, 504, 1115, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 9610 (getEmbeddedActivityLaunchability)
+// Module 9611 (getEmbeddedActivityLaunchability)
 import util from "util" /* 1115 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9611 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9612 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;

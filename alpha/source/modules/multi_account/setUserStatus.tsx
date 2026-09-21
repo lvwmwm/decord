@@ -1,13 +1,13 @@
-// Module ID: 10347
-// Function ID: 10348
+// Module ID: 10348
+// Function ID: 10349
 // Name: setUserStatus
-// Dependencies: [5, 7355, 5491, 1074, 4600, 1115, 10348, 2024, 1217, 4608, 1241, 2]
+// Dependencies: [5, 7360, 5496, 1074, 4600, 1115, 10349, 2024, 1217, 4608, 1241, 2]
 // Exports: default
 
-// Module 10347 (setUserStatus)
+// Module 10348 (setUserStatus)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7355 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5491 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7360 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 
 const require = fn;
 let closure_7 = async function _setUserStatus() {
@@ -42,7 +42,7 @@ let closure_7 = async function _setUserStatus() {
       const obj2 = { statusLabel: humanizeStatusResult };
       return intl3.formatToPlainString(tmp(1115).t.dO2aLi, obj2);
     } else {
-      const statusExpiryParts = tmp(10348).getStatusExpiryParts(arg1);
+      const statusExpiryParts = tmp(10349).getStatusExpiryParts(arg1);
       const timeString = statusExpiryParts.timeString;
       if ("today" === statusExpiryParts.kind) {
         const intl2 = tmp(1115).intl;

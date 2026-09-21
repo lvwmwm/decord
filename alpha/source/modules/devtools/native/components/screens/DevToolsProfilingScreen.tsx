@@ -1,15 +1,15 @@
-// Module ID: 15934
-// Function ID: 15935
+// Module ID: 15940
+// Function ID: 15941
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 10450, 5184, 5899, 5817, 4752, 15935, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 10451, 5184, 5904, 5822, 4752, 15941, 2]
 // Exports: default
 
-// Module 15934 (DevToolsProfilingScreen)
+// Module 15940 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 576 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
-import TableRowGroup from "TableRowGroup" /* 5899 */;
-import ComponentProfiler from "ComponentProfiler" /* 10450 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15935 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import ComponentProfiler from "ComponentProfiler" /* 10451 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 15941 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -47,8 +47,8 @@ export default function DevToolsProfilingScreen() {
     let obj3 = { children: null };
     const obj4 = { title: "Component Profiler", hasIcons: false, children: null };
     const obj5 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: callback };
-    obj4.children = tmp8(tmp4(5817).TableRow, obj5);
-    let items = [tmp8(tmp4(5899).TableRowGroup, obj4), ];
+    obj4.children = tmp8(tmp4(5822).TableRow, obj5);
+    let items = [tmp8(tmp4(5904).TableRowGroup, obj4), ];
     const _Object = Object;
     const keys = Object.keys(componentRenderStats);
     items[1] = keys.map((item) => {
@@ -79,8 +79,8 @@ export default function DevToolsProfilingScreen() {
     const items1 = ["Make sure you wrap your component in ", tmp8(tmp4(4752).Text, obj9), " to enable measurements."];
     obj8.children = items1;
     obj7.subLabel = tmp10(tmp4(4752).Text, obj8);
-    obj6.children = tmp8(tmp4(5817).TableRow, obj7);
-    tmp8Result = tmp8(tmp4(5899).TableRowGroup, obj6);
+    obj6.children = tmp8(tmp4(5822).TableRow, obj7);
+    tmp8Result = tmp8(tmp4(5904).TableRowGroup, obj6);
   }
   const obj10 = { spacing: 16, children: null };
   const items2 = [tmp8Result, closure_5(DevToolsProfilingUseStateFromStores.DevToolsProfilingUseStateFromStores, {})];

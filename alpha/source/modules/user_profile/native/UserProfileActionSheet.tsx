@@ -1,28 +1,28 @@
-// Module ID: 8468
-// Function ID: 8469
+// Module ID: 8469
+// Function ID: 8470
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 2041, 2105, 1372, 8428, 7448, 1074, 7391, 21, 4756, 6864, 4492, 1612, 504, 8454, 7402, 7422, 8438, 2019, 8458, 5337, 8469, 8481, 8482, 8483, 8489, 8475, 8494, 8495, 8498, 1478, 5894, 8492, 4690, 4457, 576, 8467, 8499, 8449, 2093, 8455, 1241, 4614, 4723, 1484, 8447, 7390, 1177, 8500, 1115, 4466, 8505, 1364, 7622, 8508, 13278, 13351, 9081, 7394, 13436, 1186, 2]
+// Dependencies: [32, 19, 17, 2041, 2105, 1372, 8429, 7453, 1074, 7396, 21, 4756, 6869, 4492, 1612, 504, 8455, 7407, 7427, 8439, 2019, 8459, 5342, 8470, 8482, 8483, 8484, 8490, 8476, 8495, 8496, 8499, 1478, 5899, 8493, 4690, 4457, 576, 8468, 8500, 8450, 2093, 8456, 1241, 4614, 4723, 1484, 8448, 7395, 1177, 8501, 1115, 4466, 8506, 1364, 7624, 8509, 13280, 13353, 9082, 7399, 13438, 1186, 2]
 
-// Module 8468 (UserProfileActionSheet)
+// Module 8469 (UserProfileActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import isChangelogUserDefault from "isChangelogUser" /* 2093 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import BottomSheetModal from "BottomSheetModal" /* 6864 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7422 */;
-import openUserSettings from "openUserSettings" /* 7622 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
-import UserActionCreators from "UserActionCreators" /* 8449 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8455 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8475 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8489 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8492 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8499 */;
+import BottomSheetModal from "BottomSheetModal" /* 6869 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import UserActionCreators from "UserActionCreators" /* 8450 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8456 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8476 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8490 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8493 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8500 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8428 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
 
 require = fn;
 function UseAnimatedPosition(animatedPosition) {
@@ -68,10 +68,10 @@ function ActionSheetAlignedView(animatedPosition) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const UserProfileThemeTypes = fn(7448).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7453).UserProfileThemeTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, EMPTY_STRING_SNOWFLAKE_ID: map1, UserSettingsSections: closure_14 } = Constants);
-const ACTION_SHEET_MAX_WIDTH = fn(7391).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 const createStyles = fn(4756);
@@ -192,11 +192,11 @@ export default noop.memo(function UserProfileActionSheet(userId) {
   const memo = isPreviewingChanges.useMemo(() => {
     closure_0 = sharedValue2;
     return (arg0, arg1, arg2) => {
-      const scrollEventsHandlersDefault = animatedScrollableState(6864).useScrollEventsHandlersDefault(arg0, arg1, arg2);
-      const obj = animatedScrollableState(6864);
-      animatedScrollableState = animatedScrollableState(6864).useBottomSheetInternal().animatedScrollableState;
+      const scrollEventsHandlersDefault = animatedScrollableState(6869).useScrollEventsHandlersDefault(arg0, arg1, arg2);
+      const obj = animatedScrollableState(6869);
+      animatedScrollableState = animatedScrollableState(6869).useBottomSheetInternal().animatedScrollableState;
       const handleOnScroll = scrollEventsHandlersDefault.handleOnScroll;
-      const obj2 = animatedScrollableState(6864);
+      const obj2 = animatedScrollableState(6869);
       const fn = function s(contentOffset, arg1) {
         if (handleOnScroll != null) {
           tmp(contentOffset, arg1);
@@ -209,12 +209,12 @@ export default noop.memo(function UserProfileActionSheet(userId) {
         const result = animatedScrollableState.set(num);
       };
       const obj3 = animatedScrollableState(4492);
-      fn.__closure = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: animatedScrollableState(6864).SCROLLABLE_STATE };
+      fn.__closure = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: animatedScrollableState(6869).SCROLLABLE_STATE };
       fn.__workletHash = 13254130622789;
       fn.__initData = __initData;
       const items = [handleOnScroll, animatedScrollableState];
       const obj5 = {};
-      obj4 = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: animatedScrollableState(6864).SCROLLABLE_STATE };
+      obj4 = { defaultHandleOnScroll: handleOnScroll, scrollPosition: animatedScrollableState, animatedScrollableState, SCROLLABLE_STATE: animatedScrollableState(6869).SCROLLABLE_STATE };
       const merged = Object.assign(scrollEventsHandlersDefault);
       obj5.handleOnScroll = obj3.useWorkletCallback(fn, items);
       return obj5;

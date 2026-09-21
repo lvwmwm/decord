@@ -1,15 +1,15 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 18310
+// Function ID: 18311
 // Name: AVErrorAnalytics
-// Dependencies: [32, 4794, 4801, 4802, 2041, 1992, 4779, 4806, 2095, 4795, 1074, 4781, 9685, 4808, 4885, 12, 7981, 9695, 1358, 4750, 1241, 2]
+// Dependencies: [32, 4794, 4801, 4802, 2041, 1992, 4779, 4806, 2095, 4795, 1074, 4781, 9686, 4808, 4885, 12, 7983, 9696, 1358, 4750, 1241, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 18299 (AVErrorAnalytics)
+// Module 18310 (AVErrorAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1358 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4750 */;
-import VideoQualityStats from "VideoQualityStats" /* 7981 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9695 */;
+import VideoQualityStats from "VideoQualityStats" /* 7983 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9696 */;
 import _slicedToArray from "module_32" /* 32 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4794 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4802 */;

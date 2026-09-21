@@ -1,17 +1,17 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14938
+// Function ID: 14939
 // Name: PasskeyUpsellManager
-// Dependencies: [502, 1372, 14926, 1074, 7358, 7189, 4576, 2027, 4613, 6833, 14933, 2]
+// Dependencies: [502, 1372, 14932, 1074, 7363, 7194, 4576, 2027, 4613, 6838, 14939, 2]
 
-// Module 14932 (PasskeyUpsellManager)
+// Module 14938 (PasskeyUpsellManager)
 import dismissible_content from "dismissible_content" /* 2027 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import MFAUtils from "MFAUtils" /* 7189 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14933 */;
+import MFAUtils from "MFAUtils" /* 7194 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14939 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1372 */;
-import WebAuthnStore from "WebAuthnStore" /* 14926 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import WebAuthnStore from "WebAuthnStore" /* 14932 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 const LoginStates = fn(1074).LoginStates;
@@ -43,8 +43,8 @@ prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
                     PasskeyUpsellActionCreatorsDefault.openPasskeyUpsell();
                   } else if (!c7) {
                     c7 = true;
-                    const webAuthnCredentials = tmp(6833).fetchWebAuthnCredentials();
-                    const tmpResult4 = tmp(6833);
+                    const webAuthnCredentials = tmp(6838).fetchWebAuthnCredentials();
+                    const tmpResult4 = tmp(6838);
                   }
                 }
                 tmp6 = undefined !== currentUser && currentUser.verified;

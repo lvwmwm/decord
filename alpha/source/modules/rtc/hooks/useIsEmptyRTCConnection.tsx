@@ -1,10 +1,10 @@
-// Module ID: 9992
-// Function ID: 9993
+// Module ID: 9993
+// Function ID: 9994
 // Name: useIsEmptyRTCConnection
 // Dependencies: [502, 4779, 4795, 504, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 9992 (useIsEmptyRTCConnection)
+// Module 9993 (useIsEmptyRTCConnection)
 import initialize from "initialize" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;

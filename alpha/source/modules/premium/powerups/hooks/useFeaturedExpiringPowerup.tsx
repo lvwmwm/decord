@@ -1,11 +1,11 @@
-// Module ID: 12758
-// Function ID: 12759
+// Module ID: 12760
+// Function ID: 12761
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4665, 4644, 504, 12759, 7794, 2]
+// Dependencies: [19, 4665, 4644, 504, 12761, 7796, 2]
 // Exports: default
 
-// Module 12758 (useFeaturedExpiringPowerup)
-import CollectiblesUtils from "CollectiblesUtils" /* 7794 */;
+// Module 12760 (useFeaturedExpiringPowerup)
+import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
 import noop from "module_19" /* 19 */;
 import GameServerStore from "GameServerStore" /* 4665 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;

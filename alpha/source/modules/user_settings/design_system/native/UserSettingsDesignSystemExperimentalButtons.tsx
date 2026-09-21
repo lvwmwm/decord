@@ -1,10 +1,10 @@
-// Module ID: 16075
-// Function ID: 16076
+// Module ID: 16081
+// Function ID: 16082
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 1074, 21, 4457, 576, 9183, 5184, 5899, 5825, 7292, 4703, 5186, 4752, 4466, 5198, 8872, 7621, 2]
+// Dependencies: [19, 17, 1074, 21, 4457, 576, 9184, 5184, 5904, 5830, 7297, 4703, 5186, 4752, 4466, 5198, 8873, 7623, 2]
 // Exports: default
 
-// Module 16075 (UserSettingsDesignSystemExperimentalButtons)
+// Module 16081 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
 import native from "native" /* 4466 */;
@@ -13,12 +13,12 @@ import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5825 from "module_5825" /* 5825 */;
-import TableRowGroup from "TableRowGroup" /* 5899 */;
-import _modDef7292 from "module_7292" /* 7292 */;
-import _modDef7621 from "module_7621" /* 7621 */;
-import RowButton from "RowButton" /* 8872 */;
-import native2 from "native" /* 9183 */;
+import _modDef5830 from "module_5830" /* 5830 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import _modDef7297 from "module_7297" /* 7297 */;
+import _modDef7623 from "module_7623" /* 7623 */;
+import RowButton from "RowButton" /* 8873 */;
+import native2 from "native" /* 9184 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,7 +45,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
 
     },
     text: "Channel Name",
-    icon: _modDef5825,
+    icon: _modDef5830,
     iconPosition: "end",
     accessibilityHint: "double-tap for more options",
     iconOpticalOffsetMargin: -6
@@ -59,7 +59,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
 
     },
     text: "Channel Name",
-    icon: _modDef5825,
+    icon: _modDef5830,
     iconPosition: "end",
     accessibilityHint: "double-tap for more options",
     iconOpticalOffsetMargin: -6
@@ -71,7 +71,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
       },
       size: "lg",
       text: "Search",
-      icon: _modDef7292,
+      icon: _modDef7297,
       round: true
     }),
 
@@ -82,7 +82,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
     },
     size: "lg",
     text: "Search",
-    icon: _modDef7292,
+    icon: _modDef7297,
     round: true
   };
   items1[1] = timestampProducer(native2.InputButton, {
@@ -158,7 +158,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
   const obj23 = { title: "Experimental Blur Background Row Button", description: "Row Button Row Buttons are full-width, high-emphasis buttons that are used as primary CTAs in a page.", hasIcons: false, children: timestampProducer(React3, {}) };
   const tmp3 = LinearGradientDefault;
   obj25.children = timestampProducer(RowButton.RowButton, {
-    icon: _modDef7621,
+    icon: _modDef7623,
     label: "Row Button",
     subLabel: "With a blur background",
     experimental_withBlurBackground: true,
@@ -169,7 +169,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
   obj24.children = timestampProducer(tmp3, obj25);
   items[5] = timestampProducer(native.ThemeContextProvider, obj24);
   const obj26 = {
-    icon: _modDef7621,
+    icon: _modDef7623,
     label: "Row Button",
     subLabel: "With a blur background",
     experimental_withBlurBackground: true,
@@ -183,7 +183,7 @@ export default function UserSettingsDesignSystemExperimentalButtons() {
   const items3 = [timestampProducer(React4, obj5), ];
   const obj27 = { title: "Collapsible Floating Action Button", description: "A variation of the FloatingActionButton which will display some text until the user scrolls. We currently recommend the use of the FloatingActionButton over the CollapsibleFloatingActionButton, as a singular icon button without animation is more compact, understandable, and predictable.", hasIcons: false, children: timestampProducer(React3, { style: { padding: 48 } }) };
   items3[1] = timestampProducer(native2.CollapsibleFloatingActionButton, {
-    icon: _modDef7621,
+    icon: _modDef7623,
     onPress() {
 
     },

@@ -1,24 +1,24 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16727
+// Function ID: 16728
 // Name: YouBarName
-// Dependencies: [19, 17, 4778, 2041, 4395, 4796, 4405, 5491, 4775, 1074, 21, 4756, 576, 16701, 11159, 10012, 11418, 16700, 504, 9629, 11141, 11139, 11140, 16722, 11137, 11155, 4752, 4600, 2]
+// Dependencies: [19, 17, 4778, 2041, 4395, 4796, 4405, 5496, 4775, 1074, 21, 4756, 576, 16707, 11160, 10013, 11420, 16706, 504, 9630, 11142, 11140, 11141, 16728, 11138, 11156, 4752, 4600, 2]
 
-// Module 16721 (YouBarName)
+// Module 16727 (YouBarName)
 import nativeDefault from "native" /* 576 */;
-import GuildTagDefault from "GuildTag" /* 10012 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11139 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 11140 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11159 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11418 */;
-import YouBarGuildTagExperiment from "YouBarGuildTagExperiment" /* 16701 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16722 */;
+import GuildTagDefault from "GuildTag" /* 10013 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11140 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 11141 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11160 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11420 */;
+import YouBarGuildTagExperiment from "YouBarGuildTagExperiment" /* 16707 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16728 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import PresenceStore from "PresenceStore" /* 4796 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5491 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 
 const require = globalThis.__r;

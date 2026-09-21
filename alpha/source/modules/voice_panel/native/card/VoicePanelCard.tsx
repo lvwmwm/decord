@@ -1,9 +1,9 @@
-// Module ID: 17585
-// Function ID: 17586
+// Module ID: 17596
+// Function ID: 17597
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 4778, 4779, 5631, 12524, 12522, 17542, 12527, 1074, 4777, 12525, 21, 4492, 4752, 5198, 1177, 4756, 576, 4898, 4808, 5801, 1115, 5186, 12523, 504, 9683, 4811, 13329, 9686, 9682, 17586, 9693, 9106, 8519, 4757, 5185, 7313, 5799, 4457, 17587, 11258, 9663, 4466, 7402, 17545, 17557, 17541, 17588, 17589, 8447, 6892, 17590, 12526, 17591, 17592, 17593, 17594, 17595, 17605, 2]
+// Dependencies: [32, 19, 17, 4778, 4779, 5636, 12526, 12524, 17553, 12529, 1074, 4777, 12527, 21, 4492, 4752, 5198, 1177, 4756, 576, 4898, 4808, 5806, 1115, 5186, 12525, 504, 9684, 4811, 13331, 9687, 9683, 17597, 9694, 9107, 8520, 4757, 5185, 7318, 5804, 4457, 17598, 11259, 9664, 4466, 7407, 17556, 17568, 17552, 17599, 17600, 8448, 6897, 17601, 12528, 17602, 17603, 17604, 17605, 17606, 17616, 2]
 
-// Module 17585 (VoicePanelCard)
+// Module 17596 (VoicePanelCard)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4466 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
@@ -12,16 +12,16 @@ import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
 import StreamActionCreators from "StreamActionCreators" /* 4898 */;
 import spring from "spring" /* 5185 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11258 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17541 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17587 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17588 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11259 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17552 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17598 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17599 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import SpeakingStore from "SpeakingStore" /* 5631 */;
+import SpeakingStore from "SpeakingStore" /* 5636 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
 
@@ -811,14 +811,14 @@ function AnimatedWrapper(children) {
   return windowDimensions(cleanUp(id[52]).GestureDetector, obj10);
 }
 const StyleSheet = fn(17).StyleSheet;
-const VoicePanelConstants = fn(12524);
+const VoicePanelConstants = fn(12526);
 ({ VoicePanelCTACard: closure_9, VoicePanelModes: c10, MODE_CHANGE_PHYSICS: closure_11, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: map1 } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(12522).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17542).VoicePanelPIPModes;
-const EDGE_GUTTER = fn(12527).EDGE_GUTTER;
+const VoicePanelControlsModes = fn(12524).VoicePanelControlsModes;
+const VoicePanelPIPModes = fn(17553).VoicePanelPIPModes;
+const EDGE_GUTTER = fn(12529).EDGE_GUTTER;
 const ApplicationStreamStates = fn(1074).ApplicationStreamStates;
 const ParticipantTypes = fn(4777).ParticipantTypes;
-let SCALE_PHYSICS = fn(12525).SCALE_PHYSICS;
+let SCALE_PHYSICS = fn(12527).SCALE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = jsxProd);
 let ReanimatedRexport = ReanimatedRexport_mod;
@@ -1095,7 +1095,7 @@ const __initData7 = { code: "function VoicePanelCardTsx9(){const{focused}=this._
 const __initData8 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 const __initData9 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 const __initData10 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_47 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
+let closure_47 = { isSelf: false, hasVideo: false, user: { id: "r" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING, scale, sharedValue2, flag) {
   if (flag === undefined) {
     flag = false;
@@ -1359,7 +1359,7 @@ export default noop.memo(function VoicePanelCard(cleanUp) {
       tmp27 = closure_20;
     }
   }
-  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "flexDirection", layout: layoutTransition, layoutPhysics: physics };
+  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "Icon", layout: layoutTransition, layoutPhysics: physics };
   tmp29Result = closure_20(closure_37, obj13);
   tmp27 = closure_20;
 });

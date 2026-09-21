@@ -1,9 +1,9 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11910
+// Function ID: 11911
 // Name: ReportToModStore
 // Dependencies: [4577, 504, 573, 2]
 
-// Module 11908 (ReportToModStore)
+// Module 11910 (ReportToModStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;

@@ -1,10 +1,10 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8543
+// Function ID: 8544
 // Name: usePrevious
 // Dependencies: [19, 2]
 // Exports: default, useCurrentWhen, usePreviousWhen
 
-// Module 8542 (usePrevious)
+// Module 8543 (usePrevious)
 import noop from "module_19" /* 19 */;
 import size from "module_2" /* 2 */;
 

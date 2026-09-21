@@ -1,10 +1,10 @@
-// Module ID: 5283
-// Function ID: 5284
+// Module ID: 5290
+// Function ID: 5291
 // Name: ThreadLockIcon
 // Dependencies: [19, 21, 576, 4456, 5240, 2]
 // Exports: ThreadLockIcon
 
-// Module 5283 (ThreadLockIcon)
+// Module 5290 (ThreadLockIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5240 from "module_5240" /* 5240 */;

@@ -1,17 +1,17 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17121
+// Function ID: 17122
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4748, 4796, 4405, 1074, 21, 4756, 576, 4752, 4600, 11137, 504, 9551, 1177, 9840, 13760, 17111, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 4796, 4405, 1074, 21, 4756, 576, 4752, 4600, 11138, 504, 9552, 1177, 9841, 13766, 17122, 2]
 
-// Module 17110 (DMRow)
+// Module 17121 (DMRow)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import UserUtils from "UserUtils" /* 4600 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import BotTagDefault from "BotTag" /* 9551 */;
-import _modDef9840 from "module_9840" /* 9840 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11137 */;
-import _modDef13760 from "module_13760" /* 13760 */;
+import BotTagDefault from "BotTag" /* 9552 */;
+import _modDef9841 from "module_9841" /* 9841 */;
+import ActivityStatusDefault from "ActivityStatus" /* 11138 */;
+import _modDef13766 from "module_13766" /* 13766 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -166,7 +166,7 @@ export default noop.memo(function DMRow(user) {
       let tmp4Result = isOwner;
       if (isOwner) {
         const obj4 = { style: tmp3.tag, children: null };
-        const obj5 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9840, disableColor: true };
+        const obj5 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef9841, disableColor: true };
         obj4.children = tmp4(tmp5(1177).Icon, obj5);
         tmp4Result = tmp4(tmp2, obj4);
       }
@@ -174,7 +174,7 @@ export default noop.memo(function DMRow(user) {
       let tmp4Result3 = null != premiumSince;
       if (tmp4Result3) {
         const obj6 = { style: tmp3.tag, children: null };
-        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13760, disableColor: true };
+        const obj7 = { size: tmp5(1177).Icon.Sizes.REFRESH_SMALL_16, source: _modDef13766, disableColor: true };
         obj6.children = tmp4(tmp5(1177).Icon, obj7);
         tmp4Result3 = tmp4(tmp2, obj6);
       }

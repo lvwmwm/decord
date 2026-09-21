@@ -1,13 +1,13 @@
-// Module ID: 9835
-// Function ID: 9836
+// Module ID: 9836
+// Function ID: 9837
 // Name: useGuildProfile
-// Dependencies: [5, 19, 9834, 504, 9836, 2]
+// Dependencies: [5, 19, 9835, 504, 9837, 2]
 // Exports: useGuildProfile
 
-// Module 9835 (useGuildProfile)
+// Module 9836 (useGuildProfile)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 9834 */;
+import GuildProfileStore from "GuildProfileStore" /* 9835 */;
 
 const require = globalThis.__r;
 

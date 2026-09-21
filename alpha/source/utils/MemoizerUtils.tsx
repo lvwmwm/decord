@@ -1,9 +1,9 @@
-// Module ID: 8068
-// Function ID: 8069
+// Module ID: 8070
+// Function ID: 8071
 // Name: MemoizerUtils
 // Dependencies: [2]
 
-// Module 8068 (MemoizerUtils)
+// Module 8070 (MemoizerUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/MemoizerUtils.tsx");

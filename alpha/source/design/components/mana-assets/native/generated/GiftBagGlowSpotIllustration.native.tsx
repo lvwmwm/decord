@@ -1,13 +1,13 @@
-// Module ID: 6361
-// Function ID: 6362
+// Module ID: 6366
+// Function ID: 6367
 // Name: GiftBagGlowSpotIllustration
-// Dependencies: [21, 5799, 6362, 2]
+// Dependencies: [21, 5804, 6367, 2]
 // Exports: GiftBagGlowSpotIllustration
 
-// Module 6361 (GiftBagGlowSpotIllustration)
+// Module 6366 (GiftBagGlowSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6362 from "module_6362" /* 6362 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6367 from "module_6367" /* 6367 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GiftBagGlowSpotIllustration = function GiftBagGlowSpotIllustration(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6362 };
+  const obj2 = { uri: _modDef6367 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

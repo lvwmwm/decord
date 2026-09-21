@@ -1,11 +1,11 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 9929
+// Function ID: 9930
 // Name: isVideoBackgroundSupported
-// Dependencies: [1992, 4781, 1364, 9929, 2]
+// Dependencies: [1992, 4781, 1364, 9930, 2]
 // Exports: default
 
-// Module 9928 (isVideoBackgroundSupported)
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 9929 */;
+// Module 9929 (isVideoBackgroundSupported)
+import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 9930 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = fn;

@@ -1,11 +1,11 @@
-// Module ID: 5358
-// Function ID: 5359
+// Module ID: 5363
+// Function ID: 5364
 // Name: openPrivacySettings
-// Dependencies: [5359, 2]
+// Dependencies: [5364, 2]
 // Exports: default
 
-// Module 5358 (openPrivacySettings)
-import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5359 */;
+// Module 5363 (openPrivacySettings)
+import NativeDeviceSettingsModuleDefault from "NativeDeviceSettingsModule" /* 5364 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/native_permissions/mobile/openPrivacySettings.native.tsx");

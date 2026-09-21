@@ -1,18 +1,18 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17647
+// Function ID: 17648
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 4773, 2098, 502, 2041, 1992, 4395, 1372, 4775, 21, 3, 4756, 504, 7585, 10259, 10274, 12523, 4492, 17548, 4724, 9780, 6892, 17637, 17638, 1115, 10261, 4752, 9944, 10260, 2]
+// Dependencies: [32, 19, 4773, 2098, 502, 2041, 1992, 4395, 1372, 4775, 21, 3, 4756, 504, 7587, 10260, 10275, 12525, 4492, 17559, 4724, 9781, 6897, 17648, 17649, 1115, 10262, 4752, 9945, 10261, 2]
 // Exports: MicButton, PTTButton
 
-// Module 17636 (VoicePanelMicButton)
+// Module 17647 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6892 */;
-import useMuteStates from "useMuteStates" /* 7585 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9780 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 10259 */;
-import useDeafStates from "useDeafStates" /* 10274 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
+import useMuteStates from "useMuteStates" /* 7587 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 9781 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 10260 */;
+import useDeafStates from "useDeafStates" /* 10275 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4773 */;
@@ -260,7 +260,7 @@ export const MicButton = function MicButton(arg0) {
   const memo = noop.useMemo(() => {
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      let tmp3Result = map1(tmp(9944).MicrophoneDenyIcon, obj2);
+      let tmp3Result = map1(tmp(9945).MicrophoneDenyIcon, obj2);
     } else {
       if (mute) {
         let color = tmp5.iconFillRed.color;
@@ -268,7 +268,7 @@ export const MicButton = function MicButton(arg0) {
         color = tmp5.iconFill.color;
       }
       const obj = { color, muted: mute };
-      tmp3Result = map1(tmp(10260).VoicePanelRiveMicButton, obj);
+      tmp3Result = map1(tmp(10261).VoicePanelRiveMicButton, obj);
     }
     return tmp3Result;
   }, items2);

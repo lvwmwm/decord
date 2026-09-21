@@ -1,13 +1,13 @@
-// Module ID: 6579
-// Function ID: 6580
+// Module ID: 6584
+// Function ID: 6585
 // Name: PencilIllocon
-// Dependencies: [21, 5799, 6580, 2]
+// Dependencies: [21, 5804, 6585, 2]
 // Exports: PencilIllocon
 
-// Module 6579 (PencilIllocon)
+// Module 6584 (PencilIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6580 from "module_6580" /* 6580 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6585 from "module_6585" /* 6585 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const PencilIllocon = function PencilIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6580 };
+  const obj2 = { uri: _modDef6585 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

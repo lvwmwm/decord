@@ -1,13 +1,13 @@
-// Module ID: 18134
-// Function ID: 18135
+// Module ID: 18145
+// Function ID: 18146
 // Name: EligibilityActionSheet
-// Dependencies: [19, 1074, 21, 4756, 4723, 9854, 7622, 18135, 7390, 4752, 1115, 18139, 2]
+// Dependencies: [19, 1074, 21, 4756, 4723, 9855, 7624, 18146, 7395, 4752, 1115, 18150, 2]
 // Exports: default
 
-// Module 18134 (EligibilityActionSheet)
+// Module 18145 (EligibilityActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18135 */;
-import EligibilityChecklistDefault from "EligibilityChecklist" /* 18139 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18146 */;
+import EligibilityChecklistDefault from "EligibilityChecklist" /* 18150 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -29,9 +29,9 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
       onEnableMFAClick() {
         closure_1_1(4723).hideActionSheet(closure_1_7);
         const obj = closure_1_1(4723);
-        closure_1_1(9854).close();
-        const obj2 = closure_1_1(9854);
-        onRequireModeratorMFAClick(7622).openUserSettings({ screen: constants.ACCOUNT });
+        closure_1_1(9855).close();
+        const obj2 = closure_1_1(9855);
+        onRequireModeratorMFAClick(7624).openUserSettings({ screen: constants.ACCOUNT });
       },
       onRequireModeratorMFAClick() {
         ActionSheetActionCreatorsDefault.hideActionSheet(EligibilityActionSheet);
@@ -48,6 +48,6 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   const tmp3 = useCreatorMonetizationEligibilityItemsDefault(onRequireModeratorMFAClick.eligibility, memo);
   items1[1] = closure_5(EligibilityChecklistDefault, { style: tmp.container, items: useCreatorMonetizationEligibilityItemsDefault(onRequireModeratorMFAClick.eligibility, memo) });
   obj.children = items1;
-  return closure_6(onRequireModeratorMFAClick(7390).BottomSheet, obj);
+  return closure_6(onRequireModeratorMFAClick(7395).BottomSheet, obj);
 };
 export const ELIGIBILITY_ACTION_SHEET_KEY = "EligibilityActionSheet";

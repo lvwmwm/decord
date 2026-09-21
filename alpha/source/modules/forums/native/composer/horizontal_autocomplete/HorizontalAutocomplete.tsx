@@ -1,9 +1,9 @@
-// Module ID: 10883
-// Function ID: 10884
+// Module ID: 10884
+// Function ID: 10885
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4748, 2099, 2063, 4405, 1372, 1074, 21, 4756, 5736, 576, 4492, 5203, 4757, 504, 1177, 4752, 4600, 7427, 7445, 8392, 5239, 4909, 5799, 2]
+// Dependencies: [19, 17, 4748, 2099, 2063, 4405, 1372, 1074, 21, 4756, 5741, 576, 4492, 5203, 4757, 504, 1177, 4752, 4600, 7432, 7450, 8393, 5239, 4909, 5804, 2]
 
-// Module 10883 (HorizontalAutocomplete)
+// Module 10884 (HorizontalAutocomplete)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
@@ -12,16 +12,16 @@ import UserUtilsDefault from "UserUtils" /* 4600 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import timing from "timing" /* 4757 */;
 import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import RoleIconDefault from "RoleIcon" /* 7445 */;
-import _modDef8392 from "module_8392" /* 8392 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import RoleIconDefault from "RoleIcon" /* 7450 */;
+import _modDef8393 from "module_8393" /* 8393 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
-import TextStyles from "TextStyles" /* 5736 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 require = fn;
 function HorizontalAutocompleteOption(arg0) {
@@ -106,8 +106,8 @@ export default {
     const stateFromStores = initialize.useStateFromStores(items, () => GuildRoleStore.getRole(require, importDefault));
     let roleIconData = null;
     if (null != stateFromStores) {
-      roleIconData = tmp2(7427).getRoleIconData(stateFromStores, 30);
-      const tmp2Result = tmp2(7427);
+      roleIconData = tmp2(7432).getRoleIconData(stateFromStores, 30);
+      const tmp2Result = tmp2(7432);
     }
     const obj2 = { onPress: onPress.onPress, children: null };
     let tmp8 = null;
@@ -138,7 +138,7 @@ export default {
     channel(504);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = _modDef8392;
+      let channelIconWithGuild = _modDef8393;
     } else {
       channelIconWithGuild = tmp2(5239).getChannelIconWithGuild(channel, tmp5);
       const tmp2Result = tmp2(5239);

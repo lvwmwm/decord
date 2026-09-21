@@ -1,10 +1,10 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17643
+// Function ID: 17644
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 12524, 12527, 12522, 21, 4756, 576, 12523, 17626, 4492, 4466, 17633, 17631, 5185, 5801, 1177, 4752, 5334, 10043, 1115, 17634, 2]
+// Dependencies: [19, 12526, 12529, 12524, 21, 4756, 576, 12525, 17637, 4492, 4466, 17644, 17642, 5185, 5806, 1177, 4752, 5339, 10044, 1115, 17645, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 17632 (VoicePanelConsoleStatus)
+// Module 17643 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4466 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
@@ -131,8 +131,8 @@ class VoicePanelConsoleStatus {
     return tmp13(cleanUp(windowDimensions[9]).View, obj14);
   }
 }
-const EDGE_GUTTER = fn(12527).EDGE_GUTTER;
-const CONTROLS_HEIGHT = fn(12522).CONTROLS_HEIGHT;
+const EDGE_GUTTER = fn(12529).EDGE_GUTTER;
+const CONTROLS_HEIGHT = fn(12524).CONTROLS_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4756);
@@ -141,7 +141,7 @@ let obj3 = { borderRadius: nativeDefault.modules.mobile.VOICE_PANEL_CONTROLS_BOR
 obj2.blockingControlCover = { position: "absolute", bottom: 0, borderRadius: nativeDefault.modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS, flex: 1, height: CONTROLS_HEIGHT, overflow: "hidden" };
 const React6 = createStyles.createStyles(obj2);
 let obj5 = {};
-let merged = Object.assign(fn(12524).MODE_CHANGE_PHYSICS);
+let merged = Object.assign(fn(12526).MODE_CHANGE_PHYSICS);
 obj5.overshootClamping = true;
 const __initData = { code: "function VoicePanelConsoleStatusTsx1(){const{color,windowDimensions,EDGE_GUTTER,CONTROLS_HEIGHT,CONSOLE_STATUS_HEIGHT,withSpring,shouldShow,FADE_IN_MODE_PHYSICS,runOnJS,cleanUp}=this.__closure;return{backgroundColor:color,width:windowDimensions.get().width-EDGE_GUTTER*2,height:CONTROLS_HEIGHT+CONSOLE_STATUS_HEIGHT,borderRadius:32,transform:[{translateY:withSpring(shouldShow.get()?0:100,FADE_IN_MODE_PHYSICS,'respect-motion-settings',function(finished){if(finished&&!shouldShow.get()){runOnJS(cleanUp)();}})}]};}" };
 let closure_11 = { code: "function VoicePanelConsoleStatusTsx2(finished){const{shouldShow,runOnJS,cleanUp}=this.__closure;if(finished&&!shouldShow.get()){runOnJS(cleanUp)();}}" };

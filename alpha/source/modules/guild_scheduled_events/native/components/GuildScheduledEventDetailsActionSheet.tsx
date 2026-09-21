@@ -1,17 +1,17 @@
-// Module ID: 9887
-// Function ID: 9888
+// Module ID: 9888
+// Function ID: 9889
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 2063, 7766, 2047, 21, 4756, 576, 1115, 7402, 7422, 504, 9877, 9888, 9785, 9878, 1612, 9889, 9868, 9890, 7390, 6864, 9892, 9898, 2]
+// Dependencies: [32, 19, 17, 2063, 7768, 2047, 21, 4756, 576, 1115, 7407, 7427, 504, 9878, 9889, 9786, 9879, 1612, 9890, 9869, 9891, 7395, 6869, 9893, 9899, 2]
 // Exports: default
 
-// Module 9887 (GuildScheduledEventDetailsActionSheet)
+// Module 9888 (GuildScheduledEventDetailsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9878 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9879 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7766 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
 
 require = fn;
 const View = fn(17).View;

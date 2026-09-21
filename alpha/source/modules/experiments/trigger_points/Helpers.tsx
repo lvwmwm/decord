@@ -1,9 +1,9 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 11071
+// Function ID: 11072
 // Name: Helpers
 // Dependencies: [1235, 4672, 2]
 
-// Module 11070 (Helpers)
+// Module 11071 (Helpers)
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
 
 const CommonTriggerPoints = fn(4672).CommonTriggerPoints;

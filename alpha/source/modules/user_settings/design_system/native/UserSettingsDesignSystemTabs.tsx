@@ -1,10 +1,10 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16091
+// Function ID: 16092
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4752, 4457, 4605, 9889, 5184, 12865, 13010, 12867, 5186, 7440, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 4752, 4457, 4605, 9890, 5184, 12867, 13012, 12869, 5186, 7445, 2]
 // Exports: default
 
-// Module 16085 (UserSettingsDesignSystemTabs)
+// Module 16091 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -86,7 +86,7 @@ export default function UserSettingsDesignSystemTabs() {
   let tmp20Result = first2;
   if (first2) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp20Result = tmp20(tmp18(13010), obj5);
+    tmp20Result = tmp20(tmp18(13012), obj5);
   }
   const obj6 = { children: null };
   const obj7 = { spacing: 24, children: null };

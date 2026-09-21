@@ -1,16 +1,16 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7238
+// Function ID: 7239
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4756, 576, 7234, 504, 7235, 4656, 1231, 1115, 7238, 4752, 6842, 7179, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4756, 576, 7239, 504, 7240, 4656, 1231, 1115, 7243, 4752, 6847, 7184, 5186, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 7233 (UserSettingsConfirmPassword)
+// Module 7238 (UserSettingsConfirmPassword)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6842 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7234 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7235 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7238 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6847 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7239 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7240 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7243 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -206,7 +206,7 @@ const forwardRefResult = noop.forwardRef((arg0, ref) => {
       tmp19Result = null;
       if (null == obj2.getFieldMessage("password")) {
         const obj9 = { style: tmp.hint, children: obj2.message };
-        tmp19Result = tmp19(tmp20(7179), obj9);
+        tmp19Result = tmp19(tmp20(7184), obj9);
       }
     }
     items3[3] = tmp19Result;

@@ -1,16 +1,16 @@
-// Module ID: 10485
-// Function ID: 10486
+// Module ID: 10486
+// Function ID: 10487
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 2054, 1074, 21, 10482, 10486, 4723, 10484, 10487, 1115, 3324, 6223, 5645, 5186, 9505, 9475, 10490, 1101, 2]
+// Dependencies: [19, 2054, 1074, 21, 10483, 10487, 4723, 10485, 10488, 1115, 3324, 6228, 5650, 5186, 9506, 9476, 10491, 1101, 2]
 // Exports: default
 
-// Module 10485 (FavoritesGuildUpsellSheet)
+// Module 10486 (FavoritesGuildUpsellSheet)
 import router_utils from "router_utils" /* 1101 */;
 import _modDef3324 from "module_3324" /* 3324 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9475 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9505 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10486 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10490 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9476 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10487 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10491 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ let result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuild
 export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
-    FREE_FAVORITE_LIMIT = analyticsLocations(10482).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10483).FREE_FAVORITE_LIMIT;
   }
   let str = limit.source;
   if (str === undefined) {
@@ -36,7 +36,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault(str).analyticsLocations;
   importDefault = noop.useCallback(() => {
-    closure_1(4723).hideActionSheet(analyticsLocations(10484).FAVORITES_UPSELL_SHEET_KEY);
+    closure_1(4723).hideActionSheet(analyticsLocations(10485).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
   const intl = analyticsLocations(1115).intl;
   const tmp8 = _modDef3324;
@@ -49,7 +49,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
     formatToPlainStringResult = intl2.string(tmp3(3324)["WaP/lz"]);
   }
   obj.description = formatToPlainStringResult;
-  obj.illustration = closure_6(analyticsLocations(6223).FavoritesSpotIllustration, {});
+  obj.illustration = closure_6(analyticsLocations(6228).FavoritesSpotIllustration, {});
   const obj3 = { size: "lg", variant: "primary", text: null, onPress: null };
   const intl3 = tmp7(1115).intl;
   obj3.text = intl3.string(analyticsLocations(1115).t.pj0XBN);
@@ -73,6 +73,6 @@ export default function FavoritesGuildUpsellSheet(limit) {
     }
   });
   obj4.children = items;
-  obj.actions = closure_7(analyticsLocations(5645).ButtonGroup, obj4);
-  return closure_6(analyticsLocations(10487).PromoSheet, obj);
+  obj.actions = closure_7(analyticsLocations(5650).ButtonGroup, obj4);
+  return closure_6(analyticsLocations(10488).PromoSheet, obj);
 };

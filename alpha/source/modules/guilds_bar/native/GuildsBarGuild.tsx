@@ -1,27 +1,27 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16655
+// Function ID: 16656
 // Name: GuildsBarGuild
-// Dependencies: [19, 2059, 5106, 7870, 2063, 4577, 5650, 16618, 16615, 1074, 21, 4756, 576, 4457, 16627, 16355, 16358, 16650, 504, 5796, 16661, 16662, 5108, 1115, 1241, 16642, 16671, 16619, 16672, 4492, 5185, 5799, 16674, 2]
+// Dependencies: [19, 2059, 5106, 7872, 2063, 4577, 5655, 16624, 16621, 1074, 21, 4756, 576, 4457, 16633, 16361, 16364, 16656, 504, 5801, 16667, 16668, 5108, 1115, 1241, 16648, 16677, 16625, 16678, 4492, 5185, 5804, 16680, 2]
 
-// Module 16649 (GuildsBarGuild)
+// Module 16655 (GuildsBarGuild)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import spring from "spring" /* 5185 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16619 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 16672 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16625 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 16678 */;
 import noop from "module_19" /* 19 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5106 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import SortedGuildStore from "SortedGuildStore" /* 5650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 
 require = fn;
 const GuildRecord = fn(2059);
 ({ getGuildIconSource: closure_4, getGuildIconURL: hasOwnProperty } = GuildRecord);
-const useItemDragState = fn(16618).useItemDragState;
-const TRANSITION_PHYSICS = fn(16615).TRANSITION_PHYSICS;
+const useItemDragState = fn(16624).useItemDragState;
+const TRANSITION_PHYSICS = fn(16621).TRANSITION_PHYSICS;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ Fragment: closure_14, jsxs: closure_15, jsx: closure_16 } = jsxProd);

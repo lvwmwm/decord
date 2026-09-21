@@ -1,19 +1,19 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17921
+// Function ID: 17922
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 2063, 9855, 1074, 21, 16477, 9854, 1249, 1115, 5836, 17911, 17923, 17927, 17928, 17945, 17964, 17969, 17984, 17985, 17997, 18009, 18011, 17298, 17307, 18019, 18023, 18024, 17309, 16478, 18025, 18026, 18046, 18067, 18071, 18074, 12088, 12102, 12104, 18075, 18080, 18081, 18103, 18126, 18166, 18167, 18183, 18222, 18226, 18227, 18230, 18238, 1612, 5810, 504, 7240, 2]
+// Dependencies: [32, 19, 2063, 9856, 1074, 21, 16483, 9855, 1249, 1115, 5841, 17922, 17934, 17938, 17939, 17956, 17975, 17980, 17995, 17996, 18008, 18020, 18022, 17309, 17318, 18030, 18034, 18035, 17320, 16484, 18036, 18037, 18057, 18078, 18082, 18085, 12090, 12104, 12106, 18086, 18091, 18092, 18114, 18137, 18177, 18178, 18194, 18233, 18237, 18238, 18241, 18249, 1612, 5815, 504, 7245, 2]
 // Exports: default
 
-// Module 17910 (GuildSettingsModal)
+// Module 17921 (GuildSettingsModal)
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9854 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16477 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16483 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9855 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
 
 const require = globalThis.__r;
 

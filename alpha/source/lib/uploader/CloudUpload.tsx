@@ -1,16 +1,16 @@
-// Module ID: 5338
-// Function ID: 5339
+// Module ID: 5343
+// Function ID: 5344
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 4755, 1184, 4805, 1074, 3, 1271, 5339, 5347, 1091, 559, 5381, 12, 1462, 5349, 5383, 5384, 5385, 5368, 5386, 5387, 5391, 1231, 5348, 5340, 5392, 5393, 1980, 5478, 1241, 2]
+// Dependencies: [109, 5, 32, 4755, 1184, 4805, 1074, 3, 1271, 5344, 5352, 1091, 559, 5386, 12, 1462, 5354, 5388, 5389, 5390, 5373, 5391, 5392, 5396, 1231, 5353, 5345, 5397, 5398, 1980, 5483, 1241, 2]
 
-// Module 5338 (CloudUpload)
+// Module 5343 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import Upload2 from "Upload" /* 5339 */;
-import InlineUploaderDefault from "InlineUploader" /* 5381 */;
+import Upload2 from "Upload" /* 5344 */;
+import InlineUploaderDefault from "InlineUploader" /* 5386 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -1014,10 +1014,10 @@ prototype["upload"] = function upload() {
                     }
                     if (tmp125) {
                       closure_3 = closure_133_0;
-                      const obj11 = status(5368);
+                      const obj11 = status(5373);
                       c8 = 3;
                       c9 = 1;
-                      const obj8 = { value: status(5368).fromBlob(file).catch(() => null), done: false };
+                      const obj8 = { value: status(5373).fromBlob(file).catch(() => null), done: false };
                       return obj8;
                     } else {
                       closure_133_0.item.file = closure_132_4.convertedFile;
@@ -1057,10 +1057,10 @@ prototype["upload"] = function upload() {
                     }
                     closure_133_0.uploadAnalytics.timing.compressTimeMs = closure_132_5.compressTimeMs;
                   }
-                  const uploadPayload = v0(5386).default.getUploadPayload(closure_133_0);
+                  const uploadPayload = v0(5391).default.getUploadPayload(closure_133_0);
                   c8 = 5;
                   c9 = 1;
-                  const _default = v0(5386).default;
+                  const _default = v0(5391).default;
                 }
                 c9 = 3;
                 const obj9 = { value, done: true };
@@ -1076,7 +1076,7 @@ prototype["upload"] = function upload() {
                 return obj10;
               } else {
                 closure_132_6 = value;
-                uploadTarget = v0(5387).getUploadTarget(closure_133_0.item.target);
+                uploadTarget = v0(5392).getUploadTarget(closure_133_0.item.target);
                 if (null != closure_132_6.filename) {
                   if ("" !== closure_132_6.filename) {
                     const currentSize2 = closure_133_0.currentSize;
@@ -1214,7 +1214,7 @@ prototype["upload"] = function upload() {
           if (closure_133_0.isCancelled()) {
             obj19.handleComplete(closure_133_0.id);
           } else if (obj19.allowOptimization) {
-            if (closure_133_0.item.platform === v0(5339).UploadPlatform.WEB) {
+            if (closure_133_0.item.platform === v0(5344).UploadPlatform.WEB) {
               if (!closure_132_0) {
                 if (true !== closure_133_0.item.imageConversionEvaluated) {
                   c8 = 4;
@@ -1233,7 +1233,7 @@ prototype["upload"] = function upload() {
           let tmp151 = null;
           if (closure_133_0.allowOptimization) {
             tmp151 = null;
-            if (closure_133_0.item.platform === v0(5339).UploadPlatform.WEB) {
+            if (closure_133_0.item.platform === v0(5344).UploadPlatform.WEB) {
               tmp151 = null;
               if (true !== closure_133_0.item.imageConversionEvaluated) {
                 tmp151 = null;
@@ -1245,17 +1245,17 @@ prototype["upload"] = function upload() {
                       str2 = "jxr";
                     }
                     str = str2;
-                    obj16 = v0(5383);
+                    obj16 = v0(5388);
                   }
                   tmp151 = str;
-                  obj15 = v0(5383);
+                  obj15 = v0(5388);
                 }
               }
             }
           }
           closure_132_1 = tmp151;
           if (null != closure_132_1) {
-            if (closure_133_0.item.platform === v0(5339).UploadPlatform.WEB) {
+            if (closure_133_0.item.platform === v0(5344).UploadPlatform.WEB) {
               if (null != closure_133_0.item.file) {
                 let tmp168 = null != closure_133_0.mimeType;
                 if (tmp168) {
@@ -1263,10 +1263,10 @@ prototype["upload"] = function upload() {
                 }
                 if (tmp168) {
                   if ("heic" === closure_132_1) {
-                    const HeicUploadConversionExperiment = v0(5384).HeicUploadConversionExperiment;
+                    const HeicUploadConversionExperiment = v0(5389).HeicUploadConversionExperiment;
                     let config = HeicUploadConversionExperiment.getConfig({ location: "CloudUpload.tryConvertToJpeg.heic" });
                   } else {
-                    const JxrUploadConversionExperiment = v0(5385).JxrUploadConversionExperiment;
+                    const JxrUploadConversionExperiment = v0(5390).JxrUploadConversionExperiment;
                     config = JxrUploadConversionExperiment.getConfig({ location: "CloudUpload.tryConvertToJpeg.jxr" });
                   }
                   closure_132_2 = config;
@@ -1289,11 +1289,11 @@ prototype["upload"] = function upload() {
                   }
                 } else {
                   if ("heic" === closure_132_1) {
-                    let heicMimeTypeResult = v0(5383).heicMimeType(closure_133_0.item.file);
-                    const obj18 = v0(5383);
+                    let heicMimeTypeResult = v0(5388).heicMimeType(closure_133_0.item.file);
+                    const obj18 = v0(5388);
                   } else {
-                    heicMimeTypeResult = v0(5383).jxrMimeType(closure_133_0.item.file);
-                    const obj17 = v0(5383);
+                    heicMimeTypeResult = v0(5388).jxrMimeType(closure_133_0.item.file);
+                    const obj17 = v0(5388);
                   }
                   closure_133_0.mimeType = heicMimeTypeResult;
                 }
@@ -1383,7 +1383,7 @@ prototype["reactNativeCompressAndExtractData"] = function reactNativeCompressAnd
               const obj7 = { value: self, done: true };
               return obj7;
             }
-            obj17 = size(5387);
+            obj17 = size(5392);
           }
         } else {
           if (1 === tmp5) {
@@ -1460,7 +1460,7 @@ prototype["reactNativeCompressAndExtractData"] = function reactNativeCompressAnd
                         if (fileSize == null) {
                           c3 = 2;
                           c4 = 1;
-                          const obj9 = { value: size(5340).getFileData(uri), done: false };
+                          const obj9 = { value: size(5345).getFileData(uri), done: false };
                           return obj9;
                         }
                       }
@@ -1898,7 +1898,7 @@ prototype["delete"] = function delete() {
             const obj4 = { value, done: true };
             return obj4;
           } else if (null != self.uploadedFilename) {
-            const uploadTarget = v3(5387).getUploadTarget(tmp17.item.target);
+            const uploadTarget = v3(5392).getUploadTarget(tmp17.item.target);
             dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp17.uploadedFilename);
             const HTTP = v3(1271).HTTP;

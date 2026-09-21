@@ -1,16 +1,16 @@
-// Module ID: 12466
-// Function ID: 12467
+// Module ID: 12468
+// Function ID: 12469
 // Name: ForLaterCardHeader
-// Dependencies: [17, 2063, 21, 4756, 576, 7449, 504, 5796, 11173, 1177, 5282, 4909, 5239, 1115, 4752, 2]
+// Dependencies: [17, 2063, 21, 4756, 576, 7454, 504, 5801, 11174, 1177, 5289, 4909, 5239, 1115, 4752, 2]
 // Exports: ForLaterCardHeader
 
-// Module 12466 (ForLaterCardHeader)
+// Module 12468 (ForLaterCardHeader)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import useChannelNameDefault from "useChannelName" /* 4909 */;
-import GuildIconDefault from "GuildIcon" /* 5796 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7449 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11173 */;
+import GuildIconDefault from "GuildIcon" /* 5801 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7454 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11174 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4756 */;
@@ -22,7 +22,7 @@ function HeaderIcon(channel) {
   const items = [GuildStore];
   const stateFromStores = channel(504).useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   if (null != stateFromStores) {
-    const obj2 = { guild: stateFromStores, size: tmp2(5796).GuildIconSizes.XSMALL };
+    const obj2 = { guild: stateFromStores, size: tmp2(5801).GuildIconSizes.XSMALL };
     let tmp6Result = closure_5(GuildIconDefault, obj2);
   } else {
     let isGroupDMResult;
@@ -33,7 +33,7 @@ function HeaderIcon(channel) {
       const obj3 = { channel, size: tmp2(1177).AvatarSizes.XSMALL };
       tmp6Result = tmp6(GroupDMAvatarDefault, obj3);
     } else {
-      const obj4 = { style: tmp.dmIcon, children: tmp6(tmp2(5282).ChatIcon, { size: "xxs" }) };
+      const obj4 = { style: tmp.dmIcon, children: tmp6(tmp2(5289).ChatIcon, { size: "xxs" }) };
       tmp6Result = tmp6(View, obj4);
     }
   }

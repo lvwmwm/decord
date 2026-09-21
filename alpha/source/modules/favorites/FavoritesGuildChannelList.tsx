@@ -1,23 +1,23 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16611
+// Function ID: 16612
 // Name: FavoritesGuildChannelList
-// Dependencies: [32, 19, 2040, 5489, 7766, 5718, 4397, 2045, 7357, 2041, 7767, 4395, 4771, 2095, 4937, 2044, 4394, 2054, 7774, 1085, 7768, 1186, 7554, 10481, 12, 1370, 2]
+// Dependencies: [32, 19, 2040, 5494, 7768, 5723, 4397, 2045, 7362, 2041, 7769, 4395, 4771, 2095, 4937, 2044, 4394, 2054, 7776, 1085, 7770, 1186, 7556, 10482, 12, 1370, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 16605 (FavoritesGuildChannelList)
+// Module 16611 (FavoritesGuildChannelList)
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7554 */;
-import ChannelListState from "ChannelListState" /* 7768 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7556 */;
+import ChannelListState from "ChannelListState" /* 7770 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5489 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7766 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5718 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7357 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7362 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7767 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7769 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
@@ -257,7 +257,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
     },
     set: undefined
   });
-  const favoritesCategories = favoriteChannels(10481).getFavoritesCategories(favoriteChannels);
+  const favoritesCategories = favoriteChannels(10482).getFavoritesCategories(favoriteChannels);
   let found = favoritesCategories.filter((id) => null != id.id);
   let mapped = found.map((id) => {
     id = id.id;
@@ -476,7 +476,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
       }
       let tmp5 = !tmp3;
       if (!tmp3) {
-        tmp5 = 0 === found1[arg0 - tmp(undefined, 7768).SECTION_INDEX_FIRST_NAMED_CATEGORY].channelList.length;
+        tmp5 = 0 === found1[arg0 - tmp(undefined, 7770).SECTION_INDEX_FIRST_NAMED_CATEGORY].channelList.length;
       }
       return tmp5;
     },
@@ -484,7 +484,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
       if (arg0 === ChannelListState.SECTION_INDEX_UNCATEGORIZED_CHANNELS) {
         let tmp4 = obj3;
       } else {
-        tmp4 = found1[arg0 - tmp(undefined, 7768).SECTION_INDEX_FIRST_NAMED_CATEGORY];
+        tmp4 = found1[arg0 - tmp(undefined, 7770).SECTION_INDEX_FIRST_NAMED_CATEGORY];
       }
       return tmp4;
     },
@@ -579,7 +579,7 @@ const ChannelRecord = fn(2045);
 let closure_19 = fn(4394).createFavoritesGuildChannelRecord;
 const FavoritesConstants = fn(2054);
 ({ FAVORITES_RAW_GUILD_ID: closure_20, MAX_FAVORITE_CHANNELS: closure_21 } = FavoritesConstants);
-const constants = fn(7774).ChannelListChannelNoticeRow;
+const constants = fn(7776).ChannelListChannelNoticeRow;
 const Permissions = fn(1085).Permissions;
 let items = [EmbeddedActivitiesStore, FavoriteStore, GatewayConnectionStore, GuildScheduledEventStore, ActiveJoinedThreadsStore, JoinedThreadsStore, CategoryCollapseStore, ChannelStore, PermissionStore, ReadStateStore, SelectedChannelStore, UserGuildSettingsStore];
 const size = fn(2);

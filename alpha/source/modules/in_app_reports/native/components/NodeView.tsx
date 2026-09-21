@@ -1,10 +1,10 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8914
+// Function ID: 8915
 // Name: NodeView
-// Dependencies: [32, 19, 17, 4755, 2041, 4395, 8914, 8912, 1074, 1085, 21, 4756, 576, 5810, 5206, 4752, 4605, 4710, 504, 5334, 8915, 1484, 5171, 5180, 8909, 8907, 4936, 4467, 8917, 8921, 8922, 7363, 8925, 8926, 8927, 8928, 8933, 8934, 13196, 13197, 13198, 13199, 13200, 13201, 13202, 13204, 13206, 13207, 13208, 13209, 13210, 13211, 13212, 13215, 2]
+// Dependencies: [32, 19, 17, 4755, 2041, 4395, 8915, 8913, 1074, 1085, 21, 4756, 576, 5815, 5206, 4752, 4605, 4710, 504, 5339, 8916, 1484, 5171, 5180, 8910, 8908, 4936, 4467, 8918, 8922, 8923, 7368, 8926, 8927, 8928, 8929, 8934, 8935, 13198, 13199, 13200, 13201, 13202, 13203, 13204, 13206, 13208, 13209, 13210, 13211, 13212, 13213, 13214, 13217, 2]
 // Exports: default
 
-// Module 8913 (NodeView)
+// Module 8914 (NodeView)
 import nativeDefault from "native" /* 576 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
@@ -12,8 +12,8 @@ import CircleInformationIcon from "CircleInformationIcon" /* 4710 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
 import CustomMarkupAll from "CustomMarkup" /* 5206 */;
-import MenuTypes from "MenuTypes" /* 8907 */;
-import ArrowDefault from "Arrow" /* 8915 */;
+import MenuTypes from "MenuTypes" /* 8908 */;
+import ArrowDefault from "Arrow" /* 8916 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4755 */;
@@ -103,7 +103,7 @@ function ChildItem(child) {
   const items2 = [closure_17(closure_6, obj4), closure_16(ArrowDefault, {})];
   obj3.children = items2;
   obj2.children = closure_17(closure_6, obj3);
-  return closure_16(child(5334).PressableHighlight, obj2);
+  return closure_16(child(5339).PressableHighlight, obj2);
 }
 function ChildrenView(node) {
   const children = node.node.children;
@@ -129,8 +129,8 @@ function NullComponent() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const REMEDIATION_ELEMENT_TYPES = fn(8914).REMEDIATION_ELEMENT_TYPES;
-const IN_APP_REPORTS_NODE = fn(8912).IN_APP_REPORTS_NODE;
+const REMEDIATION_ELEMENT_TYPES = fn(8915).REMEDIATION_ELEMENT_TYPES;
+const IN_APP_REPORTS_NODE = fn(8913).IN_APP_REPORTS_NODE;
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, ChannelTypes: closure_14 } = Constants);
 const Permissions = fn(1085).Permissions;

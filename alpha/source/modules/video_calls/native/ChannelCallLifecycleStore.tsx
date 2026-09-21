@@ -1,23 +1,23 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 9655
+// Function ID: 9656
 // Name: ChannelCallLifecycleStore
-// Dependencies: [2095, 9640, 8602, 1331, 504, 573, 2]
+// Dependencies: [2095, 9641, 8603, 1331, 504, 573, 2]
 
-// Module 9654 (ChannelCallLifecycleStore)
+// Module 9655 (ChannelCallLifecycleStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
-const VoiceCallOverlayType = fn(9640).VoiceCallOverlayType;
+const VoiceCallOverlayType = fn(9641).VoiceCallOverlayType;
 let c4 = false;
 let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8602).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+let size = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8603).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8602).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+const size1 = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8603).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = initializeDefault.Store;

@@ -1,14 +1,14 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11207
+// Function ID: 11208
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 4908, 4600, 9900, 1177, 504, 8870, 5817, 2]
+// Dependencies: [19, 17, 1372, 21, 4756, 576, 4908, 4600, 9901, 1177, 504, 8871, 5822, 2]
 
-// Module 11206 (DetailedGuildIdentityUserRow)
+// Module 11207 (DetailedGuildIdentityUserRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
-import DiscordTagDefault from "DiscordTag" /* 9900 */;
+import DiscordTagDefault from "DiscordTag" /* 9901 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -41,7 +41,7 @@ const memoResult = noop.memo((height) => {
     }
     const items1 = [tmp8Result, ];
     const obj5 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = tmp8(tmp2(9900), obj5);
+    items1[1] = tmp8(tmp2(9901), obj5);
     obj3.children = items1;
     let tmp6Result = tmp6(tmp7, obj3);
   } else {
@@ -84,7 +84,7 @@ export default noop.memo(function DetailedGuildIdentityUserRow(arrow) {
     obj2.trailing = trailing;
     obj2.accessibilityRole = accessibilityRole;
     obj2.accessibilityState = accessibilityState;
-    let tmp2Result = tmp2(tmp(8870).FormRow, obj2);
+    let tmp2Result = tmp2(tmp(8871).FormRow, obj2);
   } else {
     const obj4 = { accessibilityLabel, arrow: arrow.arrow, disabled, end, icon: null, label: null, onPress: null, start: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
     let tmp2Result2 = leading;
@@ -101,7 +101,7 @@ export default noop.memo(function DetailedGuildIdentityUserRow(arrow) {
     obj4.trailing = trailing;
     obj4.accessibilityRole = accessibilityRole;
     obj4.accessibilityState = accessibilityState;
-    tmp2Result = tmp2(tmp(5817).TableRow, obj4);
+    tmp2Result = tmp2(tmp(5822).TableRow, obj4);
   }
 });
 export const DetailedGuildIdentityUser = memoResult;

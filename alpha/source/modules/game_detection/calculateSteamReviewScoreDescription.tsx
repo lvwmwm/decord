@@ -1,10 +1,10 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 9001
+// Function ID: 9002
 // Name: calculateSteamReviewScoreDescription
 // Dependencies: [2018, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 9000 (calculateSteamReviewScoreDescription)
+// Module 9001 (calculateSteamReviewScoreDescription)
 import GameDetectionTypes from "GameDetectionTypes" /* 2018 */;
 import size from "module_2" /* 2 */;
 

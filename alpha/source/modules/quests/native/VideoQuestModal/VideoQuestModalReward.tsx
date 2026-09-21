@@ -1,12 +1,12 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15416
+// Function ID: 15417
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 4756, 15387, 11736, 12018, 5184, 576, 15392, 4752, 1115, 2]
+// Dependencies: [19, 21, 4756, 15393, 11738, 12020, 5184, 576, 15398, 4752, 1115, 2]
 
-// Module 15410 (VideoQuestModalReward)
+// Module 15416 (VideoQuestModalReward)
 import nativeDefault from "native" /* 576 */;
-import QuestUtils from "QuestUtils" /* 12018 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15392 */;
+import QuestUtils from "QuestUtils" /* 12020 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15398 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,14 +31,14 @@ export default noop.memo(function VideoQuestModalReward(style) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = style);
-  quest = quest(15387).useVideoQuestModalContext().quest;
-  const obj = quest(15387);
+  quest = quest(15393).useVideoQuestModalContext().quest;
+  const obj = quest(15393);
   const items = [quest.id];
-  const questTaskDetails = quest(11736).useQuestTaskDetails(quest);
+  const questTaskDetails = quest(11738).useQuestTaskDetails(quest);
   const callback = noop.useCallback(() => {
     const result = QuestUtils.openRewardDetailsBottomSheet({ questId: quest.id });
   }, items);
-  const obj2 = quest(11736);
+  const obj2 = quest(11738);
   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style: style.style, children: null };
   const items1 = [closure_4(QuestProgressIndicatorDefault, { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation }), ];
   const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: null };

@@ -1,21 +1,21 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11454
+// Function ID: 11455
 // Name: OrbsBadgeCoachmark
-// Dependencies: [19, 17, 21, 4756, 11453, 1115, 4614, 11392, 2]
+// Dependencies: [19, 17, 21, 4756, 11455, 1115, 4614, 11394, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 11452 (OrbsBadgeCoachmark)
+// Module 11454 (OrbsBadgeCoachmark)
 import util from "util" /* 1115 */;
-import useCoachmark from "useCoachmark" /* 11392 */;
-import _modDef11453 from "module_11453" /* 11453 */;
+import useCoachmark from "useCoachmark" /* 11394 */;
+import _modDef11455 from "module_11455" /* 11455 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function OrbsBadgeCoachmarkImg() {
   const tmp = closure_7();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
-  const obj2 = { source: { uri: _modDef11453 }, style: tmp.coachmarkImage };
-  obj.children = <hasOwnProperty source={{ uri: _modDef11453 }} style={tmp.coachmarkImage} />;
+  const obj2 = { source: { uri: _modDef11455 }, style: tmp.coachmarkImage };
+  obj.children = <hasOwnProperty source={{ uri: _modDef11455 }} style={tmp.coachmarkImage} />;
   return <React4 style={tmp.coachmarkImageContainer}>{null}</React4>;
 }
 get_ActivityIndicator = fn(17);

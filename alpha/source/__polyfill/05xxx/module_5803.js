@@ -1,9 +1,0 @@
-// Module ID: 5803
-// Function ID: 5804
-// Dependencies: [1121]
-
-// Module 5803
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "e4080f713973c251e1438e7043339acb", name: "ic_verified_guild_icon_green_24px", type: "png" });

@@ -1,16 +1,16 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16579
+// Function ID: 16580
 // Name: SectionFooterHelpers
-// Dependencies: [7357, 4395, 7774, 1074, 7768, 2066, 2]
+// Dependencies: [7362, 4395, 7776, 1074, 7770, 2066, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 16573 (SectionFooterHelpers)
-import ChannelListState from "ChannelListState" /* 7768 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7357 */;
+// Module 16579 (SectionFooterHelpers)
+import ChannelListState from "ChannelListState" /* 7770 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7362 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 
 require = fn;
-const ChannelListGuildActionRow = fn(7774).ChannelListGuildActionRow;
+const ChannelListGuildActionRow = fn(7776).ChannelListGuildActionRow;
 const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/SectionFooterHelpers.tsx");
@@ -33,18 +33,18 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
   }
   let tmp6 = !tmp3;
   if (!tmp3) {
-    const tmp7 = section === tmp(7768).SECTION_INDEX_GUILD_ACTIONS;
+    const tmp7 = section === tmp(7770).SECTION_INDEX_GUILD_ACTIONS;
     if (tmp7) {
       tmp6 = tmp7;
     } else {
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         let tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(7768).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(7770).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(7768).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(7770).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {

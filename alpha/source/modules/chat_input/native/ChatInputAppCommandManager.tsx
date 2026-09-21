@@ -1,19 +1,19 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12659
+// Function ID: 12660
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 8019, 8020, 2000, 5319, 1372, 5211, 4756, 576, 12243, 12, 7549, 504, 5322, 12244, 12242, 9529, 1978, 12658, 2]
+// Dependencies: [32, 19, 8021, 8022, 2000, 5324, 1372, 5211, 4756, 576, 12245, 12, 7551, 504, 5327, 12246, 12244, 9530, 1978, 12660, 2]
 
-// Module 12657 (ChatInputAppCommandManager)
+// Module 12659 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 576 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5322 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12242 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12658 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5327 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12244 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12660 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8019 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8020 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8021 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8022 */;
 import GameStore from "GameStore" /* 2000 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5319 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5324 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

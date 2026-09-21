@@ -1,10 +1,10 @@
-// Module ID: 15753
-// Function ID: 15754
+// Module ID: 15759
+// Function ID: 15760
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1074, 12662, 21, 4756, 576, 12663, 1241, 5819, 10409, 4752, 1115, 5186, 2]
+// Dependencies: [19, 17, 1074, 12664, 21, 4756, 576, 12665, 1241, 5824, 10410, 4752, 1115, 5186, 2]
 // Exports: default
 
-// Module 15753 (NotificationPermissionSettingsHeader)
+// Module 15759 (NotificationPermissionSettingsHeader)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
@@ -13,7 +13,7 @@ const require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, NOOP: metroRequire } = Constants);
-const NotificationPermissionConstants = fn(12662);
+const NotificationPermissionConstants = fn(12664);
 ({ EventActionLocation: closure_7, EventActionType: closure_8, NotificationNudgeAnalyticsAction: closure_9, NotificationNudgeSurface: c10 } = NotificationPermissionConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
@@ -29,7 +29,7 @@ const result = size.fileFinishedImporting("modules/user_settings/notifications/n
 
 export default function NotificationPermissionSettingsHeader() {
   const tmp = closure_13();
-  canSeePushNotificationNudge = canSeePushNotificationNudge(12663).useCanSeePushNotificationNudge();
+  canSeePushNotificationNudge = canSeePushNotificationNudge(12665).useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = noop.useEffect(() => {
     if (canSeePushNotificationNudge) {
@@ -44,7 +44,7 @@ export default function NotificationPermissionSettingsHeader() {
     const obj4 = { style: tmp.cardContent, children: null };
     const obj5 = { style: tmp.iconCircle, children: null };
     const obj6 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    obj5.children = closure_11(tmp2(10409).BellSlashIcon, obj6);
+    obj5.children = closure_11(tmp2(10410).BellSlashIcon, obj6);
     const items1 = [closure_11(View, obj5), , , ];
     const obj7 = { variant: "heading-lg/bold", color: "text-default", children: null };
     const intl = tmp2(1115).intl;
@@ -63,7 +63,7 @@ export default function NotificationPermissionSettingsHeader() {
     items1[3] = closure_11(View, obj9);
     obj4.children = items1;
     obj3.children = closure_12(View, obj4);
-    obj2.children = closure_11(tmp2(5819).Card, obj3);
+    obj2.children = closure_11(tmp2(5824).Card, obj3);
     tmp7 = closure_11(View, obj2);
   }
   return tmp7;

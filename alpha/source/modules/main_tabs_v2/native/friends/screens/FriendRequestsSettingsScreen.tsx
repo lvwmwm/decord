@@ -1,13 +1,13 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17242
+// Function ID: 17243
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4756, 576, 5336, 17232, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5341, 17243, 2]
 // Exports: default
 
-// Module 17231 (FriendRequestsSettingsScreen)
+// Module 17242 (FriendRequestsSettingsScreen)
 import nativeDefault from "native" /* 576 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5336 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17232 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5341 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17243 */;
 import noop from "module_19" /* 19 */;
 
 const ScrollView = fn(17).ScrollView;

@@ -1,18 +1,18 @@
-// Module ID: 9851
-// Function ID: 9852
+// Module ID: 9852
+// Function ID: 9853
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 2105, 2099, 1372, 8671, 1085, 21, 4756, 576, 4400, 7221, 504, 4743, 9822, 1177, 1115, 9838, 4467, 6864, 9842, 5731, 4752, 9847, 2]
+// Dependencies: [109, 32, 19, 17, 2105, 2099, 1372, 8672, 1085, 21, 4756, 576, 4400, 7226, 504, 4743, 9823, 1177, 1115, 9839, 4467, 6869, 9843, 5736, 4752, 9848, 2]
 // Exports: default
 
-// Module 9851 (AddMembersBody)
+// Module 9852 (AddMembersBody)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import RegexUtilsDefault from "RegexUtils" /* 4743 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GuildUtilsDefault from "GuildUtils" /* 5731 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9822 */;
+import GuildUtilsDefault from "GuildUtils" /* 5736 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9823 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -54,7 +54,7 @@ function _toPropertyKey(obj) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, ScrollView: closure_8, SectionList: closure_9 } = get_ActivityIndicator);
-const ChannelPermissionsConstants = fn(8671);
+const ChannelPermissionsConstants = fn(8672);
 ({ RowType: map1, MEMBER_REQUEST_COUNT: closure_14 } = ChannelPermissionsConstants);
 const Permissions = fn(1085).Permissions;
 const jsxProd = fn(21);
@@ -115,7 +115,7 @@ export default function AddMembersBody(pendingAdditions) {
   if (first) {
     let items2 = [];
   } else {
-    const tmp10Result = tmp10(9822);
+    const tmp10Result = tmp10(9823);
     const rolesRowsWithPermissionDisabled = tmp10Result.getRolesRowsWithPermissionDisabled(guild, stateFromStores, channel, permission, filterByQuery);
     let tmp19 = 0 === rolesRowsWithPermissionDisabled.length && "" === str.trim();
     if (tmp19) {
@@ -123,8 +123,8 @@ export default function AddMembersBody(pendingAdditions) {
     }
     items2 = rolesRowsWithPermissionDisabled;
     if (tmp19) {
-      items2 = tmp10(9822).getNoRolesRow();
-      const tmp10Result3 = tmp10(9822);
+      items2 = tmp10(9823).getNoRolesRow();
+      const tmp10Result3 = tmp10(9823);
     }
   }
   let obj5 = guild(504);
@@ -159,12 +159,12 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }, items4);
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp6(6864).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp6(6869).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = c8;
   }
   if (inActionSheet) {
-    let BottomSheetSectionList = tmp6(6864).BottomSheetSectionList;
+    let BottomSheetSectionList = tmp6(6869).BottomSheetSectionList;
   } else {
     BottomSheetSectionList = closure_9;
   }
@@ -195,7 +195,7 @@ export default function AddMembersBody(pendingAdditions) {
       return first(dependencyMap, items.map(_toPropertyKey));
     });
   };
-  obj9.children = closure_16(pendingAdditions(9842), obj10);
+  obj9.children = closure_16(pendingAdditions(9843), obj10);
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
   if (null != inputDesc) {
@@ -218,7 +218,7 @@ export default function AddMembersBody(pendingAdditions) {
     if (0 === items2.length) {
       if (0 === membersRows.length) {
         const obj15 = { children: null };
-        const obj16 = { Illustration: tmp6(9847).NoResultsAlt, style: null, bodyStyle: null, body: null };
+        const obj16 = { Illustration: tmp6(9848).NoResultsAlt, style: null, bodyStyle: null, body: null };
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
         const intl5 = tmp6(1115).intl;
         const obj17 = { query: str };
@@ -233,8 +233,8 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }
   const obj19 = { contentContainerStyle: null, renderItem: null, renderSectionHeader: null, sections: null, keyboardShouldPersistTaps: "always" };
-  const tmp4Result = pendingAdditions(9842);
-  obj19.contentContainerStyle = { paddingHorizontal: pendingAdditions(576).space.PX_16, paddingBottom: pendingAdditions(576).space.PX_16 + pendingAdditions(7221)(obj).insets.bottom };
+  const tmp4Result = pendingAdditions(9843);
+  obj19.contentContainerStyle = { paddingHorizontal: pendingAdditions(576).space.PX_16, paddingBottom: pendingAdditions(576).space.PX_16 + pendingAdditions(7226)(obj).insets.bottom };
   obj19.renderItem = function renderItem(item) {
     item = item.item;
     ({ index, section } = item);

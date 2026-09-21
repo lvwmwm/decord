@@ -1,25 +1,25 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16240
+// Function ID: 16241
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [15756, 16235, 16247, 2]
+// Dependencies: [15762, 16241, 16253, 2]
 
-// Module 16234 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 16235 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 16247 */;
+// Module 16240 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 16241 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 16253 */;
 
 const obj = {};
-obj[fn(15756).MobileNotifSettings.NOTIFICATIONS_REDESIGN] = MobileNotifSettingsRoutesAll.RootRoute;
-obj[fn(15756).MobileNotifSettings.NOTIF_REALTIME] = MobileNotifSettingsRoutesAll.RealtimeRoute;
-obj[fn(15756).MobileNotifSettings.NOTIF_CATEGORY_SOCIAL] = MobileNotifSettingsRoutesAll.CategorySocialRoute;
-obj[fn(15756).MobileNotifSettings.NOTIF_CATEGORY_SERVER] = MobileNotifSettingsRoutesAll.CategoryServerRoute;
-obj[fn(15756).MobileNotifSettings.NOTIF_CATEGORY_OTHER] = MobileNotifSettingsRoutesAll.CategoryOtherRoute;
-obj[fn(15756).MobileNotifSettings.NOTIF_REACTIONS] = MobileNotifSettingsNodesAll.Reactions;
-obj[fn(15756).MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW] = MobileNotifSettingsNodesAll.MissedMessagesLow;
-obj[fn(15756).MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT] = MobileNotifSettingsNodesAll.MissedMessagesDefault;
-obj[fn(15756).MobileNotifSettings.NOTIF_VOICE_ACTIVITY_LOW] = MobileNotifSettingsNodesAll.VoiceActivityLow;
-obj[fn(15756).MobileNotifSettings.NOTIF_VOICE_ACTIVITY_DEFAULT] = MobileNotifSettingsNodesAll.VoiceActivityDefault;
-obj[fn(15756).MobileNotifSettings.NOTIF_GAMING_LOW] = MobileNotifSettingsNodesAll.GamingLow;
-obj[fn(15756).MobileNotifSettings.NOTIF_GAMING_DEFAULT] = MobileNotifSettingsNodesAll.GamingDefault;
+obj[fn(15762).MobileNotifSettings.NOTIFICATIONS_REDESIGN] = MobileNotifSettingsRoutesAll.RootRoute;
+obj[fn(15762).MobileNotifSettings.NOTIF_REALTIME] = MobileNotifSettingsRoutesAll.RealtimeRoute;
+obj[fn(15762).MobileNotifSettings.NOTIF_CATEGORY_SOCIAL] = MobileNotifSettingsRoutesAll.CategorySocialRoute;
+obj[fn(15762).MobileNotifSettings.NOTIF_CATEGORY_SERVER] = MobileNotifSettingsRoutesAll.CategoryServerRoute;
+obj[fn(15762).MobileNotifSettings.NOTIF_CATEGORY_OTHER] = MobileNotifSettingsRoutesAll.CategoryOtherRoute;
+obj[fn(15762).MobileNotifSettings.NOTIF_REACTIONS] = MobileNotifSettingsNodesAll.Reactions;
+obj[fn(15762).MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW] = MobileNotifSettingsNodesAll.MissedMessagesLow;
+obj[fn(15762).MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT] = MobileNotifSettingsNodesAll.MissedMessagesDefault;
+obj[fn(15762).MobileNotifSettings.NOTIF_VOICE_ACTIVITY_LOW] = MobileNotifSettingsNodesAll.VoiceActivityLow;
+obj[fn(15762).MobileNotifSettings.NOTIF_VOICE_ACTIVITY_DEFAULT] = MobileNotifSettingsNodesAll.VoiceActivityDefault;
+obj[fn(15762).MobileNotifSettings.NOTIF_GAMING_LOW] = MobileNotifSettingsNodesAll.GamingLow;
+obj[fn(15762).MobileNotifSettings.NOTIF_GAMING_DEFAULT] = MobileNotifSettingsNodesAll.GamingDefault;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/codegen/MobileNotifSettingsRendererConfig.tsx");
 

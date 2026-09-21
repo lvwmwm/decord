@@ -1,27 +1,27 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17633
+// Function ID: 17634
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 4772, 12524, 12527, 12522, 1074, 21, 4756, 576, 1609, 17623, 9183, 12523, 4492, 17548, 4457, 6892, 17624, 12528, 12531, 4724, 5171, 12284, 9663, 17625, 17506, 17626, 4466, 17630, 17632, 5798, 17635, 5185, 7313, 17489, 17522, 1248, 17659, 1110, 1612, 1478, 11258, 17631, 12354, 17660, 17550, 17634, 17661, 2]
+// Dependencies: [32, 19, 17, 4772, 12526, 12529, 12524, 1074, 21, 4756, 576, 1609, 17634, 9184, 12525, 4492, 17559, 4457, 6897, 17635, 12530, 12533, 4724, 5171, 12286, 9664, 17636, 17517, 17637, 4466, 17641, 17643, 5803, 17646, 5185, 7318, 17500, 17533, 1248, 17670, 1110, 1612, 1478, 11259, 17642, 12356, 17671, 17561, 17645, 17672, 2]
 
-// Module 17622 (VoicePanelControls)
+// Module 17633 (VoicePanelControls)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import native from "native" /* 4466 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import spring from "spring" /* 5185 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6892 */;
-import native2 from "native" /* 9183 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11258 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12528 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12531 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17506 */;
-import useControlsLockDefault from "useControlsLock" /* 17548 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17623 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17624 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17626 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17630 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17632 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
+import native2 from "native" /* 9184 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11259 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12530 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12533 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17517 */;
+import useControlsLockDefault from "useControlsLock" /* 17559 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17634 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17635 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17637 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17641 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17643 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
@@ -29,11 +29,11 @@ import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-const VoicePanelConstants = fn(12524);
+const VoicePanelConstants = fn(12526);
 ({ UI_SHOW_HIDE_PHYSICS: closure_7, MODE_CHANGE_PHYSICS: closure_8, BORDER_RADIUS_PHYSICS: closure_9, PANEL_CONTROLS_HEIGHT_PHYSICS: c10, VoicePanelModes: closure_11 } = VoicePanelConstants);
-const VoicePanelCardConstants = fn(12527);
+const VoicePanelCardConstants = fn(12529);
 ({ CALL_TILE_GUTTER: closure_12, EDGE_GUTTER: map1 } = VoicePanelCardConstants);
-const VoicePanelControlsConstants = fn(12522);
+const VoicePanelControlsConstants = fn(12524);
 ({ CONTROLS_DRAWER_HEADER_EXPANDED_SIZE: closure_14, VoicePanelControlsModes: closure_15 } = VoicePanelControlsConstants);
 const Constants = fn(1074);
 ({ ComponentActions: closure_16, ThemeTypes: closure_17 } = Constants);
@@ -700,24 +700,24 @@ export default noop.memo(function VoicePanelControls(gestureState) {
             const size = { x: 0, y: null, width: null, height: null, drawerMode: false, hidden: false };
             const _Math = Math;
             size.y = -1 * Math.max(safeArea.bottom, EDGE_GUTTER);
-            size.width = tmp(12531).getControlsDefaultWidth(windowWidth, safeArea.left, safeArea.right);
+            size.width = tmp(12533).getControlsDefaultWidth(windowWidth, safeArea.left, safeArea.right);
             size.height = controlsHeightValue;
             const result2 = gestureState.set(size);
-            const tmpResult5 = tmp(12531);
+            const tmpResult5 = tmp(12533);
           } else if (tmp25.DRAWER === currentControlsMode) {
-            const drawerSpec = tmp(17625).getDrawerSpec(tmp4, safeArea.top);
+            const drawerSpec = tmp(17636).getDrawerSpec(tmp4, safeArea.top);
             ({ minHeight, maxHeight } = drawerSpec);
             if (gestureState.get().height <= controlsHeightValue) {
               minHeight = maxHeight;
             } else if (null != currentControlsMode) {
-              const tmpResult7 = tmp(17625);
+              const tmpResult7 = tmp(17636);
             }
             const size1 = { x: 0, y: 0, width: null, height: null, drawerMode: true, hidden: false };
-            const tmpResult6 = tmp(17625);
-            size1.width = tmp(12531).getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
+            const tmpResult6 = tmp(17636);
+            size1.width = tmp(12533).getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
             size1.height = minHeight;
             const result3 = obj15.set(size1);
-            const tmpResult8 = tmp(12531);
+            const tmpResult8 = tmp(12533);
           }
         }
       }

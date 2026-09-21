@@ -1,15 +1,15 @@
-// Module ID: 12682
-// Function ID: 12683
+// Module ID: 12684
+// Function ID: 12685
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 12213, 21, 4756, 576, 4457, 4466, 12425, 1610, 12498, 4492, 12497, 12496, 2]
+// Dependencies: [32, 19, 17, 12215, 21, 4756, 576, 4457, 4466, 12427, 1610, 12500, 4492, 12499, 12498, 2]
 
-// Module 12682 (ChatInputRightActions)
+// Module 12684 (ChatInputRightActions)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4466 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12496 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 12497 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12498 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 12498 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 12499 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12500 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -24,11 +24,11 @@ function LeftSlot(state) {
   obj2.style = items;
   const tmp = useChatInputFloatingBounceDefault({ visible: state !== native.TransitionStates.YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup });
   const merged = Object.assign(ChatInputActionButtonTransitionItem.interactivityProps(isInteractive));
-  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "PX_16", shouldShowThread: "womans_hat" });
+  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "PX_16", shouldShowThread: "billed_cap" });
   return React5(ReanimatedRexportDefault.View, obj2);
 }
 const View = fn(17).View;
-const enterDelayMs = fn(12213).CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS;
+const enterDelayMs = fn(12215).CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);
@@ -78,7 +78,7 @@ const forwardRefResult = noop.forwardRef((channel, ref) => {
   obj5.active = keyboardType === channel(1610).KeyboardTypes.EXPRESSION;
   obj5.showKeyboardIcon = showKeyboardIcon;
   obj5.onPress = onPressExpression;
-  items1[1] = closure_7(tmp3(12425), obj5);
+  items1[1] = closure_7(tmp3(12427), obj5);
   obj3.children = items1;
   return tmp11(tmp12, obj3);
 });

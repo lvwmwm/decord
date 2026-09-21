@@ -1,10 +1,10 @@
-// Module ID: 8218
-// Function ID: 8219
+// Module ID: 8219
+// Function ID: 8220
 // Name: enhanced_role_colors/EnhancedRoleColorUtils
 // Dependencies: [32, 19, 17, 1182, 1085, 672, 1370, 5215, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 8218 (enhanced_role_colors/EnhancedRoleColorUtils)
+// Module 8219 (enhanced_role_colors/EnhancedRoleColorUtils)
 import _modDef672 from "module_672" /* 672 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5215 */;

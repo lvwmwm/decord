@@ -1,20 +1,20 @@
-// Module ID: 17660
-// Function ID: 17661
+// Module ID: 17671
+// Function ID: 17672
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 14392, 12524, 12522, 21, 12523, 4492, 17625, 5185, 14710, 5172, 2]
+// Dependencies: [19, 14398, 12526, 12524, 21, 12525, 4492, 17636, 5185, 14716, 5172, 2]
 
-// Module 17660 (VoicePanelControlsDimOverlay)
+// Module 17671 (VoicePanelControlsDimOverlay)
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14710 */;
-import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17625 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14716 */;
+import VoicePanelControlUtils from "VoicePanelControlUtils" /* 17636 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(14392).BACKDROP_OPAQUE_MAX_OPACITY;
-const VoicePanelConstants = fn(12524);
+let closure_4 = fn(14398).BACKDROP_OPAQUE_MAX_OPACITY;
+const VoicePanelConstants = fn(12526);
 ({ PANEL_CONTROLS_HEIGHT_PHYSICS: hasOwnProperty, VoicePanelModes: metroRequire } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(12522).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(12524).VoicePanelControlsModes;
 const jsx = fn(21).jsx;
 const __initData = { code: "function VoicePanelControlsDimOverlayTsx1(){const{windowDimensions,getDrawerSpec,safeArea,controlsSpecs,VoicePanelControlsModes,mode,VoicePanelModes,interpolate,wrapperSpecs,BACKDROP_OPAQUE_MAX_OPACITY}=this.__closure;const{height:height}=windowDimensions.get();const{minHeight:minHeight,maxHeight:maxHeight}=getDrawerSpec(height,safeArea.get().top);if(controlsSpecs.get().mode!==VoicePanelControlsModes.DRAWER||mode.get()!==VoicePanelModes.PANEL){return 0;}return interpolate(wrapperSpecs.get().height,[minHeight,maxHeight],[0,BACKDROP_OPAQUE_MAX_OPACITY],'clamp');}" };
 const __initData2 = { code: "function VoicePanelControlsDimOverlayTsx2(){const{overlayOpacity}=this.__closure;return overlayOpacity.get()>=0.35;}" };

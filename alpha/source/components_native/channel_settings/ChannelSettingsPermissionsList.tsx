@@ -1,12 +1,12 @@
-// Module ID: 17285
-// Function ID: 17286
+// Module ID: 17296
+// Function ID: 17297
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 2041, 2105, 2099, 1372, 1074, 21, 4756, 576, 504, 5729, 1484, 1612, 7289, 4769, 4400, 5817, 10527, 1978, 11206, 7290, 1115, 7295, 1177, 8500, 2]
+// Dependencies: [32, 19, 17, 2041, 2105, 2099, 1372, 1074, 21, 4756, 576, 504, 5734, 1484, 1612, 7294, 4769, 4400, 5822, 10528, 1978, 11207, 7295, 1115, 7300, 1177, 8501, 2]
 
-// Module 17285 (ChannelSettingsPermissionsList)
+// Module 17296 (ChannelSettingsPermissionsList)
 import nativeDefault from "native" /* 576 */;
 import Server from "Server" /* 1978 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5729 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5734 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;

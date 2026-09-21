@@ -1,14 +1,14 @@
-// Module ID: 17641
-// Function ID: 17642
+// Module ID: 17652
+// Function ID: 17653
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4756, 576, 5801, 1177, 17642, 2]
+// Dependencies: [19, 21, 4756, 576, 5806, 1177, 17653, 2]
 // Exports: default
 
-// Module 17641 (VoicePanelLockedIcon)
+// Module 17652 (VoicePanelLockedIcon)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import NativeViewDefault from "NativeView" /* 5801 */;
-import _modDef17642 from "module_17642" /* 17642 */;
+import NativeViewDefault from "NativeView" /* 5806 */;
+import _modDef17653 from "module_17653" /* 17653 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,6 +25,6 @@ const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/Voi
 export default function VoicePanelLockedIcon() {
   const tmp = closure_4();
   const obj = { style: tmp.container, children: null };
-  obj.children = jsx(native.Icon, { style: tmp.icon, source: _modDef17642, size: native.IconSizes.LARGE });
+  obj.children = jsx(native.Icon, { style: tmp.icon, source: _modDef17653, size: native.IconSizes.LARGE });
   return <tmp2 style={tmp.container}>{null}</tmp2>;
 };

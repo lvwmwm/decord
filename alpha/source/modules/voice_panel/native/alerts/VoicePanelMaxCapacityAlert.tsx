@@ -1,11 +1,11 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17654
+// Function ID: 17655
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 2041, 21, 563, 5114, 5114, 17641, 1115, 2]
+// Dependencies: [19, 2041, 21, 563, 5114, 5114, 17652, 1115, 2]
 // Exports: default
 
-// Module 17643 (VoicePanelMaxCapacityAlert)
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17641 */;
+// Module 17654 (VoicePanelMaxCapacityAlert)
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17652 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14742
+// Function ID: 14743
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9312, 14737, 4660, 1074, 9313, 9585, 9134, 9580, 2]
+// Dependencies: [9313, 14743, 4660, 1074, 9314, 9586, 9135, 9581, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14736 (validateEmbeddedAppFrame)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9134 */;
-import RPCErrorDefault from "RPCError" /* 9580 */;
-import RPCHelpers from "RPCHelpers" /* 9585 */;
-import FramesStore from "FramesStore" /* 9312 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14737 */;
+// Module 14742 (validateEmbeddedAppFrame)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9135 */;
+import RPCErrorDefault from "RPCError" /* 9581 */;
+import RPCHelpers from "RPCHelpers" /* 9586 */;
+import FramesStore from "FramesStore" /* 9313 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14743 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {
@@ -29,7 +29,7 @@ function validateEmbeddedAppFrame(transport) {
           if (tmp12.VOICE_CHANNEL !== type) {
             if (tmp12.MAIN === type) {
               if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                let obj5 = { channelId: "a", guildId: "isArray" };
+                let obj5 = { channelId: "Array", guildId: "PX_16" };
               } else {
                 obj5 = null;
               }
@@ -63,7 +63,7 @@ function validateEmbeddedAppFrame(transport) {
 const TransportTypes = fn(4660).TransportTypes;
 const Constants = fn(1074);
 ({ ApplicationFlags: metroRequire, RPCErrors: closure_7 } = Constants);
-const FramesConstants = fn(9313);
+const FramesConstants = fn(9314);
 ({ asLaunched: closure_8, EmbeddedSurfaceType: closure_9 } = FramesConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");

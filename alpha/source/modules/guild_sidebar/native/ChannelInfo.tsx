@@ -1,22 +1,22 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 16566
+// Function ID: 16567
 // Name: ChannelInfo
-// Dependencies: [19, 7772, 2063, 4395, 4771, 4775, 1074, 21, 4756, 504, 12310, 8128, 16561, 16562, 4902, 1177, 16564, 16565, 16451, 5629, 12546, 16452, 16566, 13299, 2]
+// Dependencies: [19, 7774, 2063, 4395, 4771, 4775, 1074, 21, 4756, 504, 12312, 8129, 16567, 16568, 4902, 1177, 16570, 16571, 16457, 5634, 12548, 16458, 16572, 13301, 2]
 // Exports: default
 
-// Module 16560 (ChannelInfo)
-import StageMediaHooks from "StageMediaHooks" /* 5629 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12310 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 16561 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 16566 */;
+// Module 16566 (ChannelInfo)
+import StageMediaHooks from "StageMediaHooks" /* 5634 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12312 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 16567 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 16572 */;
 import noop from "module_19" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7772 */;
+import NewChannelsStore from "NewChannelsStore" /* 7774 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 
-const Badges = tmp2(13299);
+const Badges = tmp2(13301);
 require = fn;
 function LimitAndDurationInfo(channel) {
   channel = channel.channel;
@@ -47,7 +47,7 @@ function LimitAndDurationInfo(channel) {
     }
     obj3.video = hasVideo;
     obj3.channel = channel;
-    let tmp6Result = tmp6(tmp(16452).ConnectedUserLimit, obj3);
+    let tmp6Result = tmp6(tmp(16458).ConnectedUserLimit, obj3);
   } else {
     const obj4 = { channel };
     tmp6Result = tmp6(DurationInfo, obj4);
@@ -83,7 +83,7 @@ export default function ChannelInfo(channel) {
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
   const tmp5 = useEmbeddedAppsForChannelDefault(channel);
   const obj = channel(504);
-  const postsWithUnreadsCount = channel(8128).useUnreadThreadsCountForParent(channel.guild_id, channel.id);
+  const postsWithUnreadsCount = channel(8129).useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   if (showChannelBadgeDefault({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     const obj3 = { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance, isNewChannel, postsWithUnreadsCount: null, muted: null };
     let tmp18 = null;
@@ -92,8 +92,8 @@ export default function ChannelInfo(channel) {
     }
     obj3.postsWithUnreadsCount = tmp18;
     obj3.muted = muted;
-    let tmp11Result = jsx(tmp4(16562), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance, isNewChannel, postsWithUnreadsCount: null, muted: null });
-    const tmp4Result = tmp4(16562);
+    let tmp11Result = jsx(tmp4(16568), { mentionCount: mentionsCount, isMentionLowImportance: stateFromStoresObject.isMentionLowImportance, isNewChannel, postsWithUnreadsCount: null, muted: null });
+    const tmp4Result = tmp4(16568);
   } else {
     if (null != isChannelCollapsed) {
       if (isChannelCollapsed) {
@@ -114,16 +114,16 @@ export default function ChannelInfo(channel) {
       if (enableActivities) {
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
           const obj4 = { embeddedApps: tmp5, muted };
-          tmp11Result = jsx(tmp4(16565), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(16571), { embeddedApps: tmp5, muted });
         }
-        tmpResult2 = tmp(16564);
+        tmpResult2 = tmp(16570);
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
           const obj5 = { locked: needSubscriptionToAccess };
-          tmp11Result = jsx(tmp4(16451), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(16457), { locked: needSubscriptionToAccess });
         }
       }
     }

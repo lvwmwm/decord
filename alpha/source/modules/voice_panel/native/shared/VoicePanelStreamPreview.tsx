@@ -1,10 +1,10 @@
-// Module ID: 13329
-// Function ID: 13330
+// Module ID: 13331
+// Function ID: 13332
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 4778, 502, 21, 4492, 5186, 4756, 576, 10318, 504, 4808, 4757, 7313, 4752, 1115, 2]
+// Dependencies: [19, 17, 4778, 502, 21, 4492, 5186, 4756, 576, 10319, 504, 4808, 4757, 7318, 4752, 1115, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 13329 (VoicePanelStreamPreview)
+// Module 13331 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4757 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
@@ -53,8 +53,8 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = stream(10318)(guildId, channelId, ownerId).previewUrl;
-  const tmp4 = stream(10318);
+  const previewUrl = stream(10319)(guildId, channelId, ownerId).previewUrl;
+  const tmp4 = stream(10319);
   const items = [ApplicationStreamingStore, AuthenticationStore];
   const items1 = [stream];
   const stateFromStores = mode(504).useStateFromStores(items, () => {
@@ -128,7 +128,7 @@ export const VoicePanelStreamPreview = function VoicePanelStreamPreview(mode) {
     tmp16Result = tmp16(closure_9, obj10);
   }
   obj7.children = tmp16Result;
-  items2[1] = closure_6(stream(7313), obj7);
+  items2[1] = closure_6(stream(7318), obj7);
   obj4.children = items2;
   return tmp11(tmp12, obj4);
 };

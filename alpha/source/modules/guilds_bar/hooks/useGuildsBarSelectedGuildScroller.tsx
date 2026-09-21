@@ -1,10 +1,10 @@
-// Module ID: 16693
-// Function ID: 16694
+// Module ID: 16699
+// Function ID: 16700
 // Name: useGuildsBarSelectedGuildScroller
 // Dependencies: [19, 4577, 2]
 // Exports: default
 
-// Module 16693 (useGuildsBarSelectedGuildScroller)
+// Module 16699 (useGuildsBarSelectedGuildScroller)
 import noop from "module_19" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 

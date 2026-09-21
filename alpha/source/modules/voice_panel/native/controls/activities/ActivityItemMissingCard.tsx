@@ -1,11 +1,11 @@
-// Module ID: 17599
-// Function ID: 17600
+// Module ID: 17610
+// Function ID: 17611
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 4756, 576, 12523, 7402, 9634, 9739, 5334, 17600, 17601, 5801, 2]
+// Dependencies: [5, 19, 17, 21, 4756, 576, 12525, 7407, 9635, 9740, 5339, 17611, 17612, 5806, 2]
 
-// Module 17599 (ActivityItemMissingCard)
+// Module 17610 (ActivityItemMissingCard)
 import nativeDefault from "native" /* 576 */;
-import NativeViewDefault from "NativeView" /* 5801 */;
+import NativeViewDefault from "NativeView" /* 5806 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

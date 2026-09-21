@@ -1,9 +1,0 @@
-// Module ID: 12403
-// Function ID: 12404
-// Dependencies: [1121]
-
-// Module 12403
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "242a17e76bd7bf11bfa37a179ab55a99", name: "ArrowsUpDownIcon", type: "png" });

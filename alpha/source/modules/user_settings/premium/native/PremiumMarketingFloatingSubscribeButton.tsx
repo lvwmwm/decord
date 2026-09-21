@@ -1,10 +1,10 @@
-// Module ID: 13754
-// Function ID: 13755
+// Module ID: 13760
+// Function ID: 13761
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4748, 1074, 21, 4756, 576, 1612, 504, 13752, 7422, 672, 4492, 4757, 5198, 10226, 2]
+// Dependencies: [19, 17, 4748, 1074, 21, 4756, 576, 1612, 504, 13758, 7427, 672, 4492, 4757, 5198, 10227, 2]
 // Exports: default
 
-// Module 13754 (PremiumMarketingFloatingSubscribeButton)
+// Module 13760 (PremiumMarketingFloatingSubscribeButton)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import timing from "timing" /* 4757 */;

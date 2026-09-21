@@ -1,10 +1,10 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9575
+// Function ID: 9576
 // Name: getEmbeddedActivitiesManager
-// Dependencies: [9575, 2]
+// Dependencies: [9576, 2]
 // Exports: default
 
-// Module 9574 (getEmbeddedActivitiesManager)
+// Module 9575 (getEmbeddedActivitiesManager)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

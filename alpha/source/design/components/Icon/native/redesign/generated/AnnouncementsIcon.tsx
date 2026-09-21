@@ -1,10 +1,10 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5312
+// Function ID: 5313
 // Name: AnnouncementsIcon
 // Dependencies: [19, 21, 576, 4456, 5247, 2]
 // Exports: AnnouncementsIcon
 
-// Module 5305 (AnnouncementsIcon)
+// Module 5312 (AnnouncementsIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5247 from "module_5247" /* 5247 */;

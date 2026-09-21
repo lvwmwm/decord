@@ -1,10 +1,10 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 12990
+// Function ID: 12991
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12970, 21, 4756, 576, 8870, 5796, 2055, 4752, 1115, 1612, 5186, 1177, 1484, 7617, 7291, 12983, 4656, 12978, 2]
+// Dependencies: [5, 32, 19, 17, 12972, 21, 4756, 576, 8871, 5801, 2055, 4752, 1115, 1612, 5186, 1177, 1484, 7619, 7296, 12985, 4656, 12980, 2]
 // Exports: default
 
-// Module 12988 (HubEmailConnectionGuildSelect)
+// Module 12990 (HubEmailConnectionGuildSelect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -12,8 +12,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import GuildIconDefault from "GuildIcon" /* 5796 */;
-import Form from "Form" /* 8870 */;
+import GuildIconDefault from "GuildIcon" /* 5801 */;
+import Form from "Form" /* 8871 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -75,7 +75,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12970).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12972).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);
@@ -170,7 +170,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   c3 = 2;
                   c4 = 3;
                   v3 = 1;
-                  const obj5 = { value: email(12983).sendVerificationEmail(email, true, id), done: false };
+                  const obj5 = { value: email(12985).sendVerificationEmail(email, true, id), done: false };
                   return obj5;
                 }
               } else if (1 === tmp8) {

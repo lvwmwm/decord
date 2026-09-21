@@ -1,22 +1,22 @@
-// Module ID: 12144
-// Function ID: 12145
+// Module ID: 12146
+// Function ID: 12147
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1182, 1372, 8701, 8690, 1074, 21, 8189, 4756, 504, 4607, 12145, 12146, 8689, 4906, 8529, 8578, 12147, 8929, 4978, 11, 2]
+// Dependencies: [32, 19, 17, 1182, 1372, 8702, 8691, 1074, 21, 8190, 4756, 504, 4607, 12147, 12148, 8690, 4906, 8530, 8579, 12149, 8930, 4978, 11, 2]
 // Exports: default
 
-// Module 12144 (ClassificationMessageEvidence)
-import RowGeneratorDefault from "RowGenerator" /* 8189 */;
-import openMediaModal from "openMediaModal" /* 8529 */;
+// Module 12146 (ClassificationMessageEvidence)
+import RowGeneratorDefault from "RowGenerator" /* 8190 */;
+import openMediaModal from "openMediaModal" /* 8530 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
-import SafetyHubStore from "SafetyHubStore" /* 8701 */;
+import SafetyHubStore from "SafetyHubStore" /* 8702 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, findNodeHandle: metroRequire, Image: closure_7, ActivityIndicator: closure_8 } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8690);
+const SafetyHubConstants = fn(8691);
 ({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: map1, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubConstants);
 const MessageTypes = fn(1074).MessageTypes;
 const jsxProd = fn(21);
@@ -43,10 +43,10 @@ export default function ClassificationEvidence(arg0) {
   const items1 = [id];
   const resolveAssetSource = first3.resolveAssetSource;
   if (obj3.useStateFromStores(items1, () => ref(4607).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp11(12145));
+    let assetSource = resolveAssetSource(tmp11(12147));
     let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp11(12146));
+    assetSource = resolveAssetSource(tmp11(12148));
     tmp13 = tmp11;
   }
   let first2 = arg0.flaggedContent[0];
@@ -68,10 +68,10 @@ export default function ClassificationEvidence(arg0) {
         str = "";
       }
       obj.filename = str;
-      obj.flags = ref(8689).getSpoilerFlagsForAttachment(filename);
+      obj.flags = ref(8690).getSpoilerFlagsForAttachment(filename);
       obj.size = 0;
       obj.proxy_url = filename.url;
-      const obj2 = ref(8689);
+      const obj2 = ref(8690);
       const tmp2 = ref;
       if (obj3.isImageFile(filename.filename)) {
         const obj4 = {};
@@ -202,7 +202,7 @@ export default function ClassificationEvidence(arg0) {
     first2 = attachments.filter((filename) => ref(4906).isVideoFile(filename.filename));
     obj5.children = first2.map((uri, index) => {
       closure_0 = uri;
-      return closure_1_18(first(8578), {
+      return closure_1_18(first(8579), {
         source: { uri: uri.url },
         onLoad(arg0) {
           closure_0 = arg0;
@@ -225,9 +225,9 @@ export default function ClassificationEvidence(arg0) {
     let obj10 = obj4;
   } else {
     const obj6 = { ref, onTapImage: callback, inverted: false };
-    const items9 = [closure_18(tmp13(12147), obj6), ];
+    const items9 = [closure_18(tmp13(12149), obj6), ];
     const obj7 = { rowGenerator, message: null, modifyRow: null, pointerEvents: "none" };
-    const tmp13Result = tmp13(8929);
+    const tmp13Result = tmp13(8930);
     const tmp29 = closure_18;
     const obj8 = { id: first2.id, timestamp: null, channel_id: "1", type: null, author: null, content: null, attachments: null };
     const _Date = Date;

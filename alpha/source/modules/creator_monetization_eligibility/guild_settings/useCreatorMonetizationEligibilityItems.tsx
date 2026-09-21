@@ -1,13 +1,13 @@
-// Module ID: 18135
-// Function ID: 18136
+// Module ID: 18146
+// Function ID: 18147
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1074, 18136, 18137, 1115, 2108, 4445, 18138, 2]
+// Dependencies: [5, 19, 1074, 18147, 18148, 1115, 2108, 4445, 18149, 2]
 // Exports: default
 
-// Module 18135 (useCreatorMonetizationEligibilityItems)
+// Module 18146 (useCreatorMonetizationEligibilityItems)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import formatDurationFromDaysDefault from "formatDurationFromDays" /* 18138 */;
+import formatDurationFromDaysDefault from "formatDurationFromDays" /* 18149 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7580
-// Function ID: 7581
+// Module ID: 7582
+// Function ID: 7583
 // Name: useGuildIdsToFetchSoundsFor
 // Dependencies: [19, 2063, 5224, 563, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 7580 (useGuildIdsToFetchSoundsFor)
+// Module 7582 (useGuildIdsToFetchSoundsFor)
 import _mod19 from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import SoundboardStore from "SoundboardStore" /* 5224 */;

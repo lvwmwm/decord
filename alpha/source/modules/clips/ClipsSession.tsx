@@ -1,9 +1,9 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14260
+// Function ID: 14261
 // Name: ClipsSession
 // Dependencies: [2]
 
-// Module 14254 (ClipsSession)
+// Module 14260 (ClipsSession)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/clips/ClipsSession.tsx");

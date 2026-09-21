@@ -1,10 +1,10 @@
-// Module ID: 9182
-// Function ID: 9183
+// Module ID: 9183
+// Function ID: 9184
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 4756, 576, 4492, 4757, 1397, 9183, 4752, 8989, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4492, 4757, 1397, 9184, 4752, 8990, 2]
 // Exports: default
 
-// Module 9182 (GameProfileNavigationHeader)
+// Module 9183 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import timing from "timing" /* 4757 */;
@@ -108,7 +108,7 @@ export default function GameProfileNavigationHeader(game) {
   let tmp13Result2 = null;
   if (null != name) {
     let obj2 = { style: tmp.headerContainer, children: null };
-    const items2 = [closure_7(tmp3(9183).BackgroundBlurFill, {}), ];
+    const items2 = [closure_7(tmp3(9184).BackgroundBlurFill, {}), ];
     const obj3 = { style: tmp.headerRow, children: null };
     let tmp15Result = null != memo;
     if (tmp15Result) {
@@ -130,12 +130,12 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp13Result) {
       const obj8 = { style: tmp.rankPillContainer, children: null };
       const obj9 = { rank: game.l30Rank, compact: true };
-      const items5 = [tmp15(application(8989), obj9), ];
+      const items5 = [tmp15(application(8990), obj9), ];
       const obj10 = { style: null, children: null };
       const items6 = [StyleSheet.absoluteFill, animatedStyle1];
       obj10.style = items6;
       const obj11 = { rank: game.l30Rank };
-      obj10.children = tmp15(application(8989), obj11);
+      obj10.children = tmp15(application(8990), obj11);
       items5[1] = tmp15(application(4492).View, obj10);
       obj8.children = items5;
       tmp13Result = tmp13(tmp14, obj8);

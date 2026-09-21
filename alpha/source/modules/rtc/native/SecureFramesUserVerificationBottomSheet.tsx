@@ -1,20 +1,20 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 9989
+// Function ID: 9990
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 4779, 1372, 9971, 1074, 21, 4756, 576, 9975, 9989, 9950, 9978, 504, 9981, 8449, 4908, 9969, 9980, 9075, 9990, 4723, 4454, 4715, 1115, 7390, 7389, 7438, 4752, 9982, 5184, 5186, 2]
+// Dependencies: [32, 19, 17, 4779, 1372, 9972, 1074, 21, 4756, 576, 9976, 9990, 9951, 9979, 504, 9982, 8450, 4908, 9970, 9981, 9076, 9991, 4723, 4454, 4715, 1115, 7395, 7394, 7443, 4752, 9983, 5184, 5186, 2]
 // Exports: default
 
-// Module 9988 (SecureFramesUserVerificationBottomSheet)
+// Module 9989 (SecureFramesUserVerificationBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 4715 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import UserActionCreators from "UserActionCreators" /* 8449 */;
-import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9075 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9969 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9980 */;
-import XLargeBoldIcon from "XLargeBoldIcon" /* 9990 */;
+import UserActionCreators from "UserActionCreators" /* 8450 */;
+import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9076 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9970 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9981 */;
+import XLargeBoldIcon from "XLargeBoldIcon" /* 9991 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
@@ -23,7 +23,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const SecureFramesConstants = fn(9971);
+const SecureFramesConstants = fn(9972);
 ({ AnalyticsSecureFramesUserVerification: closure_9, SECURE_FRAMES_PUBLIC_KEY_VERSION: c10, USER_VERIFIED_TOAST_KEY: closure_11 } = SecureFramesConstants);
 const AnalyticsLocations = fn(1074).AnalyticsLocations;
 const jsxProd = fn(21);

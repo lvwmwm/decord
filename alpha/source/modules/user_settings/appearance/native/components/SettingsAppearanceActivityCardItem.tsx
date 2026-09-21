@@ -1,13 +1,13 @@
-// Module ID: 15559
-// Function ID: 15560
+// Module ID: 15565
+// Function ID: 15566
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2109, 15560, 21, 4492, 1177, 4756, 576, 563, 9093, 5799, 4752, 1881, 15561, 15562, 15563, 2]
+// Dependencies: [19, 17, 2109, 15566, 21, 4492, 1177, 4756, 576, 563, 9094, 5804, 4752, 1881, 15567, 15568, 15569, 2]
 // Exports: default
 
-// Module 15559 (SettingsAppearanceActivityCardItem)
+// Module 15565 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ClipViewDefault from "ClipView" /* 9093 */;
+import ClipViewDefault from "ClipView" /* 9094 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15560);
+const HappeningNowConstants = fn(15566);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -73,7 +73,7 @@ export default function ActivityCardItem(arg0) {
       const obj2 = { style: shiftedAvatar, children: null };
       if (index !== diff) {
         const obj3 = { cutouts: null, children: null };
-        const point = { shape: tmp3(9093).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
+        const point = { shape: tmp3(9094).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
         const items = [point];
         obj3.cutouts = items;
         obj3.children = tmp5;

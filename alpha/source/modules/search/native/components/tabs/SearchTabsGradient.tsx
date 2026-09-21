@@ -1,13 +1,13 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17194
+// Function ID: 17195
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 4457, 576, 4605, 13010, 2]
+// Dependencies: [19, 21, 4457, 576, 4605, 13012, 2]
 // Exports: default
 
-// Module 17183 (SearchTabsGradient)
+// Module 17194 (SearchTabsGradient)
 import nativeDefault from "native" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
-import TabsGradientDefault from "TabsGradient" /* 13010 */;
+import TabsGradientDefault from "TabsGradient" /* 13012 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

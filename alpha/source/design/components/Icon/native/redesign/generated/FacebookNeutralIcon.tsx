@@ -1,13 +1,13 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8357
+// Function ID: 8358
 // Name: FacebookNeutralIcon
-// Dependencies: [19, 21, 576, 4456, 8357, 2]
+// Dependencies: [19, 21, 576, 4456, 8358, 2]
 // Exports: FacebookNeutralIcon
 
-// Module 8356 (FacebookNeutralIcon)
+// Module 8357 (FacebookNeutralIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod8357 from "module_8357" /* 8357 */;
+import _mod8358 from "module_8358" /* 8358 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const FacebookNeutralIcon = function FacebookNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8357, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8358, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

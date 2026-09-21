@@ -1,10 +1,10 @@
-// Module ID: 17746
-// Function ID: 17747
+// Module ID: 17757
+// Function ID: 17758
 // Name: PastVcActivityMessagesExperiment
 // Dependencies: [4672, 4669, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 17746 (PastVcActivityMessagesExperiment)
+// Module 17757 (PastVcActivityMessagesExperiment)
 import ExperimentConstants from "ExperimentConstants" /* 4672 */;
 import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;

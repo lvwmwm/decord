@@ -1,10 +1,10 @@
-// Module ID: 5749
-// Function ID: 5750
+// Module ID: 5754
+// Function ID: 5755
 // Name: MemberVerificationAlert
 // Dependencies: [19, 17, 21, 4756, 576, 5205, 4752, 2]
 // Exports: default
 
-// Module 5749 (MemberVerificationAlert)
+// Module 5754 (MemberVerificationAlert)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;

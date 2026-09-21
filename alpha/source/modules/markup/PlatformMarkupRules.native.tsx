@@ -1,7 +1,7 @@
 // Module ID: 5238
 // Function ID: 5239
 // Name: PlatformMarkupRules
-// Dependencies: [17, 5239, 5318, 2008, 1115, 4409, 1929, 5333, 5217, 1397, 5218, 5221, 2]
+// Dependencies: [17, 5239, 5323, 2008, 1115, 4409, 1929, 5338, 5217, 1397, 5218, 5221, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
 // Module 5238 (PlatformMarkupRules)
@@ -14,8 +14,8 @@ import MarkupTextRuleDefault from "MarkupTextRule" /* 5217 */;
 import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5218 */;
 import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5221 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import useGameMentionData from "useGameMentionData" /* 5318 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5333 */;
+import useGameMentionData from "useGameMentionData" /* 5323 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5338 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;

@@ -1,13 +1,13 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11743
+// Function ID: 11744
 // Name: IosAttributionEligibility
-// Dependencies: [11742, 1364, 7933, 11744, 2]
+// Dependencies: [11744, 1364, 7935, 11746, 2]
 // Exports: getIosAttributionClickFramework, isCampaignIosAttributionEnabled, isIosAttributionEligible
 
-// Module 11741 (IosAttributionEligibility)
+// Module 11743 (IosAttributionEligibility)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import QuestDataUtils from "QuestDataUtils" /* 7933 */;
-import apexExperiment from "apexExperiment" /* 11742 */;
+import QuestDataUtils from "QuestDataUtils" /* 7935 */;
+import apexExperiment from "apexExperiment" /* 11744 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionEligibility.tsx");
@@ -40,17 +40,17 @@ export const getIosAttributionClickFramework = function getIosAttributionClickFr
   if (enabled) {
     activeIosAttributionFramework = null;
     if (arg0) {
-      const adContext = tmp(7933).getAdContext(sourceQuestContent, adContentId);
+      const adContext = tmp(7935).getAdContext(sourceQuestContent, adContentId);
       let prop;
       if (adContext != null) {
         prop = adContext.is_campaign_ios_attribution_enabled;
       }
       activeIosAttributionFramework = null;
       if (true === prop) {
-        activeIosAttributionFramework = tmp(11744).getActiveIosAttributionFramework();
-        const tmpResult4 = tmp(11744);
+        activeIosAttributionFramework = tmp(11746).getActiveIosAttributionFramework();
+        const tmpResult4 = tmp(11746);
       }
-      const tmpResult3 = tmp(7933);
+      const tmpResult3 = tmp(7935);
     }
   }
   return activeIosAttributionFramework;

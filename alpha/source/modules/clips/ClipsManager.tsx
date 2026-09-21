@@ -1,9 +1,9 @@
-// Module ID: 18251
-// Function ID: 18252
+// Module ID: 18262
+// Function ID: 18263
 // Name: clips/ClipsManager
-// Dependencies: [5, 4801, 502, 1992, 4779, 4795, 1998, 5343, 1074, 4798, 7358, 13934, 4811, 4808, 1241, 2019, 573, 13935, 4377, 1364, 13933, 2]
+// Dependencies: [5, 4801, 502, 1992, 4779, 4795, 1998, 5348, 1074, 4798, 7363, 13940, 4811, 4808, 1241, 2019, 573, 13941, 4377, 1364, 13939, 2]
 
-// Module 18251 (clips/ClipsManager)
+// Module 18262 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -11,20 +11,20 @@ import UserSettings from "UserSettings" /* 2019 */;
 import DiscordNativeDefault from "DiscordNative" /* 4377 */;
 import StreamKeyUtilsAll from "StreamKeyUtils" /* 4808 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import isClipsEnabled from "isClipsEnabled" /* 13933 */;
-import ClipsExperiment from "ClipsExperiment" /* 13934 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13935 */;
+import isClipsEnabled from "isClipsEnabled" /* 13939 */;
+import ClipsExperiment from "ClipsExperiment" /* 13940 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13941 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4795 */;
 import ClipsStore from "ClipsStore" /* 1998 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 const getSystemAnalyticsInfo = fn(4801).getSystemAnalyticsInfo;
-const ClipsConstants = fn(5343);
+const ClipsConstants = fn(5348);
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_11, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_12, CLIPS_HARDWARE_CLASSIFICATION_VERSION: map1, ClipsHardwareClassification: closure_14, CLIP_RUNTIME: closure_15 } = ClipsConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_16, RTCConnectionStates: closure_17 } = Constants);

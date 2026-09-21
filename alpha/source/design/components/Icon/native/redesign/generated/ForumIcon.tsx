@@ -1,10 +1,10 @@
-// Module ID: 5299
-// Function ID: 5300
+// Module ID: 5306
+// Function ID: 5307
 // Name: ForumIcon
 // Dependencies: [19, 21, 576, 4456, 5260, 2]
 // Exports: ForumIcon
 
-// Module 5299 (ForumIcon)
+// Module 5306 (ForumIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5260 from "module_5260" /* 5260 */;

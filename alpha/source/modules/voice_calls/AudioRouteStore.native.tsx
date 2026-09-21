@@ -1,14 +1,14 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9905
+// Function ID: 9906
 // Name: AudioRouteStore
-// Dependencies: [17, 4779, 9905, 1364, 9906, 504, 573, 2]
+// Dependencies: [17, 4779, 9906, 1364, 9907, 504, 573, 2]
 
-// Module 9904 (AudioRouteStore)
+// Module 9905 (AudioRouteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 9905 */;
-import NativeAudioRouteEmitterModuleDefault from "NativeAudioRouteEmitterModule" /* 9906 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 9906 */;
+import NativeAudioRouteEmitterModuleDefault from "NativeAudioRouteEmitterModule" /* 9907 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
 import size from "module_2" /* 2 */;

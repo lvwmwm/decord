@@ -1,13 +1,13 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7484
+// Function ID: 7485
 // Name: GenericIAPStore
-// Dependencies: [504, 12, 7480, 573, 2]
+// Dependencies: [504, 12, 7485, 573, 2]
 
-// Module 7479 (GenericIAPStore)
+// Module 7484 (GenericIAPStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ProductIds from "ProductIds" /* 7480 */;
+import ProductIds from "ProductIds" /* 7485 */;
 
 require = fn;
 let c3 = null;

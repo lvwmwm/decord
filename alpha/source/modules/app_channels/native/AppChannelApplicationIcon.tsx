@@ -1,13 +1,13 @@
-// Module ID: 9829
-// Function ID: 9830
+// Module ID: 9830
+// Function ID: 9831
 // Name: AppChannelApplicationIcon
-// Dependencies: [19, 21, 4756, 576, 5799, 1397, 2]
+// Dependencies: [19, 21, 4756, 576, 5804, 1397, 2]
 // Exports: default
 
-// Module 9829 (AppChannelApplicationIcon)
+// Module 9830 (AppChannelApplicationIcon)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import FastImageDefault from "FastImage" /* 5799 */;
+import FastImageDefault from "FastImage" /* 5804 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

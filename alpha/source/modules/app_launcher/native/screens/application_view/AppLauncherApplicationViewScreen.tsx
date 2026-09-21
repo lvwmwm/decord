@@ -1,14 +1,14 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12380
+// Function ID: 12381
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 9403, 1483, 5210, 21, 4756, 11479, 12379, 9402, 1610, 12380, 7408, 4492, 12381, 2]
+// Dependencies: [19, 17, 9404, 1483, 5210, 21, 4756, 11481, 12381, 9403, 1610, 12382, 7413, 4492, 12383, 2]
 // Exports: default
 
-// Module 12378 (AppLauncherApplicationViewScreen)
+// Module 12380 (AppLauncherApplicationViewScreen)
 import KeyboardTypes from "KeyboardTypes" /* 1610 */;
-import AppLauncherContext from "AppLauncherContext" /* 11479 */;
+import AppLauncherContext from "AppLauncherContext" /* 11481 */;
 import noop from "module_19" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9403 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9404 */;
 
 const require = globalThis.__r;
 

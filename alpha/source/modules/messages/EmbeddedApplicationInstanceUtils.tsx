@@ -1,10 +1,10 @@
-// Module ID: 13528
-// Function ID: 13529
+// Module ID: 13530
+// Function ID: 13531
 // Name: EmbeddedApplicationInstanceUtils
-// Dependencies: [19, 1115, 9599, 9635, 2]
+// Dependencies: [19, 1115, 9600, 9636, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 13528 (EmbeddedApplicationInstanceUtils)
+// Module 13530 (EmbeddedApplicationInstanceUtils)
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
 
@@ -23,7 +23,7 @@ function getJoinOrStartButtonState(channel) {
     tmp6 = tmp2;
   }
   obj.text = stringResult;
-  const result = tmp6(9599).isActivitiesInTextEnabled(channel.channel);
+  const result = tmp6(9600).isActivitiesInTextEnabled(channel.channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {
       if (embeddedActivity.launchId === currentEmbeddedActivity.launchId) {
@@ -50,23 +50,23 @@ function getJoinOrStartButtonState(channel) {
     return obj3;
   } else {
     if (null != joinability) {
-      if (joinability !== tmp6(9635).EmbeddedActivityJoinability.CAN_JOIN) {
-        if (tmp6(9635).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
+      if (joinability !== tmp6(9636).EmbeddedActivityJoinability.CAN_JOIN) {
+        if (tmp6(9636).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === joinability) {
           const intl8 = tmp6(1115).intl;
           let stringResult2 = intl8.string(tmp6(1115).t.hHGrWz);
-        } else if (tmp6(9635).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
+        } else if (tmp6(9636).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === joinability) {
           const intl7 = tmp6(1115).intl;
           stringResult2 = intl7.string(tmp6(1115).t["4WuFRE"]);
-        } else if (tmp6(9635).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
+        } else if (tmp6(9636).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === joinability) {
           const intl6 = tmp6(1115).intl;
           stringResult2 = intl6.string(tmp6(1115).t.uGDCcw);
-        } else if (tmp6(9635).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
+        } else if (tmp6(9636).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === joinability) {
           const intl5 = tmp6(1115).intl;
           stringResult2 = intl5.string(tmp6(1115).t.UXoQTp);
-        } else if (tmp6(9635).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
+        } else if (tmp6(9636).EmbeddedActivityJoinability.CHANNEL_FULL === joinability) {
           const intl4 = tmp6(1115).intl;
           stringResult2 = intl4.string(tmp6(1115).t.rZfiNq);
-        } else if (tmp6(9635).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
+        } else if (tmp6(9636).EmbeddedActivityJoinability.NO_CHANNEL_CONNECT_PERMISSION === joinability) {
           const intl3 = tmp6(1115).intl;
           stringResult2 = intl3.string(tmp6(1115).t.w5SAps);
         } else {
@@ -82,7 +82,7 @@ function getJoinOrStartButtonState(channel) {
     }
     return obj;
   }
-  const tmp6Result = tmp6(9599);
+  const tmp6Result = tmp6(9600);
 }
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/EmbeddedApplicationInstanceUtils.tsx");

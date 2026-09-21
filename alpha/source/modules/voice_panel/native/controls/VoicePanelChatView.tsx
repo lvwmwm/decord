@@ -1,24 +1,24 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12523
+// Function ID: 12524
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 12522, 1074, 21, 4756, 4957, 1110, 12519, 1115, 4709, 12523, 4492, 7313, 5336, 8114, 1478, 1612, 12531, 4769, 4609, 11778, 4466, 5168, 12532, 11601, 2]
+// Dependencies: [19, 17, 12524, 1074, 21, 4756, 4957, 1110, 12521, 1115, 4709, 12525, 4492, 7318, 5341, 8116, 1478, 1612, 12533, 4769, 4609, 11780, 4466, 5168, 12534, 11603, 2]
 
-// Module 12521 (VoicePanelChatView)
+// Module 12523 (VoicePanelChatView)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import _modDef4709 from "module_4709" /* 4709 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4957 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5336 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7313 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12519 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12523 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5341 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7318 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12521 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12525 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Platform = fn(17).Platform;
-const CONTROLS_DRAWER_HEADER_SIZE = fn(12522).CONTROLS_DRAWER_HEADER_SIZE;
+const CONTROLS_DRAWER_HEADER_SIZE = fn(12524).CONTROLS_DRAWER_HEADER_SIZE;
 const Constants = fn(1074);
 ({ ComponentActions: closure_4, ME: hasOwnProperty } = Constants);
 const jsxProd = fn(21);

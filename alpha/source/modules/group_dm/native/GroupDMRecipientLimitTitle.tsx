@@ -1,15 +1,15 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 17230
+// Function ID: 17231
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 1364, 11840, 4457, 1115, 4752, 8939, 12439, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 1364, 11842, 4457, 1115, 4752, 8940, 12441, 2]
 // Exports: default
 
-// Module 17219 (GroupDMRecipientLimitTitle)
+// Module 17230 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useToken from "useToken" /* 4457 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11840 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11842 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -64,7 +64,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
       token2 = token1;
     }
     const obj7 = { size: "xxs", color: token2, style: tmp.nitroWheelIcon, accessible: false };
-    tmp15Result = tmp15(tmp2(8939).NitroWheelIcon, obj7);
+    tmp15Result = tmp15(tmp2(8940).NitroWheelIcon, obj7);
   }
   const obj8 = { children: null };
   const items1 = [tmp15Result, timestampProducer(Text_Text.Text, { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult })];
@@ -78,7 +78,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
     obj10.accessibilityLabel = "" + title + ", " + formatToPlainStringResult;
     const rect = { top: tmp5(576).space.PX_8, bottom: tmp5(576).space.PX_8, left: tmp5(576).space.PX_16, right: tmp5(576).space.PX_16 };
     obj10.hitSlop = rect;
-    obj10.onPress = tmp5(12439);
+    obj10.onPress = tmp5(12441);
     obj10.children = tmp13Result;
     let tmp15Result2 = tmp15(React3, obj10);
   } else {

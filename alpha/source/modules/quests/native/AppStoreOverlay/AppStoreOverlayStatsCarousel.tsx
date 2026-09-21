@@ -1,16 +1,16 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11758
+// Function ID: 11759
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 4756, 576, 11757, 1115, 11758, 4752, 1364, 6892, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 11759, 1115, 11760, 4752, 1364, 6897, 2]
 // Exports: default
 
-// Module 11756 (AppStoreOverlayStatsCarousel)
+// Module 11758 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6892 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 11757 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 11758 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 11759 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 11760 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,8 +30,8 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const result = AppStoreOverlayStatCardUtils.formatAppStoreRatingValue(stat.rating, util.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      result1 = tmp9(11757).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
-      const tmp9Result = tmp9(11757);
+      result1 = tmp9(11759).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
+      const tmp9Result = tmp9(11759);
     }
     const appStoreStarFillAmounts = AppStoreOverlayStatCardUtils.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1115).intl;

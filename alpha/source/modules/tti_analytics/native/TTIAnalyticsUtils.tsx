@@ -1,20 +1,20 @@
-// Module ID: 7715
-// Function ID: 7716
+// Module ID: 7717
+// Function ID: 7718
 // Name: TTIAnalyticsUtils
-// Dependencies: [5, 7716, 4671, 1182, 502, 2041, 1346, 1074, 7905, 2048, 21, 4735, 7906, 1255, 1363, 4614, 4613, 10, 1231, 1241, 7907, 4620, 7909, 9, 1091, 1358, 7910, 5109, 5205, 1980, 2]
+// Dependencies: [5, 7718, 4671, 1182, 502, 2041, 1346, 1074, 7907, 2048, 21, 4735, 7908, 1255, 1363, 4614, 4613, 10, 1231, 1241, 7909, 4620, 7911, 9, 1091, 1358, 7912, 5109, 5205, 1980, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7715 (TTIAnalyticsUtils)
+// Module 7717 (TTIAnalyticsUtils)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
 import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4620 */;
 import DeviceUtils from "DeviceUtils" /* 4735 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7906 */;
-import AppStartInfo2 from "AppStartInfo" /* 7907 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7908 */;
+import AppStartInfo2 from "AppStartInfo" /* 7909 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CacheStore from "CacheStore" /* 7716 */;
+import CacheStore from "CacheStore" /* 7718 */;
 import ExperimentStore from "ExperimentStore" /* 4671 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -578,7 +578,7 @@ let closure_30 = async function _trackAppLaunchCompletedAsync(arg0, value) {
   }
 };
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ACCEPT_INVITE_MODAL_KEY = fn(7905).ACCEPT_INVITE_MODAL_KEY;
+const ACCEPT_INVITE_MODAL_KEY = fn(7907).ACCEPT_INVITE_MODAL_KEY;
 const StaticChannelRoutes = fn(2048).StaticChannelRoutes;
 const jsx = fn(21).jsx;
 const v1 = fn(1255);

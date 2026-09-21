@@ -1,10 +1,10 @@
-// Module ID: 5832
-// Function ID: 5833
+// Module ID: 5837
+// Function ID: 5838
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 4706, 5186, 4580, 5833, 4959, 7282, 1980, 7285, 7321, 7198, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 4706, 5186, 4580, 5838, 4959, 7287, 1980, 7290, 7326, 7203, 2]
 // Exports: default
 
-// Module 5832 (IdentityVerificationField)
+// Module 5837 (IdentityVerificationField)
 import nativeDefault from "native" /* 576 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
 import Text_Text from "Text/Text" /* 4752 */;
@@ -83,11 +83,11 @@ export default function IdentityVerificationField(arg0) {
       stringResult1 = intl.string(tmp(1115).t.mhv8BM);
     }
     if (tmp(4580).UserVerificationFieldPlatforms.EMAIL === platform) {
-      let EnvelopeIcon = tmp(7321).EnvelopeIcon;
+      let EnvelopeIcon = tmp(7326).EnvelopeIcon;
     } else if (tmp(4580).UserVerificationFieldPlatforms.PHONE === platform) {
-      EnvelopeIcon = tmp(7198).MobilePhoneIcon;
+      EnvelopeIcon = tmp(7203).MobilePhoneIcon;
     } else {
-      EnvelopeIcon = tmp(7321).EnvelopeIcon;
+      EnvelopeIcon = tmp(7326).EnvelopeIcon;
     }
     if (tmp(4580).UserVerificationFieldPlatforms.EMAIL === platform) {
       let fn = () => {

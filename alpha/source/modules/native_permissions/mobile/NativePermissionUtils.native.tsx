@@ -1,13 +1,13 @@
-// Module ID: 5357
-// Function ID: 5358
+// Module ID: 5362
+// Function ID: 5363
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 4965, 21, 1364, 1609, 5354, 3, 5358, 5360, 1980, 5110, 1115, 2]
+// Dependencies: [5, 19, 17, 4965, 21, 1364, 1609, 5359, 3, 5363, 5365, 1980, 5110, 1115, 2]
 
-// Module 5357 (mobile/NativePermissionUtils)
+// Module 5362 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import util from "util" /* 1115 */;
 import useAlertStore from "useAlertStore" /* 5110 */;
-import openPrivacySettingsDefault from "openPrivacySettings" /* 5358 */;
+import openPrivacySettingsDefault from "openPrivacySettings" /* 5363 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -144,7 +144,7 @@ if (MetaQuestUtils) {
 }
 HermesBuiltin.arraySpread(items9, tmp8);
 let NativePermissionIOSUtils;
-const NativePermissionBaseUtils = fn(5354).NativePermissionBaseUtils;
+const NativePermissionBaseUtils = fn(5359).NativePermissionBaseUtils;
 class NativePermissionIOSUtils extends NativePermissionBaseUtils {
 }
 const prototype = NativePermissionIOSUtils.prototype;

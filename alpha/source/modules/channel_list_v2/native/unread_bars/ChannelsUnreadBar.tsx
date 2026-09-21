@@ -1,9 +1,9 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16521
+// Function ID: 16522
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 10373, 1074, 21, 4492, 4756, 576, 1364, 8115, 5193, 10374, 4936, 15361, 5185, 5189, 5301, 16055, 16053, 4752, 1115, 2]
+// Dependencies: [32, 19, 17, 10374, 1074, 21, 4492, 4756, 576, 1364, 8117, 5193, 10375, 4936, 15367, 5185, 5189, 5308, 16061, 16059, 4752, 1115, 2]
 
-// Module 16515 (ChannelsUnreadBar)
+// Module 16521 (ChannelsUnreadBar)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
@@ -15,7 +15,7 @@ import noop from "module_19" /* 19 */;
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
-const RedesignChannelListConstants = fn(10373);
+const RedesignChannelListConstants = fn(10374);
 ({ getScaledSearchBarHeight: hasOwnProperty, VIEWABILITY_CONFIG: metroRequire } = RedesignChannelListConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);

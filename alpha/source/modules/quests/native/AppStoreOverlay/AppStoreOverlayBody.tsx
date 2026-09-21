@@ -1,23 +1,23 @@
-// Module ID: 11755
-// Function ID: 11756
+// Module ID: 11757
+// Function ID: 11758
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1074, 7391, 21, 4756, 576, 5799, 4752, 11756, 1115, 11759, 11764, 1612, 4457, 672, 5198, 5186, 2]
+// Dependencies: [19, 17, 1074, 7396, 21, 4756, 576, 5804, 4752, 11758, 1115, 11761, 11766, 1612, 4457, 672, 5198, 5186, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
-// Module 11755 (AppStoreOverlayBody)
+// Module 11757 (AppStoreOverlayBody)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 11756 */;
-import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 11759 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 11764 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 11758 */;
+import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 11761 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 11766 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const VerticalGradient = fn(1074).VerticalGradient;
-let closure_6 = fn(7391).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+let closure_6 = fn(7396).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const createStyles = fn(4756);

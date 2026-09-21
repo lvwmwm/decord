@@ -1,16 +1,16 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 16989
+// Function ID: 16990
 // Name: VibegrationsSettingsSheet
-// Dependencies: [5, 32, 19, 17, 2096, 2063, 4405, 1372, 13360, 13359, 9308, 21, 4756, 576, 7221, 504, 1115, 3678, 9889, 13185, 4723, 5897, 5900, 5899, 5816, 6843, 4752, 5186, 7437, 7389, 9890, 7484, 5817, 5826, 4909, 11591, 2]
+// Dependencies: [5, 32, 19, 17, 2096, 2063, 4405, 1372, 13362, 13361, 9309, 21, 4756, 576, 7226, 504, 1115, 3678, 9890, 13187, 4723, 5902, 5905, 5904, 5821, 6848, 4752, 5186, 7442, 7394, 9891, 5274, 5822, 5831, 4909, 11593, 2]
 // Exports: default
 
-// Module 16981 (VibegrationsSettingsSheet)
+// Module 16989 (VibegrationsSettingsSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 7484 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11591 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5274 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11593 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -18,9 +18,9 @@ import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 13360 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13359 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9308 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 13362 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13361 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
 
 require = fn;
 function VibegrationsChannelSettingRow(projectId) {
@@ -93,7 +93,7 @@ function VibegrationsChannelSettingRow(projectId) {
   return fallback;
 }
 const View = fn(17).View;
-let VibegrationsConnectionStore = fn(13359);
+let VibegrationsConnectionStore = fn(13361);
 ({ requestProjectRebuild: closure_12, sendUserMessage: map1, submitProjectSettings: closure_14 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
@@ -623,9 +623,9 @@ export default function VibegrationsSettingsSheet(projectId) {
                   if (application_id == null) {
                     _null = null;
                   }
-                  _null2(13185)(_null);
+                  _null2(13187)(_null);
                   let prop;
-                  const tmp19 = _null2(13185);
+                  const tmp19 = _null2(13187);
                   if (project2 != null) {
                     prop = project2.preview_application_id;
                   }
@@ -633,8 +633,8 @@ export default function VibegrationsSettingsSheet(projectId) {
                   if (prop == null) {
                     _null2 = null;
                   }
-                  _null2(13185)(_null2);
-                  const tmp27 = _null2(13185);
+                  _null2(13187)(_null2);
+                  const tmp27 = _null2(13187);
                 }
               }
               _null2(4723).hideActionSheet(closure_1_20);

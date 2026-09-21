@@ -1,13 +1,13 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9684
+// Function ID: 9685
 // Name: useVideoStreamError
-// Dependencies: [502, 9684, 4781, 504, 9685, 2]
+// Dependencies: [502, 9685, 4781, 504, 9686, 2]
 // Exports: default, useVideoStreamErrorContext
 
-// Module 9683 (useVideoStreamError)
-import AVError from "AVError" /* 9685 */;
+// Module 9684 (useVideoStreamError)
+import AVError from "AVError" /* 9686 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 9684 */;
+import AVErrorStore from "AVErrorStore" /* 9685 */;
 
 const require = globalThis.__r;
 

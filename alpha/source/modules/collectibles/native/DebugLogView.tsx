@@ -1,10 +1,10 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16167
+// Function ID: 16168
 // Name: DebugLogView
-// Dependencies: [19, 17, 4755, 7796, 21, 4756, 576, 504, 4752, 2]
+// Dependencies: [19, 17, 4755, 7798, 21, 4756, 576, 504, 4752, 2]
 // Exports: default
 
-// Module 16161 (DebugLogView)
+// Module 16167 (DebugLogView)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
@@ -13,7 +13,7 @@ import DevSettingsStore from "DevSettingsStore" /* 4755 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4, TouchableOpacity: hasOwnProperty } = get_ActivityIndicator);
-const CollectiblesDebugStore = fn(7796);
+const CollectiblesDebugStore = fn(7798);
 ({ useCollectiblesDebugStore: closure_7, addDebugLog: closure_8 } = CollectiblesDebugStore);
 const jsxProd = fn(21);
 ({ jsxs: closure_9, jsx: c10 } = jsxProd);

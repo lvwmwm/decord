@@ -1,13 +1,13 @@
-// Module ID: 6573
-// Function ID: 6574
+// Module ID: 6578
+// Function ID: 6579
 // Name: PaintIllocon
-// Dependencies: [21, 5799, 6574, 2]
+// Dependencies: [21, 5804, 6579, 2]
 // Exports: PaintIllocon
 
-// Module 6573 (PaintIllocon)
+// Module 6578 (PaintIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6574 from "module_6574" /* 6574 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6579 from "module_6579" /* 6579 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const PaintIllocon = function PaintIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6574 };
+  const obj2 = { uri: _modDef6579 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

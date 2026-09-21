@@ -1,14 +1,14 @@
-// Module ID: 13765
-// Function ID: 13766
+// Module ID: 13771
+// Function ID: 13772
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 13766, 13770, 13771, 13772, 4664, 4649, 12842, 4752, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 13772, 13776, 13777, 13778, 4664, 4649, 12844, 4752, 2]
 // Exports: default
 
-// Module 13765 (BoostedGuildTierProgressCircle)
+// Module 13771 (BoostedGuildTierProgressCircle)
 import nativeDefault from "native" /* 576 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 4649 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4664 */;
-import Tier048Px from "Tier048Px" /* 13766 */;
+import Tier048Px from "Tier048Px" /* 13772 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -60,11 +60,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(13770);
+          let tier048PxSource = tmp2(13776);
         } else if (tmp13.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(13771);
+          tier048PxSource = tmp2(13777);
         } else if (tmp13.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(13772);
+          tier048PxSource = tmp2(13778);
         }
       }
       const obj5 = { source: tier048PxSource, style: tmp.guildTierIcon, accessibilityElementsHidden: true, importantForAccessibility: "no" };

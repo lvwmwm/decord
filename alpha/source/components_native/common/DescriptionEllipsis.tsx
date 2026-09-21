@@ -1,10 +1,10 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12658
+// Function ID: 12659
 // Name: DescriptionEllipsis
 // Dependencies: [19, 17, 21, 4756, 576, 2]
 // Exports: default
 
-// Module 12656 (DescriptionEllipsis)
+// Module 12658 (DescriptionEllipsis)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

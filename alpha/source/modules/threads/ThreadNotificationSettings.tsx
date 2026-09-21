@@ -1,10 +1,10 @@
-// Module ID: 10344
-// Function ID: 10345
+// Module ID: 10345
+// Function ID: 10346
 // Name: ThreadNotificationSettings
 // Dependencies: [2041, 4937, 4397, 1114, 1074, 1385, 504, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10344 (ThreadNotificationSettings)
+// Module 10345 (ThreadNotificationSettings)
 import FlagUtils from "FlagUtils" /* 1385 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;

@@ -1,14 +1,14 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13430
+// Function ID: 13431
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4405, 1074, 21, 4756, 576, 8509, 563, 4752, 1115, 10002, 2]
+// Dependencies: [19, 17, 4405, 1074, 21, 4756, 576, 8510, 563, 4752, 1115, 10003, 2]
 // Exports: default
 
-// Module 13428 (UserProfileRemediatedNotice)
+// Module 13430 (UserProfileRemediatedNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8509 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10002 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8510 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10003 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 

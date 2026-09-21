@@ -1,12 +1,12 @@
-// Module ID: 9531
-// Function ID: 9532
+// Module ID: 9532
+// Function ID: 9533
 // Name: ApplicationInstallUtils
-// Dependencies: [9403, 5210, 9317, 2]
+// Dependencies: [9404, 5210, 9318, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 9531 (ApplicationInstallUtils)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9317 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9403 */;
+// Module 9532 (ApplicationInstallUtils)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9318 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9404 */;
 
 require = fn;
 const BuiltInSectionId = fn(5210).BuiltInSectionId;

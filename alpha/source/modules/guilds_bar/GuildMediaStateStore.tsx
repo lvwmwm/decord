@@ -1,9 +1,9 @@
-// Module ID: 13967
-// Function ID: 13968
+// Module ID: 13973
+// Function ID: 13974
 // Name: GuildMediaStateStore
-// Dependencies: [2040, 1235, 7766, 2046, 2045, 4778, 502, 2041, 2063, 4395, 4405, 2095, 4937, 4775, 1074, 13968, 1095, 4385, 13969, 9749, 11, 5628, 9599, 504, 558, 573, 2]
+// Dependencies: [2040, 1235, 7768, 2046, 2045, 4778, 502, 2041, 2063, 4395, 4405, 2095, 4937, 4775, 1074, 13974, 1095, 4385, 13975, 9750, 11, 5633, 9600, 504, 558, 573, 2]
 
-// Module 13967 (GuildMediaStateStore)
+// Module 13973 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
@@ -12,7 +12,7 @@ import ChannelTypes from "ChannelTypes" /* 1095 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7766 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
 import StageInstanceStore from "StageInstanceStore" /* 2046 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -117,7 +117,7 @@ function computeGuildMediaState(guildId) {
       }
       continue;
     }
-    obj = { skipMutedVcs: guildId(13968).getIsDontBadgeMutedVcsEnabled("GuildMediaStateStore"), currentUserId: id.getId(), selectedVoiceChannelId: voiceChannelId, selectedVoiceGuildId: null, selectedVoiceChannelHasVideo: null, isSelectedVoiceChannelStage: null, blockedOrIgnoredUserIds: null, streamChannelIdsByGuild: null };
+    obj = { skipMutedVcs: guildId(13974).getIsDontBadgeMutedVcsEnabled("GuildMediaStateStore"), currentUserId: id.getId(), selectedVoiceChannelId: voiceChannelId, selectedVoiceGuildId: null, selectedVoiceChannelHasVideo: null, isSelectedVoiceChannelStage: null, blockedOrIgnoredUserIds: null, streamChannelIdsByGuild: null };
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
@@ -160,8 +160,8 @@ function computeGuildMediaState(guildId) {
       if (!tmp7) {
         const items = [];
         HermesBuiltin.arraySpread(location.userIds, 0);
-        tmp7 = !tmp(13969).hasBlockedOrIgnoredUserIds(items, tmp6.blockedOrIgnoredUserIds);
-        const tmpResult = tmp(13969);
+        tmp7 = !tmp(13975).hasBlockedOrIgnoredUserIds(items, tmp6.blockedOrIgnoredUserIds);
+        const tmpResult = tmp(13975);
       }
       tmp5 = tmp7;
     }
@@ -237,7 +237,7 @@ function computeGuildMediaState(guildId) {
           const basicChannel = ChannelStore.getBasicChannel(item);
           let tmp2 = null != basicChannel;
           if (tmp2) {
-            tmp2 = closure_1(5628)(basicChannel, PermissionStore);
+            tmp2 = closure_1(5633)(basicChannel, PermissionStore);
           }
           return tmp2;
         });
@@ -248,7 +248,7 @@ function computeGuildMediaState(guildId) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = obj5.getEmbeddedActivityLocationChannelId(_location);
-        let tmp34Result = tmp34(9599);
+        let tmp34Result = tmp34(9600);
         if (tmp34Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           let someResult2 = found.length > 0;
         } else {
@@ -262,7 +262,7 @@ function computeGuildMediaState(guildId) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null, activity: null, isCurrentUserConnected: false };
-        let tmp34Result2 = tmp34(9749);
+        let tmp34Result2 = tmp34(9750);
         obj4.activeEvent = null != tmp34Result2.getGuildActiveEvent(arg0);
         obj4.activity = someResult2;
         return obj4;

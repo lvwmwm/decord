@@ -1,9 +1,9 @@
-// Module ID: 7871
-// Function ID: 7872
+// Module ID: 7873
+// Function ID: 7874
 // Name: RecentMentionsStore
-// Dependencies: [4406, 502, 2041, 4976, 4771, 4405, 4577, 4937, 1372, 1074, 510, 4978, 4966, 4993, 12, 4785, 7510, 7872, 504, 573, 2]
+// Dependencies: [4406, 502, 2041, 4976, 4771, 4405, 4577, 4937, 1372, 1074, 510, 4978, 4966, 4993, 12, 4785, 7512, 7874, 504, 573, 2]
 
-// Module 7871 (RecentMentionsStore)
+// Module 7873 (RecentMentionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -11,7 +11,7 @@ import TimeUtils from "TimeUtils" /* 4785 */;
 import AgeGateUtils from "AgeGateUtils" /* 4966 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
 import isMessageMentioned from "isMessageMentioned" /* 4993 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7510 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
 import MessageRecord from "MessageRecord" /* 4406 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -96,7 +96,7 @@ function parseMessage(message, channelId) {
       }
       const id = AuthenticationStore.getId();
       if (!RelationshipStore.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7872)(message, id)) {
+        if (!tmp2(7874)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof MessageRecord)) {
             message = MessageStore.getMessage(message.channel_id, message.id);

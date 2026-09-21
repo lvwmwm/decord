@@ -1,21 +1,21 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 7958
+// Function ID: 7959
 // Name: utils/QuestUtils
-// Dependencies: [32, 4773, 2063, 4395, 4775, 7957, 5656, 7958, 7959, 7960, 7961, 7962, 2]
+// Dependencies: [32, 4773, 2063, 4395, 4775, 7959, 5661, 7960, 7961, 7962, 7963, 7964, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7956 (utils/QuestUtils)
-import QuestTaskUtils from "QuestTaskUtils" /* 7958 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7959 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7960 */;
-import QuestType2 from "QuestType" /* 7961 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7962 */;
+// Module 7958 (utils/QuestUtils)
+import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7961 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7962 */;
+import QuestType2 from "QuestType" /* 7963 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GameConsoleStore from "GameConsoleStore" /* 4773 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;
-import QuestUtmStore from "QuestUtmStore" /* 7957 */;
+import QuestUtmStore from "QuestUtmStore" /* 7959 */;
 
 require = fn;
 function isSponsoredPlayQuest(quest) {
@@ -33,7 +33,7 @@ function isSponsoredPlayQuest(quest) {
 function hasVariant(nextResult, NON_GAMING_PLAY_QUEST) {
   return new Set(nextResult.config.features).has(NON_GAMING_PLAY_QUEST);
 }
-const QuestConstants = fn(5656);
+const QuestConstants = fn(5661);
 ({ DISCORD_APPLICATION_ID: closure_8, QuestVariants: closure_9, RewardFilterTypes: c10 } = QuestConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/utils/QuestUtils.tsx");

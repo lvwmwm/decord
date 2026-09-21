@@ -1,12 +1,12 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14888
+// Function ID: 14889
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 4756, 576, 10507, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 10508, 2]
 // Exports: default
 
-// Module 14882 (EditIcon)
+// Module 14888 (EditIcon)
 import nativeDefault from "native" /* 576 */;
-import PencilIcon from "PencilIcon" /* 10507 */;
+import PencilIcon from "PencilIcon" /* 10508 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

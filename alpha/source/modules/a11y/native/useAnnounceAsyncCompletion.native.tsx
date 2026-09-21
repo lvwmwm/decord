@@ -1,10 +1,10 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11191
+// Function ID: 11192
 // Name: useAnnounceAsyncCompletion
 // Dependencies: [19, 17, 4607, 1364, 5171, 2]
 // Exports: default
 
-// Module 11190 (useAnnounceAsyncCompletion)
+// Module 11191 (useAnnounceAsyncCompletion)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

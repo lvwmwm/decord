@@ -1,22 +1,22 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10013
+// Function ID: 10014
 // Name: GuildTag
-// Dependencies: [19, 17, 1372, 8201, 21, 4756, 576, 1364, 1115, 4752, 5334, 504, 8433, 4723, 10013, 1980, 2]
+// Dependencies: [19, 17, 1372, 8202, 21, 4756, 576, 1364, 1115, 4752, 5339, 504, 8434, 4723, 10014, 1980, 2]
 
-// Module 10012 (GuildTag)
+// Module 10013 (GuildTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GuildTagUtils from "GuildTagUtils" /* 8433 */;
+import GuildTagUtils from "GuildTagUtils" /* 8434 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const GuildTagBadgeSize = fn(8201).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8202).GuildTagBadgeSize;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);

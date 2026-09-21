@@ -1,9 +1,9 @@
-// Module ID: 7521
-// Function ID: 7522
+// Module ID: 7523
+// Function ID: 7524
 // Name: SearchMessageStore
 // Dependencies: [502, 2041, 4405, 1074, 4656, 4978, 4407, 504, 573, 2]
 
-// Module 7521 (SearchMessageStore)
+// Module 7523 (SearchMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4656 */;

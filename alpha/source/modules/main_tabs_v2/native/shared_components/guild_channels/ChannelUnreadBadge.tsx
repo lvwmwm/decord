@@ -1,17 +1,17 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 16372
+// Function ID: 16373
 // Name: ChannelUnreadBadge
-// Dependencies: [19, 17, 10373, 4938, 21, 4756, 10376, 5193, 8111, 2]
+// Dependencies: [19, 17, 10374, 4938, 21, 4756, 10377, 5193, 8113, 2]
 
-// Module 16366 (ChannelUnreadBadge)
+// Module 16372 (ChannelUnreadBadge)
 import useFontScale from "useFontScale" /* 5193 */;
-import BadgeDefault from "Badge" /* 8111 */;
-import ChannelListLayout from "ChannelListLayout" /* 10376 */;
+import BadgeDefault from "Badge" /* 8113 */;
+import ChannelListLayout from "ChannelListLayout" /* 10377 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const MUTED_OPACITY_CONTENT = fn(10373).MUTED_OPACITY_CONTENT;
+const MUTED_OPACITY_CONTENT = fn(10374).MUTED_OPACITY_CONTENT;
 const UnreadSetting = fn(4938).UnreadSetting;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
@@ -39,13 +39,13 @@ export default noop.memo(function ChannelUnreadBadge(panelVariant) {
     const unreadBadge = layoutStyles.unreadBadge;
     const obj2 = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(10376).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp2(10377).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj2.style = items;
     const obj3 = { classic: flag, size: null, badgeStyle: null };
-    const tmp2Result = tmp2(10376);
+    const tmp2Result = tmp2(10377);
     const tmp9 = View;
     const _Math = Math;
-    obj3.size = tmp2(8111).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
+    obj3.size = tmp2(8113).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);
     if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
       let num2 = MUTED_OPACITY_CONTENT;
     } else {

@@ -1,15 +1,15 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8156
+// Function ID: 8157
 // Name: ConversationNavigator
-// Dependencies: [19, 21, 8156, 7240, 8166, 8167, 576, 8182, 13552, 4614, 2]
+// Dependencies: [19, 21, 8157, 7245, 8167, 8168, 576, 8183, 13554, 4614, 2]
 // Exports: default, openConversationNavigator
 
-// Module 8155 (ConversationNavigator)
+// Module 8156 (ConversationNavigator)
 import nativeDefault from "native" /* 576 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import Navigator from "Navigator" /* 7240 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8166 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8167 */;
+import Navigator from "Navigator" /* 7245 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8167 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8168 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const NativeStackNavigator = fn(8156);
+const NativeStackNavigator = fn(8157);
 const Screen = NativeStackNavigator.createNativeStackNavigator();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigator.tsx");

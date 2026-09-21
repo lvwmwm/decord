@@ -1,13 +1,13 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15152
+// Function ID: 15153
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 4756, 576, 8865, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 8866, 4752, 2]
 // Exports: default
 
-// Module 15146 (FamilyCenterInlineWarningNotice)
+// Module 15152 (FamilyCenterInlineWarningNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import WarningIcon from "WarningIcon" /* 8865 */;
+import WarningIcon from "WarningIcon" /* 8866 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

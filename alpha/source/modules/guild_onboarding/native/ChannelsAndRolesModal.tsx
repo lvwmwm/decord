@@ -1,15 +1,15 @@
-// Module ID: 11798
-// Function ID: 11799
+// Module ID: 11800
+// Function ID: 11801
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2063, 7341, 21, 4756, 576, 563, 7575, 9889, 1115, 9890, 11799, 11805, 11187, 2]
+// Dependencies: [32, 19, 17, 2063, 7346, 21, 4756, 576, 563, 7577, 9890, 1115, 9891, 11801, 11807, 11188, 2]
 // Exports: default
 
-// Module 11798 (ChannelsAndRolesModal)
+// Module 11800 (ChannelsAndRolesModal)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7575 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11187 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7577 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11188 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
@@ -71,7 +71,7 @@ function ChannelsAndRolesScreen(guildId) {
   }
 }
 const View = fn(17).View;
-const GuildOnboardingTab = fn(7341).GuildOnboardingTab;
+const GuildOnboardingTab = fn(7346).GuildOnboardingTab;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4756);

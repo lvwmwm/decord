@@ -1,16 +1,16 @@
-// Module ID: 17947
-// Function ID: 17948
+// Module ID: 17958
+// Function ID: 17959
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 12115, 21, 4756, 10355, 1115, 5899, 4752, 5817, 6850, 5816, 2]
+// Dependencies: [32, 19, 17, 12117, 21, 4756, 10356, 1115, 5904, 4752, 5822, 6855, 5821, 2]
 // Exports: default
 
-// Module 17947 (MentionSpamTriggerFields)
+// Module 17958 (MentionSpamTriggerFields)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const Constants = fn(12115);
+const Constants = fn(12117);
 ({ MAX_MENTION_SPAM_LIMIT: hasOwnProperty, MIN_MENTION_SPAM_LIMIT: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

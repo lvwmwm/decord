@@ -1,13 +1,13 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 10553
+// Function ID: 10554
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 2105, 1372, 10553, 1074, 21, 4756, 576, 1115, 2108, 1241, 9409, 7213, 10554, 4752, 5186, 2]
+// Dependencies: [19, 17, 2105, 1372, 10554, 1074, 21, 4756, 576, 1115, 2108, 1241, 9410, 7218, 10555, 4752, 5186, 2]
 // Exports: default
 
-// Module 10552 (NsfwGateGuild)
+// Module 10553 (NsfwGateGuild)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9409 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 9410 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -15,7 +15,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const NsfwGateSource = fn(10553).NsfwGateSource;
+const NsfwGateSource = fn(10554).NsfwGateSource;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, HelpdeskArticles: c10 } = Constants);
 const jsxProd = fn(21);
@@ -64,9 +64,9 @@ export default function NsfwGateGuild(guildId) {
     AnalyticsUtilsDefault.track(constants.GUILD_NSFW_GATE_VIEWED, obj2);
   }, items);
   let obj3 = { style: tmp.container, children: null };
-  const items1 = [closure_11(currentUser(7213), {}), , , , , ];
+  const items1 = [closure_11(currentUser(7218), {}), , , , , ];
   const formatResult = intl3.format(guildId(1115).t.Z12LNW, obj);
-  items1[1] = closure_11(closure_5, { source: currentUser(10554), style: tmp.image });
+  items1[1] = closure_11(closure_5, { source: currentUser(10555), style: tmp.image });
   items1[2] = closure_11(guildId(4752).Text, { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult });
   items1[3] = closure_11(guildId(4752).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 });
   items1[4] = closure_11(guildId(4752).Text, { style: tmp.description, variant: "text-md/normal", color: "text-default", children: formatResult });

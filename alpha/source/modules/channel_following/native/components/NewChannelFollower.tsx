@@ -1,23 +1,23 @@
-// Module ID: 11587
-// Function ID: 11588
+// Module ID: 11589
+// Function ID: 11590
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 2045, 2041, 2096, 2063, 4395, 5650, 1074, 21, 4756, 576, 8438, 4690, 504, 4909, 5203, 4607, 11588, 11589, 7390, 6864, 5796, 1177, 5239, 4752, 1115, 5184, 5899, 5817, 4723, 9539, 1980, 11590, 8870, 5645, 5186, 11593, 7394, 2]
+// Dependencies: [32, 19, 17, 2045, 2041, 2096, 2063, 4395, 5655, 1074, 21, 4756, 576, 8439, 4690, 504, 4909, 5203, 4607, 11590, 11591, 7395, 6869, 5801, 1177, 5239, 4752, 1115, 5184, 5904, 5822, 4723, 9540, 1980, 11592, 8871, 5650, 5186, 11595, 7399, 2]
 // Exports: default
 
-// Module 11587 (NewChannelFollower)
+// Module 11589 (NewChannelFollower)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11590 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11593 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11592 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11595 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
-import SortedGuildStore from "SortedGuildStore" /* 5650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 
 const require = globalThis.__r;
 
@@ -168,7 +168,7 @@ export default function NewChannelFollower(targetChannelId) {
     obj2.onClose = function onClose() {
       closure_1_4(targetGuildId, targetChannelId);
     };
-    obj.openLazy(asyncRequireImpl(9539, dependencyMap.paths), "NewChannelFollowerGuildPicker", obj2);
+    obj.openLazy(asyncRequireImpl(9540, dependencyMap.paths), "NewChannelFollowerGuildPicker", obj2);
   };
   obj14.children = closure_16(require("TableRow").TableRow, obj15);
   const items6 = [closure_16(require("TableRowGroup").TableRowGroup, obj14), ];

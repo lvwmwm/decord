@@ -1,10 +1,10 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7218
+// Function ID: 7219
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 4690, 4607, 7214, 7215, 2]
+// Dependencies: [19, 17, 21, 4690, 4607, 7219, 7220, 2]
 // Exports: default
 
-// Module 7213 (BackgroundImage)
+// Module 7218 (BackgroundImage)
 import shared from "shared" /* 4607 */;
 import noop from "module_19" /* 19 */;
 
@@ -35,10 +35,10 @@ export default function BackgroundImage(backgroundImageSource) {
     } else {
       let tmp2 = dependencyMap;
       if (obj2.isThemeDark(closure_2)) {
-        tmp2 = 7214;
+        tmp2 = 7219;
         let tmp4Result = tmp4(tmp2);
       } else {
-        tmp4Result = tmp4(7215);
+        tmp4Result = tmp4(7220);
       }
       obj2 = shared;
     }

@@ -1,24 +1,24 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15072
+// Function ID: 15073
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 8232, 1074, 14949, 1115, 1177, 15067, 11723, 14950, 14948, 2]
+// Dependencies: [19, 8233, 1074, 14955, 1115, 1177, 15073, 11725, 14956, 14954, 2]
 
-// Module 15066 (AccountViewBackupCodesSetting)
+// Module 15072 (AccountViewBackupCodesSetting)
 import util from "util" /* 1115 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14949 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14955 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ NOOP_NULL: closure_4, UserSettingsSections } = Constants);
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.xZEzbu);
   },
-  parent: fn(8232).MobileUserSettings.ACCOUNT,
-  usePredicate: fn(14950).useIs2FAEnabled,
+  parent: fn(8233).MobileUserSettings.ACCOUNT,
+  usePredicate: fn(14956).useIs2FAEnabled,
   usePreNavigationAction: function useOnViewBackups() {
     return noop.useCallback((arg0) => {
       closure_0 = arg0;
@@ -50,7 +50,7 @@ const route = SettingBuilders.createRoute({
             const intl4 = onSuccess(1115).intl;
             obj.actionText = intl4.string(onSuccess(1115).t.geKm7t);
             obj.confirmColor = onSuccess(1177).ButtonColors.BRAND;
-            closure_2_1(15067)(obj);
+            closure_2_1(15073)(obj);
           });
         },
         onSuccess,
@@ -68,7 +68,7 @@ const route = SettingBuilders.createRoute({
       let intl3 = closure_0(1115).intl;
       obj.actionText = intl3.string(closure_0(1115).t.PDTjLN);
       obj.confirmColor = closure_0(1177).ButtonColors.BRAND;
-      closure_1(15067)(obj);
+      closure_1(15073)(obj);
       return false;
     }, []);
   },

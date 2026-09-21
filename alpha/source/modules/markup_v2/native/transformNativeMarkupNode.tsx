@@ -1,9 +1,9 @@
-// Module ID: 8366
-// Function ID: 8367
+// Module ID: 8367
+// Function ID: 8368
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5207, 4751, 5333, 8367, 8368, 8369, 8371, 8372, 2]
+// Dependencies: [32, 5207, 4751, 5338, 8368, 8369, 8370, 8372, 8373, 2]
 
-// Module 8366 (transformNativeMarkupNode)
+// Module 8367 (transformNativeMarkupNode)
 import MarkupTypes from "MarkupTypes" /* 5207 */;
 import _slicedToArray from "module_32" /* 32 */;
 

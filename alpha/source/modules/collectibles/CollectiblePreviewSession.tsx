@@ -1,10 +1,10 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11356
+// Function ID: 11357
 // Name: CollectiblePreviewSession
 // Dependencies: [2]
 // Exports: commitCollectiblePreview, currentPreviewGeneration
 
-// Module 11354 (CollectiblePreviewSession)
+// Module 11356 (CollectiblePreviewSession)
 import size from "module_2" /* 2 */;
 
 let closure_0 = 0;

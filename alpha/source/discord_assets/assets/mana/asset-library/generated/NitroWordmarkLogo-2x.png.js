@@ -1,8 +1,8 @@
-// Module ID: 6544
-// Function ID: 6545
+// Module ID: 6549
+// Function ID: 6550
 // Dependencies: [2]
 
-// Module 6544
+// Module 6549
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWordmarkLogo-2x.png.js");

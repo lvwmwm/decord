@@ -1,12 +1,12 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16466
+// Function ID: 16467
 // Name: useMemoWithEqualityFunction
-// Dependencies: [19, 16461, 2]
+// Dependencies: [19, 16467, 2]
 // Exports: default
 
-// Module 16460 (useMemoWithEqualityFunction)
+// Module 16466 (useMemoWithEqualityFunction)
 import _mod19 from "module_19" /* 19 */;
-import useInitRefDefault from "useInitRef" /* 16461 */;
+import useInitRefDefault from "useInitRef" /* 16467 */;
 import size from "module_2" /* 2 */;
 
 const useRef = _mod19.useRef;

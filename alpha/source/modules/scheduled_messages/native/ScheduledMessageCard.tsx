@@ -1,16 +1,16 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12467
+// Function ID: 12468
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 2041, 1074, 21, 4756, 576, 504, 1101, 4959, 5819, 12466, 5789, 12467, 10367, 4752, 1115, 8086, 12468, 12460, 12469, 2]
+// Dependencies: [19, 17, 2041, 1074, 21, 4756, 576, 504, 1101, 4959, 5824, 12468, 5794, 12469, 10368, 4752, 1115, 8088, 12470, 12462, 12471, 2]
 
-// Module 12465 (ScheduledMessageCard)
+// Module 12467 (ScheduledMessageCard)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8086 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12460 */;
-import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 12468 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 12469 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8088 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12462 */;
+import ForLaterCardStatusHeader from "ForLaterCardStatusHeader" /* 12470 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 12471 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
@@ -58,11 +58,11 @@ export default noop.memo(function ScheduledMessageCard(scheduledMessage) {
     const obj3 = { scheduledMessage, isPendingRemoval };
     const items1 = [closure_7(ScheduledMessageCardStatusHeader, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(tmp2(12466).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(tmp2(12468).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(5789).ActivityIndicator, { size: "small" }) };
+      const obj6 = { style: tmp.pendingRemoval, children: tmp10(tmp2(5794).ActivityIndicator, { size: "small" }) };
       let tmp10Result = tmp10(tmp12, obj6);
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: null };
@@ -70,7 +70,7 @@ export default noop.memo(function ScheduledMessageCard(scheduledMessage) {
       if (length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: null };
         const obj9 = { size: "xxs", color: stateFromStores(576).colors.TEXT_MUTED };
-        const items2 = [tmp10(tmp2(10367).AttachmentIcon, obj9), ];
+        const items2 = [tmp10(tmp2(10368).AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: null };
         const intl = tmp2(1115).intl;
         const obj11 = { count: length };
@@ -80,11 +80,11 @@ export default noop.memo(function ScheduledMessageCard(scheduledMessage) {
         tmp9Result = tmp9(tmp12, obj8);
       }
       obj7.footer = tmp9Result;
-      tmp10Result = tmp10(tmp2(12467).ForLaterMessageRow, obj7);
+      tmp10Result = tmp10(tmp2(12469).ForLaterMessageRow, obj7);
     }
     items1[3] = tmp10Result;
     obj2.children = items1;
-    return closure_8(tmp2(5819).Card, obj2);
+    return closure_8(tmp2(5824).Card, obj2);
   }
   const obj = scheduledMessage(504);
 });

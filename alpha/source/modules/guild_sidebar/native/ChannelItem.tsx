@@ -1,16 +1,16 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16455
+// Function ID: 16456
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 4796, 4405, 1372, 1074, 2048, 4938, 21, 4756, 576, 5653, 12631, 1397, 5799, 16450, 5286, 5239, 504, 1177, 5219, 16451, 4909, 1101, 2]
+// Dependencies: [109, 19, 17, 4796, 4405, 1372, 1074, 2048, 4938, 21, 4756, 576, 5658, 12633, 1397, 5804, 16456, 5293, 5239, 504, 1177, 5219, 16457, 4909, 1101, 2]
 
-// Module 16449 (ChannelItem)
+// Module 16455 (ChannelItem)
 import nativeDefault from "native" /* 576 */;
 import router_utils from "router_utils" /* 1101 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 5286 */;
-import BaseChannelItem from "BaseChannelItem" /* 12631 */;
-import _modDef16450 from "module_16450" /* 16450 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 5293 */;
+import BaseChannelItem from "BaseChannelItem" /* 12633 */;
+import _modDef16456 from "module_16456" /* 16456 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4796 */;
@@ -63,12 +63,12 @@ function ChannelIcon(arg0) {
       const channelIconSource = AvatarUtilsDefault.getChannelIconSource(obj6);
       if (null != channelIconSource) {
         const obj7 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return map1(tmp5(5799), obj7);
+        return map1(tmp5(5804), obj7);
       }
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = _modDef16450;
+      let tmp12 = _modDef16456;
       let BookCheckIcon = BookCheckIcon2.BookCheckIcon;
       let tmp9 = require;
     } else {
@@ -92,7 +92,7 @@ function ChannelIcon(arg0) {
       obj19 = {};
     }
     const merged = Object.assign(obj19);
-    return map1(tmp9(12631).BaseChannelIcon, obj10);
+    return map1(tmp9(12633).BaseChannelIcon, obj10);
   }
 }
 function DMChannelIcon(userId) {
@@ -135,9 +135,9 @@ obj.avatarStatus = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }
 obj.groupDmAvatar = { width: 20, height: 20, borderRadius: 10, marginRight: 8 };
 obj.channelInfoContainer = { paddingStart: 4 };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj.avatarStatusSelected = { backgroundColor: fn(5653).DARK_393C42_LIGHT_DEE0E4 };
+obj.avatarStatusSelected = { backgroundColor: fn(5658).DARK_393C42_LIGHT_DEE0E4 };
 let closure_16 = createStyles.createStyles(obj);
-let obj5 = { backgroundColor: fn(5653).DARK_393C42_LIGHT_DEE0E4 };
+let obj5 = { backgroundColor: fn(5658).DARK_393C42_LIGHT_DEE0E4 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/ChannelItem.tsx");
 

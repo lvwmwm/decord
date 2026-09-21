@@ -1,11 +1,11 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12113
+// Function ID: 12114
 // Name: BanConfirmModal
-// Dependencies: [19, 21, 11185, 11187, 1115, 12104, 2]
+// Dependencies: [19, 21, 11186, 11188, 1115, 12106, 2]
 // Exports: default
 
-// Module 12111 (BanConfirmModal)
-import BanConfirmDefault from "BanConfirm" /* 12104 */;
+// Module 12113 (BanConfirmModal)
+import BanConfirmDefault from "BanConfirm" /* 12106 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

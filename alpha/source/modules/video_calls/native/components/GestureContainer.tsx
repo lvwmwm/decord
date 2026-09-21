@@ -1,10 +1,10 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 10278
+// Function ID: 10279
 // Name: GestureContainer
-// Dependencies: [19, 17, 9639, 9646, 21, 4756, 576, 1478, 4492, 6892, 4959, 4757, 1177, 2]
+// Dependencies: [19, 17, 9640, 9647, 21, 4756, 576, 1478, 4492, 6897, 4959, 4757, 1177, 2]
 // Exports: default
 
-// Module 10277 (GestureContainer)
+// Module 10278 (GestureContainer)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
@@ -14,8 +14,8 @@ import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const useChannelCallStore = fn(9639).useChannelCallStore;
-const Constants = fn(9646);
+const useChannelCallStore = fn(9640).useChannelCallStore;
+const Constants = fn(9647);
 ({ PAN_GESTURE_FAIL_OFFSET_Y: hasOwnProperty, SWIPE_TO_CHAT_ACTIVE_OFFSET: metroRequire } = Constants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
@@ -33,7 +33,7 @@ export default function GestureContainer(children) {
   const height = sharedValue(1478)().height;
   const tmp2 = useChannelCallStore((isGestureEnabled) => isGestureEnabled.isGestureEnabled);
   sharedValue = height(4492).useSharedValue(0);
-  const Gesture = height(6892).Gesture;
+  const Gesture = height(6897).Gesture;
   let obj = height(4492);
   const PanResult = Gesture.Pan();
   class S {
@@ -84,6 +84,6 @@ export default function GestureContainer(children) {
   let obj4 = { style: tmp.background, children: null };
   const animatedStyle = obj8.useAnimatedStyle(fn2);
   let obj3 = { interpolate: height(4492).interpolate, position: sharedValue, height };
-  obj4.children = jsx(height(6892).GestureDetector, { gesture: failOffsetXResult, children: jsx(sharedValue(4492).View, { style: animatedStyle, children: children.children }) });
+  obj4.children = jsx(height(6897).GestureDetector, { gesture: failOffsetXResult, children: jsx(sharedValue(4492).View, { style: animatedStyle, children: children.children }) });
   return <View style={tmp.background}>{null}</View>;
 };

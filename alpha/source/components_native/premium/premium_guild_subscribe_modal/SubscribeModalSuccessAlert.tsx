@@ -1,10 +1,10 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13886
+// Function ID: 13887
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 2063, 7672, 21, 4756, 576, 13881, 13882, 504, 4690, 5205, 1115, 5109, 5646, 5198, 1094, 4607, 13883, 13884, 4752, 2]
+// Dependencies: [32, 19, 17, 2063, 7674, 21, 4756, 576, 13887, 13888, 504, 4690, 5205, 1115, 5109, 5651, 5198, 1094, 4607, 13889, 13890, 4752, 2]
 // Exports: default
 
-// Module 13880 (SubscribeModalSuccessAlert)
+// Module 13886 (SubscribeModalSuccessAlert)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
@@ -13,9 +13,9 @@ import useThemeDefault from "useTheme" /* 4690 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5646 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13881 */;
-import _mod13882 from "module_13882" /* 13882 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5651 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 13887 */;
+import _mod13888 from "module_13888" /* 13888 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
@@ -33,7 +33,7 @@ class PremiumPaymentGuildAnimation {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
-const Gradients = fn(7672).Gradients;
+const Gradients = fn(7674).Gradients;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);
@@ -115,9 +115,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const tmp14 = LinearGradientDefault;
   const tmp15 = closure_6;
   if (tmp2Result.isThemeLight(tmp9)) {
-    let tmp8Result = tmp8(13883);
+    let tmp8Result = tmp8(13889);
   } else {
-    tmp8Result = tmp8(13884);
+    tmp8Result = tmp8(13890);
   }
   obj6.source = tmp8Result;
   obj5.children = closure_9(tmp15, obj6);

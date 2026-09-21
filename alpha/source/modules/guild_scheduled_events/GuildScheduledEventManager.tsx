@@ -1,14 +1,14 @@
-// Module ID: 9878
-// Function ID: 9879
+// Module ID: 9879
+// Function ID: 9880
 // Name: GuildScheduledEventManager
-// Dependencies: [5, 4577, 7766, 9787, 7358, 2]
+// Dependencies: [5, 4577, 7768, 9788, 7363, 2]
 
-// Module 9878 (GuildScheduledEventManager)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9787 */;
+// Module 9879 (GuildScheduledEventManager)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9788 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7766 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7768 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 function getGuildEventsForCurrentUser() {
   const self = this;

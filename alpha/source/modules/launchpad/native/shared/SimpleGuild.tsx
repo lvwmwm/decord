@@ -1,13 +1,13 @@
-// Module ID: 17428
-// Function ID: 17429
+// Module ID: 17439
+// Function ID: 17440
 // Name: SimpleGuild
-// Dependencies: [19, 17, 2059, 7870, 2063, 1074, 21, 4756, 5796, 17429, 504, 17430, 17432, 1115, 16667, 5282, 576, 17431, 2]
+// Dependencies: [19, 17, 2059, 7872, 2063, 1074, 21, 4756, 5801, 17440, 504, 17441, 17443, 1115, 16673, 5289, 576, 17442, 2]
 // Exports: default
 
-// Module 17428 (SimpleGuild)
+// Module 17439 (SimpleGuild)
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;

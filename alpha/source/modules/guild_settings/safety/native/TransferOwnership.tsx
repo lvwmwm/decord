@@ -1,13 +1,13 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 12102
+// Function ID: 12103
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1372, 12099, 1074, 21, 4756, 576, 4457, 1484, 504, 38, 9854, 12097, 4453, 4908, 5796, 4752, 12101, 1177, 1115, 4600, 5899, 5816, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 12101, 1074, 21, 4756, 576, 4457, 1484, 504, 38, 9855, 12099, 4453, 4908, 5801, 4752, 12103, 1177, 1115, 4600, 5904, 5821, 5186, 2]
 // Exports: default
 
-// Module 12100 (TransferOwnership)
+// Module 12102 (TransferOwnership)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,7 +16,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Image: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
-const TransferOwnershipConstants = fn(12099);
+const TransferOwnershipConstants = fn(12101);
 ({ TransferOwnershipModalScenes: c10, TransferOwnershipVerificationTypes: closure_11 } = TransferOwnershipConstants);
 const NOOP = fn(1074).NOOP;
 const jsxProd = fn(21);
@@ -75,7 +75,7 @@ export default function TransferOwnership(guild) {
               if (null != tmp27.email) {
                 v1 = 1;
                 dependencyMap = 1;
-                const obj6 = { value: v1(9854).sendTransferOwnershipPincode(user.id), done: false };
+                const obj6 = { value: v1(9855).sendTransferOwnershipPincode(user.id), done: false };
                 return obj6;
               }
             }
@@ -83,16 +83,16 @@ export default function TransferOwnership(guild) {
             if (mfaEnabled.mfaEnabled) {
               MFA = constants2.MFA;
             }
-            const obj4 = v1(9854);
-            v1(9854).transferOwnership(user.id, id.id, MFA).then(() => {
-              v1(12097).close();
-              const obj = v1(12097);
-              v1(9854).close();
-              const obj2 = v1(9854);
+            const obj4 = v1(9855);
+            v1(9855).transferOwnership(user.id, id.id, MFA).then(() => {
+              v1(12099).close();
+              const obj = v1(12099);
+              v1(9855).close();
+              const obj2 = v1(9855);
               const result = closure_1_0(4453).showTransferOwnershipSuccess();
             }, NOOP);
             dependencyMap = 3;
-            const transferOwnershipResult = v1(9854).transferOwnership(user.id, id.id, MFA);
+            const transferOwnershipResult = v1(9855).transferOwnership(user.id, id.id, MFA);
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;
@@ -163,9 +163,9 @@ export default function TransferOwnership(guild) {
   const obj8 = { style: tmp5.header, children: null };
   const obj7 = { paddingTop: toUser(576).space.PX_16, paddingHorizontal: token };
   const tmp12 = closure_8;
-  const items1 = [closure_13(c7, { source: toUser(12101), style: tmp5.arrow }), , , ];
+  const items1 = [closure_13(c7, { source: toUser(12103), style: tmp5.arrow }), , , ];
   const obj10 = { style: tmp5.avatarsWrapper, children: null };
-  const obj9 = { source: toUser(12101), style: tmp5.arrow };
+  const obj9 = { source: toUser(12103), style: tmp5.arrow };
   const items2 = [closure_13(guild(1177).Avatar, { user: stateFromStores, guildId: guild.id, size: guild(1177).AvatarSizes.XXLARGE }), ];
   const obj12 = { style: tmp5.avatarFauxBorder, children: null };
   const obj13 = { user: toUser, guildId: "r", size: guild(1177).AvatarSizes.XXLARGE, style: tmp5.otherUserAvatar };
@@ -224,8 +224,8 @@ export default function TransferOwnership(guild) {
     obj18.onPress = function handleConfirmToggle(arg0) {
       _undefined(arg0);
     };
-    obj17.children = tmp11(tmp(5816).TableCheckboxRow, obj18);
-    items3[1] = tmp11(tmp(5899).TableRowGroup, obj17);
+    obj17.children = tmp11(tmp(5821).TableCheckboxRow, obj18);
+    items3[1] = tmp11(tmp(5904).TableRowGroup, obj17);
     const obj20 = {
       onPress: function handleTransfer() {
           const self = this;

@@ -1,10 +1,10 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 9914
+// Function ID: 9915
 // Name: AudioSettingsUtils
-// Dependencies: [1084, 4811, 9914, 5227, 2]
+// Dependencies: [1084, 4811, 9915, 5227, 2]
 // Exports: coerceAudioContextForProto, snapVolumeToDefault
 
-// Module 9913 (AudioSettingsUtils)
+// Module 9914 (AudioSettingsUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5227 */;
@@ -15,9 +15,9 @@ let result = size.fileFinishedImporting("modules/user_settings/voice/AudioSettin
 
 export const snapVolumeToDefault = function snapVolumeToDefault(USER, DEFAULT) {
   if (DEFAULT === BaseConnectionEvent.MediaEngineContextTypes.STREAM) {
-    USER = tmp(9914).AudioSettingsDefaultVolumes.STREAM;
+    USER = tmp(9915).AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = tmp(9914).AudioSettingsDefaultVolumes.USER;
+    USER = tmp(9915).AudioSettingsDefaultVolumes.USER;
   }
   let tmp3 = USER;
   const result = PerceptualVolumeUtils.amplitudeToPerceptual(USER);

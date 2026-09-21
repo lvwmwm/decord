@@ -1,19 +1,19 @@
-// Module ID: 10923
-// Function ID: 10924
+// Module ID: 10924
+// Function ID: 10925
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8460, 10924, 1374, 1074, 21, 4756, 576, 672, 1484, 1612, 1478, 10958, 5171, 5842, 504, 11001, 10999, 8452, 11003, 10921, 11006, 11009, 8145, 4492, 1177, 4757, 11017, 7422, 11018, 11052, 9649, 1115, 5892, 5799, 11306, 5198, 5894, 4752, 2]
+// Dependencies: [32, 19, 17, 8461, 10925, 1374, 1074, 21, 4756, 576, 672, 1484, 1612, 1478, 10959, 5171, 5847, 504, 11002, 11000, 8453, 11004, 10922, 11007, 11010, 8146, 4492, 1177, 4757, 11018, 7427, 11019, 11053, 9650, 1115, 5897, 5804, 11308, 5198, 5899, 4752, 2]
 // Exports: default
 
-// Module 10923 (PremiumGiftPlanSelect)
+// Module 10924 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4757 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 11009 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 11010 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8460 */;
-import PromotionsStore from "PromotionsStore" /* 10924 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8461 */;
+import PromotionsStore from "PromotionsStore" /* 10925 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -509,7 +509,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result8 = tmp4(tmp2[31]);
       }
     } else {
-      const obj44 = { style: tmp14.avatar, guildId: "r", size: "PX_16", user: null };
+      const obj44 = { style: tmp14.avatar, guildId: "r", size: 1, user: 1 };
       const AvatarSizes = tmp(tmp2[27]).AvatarSizes;
       obj44.size = enabled ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;
       obj44.user = recipientUser;

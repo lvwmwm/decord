@@ -1,21 +1,21 @@
-// Module ID: 10563
-// Function ID: 10564
+// Module ID: 10564
+// Function ID: 10565
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7672, 21, 4756, 576, 10564, 5198, 1094, 5306, 2]
+// Dependencies: [19, 17, 7674, 21, 4756, 576, 10565, 5198, 1094, 5313, 2]
 // Exports: default
 
-// Module 10563 (PremiumUpsellSectionDivider)
+// Module 10564 (PremiumUpsellSectionDivider)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10564 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10565 */;
 import noop from "module_19" /* 19 */;
 
-const LockIcon2 = LockIcon(5306);
+const LockIcon2 = LockIcon(5313);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const Gradients = fn(7672).Gradients;
+const Gradients = fn(7674).Gradients;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4756);

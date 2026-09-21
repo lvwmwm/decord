@@ -1,10 +1,10 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 5321
+// Function ID: 5322
 // Name: AppsWarningIcon
 // Dependencies: [19, 21, 576, 4456, 5266, 2]
 // Exports: AppsWarningIcon
 
-// Module 5314 (AppsWarningIcon)
+// Module 5321 (AppsWarningIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5266 from "module_5266" /* 5266 */;

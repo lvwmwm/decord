@@ -1,10 +1,10 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 8369
+// Function ID: 8370
 // Name: transformNativeMarkupTimestamp
 // Dependencies: [5234, 5207, 2]
 // Exports: transformNativeTimestamp
 
-// Module 8368 (transformNativeMarkupTimestamp)
+// Module 8369 (transformNativeMarkupTimestamp)
 import TimestampUtils from "TimestampUtils" /* 5234 */;
 import size from "module_2" /* 2 */;
 

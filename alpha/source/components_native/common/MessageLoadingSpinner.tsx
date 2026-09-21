@@ -1,12 +1,12 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9700
+// Function ID: 9701
 // Name: MessageLoadingSpinner
-// Dependencies: [19, 17, 21, 1364, 4457, 576, 5789, 2]
+// Dependencies: [19, 17, 21, 1364, 4457, 576, 5794, 2]
 // Exports: default
 
-// Module 9699 (MessageLoadingSpinner)
+// Module 9700 (MessageLoadingSpinner)
 import nativeDefault from "native" /* 576 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5789 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5794 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,7 +1,7 @@
 // Module ID: 4898
 // Function ID: 4899
 // Name: StreamActionCreators
-// Dependencies: [5, 4773, 4899, 4900, 4778, 502, 2041, 2063, 2095, 4775, 1074, 4798, 573, 4808, 38, 4901, 4912, 4957, 4958, 1271, 1091, 4949, 1249, 9706, 5623, 4769, 10001, 2]
+// Dependencies: [5, 4773, 4899, 4900, 4778, 502, 2041, 2063, 2095, 4775, 1074, 4798, 573, 4808, 38, 4901, 4912, 4957, 4958, 1271, 1091, 4949, 1249, 9707, 5628, 4769, 10002, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
 // Module 4898 (StreamActionCreators)
@@ -13,9 +13,9 @@ import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
 import ChannelUtils from "ChannelUtils" /* 4901 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
 import transitionToStreamDefault from "transitionToStream" /* 4958 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5623 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 9706 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 10001 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 9707 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 10002 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GameConsoleStore from "GameConsoleStore" /* 4773 */;
 import PopoutWindowStore from "PopoutWindowStore" /* 4899 */;

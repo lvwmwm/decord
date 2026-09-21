@@ -1,12 +1,12 @@
-// Module ID: 15284
-// Function ID: 15285
+// Module ID: 15290
+// Function ID: 15291
 // Name: useBountiesRecapOrbCount
-// Dependencies: [32, 19, 4492, 15283, 2]
+// Dependencies: [32, 19, 4492, 15289, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 15284 (useBountiesRecapOrbCount)
+// Module 15290 (useBountiesRecapOrbCount)
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15283 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15289 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

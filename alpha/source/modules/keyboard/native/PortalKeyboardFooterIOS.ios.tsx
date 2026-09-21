@@ -1,10 +1,10 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10533
+// Function ID: 10534
 // Name: PortalKeyboardFooterIOS
 // Dependencies: [19, 21, 4756, 576, 1612, 1626, 4624, 4492, 1610, 1094, 4629, 2]
 // Exports: default
 
-// Module 10532 (PortalKeyboardFooterIOS)
+// Module 10533 (PortalKeyboardFooterIOS)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;

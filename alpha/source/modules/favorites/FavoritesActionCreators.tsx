@@ -1,10 +1,10 @@
-// Module ID: 10480
-// Function ID: 10481
+// Module ID: 10481
+// Function ID: 10482
 // Name: FavoritesActionCreators
-// Dependencies: [5, 2033, 2045, 2041, 4395, 2095, 4577, 2044, 2054, 1074, 1085, 1186, 1217, 12, 10481, 10484, 5108, 1115, 2024, 11, 10490, 10491, 2066, 1101, 10494, 10495, 10497, 2]
+// Dependencies: [5, 2033, 2045, 2041, 4395, 2095, 4577, 2044, 2054, 1074, 1085, 1186, 1217, 12, 10482, 10485, 5108, 1115, 2024, 11, 10491, 10492, 2066, 1101, 10495, 10496, 10498, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 10480 (FavoritesActionCreators)
+// Module 10481 (FavoritesActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
@@ -12,10 +12,10 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import wrappers from "wrappers" /* 1217 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import FavoritesHooks from "FavoritesHooks" /* 10481 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10490 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10494 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10495 */;
+import FavoritesHooks from "FavoritesHooks" /* 10482 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10491 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 10495 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10496 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
@@ -142,7 +142,7 @@ function getReachedLimit(favoriteChannels, arg1) {
 function showLimitReachedAlert(limit) {
   limit = limit.limit;
   if (limit.canUpsell) {
-    tmp(10484)(limit);
+    tmp(10485)(limit);
   } else {
     const obj = { title: null, body: null };
     const intl = util.intl;
@@ -364,7 +364,7 @@ let closure_28 = async function _addFavoriteChannelsToParent(arg0, value) {
                                   let tmp43 = closure_2_18(favoriteChannels.favoriteChannels);
                                   let tmp46 = closure_2_19(favoriteChannels.favoriteChannels, tmp7);
                                   flag = true;
-                                  let obj3 = closure_0(10490);
+                                  let obj3 = closure_0(10491);
                                   let type;
                                   let tmp49 = closure_1_2;
                                   if (tmp31 != null) {
@@ -385,7 +385,7 @@ let closure_28 = async function _addFavoriteChannelsToParent(arg0, value) {
                                 if (flag) {
                                   let BoolValue = closure_0(1217).BoolValue;
                                   favoriteChannels.guildVisible = BoolValue.create({ value: true });
-                                  let obj4 = closure_0(10490);
+                                  let obj4 = closure_0(10491);
                                   let str = "auto";
                                   let result1 = obj4.trackFavoritesGuildVisibilitySettingToggled("auto", true);
                                 }
@@ -539,7 +539,7 @@ let closure_31 = async function _addFavoriteCategory(arg0, value) {
                             const obj2 = { limit: tmp5, canUpsell: false };
                             let tmp6 = obj2;
                           } else {
-                            const favoritesAccess = tmp(10481).getFavoritesAccess();
+                            const favoritesAccess = tmp(10482).getFavoritesAccess();
                             const favoriteLimit = favoritesAccess.favoriteLimit;
                             tmp6 = null;
                             if (favoriteLimit > 0) {
@@ -553,12 +553,12 @@ let closure_31 = async function _addFavoriteCategory(arg0, value) {
                                 tmp4Result = tmp4(12);
                               }
                             }
-                            const tmpResult = tmp(10481);
+                            const tmpResult = tmp(10482);
                           }
                           if (null != tmp6) {
                             const limit = tmp6.limit;
                             if (tmp6.canUpsell) {
-                              tmp4(10484)(limit);
+                              tmp4(10485)(limit);
                             } else {
                               const obj4 = { title: null, body: null };
                               const intl = tmp(1115).intl;
@@ -806,7 +806,7 @@ export const setFavoritesAutoAddJoinedThreads = function setFavoritesAutoAddJoin
               favoritesAccess = { limit: tmp21, canUpsell: false };
               let tmp11 = favoritesAccess;
             } else {
-              favoritesAccess = tmp18(10481).getFavoritesAccess();
+              favoritesAccess = tmp18(10482).getFavoritesAccess();
               const favoriteLimit = favoritesAccess.favoriteLimit;
               tmp11 = null;
               if (favoriteLimit > 0) {
@@ -822,7 +822,7 @@ export const setFavoritesAutoAddJoinedThreads = function setFavoritesAutoAddJoin
                   const tmp7Result = tmp7(12);
                 }
               }
-              const tmp18Result = tmp18(10481);
+              const tmp18Result = tmp18(10482);
             }
             if (null == tmp11) {
               str = createFavoriteCategory;
@@ -837,7 +837,7 @@ export const setFavoritesAutoAddJoinedThreads = function setFavoritesAutoAddJoin
               tmp7(5108).show(obj);
               const tmp7Result2 = tmp7(5108);
             }
-            str = tmp7(10484)(favoritesAccess);
+            str = tmp7(10485)(favoritesAccess);
             obj5 = _modDef12;
           }
         }

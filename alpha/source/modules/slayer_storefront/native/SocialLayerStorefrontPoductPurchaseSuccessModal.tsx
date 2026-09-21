@@ -1,10 +1,10 @@
-// Module ID: 11272
-// Function ID: 11273
+// Module ID: 11274
+// Function ID: 11275
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 718, 19, 17, 4748, 5722, 7469, 1074, 21, 4756, 576, 4492, 5185, 4757, 4724, 1478, 504, 5337, 7466, 4752, 5186, 1115, 5198, 7363, 5843, 5892, 9105, 7408, 7405, 11273, 7422, 1241, 5203, 11058, 3548, 9014, 4600, 2]
+// Dependencies: [32, 718, 19, 17, 4748, 5727, 7474, 1074, 21, 4756, 576, 4492, 5185, 4757, 4724, 1478, 504, 5342, 7471, 4752, 5186, 1115, 5198, 7368, 5848, 5897, 9106, 7413, 7410, 11275, 7427, 1241, 5203, 11059, 3548, 9015, 4600, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 11272 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 11274 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -14,15 +14,15 @@ import UserUtilsDefault from "UserUtils" /* 4600 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import timing from "timing" /* 4757 */;
 import spring from "spring" /* 5185 */;
-import XSmallIcon from "XSmallIcon" /* 5892 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7422 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7466 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11058 */;
+import XSmallIcon from "XSmallIcon" /* 5897 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7471 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11059 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _toArray from "_toArray" /* 718 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import SKUStore from "SKUStore" /* 5722 */;
+import SKUStore from "SKUStore" /* 5727 */;
 
 const require = globalThis.__r;
 
@@ -311,7 +311,7 @@ function PurchaseSuccessModalBase(sku) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, ScrollView: closure_7, View: closure_8 } = get_ActivityIndicator);
-const numDays = fn(7469).SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM;
+const numDays = fn(7474).SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, HorizontalGradient: map1, VerticalGradient: closure_14 } = Constants);
 const jsxProd = fn(21);

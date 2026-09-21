@@ -1,24 +1,24 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 14927
+// Function ID: 14928
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2105, 7855, 7448, 1074, 1374, 21, 4414, 7402, 7422, 14861, 4723, 14862, 1980, 8434, 1115, 8432, 9426, 8509, 14873, 8430, 6862, 7221, 576, 11411, 14916, 504, 8454, 9629, 8510, 8437, 14224, 14922, 8495, 8506, 4752, 4466, 14923, 11376, 11377, 11417, 14883, 4600, 14884, 14893, 14895, 14896, 14900, 14904, 14892, 9505, 9475, 2]
+// Dependencies: [109, 19, 17, 2105, 7857, 7453, 1074, 1374, 21, 4414, 7407, 7427, 14867, 4723, 14868, 1980, 8435, 1115, 8433, 9427, 8510, 14879, 8431, 6867, 7226, 576, 11413, 14922, 504, 8455, 9630, 8511, 8438, 14230, 14928, 8496, 8507, 4752, 4466, 14929, 11378, 11379, 11419, 14889, 4600, 14890, 14899, 14901, 14902, 14906, 14910, 14898, 9506, 9476, 2]
 // Exports: default
 
-// Module 14921 (GuildProfileEditForm)
+// Module 14927 (GuildProfileEditForm)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7402 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7422 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8432 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8434 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9475 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9505 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14861 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8433 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8435 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9476 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14867 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserProfileStore from "UserProfileStore" /* 7855 */;
+import UserProfileStore from "UserProfileStore" /* 7857 */;
 
 require = fn;
 function EditGuildProfileBanner(user) {
@@ -38,7 +38,7 @@ function EditGuildProfileBanner(user) {
     if (c4) {
       const obj = { user, analyticsLocations, showRemoveBanner: null, removeText: null, onBannerChange: null };
       const tmpResult = tmp(4723);
-      const tmp13 = asyncRequireImpl(14862, dependencyMap.paths);
+      const tmp13 = asyncRequireImpl(14868, dependencyMap.paths);
       banner = undefined;
       if (banner != null) {
         banner = banner.banner;
@@ -57,20 +57,20 @@ function EditGuildProfileBanner(user) {
       obj2.analyticsLocations = analyticsLocations;
       const obj4 = { type: PremiumUpsellTypes.PREMIUM_GUILD_IDENTITY_MODAL };
       obj2.analyticsProperties = obj4;
-      const result = tmp(9426).handleShowUpsellAlert(obj2);
-      const tmpResult2 = tmp(9426);
+      const result = tmp(9427).handleShowUpsellAlert(obj2);
+      const tmpResult2 = tmp(9427);
     }
   };
   let intl = tmp5(1115).intl;
   obj3.editButtonAccessibilityLabel = intl.string(user(1115).t["95hPAe"]);
   obj3.editDisabled = disabled;
   obj2.children = closure_17(UserProfileEditBannerButtonDefault, obj3);
-  return closure_17(user(7402).AnalyticsLocationProvider, obj2);
+  return closure_17(user(7407).AnalyticsLocationProvider, obj2);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 get_ActivityIndicator = fn(17);
 ({ ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const FLOATING_UPSELL_HEIGHT = fn(7448).FLOATING_UPSELL_HEIGHT;
+const FLOATING_UPSELL_HEIGHT = fn(7453).FLOATING_UPSELL_HEIGHT;
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_11, AnalyticsSections } = Constants);
 ({ DISPLAY_NAME_MAX_LENGTH: map1, PRONOUNS_MAX_LENGTH: closure_14, UpsellTypes: closure_15, AnalyticsPages } = Constants);

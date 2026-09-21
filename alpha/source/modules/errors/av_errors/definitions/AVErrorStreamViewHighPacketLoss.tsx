@@ -1,9 +1,9 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18296
+// Function ID: 18297
 // Name: AVErrorStreamViewHighPacketLoss
-// Dependencies: [4778, 502, 4795, 18284, 4808, 9685, 18281, 2]
+// Dependencies: [4778, 502, 4795, 18295, 4808, 9686, 18292, 2]
 
-// Module 18285 (AVErrorStreamViewHighPacketLoss)
+// Module 18296 (AVErrorStreamViewHighPacketLoss)
 import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

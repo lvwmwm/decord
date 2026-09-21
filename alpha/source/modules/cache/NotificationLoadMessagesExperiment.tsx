@@ -1,9 +1,9 @@
-// Module ID: 18267
-// Function ID: 18268
+// Module ID: 18278
+// Function ID: 18279
 // Name: NotificationLoadMessagesExperiment
 // Dependencies: [1434, 2]
 
-// Module 18267 (NotificationLoadMessagesExperiment)
+// Module 18278 (NotificationLoadMessagesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

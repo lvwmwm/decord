@@ -1,16 +1,16 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10023
+// Function ID: 10024
 // Name: components/GameIcon
-// Dependencies: [19, 17, 21, 4756, 576, 1397, 10023, 5334, 10024, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1397, 10024, 5339, 10025, 2]
 // Exports: default
 
-// Module 10022 (components/GameIcon)
+// Module 10023 (components/GameIcon)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import noop from "module_19" /* 19 */;
 
-const Pressables = FireIcon(5334);
-const FireIcon2 = FireIcon(10024);
+const Pressables = FireIcon(5339);
+const FireIcon2 = FireIcon(10025);
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);

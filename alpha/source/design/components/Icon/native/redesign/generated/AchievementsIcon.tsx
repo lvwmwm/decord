@@ -1,13 +1,13 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15869
+// Function ID: 15870
 // Name: AchievementsIcon
-// Dependencies: [19, 21, 576, 4456, 15864, 2]
+// Dependencies: [19, 21, 576, 4456, 15870, 2]
 // Exports: AchievementsIcon
 
-// Module 15863 (AchievementsIcon)
+// Module 15869 (AchievementsIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod15864 from "module_15864" /* 15864 */;
+import _mod15870 from "module_15870" /* 15870 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AchievementsIcon = function AchievementsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15864, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15870, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

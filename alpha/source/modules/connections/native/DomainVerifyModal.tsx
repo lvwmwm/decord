@@ -1,10 +1,10 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9395
+// Function ID: 9396
 // Name: DomainVerifyModal
-// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 1484, 1271, 7363, 4752, 1115, 6842, 9395, 5186, 4959, 5836, 7240, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 1484, 1271, 7368, 4752, 1115, 6847, 9396, 5186, 4959, 5841, 7245, 2]
 // Exports: default
 
-// Module 9394 (DomainVerifyModal)
+// Module 9395 (DomainVerifyModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
@@ -12,8 +12,8 @@ import useNavigation from "useNavigation" /* 1484 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import DomainVerifyUtils from "DomainVerifyUtils" /* 9395 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import DomainVerifyUtils from "DomainVerifyUtils" /* 9396 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -336,7 +336,7 @@ export default function DomainVerifyModal(arg0) {
     const obj2 = { headerTitle: null, headerLeft: null, render: null };
     const intl = onClose(1115).intl;
     obj2.headerTitle = intl.string(onClose(1115).t["7lo8+e"]);
-    obj2.headerLeft = onClose(5836).getHeaderBackButton(onClose);
+    obj2.headerLeft = onClose(5841).getHeaderBackButton(onClose);
     obj2.render = function render() {
       return React6(DomainScreen, { onClose });
     };
@@ -344,8 +344,8 @@ export default function DomainVerifyModal(arg0) {
     const obj4 = { headerTitle: null, headerLeft: null, render: null };
     const intl2 = onClose(1115).intl;
     obj4.headerTitle = intl2.string(onClose(1115).t["7lo8+e"]);
-    const obj3 = onClose(5836);
-    obj4.headerLeft = onClose(5836).getHeaderBackButton(onClose);
+    const obj3 = onClose(5841);
+    obj4.headerLeft = onClose(5841).getHeaderBackButton(onClose);
     obj4.render = function render(domain) {
       return React6(DNSProofScreen, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -353,8 +353,8 @@ export default function DomainVerifyModal(arg0) {
     const obj6 = { headerTitle: null, headerLeft: null, render: null };
     const intl3 = onClose(1115).intl;
     obj6.headerTitle = intl3.string(onClose(1115).t["7lo8+e"]);
-    const obj5 = onClose(5836);
-    obj6.headerLeft = onClose(5836).getHeaderBackButton(onClose);
+    const obj5 = onClose(5841);
+    obj6.headerLeft = onClose(5841).getHeaderBackButton(onClose);
     obj6.render = function render(domain) {
       return React6(HTTPProofScreen, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -362,6 +362,6 @@ export default function DomainVerifyModal(arg0) {
     const obj8 = { screens: obj, initialRouteName: constants2.DOMAIN, headerBackTitle: null };
     const intl4 = onClose(1115).intl;
     obj8.headerBackTitle = intl4.string(onClose(1115).t["13/7kX"]);
-    return closure_8(onClose(7240).Navigator, obj8);
+    return closure_8(onClose(7245).Navigator, obj8);
   }
 };

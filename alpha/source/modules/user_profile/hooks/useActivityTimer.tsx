@@ -1,12 +1,12 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13316
+// Function ID: 13317
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1091, 8403, 2036, 2]
+// Dependencies: [32, 19, 1091, 8404, 2036, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 13314 (useActivityTimer)
+// Module 13316 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1091 */;
-import utils from "utils" /* 8403 */;
+import utils from "utils" /* 8404 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

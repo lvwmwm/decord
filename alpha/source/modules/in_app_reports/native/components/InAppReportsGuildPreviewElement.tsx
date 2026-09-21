@@ -1,15 +1,15 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13199
+// Function ID: 13200
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 4756, 576, 7219, 4605, 4752, 1115, 5796, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 7224, 4605, 4752, 1115, 5801, 2]
 // Exports: default
 
-// Module 13197 (InAppReportsGuildPreviewElement)
+// Module 13199 (InAppReportsGuildPreviewElement)
 import nativeDefault from "native" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7219 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;

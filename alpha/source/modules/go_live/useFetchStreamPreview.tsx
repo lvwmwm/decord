@@ -1,10 +1,10 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 10319
+// Function ID: 10320
 // Name: useFetchStreamPreview
 // Dependencies: [19, 4900, 2041, 4395, 2095, 1085, 504, 4898, 2]
 // Exports: default
 
-// Module 10318 (useFetchStreamPreview)
+// Module 10319 (useFetchStreamPreview)
 import StreamActionCreators from "StreamActionCreators" /* 4898 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 4900 */;

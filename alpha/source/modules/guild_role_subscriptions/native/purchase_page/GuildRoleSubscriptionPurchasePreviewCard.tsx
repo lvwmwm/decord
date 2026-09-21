@@ -1,20 +1,20 @@
-// Module ID: 16888
-// Function ID: 16889
+// Module ID: 16894
+// Function ID: 16895
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2041, 21, 4756, 576, 7219, 4752, 4723, 16889, 1980, 10604, 15504, 1177, 504, 4909, 1115, 5239, 15491, 16884, 5799, 16890, 2]
+// Dependencies: [32, 19, 17, 2041, 21, 4756, 576, 7224, 4752, 4723, 16895, 1980, 10605, 15510, 1177, 504, 4909, 1115, 5239, 15497, 16890, 5804, 16896, 2]
 // Exports: default
 
-// Module 16888 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 16894 (GuildRoleSubscriptionPurchasePreviewCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7219 */;
-import LayoutUtils from "LayoutUtils" /* 10604 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15491 */;
-import EmojiIconDefault from "EmojiIcon" /* 15504 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+import LayoutUtils from "LayoutUtils" /* 10605 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
+import EmojiIconDefault from "EmojiIcon" /* 15510 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -144,19 +144,19 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   const size = first.size;
   const obj7 = { style: tmp.container, children: null };
   const obj8 = { style: tmp.header, children: null };
-  const formattedSubscriptionPlan = listingId(16884).useFormattedSubscriptionPlan(listingId);
-  const obj6 = listingId(16884);
+  const formattedSubscriptionPlan = listingId(16890).useFormattedSubscriptionPlan(listingId);
+  const obj6 = listingId(16890);
   const tmp11 = guildId;
   if (str == null) {
     str = "";
   }
-  const items = [closure_8(guildId(5799), { source: { uri: str }, style: tmp.image }), closure_8(listingId(1177).Spacer, { size: 16 }), ];
+  const items = [closure_8(guildId(5804), { source: { uri: str }, style: tmp.image }), closure_8(listingId(1177).Spacer, { size: 16 }), ];
   const obj10 = { children: null };
   const items1 = [closure_8(listingId(4752).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: _slicedToArray(obj2.useName(listingId), 1)[0] }), closure_8(listingId(1177).Spacer, { size: 4 }), closure_8(listingId(4752).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   obj10.children = items1;
   items[2] = closure_9(closure_6, obj10);
   obj8.children = items;
-  const items2 = [closure_9(closure_6, obj8), closure_8(listingId(1177).Spacer, { size: 16 }), closure_8(tmp11(16890), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj8), closure_8(listingId(1177).Spacer, { size: 16 }), closure_8(tmp11(16896), { listingId }), ];
   let tmp8Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result6) {
     const items3 = [tmp10(tmp4(1177).Spacer, { size: 24 }), , ];
@@ -222,12 +222,12 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     const obj44 = { children: null };
     items6[2] = tmp8Result5;
     obj12.children = items6;
-    obj11.children = tmp8(tmp4(10604).GappedList, obj12);
+    obj11.children = tmp8(tmp4(10605).GappedList, obj12);
     items3[1] = tmp10(tmp9, obj11);
     const obj45 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(16889, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
+          obj.openLazy(asyncRequireImpl(16895, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
         }
     };
     items3[2] = tmp10(ShowAllButton, obj45);

@@ -1,11 +1,11 @@
-// Module ID: 16473
-// Function ID: 16474
+// Module ID: 16479
+// Function ID: 16480
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1372, 2044, 10481, 504, 10480, 1115, 3324, 2]
+// Dependencies: [19, 1372, 2044, 10482, 504, 10481, 1115, 3324, 2]
 // Exports: default
 
-// Module 16473 (useFavoritesGuildAutoAddedThreadsAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10480 */;
+// Module 16479 (useFavoritesGuildAutoAddedThreadsAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10481 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import FavoriteStore from "FavoriteStore" /* 2044 */;
@@ -15,8 +15,8 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildAutoAddedThreadsAction.tsx");
 
 export default function useFavoritesGuildAutoAddedThreadsAction() {
-  hasAccess = hasAccess(10481).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
-  let obj = hasAccess(10481);
+  hasAccess = hasAccess(10482).useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
+  let obj = hasAccess(10482);
   const items = [UserStore];
   if (hasAccess) {
     hasAccess = obj2.useStateFromStores(items, () => {

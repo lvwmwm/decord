@@ -1,12 +1,12 @@
-// Module ID: 18220
-// Function ID: 18221
+// Module ID: 18231
+// Function ID: 18232
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 5, 19, 18177, 15469, 1074, 21, 15476, 15491, 4453, 1115, 1249, 4936, 18189, 18172, 18190, 2]
+// Dependencies: [32, 5, 19, 18188, 15475, 1074, 21, 15482, 15497, 4453, 1115, 1249, 4936, 18200, 18183, 18201, 2]
 
-// Module 18220 (GuildRoleSubscriptionGroupSetupModal)
+// Module 18231 (GuildRoleSubscriptionGroupSetupModal)
 import ToastUtils from "ToastUtils" /* 4453 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15491 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -299,8 +299,8 @@ class GuildRoleSubscriptionGroupSetupModal {
     return closure_11(tmp3(tmp4[13]).EditStateContextProvider, obj1);
   }
 }
-const useRoleTierEditStore = fn(18177).useRoleTierEditStore;
-const GuildRoleSubscriptionsConstants = fn(15469);
+const useRoleTierEditStore = fn(18188).useRoleTierEditStore;
+const GuildRoleSubscriptionsConstants = fn(15475);
 ({ GuildRoleSubscriptionsTierScenes: closure_8, GUILD_ROLE_SUBSCRIPTION_GROUP_SETUP_KEY: closure_9 } = GuildRoleSubscriptionsConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;

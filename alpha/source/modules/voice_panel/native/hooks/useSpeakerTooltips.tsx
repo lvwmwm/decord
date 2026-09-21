@@ -1,21 +1,21 @@
-// Module ID: 17575
-// Function ID: 17576
+// Module ID: 17586
+// Function ID: 17587
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 17572, 12522, 2038, 21, 17576, 17510, 9769, 12523, 4492, 7628, 17548, 1115, 2027, 17578, 11392, 2]
+// Dependencies: [32, 19, 17583, 12524, 2038, 21, 17587, 17521, 9770, 12525, 4492, 7630, 17559, 1115, 2027, 17589, 11394, 2]
 // Exports: default
 
-// Module 17575 (useSpeakerTooltips)
+// Module 17586 (useSpeakerTooltips)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2027 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17578 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17589 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ConsoleVoiceUpsellStore = fn(17572);
+const ConsoleVoiceUpsellStore = fn(17583);
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
-let VoicePanelControlsModes = fn(12522).VoicePanelControlsModes;
+let VoicePanelControlsModes = fn(12524).VoicePanelControlsModes;
 const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let __initData = { code: "function useSpeakerTooltipsTsx1(){const{controlsSpecs}=this.__closure;return controlsSpecs.get().mode;}" };

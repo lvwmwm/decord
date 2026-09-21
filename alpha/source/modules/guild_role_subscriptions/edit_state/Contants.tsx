@@ -1,9 +1,9 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15500
+// Function ID: 15501
 // Name: Contants
 // Dependencies: [1074, 2101, 2]
 
-// Module 15494 (Contants)
+// Module 15500 (Contants)
 import Constants from "Constants" /* 1074 */;
 import GuildRoleRecordUtils from "GuildRoleRecordUtils" /* 2101 */;
 import size from "module_2" /* 2 */;

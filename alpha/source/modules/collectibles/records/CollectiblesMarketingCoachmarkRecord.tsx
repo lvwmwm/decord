@@ -1,10 +1,10 @@
-// Module ID: 7807
-// Function ID: 7808
+// Module ID: 7809
+// Function ID: 7810
 // Name: CollectiblesMarketingCoachmarkRecord
-// Dependencies: [7805, 2]
+// Dependencies: [7807, 2]
 
-// Module 7807 (CollectiblesMarketingCoachmarkRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7805 */;
+// Module 7809 (CollectiblesMarketingCoachmarkRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7807 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function CollectiblesMarketingCoachmarkRecord(arg0) {

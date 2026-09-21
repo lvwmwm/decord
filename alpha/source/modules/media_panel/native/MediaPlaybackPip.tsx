@@ -1,17 +1,17 @@
-// Module ID: 17677
-// Function ID: 17678
+// Module ID: 17688
+// Function ID: 17689
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 2041, 4976, 4405, 1372, 1074, 17542, 21, 4756, 576, 4457, 504, 4909, 8536, 4752, 17678, 5198, 7696, 7487, 4492, 4757, 1115, 9183, 5840, 4708, 1241, 14810, 4381, 17675, 8546, 8544, 17679, 2]
+// Dependencies: [32, 19, 17, 2041, 4976, 4405, 1372, 1074, 17553, 21, 4756, 576, 4457, 504, 4909, 8537, 4752, 17689, 5198, 7698, 7489, 4492, 4757, 1115, 9184, 5845, 4708, 1241, 14816, 4381, 17686, 8547, 8545, 17690, 2]
 // Exports: default
 
-// Module 17677 (MediaPlaybackPip)
+// Module 17688 (MediaPlaybackPip)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import timing from "timing" /* 4757 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7487 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7696 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14810 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 7489 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14816 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -66,7 +66,7 @@ function MediaInfo(message) {
           if (contentMessage.attachments.length > 0) {
             str2 = "";
             if (null != activeMediaPlayerSource.attachmentIndex) {
-              str2 = tmp4(8536)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
+              str2 = tmp4(8537)(contentMessage.attachments[activeMediaPlayerSource.attachmentIndex]);
             }
           }
         }
@@ -93,7 +93,7 @@ function MediaInfo(message) {
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: null };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          const items3 = [tmp13(tmp2(17678).Marquee, obj7), ];
+          const items3 = [tmp13(tmp2(17689).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: null, style: null };
           const items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           obj8.colors = items4;
@@ -171,8 +171,8 @@ function PiPControls(message) {
   const obj3 = { style: null, children: null };
   const items1 = [tmp.pipControls, animatedStyle];
   obj3.style = items1;
-  const items2 = [closure_15(message(9183).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
-  const obj4 = { disabled: !visible, style: null, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(5840).ArrowLargeLeftIcon, { size: "sm" }) };
+  const items2 = [closure_15(message(9184).BackgroundBlurFill, { blurAmount: 0.05 }), , ];
+  const obj4 = { disabled: !visible, style: null, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: stringResult, children: closure_15(message(5845).ArrowLargeLeftIcon, { size: "sm" }) };
   const items3 = [, ];
   ({ pipButton: arr4[0], backButton: arr4[1] } = tmp);
   obj4.style = items3;
@@ -189,7 +189,7 @@ get_ActivityIndicator = fn(17);
 ({ Easing: hasOwnProperty, StyleSheet, TouchableOpacity: metroRequire, View: closure_7 } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, MessageFlags: map1, Routes: closure_14 } = Constants);
-const SquarePIPReferenceDimensions = fn(17542).SquarePIPReferenceDimensions;
+const SquarePIPReferenceDimensions = fn(17553).SquarePIPReferenceDimensions;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 const createStyles = fn(4756);
@@ -430,9 +430,9 @@ export default function MediaPlaybackPip() {
   const items8 = [mediaSourceMessage, activeMediaPlayerSource, hasFlagResult, first];
   const memo = obj.useMemo(() => {
     if (progress) {
-      let PlayIcon = tmp2(8546).PauseIcon;
+      let PlayIcon = tmp2(8547).PauseIcon;
     } else {
-      PlayIcon = tmp2(8544).PlayIcon;
+      PlayIcon = tmp2(8545).PlayIcon;
     }
     return __initData(PlayIcon, { color: nativeDefault.colors.WHITE, size: "md" });
   }, items7);

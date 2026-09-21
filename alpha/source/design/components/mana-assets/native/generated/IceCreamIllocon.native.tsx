@@ -1,13 +1,13 @@
-// Module ID: 6441
-// Function ID: 6442
+// Module ID: 6446
+// Function ID: 6447
 // Name: IceCreamIllocon
-// Dependencies: [21, 5799, 6442, 2]
+// Dependencies: [21, 5804, 6447, 2]
 // Exports: IceCreamIllocon
 
-// Module 6441 (IceCreamIllocon)
+// Module 6446 (IceCreamIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6442 from "module_6442" /* 6442 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6447 from "module_6447" /* 6447 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const IceCreamIllocon = function IceCreamIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6442 };
+  const obj2 = { uri: _modDef6447 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

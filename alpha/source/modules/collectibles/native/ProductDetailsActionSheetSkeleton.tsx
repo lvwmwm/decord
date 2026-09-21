@@ -1,10 +1,10 @@
-// Module ID: 13469
-// Function ID: 13470
+// Module ID: 13471
+// Function ID: 13472
 // Name: ProductDetailsActionSheetSkeleton
 // Dependencies: [19, 17, 21, 4756, 576, 5191, 4492, 4757, 2]
 // Exports: default
 
-// Module 13469 (ProductDetailsActionSheetSkeleton)
+// Module 13471 (ProductDetailsActionSheetSkeleton)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;

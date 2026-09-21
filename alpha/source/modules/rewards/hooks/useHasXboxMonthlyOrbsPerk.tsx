@@ -1,10 +1,10 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14000
+// Function ID: 14001
 // Name: useHasXboxMonthlyOrbsPerk
 // Dependencies: [1372, 1374, 4414, 1378, 1380, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk, useHasXboxMonthlyOrbsPerk
 
-// Module 13994 (useHasXboxMonthlyOrbsPerk)
+// Module 14000 (useHasXboxMonthlyOrbsPerk)
 import initialize from "initialize" /* 504 */;
 import PremiumUtils from "PremiumUtils" /* 4414 */;
 import UserStore from "UserStore" /* 1372 */;

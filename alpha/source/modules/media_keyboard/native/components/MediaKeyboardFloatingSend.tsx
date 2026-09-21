@@ -1,9 +1,9 @@
-// Module ID: 16974
-// Function ID: 16975
+// Module ID: 16982
+// Function ID: 16983
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 5104, 21, 4756, 576, 504, 4492, 1612, 5185, 672, 5198, 9190, 1115, 4700, 2]
+// Dependencies: [32, 19, 17, 5104, 21, 4756, 576, 504, 4492, 1612, 5185, 672, 5198, 9191, 1115, 4700, 2]
 
-// Module 16974 (MediaKeyboardFloatingSend)
+// Module 16982 (MediaKeyboardFloatingSend)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import spring from "spring" /* 5185 */;

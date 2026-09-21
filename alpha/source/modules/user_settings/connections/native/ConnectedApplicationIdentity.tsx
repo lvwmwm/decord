@@ -1,10 +1,10 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15240
+// Function ID: 15241
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 4756, 15235, 1115, 1177, 4752, 10054, 5108, 15213, 5205, 1397, 5188, 9301, 5184, 5334, 7232, 5817, 5899, 7440, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4756, 15241, 1115, 1177, 4752, 10055, 5108, 15219, 5205, 1397, 5188, 9302, 5184, 5339, 7237, 5822, 5904, 7445, 2]
 // Exports: default
 
-// Module 15234 (ConnectedApplicationIdentity)
+// Module 15240 (ConnectedApplicationIdentity)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4752 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
 import Icon from "Icon" /* 5188 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;
-import InfoBoxDefault from "InfoBox" /* 10054 */;
+import InfoBoxDefault from "InfoBox" /* 10055 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

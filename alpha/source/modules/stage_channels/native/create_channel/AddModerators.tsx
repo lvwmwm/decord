@@ -1,19 +1,19 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 9851
+// Function ID: 9852
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 2063, 8671, 21, 4756, 576, 1484, 38, 9819, 5627, 1978, 1115, 5836, 7617, 4752, 1177, 9851, 2049, 2]
+// Dependencies: [32, 19, 17, 2063, 8672, 21, 4756, 576, 1484, 38, 9820, 5632, 1978, 1115, 5841, 7619, 4752, 1177, 9852, 2049, 2]
 // Exports: default
 
-// Module 9850 (AddModerators)
+// Module 9851 (AddModerators)
 import nativeDefault from "native" /* 576 */;
-import HeaderActionButton from "HeaderActionButton" /* 7617 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 const View = fn(17).View;
-const RowType = fn(8671).RowType;
+const RowType = fn(8672).RowType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4756);
@@ -45,11 +45,11 @@ export default function AddModerators(guildId) {
     const mapped = found.map((row) => {
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        let moderatorOverwrite = guildId(5627).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.ROLE);
-        const obj2 = guildId(5627);
+        let moderatorOverwrite = guildId(5632).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.ROLE);
+        const obj2 = guildId(5632);
       } else {
-        moderatorOverwrite = guildId(5627).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.MEMBER);
-        const obj = guildId(5627);
+        moderatorOverwrite = guildId(5632).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.MEMBER);
+        const obj = guildId(5632);
       }
       return moderatorOverwrite;
     });

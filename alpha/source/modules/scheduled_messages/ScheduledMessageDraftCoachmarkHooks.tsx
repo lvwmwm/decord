@@ -1,15 +1,15 @@
-// Module ID: 12237
-// Function ID: 12238
+// Module ID: 12239
+// Function ID: 12240
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 19, 5489, 5105, 2038, 2027, 4576, 504, 2029, 2]
+// Dependencies: [32, 19, 5494, 5105, 2038, 2027, 4576, 504, 2029, 2]
 // Exports: useScheduledMessageDraftCoachmarkState
 
-// Module 12237 (ScheduledMessageDraftCoachmarkHooks)
+// Module 12239 (ScheduledMessageDraftCoachmarkHooks)
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5489 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
 import DraftStore from "DraftStore" /* 5105 */;
 
 require = fn;

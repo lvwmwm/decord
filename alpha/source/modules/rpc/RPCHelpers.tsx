@@ -1,10 +1,10 @@
-// Module ID: 9585
-// Function ID: 9586
+// Module ID: 9586
+// Function ID: 9587
 // Name: RPCHelpers
-// Dependencies: [5, 4983, 2002, 2045, 1386, 2041, 2063, 1992, 4976, 4796, 1372, 4775, 4660, 1074, 1366, 4743, 1091, 12, 7696, 4746, 4988, 9586, 4908, 1368, 8609, 1271, 9580, 9315, 9587, 2]
+// Dependencies: [5, 4983, 2002, 2045, 1386, 2041, 2063, 1992, 4976, 4796, 1372, 4775, 4660, 1074, 1366, 4743, 1091, 12, 7698, 4746, 4988, 9587, 4908, 1368, 8610, 1271, 9581, 9316, 9588, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 9585 (RPCHelpers)
+// Module 9586 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
@@ -12,11 +12,11 @@ import UrlDefault from "Url" /* 1368 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4746 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
 import useMessageAuthor from "useMessageAuthor" /* 4988 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7696 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8609 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9315 */;
-import RPCErrorDefault from "RPCError" /* 9580 */;
-import LeakyBucketDefault from "LeakyBucket" /* 9587 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8610 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9316 */;
+import RPCErrorDefault from "RPCError" /* 9581 */;
+import LeakyBucketDefault from "LeakyBucket" /* 9588 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 4983 */;
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;
@@ -32,7 +32,7 @@ import URLUtils from "URLUtils" /* 1366 */;
 import "RegexUtils";
 import RegexUtils from "RegexUtils" /* 4743 */;
 
-const transformUserDefault = tmp(9586);
+const transformUserDefault = tmp(9587);
 require = fn;
 function recurseReplaceContentTree(type) {
   if ("customEmoji" === type.type) {
@@ -406,7 +406,7 @@ export const transformChannel = function transformChannel(channel, arg1) {
           const obj = { nick: closure_1(4908).getName(tmp, id.id, user), mute: MediaEngineStore.isLocalMute(user.id), volume: MediaEngineStore.getLocalVolume(user.id), pan: MediaEngineStore.getLocalPan(user.id), voice_state: null, user: null };
           const obj3 = { mute, deaf, self_mute: selfMute, self_deaf: selfDeaf, suppress };
           obj.voice_state = obj3;
-          obj.user = closure_1(9586)(user);
+          obj.user = closure_1(9587)(user);
           return obj;
         }
         tmp = dependencyMap;

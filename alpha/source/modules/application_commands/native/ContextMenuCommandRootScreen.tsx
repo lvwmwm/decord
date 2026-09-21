@@ -1,14 +1,14 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 17337
+// Function ID: 17338
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2063, 5210, 21, 4756, 576, 504, 9529, 9411, 9524, 7221, 7289, 10374, 1115, 4752, 17327, 7290, 7295, 2]
+// Dependencies: [32, 19, 17, 2063, 5210, 21, 4756, 576, 504, 9530, 9412, 9525, 7226, 7294, 10375, 1115, 4752, 17338, 7295, 7300, 2]
 // Exports: default
 
-// Module 17326 (ContextMenuCommandRootScreen)
+// Module 17337 (ContextMenuCommandRootScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import executeCommandDefault from "executeCommand" /* 9524 */;
+import executeCommandDefault from "executeCommand" /* 9525 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;

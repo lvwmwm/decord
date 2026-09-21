@@ -1,9 +1,9 @@
-// Module ID: 7523
-// Function ID: 7524
+// Module ID: 7525
+// Function ID: 7526
 // Name: FriendsSidebarExperiment
 // Dependencies: [1434, 2]
 
-// Module 7523 (FriendsSidebarExperiment)
+// Module 7525 (FriendsSidebarExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15512
+// Function ID: 15513
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 2041, 21, 4756, 4409, 15504, 1177, 4752, 504, 4909, 1115, 5239, 2]
+// Dependencies: [19, 17, 2041, 21, 4756, 4409, 15510, 1177, 4752, 504, 4909, 1115, 5239, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 15506 (GuildRoleSubscriptionBenefitRow)
+// Module 15512 (GuildRoleSubscriptionBenefitRow)
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import EmojiIconDefault from "EmojiIcon" /* 15504 */;
+import EmojiIconDefault from "EmojiIcon" /* 15510 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 

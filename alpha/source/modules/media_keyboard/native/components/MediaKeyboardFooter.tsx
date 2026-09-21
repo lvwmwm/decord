@@ -1,14 +1,14 @@
-// Module ID: 10914
-// Function ID: 10915
+// Module ID: 10915
+// Function ID: 10916
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 4756, 576, 10903, 4752, 1115, 5186, 10915, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 10904, 4752, 1115, 5186, 10916, 2]
 
-// Module 10914 (MediaKeyboardFooter)
+// Module 10915 (MediaKeyboardFooter)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import _modDef10915 from "module_10915" /* 10915 */;
+import _modDef10916 from "module_10916" /* 10916 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -43,7 +43,7 @@ export default noop.memo(function MediaKeyboardFooter(arg0) {
     obj5.disabled = disabled;
     obj4.children = timestampProducer(components_Button_Button.Button, obj5);
     items[1] = timestampProducer(React3, obj4);
-    const obj6 = { source: _modDef10915 };
+    const obj6 = { source: _modDef10916 };
     items[2] = timestampProducer(React4, obj6);
     obj2.children = items;
     let tmp6 = React5(React3, obj2);

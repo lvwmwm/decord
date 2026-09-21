@@ -1,14 +1,14 @@
-// Module ID: 12753
-// Function ID: 12754
+// Module ID: 12755
+// Function ID: 12756
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [7628, 2027, 12747, 12754, 2]
+// Dependencies: [7630, 2027, 12749, 12756, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 12753 (GuildPowerupsNotificationsDCF)
+// Module 12755 (GuildPowerupsNotificationsDCF)
 import dismissible_content from "dismissible_content" /* 2027 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7628 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12747 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12754 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12749 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12756 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 5300
-// Function ID: 5301
+// Module ID: 5307
+// Function ID: 5308
 // Name: GroupIcon
 // Dependencies: [19, 21, 576, 4456, 5245, 2]
 // Exports: GroupIcon
 
-// Module 5300 (GroupIcon)
+// Module 5307 (GroupIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5245 from "module_5245" /* 5245 */;

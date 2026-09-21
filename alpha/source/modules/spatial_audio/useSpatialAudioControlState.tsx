@@ -1,11 +1,11 @@
-// Module ID: 14088
-// Function ID: 14089
+// Module ID: 14094
+// Function ID: 14095
 // Name: useSpatialAudioControlState
-// Dependencies: [19, 1992, 4781, 14089, 504, 2]
+// Dependencies: [19, 1992, 4781, 14095, 504, 2]
 // Exports: default, isSpatialAudioBlocked, isSpatialAudioEligible
 
-// Module 14088 (useSpatialAudioControlState)
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 14089 */;
+// Module 14094 (useSpatialAudioControlState)
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 14095 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 

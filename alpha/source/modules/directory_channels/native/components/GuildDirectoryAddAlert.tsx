@@ -1,15 +1,15 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12576
+// Function ID: 12577
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4756, 576, 5205, 1115, 5796, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5205, 1115, 5801, 4752, 2]
 // Exports: default
 
-// Module 12574 (GuildDirectoryAddAlert)
+// Module 12576 (GuildDirectoryAddAlert)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;

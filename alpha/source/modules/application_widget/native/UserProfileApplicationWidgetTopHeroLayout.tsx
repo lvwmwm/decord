@@ -1,16 +1,16 @@
-// Module ID: 9202
-// Function ID: 9203
+// Module ID: 9203
+// Function ID: 9204
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1074, 7448, 21, 4756, 576, 9203, 8509, 9290, 9291, 5876, 5198, 2]
+// Dependencies: [32, 19, 17, 1074, 7453, 21, 4756, 576, 9204, 8510, 9291, 9292, 5881, 5198, 2]
 // Exports: default
 
-// Module 9202 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 9203 (UserProfileApplicationWidgetTopHeroLayout)
 import nativeDefault from "native" /* 576 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5876 from "module_5876" /* 5876 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8509 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9203 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9290 */;
+import _modDef5881 from "module_5881" /* 5881 */;
+import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8510 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9204 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9291 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const HorizontalGradient = fn(1074).HorizontalGradient;
-const CARD_PADDING = fn(7448).CARD_PADDING;
+const CARD_PADDING = fn(7453).CARD_PADDING;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const colors = ["transparent", "black"];
@@ -66,7 +66,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   let tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp15Result = tmp15(tmp4(9291).ImageSkeleton, obj9);
+    tmp15Result = tmp15(tmp4(9292).ImageSkeleton, obj9);
   }
   obj8.children = tmp15Result;
   items3[1] = React6(timestampProducer, obj8);
@@ -105,7 +105,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       obj17.source = obj18;
       obj17.style = { width: "100%", height: "100%" };
       obj12.children = tmp15(hasOwnProperty, obj17);
-      tmp15Result3 = tmp15(_modDef5876, obj12);
+      tmp15Result3 = tmp15(_modDef5881, obj12);
     }
     obj10.children = tmp15Result3;
     tmp15Result4 = tmp15(tmp14, obj10);

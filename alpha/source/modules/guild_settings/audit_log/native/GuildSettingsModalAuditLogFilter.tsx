@@ -1,22 +1,22 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17980
+// Function ID: 17981
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1372, 17965, 1074, 21, 4756, 576, 1115, 4600, 17967, 4474, 11206, 5901, 1612, 1484, 5729, 17970, 1177, 10285, 17971, 5900, 7290, 8500, 8996, 7280, 2]
+// Dependencies: [32, 19, 17, 1372, 17976, 1074, 21, 4756, 576, 1115, 4600, 17978, 4474, 11207, 5906, 1612, 1484, 5734, 17981, 1177, 10286, 17982, 5905, 7295, 8501, 8997, 7285, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17969 (GuildSettingsModalAuditLogFilter)
+// Module 17980 (GuildSettingsModalAuditLogFilter)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
 import UserUtilsDefault from "UserUtils" /* 4600 */;
-import FormRadio from "FormRadio" /* 5901 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11206 */;
-import AuditLogUtils from "AuditLogUtils" /* 17967 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17970 */;
+import FormRadio from "FormRadio" /* 5906 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11207 */;
+import AuditLogUtils from "AuditLogUtils" /* 17978 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 17981 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17965 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17976 */;
 
 const require = globalThis.__r;
 

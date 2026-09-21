@@ -1,16 +1,16 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12022
+// Function ID: 12023
 // Name: QuestRewardDetailsBottomSheet
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 12018, 4723, 11736, 11551, 7942, 1115, 504, 7390, 5184, 12021, 4752, 2]
+// Dependencies: [19, 17, 1372, 21, 4756, 576, 12020, 4723, 11738, 11553, 7944, 1115, 504, 7395, 5184, 12023, 4752, 2]
 // Exports: default
 
-// Module 12020 (QuestRewardDetailsBottomSheet)
+// Module 12022 (QuestRewardDetailsBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7942 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 11551 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 11736 */;
-import QuestUtils from "QuestUtils" /* 12018 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7944 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 11553 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 11738 */;
+import QuestUtils from "QuestUtils" /* 12020 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -27,7 +27,7 @@ function QuestRewardDetailsBottomSheet(quest) {
       const intl2 = tmp(1115).intl;
       const t = tmp(1115).t;
       return intl2.string(memo ? t["66YyBJ"] : t.ABD2CN);
-    } else if (tmp(7942).QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
+    } else if (tmp(7944).QuestRewardTypes.FRACTIONAL_PREMIUM === type) {
       const intl = tmp(1115).intl;
       return intl.string(tmp(1115).t.maMtqM);
     } else {
@@ -38,10 +38,10 @@ function QuestRewardDetailsBottomSheet(quest) {
   const stateFromStores = quest(504).useStateFromStores(items2, () => currentUser.getCurrentUser());
   let obj = quest(504);
   const tmp4 = quest;
-  const defaultRewardName = quest(11551).getDefaultRewardName(quest.config, stateFromStores);
+  const defaultRewardName = quest(11553).getDefaultRewardName(quest.config, stateFromStores);
   const obj3 = { direction: "vertical", spacing: memo(576).space.PX_16, style: tmp.wrapper, children: null };
   const obj4 = { align: "center", direction: "horizontal", spacing: memo(576).space.PX_16, children: null };
-  const items3 = [closure_6(memo(12021), { quest, height: 56, width: 56, withAnimation: true }), ];
+  const items3 = [closure_6(memo(12023), { quest, height: 56, width: 56, withAnimation: true }), ];
   const obj5 = { direction: "vertical", spacing: memo(576).space.PX_4, style: tmp.rewardDetailsCopy, children: null };
   const obj6 = { variant: "eyebrow", color: "text-subtle", children: null };
   let intl = quest(1115).intl;
@@ -61,10 +61,10 @@ function QuestRewardDetailsBottomSheet(quest) {
     obj7.children = items6;
     tmp9Result = tmp9(closure_8, obj7);
   }
-  const obj2 = quest(11551);
+  const obj2 = quest(11553);
   items5[1] = tmp9Result;
   obj3.children = items5;
-  return closure_6(quest(7390).BottomSheet, { startExpanded: true, children: closure_7(quest(5184).Stack, obj3) });
+  return closure_6(quest(7395).BottomSheet, { startExpanded: true, children: closure_7(quest(5184).Stack, obj3) });
 }
 const View = fn(17).View;
 const jsxProd = fn(21);

@@ -1,13 +1,13 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 16522
+// Function ID: 16523
 // Name: channel_list_v2/ChannelListUtils
-// Dependencies: [1074, 7768, 4936, 2]
+// Dependencies: [1074, 7770, 4936, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 16516 (channel_list_v2/ChannelListUtils)
+// Module 16522 (channel_list_v2/ChannelListUtils)
 import Constants from "Constants" /* 1074 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import ChannelListState from "ChannelListState" /* 7768 */;
+import ChannelListState from "ChannelListState" /* 7770 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

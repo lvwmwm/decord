@@ -1,12 +1,12 @@
-// Module ID: 11637
-// Function ID: 11638
+// Module ID: 11639
+// Function ID: 11640
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 4756, 576, 5184, 5904, 4752, 1115, 8853, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5184, 5909, 4752, 1115, 8854, 2]
 // Exports: default
 
-// Module 11637 (SafetyTipsSection)
+// Module 11639 (SafetyTipsSection)
 import nativeDefault from "native" /* 576 */;
-import SafetyTipsRowDefault from "SafetyTipsRow" /* 8853 */;
+import SafetyTipsRowDefault from "SafetyTipsRow" /* 8854 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -23,7 +23,7 @@ export default function SafetyTipsContainer(children) {
   const safetyTips = children.safetyTips;
   let showHeader = children.showHeader;
   const tmp = closure_6();
-  const items = [closure_4(View, { style: tmp.image, children: closure_4(safetyTips(5904).SafetyBookletSpotIllustration, {}) }), , ];
+  const items = [closure_4(View, { style: tmp.image, children: closure_4(safetyTips(5909).SafetyBookletSpotIllustration, {}) }), , ];
   if (showHeader) {
     const obj2 = { style: tmp.text, variant: "heading-xl/semibold", children: null };
     const intl = tmp3(1115).intl;
@@ -35,7 +35,7 @@ export default function SafetyTipsContainer(children) {
   const items1 = [showHeader, closure_4(safetyTips(4752).Text, { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description })];
   obj4.children = items1;
   items[1] = closure_5(safetyTips(5184).Stack, obj4);
-  const obj = { style: tmp.image, children: closure_4(safetyTips(5904).SafetyBookletSpotIllustration, {}) };
+  const obj = { style: tmp.image, children: closure_4(safetyTips(5909).SafetyBookletSpotIllustration, {}) };
   const obj5 = { style: tmp.text, accessibilityRole: "header", variant: "text-md/medium", color: "text-default", children: children.description };
   const tmp6 = View;
   items[2] = closure_4(tmp6, { style: tmp.tips, children: safetyTips.map((tip, index) => React4(SafetyTipsRowDefault, { index: index + 1, tip, end: index === safetyTips.length - 1 }, index)) });

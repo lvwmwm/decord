@@ -1,9 +1,9 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14086
+// Function ID: 14087
 // Name: NetworkQuality
 // Dependencies: [4805, 1074, 4785, 2]
 
-// Module 14080 (NetworkQuality)
+// Module 14086 (NetworkQuality)
 import TimeUtils from "TimeUtils" /* 4785 */;
 import NetworkStore from "NetworkStore" /* 4805 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 12083
-// Function ID: 12084
+// Module ID: 12085
+// Function ID: 12086
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 2063, 8273, 1074, 1241, 4936, 9854, 4348, 1271, 10357, 2]
+// Dependencies: [5, 2063, 8274, 1074, 1241, 4936, 9855, 4348, 1271, 10358, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12083 (GuildAntiRaidActionCreators)
+// Module 12085 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _modDef4348 from "module_4348" /* 4348 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9854 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10357 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10358 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildStore from "GuildStore" /* 2063 */;
 
@@ -246,7 +246,7 @@ let closure_12 = async function _handleReportRaid(arg0, value) {
     }
   }
 };
-const DEFAULT_LOCKDOWN_DURATION = fn(8273).DEFAULT_LOCKDOWN_DURATION;
+const DEFAULT_LOCKDOWN_DURATION = fn(8274).DEFAULT_LOCKDOWN_DURATION;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7, GuildFeatures: closure_8 } = Constants);
 const size = fn(2);

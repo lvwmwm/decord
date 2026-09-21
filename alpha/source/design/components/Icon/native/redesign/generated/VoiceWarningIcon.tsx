@@ -1,10 +1,10 @@
-// Module ID: 5310
-// Function ID: 5311
+// Module ID: 5317
+// Function ID: 5318
 // Name: VoiceWarningIcon
 // Dependencies: [19, 21, 576, 4456, 5252, 2]
 // Exports: VoiceWarningIcon
 
-// Module 5310 (VoiceWarningIcon)
+// Module 5317 (VoiceWarningIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5252 from "module_5252" /* 5252 */;

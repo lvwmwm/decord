@@ -1,9 +1,9 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 9843
+// Function ID: 9844
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4752, 4492, 5185, 5189, 5876, 5198, 6852, 5193, 6859, 6861, 4463, 6863, 5810, 6864, 9843, 9844, 1115, 9845, 4467, 6858, 7291, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 4752, 4492, 5185, 5189, 5881, 5198, 6857, 5193, 6864, 6866, 4463, 6868, 5815, 6869, 9844, 9845, 1115, 9846, 4467, 6863, 7296, 2]
 
-// Module 9842 (TagListInput)
+// Module 9843 (TagListInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4752 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5876 from "module_5876" /* 5876 */;
+import _modDef5881 from "module_5881" /* 5881 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -363,7 +363,7 @@ export default noop.memo(function TagListInput(accessibilityHint) {
       obj2.children = items2;
       obj.maskElement = React7(hasOwnProperty, obj2);
       obj.children = children;
-      tmp = React6(_modDef5876, obj);
+      tmp = React6(_modDef5881, obj);
     }
     return tmp;
   }, items5);

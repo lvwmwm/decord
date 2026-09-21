@@ -1,17 +1,17 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17929
+// Function ID: 17930
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 2059, 1372, 1074, 21, 504, 5899, 1115, 5817, 17919, 17920, 17921, 17922, 7500, 2]
+// Dependencies: [19, 2059, 1372, 1074, 21, 504, 5904, 1115, 5822, 17930, 17931, 17932, 17933, 7502, 2]
 // Exports: default
 
-// Module 17918 (GuildSettingsRoleSubscriptionsSection)
+// Module 17929 (GuildSettingsRoleSubscriptionsSection)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import TableRow from "TableRow" /* 5817 */;
-import TableRowGroup from "TableRowGroup" /* 5899 */;
-import _modDef17919 from "module_17919" /* 17919 */;
-import _modDef17920 from "module_17920" /* 17920 */;
-import _modDef17922 from "module_17922" /* 17922 */;
+import TableRow from "TableRow" /* 5822 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import _modDef17930 from "module_17930" /* 17930 */;
+import _modDef17931 from "module_17931" /* 17931 */;
+import _modDef17933 from "module_17933" /* 17933 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -27,7 +27,7 @@ function HasCreatedListingsSection(arg0) {
   const intl2 = util.intl;
   obj3.label = intl2.string(util.t["/CfKoD"]);
   const tmp4 = closure_8;
-  obj3.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17919 });
+  obj3.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17930 });
   obj3.onPress = function onPress() {
     return importDefault(constants2.ROLE_SUBSCRIPTIONS_BASIC);
   };
@@ -35,8 +35,8 @@ function HasCreatedListingsSection(arg0) {
   const obj5 = { label: null, arrow: true, icon: null, onPress: null };
   const intl3 = util.intl;
   obj5.label = intl3.string(util.t.pXbGYc);
-  const obj4 = { source: _modDef17919 };
-  obj5.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17920 });
+  const obj4 = { source: _modDef17930 };
+  obj5.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17931 });
   obj5.onPress = function onPress() {
     return importDefault(constants2.ROLE_SUBSCRIPTIONS_TIERS);
   };
@@ -45,19 +45,19 @@ function HasCreatedListingsSection(arg0) {
     const obj7 = { label: null, arrow: true, icon: null, onPress: null };
     const intl4 = tmp(1115).intl;
     obj7.label = intl4.string(tmp(1115).t.p2Rsdl);
-    const obj8 = { source: tmp6(17921) };
-    obj7.icon = tmp5(tmp(5817).TableRow.Icon, obj8);
+    const obj8 = { source: tmp6(17932) };
+    obj7.icon = tmp5(tmp(5822).TableRow.Icon, obj8);
     obj7.onPress = function onPress() {
       return importDefault(constants2.ROLE_SUBSCRIPTIONS_PAYMENTS, { guildId: id.id });
     };
-    stateFromStores = tmp5(tmp(5817).TableRow, obj7, "guild-role-subscriptions-payments");
+    stateFromStores = tmp5(tmp(5822).TableRow, obj7, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
   const obj9 = { label: null, arrow: true, icon: null, onPress: null };
   const intl5 = tmp(1115).intl;
   obj9.label = intl5.string(util.t.C5Dbwn);
-  const obj6 = { source: _modDef17920 };
-  obj9.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17922 });
+  const obj6 = { source: _modDef17931 };
+  obj9.icon = closure_7(TableRow.TableRow.Icon, { source: _modDef17933 });
   obj9.onPress = function onPress() {
     return importDefault(constants2.ROLE_SUBSCRIPTIONS_EMOJIS);
   };

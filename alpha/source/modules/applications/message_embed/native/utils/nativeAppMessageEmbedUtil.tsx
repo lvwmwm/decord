@@ -1,13 +1,13 @@
-// Module ID: 12195
-// Function ID: 12196
+// Module ID: 12197
+// Function ID: 12198
 // Name: nativeAppMessageEmbedUtil
-// Dependencies: [4605, 576, 8400, 8401, 1397, 2]
+// Dependencies: [4605, 576, 8401, 8402, 1397, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 12195 (nativeAppMessageEmbedUtil)
+// Module 12197 (nativeAppMessageEmbedUtil)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import useAvatarColor from "useAvatarColor" /* 8400 */;
+import useAvatarColor from "useAvatarColor" /* 8401 */;
 import ColorUtils_mod from "ColorUtils" /* 4605 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ export const getAppGradientColors = function getAppGradientColors(appIconSrc) {
     return tmp;
   } else {
     if (obj5.hasFetchedColors(appIconSrc)) {
-      const heroColors = tmp6(8401).getHeroColors(appIconSrc);
+      const heroColors = tmp6(8402).getHeroColors(appIconSrc);
       ({ primaryColor, secondaryColor } = heroColors);
       let tmp5 = tmp;
       if (false === tmp4) {
@@ -35,7 +35,7 @@ export const getAppGradientColors = function getAppGradientColors(appIconSrc) {
       }
       return tmp5;
     } else {
-      tmp6(8400).maybeFetchColors(appIconSrc);
+      tmp6(8401).maybeFetchColors(appIconSrc);
       return tmp;
     }
     obj5 = useAvatarColor;

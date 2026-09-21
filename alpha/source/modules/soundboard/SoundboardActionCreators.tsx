@@ -1,10 +1,10 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7580
+// Function ID: 7581
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5224, 5226, 1074, 1084, 1271, 5232, 573, 7579, 4657, 7580, 1241, 2024, 12, 5108, 1115, 7581, 2]
+// Dependencies: [5, 5224, 5226, 1074, 1084, 1271, 5232, 573, 7581, 4657, 7582, 1241, 2024, 12, 5108, 1115, 7583, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, muteCustomJoinSound, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7578 (SoundboardActionCreators)
+// Module 7580 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
@@ -69,7 +69,7 @@ function _maybeFetchDefaultSounds() {
   }
 }
 function _maybeFetchGuildSoundboardSounds() {
-  const guildIdsToFetchSoundsFor = SOUNDBOARD_SOUNDS_RECEIVED(7580).getGuildIdsToFetchSoundsFor();
+  const guildIdsToFetchSoundsFor = SOUNDBOARD_SOUNDS_RECEIVED(7582).getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
   } else {
@@ -87,7 +87,7 @@ function _maybeFetchGuildSoundboardSounds() {
     DispatcherDefault.dispatch(obj4);
     return promise;
   }
-  const obj = SOUNDBOARD_SOUNDS_RECEIVED(7580);
+  const obj = SOUNDBOARD_SOUNDS_RECEIVED(7582);
 }
 let closure_14 = async function _maybeFetchSoundboardSounds() {
   closure_3 = tmp3;

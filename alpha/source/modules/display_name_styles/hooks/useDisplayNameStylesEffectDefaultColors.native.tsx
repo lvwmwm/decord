@@ -1,10 +1,10 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11164
+// Function ID: 11165
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: [19, 1390, 1092, 4457, 576, 1391, 2]
 // Exports: default
 
-// Module 11163 (useDisplayNameStylesEffectDefaultColors)
+// Module 11164 (useDisplayNameStylesEffectDefaultColors)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;

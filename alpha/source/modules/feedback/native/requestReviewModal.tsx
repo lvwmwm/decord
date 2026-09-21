@@ -1,12 +1,12 @@
-// Module ID: 13956
-// Function ID: 13957
+// Module ID: 13962
+// Function ID: 13963
 // Name: requestReviewModal
-// Dependencies: [5, 17, 3, 13957, 1364, 2]
+// Dependencies: [5, 17, 3, 13963, 1364, 2]
 // Exports: default
 
-// Module 13956 (requestReviewModal)
+// Module 13962 (requestReviewModal)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeAppRatingRequestModuleDefault from "NativeAppRatingRequestModule" /* 13957 */;
+import NativeAppRatingRequestModuleDefault from "NativeAppRatingRequestModule" /* 13963 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

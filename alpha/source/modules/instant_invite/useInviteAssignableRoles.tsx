@@ -1,10 +1,10 @@
-// Module ID: 18245
-// Function ID: 18246
+// Module ID: 18256
+// Function ID: 18257
 // Name: useInviteAssignableRoles
 // Dependencies: [19, 2100, 2099, 4395, 1372, 1074, 504, 4400, 2]
 // Exports: default
 
-// Module 18245 (useInviteAssignableRoles)
+// Module 18256 (useInviteAssignableRoles)
 import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;

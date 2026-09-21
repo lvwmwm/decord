@@ -1,13 +1,13 @@
-// Module ID: 9294
-// Function ID: 9295
+// Module ID: 9295
+// Function ID: 9296
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 4756, 576, 9203, 9290, 9291, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9204, 9291, 9292, 2]
 // Exports: default
 
-// Module 9294 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 9295 (UserProfileApplicationWidgetTopContainedLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9203 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9290 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9204 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9291 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -58,7 +58,7 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
     let tmp12Result = tmp12(tmp11, obj7);
   } else {
     const obj10 = { style: tmp.imageSkeleton };
-    tmp12Result = tmp12(tmp2(9291).ImageSkeleton, obj10);
+    tmp12Result = tmp12(tmp2(9292).ImageSkeleton, obj10);
   }
   const obj11 = { children: null };
   items3[1] = tmp12Result;

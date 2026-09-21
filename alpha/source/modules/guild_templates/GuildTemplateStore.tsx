@@ -1,13 +1,13 @@
-// Module ID: 7697
-// Function ID: 7698
+// Module ID: 7699
+// Function ID: 7700
 // Name: GuildTemplateStore
-// Dependencies: [7566, 7565, 504, 573, 2]
+// Dependencies: [7568, 7567, 504, 573, 2]
 
-// Module 7697 (GuildTemplateStore)
+// Module 7699 (GuildTemplateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 7565 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7566 */;
+import createResolvedGuildTemplateDefault from "createResolvedGuildTemplate" /* 7567 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7568 */;
 import size from "module_2" /* 2 */;
 
 function handleGuildTemplateResolveSuccess(guildTemplate) {

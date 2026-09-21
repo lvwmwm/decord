@@ -1,9 +1,9 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15281
+// Function ID: 15282
 // Name: BountiesModal
-// Dependencies: [19, 21, 15276, 15277, 15326, 12034, 11463, 2]
+// Dependencies: [19, 21, 15282, 15283, 15332, 12036, 11465, 2]
 
-// Module 15275 (BountiesModal)
+// Module 15281 (BountiesModal)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

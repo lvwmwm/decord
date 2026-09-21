@@ -1,13 +1,13 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 14401
+// Function ID: 14402
 // Name: MenuItem
-// Dependencies: [19, 21, 4756, 14393, 5188, 7377, 7379, 2]
+// Dependencies: [19, 21, 4756, 14399, 5188, 7382, 7384, 2]
 
-// Module 14395 (MenuItem)
+// Module 14401 (MenuItem)
 import IconDefault from "Icon" /* 5188 */;
-import FormRowDefault from "FormRow" /* 7377 */;
-import FormLabelDefault from "FormLabel" /* 7379 */;
-import Menu from "Menu" /* 14393 */;
+import FormRowDefault from "FormRow" /* 7382 */;
+import FormLabelDefault from "FormLabel" /* 7384 */;
+import Menu from "Menu" /* 14399 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

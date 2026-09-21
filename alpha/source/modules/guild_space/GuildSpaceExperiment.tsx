@@ -1,10 +1,10 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7470
+// Function ID: 7471
 // Name: GuildSpaceExperiment
 // Dependencies: [4669, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 7465 (GuildSpaceExperiment)
+// Module 7470 (GuildSpaceExperiment)
 import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;
 

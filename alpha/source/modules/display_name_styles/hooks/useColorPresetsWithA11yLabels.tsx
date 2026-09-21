@@ -1,10 +1,10 @@
-// Module ID: 15612
-// Function ID: 15613
+// Module ID: 15618
+// Function ID: 15619
 // Name: useColorPresetsWithA11yLabels
 // Dependencies: [19, 1390, 1115, 2872, 1092, 2]
 // Exports: default
 
-// Module 15612 (useColorPresetsWithA11yLabels)
+// Module 15618 (useColorPresetsWithA11yLabels)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

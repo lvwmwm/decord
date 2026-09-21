@@ -1,11 +1,11 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14828
+// Function ID: 14829
 // Name: TouchEventAnalyticsManager
-// Dependencies: [1372, 1984, 14823, 1982, 2]
+// Dependencies: [1372, 1984, 14829, 1982, 2]
 
-// Module 14822 (TouchEventAnalyticsManager)
+// Module 14828 (TouchEventAnalyticsManager)
 import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1984 */;
-import NativeTouchEventAnalyticsModuleDefault from "NativeTouchEventAnalyticsModule" /* 14823 */;
+import NativeTouchEventAnalyticsModuleDefault from "NativeTouchEventAnalyticsModule" /* 14829 */;
 import UserStore from "UserStore" /* 1372 */;
 import LifecycleManager from "LifecycleManager" /* 1982 */;
 

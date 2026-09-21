@@ -1,11 +1,11 @@
-// Module ID: 10079
-// Function ID: 10080
+// Module ID: 10080
+// Function ID: 10081
 // Name: DefaultInviteExpirationExperiments
-// Dependencies: [2063, 1074, 10077, 4669, 563, 2]
+// Dependencies: [2063, 1074, 10078, 4669, 563, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 10079 (DefaultInviteExpirationExperiments)
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10077 */;
+// Module 10080 (DefaultInviteExpirationExperiments)
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10078 */;
 import GuildStore from "GuildStore" /* 2063 */;
 
 const require = fn;

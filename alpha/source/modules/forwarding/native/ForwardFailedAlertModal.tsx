@@ -1,11 +1,11 @@
-// Module ID: 11953
-// Function ID: 11954
+// Module ID: 11955
+// Function ID: 11956
 // Name: ForwardFailedAlertModal
-// Dependencies: [19, 21, 11930, 11954, 1115, 2]
+// Dependencies: [19, 21, 11932, 11956, 1115, 2]
 // Exports: default
 
-// Module 11953 (ForwardFailedAlertModal)
-import ForwardModalUtils from "ForwardModalUtils" /* 11930 */;
+// Module 11955 (ForwardFailedAlertModal)
+import ForwardModalUtils from "ForwardModalUtils" /* 11932 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

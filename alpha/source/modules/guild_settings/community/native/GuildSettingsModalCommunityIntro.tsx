@@ -1,19 +1,19 @@
-// Module ID: 18081
-// Function ID: 18082
+// Module ID: 18092
+// Function ID: 18093
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2063, 4395, 9855, 1074, 21, 4756, 576, 10642, 1115, 4752, 16753, 4710, 1484, 504, 573, 9854, 18082, 2108, 5186, 18086, 4453, 7280, 2]
+// Dependencies: [19, 17, 2063, 4395, 9856, 1074, 21, 4756, 576, 10643, 1115, 4752, 16759, 4710, 1484, 504, 573, 9855, 18093, 2108, 5186, 18097, 4453, 7285, 2]
 // Exports: default
 
-// Module 18081 (GuildSettingsModalCommunityIntro)
+// Module 18092 (GuildSettingsModalCommunityIntro)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18086 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18097 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9855 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
 
 const require = globalThis.__r;
 

@@ -1,10 +1,10 @@
-// Module ID: 5287
-// Function ID: 5288
+// Module ID: 5294
+// Function ID: 5295
 // Name: TextWarningIcon
 // Dependencies: [19, 21, 576, 4456, 5255, 2]
 // Exports: TextWarningIcon
 
-// Module 5287 (TextWarningIcon)
+// Module 5294 (TextWarningIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5255 from "module_5255" /* 5255 */;

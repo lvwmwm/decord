@@ -1,17 +1,17 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17796
+// Function ID: 17797
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 2041, 5105, 2105, 4577, 5104, 14671, 8381, 1074, 8380, 1978, 1397, 9315, 7494, 504, 5810, 11, 573, 9420, 1115, 38, 4980, 8083, 8385, 5340, 1271, 1091, 2]
+// Dependencies: [5, 32, 19, 502, 2041, 5105, 2105, 4577, 5104, 14677, 8382, 1074, 8381, 1978, 1397, 9316, 7496, 504, 5815, 11, 573, 9421, 1115, 38, 4980, 8085, 8386, 5345, 1271, 1091, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 17785 (InteractionModalUtils)
+// Module 17796 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ComponentStateContext from "ComponentStateContext" /* 8380 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9315 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9420 */;
+import ComponentStateContext from "ComponentStateContext" /* 8381 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9316 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9421 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -20,8 +20,8 @@ import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
-import InteractionModalStore from "InteractionModalStore" /* 14671 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8381 */;
+import InteractionModalStore from "InteractionModalStore" /* 14677 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8382 */;
 
 const require = globalThis.__r;
 
@@ -2190,7 +2190,7 @@ let closure_19 = async function _submitModal(arg0, value) {
   }
 };
 const DraftType = fn(5105).DraftType;
-const InteractionModalState = fn(14671).InteractionModalState;
+const InteractionModalState = fn(14677).InteractionModalState;
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");

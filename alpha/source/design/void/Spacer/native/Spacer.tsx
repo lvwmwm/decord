@@ -1,10 +1,10 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14390
+// Function ID: 14391
 // Name: Spacer
 // Dependencies: [19, 17, 21, 12, 2]
 // Exports: default
 
-// Module 14384 (Spacer)
+// Module 14390 (Spacer)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

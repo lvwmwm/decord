@@ -1,22 +1,22 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9030
+// Function ID: 9031
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 8984, 21, 5206, 1115, 4756, 576, 9012, 7183, 9011, 9030, 9031, 4752, 9034, 4438, 9036, 7402, 9038, 8956, 8950, 9041, 8997, 2]
+// Dependencies: [19, 17, 8985, 21, 5206, 1115, 4756, 576, 9013, 7188, 9012, 9031, 9032, 4752, 9035, 4438, 9037, 7407, 9039, 8957, 8951, 9042, 8998, 2]
 // Exports: default
 
-// Module 9029 (GameProfileAnnouncements)
+// Module 9030 (GameProfileAnnouncements)
 import nativeDefault from "native" /* 576 */;
 import DateUtils from "DateUtils" /* 4438 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import CustomMarkupAll from "CustomMarkup" /* 5206 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7183 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8950 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8956 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9012 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9030 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9031 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9034 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9041 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7188 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8951 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9013 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9031 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 9032 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 9035 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 9042 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -145,7 +145,7 @@ function EmbedAnnouncementCard(message) {
     if (tmp13Result2) {
       const obj22 = { style: tmp.reactionInfo, children: null };
       const obj23 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const items6 = [tmp11(tmp34(9036).ReactionIcon, obj23), ];
+      const items6 = [tmp11(tmp34(9037).ReactionIcon, obj23), ];
       let tmp45 = null != obj16;
       if (tmp45) {
         tmp45 = obj16.locale === tmp34(1115).intl.currentLocale;
@@ -248,7 +248,7 @@ function MessageAnnouncementCard(message) {
   if (tmp10Result) {
     const obj14 = { style: tmp.reactionInfo, children: null };
     const obj15 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const items3 = [tmp26(tmp27(9036).ReactionIcon, obj15), ];
+    const items3 = [tmp26(tmp27(9037).ReactionIcon, obj15), ];
     let tmp33 = null != obj16;
     if (tmp33) {
       tmp33 = obj16.locale === tmp27(1115).intl.currentLocale;
@@ -329,7 +329,7 @@ function PollAnnouncementCard(message) {
     const _Date = Date;
     const date = new Date(message.timestamp);
     obj9.createdAt = date;
-    obj9.expiryLabel = message(9031).getPollExpiryLabel(poll);
+    obj9.expiryLabel = message(9032).getPollExpiryLabel(poll);
     obj8.children = intl2.format(message(1115).t.t0FTsH, obj9);
     obj7.children = closure_9(message(4752).Text, obj8);
     items[2] = closure_9(closure_6, obj7);
@@ -340,7 +340,7 @@ function PollAnnouncementCard(message) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
-const MAX_VISIBLE_ANNOUNCEMENTS = fn(8984).MAX_VISIBLE_ANNOUNCEMENTS;
+const MAX_VISIBLE_ANNOUNCEMENTS = fn(8985).MAX_VISIBLE_ANNOUNCEMENTS;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 let closure_11 = null;

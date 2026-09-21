@@ -1,10 +1,10 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12532
+// Function ID: 12533
 // Name: VoicePanelPIPHandoff
 // Dependencies: [19, 2]
 // Exports: usePIPCardsSettled, usePIPPanelLayoutCommitted
 
-// Module 12530 (VoicePanelPIPHandoff)
+// Module 12532 (VoicePanelPIPHandoff)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

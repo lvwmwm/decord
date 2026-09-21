@@ -1,20 +1,20 @@
-// Module ID: 8007
-// Function ID: 8008
+// Module ID: 8009
+// Function ID: 8010
 // Name: tracking/Tracking
-// Dependencies: [2041, 5105, 7517, 8008, 1074, 4936, 8009, 1241, 8014, 1364, 8015, 2]
+// Dependencies: [2041, 5105, 7519, 8010, 1074, 4936, 8011, 1241, 8016, 1364, 8017, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 8007 (tracking/Tracking)
+// Module 8009 (tracking/Tracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import TrackingUtils from "TrackingUtils" /* 8009 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8014 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8015 */;
+import TrackingUtils from "TrackingUtils" /* 8011 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8016 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8017 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import DraftStore from "DraftStore" /* 5105 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7517 */;
-import ForumSearchStore from "ForumSearchStore" /* 8008 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7519 */;
+import ForumSearchStore from "ForumSearchStore" /* 8010 */;
 
 const AppAnalyticsUtilsDefault = AppAnalyticsUtils;
 

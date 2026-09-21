@@ -1,10 +1,10 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 12269
+// Function ID: 12270
 // Name: ForumPostTitle
 // Dependencies: [19, 21, 4756, 1365, 4752, 2]
 // Exports: default
 
-// Module 12267 (ForumPostTitle)
+// Module 12269 (ForumPostTitle)
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 

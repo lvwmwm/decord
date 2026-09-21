@@ -1,29 +1,29 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17098
+// Function ID: 17099
 // Name: layout/SearchBar
-// Dependencies: [19, 17, 2041, 2063, 4405, 1372, 12591, 8121, 8120, 1074, 21, 4756, 1115, 4909, 504, 5193, 12590, 12613, 4467, 12610, 12593, 9842, 17088, 2]
+// Dependencies: [19, 17, 2041, 2063, 4405, 1372, 12593, 8122, 8121, 1074, 21, 4756, 1115, 4909, 504, 5193, 12592, 12615, 4467, 12612, 12595, 9843, 17099, 2]
 
-// Module 17087 (layout/SearchBar)
+// Module 17098 (layout/SearchBar)
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12590 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12610 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12613 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12592 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12612 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12615 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
-import SearchQueryStore from "SearchQueryStore" /* 12591 */;
+import SearchQueryStore from "SearchQueryStore" /* 12593 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
 
 require = fn;
 const View = fn(17).View;
-const SearchConstants = fn(8121);
+const SearchConstants = fn(8122);
 ({ SEARCH_BAR_HEIGHT: c10, SearchQueryTagTypes: closure_11 } = SearchConstants);
-const SearchFilterAddLocations = fn(8120).SearchFilterAddLocations;
+const SearchFilterAddLocations = fn(8121).SearchFilterAddLocations;
 const SearchTypes = fn(1074).SearchTypes;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
@@ -204,7 +204,7 @@ export default noop.memo(noop.forwardRef((searchContext, ref) => {
       const tmp2 = importDefault;
       const result = SearchPlatformUtilsDefault.syncAutocompleteDebounced(tmp);
       if (!obj.isAutocompleteVisible(tmp)) {
-        const tmp2Result = tmp2(12590);
+        const tmp2Result = tmp2(12592);
         if (isInitialSearchQueryResult) {
           const initialMessages = tmp2Result.fetchInitialMessages(tmp);
         } else {
@@ -238,7 +238,7 @@ export default noop.memo(noop.forwardRef((searchContext, ref) => {
       const result1 = SearchPlatformUtilsDefault.syncAutocompleteDebounced(tmp);
       const queryString = obj.getQueryString(tmp);
       if (queryString !== searchResultsQuery) {
-        const tmp6Result = tmp6(12590);
+        const tmp6Result = tmp6(12592);
         if (tmp11) {
           const initialMessages = tmp6Result.fetchInitialMessages(tmp);
         } else {

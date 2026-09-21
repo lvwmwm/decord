@@ -1,10 +1,10 @@
-// Module ID: 10199
-// Function ID: 10200
+// Module ID: 10200
+// Function ID: 10201
 // Name: AttachmentUrlUtils
 // Dependencies: [5, 5222, 1074, 1091, 2014, 2013, 1366, 1271, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 10199 (AttachmentUrlUtils)
+// Module 10200 (AttachmentUrlUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;

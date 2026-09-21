@@ -1,15 +1,15 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 8230
+// Function ID: 8231
 // Name: DoubleTapErrorToast
-// Dependencies: [19, 17, 1375, 21, 4756, 576, 8230, 4454, 4752, 1115, 2]
+// Dependencies: [19, 17, 1375, 21, 4756, 576, 8231, 4454, 4752, 1115, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 8229 (DoubleTapErrorToast)
+// Module 8230 (DoubleTapErrorToast)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import XSmallBoldIcon from "XSmallBoldIcon" /* 8230 */;
+import XSmallBoldIcon from "XSmallBoldIcon" /* 8231 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 12888
-// Function ID: 12889
+// Module ID: 12890
+// Function ID: 12891
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 4748, 4624, 1878, 6862, 1610, 5203, 4625, 4622, 4628, 11617, 2]
+// Dependencies: [19, 17, 4748, 4624, 1878, 6867, 1610, 5203, 4625, 4622, 4628, 11619, 2]
 
-// Module 12888 (PortalKeyboardInlineComponent)
+// Module 12890 (PortalKeyboardInlineComponent)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
@@ -19,7 +19,7 @@ export default noop.memo(function InlinePortalKeyboard(messagesRef) {
   const id = noop.useId();
   const tmp2 = id(4624)();
   dependencyMap = tmp2;
-  let tmp4 = id(6862)({ includeCustomKeyboard: false });
+  let tmp4 = id(6867)({ includeCustomKeyboard: false });
   noop = tmp4;
   let tmp3 = id(1878)();
   const keyboardContextForType = messagesRef(4624).useKeyboardContextForType(messagesRef(1610).KeyboardTypes.SYSTEM);
@@ -61,8 +61,8 @@ export default noop.memo(function InlinePortalKeyboard(messagesRef) {
                 tmp.current = true;
                 const obj2 = messagesRef(4625);
                 const DCDChatManager3 = keyboardContextForType.DCDChatManager;
-                const result1 = DCDChatManager3.customKeyboardWillShow(tmp38, messagesRef(11617).getKeyboardActionSheetHeight().minimum, 0.25, 7);
-                const obj3 = messagesRef(11617);
+                const result1 = DCDChatManager3.customKeyboardWillShow(tmp38, messagesRef(11619).getKeyboardActionSheetHeight().minimum, 0.25, 7);
+                const obj3 = messagesRef(11619);
               }
             }
           }

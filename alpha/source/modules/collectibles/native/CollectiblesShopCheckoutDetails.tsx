@@ -1,25 +1,25 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11279
+// Function ID: 11280
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1076, 9078, 21, 4756, 576, 8494, 5799, 11278, 8469, 9102, 8439, 9077, 1970, 9098, 1973, 1077, 9124, 9123, 9090, 1115, 4752, 7793, 9126, 11279, 8446, 4414, 9142, 2]
+// Dependencies: [19, 17, 1076, 9079, 21, 4756, 576, 8495, 5804, 11280, 8470, 9103, 8440, 9078, 1970, 9099, 1973, 1077, 9125, 9124, 9091, 1115, 4752, 7795, 9127, 11281, 8447, 4414, 9143, 2]
 // Exports: default
 
-// Module 11277 (CollectiblesShopCheckoutDetails)
+// Module 11279 (CollectiblesShopCheckoutDetails)
 import nativeDefault from "native" /* 576 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1077 */;
 import utils from "utils" /* 1970 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import useShopProductItems from "useShopProductItems" /* 8439 */;
-import useCurrentUser from "useCurrentUser" /* 8446 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8469 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8494 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 9077 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9090 */;
-import NameplateDefault from "Nameplate" /* 9098 */;
-import _modDef9123 from "module_9123" /* 9123 */;
-import getProductName from "getProductName" /* 9142 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import useShopProductItems from "useShopProductItems" /* 8440 */;
+import useCurrentUser from "useCurrentUser" /* 8447 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8470 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8495 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9078 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9091 */;
+import NameplateDefault from "Nameplate" /* 9099 */;
+import _modDef9124 from "module_9124" /* 9124 */;
+import getProductName from "getProductName" /* 9143 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,19 +30,19 @@ function ProfileEffectAssetPreview(item) {
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: null };
     const obj2 = { source: null, alt: null, style: null, resizeMode: "cover" };
-    const obj3 = { uri: tmp2(11278) };
+    const obj3 = { uri: tmp2(11280) };
     obj2.source = obj3;
     obj2.alt = tmp4.accessibilityLabel;
     obj2.style = tmp.profileEffect;
-    const items = [React5(tmp2(5799), obj2), ];
+    const items = [React5(tmp2(5804), obj2), ];
     const obj4 = { style: tmp.profileEffect, source: null, alt: null, resizeMode: "cover" };
     const obj5 = { uri: tmp4.thumbnailPreviewSrc };
     obj4.source = obj5;
     obj4.alt = tmp4.title;
-    items[1] = React5(tmp2(5799), obj4);
+    items[1] = React5(tmp2(5804), obj4);
     obj.children = items;
     tmp5 = React6(View, obj);
-    const tmp2Result = tmp2(5799);
+    const tmp2Result = tmp2(5804);
   }
   return tmp5;
 }
@@ -52,8 +52,8 @@ function ProfileFrameAssetPreview(arg0) {
   let tmp4 = null;
   if (null != tmp3) {
     const obj = { profileFrame: tmp3, previewWidth: width, previewHeight: height, profileBackgroundColor: tmp(576).colors.BACKGROUND_BASE_LOW };
-    tmp4 = React5(tmp(9102), obj);
-    const tmpResult = tmp(9102);
+    tmp4 = React5(tmp(9103), obj);
+    const tmpResult = tmp(9103);
   }
   return tmp4;
 }
@@ -119,11 +119,11 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   ({ product, width, height } = userAvatarSource);
   const ALL = FractionalPremiumSKUs.FractionalPremiumSKUsSets.ALL;
   if (ALL.has(product.skuId)) {
-    const size = { skuId: product.skuId, width: tmp2(9124).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: tmp2(9124).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
-    return React5(tmp2(9124).FractionalNitroCoinIllustration, size);
+    const size = { skuId: product.skuId, width: tmp2(9125).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT, height: tmp2(9125).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT };
+    return React5(tmp2(9125).FractionalNitroCoinIllustration, size);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj = { source: null, style: null };
-    const obj2 = { uri: _modDef9123 };
+    const obj2 = { uri: _modDef9124 };
     obj.source = obj2;
     obj.style = tmp.externalProductImage;
     return React5(FastImageDefault, obj);
@@ -216,11 +216,11 @@ function ProductPriceAmountTag(product) {
   const memo = noop.useMemo(() => {
     if (useOrbPrice) {
       const obj = { product, hasShopDiscount };
-      const orbPrice = tmp(7793).getProductOrbPrice(obj);
-      const tmpResult = tmp(7793);
+      const orbPrice = tmp(7795).getProductOrbPrice(obj);
+      const tmpResult = tmp(7795);
     } else {
-      const priceText = tmp(9126).getFormattedPriceForCollectiblesProduct(product, hasShopDiscount, true);
-      const tmpResult2 = tmp(9126);
+      const priceText = tmp(9127).getFormattedPriceForCollectiblesProduct(product, hasShopDiscount, true);
+      const tmpResult2 = tmp(9127);
     }
     return { orbPrice, priceText };
   }, items);
@@ -241,7 +241,7 @@ function ProductPriceAmountTag(product) {
 }
 const View = fn(17).View;
 const EXTERNAL_PRODUCT_SKU_IDS = fn(1076).EXTERNAL_PRODUCT_SKU_IDS;
-const CollectiblesPreviewConstants = fn(9078);
+const CollectiblesPreviewConstants = fn(9079);
 ({ BUNDLE_PREVIEW_CONFIG: metroRequire, SAMPLE_PROFILE_ASPECT_RATIO } = CollectiblesPreviewConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -314,7 +314,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
     if (flag2) {
       const intl = tmp(1115).intl;
       const obj2 = { product: tmp3, hasShopDiscount };
-      const productOrbPrice = tmp(7793).getProductOrbPrice(obj2);
+      const productOrbPrice = tmp(7795).getProductOrbPrice(obj2);
       let str2;
       if (productOrbPrice != null) {
         str2 = productOrbPrice.amount;
@@ -324,13 +324,13 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
       }
       const obj3 = { orbAmount: str2 };
       let str = intl.formatToPlainString(tmp(1115).t.W4DfeF, obj3);
-      const tmpResult = tmp(7793);
+      const tmpResult = tmp(7795);
     } else {
-      str = tmp(9126).getFormattedPriceForCollectiblesProduct(tmp3, hasShopDiscount, true);
+      str = tmp(9127).getFormattedPriceForCollectiblesProduct(tmp3, hasShopDiscount, true);
       if (str == null) {
         str = "";
       }
-      const tmpResult2 = tmp(9126);
+      const tmpResult2 = tmp(9127);
     }
     return "" + productNameAndTypeLabel + ", " + str;
   }, items);

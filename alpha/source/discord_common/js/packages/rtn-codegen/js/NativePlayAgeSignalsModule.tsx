@@ -1,9 +1,9 @@
-// Module ID: 8847
-// Function ID: 8848
+// Module ID: 8848
+// Function ID: 8849
 // Name: NativePlayAgeSignalsModule
 // Dependencies: [17, 2]
 
-// Module 8847 (NativePlayAgeSignalsModule)
+// Module 8848 (NativePlayAgeSignalsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

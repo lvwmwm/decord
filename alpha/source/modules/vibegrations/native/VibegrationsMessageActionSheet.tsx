@@ -1,16 +1,16 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17026
+// Function ID: 17027
 // Name: VibegrationsMessageActionSheet
-// Dependencies: [19, 21, 8447, 4723, 7429, 4454, 1115, 4702, 7437, 7439, 12077, 2]
+// Dependencies: [19, 21, 8448, 4723, 7434, 4454, 1115, 4702, 7442, 7444, 12079, 2]
 // Exports: openMessageAuthorProfile, showVibegrationsMessageActions
 
-// Module 17018 (VibegrationsMessageActionSheet)
+// Module 17026 (VibegrationsMessageActionSheet)
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import CopyIcon from "CopyIcon" /* 4702 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import ClipboardUtils from "ClipboardUtils" /* 7429 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -42,9 +42,9 @@ function VibegrationsMessageActionSheet(content) {
     const intl2 = tmp4(1115).intl;
     obj2.label = intl2.string(tmp4(1115).t.JrGD7E);
     const obj3 = { IconComponent: tmp4(4702).CopyIcon };
-    obj2.icon = tmp3(tmp4(7439).ActionSheetRow.Icon, obj3);
+    obj2.icon = tmp3(tmp4(7444).ActionSheetRow.Icon, obj3);
     obj2.onPress = callback;
-    tmp3Result = tmp3(tmp4(7439).ActionSheetRow, obj2);
+    tmp3Result = tmp3(tmp4(7444).ActionSheetRow, obj2);
   }
   const items2 = [tmp3Result, ];
   let tmp3Result2 = null;
@@ -52,13 +52,13 @@ function VibegrationsMessageActionSheet(content) {
     let obj = { label: null, icon: null, onPress: null };
     let intl = tmp4(1115).intl;
     obj.label = intl.string(tmp4(1115).t.iXAna6);
-    let obj4 = { IconComponent: tmp4(12077).UserIcon };
-    obj.icon = tmp3(tmp4(7439).ActionSheetRow.Icon, obj4);
+    let obj4 = { IconComponent: tmp4(12079).UserIcon };
+    obj.icon = tmp3(tmp4(7444).ActionSheetRow.Icon, obj4);
     obj.onPress = callback1;
-    tmp3Result2 = tmp3(tmp4(7439).ActionSheetRow, obj);
+    tmp3Result2 = tmp3(tmp4(7444).ActionSheetRow, obj);
   }
   items2[1] = tmp3Result2;
-  return closure_4(content(7437).ActionSheet, { children: closure_5(content(7439).ActionSheetRow.Group, { hasIcons: true, children: items2 }) });
+  return closure_4(content(7442).ActionSheet, { children: closure_5(content(7444).ActionSheetRow.Group, { hasIcons: true, children: items2 }) });
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);

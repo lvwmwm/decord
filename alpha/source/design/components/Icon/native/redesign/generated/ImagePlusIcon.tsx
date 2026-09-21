@@ -1,13 +1,13 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18190
+// Function ID: 18191
 // Name: ImagePlusIcon
-// Dependencies: [19, 21, 576, 4456, 18180, 2]
+// Dependencies: [19, 21, 576, 4456, 18191, 2]
 // Exports: ImagePlusIcon
 
-// Module 18179 (ImagePlusIcon)
+// Module 18190 (ImagePlusIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod18180 from "module_18180" /* 18180 */;
+import _mod18191 from "module_18191" /* 18191 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ImagePlusIcon = function ImagePlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod18180, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod18191, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

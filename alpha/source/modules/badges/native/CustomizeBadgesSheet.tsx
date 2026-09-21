@@ -1,10 +1,10 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14896
+// Function ID: 14897
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8428, 1372, 8460, 1074, 7391, 1374, 21, 4756, 576, 4724, 8175, 14891, 8173, 1115, 7206, 4710, 5819, 11455, 8178, 11462, 7202, 4492, 4757, 4760, 13375, 8174, 6892, 4467, 11456, 1612, 504, 4414, 7402, 7422, 7392, 9505, 9475, 8459, 1241, 8465, 4454, 1478, 11258, 14892, 4752, 5789, 7390, 7389, 6864, 2]
+// Dependencies: [19, 17, 8429, 1372, 8461, 1074, 7396, 1374, 21, 4756, 576, 4724, 8176, 14897, 8174, 1115, 7211, 4710, 5824, 11457, 8179, 11464, 7207, 4492, 4757, 4760, 13377, 8175, 6897, 4467, 11458, 1612, 504, 4414, 7407, 7427, 7397, 9506, 9476, 8460, 1241, 8466, 4454, 1478, 11259, 14898, 4752, 5794, 7395, 7394, 6869, 2]
 // Exports: default
 
-// Module 14890 (CustomizeBadgesSheet)
+// Module 14896 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -15,23 +15,23 @@ import CircleInformationIcon from "CircleInformationIcon" /* 4710 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import timing from "timing" /* 4757 */;
 import timingPresets from "timingPresets" /* 4760 */;
-import Card from "Card" /* 5819 */;
-import EyeSlashIcon from "EyeSlashIcon" /* 7206 */;
-import ContextMenu from "ContextMenu" /* 8173 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 8175 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8459 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8465 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9475 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9505 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11258 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11455 */;
-import BadgeUtils from "BadgeUtils" /* 11462 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13375 */;
-import BadgeGrid from "BadgeGrid" /* 14891 */;
+import Card from "Card" /* 5824 */;
+import EyeSlashIcon from "EyeSlashIcon" /* 7211 */;
+import ContextMenu from "ContextMenu" /* 8174 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 8176 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8460 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8466 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9476 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11259 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11457 */;
+import BadgeUtils from "BadgeUtils" /* 11464 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 13377 */;
+import BadgeGrid from "BadgeGrid" /* 14897 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8428 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
 import UserStore from "UserStore" /* 1372 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8460 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8461 */;
 
 require = fn;
 function HideBadgeMenu(arg0) {
@@ -86,7 +86,7 @@ function BadgeTileContent(arg0) {
         const obj4 = { style: tmp.indicatorButton, children: null };
         const obj5 = { size: "sm", variant: "secondary-overlay", icon: null, accessibilityLabel: null, accessibilityHint: null, onPress: null };
         const obj6 = { size: "sm", color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-        obj5.icon = tmp10(tmp8(7206).EyeSlashIcon, obj6);
+        obj5.icon = tmp10(tmp8(7211).EyeSlashIcon, obj6);
         if (showAccessibilityLabel == null) {
           showAccessibilityLabel = badge.name;
         }
@@ -94,7 +94,7 @@ function BadgeTileContent(arg0) {
         const intl = tmp8(1115).intl;
         obj5.accessibilityHint = intl.string(tmp8(1115).t.hHHpvU);
         obj5.onPress = onShowPress;
-        obj4.children = tmp10(tmp8(8178).IconButton, obj5);
+        obj4.children = tmp10(tmp8(8179).IconButton, obj5);
         let tmp10Result = tmp10(hasOwnProperty, obj4);
       }
       items[1] = tmp10Result;
@@ -113,7 +113,7 @@ get_ActivityIndicator = fn(17);
 ({ Platform, Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AnalyticsObjects: c10, AnalyticsPages: closure_11, AnalyticsSections: closure_12 } = Constants);
-let closure_13 = fn(7391).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
+let closure_13 = fn(7396).ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
 const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
@@ -152,7 +152,7 @@ function getSlotOffset(arg0, arg1) {
   return point;
 }
 let obj9 = { alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_32 };
-getSlotOffset.__closure = { BADGE_GRID_COLUMNS: fn(14891).BADGE_GRID_COLUMNS, BADGE_GRID_GAP: fn(14891).BADGE_GRID_GAP };
+getSlotOffset.__closure = { BADGE_GRID_COLUMNS: fn(14897).BADGE_GRID_COLUMNS, BADGE_GRID_GAP: fn(14897).BADGE_GRID_GAP };
 getSlotOffset.__workletHash = 8647997879684;
 getSlotOffset.__initData = { code: "function getSlotOffset_CustomizeBadgesSheetTsx1(index,tileSize){const{BADGE_GRID_COLUMNS,BADGE_GRID_GAP}=this.__closure;const column=index%BADGE_GRID_COLUMNS;return{x:column*(tileSize+BADGE_GRID_GAP),y:Math.floor(index/BADGE_GRID_COLUMNS)*(tileSize+BADGE_GRID_GAP)};}" };
 let closure_24 = noop.memo((badge) => {
@@ -200,8 +200,8 @@ let closure_24 = noop.memo((badge) => {
         let stringResult;
         if (alwaysVisible) {
           const intl2 = tmp6(1115).intl;
-          stringResult = intl2.string(tmp6(11462).getAlwaysVisibleCopy(tmp9));
-          const tmp6Result = tmp6(11462);
+          stringResult = intl2.string(tmp6(11464).getAlwaysVisibleCopy(tmp9));
+          const tmp6Result = tmp6(11464);
         }
         const merged = Object.assign({ accessibilityRole: "button", accessibilityHint: stringResult });
         let accessibilityActions;

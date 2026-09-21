@@ -1,9 +1,9 @@
-// Module ID: 5721
-// Function ID: 5722
+// Module ID: 5726
+// Function ID: 5727
 // Name: FrecencyStore
 // Dependencies: [1220, 2041, 2063, 2095, 4577, 1074, 1084, 4793, 12, 504, 573, 2]
 
-// Module 5721 (FrecencyStore)
+// Module 5726 (FrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

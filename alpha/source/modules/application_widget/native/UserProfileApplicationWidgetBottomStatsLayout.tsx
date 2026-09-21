@@ -1,13 +1,13 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9296
+// Function ID: 9297
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4756, 576, 9203, 9290, 4752, 9291, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9204, 9291, 4752, 9292, 2]
 // Exports: default
 
-// Module 9295 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 9296 (UserProfileApplicationWidgetBottomStatsLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9203 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9290 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9204 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 9291 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -48,7 +48,7 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         } else {
           tmp5Result = null;
           if ("skeleton" === iter.label.status) {
-            tmp5Result = tmp5(Text(9291).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(Text(9292).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

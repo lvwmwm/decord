@@ -1,10 +1,10 @@
-// Module ID: 7614
-// Function ID: 7615
+// Module ID: 7616
+// Function ID: 7617
 // Name: useCustomJoinSound
 // Dependencies: [1220, 5226, 504, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 7614 (useCustomJoinSound)
+// Module 7616 (useCustomJoinSound)
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 8107
-// Function ID: 8108
+// Module ID: 8109
+// Function ID: 8110
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 2041, 7870, 2095, 21, 4756, 1177, 576, 504, 4457, 4574, 8108, 5334, 1115, 8109, 8110, 2]
+// Dependencies: [19, 17, 2041, 7872, 2095, 21, 4756, 1177, 576, 504, 4457, 4574, 8110, 5339, 1115, 8111, 8112, 2]
 
-// Module 8107 (PressableNavigatorBackIcon)
+// Module 8109 (PressableNavigatorBackIcon)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;

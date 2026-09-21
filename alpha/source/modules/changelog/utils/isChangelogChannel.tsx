@@ -1,10 +1,10 @@
-// Module ID: 8644
-// Function ID: 8645
+// Module ID: 8645
+// Function ID: 8646
 // Name: isChangelogChannel
 // Dependencies: [2041, 2094, 2]
 // Exports: default
 
-// Module 8644 (isChangelogChannel)
+// Module 8645 (isChangelogChannel)
 import ChannelStore from "ChannelStore" /* 2041 */;
 
 const SYSTEM_UPDATES_USER_ID = fn(2094).SYSTEM_UPDATES_USER_ID;

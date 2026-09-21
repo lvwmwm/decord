@@ -1,20 +1,20 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 18014
+// Function ID: 18015
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5671, 5714, 1074, 1375, 2022, 21, 4756, 576, 7221, 11411, 5810, 4409, 5349, 18004, 10646, 5103, 4752, 1115, 4652, 2108, 5186, 5184, 5334, 10432, 18005, 11386, 7370, 1397, 9036, 6843, 7325, 2]
+// Dependencies: [5, 32, 19, 17, 5676, 5719, 1074, 1375, 2022, 21, 4756, 576, 7226, 11413, 5815, 4409, 5354, 18015, 10647, 5103, 4752, 1115, 4652, 2108, 5186, 5184, 5339, 10433, 18016, 11388, 7375, 1397, 9037, 6848, 7330, 2]
 
-// Module 18003 (GuildSettingsStickerCreate)
+// Module 18014 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 576 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import useInitialValueDefault from "useInitialValue" /* 5810 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7221 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11386 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11411 */;
+import useInitialValueDefault from "useInitialValue" /* 5815 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7226 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11388 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11413 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5671 */;
-import StickersStore from "StickersStore" /* 5714 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
+import StickersStore from "StickersStore" /* 5719 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -466,8 +466,8 @@ export default noop.forwardRef((stickerId, ref) => {
   obj16.accessibilityLabel = intl6.string(stickerId(1115).t.O1REe1);
   if (null != tmp16Result) {
     const obj17 = { sticker: tmp16Result, size: tmp14(576).space.PX_96, animated: true };
-    let tmp32Result = tmp32(tmp14(10432), obj17);
-    const tmp14Result4 = tmp14(10432);
+    let tmp32Result = tmp32(tmp14(10433), obj17);
+    const tmp14Result4 = tmp14(10433);
   } else if (null != uri) {
     const obj18 = { source: null, style: null, resizeMode: "contain" };
     const obj19 = { uri };
@@ -475,10 +475,10 @@ export default noop.forwardRef((stickerId, ref) => {
     obj18.style = tmp.stickerPreviewImage;
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(18005).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(18016).StickerPlusIcon, { size: "lg" });
   }
   obj16.children = tmp32Result;
-  items4[1] = onPressEmoji(stickerId(5334).PressableHighlight, obj16);
+  items4[1] = onPressEmoji(stickerId(5339).PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: null };
   const intl7 = tmp31(1115).intl;
   obj20.children = intl7.string(stickerId(1115).t["3BQmiC"]);
@@ -501,10 +501,10 @@ export default noop.forwardRef((stickerId, ref) => {
       const tmp14Result6 = tmp14(1397);
     }
     obj22.src = emojiURL;
-    let tmp32Result2 = tmp32(tmp14(7370), obj22);
-    const tmp14Result5 = tmp14(7370);
+    let tmp32Result2 = tmp32(tmp14(7375), obj22);
+    const tmp14Result5 = tmp14(7375);
   } else {
-    tmp32Result2 = tmp32(tmp31(9036).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result2 = tmp32(tmp31(9037).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   const items5 = [tmp32Result2, ];
   if (null != first1) {
@@ -516,7 +516,7 @@ export default noop.forwardRef((stickerId, ref) => {
   }
   items5[1] = onPressEmoji(stickerId(4752).Text, { variant: "text-md/semibold", color: "input-placeholder-text-default", children: combined });
   obj21.children = items5;
-  items4[3] = closure_17(stickerId(5334).PressableHighlight, obj21);
+  items4[3] = closure_17(stickerId(5339).PressableHighlight, obj21);
   const obj24 = { ref: ref1, label: null, placeholder: null, onChange: null, onFocus: null, onSubmitEditing: null, disabled: false, clearable: true, returnKeyType: "next", submitBehavior: "submit" };
   const intl9 = tmp31(1115).intl;
   obj24.label = intl9.string(stickerId(1115).t["0VRh6n"]);
@@ -534,7 +534,7 @@ export default noop.forwardRef((stickerId, ref) => {
       current2.scrollToEnd({ animated: true });
     }
   };
-  items4[4] = onPressEmoji(stickerId(6843).TextInput, obj24);
+  items4[4] = onPressEmoji(stickerId(6848).TextInput, obj24);
   const obj26 = { ref: ref2, maxLength: 100, label: null, placeholder: null, onChange: null, onFocus: null };
   const intl11 = tmp31(1115).intl;
   obj26.label = intl11.string(stickerId(1115).t.uGccej);
@@ -542,7 +542,7 @@ export default noop.forwardRef((stickerId, ref) => {
   obj26.placeholder = intl12.string(stickerId(1115).t.zwR0fa);
   obj26.onChange = tmp8;
   obj26.onFocus = onFocus;
-  items4[5] = onPressEmoji(stickerId(7325).TextArea, obj26);
+  items4[5] = onPressEmoji(stickerId(7330).TextArea, obj26);
   const obj27 = {
     onPress: function handleSave() {
       const self = this;

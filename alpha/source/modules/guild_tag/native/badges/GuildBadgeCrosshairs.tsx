@@ -1,12 +1,12 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14197
+// Function ID: 14198
 // Name: GuildBadgeCrosshairs
-// Dependencies: [19, 21, 14180, 8727, 2]
+// Dependencies: [19, 21, 14186, 8728, 2]
 // Exports: GuildBadgeCrosshairs
 
-// Module 14191 (GuildBadgeCrosshairs)
-import inlineStyles from "inlineStyles" /* 8727 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14180 */;
+// Module 14197 (GuildBadgeCrosshairs)
+import inlineStyles from "inlineStyles" /* 8728 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14186 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

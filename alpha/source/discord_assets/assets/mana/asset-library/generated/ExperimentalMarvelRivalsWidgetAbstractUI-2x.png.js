@@ -1,8 +1,8 @@
-// Module ID: 6216
-// Function ID: 6217
+// Module ID: 6221
+// Function ID: 6222
 // Dependencies: [2]
 
-// Module 6216
+// Module 6221
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalMarvelRivalsWidgetAbstractUI-2x.png.js");

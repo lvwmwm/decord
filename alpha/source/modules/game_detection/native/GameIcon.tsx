@@ -1,14 +1,14 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7417
+// Function ID: 7418
 // Name: GameIcon
-// Dependencies: [19, 17, 1374, 21, 4756, 576, 7413, 7414, 7415, 7416, 2]
+// Dependencies: [19, 17, 1374, 21, 4756, 576, 7418, 7419, 7420, 7421, 2]
 
-// Module 7412 (GameIcon)
+// Module 7417 (GameIcon)
 import nativeDefault from "native" /* 576 */;
-import _modDef7413 from "module_7413" /* 7413 */;
-import _modDef7414 from "module_7414" /* 7414 */;
-import _modDef7415 from "module_7415" /* 7415 */;
-import _modDef7416 from "module_7416" /* 7416 */;
+import _modDef7418 from "module_7418" /* 7418 */;
+import _modDef7419 from "module_7419" /* 7419 */;
+import _modDef7420 from "module_7420" /* 7420 */;
+import _modDef7421 from "module_7421" /* 7421 */;
 import noop from "module_19" /* 19 */;
 
 class GameIcon {

@@ -1,9 +1,9 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11729
+// Function ID: 11730
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 2041, 1074, 4749, 573, 1271, 7916, 7696, 4936, 4769, 2]
+// Dependencies: [5, 2041, 1074, 4749, 573, 1271, 7918, 7698, 4936, 4769, 2]
 
-// Module 11727 (ActivitiesActionCreators)
+// Module 11729 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;

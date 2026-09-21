@@ -1,16 +1,16 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 12940
+// Function ID: 12941
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [19, 17, 12928, 1074, 21, 4756, 576, 8870, 1115, 4752, 12931, 7437, 2]
+// Dependencies: [19, 17, 12930, 1074, 21, 4756, 576, 8871, 1115, 4752, 12933, 7442, 2]
 // Exports: default
 
-// Module 12938 (ContactSyncSettingsActionSheet)
+// Module 12940 (ContactSyncSettingsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const ContactSyncModalStore = fn(12928);
+const ContactSyncModalStore = fn(12930);
 ({ setAllowEmail: c3, setAllowPhone: closure_4, setAllowSync: hasOwnProperty, useContactSyncModalStore: metroRequire } = ContactSyncModalStore);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

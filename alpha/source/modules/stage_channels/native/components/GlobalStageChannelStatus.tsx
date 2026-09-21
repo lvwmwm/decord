@@ -1,17 +1,17 @@
-// Module ID: 9774
-// Function ID: 9775
+// Module ID: 9775
+// Function ID: 9776
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 4447, 2046, 1074, 21, 1115, 4756, 576, 4909, 504, 5203, 9556, 8897, 9763, 5634, 8681, 8683, 8668, 8664, 1177, 4752, 5187, 5186, 9765, 9671, 4690, 4464, 9649, 5239, 2]
+// Dependencies: [5, 32, 19, 17, 4447, 2046, 1074, 21, 1115, 4756, 576, 4909, 504, 5203, 9557, 8898, 9764, 5639, 8682, 8684, 8669, 8665, 1177, 4752, 5187, 5186, 9766, 9672, 4690, 4464, 9650, 5239, 2]
 // Exports: default
 
-// Module 9774 (GlobalStageChannelStatus)
+// Module 9775 (GlobalStageChannelStatus)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useChannelNameDefault from "useChannelName" /* 4909 */;
 import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8668 */;
-import PushNotificationDefault from "PushNotification" /* 9556 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9765 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8669 */;
+import PushNotificationDefault from "PushNotification" /* 9557 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9766 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -53,18 +53,18 @@ class StageChannelRaiseHandAck {
               channel = tmp7;
               if (null != id) {
                 if (obj9.shouldAgeVerifyToSpeakForCurrentUser(id.id)) {
-                  const obj5 = { entryPoint: tmp41(8683).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
-                  const result = tmp3(8681).showAgeVerificationGetStartedModal(obj5);
-                  const obj4 = tmp3(8681);
+                  const obj5 = { entryPoint: tmp41(8684).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+                  const result = tmp3(8682).showAgeVerificationGetStartedModal(obj5);
+                  const obj4 = tmp3(8682);
                 } else {
                   dependencyMap(true);
                   dependencyMap = 1;
                   c4 = 2;
                   c5 = 1;
-                  const obj6 = { value: tmp41(8668).audienceAckRequestToSpeak(id, false), done: false };
+                  const obj6 = { value: tmp41(8669).audienceAckRequestToSpeak(id, false), done: false };
                   return obj6;
                 }
-                obj9 = channel(5634);
+                obj9 = channel(5639);
               }
               c5 = 3;
             }
@@ -80,8 +80,8 @@ class StageChannelRaiseHandAck {
             dependencyMap = 0;
             closure_129_3(false);
             if (null == key.getKey()) {
-              tmp27(8664).openStageChannel(closure_129_0);
-              const obj8 = tmp27(8664);
+              tmp27(8665).openStageChannel(closure_129_0);
+              const obj8 = tmp27(8665);
             }
           }
           dependencyMap = 0;
@@ -283,7 +283,7 @@ export default function GlobalStageChannelStatus(arg0) {
     stringResult = intl.string(id(1115).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(9671)(id);
+  let invitedHeaderText = tmp3(9672)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const stateFromStores = id(504).useStateFromStores(items, () => StageInstanceStore.getStageInstanceByChannel(id), items1);
@@ -315,7 +315,7 @@ export default function GlobalStageChannelStatus(arg0) {
         } else {
           const obj3 = { style: tmp.noticeContainer, children: null };
           const obj4 = { animated: true, barStyle: str };
-          const items2 = [closure_10(tmp3(9649), obj4), , ];
+          const items2 = [closure_10(tmp3(9650), obj4), , ];
           const obj5 = { style: activeSpeakerIcon, size: tmp8(1177).Icon.Sizes.REFRESH_SMALL_16, source: tmp8(5239).getChannelIconWithGuild(channel, guild) };
           items2[1] = closure_10(tmp8(1177).Icon, obj5);
           let tmp13Result = "" !== str2;

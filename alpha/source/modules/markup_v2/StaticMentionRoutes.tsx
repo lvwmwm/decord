@@ -1,9 +1,9 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8371
+// Function ID: 8372
 // Name: StaticMentionRoutes
 // Dependencies: [2]
 
-// Module 8370 (StaticMentionRoutes)
+// Module 8371 (StaticMentionRoutes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/StaticMentionRoutes.tsx");

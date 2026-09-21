@@ -1,9 +1,9 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16487
+// Function ID: 16488
 // Name: SortableChannels
 // Dependencies: [19, 17, 21, 12, 1478, 2]
 
-// Module 16481 (SortableChannels)
+// Module 16487 (SortableChannels)
 import noop from "module_19" /* 19 */;
 import apply from "module_12" /* 12 */;
 

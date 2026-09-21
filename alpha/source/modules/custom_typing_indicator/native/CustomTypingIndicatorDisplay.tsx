@@ -1,19 +1,19 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12233
+// Function ID: 12234
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 4756, 1115, 12222, 5184, 12232, 4752, 5334, 576, 2]
+// Dependencies: [19, 21, 4756, 1115, 12224, 5184, 12234, 4752, 5339, 576, 2]
 // Exports: default
 
-// Module 12231 (CustomTypingIndicatorDisplay)
+// Module 12233 (CustomTypingIndicatorDisplay)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12222 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12232 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12224 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12234 */;
 import noop from "module_19" /* 19 */;
 
 const Text_Text = tmp3(4752);
 const Stack_Stack = tmp3(5184);
-const Pressables = tmp3(5334);
+const Pressables = tmp3(5339);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);

@@ -1,10 +1,10 @@
-// Module ID: 9630
-// Function ID: 9631
+// Module ID: 9631
+// Function ID: 9632
 // Name: PresenceActivityFiltering
 // Dependencies: [4983, 1978, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 9630 (PresenceActivityFiltering)
+// Module 9631 (PresenceActivityFiltering)
 import Server from "Server" /* 1978 */;
 import ApplicationStore from "ApplicationStore" /* 4983 */;
 

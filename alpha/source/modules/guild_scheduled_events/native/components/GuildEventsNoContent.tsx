@@ -1,15 +1,15 @@
-// Module ID: 10062
-// Function ID: 10063
+// Module ID: 10063
+// Function ID: 10064
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4395, 1074, 1085, 21, 4756, 5736, 576, 504, 8677, 9880, 9882, 4752, 1115, 9854, 2]
+// Dependencies: [19, 17, 4395, 1074, 1085, 21, 4756, 5741, 576, 504, 8678, 9881, 9883, 4752, 1115, 9855, 2]
 // Exports: default
 
-// Module 10062 (GuildEventsNoContent)
+// Module 10063 (GuildEventsNoContent)
 import nativeDefault from "native" /* 576 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9854 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
-import TextStyles from "TextStyles" /* 5736 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -42,9 +42,9 @@ export default function GuildEventsNoContent(guild) {
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
-  obj3.icon = onClose(9880);
-  obj3.IconComponent = guild(9882).CalendarIcon;
-  const items2 = [closure_7(onClose(8677), obj3), , , ];
+  obj3.icon = onClose(9881);
+  obj3.IconComponent = guild(9883).CalendarIcon;
+  const items2 = [closure_7(onClose(8678), obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1115).intl;
   obj4.children = intl.string(guild(1115).t["WgZ+3D"]);

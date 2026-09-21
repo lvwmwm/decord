@@ -1,14 +1,14 @@
-// Module ID: 13448
-// Function ID: 13449
+// Module ID: 13450
+// Function ID: 13451
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 4756, 8446, 11375, 9126, 1115, 2]
+// Dependencies: [19, 17, 21, 4756, 8447, 11377, 9127, 1115, 2]
 // Exports: OrbBadgePreview
 
-// Module 13448 (OrbBadgePreview)
+// Module 13450 (OrbBadgePreview)
 import util from "util" /* 1115 */;
-import useCurrentUser from "useCurrentUser" /* 8446 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9126 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11375 */;
+import useCurrentUser from "useCurrentUser" /* 8447 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9127 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11377 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

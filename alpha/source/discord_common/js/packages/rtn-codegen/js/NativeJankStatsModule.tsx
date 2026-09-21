@@ -1,9 +1,9 @@
-// Module ID: 16342
-// Function ID: 16343
+// Module ID: 16348
+// Function ID: 16349
 // Name: NativeJankStatsModule
 // Dependencies: [17, 2]
 
-// Module 16342 (NativeJankStatsModule)
+// Module 16348 (NativeJankStatsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

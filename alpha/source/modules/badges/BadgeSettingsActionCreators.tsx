@@ -1,10 +1,10 @@
-// Module ID: 14876
-// Function ID: 14877
+// Module ID: 14882
+// Function ID: 14883
 // Name: BadgeSettingsActionCreators
 // Dependencies: [5, 1074, 1271, 1231, 2]
 // Exports: updateBadgeSettings
 
-// Module 14876 (BadgeSettingsActionCreators)
+// Module 14882 (BadgeSettingsActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;

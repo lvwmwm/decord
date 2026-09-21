@@ -1,13 +1,13 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 16949
+// Function ID: 16950
 // Name: RemixIcon
-// Dependencies: [19, 21, 576, 4456, 16943, 2]
+// Dependencies: [19, 21, 576, 4456, 16950, 2]
 // Exports: RemixIcon
 
-// Module 16942 (RemixIcon)
+// Module 16949 (RemixIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod16943 from "module_16943" /* 16943 */;
+import _mod16950 from "module_16950" /* 16950 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const RemixIcon = function RemixIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16943, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16950, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

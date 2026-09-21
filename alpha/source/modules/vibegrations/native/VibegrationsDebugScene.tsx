@@ -1,26 +1,26 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17062
+// Function ID: 17063
 // Name: VibegrationsDebugScene
-// Dependencies: [32, 19, 17, 7954, 13359, 17055, 21, 4756, 576, 1115, 3678, 1484, 1612, 504, 9889, 7429, 17056, 4454, 4702, 16931, 9890, 17057, 17063, 17072, 17074, 2]
+// Dependencies: [32, 19, 17, 7956, 13361, 17063, 21, 4756, 576, 1115, 3678, 1484, 1612, 504, 9890, 7434, 17064, 4454, 4702, 16938, 9891, 17065, 17071, 17080, 17082, 2]
 // Exports: default
 
-// Module 17054 (VibegrationsDebugScene)
+// Module 17062 (VibegrationsDebugScene)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import CopyIcon from "CopyIcon" /* 4702 */;
-import ClipboardUtils from "ClipboardUtils" /* 7429 */;
-import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17056 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17064 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7954 */;
-import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17055 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7956 */;
+import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17063 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const requestDebugStatus = fn(13359).requestDebugStatus;
+const requestDebugStatus = fn(13361).requestDebugStatus;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4756);

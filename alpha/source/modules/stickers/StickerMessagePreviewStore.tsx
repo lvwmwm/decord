@@ -1,9 +1,9 @@
-// Module ID: 5479
-// Function ID: 5480
+// Module ID: 5484
+// Function ID: 5485
 // Name: StickerMessagePreviewStore
 // Dependencies: [5105, 504, 573, 2]
 
-// Module 5479 (StickerMessagePreviewStore)
+// Module 5484 (StickerMessagePreviewStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DraftStore from "DraftStore" /* 5105 */;

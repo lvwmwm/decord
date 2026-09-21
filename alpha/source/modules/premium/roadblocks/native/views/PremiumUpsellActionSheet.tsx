@@ -1,21 +1,21 @@
-// Module ID: 8092
-// Function ID: 8093
+// Module ID: 8094
+// Function ID: 8095
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4748, 1182, 4577, 1372, 1374, 1074, 4803, 8093, 8087, 21, 4756, 576, 4457, 4414, 8094, 5373, 5345, 8095, 8096, 8098, 5904, 1115, 8099, 8100, 4723, 8091, 8101, 8102, 13594, 13595, 12462, 12471, 13598, 1094, 1364, 9088, 5799, 5198, 504, 7402, 9426, 10222, 9434, 1241, 10223, 4622, 7437, 13599, 4752, 5186, 8309, 2]
+// Dependencies: [19, 17, 4748, 1182, 4577, 1372, 1374, 1074, 4803, 8095, 8089, 21, 4756, 576, 4457, 4414, 8096, 5378, 5350, 8097, 8098, 8100, 5909, 1115, 8101, 8102, 4723, 8093, 8103, 8104, 13600, 13601, 12464, 12473, 13604, 1094, 1364, 9089, 5804, 5198, 504, 7407, 9427, 10223, 9435, 1241, 10224, 4622, 7442, 13605, 4752, 5186, 8310, 2]
 // Exports: default
 
-// Module 8092 (PremiumUpsellActionSheet)
+// Module 8094 (PremiumUpsellActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PremiumUtils from "PremiumUtils" /* 4414 */;
 import ChatInputUtils from "ChatInputUtils" /* 4622 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8091 */;
-import showForLaterModal from "showForLaterModal" /* 8101 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8102 */;
-import APNGPlayer from "APNGPlayer" /* 9088 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8093 */;
+import showForLaterModal from "showForLaterModal" /* 8103 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8104 */;
+import APNGPlayer from "APNGPlayer" /* 9089 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
@@ -73,9 +73,9 @@ const PremiumConstants = fn(1374);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, AnalyticsPages: map1, ThemeTypes: closure_14 } = Constants);
 const ApplicationStreamFPS = fn(4803).ApplicationStreamFPS;
-const SavedMessagesConstants = fn(8093);
+const SavedMessagesConstants = fn(8095);
 ({ SAVED_BOOKMARKS_MAX: closure_16, SAVED_REMINDERS_MAX: closure_17 } = SavedMessagesConstants);
-const premiumMax = fn(8087).MAX_SCHEDULED_MESSAGES_PER_USER;
+const premiumMax = fn(8089).MAX_SCHEDULED_MESSAGES_PER_USER;
 const jsxProd = fn(21);
 ({ jsx: closure_19, Fragment: closure_20, jsxs: closure_21 } = jsxProd);
 const createStyles = fn(4756);

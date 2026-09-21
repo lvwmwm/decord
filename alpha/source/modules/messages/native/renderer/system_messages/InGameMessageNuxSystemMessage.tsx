@@ -1,13 +1,13 @@
-// Module ID: 8302
-// Function ID: 8303
+// Module ID: 8303
+// Function ID: 8304
 // Name: InGameMessageNuxSystemMessage
-// Dependencies: [4983, 1074, 8210, 8217, 8219, 2108, 1115, 8221, 2]
+// Dependencies: [4983, 1074, 8211, 8218, 8220, 2108, 1115, 8222, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 8302 (InGameMessageNuxSystemMessage)
+// Module 8303 (InGameMessageNuxSystemMessage)
 import util from "util" /* 1115 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8210 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8217 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
 import ApplicationStore from "ApplicationStore" /* 4983 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, gameName: null, urlOnClick: null };
     const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj2.usernameOnClick = tmp(8219)(obj3);
+    obj2.usernameOnClick = tmp(8220)(obj3);
     obj2.gameName = application.name;
     const obj4 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
     obj4.url = tmp(2108).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
@@ -38,7 +38,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const obj5 = { content: null };
     const intl = util.intl;
     obj5.content = intl.formatToParts(util.t["92erOB"], obj2);
-    const merged = Object.assign(tmp(8221)(message));
+    const merged = Object.assign(tmp(8222)(message));
     return obj5;
   }
   tmp3 = resolveMessageContentColorsDefault(theme);

@@ -1,12 +1,12 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16542
+// Function ID: 16543
 // Name: SearchableDestinationListRow
-// Dependencies: [19, 21, 10090, 11246, 11129, 7895, 11172, 11175, 1370, 2]
+// Dependencies: [19, 21, 10091, 11247, 11130, 7897, 11173, 11176, 1370, 2]
 // Exports: default
 
-// Module 16536 (SearchableDestinationListRow)
-import sortByMatchScore from "sortByMatchScore" /* 10090 */;
-import formatResults from "formatResults" /* 11246 */;
+// Module 16542 (SearchableDestinationListRow)
+import sortByMatchScore from "sortByMatchScore" /* 10091 */;
+import formatResults from "formatResults" /* 11247 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,23 +26,23 @@ export default function SearchableDestinationListRow(result) {
     if (null != onPressDestination) {
       const fn = () => onPressDestination(formatResults.getDestinationIdFromResult(result));
     }
-    if (tmp2(10090).AutocompleterResultTypes.USER === type) {
+    if (tmp2(10091).AutocompleterResultTypes.USER === type) {
       const obj = {};
       const merged1 = Object.assign(merged);
       obj.user = record;
-      const tmp18 = onPressDestination(11129);
-      obj.type = tmp2(7895).getRelationshipType(record.id);
+      const tmp18 = onPressDestination(11130);
+      obj.type = tmp2(7897).getRelationshipType(record.id);
       obj.onPress = fn;
       return <tmp18 />;
-    } else if (tmp2(10090).AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (tmp2(10091).AutocompleterResultTypes.GROUP_DM === type) {
       const obj2 = {};
       const merged2 = Object.assign(merged);
       obj2.channel = record;
       obj2.onPress = fn;
-      return jsx(onPressDestination(11172), {});
+      return jsx(onPressDestination(11173), {});
     } else {
-      if (tmp2(10090).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp2(10090).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp2(10091).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp2(10091).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           return tmp2(1370).assertNever(type);
         }
       }
@@ -50,7 +50,7 @@ export default function SearchableDestinationListRow(result) {
       const merged3 = Object.assign(merged);
       obj3.channel = record;
       obj3.onPress = fn;
-      return jsx(onPressDestination(11175), {});
+      return jsx(onPressDestination(11176), {});
     }
   }
 };

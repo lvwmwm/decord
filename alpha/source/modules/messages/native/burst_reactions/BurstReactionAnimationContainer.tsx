@@ -1,10 +1,10 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17381
+// Function ID: 17382
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2038, 21, 4756, 576, 8024, 4724, 4725, 573, 4492, 4757, 10884, 2027, 1177, 8066, 4752, 1115, 4466, 2]
+// Dependencies: [32, 19, 17, 2038, 21, 4756, 576, 8026, 4724, 4725, 573, 4492, 4757, 10885, 2027, 1177, 8068, 4752, 1115, 4466, 2]
 // Exports: default
 
-// Module 17370 (BurstReactionAnimationContainer)
+// Module 17381 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4466 */;
@@ -86,7 +86,7 @@ function BurstReactionAnimationContainerInner() {
       const items = [markAsDismissed.fill, closure_7];
       obj2.style = items;
       const obj3 = {
-        activeOpacity: closure_0(8024).BACKDROP_OPACITY,
+        activeOpacity: closure_0(8026).BACKDROP_OPACITY,
         onPress() {
           closure_4(false);
           closure_5.current = false;
@@ -107,7 +107,7 @@ function BurstReactionAnimationContainerInner() {
             ref.current = false;
           }
         };
-        tmpResult = tmp(first(8066), obj7);
+        tmpResult = tmp(first(8068), obj7);
       }
       obj5.children = tmpResult;
       items1[1] = closure_1_8(handleComponentFinish, obj5);
@@ -129,8 +129,8 @@ function BurstReactionAnimationContainerInner() {
       obj.children = closure_1_8(first(4492).View, obj2);
       return closure_1_8(closure_0(1177).OverlayView, obj);
     };
-    tmp8 = closure_8(animationData(10884), obj3);
-    let tmp11 = animationData(10884);
+    tmp8 = closure_8(animationData(10885), obj3);
+    let tmp11 = animationData(10885);
   }
   return tmp8;
 }
@@ -144,7 +144,7 @@ let obj2 = { background: null, fill: null, dismissTextContainer: null, dismissTe
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3.backgroundColor = nativeDefault.colors.BLACK;
-obj3.opacity = fn(8024).BACKDROP_OPACITY;
+obj3.opacity = fn(8026).BACKDROP_OPACITY;
 obj2.background = obj3;
 let obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);

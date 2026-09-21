@@ -1,13 +1,13 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11506
+// Function ID: 11507
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 5105, 5104, 21, 4756, 576, 504, 1478, 1484, 7221, 11411, 8105, 1115, 9420, 11503, 7325, 11187, 2]
+// Dependencies: [32, 19, 17, 5105, 5104, 21, 4756, 576, 504, 1478, 1484, 7226, 11413, 8107, 1115, 9421, 11505, 7330, 11188, 2]
 // Exports: default
 
-// Module 11504 (AddImageDescriptionModal)
+// Module 11506 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11187 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11188 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
@@ -70,9 +70,9 @@ function AddDescription(id) {
           const obj2 = {};
           const merged = Object.assign(dependencyMap);
           obj2.description = ref.current;
-          id(9420).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
-          const obj = id(9420);
-          id(11503).close();
+          id(9421).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
+          const obj = id(9421);
+          id(11505).close();
         });
         let merged = Object.assign(arg0);
         return renderHeaderTextButton({});

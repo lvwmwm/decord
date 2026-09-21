@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11573
+// Function ID: 11574
 // Name: getChannelAndRecipientsFromInvite
 // Dependencies: [2045, 2]
 // Exports: default
 
-// Module 11571 (getChannelAndRecipientsFromInvite)
+// Module 11573 (getChannelAndRecipientsFromInvite)
 import ChannelRecord from "ChannelRecord" /* 2045 */;
 import size from "module_2" /* 2 */;
 

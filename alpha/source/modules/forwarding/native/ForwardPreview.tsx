@@ -1,20 +1,20 @@
-// Module ID: 11945
-// Function ID: 11946
+// Module ID: 11947
+// Function ID: 11948
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4756, 576, 4690, 8394, 8189, 8929, 11946, 1978, 11947, 12, 11948, 1115, 11950, 8993, 5298, 10367, 5799, 1477, 9093, 4752, 3000, 8411, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4690, 8395, 8190, 8930, 11948, 1978, 11949, 12, 11950, 1115, 11952, 8994, 5305, 10368, 5804, 1477, 9094, 4752, 3000, 8412, 2]
 // Exports: ForwardPreview
 
-// Module 11945 (ForwardPreview)
+// Module 11947 (ForwardPreview)
 import nativeDefault from "native" /* 576 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1477 */;
 import _modDef3000 from "module_3000" /* 3000 */;
 import useThemeDefault from "useTheme" /* 4690 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8394 */;
-import ChatItemDefault from "ChatItem" /* 8929 */;
-import ClipViewDefault from "ClipView" /* 9093 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11946 */;
-import MosaicMediaType from "MosaicMediaType" /* 11948 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8395 */;
+import ChatItemDefault from "ChatItem" /* 8930 */;
+import ClipViewDefault from "ClipView" /* 9094 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 11948 */;
+import MosaicMediaType from "MosaicMediaType" /* 11950 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -94,7 +94,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     if (num == null) {
       num = 0;
     }
-    tmp6 = tmp2(11947).CHECKPOINT_PERSONA_COLORS[num];
+    tmp6 = tmp2(11949).CHECKPOINT_PERSONA_COLORS[num];
   }
   if (tmp6 != null) {
     const primaryColor = tmp6.primaryColor;
@@ -114,7 +114,7 @@ export const ForwardPreview = function ForwardPreview(message) {
         const intl4 = tmp2(1115).intl;
         const obj2 = { image_count: num2, video_count: num3 };
         let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1115).t.Lr0Top, obj2);
-        let AttachmentIcon = tmp2(11950).ImagesIcon;
+        let AttachmentIcon = tmp2(11952).ImagesIcon;
       }
       if (num3 > 0) {
         if (length === num3) {
@@ -131,7 +131,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           size.height = v56;
           const items1 = [hasOwnProperty(FastImageDefault, size), ];
           const obj5 = { style: tmp.playIcon, size: "md", color: "white" };
-          items1[1] = hasOwnProperty(tmp2(8993).CirclePlayIcon, obj5);
+          items1[1] = hasOwnProperty(tmp2(8994).CirclePlayIcon, obj5);
           obj3.children = items1;
           let tmp7 = timestampProducer(View, obj3);
           let tmp8 = AttachmentIcon;
@@ -183,14 +183,14 @@ export const ForwardPreview = function ForwardPreview(message) {
       const intl3 = tmp2(1115).intl;
       const obj11 = { count: num3 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1115).t.SJ6pPX, obj11);
-      AttachmentIcon = tmp2(8993).CirclePlayIcon;
+      AttachmentIcon = tmp2(8994).CirclePlayIcon;
     } else if (num2 > 0) {
       const intl2 = tmp2(1115).intl;
       const obj12 = { count: num2 };
       if (1 === num2) {
-        let ImagesIcon = tmp2(5298).ImageIcon;
+        let ImagesIcon = tmp2(5305).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11950).ImagesIcon;
+        ImagesIcon = tmp2(11952).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.h4pFfU, obj12);
@@ -199,7 +199,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const intl = tmp2(1115).intl;
       const obj13 = { count: length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1115).t["89ihS8"], obj13);
-      AttachmentIcon = tmp2(10367).AttachmentIcon;
+      AttachmentIcon = tmp2(10368).AttachmentIcon;
     }
     const tmp2Result = tmp2(12);
   } else {
@@ -211,7 +211,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   if (attachments.length > 1) {
     tmp33 = tmp7;
     if (null != tmp7) {
-      const size3 = { shape: tmp2(9093).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
+      const size3 = { shape: tmp2(9094).CutoutShape.RoundedRect, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
       const obj15 = { style: tmp.attachmentPreviewOverflow, children: null };
       const obj16 = { cutouts: null, children: null };
       const items2 = [size3];
@@ -291,11 +291,11 @@ export const ForwardPreview = function ForwardPreview(message) {
     if (num5 == null) {
       num5 = 0;
     }
-    const obj29 = { uri: tmp2(8411).getCardAssetUrl(num5) };
+    const obj29 = { uri: tmp2(8412).getCardAssetUrl(num5) };
     size4.source = obj29;
     obj27.children = tmp36(tmp46, size4);
     tmp36Result8 = tmp36(tmp35, obj27);
-    const tmp2Result2 = tmp2(8411);
+    const tmp2Result2 = tmp2(8412);
   }
   items5[3] = tmp36Result8;
   obj19.children = items5;

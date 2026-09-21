@@ -1,10 +1,10 @@
-// Module ID: 7317
-// Function ID: 7318
+// Module ID: 7322
+// Function ID: 7323
 // Name: SMSBackupWarningAlert
 // Dependencies: [19, 21, 4756, 5205, 1115, 5109, 4752, 2]
 // Exports: default
 
-// Module 7317 (SMSBackupWarningAlert)
+// Module 7322 (SMSBackupWarningAlert)
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;
 import noop from "module_19" /* 19 */;

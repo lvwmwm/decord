@@ -1,20 +1,20 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17257
+// Function ID: 17258
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1372, 2038, 1374, 21, 4756, 1365, 576, 13813, 7689, 4576, 2027, 504, 8454, 8495, 8506, 4607, 672, 4414, 17247, 11737, 17248, 17249, 12018, 5659, 17250, 15266, 1115, 17251, 17253, 8939, 7620, 5198, 2]
+// Dependencies: [19, 17, 1372, 2038, 1374, 21, 4756, 1365, 576, 13819, 7691, 4576, 2027, 504, 8455, 8496, 8507, 4607, 672, 4414, 17258, 11739, 17259, 17260, 12020, 5664, 17261, 15272, 1115, 17262, 17264, 8940, 7622, 5198, 2]
 // Exports: useHasSettingsBadge
 
-// Module 17246 (YouBannerDecorations)
+// Module 17257 (YouBannerDecorations)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import dismissible_content from "dismissible_content" /* 2027 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import QuestTypes from "QuestTypes" /* 5659 */;
-import useTrialOffer from "useTrialOffer" /* 7689 */;
-import QuestUtils from "QuestUtils" /* 12018 */;
-import PromotionsHooks from "PromotionsHooks" /* 13813 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17249 */;
+import QuestTypes from "QuestTypes" /* 5664 */;
+import useTrialOffer from "useTrialOffer" /* 7691 */;
+import QuestUtils from "QuestUtils" /* 12020 */;
+import PromotionsHooks from "PromotionsHooks" /* 13819 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17260 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

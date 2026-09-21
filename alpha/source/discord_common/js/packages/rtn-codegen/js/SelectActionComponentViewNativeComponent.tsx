@@ -1,9 +1,9 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16027
+// Function ID: 16028
 // Name: SelectActionComponentViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 16021 (SelectActionComponentViewNativeComponent)
+// Module 16027 (SelectActionComponentViewNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

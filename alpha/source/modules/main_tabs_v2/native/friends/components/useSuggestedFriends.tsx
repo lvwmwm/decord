@@ -1,17 +1,17 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16385
+// Function ID: 16386
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7896, 12950, 563, 12, 4600, 2]
+// Dependencies: [32, 19, 7898, 12952, 563, 12, 4600, 2]
 // Exports: default
 
-// Module 16379 (useSuggestedFriends)
+// Module 16385 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7896 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7898 */;
 
 const require = fn;
-const SuggestedFriendSource = fn(12950).SuggestedFriendSource;
+const SuggestedFriendSource = fn(12952).SuggestedFriendSource;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
 

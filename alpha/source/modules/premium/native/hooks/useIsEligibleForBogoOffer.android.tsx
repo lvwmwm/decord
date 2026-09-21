@@ -1,13 +1,13 @@
-// Module ID: 10966
-// Function ID: 10967
+// Module ID: 10967
+// Function ID: 10968
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 4420, 10924, 1374, 504, 7687, 10965, 7657, 7680, 2]
+// Dependencies: [19, 4420, 10925, 1374, 504, 7689, 10966, 7659, 7682, 2]
 // Exports: useIsEligibleForBogoOffer
 
-// Module 10966 (useIsEligibleForBogoOffer)
+// Module 10967 (useIsEligibleForBogoOffer)
 import noop from "module_19" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import PromotionsStore from "PromotionsStore" /* 10924 */;
+import PromotionsStore from "PromotionsStore" /* 10925 */;
 
 const require = fn;
 const PremiumTypes = fn(1374).PremiumTypes;
@@ -21,13 +21,13 @@ export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   const items1 = [SubscriptionStore];
   const stateFromStores1 = forceUpdate(504).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const obj2 = forceUpdate(504);
-  const premiumTrialOffer = forceUpdate(7687).usePremiumTrialOffer();
-  const obj4 = forceUpdate(7687);
-  const premiumDiscountOffer = forceUpdate(10965).usePremiumDiscountOffer();
-  const obj5 = forceUpdate(10965);
-  const isPaymentsBlocked = forceUpdate(7657).useIsPaymentsBlocked();
-  const obj6 = forceUpdate(7657);
-  forceUpdate = forceUpdate(7680).useForceUpdate();
+  const premiumTrialOffer = forceUpdate(7689).usePremiumTrialOffer();
+  const obj4 = forceUpdate(7689);
+  const premiumDiscountOffer = forceUpdate(10966).usePremiumDiscountOffer();
+  const obj5 = forceUpdate(10966);
+  const isPaymentsBlocked = forceUpdate(7659).useIsPaymentsBlocked();
+  const obj6 = forceUpdate(7659);
+  forceUpdate = forceUpdate(7682).useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {
     const endDate = stateFromStores.endDate;

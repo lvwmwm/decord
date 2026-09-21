@@ -1,9 +1,9 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13580
+// Function ID: 13581
 // Name: GuildActionSheetMemberCount
 // Dependencies: [19, 17, 21, 4756, 576, 1365, 1115, 4752, 2]
 
-// Module 13574 (GuildActionSheetMemberCount)
+// Module 13580 (GuildActionSheetMemberCount)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;

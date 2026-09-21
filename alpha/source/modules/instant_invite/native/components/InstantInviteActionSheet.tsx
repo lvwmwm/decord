@@ -1,22 +1,22 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 10084
+// Function ID: 10085
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 2046, 10076, 2063, 4395, 7976, 1074, 21, 4756, 576, 10084, 1612, 7402, 7422, 7408, 504, 4741, 7999, 10075, 4723, 8447, 10085, 1186, 10087, 7390, 7389, 1115, 1177, 10104, 10108, 10110, 7290, 10102, 10146, 10147, 2]
+// Dependencies: [32, 19, 17, 2046, 10077, 2063, 4395, 7978, 1074, 21, 4756, 576, 10085, 1612, 7407, 7427, 7413, 504, 4741, 8001, 10076, 4723, 8448, 10086, 1186, 10088, 7395, 7394, 1115, 1177, 10105, 10109, 10111, 7295, 10103, 10147, 10148, 2]
 // Exports: default
 
-// Module 10083 (InstantInviteActionSheet)
+// Module 10084 (InstantInviteActionSheet)
 import nativeDefault from "native" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 4741 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10075 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10084 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 10085 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10076 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10085 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 10086 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2046 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10076 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10077 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 
@@ -39,7 +39,7 @@ function Loading() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const InviteTargetTypes = fn(7976).InviteTargetTypes;
+const InviteTargetTypes = fn(7978).InviteTargetTypes;
 const Permissions = fn(1074).Permissions;
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);

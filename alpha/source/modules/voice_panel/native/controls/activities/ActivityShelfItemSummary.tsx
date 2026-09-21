@@ -1,17 +1,17 @@
-// Module ID: 17601
-// Function ID: 17602
+// Module ID: 17612
+// Function ID: 17613
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4605, 17602, 10310, 1177, 5196, 4752, 4492, 5202, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 4605, 17613, 10311, 1177, 5196, 4752, 4492, 5202, 2]
 // Exports: default
 
-// Module 17601 (ActivityShelfItemSummary)
+// Module 17612 (ActivityShelfItemSummary)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import ButtonPill from "ButtonPill" /* 5196 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 10310 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17602 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10311 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17613 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

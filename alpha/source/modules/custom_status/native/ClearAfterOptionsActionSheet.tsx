@@ -1,18 +1,18 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11467
+// Function ID: 11468
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 11380, 21, 4756, 576, 7390, 7389, 1115, 5897, 5900, 11466, 5186, 4723, 2]
+// Dependencies: [32, 19, 17, 11382, 21, 4756, 576, 7395, 7394, 1115, 5902, 5905, 11468, 5186, 4723, 2]
 // Exports: default
 
-// Module 11465 (ClearAfterOptionsActionSheet)
+// Module 11467 (ClearAfterOptionsActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import TableRadioGroup from "TableRadioGroup" /* 5897 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7389 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7390 */;
+import TableRadioGroup from "TableRadioGroup" /* 5902 */;
+import TableRadioRow from "TableRadioRow" /* 5905 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ClearAfterOptions = fn(11380).ClearAfterOptions;
+const ClearAfterOptions = fn(11382).ClearAfterOptions;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);
@@ -45,7 +45,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   const intl2 = util.intl;
   obj3.title = intl2.string(util.t.E45wvP);
   obj3.defaultValue = initialValue;
-  obj3.children = ClearAfterOptions.map((value) => closure_1_7(TableRadioRow.TableRadioRow, { value, label: closure_1(11466)(value) }, value));
+  obj3.children = ClearAfterOptions.map((value) => closure_1_7(TableRadioRow.TableRadioRow, { value, label: closure_1(11468)(value) }, value));
   const items = [closure_7(TableRadioGroup.TableRadioGroup, obj3), ];
   const obj4 = { style: tmp.buttonWrapper, children: null };
   const obj5 = {

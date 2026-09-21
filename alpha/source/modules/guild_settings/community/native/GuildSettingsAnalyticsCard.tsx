@@ -1,10 +1,10 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18135
+// Function ID: 18136
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 4756, 576, 4454, 5819, 4752, 4710, 1115, 11676, 18125, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4454, 5824, 4752, 4710, 1115, 11678, 18136, 2]
 // Exports: default
 
-// Module 18124 (GuildSettingsAnalyticsCard)
+// Module 18135 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import noop from "module_19" /* 19 */;
@@ -70,7 +70,7 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
       const obj7 = { size: "xxs", color: description(576).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: null };
       const intl2 = tmp4(1115).intl;
       obj7.accessibilityLabel = intl2.string(tmp4(1115).t["8mcccd"]);
-      tmp7Result3 = tmp7(tmp4(11676).ArrowLargeUpIcon, obj7);
+      tmp7Result3 = tmp7(tmp4(11678).ArrowLargeUpIcon, obj7);
     }
     const items3 = [tmp7Result3, , ];
     let tmp7Result4 = null;
@@ -78,7 +78,7 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
       const obj8 = { size: "xxs", color: description(576).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: null };
       const intl3 = tmp4(1115).intl;
       obj8.accessibilityLabel = intl3.string(tmp4(1115).t.NLl6Q3);
-      tmp7Result4 = tmp7(tmp4(18125).ArrowLargeDownIcon, obj8);
+      tmp7Result4 = tmp7(tmp4(18136).ArrowLargeDownIcon, obj8);
     }
     items3[1] = tmp7Result4;
     const obj9 = { variant: "text-xs/normal", color: "text-subtle", children: subtext };
@@ -88,5 +88,5 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
   }
   items2[2] = tmp3Result;
   obj.children = items2;
-  return closure_7(metricKey(5819).Card, obj);
+  return closure_7(metricKey(5824).Card, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9098
-// Function ID: 9099
+// Module ID: 9099
+// Function ID: 9100
 // Name: Nameplate
-// Dependencies: [19, 4748, 21, 4756, 504, 4690, 4492, 4757, 1970, 9099, 5198, 1364, 9088, 5799, 2]
+// Dependencies: [19, 4748, 21, 4756, 504, 4690, 4492, 4757, 1970, 9100, 5198, 1364, 9089, 5804, 2]
 // Exports: default
 
-// Module 9098 (Nameplate)
+// Module 9099 (Nameplate)
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import noop from "module_19" /* 19 */;
@@ -78,7 +78,7 @@ function NameplateInner(isFocused) {
   const tmpResult = flag6(4492);
   const backgroundGradientColors = flag6(1970).getBackgroundGradientColors(nameplate.palette, tmp6);
   const tmpResult4 = flag6(1970);
-  const nameplateAssets = flag6(9099).getNameplateAssets(nameplate);
+  const nameplateAssets = flag6(9100).getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp12 = true === flag7;
   if (tmp12) {
@@ -114,17 +114,17 @@ function NameplateInner(isFocused) {
   }
   const items4 = [tmp15Result, ];
   const tmp13 = closure_6;
-  const tmpResult5 = flag6(9099);
+  const tmpResult5 = flag6(9100);
   if (tmpResult6.isAndroid()) {
     if (tmp12) {
       const obj5 = { url: str, style: tmp4.img, autoplay: true };
-      let tmp17 = closure_5(tmp(9088).APNGPlayer, obj5);
+      let tmp17 = closure_5(tmp(9089).APNGPlayer, obj5);
     }
     items4[1] = tmp17;
     obj3.children = items4;
     return tmp13(tmp5(4492).View, obj3);
   }
-  tmp17 = closure_5(tmp5(5799), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
+  tmp17 = closure_5(tmp5(5804), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
 }
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);

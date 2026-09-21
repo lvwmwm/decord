@@ -1,15 +1,15 @@
-// Module ID: 12865
-// Function ID: 12866
+// Module ID: 12867
+// Function ID: 12868
 // Name: Tabs/Tabs
-// Dependencies: [19, 17, 2109, 21, 4492, 4756, 576, 5185, 9663, 12866, 6892, 1364, 2]
+// Dependencies: [19, 17, 2109, 21, 4492, 4756, 576, 5185, 9664, 12868, 6897, 1364, 2]
 // Exports: Tabs
 
-// Module 12865 (Tabs/Tabs)
+// Module 12867 (Tabs/Tabs)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6892 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9663 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9664 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 
@@ -322,7 +322,7 @@ export const Tabs = function Tabs(state) {
         const result = pressed.set(-1);
       };
       obj.variant = variant;
-      return variant(state(12866).TabItem, obj, id);
+      return variant(state(12868).TabItem, obj, id);
     })
   }), items3);
   const memo1 = simultaneousHandlers.useMemo(() => {

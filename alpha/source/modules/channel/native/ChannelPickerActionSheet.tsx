@@ -1,21 +1,21 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 11593
+// Function ID: 11594
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4405, 1372, 21, 1612, 7438, 4723, 7389, 5900, 5823, 11592, 7437, 6864, 5897, 5239, 4909, 2]
+// Dependencies: [19, 4405, 1372, 21, 1612, 7443, 4723, 7394, 5905, 5828, 11594, 7442, 6869, 5902, 5239, 4909, 2]
 // Exports: default
 
-// Module 11591 (ChannelPickerActionSheet)
+// Module 11593 (ChannelPickerActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import useChannelName from "useChannelName" /* 4909 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
+import TableRadioRow from "TableRadioRow" /* 5905 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
-const TableRowIcon = tmp(5823);
+const TableRowIcon = tmp(5828);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
@@ -45,7 +45,7 @@ export default function ChannelPickerActionSheet(noChannelOptionLabel) {
   let items;
   if (null != noChannelOptionLabel.noChannelOptionLabel) {
     const obj3 = { value: "", label: noChannelOptionLabel.noChannelOptionLabel, icon: null };
-    let obj4 = { source: require("module_11592") };
+    let obj4 = { source: require("module_11594") };
     obj3.icon = closure_5(require("TableRowIcon").TableRowIcon, obj4);
     items = closure_5(require("TableRadioRow").TableRadioRow, obj3);
   }

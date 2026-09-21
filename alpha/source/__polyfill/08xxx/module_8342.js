@@ -1,0 +1,9 @@
+// Module ID: 8342
+// Function ID: 8343
+// Dependencies: [1121]
+
+// Module 8342
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a333b4d54b908efbf29afe6221422e97", name: "GifIcon", type: "png" });

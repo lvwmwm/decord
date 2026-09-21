@@ -1,9 +1,9 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14400
+// Function ID: 14401
 // Name: MenuGroup
 // Dependencies: [19, 17, 21, 4756, 576, 2]
 
-// Module 14394 (MenuGroup)
+// Module 14400 (MenuGroup)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

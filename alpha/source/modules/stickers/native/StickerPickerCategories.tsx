@@ -1,22 +1,22 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10679
+// Function ID: 10680
 // Name: StickerPickerCategories
-// Dependencies: [32, 19, 17, 2063, 10648, 1074, 1218, 21, 4756, 576, 2019, 5103, 5480, 1241, 5334, 1177, 1397, 5796, 10432, 5306, 4724, 4725, 10616, 10617, 7295, 1115, 10679, 2]
+// Dependencies: [32, 19, 17, 2063, 10649, 1074, 1218, 21, 4756, 576, 2019, 5103, 5485, 1241, 5339, 1177, 1397, 5801, 10433, 5313, 4724, 4725, 10617, 10618, 7300, 1115, 10680, 2]
 // Exports: default
 
-// Module 10678 (StickerPickerCategories)
+// Module 10679 (StickerPickerCategories)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;
-import StickersTypes from "StickersTypes" /* 5480 */;
+import StickersTypes from "StickersTypes" /* 5485 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 
 require = fn;
 const View = fn(17).View;
-let useStickerPickerStore = fn(10648).useStickerPickerStore;
+let useStickerPickerStore = fn(10649).useStickerPickerStore;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, AnalyticsPages: closure_9, CATEGORY_ICON_RIPPLE_CONFIG: c10, CATEGORY_ICON_SIZE } = Constants);
 const EXPRESSION_FOOTER_HEIGHT = Constants.EXPRESSION_FOOTER_HEIGHT;
@@ -210,9 +210,9 @@ export default function _default(categories) {
   const callback5 = first.useCallback((arg0, index) => closure_2_14(closure_17, { category: categories[index], index, isActive: index === categoryIndex, locked: categories[index].isNitroLocked, onPressCategory: callback2 }), items8);
   let obj = { portalHostName: "expression-footer", style: categories.style, children: null };
   const tmp17 = categoryIndex;
-  const tmp19 = categoryIndex(10616)();
+  const tmp19 = categoryIndex(10617)();
   const tmp20 = closure_15;
-  const items9 = [closure_14(categoryIndex(7295), { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list }), ];
+  const items9 = [closure_14(categoryIndex(7300), { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list }), ];
   let tmp22Result = null != first && first1;
   if (tmp22Result) {
     const obj3 = { onPress: callback3, accessibilityRole: "button", accessibilityLabel: null, children: null };
@@ -222,12 +222,12 @@ export default function _default(categories) {
     const items10 = [, ];
     ({ item: arr11[0], fadedItem: arr11[1] } = tmp);
     obj4.style = items10;
-    const obj5 = { style: tmp.guildIcon, source: tmp17(10679) };
+    const obj5 = { style: tmp.guildIcon, source: tmp17(10680) };
     obj4.children = tmp22(categories(1177).Icon, obj5);
     obj3.children = tmp22(closure_5, obj4);
-    tmp22Result = tmp22(categories(5334).PressableOpacity, obj3);
+    tmp22Result = tmp22(categories(5339).PressableOpacity, obj3);
   }
   items9[1] = tmp22Result;
   obj.children = items9;
-  return tmp20(categoryIndex(10617), obj);
+  return tmp20(categoryIndex(10618), obj);
 };

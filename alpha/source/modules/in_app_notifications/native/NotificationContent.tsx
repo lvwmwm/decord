@@ -1,12 +1,12 @@
-// Module ID: 10427
-// Function ID: 10428
+// Module ID: 10428
+// Function ID: 10429
 // Name: NotificationContent
-// Dependencies: [19, 17, 21, 4756, 576, 10428, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 10429, 2]
 // Exports: default
 
-// Module 10427 (NotificationContent)
+// Module 10428 (NotificationContent)
 import nativeDefault from "native" /* 576 */;
-import MessageNotificationHeader from "MessageNotificationHeader" /* 10428 */;
+import MessageNotificationHeader from "MessageNotificationHeader" /* 10429 */;
 import noop from "module_19" /* 19 */;
 
 const MessageNotificationHeaderDefault = MessageNotificationHeader;

@@ -1,14 +1,14 @@
-// Module ID: 12813
-// Function ID: 12814
+// Module ID: 12815
+// Function ID: 12816
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 12814, 4664, 504, 1115, 2514, 2]
+// Dependencies: [19, 12816, 4664, 504, 1115, 2514, 2]
 // Exports: default
 
-// Module 12813 (useGuildPowerupsWarningConfig)
+// Module 12815 (useGuildPowerupsWarningConfig)
 import util from "util" /* 1115 */;
 import _modDef2514 from "module_2514" /* 2514 */;
 import noop from "module_19" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12814 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12816 */;
 
 const require = globalThis.__r;
 

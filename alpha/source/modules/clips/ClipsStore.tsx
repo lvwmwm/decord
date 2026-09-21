@@ -1,7 +1,7 @@
 // Module ID: 1998
 // Function ID: 1999
 // Name: ClipsStore
-// Dependencies: [5, 1999, 502, 5343, 1074, 4803, 4377, 14253, 14254, 1385, 14255, 14257, 14258, 504, 1992, 573, 2]
+// Dependencies: [5, 1999, 502, 5348, 1074, 4803, 4377, 14259, 14260, 1385, 14261, 14263, 14264, 504, 1992, 573, 2]
 
 // Module 1998 (ClipsStore)
 import initializeDefault from "initialize" /* 504 */;
@@ -9,10 +9,10 @@ import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import DiscordNativeDefault from "DiscordNative" /* 4377 */;
-import ClipsSession from "ClipsSession" /* 14254 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 14255 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14257 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14258 */;
+import ClipsSession from "ClipsSession" /* 14260 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14261 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14263 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14264 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 1999 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -245,7 +245,7 @@ function trackClipMessage(message) {
   }
   obj = DistributedClipsExperimentDefault;
 }
-const ClipsConstants = fn(5343);
+const ClipsConstants = fn(5348);
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: metroRequire, ClipSaveTypes: closure_7, ClipsUserEducationType: closure_8, ClipsLogger: closure_9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: closure_11, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, DEFAULT_CLIPS_BITRATE_PERCENT } = ClipsConstants);
 const Constants = fn(1074);
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);

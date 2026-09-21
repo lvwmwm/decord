@@ -1,17 +1,17 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16605
+// Function ID: 16606
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 13975, 15894, 1074, 13976, 15895, 1271, 1472, 573, 504, 1091, 2]
+// Dependencies: [5, 13981, 15900, 1074, 13982, 15901, 1271, 1472, 573, 504, 1091, 2]
 // Exports: dismissGuild
 
-// Module 16599 (MobileGameCommunitiesActionCreators)
+// Module 16605 (MobileGameCommunitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _modDef1472 from "module_1472" /* 1472 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13975 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15894 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13981 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15900 */;
 
 require = fn;
 let closure_7 = async function _fetchDetectedGameCommunities(arg0, value) {

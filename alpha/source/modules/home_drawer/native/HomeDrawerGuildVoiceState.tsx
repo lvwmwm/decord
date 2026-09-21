@@ -1,17 +1,17 @@
-// Module ID: 16653
-// Function ID: 16654
+// Module ID: 16659
+// Function ID: 16660
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 2096, 4405, 4937, 4780, 1074, 21, 4756, 576, 13318, 1177, 4752, 1115, 10318, 5799, 5198, 16652, 504, 12, 13969, 2]
+// Dependencies: [19, 17, 2096, 4405, 4937, 4780, 1074, 21, 4756, 576, 13320, 1177, 4752, 1115, 10319, 5804, 5198, 16658, 504, 12, 13975, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 16653 (HomeDrawerGuildVoiceState)
+// Module 16659 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10318 */;
-import AvatarPile from "AvatarPile" /* 13318 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10319 */;
+import AvatarPile from "AvatarPile" /* 13320 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
@@ -100,7 +100,7 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj6 = { style: tmp.streamPreview, source: null };
       const obj7 = { uri: previewUrl };
       obj6.source = obj7;
-      const items1 = [tmp7(tmp3(5799), obj6), , , , ];
+      const items1 = [tmp7(tmp3(5804), obj6), , , , ];
       const obj8 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
       items1[1] = tmp7(tmp3(5198), obj8);
       const obj9 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.streamPreviewGradient, pointerEvents: "none" };

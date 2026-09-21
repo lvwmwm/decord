@@ -1,16 +1,16 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 12794
+// Function ID: 12795
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4756, 576, 12793, 12794, 12795, 5114, 6847, 1115, 2514, 5114, 4752, 2]
+// Dependencies: [17, 21, 4756, 576, 12795, 12796, 12797, 5114, 6852, 1115, 2514, 5114, 4752, 2]
 // Exports: default
 
-// Module 12792 (GuildPowerupsDeactivateAlert)
+// Module 12794 (GuildPowerupsDeactivateAlert)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef2514 from "module_2514" /* 2514 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12793 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12794 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 12795 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 12796 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4756 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15035
+// Function ID: 15036
 // Name: AgeGroupResetSetting
-// Dependencies: [8232, 21, 11723, 1115, 3034, 15030, 5110, 15026, 2]
+// Dependencies: [8233, 21, 11725, 1115, 3034, 15036, 5110, 15032, 2]
 
-// Module 15029 (AgeGroupResetSetting)
+// Module 15035 (AgeGroupResetSetting)
 import jsxProd from "jsxProd" /* 21 */;
 import util from "util" /* 1115 */;
 import _modDef3034 from "module_3034" /* 3034 */;
 import useAlertStore from "useAlertStore" /* 5110 */;
-import SettingsConstants from "SettingsConstants" /* 8232 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15026 */;
-import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 15030 */;
-import SettingBuilders from "SettingBuilders" /* 11723 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15032 */;
+import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 15036 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

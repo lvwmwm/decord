@@ -1,25 +1,25 @@
-// Module ID: 16348
-// Function ID: 16349
+// Module ID: 16354
+// Function ID: 16355
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 16349, 1074, 16339, 21, 16351, 5798, 4756, 576, 4616, 1612, 16352, 16353, 16354, 16436, 16614, 4492, 16355, 16336, 16341, 16338, 16695, 4619, 11782, 2]
+// Dependencies: [32, 19, 17, 16355, 1074, 16345, 21, 16357, 5803, 4756, 576, 4616, 1612, 16358, 16359, 16360, 16442, 16620, 4492, 16361, 16342, 16347, 16344, 16701, 4619, 11784, 2]
 
-// Module 16348 (MainChannels)
+// Module 16354 (MainChannels)
 import nativeDefault from "native" /* 576 */;
 import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4619 */;
-import useRefValueDefault from "useRefValue" /* 5798 */;
-import StartupProfiler from "StartupProfiler" /* 11782 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16336 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 16341 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 16351 */;
-import NativeFreezeScreens from "NativeFreezeScreens" /* 16353 */;
-import messages_MessagesDefault from "messages/Messages" /* 16354 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16355 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 16436 */;
-import HomePanelContent from "HomePanelContent" /* 16614 */;
-import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16695 */;
+import useRefValueDefault from "useRefValue" /* 5803 */;
+import StartupProfiler from "StartupProfiler" /* 11784 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16342 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 16347 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 16357 */;
+import NativeFreezeScreens from "NativeFreezeScreens" /* 16359 */;
+import messages_MessagesDefault from "messages/Messages" /* 16360 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 16442 */;
+import HomePanelContent from "HomePanelContent" /* 16620 */;
+import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16701 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 16349 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16355 */;
 
 const StartupProfilerDefault = StartupProfiler;
 
@@ -61,7 +61,7 @@ function LeftPanelContent(panelStyles) {
     items[1] = sideTablet;
     return items;
   }, items2);
-  const sum = DM_WIDTH + tmp10(16352)();
+  const sum = DM_WIDTH + tmp10(16358)();
   let num = 0;
   if (tmp8) {
     num = 1;
@@ -109,7 +109,7 @@ function LeftPanelHomeDrawerContainer() {
     if (homeDrawerContext.enableHome) {
       tmp7 = null;
       if (tmp5 > 0) {
-        const obj4 = { position: tmp4, openAt: tmp5, closedAt: 0, resolveOpenName: resolveHomeDrawerName, resolveClosedName: tmp(16338).getBaseScreenName };
+        const obj4 = { position: tmp4, openAt: tmp5, closedAt: 0, resolveOpenName: resolveHomeDrawerName, resolveClosedName: tmp(16344).getBaseScreenName };
         tmp7 = closure_1_11(JankSlidingSurfaceReporterDefault, obj4);
       }
     }
@@ -125,7 +125,7 @@ get_ActivityIndicator = fn(17);
 const Constants = fn(1074);
 const DM_WIDTH = Constants.DM_WIDTH;
 const ME = Constants.ME;
-const HOME_DRAWER_SCREEN = fn(16339).HOME_DRAWER_SCREEN;
+const HOME_DRAWER_SCREEN = fn(16345).HOME_DRAWER_SCREEN;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 const createStyles = fn(4756);

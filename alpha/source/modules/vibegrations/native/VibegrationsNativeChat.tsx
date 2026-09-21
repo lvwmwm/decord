@@ -1,10 +1,10 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17019
+// Function ID: 17020
 // Name: VibegrationsNativeChat
-// Dependencies: [32, 19, 17, 1979, 13360, 13359, 21, 576, 17012, 672, 4756, 17014, 17020, 1115, 3678, 5184, 4752, 4746, 17021, 5186, 5819, 4451, 17026, 17027, 17028, 17029, 1364, 5876, 5198, 17031, 16930, 17018, 17015, 17019, 16262, 17032, 17033, 17035, 17037, 504, 1612, 17038, 17039, 17040, 17041, 13181, 17042, 8996, 17045, 17047, 17048, 17049, 17051, 2]
+// Dependencies: [32, 19, 17, 1979, 13362, 13361, 21, 576, 17020, 672, 4756, 17022, 17028, 1115, 3678, 5184, 4752, 4746, 17029, 5186, 5824, 4451, 17034, 17035, 17036, 17037, 1364, 5881, 5198, 17039, 16936, 17026, 17023, 17027, 16268, 17040, 17041, 17043, 17045, 504, 1612, 17046, 17047, 17048, 17049, 13183, 17050, 8997, 17053, 17055, 17056, 17057, 17059, 2]
 // Exports: default
 
-// Module 17011 (VibegrationsNativeChat)
+// Module 17019 (VibegrationsNativeChat)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import util from "util" /* 1115 */;
@@ -13,23 +13,23 @@ import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import Card from "Card" /* 5819 */;
-import _modDef5876 from "module_5876" /* 5876 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16930 */;
-import VibegrationsNativeStatusLineDefault from "VibegrationsNativeStatusLine" /* 17012 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17018 */;
-import useVibegrationsPlanDesign from "useVibegrationsPlanDesign" /* 17020 */;
-import VibegrationsNativeMarkdown from "VibegrationsNativeMarkdown" /* 17021 */;
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 17026 */;
-import VibegrationsSubagentMark from "VibegrationsSubagentMark" /* 17029 */;
-import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17031 */;
-import VibegrationsChatGrouping from "VibegrationsChatGrouping" /* 17038 */;
-import vibegrations_VibegrationsRepliedMessage from "vibegrations/VibegrationsRepliedMessage" /* 17040 */;
+import Card from "Card" /* 5824 */;
+import _modDef5881 from "module_5881" /* 5881 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16936 */;
+import VibegrationsNativeStatusLineDefault from "VibegrationsNativeStatusLine" /* 17020 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17026 */;
+import useVibegrationsPlanDesign from "useVibegrationsPlanDesign" /* 17028 */;
+import VibegrationsNativeMarkdown from "VibegrationsNativeMarkdown" /* 17029 */;
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 17034 */;
+import VibegrationsSubagentMark from "VibegrationsSubagentMark" /* 17037 */;
+import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17039 */;
+import VibegrationsChatGrouping from "VibegrationsChatGrouping" /* 17046 */;
+import vibegrations_VibegrationsRepliedMessage from "vibegrations/VibegrationsRepliedMessage" /* 17048 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
-import VibegrationsChatStore from "VibegrationsChatStore" /* 13360 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13359 */;
+import VibegrationsChatStore from "VibegrationsChatStore" /* 13362 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13361 */;
 
 require = fn;
 function PlanDesign(arg0) {
@@ -87,7 +87,7 @@ function ProposalCard(proposal) {
     const intl2 = tmp6(1115).intl;
     let stringResult = intl2.string(tmp8(3678).IHCafX);
   } else {
-    stringResult = tmp8(4746).parse(trimmed, true, tmp6(17021).VIBEGRATIONS_MARKUP_OPTIONS);
+    stringResult = tmp8(4746).parse(trimmed, true, tmp6(17029).VIBEGRATIONS_MARKUP_OPTIONS);
     const tmp8Result = tmp8(4746);
   }
   items[1] = closure_1_17(Text_Text.Text, { variant: "text-md/normal", color: "text-default", children: stringResult });
@@ -210,7 +210,7 @@ function AttachmentPills(projectId) {
         obj.accessibilityLabel = intl.formatToPlainString(closure_1(3678).QUFLUq, obj2);
         const obj3 = { variant: "text-xs/medium", color: "text-default", children: id.name };
         obj.children = closure_1_17(projectId(4752).Text, obj3);
-        let tmp12 = closure_1_17(projectId(5819).Card, obj, id.id);
+        let tmp12 = closure_1_17(projectId(5824).Card, obj, id.id);
       } else {
         const obj4 = { style: closure_1.attachmentPill, children: null };
         const obj5 = { variant: "text-xs/medium", color: "text-muted", children: null };
@@ -277,9 +277,9 @@ function TimelineRow(live) {
   obj.epoch = epoch;
   let tmp4Result = null;
   if (null != node.durationMs) {
-    const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17027).describeDuration(node.durationMs) };
+    const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17035).describeDuration(node.durationMs) };
     tmp4Result = tmp4(tmp7(4752).Text, obj3);
-    const tmp7Result = tmp7(17027);
+    const tmp7Result = tmp7(17035);
   }
   obj.trailing = tmp4Result;
   const children = [closure_1_17(tmp6, obj), ];
@@ -302,7 +302,7 @@ function TurnStatusLine(epoch) {
   [tmp3, c2] = noop.useState(false);
   const callback = noop.useCallback(() => _undefined((arg0) => !arg0), []);
   const tmp2 = _slicedToArray(noop.useState(false), 2);
-  const currentStepResult = turnActive(17026).currentStep(tree.steps);
+  const currentStepResult = turnActive(17034).currentStep(tree.steps);
   _slicedToArray = currentStepResult;
   let tmp8;
   if (!turnActive) {
@@ -320,11 +320,11 @@ function TurnStatusLine(epoch) {
     groupLabel = found.task.groupLabel;
   }
   if (null != tmp8) {
-    groupLabel = tmp5(17027).describeTurnDuration(tmp8);
-    const tmp5Result = tmp5(17027);
+    groupLabel = tmp5(17035).describeTurnDuration(tmp8);
+    const tmp5Result = tmp5(17035);
   } else if (null != currentStepResult) {
-    groupLabel = tmp5(17026).describeNode(currentStepResult);
-    const tmp5Result2 = tmp5(17026);
+    groupLabel = tmp5(17034).describeNode(currentStepResult);
+    const tmp5Result2 = tmp5(17034);
   } else if (groupLabel == null) {
     const intl = tmp5(1115).intl;
     groupLabel = intl.string(epoch(3678).nv6pUM);
@@ -336,13 +336,13 @@ function TurnStatusLine(epoch) {
   }
   const obj2 = { line: groupLabel, live: turnActive, settled: !turnActive, inGutter: true, epoch, expanded: tmp3, onToggle: null };
   let tmp19;
-  let obj = turnActive(17026);
+  let obj = turnActive(17034);
   const tmp15 = closure_18;
   if (someResult) {
     tmp19 = callback;
   }
   obj2.onToggle = tmp19;
-  const children = [closure_17(epoch(17012), obj2), ];
+  const children = [closure_17(epoch(17020), obj2), ];
   let tmp17Result = null;
   if (tmp3) {
     tmp17Result = null;
@@ -378,24 +378,24 @@ function LaneStatusLine(arg0) {
   }
   let currentStepResult;
   if (turnActive) {
-    currentStepResult = mark(17026).currentStep(lane.steps);
-    const obj = mark(17026);
+    currentStepResult = mark(17034).currentStep(lane.steps);
+    const obj = mark(17034);
   }
   _slicedToArray = currentStepResult;
   const tmp9 = lane.task.detail.length > 0 || lane.steps.length > 0;
   if ("running" === lane.task.status) {
     if (null != currentStepResult) {
-      let describeNodeResult = mark(17026).describeNode(currentStepResult);
-      const obj4 = mark(17026);
+      let describeNodeResult = mark(17034).describeNode(currentStepResult);
+      const obj4 = mark(17034);
     } else {
-      describeNodeResult = mark(17028).taskTitle(lane.task);
-      const obj3 = mark(17028);
+      describeNodeResult = mark(17036).taskTitle(lane.task);
+      const obj3 = mark(17036);
     }
   } else {
-    const obj2 = mark(17028);
-    const obj5 = { line: mark(17028).describeTaskOutcome(lane.task), live: turnActive, settled: null, failed: null, glyph: null, crestColor: null, inGutter: true, epoch: null, expanded: null, onToggle: null };
+    const obj2 = mark(17036);
+    const obj5 = { line: mark(17036).describeTaskOutcome(lane.task), live: turnActive, settled: null, failed: null, glyph: null, crestColor: null, inGutter: true, epoch: null, expanded: null, onToggle: null };
     let tmp26 = !turnActive;
-    const describeTaskOutcomeResult = mark(17028).describeTaskOutcome(lane.task);
+    const describeTaskOutcomeResult = mark(17036).describeTaskOutcome(lane.task);
     if (!turnActive) {
       tmp26 = "failed" !== lane.task.status;
     }
@@ -410,7 +410,7 @@ function LaneStatusLine(arg0) {
       tmp27 = callback;
     }
     obj5.onToggle = tmp27;
-    items = [closure_17(epoch(17012), obj5), ];
+    items = [closure_17(epoch(17020), obj5), ];
     let tmp21Result = null;
     if (tmp3) {
       tmp21Result = null;
@@ -442,7 +442,7 @@ function ActivityBox(arg0) {
   length = tree.tasks.length;
   const tmp = closure_24();
   const tasks = tree.tasks;
-  dependencyMap = turnActive(17029).subagentIllocons(tasks.map((taskId) => taskId.taskId));
+  dependencyMap = turnActive(17037).subagentIllocons(tasks.map((taskId) => taskId.taskId));
   let obj2 = { style: tmp.activityBox, children: null };
   items = [closure_17(TurnStatusLine, { tree, turnActive, epoch: length }), ];
   const tasks1 = tree.tasks;
@@ -484,20 +484,20 @@ function TranscriptFade(children) {
     obj3.children = items;
     obj2.maskElement = collapsedCategories(React6, obj3);
     obj2.children = children;
-    tmp3 = closure_1_17(_modDef5876, obj2);
+    tmp3 = closure_1_17(_modDef5881, obj2);
   }
   return tmp3;
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, Image: metroRequire, Pressable: closure_7, View: closure_8 } = get_ActivityIndicator);
-const turnSettled = fn(13360).turnSettled;
-let VibegrationsConnectionStore = fn(13359);
+const turnSettled = fn(13362).turnSettled;
+let VibegrationsConnectionStore = fn(13361);
 ({ ensureConnection: closure_12, getAttachmentUrl: map1, interruptTurn: closure_14, sendUserMessage: closure_15 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
-let diff = fn(17012).MESSAGE_CONTENT_INSET - fn(17012).MESSAGE_EDGE_INSET;
+let diff = fn(17020).MESSAGE_CONTENT_INSET - fn(17020).MESSAGE_EDGE_INSET;
 const BLACK = nativeDefault.unsafe_rawColors.BLACK;
 let items = [BLACK, , ];
 let obj2 = _modDef672(BLACK);
@@ -512,17 +512,17 @@ const alphaResult = _modDef672(BLACK).alpha(0.2);
 obj.transcriptContent = { paddingTop: nativeDefault.space.PX_8 };
 obj.bottomStack = { position: "absolute", left: 0, right: 0, bottom: 0 };
 let obj3 = { paddingTop: nativeDefault.space.PX_8 };
-obj.row = { position: "relative", paddingLeft: fn(17012).MESSAGE_CONTENT_INSET, paddingRight: fn(17012).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
+obj.row = { position: "relative", paddingLeft: fn(17020).MESSAGE_CONTENT_INSET, paddingRight: fn(17020).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
 obj.rowGroupStart = { marginTop: nativeDefault.space.PX_12 };
-const rect = { position: "absolute", left: fn(17012).MESSAGE_EDGE_INSET, top: 2 };
+const rect = { position: "absolute", left: fn(17020).MESSAGE_EDGE_INSET, top: 2 };
 obj.avatar = rect;
 obj.spoken = { position: "relative", gap: PX_8 };
 obj.spokenAfterWork = { marginTop: PX_8 };
-const rect1 = { left: fn(17012).MESSAGE_EDGE_INSET - fn(17012).MESSAGE_CONTENT_INSET, top: 0 };
+const rect1 = { left: fn(17020).MESSAGE_EDGE_INSET - fn(17020).MESSAGE_CONTENT_INSET, top: 0 };
 obj.avatarSpoken = rect1;
-let obj5 = { position: "relative", paddingLeft: fn(17012).MESSAGE_CONTENT_INSET, paddingRight: fn(17012).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
-obj.avatarSpokenReplying = { top: fn(17014).REPLY_PREVIEW_HEIGHT + PX_8 };
-let obj6 = { top: fn(17014).REPLY_PREVIEW_HEIGHT + PX_8 };
+let obj5 = { position: "relative", paddingLeft: fn(17020).MESSAGE_CONTENT_INSET, paddingRight: fn(17020).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
+obj.avatarSpokenReplying = { top: fn(17022).REPLY_PREVIEW_HEIGHT + PX_8 };
+let obj6 = { top: fn(17022).REPLY_PREVIEW_HEIGHT + PX_8 };
 obj.header = { marginBottom: -nativeDefault.space.PX_4 };
 let obj7 = { marginBottom: -nativeDefault.space.PX_4 };
 obj.surface = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12 };

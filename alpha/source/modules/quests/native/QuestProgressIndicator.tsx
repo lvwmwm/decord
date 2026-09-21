@@ -1,13 +1,13 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15398
+// Function ID: 15399
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 4748, 21, 4492, 8727, 4756, 576, 504, 4757, 5334, 1115, 5741, 15393, 12021, 2]
+// Dependencies: [19, 17, 4748, 21, 4492, 8728, 4756, 576, 504, 4757, 5339, 1115, 5746, 15399, 12023, 2]
 
-// Module 15392 (QuestProgressIndicator)
+// Module 15398 (QuestProgressIndicator)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4757 */;
-import inlineStyles from "inlineStyles" /* 8727 */;
+import inlineStyles from "inlineStyles" /* 8728 */;
 import noop_mod from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import jsxProd from "jsxProd" /* 21 */;

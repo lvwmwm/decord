@@ -1,16 +1,16 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16117
+// Function ID: 16118
 // Name: UserSettingsDesignSystemHaptics
-// Dependencies: [19, 17, 21, 4756, 5186, 4724, 4725, 5184, 5819, 4752, 4726, 2]
+// Dependencies: [19, 17, 21, 4756, 5186, 4724, 4725, 5184, 5824, 4752, 4726, 2]
 // Exports: default
 
-// Module 16111 (UserSettingsDesignSystemHaptics)
+// Module 16117 (UserSettingsDesignSystemHaptics)
 import HapticUtils from "HapticUtils" /* 4724 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;
 import Patterns from "Patterns" /* 4726 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
-import Card from "Card" /* 5819 */;
+import Card from "Card" /* 5824 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16866
+// Function ID: 16867
 // Name: MainTabsContentScrim
 // Dependencies: [17, 21, 4756, 576, 4492, 2]
 // Exports: MainTabsContentScrim
 
-// Module 16860 (MainTabsContentScrim)
+// Module 16866 (MainTabsContentScrim)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;

@@ -1,19 +1,19 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17641
+// Function ID: 17642
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 2041, 12524, 12527, 1085, 21, 12438, 576, 4756, 5184, 8872, 4466, 12523, 17510, 7629, 563, 17506, 17631, 4492, 12531, 11258, 5185, 7313, 10884, 2]
+// Dependencies: [32, 19, 2041, 12526, 12529, 1085, 21, 12440, 576, 4756, 5184, 8873, 4466, 12525, 17521, 7631, 563, 17517, 17642, 4492, 12533, 11259, 5185, 7318, 10885, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 17630 (VoicePanelFloatingCTAContainer)
+// Module 17641 (VoicePanelFloatingCTAContainer)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4466 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
 import spring from "spring" /* 5185 */;
-import RowButton from "RowButton" /* 8872 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11258 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12438 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12531 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17506 */;
+import RowButton from "RowButton" /* 8873 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11259 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12440 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12533 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17517 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -119,8 +119,8 @@ class VoicePanelFloatingCTAContainer {
     return tmp12(tmp13, obj9);
   }
 }
-const UI_SHOW_HIDE_PHYSICS = fn(12524).UI_SHOW_HIDE_PHYSICS;
-let CALL_TILE_GUTTER = fn(12527).CALL_TILE_GUTTER;
+const UI_SHOW_HIDE_PHYSICS = fn(12526).UI_SHOW_HIDE_PHYSICS;
+let CALL_TILE_GUTTER = fn(12529).CALL_TILE_GUTTER;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);

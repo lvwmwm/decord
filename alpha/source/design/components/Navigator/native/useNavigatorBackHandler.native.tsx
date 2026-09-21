@@ -1,10 +1,10 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11186
+// Function ID: 11187
 // Name: useNavigatorBackHandler
 // Dependencies: [19, 1484, 1364, 2]
 // Exports: default
 
-// Module 11185 (useNavigatorBackHandler)
+// Module 11186 (useNavigatorBackHandler)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

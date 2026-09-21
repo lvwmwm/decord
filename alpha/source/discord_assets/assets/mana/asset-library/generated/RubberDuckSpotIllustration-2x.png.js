@@ -1,8 +1,8 @@
-// Module ID: 6626
-// Function ID: 6627
+// Module ID: 6631
+// Function ID: 6632
 // Dependencies: [2]
 
-// Module 6626
+// Module 6631
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RubberDuckSpotIllustration-2x.png.js");

@@ -1,11 +1,11 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 10900
+// Function ID: 10901
 // Name: MediaKeyboardBottomSheetHeaderSimple
-// Dependencies: [19, 17, 1608, 21, 4756, 576, 10900, 2]
+// Dependencies: [19, 17, 1608, 21, 4756, 576, 10901, 2]
 
-// Module 10899 (MediaKeyboardBottomSheetHeaderSimple)
+// Module 10900 (MediaKeyboardBottomSheetHeaderSimple)
 import nativeDefault from "native" /* 576 */;
-import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10900 */;
+import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10901 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

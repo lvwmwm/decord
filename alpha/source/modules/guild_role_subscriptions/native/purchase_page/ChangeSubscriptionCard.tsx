@@ -1,10 +1,10 @@
-// Module ID: 16891
-// Function ID: 16892
+// Module ID: 16897
+// Function ID: 16898
 // Name: ChangeSubscriptionCard
-// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 4752, 1612, 15491, 4348, 7390, 1115, 1177, 16884, 4959, 16892, 1980, 4723, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 4752, 1612, 15497, 4348, 7395, 1115, 1177, 16890, 4959, 16898, 1980, 4723, 2]
 // Exports: default
 
-// Module 16891 (ChangeSubscriptionCard)
+// Module 16897 (ChangeSubscriptionCard)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
@@ -12,7 +12,7 @@ import _modDef4348 from "module_4348" /* 4348 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15491 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -63,11 +63,11 @@ export default function ChangeSubscriptionCard(activeSubscription) {
     const intl4 = tmp6(1115).intl;
     obj11.text = intl4.string(tmp6(1115).t.UwHVxr);
     obj11.onPress = function onPress() {
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16892, dependencyMap.paths), { subscriptionId: activeSubscription.id });
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16898, dependencyMap.paths), { subscriptionId: activeSubscription.id });
       const obj2 = { subscriptionId: activeSubscription.id };
       ActionSheetActionCreatorsDefault.hideActionSheet();
     };
-    items3[1] = tmp5(tmp6(16884).ArrowButton, obj11);
+    items3[1] = tmp5(tmp6(16890).ArrowButton, obj11);
     obj10.children = items3;
     tmp7Result = tmp7(closure_9, obj10);
   }
@@ -75,5 +75,5 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const obj9 = { emphasisHook };
   items1[3] = tmp7Result;
   obj4.children = items1;
-  return closure_7(activeSubscription(7390).BottomSheet, { startExpanded: true, children: closure_8(tmp8, obj4) });
+  return closure_7(activeSubscription(7395).BottomSheet, { startExpanded: true, children: closure_8(tmp8, obj4) });
 };

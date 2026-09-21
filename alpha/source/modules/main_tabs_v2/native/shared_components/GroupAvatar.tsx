@@ -1,15 +1,15 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13332
+// Function ID: 13333
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 4607, 5798, 563, 4492, 4757, 5185, 7220, 4752, 5799, 2]
+// Dependencies: [19, 17, 4748, 21, 4756, 576, 4607, 5803, 563, 4492, 4757, 5185, 7225, 4752, 5804, 2]
 // Exports: default
 
-// Module 13330 (GroupAvatar)
+// Module 13332 (GroupAvatar)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import timing from "timing" /* 4757 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7220 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7225 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 

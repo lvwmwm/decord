@@ -1,11 +1,11 @@
-// Module ID: 5752
-// Function ID: 5753
+// Module ID: 5757
+// Function ID: 5758
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [19, 21, 5753, 5749, 1115, 5186, 2]
+// Dependencies: [19, 21, 5758, 5754, 1115, 5186, 2]
 // Exports: default
 
-// Module 5752 (MemberVerificationAlertCancelPending)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5753 */;
+// Module 5757 (MemberVerificationAlertCancelPending)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5758 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -47,5 +47,5 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   items1[1] = closure_4(guildId(5186).Button, obj3);
   obj2.children = items1;
   obj.buttons = closure_6(closure_5, obj2);
-  return closure_4(onClose(5749), obj);
+  return closure_4(onClose(5754), obj);
 };

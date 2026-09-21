@@ -1,10 +1,10 @@
-// Module ID: 7289
-// Function ID: 7290
+// Module ID: 7294
+// Function ID: 7295
 // Name: useScaledRowHeight
 // Dependencies: [5193, 4457, 576, 2]
 // Exports: default, useScaledRowHeightData
 
-// Module 7289 (useScaledRowHeight)
+// Module 7294 (useScaledRowHeight)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
 import useFontScale from "useFontScale" /* 5193 */;

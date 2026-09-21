@@ -1,10 +1,10 @@
-// Module ID: 5307
-// Function ID: 5308
+// Module ID: 5314
+// Function ID: 5315
 // Name: StageLockIcon
 // Dependencies: [19, 21, 576, 4456, 5254, 2]
 // Exports: StageLockIcon
 
-// Module 5307 (StageLockIcon)
+// Module 5314 (StageLockIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5254 from "module_5254" /* 5254 */;

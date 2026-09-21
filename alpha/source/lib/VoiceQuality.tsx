@@ -1,14 +1,14 @@
-// Module ID: 14079
-// Function ID: 14080
+// Module ID: 14085
+// Function ID: 14086
 // Name: VoiceQuality
-// Dependencies: [32, 7982, 4814, 14080, 7988, 4811, 12, 4785, 2]
+// Dependencies: [32, 7984, 4814, 14086, 7990, 4811, 12, 4785, 2]
 
-// Module 14079 (VoiceQuality)
+// Module 14085 (VoiceQuality)
 import _modDef12 from "module_12" /* 12 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import Histogram from "Histogram" /* 7982 */;
-import SystemResourcesDefault from "SystemResources" /* 7988 */;
-import NetworkQualityDefault from "NetworkQuality" /* 14080 */;
+import Histogram from "Histogram" /* 7984 */;
+import SystemResourcesDefault from "SystemResources" /* 7990 */;
+import NetworkQualityDefault from "NetworkQuality" /* 14086 */;
 import _slicedToArray from "module_32" /* 32 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 4814 */;
 

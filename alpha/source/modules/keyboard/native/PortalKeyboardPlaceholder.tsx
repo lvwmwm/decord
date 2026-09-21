@@ -1,9 +1,9 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12505
+// Function ID: 12506
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 4756, 1364, 576, 1610, 1612, 7183, 1478, 5791, 8114, 4624, 1878, 2]
+// Dependencies: [19, 17, 21, 4756, 1364, 576, 1610, 1612, 7188, 1478, 5796, 8116, 4624, 1878, 2]
 
-// Module 12503 (PortalKeyboardPlaceholder)
+// Module 12505 (PortalKeyboardPlaceholder)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
@@ -11,9 +11,9 @@ import KeyboardTypes from "KeyboardTypes" /* 1610 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1878 */;
 import useKeyboardTypeDefault from "useKeyboardType" /* 4624 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5791 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7183 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8114 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5796 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7188 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8116 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

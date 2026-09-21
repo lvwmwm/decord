@@ -1,9 +1,0 @@
-// Module ID: 18098
-// Function ID: 18099
-// Dependencies: [1121]
-
-// Module 18098
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "bfb98edbbbdba844f1779b23cfef0afa", name: "finishing_touches_light", type: "png" });

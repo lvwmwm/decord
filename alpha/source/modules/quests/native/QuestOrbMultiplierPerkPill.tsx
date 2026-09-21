@@ -1,18 +1,18 @@
-// Module ID: 15426
-// Function ID: 15427
+// Module ID: 15432
+// Function ID: 15433
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 4690, 4464, 4457, 4605, 11736, 11554, 1115, 8939, 4752, 5334, 15427, 5198, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 4690, 4464, 4457, 4605, 11738, 11556, 1115, 8940, 4752, 5339, 15433, 5198, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 15426 (QuestOrbMultiplierPerkPill)
+// Module 15432 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
 import themes from "themes" /* 4464 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
 import useTheme from "useTheme" /* 4690 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11554 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 11736 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 15427 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11556 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 11738 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 15433 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     let tmp21Result = !tmp13;
     let tmp19 = tmp21Result;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(8939).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(8940).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: null };
     const items2 = [tmp19, ];
@@ -107,6 +107,6 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     items4[1] = closure_6(token3, obj19);
     obj16.children = items4;
     obj15.children = closure_8(token3, obj16);
-    return closure_6(tmp2(5334).PressableOpacity, obj15);
+    return closure_6(tmp2(5339).PressableOpacity, obj15);
   }
 };

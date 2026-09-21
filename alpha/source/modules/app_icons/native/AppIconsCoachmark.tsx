@@ -1,16 +1,16 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17394
+// Function ID: 17395
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1372, 2038, 21, 4756, 576, 504, 4414, 4723, 7390, 17384, 1177, 10220, 4752, 1115, 5186, 13714, 2]
+// Dependencies: [19, 17, 1372, 2038, 21, 4756, 576, 504, 4414, 4723, 7395, 17395, 1177, 10221, 4752, 1115, 5186, 13720, 2]
 // Exports: default
 
-// Module 17383 (AppIconsCoachmark)
+// Module 17394 (AppIconsCoachmark)
 import nativeDefault from "native" /* 576 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import _modDef10220 from "module_10220" /* 10220 */;
-import AppIconUtils from "AppIconUtils" /* 13714 */;
-import _modDef17384 from "module_17384" /* 17384 */;
+import _modDef10221 from "module_10221" /* 10221 */;
+import AppIconUtils from "AppIconUtils" /* 13720 */;
+import _modDef17395 from "module_17395" /* 17395 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -50,10 +50,10 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   const obj4 = { style: tmp.info, children: null };
   const isPremiumResult = PremiumUtilsDefault.isPremium(stateFromStores);
-  const items2 = [closure_8(closure_4, { source: _modDef17384, style: tmp.image }), , ];
+  const items2 = [closure_8(closure_4, { source: _modDef17395, style: tmp.image }), , ];
   const obj6 = { style: tmp.titleContainer, children: null };
-  const obj5 = { source: _modDef17384, style: tmp.image };
-  const items3 = [closure_8(markAsDismissed(1177).Icon, { source: _modDef10220, size: markAsDismissed(1177).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
+  const obj5 = { source: _modDef17395, style: tmp.image };
+  const items3 = [closure_8(markAsDismissed(1177).Icon, { source: _modDef10221, size: markAsDismissed(1177).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1115).intl;
   obj8.children = intl.string(markAsDismissed(1115).t.EfA4Cq);
@@ -93,5 +93,5 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   obj10.children = items5;
   items4[1] = closure_9(closure_5, obj10);
   obj3.children = items4;
-  return closure_9(markAsDismissed(7390).BottomSheet, obj3);
+  return closure_9(markAsDismissed(7395).BottomSheet, obj3);
 };

@@ -1,12 +1,12 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 8986
+// Function ID: 8987
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2000, 2043, 4740, 1074, 8959, 504, 1091, 8648, 7549, 2]
+// Dependencies: [5, 19, 2000, 2043, 4740, 1074, 8960, 504, 1091, 8649, 7551, 2]
 // Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 8985 (useGameProfileInvite)
+// Module 8986 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1091 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8648 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8649 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GameStore from "GameStore" /* 2000 */;

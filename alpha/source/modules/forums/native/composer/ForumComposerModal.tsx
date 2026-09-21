@@ -1,25 +1,25 @@
-// Module ID: 10509
-// Function ID: 10510
+// Module ID: 10510
+// Function ID: 10511
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 9772, 2041, 5105, 5104, 7517, 21, 4756, 576, 1875, 5109, 1115, 8017, 9420, 7402, 504, 10510, 10508, 1482, 1610, 11, 8007, 5842, 10511, 2]
+// Dependencies: [19, 17, 9773, 2041, 5105, 5104, 7519, 21, 4756, 576, 1875, 5109, 1115, 8019, 9421, 7407, 504, 10511, 10509, 1482, 1610, 11, 8009, 5847, 10512, 2]
 // Exports: default
 
-// Module 10509 (ForumComposerModal)
+// Module 10510 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import KeyboardTypes from "KeyboardTypes" /* 1610 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8017 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9420 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10508 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8019 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9421 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 10509 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9772 */;
+import NativeMenuStore from "NativeMenuStore" /* 9773 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import DraftStore from "DraftStore" /* 5105 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7517 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7519 */;
 
 require = fn;
 const View = fn(17).View;
@@ -41,8 +41,8 @@ export default function ForumComposerModal(parentChannelId) {
   function handleClose(arg0) {
     if (null != stateFromStores) {
       if (arg0) {
-        let result = tmp52(10508).closeCreateForumPostModal();
-        const tmp52Result = tmp52(10508);
+        let result = tmp52(10509).closeCreateForumPostModal();
+        const tmp52Result = tmp52(10509);
         DraftActionCreatorsDefault.clearDraft(parentChannelId, DraftType.ThreadSettings);
         DraftActionCreatorsDefault.clearDraft(parentChannelId, DraftType.ChannelMessage);
         UploadAttachmentActionCreatorsDefault.clearAll(parentChannelId, DraftType.ChannelMessage);

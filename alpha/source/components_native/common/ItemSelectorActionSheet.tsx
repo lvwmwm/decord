@@ -1,10 +1,10 @@
-// Module ID: 9539
-// Function ID: 9540
+// Module ID: 9540
+// Function ID: 9541
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4457, 576, 1612, 7390, 7389, 7438, 6864, 5897, 5900, 2]
+// Dependencies: [19, 21, 4457, 576, 1612, 7395, 7394, 7443, 6869, 5902, 5905, 2]
 // Exports: default
 
-// Module 9539 (ItemSelectorActionSheet)
+// Module 9540 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import noop from "module_19" /* 19 */;
@@ -25,9 +25,9 @@ export default function ItemSelectorActionSheet(arg0) {
   let tmp6Result = null;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(7438).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(7443).ActionSheetCloseButton, obj3);
   }
-  const obj4 = { scrollable: true, header: closure_3(items(7389).BottomSheetTitleHeader, obj2), children: null };
+  const obj4 = { scrollable: true, header: closure_3(items(7394).BottomSheetTitleHeader, obj2), children: null };
   obj2.trailing = tmp6Result;
   const obj5 = { contentContainerStyle: null, children: null };
   const obj = items(4457);
@@ -39,7 +39,7 @@ export default function ItemSelectorActionSheet(arg0) {
     num = findIndexResult;
   }
   const obj6 = { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 };
-  items1[1] = closure_3(items(5897).TableRadioGroup, {
+  items1[1] = closure_3(items(5902).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -48,9 +48,9 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => closure_1_3(items(5900).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => closure_1_3(items(5905).TableRadioRow, { label: label.label, value }, value))
   });
   obj5.children = items1;
-  obj4.children = tmp8(items(6864).BottomSheetScrollView, obj5);
-  return closure_3(items(7390).BottomSheet, obj4);
+  obj4.children = tmp8(items(6869).BottomSheetScrollView, obj5);
+  return closure_3(items(7395).BottomSheet, obj4);
 };

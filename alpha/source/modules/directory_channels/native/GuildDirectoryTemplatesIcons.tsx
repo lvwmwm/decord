@@ -1,18 +1,18 @@
-// Module ID: 12577
-// Function ID: 12578
+// Module ID: 12579
+// Function ID: 12580
 // Name: GuildDirectoryTemplatesIcons
-// Dependencies: [12578, 12579, 12580, 12581, 12582, 12583, 12584, 2]
+// Dependencies: [12580, 12581, 12582, 12583, 12584, 12585, 12586, 2]
 
-// Module 12577 (GuildDirectoryTemplatesIcons)
-import _modDef12578 from "module_12578" /* 12578 */;
-import _modDef12579 from "module_12579" /* 12579 */;
+// Module 12579 (GuildDirectoryTemplatesIcons)
 import _modDef12580 from "module_12580" /* 12580 */;
 import _modDef12581 from "module_12581" /* 12581 */;
 import _modDef12582 from "module_12582" /* 12582 */;
 import _modDef12583 from "module_12583" /* 12583 */;
 import _modDef12584 from "module_12584" /* 12584 */;
+import _modDef12585 from "module_12585" /* 12585 */;
+import _modDef12586 from "module_12586" /* 12586 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");
 
-export const GUILD_TEMPLATE_ICONS = { CREATE: _modDef12578, HUB_SCHOOL_CLUB: _modDef12579, HUB_STUDY: _modDef12580, HUB_CLASS: _modDef12581, HUB_SOCIAL: _modDef12582, HUB_MAJOR: _modDef12583, HUB_DORM: _modDef12584 };
+export const GUILD_TEMPLATE_ICONS = { CREATE: _modDef12580, HUB_SCHOOL_CLUB: _modDef12581, HUB_STUDY: _modDef12582, HUB_CLASS: _modDef12583, HUB_SOCIAL: _modDef12584, HUB_MAJOR: _modDef12585, HUB_DORM: _modDef12586 };

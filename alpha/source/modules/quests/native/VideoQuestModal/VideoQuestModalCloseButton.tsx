@@ -1,15 +1,15 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15415
+// Function ID: 15416
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 576, 5334, 1115, 5892, 2]
+// Dependencies: [21, 576, 5339, 1115, 5897, 2]
 // Exports: default
 
-// Module 15409 (VideoQuestModalCloseButton)
+// Module 15415 (VideoQuestModalCloseButton)
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5334 */;
-import XSmallIcon from "XSmallIcon" /* 5892 */;
+import Pressables from "Pressables" /* 5339 */;
+import XSmallIcon from "XSmallIcon" /* 5897 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

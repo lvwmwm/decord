@@ -1,21 +1,21 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16596
+// Function ID: 16597
 // Name: useGuildActionRows
-// Dependencies: [32, 4943, 7774, 1074, 12624, 7504, 7490, 7502, 7466, 7462, 563, 7484, 7463, 12540, 7505, 7464, 12765, 16490, 16555, 7507, 4668, 16591, 7628, 2027, 2]
+// Dependencies: [32, 4943, 7776, 1074, 12626, 7506, 7492, 7504, 7471, 7467, 563, 5274, 7468, 12542, 7507, 7469, 12767, 16496, 16561, 7509, 4668, 16597, 7630, 2027, 2]
 // Exports: default
 
-// Module 16590 (useGuildActionRows)
-import useIsNewMemberDefault from "useIsNewMember" /* 7463 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12624 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12765 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16555 */;
+// Module 16596 (useGuildActionRows)
+import useIsNewMemberDefault from "useIsNewMember" /* 7468 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12626 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12767 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16561 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4943 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelListGuildActionRow = fn(7774).ChannelListGuildActionRow;
+const ChannelListGuildActionRow = fn(7776).ChannelListGuildActionRow;
 const GuildFeatures = fn(1074).GuildFeatures;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_sidebar/useGuildActionRows.tsx");

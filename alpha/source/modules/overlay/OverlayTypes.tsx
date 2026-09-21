@@ -1,9 +1,9 @@
-// Module ID: 14252
-// Function ID: 14253
+// Module ID: 14258
+// Function ID: 14259
 // Name: OverlayTypes
 // Dependencies: [2]
 
-// Module 14252 (OverlayTypes)
+// Module 14258 (OverlayTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/overlay/OverlayTypes.tsx");

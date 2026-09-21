@@ -1,13 +1,13 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9165
+// Function ID: 9166
 // Name: NintendoSwitchNeutralIcon
-// Dependencies: [19, 21, 576, 4456, 9165, 2]
+// Dependencies: [19, 21, 576, 4456, 9166, 2]
 // Exports: NintendoSwitchNeutralIcon
 
-// Module 9164 (NintendoSwitchNeutralIcon)
+// Module 9165 (NintendoSwitchNeutralIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod9165 from "module_9165" /* 9165 */;
+import _mod9166 from "module_9166" /* 9166 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const NintendoSwitchNeutralIcon = function NintendoSwitchNeutralIcon(colo
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9165, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9166, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

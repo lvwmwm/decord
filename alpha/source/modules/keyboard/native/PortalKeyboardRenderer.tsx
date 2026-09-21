@@ -1,13 +1,13 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16976
+// Function ID: 16977
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1480, 21, 4466, 4624, 1610, 1364, 16969, 4625, 4614, 7461, 10345, 1482, 4628, 10580, 2]
+// Dependencies: [19, 1480, 21, 4466, 4624, 1610, 1364, 16977, 4625, 4614, 7466, 10346, 1482, 4628, 10581, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 16968 (PortalKeyboardRenderer)
+// Module 16976 (PortalKeyboardRenderer)
 import native from "native" /* 4466 */;
 import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 4625 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16969 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16977 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
 
@@ -123,7 +123,7 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
     let tmp10Result = tmp10(tmp5(4628).PortalKeyboard, obj3);
   } else {
     const obj4 = { value: true, children: tmp11 };
-    tmp10Result = tmp10(tmp5(10580).PortalKeyboardInModalContext.Provider, obj4);
+    tmp10Result = tmp10(tmp5(10581).PortalKeyboardInModalContext.Provider, obj4);
   }
   return tmp10Result;
 };

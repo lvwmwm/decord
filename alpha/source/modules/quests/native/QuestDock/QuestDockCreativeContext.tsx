@@ -1,11 +1,11 @@
-// Module ID: 15363
-// Function ID: 15364
+// Module ID: 15369
+// Function ID: 15370
 // Name: QuestDockCreativeContext
-// Dependencies: [19, 21, 5663, 2]
+// Dependencies: [19, 21, 5668, 2]
 // Exports: QuestDockBountyProvider, QuestDockQuestProvider, getCreativeAnalyticsParams, getDeliveredAdCreativeId, getDeliveredQuest, useBountyCreative, useQuestCreative, useQuestDockBounty, useQuestDockCreative, useQuestDockQuest
 
-// Module 15363 (QuestDockCreativeContext)
-import AdCreativeType from "AdCreativeType" /* 5663 */;
+// Module 15369 (QuestDockCreativeContext)
+import AdCreativeType from "AdCreativeType" /* 5668 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,10 +17,10 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDock/Quest
 export const getCreativeAnalyticsParams = function getCreativeAnalyticsParams(creative) {
   const type = creative.type;
   if (AdCreativeType.AdCreativeType.QUEST === type) {
-    const obj2 = { adCreativeType: tmp(5663).AdCreativeType.QUEST, adCreativeId: creative.quest.id };
+    const obj2 = { adCreativeType: tmp(5668).AdCreativeType.QUEST, adCreativeId: creative.quest.id };
     return obj2;
-  } else if (tmp(5663).AdCreativeType.BOUNTY === type) {
-    const obj = { adCreativeType: tmp(5663).AdCreativeType.BOUNTY, adCreativeId: creative.bounty.id };
+  } else if (tmp(5668).AdCreativeType.BOUNTY === type) {
+    const obj = { adCreativeType: tmp(5668).AdCreativeType.BOUNTY, adCreativeId: creative.bounty.id };
     return obj;
   }
 };
@@ -35,9 +35,9 @@ export const getDeliveredAdCreativeId = function getDeliveredAdCreativeId(type) 
   type = type.type;
   if (AdCreativeType.AdCreativeType.QUEST === type) {
     return type.quest.id;
-  } else if (tmp(5663).AdCreativeType.BOUNTY === type) {
+  } else if (tmp(5668).AdCreativeType.BOUNTY === type) {
     return type.bounty.id;
-  } else if (tmp(5663).AdCreativeType.NO_FILL === type) {
+  } else if (tmp(5668).AdCreativeType.NO_FILL === type) {
     return null;
   }
 };

@@ -1,20 +1,20 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17378
+// Function ID: 17379
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2040, 4772, 9653, 502, 1992, 1074, 4777, 21, 4756, 1177, 576, 9658, 504, 9615, 9648, 4963, 9657, 5337, 9660, 8602, 9678, 9682, 9690, 9710, 9718, 9638, 9679, 9656, 10345, 4492, 4757, 5894, 17368, 1612, 2]
+// Dependencies: [32, 19, 17, 2040, 4772, 9654, 502, 1992, 1074, 4777, 21, 4756, 1177, 576, 9659, 504, 9616, 9649, 4963, 9658, 5342, 9661, 8603, 9679, 9683, 9691, 9711, 9719, 9639, 9680, 9657, 10346, 4492, 4757, 5899, 17379, 1612, 2]
 // Exports: default
 
-// Module 17367 (PictureInPictureGlobal)
+// Module 17378 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 576 */;
 import native2 from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4963 */;
-import NavigatorConstants from "NavigatorConstants" /* 5894 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9615 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9638 */;
-import PictureInPictureDefault from "PictureInPicture" /* 9656 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17368 */;
+import NavigatorConstants from "NavigatorConstants" /* 5899 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9616 */;
+import transitionToActivityDefault from "transitionToActivity" /* 9639 */;
+import PictureInPictureDefault from "PictureInPicture" /* 9657 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17379 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
@@ -27,7 +27,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire, TouchableOpacity: closure_7 } = get_ActivityIndicator);
-let closure_10 = fn(9653).useBestActiveChatInputContainerHeight;
+let closure_10 = fn(9654).useBestActiveChatInputContainerHeight;
 const PictureInPicturePositions = fn(1074).PictureInPicturePositions;
 const ParticipantTypes = fn(4777).ParticipantTypes;
 const jsxProd = fn(21);

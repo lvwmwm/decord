@@ -1,10 +1,10 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13044
+// Function ID: 13045
 // Name: convertRouteToNavigation
 // Dependencies: [1074, 4616, 4613, 4614, 4582, 4595, 2]
 // Exports: convertRouteToNavigation
 
-// Module 13042 (convertRouteToNavigation)
+// Module 13044 (convertRouteToNavigation)
 import Constants from "Constants" /* 1074 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
 import size from "module_2" /* 2 */;

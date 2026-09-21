@@ -1,10 +1,10 @@
-// Module ID: 8666
-// Function ID: 8667
+// Module ID: 8667
+// Function ID: 8668
 // Name: useStateChannelIsLive
 // Dependencies: [2046, 504, 2]
 // Exports: default
 
-// Module 8666 (useStateChannelIsLive)
+// Module 8667 (useStateChannelIsLive)
 import StageInstanceStore from "StageInstanceStore" /* 2046 */;
 
 const require = globalThis.__r;

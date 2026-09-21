@@ -1,16 +1,16 @@
-// Module ID: 14948
-// Function ID: 14949
+// Module ID: 14954
+// Function ID: 14955
 // Name: UserSettingsAccountBackupCodes
-// Dependencies: [19, 17, 14009, 21, 4756, 576, 7429, 4453, 5817, 7373, 1115, 4457, 504, 14949, 5184, 4752, 5899, 2]
+// Dependencies: [19, 17, 14015, 21, 4756, 576, 7434, 4453, 5822, 7378, 1115, 4457, 504, 14955, 5184, 4752, 5904, 2]
 // Exports: default
 
-// Module 14948 (UserSettingsAccountBackupCodes)
+// Module 14954 (UserSettingsAccountBackupCodes)
 import nativeDefault from "native" /* 576 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
-import ClipboardUtils from "ClipboardUtils" /* 7429 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14949 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14955 */;
 import noop from "module_19" /* 19 */;
-import MFAStore from "MFAStore" /* 14009 */;
+import MFAStore from "MFAStore" /* 14015 */;
 
 require = fn;
 function CodeRow(code) {
@@ -29,10 +29,10 @@ function CodeRow(code) {
   let tmp2Result = null;
   if (showCheckMark) {
     const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-    tmp2Result = tmp2(code(7373).CheckmarkSmallIcon, obj2);
+    tmp2Result = tmp2(code(7378).CheckmarkSmallIcon, obj2);
   }
   obj.trailing = tmp2Result;
-  return closure_6(code(5817).TableRow, obj);
+  return closure_6(code(5822).TableRow, obj);
 }
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
@@ -85,7 +85,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     const intl2 = tmp3(1115).intl;
     obj5.title = intl2.string(tmp3(1115).t.zdzyFo);
     obj5.children = unusedCodes.map((code, index) => closure_1_6(CodeRow, { code: code.code, showCheckMark: false }, index));
-    tmp10Result = tmp10(tmp3(5899).TableRowGroup, obj5);
+    tmp10Result = tmp10(tmp3(5904).TableRowGroup, obj5);
   }
   items2[1] = tmp10Result;
   let tmp10Result3 = usedCodes.length > 0;
@@ -94,7 +94,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     const intl3 = tmp3(1115).intl;
     obj6.title = intl3.string(tmp3(1115).t.FkFLDN);
     obj6.children = usedCodes.map((code, index) => closure_1_6(CodeRow, { code: code.code, showCheckMark: true }, index));
-    tmp10Result3 = tmp10(tmp3(5899).TableRowGroup, obj6);
+    tmp10Result3 = tmp10(tmp3(5904).TableRowGroup, obj6);
   }
   items2[2] = tmp10Result3;
   let tmp10Result4 = null !== headerLabel.onGenerate;
@@ -109,8 +109,8 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
       const verificationKey = MFAStore.getVerificationKey();
       const result = MFAActionCreatorsDefault.confirmViewBackupCodes(verificationKey, true);
     };
-    obj7.children = tmp10(tmp3(5817).TableRow, obj8);
-    tmp10Result4 = tmp10(tmp3(5899).TableRowGroup, obj7);
+    obj7.children = tmp10(tmp3(5822).TableRow, obj8);
+    tmp10Result4 = tmp10(tmp3(5904).TableRowGroup, obj7);
   }
   const obj4 = { paddingHorizontal: token, paddingTop: nativeDefault.space.PX_16 };
   items2[3] = tmp10Result4;

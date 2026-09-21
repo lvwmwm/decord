@@ -1,14 +1,14 @@
-// Module ID: 7410
-// Function ID: 7411
+// Module ID: 7415
+// Function ID: 7416
 // Name: AuthorizedAppsActionCreators
-// Dependencies: [5, 7347, 1074, 2036, 573, 1271, 2]
+// Dependencies: [5, 7352, 1074, 2036, 573, 1271, 2]
 
-// Module 7410 (AuthorizedAppsActionCreators)
+// Module 7415 (AuthorizedAppsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import Timers from "Timers" /* 2036 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7347 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7352 */;
 
 require = fn;
 function tokensToAppTokensMap(arg0, arr) {
@@ -110,7 +110,7 @@ let closure_10 = async function _fetchAuthorizedApps(application_ids) {
     }
   })();
 };
-const FetchState = fn(7347).FetchState;
+const FetchState = fn(7352).FetchState;
 const Endpoints = fn(1074).Endpoints;
 const batchInvocationManager = new fn(2036).BatchInvocationManager(fetchAuthorizedApps, {
   predicate(arg0) {

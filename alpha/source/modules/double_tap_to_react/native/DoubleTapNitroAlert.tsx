@@ -1,21 +1,21 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8232
+// Function ID: 8233
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 8226, 1074, 8232, 21, 4756, 7622, 5110, 5114, 6847, 1115, 2]
+// Dependencies: [19, 17, 8227, 1074, 8233, 21, 4756, 7624, 5110, 5114, 6852, 1115, 2]
 // Exports: default
 
-// Module 8231 (DoubleTapNitroAlert)
+// Module 8232 (DoubleTapNitroAlert)
 import util from "util" /* 1115 */;
 import AlertModal from "AlertModal" /* 5114 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6847 */;
-import openUserSettings from "openUserSettings" /* 7622 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6852 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const NITRO_UPSELL_ALERT_KEY = fn(8226).NITRO_UPSELL_ALERT_KEY;
+const NITRO_UPSELL_ALERT_KEY = fn(8227).NITRO_UPSELL_ALERT_KEY;
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const MobileUserSettings = fn(8232).MobileUserSettings;
+const MobileUserSettings = fn(8233).MobileUserSettings;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4756);

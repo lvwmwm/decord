@@ -1,18 +1,18 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 13385
+// Function ID: 13386
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1074, 2038, 21, 4756, 576, 1186, 1115, 13384, 8921, 2019, 2027, 7628, 4752, 7622, 4710, 5334, 5892, 2]
+// Dependencies: [32, 19, 17, 1074, 2038, 21, 4756, 576, 1186, 1115, 13386, 8922, 2019, 2027, 7630, 4752, 7624, 4710, 5339, 5897, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 13383 (UserProfilePrivacyNotice)
+// Module 13385 (UserProfilePrivacyNotice)
 import nativeDefault from "native" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2019 */;
 import dismissible_content from "dismissible_content" /* 2027 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7628 */;
-import useUserIsTeen from "useUserIsTeen" /* 8921 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13384 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
+import useUserIsTeen from "useUserIsTeen" /* 8922 */;
+import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 13386 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -87,8 +87,8 @@ export default function UserProfilePrivacyNotice() {
       return require(ContentDismissActionType.USER_DISMISS);
     };
     obj8.style = tmp.closeButton;
-    obj8.children = closure_7(tmp2(5892).XSmallIcon, { size: "xs", color: "icon-feedback-info" });
-    items1[2] = closure_7(tmp2(5334).PressableOpacity, obj8);
+    obj8.children = closure_7(tmp2(5897).XSmallIcon, { size: "xs", color: "icon-feedback-info" });
+    items1[2] = closure_7(tmp2(5339).PressableOpacity, obj8);
     obj4.children = items1;
     return closure_8(View, obj4);
   }

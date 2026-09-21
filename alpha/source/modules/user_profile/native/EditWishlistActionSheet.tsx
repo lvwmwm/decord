@@ -1,28 +1,28 @@
-// Module ID: 13398
-// Function ID: 13399
+// Module ID: 13400
+// Function ID: 13401
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 4748, 9056, 9057, 1372, 7855, 8451, 7391, 21, 4756, 576, 4492, 4757, 504, 1612, 7402, 7422, 13395, 13396, 13376, 9062, 8459, 11416, 1115, 6864, 5899, 7440, 7313, 11300, 8178, 4713, 2]
+// Dependencies: [32, 19, 17, 4748, 9057, 9058, 1372, 7857, 8452, 7396, 21, 4756, 576, 4492, 4757, 504, 1612, 7407, 7427, 13397, 13398, 13378, 9063, 8460, 11418, 1115, 6869, 5904, 7445, 7318, 11302, 8179, 4713, 2]
 // Exports: default
 
-// Module 13398 (EditWishlistActionSheet)
+// Module 13400 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4757 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8459 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9062 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 13396 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8460 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9063 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 13398 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import WishlistStore from "WishlistStore" /* 9056 */;
+import WishlistStore from "WishlistStore" /* 9057 */;
 import UserStore from "UserStore" /* 1372 */;
-import UserProfileStore from "UserProfileStore" /* 7855 */;
+import UserProfileStore from "UserProfileStore" /* 7857 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const getWishlistProductLines = fn(9057).getWishlistProductLines;
-let closure_12 = fn(8451).TrackUserProfileWishlistActions;
-const ACTION_SHEET_MAX_WIDTH = fn(7391).ACTION_SHEET_MAX_WIDTH;
+const getWishlistProductLines = fn(9058).getWishlistProductLines;
+let closure_12 = fn(8452).TrackUserProfileWishlistActions;
+const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
 const createStyles = fn(4756);
@@ -81,15 +81,15 @@ export default function EditWishlistActionSheet(wishlistId) {
   if (analyticsLocations1 == null) {
     analyticsLocations1 = [];
   }
-  analyticsLocations = analyticsContext(7402)(analyticsLocations1, tmp4(7422).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(7407)(analyticsLocations1, tmp4(7427).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   const obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp5 = analyticsContext(7402);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(13395)({ maxWidth: ACTION_SHEET_MAX_WIDTH }));
+  let tmp5 = analyticsContext(7407);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(13397)({ maxWidth: ACTION_SHEET_MAX_WIDTH }));
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
     let tmp7 = obj3;
   }
-  let tmp6 = analyticsContext(13395)({ maxWidth: ACTION_SHEET_MAX_WIDTH });
+  let tmp6 = analyticsContext(13397)({ maxWidth: ACTION_SHEET_MAX_WIDTH });
   const items1 = [value];
   stateFromStores = wishlistId(504).useStateFromStores(items1, () => WishlistStore.getWishlist(wishlistId));
   const tmp2Result = wishlistId(504);
@@ -169,8 +169,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   obj10.subLabel = intl3.string(wishlistId(1115).t.dw58pE);
   obj10.value = value;
   obj10.onValueChange = callback;
-  obj9.children = closure_14(wishlistId(7440).TableSwitchRow, obj10);
-  obj8.children = closure_14(wishlistId(5899).TableRowGroup, obj9);
+  obj9.children = closure_14(wishlistId(7445).TableSwitchRow, obj10);
+  obj8.children = closure_14(wishlistId(5904).TableRowGroup, obj9);
   const items8 = [closure_14(stateFromStores, obj8), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -180,7 +180,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     items8[1] = tmp16Result;
     obj6.children = items8;
     obj5.children = closure_15(tmp19, obj6);
-    obj4.children = tmp16(tmp2(6864).BottomSheetScrollView, obj5);
+    obj4.children = tmp16(tmp2(6869).BottomSheetScrollView, obj5);
     return tmp16(tmp4Result, obj4);
   }
   tmp16Result = null;

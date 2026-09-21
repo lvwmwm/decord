@@ -1,10 +1,10 @@
-// Module ID: 7924
-// Function ID: 7925
+// Module ID: 7926
+// Function ID: 7927
 // Name: ApplicationCodedLink
-// Dependencies: [4744, 1370, 7925, 7926, 2]
+// Dependencies: [4744, 1370, 7927, 7928, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7924 (ApplicationCodedLink)
+// Module 7926 (ApplicationCodedLink)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import CodedLink from "CodedLink" /* 4744 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
     if (tmp(4744).CodedLinkType.APP_OAUTH2_LINK !== type) {
       if (tmp(4744).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
         if (tmp(4744).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          const result = tmp(7925).parseStorefrontSkuCodedLink(code);
+          const result = tmp(7927).parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
             const obj2 = { type, applicationId: null, skuId: null };
@@ -37,7 +37,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
           }
           return tmp5;
         } else if (tmp(4744).CodedLinkType.ACTIVITY_BOOKMARK === type) {
-          const obj = { type, applicationId: code, params: tmp(7926).extractActivityBookmarkParams(url) };
+          const obj = { type, applicationId: code, params: tmp(7928).extractActivityBookmarkParams(url) };
           return obj;
         }
       }

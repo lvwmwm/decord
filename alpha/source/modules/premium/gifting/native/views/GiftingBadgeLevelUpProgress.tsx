@@ -1,20 +1,20 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11301
+// Function ID: 11302
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8460, 21, 4756, 576, 11003, 11008, 4752, 1115, 2578, 2]
+// Dependencies: [19, 17, 8461, 21, 4756, 576, 11004, 11009, 4752, 1115, 2578, 2]
 // Exports: default
 
-// Module 11299 (GiftingBadgeLevelUpProgress)
+// Module 11301 (GiftingBadgeLevelUpProgress)
 import nativeDefault from "native" /* 576 */;
 import _modDef2578 from "module_2578" /* 2578 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11003 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11008 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11004 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11009 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(8460).getSingleRequirementThreshold;
+let closure_4 = fn(8461).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4756);

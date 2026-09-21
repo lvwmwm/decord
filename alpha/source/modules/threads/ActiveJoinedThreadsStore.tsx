@@ -1,22 +1,22 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5723
+// Function ID: 5724
 // Name: ActiveJoinedThreadsStore
-// Dependencies: [2045, 2041, 2063, 4771, 2095, 5719, 4397, 2048, 11, 4966, 5720, 573, 12, 504, 2]
+// Dependencies: [2045, 2041, 2063, 4771, 2095, 5724, 4397, 2048, 11, 4966, 5725, 573, 12, 504, 2]
 
-// Module 5718 (ActiveJoinedThreadsStore)
+// Module 5723 (ActiveJoinedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ChannelConstants from "ChannelConstants" /* 2048 */;
 import AgeGateUtils from "AgeGateUtils" /* 4966 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5720 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5725 */;
 import ChannelRecord from "ChannelRecord" /* 2045 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5719 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5724 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17146
+// Function ID: 17147
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4756, 576, 1177, 17136, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1177, 17147, 4752, 1115, 2]
 // Exports: default
 
-// Module 17135 (PollBadge)
+// Module 17146 (PollBadge)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import _modDef17136 from "module_17136" /* 17136 */;
+import _modDef17147 from "module_17147" /* 17147 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,7 +27,7 @@ export default function PollBadge(style) {
   const obj = { style: null, children: null };
   const items = [tmp.container, style.style];
   obj.style = items;
-  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef17136 }), ];
+  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef17147 }), ];
   const obj3 = { style: tmp.text, variant: "text-xs/semibold", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.RgIi2B);

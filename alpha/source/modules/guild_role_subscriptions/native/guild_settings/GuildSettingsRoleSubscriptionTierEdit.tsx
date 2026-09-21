@@ -1,10 +1,10 @@
-// Module ID: 18222
-// Function ID: 18223
+// Module ID: 18233
+// Function ID: 18234
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4389, 18177, 15469, 1074, 2038, 21, 4756, 576, 1484, 18189, 18185, 7493, 10071, 4752, 5186, 1177, 18223, 7363, 18217, 18215, 18192, 15476, 18172, 12474, 18224, 1115, 15491, 4453, 5836, 7617, 9889, 2027, 18225, 1980, 10884, 10885, 9890, 2]
+// Dependencies: [32, 19, 17, 4389, 18188, 15475, 1074, 2038, 21, 4756, 576, 1484, 18200, 18196, 7495, 10072, 4752, 5186, 1177, 18234, 7368, 18228, 18226, 18203, 15482, 18183, 12476, 18235, 1115, 15497, 4453, 5841, 7619, 9890, 2027, 18236, 1980, 10885, 10886, 9891, 2]
 // Exports: default
 
-// Module 18222 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 18233 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1484 */;
@@ -12,24 +12,24 @@ import dismissible_content from "dismissible_content" /* 2027 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7493 */;
-import FormHeaderDefault from "FormHeader" /* 10071 */;
-import DismissibleActionSheet from "DismissibleActionSheet" /* 10885 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12474 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15476 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18172 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18185 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18189 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18192 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18215 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18217 */;
-import _modDef18223 from "module_18223" /* 18223 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18224 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7495 */;
+import FormHeaderDefault from "FormHeader" /* 10072 */;
+import DismissibleActionSheet from "DismissibleActionSheet" /* 10886 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12476 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18183 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18196 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18200 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18203 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18226 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18228 */;
+import _modDef18234 from "module_18234" /* 18234 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18235 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4389 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18177 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18188 */;
 
 const util = Spacer(1115);
 require = fn;
@@ -50,7 +50,7 @@ function ArchiveOrDeleteTierSection() {
   const tmp5 = value2;
   const tmp6 = __initData;
   const tmp8 = timestampProducer;
-  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18223 });
+  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18234 });
   obj7.onPress = handleArchiveOrDelete;
   let tmp9 = !allowSelfRemoveMonetization;
   if (allowSelfRemoveMonetization) {
@@ -94,7 +94,7 @@ function TabContent(selectedTab) {
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
 const FetchState = fn(4389).FetchState;
-const GuildRoleSubscriptionsTierScenes = fn(15469).GuildRoleSubscriptionsTierScenes;
+const GuildRoleSubscriptionsTierScenes = fn(15475).GuildRoleSubscriptionsTierScenes;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;
 const ContentDismissActionType = fn(2038).ContentDismissActionType;
 const jsxProd = fn(21);

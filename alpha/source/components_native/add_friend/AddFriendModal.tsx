@@ -1,21 +1,21 @@
-// Module ID: 14116
-// Function ID: 14117
+// Module ID: 14122
+// Function ID: 14123
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1372, 1074, 12929, 21, 4756, 5736, 576, 12931, 5203, 1241, 1364, 1487, 4959, 4600, 1115, 8631, 7617, 14117, 5836, 4752, 14118, 14120, 1612, 7240, 2]
+// Dependencies: [32, 19, 17, 1372, 1074, 12931, 21, 4756, 5741, 576, 12933, 5203, 1241, 1364, 1487, 4959, 4600, 1115, 8632, 7619, 14123, 5841, 4752, 14124, 14126, 1612, 7245, 2]
 // Exports: default
 
-// Module 14116 (AddFriendModal)
+// Module 14122 (AddFriendModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12931 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12933 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import TextStyles from "TextStyles" /* 5736 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 const require = globalThis.__r;
 
@@ -113,7 +113,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Fonts } = Constants);
-const ContactPermissions = fn(12929).ContactPermissions;
+const ContactPermissions = fn(12931).ContactPermissions;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4756);

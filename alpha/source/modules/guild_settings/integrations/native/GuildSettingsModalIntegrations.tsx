@@ -1,14 +1,14 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 17995
+// Function ID: 17996
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 17, 4395, 9855, 1074, 21, 4756, 576, 4457, 1484, 504, 4690, 17917, 8870, 5184, 5899, 5817, 1115, 17190, 17296, 15419, 5495, 1397, 4607, 7280, 2]
+// Dependencies: [19, 17, 4395, 9856, 1074, 21, 4756, 576, 4457, 1484, 504, 4690, 17928, 8871, 5184, 5904, 5822, 1115, 17201, 17307, 15425, 5500, 1397, 4607, 7285, 2]
 // Exports: default
 
-// Module 17984 (GuildSettingsModalIntegrations)
+// Module 17995 (GuildSettingsModalIntegrations)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9855 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
 
 const require = globalThis.__r;
 

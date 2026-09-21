@@ -1,17 +1,17 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15084
+// Function ID: 15085
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4405, 8232, 1074, 504, 1115, 11723, 7206, 15079, 2]
+// Dependencies: [4405, 8233, 1074, 504, 1115, 11725, 7211, 15085, 2]
 
-// Module 15078 (AccountIgnoredUsersSetting)
+// Module 15084 (AccountIgnoredUsersSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 
 require = fn;
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const route = SettingBuilders.createRoute({
-  IconComponent: fn(7206).EyeSlashIcon,
+  IconComponent: fn(7211).EyeSlashIcon,
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["93ZDWE"]);
@@ -22,7 +22,7 @@ const route = SettingBuilders.createRoute({
     const intl = util.intl;
     return intl.format(util.t.rXUeOl, { numberOfIgnoredUsers: stateFromStoresArray.length });
   },
-  parent: fn(8232).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8233).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
     route: fn(1074).UserSettingsSections.IGNORED_USERS,
     getComponent() {

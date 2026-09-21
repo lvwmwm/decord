@@ -1,16 +1,16 @@
-// Module ID: 9606
-// Function ID: 9607
+// Module ID: 9607
+// Function ID: 9608
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 4756, 576, 9607, 4752, 1115, 5108, 1177, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9608, 4752, 1115, 5108, 1177, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 9606 (confirmActivityAgeGateAlert)
+// Module 9607 (confirmActivityAgeGateAlert)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 9607 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 9608 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

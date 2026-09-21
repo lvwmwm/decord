@@ -1,14 +1,14 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12060
+// Function ID: 12061
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [4723, 12059, 1980, 11733, 11734, 8133, 4676, 2]
+// Dependencies: [4723, 12061, 1980, 11735, 11736, 8134, 4676, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 12058 (ExperimentEmbedPlatformUtils)
+// Module 12060 (ExperimentEmbedPlatformUtils)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11733 */;
-import useApexExperiments from "useApexExperiments" /* 11734 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11735 */;
+import useApexExperiments from "useApexExperiments" /* 11736 */;
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^dev://experiment/([-\\w._0-9]+)(?:/([0-9]+))?$", "i");
@@ -35,7 +35,7 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
         if (tmp6 == null) {
           tmp6 = null;
         }
-        const experimentBuckets = tmp(8133).getExperimentBuckets(tmp5);
+        const experimentBuckets = tmp(8134).getExperimentBuckets(tmp5);
         const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
           if (null != tmp6) {
@@ -47,9 +47,9 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
           tmp(4676).overrideBucket(tmp5.system, experimentFromEmbedURL, iter.value);
           const tmpResult4 = tmp(4676);
         }
-        const tmpResult = tmp(8133);
+        const tmpResult = tmp(8134);
       }
     }
   }
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12059, dependencyMap.paths), "ExperimentOverrideSheet", { id: experimentFromEmbedURL });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12061, dependencyMap.paths), "ExperimentOverrideSheet", { id: experimentFromEmbedURL });
 };

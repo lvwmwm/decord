@@ -1,9 +1,9 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5331
+// Function ID: 5332
 // Name: AgeRestrictionStatus
 // Dependencies: [2]
 
-// Module 5326 (AgeRestrictionStatus)
+// Module 5331 (AgeRestrictionStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionStatus.tsx");

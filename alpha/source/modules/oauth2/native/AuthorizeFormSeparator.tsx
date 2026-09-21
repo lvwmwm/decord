@@ -1,10 +1,10 @@
-// Module ID: 9536
-// Function ID: 9537
+// Module ID: 9537
+// Function ID: 9538
 // Name: AuthorizeFormSeparator
 // Dependencies: [17, 21, 4756, 576, 2]
 // Exports: AuthorizeFormSeparator
 
-// Module 9536 (AuthorizeFormSeparator)
+// Module 9537 (AuthorizeFormSeparator)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;

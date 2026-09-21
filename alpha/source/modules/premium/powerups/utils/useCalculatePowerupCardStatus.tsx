@@ -1,10 +1,10 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 12773
+// Function ID: 12774
 // Name: useCalculatePowerupCardStatus
 // Dependencies: [19, 4645, 1115, 2514, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 12771 (useCalculatePowerupCardStatus)
+// Module 12773 (useCalculatePowerupCardStatus)
 import util from "util" /* 1115 */;
 import _modDef2514 from "module_2514" /* 2514 */;
 import noop from "module_19" /* 19 */;

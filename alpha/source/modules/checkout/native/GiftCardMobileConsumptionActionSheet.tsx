@@ -1,10 +1,10 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7634
+// Function ID: 7635
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 2038, 21, 4756, 576, 1612, 4723, 7390, 5184, 5904, 4752, 1115, 2252, 5186, 2]
+// Dependencies: [19, 17, 2038, 21, 4756, 576, 1612, 4723, 7395, 5184, 5909, 4752, 1115, 2252, 5186, 2]
 // Exports: default
 
-// Module 7632 (GiftCardMobileConsumptionActionSheet)
+// Module 7634 (GiftCardMobileConsumptionActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef2252 from "module_2252" /* 2252 */;
@@ -62,7 +62,7 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   const items2 = [tmp.container, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   obj2.style = items2;
   const obj3 = { spacing: nativeDefault.space.PX_16, children: null };
-  const items3 = [closure_6(View, { style: tmp.illustration, children: closure_6(markAsDismissed(5904).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const items3 = [closure_6(View, { style: tmp.illustration, children: closure_6(markAsDismissed(5909).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
   const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
   const intl = markAsDismissed(1115).intl;
   obj5.children = intl.string(_modDef2252.V3DI1E);
@@ -77,5 +77,5 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   obj3.children = items3;
   obj2.children = closure_7(markAsDismissed(5184).Stack, obj3);
   obj.children = closure_6(View, obj2);
-  return closure_6(markAsDismissed(7390).BottomSheet, obj);
+  return closure_6(markAsDismissed(7395).BottomSheet, obj);
 };

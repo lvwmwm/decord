@@ -1,18 +1,18 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 8936
+// Function ID: 8937
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1074, 21, 4756, 576, 8936, 8937, 4752, 1115, 2019, 8938, 4466, 5799, 5198, 8523, 504, 7447, 8939, 8940, 2]
+// Dependencies: [32, 19, 17, 502, 1074, 21, 4756, 576, 8937, 8938, 4752, 1115, 2019, 8939, 4466, 5804, 5198, 8524, 504, 7452, 8940, 8941, 2]
 // Exports: default
 
-// Module 8935 (UserProfilePersonalWidgetCard)
+// Module 8936 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 4466 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import GifTagDefault from "GifTag" /* 8523 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8936 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8937 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 8938 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import GifTagDefault from "GifTag" /* 8524 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 8937 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 8938 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 8939 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -165,7 +165,7 @@ function CoverSection(section) {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8523), obj10);
+      tmp24Result5 = tmp24(tmp14(8524), obj10);
     }
     items2[3] = tmp24Result5;
     obj5.children = items2;
@@ -247,7 +247,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   let obj2 = { style: style.cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   let obj = userId(504);
   const tmp5 = disableInteraction;
-  obj2.titleLeadingIcon = closure_10(userId(8939).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj2.titleLeadingIcon = closure_10(userId(8940).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj2.title = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -255,7 +255,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   }
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(8940), obj3);
+    tmp4Result = tmp4(tmp5(8941), obj3);
   }
   obj2.trailingAction = tmp4Result;
   const obj4 = { style: tmp.sectionsContainer, children: null };
@@ -282,7 +282,7 @@ function UserProfilePersonalWidgetCardContent(style) {
   items1[1] = tmp4Result2;
   obj4.children = items1;
   obj2.children = closure_11(closure_7, obj4);
-  return closure_10(disableInteraction(7447), obj2);
+  return closure_10(disableInteraction(7452), obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);

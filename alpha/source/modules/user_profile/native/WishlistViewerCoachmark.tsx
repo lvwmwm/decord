@@ -1,20 +1,20 @@
-// Module ID: 13434
-// Function ID: 13435
+// Module ID: 13436
+// Function ID: 13437
 // Name: WishlistViewerCoachmark
-// Dependencies: [19, 17, 2038, 21, 4756, 13435, 1115, 11392, 2]
+// Dependencies: [19, 17, 2038, 21, 4756, 13437, 1115, 11394, 2]
 // Exports: default
 
-// Module 13434 (WishlistViewerCoachmark)
+// Module 13436 (WishlistViewerCoachmark)
 import util from "util" /* 1115 */;
-import _modDef13435 from "module_13435" /* 13435 */;
+import _modDef13437 from "module_13437" /* 13437 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function CoachmarkImage() {
   const tmp = closure_8();
   const obj = { style: tmp.imageContainer, children: null };
-  const obj2 = { source: { uri: _modDef13435 }, style: tmp.image };
-  obj.children = <hasOwnProperty source={{ uri: _modDef13435 }} style={tmp.image} />;
+  const obj2 = { source: { uri: _modDef13437 }, style: tmp.image };
+  obj.children = <hasOwnProperty source={{ uri: _modDef13437 }} style={tmp.image} />;
   return <React4 style={tmp.imageContainer}>{null}</React4>;
 }
 get_ActivityIndicator = fn(17);

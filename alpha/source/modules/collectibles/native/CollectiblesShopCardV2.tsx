@@ -1,19 +1,19 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9044
+// Function ID: 9045
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1182, 7782, 1076, 21, 4756, 576, 9044, 7793, 9045, 8446, 9048, 9049, 1115, 4454, 7402, 9107, 9109, 504, 4607, 5334, 7794, 4752, 9110, 9112, 9114, 8939, 9115, 9117, 9122, 9125, 9046, 4723, 8444, 4414, 9120, 9147, 9148, 1255, 2]
+// Dependencies: [19, 17, 1182, 7784, 1076, 21, 4756, 576, 9045, 7795, 9046, 8447, 9049, 9050, 1115, 4454, 7407, 9108, 9110, 504, 4607, 5339, 7796, 4752, 9111, 9113, 9115, 8940, 9116, 9118, 9123, 9126, 9047, 4723, 8445, 4414, 9121, 9148, 9149, 1255, 2]
 
-// Module 9043 (CollectiblesShopCardV2)
+// Module 9044 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import v1 from "v1" /* 1255 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8444 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9046 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8445 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9047 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7782 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
 
 require = fn;
 function CollectiblesShopCardInternalV2(product) {

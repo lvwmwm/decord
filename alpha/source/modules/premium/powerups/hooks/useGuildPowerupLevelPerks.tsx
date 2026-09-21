@@ -1,10 +1,10 @@
-// Module ID: 12778
-// Function ID: 12779
+// Module ID: 12780
+// Function ID: 12781
 // Name: useGuildPowerupLevelPerks
 // Dependencies: [19, 4645, 4649, 1115, 2514, 1370, 2]
 // Exports: default
 
-// Module 12778 (useGuildPowerupLevelPerks)
+// Module 12780 (useGuildPowerupLevelPerks)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import _modDef2514 from "module_2514" /* 2514 */;

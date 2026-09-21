@@ -1,10 +1,10 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8928
+// Function ID: 8929
 // Name: InAppReportsTextElement
 // Dependencies: [19, 17, 21, 4756, 5206, 4752, 2]
 // Exports: default
 
-// Module 8927 (InAppReportsTextElement)
+// Module 8928 (InAppReportsTextElement)
 import Text_Text from "Text/Text" /* 4752 */;
 import CustomMarkupAll from "CustomMarkup" /* 5206 */;
 import noop from "module_19" /* 19 */;

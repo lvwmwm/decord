@@ -1,13 +1,13 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12205
+// Function ID: 12206
 // Name: isNewMessageGroup
-// Dependencies: [1074, 1091, 7510, 11, 4438, 2]
+// Dependencies: [1074, 1091, 7512, 11, 4438, 2]
 // Exports: isNewGroupItem
 
-// Module 12203 (isNewMessageGroup)
+// Module 12205 (isNewMessageGroup)
 import DurationsDefault from "Durations" /* 1091 */;
 import DateUtils from "DateUtils" /* 4438 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7510 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7512 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

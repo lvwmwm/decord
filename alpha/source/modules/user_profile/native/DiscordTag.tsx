@@ -1,13 +1,13 @@
-// Module ID: 9900
-// Function ID: 9901
+// Module ID: 9901
+// Function ID: 9902
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 9551, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4752, 9552, 2]
 // Exports: default
 
-// Module 9900 (DiscordTag)
+// Module 9901 (DiscordTag)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import BotTagDefault from "BotTag" /* 9551 */;
+import BotTagDefault from "BotTag" /* 9552 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

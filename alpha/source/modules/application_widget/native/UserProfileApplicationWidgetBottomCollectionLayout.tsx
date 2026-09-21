@@ -1,12 +1,12 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9298
+// Function ID: 9299
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 4756, 576, 9203, 9291, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9204, 9292, 4752, 2]
 // Exports: default
 
-// Module 9297 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 9298 (UserProfileApplicationWidgetBottomCollectionLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9203 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9204 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,7 +31,7 @@ function CollectionItem(arg0) {
     let tmp12 = React4;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React4(tmp3(9291).ImageSkeleton, obj6);
+    tmp11 = React4(tmp3(9292).ImageSkeleton, obj6);
     tmp12 = React4;
   }
   const items1 = [tmp11, ];
@@ -40,14 +40,14 @@ function CollectionItem(arg0) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
     let tmp12Result = tmp12(tmp3(4752).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(9291).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(9292).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   const items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
     let tmp12Result2 = tmp12(tmp3(4752).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(9291).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(9292).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
   obj7.children = items2;

@@ -1,14 +1,14 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8394
+// Function ID: 8395
 // Name: ExplicitMediaUtils
-// Dependencies: [1074, 1385, 7532, 7537, 4968, 1115, 2]
+// Dependencies: [1074, 1385, 7534, 7539, 4968, 1115, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 8393 (ExplicitMediaUtils)
+// Module 8394 (ExplicitMediaUtils)
 import Constants from "Constants" /* 1074 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7532 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7537 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7534 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7539 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
@@ -84,9 +84,9 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   let isMediaScanPendingResult = !isAuthorBot;
   const mediaObscuredReasonFromBitmask = obj.getMediaObscuredReasonFromBitmask({ type: ExplicitMediaRedactionModels.ObscuredMediaTypes.GenericMedia, media: mediaItem }, enabledContentHarmTypeFlags);
   if (!isAuthorBot) {
-    const obj3 = { type: tmp(7537).ObscuredMediaTypes.GenericMedia, media: mediaItem };
-    isMediaScanPendingResult = tmp(7532).isMediaScanPending(obj3, enabledContentHarmTypeFlags);
-    const tmpResult = tmp(7532);
+    const obj3 = { type: tmp(7539).ObscuredMediaTypes.GenericMedia, media: mediaItem };
+    isMediaScanPendingResult = tmp(7534).isMediaScanPending(obj3, enabledContentHarmTypeFlags);
+    const tmpResult = tmp(7534);
   }
   if (isSpoilered) {
     isSpoilered = shouldObscureSpoiler;

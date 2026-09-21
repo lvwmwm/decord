@@ -1,10 +1,10 @@
-// Module ID: 5285
-// Function ID: 5286
+// Module ID: 5292
+// Function ID: 5293
 // Name: FolderIcon
 // Dependencies: [19, 21, 576, 4456, 5242, 2]
 // Exports: FolderIcon
 
-// Module 5285 (FolderIcon)
+// Module 5292 (FolderIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5242 from "module_5242" /* 5242 */;

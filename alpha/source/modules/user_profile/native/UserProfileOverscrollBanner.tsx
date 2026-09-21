@@ -1,13 +1,13 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8513
+// Function ID: 8514
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 4492, 8513, 8514, 1364, 2]
+// Dependencies: [19, 17, 21, 4492, 8514, 8515, 1364, 2]
 // Exports: default
 
-// Module 8512 (UserProfileOverscrollBanner)
+// Module 8513 (UserProfileOverscrollBanner)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8513 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8514 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8514 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8515 */;
 import noop from "module_19" /* 19 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 

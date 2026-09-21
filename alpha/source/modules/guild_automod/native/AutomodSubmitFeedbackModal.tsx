@@ -1,19 +1,19 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 12121
+// Function ID: 12122
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 7363, 7617, 1115, 7232, 7758, 1612, 4752, 8870, 1177, 5186, 4936, 12120, 7757, 4453, 7240, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 7368, 7619, 1115, 7237, 7760, 1612, 4752, 8871, 1177, 5186, 4936, 12122, 7759, 4453, 7245, 2]
 // Exports: default
 
-// Module 12119 (AutomodSubmitFeedbackModal)
+// Module 12121 (AutomodSubmitFeedbackModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import _modDef7232 from "module_7232" /* 7232 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import HeaderActionButton from "HeaderActionButton" /* 7617 */;
-import AutomodFeedback from "AutomodFeedback" /* 7758 */;
+import _modDef7237 from "module_7237" /* 7237 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import AutomodFeedback from "AutomodFeedback" /* 7760 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,7 +26,7 @@ function Navbar(onClose) {
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t.cpT0Cq);
   obj2.onPress = onClose.onClose;
-  obj2.source = _modDef7232;
+  obj2.source = _modDef7237;
   obj.children = React5(HeaderActionButton.HeaderActionButton, obj2);
   rect.children = React5(View, obj);
   return React5(common_SafeAreaView.SafeAreaPaddingView, rect);

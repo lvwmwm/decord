@@ -1,13 +1,13 @@
-// Module ID: 6023
-// Function ID: 6024
+// Module ID: 6028
+// Function ID: 6029
 // Name: BananaSpotIllustration
-// Dependencies: [21, 5799, 6024, 2]
+// Dependencies: [21, 5804, 6029, 2]
 // Exports: BananaSpotIllustration
 
-// Module 6023 (BananaSpotIllustration)
+// Module 6028 (BananaSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6024 from "module_6024" /* 6024 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6029 from "module_6029" /* 6029 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const BananaSpotIllustration = function BananaSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6024 };
+  const obj2 = { uri: _modDef6029 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

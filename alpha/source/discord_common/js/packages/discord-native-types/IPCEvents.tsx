@@ -1,9 +1,9 @@
-// Module ID: 5779
-// Function ID: 5780
+// Module ID: 5784
+// Function ID: 5785
 // Name: IPCEvents
 // Dependencies: [2]
 
-// Module 5779 (IPCEvents)
+// Module 5784 (IPCEvents)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/discord-native-types/IPCEvents.tsx");

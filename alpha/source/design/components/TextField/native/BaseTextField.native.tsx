@@ -1,14 +1,14 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6865
+// Function ID: 6866
 // Name: BaseTextField
-// Dependencies: [19, 21, 1364, 6858, 4463, 6861, 7175, 4462, 2]
+// Dependencies: [19, 21, 1364, 6863, 4463, 6866, 7180, 4462, 2]
 
-// Module 6860 (BaseTextField)
+// Module 6865 (BaseTextField)
 import mergeProps from "mergeProps" /* 4462 */;
 import useFocus from "useFocus" /* 4463 */;
-import InputFieldContainer from "InputFieldContainer" /* 6858 */;
-import NativeTextInput from "NativeTextInput" /* 6861 */;
-import propsForNativeTextInput from "propsForNativeTextInput" /* 7175 */;
+import InputFieldContainer from "InputFieldContainer" /* 6863 */;
+import NativeTextInput from "NativeTextInput" /* 6866 */;
+import propsForNativeTextInput from "propsForNativeTextInput" /* 7180 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

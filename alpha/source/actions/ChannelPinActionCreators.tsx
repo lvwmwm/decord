@@ -1,15 +1,15 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11925
+// Function ID: 11926
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 11924, 1074, 8005, 1271, 4656, 1115, 5108, 573, 2]
+// Dependencies: [5, 11926, 1074, 8007, 1271, 4656, 1115, 5108, 573, 2]
 
-// Module 11923 (ChannelPinActionCreators)
+// Module 11925 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelPinsStore from "ChannelPinsStore" /* 11924 */;
+import ChannelPinsStore from "ChannelPinsStore" /* 11926 */;
 
 const require = fn;
-const FetchState = fn(11924).FetchState;
+const FetchState = fn(11926).FetchState;
 const Constants = fn(1074);
 ({ AbortCodes: metroRequire, Endpoints: closure_7, MAX_PINS_PER_CHANNEL: closure_8 } = Constants);
 let obj = {
@@ -46,7 +46,7 @@ let obj = {
               ({ id: closure_128_0, name: closure_128_1 } = tmp3);
               dependencyMap = 1;
               c3 = 1;
-              const obj5 = { value: tmp2(8005).unarchiveThreadIfNecessary(tmp3.id), done: false };
+              const obj5 = { value: tmp2(8007).unarchiveThreadIfNecessary(tmp3.id), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -164,7 +164,7 @@ let obj = {
               channel = tmp4;
               dependencyMap = 1;
               c3 = 1;
-              const obj5 = { value: id(8005).unarchiveThreadIfNecessary(channel.id), done: false };
+              const obj5 = { value: id(8007).unarchiveThreadIfNecessary(channel.id), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {

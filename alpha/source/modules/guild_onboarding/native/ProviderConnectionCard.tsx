@@ -1,15 +1,15 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7423
+// Function ID: 7424
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1074, 21, 4690, 5495, 1115, 7419, 7420, 1241, 4936, 1397, 4607, 1177, 4698, 7417, 2]
+// Dependencies: [5, 19, 1074, 21, 4690, 5500, 1115, 7424, 7425, 1241, 4936, 1397, 4607, 1177, 4698, 7422, 2]
 // Exports: default
 
-// Module 7418 (ProviderConnectionCard)
+// Module 7423 (ProviderConnectionCard)
 import native from "native" /* 1177 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import shared from "shared" /* 4607 */;
 import LinkIcon from "LinkIcon" /* 4698 */;
-import PlatformsDefault from "Platforms" /* 5495 */;
+import PlatformsDefault from "Platforms" /* 5500 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

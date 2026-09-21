@@ -1,14 +1,14 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10151
+// Function ID: 10152
 // Name: InviteQueue
-// Dependencies: [2041, 1091, 8075, 3, 7696, 4769, 2]
+// Dependencies: [2041, 1091, 8077, 3, 7698, 4769, 2]
 
-// Module 10150 (InviteQueue)
+// Module 10151 (InviteQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7696 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
-import Queue from "Queue" /* 8075 */;
+import Queue from "Queue" /* 8077 */;
 
 let sum = DurationsDefault.Millis.SECOND + 10;
 let c3 = sum;

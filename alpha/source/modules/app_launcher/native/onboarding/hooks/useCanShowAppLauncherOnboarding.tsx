@@ -1,18 +1,18 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12296
+// Function ID: 12297
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 2041, 4675, 1372, 12295, 12296, 5210, 1091, 504, 11, 2027, 7628, 4576, 2]
+// Dependencies: [32, 2041, 4675, 1372, 12297, 12298, 5210, 1091, 504, 11, 2027, 7630, 4576, 2]
 // Exports: default
 
-// Module 12294 (useCanShowAppLauncherOnboarding)
+// Module 12296 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
 import UserStore from "UserStore" /* 1372 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12295 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12296 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12297 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12298 */;
 
 const require = fn;
 const BuiltInSectionId = fn(5210).BuiltInSectionId;
@@ -68,7 +68,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const tmp14 = AppLauncherOnboardingPersistedStore;
   const tmp2Result10 = channelId(504);
-  const tmp2Result11 = channelId(7628);
+  const tmp2Result11 = channelId(7630);
   const items5 = [AppLauncherOnboardingStore];
   const stateFromStoresObject = channelId(504).useStateFromStoresObject(items5, () => ({ recentMessageMetadata: AppLauncherOnboardingStore.getRecentMessageMetadata(), recentApplicationCommandMetadata: AppLauncherOnboardingStore.getRecentApplicationCommandMetadata() }));
   ({ recentMessageMetadata, recentApplicationCommandMetadata } = stateFromStoresObject);

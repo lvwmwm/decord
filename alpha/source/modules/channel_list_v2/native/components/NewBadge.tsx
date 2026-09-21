@@ -1,16 +1,16 @@
-// Module ID: 12548
-// Function ID: 12549
+// Module ID: 12550
+// Function ID: 12551
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4756, 1364, 576, 4607, 8115, 4690, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 4756, 1364, 576, 4607, 8117, 4690, 4752, 1115, 2]
 // Exports: default
 
-// Module 12548 (NewBadge)
+// Module 12550 (NewBadge)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import useThemeDefault from "useTheme" /* 4690 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8115 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8117 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

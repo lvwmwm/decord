@@ -1,11 +1,11 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7644
+// Function ID: 7645
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 4650, 1074, 5648, 1374, 21, 7643, 4959, 5646, 13831, 1484, 7402, 563, 1380, 12790, 5186, 1115, 5306, 2]
+// Dependencies: [5, 19, 17, 4650, 1074, 5653, 1374, 21, 7645, 4959, 5651, 13837, 1484, 7407, 563, 1380, 12792, 5186, 1115, 5313, 2]
 // Exports: default
 
-// Module 7642 (GuildBoostingSubscribeButton)
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7643 */;
+// Module 7644 (GuildBoostingSubscribeButton)
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7645 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4650 */;
@@ -75,7 +75,7 @@ let closure_14 = async function _handleBoostPress(analyticsLocations, guildId, s
 let View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_7, AnalyticsObjectTypes: closure_8, AnalyticsPages: closure_9, NOOP: c10 } = Constants);
-let closure_11 = fn(5648).PremiumGuildSubscribeModalScenes;
+let closure_11 = fn(5653).PremiumGuildSubscribeModalScenes;
 const FractionalPremiumStates = fn(1374).FractionalPremiumStates;
 let jsx = fn(21).jsx;
 const size = fn(2);

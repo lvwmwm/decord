@@ -1,12 +1,12 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15411
+// Function ID: 15412
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4756, 576, 672, 15406, 15408, 5174, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 672, 15412, 15414, 5174, 4752, 2]
 // Exports: VideoQuestCaptions
 
-// Module 15405 (VideoQuestCaptions)
+// Module 15411 (VideoQuestCaptions)
 import nativeDefault from "native" /* 576 */;
-import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15408 */;
+import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15414 */;
 import noop from "module_19" /* 19 */;
 import n from "module_672" /* 672 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 5823
-// Function ID: 5824
+// Module ID: 5828
+// Function ID: 5829
 // Name: TableRowIcon
 // Dependencies: [109, 19, 17, 21, 4756, 576, 5188, 2]
 // Exports: TableRowIcon
 
-// Module 5823 (TableRowIcon)
+// Module 5828 (TableRowIcon)
 import nativeDefault from "native" /* 576 */;
 import Icon from "Icon" /* 5188 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

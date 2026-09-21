@@ -1,16 +1,16 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11478
+// Function ID: 11479
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 2041, 1483, 5210, 5211, 21, 7763, 4614, 4723, 1610, 5109, 1115, 1177, 11477, 4453, 7429, 2019, 10888, 7434, 11479, 4752, 4622, 11481, 8353, 2]
+// Dependencies: [19, 2041, 1483, 5210, 5211, 21, 7765, 4614, 4723, 1610, 5109, 1115, 1177, 11479, 4453, 7434, 2019, 10889, 7439, 11481, 4752, 4622, 11483, 8354, 2]
 // Exports: default
 
-// Module 11476 (MarkupReactCommandRule)
+// Module 11478 (MarkupReactCommandRule)
 import KeyboardTypes from "KeyboardTypes" /* 1610 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ClipboardUtils from "ClipboardUtils" /* 7429 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7763 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11481 */;
+import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11483 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
@@ -118,7 +118,7 @@ function handleLongPressCommandMention(arg0, arg1) {
     const obj2 = { label: null, IconComponent: null, onPress: null };
     const intl2 = tmp(1115).intl;
     obj2.label = intl2.string(tmp(1115).t.oJ1Muw);
-    obj2.IconComponent = tmp(10888).IdIcon;
+    obj2.IconComponent = tmp(10889).IdIcon;
     obj2.onPress = function onPress() {
       ToastUtils.presentIdCopied();
       ClipboardUtils.copy(closure_1);
@@ -138,7 +138,7 @@ let result = size.fileFinishedImporting("modules/markup/native/MarkupReactComman
 export default function MarkupReactCommandRule(node) {
   node = node.node;
   ({ output, state, style } = node);
-  closure_1 = null != noop.useContext(node(11479).AppLauncherContext);
+  closure_1 = null != noop.useContext(node(11481).AppLauncherContext);
   dependencyMap = closure_6();
   const obj = {
     style,
@@ -186,7 +186,7 @@ export default function MarkupReactCommandRule(node) {
     },
     children: null
   };
-  const items = ["/", node(8353).smartOutput(node, output, state)];
+  const items = ["/", node(8354).smartOutput(node, output, state)];
   obj.children = items;
   return jsxs(node(4752).Text, {
     style,

@@ -1,12 +1,12 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18300
+// Function ID: 18301
 // Name: AVErrorStreamSoundshareFailed
-// Dependencies: [4778, 4804, 1074, 9685, 18281, 4808, 2]
+// Dependencies: [4778, 4804, 1074, 9686, 18292, 4808, 2]
 
-// Module 18289 (AVErrorStreamSoundshareFailed)
+// Module 18300 (AVErrorStreamSoundshareFailed)
 import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
-import AVError from "AVError" /* 9685 */;
-import AVErrorContext from "AVErrorContext" /* 18281 */;
+import AVError from "AVError" /* 9686 */;
+import AVErrorContext from "AVErrorContext" /* 18292 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import HookErrorStore from "HookErrorStore" /* 4804 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10050
+// Function ID: 10051
 // Name: trackVoiceCallTransfer
 // Dependencies: [2041, 4779, 4774, 1074, 1241, 2]
 // Exports: default
 
-// Module 10049 (trackVoiceCallTransfer)
+// Module 10050 (trackVoiceCallTransfer)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;

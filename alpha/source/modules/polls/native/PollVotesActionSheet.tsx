@@ -1,10 +1,10 @@
-// Module ID: 11967
-// Function ID: 11968
+// Module ID: 11969
+// Function ID: 11970
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 4748, 5671, 2041, 4976, 1372, 21, 4756, 576, 504, 1397, 7370, 1115, 5334, 4752, 8001, 6892, 11968, 7402, 11974, 11520, 8003, 4908, 4600, 5817, 1177, 9900, 8447, 4492, 4757, 8996, 4690, 4607, 11975, 11976, 7422, 4723, 7390, 2]
+// Dependencies: [32, 5, 19, 17, 4748, 5676, 2041, 4976, 1372, 21, 4756, 576, 504, 1397, 7375, 1115, 5339, 4752, 8003, 6897, 11970, 7407, 11976, 11522, 8005, 4908, 4600, 5822, 1177, 9901, 8448, 4492, 4757, 8997, 4690, 4607, 11977, 11978, 7427, 4723, 7395, 2]
 // Exports: default
 
-// Module 11967 (PollVotesActionSheet)
+// Module 11969 (PollVotesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
@@ -12,16 +12,16 @@ import useThemeDefault from "useTheme" /* 4690 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import timing from "timing" /* 4757 */;
-import Pressables from "Pressables" /* 5334 */;
-import EmojiDefault from "Emoji" /* 7370 */;
-import PollsUtils from "PollsUtils" /* 8001 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 11968 */;
+import Pressables from "Pressables" /* 5339 */;
+import EmojiDefault from "Emoji" /* 7375 */;
+import PollsUtils from "PollsUtils" /* 8003 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 11970 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import EmojiStore from "EmojiStore" /* 5671 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import MessageStore from "MessageStore" /* 4976 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -316,9 +316,9 @@ function NoResults() {
   const tmp6 = React5;
   const tmp8 = timestampProducer;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11975);
+    let tmp2Result = tmp2(11977);
   } else {
-    tmp2Result = tmp2(11976);
+    tmp2Result = tmp2(11978);
   }
   obj2.source = tmp2Result;
   const items = [closure_1_14(tmp8, obj2), , ];

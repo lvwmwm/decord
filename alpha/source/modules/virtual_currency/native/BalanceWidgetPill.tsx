@@ -1,15 +1,15 @@
-// Module ID: 11357
-// Function ID: 11358
+// Module ID: 11359
+// Function ID: 11360
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 4756, 5191, 576, 1364, 11358, 1115, 11359, 11364, 11365, 2]
+// Dependencies: [19, 17, 21, 4756, 5191, 576, 1364, 11360, 1115, 11361, 11366, 11367, 2]
 
-// Module 11357 (virtual_currency/BalanceWidgetPill)
+// Module 11359 (virtual_currency/BalanceWidgetPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 11358 */;
-import OrbLottieAnimation from "OrbLottieAnimation" /* 11359 */;
-import BalanceCounter from "BalanceCounter" /* 11364 */;
-import AnimationUtils from "AnimationUtils" /* 11365 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 11360 */;
+import OrbLottieAnimation from "OrbLottieAnimation" /* 11361 */;
+import BalanceCounter from "BalanceCounter" /* 11366 */;
+import AnimationUtils from "AnimationUtils" /* 11367 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

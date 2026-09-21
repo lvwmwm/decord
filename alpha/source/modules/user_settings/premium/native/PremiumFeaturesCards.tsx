@@ -1,11 +1,11 @@
-// Module ID: 9475
-// Function ID: 9476
+// Module ID: 9476
+// Function ID: 9477
 // Name: PremiumFeaturesCards
-// Dependencies: [19, 17, 1374, 21, 4756, 9476, 2]
+// Dependencies: [19, 17, 1374, 21, 4756, 9477, 2]
 // Exports: default
 
-// Module 9475 (PremiumFeaturesCards)
-import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9476 */;
+// Module 9476 (PremiumFeaturesCards)
+import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9477 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

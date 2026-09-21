@@ -1,7 +1,7 @@
 // Module ID: 4783
 // Function ID: 4784
 // Name: RTCConnection
-// Dependencies: [5, 4784, 4794, 9970, 9904, 502, 2041, 2063, 1992, 4779, 10294, 4806, 1372, 1074, 4803, 14064, 4781, 559, 4785, 4814, 1231, 3, 14065, 1255, 14067, 14069, 9695, 10295, 1462, 1364, 4377, 1366, 573, 1991, 1385, 4810, 14, 5632, 14070, 14071, 9691, 1241, 4750, 7906, 14072, 14074, 4414, 4894, 14075, 14076, 14077, 4811, 14078, 14079, 14081, 7988, 14082, 9685, 7714, 14083, 14084, 9568, 14086, 5108, 1115, 551, 1240, 2]
+// Dependencies: [5, 4784, 4794, 9971, 9905, 502, 2041, 2063, 1992, 4779, 10295, 4806, 1372, 1074, 4803, 14070, 4781, 559, 4785, 4814, 1231, 3, 14071, 1255, 14073, 14075, 9696, 10296, 1462, 1364, 4377, 1366, 573, 1991, 1385, 4810, 14, 5637, 14076, 14077, 9692, 1241, 4750, 7908, 14078, 14080, 4414, 4894, 14081, 14082, 14083, 4811, 14084, 14085, 14087, 7990, 14088, 9686, 7716, 14089, 14090, 9569, 14092, 5108, 1115, 551, 1240, 2]
 
 // Module 4783 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -22,34 +22,34 @@ import TimeUtils from "TimeUtils" /* 4785 */;
 import RTCConnectionEvent from "RTCConnectionEvent" /* 4810 */;
 import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 4894 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5632 */;
-import RTCBandwidthMonitorDefault from "RTCBandwidthMonitor" /* 7714 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7906 */;
-import SystemResourcesDefault from "SystemResources" /* 7988 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 9568 */;
-import AVError from "AVError" /* 9685 */;
-import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 9695 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10295 */;
-import ServerLadderExperiment2 from "ServerLadderExperiment" /* 14075 */;
-import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 14076 */;
-import NativeMuteManagerDefault from "NativeMuteManager" /* 14078 */;
-import VoiceQuality from "VoiceQuality" /* 14079 */;
-import SystemResponsivenessDefault from "SystemResponsiveness" /* 14081 */;
-import VoiceDurationDefault from "VoiceDuration" /* 14082 */;
-import VideoQuality from "VideoQuality" /* 14083 */;
-import VideoHealthManager from "VideoHealthManager" /* 14084 */;
-import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 14086 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5637 */;
+import RTCBandwidthMonitorDefault from "RTCBandwidthMonitor" /* 7716 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7908 */;
+import SystemResourcesDefault from "SystemResources" /* 7990 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 9569 */;
+import AVError from "AVError" /* 9686 */;
+import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 9696 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 10296 */;
+import ServerLadderExperiment2 from "ServerLadderExperiment" /* 14081 */;
+import AV1BitrateTuningExperiment from "AV1BitrateTuningExperiment" /* 14082 */;
+import NativeMuteManagerDefault from "NativeMuteManager" /* 14084 */;
+import VoiceQuality from "VoiceQuality" /* 14085 */;
+import SystemResponsivenessDefault from "SystemResponsiveness" /* 14087 */;
+import VoiceDurationDefault from "VoiceDuration" /* 14088 */;
+import VideoQuality from "VideoQuality" /* 14089 */;
+import VideoHealthManager from "VideoHealthManager" /* 14090 */;
+import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 14092 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 4784 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 4794 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9970 */;
-import AudioRouteStore from "AudioRouteStore" /* 9904 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9971 */;
+import AudioRouteStore from "AudioRouteStore" /* 9905 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import RTCDebugStore from "RTCDebugStore" /* 10294 */;
+import RTCDebugStore from "RTCDebugStore" /* 10295 */;
 import RTCRegionStore from "RTCRegionStore" /* 4806 */;
 import UserStore from "UserStore" /* 1372 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 4814 */;
@@ -57,7 +57,7 @@ import TypedEventEmitter from "TypedEventEmitter" /* 4814 */;
 const RTCControlSocketDefault = RTCControlSocket;
 const VoiceQualityDefault = VoiceQuality;
 
-const VideoStabilizationExperimentDefault = tmp3(14071);
+const VideoStabilizationExperimentDefault = tmp3(14077);
 require = fn;
 function getEventHistoryString() {
   const items = [];
@@ -75,7 +75,7 @@ let Constants = fn(1074);
 ({ AnalyticEvents: closure_17, ChannelTypes: closure_18, RTCConnectionStates: closure_19, RTCConnectionQuality: closure_20, BoostedGuildTiers: closure_21 } = Constants);
 const StreamSettingsConstants = fn(4803);
 ({ ApplicationStreamFPS: closure_22, ApplicationStreamResolutions: closure_23 } = StreamSettingsConstants);
-let closure_24 = fn(14064).BROWSER_SUPPORTS_UNIFIED_PLAN;
+let closure_24 = fn(14070).BROWSER_SUPPORTS_UNIFIED_PLAN;
 Constants = fn(4781);
 ({ Features: closure_25, MediaEngineContextTypes: closure_26, ConnectionStates: closure_27, Codecs: closure_28, MediaTypes: closure_29, SpeakingFlags: closure_30, DISABLED_DEVICE_ID: items } = Constants);
 let str = "ws:";
@@ -644,9 +644,9 @@ prototype["destroy"] = function destroy() {
     }
   }
   self.recordEvent({ c: constants11.CONNECTION_DESTROY });
-  const WindowVisibilityVideoManager = tmp5(9695).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = tmp5(9696).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager.off(WindowVisibilityVideoManager3.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
-  const WindowVisibilityVideoManager2 = tmp5(9695).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager2 = tmp5(9696).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager2.off(WindowVisibilityVideoManager3.WindowVisibilityEvent.WindowVisibilityChanged, self.windowVisibilityChanged);
   self._cancelReconnect();
   self._cleanupSocket();
@@ -1082,7 +1082,7 @@ prototype["_chooseExperiments"] = function _chooseExperiments() {
   }
   let enabled = PlatformUtils.isWeb();
   if (enabled) {
-    const BrowserTransceiverPaddingRemovalExperiment = tmp8(14070).BrowserTransceiverPaddingRemovalExperiment;
+    const BrowserTransceiverPaddingRemovalExperiment = tmp8(14076).BrowserTransceiverPaddingRemovalExperiment;
     enabled = BrowserTransceiverPaddingRemovalExperiment.getConfig({ location: "RTCConnection" }).enabled;
   }
   if (enabled) {
@@ -1100,11 +1100,11 @@ prototype["_chooseExperiments"] = function _chooseExperiments() {
   tmp8Result = PlatformUtils;
   let isAndroidResult = PlatformUtils.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = tmp8(9691).isSurfaceDirectRendererExperimentEnabled();
-    const tmp8Result4 = tmp8(9691);
+    isAndroidResult = tmp8(9692).isSurfaceDirectRendererExperimentEnabled();
+    const tmp8Result4 = tmp8(9692);
   }
   if (isAndroidResult) {
-    items.push(tmp8(9691).ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT);
+    items.push(tmp8(9692).ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT);
   }
   this._selectedExperiments = items;
 };
@@ -1750,7 +1750,7 @@ prototype["_connectMediaEngineWithEndpoint"] = function _connectMediaEngineWithE
     }
   }
   if (MediaEngineStore.supports(constants5.IMAGE_QUALITY_MEASUREMENT)) {
-    const SingleCpuCopyExperiment = tmp2(14077).SingleCpuCopyExperiment;
+    const SingleCpuCopyExperiment = tmp2(14083).SingleCpuCopyExperiment;
     let str4 = "imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec";
     if (SingleCpuCopyExperiment.getConfig({ location: "RTCConnection" }).enabled) {
       str4 = "imageQualityWebrtcPsnrDb:5000,imageQualityVmaf_v061:5000,hwdec,singleCopyExperiment";
@@ -1935,12 +1935,12 @@ prototype["_connectMediaEngineWithEndpoint"] = function _connectMediaEngineWithE
     const _mediaSessionId = self._mediaSessionId;
     obj.mediaSessionId = _mediaSessionId;
     if ("encode" === codecStandard.mode) {
-      const obj4 = { type: tmp(9685).AVError.VIDEO_ENCODE_ERROR };
+      const obj4 = { type: tmp(9686).AVError.VIDEO_ENCODE_ERROR };
       const merged = Object.assign(obj);
       obj4.videoEncoder = codecStandard.implName;
       let obj5 = obj4;
     } else {
-      obj5 = { type: tmp(9685).AVError.VIDEO_DECODE_ERROR };
+      obj5 = { type: tmp(9686).AVError.VIDEO_DECODE_ERROR };
       const merged1 = Object.assign(obj);
       obj5.videoDecoder = codecStandard.implName;
     }
@@ -2153,13 +2153,13 @@ prototype["getOrCreateVideoQuality"] = function getOrCreateVideoQuality() {
       const defaultConfig = VideoHealthManager.VideoHealthManager.defaultConfig;
       ({ windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec } = defaultConfig);
       if (defaultConfig.featureEnabled) {
-        const videoHealthManager = new tmp10(14084).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
+        const videoHealthManager = new tmp10(14090).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
         self._videoHealthManager = videoHealthManager;
         if (null != self._localMediaSinkWantsManager) {
           self._localMediaSinkWantsManager.videoHealthManager = self._videoHealthManager;
         }
         const _videoQuality = self._videoQuality;
-        _videoQuality.on(tmp10(14083).VideoQualityEvent.FpsUpdate, (arg0, arg1, arg2) => {
+        _videoQuality.on(tmp10(14089).VideoQualityEvent.FpsUpdate, (arg0, arg1, arg2) => {
           const _localMediaSinkWantsManager = self._localMediaSinkWantsManager;
           let result;
           if (_localMediaSinkWantsManager != null) {

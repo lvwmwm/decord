@@ -1,10 +1,10 @@
-// Module ID: 5292
-// Function ID: 5293
+// Module ID: 5299
+// Function ID: 5300
 // Name: ImageWarningIcon
 // Dependencies: [19, 21, 576, 4456, 5264, 2]
 // Exports: ImageWarningIcon
 
-// Module 5292 (ImageWarningIcon)
+// Module 5299 (ImageWarningIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5264 from "module_5264" /* 5264 */;

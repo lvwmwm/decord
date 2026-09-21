@@ -1,10 +1,10 @@
-// Module ID: 13599
-// Function ID: 13600
+// Module ID: 13605
+// Function ID: 13606
 // Name: BetaTag
-// Dependencies: [19, 17, 7672, 21, 4756, 576, 5198, 1094, 4752, 1115, 2]
+// Dependencies: [19, 17, 7674, 21, 4756, 576, 5198, 1094, 4752, 1115, 2]
 // Exports: default
 
-// Module 13599 (BetaTag)
+// Module 13605 (BetaTag)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
@@ -14,7 +14,7 @@ import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Gradients = fn(7672).Gradients;
+const Gradients = fn(7674).Gradients;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" }, text: { textTransform: "uppercase" } };

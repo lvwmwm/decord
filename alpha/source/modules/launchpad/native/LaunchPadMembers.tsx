@@ -1,13 +1,13 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17458
+// Function ID: 17459
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 2041, 2095, 21, 4756, 563, 12437, 17150, 11837, 4752, 1115, 2]
+// Dependencies: [19, 17, 2041, 2095, 21, 4756, 563, 12439, 17161, 11839, 4752, 1115, 2]
 
-// Module 17447 (LaunchPadMembers)
+// Module 17458 (LaunchPadMembers)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11837 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12437 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17150 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 11839 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 12439 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17161 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
@@ -43,7 +43,7 @@ export default noop.memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "call", type: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000669712902123636 };
+    return { channelId: "call", type: "find" };
   });
   if ("private" === stateFromStoresObject.type) {
     let obj2 = { style: tmp.wrapper, children: null };

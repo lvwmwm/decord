@@ -1,15 +1,15 @@
-// Module ID: 13476
-// Function ID: 13477
+// Module ID: 13478
+// Function ID: 13479
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2109, 21, 4756, 504, 4414, 7794, 4438, 4752, 1115, 8441, 2]
+// Dependencies: [19, 17, 2109, 21, 4756, 504, 4414, 7796, 4438, 4752, 1115, 8442, 2]
 // Exports: default
 
-// Module 13476 (EditCollectiblesPreviewDetails)
+// Module 13478 (EditCollectiblesPreviewDetails)
 import initialize from "initialize" /* 504 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7794 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8441 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8442 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 
@@ -23,13 +23,13 @@ function EditCollectiblesPreviewDescription(arg0) {
   const canUseCollectiblesResult = PremiumUtilsDefault.canUseCollectibles(user);
   let result = CollectiblesUtils.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp(7794).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult = tmp(7794);
+    result = tmp(7796).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult = tmp(7796);
   }
   let result1 = !canUseCollectiblesResult;
   if (!canUseCollectiblesResult) {
-    result1 = tmp(7794).isPremiumCollectiblesPurchase(purchase);
-    const tmpResult3 = tmp(7794);
+    result1 = tmp(7796).isPremiumCollectiblesPurchase(purchase);
+    const tmpResult3 = tmp(7796);
   }
   if (null != purchase) {
     if (!result1) {

@@ -1,12 +1,12 @@
-// Module ID: 12971
-// Function ID: 12972
+// Module ID: 12973
+// Function ID: 12974
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4756, 2103, 5184, 4752, 1115, 11211, 2]
+// Dependencies: [19, 17, 21, 4756, 2103, 5184, 4752, 1115, 11212, 2]
 // Exports: default
 
-// Module 12971 (InviteRolesList)
+// Module 12973 (InviteRolesList)
 import GuildRoleUtils from "GuildRoleUtils" /* 2103 */;
-import RolePillDefault from "RolePill" /* 11211 */;
+import RolePillDefault from "RolePill" /* 11212 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

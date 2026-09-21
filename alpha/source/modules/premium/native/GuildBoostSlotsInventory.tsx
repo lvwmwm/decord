@@ -1,10 +1,10 @@
-// Module ID: 13759
-// Function ID: 13760
+// Module ID: 13765
+// Function ID: 13766
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1182, 2063, 4650, 4420, 1074, 21, 4756, 576, 5736, 7679, 4752, 1115, 11, 5334, 5646, 5796, 13760, 504, 1397, 13761, 13765, 5079, 4653, 12, 2]
+// Dependencies: [19, 17, 1182, 2063, 4650, 4420, 1074, 21, 4756, 576, 5741, 7681, 4752, 1115, 11, 5339, 5651, 5801, 13766, 504, 1397, 13767, 13771, 5079, 4653, 12, 2]
 // Exports: default
 
-// Module 13759 (GuildBoostSlotsInventory)
+// Module 13765 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initialize from "initialize" /* 504 */;
@@ -12,20 +12,20 @@ import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5079 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5646 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
-import useCountdownDefault from "useCountdown" /* 7679 */;
-import _modDef13760 from "module_13760" /* 13760 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5651 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
+import useCountdownDefault from "useCountdown" /* 7681 */;
+import _modDef13766 from "module_13766" /* 13766 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4650 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import TextStyles from "TextStyles" /* 5736 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 const GuildIconDefault = GuildIcon;
 
-const SubscriptionPlaceholderPattern = tmp2(13761);
+const SubscriptionPlaceholderPattern = tmp2(13767);
 require = fn;
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   cooldownEndsAt = cooldownEndsAt.cooldownEndsAt;
@@ -109,7 +109,7 @@ function GuildBoostSlot(guildBoostSlot) {
       const intl2 = guildBoostSlot(1115).intl;
       obj6.children = intl2.string(guildBoostSlot(1115).t.jqqLb6);
       obj5.children = tmp6(guildBoostSlot(4752).Text, obj6);
-      tmp6Result2 = tmp6(guildBoostSlot(5334).PressableOpacity, obj5);
+      tmp6Result2 = tmp6(guildBoostSlot(5339).PressableOpacity, obj5);
     }
     obj3.action = tmp6Result2;
     obj3.isLast = tmp;
@@ -160,7 +160,7 @@ function UnusedGuildBoostSlots(unusedSlots) {
     const intl2 = found(1115).intl;
     obj5.children = intl2.string(found(1115).t["7KyPor"]);
     obj4.children = closure_11(found(4752).Text, obj5);
-    obj2.action = closure_11(found(5334).PressableOpacity, obj4);
+    obj2.action = closure_11(found(5339).PressableOpacity, obj4);
     obj2.isLast = 0 === found.length;
     tmp4 = closure_11(GuildBoostSlotsInventoryRow, obj2);
   }
@@ -197,7 +197,7 @@ function BoostedGuildInfo(guild) {
     const obj5 = { style: tmp.guildInfoName, variant: "heading-lg/extrabold", color: "interactive-text-active", children: guild.name };
     const items1 = [closure_1_11(Text_Text.Text, obj5), ];
     const obj6 = { style: tmp.guildInfoRowBottom, children: null };
-    const obj7 = { source: _modDef13760, style: tmp.guildInfoRowIcon };
+    const obj7 = { source: _modDef13766, style: tmp.guildInfoRowIcon };
     const items2 = [closure_1_11(timestampProducer, obj7), ];
     const obj8 = { style: tmp.guildInfoSubscriptionCount, variant: "text-xs/semibold", color: "interactive-text-active", children: null };
     const intl = util.intl;
@@ -250,7 +250,7 @@ function BoostedGuild(arg0) {
     tmp11Result = tmp11(tmp10, obj8);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_11(guildBoostSlots(13765), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_11(guildBoostSlots(13771), { guild: stateFromStores, theme: stateFromStores1 });
   obj6.children = items3;
   const items4 = [closure_12(closure_5, obj6), closure_11(BoostedGuildInfo, { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length })];
   obj5.children = items4;

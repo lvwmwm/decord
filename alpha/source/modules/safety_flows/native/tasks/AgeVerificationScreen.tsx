@@ -1,13 +1,13 @@
-// Module ID: 18324
-// Function ID: 18325
+// Module ID: 18335
+// Function ID: 18336
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1372, 1074, 21, 4756, 1255, 18317, 504, 8858, 18311, 1978, 8683, 18320, 5904, 1115, 2776, 3034, 8681, 2108, 14450, 6829, 4752, 8860, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4756, 1255, 18328, 504, 8859, 18322, 1978, 8684, 18331, 5909, 1115, 2776, 3034, 8682, 2108, 14456, 6834, 4752, 8861, 2]
 // Exports: default
 
-// Module 18324 (AgeVerificationScreen)
+// Module 18335 (AgeVerificationScreen)
 import Server from "Server" /* 1978 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8683 */;
-import types from "types" /* 18311 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
+import types from "types" /* 18322 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 

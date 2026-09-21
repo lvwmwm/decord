@@ -1,18 +1,18 @@
-// Module ID: 10419
-// Function ID: 10420
+// Module ID: 10420
+// Function ID: 10421
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4756, 576, 10413, 4752, 1115, 5334, 10420, 10411, 4723, 10422, 1980, 10403, 10424, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 10414, 4752, 1115, 5339, 10421, 10412, 4723, 10423, 1980, 10404, 10425, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 10419 (NotificationSettingsMessageUnread)
+// Module 10420 (NotificationSettingsMessageUnread)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5334 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 10413 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10420 */;
+import Pressables from "Pressables" /* 5339 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 10414 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10421 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
     style: style.style,
     setting: require("notificationSettingsGuildFlagUtils").useGuildPresetSettings(style.guildId).unread,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10422, dependencyMap.paths), "MessageUnreadActionSheet", { guildId: style.guildId });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10423, dependencyMap.paths), "MessageUnreadActionSheet", { guildId: style.guildId });
     }
   };
   return closure_4(NotificationSettingsMessageUnread, obj);
@@ -86,7 +86,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
     style: style.style,
     setting: require("notficationSettingsChannelFlagUtils").useChannelPresetSettings(style.channel).unread,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10424, dependencyMap.paths), "MessageUnreadActionSheet", { channel: style.channel });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10425, dependencyMap.paths), "MessageUnreadActionSheet", { channel: style.channel });
     }
   };
   return closure_4(NotificationSettingsMessageUnread, obj);

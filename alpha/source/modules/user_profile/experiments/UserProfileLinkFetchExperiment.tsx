@@ -1,10 +1,10 @@
-// Module ID: 8448
-// Function ID: 8449
+// Module ID: 8449
+// Function ID: 8450
 // Name: UserProfileLinkFetchExperiment
 // Dependencies: [1434, 2]
 // Exports: getIsUserProfileLinkFetchEnabled
 
-// Module 8448 (UserProfileLinkFetchExperiment)
+// Module 8449 (UserProfileLinkFetchExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

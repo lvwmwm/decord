@@ -1,13 +1,13 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 10936
+// Function ID: 10937
 // Name: mobile_bottom_sheet
-// Dependencies: [32, 1187, 10931, 2027, 10930, 10929, 2]
+// Dependencies: [32, 1187, 10932, 2027, 10931, 10930, 2]
 
-// Module 10935 (mobile_bottom_sheet)
+// Module 10936 (mobile_bottom_sheet)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10929 */;
-import help_article from "help_article" /* 10930 */;
-import cta_button from "cta_button" /* 10931 */;
+import localized_string from "localized_string" /* 10930 */;
+import help_article from "help_article" /* 10931 */;
+import cta_button from "cta_button" /* 10932 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

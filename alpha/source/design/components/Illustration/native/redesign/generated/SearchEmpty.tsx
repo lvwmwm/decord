@@ -1,12 +1,12 @@
-// Module ID: 10575
-// Function ID: 10576
+// Module ID: 10576
+// Function ID: 10577
 // Name: SearchEmpty
-// Dependencies: [19, 17, 21, 8501, 10576, 10577, 10578, 4607, 2]
+// Dependencies: [19, 17, 21, 8502, 10577, 10578, 10579, 4607, 2]
 // Exports: SearchEmpty, getSearchEmptySource, useSearchEmptySource
 
-// Module 10575 (SearchEmpty)
+// Module 10576 (SearchEmpty)
 import shared from "shared" /* 4607 */;
-import _mod8501 from "module_8501" /* 8501 */;
+import _mod8502 from "module_8502" /* 8502 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,44 +18,44 @@ const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/SearchEmpty.tsx");
 
 export const getSearchEmptySource = function getSearchEmptySource(theme) {
-  return _mod8501.getIllustrationSource(theme, {
+  return _mod8502.getIllustrationSource(theme, {
     dark() {
-      return require("module_10576");
-    },
-    darker() {
       return require("module_10577");
     },
-    light() {
+    darker() {
       return require("module_10578");
+    },
+    light() {
+      return require("module_10579");
     }
   });
 };
 export const useSearchEmptySource = function useSearchEmptySource() {
   const obj = shared;
-  return _mod8501.getIllustrationSource(obj.useThemeContext().theme, {
+  return _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_10576");
-    },
-    darker() {
       return require("module_10577");
     },
-    light() {
+    darker() {
       return require("module_10578");
+    },
+    light() {
+      return require("module_10579");
     }
   });
 };
 export const SearchEmpty = function SearchEmpty(arg0) {
   const obj = shared;
   const obj4 = {};
-  const illustrationSource = _mod8501.getIllustrationSource(obj.useThemeContext().theme, {
+  const illustrationSource = _mod8502.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_10576");
-    },
-    darker() {
       return require("module_10577");
     },
-    light() {
+    darker() {
       return require("module_10578");
+    },
+    light() {
+      return require("module_10579");
     }
   });
   const merged = Object.assign(arg0);

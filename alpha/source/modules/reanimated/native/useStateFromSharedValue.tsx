@@ -1,10 +1,10 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8538
+// Function ID: 8539
 // Name: useStateFromSharedValue
 // Dependencies: [32, 19, 1248, 4492, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8537 (useStateFromSharedValue)
+// Module 8538 (useStateFromSharedValue)
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 8067
-// Function ID: 8068
+// Module ID: 8069
+// Function ID: 8070
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 19, 4748, 21, 4756, 504, 4492, 4757, 5741, 2]
+// Dependencies: [32, 19, 4748, 21, 4756, 504, 4492, 4757, 5746, 2]
 // Exports: default
 
-// Module 8067 (FadeOutLottieAnimation)
+// Module 8069 (FadeOutLottieAnimation)
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -97,9 +97,9 @@ export default function FadeOutLottieAnimation(onComplete) {
       closure_2(true);
     };
     const merged1 = Object.assign(merged);
-    obj3.children = jsx(isAnimationComplete(5741), { style: tmp2.content, speed: null, onAnimationFinish: null });
+    obj3.children = jsx(isAnimationComplete(5746), { style: tmp2.content, speed: null, onAnimationFinish: null });
     let tmp14Result = tmp14(isAnimationComplete(4492).View, obj3);
-    const tmp16 = isAnimationComplete(5741);
+    const tmp16 = isAnimationComplete(5746);
   } else {
     tmp14Result = null;
   }

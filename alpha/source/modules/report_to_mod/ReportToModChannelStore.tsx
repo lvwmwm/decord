@@ -1,10 +1,10 @@
-// Module ID: 13013
-// Function ID: 13014
+// Module ID: 13015
+// Function ID: 13016
 // Name: ReportToModChannelStore
-// Dependencies: [560, 4627, 1248, 7941, 2]
+// Dependencies: [560, 4627, 1248, 7943, 2]
 // Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 13013 (ReportToModChannelStore)
+// Module 13015 (ReportToModChannelStore)
 import module_560 from "module_560" /* 560 */;
 import "module_4627";
 import module_4627 from "module_4627" /* 4627 */;

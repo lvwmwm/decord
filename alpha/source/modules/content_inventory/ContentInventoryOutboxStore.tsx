@@ -1,12 +1,12 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9072
+// Function ID: 9073
 // Name: ContentInventoryOutboxStore
-// Dependencies: [504, 8607, 573, 2]
+// Dependencies: [504, 8608, 573, 2]
 
-// Module 9071 (ContentInventoryOutboxStore)
+// Module 9072 (ContentInventoryOutboxStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import matchUtils from "matchUtils" /* 8607 */;
+import matchUtils from "matchUtils" /* 8608 */;
 
 require = fn;
 let map = new Map();

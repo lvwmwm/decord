@@ -1,9 +1,9 @@
-// Module ID: 7313
-// Function ID: 7314
+// Module ID: 7318
+// Function ID: 7319
 // Name: ReanimatedNativeView
 // Dependencies: [2, 4493]
 
-// Module 7313 (ReanimatedNativeView)
+// Module 7318 (ReanimatedNativeView)
 import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4493 */;
 import size from "module_2" /* 2 */;
 

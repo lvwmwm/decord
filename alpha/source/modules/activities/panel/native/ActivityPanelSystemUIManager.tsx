@@ -1,13 +1,13 @@
-// Module ID: 17490
-// Function ID: 17491
+// Module ID: 17501
+// Function ID: 17502
 // Name: ActivityPanelSystemUIManager
-// Dependencies: [19, 9314, 21, 17467, 1364, 9649, 9651, 2]
+// Dependencies: [19, 9315, 21, 17478, 1364, 9650, 9652, 2]
 
-// Module 17490 (ActivityPanelSystemUIManager)
+// Module 17501 (ActivityPanelSystemUIManager)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import StatusBarDefault from "StatusBar" /* 9649 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 9651 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17467 */;
+import StatusBarDefault from "StatusBar" /* 9650 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 9652 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17478 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -46,7 +46,7 @@ class BaseActivityPanelSystemUIManager {
     return tmp4(tmp5, obj4);
   }
 }
-const ActivityPanelModes = fn(9314).ActivityPanelModes;
+const ActivityPanelModes = fn(9315).ActivityPanelModes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
 const size = fn(2);

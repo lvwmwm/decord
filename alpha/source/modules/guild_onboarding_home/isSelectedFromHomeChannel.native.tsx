@@ -1,13 +1,13 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11606
+// Function ID: 11607
 // Name: isSelectedFromHomeChannel
-// Dependencies: [7520, 2095, 2048, 4614, 4613, 2]
+// Dependencies: [7522, 2095, 2048, 4614, 4613, 2]
 // Exports: default
 
-// Module 11604 (isSelectedFromHomeChannel)
+// Module 11606 (isSelectedFromHomeChannel)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7520 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7522 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 17457
-// Function ID: 17458
+// Module ID: 17468
+// Function ID: 17469
 // Name: useExternalPipParticipant
 // Dependencies: [32, 19, 4772, 502, 1992, 4779, 4777, 504, 2]
 // Exports: default
 
-// Module 17457 (useExternalPipParticipant)
+// Module 17468 (useExternalPipParticipant)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
@@ -62,7 +62,7 @@ export default function useExternalPipParticipant() {
       id2 = tmp6.id;
     }
     if (ref.current !== id2) {
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "accessible", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "PX_16", focusedParticipantType: ref2.current };
       let obj = obj2;
     } else {
       let type1;

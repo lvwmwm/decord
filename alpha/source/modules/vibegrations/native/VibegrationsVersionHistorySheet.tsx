@@ -1,10 +1,10 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16991
+// Function ID: 16992
 // Name: VibegrationsVersionHistorySheet
-// Dependencies: [32, 19, 17, 13359, 21, 4756, 576, 7875, 1612, 5114, 1115, 3678, 4723, 4752, 5899, 5817, 7437, 7389, 6864, 2]
+// Dependencies: [32, 19, 17, 13361, 21, 4756, 576, 7877, 1612, 5114, 1115, 3678, 4723, 4752, 5904, 5822, 7442, 7394, 6869, 2]
 // Exports: default
 
-// Module 16983 (VibegrationsVersionHistorySheet)
+// Module 16991 (VibegrationsVersionHistorySheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -13,7 +13,7 @@ import noop from "module_19" /* 19 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const fetchSourceHistory = fn(13359).fetchSourceHistory;
+const fetchSourceHistory = fn(13361).fetchSourceHistory;
 const jsx = fn(21).jsx;
 const VibegrationsVersionHistorySheet = "VibegrationsVersionHistorySheet";
 const createStyles = fn(4756);
@@ -101,15 +101,15 @@ export default function VibegrationsVersionHistorySheet(projectId) {
       };
       return jsx(projectId(_undefined[15]).TableRow, { label: subject.subject.replace(/^Build: /, ""), subLabel: null, arrow: true, onPress: null }, subject.sha);
     });
-    tmp9 = jsx(projectId(5899).TableRowGroup, { hasIcons: false, children: null });
+    tmp9 = jsx(projectId(5904).TableRowGroup, { hasIcons: false, children: null });
   }
   const obj7 = { scrollable: true, header: null, children: null };
   const obj8 = { title: null };
   let intl3 = projectId(1115).intl;
   obj8.title = intl3.string(onRestore(3678).jAWwzi);
-  obj7.header = tmp7(projectId(7389).BottomSheetTitleHeader, obj8);
+  obj7.header = tmp7(projectId(7394).BottomSheetTitleHeader, obj8);
   const tmp4 = _slicedToArray(noop.useState({ status: "loading" }), 2);
-  obj7.children = tmp7(projectId(6864).BottomSheetScrollView, { contentContainerStyle: { paddingBottom: onRestore(1612)().bottom }, children: tmp9 });
-  return tmp7(projectId(7437).ActionSheet, obj7);
+  obj7.children = tmp7(projectId(6869).BottomSheetScrollView, { contentContainerStyle: { paddingBottom: onRestore(1612)().bottom }, children: tmp9 });
+  return tmp7(projectId(7442).ActionSheet, obj7);
 };
 export const VIBEGRATIONS_VERSION_HISTORY_SHEET_KEY = "VibegrationsVersionHistorySheet";

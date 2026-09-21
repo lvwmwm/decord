@@ -1,10 +1,10 @@
-// Module ID: 13032
-// Function ID: 13033
+// Module ID: 13034
+// Function ID: 13035
 // Name: PanGestureAnimations
-// Dependencies: [1177, 5185, 4757, 4492, 6892, 2]
+// Dependencies: [1177, 5185, 4757, 4492, 6897, 2]
 // Exports: default
 
-// Module 13032 (PanGestureAnimations)
+// Module 13034 (PanGestureAnimations)
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4757 */;
 import spring from "spring" /* 5185 */;

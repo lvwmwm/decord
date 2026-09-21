@@ -1,11 +1,11 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10448
+// Function ID: 10449
 // Name: getPushNotificationLogs
-// Dependencies: [502, 9558, 2]
+// Dependencies: [502, 9559, 2]
 // Exports: default
 
-// Module 10447 (getPushNotificationLogs)
-import NativePushNotificationMonitorModuleDefault from "NativePushNotificationMonitorModule" /* 9558 */;
+// Module 10448 (getPushNotificationLogs)
+import NativePushNotificationMonitorModuleDefault from "NativePushNotificationMonitorModule" /* 9559 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const size = fn(2);

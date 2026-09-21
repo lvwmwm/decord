@@ -1,16 +1,16 @@
-// Module ID: 18268
-// Function ID: 18269
+// Module ID: 18279
+// Function ID: 18280
 // Name: SocialRpcNetworkConfigManager
-// Dependencies: [17, 2109, 502, 1241, 1271, 7358, 1364, 2]
+// Dependencies: [17, 2109, 502, 1241, 1271, 7363, 1364, 2]
 
-// Module 18268 (SocialRpcNetworkConfigManager)
+// Module 18279 (SocialRpcNetworkConfigManager)
 import _mod17 from "module_17" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 import size from "module_2" /* 2 */;
 
 function updateSocialRpcNetworkConfig() {

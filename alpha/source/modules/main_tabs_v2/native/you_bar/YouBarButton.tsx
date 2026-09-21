@@ -1,12 +1,12 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16731
+// Function ID: 16732
 // Name: YouBarButton
-// Dependencies: [19, 17, 15359, 21, 4756, 576, 9093, 8111, 8178, 2]
+// Dependencies: [19, 17, 15365, 21, 4756, 576, 9094, 8113, 8179, 2]
 
-// Module 16725 (YouBarButton)
+// Module 16731 (YouBarButton)
 import nativeDefault from "native" /* 576 */;
-import IconButton from "IconButton" /* 8178 */;
-import ClipView from "ClipView" /* 9093 */;
+import IconButton from "IconButton" /* 8179 */;
+import ClipView from "ClipView" /* 9094 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -88,7 +88,7 @@ class YouBarButtonIcon {
     items2[0] = memo;
     items2[1] = hasBadge;
     memo1 = obj2.useMemo(() => {
-      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "call", bottom: "np", padding: "fileFinishedImporting", minWidth: "accessible" };
+      const rect = { position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "accessible", bottom: "surrogates", padding: "PX_16", minWidth: "r" };
       return rect;
     }, items1);
     obj6 = { style: { position: "relative", height: tmp, width: tmp }, children: null };
@@ -126,7 +126,7 @@ class YouBarButtonContainer {
   }
 }
 const View = fn(17).View;
-const YouBarConstants = fn(15359);
+const YouBarConstants = fn(15365);
 ({ YOU_BAR_BUTTON_HIT_SLOP: hasOwnProperty, YOU_BAR_BUTTON_ICON_SIZE: metroRequire } = YouBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);

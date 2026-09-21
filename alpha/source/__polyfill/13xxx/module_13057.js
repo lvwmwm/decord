@@ -1,148 +1,145 @@
 // Module ID: 13057
 // Function ID: 13058
-// Dependencies: [13055]
-// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
+// Dependencies: []
+// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
 
 // Module 13057
-import _mod13055 from "module_13055" /* 13055 */;
+function isInstanceOf(arg0, arg1) {
+  try {
+    return arg0 instanceof arg1;
+  } catch (err) {
+    return false;
+  }
+}
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const isMatchingPattern = function isMatchingPattern(arr, test) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
+export const isDOMError = function isDOMError(arg0) {
+  const call = toString.call;
+  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMError" + "]";
+};
+export const isDOMException = function isDOMException(arg0) {
+  const call = toString.call;
+  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMException" + "]";
+};
+export const isElement = function isElement(arg0) {
+  let tmp = typeof globalThis.Element !== "undefined";
+  if (typeof globalThis.Element !== "undefined") {
+    tmp = isInstanceOf(arg0, globalThis.Element);
   }
-  const isStringResult = _mod13055.isString(arr);
-  if (!isStringResult) {
-    return isStringResult;
-  } else {
-    if (tmpResult.isRegExp(test)) {
-      let isMatch = test.test(arr);
-    } else {
-      isMatch = tmp(13055).isString(test);
-      if (isMatch) {
-        if (flag) {
-          let hasItem = arr === test;
-        } else {
-          hasItem = arr.includes(test);
+  return tmp;
+};
+export const isError = function isError(arg0) {
+  const call = toString.call;
+  const tmp2 = typeof call === "unknown" ? toString() : call(arg0);
+  if ("[object Error]" !== tmp2) {
+    if ("[object Exception]" !== tmp2) {
+      if ("[object DOMException]" !== tmp2) {
+        if ("[object WebAssembly.Exception]" !== tmp2) {
+          const _Error = Error;
+          return isInstanceOf(arg0, Error);
         }
       }
-      const tmpResult2 = tmp(13055);
     }
-    tmpResult = tmp(13055);
   }
+  return true;
 };
-export const safeJoin = function safeJoin(arg0, arg1) {
-  if (Array.isArray(arg0)) {
-    const items = [];
-    let num = 0;
-    if (0 < arg0.length) {
-      try {
-        const push = items.push;
-        if (obj.isVueViewModel(tmp2)) {
-          push("[VueViewModel]");
-        } else {
-          const _String = String;
-          push(String(tmp2));
-        }
-        num = num + 1;
-        obj = _mod13055;
-      } catch (err) {
-        arr.push(tmp);
-      }
-    }
-    return items.join(arg1);
-  } else {
-    return "";
-  }
+export const isErrorEvent = function isErrorEvent(arg0) {
+  const call = toString.call;
+  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "ErrorEvent" + "]";
 };
-export const snipLine = function snipLine(arr, arg1) {
-  if (arr.length <= 150) {
-    return arr;
-  } else {
-    let tmp = arg1;
-    if (arg1 > length) {
-      tmp = length;
-    }
-    const _Math = Math;
-    let num3 = Math.max(tmp - 60, 0);
-    if (num3 < 5) {
-      num3 = 0;
-    }
-    const _Math2 = Math;
-    let bound = Math.min(num3 + 140, length);
-    if (bound > length - 5) {
-      bound = length;
-    }
-    if (bound === length) {
-      const _Math3 = Math;
-      num3 = Math.max(bound - 140, 0);
-    }
-    const substr = arr.slice(num3, bound);
-    let combined = substr;
-    if (num3 > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "'{snip} " + substr;
-    }
-    let text = combined;
-    if (bound < length) {
-      text = `${tmp6} {snip}`;
-    }
-    return text;
+export const isEvent = function isEvent(arg0) {
+  let tmp = typeof Event !== "undefined";
+  if (typeof Event !== "undefined") {
+    const _Event = Event;
+    tmp = isInstanceOf(arg0, Event);
   }
+  return tmp;
 };
-export const stringMatchesSomePattern = function stringMatchesSomePattern(arg0) {
-  closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
+export { isInstanceOf };
+export const isParameterizedString = function isParameterizedString(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
   }
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
+  if (tmp) {
+    tmp = "__sentry_template_string__" in obj;
   }
-  return items.some((test) => {
-    if (flag === undefined) {
-      flag = false;
-    }
-    const isStringResult = _mod13055.isString(closure_0);
-    if (!isStringResult) {
-      return isStringResult;
-    } else {
-      if (tmpResult.isRegExp(test)) {
-        let isMatch = test.test(obj);
-      } else {
-        isMatch = tmp(13055).isString(test);
-        if (isMatch) {
-          if (flag) {
-            let hasItem = obj === test;
-          } else {
-            hasItem = obj.includes(test);
-          }
-        }
-        const tmpResult2 = tmp(13055);
-      }
-      tmpResult = tmp(13055);
-    }
-  });
+  if (tmp) {
+    tmp = "__sentry_template_values__" in obj;
+  }
+  return tmp;
 };
-export const truncate = function truncate(str) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
-  }
-  let combined = str;
-  if (typeof str === "string") {
-    combined = str;
-    if (0 !== num) {
-      combined = str;
-      if (str.length > num) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + str.slice(0, num) + "...";
-      }
+export const isPlainObject = function isPlainObject(arg0) {
+  const call = toString.call;
+  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
+};
+export const isPrimitive = function isPrimitive(obj) {
+  let tmp = null === obj;
+  if (!tmp) {
+    let tmp2 = typeof obj === "object";
+    if (typeof obj === "object") {
+      tmp2 = null !== obj;
     }
+    if (tmp2) {
+      tmp2 = "__sentry_template_string__" in obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_values__" in obj;
+    }
+    tmp = tmp2;
   }
-  return combined;
+  if (!tmp) {
+    let tmp3 = typeof obj !== "object";
+    if (typeof obj !== "object") {
+      tmp3 = typeof obj !== "function";
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+export const isRegExp = function isRegExp(arg0) {
+  const call = toString.call;
+  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "RegExp" + "]";
+};
+export const isString = function isString(arg0) {
+  const call = toString.call;
+  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "String" + "]";
+};
+export const isSyntheticEvent = function isSyntheticEvent(arg0) {
+  const call = toString.call;
+  let tmp3 = (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
+  if (tmp3) {
+    tmp3 = "nativeEvent" in arg0;
+  }
+  if (tmp3) {
+    tmp3 = "preventDefault" in arg0;
+  }
+  if (tmp3) {
+    tmp3 = "stopPropagation" in arg0;
+  }
+  return tmp3;
+};
+export const isThenable = function isThenable(arg0) {
+  let then = arg0;
+  if (arg0) {
+    then = arg0.then;
+  }
+  if (then) {
+    then = typeof arg0.then === "function";
+  }
+  return Boolean(then);
+};
+export const isVueViewModel = function isVueViewModel(__isVue) {
+  let tmp = typeof __isVue !== "object";
+  if (typeof __isVue === "object") {
+    tmp = null === __isVue;
+  }
+  if (!tmp) {
+    __isVue = __isVue.__isVue;
+    let tmp2 = !__isVue;
+    if (!__isVue) {
+      tmp2 = !__isVue._isVue;
+    }
+    tmp = tmp2;
+  }
+  return !tmp;
 };

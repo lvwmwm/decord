@@ -1,18 +1,18 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 17023
+// Function ID: 17024
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 17012, 17016, 504, 17017, 4752, 5334, 1115, 4600, 17018, 3678, 1177, 5317, 2]
+// Dependencies: [19, 17, 1372, 21, 4756, 576, 17020, 17024, 504, 17025, 4752, 5339, 1115, 4600, 17026, 3678, 1177, 5278, 2]
 // Exports: VibegrationsConjureAvatar, VibegrationsConjureHeader, VibegrationsUserAvatar, VibegrationsUserHeader, useMessageAuthorUser
 
-// Module 17015 (VibegrationsMessageAuthor)
+// Module 17023 (VibegrationsMessageAuthor)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import AppsIcon from "AppsIcon" /* 5317 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17016 */;
-import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17017 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17018 */;
+import AppsIcon from "AppsIcon" /* 5278 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17024 */;
+import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17025 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17026 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -66,7 +66,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4756);
 let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(17012).MESSAGE_AVATAR_SIZE, height: fn(17012).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+let size = { width: fn(17020).MESSAGE_AVATAR_SIZE, height: fn(17020).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
 obj2.conjureTile = size;
 const React6 = createStyles.createStyles(obj2);
 size = fn(2);
@@ -153,7 +153,7 @@ export const VibegrationsUserAvatar = function VibegrationsUserAvatar(arg0) {
     obj2.accessibilityLabel = intl.string(tmp4(1115).t.iXAna6);
     const obj3 = { size, user: stateFromStores, guildId: "Array" };
     obj2.children = closure_6(tmp4(1177).Avatar, obj3);
-    tmp8 = closure_6(tmp4(5334).PressableOpacity, obj2);
+    tmp8 = closure_6(tmp4(5339).PressableOpacity, obj2);
   }
   return tmp8;
 };

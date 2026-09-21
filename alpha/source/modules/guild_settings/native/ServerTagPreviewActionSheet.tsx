@@ -1,19 +1,19 @@
-// Module ID: 14175
-// Function ID: 14176
+// Module ID: 14181
+// Function ID: 14182
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 9834, 21, 4756, 576, 9835, 9836, 14176, 4723, 4752, 1115, 5186, 7279, 7437, 7389, 2]
+// Dependencies: [19, 17, 9835, 21, 4756, 576, 9836, 9837, 14182, 4723, 4752, 1115, 5186, 7284, 7442, 7394, 2]
 // Exports: default
 
-// Module 14175 (ServerTagPreviewActionSheet)
+// Module 14181 (ServerTagPreviewActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9836 */;
-import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 14176 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9837 */;
+import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 14182 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const GuildProfileFetchStatus = fn(9834).GuildProfileFetchStatus;
+const GuildProfileFetchStatus = fn(9835).GuildProfileFetchStatus;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4756);
@@ -25,7 +25,7 @@ const result = size.fileFinishedImporting("modules/guild_settings/native/ServerT
 export default function ServerTagPreviewActionSheet(guildId) {
   guildId = guildId.guildId;
   const tmp = closure_8();
-  const guildProfile1 = guildId(9835).useGuildProfile(guildId);
+  const guildProfile1 = guildId(9836).useGuildProfile(guildId);
   let guildProfile = guildProfile1.guildProfile;
   const items = [guildId];
   const effect = noop.useEffect(() => {
@@ -56,14 +56,14 @@ export default function ServerTagPreviewActionSheet(guildId) {
     tmp7 = closure_7(View, obj3);
     tmp8 = closure_6;
   } else {
-    tmp7 = closure_6(tmp2(7279).SceneLoadingIndicator, {});
+    tmp7 = closure_6(tmp2(7284).SceneLoadingIndicator, {});
     tmp8 = closure_6;
   }
   const obj7 = { children: null };
   const obj13 = { title: null };
   const intl3 = tmp2(1115).intl;
   obj13.title = intl3.string(guildId(1115).t["2QmKZ2"]);
-  const items2 = [tmp8(guildId(7389).BottomSheetTitleHeader, obj13), tmp7];
+  const items2 = [tmp8(guildId(7394).BottomSheetTitleHeader, obj13), tmp7];
   obj7.children = items2;
-  return closure_7(guildId(7437).ActionSheet, obj7);
+  return closure_7(guildId(7442).ActionSheet, obj7);
 };

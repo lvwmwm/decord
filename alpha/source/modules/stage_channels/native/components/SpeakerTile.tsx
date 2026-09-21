@@ -1,13 +1,13 @@
-// Module ID: 10302
-// Function ID: 10303
+// Module ID: 10303
+// Function ID: 10304
 // Name: SpeakerTile
-// Dependencies: [19, 17, 4772, 4777, 21, 4756, 576, 4605, 10303, 1478, 5337, 504, 8663, 10304, 5334, 1115, 8516, 1177, 10306, 10308, 7207, 4752, 2]
+// Dependencies: [19, 17, 4772, 4777, 21, 4756, 576, 4605, 10304, 1478, 5342, 504, 8664, 10305, 5339, 1115, 8517, 1177, 10307, 10309, 7212, 4752, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 10302 (SpeakerTile)
+// Module 10303 (SpeakerTile)
 import nativeDefault from "native" /* 576 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8663 */;
-import StageTileTypes from "StageTileTypes" /* 10303 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8664 */;
+import StageTileTypes from "StageTileTypes" /* 10304 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 

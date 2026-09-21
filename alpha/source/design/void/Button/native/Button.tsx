@@ -1,15 +1,15 @@
 // Module ID: 1180
 // Function ID: 1181
 // Name: Button/Button
-// Dependencies: [19, 17, 1074, 1181, 21, 4756, 576, 4605, 5653, 1364, 12911, 8889, 4607, 5898, 5186, 2]
+// Dependencies: [19, 17, 1074, 1181, 21, 4756, 576, 4605, 5658, 1364, 12913, 8890, 4607, 5903, 5186, 2]
 // Exports: getRedesignSize, getRedesignVariant
 
 // Module 1180 (Button/Button)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import shared from "shared" /* 4607 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8889 */;
-import StylesheetUtils from "StylesheetUtils" /* 12911 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8890 */;
+import StylesheetUtils from "StylesheetUtils" /* 12913 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -440,12 +440,12 @@ obj2.buttonFilled = {};
 obj2.buttonLink = {};
 obj2.buttonLinkDefault = {};
 const obj30 = { backgroundColor: nativeDefault.colors.WHITE };
-obj2.buttonOutlined = { backgroundColor: "transparent", borderWidth: 1, borderStyle: "solid", borderColor: fn(5653).BUTTON_OUTLINED_BORDER };
+obj2.buttonOutlined = { backgroundColor: "transparent", borderWidth: 1, borderStyle: "solid", borderColor: fn(5658).BUTTON_OUTLINED_BORDER };
 obj2.buttonXsmall = { minHeight: 24 };
 obj2.buttonSmall = { minHeight: 32 };
 obj2.buttonMedium = { minHeight: 40 };
 obj2.buttonLarge = { minHeight: 46 };
-const obj33 = { backgroundColor: "transparent", borderWidth: 1, borderStyle: "solid", borderColor: fn(5653).BUTTON_OUTLINED_BORDER };
+const obj33 = { backgroundColor: "transparent", borderWidth: 1, borderStyle: "solid", borderColor: fn(5658).BUTTON_OUTLINED_BORDER };
 obj2.text = { color: nativeDefault.colors.WHITE, fontFamily: fn(1074).Fonts.PRIMARY_SEMIBOLD, flexShrink: 1 };
 obj2.textXsmall = { fontSize: 12 };
 obj2.textSmall = { fontSize: 14 };
@@ -467,28 +467,28 @@ const obj39 = { color: nativeDefault.colors.WHITE };
 obj2.textWhite = { color: nativeDefault.colors.WHITE };
 obj2.textFilled = {};
 const obj40 = { color: nativeDefault.colors.WHITE };
-obj2.textOutlined = { color: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+obj2.textOutlined = { color: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
 obj2.faded = { opacity: 0.5 };
-const obj41 = { color: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj41 = { color: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
 obj2.buttonWhiteDarkDefault = { backgroundColor: nativeDefault.colors.WHITE };
 const obj42 = { backgroundColor: nativeDefault.colors.WHITE };
 obj2.textLink = { color: nativeDefault.colors.TEXT_LINK };
 const obj43 = { color: nativeDefault.colors.TEXT_LINK };
-obj2.buttonPrimaryDefault = { backgroundColor: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-const obj44 = { backgroundColor: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj2.buttonPrimaryDarkDefault = { backgroundColor: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-const obj45 = { backgroundColor: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj2.buttonGreyDefault = { backgroundColor: fn(5653).DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
-const obj46 = { backgroundColor: fn(5653).DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
-obj2.textPrimary = { color: fn(5653).DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
-const obj47 = { color: fn(5653).DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
-obj2.textTransparent = { color: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-const obj48 = { color: fn(5653).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
-obj2.buttonPrimaryDisabled = { backgroundColor: fn(5653).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-const obj49 = { backgroundColor: fn(5653).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-obj2.buttonPrimaryDarkDisabled = { backgroundColor: fn(5653).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-const obj50 = { backgroundColor: fn(5653).BUTTON_PRIMARY_DISABLED_BACKGROUND };
-obj2.buttonGreyDisabled = { backgroundColor: fn(5653).BUTTON_GREY_DISABLED_BACKGROUND };
+obj2.buttonPrimaryDefault = { backgroundColor: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj44 = { backgroundColor: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+obj2.buttonPrimaryDarkDefault = { backgroundColor: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj45 = { backgroundColor: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+obj2.buttonGreyDefault = { backgroundColor: fn(5658).DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
+const obj46 = { backgroundColor: fn(5658).DARK_PRIMARY_500_LIGHT_PRIMARY_430 };
+obj2.textPrimary = { color: fn(5658).DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
+const obj47 = { color: fn(5658).DARK_PRIMARY_500_LIGHT_PRIMARY_100 };
+obj2.textTransparent = { color: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+const obj48 = { color: fn(5658).DARK_PRIMARY_100_LIGHT_PRIMARY_500 };
+obj2.buttonPrimaryDisabled = { backgroundColor: fn(5658).BUTTON_PRIMARY_DISABLED_BACKGROUND };
+const obj49 = { backgroundColor: fn(5658).BUTTON_PRIMARY_DISABLED_BACKGROUND };
+obj2.buttonPrimaryDarkDisabled = { backgroundColor: fn(5658).BUTTON_PRIMARY_DISABLED_BACKGROUND };
+const obj50 = { backgroundColor: fn(5658).BUTTON_PRIMARY_DISABLED_BACKGROUND };
+obj2.buttonGreyDisabled = { backgroundColor: fn(5658).BUTTON_GREY_DISABLED_BACKGROUND };
 const styles = createStyles.createStyles(obj2);
 const obj52 = { FILLED: "filled", LINK: "link", OUTLINED: "outlined" };
 const obj53 = { BRAND: "brand", RED: "red", GREEN: "green", PRIMARY: "primary", TRANSPARENT: "transparent", GREY: "grey", LIGHTGREY: "lightgrey", WHITE: "white", LINK: "link" };

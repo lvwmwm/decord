@@ -1,10 +1,10 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9687
+// Function ID: 9688
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 2041, 1074, 21, 4756, 576, 9687, 1177, 1115, 9685, 504, 5203, 4898, 4808, 4752, 5186, 2]
+// Dependencies: [19, 17, 2041, 1074, 21, 4756, 576, 9688, 1177, 1115, 9686, 504, 5203, 4898, 4808, 4752, 5186, 2]
 // Exports: default
 
-// Module 9686 (VideoEmptyState)
+// Module 9687 (VideoEmptyState)
 import nativeDefault from "native" /* 576 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
 import StreamActionCreators from "StreamActionCreators" /* 4898 */;
@@ -35,7 +35,7 @@ export default function VideoEmptyState(style) {
     let tmp10 = !removeSplashImage;
     if (!removeSplashImage) {
       let obj2 = { style: tmp2.placeholderImage };
-      tmp10 = closure_5(stream(9687).StreamEnded, obj2);
+      tmp10 = closure_5(stream(9688).StreamEnded, obj2);
     }
     let obj3 = { children: null };
     const items = [tmp10, ];
@@ -54,13 +54,13 @@ export default function VideoEmptyState(style) {
     tmp8Result = null;
   }
   if (null != avError) {
-    let errorCode = stream(9685).getErrorInfo(avError).errorCode;
-    const obj6 = stream(9685);
+    let errorCode = stream(9686).getErrorInfo(avError).errorCode;
+    const obj6 = stream(9686);
   } else {
     errorCode = null;
     if (type === tmp3.STREAM_FAILED) {
-      errorCode = stream(9685).getErrorInfo(stream(9685).AVError.STREAM_FAILED_TO_START).errorCode;
-      const obj5 = stream(9685);
+      errorCode = stream(9686).getErrorInfo(stream(9686).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(9686);
     }
   }
   const items1 = [ChannelStore];

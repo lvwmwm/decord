@@ -1,10 +1,10 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 8104
+// Function ID: 8105
 // Name: SavedMessagesTypes
 // Dependencies: [4978, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 8102 (SavedMessagesTypes)
+// Module 8104 (SavedMessagesTypes)
 import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
 import size from "module_2" /* 2 */;
 

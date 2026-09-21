@@ -1,15 +1,15 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16678
+// Function ID: 16679
 // Name: getGuildsBarGuildAccessibilityActions
-// Dependencies: [2063, 5650, 1115, 9471, 4607, 16673, 5732, 2]
+// Dependencies: [2063, 5655, 1115, 9472, 4607, 16679, 5737, 2]
 // Exports: default
 
-// Module 16672 (getGuildsBarGuildAccessibilityActions)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5732 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 9471 */;
-import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 16673 */;
+// Module 16678 (getGuildsBarGuildAccessibilityActions)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 9472 */;
+import getGuildBarNeighborsDefault from "getGuildBarNeighbors" /* 16679 */;
 import GuildStore from "GuildStore" /* 2063 */;
-import SortedGuildStore from "SortedGuildStore" /* 5650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 
 const require = globalThis.__r;
 

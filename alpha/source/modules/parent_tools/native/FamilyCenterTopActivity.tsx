@@ -1,17 +1,17 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15174
+// Function ID: 15175
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1372, 7777, 21, 4756, 576, 563, 4723, 15169, 1980, 15170, 10010, 1115, 2482, 4752, 1177, 5796, 2]
+// Dependencies: [19, 17, 1372, 7779, 21, 4756, 576, 563, 4723, 15175, 1980, 15176, 10011, 1115, 2482, 4752, 1177, 5801, 2]
 // Exports: default
 
-// Module 15168 (FamilyCenterTopActivity)
+// Module 15174 (FamilyCenterTopActivity)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7777 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
 
 const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
@@ -43,7 +43,7 @@ export default function FamilyCenterTopActivity() {
   const items2 = [stateFromStores];
   [][0] = stateFromStores1;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15169, dependencyMap.paths), "FamilyCenterTopUsers", { topUserActivities: stateFromStores });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15175, dependencyMap.paths), "FamilyCenterTopUsers", { topUserActivities: stateFromStores });
   }, items2);
   if (0 !== stateFromStores.length) {
     const obj3 = { style: tmp.container, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 5764
-// Function ID: 5765
+// Module ID: 5769
+// Function ID: 5770
 // Name: ImpersonateActionCreators
 // Dependencies: [2041, 2096, 2105, 2099, 4395, 2095, 4937, 2098, 1074, 2048, 1241, 4936, 2104, 573, 1101, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5764 (ImpersonateActionCreators)
+// Module 5769 (ImpersonateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ImpersonateTypes from "ImpersonateTypes" /* 2104 */;

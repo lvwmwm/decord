@@ -1,9 +1,0 @@
-// Module ID: 13802
-// Function ID: 13803
-// Dependencies: [1121]
-
-// Module 13802
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 80, height: 80, scales: [1], hash: "efc48aacb0f78e1462efe2b15e5ef702", name: "img_boost", type: "png" });

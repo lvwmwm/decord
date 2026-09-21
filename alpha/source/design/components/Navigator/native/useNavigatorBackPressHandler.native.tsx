@@ -1,10 +1,10 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 5847
+// Function ID: 5848
 // Name: useNavigatorBackPressHandler
 // Dependencies: [19, 1485, 5181, 2]
 // Exports: useNavigatorBackPressHandler
 
-// Module 5842 (useNavigatorBackPressHandler)
+// Module 5847 (useNavigatorBackPressHandler)
 import useBackPressHandler from "useBackPressHandler" /* 5181 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 8998
-// Function ID: 8999
+// Module ID: 8999
+// Function ID: 9000
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 4756, 576, 8953, 4451, 5186, 1115, 4723, 8980, 8956, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 8954, 4451, 5186, 1115, 4723, 8981, 8957, 2]
 // Exports: default
 
-// Module 8998 (GameProfileStoreLinks)
+// Module 8999 (GameProfileStoreLinks)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4451 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8953 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8980 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8954 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8981 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;

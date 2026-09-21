@@ -1,23 +1,23 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 12971
+// Function ID: 12972
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 12665, 1386, 1372, 1074, 12970, 21, 4756, 576, 5653, 7975, 1177, 12910, 4600, 1115, 5802, 4752, 1397, 5799, 1241, 504, 12971, 9868, 5186, 5645, 2]
+// Dependencies: [32, 19, 17, 12667, 1386, 1372, 1074, 12972, 21, 4756, 576, 5658, 7977, 1177, 12912, 4600, 1115, 5807, 4752, 1397, 5804, 1241, 504, 12973, 9869, 5186, 5650, 2]
 // Exports: default
 
-// Module 12969 (InviteDetails)
+// Module 12971 (InviteDetails)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserUtilsDefault from "UserUtils" /* 4600 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GuildBadgeDefault from "GuildBadge" /* 5802 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7975 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12910 */;
-import InviteRolesListDefault from "InviteRolesList" /* 12971 */;
+import GuildBadgeDefault from "GuildBadge" /* 5807 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7977 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12912 */;
+import InviteRolesListDefault from "InviteRolesList" /* 12973 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MultiAccountStore from "MultiAccountStore" /* 12665 */;
+import MultiAccountStore from "MultiAccountStore" /* 12667 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -67,7 +67,7 @@ function InviteDestinationIcon(invite) {
     if (null != invite.inviter) {
       let tmp2Result = null;
       if (null != invite.inviter) {
-        const obj3 = { avatarStyle: tmp.avatar, user: null, guildId: "Array", size: "png" };
+        const obj3 = { avatarStyle: tmp.avatar, user: null, guildId: "Array", size: "getFavorite" };
         const tmp14 = new UserRecord(invite.inviter);
         obj3.user = tmp14;
         obj3.size = tmp4(1177).AvatarSizes.XLARGE;
@@ -197,9 +197,9 @@ function InviteJoinContext(invite) {
           const obj5 = isGuildMember(4600);
         }
       }
-      tmp3Result3 = tmp3(7975);
+      tmp3Result3 = tmp3(7977);
     }
-    tmp3Result = tmp3(7975);
+    tmp3Result = tmp3(7977);
   }
   const obj8 = { style: tmp.inviteJoinContainer, children: null };
   let tmp22 = null;
@@ -208,10 +208,10 @@ function InviteJoinContext(invite) {
     if (!tmp3Result4.isFriendInvite(invite)) {
       const obj10 = { style: tmp.inviterIconWrapper, children: null };
       const obj12 = { source: memo, style: tmp.inviterIcon };
-      obj10.children = closure_12(isGuildMember(5799), obj12);
+      obj10.children = closure_12(isGuildMember(5804), obj12);
       tmp22 = closure_12(tmp21, obj10);
     }
-    tmp3Result4 = tmp3(7975);
+    tmp3Result4 = tmp3(7977);
   }
   const items1 = [tmp22, closure_12(invite(4752).Text, { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: formatResult })];
   obj8.children = items1;
@@ -286,7 +286,7 @@ function InviteMemberCounts(invite) {
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, InviteStates: c10 } = Constants);
-let closure_11 = fn(12970).INVITE_ROUTING_HUB_GUILD_ID;
+let closure_11 = fn(12972).INVITE_ROUTING_HUB_GUILD_ID;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 const createStyles = fn(4756);
@@ -303,14 +303,14 @@ obj2.inviterIcon = size2;
 obj2.guildNameContainer = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
 obj2.guildNameText = { textAlign: "center" };
 let obj3 = { borderRadius: nativeDefault.radii.none, marginRight: 8 };
-obj2.featureIcon = { flexGrow: 0, marginRight: 8, opacity: fn(5653).DARK_1_LIGHT_04 };
+obj2.featureIcon = { flexGrow: 0, marginRight: 8, opacity: fn(5658).DARK_1_LIGHT_04 };
 obj2.memberInfo = { flexDirection: "row", alignItems: "center", marginBottom: 8 };
 obj2.rolesList = { marginTop: 8, marginBottom: 8, alignItems: "center" };
 const size3 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
 obj2.dotOnline = size3;
 const size4 = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm, marginRight: 4, marginLeft: 16, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 obj2.dotOffline = size4;
-let obj4 = { flexGrow: 0, marginRight: 8, opacity: fn(5653).DARK_1_LIGHT_04 };
+let obj4 = { flexGrow: 0, marginRight: 8, opacity: fn(5658).DARK_1_LIGHT_04 };
 obj2.embedDetailsCard = { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, borderRadius: nativeDefault.radii.sm, marginTop: 16, marginBottom: 8 };
 let closure_15 = createStyles.createStyles(obj2);
 const constants3 = { ACCEPT: 0, [0]: "ACCEPT", DECLINE: 1, [1]: "DECLINE" };
@@ -345,11 +345,11 @@ export default function InviteDetails(invite) {
   if (tmp8Result) {
     const obj9 = { style: tmp.embedDetailsCard, children: null };
     const obj10 = { event: guild_scheduled_event };
-    const items3 = [tmp10(tmp4(9868).GuildEventCardHeader, obj10), , ];
+    const items3 = [tmp10(tmp4(9869).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = tmp10(tmp4(9868).GuildEventCardMetaInfo, obj11);
+    items3[1] = tmp10(tmp4(9869).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = tmp10(tmp4(9868).GuildEventCardGuildInfo, obj12);
+    items3[2] = tmp10(tmp4(9869).GuildEventCardGuildInfo, obj12);
     obj9.children = items3;
     tmp8Result = tmp8(View, obj9);
   }
@@ -432,7 +432,7 @@ export default function InviteDetails(invite) {
     disabled: tmp3 === constants3.DECLINE
   });
   obj17.children = items4;
-  items2[6] = closure_13(invite(5645).ButtonGroup, obj17);
+  items2[6] = closure_13(invite(5650).ButtonGroup, obj17);
   obj16.children = items2;
   return closure_13(closure_14, obj16);
 };

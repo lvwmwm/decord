@@ -1,10 +1,10 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9571
+// Function ID: 9572
 // Name: FramesActionCreators
-// Dependencies: [5, 4775, 9571, 9572, 2]
+// Dependencies: [5, 4775, 9572, 9573, 2]
 
-// Module 9570 (FramesActionCreators)
-import _launchFrameAll from "_launchFrame" /* 9572 */;
+// Module 9571 (FramesActionCreators)
+import _launchFrameAll from "_launchFrame" /* 9573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 

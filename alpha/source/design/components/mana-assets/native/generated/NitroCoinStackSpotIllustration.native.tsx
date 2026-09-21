@@ -1,13 +1,13 @@
-// Module ID: 6495
-// Function ID: 6496
+// Module ID: 6500
+// Function ID: 6501
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [21, 5799, 6496, 2]
+// Dependencies: [21, 5804, 6501, 2]
 // Exports: NitroCoinStackSpotIllustration
 
-// Module 6495 (NitroCoinStackSpotIllustration)
+// Module 6500 (NitroCoinStackSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6496 from "module_6496" /* 6496 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6501 from "module_6501" /* 6501 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroCoinStackSpotIllustration = function NitroCoinStackSpotIllustr
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6496 };
+  const obj2 = { uri: _modDef6501 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

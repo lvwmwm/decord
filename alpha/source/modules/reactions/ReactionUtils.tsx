@@ -1,7 +1,7 @@
 // Module ID: 4407
 // Function ID: 4408
 // Name: ReactionUtils
-// Dependencies: [502, 1074, 4408, 4409, 1115, 8003, 2019, 1241, 2]
+// Dependencies: [502, 1074, 4408, 4409, 1115, 8005, 2019, 1241, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
 // Module 4407 (ReactionUtils)
@@ -9,7 +9,7 @@ import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2019 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8003 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8005 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;

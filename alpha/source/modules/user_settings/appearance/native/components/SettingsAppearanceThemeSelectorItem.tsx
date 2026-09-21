@@ -1,10 +1,10 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 15545
+// Function ID: 15546
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1182, 15538, 1085, 21, 4756, 576, 4606, 4464, 5336, 1177, 15540, 563, 4457, 15541, 1230, 4474, 5334, 1115, 2]
+// Dependencies: [19, 17, 1182, 15544, 1085, 21, 4756, 576, 4606, 4464, 5341, 1177, 15546, 563, 4457, 15547, 1230, 4474, 5339, 1115, 2]
 // Exports: default
 
-// Module 15539 (SettingsAppearanceThemeSelectorItem)
+// Module 15545 (SettingsAppearanceThemeSelectorItem)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
@@ -12,17 +12,17 @@ import useToken from "useToken" /* 4457 */;
 import themes from "themes" /* 4464 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
 import utils_ColorDefault from "utils/Color" /* 4606 */;
-import Pressables from "Pressables" /* 5334 */;
-import ThemedGradient from "ThemedGradient" /* 5336 */;
+import Pressables from "Pressables" /* 5339 */;
+import ThemedGradient from "ThemedGradient" /* 5341 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15538 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15544 */;
 
 const ThemedGradientDefault = ThemedGradient;
 
 const native = tmp(1177);
-const _modDef15540 = tmp8(15540);
-const SynchronizeIconNativeDefault = tmp5(15541);
+const _modDef15546 = tmp8(15546);
+const SynchronizeIconNativeDefault = tmp5(15547);
 require = fn;
 function GradientThemeBackground(arg0) {
   ({ item, isThemeLocked } = arg0);
@@ -45,7 +45,7 @@ function GradientThemeBackground(arg0) {
   obj4.mixColorOverride = isThemeDarkResult ? closure_10 : closure_11;
   const items1 = [timestampProducer(ThemedGradientDefault, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef15540, style: tmp4.lock };
+    const obj6 = { source: _modDef15546, style: tmp4.lock };
     isThemeLocked = tmp7(native.Icon, obj6);
   }
   items1[1] = isThemeLocked;
@@ -100,7 +100,7 @@ function CustomThemeBackground(arg0) {
   obj4.customTheme = item;
   const items1 = [timestampProducer(ThemedGradient.CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef15540, style: tmp4.lock };
+    const obj6 = { source: _modDef15546, style: tmp4.lock };
     isThemeLocked = tmp7(tmp(1177).Icon, obj6);
   }
   items1[1] = isThemeLocked;

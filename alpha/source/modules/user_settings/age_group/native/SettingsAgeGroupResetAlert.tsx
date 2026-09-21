@@ -1,10 +1,10 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15036
+// Function ID: 15037
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1484, 14026, 5110, 4453, 1115, 5114, 3034, 5114, 2]
+// Dependencies: [5, 21, 1484, 14032, 5110, 4453, 1115, 5114, 3034, 5114, 2]
 // Exports: default
 
-// Module 15030 (SettingsAgeGroupResetAlert)
+// Module 15036 (SettingsAgeGroupResetAlert)
 import _modDef3034 from "module_3034" /* 3034 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -46,7 +46,7 @@ export default function SettingsAgeGroupResetAlert() {
             dependencyMap = 1;
             c1 = 2;
             c3 = 1;
-            const obj6 = { value: tmp3(14026).resetAgeVerification(), done: false };
+            const obj6 = { value: tmp3(14032).resetAgeVerification(), done: false };
             return obj6;
           }
         } else if (1 === tmp7) {

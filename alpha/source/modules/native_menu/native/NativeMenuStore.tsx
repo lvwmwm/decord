@@ -1,9 +1,9 @@
-// Module ID: 9772
-// Function ID: 9773
+// Module ID: 9773
+// Function ID: 9774
 // Name: NativeMenuStore
 // Dependencies: [504, 573, 2]
 
-// Module 9772 (NativeMenuStore)
+// Module 9773 (NativeMenuStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

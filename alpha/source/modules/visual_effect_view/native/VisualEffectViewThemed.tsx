@@ -1,9 +1,9 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8514
+// Function ID: 8515
 // Name: VisualEffectViewThemed
 // Dependencies: [19, 21, 4690, 4607, 5174, 2]
 
-// Module 8513 (VisualEffectViewThemed)
+// Module 8514 (VisualEffectViewThemed)
 import shared from "shared" /* 4607 */;
 import useThemeDefault from "useTheme" /* 4690 */;
 import noop from "module_19" /* 19 */;

@@ -1,13 +1,13 @@
-// Module ID: 10241
-// Function ID: 10242
+// Module ID: 10242
+// Function ID: 10243
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4778, 502, 1992, 4781, 21, 4756, 504, 38, 9910, 10235, 1115, 5817, 10242, 2]
+// Dependencies: [19, 17, 4778, 502, 1992, 4781, 21, 4756, 504, 38, 9911, 10236, 1115, 5822, 10243, 2]
 // Exports: default
 
-// Module 10241 (UserSettingsVoiceOutputOptions)
+// Module 10242 (UserSettingsVoiceOutputOptions)
 import _modDef38 from "module_38" /* 38 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9910 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10242 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10243 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -76,7 +76,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj7.accessibilityLabel = intl3.string(stateFromStores1(1115).t.xPHVBs);
   obj6.children = closure_9(VolumeSliderDefault, obj7);
   obj5.subLabel = closure_9(View, obj6);
-  const items4 = [closure_9(stateFromStores1(5817).TableRow, obj5), ];
+  const items4 = [closure_9(stateFromStores1(5822).TableRow, obj5), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj8 = { label: null, subLabel: null };
@@ -88,10 +88,10 @@ export default function UserSettingsVoiceOutputOptions() {
     obj10.accessibilityLabel = intl5.string(tmp2(1115).t.pEAl4b);
     obj9.children = tmp9(VolumeSliderDefault, obj10);
     obj8.subLabel = tmp9(tmp10, obj9);
-    tmp9Result = tmp9(tmp2(5817).TableRow, obj8);
+    tmp9Result = tmp9(tmp2(5822).TableRow, obj8);
     const tmp11Result = VolumeSliderDefault;
   }
   items4[1] = tmp9Result;
   obj4.children = items4;
-  return tmp8(stateFromStores1(10235).UserSettingsTableRowGroup, obj4);
+  return tmp8(stateFromStores1(10236).UserSettingsTableRowGroup, obj4);
 };

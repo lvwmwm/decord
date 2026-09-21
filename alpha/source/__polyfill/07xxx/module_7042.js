@@ -1,49 +1,19 @@
 // Module ID: 7042
 // Function ID: 7043
-// Dependencies: [19, 1637]
-// Exports: useReactiveSharedValue
+// Dependencies: [19, 6881]
+// Exports: useBottomSheetGestureHandlers
 
 // Module 7042
-import noop from "module_19" /* 19 */;
+import _mod19 from "module_19" /* 19 */;
+import _mod6881 from "module_6881" /* 6881 */;
 
-const require = globalThis.__r;
+const useContext = _mod19.useContext;
 
-({ useEffect: c2, useRef: c3 } = noop);
-
-export const useReactiveSharedValue = (current) => {
-  const tmp = closure_3(null);
-  const tmp2 = closure_3(null);
-  _require = tmp2;
-  let tmp3 = current;
-  if (current) {
-    tmp3 = typeof current === "object";
+export const useBottomSheetGestureHandlers = () => {
+  const tmp = useContext(_mod6881.BottomSheetGestureHandlersContext);
+  if (null === tmp) {
+    throw "'useBottomSheetGestureHandlers' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
   }
-  if (tmp3) {
-    tmp3 = "value" in current;
-  }
-  if (!tmp3) {
-    if (null === tmp2.current) {
-      tmp.current = current;
-      if (typeof current === "object") {
-        const obj2 = {};
-        const merged = Object.assign(current);
-        let mutable = require("cancelAnimation").makeMutable(obj2);
-        let obj = require("cancelAnimation");
-      } else {
-        mutable = require("cancelAnimation").makeMutable(current);
-        const obj3 = require("cancelAnimation");
-      }
-      tmp2.current = mutable;
-    } else if (tmp.current !== current) {
-      tmp2.current.value = current;
-    }
-  }
-  closure_2(() => () => {
-    if (ref.current) {
-      ref(dependencyMap[1]).cancelAnimation(tmp.current);
-      const obj = ref(dependencyMap[1]);
-    }
-  }, []);
-  current = tmp2.current;
-  return current;
 };

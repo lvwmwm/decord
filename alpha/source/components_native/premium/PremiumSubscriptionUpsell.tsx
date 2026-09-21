@@ -1,10 +1,10 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 13803
+// Function ID: 13804
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2109, 1372, 1074, 7672, 1374, 21, 4756, 576, 4706, 1115, 1881, 504, 4414, 5198, 1094, 4752, 13798, 13799, 9504, 5186, 2]
+// Dependencies: [19, 17, 2109, 1372, 1074, 7674, 1374, 21, 4756, 576, 4706, 1115, 1881, 504, 4414, 5198, 1094, 4752, 13804, 13805, 9505, 5186, 2]
 // Exports: default
 
-// Module 13797 (PremiumSubscriptionUpsell)
+// Module 13803 (PremiumSubscriptionUpsell)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, StyleSheet } = get_ActivityIndicator);
-const Gradients = fn(7672).Gradients;
+const Gradients = fn(7674).Gradients;
 const PremiumConstants = fn(1374);
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_8, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: closure_9 } = PremiumConstants);
 const jsxProd = fn(21);
@@ -72,9 +72,9 @@ export default function PremiumSubscriptionUpsell(arg0) {
     }
     const items3 = [tmp6Result1, , ];
     const obj10 = { style: tmp.upsellFeatures, children: null };
-    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13798) };
+    const obj11 = { style: tmp.upsellFeatureSubLogo, source: tmp5(13804) };
     const items4 = [closure_1_10(React4, obj11), , ];
-    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13799) };
+    const obj12 = { style: tmp.upsellFeatureLogoTier2, source: tmp5(13805) };
     items4[1] = closure_1_10(React4, obj12);
     const obj13 = { style: tmp.upsellFeatureList, features: null, labelStyle: null, rowStyle: null };
     const obj15 = { IconComponent: null, label: null, color: null };
@@ -82,7 +82,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj15.IconComponent = tmp2(4706).CheckmarkLargeIcon;
     const intl4 = tmp2(1115).intl;
     const obj16 = { discountPercentage: null };
-    const tmp5Result4 = tmp5(9504);
+    const tmp5Result4 = tmp5(9505);
     obj16.discountPercentage = tmp2(1881).formatPercent(LocaleStore.locale, React7 / 100);
     obj15.label = intl4.formatToPlainString(tmp2(1115).t.P3aEj6, obj16);
     obj15.color = tmp5(576).unsafe_rawColors.WHITE;

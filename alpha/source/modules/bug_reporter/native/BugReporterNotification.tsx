@@ -1,17 +1,17 @@
-// Module ID: 10439
-// Function ID: 10440
+// Module ID: 10440
+// Function ID: 10441
 // Name: BugReporterNotification
-// Dependencies: [19, 17, 10440, 1074, 21, 4756, 576, 10426, 10362, 10350, 4959, 10352, 10441, 1980, 7622, 2]
+// Dependencies: [19, 17, 10441, 1074, 21, 4756, 576, 10427, 10363, 10351, 4959, 10353, 10442, 1980, 7624, 2]
 // Exports: BugReporterNotification
 
-// Module 10439 (BugReporterNotification)
+// Module 10440 (BugReporterNotification)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10350 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10352 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10351 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10353 */;
 import noop from "module_19" /* 19 */;
-import BugReportStore from "BugReportStore" /* 10440 */;
+import BugReportStore from "BugReportStore" /* 10441 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -35,9 +35,9 @@ export const BugReporterNotification = function BugReporterNotification(notifica
   obj.children = <closure_4 source={{ uri: notification.imageUri }} style={tmp.preview} />;
   let obj2 = { source: { uri: notification.imageUri }, style: tmp.preview };
   const tmp3 = <closure_5 style={tmp.rightAccessoryContainer}>{null}</closure_5>;
-  return jsx(notification(10426).NotificationPressable, {
+  return jsx(notification(10427).NotificationPressable, {
     header: memo,
-    children: jsx(notification(10362).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
+    children: jsx(notification(10363).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
     rightAccessory: <closure_5 style={tmp.rightAccessoryContainer}>{null}</closure_5>,
     onPress() {
       if (!BugReportStore.getField("isReportOpen")) {
@@ -48,7 +48,7 @@ export const BugReporterNotification = function BugReporterNotification(notifica
         InAppNotificationActionCreatorsDefault.clearNotification();
         BugReportStore.setState({ isReportOpen: true });
         ({ imageUri: obj7.screenshotUri, image: obj7.screenshot } = notification);
-        ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10441, dependencyMap.paths), { screenshotUri: null, screenshot: null });
+        ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10442, dependencyMap.paths), { screenshotUri: null, screenshot: null });
         const obj10 = { screenshotUri: null, screenshot: null };
       }
     },

@@ -1,15 +1,15 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16939
+// Function ID: 16940
 // Name: VibegrationsCreateSheet
-// Dependencies: [5, 32, 19, 17, 13359, 21, 4756, 576, 16933, 9309, 4723, 13186, 16935, 1115, 3678, 7435, 16936, 16937, 16938, 7437, 7389, 7325, 5899, 5817, 4752, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 13361, 21, 4756, 576, 16940, 9310, 4723, 13188, 16942, 1115, 3678, 7440, 16943, 16944, 16945, 7442, 7394, 7330, 5904, 5822, 4752, 5186, 2]
 // Exports: default
 
-// Module 16932 (VibegrationsCreateSheet)
+// Module 16939 (VibegrationsCreateSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7435 */;
-import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16937 */;
-import VibegrationsTemplates from "VibegrationsTemplates" /* 16938 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7440 */;
+import VibegrationsEffortPicker from "VibegrationsEffortPicker" /* 16944 */;
+import VibegrationsTemplates from "VibegrationsTemplates" /* 16945 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VibegrationsConnectionStore = fn(13359);
+const VibegrationsConnectionStore = fn(13361);
 ({ ensureConnection: closure_7, sendUserMessage: closure_8, stageModelSettings: closure_9 } = VibegrationsConnectionStore);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);

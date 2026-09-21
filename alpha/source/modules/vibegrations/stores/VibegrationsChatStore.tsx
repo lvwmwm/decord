@@ -1,25 +1,25 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13362
+// Function ID: 13363
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 7777, 10337, 2095, 4577, 5491, 9308, 1074, 2048, 1115, 3678, 9311, 2019, 10157, 504, 573, 2]
+// Dependencies: [32, 109, 7779, 10338, 2095, 4577, 5496, 9309, 1074, 2048, 1115, 3678, 9312, 2019, 10158, 504, 573, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 13360 (VibegrationsChatStore)
+// Module 13362 (VibegrationsChatStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2019 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9311 */;
-import SoundUtils from "SoundUtils" /* 10157 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9312 */;
+import SoundUtils from "SoundUtils" /* 10158 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7777 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10337 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10338 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5491 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9308 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
 
 require = fn;
 function newMessage(assistant, content, arg2) {
@@ -344,8 +344,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(9311).isWindowFocused();
-            const tmp68Result = tmp68(9311);
+            isWindowFocusedResult = tmp68(9312).isWindowFocused();
+            const tmp68Result = tmp68(9312);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;

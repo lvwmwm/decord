@@ -1,16 +1,16 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16481
+// Function ID: 16482
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 16476, 2045, 1074, 21, 16477, 1612, 1115, 16478, 16474, 7240, 2]
+// Dependencies: [19, 16482, 2045, 1074, 21, 16483, 1612, 1115, 16484, 16480, 7245, 2]
 // Exports: default
 
-// Module 16475 (FavoritesGuildChannelSortModal)
+// Module 16481 (FavoritesGuildChannelSortModal)
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16477 */;
-import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16478 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16483 */;
+import GuildSettingsModalChannelsDefault from "GuildSettingsModalChannels" /* 16484 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16476 */;
+import GuildSettingsModalChannelsStore from "GuildSettingsModalChannelsStore" /* 16482 */;
 
 require = fn;
 const ALL_CHANNEL_TYPES = fn(2045).ALL_CHANNEL_TYPES;
@@ -25,9 +25,9 @@ export default function FavoritesGuildChannelSortModal() {
     const items = [...closure_1_5];
     GuildSettingsModalChannelsActionCreatorsDefault.startReordering.apply(items);
     return () => {
-      closure_1_1(16477).stopReordering();
-      const obj = closure_1_1(16477);
-      closure_1_1(16477).terminate();
+      closure_1_1(16483).stopReordering();
+      const obj = closure_1_1(16483);
+      closure_1_1(16483).terminate();
     };
   }, []);
   const bottom = useSafeAreaInsetsDefault().bottom;
@@ -38,11 +38,11 @@ export default function FavoritesGuildChannelSortModal() {
     const intl = util.intl;
     obj2.title = intl.string(util.t.OGiMXJ);
     obj2.render = function render() {
-      const obj = { guildId, contentContainerStyle: { paddingBottom: 16 + closure_1_0 }, onDone: bottom(16474).closeFavoritesGuildChannelSortModal };
-      return jsx(GuildSettingsModalChannelsDefault, { guildId, contentContainerStyle: { paddingBottom: 16 + closure_1_0 }, onDone: bottom(16474).closeFavoritesGuildChannelSortModal });
+      const obj = { guildId, contentContainerStyle: { paddingBottom: 16 + closure_1_0 }, onDone: bottom(16480).closeFavoritesGuildChannelSortModal };
+      return jsx(GuildSettingsModalChannelsDefault, { guildId, contentContainerStyle: { paddingBottom: 16 + closure_1_0 }, onDone: bottom(16480).closeFavoritesGuildChannelSortModal });
     };
     obj.FAVORITES_GUILD_CHANNEL_SORT = obj2;
     return obj;
   }, items);
-  return jsx(bottom(7240).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+  return jsx(bottom(7245).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
 };

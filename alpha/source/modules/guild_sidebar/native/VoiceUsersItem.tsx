@@ -1,10 +1,10 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16468
+// Function ID: 16469
 // Name: VoiceUsersItem
 // Dependencies: [19, 17, 21, 4756, 2]
 // Exports: default
 
-// Module 16462 (VoiceUsersItem)
+// Module 16468 (VoiceUsersItem)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

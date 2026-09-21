@@ -1,10 +1,10 @@
-// Module ID: 17881
-// Function ID: 17882
+// Module ID: 17892
+// Function ID: 17893
 // Name: sendStageRequestToSpeakEphemeralMessage
 // Dependencies: [1074, 573, 11, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 17881 (sendStageRequestToSpeakEphemeralMessage)
+// Module 17892 (sendStageRequestToSpeakEphemeralMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;

@@ -1,17 +1,17 @@
-// Module ID: 9415
-// Function ID: 9416
+// Module ID: 9416
+// Function ID: 9417
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [4405, 1372, 5210, 1978, 7763, 1115, 4909, 5108, 4769, 7696, 2]
+// Dependencies: [4405, 1372, 5210, 1978, 7765, 1115, 4909, 5108, 4769, 7698, 2]
 
-// Module 9415 (application_commands/ApplicationCommandBuiltIns)
+// Module 9416 (application_commands/ApplicationCommandBuiltIns)
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7696 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;
-let obj = { id: "-15", untranslatedName: "leave", displayName: "leave", type: fn(1978).ApplicationCommandType.CHAT, inputType: fn(7763).ApplicationCommandInputType.BUILT_IN, applicationId: fn(5210).BuiltInSectionId.BUILT_IN };
+let obj = { id: "-15", untranslatedName: "leave", displayName: "leave", type: fn(1978).ApplicationCommandType.CHAT, inputType: fn(7765).ApplicationCommandInputType.BUILT_IN, applicationId: fn(5210).BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj, "untranslatedDescription", {
   get: () => {
     const intl = require("util").intl;

@@ -1,15 +1,16 @@
 // Module ID: 8775
 // Function ID: 8776
-// Dependencies: [41, 42, 93, 95, 98, 19, 8743]
+// Dependencies: [41, 42, 93, 95, 98, 8744, 8767]
 
 // Module 8775
+import _modDef8767 from "module_8767" /* 8767 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FeDistantLight = fn;
+const FeDisplacementMap = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeDistantLight {
+class FeDisplacementMap {
   constructor() {
     self = this;
-    tmp = c2(this, FeDistantLight);
+    tmp = c2(this, FeDisplacementMap);
     tmp2 = closure_4;
-    obj = closure_4(FeDistantLight);
+    obj = closure_4(FeDisplacementMap);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -49,17 +50,18 @@ class FeDistantLight {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeDistantLight, fn(19).Component);
+_inherits(FeDisplacementMap, _modDef8767);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FeDistantLight(8743).warnUnimplementedFilter();
+    const result = FeDisplacementMap(8744).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeDistantLight, items);
-importDefaultResultResult.displayName = "FeDistantLight";
+const importDefaultResultResult = _createClass(FeDisplacementMap, items);
+importDefaultResultResult.displayName = "FeDisplacementMap";
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

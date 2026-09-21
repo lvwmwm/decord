@@ -1,14 +1,14 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12900
+// Function ID: 12901
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4748, 12211, 12212, 21, 4492, 4756, 576, 1364, 5185, 4757, 4457, 5380, 4752, 2]
+// Dependencies: [32, 19, 17, 4748, 12213, 12214, 21, 4492, 4756, 576, 1364, 5185, 4757, 4457, 5385, 4752, 2]
 
-// Module 12898 (VoiceMessageChat)
+// Module 12900 (VoiceMessageChat)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import spring from "spring" /* 5185 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 5380 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 5385 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
@@ -187,8 +187,8 @@ function Duration(animationValue) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator } = get_ActivityIndicator);
-let useVoiceMessagesUIStore = fn(12211).useVoiceMessagesUIStore;
-const VoiceMessageConstants = fn(12212);
+let useVoiceMessagesUIStore = fn(12213).useVoiceMessagesUIStore;
+const VoiceMessageConstants = fn(12214);
 ({ VOICE_RECORDING_MAX_DURATION_MILLIS: closure_8, VOICE_RECORDING_MAX_DURATION_OFFSET: closure_9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: c10, VOICE_RECORDING_WARN_DURATION_MILLIS: closure_11, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);

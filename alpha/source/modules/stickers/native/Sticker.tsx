@@ -1,15 +1,15 @@
-// Module ID: 10432
-// Function ID: 10433
+// Module ID: 10433
+// Function ID: 10434
 // Name: Sticker
-// Dependencies: [19, 17, 1182, 21, 5480, 5103, 1115, 8256, 10433, 5799, 4607, 7371, 7372, 2]
+// Dependencies: [19, 17, 1182, 21, 5485, 5103, 1115, 8257, 10434, 5804, 4607, 7376, 7377, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 10432 (Sticker)
+// Module 10433 (Sticker)
 import util from "util" /* 1115 */;
-import StickersTypes from "StickersTypes" /* 5480 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8256 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 10433 */;
+import StickersTypes from "StickersTypes" /* 5485 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8257 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 10434 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -35,7 +35,7 @@ export default function Sticker(opaque) {
   if (sticker.format_type === StickersTypes.StickerFormat.LOTTIE) {
     let str = tmp(5103).getStickerAssetUrl(sticker);
     const tmpResult = tmp(5103);
-  } else if (sticker.format_type === tmp(5480).StickerFormat.APNG) {
+  } else if (sticker.format_type === tmp(5485).StickerFormat.APNG) {
     const obj = { isPreview: !animated, size };
     str = tmp(5103).getStickerAssetUrl(sticker, obj);
     const tmpResult6 = tmp(5103);
@@ -59,12 +59,12 @@ export default function Sticker(opaque) {
     size1.width = size;
     size1.height = size;
     size1.opacity = num;
-    const NativeLottieRenderMode = tmp(8256).NativeLottieRenderMode;
+    const NativeLottieRenderMode = tmp(8257).NativeLottieRenderMode;
     size1.renderMode = animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
     size1.accessibilityLabel = formatToPlainStringResult;
     return jsx(NativeLottieViewDefault, { url: str, asset: null, width: null, height: null, opacity: null, renderMode: null, accessibilityLabel: null });
   } else {
-    if (sticker.format_type === tmp(5480).StickerFormat.APNG) {
+    if (sticker.format_type === tmp(5485).StickerFormat.APNG) {
       if ("type" in sticker) {
         const tmpResult8 = tmp(5103);
       }
@@ -86,9 +86,9 @@ export default function Sticker(opaque) {
     const tmp12 = jsx;
     const tmp14 = FastImageDefault;
     if (tmpResult10.isThemeDark(ThemeStore.theme)) {
-      let tmp13Result = tmp13(7371);
+      let tmp13Result = tmp13(7376);
     } else {
-      tmp13Result = tmp13(7372);
+      tmp13Result = tmp13(7377);
     }
     obj6.placeholder = tmp13Result;
     const obj7 = { uri: str };
@@ -102,7 +102,7 @@ export const getStickerAssetUrl = function getStickerAssetUrl(sticker, STICKER_S
   if (sticker.format_type === StickersTypes.StickerFormat.LOTTIE) {
     let str = tmp(5103).getStickerAssetUrl(sticker);
     const tmpResult = tmp(5103);
-  } else if (sticker.format_type === tmp(5480).StickerFormat.APNG) {
+  } else if (sticker.format_type === tmp(5485).StickerFormat.APNG) {
     const obj = { isPreview: !isAnimated, size: STICKER_SIZE };
     str = tmp(5103).getStickerAssetUrl(sticker, obj);
     const tmpResult3 = tmp(5103);

@@ -1,10 +1,10 @@
-// Module ID: 5720
-// Function ID: 5721
+// Module ID: 5725
+// Function ID: 5726
 // Name: getThreadAutoArchiveTimeOnce
 // Dependencies: [4771, 1091, 11, 2]
 // Exports: default, getThreadLastActivityTime
 
-// Module 5720 (getThreadAutoArchiveTimeOnce)
+// Module 5725 (getThreadAutoArchiveTimeOnce)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;

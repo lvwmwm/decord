@@ -1,10 +1,10 @@
-// Module ID: 7483
-// Function ID: 7484
+// Module ID: 7488
+// Function ID: 7489
 // Name: OrderActionCreators
 // Dependencies: [5, 1074, 3, 4436, 1271, 4429, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7483 (OrderActionCreators)
+// Module 7488 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

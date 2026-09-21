@@ -1,10 +1,10 @@
-// Module ID: 5294
-// Function ID: 5295
+// Module ID: 5301
+// Function ID: 5302
 // Name: ForumSpoilerIcon
 // Dependencies: [19, 21, 576, 4456, 5262, 2]
 // Exports: ForumSpoilerIcon
 
-// Module 5294 (ForumSpoilerIcon)
+// Module 5301 (ForumSpoilerIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5262 from "module_5262" /* 5262 */;

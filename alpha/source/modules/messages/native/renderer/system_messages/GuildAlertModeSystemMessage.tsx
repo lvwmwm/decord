@@ -1,19 +1,19 @@
-// Module ID: 8290
-// Function ID: 8291
+// Module ID: 8291
+// Function ID: 8292
 // Name: GuildAlertModeSystemMessage
-// Dependencies: [2041, 4756, 576, 8210, 8217, 8219, 1115, 8291, 8221, 1400, 1397, 2]
+// Dependencies: [2041, 4756, 576, 8211, 8218, 8220, 1115, 8292, 8222, 1400, 1397, 2]
 // Exports: createGuildAlertModeDisabledSystemMessage, createGuildAlertModeEnabledSystemMessage
 
-// Module 8290 (GuildAlertModeSystemMessage)
+// Module 8291 (GuildAlertModeSystemMessage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8210 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8217 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8219 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8221 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8291 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8292 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
@@ -38,7 +38,7 @@ export const createGuildAlertModeEnabledSystemMessage = function createGuildAler
   }
   obj2.time = str;
   const obj3 = {};
-  const merged = Object.assign(tmp(8221)(roleStyle));
+  const merged = Object.assign(tmp(8222)(roleStyle));
   const intl = tmp5(1115).intl;
   obj3.content = intl.formatToParts(util.t.ig55n6, obj2);
   const intl2 = tmp5(1115).intl;

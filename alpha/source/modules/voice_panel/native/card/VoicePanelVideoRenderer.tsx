@@ -1,16 +1,16 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17597
+// Function ID: 17598
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 12524, 12522, 17542, 12525, 21, 4492, 9702, 4756, 12523, 5185, 9663, 4724, 6892, 9691, 17545, 9694, 9692, 17534, 11615, 17456, 9696, 4457, 576, 4757, 7313, 9699, 2]
+// Dependencies: [32, 19, 17, 12526, 12524, 17553, 12527, 21, 4492, 9703, 4756, 12525, 5185, 9664, 4724, 6897, 9692, 17556, 9695, 9693, 17545, 11617, 17467, 9697, 4457, 576, 4757, 7318, 9700, 2]
 
-// Module 17586 (VoicePanelVideoRenderer)
+// Module 17597 (VoicePanelVideoRenderer)
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6892 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9663 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9702 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11615 */;
-import VideoActionCreators from "VideoActionCreators" /* 17456 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9664 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9703 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11617 */;
+import VideoActionCreators from "VideoActionCreators" /* 17467 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,12 +18,12 @@ const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
 const PixelRatio = fn(17).PixelRatio;
-const VoicePanelConstants = fn(12524);
+const VoicePanelConstants = fn(12526);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
-const VoicePanelControlsModes = fn(12522).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17542).VoicePanelPIPModes;
-let SCALE_PHYSICS = fn(12525).SCALE_PHYSICS;
+const VoicePanelControlsModes = fn(12524).VoicePanelControlsModes;
+const VoicePanelPIPModes = fn(17553).VoicePanelPIPModes;
+let SCALE_PHYSICS = fn(12527).SCALE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let c13 = 25;

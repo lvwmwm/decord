@@ -1,12 +1,12 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 9636
+// Function ID: 9637
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [2041, 2063, 4395, 1372, 4775, 1074, 9633, 4901, 9611, 504, 2]
+// Dependencies: [2041, 2063, 4395, 1372, 4775, 1074, 9634, 4901, 9612, 504, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 9635 (getEmbeddedActivityJoinability)
+// Module 9636 (getEmbeddedActivityJoinability)
 import ChannelUtils from "ChannelUtils" /* 4901 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9633 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9634 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import PermissionStore from "PermissionStore" /* 4395 */;

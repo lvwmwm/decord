@@ -1,19 +1,19 @@
-// Module ID: 7545
-// Function ID: 7546
+// Module ID: 7547
+// Function ID: 7548
 // Name: ForumActivePostStore
-// Dependencies: [5719, 7546, 502, 2041, 4771, 2095, 2050, 2052, 12, 7547, 11, 504, 2058, 573, 2]
+// Dependencies: [5724, 7548, 502, 2041, 4771, 2095, 2050, 2052, 12, 7549, 11, 504, 2058, 573, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 7545 (ForumActivePostStore)
+// Module 7547 (ForumActivePostStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2050 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2052 */;
 import SetUtils from "SetUtils" /* 2058 */;
-import ForumUtils from "ForumUtils" /* 7547 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5719 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7546 */;
+import ForumUtils from "ForumUtils" /* 7549 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5724 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7548 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
@@ -108,7 +108,7 @@ function rebuildState(refreshThreadIds) {
           } else {
             compareResult = SnowflakeUtilsDefault.compare(lastMessageIdResult1, id);
           }
-          tmpResult = tmp(7547);
+          tmpResult = tmp(7549);
         }
         return num;
       });
@@ -135,7 +135,7 @@ function rebuildState(refreshThreadIds) {
           } else {
             compareResult = SnowflakeUtilsDefault.compare(lastMessageIdResult1, id);
           }
-          tmpResult = tmp(7547);
+          tmpResult = tmp(7549);
         }
         return num;
       });
@@ -396,7 +396,7 @@ export const computeThreadIdsSnapshot = function computeThreadIdsSnapshot(id) {
         } else {
           compareResult = SnowflakeUtilsDefault.compare(lastMessageIdResult1, id);
         }
-        tmpResult = tmp(7547);
+        tmpResult = tmp(7549);
       }
       return num;
     });

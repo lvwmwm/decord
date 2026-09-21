@@ -1,13 +1,13 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14016
+// Function ID: 14017
 // Name: NowPlayingStore
-// Dependencies: [7893, 4796, 1372, 1074, 14011, 504, 573, 2]
+// Dependencies: [7895, 4796, 1372, 1074, 14017, 504, 573, 2]
 
-// Module 14010 (NowPlayingStore)
+// Module 14016 (NowPlayingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14011 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7893 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14017 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
 import PresenceStore from "PresenceStore" /* 4796 */;
 import UserStore from "UserStore" /* 1372 */;
 

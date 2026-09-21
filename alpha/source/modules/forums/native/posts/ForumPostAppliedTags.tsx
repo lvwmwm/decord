@@ -1,12 +1,12 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12266
+// Function ID: 12267
 // Name: ForumPostAppliedTags
-// Dependencies: [19, 17, 21, 4756, 576, 10886, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 10887, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 12264 (ForumPostAppliedTags)
+// Module 12266 (ForumPostAppliedTags)
 import nativeDefault from "native" /* 576 */;
-import AppliedForumTag from "AppliedForumTag" /* 10886 */;
+import AppliedForumTag from "AppliedForumTag" /* 10887 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -42,7 +42,7 @@ export const ForumPostAppliedTagPills = function ForumPostAppliedTagPills(additi
     obj2.tag = obj3;
     obj2.containerStyle = tmp.tag;
     obj2.hasUnreads = hasUnreads;
-    tmp4 = closure_3(hasUnreads(10886).AppliedForumTagPill, obj2);
+    tmp4 = closure_3(hasUnreads(10887).AppliedForumTagPill, obj2);
   }
   items1[1] = tmp4;
   obj.children = items1;

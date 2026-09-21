@@ -1,13 +1,13 @@
-// Module ID: 13421
-// Function ID: 13422
+// Module ID: 13423
+// Function ID: 13424
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2038, 7448, 21, 4756, 6051, 13419, 1115, 11392, 2]
+// Dependencies: [19, 17, 2038, 7453, 21, 4756, 6056, 13421, 1115, 11394, 2]
 // Exports: default
 
-// Module 13421 (ShopThisLookMarketingCoachmark)
+// Module 13423 (ShopThisLookMarketingCoachmark)
 import util from "util" /* 1115 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6051 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13419 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6056 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13421 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ function ShopThisLookMarketingCoachmarkImage() {
 }
 const View = fn(17).View;
 const ContentDismissActionType = fn(2038).ContentDismissActionType;
-const UserProfileThemeTypes = fn(7448).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7453).UserProfileThemeTypes;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });

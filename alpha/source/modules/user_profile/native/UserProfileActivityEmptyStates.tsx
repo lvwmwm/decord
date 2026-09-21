@@ -1,9 +1,9 @@
-// Module ID: 13371
-// Function ID: 13372
+// Module ID: 13373
+// Function ID: 13374
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1074, 21, 1115, 4756, 576, 4752, 4908, 12, 4769, 4723, 5186, 7622, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 1115, 4756, 576, 4752, 4908, 12, 4769, 4723, 5186, 7624, 2]
 
-// Module 13371 (UserProfileActivityEmptyStates)
+// Module 13373 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -11,7 +11,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723
 import Text_Text from "Text/Text" /* 4752 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import openUserSettings from "openUserSettings" /* 7622 */;
+import openUserSettings from "openUserSettings" /* 7624 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

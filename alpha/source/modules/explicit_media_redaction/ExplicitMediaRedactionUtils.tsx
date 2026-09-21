@@ -1,26 +1,26 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 7842
+// Function ID: 7843
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [4755, 2041, 7533, 7841, 1074, 1186, 1115, 1241, 7531, 5084, 5089, 7842, 5635, 5636, 4968, 7536, 2]
+// Dependencies: [4755, 2041, 7535, 7843, 1074, 1186, 1115, 1241, 7533, 5084, 5089, 7844, 5640, 5641, 4968, 7538, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 7840 (ExplicitMediaRedactionUtils)
+// Module 7842 (ExplicitMediaRedactionUtils)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
 import MetricEvents from "MetricEvents" /* 5089 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5635 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5636 */;
-import SelfModUtils from "SelfModUtils" /* 7531 */;
-import ExplicitMediaManager from "ExplicitMediaManager" /* 7842 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5641 */;
+import SelfModUtils from "SelfModUtils" /* 7533 */;
+import ExplicitMediaManager from "ExplicitMediaManager" /* 7844 */;
 import DevSettingsStore from "DevSettingsStore" /* 4755 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7533 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7535 */;
 
-const ObscureMediaModels = tmp(7536);
+const ObscureMediaModels = tmp(7538);
 require = fn;
-const ExplicitMediaRedactionConstants = fn(7841);
+const ExplicitMediaRedactionConstants = fn(7843);
 ({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: closure_7 } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

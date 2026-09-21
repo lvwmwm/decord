@@ -1,8 +1,8 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6063
+// Function ID: 6064
 // Dependencies: [2]
 
-// Module 6058
+// Module 6063
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CampfireSceneSpotIllustration-2x.png.js");

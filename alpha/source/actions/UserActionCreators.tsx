@@ -1,10 +1,10 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8450
+// Function ID: 8451
 // Name: UserActionCreators
 // Dependencies: [5, 1386, 1372, 1074, 1075, 3, 1271, 573, 4949, 1335, 38, 4656, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8449 (UserActionCreators)
+// Module 8450 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

@@ -1,14 +1,14 @@
-// Module ID: 17557
-// Function ID: 17558
+// Module ID: 17568
+// Function ID: 17569
 // Name: useStableParticipant
-// Dependencies: [4772, 502, 1992, 1372, 4777, 558, 504, 4908, 8484, 9709, 2]
+// Dependencies: [4772, 502, 1992, 1372, 4777, 558, 504, 4908, 8485, 9710, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17557 (useStableParticipant)
+// Module 17568 (useStableParticipant)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import NicknameUtils from "NicknameUtils" /* 4908 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8484 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9709 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8485 */;
+import participantHasVideoDefault from "participantHasVideo" /* 9710 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
@@ -44,7 +44,7 @@ export default function useStableParticipant(arg0, arg1, arg2) {
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "flex", ringing: null, hasVideo: 0.425, isSelf: 0 };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "flex", ringing: null, hasVideo: 0, isSelf: 1 };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);

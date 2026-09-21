@@ -1,10 +1,10 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 12071
+// Function ID: 12072
 // Name: GiftIntentMessagePlaceholder
 // Dependencies: [1115, 2]
 // Exports: getGiftIntentCustomMessagePlaceholder
 
-// Module 12069 (GiftIntentMessagePlaceholder)
+// Module 12071 (GiftIntentMessagePlaceholder)
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 

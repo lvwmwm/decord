@@ -1,13 +1,13 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17206
+// Function ID: 17207
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 7408, 4752, 1115, 2108, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 7413, 4752, 1115, 2108, 2]
 // Exports: default
 
-// Module 17195 (ChannelDetailsLinkedLobby)
+// Module 17206 (ChannelDetailsLinkedLobby)
 import nativeDefault from "native" /* 576 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7408 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7413 */;
 import noop from "module_19" /* 19 */;
 
 const util = BPDKoA(1115);

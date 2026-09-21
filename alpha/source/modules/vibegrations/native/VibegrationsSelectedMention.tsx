@@ -1,10 +1,10 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17027
+// Function ID: 17028
 // Name: VibegrationsSelectedMention
 // Dependencies: [19, 21, 4756, 576, 4752, 2]
 // Exports: default
 
-// Module 17019 (VibegrationsSelectedMention)
+// Module 17027 (VibegrationsSelectedMention)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;

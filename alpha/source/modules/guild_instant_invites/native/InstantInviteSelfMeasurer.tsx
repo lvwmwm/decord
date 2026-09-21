@@ -1,10 +1,10 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17288
+// Function ID: 17289
 // Name: InstantInviteSelfMeasurer
-// Dependencies: [19, 17, 21, 4756, 11195, 2]
+// Dependencies: [19, 17, 21, 4756, 11196, 2]
 
-// Module 17277 (InstantInviteSelfMeasurer)
-import InstantInvite from "InstantInvite" /* 11195 */;
+// Module 17288 (InstantInviteSelfMeasurer)
+import InstantInvite from "InstantInvite" /* 11196 */;
 import noop from "module_19" /* 19 */;
 
 const InstantInviteDefault = InstantInvite;

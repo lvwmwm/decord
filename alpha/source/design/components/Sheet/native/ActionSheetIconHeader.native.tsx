@@ -1,10 +1,10 @@
-// Module ID: 11265
-// Function ID: 11266
+// Module ID: 11267
+// Function ID: 11268
 // Name: ActionSheetIconHeader
 // Dependencies: [19, 17, 21, 4756, 4752, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 11265 (ActionSheetIconHeader)
+// Module 11267 (ActionSheetIconHeader)
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;
 

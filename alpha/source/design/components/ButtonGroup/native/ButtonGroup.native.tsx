@@ -1,10 +1,10 @@
-// Module ID: 5645
-// Function ID: 5646
+// Module ID: 5650
+// Function ID: 5651
 // Name: ButtonGroup
 // Dependencies: [19, 21, 4756, 5184, 2]
 // Exports: ButtonGroup
 
-// Module 5645 (ButtonGroup)
+// Module 5650 (ButtonGroup)
 import Stack_Stack from "Stack/Stack" /* 5184 */;
 import noop from "module_19" /* 19 */;
 

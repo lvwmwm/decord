@@ -1,9 +1,0 @@
-// Module ID: 13851
-// Function ID: 13852
-// Dependencies: [1121]
-
-// Module 13851
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3cb1cd2fa7a6da13fc0880992d84830f", name: "ChevronLargeDownIcon", type: "png" });

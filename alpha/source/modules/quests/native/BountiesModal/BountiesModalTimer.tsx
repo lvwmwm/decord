@@ -1,10 +1,10 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15319
+// Function ID: 15320
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5191, 4492, 8727, 4756, 576, 1364, 4757, 4752, 9552, 2]
+// Dependencies: [19, 17, 21, 5191, 4492, 8728, 4756, 576, 1364, 4757, 4752, 9553, 2]
 // Exports: default
 
-// Module 15313 (BountiesModalTimer)
+// Module 15319 (BountiesModalTimer)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
@@ -26,7 +26,7 @@ const Easing2 = fn(4492).Easing;
 let closure_11 = Easing2.bezier(0.61, 0, 0.58, 1);
 const Easing3 = fn(4492).Easing;
 let closure_12 = Easing3.bezier(0.42, 0, 0.58, 1);
-let closure_13 = ReanimatedRexport.createAnimatedComponent(fn(8727).Circle);
+let closure_13 = ReanimatedRexport.createAnimatedComponent(fn(8728).Circle);
 const createStyles = fn(4756);
 let obj = { progress: null, ring: null, trackPath: null, countdownText: null, checkmarkLayer: null, checkmarkBackground: null, checkmarkIcon: null };
 let size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: fn(5191).SMALL_BUTTON_HEIGHT, height: fn(5191).SMALL_BUTTON_HEIGHT };

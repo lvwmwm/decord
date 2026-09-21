@@ -1,13 +1,13 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16463
+// Function ID: 16464
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4756, 4989, 9995, 4752, 4600, 1115, 16458, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 4989, 9996, 4752, 4600, 1115, 16464, 2]
 // Exports: default
 
-// Module 16457 (VoiceUserNameItem)
+// Module 16463 (VoiceUserNameItem)
 import Text_Text from "Text/Text" /* 4752 */;
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 4989 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9995 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9996 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -89,7 +89,7 @@ export default function VoiceUserNameItem(arg0) {
   if (tmp12) {
     const obj7 = { onLayout: callback2, style: tmp.tag, children: null };
     const obj8 = { userId: user.id };
-    obj7.children = React5(tmp2(16458), obj8);
+    obj7.children = React5(tmp2(16464), obj8);
     tmp12 = React5(tmp19, obj7);
   }
   items3[1] = tmp12;

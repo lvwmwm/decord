@@ -1,14 +1,14 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17569
+// Function ID: 17570
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 4772, 21, 4492, 9183, 4756, 576, 17559, 17557, 9938, 5801, 12523, 504, 4757, 2]
+// Dependencies: [19, 4772, 21, 4492, 9184, 4756, 576, 17570, 17568, 9939, 5806, 12525, 504, 4757, 2]
 
-// Module 17558 (VoicePanelHeaderUserState)
+// Module 17569 (VoicePanelHeaderUserState)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4757 */;
-import NativeViewDefault from "NativeView" /* 5801 */;
-import useStableParticipant from "useStableParticipant" /* 17557 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17559 */;
+import NativeViewDefault from "NativeView" /* 5806 */;
+import useStableParticipant from "useStableParticipant" /* 17568 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17570 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
@@ -38,10 +38,10 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       let obj2 = { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null };
       let obj3 = { style: tmp.floatingIcon, state: null };
       obj3.state = tmp9.videoIconState;
-      obj2.children = jsx(tmp11(9938).VideoIcon, { style: tmp.floatingIcon, state: null });
-      let arr = items.push(jsx(tmp11(9183).BackgroundBlurView, { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null }, "video"));
+      obj2.children = jsx(tmp11(9939).VideoIcon, { style: tmp.floatingIcon, state: null });
+      let arr = items.push(jsx(tmp11(9184).BackgroundBlurView, { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null }, "video"));
     }
-    if (tmp9.type === tmp11(17559).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(17570).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
@@ -54,8 +54,8 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
       obj4.style = items1;
       let obj5 = { style: tmp.floatingIcon, state: null };
       obj5.state = tmp9.muteDeafenIconState;
-      obj4.children = tmp36(tmp11(9938).MuteDeafenIcon, obj5);
-      let arr2 = items.push(tmp35(tmp11(9183).BackgroundBlurView, obj4, "mute-deafen"));
+      obj4.children = tmp36(tmp11(9939).MuteDeafenIcon, obj5);
+      let arr2 = items.push(tmp35(tmp11(9184).BackgroundBlurView, obj4, "mute-deafen"));
     }
     continue;
   }
@@ -69,7 +69,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
   const tmp4Result = tmp4(type, id, guildId);
 }
 const jsx = fn(21).jsx;
-let closure_6 = ReanimatedRexport.createAnimatedComponent(fn(9183).BackgroundBlurView);
+let closure_6 = ReanimatedRexport.createAnimatedComponent(fn(9184).BackgroundBlurView);
 const OPACITY_TIMING = { duration: 100 };
 const createStyles = fn(4756);
 let obj = { container: null, iconContainer: null, floatingIconWrapper: null, floatingIcon: null, leftMargin: null };
@@ -89,7 +89,7 @@ const result = size.fileFinishedImporting("modules/voice_panel/native/header/Voi
 export default noop.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = noop.useContext(channelId(12523));
+  const context = noop.useContext(channelId(12525));
   channelId = context.channelId;
   const guildId = context.guildId;
   const tmp2 = closure_8();
@@ -102,7 +102,7 @@ export default noop.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(17557)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(17568)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(4492);
   const fn = function h() {
     let num = 0;

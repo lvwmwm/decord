@@ -1,13 +1,13 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14053
+// Function ID: 14054
 // Name: VoiceMemberEmbeddedActivity
-// Dependencies: [32, 19, 17, 2040, 2041, 1372, 1181, 7391, 21, 1177, 4756, 576, 7408, 1370, 504, 4385, 9635, 1478, 5244, 9634, 5334, 1115, 4752, 9738, 5187, 2]
+// Dependencies: [32, 19, 17, 2040, 2041, 1372, 1181, 7396, 21, 1177, 4756, 576, 7413, 1370, 504, 4385, 9636, 1478, 5244, 9635, 5339, 1115, 4752, 9739, 5187, 2]
 // Exports: calculateActivityRowHeight, default
 
-// Module 14047 (VoiceMemberEmbeddedActivity)
+// Module 14053 (VoiceMemberEmbeddedActivity)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9634 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9635 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
@@ -17,7 +17,7 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ACTION_SHEET_MAX_WIDTH = fn(7391).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const XSMALL = fn(1177).AvatarSizes.XSMALL;

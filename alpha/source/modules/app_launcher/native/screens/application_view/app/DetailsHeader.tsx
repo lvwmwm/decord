@@ -1,14 +1,14 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9402
+// Function ID: 9403
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4492, 9402, 9532, 5337, 8542, 5798, 4752, 1115, 4757, 4760, 5876, 5198, 1094, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 4492, 9403, 9533, 5342, 8543, 5803, 4752, 1115, 4757, 4760, 5881, 5198, 1094, 2]
 
-// Module 9401 (DetailsHeader)
+// Module 9402 (DetailsHeader)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import timingPresets from "timingPresets" /* 4760 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 9532 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 9533 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -46,7 +46,7 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
   let isScreenLandscape;
   closure_18 = undefined;
   let tmp = ref();
-  let obj = sharedValue(9402);
+  let obj = sharedValue(9403);
   ref = noop.useRef(null);
   const tmp7 = first1(noop.useState(false), 2);
   const first = tmp7[0];
@@ -56,7 +56,7 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
   noop = tmp9[1];
   closure_5 = noop.useRef(true);
   sharedValue = undefined;
-  const isPartnerApplicationResult = sharedValue(9402).isPartnerApplication(application);
+  const isPartnerApplicationResult = sharedValue(9403).isPartnerApplication(application);
   sharedValue = sharedValue(4492).useSharedValue(null);
   let obj3 = sharedValue(4492);
   let fn = function t() {
@@ -67,9 +67,9 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
   fn.__initData = __initData;
   const animatedStyle = sharedValue(4492).useAnimatedStyle(fn);
   const obj4 = sharedValue(4492);
-  const sectionName = sharedValue(9402).getSectionName(application);
-  const obj5 = sharedValue(9402);
-  const str = sharedValue(9402).getSectionDescription(application);
+  const sectionName = sharedValue(9403).getSectionName(application);
+  const obj5 = sharedValue(9403);
+  const str = sharedValue(9403).getSectionDescription(application);
   let tmp28Result5 = null != str;
   if (tmp28Result5) {
     tmp28Result5 = str.trim().length > 0;
@@ -82,7 +82,7 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
   colors = tmp6Result4[1];
   ref = obj2.useRef(0);
   __initData = obj2.useRef(0);
-  const obj6 = sharedValue(9402);
+  const obj6 = sharedValue(9403);
   [tmp18, c14] = first1(noop.useState(false), 2);
   const tmp6Result6 = first1(noop.useState(false), 2);
   first2 = tmp6Result6[0];
@@ -96,8 +96,8 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
     return result;
   }, items);
   const tmp6Result5 = first1(noop.useState(false), 2);
-  isScreenLandscape = sharedValue(5337).useIsScreenLandscape();
-  const tmp24 = first(8542)(isScreenLandscape);
+  isScreenLandscape = sharedValue(5342).useIsScreenLandscape();
+  const tmp24 = first(8543)(isScreenLandscape);
   closure_18 = tmp24;
   const items1 = [isScreenLandscape, tmp24];
   const effect = obj2.useEffect(() => {
@@ -108,7 +108,7 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
     }
   }, items1);
   let tmp27 = first;
-  const tmp2Result = sharedValue(5337);
+  const tmp2Result = sharedValue(5342);
   if (first) {
     tmp27 = !first1;
   }
@@ -220,7 +220,7 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
     const obj22 = { maskElement: tmp30Result6, children: null };
     const obj23 = { variant: "text-sm/medium", color: "text-default", lineClamp: num4, children: memo };
     obj22.children = tmp30(tmp2(4752).Text, obj23);
-    const items10 = [tmp30(tmp23(5876), obj22), , ];
+    const items10 = [tmp30(tmp23(5881), obj22), , ];
     let tmp30Result7 = null;
     if (tmp27) {
       const obj24 = { style: tmp.viewMoreCTA, children: null };
@@ -254,7 +254,7 @@ export default noop.memo(function DetailsHeader(viewContainerStyle) {
     items10[2] = tmp30Result8;
     obj13.children = items10;
     tmp28Result4 = tmp28(sharedValue, obj13);
-    const tmp23Result = tmp23(5876);
+    const tmp23Result = tmp23(5881);
   }
   items5[1] = tmp28Result4;
   obj8.children = items5;

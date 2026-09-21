@@ -1,13 +1,13 @@
-// Module ID: 16343
-// Function ID: 16344
+// Module ID: 16349
+// Function ID: 16350
 // Name: getJankSurfaceName
-// Dependencies: [16339, 16338, 4616, 16342, 2]
+// Dependencies: [16345, 16344, 4616, 16348, 2]
 // Exports: composeJankSurfaceName, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen
 
-// Module 16343 (getJankSurfaceName)
-import getJankScreenName from "getJankScreenName" /* 16338 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16342 */;
-import JankScreenConstants from "JankScreenConstants" /* 16339 */;
+// Module 16349 (getJankSurfaceName)
+import getJankScreenName from "getJankScreenName" /* 16344 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16348 */;
+import JankScreenConstants from "JankScreenConstants" /* 16345 */;
 import size from "module_2" /* 2 */;
 
 ({ CHANNEL_DETAILS_SCREEN: c3, INTERACTION_NONE: closure_4 } = JankScreenConstants);
@@ -24,11 +24,11 @@ export const composeJankSurfaceName = function composeJankSurfaceName(resolveClo
       tmp6 = React3;
     }
     if (tmp2Result.getChatLayout().isChatBesideChannelList) {
-      const wideViewScreenName = tmp2(16338).getWideViewScreenName(tmp6);
+      const wideViewScreenName = tmp2(16344).getWideViewScreenName(tmp6);
       if (null != wideViewScreenName) {
         return wideViewScreenName;
       }
-      const tmp2Result2 = tmp2(16338);
+      const tmp2Result2 = tmp2(16344);
     }
     if (tmp6 == null) {
       tmp6 = tmp;
@@ -51,8 +51,8 @@ export const getJankSurfaceName = function getJankSurfaceName() {
       }
       wideViewScreenName = tmp7;
     } else {
-      wideViewScreenName = tmp(16338).getWideViewScreenName(tmp7);
-      const tmpResult2 = tmp(16338);
+      wideViewScreenName = tmp(16344).getWideViewScreenName(tmp7);
+      const tmpResult2 = tmp(16344);
     }
     tmpResult = tmp(4616);
   }
@@ -98,8 +98,8 @@ export const setJankChannelDetailsOpen = function setJankChannelDetailsOpen(arg0
           }
           wideViewScreenName = tmp6;
         } else {
-          wideViewScreenName = tmp10(16338).getWideViewScreenName(tmp6);
-          const tmp10Result2 = tmp10(16338);
+          wideViewScreenName = tmp10(16344).getWideViewScreenName(tmp6);
+          const tmp10Result2 = tmp10(16344);
         }
         tmp10Result = tmp10(4616);
       }

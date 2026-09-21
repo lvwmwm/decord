@@ -1,17 +1,17 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16644
+// Function ID: 16645
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 7870, 2063, 5650, 4937, 4775, 1074, 21, 4756, 504, 10409, 4752, 1115, 16639, 4619, 4616, 2]
+// Dependencies: [19, 17, 7872, 2063, 5655, 4937, 4775, 1074, 21, 4756, 504, 10410, 4752, 1115, 16645, 4619, 4616, 2]
 // Exports: default
 
-// Module 16638 (HomeDrawerFolderRow)
+// Module 16644 (HomeDrawerFolderRow)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10409 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10410 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 import GuildStore from "GuildStore" /* 2063 */;
-import SortedGuildStore from "SortedGuildStore" /* 5650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;
 

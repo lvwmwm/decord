@@ -1,10 +1,10 @@
-// Module ID: 9975
-// Function ID: 9976
+// Module ID: 9976
+// Function ID: 9977
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 1992, 4779, 9971, 4781, 206, 504, 38, 9976, 2]
+// Dependencies: [32, 5, 19, 502, 1992, 4779, 9972, 4781, 206, 504, 38, 9977, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9975 (useSecureFramesPairwiseFingerprint)
+// Module 9976 (useSecureFramesPairwiseFingerprint)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -86,7 +86,7 @@ let closure_12 = async function _computeNativeDisplayPair(arg0, value) {
     }
   }
 };
-let closure_9 = fn(9971).SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
+let closure_9 = fn(9972).SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
 const Features = fn(4781).Features;
 const SecureFramesPairwiseFingerprintMode = { FROZEN: "frozen", LIVE: "live" };
 const size = fn(2);

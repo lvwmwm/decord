@@ -1,11 +1,11 @@
-// Module ID: 13424
-// Function ID: 13425
+// Module ID: 13426
+// Function ID: 13427
 // Name: useFriendRequestActions
-// Dependencies: [19, 11131, 2]
+// Dependencies: [19, 11132, 2]
 // Exports: useFriendRequestActions
 
-// Module 13424 (useFriendRequestActions)
-import PeopleUtilsDefault from "PeopleUtils" /* 11131 */;
+// Module 13426 (useFriendRequestActions)
+import PeopleUtilsDefault from "PeopleUtils" /* 11132 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

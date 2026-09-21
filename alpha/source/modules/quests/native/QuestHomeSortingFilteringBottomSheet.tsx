@@ -1,18 +1,18 @@
-// Module ID: 15270
-// Function ID: 15271
+// Module ID: 15276
+// Function ID: 15277
 // Name: QuestHomeSortingFilteringBottomSheet
-// Dependencies: [32, 19, 17, 5656, 21, 4756, 576, 7363, 5645, 5186, 1115, 5171, 4607, 4723, 11736, 7390, 7389, 6864, 5184, 5897, 5900, 5899, 5816, 11556, 2]
+// Dependencies: [32, 19, 17, 5661, 21, 4756, 576, 7368, 5650, 5186, 1115, 5171, 4607, 4723, 11738, 7395, 7394, 6869, 5184, 5902, 5905, 5904, 5821, 11558, 2]
 // Exports: default
 
-// Module 15270 (QuestHomeSortingFilteringBottomSheet)
+// Module 15276 (QuestHomeSortingFilteringBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import shared from "shared" /* 4607 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import ButtonGroup from "ButtonGroup" /* 5645 */;
-import TableRowGroup from "TableRowGroup" /* 5899 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
+import ButtonGroup from "ButtonGroup" /* 5650 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,7 +49,7 @@ function FilterFooter(inline) {
   return React5(View, obj);
 }
 const View = fn(17).View;
-const QuestHomeSortMethods = fn(5656).QuestHomeSortMethods;
+const QuestHomeSortMethods = fn(5661).QuestHomeSortMethods;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);
@@ -147,13 +147,13 @@ export default function QuestHomeSortingFilteringBottomSheet(onSortMethodChange)
       const options = heading.options;
       obj.children = options.map((item, index) => {
         const obj = {
-          label: onSortMethodChange(11556).getFilterTypeText(item.filter),
+          label: onSortMethodChange(11558).getFilterTypeText(item.filter),
           onPress(arg0) {
             return closure_2_8(closure_0, arg0);
           },
           checked: closure_4.some((group) => group.group === item.group && group.filter === arr.filter)
         };
-        return ref(onSortMethodChange(5816).TableCheckboxRow, obj, index);
+        return ref(onSortMethodChange(5821).TableCheckboxRow, obj, index);
       });
       return React5(TableRowGroup.TableRowGroup, obj, index);
     })

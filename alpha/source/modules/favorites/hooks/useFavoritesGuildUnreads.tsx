@@ -1,15 +1,15 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16651
+// Function ID: 16652
 // Name: useFavoritesGuildUnreads
-// Dependencies: [5718, 4397, 2041, 7870, 4395, 4771, 4937, 504, 11, 2]
+// Dependencies: [5723, 4397, 2041, 7872, 4395, 4771, 4937, 504, 11, 2]
 // Exports: default
 
-// Module 16645 (useFavoritesGuildUnreads)
+// Module 16651 (useFavoritesGuildUnreads)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5718 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;

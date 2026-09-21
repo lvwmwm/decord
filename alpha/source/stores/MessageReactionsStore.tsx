@@ -1,12 +1,12 @@
-// Module ID: 8002
-// Function ID: 8003
+// Module ID: 8004
+// Function ID: 8005
 // Name: MessageReactionsStore
-// Dependencies: [4396, 1386, 2041, 1372, 8003, 504, 8004, 573, 2]
+// Dependencies: [4396, 1386, 2041, 1372, 8005, 504, 8006, 573, 2]
 
-// Module 8002 (MessageReactionsStore)
+// Module 8004 (MessageReactionsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8004 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8006 */;
 import LurkingStore from "LurkingStore" /* 4396 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -34,7 +34,7 @@ function handleReaction(userId) {
   }
 }
 const dependencyMap = {};
-const items = [fn(8003).ReactionTypes.NORMAL, fn(8003).ReactionTypes.BURST];
+const items = [fn(8005).ReactionTypes.NORMAL, fn(8005).ReactionTypes.BURST];
 const prototype = function Reaction() {
   const obj = Object.create(new.target.prototype);
   obj.fetched = false;

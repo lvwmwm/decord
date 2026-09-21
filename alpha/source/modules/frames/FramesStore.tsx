@@ -1,15 +1,15 @@
-// Module ID: 9312
-// Function ID: 9313
+// Module ID: 9313
+// Function ID: 9314
 // Name: FramesStore
-// Dependencies: [9313, 9314, 1085, 9315, 504, 573, 2]
+// Dependencies: [9314, 9315, 1085, 9316, 504, 573, 2]
 
-// Module 9312 (FramesStore)
+// Module 9313 (FramesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1085 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9314 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9315 */;
-import FramesConstants from "FramesConstants" /* 9313 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 9315 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9316 */;
+import FramesConstants from "FramesConstants" /* 9314 */;
 import size from "module_2" /* 2 */;
 
 ({ FrameIntent: c2, FrameLayoutModes: c3, getChannelIdForSurface: closure_4, getFrameIntentForSurface: hasOwnProperty, isLaunched: metroRequire, makeFrameId: closure_7 } = FramesConstants);

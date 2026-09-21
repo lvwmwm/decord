@@ -1,10 +1,10 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 9118
+// Function ID: 9119
 // Name: WishlistButton
-// Dependencies: [5, 32, 19, 17, 502, 1372, 1076, 1085, 21, 4492, 5191, 4756, 576, 4466, 6857, 4607, 4476, 4454, 1115, 4757, 5185, 5189, 9118, 9053, 504, 9049, 9109, 9120, 9048, 2]
+// Dependencies: [5, 32, 19, 17, 502, 1372, 1076, 1085, 21, 4492, 5191, 4756, 576, 4466, 6862, 4607, 4476, 4454, 1115, 4757, 5185, 5189, 9119, 9054, 504, 9050, 9110, 9121, 9049, 2]
 // Exports: default
 
-// Module 9117 (WishlistButton)
+// Module 9118 (WishlistButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
@@ -12,7 +12,7 @@ import native from "native" /* 4466 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9048 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9049 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

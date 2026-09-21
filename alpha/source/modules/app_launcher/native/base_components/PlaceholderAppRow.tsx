@@ -1,13 +1,13 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12343
+// Function ID: 12344
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 4756, 576, 12305, 5817, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 12307, 5822, 2]
 // Exports: default
 
-// Module 12341 (PlaceholderAppRow)
+// Module 12343 (PlaceholderAppRow)
 import nativeDefault from "native" /* 576 */;
-import TableRow from "TableRow" /* 5817 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 12305 */;
+import TableRow from "TableRow" /* 5822 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 12307 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

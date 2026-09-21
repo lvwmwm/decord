@@ -1,15 +1,15 @@
-// Module ID: 10993
-// Function ID: 10994
+// Module ID: 10994
+// Function ID: 10995
 // Name: useFetchCollectiblesCategoriesAndPurchases
-// Dependencies: [32, 19, 4671, 7797, 563, 7781, 10994, 2]
+// Dependencies: [32, 19, 4671, 7799, 563, 7783, 10995, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 10993 (useFetchCollectiblesCategoriesAndPurchases)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7781 */;
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10994 */;
+// Module 10994 (useFetchCollectiblesCategoriesAndPurchases)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7783 */;
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10995 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 4671 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7797 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7799 */;
 
 require = fn;
 function useFetchPurchases(flag) {

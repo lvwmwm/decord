@@ -1,11 +1,11 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12104
+// Function ID: 12105
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 2063, 1372, 21, 4756, 576, 7221, 11411, 504, 5732, 12103, 4752, 1115, 4600, 7325, 5186, 2]
+// Dependencies: [32, 19, 17, 2063, 1372, 21, 4756, 576, 7226, 11413, 504, 5737, 12105, 4752, 1115, 4600, 7330, 5186, 2]
 
-// Module 12102 (KickConfirm)
+// Module 12104 (KickConfirm)
 import nativeDefault from "native" /* 576 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5732 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;

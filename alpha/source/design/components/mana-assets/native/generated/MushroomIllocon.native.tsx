@@ -1,13 +1,13 @@
-// Module ID: 6485
-// Function ID: 6486
+// Module ID: 6490
+// Function ID: 6491
 // Name: MushroomIllocon
-// Dependencies: [21, 5799, 6486, 2]
+// Dependencies: [21, 5804, 6491, 2]
 // Exports: MushroomIllocon
 
-// Module 6485 (MushroomIllocon)
+// Module 6490 (MushroomIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6486 from "module_6486" /* 6486 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6491 from "module_6491" /* 6491 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const MushroomIllocon = function MushroomIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6486 };
+  const obj2 = { uri: _modDef6491 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,18 +1,18 @@
-// Module ID: 8725
-// Function ID: 8726
+// Module ID: 8726
+// Function ID: 8727
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 4756, 1115, 3034, 8692, 8693, 5184, 7198, 576, 4752, 2]
+// Dependencies: [19, 21, 4756, 1115, 3034, 8693, 8694, 5184, 7203, 576, 4752, 2]
 // Exports: default
 
-// Module 8725 (AgeVerificationOtherWindowScreen)
+// Module 8726 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3034 from "module_3034" /* 3034 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7198 */;
-import ModalScreen from "ModalScreen" /* 8692 */;
-import ModalContent from "ModalContent" /* 8693 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7203 */;
+import ModalScreen from "ModalScreen" /* 8693 */;
+import ModalContent from "ModalContent" /* 8694 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

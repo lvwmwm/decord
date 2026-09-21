@@ -1,10 +1,10 @@
-// Module ID: 5829
-// Function ID: 5830
+// Module ID: 5834
+// Function ID: 5835
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4756, 576, 4492, 5188, 4476, 5830, 5185, 5189, 2]
+// Dependencies: [19, 21, 4756, 576, 4492, 5188, 4476, 5835, 5185, 5189, 2]
 // Exports: FormCheckbox
 
-// Module 5829 (FormCheckbox)
+// Module 5834 (FormCheckbox)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5185 */;
 import IconDefault from "Icon" /* 5188 */;

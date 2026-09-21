@@ -1,13 +1,13 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 16932
+// Function ID: 16933
 // Name: useSortedMemberApplications
-// Dependencies: [19, 5754, 504, 4580, 2]
+// Dependencies: [19, 5759, 504, 4580, 2]
 // Exports: useSortedMemberApplications
 
-// Module 16926 (useSortedMemberApplications)
+// Module 16932 (useSortedMemberApplications)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
 import noop from "module_19" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5754 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5759 */;
 
 require = fn;
 const size = fn(2);

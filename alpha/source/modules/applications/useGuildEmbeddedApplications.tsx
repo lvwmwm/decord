@@ -1,12 +1,12 @@
-// Module ID: 9828
-// Function ID: 9829
+// Module ID: 9829
+// Function ID: 9830
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 4983, 1074, 504, 1091, 1370, 7403, 2]
+// Dependencies: [5, 19, 4983, 1074, 504, 1091, 1370, 7408, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 9828 (useGuildEmbeddedApplications)
+// Module 9829 (useGuildEmbeddedApplications)
 import DurationsDefault from "Durations" /* 1091 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7403 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7408 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 4983 */;

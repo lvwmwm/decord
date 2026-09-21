@@ -1,12 +1,12 @@
-// Module ID: 17936
-// Function ID: 17937
+// Module ID: 17947
+// Function ID: 17948
 // Name: RuleRow
-// Dependencies: [19, 17, 12115, 21, 4756, 576, 17937, 4752, 4457, 17939, 17934, 17933, 5186, 1115, 5817, 2]
+// Dependencies: [19, 17, 12117, 21, 4756, 576, 17948, 4752, 4457, 17950, 17945, 17944, 5186, 1115, 5822, 2]
 // Exports: default
 
-// Module 17936 (RuleRow)
+// Module 17947 (RuleRow)
 import nativeDefault from "native" /* 576 */;
-import getActionInfo from "getActionInfo" /* 17937 */;
+import getActionInfo from "getActionInfo" /* 17948 */;
 import noop from "module_19" /* 19 */;
 
 const Text_Text = tmp2(4752);
@@ -39,7 +39,7 @@ function ActionPill(arg0) {
   }
 }
 const View = fn(17).View;
-const AutomodTriggerType = fn(12115).AutomodTriggerType;
+const AutomodTriggerType = fn(12117).AutomodTriggerType;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
 const createStyles = fn(4756);
@@ -59,19 +59,19 @@ export default function RuleRow(triggerType) {
   const obj = triggerType(4457);
   const token1 = triggerType(4457).useToken(nativeDefault.modules.mobile.TABLE_ROW_LABEL_COLOR);
   const obj2 = triggerType(4457);
-  const ruleInfo = triggerType(17939).getRuleInfo(triggerType, rule);
+  const ruleInfo = triggerType(17950).getRuleInfo(triggerType, rule);
   if (null == ruleInfo) {
     return null;
   } else {
     ({ headerText, headerSubtext, icon, descriptionText } = ruleInfo);
     if (null != rule) {
-      const ruleActionsInOrder = tmp2(17934).getRuleActionsInOrder(rule);
+      const ruleActionsInOrder = tmp2(17945).getRuleActionsInOrder(rule);
       let mapped = ruleActionsInOrder.map((actionType) => hasOwnProperty(ActionPill, { actionType: actionType.type, action: actionType, triggerType }, actionType.type));
-      const tmp2Result = tmp2(17934);
+      const tmp2Result = tmp2(17945);
     } else {
-      const availableActionTypes = tmp2(17933).getAvailableActionTypes(triggerType);
+      const availableActionTypes = tmp2(17944).getAvailableActionTypes(triggerType);
       mapped = availableActionTypes.map((actionType) => hasOwnProperty(ActionPill, { actionType, triggerType }, actionType));
-      const tmp2Result2 = tmp2(17933);
+      const tmp2Result2 = tmp2(17944);
     }
     let tmp7 = null;
     if (mapped.length > 0) {
@@ -101,7 +101,7 @@ export default function RuleRow(triggerType) {
         const obj8 = { text: null };
         const intl = tmp2(1115).intl;
         obj8.text = intl.string(tmp2(1115).t.Yl1D84);
-        tmp14 = closure_5(tmp2(5817).TableRow.TrailingText, obj8);
+        tmp14 = closure_5(tmp2(5822).TableRow.TrailingText, obj8);
       }
       let tmp19 = headerText;
       if ("" !== headerSubtext) {
@@ -115,11 +115,11 @@ export default function RuleRow(triggerType) {
       const obj11 = { label: tmp19, subLabel: tmp10, icon: null, trailing: null, arrow: null, onPress: null };
       const obj12 = {};
       const merged = Object.assign(icon);
-      obj11.icon = closure_5(tmp2(5817).TableRow.Icon, obj12);
+      obj11.icon = closure_5(tmp2(5822).TableRow.Icon, obj12);
       obj11.trailing = tmp14;
       obj11.arrow = null != rule;
       obj11.onPress = onPress;
-      return closure_5(tmp2(5817).TableRow, obj11);
+      return closure_5(tmp2(5822).TableRow, obj11);
     }
   }
 };

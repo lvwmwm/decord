@@ -1,10 +1,10 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9568
+// Function ID: 9569
 // Name: getShelfItemData
 // Dependencies: [4983, 2]
 // Exports: default
 
-// Module 9567 (getShelfItemData)
+// Module 9568 (getShelfItemData)
 import ApplicationStore from "ApplicationStore" /* 4983 */;
 
 const size = fn(2);

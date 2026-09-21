@@ -1,10 +1,10 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 5318
+// Function ID: 5319
 // Name: VoiceNormalSpoilerIcon
 // Dependencies: [19, 21, 576, 4456, 5253, 2]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 5311 (VoiceNormalSpoilerIcon)
+// Module 5318 (VoiceNormalSpoilerIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5253 from "module_5253" /* 5253 */;

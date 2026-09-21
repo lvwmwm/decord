@@ -1,12 +1,12 @@
-// Module ID: 7370
-// Function ID: 7371
+// Module ID: 7375
+// Function ID: 7376
 // Name: Emoji
-// Dependencies: [19, 17, 1182, 21, 1364, 4413, 1177, 5799, 4607, 7371, 7372, 2]
+// Dependencies: [19, 17, 1182, 21, 1364, 4413, 1177, 5804, 4607, 7376, 7377, 2]
 // Exports: default
 
-// Module 7370 (Emoji)
+// Module 7375 (Emoji)
 import EmojiUtilsDefault from "EmojiUtils" /* 4413 */;
-import FastImageDefault from "FastImage" /* 5799 */;
+import FastImageDefault from "FastImage" /* 5804 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -33,9 +33,9 @@ export default function Emoji(arg0) {
         const obj4 = { resizeMode: "contain", style: fastImageStyle, placeholder: null, source: null, onError: null };
         const tmp10 = FastImageDefault;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          let tmp9Result = tmp9(7371);
+          let tmp9Result = tmp9(7376);
         } else {
-          tmp9Result = tmp9(7372);
+          tmp9Result = tmp9(7377);
         }
         obj4.placeholder = tmp9Result;
         const obj5 = { uri: uRL };

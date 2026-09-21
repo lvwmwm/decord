@@ -1,8 +1,8 @@
-// Module ID: 6326
-// Function ID: 6327
+// Module ID: 6331
+// Function ID: 6332
 // Dependencies: [2]
 
-// Module 6326
+// Module 6331
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameServerAbstractUI-2x.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 10617
+// Function ID: 10618
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 1074, 4756, 576, 7302, 2]
+// Dependencies: [19, 1074, 4756, 576, 7307, 2]
 // Exports: default
 
-// Module 10616 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 10617 (useExpressionPickerCategoriesPlaceholderConfig)
 import nativeDefault from "native" /* 576 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7302 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7307 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

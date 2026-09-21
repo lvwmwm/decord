@@ -1,12 +1,12 @@
-// Module ID: 9551
-// Function ID: 9552
+// Module ID: 9552
+// Function ID: 9553
 // Name: BotTag
-// Dependencies: [19, 17, 1349, 21, 4756, 576, 1115, 9552, 4752, 2]
+// Dependencies: [19, 17, 1349, 21, 4756, 576, 1115, 9553, 4752, 2]
 
-// Module 9551 (BotTag)
+// Module 9552 (BotTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 9552 */;
+import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 9553 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

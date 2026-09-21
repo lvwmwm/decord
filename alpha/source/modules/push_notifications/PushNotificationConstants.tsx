@@ -1,10 +1,10 @@
-// Module ID: 6832
-// Function ID: 6833
+// Module ID: 6837
+// Function ID: 6838
 // Name: PushNotificationConstants
 // Dependencies: [1363, 1609, 1364, 2]
 // Exports: getDevicePushProvider
 
-// Module 6832 (PushNotificationConstants)
+// Module 6837 (PushNotificationConstants)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ClientInfoUtils_mod from "ClientInfoUtils" /* 1363 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1609 */;

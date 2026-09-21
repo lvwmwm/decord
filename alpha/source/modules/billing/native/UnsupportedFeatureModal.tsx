@@ -1,10 +1,10 @@
-// Module ID: 11086
-// Function ID: 11087
+// Module ID: 11087
+// Function ID: 11088
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 7240, 5836, 4959, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 7245, 5841, 4959, 4752, 1115, 2]
 // Exports: default
 
-// Module 11086 (UnsupportedFeatureModal)
+// Module 11087 (UnsupportedFeatureModal)
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   let obj2 = { Unsupported: null };
   const obj3 = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5836).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5841).getHeaderCloseButton(() => {
       ModalActionCreatorsDefault.pop();
       if (onDismiss != null) {
         onDismiss();
@@ -37,5 +37,5 @@ export default function UnsupportedFeatureModal(onDismiss) {
   };
   obj2.Unsupported = obj3;
   obj.screens = obj2;
-  return jsx(onDismiss(7240).Navigator, { initialRouteName: "Unsupported", screens: null });
+  return jsx(onDismiss(7245).Navigator, { initialRouteName: "Unsupported", screens: null });
 };

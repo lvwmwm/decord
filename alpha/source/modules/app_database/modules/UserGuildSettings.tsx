@@ -1,9 +1,9 @@
-// Module ID: 7731
-// Function ID: 7732
+// Module ID: 7733
+// Function ID: 7734
 // Name: UserGuildSettings
 // Dependencies: [5, 4937, 3, 2070, 12, 2]
 
-// Module 7731 (UserGuildSettings)
+// Module 7733 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;

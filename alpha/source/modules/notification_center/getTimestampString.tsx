@@ -1,10 +1,10 @@
-// Module ID: 7876
-// Function ID: 7877
+// Module ID: 7878
+// Function ID: 7879
 // Name: notification_center/getTimestampString
 // Dependencies: [1115, 4348, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 7876 (notification_center/getTimestampString)
+// Module 7878 (notification_center/getTimestampString)
 import util from "util" /* 1115 */;
 import _modDef4348 from "module_4348" /* 4348 */;
 import size from "module_2" /* 2 */;

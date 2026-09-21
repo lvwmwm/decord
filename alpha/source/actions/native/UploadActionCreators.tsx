@@ -1,12 +1,12 @@
-// Module ID: 11998
-// Function ID: 11999
+// Module ID: 12000
+// Function ID: 12001
 // Name: UploadActionCreators
-// Dependencies: [5105, 8078, 573, 2]
+// Dependencies: [5105, 8080, 573, 2]
 
-// Module 11998 (UploadActionCreators)
+// Module 12000 (UploadActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DraftStore from "DraftStore" /* 5105 */;
-import UploadStore from "UploadStore" /* 8078 */;
+import UploadStore from "UploadStore" /* 8080 */;
 
 const DraftType = fn(5105).DraftType;
 const size = fn(2);

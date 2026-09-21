@@ -1,27 +1,27 @@
-// Module ID: 17541
-// Function ID: 17542
+// Module ID: 17552
+// Function ID: 17553
 // Name: VoicePanelPIPUtils
-// Dependencies: [4772, 4778, 502, 12524, 17542, 4777, 12525, 9709, 14248, 576, 2]
+// Dependencies: [4772, 4778, 502, 12526, 17553, 4777, 12527, 9710, 14254, 576, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
 
-// Module 17541 (VoicePanelPIPUtils)
+// Module 17552 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 576 */;
-import participantHasVideo from "participantHasVideo" /* 9709 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 14248 */;
+import participantHasVideo from "participantHasVideo" /* 9710 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 14254 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const VoicePanelConstants = fn(12524);
+const VoicePanelConstants = fn(12526);
 const SECONDARY_PIP_TOP_MARGIN = VoicePanelConstants.SECONDARY_PIP_TOP_MARGIN;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
-const VoicePanelPIPConstants = fn(17542);
+const VoicePanelPIPConstants = fn(17553);
 ({ VoicePanelPIPModes: closure_7, PIPReferenceDimensions } = VoicePanelPIPConstants);
 const SquarePIPReferenceDimensions = VoicePanelPIPConstants.SquarePIPReferenceDimensions;
 const SquareActivityPIPReferenceDimensions = VoicePanelPIPConstants.SquareActivityPIPReferenceDimensions;
 const ParticipantTypes = fn(4777).ParticipantTypes;
-const MorphablePanelConstants = fn(12525);
+const MorphablePanelConstants = fn(12527);
 const MIN_PIP_TOSS_VELOCITY = MorphablePanelConstants.MIN_PIP_TOSS_VELOCITY;
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;
 const set = new Set();

@@ -1,23 +1,23 @@
-// Module ID: 10313
-// Function ID: 10314
+// Module ID: 10314
+// Function ID: 10315
 // Name: CallTile
-// Dependencies: [19, 17, 4778, 1372, 9639, 4777, 21, 4756, 4605, 576, 7402, 1612, 504, 4957, 8447, 9682, 10280, 9710, 9718, 10314, 10319, 10320, 9362, 10059, 10321, 1177, 9647, 4492, 4757, 10322, 2]
+// Dependencies: [19, 17, 4778, 1372, 9640, 4777, 21, 4756, 4605, 576, 7407, 1612, 504, 4957, 8448, 9683, 10281, 9711, 9719, 10315, 10320, 10321, 9363, 10060, 10322, 1177, 9648, 4492, 4757, 10323, 2]
 
-// Module 10313 (CallTile)
+// Module 10314 (CallTile)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4957 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
-import _modDef9362 from "module_9362" /* 9362 */;
-import _modDef10059 from "module_10059" /* 10059 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 10314 */;
-import _modDef10319 from "module_10319" /* 10319 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import _modDef9363 from "module_9363" /* 9363 */;
+import _modDef10060 from "module_10060" /* 10060 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 10315 */;
 import _modDef10320 from "module_10320" /* 10320 */;
 import _modDef10321 from "module_10321" /* 10321 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 10322 */;
+import _modDef10322 from "module_10322" /* 10322 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 10323 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -47,17 +47,17 @@ class StreamPreviewTile {
 function ParticipantIcon(participant) {
   participant = participant.participant;
   if (participant.type === constants.STREAM) {
-    let tmp3 = _modDef10319;
+    let tmp3 = _modDef10320;
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = _modDef10320;
-    } else if (tmp19.XBOX === voicePlatform) {
-      tmp3 = _modDef9362;
-    } else if (tmp19.PLAYSTATION === voicePlatform) {
-      tmp3 = _modDef10059;
-    } else if (tmp19.QUEST === voicePlatform) {
       tmp3 = _modDef10321;
+    } else if (tmp19.XBOX === voicePlatform) {
+      tmp3 = _modDef9363;
+    } else if (tmp19.PLAYSTATION === voicePlatform) {
+      tmp3 = _modDef10060;
+    } else if (tmp19.QUEST === voicePlatform) {
+      tmp3 = _modDef10322;
     }
   }
   let tmp14 = null;
@@ -151,7 +151,7 @@ class TileOverlay {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ChannelCallStore = fn(9639);
+const ChannelCallStore = fn(9640);
 ({ resetFocus: closure_8, toggleFocus: closure_9 } = ChannelCallStore);
 const CallConstants = fn(4777);
 ({ ParticipantTypes: c10, isStreamParticipant: closure_11, VoicePlatforms: closure_12 } = CallConstants);

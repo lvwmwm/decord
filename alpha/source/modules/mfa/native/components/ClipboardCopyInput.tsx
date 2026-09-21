@@ -1,10 +1,10 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 15958
+// Function ID: 15959
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1979, 1074, 21, 4756, 504, 7202, 7278, 7429, 6843, 2]
+// Dependencies: [5, 19, 17, 1979, 1074, 21, 4756, 504, 7207, 7283, 7434, 6848, 2]
 // Exports: default
 
-// Module 15952 (ClipboardCopyInput)
+// Module 15958 (ClipboardCopyInput)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1979 */;

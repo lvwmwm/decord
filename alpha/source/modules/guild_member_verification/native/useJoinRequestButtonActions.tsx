@@ -1,10 +1,10 @@
-// Module ID: 12884
-// Function ID: 12885
+// Module ID: 12886
+// Function ID: 12887
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2041, 1074, 21, 4454, 1115, 7487, 4723, 5753, 4580, 4715, 576, 12885, 1980, 2]
+// Dependencies: [5, 32, 19, 2041, 1074, 21, 4454, 1115, 7489, 4723, 5758, 4580, 4715, 576, 12887, 1980, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12884 (useJoinRequestButtonActions)
+// Module 12886 (useJoinRequestButtonActions)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -269,8 +269,8 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
       const _HermesInternal = HermesInternal;
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { joinRequest, onError, onDismiss };
-      obj.openLazy(asyncRequireImpl(12885, dependencyMap.paths), "RejectionReason-" + joinRequestId, obj2);
-      const tmp9 = asyncRequireImpl(12885, dependencyMap.paths);
+      obj.openLazy(asyncRequireImpl(12887, dependencyMap.paths), "RejectionReason-" + joinRequestId, obj2);
+      const tmp9 = asyncRequireImpl(12887, dependencyMap.paths);
     }
   }, items2);
   obj2.submitting = submitting;

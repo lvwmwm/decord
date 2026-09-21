@@ -1,10 +1,10 @@
-// Module ID: 7547
-// Function ID: 7548
+// Module ID: 7549
+// Function ID: 7550
 // Name: ForumUtils
-// Dependencies: [2041, 2063, 4771, 7513, 2048, 1115, 2050, 2]
+// Dependencies: [2041, 2063, 4771, 7515, 2048, 1115, 2050, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 7547 (ForumUtils)
+// Module 7549 (ForumUtils)
 import util from "util" /* 1115 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2050 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -18,7 +18,7 @@ function getCreationDefaultFormatter() {
   time.month = intl.string(util.t["nBNJ/L"]);
   return time;
 }
-const ForumTimestampFormats = fn(7513).ForumTimestampFormats;
+const ForumTimestampFormats = fn(7515).ForumTimestampFormats;
 const ChannelFlags = fn(2048).ChannelFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/ForumUtils.tsx");

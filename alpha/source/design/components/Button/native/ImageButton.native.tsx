@@ -1,9 +1,9 @@
-// Module ID: 10145
-// Function ID: 10146
+// Module ID: 10146
+// Function ID: 10147
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 4756, 5191, 576, 5192, 4492, 5185, 5189, 5194, 8179, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 5191, 576, 5192, 4492, 5185, 5189, 5194, 8180, 4752, 2]
 
-// Module 10145 (ImageButton)
+// Module 10146 (ImageButton)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;

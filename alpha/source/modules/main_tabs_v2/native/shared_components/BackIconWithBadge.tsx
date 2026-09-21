@@ -1,17 +1,17 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 16742
+// Function ID: 16743
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7870, 21, 4756, 576, 504, 16727, 1177, 9093, 1365, 5840, 5892, 4708, 2]
+// Dependencies: [19, 17, 7872, 21, 4756, 576, 504, 16733, 1177, 9094, 1365, 5845, 5897, 4708, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 16736 (BackIconWithBadge)
+// Module 16742 (BackIconWithBadge)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import XLargeIcon from "XLargeIcon" /* 4708 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5840 */;
-import ClipView from "ClipView" /* 9093 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5845 */;
+import ClipView from "ClipView" /* 9094 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7870 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7872 */;
 
 require = fn;
 function IconWithBadge(includeNotificationsCount) {
@@ -30,7 +30,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(16727)().value;
+    num2 = memo(16733)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -68,7 +68,7 @@ function IconWithBadge(includeNotificationsCount) {
     items4 = [];
   }
   const obj4 = { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, { size: "md", style: tmp.backIcon, color: "interactive-text-default" }) };
-  const items5 = [closure_6(tmp5(9093), obj4), ];
+  const items5 = [closure_6(tmp5(9094), obj4), ];
   let tmp9Result = null;
   if (sum > 0) {
     const obj6 = { style: tmp.badgeWrapper, children: null };
@@ -100,10 +100,10 @@ export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navi
   const items = [navigation];
   const obj = { includeNotificationsCount: flag, Icon: null };
   if (noop.useMemo(() => navigation.getState().index > 0, items)) {
-    obj.Icon = tmp3(5840).ArrowLargeLeftIcon;
+    obj.Icon = tmp3(5845).ArrowLargeLeftIcon;
     let tmp5 = obj;
   } else {
-    obj.Icon = tmp3(5892).XSmallIcon;
+    obj.Icon = tmp3(5897).XSmallIcon;
     tmp5 = obj;
   }
   return timestampProducer(IconWithBadge, tmp5);

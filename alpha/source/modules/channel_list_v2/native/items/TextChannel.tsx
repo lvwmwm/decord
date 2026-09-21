@@ -1,15 +1,15 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16564
+// Function ID: 16565
 // Name: TextChannel
-// Dependencies: [19, 17, 2040, 2097, 2041, 4395, 4771, 4937, 10373, 21, 4756, 576, 16450, 5286, 5239, 12631, 504, 5219, 4769, 4767, 1113, 11176, 16449, 9599, 4909, 4752, 5801, 10421, 9183, 9866, 16559, 16560, 16567, 2]
+// Dependencies: [19, 17, 2040, 2097, 2041, 4395, 4771, 4937, 10374, 21, 4756, 576, 16456, 5293, 5239, 12633, 504, 5219, 4769, 4767, 1113, 11177, 16455, 9600, 4909, 4752, 5806, 10422, 9184, 9867, 16565, 16566, 16573, 2]
 
-// Module 16558 (TextChannel)
+// Module 16564 (TextChannel)
 import nativeDefault from "native" /* 576 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1113 */;
 import transitionToChannel from "transitionToChannel" /* 4767 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
 import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5219 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11176 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11177 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
 import GatedChannelStore from "GatedChannelStore" /* 2097 */;
@@ -20,7 +20,7 @@ import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
 
 require = fn;
 const View = fn(17).View;
-const RedesignChannelListConstants = fn(10373);
+const RedesignChannelListConstants = fn(10374);
 ({ CHANNEL_MARGIN_VERTICAL: closure_11, CHANNEL_TITLE_LINE_HEIGHT: closure_12 } = RedesignChannelListConstants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);

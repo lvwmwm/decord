@@ -1,16 +1,16 @@
-// Module ID: 9704
-// Function ID: 9705
+// Module ID: 9705
+// Function ID: 9706
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1074, 1374, 4781, 21, 4756, 576, 9647, 9705, 7402, 4492, 4757, 1177, 9706, 9707, 1241, 9505, 9475, 4414, 5334, 5799, 9473, 2]
+// Dependencies: [19, 17, 1074, 1374, 4781, 21, 4756, 576, 9648, 9706, 7407, 4492, 4757, 1177, 9707, 9708, 1241, 9506, 9476, 4414, 5339, 5804, 9474, 2]
 // Exports: default
 
-// Module 9704 (StreamQualityLiveIndicator)
+// Module 9705 (StreamQualityLiveIndicator)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import timing from "timing" /* 4757 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9475 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9505 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9476 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

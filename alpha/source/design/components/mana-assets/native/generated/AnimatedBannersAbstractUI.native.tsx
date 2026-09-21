@@ -1,13 +1,13 @@
-// Module ID: 5955
-// Function ID: 5956
+// Module ID: 5960
+// Function ID: 5961
 // Name: AnimatedBannersAbstractUI
-// Dependencies: [21, 5799, 5956, 2]
+// Dependencies: [21, 5804, 5961, 2]
 // Exports: AnimatedBannersAbstractUI
 
-// Module 5955 (AnimatedBannersAbstractUI)
+// Module 5960 (AnimatedBannersAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef5956 from "module_5956" /* 5956 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef5961 from "module_5961" /* 5961 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AnimatedBannersAbstractUI = function AnimatedBannersAbstractUI(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5956 };
+  const obj2 = { uri: _modDef5961 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

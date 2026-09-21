@@ -1,10 +1,10 @@
-// Module ID: 5336
-// Function ID: 5337
+// Module ID: 5341
+// Function ID: 5342
 // Name: ThemedGradient
 // Dependencies: [19, 17, 4575, 21, 4756, 4607, 4606, 4605, 1478, 5198, 4690, 576, 4610, 4574, 672, 1231, 563, 4612, 4689, 1230, 2]
 // Exports: CustomThemedGradient, default, validateColors
 
-// Module 5336 (ThemedGradient)
+// Module 5341 (ThemedGradient)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;

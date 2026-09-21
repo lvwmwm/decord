@@ -1,29 +1,29 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17059
+// Function ID: 17060
 // Name: VibegrationsNativeComposer
-// Dependencies: [5, 32, 19, 17, 4748, 17052, 13359, 1074, 21, 576, 4756, 1115, 3678, 7485, 9309, 4457, 504, 5361, 11487, 4723, 17053, 12490, 16262, 15271, 4700, 12497, 4752, 5334, 6853, 8173, 11215, 8878, 4466, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 17060, 13361, 1074, 21, 576, 4756, 1115, 3678, 5275, 9310, 4457, 504, 5366, 11489, 4723, 17061, 12492, 16268, 15277, 4700, 12499, 4752, 5339, 6858, 8174, 11216, 8879, 4466, 2]
 // Exports: default
 
-// Module 17051 (VibegrationsNativeComposer)
+// Module 17059 (VibegrationsNativeComposer)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import SendMessageIcon from "SendMessageIcon" /* 4700 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 7485 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9309 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 11215 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12490 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12497 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15271 */;
-import StopIcon from "StopIcon" /* 16262 */;
-import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17053 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9310 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11216 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12492 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12499 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15277 */;
+import StopIcon from "StopIcon" /* 16268 */;
+import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17061 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17052 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13359 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17060 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13361 */;
 
 const require = globalThis.__r;
 const VibegrationsModelSettingsSheetDefault = VibegrationsModelSettingsSheet;
@@ -41,7 +41,7 @@ function tooLargeText(contentType) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let VibegrationsConnectionStore = fn(13359);
+let VibegrationsConnectionStore = fn(13361);
 ({ deleteStagedAttachment: c10, uploadAttachmentBytes: closure_11 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
@@ -306,7 +306,7 @@ export default function VibegrationsNativeComposer(projectId) {
       if (map.length > diff) {
         let intl = tmp16(1115).intl;
         let obj = { count: null };
-        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(7485).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5275).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
         obj.count = VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
         _undefined4(intl.formatToPlainString(_modDef3678.DlX57a, obj));
         const _Math = Math;
@@ -396,10 +396,10 @@ export default function VibegrationsNativeComposer(projectId) {
             return obj4;
           } else {
             closure_128_0 = undefined;
-            const obj5 = { mediaType: "any", selectionLimit: tmp2(7485).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
+            const obj5 = { mediaType: "any", selectionLimit: tmp2(5275).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: tmp5(5361).launchImageLibraryAsync(obj5), done: false };
+            const obj6 = { value: tmp5(5366).launchImageLibraryAsync(obj5), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {

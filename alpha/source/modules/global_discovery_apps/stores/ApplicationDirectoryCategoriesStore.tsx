@@ -1,9 +1,9 @@
-// Module ID: 12323
-// Function ID: 12324
+// Module ID: 12325
+// Function ID: 12326
 // Name: ApplicationDirectoryCategoriesStore
 // Dependencies: [504, 573, 2]
 
-// Module 12323 (ApplicationDirectoryCategoriesStore)
+// Module 12325 (ApplicationDirectoryCategoriesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

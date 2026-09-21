@@ -1,21 +1,21 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17630
+// Function ID: 17631
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 2040, 9312, 2041, 2004, 9314, 9313, 21, 4756, 12523, 17545, 504, 4385, 4492, 11258, 9613, 17472, 7313, 16960, 9722, 2]
+// Dependencies: [19, 2040, 9313, 2041, 2004, 9315, 9314, 21, 4756, 12525, 17556, 504, 4385, 4492, 11259, 9614, 17483, 7318, 16967, 9723, 2]
 // Exports: default
 
-// Module 17619 (VoicePanelSecondaryPIPContent)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11258 */;
-import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 17472 */;
+// Module 17630 (VoicePanelSecondaryPIPContent)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11259 */;
+import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 17483 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import FramesStore from "FramesStore" /* 9312 */;
+import FramesStore from "FramesStore" /* 9313 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = fn;
 const ActivityLayoutMode = fn(2004).ActivityLayoutMode;
-const ActivityPanelModes = fn(9314).ActivityPanelModes;
-const FramesConstants = fn(9313);
+const ActivityPanelModes = fn(9315).ActivityPanelModes;
+const FramesConstants = fn(9314);
 ({ asLaunched: closure_9, FrameLayoutModes: c10, getPipOrientationLockStateForFrame: closure_11 } = FramesConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);

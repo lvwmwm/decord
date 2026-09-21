@@ -1,12 +1,12 @@
-// Module ID: 10471
-// Function ID: 10472
+// Module ID: 10472
+// Function ID: 10473
 // Name: BugReportManager
-// Dependencies: [5, 17, 1346, 1074, 4965, 1364, 10350, 10352, 1255, 7358, 10472, 2]
+// Dependencies: [5, 17, 1346, 1074, 4965, 1364, 10351, 10353, 1255, 7363, 10473, 2]
 
-// Module 10471 (BugReportManager)
+// Module 10472 (BugReportManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 const require = fn;
 function showNotification(uri) {
@@ -130,10 +130,10 @@ function showNotification(uri) {
             }
             closure_128_0 = tmp7;
             BUG_REPORTER = constants.BUG_REPORTER;
-            notificationDuration = tmp2(10350).getNotificationDuration(BUG_REPORTER);
-            const obj5 = tmp2(10350);
+            notificationDuration = tmp2(10351).getNotificationDuration(BUG_REPORTER);
+            const obj5 = tmp2(10351);
             const obj11 = { type: BUG_REPORTER, duration: notificationDuration, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
-            const obj6 = tmp3(10352);
+            const obj6 = tmp3(10353);
             obj11.key = tmp2(1255).v4();
             obj11.image = closure_128_0;
             uri = undefined;

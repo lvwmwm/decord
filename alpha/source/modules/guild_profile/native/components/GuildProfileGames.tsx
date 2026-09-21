@@ -1,17 +1,17 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10022
+// Function ID: 10023
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 4756, 576, 8945, 8956, 10022, 4752, 10026, 4454, 4723, 10027, 1980, 5334, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 8946, 8957, 10023, 4752, 10027, 4454, 4723, 10028, 1980, 5339, 2]
 // Exports: default
 
-// Module 10021 (GuildProfileGames)
+// Module 10022 (GuildProfileGames)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8945 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8956 */;
-import components_GameIconDefault from "components/GameIcon" /* 10022 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8946 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
+import components_GameIconDefault from "components/GameIcon" /* 10023 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

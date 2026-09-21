@@ -1,9 +1,9 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10684
+// Function ID: 10685
 // Name: channel_text_area/ChannelAutocompleteConstants
 // Dependencies: [2]
 
-// Module 10683 (channel_text_area/ChannelAutocompleteConstants)
+// Module 10684 (channel_text_area/ChannelAutocompleteConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel_text_area/native/ChannelAutocompleteConstants.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 16485
-// Function ID: 16486
+// Module ID: 16491
+// Function ID: 16492
 // Name: FavoritesGuildAddActionSheet
-// Dependencies: [19, 21, 4723, 16486, 10481, 10484, 11241, 7437, 7389, 1115, 7439, 3324, 13004, 16487, 2]
+// Dependencies: [19, 21, 4723, 16492, 10482, 10485, 11242, 7442, 7394, 1115, 7444, 3324, 13006, 16493, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 16485 (FavoritesGuildAddActionSheet)
+// Module 16491 (FavoritesGuildAddActionSheet)
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 11241 */;
-import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 16486 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 11242 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 16492 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -27,7 +27,7 @@ function FavoritesGuildAddActionSheet() {
     ActionSheetActionCreatorsDefault.hideActionSheet(FavoritesGuildAddActionSheet);
     if (shouldShowUpsell) {
       if (isAtLimit) {
-        tmp(10484)(favoriteLimit);
+        tmp(10485)(favoriteLimit);
       }
     }
     openFavoritesGuildAddChannelModalDefault({ source: "favorites_header_add_button_context_menu" });

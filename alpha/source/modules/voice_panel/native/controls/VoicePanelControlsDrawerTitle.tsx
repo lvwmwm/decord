@@ -1,23 +1,23 @@
-// Module ID: 12532
-// Function ID: 12533
+// Module ID: 12534
+// Function ID: 12535
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 12522, 21, 4756, 576, 4492, 5801, 12533, 7313, 4752, 2]
+// Dependencies: [19, 17, 12524, 21, 4756, 576, 4492, 5806, 12535, 7318, 4752, 2]
 
-// Module 12532 (VoicePanelControlsDrawerTitle)
+// Module 12534 (VoicePanelControlsDrawerTitle)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import NativeViewDefault from "NativeView" /* 5801 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 12533 */;
+import NativeViewDefault from "NativeView" /* 5806 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 12535 */;
 import noop from "module_19" /* 19 */;
 
 const Text_Text = tmp2(4752);
-const ReanimatedNativeViewDefault = tmp7(7313);
+const ReanimatedNativeViewDefault = tmp7(7318);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 const createStyles = fn(4756);
-let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: fn(12522).CONTROLS_DRAWER_HEADER_SIZE }, titlePill: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 }, titlePillBG: null };
+let obj = { titleWrapper: { position: "absolute", top: 0, left: 0, right: 0, justifyContent: "center", alignItems: "center", padding: 16, height: fn(12524).CONTROLS_DRAWER_HEADER_SIZE }, titlePill: { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 }, titlePillBG: null };
 let obj3 = { borderRadius: nativeDefault.radii.round, paddingHorizontal: 12, paddingTop: 1, paddingBottom: 2 };
 obj.titlePillBG = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);

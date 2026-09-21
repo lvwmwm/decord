@@ -1,26 +1,26 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 14979
+// Function ID: 14980
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1372, 8232, 1074, 21, 504, 4600, 12124, 4752, 11723, 1115, 14974, 2]
+// Dependencies: [19, 1372, 8233, 1074, 21, 504, 4600, 12126, 4752, 11725, 1115, 14980, 2]
 
-// Module 14973 (AccountUsernameSetting)
+// Module 14979 (AccountUsernameSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4600 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12124 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12126 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.IEpCBQ);
   },
-  parent: fn(8232).MobileUserSettings.ACCOUNT,
+  parent: fn(8233).MobileUserSettings.ACCOUNT,
   useTrailing: function useAccountUsernameSettingTrailing() {
     const items = [UserStore];
     return initialize.useStateFromStores(items, () => UserUtilsDefault.getUserTag(currentUser.getCurrentUser(), { decoration: "never" }));

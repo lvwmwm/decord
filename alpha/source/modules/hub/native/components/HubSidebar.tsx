@@ -1,15 +1,15 @@
-// Module ID: 16544
-// Function ID: 16545
+// Module ID: 16550
+// Function ID: 16551
 // Name: HubSidebar
-// Dependencies: [19, 17, 2096, 2095, 1074, 10373, 21, 4756, 576, 12631, 1177, 504, 16545, 16546, 15867, 1115, 4767, 13004, 12560, 4692, 10075, 2]
+// Dependencies: [19, 17, 2096, 2095, 1074, 10374, 21, 4756, 576, 12633, 1177, 504, 16551, 16552, 15873, 1115, 4767, 13006, 12562, 4692, 10076, 2]
 // Exports: default
 
-// Module 16544 (HubSidebar)
+// Module 16550 (HubSidebar)
 import nativeDefault from "native" /* 576 */;
 import transitionToChannel from "transitionToChannel" /* 4767 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10075 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12560 */;
-import BaseChannelItem from "BaseChannelItem" /* 12631 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10076 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12562 */;
+import BaseChannelItem from "BaseChannelItem" /* 12633 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
@@ -30,8 +30,8 @@ function HubItem(arg0) {
   }
   const obj = { style: closure_9().container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: null, icon: null, channelInfo: null };
   const tmp = closure_9();
-  obj.name = React5(tmp5(12631).BaseChannelName, { name: label, mode: DEFAULT });
-  obj.icon = React5(tmp5(12631).BaseChannelIcon, { mode: DEFAULT, IconComponent });
+  obj.name = React5(tmp5(12633).BaseChannelName, { name: label, mode: DEFAULT });
+  obj.icon = React5(tmp5(12633).BaseChannelIcon, { mode: DEFAULT, IconComponent });
   let tmp6Result = null;
   if (null != unreadCount) {
     const obj2 = { value: unreadCount };
@@ -45,7 +45,7 @@ const InstantInviteSources = fn(1074).InstantInviteSources;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);
-let obj2 = { container: { marginVertical: fn(10373).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md }, row: { flex: 1 } };
+let obj2 = { container: { marginVertical: fn(10374).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md }, row: { flex: 1 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/hub/native/components/HubSidebar.tsx");
@@ -68,7 +68,7 @@ export default function HubSidebar(guild) {
     }
     return tmp2;
   });
-  guild(16545);
+  guild(16551);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -77,8 +77,8 @@ export default function HubSidebar(guild) {
     }
     const obj4 = { style: row, children: null };
     const obj5 = { guild };
-    const items4 = [closure_7(stateFromStores(16546), obj5), , , ];
-    const obj6 = { active: stateFromStores1, IconComponent: tmp(15867).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
+    const items4 = [closure_7(stateFromStores(16552), obj5), , , ];
+    const obj6 = { active: stateFromStores1, IconComponent: tmp(15873).CompassIcon, label: null, handleItemClick: null, unreadCount: null };
     const intl = tmp(1115).intl;
     obj6.label = intl.string(tmp(1115).t.K50GHd);
     obj6.handleItemClick = function handleItemClick() {
@@ -86,7 +86,7 @@ export default function HubSidebar(guild) {
     };
     obj6.unreadCount = tmp7;
     items4[1] = closure_7(HubItem, obj6);
-    const obj7 = { IconComponent: tmp(13004).PlusMediumIcon, label: null, handleItemClick: null };
+    const obj7 = { IconComponent: tmp(13006).PlusMediumIcon, label: null, handleItemClick: null };
     const intl2 = tmp(1115).intl;
     obj7.label = intl2.string(tmp(1115).t.emRpdS);
     obj7.handleItemClick = function handleItemClick() {

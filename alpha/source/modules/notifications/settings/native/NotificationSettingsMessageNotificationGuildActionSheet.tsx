@@ -1,13 +1,13 @@
-// Module ID: 10416
-// Function ID: 10417
+// Module ID: 10417
+// Function ID: 10418
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [19, 4937, 1074, 4938, 1084, 21, 10411, 10417, 1115, 10404, 7359, 7354, 2]
+// Dependencies: [19, 4937, 1074, 4938, 1084, 21, 10412, 10418, 1115, 10405, 7364, 7359, 2]
 // Exports: default
 
-// Module 10416 (NotificationSettingsMessageNotificationGuildActionSheet)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7354 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7359 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10404 */;
+// Module 10417 (NotificationSettingsMessageNotificationGuildActionSheet)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7359 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7364 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10405 */;
 import noop from "module_19" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
 
@@ -49,5 +49,5 @@ export default function NotificationSettingsMessageNotificationGuildActionSheet(
     const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
     const result = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.notifications(message_notifications));
   };
-  return tmp4(unread(10417), obj2);
+  return tmp4(unread(10418), obj2);
 };

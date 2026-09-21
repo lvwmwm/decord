@@ -1,11 +1,11 @@
-// Module ID: 9009
-// Function ID: 9010
+// Module ID: 9010
+// Function ID: 9011
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4756, 8956, 1115, 4752, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 8957, 1115, 4752, 2]
 // Exports: default
 
-// Module 9009 (GameProfileSummary)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8956 */;
+// Module 9010 (GameProfileSummary)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 6353
-// Function ID: 6354
+// Module ID: 6358
+// Function ID: 6359
 // Name: GemRightBackward3dIllustration
-// Dependencies: [21, 5799, 6354, 2]
+// Dependencies: [21, 5804, 6359, 2]
 // Exports: GemRightBackward3dIllustration
 
-// Module 6353 (GemRightBackward3dIllustration)
+// Module 6358 (GemRightBackward3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6354 from "module_6354" /* 6354 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6359 from "module_6359" /* 6359 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GemRightBackward3dIllustration = function GemRightBackward3dIllustr
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6354 };
+  const obj2 = { uri: _modDef6359 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

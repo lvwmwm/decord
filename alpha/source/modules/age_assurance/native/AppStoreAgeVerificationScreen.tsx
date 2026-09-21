@@ -1,13 +1,13 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 8842
+// Function ID: 8843
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5084, 5089, 1484, 4968, 8842, 8845, 8710, 8844, 8692, 8693, 5184, 4752, 1115, 3034, 5645, 5186, 8683, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5084, 5089, 1484, 4968, 8843, 8846, 8711, 8845, 8693, 8694, 5184, 4752, 1115, 3034, 5650, 5186, 8684, 2]
 // Exports: default
 
-// Module 8841 (AppStoreAgeVerificationScreen)
+// Module 8842 (AppStoreAgeVerificationScreen)
 import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
 import MetricEvents from "MetricEvents" /* 5089 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8683 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -228,12 +228,12 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       callback();
     };
     obj7.children = tmp10(tmp(5186).Button, obj8);
-    items4[1] = tmp10(tmp(5645).ButtonGroup, obj7);
+    items4[1] = tmp10(tmp(5650).ButtonGroup, obj7);
     obj5.children = items4;
     tmp15 = closure_9(closure_8, obj5);
   }
   let obj9 = { children: null };
   let obj2 = modalSessionId(4968);
-  obj9.children = closure_7(modalSessionId(8693).ModalContent, { children: closure_7(modalSessionId(5184).Stack, { align: "center", justify: "center", spacing: 16, children: tmp15 }) });
-  return closure_7(modalSessionId(8692).ModalScreen, obj9);
+  obj9.children = closure_7(modalSessionId(8694).ModalContent, { children: closure_7(modalSessionId(5184).Stack, { align: "center", justify: "center", spacing: 16, children: tmp15 }) });
+  return closure_7(modalSessionId(8693).ModalScreen, obj9);
 };

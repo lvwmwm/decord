@@ -1,10 +1,10 @@
-// Module ID: 14176
-// Function ID: 14177
+// Module ID: 14182
+// Function ID: 14183
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1372, 8201, 21, 4756, 576, 504, 4908, 1397, 14177, 4752, 1115, 5184, 10415, 10012, 14178, 14222, 5186, 5819, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 8202, 21, 4756, 576, 504, 4908, 1397, 14183, 4752, 1115, 5184, 10416, 10013, 14184, 14228, 5186, 5824, 2]
 // Exports: default
 
-// Module 14176 (GuildSettingsServerTagPreview)
+// Module 14182 (GuildSettingsServerTagPreview)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -14,7 +14,7 @@ import UserStore from "UserStore" /* 1372 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const GuildTagBadgeSize = fn(8201).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8202).GuildTagBadgeSize;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
 const createStyles = fn(4756);
@@ -103,7 +103,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
             dependencyMap(true);
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp2(14177).adoptGuildIdentity(guildId, true), done: false };
+            const obj5 = { value: tmp2(14183).adoptGuildIdentity(guildId, true), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -148,7 +148,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   obj6.style = items3;
   const tmp10 = _slicedToArray(noop.useState(false), 2);
   const tmp14 = closure_12;
-  const items4 = [closure_10(closure_6, { source: onAdopted(10415), style: tmp.avatar, importantForAccessibility: "no" }), ];
+  const items4 = [closure_10(closure_6, { source: onAdopted(10416), style: tmp.avatar, importantForAccessibility: "no" }), ];
   const obj8 = { style: tmp.messageBody, children: null };
   const items5 = [closure_10(guildId(4752).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" }), ];
   const obj9 = { variant: "text-md/normal", color: "text-default", children: null };
@@ -174,10 +174,10 @@ export default function GuildSettingsServerTagPreview(guildId) {
     if (null != badge) {
       const size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
       ({ SIZE_12: obj16.width, SIZE_12: obj16.height } = GuildTagBadgeSize);
-      tmp15Result = tmp15(tmp2(14178).GuildBadge, size);
+      tmp15Result = tmp15(tmp2(14184).GuildBadge, size);
     }
     obj14.guildBadge = tmp15Result;
-    tmp15Result3 = tmp15(tmp2(10012).BaseGuildTagChiplet, obj14);
+    tmp15Result3 = tmp15(tmp2(10013).BaseGuildTagChiplet, obj14);
   }
   items8[1] = tmp15Result3;
   obj13.children = items8;
@@ -195,9 +195,9 @@ export default function GuildSettingsServerTagPreview(guildId) {
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
   obj17.style = items10;
   const obj11 = { source, style: tmp.avatar, importantForAccessibility: "no" };
-  const obj7 = { source: onAdopted(10415), style: tmp.avatar, importantForAccessibility: "no" };
+  const obj7 = { source: onAdopted(10416), style: tmp.avatar, importantForAccessibility: "no" };
   const tmp18 = closure_6;
-  const items11 = [closure_10(tmp18, { source: onAdopted(14222), style: tmp.avatar, importantForAccessibility: "no" }), ];
+  const items11 = [closure_10(tmp18, { source: onAdopted(14228), style: tmp.avatar, importantForAccessibility: "no" }), ];
   const obj19 = { style: tmp.messageBody, children: null };
   const items12 = [closure_10(guildId(4752).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" }), ];
   const obj20 = { variant: "text-md/normal", color: "text-default", children: null };
@@ -235,7 +235,7 @@ export default function GuildSettingsServerTagPreview(guildId) {
   let tmp15Result4 = tmp13Result;
   if ("plain" !== variant) {
     const obj23 = { variant: "secondary", radius: 16, style: tmp.card, children: tmp13Result };
-    tmp15Result4 = tmp15(tmp2(5819).Card, obj23);
+    tmp15Result4 = tmp15(tmp2(5824).Card, obj23);
   }
   return tmp15Result4;
 };

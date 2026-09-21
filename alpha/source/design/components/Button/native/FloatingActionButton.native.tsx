@@ -1,10 +1,10 @@
-// Module ID: 9190
-// Function ID: 9191
+// Module ID: 9191
+// Function ID: 9192
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 4756, 576, 5191, 4492, 5185, 8179, 2]
+// Dependencies: [19, 21, 4756, 576, 5191, 4492, 5185, 8180, 2]
 // Exports: FloatingActionButton
 
-// Module 9190 (FloatingActionButton)
+// Module 9191 (FloatingActionButton)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5185 */;
 import ButtonConstants from "ButtonConstants" /* 5191 */;
@@ -70,6 +70,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   }
   obj6.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = tmp2);
-  obj3.children = jsx(positionBottom(8179).BaseIconButton, {});
+  obj3.children = jsx(positionBottom(8180).BaseIconButton, {});
   return jsx(positionRight(4492).View, { style: animatedStyle, children: null });
 };

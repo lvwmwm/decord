@@ -1,16 +1,16 @@
-// Module ID: 9864
-// Function ID: 9865
+// Module ID: 9865
+// Function ID: 9866
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 2041, 1074, 21, 4756, 576, 1364, 504, 4909, 9789, 9865, 4752, 1115, 9866, 1177, 9867, 9788, 7363, 9868, 5186, 9752, 5109, 9884, 1980, 2]
+// Dependencies: [19, 17, 2041, 1074, 21, 4756, 576, 1364, 504, 4909, 9790, 9866, 4752, 1115, 9867, 1177, 9868, 9789, 7368, 9869, 5186, 9753, 5109, 9885, 1980, 2]
 // Exports: default
 
-// Module 9864 (EditGuildEventPreview)
+// Module 9865 (EditGuildEventPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9788 */;
-import guildEventDetailsParser from "guildEventDetailsParser" /* 9867 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9789 */;
+import guildEventDetailsParser from "guildEventDetailsParser" /* 9868 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
@@ -47,7 +47,7 @@ function PreviewBody(event) {
     const intl2 = tmp2(1115).intl;
     const obj6 = { channelName: null };
     const obj7 = { channel: stateFromStores };
-    obj6.channelName = tmp5(9866)(obj7);
+    obj6.channelName = tmp5(9867)(obj7);
     formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.sxcQPE, obj6);
   }
   obj5.accessibilityLabel = formatToPlainStringResult;

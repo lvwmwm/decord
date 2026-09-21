@@ -1,18 +1,18 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 16868
+// Function ID: 16869
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9312, 8106, 1074, 9313, 1085, 21, 4756, 4492, 16863, 16864, 5203, 4690, 4616, 16865, 4466, 4493, 5139, 16866, 1485, 16331, 4622, 16335, 6892, 4609, 16330, 9561, 573, 4623, 2]
+// Dependencies: [32, 19, 17, 9313, 8108, 1074, 9314, 1085, 21, 4756, 4492, 16869, 16870, 5203, 4690, 4616, 16871, 4466, 4493, 5139, 16872, 1485, 16337, 4622, 16341, 6897, 4609, 16336, 9562, 573, 4623, 2]
 
-// Module 16862 (MainTabsChannelScreenStack)
+// Module 16868 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import native from "native" /* 4466 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9561 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16330 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16866 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9562 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16336 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16872 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9312 */;
+import FramesStore from "FramesStore" /* 9313 */;
 
 require = fn;
 function EnabledChannelScreenNavigationTTIVisibility(children) {
@@ -90,10 +90,10 @@ function getKey(index) {
 }
 get_ActivityIndicator = fn(17);
 ({ NativeModules: hasOwnProperty, StyleSheet: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const ONYX_BORDER_WIDTH = fn(8106).ONYX_BORDER_WIDTH;
+const ONYX_BORDER_WIDTH = fn(8108).ONYX_BORDER_WIDTH;
 const Constants = fn(1074);
 ({ AnalyticsObjectTypes: closure_9, AnalyticsObjects: c10, AnalyticsSections: closure_11 } = Constants);
-const FramesConstants = fn(9313);
+const FramesConstants = fn(9314);
 ({ FrameIntent: closure_12, getChannelIdForSurface: map1 } = FramesConstants);
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);

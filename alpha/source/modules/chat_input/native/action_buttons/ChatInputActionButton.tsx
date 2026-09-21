@@ -1,14 +1,14 @@
-// Module ID: 12490
-// Function ID: 12491
+// Module ID: 12492
+// Function ID: 12493
 // Name: ChatInputActionButton
-// Dependencies: [19, 17, 21, 4756, 576, 4457, 5334, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4457, 5339, 2]
 
-// Module 12490 (ChatInputActionButton)
+// Module 12492 (ChatInputActionButton)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
 import noop from "module_19" /* 19 */;
 
-const Pressables = tmp(5334);
+const Pressables = tmp(5339);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsx = fn(21).jsx;

@@ -1,22 +1,22 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15574
+// Function ID: 15575
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1182, 8232, 504, 15438, 11723, 1115, 2]
+// Dependencies: [1182, 8233, 504, 15444, 11725, 1115, 2]
 
-// Module 15568 (SameAsDeviceThemeSetting)
+// Module 15574 (SameAsDeviceThemeSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15438 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15444 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.c445ix);
   },
-  parent: fn(8232).MobileUserSettings.APPEARANCE,
+  parent: fn(8233).MobileUserSettings.APPEARANCE,
   useValue: function useSameAsDeviceThemeValue() {
     const items = [ThemeStore];
     return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());

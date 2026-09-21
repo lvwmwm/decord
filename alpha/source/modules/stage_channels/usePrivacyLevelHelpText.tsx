@@ -1,10 +1,10 @@
-// Module ID: 10070
-// Function ID: 10071
+// Module ID: 10071
+// Function ID: 10072
 // Name: usePrivacyLevelHelpText
 // Dependencies: [4395, 1074, 2047, 1085, 504, 4400, 1086, 1115, 2108, 2]
 // Exports: default
 
-// Module 10070 (usePrivacyLevelHelpText)
+// Module 10071 (usePrivacyLevelHelpText)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4400 */;

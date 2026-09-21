@@ -1,10 +1,10 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9605
+// Function ID: 9606
 // Name: ApplicationSubscriptionsHttpApi
 // Dependencies: [5, 1074, 1271, 573, 4657, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 9604 (ApplicationSubscriptionsHttpApi)
+// Module 9605 (ApplicationSubscriptionsHttpApi)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import APIErrorDefault from "APIError" /* 4657 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

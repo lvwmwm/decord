@@ -1,14 +1,14 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12479
+// Function ID: 12480
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 5105, 5104, 1375, 21, 504, 12457, 5799, 7370, 4412, 1397, 2]
+// Dependencies: [32, 19, 17, 5105, 5104, 1375, 21, 504, 12459, 5804, 7375, 4412, 1397, 2]
 // Exports: default
 
-// Module 12477 (useRenderPollAnswerImage)
+// Module 12479 (useRenderPollAnswerImage)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import EmojiTypes from "EmojiTypes" /* 4412 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import EmojiDefault from "Emoji" /* 7370 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import EmojiDefault from "Emoji" /* 7375 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;

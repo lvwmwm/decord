@@ -1,19 +1,19 @@
-// Module ID: 13885
-// Function ID: 13886
+// Module ID: 13891
+// Function ID: 13892
 // Name: collectCallFeedback
-// Dependencies: [9917, 2041, 1992, 4779, 2095, 1372, 9904, 4936, 9921, 9918, 573, 2]
+// Dependencies: [9918, 2041, 1992, 4779, 2095, 1372, 9905, 4936, 9922, 9919, 573, 2]
 // Exports: default
 
-// Module 13885 (collectCallFeedback)
+// Module 13891 (collectCallFeedback)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 9917 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 9918 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 import UserStore from "UserStore" /* 1372 */;
-import AudioRouteStore from "AudioRouteStore" /* 9904 */;
+import AudioRouteStore from "AudioRouteStore" /* 9905 */;
 
 require = fn;
 const size = fn(2);
@@ -51,7 +51,7 @@ export default function collectCallFeedback(fn, arg1, arg2, videoEnabled) {
         if (VideoBackgroundStore.hasUsedBackgroundInCall) {
           const obj3 = {};
           const merged1 = Object.assign(obj);
-          const lastUsedVideoBackgroundOption = tmp5(9921).getLastUsedVideoBackgroundOption(UserStore.getCurrentUser());
+          const lastUsedVideoBackgroundOption = tmp5(9922).getLastUsedVideoBackgroundOption(UserStore.getCurrentUser());
           const videoDevices = MediaEngineStore.getVideoDevices();
           const tmp22 = videoDevices[MediaEngineStore.getVideoDeviceId(MediaEngineStore)];
           let name;
@@ -59,12 +59,12 @@ export default function collectCallFeedback(fn, arg1, arg2, videoEnabled) {
             name = tmp22.name;
           }
           const obj7 = { video_device_name: name, video_hardware_scaling_enabled: MediaEngineStore.getHardwareEncoding(), video_effect_type: null, video_effect_detail: null };
-          const tmp5Result = tmp5(9921);
-          obj7.video_effect_type = tmp5(9918).getEffectAnalyticsType(lastUsedVideoBackgroundOption);
-          const tmp5Result3 = tmp5(9918);
-          obj7.video_effect_detail = tmp5(9918).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
+          const tmp5Result = tmp5(9922);
+          obj7.video_effect_type = tmp5(9919).getEffectAnalyticsType(lastUsedVideoBackgroundOption);
+          const tmp5Result3 = tmp5(9919);
+          obj7.video_effect_detail = tmp5(9919).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
           const merged2 = Object.assign(obj7);
-          const tmp5Result4 = tmp5(9918);
+          const tmp5Result4 = tmp5(9919);
           const obj8 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: obj3 };
           DispatcherDefault.dispatch(obj8);
         } else {

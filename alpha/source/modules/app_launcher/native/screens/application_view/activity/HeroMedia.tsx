@@ -1,18 +1,18 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 12337
+// Function ID: 12338
 // Name: HeroMedia
-// Dependencies: [19, 4748, 1483, 21, 4756, 11480, 9739, 504, 7408, 12309, 8577, 1115, 2]
+// Dependencies: [19, 4748, 1483, 21, 4756, 11482, 9740, 504, 7413, 12311, 8578, 1115, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12335 (HeroMedia)
+// Module 12337 (HeroMedia)
 import initialize from "initialize" /* 504 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7408 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9739 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11480 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7413 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9740 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11482 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 
-const getPreviewVideoAssetUrlDefault = tmp6(12309);
+const getPreviewVideoAssetUrlDefault = tmp6(12311);
 require = fn;
 const DEFAULT_CONTENT_PADDING = fn(1483).DEFAULT_CONTENT_PADDING;
 const jsx = fn(21).jsx;

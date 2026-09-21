@@ -1,12 +1,12 @@
-// Module ID: 12689
-// Function ID: 12690
+// Module ID: 12691
+// Function ID: 12692
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2109, 4771, 4770, 1074, 12690, 504, 8644, 8350, 1241, 2]
+// Dependencies: [19, 2109, 4771, 4770, 1074, 12692, 504, 8645, 8351, 1241, 2]
 // Exports: default
 
-// Module 12689 (useChangelogRenderedAnalytics)
+// Module 12691 (useChangelogRenderedAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8350 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8351 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;

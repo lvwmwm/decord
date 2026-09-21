@@ -1,12 +1,12 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13272
+// Function ID: 13273
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 4756, 576, 1364, 4457, 13255, 4492, 5174, 5292, 4752, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 1364, 4457, 13257, 4492, 5174, 5299, 4752, 1115, 2]
 
-// Module 13270 (MediaModalSpoilerOverlay)
+// Module 13272 (MediaModalSpoilerOverlay)
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13255 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13257 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -52,7 +52,7 @@ export default noop.memo(function MediaModalSpoilerOverlay(source) {
     const obj6 = { style: null, children: null };
     if (source.obscure) {
       obj6.style = items2.obscureContentContainer;
-      items2 = [tmp9(tmp(5292).ImageWarningIcon, { size: "lg", color: "white" }), ];
+      items2 = [tmp9(tmp(5299).ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj7 = { accessibilityRole: "text", variant: "heading-md/medium", color: "text-overlay-light", children: null };
       const intl2 = tmp(1115).intl;
       stringResult = intl2.string(tmp(1115).t.SpxcUR);

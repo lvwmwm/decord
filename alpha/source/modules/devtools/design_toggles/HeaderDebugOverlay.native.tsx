@@ -1,13 +1,13 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5842
+// Function ID: 5843
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4756, 576, 5838, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5843, 4752, 2]
 // Exports: default
 
-// Module 5837 (HeaderDebugOverlay)
+// Module 5842 (HeaderDebugOverlay)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useDesignToggleDefault from "useDesignToggle" /* 5838 */;
+import useDesignToggleDefault from "useDesignToggle" /* 5843 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

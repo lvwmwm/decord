@@ -1,17 +1,17 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11309
+// Function ID: 11310
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4756, 576, 1612, 4752, 1115, 2546, 11308, 5186, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 1612, 4752, 1115, 2546, 11310, 5186, 2]
 // Exports: default
 
-// Module 11307 (GiftingSKUSelectScreen)
+// Module 11309 (GiftingSKUSelectScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef2546 from "module_2546" /* 2546 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 11308 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 11310 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

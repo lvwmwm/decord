@@ -1,10 +1,10 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15515
+// Function ID: 15516
 // Name: UntouchableAlert
-// Dependencies: [19, 17, 21, 4756, 4466, 5789, 2]
+// Dependencies: [19, 17, 21, 4756, 4466, 5794, 2]
 
-// Module 15509 (UntouchableAlert)
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5789 */;
+// Module 15515 (UntouchableAlert)
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5794 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,14 +1,14 @@
-// Module ID: 14027
-// Function ID: 14028
+// Module ID: 14033
+// Function ID: 14034
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 4780, 21, 4756, 7402, 7422, 504, 4613, 4963, 14028, 14029, 7437, 14039, 14042, 14043, 5174, 14046, 2]
+// Dependencies: [19, 17, 4780, 21, 4756, 7407, 7427, 504, 4613, 4963, 14034, 14035, 7442, 14045, 14048, 14049, 5174, 14052, 2]
 // Exports: default
 
-// Module 14027 (VoiceActionSheet)
+// Module 14033 (VoiceActionSheet)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7402 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7422 */;
-import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14028 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14034 */;
 import noop from "module_19" /* 19 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
 
@@ -47,17 +47,17 @@ export default function VoiceActionSheet(channel) {
   if (obj2.requiresVoiceChannelsOnboard()) {
     let obj3 = { children: null };
     const obj4 = { channel };
-    obj3.children = closure_6(tmp2(14039), obj4);
-    let children = closure_6(tmp5(7437).ActionSheet, obj3);
+    obj3.children = closure_6(tmp2(14045), obj4);
+    let children = closure_6(tmp5(7442).ActionSheet, obj3);
     let tmp8 = closure_6;
   } else if (stateFromStores) {
     const obj5 = { children: null };
     const obj6 = { channel };
-    const items2 = [closure_6(tmp2(14042), obj6), ];
+    const items2 = [closure_6(tmp2(14048), obj6), ];
     const obj7 = { channel };
-    items2[1] = closure_6(tmp2(14043), obj7);
+    items2[1] = closure_6(tmp2(14049), obj7);
     obj5.children = items2;
-    children = closure_7(tmp5(7437).ActionSheet, obj5);
+    children = closure_7(tmp5(7442).ActionSheet, obj5);
     tmp8 = closure_6;
   } else {
     tmp8 = closure_6;
@@ -66,10 +66,10 @@ export default function VoiceActionSheet(channel) {
     const obj10 = { blurTheme: "dark", style: tmp.visualEffectView };
     const items3 = [closure_6(tmp2(5174), obj10), ];
     const obj11 = { channel };
-    items3[1] = closure_6(tmp2(14046), obj11);
+    items3[1] = closure_6(tmp2(14052), obj11);
     obj9.children = items3;
     obj8.children = closure_7(closure_4, obj9);
-    children = closure_6(tmp5(7437).ActionSheet, obj8);
+    children = closure_6(tmp5(7442).ActionSheet, obj8);
   }
-  return tmp8(channel(7402).AnalyticsLocationProvider, { value: tmp4(AnalyticsLocationDefault.VOICE_ACTION_SHEET).analyticsLocations, children });
+  return tmp8(channel(7407).AnalyticsLocationProvider, { value: tmp4(AnalyticsLocationDefault.VOICE_ACTION_SHEET).analyticsLocations, children });
 };

@@ -1,12 +1,12 @@
-// Module ID: 8371
-// Function ID: 8372
+// Module ID: 8372
+// Function ID: 8373
 // Name: transformNativeMarkupMentionLink
-// Dependencies: [5218, 8369, 5207, 2]
+// Dependencies: [5218, 8370, 5207, 2]
 // Exports: transformNativeMentionLink
 
-// Module 8371 (transformNativeMarkupMentionLink)
+// Module 8372 (transformNativeMarkupMentionLink)
 import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5218 */;
-import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8369 */;
+import transformNativeMarkupMention from "transformNativeMarkupMention" /* 8370 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMentionLink.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 18015
-// Function ID: 18016
+// Module ID: 18026
+// Function ID: 18027
 // Name: GuildSettingsServerTagPickerCell
 // Dependencies: [19, 17, 21, 4756, 576, 4474, 2]
 // Exports: default
 
-// Module 18015 (GuildSettingsServerTagPickerCell)
+// Module 18026 (GuildSettingsServerTagPickerCell)
 import nativeDefault from "native" /* 576 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
 import noop from "module_19" /* 19 */;

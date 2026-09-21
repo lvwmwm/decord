@@ -1,10 +1,10 @@
-// Module ID: 12761
-// Function ID: 12762
+// Module ID: 12763
+// Function ID: 12764
 // Name: GameServerPricingExperiment
 // Dependencies: [4669, 4668, 2]
 // Exports: useIsGameServerPricingEnabled
 
-// Module 12761 (GameServerPricingExperiment)
+// Module 12763 (GameServerPricingExperiment)
 import GameServerExperiment from "GameServerExperiment" /* 4668 */;
 import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;

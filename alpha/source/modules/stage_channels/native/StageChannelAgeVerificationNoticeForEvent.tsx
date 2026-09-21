@@ -1,10 +1,10 @@
-// Module ID: 9853
-// Function ID: 9854
+// Module ID: 9854
+// Function ID: 9855
 // Name: StageChannelAgeVerificationNoticeForEvent
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 4968, 1115, 4752, 4445, 2108, 8681, 8683, 4710, 8865, 1177, 5634, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 4968, 1115, 4752, 4445, 2108, 8682, 8684, 4710, 8866, 1177, 5639, 2]
 // Exports: default
 
-// Module 9853 (StageChannelAgeVerificationNoticeForEvent)
+// Module 9854 (StageChannelAgeVerificationNoticeForEvent)
 import nativeDefault from "native" /* 576 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 4968 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 const native = Text(1177);
 const CircleInformationIcon = Text(4710);
 const Text_Text = Text(4752);
-const WarningIcon2 = Text(8865);
+const WarningIcon2 = Text(8866);
 require = fn;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
@@ -48,8 +48,8 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const obj = closure_1(8681);
-              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8683).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
+              const obj = closure_1(8682);
+              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8684).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
               if (closure_1_0 != null) {
                 closure_1_0();
               }

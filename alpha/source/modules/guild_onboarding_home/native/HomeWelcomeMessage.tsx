@@ -1,12 +1,12 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 16910
+// Function ID: 16911
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2063, 1372, 4943, 21, 4756, 576, 563, 8454, 8495, 7551, 8455, 4600, 4466, 1092, 8525, 1177, 11376, 4752, 4908, 9840, 2]
+// Dependencies: [19, 17, 2063, 1372, 4943, 21, 4756, 576, 563, 8455, 8496, 7553, 8456, 4600, 4466, 1092, 8526, 1177, 11378, 4752, 4908, 9841, 2]
 // Exports: default
 
-// Module 16904 (HomeWelcomeMessage)
+// Module 16910 (HomeWelcomeMessage)
 import nativeDefault from "native" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8455 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8456 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UserStore from "UserStore" /* 1372 */;

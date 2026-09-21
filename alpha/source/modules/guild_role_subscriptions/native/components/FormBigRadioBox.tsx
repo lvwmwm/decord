@@ -1,15 +1,15 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18185
+// Function ID: 18186
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4756, 576, 4474, 10010, 1177, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4474, 10011, 1177, 4752, 2]
 // Exports: default
 
-// Module 18174 (FormBigRadioBox)
+// Module 18185 (FormBigRadioBox)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10010 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10011 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

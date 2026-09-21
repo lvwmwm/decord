@@ -1,16 +1,16 @@
-// Module ID: 17475
-// Function ID: 17476
+// Module ID: 17486
+// Function ID: 17487
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4748, 2041, 2040, 2004, 9314, 17470, 1074, 12524, 21, 4756, 576, 1612, 504, 1478, 17465, 17153, 4492, 4466, 4757, 5185, 5168, 4385, 17467, 17476, 9592, 9722, 2]
+// Dependencies: [19, 17, 4748, 2041, 2040, 2004, 9315, 17481, 1074, 12526, 21, 4756, 576, 1612, 504, 1478, 17476, 17164, 4492, 4466, 4757, 5185, 5168, 4385, 17478, 17487, 9593, 9723, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 17475 (ActivityPanelFocusedView)
+// Module 17486 (ActivityPanelFocusedView)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 4466 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9722 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17467 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9723 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17478 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -225,12 +225,12 @@ class BaseActivityPanelFocusedView {
   }
 }
 const ActivityLayoutMode = fn(2004).ActivityLayoutMode;
-const ActivityPanelConstants = fn(9314);
+const ActivityPanelConstants = fn(9315);
 ({ ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_8, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_9, ActivityPanelModes: c10 } = ActivityPanelConstants);
-const ActivityPanelNativeConstants = fn(17470);
+const ActivityPanelNativeConstants = fn(17481);
 ({ DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG: closure_11, DEFAULT_PORTRAIT_LETTERBOX_CONFIG: closure_12, DEFAULT_LANDSCAPE_PILLERBOX_CONFIG: map1 } = ActivityPanelNativeConstants);
 const ThemeTypes = fn(1074).ThemeTypes;
-const IS_IOS = fn(12524).IS_IOS;
+const IS_IOS = fn(12526).IS_IOS;
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
 const collapsedCategories = { duration: 300 };

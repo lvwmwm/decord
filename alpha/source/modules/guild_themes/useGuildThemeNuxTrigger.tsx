@@ -1,13 +1,13 @@
-// Module ID: 16499
-// Function ID: 16500
+// Module ID: 16505
+// Function ID: 16506
 // Name: guild_themes/useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 2038, 4640, 7628, 2027, 2]
+// Dependencies: [32, 19, 2038, 4640, 7630, 2027, 2]
 // Exports: default
 
-// Module 16499 (guild_themes/useGuildThemeNuxTrigger)
+// Module 16505 (guild_themes/useGuildThemeNuxTrigger)
 import dismissible_content from "dismissible_content" /* 2027 */;
 import GuildThemeResolver from "GuildThemeResolver" /* 4640 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7628 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

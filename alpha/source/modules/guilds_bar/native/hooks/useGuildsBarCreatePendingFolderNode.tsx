@@ -1,15 +1,15 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16697
+// Function ID: 16698
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4578, 5651, 504, 10032, 16692, 5753, 5652, 1115, 2]
+// Dependencies: [19, 4578, 5656, 504, 10033, 16698, 5758, 5657, 1115, 2]
 // Exports: default
 
-// Module 16691 (useGuildsBarCreatePendingFolderNode)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5753 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 10032 */;
+// Module 16697 (useGuildsBarCreatePendingFolderNode)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5758 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 10033 */;
 import noop from "module_19" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4578 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5651 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5656 */;
 
 const require = fn;
 const size = fn(2);
@@ -29,15 +29,15 @@ export default function useGuildsBarCreatePendingFolderNode() {
     }
   }, items2);
   if (arr2.length > 0) {
-    const obj3 = { folderId: tmp2(16692).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: null, expanded: null, guildIds: null };
+    const obj3 = { folderId: tmp2(16698).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: null, expanded: null, guildIds: null };
     const intl = tmp2(1115).intl;
     obj3.folderName = intl.string(tmp2(1115).t["scsU+l"]);
     obj3.expanded = stateFromStores1;
     obj3.guildIds = arr2;
-    const folderNode = tmp2(5652).createFolderNode(obj3);
+    const folderNode = tmp2(5657).createFolderNode(obj3);
     for (const item10054 of arr2) {
       let children = folderNode.children;
-      let obj5 = stateFromStores(5652);
+      let obj5 = stateFromStores(5657);
       let arr = children.push(obj5.createGuildNode(item10054, folderNode.id));
       continue;
     }

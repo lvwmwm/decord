@@ -1,20 +1,20 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16906
+// Function ID: 16907
 // Name: ResourcesRow
-// Dependencies: [19, 17, 16901, 21, 4756, 576, 16902, 12536, 4723, 16903, 1980, 5334, 4752, 1115, 2]
+// Dependencies: [19, 17, 16907, 21, 4756, 576, 16908, 12538, 4723, 16909, 1980, 5339, 4752, 1115, 2]
 // Exports: default
 
-// Module 16900 (ResourcesRow)
+// Module 16906 (ResourcesRow)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12536 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16902 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12538 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16908 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
-let closure_4 = fn(16901).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
+let closure_4 = fn(16907).ONBOARDING_HOME_RESOURCES_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4756);
@@ -40,7 +40,7 @@ export default function ResourcesRow(guildId) {
         },
         children: closure_1_5(guildId(4752).Text, { variant: "text-md/medium", color: "text-default", children: children.title })
       };
-      return closure_1_5(guildId(5334).PressableOpacity, obj, children.channelId);
+      return closure_1_5(guildId(5339).PressableOpacity, obj, children.channelId);
     }),
 
   ];
@@ -49,7 +49,7 @@ export default function ResourcesRow(guildId) {
     const obj2 = {
       style: tmp.channelItem,
       onPress() {
-          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16903, dependencyMap.paths), closure_4, { guildId });
+          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16909, dependencyMap.paths), closure_4, { guildId });
         },
       children: null
     };
@@ -58,7 +58,7 @@ export default function ResourcesRow(guildId) {
     const obj4 = { count: arr.length - 2 };
     obj3.children = intl.format(guildId(1115).t.F6iMs4, obj4);
     obj2.children = closure_5(guildId(4752).Text, obj3);
-    tmp6 = closure_5(guildId(5334).PressableOpacity, obj2);
+    tmp6 = closure_5(guildId(5339).PressableOpacity, obj2);
   }
   items[1] = tmp6;
   obj.children = items;

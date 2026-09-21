@@ -1,10 +1,10 @@
-// Module ID: 5293
-// Function ID: 5294
+// Module ID: 5300
+// Function ID: 5301
 // Name: ForumWarningIcon
 // Dependencies: [19, 21, 576, 4456, 5261, 2]
 // Exports: ForumWarningIcon
 
-// Module 5293 (ForumWarningIcon)
+// Module 5300 (ForumWarningIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5261 from "module_5261" /* 5261 */;

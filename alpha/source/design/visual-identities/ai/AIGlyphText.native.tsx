@@ -1,12 +1,12 @@
-// Module ID: 14399
-// Function ID: 14400
+// Module ID: 14405
+// Function ID: 14406
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 4492, 4756, 14400, 4457, 2]
+// Dependencies: [19, 17, 21, 4492, 4756, 14406, 4457, 2]
 // Exports: AIGlyphText
 
-// Module 14399 (AIGlyphText)
+// Module 14405 (AIGlyphText)
 import useToken from "useToken" /* 4457 */;
-import AIGlyphFont from "AIGlyphFont" /* 14400 */;
+import AIGlyphFont from "AIGlyphFont" /* 14406 */;
 import noop from "module_19" /* 19 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 

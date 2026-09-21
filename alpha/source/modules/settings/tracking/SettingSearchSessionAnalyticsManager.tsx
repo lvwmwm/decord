@@ -1,11 +1,11 @@
-// Module ID: 7236
-// Function ID: 7237
+// Module ID: 7241
+// Function ID: 7242
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [1255, 7237, 2]
+// Dependencies: [1255, 7242, 2]
 
-// Module 7236 (SettingSearchSessionAnalyticsManager)
+// Module 7241 (SettingSearchSessionAnalyticsManager)
 import v1 from "v1" /* 1255 */;
-import Tracking from "Tracking" /* 7237 */;
+import Tracking from "Tracking" /* 7242 */;
 import size from "module_2" /* 2 */;
 
 class SettingSearchSessionAnalyticsManager {

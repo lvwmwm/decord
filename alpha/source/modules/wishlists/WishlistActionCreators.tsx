@@ -1,19 +1,19 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 9063
+// Function ID: 9064
 // Name: WishlistActionCreators
-// Dependencies: [5, 7855, 1372, 4416, 7467, 9057, 1074, 1365, 1370, 573, 7471, 1271, 9055, 1231, 4656, 1241, 8449, 2]
+// Dependencies: [5, 7857, 1372, 4416, 7472, 9058, 1074, 1365, 1370, 573, 7476, 1271, 9056, 1231, 4656, 1241, 8450, 2]
 
-// Module 9062 (WishlistActionCreators)
+// Module 9063 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import StorefrontUtils from "StorefrontUtils" /* 7471 */;
+import StorefrontUtils from "StorefrontUtils" /* 7476 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 7855 */;
+import UserProfileStore from "UserProfileStore" /* 7857 */;
 import UserStore from "UserStore" /* 1372 */;
 import BillingInfoStore from "BillingInfoStore" /* 4416 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7467 */;
-import WishlistRecord from "WishlistRecord" /* 9057 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7472 */;
+import WishlistRecord from "WishlistRecord" /* 9058 */;
 
 require = fn;
 function extraWishlistParams() {
@@ -47,7 +47,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
     const tmpResult = StorefrontUtils;
   }
 }
-const getWishlistSkuIds = fn(9057).getWishlistSkuIds;
+const getWishlistSkuIds = fn(9058).getWishlistSkuIds;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, Endpoints: closure_11, PaymentGateways: closure_12 } = Constants);
 const size = fn(2);

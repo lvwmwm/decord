@@ -1,21 +1,21 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 13735
+// Function ID: 13736
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1074, 7672, 1374, 21, 576, 4756, 5198, 1094, 4752, 5799, 1115, 13730, 13731, 13732, 13733, 5171, 1609, 11018, 1177, 7402, 1478, 1241, 2]
+// Dependencies: [32, 19, 17, 1074, 7674, 1374, 21, 576, 4756, 5198, 1094, 4752, 5804, 1115, 13736, 13737, 13738, 13739, 5171, 1609, 11019, 1177, 7407, 1478, 1241, 2]
 // Exports: default
 
-// Module 13729 (PremiumFeaturesCarouselSection)
+// Module 13735 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef13730 from "module_13730" /* 13730 */;
-import _modDef13731 from "module_13731" /* 13731 */;
-import _modDef13732 from "module_13732" /* 13732 */;
-import _modDef13733 from "module_13733" /* 13733 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef13736 from "module_13736" /* 13736 */;
+import _modDef13737 from "module_13737" /* 13737 */;
+import _modDef13738 from "module_13738" /* 13738 */;
+import _modDef13739 from "module_13739" /* 13739 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -68,7 +68,7 @@ function PremiumFeaturesCarousel(arg0) {
     const obj = { title: null, imageSrc: null, imageStyle: null, premiumTypes: null };
     const intl = util.intl;
     obj.title = intl.string(util.t["3cyhe3"]);
-    obj.imageSrc = _modDef13730;
+    obj.imageSrc = _modDef13736;
     obj.imageStyle = first.emojiImage;
     const items = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = PremiumTypes);
@@ -77,7 +77,7 @@ function PremiumFeaturesCarousel(arg0) {
     const obj2 = { title: null, imageSrc: null, premiumTypes: null };
     const intl2 = util.intl;
     obj2.title = intl2.string(util.t["8AhJqy"]);
-    obj2.imageSrc = _modDef13731;
+    obj2.imageSrc = _modDef13737;
     const items2 = [, ];
     ({ TIER_0: arr3[0], TIER_2: arr3[1] } = PremiumTypes);
     const set = new Set(items);
@@ -86,7 +86,7 @@ function PremiumFeaturesCarousel(arg0) {
     const obj3 = { title: null, imageSrc: null, premiumTypes: null };
     const intl3 = util.intl;
     obj3.title = intl3.string(util.t["t/Mvdj"]);
-    obj3.imageSrc = _modDef13732;
+    obj3.imageSrc = _modDef13738;
     const items3 = [PremiumTypes.TIER_2];
     const set1 = new Set(items2);
     obj3.premiumTypes = new Set(items3);
@@ -94,7 +94,7 @@ function PremiumFeaturesCarousel(arg0) {
     const obj4 = { title: null, imageSrc: null, premiumTypes: null };
     const intl4 = util.intl;
     obj4.title = intl4.string(util.t["n+DGY/"]);
-    obj4.imageSrc = _modDef13733;
+    obj4.imageSrc = _modDef13739;
     const items4 = [PremiumTypes.TIER_2];
     const set2 = new Set(items3);
     obj4.premiumTypes = new Set(items4);
@@ -142,7 +142,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp7
       };
-      let tmp19 = closure_10(currentIndex(11018), obj3);
+      let tmp19 = closure_10(currentIndex(11019), obj3);
     }
     let items3 = [tmp19, ];
     let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };
@@ -160,7 +160,7 @@ function PremiumFeaturesCarousel(arg0) {
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const Gradients = fn(7672).Gradients;
+const Gradients = fn(7674).Gradients;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
@@ -189,7 +189,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   dependencyMap = undefined;
   _slicedToArray = undefined;
   const tmp = closure_14();
-  const analyticsLocations = first(7402)().analyticsLocations;
+  const analyticsLocations = first(7407)().analyticsLocations;
   [first, dependencyMap] = noop.useState(false);
   const tmp4 = _slicedToArray(noop.useState(analyticsLocations(1478).getWindowDimensions().width), 2);
   _slicedToArray = tmp4[1];

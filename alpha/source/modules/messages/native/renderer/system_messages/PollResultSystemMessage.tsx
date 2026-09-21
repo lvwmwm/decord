@@ -1,13 +1,13 @@
-// Module ID: 8299
-// Function ID: 8300
+// Module ID: 8300
+// Function ID: 8301
 // Name: PollResultSystemMessage
-// Dependencies: [1375, 8217, 8219, 1115, 1397, 4409, 8300, 8221, 2]
+// Dependencies: [1375, 8218, 8220, 1115, 1397, 4409, 8301, 8222, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 8299 (PollResultSystemMessage)
+// Module 8300 (PollResultSystemMessage)
 import EmojiConstants from "EmojiConstants" /* 1375 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8217 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8300 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8301 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -24,7 +24,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, title: null, titleOnClick: null };
     const obj4 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
-    obj2.usernameOnClick = tmp(8219)(obj4);
+    obj2.usernameOnClick = tmp(8220)(obj4);
     obj2.title = tmp3.questionText;
     const obj6 = { action: "bindJumpToMessage", targetChannelId: message.messageReference.channel_id, targetMessageId: message.messageReference.message_id, medium: true };
     obj2.titleOnClick = obj6;
@@ -84,7 +84,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj16 = {};
-    const merged3 = Object.assign(tmp(8221)(message));
+    const merged3 = Object.assign(tmp(8222)(message));
     obj16.content = formatToPartsResult;
     return obj16;
   }

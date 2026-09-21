@@ -1,14 +1,14 @@
-// Module ID: 13826
-// Function ID: 13827
+// Module ID: 13832
+// Function ID: 13833
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4420, 7477, 21, 5192, 4752, 504, 7480, 11314, 7402, 11002, 5109, 1115, 4414, 10920, 5187, 13827, 2]
+// Dependencies: [5, 19, 17, 4420, 7482, 21, 5192, 4752, 504, 7485, 11316, 7407, 11003, 5109, 1115, 4414, 10921, 5187, 13833, 2]
 // Exports: default
 
-// Module 13826 (GiftPurchaseButton)
+// Module 13832 (GiftPurchaseButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import IAPStore from "IAPStore" /* 7477 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 const require = fn;
 const View = fn(17).View;
@@ -60,7 +60,7 @@ export default function GiftPurchaseButton(style) {
     const premiumTypeFromPlanId = planId(4414).getPremiumTypeFromPlanId(closure_129_0);
     const premiumType = premiumTypeFromPlanId.premiumType;
     const planInterval = premiumTypeFromPlanId.planInterval;
-    planId(10920).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
+    planId(10921).openGiftModal({ recipientUserId: closure_129_2, premiumType, planInterval, analyticsLocation: closure_129_1, analyticsLocations: closure_129_4, order: closure_128_0 });
     yield "HermesInternal";
     const obj7 = { title: null, body: null };
     const intl = planId(1115).intl;

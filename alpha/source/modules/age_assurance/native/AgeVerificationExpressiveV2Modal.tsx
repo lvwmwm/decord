@@ -1,16 +1,16 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 8714
+// Function ID: 8715
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 8682, 1074, 21, 1380, 8714, 8716, 8718, 1364, 8720, 4756, 576, 8722, 8723, 8709, 4968, 8683, 8695, 8696, 8725, 8692, 8693, 5184, 5904, 4752, 8681, 2108, 1177, 5186, 1115, 3034, 5899, 5817, 8726, 8839, 7449, 4959, 5836, 8840, 8841, 1255, 7240, 2]
+// Dependencies: [5, 32, 19, 17, 8683, 1074, 21, 1380, 8715, 8717, 8719, 1364, 8721, 4756, 576, 8723, 8724, 8710, 4968, 8684, 8696, 8697, 8726, 8693, 8694, 5184, 5909, 4752, 8682, 2108, 1177, 5186, 1115, 3034, 5904, 5822, 8727, 8840, 7454, 4959, 5841, 8841, 8842, 1255, 7245, 2]
 // Exports: default
 
-// Module 8713 (AgeVerificationExpressiveV2Modal)
+// Module 8714 (AgeVerificationExpressiveV2Modal)
 import nativeDefault from "native" /* 576 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8681 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8683 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8695 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8682 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8684 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8696 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -171,24 +171,24 @@ function MethodsScreen(onClose) {
     if (obj.isAgeVerified()) {
       if (tmpResult.getIsAgeVerificationCustomTabAwaitingResult()) {
         if (!tmpResult6.getIsAgeVerificationCustomTabOpen()) {
-          const result = tmp(8695).releaseAgeVerificationCustomTab();
+          const result = tmp(8696).releaseAgeVerificationCustomTab();
           callback();
-          const tmpResult7 = tmp(8695);
+          const tmpResult7 = tmp(8696);
         }
-        tmpResult6 = tmp(8695);
+        tmpResult6 = tmp(8696);
       }
-      tmpResult = tmp(8695);
-      let isAgeVerificationAuthSessionAwaitingResult = tmp(8696).getIsAgeVerificationAuthSessionAwaitingResult();
+      tmpResult = tmp(8696);
+      let isAgeVerificationAuthSessionAwaitingResult = tmp(8697).getIsAgeVerificationAuthSessionAwaitingResult();
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        isAgeVerificationAuthSessionAwaitingResult = !tmp(8696).getIsAgeVerificationAuthSessionOpen();
-        const tmpResult9 = tmp(8696);
+        isAgeVerificationAuthSessionAwaitingResult = !tmp(8697).getIsAgeVerificationAuthSessionOpen();
+        const tmpResult9 = tmp(8697);
       }
       if (isAgeVerificationAuthSessionAwaitingResult) {
-        const result1 = tmp(8696).closeAgeVerificationAuthSession();
+        const result1 = tmp(8697).closeAgeVerificationAuthSession();
         callback();
-        const tmpResult10 = tmp(8696);
+        const tmpResult10 = tmp(8697);
       }
-      const tmpResult8 = tmp(8696);
+      const tmpResult8 = tmp(8697);
     }
   }, items4);
   const obj6 = require("AgeVerificationCustomTab");
@@ -370,7 +370,7 @@ function MethodsScreen(onClose) {
   return tmp19Result;
 }
 const ActivityIndicator = fn(17).ActivityIndicator;
-const TRUSTED_PROVIDERS_URL = fn(8682).TRUSTED_PROVIDERS_URL;
+const TRUSTED_PROVIDERS_URL = fn(8683).TRUSTED_PROVIDERS_URL;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);

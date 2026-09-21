@@ -1,9 +1,9 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12218
+// Function ID: 12219
 // Name: TypingStore
-// Dependencies: [502, 2041, 7921, 1074, 1091, 7461, 1271, 573, 504, 2]
+// Dependencies: [502, 2041, 7923, 1074, 1091, 7466, 1271, 573, 504, 2]
 
-// Module 12216 (TypingStore)
+// Module 12218 (TypingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
@@ -109,7 +109,7 @@ function handleConnectionOpen() {
   closure_11 = {};
   closure_12 = {};
 }
-const SlowmodeType = fn(7921).SlowmodeType;
+const SlowmodeType = fn(7923).SlowmodeType;
 const Endpoints = fn(1074).Endpoints;
 let closure_8 = 10 * DurationsDefault.Millis.SECOND;
 let closure_9 = 1.5 * DurationsDefault.Millis.SECOND;
@@ -162,7 +162,7 @@ const typingStore = new TypingStore(DispatcherDefault, {
     const id = AuthenticationStore.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(7461).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(7466).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;

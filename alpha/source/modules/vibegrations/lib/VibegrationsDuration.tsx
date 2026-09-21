@@ -1,10 +1,10 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 17035
+// Function ID: 17036
 // Name: VibegrationsDuration
 // Dependencies: [1115, 3678, 2]
 // Exports: describeDuration, describeTurnDuration
 
-// Module 17027 (VibegrationsDuration)
+// Module 17035 (VibegrationsDuration)
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import size from "module_2" /* 2 */;

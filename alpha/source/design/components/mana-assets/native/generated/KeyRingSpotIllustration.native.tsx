@@ -1,13 +1,13 @@
-// Module ID: 6447
-// Function ID: 6448
+// Module ID: 6452
+// Function ID: 6453
 // Name: KeyRingSpotIllustration
-// Dependencies: [21, 5799, 6448, 2]
+// Dependencies: [21, 5804, 6453, 2]
 // Exports: KeyRingSpotIllustration
 
-// Module 6447 (KeyRingSpotIllustration)
+// Module 6452 (KeyRingSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6448 from "module_6448" /* 6448 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6453 from "module_6453" /* 6453 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const KeyRingSpotIllustration = function KeyRingSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6448 };
+  const obj2 = { uri: _modDef6453 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

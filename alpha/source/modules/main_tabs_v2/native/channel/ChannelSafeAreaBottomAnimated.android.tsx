@@ -1,12 +1,12 @@
-// Module ID: 12895
-// Function ID: 12896
+// Module ID: 12897
+// Function ID: 12898
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 11613, 11618, 4492, 2]
+// Dependencies: [19, 17, 21, 11615, 11620, 4492, 2]
 
-// Module 12895 (ChannelSafeAreaBottomAnimated)
+// Module 12897 (ChannelSafeAreaBottomAnimated)
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11613 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11618 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 11615 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11620 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;

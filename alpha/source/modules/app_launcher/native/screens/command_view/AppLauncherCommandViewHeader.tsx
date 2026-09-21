@@ -1,13 +1,13 @@
-// Module ID: 12405
-// Function ID: 12406
+// Module ID: 12407
+// Function ID: 12408
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1483, 21, 12382, 4756, 576, 12302, 4492, 4457, 8400, 5799, 4752, 1177, 2]
+// Dependencies: [19, 17, 1483, 21, 12384, 4756, 576, 12304, 4492, 4457, 8401, 5804, 4752, 1177, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 12405 (AppLauncherCommandViewHeader)
+// Module 12407 (AppLauncherCommandViewHeader)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12302 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12304 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const AppLauncherNativeConstants = fn(1483);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const sum = fn(12382).BACK_BUTTON_SIZE + 2 * DEFAULT_CONTENT_PADDING + 36 + 4;
+const sum = fn(12384).BACK_BUTTON_SIZE + 2 * DEFAULT_CONTENT_PADDING + 36 + 4;
 const TOTAL_SCROLL_RANGE = sum - 56;
 const createStyles = fn(4756);
 let obj2 = { headerContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", position: "absolute", top: -16, left: 0, right: 0, padding: DEFAULT_CONTENT_PADDING, zIndex: 1 }, loadingHeaderContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, appIconMask: null, appIcon: null, loadingIcon: null, appSmallName: null, icon: null, headerBannerOverlay: null };
@@ -137,10 +137,10 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   if (str == null) {
     str = "";
   }
-  const tmp9 = section(8400);
+  const tmp9 = section(8401);
   if (null != memo) {
     const obj8 = { style: tmp.appIcon, source: memo };
-    let tmp15 = closure_6(tmp8(5799), obj8);
+    let tmp15 = closure_6(tmp8(5804), obj8);
     let tmp16 = closure_6;
   } else {
     const obj9 = { style: null };
@@ -161,7 +161,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   const obj11 = { style: null };
   let items3 = [tmp.headerBannerOverlay, animatedStyle2];
   obj11.style = items3;
-  const items4 = [tmp16(section(4492).View, obj11), tmp16(section(12382), { onPress: onPress.onPressBack }), , , ];
+  const items4 = [tmp16(section(4492).View, obj11), tmp16(section(12384), { onPress: onPress.onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: null, variant: "heading-lg/bold", color: "text-overlay-light", children: null };
   const items5 = [tmp.appSmallName, animatedStyle];
   obj12.style = items5;

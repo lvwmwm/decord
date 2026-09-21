@@ -1,10 +1,10 @@
-// Module ID: 10381
-// Function ID: 10382
+// Module ID: 10382
+// Function ID: 10383
 // Name: HighlightText
 // Dependencies: [19, 1074, 21, 4756, 4605, 576, 1177, 2]
 // Exports: default
 
-// Module 10381 (HighlightText)
+// Module 10382 (HighlightText)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;

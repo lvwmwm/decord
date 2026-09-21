@@ -1,19 +1,19 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12304
+// Function ID: 12305
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2041, 1372, 1483, 1074, 5210, 4936, 7763, 12303, 7761, 1978, 8018, 1968, 9402, 1397, 11479, 9705, 12308, 7408, 9575, 4724, 2]
+// Dependencies: [19, 2041, 1372, 1483, 1074, 5210, 4936, 7765, 12305, 7763, 1978, 8020, 1968, 9403, 1397, 11481, 9706, 12310, 7413, 9576, 4724, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 12302 (AppLauncherNativeUtils)
+// Module 12304 (AppLauncherNativeUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import _modDef1968 from "module_1968" /* 1968 */;
 import Server from "Server" /* 1978 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7761 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8018 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9402 */;
-import FrecencySection from "FrecencySection" /* 12303 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7763 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8020 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9403 */;
+import FrecencySection from "FrecencySection" /* 12305 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -37,9 +37,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   entrypoint = entrypoint.entrypoint;
   const obj2 = { location: _location, section: null, application_id: null, section_name: null, query: null, search_results_position: null, source: null };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = tmp(7763).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = tmp(7765).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7763).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7765).ApplicationCommandTriggerSections.APP;
   }
   obj2.section = APP;
   let id = application.id;

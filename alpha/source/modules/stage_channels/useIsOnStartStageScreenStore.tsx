@@ -1,10 +1,10 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8666
+// Function ID: 8667
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 4395, 2095, 560, 1248, 504, 2049, 8666, 2]
+// Dependencies: [19, 4395, 2095, 560, 1248, 504, 2049, 8667, 2]
 // Exports: setIsOnStartStageScreen, useUpdateIsOnStartStageScreenEffect
 
-// Module 8665 (useIsOnStartStageScreenStore)
+// Module 8666 (useIsOnStartStageScreenStore)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2049 */;
 import noop from "module_19" /* 19 */;
@@ -34,7 +34,7 @@ export const useUpdateIsOnStartStageScreenEffect = function useUpdateIsOnStartSt
   const stateFromStores1 = require("initialize").useStateFromStores(items1, () => PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, closure_0), items2);
   let tmp3 = stateFromStores1;
   if (stateFromStores1) {
-    tmp3 = !stateFromStores(8666)(id.id);
+    tmp3 = !stateFromStores(8667)(id.id);
   }
   dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];

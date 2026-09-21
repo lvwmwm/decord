@@ -1,13 +1,13 @@
-// Module ID: 11269
-// Function ID: 11270
+// Module ID: 11271
+// Function ID: 11272
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 7408, 11063, 1397, 9105, 4752, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 7413, 11064, 1397, 9106, 4752, 2]
 // Exports: default
 
-// Module 11269 (SocialLayerStorefrontGiftProductDetails)
+// Module 11271 (SocialLayerStorefrontGiftProductDetails)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9105 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9106 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -32,9 +32,9 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   let getOrFetchApplication;
   const tmp = closure_9();
-  getOrFetchApplication = getOrFetchApplication(7408).useGetOrFetchApplication(sku.applicationId);
-  let obj = getOrFetchApplication(7408);
-  const userPrice = getOrFetchApplication(11063).useFormattedSKUPrice({ sku, priceSetAssignmentPurchaseType: constants.GIFT }).userPrice;
+  getOrFetchApplication = getOrFetchApplication(7413).useGetOrFetchApplication(sku.applicationId);
+  let obj = getOrFetchApplication(7413);
+  const userPrice = getOrFetchApplication(11064).useFormattedSKUPrice({ sku, priceSetAssignmentPurchaseType: constants.GIFT }).userPrice;
   const items = [getOrFetchApplication];
   const memo = noop.useMemo(() => {
     let applicationIconURL = null;

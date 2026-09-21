@@ -1,10 +1,10 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12362
+// Function ID: 12363
 // Name: search/EmptyState
-// Dependencies: [19, 17, 21, 4756, 12302, 9522, 1115, 4467, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 12304, 9523, 1115, 4467, 4752, 2]
 // Exports: default
 
-// Module 12360 (search/EmptyState)
+// Module 12362 (search/EmptyState)
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import noop from "module_19" /* 19 */;
@@ -23,7 +23,7 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = closure_5();
-  const logAppLauncherEmptyStateView = flag(12302).useLogAppLauncherEmptyStateView(flag(9522).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  const logAppLauncherEmptyStateView = flag(12304).useLogAppLauncherEmptyStateView(flag(9523).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = noop.useEffect(() => {
     const intl = util.intl;

@@ -1,13 +1,13 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16254
+// Function ID: 16255
 // Name: NotifSettingsActionCreators
-// Dependencies: [13939, 13940, 573, 2]
+// Dependencies: [13945, 13946, 573, 2]
 // Exports: updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 16248 (NotifSettingsActionCreators)
+// Module 16254 (NotifSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import notification_settings from "notification_settings" /* 13940 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13939 */;
+import notification_settings from "notification_settings" /* 13946 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 13945 */;
 
 require = fn;
 function updateNotifSettingValue(GAMING_DEFAULT, createNew) {

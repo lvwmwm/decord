@@ -1,10 +1,10 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7332
+// Function ID: 7333
 // Name: useCharacterLimitAnnouncement
 // Dependencies: [19, 4467, 2]
 // Exports: useCharacterLimitAnnouncement
 
-// Module 7327 (useCharacterLimitAnnouncement)
+// Module 7332 (useCharacterLimitAnnouncement)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import noop from "module_19" /* 19 */;
 

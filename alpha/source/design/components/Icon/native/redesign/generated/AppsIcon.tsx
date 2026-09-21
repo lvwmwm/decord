@@ -1,10 +1,10 @@
-// Module ID: 5317
-// Function ID: 5318
+// Module ID: 5278
+// Function ID: 5279
 // Name: AppsIcon
 // Dependencies: [19, 21, 576, 4456, 5244, 2]
 // Exports: AppsIcon
 
-// Module 5317 (AppsIcon)
+// Module 5278 (AppsIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5244 from "module_5244" /* 5244 */;

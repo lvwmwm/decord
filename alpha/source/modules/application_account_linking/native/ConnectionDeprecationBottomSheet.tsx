@@ -1,21 +1,21 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17407
+// Function ID: 17408
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 4983, 5493, 2038, 21, 4756, 576, 4466, 1612, 504, 5495, 7405, 7402, 7422, 17397, 4723, 17399, 1980, 7389, 7390, 5184, 17386, 4752, 1115, 3098, 9115, 5186, 13247, 4464, 1397, 5188, 7412, 7408, 2]
+// Dependencies: [19, 17, 4983, 5498, 2038, 21, 4756, 576, 4466, 1612, 504, 5500, 7410, 7407, 7427, 17408, 4723, 17410, 1980, 7394, 7395, 5184, 17397, 4752, 1115, 3098, 9116, 5186, 13249, 4464, 1397, 5188, 7417, 7413, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 17396 (ConnectionDeprecationBottomSheet)
+// Module 17407 (ConnectionDeprecationBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import themes from "themes" /* 4464 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import IconDefault from "Icon" /* 5188 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 7405 */;
-import GameIcon from "GameIcon" /* 7412 */;
-import AccountLinkManager from "AccountLinkManager" /* 17397 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 7410 */;
+import GameIcon from "GameIcon" /* 7417 */;
+import AccountLinkManager from "AccountLinkManager" /* 17408 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 4983 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5493 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
 
 const require = globalThis.__r;
 const GameIconDefault = GameIcon;
@@ -201,7 +201,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(7408).useGetOrFetchApplication(replacedBy);
+  const getOrFetchApplication = deprecatedPlatformTypes(7413).useGetOrFetchApplication(replacedBy);
   const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {

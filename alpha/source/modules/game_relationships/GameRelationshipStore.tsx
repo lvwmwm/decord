@@ -1,9 +1,9 @@
-// Module ID: 7892
-// Function ID: 7893
+// Module ID: 7894
+// Function ID: 7895
 // Name: GameRelationshipStore
 // Dependencies: [4405, 1074, 4391, 504, 573, 2]
 
-// Module 7892 (GameRelationshipStore)
+// Module 7894 (GameRelationshipStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;

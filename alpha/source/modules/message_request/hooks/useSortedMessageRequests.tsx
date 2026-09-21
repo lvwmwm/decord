@@ -1,14 +1,14 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17350
+// Function ID: 17351
 // Name: useSortedMessageRequests
-// Dependencies: [19, 2041, 1372, 7459, 504, 17340, 2]
+// Dependencies: [19, 2041, 1372, 7464, 504, 17351, 2]
 // Exports: default
 
-// Module 17339 (useSortedMessageRequests)
+// Module 17350 (useSortedMessageRequests)
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import UserStore from "UserStore" /* 1372 */;
-import MessageRequestStore from "MessageRequestStore" /* 7459 */;
+import MessageRequestStore from "MessageRequestStore" /* 7464 */;
 
 const require = fn;
 const size = fn(2);

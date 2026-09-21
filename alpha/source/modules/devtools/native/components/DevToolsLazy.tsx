@@ -1,14 +1,14 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14857
+// Function ID: 14858
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7954, 7953, 21, 5182, 14852, 1980, 504, 1364, 16250, 2]
+// Dependencies: [19, 17, 7956, 7955, 21, 5182, 14858, 1980, 504, 1364, 16256, 2]
 // Exports: default
 
-// Module 14851 (DevToolsLazy)
+// Module 14857 (DevToolsLazy)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import noop from "module_19" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7954 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7953 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7956 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7955 */;
 
 require = fn;
 const NativeModules = fn(17).NativeModules;
@@ -20,7 +20,7 @@ let items = [
     eventName: "keyCommandShowDevTools",
     discoverabilityTitle: "Open DevTools Panel",
     onKeyCommand() {
-      asyncRequireImpl(14852, dependencyMap.paths).then((navigateToDevTools) => {
+      asyncRequireImpl(14858, dependencyMap.paths).then((navigateToDevTools) => {
         navigateToDevTools.navigateToDevTools();
       });
       return true;
@@ -51,7 +51,7 @@ export default function DevToolsLazy() {
   const keyCommands = stateFromStores(5182).useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(16250).default, {});
+      return jsx(tmp(16256).default, {});
     }
   }
   return null;

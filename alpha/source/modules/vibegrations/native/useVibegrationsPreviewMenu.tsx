@@ -1,17 +1,17 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 16994
+// Function ID: 16995
 // Name: useVibegrationsPreviewMenu
-// Dependencies: [19, 13359, 13187, 16987, 4453, 504, 13366, 16988, 1115, 3678, 2]
+// Dependencies: [19, 13361, 13189, 16995, 4453, 504, 13368, 16996, 1115, 3678, 2]
 // Exports: default
 
-// Module 16986 (useVibegrationsPreviewMenu)
+// Module 16994 (useVibegrationsPreviewMenu)
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
-import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13366 */;
-import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 16988 */;
+import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13368 */;
+import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 16996 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13359 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13361 */;
 
 require = fn;
 const size = fn(2);

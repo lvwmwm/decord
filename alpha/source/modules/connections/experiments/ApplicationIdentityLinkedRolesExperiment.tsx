@@ -1,10 +1,10 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18077
+// Function ID: 18078
 // Name: ApplicationIdentityLinkedRolesExperiment
 // Dependencies: [4669, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled
 
-// Module 18066 (ApplicationIdentityLinkedRolesExperiment)
+// Module 18077 (ApplicationIdentityLinkedRolesExperiment)
 import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;
 

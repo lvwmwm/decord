@@ -1,15 +1,15 @@
-// Module ID: 17885
-// Function ID: 17886
+// Module ID: 17896
+// Function ID: 17897
 // Name: SubscriptionManager
-// Dependencies: [5, 1372, 4416, 4420, 7634, 1374, 7358, 1969, 5079, 7640, 2]
+// Dependencies: [5, 1372, 4416, 4420, 7636, 1374, 7363, 1969, 5079, 7642, 2]
 
-// Module 17885 (SubscriptionManager)
+// Module 17896 (SubscriptionManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
 import BillingInfoStore from "BillingInfoStore" /* 4416 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import EntitlementStore from "EntitlementStore" /* 7634 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import EntitlementStore from "EntitlementStore" /* 7636 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 let require = fn;
 const PremiumConstants = fn(1374);
@@ -97,7 +97,7 @@ const prototype = function SubscriptionManager() {
         if (!hasItem) {
           c2 = 2;
           currentUser = 1;
-          const obj8 = { value: tmp2(7640).fetchUserEntitlementsForApplication(closure_1_7), done: false };
+          const obj8 = { value: tmp2(7642).fetchUserEntitlementsForApplication(closure_1_7), done: false };
           return obj8;
         }
       } catch (tmp22) {

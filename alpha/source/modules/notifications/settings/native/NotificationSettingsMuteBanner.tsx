@@ -1,10 +1,10 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10406
+// Function ID: 10407
 // Name: NotificationSettingsMuteBanner
 // Dependencies: [19, 17, 21, 4756, 576, 4752, 5186, 1115, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 10405 (NotificationSettingsMuteBanner)
+// Module 10406 (NotificationSettingsMuteBanner)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;

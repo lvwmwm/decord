@@ -1,10 +1,10 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16283
+// Function ID: 16284
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1386, 4601, 1372, 12665, 21, 4756, 504, 4715, 576, 4710, 4752, 1115, 5334, 4474, 1177, 4600, 2]
+// Dependencies: [19, 17, 1386, 4601, 1372, 12667, 21, 4756, 504, 4715, 576, 4710, 4752, 1115, 5339, 4474, 1177, 4600, 2]
 // Exports: default
 
-// Module 16277 (AccountSwitcherListItem)
+// Module 16283 (AccountSwitcherListItem)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 4600 */;
@@ -49,7 +49,7 @@ class AccountStatusIcon {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4 } = get_ActivityIndicator);
-const MultiAccountTokenStatus = fn(12665).MultiAccountTokenStatus;
+const MultiAccountTokenStatus = fn(12667).MultiAccountTokenStatus;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);
@@ -84,7 +84,7 @@ export default function AccountSwitcherListItem(arg0) {
     if (null == onPressUser) {
       let PressableOpacity = React3;
     } else {
-      PressableOpacity = tmp2(5334).PressableOpacity;
+      PressableOpacity = tmp2(5339).PressableOpacity;
     }
     const obj5 = { selected: tmp7 };
     const radioA11yNative = tmp2(4474).useRadioA11yNative(obj5);
@@ -102,7 +102,7 @@ export default function AccountSwitcherListItem(arg0) {
     const merged = Object.assign(sortHandlers);
     const items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: null };
-    const obj9 = { user: obj3, guildId: "Array" };
+    const obj9 = { user: obj3, guildId: "y" };
     const items3 = [React7(tmp2(1177).Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: null };
     const obj11 = { style: tmp.tagContainer, children: null };

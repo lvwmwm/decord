@@ -1,14 +1,14 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10032
+// Function ID: 10033
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 2105, 2063, 4740, 1372, 1074, 504, 1385, 8662, 10032, 8433, 5762, 2]
+// Dependencies: [19, 502, 2105, 2063, 4740, 1372, 1074, 504, 1385, 8663, 10033, 8434, 5767, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 10031 (useGuildProfileCTA)
+// Module 10032 (useGuildProfileCTA)
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildTagUtils from "GuildTagUtils" /* 8433 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8662 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 10032 */;
+import GuildTagUtils from "GuildTagUtils" /* 8434 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8663 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 10033 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;

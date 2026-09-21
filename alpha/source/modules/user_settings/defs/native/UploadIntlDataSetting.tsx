@@ -1,9 +1,9 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15814
+// Function ID: 15815
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1074, 21, 560, 1248, 1363, 1119, 1153, 1115, 1364, 1271, 4454, 4710, 11723, 15809, 15114, 2]
+// Dependencies: [5, 17, 1074, 21, 560, 1248, 1363, 1119, 1153, 1115, 1364, 1271, 4454, 4710, 11725, 15815, 15120, 2]
 
-// Module 15808 (UploadIntlDataSetting)
+// Module 15814 (UploadIntlDataSetting)
 import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
 import _mod1153 from "module_1153" /* 1153 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -256,13 +256,13 @@ const Constants = fn(1074);
 const jsx = fn(21).jsx;
 const module_560 = fn(560);
 let closure_9 = module_560.create(() => ({ isDisabled: false, isUploading: false }));
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "Upload i18n data";
   },
   parent: null,
-  IconComponent: fn(15809).FileUpIcon,
+  IconComponent: fn(15815).FileUpIcon,
   onPress: function handleUploadIntlDataSettingPress() {
     const self = this;
     const apply = closure_11.apply;
@@ -273,7 +273,7 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(15114).useStaffOrDeveloperSettingPredicate,
+  usePredicate: fn(15120).useStaffOrDeveloperSettingPredicate,
   useTrailing: function useUploadIntlDataTrailing() {
     let tmp = null;
     if (closure_9().isUploading) {

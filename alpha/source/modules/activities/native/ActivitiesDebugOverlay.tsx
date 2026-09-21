@@ -1,14 +1,14 @@
-// Module ID: 17598
-// Function ID: 17599
+// Module ID: 17609
+// Function ID: 17610
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4756, 4605, 576, 9591, 1612, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 4605, 576, 9592, 1612, 4752, 2]
 // Exports: default
 
-// Module 17598 (ActivitiesDebugOverlay)
+// Module 17609 (ActivitiesDebugOverlay)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useThermalState from "useThermalState" /* 9591 */;
+import useThermalState from "useThermalState" /* 9592 */;
 import noop from "module_19" /* 19 */;
 
 const useThermalStateDefault = useThermalState;
@@ -36,14 +36,14 @@ export default function ActivitiesDebugOverlay() {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(9591).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(9592).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(9591).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(9592).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(9591).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(9591).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(9592).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(9592).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

@@ -1,19 +1,19 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 17396
+// Function ID: 17397
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4748, 10924, 1074, 2038, 21, 4756, 576, 504, 11012, 11013, 8542, 4723, 7402, 7422, 10920, 7390, 1364, 9088, 5799, 11016, 4752, 5186, 11297, 1115, 2]
+// Dependencies: [19, 17, 4748, 10925, 1074, 2038, 21, 4756, 576, 504, 11013, 11014, 8543, 4723, 7407, 7427, 10921, 7395, 1364, 9089, 5804, 11017, 4752, 5186, 11299, 1115, 2]
 // Exports: default
 
-// Module 17385 (GiftingPromotionCoachmark)
+// Module 17396 (GiftingPromotionCoachmark)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7402 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7422 */;
-import usePreviousDefault from "usePrevious" /* 8542 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10920 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import usePreviousDefault from "usePrevious" /* 8543 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10921 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import PromotionsStore from "PromotionsStore" /* 10924 */;
+import PromotionsStore from "PromotionsStore" /* 10925 */;
 
 require = fn;
 const View = fn(17).View;
@@ -51,8 +51,8 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
-  const themeAndReducedMotionAwareAssetUrl = markAsDismissed(11012).useThemeAndReducedMotionAwareAssetUrl(asset);
-  let obj2 = markAsDismissed(11012);
+  const themeAndReducedMotionAwareAssetUrl = markAsDismissed(11013).useThemeAndReducedMotionAwareAssetUrl(asset);
+  let obj2 = markAsDismissed(11013);
   const items1 = [PromotionsStore];
   const stateFromStores1 = markAsDismissed(504).useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
   const tmp2Result = markAsDismissed(504);
@@ -60,7 +60,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
-  const tickingFormattedLimitedOfferTimeLeft = markAsDismissed(11013).useTickingFormattedLimitedOfferTimeLeft(endDate);
+  const tickingFormattedLimitedOfferTimeLeft = markAsDismissed(11014).useTickingFormattedLimitedOfferTimeLeft(endDate);
   importDefault = tmp10;
   const tmp12 = usePreviousDefault(null != stateFromStores1);
   dependencyMap = tmp12;
@@ -83,7 +83,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
     }
   }, items2);
-  const tmp2Result3 = markAsDismissed(11013);
+  const tmp2Result3 = markAsDismissed(11014);
   analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
   let tmp19Result3 = null;
@@ -101,7 +101,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       let tmp19Result = null != tickingFormattedLimitedOfferTimeLeft;
       if (tmp19Result) {
         const obj5 = { text: tickingFormattedLimitedOfferTimeLeft, style: tmp.countdownBadge };
-        tmp19Result = tmp19(tmp11(11016), obj5);
+        tmp19Result = tmp19(tmp11(11017), obj5);
       }
       items4[1] = tmp19Result;
       const obj6 = { style: tmp.textContainer, children: null };
@@ -113,7 +113,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       items4[2] = tmp21(tmp22, obj6);
       const obj9 = { grow: true, icon: null, text: null, onPress: null };
       const obj10 = { size: "sm", color: tmp11(576).colors.WHITE };
-      obj9.icon = tmp19(tmp2(11297).GiftIcon, obj10);
+      obj9.icon = tmp19(tmp2(11299).GiftIcon, obj10);
       const intl = tmp2(1115).intl;
       obj9.text = intl.string(tmp2(1115).t.Ve9Ge6);
       obj9.onPress = tmp17;
@@ -129,7 +129,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           ({ imageShared: arr5[0], imageWrapperAndroid: arr5[1] } = tmp);
           obj11.style = items6;
           const obj12 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };
-          obj11.children = tmp19(tmp2(9088).APNGPlayer, obj12);
+          obj11.children = tmp19(tmp2(9089).APNGPlayer, obj12);
           let tmp19Result4 = tmp19(tmp22, obj11);
         }
       }
@@ -137,7 +137,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj14 = { uri: themeAndReducedMotionAwareAssetUrl };
       obj13.source = obj14;
       obj13.style = tmp.imageShared;
-      tmp19Result4 = tmp19(tmp11(5799), obj13);
+      tmp19Result4 = tmp19(tmp11(5804), obj13);
       tmp2Result4 = tmp2(1364);
     }
   }

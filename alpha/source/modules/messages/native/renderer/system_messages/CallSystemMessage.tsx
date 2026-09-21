@@ -1,14 +1,14 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 8237
+// Function ID: 8238
 // Name: CallSystemMessage
-// Dependencies: [4772, 502, 4775, 1074, 4777, 8237, 8238, 1115, 1400, 4438, 8221, 2]
+// Dependencies: [4772, 502, 4775, 1074, 4777, 8238, 8239, 1115, 1400, 4438, 8222, 2]
 // Exports: createCallSystemMessage
 
-// Module 8236 (CallSystemMessage)
+// Module 8237 (CallSystemMessage)
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8221 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8237 */;
-import useIsCallActive from "useIsCallActive" /* 8238 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8222 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8238 */;
+import useIsCallActive from "useIsCallActive" /* 8239 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import VoiceStateStore from "VoiceStateStore" /* 4775 */;

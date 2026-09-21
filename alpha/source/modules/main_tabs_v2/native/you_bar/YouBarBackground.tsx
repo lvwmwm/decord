@@ -1,17 +1,17 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16722
+// Function ID: 16723
 // Name: YouBarBackground
-// Dependencies: [19, 17, 15359, 21, 4756, 576, 5876, 5198, 672, 4457, 15445, 4492, 5185, 2]
+// Dependencies: [19, 17, 15365, 21, 4756, 576, 5881, 5198, 672, 4457, 15451, 4492, 5185, 2]
 
-// Module 16716 (YouBarBackground)
+// Module 16722 (YouBarBackground)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import useToken from "useToken" /* 4457 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5876 from "module_5876" /* 5876 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15445 */;
+import _modDef5881 from "module_5881" /* 5881 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15451 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,7 +32,7 @@ function YouBarMaskedBackground(barWidth) {
   const size1 = { position: "absolute", top: YOU_BAR_HEIGHT / 2, width: 8, left: diff - 8, height: YOU_BAR_HEIGHT / 2 };
   obj5.style = size1;
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
-  const tmp3 = _modDef5876;
+  const tmp3 = _modDef5881;
   const tmp4 = LinearGradientDefault;
   const obj9 = _modDef672("#000000");
   const items1 = [_modDef672("#000000").alpha(0).hex(), "#000000"];
@@ -76,7 +76,7 @@ function YouBarAnimatedBackground(arg0) {
   return closure_6(ReanimatedRexportDefault.View, obj4);
 }
 const View = fn(17).View;
-const YouBarConstants = fn(15359);
+const YouBarConstants = fn(15365);
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
 const jsxProd = fn(21);

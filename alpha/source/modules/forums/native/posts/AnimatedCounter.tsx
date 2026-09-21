@@ -1,15 +1,15 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11579
+// Function ID: 11580
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 4756, 38, 4492, 4466, 5185, 4752, 5189, 11578, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 38, 4492, 4466, 5185, 4752, 5189, 11580, 2]
 
-// Module 11577 (AnimatedCounter)
+// Module 11579 (AnimatedCounter)
 import native from "native" /* 4466 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;
-import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11578 */;
+import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

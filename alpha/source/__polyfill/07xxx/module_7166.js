@@ -1,10 +1,24 @@
 // Module ID: 7166
 // Function ID: 7167
-// Dependencies: [17]
+// Dependencies: [19, 7118]
+// Exports: useMappingHelper
 
 // Module 7166
-import _mod17 from "module_17" /* 17 */;
+import _mod19 from "module_19" /* 19 */;
+import _mod7118 from "module_7118" /* 7118 */;
 
-const StyleSheet = _mod17.StyleSheet;
+_mod19.useCallback;
 
-export const styles = StyleSheet.create({ container: {} });
+export const useMappingHelper = () => {
+  const recyclerViewContext = _mod7118.useRecyclerViewContext();
+  const obj2 = { getMappingKey: null };
+  const items = [recyclerViewContext];
+  obj2.getMappingKey = useCallback((arg0, arg1) => {
+    let tmp = arg0;
+    if (recyclerViewContext) {
+      tmp = arg1;
+    }
+    return tmp;
+  }, items);
+  return obj2;
+};

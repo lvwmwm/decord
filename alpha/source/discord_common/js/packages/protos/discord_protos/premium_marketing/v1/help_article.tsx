@@ -1,11 +1,11 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 10931
+// Function ID: 10932
 // Name: help_article
-// Dependencies: [32, 1187, 10929, 2]
+// Dependencies: [32, 1187, 10930, 2]
 
-// Module 10930 (help_article)
+// Module 10931 (help_article)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10929 */;
+import localized_string from "localized_string" /* 10930 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

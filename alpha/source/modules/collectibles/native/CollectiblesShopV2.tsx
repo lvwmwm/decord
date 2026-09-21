@@ -1,28 +1,28 @@
-// Module ID: 16121
-// Function ID: 16122
+// Module ID: 16127
+// Function ID: 16128
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4755, 1182, 1372, 7782, 1076, 1074, 2038, 21, 4756, 7422, 13716, 16122, 504, 5810, 1255, 10993, 16123, 1364, 7793, 9479, 8446, 9055, 4607, 7402, 1484, 9126, 4427, 16125, 4576, 2027, 4414, 16126, 1241, 7829, 8455, 16127, 16129, 16131, 16156, 1231, 9046, 11083, 16159, 16160, 16134, 16161, 5085, 2]
+// Dependencies: [32, 19, 17, 4755, 1182, 1372, 7784, 1076, 1074, 2038, 21, 4756, 7427, 13722, 16128, 504, 5815, 1255, 10994, 16129, 1364, 7795, 9480, 8447, 9056, 4607, 7407, 1484, 9127, 4427, 16131, 4576, 2027, 4414, 16132, 1241, 7831, 8456, 16133, 16135, 16137, 16162, 1231, 9047, 11084, 16165, 16166, 16140, 16167, 5085, 2]
 
-// Module 16121 (CollectiblesShopV2)
+// Module 16127 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import dismissible_content from "dismissible_content" /* 2027 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7829 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8455 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9126 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9479 */;
-import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 16126 */;
-import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 16127 */;
-import ShopCategory from "ShopCategory" /* 16129 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 16131 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7831 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8456 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9127 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9480 */;
+import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 16132 */;
+import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 16133 */;
+import ShopCategory from "ShopCategory" /* 16135 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 16137 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4755 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7782 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
 
 const SentryUtilsDefault = tmp(1231);
 require = fn;

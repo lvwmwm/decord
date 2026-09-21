@@ -1,15 +1,15 @@
-// Module ID: 7389
-// Function ID: 7390
+// Module ID: 7394
+// Function ID: 7395
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 4756, 576, 1478, 4457, 4752, 5837, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 1478, 4457, 4752, 5842, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 7389 (BottomSheetTitleHeader)
+// Module 7394 (BottomSheetTitleHeader)
 import nativeDefault from "native" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import useToken from "useToken" /* 4457 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5837 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5842 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

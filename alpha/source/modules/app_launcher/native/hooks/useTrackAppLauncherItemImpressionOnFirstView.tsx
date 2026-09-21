@@ -1,12 +1,12 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12354
+// Function ID: 12355
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 11479, 1485, 9047, 1249, 2]
+// Dependencies: [19, 11481, 1485, 9048, 1249, 2]
 // Exports: useTrackAppLauncherItemImpressionOnFirstView
 
-// Module 12352 (useTrackAppLauncherItemImpressionOnFirstView)
+// Module 12354 (useTrackAppLauncherItemImpressionOnFirstView)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import useTrackImpression from "useTrackImpression" /* 9047 */;
+import useTrackImpression from "useTrackImpression" /* 9048 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,8 +14,8 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useTrackAppLauncherItemImpressionOnFirstView.tsx");
 
 export const useTrackAppLauncherItemImpressionOnFirstView = function useTrackAppLauncherItemImpressionOnFirstView() {
-  entrypoint = entrypoint(11479).useAppLauncherContext().entrypoint;
-  let obj = entrypoint(11479);
+  entrypoint = entrypoint(11481).useAppLauncherContext().entrypoint;
+  let obj = entrypoint(11481);
   dependencyMap = noop.useRef(new Set());
   const set = new Set();
   const focusEffect = entrypoint(1485).useFocusEffect(noop.useCallback(() => {

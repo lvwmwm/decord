@@ -1,13 +1,13 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10390
+// Function ID: 10391
 // Name: FileIcon
-// Dependencies: [19, 21, 576, 4456, 10390, 2]
+// Dependencies: [19, 21, 576, 4456, 10391, 2]
 // Exports: FileIcon
 
-// Module 10389 (FileIcon)
+// Module 10390 (FileIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod10390 from "module_10390" /* 10390 */;
+import _mod10391 from "module_10391" /* 10391 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const FileIcon = function FileIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10390, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10391, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 13315
-// Function ID: 13316
+// Module ID: 13317
+// Function ID: 13318
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4395, 1085, 21, 4756, 1364, 7402, 8458, 5171, 13316, 4909, 504, 5308, 5312, 1115, 5796, 5334, 4454, 7449, 4752, 9866, 4963, 4723, 13317, 1980, 8447, 13318, 1177, 2]
+// Dependencies: [17, 4395, 1085, 21, 4756, 1364, 7407, 8459, 5171, 13318, 4909, 504, 5315, 5319, 1115, 5801, 5339, 4454, 7454, 4752, 9867, 4963, 4723, 13319, 1980, 8448, 13320, 1177, 2]
 // Exports: default
 
-// Module 13315 (UserProfileActivityVoiceChannel)
+// Module 13317 (UserProfileActivityVoiceChannel)
 import _mod17 from "module_17" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1177 */;
@@ -122,7 +122,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
   obj15.accessibilityLabel = intl3.formatToPlainString(guild(onAction[14]).t.e95u3C, { count: users.length });
   obj15.onPress = function onPress() {
     onAction({ action: "PRESS_VOICE_CHANNEL_AVATARS" });
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13317, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(13319, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", {
       users,
       channel,
       onPressUser(userId) {

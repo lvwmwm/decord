@@ -1,18 +1,18 @@
-// Module ID: 16946
-// Function ID: 16947
+// Module ID: 16953
+// Function ID: 16954
 // Name: VibegrationsProjectSettingsSheet
-// Dependencies: [5, 32, 19, 17, 2099, 9308, 1074, 21, 4756, 576, 504, 7485, 4723, 1115, 3678, 7437, 4752, 7389, 9802, 7290, 5899, 5816, 7484, 16947, 9309, 6843, 5817, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2099, 9309, 1074, 21, 4756, 576, 504, 5275, 4723, 1115, 3678, 7442, 4752, 7394, 9803, 7295, 5904, 5821, 5274, 16954, 9310, 6848, 5822, 5186, 2]
 // Exports: default
 
-// Module 16946 (VibegrationsProjectSettingsSheet)
+// Module 16953 (VibegrationsProjectSettingsSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 7485 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9308 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 

@@ -1,10 +1,10 @@
-// Module ID: 11016
-// Function ID: 11017
+// Module ID: 11017
+// Function ID: 11018
 // Name: PremiumGiftCountdownBadge
 // Dependencies: [19, 17, 21, 4756, 576, 4752, 2]
 // Exports: default
 
-// Module 11016 (PremiumGiftCountdownBadge)
+// Module 11017 (PremiumGiftCountdownBadge)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;

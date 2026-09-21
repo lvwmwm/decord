@@ -1,14 +1,14 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 15992
+// Function ID: 15993
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 4981, 1074, 21, 4756, 576, 1612, 15987, 8544, 1115, 15971, 3032, 4451, 2108, 5840, 15988, 2]
+// Dependencies: [17, 4981, 1074, 21, 4756, 576, 1612, 15993, 8545, 1115, 15977, 3032, 4451, 2108, 5845, 15994, 2]
 // Exports: default
 
-// Module 15986 (CheckpointNavigationControls)
+// Module 15992 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import CheckpointTextDefault from "CheckpointText" /* 15971 */;
+import CheckpointTextDefault from "CheckpointText" /* 15977 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 4981 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -51,9 +51,9 @@ export default function CheckpointNavigationControls(onNext) {
     const intl3 = require("util").intl;
     obj2.label = intl3.string(require("util").t.I0v0Qv);
     obj2.onPress = onNext;
-    const items2 = [closure_7(tmp2(15987), obj2), ];
+    const items2 = [closure_7(tmp2(15993), obj2), ];
     const obj3 = { variant: "text-sm/medium", children: null };
-    const tmp2Result = tmp2(15987);
+    const tmp2Result = tmp2(15993);
     const intl4 = require("util").intl;
     const obj4 = {
       learnMoreHook(children, arg1) {
@@ -70,10 +70,10 @@ export default function CheckpointNavigationControls(onNext) {
         }
     };
     obj3.children = intl4.format(tmp2(3032).hcNhyq, obj4);
-    items2[1] = closure_7(tmp2(15971), obj3);
+    items2[1] = closure_7(tmp2(15977), obj3);
     obj.children = items2;
     let tmp10 = obj;
-    const tmp2Result2 = tmp2(15971);
+    const tmp2Result2 = tmp2(15977);
   } else {
     items1[1] = tmp.routeControls;
     obj.style = items1;

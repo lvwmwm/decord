@@ -1,18 +1,18 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15503
+// Function ID: 15504
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 2041, 4389, 15492, 15498, 1074, 2048, 4998, 563, 1385, 573, 9820, 7500, 14155, 2]
+// Dependencies: [5, 19, 2041, 4389, 15498, 15504, 1074, 2048, 4998, 563, 1385, 573, 9821, 7502, 14161, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 15497 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 15503 (GuildRoleSubscriptionTierTemplatesUtils)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7500 */;
-import GuildRoleSubscriptionsExperimentUtils from "GuildRoleSubscriptionsExperimentUtils" /* 14155 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7502 */;
+import GuildRoleSubscriptionsExperimentUtils from "GuildRoleSubscriptionsExperimentUtils" /* 14161 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4389 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15498 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15504 */;
 import allSettled_mod from "allSettled" /* 4998 */;
 
 const require = globalThis.__r;
@@ -141,7 +141,7 @@ let closure_14 = async function _createChannelsFromTemplateTierBenefits(arg0, va
   }
 };
 const useMemo = fn(19).useMemo;
-const useEditStateStore = fn(15492).useEditStateStore;
+const useEditStateStore = fn(15498).useEditStateStore;
 const GuildFeatures = fn(1074).GuildFeatures;
 const ChannelFlags = fn(2048).ChannelFlags;
 let allSettled = allSettled_mod;

@@ -1,10 +1,10 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12521
+// Function ID: 12522
 // Name: ChatFloatingNavButton
 // Dependencies: [19, 17, 21, 4756, 576, 4492, 4457, 5185, 5189, 2]
 // Exports: default
 
-// Module 12519 (ChatFloatingNavButton)
+// Module 12521 (ChatFloatingNavButton)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;

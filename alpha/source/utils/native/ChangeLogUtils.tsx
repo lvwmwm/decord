@@ -1,9 +1,9 @@
-// Module ID: 8352
-// Function ID: 8353
+// Module ID: 8353
+// Function ID: 8354
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4756, 576, 5653, 5206, 4752, 7220, 8353, 1929, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 5658, 5206, 4752, 7225, 8354, 1929, 2]
 
-// Module 8352 (utils/ChangeLogUtils)
+// Module 8353 (utils/ChangeLogUtils)
 import nativeDefault from "native" /* 576 */;
 import _modDef1929 from "module_1929" /* 1929 */;
 import Text_Text from "Text/Text" /* 4752 */;
@@ -88,9 +88,9 @@ function ChangeLogStrong(arg0) {
     if (str == null) {
       str = "text-default";
     }
-    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmp(8353).smartOutput(node, output, state) };
-    let reactResult = jsx(tmp(4752).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp(8353).smartOutput(node, output, state) });
-    const tmpResult = tmp(8353);
+    const obj2 = { variant: "experimental/body-sm/semibold", color: str, children: tmp(8354).smartOutput(node, output, state) };
+    let reactResult = jsx(tmp(4752).Text, { variant: "experimental/body-sm/semibold", color: str, children: tmp(8354).smartOutput(node, output, state) });
+    const tmpResult = tmp(8354);
   } else {
     const strong = rules.strong;
     reactResult = strong.react(node, output, state);
@@ -117,8 +117,8 @@ const jsx = fn(21).jsx;
 const createStyles = fn(4756);
 let obj2 = { link: { color: nativeDefault.colors.TEXT_LINK }, list: { marginBottom: 10 }, image: { alignSelf: "center", flex: 1 }, container: null, text: null };
 const obj3 = { color: nativeDefault.colors.TEXT_LINK };
-obj2.container = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5653).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
-const obj4 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5653).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
+obj2.container = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5658).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
+const obj4 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: fn(5658).DARK_PRIMARY_500_LIGHT_PRIMARY_300 };
 obj2.text = { fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED };
 let closure_6 = createStyles.createStyles(obj2);
 const rules = CustomMarkup.createRules({});

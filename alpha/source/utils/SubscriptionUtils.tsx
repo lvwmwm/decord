@@ -1,16 +1,16 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11704
+// Function ID: 11705
 // Name: SubscriptionUtils
-// Dependencies: [32, 19, 4419, 1074, 1374, 38, 11703, 4414, 7497, 504, 11705, 4348, 2]
+// Dependencies: [32, 19, 4419, 1074, 1374, 38, 11705, 4414, 7499, 504, 11707, 4348, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 11702 (SubscriptionUtils)
+// Module 11704 (SubscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef4348 from "module_4348" /* 4348 */;
 import PremiumUtils from "PremiumUtils" /* 4414 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7497 */;
-import CheckoutError from "CheckoutError" /* 11703 */;
-import PauseDuration from "PauseDuration" /* 11705 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7499 */;
+import CheckoutError from "CheckoutError" /* 11705 */;
+import PauseDuration from "PauseDuration" /* 11707 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4419 */;
@@ -99,8 +99,8 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const tmp9 = null != dependencyMap[subscriptionPlanId];
     const result = PremiumUtils.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     if (!SubscriptionPlanStore.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = tmp12(7497).fetchSubscriptionPlansForSKU(result, arg1);
-      const tmp12Result = tmp12(7497);
+      const subscriptionPlansForSKU = tmp12(7499).fetchSubscriptionPlansForSKU(result, arg1);
+      const tmp12Result = tmp12(7499);
     }
   }
   return value;

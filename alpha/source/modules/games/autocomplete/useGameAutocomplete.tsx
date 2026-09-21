@@ -1,15 +1,15 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9181
+// Function ID: 9182
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 5319, 1074, 504, 5320, 9181, 2]
+// Dependencies: [32, 19, 5324, 1074, 504, 5325, 9182, 2]
 // Exports: useDebouncedGameAutocomplete
 
-// Module 9180 (useGameAutocomplete)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5320 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9181 */;
+// Module 9181 (useGameAutocomplete)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5325 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 9182 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5319 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5324 */;
 
 require = fn;
 const QueryIds = fn(1074).QueryIds;

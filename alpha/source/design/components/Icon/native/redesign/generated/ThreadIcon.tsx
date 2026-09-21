@@ -1,10 +1,10 @@
-// Module ID: 5284
-// Function ID: 5285
+// Module ID: 5291
+// Function ID: 5292
 // Name: ThreadIcon
 // Dependencies: [19, 21, 576, 4456, 5241, 2]
 // Exports: ThreadIcon
 
-// Module 5284 (ThreadIcon)
+// Module 5291 (ThreadIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5241 from "module_5241" /* 5241 */;

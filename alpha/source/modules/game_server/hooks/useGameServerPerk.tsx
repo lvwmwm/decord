@@ -1,13 +1,13 @@
-// Module ID: 12828
-// Function ID: 12829
+// Module ID: 12830
+// Function ID: 12831
 // Name: useGameServerPerk
-// Dependencies: [19, 4665, 4646, 4645, 4668, 504, 12829, 1115, 2936, 12830, 2]
+// Dependencies: [19, 4665, 4646, 4645, 4668, 504, 12831, 1115, 2936, 12832, 2]
 // Exports: default
 
-// Module 12828 (useGameServerPerk)
+// Module 12830 (useGameServerPerk)
 import util from "util" /* 1115 */;
 import _modDef2936 from "module_2936" /* 2936 */;
-import _modDef12830 from "module_12830" /* 12830 */;
+import _modDef12832 from "module_12832" /* 12832 */;
 import noop from "module_19" /* 19 */;
 import GameServerStore from "GameServerStore" /* 4665 */;
 
@@ -43,8 +43,8 @@ export default function useGameServerPerk(guildId) {
         obj.cost = tmp2;
         obj.dependencies = [];
         obj.type = GuildPowerupType.PERK;
-        obj.animatedImageUrl = _modDef12830;
-        obj.staticImageUrl = _modDef12830;
+        obj.animatedImageUrl = _modDef12832;
+        obj.staticImageUrl = _modDef12832;
         tmp = obj;
       }
     }

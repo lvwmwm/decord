@@ -1,14 +1,14 @@
-// Module ID: 6827
-// Function ID: 6828
+// Module ID: 6832
+// Function ID: 6833
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 2035, 1372, 1074, 21, 4756, 1484, 504, 38, 6828, 5833, 5904, 4752, 1115, 5186, 6829, 4454, 2]
+// Dependencies: [32, 19, 17, 2035, 1372, 1074, 21, 4756, 1484, 504, 38, 6833, 5838, 5909, 4752, 1115, 5186, 6834, 4454, 2]
 // Exports: default
 
-// Module 6827 (ResendEmail)
+// Module 6832 (ResendEmail)
 import util from "util" /* 1115 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5833 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6829 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5838 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
@@ -39,9 +39,9 @@ export default function ResendEmail() {
   const items1 = [UserRequiredActionStore];
   const stateFromStores1 = navigation(504).useStateFromStores(items1, () => action.getAction());
   let obj3 = navigation(504);
-  const result = verified(6828).isEmailReverification(stateFromStores1);
+  const result = verified(6833).isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
-  const obj4 = verified(6828);
+  const obj4 = verified(6833);
   [tmp10, dependencyMap] = noop.useState(false);
   _slicedToArray = noop.useRef(verified);
   const items2 = [verified];
@@ -62,7 +62,7 @@ export default function ResendEmail() {
   const callback = noop.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  const items4 = [closure_9(navigation(5904).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const items4 = [closure_9(navigation(5909).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = navigation(1115).intl;
   obj6.children = intl.string(navigation(1115).t.fUtddV);

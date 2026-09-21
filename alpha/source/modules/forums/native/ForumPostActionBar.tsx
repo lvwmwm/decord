@@ -1,15 +1,15 @@
-// Module ID: 11674
-// Function ID: 11675
+// Module ID: 11676
+// Function ID: 11677
 // Name: ForumPostActionBar
-// Dependencies: [32, 19, 17, 4396, 4397, 2041, 1074, 21, 4756, 576, 504, 7544, 1478, 11516, 8114, 11675, 5334, 1115, 4706, 4752, 9873, 4698, 7696, 11, 4686, 11676, 2]
+// Dependencies: [32, 19, 17, 4396, 4397, 2041, 1074, 21, 4756, 576, 504, 7546, 1478, 11518, 8116, 11677, 5339, 1115, 4706, 4752, 9874, 4698, 7698, 11, 4686, 11678, 2]
 // Exports: default
 
-// Module 11674 (ForumPostActionBar)
+// Module 11676 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import Client from "Client" /* 4686 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7696 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 11516 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 11518 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4396 */;
@@ -39,8 +39,8 @@ export default function ForumPostActionBar(channel) {
   const items = [ChannelStore];
   const stateFromStores = channel(504).useStateFromStores(items, () => ChannelStore.getChannel(channel.parent_id));
   let obj = channel(504);
-  const firstMessage = channel(7544).useFirstForumPostMessage(channel).firstMessage;
-  let obj2 = channel(7544);
+  const firstMessage = channel(7546).useFirstForumPostMessage(channel).firstMessage;
+  let obj2 = channel(7546);
   const items1 = [JoinedThreadsStore];
   const stateFromStores1 = channel(504).useStateFromStores(items1, () => JoinedThreadsStore.hasJoined(channel.id));
   dependencyMap = channel.getGuildId();
@@ -62,13 +62,13 @@ export default function ForumPostActionBar(channel) {
   }, items3);
   const obj4 = channel(504);
   const obj6 = { style: null, children: null };
-  const items4 = [tmp.actionBarContainer, channel(8114).useGradientTop()];
+  const items4 = [tmp.actionBarContainer, channel(8116).useGradientTop()];
   obj6.style = items4;
   let tmp11 = null != firstMessage;
   if (tmp11) {
     const obj7 = { style: tmp.reactionRow, children: null };
     const obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp7[0] };
-    obj7.children = closure_10(tmp2(11675).ForumPostActionBarReactions, obj8);
+    obj7.children = closure_10(tmp2(11677).ForumPostActionBarReactions, obj8);
     tmp11 = closure_10(tmp10, obj7);
   }
   const items5 = [tmp11, ];
@@ -90,7 +90,7 @@ export default function ForumPostActionBar(channel) {
       }
     };
     obj10.children = closure_10(tmp2(4698).LinkIcon, { size: "xs" });
-    items7[1] = closure_10(tmp2(5334).PressableOpacity, obj10);
+    items7[1] = closure_10(tmp2(5339).PressableOpacity, obj10);
     const obj11 = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
     const intl5 = tmp2(1115).intl;
     obj11.accessibilityLabel = intl5.string(tmp2(1115).t.nFP4oa);
@@ -104,8 +104,8 @@ export default function ForumPostActionBar(channel) {
       obj2.jumpType = Client.JumpType.ANIMATED;
       obj.jumpToMessage(obj2);
     };
-    obj11.children = closure_10(tmp2(11676).ArrowLargeUpIcon, { size: "xs" });
-    items7[2] = closure_10(tmp2(5334).PressableOpacity, obj11);
+    obj11.children = closure_10(tmp2(11678).ArrowLargeUpIcon, { size: "xs" });
+    items7[2] = closure_10(tmp2(5339).PressableOpacity, obj11);
     obj9.children = items7;
     items5[1] = tmp9(tmp10, obj9);
     obj6.children = items5;
@@ -138,7 +138,7 @@ export default function ForumPostActionBar(channel) {
       obj12.accessibilityLabel = Text(t["DjZ+6E"]);
       obj12.style = tmp.actionButton;
       obj12.onPress = items9;
-      const items11 = [closure_10(tmp2(9873).BellIcon, { size: "xs" }), ];
+      const items11 = [closure_10(tmp2(9874).BellIcon, { size: "xs" }), ];
       const obj14 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default", children: null };
       const intl2 = tmp2(1115).intl;
       obj14.children = intl2.string(tmp2(1115).t["0rQinA"]);
@@ -146,6 +146,6 @@ export default function ForumPostActionBar(channel) {
       obj12.children = items11;
       tmp15 = obj12;
     }
-    tmp9(tmp2(5334).PressableOpacity, tmp15);
+    tmp9(tmp2(5339).PressableOpacity, tmp15);
   }
 };

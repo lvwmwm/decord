@@ -1,23 +1,23 @@
-// Module ID: 16523
-// Function ID: 16524
+// Module ID: 16529
+// Function ID: 16530
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1074, 2038, 21, 576, 16524, 10374, 5191, 4756, 16525, 9197, 1115, 5819, 5334, 5892, 4752, 5186, 8854, 7556, 7560, 2]
+// Dependencies: [5, 19, 17, 1074, 2038, 21, 576, 16530, 10375, 5191, 4756, 16531, 9198, 1115, 5824, 5339, 5897, 4752, 5186, 8855, 7558, 7562, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16523 (GameClaimCoachmark)
+// Module 16529 (GameClaimCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ButtonConstants from "ButtonConstants" /* 5191 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 9197 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10374 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 16524 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16525 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 9198 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10375 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 16530 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16531 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const GameClaimCardStackDefault = tmp5(16524);
+const GameClaimCardStackDefault = tmp5(16530);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
@@ -71,9 +71,9 @@ export default noop.memo((arg0) => {
           return require(ContentDismissActionType.USER_DISMISS);
         },
       style: tmp.closeButton,
-      children: closure_8(tmp2(5892).XSmallIcon, { size: "sm", color: "text-default" })
+      children: closure_8(tmp2(5897).XSmallIcon, { size: "sm", color: "text-default" })
     };
-    const items = [closure_8(tmp2(5334).PressableOpacity, obj3), , , , ];
+    const items = [closure_8(tmp2(5339).PressableOpacity, obj3), , , , ];
     let obj4 = { imageSrc: coverImageUrl };
     items[1] = closure_8(GameClaimCardStackDefault, obj4);
     let obj5 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp.centeredText, children: null };
@@ -91,7 +91,7 @@ export default noop.memo((arg0) => {
     const obj9 = { variant: "primary", size: "sm", text: null, icon: null, iconPosition: "end", onPress: null };
     const intl3 = tmp2(1115).intl;
     obj9.text = intl3.string(tmp2(1115).t["2u6ZlY"]);
-    obj9.icon = closure_8(tmp2(8854).LinkExternalSmallIcon, { size: "xs", color: "white" });
+    obj9.icon = closure_8(tmp2(8855).LinkExternalSmallIcon, { size: "xs", color: "white" });
     obj9.onPress = asyncGeneratorStep(async (arg0, value) => {
       if (v3 === 2) {
         v3 = 3;
@@ -120,7 +120,7 @@ export default noop.memo((arg0) => {
               require(constants2.TAKE_ACTION);
               v1 = 1;
               v3 = 1;
-              const obj5 = { value: v1(7556).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7560).LoginHandoffSource.GAME_CLAIM), done: false };
+              const obj5 = { value: v1(7558).redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, v3(7562).LoginHandoffSource.GAME_CLAIM), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -143,7 +143,7 @@ export default noop.memo((arg0) => {
     obj8.children = closure_8(tmp2(5186).Button, obj9);
     items[4] = closure_8(View, obj8);
     obj2.children = items;
-    return closure_9(tmp2(5819).Card, obj2);
+    return closure_9(tmp2(5824).Card, obj2);
   }
   const tmp6Result = useGameNameAndCoverImageDefault(first, intl.string(util.t.VQq92a));
 });

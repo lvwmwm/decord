@@ -1,10 +1,10 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 11948
+// Function ID: 11949
 // Name: ForwardPreviewUtils
 // Dependencies: [4395, 504, 5101, 2]
 // Exports: useForwardPreviewContent
 
-// Module 11946 (ForwardPreviewUtils)
+// Module 11948 (ForwardPreviewUtils)
 import EmbedUtils from "EmbedUtils" /* 5101 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 

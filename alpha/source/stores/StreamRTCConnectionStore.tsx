@@ -1,7 +1,7 @@
 // Module ID: 4795
 // Function ID: 4796
 // Name: StreamRTCConnectionStore
-// Dependencies: [1999, 502, 1992, 4796, 4779, 1074, 4798, 38, 4800, 12, 4808, 7978, 573, 4811, 1364, 504, 14063, 2]
+// Dependencies: [1999, 502, 1992, 4796, 4779, 1074, 4798, 38, 4800, 12, 4808, 7980, 573, 4811, 1364, 504, 14069, 2]
 
 // Module 4795 (StreamRTCConnectionStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,7 +10,7 @@ import initializeDefault from "initialize" /* 504 */;
 import StreamRTCConnectionDefault from "StreamRTCConnection" /* 4800 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4808 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import canSpectateDefault from "canSpectate" /* 14063 */;
+import canSpectateDefault from "canSpectate" /* 14069 */;
 import RunningGameStore from "RunningGameStore" /* 1999 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
@@ -292,7 +292,7 @@ if (MediaEngineStore.isSupported()) {
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
         const streamKey = appContext.streamKey;
-        closure_11[streamKey] = { appContext, analyticsLocations: "Array" };
+        closure_11[streamKey] = { appContext, analyticsLocations: "y" };
         const item = _modDef12.forEach(closure_18, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;
           analyticsContext.setActionContext(appContext);
@@ -322,8 +322,8 @@ if (MediaEngineStore.isSupported()) {
             tmp11 = null == dependencyMap2[streamKey];
           }
           if (tmp11) {
-            tmp10[streamKey] = tmp4(7978).getStreamerApplication(decodeStreamKeyResult, PresenceStore);
-            const tmp4Result = tmp4(7978);
+            tmp10[streamKey] = tmp4(7980).getStreamerApplication(decodeStreamKeyResult, PresenceStore);
+            const tmp4Result = tmp4(7980);
           }
           const obj3 = { streamRegion: region, streamApplication: dependencyMap[streamKey], streamSourceType: null, actionContext: null, numViewers: null, goLiveModalDurationMs: null, analyticsLocations: null };
           let str2 = "unknown";

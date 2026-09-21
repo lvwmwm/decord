@@ -1,24 +1,24 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9525
+// Function ID: 9526
 // Name: executeCommand
-// Dependencies: [5, 5671, 2109, 2063, 5104, 1372, 8020, 1074, 4749, 7763, 573, 8005, 7761, 1978, 9525, 9527, 38, 9528, 4936, 8018, 9420, 4409, 1370, 7993, 8385, 8074, 8384, 9529, 8449, 7992, 7696, 5373, 5345, 5340, 1115, 8083, 2]
+// Dependencies: [5, 5676, 2109, 2063, 5104, 1372, 8022, 1074, 4749, 7765, 573, 8007, 7763, 1978, 9526, 9528, 38, 9529, 4936, 8020, 9421, 4409, 1370, 7995, 8386, 8076, 8385, 9530, 8450, 7994, 7698, 5378, 5350, 5345, 1115, 8085, 2]
 // Exports: default, retryCommandMessage
 
-// Module 9524 (executeCommand)
-import UploadUtils from "UploadUtils" /* 5340 */;
-import FileUtils from "FileUtils" /* 5345 */;
-import UploadLimits from "UploadLimits" /* 5373 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7763 */;
-import MessageQueue from "MessageQueue" /* 8074 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8385 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9529 */;
+// Module 9525 (executeCommand)
+import UploadUtils from "UploadUtils" /* 5345 */;
+import FileUtils from "FileUtils" /* 5350 */;
+import UploadLimits from "UploadLimits" /* 5378 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
+import MessageQueue from "MessageQueue" /* 8076 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8386 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9530 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import EmojiStore from "EmojiStore" /* 5671 */;
+import EmojiStore from "EmojiStore" /* 5676 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
 import UserStore from "UserStore" /* 1372 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8020 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8022 */;
 
 const MessageQueueDefault = MessageQueue;
 
@@ -720,8 +720,8 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce: null, attachments: null, maxSizeCallback: null, analytics_location: null, sectionName: null, source: null };
     let nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      nonce = onMessageSuccess(7993).createNonce();
-      let obj2 = onMessageSuccess(7993);
+      nonce = onMessageSuccess(7995).createNonce();
+      let obj2 = onMessageSuccess(7995);
     }
     message.nonce = nonce;
     message.attachments = attachments;
@@ -782,8 +782,8 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     closure_129_0 = message;
     closure_129_1 = onMessageSuccess;
     const tmp10 = onMessageSuccess;
-    const obj10 = { type: tmp10(8074).MessageDataType.COMMAND, message };
-    message(8074).enqueue(obj10, (ok) => {
+    const obj10 = { type: tmp10(8076).MessageDataType.COMMAND, message };
+    message(8076).enqueue(obj10, (ok) => {
       ({ nonce, applicationId, channelId, guildId } = closure_0);
       if (guildId == null) {
         guildId = null;
@@ -797,7 +797,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         closure_1();
       }
     });
-    const obj6 = message(8074);
+    const obj6 = message(8076);
   }
 }
 function displayInteractionLifecycleInChat() {
@@ -874,7 +874,7 @@ let closure_20 = async function _displayInteractionLifecycleInChat(arg0, arg1, a
                     c6 = 1;
                     c7 = 2;
                     c8 = 1;
-                    const obj9 = { value: tmp65(8449).getUser(cachedApplicationSection.botId), done: false };
+                    const obj9 = { value: tmp65(8450).getUser(cachedApplicationSection.botId), done: false };
                     return obj9;
                   }
                 }
@@ -964,25 +964,25 @@ let closure_20 = async function _displayInteractionLifecycleInChat(arg0, arg1, a
 };
 function getAnalyticsLocationFromCommandOrigin(arg0) {
   if (ApplicationCommandTypes.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (tmp(7763).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (tmp(7763).CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (tmp(7763).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (tmp(7763).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (tmp(7763).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (tmp(7763).CommandOrigin.MINI_SHELF === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (tmp(7763).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (tmp(7763).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return tmp(7763).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+    return tmp(7765).ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (tmp(7765).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (tmp(7765).CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (tmp(7765).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (tmp(7765).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (tmp(7765).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (tmp(7765).CommandOrigin.MINI_SHELF === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (tmp(7765).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (tmp(7765).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return tmp(7765).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return tmp(7763).ApplicationCommandTriggerLocations.SLASH_UI;
+    return tmp(7765).ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {
@@ -1128,8 +1128,8 @@ let closure_24 = async function _stageAttachments(arg0, value) {
             }
             const intl = closure_0(1115).intl;
             const obj2 = { maxSize: null };
-            const obj = closure_2(8385);
-            obj2.maxSize = closure_0(5345).sizeString(dependencyMap);
+            const obj = closure_2(8386);
+            obj2.maxSize = closure_0(5350).sizeString(dependencyMap);
             obj.setFailed(closure_1_1, constants.ENTITY_TOO_LARGE, intl.formatToPlainString(closure_0(1115).t.fxEKdS, obj2));
           };
           const obj11 = UploadLimits;

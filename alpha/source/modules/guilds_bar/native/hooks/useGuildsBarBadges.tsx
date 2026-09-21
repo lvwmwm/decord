@@ -1,17 +1,17 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 16668
+// Function ID: 16669
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 10336, 4578, 2105, 2063, 4395, 1372, 1074, 21, 4756, 504, 4579, 16663, 4457, 576, 1177, 16667, 16631, 16630, 2]
+// Dependencies: [109, 19, 10337, 4578, 2105, 2063, 4395, 1372, 1074, 21, 4756, 504, 4579, 16669, 4457, 576, 1177, 16673, 16637, 16636, 2]
 // Exports: default
 
-// Module 16662 (useGuildsBarBadges)
+// Module 16668 (useGuildsBarBadges)
 import native from "native" /* 1177 */;
 import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4579 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16631 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16667 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16637 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 16673 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10336 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10337 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4578 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2063 */;

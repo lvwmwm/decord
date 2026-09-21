@@ -1,10 +1,10 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16776
+// Function ID: 16777
 // Name: ForYouHoistedItemsHeader
 // Dependencies: [19, 17, 21, 4756, 576, 2]
 // Exports: ForYouHoistedItemsHeader
 
-// Module 16770 (ForYouHoistedItemsHeader)
+// Module 16776 (ForYouHoistedItemsHeader)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

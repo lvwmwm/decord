@@ -1,18 +1,18 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13201
+// Function ID: 13202
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 7219, 504, 4605, 4752, 1115, 5796, 2055, 2]
+// Dependencies: [19, 17, 4748, 21, 4756, 576, 7224, 504, 4605, 4752, 1115, 5801, 2055, 2]
 // Exports: default
 
-// Module 13199 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 13201 (InAppReportsGuildDiscoveryPreviewElement)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import GuildIconDefault from "GuildIcon" /* 5796 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7219 */;
+import GuildIconDefault from "GuildIcon" /* 5801 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 

@@ -1,0 +1,9 @@
+// Module ID: 17988
+// Function ID: 17989
+// Dependencies: [1121]
+
+// Module 17988
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/audit_logs", width: 24, height: 24, scales: [2, 3], hash: "d8654e85ab963a57d73460b14bc376cd", name: "ic_audit_update_24px", type: "png" });

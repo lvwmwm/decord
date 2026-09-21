@@ -1,14 +1,9 @@
 // Module ID: 8574
 // Function ID: 8575
-// Dependencies: [8575]
-// Exports: default
+// Dependencies: [17]
 
 // Module 8574
-import _modDef8575 from "module_8575" /* 8575 */;
+import _mod17 from "module_17" /* 17 */;
 
-importDefault = arg2;
-const dependencyMap = arg6;
 
-export default function getWebViewProxy(FRAME_WEB_VIEW_KEY) {
-  return new _modDef8575(FRAME_WEB_VIEW_KEY);
-};
+export default _mod17.requireNativeComponent("RNCWebViewContainer");

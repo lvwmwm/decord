@@ -1,12 +1,12 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16506
+// Function ID: 16507
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [2105, 5650, 1372, 4650, 1374, 1969, 504, 2]
+// Dependencies: [2105, 5655, 1372, 4650, 1374, 1969, 504, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 16500 (useIsCurrentUserEligibleForPowerupUpsells)
+// Module 16506 (useIsCurrentUserEligibleForPowerupUpsells)
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import SortedGuildStore from "SortedGuildStore" /* 5650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 import UserStore from "UserStore" /* 1372 */;
 import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4650 */;
 

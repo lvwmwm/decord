@@ -1,16 +1,16 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15401
+// Function ID: 15402
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [19, 17, 4805, 1074, 11739, 7952, 11765, 15396, 15286, 7940, 5659, 15295, 5084, 5089, 2]
+// Dependencies: [19, 17, 4805, 1074, 11741, 7954, 11767, 15402, 15292, 7942, 5664, 15301, 5084, 5089, 2]
 // Exports: default
 
-// Module 15395 (useVideoQuestPlayerAnalytics)
+// Module 15401 (useVideoQuestPlayerAnalytics)
 import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
-import QuestTypes from "QuestTypes" /* 5659 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7940 */;
-import AnalyticsActions from "AnalyticsActions" /* 7952 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11765 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15286 */;
+import QuestTypes from "QuestTypes" /* 5664 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7942 */;
+import AnalyticsActions from "AnalyticsActions" /* 7954 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11767 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15292 */;
 import noop from "module_19" /* 19 */;
 import NetworkStore from "NetworkStore" /* 4805 */;
 
@@ -98,13 +98,13 @@ export default function useVideoQuestPlayerAnalytics(duration) {
   const items2 = [playerState, handlePlayerStateChange];
   const effect2 = questId.useEffect(() => {
     if (AdsVideoTypes.PlayerState.PLAYING === playerState) {
-      handlePlayerStateChange(tmp2(7940).VideoPlayerState.PLAYING, null);
-    } else if (tmp2(15286).PlayerState.PAUSED === tmp) {
-      handlePlayerStateChange(tmp2(7940).VideoPlayerState.PAUSED, null);
-    } else if (tmp2(15286).PlayerState.ENDED === tmp) {
-      handlePlayerStateChange(tmp2(7940).VideoPlayerState.ENDED, null);
-    } else if (tmp2(15286).PlayerState.ERRORED === tmp) {
-      handlePlayerStateChange(tmp2(7940).VideoPlayerState.PAUSED, null);
+      handlePlayerStateChange(tmp2(7942).VideoPlayerState.PLAYING, null);
+    } else if (tmp2(15292).PlayerState.PAUSED === tmp) {
+      handlePlayerStateChange(tmp2(7942).VideoPlayerState.PAUSED, null);
+    } else if (tmp2(15292).PlayerState.ENDED === tmp) {
+      handlePlayerStateChange(tmp2(7942).VideoPlayerState.ENDED, null);
+    } else if (tmp2(15292).PlayerState.ERRORED === tmp) {
+      handlePlayerStateChange(tmp2(7942).VideoPlayerState.PAUSED, null);
     }
   }, items2);
   questId.useRef(null);

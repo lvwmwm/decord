@@ -1,20 +1,20 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 11930
+// Function ID: 11931
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 4976, 4749, 1074, 21, 8438, 8536, 1385, 1115, 4467, 7696, 7437, 7389, 5184, 576, 4752, 7325, 5816, 5186, 2]
+// Dependencies: [5, 32, 19, 4976, 4749, 1074, 21, 8439, 8537, 1385, 1115, 4467, 7698, 7442, 7394, 5184, 576, 4752, 7330, 5821, 5186, 2]
 // Exports: default
 
-// Module 11928 (EditAttachmentActionSheet)
+// Module 11930 (EditAttachmentActionSheet)
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5816 */;
-import TextArea from "TextArea" /* 7325 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7389 */;
-import ActionSheet from "ActionSheet" /* 7437 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8438 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5821 */;
+import TextArea from "TextArea" /* 7330 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7394 */;
+import ActionSheet from "ActionSheet" /* 7442 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8439 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -150,7 +150,7 @@ export default function EditAttachmentActionSheet(arg0) {
   const tmp7Result3 = first1(first2.useState(false), 2);
   first2 = tmp7Result3[0];
   closure_6 = tmp7Result3[1];
-  const tmp5 = attachment(8536)(attachment);
+  const tmp5 = attachment(8537)(attachment);
   [tmp17, c7] = first1(first2.useState(), 2);
   let intl = tmp(1115).intl;
   let stringResult = intl.string(util.t.Y8ujqr);

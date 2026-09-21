@@ -1,10 +1,10 @@
-// Module ID: 14389
-// Function ID: 14390
+// Module ID: 14395
+// Function ID: 14396
 // Name: EmptyState
 // Dependencies: [19, 17, 21, 4756, 576, 4607, 4752, 2]
 // Exports: default
 
-// Module 14389 (EmptyState)
+// Module 14395 (EmptyState)
 import nativeDefault from "native" /* 576 */;
 import shared from "shared" /* 4607 */;
 import noop from "module_19" /* 19 */;

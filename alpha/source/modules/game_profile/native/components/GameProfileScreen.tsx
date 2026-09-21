@@ -1,22 +1,22 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 8952
+// Function ID: 8953
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8952, 21, 4756, 576, 5186, 1115, 8438, 8953, 4451, 8956, 7549, 5322, 4492, 8957, 4757, 8958, 8963, 4723, 8980, 7390, 6864, 8981, 8983, 9182, 7394, 2]
+// Dependencies: [32, 19, 17, 8953, 21, 4756, 576, 5186, 1115, 8439, 8954, 4451, 8957, 7551, 5327, 4492, 8958, 4757, 8959, 8964, 4723, 8981, 7395, 6869, 8982, 8984, 9183, 7399, 2]
 // Exports: default
 
-// Module 8951 (GameProfileScreen)
+// Module 8952 (GameProfileScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
 import timing from "timing" /* 4757 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8956 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8963 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8980 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8964 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8981 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8952 */;
+import GameProfileStore from "GameProfileStore" /* 8953 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;
 

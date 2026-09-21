@@ -1,10 +1,10 @@
-// Module ID: 9405
-// Function ID: 9406
+// Module ID: 9406
+// Function ID: 9407
 // Name: ApplicationCommandFrecencyStore
 // Dependencies: [1220, 5210, 1349, 1084, 4793, 12, 504, 573, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 9405 (ApplicationCommandFrecencyStore)
+// Module 9406 (ApplicationCommandFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

@@ -1,10 +1,10 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9396
+// Function ID: 9397
 // Name: DomainVerifyUtils
 // Dependencies: [2]
 // Exports: getDnsName, getHttpName
 
-// Module 9395 (DomainVerifyUtils)
+// Module 9396 (DomainVerifyUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connections/DomainVerifyUtils.tsx");

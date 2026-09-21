@@ -1,15 +1,15 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11807
+// Function ID: 11808
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7772, 7351, 2096, 2063, 4937, 1074, 2038, 21, 4756, 576, 7221, 11806, 504, 11808, 4576, 2027, 11804, 7290, 8996, 5819, 5334, 1115, 6853, 5799, 11810, 4752, 4909, 4474, 5899, 5829, 4457, 5239, 5816, 5823, 1177, 4746, 2]
+// Dependencies: [32, 19, 17, 7774, 7356, 2096, 2063, 4937, 1074, 2038, 21, 4756, 576, 7226, 11808, 504, 11810, 4576, 2027, 11806, 7295, 8997, 5824, 5339, 1115, 6858, 5804, 11812, 4752, 4909, 4474, 5904, 5834, 4457, 5239, 5821, 5828, 1177, 4746, 2]
 // Exports: default
 
-// Module 11805 (ChannelBrowser)
+// Module 11807 (ChannelBrowser)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7772 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7351 */;
+import NewChannelsStore from "NewChannelsStore" /* 7774 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7356 */;
 import GuildChannelStore from "GuildChannelStore" /* 2096 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
@@ -73,13 +73,13 @@ let closure_17 = noop.memo((channel) => {
     accessibilityState = checkboxA11yNative.accessibilityState;
   }
   obj3.accessibilityState = accessibilityState;
-  const items1 = [closure_12(channel(5899).TableRowGroupTitle, { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 }), ];
+  const items1 = [closure_12(channel(5904).TableRowGroupTitle, { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 }), ];
   let tmp10Result = null;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: null };
     const obj6 = { style: tmp.selectAllCheckbox, children: null };
     const obj7 = { checked: stateFromStores };
-    obj6.children = tmp8(tmp4(5829).FormCheckbox, obj7);
+    obj6.children = tmp8(tmp4(5834).FormCheckbox, obj7);
     const items2 = [tmp8(View, obj6), ];
     const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: null };
     const intl = tmp4(1115).intl;
@@ -90,7 +90,7 @@ let closure_17 = noop.memo((channel) => {
   }
   items1[1] = tmp10Result;
   obj3.children = closure_13(closure_14, { children: items1 });
-  return closure_12(channel(5334).PressableOpacity, obj3);
+  return closure_12(channel(5339).PressableOpacity, obj3);
 });
 let closure_18 = noop.memo((channel) => {
   channel = channel.channel;

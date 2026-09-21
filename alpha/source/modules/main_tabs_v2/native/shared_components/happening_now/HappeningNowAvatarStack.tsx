@@ -1,15 +1,15 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16421
+// Function ID: 16422
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2109, 13320, 21, 4756, 576, 1177, 4492, 563, 5185, 9093, 4752, 1881, 16416, 2]
+// Dependencies: [32, 19, 17, 2109, 13322, 21, 4756, 576, 1177, 4492, 563, 5185, 9094, 4752, 1881, 16422, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 16415 (HappeningNowAvatarStack)
+// Module 16421 (HappeningNowAvatarStack)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
-import ClipViewDefault from "ClipView" /* 9093 */;
+import ClipViewDefault from "ClipView" /* 9094 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const CHANNEL_SPRING_CONFIG = fn(13320).CHANNEL_SPRING_CONFIG;
+const CHANNEL_SPRING_CONFIG = fn(13322).CHANNEL_SPRING_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let SPRING_CONFIG = { damping: 17, stiffness: 320, mass: 0.5 };
@@ -130,7 +130,7 @@ export const HappeningNowAvatarStack = function HappeningNowAvatarStack(userLimi
     const obj2 = { style: shiftedAvatar, children: null };
     if (index !== diff) {
       const obj3 = { cutouts: null, children: null };
-      const point = { shape: tmp3(9093).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp5] - num3 - num2, y: -num2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp5] + 2 * num2 };
+      const point = { shape: tmp3(9094).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp5] - num3 - num2, y: -num2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp5] + 2 * num2 };
       const items = [point];
       obj3.cutouts = items;
       obj3.children = tmp6;

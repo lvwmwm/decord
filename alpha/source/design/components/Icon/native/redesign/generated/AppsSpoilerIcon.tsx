@@ -1,10 +1,10 @@
-// Module ID: 5315
-// Function ID: 5316
+// Module ID: 5322
+// Function ID: 5323
 // Name: AppsSpoilerIcon
 // Dependencies: [19, 21, 576, 4456, 5267, 2]
 // Exports: AppsSpoilerIcon
 
-// Module 5315 (AppsSpoilerIcon)
+// Module 5322 (AppsSpoilerIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5267 from "module_5267" /* 5267 */;

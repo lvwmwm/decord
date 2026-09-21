@@ -1,9 +1,9 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 13968
+// Function ID: 13969
 // Name: GlobalDiscoveryServersSearchCountsStore
 // Dependencies: [4656, 504, 573, 2]
 
-// Module 13962 (GlobalDiscoveryServersSearchCountsStore)
+// Module 13968 (GlobalDiscoveryServersSearchCountsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4656 */;

@@ -1,22 +1,22 @@
-// Module ID: 9863
-// Function ID: 9864
+// Module ID: 9864
+// Function ID: 9865
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 7766, 2047, 21, 4756, 1115, 4348, 9752, 1484, 4752, 5186, 1875, 9788, 4467, 9792, 9852, 9794, 2]
+// Dependencies: [32, 19, 7768, 2047, 21, 4756, 1115, 4348, 9753, 1484, 4752, 5186, 1875, 9789, 4467, 9793, 9853, 9795, 2]
 // Exports: default
 
-// Module 9863 (EditGuildEventDetails)
+// Module 9864 (EditGuildEventDetails)
 import util from "util" /* 1115 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import ScheduleUtils from "ScheduleUtils" /* 9752 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9788 */;
+import ScheduleUtils from "ScheduleUtils" /* 9753 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9789 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_6 = fn(7766).isGuildScheduledEventActive;
+let closure_6 = fn(7768).isGuildScheduledEventActive;
 let constants = fn(2047).GuildScheduledEventEntityTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);

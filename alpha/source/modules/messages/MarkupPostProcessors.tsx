@@ -1,10 +1,10 @@
-// Module ID: 8132
-// Function ID: 8133
+// Module ID: 8133
+// Function ID: 8134
 // Name: MarkupPostProcessors
-// Dependencies: [1074, 1375, 5101, 1361, 8133, 4739, 1231, 2]
+// Dependencies: [1074, 1375, 5101, 1361, 8134, 4739, 1231, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 8132 (MarkupPostProcessors)
+// Module 8133 (MarkupPostProcessors)
 import EmojiConstants from "EmojiConstants" /* 1375 */;
 import findCodedLinks from "findCodedLinks" /* 4739 */;
 import EmbedUtils from "EmbedUtils" /* 5101 */;
@@ -41013,8 +41013,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !closure_0(8133).isExperimentEmbedURL(type.target);
-      const obj = closure_0(8133);
+      tmp = !closure_0(8134).isExperimentEmbedURL(type.target);
+      const obj = closure_0(8134);
     }
     return tmp;
   });
@@ -41273,8 +41273,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !closure_0(8133).isExperimentEmbedURL(type.target);
-        const obj = closure_0(8133);
+        tmp = !closure_0(8134).isExperimentEmbedURL(type.target);
+        const obj = closure_0(8134);
       }
       return tmp;
     });

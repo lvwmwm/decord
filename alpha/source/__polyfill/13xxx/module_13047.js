@@ -1,11 +1,35 @@
 // Module ID: 13047
 // Function ID: 13048
-// Dependencies: []
+// Dependencies: [13048, 13051]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 13047
-let __SENTRY_DEBUG__ = typeof globalThis.__SENTRY_DEBUG__ === "undefined";
-if (typeof globalThis.__SENTRY_DEBUG__ !== "undefined") {
-  __SENTRY_DEBUG__ = globalThis.__SENTRY_DEBUG__;
-}
+import _mod13048 from "module_13048" /* 13048 */;
+import _mod13051 from "module_13051" /* 13051 */;
 
-export const DEBUG_BUILD = __SENTRY_DEBUG__;
+require = arg1;
+const dependencyMap = arg6;
+function instrumentError() {
+  onerror = _mod13051.GLOBAL_OBJ.onerror;
+  _mod13051.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    _mod13048.triggerHandlers("error", { column, error, line, msg, url });
+    if (!onerror) {
+      return tmp2;
+    } else {
+      const self = this;
+      const apply = onerror.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+      } else {
+        applyArgumentsResult = apply(self, arguments);
+      }
+    }
+  };
+  _mod13051.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
+}
+let onerror = null;
+
+export const addGlobalErrorInstrumentationHandler = function addGlobalErrorInstrumentationHandler(arg0) {
+  _mod13048.addHandler("error", arg0);
+  _mod13048.maybeInstrument("error", instrumentError);
+};

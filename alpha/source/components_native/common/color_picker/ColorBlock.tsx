@@ -1,12 +1,12 @@
-// Module ID: 14867
-// Function ID: 14868
+// Module ID: 14873
+// Function ID: 14874
 // Name: ColorBlock
-// Dependencies: [19, 17, 21, 4756, 576, 1092, 5334, 4605, 1177, 11813, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1092, 5339, 4605, 1177, 11815, 2]
 
-// Module 14867 (ColorBlock)
+// Module 14873 (ColorBlock)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import _modDef11813 from "module_11813" /* 11813 */;
+import _modDef11815 from "module_11815" /* 11815 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -46,9 +46,9 @@ export default noop.memo((color) => {
     obj2.style = items;
     if (!selected) {
       obj2.children = null;
-      let tmp10Result1 = tmp6(tmp2(5334).PressableOpacity, obj2);
+      let tmp10Result1 = tmp6(tmp2(5339).PressableOpacity, obj2);
     } else {
-      const obj5 = { source: _modDef11813, color: null };
+      const obj5 = { source: _modDef11815, color: null };
       if (v < 0.5) {
         unsafe_rawColors = tmp8(576).unsafe_rawColors;
         let BLACK2 = unsafe_rawColors.WHITE;
@@ -69,7 +69,7 @@ export default noop.memo((color) => {
       obj6.children = null;
       tmp10Result1 = tmp10(tmp11, obj6);
     } else {
-      const obj8 = { source: _modDef11813, color: null };
+      const obj8 = { source: _modDef11815, color: null };
       if (v < 0.5) {
         let BLACK = tmp3(576).unsafe_rawColors.WHITE;
       } else {

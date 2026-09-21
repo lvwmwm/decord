@@ -1,13 +1,13 @@
-// Module ID: 10190
-// Function ID: 10191
+// Module ID: 10191
+// Function ID: 10192
 // Name: HandRequestDenyIcon
-// Dependencies: [19, 21, 576, 4456, 10191, 2]
+// Dependencies: [19, 21, 576, 4456, 10192, 2]
 // Exports: HandRequestDenyIcon
 
-// Module 10190 (HandRequestDenyIcon)
+// Module 10191 (HandRequestDenyIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod10191 from "module_10191" /* 10191 */;
+import _mod10192 from "module_10192" /* 10192 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HandRequestDenyIcon = function HandRequestDenyIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10191, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10192, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

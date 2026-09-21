@@ -1,10 +1,10 @@
-// Module ID: 5898
-// Function ID: 5899
+// Module ID: 5903
+// Function ID: 5904
 // Name: RedesignCompat
 // Dependencies: [19, 21, 2]
 // Exports: RedesignCompat
 
-// Module 5898 (RedesignCompat)
+// Module 5903 (RedesignCompat)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

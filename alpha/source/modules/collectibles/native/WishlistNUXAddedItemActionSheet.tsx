@@ -1,21 +1,21 @@
-// Module ID: 9050
-// Function ID: 9051
+// Module ID: 9051
+// Function ID: 9052
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1372, 8451, 21, 4756, 576, 504, 1973, 4723, 8447, 7422, 9051, 7390, 9052, 4752, 1115, 5645, 5186, 2]
+// Dependencies: [32, 19, 17, 1372, 8452, 21, 4756, 576, 504, 1973, 4723, 8448, 7427, 9052, 7395, 9053, 4752, 1115, 5650, 5186, 2]
 // Exports: default
 
-// Module 9050 (WishlistNUXAddedItemActionSheet)
+// Module 9051 (WishlistNUXAddedItemActionSheet)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import SKUPreview from "SKUPreview" /* 9051 */;
+import SKUPreview from "SKUPreview" /* 9052 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const UserProfileSections = fn(8451).UserProfileSections;
+const UserProfileSections = fn(8452).UserProfileSections;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4756);
@@ -58,11 +58,11 @@ export default function WishlistNUXAddedItemActionSheet(product) {
     ActionSheetActionCreatorsDefault.hideAllActionSheets();
     if (null != stateFromStores) {
       const obj2 = { userId: tmp4.id, sourceAnalyticsLocations: null, initialSection: null };
-      const items = [tmp(7422).COLLECTIBLES_SHOP];
+      const items = [tmp(7427).COLLECTIBLES_SHOP];
       obj2.sourceAnalyticsLocations = items;
       obj2.initialSection = UserProfileSections.WISHLIST;
-      tmp(8447)(obj2);
-      const tmpResult = tmp(8447);
+      tmp(8448)(obj2);
+      const tmpResult = tmp(8448);
     }
   }, items2);
   const callback2 = noop.useCallback(() => {

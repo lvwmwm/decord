@@ -1,9 +1,9 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16030
+// Function ID: 16031
 // Name: TextDisplayComponentViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 16024 (TextDisplayComponentViewNativeComponent)
+// Module 16030 (TextDisplayComponentViewNativeComponent)
 import weakSet from "weakSet" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

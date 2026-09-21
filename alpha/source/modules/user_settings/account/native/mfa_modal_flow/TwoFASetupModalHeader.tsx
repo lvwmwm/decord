@@ -1,9 +1,9 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 15061
+// Function ID: 15062
 // Name: TwoFASetupModalHeader
 // Dependencies: [19, 17, 21, 4756, 576, 2]
 
-// Module 15055 (TwoFASetupModalHeader)
+// Module 15061 (TwoFASetupModalHeader)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 8925
-// Function ID: 8926
+// Module ID: 8926
+// Function ID: 8927
 // Name: InAppReportsShieldElement
-// Dependencies: [19, 17, 21, 4756, 5904, 2]
+// Dependencies: [19, 17, 21, 4756, 5909, 2]
 // Exports: default
 
-// Module 8925 (InAppReportsShieldElement)
-import native from "native" /* 5904 */;
+// Module 8926 (InAppReportsShieldElement)
+import native from "native" /* 5909 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

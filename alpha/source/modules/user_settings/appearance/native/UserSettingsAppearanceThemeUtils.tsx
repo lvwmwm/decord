@@ -1,14 +1,14 @@
-// Module ID: 15438
-// Function ID: 15439
+// Module ID: 15444
+// Function ID: 15445
 // Name: UserSettingsAppearanceThemeUtils
-// Dependencies: [1227, 1182, 1185, 1074, 1229, 1374, 1230, 1186, 15439, 12199, 9471, 1228, 4604, 15440, 1241, 2]
+// Dependencies: [1227, 1182, 1185, 1074, 1229, 1374, 1230, 1186, 15445, 12201, 9472, 1228, 4604, 15446, 1241, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 15438 (UserSettingsAppearanceThemeUtils)
+// Module 15444 (UserSettingsAppearanceThemeUtils)
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 4604 */;
-import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 15440 */;
+import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 15446 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -25,39 +25,39 @@ export const handleSaveTheme = function handleSaveTheme(mobileThemes, analyticsL
     const obj2 = { feature_name: constants.CLIENT_THEME, theme_name: "custom theme", is_persisted: true, is_synced: isSynced, location_stack: analyticsLocations };
     AnalyticsUtilsDefault.track(AnalyticEvents.CLIENT_THEME_UPDATED, obj2);
     if ("system" === mobileThemes.theme) {
-      const result = tmp(15439).resetBackgroundGradientPreset();
-      const tmpResult = tmp(15439);
-      tmp(12199).resetCustomTheme();
-      const tmpResult13 = tmp(12199);
+      const result = tmp(15445).resetBackgroundGradientPreset();
+      const tmpResult = tmp(15445);
+      tmp(12201).resetCustomTheme();
+      const tmpResult13 = tmp(12201);
       const obj3 = { theme: mobileThemes.theme };
-      return tmp(9471).saveClientTheme(obj3);
+      return tmp(9472).saveClientTheme(obj3);
     } else if (mobileThemes.type === tmp(1230).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
       const customThemeBaseTheme = tmp(1228).getCustomThemeBaseTheme(mobileThemes.theme);
       const tmpResult15 = tmp(1228);
-      const result1 = tmp(15439).resetBackgroundGradientPreset();
-      const tmpResult16 = tmp(15439);
-      tmp(12199).updateCustomTheme(mobileThemes.customThemeSettings, customThemeBaseTheme);
-      const tmpResult17 = tmp(12199);
+      const result1 = tmp(15445).resetBackgroundGradientPreset();
+      const tmpResult16 = tmp(15445);
+      tmp(12201).updateCustomTheme(mobileThemes.customThemeSettings, customThemeBaseTheme);
+      const tmpResult17 = tmp(12201);
       const obj4 = { customUserThemeSettings: mobileThemes.customThemeSettings, theme: customThemeBaseTheme };
-      return tmp(9471).saveClientTheme(obj4);
+      return tmp(9472).saveClientTheme(obj4);
     } else {
       if (mobileThemes.type === tmp(1230).ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-        const result2 = tmp(15439).updateBackgroundGradientPreset(mobileThemes.id);
-        const tmpResult19 = tmp(15439);
-        tmp(12199).resetCustomTheme();
-        const tmpResult20 = tmp(12199);
+        const result2 = tmp(15445).updateBackgroundGradientPreset(mobileThemes.id);
+        const tmpResult19 = tmp(15445);
+        tmp(12201).resetCustomTheme();
+        const tmpResult20 = tmp(12201);
         ({ id: obj10.backgroundGradientPresetId, theme: obj10.theme } = mobileThemes);
-        let saveClientThemeResult = tmp(9471).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
+        let saveClientThemeResult = tmp(9472).saveClientTheme({ backgroundGradientPresetId: null, theme: null });
         const obj5 = { backgroundGradientPresetId: null, theme: null };
-        const tmpResult21 = tmp(9471);
+        const tmpResult21 = tmp(9472);
       } else {
-        const result3 = tmp(15439).resetBackgroundGradientPreset();
-        const tmpResult22 = tmp(15439);
-        tmp(12199).resetCustomTheme();
-        const tmpResult23 = tmp(12199);
+        const result3 = tmp(15445).resetBackgroundGradientPreset();
+        const tmpResult22 = tmp(15445);
+        tmp(12201).resetCustomTheme();
+        const tmpResult23 = tmp(12201);
         const obj6 = { theme: mobileThemes.theme };
-        saveClientThemeResult = tmp(9471).saveClientTheme(obj6);
-        const tmpResult24 = tmp(9471);
+        saveClientThemeResult = tmp(9472).saveClientTheme(obj6);
+        const tmpResult24 = tmp(9472);
       }
       return saveClientThemeResult;
     }

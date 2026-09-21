@@ -1,19 +1,19 @@
-// Module ID: 14042
-// Function ID: 14043
+// Module ID: 14048
+// Function ID: 14049
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 2095, 7766, 21, 4756, 576, 9749, 504, 9758, 9752, 4723, 9782, 4963, 9886, 5334, 9868, 5186, 1115, 2]
+// Dependencies: [19, 17, 2095, 7768, 21, 4756, 576, 9750, 504, 9759, 9753, 4723, 9783, 4963, 9887, 5339, 9869, 5186, 1115, 2]
 
-// Module 14042 (GuildEventVoiceBanner)
+// Module 14048 (GuildEventVoiceBanner)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9782 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9886 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9783 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9887 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7766).isGuildScheduledEventActive;
+let closure_6 = fn(7768).isGuildScheduledEventActive;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);

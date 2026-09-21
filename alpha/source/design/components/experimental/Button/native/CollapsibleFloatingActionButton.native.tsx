@@ -1,16 +1,16 @@
-// Module ID: 9189
-// Function ID: 9190
+// Module ID: 9190
+// Function ID: 9191
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [19, 21, 5191, 4756, 4492, 5185, 5189, 5187, 9190, 576, 2]
+// Dependencies: [19, 21, 5191, 4756, 4492, 5185, 5189, 5187, 9191, 576, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 9189 (CollapsibleFloatingActionButton)
+// Module 9190 (CollapsibleFloatingActionButton)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;
 import ButtonConstants2 from "ButtonConstants" /* 5191 */;
-import FloatingActionButton from "FloatingActionButton" /* 9190 */;
+import FloatingActionButton from "FloatingActionButton" /* 9191 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -67,11 +67,11 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(9190).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(9191).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: null };
   if (positionBottom == null) {
-    positionBottom = tmp3(9190).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(9191).DEFAULT_POSITION_OFFSET;
   }
   rect.bottom = positionBottom;
   items[1] = rect;

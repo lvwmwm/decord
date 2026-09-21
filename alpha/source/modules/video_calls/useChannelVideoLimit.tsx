@@ -1,10 +1,10 @@
-// Module ID: 9909
-// Function ID: 9910
+// Module ID: 9910
+// Function ID: 9911
 // Name: useChannelVideoLimit
 // Dependencies: [2063, 4780, 1074, 504, 2]
 // Exports: default, getChannelVideoLimit
 
-// Module 9909 (useChannelVideoLimit)
+// Module 9910 (useChannelVideoLimit)
 import GuildStore from "GuildStore" /* 2063 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8203
+// Function ID: 8204
 // Name: getEmbedThemeColors
 // Dependencies: [19, 4756, 4607, 576, 4605, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 8202 (getEmbedThemeColors)
+// Module 8203 (getEmbedThemeColors)
 import nativeDefault from "native" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
 import shared from "shared" /* 4607 */;

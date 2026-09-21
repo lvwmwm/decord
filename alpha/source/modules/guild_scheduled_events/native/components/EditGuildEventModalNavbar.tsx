@@ -1,17 +1,17 @@
-// Module ID: 9791
-// Function ID: 9792
+// Module ID: 9792
+// Function ID: 9793
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4756, 9788, 1370, 7219, 7363, 4752, 1115, 7617, 7232, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 9789, 1370, 7224, 7368, 4752, 1115, 7619, 7237, 2]
 // Exports: default
 
-// Module 9791 (EditGuildEventModalNavbar)
+// Module 9792 (EditGuildEventModalNavbar)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7219 */;
-import _modDef7232 from "module_7232" /* 7232 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import HeaderActionButton from "HeaderActionButton" /* 7617 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9788 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
+import _modDef7237 from "module_7237" /* 7237 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9789 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -30,9 +30,9 @@ export default function EditGuildEventModalNavbar(screen) {
   const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("EditGuildEventModalNavbar", "text-xs/bold");
   if (EditGuildEventUtils.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(9788).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(9789).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(9788).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(9789).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
     tmp2(1370).assertNever(screen);
@@ -52,7 +52,7 @@ export default function EditGuildEventModalNavbar(screen) {
   const intl2 = tmp2(1115).intl;
   obj6.accessibilityLabel = intl2.string(util.t.cpT0Cq);
   obj6.onPress = screen.onClose;
-  obj6.source = _modDef7232;
+  obj6.source = _modDef7237;
   obj6.style = tmp.rightButton;
   obj5.children = hasOwnProperty(HeaderActionButton.HeaderActionButton, obj6);
   items1[2] = hasOwnProperty(View, obj5);

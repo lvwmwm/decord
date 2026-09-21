@@ -1,10 +1,10 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7370
+// Function ID: 7371
 // Name: usePromptHelpText
 // Dependencies: [2041, 2099, 4395, 4405, 1372, 1074, 1115, 504, 4909, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 7365 (usePromptHelpText)
+// Module 7370 (usePromptHelpText)
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
 import PermissionStore from "PermissionStore" /* 4395 */;

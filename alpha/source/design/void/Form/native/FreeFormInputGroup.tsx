@@ -1,14 +1,14 @@
-// Module ID: 6842
-// Function ID: 6843
+// Module ID: 6847
+// Function ID: 6848
 // Name: FreeFormInputGroup
-// Dependencies: [19, 17, 21, 4756, 1364, 5898, 6843, 1177, 7176, 7177, 7179, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 1364, 5903, 6848, 1177, 7181, 7182, 7184, 4752, 2]
 
-// Module 6842 (FreeFormInputGroup)
+// Module 6847 (FreeFormInputGroup)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RedesignCompat from "RedesignCompat" /* 5898 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 7176 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 7177 */;
-import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7179 */;
+import RedesignCompat from "RedesignCompat" /* 5903 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 7181 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7182 */;
+import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7184 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -46,7 +46,7 @@ export default noop.forwardRef((accessibilityLabel, ref) => {
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
     const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, clearable: clearButtonVisibility !== tmp8(1177).ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    return hasOwnProperty(tmp8(6843).TextInput, obj3);
+    return hasOwnProperty(tmp8(6848).TextInput, obj3);
   } else {
     const obj4 = { style, children: null };
     let tmp14 = null;

@@ -1,19 +1,19 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 10654
+// Function ID: 10655
 // Name: StickerPackDetailActionSheet
-// Dependencies: [32, 19, 10530, 1074, 7391, 21, 4756, 1478, 1612, 12, 1241, 7390, 10654, 10658, 7394, 6864, 10659, 5334, 10432, 2]
+// Dependencies: [32, 19, 10531, 1074, 7396, 21, 4756, 1478, 1612, 12, 1241, 7395, 10655, 10659, 7399, 6869, 10660, 5339, 10433, 2]
 
-// Module 10653 (StickerPackDetailActionSheet)
+// Module 10654 (StickerPackDetailActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10659 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10660 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const StickerPickerConstants = fn(10530);
+const StickerPickerConstants = fn(10531);
 ({ MIN_MARGIN: hasOwnProperty, STICKER_SIZE: metroRequire } = StickerPickerConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ACTION_SHEET_MAX_WIDTH = fn(7391).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7396).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4756);

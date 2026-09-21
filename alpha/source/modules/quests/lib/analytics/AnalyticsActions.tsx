@@ -1,25 +1,25 @@
-// Module ID: 7952
-// Function ID: 7953
+// Module ID: 7954
+// Function ID: 7955
 // Name: AnalyticsActions
-// Dependencies: [5, 7953, 1346, 7937, 1074, 7701, 7955, 7933, 7956, 7958, 7962, 5663, 4936, 1241, 7963, 7964, 7974, 5659, 7969, 7911, 1364, 1255, 7965, 2]
+// Dependencies: [5, 7955, 1346, 7939, 1074, 7703, 7957, 7935, 7958, 7960, 7964, 5668, 4936, 1241, 7965, 7966, 7976, 5664, 7971, 7913, 1364, 1255, 7967, 2]
 // Exports: trackAdContentAppStoreOverlayEvent, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayEvent, trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7952 (AnalyticsActions)
+// Module 7954 (AnalyticsActions)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import QuestTypes from "QuestTypes" /* 5659 */;
-import QuestDataUtils from "QuestDataUtils" /* 7933 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7955 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7956 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7958 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7962 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7963 */;
+import QuestTypes from "QuestTypes" /* 5664 */;
+import QuestDataUtils from "QuestDataUtils" /* 7935 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7957 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7958 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7965 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7953 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7955 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
-import QuestStore from "QuestStore" /* 7937 */;
+import QuestStore from "QuestStore" /* 7939 */;
 
-const SessionHeartbeatScheduler = tmp(7701);
+const SessionHeartbeatScheduler = tmp(7703);
 require = fn;
 function trackQuestEvent(sourceQuestContent) {
   ({ event, properties, trackGuildAndChannelMetadata, shouldExtendSession } = sourceQuestContent);
@@ -38,7 +38,7 @@ function trackQuestEvent(sourceQuestContent) {
     obj.application_ids = allApplicationIds;
     obj.quest_status = AnalyticsTypes.getQuestStatus(value);
     const id = value.id;
-    const QUEST = tmp24(5663).AdCreativeType.QUEST;
+    const QUEST = tmp24(5668).AdCreativeType.QUEST;
     const tmp24Result = AnalyticsTypes;
     let uuid = SessionAdGenerator.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result5 = SessionAdGenerator;
@@ -46,7 +46,7 @@ function trackQuestEvent(sourceQuestContent) {
     const obj2 = { client_ad_session_id: uuid, billing_session_id: null, ad_content_id: null };
     const tmp24Result6 = QuestDataUtils;
     if (!tmp24Result7.isBillableQuestContent(sourceQuestContent, QUEST)) {
-      const activeSessionUnsafe = tmp24(7701).getActiveSessionUnsafe();
+      const activeSessionUnsafe = tmp24(7703).getActiveSessionUnsafe();
       let uuid1;
       if (activeSessionUnsafe != null) {
         uuid1 = activeSessionUnsafe.uuid;
@@ -55,7 +55,7 @@ function trackQuestEvent(sourceQuestContent) {
         uuid1 = null;
       }
       uuid = uuid1;
-      const tmp24Result8 = tmp24(7701);
+      const tmp24Result8 = tmp24(7703);
     }
     obj2.billing_session_id = uuid;
     obj2.ad_content_id = id;
@@ -103,7 +103,7 @@ function trackAdContentEvent(sourceQuestContent) {
   const adDecisionData = QuestDataUtils.getAdDecisionData(adContentId, sourceQuestContent);
   const obj3 = { client_ad_session_id: uuid, billing_session_id: null, ad_content_id: null };
   if (!obj4.isBillableQuestContent(sourceQuestContent, adCreativeType)) {
-    const activeSessionUnsafe = tmp3(7701).getActiveSessionUnsafe();
+    const activeSessionUnsafe = tmp3(7703).getActiveSessionUnsafe();
     let uuid1;
     if (activeSessionUnsafe != null) {
       uuid1 = activeSessionUnsafe.uuid;
@@ -112,7 +112,7 @@ function trackAdContentEvent(sourceQuestContent) {
       uuid1 = null;
     }
     uuid = uuid1;
-    const tmp3Result = tmp3(7701);
+    const tmp3Result = tmp3(7703);
   }
   obj3.billing_session_id = uuid;
   obj3.ad_content_id = adContentId;
@@ -140,8 +140,8 @@ function trackAdContentEvent(sourceQuestContent) {
     const obj6 = { quest_id: relatedQuestId, quest_status: null };
     let questStatus = null;
     if (null != quest) {
-      questStatus = tmp3(7962).getQuestStatus(quest);
-      const tmp3Result6 = tmp3(7962);
+      questStatus = tmp3(7964).getQuestStatus(quest);
+      const tmp3Result6 = tmp3(7964);
     }
     obj6.quest_status = questStatus;
     let obj7 = obj6;
@@ -425,12 +425,12 @@ export const trackAppStoreOverlaySurfaceClickedForQuest = function trackAppStore
   }
   obj = AdAnalyticsInterfaceExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "app_store_overlay_surface_click")) {
-    const obj3 = { type: tmp6(7974).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType: tmp6(5663).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: GAME_STORE_OPEN_REVIEWS, surfaceId: tmp6(5659).QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: null, questContentPosition: null, impressionId: null };
+    const obj3 = { type: tmp6(7976).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType: tmp6(5668).AdCreativeType.QUEST, adCreativeId: questId, questContentCTA: GAME_STORE_OPEN_REVIEWS, surfaceId: tmp6(5664).QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: null, questContentPosition: null, impressionId: null };
     ({ sourceQuestContent: obj4.sourceQuestContent, position: obj4.questContentPosition, impressionId: obj4.impressionId } = trackingCtx);
-    tmp6(7964).captureAdUserAction(obj3);
-    const tmp6Result = tmp6(7964);
+    tmp6(7966).captureAdUserAction(obj3);
+    const tmp6Result = tmp6(7966);
   } else {
-    const obj6 = { questId, questContent: tmp6(5659).QuestContent.CUSTOM_APP_STORE_OVERLAY, questContentCTA: GAME_STORE_OPEN_REVIEWS, questContentPosition: null, impressionId: null, sourceQuestContent: null };
+    const obj6 = { questId, questContent: tmp6(5664).QuestContent.CUSTOM_APP_STORE_OVERLAY, questContentCTA: GAME_STORE_OPEN_REVIEWS, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     ({ position: obj2.questContentPosition, impressionId: obj2.impressionId, sourceQuestContent: obj2.sourceQuestContent } = trackingCtx);
     trackQuestContentClicked(obj6);
   }
@@ -444,12 +444,12 @@ export const trackAppStoreOverlaySurfaceClickedForAdContent = function trackAppS
   }
   obj = AdAnalyticsInterfaceExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "app_store_overlay_surface_click")) {
-    const obj3 = { type: tmp6(7974).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType, adCreativeId: adContentId, questContentCTA: GAME_STORE_OPEN_REVIEWS, surfaceId: tmp6(5659).QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: null, questContentPosition: null, impressionId: null };
+    const obj3 = { type: tmp6(7976).AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, adCreativeType, adCreativeId: adContentId, questContentCTA: GAME_STORE_OPEN_REVIEWS, surfaceId: tmp6(5664).QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: null, questContentPosition: null, impressionId: null };
     ({ sourceQuestContent: obj4.sourceQuestContent, position: obj4.questContentPosition, impressionId: obj4.impressionId } = trackingCtx);
-    tmp6(7964).captureAdUserAction(obj3);
-    const tmp6Result = tmp6(7964);
+    tmp6(7966).captureAdUserAction(obj3);
+    const tmp6Result = tmp6(7966);
   } else {
-    const obj6 = { adContentId, relatedQuestId, adCreativeType, questContent: tmp6(5659).QuestContent.CUSTOM_APP_STORE_OVERLAY, questContentCTA: GAME_STORE_OPEN_REVIEWS, questContentPosition: null, impressionId: null, sourceQuestContent: null };
+    const obj6 = { adContentId, relatedQuestId, adCreativeType, questContent: tmp6(5664).QuestContent.CUSTOM_APP_STORE_OVERLAY, questContentCTA: GAME_STORE_OPEN_REVIEWS, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     ({ position: obj2.questContentPosition, impressionId: obj2.impressionId, sourceQuestContent: obj2.sourceQuestContent } = trackingCtx);
     trackAdContentClicked(obj6);
   }
@@ -567,7 +567,7 @@ export const trackQuestHomeCarouselScroll = function trackQuestHomeCarouselScrol
   const obj3 = { scrolling_type: scrollingType, client_ad_session_id: uuid, billing_session_id: null, scrolling_direction: null, scroll_window_start_index: null, scroll_window_end_index: null, scroll_window_size: null, content_name: null, content_id: null, carousel_size: null };
   const obj2 = AnalyticsUtilsDefault;
   if (!obj4.isBillableQuestContent(questContent)) {
-    const activeSessionUnsafe = tmp(7701).getActiveSessionUnsafe();
+    const activeSessionUnsafe = tmp(7703).getActiveSessionUnsafe();
     let uuid1;
     if (activeSessionUnsafe != null) {
       uuid1 = activeSessionUnsafe.uuid;
@@ -576,7 +576,7 @@ export const trackQuestHomeCarouselScroll = function trackQuestHomeCarouselScrol
       uuid1 = null;
     }
     uuid = uuid1;
-    const tmpResult = tmp(7701);
+    const tmpResult = tmp(7703);
   }
   obj3.billing_session_id = uuid;
   obj3.scrolling_direction = scrollingDirection;

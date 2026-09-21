@@ -1,11 +1,11 @@
-// Module ID: 5748
-// Function ID: 5749
+// Module ID: 5753
+// Function ID: 5754
 // Name: MemberVerificationAlertPending
-// Dependencies: [19, 21, 5739, 5749, 5750, 1115, 5186, 2]
+// Dependencies: [19, 21, 5744, 5754, 5755, 1115, 5186, 2]
 // Exports: default
 
-// Module 5748 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5739 */;
+// Module 5753 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5744 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,7 +27,7 @@ export default function MemberVerificationAlertPending(guildId) {
   }, items);
   const obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = guildId(5750).ClipboardListIcon;
+  obj.icon = guildId(5755).ClipboardListIcon;
   const intl = guildId(1115).intl;
   obj.header = intl.string(guildId(1115).t.zhfXbs);
   const intl2 = guildId(1115).intl;
@@ -45,5 +45,5 @@ export default function MemberVerificationAlertPending(guildId) {
   items1[1] = closure_4(guildId(5186).Button, obj4);
   obj2.children = items1;
   obj.buttons = closure_6(closure_5, obj2);
-  return closure_4(onClose(5749), obj);
+  return closure_4(onClose(5754), obj);
 };

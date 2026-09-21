@@ -1,11 +1,11 @@
-// Module ID: 17853
-// Function ID: 17854
+// Module ID: 17864
+// Function ID: 17865
 // Name: ParentalConsentManager
-// Dependencies: [7358, 17854, 2]
+// Dependencies: [7363, 17865, 2]
 
-// Module 17853 (ParentalConsentManager)
-import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 17854 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+// Module 17864 (ParentalConsentManager)
+import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 17865 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 const prototype = function ParentalConsentManager() {

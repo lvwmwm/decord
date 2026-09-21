@@ -1,10 +1,10 @@
-// Module ID: 5298
-// Function ID: 5299
+// Module ID: 5305
+// Function ID: 5306
 // Name: ImageIcon
 // Dependencies: [19, 21, 576, 4456, 5263, 2]
 // Exports: ImageIcon
 
-// Module 5298 (ImageIcon)
+// Module 5305 (ImageIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5263 from "module_5263" /* 5263 */;

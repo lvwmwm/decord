@@ -1,14 +1,14 @@
-// Module ID: 7481
-// Function ID: 7482
+// Module ID: 7486
+// Function ID: 7487
 // Name: OrbCheckoutUtils
-// Dependencies: [1074, 1076, 7482, 1115, 7483, 4436, 2]
+// Dependencies: [1074, 1076, 7487, 1115, 7488, 4436, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7481 (OrbCheckoutUtils)
+// Module 7486 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import util from "util" /* 1115 */;
-import OrderConstants from "OrderConstants" /* 7482 */;
-import OrderActionCreators from "OrderActionCreators" /* 7483 */;
+import OrderConstants from "OrderConstants" /* 7487 */;
+import OrderActionCreators from "OrderActionCreators" /* 7488 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     let keFvXM = dependencyMap;
     let OrderSigningFailedWithConstraintsError = OrderActionCreators.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(7483).OrderProcessingPendingError) {
+      if (code instanceof tmp(7488).OrderProcessingPendingError) {
         const intl5 = tmp(1115).intl;
         let stringResult = intl5.string(tmp(1115).t["2BmwgV"]);
       } else if (code.code === tmp(4436).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {

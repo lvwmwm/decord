@@ -1,9 +1,9 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8725
+// Function ID: 8726
 // Name: AgeVerificationStore
 // Dependencies: [1372, 510, 504, 573, 2]
 
-// Module 8724 (AgeVerificationStore)
+// Module 8725 (AgeVerificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

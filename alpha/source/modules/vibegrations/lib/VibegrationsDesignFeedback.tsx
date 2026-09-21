@@ -1,10 +1,10 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 16936
+// Function ID: 16937
 // Name: VibegrationsDesignFeedback
 // Dependencies: [2]
 // Exports: describeVibegrationsDesignTarget, formatVibegrationsDesignFeedback, formatVibegrationsDesignRemark, hitTestVibegrationsDesignTargets, isVibegrationsDesignCommentUsable, parseVibegrationsDesignFeedback, parseVibegrationsDesignRemark, vibegrationsDesignAnchorFor
 
-// Module 16930 (VibegrationsDesignFeedback)
+// Module 16936 (VibegrationsDesignFeedback)
 import size from "module_2" /* 2 */;
 
 function labelVibegrationsDesignTarget(target) {

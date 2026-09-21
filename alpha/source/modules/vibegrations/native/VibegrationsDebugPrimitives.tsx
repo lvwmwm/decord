@@ -1,16 +1,16 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17070
+// Function ID: 17071
 // Name: VibegrationsDebugPrimitives
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 3678, 17059, 5186, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 3678, 17067, 5186, 2]
 // Exports: DebugMeter, DebugNote, DebugSection, DebugSnapshotToolbar, DebugStatRow
 
-// Module 17062 (VibegrationsDebugPrimitives)
+// Module 17070 (VibegrationsDebugPrimitives)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17059 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17067 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

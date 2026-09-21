@@ -1,15 +1,15 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14739
+// Function ID: 14740
 // Name: VibegrationsVoiceSessionCoordinator
-// Dependencies: [14734, 9312, 502, 1992, 4779, 1372, 4775, 1074, 4781, 9580, 14089, 1255, 9910, 14735, 14736, 2]
+// Dependencies: [14740, 9313, 502, 1992, 4779, 1372, 4775, 1074, 4781, 9581, 14095, 1255, 9911, 14741, 14742, 2]
 
-// Module 14733 (VibegrationsVoiceSessionCoordinator)
-import RPCErrorDefault from "RPCError" /* 9580 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9910 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 14089 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14736 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14734 */;
-import FramesStore from "FramesStore" /* 9312 */;
+// Module 14739 (VibegrationsVoiceSessionCoordinator)
+import RPCErrorDefault from "RPCError" /* 9581 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 14095 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14742 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14740 */;
+import FramesStore from "FramesStore" /* 9313 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
@@ -294,7 +294,7 @@ prototype["update"] = function update(id, id, arg2, arr) {
             if (!set.has(user_id)) {
               obj.add(user_id);
               obj2 = { userId: user_id, position: null };
-              obj2.position = obj2(14735).toListenerRelativePosition(closure_0, user_id.position);
+              obj2.position = obj2(14741).toListenerRelativePosition(closure_0, user_id.position);
               return obj2;
             }
             obj = set;

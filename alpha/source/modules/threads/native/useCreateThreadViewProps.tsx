@@ -1,11 +1,11 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11621
+// Function ID: 11622
 // Name: useCreateThreadViewProps
-// Dependencies: [2041, 10510, 563, 2]
+// Dependencies: [2041, 10511, 563, 2]
 // Exports: default
 
-// Module 11619 (useCreateThreadViewProps)
-import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10510 */;
+// Module 11621 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10511 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
 const require = globalThis.__r;

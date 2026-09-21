@@ -1,18 +1,18 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14962
+// Function ID: 14963
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 8669, 21, 4756, 576, 14957, 4710, 4752, 1115, 2]
+// Dependencies: [19, 17, 8670, 21, 4756, 576, 14963, 4710, 4752, 1115, 2]
 // Exports: default
 
-// Module 14956 (SafetySettingsNotice)
+// Module 14962 (SafetySettingsNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14957 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14963 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_4 = fn(8669).SafetySettingsNoticeAction;
+let closure_4 = fn(8670).SafetySettingsNoticeAction;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4756);

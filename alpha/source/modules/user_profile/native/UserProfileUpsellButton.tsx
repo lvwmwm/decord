@@ -1,12 +1,12 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 14870
+// Function ID: 14871
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1074, 1374, 21, 4756, 7402, 7686, 1241, 5186, 9426, 1115, 8939, 2]
+// Dependencies: [19, 1074, 1374, 21, 4756, 7407, 7688, 1241, 5186, 9427, 1115, 8940, 2]
 // Exports: default
 
-// Module 14864 (UserProfileUpsellButton)
+// Module 14870 (UserProfileUpsellButton)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9426 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9427 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -22,9 +22,9 @@ let result = size.fileFinishedImporting("modules/user_profile/native/UserProfile
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7402)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7407)().analyticsLocations;
   const tmp = closure_10();
-  let label = analyticsObject(7686).useNitroTrialCtaOverride("user_profile_upsell_button");
+  let label = analyticsObject(7688).useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = noop.useEffect(() => {
     const obj2 = { type: PremiumUpsellTypes.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, location_stack: analyticsLocations };
@@ -47,7 +47,7 @@ export default function UserProfileUpsellButton(analyticsObject) {
     label = intl.string(tmp3(1115).t.pj0XBN);
   }
   obj2.text = label;
-  obj2.icon = jsx(analyticsObject(8939).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
+  obj2.icon = jsx(analyticsObject(8940).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
   return jsx(analyticsObject(5186).Button, {
     onPress() {
       const obj2 = { initialUpsellKey: constants2.CUSTOM_PROFILES, analyticsLocation: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, analyticsLocations, analyticsProperties: { type: PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL } };

@@ -1,10 +1,10 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8542
+// Function ID: 8543
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: [4395, 1074, 563, 2019, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 8541 (computeGlobalSpoilerDisplay)
+// Module 8542 (computeGlobalSpoilerDisplay)
 import PermissionStore from "PermissionStore" /* 4395 */;
 
 const require = globalThis.__r;

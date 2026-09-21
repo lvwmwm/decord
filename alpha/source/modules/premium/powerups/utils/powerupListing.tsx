@@ -1,10 +1,10 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12770
+// Function ID: 12771
 // Name: powerupListing
 // Dependencies: [32, 19, 4644, 4645, 4648, 504, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 12768 (powerupListing)
+// Module 12770 (powerupListing)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;

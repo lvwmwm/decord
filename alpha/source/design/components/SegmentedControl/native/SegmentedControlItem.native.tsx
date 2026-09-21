@@ -1,10 +1,10 @@
-// Module ID: 9891
-// Function ID: 9892
+// Module ID: 9892
+// Function ID: 9893
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4756, 576, 8537, 4492, 5185, 1364, 1115, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 8538, 4492, 5185, 1364, 1115, 4752, 2]
 // Exports: SegmentedControlItem
 
-// Module 9891 (SegmentedControlItem)
+// Module 9892 (SegmentedControlItem)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5185 */;
 import noop from "module_19" /* 19 */;

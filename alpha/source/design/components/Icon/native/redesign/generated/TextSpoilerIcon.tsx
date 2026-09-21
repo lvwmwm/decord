@@ -1,10 +1,10 @@
-// Module ID: 5288
-// Function ID: 5289
+// Module ID: 5295
+// Function ID: 5296
 // Name: TextSpoilerIcon
 // Dependencies: [19, 21, 576, 4456, 5256, 2]
 // Exports: TextSpoilerIcon
 
-// Module 5288 (TextSpoilerIcon)
+// Module 5295 (TextSpoilerIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5256 from "module_5256" /* 5256 */;

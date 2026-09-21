@@ -1,15 +1,15 @@
-// Module ID: 13254
-// Function ID: 13255
+// Module ID: 13256
+// Function ID: 13257
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8562, 21, 13255, 4457, 576, 4492, 5174, 1364, 4756, 5799, 8535, 4493, 7312, 2]
+// Dependencies: [32, 19, 17, 8563, 21, 13257, 4457, 576, 4492, 5174, 1364, 4756, 5804, 8536, 4493, 7317, 2]
 // Exports: default
 
-// Module 13254 (MediaViewerThumbnails)
+// Module 13256 (MediaViewerThumbnails)
 import useToken from "useToken" /* 4457 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4493 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13255 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13257 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -43,7 +43,7 @@ function ObscuredView(source) {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const Constants = fn(8562);
+const Constants = fn(8563);
 ({ THUMBNAIL_WIDTH_MARGIN: closure_7, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

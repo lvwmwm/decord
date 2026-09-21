@@ -1,11 +1,11 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 11944
+// Function ID: 11945
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 5105, 21, 11931, 11934, 504, 8017, 11943, 1115, 11944, 11945, 5186, 11952, 2]
+// Dependencies: [32, 19, 5105, 21, 11933, 11936, 504, 8019, 11945, 1115, 11946, 11947, 5186, 11954, 2]
 // Exports: ForwardMessageFooter
 
-// Module 11942 (ForwardMessageFooter)
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8017 */;
+// Module 11944 (ForwardMessageFooter)
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8019 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DraftStore from "DraftStore" /* 5105 */;

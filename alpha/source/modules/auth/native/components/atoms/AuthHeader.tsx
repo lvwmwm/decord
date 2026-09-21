@@ -1,14 +1,14 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7217
+// Function ID: 7218
 // Name: AuthHeader
-// Dependencies: [19, 1074, 21, 4756, 5736, 576, 1177, 2]
+// Dependencies: [19, 1074, 21, 4756, 5741, 576, 1177, 2]
 // Exports: default
 
-// Module 7212 (AuthHeader)
+// Module 7217 (AuthHeader)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5736 */;
+import TextStyles from "TextStyles" /* 5741 */;
 
 require = fn;
 const jsx = fn(21).jsx;

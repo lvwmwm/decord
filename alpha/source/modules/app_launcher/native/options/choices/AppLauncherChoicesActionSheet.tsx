@@ -1,22 +1,22 @@
-// Module ID: 12416
-// Function ID: 12417
+// Module ID: 12418
+// Function ID: 12419
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 19, 17, 1483, 21, 4756, 576, 8996, 1612, 1364, 5654, 8870, 4723, 7183, 12417, 12418, 2]
+// Dependencies: [32, 19, 17, 1483, 21, 4756, 576, 8997, 1612, 1364, 5659, 8871, 4723, 7188, 12419, 12420, 2]
 // Exports: default
 
-// Module 12416 (AppLauncherChoicesActionSheet)
+// Module 12418 (AppLauncherChoicesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5654 */;
-import Form from "Form" /* 8870 */;
-import _mod8996 from "module_8996" /* 8996 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5659 */;
+import Form from "Form" /* 8871 */;
+import _mod8997 from "module_8997" /* 8997 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function FlashListWrapper(scrollable) {
   const merged = Object.assign(scrollable, Object.assign({ scrollable: 0 }));
-  const tmp3 = _mod8996;
+  const tmp3 = _mod8997;
   if (scrollable.scrollable) {
     const obj2 = { preserveScrollMomentum: true };
     const merged1 = Object.assign(merged);
@@ -135,11 +135,11 @@ export default function AppLauncherChoicesActionSheet(option) {
   let tmp16 = tmp13;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_7(tmp3(12418).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_7(tmp3(12420).AppLauncherListSearchBar, obj3);
   }
   const items3 = [tmp16, ];
   if (0 === data.length) {
-    let tmp20 = closure_7(tmp3(12418).AppLauncherListEmptyState, {});
+    let tmp20 = closure_7(tmp3(12420).AppLauncherListEmptyState, {});
   } else {
     const obj4 = { scrollable: tmp13, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, data: null, renderItem: null, ItemSeparatorComponent: null, accessibilityRole: "radiogroup" };
     const obj5 = { paddingBottom: sum };
@@ -156,5 +156,5 @@ export default function AppLauncherChoicesActionSheet(option) {
   }
   items3[1] = tmp20;
   obj2.children = items3;
-  return closure_8(option(12417).AppLauncherCommandOptionActionSheet, obj2);
+  return closure_8(option(12419).AppLauncherCommandOptionActionSheet, obj2);
 };

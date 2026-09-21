@@ -1,8 +1,8 @@
-// Module ID: 6724
-// Function ID: 6725
+// Module ID: 6729
+// Function ID: 6730
 // Dependencies: [2]
 
-// Module 6724
+// Module 6729
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamSpotIllustration-2x.png.js");

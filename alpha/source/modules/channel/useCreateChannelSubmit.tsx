@@ -1,11 +1,11 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9820
+// Function ID: 9821
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1074, 1978, 1086, 9820, 4607, 1115, 2]
+// Dependencies: [5, 32, 19, 1074, 1978, 1086, 9821, 4607, 1115, 2]
 // Exports: default
 
-// Module 9819 (useCreateChannelSubmit)
-import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9820 */;
+// Module 9820 (useCreateChannelSubmit)
+import CreateChannelActionCreatorsDefault from "CreateChannelActionCreators" /* 9821 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

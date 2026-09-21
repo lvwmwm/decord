@@ -1,46 +1,22 @@
 // Module ID: 14610
 // Function ID: 14611
-// Dependencies: [14597, 14575]
+// Dependencies: [14585]
 
 // Module 14610
-import _mod14597 from "module_14597" /* 14597 */;
+import _mod14585 from "module_14585" /* 14585 */;
 
-const re2 = /#|\.prototype\./;
-function isForced(arg0, arg1) {
-  if (typeof fn === "function") {
-    const _String = String;
-    const str3 = String(arg0).replace(re2, ".");
-    const tmp5 = tmp[str3.toLowerCase(str3)];
-    let tmp7 = tmp5 === P;
-    if (!tmp7) {
-      if (tmp5 === N) {
-        tmp7 = tmp9;
-      } else {
-        let tmp11Result = dependencyMap;
-        if (_mod14597(arg1)) {
-          tmp11Result = tmp11(14575);
-          let tmp11ResultResult = tmp11Result(arg1);
-        } else {
-          tmp11ResultResult = arg1;
-        }
-        tmp11 = require;
-      }
+if (_mod14585) {
+  let fn = call.bind(call);
+} else {
+  fn = () => {
+    const apply = call.apply;
+    if (typeof apply === "unknown") {
+      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
+    } else {
+      applyArgumentsResult = apply(tmp, arguments);
     }
-    return tmp7;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+    return applyArgumentsResult;
+  };
 }
-const normalize = (arg0) => {
-  const str = String(arg0);
-  return String(arg0).replace(re2, ".").toLowerCase();
-};
-isForced.normalize = normalize;
-const data = {};
-isForced.data = data;
-isForced.NATIVE = "N";
-const N = "N";
-isForced.POLYFILL = "P";
-const P = "P";
 
-export default isForced;
+export default fn;

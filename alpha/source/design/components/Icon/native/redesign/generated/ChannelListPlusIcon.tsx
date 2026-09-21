@@ -1,13 +1,13 @@
-// Module ID: 17940
-// Function ID: 17941
+// Module ID: 17951
+// Function ID: 17952
 // Name: ChannelListPlusIcon
-// Dependencies: [19, 21, 576, 4456, 17941, 2]
+// Dependencies: [19, 21, 576, 4456, 17952, 2]
 // Exports: ChannelListPlusIcon
 
-// Module 17940 (ChannelListPlusIcon)
+// Module 17951 (ChannelListPlusIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod17941 from "module_17941" /* 17941 */;
+import _mod17952 from "module_17952" /* 17952 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChannelListPlusIcon = function ChannelListPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17941, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17952, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

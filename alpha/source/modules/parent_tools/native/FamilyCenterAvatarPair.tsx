@@ -1,10 +1,10 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15200
+// Function ID: 15201
 // Name: FamilyCenterAvatarPair
 // Dependencies: [19, 17, 1372, 21, 4756, 576, 563, 1177, 2]
 // Exports: default
 
-// Module 15194 (FamilyCenterAvatarPair)
+// Module 15200 (FamilyCenterAvatarPair)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;

@@ -1,22 +1,22 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10655
+// Function ID: 10656
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 10530, 21, 4756, 576, 4752, 5103, 1177, 10655, 10656, 1115, 10657, 5334, 2]
+// Dependencies: [19, 17, 10531, 21, 4756, 576, 4752, 5103, 1177, 10656, 10657, 1115, 10658, 5339, 2]
 
-// Module 10654 (StickerPackHeader)
+// Module 10655 (StickerPackHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import StickersUtils from "StickersUtils" /* 5103 */;
-import _modDef10655 from "module_10655" /* 10655 */;
 import _modDef10656 from "module_10656" /* 10656 */;
-import StickerPackBannerDefault from "StickerPackBanner" /* 10657 */;
+import _modDef10657 from "module_10657" /* 10657 */;
+import StickerPackBannerDefault from "StickerPackBanner" /* 10658 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const StickerPickerConstants = fn(10530);
+const StickerPickerConstants = fn(10531);
 ({ PADDING_VERTICAL, PADDING_HORIZONTAL } = StickerPickerConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = jsxProd);
@@ -50,14 +50,14 @@ export default noop.memo((withDescription) => {
   let result = StickersUtils.isStickerPackAnimated(stickerPack);
   if (result) {
     const obj5 = { style: tmp.iconContainer, children: null };
-    const obj6 = { source: _modDef10655, style: tmp.animatedIcon, size: tmp6(1177).Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
+    const obj6 = { source: _modDef10656, style: tmp.animatedIcon, size: tmp6(1177).Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
     obj5.children = tmp4(tmp6(1177).Icon, obj6);
     result = tmp4(tmp5, obj5);
   }
   items[1] = result;
   const obj7 = { style: tmp.iconContainer, children: null };
   const obj3 = { style: tmp.label, lineClamp: 1, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stickerPack.name };
-  obj7.children = React4(native.Icon, { source: _modDef10656, style: tmp.premiumIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color });
+  obj7.children = React4(native.Icon, { source: _modDef10657, style: tmp.premiumIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color });
   items[2] = React4(View, obj7);
   obj2.children = items;
   obj.children = hasOwnProperty(View, obj2);
@@ -89,7 +89,7 @@ export default noop.memo((withDescription) => {
     obj15.style = items3;
     obj15.onPress = onPress;
     obj15.children = tmp2Result;
-    let tmp4Result = tmp4(tmp6(5334).PressableOpacity, obj15);
+    let tmp4Result = tmp4(tmp6(5339).PressableOpacity, obj15);
   } else {
     const obj28 = { style: null, children: null };
     const items4 = [tmp.section, style];

@@ -1,15 +1,15 @@
-// Module ID: 12269
-// Function ID: 12270
+// Module ID: 12271
+// Function ID: 12272
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4756, 576, 1364, 8128, 1115, 5282, 4752, 11577, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1364, 8129, 1115, 5289, 4752, 11579, 2]
 // Exports: default
 
-// Module 12269 (ForumPostMessageCount)
+// Module 12271 (ForumPostMessageCount)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ChatIcon from "ChatIcon" /* 5282 */;
-import ForumHooks from "ForumHooks" /* 8128 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11577 */;
+import ChatIcon from "ChatIcon" /* 5289 */;
+import ForumHooks from "ForumHooks" /* 8129 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11579 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

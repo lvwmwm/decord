@@ -1,10 +1,10 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 16775
+// Function ID: 16776
 // Name: ForYouRecentActivitySectionHeader
 // Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 16769 (ForYouRecentActivitySectionHeader)
+// Module 16775 (ForYouRecentActivitySectionHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;

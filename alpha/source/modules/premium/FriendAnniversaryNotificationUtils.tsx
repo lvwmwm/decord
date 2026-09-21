@@ -1,10 +1,10 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15776
+// Function ID: 15777
 // Name: FriendAnniversaryNotificationUtils
 // Dependencies: [1074, 4408, 2019, 1241, 2]
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 15770 (FriendAnniversaryNotificationUtils)
+// Module 15776 (FriendAnniversaryNotificationUtils)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import UserSettings from "UserSettings" /* 2019 */;

@@ -1,10 +1,10 @@
-// Module ID: 8372
-// Function ID: 8373
+// Module ID: 8373
+// Function ID: 8374
 // Name: transformNativeMarkupLink
 // Dependencies: [5207, 5213, 2]
 // Exports: transformNativeLink
 
-// Module 8372 (transformNativeMarkupLink)
+// Module 8373 (transformNativeMarkupLink)
 import MarkupTypes from "MarkupTypes" /* 5207 */;
 import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5213 */;
 import size from "module_2" /* 2 */;

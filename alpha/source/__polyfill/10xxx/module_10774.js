@@ -1,9 +1,9 @@
 // Module ID: 10774
 // Function ID: 10775
-// Dependencies: [41, 42, 93, 95, 98, 10712]
+// Dependencies: [41, 42, 93, 95, 98, 10706]
 
 // Module 10774
-import _mod10712 from "module_10712" /* 10712 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10706 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -30,27 +30,12 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class PTMergeDateTimeRefiner {
+class PTTimeExpressionParser {
   constructor() {
     self = this;
-    tmp = closure_0(this, PTMergeDateTimeRefiner);
+    tmp = closure_0(this, PTTimeExpressionParser);
     tmp2 = c2;
-    obj = c2(PTMergeDateTimeRefiner);
+    obj = c2(PTTimeExpressionParser);
     tmp3 = closure_1;
     if (closure_3()) {
       tmp7 = globalThis;
@@ -65,15 +50,22 @@ class PTMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = PTMergeDateTimeRefiner;
-_inherits(PTMergeDateTimeRefiner, fn(_mod10712).default);
+_classCallCheck = PTTimeExpressionParser;
+_inherits(PTTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(?:,|\u00E0)?\\s*$");
-    return regExp;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:ao?|\u00E0s?|das|da|de|do)\\s*)?";
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:o)?|\\?)\\s*";
+    }
+  }
+];
 
-export default _createClass(PTMergeDateTimeRefiner, items);
+export default _createClass(PTTimeExpressionParser, items);

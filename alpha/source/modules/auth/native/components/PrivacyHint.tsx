@@ -1,14 +1,14 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16315
+// Function ID: 16316
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6830, 16271, 1074, 21, 4756, 4752, 1115, 4474, 5829, 8870, 16310, 2]
+// Dependencies: [19, 17, 6835, 16277, 1074, 21, 4756, 4752, 1115, 4474, 5834, 8871, 16316, 2]
 // Exports: default
 
-// Module 16309 (PrivacyHint)
+// Module 16315 (PrivacyHint)
 import util from "util" /* 1115 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16310 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16316 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,11 +32,11 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   obj2.hitSlop = { top: 11, bottom: 11, left: 11 };
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    let tmp7Result = tmp7(tmp2(5829).FormCheckbox, obj3);
+    let tmp7Result = tmp7(tmp2(5834).FormCheckbox, obj3);
     let tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8870).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8871).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   const items = [tmp7Result, ];
@@ -49,8 +49,8 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Pressable: closure_4 } = get_ActivityIndicator);
-const usePromoEmailConsentStore = fn(6830).usePromoEmailConsentStore;
-const useRegistrationUIStore = fn(16271).useRegistrationUIStore;
+const usePromoEmailConsentStore = fn(6835).usePromoEmailConsentStore;
+const useRegistrationUIStore = fn(16277).useRegistrationUIStore;
 const MarketingURLs = fn(1074).MarketingURLs;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);

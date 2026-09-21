@@ -1,16 +1,16 @@
-// Module ID: 6840
-// Function ID: 6841
+// Module ID: 6845
+// Function ID: 6846
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5835, 21, 1484, 1094, 6841, 6838, 1115, 2]
+// Dependencies: [5, 19, 5840, 21, 1484, 1094, 6846, 6843, 1115, 2]
 // Exports: default
 
-// Module 6840 (ConfirmEmailChangeCode)
+// Module 6845 (ConfirmEmailChangeCode)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const setEmailToken = fn(5835).setEmailToken;
+const setEmailToken = fn(5840).setEmailToken;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
@@ -101,5 +101,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj2.headerText = intl.string(isChangeEmail(1115).t["2x/2Uo"]);
   const intl2 = isChangeEmail(1115).intl;
   obj2.confirmButtonText = intl2.string(isChangeEmail(1115).t.PDTjLN);
-  return jsx(navigation(6841), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(6846), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

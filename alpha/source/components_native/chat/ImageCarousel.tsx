@@ -1,10 +1,10 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10891
+// Function ID: 10892
 // Name: ImageCarousel
-// Dependencies: [19, 17, 5105, 5104, 10891, 21, 4756, 576, 4492, 4757, 1177, 5185, 38, 5339, 504, 10892, 10453, 11509, 8513, 4752, 1115, 8544, 7208, 5334, 7178, 1478, 9420, 10894, 2]
+// Dependencies: [19, 17, 5105, 5104, 10892, 21, 4756, 576, 4492, 4757, 1177, 5185, 38, 5344, 504, 10893, 10454, 11511, 8514, 4752, 1115, 8545, 7213, 5339, 7183, 1478, 9421, 10895, 2]
 // Exports: useTileEntranceAnimatedStyle
 
-// Module 10890 (ImageCarousel)
+// Module 10891 (ImageCarousel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,13 +13,13 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import timing from "timing" /* 4757 */;
 import spring from "spring" /* 5185 */;
-import Upload from "Upload" /* 5339 */;
-import EyeIcon from "EyeIcon" /* 7208 */;
-import PlayIcon from "PlayIcon" /* 8544 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9420 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 10453 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10892 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10894 */;
+import Upload from "Upload" /* 5344 */;
+import EyeIcon from "EyeIcon" /* 7213 */;
+import PlayIcon from "PlayIcon" /* 8545 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9421 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 10454 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10893 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10895 */;
 import noop from "module_19" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5104 */;
 
@@ -157,7 +157,7 @@ function Tile(onEdit) {
     let tmp6Result = null;
     if (isThumbnail) {
       const obj2 = { style: tmp5.footerRightContainer, children: null };
-      const obj3 = { source: tmp3(11509), size: native.Icon.Sizes.SMALL_14 };
+      const obj3 = { source: tmp3(11511), size: native.Icon.Sizes.SMALL_14 };
       obj2.children = tmp6(native.Icon, obj3);
       tmp6Result = tmp6(React4, obj2);
     }
@@ -166,7 +166,7 @@ function Tile(onEdit) {
     let tmp6Result5 = null;
     if (stateFromStores) {
       const obj5 = { style: tmp5.spoilerOverlay };
-      tmp6Result5 = tmp6(tmp3(8513), obj5);
+      tmp6Result5 = tmp6(tmp3(8514), obj5);
     }
     const items2 = [tmp6Result5, , ];
     let tmp6Result6 = null;
@@ -277,7 +277,7 @@ function CustomScrollView(arg0) {
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const DraftType = fn(5105).DraftType;
-const ImageCarouselConstants = fn(10891);
+const ImageCarouselConstants = fn(10892);
 const IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN = ImageCarouselConstants.IMAGE_CAROUSEL_EXPERIMENT_TILE_MARGIN;
 const IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING;
 let closure_10 = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_HEIGHT;

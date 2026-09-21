@@ -1,12 +1,12 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 16788
+// Function ID: 16789
 // Name: ICYMINavigator
-// Dependencies: [21, 8156, 7240, 16783, 16734, 2]
+// Dependencies: [21, 8157, 7245, 16789, 16740, 2]
 // Exports: default
 
-// Module 16782 (ICYMINavigator)
+// Module 16788 (ICYMINavigator)
 import jsxProd from "jsxProd" /* 21 */;
-import NativeStackNavigator from "NativeStackNavigator" /* 8156 */;
+import NativeStackNavigator from "NativeStackNavigator" /* 8157 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,13 +29,13 @@ export default function ICYMINavigator() {
     closure_2(closure_4.Screen, {
       name: "icymi-screen",
       getComponent() {
-        return closure_0(16783).ICYMITab;
+        return closure_0(16789).ICYMITab;
       }
     }),
     closure_2(closure_4.Screen, {
       name: "notifications-screen",
       getComponent() {
-        return closure_0(16734).ThemedNotificationsModal;
+        return closure_0(16740).ThemedNotificationsModal;
       }
     })
   ];

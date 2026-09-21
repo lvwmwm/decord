@@ -1,16 +1,16 @@
-// Module ID: 18240
-// Function ID: 18241
+// Module ID: 18251
+// Function ID: 18252
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2045, 7351, 4405, 1372, 1074, 21, 4756, 576, 504, 7221, 7352, 4909, 5729, 1115, 4467, 7289, 5817, 5823, 5239, 11128, 7290, 1177, 8500, 7295, 2]
+// Dependencies: [32, 19, 17, 2045, 7356, 4405, 1372, 1074, 21, 4756, 576, 504, 7226, 7357, 4909, 5734, 1115, 4467, 7294, 5822, 5828, 5239, 11129, 7295, 1177, 8501, 7300, 2]
 
-// Module 18240 (NotificationSettingChannelOverrides)
+// Module 18251 (NotificationSettingChannelOverrides)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7352 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7357 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7351 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7356 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 15537
-// Function ID: 15538
+// Module ID: 15543
+// Function ID: 15544
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15538, 1074, 21, 4492, 1177, 4756, 576, 5171, 12, 15539, 4757, 4760, 1230, 9473, 4752, 1609, 11018, 4724, 1115, 15542, 2]
+// Dependencies: [19, 17, 15544, 1074, 21, 4492, 1177, 4756, 576, 5171, 12, 15545, 4757, 4760, 1230, 9474, 4752, 1609, 11019, 4724, 1115, 15548, 2]
 // Exports: default
 
-// Module 15537 (SettingsAppearanceThemeCarousel)
+// Module 15543 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import timing from "timing" /* 4757 */;
 import timingPresets from "timingPresets" /* 4760 */;
 import noop from "module_19" /* 19 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15538 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15544 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 
 require = fn;

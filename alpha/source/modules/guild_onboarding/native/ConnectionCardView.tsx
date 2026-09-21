@@ -1,10 +1,10 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7422
+// Function ID: 7423
 // Name: ConnectionCardView
 // Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 4715, 5186, 2]
 // Exports: default
 
-// Module 7417 (ConnectionCardView)
+// Module 7422 (ConnectionCardView)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;

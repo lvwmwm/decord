@@ -1,15 +1,15 @@
-// Module ID: 12732
-// Function ID: 12733
+// Module ID: 12734
+// Function ID: 12735
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4645, 21, 4756, 576, 4668, 12733, 12743, 12763, 1612, 7402, 12768, 12769, 12798, 4959, 4664, 5843, 1115, 2514, 8105, 5836, 12805, 12807, 12815, 12821, 12831, 12839, 2]
+// Dependencies: [19, 17, 4645, 21, 4756, 576, 4668, 12735, 12745, 12765, 1612, 7407, 12770, 12771, 12800, 4959, 4664, 5848, 1115, 2514, 8107, 5841, 12807, 12809, 12817, 12823, 12833, 12841, 2]
 // Exports: default
 
-// Module 12732 (GuildPowerupsModal)
+// Module 12734 (GuildPowerupsModal)
 import nativeDefault from "native" /* 576 */;
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12769 */;
-import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 12798 */;
-import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 12815 */;
-import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 12821 */;
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12771 */;
+import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 12800 */;
+import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 12817 */;
+import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 12823 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

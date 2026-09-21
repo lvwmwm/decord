@@ -1,10 +1,10 @@
-// Module ID: 12746
-// Function ID: 12747
+// Module ID: 12748
+// Function ID: 12749
 // Name: GuildDismissibleContentUtils
 // Dependencies: [1220, 1074, 2038, 1084, 2026, 504, 2024, 1241, 2027, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 12746 (GuildDismissibleContentUtils)
+// Module 12748 (GuildDismissibleContentUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2026 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;

@@ -1,19 +1,19 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15209
+// Function ID: 15210
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1074, 8232, 21, 1115, 2482, 2108, 11723, 14958, 2]
+// Dependencies: [19, 1074, 8233, 21, 1115, 2482, 2108, 11725, 14964, 2]
 // Exports: default
 
-// Module 15203 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 15209 (FamilyCenterParentalControlsDataAndPrivacy)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
 import _modDef2482 from "module_2482" /* 2482 */;
-import SettingBuilders from "SettingBuilders" /* 11723 */;
-import SettingLayoutDefault from "SettingLayout" /* 14958 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
+import SettingLayoutDefault from "SettingLayout" /* 14964 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
-const MobileUserSettings = fn(8232).MobileUserSettings;
+const MobileUserSettings = fn(8233).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsDataAndPrivacy.tsx");

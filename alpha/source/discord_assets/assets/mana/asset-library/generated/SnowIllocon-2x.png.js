@@ -1,8 +1,8 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6711
+// Function ID: 6712
 // Dependencies: [2]
 
-// Module 6706
+// Module 6711
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SnowIllocon-2x.png.js");

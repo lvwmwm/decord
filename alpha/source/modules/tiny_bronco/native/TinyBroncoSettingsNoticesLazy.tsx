@@ -1,10 +1,10 @@
-// Module ID: 15088
-// Function ID: 15089
+// Module ID: 15094
+// Function ID: 15095
 // Name: TinyBroncoSettingsNoticesLazy
 // Dependencies: [21, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTinyBroncoTeenNotice, shouldShowTinyBroncoUnconfirmedNotice, useIsTinyBroncoSettingsNoticeEnabled, useTinyBroncoMessageRequestsNoticeVariant
 
-// Module 15088 (TinyBroncoSettingsNoticesLazy)
+// Module 15094 (TinyBroncoSettingsNoticesLazy)
 import jsxProd from "jsxProd" /* 21 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 5484
-// Function ID: 5485
+// Module ID: 5489
+// Function ID: 5490
 // Name: ChannelMessages
-// Dependencies: [1074, 3, 4978, 12, 4686, 11, 5485, 5486, 5487, 5488, 2]
+// Dependencies: [1074, 3, 4978, 12, 4686, 11, 5490, 5491, 5492, 5493, 2]
 // Exports: flatMapChannelMessages
 
-// Module 5484 (ChannelMessages)
+// Module 5489 (ChannelMessages)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Client from "Client" /* 4686 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 4978 */;
-import SortedArrayUtilsAll from "SortedArrayUtils" /* 5486 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5487 */;
+import SortedArrayUtilsAll from "SortedArrayUtils" /* 5491 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5492 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -1492,7 +1492,7 @@ prototype2["loadComplete"] = function loadComplete(newMessages) {
 };
 prototype2["addCachedMessages"] = function addCachedMessages(messages, stale) {
   const self = this;
-  const result = reversed(5488).requireSortedDescending(messages);
+  const result = reversed(5493).requireSortedDescending(messages);
   const mapped = messages.map((item) => mergeMessage(self, item));
   reversed = mapped.reverse();
   const _array = this._array;
@@ -1505,7 +1505,7 @@ prototype2["addCachedMessages"] = function addCachedMessages(messages, stale) {
   if (!stale) {
     cached = self.cached;
   }
-  const obj = reversed(5488);
+  const obj = reversed(5493);
   const obj2 = { ready: true, cached: stale, error: false, initialScrollSequenceId: null };
   const initialScrollSequenceId = self.initialScrollSequenceId;
   if (cached) {

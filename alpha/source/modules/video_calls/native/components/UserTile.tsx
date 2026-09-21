@@ -1,30 +1,30 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9711
+// Function ID: 9712
 // Name: UserTile
-// Dependencies: [32, 19, 17, 9711, 502, 2041, 1992, 1074, 4777, 4781, 21, 4756, 576, 4605, 504, 8516, 1177, 9712, 4752, 1115, 9690, 9693, 8891, 9713, 9714, 9715, 9617, 9709, 9716, 9677, 9680, 6892, 9717, 2]
+// Dependencies: [32, 19, 17, 9712, 502, 2041, 1992, 1074, 4777, 4781, 21, 4756, 576, 4605, 504, 8517, 1177, 9713, 4752, 1115, 9691, 9694, 8892, 9714, 9715, 9716, 9618, 9710, 9717, 9678, 9681, 6897, 9718, 2]
 // Exports: default
 
-// Module 9710 (UserTile)
+// Module 9711 (UserTile)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import _modDef8891 from "module_8891" /* 8891 */;
-import _modDef9712 from "module_9712" /* 9712 */;
+import _modDef8892 from "module_8892" /* 8892 */;
 import _modDef9713 from "module_9713" /* 9713 */;
 import _modDef9714 from "module_9714" /* 9714 */;
 import _modDef9715 from "module_9715" /* 9715 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 9716 */;
+import _modDef9716 from "module_9716" /* 9716 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 9717 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VoiceChannelEffectsStore from "VoiceChannelEffectsStore" /* 9711 */;
+import VoiceChannelEffectsStore from "VoiceChannelEffectsStore" /* 9712 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_7 = fn(9711).clearVoiceChannelEffectForUser;
+let closure_7 = fn(9712).clearVoiceChannelEffectForUser;
 const VideoToggleState = fn(1074).VideoToggleState;
 const ParticipantTypes = fn(4777).ParticipantTypes;
 const MediaEngineContextTypes = fn(4781).MediaEngineContextTypes;
@@ -109,7 +109,7 @@ let closure_18 = noop.memo((guildId) => {
       const items = [, ];
       ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
       obj2.style = items;
-      const obj3 = { source: _modDef9712, size: native.Icon.Sizes.SMALL, disableColor: true };
+      const obj3 = { source: _modDef9713, size: native.Icon.Sizes.SMALL, disableColor: true };
       const items1 = [closure_2_14(native.Icon, obj3), ];
       const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: null };
       const intl = util.intl;
@@ -138,11 +138,11 @@ let closure_19 = noop.memo((userId) => {
   }, items1), 3);
   let tmp5 = tmp4[1];
   if (tmp4[0]) {
-    let tmp6 = _modDef8891;
+    let tmp6 = _modDef8892;
   } else if (deafened) {
-    tmp6 = _modDef9713;
-  } else if (muted) {
     tmp6 = _modDef9714;
+  } else if (muted) {
+    tmp6 = _modDef9715;
   }
   if (tmp5) {
     tmp5 = !tmp4[2];
@@ -153,7 +153,7 @@ let closure_19 = noop.memo((userId) => {
       const obj2 = { style: null, children: null };
       const items2 = [tmp.statusWrapper, style];
       obj2.style = items2;
-      const obj3 = { source: _modDef9715, size: tmp2(1177).Icon.Sizes.SMALL, disableColor: true };
+      const obj3 = { source: _modDef9716, size: tmp2(1177).Icon.Sizes.SMALL, disableColor: true };
       obj2.children = closure_14(tmp2(1177).Icon, obj3);
       tmp14 = closure_14(View, obj2);
     }
@@ -168,7 +168,7 @@ let closure_19 = noop.memo((userId) => {
       const obj5 = { style: null, children: null };
       items4[2] = obj4;
       obj5.style = items4;
-      const obj6 = { source: tmp6, size: tmp2(1177).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp6 === _modDef8891 };
+      const obj6 = { source: tmp6, size: tmp2(1177).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp6 === _modDef8892 };
       obj5.children = closure_14(tmp2(1177).Icon, obj6);
       tmp19Result = tmp19(View, obj5);
     }

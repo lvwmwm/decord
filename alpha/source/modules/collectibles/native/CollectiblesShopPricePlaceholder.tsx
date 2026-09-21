@@ -1,10 +1,10 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9140
+// Function ID: 9141
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [19, 21, 4756, 576, 4492, 4757, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 9139 (CollectiblesShopPricePlaceholder)
+// Module 9140 (CollectiblesShopPricePlaceholder)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;

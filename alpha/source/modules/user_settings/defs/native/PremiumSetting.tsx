@@ -1,22 +1,22 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15258
+// Function ID: 15259
 // Name: PremiumSetting
-// Dependencies: [19, 1372, 4420, 1074, 21, 13658, 4414, 1115, 7657, 11694, 15253, 11723, 8939, 15255, 2]
+// Dependencies: [19, 1372, 4420, 1074, 21, 13664, 4414, 1115, 7659, 11696, 15259, 11725, 8940, 15261, 2]
 
-// Module 15252 (PremiumSetting)
+// Module 15258 (PremiumSetting)
 import util from "util" /* 1115 */;
 import PremiumUtils from "PremiumUtils" /* 4414 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7657 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11694 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13658 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15253 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7659 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 11696 */;
+import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 13664 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 15259 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const SettingBuilders = fn(11723);
+const SettingBuilders = fn(11725);
 const route = SettingBuilders.createRoute({
   useTitle: function getPremiumSettingTitle() {
     const mobileNitroManageSubscriptionsSettingsExperiment = MobileNitroManageSubscriptionsSettingsExperiment.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
@@ -37,7 +37,7 @@ const route = SettingBuilders.createRoute({
     }
   },
   parent: null,
-  IconComponent: fn(8939).NitroWheelIcon,
+  IconComponent: fn(8940).NitroWheelIcon,
   usePreNavigationAction: function useCanNavigateToPaymentSetting() {
     return noop.useCallback(() => {
       const isPaymentsBlocked = BlockedPaymentsCountryExperiment.getIsPaymentsBlocked();

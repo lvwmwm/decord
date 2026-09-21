@@ -1,13 +1,13 @@
-// Module ID: 7452
-// Function ID: 7453
+// Module ID: 7457
+// Function ID: 7458
 // Name: GuildCapUpsellHooks
-// Dependencies: [2063, 1372, 1074, 504, 7453, 4414, 2]
+// Dependencies: [2063, 1372, 1074, 504, 7458, 4414, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 7452 (GuildCapUpsellHooks)
+// Module 7457 (GuildCapUpsellHooks)
 import initialize from "initialize" /* 504 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import HotspotStore2 from "HotspotStore" /* 7453 */;
+import HotspotStore2 from "HotspotStore" /* 7458 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UserStore from "UserStore" /* 1372 */;
 

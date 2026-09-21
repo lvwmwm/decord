@@ -1,23 +1,23 @@
-// Module ID: 17220
-// Function ID: 17221
+// Module ID: 17231
+// Function ID: 17232
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2041, 14017, 4779, 1372, 11121, 1074, 21, 4756, 576, 4769, 4963, 10001, 13178, 4723, 504, 11841, 11843, 11840, 1241, 4454, 1115, 17219, 8105, 11844, 4453, 8115, 10110, 8648, 7999, 1177, 11122, 17152, 2]
+// Dependencies: [32, 5, 19, 17, 2041, 14023, 4779, 1372, 11122, 1074, 21, 4756, 576, 4769, 4963, 10002, 13180, 4723, 504, 11843, 11845, 11842, 1241, 4454, 1115, 17230, 8107, 11846, 4453, 8117, 10111, 8649, 8001, 1177, 11123, 17163, 2]
 // Exports: default
 
-// Module 17220 (NewGroupDMScreen)
+// Module 17231 (NewGroupDMScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ToastUtils from "ToastUtils" /* 4453 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
-import HeaderShared from "HeaderShared" /* 8105 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11844 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17219 */;
+import HeaderShared from "HeaderShared" /* 8107 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11846 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17230 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14017 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14023 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -184,14 +184,14 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
                             const obj = { value, done: true };
                             return obj;
                           } else {
-                            const tmp8 = v3(10001);
+                            const tmp8 = v3(10002);
                             const call = tmp8.call;
                             if (typeof call === "unknown") {
                               tmp8(false, true);
                             } else {
                               call(tmp9, false, true);
                             }
-                            v3(13178)(closure_128_3);
+                            v3(13180)(closure_128_3);
                             dependencyMap = 3;
                             tmp9 = closure_128_3;
                           }
@@ -280,7 +280,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const UserRowModes = fn(11121).UserRowModes;
+const UserRowModes = fn(11122).UserRowModes;
 const Constants = fn(1074);
 ({ InstantInviteSources: map1, AnalyticEvents: closure_14, AnalyticsSections: closure_15, NEW_GROUP_DM_POPOUT_ID: closure_16 } = Constants);
 const jsxProd = fn(21);

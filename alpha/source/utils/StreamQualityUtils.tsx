@@ -1,10 +1,10 @@
-// Module ID: 9706
-// Function ID: 9707
+// Module ID: 9707
+// Function ID: 9708
 // Name: StreamQualityUtils
 // Dependencies: [19, 4802, 502, 2063, 4779, 1372, 1074, 4803, 1374, 4781, 1115, 504, 4892, 1241, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9706 (StreamQualityUtils)
+// Module 9707 (StreamQualityUtils)
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4892 */;

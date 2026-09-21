@@ -1,10 +1,10 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16648
+// Function ID: 16649
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [2095, 4577, 1074, 4614, 4613, 4767, 7582, 2]
+// Dependencies: [2095, 4577, 1074, 4614, 4613, 4767, 7584, 2]
 // Exports: default
 
-// Module 16642 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 16648 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
@@ -52,7 +52,7 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
     tmp(4767).transitionToChannel(tmp4);
     const tmpResult3 = tmp(4767);
   } else {
-    tmp(7582).transitionToGuild(arg0);
-    const tmpResult4 = tmp(7582);
+    tmp(7584).transitionToGuild(arg0);
+    const tmpResult4 = tmp(7584);
   }
 };

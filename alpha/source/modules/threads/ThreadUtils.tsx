@@ -1,17 +1,17 @@
-// Module ID: 8021
-// Function ID: 8022
+// Module ID: 8023
+// Function ID: 8024
 // Name: ThreadUtils
-// Dependencies: [109, 4771, 4937, 4397, 1114, 1074, 1115, 7739, 4936, 1241, 8014, 7354, 1385, 504, 11, 4348, 2]
+// Dependencies: [109, 4771, 4937, 4397, 1114, 1074, 1115, 7741, 4936, 1241, 8016, 7359, 1385, 504, 11, 4348, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 8021 (ThreadUtils)
+// Module 8023 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import _modDef4348 from "module_4348" /* 4348 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import getTimestampStringDefault from "getTimestampString" /* 7739 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8014 */;
+import getTimestampStringDefault from "getTimestampString" /* 7741 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8016 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReadStateStore from "ReadStateStore" /* 4771 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
@@ -55,7 +55,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = getGuildId.getGuildId();
     const parent_id = getGuildId.parent_id;
-    const currentChannelSettings = tmp(7354).getCurrentChannelSettings(guildId, parent_id);
+    const currentChannelSettings = tmp(7359).getCurrentChannelSettings(guildId, parent_id);
     let num = JoinedThreadsStore.flags(getGuildId.id);
     if (num == null) {
       num = 0;
@@ -82,8 +82,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = JoinedThreadsStore.isMuted(getGuildId.id);
-    let tmpResult = tmp(7354);
-    let result1 = tmp(7354).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
+    let tmpResult = tmp(7359);
+    let result1 = tmp(7359).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
     ({ can_send_message, parent_channel_type } = result);
     const obj2 = {};
     const merged = Object.assign(_objectWithoutProperties(result, closure_3));
@@ -107,11 +107,11 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj2.new_thread_is_muted = muted;
     obj2.old_thread_muted_until = result1;
     if (null != flags.mute_config) {
-      result1 = tmp(7354).muteConfigToTimestamp(flags.mute_config);
-      const tmpResult4 = tmp(7354);
+      result1 = tmp(7359).muteConfigToTimestamp(flags.mute_config);
+      const tmpResult4 = tmp(7359);
     }
     obj2.new_thread_muted_until = result1;
-    const tmpResult3 = tmp(7354);
+    const tmpResult3 = tmp(7359);
     AnalyticsUtilsDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
 };

@@ -1,14 +1,14 @@
-// Module ID: 9732
-// Function ID: 9733
+// Module ID: 9733
+// Function ID: 9734
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1481, 1364, 1624, 1612, 9733, 2]
+// Dependencies: [32, 19, 1481, 1364, 1624, 1612, 9734, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 9732 (useStableSafeAreaInsets)
+// Module 9733 (useStableSafeAreaInsets)
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1481 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1612 */;
 import NativeSafeAreaInsetsModuleDefault from "NativeSafeAreaInsetsModule" /* 1624 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9733 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9734 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

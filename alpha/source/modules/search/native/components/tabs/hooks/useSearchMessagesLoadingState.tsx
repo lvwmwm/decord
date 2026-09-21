@@ -1,18 +1,18 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17169
+// Function ID: 17170
 // Name: useSearchMessagesLoadingState
-// Dependencies: [7521, 12591, 8121, 17105, 504, 12592, 2]
+// Dependencies: [7523, 12593, 8122, 17116, 504, 12594, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 17158 (useSearchMessagesLoadingState)
+// Module 17169 (useSearchMessagesLoadingState)
 import initialize from "initialize" /* 504 */;
-import SearchUtils from "SearchUtils" /* 12592 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17105 */;
-import SearchMessageStore from "SearchMessageStore" /* 7521 */;
-import SearchQueryStore from "SearchQueryStore" /* 12591 */;
+import SearchUtils from "SearchUtils" /* 12594 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17116 */;
+import SearchMessageStore from "SearchMessageStore" /* 7523 */;
+import SearchQueryStore from "SearchQueryStore" /* 12593 */;
 
 require = fn;
-let closure_4 = fn(8121).SEARCH_TABS_TO_SEARCH_QUERY_LIMITS;
+let closure_4 = fn(8122).SEARCH_TABS_TO_SEARCH_QUERY_LIMITS;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessagesLoadingState.tsx");
 

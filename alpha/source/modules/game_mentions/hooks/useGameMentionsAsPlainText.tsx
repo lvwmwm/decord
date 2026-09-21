@@ -1,10 +1,10 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11142
+// Function ID: 11143
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2000, 1372, 5211, 7549, 504, 2009, 5322, 1115, 2]
+// Dependencies: [19, 2000, 1372, 5211, 7551, 504, 2009, 5327, 1115, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 11141 (useGameMentionsAsPlainText)
+// Module 11142 (useGameMentionsAsPlainText)
 import noop from "module_19" /* 19 */;
 import GameStore from "GameStore" /* 2000 */;
 import UserStore from "UserStore" /* 1372 */;

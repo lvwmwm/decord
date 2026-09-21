@@ -1,27 +1,27 @@
-// Module ID: 15326
-// Function ID: 15327
+// Module ID: 15332
+// Function ID: 15333
 // Name: BountiesModalContent
-// Dependencies: [32, 5, 19, 17, 7936, 5656, 15278, 1074, 1085, 21, 1478, 1612, 4756, 576, 504, 9128, 15287, 11774, 15292, 11544, 4724, 15294, 15290, 7952, 5663, 7962, 5661, 11765, 15274, 15296, 12029, 15327, 15324, 7363, 15317, 4492, 4757, 4760, 11750, 1110, 15288, 15323, 7933, 4466, 2]
+// Dependencies: [32, 5, 19, 17, 7938, 5661, 15284, 1074, 1085, 21, 1478, 1612, 4756, 576, 504, 9129, 15293, 11776, 15298, 11546, 4724, 15300, 15296, 7954, 5668, 7964, 5666, 11767, 15280, 15302, 12031, 15333, 15330, 7368, 15323, 4492, 4757, 4760, 11752, 1110, 15294, 15329, 7935, 4466, 2]
 // Exports: default
 
-// Module 15326 (BountiesModalContent)
+// Module 15332 (BountiesModalContent)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import timing from "timing" /* 4757 */;
 import timingPresets from "timingPresets" /* 4760 */;
-import QuestContent from "QuestContent" /* 5661 */;
-import AdCreativeType from "AdCreativeType" /* 5663 */;
-import QuestDataUtils from "QuestDataUtils" /* 7933 */;
-import AnalyticsActions from "AnalyticsActions" /* 7952 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7962 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 11750 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11765 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12029 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15274 */;
+import QuestContent from "QuestContent" /* 5666 */;
+import AdCreativeType from "AdCreativeType" /* 5668 */;
+import QuestDataUtils from "QuestDataUtils" /* 7935 */;
+import AnalyticsActions from "AnalyticsActions" /* 7954 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 11752 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11767 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12031 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15280 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import BountyStore from "BountyStore" /* 7936 */;
+import BountyStore from "BountyStore" /* 7938 */;
 
 require = fn;
 function BountiesModalContentInner(bounty) {
@@ -378,8 +378,8 @@ function BountiesModalContentWithAppStore(arg0) {
   return closure_16(height(sharedValue[40]).BountyVideoEndAppStoreProvider, obj3);
 }
 const View = fn(17).View;
-const QuestsExperimentLocations = fn(5656).QuestsExperimentLocations;
-const BountiesModalConstants = fn(15278);
+const QuestsExperimentLocations = fn(5661).QuestsExperimentLocations;
+const BountiesModalConstants = fn(15284);
 ({ getBountyVideoEndAppStoreSheetHeight: closure_9, getBountyVideoEndPeekTargetScale: c10 } = BountiesModalConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, ComponentActions: closure_12 } = Constants);

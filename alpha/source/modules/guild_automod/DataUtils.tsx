@@ -1,10 +1,10 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12123
+// Function ID: 12124
 // Name: DataUtils
 // Dependencies: [12, 2]
 // Exports: _transformMetadataToCamelCase, _transformMetadataToSnakeCase
 
-// Module 12121 (DataUtils)
+// Module 12123 (DataUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/DataUtils.tsx");

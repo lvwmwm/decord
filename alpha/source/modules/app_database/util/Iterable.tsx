@@ -1,10 +1,10 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7724
+// Function ID: 7725
 // Name: Iterable
 // Dependencies: [2]
 // Exports: chain
 
-// Module 7722 (Iterable)
+// Module 7724 (Iterable)
 import size from "module_2" /* 2 */;
 
 class Chained {

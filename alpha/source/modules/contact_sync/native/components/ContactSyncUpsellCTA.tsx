@@ -1,17 +1,17 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14126
+// Function ID: 14127
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 12930, 1074, 21, 4756, 576, 8870, 1241, 12927, 7434, 1115, 14121, 2]
+// Dependencies: [19, 12932, 1074, 21, 4756, 576, 8871, 1241, 12929, 7439, 1115, 14127, 2]
 
-// Module 14120 (ContactSyncUpsellCTA)
+// Module 14126 (ContactSyncUpsellCTA)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12927 */;
-import _modDef14121 from "module_14121" /* 14121 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12929 */;
+import _modDef14127 from "module_14127" /* 14127 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const dismissUpsellCTA = fn(12930).dismissUpsellCTA;
+const dismissUpsellCTA = fn(12932).dismissUpsellCTA;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
 const jsx = fn(21).jsx;
@@ -49,10 +49,10 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
       };
       const items = [obj3];
       obj2.options = items;
-      const result = location(7434).showSimpleActionSheet(obj2);
+      const result = location(7439).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef14121,
+    iconSource: _modDef14127,
     title: null,
     subtitle: null
   };
@@ -62,7 +62,7 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
   obj.title = intl.string(location(1115).t.T6Rfd9);
   const intl2 = location(1115).intl;
   obj.subtitle = intl2.string(location(1115).t.c6KIpg);
-  return jsx(location(8870).FormCTA, {
+  return jsx(location(8871).FormCTA, {
     onPress() {
       const obj2 = { type: constants2.CONTACT_SYNC_MODAL, location: null };
       let str = location;
@@ -87,10 +87,10 @@ export default noop.memo(function ContactSyncUpsellCTA(location) {
       };
       const items = [obj3];
       obj2.options = items;
-      const result = location(7434).showSimpleActionSheet(obj2);
+      const result = location(7439).showSimpleActionSheet(obj2);
     },
     style: null,
-    iconSource: _modDef14121,
+    iconSource: _modDef14127,
     title: null,
     subtitle: null
   });

@@ -1,10 +1,10 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9048
+// Function ID: 9049
 // Name: useTrackImpression
 // Dependencies: [19, 2041, 2095, 4577, 1242, 1249, 1241, 573, 4936, 1331, 4960, 5203, 2]
 // Exports: default
 
-// Module 9047 (useTrackImpression)
+// Module 9048 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1241 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;

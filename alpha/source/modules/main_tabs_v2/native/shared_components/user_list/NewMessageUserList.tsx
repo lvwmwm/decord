@@ -1,16 +1,16 @@
-// Module ID: 12618
-// Function ID: 12619
+// Module ID: 12620
+// Function ID: 12621
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 2041, 4405, 1372, 11121, 21, 4756, 576, 5729, 4600, 4909, 12, 11123, 1115, 4752, 11125, 11127, 11259, 12619, 2]
+// Dependencies: [32, 19, 17, 2041, 4405, 1372, 11122, 21, 4756, 576, 5734, 4600, 4909, 12, 11124, 1115, 4752, 11126, 11128, 11260, 12621, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 12618 (NewMessageUserList)
+// Module 12620 (NewMessageUserList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import UserUtilsDefault from "UserUtils" /* 4600 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5729 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5734 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -38,7 +38,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult1) {
-          if (tmp19(5729)(trimmed1, tmp7)) {
+          if (tmp19(5734)(trimmed1, tmp7)) {
             obj.return();
             return 1;
           }
@@ -49,7 +49,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult2) {
-          if (tmp19(5729)(trimmed1, tmp12)) {
+          if (tmp19(5734)(trimmed1, tmp12)) {
             obj.return();
             return 1;
           }
@@ -100,7 +100,7 @@ function filterGroupDMs(isGroupDM) {
   return isGroupDM.isGroupDM();
 }
 const View = fn(17).View;
-const UserRowModes = fn(11121).UserRowModes;
+const UserRowModes = fn(11122).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
 let closure_13 = [];

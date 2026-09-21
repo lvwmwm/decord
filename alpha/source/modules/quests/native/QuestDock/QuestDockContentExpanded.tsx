@@ -1,16 +1,16 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15454
+// Function ID: 15455
 // Name: QuestDockContentExpanded
-// Dependencies: [19, 17, 5656, 15356, 21, 4756, 15357, 11614, 4492, 15355, 5185, 7313, 2]
+// Dependencies: [19, 17, 5661, 15362, 21, 4756, 15363, 11616, 4492, 15361, 5185, 7318, 2]
 
-// Module 15448 (QuestDockContentExpanded)
+// Module 15454 (QuestDockContentExpanded)
 import spring from "spring" /* 5185 */;
-import QuestDockUtils from "QuestDockUtils" /* 15355 */;
+import QuestDockUtils from "QuestDockUtils" /* 15361 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestDockMode = fn(5656).QuestDockMode;
-let QUEST_DOCK_MODE_CHANGE_PHYSICS = fn(15356).QUEST_DOCK_MODE_CHANGE_PHYSICS;
+const QuestDockMode = fn(5661).QuestDockMode;
+let QUEST_DOCK_MODE_CHANGE_PHYSICS = fn(15362).QUEST_DOCK_MODE_CHANGE_PHYSICS;
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
 let obj = { wrapper: null };

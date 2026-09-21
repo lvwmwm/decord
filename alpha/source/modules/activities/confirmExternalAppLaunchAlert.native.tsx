@@ -1,23 +1,23 @@
-// Module ID: 9608
-// Function ID: 9609
+// Module ID: 9609
+// Function ID: 9610
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2004, 21, 4756, 9609, 4752, 1115, 5186, 4451, 5108, 2]
+// Dependencies: [19, 17, 2004, 21, 4756, 9610, 4752, 1115, 5186, 4451, 5108, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 9608 (confirmExternalAppLaunchAlert)
+// Module 9609 (confirmExternalAppLaunchAlert)
 import util from "util" /* 1115 */;
 import LinkingDefault from "Linking" /* 4451 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import _modDef9609 from "module_9609" /* 9609 */;
+import _modDef9610 from "module_9610" /* 9610 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function ConfirmActivityGateContent(activityName) {
   const tmp = closure_8();
   const obj = { style: tmp.alertContainer, children: null };
-  const items = [timestampProducer(React3, { source: _modDef9609, style: tmp.announcementBirb }), , , ];
+  const items = [timestampProducer(React3, { source: _modDef9610, style: tmp.announcementBirb }), , , ];
   const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["06YebE"]);

@@ -1,13 +1,13 @@
-// Module ID: 15466
-// Function ID: 15467
+// Module ID: 15472
+// Function ID: 15473
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 576, 4756, 11854, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 576, 4756, 11856, 4752, 1115, 2]
 
-// Module 15466 (QuestDockLimitedTimePill)
+// Module 15472 (QuestDockLimitedTimePill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import TimerIcon from "TimerIcon" /* 11854 */;
+import TimerIcon from "TimerIcon" /* 11856 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

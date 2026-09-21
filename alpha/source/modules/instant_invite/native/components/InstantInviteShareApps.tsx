@@ -1,9 +1,9 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10111
+// Function ID: 10112
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 10111, 21, 4756, 576, 5193, 6892, 10145, 8178, 9872, 2]
+// Dependencies: [32, 19, 17, 10112, 21, 4756, 576, 5193, 6897, 10146, 8179, 9873, 2]
 
-// Module 10110 (InstantInviteShareApps)
+// Module 10111 (InstantInviteShareApps)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -11,7 +11,7 @@ import noop from "module_19" /* 19 */;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const InstantInviteConstants = fn(10111);
+const InstantInviteConstants = fn(10112);
 ({ SHARE_ITEMS: closure_7, SHARE_ITEMS_DEFAULT: closure_8 } = InstantInviteConstants);
 const jsx = fn(21).jsx;
 const createStyles = fn(4756);
@@ -29,7 +29,7 @@ export default noop.memo(function InstantInviteShareApps(onItemPressed) {
   let obj = onItemPressed(5193);
   [arr, c2] = noop.useState(closure_8);
   const tmp2 = _slicedToArray(noop.useState(closure_8), 2);
-  const gesture = onItemPressed(6892).useNativeGesture({ disallowInterruption: true });
+  const gesture = onItemPressed(6897).useNativeGesture({ disallowInterruption: true });
   const effect = noop.useEffect(() => {
     Promise.all(React5.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
       const items = [];
@@ -118,5 +118,5 @@ export default noop.memo(function InstantInviteShareApps(onItemPressed) {
     obj.children = tmpResult;
     return <closure_1_5 key={arg0.type} style={{ maxWidth: 76 * closure_1 }}>{null}</closure_1_5>;
   })}</closure_6>;
-  return jsx(onItemPressed(6892).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(6897).GestureDetector, { gesture, children });
 });

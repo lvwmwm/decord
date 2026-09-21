@@ -1,10 +1,10 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14462
+// Function ID: 14463
 // Name: Badges/Badges
 // Dependencies: [19, 17, 21, 4756, 576, 4752, 2]
 // Exports: TextBadge
 
-// Module 14456 (Badges/Badges)
+// Module 14462 (Badges/Badges)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import noop from "module_19" /* 19 */;

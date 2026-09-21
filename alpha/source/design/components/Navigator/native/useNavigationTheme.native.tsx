@@ -1,10 +1,10 @@
-// Module ID: 7281
-// Function ID: 7282
+// Module ID: 7286
+// Function ID: 7287
 // Name: useNavigationTheme
 // Dependencies: [19, 4457, 576, 4607, 1485, 2]
 // Exports: useNavigationTheme
 
-// Module 7281 (useNavigationTheme)
+// Module 7286 (useNavigationTheme)
 import Link from "Link" /* 1485 */;
 import shared from "shared" /* 4607 */;
 import noop from "module_19" /* 19 */;

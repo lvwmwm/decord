@@ -1,21 +1,21 @@
-// Module ID: 5808
-// Function ID: 5809
+// Module ID: 5813
+// Function ID: 5814
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5784, 1074, 21, 4756, 4454, 1115, 5809, 5786, 5810, 4580, 504, 5269, 5759, 5811, 7179, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 5789, 1074, 21, 4756, 4454, 1115, 5814, 5791, 5815, 4580, 504, 5269, 5764, 5816, 7184, 5186, 2]
 // Exports: default
 
-// Module 5808 (MemberVerificationForm)
+// Module 5813 (MemberVerificationForm)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5784 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5789 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_8 = fn(5784).NO_MEMBER_VERIFICATION_FORM;
+let closure_8 = fn(5789).NO_MEMBER_VERIFICATION_FORM;
 const VerificationLevels = fn(1074).VerificationLevels;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
@@ -67,7 +67,7 @@ export default function MemberVerificationForm(guild) {
                   const obj2 = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: null, icon: null };
                   const intl = closure_1_0(1115).intl;
                   obj2.content = intl.string(closure_1_0(1115).t.StC497);
-                  obj2.icon = closure_1_1(5809);
+                  obj2.icon = closure_1_1(5814);
                   closure_1_1(4454).open(obj2);
                 })();
                 c6 = 3;

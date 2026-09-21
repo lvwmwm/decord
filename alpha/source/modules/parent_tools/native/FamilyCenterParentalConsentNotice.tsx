@@ -1,13 +1,13 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15151
+// Function ID: 15152
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4756, 576, 15137, 15138, 4451, 4752, 15146, 1115, 2482, 2]
+// Dependencies: [19, 21, 4756, 576, 15143, 15144, 4451, 4752, 15152, 1115, 2482, 2]
 // Exports: default
 
-// Module 15145 (FamilyCenterParentalConsentNotice)
+// Module 15151 (FamilyCenterParentalConsentNotice)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15146 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15152 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

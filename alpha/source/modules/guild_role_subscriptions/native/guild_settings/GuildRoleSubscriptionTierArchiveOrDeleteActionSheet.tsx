@@ -1,10 +1,10 @@
-// Module ID: 18184
-// Function ID: 18185
+// Module ID: 18195
+// Function ID: 18196
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4756, 576, 1612, 38, 18185, 7390, 6864, 4752, 1177, 5186, 4723, 1115, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1612, 38, 18196, 7395, 6869, 4752, 1177, 5186, 4723, 1115, 2]
 // Exports: default
 
-// Module 18184 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18195 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -13,9 +13,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import BottomSheetModal from "BottomSheetModal" /* 6864 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7390 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18185 */;
+import BottomSheetModal from "BottomSheetModal" /* 6869 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18196 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

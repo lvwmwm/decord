@@ -1,13 +1,13 @@
-// Module ID: 5983
-// Function ID: 5984
+// Module ID: 5988
+// Function ID: 5989
 // Name: AutoClipsConsentAbstractUI
-// Dependencies: [21, 5799, 5984, 2]
+// Dependencies: [21, 5804, 5989, 2]
 // Exports: AutoClipsConsentAbstractUI
 
-// Module 5983 (AutoClipsConsentAbstractUI)
+// Module 5988 (AutoClipsConsentAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef5984 from "module_5984" /* 5984 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef5989 from "module_5989" /* 5989 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AutoClipsConsentAbstractUI = function AutoClipsConsentAbstractUI(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5984 };
+  const obj2 = { uri: _modDef5989 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

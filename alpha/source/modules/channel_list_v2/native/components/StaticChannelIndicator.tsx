@@ -1,10 +1,10 @@
-// Module ID: 10421
-// Function ID: 10422
+// Module ID: 10422
+// Function ID: 10423
 // Name: StaticChannelIndicator
 // Dependencies: [17, 4938, 21, 4756, 576, 4457, 2]
 // Exports: default
 
-// Module 10421 (StaticChannelIndicator)
+// Module 10422 (StaticChannelIndicator)
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import useToken from "useToken" /* 4457 */;

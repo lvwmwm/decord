@@ -1,13 +1,13 @@
-// Module ID: 6675
-// Function ID: 6676
+// Module ID: 6680
+// Function ID: 6681
 // Name: ServerIconStarblasterExample
-// Dependencies: [21, 5799, 6676, 2]
+// Dependencies: [21, 5804, 6681, 2]
 // Exports: ServerIconStarblasterExample
 
-// Module 6675 (ServerIconStarblasterExample)
+// Module 6680 (ServerIconStarblasterExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6676 from "module_6676" /* 6676 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6681 from "module_6681" /* 6681 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ServerIconStarblasterExample = function ServerIconStarblasterExampl
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6676 };
+  const obj2 = { uri: _modDef6681 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

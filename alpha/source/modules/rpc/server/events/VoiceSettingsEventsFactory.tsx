@@ -1,10 +1,10 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 14805
+// Function ID: 14806
 // Name: VoiceSettingsEventsFactory
-// Dependencies: [4660, 1074, 8609, 12, 2]
+// Dependencies: [4660, 1074, 8610, 12, 2]
 // Exports: default
 
-// Module 14799 (VoiceSettingsEventsFactory)
+// Module 14805 (VoiceSettingsEventsFactory)
 import Constants2 from "Constants" /* 1074 */;
 import Constants from "Constants" /* 4660 */;
 import size from "module_2" /* 2 */;

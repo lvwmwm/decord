@@ -1,17 +1,29 @@
 // Module ID: 13163
 // Function ID: 13164
-// Dependencies: []
-// Exports: getSDKSource, isBrowserBundle
+// Dependencies: [13164, 13051]
+// Exports: isBrowser
 
 // Module 13163
+import _mod13164 from "module_13164" /* 13164 */;
 
-export function getSDKSource() {
-  return "npm";
-}
-export const isBrowserBundle = function isBrowserBundle() {
-  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
-  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
-    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
+require = arg1;
+const dependencyMap = arg6;
+
+export const isBrowser = function isBrowser() {
+  let tmp = typeof window !== "undefined";
+  if (typeof window !== "undefined") {
+    const isNodeEnvResult = _mod13164.isNodeEnv();
+    let tmp3 = !isNodeEnvResult;
+    if (isNodeEnvResult) {
+      const _process = tmp4(13051).GLOBAL_OBJ.process;
+      let tmp2 = _process;
+      if (tmp2) {
+        tmp2 = "renderer" === _process.type;
+      }
+      tmp3 = tmp2;
+    }
+    tmp = tmp3;
+    tmp4 = require;
   }
-  return prop;
+  return tmp;
 };

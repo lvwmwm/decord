@@ -1,13 +1,13 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16303
+// Function ID: 16304
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 16271, 21, 4756, 4492, 14975, 5184, 6847, 576, 4752, 1115, 16289, 6843, 1364, 2]
+// Dependencies: [109, 32, 19, 16277, 21, 4756, 4492, 14981, 5184, 6852, 576, 4752, 1115, 16295, 6848, 1364, 2]
 // Exports: RegisterUsernameInput
 
-// Module 16297 (RegisterUsernameInput)
+// Module 16303 (RegisterUsernameInput)
 import nativeDefault from "native" /* 576 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14975 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16289 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14981 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 16295 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -23,7 +23,7 @@ function UsernameStatusMessage(arg0) {
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: null };
     obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-    const items = [React7(tmp3(6847).CircleErrorIcon, obj3), ];
+    const items = [React7(tmp3(6852).CircleErrorIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status };
     const merged = Object.assign(obj2);
     const merged1 = Object.assign(obj3);
@@ -38,7 +38,7 @@ function UsernameStatusMessage(arg0) {
       if (usernameStatus != null) {
         type1 = usernameStatus.type;
       }
-      if (type1 === tmp3(14975).NameValidationState.AVAILABLE) {
+      if (type1 === tmp3(14981).NameValidationState.AVAILABLE) {
         const obj5 = {};
         const merged2 = Object.assign(obj2);
         const merged3 = Object.assign(obj3);
@@ -67,7 +67,7 @@ function UsernameStatusMessage(arg0) {
   return tmp6;
 }
 let closure_3 = ["username"];
-const RegistrationUIStore = fn(16271);
+const RegistrationUIStore = fn(16277);
 ({ setRegistrationErrors: closure_7, useRegistrationUIStore: closure_8 } = RegistrationUIStore);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
@@ -143,13 +143,13 @@ export const RegisterUsernameInput = function RegisterUsernameInput(setUsername)
     type = usernameStatus.type;
   }
   let str2;
-  if (type === tmp14(14975).NameValidationState.ERROR) {
+  if (type === tmp14(14981).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: null };
   obj3.status = str2;
   obj3.submitBehavior = submitBehavior;
-  const items3 = [closure_9(setUsername(6843).TextInput, obj3), closure_9(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
+  const items3 = [closure_9(setUsername(6848).TextInput, obj3), closure_9(UsernameStatusMessage, { usernameStatus, isUsernameFocused: tmp5[0] })];
   obj6.children = items3;
   return tmp11(tmp12, obj6);
 };

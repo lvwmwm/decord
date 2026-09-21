@@ -1,10 +1,10 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 14898
+// Function ID: 14899
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7448, 7672, 21, 4756, 576, 1177, 8939, 4752, 5198, 1094, 2]
+// Dependencies: [19, 17, 7453, 7674, 21, 4756, 576, 1177, 8940, 4752, 5198, 1094, 2]
 // Exports: default
 
-// Module 14892 (UserProfileUpsellCard)
+// Module 14898 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
@@ -15,14 +15,14 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
-const Gradients = fn(7672).Gradients;
+const Gradients = fn(7674).Gradients;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4756);
 let obj2 = { upsellButton: { marginTop: 8, flexShrink: 0, borderRadius: nativeDefault.radii.round, gap: 4 }, titleContainer: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 }, linearGradient: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, outer: null, scroll: null, inner: null };
 let obj3 = { marginTop: 8, flexShrink: 0, borderRadius: nativeDefault.radii.round, gap: 4 };
-obj2.outer = { marginHorizontal: fn(7448).PROFILE_SIDE_PADDING - 1 };
-let obj4 = { marginHorizontal: fn(7448).PROFILE_SIDE_PADDING - 1 };
+obj2.outer = { marginHorizontal: fn(7453).PROFILE_SIDE_PADDING - 1 };
+let obj4 = { marginHorizontal: fn(7453).PROFILE_SIDE_PADDING - 1 };
 obj2.scroll = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.inner = { paddingVertical: 12, paddingHorizontal: 14 };
 let closure_8 = createStyles.createStyles(obj2);
@@ -46,7 +46,7 @@ export default function UserProfileUpsellCard(headerText) {
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: null };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const items3 = [tmp2(tmp3(8939).NitroWheelIcon, obj4), ];
+    const items3 = [tmp2(tmp3(8940).NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = tmp2(tmp3(4752).Text, obj5);
     obj3.children = items3;

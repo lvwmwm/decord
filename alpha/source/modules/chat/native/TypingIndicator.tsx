@@ -1,21 +1,21 @@
-// Module ID: 12215
-// Function ID: 12216
+// Module ID: 12217
+// Function ID: 12218
 // Name: TypingIndicator
-// Dependencies: [19, 17, 9653, 4755, 5673, 7921, 12216, 1372, 1074, 21, 12217, 504, 4756, 576, 12218, 12219, 12230, 12222, 4908, 1241, 4492, 4457, 4466, 5185, 5189, 12231, 1177, 4752, 12234, 2]
+// Dependencies: [19, 17, 9654, 4755, 5678, 7923, 12218, 1372, 1074, 21, 12219, 504, 4756, 576, 12220, 12221, 12232, 12224, 4908, 1241, 4492, 4457, 4466, 5185, 5189, 12233, 1177, 4752, 12236, 2]
 // Exports: hasTypingIndicatorContent, useTypingUserIdsForDisplay
 
-// Module 12215 (TypingIndicator)
+// Module 12217 (TypingIndicator)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import native from "native" /* 4466 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12222 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12224 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4755 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 5673 */;
-import TypingStore from "TypingStore" /* 12216 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 5678 */;
+import TypingStore from "TypingStore" /* 12218 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -218,8 +218,8 @@ function renderTypingIndicator(arg0, arg1, transitionState, cleanUp) {
   return closure_1_12(TypingIndicatorInner, obj, arg0);
 }
 const View = fn(17).View;
-let closure_5 = fn(9653).useChatShowingAutoComplete;
-const SlowmodeType = fn(7921).SlowmodeType;
+let closure_5 = fn(9654).useChatShowingAutoComplete;
+const SlowmodeType = fn(7923).SlowmodeType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);

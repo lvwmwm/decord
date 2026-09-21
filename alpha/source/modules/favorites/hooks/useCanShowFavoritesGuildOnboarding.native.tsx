@@ -1,10 +1,10 @@
-// Module ID: 10496
-// Function ID: 10497
+// Module ID: 10497
+// Function ID: 10498
 // Name: useCanShowFavoritesGuildOnboarding
 // Dependencies: [4447, 2095, 504, 4613, 2]
 // Exports: default
 
-// Module 10496 (useCanShowFavoritesGuildOnboarding)
+// Module 10497 (useCanShowFavoritesGuildOnboarding)
 import initialize from "initialize" /* 504 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
 import ActionSheetStore from "ActionSheetStore" /* 4447 */;

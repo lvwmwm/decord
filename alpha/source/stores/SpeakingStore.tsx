@@ -1,13 +1,13 @@
-// Module ID: 5631
-// Function ID: 5632
+// Module ID: 5636
+// Function ID: 5637
 // Name: SpeakingStore
-// Dependencies: [32, 2041, 1992, 4779, 2095, 1074, 4781, 4400, 504, 5632, 573, 2]
+// Dependencies: [32, 2041, 1992, 4779, 2095, 1074, 4781, 4400, 504, 5637, 573, 2]
 
-// Module 5631 (SpeakingStore)
+// Module 5636 (SpeakingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4400 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5632 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5637 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;

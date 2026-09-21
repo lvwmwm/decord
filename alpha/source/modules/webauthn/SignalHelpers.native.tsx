@@ -1,9 +1,9 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 6839
+// Function ID: 6840
 // Name: SignalHelpers
-// Dependencies: [5, 3, 6835, 6836, 2]
+// Dependencies: [5, 3, 6840, 6841, 2]
 
-// Module 6834 (SignalHelpers)
+// Module 6839 (SignalHelpers)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -40,13 +40,13 @@ prototype["signalAllAcceptedCredentials"] = function signalAllAcceptedCredential
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const result = credentials(6835).encodeUserIdForWebAuthn(closure_1);
+            const result = credentials(6840).encodeUserIdForWebAuthn(closure_1);
             const mapped = credentials.map((cred_id) => cred_id.cred_id);
             const found = mapped.filter((item) => "" !== item);
             const obj4 = { rpId, encodedId: result, allAcceptedCredentialIds: found, credentials };
             logger.info("signalAllAcceptedCredentials", obj4);
-            const obj5 = credentials(6835);
-            const result1 = v1(6836).signalAllAcceptedCredentials(rpId, result, found);
+            const obj5 = credentials(6840);
+            const result1 = v1(6841).signalAllAcceptedCredentials(rpId, result, found);
             v1 = 1;
             credentials = 1;
             const obj6 = { value: result1.catch(logger.warn), done: false };

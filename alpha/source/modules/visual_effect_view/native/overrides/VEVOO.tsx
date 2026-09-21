@@ -1,9 +1,9 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16257
+// Function ID: 16258
 // Name: VEVOO
-// Dependencies: [19, 17, 4755, 574, 21, 4756, 576, 4492, 5185, 5189, 8870, 16252, 16254, 16255, 11156, 5892, 504, 15998, 2]
+// Dependencies: [19, 17, 4755, 574, 21, 4756, 576, 4492, 5185, 5189, 8871, 16258, 16260, 16261, 11157, 5897, 504, 16004, 2]
 
-// Module 16251 (VEVOO)
+// Module 16257 (VEVOO)
 import nativeDefault from "native" /* 576 */;
 import spring from "spring" /* 5185 */;
 import springPresets from "springPresets" /* 5189 */;

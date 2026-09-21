@@ -1,14 +1,14 @@
-// Module ID: 8014
-// Function ID: 8015
+// Module ID: 8016
+// Function ID: 8017
 // Name: ThreadAnalyticsUtils
-// Dependencies: [8010, 7546, 2045, 4395, 1074, 1101, 11, 2]
+// Dependencies: [8012, 7548, 2045, 4395, 1074, 1101, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 8014 (ThreadAnalyticsUtils)
+// Module 8016 (ThreadAnalyticsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
-import ThreadMembersStore from "ThreadMembersStore" /* 8010 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7546 */;
+import ThreadMembersStore from "ThreadMembersStore" /* 8012 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7548 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 
 require = fn;

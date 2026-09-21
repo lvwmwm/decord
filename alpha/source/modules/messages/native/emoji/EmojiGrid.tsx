@@ -1,13 +1,13 @@
-// Module ID: 10601
-// Function ID: 10602
+// Module ID: 10602
+// Function ID: 10603
 // Name: EmojiGrid
-// Dependencies: [19, 17, 21, 4756, 576, 4413, 1397, 7370, 10589, 10602, 10604, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 4413, 1397, 7375, 10590, 10603, 10605, 2]
 // Exports: EmojiGrid
 
-// Module 10601 (EmojiGrid)
+// Module 10602 (EmojiGrid)
 import nativeDefault from "native" /* 576 */;
-import EmojiDefault from "Emoji" /* 7370 */;
-import LayoutUtils from "LayoutUtils" /* 10604 */;
+import EmojiDefault from "Emoji" /* 7375 */;
+import LayoutUtils from "LayoutUtils" /* 10605 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -52,7 +52,7 @@ export const EmojiGrid = function EmojiGrid(numberToShow) {
     num2 = 5;
   }
   let obj = {};
-  const merged = Object.assign(doNotDisplayEmojiIds(10589).useSharedMessageEmojiStyles());
+  const merged = Object.assign(doNotDisplayEmojiIds(10590).useSharedMessageEmojiStyles());
   const merged1 = Object.assign(closure_5());
   let emojis;
   if (expressionSourceGuild != null) {
@@ -64,13 +64,13 @@ export const EmojiGrid = function EmojiGrid(numberToShow) {
   const substr = emojis.slice(0, num + 1);
   const found = substr.filter((id) => !doNotDisplayEmojiIds.includes(id.id));
   const substr1 = found.slice(0, num);
-  const obj2 = doNotDisplayEmojiIds(10589);
+  const obj2 = doNotDisplayEmojiIds(10590);
   const tmp = doNotDisplayEmojiIds;
   const obj3 = { style: obj.emojiGridContainer, children: null };
-  const arr4 = obj(10602)(substr1, num2);
-  obj3.children = jsx(tmp(10604).GappedList, {
+  const arr4 = obj(10603)(substr1, num2);
+  obj3.children = jsx(tmp(10605).GappedList, {
     gap: 8,
-    children: obj(10602)(substr1, num2).map((arr, index) => {
+    children: obj(10603)(substr1, num2).map((arr, index) => {
       obj = { style: obj.emojiGridRowContainer, children: jsx(LayoutUtils.GappedList, { gap: 32, children: arr.map((guildEmoji) => closure_1_4(closure_1_6, { guildEmoji }, guildEmoji.id)) }) };
       return <View key={arg1} style={obj.emojiGridRowContainer}>{jsx(LayoutUtils.GappedList, { gap: 32, children: arg0.map((guildEmoji) => closure_1_4(closure_1_6, { guildEmoji }, guildEmoji.id)) })}</View>;
     })

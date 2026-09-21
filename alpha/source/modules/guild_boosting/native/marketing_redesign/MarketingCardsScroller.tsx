@@ -1,9 +1,9 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12818
+// Function ID: 12819
 // Name: MarketingCardsScroller
-// Dependencies: [32, 19, 17, 4748, 21, 4756, 4605, 576, 504, 5171, 1115, 1365, 5334, 10633, 12620, 2]
+// Dependencies: [32, 19, 17, 4748, 21, 4756, 4605, 576, 504, 5171, 1115, 1365, 5339, 10634, 12622, 2]
 
-// Module 12816 (MarketingCardsScroller)
+// Module 12818 (MarketingCardsScroller)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _slicedToArray from "module_32" /* 32 */;

@@ -1,16 +1,16 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16685
+// Function ID: 16686
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4578, 2059, 4577, 5650, 21, 4756, 576, 16627, 4457, 504, 5796, 16661, 16630, 4580, 5739, 16642, 16671, 16619, 4492, 16650, 5799, 2]
+// Dependencies: [19, 4578, 2059, 4577, 5655, 21, 4756, 576, 16633, 4457, 504, 5801, 16667, 16636, 4580, 5744, 16648, 16677, 16625, 4492, 16656, 5804, 2]
 
-// Module 16679 (GuildsBarPendingGuild)
+// Module 16685 (GuildsBarPendingGuild)
 import nativeDefault from "native" /* 576 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16619 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 16625 */;
 import noop from "module_19" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4578 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
-import SortedGuildStore from "SortedGuildStore" /* 5650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5655 */;
 
 require = fn;
 const GuildRecord = fn(2059);
@@ -124,7 +124,7 @@ export default noop.memo(function GuildsBarPendingGuild(guildId) {
   ({ accessibilityActions, onAccessibilityAction } = memo1);
   let tmp2Result = guildId(stateFromStores[10]);
   const sharedValue = guildId(stateFromStores[19]).useSharedValue(guildId);
-  const obj7 = { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "PX_16", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "woman_facepalming_tone2" };
+  const obj7 = { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "PX_16", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "ianuarie" };
   let str = guildName;
   const tmp2Result2 = guildId(stateFromStores[19]);
   if (guildName == null) {
@@ -144,5 +144,5 @@ export default noop.memo(function GuildsBarPendingGuild(guildId) {
     const tmp5Result2 = tmp5(tmp3[11]);
   }
   obj7.children = tmp19Result;
-  return jsx(token(stateFromStores[8]), { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "PX_16", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "woman_facepalming_tone2" });
+  return jsx(token(stateFromStores[8]), { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "PX_16", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "ianuarie" });
 });

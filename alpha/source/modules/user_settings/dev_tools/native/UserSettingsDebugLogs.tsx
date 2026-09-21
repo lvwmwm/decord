@@ -1,16 +1,16 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15841
+// Function ID: 15842
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 6859, 1612, 4454, 510, 7, 4752, 7290, 15271, 1115, 15836, 4723, 15837, 8996, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4756, 576, 6864, 1612, 4454, 510, 7, 4752, 7295, 15277, 1115, 15842, 4723, 15843, 8997, 2]
 // Exports: default
 
-// Module 15835 (UserSettingsDebugLogs)
+// Module 15841 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 15836 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 15842 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -26,7 +26,7 @@ let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, 
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.searchWrap = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center" };
 obj2.searchField = { flex: 1 };
-let size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginLeft: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, height: fn(6859).InputHeights.MD, width: fn(6859).InputHeights.MD, justifyContent: "center", alignItems: "center" };
+let size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginLeft: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, height: fn(6864).InputHeights.MD, width: fn(6864).InputHeights.MD, justifyContent: "center", alignItems: "center" };
 obj2.shareButton = size;
 let obj4 = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center" };
 obj2.list = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -155,7 +155,7 @@ export default function UserSettingsDebugLogs() {
   obj8.data = tmp4Result4[0];
   obj8.renderItem = callback1;
   obj8.refreshControl = closure_8(closure_5, { refreshing: false, onRefresh });
-  items4[1] = closure_8(require("module_8996").FlashList, obj8);
+  items4[1] = closure_8(require("module_8997").FlashList, obj8);
   obj2.children = items4;
   return first1(memo, obj2);
 };

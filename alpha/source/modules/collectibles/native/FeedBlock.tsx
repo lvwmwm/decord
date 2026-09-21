@@ -1,16 +1,16 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16154
+// Function ID: 16155
 // Name: FeedBlock
-// Dependencies: [19, 17, 4748, 1182, 6831, 1076, 1074, 21, 4756, 576, 504, 4607, 16136, 16149, 15336, 7781, 7422, 7402, 1115, 4752, 5334, 4723, 16150, 1980, 4710, 5186, 16143, 16151, 1364, 9089, 16152, 5799, 16153, 16154, 2]
+// Dependencies: [19, 17, 4748, 1182, 6836, 1076, 1074, 21, 4756, 576, 504, 4607, 16142, 16155, 15342, 7783, 7427, 7407, 1115, 4752, 5339, 4723, 16156, 1980, 4710, 5186, 16149, 16157, 1364, 9090, 16158, 5804, 16159, 16160, 2]
 // Exports: default
 
-// Module 16148 (FeedBlock)
+// Module 16154 (FeedBlock)
 import nativeDefault from "native" /* 576 */;
-import ShopHomeSortType from "ShopHomeSortType" /* 16149 */;
+import ShopHomeSortType from "ShopHomeSortType" /* 16155 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import ConsentStore from "ConsentStore" /* 6831 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -45,7 +45,7 @@ export default function _default(feedBlock) {
   const obj = feedBlock(504);
   let items1 = [ConsentStore];
   const stateFromStores1 = feedBlock(504).useStateFromStores(items1, () => ConsentStore.hasConsented(constants2.PERSONALIZATION));
-  let tmp6 = stateFromStores1(16136)();
+  let tmp6 = stateFromStores1(16142)();
   dependencyMap = tmp6;
   const items2 = [feedBlock.sortedSkuIds, tmp6, stateFromStores1];
   const memo = noop.useMemo(() => {
@@ -76,8 +76,8 @@ export default function _default(feedBlock) {
   }, items2);
   ({ isPersonalized, feedProducts } = memo);
   let obj2 = feedBlock(504);
-  const filteredAndSortedProducts = feedBlock(15336).useFilteredAndSortedProducts({ products: feedProducts, maxProducts: 36, screen });
-  const obj3 = feedBlock(15336);
+  const filteredAndSortedProducts = feedBlock(15342).useFilteredAndSortedProducts({ products: feedProducts, maxProducts: 36, screen });
+  const obj3 = feedBlock(15342);
   const items3 = [AccessibilityStore];
   const stateFromStores2 = feedBlock(504).useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   const obj4 = feedBlock(504);
@@ -89,7 +89,7 @@ export default function _default(feedBlock) {
   } else {
     stringResult = string(t.ivaAA7);
   }
-  const obj5 = { value: stateFromStores1(7402)(stateFromStores1(7422).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations, children: null };
+  const obj5 = { value: stateFromStores1(7407)(stateFromStores1(7427).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations, children: null };
   const obj6 = { style: feedFooterOrbImage.feedContainer, children: null };
   const obj7 = { style: feedFooterOrbImage.feedHeader, children: null };
   const obj8 = { style: feedFooterOrbImage.feedTitle, children: null };
@@ -106,7 +106,7 @@ export default function _default(feedBlock) {
     const intl2 = tmp(1115).intl;
     obj9["aria-label"] = intl2.string(tmp(1115).t.hvVgAZ);
     obj9.children = tmp12(tmp(4710).CircleInformationIcon, { size: "xs" });
-    isPersonalized = tmp12(tmp(5334).PressableOpacity, obj9);
+    isPersonalized = tmp12(tmp(5339).PressableOpacity, obj9);
   }
   function goToShopAll() {
     const obj2 = { analyticsLocations: null, analyticsSource: null, screen: null };
@@ -128,7 +128,7 @@ export default function _default(feedBlock) {
   }
   items5[1] = tmp12Result;
   obj7.children = items5;
-  const items6 = [closure_12(closure_5, obj7), closure_11(stateFromStores1(16143), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
+  const items6 = [closure_12(closure_5, obj7), closure_11(stateFromStores1(16149), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
   const obj11 = { style: feedFooterOrbImage.feedFooter, children: null };
   const obj12 = { variant: "heading-lg/bold", accessibilityRole: "header", children: null };
   const intl4 = tmp(1115).intl;
@@ -142,7 +142,7 @@ export default function _default(feedBlock) {
     if (stateFromStores2) {
       const obj14 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
       const obj15 = { uri: null };
-      tmp5Result = tmp5(16151);
+      tmp5Result = tmp5(16157);
       obj15.uri = tmp5Result;
       obj14.source = obj15;
       feedFooterOrbImage = feedFooterOrbImage.feedFooterOrbImage;
@@ -150,27 +150,27 @@ export default function _default(feedBlock) {
       let tmp12Result2 = tmp12(closure_4, obj14);
     } else {
       if (tmpResult.isAndroid()) {
-        const obj16 = { url: tmp5(16152), autoplay: true, style: feedFooterOrbImage.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        tmp12Result2 = tmp12(tmp5(9089), obj16);
-        const tmp5Result3 = tmp5(9089);
+        const obj16 = { url: tmp5(16158), autoplay: true, style: feedFooterOrbImage.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+        tmp12Result2 = tmp12(tmp5(9090), obj16);
+        const tmp5Result3 = tmp5(9090);
       } else {
         const obj17 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        const obj18 = { uri: tmp5(16152) };
+        const obj18 = { uri: tmp5(16158) };
         obj17.source = obj18;
         obj17.style = feedFooterOrbImage.feedFooterOrbImage;
-        tmp12Result2 = tmp12(tmp5(5799), obj17);
-        const tmp5Result4 = tmp5(5799);
+        tmp12Result2 = tmp12(tmp5(5804), obj17);
+        const tmp5Result4 = tmp5(5804);
       }
       tmpResult = tmp(1364);
     }
   } else {
     const obj19 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     if (stateFromStores) {
-      obj19.source = tmp(16153);
+      obj19.source = tmp(16159);
       obj19.style = feedFooterOrbImage.feedFooterImage;
       let tmp18 = obj19;
     } else {
-      obj19.source = tmp(16154);
+      obj19.source = tmp(16160);
       obj19.style = feedFooterOrbImage.feedFooterImage;
       tmp18 = obj19;
     }
@@ -179,6 +179,6 @@ export default function _default(feedBlock) {
     items6[2] = tmp13(tmp14, obj11);
     obj6.children = items6;
     obj5.children = tmp13(tmp14, obj6);
-    return tmp12(tmp(7402).AnalyticsLocationProvider, obj5);
+    return tmp12(tmp(7407).AnalyticsLocationProvider, obj5);
   }
 };

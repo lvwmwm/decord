@@ -1,14 +1,14 @@
-// Module ID: 9090
-// Function ID: 9091
+// Module ID: 9091
+// Function ID: 9092
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4756, 576, 38, 1973, 9091, 9092, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 38, 1973, 9092, 9093, 2]
 // Exports: default
 
-// Module 9090 (AvatarDecorationSampleV2)
+// Module 9091 (AvatarDecorationSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9092 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9093 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,7 +45,7 @@ export default function AvatarDecorationSampleV2(arg0) {
   const obj = { style: items, resizeMode: "contain", source: null, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(9091);
+    avatarSource = tmp2(9092);
   }
   const obj2 = { children: null };
   obj.source = avatarSource;

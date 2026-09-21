@@ -1,8 +1,8 @@
-// Module ID: 6082
-// Function ID: 6083
+// Module ID: 6087
+// Function ID: 6088
 // Dependencies: [2]
 
-// Module 6082
+// Module 6087
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloudKeypadSpotIllustration-2x.png.js");

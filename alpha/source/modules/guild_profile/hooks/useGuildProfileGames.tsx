@@ -1,10 +1,10 @@
-// Module ID: 10026
-// Function ID: 10027
+// Module ID: 10027
+// Function ID: 10028
 // Name: useGuildProfileGames
-// Dependencies: [19, 2001, 2000, 502, 504, 7549, 1370, 2]
+// Dependencies: [19, 2001, 2000, 502, 504, 7551, 1370, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 10026 (useGuildProfileGames)
+// Module 10027 (useGuildProfileGames)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
 import GameRecord from "GameRecord" /* 2001 */;

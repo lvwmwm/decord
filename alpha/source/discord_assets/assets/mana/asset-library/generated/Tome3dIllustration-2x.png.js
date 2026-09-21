@@ -1,8 +1,8 @@
-// Module ID: 6780
-// Function ID: 6781
+// Module ID: 6785
+// Function ID: 6786
 // Dependencies: [2]
 
-// Module 6780
+// Module 6785
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/Tome3dIllustration-2x.png.js");

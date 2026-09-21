@@ -1,10 +1,10 @@
-// Module ID: 5737
-// Function ID: 5738
+// Module ID: 5742
+// Function ID: 5743
 // Name: transitionToMemberVerification
-// Dependencies: [2063, 4578, 1074, 5738, 1101, 4580, 5739, 5781, 2]
+// Dependencies: [2063, 4578, 1074, 5743, 1101, 4580, 5744, 5786, 2]
 // Exports: transitionToMemberVerification
 
-// Module 5737 (transitionToMemberVerification)
+// Module 5742 (transitionToMemberVerification)
 import GuildStore from "GuildStore" /* 2063 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4578 */;
 
@@ -24,18 +24,18 @@ export const transitionToMemberVerification = function transitionToMemberVerific
         applicationStatus = request.applicationStatus;
       }
       if (tmp(4580).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
-        const result = tmp(5739).openMemberVerificationPendingAlert(guildId);
-        const tmpResult6 = tmp(5739);
+        const result = tmp(5744).openMemberVerificationPendingAlert(guildId);
+        const tmpResult6 = tmp(5744);
       } else if (tmp(4580).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
         const obj2 = { guildId, canWithdraw: true };
-        const result1 = tmp(5739).openMemberVerificationRejectedAlert(obj2);
-        const tmpResult7 = tmp(5739);
+        const result1 = tmp(5744).openMemberVerificationRejectedAlert(obj2);
+        const tmpResult7 = tmp(5744);
       } else if (tmp(4580).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
         tmp(1101).transitionToGuild(guildId);
         const tmpResult8 = tmp(1101);
       } else {
-        const result2 = tmp(5781).openMemberVerificationModal(guildId);
-        const tmpResult9 = tmp(5781);
+        const result2 = tmp(5786).openMemberVerificationModal(guildId);
+        const tmpResult9 = tmp(5786);
       }
     }
   } else {

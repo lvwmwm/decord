@@ -1,12 +1,12 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12789
+// Function ID: 12790
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 2063, 4650, 4645, 12788, 504, 12789, 7402, 12790, 4649, 4723, 12769, 5646, 7643, 4959, 7652, 2]
+// Dependencies: [19, 2063, 4650, 4645, 12790, 504, 12791, 7407, 12792, 4649, 4723, 12771, 5651, 7645, 4959, 7654, 2]
 // Exports: default
 
-// Module 12787 (useGuildPowerupOnActivate)
+// Module 12789 (useGuildPowerupOnActivate)
 import GuildBoostingUtils from "GuildBoostingUtils" /* 4649 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5646 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5651 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4650 */;
@@ -38,13 +38,13 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
   obj2.onActivate = stateFromStores.useCallback(() => {
     if (null != stateFromStores) {
       if (null != PERK) {
-        if (closure_4 >= tmp14.cost) {
+        if (closure_4 >= tmp15.cost) {
           onToggle(true);
         } else {
-          const diff = tmp14.cost - tmp15;
+          const diff = tmp15.cost - tmp16;
           closure_0 = diff;
           let availableGuildBoostSlots = closure_0(onToggle[9]).getAvailableGuildBoostSlots(analyticsLocations.boostSlots);
-          if (tmp14.type === handleMobileWebRedirectCheckout.LEVEL) {
+          if (tmp15.type === handleMobileWebRedirectCheckout.LEVEL) {
             PERK = shouldUseMobileWebRedirectCheckout.LEVEL;
           } else {
             PERK = shouldUseMobileWebRedirectCheckout.PERK;
@@ -62,8 +62,8 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                         }
                       }
             };
-            tmp17(tmp18[12]).openTransferModal(obj2);
-            const tmp17Result = tmp17(tmp18[12]);
+            tmp18(tmp19[12]).openTransferModal(obj2);
+            const tmp18Result = tmp18(tmp19[12]);
           } else if (shouldUseMobileWebRedirectCheckout) {
             handleMobileWebRedirectCheckout(analyticsLocations, tmp.id);
           } else {
@@ -72,7 +72,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               analyticsLocations,
               guildId: tmp.id,
               onBack() {
-                        return PERK(4959).popWithKey(diff(7652).PREMIUM_KEY);
+                        return PERK(4959).popWithKey(diff(7654).PREMIUM_KEY);
                       },
               onPaymentSuccess() {
                         const availableGuildBoostSlots = GuildBoostingUtils.getAvailableGuildBoostSlots(GuildBoostSlotStore.boostSlots);
@@ -92,11 +92,11 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                         }
                       },
               onPaymentDismiss() {
-                        return PERK(4959).popWithKey(diff(7652).PREMIUM_KEY);
+                        return PERK(4959).popWithKey(diff(7654).PREMIUM_KEY);
                       }
             };
-            const result = tmp17(tmp18[13]).launchGuildBoostFlowOrAlert(obj3);
-            const tmp17Result2 = tmp17(tmp18[13]);
+            const result = tmp18(tmp19[13]).launchGuildBoostFlowOrAlert(obj3);
+            const tmp18Result2 = tmp18(tmp19[13]);
           }
           const obj = PERK(onToggle[10]);
         }

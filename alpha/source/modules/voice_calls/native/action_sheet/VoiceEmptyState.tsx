@@ -1,18 +1,18 @@
-// Module ID: 14043
-// Function ID: 14044
+// Module ID: 14049
+// Function ID: 14050
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1074, 21, 4756, 5736, 576, 1612, 1177, 1115, 14044, 14045, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 5741, 576, 1612, 1177, 1115, 14050, 14051, 2]
 // Exports: default
 
-// Module 14043 (VoiceEmptyState)
+// Module 14049 (VoiceEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import _modDef14044 from "module_14044" /* 14044 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14045 */;
+import _modDef14050 from "module_14050" /* 14050 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 14051 */;
 import noop from "module_19" /* 19 */;
-import TextStyles_mod from "TextStyles" /* 5736 */;
+import TextStyles_mod from "TextStyles" /* 5741 */;
 
 require = fn;
 const View = fn(17).View;
@@ -47,8 +47,8 @@ export default function VoiceEmptyState(channel) {
   obj4.title = intl.string(util.t["/HABZo"]);
   const intl2 = util.intl;
   obj4.body = intl2.string(util.t["5Jy2FY"]);
-  obj4.lightSource = _modDef14044;
-  obj4.darkSource = _modDef14044;
+  obj4.lightSource = _modDef14050;
+  obj4.darkSource = _modDef14050;
   ({ emptyTitle: obj3.titleStyle, emptyBody: obj3.bodyStyle } = tmp);
   obj4.imageStyle = { marginBottom: 16, marginTop: 20 };
   const items1 = [React4(native.ThemedEmptyState, obj4), React4(JoinVoiceChannelButtonDefault, { channel: channel.channel, style: tmp.button })];

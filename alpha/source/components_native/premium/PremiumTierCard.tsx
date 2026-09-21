@@ -1,21 +1,21 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 13829
+// Function ID: 13830
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7672, 1374, 21, 4756, 576, 5198, 1094, 4414, 13824, 13825, 8325, 9498, 10974, 10975, 5819, 2]
+// Dependencies: [19, 17, 7674, 1374, 21, 4756, 576, 5198, 1094, 4414, 13830, 13831, 8326, 9499, 10975, 10976, 5824, 2]
 // Exports: default
 
-// Module 13823 (PremiumTierCard)
+// Module 13829 (PremiumTierCard)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import PremiumUtils from "PremiumUtils" /* 4414 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
 import noop from "module_19" /* 19 */;
 
-const Card = tmp8(5819);
+const Card = tmp8(5824);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const getPremiumGradientColor = fn(7672).getPremiumGradientColor;
+const getPremiumGradientColor = fn(7674).getPremiumGradientColor;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
@@ -44,11 +44,11 @@ export default function _default(premiumType) {
   }
   obj2.style = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp5Result = tmp5(13824);
+    let tmp5Result = tmp5(13830);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result = tmp5(13825);
+    tmp5Result = tmp5(13831);
   } else if (tmp10.TIER_2 === premiumType) {
-    tmp5Result = tmp5(8325);
+    tmp5Result = tmp5(8326);
   }
   obj2.source = tmp5Result;
   obj.children = React5(React4, obj2);
@@ -64,11 +64,11 @@ export default function _default(premiumType) {
   const obj4 = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp5Result2 = tmp5(9498);
+    let tmp5Result2 = tmp5(9499);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result2 = tmp5(10974);
-  } else if (tmp10.TIER_2 === premiumType) {
     tmp5Result2 = tmp5(10975);
+  } else if (tmp10.TIER_2 === premiumType) {
+    tmp5Result2 = tmp5(10976);
   }
   const obj5 = { children: null };
   obj4.source = tmp5Result2;

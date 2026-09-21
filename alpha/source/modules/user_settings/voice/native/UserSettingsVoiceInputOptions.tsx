@@ -1,14 +1,14 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10240
+// Function ID: 10241
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 1992, 1074, 21, 4756, 7434, 1115, 9910, 504, 10235, 5817, 4752, 7440, 10240, 2]
+// Dependencies: [19, 17, 1992, 1074, 21, 4756, 7439, 1115, 9911, 504, 10236, 5822, 4752, 7445, 10241, 2]
 // Exports: default
 
-// Module 10239 (UserSettingsVoiceInputOptions)
+// Module 10240 (UserSettingsVoiceInputOptions)
 import util from "util" /* 1115 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7434 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9910 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 10240 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7439 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 10241 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
@@ -68,7 +68,7 @@ export default function UserSettingsVoiceInputOptions() {
   obj4.children = stringResult;
   obj3.trailing = closure_6(inputMode(4752).Text, obj4);
   obj3.onPress = handleInputModePress;
-  const items1 = [closure_6(inputMode(5817).TableRow, obj3), ];
+  const items1 = [closure_6(inputMode(5822).TableRow, obj3), ];
   let tmp4Result = null;
   if (inputMode !== InputModes.PUSH_TO_TALK) {
     const obj5 = { children: null };
@@ -79,7 +79,7 @@ export default function UserSettingsVoiceInputOptions() {
     obj6.onValueChange = function onValueChange(autoThreshold) {
       return AudioActionCreatorsDefault.setMode(inputMode, { autoThreshold });
     };
-    const items2 = [tmp5(tmp(7440).TableSwitchRow, obj6), ];
+    const items2 = [tmp5(tmp(7445).TableSwitchRow, obj6), ];
     const obj7 = { label: null, subLabel: null };
     const intl6 = tmp(1115).intl;
     obj7.label = intl6.string(tmp(1115).t["o+2oMK"]);
@@ -93,12 +93,12 @@ export default function UserSettingsVoiceInputOptions() {
     };
     obj8.children = tmp5(VoiceSensitivityDefault, obj9);
     obj7.subLabel = tmp5(View, obj8);
-    items2[1] = tmp5(tmp(5817).TableRow, obj7);
+    items2[1] = tmp5(tmp(5822).TableRow, obj7);
     obj5.children = items2;
     tmp4Result = tmp4(closure_7, obj5);
   }
   items1[1] = tmp4Result;
   obj2.children = items1;
-  return closure_8(inputMode(10235).UserSettingsTableRowGroup, obj2);
+  return closure_8(inputMode(10236).UserSettingsTableRowGroup, obj2);
 };
 export { handleInputModePress };

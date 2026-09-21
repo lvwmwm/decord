@@ -1,10 +1,10 @@
-// Module ID: 11186
-// Function ID: 11187
+// Module ID: 11187
+// Function ID: 11188
 // Name: maybeShowDiscardChangesAlert
 // Dependencies: [5109, 1115, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 11186 (maybeShowDiscardChangesAlert)
+// Module 11187 (maybeShowDiscardChangesAlert)
 import util from "util" /* 1115 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
 import size from "module_2" /* 2 */;

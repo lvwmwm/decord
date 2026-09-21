@@ -1,23 +1,23 @@
-// Module ID: 10524
-// Function ID: 10525
+// Module ID: 10525
+// Function ID: 10526
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7513, 21, 4756, 576, 8128, 1612, 10525, 1364, 10526, 4723, 7363, 5187, 1115, 4583, 4910, 8902, 7390, 6864, 5334, 4752, 10507, 8677, 5286, 4746, 10524, 1980, 2]
+// Dependencies: [32, 19, 17, 7515, 21, 4756, 576, 8129, 1612, 10526, 1364, 10527, 4723, 7368, 5187, 1115, 4583, 4910, 8903, 7395, 6869, 5339, 4752, 10508, 8678, 5293, 4746, 10525, 1980, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10524 (ForumGuidelinesActionSheet)
+// Module 10525 (ForumGuidelinesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import LinkUtils from "LinkUtils" /* 4910 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8902 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10526 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8903 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10527 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7513).FORUM_GUIDELINES_ACTION_SHEET;
+let closure_6 = fn(7515).FORUM_GUIDELINES_ACTION_SHEET;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 const createStyles = fn(4756);
@@ -187,5 +187,5 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(asyncRequireImpl(10524, dependencyMap.paths), closure_6, obj2);
+  obj.openLazy(asyncRequireImpl(10525, dependencyMap.paths), closure_6, obj2);
 };

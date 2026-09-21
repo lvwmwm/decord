@@ -1,10 +1,10 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17726
+// Function ID: 17727
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2035, 1372, 1099, 17713, 1074, 21, 4756, 1484, 504, 1241, 1115, 2108, 38, 16285, 4959, 4348, 16308, 7363, 4752, 17716, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2035, 1372, 1099, 17724, 1074, 21, 4756, 1484, 504, 1241, 1115, 2108, 38, 16291, 4959, 4348, 16314, 7368, 4752, 17727, 5186, 2]
 // Exports: default
 
-// Module 17715 (ExistingUserAgeGate)
+// Module 17726 (ExistingUserAgeGate)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -16,7 +16,7 @@ const require = fn;
 const View = fn(17).View;
 const AgeGateConstants = fn(1099);
 ({ AgeGateAnalyticAction: closure_9, AgeGateSource: c10 } = AgeGateConstants);
-let closure_11 = fn(17713).ExistingUserAgeGateScreens;
+let closure_11 = fn(17724).ExistingUserAgeGateScreens;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, HelpdeskArticles: map1 } = Constants);
 const jsxProd = fn(21);

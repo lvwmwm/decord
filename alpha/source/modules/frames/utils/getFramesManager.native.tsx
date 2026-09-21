@@ -1,10 +1,10 @@
-// Module ID: 9622
-// Function ID: 9623
+// Module ID: 9623
+// Function ID: 9624
 // Name: getFramesManager
-// Dependencies: [9561, 2]
+// Dependencies: [9562, 2]
 // Exports: default
 
-// Module 9622 (getFramesManager)
+// Module 9623 (getFramesManager)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

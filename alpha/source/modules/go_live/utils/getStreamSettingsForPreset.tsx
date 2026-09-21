@@ -1,13 +1,13 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10211
+// Function ID: 10212
 // Name: getStreamSettingsForPreset
-// Dependencies: [4803, 10211, 10212, 1364, 4894, 2]
+// Dependencies: [4803, 10212, 10213, 1364, 4894, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10210 (getStreamSettingsForPreset)
+// Module 10211 (getStreamSettingsForPreset)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GoLiveVideoPresetResolutionExperimentDefault from "GoLiveVideoPresetResolutionExperiment" /* 10211 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 10212 */;
+import GoLiveVideoPresetResolutionExperimentDefault from "GoLiveVideoPresetResolutionExperiment" /* 10212 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 10213 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 4803 */;
 import size from "module_2" /* 2 */;
 

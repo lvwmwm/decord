@@ -1,10 +1,10 @@
-// Module ID: 5758
-// Function ID: 5759
+// Module ID: 5763
+// Function ID: 5764
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4740, 4578, 1074, 504, 5759, 2]
+// Dependencies: [5, 32, 19, 4740, 4578, 1074, 504, 5764, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 5758 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 5763 (useCanReapplyToRejectedMemberVerificationApplication)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

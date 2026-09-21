@@ -1,13 +1,13 @@
-// Module ID: 16698
-// Function ID: 16699
+// Module ID: 16704
+// Function ID: 16705
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1074, 2038, 21, 4756, 6601, 1186, 1115, 8921, 2019, 2027, 7622, 2]
+// Dependencies: [19, 17, 1074, 2038, 21, 4756, 6606, 1186, 1115, 8922, 2019, 2027, 7624, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 16698 (usePrivateProfileCoachmarkProps)
+// Module 16704 (usePrivateProfileCoachmarkProps)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2027 */;
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6601 */;
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6606 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,28 +1,28 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17564
+// Function ID: 17565
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 4772, 4671, 10154, 502, 2041, 1992, 4405, 5631, 1372, 12524, 12527, 12522, 4777, 1085, 21, 4756, 576, 4492, 5185, 7313, 5173, 5801, 12523, 10289, 504, 10156, 17487, 1115, 10165, 10167, 10168, 5171, 17489, 17554, 4909, 4457, 12528, 4757, 17555, 17509, 17556, 5842, 17557, 9910, 9989, 9950, 4466, 16861, 17558, 11419, 17560, 10038, 1095, 17571, 10287, 17581, 17582, 2]
+// Dependencies: [32, 19, 17, 4772, 4671, 10155, 502, 2041, 1992, 4405, 5636, 1372, 12526, 12529, 12524, 4777, 1085, 21, 4756, 576, 4492, 5185, 7318, 5173, 5806, 12525, 10290, 504, 10157, 17498, 1115, 10166, 10168, 10169, 5171, 17500, 17565, 4909, 4457, 12530, 4757, 17566, 17520, 17567, 5847, 17568, 9911, 9990, 9951, 4466, 16867, 17569, 11421, 17571, 10039, 1095, 17582, 10288, 17592, 17593, 2]
 
-// Module 17553 (VoicePanelHeader)
+// Module 17564 (VoicePanelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import useChannelName from "useChannelName" /* 4909 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 10168 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10289 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12528 */;
-import useStableParticipant from "useStableParticipant" /* 17557 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 10169 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10290 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12530 */;
+import useStableParticipant from "useStableParticipant" /* 17568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
 import ExperimentStore from "ExperimentStore" /* 4671 */;
-import StageMusicStore from "StageMusicStore" /* 10154 */;
+import StageMusicStore from "StageMusicStore" /* 10155 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
-import SpeakingStore from "SpeakingStore" /* 5631 */;
+import SpeakingStore from "SpeakingStore" /* 5636 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const spring = tmp3(5185);
@@ -51,24 +51,24 @@ function MusicMuteButton(channelId) {
       }
       const obj3 = {
         accessibilityLabel: stringResult,
-        icon: tmp(stateFromStores ? 10165 : 10167),
+        icon: tmp(stateFromStores ? 10166 : 10168),
         onPress() {
               return StageMusicActionCreators.updateStageMusicMuted(!stateFromStores);
             }
       };
-      closure_23(tmp(17487), obj3);
-      const tmpResult = tmp(17487);
+      closure_23(tmp(17498), obj3);
+      const tmpResult = tmp(17498);
     }
   }
   return tmp6;
 }
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
-const VoicePanelConstants = fn(12524);
+const VoicePanelConstants = fn(12526);
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 ({ UI_SHOW_HIDE_PHYSICS: closure_16, VoicePanelModes: closure_17, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_18 } = VoicePanelConstants);
-const EDGE_GUTTER = fn(12527).EDGE_GUTTER;
-const VoicePanelControlsModes = fn(12522).VoicePanelControlsModes;
+const EDGE_GUTTER = fn(12529).EDGE_GUTTER;
+const VoicePanelControlsModes = fn(12524).VoicePanelControlsModes;
 const ParticipantTypes = fn(4777).ParticipantTypes;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
@@ -516,7 +516,7 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
           }
           obj2 = MediaEngineStore;
         }
-        tmp10Result = tmp10(17557);
+        tmp10Result = tmp10(17568);
       }
       obj3 = useStableParticipant;
     }

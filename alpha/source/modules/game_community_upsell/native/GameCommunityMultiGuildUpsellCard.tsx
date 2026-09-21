@@ -1,15 +1,15 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16607
+// Function ID: 16608
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4748, 4396, 2063, 1074, 21, 4756, 576, 504, 1397, 1431, 1478, 1241, 5732, 7582, 7581, 1115, 9093, 9019, 1177, 4752, 5186, 8173, 8178, 8180, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 4396, 2063, 1074, 21, 4756, 576, 504, 1397, 1431, 1478, 1241, 5737, 7584, 7583, 1115, 9094, 9020, 1177, 4752, 5186, 8174, 8179, 8181, 2]
 // Exports: default
 
-// Module 16601 (GameCommunityMultiGuildUpsellCard)
+// Module 16607 (GameCommunityMultiGuildUpsellCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
-import transitionToGuild from "transitionToGuild" /* 7582 */;
+import transitionToGuild from "transitionToGuild" /* 7584 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

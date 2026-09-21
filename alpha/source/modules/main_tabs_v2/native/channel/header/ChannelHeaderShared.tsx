@@ -1,10 +1,10 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13578
+// Function ID: 13579
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4405, 1372, 21, 4756, 576, 5334, 1364, 11159, 4752, 1177, 13573, 11173, 4457, 5239, 7220, 13574, 1115, 4909, 2]
+// Dependencies: [32, 19, 17, 4405, 1372, 21, 4756, 576, 5339, 1364, 11160, 4752, 1177, 13579, 11174, 4457, 5239, 7225, 13580, 1115, 4909, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13572 (ChannelHeaderShared)
+// Module 13578 (ChannelHeaderShared)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
@@ -13,12 +13,12 @@ import useToken from "useToken" /* 4457 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import useChannelName from "useChannelName" /* 4909 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import Pressables from "Pressables" /* 5334 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7220 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11159 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11173 */;
-import _modDef13573 from "module_13573" /* 13573 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13574 */;
+import Pressables from "Pressables" /* 5339 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7225 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11160 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11174 */;
+import _modDef13579 from "module_13579" /* 13579 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
@@ -76,7 +76,7 @@ function ChannelTitle(guildId) {
   items[1] = tmp8;
   let tmp5Result = !disableArrow;
   if (!disableArrow) {
-    const obj6 = { source: _modDef13573, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
+    const obj6 = { source: _modDef13579, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp.arrowIcon };
     tmp5Result = tmp5(native.Icon, obj6);
   }
   items[2] = tmp5Result;

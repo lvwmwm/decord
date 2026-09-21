@@ -1,10 +1,10 @@
-// Module ID: 5301
-// Function ID: 5302
+// Module ID: 5308
+// Function ID: 5309
 // Name: AtIcon
 // Dependencies: [19, 21, 576, 4456, 5246, 2]
 // Exports: AtIcon
 
-// Module 5301 (AtIcon)
+// Module 5308 (AtIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5246 from "module_5246" /* 5246 */;

@@ -1,12 +1,12 @@
-// Module ID: 13552
-// Function ID: 13553
+// Module ID: 13554
+// Function ID: 13555
 // Name: ConversationFocusScreen
-// Dependencies: [19, 7838, 21, 1487, 504, 13553, 2]
+// Dependencies: [19, 7840, 21, 1487, 504, 13555, 2]
 // Exports: default
 
-// Module 13552 (ConversationFocusScreen)
+// Module 13554 (ConversationFocusScreen)
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7838 */;
+import ConversationsStore from "ConversationsStore" /* 7840 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
@@ -45,5 +45,5 @@ export default function ConversationFocusScreen() {
     return obj2;
   }, items3);
   ({ fullyHydrated, isFullFetchPending, startMessageId } = stateFromStoresObject);
-  return jsx(conversationId(13553), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
+  return jsx(conversationId(13555), { channelId, conversationId, messages, fullyHydrated, isFullFetchPending, startMessageId });
 };

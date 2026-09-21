@@ -1,13 +1,13 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16001
+// Function ID: 16002
 // Name: PremiumTrialOfferActionSheet
-// Dependencies: [19, 1374, 1074, 2038, 21, 7402, 7422, 1241, 13615, 9505, 4414, 7390, 15996, 2]
+// Dependencies: [19, 1374, 1074, 2038, 21, 7407, 7427, 1241, 13621, 9506, 4414, 7395, 16002, 2]
 // Exports: default
 
-// Module 15995 (PremiumTrialOfferActionSheet)
+// Module 16001 (PremiumTrialOfferActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9505 */;
-import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 13615 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
+import UserTrialActionCreatorsDefault from "UserTrialActionCreators" /* 13621 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

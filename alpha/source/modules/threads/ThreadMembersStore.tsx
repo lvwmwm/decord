@@ -1,9 +1,9 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8012
+// Function ID: 8013
 // Name: ThreadMembersStore
 // Dependencies: [2045, 2041, 12, 504, 573, 2]
 
-// Module 8010 (ThreadMembersStore)
+// Module 8012 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

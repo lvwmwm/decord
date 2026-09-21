@@ -1,10 +1,10 @@
-// Module ID: 5281
-// Function ID: 5282
+// Module ID: 5288
+// Function ID: 5289
 // Name: ExperimentalLfgIcon
 // Dependencies: [19, 21, 576, 4456, 5271, 2]
 // Exports: ExperimentalLfgIcon
 
-// Module 5281 (ExperimentalLfgIcon)
+// Module 5288 (ExperimentalLfgIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5271 from "module_5271" /* 5271 */;

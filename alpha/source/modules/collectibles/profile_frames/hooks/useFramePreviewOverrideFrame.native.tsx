@@ -1,16 +1,16 @@
-// Module ID: 8470
-// Function ID: 8471
+// Module ID: 8471
+// Function ID: 8472
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7789, 8471, 1973, 2]
+// Dependencies: [19, 7791, 8472, 1973, 2]
 // Exports: default
 
-// Module 8470 (useFramePreviewOverrideFrame)
+// Module 8471 (useFramePreviewOverrideFrame)
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import noop from "module_19" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7789 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7791 */;
 
 require = fn;
-let closure_4 = fn(8471).useFramePreviewOverrideStore;
+let closure_4 = fn(8472).useFramePreviewOverrideStore;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useFramePreviewOverrideFrame.native.tsx");
 

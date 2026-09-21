@@ -1,14 +1,14 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16101
+// Function ID: 16102
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 4756, 8602, 11393, 5186, 7440, 4752, 7363, 7396, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 8603, 11395, 5186, 7445, 4752, 7368, 7401, 2]
 // Exports: default, useCanRotate
 
-// Module 16095 (UserSettingsDesignSystemTooltip)
+// Module 16101 (UserSettingsDesignSystemTooltip)
 import Text_Text from "Text/Text" /* 4752 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import LayerScope from "LayerScope" /* 7396 */;
-import DeviceOrientation from "DeviceOrientation" /* 8602 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import LayerScope from "LayerScope" /* 7401 */;
+import DeviceOrientation from "DeviceOrientation" /* 8603 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -54,7 +54,7 @@ function Content() {
     };
   }, items1);
   const tmp8 = first2(items, 2);
-  const tooltip = first1(11393).useTooltip(ref, memo);
+  const tooltip = first1(11395).useTooltip(ref, memo);
   const obj3 = { children: null };
   const obj4 = {
     style: tmp.container,
@@ -68,7 +68,7 @@ function Content() {
       size: "md"
     })
   };
-  const items2 = [closure_5(View, obj4), closure_5(first1(7440).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), closure_5(first1(7440).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), closure_5(TooltipNote, {})];
+  const items2 = [closure_5(View, obj4), closure_5(first1(7445).TableSwitchRow, { label: "Unlock Orientation", value: tmp9, onValueChange: tmp10 }), closure_5(first1(7445).TableSwitchRow, { label: "Enable Bottom Position", value: first2, onValueChange: tmp11[1] }), closure_5(TooltipNote, {})];
   obj3.children = items2;
   return closure_7(closure_6, obj3);
 }

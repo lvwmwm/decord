@@ -1,7 +1,7 @@
 // Module ID: 4769
 // Function ID: 4770
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 4770, 2045, 2041, 4771, 1074, 10001, 1271, 5734, 4614, 4767, 5623, 573, 8644, 1241, 1101, 4607, 1115, 7563, 4997, 2]
+// Dependencies: [32, 5, 4770, 2045, 2041, 4771, 1074, 10002, 1271, 5739, 4614, 4767, 5628, 573, 8645, 1241, 1101, 4607, 1115, 7565, 4997, 2]
 
 // Module 4769 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -10,8 +10,8 @@ import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import shared from "shared" /* 4607 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5623 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 8644 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 8645 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChangelogStore from "ChangelogStore" /* 4770 */;
@@ -401,13 +401,13 @@ export default {
       tmp(1241).track(constants.CHANGE_LOG_DM_REMOVED, obj);
       const tmpResult = tmp(1241);
     }
-    DispatcherDefault.dispatch({ type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "isArray" }, silent: flag2 });
+    DispatcherDefault.dispatch({ type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "padding" }, silent: flag2 });
     if (flag) {
       router_utils.transitionTo(constants2.FRIENDS);
     }
     const HTTP = HTTPUtils.HTTP;
     const request = { url: closure_1_11.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: null };
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "isArray" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "padding" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     request.rejectWithError = HTTPUtils.rejectWithMigratedError();
     const delResult = HTTP.del(request);
@@ -518,8 +518,8 @@ export default {
         obj = channel2;
       }
       if (!tmp10) {
-        const result = name(7563).checkGuildTemplateDirty(closure_128_2);
-        name(7563);
+        const result = name(7565).checkGuildTemplateDirty(closure_128_2);
+        name(7565);
       }
       return closure_128_1;
     })();

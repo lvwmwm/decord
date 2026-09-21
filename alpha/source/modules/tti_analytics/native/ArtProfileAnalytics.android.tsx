@@ -1,12 +1,12 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 7912
+// Function ID: 7913
 // Name: ArtProfileAnalytics
-// Dependencies: [32, 5, 1074, 7908, 2036, 1241, 2]
+// Dependencies: [32, 5, 1074, 7910, 2036, 1241, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7910 (ArtProfileAnalytics)
+// Module 7912 (ArtProfileAnalytics)
 import Timers from "Timers" /* 2036 */;
-import NativeTTIModuleDefault from "NativeTTIModule" /* 7908 */;
+import NativeTTIModuleDefault from "NativeTTIModule" /* 7910 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

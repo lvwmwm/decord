@@ -1,10 +1,10 @@
-// Module ID: 5282
-// Function ID: 5283
+// Module ID: 5289
+// Function ID: 5290
 // Name: ChatIcon
 // Dependencies: [19, 21, 576, 4456, 5259, 2]
 // Exports: ChatIcon
 
-// Module 5282 (ChatIcon)
+// Module 5289 (ChatIcon)
 import nativeDefault from "native" /* 576 */;
 import BaseIconImage from "BaseIconImage" /* 4456 */;
 import _mod5259 from "module_5259" /* 5259 */;

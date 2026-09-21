@@ -1,12 +1,12 @@
-// Module ID: 9296
-// Function ID: 9297
+// Module ID: 9297
+// Function ID: 9298
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 4756, 576, 9203, 9291, 4752, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 9204, 9292, 4752, 2]
 // Exports: default
 
-// Module 9296 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 9297 (UserProfileApplicationWidgetBottomProgressLayout)
 import nativeDefault from "native" /* 576 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9203 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 9204 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -68,7 +68,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     let tmp15 = React4;
   } else {
     const obj6 = { style: tmp.image };
-    tmp14 = React4(tmp3(9291).ImageSkeleton, obj6);
+    tmp14 = React4(tmp3(9292).ImageSkeleton, obj6);
     tmp15 = React4;
   }
   const items3 = [tmp14, ];
@@ -105,14 +105,14 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     const obj13 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
     let tmp15Result = tmp15(tmp3(4752).Text, obj13);
   } else {
-    tmp15Result = tmp15(tmp3(9291).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(9292).TextSkeleton, { variant: "heading-sm/medium" });
   }
   const items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
     let tmp15Result3 = tmp15(tmp3(4752).Text, obj14);
   } else {
-    tmp15Result3 = tmp15(tmp3(9291).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result3 = tmp15(tmp3(9292).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result3;
   obj12.children = items6;
@@ -126,13 +126,13 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
       let iter2Result = iter2(iter.value, "/", iter);
     } else {
       const _HermesInternal = HermesInternal;
-      iter2Result = "" + tmp3(9203).decimalToClampedPercentage(iter.value) + "%";
-      const tmp3Result2 = tmp3(9203);
+      iter2Result = "" + tmp3(9204).decimalToClampedPercentage(iter.value) + "%";
+      const tmp3Result2 = tmp3(9204);
     }
     obj15.children = iter2Result;
     tmp15(tmp3(4752).Text, obj15);
   } else {
-    items7[1] = tmp15(tmp3(9291).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    items7[1] = tmp15(tmp3(9292).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
     obj11.children = items7;
     items5[1] = tmp11(tmp12, obj11);
     obj7.children = items5;

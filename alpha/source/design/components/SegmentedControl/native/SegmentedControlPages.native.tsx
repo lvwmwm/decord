@@ -1,14 +1,14 @@
-// Module ID: 12867
-// Function ID: 12868
+// Module ID: 12869
+// Function ID: 12870
 // Name: SegmentedControlPages
-// Dependencies: [32, 19, 17, 21, 4492, 12868, 1364, 6892, 5180, 5139, 2]
+// Dependencies: [32, 19, 17, 21, 4492, 12870, 1364, 6897, 5180, 5139, 2]
 // Exports: SegmentedControlPages
 
-// Module 12867 (SegmentedControlPages)
+// Module 12869 (SegmentedControlPages)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
 import setAccessibilityFocus from "setAccessibilityFocus" /* 5180 */;
-import MathUtils from "MathUtils" /* 12868 */;
+import MathUtils from "MathUtils" /* 12870 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

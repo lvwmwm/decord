@@ -1,10 +1,10 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10364
+// Function ID: 10365
 // Name: useTruncatedGradientColors
 // Dependencies: [19, 4756, 4457, 576, 672, 2]
 // Exports: default
 
-// Module 10363 (useTruncatedGradientColors)
+// Module 10364 (useTruncatedGradientColors)
 import _mod19 from "module_19" /* 19 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;

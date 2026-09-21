@@ -1,15 +1,15 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 11015
+// Function ID: 11016
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [32, 19, 17, 4748, 21, 576, 4756, 4752, 504, 9088, 1365, 11015, 5799, 1973, 9051, 2]
+// Dependencies: [32, 19, 17, 4748, 21, 576, 4756, 4752, 504, 9089, 1365, 11016, 5804, 1973, 9052, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 11014 (PremiumGiftPromotionDetails)
+// Module 11015 (PremiumGiftPromotionDetails)
 import nativeDefault from "native" /* 576 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import SKUPreview from "SKUPreview" /* 9051 */;
+import SKUPreview from "SKUPreview" /* 9052 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;

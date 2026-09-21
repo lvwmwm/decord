@@ -1,33 +1,33 @@
-// Module ID: 17886
-// Function ID: 17887
+// Module ID: 17897
+// Function ID: 17898
 // Name: TelecomManager
-// Dependencies: [5, 17, 10158, 4778, 502, 5490, 2041, 1992, 10337, 4779, 4405, 4601, 1372, 1074, 4781, 3, 9562, 7358, 17887, 5623, 10001, 4963, 9910, 10203, 10208, 1609, 4909, 10157, 2]
+// Dependencies: [5, 17, 10159, 4778, 502, 5495, 2041, 1992, 10338, 4779, 4405, 4601, 1372, 1074, 4781, 3, 9563, 7363, 17898, 5628, 10002, 4963, 9911, 10204, 10209, 1609, 4909, 10158, 2]
 
-// Module 17886 (TelecomManager)
+// Module 17897 (TelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4963 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5623 */;
-import NativeAppLifecycleModuleDefault from "NativeAppLifecycleModule" /* 9562 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9910 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 10001 */;
-import SoundUtils from "SoundUtils" /* 10157 */;
-import useHasVideoPermission from "useHasVideoPermission" /* 10203 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 10208 */;
-import NativeTelecomModuleDefault from "NativeTelecomModule" /* 17887 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
+import NativeAppLifecycleModuleDefault from "NativeAppLifecycleModule" /* 9563 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 10002 */;
+import SoundUtils from "SoundUtils" /* 10158 */;
+import useHasVideoPermission from "useHasVideoPermission" /* 10204 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 10209 */;
+import NativeTelecomModuleDefault from "NativeTelecomModule" /* 17898 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SoundpackStore from "SoundpackStore" /* 10158 */;
+import SoundpackStore from "SoundpackStore" /* 10159 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5490 */;
+import CallStore from "CallStore" /* 5495 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10337 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10338 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import StreamerModeStore from "StreamerModeStore" /* 4601 */;
 import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -148,8 +148,8 @@ class TelecomManager extends tmp5 {
                 if (obj3.getOSRequirement()) {
                   if (videoPermission) {
                     obj.info("Starting screen share from Call Bar");
-                    tmp5(10208).startStream();
-                    const tmp5Result = tmp5(10208);
+                    tmp5(10209).startStream();
+                    const tmp5Result = tmp5(10209);
                   } else {
                     obj.warn("Cannot start screen share from Call Bar: user lacks streaming permission in this channel");
                   }
@@ -362,9 +362,9 @@ prototype["reportIncomingCall"] = function reportIncomingCall(channelId) {
       const obj3 = { guildId };
       tmp19 = obj3;
     }
-    const obj4 = self(17887);
-    const reportIncomingCallResult = self(17887).reportIncomingCall(channelId, channelName, tmp19);
-    self(17887).reportIncomingCall(channelId, channelName, tmp19).then((result) => {
+    const obj4 = self(17898);
+    const reportIncomingCallResult = self(17898).reportIncomingCall(channelId, channelName, tmp19);
+    self(17898).reportIncomingCall(channelId, channelName, tmp19).then((result) => {
       if (!result) {
         obj.warn("Failed to report incoming call: resolved false");
         self.clearCall(closure_0);
@@ -373,7 +373,7 @@ prototype["reportIncomingCall"] = function reportIncomingCall(channelId) {
       obj.warn("Failed to report incoming call:", error);
       self.clearCall(closure_0);
     });
-    const nextPromise = self(17887).reportIncomingCall(channelId, channelName, tmp19).then((result) => {
+    const nextPromise = self(17898).reportIncomingCall(channelId, channelName, tmp19).then((result) => {
       if (!result) {
         obj.warn("Failed to report incoming call: resolved false");
         self.clearCall(closure_0);
@@ -387,7 +387,7 @@ prototype["cancelIncomingCall"] = function cancelIncomingCall(channelId) {
   const self = this;
   closure_0 = channelId;
   obj.info("Cancelling incoming call:", channelId);
-  obj = self(17887);
+  obj = self(17898);
   const cancelIncomingCallResult = obj.cancelIncomingCall(channelId);
   return obj.cancelIncomingCall(channelId).then(() => {
     self.clearCall(closure_0);
@@ -807,7 +807,7 @@ prototype["startCall"] = function startCall(channelId) {
 prototype["endCall"] = function endCall(currentCall) {
   const self = this;
   obj.info("Ending call:", currentCall.channelId);
-  obj = self(17887);
+  obj = self(17898);
   const endCallResult = obj.endCall(currentCall.channelId);
   return obj.endCall(currentCall.channelId).then((result) => {
     self.clearCall(currentCall.channelId);
@@ -960,7 +960,7 @@ prototype["handleScreenShareStoreChange"] = function handleScreenShareStoreChang
           const result = self.clearPendingScreenShareOffSync();
           if (tmp3) {
             obj.info("Syncing Discord -> Call Bar screen share state: true");
-            obj = self(17887);
+            obj = self(17898);
             obj.setScreenShareState(self.currentCall.channelId, true, true);
           } else {
             let channelId = self.currentCall.channelId;

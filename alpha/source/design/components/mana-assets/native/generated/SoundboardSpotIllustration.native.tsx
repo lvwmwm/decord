@@ -1,13 +1,13 @@
-// Module ID: 6713
-// Function ID: 6714
+// Module ID: 6718
+// Function ID: 6719
 // Name: SoundboardSpotIllustration
-// Dependencies: [21, 5799, 6714, 2]
+// Dependencies: [21, 5804, 6719, 2]
 // Exports: SoundboardSpotIllustration
 
-// Module 6713 (SoundboardSpotIllustration)
+// Module 6718 (SoundboardSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6714 from "module_6714" /* 6714 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6719 from "module_6719" /* 6719 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SoundboardSpotIllustration = function SoundboardSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6714 };
+  const obj2 = { uri: _modDef6719 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

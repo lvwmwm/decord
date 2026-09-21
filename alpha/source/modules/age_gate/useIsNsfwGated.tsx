@@ -1,10 +1,10 @@
-// Module ID: 8127
-// Function ID: 8128
+// Module ID: 8128
+// Function ID: 8129
 // Name: useIsNsfwGated
 // Dependencies: [4967, 1372, 504, 2]
 // Exports: default
 
-// Module 8127 (useIsNsfwGated)
+// Module 8128 (useIsNsfwGated)
 import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4967 */;
 import UserStore from "UserStore" /* 1372 */;
 

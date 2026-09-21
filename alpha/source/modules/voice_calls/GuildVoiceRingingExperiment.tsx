@@ -1,9 +1,9 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 9995
+// Function ID: 9996
 // Name: GuildVoiceRingingExperiment
 // Dependencies: [4672, 4669, 2]
 
-// Module 9994 (GuildVoiceRingingExperiment)
+// Module 9995 (GuildVoiceRingingExperiment)
 import ExperimentConstants from "ExperimentConstants" /* 4672 */;
 import createExperiment from "module_4669" /* 4669 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13446
+// Function ID: 13447
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 8439, 1970, 1115, 4752, 5198, 8446, 8526, 8434, 504, 4600, 4989, 11159, 11160, 1177, 11171, 5817, 2]
+// Dependencies: [19, 17, 4748, 21, 4756, 576, 8440, 1970, 1115, 4752, 5198, 8447, 8527, 8435, 504, 4600, 4989, 11160, 11161, 1177, 11172, 5822, 2]
 // Exports: default
 
-// Module 13444 (NameplateProductPreview)
+// Module 13446 (NameplateProductPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import utils from "utils" /* 1970 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import TableRow from "TableRow" /* 5817 */;
-import useShopProductItems from "useShopProductItems" /* 8439 */;
+import TableRow from "TableRow" /* 5822 */;
+import useShopProductItems from "useShopProductItems" /* 8440 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 

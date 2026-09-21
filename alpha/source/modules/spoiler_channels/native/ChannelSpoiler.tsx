@@ -1,16 +1,16 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12920
+// Function ID: 12921
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 4772, 2041, 2063, 12522, 21, 4756, 576, 504, 4909, 12523, 4957, 5732, 4614, 5239, 4752, 1115, 5184, 4746, 5334, 12917, 8683, 2]
+// Dependencies: [32, 19, 17, 4772, 2041, 2063, 12524, 21, 4756, 576, 504, 4909, 12525, 4957, 5737, 4614, 5239, 4752, 1115, 5184, 4746, 5339, 12919, 8684, 2]
 // Exports: default
 
-// Module 12918 (ChannelSpoiler)
+// Module 12920 (ChannelSpoiler)
 import nativeDefault from "native" /* 576 */;
 import RootNavigationRef from "RootNavigationRef" /* 4614 */;
 import useChannelNameDefault from "useChannelName" /* 4909 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4957 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5732 */;
-import GatedContentDefault from "GatedContent" /* 12917 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5737 */;
+import GatedContentDefault from "GatedContent" /* 12919 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
@@ -21,7 +21,7 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const VoicePanelControlsModes = fn(12522).VoicePanelControlsModes;
+const VoicePanelControlsModes = fn(12524).VoicePanelControlsModes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const createStyles = fn(4756);
@@ -49,7 +49,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp6(12523)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp6(12525)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -121,7 +121,7 @@ export default function ChannelSpoiler(channelId) {
         const intl2 = tmp(1115).intl;
         obj13.children = intl2.string(tmp(1115).t["/QvRak"]);
         obj12.children = tmp24(tmp(4752).Text, obj13);
-        tmp24Result = tmp24(tmp(5334).PressableHighlight, obj12);
+        tmp24Result = tmp24(tmp(5339).PressableHighlight, obj12);
       }
       items5[2] = tmp24Result;
       const obj14 = { style: tmp4.divider };

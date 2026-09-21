@@ -1,15 +1,15 @@
-// Module ID: 17380
-// Function ID: 17381
+// Module ID: 17391
+// Function ID: 17392
 // Name: MobileSurvey
-// Dependencies: [5, 19, 4947, 1074, 21, 4756, 504, 1241, 4948, 5205, 1115, 4451, 1177, 576, 9364, 2]
+// Dependencies: [5, 19, 4947, 1074, 21, 4756, 504, 1241, 4948, 5205, 1115, 4451, 1177, 576, 9365, 2]
 // Exports: default
 
-// Module 17380 (MobileSurvey)
+// Module 17391 (MobileSurvey)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import LinkingDefault from "Linking" /* 4451 */;
 import SurveyActionCreators from "SurveyActionCreators" /* 4948 */;
-import _modDef9364 from "module_9364" /* 9364 */;
+import _modDef9365 from "module_9365" /* 9365 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import SurveyStore from "SurveyStore" /* 4947 */;
@@ -106,7 +106,7 @@ export default function MobileSurvey() {
       return SurveyActionCreators.surveyHide(stateFromStores.key, true);
     };
     obj3.renderConfirmRightIcon = function renderConfirmRightIcon() {
-      return jsx(native.Icon, { style: confirmIcon.confirmIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: native.Icon.Sizes.SMALL, source: _modDef9364 });
+      return jsx(native.Icon, { style: confirmIcon.confirmIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: native.Icon.Sizes.SMALL, source: _modDef9365 });
     };
     tmp5 = jsx(stateFromStores(5205), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
     const tmp8 = stateFromStores(5205);

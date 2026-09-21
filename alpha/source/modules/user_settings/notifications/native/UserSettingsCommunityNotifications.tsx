@@ -1,16 +1,16 @@
-// Module ID: 15789
-// Function ID: 15790
+// Module ID: 15795
+// Function ID: 15796
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10336, 21, 4756, 504, 11, 8870, 5184, 5899, 7440, 1115, 2024, 2]
+// Dependencies: [19, 10337, 21, 4756, 504, 11, 8871, 5184, 5904, 7445, 1115, 2024, 2]
 // Exports: default
 
-// Module 15789 (UserSettingsCommunityNotifications)
+// Module 15795 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
-import TableRowGroup from "TableRowGroup" /* 5899 */;
-import TableSwitchRow from "TableSwitchRow" /* 7440 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import TableSwitchRow from "TableSwitchRow" /* 7445 */;
 import noop from "module_19" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10336 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10337 */;
 
 require = fn;
 const jsxProd = fn(21);
@@ -60,7 +60,7 @@ export default function UserSettingsCommunityNotifications() {
         })
     };
     obj3.children = closure_4(tmp2(5184).Stack, obj4);
-    tmp5 = closure_4(tmp2(8870).Form, obj3);
+    tmp5 = closure_4(tmp2(8871).Form, obj3);
   }
   return tmp5;
 };

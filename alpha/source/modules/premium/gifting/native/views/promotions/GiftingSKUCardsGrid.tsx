@@ -1,21 +1,21 @@
-// Module ID: 11308
-// Function ID: 11309
+// Module ID: 11310
+// Function ID: 11311
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7787, 1971, 21, 4756, 576, 8446, 4474, 11309, 5334, 9104, 9090, 9075, 4752, 1115, 2]
+// Dependencies: [19, 17, 7789, 1971, 21, 4756, 576, 8447, 4474, 11311, 5339, 9105, 9091, 9076, 4752, 1115, 2]
 // Exports: default
 
-// Module 11308 (GiftingSKUCardsGrid)
+// Module 11310 (GiftingSKUCardsGrid)
 import nativeDefault from "native" /* 576 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
-import useCurrentUser from "useCurrentUser" /* 8446 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9090 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9104 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11309 */;
+import useCurrentUser from "useCurrentUser" /* 8447 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9091 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9105 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11311 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isAvatarDecorationRecord = fn(7787).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7789).isAvatarDecorationRecord;
 const isNameplateRecord = fn(1971).isNameplateRecord;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -79,7 +79,7 @@ let closure_10 = noop.memo((rewardSkuId) => {
     if (claimed) {
       const obj8 = { style: tmp.checkmarkContainer, children: null };
       const obj9 = { size: "lg", style: tmp.checkmark };
-      obj8.children = tmp7(tmp2(9075).CheckmarkLargeBoldIcon, obj9);
+      obj8.children = tmp7(tmp2(9076).CheckmarkLargeBoldIcon, obj9);
       tmp7Result2 = tmp7(tmp8, obj8);
     }
     items3[1] = tmp7Result2;
@@ -99,7 +99,7 @@ let closure_10 = noop.memo((rewardSkuId) => {
     obj10.children = items4;
     items3[2] = React6(View, obj10);
     obj4.children = items3;
-    return React6(tmp2(5334).PressableOpacity, obj4);
+    return React6(tmp2(5339).PressableOpacity, obj4);
   }
 });
 createStyles = fn(4756);

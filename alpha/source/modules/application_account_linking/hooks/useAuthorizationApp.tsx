@@ -1,10 +1,10 @@
-// Module ID: 7407
-// Function ID: 7408
+// Module ID: 7412
+// Function ID: 7413
 // Name: useAuthorizationApp
-// Dependencies: [19, 4983, 2002, 1349, 1978, 7408, 2]
+// Dependencies: [19, 4983, 2002, 1349, 1978, 7413, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 7407 (useAuthorizationApp)
+// Module 7412 (useAuthorizationApp)
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 4983 */;
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;

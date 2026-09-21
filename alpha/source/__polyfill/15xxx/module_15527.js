@@ -1,9 +1,0 @@
-// Module ID: 15527
-// Function ID: 15528
-// Dependencies: [1121]
-
-// Module 15527
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "805fda450615a79e013d34cae4b4a783", name: "PaintPaletteIcon", type: "png" });

@@ -1,17 +1,17 @@
-// Module ID: 7870
-// Function ID: 7871
+// Module ID: 7872
+// Function ID: 7873
 // Name: GuildReadStateStore
-// Dependencies: [7871, 7873, 5718, 4397, 2045, 502, 2041, 2063, 1073, 4395, 4771, 2095, 4937, 1372, 1074, 2048, 4938, 7775, 11, 2066, 12, 4403, 2]
+// Dependencies: [7873, 7875, 5723, 4397, 2045, 502, 2041, 2063, 1073, 4395, 4771, 2095, 4937, 1372, 1074, 2048, 4938, 7777, 11, 2066, 12, 4403, 2]
 
-// Module 7870 (GuildReadStateStore)
+// Module 7872 (GuildReadStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FavoritesUtils from "FavoritesUtils" /* 2066 */;
 import ThreadActionUtils from "ThreadActionUtils" /* 4403 */;
-import isOptInEnabled from "isOptInEnabled" /* 7775 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 7871 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7873 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5718 */;
+import isOptInEnabled from "isOptInEnabled" /* 7777 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 7873 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7875 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;

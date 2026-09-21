@@ -1,13 +1,13 @@
-// Module ID: 7332
-// Function ID: 7333
+// Module ID: 7337
+// Function ID: 7338
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [19, 4578, 21, 563, 5781, 5739, 1115, 5749, 7333, 5186, 2]
+// Dependencies: [19, 4578, 21, 563, 5786, 5744, 1115, 5754, 7338, 5186, 2]
 // Exports: default
 
-// Module 7332 (MemberVerificationAlertIncomplete)
+// Module 7337 (MemberVerificationAlertIncomplete)
 import util from "util" /* 1115 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5739 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5781 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5744 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5786 */;
 import noop from "module_19" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4578 */;
 
@@ -58,7 +58,7 @@ export default function MemberVerificationAlertIncomplete(guildId) {
   const obj3 = {};
   const obj = guildId(563);
   const merged1 = Object.assign(merged);
-  obj3.icon = guildId(7333).ListViewIcon;
+  obj3.icon = guildId(7338).ListViewIcon;
   obj3.header = formatToPlainStringResult;
   const obj4 = { children: null };
   const obj5 = { variant: "secondary", text: null, onPress: null };
@@ -73,5 +73,5 @@ export default function MemberVerificationAlertIncomplete(guildId) {
   items4[1] = closure_5(guildId(5186).Button, obj6);
   obj4.children = items4;
   obj3.buttons = closure_7(closure_6, obj4);
-  return closure_5(onClose(5749), obj3);
+  return closure_5(onClose(5754), obj3);
 };

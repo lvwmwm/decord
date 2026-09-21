@@ -1,15 +1,15 @@
-// Module ID: 8872
-// Function ID: 8873
+// Module ID: 8873
+// Function ID: 8874
 // Name: RowButton
-// Dependencies: [19, 21, 4756, 576, 5823, 5817, 4492, 5819, 8873, 2]
+// Dependencies: [19, 21, 4756, 576, 5828, 5822, 4492, 5824, 8874, 2]
 
-// Module 8872 (RowButton)
+// Module 8873 (RowButton)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import TableRow from "TableRow" /* 5817 */;
-import Card from "Card" /* 5819 */;
-import TableRowIcon from "TableRowIcon" /* 5823 */;
-import BackgroundBlurView from "BackgroundBlurView" /* 8873 */;
+import TableRow from "TableRow" /* 5822 */;
+import Card from "Card" /* 5824 */;
+import TableRowIcon from "TableRowIcon" /* 5828 */;
+import BackgroundBlurView from "BackgroundBlurView" /* 8874 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -124,9 +124,9 @@ let closure_5 = createStyles.createStyles(() => {
   obj.cardWithBlur = { overflow: "hidden" };
   return obj;
 });
-RowButton.Icon = fn(5823).TableRowIcon;
+RowButton.Icon = fn(5828).TableRowIcon;
 const size = fn(2);
 let result = size.fileFinishedImporting("design/components/TableRow/native/RowButton.native.tsx");
 
-export const RowButtonIconProps = fn(5823).TableRowIconProps;
+export const RowButtonIconProps = fn(5828).TableRowIconProps;
 export { RowButton };

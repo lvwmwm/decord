@@ -1,16 +1,16 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 10963
+// Function ID: 10964
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9481, 502, 4420, 7477, 1074, 1085, 1271, 10963, 4656, 10964, 1115, 4436, 5108, 7480, 504, 7687, 10965, 10966, 10922, 10967, 7475, 4429, 9480, 1241, 2]
+// Dependencies: [109, 5, 19, 9482, 502, 4420, 7482, 1074, 1085, 1271, 10964, 4656, 10965, 1115, 4436, 5108, 7485, 504, 7689, 10966, 10967, 10923, 10968, 7480, 4429, 9481, 1241, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10962 (handlePremiumPurchase)
+// Module 10963 (handlePremiumPurchase)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import IAPStore from "IAPStore" /* 7477 */;
+import IAPStore from "IAPStore" /* 7482 */;
 
 const require = globalThis.__r;
 
@@ -120,7 +120,7 @@ let closure_15 = async function _validatePurchase(arg0, value) {
   }
 };
 let closure_3 = ["succeededOnlyFields"];
-const setGPlayAnalytics = fn(9481).setGPlayAnalytics;
+const setGPlayAnalytics = fn(9482).setGPlayAnalytics;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Endpoints: closure_12 } = Constants);
 const PaymentGateways = fn(1085).PaymentGateways;
@@ -206,14 +206,14 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             }
             if (null != offerIds) {
               if (null != arg2) {
-                const tmp13 = premiumSubscription(7480).TrialIdToProductOfferId[arg2.trialId];
+                const tmp13 = premiumSubscription(7485).TrialIdToProductOfferId[arg2.trialId];
                 let tmp14;
                 if (tmp13 != null) {
                   tmp14 = tmp13[arg0];
                 }
                 return tmp14;
               } else if (null != arg3) {
-                const tmp9 = premiumSubscription(7480).DiscountIdToProductOfferId[arg3.discountId];
+                const tmp9 = premiumSubscription(7485).DiscountIdToProductOfferId[arg3.discountId];
                 let tmp10;
                 if (tmp9 != null) {
                   tmp10 = tmp9[arg0];
@@ -224,8 +224,8 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             let BOGO_OFFER_ID = null;
             if (arg1) {
               BOGO_OFFER_ID = null;
-              if (arg0 === premiumSubscription(7480).ProductIds.PREMIUM_TIER_2_MONTHLY) {
-                BOGO_OFFER_ID = tmp5(7480).BOGO_OFFER_ID;
+              if (arg0 === premiumSubscription(7485).ProductIds.PREMIUM_TIER_2_MONTHLY) {
+                BOGO_OFFER_ID = tmp5(7485).BOGO_OFFER_ID;
               }
               tmp5 = premiumSubscription;
             }
@@ -316,8 +316,8 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             billingError = new tmp(4656).BillingError(combined);
           }
           if (tmpResult.isSpendingLimitError(billingError)) {
-            const result = tmp(10964).showSpendingLimitReachedAlert();
-            const tmpResult2 = tmp(10964);
+            const result = tmp(10965).showSpendingLimitReachedAlert();
+            const tmpResult2 = tmp(10965);
           } else {
             const intl = tmp(1115).intl;
             let tmp8 = billingError.code !== tmp(4436).ErrorCodes.UNKNOWN;

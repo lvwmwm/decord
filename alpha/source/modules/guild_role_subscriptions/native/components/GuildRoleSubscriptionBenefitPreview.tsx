@@ -1,16 +1,16 @@
-// Module ID: 18208
-// Function ID: 18209
+// Module ID: 18219
+// Function ID: 18220
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 15469, 21, 4756, 15504, 1177, 10196, 4752, 4409, 15497, 4909, 5239, 1115, 2]
+// Dependencies: [19, 17, 15475, 21, 4756, 15510, 1177, 10197, 4752, 4409, 15503, 4909, 5239, 1115, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 18208 (GuildRoleSubscriptionBenefitPreview)
+// Module 18219 (GuildRoleSubscriptionBenefitPreview)
 import native from "native" /* 1177 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import _modDef10196 from "module_10196" /* 10196 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15497 */;
-import EmojiIconDefault from "EmojiIcon" /* 15504 */;
+import _modDef10197 from "module_10197" /* 10197 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15503 */;
+import EmojiIconDefault from "EmojiIcon" /* 15510 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ function BaseBenefitRow(isInteractive) {
   items[1] = hasOwnProperty(View, obj3);
   let tmp4Result = true === flag;
   if (tmp4Result) {
-    const obj4 = { source: _modDef10196 };
+    const obj4 = { source: _modDef10197 };
     tmp4Result = hasOwnProperty(native.Icon, obj4);
   }
   items[2] = tmp4Result;
@@ -101,7 +101,7 @@ function EmojiBenefitRow(benefit) {
   return timestampProducer(BaseBenefitRow, obj);
 }
 const View = fn(17).View;
-const constants = fn(15469).GuildRoleSubscriptionBenefitTypes;
+const constants = fn(15475).GuildRoleSubscriptionBenefitTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const createStyles = fn(4756);

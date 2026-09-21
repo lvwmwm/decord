@@ -1,15 +1,15 @@
-// Module ID: 8933
-// Function ID: 8934
+// Module ID: 8934
+// Function ID: 8935
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 4756, 576, 7219, 4605, 4752, 1115, 1177, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 7224, 4605, 4752, 1115, 1177, 2]
 // Exports: default
 
-// Module 8933 (InAppReportsUserPreview)
+// Module 8934 (InAppReportsUserPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import ColorUtils from "ColorUtils" /* 4605 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7219 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7224 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

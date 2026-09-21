@@ -1,15 +1,15 @@
-// Module ID: 8104
-// Function ID: 8105
+// Module ID: 8106
+// Function ID: 8107
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4756, 576, 1612, 1115, 8102, 5843, 8105, 1364, 5836, 4959, 13584, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1612, 1115, 8104, 5848, 8107, 1364, 5841, 4959, 13590, 2]
 // Exports: default
 
-// Module 8104 (ForLaterModal)
+// Module 8106 (ForLaterModal)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import HeaderShared from "HeaderShared" /* 8105 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 13584 */;
+import HeaderShared from "HeaderShared" /* 8107 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 13590 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export default function ForLaterModal(type) {
   const tmp8 = View;
   obj3.headerLeft = require("NavigatorHeader").getHeaderCloseButton(ModalActionCreatorsDefault.pop);
   ({ headerLeftContainer: obj2.headerLeftContainerStyle, headerRightContainer: obj2.headerRightContainerStyle } = tmp);
-  const items = [closure_4(require("module_5843").Header, obj3), ];
+  const items = [closure_4(require("module_5848").Header, obj3), ];
   const obj4 = { type, onClose: null };
   const tmp4Result2 = require("NavigatorHeader");
   obj4.onClose = ModalActionCreatorsDefault.pop;

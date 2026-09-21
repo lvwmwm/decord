@@ -1,10 +1,10 @@
-// Module ID: 11870
-// Function ID: 11871
+// Module ID: 11872
+// Function ID: 11873
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 4748, 2041, 2099, 2063, 4976, 4405, 1372, 9403, 5210, 1074, 1483, 5211, 21, 4756, 576, 1978, 1177, 4723, 8447, 4600, 4752, 4909, 1115, 7402, 504, 4989, 9995, 8218, 5799, 1400, 5819, 1364, 11871, 4453, 5817, 1610, 7763, 5184, 5899, 7422, 8385, 7390, 2]
+// Dependencies: [19, 17, 4748, 2041, 2099, 2063, 4976, 4405, 1372, 9404, 5210, 1074, 1483, 5211, 21, 4756, 576, 1978, 1177, 4723, 8448, 4600, 4752, 4909, 1115, 7407, 504, 4989, 9996, 8219, 5804, 1400, 5824, 1364, 11873, 4453, 5822, 1610, 7765, 5184, 5904, 7427, 8386, 7395, 2]
 // Exports: default
 
-// Module 11870 (ExecutedApplicationCommandPopout)
+// Module 11872 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
@@ -15,11 +15,11 @@ import ToastUtils from "ToastUtils" /* 4453 */;
 import UserUtilsDefault from "UserUtils" /* 4600 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7763 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8385 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8447 */;
-import NativeCommandClipboardModuleDefault from "NativeCommandClipboardModule" /* 11871 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8386 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
+import NativeCommandClipboardModuleDefault from "NativeCommandClipboardModule" /* 11873 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -28,7 +28,7 @@ import GuildStore from "GuildStore" /* 2063 */;
 import MessageStore from "MessageStore" /* 4976 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 import UserStore from "UserStore" /* 1372 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9403 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9404 */;
 
 require = fn;
 function getCommandOptionComponents(option) {
@@ -600,7 +600,7 @@ function CommandActionsContainer(channelId) {
               const current2 = chatInputRef.current;
               if (current2 != null) {
                 const obj2 = { type: tmp4(1610).KeyboardTypes.APP_LAUNCHER, context: null };
-                const obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: tmp4(7763).ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: null };
+                const obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: tmp4(7765).ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: null };
                 const obj5 = { commandId: null, prefilledOptions: null };
                 const sum = tmp3.id + SUB_COMMAND_KEY_SEPARATOR;
                 obj5.commandId = sum + items1.join(SUB_COMMAND_KEY_SEPARATOR);
@@ -705,7 +705,7 @@ export default function ExecutedCommandPopout(channelId) {
       const messageInteractionData = InteractionActionCreatorsAll.fetchMessageInteractionData(channelId, messageId);
     }
   }, items1);
-  const obj2 = { value: messageId(7402)(messageId(7422).EXECUTED_COMMAND).analyticsLocations, children: null };
+  const obj2 = { value: messageId(7407)(messageId(7427).EXECUTED_COMMAND).analyticsLocations, children: null };
   const obj3 = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -735,6 +735,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj7);
   }
   obj3.children = tmp9Result;
-  obj2.children = closure_23(channelId(7390).BottomSheet, obj3);
-  return closure_23(channelId(7402).AnalyticsLocationProvider, obj2);
+  obj2.children = closure_23(channelId(7395).BottomSheet, obj3);
+  return closure_23(channelId(7407).AnalyticsLocationProvider, obj2);
 };

@@ -1,17 +1,17 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11247
+// Function ID: 11248
 // Name: formatResults
-// Dependencies: [5, 10089, 2041, 4395, 1372, 11247, 1074, 10090, 4769, 10099, 1115, 1370, 12, 2]
+// Dependencies: [5, 10090, 2041, 4395, 1372, 11248, 1074, 10091, 4769, 10100, 1115, 1370, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 11246 (formatResults)
+// Module 11247 (formatResults)
 import _mod12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
-import sortByMatchScore from "sortByMatchScore" /* 10090 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10099 */;
+import sortByMatchScore from "sortByMatchScore" /* 10091 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10100 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 10089 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 10090 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -152,7 +152,7 @@ function mergeAndDedupeResultsWithHeaders(found, items1) {
   }
   return items;
 }
-const isAllowedType = fn(11247).isAllowedType;
+const isAllowedType = fn(11248).isAllowedType;
 const Constants = fn(1074);
 ({ Permissions: closure_9, ChannelTypes: c10 } = Constants);
 const size = fn(2);
@@ -191,24 +191,24 @@ export default function formatResults(hasQuery) {
             user = user.getUser(type.id);
             let tmp6 = null;
             if (null != user) {
-              const obj = { type: queryMode(10090).AutocompleterResultTypes.USER, record: user, score: 0 };
+              const obj = { type: queryMode(10091).AutocompleterResultTypes.USER, record: user, score: 0 };
               tmp6 = obj;
             }
             let tmp3 = tmp6;
           } else {
-            tmp3 = originDestination(10099)(type.id);
+            tmp3 = originDestination(10100)(type.id);
           }
           return tmp3;
         });
       }
       const channelHistory = QuickSwitcherStore.getChannelHistory();
       if (channelHistory.length > 0) {
-        let mapped1 = channelHistory.map((item) => originDestination(10099)(item));
+        let mapped1 = channelHistory.map((item) => originDestination(10100)(item));
       } else {
         mapped1 = [];
       }
       if (frequentChannels.length > 0) {
-        let mapped2 = frequentChannels.map((id) => originDestination(10099)(id.id));
+        let mapped2 = frequentChannels.map((id) => originDestination(10100)(id.id));
       } else {
         mapped2 = [];
       }
@@ -259,11 +259,11 @@ export default function formatResults(hasQuery) {
         let user = UserStore.getUser(targetDestination.id);
         targetDestination = null;
         if (null != user) {
-          let obj = { type: queryMode(10090).AutocompleterResultTypes.USER, record: user, score: 0 };
+          let obj = { type: queryMode(10091).AutocompleterResultTypes.USER, record: user, score: 0 };
           targetDestination = obj;
         }
       } else {
-        const tmp9 = originDestination(10099)(targetDestination.id);
+        const tmp9 = originDestination(10100)(targetDestination.id);
       }
     }
     mapped = [];
@@ -317,7 +317,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
     items1 = [];
   }
   const intl = queryMode(1115).intl;
-  const headerResult = queryMode(10090).createHeaderResult(intl.string(queryMode(1115).t.qm9dSj));
+  const headerResult = queryMode(10091).createHeaderResult(intl.string(queryMode(1115).t.qm9dSj));
   if (hasNonEmptyQuery.hasNonEmptyQuery) {
     const items2 = [headerResult];
     HermesBuiltin.arraySpread(mergeAndDedupeResultsWithHeaders(results.filter(isAllowedType), items1), 1);
@@ -332,7 +332,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
       let items4 = items3;
     } else {
       const intl2 = tmp(1115).intl;
-      items4 = [tmp(10090).createHeaderResult(intl2.string(tmp(1115).t["80lOZ1"])), , ];
+      items4 = [tmp(10091).createHeaderResult(intl2.string(tmp(1115).t["80lOZ1"])), , ];
       let tmp13 = null;
       if (null != selectedChannelId) {
         const tmp7 = createAutocompleterResultForChannelIdDefault(selectedChannelId);
@@ -340,7 +340,7 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
         if (null != tmp7) {
           let tmp9 = null;
           if (isAllowedType(tmp7)) {
-            let canResult = tmp7.type === tmp(10090).AutocompleterResultTypes.USER;
+            let canResult = tmp7.type === tmp(10091).AutocompleterResultTypes.USER;
             if (!canResult) {
               canResult = PermissionStore.can(constants.VIEW_CHANNEL, tmp7.record);
             }
@@ -356,9 +356,9 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
       items4[1] = tmp13;
       items4[2] = headerResult;
       HermesBuiltin.arraySpread(found1, 3);
-      const tmpResult = tmp(10090);
+      const tmpResult = tmp(10091);
     }
     return mergeAndDedupeResultsWithHeaders(items4, items1);
   }
-  const obj = queryMode(10090);
+  const obj = queryMode(10091);
 };

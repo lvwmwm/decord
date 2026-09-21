@@ -1,14 +1,14 @@
-// Module ID: 14965
-// Function ID: 14966
+// Module ID: 14971
+// Function ID: 14972
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 14960, 21, 4756, 576, 4492, 4757, 2]
+// Dependencies: [19, 17, 14966, 21, 4756, 576, 4492, 4757, 2]
 
-// Module 14965 (SettingListItemHighlight)
+// Module 14971 (SettingListItemHighlight)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
 import noop from "module_19" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14960 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14966 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;

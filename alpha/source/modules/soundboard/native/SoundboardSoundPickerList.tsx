@@ -1,24 +1,24 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17531
+// Function ID: 17532
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1372, 17514, 21, 4756, 576, 5232, 1115, 10602, 504, 4414, 10222, 10564, 17521, 5193, 12, 5796, 1177, 17529, 10649, 4718, 8990, 10563, 7312, 4752, 2]
+// Dependencies: [19, 17, 1372, 17525, 21, 4756, 576, 5232, 1115, 10603, 504, 4414, 10223, 10565, 17532, 5193, 12, 5801, 1177, 17540, 10650, 4718, 8991, 10564, 7317, 4752, 2]
 
-// Module 17520 (SoundboardSoundPickerList)
+// Module 17531 (SoundboardSoundPickerList)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
 import ClockIcon from "ClockIcon" /* 4718 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import SoundboardTypes from "SoundboardTypes" /* 5232 */;
-import GuildIcon from "GuildIcon" /* 5796 */;
-import FastListDefault from "FastList" /* 7312 */;
-import TrophyIcon from "TrophyIcon" /* 8990 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10222 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10563 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10564 */;
-import chunkDefault from "chunk" /* 10602 */;
-import _modDef10649 from "module_10649" /* 10649 */;
-import _modDef17529 from "module_17529" /* 17529 */;
+import GuildIcon from "GuildIcon" /* 5801 */;
+import FastListDefault from "FastList" /* 7317 */;
+import TrophyIcon from "TrophyIcon" /* 8991 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10223 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10564 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10565 */;
+import chunkDefault from "chunk" /* 10603 */;
+import _modDef10650 from "module_10650" /* 10650 */;
+import _modDef17540 from "module_17540" /* 17540 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -87,7 +87,7 @@ function SoundPickerButtonRow(row) {
             obj.style = soundButtonNotFirst;
             obj.isSectionLocked = isSectionLocked;
             const _HermesInternal = HermesInternal;
-            return React5(tmp(17521).SoundButton, obj, "" + section.category.key + "-" + sound.soundId);
+            return React5(tmp(17532).SoundButton, obj, "" + section.category.key + "-" + sound.soundId);
           } else if (tmp(5232).SoundboardSoundItemType.ADD_SOUND === type) {
             const _Error = Error;
             const error = new Error("ADD_SOUND Not implemented");
@@ -101,7 +101,7 @@ function SoundPickerButtonRow(row) {
   let obj = row(section[10]);
 }
 const View = fn(17).View;
-const SoundboardStyleConstants = fn(17514);
+const SoundboardStyleConstants = fn(17525);
 ({ SOUND_ROW_HORIZONTAL_PADDING, SOUNDS_PER_ROW: metroRequire, SOUND_BUTTON_HEIGHT, SOUND_ROW_SPACING } = SoundboardStyleConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -307,10 +307,10 @@ export const SoundboardSoundPickerList = noop.memo(function SoundboardSoundPicke
         const obj3 = { size: GuildIcon.GuildIconSizes.XXSMALL_12, guild: tmp2.category.categoryInfo.guild, style: tmp11.sectionIcon };
         let tmp8Result = tmp8(GuildIconDefault, obj3);
       } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
-        const obj4 = { source: _modDef17529, style: tmp11.sectionIcon };
+        const obj4 = { source: _modDef17540, style: tmp11.sectionIcon };
         tmp8Result = tmp8(native.Icon, obj4);
       } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
-        const obj5 = { source: _modDef10649, style: tmp11.sectionIcon };
+        const obj5 = { source: _modDef10650, style: tmp11.sectionIcon };
         tmp8Result = tmp8(native.Icon, obj5);
       } else if (SoundboardTypes.SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
         const obj6 = { style: tmp11.sectionIcon };

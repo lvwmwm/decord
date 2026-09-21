@@ -1,15 +1,15 @@
-// Module ID: 11475
-// Function ID: 11476
+// Module ID: 11477
+// Function ID: 11478
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1074, 21, 4756, 576, 4752, 4622, 11476, 1241, 4936, 4723, 11481, 7761, 7763, 2]
+// Dependencies: [19, 1074, 21, 4756, 576, 4752, 4622, 11478, 1241, 4936, 4723, 11483, 7763, 7765, 2]
 
-// Module 11475 (UserProfileAboutMeCardCommand)
+// Module 11477 (UserProfileAboutMeCardCommand)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11476 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11481 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11478 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11483 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -71,11 +71,11 @@ export default noop.memo(function UserProfileAboutMeCardCommand(channel) {
             const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
             let applicationCommandSection = null;
             if (null != tmp3) {
-              applicationCommandSection = tmp7(7761).getApplicationCommandSection(tmp3);
-              const tmp7Result = tmp7(7761);
+              applicationCommandSection = tmp7(7763).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(7763);
             }
             obj4.section = applicationCommandSection;
-            obj4.location = tmp7(7763).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            obj4.location = tmp7(7765).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
             applicationCommandManager.setCommand(obj4);
           }
         }
@@ -134,11 +134,11 @@ export default noop.memo(function UserProfileAboutMeCardCommand(channel) {
             const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
             let applicationCommandSection = null;
             if (null != tmp3) {
-              applicationCommandSection = tmp7(7761).getApplicationCommandSection(tmp3);
-              const tmp7Result = tmp7(7761);
+              applicationCommandSection = tmp7(7763).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(7763);
             }
             obj4.section = applicationCommandSection;
-            obj4.location = tmp7(7763).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            obj4.location = tmp7(7765).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
             applicationCommandManager.setCommand(obj4);
           }
         }

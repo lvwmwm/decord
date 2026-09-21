@@ -1,10 +1,10 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8384
+// Function ID: 8385
 // Name: validateComponent
 // Dependencies: [1978, 4980, 1115, 38, 2]
 // Exports: default
 
-// Module 8383 (validateComponent)
+// Module 8384 (validateComponent)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 1978 */;
 import size from "module_2" /* 2 */;

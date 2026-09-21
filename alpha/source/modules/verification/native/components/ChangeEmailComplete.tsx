@@ -1,16 +1,16 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7244
+// Function ID: 7245
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 5835, 21, 4756, 576, 5833, 6839, 4752, 1115, 5186, 2]
+// Dependencies: [19, 17, 5840, 21, 4756, 576, 5838, 6844, 4752, 1115, 5186, 2]
 // Exports: default
 
-// Module 7239 (ChangeEmailComplete)
+// Module 7244 (ChangeEmailComplete)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5833 */;
-import _modDef6839 from "module_6839" /* 6839 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5838 */;
+import _modDef6844 from "module_6844" /* 6844 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const resetChangeEmailStore = fn(5835).resetChangeEmailStore;
+const resetChangeEmailStore = fn(5840).resetChangeEmailStore;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4756);
@@ -35,7 +35,7 @@ const result = size.fileFinishedImporting("modules/verification/native/component
 export default function ChangeEmailComplete(email) {
   const tmp = closure_9();
   const obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  const items = [React5(React4, { style: tmp.image, source: _modDef6839 }), , , ];
+  const items = [React5(React4, { style: tmp.image, source: _modDef6844 }), , , ];
   const obj3 = { style: tmp.bodyInner, children: null };
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;

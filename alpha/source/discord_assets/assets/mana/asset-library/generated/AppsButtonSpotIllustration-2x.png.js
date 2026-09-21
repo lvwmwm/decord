@@ -1,8 +1,8 @@
-// Module ID: 5982
-// Function ID: 5983
+// Module ID: 5987
+// Function ID: 5988
 // Dependencies: [2]
 
-// Module 5982
+// Module 5987
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AppsButtonSpotIllustration-2x.png.js");

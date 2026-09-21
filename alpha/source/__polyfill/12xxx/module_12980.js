@@ -1,9 +1,0 @@
-// Module ID: 12980
-// Function ID: 12981
-// Dependencies: [1121]
-
-// Module 12980
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 48, height: 48, scales: [1, 2, 3], hash: "3c685966e643346896f1eed744338b14", name: "study", type: "png" });

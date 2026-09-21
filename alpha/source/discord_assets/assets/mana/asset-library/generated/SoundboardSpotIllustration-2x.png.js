@@ -1,8 +1,8 @@
-// Module ID: 6714
-// Function ID: 6715
+// Module ID: 6719
+// Function ID: 6720
 // Dependencies: [2]
 
-// Module 6714
+// Module 6719
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundboardSpotIllustration-2x.png.js");

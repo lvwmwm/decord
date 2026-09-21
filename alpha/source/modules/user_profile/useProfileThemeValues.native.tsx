@@ -1,10 +1,10 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7429
+// Function ID: 7430
 // Name: useProfileThemeValues
 // Dependencies: [19, 4748, 563, 576, 575, 2]
 // Exports: useProfileThemeValues
 
-// Module 7424 (useProfileThemeValues)
+// Module 7429 (useProfileThemeValues)
 import _mod19 from "module_19" /* 19 */;
 import shims from "shims" /* 575 */;
 import nativeDefault from "native" /* 576 */;

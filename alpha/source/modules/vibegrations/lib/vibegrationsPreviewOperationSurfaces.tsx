@@ -1,11 +1,11 @@
-// Module ID: 13184
-// Function ID: 13185
+// Module ID: 13186
+// Function ID: 13187
 // Name: vibegrationsPreviewOperationSurfaces
-// Dependencies: [13181, 2]
+// Dependencies: [13183, 2]
 // Exports: createPreviewOperationSurfaces
 
-// Module 13184 (vibegrationsPreviewOperationSurfaces)
-import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13181 */;
+// Module 13186 (vibegrationsPreviewOperationSurfaces)
+import vibegrationsPreviewControlLease from "vibegrationsPreviewControlLease" /* 13183 */;
 import size from "module_2" /* 2 */;
 
 function bestEffort(arg0, fn) {

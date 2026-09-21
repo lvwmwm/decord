@@ -1,10 +1,10 @@
-// Module ID: 16980
-// Function ID: 16981
+// Module ID: 16988
+// Function ID: 16989
 // Name: VibegrationsPatchNotesChannel
 // Dependencies: [1115, 3678, 510, 2]
 // Exports: formatPlaySuffix, lastPatchNotesChannel, rememberPatchNotesChannel
 
-// Module 16980 (VibegrationsPatchNotesChannel)
+// Module 16988 (VibegrationsPatchNotesChannel)
 import Storage3 from "Storage" /* 510 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;

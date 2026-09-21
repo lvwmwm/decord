@@ -1,10 +1,10 @@
-// Module ID: 17502
-// Function ID: 17503
+// Module ID: 17513
+// Function ID: 17514
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2041, 2095, 1074, 4385, 9613, 9614, 9638, 1110, 2]
+// Dependencies: [5, 19, 2041, 2095, 1074, 4385, 9614, 9615, 9639, 1110, 2]
 // Exports: default
 
-// Module 17502 (useTransitionToConnectedActivityInVoice)
+// Module 17513 (useTransitionToConnectedActivityInVoice)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -82,12 +82,12 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                 } else {
                   embeddedActivityLocationChannelId = handler(4385).getEmbeddedActivityLocationChannelId(_location2);
                   if (null != embeddedActivityLocationChannelId) {
-                    if (closure_2_1(9613)(embeddedActivityLocationChannelId)) {
+                    if (closure_2_1(9614)(embeddedActivityLocationChannelId)) {
                       if (voiceChannelId.getVoiceChannelId() !== embeddedActivityLocationChannelId) {
                         const obj5 = { channelId: embeddedActivityLocationChannelId };
                         c3 = 2;
                         c4 = 1;
-                        const obj6 = { value: closure_2_1(9614)(obj5), done: false };
+                        const obj6 = { value: closure_2_1(9615)(obj5), done: false };
                         return obj6;
                       }
                     }
@@ -111,7 +111,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
               closure_129_3 = guild_id;
               const _setTimeout = setTimeout;
               const timerId = setTimeout(() => {
-                closure_3_1(9638)(closure_1_3, _location);
+                closure_3_1(9639)(closure_1_3, _location);
                 if (closure_0 != null) {
                   closure_0();
                 }

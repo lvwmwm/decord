@@ -1,14 +1,14 @@
-// Module ID: 11090
-// Function ID: 11091
+// Module ID: 11091
+// Function ID: 11092
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 4492, 4756, 576, 1478, 4757, 1177, 11091, 10958, 2]
+// Dependencies: [32, 19, 17, 21, 4492, 4756, 576, 1478, 4757, 1177, 11092, 10959, 2]
 // Exports: default
 
-// Module 11090 (PremiumGiftBackgroundSelect)
+// Module 11091 (PremiumGiftBackgroundSelect)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import timing from "timing" /* 4757 */;
-import NativeGiftContext from "NativeGiftContext" /* 10958 */;
+import NativeGiftContext from "NativeGiftContext" /* 10959 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;

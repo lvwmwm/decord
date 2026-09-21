@@ -1,13 +1,13 @@
-// Module ID: 11680
-// Function ID: 11681
+// Module ID: 11682
+// Function ID: 11683
 // Name: updateChannelUnreadSettings
-// Dependencies: [4937, 1074, 4938, 1084, 7359, 10404, 7354, 2]
+// Dependencies: [4937, 1074, 4938, 1084, 7364, 10405, 7359, 2]
 // Exports: default
 
-// Module 11680 (updateChannelUnreadSettings)
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7354 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7359 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10404 */;
+// Module 11682 (updateChannelUnreadSettings)
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7359 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7364 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10405 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
 
 require = fn;

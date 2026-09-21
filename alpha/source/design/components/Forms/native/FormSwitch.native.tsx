@@ -1,10 +1,10 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7446
+// Function ID: 7447
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4492, 4756, 576, 5188, 4476, 5185, 5189, 4457, 5830, 7442, 4724, 4725, 2]
+// Dependencies: [32, 19, 17, 21, 4492, 4756, 576, 5188, 4476, 5185, 5189, 4457, 5835, 7447, 4724, 4725, 2]
 // Exports: FormSwitch
 
-// Module 7441 (FormSwitch)
+// Module 7446 (FormSwitch)
 import nativeDefault from "native" /* 576 */;
 import HapticUtils from "HapticUtils" /* 4724 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;

@@ -1,10 +1,10 @@
-// Module ID: 8895
-// Function ID: 8896
+// Module ID: 8896
+// Function ID: 8897
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4405, 5633, 5626, 21, 4756, 576, 504, 1115, 1177, 8896, 4752, 4723, 8897, 7363, 5186, 7390, 7312, 2]
+// Dependencies: [32, 19, 17, 4405, 5638, 5631, 21, 4756, 576, 504, 1115, 1177, 8897, 4752, 4723, 8898, 7368, 5186, 7395, 7317, 2]
 // Exports: default
 
-// Module 8895 (StageBlockedUsersActionSheet)
+// Module 8896 (StageBlockedUsersActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 4752 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5633 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5638 */;
 
 require = fn;
 function RestrictedUser(guildId) {
@@ -45,7 +45,7 @@ function RestrictedUser(guildId) {
     const obj6 = { style: null, children: null };
     const items3 = [tmp.iconContainer];
     obj6.style = items3;
-    const obj7 = { style: tmp.icon, source: user(8896), color: user(576).unsafe_rawColors.WHITE };
+    const obj7 = { style: tmp.icon, source: user(8897), color: user(576).unsafe_rawColors.WHITE };
     obj6.children = tmp11(tmp2(1177).Icon, obj7);
     speaker = tmp11(tmp10, obj6);
   }
@@ -140,7 +140,7 @@ function StageBlockedUsersActionSheetHeader(arg0) {
   }
 }
 const View = fn(17).View;
-let closure_8 = fn(5626).STAGE_BLOCKED_USERS_SHEET_KEY;
+let closure_8 = fn(5631).STAGE_BLOCKED_USERS_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);
@@ -164,9 +164,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp = closure_11();
   const tmp2 = items1(noop.useState(0), 2);
   dependencyMap = tmp2[1];
-  const stageBlockedUsers = channel(8897).useStageBlockedUsers(channel.id);
-  const obj = channel(8897);
-  const stageIgnoredUsers = channel(8897).useStageIgnoredUsers(channel.id);
+  const stageBlockedUsers = channel(8898).useStageBlockedUsers(channel.id);
+  const obj = channel(8898);
+  const stageIgnoredUsers = channel(8898).useStageIgnoredUsers(channel.id);
   const callback = noop.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
   }, []);
@@ -188,11 +188,11 @@ export default function StageBlockedUsersActionSheet(channel) {
   items[1] = closure_9(channel(5186).Button, obj5);
   obj3.children = items;
   items1 = [];
-  const obj2 = channel(8897);
+  const obj2 = channel(8898);
   HermesBuiltin.arraySpread(stageIgnoredUsers, HermesBuiltin.arraySpread(stageBlockedUsers, 0));
-  const obj6 = { scrollable: true, header: closure_9(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: closure_10(channel(7363).SafeAreaPaddingView, obj3), children: null };
+  const obj6 = { scrollable: true, header: closure_9(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: closure_10(channel(7368).SafeAreaPaddingView, obj3), children: null };
   const obj7 = { inActionSheet: true, contentContainerStyle: tmp.container, accessibilityLabel: null, sections: null, renderItem: null, itemSize: null };
-  const tmp4 = closure_10(channel(7363).SafeAreaPaddingView, obj3);
+  const tmp4 = closure_10(channel(7368).SafeAreaPaddingView, obj3);
   const intl3 = channel(1115).intl;
   obj7.accessibilityLabel = intl3.string(channel(1115).t["3VoRLH"]);
   const items2 = [items1.length];
@@ -203,7 +203,7 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj7.itemSize = function itemSize() {
     return 48;
   };
-  const items3 = [closure_9(onAccept(7312), obj7), closure_9(View, { style: { height: tmp2[0] } })];
+  const items3 = [closure_9(onAccept(7317), obj7), closure_9(View, { style: { height: tmp2[0] } })];
   obj6.children = items3;
-  return closure_10(channel(7390).BottomSheet, obj6);
+  return closure_10(channel(7395).BottomSheet, obj6);
 };

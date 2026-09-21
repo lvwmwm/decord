@@ -1,11 +1,11 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12144
+// Function ID: 12145
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4756, 12143, 2]
+// Dependencies: [19, 17, 21, 4756, 12145, 2]
 // Exports: default
 
-// Module 12142 (AppealIngestionActivitySummary)
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12143 */;
+// Module 12144 (AppealIngestionActivitySummary)
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 12145 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

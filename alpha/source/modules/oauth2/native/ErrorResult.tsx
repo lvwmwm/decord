@@ -1,14 +1,14 @@
-// Module ID: 9321
-// Function ID: 9322
-// Dependencies: [19, 17, 21, 4756, 576, 7363, 9322, 4752, 1115, 5186, 4959, 2]
+// Module ID: 9322
+// Function ID: 9323
+// Dependencies: [19, 17, 21, 4756, 576, 7368, 9323, 4752, 1115, 5186, 4959, 2]
 // Exports: default
 
-// Module 9321
+// Module 9322
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import _modDef9322 from "module_9322" /* 9322 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import _modDef9323 from "module_9323" /* 9323 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ export default function ErrorResult(error) {
   const tmp = closure_7();
   const obj = { bottom: true, style: tmp.container, children: null };
   const obj2 = { style: tmp.inner, children: null };
-  const items = [hasOwnProperty(React3, { source: _modDef9322, style: tmp.image }), ];
+  const items = [hasOwnProperty(React3, { source: _modDef9323, style: tmp.image }), ];
   const obj4 = { style: tmp.text, variant: "text-md/medium", children: null };
   if (error == null) {
     const intl = tmp3(1115).intl;

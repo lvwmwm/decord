@@ -1,13 +1,13 @@
-// Module ID: 16210
-// Function ID: 16211
+// Module ID: 16216
+// Function ID: 16217
 // Name: DoubleTapToReactSetting
-// Dependencies: [8232, 11723, 1115, 2019, 2]
+// Dependencies: [8233, 11725, 1115, 2019, 2]
 
-// Module 16210 (DoubleTapToReactSetting)
+// Module 16216 (DoubleTapToReactSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8232 */;
-import SettingBuilders from "SettingBuilders" /* 11723 */;
+import SettingsConstants from "SettingsConstants" /* 8233 */;
+import SettingBuilders from "SettingBuilders" /* 11725 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

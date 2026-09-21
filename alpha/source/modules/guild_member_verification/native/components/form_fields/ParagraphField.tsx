@@ -1,13 +1,13 @@
-// Module ID: 7324
-// Function ID: 7325
+// Module ID: 7329
+// Function ID: 7330
 // Name: ParagraphField
-// Dependencies: [19, 17, 5270, 21, 4756, 7325, 4752, 1115, 2]
+// Dependencies: [19, 17, 5270, 21, 4756, 7330, 4752, 1115, 2]
 // Exports: default
 
-// Module 7324 (ParagraphField)
+// Module 7329 (ParagraphField)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import TextArea from "TextArea" /* 7325 */;
+import TextArea from "TextArea" /* 7330 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

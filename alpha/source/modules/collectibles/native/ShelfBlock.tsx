@@ -1,17 +1,17 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16161
+// Function ID: 16162
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7782, 1076, 1074, 21, 4756, 576, 1484, 9046, 16134, 7402, 7422, 504, 16136, 15336, 7781, 9043, 4752, 5186, 1115, 7396, 8996, 2]
+// Dependencies: [19, 17, 7784, 1076, 1074, 21, 4756, 576, 1484, 9047, 16140, 7407, 7427, 504, 16142, 15342, 7783, 9044, 4752, 5186, 1115, 7401, 8997, 2]
 // Exports: default
 
-// Module 16155 (ShelfBlock)
+// Module 16161 (ShelfBlock)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7422 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7781 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9043 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9046 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7783 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9044 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9047 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7782 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
 
 require = fn;
 function ListEdgeSpacer() {

@@ -1,13 +1,13 @@
-// Module ID: 6177
-// Function ID: 6178
+// Module ID: 6182
+// Function ID: 6183
 // Name: EmojiCatStarsExample
-// Dependencies: [21, 5799, 6178, 2]
+// Dependencies: [21, 5804, 6183, 2]
 // Exports: EmojiCatStarsExample
 
-// Module 6177 (EmojiCatStarsExample)
+// Module 6182 (EmojiCatStarsExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef6178 from "module_6178" /* 6178 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef6183 from "module_6183" /* 6183 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const EmojiCatStarsExample = function EmojiCatStarsExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6178 };
+  const obj2 = { uri: _modDef6183 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

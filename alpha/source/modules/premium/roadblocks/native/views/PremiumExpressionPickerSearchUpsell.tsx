@@ -1,13 +1,13 @@
-// Module ID: 10571
-// Function ID: 10572
+// Module ID: 10572
+// Function ID: 10573
 // Name: PremiumExpressionPickerSearchUpsell
-// Dependencies: [19, 17, 21, 576, 4756, 5334, 4752, 2]
+// Dependencies: [19, 17, 21, 576, 4756, 5339, 4752, 2]
 // Exports: default
 
-// Module 10571 (PremiumExpressionPickerSearchUpsell)
+// Module 10572 (PremiumExpressionPickerSearchUpsell)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5334 */;
+import Pressables from "Pressables" /* 5339 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

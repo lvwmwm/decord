@@ -1,14 +1,14 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17466
+// Function ID: 17467
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2041, 1372, 4777, 21, 4756, 576, 9687, 4710, 4752, 1115, 504, 1177, 9691, 4457, 17456, 9702, 17457, 9696, 2]
+// Dependencies: [32, 19, 17, 2041, 1372, 4777, 21, 4756, 576, 9688, 4710, 4752, 1115, 504, 1177, 9692, 4457, 17467, 9703, 17468, 9697, 2]
 
-// Module 17455 (ExternalPipViewVideo)
+// Module 17466 (ExternalPipViewVideo)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 9696 */;
-import VideoActionCreators from "VideoActionCreators" /* 17456 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17457 */;
+import ExternalPipDefault from "ExternalPip" /* 9697 */;
+import VideoActionCreators from "VideoActionCreators" /* 17467 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17468 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
@@ -21,7 +21,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   const obj = { style: tmp.unavailable, children: null };
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(9687).StreamEnded, obj2);
+    let tmp4Result = tmp4(tmp5(9688).StreamEnded, obj2);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
@@ -63,7 +63,7 @@ function ExternalPipViewVideoStream(streamId) {
   first = 300;
   _slicedToArray = undefined;
   noop = undefined;
-  const surfaceDirectRendererExperiment = streamId(9691).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
+  const surfaceDirectRendererExperiment = streamId(9692).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
   [first, _slicedToArray] = noop.useState(undefined);
   const tmp4 = _slicedToArray(noop.useState(false), 2);
   noop = tmp4[1];
@@ -95,7 +95,7 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items2);
-  let obj = streamId(9691);
+  let obj = streamId(9692);
   const token = streamId(4457).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
   value = closure_7.get();
   _slicedToArray = value;
@@ -107,7 +107,7 @@ function ExternalPipViewVideoStream(streamId) {
       VideoActionCreators.updateVideoSize(tmp, size, 1);
     }
   }, items3);
-  const children = [closure_11(first(9702), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(9703), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp14Result = null;
   if (null == first) {
     tmp14Result = null;

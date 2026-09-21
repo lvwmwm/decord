@@ -1,24 +1,24 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 9403
+// Function ID: 9404
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9403, 2002, 9521, 1074, 5210, 4749, 1115, 9134, 9523, 1364, 1978, 7763, 9524, 7916, 7696, 5108, 1397, 9522, 9530, 7761, 9531, 2]
+// Dependencies: [109, 5, 9404, 2002, 9522, 1074, 5210, 4749, 1115, 9135, 9524, 1364, 1978, 7765, 9525, 7918, 7698, 5108, 1397, 9523, 9531, 7763, 9532, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9402 (AppLauncherUtils)
+// Module 9403 (AppLauncherUtils)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import Server from "Server" /* 1978 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7761 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9134 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9522 */;
-import getPlatformDefault from "getPlatform" /* 9523 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9531 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7763 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9135 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9523 */;
+import getPlatformDefault from "getPlatform" /* 9524 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9532 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9403 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9404 */;
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import AppLauncherStore from "AppLauncherStore" /* 9521 */;
+import AppLauncherStore from "AppLauncherStore" /* 9522 */;
 
 const require = globalThis.__r;
 

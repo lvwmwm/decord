@@ -1,13 +1,13 @@
-// Module ID: 10384
-// Function ID: 10385
+// Module ID: 10385
+// Function ID: 10386
 // Name: Timestamp
-// Dependencies: [19, 21, 4756, 576, 10385, 1177, 4454, 2]
+// Dependencies: [19, 21, 4756, 576, 10386, 1177, 4454, 2]
 // Exports: default
 
-// Module 10384 (Timestamp)
+// Module 10385 (Timestamp)
 import nativeDefault from "native" /* 576 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 10385 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 10386 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

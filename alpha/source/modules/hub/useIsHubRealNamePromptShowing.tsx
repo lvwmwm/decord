@@ -1,13 +1,13 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12902
+// Function ID: 12903
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: [19, 12901, 2105, 2063, 1372, 1074, 12902, 504, 12903, 2]
+// Dependencies: [19, 12903, 2105, 2063, 1372, 1074, 12904, 504, 12905, 2]
 // Exports: default
 
-// Module 12900 (useIsHubRealNamePromptShowing)
-import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 12903 */;
+// Module 12902 (useIsHubRealNamePromptShowing)
+import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 12905 */;
 import noop from "module_19" /* 19 */;
-import GuildPromptsStore from "GuildPromptsStore" /* 12901 */;
+import GuildPromptsStore from "GuildPromptsStore" /* 12903 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2063 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const GuildFeatures = fn(1074).GuildFeatures;
-const GuildPrompts = fn(12902).GuildPrompts;
+const GuildPrompts = fn(12904).GuildPrompts;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
 

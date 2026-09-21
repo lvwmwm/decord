@@ -1,10 +1,10 @@
-// Module ID: 10629
-// Function ID: 10630
+// Module ID: 10630
+// Function ID: 10631
 // Name: FrecencyUserSettingsHooks
 // Dependencies: [19, 1220, 2024, 504, 2]
 // Exports: useFrecencySettings
 
-// Module 10629 (FrecencyUserSettingsHooks)
+// Module 10630 (FrecencyUserSettingsHooks)
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2024 */;
 import noop from "module_19" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;

@@ -1,13 +1,13 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17877
+// Function ID: 17878
 // Name: PushNotificationCacheManager
-// Dependencies: [12665, 1372, 4600, 7358, 9556, 2]
+// Dependencies: [12667, 1372, 4600, 7363, 9557, 2]
 
-// Module 17866 (PushNotificationCacheManager)
-import PushNotificationDefault from "PushNotification" /* 9556 */;
-import MultiAccountStore from "MultiAccountStore" /* 12665 */;
+// Module 17877 (PushNotificationCacheManager)
+import PushNotificationDefault from "PushNotification" /* 9557 */;
+import MultiAccountStore from "MultiAccountStore" /* 12667 */;
 import UserStore from "UserStore" /* 1372 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7358 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
 
 const prototype = function PushNotificationCacheManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -29,11 +29,11 @@ const prototype = function PushNotificationCacheManager() {
   applyArgumentsResult.handleUserUpdate = function handleUserUpdate() {
     currentUser = currentUser.getCurrentUser();
     if (null != currentUser) {
-      applyArgumentsResult(9556).setCurrentUser(currentUser.username, currentUser.id);
-      const obj2 = applyArgumentsResult(9556);
+      applyArgumentsResult(9557).setCurrentUser(currentUser.username, currentUser.id);
+      const obj2 = applyArgumentsResult(9557);
     } else {
-      applyArgumentsResult(9556).setCurrentUser(null, null);
-      const obj = applyArgumentsResult(9556);
+      applyArgumentsResult(9557).setCurrentUser(null, null);
+      const obj = applyArgumentsResult(9557);
     }
   };
   applyArgumentsResult.syncMultiAccountUsers = function syncMultiAccountUsers() {
@@ -52,7 +52,7 @@ const prototype = function PushNotificationCacheManager() {
     } else {
       obj3 = {};
     }
-    obj4(9556).setMultiAccountUsers(obj3);
+    obj4(9557).setMultiAccountUsers(obj3);
   };
   applyArgumentsResult.handleLogout = function handleLogout() {
     const result = PushNotificationDefault.clearPushNotificationLogs();

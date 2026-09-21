@@ -1,20 +1,20 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15078
+// Function ID: 15079
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 4405, 21, 4756, 576, 7402, 7422, 1177, 15073, 1115, 7363, 4752, 5899, 15077, 504, 2]
+// Dependencies: [19, 17, 4405, 21, 4756, 576, 7407, 7427, 1177, 15079, 1115, 7368, 4752, 5904, 15083, 504, 2]
 // Exports: default
 
-// Module 15072 (BlockedUsersListV2)
+// Module 15078 (BlockedUsersListV2)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import Text_Text from "Text/Text" /* 4752 */;
-import TableRowGroup from "TableRowGroup" /* 5899 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7363 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7402 */;
-import Blocked from "Blocked" /* 15073 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 15077 */;
+import TableRowGroup from "TableRowGroup" /* 5904 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7407 */;
+import Blocked from "Blocked" /* 15079 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 15083 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4405 */;
 

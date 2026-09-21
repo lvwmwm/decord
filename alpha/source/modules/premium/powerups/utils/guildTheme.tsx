@@ -1,11 +1,11 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 12753
+// Function ID: 12754
 // Name: guildTheme
-// Dependencies: [4644, 4645, 504, 4648, 12752, 4684, 2]
+// Dependencies: [4644, 4645, 504, 4648, 12754, 4684, 2]
 // Exports: shouldShowGuildThemeRollback, useShouldShowGuildThemeRollback
 
-// Module 12751 (guildTheme)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12752 */;
+// Module 12753 (guildTheme)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12754 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;
 
 const require = globalThis.__r;

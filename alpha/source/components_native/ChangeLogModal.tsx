@@ -1,19 +1,19 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15819
+// Function ID: 15820
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1074, 2094, 21, 4756, 576, 4466, 1241, 8529, 15814, 5799, 8577, 1115, 5334, 10010, 10655, 1177, 8348, 1478, 8349, 1485, 5836, 4348, 8350, 4752, 4959, 7240, 2]
+// Dependencies: [19, 17, 1074, 2094, 21, 4756, 576, 4466, 1241, 8530, 15820, 5804, 8578, 1115, 5339, 10011, 10656, 1177, 8349, 1478, 8350, 1485, 5841, 4348, 8351, 4752, 4959, 7245, 2]
 // Exports: default
 
-// Module 15813 (ChangeLogModal)
+// Module 15819 (ChangeLogModal)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import NavigatorHeader from "NavigatorHeader" /* 5836 */;
-import Navigator from "Navigator" /* 7240 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8348 */;
-import openMediaModal from "openMediaModal" /* 8529 */;
-import common_VideoDefault from "common/Video" /* 8577 */;
-import _modDef15814 from "module_15814" /* 15814 */;
+import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import Navigator from "Navigator" /* 7245 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8349 */;
+import openMediaModal from "openMediaModal" /* 8530 */;
+import common_VideoDefault from "common/Video" /* 8578 */;
+import _modDef15820 from "module_15820" /* 15820 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -275,7 +275,7 @@ prototype["renderVideo"] = function renderVideo() {
             },
         useLocalHTML: true
       };
-      const items = [closure_7(_modDef15814, obj4), ];
+      const items = [closure_7(_modDef15820, obj4), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj5 = { style: tmp.videoOverlay, source: null };
@@ -283,8 +283,8 @@ prototype["renderVideo"] = function renderVideo() {
         const _HermesInternal = HermesInternal;
         obj6.uri = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
         obj5.source = obj6;
-        tmp6Result = tmp6(tmp7(5799), obj5);
-        const tmp7Result = tmp7(5799);
+        tmp6Result = tmp6(tmp7(5804), obj5);
+        const tmp7Result = tmp7(5804);
       }
       items[1] = tmp6Result;
       obj3.children = items;
@@ -308,10 +308,10 @@ prototype["renderVideo"] = function renderVideo() {
   let tmp12Result = null;
   if (null != video) {
     const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: null };
-    const obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: tmp15(10655), onPress: self.playVideo, style: tmp.playButton, iconSize: tmp18(1177).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
-    obj9.children = tmp12(tmp15(10010), obj10);
-    tmp12Result = tmp12(tmp18(5334).PressableOpacity, obj9);
-    const tmp15Result = tmp15(10010);
+    const obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: tmp15(10656), onPress: self.playVideo, style: tmp.playButton, iconSize: tmp18(1177).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+    obj9.children = tmp12(tmp15(10011), obj10);
+    tmp12Result = tmp12(tmp18(5339).PressableOpacity, obj9);
+    const tmp15Result = tmp15(10011);
   }
   items1[1] = tmp12Result;
   obj8.children = items1;

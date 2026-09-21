@@ -1,19 +1,19 @@
-// Module ID: 18191
-// Function ID: 18192
+// Module ID: 18202
+// Function ID: 18203
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 18177, 15469, 21, 18181, 1115, 18171, 2]
+// Dependencies: [32, 19, 18188, 15475, 21, 18192, 1115, 18182, 2]
 // Exports: default
 
-// Module 18191 (GuildRoleSubscriptionGroupGatingModal)
+// Module 18202 (GuildRoleSubscriptionGroupGatingModal)
 import util from "util" /* 1115 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18171 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18181 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18182 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18192 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18177 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18188 */;
 
 require = fn;
-const constants = fn(15469).GuildRoleSubscriptionsTierScenes;
+const constants = fn(15475).GuildRoleSubscriptionsTierScenes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionGroupGatingModal.tsx");

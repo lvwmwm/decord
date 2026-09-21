@@ -1,20 +1,20 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13258
+// Function ID: 13259
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 8634, 21, 4756, 13253, 8604, 11911, 4613, 4492, 4757, 8638, 8639, 1115, 5892, 1177, 576, 4752, 13257, 8173, 1364, 13258, 8180, 2]
+// Dependencies: [19, 17, 8635, 21, 4756, 13255, 8605, 11913, 4613, 4492, 4757, 8639, 8640, 1115, 5897, 1177, 576, 4752, 13259, 8174, 1364, 13260, 8181, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 13256 (MediaModalOverlayHeader)
+// Module 13258 (MediaModalOverlayHeader)
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8639 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 11911 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8640 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 11913 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const SHARE_PREPARING_MODAL_KEY = fn(8634).SHARE_PREPARING_MODAL_KEY;
+const SHARE_PREPARING_MODAL_KEY = fn(8635).SHARE_PREPARING_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4756);
@@ -28,11 +28,11 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   let isModalOpen;
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = closure_8();
-  const headerLayoutAnimation = isModalOpen(13253).useHeaderLayoutAnimation(animationDriver);
-  let obj = isModalOpen(13253);
-  const mediaShareActions = isModalOpen(8604).useMediaShareActions({ source, disableDownload, shareable });
+  const headerLayoutAnimation = isModalOpen(13255).useHeaderLayoutAnimation(animationDriver);
+  let obj = isModalOpen(13255);
+  const mediaShareActions = isModalOpen(8605).useMediaShareActions({ source, disableDownload, shareable });
   const tmp7 = useShouldHideMediaOptionsDefault(channelId);
-  const obj2 = isModalOpen(8604);
+  const obj2 = isModalOpen(8605);
   isModalOpen = isModalOpen(4613).useIsModalOpen(SHARE_PREPARING_MODAL_KEY);
   const obj3 = isModalOpen(4613);
   const fn = function w() {
@@ -65,7 +65,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   const obj5 = { withTiming: isModalOpen(4757).withTiming, isPreparing: isModalOpen };
   let intl = tmp2(1115).intl;
   obj11.accessibilityLabel = intl.string(isModalOpen(1115).t.cpT0Cq);
-  obj11.icon = closure_6(isModalOpen(5892).XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj11.icon = closure_6(isModalOpen(5897).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj11.onPress = onClose;
   const items1 = [closure_6(MediaViewerOverlayButtonDefault, obj11), ];
   let tmp10Result3 = null != contextName;
@@ -93,7 +93,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   if (!tmp7) {
     const obj17 = { style: tmp.navbarRight, children: null };
     const obj18 = { source };
-    const items4 = [tmp10(tmp6(13257), obj18), ];
+    const items4 = [tmp10(tmp6(13259), obj18), ];
     let tmp10Result4 = null;
     if (!disableMediaOverlayButton) {
       const obj19 = {
@@ -105,9 +105,9 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
               obj.accessibilityLabel = intl.string(isModalOpen(1115).t.PdRCRg);
               const tmp4 = MediaViewerOverlayButtonDefault;
               if (obj2.isAndroid()) {
-                let tmp2Result = tmp2(tmp5(13258).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
+                let tmp2Result = tmp2(tmp5(13260).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
               } else {
-                tmp2Result = tmp2(tmp5(8180).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
+                tmp2Result = tmp2(tmp5(8181).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
               }
               obj.icon = tmp2Result;
               obj.ref = ref.ref;
@@ -115,7 +115,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
               return closure_1_6(tmp4, obj);
             }
       };
-      tmp10Result4 = tmp10(tmp2(8173).ContextMenu, obj19);
+      tmp10Result4 = tmp10(tmp2(8174).ContextMenu, obj19);
     }
     items4[1] = tmp10Result4;
     obj17.children = items4;
@@ -123,7 +123,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   }
   items3[1] = tmp12Result;
   obj9.children = items3;
-  obj8.children = closure_7(isModalOpen(8638).MediaModalOverlayHeaderWrapper, obj9);
+  obj8.children = closure_7(isModalOpen(8639).MediaModalOverlayHeaderWrapper, obj9);
   obj6.children = closure_6(ReanimatedRexportDefault.View, obj8);
   return closure_6(ReanimatedRexportDefault.View, obj6);
 };

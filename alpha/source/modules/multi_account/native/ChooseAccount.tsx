@@ -1,10 +1,10 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16281
+// Function ID: 16282
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 12665, 12666, 1074, 21, 4756, 576, 1484, 16276, 1241, 12669, 5109, 1115, 1177, 4723, 7434, 7210, 4752, 14127, 16277, 5334, 9897, 8870, 16278, 2]
+// Dependencies: [5, 19, 17, 12667, 12668, 1074, 21, 4756, 576, 1484, 16282, 1241, 12671, 5109, 1115, 1177, 4723, 7439, 7215, 4752, 14133, 16283, 5339, 9898, 8871, 16284, 2]
 // Exports: default
 
-// Module 16275 (ChooseAccount)
+// Module 16281 (ChooseAccount)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -16,8 +16,8 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const MultiAccountTokenStatus = fn(12665).MultiAccountTokenStatus;
-let Constants = fn(12666);
+const MultiAccountTokenStatus = fn(12667).MultiAccountTokenStatus;
+let Constants = fn(12668);
 ({ MAX_ACCOUNTS: closure_7, MultiAccountSwitchLocation: closure_8 } = Constants);
 Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AuthStates: c10 } = Constants);
@@ -98,8 +98,8 @@ export default function ChooseAccount() {
           if (value) {
             tmp2(4723).hideActionSheet();
             const obj = tmp2(4723);
-            tmp5(12669).removeAccount(closure_129_0.id);
-            const obj2 = tmp5(12669);
+            tmp5(12671).removeAccount(closure_129_0.id);
+            const obj2 = tmp5(12671);
           }
           c4 = 3;
           return { value: "HermesInternal", done: null };
@@ -122,7 +122,7 @@ export default function ChooseAccount() {
   let intl2 = require("util").intl;
   obj4.children = intl2.string(require("util").t["0M5fN7"]);
   obj3.subHeader = closure_11(require("Text/Text").Text, obj4);
-  obj3.backgroundImageSource = multiAccountUsers(14127);
+  obj3.backgroundImageSource = multiAccountUsers(14133);
   obj3.contentStyle = tmp.container;
   let obj5 = { style: tmp.mainCard, children: null };
   let items = [
@@ -135,8 +135,8 @@ export default function ChooseAccount() {
             multiAccountUsers(1241).track(constants3.LOGIN_VIEWED, { source: "choose_account_user_invalid" });
             const obj2 = multiAccountUsers(1241);
           } else {
-            closure_1_2(12669).switchAccount(tmp.id, undefined, constants2.CHOOSE_ACCOUNT);
-            const obj = closure_1_2(12669);
+            closure_1_2(12671).switchAccount(tmp.id, undefined, constants2.CHOOSE_ACCOUNT);
+            const obj = closure_1_2(12671);
           }
           return tmp4;
         },
@@ -157,8 +157,8 @@ export default function ChooseAccount() {
               closure_1_1(1241).track(constants3.LOGIN_VIEWED, { source: "choose_account_user_invalid" });
               const obj2 = closure_1_1(1241);
             } else {
-              closure_1_2(12669).switchAccount(tmp.id, undefined, constants2.CHOOSE_ACCOUNT);
-              const obj = closure_1_2(12669);
+              closure_1_2(12671).switchAccount(tmp.id, undefined, constants2.CHOOSE_ACCOUNT);
+              const obj = closure_1_2(12671);
             }
             return tmp4;
           };
@@ -180,20 +180,20 @@ export default function ChooseAccount() {
           };
           items[1] = obj5;
           obj3.options = items;
-          const result = user(7434).showSimpleActionSheet(obj3);
+          const result = user(7439).showSimpleActionSheet(obj3);
         },
         children: null
       };
-      const tmp = multiAccountUsers(16277);
-      obj2.children = closure_1_11(user(1177).Icon, { size: user(1177).Icon.Sizes.SMALL_20, source: multiAccountUsers(9897), disableColor: true });
-      obj.trailing = closure_1_11(user(5334).PressableOpacity, obj2);
+      const tmp = multiAccountUsers(16283);
+      obj2.children = closure_1_11(user(1177).Icon, { size: user(1177).Icon.Sizes.SMALL_20, source: multiAccountUsers(9898), disableColor: true });
+      obj.trailing = closure_1_11(user(5339).PressableOpacity, obj2);
       return closure_1_11(tmp, obj, user.id);
     }),
 
   ];
   let obj6 = { leading: null, label: null, labelStyle: null, onPress: null };
-  const tmp2 = multiAccountUsers(7210);
-  obj6.leading = closure_11(require("Form").FormRow.Icon, { themedColor: multiAccountUsers(576).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(16278) });
+  const tmp2 = multiAccountUsers(7215);
+  obj6.leading = closure_11(require("Form").FormRow.Icon, { themedColor: multiAccountUsers(576).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(16284) });
   let intl3 = require("util").intl;
   obj6.label = intl3.string(require("util").t.bPP34Q);
   obj6.labelStyle = tmp.addAccountLabel;

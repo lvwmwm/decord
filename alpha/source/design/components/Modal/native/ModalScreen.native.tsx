@@ -1,12 +1,12 @@
-// Module ID: 8692
-// Function ID: 8693
+// Module ID: 8693
+// Function ID: 8694
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 4756, 576, 7221, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 7226, 2]
 // Exports: ModalScreen
 
-// Module 8692 (ModalScreen)
+// Module 8693 (ModalScreen)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7221 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7226 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;

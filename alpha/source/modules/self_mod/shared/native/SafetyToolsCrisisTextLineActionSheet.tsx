@@ -1,19 +1,19 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11661
+// Function ID: 11662
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 11624, 21, 4756, 576, 11660, 1115, 4752, 5186, 4451, 11631, 2]
+// Dependencies: [19, 17, 11626, 21, 4756, 576, 11662, 1115, 4752, 5186, 4451, 11633, 2]
 // Exports: default
 
-// Module 11659 (SafetyToolsCrisisTextLineActionSheet)
+// Module 11661 (SafetyToolsCrisisTextLineActionSheet)
 import nativeDefault from "native" /* 576 */;
 import LinkingDefault from "Linking" /* 4451 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11631 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11660 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11633 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11662 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(11624);
+const Constants = fn(11626);
 ({ CRISIS_TEXT_LINE_SMS_URI: closure_4, CRISIS_TEXT_LINE_URL: hasOwnProperty } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);

@@ -1,10 +1,10 @@
-// Module ID: 11001
-// Function ID: 11002
+// Module ID: 11002
+// Function ID: 11003
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1484, 10958, 11002, 4414, 7480, 5109, 1115, 10921, 2]
+// Dependencies: [5, 19, 1484, 10959, 11003, 4414, 7485, 5109, 1115, 10922, 2]
 // Exports: useSelectPremiumGift
 
-// Module 11001 (useSelectPremiumGift)
+// Module 11002 (useSelectPremiumGift)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14791
+// Function ID: 14792
 // Name: quests
-// Dependencies: [7937, 1074, 8609, 9585, 7958, 9580, 1241, 573, 9623, 2]
+// Dependencies: [7939, 1074, 8610, 9586, 7960, 9581, 1241, 573, 9624, 2]
 
-// Module 14785 (quests)
+// Module 14791 (quests)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7958 */;
-import RPCErrorDefault from "RPCError" /* 9580 */;
-import RPCHelpers from "RPCHelpers" /* 9585 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 9623 */;
-import QuestStore from "QuestStore" /* 7937 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
+import RPCErrorDefault from "RPCError" /* 9581 */;
+import RPCHelpers from "RPCHelpers" /* 9586 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 9624 */;
+import QuestStore from "QuestStore" /* 7939 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ RPCCommands, RPCErrors: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 let obj = {};
 obj[RPCCommands.GET_QUEST_ENROLLMENT_STATUS] = {
-  scope: fn(8609).OAuth2Scopes.IDENTIFY,
+  scope: fn(8610).OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
@@ -53,7 +53,7 @@ obj[RPCCommands.GET_QUEST_ENROLLMENT_STATUS] = {
   }
 };
 let obj2 = {
-  scope: fn(8609).OAuth2Scopes.IDENTIFY,
+  scope: fn(8610).OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
@@ -89,7 +89,7 @@ let obj2 = {
   }
 };
 obj[RPCCommands.QUEST_START_TIMER] = {
-  scope: fn(8609).OAuth2Scopes.IDENTIFY,
+  scope: fn(8610).OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
@@ -124,7 +124,7 @@ obj[RPCCommands.QUEST_START_TIMER] = {
   }
 };
 let obj3 = {
-  scope: fn(8609).OAuth2Scopes.IDENTIFY,
+  scope: fn(8610).OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const quest_id = socket.args.quest_id;
@@ -159,7 +159,7 @@ let obj3 = {
   }
 };
 obj[RPCCommands.GET_QUEST] = {
-  scope: fn(8609).OAuth2Scopes.IDENTIFY,
+  scope: fn(8610).OAuth2Scopes.IDENTIFY,
   handler(socket) {
     socket = socket.socket;
     const result = RPCHelpers.validatePostMessageTransport(socket.transport);

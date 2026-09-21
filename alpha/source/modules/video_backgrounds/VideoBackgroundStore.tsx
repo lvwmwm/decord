@@ -1,13 +1,13 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9918
+// Function ID: 9919
 // Name: VideoBackgroundStore
-// Dependencies: [1220, 1992, 2095, 1372, 9918, 4811, 504, 573, 2]
+// Dependencies: [1220, 1992, 2095, 1372, 9919, 4811, 504, 573, 2]
 
-// Module 9917 (VideoBackgroundStore)
+// Module 9918 (VideoBackgroundStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4811 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9918 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9919 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;

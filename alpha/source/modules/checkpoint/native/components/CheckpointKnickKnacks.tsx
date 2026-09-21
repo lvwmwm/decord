@@ -1,10 +1,10 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 15978
+// Function ID: 15979
 // Name: CheckpointKnickKnacks
 // Dependencies: [19, 17, 4748, 4981, 21, 4756, 504, 1364, 4466, 2]
 // Exports: default
 
-// Module 15972 (CheckpointKnickKnacks)
+// Module 15978 (CheckpointKnickKnacks)
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4748 */;
 

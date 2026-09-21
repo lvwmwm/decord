@@ -1,15 +1,15 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17123
+// Function ID: 17124
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 4909, 11173, 1177, 11174, 4752, 17111, 2]
+// Dependencies: [19, 21, 4909, 11174, 1177, 11175, 4752, 17122, 2]
 // Exports: default
 
-// Module 17112 (rows/GroupDMRow)
+// Module 17123 (rows/GroupDMRow)
 import native from "native" /* 1177 */;
 import useChannelNameDefault from "useChannelName" /* 4909 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11173 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 11174 */;
-import SearchListRow from "SearchListRow" /* 17111 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11174 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 11175 */;
+import SearchListRow from "SearchListRow" /* 17122 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

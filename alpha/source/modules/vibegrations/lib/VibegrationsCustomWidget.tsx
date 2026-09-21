@@ -1,10 +1,10 @@
-// Module ID: 13357
-// Function ID: 13358
+// Module ID: 13359
+// Function ID: 13360
 // Name: VibegrationsCustomWidget
-// Dependencies: [2063, 504, 1434, 7484, 2]
+// Dependencies: [2063, 504, 1434, 5274, 2]
 // Exports: composeVibegrationsCustomWidgetPrompt, useCanConjureVibegrationsCustomWidget
 
-// Module 13357 (VibegrationsCustomWidget)
+// Module 13359 (VibegrationsCustomWidget)
 import GuildStore from "GuildStore" /* 2063 */;
 
 const require = globalThis.__r;

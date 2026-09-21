@@ -1,25 +1,25 @@
-// Module ID: 17083
-// Function ID: 17084
+// Module ID: 17094
+// Function ID: 17095
 // Name: ChannelDetails
-// Dependencies: [19, 17, 12591, 2041, 8119, 11179, 21, 576, 4756, 504, 12551, 17084, 7402, 7422, 1484, 17080, 5171, 7183, 1612, 1364, 4735, 7715, 12613, 12590, 4492, 4757, 4760, 5185, 12599, 4622, 6892, 17085, 17095, 17192, 17194, 17195, 17196, 5139, 2]
+// Dependencies: [19, 17, 12593, 2041, 8120, 11180, 21, 576, 4756, 504, 12553, 17095, 7407, 7427, 1484, 17091, 5171, 7188, 1612, 1364, 4735, 7717, 12615, 12592, 4492, 4757, 4760, 5185, 12601, 4622, 6897, 17096, 17106, 17203, 17205, 17206, 17207, 5139, 2]
 
-// Module 17083 (ChannelDetails)
+// Module 17094 (ChannelDetails)
 import nativeDefault from "native" /* 576 */;
 import timing from "timing" /* 4757 */;
 import timingPresets from "timingPresets" /* 4760 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12590 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12599 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12613 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12592 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 12601 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12615 */;
 import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12591 */;
+import SearchQueryStore from "SearchQueryStore" /* 12593 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
-const ChannelDetailsStore = fn(8119);
+const ChannelDetailsStore = fn(8120);
 ({ deleteChannelDetailsSearchState: closure_7, useChannelDetailsSearchActiveSource: closure_8, useIsChannelDetailsSearchActive: closure_9 } = ChannelDetailsStore);
-const ChannelDetailsConstants = fn(11179);
+const ChannelDetailsConstants = fn(11180);
 ({ SPRING_CHANNEL_HEADER: c10, CHANNEL_DETAILS_TOP_MARGIN } = ChannelDetailsConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);

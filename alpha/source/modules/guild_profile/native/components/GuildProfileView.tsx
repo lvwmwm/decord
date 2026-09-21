@@ -1,10 +1,10 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10017
+// Function ID: 10018
 // Name: GuildProfileView
-// Dependencies: [19, 17, 2063, 1074, 21, 4464, 4466, 4756, 576, 504, 2055, 1478, 1397, 10017, 4690, 4457, 10018, 5198, 10019, 4752, 10021, 10028, 2]
+// Dependencies: [19, 17, 2063, 1074, 21, 4464, 4466, 4756, 576, 504, 2055, 1478, 1397, 10018, 4690, 4457, 10019, 5198, 10020, 4752, 10022, 10029, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 10016 (GuildProfileView)
+// Module 10017 (GuildProfileView)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
@@ -14,10 +14,10 @@ import themes from "themes" /* 4464 */;
 import native from "native" /* 4466 */;
 import useThemeDefault from "useTheme" /* 4690 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 10018 */;
-import GuildProfileHeaderDefault from "GuildProfileHeader" /* 10019 */;
-import GuildProfileGamesDefault from "GuildProfileGames" /* 10021 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 10028 */;
+import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 10019 */;
+import GuildProfileHeaderDefault from "GuildProfileHeader" /* 10020 */;
+import GuildProfileGamesDefault from "GuildProfileGames" /* 10022 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 10029 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2063 */;
 
@@ -37,7 +37,7 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       const obj2 = { id: null, splash: null, size: null };
       ({ id: obj3.id, customBanner: obj3.splash } = guildProfile);
-      obj2.size = tmp3(10017)() * useWindowDimensionsDefault().width;
+      obj2.size = tmp3(10018)() * useWindowDimensionsDefault().width;
       const obj4 = { style: tmp4.imageBanner, source: tmp3(1397).getGuildDiscoverySplashSource(obj2) };
       return closure_8(closure_5, obj4);
     }

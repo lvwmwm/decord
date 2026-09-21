@@ -1,14 +1,14 @@
-// Module ID: 12074
-// Function ID: 12075
+// Module ID: 12076
+// Function ID: 12077
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2041, 2095, 7391, 21, 4756, 576, 7389, 1115, 5186, 9842, 4474, 5817, 5829, 9552, 7221, 4467, 1612, 1478, 5894, 504, 4723, 7390, 6864, 2]
+// Dependencies: [19, 17, 2041, 2095, 7396, 21, 4756, 576, 7394, 1115, 5186, 9843, 4474, 5822, 5834, 9553, 7226, 4467, 1612, 1478, 5899, 504, 4723, 7395, 6869, 2]
 // Exports: default
 
-// Module 12074 (SelectComponentActionSheet)
+// Module 12076 (SelectComponentActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import TableRow from "TableRow" /* 5817 */;
+import TableRow from "TableRow" /* 5822 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
@@ -70,7 +70,7 @@ function SelectionHeader(renderIcon) {
     tmp5Result = tmp5(tmp6(5186).Button, obj3);
   }
   obj.trailing = tmp5Result;
-  const children = [closure_8(renderIcon(7389).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(7394).BottomSheetTitleHeader, obj), ];
   let tmp5Result4 = null;
   if (null != onQueryChange) {
     tmp5Result4 = null;
@@ -104,8 +104,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result4 = tmp5(selectedOptions(9842), obj4);
-      const tmp13 = selectedOptions(9842);
+      tmp5Result4 = tmp5(selectedOptions(9843), obj4);
+      const tmp13 = selectedOptions(9843);
     }
   }
   children[1] = tmp5Result4;
@@ -168,11 +168,11 @@ function SelectionOptionItem(item) {
       selected = false;
     }
     const obj5 = { checked: selected };
-    let tmp6Result2 = tmp6(tmp2(5829).FormCheckbox, obj5);
+    let tmp6Result2 = tmp6(tmp2(5834).FormCheckbox, obj5);
   } else {
     tmp6Result2 = null;
     if (true === selected) {
-      tmp6Result2 = tmp6(tmp2(9552).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result2 = tmp6(tmp2(9553).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result2;
@@ -181,7 +181,7 @@ function SelectionOptionItem(item) {
   return React6(TableRow.TableRow, obj2);
 }
 const View = fn(17).View;
-let closure_7 = fn(7391).ACTION_SHEET_START_HEIGHT_RATIO;
+let closure_7 = fn(7396).ACTION_SHEET_START_HEIGHT_RATIO;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
 const createStyles = fn(4756);

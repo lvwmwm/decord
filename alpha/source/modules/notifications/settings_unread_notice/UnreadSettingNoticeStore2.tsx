@@ -1,15 +1,15 @@
-// Module ID: 11673
-// Function ID: 11674
+// Module ID: 11675
+// Function ID: 11676
 // Name: UnreadSettingNoticeStore2
-// Dependencies: [502, 2041, 2063, 2095, 4937, 1074, 4938, 1084, 1091, 11, 1385, 504, 10403, 573, 2]
+// Dependencies: [502, 2041, 2063, 2095, 4937, 1074, 4938, 1084, 1091, 11, 1385, 504, 10404, 573, 2]
 
-// Module 11673 (UnreadSettingNoticeStore2)
+// Module 11675 (UnreadSettingNoticeStore2)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10403 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildStore from "GuildStore" /* 2063 */;

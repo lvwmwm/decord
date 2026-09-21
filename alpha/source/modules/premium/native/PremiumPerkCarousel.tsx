@@ -1,11 +1,11 @@
-// Module ID: 13713
-// Function ID: 13714
+// Module ID: 13719
+// Function ID: 13720
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 4756, 13660, 4752, 9474, 1177, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 13666, 4752, 9475, 1177, 2]
 // Exports: default
 
-// Module 13713 (PremiumPerkCarousel)
-import PremiumPerkCard from "PremiumPerkCard" /* 13660 */;
+// Module 13719 (PremiumPerkCarousel)
+import PremiumPerkCard from "PremiumPerkCard" /* 13666 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 12982
-// Function ID: 12983
+// Module ID: 12984
+// Function ID: 12985
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 2041, 12970, 1074, 21, 4756, 576, 1484, 7221, 12983, 4656, 1115, 12978, 5904, 4752, 4723, 12984, 1980, 6842, 1177, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2041, 12972, 1074, 21, 4756, 576, 1484, 7226, 12985, 4656, 1115, 12980, 5909, 4752, 4723, 12986, 1980, 6847, 1177, 5186, 2]
 // Exports: default
 
-// Module 12982 (HubEmailConnectionContent)
+// Module 12984 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1484 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import native2 from "native" /* 5904 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12978 */;
+import native2 from "native" /* 5909 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12980 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubConstants = fn(12970);
+const HubConstants = fn(12972);
 ({ HubEmailConnectionSteps: closure_9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
 const MarketingURLs = fn(1074).MarketingURLs;
 const jsxProd = fn(21);
@@ -216,10 +216,10 @@ export default function HubEmailConnectionContent(arg0) {
   const obj4 = { ref, contentContainerStyle: null, children: null };
   const items = [tmp.scrollViewContainer, ];
   const tmp7 = _slicedToArray(noop.useState(null), 2);
-  items[1] = { paddingBottom: invite(7221)().insets.bottom + invite(576).space.PX_16 };
+  items[1] = { paddingBottom: invite(7226)().insets.bottom + invite(576).space.PX_16 };
   obj4.contentContainerStyle = items;
   let obj6 = { style: tmp.container, children: null };
-  let obj5 = { paddingBottom: invite(7221)().insets.bottom + invite(576).space.PX_16 };
+  let obj5 = { paddingBottom: invite(7226)().insets.bottom + invite(576).space.PX_16 };
   const tmp16 = closure_7;
   const items1 = [closure_12(ref, { style: tmp.header, children: closure_12(native2.InkQuillSpotIllustration, { scale: 0.75 }) }), closure_12(Text_Text.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult }), , ];
   let obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
@@ -270,7 +270,7 @@ export default function HubEmailConnectionContent(arg0) {
       }
     }, 100);
   };
-  items1[3] = closure_12(invite(6842), obj11);
+  items1[3] = closure_12(invite(6847), obj11);
   obj6.children = items1;
   const items2 = [closure_13(ref, obj6), closure_12(ref, { style: tmp.growSpacing }), ];
   const obj15 = { style: tmp.buttonContainer, children: null };

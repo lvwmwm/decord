@@ -1,14 +1,14 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15632
+// Function ID: 15633
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 4756, 576, 5819, 4752, 1380, 1115, 3680, 7437, 12232, 5184, 2]
+// Dependencies: [32, 19, 17, 21, 4756, 576, 5824, 4752, 1380, 1115, 3680, 7442, 12234, 5184, 2]
 // Exports: default
 
-// Module 15626 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 15632 (CustomTypingIndicatorAnimationPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
-import Card from "Card" /* 5819 */;
+import Card from "Card" /* 5824 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -77,7 +77,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
   const obj7 = { config: null, size: 54 };
   const obj8 = { emojis, animation, typingSuggestion: onChange(1380).TypingSuggestion.UNSPECIFIED };
   obj7.config = obj8;
-  obj6.children = closure_6(animation(12232), obj7);
+  obj6.children = closure_6(animation(12234), obj7);
   const items1 = [closure_6(View, obj6), ];
   const obj9 = { spacing: 8, children: null };
   const items2 = [items.slice(0, 2), items.slice(2, 4)];
@@ -96,5 +96,5 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
   }, index));
   items1[1] = closure_6(onChange(5184).Stack, obj9);
   obj5.children = items1;
-  return closure_7(onChange(7437).ActionSheet, obj5);
+  return closure_7(onChange(7442).ActionSheet, obj5);
 };

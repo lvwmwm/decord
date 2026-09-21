@@ -1,24 +1,24 @@
-// Module ID: 17927
-// Function ID: 17928
+// Module ID: 17938
+// Function ID: 17939
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 4395, 9855, 1074, 21, 4756, 576, 8921, 9854, 5899, 1115, 2108, 7440, 4466, 5836, 7617, 5897, 15109, 5900, 4752, 8870, 5184, 7280, 1484, 504, 2]
+// Dependencies: [19, 4395, 9856, 1074, 21, 4756, 576, 8922, 9855, 5904, 1115, 2108, 7445, 4466, 5841, 7619, 5902, 15115, 5905, 4752, 8871, 5184, 7285, 1484, 504, 2]
 // Exports: default
 
-// Module 17927 (GuildSettingsModalModeration)
+// Module 17938 (GuildSettingsModalModeration)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import Stack_Stack from "Stack/Stack" /* 5184 */;
-import TableRadioRow from "TableRadioRow" /* 5900 */;
-import NavScrim from "NavScrim" /* 7280 */;
-import HeaderActionButton from "HeaderActionButton" /* 7617 */;
-import Form from "Form" /* 8870 */;
-import useUserIsTeen from "useUserIsTeen" /* 8921 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9854 */;
+import TableRadioRow from "TableRadioRow" /* 5905 */;
+import NavScrim from "NavScrim" /* 7285 */;
+import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import Form from "Form" /* 8871 */;
+import useUserIsTeen from "useUserIsTeen" /* 8922 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4395 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9855 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
 
 require = fn;
 function GuildSettingsOwnerConfiguredContentLevel(guild) {
@@ -50,8 +50,8 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj5.value = DEFAULT2 === tmp6.AGE_RESTRICTED;
     obj5.onValueChange = tmp8;
     obj5.disabled = tmp7;
-    obj2.children = closure_1_10(tmp3(7440).TableSwitchRow, obj5);
-    tmp9 = closure_1_10(tmp3(5899).TableRowGroup, obj2, "filter-section");
+    obj2.children = closure_1_10(tmp3(7445).TableSwitchRow, obj5);
+    tmp9 = closure_1_10(tmp3(5904).TableRowGroup, obj2, "filter-section");
   }
   return tmp9;
 }
@@ -117,7 +117,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     return self.handleVerificationLevelChange(verificationLevel);
   };
   const features = guild.features;
-  const verificationLevelOptions = self(15109).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
+  const verificationLevelOptions = self(15115).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
   obj.children = verificationLevelOptions.map((item) => {
     ({ name, color, value } = item);
     ({ desc, disabled } = item);
@@ -140,7 +140,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     obj.disabled = tmp5;
     return closure_2_10(TableRadioRow.TableRadioRow, obj, "level-" + value);
   });
-  return closure_10(self(5897).TableRadioGroup, obj, "level-section");
+  return closure_10(self(5902).TableRadioGroup, obj, "level-section");
 };
 prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter() {
   const self = this;
@@ -156,7 +156,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
     return self.handleExplicitContentFilterChange(explicitContentFilter);
   };
   const features = guild.features;
-  const contentFilterOptions = self(15109).generateContentFilterOptions(features.has(constants.COMMUNITY));
+  const contentFilterOptions = self(15115).generateContentFilterOptions(features.has(constants.COMMUNITY));
   obj.children = contentFilterOptions.map((value) => {
     value = value.value;
     ({ name, desc, disabled } = value);
@@ -169,7 +169,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
     obj.disabled = tmp2;
     return closure_2_10(TableRadioRow.TableRadioRow, obj, "filter-" + value);
   });
-  return closure_10(self(5897).TableRadioGroup, obj, "filter-section");
+  return closure_10(self(5902).TableRadioGroup, obj, "filter-section");
 };
 prototype["render"] = function render() {
   const props = this.props;

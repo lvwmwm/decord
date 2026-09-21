@@ -1,12 +1,12 @@
-// Module ID: 10078
-// Function ID: 10079
+// Module ID: 10079
+// Function ID: 10080
 // Name: utils/InstantInviteUtils
-// Dependencies: [2041, 2096, 4395, 1074, 1115, 9870, 504, 2]
+// Dependencies: [2041, 2096, 4395, 1074, 1115, 9871, 504, 2]
 // Exports: getInviteChannelId, shouldRenderInvite, useShouldShowInviteInActionBar
 
-// Module 10078 (utils/InstantInviteUtils)
+// Module 10079 (utils/InstantInviteUtils)
 import util from "util" /* 1115 */;
-import canViewInviteModal from "canViewInviteModal" /* 9870 */;
+import canViewInviteModal from "canViewInviteModal" /* 9871 */;
 import ChannelStore from "ChannelStore" /* 2041 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2096 */;
 import PermissionStore from "PermissionStore" /* 4395 */;

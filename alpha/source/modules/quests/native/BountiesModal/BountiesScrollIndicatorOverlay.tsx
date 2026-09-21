@@ -1,10 +1,10 @@
-// Module ID: 15309
-// Function ID: 15310
+// Module ID: 15315
+// Function ID: 15316
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4760, 4756, 576, 4492, 4757, 5198, 15310, 4752, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4760, 4756, 576, 4492, 4757, 5198, 15316, 4752, 1115, 2]
 // Exports: default
 
-// Module 15309 (BountiesScrollIndicatorOverlay)
+// Module 15315 (BountiesScrollIndicatorOverlay)
 import nativeDefault from "native" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
 import timing from "timing" /* 4757 */;

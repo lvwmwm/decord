@@ -1,54 +1,38 @@
 // Module ID: 6995
 // Function ID: 6996
-// Dependencies: [5, 32, 19, 17]
-// Exports: useIsScreenReaderEnabled
+// Dependencies: [17]
+// Exports: applyRelationProp, getTVProps
 
 // Module 6995
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
+import _mod17 from "module_17" /* 17 */;
 
-const noop = fn(19);
-({ useEffect: c2, useState: c3 } = noop);
-const AccessibilityInfo = fn(17).AccessibilityInfo;
+const Platform = _mod17.Platform;
 
-export const useIsScreenReaderEnabled = function useIsScreenReaderEnabled() {
-  const tmp = _slicedToArray(closure_3(false), 2);
-  closure_0 = tmp[1];
-  closure_2(() => {
-    closure_129_0 = closure_0(function*() {
-      closure_1 = tmp3;
-      yield screenReaderEnabled.isScreenReaderEnabled();
-      if (1 === tmp7) {
-        c3 = 0;
-        const _console = console;
-        console.warn("Could not read accessibility info: defaulting to false");
-        c5 = 3;
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw arg1;
-      } else if (arg0 !== 2) {
-        closure_128_0 = arg1;
-        closure_0(closure_128_0);
-        c3 = 0;
-      }
-      return arg1;
-    });
-    (function checkStatus() {
-      const self = this;
-      const apply = closure_0.apply;
-      if (typeof apply === "unknown") {
-        let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-      } else {
-        applyArgumentsResult = apply(self, arguments);
-      }
-      return applyArgumentsResult;
-    })();
-    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
-      closure_0(event);
-    });
-    return () => {
-      closure_0.remove();
-    };
-  }, []);
-  return tmp[0];
+export const getTVProps = function getTVProps(focusable) {
+  if (Platform.isTV) {
+    let flag = focusable.focusable;
+    if (flag == null) {
+      flag = focusable.isTVSelectable;
+    }
+    if (flag == null) {
+      flag = true;
+    }
+    const obj2 = { isTVSelectable: flag };
+    let obj = obj2;
+  } else {
+    obj = {};
+  }
+  return obj;
+};
+export const applyRelationProp = function applyRelationProp(arg0, arg1, arg2) {
+  if (arg2) {
+    const _Array = Array;
+    if (Array.isArray(arg2)) {
+      const items = [];
+      HermesBuiltin.arraySpread(arg2, 0);
+      HermesBuiltin.apply(items, arg0);
+    } else {
+      tmp4(arg2);
+    }
+  }
 };

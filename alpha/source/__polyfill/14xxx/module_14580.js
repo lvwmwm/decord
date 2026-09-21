@@ -1,11 +1,13 @@
 // Module ID: 14580
 // Function ID: 14581
-// Dependencies: [14578]
+// Dependencies: [14581]
 
 // Module 14580
-import _mod14578 from "module_14578" /* 14578 */;
+import _mod14581 from "module_14581" /* 14581 */;
 
-let closure_0 = _mod14578({}.toString);
-let closure_1 = _mod14578("".slice);
 
-export default (arg0) => closure_1(closure_0(arg0), 8, -1);
+export default !_mod14581(() => 7 !== Object.defineProperty({}, 1, {
+  get() {
+    return 7;
+  }
+})[1]);

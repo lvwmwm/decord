@@ -1,13 +1,13 @@
-// Module ID: 5979
-// Function ID: 5980
+// Module ID: 5984
+// Function ID: 5985
 // Name: AppleIllocon
-// Dependencies: [21, 5799, 5980, 2]
+// Dependencies: [21, 5804, 5985, 2]
 // Exports: AppleIllocon
 
-// Module 5979 (AppleIllocon)
+// Module 5984 (AppleIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5799 */;
-import _modDef5980 from "module_5980" /* 5980 */;
+import FastImageDefault from "FastImage" /* 5804 */;
+import _modDef5985 from "module_5985" /* 5985 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const AppleIllocon = function AppleIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5980 };
+  const obj2 = { uri: _modDef5985 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

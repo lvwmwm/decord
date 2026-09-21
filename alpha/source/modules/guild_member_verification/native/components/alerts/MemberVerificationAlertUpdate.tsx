@@ -1,15 +1,15 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7335
+// Function ID: 7336
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 17, 1074, 21, 4756, 5205, 1115, 4451, 7331, 4752, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 5205, 1115, 4451, 7336, 4752, 2]
 // Exports: default
 
-// Module 7330 (MemberVerificationAlertUpdate)
+// Module 7335 (MemberVerificationAlertUpdate)
 import util from "util" /* 1115 */;
 import LinkingDefault from "Linking" /* 4451 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import common_AlertDefault from "common/Alert" /* 5205 */;
-import _modDef7331 from "module_7331" /* 7331 */;
+import _modDef7336 from "module_7336" /* 7336 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -35,7 +35,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
   };
   obj.onCancel = onClose.onClose;
   const tmp2 = common_AlertDefault;
-  const items = [hasOwnProperty(Image, { source: _modDef7331, style: tmp.headerImage }), , ];
+  const items = [hasOwnProperty(Image, { source: _modDef7336, style: tmp.headerImage }), , ];
   const obj3 = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = util.intl;
   obj3.children = intl3.string(util.t.kkjNHU);

@@ -1,9 +1,9 @@
-// Module ID: 5490
-// Function ID: 5491
+// Module ID: 5495
+// Function ID: 5496
 // Name: CallStore
 // Dependencies: [2041, 2095, 4577, 1074, 573, 1271, 12, 504, 2]
 
-// Module 5490 (CallStore)
+// Module 5495 (CallStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

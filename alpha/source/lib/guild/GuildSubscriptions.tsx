@@ -1,16 +1,16 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7526
+// Function ID: 7527
 // Name: GuildSubscriptions
-// Dependencies: [1074, 2066, 7525, 7526, 7527, 2036, 12, 2]
+// Dependencies: [1074, 2066, 7527, 7528, 7529, 2036, 12, 2]
 
-// Module 7524 (GuildSubscriptions)
+// Module 7526 (GuildSubscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1074 */;
 import Timers from "Timers" /* 2036 */;
 import FavoritesUtils from "FavoritesUtils" /* 2066 */;
-import GuildMemberSubscriptionsDefault from "GuildMemberSubscriptions" /* 7525 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7526 */;
-import GuildThreadSubscriptionsDefault from "GuildThreadSubscriptions" /* 7527 */;
+import GuildMemberSubscriptionsDefault from "GuildMemberSubscriptions" /* 7527 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7528 */;
+import GuildThreadSubscriptionsDefault from "GuildThreadSubscriptions" /* 7529 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

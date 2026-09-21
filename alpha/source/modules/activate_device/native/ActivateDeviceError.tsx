@@ -1,15 +1,15 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14154
+// Function ID: 14155
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4756, 9370, 14146, 4752, 1115, 5186, 2]
+// Dependencies: [19, 17, 21, 4756, 9371, 14152, 4752, 1115, 5186, 2]
 // Exports: ActivateDeviceError
 
-// Module 14148 (ActivateDeviceError)
+// Module 14154 (ActivateDeviceError)
 import util from "util" /* 1115 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import _modDef9370 from "module_9370" /* 9370 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14146 */;
+import _modDef9371 from "module_9371" /* 9371 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14152 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ const result = size.fileFinishedImporting("modules/activate_device/native/Activa
 
 export const ActivateDeviceError = function ActivateDeviceError(onRetry) {
   const obj = { children: null };
-  const obj2 = { source: _modDef9370, style: closure_8().image };
+  const obj2 = { source: _modDef9371, style: closure_8().image };
   const items = [hasOwnProperty(React3, obj2), , ];
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: null };
   const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: null };

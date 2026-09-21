@@ -1,10 +1,10 @@
-// Module ID: 12132
-// Function ID: 12133
+// Module ID: 12134
+// Function ID: 12135
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2109, 8701, 8690, 1074, 21, 4756, 576, 4752, 8691, 1115, 504, 3066, 10010, 4451, 9515, 5817, 5186, 12133, 12135, 8700, 8683, 1241, 12136, 5084, 5089, 12138, 7363, 12143, 8689, 2]
+// Dependencies: [19, 17, 2109, 8702, 8691, 1074, 21, 4756, 576, 4752, 8692, 1115, 504, 3066, 10011, 4451, 9516, 5822, 5186, 12135, 12137, 8701, 8684, 1241, 12138, 5084, 5089, 12140, 7368, 12145, 8690, 2]
 // Exports: default
 
-// Module 12132 (ClassificationDetail)
+// Module 12134 (ClassificationDetail)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
@@ -13,12 +13,12 @@ import LinkingDefault from "Linking" /* 4451 */;
 import Text_Text from "Text/Text" /* 4752 */;
 import MetricEvents from "MetricEvents" /* 5089 */;
 import components_Button_Button from "components/Button/Button" /* 5186 */;
-import TableRow from "TableRow" /* 5817 */;
-import SafetyHubModels from "SafetyHubModels" /* 8691 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10010 */;
+import TableRow from "TableRow" /* 5822 */;
+import SafetyHubModels from "SafetyHubModels" /* 8692 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10011 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
-import SafetyHubStore from "SafetyHubStore" /* 8701 */;
+import SafetyHubStore from "SafetyHubStore" /* 8702 */;
 
 require = fn;
 function ClassificationHeader(classificationTypeText) {
@@ -210,7 +210,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj2.style = items;
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: null };
   const tmp2 = TouchableHitBoxDefault;
-  obj3.children = closure_13(policyExplainerLink(9515).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
+  obj3.children = closure_13(policyExplainerLink(9516).ShieldIcon, { size: "sm", color: nativeDefault.colors.TEXT_LINK });
   const items1 = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
@@ -294,7 +294,7 @@ function ClassificationDetailFooter(onClose) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-const SafetyHubConstants = fn(8690);
+const SafetyHubConstants = fn(8691);
 ({ SafetyHubAnalyticsActionSource: closure_9, SafetyHubAnalyticsActions: c10, SafetyHubLinks: closure_11 } = SafetyHubConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
@@ -448,18 +448,18 @@ export default function ConnectedClassificationDetail(classificationId) {
         ({ isDsaEligible: obj2.is_dsa_eligible, violationType: obj2.violation_type } = safetyHubClassification);
         AnalyticsUtilsDefault.track(AnalyticEvents.SAFETY_HUB_ACTION, obj3);
         if (hasItem1) {
-          tmp(12136).openV2(tmp3, onClose);
-          const tmpResult = tmp(12136);
+          tmp(12138).openV2(tmp3, onClose);
+          const tmpResult = tmp(12138);
         } else if (hasItem) {
-          tmp(12136).open(tmp3, onClose);
-          const tmpResult5 = tmp(12136);
+          tmp(12138).open(tmp3, onClose);
+          const tmpResult5 = tmp(12138);
         } else if (isAppealEligible) {
           const obj4 = { name: MetricEvents.MetricEvents.APPEAL_INGESTION_VIEW };
           tmp(5084).increment(obj4);
           const tmpResult6 = tmp(5084);
           const obj5 = { classificationId: tmp3 };
-          tmp(12138).open(obj5);
-          const tmpResult7 = tmp(12138);
+          tmp(12140).open(obj5);
+          const tmpResult7 = tmp(12140);
         } else {
           tmp(4451).openURL(constants.APPEALS_LINK);
           const tmpResult8 = tmp(4451);

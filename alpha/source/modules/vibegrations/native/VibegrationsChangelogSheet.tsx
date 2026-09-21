@@ -1,10 +1,10 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16956
+// Function ID: 16957
 // Name: VibegrationsChangelogSheet
-// Dependencies: [19, 17, 21, 4756, 576, 1612, 16948, 7437, 7389, 1115, 3678, 6864, 4752, 4438, 4348, 2]
+// Dependencies: [19, 17, 21, 4756, 576, 1612, 16955, 7442, 7394, 1115, 3678, 6869, 4752, 4438, 4348, 2]
 // Exports: default
 
-// Module 16949 (VibegrationsChangelogSheet)
+// Module 16956 (VibegrationsChangelogSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef3678 from "module_3678" /* 3678 */;

@@ -1,10 +1,10 @@
-// Module ID: 9550
-// Function ID: 9551
+// Module ID: 9551
+// Function ID: 9552
 // Name: oauth2/Header
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 1397, 1177, 4752, 9551, 1385, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4756, 576, 1397, 1177, 4752, 9552, 1385, 1115, 2]
 // Exports: default
 
-// Module 9550 (oauth2/Header)
+// Module 9551 (oauth2/Header)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
@@ -60,8 +60,8 @@ export default function Header(accountScopes) {
       const tmp9Result = tmp9(1385);
     }
     obj13.verified = hasFlagResult;
-    tmp8Result = tmp8(tmp2(9551), obj13);
-    const tmp2Result2 = tmp2(9551);
+    tmp8Result = tmp8(tmp2(9552), obj13);
+    const tmp2Result2 = tmp2(9552);
   }
   items3[1] = tmp8Result;
   obj11.children = items3;

@@ -1,10 +1,10 @@
-// Module ID: 18128
-// Function ID: 18129
+// Module ID: 18139
+// Function ID: 18140
 // Name: Placeholder
 // Dependencies: [19, 17, 21, 4756, 2]
 // Exports: default
 
-// Module 18128 (Placeholder)
+// Module 18139 (Placeholder)
 import noop from "module_19" /* 19 */;
 
 const ActivityIndicator = fn(17).ActivityIndicator;

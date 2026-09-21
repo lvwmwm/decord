@@ -1,9 +1,9 @@
-// Module ID: 11132
-// Function ID: 11133
+// Module ID: 11133
+// Function ID: 11134
 // Name: GameRelationshipActionCreators
 // Dependencies: [5, 1074, 4656, 5108, 1115, 1271, 4607, 2]
 
-// Module 11132 (GameRelationshipActionCreators)
+// Module 11133 (GameRelationshipActionCreators)
 import util from "util" /* 1115 */;
 import shared from "shared" /* 4607 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4656 */;

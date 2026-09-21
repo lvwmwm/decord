@@ -1,36 +1,39 @@
 // Module ID: 13157
 // Function ID: 13158
-// Dependencies: []
-// Exports: flatten
+// Dependencies: [13077, 13056]
+// Exports: captureFeedback
 
 // Module 13157
+import _mod13056 from "module_13056" /* 13056 */;
+import _mod13077 from "module_13077" /* 13077 */;
 
-export const flatten = function flatten(arr) {
-  const items = [];
-  const item = arr.forEach((arr) => {
-    if (Array.isArray(arr)) {
-      let item = arr.forEach((arr) => {
-        if (Array.isArray(arr)) {
-          let item = arr.forEach((arr) => {
-            if (Array.isArray(arr)) {
-              let item = arr.forEach((arr) => {
-                if (Array.isArray(arr)) {
-                  let item = arr.forEach(() => { ... });
-                } else {
-                  closure_1_0.push(arr);
-                }
-              });
-            } else {
-              closure_1_0.push(arr);
-            }
-          });
-        } else {
-          closure_1_0.push(arr);
-        }
-      });
-    } else {
-      closure_1_0.push(arr);
-    }
-  });
-  return items;
+require = arg1;
+const dependencyMap = arg6;
+
+export const captureFeedback = function captureFeedback(arg0) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  let currentScope = arg2;
+  if (arg2 === undefined) {
+    currentScope = _mod13077.getCurrentScope();
+  }
+  const obj2 = { contexts: null, type: "feedback", level: "info", tags: null };
+  const obj4 = { feedback: _mod13056.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
+  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
+  obj2.contexts = obj4;
+  obj2.tags = tags;
+  let client = currentScope;
+  if (currentScope) {
+    client = currentScope.getClient();
+  }
+  if (!client) {
+    client = _mod13077.getClient();
+    const tmp3Result = _mod13077;
+  }
+  if (client) {
+    client.emit("beforeSendFeedback", obj2, obj);
+  }
+  return currentScope.captureEvent(obj2, obj);
 };

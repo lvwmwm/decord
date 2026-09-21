@@ -1,13 +1,13 @@
-// Module ID: 11119
-// Function ID: 11120
+// Module ID: 11120
+// Function ID: 11121
 // Name: PremiumGiftCustomMessage
-// Dependencies: [19, 17, 1374, 21, 4756, 576, 1115, 7325, 10958, 2]
+// Dependencies: [19, 17, 1374, 21, 4756, 576, 1115, 7330, 10959, 2]
 
-// Module 11119 (PremiumGiftCustomMessage)
+// Module 11120 (PremiumGiftCustomMessage)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import TextArea from "TextArea" /* 7325 */;
-import NativeGiftContext from "NativeGiftContext" /* 10958 */;
+import TextArea from "TextArea" /* 7330 */;
+import NativeGiftContext from "NativeGiftContext" /* 10959 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

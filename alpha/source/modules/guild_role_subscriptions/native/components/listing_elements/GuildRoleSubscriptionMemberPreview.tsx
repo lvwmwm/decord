@@ -1,10 +1,10 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15508
+// Function ID: 15509
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 1115, 504, 4908, 1397, 7427, 5799, 4752, 1092, 1177, 7445, 2]
+// Dependencies: [19, 17, 1372, 21, 4756, 576, 1115, 504, 4908, 1397, 7432, 5804, 4752, 1092, 1177, 7450, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 15502 (GuildRoleSubscriptionMemberPreview)
+// Module 15508 (GuildRoleSubscriptionMemberPreview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1092 */;
@@ -48,17 +48,17 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
     }
     const source = tmp6(1397).makeSource(avatarURL);
     const tmp6Result = tmp6(1397);
-    const roleIconData = tmp4(7427).getRoleIconData(role, 16);
+    const roleIconData = tmp4(7432).getRoleIconData(role, 16);
     const obj2 = { style: null, children: null };
     const items1 = [tmp3.container, style];
     obj2.style = items1;
     const obj3 = { style: tmp3.avatar, source };
-    const items2 = [timestampProducer(tmp6(5799), obj3), ];
+    const items2 = [timestampProducer(tmp6(5804), obj3), ];
     const obj4 = { style: tmp3.content, children: null };
     const obj5 = { style: tmp3.contextRow, children: null };
     const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: null, children: null };
     const obj7 = { color: null };
-    const tmp4Result = tmp4(7427);
+    const tmp4Result = tmp4(7432);
     obj7.color = utils_ColorUtilsAll.int2hex(role.color);
     obj6.style = obj7;
     obj6.children = tmp8;
@@ -69,7 +69,7 @@ export const GuildRoleSubscriptionMemberPreview = function GuildRoleSubscription
       const items4 = [tmp14(tmp4(1177).Spacer, { size: 4 }), ];
       const obj9 = { name: role.name, src: null, unicodeEmoji: null, size: 16 };
       ({ customIconSrc: obj13.src, unicodeEmoji: obj13.unicodeEmoji } = roleIconData);
-      items4[1] = tmp14(tmp6(7445), obj9);
+      items4[1] = tmp14(tmp6(7450), obj9);
       obj8.children = items4;
       tmp12Result = tmp12(React5, obj8);
     }

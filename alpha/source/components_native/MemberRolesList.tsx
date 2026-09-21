@@ -1,11 +1,11 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12114
+// Function ID: 12115
 // Name: MemberRolesList
-// Dependencies: [19, 17, 2099, 21, 4756, 504, 11211, 2]
+// Dependencies: [19, 17, 2099, 21, 4756, 504, 11212, 2]
 // Exports: default
 
-// Module 12112 (MemberRolesList)
-import RolePillDefault from "RolePill" /* 11211 */;
+// Module 12114 (MemberRolesList)
+import RolePillDefault from "RolePill" /* 11212 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
 

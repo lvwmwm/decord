@@ -1,8 +1,8 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6663
+// Function ID: 6664
 // Dependencies: [2]
 
-// Module 6658
+// Module 6663
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconBoomBGoneExample-2x.png.js");
