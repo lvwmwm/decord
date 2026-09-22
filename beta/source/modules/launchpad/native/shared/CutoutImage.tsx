@@ -1,9 +1,9 @@
-// Module ID: 17676
-// Function ID: 17677
+// Module ID: 17677
+// Function ID: 17678
 // Name: CutoutImage
 // Dependencies: [32, 19, 17, 21, 1259, 8733, 13327, 2]
 
-// Module 17676 (CutoutImage)
+// Module 17677 (CutoutImage)
 import v1 from "v1" /* 1259 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

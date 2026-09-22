@@ -1,9 +1,9 @@
-// Module ID: 16799
-// Function ID: 16800
+// Module ID: 16800
+// Function ID: 16801
 // Name: ICYMICustomScoresGuildScreen
-// Dependencies: [32, 19, 17, 7772, 2045, 2067, 4939, 8611, 21, 4758, 580, 504, 4911, 8626, 1119, 4725, 16800, 1984, 5241, 5822, 1181, 11540, 4754, 558, 568, 7775, 1616, 16801, 11408, 8995, 2]
+// Dependencies: [32, 19, 17, 7772, 2045, 2067, 4939, 8611, 21, 4758, 580, 504, 4911, 8626, 1119, 4725, 16801, 1984, 5241, 5822, 1181, 11540, 4754, 558, 568, 7775, 1616, 16802, 11408, 8995, 2]
 
-// Module 16799 (ICYMICustomScoresGuildScreen)
+// Module 16800 (ICYMICustomScoresGuildScreen)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 4754 */;
 import ChannelListState from "ChannelListState" /* 7775 */;
 import ICYMIUtils from "ICYMIUtils" /* 8626 */;
 import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11408 */;
-import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 16801 */;
+import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 16802 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelListStore from "ChannelListStore" /* 7772 */;

@@ -1,9 +1,9 @@
-// Module ID: 18160
-// Function ID: 18161
+// Module ID: 18161
+// Function ID: 18162
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 15464, 21, 4758, 580, 4610, 558, 568, 4693, 4754, 1119, 5802, 18161, 18162, 18163, 18164, 18165, 18166, 18167, 18168, 2]
+// Dependencies: [19, 17, 15464, 21, 4758, 580, 4610, 558, 568, 4693, 4754, 1119, 5802, 18162, 18163, 18164, 18165, 18166, 18167, 18168, 18169, 2]
 
-// Module 18160 (CreatorBenefitsSection)
+// Module 18161 (CreatorBenefitsSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -11,12 +11,12 @@ import shared from "shared" /* 4610 */;
 import useThemeDefault from "useTheme" /* 4693 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import FastImageDefault from "FastImage" /* 5802 */;
-import _modDef18161 from "module_18161" /* 18161 */;
-import _modDef18164 from "module_18164" /* 18164 */;
+import _modDef18162 from "module_18162" /* 18162 */;
 import _modDef18165 from "module_18165" /* 18165 */;
 import _modDef18166 from "module_18166" /* 18166 */;
 import _modDef18167 from "module_18167" /* 18167 */;
 import _modDef18168 from "module_18168" /* 18168 */;
+import _modDef18169 from "module_18169" /* 18169 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -108,7 +108,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       tmp23 = cResult[20];
                     }
                     if (cResult[21] !== tmp6.earningMetricsAvatar) {
-                      const obj5 = { style: tmp6.earningMetricsAvatar, source: tmp4(18161) };
+                      const obj5 = { style: tmp6.earningMetricsAvatar, source: tmp4(18162) };
                       const tmp31 = hasOwnProperty(tmp4(5802), obj5);
                       cResult[21] = tmp6.earningMetricsAvatar;
                       cResult[22] = tmp31;
@@ -209,7 +209,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items3 = [timestampProducer(View, obj5), ];
   const obj7 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp7Result2 = shared;
-  obj7.source = _modDef18161;
+  obj7.source = _modDef18162;
   items3[1] = hasOwnProperty(FastImageDefault, obj7);
   obj3.children = items3;
   obj2.children = timestampProducer(View, obj3);
@@ -249,9 +249,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let tmp16 = cResult[6];
     }
     if (tmpResult.isThemeDark(tmp5)) {
-      let tmp4Result = tmp4(18162);
+      let tmp4Result = tmp4(18163);
     } else {
-      tmp4Result = tmp4(18163);
+      tmp4Result = tmp4(18164);
     }
     if (cResult[7] !== tmp4Result) {
       const obj3 = { avatarSource: tmp4Result };
@@ -264,9 +264,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { avatarSource: tmp4(18164) };
+      const obj4 = { avatarSource: tmp4(18165) };
       const tmp26 = hasOwnProperty(closure_12, obj4);
-      const obj5 = { avatarSource: tmp4(18165) };
+      const obj5 = { avatarSource: tmp4(18166) };
       const tmp27 = hasOwnProperty(closure_12, obj5);
       cResult[9] = tmp26;
       cResult[10] = tmp27;
@@ -327,15 +327,15 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj3.style = items1;
   const tmp3 = useThemeDefault();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(18162);
+    let tmpResult = tmp(18163);
   } else {
-    tmpResult = tmp(18163);
+    tmpResult = tmp(18164);
   }
   const items2 = [hasOwnProperty(closure_12, { avatarSource: tmpResult }), , ];
   obj4 = shared;
-  items2[1] = hasOwnProperty(closure_12, { avatarSource: _modDef18164 });
-  const obj5 = { avatarSource: _modDef18164 };
-  items2[2] = hasOwnProperty(closure_12, { avatarSource: _modDef18165 });
+  items2[1] = hasOwnProperty(closure_12, { avatarSource: _modDef18165 });
+  const obj5 = { avatarSource: _modDef18165 };
+  items2[2] = hasOwnProperty(closure_12, { avatarSource: _modDef18166 });
   obj3.children = items2;
   items[2] = timestampProducer(View, obj3);
   obj.children = items;
@@ -364,7 +364,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[2];
   }
   if (cResult[3] !== tmp4.socialIllo) {
-    const obj3 = { style: tmp4.socialIllo, source: _modDef18166 };
+    const obj3 = { style: tmp4.socialIllo, source: _modDef18167 };
     const tmp14 = hasOwnProperty(FastImageDefault, obj3);
     cResult[3] = tmp4.socialIllo;
     cResult[4] = tmp14;
@@ -373,7 +373,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[4];
   }
   if (cResult[5] !== tmp4.lanyardIllo) {
-    const obj4 = { style: tmp4.lanyardIllo, source: _modDef18167 };
+    const obj4 = { style: tmp4.lanyardIllo, source: _modDef18168 };
     const tmp19 = hasOwnProperty(FastImageDefault, obj4);
     cResult[5] = tmp4.lanyardIllo;
     cResult[6] = tmp19;
@@ -408,10 +408,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl = util.intl;
   obj2.children = intl.string(util.t.qsKRUQ);
   const items = [hasOwnProperty(Text_Text.Text, obj2), , ];
-  const obj3 = { style: tmp.socialIllo, source: _modDef18166 };
+  const obj3 = { style: tmp.socialIllo, source: _modDef18167 };
   items[1] = hasOwnProperty(FastImageDefault, obj3);
   const obj4 = { style: tmp.lanyardIllo, source: null };
-  obj4.source = _modDef18167;
+  obj4.source = _modDef18168;
   items[2] = hasOwnProperty(FastImageDefault, obj4);
   obj.children = items;
   return timestampProducer(View, obj);
@@ -450,7 +450,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp19 = cResult[11];
           }
           if (cResult[12] !== tmp6.revenueShareIllo) {
-            const obj3 = { style: tmp6.revenueShareIllo, source: tmp4(18168) };
+            const obj3 = { style: tmp6.revenueShareIllo, source: tmp4(18169) };
             const tmp25 = hasOwnProperty(tmp4(5802), obj3);
             cResult[12] = tmp6.revenueShareIllo;
             cResult[13] = tmp25;
@@ -523,7 +523,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj4.children = intl.string(util.t.AewsXD);
   items2[1] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: tmp4.revenueShareIllo, source: null };
-  obj5.source = _modDef18168;
+  obj5.source = _modDef18169;
   items2[2] = hasOwnProperty(FastImageDefault, obj5);
   obj.children = items2;
   return tmp5(tmp6, obj);

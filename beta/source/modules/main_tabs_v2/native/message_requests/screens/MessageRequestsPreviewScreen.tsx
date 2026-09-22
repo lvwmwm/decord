@@ -1,15 +1,15 @@
-// Module ID: 17366
-// Function ID: 17367
+// Module ID: 17367
+// Function ID: 17368
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 4773, 1078, 21, 558, 568, 12589, 10196, 17367, 10331, 12945, 2]
+// Dependencies: [19, 4773, 1078, 21, 558, 568, 12589, 10196, 17368, 10331, 12945, 2]
 
-// Module 17366 (MessageRequestsPreviewScreen)
+// Module 17367 (MessageRequestsPreviewScreen)
 import MessageManagerDefault from "MessageManager" /* 10196 */;
 import noop from "module_19" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 4773 */;
 
 const ChatViewDefault = tmp11(10331);
-const RestrictedMessageRequestPreviewDefault = tmp11(17367);
+const RestrictedMessageRequestPreviewDefault = tmp11(17368);
 const require = fn;
 const ME = fn(1078).ME;
 const jsx = fn(21).jsx;
@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const obj2 = { guildId: ME, channelId, children: null };
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    let tmp5Result = tmp5(tmp7(17367), obj3);
+    let tmp5Result = tmp5(tmp7(17368), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     tmp5Result = tmp5(tmp7(10331), obj4);

@@ -1,9 +1,9 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17396
+// Function ID: 17397
 // Name: SoundPlayer
 // Dependencies: [19, 2044, 9311, 4775, 9307, 2049, 4780, 502, 2045, 2067, 1996, 12948, 4781, 2099, 5638, 4777, 4782, 1078, 9312, 21, 558, 568, 504, 10137, 4905, 4810, 4389, 1374, 5276, 2]
 
-// Module 17395 (SoundPlayer)
+// Module 17396 (SoundPlayer)
 import c from "c" /* 568 */;
 import SoundUtils from "SoundUtils" /* 10137 */;
 import noop from "module_19" /* 19 */;

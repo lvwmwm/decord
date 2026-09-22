@@ -1,9 +1,9 @@
-// Module ID: 17537
-// Function ID: 17538
+// Module ID: 17538
+// Function ID: 17539
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 17538, 4775, 17539, 9883, 2045, 4776, 1078, 21, 558, 17541, 568, 17488, 9882, 10040, 10020, 565, 10038, 10019, 17545, 1368, 9912, 9884, 1119, 9909, 9911, 17546, 10021, 4579, 2031, 5804, 17468, 14405, 2]
+// Dependencies: [109, 19, 17, 17539, 4775, 17540, 9883, 2045, 4776, 1078, 21, 558, 17542, 568, 17489, 9882, 10040, 10020, 565, 10038, 10019, 17546, 1368, 9912, 9884, 1119, 9909, 9911, 17547, 10021, 4579, 2031, 5804, 17469, 14405, 2]
 
-// Module 17537 (VoicePanelHeaderSpeaker)
+// Module 17538 (VoicePanelHeaderSpeaker)
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4579 */;
@@ -11,12 +11,12 @@ import NativeViewDefault from "NativeView" /* 5804 */;
 import showAudioOutputSelector from "showAudioOutputSelector" /* 9912 */;
 import useOnConnectToConsole from "useOnConnectToConsole" /* 10021 */;
 import getConsoleIconDefault from "getConsoleIcon" /* 10038 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17468 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17541 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17469 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17542 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4775 */;
-import StageChannelAudioStore from "StageChannelAudioStore" /* 17539 */;
+import StageChannelAudioStore from "StageChannelAudioStore" /* 17540 */;
 import AudioRouteStore from "AudioRouteStore" /* 9883 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import SessionsStore from "SessionsStore" /* 4776 */;
@@ -25,7 +25,7 @@ require = fn;
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 const NativeModules = fn(17).NativeModules;
-const setVoiceUpsellDismissed = fn(17538).setVoiceUpsellDismissed;
+const setVoiceUpsellDismissed = fn(17539).setVoiceUpsellDismissed;
 const PlatformTypes = fn(1078).PlatformTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = jsxProd);
@@ -374,7 +374,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
           function renderButton(arg0) {
             let tmp = arg0;
             if (arg0 == null) {
-              const obj = { onPress, ref: "Array" };
+              const obj = { onPress, ref: "a" };
               tmp = obj;
             }
             const obj2 = { targetRef: ref, canShowTooltip: null };
@@ -672,7 +672,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isConn
     function renderButton(arg0) {
       let tmp = arg0;
       if (arg0 == null) {
-        const obj = { onPress, ref: "Array" };
+        const obj = { onPress, ref: "a" };
         tmp = obj;
       }
       const obj2 = { targetRef: ref, canShowTooltip: null };

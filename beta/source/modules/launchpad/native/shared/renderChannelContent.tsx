@@ -1,18 +1,18 @@
-// Module ID: 17139
-// Function ID: 17140
+// Module ID: 17140
+// Function ID: 17141
 // Name: renderChannelContent
-// Dependencies: [19, 17, 12213, 4940, 21, 4758, 1368, 558, 568, 17136, 5279, 17140, 4754, 5315, 8871, 16469, 2]
+// Dependencies: [19, 17, 12213, 4940, 21, 4758, 1368, 558, 568, 17137, 5279, 17141, 4754, 5315, 8871, 16469, 2]
 // Exports: default
 
-// Module 17139 (renderChannelContent)
+// Module 17140 (renderChannelContent)
 import c from "c" /* 568 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 5279 */;
 import LockIcon from "LockIcon" /* 5315 */;
 import WarningIcon from "WarningIcon" /* 8871 */;
 import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16469 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
-import ChannelTitleDefault from "ChannelTitle" /* 17140 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import ChannelTitleDefault from "ChannelTitle" /* 17141 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

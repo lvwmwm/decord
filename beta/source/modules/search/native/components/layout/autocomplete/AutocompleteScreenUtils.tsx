@@ -1,10 +1,10 @@
-// Module ID: 17203
-// Function ID: 17204
+// Module ID: 17204
+// Function ID: 17205
 // Name: AutocompleteScreenUtils
-// Dependencies: [2109, 4409, 1376, 12487, 8127, 1078, 1119, 11814, 4700, 9541, 10934, 10936, 11733, 5307, 12691, 12696, 11954, 9545, 17204, 12488, 4603, 2]
+// Dependencies: [2109, 4409, 1376, 12487, 8127, 1078, 1119, 11814, 4700, 9541, 10934, 10936, 11733, 5307, 12691, 12696, 11954, 9545, 17205, 12488, 4603, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 17203 (AutocompleteScreenUtils)
+// Module 17204 (AutocompleteScreenUtils)
 import util from "util" /* 1119 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
 import ForwardingIconDefault from "ForwardingIcon" /* 11814 */;
@@ -93,7 +93,7 @@ export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeI
     } else {
       const intl2 = tmp(1119).intl;
       if (intl2.string(tmp(1119).t.WjkIKU) === text) {
-        return tmp(17204).WebhookIcon;
+        return tmp(17205).WebhookIcon;
       }
     }
   }

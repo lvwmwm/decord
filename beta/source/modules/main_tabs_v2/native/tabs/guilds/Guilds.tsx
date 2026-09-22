@@ -1,7 +1,7 @@
 // Module ID: 16353
 // Function ID: 16354
 // Name: guilds/Guilds
-// Dependencies: [19, 11383, 21, 558, 568, 16354, 4612, 11608, 15355, 16355, 16704, 15439, 4471, 2]
+// Dependencies: [19, 11383, 21, 558, 568, 16354, 4612, 11608, 15355, 16355, 16705, 15439, 4471, 2]
 
 // Module 16353 (guilds/Guilds)
 import c from "c" /* 568 */;
@@ -11,7 +11,7 @@ import QuestsEligibility from "QuestsEligibility" /* 11608 */;
 import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 15355 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16354 */;
 import MainChannelsDefault from "MainChannels" /* 16355 */;
-import YouBarDefault from "YouBar" /* 16704 */;
+import YouBarDefault from "YouBar" /* 16705 */;
 import noop from "module_19" /* 19 */;
 
 const QuestDockDefault = tmp3(15439);
@@ -36,7 +36,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [React4(tmp5(16355), {}), React4(tmp5(16704), {}), ];
+    const items = [React4(tmp5(16355), {}), React4(tmp5(16705), {}), ];
     if (first) {
       first = tmp11(tmp5(15439), {});
     }

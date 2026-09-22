@@ -1,9 +1,9 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 17198
+// Function ID: 17199
 // Name: SearchTabsGradient
 // Dependencies: [19, 21, 558, 568, 4462, 580, 4608, 12906, 2]
 
-// Module 17197 (SearchTabsGradient)
+// Module 17198 (SearchTabsGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;

@@ -1,15 +1,15 @@
-// Module ID: 17628
-// Function ID: 17629
+// Module ID: 17629
+// Function ID: 17630
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4758, 580, 558, 568, 17607, 17593, 5804, 11408, 13839, 17608, 2]
+// Dependencies: [19, 21, 4758, 580, 558, 568, 17608, 17594, 5804, 11408, 13839, 17609, 2]
 
-// Module 17628 (VoicePanelDrawerToggleButton)
+// Module 17629 (VoicePanelDrawerToggleButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import NativeViewDefault from "NativeView" /* 5804 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17593 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17607 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17608 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17594 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17608 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17609 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -67,7 +67,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
           const element = { onPress: handlePress, props, accessibilityLabel, children: null };
           const items = [tmp9, tmp15];
           element.children = items;
-          const tmp20 = React4(tmp6(17608), element);
+          const tmp20 = React4(tmp6(17609), element);
           cResult[11] = accessibilityLabel;
           cResult[12] = handlePress;
           cResult[13] = props;

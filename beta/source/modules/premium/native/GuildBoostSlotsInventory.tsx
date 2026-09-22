@@ -843,7 +843,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                             class L {
                               constructor(arg0, arg1) {
                                 obj = { guild: closure_2, guildBoostSlot: guildId, isLast: arg1 === guildBoostSlots.length - 1 };
-                                return jsx(f64212, obj, guildId.id);
+                                return jsx(f64213, obj, guildId.id);
                               }
                             }
                             const tmp44 = closure_11(closure_5, { children: null });
@@ -865,7 +865,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                           class L {
                             constructor(arg0, arg1) {
                               obj = { guild: closure_2, guildBoostSlot: guildId, isLast: arg1 === guildBoostSlots.length - 1 };
-                              return jsx(f64212, obj, guildId.id);
+                              return jsx(f64213, obj, guildId.id);
                             }
                           }
                           const obj3 = { style: tmp4.boostedGuild, children: null };
@@ -887,7 +887,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         class L {
                           constructor(arg0, arg1) {
                             obj = { guild: closure_2, guildBoostSlot: guildId, isLast: arg1 === guildBoostSlots.length - 1 };
-                            return jsx(f64212, obj, guildId.id);
+                            return jsx(f64213, obj, guildId.id);
                           }
                         }
                         cResult[32] = guildBoostSlots;
@@ -896,7 +896,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                       class L {
                         constructor(arg0, arg1) {
                           obj = { guild: closure_2, guildBoostSlot: guildId, isLast: arg1 === guildBoostSlots.length - 1 };
-                          return jsx(f64212, obj, guildId.id);
+                          return jsx(f64213, obj, guildId.id);
                         }
                       }
                       cResult[34] = stateFromStores;

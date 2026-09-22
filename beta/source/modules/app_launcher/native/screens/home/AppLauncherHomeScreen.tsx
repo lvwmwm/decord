@@ -1121,7 +1121,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                         items[1] = obj1;
                         obj.style = items;
                         obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
-                        obj.children = jsx(f59410, obj4);
+                        obj.children = jsx(f59411, obj4);
                         return jsx(View, obj, "" + context.application.id + "-" + arg1);
                       }
                     }
@@ -1156,7 +1156,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                     items[1] = obj1;
                     obj.style = items;
                     obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
-                    obj.children = jsx(f59410, obj4);
+                    obj.children = jsx(f59411, obj4);
                     return jsx(View, obj, "" + context.application.id + "-" + arg1);
                   }
                 }
@@ -1182,7 +1182,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
           items[1] = obj1;
           obj.style = items;
           obj4 = { context, sectionName, onPress, item: context, entrypoint, imageWidth: closure_5.width, imageHeight: closure_5.height };
-          obj.children = jsx(f59410, obj4);
+          obj.children = jsx(f59411, obj4);
           return jsx(View, obj, "" + context.application.id + "-" + arg1);
         }
       }

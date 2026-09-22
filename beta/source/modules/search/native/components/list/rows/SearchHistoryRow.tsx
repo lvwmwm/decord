@@ -1,9 +1,9 @@
-// Module ID: 17127
-// Function ID: 17128
+// Module ID: 17128
+// Function ID: 17129
 // Name: SearchHistoryRow
-// Dependencies: [109, 5, 19, 17, 2045, 4773, 1376, 8127, 21, 4758, 580, 558, 568, 12509, 5846, 5341, 17115, 12506, 4754, 7298, 17125, 565, 17126, 8455, 4771, 17124, 17128, 17141, 1119, 2]
+// Dependencies: [109, 5, 19, 17, 2045, 4773, 1376, 8127, 21, 4758, 580, 558, 568, 12509, 5846, 5341, 17116, 12506, 4754, 7298, 17126, 565, 17127, 8455, 4771, 17125, 17129, 17142, 1119, 2]
 
-// Module 17127 (SearchHistoryRow)
+// Module 17128 (SearchHistoryRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -100,7 +100,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
     tmp5 = cResult[1];
   }
   let obj = searchContext(568);
-  const onPressSearchHistoryText = searchContext(17115).useOnPressSearchHistoryText(tmp5);
+  const onPressSearchHistoryText = searchContext(17116).useOnPressSearchHistoryText(tmp5);
   if (cResult[2] === onPressSearchHistoryText) {
     if (cResult[3] === searchContext) {
       if (cResult[4] === searchHistoryItem.tags) {
@@ -155,7 +155,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
                       }
                     }
                     const obj4 = { label: tmp14, onPress: tmp7, trailing: tmp18, iconContainerStyle: tmp4.textIconContainer, icon: tmp26 };
-                    const tmp32 = closure_12(tmp(17125).SearchListRow, obj4);
+                    const tmp32 = closure_12(tmp(17126).SearchListRow, obj4);
                     cResult[24] = tmp7;
                     cResult[25] = tmp4.textIconContainer;
                     cResult[26] = tmp14;
@@ -221,7 +221,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_14();
   dependencyMap = tmp;
-  const onPressSearchHistoryText = searchContext(17115).useOnPressSearchHistoryText({ searchContext });
+  const onPressSearchHistoryText = searchContext(17116).useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
   const callback = noop.useCallback(() => {
@@ -244,10 +244,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   obj3.onPress = callback;
   obj3.trailing = closure_12(closure_15, { searchContext, searchHistoryItem });
   obj3.iconContainerStyle = tmp.textIconContainer;
-  let obj = searchContext(17115);
+  let obj = searchContext(17116);
   const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
   obj3.icon = closure_12(View, { style: tmp.iconContainer, children: closure_12(searchContext(7298).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return closure_12(searchContext(17125).SearchListRow, obj3);
+  return closure_12(searchContext(17126).SearchListRow, obj3);
 });
 ReactCompilerGating = fn(558);
 let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {

@@ -1,9 +1,9 @@
-// Module ID: 17066
-// Function ID: 17067
+// Module ID: 17067
+// Function ID: 17068
 // Name: VibegrationsDebugStore
 // Dependencies: [504, 5277, 577, 2]
 
-// Module 17066 (VibegrationsDebugStore)
+// Module 17067 (VibegrationsDebugStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;

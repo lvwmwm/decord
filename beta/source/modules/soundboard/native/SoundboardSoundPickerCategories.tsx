@@ -1,9 +1,9 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17526
+// Function ID: 17527
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 17507, 1376, 1078, 21, 4758, 580, 558, 568, 5234, 5799, 1119, 10683, 4720, 17523, 8989, 1181, 5315, 5341, 4726, 4727, 4418, 504, 10220, 1616, 6891, 8519, 4632, 2]
+// Dependencies: [19, 17, 17508, 1376, 1078, 21, 4758, 580, 558, 568, 5234, 5799, 1119, 10683, 4720, 17524, 8989, 1181, 5315, 5341, 4726, 4727, 4418, 504, 10220, 1616, 6891, 8519, 4632, 2]
 
-// Module 17525 (SoundboardSoundPickerCategories)
+// Module 17526 (SoundboardSoundPickerCategories)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import HapticUtils from "HapticUtils" /* 4726 */;
@@ -13,7 +13,7 @@ import Pressables from "Pressables" /* 5341 */;
 import GuildIconDefault from "GuildIcon" /* 5799 */;
 import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10220 */;
 import _modDef10683 from "module_10683" /* 10683 */;
-import _modDef17523 from "module_17523" /* 17523 */;
+import _modDef17524 from "module_17524" /* 17524 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -24,7 +24,7 @@ function getItemLayout(arg0, index) {
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 ({ View: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const setSearchQuery = fn(17507).setSearchQuery;
+const setSearchQuery = fn(17508).setSearchQuery;
 const Constants = fn(1078);
 ({ CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT: closure_9, NODE_SIZE, NODE_MARGIN } = Constants);
 const jsxProd = fn(21);
@@ -108,7 +108,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       } else {
         tmp20 = cResult[7];
       }
-      tmp12 = _modDef17523;
+      tmp12 = _modDef17524;
       tmp11 = null;
       tmp14 = tmp20;
       tmp13 = null;
@@ -122,7 +122,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
       } else {
         tmp16 = cResult[8];
       }
-      tmp12 = _modDef17523;
+      tmp12 = _modDef17524;
       tmp11 = null;
       tmp14 = tmp16;
       tmp13 = null;
@@ -283,13 +283,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   } else if (tmp2(5234).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl2 = tmp2(1119).intl;
     name = intl2.string(tmp2(1119).t.Rtvk9X);
-    tmp6 = _modDef17523;
+    tmp6 = _modDef17524;
     tmp7 = null;
     tmp14Result = null;
   } else if (tmp2(5234).SoundboardSoundGridSectionType.SEARCH === type) {
     const intl = tmp2(1119).intl;
     name = intl.string(tmp2(1119).t.sKt3xS);
-    tmp6 = _modDef17523;
+    tmp6 = _modDef17524;
     tmp7 = null;
     tmp14Result = null;
   } else {

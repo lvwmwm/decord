@@ -1,9 +1,9 @@
-// Module ID: 17273
-// Function ID: 17274
+// Module ID: 17274
+// Function ID: 17275
 // Name: BadgeCustomizationProfileCoachmark
 // Dependencies: [19, 1376, 2042, 558, 568, 4418, 504, 1119, 4471, 10452, 2]
 
-// Module 17273 (BadgeCustomizationProfileCoachmark)
+// Module 17274 (BadgeCustomizationProfileCoachmark)
 import util from "util" /* 1119 */;
 import native from "native" /* 4471 */;
 import noop from "module_19" /* 19 */;

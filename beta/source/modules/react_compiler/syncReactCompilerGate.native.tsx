@@ -1,13 +1,13 @@
-// Module ID: 18381
-// Function ID: 18382
+// Module ID: 18382
+// Function ID: 18383
 // Name: syncReactCompilerGate
-// Dependencies: [32, 1239, 18382, 1439, 559, 558, 2]
+// Dependencies: [32, 1239, 18383, 1439, 559, 558, 2]
 // Exports: persistReactCompilerGate
 
-// Module 18381 (syncReactCompilerGate)
+// Module 18382 (syncReactCompilerGate)
 import NativeStartupFlagsModuleDefault from "NativeStartupFlagsModule" /* 559 */;
 import apex_ApexExperiment from "apex/ApexExperiment" /* 1439 */;
-import ReactCompilerExperiment2 from "ReactCompilerExperiment" /* 18382 */;
+import ReactCompilerExperiment2 from "ReactCompilerExperiment" /* 18383 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;
 
@@ -62,7 +62,7 @@ export const persistReactCompilerGate = function persistReactCompilerGate() {
         const tmp3Result2 = tmp3(558);
       }
       if (isReactCompilerBuildResult) {
-        const ReactCompilerExperiment = tmp3(18382).ReactCompilerExperiment;
+        const ReactCompilerExperiment = tmp3(18383).ReactCompilerExperiment;
         const config = ReactCompilerExperiment.getConfig({ location: "persistReactCompilerGate" });
       }
       const tmp3Result = tmp3(558);

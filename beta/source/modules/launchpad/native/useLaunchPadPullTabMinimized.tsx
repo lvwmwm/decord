@@ -1,9 +1,9 @@
-// Module ID: 17670
-// Function ID: 17671
+// Module ID: 17671
+// Function ID: 17672
 // Name: useLaunchPadPullTabMinimized
 // Dependencies: [19, 17, 558, 568, 4497, 10183, 2]
 
-// Module 17670 (useLaunchPadPullTabMinimized)
+// Module 17671 (useLaunchPadPullTabMinimized)
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import VoicePanelUtils from "VoicePanelUtils" /* 10183 */;
 import noop from "module_19" /* 19 */;

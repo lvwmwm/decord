@@ -1,9 +1,9 @@
-// Module ID: 17353
-// Function ID: 17354
+// Module ID: 17354
+// Function ID: 17355
 // Name: useSortedMessageRequests
-// Dependencies: [19, 2045, 1376, 7466, 558, 568, 504, 17354, 2]
+// Dependencies: [19, 2045, 1376, 7466, 558, 568, 504, 17355, 2]
 
-// Module 17353 (useSortedMessageRequests)
+// Module 17354 (useSortedMessageRequests)
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;

@@ -1,9 +1,9 @@
-// Module ID: 16707
-// Function ID: 16708
+// Module ID: 16708
+// Function ID: 16709
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4780, 2045, 4399, 4798, 4409, 5498, 4777, 1078, 558, 568, 4603, 16708, 16709, 2023, 11184, 8439, 11182, 11183, 11190, 1119, 11192, 504, 2]
+// Dependencies: [4780, 2045, 4399, 4798, 4409, 5498, 4777, 1078, 558, 568, 4603, 16709, 16710, 2023, 11184, 8439, 11182, 11183, 11190, 1119, 11192, 504, 2]
 
-// Module 16707 (useYouBarAccessibilityLabel)
+// Module 16708 (useYouBarAccessibilityLabel)
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11182 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 11183 */;
 import isGameActivityDefault from "isGameActivity" /* 11190 */;

@@ -1,9 +1,9 @@
-// Module ID: 17342
-// Function ID: 17343
+// Module ID: 17343
+// Function ID: 17344
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4758, 580, 558, 568, 7224, 7296, 17341, 7302, 2]
+// Dependencies: [19, 21, 4758, 580, 558, 568, 7224, 7296, 17342, 7302, 2]
 
-// Module 17342 (ContextMenuCommandAppScreen)
+// Module 17343 (ContextMenuCommandAppScreen)
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 

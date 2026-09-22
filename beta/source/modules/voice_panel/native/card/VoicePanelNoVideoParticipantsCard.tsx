@@ -1,9 +1,9 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17560
+// Function ID: 17561
 // Name: VoicePanelNoVideoParticipantsCard
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12419, 4959, 1119, 4754, 5804, 2]
 
-// Module 17559 (VoicePanelNoVideoParticipantsCard)
+// Module 17560 (VoicePanelNoVideoParticipantsCard)
 import nativeDefault from "native" /* 580 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4959 */;
 import NativeViewDefault from "NativeView" /* 5804 */;

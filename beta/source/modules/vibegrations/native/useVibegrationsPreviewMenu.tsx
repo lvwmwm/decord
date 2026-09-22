@@ -1,14 +1,14 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 16998
+// Function ID: 16999
 // Name: useVibegrationsPreviewMenu
-// Dependencies: [19, 13364, 558, 568, 13188, 16998, 4457, 504, 13371, 16999, 1119, 3682, 2]
+// Dependencies: [19, 13364, 558, 568, 13188, 16999, 4457, 504, 13371, 17000, 1119, 3682, 2]
 
-// Module 16997 (useVibegrationsPreviewMenu)
+// Module 16998 (useVibegrationsPreviewMenu)
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import ToastUtils from "ToastUtils" /* 4457 */;
 import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13371 */;
-import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 16999 */;
+import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 17000 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13364 */;
 

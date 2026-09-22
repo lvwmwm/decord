@@ -1,9 +1,9 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 17515
+// Function ID: 17516
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1376, 17508, 21, 4758, 580, 5234, 1119, 10523, 558, 568, 4418, 504, 10220, 10482, 17515, 5195, 12, 5799, 1181, 17523, 10683, 4720, 8989, 4754, 10481, 7319, 2]
+// Dependencies: [19, 17, 1376, 17509, 21, 4758, 580, 5234, 1119, 10523, 558, 568, 4418, 504, 10220, 10482, 17516, 5195, 12, 5799, 1181, 17524, 10683, 4720, 8989, 4754, 10481, 7319, 2]
 
-// Module 17514 (SoundboardSoundPickerList)
+// Module 17515 (SoundboardSoundPickerList)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
@@ -18,7 +18,7 @@ import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10481 *
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10482 */;
 import chunkDefault from "chunk" /* 10523 */;
 import _modDef10683 from "module_10683" /* 10683 */;
-import _modDef17523 from "module_17523" /* 17523 */;
+import _modDef17524 from "module_17524" /* 17524 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -70,7 +70,7 @@ function getFastListSectionsFromCategories(categories, arr, fontScale) {
   return items;
 }
 const View = fn(17).View;
-const SoundboardStyleConstants = fn(17508);
+const SoundboardStyleConstants = fn(17509);
 ({ SOUND_ROW_HORIZONTAL_PADDING, SOUNDS_PER_ROW: metroRequire, SOUND_BUTTON_HEIGHT, SOUND_ROW_SPACING } = SoundboardStyleConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -197,7 +197,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
             obj.style = soundButtonNotFirst;
             obj.isSectionLocked = isSectionLocked;
             const _HermesInternal = HermesInternal;
-            return React5(tmp(17515).SoundButton, obj, "" + category.category.key + "-" + sound.soundId);
+            return React5(tmp(17516).SoundButton, obj, "" + category.category.key + "-" + sound.soundId);
           } else if (tmp(5234).SoundboardSoundItemType.ADD_SOUND === type) {
             const _Error = Error;
             const error = new Error("ADD_SOUND Not implemented");
@@ -265,7 +265,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((row) => {
             obj.style = soundButtonNotFirst;
             obj.isSectionLocked = isSectionLocked;
             const _HermesInternal = HermesInternal;
-            return React5(tmp(17515).SoundButton, obj, "" + section.category.key + "-" + sound.soundId);
+            return React5(tmp(17516).SoundButton, obj, "" + section.category.key + "-" + sound.soundId);
           } else if (tmp(5234).SoundboardSoundItemType.ADD_SOUND === type) {
             const _Error = Error;
             const error = new Error("ADD_SOUND Not implemented");
@@ -368,7 +368,7 @@ export const SoundboardSoundPickerList = noop.memo(ReactCompilerGating.isReactCo
           class O {
             constructor(arg0, arg1) {
               obj = { row: arg1, sectionIndex: channel, section: closure_6[channel], channel };
-              return jsx(f76641, obj);
+              return jsx(f76644, obj);
             }
           }
           cResult[12] = C;
@@ -408,7 +408,7 @@ export const SoundboardSoundPickerList = noop.memo(ReactCompilerGating.isReactCo
         class O {
           constructor(arg0, arg1) {
             obj = { row: arg1, sectionIndex: channel, section: closure_6[channel], channel };
-            return jsx(f76641, obj);
+            return jsx(f76644, obj);
           }
         }
         const debounceResult = tmp(12).debounce((arg0) => {
@@ -422,7 +422,7 @@ export const SoundboardSoundPickerList = noop.memo(ReactCompilerGating.isReactCo
       class O {
         constructor(arg0, arg1) {
           obj = { row: arg1, sectionIndex: channel, section: closure_6[channel], channel };
-          return jsx(f76641, obj);
+          return jsx(f76644, obj);
         }
       }
       cResult[8] = channel;
@@ -609,7 +609,7 @@ export const SoundboardSoundPickerList = noop.memo(ReactCompilerGating.isReactCo
         const obj3 = { size: GuildIcon.GuildIconSizes.XXSMALL_12, guild: tmp2.category.categoryInfo.guild, style: tmp11.sectionIcon };
         let tmp8Result = tmp8(GuildIconDefault, obj3);
       } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
-        const obj4 = { source: _modDef17523, style: tmp11.sectionIcon };
+        const obj4 = { source: _modDef17524, style: tmp11.sectionIcon };
         tmp8Result = tmp8(native.Icon, obj4);
       } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
         const obj5 = { source: _modDef10683, style: tmp11.sectionIcon };

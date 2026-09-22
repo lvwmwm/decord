@@ -1,10 +1,10 @@
-// Module ID: 17442
-// Function ID: 17443
+// Module ID: 17443
+// Function ID: 17444
 // Name: applyActivityOrientationLock
 // Dependencies: [2008, 11911, 2]
 // Exports: default
 
-// Module 17442 (applyActivityOrientationLock)
+// Module 17443 (applyActivityOrientationLock)
 import Constants from "Constants" /* 2008 */;
 import applyOrientationLock from "applyOrientationLock" /* 11911 */;
 import size from "module_2" /* 2 */;

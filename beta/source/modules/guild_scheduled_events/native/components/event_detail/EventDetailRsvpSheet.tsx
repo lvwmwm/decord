@@ -301,7 +301,7 @@ class EventDetailRsvpSheet {
     if (null != error) {
       tmp11 = jsx;
       obj9 = { children: null };
-      tmp12 = f52110;
+      tmp12 = f52111;
       obj10 = { style: null };
       items2 = [, ];
       items2[0] = tmp.staticMessageContent;
@@ -320,14 +320,14 @@ class EventDetailRsvpSheet {
         }
       }
       obj10.style = items2;
-      obj9.children = jsx(f52110, obj10);
+      obj9.children = jsx(f52111, obj10);
       tmp8 = jsx(StaticMessageContainer, obj9);
     } else {
       num2 = 0;
       if (0 === userListItems.length) {
         tmp9 = jsx;
         obj11 = { children: null };
-        tmp10 = f52112;
+        tmp10 = f52113;
         obj12 = { style: null };
         items3 = [, ];
         items3[0] = tmp.staticMessageContent;
@@ -346,7 +346,7 @@ class EventDetailRsvpSheet {
           }
         }
         obj12.style = items3;
-        obj11.children = jsx(f52112, obj12);
+        obj11.children = jsx(f52113, obj12);
         tmp8 = jsx(StaticMessageContainer, obj11);
       } else {
         tmp3 = jsx;

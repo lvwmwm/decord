@@ -1,16 +1,16 @@
-// Module ID: 17552
-// Function ID: 17553
+// Module ID: 17553
+// Function ID: 17554
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 12420, 12418, 17485, 12421, 21, 4497, 9700, 4758, 558, 568, 12419, 5187, 9660, 4726, 6891, 9692, 17486, 9694, 9693, 17553, 10345, 17437, 9696, 4462, 580, 4759, 7320, 9699, 2]
+// Dependencies: [32, 19, 17, 12420, 12418, 17486, 12421, 21, 4497, 9700, 4758, 558, 568, 12419, 5187, 9660, 4726, 6891, 9692, 17487, 9694, 9693, 17554, 10345, 17438, 9696, 4462, 580, 4759, 7320, 9699, 2]
 
-// Module 17552 (VoicePanelVideoRenderer)
+// Module 17553 (VoicePanelVideoRenderer)
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
 import spring from "spring" /* 5187 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
 import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9660 */;
 import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9700 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
-import VideoActionCreators from "VideoActionCreators" /* 17437 */;
+import VideoActionCreators from "VideoActionCreators" /* 17438 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ const VoicePanelConstants = fn(12420);
 let VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 const VoicePanelControlsModes = fn(12418).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17485).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17486).VoicePanelPIPModes;
 const SCALE_PHYSICS = fn(12421).SCALE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);

@@ -1,15 +1,15 @@
-// Module ID: 17397
-// Function ID: 17398
+// Module ID: 17398
+// Function ID: 17399
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1376, 2042, 21, 4758, 580, 558, 568, 504, 4418, 4725, 13723, 17398, 1181, 10218, 4754, 1119, 5188, 7397, 2]
+// Dependencies: [19, 17, 1376, 2042, 21, 4758, 580, 558, 568, 504, 4418, 4725, 13723, 17399, 1181, 10218, 4754, 1119, 5188, 7397, 2]
 
-// Module 17397 (AppIconsCoachmark)
+// Module 17398 (AppIconsCoachmark)
 import nativeDefault from "native" /* 580 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import _modDef10218 from "module_10218" /* 10218 */;
 import AppIconUtils from "AppIconUtils" /* 13723 */;
-import _modDef17398 from "module_17398" /* 17398 */;
+import _modDef17399 from "module_17399" /* 17399 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -114,7 +114,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
         return markAsDismissed(ContentDismissActionType.DISMISS);
       }
     }
-    const obj2 = { source: _modDef17398, style: tmp4.image };
+    const obj2 = { source: _modDef17399, style: tmp4.image };
     const tmp18 = closure_8(closure_4, obj2);
     cResult[10] = tmp4.image;
     cResult[11] = tmp18;
@@ -254,9 +254,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   };
   const obj4 = { style: tmp.info, children: null };
   const isPremiumResult = PremiumUtilsDefault.isPremium(stateFromStores);
-  const items2 = [closure_8(closure_4, { source: _modDef17398, style: tmp.image }), , ];
+  const items2 = [closure_8(closure_4, { source: _modDef17399, style: tmp.image }), , ];
   const obj6 = { style: tmp.titleContainer, children: null };
-  const obj5 = { source: _modDef17398, style: tmp.image };
+  const obj5 = { source: _modDef17399, style: tmp.image };
   const items3 = [closure_8(markAsDismissed(1181).Icon, { source: _modDef10218, size: markAsDismissed(1181).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1119).intl;

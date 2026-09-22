@@ -1,9 +1,9 @@
-// Module ID: 17209
-// Function ID: 17210
+// Module ID: 17210
+// Function ID: 17211
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7415, 1119, 2112, 4754, 2]
 
-// Module 17209 (ChannelDetailsLinkedLobby)
+// Module 17210 (ChannelDetailsLinkedLobby)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2112 */;

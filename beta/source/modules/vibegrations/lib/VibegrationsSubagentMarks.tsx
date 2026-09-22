@@ -1,10 +1,10 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17042
+// Function ID: 17043
 // Name: VibegrationsSubagentMarks
 // Dependencies: [3682, 1119, 2]
 // Exports: assignSubagentMarkKeys, isVibegrationsSubagentMarkKey, subagentMarkName
 
-// Module 17041 (VibegrationsSubagentMarks)
+// Module 17042 (VibegrationsSubagentMarks)
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import size from "module_2" /* 2 */;

@@ -61,7 +61,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       const error = new Error("GuildsBarDnDStore.dropStart: you cannot start a drop while an existing drop is in progress");
       throw error;
     } else {
-      dropSpecs(1252).batchUpdates(() => dropSpecs({ dropSpecs, dragSpecs: "Array", overSpecs: "applicationId" }));
+      dropSpecs(1252).batchUpdates(() => dropSpecs({ dropSpecs, dragSpecs: "Array", overSpecs: "toCharArray$esjava$1" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
       const _setTimeout = setTimeout;

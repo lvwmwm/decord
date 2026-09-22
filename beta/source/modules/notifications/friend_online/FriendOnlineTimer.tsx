@@ -1,15 +1,15 @@
-// Module ID: 18269
-// Function ID: 18270
+// Module ID: 18270
+// Function ID: 18271
 // Name: FriendOnlineTimer
-// Dependencies: [5, 5498, 18270, 1078, 1089, 1095, 1275, 1235, 577, 7365, 2023, 2]
+// Dependencies: [5, 5498, 18271, 1078, 1089, 1095, 1275, 1235, 577, 7365, 2023, 2]
 
-// Module 18269 (FriendOnlineTimer)
+// Module 18270 (FriendOnlineTimer)
 import DurationsDefault from "Durations" /* 1095 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;
 import UserSettings from "UserSettings" /* 2023 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 18270 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 18271 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;

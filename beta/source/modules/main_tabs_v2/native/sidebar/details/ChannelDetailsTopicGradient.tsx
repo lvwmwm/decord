@@ -1,9 +1,9 @@
-// Module ID: 17211
-// Function ID: 17212
+// Module ID: 17212
+// Function ID: 17213
 // Name: ChannelDetailsTopicGradient
 // Dependencies: [19, 558, 568, 4462, 580, 676, 2]
 
-// Module 17211 (ChannelDetailsTopicGradient)
+// Module 17212 (ChannelDetailsTopicGradient)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;

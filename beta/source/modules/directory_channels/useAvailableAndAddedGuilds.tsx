@@ -138,7 +138,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   class R {
     constructor() {
-      tmp = closure_4(/* F140842 */ function() { ... })();
+      tmp = closure_4(/* F140847 */ function() { ... })();
       return;
     }
   }

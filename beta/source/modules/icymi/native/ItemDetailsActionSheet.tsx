@@ -1,9 +1,9 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 16801
+// Function ID: 16802
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 2045, 2067, 8611, 21, 4758, 580, 558, 568, 504, 4911, 5841, 5799, 1181, 8626, 11301, 16801, 5903, 5822, 7449, 2]
+// Dependencies: [19, 17, 2045, 2067, 8611, 21, 4758, 580, 558, 568, 504, 4911, 5841, 5799, 1181, 8626, 11301, 16802, 5903, 5822, 7449, 2]
 
-// Module 16800 (ItemDetailsActionSheet)
+// Module 16801 (ItemDetailsActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 580 */;
 import useChannelNameDefault from "useChannelName" /* 4911 */;
@@ -261,7 +261,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let tmp16Result = result;
   if (result) {
     const obj8 = { channel: stateFromStores, guild: stateFromStores1 };
-    tmp16Result = tmp16(tmp(16801).ChannelScoreSettings, obj8);
+    tmp16Result = tmp16(tmp(16802).ChannelScoreSettings, obj8);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -273,7 +273,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj10 = { children: null };
     const items4 = [result, ];
     const obj11 = { guild: stateFromStores1 };
-    items4[1] = tmp16(tmp(16801).GuildScoreSettings, obj11);
+    items4[1] = tmp16(tmp(16802).GuildScoreSettings, obj11);
     obj10.children = items4;
     tmp15Result = tmp15(closure_8, obj10);
   }

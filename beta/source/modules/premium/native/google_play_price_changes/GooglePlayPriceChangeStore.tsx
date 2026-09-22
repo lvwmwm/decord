@@ -1,9 +1,9 @@
-// Module ID: 17402
-// Function ID: 17403
+// Module ID: 17403
+// Function ID: 17404
 // Name: GooglePlayPriceChangeStore
 // Dependencies: [4424, 1078, 1368, 504, 577, 2]
 
-// Module 17402 (GooglePlayPriceChangeStore)
+// Module 17403 (GooglePlayPriceChangeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import SubscriptionStore from "SubscriptionStore" /* 4424 */;

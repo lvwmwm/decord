@@ -1,9 +1,9 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17531
+// Function ID: 17532
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 2044, 4774, 9651, 502, 2045, 1996, 4399, 1376, 4782, 1078, 4779, 9950, 21, 4758, 580, 558, 568, 17531, 504, 4911, 9968, 9929, 4754, 10006, 1119, 5804, 5315, 7, 4458, 17528, 8637, 5822, 5828, 15828, 13219, 5829, 577, 7446, 2023, 9889, 4959, 10630, 10232, 4725, 17532, 1984, 9952, 9971, 17533, 17495, 17496, 11554, 9916, 17534, 7624, 17535, 9921, 17536, 11733, 10205, 10286, 10285, 2]
+// Dependencies: [19, 2044, 4774, 9651, 502, 2045, 1996, 4399, 1376, 4782, 1078, 4779, 9950, 21, 4758, 580, 558, 568, 17532, 504, 4911, 9968, 9929, 4754, 10006, 1119, 5804, 5315, 7, 4458, 17529, 8637, 5822, 5828, 15828, 13219, 5829, 577, 7446, 2023, 9889, 4959, 10630, 10232, 4725, 17533, 1984, 9952, 9971, 17534, 17496, 17497, 11554, 9916, 17535, 7624, 17536, 9921, 17537, 11733, 10205, 10286, 10285, 2]
 
-// Module 17530 (VoicePanelSettingsOverview)
+// Module 17531 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
@@ -26,8 +26,8 @@ import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 10232 *
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10630 */;
 import _modDef13219 from "module_13219" /* 13219 */;
 import WrenchIcon from "WrenchIcon" /* 15828 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17528 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 17531 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17529 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 17532 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
@@ -486,7 +486,7 @@ export default noop.memo(function VoicePanelSettingsOverview(guildId) {
   }, items9);
   const items11 = [channelId, stateFromStores4];
   const callback4 = stateFromStores1.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17532, dependencyMap.paths), closure_17, { channelId });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17533, dependencyMap.paths), closure_17, { channelId });
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

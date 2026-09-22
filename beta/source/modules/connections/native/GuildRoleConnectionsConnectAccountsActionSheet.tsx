@@ -2971,7 +2971,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           obj60.onPlatformConnected = handlePlatformConnected;
           obj60.onPlatformIdentityAuthorize = handlePlatformIdentityAuthorize;
           platformType = undefined;
-          tmp57 = f57697;
+          tmp57 = f57698;
           if (tmp26 != null) {
             platformType = tmp26.platformType;
           }
@@ -3079,12 +3079,12 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
           obj74.children = intl4.string(tmp17(tmp18[27]).t.jndPhX);
           items14 = [, ];
           items14[0] = tmp36(tmp17(tmp18[26]).Text, obj74);
-          tmp49 = f57699;
+          tmp49 = f57700;
           obj75 = { account: null, setShowPreviewInvisibleIcon: null, setShowPreviewMetadata: null };
           obj75.account = found1;
           obj75.setShowPreviewInvisibleIcon = tmp16;
           obj75.setShowPreviewMetadata = tmp13;
-          items14[1] = tmp36(f57699, obj75);
+          items14[1] = tmp36(f57700, obj75);
           obj73.children = items14;
           items13[1] = tmp37(tmp38, obj73);
           obj69.children = items13;

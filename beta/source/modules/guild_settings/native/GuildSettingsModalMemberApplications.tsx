@@ -1,16 +1,16 @@
-// Module ID: 16929
-// Function ID: 16930
+// Module ID: 16930
+// Function ID: 16931
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 5761, 21, 4758, 580, 558, 568, 4603, 4754, 16930, 1401, 1181, 5822, 1616, 4583, 16935, 16936, 504, 1119, 8995, 8506, 7286, 2]
+// Dependencies: [19, 17, 5761, 21, 4758, 580, 558, 568, 4603, 4754, 16931, 1401, 1181, 5822, 1616, 4583, 16936, 16937, 504, 1119, 8995, 8506, 7286, 2]
 
-// Module 16929 (GuildSettingsModalMemberApplications)
+// Module 16930 (GuildSettingsModalMemberApplications)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16930 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16931 */;
 import noop from "module_19" /* 19 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5761 */;
 

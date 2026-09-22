@@ -1,9 +1,9 @@
-// Module ID: 17770
-// Function ID: 17771
+// Module ID: 17771
+// Function ID: 17772
 // Name: TopEmojisDataManager
 // Dependencies: [4580, 1379, 7365, 10442, 2]
 
-// Module 17770 (TopEmojisDataManager)
+// Module 17771 (TopEmojisDataManager)
 import TopEmojisUtils from "TopEmojisUtils" /* 10442 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;

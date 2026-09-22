@@ -70,7 +70,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       closure_2 = _mod12.shuffle(items);
       const obj3 = { length: closure_1 };
       return Array.from({ length: closure_1 }).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: true, action: true };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";
@@ -95,7 +95,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       let obj3 = { length: num2 };
       const tmpResult2 = tmp(12);
       const mapped1 = Array.from(obj3).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: true, action: true };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";
@@ -194,7 +194,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
         const obj2 = text(num[14]);
         const obj3 = { length };
         return Array.from({ length }).map((item, index) => {
-          const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: true, action: true };
+          const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
           let str = "default";
           if (index === closure_0 - 1) {
             str = "destructive";
@@ -214,7 +214,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
       const _Array2 = Array;
       const obj4 = { length: num };
       mapped = Array.from(obj4).map((item, index) => {
-        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: true, action: true };
+        const obj = { label: length[index % length.length], IconComponent: "a", iconSource: length2[index % length2.length], variant: "toCharArray$esjava$1", action: "ty" };
         let str = "default";
         if (index === closure_0 - 1) {
           str = "destructive";

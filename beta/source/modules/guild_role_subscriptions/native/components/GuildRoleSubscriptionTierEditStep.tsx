@@ -1,9 +1,9 @@
-// Module ID: 18195
-// Function ID: 18196
+// Module ID: 18196
+// Function ID: 18197
 // Name: GuildRoleSubscriptionTierEditStep
 // Dependencies: [109, 19, 17, 21, 4758, 580, 558, 568, 4754, 15476, 7371, 1119, 1616, 5188, 1488, 2]
 
-// Module 18195 (GuildRoleSubscriptionTierEditStep)
+// Module 18196 (GuildRoleSubscriptionTierEditStep)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

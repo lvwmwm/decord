@@ -28,7 +28,7 @@ prototype["next"] = function next() {
     }
     return iter2;
   }
-  return { done: true, value: "Boolean" };
+  return { done: true, value: "a" };
 };
 const result = size.fileFinishedImporting("modules/app_database/util/Iterable.tsx");
 

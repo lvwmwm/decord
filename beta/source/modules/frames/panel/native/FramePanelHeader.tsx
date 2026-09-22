@@ -1,18 +1,18 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17479
+// Function ID: 17480
 // Name: FramePanelHeader
-// Dependencies: [32, 19, 17, 9311, 9312, 21, 558, 568, 7415, 17457, 17459, 17463, 17464, 17479, 504, 17474, 2]
+// Dependencies: [32, 19, 17, 9311, 9312, 21, 558, 568, 7415, 17458, 17460, 17464, 17465, 17480, 504, 17475, 2]
 
-// Module 17478 (FramePanelHeader)
+// Module 17479 (FramePanelHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7415 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 17457 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 17459 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17463 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17464 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17474 */;
-import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17479 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 17458 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 17460 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17464 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17465 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17475 */;
+import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17480 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import FramesStore from "FramesStore" /* 9311 */;
@@ -41,17 +41,17 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[5] === wrapperOffset) {
           let tmp7 = cResult[6];
         }
-        const baseActivityPanelHeaderContent = tmp(17457).useBaseActivityPanelHeaderContent(tmp7);
+        const baseActivityPanelHeaderContent = tmp(17458).useBaseActivityPanelHeaderContent(tmp7);
         ({ gesture, headerWrapperStyles, headerStyles } = baseActivityPanelHeaderContent);
-        const tmpResult = tmp(17457);
-        const minimizeAndQuestButtonContainerStyles = tmp(17457).useMinimizeAndQuestButtonContainerStyles();
+        const tmpResult = tmp(17458);
+        const minimizeAndQuestButtonContainerStyles = tmp(17458).useMinimizeAndQuestButtonContainerStyles();
         let id;
         if (first != null) {
           id = first.id;
         }
         if (cResult[7] !== id) {
           const obj2 = { applicationId: id };
-          const tmp14 = React5(tmp5(17459), obj2);
+          const tmp14 = React5(tmp5(17460), obj2);
           cResult[7] = id;
           cResult[8] = tmp14;
           let tmp12 = tmp14;
@@ -80,7 +80,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[15] !== frame.applicationId) {
               const obj3 = { applicationId: frame.applicationId };
-              const tmp24 = React5(tmp5(17464), obj3);
+              const tmp24 = React5(tmp5(17465), obj3);
               cResult[15] = frame.applicationId;
               cResult[16] = tmp24;
               let tmp22 = tmp24;
@@ -124,7 +124,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     const obj4 = { hasConnectedActivity: true, gesture, headerWrapperStyles, headerStyles, landscape, children: null };
                     const items1 = [tmp26, tmp30, tmp31];
                     obj4.children = items1;
-                    const tmp36 = closure_1_8(tmp(17457).BaseActivityPanelContent, obj4);
+                    const tmp36 = closure_1_8(tmp(17458).BaseActivityPanelContent, obj4);
                     cResult[25] = gesture;
                     cResult[26] = headerStyles;
                     cResult[27] = headerWrapperStyles;
@@ -136,7 +136,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp34 = tmp36;
                   }
                   const obj5 = { frame, setMode };
-                  const tmp33 = React5(tmp5(17479), obj5);
+                  const tmp33 = React5(tmp5(17480), obj5);
                   cResult[22] = frame;
                   cResult[23] = setMode;
                   cResult[24] = tmp33;
@@ -156,7 +156,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp26 = tmp29;
           }
           const obj7 = { activityName: tmp17, setMode };
-          const tmp21 = React5(tmp5(17463), obj7);
+          const tmp21 = React5(tmp5(17464), obj7);
           cResult[12] = setMode;
           cResult[13] = tmp17;
           cResult[14] = tmp21;
@@ -167,7 +167,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[10] = prop;
         cResult[11] = items3;
         tmp16 = items3;
-        const tmpResult2 = tmp(17457);
+        const tmpResult2 = tmp(17458);
       }
     }
   }

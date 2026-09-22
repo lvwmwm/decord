@@ -1,11 +1,11 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 17794
+// Function ID: 17795
 // Name: HolidayEventsUtils
-// Dependencies: [17789, 558, 568, 2]
+// Dependencies: [17790, 558, 568, 2]
 
-// Module 17793 (HolidayEventsUtils)
+// Module 17794 (HolidayEventsUtils)
 import c from "c" /* 568 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17789 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17790 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== isExperimentEligible) {
     const _Date = Date;
     const timestamp = Date.now();
-    const tmp8 = timestamp >= tmp3(17789).startTimeMs && timestamp <= tmp3(17789).endTimeMs && isExperimentEligible;
+    const tmp8 = timestamp >= tmp3(17790).startTimeMs && timestamp <= tmp3(17790).endTimeMs && isExperimentEligible;
     cResult[0] = isExperimentEligible;
     cResult[1] = tmp8;
     let tmp5 = tmp8;
@@ -52,8 +52,8 @@ obj.useHolidaySoundpack = ReactCompilerGating.isReactCompilerEnabled() ? (() => 
       tmp6 = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
         tmp6 = null;
-        if (null != tmp7(17789).soundpackLabel) {
-          const obj2 = { soundpack: tmp7(17789).soundpack, soundpackLabel: tmp7(17789).soundpackLabel };
+        if (null != tmp7(17790).soundpackLabel) {
+          const obj2 = { soundpack: tmp7(17790).soundpack, soundpackLabel: tmp7(17790).soundpackLabel };
           tmp6 = obj2;
         }
       }
@@ -71,8 +71,8 @@ obj.useHolidaySoundpack = ReactCompilerGating.isReactCompilerEnabled() ? (() => 
     tmp = null;
     if (null != HolidayEventsConfigDefault.soundpack) {
       tmp = null;
-      if (null != tmp2(17789).soundpackLabel) {
-        const obj = { soundpack: tmp2(17789).soundpack, soundpackLabel: tmp2(17789).soundpackLabel };
+      if (null != tmp2(17790).soundpackLabel) {
+        const obj = { soundpack: tmp2(17790).soundpack, soundpackLabel: tmp2(17790).soundpackLabel };
         tmp = obj;
       }
     }
@@ -84,7 +84,7 @@ obj.getAppSpinnerSources = function getAppSpinnerSources() {
   const timestamp = Date.now();
   let appSpinnerSources = null;
   if (tmp4) {
-    appSpinnerSources = tmp2(17789).appSpinnerSources;
+    appSpinnerSources = tmp2(17790).appSpinnerSources;
   }
   return appSpinnerSources;
 };
@@ -92,13 +92,13 @@ obj.getLoadingTips = function getLoadingTips() {
   const timestamp = Date.now();
   let tmp5 = null;
   if (tmp4) {
-    const getLoadingTips = tmp2(17789).getLoadingTips;
+    const getLoadingTips = tmp2(17790).getLoadingTips;
     let loadingTips;
     if (getLoadingTips != null) {
       loadingTips = getLoadingTips();
     }
     tmp5 = loadingTips;
-    const tmp2Result = tmp2(17789);
+    const tmp2Result = tmp2(17790);
   }
   return tmp5;
 };
@@ -108,8 +108,8 @@ obj.getHolidaySoundpack = function getHolidaySoundpack() {
   let soundpack = null;
   if (tmp5) {
     soundpack = null;
-    if (null != tmp(17789).soundpack) {
-      soundpack = tmp(17789).soundpack;
+    if (null != tmp(17790).soundpack) {
+      soundpack = tmp(17790).soundpack;
     }
   }
   return soundpack;

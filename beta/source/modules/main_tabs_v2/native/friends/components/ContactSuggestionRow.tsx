@@ -1,9 +1,9 @@
-// Module ID: 17241
-// Function ID: 17242
+// Module ID: 17242
+// Function ID: 17243
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 4750, 1078, 21, 558, 568, 4603, 4497, 1119, 565, 16383, 16382, 16784, 1245, 16785, 11172, 2]
+// Dependencies: [109, 19, 4750, 1078, 21, 558, 568, 4603, 4497, 1119, 565, 16383, 16382, 16785, 1245, 16786, 11172, 2]
 
-// Module 17241 (ContactSuggestionRow)
+// Module 17242 (ContactSuggestionRow)
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;

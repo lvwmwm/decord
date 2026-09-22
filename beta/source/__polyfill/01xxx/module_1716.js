@@ -82,8 +82,8 @@ fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "emoji",
       lastTimestamp: null,
-      startTimestamp: "AUDIO_VOLUME_CHANGE",
-      reduceMotion: null
+      startTimestamp: "film",
+      reduceMotion: "filmklapper"
     };
     let num = obj.velocity;
     if (num == null) {

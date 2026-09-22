@@ -1,9 +1,9 @@
-// Module ID: 17915
-// Function ID: 17916
+// Module ID: 17916
+// Function ID: 17917
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 17916, 2039, 1376, 1078, 21, 4758, 558, 568, 1119, 5188, 1489, 1181, 17917, 1253, 5839, 7621, 9876, 7441, 6832, 17921, 6830, 6843, 6840, 7228, 7291, 7292, 6831, 17922, 7325, 7239, 504, 4725, 4625, 7246, 2]
+// Dependencies: [5, 19, 17, 17917, 2039, 1376, 1078, 21, 4758, 558, 568, 1119, 5188, 1489, 1181, 17918, 1253, 5839, 7621, 9876, 7441, 6832, 17922, 6830, 6843, 6840, 7228, 7291, 7292, 6831, 17923, 7325, 7239, 504, 4725, 4625, 7246, 2]
 
-// Module 17915 (VerificationModal)
+// Module 17916 (VerificationModal)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -20,10 +20,10 @@ import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 
 import VerifyPhoneDefault from "VerifyPhone" /* 7325 */;
 import HeaderActionButton from "HeaderActionButton" /* 7621 */;
 import _modDef9876 from "module_9876" /* 9876 */;
-import OverviewDefault from "Overview" /* 17921 */;
+import OverviewDefault from "Overview" /* 17922 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 17916 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 17917 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -397,14 +397,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
     return tmp14;
   }
   const obj = navigation(568);
-  const tmp15 = jsx(navigation(1181).EmptyState, { Illustration: navigation(17917).VerifyPhone, title: tmp5, body: tmp6, children: <View style={tmp4.button}>{tmp11}</View> });
+  const tmp15 = jsx(navigation(1181).EmptyState, { Illustration: navigation(17918).VerifyPhone, title: tmp5, body: tmp6, children: <View style={tmp4.button}>{tmp11}</View> });
   cResult[5] = tmp4.button;
   cResult[6] = tmp11;
   cResult[7] = tmp15;
   tmp14 = tmp15;
 }) : ((navigation) => {
   navigation = navigation.navigation;
-  const obj = { Illustration: navigation(17917).VerifyPhone, title: null, body: null, children: null };
+  const obj = { Illustration: navigation(17918).VerifyPhone, title: null, body: null, children: null };
   const intl = navigation(1119).intl;
   obj.title = intl.string(navigation(1119).t.KLnLIP);
   const intl2 = navigation(1119).intl;
@@ -429,7 +429,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
   };
   obj2.children = jsx(navigation(5188).Button, { text: null, onPress: null });
   obj.children = <View style={closure_12().button}>{null}</View>;
-  return jsx(navigation(1181).EmptyState, { Illustration: navigation(17917).VerifyPhone, title: null, body: null, children: null });
+  return jsx(navigation(1181).EmptyState, { Illustration: navigation(17918).VerifyPhone, title: null, body: null, children: null });
 });
 ReactCompilerGating = fn(558);
 const size = fn(2);

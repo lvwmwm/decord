@@ -1,9 +1,9 @@
-// Module ID: 17058
-// Function ID: 17059
+// Module ID: 17059
+// Function ID: 17060
 // Name: VibegrationsThinkingOverlay
-// Dependencies: [19, 17, 13365, 21, 4758, 580, 558, 568, 504, 17034, 16762, 4754, 1119, 3682, 17032, 5824, 2]
+// Dependencies: [19, 17, 13365, 21, 4758, 580, 558, 568, 504, 17035, 16763, 4754, 1119, 3682, 17033, 5824, 2]
 
-// Module 17058 (VibegrationsThinkingOverlay)
+// Module 17059 (VibegrationsThinkingOverlay)
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsChatStore from "VibegrationsChatStore" /* 13365 */;
@@ -77,10 +77,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (str2 == null) {
     str2 = "";
   }
-  const text = projectId(17034).useVibegrationsRevealedText(str2, tmp12).text;
+  const text = projectId(17035).useVibegrationsRevealedText(str2, tmp12).text;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { size: "xs", color: ref(580).colors.TEXT_BRAND };
-    const tmp16 = closure_7(tmp(16762).LightbulbIcon, obj3);
+    const tmp16 = closure_7(tmp(16763).LightbulbIcon, obj3);
     cResult[6] = tmp16;
     let tmp13 = tmp16;
   } else {
@@ -167,7 +167,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         },
       children: null
     };
-    ref = ref(17032);
+    ref = ref(17033);
     const obj11 = { source: text };
     obj10.children = closure_7(ref, obj11);
     let tmp28 = closure_7(closure_4, obj10);
@@ -199,14 +199,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (tmp6) {
     tmp6 = "end" !== stateFromStores.phase;
   }
-  const text = projectId(17034).useVibegrationsRevealedText(str, { streaming: tmp6 }).text;
+  const text = projectId(17035).useVibegrationsRevealedText(str, { streaming: tmp6 }).text;
   const obj3 = { style: tmp.root, children: null };
   const obj4 = { style: tmp.opaque, children: null };
   const obj5 = { style: tmp.body, children: null };
   const obj6 = { style: tmp.header, children: null };
-  const obj2 = projectId(17034);
+  const obj2 = projectId(17035);
   const tmp9 = closure_8;
-  const items2 = [closure_7(projectId(16762).LightbulbIcon, { size: "xs", color: ref(580).colors.TEXT_BRAND }), ];
+  const items2 = [closure_7(projectId(16763).LightbulbIcon, { size: "xs", color: ref(580).colors.TEXT_BRAND }), ];
   const obj8 = { variant: "text-sm/semibold", color: "text-strong", children: null };
   const intl = tmp3(1119).intl;
   obj8.children = intl.string(ref(3682).ltkR4n);
@@ -229,7 +229,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       children: null
     };
     const obj10 = { source: text };
-    obj9.children = tmp7(tmp10(17032), obj10);
+    obj9.children = tmp7(tmp10(17033), obj10);
     let tmp7Result = tmp7(closure_4, obj9);
   } else {
     const obj11 = { variant: "text-sm/normal", color: "text-muted", children: null };

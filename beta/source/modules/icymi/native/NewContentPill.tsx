@@ -1,9 +1,9 @@
-// Module ID: 16863
-// Function ID: 16864
+// Module ID: 16864
+// Function ID: 16865
 // Name: NewContentPill
 // Dependencies: [32, 19, 17, 2067, 8611, 21, 4758, 580, 558, 568, 9092, 5799, 504, 4693, 8624, 8626, 4497, 5187, 1491, 16048, 4754, 1119, 5341, 4610, 2]
 
-// Module 16863 (NewContentPill)
+// Module 16864 (NewContentPill)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import spring from "spring" /* 5187 */;

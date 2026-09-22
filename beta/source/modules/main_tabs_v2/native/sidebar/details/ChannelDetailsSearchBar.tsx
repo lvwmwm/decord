@@ -1,9 +1,9 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 17100
+// Function ID: 17101
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 12487, 8125, 11221, 21, 4758, 12518, 558, 568, 12447, 12506, 12509, 5341, 1119, 10667, 17100, 2]
+// Dependencies: [19, 12487, 8125, 11221, 21, 4758, 12518, 558, 568, 12447, 12506, 12509, 5341, 1119, 10667, 17101, 2]
 
-// Module 17099 (ChannelDetailsSearchBar)
+// Module 17100 (ChannelDetailsSearchBar)
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
 import noop from "module_19" /* 19 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;

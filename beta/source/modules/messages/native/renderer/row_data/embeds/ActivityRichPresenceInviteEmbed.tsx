@@ -425,12 +425,12 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                       obj11.disabled = message.author.id === id2;
                       obj16 = obj11;
                     } else if (isInParty) {
-                      const obj12 = { label: null, disabled: true, footerLabel: "a" };
+                      const obj12 = { label: null, disabled: true, footerLabel: "Boolean" };
                       const intl11 = intl(1119).intl;
                       obj12.label = intl11.string(intl(1119).t.KC26NR);
                       obj16 = obj12;
                     } else if (isAskToJoin) {
-                      const obj13 = { label: "Set", disabled: null, footerLabel: false };
+                      const obj13 = { label: "Set", disabled: null, footerLabel: "<string:1091633153>" };
                       const intl10 = intl(1119).intl;
                       const obj14 = { username: message.author.globalName, appName: name_override };
                       obj13.footerLabel = intl10.formatToPlainString(intl(1119).t.gYVkSW, obj14);
@@ -444,7 +444,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                           obj16 = obj15;
                         }
                       }
-                      obj16 = { label: "Set", disabled: null, footerLabel: false };
+                      obj16 = { label: "Set", disabled: null, footerLabel: "<string:1091633153>" };
                       const intl8 = intl(1119).intl;
                       obj16.footerLabel = intl8.string(intl(1119).t.OAB5TK);
                     }
@@ -574,7 +574,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               return null;
             }
           }
-          const obj20 = { displayType: obj.BLOCKED, headerText: null, subtitle: null, ctaButtonEnabled: false, ctaButtonText: "Set", ctaButtonIsLoading: "Array", footerLabel: "Symbol", gradientColors: 0, iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__packager_asset", maxPartySize: "Error", partyMemberAvatarURIs: "__d", partySizeText: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000529807848, platformIconKeys: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022622995428614313, coverImageUrl: -0.0000000000000000000000000000000000000000000000000000000040376476764768285, detailsText: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003255056724908522, title: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024133625906869348 };
+          const obj20 = { displayType: obj.BLOCKED, headerText: null, subtitle: null, ctaButtonEnabled: false, ctaButtonText: "Set", ctaButtonIsLoading: "Array", footerLabel: "Symbol", gradientColors: 0, iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__packager_asset", maxPartySize: "Error", partyMemberAvatarURIs: "__d", partySizeText: 161390681362144300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, platformIconKeys: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000022622995428784706, coverImageUrl: -12356264600876972000000000000000000000000000000000000, detailsText: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003255056679417624, title: -0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000024133625906869348 };
           const intl2 = intl(1119).intl;
           obj20.headerText = intl2.string(intl(1119).t.pkq6Vq);
           if (contentClassificationVisibility === intl(12070).ContentClassificationVisibility.BLOCK_UNDERAGE) {

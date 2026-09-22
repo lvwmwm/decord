@@ -1,9 +1,9 @@
-// Module ID: 17210
-// Function ID: 17211
+// Module ID: 17211
+// Function ID: 17212
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1376, 11221, 1078, 21, 1368, 4758, 558, 568, 17211, 4497, 5187, 4748, 5341, 4754, 5198, 4603, 504, 4903, 2]
+// Dependencies: [32, 19, 17, 1376, 11221, 1078, 21, 1368, 4758, 558, 568, 17212, 4497, 5187, 4748, 5341, 4754, 5198, 4603, 504, 4903, 2]
 
-// Module 17210 (ChannelDetailsTopic)
+// Module 17211 (ChannelDetailsTopic)
 import c from "c" /* 568 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 4748 */;

@@ -1,9 +1,9 @@
-// Module ID: 17840
-// Function ID: 17841
+// Module ID: 17841
+// Function ID: 17842
 // Name: NewUserManager
-// Dependencies: [5, 7184, 5500, 1376, 5778, 12852, 1078, 12866, 17841, 12823, 12851, 1098, 10055, 577, 7365, 12830, 12895, 2]
+// Dependencies: [5, 7184, 5500, 1376, 5778, 12852, 1078, 12866, 17842, 12823, 12851, 1098, 10055, 577, 7365, 12830, 12895, 2]
 
-// Module 17840 (NewUserManager)
+// Module 17841 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import NUFActionCreators from "NUFActionCreators" /* 12851 */;
@@ -29,7 +29,7 @@ let obj2 = {
     }
     return null == avatar;
   },
-  transitionToStep: fn(17841).openAddAvatarModal
+  transitionToStep: fn(17842).openAddAvatarModal
 };
 const items = [obj2, , , , , ];
 let obj3 = {

@@ -1,9 +1,9 @@
-// Module ID: 18103
-// Function ID: 18104
+// Module ID: 18104
+// Function ID: 18105
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9834, 1078, 21, 558, 568, 4462, 580, 18104, 504, 18105, 9833, 4754, 1119, 7446, 5903, 18114, 5186, 18102, 2]
+// Dependencies: [32, 19, 17, 9834, 1078, 21, 558, 568, 4462, 580, 18105, 504, 18106, 9833, 4754, 1119, 7446, 5903, 18115, 5186, 18103, 2]
 
-// Module 18103 (SafetyCheckScreen)
+// Module 18104 (SafetyCheckScreen)
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

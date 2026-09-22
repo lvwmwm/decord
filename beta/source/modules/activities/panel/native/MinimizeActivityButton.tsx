@@ -1,9 +1,9 @@
-// Module ID: 17463
-// Function ID: 17464
+// Module ID: 17464
+// Function ID: 17465
 // Name: MinimizeActivityButton
 // Dependencies: [19, 17, 9313, 21, 4758, 558, 568, 1119, 5188, 11409, 8178, 2]
 
-// Module 17463 (MinimizeActivityButton)
+// Module 17464 (MinimizeActivityButton)
 import _modDef11409 from "module_11409" /* 11409 */;
 import noop from "module_19" /* 19 */;
 

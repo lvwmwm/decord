@@ -1,9 +1,9 @@
-// Module ID: 17378
-// Function ID: 17379
+// Module ID: 17379
+// Function ID: 17380
 // Name: SettingsOverviewScreen
 // Dependencies: [19, 8238, 21, 1119, 1374, 15751, 558, 568, 4418, 11594, 14954, 2]
 
-// Module 17378 (SettingsOverviewScreen)
+// Module 17379 (SettingsOverviewScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;

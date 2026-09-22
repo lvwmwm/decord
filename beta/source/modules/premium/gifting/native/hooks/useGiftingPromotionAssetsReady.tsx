@@ -1,12 +1,12 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17423
+// Function ID: 17424
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [558, 568, 11050, 17423, 2]
+// Dependencies: [558, 568, 11050, 17424, 2]
 
-// Module 17422 (useGiftingPromotionAssetsReady)
+// Module 17423 (useGiftingPromotionAssetsReady)
 import c from "c" /* 568 */;
 import MarketingComponentHooks from "MarketingComponentHooks" /* 11050 */;
-import usePreloadedAssetDefault from "usePreloadedAsset" /* 17423 */;
+import usePreloadedAssetDefault from "usePreloadedAsset" /* 17424 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

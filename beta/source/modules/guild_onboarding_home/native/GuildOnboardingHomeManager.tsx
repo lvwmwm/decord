@@ -1,9 +1,9 @@
-// Module ID: 17778
-// Function ID: 17779
+// Module ID: 17779
+// Function ID: 17780
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 2102, 502, 2045, 2109, 2067, 4580, 4945, 4946, 4386, 7365, 1389, 4961, 17779, 1984, 12433, 1098, 12432, 7469, 7470, 2]
+// Dependencies: [32, 5, 2102, 502, 2045, 2109, 2067, 4580, 4945, 4946, 4386, 7365, 1389, 4961, 17780, 1984, 12433, 1098, 12432, 7469, 7470, 2]
 
-// Module 17778 (GuildOnboardingHomeManager)
+// Module 17779 (GuildOnboardingHomeManager)
 import FlagUtils from "FlagUtils" /* 1389 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -91,7 +91,7 @@ const prototype = function GuildOnboardingHomeManager() {
           }
           if (0 !== num) {
             const obj2 = ModalActionCreatorsDefault;
-            const tmp9 = tmp(1984)(17779, tmp2.paths);
+            const tmp9 = tmp(1984)(17780, tmp2.paths);
             const obj3 = { initialPercent: (num - 1) / num, numActions: num };
             const obj4 = { animation: tmp(1098).ModalAnimation.FADE };
             obj2.pushLazy(tmp9, obj3, tmp(12433).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj4);

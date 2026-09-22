@@ -1,9 +1,9 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17567
+// Function ID: 17568
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 4758, 580, 558, 568, 12419, 7409, 9631, 9735, 17567, 17568, 5341, 5804, 2]
+// Dependencies: [5, 19, 17, 21, 4758, 580, 558, 568, 12419, 7409, 9631, 9735, 17568, 17569, 5341, 5804, 2]
 
-// Module 17566 (ActivityItemMissingCard)
+// Module 17567 (ActivityItemMissingCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import NativeViewDefault from "NativeView" /* 5804 */;

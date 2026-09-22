@@ -1,10 +1,10 @@
-// Module ID: 18387
-// Function ID: 18388
+// Module ID: 18388
+// Function ID: 18389
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 17697, 1078, 3, 1235, 8004, 15, 9, 13934, 1245, 1253, 17773, 2040, 2]
+// Dependencies: [5, 17, 502, 17698, 1078, 3, 1235, 8004, 15, 9, 13934, 1245, 1253, 17774, 2040, 2]
 // Exports: default
 
-// Module 18387 (executeHeadlessTask)
+// Module 18388 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
@@ -372,7 +372,7 @@ let closure_10 = async function _executeHeadlessTask(name, arg1, arg2) {
   })();
 };
 const AppState = fn(17).AppState;
-const NativeAppStartup = fn(17697);
+const NativeAppStartup = fn(17698);
 ({ initHeadlessTask: closure_7, applicationReady: closure_8 } = NativeAppStartup);
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const size = fn(2);

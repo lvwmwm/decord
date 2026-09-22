@@ -1,9 +1,9 @@
-// Module ID: 17871
-// Function ID: 17872
+// Module ID: 17872
+// Function ID: 17873
 // Name: ConnectGuardianShareModal
 // Dependencies: [19, 17, 7784, 21, 4758, 580, 1119, 2486, 4457, 4961, 12047, 565, 15147, 8698, 8699, 5186, 4754, 15148, 5796, 5839, 558, 568, 11453, 2]
 
-// Module 17871 (ConnectGuardianShareModal)
+// Module 17872 (ConnectGuardianShareModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

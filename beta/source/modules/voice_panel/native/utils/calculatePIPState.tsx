@@ -1,12 +1,12 @@
-// Module ID: 17651
-// Function ID: 17652
+// Module ID: 17652
+// Function ID: 17653
 // Name: calculatePIPState
-// Dependencies: [4774, 4780, 12420, 4779, 4810, 17484, 2]
+// Dependencies: [4774, 4780, 12420, 4779, 4810, 17485, 2]
 // Exports: default
 
-// Module 17651 (calculatePIPState)
+// Module 17652 (calculatePIPState)
 import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17484 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17485 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 
@@ -67,7 +67,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions.getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp13(17484).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp13(17485).SquarePIPReferenceDimensions;
   }
   if (tmp10) {
     tmp10 = tmp;

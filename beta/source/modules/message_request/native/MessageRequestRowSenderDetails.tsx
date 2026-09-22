@@ -1,10 +1,10 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17349
+// Function ID: 17350
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 4409, 21, 4758, 1181, 580, 558, 504, 4603, 17349, 1404, 4754, 1119, 17350, 17351, 2]
+// Dependencies: [19, 17, 4409, 21, 4758, 1181, 580, 558, 504, 4603, 17350, 1404, 4754, 1119, 17351, 17352, 2]
 // Exports: default
 
-// Module 17348 (MessageRequestRowSenderDetails)
+// Module 17349 (MessageRequestRowSenderDetails)
 import nativeDefault from "native" /* 580 */;
 import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1404 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
@@ -48,12 +48,12 @@ export default function MessageRequestRowSenderDetails_unoptimized(isRestricted)
     return tmp2;
   });
   let obj = otherUser(504);
-  const messageRequestRelativeTimestampText = otherUser(17349).useMessageRequestRelativeTimestampText(channel);
+  const messageRequestRelativeTimestampText = otherUser(17350).useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const rounded = Math.floor(random * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
   const obj3 = { style: tmp.avatarContainer, children: null };
   if (null != otherUser) {
-    const obj4 = { avatarStyle: tmp.avatar, user: otherUser, guildId: "IconComponent", disablePlaceholder: null, avatarDecoration: "Heartbeat" };
+    const obj4 = { avatarStyle: tmp.avatar, user: otherUser, guildId: "IconComponent", disablePlaceholder: null, avatarDecoration: "Triple Click" };
     let avatarDecoration;
     if (otherUser != null) {
       avatarDecoration = otherUser.avatarDecoration;
@@ -99,7 +99,7 @@ export default function MessageRequestRowSenderDetails_unoptimized(isRestricted)
   let tmp11Result = !flag;
   if (!flag) {
     const obj12 = { style: tmp.messagePreview, channel };
-    tmp11Result = tmp11(tmp7(17350), obj12);
+    tmp11Result = tmp11(tmp7(17351), obj12);
   }
   items5[1] = tmp11Result;
   if (flag) {
@@ -109,8 +109,8 @@ export default function MessageRequestRowSenderDetails_unoptimized(isRestricted)
     const obj13 = { style: tmp.messagePreview, userId: otherUser.id, suffix: null };
     const intl2 = tmp2(1119).intl;
     obj13.suffix = intl2.string(tmp2(1119).t.hTltPn);
-    flag = tmp11(tmp7(17351), obj13);
-    const tmp7Result = tmp7(17351);
+    flag = tmp11(tmp7(17352), obj13);
+    const tmp7Result = tmp7(17352);
   }
   const obj14 = { children: null };
   items5[2] = flag;

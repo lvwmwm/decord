@@ -1,9 +1,9 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18015
+// Function ID: 18016
 // Name: useLoadGuildStickerWithCreator
 // Dependencies: [5, 32, 19, 1376, 5722, 558, 568, 504, 10680, 2]
 
-// Module 18014 (useLoadGuildStickerWithCreator)
+// Module 18015 (useLoadGuildStickerWithCreator)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

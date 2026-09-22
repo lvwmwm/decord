@@ -1,18 +1,18 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16948
+// Function ID: 16949
 // Name: VibegrationsEffortPicker
-// Dependencies: [109, 32, 19, 17, 21, 558, 568, 16943, 1119, 3682, 5900, 16944, 5901, 4754, 5903, 5822, 7446, 5186, 580, 7396, 7449, 2]
+// Dependencies: [109, 32, 19, 17, 21, 558, 568, 16944, 1119, 3682, 5900, 16945, 5901, 4754, 5903, 5822, 7446, 5186, 580, 7396, 7449, 2]
 // Exports: describeVibegrationsEffort
 
-// Module 16947 (VibegrationsEffortPicker)
+// Module 16948 (VibegrationsEffortPicker)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import TableRadioRow from "TableRadioRow" /* 5900 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
 import ActionSheet from "ActionSheet" /* 7449 */;
-import VibegrationsEffortPresets from "VibegrationsEffortPresets" /* 16943 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16944 */;
+import VibegrationsEffortPresets from "VibegrationsEffortPresets" /* 16944 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -327,10 +327,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((settings) => {
     onChange(arg0) {
       const tmp3 = VibegrationsEffortPresets.VIBEGRATIONS_EFFORT_PRESETS[Number(undefined, arg0)];
       if (null != tmp3) {
-        const result = tmp(16943).vibegrationsPresetTier(tmp3);
+        const result = tmp(16944).vibegrationsPresetTier(tmp3);
         const tmp15 = _objectWithoutProperties(result, closure_4);
         const tmp16 = closure_1_3;
-        const tmpResult = tmp(16943);
+        const tmpResult = tmp(16944);
         let tmp7 = tmp15;
         if (true === result.fast) {
           model = result.model;
@@ -348,8 +348,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((settings) => {
             tmp7 = obj;
           }
         }
-        tmp16(tmp(16943).vibegrationsSettingsForTier(tmp7));
-        const tmpResult2 = tmp(16943);
+        tmp16(tmp(16944).vibegrationsSettingsForTier(tmp7));
+        const tmpResult2 = tmp(16944);
       }
     },
     title: null,

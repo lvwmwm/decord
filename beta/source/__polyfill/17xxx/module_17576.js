@@ -6,4 +6,4 @@
 import registerAsset from "module_1125" /* 1125 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 20, height: 20, scales: [1, 2, 3, 4], hash: "2477b520035213801129f8906948e423", name: "maximize", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "87af1eac5f6e8ada6427505502b6d55f", name: "close", type: "png" });

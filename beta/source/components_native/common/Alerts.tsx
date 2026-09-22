@@ -1,15 +1,15 @@
-// Module ID: 17387
-// Function ID: 17388
+// Module ID: 17388
+// Function ID: 17389
 // Name: Alerts
-// Dependencies: [19, 17, 4750, 14023, 14679, 4949, 11665, 21, 17388, 17389, 17393, 17394, 4758, 580, 4471, 5111, 5169, 7287, 558, 568, 560, 504, 5183, 12572, 1181, 2]
+// Dependencies: [19, 17, 4750, 14023, 14679, 4949, 11665, 21, 17389, 17390, 17394, 17395, 4758, 580, 4471, 5111, 5169, 7287, 558, 568, 560, 504, 5183, 12572, 1181, 2]
 
-// Module 17387 (Alerts)
+// Module 17388 (Alerts)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import nativeDefault from "native" /* 580 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;
 import Dialog from "Dialog" /* 5169 */;
 import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7287 */;
-import ModalRegistryDefault from "ModalRegistry" /* 17388 */;
+import ModalRegistryDefault from "ModalRegistry" /* 17389 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 import PermissionSpeakStore from "PermissionSpeakStore" /* 14023 */;

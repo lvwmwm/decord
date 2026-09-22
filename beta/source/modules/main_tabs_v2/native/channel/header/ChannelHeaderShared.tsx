@@ -316,7 +316,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
       }
     }
   }
-  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: null };
+  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: false };
   const tmp7 = closure_1_8(native.Avatar, obj2);
   cResult[0] = isMobileOnline;
   cResult[1] = isVROnline;
@@ -328,7 +328,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
 }) : ((user) => {
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: null, isMobileOnline: null, isVROnline: null, style: null, autoStatusCutout: null };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: false, isMobileOnline: null, isVROnline: true, style: null, autoStatusCutout: false };
   let tmp3 = null;
   if (!user.isSystemUser()) {
     tmp3 = status;

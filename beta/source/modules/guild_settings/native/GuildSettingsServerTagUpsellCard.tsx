@@ -1,9 +1,9 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18025
+// Function ID: 18026
 // Name: GuildSettingsServerTagUpsellCard
 // Dependencies: [19, 17, 4647, 21, 4758, 580, 558, 568, 4651, 504, 12683, 12651, 5198, 12686, 1119, 4754, 5186, 16558, 5188, 2]
 
-// Module 18024 (GuildSettingsServerTagUpsellCard)
+// Module 18025 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 580 */;
 import Powerups from "Powerups" /* 4651 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;

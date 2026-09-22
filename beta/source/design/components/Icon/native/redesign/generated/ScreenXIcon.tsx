@@ -1,9 +1,9 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17619
+// Function ID: 17620
 // Name: ScreenXIcon
 // Dependencies: [109, 19, 21, 558, 568, 580, 10225, 4461, 2]
 
-// Module 17618 (ScreenXIcon)
+// Module 17619 (ScreenXIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import BaseIconImage from "BaseIconImage" /* 4461 */;

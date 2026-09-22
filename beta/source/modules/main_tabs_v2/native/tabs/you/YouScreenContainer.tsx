@@ -1,9 +1,9 @@
-// Module ID: 17252
-// Function ID: 17253
+// Module ID: 17253
+// Function ID: 17254
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11383, 21, 4758, 580, 558, 568, 1616, 16354, 1482, 4619, 17253, 1369, 2]
+// Dependencies: [19, 17, 11383, 21, 4758, 580, 558, 568, 1616, 16354, 1482, 4619, 17254, 1369, 2]
 
-// Module 17252 (YouScreenContainer)
+// Module 17253 (YouScreenContainer)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 
 const useWindowDimensionsDefault = tmp4(1482);
 const useChatLayoutDefault = tmp4(4619);
-const YouScreenDefault = tmp4(17253);
+const YouScreenDefault = tmp4(17254);
 require = fn;
 const View = fn(17).View;
 const RootNavigatorScreen = fn(11383).RootNavigatorScreen;

@@ -1,13 +1,13 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17246
+// Function ID: 17247
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5343, 17246, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5343, 17247, 2]
 
-// Module 17245 (FriendRequestsSettingsScreen)
+// Module 17246 (FriendRequestsSettingsScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17246 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 17247 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

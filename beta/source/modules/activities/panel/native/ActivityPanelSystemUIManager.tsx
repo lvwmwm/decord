@@ -1,14 +1,14 @@
-// Module ID: 17471
-// Function ID: 17472
+// Module ID: 17472
+// Function ID: 17473
 // Name: ActivityPanelSystemUIManager
-// Dependencies: [19, 9313, 21, 558, 568, 17448, 1368, 9646, 9648, 2]
+// Dependencies: [19, 9313, 21, 558, 568, 17449, 1368, 9646, 9648, 2]
 
-// Module 17471 (ActivityPanelSystemUIManager)
+// Module 17472 (ActivityPanelSystemUIManager)
 import c from "c" /* 568 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import StatusBarDefault from "StatusBar" /* 9646 */;
 import HomeIndicatorDefault from "HomeIndicator" /* 9648 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17448 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17449 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

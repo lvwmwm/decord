@@ -1,9 +1,9 @@
-// Module ID: 18245
-// Function ID: 18246
+// Module ID: 18246
+// Function ID: 18247
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7222, 4754, 4725, 18246, 1984, 18250, 1181, 18249, 1119, 7405, 1488, 15486, 18251, 1245, 4938, 15492, 18247, 10525, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 7222, 4754, 4725, 18247, 1984, 18251, 1181, 18250, 1119, 7405, 1488, 15486, 18252, 1245, 4938, 15492, 18248, 10525, 2]
 
-// Module 18245 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 18246 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -14,8 +14,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725
 import Text_Text from "Text/Text" /* 4754 */;
 import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7222 */;
 import _modDef7405 from "module_7405" /* 7405 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18249 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 18251 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18250 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 18252 */;
 import noop from "module_19" /* 19 */;
 
 const AppAnalyticsUtils = tmp(4938);
@@ -181,11 +181,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = c.c(14);
   ({ description, type, name } = channel.channel);
   if (cResult[0] !== type) {
-    const privateChannelIconComponent = tmp(18249).getPrivateChannelIconComponent(type);
+    const privateChannelIconComponent = tmp(18250).getPrivateChannelIconComponent(type);
     cResult[0] = type;
     cResult[1] = privateChannelIconComponent;
     let tmp4 = privateChannelIconComponent;
-    const tmpResult = tmp(18249);
+    const tmpResult = tmp(18250);
   } else {
     tmp4 = cResult[1];
   }
@@ -576,7 +576,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
                                 }
                               }
                               function handleViewEntireTemplate() {
-                                ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18246, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview });
+                                ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18247, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview });
                               }
                               if (cResult[46] === handleViewEntireTemplate) {
                                 class W {
@@ -927,7 +927,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   callback1 = obj3.useCallback((selectedTemplate, arg1) => {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate: tmp, newPricesToPick: suggestedUnusedPrices };
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18250, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18251, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       tmp(selectedTemplate, arg1);
     }
@@ -937,7 +937,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((template) => {
   const obj7 = {
     style: tmp.contentContainer,
     onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18246, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview: callback1 });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18247, dependencyMap.paths), "TierTemplateCard", { template, guildId, handleSelectTemplateInPreview: callback1 });
     },
     children: null
   };

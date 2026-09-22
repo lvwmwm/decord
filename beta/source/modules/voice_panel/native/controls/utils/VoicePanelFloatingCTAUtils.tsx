@@ -1,9 +1,9 @@
-// Module ID: 17501
-// Function ID: 17502
+// Module ID: 17502
+// Function ID: 17503
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 4774, 17502, 7773, 2045, 2051, 21, 558, 568, 4693, 12419, 17470, 9746, 565, 9755, 9749, 9856, 4725, 9760, 17503, 9858, 8878, 9861, 1119, 5846, 17496, 10286, 17504, 7633, 8543, 4579, 7176, 2031, 17505, 12691, 8071, 2]
+// Dependencies: [32, 19, 17, 4774, 17503, 7773, 2045, 2051, 21, 558, 568, 4693, 12419, 17471, 9746, 565, 9755, 9749, 9856, 4725, 9760, 17504, 9858, 8878, 9861, 1119, 5846, 17497, 10286, 17505, 7633, 8543, 4579, 7176, 2031, 17506, 12691, 8071, 2]
 
-// Module 17501 (VoicePanelFloatingCTAUtils)
+// Module 17502 (VoicePanelFloatingCTAUtils)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import dismissible_content from "dismissible_content" /* 2031 */;
@@ -13,14 +13,14 @@ import XSmallIcon from "XSmallIcon" /* 5846 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8543 */;
 import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9760 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17470 */;
-import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 17503 */;
-import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 17504 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17505 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17471 */;
+import GuildScheduledEventsNoticesActionCreators from "GuildScheduledEventsNoticesActionCreators" /* 17504 */;
+import useChannelFloatingCTAContentDefault from "useChannelFloatingCTAContent" /* 17505 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17506 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
-import EventBannerStore from "EventBannerStore" /* 17502 */;
+import EventBannerStore from "EventBannerStore" /* 17503 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
 const require = globalThis.__r;
@@ -94,7 +94,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   stateFromStores(4693)();
   let obj = imminentUpcomingGuildEvents(568);
   const tmp4 = stateFromStores;
-  const tmp6 = stateFromStores(17470)(noop.useContext(stateFromStores(12419)).channelId);
+  const tmp6 = stateFromStores(17471)(noop.useContext(stateFromStores(12419)).channelId);
   id = undefined;
   if (id != null) {
     id = id.id;

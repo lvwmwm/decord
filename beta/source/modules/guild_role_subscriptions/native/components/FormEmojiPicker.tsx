@@ -1,9 +1,9 @@
-// Module ID: 18219
-// Function ID: 18220
+// Module ID: 18220
+// Function ID: 18221
 // Name: FormEmojiPicker
-// Dependencies: [19, 1078, 1379, 21, 4758, 5743, 580, 558, 568, 14169, 4413, 15500, 15499, 5802, 18220, 10436, 4417, 1119, 1181, 10176, 10017, 2]
+// Dependencies: [19, 1078, 1379, 21, 4758, 5743, 580, 558, 568, 14169, 4413, 15500, 15499, 5802, 18221, 10436, 4417, 1119, 1181, 10176, 10017, 2]
 
-// Module 18219 (FormEmojiPicker)
+// Module 18220 (FormEmojiPicker)
 import nativeDefault from "native" /* 580 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10436 */;
 import noop from "module_19" /* 19 */;
@@ -210,7 +210,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
           return;
         }
       }
-      obj6.source = tmp5(18220);
+      obj6.source = tmp5(18221);
       tmp17 = closure_4(tmp16, obj6);
     }
     cResult[3] = tmp7;
@@ -258,7 +258,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     let tmp9 = closure_4(tmp2(15499), obj);
     let tmp10 = closure_4;
   } else {
-    const obj3 = { resizeMode: "contain", source: tmp2(18220) };
+    const obj3 = { resizeMode: "contain", source: tmp2(18221) };
     tmp9 = closure_4(tmp2(5802), obj3);
     tmp10 = closure_4;
     const tmp2Result3 = tmp2(5802);

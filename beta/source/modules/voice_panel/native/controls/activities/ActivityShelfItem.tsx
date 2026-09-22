@@ -1,9 +1,9 @@
-// Module ID: 17570
-// Function ID: 17571
+// Module ID: 17571
+// Function ID: 17572
 // Name: ActivityShelfItem
-// Dependencies: [19, 1078, 1185, 21, 4758, 580, 4608, 558, 568, 12281, 12187, 5804, 17568, 1883, 9572, 7770, 9735, 9131, 17567, 12226, 1181, 17571, 4471, 5341, 17569, 4910, 12286, 1119, 12942, 4754, 2]
+// Dependencies: [19, 1078, 1185, 21, 4758, 580, 4608, 558, 568, 12281, 12187, 5804, 17569, 1883, 9572, 7770, 9735, 9131, 17568, 12226, 1181, 17572, 4471, 5341, 17570, 4910, 12286, 1119, 12942, 4754, 2]
 
-// Module 17570 (ActivityShelfItem)
+// Module 17571 (ActivityShelfItem)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1883 */;
@@ -18,9 +18,9 @@ import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground"
 import useActivityShelfItem from "useActivityShelfItem" /* 12187 */;
 import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12281 */;
 import _modDef12942 from "module_12942" /* 12942 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17567 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17568 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17569 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 17568 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 17569 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17570 */;
 import noop from "module_19" /* 19 */;
 
 const useActivityShelfItemDefault = useActivityShelfItem;
@@ -97,7 +97,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj3 = { channelId: id1, applicationId: id, applicationName: name, submitting };
-        const tmp16 = timestampProducer(tmp6(17568), obj3);
+        const tmp16 = timestampProducer(tmp6(17569), obj3);
         cResult[7] = id;
         cResult[8] = name;
         cResult[9] = submitting;
@@ -484,7 +484,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       let tmp36 = null;
                                       if (isTestModeForApplication) {
                                         const obj5 = { style: tmp5.developerIconContainer, children: null };
-                                        const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp7(17571), color: tmp5.developerIconColor.color };
+                                        const obj6 = { size: tmp(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp7(17572), color: tmp5.developerIconColor.color };
                                         obj5.children = timestampProducer(tmp(1181).Icon, obj6);
                                         tmp36 = timestampProducer(tmp7(5804), obj5);
                                         const tmp7Result = tmp7(5804);
@@ -529,7 +529,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                       }
                       const obj10 = { accessibilityLabel: activityItem.application.name, imageBackground, aspectRatio: result1 };
-                      const tmp24 = timestampProducer(tmp7(17567), obj10);
+                      const tmp24 = timestampProducer(tmp7(17568), obj10);
                       cResult[22] = activityItem.application.name;
                       cResult[23] = imageBackground;
                       cResult[24] = result1;
@@ -632,7 +632,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15Result3 = null;
     if (isTestModeForApplication) {
       const obj9 = { style: tmp.developerIconContainer, children: null };
-      const obj10 = { size: tmp8(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(17571), color: tmp.developerIconColor.color };
+      const obj10 = { size: tmp8(1181).Icon.Sizes.REFRESH_SMALL_16, source: tmp3(17572), color: tmp.developerIconColor.color };
       obj9.children = tmp15(tmp8(1181).Icon, obj10);
       tmp15Result3 = tmp15(tmp3(5804), obj9);
       const tmp3Result4 = tmp3(5804);

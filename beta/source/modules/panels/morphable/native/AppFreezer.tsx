@@ -1,9 +1,9 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16865
+// Function ID: 16866
 // Name: AppFreezer
 // Dependencies: [19, 8566, 21, 5804, 558, 568, 5141, 2]
 
-// Module 16864 (AppFreezer)
+// Module 16865 (AppFreezer)
 import NativeViewDefault from "NativeView" /* 5804 */;
 import noop from "module_19" /* 19 */;
 import AppFreezeStore from "AppFreezeStore" /* 8566 */;

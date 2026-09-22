@@ -1,9 +1,9 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18319
+// Function ID: 18320
 // Name: LibdiscoreExperimentManager
 // Dependencies: [1239, 1354, 2071, 560, 1438, 7365, 2]
 
-// Module 18318 (LibdiscoreExperimentManager)
+// Module 18319 (LibdiscoreExperimentManager)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import js_shim_shim from "js_shim/shim" /* 1354 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;

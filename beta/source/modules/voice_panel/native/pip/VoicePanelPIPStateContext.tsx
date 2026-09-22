@@ -1,10 +1,10 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17487
+// Function ID: 17488
 // Name: VoicePanelPIPStateContext
 // Dependencies: [19, 7321, 558, 2]
 // Exports: usePIPState
 
-// Module 17486 (VoicePanelPIPStateContext)
+// Module 17487 (VoicePanelPIPStateContext)
 import noop from "module_19" /* 19 */;
 
 let size = { id: "state", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: "sku", showSecondaryPIP: null, scale: null };

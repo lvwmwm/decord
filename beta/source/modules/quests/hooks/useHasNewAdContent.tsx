@@ -1,9 +1,9 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17262
+// Function ID: 17263
 // Name: useHasNewAdContent
 // Dependencies: [32, 15336, 7944, 5663, 1095, 558, 568, 11613, 7940, 504, 5670, 7632, 2031, 2]
 
-// Module 17261 (useHasNewAdContent)
+// Module 17262 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1095 */;
 import AdCreativeType from "AdCreativeType" /* 5670 */;
 import _slicedToArray from "module_32" /* 32 */;

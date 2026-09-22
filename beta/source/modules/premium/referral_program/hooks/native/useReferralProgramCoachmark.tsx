@@ -1,15 +1,15 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17257
+// Function ID: 17258
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1078, 2042, 21, 4758, 558, 568, 5802, 17257, 4579, 2031, 8320, 7632, 1119, 7626, 580, 2]
+// Dependencies: [32, 19, 17, 1078, 2042, 21, 4758, 558, 568, 5802, 17258, 4579, 2031, 8320, 7632, 1119, 7626, 580, 2]
 
-// Module 17256 (useReferralProgramCoachmark)
+// Module 17257 (useReferralProgramCoachmark)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import FastImageDefault from "FastImage" /* 5802 */;
 import openUserSettings from "openUserSettings" /* 7626 */;
-import _modDef17257 from "module_17257" /* 17257 */;
+import _modDef17258 from "module_17258" /* 17258 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -27,8 +27,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(5);
   const tmp3 = closure_9();
   if (cResult[0] !== tmp3.coachmarkImage) {
-    const obj2 = { source: _modDef17257, style: tmp3.coachmarkImage };
-    const tmp8 = jsx(FastImageDefault, { source: _modDef17257, style: tmp3.coachmarkImage });
+    const obj2 = { source: _modDef17258, style: tmp3.coachmarkImage };
+    const tmp8 = jsx(FastImageDefault, { source: _modDef17258, style: tmp3.coachmarkImage });
     cResult[0] = tmp3.coachmarkImage;
     cResult[1] = tmp8;
     let tmp4 = tmp8;
@@ -49,8 +49,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_9();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
-  const obj2 = { source: _modDef17257, style: tmp.coachmarkImage };
-  obj.children = jsx(FastImageDefault, { source: _modDef17257, style: tmp.coachmarkImage });
+  const obj2 = { source: _modDef17258, style: tmp.coachmarkImage };
+  obj.children = jsx(FastImageDefault, { source: _modDef17258, style: tmp.coachmarkImage });
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
 ReactCompilerGating = fn(558);

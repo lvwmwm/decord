@@ -1,14 +1,14 @@
-// Module ID: 16876
-// Function ID: 16877
+// Module ID: 16877
+// Function ID: 16878
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 4757, 21, 558, 568, 16877, 16883, 16884, 504, 16872, 2]
+// Dependencies: [109, 19, 17, 4757, 21, 558, 568, 16878, 16884, 16885, 504, 16873, 2]
 
-// Module 16876 (NavTTIView)
+// Module 16877 (NavTTIView)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 16877 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16883 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16884 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 16878 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16884 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16885 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 4757 */;
@@ -223,7 +223,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj4 = { name: tmp10, regionId: hierarchy.regionId, tracking: tmp6, descendantTracking: tmp4, includedDescendants: null, excludedDescendants: null, hierarchyDepth: null, violation: null };
     ({ includedDescendants: obj3.includedDescendants, excludedDescendants: obj3.excludedDescendants, depth: obj3.hierarchyDepth, violation: obj3.violation } = hierarchy);
-    const tmp16 = state(tmp(16884).NavigationTTIRegionDebugOverlay, obj4);
+    const tmp16 = state(tmp(16885).NavigationTTIRegionDebugOverlay, obj4);
     cResult[9] = tmp4;
     cResult[10] = hierarchy.depth;
     cResult[11] = hierarchy.excludedDescendants;
@@ -264,9 +264,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       if (cResult[2] === tmp4) {
         let tmp5 = cResult[3];
       }
-      const navigationTTIRegionHierarchy = tmp(16883).useNavigationTTIRegionHierarchy(tmp5);
-      const tmpResult = tmp(16883);
-      const navigationTTIRegionMeasurement = tmp(16877).useNavigationTTIRegionMeasurement("include", children.name);
+      const navigationTTIRegionHierarchy = tmp(16884).useNavigationTTIRegionHierarchy(tmp5);
+      const tmpResult = tmp(16884);
+      const navigationTTIRegionMeasurement = tmp(16878).useNavigationTTIRegionMeasurement("include", children.name);
       if (cResult[4] === navigationTTIRegionHierarchy) {
         if (cResult[5] === navigationTTIRegionMeasurement) {
           if (cResult[6] === children) {
@@ -282,7 +282,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       cResult[6] = children;
       cResult[7] = tmp11;
       tmp8 = tmp11;
-      const tmpResult2 = tmp(16877);
+      const tmpResult2 = tmp(16878);
     }
   }
   const obj3 = { name: children.name, tracking: children.tracking, hasChildren: tmp4 };
@@ -320,9 +320,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
         if (cResult[5] === tmp6) {
           let tmp7 = cResult[6];
         }
-        const navigationTTIRegionHierarchy = tmp(16883).useNavigationTTIRegionHierarchy(tmp7);
-        const tmpResult = tmp(16883);
-        const navigationTTIRegionMeasurement = tmp(16877).useNavigationTTIRegionMeasurement("exclude", navigationTTIRegionHierarchy.regionId);
+        const navigationTTIRegionHierarchy = tmp(16884).useNavigationTTIRegionHierarchy(tmp7);
+        const tmpResult = tmp(16884);
+        const navigationTTIRegionMeasurement = tmp(16878).useNavigationTTIRegionMeasurement("exclude", navigationTTIRegionHierarchy.regionId);
         if (cResult[7] === navigationTTIRegionHierarchy) {
           if (cResult[8] === navigationTTIRegionMeasurement) {
             if (cResult[9] === name) {
@@ -338,7 +338,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
         cResult[9] = name;
         cResult[10] = tmp13;
         tmp10 = tmp13;
-        const tmpResult2 = tmp(16877);
+        const tmpResult2 = tmp(16878);
       }
     }
   }
@@ -477,7 +477,7 @@ export const NavTTIView = ReactCompilerGating.isReactCompilerEnabled() ? ((track
       }
       return tmp12;
     }
-    tmpResult2 = tmp(16872);
+    tmpResult2 = tmp(16873);
   }
 }) : ((tracking) => {
   const items = [DevSettingsStore];

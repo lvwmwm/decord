@@ -1,9 +1,9 @@
-// Module ID: 17716
-// Function ID: 17717
+// Module ID: 17717
+// Function ID: 17718
 // Name: useFormattedEndTime
 // Dependencies: [1376, 1119, 558, 568, 504, 2]
 
-// Module 17716 (useFormattedEndTime)
+// Module 17717 (useFormattedEndTime)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;

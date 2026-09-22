@@ -115,7 +115,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { disabled: true, reason: "Boolean" };
+      const obj4 = { disabled: true, reason: "a" };
       cResult[4] = obj4;
       let tmp13 = obj4;
     } else {
@@ -125,7 +125,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { disabled: true, reason: "Boolean" };
+      const obj5 = { disabled: true, reason: "a" };
       cResult[3] = obj5;
       tmp11 = obj5;
     } else {
@@ -147,7 +147,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
   items1[4] = tmp2.type;
   return stateFromStores.useMemo(() => {
     if (null == stateFromStores) {
-      return { disabled: true, reason: "Boolean" };
+      return { disabled: true, reason: "a" };
     } else {
       if (closure_4.type !== constants.LEVEL_ACTIVATED) {
         if (closure_4.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
@@ -191,7 +191,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
           return obj;
         }
       }
-      return { disabled: true, reason: "Boolean" };
+      return { disabled: true, reason: "a" };
     }
     tmp = stateFromStores;
   }, items1);

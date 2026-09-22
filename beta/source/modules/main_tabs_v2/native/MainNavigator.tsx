@@ -1,7 +1,7 @@
 // Module ID: 16274
 // Function ID: 16275
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 16275, 1078, 21, 4758, 1368, 4737, 14456, 16276, 16277, 16336, 558, 568, 17214, 17221, 17224, 17252, 17278, 8161, 17336, 17339, 17343, 17345, 17374, 17379, 4625, 1486, 1614, 4938, 8112, 17380, 17429, 565, 9648, 4619, 7246, 5745, 17432, 11230, 12087, 17663, 17694, 10185, 17268, 2]
+// Dependencies: [32, 19, 17, 502, 16275, 1078, 21, 4758, 1368, 4737, 14456, 16276, 16277, 16336, 558, 568, 17215, 17222, 17225, 17253, 17279, 8161, 17337, 17340, 17344, 17346, 17375, 17380, 4625, 1486, 1614, 4938, 8112, 17381, 17430, 565, 9648, 4619, 7246, 5745, 17433, 11230, 12087, 17664, 17695, 10185, 17269, 2]
 // Exports: getChannelScreen
 
 // Module 16274 (MainNavigator)
@@ -13,11 +13,11 @@ import getNavigationModalPresentationDefault from "getNavigationModalPresentatio
 import StartupProfiler from "StartupProfiler" /* 12087 */;
 import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 14456 */;
 import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 16276 */;
-import AutoAnalytics from "AutoAnalytics" /* 17214 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 17268 */;
-import AppComponents from "AppComponents" /* 17432 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 17663 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 17694 */;
+import AutoAnalytics from "AutoAnalytics" /* 17215 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 17269 */;
+import AppComponents from "AppComponents" /* 17433 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 17664 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 17695 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

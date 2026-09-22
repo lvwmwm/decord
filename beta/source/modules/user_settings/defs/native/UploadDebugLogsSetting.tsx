@@ -115,7 +115,7 @@ const module_562 = fn(562);
 let closure_7 = module_562.create(() => ({ isDisabled: false, isUploading: false }));
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f70823 = () => {
+const f70824 = () => {
 
 };
 ReactCompilerGating = fn(558);
@@ -125,7 +125,7 @@ fn = () => closure_7().isDisabled;
 const SettingBuilders = fn(11594);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
-  if (typeof f70823 === "function") {
+  if (typeof f70824 === "function") {
     const isUploading = closure_7().isUploading;
     if (cResult[0] !== isUploading) {
       let tmp4 = null;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     throw new TypeError("Trying to call a non-function");
   }
 }) : (() => {
-  if (typeof f70823 === "function") {
+  if (typeof f70824 === "function") {
     let tmp2 = null;
     if (closure_7().isUploading) {
       tmp2 = <ActivityIndicator />;
@@ -172,7 +172,7 @@ const pressable = SettingBuilders.createPressable({
   },
   useTrailing: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const cResult = c.c(2);
-    if (typeof f70823 === "function") {
+    if (typeof f70824 === "function") {
       const isUploading = closure_7().isUploading;
       if (cResult[0] !== isUploading) {
         let tmp4 = null;
@@ -190,7 +190,7 @@ const pressable = SettingBuilders.createPressable({
       throw new TypeError("Trying to call a non-function");
     }
   }) : (() => {
-    if (typeof f70823 === "function") {
+    if (typeof f70824 === "function") {
       let tmp2 = null;
       if (closure_7().isUploading) {
         tmp2 = <ActivityIndicator />;

@@ -1,9 +1,9 @@
-// Module ID: 17130
-// Function ID: 17131
+// Module ID: 17131
+// Function ID: 17132
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12214, 4754, 1181, 17131, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12214, 4754, 1181, 17132, 2]
 
-// Module 17130 (guild_channels/VoiceOrStageSummaryRow)
+// Module 17131 (guild_channels/VoiceOrStageSummaryRow)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -576,7 +576,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     const items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
     obj5.style = items3;
-    let obj6 = { size: tmp(tmp2[9]).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: require("module_17131") };
+    let obj6 = { size: tmp(tmp2[9]).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: require("module_17132") };
     const items4 = [closure_4(tmp(tmp2[9]).Icon, obj6), ];
     let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
     items4[1] = closure_4(tmp(tmp2[8]).Text, obj7);

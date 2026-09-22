@@ -1,24 +1,24 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17420
+// Function ID: 17421
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 19, 8466, 17402, 10963, 1224, 2039, 1078, 1378, 1088, 558, 568, 504, 17420, 1613, 8324, 7694, 17421, 13690, 11036, 11035, 11041, 8471, 8458, 4579, 2031, 17422, 17425, 17400, 17410, 9975, 12097, 2]
+// Dependencies: [32, 19, 8466, 17403, 10963, 1224, 2039, 1078, 1378, 1088, 558, 568, 504, 17421, 1613, 8324, 7694, 17422, 13690, 11036, 11035, 11041, 8471, 8458, 4579, 2031, 17423, 17426, 17401, 17411, 9975, 12097, 2]
 
-// Module 17419 (useMainViewTooltipActionSheetEligibilityMap)
+// Module 17420 (useMainViewTooltipActionSheetEligibilityMap)
 import dismissible_content from "dismissible_content" /* 2031 */;
 import BadgeId from "BadgeId" /* 8458 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8471 */;
-import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 17420 */;
+import MainViewTooltipActionSheetsDisabledExperimentDefault from "MainViewTooltipActionSheetsDisabledExperiment" /* 17421 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17402 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17403 */;
 import PromotionsStore from "PromotionsStore" /* 10963 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2039 */;
 
 const require = globalThis.__r;
 
-const useGiftingPromotionAssetsReadyDefault = tmp4(17422);
+const useGiftingPromotionAssetsReadyDefault = tmp4(17423);
 require = fn;
 const PlatformTypes = fn(1078).PlatformTypes;
 const PremiumConstants = fn(1378);
@@ -970,7 +970,7 @@ export const useMainViewTooltipActionSheetMap = ReactCompilerGating.isReactCompi
   const premiumDiscountOffer = isEligibleToShowGiftingBadgeCoachmark(8324).usePremiumDiscountOffer();
   const tmpResult20 = isEligibleToShowGiftingBadgeCoachmark(8324);
   const premiumTrialOffer = isEligibleToShowGiftingBadgeCoachmark(7694).usePremiumTrialOffer();
-  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(17421).PremiumTrialOfferActionSheetKillSwitchExperiment;
+  const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(17422).PremiumTrialOfferActionSheetKillSwitchExperiment;
   const tmpResult21 = isEligibleToShowGiftingBadgeCoachmark(7694);
   const promotionMarketingComponent = isEligibleToShowGiftingBadgeCoachmark(13690).usePromotionMarketingComponent(tmp(11036).MarketingComponentType.MOBILE_BOTTOM_SHEET);
   let oneofKind;
@@ -1051,22 +1051,22 @@ export const useMainViewTooltipActionSheetMap = ReactCompilerGating.isReactCompi
   const tmp4Result = useGiftingPromotionAssetsReadyDefault;
   ({ isGiftCoachmarkAssetReady, isGiftReminderAssetReady } = useGiftingPromotionAssetsReadyDefault(tmp22, tmp23));
   const tmp4ResultResult = useGiftingPromotionAssetsReadyDefault(tmp22, tmp23);
-  const nitroFileUploadAnnouncementEligible = isEligibleToShowGiftingBadgeCoachmark(17425).useNitroFileUploadAnnouncementEligible(tmp5);
-  const tmpResult30 = isEligibleToShowGiftingBadgeCoachmark(17425);
-  const nitroFileUploadUpsellEligible = isEligibleToShowGiftingBadgeCoachmark(17425).useNitroFileUploadUpsellEligible(tmp5);
-  const tmpResult31 = isEligibleToShowGiftingBadgeCoachmark(17425);
+  const nitroFileUploadAnnouncementEligible = isEligibleToShowGiftingBadgeCoachmark(17426).useNitroFileUploadAnnouncementEligible(tmp5);
+  const tmpResult30 = isEligibleToShowGiftingBadgeCoachmark(17426);
+  const nitroFileUploadUpsellEligible = isEligibleToShowGiftingBadgeCoachmark(17426).useNitroFileUploadUpsellEligible(tmp5);
+  const tmpResult31 = isEligibleToShowGiftingBadgeCoachmark(17426);
   const items8 = [, ];
   ({ LEAGUE_OF_LEGENDS: arr9[0], RIOT_GAMES: arr9[1] } = PlatformTypes);
-  const shouldShowRobloxConnectionCoachmark = isEligibleToShowGiftingBadgeCoachmark(17400).useShouldShowRobloxConnectionCoachmark();
+  const shouldShowRobloxConnectionCoachmark = isEligibleToShowGiftingBadgeCoachmark(17401).useShouldShowRobloxConnectionCoachmark();
   const tmp28 = PlatformTypes;
-  const tmpResult32 = isEligibleToShowGiftingBadgeCoachmark(17400);
-  const shouldShowConnectionDeprecationBottomSheet = isEligibleToShowGiftingBadgeCoachmark(17410).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
-  const tmpResult33 = isEligibleToShowGiftingBadgeCoachmark(17410);
+  const tmpResult32 = isEligibleToShowGiftingBadgeCoachmark(17401);
+  const shouldShowConnectionDeprecationBottomSheet = isEligibleToShowGiftingBadgeCoachmark(17411).useShouldShowConnectionDeprecationBottomSheet({ deprecatedPlatformTypes: items8 });
+  const tmpResult33 = isEligibleToShowGiftingBadgeCoachmark(17411);
   const obj5 = { deprecatedPlatformTypes: null };
   const items9 = [PlatformTypes.BATTLENET];
   obj5.deprecatedPlatformTypes = items9;
-  const shouldShowConnectionDeprecationBottomSheet1 = isEligibleToShowGiftingBadgeCoachmark(17410).useShouldShowConnectionDeprecationBottomSheet(obj5);
-  const tmpResult34 = isEligibleToShowGiftingBadgeCoachmark(17410);
+  const shouldShowConnectionDeprecationBottomSheet1 = isEligibleToShowGiftingBadgeCoachmark(17411).useShouldShowConnectionDeprecationBottomSheet(obj5);
+  const tmpResult34 = isEligibleToShowGiftingBadgeCoachmark(17411);
   const isDisplayNameStylesFlywheelSettersEnabled = isEligibleToShowGiftingBadgeCoachmark(9975).useIsDisplayNameStylesFlywheelSettersEnabled(tmp5);
   isEligibleToShowGiftingBadgeCoachmark(12097);
   const obj6 = {};

@@ -1,9 +1,9 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17267
+// Function ID: 17268
 // Name: MobileShopButtonCoachmark
 // Dependencies: [19, 17, 2042, 21, 4758, 580, 558, 568, 1119, 10452, 2]
 
-// Module 17266 (MobileShopButtonCoachmark)
+// Module 17267 (MobileShopButtonCoachmark)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import noop from "module_19" /* 19 */;

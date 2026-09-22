@@ -17,8 +17,8 @@ let closure_5 = _classPrivateFieldKey("registrations");
 class WorkletEventHandlerNative {
   constructor(arg0, arg1) {
     tmp = c2(this, WorkletEventHandlerWeb);
-    definePropertyResult = Object.defineProperty(this, closure_4, { writable: true, value: "Boolean" });
-    definePropertyResult1 = Object.defineProperty(this, hasOwnProperty, { writable: true, value: "Boolean" });
+    definePropertyResult = Object.defineProperty(this, closure_4, { writable: true, value: "a" });
+    definePropertyResult1 = Object.defineProperty(this, hasOwnProperty, { writable: true, value: "a" });
     this.worklet = global;
     this.eventNames = fn;
     tmp4 = closure_3(this, closure_4);

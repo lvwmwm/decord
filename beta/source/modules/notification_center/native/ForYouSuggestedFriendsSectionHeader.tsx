@@ -1,9 +1,9 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 16781
+// Function ID: 16782
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
 
-// Module 16780 (ForYouSuggestedFriendsSectionHeader)
+// Module 16781 (ForYouSuggestedFriendsSectionHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

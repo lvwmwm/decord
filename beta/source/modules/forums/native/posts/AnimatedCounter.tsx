@@ -387,7 +387,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
       obj = { formatter: closure_1, springConfig: null, count: null, state: null, cleanUp: null, height: null, textColor: null, textVariant: null, textStyle: null };
       springStandard = springConfig;
       tmp = jsx;
-      tmp2 = f57039;
+      tmp2 = f57040;
       if (null == springConfig) {
         tmp3 = closure_0;
         tmp4 = closure_2;

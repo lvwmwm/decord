@@ -1,10 +1,10 @@
-// Module ID: 18028
-// Function ID: 18029
+// Module ID: 18029
+// Function ID: 18030
 // Name: useGuildTagBadgeCollection
 // Dependencies: [19, 9834, 4647, 8207, 504, 2]
 // Exports: default
 
-// Module 18028 (useGuildTagBadgeCollection)
+// Module 18029 (useGuildTagBadgeCollection)
 import _mod19 from "module_19" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 4647 */;

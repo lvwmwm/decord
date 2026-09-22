@@ -1,12 +1,12 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 16978
+// Function ID: 16979
 // Name: VibegrationsDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4725, 16978, 9310, 1119, 3682, 4754, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4725, 16979, 9310, 1119, 3682, 4754, 2]
 
-// Module 16977 (VibegrationsDesignFeedbackOverlay)
+// Module 16978 (VibegrationsDesignFeedbackOverlay)
 import nativeDefault from "native" /* 580 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsDesignRemarkSheet from "VibegrationsDesignRemarkSheet" /* 16978 */;
+import VibegrationsDesignRemarkSheet from "VibegrationsDesignRemarkSheet" /* 16979 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -73,7 +73,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16978).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
             const obj = first(4725);
           }
         };
@@ -91,7 +91,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16978).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
             const obj = first(4725);
           }
         };
@@ -107,7 +107,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16978).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
             const obj = first(4725);
           }
         };
@@ -126,7 +126,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         return () => {
           closure_1_9.current = false;
           if (ref.current) {
-            first(4725).hideActionSheet(projectId(16978).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+            first(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
             const obj = first(4725);
           }
         };
@@ -277,7 +277,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     return () => {
       closure_1_9.current = false;
       if (ref.current) {
-        size(4725).hideActionSheet(projectId(16978).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
+        size(4725).hideActionSheet(projectId(16979).VIBEGRATIONS_DESIGN_REMARK_SHEET_KEY);
         const obj = size(4725);
       }
     };

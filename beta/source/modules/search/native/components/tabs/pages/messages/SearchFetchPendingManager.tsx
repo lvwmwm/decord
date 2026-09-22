@@ -1,9 +1,9 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17175
+// Function ID: 17176
 // Name: SearchFetchPendingManager
 // Dependencies: [19, 12486, 558, 568, 5813, 2]
 
-// Module 17174 (SearchFetchPendingManager)
+// Module 17175 (SearchFetchPendingManager)
 import useInitialValueDefault from "useInitialValue" /* 5813 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
 import noop from "module_19" /* 19 */;

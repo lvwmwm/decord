@@ -1,9 +1,9 @@
-// Module ID: 17754
-// Function ID: 17755
+// Module ID: 17755
+// Function ID: 17756
 // Name: ChannelResyncManager
 // Dependencies: [5, 502, 2045, 5108, 2067, 5496, 1078, 2052, 3, 1095, 7365, 1245, 577, 7893, 13936, 1389, 1259, 2]
 
-// Module 17754 (ChannelResyncManager)
+// Module 17755 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;

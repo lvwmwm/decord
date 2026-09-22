@@ -1,9 +1,9 @@
-// Module ID: 18277
-// Function ID: 18278
+// Module ID: 18278
+// Function ID: 18279
 // Name: MessageSendFailureNotificationManager
 // Dependencies: [2099, 4580, 1376, 1983, 1078, 9315, 12959, 12961, 9553, 1119, 7365, 2]
 
-// Module 18277 (MessageSendFailureNotificationManager)
+// Module 18278 (MessageSendFailureNotificationManager)
 import util from "util" /* 1119 */;
 import PushNotificationDefault from "PushNotification" /* 9553 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 12959 */;

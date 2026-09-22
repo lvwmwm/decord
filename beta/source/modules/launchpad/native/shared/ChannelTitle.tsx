@@ -1,13 +1,13 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17141
+// Function ID: 17142
 // Name: ChannelTitle
-// Dependencies: [19, 4940, 21, 4758, 580, 558, 568, 17136, 4754, 2]
+// Dependencies: [19, 4940, 21, 4758, 580, 558, 568, 17137, 4754, 2]
 
-// Module 17140 (ChannelTitle)
+// Module 17141 (ChannelTitle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

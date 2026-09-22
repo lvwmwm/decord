@@ -1,9 +1,9 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 17713
+// Function ID: 17714
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2113, 1376, 1078, 21, 4758, 558, 568, 504, 1488, 1982, 1616, 1119, 5084, 5183, 5186, 580, 4754, 1368, 17711, 4710, 5341, 2]
+// Dependencies: [109, 19, 17, 2113, 1376, 1078, 21, 4758, 558, 568, 504, 1488, 1982, 1616, 1119, 5084, 5183, 5186, 580, 4754, 1368, 17712, 4710, 5341, 2]
 
-// Module 17712 (HcaptchaModal)
+// Module 17713 (HcaptchaModal)
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5084 */;
 import useBackPressHandlerDefault from "useBackPressHandler" /* 5183 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -306,12 +306,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged = Object.assign(tmp4);
     obj8.languageCode = LocaleStore.locale;
     obj8.onMessage = tmp5;
-    obj7.children = closure_12(tmp18(17711), obj8);
+    obj7.children = closure_12(tmp18(17712), obj8);
     const tmp40 = closure_12(closure_8, obj7);
     cResult[15] = tmp4;
     cResult[16] = tmp5;
     cResult[17] = tmp40;
-    const tmp18Result = tmp18(17711);
+    const tmp18Result = tmp18(17712);
   }
   let tmp28Result = !tmp16;
   if (!tmp16) {
@@ -405,11 +405,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(tmp);
   obj8.languageCode = LocaleStore.locale;
   obj8.onMessage = onMessage;
-  obj7.children = closure_12(onPress(17711), obj8);
+  obj7.children = closure_12(onPress(17712), obj8);
   items3[1] = closure_12(closure_8, obj7);
   const obj9 = { style: null, pointerEvents: "box-none", children: null };
   const items4 = [tmp2.closeButtonContainer, ];
-  const tmp9Result = onPress(17711);
+  const tmp9Result = onPress(17712);
   items4[1] = { paddingTop: rect.top + onPress(580).space.PX_8, paddingLeft: rect.left + onPress(580).space.PX_16 };
   obj9.style = items4;
   const obj11 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };

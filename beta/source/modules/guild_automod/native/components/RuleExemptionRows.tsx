@@ -1,10 +1,10 @@
-// Module ID: 17974
-// Function ID: 17975
+// Module ID: 17975
+// Function ID: 17976
 // Name: RuleExemptionRows
-// Dependencies: [19, 2045, 2103, 4409, 1376, 11993, 21, 1119, 504, 4911, 5903, 5822, 9818, 4725, 17975, 1984, 17926, 17977, 2]
+// Dependencies: [19, 2045, 2103, 4409, 1376, 11993, 21, 1119, 504, 4911, 5903, 5822, 9818, 4725, 17976, 1984, 17927, 17978, 2]
 // Exports: default
 
-// Module 17974 (RuleExemptionRows)
+// Module 17975 (RuleExemptionRows)
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
@@ -74,7 +74,7 @@ export default function RuleExemptionRows(rule) {
   obj4.label = intl3.string(rule(exemptRoles[7]).t["LPJmL/"]);
   obj4.trailing = closure_8(rule(exemptRoles[11]).TableRow.TrailingText, { text: stateFromStores });
   obj4.onPress = function onPress() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17975, dependencyMap.paths), "AutomodExemptRoles", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17976, dependencyMap.paths), "AutomodExemptRoles", {
       guildId: rule.guildId,
       exemptRoles,
       onSave(exemptRoles) {
@@ -96,7 +96,7 @@ export default function RuleExemptionRows(rule) {
     const obj8 = { text: stateFromStores1 };
     obj6.trailing = tmp7(tmp2(tmp3[11]).TableRow.TrailingText, obj8);
     obj6.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17977, dependencyMap.paths), "AutomodExemptChannels", {
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(17978, dependencyMap.paths), "AutomodExemptChannels", {
         guildId: rule.guildId,
         exemptChannels,
         onSave(exemptChannels) {

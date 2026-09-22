@@ -1,15 +1,15 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17248
+// Function ID: 17249
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 7880, 4409, 1376, 11162, 1078, 11178, 21, 4758, 580, 17248, 1984, 5112, 558, 568, 7881, 565, 2023, 16756, 7882, 11, 7409, 7429, 1245, 13359, 7415, 17249, 1335, 8453, 1119, 1488, 5903, 5822, 4754, 9868, 5343, 9869, 5341, 11294, 5907, 11168, 2]
+// Dependencies: [32, 19, 17, 7880, 4409, 1376, 11162, 1078, 11178, 21, 4758, 580, 17249, 1984, 5112, 558, 568, 7881, 565, 2023, 16757, 7882, 11, 7409, 7429, 1245, 13359, 7415, 17250, 1335, 8453, 1119, 1488, 5903, 5822, 4754, 9868, 5343, 9869, 5341, 11294, 5907, 11168, 2]
 
-// Module 17247 (FriendRequestsScreen)
+// Module 17248 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 580 */;
 import useAlertStore from "useAlertStore" /* 5112 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16756 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17249 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16757 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17250 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7880 */;

@@ -465,7 +465,7 @@ class FeedbackWidget {
       FeedbackWidget._savedState = Object.assign({}, closure_0.state);
     };
     tmp4Result._clearFormState = () => {
-      closure_0._savedState = { name: "", email: "", description: "", filename: "unicodeVersion", attachment: "next", attachmentUri: "forEach" };
+      closure_0._savedState = { name: "", email: "", description: "", filename: "applicationId", attachment: "getGuild", attachmentUri: "sa" };
     };
     tmp4Result._hasScreenshot = () => undefined !== closure_0.state.filename && undefined !== closure_0.state.attachment && undefined !== closure_0.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -789,12 +789,12 @@ let items = [
 const entry1 = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "unicodeVersion", attachment: "next", attachmentUri: "forEach" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "applicationId", attachment: "getGuild", attachmentUri: "sa" };
   }
 };
 const items1 = [entry1];
 const importDefaultResultResult = _createClass(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = fn(1070).defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "unicodeVersion", attachment: "next", attachmentUri: "forEach" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "applicationId", attachment: "getGuild", attachmentUri: "sa" };
 
 export const FeedbackWidget = importDefaultResultResult;

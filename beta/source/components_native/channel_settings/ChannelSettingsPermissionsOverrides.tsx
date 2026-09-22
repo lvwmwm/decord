@@ -1,17 +1,17 @@
-// Module ID: 17300
-// Function ID: 17301
+// Module ID: 17301
+// Function ID: 17302
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 2063, 2045, 2103, 2067, 4399, 4409, 1376, 1078, 21, 4758, 580, 1488, 1616, 504, 11731, 11730, 4404, 1090, 9803, 4771, 1982, 4603, 5110, 1119, 4455, 2112, 2053, 17301, 8112, 4754, 4911, 11248, 5822, 1181, 5903, 17305, 1368, 17306, 2]
+// Dependencies: [32, 5, 19, 17, 2063, 2045, 2103, 2067, 4399, 4409, 1376, 1078, 21, 4758, 580, 1488, 1616, 504, 11731, 11730, 4404, 1090, 9803, 4771, 1982, 4603, 5110, 1119, 4455, 2112, 2053, 17302, 8112, 4754, 4911, 11248, 5822, 1181, 5903, 17306, 1368, 17307, 2]
 // Exports: default
 
-// Module 17300 (ChannelSettingsPermissionsOverrides)
+// Module 17301 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 580 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2053 */;
 import PermissionUtils from "PermissionUtils" /* 4404 */;
 import TableRowGroup from "TableRowGroup" /* 5903 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11730 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 17301 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 17302 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -348,7 +348,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
       children: permissions.map((description, index) => {
         ({ title, flag } = description);
         const tmp = closure_8(flag);
-        const obj = { variant: "text-xs/medium", color: "text-subtle", children: closure_1_0(17305).renderDescription(description.description) };
+        const obj = { variant: "text-xs/medium", color: "text-subtle", children: closure_1_0(17306).renderDescription(description.description) };
         const items = [closure_1_19(closure_1_0(4754).Text, obj), ];
         let tmp5Result = null;
         if (false !== tmp) {
@@ -359,7 +359,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
           }
         }
         items[1] = tmp5Result;
-        const obj2 = closure_1_0(17305);
+        const obj2 = closure_1_0(17306);
         const tmp3Result = closure_1_21(closure_1_20, { children: items });
         const tmp6Result = closure_1_0(1368);
         const obj4 = { accessible: closure_1_0(1368).isAndroid() || undefined, disabled: false !== tmp, label: title, subLabel: tmp3Result, trailing: null };
@@ -370,7 +370,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         obj5.onValueChange = function onValueChange(arg0) {
           closure_2_7(flag, arg0);
         };
-        obj4.trailing = closure_1_19(id(17306), obj5);
+        obj4.trailing = closure_1_19(id(17307), obj5);
         return closure_1_19(closure_1_0(5822).TableRow, obj4, "row-" + index);
       })
     });

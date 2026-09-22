@@ -1,9 +1,9 @@
-// Module ID: 17563
-// Function ID: 17564
+// Module ID: 17564
+// Function ID: 17565
 // Name: useActivityShelfItemData
 // Dependencies: [19, 558, 568, 12169, 2]
 
-// Module 17563 (useActivityShelfItemData)
+// Module 17564 (useActivityShelfItemData)
 import c from "c" /* 568 */;
 import useActivityShelfItemsDefault from "useActivityShelfItems" /* 12169 */;
 import noop from "module_19" /* 19 */;

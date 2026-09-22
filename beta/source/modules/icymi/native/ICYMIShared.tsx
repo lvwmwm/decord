@@ -1,10 +1,10 @@
-// Module ID: 16833
-// Function ID: 16834
+// Module ID: 16834
+// Function ID: 16835
 // Name: ICYMIShared
-// Dependencies: [19, 17, 7550, 2045, 2109, 4399, 1376, 1078, 21, 8624, 9992, 5307, 8992, 16762, 7357, 7491, 7284, 7703, 4689, 16794, 1368, 580, 558, 568, 1181, 9092, 5799, 5195, 4754, 7882, 5341, 16834, 8180, 504, 4910, 8627, 8453, 5314, 8626, 16425, 9861, 1119, 16795, 4693, 4462, 4608, 4497, 4759, 4771, 5291, 7456, 4748, 2]
+// Dependencies: [19, 17, 7550, 2045, 2109, 4399, 1376, 1078, 21, 8624, 9992, 5307, 8992, 16763, 7357, 7491, 7284, 7703, 4689, 16795, 1368, 580, 558, 568, 1181, 9092, 5799, 5195, 4754, 7882, 5341, 16835, 8180, 504, 4910, 8627, 8453, 5314, 8626, 16425, 9861, 1119, 16796, 4693, 4462, 4608, 4497, 4759, 4771, 5291, 7456, 4748, 2]
 // Exports: navigateToPost, truncateUsername
 
-// Module 16833 (ICYMIShared)
+// Module 16834 (ICYMIShared)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
@@ -22,7 +22,7 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 84
 import ICYMIUtils from "ICYMIUtils" /* 8626 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8627 */;
 import ClipView from "ClipView" /* 9092 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16834 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16835 */;
 import noop from "module_19" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 7550 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -41,7 +41,7 @@ const Constants = fn(1078);
 const jsxProd = fn(21);
 ({ jsx: closure_18, jsxs: closure_19, Fragment: closure_20 } = jsxProd);
 let c21 = 225;
-const createICYMIStyles = fn(16794);
+const createICYMIStyles = fn(16795);
 let closure_22 = createICYMIStyles.createICYMIStyles((paddingBottom) => {
   let num = 0;
   if (obj.isAndroid()) {

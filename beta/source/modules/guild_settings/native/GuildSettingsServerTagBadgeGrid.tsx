@@ -1,14 +1,14 @@
-// Module ID: 18027
-// Function ID: 18028
+// Module ID: 18028
+// Function ID: 18029
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 8207, 21, 580, 4758, 558, 568, 18028, 12642, 4754, 1119, 18029, 18030, 14187, 7456, 5186, 2]
+// Dependencies: [19, 17, 8207, 21, 580, 4758, 558, 568, 18029, 12642, 4754, 1119, 18030, 18031, 14187, 7456, 5186, 2]
 
-// Module 18027 (GuildSettingsServerTagBadgeGrid)
+// Module 18028 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 580 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12642 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18028 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18029 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18030 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18029 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18030 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18031 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

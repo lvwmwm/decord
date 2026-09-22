@@ -1,13 +1,13 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 17817
+// Function ID: 17818
 // Name: JankSessionManager
-// Dependencies: [7707, 1078, 3, 7365, 17817, 1343, 16344, 17818, 7722, 2]
+// Dependencies: [7707, 1078, 3, 7365, 17818, 1343, 16344, 17819, 7722, 2]
 
-// Module 17816 (JankSessionManager)
+// Module 17817 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
 import clientLaunchId from "clientLaunchId" /* 1343 */;
-import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17817 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 17818 */;
+import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17818 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 17819 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7707 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
@@ -52,7 +52,7 @@ prototype["attachScreenReporters"] = function attachScreenReporters() {
 prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   const self = this;
   if (!this._isDelivering) {
-    let obj = self(17817);
+    let obj = self(17818);
     tmp._isDelivering = true;
     const pendingReports = obj.getPendingReports();
     const nextPromise = pendingReports.then((arr) => {

@@ -1,9 +1,9 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17197
+// Function ID: 17198
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 558, 568, 2023, 12778, 4497, 4471, 5187, 5191, 17094, 12778, 2]
+// Dependencies: [19, 21, 558, 568, 2023, 12778, 4497, 4471, 5187, 5191, 17095, 12778, 2]
 
-// Module 17196 (SearchTabsTransitionGroup)
+// Module 17197 (SearchTabsTransitionGroup)
 import c from "c" /* 568 */;
 import native from "native" /* 4471 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;

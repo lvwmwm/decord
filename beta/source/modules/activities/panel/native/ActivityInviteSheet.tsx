@@ -1,9 +1,9 @@
-// Module ID: 17460
-// Function ID: 17461
+// Module ID: 17461
+// Function ID: 17462
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 10129, 10068, 1078, 7983, 1089, 21, 4758, 580, 558, 568, 10064, 7409, 7429, 4725, 8453, 10057, 11598, 504, 10082, 7396, 1119, 1181, 10084, 7297, 17461, 7397, 2]
+// Dependencies: [32, 19, 17, 10129, 10068, 1078, 7983, 1089, 21, 4758, 580, 558, 568, 10064, 7409, 7429, 4725, 8453, 10057, 11598, 504, 10082, 7396, 1119, 1181, 10084, 7297, 17462, 7397, 2]
 
-// Module 17460 (ActivityInviteSheet)
+// Module 17461 (ActivityInviteSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
@@ -773,7 +773,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((activity) => {
       let tmp17Result2 = tmp17(tmp11(1181).EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(17461), obj10);
+      tmp17Result2 = tmp17(tmp2(17462), obj10);
     }
     const obj11 = { children: null };
     items4[1] = tmp17Result2;

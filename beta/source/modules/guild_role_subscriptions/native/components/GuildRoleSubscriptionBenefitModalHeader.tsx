@@ -1,9 +1,9 @@
-// Module ID: 18218
-// Function ID: 18219
+// Module ID: 18219
+// Function ID: 18220
 // Name: GuildRoleSubscriptionBenefitModalHeader
 // Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 5743, 558, 568, 15486, 1119, 4754, 10017, 1181, 7371, 2]
 
-// Module 18218 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 18219 (GuildRoleSubscriptionBenefitModalHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

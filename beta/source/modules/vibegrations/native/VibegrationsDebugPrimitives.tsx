@@ -1,16 +1,16 @@
-// Module ID: 17073
-// Function ID: 17074
+// Module ID: 17074
+// Function ID: 17075
 // Name: VibegrationsDebugPrimitives
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1119, 3682, 17070, 5188, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1119, 3682, 17071, 5188, 2]
 
-// Module 17073 (VibegrationsDebugPrimitives)
+// Module 17074 (VibegrationsDebugPrimitives)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import components_Button_Button from "components/Button/Button" /* 5188 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17070 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -104,10 +104,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != generatedAt) {
       const obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
       const intl = tmp(1119).intl;
-      const obj7 = { time: tmp(17070).formatObservedAt(generatedAt) };
+      const obj7 = { time: tmp(17071).formatObservedAt(generatedAt) };
       obj6.children = intl.formatToPlainString(_modDef3682["4NpaEk"], obj7);
       tmp9 = hasOwnProperty(tmp(4754).Text, obj6);
-      const tmpResult = tmp(17070);
+      const tmpResult = tmp(17071);
     }
   }
   cResult[0] = fetchState;

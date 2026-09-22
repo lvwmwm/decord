@@ -1,9 +1,9 @@
-// Module ID: 16787
-// Function ID: 16788
+// Module ID: 16788
+// Function ID: 16789
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1078, 12846, 21, 4758, 12214, 580, 1368, 558, 568, 1488, 1245, 1181, 5195, 14460, 1119, 4754, 7390, 16783, 5341, 16782, 2]
+// Dependencies: [19, 17, 1078, 12846, 21, 4758, 12214, 580, 1368, 558, 568, 1488, 1245, 1181, 5195, 14460, 1119, 4754, 7390, 16784, 5341, 16783, 2]
 
-// Module 16787 (ForYouShowAllRow)
+// Module 16788 (ForYouShowAllRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -16,8 +16,8 @@ import Pressables from "Pressables" /* 5341 */;
 import _modDef7390 from "module_7390" /* 7390 */;
 import ChannelListLayout from "ChannelListLayout" /* 12214 */;
 import AvatarDuoPile from "AvatarDuoPile" /* 14460 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16782 */;
-import ChannelWrapper from "ChannelWrapper" /* 16783 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16783 */;
+import ChannelWrapper from "ChannelWrapper" /* 16784 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -141,13 +141,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   }
                                 }
                                 const obj4 = { layout: messagesTabLayout, panelVariant: tmp4 };
-                                const result = tmp(16782).renderChannelPressableWrapper(tmp40, obj4);
+                                const result = tmp(16783).renderChannelPressableWrapper(tmp40, obj4);
                                 cResult[39] = messagesTabLayout;
                                 cResult[40] = tmp4;
                                 cResult[41] = tmp40;
                                 cResult[42] = result;
                                 tmp43 = result;
-                                const tmpResult9 = tmp(16782);
+                                const tmpResult9 = tmp(16783);
                               }
                             }
                           }
@@ -163,14 +163,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                     const obj6 = { layout: messagesTabLayout, fontScale, panelVariant: tmp4 };
-                    const renderChannelWrapperResult = tmp(16783).renderChannelWrapper(tmp34, obj6);
+                    const renderChannelWrapperResult = tmp(16784).renderChannelWrapper(tmp34, obj6);
                     cResult[29] = fontScale;
                     cResult[30] = messagesTabLayout;
                     cResult[31] = tmp4;
                     cResult[32] = tmp34;
                     cResult[33] = renderChannelWrapperResult;
                     tmp38 = renderChannelWrapperResult;
-                    const tmpResult10 = tmp(16783);
+                    const tmpResult10 = tmp(16784);
                   }
                 }
                 const obj7 = { children: null };
@@ -302,7 +302,7 @@ export const ForYouSuggestedFriendShowAllRow = ReactCompilerGating.isReactCompil
       class C {
         constructor(arg0) {
           tmp = jsx;
-          obj = { user: suggestedFriends.user, guildId: "Array", size: "Array" };
+          obj = { user: suggestedFriends.user, guildId: "Array", size: -1 };
           obj2 = closure_0(closure_2[6]);
           isLayoutCompactResult = obj2.isLayoutCompact(closure_2);
           AvatarSizes = closure_0(closure_2[13]).AvatarSizes;
@@ -317,7 +317,7 @@ export const ForYouSuggestedFriendShowAllRow = ReactCompilerGating.isReactCompil
       class C {
         constructor(arg0) {
           tmp = jsx;
-          obj = { user: suggestedFriends.user, guildId: "Array", size: "Array" };
+          obj = { user: suggestedFriends.user, guildId: "Array", size: -1 };
           obj2 = closure_0(closure_2[6]);
           isLayoutCompactResult = obj2.isLayoutCompact(closure_2);
           AvatarSizes = closure_0(closure_2[13]).AvatarSizes;
@@ -361,7 +361,7 @@ export const ForYouSuggestedFriendShowAllRow = ReactCompilerGating.isReactCompil
     children: noop.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: "Array" };
+        const obj = { user: user.user, guildId: "Array", size: -1 };
         const obj2 = suggestedFriends(messagesTabLayout[6]);
         const tmp = closure_2_7;
         const AvatarSizes = suggestedFriends(messagesTabLayout[13]).AvatarSizes;

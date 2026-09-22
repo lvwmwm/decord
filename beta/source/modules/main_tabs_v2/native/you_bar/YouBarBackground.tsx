@@ -1,9 +1,9 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16726
+// Function ID: 16727
 // Name: YouBarBackground
 // Dependencies: [19, 17, 15354, 21, 4758, 580, 558, 568, 676, 5198, 5881, 4462, 15440, 4497, 5187, 2]
 
-// Module 16725 (YouBarBackground)
+// Module 16726 (YouBarBackground)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;

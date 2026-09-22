@@ -1,12 +1,12 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17065
+// Function ID: 17066
 // Name: VibegrationsModelSettingsSheet
-// Dependencies: [19, 17, 13364, 21, 558, 568, 504, 7396, 1119, 3682, 16947, 4754, 7449, 5186, 580, 2]
+// Dependencies: [19, 17, 13364, 21, 558, 568, 504, 7396, 1119, 3682, 16948, 4754, 7449, 5186, 580, 2]
 
-// Module 17064 (VibegrationsModelSettingsSheet)
+// Module 17065 (VibegrationsModelSettingsSheet)
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16947 */;
+import VibegrationsEffortPickerDefault from "VibegrationsEffortPicker" /* 16948 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13364 */;
 

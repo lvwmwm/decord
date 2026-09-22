@@ -1,9 +1,9 @@
-// Module ID: 17363
-// Function ID: 17364
+// Module ID: 17364
+// Function ID: 17365
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 1119, 558, 568, 12599, 4458, 5812, 4769, 4961, 12591, 1245, 17348, 1181, 9617, 5341, 15190, 8876, 1616, 17357, 17364, 17355, 5086, 5091, 5203, 17358, 4754, 1368, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 1119, 558, 568, 12599, 4458, 5812, 4769, 4961, 12591, 1245, 17349, 1181, 9617, 5341, 15190, 8876, 1616, 17358, 17365, 17356, 5086, 5091, 5203, 17359, 4754, 1368, 2]
 
-// Module 17363 (SpamMessageList)
+// Module 17364 (SpamMessageList)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
@@ -12,12 +12,12 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5086 */;
 import MetricEvents from "MetricEvents" /* 5091 */;
 import useMountEffectDefault from "useMountEffect" /* 5203 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17364 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17365 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-const MessageRequestEmptyDefault = tmp2(17358);
+const MessageRequestEmptyDefault = tmp2(17359);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
@@ -732,10 +732,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageReque
   const tmp = closure_11();
   importDefault = tmp;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  dependencyMap = goToMessageRequestPreview(17357).useSpamMessageRequestCount();
+  dependencyMap = goToMessageRequestPreview(17358).useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj = goToMessageRequestPreview(17357);
-  hasSingleMessageRequest = goToMessageRequestPreview(17355).useListHasSingleSpamMessageRequest();
+  let obj = goToMessageRequestPreview(17358);
+  hasSingleMessageRequest = goToMessageRequestPreview(17356).useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     AnalyticsUtilsDefault.track(AnalyticEvents.SPAM_MESSAGE_REQUESTS_VIEWED, { num_spam_message_requests });
     const obj2 = { num_spam_message_requests };
@@ -794,5 +794,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageReque
     obj4.data = items;
     return closure_8(closure_6, obj4);
   }
-  let obj2 = goToMessageRequestPreview(17355);
+  let obj2 = goToMessageRequestPreview(17356);
 });

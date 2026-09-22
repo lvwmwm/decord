@@ -1,9 +1,9 @@
-// Module ID: 17726
-// Function ID: 17727
+// Module ID: 17727
+// Function ID: 17728
 // Name: ExistingUserAgeGateModal
-// Dependencies: [19, 4580, 1103, 17727, 1078, 21, 1368, 4458, 17728, 1119, 7458, 5739, 4961, 1245, 1253, 5839, 17729, 17731, 17732, 16320, 10470, 558, 568, 4968, 4970, 7246, 2]
+// Dependencies: [19, 4580, 1103, 17728, 1078, 21, 1368, 4458, 17729, 1119, 7458, 5739, 4961, 1245, 1253, 5839, 17730, 17732, 17733, 16320, 10470, 558, 568, 4968, 4970, 7246, 2]
 
-// Module 17726 (ExistingUserAgeGateModal)
+// Module 17727 (ExistingUserAgeGateModal)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
@@ -11,10 +11,10 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
 import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7458 */;
 import NsfwGateGuildDefault from "NsfwGateGuild" /* 10470 */;
 import AgeGateUnderageDefault from "AgeGateUnderage" /* 16320 */;
-import _modDef17728 from "module_17728" /* 17728 */;
-import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 17729 */;
-import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 17731 */;
-import AgeGateVerifyDefault from "AgeGateVerify" /* 17732 */;
+import _modDef17729 from "module_17729" /* 17729 */;
+import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 17730 */;
+import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 17732 */;
+import AgeGateVerifyDefault from "AgeGateVerify" /* 17733 */;
 import noop from "module_19" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;
 
@@ -83,7 +83,7 @@ function getScreens(source) {
             if (obj.isIOS()) {
               let fn = () => {
                 closure_0.push(NSFWGateGuild.NSFWGateGuild);
-                const obj2 = { key: "AGE_GATE_AGE_VERIFIED", icon: _modDef17728, content: null };
+                const obj2 = { key: "AGE_GATE_AGE_VERIFIED", icon: _modDef17729, content: null };
                 const intl = closure_0(1119).intl;
                 obj2.content = intl.string(closure_0(1119).t.gUiIGZ);
                 ToastActionCreatorsDefault.open(obj2);
@@ -95,7 +95,7 @@ function getScreens(source) {
           fn = () => {
             closure_0(7458).closeAgeGateModal();
             const obj = closure_0(7458);
-            const obj3 = { key: "AGE_GATE_AGE_VERIFIED", icon: closure_1_1(17728), content: null };
+            const obj3 = { key: "AGE_GATE_AGE_VERIFIED", icon: closure_1_1(17729), content: null };
             const intl = closure_0(1119).intl;
             obj3.content = intl.string(closure_0(1119).t.gUiIGZ);
             closure_1_1(4458).open(obj3);
@@ -148,7 +148,7 @@ function getScreens(source) {
 }
 const AgeGateConstants = fn(1103);
 ({ AgeGateAnalyticAction: hasOwnProperty, AgeGateSource: metroRequire } = AgeGateConstants);
-let closure_7 = fn(17727).ExistingUserAgeGateScreens;
+let closure_7 = fn(17728).ExistingUserAgeGateScreens;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

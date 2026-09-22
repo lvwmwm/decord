@@ -1,9 +1,9 @@
-// Module ID: 17853
-// Function ID: 17854
+// Module ID: 17854
+// Function ID: 17855
 // Name: TouchableUploadAvatar
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 14134, 1119, 5802, 1181, 12924, 5341, 2]
 
-// Module 17853 (TouchableUploadAvatar)
+// Module 17854 (TouchableUploadAvatar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

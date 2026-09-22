@@ -1,10 +1,10 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17058
+// Function ID: 17059
 // Name: VibegrationsQuestPrompt
 // Dependencies: [11608, 7940, 2]
 // Exports: dismissQuestPrompt, isQuestPromptDismissed, watchableQuest
 
-// Module 17057 (VibegrationsQuestPrompt)
+// Module 17058 (VibegrationsQuestPrompt)
 import QuestsEligibility from "QuestsEligibility" /* 11608 */;
 import size from "module_2" /* 2 */;
 

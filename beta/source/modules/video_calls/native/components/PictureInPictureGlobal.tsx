@@ -1,9 +1,9 @@
-// Module ID: 17381
-// Function ID: 17382
+// Module ID: 17382
+// Function ID: 17383
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2044, 4774, 9650, 502, 1996, 1078, 4779, 21, 4758, 1181, 580, 558, 568, 9655, 504, 9612, 9645, 4965, 9654, 5344, 9657, 8608, 9674, 9678, 9691, 9706, 9635, 9714, 9675, 9653, 12341, 4497, 4759, 5897, 17382, 1616, 2]
+// Dependencies: [32, 19, 17, 2044, 4774, 9650, 502, 1996, 1078, 4779, 21, 4758, 1181, 580, 558, 568, 9655, 504, 9612, 9645, 4965, 9654, 5344, 9657, 8608, 9674, 9678, 9691, 9706, 9635, 9714, 9675, 9653, 12341, 4497, 4759, 5897, 17383, 1616, 2]
 
-// Module 17381 (PictureInPictureGlobal)
+// Module 17382 (PictureInPictureGlobal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native2 from "native" /* 1181 */;
@@ -15,7 +15,7 @@ import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9612 */;
 import transitionToActivityDefault from "transitionToActivity" /* 9635 */;
 import PictureInPictureDefault from "PictureInPicture" /* 9653 */;
 import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9655 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17382 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17383 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;

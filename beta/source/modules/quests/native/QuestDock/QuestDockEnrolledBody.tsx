@@ -180,7 +180,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   }
   class S {
     constructor() {
-      closure_0 = closure_3(/* F151648 */ function() { ... });
+      closure_0 = closure_3(/* F151653 */ function() { ... });
       if (closure_4) {
         tmp = (function maybeOpenVideoQuestModal() { ... })();
       }

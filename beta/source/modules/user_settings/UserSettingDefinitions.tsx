@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/user_settings/UserSettingDefi
 
 export const defineProtoSetting = function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, arg4) {
   let getSetting = textAndImages;
-  let f85481 = activityRestrictedGuildIds;
+  let f85484 = activityRestrictedGuildIds;
   dependencyMap = explicitContentFromProto;
   closure_3 = explicitContentToProto;
   let obj = arg4;
@@ -38,16 +38,16 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
   getSetting = function getSetting() {
     let tmp3;
     if (UserSettingsProtoStore.settings[getSetting] != null) {
-      tmp3 = tmp2[f85481];
+      tmp3 = tmp2[f85484];
     }
     return explicitContentFromProto(tmp3);
   };
   const obj2 = getSetting(558);
-  f85481 = (favorites) => {
+  f85484 = (favorites) => {
     closure_0 = favorites;
     const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[6]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, async (arg0) => {
-      arg0[f85481] = closure_3(closure_0, arg0[f85481]);
+      arg0[f85484] = closure_3(closure_0, arg0[f85484]);
     }, INFREQUENT_USER_ACTION);
   };
   return {
@@ -57,7 +57,7 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
-      return f85487(tmp2);
+      return f85490(tmp2);
     },
     useSetting: getSetting(558).isReactCompilerEnabled() ? (() => {
       const cResult = c.c(1);
@@ -78,7 +78,7 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
 export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, animateEmoji) {
   closure_2 = animateEmoji;
   function getSetting() {
-    const tmp = SelectivelySyncedUserSettingsStore.getState()[f85484];
+    const tmp = SelectivelySyncedUserSettingsStore.getState()[f85487];
     let setting;
     if (tmp != null) {
       setting = tmp.settings[closure_2];
@@ -88,8 +88,8 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, an
     }
     return setting;
   }
-  const f85484 = (arg0) => {
-    if (SelectivelySyncedUserSettingsStore.shouldSync(f85484)) {
+  const f85487 = (arg0) => {
+    if (SelectivelySyncedUserSettingsStore.shouldSync(f85487)) {
       let updateSettingResult = getSetting.updateSetting(arg0);
     } else {
       const obj2 = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };
@@ -98,7 +98,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, an
       const obj5 = {};
       obj5[closure_2] = arg0;
       obj4.settings = obj5;
-      obj3[f85484] = obj4;
+      obj3[f85487] = obj4;
       obj2.changes = obj3;
       DispatcherDefault.dispatch(obj2);
       updateSettingResult = Promise.resolve();
@@ -128,7 +128,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, an
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
-      return f85487(tmp2);
+      return f85490(tmp2);
     }
   };
 }
@@ -142,9 +142,9 @@ export function wrapSettingWithOverride(UserSettingDefinitions, animateEmoji, ar
     }
     return setting;
   }
-  const f85487 = (arg0) => {
+  const f85490 = (arg0) => {
     const obj2 = { type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: null };
-    const items = [f85487];
+    const items = [f85490];
     obj2.settings = items;
     DispatcherDefault.dispatch(obj2);
     return getSetting.updateSetting(arg0);
@@ -164,7 +164,7 @@ export function wrapSettingWithOverride(UserSettingDefinitions, animateEmoji, ar
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
-      return f85487(tmp2);
+      return f85490(tmp2);
     }
   };
 }

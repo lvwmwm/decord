@@ -1,16 +1,16 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17026
+// Function ID: 17027
 // Name: VibegrationsRepliedMessage
-// Dependencies: [19, 17, 21, 17023, 4758, 580, 558, 568, 17026, 4603, 16939, 1119, 3682, 1181, 4754, 17030, 2]
+// Dependencies: [19, 17, 21, 17024, 4758, 580, 558, 568, 17027, 4603, 16940, 1119, 3682, 1181, 4754, 17031, 2]
 
-// Module 17025 (VibegrationsRepliedMessage)
+// Module 17026 (VibegrationsRepliedMessage)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import UserUtils from "UserUtils" /* 4603 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16939 */;
-import VibegrationsMessageAuthor from "VibegrationsMessageAuthor" /* 17026 */;
-import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 17030 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16940 */;
+import VibegrationsMessageAuthor from "VibegrationsMessageAuthor" /* 17027 */;
+import VibegrationsSelectedMentionDefault from "VibegrationsSelectedMention" /* 17031 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,10 +18,10 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const diff = fn(17023).MESSAGE_EDGE_INSET + fn(17023).MESSAGE_AVATAR_SIZE / 2 - 1;
-const diff1 = fn(17023).MESSAGE_CONTENT_INSET - 4 - diff;
+const diff = fn(17024).MESSAGE_EDGE_INSET + fn(17024).MESSAGE_AVATAR_SIZE / 2 - 1;
+const diff1 = fn(17024).MESSAGE_CONTENT_INSET - 4 - diff;
 const createStyles = fn(4758);
-let obj2 = { root: { marginLeft: diff - fn(17023).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
+let obj2 = { root: { marginLeft: diff - fn(17024).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" }, spine: null, avatar: null, name: null, content: null };
 const rect = { position: "absolute", left: 0, top: 9, bottom: 0, width: diff1, borderTopWidth: 2, borderLeftWidth: 2, borderColor: nativeDefault.colors.SPINE_DEFAULT, borderTopLeftRadius: Math.round(0.25 * diff1) };
 obj2.spine = rect;
 obj2.avatar = { marginRight: 4 };
@@ -29,7 +29,7 @@ obj2.name = { flexShrink: 0, marginRight: 4, maxWidth: "40%" };
 obj2.content = { flex: 1 };
 let closure_8 = createStyles.createStyles(obj2);
 const ReactCompilerGating = fn(558);
-let obj3 = { marginLeft: diff - fn(17023).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" };
+let obj3 = { marginLeft: diff - fn(17024).MESSAGE_CONTENT_INSET, paddingLeft: diff1 + 4, height: 20, flexDirection: "row", alignItems: "flex-start" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/native/VibegrationsRepliedMessage.tsx");
 
@@ -43,11 +43,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "";
   }
   if (cResult[0] !== replied.content) {
-    const result = tmp(16939).parseVibegrationsDesignRemark(replied.content);
+    const result = tmp(16940).parseVibegrationsDesignRemark(replied.content);
     cResult[0] = replied.content;
     cResult[1] = result;
     let tmp6 = result;
-    const tmpResult = tmp(16939);
+    const tmpResult = tmp(16940);
   } else {
     tmp6 = cResult[1];
   }
@@ -177,7 +177,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != messageAuthorUser) {
           const obj9 = { style: tmp4.avatar, children: null };
           const obj10 = { userId: replied.userId, size: tmp(1181).AvatarSizes.SIZE_16 };
-          obj9.children = timestampProducer(tmp(17026).VibegrationsUserAvatar, obj10);
+          obj9.children = timestampProducer(tmp(17027).VibegrationsUserAvatar, obj10);
           tmp23 = timestampProducer(hasOwnProperty, obj9);
         }
         cResult[15] = replied.userId;
@@ -214,8 +214,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  const messageAuthorUser = replied(17026).useMessageAuthorUser(replied.userId);
-  const obj = replied(17026);
+  const messageAuthorUser = replied(17027).useMessageAuthorUser(replied.userId);
+  const obj = replied(17027);
   let str = replied(4603).useName(messageAuthorUser);
   if (str == null) {
     str = "";
@@ -239,7 +239,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: null };
     const obj6 = { userId: replied.userId, size: tmp2(1181).AvatarSizes.SIZE_16 };
-    obj5.children = tmp11(tmp2(17026).VibegrationsUserAvatar, obj6);
+    obj5.children = tmp11(tmp2(17027).VibegrationsUserAvatar, obj6);
     tmp11Result = tmp11(closure_5, obj5);
   }
   items1[1] = tmp11Result;

@@ -1,9 +1,9 @@
-// Module ID: 17764
-// Function ID: 17765
+// Module ID: 17765
+// Function ID: 17766
 // Name: DiceRollLifecycleManager
 // Dependencies: [2045, 2099, 12089, 9413, 4751, 7365, 1119, 7703, 7923, 2]
 
-// Module 17764 (DiceRollLifecycleManager)
+// Module 17765 (DiceRollLifecycleManager)
 import util from "util" /* 1119 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
 import MessageParserDefault from "MessageParser" /* 7923 */;

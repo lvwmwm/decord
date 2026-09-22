@@ -1,10 +1,10 @@
-// Module ID: 18216
-// Function ID: 18217
+// Module ID: 18217
+// Function ID: 18218
 // Name: FormChannelPicker
-// Dependencies: [19, 2045, 21, 4758, 14169, 504, 4911, 10017, 4725, 18217, 1984, 5241, 5300, 4754, 1119, 1181, 10176, 2]
+// Dependencies: [19, 2045, 21, 4758, 14169, 504, 4911, 10017, 4725, 18218, 1984, 5241, 5300, 4754, 1119, 1181, 10176, 2]
 // Exports: default
 
-// Module 18216 (FormChannelPicker)
+// Module 18217 (FormChannelPicker)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import noop from "module_19" /* 19 */;
@@ -48,7 +48,7 @@ export default function FormChannelPicker(channelId) {
       }
       obj2.selectedChannelId = id;
       obj2.onChannelSelected = onChange;
-      obj.openLazy(asyncRequireImpl(18217, dependencyMap.paths), "ChannelSelectorActionSheet", obj2);
+      obj.openLazy(asyncRequireImpl(18218, dependencyMap.paths), "ChannelSelectorActionSheet", obj2);
     },
     children: null
   };

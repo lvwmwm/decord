@@ -1,10 +1,10 @@
-// Module ID: 17724
-// Function ID: 17725
+// Module ID: 17725
+// Function ID: 17726
 // Name: FriendInviteUtils
 // Dependencies: [2045, 4409, 8654, 4458, 1119, 9617, 577, 11471, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 17724 (FriendInviteUtils)
+// Module 17725 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;

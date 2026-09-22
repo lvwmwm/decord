@@ -1,9 +1,9 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16845
+// Function ID: 16846
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2045, 5107, 5106, 1078, 11162, 4751, 21, 4758, 580, 558, 568, 9850, 1119, 16845, 4458, 1482, 4612, 8121, 5343, 4577, 4471, 16846, 7224, 11818, 11826, 5188, 4961, 11279, 1374, 7923, 9419, 1259, 5346, 7703, 9421, 1616, 1368, 8112, 5839, 5848, 11282, 2]
+// Dependencies: [32, 5, 19, 17, 2045, 5107, 5106, 1078, 11162, 4751, 21, 4758, 580, 558, 568, 9850, 1119, 16846, 4458, 1482, 4612, 8121, 5343, 4577, 4471, 16847, 7224, 11818, 11826, 5188, 4961, 11279, 1374, 7923, 9419, 1259, 5346, 7703, 9421, 1616, 1368, 8112, 5839, 5848, 11282, 2]
 
-// Module 16844 (ICYMIShareModal)
+// Module 16845 (ICYMIShareModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -18,7 +18,7 @@ import HeaderShared from "HeaderShared" /* 8112 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 8121 */;
 import ShareEventUtils from "ShareEventUtils" /* 9850 */;
 import useShareChatInputActions from "useShareChatInputActions" /* 11818 */;
-import _modDef16846 from "module_16846" /* 16846 */;
+import _modDef16847 from "module_16847" /* 16847 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -232,12 +232,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const items1 = [tmp16, tmp27];
           obj11.children = items1;
           obj10.children = state(View, obj11);
-          const tmp35 = __initData2(tmp9(16846), obj10);
+          const tmp35 = __initData2(tmp9(16847), obj10);
           cResult[22] = tmp4.base;
           cResult[23] = tmp27;
           cResult[24] = tmp35;
           tmp30 = tmp35;
-          const tmp9Result2 = tmp9(16846);
+          const tmp9Result2 = tmp9(16847);
         }
         const obj12 = { gradient: tmp10, children: tmp23 };
         const tmp29 = __initData2(tmp(4471).ThemeContextProvider, obj12);
@@ -295,7 +295,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj5 = { style: tmp.base, children: null };
   const obj6 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj7 = { dark: null, light: null };
-  const tmp6 = _modDef16846;
+  const tmp6 = _modDef16847;
   obj7.dark = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_7;
   obj7.light = client_themes_ClientThemesUtils.OverlayOpacity.LEVEL_8;
   obj6.mixAmount = obj7;
@@ -1000,7 +1000,7 @@ export const GameShareModal = ReactCompilerGating.isReactCompilerEnabled() ? ((c
               const obj5 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
               c5 = 2;
               c6 = 1;
-              const obj6 = { value: entry(16845).sendMessageWithEmbed(obj5), done: false };
+              const obj6 = { value: entry(16846).sendMessageWithEmbed(obj5), done: false };
               return obj6;
             }
           } else if (1 === tmp7) {
@@ -1100,7 +1100,7 @@ export const GameShareModal = ReactCompilerGating.isReactCompilerEnabled() ? ((c
             const obj6 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
             c5 = 2;
             c6 = 1;
-            const obj7 = { value: entry(16845).sendMessageWithEmbed(obj6), done: false };
+            const obj7 = { value: entry(16846).sendMessageWithEmbed(obj6), done: false };
             return obj7;
           }
         } else if (1 === tmp7) {

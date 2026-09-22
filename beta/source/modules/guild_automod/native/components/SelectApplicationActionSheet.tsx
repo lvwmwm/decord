@@ -1,9 +1,9 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17970
+// Function ID: 17971
 // Name: SelectApplicationActionSheet
 // Dependencies: [19, 21, 4758, 580, 558, 568, 1119, 4725, 7396, 5900, 5802, 1401, 7449, 5901, 2]
 
-// Module 17969 (SelectApplicationActionSheet)
+// Module 17970 (SelectApplicationActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;

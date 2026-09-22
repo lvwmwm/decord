@@ -1,11 +1,11 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 18171
+// Function ID: 18172
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 1078, 558, 568, 18171, 1401, 2]
+// Dependencies: [19, 1078, 558, 568, 18172, 1401, 2]
 
-// Module 18170 (useHighlightedCreatorGuildDetails)
+// Module 18171 (useHighlightedCreatorGuildDetails)
 import c from "c" /* 568 */;
-import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 18171 */;
+import useFetchHighlightedCreatorGuildDetailsDefault from "useFetchHighlightedCreatorGuildDetails" /* 18172 */;
 import noop from "module_19" /* 19 */;
 
 const AvatarUtilsDefault = tmp3(1401);

@@ -1,9 +1,9 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17340
+// Function ID: 17341
 // Name: ContextMenuCommandNavigator
-// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 7722, 7246, 1616, 8112, 1119, 17340, 17342, 2]
+// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 7722, 7246, 1616, 8112, 1119, 17341, 17343, 2]
 
-// Module 17339 (ContextMenuCommandNavigator)
+// Module 17340 (ContextMenuCommandNavigator)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import HeaderShared from "HeaderShared" /* 8112 */;
@@ -68,7 +68,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj3.title = intl.string(tmp(1119).t.PHjkRE);
           obj2.options = obj3;
           obj2.getComponent = function getComponent() {
-            return closure_0(17340).default;
+            return closure_0(17341).default;
           };
           const tmp16 = closure_7(closure_9.Screen, obj2);
           cResult[11] = tmp16;
@@ -89,7 +89,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       return { title };
                     },
             getComponent() {
-                      return closure_0(17342).default;
+                      return closure_0(17343).default;
                     }
           };
           const tmp20 = closure_7(closure_9.Screen, obj4);
@@ -200,7 +200,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.title = intl.string(require("util").t.PHjkRE);
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(17340).default;
+    return closure_0(17341).default;
   };
   const items1 = [
     closure_7(Screen, obj4),
@@ -215,7 +215,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return { title };
       },
       getComponent() {
-        return closure_0(17342).default;
+        return closure_0(17343).default;
       }
     })
   ];

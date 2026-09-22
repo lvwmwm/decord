@@ -1,14 +1,14 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17612
+// Function ID: 17613
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4758, 580, 558, 568, 1181, 17612, 5804, 2]
+// Dependencies: [19, 21, 4758, 580, 558, 568, 1181, 17613, 5804, 2]
 
-// Module 17611 (VoicePanelLockedIcon)
+// Module 17612 (VoicePanelLockedIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import NativeViewDefault from "NativeView" /* 5804 */;
-import _modDef17612 from "module_17612" /* 17612 */;
+import _modDef17613 from "module_17613" /* 17613 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -27,8 +27,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(5);
   const tmp4 = closure_4();
   if (cResult[0] !== tmp4.icon) {
-    const obj2 = { style: tmp4.icon, source: _modDef17612, size: tmp(1181).IconSizes.LARGE };
-    const tmp8 = jsx(tmp(1181).Icon, { style: tmp4.icon, source: _modDef17612, size: tmp(1181).IconSizes.LARGE });
+    const obj2 = { style: tmp4.icon, source: _modDef17613, size: tmp(1181).IconSizes.LARGE };
+    const tmp8 = jsx(tmp(1181).Icon, { style: tmp4.icon, source: _modDef17613, size: tmp(1181).IconSizes.LARGE });
     cResult[0] = tmp4.icon;
     cResult[1] = tmp8;
     let tmp5 = tmp8;
@@ -49,6 +49,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const tmp = closure_4();
   const obj = { style: tmp.container, children: null };
-  obj.children = jsx(native.Icon, { style: tmp.icon, source: _modDef17612, size: native.IconSizes.LARGE });
+  obj.children = jsx(native.Icon, { style: tmp.icon, source: _modDef17613, size: native.IconSizes.LARGE });
   return <tmp2 style={tmp.container}>{null}</tmp2>;
 });

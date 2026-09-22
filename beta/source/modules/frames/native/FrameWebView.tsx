@@ -1,9 +1,9 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 16976
+// Function ID: 16977
 // Name: FrameWebView
 // Dependencies: [109, 19, 21, 558, 568, 9726, 9558, 9567, 2]
 
-// Module 16975 (FrameWebView)
+// Module 16976 (FrameWebView)
 import FramesNativeManagerDefault from "FramesNativeManager" /* 9558 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 9567 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

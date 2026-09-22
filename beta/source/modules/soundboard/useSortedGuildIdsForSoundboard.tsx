@@ -1,9 +1,9 @@
-// Module ID: 17511
-// Function ID: 17512
+// Module ID: 17512
+// Function ID: 17513
 // Name: useSortedGuildIdsForSoundboard
 // Dependencies: [19, 4399, 5657, 1376, 1078, 1089, 558, 568, 565, 4418, 2]
 
-// Module 17511 (useSortedGuildIdsForSoundboard)
+// Module 17512 (useSortedGuildIdsForSoundboard)
 import noop from "module_19" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4399 */;
 import SortedGuildStore from "SortedGuildStore" /* 5657 */;

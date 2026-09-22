@@ -1,9 +1,9 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16872
+// Function ID: 16873
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9311, 8113, 1078, 9312, 1089, 21, 4758, 558, 568, 4497, 16872, 16873, 5203, 4693, 4619, 16874, 4471, 16875, 5141, 4498, 1489, 4625, 16340, 16724, 6891, 4612, 16339, 9558, 577, 4626, 2]
+// Dependencies: [32, 19, 17, 9311, 8113, 1078, 9312, 1089, 21, 4758, 558, 568, 4497, 16873, 16874, 5203, 4693, 4619, 16875, 4471, 16876, 5141, 4498, 1489, 4625, 16340, 16725, 6891, 4612, 16339, 9558, 577, 4626, 2]
 
-// Module 16871 (MainTabsChannelScreenStack)
+// Module 16872 (MainTabsChannelScreenStack)
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import Link from "Link" /* 1489 */;
@@ -18,10 +18,10 @@ import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
 import FramesNativeManagerDefault from "FramesNativeManager" /* 9558 */;
 import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16339 */;
 import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 16340 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16724 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16873 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16874 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16875 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16725 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16874 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16875 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16876 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import FramesStore from "FramesStore" /* 9311 */;

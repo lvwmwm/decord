@@ -1,9 +1,9 @@
-// Module ID: 18228
-// Function ID: 18229
+// Module ID: 18229
+// Function ID: 18230
 // Name: GuildPremiumRoleSubscribeButton
 // Dependencies: [19, 21, 4758, 558, 568, 1119, 10475, 2]
 
-// Module 18228 (GuildPremiumRoleSubscribeButton)
+// Module 18229 (GuildPremiumRoleSubscribeButton)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import CreatorRevenueButton from "CreatorRevenueButton" /* 10475 */;

@@ -1,10 +1,10 @@
-// Module ID: 17052
-// Function ID: 17053
+// Module ID: 17053
+// Function ID: 17054
 // Name: VibegrationsStatusLabels
 // Dependencies: [1119, 3682, 5277, 2]
 // Exports: connectionLabel, runesUsedLabels, thinkingLine
 
-// Module 17052 (VibegrationsStatusLabels)
+// Module 17053 (VibegrationsStatusLabels)
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;

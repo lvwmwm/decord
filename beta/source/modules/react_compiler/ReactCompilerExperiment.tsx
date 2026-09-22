@@ -1,9 +1,9 @@
-// Module ID: 18382
-// Function ID: 18383
+// Module ID: 18383
+// Function ID: 18384
 // Name: ReactCompilerExperiment
 // Dependencies: [1439, 2]
 
-// Module 18382 (ReactCompilerExperiment)
+// Module 18383 (ReactCompilerExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1439 */;
 
 const size = fn(2);

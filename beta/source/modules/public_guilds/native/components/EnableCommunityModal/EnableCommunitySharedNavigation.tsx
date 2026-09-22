@@ -1,9 +1,9 @@
-// Module ID: 18102
-// Function ID: 18103
+// Module ID: 18103
+// Function ID: 18104
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9834, 1078, 21, 4758, 558, 568, 504, 1488, 5173, 5182, 577, 18100, 7285, 1119, 5188, 7371, 2]
+// Dependencies: [19, 17, 9834, 1078, 21, 4758, 558, 568, 504, 1488, 5173, 5182, 577, 18101, 7285, 1119, 5188, 7371, 2]
 
-// Module 18102 (EnableCommunitySharedNavigation)
+// Module 18103 (EnableCommunitySharedNavigation)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import noop from "module_19" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;

@@ -1,9 +1,9 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 16920
+// Function ID: 16921
 // Name: OnboardingHomeScrollView
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 2]
 
-// Module 16919 (OnboardingHomeScrollView)
+// Module 16920 (OnboardingHomeScrollView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;

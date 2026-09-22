@@ -1,9 +1,9 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17247
+// Function ID: 17248
 // Name: UserSettingsFriendRequests
 // Dependencies: [19, 17, 1078, 21, 558, 568, 2023, 7241, 1119, 7446, 1389, 5903, 2]
 
-// Module 17246 (UserSettingsFriendRequests)
+// Module 17247 (UserSettingsFriendRequests)
 import FlagUtilsAll from "FlagUtils" /* 1389 */;
 import UserSettings from "UserSettings" /* 2023 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;

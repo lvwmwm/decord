@@ -1,9 +1,9 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17580
+// Function ID: 17581
 // Name: GameTagChiplet
 // Dependencies: [19, 17, 21, 4758, 558, 568, 8944, 8945, 9980, 2]
 
-// Module 17579 (GameTagChiplet)
+// Module 17580 (GameTagChiplet)
 import c from "c" /* 568 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8944 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8945 */;

@@ -1,9 +1,9 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18251
+// Function ID: 18252
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1378, 1089, 21, 4758, 580, 558, 568, 4479, 18154, 16914, 5802, 1119, 7481, 15490, 4754, 10017, 1616, 1181, 5189, 4725, 6863, 7397, 2]
+// Dependencies: [32, 19, 17, 1378, 1089, 21, 4758, 580, 558, 568, 4479, 18155, 16915, 5802, 1119, 7481, 15490, 4754, 10017, 1616, 1181, 5189, 4725, 6863, 7397, 2]
 
-// Module 18250 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 18251 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -59,7 +59,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[3] === containerSelected) {
       let tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 18154 : 16914);
+    const tmp9Result = importDefault(selected ? 18155 : 16915);
     if (cResult[5] === tmp4.rowStatusIcon) {
       if (cResult[6] === tmp9Result) {
         let tmp11 = cResult[7];
@@ -142,7 +142,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = containerSelected;
   const obj3 = { style: tmp.rowStatusIcon, source: null };
   const tmp7 = TouchableHitBoxDefault;
-  obj3.source = importDefault(selected ? 18154 : 16914);
+  obj3.source = importDefault(selected ? 18155 : 16915);
   const items1 = [options(FastImageDefault, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl = tmp2(1119).intl;

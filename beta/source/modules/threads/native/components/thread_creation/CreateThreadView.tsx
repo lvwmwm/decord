@@ -1,9 +1,9 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17091
+// Function ID: 17092
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 5107, 7928, 1078, 21, 4758, 580, 558, 568, 9417, 8024, 7409, 7429, 1616, 7224, 5343, 5293, 17091, 7446, 1119, 17093, 12113, 12088, 12806, 10349, 1489, 1245, 4938, 4624, 1105, 10632, 17092, 4625, 2]
+// Dependencies: [5, 32, 19, 17, 5107, 7928, 1078, 21, 4758, 580, 558, 568, 9417, 8024, 7409, 7429, 1616, 7224, 5343, 5293, 17092, 7446, 1119, 17094, 12113, 12088, 12806, 10349, 1489, 1245, 4938, 4624, 1105, 10632, 17093, 4625, 2]
 
-// Module 17090 (CreateThreadView)
+// Module 17091 (CreateThreadView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
@@ -466,7 +466,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
                           const obj17 = { style: tmp4.border };
                           const items4 = [closure_13(closure_6, obj17), ];
                           const obj18 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-                          items4[1] = closure_13(tmp(17093).ThreadCreationStarterMessage, obj18);
+                          items4[1] = closure_13(tmp(17094).ThreadCreationStarterMessage, obj18);
                           obj16.children = items4;
                           tmp52 = closure_14(closure_6, obj16);
                         }
@@ -527,7 +527,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
           }
         }
         const obj22 = { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp10, optional: tmp24 };
-        const tmp44 = closure_13(tmp15(17091), obj22);
+        const tmp44 = closure_13(tmp15(17092), obj22);
         cResult[21] = tmp24;
         cResult[22] = tmp10;
         cResult[23] = threadSettingsDraft;
@@ -579,7 +579,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
   const isForumLikeChannelResult = parentChannel.isForumLikeChannel();
   const obj5 = { style: tmp.expander };
   const tmp14 = null != threadSettingsDraft.parentMessageId;
-  const items4 = [closure_13(closure_6, { style: tmp.threadIconContainer, children: closure_13(threadSettingsDraft(5293).ThreadIcon, { size: "lg" }) }), closure_13(parentChannel(17091), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp6[0], optional: tmp14 }), ];
+  const items4 = [closure_13(closure_6, { style: tmp.threadIconContainer, children: closure_13(threadSettingsDraft(5293).ThreadIcon, { size: "lg" }) }), closure_13(parentChannel(17092), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: tmp6[0], optional: tmp14 }), ];
   let tmp16Result = null;
   if (!isForumLikeChannelResult) {
     tmp16Result = null;
@@ -615,7 +615,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadSettings
     const obj13 = { style: tmp.border };
     const items6 = [tmp16(tmp17, obj13), ];
     const obj14 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items6[1] = tmp16(tmp2(17093).ThreadCreationStarterMessage, obj14);
+    items6[1] = tmp16(tmp2(17094).ThreadCreationStarterMessage, obj14);
     obj12.children = items6;
     tmp15Result = tmp15(tmp17, obj12);
   }

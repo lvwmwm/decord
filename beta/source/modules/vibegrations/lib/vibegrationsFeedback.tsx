@@ -1,10 +1,10 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17003
+// Function ID: 17004
 // Name: vibegrationsFeedback
 // Dependencies: [13365, 9307, 1078, 11748, 510, 1119, 3682, 1245, 11751, 2]
 // Exports: countSettledTurns, hasShownFeedbackForProject, markFeedbackShownForProject, submitVibegrationsFeedback, trackVibegrationsFeedbackOpened, vibegrationsFeedbackSection
 
-// Module 17002 (vibegrationsFeedback)
+// Module 17003 (vibegrationsFeedback)
 import Storage3 from "Storage" /* 510 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;

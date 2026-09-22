@@ -1,9 +1,9 @@
-// Module ID: 17781
-// Function ID: 17782
+// Module ID: 17782
+// Function ID: 17783
 // Name: GuildPowerupsManager
 // Dependencies: [2067, 4399, 4580, 4647, 7365, 2070, 4671, 4685, 4687, 4688, 12672, 12676, 16506, 4998, 4686, 12651, 4656, 2]
 
-// Module 17781 (GuildPowerupsManager)
+// Module 17782 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 2070 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4399 */;

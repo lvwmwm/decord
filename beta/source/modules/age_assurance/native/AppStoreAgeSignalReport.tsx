@@ -1,10 +1,10 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17869
+// Function ID: 17870
 // Name: AppStoreAgeSignalReport
 // Dependencies: [32, 5, 1376, 1078, 8851, 8716, 1235, 1368, 8848, 8850, 1245, 5642, 4787, 2]
 // Exports: beginAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 17868 (AppStoreAgeSignalReport)
+// Module 17869 (AppStoreAgeSignalReport)
 import TimeUtils from "TimeUtils" /* 4787 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
 import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8716 */;

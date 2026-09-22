@@ -1,9 +1,9 @@
-// Module ID: 18380
-// Function ID: 18381
+// Module ID: 18381
+// Function ID: 18382
 // Name: DispatcherBridge
 // Dependencies: [4757, 5680, 5722, 13349, 502, 2103, 2067, 1078, 3, 2073, 2071, 1245, 577, 1983, 1235, 2]
 
-// Module 18380 (DispatcherBridge)
+// Module 18381 (DispatcherBridge)
 import LoggerDefault from "Logger" /* 3 */;
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 2071 */;

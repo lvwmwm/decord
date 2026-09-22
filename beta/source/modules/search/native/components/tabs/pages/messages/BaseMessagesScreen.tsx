@@ -1,14 +1,14 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17174
+// Function ID: 17175
 // Name: BaseMessagesScreen
-// Dependencies: [19, 7525, 12487, 8126, 21, 12506, 558, 568, 12488, 504, 17161, 17174, 12486, 17175, 17176, 17111, 17123, 2]
+// Dependencies: [19, 7525, 12487, 8126, 21, 12506, 558, 568, 12488, 504, 17162, 17175, 12486, 17176, 17177, 17112, 17124, 2]
 // Exports: trackMessageItemPress
 
-// Module 17173 (BaseMessagesScreen)
+// Module 17174 (BaseMessagesScreen)
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
 import SearchUtils from "SearchUtils" /* 12488 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17175 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17176 */;
 import noop from "module_19" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 7525 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;

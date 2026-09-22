@@ -1,10 +1,10 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16710
+// Function ID: 16711
 // Name: YouBarGuildTagExperiment
 // Dependencies: [1438, 558, 568, 2]
 // Exports: getIsYouBarGuildTagEnabled
 
-// Module 16709 (YouBarGuildTagExperiment)
+// Module 16710 (YouBarGuildTagExperiment)
 import c from "c" /* 568 */;
 import ApexExperiment from "ApexExperiment" /* 1438 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

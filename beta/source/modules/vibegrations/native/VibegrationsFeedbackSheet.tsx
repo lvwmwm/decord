@@ -1,11 +1,11 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17022
+// Function ID: 17023
 // Name: VibegrationsFeedbackSheet
-// Dependencies: [19, 21, 558, 568, 17002, 4457, 1119, 3682, 17008, 2]
+// Dependencies: [19, 21, 558, 568, 17003, 4457, 1119, 3682, 17009, 2]
 
-// Module 17021 (VibegrationsFeedbackSheet)
+// Module 17022 (VibegrationsFeedbackSheet)
 import ToastUtils from "ToastUtils" /* 4457 */;
-import vibegrationsFeedback from "vibegrationsFeedback" /* 17002 */;
+import vibegrationsFeedback from "vibegrationsFeedback" /* 17003 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,10 +24,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [tmp(17002).vibegrationsFeedbackSection()];
+      const items = [tmp(17003).vibegrationsFeedbackSection()];
       cResult[3] = items;
       let tmp6 = items;
-      let tmpResult = tmp(17002);
+      let tmpResult = tmp(17003);
     } else {
       tmp6 = cResult[3];
     }
@@ -51,12 +51,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       tmp9 = cResult[6];
     }
     if (cResult[7] !== tmp4) {
-      const obj2 = { headerLabel: tmp7, ratingBody: tmp8, categoriesHeader: tmp9, optionsTree: tmp6, trackOpen: tmp(17002).trackVibegrationsFeedbackOpened, trackReport: tmp4 };
-      const tmp18 = jsx(promptCount(17008), { headerLabel: tmp7, ratingBody: tmp8, categoriesHeader: tmp9, optionsTree: tmp6, trackOpen: tmp(17002).trackVibegrationsFeedbackOpened, trackReport: tmp4 });
+      const obj2 = { headerLabel: tmp7, ratingBody: tmp8, categoriesHeader: tmp9, optionsTree: tmp6, trackOpen: tmp(17003).trackVibegrationsFeedbackOpened, trackReport: tmp4 };
+      const tmp18 = jsx(promptCount(17009), { headerLabel: tmp7, ratingBody: tmp8, categoriesHeader: tmp9, optionsTree: tmp6, trackOpen: tmp(17003).trackVibegrationsFeedbackOpened, trackReport: tmp4 });
       cResult[7] = tmp4;
       cResult[8] = tmp18;
       let tmp14 = tmp18;
-      const tmp17 = promptCount(17008);
+      const tmp17 = promptCount(17009);
     } else {
       tmp14 = cResult[8];
     }
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const intl3 = projectId(1119).intl;
   obj.categoriesHeader = intl3.string(promptCount(3682).kLHFxL);
   obj.optionsTree = memo;
-  obj.trackOpen = projectId(17002).trackVibegrationsFeedbackOpened;
+  obj.trackOpen = projectId(17003).trackVibegrationsFeedbackOpened;
   obj.trackReport = callback;
-  return jsx(promptCount(17008), { headerLabel: null, ratingBody: null, categoriesHeader: null, optionsTree: null, trackOpen: null, trackReport: null });
+  return jsx(promptCount(17009), { headerLabel: null, ratingBody: null, categoriesHeader: null, optionsTree: null, trackOpen: null, trackReport: null });
 });

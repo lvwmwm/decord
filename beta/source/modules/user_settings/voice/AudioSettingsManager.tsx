@@ -1,9 +1,9 @@
-// Module ID: 17743
-// Function ID: 17744
+// Module ID: 17744
+// Function ID: 17745
 // Name: AudioSettingsManager
 // Dependencies: [32, 4775, 5226, 502, 1996, 4783, 9893, 11, 1190, 510, 2028, 9892, 12, 14343, 10023, 7365, 2]
 
-// Module 17743 (AudioSettingsManager)
+// Module 17744 (AudioSettingsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Storage2 from "Storage" /* 510 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2028 */;

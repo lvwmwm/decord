@@ -1,13 +1,13 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17061
+// Function ID: 17062
 // Name: VibegrationsNativeStatusStrip
-// Dependencies: [32, 19, 17, 14407, 21, 4758, 580, 558, 568, 17052, 14406, 14410, 4725, 17061, 5341, 1119, 3682, 4754, 4712, 2]
+// Dependencies: [32, 19, 17, 14407, 21, 4758, 580, 558, 568, 17053, 14406, 14410, 4725, 17062, 5341, 1119, 3682, 4754, 4712, 2]
 
-// Module 17060 (VibegrationsNativeStatusStrip)
+// Module 17061 (VibegrationsNativeStatusStrip)
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 17061 */;
+import VibegrationsUsageSheet from "VibegrationsUsageSheet" /* 17062 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -117,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
     tmp17 = cResult[8];
   }
   if (cResult[9] !== text) {
-    const obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: tmp(17052).INDICATOR_PASS_MS, delay: null };
+    const obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: tmp(17053).INDICATOR_PASS_MS, delay: null };
     const tmp22 = closure_7(tmp(14410).AIShimmer, obj3);
     cResult[9] = text;
     cResult[10] = tmp22;
@@ -200,7 +200,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((line) => {
   }, []);
   const obj = { style: tmp.indicator, children: null };
   const items2 = [closure_7(line(14406).AILoader, { size: 10, color: "text-subtle" }), ];
-  const obj2 = { style: tmp.label, children: closure_7(line(14410).AIShimmer, { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(17052).INDICATOR_PASS_MS, delay: null }) };
+  const obj2 = { style: tmp.label, children: closure_7(line(14410).AIShimmer, { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: line(17053).INDICATOR_PASS_MS, delay: null }) };
   items2[1] = closure_7(ref, obj2);
   obj.children = items2;
   return closure_8(ref, obj);
@@ -223,8 +223,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       if (cResult[4] !== projectUsage) {
         let runesUsedLabelsResult = null;
         if (null != projectUsage) {
-          runesUsedLabelsResult = tmp(17052).runesUsedLabels(projectUsage);
-          const tmpResult = tmp(17052);
+          runesUsedLabelsResult = tmp(17053).runesUsedLabels(projectUsage);
+          const tmpResult = tmp(17053);
         }
         cResult[4] = projectUsage;
         cResult[5] = runesUsedLabelsResult;
@@ -358,7 +358,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
   }
   const obj = projectId(568);
-  const thinkingLineResult = projectId(17052).thinkingLine({ activity, compacting, controlling });
+  const thinkingLineResult = projectId(17053).thinkingLine({ activity, compacting, controlling });
   cResult[0] = activity;
   cResult[1] = compacting;
   cResult[2] = controlling;
@@ -369,11 +369,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   ({ activity, projectUsage, connLabel, thinkingOpen } = projectId);
   ({ thinking, compacting, connFailed, controlling, onToggleThinking } = projectId);
   const tmp = closure_9();
-  const thinkingLineResult = projectId(17052).thinkingLine({ activity, compacting, controlling });
+  const thinkingLineResult = projectId(17053).thinkingLine({ activity, compacting, controlling });
   let runesUsedLabelsResult = null;
   if (null != projectUsage) {
-    runesUsedLabelsResult = tmp2(17052).runesUsedLabels(projectUsage);
-    const tmp2Result = tmp2(17052);
+    runesUsedLabelsResult = tmp2(17053).runesUsedLabels(projectUsage);
+    const tmp2Result = tmp2(17053);
   }
   let tmp6 = null != activity;
   if (tmp6) {

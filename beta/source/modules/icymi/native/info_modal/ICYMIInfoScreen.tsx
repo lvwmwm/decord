@@ -1,10 +1,10 @@
-// Module ID: 16810
-// Function ID: 16811
+// Module ID: 16811
+// Function ID: 16812
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1089, 21, 4758, 580, 5897, 1616, 4693, 1488, 8635, 16811, 4961, 8112, 8120, 1119, 5802, 16813, 16814, 16815, 16816, 4754, 9398, 13305, 4717, 4725, 16817, 1984, 5188, 2]
+// Dependencies: [32, 5, 19, 17, 1089, 21, 4758, 580, 5897, 1616, 4693, 1488, 8635, 16812, 4961, 8112, 8120, 1119, 5802, 16814, 16815, 16816, 16817, 4754, 9398, 13305, 4717, 4725, 16818, 1984, 5188, 2]
 // Exports: default
 
-// Module 16810 (ICYMIInfoScreen)
+// Module 16811 (ICYMIInfoScreen)
 import nativeDefault from "native" /* 580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -83,7 +83,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
             dependencyMap(true);
             v1 = 1;
             dependencyMap = 1;
-            const obj5 = { value: tmp2(16811).maybeFetchGuildDiscoveryCategories(), done: false };
+            const obj5 = { value: tmp2(16812).maybeFetchGuildDiscoveryCategories(), done: false };
             return obj5;
           } else {
             v1(4961).pop();
@@ -142,7 +142,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj = extendedOnboarding(1488);
   const tmp12 = closure_11;
   const tmp15 = closure_7;
-  obj6.uri = navigation(16813);
+  obj6.uri = navigation(16814);
   obj5.source = obj6;
   obj5.style = tmp.bgImage;
   const items5 = [closure_9(navigation(5802), obj5), ];
@@ -154,15 +154,15 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const obj9 = { style: tmp.header, children: null };
   const obj8 = { marginTop: top + navigation(580).space.PX_12 };
   if (tmp5 === ThemeTypes.LIGHT) {
-    let tmp2Result = tmp2(16814);
+    let tmp2Result = tmp2(16815);
   } else {
-    tmp2Result = tmp2(16815);
+    tmp2Result = tmp2(16816);
   }
   const items7 = [closure_9(navigation(5802), { source: { uri: tmp2Result }, style: tmp.headerImg }), , , ];
   const obj11 = { source: null, style: null };
   const obj10 = { source: { uri: tmp2Result }, style: tmp.headerImg };
   const tmp17 = navigation(5802);
-  obj11.source = navigation(16816);
+  obj11.source = navigation(16817);
   obj11.style = tmp.flashIcon;
   items7[1] = closure_9(navigation(5802), obj11);
   const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };

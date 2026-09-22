@@ -329,7 +329,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57470;
+          tmp2 = f57471;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }
@@ -346,7 +346,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57470;
+          tmp2 = f57471;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }
@@ -366,7 +366,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj = { stat: arg0, expanded: true, onRatingPress: null };
         tmp3 = undefined;
         tmp = jsx;
-        tmp2 = f57470;
+        tmp2 = f57471;
         if ("rating" === arg0.type) {
           tmp3 = onRatingPress;
         }
@@ -380,7 +380,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57470;
+          tmp2 = f57471;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }
@@ -397,7 +397,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj = { stat: arg0, expanded: true, onRatingPress: null };
           tmp3 = undefined;
           tmp = jsx;
-          tmp2 = f57470;
+          tmp2 = f57471;
           if ("rating" === arg0.type) {
             tmp3 = onRatingPress;
           }

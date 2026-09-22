@@ -1,9 +1,9 @@
-// Module ID: 18033
-// Function ID: 18034
+// Module ID: 18034
+// Function ID: 18035
 // Name: GuildSettingsModalIntegrationSettings
-// Dependencies: [19, 17, 2103, 9834, 21, 18034, 1119, 4758, 580, 558, 568, 5900, 5822, 18035, 5341, 5903, 7446, 4471, 4754, 5502, 1401, 4610, 8876, 5186, 4352, 5901, 18036, 7286, 9833, 504, 4693, 17998, 2]
+// Dependencies: [19, 17, 2103, 9834, 21, 18035, 1119, 4758, 580, 558, 568, 5900, 5822, 18036, 5341, 5903, 7446, 4471, 4754, 5502, 1401, 4610, 8876, 5186, 4352, 5901, 18037, 7286, 9833, 504, 4693, 17999, 2]
 
-// Module 18033 (GuildSettingsModalIntegrationSettings)
+// Module 18034 (GuildSettingsModalIntegrationSettings)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -14,7 +14,7 @@ import TableRadioRow from "TableRadioRow" /* 5900 */;
 import TableRowGroup from "TableRowGroup" /* 5903 */;
 import TableSwitchRow from "TableSwitchRow" /* 7446 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import _modDef18035 from "module_18035" /* 18035 */;
+import _modDef18036 from "module_18036" /* 18036 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
@@ -102,7 +102,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: _modDef18035 };
+      const obj2 = { source: _modDef18036 };
       const tmp10 = React5(tmp(5822).TableRow.Icon, obj2);
       cResult[2] = tmp10;
       let tmp7 = tmp10;
@@ -128,7 +128,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     const intl = util.intl;
     obj.accessibilityLabel = intl.string(util.t["+Josox"]);
     obj.onPress = tmp;
-    const obj2 = { source: _modDef18035 };
+    const obj2 = { source: _modDef18036 };
     obj.children = tmp2(TableRow.TableRow.Icon, obj2);
     tmp2Result = tmp2(Pressables.PressableOpacity, obj);
   }
@@ -252,7 +252,7 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
   value = self(5502).get(integration.type);
   if (null == value) {
     const _Object = Object;
-    const values = Object.values(tmp12(18034).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(18035).IntegrationExpireGracePeriodTypes);
     const found = values.filter((item) => Number.isInteger(item));
     const mapped = found.map((value) => {
       const obj = { value, label: null };
@@ -297,11 +297,11 @@ GuildSettingsModalIntegrationSettings.prototype["render"] = function render() {
     obj9.children = items2;
     items1[1] = closure_8(tmp15(5903).TableRowGroup, obj9);
     const obj16 = { title: stringResult, value: integration.expire_behavior, onChange: self.handleExpireBehaviorChange, hasIcons: false, children: null };
-    const obj17 = { value: tmp15(18036).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: null };
+    const obj17 = { value: tmp15(18037).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: null };
     const intl6 = tmp15(1119).intl;
     obj17.label = intl6.string(tmp15(1119).t["6kpw4i"]);
     const items3 = [closure_7(tmp15(5900).TableRadioRow, obj17), ];
-    const obj18 = { value: tmp15(18036).IntegrationExpireBehaviorTypes.KICK, label: null };
+    const obj18 = { value: tmp15(18037).IntegrationExpireBehaviorTypes.KICK, label: null };
     const intl7 = tmp15(1119).intl;
     obj18.label = intl7.string(tmp15(1119).t.fQUQIJ);
     items3[1] = closure_7(tmp15(5900).TableRadioRow, obj18);

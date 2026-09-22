@@ -1,10 +1,10 @@
-// Module ID: 18146
-// Function ID: 18147
+// Module ID: 18147
+// Function ID: 18148
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 2063, 2067, 1376, 504, 7505, 18147, 4660, 2]
+// Dependencies: [5, 32, 19, 2063, 2067, 1376, 504, 7505, 18148, 4660, 2]
 // Exports: default
 
-// Module 18146 (useCreatorMonetizationAcceptTerms)
+// Module 18147 (useCreatorMonetizationAcceptTerms)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -76,12 +76,12 @@ export default function useCreateCreatorMonetizationAcceptTermsRequest(arg0, arg
               if (null != tmp4) {
                 c4 = 4;
                 c5 = 1;
-                const obj6 = { value: tmp47(18147).acceptCreatorMonetizationTerms(tmp55, tmp42), done: false };
+                const obj6 = { value: tmp47(18148).acceptCreatorMonetizationTerms(tmp55, tmp42), done: false };
                 return obj6;
               } else {
                 c4 = 3;
                 c5 = 1;
-                const obj7 = { value: tmp47(18147).acceptCreatorMonetizationTermsV2(tmp55), done: false };
+                const obj7 = { value: tmp47(18148).acceptCreatorMonetizationTermsV2(tmp55), done: false };
                 return obj7;
               }
             }

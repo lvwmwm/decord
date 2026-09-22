@@ -1,9 +1,9 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18342
+// Function ID: 18343
 // Name: usePendingParentRequests
 // Dependencies: [32, 19, 7784, 1376, 7785, 558, 568, 504, 8921, 12047, 2]
 
-// Module 18341 (usePendingParentRequests)
+// Module 18342 (usePendingParentRequests)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import useUserLinks from "useUserLinks" /* 8921 */;

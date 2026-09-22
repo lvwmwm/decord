@@ -1,9 +1,9 @@
-// Module ID: 18169
-// Function ID: 18170
+// Module ID: 18170
+// Function ID: 18171
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1181, 10477, 1119, 7222, 18170, 4455, 18142, 5802, 15499, 5189, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4754, 1181, 10477, 1119, 7222, 18171, 4455, 18143, 5802, 15499, 5189, 2]
 
-// Module 18169 (CreatorHighlightSection)
+// Module 18170 (CreatorHighlightSection)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -134,7 +134,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
   const typeConsolidationEyebrow = require("useTypeConsolidationTextTransform").useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(18170)(guild_id, 3, 60);
+  const tmp7 = guild_id(18171)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -144,7 +144,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
     if (tmp8) {
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_6(tmp6(18142), {});
+        const tmp67 = closure_6(tmp6(18143), {});
         cResult[3] = tmp67;
         let tmp65 = tmp67;
       } else {
@@ -432,12 +432,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((highlightedCre
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(18170)(guild_id, 3, 60);
+  const tmp6 = guild_id(18171)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_6(tmp5(18142), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_6(tmp5(18143), {}) };
     return closure_6(closure_4, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;

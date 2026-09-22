@@ -1,10 +1,10 @@
-// Module ID: 18252
-// Function ID: 18253
+// Module ID: 18253
+// Function ID: 18254
 // Name: GuildSettingsModalOfficialMessages
 // Dependencies: [32, 19, 17, 4750, 2067, 9834, 5818, 4751, 1089, 21, 4758, 580, 1119, 15528, 13028, 15530, 4758, 1488, 504, 9833, 5839, 7621, 4725, 16632, 1984, 9868, 4497, 5822, 14862, 1096, 4754, 9869, 558, 568, 4442, 7511, 676, 1181, 15543, 2]
 // Exports: default
 
-// Module 18252 (GuildSettingsModalOfficialMessages)
+// Module 18253 (GuildSettingsModalOfficialMessages)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;

@@ -1,15 +1,15 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18290
+// Function ID: 18291
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2113, 13973, 9835, 1078, 1119, 1374, 7585, 1245, 18288, 1259, 2]
+// Dependencies: [5, 2113, 13973, 9835, 1078, 1119, 1374, 7585, 1245, 18289, 1259, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 18289 (GlobalDiscoveryServersUtils)
+// Module 18290 (GlobalDiscoveryServersUtils)
 import util from "util" /* 1119 */;
 import v1 from "v1" /* 1259 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13973 */;
-import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 18288 */;
+import GlobalDiscoveryServersFeaturedSearchManagerDefault from "GlobalDiscoveryServersFeaturedSearchManager" /* 18289 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 
@@ -171,7 +171,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "applicationId", discoverySplash: false, emojis: false };
+  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "unicodeVersion", discoverySplash: "<string:795365892>", emojis: "<string:510724435>" };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   obj.emojis = [];
   return obj;

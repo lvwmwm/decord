@@ -1,9 +1,9 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17346
+// Function ID: 17347
 // Name: MessageRequestsNavigator
-// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 7246, 7722, 1616, 8112, 1119, 11230, 17346, 17365, 17366, 2]
+// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 7246, 7722, 1616, 8112, 1119, 11230, 17347, 17366, 17367, 2]
 
-// Module 17345 (MessageRequestsNavigator)
+// Module 17346 (MessageRequestsNavigator)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import HeaderShared from "HeaderShared" /* 8112 */;
@@ -107,7 +107,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           let merged = Object.assign(tmp9(11230)());
           tmp19[1] = obj3;
           tmp19[2] = function getComponent() {
-            return closure_0(17346).default;
+            return closure_0(17347).default;
           };
           const tmp22 = closure_7(closure_9.Screen, tmp19);
           cResult[11] = tmp22;
@@ -141,7 +141,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const merged1 = Object.assign(tmp9(11230)());
           tmp26[1] = obj4;
           tmp26[2] = function getComponent() {
-            return closure_0(17365).default;
+            return closure_0(17366).default;
           };
           const tmp29 = closure_7(closure_9.Screen, tmp26);
           cResult[12] = tmp29;
@@ -175,7 +175,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const merged2 = Object.assign(tmp9(11230)());
           tmp33[1] = obj5;
           tmp33[2] = function getComponent() {
-            return closure_0(17366).default;
+            return closure_0(17367).default;
           };
           const tmp36 = closure_7(closure_9.Screen, tmp33);
           cResult[13] = tmp36;
@@ -295,7 +295,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let merged = Object.assign(getNavigationModalPresentationDefault());
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(17346).default;
+    return closure_0(17347).default;
   };
   const items1 = [closure_7(Screen, obj4), , ];
   const obj6 = { name: "spam", options: null, getComponent: null };
@@ -305,7 +305,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let merged1 = Object.assign(getNavigationModalPresentationDefault());
   obj6.options = obj7;
   obj6.getComponent = function getComponent() {
-    return closure_0(17365).default;
+    return closure_0(17366).default;
   };
   items1[1] = closure_7(closure_9.Screen, obj6);
   const obj8 = { name: "preview", options: null, getComponent: null };
@@ -315,7 +315,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const merged2 = Object.assign(getNavigationModalPresentationDefault());
   obj8.options = obj9;
   obj8.getComponent = function getComponent() {
-    return closure_0(17366).default;
+    return closure_0(17367).default;
   };
   items1[2] = closure_7(closure_9.Screen, obj8);
   obj3.children = items1;

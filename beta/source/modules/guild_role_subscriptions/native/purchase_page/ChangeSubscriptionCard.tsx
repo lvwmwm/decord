@@ -1,10 +1,10 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16901
+// Function ID: 16902
 // Name: ChangeSubscriptionCard
-// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 4754, 1616, 15486, 4352, 7397, 1119, 1181, 16893, 4961, 16901, 1984, 4725, 2]
+// Dependencies: [32, 19, 17, 1078, 21, 4758, 580, 4754, 1616, 15486, 4352, 7397, 1119, 1181, 16894, 4961, 16902, 1984, 4725, 2]
 // Exports: default
 
-// Module 16900 (ChangeSubscriptionCard)
+// Module 16901 (ChangeSubscriptionCard)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
@@ -63,11 +63,11 @@ export default function ChangeSubscriptionCard(activeSubscription) {
     const intl4 = tmp6(1119).intl;
     obj11.text = intl4.string(tmp6(1119).t.UwHVxr);
     obj11.onPress = function onPress() {
-      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16901, dependencyMap.paths), { subscriptionId: activeSubscription.id });
+      ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16902, dependencyMap.paths), { subscriptionId: activeSubscription.id });
       const obj2 = { subscriptionId: activeSubscription.id };
       ActionSheetActionCreatorsDefault.hideActionSheet();
     };
-    items3[1] = tmp5(tmp6(16893).ArrowButton, obj11);
+    items3[1] = tmp5(tmp6(16894).ArrowButton, obj11);
     obj10.children = items3;
     tmp7Result = tmp7(closure_9, obj10);
   }

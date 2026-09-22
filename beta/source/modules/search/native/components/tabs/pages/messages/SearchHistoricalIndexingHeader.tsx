@@ -1,9 +1,9 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17176
+// Function ID: 17177
 // Name: SearchHistoricalIndexingHeader
 // Dependencies: [19, 2113, 8127, 21, 4758, 558, 568, 12506, 1119, 4754, 5824, 2]
 
-// Module 17175 (SearchHistoricalIndexingHeader)
+// Module 17176 (SearchHistoricalIndexingHeader)
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;

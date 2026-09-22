@@ -1,10 +1,10 @@
-// Module ID: 16715
-// Function ID: 16716
+// Module ID: 16716
+// Function ID: 16717
 // Name: openManageAccountsModal
-// Dependencies: [12563, 4725, 4961, 16716, 1984, 2]
+// Dependencies: [12563, 4725, 4961, 16717, 1984, 2]
 // Exports: default
 
-// Module 16715 (openManageAccountsModal)
+// Module 16716 (openManageAccountsModal)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
@@ -16,5 +16,5 @@ const result = size.fileFinishedImporting("modules/multi_account/native/openMana
 
 export default function openManageAccountsModal(initialRouteName) {
   ActionSheetActionCreatorsDefault.hideActionSheet();
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16716, dependencyMap.paths), { initialRouteName }, SWITCH_ACCOUNTS_MODAL_KEY);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(16717, dependencyMap.paths), { initialRouteName }, SWITCH_ACCOUNTS_MODAL_KEY);
 };

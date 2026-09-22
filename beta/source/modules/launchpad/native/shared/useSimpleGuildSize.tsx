@@ -1,9 +1,9 @@
-// Module ID: 17677
-// Function ID: 17678
+// Module ID: 17678
+// Function ID: 17679
 // Name: useSimpleGuildSize
 // Dependencies: [19, 558, 568, 2]
 
-// Module 17677 (useSimpleGuildSize)
+// Module 17678 (useSimpleGuildSize)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

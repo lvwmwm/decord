@@ -1,9 +1,9 @@
-// Module ID: 18288
-// Function ID: 18289
+// Module ID: 18289
+// Function ID: 18290
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 13973, 9835, 1078, 7365, 18289, 577, 1275, 1476, 18290, 7585, 2]
+// Dependencies: [5, 13973, 9835, 1078, 7365, 18290, 577, 1275, 1476, 18291, 7585, 2]
 
-// Module 18288 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 18289 (GlobalDiscoveryServersFeaturedSearchManager)
 import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 13973 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;

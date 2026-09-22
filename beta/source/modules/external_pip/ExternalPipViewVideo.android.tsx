@@ -1,16 +1,16 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17437
+// Function ID: 17438
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2045, 1376, 4779, 21, 4758, 580, 558, 568, 9683, 4712, 1119, 4754, 504, 1181, 9692, 4462, 17437, 9700, 17438, 9696, 2]
+// Dependencies: [32, 19, 17, 2045, 1376, 4779, 21, 4758, 580, 558, 568, 9683, 4712, 1119, 4754, 504, 1181, 9692, 4462, 17438, 9700, 17439, 9696, 2]
 
-// Module 17436 (ExternalPipViewVideo)
+// Module 17437 (ExternalPipViewVideo)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ExternalPipDefault from "ExternalPip" /* 9696 */;
 import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9700 */;
-import VideoActionCreators from "VideoActionCreators" /* 17437 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17438 */;
+import VideoActionCreators from "VideoActionCreators" /* 17438 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17439 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

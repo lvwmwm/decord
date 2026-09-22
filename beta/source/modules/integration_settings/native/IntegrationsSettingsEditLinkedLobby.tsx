@@ -1,9 +1,9 @@
-// Module ID: 17323
-// Function ID: 17324
+// Module ID: 17324
+// Function ID: 17325
 // Name: IntegrationsSettingsEditLinkedLobby
 // Dependencies: [19, 17, 1376, 21, 4758, 580, 558, 568, 4462, 1488, 7409, 7429, 7415, 4911, 504, 11239, 8453, 1119, 4754, 1401, 1181, 5903, 5822, 5186, 8876, 2]
 
-// Module 17323 (IntegrationsSettingsEditLinkedLobby)
+// Module 17324 (IntegrationsSettingsEditLinkedLobby)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Text_Text from "Text/Text" /* 4754 */;

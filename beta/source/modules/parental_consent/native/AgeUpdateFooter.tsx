@@ -1,9 +1,9 @@
-// Module ID: 18342
-// Function ID: 18343
+// Module ID: 18343
+// Function ID: 18344
 // Name: AgeUpdateFooter
 // Dependencies: [19, 21, 4758, 558, 568, 1119, 2780, 8687, 8689, 4754, 2]
 
-// Module 18342 (AgeUpdateFooter)
+// Module 18343 (AgeUpdateFooter)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import _modDef2780 from "module_2780" /* 2780 */;

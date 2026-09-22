@@ -1,10 +1,10 @@
-// Module ID: 17167
-// Function ID: 17168
+// Module ID: 17168
+// Function ID: 17169
 // Name: useAnimatedKeyboardHeight
 // Dependencies: [16260, 2]
 // Exports: default
 
-// Module 17167 (useAnimatedKeyboardHeight)
+// Module 17168 (useAnimatedKeyboardHeight)
 import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 16260 */;
 import size from "module_2" /* 2 */;
 

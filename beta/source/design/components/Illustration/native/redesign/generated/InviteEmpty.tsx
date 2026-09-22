@@ -1,10 +1,10 @@
-// Module ID: 18086
-// Function ID: 18087
+// Module ID: 18087
+// Function ID: 18088
 // Name: InviteEmpty
-// Dependencies: [19, 17, 21, 8507, 11256, 18087, 11255, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8507, 11256, 18088, 11255, 558, 568, 4610, 2]
 // Exports: getInviteEmptySource
 
-// Module 18086 (InviteEmpty)
+// Module 18087 (InviteEmpty)
 import c from "c" /* 568 */;
 import shared from "shared" /* 4610 */;
 import _mod8507 from "module_8507" /* 8507 */;
@@ -23,7 +23,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return require("module_11256");
         },
       darker() {
-          return require("module_18087");
+          return require("module_18088");
         },
       light() {
           return require("module_11255");
@@ -45,7 +45,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return require("module_11256");
     },
     darker() {
-      return require("module_18087");
+      return require("module_18088");
     },
     light() {
       return require("module_11255");
@@ -60,7 +60,7 @@ function getInviteEmptySource(theme) {
       return require("module_11256");
     },
     darker() {
-      return require("module_18087");
+      return require("module_18088");
     },
     light() {
       return require("module_11255");

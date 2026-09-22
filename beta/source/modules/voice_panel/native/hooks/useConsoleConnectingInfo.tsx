@@ -1,13 +1,13 @@
-// Module ID: 17596
-// Function ID: 17597
+// Module ID: 17597
+// Function ID: 17598
 // Name: useConsoleConnectingInfo
-// Dependencies: [4775, 4776, 558, 568, 10020, 565, 17597, 10038, 17598, 17599, 2]
+// Dependencies: [4775, 4776, 558, 568, 10020, 565, 17598, 10038, 17599, 17600, 2]
 
-// Module 17596 (useConsoleConnectingInfo)
+// Module 17597 (useConsoleConnectingInfo)
 import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10020 */;
 import getConsoleIconDefault from "getConsoleIcon" /* 10038 */;
-import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17597 */;
-import getConsoleColorDefault from "getConsoleColor" /* 17599 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17598 */;
+import getConsoleColorDefault from "getConsoleColor" /* 17600 */;
 import GameConsoleStore from "GameConsoleStore" /* 4775 */;
 import SessionsStore from "SessionsStore" /* 4776 */;
 
@@ -136,7 +136,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp23 = cResult[10];
       }
       if (cResult[11] !== str) {
-        const tmp26 = tmp4(17599)(str);
+        const tmp26 = tmp4(17600)(str);
         class S {
           constructor() {
             str = undefined;
@@ -249,7 +249,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj3.isConnectingOrConnectedToConsole = channelId2 === arg0 || channelId === arg0;
   obj3.icon = getConsoleIconDefault(str);
   const tmp9 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
-  obj3.text = tmp5(17598).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj3.text = tmp5(17599).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
   obj3.color = getConsoleColorDefault(str);
   obj3.displayCancel = tmp9;
   return obj3;

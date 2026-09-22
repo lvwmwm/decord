@@ -218,7 +218,7 @@ function deconstructPattern(templatePair, arg1) {
             let obj = { type: "literal", value: arr.substring(num4, index) };
             arr = items.push(obj);
           }
-          let obj2 = { type: arr.substring(index + 1, index1), value: "Array" };
+          let obj2 = { type: arr.substring(index + 1, index1), value: "a" };
           let arr4 = items.push(obj2);
           let sum = index1 + 1;
           let index2 = arr.indexOf("{", sum);

@@ -1,9 +1,9 @@
-// Module ID: 17603
-// Function ID: 17604
+// Module ID: 17604
+// Function ID: 17605
 // Name: useControlsTranslation
 // Dependencies: [19, 12420, 12423, 558, 12419, 4497, 5187, 2]
 
-// Module 17603 (useControlsTranslation)
+// Module 17604 (useControlsTranslation)
 import spring from "spring" /* 5187 */;
 import noop from "module_19" /* 19 */;
 

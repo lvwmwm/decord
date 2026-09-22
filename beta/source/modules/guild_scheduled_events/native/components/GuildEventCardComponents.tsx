@@ -112,7 +112,7 @@ class GuildEventJoinAndRSVPAction {
         }
       }
     };
-    tmp = closure_4(f52014(event, global.recurrenceId), 2);
+    tmp = closure_4(f52015(event, global.recurrenceId), 2);
     [closure_1, closure_2] = tmp;
     tmp2 = closure_4(closure_5.useState(false), 2);
     closure_3 = tmp2[1];

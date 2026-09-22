@@ -91,7 +91,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp24 = cResult[4];
       }
       if (cResult[5] !== tmp24) {
-        const obj4 = { user: tmp24, guildId: "Array" };
+        const obj4 = { user: tmp24, guildId: "a" };
         const tmp33 = closure_1_21(tmp(1181).Avatar, obj4);
         cResult[5] = tmp24;
         cResult[6] = tmp33;
@@ -133,7 +133,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp6 = cResult[11];
       }
       if (cResult[12] !== tmp6) {
-        const obj5 = { user: tmp6, guildId: "Array" };
+        const obj5 = { user: tmp6, guildId: "a" };
         const tmp15 = closure_1_21(tmp(1181).Avatar, obj5);
         cResult[12] = tmp6;
         cResult[13] = tmp15;
@@ -238,7 +238,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp18 = closure_1_21;
     } else if (null != tmp2) {
       _modDef38(null != inviter, "Null inviter");
-      const obj = { user: null, guildId: "Array" };
+      const obj = { user: null, guildId: "a" };
       const tmp12 = new UserRecord(inviter);
       obj.user = tmp12;
       tmp14 = closure_1_21(native.Avatar, obj);
@@ -250,7 +250,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else if (null == inviter) {
       return null;
     } else {
-      const obj4 = { user: null, guildId: "Array" };
+      const obj4 = { user: null, guildId: "a" };
       const tmp33 = new UserRecord(inviter);
       obj4.user = tmp33;
       const intl3 = util.intl;

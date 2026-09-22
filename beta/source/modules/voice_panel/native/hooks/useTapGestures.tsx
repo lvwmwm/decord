@@ -1,10 +1,10 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17557
+// Function ID: 17558
 // Name: useTapGestures
 // Dependencies: [19, 12419, 6891, 4497, 4726, 2]
 // Exports: default
 
-// Module 17556 (useTapGestures)
+// Module 17557 (useTapGestures)
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import HapticUtils from "HapticUtils" /* 4726 */;
 import noop from "module_19" /* 19 */;

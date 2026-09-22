@@ -1,9 +1,9 @@
-// Module ID: 17582
-// Function ID: 17583
+// Module ID: 17583
+// Function ID: 17584
 // Name: VoicePanelPreJoinContent
-// Dependencies: [109, 5, 32, 19, 17, 2044, 4775, 14004, 4780, 502, 2045, 1996, 4399, 4776, 1376, 4777, 4782, 12420, 12423, 1078, 14009, 4783, 21, 4758, 12424, 580, 558, 568, 12419, 504, 4968, 8669, 5630, 4900, 4810, 1119, 4754, 13334, 5804, 7415, 4389, 17569, 1482, 4497, 9632, 9631, 9735, 17567, 5188, 5341, 1253, 9046, 7176, 9916, 4910, 5822, 11293, 11554, 7409, 7429, 1245, 17534, 17583, 5187, 4471, 7320, 17470, 17585, 2]
+// Dependencies: [109, 5, 32, 19, 17, 2044, 4775, 14004, 4780, 502, 2045, 1996, 4399, 4776, 1376, 4777, 4782, 12420, 12423, 1078, 14009, 4783, 21, 4758, 12424, 580, 558, 568, 12419, 504, 4968, 8669, 5630, 4900, 4810, 1119, 4754, 13334, 5804, 7415, 4389, 17570, 1482, 4497, 9632, 9631, 9735, 17568, 5188, 5341, 1253, 9046, 7176, 9916, 4910, 5822, 11293, 11554, 7409, 7429, 1245, 17535, 17584, 5187, 4471, 7320, 17471, 17586, 2]
 
-// Module 17582 (VoicePanelPreJoinContent)
+// Module 17583 (VoicePanelPreJoinContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -2470,7 +2470,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
                   class W {
                     constructor(arg0) {
                       obj = { activity: ignoredMembers, analyticsLocations };
-                      return jsx(f76858, obj, ignoredMembers.launchId);
+                      return jsx(f76861, obj, ignoredMembers.launchId);
                     }
                   }
                   cResult[24] = analyticsLocations;
@@ -2480,7 +2480,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
                   class W {
                     constructor(arg0) {
                       obj = { activity: ignoredMembers, analyticsLocations };
-                      return jsx(f76858, obj, ignoredMembers.launchId);
+                      return jsx(f76861, obj, ignoredMembers.launchId);
                     }
                   }
                 }
@@ -2495,7 +2495,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
               class W {
                 constructor(arg0) {
                   obj = { activity: ignoredMembers, analyticsLocations };
-                  return jsx(f76858, obj, ignoredMembers.launchId);
+                  return jsx(f76861, obj, ignoredMembers.launchId);
                 }
               }
               const obj8 = { style: tmp4.optInChannelsContainer, channel: stateFromStores, analyticsSection: constants2.CHANNEL };
@@ -2513,7 +2513,7 @@ let closure_42 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((igno
         class W {
           constructor(arg0) {
             obj = { activity: ignoredMembers, analyticsLocations };
-            return jsx(f76858, obj, ignoredMembers.launchId);
+            return jsx(f76861, obj, ignoredMembers.launchId);
           }
         }
         const found = members.filter(tmp17);
@@ -2812,7 +2812,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const context = noop.useContext(guildId(12419));
   channelId = context.channelId;
   guildId = context.guildId;
-  const tmp5 = guildId(17470)(channelId);
+  const tmp5 = guildId(17471)(channelId);
   dependencyMap = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
@@ -2828,7 +2828,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let tmp13 = cResult[5];
       }
       const tmpResult = tmp(504);
-      const stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13, tmp(17585).areVoicePanelPreJoinContentPropsEqual);
+      const stateFromStores = tmpResult.useStateFromStores(first, tmp12, tmp13, tmp(17586).areVoicePanelPreJoinContentPropsEqual);
       if (cResult[6] !== stateFromStores) {
         const obj2 = { item: stateFromStores, renderItem };
         const tmp22 = closure_27(tmp(4471).TransitionItem, obj2);
@@ -2890,7 +2890,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const context = noop.useContext(guildId(12419));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(17470)(channelId);
+  const tmp2 = guildId(17471)(channelId);
   dependencyMap = tmp2;
   let items = [SortedVoiceStateStore, VoiceChannelBlockedUserStore, EmbeddedActivitiesStore, MediaEngineStore, ApplicationStreamingStore];
   let items1 = [tmp2, channelId, guildId];
@@ -2930,6 +2930,6 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       };
       return obj;
     }
-  }, items1, channelId(17585).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(17586).areVoicePanelPreJoinContentPropsEqual);
   return closure_27(channelId(4471).TransitionItem, { item: stateFromStores, renderItem });
 }));

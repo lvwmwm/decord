@@ -1,14 +1,14 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 17866
+// Function ID: 17867
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 12559, 1078, 21, 4758, 580, 1245, 558, 568, 12560, 4725, 17866, 1119, 4754, 5188, 5652, 7397, 2]
+// Dependencies: [19, 17, 12559, 1078, 21, 4758, 580, 1245, 558, 568, 12560, 4725, 17867, 1119, 4754, 5188, 5652, 7397, 2]
 
-// Module 17865 (NotificationReactivationActionSheet)
+// Module 17866 (NotificationReactivationActionSheet)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12560 */;
-import _modDef17866 from "module_17866" /* 17866 */;
+import _modDef17867 from "module_17867" /* 17867 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -62,7 +62,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp6 = cResult[3];
   }
   if (cResult[4] !== tmp4.image) {
-    let obj2 = { style: tmp4.image, source: _modDef17866, resizeMode: "contain" };
+    let obj2 = { style: tmp4.image, source: _modDef17867, resizeMode: "contain" };
     const tmp11 = closure_8(closure_5, obj2);
     cResult[4] = tmp4.image;
     cResult[5] = tmp11;
@@ -196,7 +196,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   }, items1);
   let obj = { children: null };
   let obj2 = { style: tmp.container, children: null };
-  const items2 = [closure_8(closure_5, { style: tmp.image, source: _modDef17866, resizeMode: "contain" }), , , ];
+  const items2 = [closure_8(closure_5, { style: tmp.image, source: _modDef17867, resizeMode: "contain" }), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: null };
   const intl = _location(1119).intl;
   obj4.children = intl.string(_location(1119).t.a4bgO0);

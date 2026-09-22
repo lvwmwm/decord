@@ -1,9 +1,9 @@
-// Module ID: 17356
-// Function ID: 17357
+// Module ID: 17357
+// Function ID: 17358
 // Name: useMessageRequestsCount
 // Dependencies: [7466, 558, 568, 504, 2]
 
-// Module 17356 (useMessageRequestsCount)
+// Module 17357 (useMessageRequestsCount)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import MessageRequestStore from "MessageRequestStore" /* 7466 */;

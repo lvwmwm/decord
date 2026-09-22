@@ -1,9 +1,9 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18234
+// Function ID: 18235
 // Name: components/StepsIndicator
 // Dependencies: [19, 17, 4750, 21, 4758, 580, 558, 568, 4497, 4759, 4754, 504, 2]
 
-// Module 18233 (components/StepsIndicator)
+// Module 18234 (components/StepsIndicator)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

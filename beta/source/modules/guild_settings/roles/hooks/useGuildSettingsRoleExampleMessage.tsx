@@ -1,9 +1,9 @@
-// Module ID: 18068
-// Function ID: 18069
+// Module ID: 18069
+// Function ID: 18070
 // Name: useGuildSettingsRoleExampleMessage
 // Dependencies: [19, 1390, 1078, 558, 568, 4980, 7999, 1119, 8455, 13605, 2]
 
-// Module 18068 (useGuildSettingsRoleExampleMessage)
+// Module 18069 (useGuildSettingsRoleExampleMessage)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 4980 */;

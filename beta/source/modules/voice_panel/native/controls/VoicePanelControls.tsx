@@ -1,9 +1,9 @@
-// Module ID: 17592
-// Function ID: 17593
+// Module ID: 17593
+// Function ID: 17594
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 4774, 12420, 12423, 12418, 1078, 21, 4758, 580, 1613, 558, 568, 17593, 9182, 12419, 4497, 17488, 4462, 6891, 17594, 12424, 12427, 4726, 5173, 12163, 9660, 17595, 17501, 17596, 4471, 17600, 17602, 5801, 17605, 5187, 7320, 17470, 17516, 1252, 17629, 1114, 1616, 1482, 11293, 17601, 17630, 17604, 17631, 17490, 12243, 2]
+// Dependencies: [32, 19, 17, 4774, 12420, 12423, 12418, 1078, 21, 4758, 580, 1613, 558, 568, 17594, 9182, 12419, 4497, 17489, 4462, 6891, 17595, 12424, 12427, 4726, 5173, 12163, 9660, 17596, 17502, 17597, 4471, 17601, 17603, 5801, 17606, 5187, 7320, 17471, 17517, 1252, 17630, 1114, 1616, 1482, 11293, 17602, 17631, 17605, 17632, 17491, 12243, 2]
 
-// Module 17592 (VoicePanelControls)
+// Module 17593 (VoicePanelControls)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
@@ -16,13 +16,13 @@ import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12424 */;
 import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12427 */;
-import useControlsLockDefault from "useControlsLock" /* 17488 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17501 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17593 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17594 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17596 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17600 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17602 */;
+import useControlsLockDefault from "useControlsLock" /* 17489 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17502 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17594 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17595 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 17597 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 17601 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17603 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
@@ -429,15 +429,15 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
             const result2 = wrapperSpecs.set(size);
             const tmpResult5 = tmp(12427);
           } else if (tmp25.DRAWER === currentControlsMode) {
-            const drawerSpec = tmp(17595).getDrawerSpec(tmp4, safeArea.top);
+            const drawerSpec = tmp(17596).getDrawerSpec(tmp4, safeArea.top);
             ({ minHeight, maxHeight } = drawerSpec);
             if (wrapperSpecs.get().height <= controlsHeightValue) {
               minHeight = maxHeight;
             } else if (null != currentControlsMode) {
-              const tmpResult7 = tmp(17595);
+              const tmpResult7 = tmp(17596);
             }
             const size1 = { x: 0, y: 0, width: null, height: null, drawerMode: true, hidden: false };
-            const tmpResult6 = tmp(17595);
+            const tmpResult6 = tmp(17596);
             size1.width = tmp(12427).getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
             size1.height = minHeight;
             const result3 = obj15.set(size1);
@@ -515,15 +515,15 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((wrapperSpecs) 
             const result2 = wrapperSpecs.set(size);
             const tmpResult5 = tmp(12427);
           } else if (tmp25.DRAWER === currentControlsMode) {
-            const drawerSpec = tmp(17595).getDrawerSpec(tmp4, safeArea.top);
+            const drawerSpec = tmp(17596).getDrawerSpec(tmp4, safeArea.top);
             ({ minHeight, maxHeight } = drawerSpec);
             if (wrapperSpecs.get().height <= controlsHeightValue) {
               minHeight = maxHeight;
             } else if (null != currentControlsMode) {
-              const tmpResult7 = tmp(17595);
+              const tmpResult7 = tmp(17596);
             }
             const size1 = { x: 0, y: 0, width: null, height: null, drawerMode: true, hidden: false };
-            const tmpResult6 = tmp(17595);
+            const tmpResult6 = tmp(17596);
             size1.width = tmp(12427).getControlsDrawerOpenWidth(windowWidth, safeArea.left, safeArea.right);
             size1.height = minHeight;
             const result3 = obj15.set(size1);
@@ -588,7 +588,7 @@ let closure_41 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
                 return;
               }
             }
-            obj3.renderItem = tmp(17600).renderVoicePanelFloatingCTA;
+            obj3.renderItem = tmp(17601).renderVoicePanelFloatingCTA;
             const tmp15 = collapsedCategories(tmp(4471).TransitionItem, obj3);
             cResult[9] = tmp12;
             cResult[10] = tmp15;
@@ -613,7 +613,7 @@ let closure_41 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
                 return;
               }
             }
-            obj4.renderItem = tmp(17602).renderVoicePanelConsoleStatus;
+            obj4.renderItem = tmp(17603).renderVoicePanelConsoleStatus;
             const tmp19 = collapsedCategories(tmp(4471).TransitionItem, obj4);
             cResult[11] = tmp16;
             cResult[12] = tmp19;
@@ -1032,7 +1032,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
                       obj = gestureState(channelId[40]);
                       batchUpdatesResult = obj.batchUpdates(() => {
                         closure_0 = false;
-                        chatOpen(/* F152192 */ function() { ... });
+                        chatOpen(/* F152197 */ function() { ... });
                         if (!closure_3) {
                           const obj = { mode: constants.DRAWER };
                           const merged = Object.assign(closure_2);
@@ -1108,7 +1108,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
                     obj = gestureState(channelId[40]);
                     batchUpdatesResult = obj.batchUpdates(() => {
                       closure_0 = false;
-                      chatOpen(/* F152192 */ function() { ... });
+                      chatOpen(/* F152197 */ function() { ... });
                       if (!closure_3) {
                         const obj = { mode: constants.DRAWER };
                         const merged = Object.assign(closure_2);
@@ -1373,7 +1373,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
                       obj = gestureState(channelId[40]);
                       batchUpdatesResult = obj.batchUpdates(() => {
                         closure_0 = false;
-                        chatOpen(/* F152192 */ function() { ... });
+                        chatOpen(/* F152197 */ function() { ... });
                         if (!closure_3) {
                           const obj = { mode: constants.DRAWER };
                           const merged = Object.assign(closure_2);
@@ -1473,7 +1473,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
               obj = gestureState(channelId[40]);
               batchUpdatesResult = obj.batchUpdates(() => {
                 closure_0 = false;
-                chatOpen(/* F152192 */ function() { ... });
+                chatOpen(/* F152197 */ function() { ... });
                 if (!closure_3) {
                   const obj = { mode: constants.DRAWER };
                   const merged = Object.assign(closure_2);
@@ -1535,7 +1535,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
             obj = gestureState(channelId[40]);
             batchUpdatesResult = obj.batchUpdates(() => {
               closure_0 = false;
-              chatOpen(/* F152192 */ function() { ... });
+              chatOpen(/* F152197 */ function() { ... });
               if (!closure_3) {
                 const obj = { mode: constants.DRAWER };
                 const merged = Object.assign(closure_2);
@@ -1564,7 +1564,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gestur
         obj = gestureState(channelId[40]);
         batchUpdatesResult = obj.batchUpdates(() => {
           closure_0 = false;
-          chatOpen(/* F152192 */ function() { ... });
+          chatOpen(/* F152197 */ function() { ... });
           if (!closure_3) {
             const obj = { mode: constants.DRAWER };
             const merged = Object.assign(closure_2);

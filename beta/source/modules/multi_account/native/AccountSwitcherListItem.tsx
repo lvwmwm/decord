@@ -222,7 +222,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ({ accountSwitcherListItem, accountInfo } = tmp5);
   if (cResult[12] !== tmp15) {
-    { user: null, guildId: "Array" }.user = tmp15;
+    { user: null, guildId: "a" }.user = tmp15;
     class U {
       constructor() {
         return closure_1_7.getCurrentUser();
@@ -231,7 +231,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = tmp15;
     cResult[13] = tmp35;
     let tmp33 = tmp35;
-    const obj6 = { user: null, guildId: "Array" };
+    const obj6 = { user: null, guildId: "a" };
   } else {
     tmp33 = cResult[13];
   }
@@ -470,7 +470,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged = Object.assign(sortHandlers);
     const items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: null };
-    const obj9 = { user: obj3, guildId: "Array" };
+    const obj9 = { user: obj3, guildId: "a" };
     const items3 = [options(tmp2(1181).Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: null };
     const obj11 = { style: tmp.tagContainer, children: null };

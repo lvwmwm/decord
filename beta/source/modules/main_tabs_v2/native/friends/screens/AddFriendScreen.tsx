@@ -1,9 +1,9 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 17236
+// Function ID: 17237
 // Name: AddFriendScreen
 // Dependencies: [32, 19, 17, 1376, 1078, 12825, 21, 4758, 580, 558, 568, 12827, 4603, 1245, 1119, 8637, 8112, 1368, 5343, 4754, 14127, 14129, 2]
 
-// Module 17235 (AddFriendScreen)
+// Module 17236 (AddFriendScreen)
 import nativeDefault from "native" /* 580 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
 import _slicedToArray from "module_32" /* 32 */;

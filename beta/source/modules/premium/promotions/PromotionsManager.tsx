@@ -1,9 +1,9 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17878
+// Function ID: 17879
 // Name: PromotionsManager
 // Dependencies: [2113, 4424, 10963, 1078, 1089, 7365, 13691, 2]
 
-// Module 17877 (PromotionsManager)
+// Module 17878 (PromotionsManager)
 import PromotionsActionCreators from "PromotionsActionCreators" /* 13691 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
 import SubscriptionStore from "SubscriptionStore" /* 4424 */;

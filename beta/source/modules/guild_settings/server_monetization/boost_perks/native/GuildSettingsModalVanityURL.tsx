@@ -1,20 +1,20 @@
-// Module ID: 18081
-// Function ID: 18082
+// Module ID: 18082
+// Function ID: 18083
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 18082, 2067, 9834, 1078, 21, 4758, 580, 5839, 7621, 1119, 18083, 8006, 4754, 17928, 6846, 18084, 558, 568, 1488, 504, 7286, 2]
+// Dependencies: [19, 17, 18083, 2067, 9834, 1078, 21, 4758, 580, 5839, 7621, 1119, 18084, 8006, 4754, 17929, 6846, 18085, 558, 568, 1488, 504, 7286, 2]
 
-// Module 18081 (GuildSettingsModalVanityURL)
+// Module 18082 (GuildSettingsModalVanityURL)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import TextInput from "TextInput" /* 6846 */;
 import HeaderActionButton from "HeaderActionButton" /* 7621 */;
 import getInviteURLDefault from "getInviteURL" /* 8006 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 17928 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 18083 */;
-import _modDef18084 from "module_18084" /* 18084 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 17929 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 18084 */;
+import _modDef18085 from "module_18085" /* 18085 */;
 import noop from "module_19" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 18082 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 18083 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
 
@@ -186,7 +186,7 @@ prototype["render"] = function render() {
     obj5.children = items1;
     const items3 = [v65535(React3, obj5), ];
     const obj12 = { style: styles.center, children: null };
-    const obj13 = { source: _modDef18084, style: styles.image, resizeMode: "contain" };
+    const obj13 = { source: _modDef18085, style: styles.image, resizeMode: "contain" };
     obj12.children = options(React4, obj13);
     items3[1] = options(React3, obj12);
     obj4.children = items3;

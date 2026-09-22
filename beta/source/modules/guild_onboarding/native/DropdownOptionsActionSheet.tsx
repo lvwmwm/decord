@@ -458,7 +458,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         class P {
           constructor(arg0) {
             obj = { option: guildId, responses: closure_4, onSelect, canBeNew: Boolean(canBeNew) };
-            return jsx(f40374, obj, guildId.id);
+            return jsx(f40375, obj, guildId.id);
           }
         }
         const tmp15 = closure_8(tmp(tmp2[18]).BottomSheetTitleHeader, obj2);
@@ -532,7 +532,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       class P {
         constructor(arg0) {
           obj = { option: guildId, responses: closure_4, onSelect, canBeNew: Boolean(canBeNew) };
-          return jsx(f40374, obj, guildId.id);
+          return jsx(f40375, obj, guildId.id);
         }
       }
       cResult[17] = canBeNew;

@@ -1,9 +1,9 @@
-// Module ID: 17379
-// Function ID: 17380
+// Module ID: 17380
+// Function ID: 17381
 // Name: SuspendedUserPage
 // Dependencies: [19, 17, 8707, 8696, 21, 4758, 580, 558, 568, 504, 6832, 4455, 8178, 1119, 7238, 4754, 15032, 7371, 2]
 
-// Module 17379 (SuspendedUserPage)
+// Module 17380 (SuspendedUserPage)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

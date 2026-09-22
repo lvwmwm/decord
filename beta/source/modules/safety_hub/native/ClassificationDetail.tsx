@@ -584,7 +584,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     class G {
       constructor(arg0) {
         obj = { action: arg0, large: redesigned };
-        return jsx(f58695, obj, arg0.id);
+        return jsx(f58696, obj, arg0.id);
       }
     }
     cResult[19] = redesigned;
@@ -594,7 +594,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     class G {
       constructor(arg0) {
         obj = { action: arg0, large: redesigned };
-        return jsx(f58695, obj, arg0.id);
+        return jsx(f58696, obj, arg0.id);
       }
     }
   }

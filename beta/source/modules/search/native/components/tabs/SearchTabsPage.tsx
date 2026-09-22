@@ -1,23 +1,23 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17113
+// Function ID: 17114
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 2045, 8127, 1078, 21, 4758, 558, 568, 504, 7573, 4968, 12814, 12816, 17113, 17160, 17162, 17169, 17170, 17178, 17180, 17181, 17187, 17194, 38, 8543, 2]
+// Dependencies: [32, 19, 17, 2045, 8127, 1078, 21, 4758, 558, 568, 504, 7573, 4968, 12814, 12816, 17114, 17161, 17163, 17170, 17171, 17179, 17181, 17182, 17188, 17195, 38, 8543, 2]
 
-// Module 17112 (SearchTabsPage)
+// Module 17113 (SearchTabsPage)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8543 */;
 import GuildNSFWDefault from "GuildNSFW" /* 12814 */;
 import ChannelSpoilerDefault from "ChannelSpoiler" /* 12816 */;
-import RecentScreenDefault from "RecentScreen" /* 17113 */;
-import PeopleScreenDefault from "PeopleScreen" /* 17160 */;
-import MembersScreenDefault from "MembersScreen" /* 17162 */;
-import ChannelsScreenDefault from "ChannelsScreen" /* 17169 */;
-import MediaScreenDefault from "MediaScreen" /* 17170 */;
-import FilesScreenDefault from "FilesScreen" /* 17178 */;
-import LinksScreenDefault from "LinksScreen" /* 17180 */;
-import MessagesScreenDefault from "MessagesScreen" /* 17187 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 17194 */;
+import RecentScreenDefault from "RecentScreen" /* 17114 */;
+import PeopleScreenDefault from "PeopleScreen" /* 17161 */;
+import MembersScreenDefault from "MembersScreen" /* 17163 */;
+import ChannelsScreenDefault from "ChannelsScreen" /* 17170 */;
+import MediaScreenDefault from "MediaScreen" /* 17171 */;
+import FilesScreenDefault from "FilesScreen" /* 17179 */;
+import LinksScreenDefault from "LinksScreen" /* 17181 */;
+import MessagesScreenDefault from "MessagesScreen" /* 17188 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 17195 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -210,7 +210,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else if (tmp16.THREADS === tab) {
         if (cResult[37] !== searchContext) {
           const obj12 = { searchContext };
-          const tmp29 = jsx(tmp(17181).SearchTabsThreadScreen, { searchContext });
+          const tmp29 = jsx(tmp(17182).SearchTabsThreadScreen, { searchContext });
           cResult[37] = searchContext;
           cResult[38] = tmp29;
           let tmp27 = tmp29;
@@ -325,7 +325,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return jsx(LinksScreenDefault, { tab, searchContext, isFocused, width });
     } else if (tmp11.THREADS === tab) {
       const obj12 = { searchContext };
-      return jsx(tmp4(17181).SearchTabsThreadScreen, { searchContext });
+      return jsx(tmp4(17182).SearchTabsThreadScreen, { searchContext });
     } else if (tmp11.MESSAGES === tab) {
       const obj26 = { tab, searchContext, isFocused };
       return jsx(MessagesScreenDefault, { tab, searchContext, isFocused });

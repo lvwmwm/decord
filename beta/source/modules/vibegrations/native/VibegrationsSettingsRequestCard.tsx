@@ -1,13 +1,13 @@
-// Module ID: 17048
-// Function ID: 17049
+// Module ID: 17049
+// Function ID: 17050
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 13364, 21, 4758, 580, 558, 568, 504, 4725, 16992, 4754, 1119, 3682, 5188, 2]
+// Dependencies: [19, 17, 13364, 21, 4758, 580, 558, 568, 504, 4725, 16993, 4754, 1119, 3682, 5188, 2]
 
-// Module 17048 (VibegrationsSettingsRequestCard)
+// Module 17049 (VibegrationsSettingsRequestCard)
 import nativeDefault from "native" /* 580 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16992 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16993 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13364 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17169
+// Function ID: 17170
 // Name: GroupDMNitroCapBanner
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4462, 13689, 5198, 8938, 2]
 
-// Module 17168 (GroupDMNitroCapBanner)
+// Module 17169 (GroupDMNitroCapBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;

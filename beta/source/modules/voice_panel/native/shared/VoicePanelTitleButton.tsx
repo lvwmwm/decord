@@ -1,9 +1,9 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17527
+// Function ID: 17528
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 4985, 2050, 2045, 4779, 21, 4758, 558, 568, 10006, 1119, 5189, 7390, 504, 4911, 9929, 9182, 580, 12419, 4910, 17527, 5246, 17464, 5186, 17499, 5250, 8543, 1099, 17498, 17528, 2]
+// Dependencies: [19, 17, 4985, 2050, 2045, 4779, 21, 4758, 558, 568, 10006, 1119, 5189, 7390, 504, 4911, 9929, 9182, 580, 12419, 4910, 17528, 5246, 17465, 5186, 17500, 5250, 8543, 1099, 17499, 17529, 2]
 
-// Module 17526 (VoicePanelTitleButton)
+// Module 17527 (VoicePanelTitleButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -16,15 +16,15 @@ import _modDef7390 from "module_7390" /* 7390 */;
 import native from "native" /* 9182 */;
 import ShieldLockIcon from "ShieldLockIcon" /* 10006 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17464 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 17499 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17528 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17465 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 17500 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17529 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 4985 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
-const _modDef17527 = tmp4(17527);
+const _modDef17528 = tmp4(17528);
 require = fn;
 const View = fn(17).View;
 const ParticipantTypes = fn(4779).ParticipantTypes;
@@ -200,7 +200,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       return tmp11;
     }
   }
-  const tmp12 = options(native.HeaderButton, { accessibilityRole: "button", accessibilityHint: first, accessibilityLabel: tmp9, text: name, icon: _modDef17527, iconPosition: "start", onPress });
+  const tmp12 = options(native.HeaderButton, { accessibilityRole: "button", accessibilityHint: first, accessibilityLabel: tmp9, text: name, icon: _modDef17528, iconPosition: "start", onPress });
   cResult[3] = name;
   cResult[4] = onPress;
   cResult[5] = tmp9;
@@ -217,7 +217,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const intl2 = util.intl;
   obj2.accessibilityLabel = intl2.formatToPlainString(util.t.I0mOAs, { username: name });
   obj2.text = name;
-  obj2.icon = _modDef17527;
+  obj2.icon = _modDef17528;
   obj2.onPress = onPress;
   return options(native.HeaderButton, obj2);
 });
@@ -566,7 +566,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = guildId(568);
   const tmp4 = channelId;
   const derivedStateFromSharedValue = guildId(8543).useDerivedStateFromSharedValue(focused, first);
-  const tmp8 = tmp4(17498)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp8 = tmp4(17499)(derivedStateFromSharedValue, channelId, guildId);
   if (cResult[1] === channelId) {
     if (cResult[2] === guildId) {
       let tmp9 = cResult[3];
@@ -659,7 +659,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return id;
   });
-  const tmp3 = channelId(17498)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(17499)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = noop.useCallback(() => {
     const result = VoicePanelSettingsActionCreators.openVoicePanelSettingsActionSheet(guildId, channelId);

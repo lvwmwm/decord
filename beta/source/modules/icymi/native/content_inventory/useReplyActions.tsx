@@ -1,10 +1,10 @@
-// Module ID: 16848
-// Function ID: 16849
+// Module ID: 16849
+// Function ID: 16850
 // Name: useReplyActions
-// Dependencies: [5, 19, 2045, 5107, 1376, 1379, 4751, 21, 504, 8404, 9419, 4771, 16849, 4603, 7923, 7703, 16845, 4725, 4458, 1119, 15154, 8627, 10436, 8010, 16849, 1984, 2]
+// Dependencies: [5, 19, 2045, 5107, 1376, 1379, 4751, 21, 504, 8404, 9419, 4771, 16850, 4603, 7923, 7703, 16846, 4725, 4458, 1119, 15154, 8627, 10436, 8010, 16850, 1984, 2]
 // Exports: useReplyActions
 
-// Module 16848 (useReplyActions)
+// Module 16849 (useReplyActions)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 8010 */;
@@ -239,7 +239,7 @@ export const useReplyActions = function useReplyActions(cResult) {
         const obj3 = { itemId: user.id, itemType: str, actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "open", actionDestinationType: null } };
         ICYMIActionCreatorsDefault.feedItemActioned(obj3);
         const obj5 = { content: user, author: tmp, sendMessage, onPressEmoji: callback1 };
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16849, tmp10.paths), "ReactActionSheet", obj5);
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16850, tmp10.paths), "ReactActionSheet", obj5);
       }
     }, items6);
     obj2.openEmojiPicker = callback2;

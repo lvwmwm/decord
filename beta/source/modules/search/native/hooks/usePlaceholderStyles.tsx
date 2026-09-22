@@ -1,9 +1,9 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17120
+// Function ID: 17121
 // Name: usePlaceholderStyles
 // Dependencies: [4750, 8127, 558, 568, 1482, 504, 4497, 4759, 1181, 2]
 
-// Module 17119 (usePlaceholderStyles)
+// Module 17120 (usePlaceholderStyles)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;

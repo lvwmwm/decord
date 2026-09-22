@@ -1,9 +1,9 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16706
+// Function ID: 16707
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4580, 2042, 558, 568, 1119, 2031, 4497, 13389, 14981, 1489, 13967, 4787, 504, 7632, 16706, 10452, 2]
+// Dependencies: [32, 19, 4580, 2042, 558, 568, 1119, 2031, 4497, 13389, 14981, 1489, 13967, 4787, 504, 7632, 16707, 10452, 2]
 
-// Module 16705 (useYouBarCoachmark)
+// Module 16706 (useYouBarCoachmark)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -150,7 +150,7 @@ export const useYouBarCoachmark = ReactCompilerGating.isReactCompilerEnabled() ?
         if (cResult[10] === tmp17) {
           let tmp22 = cResult[11];
         }
-        const privateProfileCoachmarkProps = tmp(16706).usePrivateProfileCoachmarkProps(tmp22);
+        const privateProfileCoachmarkProps = tmp(16707).usePrivateProfileCoachmarkProps(tmp22);
         class C {
           constructor() {
             obj = closure_1_0(closure_1_1[12]);
@@ -161,7 +161,7 @@ export const useYouBarCoachmark = ReactCompilerGating.isReactCompilerEnabled() ?
           }
         }
         const coachmark = obj10.useCoachmark(animatedRef, privateProfileCoachmarkProps);
-        const tmpResult5 = tmp(16706);
+        const tmpResult5 = tmp(16707);
         const coachmark1 = tmp(10452).useCoachmark(animatedRef, tmp21);
         if (cResult[12] === animatedRef) {
           if (cResult[13] === tmp18) {

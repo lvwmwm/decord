@@ -1,9 +1,9 @@
-// Module ID: 17623
-// Function ID: 17624
+// Module ID: 17624
+// Function ID: 17625
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 2045, 1078, 21, 1613, 12695, 17624, 4758, 580, 558, 568, 12419, 17607, 504, 38, 10206, 13571, 5112, 13573, 1119, 1245, 17626, 5804, 17608, 2]
+// Dependencies: [19, 2045, 1078, 21, 1613, 12695, 17625, 4758, 580, 558, 568, 12419, 17608, 504, 38, 10206, 13571, 5112, 13573, 1119, 1245, 17627, 5804, 17609, 2]
 
-// Module 17623 (VoicePanelScreenshareButton)
+// Module 17624 (VoicePanelScreenshareButton)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -22,7 +22,7 @@ const MetaQuestUtils = fn(1613);
 if (MetaQuestUtils.isMetaQuest()) {
   let MobilePhoneShareIcon = fn(12695).ScreenArrowIcon;
 } else {
-  MobilePhoneShareIcon = fn(17624).MobilePhoneShareIcon;
+  MobilePhoneShareIcon = fn(17625).MobilePhoneShareIcon;
 }
 const createStyles = fn(4758);
 let obj3 = { circle: null, iconContainer: null };

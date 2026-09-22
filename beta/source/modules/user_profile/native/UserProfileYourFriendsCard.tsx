@@ -1,9 +1,9 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17278
+// Function ID: 17279
 // Name: UserProfileYourFriendsCard
 // Dependencies: [32, 19, 17, 7900, 4409, 1376, 1078, 21, 1181, 4758, 558, 568, 504, 13359, 10083, 12, 1374, 4754, 1119, 5822, 2]
 
-// Module 17277 (UserProfileYourFriendsCard)
+// Module 17278 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import native from "native" /* 1181 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;

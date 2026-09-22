@@ -172,7 +172,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "Array" };
+          obj = { entityType: guild, scheduledEndTime: "a" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -215,7 +215,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "Array" };
+          obj = { entityType: guild, scheduledEndTime: "a" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -272,7 +272,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         class Y {
           constructor(arg0) {
             tmp = closure_4(null);
-            obj = { entityType: guild, scheduledEndTime: "Array" };
+            obj = { entityType: guild, scheduledEndTime: "a" };
             if (guild === closure_10.EXTERNAL) {
               tmp2 = closure_1;
               tmp3 = closure_3;
@@ -318,7 +318,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       class Y {
         constructor(arg0) {
           tmp = closure_4(null);
-          obj = { entityType: guild, scheduledEndTime: "Array" };
+          obj = { entityType: guild, scheduledEndTime: "a" };
           if (guild === closure_10.EXTERNAL) {
             tmp2 = closure_1;
             tmp3 = closure_3;
@@ -349,7 +349,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     class Y {
       constructor(arg0) {
         tmp = closure_4(null);
-        obj = { entityType: guild, scheduledEndTime: "Array" };
+        obj = { entityType: guild, scheduledEndTime: "a" };
         if (guild === closure_10.EXTERNAL) {
           tmp2 = closure_1;
           tmp3 = closure_3;
@@ -501,7 +501,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       entityType: guildEvent.entityType,
       onChange(entityType) {
         _undefined(null);
-        const obj = { entityType, scheduledEndTime: "Array" };
+        const obj = { entityType, scheduledEndTime: "a" };
         if (entityType === constants.EXTERNAL) {
           let obj2 = _modDef4352(guildEvent.scheduledStartTime);
           if (obj2 == null) {
@@ -524,7 +524,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     entityType: guildEvent.entityType,
     onChange(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "Array" };
+      const obj = { entityType, scheduledEndTime: "a" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef4352(guildEvent.scheduledStartTime);
         if (obj2 == null) {

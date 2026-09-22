@@ -1,9 +1,9 @@
-// Module ID: 18207
-// Function ID: 18208
+// Module ID: 18208
+// Function ID: 18209
 // Name: EmojiAlias
 // Dependencies: [19, 17, 21, 4758, 558, 568, 4754, 2]
 
-// Module 18207 (EmojiAlias)
+// Module 18208 (EmojiAlias)
 import c from "c" /* 568 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import noop from "module_19" /* 19 */;

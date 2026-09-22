@@ -1,13 +1,13 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17069
+// Function ID: 17070
 // Name: VibegrationsDebugLogsTab
-// Dependencies: [32, 19, 17, 9307, 21, 4758, 580, 558, 568, 17069, 11408, 7456, 17070, 4754, 1119, 3682, 5341, 5824, 1616, 504, 17071, 9868, 9869, 7297, 17072, 17073, 8995, 2]
+// Dependencies: [32, 19, 17, 9307, 21, 4758, 580, 558, 568, 17070, 11408, 7456, 17071, 4754, 1119, 3682, 5341, 5824, 1616, 504, 17072, 9868, 9869, 7297, 17073, 17074, 8995, 2]
 
-// Module 17068 (VibegrationsDebugLogsTab)
+// Module 17069 (VibegrationsDebugLogsTab)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17071 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17072 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
@@ -18,8 +18,8 @@ const Pressables = Text(5341);
 const Card = Text(5824);
 const ChevronSmallRightIcon2 = Text(7456);
 const ChevronSmallDownIcon = Text(11408);
-const VibegrationsDebugJson = Text(17069);
-const VibegrationsDebugFormat = Text(17070);
+const VibegrationsDebugJson = Text(17070);
+const VibegrationsDebugFormat = Text(17071);
 require = fn;
 function keyOf(key) {
   return String(key.key);
@@ -282,7 +282,7 @@ let closure_11 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   }
   const obj = { style: tmp.row, children: null };
   const obj2 = { style: tmp.rowHead, children: null };
-  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(17070).formatClockTime(entry.ts) };
+  const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6(17071).formatClockTime(entry.ts) };
   const items1 = [onToggle(tmp6(4754).Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
@@ -423,7 +423,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const tmp18 = _slicedToArray(showSource.useState(""), 2);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { pageWidth: 0, items: null, onSetActiveIndex: null };
-    const DEBUG_LOG_FILTERS = tmp(17071).DEBUG_LOG_FILTERS;
+    const DEBUG_LOG_FILTERS = tmp(17072).DEBUG_LOG_FILTERS;
     obj2.items = DEBUG_LOG_FILTERS.map((id) => {
       const obj = { id, label: projectId(dependencyMap[20]).debugLogFilterLabel(id), page: null };
       return obj;
@@ -633,7 +633,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           cResult[27] = tmp40;
         }
         const obj7 = { state: stateFromStores1, hasRows: stateFromStores.length > 0 };
-        const tmp36 = onToggle(tmp(17072).VibegrationsHistoryNotice, obj7);
+        const tmp36 = onToggle(tmp(17073).VibegrationsHistoryNotice, obj7);
         cResult[21] = stateFromStores1;
         class A {
           constructor(arg0) {

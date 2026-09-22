@@ -1,9 +1,9 @@
-// Module ID: 17274
-// Function ID: 17275
+// Module ID: 17275
+// Function ID: 17276
 // Name: useShouldShowExpiringTrialOfferCard
 // Dependencies: [13994, 1078, 1378, 1095, 558, 568, 565, 7694, 7686, 2]
 
-// Module 17274 (useShouldShowExpiringTrialOfferCard)
+// Module 17275 (useShouldShowExpiringTrialOfferCard)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import DurationsDefault from "Durations" /* 1095 */;

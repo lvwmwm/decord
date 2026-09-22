@@ -221,7 +221,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "Array", message_id: "unicodeVersion", stage_instance_id: "result", guild_id: "now", guild_scheduled_event_id: "Array", user_id: "unicodeVersion", email_token: "result", application_id: "now", entrypoint: "Array", widget_id: "unicodeVersion" };
+  let obj2 = { channel_id: "Array", message_id: "backgroundColor", stage_instance_id: "jsxs", guild_id: "y", guild_scheduled_event_id: "r", user_id: "toCharArray$esjava$1", email_token: "p", application_id: "__d", entrypoint: "Array", widget_id: "toCharArray$esjava$1" };
   obj.language = str;
   obj.breadcrumbs = arr.map((nodeRef) => nodeRef.nodeRef);
   obj.elements = arr.reduce((acc, item) => {

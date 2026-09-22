@@ -948,7 +948,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
               class E {
                 constructor() {
                   obj = { bounty: closure_3, sourceQuestContent };
-                  return jsx(f69300, obj);
+                  return jsx(f69301, obj);
                 }
               }
               let obj3 = { theme: ThemeTypes.DARK, children: null };
@@ -968,7 +968,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((bountyId) => {
             class E {
               constructor() {
                 obj = { bounty: closure_3, sourceQuestContent };
-                return jsx(f69300, obj);
+                return jsx(f69301, obj);
               }
             }
             cResult[9] = id;

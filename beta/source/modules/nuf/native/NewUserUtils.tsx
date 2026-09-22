@@ -1,10 +1,10 @@
-// Module ID: 17855
-// Function ID: 17856
+// Module ID: 17856
+// Function ID: 17857
 // Name: NewUserUtils
-// Dependencies: [5, 17, 16292, 5500, 1376, 1078, 12825, 4967, 12827, 1368, 10055, 577, 1489, 12830, 4616, 17856, 4961, 1105, 12895, 2]
+// Dependencies: [5, 17, 16292, 5500, 1376, 1078, 12825, 4967, 12827, 1368, 10055, 577, 1489, 12830, 4616, 17857, 4961, 1105, 12895, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 17855 (NewUserUtils)
+// Module 17856 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import router_utils from "router_utils" /* 1105 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
@@ -14,7 +14,7 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 4961 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
 import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12830 */;
 import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12895 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 17856 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 17857 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ParentalConsentStore from "ParentalConsentStore" /* 16292 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
@@ -78,7 +78,7 @@ let closure_12 = async function _shouldSkipContactSyncStep(arg0, value) {
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
   NewUserAnalyticsUtils.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
   if (obj2.isModalOpen(NewUserModalTypes.NEW_USER_MODAL_KEY)) {
-    ModalActionCreatorsDefault.popWithKey(tmp(17856).NEW_USER_MODAL_KEY);
+    ModalActionCreatorsDefault.popWithKey(tmp(17857).NEW_USER_MODAL_KEY);
   }
   obj2 = NavigationRouteUtils;
   router_utils.transitionTo(constants2.ME, { navigationReplace: true });

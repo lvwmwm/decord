@@ -1,9 +1,9 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17566
+// Function ID: 17567
 // Name: ActivitiesDebugOverlay
 // Dependencies: [19, 17, 21, 4758, 4608, 580, 558, 568, 9588, 1616, 4754, 2]
 
-// Module 17565 (ActivitiesDebugOverlay)
+// Module 17566 (ActivitiesDebugOverlay)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;

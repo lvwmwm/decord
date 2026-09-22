@@ -1,15 +1,15 @@
-// Module ID: 17278
-// Function ID: 17279
+// Module ID: 17279
+// Function ID: 17280
 // Name: ChannelDetailsNavigator
-// Dependencies: [32, 19, 17, 2045, 11221, 1078, 17116, 21, 8162, 558, 568, 565, 7513, 11494, 1119, 8112, 12924, 1245, 10630, 17279, 7246, 4617, 5845, 1616, 17330, 1368, 17331, 17332, 8189, 8172, 17333, 17334, 17335, 17181, 2]
+// Dependencies: [32, 19, 17, 2045, 11221, 1078, 17117, 21, 8162, 558, 568, 565, 7513, 11494, 1119, 8112, 12924, 1245, 10630, 17280, 7246, 4617, 5845, 1616, 17331, 1368, 17332, 17333, 8189, 8172, 17334, 17335, 17336, 17182, 2]
 
-// Module 17278 (ChannelDetailsNavigator)
+// Module 17279 (ChannelDetailsNavigator)
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import HeaderShared from "HeaderShared" /* 8112 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 11494 */;
 import _modDef12924 from "module_12924" /* 12924 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 17279 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 17280 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const constants = fn(11221).ChannelDetailsNavigatorScreens;
 const AnalyticEvents = fn(1078).AnalyticEvents;
-const SearchNavigatorScreens = fn(17116).SearchNavigatorScreens;
+const SearchNavigatorScreens = fn(17117).SearchNavigatorScreens;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = Object.freeze({});

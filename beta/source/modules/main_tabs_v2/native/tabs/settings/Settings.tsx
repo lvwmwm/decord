@@ -1,16 +1,16 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17375
+// Function ID: 17376
 // Name: Settings
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17254, 1616, 7186, 4737, 17375, 4497, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17255, 1616, 7186, 4737, 17376, 4497, 2]
 
-// Module 17374 (Settings)
+// Module 17375 (Settings)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
-import profileModalTransition from "profileModalTransition" /* 17254 */;
-import SettingsNavigatorDefault from "SettingsNavigator" /* 17375 */;
+import profileModalTransition from "profileModalTransition" /* 17255 */;
+import SettingsNavigatorDefault from "SettingsNavigator" /* 17376 */;
 import noop from "module_19" /* 19 */;
 
 const DeviceUtils = tmp(4737);
@@ -54,7 +54,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const tmp12 = tmp8 ? tmp10.containerTablet : tmp10.container;
               const _Symbol = Symbol;
               if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp16 = jsx(tmp5(17375), {});
+                const tmp16 = jsx(tmp5(17376), {});
                 cResult[9] = tmp16;
                 let tmp14 = tmp16;
               } else {

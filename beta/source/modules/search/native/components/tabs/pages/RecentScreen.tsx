@@ -1,9 +1,9 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17114
+// Function ID: 17115
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 7525, 12511, 17114, 12487, 8127, 12501, 1078, 21, 558, 568, 12509, 1119, 4754, 5341, 11164, 17115, 4771, 12506, 12488, 504, 1489, 17118, 12486, 15088, 8687, 8689, 17119, 17120, 17123, 2]
+// Dependencies: [32, 5, 19, 7525, 12511, 17115, 12487, 8127, 12501, 1078, 21, 558, 568, 12509, 1119, 4754, 5341, 11164, 17116, 4771, 12506, 12488, 504, 1489, 17119, 12486, 15088, 8687, 8689, 17120, 17121, 17124, 2]
 
-// Module 17113 (RecentScreen)
+// Module 17114 (RecentScreen)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -14,13 +14,13 @@ import SearchPlatformUtils from "SearchPlatformUtils" /* 12486 */;
 import SearchUtils from "SearchUtils" /* 12488 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
-import MediaGridPlaceholder from "MediaGridPlaceholder" /* 17120 */;
+import MediaGridPlaceholder from "MediaGridPlaceholder" /* 17121 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 7525 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12511 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 17114 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 17115 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;
 
 require = fn;
@@ -591,7 +591,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
     tmp11 = cResult[4];
   }
   const arr3 = closure_21(tmp11);
-  const tmp15 = messages(17118)(searchContext.width);
+  const tmp15 = messages(17119)(searchContext.width);
   dependencyMap = tmp15;
   if (null != messages) {
     if (0 !== messages.length) {
@@ -625,7 +625,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
       let tmp30 = cResult[10];
     }
     let num11 = searchContext;
-    const onPressMediaItem = searchContext(17115).useOnPressMediaItem(tmp30);
+    const onPressMediaItem = searchContext(17116).useOnPressMediaItem(tmp30);
     if (cResult[11] === messages) {
       if (cResult[12] === onPressMediaItem) {
         let tmp35 = cResult[13];
@@ -638,7 +638,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
       } else {
         tmp36 = cResult[14];
       }
-      const fullscreenPlaceholderCount = num11(17119).useFullscreenPlaceholderCount(tmp36);
+      const fullscreenPlaceholderCount = num11(17120).useFullscreenPlaceholderCount(tmp36);
       if (cResult[15] === tmp35) {
         if (cResult[16] === isInitialSearchQuery) {
           if (cResult[17] === arr4) {
@@ -965,7 +965,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
           arr8.push(element);
         });
       }
-      const num11Result = num11(17119);
+      const num11Result = num11(17120);
     }
     class F {
       constructor(arg0) {
@@ -995,7 +995,7 @@ let closure_22 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sear
     cResult[12] = onPressMediaItem;
     cResult[13] = F;
     tmp35 = F;
-    const obj7 = searchContext(17115);
+    const obj7 = searchContext(17116);
   }
   const obj13 = { searchContext, allMediaResults: EMPTY_MEDIA_RESULTS };
   cResult[8] = EMPTY_MEDIA_RESULTS;

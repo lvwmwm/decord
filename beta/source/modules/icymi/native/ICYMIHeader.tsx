@@ -1,9 +1,9 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16861
+// Function ID: 16862
 // Name: ICYMIHeader
-// Dependencies: [19, 17, 21, 16794, 580, 558, 568, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 16795, 580, 558, 568, 1119, 4754, 2]
 
-// Module 16860 (ICYMIHeader)
+// Module 16861 (ICYMIHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createICYMIStyles = fn(16794);
+const createICYMIStyles = fn(16795);
 let closure_7 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { text: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: margin.margin }, separator: null };
   const size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_16 };

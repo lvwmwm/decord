@@ -1,10 +1,10 @@
-// Module ID: 18051
-// Function ID: 18052
+// Module ID: 18052
+// Function ID: 18053
 // Name: GuildSettingsRolesUtils
-// Dependencies: [19, 2109, 1376, 18042, 1078, 558, 568, 504, 4603, 7376, 5738, 1245, 5736, 1374, 2]
+// Dependencies: [19, 2109, 1376, 18043, 1078, 558, 568, 504, 4603, 7376, 5738, 1245, 5736, 1374, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName
 
-// Module 18051 (GuildSettingsRolesUtils)
+// Module 18052 (GuildSettingsRolesUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import GlobalUtils from "GlobalUtils" /* 1374 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
@@ -18,7 +18,7 @@ import UserStore from "UserStore" /* 1376 */;
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(18042).GuildSettingsRoleEditSections;
+const constants = fn(18043).GuildSettingsRoleEditSections;
 const AnalyticEvents = fn(1078).AnalyticEvents;
 let ReactCompilerGating = fn(558);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {

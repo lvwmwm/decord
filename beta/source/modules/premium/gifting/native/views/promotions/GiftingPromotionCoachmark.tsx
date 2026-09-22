@@ -1,9 +1,9 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17400
+// Function ID: 17401
 // Name: GiftingPromotionCoachmark
 // Dependencies: [19, 17, 4750, 10963, 1078, 2042, 21, 4758, 580, 558, 568, 504, 11050, 11051, 8548, 4725, 7409, 7429, 10959, 1368, 9087, 5802, 11052, 4754, 11330, 1119, 5188, 7397, 2]
 
-// Module 17399 (GiftingPromotionCoachmark)
+// Module 17400 (GiftingPromotionCoachmark)
 import nativeDefault from "native" /* 580 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;

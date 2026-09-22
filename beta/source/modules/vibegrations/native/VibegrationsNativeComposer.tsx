@@ -1,9 +1,9 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17063
+// Function ID: 17064
 // Name: VibegrationsNativeComposer
-// Dependencies: [5, 32, 19, 17, 4750, 17063, 13364, 1078, 21, 580, 4758, 1119, 3682, 5277, 558, 568, 9308, 4462, 504, 5368, 11495, 4725, 17064, 12385, 16257, 15266, 4702, 12393, 4754, 5341, 6851, 11257, 8182, 8884, 4471, 2]
+// Dependencies: [5, 32, 19, 17, 4750, 17064, 13364, 1078, 21, 580, 4758, 1119, 3682, 5277, 558, 568, 9308, 4462, 504, 5368, 11495, 4725, 17065, 12385, 16257, 15266, 4702, 12393, 4754, 5341, 6851, 11257, 8182, 8884, 4471, 2]
 
-// Module 17062 (VibegrationsNativeComposer)
+// Module 17063 (VibegrationsNativeComposer)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
@@ -16,12 +16,12 @@ import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12385 */;
 import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12393 */;
 import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15266 */;
 import StopIcon from "StopIcon" /* 16257 */;
-import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17064 */;
+import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17065 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17063 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17064 */;
 import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13364 */;
 
 const require = globalThis.__r;

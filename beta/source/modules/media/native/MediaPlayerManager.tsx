@@ -44,12 +44,12 @@ const useMediaPlayerManagerStore = module_562.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Set",
-    showPip: "flac",
+    showPip: "getInfoByName",
     closePip() {
       ReactBatchUpdates.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: null
+    currentlyDisplayedChannelId: 5.1
   };
   return obj;
 });

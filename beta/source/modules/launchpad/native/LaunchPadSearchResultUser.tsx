@@ -1,21 +1,21 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 17692
+// Function ID: 17693
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 4750, 2113, 2045, 4798, 12095, 4939, 1078, 4940, 21, 4758, 580, 558, 568, 17136, 4771, 5195, 504, 11, 7882, 17682, 5341, 17137, 17680, 8533, 1181, 12972, 8128, 17139, 4603, 17681, 16685, 15578, 2]
+// Dependencies: [19, 4750, 2113, 2045, 4798, 12095, 4939, 1078, 4940, 21, 4758, 580, 558, 568, 17137, 4771, 5195, 504, 11, 7882, 17683, 5341, 17138, 17681, 8533, 1181, 12972, 8128, 17140, 4603, 17682, 16685, 15578, 2]
 
-// Module 17691 (LaunchPadSearchResultUser)
+// Module 17692 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 580 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
 import isStreamingDefault from "isStreaming" /* 8533 */;
 import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16685 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 17137 */;
-import renderChannelContentDefault from "renderChannelContent" /* 17139 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17680 */;
-import shared_renderChannelBadgeDefault from "shared/renderChannelBadge" /* 17681 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17682 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17138 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17140 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17681 */;
+import shared_renderChannelBadgeDefault from "shared/renderChannelBadge" /* 17682 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17683 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
@@ -316,7 +316,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
     obj2.resolvedUnreadSetting = UnreadSetting.ALL_MESSAGES;
-    const tmp34 = closure_12(tmp26(17680), obj2);
+    const tmp34 = closure_12(tmp26(17681), obj2);
     cResult[39] = tmp4;
     cResult[40] = tmp34;
   } else {
@@ -369,7 +369,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
       }
     }
-    const obj3 = { user, guildId: "e", isMobileOnline, isVROnline, status: tmp35, streaming: tmp37, style: first.icon.margin, size: first.icon.avatarSize, animate: !stateFromStores1, typing: tmp7, autoStatusCutout: true };
+    const obj3 = { user, guildId: "e", isMobileOnline, isVROnline, status: tmp35, streaming: tmp37, style: first.icon.margin, size: first.icon.avatarSize, animate: !stateFromStores1, typing: tmp7, autoStatusCutout: 153 };
     const tmp42 = closure_12(tmp(1181).Avatar, obj3);
     cResult[46] = isMobileOnline;
     cResult[47] = tmp7;
@@ -463,7 +463,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   obj5.style = items4;
   const tmp2Result5 = renderChannelPressableWrapperDefault;
   const items5 = [closure_12(UnreadBadgeDefault, { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES }), , ];
-  const obj7 = { user, guildId: "e", isMobileOnline, isVROnline, status: null, streaming: "bc9ca1b07832eb210aaf6ce52b283bf2", style: "es-ES.messages.bc9ca1b07832eb210aaf6ce52b283bf2.compiled.messages", size: "jsona", animate: "Mobile NUX Post Reg", typing: "Skip avatar modal", autoStatusCutout: true };
+  const obj7 = { user, guildId: "e", isMobileOnline, isVROnline, status: null, streaming: "e45a374026c9d620e924b9387ae2f2c7", style: "de.messages.e45a374026c9d620e924b9387ae2f2c7.compiled.messages", size: "jsona", animate: 121, typing: 122, autoStatusCutout: 153 };
   let tmp19 = null;
   if (!user.isSystemUser()) {
     tmp19 = null;

@@ -1,10 +1,10 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 16925
+// Function ID: 16926
 // Name: showMembersManagementActionSheet
-// Dependencies: [1376, 1119, 4725, 16925, 1984, 7509, 16926, 7441, 2]
+// Dependencies: [1376, 1119, 4725, 16926, 1984, 7509, 16927, 7441, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 16924 (showMembersManagementActionSheet)
+// Module 16925 (showMembersManagementActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import UserStore from "UserStore" /* 1376 */;
@@ -20,7 +20,7 @@ export default function showMembersManagementActionSheet(guild) {
   const intl = guild(1119).intl;
   obj.label = intl.string(guild(1119).t.pEasFX);
   obj.onPress = function onPress() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16925, dependencyMap.paths), "MembersFilter", { guild, selectedRoleId, onFilterRoleId });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16926, dependencyMap.paths), "MembersFilter", { guild, selectedRoleId, onFilterRoleId });
   };
   const items = [obj];
   if (canPrune == null) {
@@ -32,7 +32,7 @@ export default function showMembersManagementActionSheet(guild) {
     const intl2 = tmp(1119).intl;
     obj2.label = intl2.string(tmp(1119).t["2mIlKQ"]);
     obj2.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16926, dependencyMap.paths), "MembersPrune", { guild });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16927, dependencyMap.paths), "MembersPrune", { guild });
     };
     items.push(obj2);
   }
@@ -45,7 +45,7 @@ export const getMembersManagementActions = function getMembersManagementActions(
   const intl = guild(1119).intl;
   obj.label = intl.string(guild(1119).t.pEasFX);
   obj.action = function action() {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16925, dependencyMap.paths), "MembersFilter", { guild, selectedRoleId, onFilterRoleId });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16926, dependencyMap.paths), "MembersFilter", { guild, selectedRoleId, onFilterRoleId });
   };
   const items = [obj];
   if (canPrune == null) {
@@ -57,7 +57,7 @@ export const getMembersManagementActions = function getMembersManagementActions(
     const intl2 = tmp(1119).intl;
     obj2.label = intl2.string(tmp(1119).t["2mIlKQ"]);
     obj2.action = function action() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16926, dependencyMap.paths), "MembersPrune", { guild });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(16927, dependencyMap.paths), "MembersPrune", { guild });
     };
     items.push(obj2);
   }

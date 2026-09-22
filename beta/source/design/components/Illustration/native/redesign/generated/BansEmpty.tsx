@@ -1,10 +1,10 @@
-// Module ID: 18090
-// Function ID: 18091
+// Module ID: 18091
+// Function ID: 18092
 // Name: BansEmpty
-// Dependencies: [19, 17, 21, 8507, 18091, 18092, 18093, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8507, 18092, 18093, 18094, 558, 568, 4610, 2]
 // Exports: getBansEmptySource
 
-// Module 18090 (BansEmpty)
+// Module 18091 (BansEmpty)
 import c from "c" /* 568 */;
 import shared from "shared" /* 4610 */;
 import _mod8507 from "module_8507" /* 8507 */;
@@ -20,13 +20,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_18091");
-        },
-      darker() {
           return require("module_18092");
         },
-      light() {
+      darker() {
           return require("module_18093");
+        },
+      light() {
+          return require("module_18094");
         }
     };
     const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
@@ -42,13 +42,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = shared;
   return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_18091");
-    },
-    darker() {
       return require("module_18092");
     },
-    light() {
+    darker() {
       return require("module_18093");
+    },
+    light() {
+      return require("module_18094");
     }
   });
 });
@@ -57,13 +57,13 @@ ReactCompilerGating = fn(558);
 function getBansEmptySource(theme) {
   return _mod8507.getIllustrationSource(theme, {
     dark() {
-      return require("module_18091");
-    },
-    darker() {
       return require("module_18092");
     },
-    light() {
+    darker() {
       return require("module_18093");
+    },
+    light() {
+      return require("module_18094");
     }
   });
 }

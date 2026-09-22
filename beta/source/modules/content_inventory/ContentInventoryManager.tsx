@@ -1,13 +1,13 @@
-// Module ID: 18272
-// Function ID: 18273
+// Module ID: 18273
+// Function ID: 18274
 // Name: ContentInventoryManager
-// Dependencies: [5, 5496, 5500, 5629, 14105, 12066, 8612, 8634, 1078, 1095, 12, 13375, 577, 13960, 18273, 7365, 2]
+// Dependencies: [5, 5496, 5500, 5629, 14105, 12066, 8612, 8634, 1078, 1095, 12, 13375, 577, 13960, 18274, 7365, 2]
 
-// Module 18272 (ContentInventoryManager)
+// Module 18273 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13960 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 18273 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 18274 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;

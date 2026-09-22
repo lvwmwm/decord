@@ -1,9 +1,9 @@
-// Module ID: 16859
-// Function ID: 16860
+// Module ID: 16860
+// Function ID: 16861
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 4750, 2067, 8611, 1078, 21, 16794, 580, 558, 568, 504, 1401, 2059, 9092, 5802, 5799, 8627, 4458, 1119, 5739, 4754, 5188, 16833, 7302, 2]
+// Dependencies: [32, 5, 19, 17, 4750, 2067, 8611, 1078, 21, 16795, 580, 558, 568, 504, 1401, 2059, 9092, 5802, 5799, 8627, 4458, 1119, 5739, 4754, 5188, 16834, 7302, 2]
 
-// Module 16859 (ICYMIServerRecommendationRow)
+// Module 16860 (ICYMIServerRecommendationRow)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -212,7 +212,7 @@ const Constants = fn(1078);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
 let c17 = 200;
-const createICYMIStyles = fn(16794);
+const createICYMIStyles = fn(16795);
 let closure_18 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   const obj = { container: { marginVertical: nativeDefault.space.PX_24 }, title: null, subtitle: null, featuredServerInnerContainer: null, buttonContainer: null, featuredServerTitle: null, guildIcon: null, bannerImage: null, emptyBanner: null, featuredServerContainer: null };
   const obj2 = { marginVertical: nativeDefault.space.PX_24 };
@@ -529,7 +529,7 @@ export const ICYMIServerRecommendationRow = ReactCompilerGating.isReactCompilerE
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp28 = state(tmp(16833).Separator, {});
+            const tmp28 = state(tmp(16834).Separator, {});
             cResult[15] = tmp28;
             let tmp26 = tmp28;
           } else {
@@ -580,7 +580,7 @@ export const ICYMIServerRecommendationRow = ReactCompilerGating.isReactCompilerE
     const obj6 = { discoverableGuilds: stateFromStoresArray };
     items1[2] = state(closure_21, obj6);
     obj3.children = items1;
-    const items2 = [closure_1_15(View, obj3), state(tmp(16833).Separator, {})];
+    const items2 = [closure_1_15(View, obj3), state(tmp(16834).Separator, {})];
     obj2.children = items2;
     tmp4 = closure_1_15(value2, obj2);
   }

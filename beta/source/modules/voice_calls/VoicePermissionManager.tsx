@@ -1,10 +1,10 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17742
+// Function ID: 17743
 // Name: VoicePermissionManager
-// Dependencies: [5640, 4778, 502, 2045, 1996, 4781, 1078, 4967, 5357, 17742, 4905, 7365, 2]
+// Dependencies: [5640, 4778, 502, 2045, 1996, 4781, 1078, 4967, 5357, 17743, 4905, 7365, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 17741 (VoicePermissionManager)
+// Module 17742 (VoicePermissionManager)
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4905 */;
 import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5357 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;

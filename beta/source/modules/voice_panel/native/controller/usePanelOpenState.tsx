@@ -1,9 +1,9 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17654
+// Function ID: 17655
 // Name: usePanelOpenState
 // Dependencies: [32, 19, 4966, 12420, 1078, 558, 568, 4497, 1114, 13041, 4585, 4598, 13034, 9568, 2]
 
-// Module 17653 (usePanelOpenState)
+// Module 17654 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import _slicedToArray from "module_32" /* 32 */;

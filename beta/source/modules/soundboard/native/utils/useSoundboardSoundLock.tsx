@@ -1,16 +1,16 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17520
+// Function ID: 17521
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1376, 5228, 558, 568, 504, 7588, 4418, 17520, 8098, 8101, 4458, 10324, 1119, 2]
+// Dependencies: [19, 1376, 5228, 558, 568, 504, 7588, 4418, 17521, 8098, 8101, 4458, 10324, 1119, 2]
 
-// Module 17519 (useSoundboardSoundLock)
+// Module 17520 (useSoundboardSoundLock)
 import util from "util" /* 1119 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4418 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8098 */;
 import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8101 */;
 import _modDef10324 from "module_10324" /* 10324 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17520 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17521 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 

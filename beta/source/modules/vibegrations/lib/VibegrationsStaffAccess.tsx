@@ -1,9 +1,9 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 16962
+// Function ID: 16963
 // Name: VibegrationsStaffAccess
 // Dependencies: [2100, 2067, 4409, 1376, 1078, 558, 568, 4911, 504, 2]
 
-// Module 16961 (VibegrationsStaffAccess)
+// Module 16962 (VibegrationsStaffAccess)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;

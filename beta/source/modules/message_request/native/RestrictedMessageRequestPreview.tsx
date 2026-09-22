@@ -1,9 +1,9 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17368
+// Function ID: 17369
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2045, 4978, 1376, 21, 4758, 580, 558, 568, 1616, 504, 17368, 17370, 12588, 2]
+// Dependencies: [32, 19, 17, 2045, 4978, 1376, 21, 4758, 580, 558, 568, 1616, 504, 17369, 17371, 12588, 2]
 
-// Module 17367 (RestrictedMessageRequestPreview)
+// Module 17368 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 580 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -290,9 +290,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
       };
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      const items8 = [closure_10(tmp2(17368), obj6), ];
+      const items8 = [closure_10(tmp2(17369), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(tmp2(17370), obj7);
+      items8[1] = closure_10(tmp2(17371), obj7);
       obj5.children = items8;
       const items9 = [closure_11(closure_5, obj5), ];
       const obj8 = { style: null, children: null };

@@ -1,15 +1,15 @@
-// Module ID: 17499
-// Function ID: 17500
+// Module ID: 17500
+// Function ID: 17501
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 4774, 21, 4497, 9182, 4758, 580, 558, 568, 17500, 17498, 9917, 5804, 12419, 504, 4759, 2]
+// Dependencies: [19, 4774, 21, 4497, 9182, 4758, 580, 558, 568, 17501, 17499, 9917, 5804, 12419, 504, 4759, 2]
 
-// Module 17499 (VoicePanelHeaderUserState)
+// Module 17500 (VoicePanelHeaderUserState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import timing from "timing" /* 4759 */;
 import NativeViewDefault from "NativeView" /* 5804 */;
-import useStableParticipant from "useStableParticipant" /* 17498 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17500 */;
+import useStableParticipant from "useStableParticipant" /* 17499 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17501 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
@@ -87,7 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) =>
       obj3.children = jsx(tmp14(9917).VideoIcon, { style: tmp6.floatingIcon, state: null });
       let arr2 = items1.push(jsx(tmp14(9182).BackgroundBlurView, { blurTheme: "dark", style: tmp6.floatingIconWrapper, children: null }, "video"));
     }
-    if (tmp12.type === tmp14(17500).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp12.type === tmp14(17501).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp41 = jsx;
       let tmp42 = jsx;
       let items2 = [tmp6.floatingIconWrapper, ];
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) =>
       obj2.children = jsx(tmp11(9917).VideoIcon, { style: tmp.floatingIcon, state: null });
       let arr = items.push(jsx(tmp11(9182).BackgroundBlurView, { blurTheme: "dark", style: tmp.floatingIconWrapper, children: null }, "video"));
     }
-    if (tmp9.type === tmp11(17500).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(17501).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
@@ -200,7 +200,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isHead
   let obj = isHeaderHidden(568);
   const tmp4 = channelId;
   const stateFromStores = isHeaderHidden(504).useStateFromStores(first, tmp9);
-  const tmp11 = closure_9(tmp4(17498)(stateFromStores, channelId, guildId), guildId);
+  const tmp11 = closure_9(tmp4(17499)(stateFromStores, channelId, guildId), guildId);
   const tmpResult = isHeaderHidden(504);
   const fn2 = function w() {
     let num = 0;
@@ -251,7 +251,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isHead
     }
     return id;
   });
-  const tmp4 = closure_9(channelId(17498)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = closure_9(channelId(17499)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(4497);
   const fn = function f() {
     let num = 0;

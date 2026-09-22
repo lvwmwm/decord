@@ -1,9 +1,9 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17333
+// Function ID: 17334
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1078, 21, 4758, 558, 568, 1488, 1491, 12506, 17289, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 558, 568, 1488, 1491, 12506, 17290, 2]
 
-// Module 17332 (SearchNavigatorPreviewScreen)
+// Module 17333 (SearchNavigatorPreviewScreen)
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import noop from "module_19" /* 19 */;
 

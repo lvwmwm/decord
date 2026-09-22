@@ -1,9 +1,9 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 17962
+// Function ID: 17963
 // Name: MentionSpamTriggerFields
 // Dependencies: [32, 19, 17, 11993, 21, 4758, 558, 568, 12964, 1119, 4754, 6848, 5822, 5819, 5903, 2]
 
-// Module 17961 (MentionSpamTriggerFields)
+// Module 17962 (MentionSpamTriggerFields)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

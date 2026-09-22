@@ -1,16 +1,16 @@
-// Module ID: 17675
-// Function ID: 17676
+// Module ID: 17676
+// Function ID: 17677
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4758, 558, 568, 8116, 16675, 580, 17674, 4462, 17676, 4497, 5187, 2]
+// Dependencies: [19, 17, 21, 4758, 558, 568, 8116, 16675, 580, 17675, 4462, 17677, 4497, 5187, 2]
 // Exports: SimpleGuildContainer
 
-// Module 17675 (SimpleGuildContainer)
+// Module 17676 (SimpleGuildContainer)
 import c from "c" /* 568 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import spring from "spring" /* 5187 */;
 import MaskedBadgeDefault from "MaskedBadge" /* 8116 */;
 import GuildsBarActivityIndicatorDefault from "GuildsBarActivityIndicator" /* 16675 */;
-import CutoutImageDefault from "CutoutImage" /* 17676 */;
+import CutoutImageDefault from "CutoutImage" /* 17677 */;
 import noop from "module_19" /* 19 */;
 
 const GuildsBarActivityIndicator = isCurrentUserConnected(16675);

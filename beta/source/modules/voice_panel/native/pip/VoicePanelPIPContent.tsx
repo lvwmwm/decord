@@ -1,9 +1,9 @@
-// Module ID: 17588
-// Function ID: 17589
+// Module ID: 17589
+// Function ID: 17590
 // Name: VoicePanelPIPContent
-// Dependencies: [32, 19, 17, 2044, 4774, 9651, 4780, 502, 2045, 1376, 12420, 17485, 1078, 2008, 4779, 21, 4758, 580, 4497, 5198, 558, 568, 12419, 17553, 9701, 1114, 4471, 17486, 17484, 5804, 565, 1482, 9718, 9105, 8525, 9692, 9705, 1181, 9708, 12422, 7320, 17437, 9696, 9683, 2]
+// Dependencies: [32, 19, 17, 2044, 4774, 9651, 4780, 502, 2045, 1376, 12420, 17486, 1078, 2008, 4779, 21, 4758, 580, 4497, 5198, 558, 568, 12419, 17554, 9701, 1114, 4471, 17487, 17485, 5804, 565, 1482, 9718, 9105, 8525, 9692, 9705, 1181, 9708, 12422, 7320, 17438, 9696, 9683, 2]
 
-// Module 17588 (VoicePanelPIPContent)
+// Module 17589 (VoicePanelPIPContent)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
@@ -16,10 +16,10 @@ import useProfileTileGradientDefault from "useProfileTileGradient" /* 8525 */;
 import ExternalPipDefault from "ExternalPip" /* 9696 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
 import VoicePanelCardLayoutManager from "VoicePanelCardLayoutManager" /* 12422 */;
-import VideoActionCreators from "VideoActionCreators" /* 17437 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17484 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17486 */;
-import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 17553 */;
+import VideoActionCreators from "VideoActionCreators" /* 17438 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17485 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17487 */;
+import VoicePanelStreamOutputSinkStack from "VoicePanelStreamOutputSinkStack" /* 17554 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
@@ -71,7 +71,7 @@ function areParticipantsEqual(arg0, arg1) {
 get_ActivityIndicator = fn(17);
 ({ PixelRatio: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
 const VoicePanelModes = fn(12420).VoicePanelModes;
-const VoicePanelPIPModes = fn(17485).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17486).VoicePanelPIPModes;
 let Constants = fn(1078);
 ({ ApplicationStreamStates: closure_16, ComponentActions: closure_17 } = Constants);
 Constants = fn(2008);
@@ -1730,11 +1730,11 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((participantId)
   let callback2;
   ({ transitionState, transitionCleanUp, layoutTransition } = participantId);
   const tmp = closure_24();
-  const mode = participantId(17486).usePIPState().mode;
+  const mode = participantId(17487).usePIPState().mode;
   let tmp4 = closure_28(tmp, transitionState, transitionCleanUp);
   const context = video.useContext(mode(12419));
   ({ channelId: c2, layoutManager } = context);
-  let obj = participantId(17486);
+  let obj = participantId(17487);
   let tmp2 = participantId;
   const items = [callback2];
   const stateFromStoresObject = participantId(565).useStateFromStoresObject(items, () => {

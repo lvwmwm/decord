@@ -1,10 +1,10 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 17918
+// Function ID: 17919
 // Name: generated/VerifyPhone
-// Dependencies: [19, 17, 21, 8507, 17918, 17919, 17920, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8507, 17919, 17920, 17921, 558, 568, 4610, 2]
 // Exports: getVerifyPhoneSource
 
-// Module 17917 (generated/VerifyPhone)
+// Module 17918 (generated/VerifyPhone)
 import c from "c" /* 568 */;
 import shared from "shared" /* 4610 */;
 import _mod8507 from "module_8507" /* 8507 */;
@@ -20,13 +20,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_17918");
-        },
-      darker() {
           return require("module_17919");
         },
-      light() {
+      darker() {
           return require("module_17920");
+        },
+      light() {
+          return require("module_17921");
         }
     };
     const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
@@ -42,13 +42,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = shared;
   return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_17918");
-    },
-    darker() {
       return require("module_17919");
     },
-    light() {
+    darker() {
       return require("module_17920");
+    },
+    light() {
+      return require("module_17921");
     }
   });
 });
@@ -57,13 +57,13 @@ ReactCompilerGating = fn(558);
 function getVerifyPhoneSource(theme) {
   return _mod8507.getIllustrationSource(theme, {
     dark() {
-      return require("module_17918");
-    },
-    darker() {
       return require("module_17919");
     },
-    light() {
+    darker() {
       return require("module_17920");
+    },
+    light() {
+      return require("module_17921");
     }
   });
 }

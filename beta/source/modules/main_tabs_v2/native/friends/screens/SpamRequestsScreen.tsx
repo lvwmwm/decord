@@ -1,9 +1,9 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 17251
+// Function ID: 17252
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4409, 1376, 11162, 1078, 21, 558, 568, 7409, 7429, 17249, 504, 1253, 9046, 8453, 11168, 2]
+// Dependencies: [19, 4409, 1376, 11162, 1078, 21, 558, 568, 7409, 7429, 17250, 504, 1253, 9046, 8453, 11168, 2]
 
-// Module 17250 (SpamRequestsScreen)
+// Module 17251 (SpamRequestsScreen)
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4409 */;

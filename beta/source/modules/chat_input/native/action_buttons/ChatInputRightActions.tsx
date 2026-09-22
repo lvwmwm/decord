@@ -133,7 +133,7 @@ const forwardRefResult = noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   class U {
     constructor(arg0, arg1, arg2, arg3) {
       obj = { state: arg2, cleanup: arg3, channel, onPress: onPressAction, wrapperStyle: closure_3.leftSlot, slotWidth: closure_2 };
-      return jsx(f60777, obj, channel);
+      return jsx(f60778, obj, channel);
     }
   }
   cResult[3] = sum;
@@ -245,7 +245,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             cResult[18] = tmp21;
             tmp16 = tmp21;
           }
-          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: "flac" };
+          const obj4 = { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: "getInfoByName" };
           const tmp15 = React5(tmp7(12392), obj4);
           cResult[12] = channel;
           cResult[13] = onPress;
@@ -278,7 +278,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj2.style = items;
   const tmp = useChatInputFloatingBounceDefault({ visible: state !== native.TransitionStates.YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup });
   const merged = Object.assign(ChatInputActionButtonTransitionItem.interactivityProps(isInteractive));
-  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: "flac" });
+  obj2.children = React5(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "Set", shouldShowThread: "getInfoByName" });
   return React5(ReanimatedRexportDefault.View, obj2);
 });
 const size = fn(2);

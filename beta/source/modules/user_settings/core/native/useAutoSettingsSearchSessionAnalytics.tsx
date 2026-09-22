@@ -1,9 +1,9 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17378
+// Function ID: 17379
 // Name: useAutoSettingsSearchSessionAnalytics
 // Dependencies: [19, 1983, 14955, 558, 568, 1098, 504, 8548, 7242, 5203, 2]
 
-// Module 17377 (useAutoSettingsSearchSessionAnalytics)
+// Module 17378 (useAutoSettingsSearchSessionAnalytics)
 import useMountEffectDefault from "useMountEffect" /* 5203 */;
 import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7242 */;
 import usePreviousDefault from "usePrevious" /* 8548 */;

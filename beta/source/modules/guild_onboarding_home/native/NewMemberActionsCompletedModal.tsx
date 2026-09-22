@@ -1,9 +1,9 @@
-// Module ID: 17779
-// Function ID: 17780
+// Module ID: 17780
+// Function ID: 17781
 // Name: NewMemberActionsCompletedModal
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4497, 4759, 4961, 12433, 1119, 4754, 2]
 
-// Module 17779 (NewMemberActionsCompletedModal)
+// Module 17780 (NewMemberActionsCompletedModal)
 import nativeDefault from "native" /* 580 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import timing from "timing" /* 4759 */;

@@ -299,7 +299,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((mentionCount) =>
       obj8.cutouts = items2;
       return obj8;
     } else {
-      return { badge: null, cutout: "Array", cutouts: "applicationId" };
+      return { badge: null, cutout: "Array", cutouts: "toCharArray$esjava$1" };
     }
   }, items1);
 });

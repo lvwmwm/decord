@@ -1,10 +1,10 @@
-// Module ID: 18023
-// Function ID: 18024
+// Module ID: 18024
+// Function ID: 18025
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 9813, 2067, 9834, 1078, 8207, 21, 4758, 580, 1488, 9836, 504, 9814, 8439, 9815, 9833, 4457, 1119, 12642, 4651, 5839, 7621, 1489, 5111, 1181, 7285, 9997, 4754, 5903, 7446, 5822, 5186, 14187, 8876, 14185, 18024, 2]
+// Dependencies: [5, 32, 19, 17, 9813, 2067, 9834, 1078, 8207, 21, 4758, 580, 1488, 9836, 504, 9814, 8439, 9815, 9833, 4457, 1119, 12642, 4651, 5839, 7621, 1489, 5111, 1181, 7285, 9997, 4754, 5903, 7446, 5822, 5186, 14187, 8876, 14185, 18025, 2]
 // Exports: default
 
-// Module 18023 (GuildSettingsModalServerTag)
+// Module 18024 (GuildSettingsModalServerTag)
 import nativeDefault from "native" /* 580 */;
 import Powerups from "Powerups" /* 4651 */;
 import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9815 */;
@@ -396,7 +396,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           let tmp40 = obj15;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp32(tmp39(18024), obj20), tmp31Result2];
+          const items15 = [tmp32(tmp39(18025), obj20), tmp31Result2];
           obj15.children = items15;
           tmp40 = obj15;
         }

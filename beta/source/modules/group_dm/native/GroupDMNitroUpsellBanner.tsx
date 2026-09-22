@@ -1,9 +1,9 @@
-// Module ID: 17166
-// Function ID: 17167
+// Module ID: 17167
+// Function ID: 17168
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 4750, 11713, 21, 580, 4758, 558, 568, 1616, 17167, 4462, 4497, 676, 5187, 5198, 504, 11714, 11711, 11718, 1119, 5188, 8315, 4754, 17168, 2]
+// Dependencies: [32, 19, 17, 4750, 11713, 21, 580, 4758, 558, 568, 1616, 17168, 4462, 4497, 676, 5187, 5198, 504, 11714, 11711, 11718, 1119, 5188, 8315, 4754, 17169, 2]
 
-// Module 17166 (GroupDMNitroUpsellBanner)
+// Module 17167 (GroupDMNitroUpsellBanner)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -16,7 +16,7 @@ import _modDef8315 from "module_8315" /* 8315 */;
 import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11711 */;
 import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11714 */;
 import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11718 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17168 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17169 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
@@ -826,7 +826,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 const obj8 = { showLeadingIcon: false, wrapperStyle: tmp19, trailing: tmp24, children: null };
                 const items1 = [tmp27, tmp30];
                 obj8.children = items1;
-                const tmp36 = v65535(tmp11(17168), obj8);
+                const tmp36 = v65535(tmp11(17169), obj8);
                 cResult[23] = tmp24;
                 cResult[24] = tmp30;
                 cResult[25] = tmp19;

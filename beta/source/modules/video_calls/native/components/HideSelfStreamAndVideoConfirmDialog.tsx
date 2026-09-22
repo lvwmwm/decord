@@ -1,9 +1,9 @@
-// Module ID: 17635
-// Function ID: 17636
+// Module ID: 17636
+// Function ID: 17637
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 17634, 21, 4758, 558, 568, 9470, 1119, 4754, 5207, 2]
+// Dependencies: [109, 19, 17, 17635, 21, 4758, 558, 568, 9470, 1119, 4754, 5207, 2]
 
-// Module 17635 (HideSelfStreamAndVideoConfirmDialog)
+// Module 17636 (HideSelfStreamAndVideoConfirmDialog)
 import common_AlertDefault from "common/Alert" /* 5207 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9470 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 const require = fn;
 let closure_3 = ["type", "onConfirm"];
 const View = fn(17).View;
-const constants = fn(17634).SelfStreamAndVideoAlertType;
+const constants = fn(17635).SelfStreamAndVideoAlertType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const createStyles = fn(4758);

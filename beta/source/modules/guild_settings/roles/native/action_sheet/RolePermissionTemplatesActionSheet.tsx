@@ -1,9 +1,9 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18073
+// Function ID: 18074
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1245, 4725, 4457, 5110, 1119, 7396, 18050, 7449, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1245, 4725, 4457, 5110, 1119, 7396, 18051, 7449, 2]
 
-// Module 18072 (RolePermissionTemplatesActionSheet)
+// Module 18073 (RolePermissionTemplatesActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
 import ActionSheet from "ActionSheet" /* 7449 */;
-import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 18050 */;
+import GuildSettingsRoleTemplateDefault from "GuildSettingsRoleTemplate" /* 18051 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -163,7 +163,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((permissionsEdite
       tmp17 = tmp20;
     }
     const obj5 = { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId };
-    const tmp16 = jsx(onPermissionsChanged(18050), { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
+    const tmp16 = jsx(onPermissionsChanged(18051), { onSelect: tmp9, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
     cResult[8] = guildId;
     cResult[9] = tmp9;
     cResult[10] = tmp16;

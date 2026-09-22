@@ -1,16 +1,16 @@
-// Module ID: 18101
-// Function ID: 18102
+// Module ID: 18102
+// Function ID: 18103
 // Name: EnableCommunityModal
-// Dependencies: [19, 21, 18100, 558, 568, 5845, 5839, 1119, 7621, 7238, 18102, 18103, 18115, 18116, 7246, 2]
+// Dependencies: [19, 21, 18101, 558, 568, 5845, 5839, 1119, 7621, 7238, 18103, 18104, 18116, 18117, 7246, 2]
 
-// Module 18101 (EnableCommunityModal)
+// Module 18102 (EnableCommunityModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import NavigatorHeader from "NavigatorHeader" /* 5839 */;
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5845 */;
 import Navigator from "Navigator" /* 7246 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18100 */;
-import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 18102 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18101 */;
+import EnableCommunitySharedNavigation from "EnableCommunitySharedNavigation" /* 18103 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -72,21 +72,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return null;
         },
       render() {
-          return closure_1_4(closure_1_1(18103), {});
+          return closure_1_4(closure_1_1(18104), {});
         }
     };
-    obj2[tmp(18102).EnableCommunityModalSteps.STEP_1] = obj3;
+    obj2[tmp(18103).EnableCommunityModalSteps.STEP_1] = obj3;
     const obj4 = {
-      headerRight,
-      headerTitle() {
-          return null;
-        },
-      render() {
-          return closure_1_4(closure_1_1(18115), {});
-        }
-    };
-    obj2[tmp(18102).EnableCommunityModalSteps.STEP_2] = obj4;
-    const obj5 = {
       headerRight,
       headerTitle() {
           return null;
@@ -95,17 +85,27 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_1_4(closure_1_1(18116), {});
         }
     };
-    obj2[tmp(18102).EnableCommunityModalSteps.STEP_3] = obj5;
+    obj2[tmp(18103).EnableCommunityModalSteps.STEP_2] = obj4;
+    const obj5 = {
+      headerRight,
+      headerTitle() {
+          return null;
+        },
+      render() {
+          return closure_1_4(closure_1_1(18117), {});
+        }
+    };
+    obj2[tmp(18103).EnableCommunityModalSteps.STEP_3] = obj5;
     cResult[0] = obj2;
     let first = obj2;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { screens: first, initialRouteName: tmp(18102).EnableCommunityModalSteps.STEP_1, headerBackTitle: null };
+    const obj6 = { screens: first, initialRouteName: tmp(18103).EnableCommunityModalSteps.STEP_1, headerBackTitle: null };
     const intl = tmp(1119).intl;
     obj6.headerBackTitle = intl.string(tmp(1119).t["13/7kX"]);
-    const tmp8 = jsx(tmp(7246).Navigator, { screens: first, initialRouteName: tmp(18102).EnableCommunityModalSteps.STEP_1, headerBackTitle: null });
+    const tmp8 = jsx(tmp(7246).Navigator, { screens: first, initialRouteName: tmp(18103).EnableCommunityModalSteps.STEP_1, headerBackTitle: null });
     cResult[1] = tmp8;
     let tmp6 = tmp8;
   } else {
@@ -128,7 +128,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return null;
         },
         render() {
-          return closure_1_4(closure_1_1(18103), {});
+          return closure_1_4(closure_1_1(18104), {});
         }
       },
       [closure_1_0(closure_1_2[10]).EnableCommunityModalSteps.STEP_2]: {
@@ -137,7 +137,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return null;
         },
         render() {
-          return closure_1_4(closure_1_1(18115), {});
+          return closure_1_4(closure_1_1(18116), {});
         }
       },
       [closure_1_0(closure_1_2[10]).EnableCommunityModalSteps.STEP_3]: {
@@ -146,7 +146,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return null;
         },
         render() {
-          return closure_1_4(closure_1_1(18116), {});
+          return closure_1_4(closure_1_1(18117), {});
         }
       }
     };

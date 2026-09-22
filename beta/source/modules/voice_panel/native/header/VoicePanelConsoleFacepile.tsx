@@ -1,9 +1,9 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17545
+// Function ID: 17546
 // Name: VoicePanelConsoleFacepile
 // Dependencies: [19, 1078, 21, 4758, 580, 10038, 1119, 558, 568, 10019, 1374, 5804, 1181, 2]
 
-// Module 17544 (VoicePanelConsoleFacepile)
+// Module 17545 (VoicePanelConsoleFacepile)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;

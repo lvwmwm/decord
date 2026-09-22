@@ -1,13 +1,13 @@
-// Module ID: 17884
-// Function ID: 17885
+// Module ID: 17885
+// Function ID: 17886
 // Name: RTCLatencyTestManager
-// Dependencies: [1996, 4808, 4783, 1095, 3, 7365, 17885, 1368, 2]
+// Dependencies: [1996, 4808, 4783, 1095, 3, 7365, 17886, 1368, 2]
 
-// Module 17884 (RTCLatencyTestManager)
+// Module 17885 (RTCLatencyTestManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
-import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 17885 */;
+import RTCLatencyTestActionCreators from "RTCLatencyTestActionCreators" /* 17886 */;
 import MediaEngineStore from "MediaEngineStore" /* 1996 */;
 import RTCRegionStore from "RTCRegionStore" /* 4808 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;

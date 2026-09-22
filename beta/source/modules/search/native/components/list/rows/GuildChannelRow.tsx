@@ -1,16 +1,16 @@
-// Module ID: 17132
-// Function ID: 17133
+// Module ID: 17133
+// Function ID: 17134
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 8127, 21, 4758, 580, 558, 568, 4911, 17133, 5241, 17135, 17125, 2]
+// Dependencies: [109, 19, 17, 8127, 21, 4758, 580, 558, 568, 4911, 17134, 5241, 17136, 17126, 2]
 
-// Module 17132 (GuildChannelRow)
+// Module 17133 (GuildChannelRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useChannelNameDefault from "useChannelName" /* 4911 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
-import SearchListRow from "SearchListRow" /* 17125 */;
-import ChannelContent from "ChannelContent" /* 17133 */;
-import renderChannelItem from "renderChannelItem" /* 17135 */;
+import SearchListRow from "SearchListRow" /* 17126 */;
+import ChannelContent from "ChannelContent" /* 17134 */;
+import renderChannelItem from "renderChannelItem" /* 17136 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -148,7 +148,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       obj3.onPress = tmp6;
       obj3.trailing = tmp9;
       obj3.extras = tmp5;
-      const tmp32 = jsx(tmp(17125).SearchListRow, {});
+      const tmp32 = jsx(tmp(17126).SearchListRow, {});
       cResult[16] = tmp15;
       cResult[17] = tmp5;
       cResult[18] = icon;

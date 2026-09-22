@@ -338,7 +338,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
             class G {
               constructor() {
                 obj = { show: closure_5, alpha2: closure_0, countryCode: closure_1, onPress: closure_4 };
-                return jsx(f39936, obj);
+                return jsx(f39937, obj);
               }
             }
             class M {
@@ -372,7 +372,7 @@ export default noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((
             class G {
               constructor() {
                 obj = { show: closure_5, alpha2: closure_0, countryCode: closure_1, onPress: closure_4 };
-                return jsx(f39936, obj);
+                return jsx(f39937, obj);
               }
             }
             class M {

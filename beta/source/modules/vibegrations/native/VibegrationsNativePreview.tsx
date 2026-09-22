@@ -1,10 +1,10 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 16968
+// Function ID: 16969
 // Name: VibegrationsNativePreview
-// Dependencies: [32, 19, 17, 9311, 502, 2045, 4773, 1983, 16938, 1078, 9312, 21, 4758, 580, 558, 568, 4754, 5824, 9558, 13182, 16968, 9567, 16969, 16970, 16977, 1119, 3682, 5188, 504, 7874, 9199, 7410, 4771, 7357, 10331, 1368, 16979, 2]
+// Dependencies: [32, 19, 17, 9311, 502, 2045, 4773, 1983, 16939, 1078, 9312, 21, 4758, 580, 558, 568, 4754, 5824, 9558, 13182, 16969, 9567, 16970, 16971, 16978, 1119, 3682, 5188, 504, 7874, 9199, 7410, 4771, 7357, 10331, 1368, 16980, 2]
 // Exports: leaveVibegrationsPreviewFrame
 
-// Module 16967 (VibegrationsNativePreview)
+// Module 16968 (VibegrationsNativePreview)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
@@ -30,7 +30,7 @@ const UserProfileApplicationWidgetTypes = intl(7874);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const vibegrationsDesignFeedbackStore = fn(16938);
+const vibegrationsDesignFeedbackStore = fn(16939);
 ({ exitVibegrationsDesignFeedback: map1, useVibegrationsDesignFeedback: closure_14 } = vibegrationsDesignFeedbackStore);
 const Constants = fn(1078);
 ({ AnalyticsObjects: closure_15, AnalyticsObjectTypes: closure_16, AnalyticsSections: closure_17, AppStates: closure_18, ME: closure_19 } = Constants);
@@ -183,7 +183,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
       tmp9 = cResult[6];
     }
     dependencyMap = tmp9;
-    const tmp15 = projectId(16968)(applicationId, closure_22);
+    const tmp15 = projectId(16969)(applicationId, closure_22);
     _slicedToArray = tmp15;
     if (cResult[7] !== tmp15) {
       let tmp18 = null;
@@ -212,11 +212,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
           if (visible) {
             tmp27 = null != tmp16;
           }
-          tmp13(16969)(tmp27);
+          tmp13(16970)(tmp27);
           if (null != tmp16) {
             if (cResult[15] !== tmp16.id) {
               let obj4 = { frameId: tmp16.id, layoutMode: constants4.FOCUSED };
-              const tmp52 = closure_24(tmp(16970).InlineFrameView, obj4);
+              const tmp52 = closure_24(tmp(16971).InlineFrameView, obj4);
               cResult[15] = tmp16.id;
               cResult[16] = tmp52;
               let tmp49 = tmp52;
@@ -313,7 +313,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
                 tmp54 = null;
                 if (!vibegrationsControlActive) {
                   const obj8 = { projectId };
-                  tmp54 = closure_24(tmp13(16977), obj8);
+                  tmp54 = closure_24(tmp13(16978), obj8);
                 }
               }
             }
@@ -373,7 +373,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
             }
             return tmp36;
           }
-          const tmp13Result = tmp13(16969);
+          const tmp13Result = tmp13(16970);
         }
       }
     }
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   const tmp5 = closure_26();
   const tmp6 = closure_23(applicationId, closure_22);
   dependencyMap = tmp6;
-  const tmp8 = projectId(16968)(applicationId, closure_22);
+  const tmp8 = projectId(16969)(applicationId, closure_22);
   _slicedToArray = tmp8;
   let tmp9 = null;
   if (null != tmp8) {
@@ -466,11 +466,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   if (visible) {
     tmp15 = null != tmp9;
   }
-  projectId(16969)(tmp15);
+  projectId(16970)(tmp15);
   if (null != tmp9) {
     let obj3 = { style: tmp5.frame, children: null };
     let obj4 = { frameId: tmp9.id, layoutMode: constants4.FOCUSED };
-    const items2 = [closure_24(tmp(16970).InlineFrameView, obj4), , ];
+    const items2 = [closure_24(tmp(16971).InlineFrameView, obj4), , ];
     let tmp23Result = null;
     if (visible) {
       tmp23Result = null;
@@ -478,7 +478,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
         tmp23Result = null;
         if (!vibegrationsControlActive) {
           const obj5 = { projectId };
-          tmp23Result = tmp23(tmp7(16977), obj5);
+          tmp23Result = tmp23(tmp7(16978), obj5);
         }
       }
     }
@@ -1024,7 +1024,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewApplica
     const items8 = [closure_24(stateFromStores(10331), obj7, stateFromStores.id), ];
     let tmp29Result = null;
     if (tmp2Result6.isAndroid()) {
-      tmp29Result = tmp29(tmp2(16979).PortalKeyboardRenderer, { portal: true });
+      tmp29Result = tmp29(tmp2(16980).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp29Result;
     obj6.children = items8;

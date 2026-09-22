@@ -1,9 +1,9 @@
-// Module ID: 18283
-// Function ID: 18284
+// Module ID: 18284
+// Function ID: 18285
 // Name: ApiRequestConfigManager
 // Dependencies: [17, 502, 1275, 1245, 7365, 1368, 2]
 
-// Module 18283 (ApiRequestConfigManager)
+// Module 18284 (ApiRequestConfigManager)
 import _mod17 from "module_17" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;

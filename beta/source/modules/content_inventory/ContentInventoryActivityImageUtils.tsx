@@ -72,10 +72,10 @@ function computeImageForActivity(arg0) {
         const obj4 = { src: guildIconURL };
         tmp13 = obj4;
       }
-      const obj5 = { largeImage: tmp13, smallImage: "Array" };
+      const obj5 = { largeImage: tmp13, smallImage: "a" };
       return obj5;
     } else if (isOnXboxDefault(activity)) {
-      const obj6 = { largeImage: null, smallImage: "Array" };
+      const obj6 = { largeImage: null, smallImage: "a" };
       const obj7 = { src: tmp(5502).get(constants2.XBOX).icon.customPNG, alt: null };
       const intl4 = tmp14(1119).intl;
       obj7.alt = intl4.string(tmp14(1119).t.Nfvo72);
@@ -84,7 +84,7 @@ function computeImageForActivity(arg0) {
     } else {
       if (null == smallImage) {
         if (tmp(13299)(activity)) {
-          const obj8 = { largeImage: null, smallImage: "Array" };
+          const obj8 = { largeImage: null, smallImage: "a" };
           const obj9 = { src: tmp(5502).get(constants2.PLAYSTATION).icon.lightPNG, alt: null };
           const intl3 = tmp14(1119).intl;
           obj9.alt = intl3.string(tmp14(1119).t.fFl4jo);
@@ -104,7 +104,7 @@ function computeImageForActivity(arg0) {
           const obj10 = { largeImage: undefined, smallImage };
           let obj11 = obj10;
         } else {
-          obj11 = { largeImage: smallImage, smallImage: "Array" };
+          obj11 = { largeImage: smallImage, smallImage: "a" };
         }
         return obj11;
       } else {
@@ -206,7 +206,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     if (null != tmp11) {
       if (cResult[9] !== tmp11) {
-        const obj4 = { largeImage: tmp11, smallImage: "Array" };
+        const obj4 = { largeImage: tmp11, smallImage: "a" };
         cResult[9] = tmp11;
         cResult[10] = obj4;
         let tmp16 = obj4;
@@ -218,7 +218,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != tmp9) {
         if (tmp4) {
           if (cResult[11] !== tmp9) {
-            const obj5 = { largeImage: null, smallImage: "Array" };
+            const obj5 = { largeImage: null, smallImage: "a" };
             const obj6 = { src: tmp9 };
             obj5.largeImage = obj6;
             cResult[11] = tmp9;
@@ -231,7 +231,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       if (cResult[13] !== largeImage2) {
-        const obj7 = { largeImage: largeImage2, smallImage: "Array" };
+        const obj7 = { largeImage: largeImage2, smallImage: "a" };
         cResult[13] = largeImage2;
         cResult[14] = obj7;
         tmp14 = obj7;
@@ -292,18 +292,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { largeImage, smallImage: tmp3.smallImage };
     let obj7 = obj3;
   } else if (null != tmp6) {
-    const obj4 = { largeImage: tmp6, smallImage: "Array" };
+    const obj4 = { largeImage: tmp6, smallImage: "a" };
     obj7 = obj4;
   } else {
     if (null != coverURL) {
       if (showCoverImage) {
-        const obj5 = { largeImage: null, smallImage: "Array" };
+        const obj5 = { largeImage: null, smallImage: "a" };
         const obj6 = { src: coverURL };
         obj5.largeImage = obj6;
         obj7 = obj5;
       }
     }
-    obj7 = { largeImage: closure_9(activity, obj).largeImage, smallImage: "Array" };
+    obj7 = { largeImage: closure_9(activity, obj).largeImage, smallImage: "a" };
   }
   const obj8 = { activity, application: null, largeImageSrc: null, trackingSource: null };
   if (fallbackApplication == null) {

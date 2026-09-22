@@ -1,15 +1,15 @@
-// Module ID: 17811
-// Function ID: 17812
+// Module ID: 17812
+// Function ID: 17813
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1353, 21, 4758, 580, 558, 568, 17799, 7224, 8608, 17812, 5183, 4458, 1119, 9725, 9726, 4710, 5341, 4754, 9548, 2]
+// Dependencies: [32, 19, 17, 1353, 21, 4758, 580, 558, 568, 17800, 7224, 8608, 17813, 5183, 4458, 1119, 9725, 9726, 4710, 5341, 4754, 9548, 2]
 
-// Module 17811 (InteractionIframeModal)
+// Module 17812 (InteractionIframeModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import useBackPressHandlerDefault from "useBackPressHandler" /* 5183 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17812 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17813 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -35,7 +35,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ application, title } = arg0);
   id = application.id;
   const obj = id(568);
-  const iframeModalState = id(17799).useIframeModalState(arg0);
+  const iframeModalState = id(17800).useIframeModalState(arg0);
   ({ queryParams, iframeUrl } = iframeModalState);
   const tmp5 = _slicedToArray(noop.useState(false), 2);
   importDefault = tmp5[1];
@@ -188,7 +188,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const obj10 = { onActivityCrash: tmp14, applicationId: tmp18, channelId: channel_id, guildId: guild_id, activityUrl: iframeUrl, activitySessionId: instance_id, queryParams, onLoadError: tmp16, allowPopups: tmp19, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "Set", ignoreSilentHardwareSwitch: "fr-BL" };
+    const obj10 = { onActivityCrash: tmp14, applicationId: tmp18, channelId: channel_id, guildId: guild_id, activityUrl: iframeUrl, activitySessionId: instance_id, queryParams, onLoadError: tmp16, allowPopups: tmp19, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "Set", ignoreSilentHardwareSwitch: "sneezing_face" };
     const tmp23 = closure_7(tmp7(9726), obj10);
     cResult[12] = application.id;
     cResult[13] = iframeUrl;
@@ -240,7 +240,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       referrerPolicy: "origin",
       isPipOrGridMode: false,
       webViewKey: "Set",
-      ignoreSilentHardwareSwitch: "fr-BL"
+      ignoreSilentHardwareSwitch: "sneezing_face"
     };
     ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);
     obj3.activityUrl = iframeModalState.iframeUrl;

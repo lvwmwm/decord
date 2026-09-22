@@ -1,9 +1,9 @@
-// Module ID: 17488
-// Function ID: 17489
+// Module ID: 17489
+// Function ID: 17490
 // Name: useControlsLock
 // Dependencies: [19, 558, 568, 12419, 2]
 
-// Module 17488 (useControlsLock)
+// Module 17489 (useControlsLock)
 import c from "c" /* 568 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
 import noop from "module_19" /* 19 */;

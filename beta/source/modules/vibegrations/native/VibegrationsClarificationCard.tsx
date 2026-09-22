@@ -1,11 +1,11 @@
-// Module ID: 17044
-// Function ID: 17045
+// Module ID: 17045
+// Function ID: 17046
 // Name: VibegrationsClarificationCard
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 17045, 4754, 1119, 3682, 5824, 5188, 6846, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 17046, 4754, 1119, 3682, 5824, 5188, 6846, 2]
 
-// Module 17044 (VibegrationsClarificationCard)
+// Module 17045 (VibegrationsClarificationCard)
 import nativeDefault from "native" /* 580 */;
-import VibegrationsClarification from "VibegrationsClarification" /* 17045 */;
+import VibegrationsClarification from "VibegrationsClarification" /* 17046 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -184,11 +184,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((clarification) =
       closure_4(obj);
       const result = VibegrationsClarification.nextClarificationStep(clarification, obj, bound);
       if (null == result) {
-        const result1 = tmp13(17045).formatClarificationAnswers(tmp15, obj);
+        const result1 = tmp13(17046).formatClarificationAnswers(tmp15, obj);
         if ("" !== result1) {
           tmp(result1);
         }
-        const tmp13Result = tmp13(17045);
+        const tmp13Result = tmp13(17046);
       } else {
         closure_6(result);
       }

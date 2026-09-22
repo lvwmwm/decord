@@ -188,7 +188,7 @@ export default function getJankScreenName() {
         obj7.rendered = items.concat(items2);
         ({ focused, rendered } = obj7);
         if (0 === focused.length) {
-          let obj9 = { screen: null, expectedScreenIds: "", focusedRoute: "applicationId" };
+          let obj9 = { screen: null, expectedScreenIds: "", focusedRoute: "unicodeVersion" };
           obj9.screen = screen;
           let obj15 = obj9;
         } else {

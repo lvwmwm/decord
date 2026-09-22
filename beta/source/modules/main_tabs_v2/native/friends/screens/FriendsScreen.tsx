@@ -1,9 +1,9 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17226
+// Function ID: 17227
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7899, 4409, 21, 4758, 580, 558, 568, 1488, 7409, 7429, 1616, 17226, 504, 1879, 8453, 17227, 17230, 1119, 16786, 4702, 5822, 5188, 11294, 5907, 11163, 12026, 2]
+// Dependencies: [19, 17, 7899, 4409, 21, 4758, 580, 558, 568, 1488, 7409, 7429, 1616, 17227, 504, 1879, 8453, 17228, 17231, 1119, 16787, 4702, 5822, 5188, 11294, 5907, 11163, 12026, 2]
 
-// Module 17225 (FriendsScreen)
+// Module 17226 (FriendsScreen)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1879 */;
@@ -13,7 +13,7 @@ import TableRow from "TableRow" /* 5822 */;
 import native from "native" /* 5907 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
 import NoResultsDefault from "NoResults" /* 11294 */;
-import _modDef16786 from "module_16786" /* 16786 */;
+import _modDef16787 from "module_16787" /* 16787 */;
 import noop from "module_19" /* 19 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 7899 */;
 import RelationshipStore from "RelationshipStore" /* 4409 */;
@@ -297,7 +297,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const items = [];
     if (tmp2) {
-      const obj = { icon: _modDef16786, IconComponent: SendMessageIcon.SendMessageIcon, iconVariant: "default", label: null, subLabel: null, onPress: null };
+      const obj = { icon: _modDef16787, IconComponent: SendMessageIcon.SendMessageIcon, iconVariant: "default", label: null, subLabel: null, onPress: null };
       const intl = util.intl;
       obj.label = intl.string(util.t.fyA115);
       const intl2 = util.intl;
@@ -340,7 +340,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let v1IEawz = require;
       let obj9 = dependencyMap;
       let obj7 = { start: true, end: true, icon: null, trailing: null, label: null, subLabel: null, onPress: null };
-      const obj8 = { source: _modDef16786 };
+      const obj8 = { source: _modDef16787 };
       obj7.icon = React5(TableRow.TableRow.Icon, obj8);
       obj7.trailing = React5(TableRow.TableRow.Arrow, {});
       const intl5 = util.intl;

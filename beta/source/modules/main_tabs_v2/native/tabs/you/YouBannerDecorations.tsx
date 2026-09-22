@@ -1,9 +1,9 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17261
+// Function ID: 17262
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1376, 2042, 1378, 21, 4758, 1369, 580, 558, 13822, 7696, 4579, 2031, 568, 504, 8460, 8501, 8512, 4610, 676, 4418, 17261, 11608, 17262, 17263, 11895, 5666, 17264, 15261, 1119, 17265, 17267, 8938, 7624, 5198, 2]
+// Dependencies: [19, 17, 1376, 2042, 1378, 21, 4758, 1369, 580, 558, 13822, 7696, 4579, 2031, 568, 504, 8460, 8501, 8512, 4610, 676, 4418, 17262, 11608, 17263, 17264, 11895, 5666, 17265, 15261, 1119, 17266, 17268, 8938, 7624, 5198, 2]
 
-// Module 17260 (YouBannerDecorations)
+// Module 17261 (YouBannerDecorations)
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1369 */;
@@ -13,7 +13,7 @@ import QuestTypes from "QuestTypes" /* 5666 */;
 import useTrialOffer from "useTrialOffer" /* 7696 */;
 import QuestUtils from "QuestUtils" /* 11895 */;
 import PromotionsHooks from "PromotionsHooks" /* 13822 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17263 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17264 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -144,7 +144,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                 const hasPremiumSubscriptionToDisplay = tmp(4418).useHasPremiumSubscriptionToDisplay();
                 const tmp31 = closure_14();
                 dependencyMap = tmp31;
-                const tmp32 = tmp8(17261)();
+                const tmp32 = tmp8(17262)();
                 const showBadge = tmp32.showBadge;
                 const dismissBadge = tmp32.dismissBadge;
                 const _Symbol = Symbol;
@@ -157,9 +157,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                   tmp33 = cResult[17];
                 }
                 const tmpResult8 = tmp(4418);
-                const mobileReferralSubscriberProfileEntrypointButtonConfig = tmp(17262).useMobileReferralSubscriberProfileEntrypointButtonConfig("YouBannerDecorations");
+                const mobileReferralSubscriberProfileEntrypointButtonConfig = tmp(17263).useMobileReferralSubscriberProfileEntrypointButtonConfig("YouBannerDecorations");
                 ({ enabled, showReferralNotificationDot } = mobileReferralSubscriberProfileEntrypointButtonConfig);
-                const tmpResult10 = tmp(17262);
+                const tmpResult10 = tmp(17263);
                 const tmp37 = null != tmp(7696).useTrialOffer(closure_9);
                 closure_5 = tmp37;
                 if (cResult[18] === tmp37) {
@@ -353,13 +353,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                                     }
                                   }
                                   const obj11 = { ref: settingsButtonRef, IconComponent: tmp(7624).SettingsIcon, accessibilityLabel: tmp55, onPress: tmp38, showRedDot: tmp31 };
-                                  const tmp60 = closure_10(tmp8(17264), obj11, "settings");
+                                  const tmp60 = closure_10(tmp8(17265), obj11, "settings");
                                   cResult[39] = tmp31;
                                   cResult[40] = tmp38;
                                   cResult[41] = settingsButtonRef;
                                   cResult[42] = tmp60;
                                   tmp57 = tmp60;
-                                  const tmp8Result5 = tmp8(17264);
+                                  const tmp8Result5 = tmp8(17265);
                                 }
                               }
                             }
@@ -368,7 +368,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                             let tmp52 = null;
                             if (enabled) {
                               const obj12 = { onPress: tmp39, showReferralNotificationDot };
-                              tmp52 = closure_10(tmp8(17267), obj12, "nitro-subscriber");
+                              tmp52 = closure_10(tmp8(17268), obj12, "nitro-subscriber");
                             }
                             let tmp51 = tmp52;
                           } else {
@@ -378,8 +378,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                             const intl3 = tmp(1119).intl;
                             obj13.label = intl3.string(tmp(1119).t.Ipxkog);
                             obj13.onPress = tmp39;
-                            tmp51 = closure_10(tmp8(17264), obj13, "nitro");
-                            const tmp8Result6 = tmp8(17264);
+                            tmp51 = closure_10(tmp8(17265), obj13, "nitro");
+                            const tmp8Result6 = tmp8(17265);
                           }
                           cResult[33] = hasPremiumSubscriptionToDisplay;
                           cResult[34] = enabled;
@@ -388,7 +388,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                           cResult[37] = tmp51;
                         }
                         const obj14 = { shopButtonRef, navigateToShop };
-                        const tmp47 = closure_10(tmp8(17265), obj14, "shop");
+                        const tmp47 = closure_10(tmp8(17266), obj14, "shop");
                         cResult[30] = navigateToShop;
                         cResult[31] = shopButtonRef;
                         cResult[32] = tmp47;
@@ -401,8 +401,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((naviga
                         obj15.accessibilityLabel = intl.string(tmp(1119).t.JALI2K);
                         obj15.onPress = tmp40;
                         obj15.showRedDot = showBadge;
-                        tmp42 = closure_10(tmp8(17264), obj15, "quests");
-                        const tmp8Result7 = tmp8(17264);
+                        tmp42 = closure_10(tmp8(17265), obj15, "quests");
+                        const tmp8Result7 = tmp8(17265);
                       }
                       cResult[27] = tmp40;
                       cResult[28] = showBadge;

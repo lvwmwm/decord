@@ -1,9 +1,9 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 17908
+// Function ID: 17909
 // Name: FavoriteManager
 // Dependencies: [502, 16541, 1078, 10605, 2070, 7365, 2]
 
-// Module 17907 (FavoriteManager)
+// Module 17908 (FavoriteManager)
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10605 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;

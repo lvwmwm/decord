@@ -1,9 +1,9 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 16859
+// Function ID: 16860
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 7773, 2045, 2067, 21, 16794, 580, 558, 568, 9752, 1119, 9749, 4911, 9766, 9844, 8627, 9865, 7586, 9856, 16840, 11, 4754, 9845, 5309, 1181, 504, 2]
+// Dependencies: [19, 17, 7773, 2045, 2067, 21, 16795, 580, 558, 568, 9752, 1119, 9749, 4911, 9766, 9844, 8627, 9865, 7586, 9856, 16841, 11, 4754, 9845, 5309, 1181, 504, 2]
 
-// Module 16858 (ICYMIGuildEventRow)
+// Module 16859 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import transitionToGuild from "transitionToGuild" /* 7586 */;
@@ -22,7 +22,7 @@ let GuildScheduledEventStore = fn(7773);
 let GuildScheduledEventStore = GuildScheduledEventStore_mod;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createICYMIStyles = fn(16794);
+const createICYMIStyles = fn(16795);
 let closure_13 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   const obj = { container: { marginHorizontal: marginHorizontal.margin, marginBottom: marginHorizontal.margin, marginLeft: marginHorizontal.margin + marginHorizontal.inset }, card: { marginTop: nativeDefault.space.PX_12 }, title: null, timeAndUserPillContainer: null, separator: null, eventsChannelIcon: null, infoContainer: null, locationContainer: null };
   const obj2 = { marginTop: nativeDefault.space.PX_12 };
@@ -218,7 +218,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
               }
             }
             const tmp28Result = tmp28(undefined, undefined, tmp23);
-            tmp5(16840);
+            tmp5(16841);
             const _Symbol = Symbol;
             if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
               class R {
@@ -843,7 +843,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   }
   obj5.channelId = id1;
   obj5.guildId = guild.id;
-  const tmp2Result3 = guild(16840);
+  const tmp2Result3 = guild(16841);
   obj5.timestamp = guild(11).extractTimestamp(event.id);
   obj5.onHeaderPress = callback1;
   obj5.onHeaderLongPress = callback1;

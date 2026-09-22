@@ -1,13 +1,13 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 17790
+// Function ID: 17791
 // Name: HolidayEventsConfig
-// Dependencies: [10139, 17790, 1119, 17791, 17792, 2031, 2]
+// Dependencies: [10139, 17791, 1119, 17792, 17793, 2031, 2]
 
-// Module 17789 (HolidayEventsConfig)
+// Module 17790 (HolidayEventsConfig)
 import util from "util" /* 1119 */;
-import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 17790 */;
-import _modDef17791 from "module_17791" /* 17791 */;
+import HalloweenHolidayExperimentDefault from "HalloweenHolidayExperiment" /* 17791 */;
 import _modDef17792 from "module_17792" /* 17792 */;
+import _modDef17793 from "module_17793" /* 17793 */;
 
 require = fn;
 const obj = {
@@ -23,7 +23,7 @@ const obj = {
   isDesktopOnly: true,
   soundpack: fn(10139).Soundpacks.HALLOWEEN,
   soundpackLabel: fn(1119).t["+LasFV"],
-  appSpinnerSources: { webmDark: _modDef17791, webmLight: _modDef17792 },
+  appSpinnerSources: { webmDark: _modDef17792, webmLight: _modDef17793 },
   coachmarkDismissibleContent: fn(2031).DismissibleContent.HOLIDAY_COACHMARK_WINTER_2025,
   coachmarkBackgroundColor: "#1170ed",
   getLoadingTips() {

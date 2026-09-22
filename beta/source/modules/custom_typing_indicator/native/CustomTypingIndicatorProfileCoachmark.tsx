@@ -1,9 +1,9 @@
-// Module ID: 17259
-// Function ID: 17260
+// Module ID: 17260
+// Function ID: 17261
 // Name: CustomTypingIndicatorProfileCoachmark
 // Dependencies: [19, 17, 1078, 2042, 21, 4758, 580, 558, 568, 1119, 3684, 7626, 10452, 12104, 12105, 12102, 1384, 2]
 
-// Module 17259 (CustomTypingIndicatorProfileCoachmark)
+// Module 17260 (CustomTypingIndicatorProfileCoachmark)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

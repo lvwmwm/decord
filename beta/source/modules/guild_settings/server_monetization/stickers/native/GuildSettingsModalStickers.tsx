@@ -1,14 +1,14 @@
-// Module ID: 18011
-// Function ID: 18012
+// Module ID: 18012
+// Function ID: 18013
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 2067, 4399, 1376, 1078, 2026, 21, 1119, 18012, 9487, 13792, 4758, 580, 1616, 504, 9755, 18014, 7285, 4652, 4754, 4655, 5188, 18015, 8876, 5186, 5903, 5822, 5315, 10694, 1181, 4910, 5829, 18021, 2]
+// Dependencies: [19, 17, 2067, 4399, 1376, 1078, 2026, 21, 1119, 18013, 9487, 13792, 4758, 580, 1616, 504, 9755, 18015, 7285, 4652, 4754, 4655, 5188, 18016, 8876, 5186, 5903, 5822, 5315, 10694, 1181, 4910, 5829, 18022, 2]
 
-// Module 18011 (GuildSettingsModalStickers)
+// Module 18012 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 580 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 4652 */;
 import TableRow from "TableRow" /* 5822 */;
 import TableRowGroup from "TableRowGroup" /* 5903 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18015 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18016 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4399 */;
@@ -32,7 +32,7 @@ let items = [obj, , , ];
 let obj2 = { tier: BoostedGuildTiers.TIER_1, title: null, IconComponent: null };
 let intl2 = fn(1119).intl;
 obj2.title = intl2.string(fn(1119).t.nzXtaS);
-obj2.IconComponent = fn(18012).BoostGemOutlineIcon;
+obj2.IconComponent = fn(18013).BoostGemOutlineIcon;
 items[1] = obj2;
 let obj3 = { tier: BoostedGuildTiers.TIER_2, title: null, IconComponent: null };
 let intl3 = fn(1119).intl;

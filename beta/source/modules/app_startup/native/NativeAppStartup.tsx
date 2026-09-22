@@ -1,10 +1,10 @@
-// Module ID: 17697
-// Function ID: 17698
+// Module ID: 17698
+// Function ID: 17699
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 17698, 17700, 17, 17720, 2114, 2099, 1983, 7707, 17721, 1078, 9, 3, 18353, 7739, 18354, 11920, 504, 1252, 1237, 18356, 1987, 1368, 10, 18357, 9559, 577, 18358, 7722, 1235, 18359, 18360, 9553, 510, 1245, 13905, 2091, 9405, 2125, 1158, 18361, 1984, 8608, 18363, 14673, 7915, 18380, 18381, 18383, 18384, 10196, 7735, 7723, 4618, 1186, 4750, 14721, 17430, 17431, 1104, 14474, 7706, 14726, 14740, 7877, 18385, 6891, 7708, 7723, 2]
+// Dependencies: [32, 5, 17699, 17701, 17, 17721, 2114, 2099, 1983, 7707, 17722, 1078, 9, 3, 18354, 7739, 18355, 11920, 504, 1252, 1237, 18357, 1987, 1368, 10, 18358, 9559, 577, 18359, 7722, 1235, 18360, 18361, 9553, 510, 1245, 13905, 2091, 9405, 2125, 1158, 18362, 1984, 8608, 18364, 14673, 7915, 18381, 18382, 18384, 18385, 10196, 7735, 7723, 4618, 1186, 4750, 14721, 17431, 17432, 1104, 14474, 7706, 14726, 14740, 7877, 18386, 6891, 7708, 7723, 2]
 // Exports: init, initHeadlessTask
 
-// Module 17697 (NativeAppStartup)
+// Module 17698 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
@@ -620,9 +620,9 @@ let closure_38 = async function _init(_payload, value) {
           closure_0(paths[42])(paths[53], paths.paths).then((result) => result.default.loadCacheAsync(closure_2_4(closure_2_0(paths[54]).computeInitialNavigationState(), 1)[0], async () => {
             closure_0(14721).updateSaturation(closure_0(4750).default.saturation);
             obj = closure_0(14721);
-            closure_0(17430).updateVisualRefresh(true);
-            const obj2 = closure_0(17430);
-            closure_0(17431).updateTheme(closure_0(1186).default.theme);
+            closure_0(17431).updateVisualRefresh(true);
+            const obj2 = closure_0(17431);
+            closure_0(17432).updateTheme(closure_0(1186).default.theme);
             closure_1_0();
           }));
         });
@@ -767,14 +767,14 @@ function initializeTokenStorage() {
   obj.verbose("Token manager has initialized", { storageHasToken: null != Storage3.get(constants), tokenManagerHasToken: null != TokenManagerAll.getToken() });
   global();
 }
-const module_17698 = fn(17698);
-const superagentPatch = fn(17700);
+const module_17699 = fn(17699);
+const superagentPatch = fn(17701);
 get_ActivityIndicator = fn(17);
 ({ AppState: metroRequire, NativeEventEmitter: closure_7, Linking: closure_8, LogBox: closure_9, NativeModules: c10 } = get_ActivityIndicator);
-const logThirdPartyImportsDone = fn(17720);
+const logThirdPartyImportsDone = fn(17721);
 let closure_11 = fn(2114).subscribeToIntlLoadingSuccess;
 const AnalyticsTrackingStore = fn(7707);
-const ManagerRegistry = fn(17721);
+const ManagerRegistry = fn(17722);
 const Constants = fn(1078);
 ({ AppStates: closure_14, AnalyticEvents: closure_15, FIRST_RUN_DATE_KEY: closure_16, TOKEN_KEY: closure_17, STORAGE_SECURE_KEYS: closure_18, Platforms: closure_19 } = Constants);
 const loadImports = TTITrackerDefault.loadImports;

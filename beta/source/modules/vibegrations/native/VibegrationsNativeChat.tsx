@@ -1,9 +1,9 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17023
+// Function ID: 17024
 // Name: VibegrationsNativeChat
-// Dependencies: [32, 19, 17, 1983, 13365, 13364, 21, 580, 17023, 676, 4758, 17025, 558, 568, 17031, 1119, 3682, 4754, 5186, 4748, 17032, 5188, 5824, 4455, 17037, 17038, 17039, 17040, 1368, 5198, 5881, 17042, 16939, 17029, 17026, 17030, 16257, 17043, 17044, 17046, 17048, 504, 1616, 17049, 17050, 17051, 17052, 13182, 17053, 8995, 17056, 17058, 17059, 17060, 17062, 2]
+// Dependencies: [32, 19, 17, 1983, 13365, 13364, 21, 580, 17024, 676, 4758, 17026, 558, 568, 17032, 1119, 3682, 4754, 5186, 4748, 17033, 5188, 5824, 4455, 17038, 17039, 17040, 17041, 1368, 5198, 5881, 17043, 16940, 17030, 17027, 17031, 16257, 17044, 17045, 17047, 17049, 504, 1616, 17050, 17051, 17052, 17053, 13182, 17054, 8995, 17057, 17059, 17060, 17061, 17063, 2]
 
-// Module 17022 (VibegrationsNativeChat)
+// Module 17023 (VibegrationsNativeChat)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
@@ -15,16 +15,16 @@ import Stack_Stack from "Stack/Stack" /* 5186 */;
 import components_Button_Button from "components/Button/Button" /* 5188 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
 import _modDef5881 from "module_5881" /* 5881 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16939 */;
-import VibegrationsNativeStatusLineDefault from "VibegrationsNativeStatusLine" /* 17023 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17029 */;
-import useVibegrationsPlanDesign from "useVibegrationsPlanDesign" /* 17031 */;
-import VibegrationsNativeMarkdown from "VibegrationsNativeMarkdown" /* 17032 */;
-import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 17037 */;
-import VibegrationsSubagentMark from "VibegrationsSubagentMark" /* 17040 */;
-import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17042 */;
-import VibegrationsChatGrouping from "VibegrationsChatGrouping" /* 17049 */;
-import vibegrations_VibegrationsRepliedMessage from "vibegrations/VibegrationsRepliedMessage" /* 17051 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16940 */;
+import VibegrationsNativeStatusLineDefault from "VibegrationsNativeStatusLine" /* 17024 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17030 */;
+import useVibegrationsPlanDesign from "useVibegrationsPlanDesign" /* 17032 */;
+import VibegrationsNativeMarkdown from "VibegrationsNativeMarkdown" /* 17033 */;
+import VibegrationsTimelineTree from "VibegrationsTimelineTree" /* 17038 */;
+import VibegrationsSubagentMark from "VibegrationsSubagentMark" /* 17041 */;
+import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17043 */;
+import VibegrationsChatGrouping from "VibegrationsChatGrouping" /* 17050 */;
+import vibegrations_VibegrationsRepliedMessage from "vibegrations/VibegrationsRepliedMessage" /* 17052 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1983 */;
@@ -41,7 +41,7 @@ let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
-let diff = fn(17023).MESSAGE_CONTENT_INSET - fn(17023).MESSAGE_EDGE_INSET;
+let diff = fn(17024).MESSAGE_CONTENT_INSET - fn(17024).MESSAGE_EDGE_INSET;
 let c20 = 0.2;
 let c21 = 52;
 const BLACK = nativeDefault.unsafe_rawColors.BLACK;
@@ -58,17 +58,17 @@ const alphaResult = _modDef676(BLACK).alpha(0.2);
 obj.transcriptContent = { paddingTop: nativeDefault.space.PX_8 };
 obj.bottomStack = { position: "absolute", left: 0, right: 0, bottom: 0 };
 let obj3 = { paddingTop: nativeDefault.space.PX_8 };
-obj.row = { position: "relative", paddingLeft: fn(17023).MESSAGE_CONTENT_INSET, paddingRight: fn(17023).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
+obj.row = { position: "relative", paddingLeft: fn(17024).MESSAGE_CONTENT_INSET, paddingRight: fn(17024).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
 obj.rowGroupStart = { marginTop: nativeDefault.space.PX_12 };
-const rect = { position: "absolute", left: fn(17023).MESSAGE_EDGE_INSET, top: 2 };
+const rect = { position: "absolute", left: fn(17024).MESSAGE_EDGE_INSET, top: 2 };
 obj.avatar = rect;
 obj.spoken = { position: "relative", gap: PX_8 };
 obj.spokenAfterWork = { marginTop: PX_8 };
-const rect1 = { left: fn(17023).MESSAGE_EDGE_INSET - fn(17023).MESSAGE_CONTENT_INSET, top: 0 };
+const rect1 = { left: fn(17024).MESSAGE_EDGE_INSET - fn(17024).MESSAGE_CONTENT_INSET, top: 0 };
 obj.avatarSpoken = rect1;
-let obj5 = { position: "relative", paddingLeft: fn(17023).MESSAGE_CONTENT_INSET, paddingRight: fn(17023).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
-obj.avatarSpokenReplying = { top: fn(17025).REPLY_PREVIEW_HEIGHT + PX_8 };
-let obj6 = { top: fn(17025).REPLY_PREVIEW_HEIGHT + PX_8 };
+let obj5 = { position: "relative", paddingLeft: fn(17024).MESSAGE_CONTENT_INSET, paddingRight: fn(17024).MESSAGE_EDGE_INSET, paddingVertical: 2, gap: PX_8 };
+obj.avatarSpokenReplying = { top: fn(17026).REPLY_PREVIEW_HEIGHT + PX_8 };
+let obj6 = { top: fn(17026).REPLY_PREVIEW_HEIGHT + PX_8 };
 obj.header = { marginBottom: -nativeDefault.space.PX_4 };
 let obj7 = { marginBottom: -nativeDefault.space.PX_4 };
 obj.surface = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12 };
@@ -397,7 +397,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl2 = tmp(1119).intl;
     let stringResult = intl2.string(_modDef3682.IHCafX);
   } else {
-    stringResult = MarkupUtilsDefault.parse(trimmed, true, tmp(17032).VIBEGRATIONS_MARKUP_OPTIONS);
+    stringResult = MarkupUtilsDefault.parse(trimmed, true, tmp(17033).VIBEGRATIONS_MARKUP_OPTIONS);
   }
   cResult[0] = proposal.bot_permissions;
   cResult[1] = proposal.privileged_intents;
@@ -437,7 +437,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl2 = tmp6(1119).intl;
     let stringResult = intl2.string(tmp8(3682).IHCafX);
   } else {
-    stringResult = tmp8(4748).parse(trimmed, true, tmp6(17032).VIBEGRATIONS_MARKUP_OPTIONS);
+    stringResult = tmp8(4748).parse(trimmed, true, tmp6(17033).VIBEGRATIONS_MARKUP_OPTIONS);
     const tmp8Result = tmp8(4748);
   }
   items[1] = constants(Text_Text.Text, { variant: "text-md/normal", color: "text-default", children: stringResult });
@@ -807,11 +807,11 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp6 = closure_26();
   if (cResult[0] !== node) {
-    const describeNodeResult = tmp(17037).describeNode(node);
+    const describeNodeResult = tmp(17038).describeNode(node);
     cResult[0] = node;
     cResult[1] = describeNodeResult;
     let tmp7 = describeNodeResult;
-    const tmpResult = tmp(17037);
+    const tmpResult = tmp(17038);
   } else {
     tmp7 = cResult[1];
   }
@@ -826,9 +826,9 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[2] !== node.durationMs) {
     let tmp11 = null;
     if (null != node.durationMs) {
-      const obj2 = { variant: "text-xs/normal", color: "text-subtle", children: tmp(17038).describeDuration(node.durationMs) };
+      const obj2 = { variant: "text-xs/normal", color: "text-subtle", children: tmp(17039).describeDuration(node.durationMs) };
       tmp11 = constants(tmp(4754).Text, obj2);
-      const tmpResult2 = tmp(17038);
+      const tmpResult2 = tmp(17039);
     }
     cResult[2] = node.durationMs;
     cResult[3] = tmp11;
@@ -932,9 +932,9 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj.epoch = epoch;
   let tmp4Result = null;
   if (null != node.durationMs) {
-    const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17038).describeDuration(node.durationMs) };
+    const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17039).describeDuration(node.durationMs) };
     tmp4Result = tmp4(tmp7(4754).Text, obj3);
-    const tmp7Result = tmp7(17038);
+    const tmp7Result = tmp7(17039);
   }
   obj.trailing = tmp4Result;
   const children = [constants(tmp6, obj), ];
@@ -1064,7 +1064,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((epoch) => {
           }
         }
         const obj4 = { line: tmp11, live: turnActive, settled: !turnActive, inGutter: true, epoch, expanded: tmp6, onToggle: tmp25 };
-        const tmp29 = closure_17(epoch(17023), obj4);
+        const tmp29 = closure_17(epoch(17024), obj4);
         cResult[11] = epoch;
         cResult[12] = tmp6;
         cResult[13] = tmp11;
@@ -1077,7 +1077,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((epoch) => {
     }
   }
   const tmp5 = _slicedToArray(noop.useState(false), 2);
-  const currentStepResult = turnActive(17037).currentStep(tree.steps);
+  const currentStepResult = turnActive(17038).currentStep(tree.steps);
   _slicedToArray = currentStepResult;
   let tmp13;
   if (!turnActive) {
@@ -1102,11 +1102,11 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((epoch) => {
     describeTurnDurationResult = cResult[8];
   }
   if (null != tmp13) {
-    describeTurnDurationResult = tmp(17038).describeTurnDuration(tmp13);
-    const tmpResult3 = tmp(17038);
+    describeTurnDurationResult = tmp(17039).describeTurnDuration(tmp13);
+    const tmpResult3 = tmp(17039);
   } else if (null != currentStepResult) {
-    describeTurnDurationResult = tmp(17037).describeNode(currentStepResult);
-    const tmpResult4 = tmp(17037);
+    describeTurnDurationResult = tmp(17038).describeNode(currentStepResult);
+    const tmpResult4 = tmp(17038);
   } else if (describeTurnDurationResult == null) {
     const intl = tmp(1119).intl;
     describeTurnDurationResult = intl.string(epoch(3682).nv6pUM);
@@ -1130,7 +1130,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((epoch) => {
   [tmp3, c2] = noop.useState(false);
   const callback = noop.useCallback(() => _undefined((arg0) => !arg0), []);
   const tmp2 = _slicedToArray(noop.useState(false), 2);
-  const currentStepResult = turnActive(17037).currentStep(tree.steps);
+  const currentStepResult = turnActive(17038).currentStep(tree.steps);
   _slicedToArray = currentStepResult;
   let tmp8;
   if (!turnActive) {
@@ -1148,11 +1148,11 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((epoch) => {
     groupLabel = found.task.groupLabel;
   }
   if (null != tmp8) {
-    groupLabel = tmp5(17038).describeTurnDuration(tmp8);
-    const tmp5Result = tmp5(17038);
+    groupLabel = tmp5(17039).describeTurnDuration(tmp8);
+    const tmp5Result = tmp5(17039);
   } else if (null != currentStepResult) {
-    groupLabel = tmp5(17037).describeNode(currentStepResult);
-    const tmp5Result2 = tmp5(17037);
+    groupLabel = tmp5(17038).describeNode(currentStepResult);
+    const tmp5Result2 = tmp5(17038);
   } else if (groupLabel == null) {
     const intl = tmp5(1119).intl;
     groupLabel = intl.string(epoch(3682).nv6pUM);
@@ -1164,13 +1164,13 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((epoch) => {
   }
   const obj2 = { line: groupLabel, live: turnActive, settled: !turnActive, inGutter: true, epoch, expanded: tmp3, onToggle: null };
   let tmp19;
-  let obj = turnActive(17037);
+  let obj = turnActive(17038);
   const tmp15 = closure_18;
   if (someResult) {
     tmp19 = callback;
   }
   obj2.onToggle = tmp19;
-  const children = [closure_17(epoch(17023), obj2), ];
+  const children = [closure_17(epoch(17024), obj2), ];
   let tmp17Result = null;
   if (tmp3) {
     tmp17Result = null;
@@ -1309,7 +1309,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj5 = { line: cResult[7], live: turnActive, settled: tmp18, failed: "failed" === lane.task.status, glyph: tmp19, crestColor: mark.tint, inGutter: true, epoch, expanded: tmp5, onToggle: tmp22 };
-          const tmp27 = closure_17(epoch(17023), obj5);
+          const tmp27 = closure_17(epoch(17024), obj5);
           cResult[10] = epoch;
           cResult[11] = tmp5;
           cResult[12] = turnActive;
@@ -1327,13 +1327,13 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let currentStepResult;
   if (turnActive) {
-    currentStepResult = obj(17037).currentStep(lane.steps);
-    const objResult = obj(17037);
+    currentStepResult = obj(17038).currentStep(lane.steps);
+    const objResult = obj(17038);
   }
   _slicedToArray = currentStepResult;
   const tmp12 = lane.task.detail.length > 0 || lane.steps.length > 0;
   if ("running" !== lane.task.status) {
-    const describeTaskOutcomeResult = obj(17039).describeTaskOutcome(lane.task);
+    const describeTaskOutcomeResult = obj(17040).describeTaskOutcome(lane.task);
     cResult[1] = tmp7;
     cResult[2] = lane.steps;
     cResult[3] = lane.task;
@@ -1341,14 +1341,14 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = tmp12;
     cResult[6] = currentStepResult;
     cResult[7] = describeTaskOutcomeResult;
-    const objResult3 = obj(17039);
+    const objResult3 = obj(17040);
   }
   if (null != currentStepResult) {
-    obj = obj(17037);
+    obj = obj(17038);
     obj.describeNode(currentStepResult);
   } else {
-    obj(17039).taskTitle(lane.task);
-    const objResult4 = obj(17039);
+    obj(17040).taskTitle(lane.task);
+    const objResult4 = obj(17040);
   }
 }) : ((arg0) => {
   ({ lane, mark } = arg0);
@@ -1363,24 +1363,24 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let currentStepResult;
   if (turnActive) {
-    currentStepResult = mark(17037).currentStep(lane.steps);
-    const obj = mark(17037);
+    currentStepResult = mark(17038).currentStep(lane.steps);
+    const obj = mark(17038);
   }
   _slicedToArray = currentStepResult;
   const tmp9 = lane.task.detail.length > 0 || lane.steps.length > 0;
   if ("running" === lane.task.status) {
     if (null != currentStepResult) {
-      let describeNodeResult = mark(17037).describeNode(currentStepResult);
-      const obj4 = mark(17037);
+      let describeNodeResult = mark(17038).describeNode(currentStepResult);
+      const obj4 = mark(17038);
     } else {
-      describeNodeResult = mark(17039).taskTitle(lane.task);
-      const obj3 = mark(17039);
+      describeNodeResult = mark(17040).taskTitle(lane.task);
+      const obj3 = mark(17040);
     }
   } else {
-    const obj2 = mark(17039);
-    const obj5 = { line: mark(17039).describeTaskOutcome(lane.task), live: turnActive, settled: null, failed: null, glyph: null, crestColor: null, inGutter: true, epoch: null, expanded: null, onToggle: null };
+    const obj2 = mark(17040);
+    const obj5 = { line: mark(17040).describeTaskOutcome(lane.task), live: turnActive, settled: null, failed: null, glyph: null, crestColor: null, inGutter: true, epoch: null, expanded: null, onToggle: null };
     let tmp26 = !turnActive;
-    const describeTaskOutcomeResult = mark(17039).describeTaskOutcome(lane.task);
+    const describeTaskOutcomeResult = mark(17040).describeTaskOutcome(lane.task);
     if (!turnActive) {
       tmp26 = "failed" !== lane.task.status;
     }
@@ -1395,7 +1395,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp27 = callback;
     }
     obj5.onToggle = tmp27;
-    items = [closure_17(epoch(17023), obj5), ];
+    items = [closure_17(epoch(17024), obj5), ];
     let tmp21Result = null;
     if (tmp3) {
       tmp21Result = null;
@@ -1447,7 +1447,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let obj = turnActive(568);
   const tasks = tree.tasks;
-  dependencyMap = turnActive(17040).subagentIllocons(tasks.map(tmp4));
+  dependencyMap = turnActive(17041).subagentIllocons(tasks.map(tmp4));
   if (cResult[6] === length) {
     if (cResult[7] === tree) {
       if (cResult[8] === turnActive) {
@@ -1500,7 +1500,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   length = tree.tasks.length;
   const tmp = closure_26();
   const tasks = tree.tasks;
-  dependencyMap = turnActive(17040).subagentIllocons(tasks.map((taskId) => taskId.taskId));
+  dependencyMap = turnActive(17041).subagentIllocons(tasks.map((taskId) => taskId.taskId));
   let obj2 = { style: tmp.activityBox, children: null };
   items = [closure_17(closure_33, { tree, turnActive, epoch: length }), ];
   const tasks1 = tree.tasks;

@@ -1,9 +1,9 @@
-// Module ID: 16738
-// Function ID: 16739
+// Module ID: 16739
+// Function ID: 16740
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 13954, 15354, 1078, 21, 4758, 580, 1119, 558, 568, 4462, 16739, 16741, 4754, 676, 5198, 5881, 4497, 504, 1245, 15353, 5187, 13955, 2]
+// Dependencies: [32, 19, 17, 13954, 15354, 1078, 21, 4758, 580, 1119, 558, 568, 4462, 16740, 16742, 4754, 676, 5198, 5881, 4497, 504, 1245, 15353, 5187, 13955, 2]
 
-// Module 16738 (ConnectionBanner)
+// Module 16739 (ConnectionBanner)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
@@ -82,7 +82,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { size: "xs", color: tmp5(580).colors.INTERACTIVE_ICON_DEFAULT };
-      const tmp19 = __initData(tmp(16739).ConnectionUnknownIcon, obj5);
+      const tmp19 = __initData(tmp(16740).ConnectionUnknownIcon, obj5);
       cResult[6] = tmp19;
       let tmp17 = tmp19;
     } else {
@@ -102,7 +102,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { size: "xs", color: tmp5(580).colors.ICON_FEEDBACK_POSITIVE };
-      const tmp11 = __initData(tmp(16741).ConnectionFineIcon, obj7);
+      const tmp11 = __initData(tmp(16742).ConnectionFineIcon, obj7);
       cResult[9] = tmp11;
       let tmp9 = tmp11;
     } else {
@@ -131,12 +131,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   } else if (tmp7.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: null };
     const obj5 = { size: "xs", color: tmp5(580).colors.INTERACTIVE_ICON_DEFAULT };
-    obj4.children = __initData(tmp2(16739).ConnectionUnknownIcon, obj5);
+    obj4.children = __initData(tmp2(16740).ConnectionUnknownIcon, obj5);
     return __initData(timestampProducer, obj4);
   } else if (tmp7.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: null };
     const obj6 = { size: "xs", color: tmp5(580).colors.ICON_FEEDBACK_POSITIVE };
-    obj.children = __initData(tmp2(16741).ConnectionFineIcon, obj6);
+    obj.children = __initData(tmp2(16742).ConnectionFineIcon, obj6);
     return __initData(timestampProducer, obj);
   }
 });

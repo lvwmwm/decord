@@ -1,9 +1,9 @@
-// Module ID: 17911
-// Function ID: 17912
+// Module ID: 17912
+// Function ID: 17913
 // Name: VoiceProcessingErrorManager
 // Dependencies: [7365, 4457, 2]
 
-// Module 17911 (VoiceProcessingErrorManager)
+// Module 17912 (VoiceProcessingErrorManager)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;

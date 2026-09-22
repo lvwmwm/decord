@@ -1,9 +1,9 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18222
+// Function ID: 18223
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5679, 21, 4758, 580, 558, 568, 18212, 504, 5110, 1119, 5207, 5802, 1401, 8876, 18207, 4754, 18218, 2]
+// Dependencies: [5, 32, 19, 17, 5679, 21, 4758, 580, 558, 568, 18213, 504, 5110, 1119, 5207, 5802, 1401, 8876, 18208, 4754, 18219, 2]
 
-// Module 18221 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 18222 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
@@ -11,7 +11,7 @@ import Text_Text from "Text/Text" /* 4754 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
 import common_AlertDefault from "common/Alert" /* 5207 */;
 import FastImageDefault from "FastImage" /* 5802 */;
-import EmojiAliasDefault from "EmojiAlias" /* 18207 */;
+import EmojiAliasDefault from "EmojiAlias" /* 18208 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

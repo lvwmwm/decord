@@ -1,9 +1,9 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 16899
+// Function ID: 16900
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 7222, 1616, 15486, 16893, 4754, 1181, 16899, 1119, 15496, 6863, 7397, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 7222, 1616, 15486, 16894, 4754, 1181, 16900, 1119, 15496, 6863, 7397, 2]
 
-// Module 16898 (GuildRoleSubscriptionPurchaseCard)
+// Module 16899 (GuildRoleSubscriptionPurchaseCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -15,11 +15,11 @@ import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
 import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15496 */;
-import Elements from "Elements" /* 16893 */;
+import Elements from "Elements" /* 16894 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const SubscribeButtonDefault = tmp6(16899);
+const SubscribeButtonDefault = tmp6(16900);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[12] !== first) {
           const obj9 = { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: first };
-          const tmp28 = timestampProducer(tmp(16893).TruncatedText, obj9);
+          const tmp28 = timestampProducer(tmp(16894).TruncatedText, obj9);
           cResult[12] = first;
           cResult[13] = tmp28;
           let tmp26 = tmp28;

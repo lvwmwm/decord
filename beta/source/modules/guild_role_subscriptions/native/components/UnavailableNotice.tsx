@@ -1,9 +1,9 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 16887
+// Function ID: 16888
 // Name: UnavailableNotice
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5802, 16583, 4754, 2]
 
-// Module 16886 (UnavailableNotice)
+// Module 16887 (UnavailableNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;

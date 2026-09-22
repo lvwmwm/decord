@@ -1,9 +1,9 @@
-// Module ID: 17497
-// Function ID: 17498
+// Module ID: 17498
+// Function ID: 17499
 // Name: useVoicePanelNavArrowPressed
 // Dependencies: [19, 12418, 558, 568, 12419, 2]
 
-// Module 17497 (useVoicePanelNavArrowPressed)
+// Module 17498 (useVoicePanelNavArrowPressed)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

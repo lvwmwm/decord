@@ -1,9 +1,9 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17341
+// Function ID: 17342
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 2067, 5212, 21, 4758, 580, 558, 568, 504, 9410, 9526, 9521, 7224, 7296, 11291, 1119, 4754, 17341, 7297, 7302, 2]
+// Dependencies: [32, 19, 17, 2067, 5212, 21, 4758, 580, 558, 568, 504, 9410, 9526, 9521, 7224, 7296, 11291, 1119, 4754, 17342, 7297, 7302, 2]
 
-// Module 17340 (ContextMenuCommandRootScreen)
+// Module 17341 (ContextMenuCommandRootScreen)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import Text_Text from "Text/Text" /* 4754 */;

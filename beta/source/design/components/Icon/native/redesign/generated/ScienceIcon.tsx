@@ -1,9 +1,9 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16821
+// Function ID: 16822
 // Name: ScienceIcon
 // Dependencies: [109, 19, 21, 558, 568, 580, 11940, 4461, 2]
 
-// Module 16820 (ScienceIcon)
+// Module 16821 (ScienceIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import BaseIconImage from "BaseIconImage" /* 4461 */;

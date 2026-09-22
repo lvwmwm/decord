@@ -1,9 +1,9 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17821
+// Function ID: 17822
 // Name: JSWatchdogManager
-// Dependencies: [5, 1078, 3, 1095, 7365, 17821, 1235, 1245, 7722, 7718, 7708, 2]
+// Dependencies: [5, 1078, 3, 1095, 7365, 17822, 1235, 1245, 7722, 7718, 7708, 2]
 
-// Module 17820 (JSWatchdogManager)
+// Module 17821 (JSWatchdogManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -227,7 +227,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_128_0 = undefined;
             closure_128_1 = undefined;
             if (null == self._timeoutId) {
-              if (null != tmp2(17821)) {
+              if (null != tmp2(17822)) {
                 dependencyMap = 1;
                 c3 = 1;
                 const obj4 = { value: self.getCurrentSessionId(), done: false };
@@ -247,7 +247,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_129_0._enabled = true;
               if (closure_129_0._pingCompleted) {
                 let checkForStallReportResult;
-                const obj = tmp2(17821);
+                const obj = tmp2(17822);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }

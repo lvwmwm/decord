@@ -1,9 +1,9 @@
-// Module ID: 18247
-// Function ID: 18248
+// Module ID: 18248
+// Function ID: 18249
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
 // Dependencies: [19, 17, 1378, 1089, 21, 4758, 580, 558, 568, 5802, 1181, 4754, 1119, 7481, 15490, 5189, 2]
 
-// Module 18247 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 18248 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

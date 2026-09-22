@@ -1,9 +1,9 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17749
+// Function ID: 17750
 // Name: CacheManager
 // Dependencies: [5496, 7723, 3, 1095, 7365, 7895, 15839, 1368, 1098, 2]
 
-// Module 17748 (CacheManager)
+// Module 17749 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;

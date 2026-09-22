@@ -1,9 +1,9 @@
-// Module ID: 17688
-// Function ID: 17689
+// Module ID: 17689
+// Function ID: 17690
 // Name: shared/DMChannel
-// Dependencies: [19, 4940, 21, 558, 568, 4769, 11219, 4758, 580, 17136, 16685, 15578, 11, 5195, 17682, 5341, 17680, 12972, 8128, 17135, 4911, 2]
+// Dependencies: [19, 4940, 21, 558, 568, 4769, 11219, 4758, 580, 17137, 16685, 15578, 11, 5195, 17683, 5341, 17681, 12972, 8128, 17136, 4911, 2]
 
-// Module 17688 (shared/DMChannel)
+// Module 17689 (shared/DMChannel)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import transitionToChannel from "transitionToChannel" /* 4769 */;
@@ -13,10 +13,10 @@ import Pressables from "Pressables" /* 5341 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;
 import useMessagePreviewsDefault from "useMessagePreviews" /* 15578 */;
 import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16685 */;
-import renderChannelItemDefault from "renderChannelItem" /* 17135 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17680 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17682 */;
+import renderChannelItemDefault from "renderChannelItem" /* 17136 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17681 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17683 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -143,7 +143,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
             let tmp22 = cResult[13];
           }
           const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted: tmp4, mentionCount, unreadBadge: tmp20, subtitle: tmp22, latestMessageTimestamp: extractTimestampResult, channelName: tmp12(4911)(channel), fontScale };
-          const tmp12Result2Result = tmp12(17135)(obj4);
+          const tmp12Result2Result = tmp12(17136)(obj4);
           if (cResult[14] === PressableHighlight) {
             if (cResult[15] === tmp6.pressableUnderlayColor.backgroundColor) {
               if (cResult[16] === tmp12Result2Result) {
@@ -177,7 +177,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           cResult[18] = tmp19;
           cResult[19] = tmp33;
           tmp28 = tmp33;
-          const tmp12Result4 = tmp12(17135);
+          const tmp12Result4 = tmp12(17136);
         }
       }
     }

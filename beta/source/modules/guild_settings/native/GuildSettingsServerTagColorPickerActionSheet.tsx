@@ -1,9 +1,9 @@
-// Module ID: 18026
-// Function ID: 18027
+// Module ID: 18027
+// Function ID: 18028
 // Name: GuildSettingsServerTagColorPickerActionSheet
 // Dependencies: [32, 19, 17, 8207, 21, 580, 4758, 14863, 4608, 558, 568, 1482, 4497, 10326, 1119, 9868, 4725, 7396, 14187, 9980, 4754, 9869, 14864, 9822, 5188, 5186, 7397, 2]
 
-// Module 18026 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 18027 (GuildSettingsServerTagColorPickerActionSheet)
 import nativeDefault from "native" /* 580 */;
 import ColorUtils from "ColorUtils" /* 4608 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;

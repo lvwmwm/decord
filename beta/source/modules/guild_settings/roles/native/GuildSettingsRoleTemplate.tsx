@@ -1,9 +1,9 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18051
+// Function ID: 18052
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4750, 2067, 18046, 1078, 21, 4758, 580, 558, 568, 7186, 1482, 5173, 4497, 1245, 4938, 4754, 1181, 11684, 5188, 1119, 8554, 5341, 11056, 2]
+// Dependencies: [32, 19, 17, 4750, 2067, 18047, 1078, 21, 4758, 580, 558, 568, 7186, 1482, 5173, 4497, 1245, 4938, 4754, 1181, 11684, 5188, 1119, 8554, 5341, 11056, 2]
 
-// Module 18050 (GuildSettingsRoleTemplate)
+// Module 18051 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -26,7 +26,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = get_ActivityIndicator);
-const GuildSettingsRoleConstants = fn(18046);
+const GuildSettingsRoleConstants = fn(18047);
 ({ PermissionTemplateTypes: closure_9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: closure_11 } = GuildSettingsRoleConstants);
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);

@@ -1,19 +1,19 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17337
+// Function ID: 17338
 // Name: SearchNavigator
-// Dependencies: [19, 17, 8126, 17116, 1078, 21, 4758, 580, 8162, 558, 568, 7246, 12506, 1616, 17337, 8112, 17331, 17332, 8189, 8172, 17333, 2]
+// Dependencies: [19, 17, 8126, 17117, 1078, 21, 4758, 580, 8162, 558, 568, 7246, 12506, 1616, 17338, 8112, 17332, 17333, 8189, 8172, 17334, 2]
 
-// Module 17336 (SearchNavigator)
+// Module 17337 (SearchNavigator)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 17331 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 17332 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 let closure_5 = fn(8126).SearchEntrypointAnalyticsLocations;
-const SearchNavigatorScreens = fn(17116).SearchNavigatorScreens;
+const SearchNavigatorScreens = fn(17117).SearchNavigatorScreens;
 const SearchTypes = fn(1078).SearchTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
@@ -141,7 +141,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
                   return obj;
                 },
           getComponent() {
-                  return searchContext(17332).default;
+                  return searchContext(17333).default;
                 }
         };
         const tmp27 = closure_8(closure_11.Screen, obj7);
@@ -164,7 +164,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
                   return searchContext(8172).conversationNavigatorFocusHeaderOptions(route, navigation);
                 },
           getComponent() {
-                  return searchContext(17333).default;
+                  return searchContext(17334).default;
                 }
         };
         const tmp30 = closure_8(closure_11.Screen, obj8);
@@ -237,7 +237,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(17337).default;
+        return searchContext(17338).default;
       }
     }),
     closure_8(closure_11.Screen, {
@@ -256,7 +256,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
         return obj;
       },
       getComponent() {
-        return searchContext(17332).default;
+        return searchContext(17333).default;
       }
     }),
 
@@ -267,7 +267,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
     name: SearchNavigatorScreens.SEARCH_TABS,
     options: { headerShown: false, fullScreenGestureEnabled: true },
     getComponent() {
-      return searchContext(17337).default;
+      return searchContext(17338).default;
     }
   };
   const obj6 = {
@@ -286,7 +286,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
       return obj;
     },
     getComponent() {
-      return searchContext(17332).default;
+      return searchContext(17333).default;
     }
   };
   const tmp3 = closure_10();
@@ -297,7 +297,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((route)
       return searchContext(8172).conversationNavigatorFocusHeaderOptions(route, navigation);
     },
     getComponent() {
-      return searchContext(17333).default;
+      return searchContext(17334).default;
     }
   });
   obj3.children = items2;

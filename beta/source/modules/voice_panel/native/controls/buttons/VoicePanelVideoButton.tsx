@@ -1,9 +1,9 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17620
+// Function ID: 17621
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 9651, 2045, 2067, 1996, 4399, 4783, 21, 558, 568, 12419, 17607, 7967, 504, 13571, 5112, 13573, 1119, 17620, 9882, 9670, 13591, 17608, 11733, 13342, 4471, 2]
+// Dependencies: [19, 17, 9651, 2045, 2067, 1996, 4399, 4783, 21, 558, 568, 12419, 17608, 7967, 504, 13571, 5112, 13573, 1119, 17621, 9882, 9670, 13591, 17609, 11733, 13342, 4471, 2]
 
-// Module 17619 (VoicePanelVideoButton)
+// Module 17620 (VoicePanelVideoButton)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 4471 */;
@@ -12,7 +12,7 @@ import StreamPermissionUtils from "StreamPermissionUtils" /* 7967 */;
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 9670 */;
 import CallsUtils from "CallsUtils" /* 9882 */;
 import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13573 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17620 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17621 */;
 import noop from "module_19" /* 19 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9651 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

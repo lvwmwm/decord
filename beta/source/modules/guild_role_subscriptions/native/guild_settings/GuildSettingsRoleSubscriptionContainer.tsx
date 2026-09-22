@@ -1,18 +1,18 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18197
+// Function ID: 18198
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 2067, 1078, 21, 4758, 558, 568, 504, 18172, 12369, 18145, 1119, 15472, 18186, 2]
+// Dependencies: [19, 17, 2067, 1078, 21, 4758, 558, 568, 504, 18173, 12369, 18146, 1119, 15472, 18187, 2]
 
-// Module 18196 (GuildSettingsRoleSubscriptionContainer)
+// Module 18197 (GuildSettingsRoleSubscriptionContainer)
 import c from "c" /* 568 */;
 import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15472 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18172 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18186 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18173 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18187 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 
 const ErrorBlockDefault = tmp13(12369);
-const WarningNoticeDefault = tmp13(18145);
+const WarningNoticeDefault = tmp13(18146);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: c3, View: closure_4 } = get_ActivityIndicator);
@@ -193,35 +193,35 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const tmp9Result = tmp9(12369);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(18145), obj3);
+    tmp14 = closure_7(tmp9(18146), obj3);
   } else if (tmp13) {
     const obj4 = { notice: null };
     const intl3 = tmp2(1119).intl;
     obj4.notice = intl3.string(tmp2(1119).t.MyJpJT);
-    tmp14 = closure_7(tmp9(18145), obj4);
-    const tmp9Result5 = tmp9(18145);
+    tmp14 = closure_7(tmp9(18146), obj4);
+    const tmp9Result5 = tmp9(18146);
   } else if (null != reapplyNoticeText) {
     const obj5 = { notice: reapplyNoticeText, ctaLabel: null, onClick: null, submitting: null };
     const intl2 = tmp2(1119).intl;
     obj5.ctaLabel = intl2.string(tmp2(1119).t["YKw/NQ"]);
     obj5.onClick = tmp12;
     obj5.submitting = tmp11;
-    tmp14 = closure_7(tmp9(18145), obj5);
-    const tmp9Result6 = tmp9(18145);
+    tmp14 = closure_7(tmp9(18146), obj5);
+    const tmp9Result6 = tmp9(18146);
   } else if (true === hasItem1) {
     const obj6 = { notice: null };
     const intl = tmp2(1119).intl;
     obj6.notice = intl.string(tmp2(1119).t.e2g9sW);
-    tmp14 = closure_7(tmp9(18145), obj6);
-    const tmp9Result7 = tmp9(18145);
+    tmp14 = closure_7(tmp9(18146), obj6);
+    const tmp9Result7 = tmp9(18146);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj7 = { notice: null };
       const intl4 = tmp2(1119).intl;
       obj7.notice = intl4.string(tmp2(1119).t.rxI9sl);
-      tmp14 = closure_7(tmp9(18145), obj7);
-      const tmp9Result8 = tmp9(18145);
+      tmp14 = closure_7(tmp9(18146), obj7);
+      const tmp9Result8 = tmp9(18146);
     }
   }
   let tmp24 = null;

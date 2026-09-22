@@ -1,11 +1,11 @@
-// Module ID: 17655
-// Function ID: 17656
+// Module ID: 17656
+// Function ID: 17657
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4750, 2044, 4966, 14820, 9313, 12421, 21, 4497, 1616, 17443, 558, 568, 14819, 504, 17656, 2]
+// Dependencies: [32, 19, 4750, 2044, 4966, 14820, 9313, 12421, 21, 4497, 1616, 17444, 558, 568, 14819, 504, 17657, 2]
 
-// Module 17655 (MediaPlaybackPanelController)
+// Module 17656 (MediaPlaybackPanelController)
 import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14819 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 17656 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 17657 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
@@ -54,7 +54,7 @@ function useCoreState() {
   const obj7 = sharedValue(4497);
   const obj8 = { mode: sharedValue, MediaPlaybackPanelModes, MorphablePanelModes };
   const tmp9 = sharedValue3(1616)();
-  const tmp10 = sharedValue3(17443)(sharedValue3(1616)());
+  const tmp10 = sharedValue3(17444)(sharedValue3(1616)());
   const sharedValue6 = sharedValue(4497).useSharedValue(false);
   const obj9 = sharedValue(4497);
   const obj10 = sharedValue(4497);

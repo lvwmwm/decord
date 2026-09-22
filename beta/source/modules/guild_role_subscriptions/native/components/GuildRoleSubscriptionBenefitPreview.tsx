@@ -1,9 +1,9 @@
-// Module ID: 18222
-// Function ID: 18223
+// Module ID: 18223
+// Function ID: 18224
 // Name: GuildRoleSubscriptionBenefitPreview
 // Dependencies: [19, 17, 15464, 21, 4758, 558, 568, 15499, 1181, 10176, 4754, 4413, 15492, 4911, 5241, 1119, 2]
 
-// Module 18222 (GuildRoleSubscriptionBenefitPreview)
+// Module 18223 (GuildRoleSubscriptionBenefitPreview)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4413 */;

@@ -1,9 +1,9 @@
-// Module ID: 17614
-// Function ID: 17615
+// Module ID: 17615
+// Function ID: 17616
 // Name: VoicePanelNsfwAlert
 // Dependencies: [19, 2063, 2067, 21, 558, 568, 5116, 5739, 1119, 5116, 2]
 
-// Module 17614 (VoicePanelNsfwAlert)
+// Module 17615 (VoicePanelNsfwAlert)
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;

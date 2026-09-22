@@ -1,9 +1,9 @@
-// Module ID: 18343
-// Function ID: 18344
+// Module ID: 18344
+// Function ID: 18345
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 1181, 558, 568, 504, 18341, 18344, 1401, 4754, 1119, 2780, 5341, 2486, 9074, 15190, 15144, 4458, 5907, 13206, 15149, 5186, 2]
+// Dependencies: [19, 17, 1376, 21, 4758, 580, 1181, 558, 568, 504, 18342, 18345, 1401, 4754, 1119, 2780, 5341, 2486, 9074, 15190, 15144, 4458, 5907, 13206, 15149, 5186, 2]
 
-// Module 18343 (PendingRequestList)
+// Module 18344 (PendingRequestList)
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import _modDef2780 from "module_2780" /* 2780 */;
@@ -354,13 +354,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((request) => {
     avatar = request.parent_avatar;
   }
   const obj = request(504);
-  const pendingRequestResolution = request(18341).usePendingRequestResolution(request.parent_id);
+  const pendingRequestResolution = request(18342).usePendingRequestResolution(request.parent_id);
   ({ isConnected, isResolved } = pendingRequestResolution);
-  const tmp2Result = request(18341);
+  const tmp2Result = request(18342);
   const obj2 = { style: tmp.row, children: null };
-  const result = request(18344).formatPendingRequestSentText(request.created_at);
+  const result = request(18345).formatPendingRequestSentText(request.created_at);
   const obj3 = { avatarStyle: tmp.avatar, source: null, disablePlaceholder: true };
-  const tmp2Result2 = request(18344);
+  const tmp2Result2 = request(18345);
   obj3.source = AvatarUtilsDefault.getUserAvatarSource({ id: request.parent_id, avatar });
   const items1 = [closure_7(request(1181).Avatar, obj3), , ];
   const obj5 = { style: tmp.details, children: null };

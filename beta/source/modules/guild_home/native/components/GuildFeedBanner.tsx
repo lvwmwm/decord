@@ -1,9 +1,9 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 16904
+// Function ID: 16905
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 14240, 2067, 16904, 1078, 21, 4758, 580, 558, 568, 4497, 1482, 4693, 14241, 1368, 1401, 5805, 4759, 4762, 504, 7186, 11648, 4610, 16905, 16906, 5799, 4754, 1181, 5341, 4458, 1119, 16907, 2]
+// Dependencies: [19, 17, 14240, 2067, 16905, 1078, 21, 4758, 580, 558, 568, 4497, 1482, 4693, 14241, 1368, 1401, 5805, 4759, 4762, 504, 7186, 11648, 4610, 16906, 16907, 5799, 4754, 1181, 5341, 4458, 1119, 16908, 2]
 
-// Module 16903 (GuildFeedBanner)
+// Module 16904 (GuildFeedBanner)
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
@@ -17,7 +17,7 @@ import GuildStore from "GuildStore" /* 2067 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const GuildFeedConstants = fn(16904);
+const GuildFeedConstants = fn(16905);
 const GUILD_FEED_CARD_MARGIN_HORIZONTAL = GuildFeedConstants.GUILD_FEED_CARD_MARGIN_HORIZONTAL;
 let closure_9 = GuildFeedConstants.GUILD_FEED_MIN_BANNER_HEIGHT;
 const GuildFeatures = fn(1078).GuildFeatures;
@@ -294,7 +294,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                                                                             },
                                         children: null
                                       };
-                                      const obj13 = { style: tmp4.publicIcon, source: tmp7(16907) };
+                                      const obj13 = { style: tmp4.publicIcon, source: tmp7(16908) };
                                       const items5 = [closure_11(tmp(1181).Icon, obj13), ];
                                       const obj14 = { variant: "text-xs/medium", color: "text-default", children: null };
                                       let intl = tmp(1119).intl;
@@ -418,9 +418,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         const items12 = [size1, animatedStyle];
         obj26.style = items12;
         if (tmpResult7.isThemeDark(tmp9)) {
-          let tmp7Result5 = tmp7(16905);
+          let tmp7Result5 = tmp7(16906);
         } else {
-          tmp7Result5 = tmp7(16906);
+          tmp7Result5 = tmp7(16907);
         }
         obj26.source = tmp7Result5;
         obj26.onLoad = tmp24;
@@ -549,9 +549,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const items6 = [size2, animatedStyle];
     obj6.style = items6;
     if (tmp2Result6.isThemeDark(tmp8)) {
-      let tmp6Result = tmp6(16905);
+      let tmp6Result = tmp6(16906);
     } else {
-      tmp6Result = tmp6(16906);
+      tmp6Result = tmp6(16907);
     }
     obj6.source = tmp6Result;
     obj6.onLoad = handleLoad;
@@ -604,7 +604,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             },
         children: null
       };
-      const obj17 = { style: tmp.publicIcon, source: tmp6(16907) };
+      const obj17 = { style: tmp.publicIcon, source: tmp6(16908) };
       const items12 = [tmp17(tmp2(1181).Icon, obj17), ];
       const obj18 = { variant: "text-xs/medium", color: "text-default", children: null };
       let intl = tmp2(1119).intl;

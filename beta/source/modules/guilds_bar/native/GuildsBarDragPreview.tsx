@@ -156,7 +156,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "applicationId", expanded: "<string:16777578>", children: "textButton" };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "code", expanded: -7549817156932487000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002052782951976569 };
         const items = [overNode];
         element.children = items;
         cResult[0] = overNode;
@@ -311,7 +311,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((dragRegion) =>
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "applicationId", expanded: "<string:16777578>", children: "textButton" };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "code", expanded: -7549817156932487000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002052782951976569 };
         const items = [tmp2];
         element.children = items;
         return element;
@@ -673,7 +673,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (null != dragSpecs) {
           if (null != overSpecs) {
             state = overSpecs.state;
-            const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "text-md/medium", scrollPosition: "text-default", dragRegion: 2, windowSize: null, dropComplete: "text-md/normal", listInsets: null };
+            const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "short", scrollPosition: "2-digit", dragRegion: "MO", windowSize: "TU", dropComplete: "WE", listInsets: "TH" };
             ({ node: obj.draggedNode, itemSize: obj.draggedHeight } = dragSpecs);
             obj.overState = state;
             let node;
@@ -738,7 +738,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           state = overSpecs.state;
-          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "text-md/medium", scrollPosition: "text-default", dragRegion: 2, windowSize: null, dropComplete: "text-md/normal", listInsets: null };
+          const obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "short", scrollPosition: "2-digit", dragRegion: "MO", windowSize: "TU", dropComplete: "WE", listInsets: "TH" };
           ({ node: obj.draggedNode, itemSize: obj.draggedHeight } = dragSpecs);
           obj.overState = state;
           let node;

@@ -1,9 +1,9 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 16852
+// Function ID: 16853
 // Name: ReplyRow
-// Dependencies: [19, 17, 21, 16794, 580, 558, 568, 4754, 9035, 5341, 2]
+// Dependencies: [19, 17, 21, 16795, 580, 558, 568, 4754, 9035, 5341, 2]
 
-// Module 16851 (ReplyRow)
+// Module 16852 (ReplyRow)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -15,7 +15,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createICYMIStyles = fn(16794);
+const createICYMIStyles = fn(16795);
 let closure_6 = createICYMIStyles.createICYMIStyles((marginLeft) => {
   const obj = { separator: null, container: null, buttonContainer: null, feedbackContainer: null, icon: null, feedbackButtonIcon: null, input: null, contentInventoryPressable: null, contentInventoryContainer: null, contentInventoryText: null, replyContainer: null };
   const size = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: marginLeft.margin, width: "100%" };

@@ -282,7 +282,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return obj;
   }, []);
   ({ accessibilityActions, onAccessibilityAction } = memo1);
-  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: "tableflip", externalChildren: "unflip", expandedChildren: "shrug", children: "spoiler" };
+  const obj5 = { selected: isFavoritesGuildSelected, circle: false, unread, styles: guildsBarAnimatedWrapperStyles, cutouts, overState: "l", config: memo, accessibilityActions, onAccessibilityAction, label: null, externalChildren: "active", expandedChildren: null, children: "md" };
   const obj4 = shouldShowPopover(10616);
   const tmp13 = closure_9;
   let intl = shouldShowPopover(1119).intl;

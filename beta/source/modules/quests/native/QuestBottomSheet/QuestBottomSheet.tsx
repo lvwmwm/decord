@@ -1295,7 +1295,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
         class T {
           constructor() {
             obj = { quest: closure_3, initialStep, sourceQuestContent };
-            return jsx(f69501, obj);
+            return jsx(f69502, obj);
           }
         }
         const obj2 = { overrideVisibility: true, questOrQuests: stateFromStores, questContent: null, questContentPosition: null, sourceQuestContent: null, children: null };
@@ -1315,7 +1315,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
     class T {
       constructor() {
         obj = { quest: closure_3, initialStep, sourceQuestContent };
-        return jsx(f69501, obj);
+        return jsx(f69502, obj);
       }
     }
     cResult[3] = initialStep;

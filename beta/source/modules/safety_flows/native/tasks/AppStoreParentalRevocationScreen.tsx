@@ -1,9 +1,9 @@
-// Module ID: 18345
-// Function ID: 18346
+// Module ID: 18346
+// Function ID: 18347
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4455, 1119, 2780, 4754, 5186, 8699, 18332, 12057, 11297, 8860, 8698, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4455, 1119, 2780, 4754, 5186, 8699, 18333, 12057, 11297, 8860, 8698, 2]
 
-// Module 18345 (AppStoreParentalRevocationScreen)
+// Module 18346 (AppStoreParentalRevocationScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -16,7 +16,7 @@ import ModalContent from "ModalContent" /* 8699 */;
 import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8860 */;
 import ModalActionButton from "ModalActionButton" /* 11297 */;
 import ModalFooter from "ModalFooter" /* 12057 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18332 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18333 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

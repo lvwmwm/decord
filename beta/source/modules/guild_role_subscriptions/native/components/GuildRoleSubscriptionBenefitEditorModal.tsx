@@ -1,9 +1,9 @@
-// Module ID: 18215
-// Function ID: 18216
+// Module ID: 18216
+// Function ID: 18217
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4409, 1376, 18214, 15464, 1078, 21, 4758, 580, 5743, 558, 568, 14169, 4715, 1119, 1181, 5341, 1616, 18216, 4911, 8876, 18218, 10051, 18219, 2]
+// Dependencies: [5, 32, 19, 17, 4409, 1376, 18215, 15464, 1078, 21, 4758, 580, 5743, 558, 568, 14169, 4715, 1119, 1181, 5341, 1616, 18217, 4911, 8876, 18219, 10051, 18220, 2]
 
-// Module 18215 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 18216 (GuildRoleSubscriptionBenefitEditorModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -17,7 +17,7 @@ import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4409 */;
 import UserStore from "UserStore" /* 1376 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18214 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18215 */;
 import TextStyles from "TextStyles" /* 5743 */;
 
 const require = globalThis.__r;
@@ -268,7 +268,7 @@ export default noop.forwardRef((benefitType) => {
               closure_2(useChannelName.computeChannelName(id, UserStore, RelationshipStore));
             }
       };
-      let tmp25 = closure_13(tmp2(18216), obj);
+      let tmp25 = closure_13(tmp2(18217), obj);
       let tmp26 = closure_13;
     } else {
       let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength: maxLength2, value, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
@@ -296,7 +296,7 @@ export default noop.forwardRef((benefitType) => {
         },
       listingId: benefitType.listingId
     };
-    const items = [tmp26(tmp2(18218), obj4), ];
+    const items = [tmp26(tmp2(18219), obj4), ];
     let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items1 = [tmp.scrollContainer, ];
     const obj6 = { paddingBottom: value(1616)().bottom + 32 + 16 };
@@ -316,7 +316,7 @@ export default noop.forwardRef((benefitType) => {
       closure_4(emojiId.emojiId);
       closure_6(emojiId.emojiName);
     };
-    items2[3] = tmp26(tmp2(18219), obj9);
+    items2[3] = tmp26(tmp2(18220), obj9);
     const obj11 = { style: tmp4.header, children: null };
     const tmp28 = first2;
     const tmp29 = closure_6;

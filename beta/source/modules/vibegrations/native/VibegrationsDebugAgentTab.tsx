@@ -1,17 +1,17 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 17086
+// Function ID: 17087
 // Name: VibegrationsDebugAgentTab
-// Dependencies: [32, 19, 17, 13364, 17066, 21, 4758, 580, 558, 568, 17071, 17070, 4754, 17073, 1119, 3682, 5277, 504, 5188, 17084, 2]
+// Dependencies: [32, 19, 17, 13364, 17067, 21, 4758, 580, 558, 568, 17072, 17071, 4754, 17074, 1119, 3682, 5277, 504, 5188, 17085, 2]
 
-// Module 17085 (VibegrationsDebugAgentTab)
+// Module 17086 (VibegrationsDebugAgentTab)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17070 */;
-import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17071 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17071 */;
+import VibegrationsDebugLabels from "VibegrationsDebugLabels" /* 17072 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17066 */;
+import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17067 */;
 
 require = fn;
 const View = fn(17).View;
@@ -34,22 +34,22 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((call) => {
   call = call.call;
   const tmp4 = closure_12();
   if (cResult[0] !== call) {
-    const modelCallOutcomeResult = tmp(17071).modelCallOutcome(call);
+    const modelCallOutcomeResult = tmp(17072).modelCallOutcome(call);
     cResult[0] = call;
     cResult[1] = modelCallOutcomeResult;
     let tmp5 = modelCallOutcomeResult;
-    const tmpResult = tmp(17071);
+    const tmpResult = tmp(17072);
   } else {
     tmp5 = cResult[1];
   }
   ({ text, bad } = tmp5);
   ({ callRow, callHead } = tmp4);
   if (cResult[2] !== call.observedAt) {
-    const formatClockTimeResult = tmp(17070).formatClockTime(call.observedAt);
+    const formatClockTimeResult = tmp(17071).formatClockTime(call.observedAt);
     cResult[2] = call.observedAt;
     cResult[3] = formatClockTimeResult;
     let tmp7 = formatClockTimeResult;
-    const tmpResult2 = tmp(17070);
+    const tmpResult2 = tmp(17071);
   } else {
     tmp7 = cResult[3];
   }
@@ -449,7 +449,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
     }
     const obj2 = { generatedAt: undefined, fetchState, onRefresh };
-    const tmp41 = closure_8(tmp(17073).DebugSnapshotToolbar, obj2);
+    const tmp41 = closure_8(tmp(17074).DebugSnapshotToolbar, obj2);
     cResult[25] = fetchState;
     cResult[26] = onRefresh;
     cResult[27] = undefined;
@@ -565,7 +565,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   if (generated_at == null) {
     generated_at = null;
   }
-  const items12 = [closure_8(tmp2(17073).DebugSnapshotToolbar, { generatedAt: generated_at, fetchState, onRefresh }), , , , , , ];
+  const items12 = [closure_8(tmp2(17074).DebugSnapshotToolbar, { generatedAt: generated_at, fetchState, onRefresh }), , , , , , ];
   const obj7 = { title: null, children: null };
   const intl = tmp2(1119).intl;
   obj7.title = intl.string(traceVisible(3682).IYpHtT);
@@ -573,75 +573,75 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj8 = { children: null };
     const intl3 = tmp2(1119).intl;
     obj8.children = intl3.string(tmp20(3682).gPabB9);
-    let tmp16Result5 = tmp18(tmp2(17073).DebugNote, obj8);
+    let tmp16Result5 = tmp18(tmp2(17074).DebugNote, obj8);
   } else {
     const obj9 = { label: null, value: null, hint: null };
     const intl35 = tmp2(1119).intl;
     obj9.label = intl35.string(tmp20(3682)["8MSJDH"]);
-    const tmp2Result = tmp2(17070);
+    const tmp2Result = tmp2(17071);
     const tmp48 = closure_10;
     obj9.value = tmp2Result.formatCount(tmp2(5277).runesFromUsd(lifetime.cost_usd));
     const intl36 = tmp2(1119).intl;
     const obj10 = { count: null };
     const tmp2Result44 = tmp2(5277);
-    obj10.count = tmp2(17070).formatCount(lifetime.turns);
+    obj10.count = tmp2(17071).formatCount(lifetime.turns);
     obj9.hint = intl36.formatToPlainString(tmp20(3682)["6Z2KhK"], obj10);
-    const items13 = [tmp18(tmp2(17073).DebugStatRow, obj9), , , , ];
+    const items13 = [tmp18(tmp2(17074).DebugStatRow, obj9), , , , ];
     const intl37 = tmp2(1119).intl;
     const orchestrator = lifetime.orchestrator;
-    const tmp2Result45 = tmp2(17070);
+    const tmp2Result45 = tmp2(17071);
     const obj11 = { label: intl37.string(tmp20(3682).hk4jJr), value: null, hint: null };
     const intl38 = tmp2(1119).intl;
     const obj12 = { count: null };
     const stringResult = intl37.string(tmp20(3682).hk4jJr);
-    const tmp2Result46 = tmp2(17070);
+    const tmp2Result46 = tmp2(17071);
     obj12.count = tmp2Result46.formatCount(tmp2(5277).runeCount(orchestrator));
     obj11.value = intl38.formatToPlainString(tmp20(3682).U98VaN, obj12);
     const tmp2Result47 = tmp2(5277);
-    const formatCountResult = tmp2(17070).formatCount(orchestrator.input_tokens);
-    const tmp2Result48 = tmp2(17070);
-    const tmp2Result49 = tmp2(17070);
-    const formatCountResult1 = tmp2(17070).formatCount(orchestrator.output_tokens);
+    const formatCountResult = tmp2(17071).formatCount(orchestrator.input_tokens);
+    const tmp2Result48 = tmp2(17071);
+    const tmp2Result49 = tmp2(17071);
+    const formatCountResult1 = tmp2(17071).formatCount(orchestrator.output_tokens);
     const _HermesInternal4 = HermesInternal;
-    obj11.hint = "" + formatCountResult + " in \u00B7 " + formatCountResult1 + " out \u00B7 " + tmp2(17070).formatCount(orchestrator.cache_read_input_tokens) + " cache read";
-    items13[1] = tmp18(tmp2(17073).DebugStatRow, obj11);
+    obj11.hint = "" + formatCountResult + " in \u00B7 " + formatCountResult1 + " out \u00B7 " + tmp2(17071).formatCount(orchestrator.cache_read_input_tokens) + " cache read";
+    items13[1] = tmp18(tmp2(17074).DebugStatRow, obj11);
     const intl39 = tmp2(1119).intl;
     const codegen = lifetime.codegen;
-    const tmp2Result50 = tmp2(17070);
+    const tmp2Result50 = tmp2(17071);
     const obj13 = { label: intl39.string(tmp20(3682).R9aduM), value: null, hint: null };
     const intl40 = tmp2(1119).intl;
     const obj14 = { count: null };
     const stringResult1 = intl39.string(tmp20(3682).R9aduM);
-    const tmp2Result51 = tmp2(17070);
+    const tmp2Result51 = tmp2(17071);
     obj14.count = tmp2Result51.formatCount(tmp2(5277).runeCount(codegen));
     obj13.value = intl40.formatToPlainString(tmp20(3682).U98VaN, obj14);
     const tmp2Result52 = tmp2(5277);
-    const formatCountResult2 = tmp2(17070).formatCount(codegen.input_tokens);
-    const tmp2Result53 = tmp2(17070);
-    const tmp2Result54 = tmp2(17070);
-    const formatCountResult3 = tmp2(17070).formatCount(codegen.output_tokens);
+    const formatCountResult2 = tmp2(17071).formatCount(codegen.input_tokens);
+    const tmp2Result53 = tmp2(17071);
+    const tmp2Result54 = tmp2(17071);
+    const formatCountResult3 = tmp2(17071).formatCount(codegen.output_tokens);
     const _HermesInternal5 = HermesInternal;
-    obj13.hint = "" + formatCountResult2 + " in \u00B7 " + formatCountResult3 + " out \u00B7 " + tmp2(17070).formatCount(codegen.cache_read_input_tokens) + " cache read";
-    items13[2] = tmp18(tmp2(17073).DebugStatRow, obj13);
+    obj13.hint = "" + formatCountResult2 + " in \u00B7 " + formatCountResult3 + " out \u00B7 " + tmp2(17071).formatCount(codegen.cache_read_input_tokens) + " cache read";
+    items13[2] = tmp18(tmp2(17074).DebugStatRow, obj13);
     const intl41 = tmp2(1119).intl;
-    const tmp2Result55 = tmp2(17070);
+    const tmp2Result55 = tmp2(17071);
     const stringResult2 = intl41.string(tmp20(3682).Tj6b30);
     const usageOrEmptyResult = tmp2(5277).usageOrEmpty(lifetime.compaction);
     const obj15 = { label: stringResult2, value: null, hint: null };
     const intl42 = tmp2(1119).intl;
     const obj16 = { count: null };
     const tmp2Result56 = tmp2(5277);
-    const tmp2Result57 = tmp2(17070);
+    const tmp2Result57 = tmp2(17071);
     obj16.count = tmp2Result57.formatCount(tmp2(5277).runeCount(usageOrEmptyResult));
     obj15.value = intl42.formatToPlainString(tmp20(3682).U98VaN, obj16);
     const tmp2Result58 = tmp2(5277);
-    const formatCountResult4 = tmp2(17070).formatCount(usageOrEmptyResult.input_tokens);
-    const tmp2Result59 = tmp2(17070);
-    const tmp2Result60 = tmp2(17070);
-    const formatCountResult5 = tmp2(17070).formatCount(usageOrEmptyResult.output_tokens);
+    const formatCountResult4 = tmp2(17071).formatCount(usageOrEmptyResult.input_tokens);
+    const tmp2Result59 = tmp2(17071);
+    const tmp2Result60 = tmp2(17071);
+    const formatCountResult5 = tmp2(17071).formatCount(usageOrEmptyResult.output_tokens);
     const _HermesInternal6 = HermesInternal;
-    obj15.hint = "" + formatCountResult4 + " in \u00B7 " + formatCountResult5 + " out \u00B7 " + tmp2(17070).formatCount(usageOrEmptyResult.cache_read_input_tokens) + " cache read";
-    items13[3] = tmp18(tmp2(17073).DebugStatRow, obj15);
+    obj15.hint = "" + formatCountResult4 + " in \u00B7 " + formatCountResult5 + " out \u00B7 " + tmp2(17071).formatCount(usageOrEmptyResult.cache_read_input_tokens) + " cache read";
+    items13[3] = tmp18(tmp2(17074).DebugStatRow, obj15);
     let outcomes;
     if (status != null) {
       const agent4 = status.agent;
@@ -669,17 +669,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           return "" + projectId(dependencyMap[11]).formatCount(tmp2) + " " + tmp;
         });
         obj17.value = mapped.join(" \u00B7 ");
-        tmp18Result9 = tmp18(tmp2(17073).DebugStatRow, obj17);
+        tmp18Result9 = tmp18(tmp2(17074).DebugStatRow, obj17);
       }
     }
     const obj18 = { children: null };
     items13[4] = tmp18Result9;
     obj18.children = items13;
     tmp16Result5 = tmp16(tmp48, obj18);
-    const tmp2Result61 = tmp2(17070);
+    const tmp2Result61 = tmp2(17071);
   }
   obj7.children = tmp16Result5;
-  items12[1] = closure_8(tmp2(17073).DebugSection, obj7);
+  items12[1] = closure_8(tmp2(17074).DebugSection, obj7);
   const obj19 = { title: null, children: null };
   const intl4 = tmp2(1119).intl;
   obj19.title = intl4.string(traceVisible(3682).lo4mY6);
@@ -687,7 +687,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj20 = { children: null };
     const intl5 = tmp2(1119).intl;
     obj20.children = intl5.string(tmp20(3682).uyPveL);
-    let tmp18Result10 = tmp18(tmp2(17073).DebugNote, obj20);
+    let tmp18Result10 = tmp18(tmp2(17074).DebugNote, obj20);
   } else {
     const intl43 = tmp2(1119).intl;
     const total = stateFromStores.total;
@@ -696,17 +696,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj22 = { count: null };
     const stringResult3 = intl43.string(tmp20(3682)["VwF+oY"]);
     const tmp63 = closure_10;
-    const tmp2Result62 = tmp2(17070);
+    const tmp2Result62 = tmp2(17071);
     obj22.count = tmp2Result62.formatCount(tmp2(5277).runeCount(total));
     obj21.value = intl44.formatToPlainString(tmp20(3682).U98VaN, obj22);
     const tmp2Result63 = tmp2(5277);
-    const formatCountResult6 = tmp2(17070).formatCount(total.input_tokens);
-    const tmp2Result64 = tmp2(17070);
-    const tmp2Result65 = tmp2(17070);
-    const formatCountResult7 = tmp2(17070).formatCount(total.output_tokens);
+    const formatCountResult6 = tmp2(17071).formatCount(total.input_tokens);
+    const tmp2Result64 = tmp2(17071);
+    const tmp2Result65 = tmp2(17071);
+    const formatCountResult7 = tmp2(17071).formatCount(total.output_tokens);
     const _HermesInternal7 = HermesInternal;
-    obj21.hint = "" + formatCountResult6 + " in \u00B7 " + formatCountResult7 + " out \u00B7 " + tmp2(17070).formatCount(total.cache_read_input_tokens) + " cache read";
-    const items14 = [tmp18(tmp2(17073).DebugStatRow, obj21), ];
+    obj21.hint = "" + formatCountResult6 + " in \u00B7 " + formatCountResult7 + " out \u00B7 " + tmp2(17071).formatCount(total.cache_read_input_tokens) + " cache read";
+    const items14 = [tmp18(tmp2(17074).DebugStatRow, obj21), ];
     const obj23 = { label: null, value: null };
     const intl45 = tmp2(1119).intl;
     obj23.label = intl45.string(tmp20(3682)["kILb+R"]);
@@ -718,13 +718,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj24 = { children: null };
     const _HermesInternal = HermesInternal;
     obj23.value = "" + Math.round(100 * cache_hit_rate) + "%";
-    items14[1] = tmp18(tmp2(17073).DebugStatRow, obj23);
+    items14[1] = tmp18(tmp2(17074).DebugStatRow, obj23);
     obj24.children = items14;
     tmp18Result10 = tmp16(tmp63, obj24);
-    const tmp2Result66 = tmp2(17070);
+    const tmp2Result66 = tmp2(17071);
   }
   obj19.children = tmp18Result10;
-  items12[2] = closure_8(tmp2(17073).DebugSection, obj19);
+  items12[2] = closure_8(tmp2(17074).DebugSection, obj19);
   const obj25 = { title: null, children: null };
   const intl6 = tmp2(1119).intl;
   obj25.title = intl6.string(traceVisible(3682).mn8279);
@@ -736,26 +736,26 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       obj27.label = intl9.string(tmp20(3682).dKFhCg);
       obj27.used = stateFromStores1.tokensAfter;
       obj27.max = promptCeiling;
-      obj27.formatValue = tmp2(17070).formatCount;
-      const items15 = [tmp18(tmp2(17073).DebugMeter, obj27), ];
+      obj27.formatValue = tmp2(17071).formatCount;
+      const items15 = [tmp18(tmp2(17074).DebugMeter, obj27), ];
       const obj28 = { label: null, value: null, hint: null };
       const intl10 = tmp2(1119).intl;
       obj28.label = intl10.string(tmp20(3682).ntZb8d);
-      const tmp2Result68 = tmp2(17070);
-      const formatCountResult8 = tmp2(17070).formatCount(stateFromStores1.tokensBefore);
+      const tmp2Result68 = tmp2(17071);
+      const formatCountResult8 = tmp2(17071).formatCount(stateFromStores1.tokensBefore);
       const _HermesInternal2 = HermesInternal;
-      obj28.value = "" + formatCountResult8 + " \u2192 " + tmp2(17070).formatCount(stateFromStores1.tokensAfter);
+      obj28.value = "" + formatCountResult8 + " \u2192 " + tmp2(17071).formatCount(stateFromStores1.tokensAfter);
       const intl11 = tmp2(1119).intl;
       const obj29 = { count: null, time: null };
-      const tmp2Result69 = tmp2(17070);
-      obj29.count = tmp2(17070).formatCount(stateFromStores1.retainedMessages);
-      const tmp2Result70 = tmp2(17070);
-      obj29.time = tmp2(17070).formatObservedAt(stateFromStores1.observedAt);
+      const tmp2Result69 = tmp2(17071);
+      obj29.count = tmp2(17071).formatCount(stateFromStores1.retainedMessages);
+      const tmp2Result70 = tmp2(17071);
+      obj29.time = tmp2(17071).formatObservedAt(stateFromStores1.observedAt);
       obj28.hint = intl11.formatToPlainString(tmp20(3682).jA05ru, obj29);
-      items15[1] = tmp18(tmp2(17073).DebugStatRow, obj28);
+      items15[1] = tmp18(tmp2(17074).DebugStatRow, obj28);
       obj26.children = items15;
       let tmp18Result17 = tmp16(closure_10, obj26);
-      const tmp2Result71 = tmp2(17070);
+      const tmp2Result71 = tmp2(17071);
     }
     const items16 = [tmp18Result17, , ];
     let tmp18Result11 = null;
@@ -763,17 +763,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       const obj30 = { label: null, value: null, critical: true, hint: null };
       const intl12 = tmp2(1119).intl;
       obj30.label = intl12.string(tmp20(3682)["se+2ls"]);
-      const tmp2Result72 = tmp2(17070);
-      const formatCountResult9 = tmp2(17070).formatCount(stateFromStores2.projected);
+      const tmp2Result72 = tmp2(17071);
+      const formatCountResult9 = tmp2(17071).formatCount(stateFromStores2.projected);
       const _HermesInternal3 = HermesInternal;
-      obj30.value = "" + formatCountResult9 + " / " + tmp2(17070).formatCount(stateFromStores2.threshold);
+      obj30.value = "" + formatCountResult9 + " / " + tmp2(17071).formatCount(stateFromStores2.threshold);
       const intl13 = tmp2(1119).intl;
       const obj31 = { time: null };
-      const tmp2Result73 = tmp2(17070);
-      obj31.time = tmp2(17070).formatObservedAt(stateFromStores2.observedAt);
+      const tmp2Result73 = tmp2(17071);
+      obj31.time = tmp2(17071).formatObservedAt(stateFromStores2.observedAt);
       obj30.hint = intl13.formatToPlainString(tmp20(3682).KHK44U, obj31);
-      tmp18Result11 = tmp18(tmp2(17073).DebugStatRow, obj30);
-      const tmp2Result74 = tmp2(17070);
+      tmp18Result11 = tmp18(tmp2(17074).DebugStatRow, obj30);
+      const tmp2Result74 = tmp2(17071);
     }
     items16[1] = tmp18Result11;
     const obj32 = { style: tmp.forceCompaction, children: null };
@@ -790,7 +790,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         str9 = "text-feedback-critical";
       }
     }
-    const obj34 = { variant: "text-xs/normal", color: str9, children: tmp2(17071).forceCompactionStatus(stateFromStores3) };
+    const obj34 = { variant: "text-xs/normal", color: str9, children: tmp2(17072).forceCompactionStatus(stateFromStores3) };
     items17[1] = tmp18(tmp2(4754).Text, obj34);
     let pendingTurn;
     if (tmp15 != null) {
@@ -815,7 +815,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     obj32.children = items17;
     items16[2] = tmp16(tmp17, obj32);
     obj25.children = items16;
-    items12[3] = tmp16(tmp2(17073).DebugSection, obj25);
+    items12[3] = tmp16(tmp2(17074).DebugSection, obj25);
     if (traceVisible) {
       items12[4] = null;
       if (null != session) {
@@ -827,38 +827,38 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           const obj39 = { label: null, value: null, hint: null };
           const intl19 = tmp2(1119).intl;
           obj39.label = intl19.string(tmp20(3682)["wt5X/o"]);
-          obj39.value = tmp2(17070).formatObservedAt(session.instance_since);
+          obj39.value = tmp2(17071).formatObservedAt(session.instance_since);
           const intl20 = tmp2(1119).intl;
           obj39.hint = intl20.string(tmp20(3682).QX2UQC);
-          const items19 = [tmp18(tmp2(17073).DebugStatRow, obj39), , , ];
+          const items19 = [tmp18(tmp2(17074).DebugStatRow, obj39), , , ];
           const obj40 = { label: null, value: null };
           const intl21 = tmp2(1119).intl;
           obj40.label = intl21.string(tmp20(3682)["4lgurx"]);
-          const tmp2Result76 = tmp2(17070);
+          const tmp2Result76 = tmp2(17071);
           const tmp42 = closure_10;
-          obj40.value = tmp2(17070).formatCount(session.sockets);
-          items19[1] = tmp18(tmp2(17073).DebugStatRow, obj40);
+          obj40.value = tmp2(17071).formatCount(session.sockets);
+          items19[1] = tmp18(tmp2(17074).DebugStatRow, obj40);
           const obj41 = { label: null, value: null };
           const intl22 = tmp2(1119).intl;
           obj41.label = intl22.string(tmp20(3682)["a/LXBt"]);
           const intl23 = tmp2(1119).intl;
           const tmp20Result = tmp20(3682);
           obj41.value = intl23.string(session.turn_inflight ? tmp20Result["9KlveJ"] : tmp20Result["4tYZVa"]);
-          items19[2] = tmp18(tmp2(17073).DebugStatRow, obj41);
+          items19[2] = tmp18(tmp2(17074).DebugStatRow, obj41);
           let tmp18Result12 = null;
           if (session.queued_messages > 0) {
             const obj42 = { label: null, value: null };
             const intl24 = tmp2(1119).intl;
             obj42.label = intl24.string(tmp20(3682)["/hOBkc"]);
-            obj42.value = tmp2(17070).formatCount(session.queued_messages);
-            tmp18Result12 = tmp18(tmp2(17073).DebugStatRow, obj42);
-            const tmp2Result78 = tmp2(17070);
+            obj42.value = tmp2(17071).formatCount(session.queued_messages);
+            tmp18Result12 = tmp18(tmp2(17074).DebugStatRow, obj42);
+            const tmp2Result78 = tmp2(17071);
           }
           const obj43 = { children: null };
           items19[3] = tmp18Result12;
           obj43.children = items19;
           tmp16Result7 = tmp16(tmp42, obj43);
-          const tmp2Result77 = tmp2(17070);
+          const tmp2Result77 = tmp2(17071);
         }
         const items20 = [tmp16Result7, ];
         let analytics;
@@ -868,11 +868,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         let tmp18Result13 = null;
         if (null != analytics) {
           const obj44 = { analytics: status.analytics };
-          tmp18Result13 = tmp18(tmp2(17084).VibegrationsDebugAgentAnalyticsRows, obj44);
+          tmp18Result13 = tmp18(tmp2(17085).VibegrationsDebugAgentAnalyticsRows, obj44);
         }
         items20[1] = tmp18Result13;
         obj38.children = items20;
-        let tmp16Result8 = tmp16(tmp2(17073).DebugSection, obj38);
+        let tmp16Result8 = tmp16(tmp2(17074).DebugSection, obj38);
       } else {
         let analytics1;
         if (status != null) {
@@ -889,53 +889,53 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const obj46 = { label: null, value: null };
         const intl26 = tmp2(1119).intl;
         obj46.label = intl26.string(tmp20(3682)["5iHZLk"]);
-        obj46.value = tmp2(17070).formatCount(limits.max_iterations);
-        const items21 = [tmp18(tmp2(17073).DebugStatRow, obj46), , , , , , ];
+        obj46.value = tmp2(17071).formatCount(limits.max_iterations);
+        const items21 = [tmp18(tmp2(17074).DebugStatRow, obj46), , , , , , ];
         const obj47 = { label: null, value: null };
         const intl27 = tmp2(1119).intl;
         obj47.label = intl27.string(tmp20(3682).Rb6m3E);
-        const tmp2Result79 = tmp2(17070);
-        obj47.value = tmp2(17070).formatCount(limits.max_subagent_iterations);
-        items21[1] = tmp18(tmp2(17073).DebugStatRow, obj47);
+        const tmp2Result79 = tmp2(17071);
+        obj47.value = tmp2(17071).formatCount(limits.max_subagent_iterations);
+        items21[1] = tmp18(tmp2(17074).DebugStatRow, obj47);
         const obj48 = { label: null, value: null };
         const intl28 = tmp2(1119).intl;
         obj48.label = intl28.string(tmp20(3682).WQ9pMe);
         const intl29 = tmp2(1119).intl;
         const obj49 = { count: null };
-        const tmp2Result80 = tmp2(17070);
-        obj49.count = tmp2(17070).formatCount(limits.context_window_tokens);
+        const tmp2Result80 = tmp2(17071);
+        obj49.count = tmp2(17071).formatCount(limits.context_window_tokens);
         obj48.value = intl29.formatToPlainString(tmp20(3682).U98VaN, obj49);
-        items21[2] = tmp18(tmp2(17073).DebugStatRow, obj48);
+        items21[2] = tmp18(tmp2(17074).DebugStatRow, obj48);
         const obj50 = { label: null, value: null };
         const intl30 = tmp2(1119).intl;
         obj50.label = intl30.string(tmp20(3682).iEAvzu);
         const intl31 = tmp2(1119).intl;
         const obj51 = { count: null };
-        const tmp2Result81 = tmp2(17070);
-        obj51.count = tmp2(17070).formatCount(limits.per_turn_max_output_tokens);
+        const tmp2Result81 = tmp2(17071);
+        obj51.count = tmp2(17071).formatCount(limits.per_turn_max_output_tokens);
         obj50.value = intl31.formatToPlainString(tmp20(3682).U98VaN, obj51);
-        items21[3] = tmp18(tmp2(17073).DebugStatRow, obj50);
+        items21[3] = tmp18(tmp2(17074).DebugStatRow, obj50);
         const obj52 = { label: null, value: null };
         const intl32 = tmp2(1119).intl;
         obj52.label = intl32.string(tmp20(3682)["jbhs+f"]);
-        const tmp2Result82 = tmp2(17070);
-        obj52.value = tmp2(17070).formatCount(limits.max_user_message_chars);
-        items21[4] = tmp18(tmp2(17073).DebugStatRow, obj52);
+        const tmp2Result82 = tmp2(17071);
+        obj52.value = tmp2(17071).formatCount(limits.max_user_message_chars);
+        items21[4] = tmp18(tmp2(17074).DebugStatRow, obj52);
         const obj53 = { label: null, value: null };
         const intl33 = tmp2(1119).intl;
         obj53.label = intl33.string(tmp20(3682).TOQnq4);
-        const tmp2Result83 = tmp2(17070);
-        obj53.value = tmp2(17070).formatCount(limits.max_build_attempts);
-        items21[5] = tmp18(tmp2(17073).DebugStatRow, obj53);
+        const tmp2Result83 = tmp2(17071);
+        obj53.value = tmp2(17071).formatCount(limits.max_build_attempts);
+        items21[5] = tmp18(tmp2(17074).DebugStatRow, obj53);
         const obj54 = { label: null, value: null };
         const intl34 = tmp2(1119).intl;
         obj54.label = intl34.string(tmp20(3682).RIDc6D);
-        const tmp2Result84 = tmp2(17070);
-        obj54.value = tmp2(17070).formatCount(limits.max_session_attempts);
-        items21[6] = tmp18(tmp2(17073).DebugStatRow, obj54);
+        const tmp2Result84 = tmp2(17071);
+        obj54.value = tmp2(17071).formatCount(limits.max_session_attempts);
+        items21[6] = tmp18(tmp2(17074).DebugStatRow, obj54);
         obj45.children = items21;
-        tmp16Result9 = tmp16(tmp2(17073).DebugSection, obj45);
-        const tmp2Result85 = tmp2(17070);
+        tmp16Result9 = tmp16(tmp2(17074).DebugSection, obj45);
+        const tmp2Result85 = tmp2(17071);
       }
       items12[6] = tmp16Result9;
       obj6.children = items12;
@@ -948,16 +948,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const obj56 = { children: null };
         const intl17 = tmp2(1119).intl;
         obj56.children = intl17.string(tmp20(3682).j8NMgl);
-        let tmp18Result14 = tmp18(tmp2(17073).DebugNote, obj56);
+        let tmp18Result14 = tmp18(tmp2(17074).DebugNote, obj56);
       } else {
-        const substr = stateFromStores4.slice(-tmp2(17071).MAX_MODEL_CALL_ROWS);
+        const substr = stateFromStores4.slice(-tmp2(17072).MAX_MODEL_CALL_ROWS);
         const reversed = substr.reverse();
         const items22 = [reversed.map((call) => closure_1_8(closure_1_13, { call }, call.id)), ];
         let tmp18Result15 = null;
-        if (stateFromStores4.length > tmp2(17071).MAX_MODEL_CALL_ROWS) {
+        if (stateFromStores4.length > tmp2(17072).MAX_MODEL_CALL_ROWS) {
           const obj57 = { variant: "text-xs/normal", color: "text-muted", children: null };
           const intl16 = tmp2(1119).intl;
-          const obj58 = { shown: tmp2(17071).MAX_MODEL_CALL_ROWS, total: stateFromStores4.length };
+          const obj58 = { shown: tmp2(17072).MAX_MODEL_CALL_ROWS, total: stateFromStores4.length };
           obj57.children = intl16.formatToPlainString(tmp20(3682)["3hYhpp"], obj58);
           tmp18Result15 = tmp18(tmp2(4754).Text, obj57);
         }
@@ -967,18 +967,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         tmp18Result14 = tmp16(closure_10, obj59);
       }
       obj55.children = tmp18Result14;
-      tmp18(tmp2(17073).DebugSection, obj55);
+      tmp18(tmp2(17074).DebugSection, obj55);
     }
-    const tmp2Result75 = tmp2(17071);
+    const tmp2Result75 = tmp2(17072);
   }
   if (null != promptCeiling) {
     const intl8 = tmp2(1119).intl;
-    const obj60 = { ceiling: tmp2(17070).formatCount(promptCeiling) };
+    const obj60 = { ceiling: tmp2(17071).formatCount(promptCeiling) };
     let formatToPlainStringResult = intl8.formatToPlainString(tmp20(3682).LKGmsP, obj60);
-    const tmp2Result86 = tmp2(17070);
+    const tmp2Result86 = tmp2(17071);
   } else {
     const intl7 = tmp2(1119).intl;
     formatToPlainStringResult = intl7.string(tmp20(3682).gPabB9);
   }
-  tmp18Result17 = tmp18(tmp2(17073).DebugNote, { children: formatToPlainStringResult });
+  tmp18Result17 = tmp18(tmp2(17074).DebugNote, { children: formatToPlainStringResult });
 });

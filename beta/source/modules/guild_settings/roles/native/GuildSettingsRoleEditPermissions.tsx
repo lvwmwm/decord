@@ -1,10 +1,10 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 18072
+// Function ID: 18073
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 2063, 4399, 1376, 1078, 21, 4758, 580, 4404, 38, 4754, 1119, 4725, 18072, 1984, 17301, 18069, 7297, 1245, 1090, 17305, 7446, 5903, 1181, 9826, 2]
+// Dependencies: [32, 19, 17, 2063, 4399, 1376, 1078, 21, 4758, 580, 4404, 38, 4754, 1119, 4725, 18073, 1984, 17302, 18070, 7297, 1245, 1090, 17306, 7446, 5903, 1181, 9826, 2]
 // Exports: default
 
-// Module 18071 (GuildSettingsRoleEditPermissions)
+// Module 18072 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 580 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -82,7 +82,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
       onClick() {
           React5.dismiss();
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(18072, dependencyMap.paths), "role-permission-templates-" + guild.id + "-" + role.id, { permissionsEdited, onPermissionsChanged, guildId: guild.id });
+          obj.openLazy(asyncRequireImpl(18073, dependencyMap.paths), "role-permission-templates-" + guild.id + "-" + role.id, { permissionsEdited, onPermissionsChanged, guildId: guild.id });
         },
       accessibilityRole: "button"
     };
@@ -92,7 +92,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   }
   canResult = PermissionUtilsAll.can({ permission: constants2.ADMINISTRATOR, user: currentUser, context: guild });
   const tmp18Result3 = closure_14(closure_6, { children: tmp18Result });
-  const guildPermissionSpec = role(17301).generateGuildPermissionSpec(guild);
+  const guildPermissionSpec = role(17302).generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
     const merged = Object.assign(permissions);
@@ -105,7 +105,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
   });
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
-  const children = [closure_14(role(18069), { role }), , , ];
+  const children = [closure_14(role(18070), { role }), , , ];
   const obj7 = {
     children: closure_14(guild(7297).SearchField, {
       size: "md",

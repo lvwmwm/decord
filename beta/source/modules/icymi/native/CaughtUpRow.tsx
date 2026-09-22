@@ -1,9 +1,9 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16858
+// Function ID: 16859
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 4497, 4754, 16794, 580, 558, 568, 8627, 16811, 16807, 4617, 4759, 4462, 13307, 1119, 5188, 16833, 676, 5198, 1098, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4497, 4754, 16795, 580, 558, 568, 8627, 16812, 16808, 4617, 4759, 4462, 13307, 1119, 5188, 16834, 676, 5198, 1098, 2]
 
-// Module 16857 (CaughtUpRow)
+// Module 16858 (CaughtUpRow)
 import nativeDefault from "native" /* 580 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
 import timing from "timing" /* 4759 */;
@@ -19,7 +19,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let closure_9 = ReanimatedRexport.createAnimatedComponent(fn(4754).Text);
-const createICYMIStyles = fn(16794);
+const createICYMIStyles = fn(16795);
 let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { container: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 }, textContainer: null, recommendedGuildsContainer: null, iconWrapper: null, icon: null, headerText: null, subtitleText: null, buttonContainer: null, gradient: null };
   const obj2 = { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 };
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
                 const obj6 = sharedValue(8627);
                 c1 = 1;
                 v3 = 1;
-                const obj7 = { value: tmp4(16811).maybeFetchGuildDiscoveryCategories(), done: false };
+                const obj7 = { value: tmp4(16812).maybeFetchGuildDiscoveryCategories(), done: false };
                 return obj7;
               }
             } else if (arg0 === 1) {
@@ -709,7 +709,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
             const obj6 = v1(8627);
             v1 = 1;
             dependencyMap = 1;
-            const obj7 = { value: tmp4(16811).maybeFetchGuildDiscoveryCategories(), done: false };
+            const obj7 = { value: tmp4(16812).maybeFetchGuildDiscoveryCategories(), done: false };
             return obj7;
           }
         } else if (arg0 === 1) {
@@ -899,7 +899,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   obj16.children = items6;
   items5[1] = closure_8(View, obj16);
   obj10.children = items5;
-  const items7 = [closure_8(View, obj10), closure_7(visible(16833).Separator, {}), ];
+  const items7 = [closure_8(View, obj10), closure_7(visible(16834).Separator, {}), ];
   const obj19 = { style: tmp.gradient, start: null, end: null, colors: null, pointerEvents: "none" };
   const obj13 = { size: "custom", style: tmp.icon, color: "background-brand" };
   const obj8 = visible(4462);

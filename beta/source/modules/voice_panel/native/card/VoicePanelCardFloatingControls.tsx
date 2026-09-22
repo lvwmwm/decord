@@ -1,9 +1,9 @@
-// Module ID: 17572
-// Function ID: 17573
+// Module ID: 17573
+// Function ID: 17574
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 4750, 2044, 4780, 4781, 12420, 12418, 12423, 1078, 4779, 21, 4497, 1181, 4758, 580, 558, 568, 12419, 17527, 17573, 10318, 17574, 17500, 1119, 10241, 9918, 9917, 5804, 7176, 5187, 17498, 4900, 4810, 9572, 17468, 17575, 17576, 504, 17558, 17577, 7320, 4471, 17578, 9977, 8948, 5329, 8946, 8944, 9980, 17579, 5173, 7409, 8453, 9929, 4991, 9974, 4754, 10006, 17580, 2]
+// Dependencies: [19, 17, 4750, 2044, 4780, 4781, 12420, 12418, 12423, 1078, 4779, 21, 4497, 1181, 4758, 580, 558, 568, 12419, 17528, 17574, 10318, 17575, 17501, 1119, 10241, 9918, 9917, 5804, 7176, 5187, 17499, 4900, 4810, 9572, 17469, 17576, 17577, 504, 17559, 17578, 7320, 4471, 17579, 9977, 8948, 5329, 8946, 8944, 9980, 17580, 5173, 7409, 8453, 9929, 4991, 9974, 4754, 10006, 17581, 2]
 
-// Module 17572 (VoicePanelCardFloatingControls)
+// Module 17573 (VoicePanelCardFloatingControls)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -16,9 +16,9 @@ import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 894
 import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9572 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9918 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17500 */;
-import _modDef17527 from "module_17527" /* 17527 */;
-import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17558 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17501 */;
+import _modDef17528 from "module_17528" /* 17528 */;
+import getRandomNumberInRangeDefault from "getRandomNumberInRange" /* 17559 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
@@ -26,7 +26,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4497 */;
 
-const useStableParticipant = tmp(17498);
+const useStableParticipant = tmp(17499);
 require = fn;
 function getAccessibilityLabel(tmp4ResultResult, label) {
   if (null != tmp4ResultResult.find((type) => type.type === require("useVoicePanelCardUserStateIcons").VoicePanelCardUserStateIconType.STREAM_ICON)) {
@@ -114,13 +114,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   fn.__workletHash = 3270040588948;
   fn.__initData = __initData;
   const animatedStyle = controlsSpecs(4497).useAnimatedStyle(fn);
-  let tmp4Result = _modDef17527;
+  let tmp4Result = _modDef17528;
   if (voicePlatform === constants2.XBOX) {
-    tmp4Result = tmp4(17573);
+    tmp4Result = tmp4(17574);
   } else if (voicePlatform === tmp7.MOBILE) {
     tmp4Result = tmp4(10318);
   } else if (voicePlatform === tmp7.QUEST) {
-    tmp4Result = tmp4(17574);
+    tmp4Result = tmp4(17575);
   }
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === tmp3.iconWithoutBackground) {
@@ -166,13 +166,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((voicePlatform)
   fn.__workletHash = 15914667672663;
   fn.__initData = __initData2;
   const animatedStyle = controlsSpecs(4497).useAnimatedStyle(fn);
-  let tmp2Result = _modDef17527;
+  let tmp2Result = _modDef17528;
   if (voicePlatform === constants2.XBOX) {
-    tmp2Result = tmp2(17573);
+    tmp2Result = tmp2(17574);
   } else if (voicePlatform === tmp6.MOBILE) {
     tmp2Result = tmp2(10318);
   } else if (voicePlatform === tmp6.QUEST) {
-    tmp2Result = tmp2(17574);
+    tmp2Result = tmp2(17575);
   }
   const obj3 = { source: tmp2Result, style: null };
   const items = [tmp.iconWithoutBackground, animatedStyle];
@@ -196,7 +196,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       tmp48 = cResult[1];
     }
     return tmp48;
-  } else if (tmp(17500).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp(17501).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1119).intl;
@@ -230,7 +230,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     cResult[7] = tmp41;
     cResult[8] = tmp47;
     tmp44 = tmp47;
-  } else if (tmp(17500).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp(17501).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     if (cResult[9] !== icon.videoIconState) {
       if (icon.videoIconState === tmp(9918).VideoIconState.VIDEO_DISABLED_LOCAL_AUTO) {
         const intl3 = tmp(1119).intl;
@@ -271,7 +271,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       cResult[15] = cResult[10];
       cResult[16] = tmp34;
     }
-  } else if (tmp(17500).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp(17501).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     if (cResult[17] === icon.muteDeafenIconState) {
       if (cResult[18] === tmp4.icon) {
         let tmp16 = cResult[19];
@@ -306,7 +306,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     cResult[18] = tmp4.icon;
     cResult[19] = tmp18;
     tmp16 = tmp18;
-  } else if (tmp(17500).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+  } else if (tmp(17501).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     const _Symbol = Symbol;
     if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1119).intl;
@@ -341,14 +341,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
   if (useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     const obj2 = { voicePlatform: icon.voicePlatform };
     return value2(closure_25, obj2);
-  } else if (tmp2(17500).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp2(17501).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     const obj3 = { style: tmp.speakerMuteIcon, hitSlop: 12, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: null, children: null };
     const intl4 = tmp2(1119).intl;
     obj3.accessibilityLabel = intl4.string(tmp2(1119).t.Q8Uzof);
     const obj4 = { style: tmp.iconWithoutBackground };
     obj3.children = value2(tmp2(10241).VoiceXIcon, obj4);
     return value2(Pressable, obj3);
-  } else if (tmp2(17500).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp2(17501).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     if (icon.videoIconState === tmp2(9918).VideoIconState.VIDEO_DISABLED_LOCAL_AUTO) {
       const intl3 = tmp2(1119).intl;
       let stringResult = intl3.string(tmp2(1119).t.uv1tVh);
@@ -368,14 +368,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
       tmp16 = value2(NativeViewDefault, obj7);
     }
     return tmp16;
-  } else if (tmp2(17500).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp2(17501).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj9 = { style: tmp.iconContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     const obj10 = { onPress: icon.onPress, hitSlop: 12, children: null };
     const obj11 = { style: tmp.icon, state: icon.muteDeafenIconState, alwaysWhite: true };
     obj10.children = value2(tmp2(9917).MuteDeafenIcon, obj11);
     obj9.children = value2(Pressable, obj10);
     return value2(NativeViewDefault, obj9);
-  } else if (tmp2(17500).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+  } else if (tmp2(17501).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     const obj = { style: tmp.iconContainer, onPress: icon.onPress, accessibilityRole: "button", accessibilityLabel: null, children: null };
     const intl = tmp2(1119).intl;
     obj.accessibilityLabel = intl.string(tmp2(1119).t.HFwRpk);
@@ -455,18 +455,18 @@ let closure_31 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((part
             }
           }
         }
-        let obj2 = { icon: tmp4(17575), onPress: tmp6, style: tmp5, layout, accessibilityLabel: cResult[5] };
-        const tmp15 = closure_16(tmp4(17468), obj2);
+        let obj2 = { icon: tmp4(17576), onPress: tmp6, style: tmp5, layout, accessibilityLabel: cResult[5] };
+        const tmp15 = closure_16(tmp4(17469), obj2);
         cResult[6] = tmp6;
         cResult[7] = layout;
         cResult[8] = cResult[5];
         cResult[9] = tmp5;
         cResult[10] = tmp15;
         tmp12 = tmp15;
-        const tmp4Result = tmp4(17468);
+        const tmp4Result = tmp4(17469);
       }
     }
-    const result = tmp(17498).isStableActivityParticipant(participant);
+    const result = tmp(17499).isStableActivityParticipant(participant);
     const intl = tmp(1119).intl;
     const string = intl.string;
     let t = tmp(1119).t;
@@ -481,7 +481,7 @@ let closure_31 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((part
     cResult[3] = isSelf;
     cResult[4] = participant;
     cResult[5] = stringResult;
-    let tmpResult = tmp(17498);
+    let tmpResult = tmp(17499);
   }
   const fn = function o() {
     if (obj.isStableStreamParticipant(participant)) {
@@ -536,12 +536,12 @@ let closure_31 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((part
   let obj = { icon: null, onPress: null, style: null, layout: null, accessibilityLabel: null };
   const tmp = closure_30(controlsHidden);
   const tmp3 = closure_16;
-  obj.icon = guildId(17575);
+  obj.icon = guildId(17576);
   obj.onPress = callback;
   obj.style = tmp;
   obj.layout = layout;
-  const tmp4 = guildId(17468);
-  const result = participant(17498).isStableActivityParticipant(participant);
+  const tmp4 = guildId(17469);
+  const result = participant(17499).isStableActivityParticipant(participant);
   const intl = participant(1119).intl;
   const string = intl.string;
   const t = participant(1119).t;
@@ -977,7 +977,7 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   }
   let tmp4 = gameRecord;
   let obj = showGameTag(568);
-  showGameTag = gameRecord(17578).useConfig(first).showGameTag;
+  showGameTag = gameRecord(17579).useConfig(first).showGameTag;
   const first1 = gameRecord(9977)(userId, arg0.guildId, showGameTag)[0];
   let tmp6;
   if (showGameTag) {
@@ -1018,7 +1018,7 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
               }
             }
             const obj6 = { game: gameRecord, userId, textColor };
-            const tmp17 = closure_16(tmp4(17579), obj6);
+            const tmp17 = closure_16(tmp4(17580), obj6);
             cResult[11] = gameRecord;
             cResult[12] = textColor;
             cResult[13] = userId;
@@ -1068,10 +1068,10 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   let gameRecord;
   dependencyMap = undefined;
   noop = undefined;
-  const showGameTag = gameRecord(17578).useConfig({ location: "VoicePanelCardFloatingControls" }).showGameTag;
+  const showGameTag = gameRecord(17579).useConfig({ location: "VoicePanelCardFloatingControls" }).showGameTag;
   const first = gameRecord(9977)(userId, arg0.guildId, showGameTag)[0];
   let tmp5;
-  let obj = gameRecord(17578);
+  let obj = gameRecord(17579);
   if (showGameTag) {
     let application_id;
     if (first != null) {
@@ -1106,7 +1106,7 @@ let closure_50 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
     if (null != gameRecord) {
       if (!tmp8) {
         const obj2 = { game: gameRecord, userId, textColor };
-        let tmp12 = closure_16(tmp(17579), obj2);
+        let tmp12 = closure_16(tmp(17580), obj2);
       }
       return tmp12;
     }

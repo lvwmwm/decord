@@ -1,10 +1,10 @@
-// Module ID: 18108
-// Function ID: 18109
+// Module ID: 18109
+// Function ID: 18110
 // Name: ChannelSetup
-// Dependencies: [19, 17, 21, 8507, 18109, 18110, 18111, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8507, 18110, 18111, 18112, 558, 568, 4610, 2]
 // Exports: getChannelSetupSource
 
-// Module 18108 (ChannelSetup)
+// Module 18109 (ChannelSetup)
 import c from "c" /* 568 */;
 import shared from "shared" /* 4610 */;
 import _mod8507 from "module_8507" /* 8507 */;
@@ -20,13 +20,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_18109");
-        },
-      darker() {
           return require("module_18110");
         },
-      light() {
+      darker() {
           return require("module_18111");
+        },
+      light() {
+          return require("module_18112");
         }
     };
     const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
@@ -42,13 +42,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = shared;
   return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_18109");
-    },
-    darker() {
       return require("module_18110");
     },
-    light() {
+    darker() {
       return require("module_18111");
+    },
+    light() {
+      return require("module_18112");
     }
   });
 });
@@ -57,13 +57,13 @@ ReactCompilerGating = fn(558);
 function getChannelSetupSource(theme) {
   return _mod8507.getIllustrationSource(theme, {
     dark() {
-      return require("module_18109");
-    },
-    darker() {
       return require("module_18110");
     },
-    light() {
+    darker() {
       return require("module_18111");
+    },
+    light() {
+      return require("module_18112");
     }
   });
 }

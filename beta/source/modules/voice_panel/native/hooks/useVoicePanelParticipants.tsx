@@ -1,9 +1,9 @@
-// Module ID: 17581
-// Function ID: 17582
+// Module ID: 17582
+// Function ID: 17583
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 4774, 502, 2045, 4781, 4777, 4782, 12420, 1078, 558, 568, 17470, 504, 16576, 12419, 12422, 2]
+// Dependencies: [32, 19, 4774, 502, 2045, 4781, 4777, 4782, 12420, 1078, 558, 568, 17471, 504, 16576, 12419, 12422, 2]
 
-// Module 17581 (useVoicePanelParticipants)
+// Module 17582 (useVoicePanelParticipants)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;

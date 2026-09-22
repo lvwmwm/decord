@@ -1,9 +1,9 @@
-// Module ID: 17862
-// Function ID: 17863
+// Module ID: 17863
+// Function ID: 17864
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1078, 7785, 21, 4758, 580, 558, 568, 1616, 17863, 1245, 5796, 1119, 2486, 4754, 15148, 5188, 2]
+// Dependencies: [19, 17, 1078, 7785, 21, 4758, 580, 558, 568, 1616, 17864, 1245, 5796, 1119, 2486, 4754, 15148, 5188, 2]
 
-// Module 17862 (ConnectGuardianModal)
+// Module 17863 (ConnectGuardianModal)
 import nativeDefault from "native" /* 580 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
@@ -41,7 +41,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   onComplete = route.route.params.onComplete;
   const tmp4 = closure_9();
   let obj = onComplete(568);
-  const connectGuardianGate = onComplete(17863).useConnectGuardianGate();
+  const connectGuardianGate = onComplete(17864).useConnectGuardianGate();
   dependencyMap = noop.useRef(false);
   if (cResult[0] === connectGuardianGate.state) {
     if (cResult[1] === onComplete) {
@@ -302,7 +302,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
 }) : ((route) => {
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
-  const connectGuardianGate = onComplete(17863).useConnectGuardianGate();
+  const connectGuardianGate = onComplete(17864).useConnectGuardianGate();
   dependencyMap = noop.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
   const effect = noop.useEffect(() => {

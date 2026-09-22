@@ -1,9 +1,9 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17121
+// Function ID: 17122
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 8127, 21, 4758, 580, 558, 568, 17119, 17121, 4497, 12, 1119, 4754, 12486, 17122, 2]
+// Dependencies: [19, 17, 8127, 21, 4758, 580, 558, 568, 17120, 17122, 4497, 12, 1119, 4754, 12486, 17123, 2]
 
-// Module 17120 (MediaGridPlaceholder)
+// Module 17121 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -11,8 +11,8 @@ import util from "util" /* 1119 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 12486 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17119 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17121 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17120 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 17122 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -105,7 +105,7 @@ export const RecentsMediaGridPlaceholder = ReactCompilerGating.isReactCompilerEn
   }
   const obj = size(568);
   tmp4 = closure_5;
-  const placeholderAnimatedStyle = size(17119).usePlaceholderAnimatedStyle(visible);
+  const placeholderAnimatedStyle = size(17120).usePlaceholderAnimatedStyle(visible);
   if (cResult[4] === placeholderAnimatedStyle) {
     if (cResult[5] === row.container) {
       if (cResult[6] === row.recentsContainer) {

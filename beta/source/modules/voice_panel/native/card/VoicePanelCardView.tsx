@@ -1,9 +1,9 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17551
+// Function ID: 17552
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 4774, 12420, 12418, 17485, 12423, 4779, 21, 17551, 558, 4497, 9660, 12419, 4462, 580, 12424, 11293, 5187, 568, 17486, 5801, 5141, 7320, 17581, 504, 12, 4472, 1119, 4471, 2]
+// Dependencies: [32, 19, 17, 4774, 12420, 12418, 17486, 12423, 4779, 21, 17552, 558, 4497, 9660, 12419, 4462, 580, 12424, 11293, 5187, 568, 17487, 5801, 5141, 7320, 17582, 504, 12, 4472, 1119, 4471, 2]
 
-// Module 17550 (VoicePanelCardView)
+// Module 17551 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
@@ -13,7 +13,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import Suspender from "Suspender" /* 5141 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7320 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12424 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 17551 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 17552 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
@@ -32,7 +32,7 @@ get_ActivityIndicator = fn(17);
 const VoicePanelConstants = fn(12420);
 ({ LAYOUT_PHYSICS: closure_8, VoicePanelModes: closure_9, UI_SHOW_HIDE_PHYSICS, VOICE_PANEL_CHUNK_DIVISOR } = VoicePanelConstants);
 const VoicePanelControlsModes = fn(12418).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17485).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17486).VoicePanelPIPModes;
 const EDGE_GUTTER = fn(12423).EDGE_GUTTER;
 const isUserParticipant = fn(4779).isUserParticipant;
 const jsx = fn(21).jsx;
@@ -303,7 +303,7 @@ ReactCompilerGating = fn(558);
 let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = mode(568).c(6);
   const obj = mode(568);
-  mode = mode(17486).usePIPState().mode;
+  mode = mode(17487).usePIPState().mode;
   const ref = noop.useRef(mode === VoicePanelPIPModes.IN_APP);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -350,7 +350,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = fn;
   tmp7 = fn;
 }) : (() => {
-  mode = mode(17486).usePIPState().mode;
+  mode = mode(17487).usePIPState().mode;
   const ref = noop.useRef(mode === VoicePanelPIPModes.IN_APP);
   dependencyMap = _slicedToArray(noop.useState({}), 2)[1];
   const items = [mode];
@@ -370,7 +370,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       ref.current = false;
     }
   }, items);
-  const obj = mode(17486);
+  const obj = mode(17487);
   return mode === VoicePanelPIPModes.IN_APP && ref(5801)(ref);
 });
 ReactCompilerGating = fn(558);
@@ -433,7 +433,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((viewab
   channelId = noop.useContext(stateFromStoresArray(12419)).channelId;
   const obj = channelId(568);
   const tmp4 = closure_23(viewableChunks.viewableChunks);
-  const chunkedParticipants = channelId(17581).useChunkedParticipants(channelId, tmp4);
+  const chunkedParticipants = channelId(17582).useChunkedParticipants(channelId, tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore];
     cResult[0] = items;
@@ -456,7 +456,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((viewab
     tmp8 = cResult[2];
     tmp9 = cResult[3];
   }
-  const obj3 = channelId(17581);
+  const obj3 = channelId(17582);
   stateFromStoresArray = channelId(504).useStateFromStoresArray(first, tmp8, tmp9);
   dependencyMap = obj2.useRef(stateFromStoresArray);
   if (cResult[4] !== stateFromStoresArray) {

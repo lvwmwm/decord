@@ -1,15 +1,15 @@
-// Module ID: 17056
-// Function ID: 17057
+// Module ID: 17057
+// Function ID: 17058
 // Name: VibegrationsQuestPromptCard
-// Dependencies: [5, 32, 19, 17, 7944, 1186, 1078, 21, 4758, 580, 558, 568, 15372, 5666, 7942, 504, 7965, 17057, 4497, 4759, 15380, 10564, 7969, 4469, 10570, 4754, 1119, 3682, 5188, 5824, 2]
+// Dependencies: [5, 32, 19, 17, 7944, 1186, 1078, 21, 4758, 580, 558, 568, 15372, 5666, 7942, 504, 7965, 17058, 4497, 4759, 15380, 10564, 7969, 4469, 10570, 4754, 1119, 3682, 5188, 5824, 2]
 
-// Module 17056 (VibegrationsQuestPromptCard)
+// Module 17057 (VibegrationsQuestPromptCard)
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import timing from "timing" /* 4759 */;
 import QuestTypes from "QuestTypes" /* 5666 */;
-import VibegrationsQuestPrompt from "VibegrationsQuestPrompt" /* 17057 */;
+import VibegrationsQuestPrompt from "VibegrationsQuestPrompt" /* 17058 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -112,14 +112,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (cResult[7] === overridden) {
         }
       }
-      watchableQuest = watchableQuest(17057).watchableQuest;
+      watchableQuest = watchableQuest(17058).watchableQuest;
       const obj3 = { overridden, gatesClosed };
       watchableQuestResult4 = watchableQuest(quest, obj3);
       cResult[6] = gatesClosed;
       cResult[7] = overridden;
       cResult[8] = quest;
       cResult[9] = watchableQuestResult4;
-      const watchableQuestResult3 = watchableQuest(17057);
+      const watchableQuestResult3 = watchableQuest(17058);
     }
     watchableQuestResult2 = watchableQuest(7965);
   }
@@ -158,8 +158,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     watchableQuestResult = null;
     if (tmpResult3.hasWatchVideoOnMobileTasks(quest)) {
       const obj3 = { overridden: tmp7, gatesClosed: tmp8 };
-      watchableQuestResult = tmp(17057).watchableQuest(quest, obj3);
-      const tmpResult4 = tmp(17057);
+      watchableQuestResult = tmp(17058).watchableQuest(quest, obj3);
+      const tmpResult4 = tmp(17058);
     }
     tmpResult3 = tmp(7965);
   }

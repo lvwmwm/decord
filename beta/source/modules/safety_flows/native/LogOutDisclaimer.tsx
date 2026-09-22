@@ -1,9 +1,9 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18333
+// Function ID: 18334
 // Name: LogOutDisclaimer
 // Dependencies: [21, 558, 568, 14459, 4754, 1119, 2780, 6832, 2]
 
-// Module 18332 (LogOutDisclaimer)
+// Module 18333 (LogOutDisclaimer)
 import jsxProd from "jsxProd" /* 21 */;
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;

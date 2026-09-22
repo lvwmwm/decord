@@ -1,9 +1,9 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17075
+// Function ID: 17076
 // Name: VibegrationsTraceTab
-// Dependencies: [32, 19, 17, 9307, 21, 4758, 580, 558, 568, 17075, 17077, 1119, 3682, 17076, 5824, 4754, 1616, 504, 17078, 17079, 4725, 17080, 8479, 11496, 17072, 7297, 16941, 4706, 8995, 2]
+// Dependencies: [32, 19, 17, 9307, 21, 4758, 580, 558, 568, 17076, 17078, 1119, 3682, 17077, 5824, 4754, 1616, 504, 17079, 17080, 4725, 17081, 8479, 11496, 17073, 7297, 16942, 4706, 8995, 2]
 
-// Module 17074 (VibegrationsTraceTab)
+// Module 17075 (VibegrationsTraceTab)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -11,10 +11,10 @@ import _modDef3682 from "module_3682" /* 3682 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import FileManagerUtils from "FileManagerUtils" /* 8479 */;
-import VibegrationsTraceFormat from "VibegrationsTraceFormat" /* 17075 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17076 */;
-import VibegrationsTraceUtils from "VibegrationsTraceUtils" /* 17077 */;
-import VibegrationsTraceDetailSheet from "VibegrationsTraceDetailSheet" /* 17080 */;
+import VibegrationsTraceFormat from "VibegrationsTraceFormat" /* 17076 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17077 */;
+import VibegrationsTraceUtils from "VibegrationsTraceUtils" /* 17078 */;
+import VibegrationsTraceDetailSheet from "VibegrationsTraceDetailSheet" /* 17081 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
@@ -258,7 +258,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
             ({ rowBody, rowTop } = tmp4);
             if (cResult[34] !== entry.status) {
               const obj12 = { status: entry.status };
-              const tmp34 = React5(tmp(17075).TraceStatusDot, obj12);
+              const tmp34 = React5(tmp(17076).TraceStatusDot, obj12);
               cResult[34] = entry.status;
               cResult[35] = tmp34;
               let tmp32 = tmp34;
@@ -266,7 +266,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
               tmp32 = cResult[35];
             }
             const Text = tmp(4754).Text;
-            const categoryLabelResult = tmp(17076).categoryLabel(traceCategoryResult);
+            const categoryLabelResult = tmp(17077).categoryLabel(traceCategoryResult);
             cResult[0] = str2;
             cResult[1] = entry;
             cResult[2] = str;
@@ -293,7 +293,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
             cResult[21] = tmp23;
             cResult[22] = tmp23;
             cResult[23] = tmp24;
-            const tmpResult4 = tmp(17076);
+            const tmpResult4 = tmp(17077);
           }
           const fn = function _() {
             return str(entry);
@@ -314,8 +314,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   if ("model" !== entry.kind) {
     let formatDurationResult = null;
     if (null != entry.durationMs) {
-      formatDurationResult = tmp(17076).formatDuration(entry.durationMs);
-      const tmpResult5 = tmp(17076);
+      formatDurationResult = tmp(17077).formatDuration(entry.durationMs);
+      const tmpResult5 = tmp(17077);
     }
     cResult[24] = entry.durationMs;
     cResult[25] = entry.kind;
@@ -337,9 +337,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   if ("model" === entry.kind) {
     if (null != entry.promptTokens) {
       const intl = tmp2(1119).intl;
-      const obj3 = { tokens: tmp2(17076).formatTokens(entry.promptTokens) };
+      const obj3 = { tokens: tmp2(17077).formatTokens(entry.promptTokens) };
       let formatToPlainStringResult = intl.formatToPlainString(_modDef3682["PYO+Jv"], obj3);
-      const tmp2Result = tmp2(17076);
+      const tmp2Result = tmp2(17077);
     }
     const items = [tmp.rowSlot, ];
     let rowNested = "tool" === entry.kind;
@@ -363,8 +363,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     const obj6 = { style: tmp.rowBody, children: null };
     const obj7 = { style: tmp.rowTop, children: null };
     const obj8 = { status: entry.status };
-    const items1 = [React5(tmp2(17075).TraceStatusDot, obj8), , , ];
-    const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2(17076).categoryLabel(traceCategoryResult) };
+    const items1 = [React5(tmp2(17076).TraceStatusDot, obj8), , , ];
+    const obj9 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: tmp2(17077).categoryLabel(traceCategoryResult) };
     items1[1] = React5(tmp2(4754).Text, obj9);
     const obj10 = { variant: "text-xs/semibold", color: "text-default", style: tmp.rowTitle, lineClamp: 1, children: tmp6 };
     items1[2] = React5(tmp2(4754).Text, obj10);
@@ -398,8 +398,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
   formatToPlainStringResult = null;
   if (null != entry.durationMs) {
-    formatToPlainStringResult = tmp2(17076).formatDuration(entry.durationMs);
-    const tmp2Result4 = tmp2(17076);
+    formatToPlainStringResult = tmp2(17077).formatDuration(entry.durationMs);
+    const tmp2Result4 = tmp2(17077);
   }
 });
 ReactCompilerGating = fn(558);
@@ -517,9 +517,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
           items1[3] = React5(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: intl2.formatToPlainString(_modDef3682.w8vPbe, { count: num4 }) });
           let tmp6Result = null;
           if (0 !== num) {
-            const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17076).formatDuration(num) };
+            const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17077).formatDuration(num) };
             tmp6Result = tmp6(tmp7(4754).Text, obj7);
-            const tmp7Result = tmp7(17076);
+            const tmp7Result = tmp7(17077);
           }
           items1[4] = tmp6Result;
           obj.children = items1;
@@ -567,7 +567,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
   let reduced;
   let tmp = closure_9();
   closure_1 = tmp;
-  dependencyMap = entries(17075).useTraceCategoryFillStyles();
+  dependencyMap = entries(17076).useTraceCategoryFillStyles();
   let items = [entries];
   const memo = reduced.useMemo(() => VibegrationsTraceUtils.traceCategoryTotals(entries), items);
   reduced = memo.reduce((acc, ms) => acc + ms.ms, 0);
@@ -592,7 +592,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
   obj3.children = mapped;
   let items1 = [closure_7(View, obj3), ];
   let obj4 = { style: tmp.legend, children: null };
-  const TRACE_CATEGORIES = entries(17077).TRACE_CATEGORIES;
+  const TRACE_CATEGORIES = entries(17078).TRACE_CATEGORIES;
   obj4.children = TRACE_CATEGORIES.map((item) => {
     closure_0 = item;
     const found = memo.find((category) => category.category === closure_0);
@@ -632,9 +632,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((entries) => {
     items1[3] = React5(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: intl2.formatToPlainString(_modDef3682.w8vPbe, { count: num4 }) });
     let tmp6Result = null;
     if (0 !== num) {
-      const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17076).formatDuration(num) };
+      const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: tmp7(17077).formatDuration(num) };
       tmp6Result = tmp6(tmp7(4754).Text, obj7);
-      const tmp7Result = tmp7(17076);
+      const tmp7Result = tmp7(17077);
     }
     items1[4] = tmp6Result;
     obj.children = items1;
@@ -781,12 +781,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           item = projectId.item;
           if ("entry" === item.kind) {
             tmp6 = jsx;
-            tmp7 = f75075;
+            tmp7 = f75078;
             obj1 = { entry: null, onPress: null };
             obj1.entry = item.entry;
             tmp8 = closure_5;
             obj1.onPress = closure_5;
-            tmp9Result = jsx(f75075, obj1);
+            tmp9Result = jsx(f75078, obj1);
           } else {
             obj7 = { style: null, children: null };
             tmp11 = closure_1;
@@ -931,12 +931,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           item = projectId.item;
           if ("entry" === item.kind) {
             tmp6 = jsx;
-            tmp7 = f75075;
+            tmp7 = f75078;
             obj1 = { entry: null, onPress: null };
             obj1.entry = item.entry;
             tmp8 = closure_5;
             obj1.onPress = closure_5;
-            tmp9Result = jsx(f75075, obj1);
+            tmp9Result = jsx(f75078, obj1);
           } else {
             obj7 = { style: null, children: null };
             tmp11 = closure_1;
@@ -982,12 +982,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         item = projectId.item;
         if ("entry" === item.kind) {
           tmp6 = jsx;
-          tmp7 = f75075;
+          tmp7 = f75078;
           obj1 = { entry: null, onPress: null };
           obj1.entry = item.entry;
           tmp8 = closure_5;
           obj1.onPress = closure_5;
-          tmp9Result = jsx(f75075, obj1);
+          tmp9Result = jsx(f75078, obj1);
         } else {
           obj7 = { style: null, children: null };
           tmp11 = closure_1;
@@ -1045,7 +1045,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       const intl = tmp(1119).intl;
       const obj3 = { number: index + 1 };
       obj2.label = intl.formatToPlainString(_modDef3682["Y/j+TD"], obj3);
-      obj2.started = tmp(17079).formatClockTime(turnId.startedAt);
+      obj2.started = tmp(17080).formatClockTime(turnId.startedAt);
       obj2.spanMs = turnId.spanMs;
       items4.push(obj2);
       for (const item10041 of filterTraceResult) {
@@ -1053,7 +1053,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         let arr3 = items4.push(obj4);
         continue;
       }
-      const tmpResult = tmp(17079);
+      const tmpResult = tmp(17080);
     }
   });
   cResult[11] = stateFromStoresArray;
@@ -1095,7 +1095,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const intl = tmp(1119).intl;
         const obj3 = { number: index + 1 };
         obj2.label = intl.formatToPlainString(_modDef3682["Y/j+TD"], obj3);
-        obj2.started = tmp(17079).formatClockTime(turnId.startedAt);
+        obj2.started = tmp(17080).formatClockTime(turnId.startedAt);
         obj2.spanMs = turnId.spanMs;
         items.push(obj2);
         for (const item10041 of filterTraceResult) {
@@ -1103,7 +1103,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           let arr3 = items.push(obj4);
           continue;
         }
-        const tmpResult = tmp(17079);
+        const tmpResult = tmp(17080);
       }
     });
     return items;
@@ -1131,9 +1131,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       items[1] = tmp2;
       let tmp3 = null;
       if (null != item.spanMs) {
-        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13(17076).formatDuration(item.spanMs) };
+        const obj5 = { variant: "text-xs/normal", color: "text-subtle", children: tmp13(17077).formatDuration(item.spanMs) };
         tmp3 = React5(tmp13(4754).Text, obj5);
-        const tmp13Result = tmp13(17076);
+        const tmp13Result = tmp13(17077);
       }
       items[2] = tmp3;
       obj3.children = items;

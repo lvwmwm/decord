@@ -1,9 +1,9 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 17415
+// Function ID: 17416
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1080, 7398, 2042, 21, 4758, 580, 558, 568, 1482, 6863, 1616, 4497, 17415, 4754, 7788, 7429, 17416, 1119, 5907, 5188, 7397, 2]
+// Dependencies: [19, 17, 1080, 7398, 2042, 21, 4758, 580, 558, 568, 1482, 6863, 1616, 4497, 17416, 4754, 7788, 7429, 17417, 1119, 5907, 5188, 7397, 2]
 
-// Module 17414 (CollectiblesMobileAnnouncementActionSheet)
+// Module 17415 (CollectiblesMobileAnnouncementActionSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 4754 */;
 import BottomSheetModal from "BottomSheetModal" /* 6863 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7788 */;
-import _modDef17415 from "module_17415" /* 17415 */;
 import _modDef17416 from "module_17416" /* 17416 */;
+import _modDef17417 from "module_17417" /* 17417 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj4 = { uri: tmp4(17415) };
+              const obj4 = { uri: tmp4(17416) };
               cResult[13] = obj4;
               let tmp15 = obj4;
             } else {
@@ -181,7 +181,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items1[1] = rect;
   obj4.style = items1;
   const obj5 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-  obj5.source = { uri: _modDef17415 };
+  obj5.source = { uri: _modDef17416 };
   obj5.style = tmp.mascotImage;
   obj4.children = options(React4, obj5);
   obj3.children = options(hasOwnProperty, obj4);
@@ -342,7 +342,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
         return;
       }
     }
-    tmp17[0] = _modDef17416;
+    tmp17[0] = _modDef17417;
     cResult[10] = tmp17;
     const tmp16 = tmp17;
   } else {
@@ -603,7 +603,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed)
   const memo = noop.useMemo(() => closure_1_9(closure_1_15, {}), []);
   let obj = { onDismiss: callback1, backdropChildren: memo, children: null };
   const obj2 = { style: tmp.container, children: null };
-  const obj3 = { source: { uri: _modDef17416 }, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+  const obj3 = { source: { uri: _modDef17417 }, style: tmp.framePreviewImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const items3 = [closure_9(closure_4, obj3), , , ];
   const obj5 = { variant: "heading-xl/bold", color: "text-strong", accessibilityRole: "header", style: tmp.headerText, children: null };
   const intl = markAsDismissed(1119).intl;

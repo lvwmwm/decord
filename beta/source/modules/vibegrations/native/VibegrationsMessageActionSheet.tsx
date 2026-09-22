@@ -1,10 +1,10 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 17030
+// Function ID: 17031
 // Name: VibegrationsMessageActionSheet
 // Dependencies: [19, 21, 8453, 4725, 558, 568, 7436, 4458, 1119, 4704, 7445, 11954, 7449, 2]
 // Exports: openMessageAuthorProfile, showVibegrationsMessageActions
 
-// Module 17029 (VibegrationsMessageActionSheet)
+// Module 17030 (VibegrationsMessageActionSheet)
 import util from "util" /* 1119 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import CopyIcon from "CopyIcon" /* 4704 */;

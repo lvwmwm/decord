@@ -1,9 +1,9 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17237
+// Function ID: 17238
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7899, 4409, 1376, 12846, 1078, 12825, 21, 4758, 580, 12823, 8654, 4457, 1119, 8006, 558, 568, 12827, 1368, 7409, 7429, 7296, 17237, 1245, 5203, 8453, 12, 4603, 565, 16385, 7415, 5822, 4459, 5310, 17238, 17239, 17241, 5343, 10090, 5796, 11168, 17242, 2]
+// Dependencies: [32, 5, 19, 17, 7899, 4409, 1376, 12846, 1078, 12825, 21, 4758, 580, 12823, 8654, 4457, 1119, 8006, 558, 568, 12827, 1368, 7409, 7429, 7296, 17238, 1245, 5203, 8453, 12, 4603, 565, 16385, 7415, 5822, 4459, 5310, 17239, 17240, 17242, 5343, 10090, 5796, 11168, 17243, 2]
 
-// Module 17236 (AddFriendsScreen)
+// Module 17237 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -12,8 +12,8 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 84
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8654 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12823 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 12827 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 17239 */;
-import ContactSuggestionRow from "ContactSuggestionRow" /* 17241 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 17240 */;
+import ContactSuggestionRow from "ContactSuggestionRow" /* 17242 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

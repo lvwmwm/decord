@@ -1,10 +1,10 @@
-// Module ID: 18007
-// Function ID: 18008
+// Module ID: 18008
+// Function ID: 18009
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 17, 21, 8507, 18008, 18009, 18010, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8507, 18009, 18010, 18011, 558, 568, 4610, 2]
 // Exports: getEmptyServerSettingsEmojiSource
 
-// Module 18007 (EmptyServerSettingsEmoji)
+// Module 18008 (EmptyServerSettingsEmoji)
 import c from "c" /* 568 */;
 import shared from "shared" /* 4610 */;
 import _mod8507 from "module_8507" /* 8507 */;
@@ -20,13 +20,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_18008");
-        },
-      darker() {
           return require("module_18009");
         },
-      light() {
+      darker() {
           return require("module_18010");
+        },
+      light() {
+          return require("module_18011");
         }
     };
     const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
@@ -42,13 +42,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = shared;
   return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_18008");
-    },
-    darker() {
       return require("module_18009");
     },
-    light() {
+    darker() {
       return require("module_18010");
+    },
+    light() {
+      return require("module_18011");
     }
   });
 });
@@ -57,13 +57,13 @@ ReactCompilerGating = fn(558);
 function getEmptyServerSettingsEmojiSource(theme) {
   return _mod8507.getIllustrationSource(theme, {
     dark() {
-      return require("module_18008");
-    },
-    darker() {
       return require("module_18009");
     },
-    light() {
+    darker() {
       return require("module_18010");
+    },
+    light() {
+      return require("module_18011");
     }
   });
 }

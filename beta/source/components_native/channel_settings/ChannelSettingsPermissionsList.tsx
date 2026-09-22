@@ -1,9 +1,9 @@
-// Module ID: 17299
-// Function ID: 17300
+// Module ID: 17300
+// Function ID: 17301
 // Name: ChannelSettingsPermissionsList
 // Dependencies: [32, 19, 17, 2045, 2109, 2103, 1376, 1078, 21, 4758, 580, 558, 568, 504, 5736, 1488, 1616, 7296, 4771, 4404, 5822, 10647, 1982, 11248, 7297, 1119, 7302, 1181, 8506, 2]
 
-// Module 17299 (ChannelSettingsPermissionsList)
+// Module 17300 (ChannelSettingsPermissionsList)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

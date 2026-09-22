@@ -1,10 +1,10 @@
-// Module ID: 16974
-// Function ID: 16975
+// Module ID: 16975
+// Function ID: 16976
 // Name: getFrameSurfaceQueryParams
 // Dependencies: [9312, 2]
 // Exports: default
 
-// Module 16974 (getFrameSurfaceQueryParams)
+// Module 16975 (getFrameSurfaceQueryParams)
 import FramesConstants from "FramesConstants" /* 9312 */;
 import size from "module_2" /* 2 */;
 

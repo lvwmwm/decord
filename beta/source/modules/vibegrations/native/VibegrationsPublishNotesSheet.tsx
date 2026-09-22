@@ -1,10 +1,10 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 16991
+// Function ID: 16992
 // Name: VibegrationsPublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 2100, 2067, 4409, 1376, 1078, 4751, 21, 4758, 580, 7224, 504, 5276, 9416, 16991, 4725, 12610, 1119, 3682, 1105, 7923, 7703, 7449, 7396, 4754, 7332, 4911, 5188, 2]
+// Dependencies: [5, 32, 19, 17, 2100, 2067, 4409, 1376, 1078, 4751, 21, 4758, 580, 7224, 504, 5276, 9416, 16992, 4725, 12610, 1119, 3682, 1105, 7923, 7703, 7449, 7396, 4754, 7332, 4911, 5188, 2]
 // Exports: default
 
-// Module 16990 (VibegrationsPublishNotesSheet)
+// Module 16991 (VibegrationsPublishNotesSheet)
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
 import util from "util" /* 1119 */;
@@ -12,7 +12,7 @@ import _modDef3682 from "module_3682" /* 3682 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
 import VibegrationsUtils from "VibegrationsUtils" /* 5276 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12610 */;
-import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16991 */;
+import VibegrationsPatchNotesChannel from "VibegrationsPatchNotesChannel" /* 16992 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -292,10 +292,10 @@ export default function VibegrationsPublishNotesSheet(guildId) {
               ok = closure_128_0.ok;
             }
             if (false !== ok) {
-              const result = guildId(16991).rememberPatchNotesChannel(closure_129_0, closure_129_17.id);
+              const result = guildId(16992).rememberPatchNotesChannel(closure_129_0, closure_129_17.id);
               closure_129_20();
               dependencyMap = 0;
-              const obj = guildId(16991);
+              const obj = guildId(16992);
             }
           }
           const _Error = Error;

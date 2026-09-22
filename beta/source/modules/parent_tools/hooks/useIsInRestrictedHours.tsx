@@ -1,12 +1,12 @@
-// Module ID: 17718
-// Function ID: 17719
+// Module ID: 17719
+// Function ID: 17720
 // Name: useIsInRestrictedHours
-// Dependencies: [1376, 7784, 558, 568, 504, 17719, 2]
+// Dependencies: [1376, 7784, 558, 568, 504, 17720, 2]
 
-// Module 17718 (useIsInRestrictedHours)
+// Module 17719 (useIsInRestrictedHours)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import RestrictedHoursManager from "RestrictedHoursManager" /* 17719 */;
+import RestrictedHoursManager from "RestrictedHoursManager" /* 17720 */;
 import UserStore from "UserStore" /* 1376 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7784 */;
 

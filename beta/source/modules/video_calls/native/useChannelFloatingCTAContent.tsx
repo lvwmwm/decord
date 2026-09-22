@@ -1,9 +1,9 @@
-// Module ID: 17504
-// Function ID: 17505
+// Module ID: 17505
+// Function ID: 17506
 // Name: useChannelFloatingCTAContent
 // Dependencies: [19, 1996, 4781, 558, 568, 565, 10019, 2031, 2]
 
-// Module 17504 (useChannelFloatingCTAContent)
+// Module 17505 (useChannelFloatingCTAContent)
 import dismissible_content from "dismissible_content" /* 2031 */;
 import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10019 */;
 import noop from "module_19" /* 19 */;

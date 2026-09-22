@@ -1,12 +1,12 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17944
+// Function ID: 17945
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 11993, 1078, 1247, 17944, 1252, 11998, 4659, 4383, 558, 568, 2]
+// Dependencies: [32, 5, 19, 11993, 1078, 1247, 17945, 1252, 11998, 4659, 4383, 558, 568, 2]
 // Exports: getRuleCountByTriggerType, useSyncAutomodRules
 
-// Module 17943 (AutomodStore)
+// Module 17944 (AutomodStore)
 import _mod4383 from "module_4383" /* 4383 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 17944 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 17945 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

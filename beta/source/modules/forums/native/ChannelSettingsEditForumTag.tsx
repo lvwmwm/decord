@@ -1,9 +1,9 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 17327
+// Function ID: 17328
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [32, 19, 17, 5678, 2045, 1379, 21, 4758, 580, 558, 568, 1488, 504, 4754, 1119, 8147, 7621, 10436, 5111, 7377, 1401, 9035, 5341, 1181, 6851, 5903, 5822, 7446, 5186, 2]
 
-// Module 17326 (ChannelSettingsEditForumTag)
+// Module 17327 (ChannelSettingsEditForumTag)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5111 */;

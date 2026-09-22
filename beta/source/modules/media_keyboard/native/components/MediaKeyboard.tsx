@@ -1,9 +1,9 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 16982
+// Function ID: 16983
 // Name: MediaKeyboard
-// Dependencies: [19, 5107, 5106, 1612, 1078, 1487, 12166, 21, 558, 568, 1245, 4497, 4627, 1614, 16982, 4462, 580, 9596, 16983, 12298, 10931, 5356, 4625, 5346, 1368, 5345, 10929, 12343, 1119, 5280, 5293, 10934, 10936, 5307, 10938, 16984, 16985, 10940, 10941, 16986, 2]
+// Dependencies: [19, 5107, 5106, 1612, 1078, 1487, 12166, 21, 558, 568, 1245, 4497, 4627, 1614, 16983, 4462, 580, 9596, 16984, 12298, 10931, 5356, 4625, 5346, 1368, 5345, 10929, 12343, 1119, 5280, 5293, 10934, 10936, 5307, 10938, 16985, 16986, 10940, 10941, 16987, 2]
 
-// Module 16981 (MediaKeyboard)
+// Module 16982 (MediaKeyboard)
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import KeyboardTypes from "KeyboardTypes" /* 1614 */;
@@ -19,8 +19,8 @@ import AttachmentIcon from "AttachmentIcon" /* 10936 */;
 import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10938 */;
 import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10940 */;
 import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12343 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 16984 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 16985 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 16985 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 16986 */;
 import noop from "module_19" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 5106 */;
 

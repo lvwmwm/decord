@@ -1,9 +1,9 @@
-// Module ID: 17111
-// Function ID: 17112
+// Module ID: 17112
+// Function ID: 17113
 // Name: pages/ErrorScreen
 // Dependencies: [19, 17, 21, 4758, 558, 568, 7224, 4472, 4754, 2]
 
-// Module 17111 (pages/ErrorScreen)
+// Module 17112 (pages/ErrorScreen)
 import c from "c" /* 568 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
 import Text_Text from "Text/Text" /* 4754 */;

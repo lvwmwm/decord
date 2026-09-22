@@ -1,10 +1,10 @@
-// Module ID: 16992
-// Function ID: 16993
+// Module ID: 16993
+// Function ID: 16994
 // Name: VibegrationsSettingsSheet
 // Dependencies: [5, 32, 19, 17, 2100, 2067, 4409, 1376, 13365, 13364, 9307, 21, 4758, 580, 7224, 504, 1119, 3682, 9868, 13186, 4725, 5901, 5900, 5903, 5819, 6846, 4754, 5188, 7449, 7396, 9869, 558, 568, 5276, 5822, 5831, 4911, 12610, 2]
 // Exports: default
 
-// Module 16992 (VibegrationsSettingsSheet)
+// Module 16993 (VibegrationsSettingsSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;

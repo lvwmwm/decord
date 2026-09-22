@@ -1,9 +1,9 @@
-// Module ID: 17753
-// Function ID: 17754
+// Module ID: 17754
+// Function ID: 17755
 // Name: ChannelCallManager
 // Dependencies: [10138, 5497, 2045, 12948, 2099, 4604, 4777, 4782, 4774, 10137, 7365, 2]
 
-// Module 17753 (ChannelCallManager)
+// Module 17754 (ChannelCallManager)
 import SoundpackStore from "SoundpackStore" /* 10138 */;
 import CallStore from "CallStore" /* 5497 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

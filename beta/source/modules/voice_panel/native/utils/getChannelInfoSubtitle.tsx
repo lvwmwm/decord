@@ -1,10 +1,10 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17532
+// Function ID: 17533
 // Name: getChannelInfoSubtitle
 // Dependencies: [4910, 1119, 2]
 // Exports: default
 
-// Module 17531 (getChannelInfoSubtitle)
+// Module 17532 (getChannelInfoSubtitle)
 import util from "util" /* 1119 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 4910 */;
 import size from "module_2" /* 2 */;

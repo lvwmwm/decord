@@ -1,13 +1,13 @@
-// Module ID: 17929
-// Function ID: 17930
+// Module ID: 17930
+// Function ID: 17931
 // Name: ModerationIcon
-// Dependencies: [109, 19, 21, 558, 568, 580, 17930, 4461, 2]
+// Dependencies: [109, 19, 21, 558, 568, 580, 17931, 4461, 2]
 
-// Module 17929 (ModerationIcon)
+// Module 17930 (ModerationIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import BaseIconImage from "BaseIconImage" /* 4461 */;
-import _mod17930 from "module_17930" /* 17930 */;
+import _mod17931 from "module_17931" /* 17931 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -39,7 +39,7 @@ export const ModerationIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(17930);
+    const tmpResult = tmp(17931);
     cResult[4] = tmpResult;
     let tmp10 = tmpResult;
   } else {
@@ -67,5 +67,5 @@ export const ModerationIcon = ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17930, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17931, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 });

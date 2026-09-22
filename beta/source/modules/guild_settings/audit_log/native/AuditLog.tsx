@@ -1,9 +1,9 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 17994
+// Function ID: 17995
 // Name: AuditLog
-// Dependencies: [19, 17, 1186, 1390, 4409, 1376, 1078, 21, 4758, 580, 1404, 1401, 5502, 4610, 558, 568, 7415, 4754, 1368, 4471, 17981, 1119, 4603, 1181, 2059, 4911, 4903, 4352, 1374, 1096, 10923, 7377, 5824, 17985, 5341, 4725, 8453, 14867, 504, 2]
+// Dependencies: [19, 17, 1186, 1390, 4409, 1376, 1078, 21, 4758, 580, 1404, 1401, 5502, 4610, 558, 568, 7415, 4754, 1368, 4471, 17982, 1119, 4603, 1181, 2059, 4911, 4903, 4352, 1374, 1096, 10923, 7377, 5824, 17986, 5341, 4725, 8453, 14867, 504, 2]
 
-// Module 17993 (AuditLog)
+// Module 17994 (AuditLog)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -18,7 +18,7 @@ import EmojiDefault from "Emoji" /* 7377 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7415 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
 import AppliedForumTag from "AppliedForumTag" /* 10923 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 17981 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 17982 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
 import UserRecord from "UserRecord" /* 1390 */;
@@ -576,7 +576,7 @@ prototype["render"] = function render() {
   obj4.border = str3;
   obj4.onPress = onHeaderClick;
   const obj5 = { style: tmp.rowContainer, children: null };
-  const items2 = [closure_14(user(17985), { action: log.action }), , , ];
+  const items2 = [closure_14(user(17986), { action: log.action }), , , ];
   const obj7 = { accessibilityRole: "button", accessibilityLabel: null, accessibilityHint: null, onPress: null, children: null };
   const intl = tmp10(1119).intl;
   obj7.accessibilityLabel = intl.string(tmp10(1119).t.iXAna6);

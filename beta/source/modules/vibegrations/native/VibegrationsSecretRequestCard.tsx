@@ -1,13 +1,13 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17047
+// Function ID: 17048
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4725, 17047, 4754, 1119, 3682, 5188, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4725, 17048, 4754, 1119, 3682, 5188, 2]
 
-// Module 17046 (VibegrationsSecretRequestCard)
+// Module 17047 (VibegrationsSecretRequestCard)
 import nativeDefault from "native" /* 580 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4725 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 17047 */;
+import VibegrationsSecretsSheet from "VibegrationsSecretsSheet" /* 17048 */;
 import noop from "module_19" /* 19 */;
 
 const VibegrationsSecretsSheetDefault = VibegrationsSecretsSheet;

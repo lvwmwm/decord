@@ -1,10 +1,10 @@
-// Module ID: 18346
-// Function ID: 18347
+// Module ID: 18347
+// Function ID: 18348
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4758, 580, 1488, 18327, 18331, 4754, 1119, 5186, 5188, 6832, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4758, 580, 1488, 18328, 18332, 4754, 1119, 5186, 5188, 6832, 2]
 // Exports: default
 
-// Module 18346 (ErrorScreen)
+// Module 18347 (ErrorScreen)
 import nativeDefault from "native" /* 580 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;

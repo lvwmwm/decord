@@ -1,9 +1,9 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17462
+// Function ID: 17463
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1078, 21, 4758, 5743, 580, 558, 568, 1119, 1181, 4725, 4617, 5341, 4754, 17462, 7224, 6863, 2]
+// Dependencies: [19, 1078, 21, 4758, 5743, 580, 558, 568, 1119, 1181, 4725, 4617, 5341, 4754, 17463, 7224, 6863, 2]
 
-// Module 17461 (ActivityInviteSheetList)
+// Module 17462 (ActivityInviteSheetList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -12,7 +12,7 @@ import RootNavigationRef from "RootNavigationRef" /* 4617 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import Pressables from "Pressables" /* 5341 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17462 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17463 */;
 import noop from "module_19" /* 19 */;
 import TextStyles_mod from "TextStyles" /* 5743 */;
 

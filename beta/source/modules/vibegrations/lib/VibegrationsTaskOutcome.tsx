@@ -1,13 +1,13 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17040
+// Function ID: 17041
 // Name: VibegrationsTaskOutcome
-// Dependencies: [1119, 3682, 17038, 2]
+// Dependencies: [1119, 3682, 17039, 2]
 // Exports: describeTaskOutcome, taskTitle
 
-// Module 17039 (VibegrationsTaskOutcome)
+// Module 17040 (VibegrationsTaskOutcome)
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
-import VibegrationsDuration from "VibegrationsDuration" /* 17038 */;
+import VibegrationsDuration from "VibegrationsDuration" /* 17039 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTaskOutcome.tsx");

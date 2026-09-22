@@ -1,19 +1,17 @@
 // Module ID: 18121
 // Function ID: 18122
-// Dependencies: [4880, 18122, 18126]
+// Dependencies: [18122, 18130]
 
 // Module 18121
-import arrayReduce from "arrayReduce" /* 4880 */;
-import words from "words" /* 18122 */;
-import deburr from "deburr" /* 18126 */;
+import _mod18122 from "module_18122" /* 18122 */;
+import capitalize from "capitalize" /* 18130 */;
 
-let closure_2 = RegExp("['\u2019]", "g");
 
-export default function createCompounder(arg0) {
-  closure_0 = arg0;
-  return (arg0) => {
-    const tmp = arrayReduce;
-    const tmp2 = words;
-    return tmp(tmp2(deburr(arg0).replace(closure_2, "")), closure_0, "");
-  };
-};
+export default _mod18122((arg0, str, arg2) => {
+  const formatted = str.toLowerCase();
+  let tmp2 = formatted;
+  if (arg2) {
+    tmp2 = capitalize(formatted);
+  }
+  return arg0 + tmp2;
+});

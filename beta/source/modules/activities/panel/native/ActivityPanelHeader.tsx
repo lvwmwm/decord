@@ -1,20 +1,20 @@
-// Module ID: 17457
-// Function ID: 17458
+// Module ID: 17458
+// Function ID: 17459
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 2044, 9313, 1089, 21, 4758, 580, 558, 568, 1616, 4497, 17454, 17458, 4471, 6891, 504, 7415, 17459, 17463, 17464, 17469, 17448, 2]
+// Dependencies: [32, 19, 17, 2044, 9313, 1089, 21, 4758, 580, 558, 568, 1616, 4497, 17455, 17459, 4471, 6891, 504, 7415, 17460, 17464, 17465, 17470, 17449, 2]
 
-// Module 17457 (ActivityPanelHeader)
+// Module 17458 (ActivityPanelHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7415 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17448 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 17458 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 17459 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17463 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 17469 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17449 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 17459 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 17460 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17464 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 17470 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
@@ -128,7 +128,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
               }
             }
-            const obj4 = { mode: tmp(17454).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
+            const obj4 = { mode: tmp(17455).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: tmp11, disableHorizontalSafeAreas: true };
             cResult[15] = tmp11;
             cResult[16] = pipState;
             cResult[17] = wrapperOffset;
@@ -212,8 +212,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items2 = [setMode];
   const obj2 = { gesture: null, headerWrapperStyles: null, headerStyles: null, styles: null };
   const callback = noop.useCallback(fn, items2);
-  const obj3 = { mode: landscape(17454).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
-  obj2.gesture = setMode(17454)(obj3);
+  const obj3 = { mode: landscape(17455).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  obj2.gesture = setMode(17455)(obj3);
   obj2.headerWrapperStyles = memo;
   obj2.headerStyles = memo1;
   obj2.styles = tmp;
@@ -370,7 +370,7 @@ let closure_20 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
         }
         if (cResult[10] !== id) {
           const obj2 = { applicationId: id };
-          const tmp24 = __initData(tmp16(17459), obj2);
+          const tmp24 = __initData(tmp16(17460), obj2);
           cResult[10] = id;
           cResult[11] = tmp24;
           let tmp22 = tmp24;
@@ -401,7 +401,7 @@ let closure_20 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
               let tmp34 = null != applicationId;
               if (tmp34) {
                 const obj3 = { applicationId };
-                tmp34 = __initData(tmp16(17464), obj3);
+                tmp34 = __initData(tmp16(17465), obj3);
               }
               cResult[18] = applicationId;
               cResult[19] = tmp34;
@@ -461,7 +461,7 @@ let closure_20 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
                     tmp46 = tmp49;
                   }
                   const obj5 = { selfEmbeddedActivity: stateFromStores, setMode };
-                  const tmp45 = __initData(tmp16(17469), obj5);
+                  const tmp45 = __initData(tmp16(17470), obj5);
                   cResult[25] = setMode;
                   cResult[26] = stateFromStores;
                   cResult[27] = tmp45;
@@ -481,7 +481,7 @@ let closure_20 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
             tmp37 = tmp40;
           }
           const obj7 = { activityName: tmp28, setMode };
-          const tmp32 = __initData(tmp16(17463), obj7);
+          const tmp32 = __initData(tmp16(17464), obj7);
           cResult[15] = setMode;
           cResult[16] = tmp28;
           cResult[17] = tmp32;
@@ -544,7 +544,7 @@ let closure_20 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(17464), obj5);
+    tmp8Result2 = tmp8(tmp5(17465), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;

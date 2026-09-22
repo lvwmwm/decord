@@ -1,18 +1,18 @@
-// Module ID: 17026
-// Function ID: 17027
+// Module ID: 17027
+// Function ID: 17028
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1376, 21, 4758, 580, 17023, 558, 568, 17027, 504, 17028, 4754, 5341, 1119, 4603, 17029, 3682, 1181, 5280, 2]
+// Dependencies: [19, 17, 1376, 21, 4758, 580, 17024, 558, 568, 17028, 504, 17029, 4754, 5341, 1119, 4603, 17030, 3682, 1181, 5280, 2]
 
-// Module 17026 (VibegrationsMessageAuthor)
+// Module 17027 (VibegrationsMessageAuthor)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import AppsIcon from "AppsIcon" /* 5280 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17027 */;
-import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17028 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17029 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17028 */;
+import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17029 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17030 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -22,7 +22,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const createStyles = fn(4758);
 let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(17023).MESSAGE_AVATAR_SIZE, height: fn(17023).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+let size = { width: fn(17024).MESSAGE_AVATAR_SIZE, height: fn(17024).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
 obj2.conjureTile = size;
 let closure_8 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
@@ -92,11 +92,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ name, color, at, onPressName } = arg0);
   const tmp4 = closure_8();
   if (cResult[0] !== at) {
-    const describeMessageTimeResult = tmp(17028).describeMessageTime(at);
+    const describeMessageTimeResult = tmp(17029).describeMessageTime(at);
     cResult[0] = at;
     cResult[1] = describeMessageTimeResult;
     let tmp5 = describeMessageTimeResult;
-    const tmpResult = tmp(17028);
+    const tmpResult = tmp(17029);
   } else {
     tmp5 = cResult[1];
   }

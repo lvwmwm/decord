@@ -1,10 +1,10 @@
-// Module ID: 18230
-// Function ID: 18231
+// Module ID: 18231
+// Function ID: 18232
 // Name: FormRoleColorPicker
 // Dependencies: [19, 1078, 21, 4758, 4725, 16632, 1984, 14167, 14862, 1096, 2]
 // Exports: default
 
-// Module 18230 (FormRoleColorPicker)
+// Module 18231 (FormRoleColorPicker)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import noop from "module_19" /* 19 */;

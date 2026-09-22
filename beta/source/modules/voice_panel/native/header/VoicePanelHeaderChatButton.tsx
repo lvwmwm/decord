@@ -1,17 +1,17 @@
-// Module ID: 17548
-// Function ID: 17549
+// Module ID: 17549
+// Function ID: 17550
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1078, 21, 4758, 580, 558, 568, 1114, 17549, 17468, 5291, 1119, 5804, 2]
+// Dependencies: [19, 1078, 21, 4758, 580, 558, 568, 1114, 17550, 17469, 5291, 1119, 5804, 2]
 
-// Module 17548 (VoicePanelHeaderChatButton)
+// Module 17549 (VoicePanelHeaderChatButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import util from "util" /* 1119 */;
 import ChatIcon from "ChatIcon" /* 5291 */;
 import NativeViewDefault from "NativeView" /* 5804 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17468 */;
-import useChatBadgeDefault from "useChatBadge" /* 17549 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17469 */;
+import useChatBadgeDefault from "useChatBadge" /* 17550 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -50,10 +50,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const intl = tmp(1119).intl;
     obj2.accessibilityLabel = intl.string(tmp(1119).t["5KxXrK"]);
     obj2.onPress = first;
-    const tmp11 = hasOwnProperty(tmp6(17468), obj2);
+    const tmp11 = hasOwnProperty(tmp6(17469), obj2);
     cResult[1] = tmp11;
     let tmp8 = tmp11;
-    const tmp6Result = tmp6(17468);
+    const tmp6Result = tmp6(17469);
   } else {
     tmp8 = cResult[1];
   }

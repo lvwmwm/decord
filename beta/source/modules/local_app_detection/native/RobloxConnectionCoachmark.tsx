@@ -1,9 +1,9 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17401
+// Function ID: 17402
 // Name: RobloxConnectionCoachmark
 // Dependencies: [32, 19, 17, 5500, 1376, 13984, 1078, 2042, 21, 4758, 580, 558, 568, 4471, 1616, 4725, 9339, 7626, 7396, 7444, 5186, 1119, 4754, 13252, 5188, 7397, 4469, 5502, 1401, 1181, 8733, 504, 13985, 5625, 4579, 2031, 2]
 
-// Module 17400 (RobloxConnectionCoachmark)
+// Module 17401 (RobloxConnectionCoachmark)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

@@ -1,9 +1,9 @@
-// Module ID: 17331
-// Function ID: 17332
+// Module ID: 17332
+// Function ID: 17333
 // Name: SearchNavigatorPreviewHeader
 // Dependencies: [19, 17, 21, 4758, 558, 568, 13574, 2]
 
-// Module 17331 (SearchNavigatorPreviewHeader)
+// Module 17332 (SearchNavigatorPreviewHeader)
 import c from "c" /* 568 */;
 import ChannelHeaderDefault from "ChannelHeader" /* 13574 */;
 import noop from "module_19" /* 19 */;

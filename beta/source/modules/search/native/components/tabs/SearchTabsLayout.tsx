@@ -1,9 +1,9 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17111
+// Function ID: 17112
 // Name: SearchTabsLayout
-// Dependencies: [19, 17, 7525, 12487, 12510, 8127, 1078, 21, 4758, 12, 12506, 558, 568, 17111, 1119, 12488, 17112, 12507, 12486, 17195, 17094, 6891, 4497, 12509, 12495, 12496, 1114, 17196, 17197, 12780, 504, 17198, 17199, 17200, 17201, 2]
+// Dependencies: [19, 17, 7525, 12487, 12510, 8127, 1078, 21, 4758, 12, 12506, 558, 568, 17112, 1119, 12488, 17113, 12507, 12486, 17196, 17095, 6891, 4497, 12509, 12495, 12496, 1114, 17197, 17198, 12780, 504, 17199, 17200, 17201, 17202, 2]
 
-// Module 17110 (SearchTabsLayout)
+// Module 17111 (SearchTabsLayout)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
 import SearchUtils from "SearchUtils" /* 12488 */;
@@ -12,8 +12,8 @@ import SearchTabsFetchManagerDefault from "SearchTabsFetchManager" /* 12496 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12507 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
-import pages_ErrorScreenDefault from "pages/ErrorScreen" /* 17111 */;
-import SearchTabsPageDefault from "SearchTabsPage" /* 17112 */;
+import pages_ErrorScreenDefault from "pages/ErrorScreen" /* 17112 */;
+import SearchTabsPageDefault from "SearchTabsPage" /* 17113 */;
 import noop from "module_19" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 7525 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;
@@ -743,17 +743,17 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) =
     obj3 = cResult[5];
   }
   const tmpResult = searchContext(504);
-  const autoSearchGuildChannelTab = searchContext(17198).useAutoSearchGuildChannelTab(searchContext, !obj3.has(constants.GUILD_CHANNELS));
-  const tmpResult5 = searchContext(17198);
-  const autoSearchMembersTab = searchContext(17199).useAutoSearchMembersTab(searchContext, !obj3.has(constants.MEMBERS));
-  const tmpResult6 = searchContext(17199);
-  const autoSearchPeopleTab = searchContext(17200).useAutoSearchPeopleTab(searchContext, !obj3.has(constants.PEOPLE));
+  const autoSearchGuildChannelTab = searchContext(17199).useAutoSearchGuildChannelTab(searchContext, !obj3.has(constants.GUILD_CHANNELS));
+  const tmpResult5 = searchContext(17199);
+  const autoSearchMembersTab = searchContext(17200).useAutoSearchMembersTab(searchContext, !obj3.has(constants.MEMBERS));
+  const tmpResult6 = searchContext(17200);
+  const autoSearchPeopleTab = searchContext(17201).useAutoSearchPeopleTab(searchContext, !obj3.has(constants.PEOPLE));
   if (cResult[6] === searchContext) {
     if (cResult[7] === visibleTabCounts) {
       if (cResult[8] === visibleTabs) {
         let tmp17 = cResult[9];
       }
-      const autoTrackSearchTabCountsViewedAnalytics = tmp(17201).useAutoTrackSearchTabCountsViewedAnalytics(tmp17);
+      const autoTrackSearchTabCountsViewedAnalytics = tmp(17202).useAutoTrackSearchTabCountsViewedAnalytics(tmp17);
       if (cResult[10] === searchContext) {
         if (cResult[11] === visibleTabCounts) {
           if (cResult[12] === visibleTabs) {
@@ -772,7 +772,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) =
       cResult[13] = width;
       cResult[14] = tmp22;
       tmp19 = tmp22;
-      const tmpResult8 = tmp(17201);
+      const tmpResult8 = tmp(17202);
     }
   }
   const obj4 = { searchContext, visibleTabCounts, visibleTabs };
@@ -791,12 +791,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) =
   const items2 = [candidateTabs];
   const memo = noop.useMemo(() => new Set(candidateTabs), items2);
   const obj = searchContext(504);
-  const autoSearchGuildChannelTab = searchContext(17198).useAutoSearchGuildChannelTab(searchContext, !memo.has(constants.GUILD_CHANNELS));
-  const obj3 = searchContext(17198);
-  const autoSearchMembersTab = searchContext(17199).useAutoSearchMembersTab(searchContext, !memo.has(constants.MEMBERS));
-  const obj4 = searchContext(17199);
-  const autoSearchPeopleTab = searchContext(17200).useAutoSearchPeopleTab(searchContext, !memo.has(constants.PEOPLE));
-  const obj5 = searchContext(17200);
-  const autoTrackSearchTabCountsViewedAnalytics = searchContext(17201).useAutoTrackSearchTabCountsViewedAnalytics({ searchContext, visibleTabCounts, visibleTabs });
+  const autoSearchGuildChannelTab = searchContext(17199).useAutoSearchGuildChannelTab(searchContext, !memo.has(constants.GUILD_CHANNELS));
+  const obj3 = searchContext(17199);
+  const autoSearchMembersTab = searchContext(17200).useAutoSearchMembersTab(searchContext, !memo.has(constants.MEMBERS));
+  const obj4 = searchContext(17200);
+  const autoSearchPeopleTab = searchContext(17201).useAutoSearchPeopleTab(searchContext, !memo.has(constants.PEOPLE));
+  const obj5 = searchContext(17201);
+  const autoTrackSearchTabCountsViewedAnalytics = searchContext(17202).useAutoTrackSearchTabCountsViewedAnalytics({ searchContext, visibleTabCounts, visibleTabs });
   return closure_12(closure_25, { searchContext, visibleTabs, visibleTabCounts, width: width.width });
 });

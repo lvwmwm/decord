@@ -1,16 +1,16 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 16733
+// Function ID: 16734
 // Name: YouBarICYMIButton
-// Dependencies: [19, 15354, 21, 4758, 580, 558, 568, 16733, 13307, 4617, 1119, 16734, 2]
+// Dependencies: [19, 15354, 21, 4758, 580, 558, 568, 16734, 13307, 4617, 1119, 16735, 2]
 
-// Module 16732 (YouBarICYMIButton)
+// Module 16733 (YouBarICYMIButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import RootNavigationRef from "RootNavigationRef" /* 4617 */;
 import FlashIcon from "FlashIcon" /* 13307 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16733 */;
-import YouBarButtonDefault from "YouBarButton" /* 16734 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16734 */;
+import YouBarButtonDefault from "YouBarButton" /* 16735 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

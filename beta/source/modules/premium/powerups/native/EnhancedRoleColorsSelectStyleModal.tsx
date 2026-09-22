@@ -1,9 +1,9 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18068
+// Function ID: 18069
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 18047, 18049, 18046, 1089, 21, 4758, 580, 558, 568, 4693, 5217, 1119, 18068, 8195, 7396, 4725, 8928, 2106, 8224, 13605, 4754, 2518, 7397, 2]
+// Dependencies: [17, 18048, 18050, 18047, 1089, 21, 4758, 580, 558, 568, 4693, 5217, 1119, 18069, 8195, 7396, 4725, 8928, 2106, 8224, 13605, 4754, 2518, 7397, 2]
 
-// Module 18067 (EnhancedRoleColorsSelectStyleModal)
+// Module 18068 (EnhancedRoleColorsSelectStyleModal)
 import nativeDefault from "native" /* 580 */;
 import Constants from "Constants" /* 1089 */;
 import util from "util" /* 1119 */;
@@ -16,10 +16,10 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
 import RowGeneratorDefault from "RowGenerator" /* 8195 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8224 */;
 import _modDef13605 from "module_13605" /* 13605 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18046 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18047 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18049 */;
-import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 18068 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18047 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18048 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18050 */;
+import useGuildSettingsRoleExampleMessage from "useGuildSettingsRoleExampleMessage" /* 18069 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createStyles from "createStyles" /* 4758 */;
@@ -83,7 +83,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((roleStyle) => {
     first = cResult[0];
   }
   const obj2 = roleStyle(5217);
-  const guildSettingsRoleExampleMessage = roleStyle(18068).useGuildSettingsRoleExampleMessage(first);
+  const guildSettingsRoleExampleMessage = roleStyle(18069).useGuildSettingsRoleExampleMessage(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp13 = new tmp4(8195)();
     cResult[1] = tmp13;

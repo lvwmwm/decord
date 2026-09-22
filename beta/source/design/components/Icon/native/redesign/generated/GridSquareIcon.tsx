@@ -1,9 +1,9 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17289
+// Function ID: 17290
 // Name: GridSquareIcon
 // Dependencies: [109, 19, 21, 558, 568, 580, 16083, 4461, 2]
 
-// Module 17288 (GridSquareIcon)
+// Module 17289 (GridSquareIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import BaseIconImage from "BaseIconImage" /* 4461 */;

@@ -1,9 +1,9 @@
-// Module ID: 18031
-// Function ID: 18032
+// Module ID: 18032
+// Function ID: 18033
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 8207, 21, 580, 4758, 558, 568, 1119, 4754, 18029, 18032, 14187, 15414, 15612, 5186, 2]
+// Dependencies: [19, 17, 8207, 21, 580, 4758, 558, 568, 1119, 4754, 18030, 18033, 14187, 15414, 15612, 5186, 2]
 
-// Module 18031 (GuildSettingsServerTagColorGrid)
+// Module 18032 (GuildSettingsServerTagColorGrid)
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;
 

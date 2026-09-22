@@ -1,9 +1,9 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 16875
+// Function ID: 16876
 // Name: useMainTabsChannelScreenStyles
 // Dependencies: [19, 17, 4758, 580, 558, 568, 4497, 2]
 
-// Module 16874 (useMainTabsChannelScreenStyles)
+// Module 16875 (useMainTabsChannelScreenStyles)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;

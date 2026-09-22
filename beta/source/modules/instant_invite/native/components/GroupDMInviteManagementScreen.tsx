@@ -44,7 +44,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (cResult[1] !== channelId) {
     class T {
       constructor() {
-        closure_0 = closure_3(/* F150851 */ function() { ... });
+        closure_0 = closure_3(/* F150856 */ function() { ... });
         promise = (function fetchInvites() { ... })();
         catchPromise = promise.catch(() => { ... });
         return;
@@ -56,7 +56,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   } else {
     class T {
       constructor() {
-        closure_0 = closure_3(/* F150851 */ function() { ... });
+        closure_0 = closure_3(/* F150856 */ function() { ... });
         promise = (function fetchInvites() { ... })();
         catchPromise = promise.catch(() => { ... });
         return;
@@ -69,7 +69,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   if (cResult[3] !== first1) {
     class T {
       constructor() {
-        closure_0 = closure_3(/* F150851 */ function() { ... });
+        closure_0 = closure_3(/* F150856 */ function() { ... });
         promise = (function fetchInvites() { ... })();
         catchPromise = promise.catch(() => { ... });
         return;
@@ -78,7 +78,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       class T {
         constructor() {
-          closure_0 = closure_3(/* F150851 */ function() { ... });
+          closure_0 = closure_3(/* F150856 */ function() { ... });
           promise = (function fetchInvites() { ... })();
           catchPromise = promise.catch(() => { ... });
           return;
@@ -89,7 +89,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     } else {
       class T {
         constructor() {
-          closure_0 = closure_3(/* F150851 */ function() { ... });
+          closure_0 = closure_3(/* F150856 */ function() { ... });
           promise = (function fetchInvites() { ... })();
           catchPromise = promise.catch(() => { ... });
           return;
@@ -103,7 +103,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   } else {
     class T {
       constructor() {
-        closure_0 = closure_3(/* F150851 */ function() { ... });
+        closure_0 = closure_3(/* F150856 */ function() { ... });
         promise = (function fetchInvites() { ... })();
         catchPromise = promise.catch(() => { ... });
         return;

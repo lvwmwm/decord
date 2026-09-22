@@ -1,9 +1,9 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17376
+// Function ID: 17377
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2113, 14955, 1078, 21, 8162, 4758, 580, 558, 568, 15668, 1181, 4754, 1489, 13725, 17376, 7241, 565, 7409, 7429, 14957, 7722, 14958, 7246, 14455, 4462, 5341, 1119, 16745, 17377, 14848, 17378, 38, 2]
+// Dependencies: [32, 19, 17, 2113, 14955, 1078, 21, 8162, 4758, 580, 558, 568, 15668, 1181, 4754, 1489, 13725, 17377, 7241, 565, 7409, 7429, 14957, 7722, 14958, 7246, 14455, 4462, 5341, 1119, 16746, 17378, 14848, 17379, 38, 2]
 
-// Module 17375 (SettingsNavigator)
+// Module 17376 (SettingsNavigator)
 import _modDef38 from "module_38" /* 38 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -13,7 +13,7 @@ import Pressables from "Pressables" /* 5341 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7241 */;
 import SettingRendererUtils from "SettingRendererUtils" /* 14957 */;
 import SettingRendererTypes from "SettingRendererTypes" /* 15668 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16745 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16746 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2113 */;

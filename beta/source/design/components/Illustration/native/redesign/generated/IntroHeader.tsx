@@ -1,10 +1,10 @@
-// Module ID: 18096
-// Function ID: 18097
+// Module ID: 18097
+// Function ID: 18098
 // Name: IntroHeader
-// Dependencies: [19, 17, 21, 8507, 18097, 18098, 18099, 558, 568, 4610, 2]
+// Dependencies: [19, 17, 21, 8507, 18098, 18099, 18100, 558, 568, 4610, 2]
 // Exports: getIntroHeaderSource
 
-// Module 18096 (IntroHeader)
+// Module 18097 (IntroHeader)
 import c from "c" /* 568 */;
 import shared from "shared" /* 4610 */;
 import _mod8507 from "module_8507" /* 8507 */;
@@ -20,13 +20,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== theme) {
     const obj3 = {
       dark() {
-          return require("module_18097");
-        },
-      darker() {
           return require("module_18098");
         },
-      light() {
+      darker() {
           return require("module_18099");
+        },
+      light() {
+          return require("module_18100");
         }
     };
     const illustrationSource = _mod8507.getIllustrationSource(theme, obj3);
@@ -42,13 +42,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = shared;
   return _mod8507.getIllustrationSource(obj.useThemeContext().theme, {
     dark() {
-      return require("module_18097");
-    },
-    darker() {
       return require("module_18098");
     },
-    light() {
+    darker() {
       return require("module_18099");
+    },
+    light() {
+      return require("module_18100");
     }
   });
 });
@@ -57,13 +57,13 @@ ReactCompilerGating = fn(558);
 function getIntroHeaderSource(theme) {
   return _mod8507.getIllustrationSource(theme, {
     dark() {
-      return require("module_18097");
-    },
-    darker() {
       return require("module_18098");
     },
-    light() {
+    darker() {
       return require("module_18099");
+    },
+    light() {
+      return require("module_18100");
     }
   });
 }

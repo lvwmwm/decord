@@ -1,10 +1,10 @@
-// Module ID: 17453
-// Function ID: 17454
+// Module ID: 17454
+// Function ID: 17455
 // Name: getActivityContainerPIPStylesSpec
 // Dependencies: [2008, 9313, 11293, 2]
 // Exports: default
 
-// Module 17453 (getActivityContainerPIPStylesSpec)
+// Module 17454 (getActivityContainerPIPStylesSpec)
 import Constants from "Constants" /* 2008 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 9313 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;

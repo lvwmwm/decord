@@ -1,9 +1,9 @@
-// Module ID: 16793
-// Function ID: 16794
+// Module ID: 16794
+// Function ID: 16795
 // Name: ICYMIConstants
 // Dependencies: [1095, 2]
 
-// Module 16793 (ICYMIConstants)
+// Module 16794 (ICYMIConstants)
 import DurationsDefault from "Durations" /* 1095 */;
 
 const result = 15 * DurationsDefault.Millis.MINUTE;

@@ -1,9 +1,9 @@
-// Module ID: 17147
-// Function ID: 17148
+// Module ID: 17148
+// Function ID: 17149
 // Name: MessageRow
-// Dependencies: [19, 17, 4750, 2048, 2045, 2067, 4939, 1078, 21, 4758, 580, 558, 568, 504, 5241, 4911, 1181, 4754, 11540, 10683, 9548, 4603, 8455, 17148, 13599, 17149, 4990, 8224, 7573, 1119, 12972, 8128, 17125, 2]
+// Dependencies: [19, 17, 4750, 2048, 2045, 2067, 4939, 1078, 21, 4758, 580, 558, 568, 504, 5241, 4911, 1181, 4754, 11540, 10683, 9548, 4603, 8455, 17149, 13599, 17150, 4990, 8224, 7573, 1119, 12972, 8128, 17126, 2]
 
-// Module 17147 (MessageRow)
+// Module 17148 (MessageRow)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
 
-const PollBadgeDefault = tmp9(17149);
+const PollBadgeDefault = tmp9(17150);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Platform, View: closure_4 } = get_ActivityIndicator);
@@ -268,7 +268,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
   }
   const effect = noop.useEffect(tmp8, tmp9);
   const obj = channel(568);
-  const searchMessageTimestamp = channel(17148).useSearchMessageTimestamp(message, channel);
+  const searchMessageTimestamp = channel(17149).useSearchMessageTimestamp(message, channel);
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
   if (cResult[5] !== tmp5) {
     class I {
@@ -409,7 +409,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
       const item = recipients.forEach((item) => message(closure_1_2[22]).getUser(item));
     }
   }, items1);
-  const searchMessageTimestamp = message(17148).useSearchMessageTimestamp(message, channel);
+  const searchMessageTimestamp = message(17149).useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: null };
   const obj3 = { style: tmp.authorRow, children: null };
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
@@ -437,7 +437,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((muted) => {
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(17149), obj8);
+    tmp9Result2 = tmp9(channel(17150), obj8);
   }
   items3[3] = tmp9Result2;
   obj2.children = items3;
@@ -469,7 +469,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmpResult5 = tmp(8224);
       const isRoleStyleAndRoleColorsEligibleForERC = tmpResult5.useIsRoleStyleAndRoleColorsEligibleForERC(channel.guild_id, message.author.id, stateFromStores, processColorStringsArray);
       const tmpResult4 = tmp(8224);
-      const searchMessageTimestamp = tmp(17148).useSearchMessageTimestamp(message, channel);
+      const searchMessageTimestamp = tmp(17149).useSearchMessageTimestamp(message, channel);
       ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
       if (cResult[5] === colorString) {
         if (cResult[6] === colorStrings) {
@@ -590,7 +590,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[7] = stateFromStores;
       cResult[8] = tmp21;
       tmp20 = tmp21;
-      const tmpResult6 = tmp(17148);
+      const tmpResult6 = tmp(17149);
     }
   }
   if ("username" !== stateFromStores) {
@@ -614,7 +614,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp2Result3 = tmp2(8224);
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result3.useIsRoleStyleAndRoleColorsEligibleForERC(channel.guild_id, message.author.id, stateFromStores, processColorStringsArray);
     const tmp2Result = tmp2(8224);
-    const searchMessageTimestamp = tmp2(17148).useSearchMessageTimestamp(message, channel);
+    const searchMessageTimestamp = tmp2(17149).useSearchMessageTimestamp(message, channel);
     const obj3 = { style: tmp.labelContainer, children: null };
     const obj4 = { style: tmp.authorRow, children: null };
     let tmp18 = "dot" === stateFromStores;

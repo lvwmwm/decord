@@ -1,7 +1,7 @@
 // Module ID: 16355
 // Function ID: 16356
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 16356, 1078, 16347, 21, 558, 568, 16358, 5801, 4758, 580, 4619, 1616, 16359, 16360, 16442, 16621, 16622, 4497, 16361, 16344, 16349, 16346, 16703, 4622, 12087, 2]
+// Dependencies: [32, 19, 17, 16356, 1078, 16347, 21, 558, 568, 16358, 5801, 4758, 580, 4619, 1616, 16359, 16360, 16442, 16621, 16622, 4497, 16361, 16344, 16349, 16346, 16704, 4622, 12087, 2]
 
 // Module 16355 (MainChannels)
 import c from "c" /* 568 */;
@@ -20,7 +20,7 @@ import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16361 */;
 import RedesignChannelListDefault from "RedesignChannelList" /* 16442 */;
 import NativeFreezeScreens from "NativeFreezeScreens" /* 16621 */;
 import HomePanelContent from "HomePanelContent" /* 16622 */;
-import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16703 */;
+import NonCollapsableGestureDetector from "NonCollapsableGestureDetector" /* 16704 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import HomeDrawerStore from "HomeDrawerStore" /* 16356 */;
@@ -365,7 +365,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp23 = tmp25;
       }
       const obj5 = { gesture, children: tmp16 };
-      const tmp22 = closure_1_11(tmp(16703).NonCollapsableGestureDetector, obj5);
+      const tmp22 = closure_1_11(tmp(16704).NonCollapsableGestureDetector, obj5);
       cResult[8] = gesture;
       cResult[9] = tmp16;
       cResult[10] = tmp22;

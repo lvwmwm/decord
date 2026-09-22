@@ -1,9 +1,9 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17820
+// Function ID: 17821
 // Name: JankStatsManager
 // Dependencies: [1078, 7365, 16350, 1245, 7722, 2]
 
-// Module 17819 (JankStatsManager)
+// Module 17820 (JankStatsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7722 */;
 import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16350 */;

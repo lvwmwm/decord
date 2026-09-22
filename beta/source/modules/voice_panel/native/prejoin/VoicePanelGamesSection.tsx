@@ -1,16 +1,16 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17584
+// Function ID: 17585
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 568, 7553, 8944, 8945, 1119, 10018, 5822, 9976, 17584, 9916, 2]
+// Dependencies: [19, 21, 558, 568, 7553, 8944, 8945, 1119, 10018, 5822, 9976, 17585, 9916, 2]
 
-// Module 17583 (VoicePanelGamesSection)
+// Module 17584 (VoicePanelGamesSection)
 import c from "c" /* 568 */;
 import useGame from "useGame" /* 7553 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8945 */;
 import FormComponents from "FormComponents" /* 9916 */;
 import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 9976 */;
 import GameActivityIconDefault from "GameActivityIcon" /* 10018 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17584 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17585 */;
 import noop from "module_19" /* 19 */;
 
 const util = v9sZWVp(1119);

@@ -1,14 +1,14 @@
-// Module ID: 16980
-// Function ID: 16981
+// Module ID: 16981
+// Function ID: 16982
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2045, 21, 558, 568, 7468, 1614, 12165, 9519, 16981, 16987, 2]
+// Dependencies: [19, 2045, 21, 558, 568, 7468, 1614, 12165, 9519, 16982, 16988, 2]
 
-// Module 16980 (PortalKeyboardRendererComponent)
+// Module 16981 (PortalKeyboardRendererComponent)
 import c from "c" /* 568 */;
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7468 */;
 import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 12165 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 16981 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16987 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 16982 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16988 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 

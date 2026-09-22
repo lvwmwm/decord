@@ -1,9 +1,9 @@
-// Module ID: 17813
-// Function ID: 17814
+// Module ID: 17814
+// Function ID: 17815
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1376, 1078, 7365, 1368, 17814, 1275, 1235, 1245, 2]
+// Dependencies: [5, 17, 1376, 1078, 7365, 1368, 17815, 1275, 1235, 1245, 2]
 
-// Module 17813 (IOSUserIdentifiersManager)
+// Module 17814 (IOSUserIdentifiersManager)
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

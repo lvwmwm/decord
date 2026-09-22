@@ -1,9 +1,9 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16738
+// Function ID: 16739
 // Name: YouBarFloatingShade
 // Dependencies: [19, 17, 4578, 15354, 16623, 21, 4758, 558, 568, 504, 4462, 580, 15356, 1482, 4619, 16359, 4577, 1096, 5198, 2]
 
-// Module 16737 (YouBarFloatingShade)
+// Module 16738 (YouBarFloatingShade)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

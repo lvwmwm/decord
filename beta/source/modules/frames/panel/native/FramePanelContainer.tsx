@@ -1,13 +1,13 @@
-// Module ID: 17472
-// Function ID: 17473
+// Module ID: 17473
+// Function ID: 17474
 // Name: FramePanelContainer
-// Dependencies: [19, 9311, 9312, 21, 558, 568, 504, 17473, 17475, 2]
+// Dependencies: [19, 9311, 9312, 21, 558, 568, 504, 17474, 17476, 2]
 
-// Module 17472 (FramePanelContainer)
+// Module 17473 (FramePanelContainer)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import FramePanelControllerDefault from "FramePanelController" /* 17473 */;
-import FramePanelUIDefault from "FramePanelUI" /* 17475 */;
+import FramePanelControllerDefault from "FramePanelController" /* 17474 */;
+import FramePanelUIDefault from "FramePanelUI" /* 17476 */;
 import noop from "module_19" /* 19 */;
 import FramesStore from "FramesStore" /* 9311 */;
 

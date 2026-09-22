@@ -1,13 +1,13 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17110
+// Function ID: 17111
 // Name: SearchScreenLayout
-// Dependencies: [19, 17, 12487, 21, 4758, 558, 568, 16864, 504, 17110, 17202, 2]
+// Dependencies: [19, 17, 12487, 21, 4758, 558, 568, 16865, 504, 17111, 17203, 2]
 
-// Module 17109 (SearchScreenLayout)
+// Module 17110 (SearchScreenLayout)
 import c from "c" /* 568 */;
-import AppFreezerDefault from "AppFreezer" /* 16864 */;
-import SearchTabsLayoutDefault from "SearchTabsLayout" /* 17110 */;
-import AutocompleteScreenDefault from "AutocompleteScreen" /* 17202 */;
+import AppFreezerDefault from "AppFreezer" /* 16865 */;
+import SearchTabsLayoutDefault from "SearchTabsLayout" /* 17111 */;
+import AutocompleteScreenDefault from "AutocompleteScreen" /* 17203 */;
 import noop from "module_19" /* 19 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;
 

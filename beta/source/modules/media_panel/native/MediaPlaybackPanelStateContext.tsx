@@ -1,9 +1,9 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17657
+// Function ID: 17658
 // Name: MediaPlaybackPanelStateContext
 // Dependencies: [19, 14820, 12421, 7321, 2]
 
-// Module 17656 (MediaPlaybackPanelStateContext)
+// Module 17657 (MediaPlaybackPanelStateContext)
 import noop from "module_19" /* 19 */;
 
 const obj = { mode: null, setMode: null, morphablePanelMode: null, wrapperDimensions: null, useReducedMotion: null, pipState: null, pipAvoidanceSpecs: null, dismissToPipGestureRef: null, dismissPanel: null, scrollPosition: null, canShowPIP: null, lockScrolling: null, wrapperOffset: null };

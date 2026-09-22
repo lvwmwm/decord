@@ -1,9 +1,9 @@
-// Module ID: 18188
-// Function ID: 18189
+// Module ID: 18189
+// Function ID: 18190
 // Name: FormBigRadioBox
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4479, 1181, 4754, 10017, 2]
 
-// Module 18188 (FormBigRadioBox)
+// Module 18189 (FormBigRadioBox)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;

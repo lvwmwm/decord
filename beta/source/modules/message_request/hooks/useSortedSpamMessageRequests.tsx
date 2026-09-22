@@ -1,9 +1,9 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17365
+// Function ID: 17366
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 2045, 1376, 7467, 558, 568, 504, 17354, 2]
+// Dependencies: [19, 2045, 1376, 7467, 558, 568, 504, 17355, 2]
 
-// Module 17364 (useSortedSpamMessageRequests)
+// Module 17365 (useSortedSpamMessageRequests)
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import UserStore from "UserStore" /* 1376 */;

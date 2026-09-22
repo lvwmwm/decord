@@ -1,9 +1,9 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17208
+// Function ID: 17209
 // Name: ChannelDetailsMoreButton
 // Dependencies: [19, 21, 558, 568, 11219, 1119, 8118, 8112, 9876, 2]
 
-// Module 17207 (ChannelDetailsMoreButton)
+// Module 17208 (ChannelDetailsMoreButton)
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8118 */;
 import _modDef9876 from "module_9876" /* 9876 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11219 */;

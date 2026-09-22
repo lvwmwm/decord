@@ -244,13 +244,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       handleCreateJoinGuildPress();
     }
   }), items1);
-  const obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: "handshake_medium_light_skin_tone", expandedChildren: "1f3fc", children: "addUnmountListener" };
+  const obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: false, expandedChildren: "MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE", children: null };
   obj2 = enabled(504);
   const intl = tmp2(1119).intl;
   obj4.label = intl.string(enabled(1119).t.l5WIbf);
   obj4.expandedChildren = jsx(enabled(16695).HomeDrawerAddServerRowExpandedChildren, {});
   const colors = nativeDefault.colors;
   obj4.children = jsx(enabled(11458).CirclePlusIcon, { size: "md", color: stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT });
-  obj3.children = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: "handshake_medium_light_skin_tone", expandedChildren: "1f3fc", children: "addUnmountListener" });
+  obj3.children = jsx(GuildsBarAnimatedItemWrapperDefault, { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: false, expandedChildren: "MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE", children: null });
   return <tmp8 style={tmp.stretch}>{null}</tmp8>;
 }));

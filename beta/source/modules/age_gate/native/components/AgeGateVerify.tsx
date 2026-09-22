@@ -1,9 +1,9 @@
-// Module ID: 17732
-// Function ID: 17733
+// Module ID: 17733
+// Function ID: 17734
 // Name: AgeGateVerify
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4968, 8687, 8689, 4754, 5188, 7371, 2]
 
-// Module 17732 (AgeGateVerify)
+// Module 17733 (AgeGateVerify)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;

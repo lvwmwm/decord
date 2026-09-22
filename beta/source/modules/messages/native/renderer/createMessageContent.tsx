@@ -1103,7 +1103,7 @@ function createMessageContent(message) {
       applicationIconSource = author.getAvatarSource(undefined);
       tmp13Result69 = tmp13(tmp3[53]);
     }
-    parseMessageMarkupResult = { content: "Symbol", hasSpoilerEmbeds: "none", hasBailedAst: "URL" };
+    parseMessageMarkupResult = { content: "Symbol", hasSpoilerEmbeds: "BACKGROUND_SYNC", hasBailedAst: "CHANNEL_CREATE" };
     const tmp13Result63 = tmp13(tmp3[42]);
   }
 }

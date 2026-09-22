@@ -1,9 +1,9 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17095
+// Function ID: 17096
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 8125, 8113, 1078, 21, 3, 4758, 580, 558, 568, 4938, 16724, 4619, 4497, 5203, 4693, 7284, 4625, 11647, 1114, 16340, 8543, 16351, 13041, 4617, 4616, 5183, 1489, 16874, 16344, 16349, 16346, 16869, 17095, 17096, 5343, 7403, 17097, 6891, 2]
+// Dependencies: [32, 19, 17, 8125, 8113, 1078, 21, 3, 4758, 580, 558, 568, 4938, 16725, 4619, 4497, 5203, 4693, 7284, 4625, 11647, 1114, 16340, 8543, 16351, 13041, 4617, 4616, 5183, 1489, 16875, 16344, 16349, 16346, 16870, 17096, 17097, 5343, 7403, 17098, 6891, 2]
 
-// Module 17094 (SwipeForMemberListWrapper)
+// Module 17095 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -16,7 +16,7 @@ import ChatInputUtils from "ChatInputUtils" /* 4625 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4938 */;
 import useMountEffect from "useMountEffect" /* 5203 */;
 import getJankSurfaceName from "getJankSurfaceName" /* 16351 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16724 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16725 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 16737
+// Function ID: 16738
 // Name: useNotificationsTabBadge
 // Dependencies: [19, 7880, 558, 568, 504, 7881, 2]
 
-// Module 16736 (useNotificationsTabBadge)
+// Module 16737 (useNotificationsTabBadge)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7881 */;

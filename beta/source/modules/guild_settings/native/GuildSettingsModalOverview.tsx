@@ -1,9 +1,9 @@
-// Module ID: 17937
-// Function ID: 17938
+// Module ID: 17938
+// Function ID: 17939
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 2063, 2045, 2100, 4678, 4399, 4409, 1376, 9834, 1078, 21, 4758, 580, 1119, 4471, 4457, 5839, 7621, 9833, 12609, 1389, 7441, 5111, 5207, 6846, 4911, 5903, 5822, 8255, 17760, 7446, 5901, 5900, 16496, 2112, 17938, 1401, 10338, 1181, 7332, 5768, 8876, 5186, 7286, 558, 568, 1488, 504, 2]
+// Dependencies: [19, 2063, 2045, 2100, 4678, 4399, 4409, 1376, 9834, 1078, 21, 4758, 580, 1119, 4471, 4457, 5839, 7621, 9833, 12609, 1389, 7441, 5111, 5207, 6846, 4911, 5903, 5822, 8255, 17761, 7446, 5901, 5900, 16496, 2112, 17939, 1401, 10338, 1181, 7332, 5768, 8876, 5186, 7286, 558, 568, 1488, 504, 2]
 
-// Module 17937 (GuildSettingsModalOverview)
+// Module 17938 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import FlagUtils from "FlagUtils" /* 1389 */;
@@ -27,7 +27,7 @@ import Form from "Form" /* 8876 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 10338 */;
 import openChannelPickerDefault from "openChannelPicker" /* 12609 */;
-import AssetChooserDefault from "AssetChooser" /* 17938 */;
+import AssetChooserDefault from "AssetChooser" /* 17939 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 4678 */;
@@ -363,7 +363,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
     const tmpResult13 = tmp(1389);
   }
   const tmpResult = tmp(8255);
-  let result1 = tmp(17760).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
+  let result1 = tmp(17761).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
   if (!result1) {
     result1 = tmp(1389).hasFlag(guild.systemChannelFlags, constants5.SUPPRESS_VOICE_SESSION_NOTIFICATIONS);
     const tmpResult15 = tmp(1389);
@@ -385,7 +385,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
   obj4.label = intl5.string(tmp(1119).t["+f0bXQ"]);
   obj4.disabled = !canManage;
   const tmp15 = closure_1_20;
-  const tmpResult14 = tmp(17760);
+  const tmpResult14 = tmp(17761);
   obj4.value = !tmp(1389).hasFlag(guild.systemChannelFlags, constants5.SUPPRESS_JOIN_NOTIFICATIONS);
   obj4.onValueChange = self.handleSystemJoinMessages;
   items[1] = closure_1_19(tmp(7446).TableSwitchRow, obj4);

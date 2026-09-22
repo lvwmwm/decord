@@ -1,10 +1,10 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17235
+// Function ID: 17236
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2045, 14026, 4781, 1376, 11162, 1078, 21, 4758, 580, 4771, 4965, 10008, 13179, 4725, 504, 11712, 11714, 11711, 1245, 4458, 1119, 17233, 8112, 11715, 4457, 8122, 10090, 8654, 8006, 1181, 11163, 17166, 2]
+// Dependencies: [32, 5, 19, 17, 2045, 14026, 4781, 1376, 11162, 1078, 21, 4758, 580, 4771, 4965, 10008, 13179, 4725, 504, 11712, 11714, 11711, 1245, 4458, 1119, 17234, 8112, 11715, 4457, 8122, 10090, 8654, 8006, 1181, 11163, 17167, 2]
 // Exports: default
 
-// Module 17234 (NewGroupDMScreen)
+// Module 17235 (NewGroupDMScreen)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -12,7 +12,7 @@ import ToastUtils from "ToastUtils" /* 4457 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4771 */;
 import HeaderShared from "HeaderShared" /* 8112 */;
 import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11715 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17233 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17234 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

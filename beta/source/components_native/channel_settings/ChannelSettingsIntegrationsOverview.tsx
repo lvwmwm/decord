@@ -1,9 +1,9 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17310
+// Function ID: 17311
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 2049, 2045, 1078, 21, 558, 568, 1488, 7415, 1119, 1401, 1181, 5903, 5822, 4758, 580, 504, 17204, 17310, 5186, 8876, 2]
+// Dependencies: [19, 2049, 2045, 1078, 21, 558, 568, 1488, 7415, 1119, 1401, 1181, 5903, 5822, 4758, 580, 504, 17205, 17311, 5186, 8876, 2]
 
-// Module 17309 (ChannelSettingsIntegrationsOverview)
+// Module 17310 (ChannelSettingsIntegrationsOverview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 580 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
@@ -223,7 +223,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       obj7.label = intl.string(Form(1119).t.jp25Id);
       const intl2 = Form(1119).intl;
       obj7.subLabel = intl2.string(Form(1119).t.mKIOkI);
-      obj7.icon = closure_6(Form(17204).WebhookIcon, {});
+      obj7.icon = closure_6(Form(17205).WebhookIcon, {});
       obj7.onPress = function onPress() {
         return navigation.push(ChannelSettingsSections.WEBHOOKS);
       };
@@ -235,7 +235,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         obj8.label = intl3.string(Form(1119).t.OrV60r);
         const intl4 = Form(1119).intl;
         obj8.subLabel = intl4.string(Form(1119).t.rQREJl);
-        obj8.icon = tmp13(Form(17310).ChannelsFollowedIcon, {});
+        obj8.icon = tmp13(Form(17311).ChannelsFollowedIcon, {});
         obj8.onPress = function onPress() {
           return navigation.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
         };
@@ -270,7 +270,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       obj6.label = intl.string(tmp(1119).t.jp25Id);
       const intl2 = tmp(1119).intl;
       obj6.subLabel = intl2.string(tmp(1119).t.mKIOkI);
-      obj6.icon = tmp6(tmp(17204).WebhookIcon, {});
+      obj6.icon = tmp6(tmp(17205).WebhookIcon, {});
       obj6.onPress = function onPress() {
         return closure_1.push(ChannelSettingsSections.WEBHOOKS);
       };
@@ -282,7 +282,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         obj7.label = intl3.string(tmp(1119).t.OrV60r);
         const intl4 = tmp(1119).intl;
         obj7.subLabel = intl4.string(tmp(1119).t.rQREJl);
-        obj7.icon = tmp6(tmp(17310).ChannelsFollowedIcon, {});
+        obj7.icon = tmp6(tmp(17311).ChannelsFollowedIcon, {});
         obj7.onPress = function onPress() {
           return closure_1.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
         };

@@ -1,9 +1,9 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17911
+// Function ID: 17912
 // Name: VoiceChannelSettingsManager
 // Dependencies: [502, 14268, 2045, 2099, 14269, 1078, 577, 7365, 2]
 
-// Module 17910 (VoiceChannelSettingsManager)
+// Module 17911 (VoiceChannelSettingsManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import BitRateStore from "BitRateStore" /* 14268 */;

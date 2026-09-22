@@ -1,9 +1,9 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 17973
+// Function ID: 17974
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 11993, 2111, 21, 558, 568, 17951, 4725, 7449, 7396, 4754, 1119, 5901, 5900, 2]
+// Dependencies: [19, 11993, 2111, 21, 558, 568, 17952, 4725, 7449, 7396, 4754, 1119, 5901, 5900, 2]
 
-// Module 17972 (TimeoutDurationActionSheet)
+// Module 17973 (TimeoutDurationActionSheet)
 import util from "util" /* 1119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -11,7 +11,7 @@ import TableRadioRow from "TableRadioRow" /* 5900 */;
 import TableRadioGroup from "TableRadioGroup" /* 5901 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
 import ActionSheet2 from "ActionSheet" /* 7449 */;
-import getActionInfo from "getActionInfo" /* 17951 */;
+import getActionInfo from "getActionInfo" /* 17952 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -317,7 +317,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onRemove) => {
     arr = closure_4();
   }
   const obj = onSelectDuration(568);
-  const actionInfo = onSelectDuration(17951).getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
+  const actionInfo = onSelectDuration(17952).getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
   cResult[0] = action;
   cResult[1] = triggerType;
   cResult[2] = actionInfo;

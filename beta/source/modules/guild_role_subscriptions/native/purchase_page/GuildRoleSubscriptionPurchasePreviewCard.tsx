@@ -1,9 +1,9 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16898
+// Function ID: 16899
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2045, 21, 4758, 580, 558, 568, 7222, 4754, 4725, 16898, 1984, 10525, 15499, 1181, 504, 4911, 1119, 5241, 15486, 16893, 5802, 16899, 2]
+// Dependencies: [32, 19, 17, 2045, 21, 4758, 580, 558, 568, 7222, 4754, 4725, 16899, 1984, 10525, 15499, 1181, 504, 4911, 1119, 5241, 15486, 16894, 5802, 16900, 2]
 
-// Module 16897 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 16898 (GuildRoleSubscriptionPurchasePreviewCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -495,7 +495,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const first1 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useTierEmojiIds(listingId, guildId), 1)[0];
   const first2 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useChannelBenefits(listingId), 1)[0];
   const first3 = _slicedToArray(GuildRoleSubscriptionListingEditStateUtilsAll.useIntangibleBenefits(listingId), 1)[0];
-  const formattedSubscriptionPlan = listingId(16893).useFormattedSubscriptionPlan(listingId);
+  const formattedSubscriptionPlan = listingId(16894).useFormattedSubscriptionPlan(listingId);
   const first4 = first2[0];
   const first5 = first3[0];
   const size = first1.size;
@@ -571,7 +571,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
             }
             if (cResult[22] !== listingId) {
               const obj11 = { listingId };
-              const tmp45 = closure_8(guildId(16899), obj11);
+              const tmp45 = closure_8(guildId(16900), obj11);
               cResult[22] = listingId;
               cResult[23] = tmp45;
               let tmp42 = tmp45;
@@ -733,7 +733,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   }
   const fn = function l() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(16898, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
+    obj.openLazy(asyncRequireImpl(16899, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
   };
   cResult[0] = guildId;
   cResult[1] = listingId;
@@ -753,8 +753,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   const size = first.size;
   const obj7 = { style: tmp.container, children: null };
   const obj8 = { style: tmp.header, children: null };
-  const formattedSubscriptionPlan = listingId(16893).useFormattedSubscriptionPlan(listingId);
-  const obj6 = listingId(16893);
+  const formattedSubscriptionPlan = listingId(16894).useFormattedSubscriptionPlan(listingId);
+  const obj6 = listingId(16894);
   const tmp11 = guildId;
   if (str == null) {
     str = "";
@@ -765,7 +765,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
   obj10.children = items1;
   items[2] = closure_9(closure_6, obj10);
   obj8.children = items;
-  const items2 = [closure_9(closure_6, obj8), closure_8(listingId(1181).Spacer, { size: 16 }), closure_8(tmp11(16899), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj8), closure_8(listingId(1181).Spacer, { size: 16 }), closure_8(tmp11(16900), { listingId }), ];
   let tmp8Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result6) {
     const items3 = [tmp10(tmp4(1181).Spacer, { size: 24 }), , ];
@@ -836,7 +836,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((listingId) => {
     const obj45 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(16898, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
+          obj.openLazy(asyncRequireImpl(16899, dependencyMap.paths), "PurchaseCard:" + listingId, { listingId, guildId });
         }
     };
     items3[2] = tmp10(closure_17, obj45);

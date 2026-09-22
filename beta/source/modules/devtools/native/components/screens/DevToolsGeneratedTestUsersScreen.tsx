@@ -320,7 +320,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((pool) => {
     class I {
       constructor() {
         obj = closure_1(closure_2[33]);
-        obj1 = { default: f70997 };
+        obj1 = { default: f70998 };
         obj4 = { pool };
         openLazyResult = obj.openLazy(Promise.resolve(obj1), "generated-test-users", obj4);
         return;
@@ -332,7 +332,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((pool) => {
     class I {
       constructor() {
         obj = closure_1(closure_2[33]);
-        obj1 = { default: f70997 };
+        obj1 = { default: f70998 };
         obj4 = { pool };
         openLazyResult = obj.openLazy(Promise.resolve(obj1), "generated-test-users", obj4);
         return;
@@ -343,7 +343,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((pool) => {
     class I {
       constructor() {
         obj = closure_1(closure_2[33]);
-        obj1 = { default: f70997 };
+        obj1 = { default: f70998 };
         obj4 = { pool };
         openLazyResult = obj.openLazy(Promise.resolve(obj1), "generated-test-users", obj4);
         return;
@@ -355,7 +355,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((pool) => {
       class I {
         constructor() {
           obj = closure_1(closure_2[33]);
-          obj1 = { default: f70997 };
+          obj1 = { default: f70998 };
           obj4 = { pool };
           openLazyResult = obj.openLazy(Promise.resolve(obj1), "generated-test-users", obj4);
           return;

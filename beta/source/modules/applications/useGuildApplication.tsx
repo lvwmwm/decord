@@ -1,10 +1,10 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18142
+// Function ID: 18143
 // Name: useGuildApplication
 // Dependencies: [5, 32, 19, 4985, 504, 7410, 4659, 2]
 // Exports: default
 
-// Module 18141 (useGuildApplication)
+// Module 18142 (useGuildApplication)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

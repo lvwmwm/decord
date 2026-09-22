@@ -1,10 +1,10 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16952
+// Function ID: 16953
 // Name: vibegrationsProjectActions
-// Dependencies: [5, 13364, 9307, 2052, 16945, 4457, 5116, 1119, 3682, 15414, 10150, 11860, 7199, 16952, 4706, 15804, 16954, 15365, 9398, 4700, 7436, 4903, 10925, 4458, 4704, 7624, 4715, 9308, 2]
+// Dependencies: [5, 13364, 9307, 2052, 16946, 4457, 5116, 1119, 3682, 15414, 10150, 11860, 7199, 16953, 4706, 15804, 16955, 15365, 9398, 4700, 7436, 4903, 10925, 4458, 4704, 7624, 4715, 9308, 2]
 // Exports: vibegrationsProjectActions
 
-// Module 16951 (vibegrationsProjectActions)
+// Module 16952 (vibegrationsProjectActions)
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import ToastUtils from "ToastUtils" /* 4457 */;
@@ -12,7 +12,7 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import CopyIcon from "CopyIcon" /* 4704 */;
 import ChannelUtils from "ChannelUtils" /* 4903 */;
 import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import VibegrationsArchivePicker from "VibegrationsArchivePicker" /* 16945 */;
+import VibegrationsArchivePicker from "VibegrationsArchivePicker" /* 16946 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -85,7 +85,7 @@ let closure_9 = async function _importIntoProject(arg0, value) {
             closure_2_1();
           }
           const intl2 = tmp3(1119).intl;
-          await tmp3(16945).sendVibegrationsArchiveImport(id.id, closure_2_2, intl2.string(v2(3682).C7GU2r));
+          await tmp3(16946).sendVibegrationsArchiveImport(id.id, closure_2_2, intl2.string(v2(3682).C7GU2r));
           if (1 === tmp7) {
             dependencyMap = 0;
             const intl = tmp3(1119).intl;
@@ -174,7 +174,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     let obj3 = { label: null, IconComponent: null, action: null };
     let intl3 = project(1119).intl;
     obj3.label = intl3.string(_modDef3682.vPI794);
-    obj3.IconComponent = project(16952).RemixIcon;
+    obj3.IconComponent = project(16953).RemixIcon;
     obj3.action = project.onRemix;
     items1.push(obj3);
   }
@@ -217,7 +217,7 @@ export const vibegrationsProjectActions = function vibegrationsProjectActions(pr
     let obj6 = { label: null, IconComponent: null, action: null };
     const intl6 = tmp18(1119).intl;
     obj6.label = intl6.string(tmp20(3682)["3qelzD"]);
-    obj6.IconComponent = tmp18(16954).LinkPlusIcon;
+    obj6.IconComponent = tmp18(16955).LinkPlusIcon;
     obj6.action = onConnectTool;
     items1.push(obj6);
   }

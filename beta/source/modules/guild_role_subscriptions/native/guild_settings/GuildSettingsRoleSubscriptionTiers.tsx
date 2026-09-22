@@ -1,9 +1,9 @@
-// Module ID: 18197
-// Function ID: 18198
+// Module ID: 18198
+// Function ID: 18199
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 9834, 2067, 4393, 15464, 1078, 1378, 21, 4758, 580, 4725, 18198, 1984, 1119, 7481, 15490, 558, 568, 4754, 10017, 565, 15486, 5802, 10626, 1616, 14169, 1488, 15472, 18186, 14164, 15471, 12, 5839, 18200, 18201, 38, 10051, 18235, 18196, 2]
+// Dependencies: [32, 19, 17, 9834, 2067, 4393, 15464, 1078, 1378, 21, 4758, 580, 4725, 18199, 1984, 1119, 7481, 15490, 558, 568, 4754, 10017, 565, 15486, 5802, 10626, 1616, 14169, 1488, 15472, 18187, 14164, 15471, 12, 5839, 18201, 18202, 38, 10051, 18236, 18197, 2]
 
-// Module 18197 (GuildSettingsRoleSubscriptionTiers)
+// Module 18198 (GuildSettingsRoleSubscriptionTiers)
 import _mod12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -16,7 +16,7 @@ import PriceUtils from "PriceUtils" /* 7481 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 10017 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
 import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15490 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18196 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18197 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9834 */;
@@ -592,7 +592,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
   const obj5 = {
     onPress: editStateId.onPress,
     onLongPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18198, dependencyMap.paths), "TierArchiveOrDelete", { editStateId, guildId, groupListingId });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18199, dependencyMap.paths), "TierArchiveOrDelete", { editStateId, guildId, groupListingId });
     },
     children: null
   };
@@ -952,8 +952,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         id = first.id;
       }
       obj.groupListingId = id;
-      const result = tmp(18200).pushTierTemplateSelectionScene(navigation, obj);
-      const tmpResult = tmp(18200);
+      const result = tmp(18201).pushTierTemplateSelectionScene(navigation, obj);
+      const tmpResult = tmp(18201);
     } else {
       const obj2 = { guildId, groupListingId: null, onAfterTierCreation: null };
       let id1;
@@ -964,8 +964,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       obj2.onAfterTierCreation = function onAfterTierCreation() {
         navigation.navigate(constants.ROLE_SUBSCRIPTIONS_TIERS);
       };
-      const result1 = tmp(18201).openTierCreationModal(obj2);
-      const tmpResult2 = tmp(18201);
+      const result1 = tmp(18202).openTierCreationModal(obj2);
+      const tmpResult2 = tmp(18202);
     }
   }, items1);
   const obj6 = guildEligibleForTierTemplates(first[23]);
@@ -994,7 +994,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             if (first != null) {
               id = first.id;
             }
-            guildEligibleForTierTemplates(18200).pushTierEditScene(navigation, {
+            guildEligibleForTierTemplates(18201).pushTierEditScene(navigation, {
               groupListingId: id,
               initialEditStateId,
               onBeforeDispatchNewListing(id) {

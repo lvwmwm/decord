@@ -1,11 +1,11 @@
-// Module ID: 18016
-// Function ID: 18017
+// Module ID: 18017
+// Function ID: 18018
 // Name: GuildSettingsStickerCreateModal
-// Dependencies: [19, 21, 558, 568, 11226, 1119, 18017, 11229, 2]
+// Dependencies: [19, 21, 558, 568, 11226, 1119, 18018, 11229, 2]
 
-// Module 18016 (GuildSettingsStickerCreateModal)
+// Module 18017 (GuildSettingsStickerCreateModal)
 import util from "util" /* 1119 */;
-import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 18017 */;
+import GuildSettingsStickerCreateDefault from "GuildSettingsStickerCreate" /* 18018 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,13 +1,13 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16963
+// Function ID: 16964
 // Name: useVibegrationsPreviewMode
-// Dependencies: [32, 19, 502, 558, 568, 504, 16963, 16964, 9285, 7410, 9590, 2]
+// Dependencies: [32, 19, 502, 558, 568, 504, 16964, 16965, 9285, 7410, 9590, 2]
 
-// Module 16962 (useVibegrationsPreviewMode)
+// Module 16963 (useVibegrationsPreviewMode)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
-import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16963 */;
-import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 16964 */;
+import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16964 */;
+import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 16965 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -103,11 +103,11 @@ export const useVibegrationsPreviewMode = ReactCompilerGating.isReactCompilerEna
     }
     const tmpResult9 = tmp(7410);
     const obj3 = { installScope, hasFrame: declaredActivity, hasProfileWidget: tmp23, hasBotDm: tmp26, ownerAuthorizationRevoked };
-    const result1 = tmp(16964).previewModeAvailability(obj3);
+    const result1 = tmp(16965).previewModeAvailability(obj3);
     let previewMode = null;
     if (!(null != applicationId && application.isLoading)) {
-      previewMode = tmp(16964).resolvePreviewMode(tmp6, result1);
-      const tmpResult12 = tmp(16964);
+      previewMode = tmp(16965).resolvePreviewMode(tmp6, result1);
+      const tmpResult12 = tmp(16965);
     }
     if (cResult[2] === result1) {
       if (cResult[3] === tmp31) {
@@ -126,7 +126,7 @@ export const useVibegrationsPreviewMode = ReactCompilerGating.isReactCompilerEna
     cResult[5] = tmp11;
     cResult[6] = obj4;
     tmp34 = obj4;
-    const tmpResult11 = tmp(16964);
+    const tmpResult11 = tmp(16965);
   }
 }) : ((arg0) => {
   ({ applicationId, previewApplicationId, declaredActivity, mainCardOnly } = arg0);
@@ -193,12 +193,12 @@ export const useVibegrationsPreviewMode = ReactCompilerGating.isReactCompilerEna
     }
     const tmp8Result7 = tmp8(7410);
     const obj3 = { installScope, hasFrame: declaredActivity, hasProfileWidget: tmp18, hasBotDm: tmp21, ownerAuthorizationRevoked };
-    const result1 = tmp8(16964).previewModeAvailability(obj3);
+    const result1 = tmp8(16965).previewModeAvailability(obj3);
     const obj4 = { availability: result1, isResolving: null != applicationId && application.isLoading, activeMode: null, setMode: null, widgetApplicationId: null };
     let previewMode = null;
     if (!(null != applicationId && application.isLoading)) {
-      previewMode = tmp8(16964).resolvePreviewMode(tmp2, result1);
-      const tmp8Result10 = tmp8(16964);
+      previewMode = tmp8(16965).resolvePreviewMode(tmp2, result1);
+      const tmp8Result10 = tmp8(16965);
     }
     obj4.activeMode = previewMode;
     obj4.setMode = tmp3;

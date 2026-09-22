@@ -1,9 +1,9 @@
-// Module ID: 17031
-// Function ID: 17032
+// Module ID: 17032
+// Function ID: 17033
 // Name: useVibegrationsPlanDesign
 // Dependencies: [32, 19, 13364, 558, 568, 2]
 
-// Module 17031 (useVibegrationsPlanDesign)
+// Module 17032 (useVibegrationsPlanDesign)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

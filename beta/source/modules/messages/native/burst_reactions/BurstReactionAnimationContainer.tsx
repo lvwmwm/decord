@@ -1,9 +1,9 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17385
+// Function ID: 17386
 // Name: BurstReactionAnimationContainer
 // Dependencies: [32, 19, 17, 2042, 21, 4758, 580, 8031, 558, 568, 4726, 4727, 577, 4497, 4759, 2031, 10921, 1181, 8073, 4754, 1119, 4471, 2]
 
-// Module 17384 (BurstReactionAnimationContainer)
+// Module 17385 (BurstReactionAnimationContainer)
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import nativeDefault from "native" /* 580 */;

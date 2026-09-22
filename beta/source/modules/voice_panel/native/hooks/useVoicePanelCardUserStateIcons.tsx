@@ -1,16 +1,16 @@
-// Module ID: 17500
-// Function ID: 17501
+// Module ID: 17501
+// Function ID: 17502
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4781, 4777, 4779, 21, 558, 568, 12419, 9918, 565, 10271, 4813, 10236, 16576, 17501, 4458, 7176, 580, 1119, 2]
+// Dependencies: [19, 4781, 4777, 4779, 21, 558, 568, 12419, 9918, 565, 10271, 4813, 10236, 16576, 17502, 4458, 7176, 580, 1119, 2]
 
-// Module 17500 (useVoicePanelCardUserStateIcons)
+// Module 17501 (useVoicePanelCardUserStateIcons)
 import util from "util" /* 1119 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9918 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10236 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10271 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17501 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17502 */;
 import noop from "module_19" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
 import VoiceStateStore from "VoiceStateStore" /* 4777 */;

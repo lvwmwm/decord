@@ -1,9 +1,9 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17135
+// Function ID: 17136
 // Name: guild_channels/ChannelTitle
 // Dependencies: [19, 4940, 21, 4758, 580, 558, 568, 12214, 4754, 2]
 
-// Module 17134 (guild_channels/ChannelTitle)
+// Module 17135 (guild_channels/ChannelTitle)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;

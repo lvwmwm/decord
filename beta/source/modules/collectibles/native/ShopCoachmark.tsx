@@ -1,9 +1,9 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 17259
+// Function ID: 17260
 // Name: ShopCoachmark
 // Dependencies: [19, 2042, 21, 4758, 558, 568, 1181, 1119, 580, 10452, 2]
 
-// Module 17258 (ShopCoachmark)
+// Module 17259 (ShopCoachmark)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

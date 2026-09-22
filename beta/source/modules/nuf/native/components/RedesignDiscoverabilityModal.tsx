@@ -1,9 +1,9 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17861
+// Function ID: 17862
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 12824, 1376, 1078, 21, 4758, 580, 5897, 558, 568, 1488, 504, 12831, 1098, 17861, 12851, 12844, 1253, 12843, 1119, 7246, 2]
+// Dependencies: [19, 17, 12824, 1376, 1078, 21, 4758, 580, 5897, 558, 568, 1488, 504, 12831, 1098, 17862, 12851, 12844, 1253, 12843, 1119, 7246, 2]
 
-// Module 17860 (RedesignDiscoverabilityModal)
+// Module 17861 (RedesignDiscoverabilityModal)
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1253 */;

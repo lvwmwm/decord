@@ -1,16 +1,16 @@
-// Module ID: 17080
-// Function ID: 17081
+// Module ID: 17081
+// Function ID: 17082
 // Name: VibegrationsTraceDetailSheet
-// Dependencies: [19, 17, 9307, 21, 4758, 580, 558, 568, 4754, 1119, 3682, 17076, 17075, 1616, 504, 17077, 17081, 17082, 17079, 7449, 7396, 6863, 2]
+// Dependencies: [19, 17, 9307, 21, 4758, 580, 558, 568, 4754, 1119, 3682, 17077, 17076, 1616, 504, 17078, 17082, 17083, 17080, 7449, 7396, 6863, 2]
 
-// Module 17080 (VibegrationsTraceDetailSheet)
+// Module 17081 (VibegrationsTraceDetailSheet)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17076 */;
+import vibegrations_VibegrationsTraceFormat from "vibegrations/VibegrationsTraceFormat" /* 17077 */;
 import noop from "module_19" /* 19 */;
 import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9307 */;
 
@@ -154,11 +154,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((field) => {
           omitted = "content";
         }
         if (cResult[6] !== omitted) {
-          const omissionLabelResult = tmp(17076).omissionLabel(omitted);
+          const omissionLabelResult = tmp(17077).omissionLabel(omitted);
           cResult[6] = omitted;
           cResult[7] = omissionLabelResult;
           let tmp9 = omissionLabelResult;
-          const tmpResult = tmp(17076);
+          const tmpResult = tmp(17077);
         } else {
           tmp9 = cResult[7];
         }
@@ -385,7 +385,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   ({ entryId, initialEntry } = projectId);
   const tmp4 = closure_8();
   let obj = projectId(568);
-  const traceCategoryTextStyles = projectId(17075).useTraceCategoryTextStyles();
+  const traceCategoryTextStyles = projectId(17076).useTraceCategoryTextStyles();
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [VibegrationsProjectStore];
@@ -408,10 +408,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     tmp9 = cResult[2];
     tmp10 = cResult[3];
   }
-  const obj2 = projectId(17075);
+  const obj2 = projectId(17076);
   const stateFromStoresArray = tmp(504).useStateFromStoresArray(first, tmp9, tmp10);
   const tmpResult = tmp(504);
-  let findTraceEntryResult = tmp(17077).findTraceEntry(stateFromStoresArray, entryId);
+  let findTraceEntryResult = tmp(17078).findTraceEntry(stateFromStoresArray, entryId);
   if (findTraceEntryResult == null) {
     findTraceEntryResult = initialEntry;
   }
@@ -421,31 +421,31 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if (parentId == null) {
       parentId = null;
     }
-    findTraceEntryResult1 = tmp(17077).findTraceEntry(stateFromStoresArray, parentId);
-    const tmpResult16 = tmp(17077);
+    findTraceEntryResult1 = tmp(17078).findTraceEntry(stateFromStoresArray, parentId);
+    const tmpResult16 = tmp(17078);
   }
-  const tmpResult15 = tmp(17077);
-  const length = tmp(17077).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
-  const tmpResult17 = tmp(17077);
-  const traceDetailSectionsResult = tmp(17081).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
+  const tmpResult15 = tmp(17078);
+  const length = tmp(17078).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
+  const tmpResult17 = tmp(17078);
+  const traceDetailSectionsResult = tmp(17082).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
   const obj3 = { childCount: length, hasParent: null != findTraceEntryResult1 };
-  const tmpResult18 = tmp(17081);
+  const tmpResult18 = tmp(17082);
   let detailId;
   if ("tool" === findTraceEntryResult.kind) {
     detailId = findTraceEntryResult.detailId;
   }
-  const vibegrationsTraceDetail = tmp(17082).useVibegrationsTraceDetail(projectId, detailId);
+  const vibegrationsTraceDetail = tmp(17083).useVibegrationsTraceDetail(projectId, detailId);
   const tmp17 = "model" === findTraceEntryResult.kind ? findTraceEntryResult.model : findTraceEntryResult.tool;
-  const tmpResult19 = tmp(17082);
-  const formatClockTimeResult = tmp(17079).formatClockTime(findTraceEntryResult.startedAt, "millis");
-  const tmpResult20 = tmp(17079);
-  const traceCategoryResult = tmp(17077).traceCategory(findTraceEntryResult);
+  const tmpResult19 = tmp(17083);
+  const formatClockTimeResult = tmp(17080).formatClockTime(findTraceEntryResult.startedAt, "millis");
+  const tmpResult20 = tmp(17080);
+  const traceCategoryResult = tmp(17078).traceCategory(findTraceEntryResult);
   if (cResult[4] !== vibegrationsTraceDetail) {
-    const traceRichStatusLabelResult = tmp(17076).traceRichStatusLabel(vibegrationsTraceDetail);
+    const traceRichStatusLabelResult = tmp(17077).traceRichStatusLabel(vibegrationsTraceDetail);
     cResult[4] = vibegrationsTraceDetail;
     cResult[5] = traceRichStatusLabelResult;
     let tmp20 = traceRichStatusLabelResult;
-    const tmpResult22 = tmp(17076);
+    const tmpResult22 = tmp(17077);
   } else {
     tmp20 = cResult[5];
   }
@@ -461,19 +461,19 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const obj6 = { contentContainerStyle: tmp22, children: null };
   const obj7 = { style: tmp4.content, children: null };
   const obj8 = { style: tmp4.head, children: null };
-  const items2 = [closure_5(tmp(17075).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
+  const items2 = [closure_5(tmp(17076).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
   const obj10 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: null };
   const obj9 = { status: findTraceEntryResult.status };
-  const tmpResult21 = tmp(17077);
-  obj10.children = tmp(17076).categoryLabel(traceCategoryResult);
+  const tmpResult21 = tmp(17078);
+  obj10.children = tmp(17077).categoryLabel(traceCategoryResult);
   items2[1] = closure_5(tmp(4754).Text, obj10);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp4.headTitle, children: null };
   if (null == findTraceEntryResult.durationMs) {
     let intl = tmp(1119).intl;
     let stringResult = intl.string(tmp6(3682).HpKDyl);
   } else {
-    stringResult = tmp(17076).formatDuration(findTraceEntryResult.durationMs);
-    const tmpResult24 = tmp(17076);
+    stringResult = tmp(17077).formatDuration(findTraceEntryResult.durationMs);
+    const tmpResult24 = tmp(17077);
   }
   obj11.children = stringResult;
   items2[2] = closure_5(tmp(4754).Text, obj11);
@@ -594,10 +594,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const intl5 = tmp(1119).intl;
         obj23.label = intl5.string(tmp6(3682).Ran4BY);
         const intl6 = tmp(1119).intl;
-        const obj24 = { tokens: tmp(17076).formatTokens(findTraceEntryResult.promptTokens) };
+        const obj24 = { tokens: tmp(17077).formatTokens(findTraceEntryResult.promptTokens) };
         obj23.value = intl6.formatToPlainString(tmp6(3682)["PYO+Jv"], obj24);
         tmp23Result23 = tmp23(closure_9, obj23);
-        const tmpResult25 = tmp(17076);
+        const tmpResult25 = tmp(17077);
       }
       const items6 = [tmp23Result23, , , , , , ];
       let tmp23Result24 = null;
@@ -606,25 +606,25 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const intl7 = tmp(1119).intl;
         obj25.label = intl7.string(tmp6(3682).vPIcyv);
         const intl8 = tmp(1119).intl;
-        const obj26 = { system: tmp(17076).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
+        const obj26 = { system: tmp(17077).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
         const tmp43 = closure_9;
-        const tmpResult26 = tmp(17076);
+        const tmpResult26 = tmp(17077);
         let num10 = findTraceEntryResult.toolsTokens;
         if (num10 == null) {
           num10 = 0;
         }
-        obj26.tools = tmp(17076).formatTokens(num10);
+        obj26.tools = tmp(17077).formatTokens(num10);
         let num11 = findTraceEntryResult.tools;
         if (num11 == null) {
           num11 = 0;
         }
         obj26.toolCount = num11;
-        const tmpResult27 = tmp(17076);
+        const tmpResult27 = tmp(17077);
         let num12 = findTraceEntryResult.messagesTokens;
         if (num12 == null) {
           num12 = 0;
         }
-        obj26.messages = tmp(17076).formatTokens(num12);
+        obj26.messages = tmp(17077).formatTokens(num12);
         let num13 = findTraceEntryResult.messages;
         if (num13 == null) {
           num13 = 0;
@@ -632,7 +632,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         obj26.messageCount = num13;
         obj25.value = intl8.formatToPlainString(tmp6(3682).Qy2iTq, obj26);
         tmp23Result24 = tmp23(tmp43, obj25);
-        const tmpResult28 = tmp(17076);
+        const tmpResult28 = tmp(17077);
       }
       items6[1] = tmp23Result24;
       let tmp23Result25 = null;
@@ -799,13 +799,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   ({ entryId, initialEntry } = projectId);
   const tmp = closure_8();
   const tmp2 = projectId;
-  const traceCategoryTextStyles = projectId(17075).useTraceCategoryTextStyles();
-  let obj = projectId(17075);
+  const traceCategoryTextStyles = projectId(17076).useTraceCategoryTextStyles();
+  let obj = projectId(17076);
   const items = [VibegrationsProjectStore];
   const items1 = [projectId];
   const stateFromStoresArray = projectId(504).useStateFromStoresArray(items, () => VibegrationsProjectStore.getTrace(projectId), items1);
   const obj2 = projectId(504);
-  let findTraceEntryResult = projectId(17077).findTraceEntry(stateFromStoresArray, entryId);
+  let findTraceEntryResult = projectId(17078).findTraceEntry(stateFromStoresArray, entryId);
   if (findTraceEntryResult == null) {
     findTraceEntryResult = initialEntry;
   }
@@ -815,44 +815,44 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     if (parentId == null) {
       parentId = null;
     }
-    findTraceEntryResult1 = tmp2(17077).findTraceEntry(stateFromStoresArray, parentId);
-    const tmp2Result = tmp2(17077);
+    findTraceEntryResult1 = tmp2(17078).findTraceEntry(stateFromStoresArray, parentId);
+    const tmp2Result = tmp2(17078);
   }
-  const obj3 = projectId(17077);
-  const length = tmp2(17077).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
-  const tmp2Result13 = tmp2(17077);
-  const traceDetailSectionsResult = tmp2(17081).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
+  const obj3 = projectId(17078);
+  const length = tmp2(17078).traceChildren(stateFromStoresArray, findTraceEntryResult.id).length;
+  const tmp2Result13 = tmp2(17078);
+  const traceDetailSectionsResult = tmp2(17082).traceDetailSections(findTraceEntryResult, { childCount: length, hasParent: null != findTraceEntryResult1 });
   const obj4 = { childCount: length, hasParent: null != findTraceEntryResult1 };
-  const tmp2Result14 = tmp2(17081);
+  const tmp2Result14 = tmp2(17082);
   let detailId;
   if ("tool" === findTraceEntryResult.kind) {
     detailId = findTraceEntryResult.detailId;
   }
-  const vibegrationsTraceDetail = tmp2(17082).useVibegrationsTraceDetail(projectId, detailId);
+  const vibegrationsTraceDetail = tmp2(17083).useVibegrationsTraceDetail(projectId, detailId);
   const tmp12 = "model" === findTraceEntryResult.kind ? findTraceEntryResult.model : findTraceEntryResult.tool;
-  const tmp2Result15 = tmp2(17082);
-  const formatClockTimeResult = tmp2(17079).formatClockTime(findTraceEntryResult.startedAt, "millis");
-  const tmp2Result16 = tmp2(17079);
-  const traceCategoryResult = tmp2(17077).traceCategory(findTraceEntryResult);
-  const tmp2Result17 = tmp2(17077);
-  const traceRichStatusLabelResult = tmp2(17076).traceRichStatusLabel(vibegrationsTraceDetail);
+  const tmp2Result15 = tmp2(17083);
+  const formatClockTimeResult = tmp2(17080).formatClockTime(findTraceEntryResult.startedAt, "millis");
+  const tmp2Result16 = tmp2(17080);
+  const traceCategoryResult = tmp2(17078).traceCategory(findTraceEntryResult);
+  const tmp2Result17 = tmp2(17078);
+  const traceRichStatusLabelResult = tmp2(17077).traceRichStatusLabel(vibegrationsTraceDetail);
   const obj5 = { scrollable: true, header: closure_5(tmp2(7396).BottomSheetTitleHeader, { title: tmp12 }), children: null };
   const obj6 = { contentContainerStyle: { paddingBottom: useSafeAreaInsetsDefault().bottom }, children: null };
   const obj7 = { style: tmp.content, children: null };
   const obj8 = { style: tmp.head, children: null };
-  const items2 = [closure_5(tmp2(17075).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
+  const items2 = [closure_5(tmp2(17076).TraceStatusDot, { status: findTraceEntryResult.status }), , ];
   const obj10 = { variant: "text-xs/semibold", style: traceCategoryTextStyles[traceCategoryResult], children: null };
   const obj9 = { status: findTraceEntryResult.status };
-  const tmp2Result18 = tmp2(17076);
-  obj10.children = tmp2(17076).categoryLabel(traceCategoryResult);
+  const tmp2Result18 = tmp2(17077);
+  obj10.children = tmp2(17077).categoryLabel(traceCategoryResult);
   items2[1] = closure_5(tmp2(4754).Text, obj10);
   const obj11 = { variant: "text-xs/normal", color: "text-muted", style: tmp.headTitle, children: null };
   if (null == findTraceEntryResult.durationMs) {
     let intl = tmp2(1119).intl;
     let stringResult = intl.string(tmp5(3682).HpKDyl);
   } else {
-    stringResult = tmp2(17076).formatDuration(findTraceEntryResult.durationMs);
-    const tmp2Result20 = tmp2(17076);
+    stringResult = tmp2(17077).formatDuration(findTraceEntryResult.durationMs);
+    const tmp2Result20 = tmp2(17077);
   }
   obj11.children = stringResult;
   items2[2] = closure_5(tmp2(4754).Text, obj11);
@@ -973,10 +973,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const intl5 = tmp2(1119).intl;
         obj23.label = intl5.string(tmp5(3682).Ran4BY);
         const intl6 = tmp2(1119).intl;
-        const obj24 = { tokens: tmp2(17076).formatTokens(findTraceEntryResult.promptTokens) };
+        const obj24 = { tokens: tmp2(17077).formatTokens(findTraceEntryResult.promptTokens) };
         obj23.value = intl6.formatToPlainString(tmp5(3682)["PYO+Jv"], obj24);
         tmp16Result23 = tmp16(closure_9, obj23);
-        const tmp2Result21 = tmp2(17076);
+        const tmp2Result21 = tmp2(17077);
       }
       const items6 = [tmp16Result23, , , , , , ];
       let tmp16Result24 = null;
@@ -985,25 +985,25 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         const intl7 = tmp2(1119).intl;
         obj25.label = intl7.string(tmp5(3682).vPIcyv);
         const intl8 = tmp2(1119).intl;
-        const obj26 = { system: tmp2(17076).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
-        const tmp2Result22 = tmp2(17076);
+        const obj26 = { system: tmp2(17077).formatTokens(findTraceEntryResult.systemTokens), tools: null, toolCount: null, messages: null, messageCount: null };
+        const tmp2Result22 = tmp2(17077);
         const tmp37 = closure_9;
         let num2 = findTraceEntryResult.toolsTokens;
         if (num2 == null) {
           num2 = 0;
         }
-        obj26.tools = tmp2(17076).formatTokens(num2);
+        obj26.tools = tmp2(17077).formatTokens(num2);
         let num3 = findTraceEntryResult.tools;
         if (num3 == null) {
           num3 = 0;
         }
         obj26.toolCount = num3;
-        const tmp2Result23 = tmp2(17076);
+        const tmp2Result23 = tmp2(17077);
         let num4 = findTraceEntryResult.messagesTokens;
         if (num4 == null) {
           num4 = 0;
         }
-        obj26.messages = tmp2(17076).formatTokens(num4);
+        obj26.messages = tmp2(17077).formatTokens(num4);
         let num5 = findTraceEntryResult.messages;
         if (num5 == null) {
           num5 = 0;
@@ -1011,7 +1011,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         obj26.messageCount = num5;
         obj25.value = intl8.formatToPlainString(tmp5(3682).Qy2iTq, obj26);
         tmp16Result24 = tmp16(tmp37, obj25);
-        const tmp2Result24 = tmp2(17076);
+        const tmp2Result24 = tmp2(17077);
       }
       items6[1] = tmp16Result24;
       let tmp16Result25 = null;

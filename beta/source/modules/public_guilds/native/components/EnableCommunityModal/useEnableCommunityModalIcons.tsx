@@ -1,9 +1,9 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18106
+// Function ID: 18107
 // Name: useEnableCommunityModalIcons
-// Dependencies: [32, 19, 1089, 4610, 18106, 18107, 18108, 18112, 18113, 7238, 558, 568, 4693, 2]
+// Dependencies: [32, 19, 1089, 4610, 18107, 18108, 18109, 18113, 18114, 7238, 558, 568, 4693, 2]
 
-// Module 18105 (useEnableCommunityModalIcons)
+// Module 18106 (useEnableCommunityModalIcons)
 import useThemeDefault from "useTheme" /* 4693 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -24,9 +24,9 @@ const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(18106);
+      let tmpResult = tmp(18107);
     } else {
-      tmpResult = tmp(18107);
+      tmpResult = tmp(18108);
     }
     return tmpResult;
   },
@@ -41,9 +41,9 @@ Object.defineProperty(prototype, "channelSetup", {
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(18112);
+      let tmpResult = tmp(18113);
     } else {
-      tmpResult = tmp(18113);
+      tmpResult = tmp(18114);
     }
     return tmpResult;
   },

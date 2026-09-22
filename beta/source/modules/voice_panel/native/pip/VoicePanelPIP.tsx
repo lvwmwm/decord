@@ -1,9 +1,9 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17587
+// Function ID: 17588
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 2044, 9311, 4966, 12420, 12418, 17485, 9313, 9312, 21, 4758, 558, 568, 12419, 17486, 12426, 4497, 17484, 10345, 5187, 6891, 17483, 9696, 17587, 4389, 504, 9567, 9589, 8543, 1119, 7320, 17588, 5804, 17589, 17590, 4471, 2]
+// Dependencies: [19, 17, 2044, 9311, 4966, 12420, 12418, 17486, 9313, 9312, 21, 4758, 558, 568, 12419, 17487, 12426, 4497, 17485, 10345, 5187, 6891, 17484, 9696, 17588, 4389, 504, 9567, 9589, 8543, 1119, 7320, 17589, 5804, 17590, 17591, 4471, 2]
 
-// Module 17586 (VoicePanelPIP)
+// Module 17587 (VoicePanelPIP)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4389 */;
@@ -16,10 +16,10 @@ import ExternalPipDefault from "ExternalPip" /* 9696 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
 import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 12426 */;
-import utils_triggerIOSHapticDefault from "utils/triggerIOSHaptic" /* 17483 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17484 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17486 */;
-import VoicePanelPIPScaleCache from "VoicePanelPIPScaleCache" /* 17587 */;
+import utils_triggerIOSHapticDefault from "utils/triggerIOSHaptic" /* 17484 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17485 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17487 */;
+import VoicePanelPIPScaleCache from "VoicePanelPIPScaleCache" /* 17588 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import FramesStore from "FramesStore" /* 9311 */;
@@ -35,7 +35,7 @@ const StyleSheet = get_ActivityIndicator.StyleSheet;
 const VoicePanelConstants = fn(12420);
 ({ DRAWER_SPRING_PHYSICS: closure_9, VoicePanelModes: c10, SECONDARY_PIP_TOP_MARGIN } = VoicePanelConstants);
 const VoicePanelControlsModes = fn(12418).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17485).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17486).VoicePanelPIPModes;
 const ActivityPanelModes = fn(9313).ActivityPanelModes;
 const isLaunched = fn(9312).isLaunched;
 const jsxProd = fn(21);
@@ -226,14 +226,14 @@ let closure_47 = ReactCompilerGating.isReactCompilerEnabled() ? ((pipMode, mainT
                     y = value.baseY + value.offsetY;
                   } else {
                     size = { pipX: wrapperDimensions.get().pipX, pipY: wrapperDimensions.get().pipY, width: result, height: scaledPIPContainerHeight, windowDimensions: windowDimensions.get(), safeArea: safeArea.get(), bottomAvoidanceRegion: pipAvoidanceSpecs.get().bottom, topAvoidanceRegion: pipAvoidanceSpecs.get().top };
-                    const clampedPIPPosition = tmp3(17484).getClampedPIPPosition(size);
+                    const clampedPIPPosition = tmp3(17485).getClampedPIPPosition(size);
                     ({ x, y } = clampedPIPPosition);
-                    const tmp3Result = tmp3(17484);
+                    const tmp3Result = tmp3(17485);
                   }
                   if (value.active) {
                     let PIP_LAYOUT_PHYSICS = options;
                   } else {
-                    PIP_LAYOUT_PHYSICS = tmp3(17484).PIP_LAYOUT_PHYSICS;
+                    PIP_LAYOUT_PHYSICS = tmp3(17485).PIP_LAYOUT_PHYSICS;
                   }
                   const size1 = { width: result, height: scaledPIPContainerHeight, opacity: sharedValue1.get(), transform: null, borderRadius: null };
                   const obj3 = { translateX: null };
@@ -1523,14 +1523,14 @@ let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (active) {
         let targetWidth = originX.targetWidth;
       } else {
-        targetWidth = tmp(5187).withSpring(originX.targetWidth, tmp(17484).PIP_LAYOUT_PHYSICS);
+        targetWidth = tmp(5187).withSpring(originX.targetWidth, tmp(17485).PIP_LAYOUT_PHYSICS);
         const tmpResult = tmp(5187);
       }
       size.width = targetWidth;
       if (active) {
         let targetHeight = originX.targetHeight;
       } else {
-        targetHeight = tmp(5187).withSpring(originX.targetHeight, tmp(17484).PIP_LAYOUT_PHYSICS);
+        targetHeight = tmp(5187).withSpring(originX.targetHeight, tmp(17485).PIP_LAYOUT_PHYSICS);
         const tmpResult2 = tmp(5187);
       }
       size.height = targetHeight;
@@ -1850,14 +1850,14 @@ let closure_54 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (active) {
       let targetWidth = originX.targetWidth;
     } else {
-      targetWidth = tmp(5187).withSpring(originX.targetWidth, tmp(17484).PIP_LAYOUT_PHYSICS);
+      targetWidth = tmp(5187).withSpring(originX.targetWidth, tmp(17485).PIP_LAYOUT_PHYSICS);
       const tmpResult = tmp(5187);
     }
     size.width = targetWidth;
     if (active) {
       let targetHeight = originX.targetHeight;
     } else {
-      targetHeight = tmp(5187).withSpring(originX.targetHeight, tmp(17484).PIP_LAYOUT_PHYSICS);
+      targetHeight = tmp(5187).withSpring(originX.targetHeight, tmp(17485).PIP_LAYOUT_PHYSICS);
       const tmpResult2 = tmp(5187);
     }
     size.height = targetHeight;

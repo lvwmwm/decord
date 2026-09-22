@@ -1,9 +1,9 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 17859
+// Function ID: 17860
 // Name: RedesignSkipAvatarUploadAlertModal
 // Dependencies: [19, 21, 558, 568, 1119, 5116, 5116, 2]
 
-// Module 17858 (RedesignSkipAvatarUploadAlertModal)
+// Module 17859 (RedesignSkipAvatarUploadAlertModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import AlertModal from "AlertModal" /* 5116 */;

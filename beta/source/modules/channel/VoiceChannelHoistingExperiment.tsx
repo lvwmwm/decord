@@ -1,9 +1,9 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17760
+// Function ID: 17761
 // Name: VoiceChannelHoistingExperiment
 // Dependencies: [4675, 4672, 558, 568, 2]
 
-// Module 17759 (VoiceChannelHoistingExperiment)
+// Module 17760 (VoiceChannelHoistingExperiment)
 import c from "c" /* 568 */;
 import ExperimentConstants from "ExperimentConstants" /* 4675 */;
 import createExperiment from "module_4672" /* 4672 */;

@@ -1,9 +1,9 @@
-// Module ID: 17122
-// Function ID: 17123
+// Module ID: 17123
+// Function ID: 17124
 // Name: Separators
 // Dependencies: [19, 17, 8127, 21, 4758, 558, 568, 2]
 
-// Module 17122 (Separators)
+// Module 17123 (Separators)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

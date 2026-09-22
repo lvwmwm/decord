@@ -1,18 +1,18 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 17129
+// Function ID: 17130
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 2050, 8127, 21, 12214, 4603, 1119, 4758, 558, 568, 504, 17129, 5650, 5644, 17130, 12439, 17132, 2]
+// Dependencies: [19, 17, 2050, 8127, 21, 12214, 4603, 1119, 4758, 558, 568, 504, 17130, 5650, 5644, 17131, 12439, 17133, 2]
 
-// Module 17128 (GuildVoiceOrStageChannelRow)
+// Module 17129 (GuildVoiceOrStageChannelRow)
 import c from "c" /* 568 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
 import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5650 */;
 import ChannelListLayout from "ChannelListLayout" /* 12214 */;
 import renderChannelBadge from "renderChannelBadge" /* 12439 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17129 */;
-import guild_channels_VoiceOrStageSummaryRowDefault from "guild_channels/VoiceOrStageSummaryRow" /* 17130 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 17132 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17130 */;
+import guild_channels_VoiceOrStageSummaryRowDefault from "guild_channels/VoiceOrStageSummaryRow" /* 17131 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 17133 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 2050 */;
 
@@ -182,7 +182,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp11 = getVoiceChannelSubtitle(voiceStates, layout);
   }
   const tmpResult = channel(504);
-  const result = channel(17129).renderChannelSubtitle({ subtitle: tmp11, muted: false, layout, channelId: id, guildId: guild_id });
+  const result = channel(17130).renderChannelSubtitle({ subtitle: tmp11, muted: false, layout, channelId: id, guildId: guild_id });
   cResult[4] = id;
   cResult[5] = guild_id;
   cResult[6] = stateFromStores;

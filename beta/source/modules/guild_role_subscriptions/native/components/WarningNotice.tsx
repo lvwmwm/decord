@@ -1,9 +1,9 @@
-// Module ID: 18145
-// Function ID: 18146
+// Module ID: 18146
+// Function ID: 18147
 // Name: WarningNotice
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 5802, 5812, 4754, 5188, 2]
 
-// Module 18145 (WarningNotice)
+// Module 18146 (WarningNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;

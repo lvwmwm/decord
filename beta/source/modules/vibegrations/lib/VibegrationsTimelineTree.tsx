@@ -1,10 +1,10 @@
-// Module ID: 17037
-// Function ID: 17038
+// Module ID: 17038
+// Function ID: 17039
 // Name: VibegrationsTimelineTree
 // Dependencies: [32, 3682, 1119, 2]
 // Exports: announcementNotes, currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 17037 (VibegrationsTimelineTree)
+// Module 17038 (VibegrationsTimelineTree)
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import _slicedToArray from "module_32" /* 32 */;

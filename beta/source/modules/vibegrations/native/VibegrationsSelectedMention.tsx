@@ -1,9 +1,9 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17031
+// Function ID: 17032
 // Name: VibegrationsSelectedMention
 // Dependencies: [19, 21, 4758, 580, 558, 568, 4754, 2]
 
-// Module 17030 (VibegrationsSelectedMention)
+// Module 17031 (VibegrationsSelectedMention)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;

@@ -1,10 +1,10 @@
-// Module ID: 17952
-// Function ID: 17953
+// Module ID: 17953
+// Function ID: 17954
 // Name: BaseActionInfo
 // Dependencies: [2045, 4409, 1376, 11993, 2111, 1119, 4911, 2]
 // Exports: getBaseActionInfo
 
-// Module 17952 (BaseActionInfo)
+// Module 17953 (BaseActionInfo)
 import util from "util" /* 1119 */;
 import useChannelName from "useChannelName" /* 4911 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

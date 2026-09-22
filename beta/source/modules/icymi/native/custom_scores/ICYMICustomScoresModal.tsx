@@ -1,9 +1,9 @@
-// Module ID: 16797
-// Function ID: 16798
+// Module ID: 16798
+// Function ID: 16799
 // Name: ICYMICustomScoresModal
-// Dependencies: [109, 19, 21, 8162, 4758, 580, 558, 568, 7246, 8112, 1119, 11230, 16798, 16799, 2]
+// Dependencies: [109, 19, 21, 8162, 4758, 580, 558, 568, 7246, 8112, 1119, 11230, 16799, 16800, 2]
 
-// Module 16797 (ICYMICustomScoresModal)
+// Module 16798 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 580 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -47,7 +47,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             },
         getComponent() {
-              return closure_0(16798).default;
+              return closure_0(16799).default;
             }
       };
       const tmp9 = closure_5(closure_7.Screen, obj3);
@@ -65,7 +65,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             },
         getComponent() {
-              return closure_0(16799).default;
+              return closure_0(16800).default;
             }
       };
       const tmp13 = closure_5(closure_7.Screen, obj4);
@@ -133,7 +133,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return obj;
       },
       getComponent() {
-        return closure_0(16798).default;
+        return closure_0(16799).default;
       }
     }),
     closure_5(closure_7.Screen, {
@@ -143,7 +143,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return obj;
       },
       getComponent() {
-        return closure_0(16799).default;
+        return closure_0(16800).default;
       }
     })
   ];

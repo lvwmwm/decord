@@ -1,9 +1,9 @@
-// Module ID: 17343
-// Function ID: 17344
+// Module ID: 17344
+// Function ID: 17345
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1078, 21, 4758, 580, 558, 568, 4961, 1253, 9046, 7722, 1616, 17344, 1368, 16979, 2]
+// Dependencies: [109, 19, 17, 1078, 21, 4758, 580, 558, 568, 4961, 1253, 9046, 7722, 1616, 17345, 1368, 16980, 2]
 
-// Module 17343 (modal/ModalScreen)
+// Module 17344 (modal/ModalScreen)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 9046 */;
@@ -324,10 +324,10 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const items2 = [<modal.modal />, ];
   const tmp14 = closure_11;
   const tmp15 = closure_7;
-  tmp7Result = modal(17344);
+  tmp7Result = modal(17345);
   let isIOSResult = modal(1368).isIOS();
   if (isIOSResult) {
-    isIOSResult = closure_10(tmp7(16979).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = closure_10(tmp7(16980).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj4.children = items2;

@@ -1,9 +1,9 @@
-// Module ID: 18052
-// Function ID: 18053
+// Module ID: 18053
+// Function ID: 18054
 // Name: action_sheet/AddMembersActionSheet
-// Dependencies: [32, 19, 17, 18046, 21, 4758, 580, 558, 568, 4479, 5820, 11248, 7224, 4745, 1181, 11, 4472, 1119, 5738, 18051, 8995, 9821, 9826, 7555, 9833, 4725, 5188, 7396, 4754, 7397, 2]
+// Dependencies: [32, 19, 17, 18047, 21, 4758, 580, 558, 568, 4479, 5820, 11248, 7224, 4745, 1181, 11, 4472, 1119, 5738, 18052, 8995, 9821, 9826, 7555, 9833, 4725, 5188, 7396, 4754, 7397, 2]
 
-// Module 18052 (action_sheet/AddMembersActionSheet)
+// Module 18053 (action_sheet/AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -17,13 +17,13 @@ import GuildUtilsDefault from "GuildUtils" /* 5738 */;
 import FormCheckbox from "FormCheckbox" /* 5820 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11248 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18051 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18052 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let MAX_BULK_ROLE_MEMBERS_ADD = fn(18046).MAX_BULK_ROLE_MEMBERS_ADD;
+let MAX_BULK_ROLE_MEMBERS_ADD = fn(18047).MAX_BULK_ROLE_MEMBERS_ADD;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
 const createStyles = fn(4758);

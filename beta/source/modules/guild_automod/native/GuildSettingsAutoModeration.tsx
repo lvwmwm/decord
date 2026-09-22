@@ -1,22 +1,22 @@
-// Module ID: 17942
-// Function ID: 17943
+// Module ID: 17943
+// Function ID: 17944
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 17943, 17945, 1078, 21, 4758, 580, 17947, 1119, 558, 568, 1488, 17950, 17958, 5796, 5903, 4754, 5186, 2112, 8876, 7286, 2]
+// Dependencies: [32, 19, 17944, 17946, 1078, 21, 4758, 580, 17948, 1119, 558, 568, 1488, 17951, 17959, 5796, 5903, 4754, 5186, 2112, 8876, 7286, 2]
 
-// Module 17942 (GuildSettingsAutoModeration)
+// Module 17943 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 580 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
 import TableRowGroup from "TableRowGroup" /* 5903 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17947 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17948 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const AutomodStore = fn(17943);
+const AutomodStore = fn(17944);
 ({ useAutomodRulesList: closure_4, useSyncAutomodRulesEffect: hasOwnProperty } = AutomodStore);
-let closure_6 = fn(17945).useAutomodEditingRuleState;
+let closure_6 = fn(17946).useAutomodEditingRuleState;
 const Constants = fn(1078);
 ({ GuildSettingsSections: closure_7, HelpdeskArticles: closure_8 } = Constants);
 const jsxProd = fn(21);
@@ -617,7 +617,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
           const intl2 = tmp6(1119).intl;
           let stringResult = intl2.string(tmp6(1119).t.sx4E5v);
-        } else if (tmp6(17947).AutomodTriggerCategory.CONTENT === tmp) {
+        } else if (tmp6(17948).AutomodTriggerCategory.CONTENT === tmp) {
           const intl = tmp6(1119).intl;
           stringResult = intl.string(tmp6(1119).t.fphZb0);
         }

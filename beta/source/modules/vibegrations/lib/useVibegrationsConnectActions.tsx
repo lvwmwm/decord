@@ -1,9 +1,9 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 16999
+// Function ID: 17000
 // Name: useVibegrationsConnectActions
 // Dependencies: [5, 32, 19, 13364, 558, 568, 13371, 8646, 1119, 3682, 2]
 
-// Module 16998 (useVibegrationsConnectActions)
+// Module 16999 (useVibegrationsConnectActions)
 import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13371 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;

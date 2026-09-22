@@ -1,9 +1,9 @@
-// Module ID: 16902
-// Function ID: 16903
+// Module ID: 16903
+// Function ID: 16904
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4674, 4945, 4946, 1078, 21, 558, 568, 4497, 504, 7470, 12432, 1245, 4938, 5739, 16903, 16908, 16912, 16913, 16916, 16919, 7469, 2]
+// Dependencies: [19, 4674, 4945, 4946, 1078, 21, 558, 568, 4497, 504, 7470, 12432, 1245, 4938, 5739, 16904, 16909, 16913, 16914, 16917, 16920, 7469, 2]
 
-// Module 16902 (GuildOnboardingHomePage)
+// Module 16903 (GuildOnboardingHomePage)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
@@ -211,14 +211,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     let obj3 = { guildId, scrollValue: sharedValue, children: null };
     const obj4 = { guildId, hideDescription: tmp5 };
-    const items3 = [closure_9(tmp4(16903), obj4), ];
+    const items3 = [closure_9(tmp4(16904), obj4), ];
     if (tmp5) {
       let obj5 = { children: null };
       const obj6 = { guildId };
-      const items4 = [tmp12(tmp4(16908), obj6), , ];
+      const items4 = [tmp12(tmp4(16909), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = tmp12(tmp4(16912), obj7);
-      tmp4 = tmp4(16913);
+      items4[1] = tmp12(tmp4(16913), obj7);
+      tmp4 = tmp4(16914);
       const obj8 = { guildId };
       tmp = tmp12(tmp4, obj8);
       items4[2] = tmp;
@@ -226,12 +226,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       let tmp12Result = tmp10(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp12Result = tmp12(tmp4(16916), obj9);
+      tmp12Result = tmp12(tmp4(16917), obj9);
     }
     items3[1] = tmp12Result;
     obj3.children = items3;
-    closure_11(tmp4(16919), obj3);
-    const tmp4Result = tmp4(16919);
+    closure_11(tmp4(16920), obj3);
+    const tmp4Result = tmp4(16920);
   }
 });
 ReactCompilerGating = fn(558);

@@ -1,14 +1,14 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17328
+// Function ID: 17329
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 2045, 21, 4758, 580, 558, 568, 10630, 1119, 2055, 5900, 17288, 7340, 5901, 4754, 5903, 17328, 17329, 5802, 504, 2]
+// Dependencies: [32, 19, 17, 2045, 21, 4758, 580, 558, 568, 10630, 1119, 2055, 5900, 17289, 7340, 5901, 4754, 5903, 17329, 17330, 5802, 504, 2]
 
-// Module 17327 (ChannelSettingsChangeDefaultForumLayout)
+// Module 17328 (ChannelSettingsChangeDefaultForumLayout)
 import nativeDefault from "native" /* 580 */;
 import FastImageDefault from "FastImage" /* 5802 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10630 */;
-import _modDef17328 from "module_17328" /* 17328 */;
 import _modDef17329 from "module_17329" /* 17329 */;
+import _modDef17330 from "module_17330" /* 17330 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     LIST = tmp(2055).ForumLayout.LIST;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { icon: closure_7(tmp(17288).GridSquareIcon, {}), label: null, value: null };
+    let obj2 = { icon: closure_7(tmp(17289).GridSquareIcon, {}), label: null, value: null };
     const intl2 = tmp(1119).intl;
     obj2.label = intl2.string(tmp(1119).t["U+rQfW"]);
     obj2.value = tmp(2055).ForumLayout.GRID;
@@ -111,11 +111,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp23 = cResult[11];
     }
     if (tmp6 === tmp(2055).ForumLayout.GRID) {
-      let tmp28 = _modDef17328;
+      let tmp28 = _modDef17329;
       let tmp27 = importDefault;
     } else {
       tmp27 = importDefault;
-      tmp28 = _modDef17329;
+      tmp28 = _modDef17330;
     }
     if (cResult[12] === tmp4.thumbnailImagePortrait) {
       if (cResult[13] === tmp28) {
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   obj2.defaultValue = LIST;
   obj2.onChange = callback;
-  const obj3 = { icon: closure_7(channel(17288).GridSquareIcon, {}), label: null, value: null };
+  const obj3 = { icon: closure_7(channel(17289).GridSquareIcon, {}), label: null, value: null };
   const intl2 = tmp7(1119).intl;
   obj3.label = intl2.string(channel(1119).t["U+rQfW"]);
   obj3.value = channel(2055).ForumLayout.GRID;
@@ -204,9 +204,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp6 = View;
   const tmp9 = closure_7;
   if (tmp3 === channel(2055).ForumLayout.GRID) {
-    let tmp10Result = tmp10(17328);
+    let tmp10Result = tmp10(17329);
   } else {
-    tmp10Result = tmp10(17329);
+    tmp10Result = tmp10(17330);
   }
   obj7.source = tmp10Result;
   items2[3] = tmp9(FastImageDefault, obj7);

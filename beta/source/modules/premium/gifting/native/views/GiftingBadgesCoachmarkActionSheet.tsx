@@ -1,9 +1,9 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17409
+// Function ID: 17410
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8466, 2042, 21, 4758, 580, 558, 568, 11041, 4725, 4617, 11046, 1119, 2582, 4754, 5188, 7397, 10959, 7429, 17409, 11330, 8458, 504, 2]
+// Dependencies: [19, 17, 8466, 2042, 21, 4758, 580, 558, 568, 11041, 4725, 4617, 11046, 1119, 2582, 4754, 5188, 7397, 10959, 7429, 17410, 11330, 8458, 504, 2]
 
-// Module 17408 (GiftingBadgesCoachmarkActionSheet)
+// Module 17409 (GiftingBadgesCoachmarkActionSheet)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -14,7 +14,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
 import BadgeId from "BadgeId" /* 8458 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10959 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11046 */;
-import _modDef17409 from "module_17409" /* 17409 */;
+import _modDef17410 from "module_17410" /* 17410 */;
 import noop from "module_19" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8466 */;
 
@@ -322,7 +322,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismisse
         return;
       }
     }
-    tmp8[0] = _modDef17409;
+    tmp8[0] = _modDef17410;
     cResult[4] = tmp8;
     const tmp7 = tmp8;
   } else {
@@ -477,7 +477,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismisse
   let obj = { startExpanded: true, onDismiss: callback1, children: null };
   const obj2 = { style: tmp.container, children: null };
   let obj3 = { style: tmp.graphicContainer, children: null };
-  const obj4 = { source: { uri: _modDef17409 }, style: tmp.newBadgeImage };
+  const obj4 = { source: { uri: _modDef17410 }, style: tmp.newBadgeImage };
   obj3.children = closure_8(closure_4, obj4);
   const items2 = [closure_8(closure_5, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: null };
@@ -495,7 +495,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismisse
   const obj10 = { grow: true, text: null, icon: null, onPress: null };
   const intl3 = markAsDismissed(1119).intl;
   obj10.text = intl3.string(_modDef2582.DZnomS);
-  const obj5 = { uri: _modDef17409 };
+  const obj5 = { uri: _modDef17410 };
   obj10.icon = closure_8(markAsDismissed(11330).GiftIcon, { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT });
   obj10.onPress = callback;
   obj9.children = closure_8(markAsDismissed(5188).Button, obj10);

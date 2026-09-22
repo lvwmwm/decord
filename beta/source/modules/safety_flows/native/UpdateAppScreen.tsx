@@ -1,9 +1,9 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18338
+// Function ID: 18339
 // Name: UpdateAppScreen
 // Dependencies: [17, 21, 4758, 580, 558, 568, 4754, 1119, 2780, 5188, 2]
 
-// Module 18337 (UpdateAppScreen)
+// Module 18338 (UpdateAppScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

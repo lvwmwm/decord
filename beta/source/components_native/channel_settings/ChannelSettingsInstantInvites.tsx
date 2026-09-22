@@ -1,9 +1,9 @@
-// Module ID: 17290
-// Function ID: 17291
+// Module ID: 17291
+// Function ID: 17292
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 10631, 2045, 1078, 21, 4758, 580, 558, 568, 1616, 504, 10630, 11237, 1181, 11255, 11256, 1119, 7285, 17291, 7302, 2]
+// Dependencies: [32, 19, 17, 10631, 2045, 1078, 21, 4758, 580, 558, 568, 1616, 504, 10630, 11237, 1181, 11255, 11256, 1119, 7285, 17292, 7302, 2]
 
-// Module 17290 (ChannelSettingsInstantInvites)
+// Module 17291 (ChannelSettingsInstantInvites)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import InstantInvite from "InstantInvite" /* 11237 */;
@@ -18,7 +18,7 @@ const InstantInviteDefault = InstantInvite;
 const FastestListDefault = tmp2(7302);
 const _modDef11255 = tmp2(11255);
 const _modDef11256 = tmp2(11256);
-const InstantInviteSelfMeasurerDefault = tmp2(17291);
+const InstantInviteSelfMeasurerDefault = tmp2(17292);
 require = fn;
 const View = fn(17).View;
 const ChannelSettingsSections = fn(1078).ChannelSettingsSections;

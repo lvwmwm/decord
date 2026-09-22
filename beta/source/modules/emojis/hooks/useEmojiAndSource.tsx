@@ -476,7 +476,7 @@ export const useEmojiAndSource = ReactCompilerGating.isReactCompilerEnabled() ? 
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(/* F150705 */ function() { ... });
+      closure_0 = closure_2(/* F150710 */ function() { ... });
       if (closure_2) {
         tmp4 = (function fetch() { ... })();
       } else {

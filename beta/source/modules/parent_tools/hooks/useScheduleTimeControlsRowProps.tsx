@@ -20,7 +20,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   if (0 === arr.length) {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { subLabel: null, trailing: "Array" };
+      const obj2 = { subLabel: null, trailing: "a" };
       const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
       const intl3 = tmp(1119).intl;
       obj3.children = intl3.string(_modDef2486.fOBIZH);
@@ -93,7 +93,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   }
 }) : ((arr) => {
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "Array" };
+    const obj2 = { subLabel: null, trailing: "a" };
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     const intl = util.intl;
     obj3.children = intl.string(_modDef2486.fOBIZH);

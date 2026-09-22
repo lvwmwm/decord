@@ -1,9 +1,9 @@
-// Module ID: 18138
-// Function ID: 18139
+// Module ID: 18139
+// Function ID: 18140
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4458, 4754, 4712, 1119, 11547, 18139, 5824, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4458, 4754, 4712, 1119, 11547, 18140, 5824, 2]
 
-// Module 18138 (GuildSettingsAnalyticsCard)
+// Module 18139 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 580 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import noop from "module_19" /* 19 */;
@@ -116,7 +116,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((metricKey) => {
                 const obj6 = { size: "xxs", color: description(580).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: null };
                 const intl3 = tmp(1119).intl;
                 obj6.accessibilityLabel = intl3.string(tmp(1119).t.NLl6Q3);
-                tmp31 = closure_6(tmp(18139).ArrowLargeDownIcon, obj6);
+                tmp31 = closure_6(tmp(18140).ArrowLargeDownIcon, obj6);
               }
               items1[1] = tmp31;
               const obj7 = { variant: "text-xs/normal", color: "text-subtle", children: subtext };
@@ -230,7 +230,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((metricKey) => {
       const obj8 = { size: "xxs", color: description(580).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: null };
       const intl3 = tmp4(1119).intl;
       obj8.accessibilityLabel = intl3.string(tmp4(1119).t.NLl6Q3);
-      tmp7Result4 = tmp7(tmp4(18139).ArrowLargeDownIcon, obj8);
+      tmp7Result4 = tmp7(tmp4(18140).ArrowLargeDownIcon, obj8);
     }
     items3[1] = tmp7Result4;
     const obj9 = { variant: "text-xs/normal", color: "text-subtle", children: subtext };

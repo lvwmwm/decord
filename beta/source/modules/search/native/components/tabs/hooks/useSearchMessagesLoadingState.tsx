@@ -1,12 +1,12 @@
-// Module ID: 17172
-// Function ID: 17173
+// Module ID: 17173
+// Function ID: 17174
 // Name: useSearchMessagesLoadingState
-// Dependencies: [7525, 12487, 8127, 558, 568, 17119, 12488, 504, 2]
+// Dependencies: [7525, 12487, 8127, 558, 568, 17120, 12488, 504, 2]
 
-// Module 17172 (useSearchMessagesLoadingState)
+// Module 17173 (useSearchMessagesLoadingState)
 import initialize from "initialize" /* 504 */;
 import SearchUtils from "SearchUtils" /* 12488 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17119 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17120 */;
 import SearchMessageStore from "SearchMessageStore" /* 7525 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;
 

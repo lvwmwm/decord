@@ -1,9 +1,9 @@
-// Module ID: 18282
-// Function ID: 18283
+// Module ID: 18283
+// Function ID: 18284
 // Name: SocialRpcNetworkConfigManager
 // Dependencies: [17, 2113, 502, 1245, 1275, 7365, 1368, 2]
 
-// Module 18282 (SocialRpcNetworkConfigManager)
+// Module 18283 (SocialRpcNetworkConfigManager)
 import _mod17 from "module_17" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import HTTPUtils from "HTTPUtils" /* 1275 */;

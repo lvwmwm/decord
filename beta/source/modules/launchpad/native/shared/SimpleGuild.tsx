@@ -1,11 +1,11 @@
-// Module ID: 17673
-// Function ID: 17674
+// Module ID: 17674
+// Function ID: 17675
 // Name: SimpleGuild
-// Dependencies: [19, 17, 2063, 7877, 2067, 1078, 21, 4758, 558, 568, 5799, 17674, 504, 17675, 17677, 1119, 16675, 5291, 580, 17676, 2]
+// Dependencies: [19, 17, 2063, 7877, 2067, 1078, 21, 4758, 558, 568, 5799, 17675, 504, 17676, 17678, 1119, 16675, 5291, 580, 17677, 2]
 
-// Module 17673 (SimpleGuild)
+// Module 17674 (SimpleGuild)
 import util from "util" /* 1119 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 17674 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 17675 */;
 import noop from "module_19" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -82,13 +82,13 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = guildId(504);
   const stateFromStoresObject = guildId(504).useStateFromStoresObject(tmp14, tmp16, tmp17);
   ({ unread: unread2, badge: badge2 } = stateFromStoresObject);
-  const tmpResult5 = guildId(17675);
+  const tmpResult5 = guildId(17676);
   const tmp20 = tmp4 ? tmpResult5.SimpleGuildContainerAnimated : tmpResult5.SimpleGuildContainer;
   if (cResult[7] === size) {
     if (cResult[8] === style) {
       let tmp21 = cResult[9];
     }
-    ({ containerSize, containerSizeStyle, containerStyles } = tmp8(17677)(tmp21));
+    ({ containerSize, containerSizeStyle, containerStyles } = tmp8(17678)(tmp21));
     let tmp23 = str;
     if ("" !== str) {
       if (null != badge2) {
@@ -131,7 +131,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp23 = tmp24;
       }
     }
-    const tmp22 = tmp8(17677)(tmp21);
+    const tmp22 = tmp8(17678)(tmp21);
     const activityIndicatorState = tmp(16675).useActivityIndicatorState(guildId);
     let tmp32 = unread2;
     if (!unread2) {
@@ -290,8 +290,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   obj6.clipOuterAmount = num28;
                   obj6.borderStrokeColor = iconStroke.color;
-                  let tmp51Result = tmp51(tmp8(17676), obj6);
-                  const tmp8Result = tmp8(17676);
+                  let tmp51Result = tmp51(tmp8(17677), obj6);
+                  const tmp8Result = tmp8(17677);
                 } else {
                   const obj7 = { guild: stateFromStores, size: iconSize, selected: tmp6, animate: tmp6, TABS_altDefaultBackground: tmp5, style: null };
                   let tmp41 = null;

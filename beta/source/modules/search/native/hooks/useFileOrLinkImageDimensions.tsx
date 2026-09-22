@@ -1,9 +1,9 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 17180
+// Function ID: 17181
 // Name: useFileOrLinkImageDimensions
 // Dependencies: [19, 8127, 558, 568, 2]
 
-// Module 17179 (useFileOrLinkImageDimensions)
+// Module 17180 (useFileOrLinkImageDimensions)
 import c from "c" /* 568 */;
 import noop from "module_19" /* 19 */;
 

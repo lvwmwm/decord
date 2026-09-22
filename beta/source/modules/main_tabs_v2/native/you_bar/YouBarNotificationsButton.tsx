@@ -1,9 +1,9 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16736
+// Function ID: 16737
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11782, 15354, 21, 4758, 580, 558, 568, 16736, 4497, 5187, 8103, 504, 4726, 8108, 8109, 1119, 9852, 16734, 1181, 4617, 8178, 2]
+// Dependencies: [19, 17, 11782, 15354, 21, 4758, 580, 558, 568, 16737, 4497, 5187, 8103, 504, 4726, 8108, 8109, 1119, 9852, 16735, 1181, 4617, 8178, 2]
 
-// Module 16735 (YouBarNotificationsButton)
+// Module 16736 (YouBarNotificationsButton)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -37,7 +37,7 @@ let result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/You
 export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasNameplate) => {
   const cResult = c.c(39);
   const tmp4 = closure_10();
-  value = isForLaterExperimentOn(16736)().value;
+  value = isForLaterExperimentOn(16737)().value;
   const require = value;
   const fn = function s() {
     let num = 0;

@@ -1,9 +1,9 @@
-// Module ID: 18386
-// Function ID: 18387
+// Module ID: 18387
+// Function ID: 18388
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7707, 14678, 502, 1078, 12563, 21, 558, 568, 504, 6832, 1368, 14717, 12566, 7722, 1245, 5203, 14171, 1613, 8638, 7285, 17380, 17426, 5116, 14837, 2]
+// Dependencies: [32, 19, 17, 7707, 14678, 502, 1078, 12563, 21, 558, 568, 504, 6832, 1368, 14717, 12566, 7722, 1245, 5203, 14171, 1613, 8638, 7285, 17381, 17427, 5116, 14837, 2]
 
-// Module 18386 (AppShare)
+// Module 18387 (AppShare)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import useMountEffectDefault from "useMountEffect" /* 5203 */;
@@ -273,8 +273,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
           const obj2 = { appEntryKey: share };
-          const tmp27 = closure_10(tmp(17380).ActionSheetContainer, obj2);
-          const tmp28 = closure_10(tmp11(17426), {});
+          const tmp27 = closure_10(tmp(17381).ActionSheetContainer, obj2);
+          const tmp28 = closure_10(tmp11(17427), {});
           const tmp29 = closure_10(tmp(5116).AlertModalContainer, {});
           cResult[9] = tmp27;
           cResult[10] = tmp28;
@@ -370,7 +370,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((attachments) => 
     const items1 = [tmp10(require("SceneLoadingIndicator").SceneLoadingIndicator, {}), , , ];
     const obj4 = { appEntryKey: tmp9 };
     items1[1] = tmp10(require("MainShared").ActionSheetContainer, obj4);
-    items1[2] = tmp10(tmp4(17426), {});
+    items1[2] = tmp10(tmp4(17427), {});
     items1[3] = tmp10(require("AlertModal").AlertModalContainer, {});
     obj.children = items1;
     return closure_11(tmp8, obj);

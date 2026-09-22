@@ -1,9 +1,9 @@
-// Module ID: 17695
-// Function ID: 17696
+// Module ID: 17696
+// Function ID: 17697
 // Name: useIsOnMainSurface
 // Dependencies: [32, 19, 4617, 558, 568, 2]
 
-// Module 17695 (useIsOnMainSurface)
+// Module 17696 (useIsOnMainSurface)
 import RootNavigationRef from "RootNavigationRef" /* 4617 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

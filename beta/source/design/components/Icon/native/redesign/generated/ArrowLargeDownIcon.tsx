@@ -1,9 +1,9 @@
-// Module ID: 18139
-// Function ID: 18140
+// Module ID: 18140
+// Function ID: 18141
 // Name: ArrowLargeDownIcon
 // Dependencies: [109, 19, 21, 558, 568, 580, 12416, 4461, 2]
 
-// Module 18139 (ArrowLargeDownIcon)
+// Module 18140 (ArrowLargeDownIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import BaseIconImage from "BaseIconImage" /* 4461 */;

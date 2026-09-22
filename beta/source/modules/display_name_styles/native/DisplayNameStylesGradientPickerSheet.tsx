@@ -81,7 +81,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) 
               onSelect(arg0) {
                           closure_0 = arg0;
                           const result = onSelectColors(displayNameStylesEffectConfig[12]).triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[12]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(/* F153464 */ function() { ... }));
+                          closure_1_5((arr) => arr.map(/* F153469 */ function() { ... }));
                         },
               actionButtonVariant: "primary"
             };
@@ -105,7 +105,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColors) 
               onSelect(arg0) {
                           closure_0 = arg0;
                           const result = onSelectColors(displayNameStylesEffectConfig[12]).triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[12]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(/* F153464 */ function() { ... }));
+                          closure_1_5((arr) => arr.map(/* F153469 */ function() { ... }));
                         },
               actionButtonVariant: "primary"
             };

@@ -1,10 +1,10 @@
-// Module ID: 17218
-// Function ID: 17219
+// Module ID: 17219
+// Function ID: 17220
 // Name: getChannelOpenedRouteTrackingProps
 // Dependencies: [2045, 8021, 1105, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 17218 (getChannelOpenedRouteTrackingProps)
+// Module 17219 (getChannelOpenedRouteTrackingProps)
 import router_utils from "router_utils" /* 1105 */;
 import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8021 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

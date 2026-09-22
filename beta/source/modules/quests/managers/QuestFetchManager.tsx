@@ -1,9 +1,9 @@
-// Module ID: 18274
-// Function ID: 18275
+// Module ID: 18275
+// Function ID: 18276
 // Name: QuestFetchManager
-// Dependencies: [7944, 1095, 7365, 11608, 1235, 10564, 1368, 10585, 18275, 2]
+// Dependencies: [7944, 1095, 7365, 11608, 1235, 10564, 1368, 10585, 18276, 2]
 
-// Module 18274 (QuestFetchManager)
+// Module 18275 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1095 */;
 import SentryUtilsDefault from "SentryUtils" /* 1235 */;
 import QuestsEligibility from "QuestsEligibility" /* 11608 */;
@@ -43,8 +43,8 @@ class QuestFetchManager extends tmp2 {
       applyArgumentsResult.hasHandledConnectionOpen = true;
       if (applyArgumentsResult.hasHandledConnectionOpen) {
         if (isEligibleForQuests) {
-          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18275).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
-          const tmp5Result = tmp5(18275);
+          let DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18276).getQuestFetchReconnectJitterConfig({ location: "QuestFetchManager" });
+          const tmp5Result = tmp5(18276);
         }
         const _Math = Math;
         const _Math2 = Math;
@@ -68,7 +68,7 @@ class QuestFetchManager extends tmp2 {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18275).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18276).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 

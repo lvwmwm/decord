@@ -1,9 +1,9 @@
-// Module ID: 17835
-// Function ID: 17836
+// Module ID: 17836
+// Function ID: 17837
 // Name: AccountSwitchingSpinnerModal
 // Dependencies: [19, 17, 21, 4758, 558, 568, 1119, 5796, 1098, 2]
 
-// Module 17835 (AccountSwitchingSpinnerModal)
+// Module 17836 (AccountSwitchingSpinnerModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;

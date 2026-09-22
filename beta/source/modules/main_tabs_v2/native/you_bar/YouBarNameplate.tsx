@@ -1,9 +1,9 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 16727
+// Function ID: 16728
 // Name: YouBarNameplate
 // Dependencies: [19, 4750, 15354, 21, 558, 568, 4462, 580, 15440, 504, 4497, 5187, 9097, 2]
 
-// Module 16726 (YouBarNameplate)
+// Module 16727 (YouBarNameplate)
 import spring from "spring" /* 5187 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;

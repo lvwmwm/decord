@@ -1,10 +1,10 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17227
+// Function ID: 17228
 // Name: useFriendRequestCounts
 // Dependencies: [32, 7899, 4409, 558, 568, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount
 
-// Module 17226 (useFriendRequestCounts)
+// Module 17227 (useFriendRequestCounts)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;

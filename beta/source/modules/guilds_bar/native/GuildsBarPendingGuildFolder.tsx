@@ -249,7 +249,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((id) =>
       const result1 = closure_1(5739).toggleGuildFolderExpand(closure_1_0);
     }
   }), items2);
-  const obj4 = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "apply", config: 872415746, externalChildren: 1107296588, children: 126172 };
+  const obj4 = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "code", config: false, externalChildren: false, children: false };
   const obj3 = id(4497);
   obj4.id = "" + id;
   obj4.accessibilityActions = accessibilityActions;
@@ -267,5 +267,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((id) =>
   }
   obj4.externalChildren = tmp8Result;
   obj4.children = jsx(id(13192).HourglassIcon, {});
-  return jsx(GuildsBarAnimatedItemWrapperDefault, { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "apply", config: 872415746, externalChildren: 1107296588, children: 126172 });
+  return jsx(GuildsBarAnimatedItemWrapperDefault, { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "a", overState: "code", config: false, externalChildren: false, children: false });
 }));

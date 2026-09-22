@@ -1,9 +1,9 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17459
+// Function ID: 17460
 // Name: BlurVisualEffectView
 // Dependencies: [19, 17, 1078, 21, 4608, 580, 558, 568, 4462, 5176, 2]
 
-// Module 17458 (BlurVisualEffectView)
+// Module 17459 (BlurVisualEffectView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;

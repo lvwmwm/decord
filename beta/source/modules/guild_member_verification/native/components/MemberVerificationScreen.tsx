@@ -1,9 +1,9 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17222
+// Function ID: 17223
 // Name: MemberVerificationScreen
-// Dependencies: [19, 17, 2100, 2067, 4581, 1078, 21, 4758, 580, 558, 568, 5796, 5790, 504, 5813, 4583, 5746, 1105, 4616, 1616, 7287, 17222, 2]
+// Dependencies: [19, 17, 2100, 2067, 4581, 1078, 21, 4758, 580, 558, 568, 5796, 5790, 504, 5813, 4583, 5746, 1105, 4616, 1616, 7287, 17223, 2]
 
-// Module 17221 (MemberVerificationScreen)
+// Module 17222 (MemberVerificationScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import router_utilsAll from "router_utils" /* 1105 */;
@@ -326,7 +326,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 });
 ReactCompilerGating = fn(558);
 let obj3 = { flex: 1, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-const makeAuthenticated = fn(17222);
+const makeAuthenticated = fn(17223);
 const authenticated = makeAuthenticated.makeAuthenticated(ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   const cResult = navigation(568).c(19);
   navigation = navigation.navigation;

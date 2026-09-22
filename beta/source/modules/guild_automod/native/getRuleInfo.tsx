@@ -1,13 +1,13 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 17954
+// Function ID: 17955
 // Name: getRuleInfo
-// Dependencies: [11993, 5310, 17954, 17956, 16152, 9545, 17957, 4700, 2]
+// Dependencies: [11993, 5310, 17955, 17957, 16152, 9545, 17958, 4700, 2]
 // Exports: getRuleInfo
 
-// Module 17953 (getRuleInfo)
+// Module 17954 (getRuleInfo)
 import Constants from "Constants" /* 11993 */;
-import _modDef17956 from "module_17956" /* 17956 */;
-import BaseRuleInfo from "BaseRuleInfo" /* 17957 */;
+import _modDef17957 from "module_17957" /* 17957 */;
+import BaseRuleInfo from "BaseRuleInfo" /* 17958 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -25,7 +25,7 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
         const obj3 = { IconComponent: tmp(5310).AtIcon };
         let tmp9 = obj3;
       } else if (tmp8.KEYWORD === triggerType) {
-        const obj4 = { IconComponent: tmp(17954).ChannelListPlusIcon };
+        const obj4 = { IconComponent: tmp(17955).ChannelListPlusIcon };
         tmp9 = obj4;
       } else {
         if (tmp8.ML_SPAM !== triggerType) {
@@ -39,7 +39,7 @@ export const getRuleInfo = function getRuleInfo(triggerType, rule) {
             }
           }
         }
-        const obj7 = { source: _modDef17956 };
+        const obj7 = { source: _modDef17957 };
         tmp9 = obj7;
       }
       if (tmp9 == null) {

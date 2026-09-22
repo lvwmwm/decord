@@ -1,9 +1,9 @@
-// Module ID: 17551
-// Function ID: 17552
+// Module ID: 17552
+// Function ID: 17553
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 4780, 4781, 5638, 12420, 12418, 17485, 12423, 1078, 4779, 12421, 21, 4497, 4754, 5198, 1181, 4758, 580, 558, 568, 4900, 4810, 5804, 1119, 5188, 12419, 504, 9679, 4813, 13334, 9682, 9678, 17552, 9690, 9105, 8525, 4759, 5187, 5802, 7320, 4462, 17554, 11293, 9660, 4471, 7409, 17486, 17498, 17484, 17555, 8453, 17556, 6891, 17557, 12422, 17558, 17559, 17560, 17561, 17562, 17572, 2]
+// Dependencies: [32, 19, 17, 4780, 4781, 5638, 12420, 12418, 17486, 12423, 1078, 4779, 12421, 21, 4497, 4754, 5198, 1181, 4758, 580, 558, 568, 4900, 4810, 5804, 1119, 5188, 12419, 504, 9679, 4813, 13334, 9682, 9678, 17553, 9690, 9105, 8525, 4759, 5187, 5802, 7320, 4462, 17555, 11293, 9660, 4471, 7409, 17487, 17499, 17485, 17556, 8453, 17557, 6891, 17558, 12422, 17559, 17560, 17561, 17562, 17563, 17573, 2]
 
-// Module 17551 (VoicePanelCard)
+// Module 17552 (VoicePanelCard)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 4471 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
@@ -14,9 +14,9 @@ import spring from "spring" /* 5187 */;
 import LinearGradientDefault from "LinearGradient" /* 5198 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17484 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17554 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17555 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17485 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17555 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17556 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
@@ -30,7 +30,7 @@ const StyleSheet = fn(17).StyleSheet;
 const VoicePanelConstants = fn(12420);
 ({ VoicePanelCTACard: closure_9, VoicePanelModes: c10, MODE_CHANGE_PHYSICS: closure_11, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: map1 } = VoicePanelConstants);
 const VoicePanelControlsModes = fn(12418).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17485).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17486).VoicePanelPIPModes;
 const EDGE_GUTTER = fn(12423).EDGE_GUTTER;
 const ApplicationStreamStates = fn(1078).ApplicationStreamStates;
 const ParticipantTypes = fn(4779).ParticipantTypes;
@@ -3204,7 +3204,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           tmp39 = tmp54;
         }
       }
-      const obj10 = { isRinging: tmp13, avatarURI: "r", avatarDecoration: "emoji", layout: layoutTransition2, layoutPhysics: physics };
+      const obj10 = { isRinging: tmp13, avatarURI: "r", avatarDecoration: "code", layout: layoutTransition2, layoutPhysics: physics };
       const tmp57 = closure_20(closure_42, obj10);
       cResult[54] = tmp13;
       cResult[55] = layoutTransition2;
@@ -3470,7 +3470,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       tmp27 = closure_20;
     }
   }
-  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "emoji", layout: layoutTransition, layoutPhysics: physics };
+  const obj13 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "code", layout: layoutTransition, layoutPhysics: physics };
   tmp29Result = closure_20(closure_42, obj13);
   tmp27 = closure_20;
 }));

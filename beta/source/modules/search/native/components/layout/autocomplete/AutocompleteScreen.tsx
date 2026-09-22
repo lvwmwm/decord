@@ -1,15 +1,15 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17203
+// Function ID: 17204
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2045, 4409, 1376, 12490, 12487, 8127, 1078, 21, 558, 568, 504, 17119, 12486, 12509, 12506, 4603, 4911, 12488, 17203, 12494, 12489, 17161, 17111, 1119, 17123, 2]
+// Dependencies: [32, 19, 2045, 4409, 1376, 12490, 12487, 8127, 1078, 21, 558, 568, 504, 17120, 12486, 12509, 12506, 4603, 4911, 12488, 17204, 12494, 12489, 17162, 17112, 1119, 17124, 2]
 
-// Module 17202 (AutocompleteScreen)
+// Module 17203 (AutocompleteScreen)
 import UserUtilsDefault from "UserUtils" /* 4603 */;
 import useChannelName from "useChannelName" /* 4911 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12509 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17203 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17204 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -91,7 +91,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
     tmp16 = cResult[8];
   }
   const tmpResult5 = searchContext(504);
-  const fullscreenPlaceholderCount = searchContext(17119).useFullscreenPlaceholderCount(tmp16);
+  const fullscreenPlaceholderCount = searchContext(17120).useFullscreenPlaceholderCount(tmp16);
   if (cResult[9] !== searchContext) {
     class P {
       constructor() {
@@ -675,10 +675,10 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
               return;
             }
           }
-          const set = new Set(tmp(17203).getSearchQueryUserIds(searchContext));
+          const set = new Set(tmp(17204).getSearchQueryUserIds(searchContext));
           const _Set = Set;
-          const tmpResult7 = tmp(17203);
-          set1 = new Set(tmp(17203).getSearchQueryChannelIds(searchContext));
+          const tmpResult7 = tmp(17204);
+          set1 = new Set(tmp(17204).getSearchQueryChannelIds(searchContext));
           maybeAddUserItem = function maybeAddUserItem(arg0, arg1) {
 
           };
@@ -708,7 +708,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                       set.add(id);
                       items5.push(toSearchListUserItemResult);
                     }
-                    const result = tmp(17203).toSearchListChannelItem(channel, closure_5);
+                    const result = tmp(17204).toSearchListChannelItem(channel, closure_5);
                     if (channel != null) {
                       const id2 = channel.id;
                     }
@@ -727,23 +727,23 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                       }
                       if (tmp23) {
                         const element = { type: constants.GENERIC, props: null };
-                        const obj2 = { text, icon: tmp(17203).getSearchFilterHasIcon(text), onPress };
+                        const obj2 = { text, icon: tmp(17204).getSearchFilterHasIcon(text), onPress };
                         element.props = obj2;
                         items5.push(element);
-                        const tmpResult3 = tmp(17203);
+                        const tmpResult3 = tmp(17204);
                       }
                       if (tmp28) {
                         const element1 = { type: constants.GENERIC, props: null };
-                        const obj3 = { text, icon: tmp(17203).getSearchFilterAuthorTypeIcon(text), onPress };
+                        const obj3 = { text, icon: tmp(17204).getSearchFilterAuthorTypeIcon(text), onPress };
                         element1.props = obj3;
                         items5.push(element1);
-                        const tmpResult4 = tmp(17203);
+                        const tmpResult4 = tmp(17204);
                       }
                     } else {
                       throw new TypeError("Trying to call a non-function");
                     }
                     tmp14 = maybeAddChannelItem;
-                    const tmpResult = tmp(17203);
+                    const tmpResult = tmp(17204);
                   } else {
                     throw new TypeError("Trying to call a non-function");
                   }
@@ -884,7 +884,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
               }
             }
           }
-          const tmpResult8 = tmp(17203);
+          const tmpResult8 = tmp(17204);
         }
         cResult[26] = stateFromStores;
         cResult[27] = tmp22;
@@ -1169,17 +1169,17 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
               }
               if (tmp22) {
                 const element = { type: constants.GENERIC, props: null };
-                const obj2 = { text, icon: tmp(17203).getSearchFilterHasIcon(text), onPress: callback1 };
+                const obj2 = { text, icon: tmp(17204).getSearchFilterHasIcon(text), onPress: callback1 };
                 element.props = obj2;
                 items.push(element);
-                const tmpResult3 = tmp(17203);
+                const tmpResult3 = tmp(17204);
               }
               if (tmp27) {
                 const element1 = { type: constants.GENERIC, props: null };
-                const obj3 = { text, icon: tmp(17203).getSearchFilterAuthorTypeIcon(text), onPress: callback1 };
+                const obj3 = { text, icon: tmp(17204).getSearchFilterAuthorTypeIcon(text), onPress: callback1 };
                 element1.props = obj3;
                 items.push(element1);
-                const tmpResult4 = tmp(17203);
+                const tmpResult4 = tmp(17204);
               }
             });
           }

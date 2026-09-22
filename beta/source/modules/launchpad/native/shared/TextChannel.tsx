@@ -1,17 +1,17 @@
-// Module ID: 17683
-// Function ID: 17684
+// Module ID: 17684
+// Function ID: 17685
 // Name: shared/TextChannel
-// Dependencies: [19, 17, 5725, 2113, 2045, 1185, 4940, 21, 4758, 17136, 580, 558, 568, 16685, 7513, 504, 4911, 8134, 15578, 7573, 5195, 17684, 5221, 12189, 12972, 8128, 17686, 9596, 16572, 17682, 5341, 17687, 17135, 17680, 17681, 2]
+// Dependencies: [19, 17, 5725, 2113, 2045, 1185, 4940, 21, 4758, 17137, 580, 558, 568, 16685, 7513, 504, 4911, 8134, 15578, 7573, 5195, 17685, 5221, 12189, 12972, 8128, 17687, 9596, 16572, 17683, 5341, 17688, 17136, 17681, 17682, 2]
 
-// Module 17683 (shared/TextChannel)
+// Module 17684 (shared/TextChannel)
 import nativeDefault from "native" /* 580 */;
 import useChannelNameDefault from "useChannelName" /* 4911 */;
 import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5221 */;
 import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12189 */;
 import useMessagePreviewsDefault from "useMessagePreviews" /* 15578 */;
 import ChannelItemEmbeddedActivitiesDefault from "ChannelItemEmbeddedActivities" /* 16572 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
-import usePressUnderlayColorDefault from "usePressUnderlayColor" /* 17684 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import usePressUnderlayColorDefault from "usePressUnderlayColor" /* 17685 */;
 import noop from "module_19" /* 19 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
 import LocaleStore from "LocaleStore" /* 2113 */;
@@ -164,7 +164,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
         if (cResult[17] === tmp38) {
           let tmp39 = cResult[18];
         }
-        const tmp17Result = tmp17(17682);
+        const tmp17Result = tmp17(17683);
         const PressableHighlight = tmp(5341).PressableHighlight;
         class X {
           constructor() {
@@ -192,7 +192,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
           } else {
             tmp44 = cResult[23];
           }
-          tmp(17687);
+          tmp(17688);
           class X {
             constructor() {
               return closure_1_6.locale;
@@ -221,7 +221,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                     obj5.subtitle = result;
                     obj5.hasActiveThreads = tmpResult12.useHasActiveThreads(channel).hasActiveThreads;
                     obj5.unreadBadge = tmp53;
-                    const tmp17Result3 = tmp17(17135);
+                    const tmp17Result3 = tmp17(17136);
                     if (newChannel) {
                       newChannel = optInEnabled;
                     }
@@ -247,7 +247,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                     }
                     obj6.newPostCount = tmp61;
                     obj6.locale = stateFromStores2;
-                    obj5.mentionBadge = tmp17(17681)(obj6);
+                    obj5.mentionBadge = tmp17(17682)(obj6);
                     obj5.unread = unread;
                     obj5.resolvedUnreadSetting = resolvedUnreadSetting;
                     obj5.mentionCount = mentionCount;
@@ -312,7 +312,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                     cResult[42] = tmp17Result1Result;
                     cResult[43] = tmp72;
                     tmp64 = tmp72;
-                    const tmp17Result4 = tmp17(17681);
+                    const tmp17Result4 = tmp17(17682);
                   }
                 }
                 class X {
@@ -323,7 +323,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
                 tmp55[0] = unread;
                 tmp55[1] = resolvedUnreadSetting;
                 tmp55[2] = tmp4;
-                const tmp56 = closure_10(tmp17(17680), tmp55);
+                const tmp56 = closure_10(tmp17(17681), tmp55);
                 cResult[31] = tmp4;
                 cResult[32] = resolvedUnreadSetting;
                 cResult[33] = unread;
@@ -342,13 +342,13 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
             }
           }
           const obj8 = { channel, unread, mentionCount };
-          const channelAccessibilityProps = tmp(17135).getChannelAccessibilityProps(obj8);
+          const channelAccessibilityProps = tmp(17136).getChannelAccessibilityProps(obj8);
           cResult[24] = channel;
           cResult[25] = mentionCount;
           cResult[26] = unread;
           cResult[27] = channelAccessibilityProps;
           tmp49 = channelAccessibilityProps;
-          const tmpResult21 = tmp(17135);
+          const tmpResult21 = tmp(17136);
         }
         const items4 = [tmp8.pressable, rowSelected];
         cResult[19] = tmp8.pressable;
@@ -372,8 +372,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     }
     const tmp31 = useChannelRoleSubscriptionStatusDefault(channel.id);
     const obj10 = { subtitle, muted: tmp4, channelId: channel.id, guildId: channel.guild_id };
-    result = tmp(17686).renderChannelSubtitle(obj10);
-    const tmpResult22 = tmp(17686);
+    result = tmp(17687).renderChannelSubtitle(obj10);
+    const tmpResult22 = tmp(17687);
   }
   const fn = function v() {
     return ActiveJoinedThreadsStore.getNewThreadCount(channel.guild_id, channel.id);
@@ -426,7 +426,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
   const tmp2Result9 = channel(5195);
   const items2 = [LocaleStore];
   const stateFromStores2 = channel(504).useStateFromStores(items2, () => locale.locale);
-  const tmp17 = arr4(17684)();
+  const tmp17 = arr4(17685)();
   const tmp2Result10 = channel(504);
   ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(5221)(channel.id));
   arr4 = tmp8(12189)(channel);
@@ -459,21 +459,21 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     const obj7 = { color: tmp17 };
     obj6.androidRippleConfig = getThemedRippleConfig(obj7);
     const tmp26 = closure_11;
-    const tmp8Result4 = tmp8(17682);
-    const merged = Object.assign(tmp2(17687).useTextChannelPressEvents(channel, flag2));
-    const tmp2Result12 = tmp2(17687);
+    const tmp8Result4 = tmp8(17683);
+    const merged = Object.assign(tmp2(17688).useTextChannelPressEvents(channel, flag2));
+    const tmp2Result12 = tmp2(17688);
     const obj8 = { channel, unread, mentionCount };
-    const merged1 = Object.assign(tmp2(17135).getChannelAccessibilityProps(obj8));
+    const merged1 = Object.assign(tmp2(17136).getChannelAccessibilityProps(obj8));
     if (selected) {
       const obj9 = { style: tmp5.selectedBorder, pointerEvents: "none" };
       selected = closure_10(View, obj9);
     }
     const items5 = [selected, ];
     const obj10 = { channel, channelCategoryName: tmp9, subtitle: result, hasActiveThreads: obj2.useHasActiveThreads(channel).hasActiveThreads, unreadBadge: null, mentionBadge: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null, channelName: null, fontScale: null, isSubscriptionGated: null, needSubscriptionToAccess: null, showGuildBadgeIcon: null, end: null };
-    const tmp2Result13 = tmp2(17135);
+    const tmp2Result13 = tmp2(17136);
     const obj11 = { unread, resolvedUnreadSetting, muted: flag };
-    obj10.unreadBadge = closure_10(tmp8(17680), obj11);
-    const tmp8Result5 = tmp8(17135);
+    obj10.unreadBadge = closure_10(tmp8(17681), obj11);
+    const tmp8Result5 = tmp8(17136);
     if (newChannel) {
       newChannel = optInEnabled;
     }
@@ -499,7 +499,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     }
     obj12.newPostCount = tmp40;
     obj12.locale = stateFromStores2;
-    obj10.mentionBadge = tmp8(17681)(obj12);
+    obj10.mentionBadge = tmp8(17682)(obj12);
     obj10.unread = unread;
     obj10.resolvedUnreadSetting = resolvedUnreadSetting;
     obj10.mentionCount = mentionCount;
@@ -519,5 +519,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channe
     return tmp8Result4(tmp26(tmp2(5341).PressableHighlight, obj6));
   }
   const tmp18 = arr4(5221)(channel.id);
-  result = channel(17686).renderChannelSubtitle({ subtitle: subtitle.subtitle, muted: flag, channelId: channel.id, guildId: channel.guild_id });
+  result = channel(17687).renderChannelSubtitle({ subtitle: subtitle.subtitle, muted: flag, channelId: channel.id, guildId: channel.guild_id });
 }));

@@ -1,9 +1,9 @@
-// Module ID: 18075
-// Function ID: 18076
+// Module ID: 18076
+// Function ID: 18077
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1078, 5627, 21, 4758, 580, 558, 568, 4693, 11683, 1181, 4610, 1401, 1119, 5846, 5341, 5822, 7446, 18076, 1368, 4754, 5502, 5903, 2]
+// Dependencies: [32, 19, 17, 1078, 5627, 21, 4758, 580, 558, 568, 4693, 11683, 1181, 4610, 1401, 1119, 5846, 5341, 5822, 7446, 18077, 1368, 4754, 5502, 5903, 2]
 
-// Module 18075 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 18076 (GuildSettingsRoleEditConnectionConfiguration)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -16,7 +16,7 @@ import TableRow from "TableRow" /* 5822 */;
 import XSmallIcon from "XSmallIcon" /* 5846 */;
 import TableRowGroup from "TableRowGroup" /* 5903 */;
 import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11683 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18076 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18077 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -1281,7 +1281,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
   if (num == null) {
     num = -1;
   }
-  const realizedOperatorForResult = metadataField(18076).realizedOperatorFor(existingPendingConfiguration.operator);
+  const realizedOperatorForResult = metadataField(18077).realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   value = undefined;
   if (existingPendingConfiguration != null) {
@@ -1289,9 +1289,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((existingPendin
       value = iter.value;
     }
   }
-  let obj = metadataField(18076);
-  const tmpResult = metadataField(18076);
-  str1 = metadataField(18076).displayedValueFor(value, realizedOperatorForResult).toString();
+  let obj = metadataField(18077);
+  const tmpResult = metadataField(18077);
+  str1 = metadataField(18077).displayedValueFor(value, realizedOperatorForResult).toString();
   let mapped = noop;
   [value] = noop.useState(str1);
   closure_10 = tmp9;

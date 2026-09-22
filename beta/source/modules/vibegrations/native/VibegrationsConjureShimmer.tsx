@@ -1,10 +1,10 @@
-// Module ID: 17024
-// Function ID: 17025
+// Module ID: 17025
+// Function ID: 17026
 // Name: VibegrationsConjureShimmer
 // Dependencies: [32, 19, 17, 4750, 21, 4758, 558, 568, 504, 4497, 4759, 676, 5881, 5198, 2]
 // Exports: shouldSweep
 
-// Module 17024 (VibegrationsConjureShimmer)
+// Module 17025 (VibegrationsConjureShimmer)
 import _modDef676 from "module_676" /* 676 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import timing from "timing" /* 4759 */;

@@ -1,14 +1,14 @@
-// Module ID: 17690
-// Function ID: 17691
+// Module ID: 17691
+// Function ID: 17692
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17136, 4754, 1181, 17131, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 17137, 4754, 1181, 17132, 2]
 
-// Module 17690 (VoiceOrStageSummaryRow)
+// Module 17691 (VoiceOrStageSummaryRow)
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import _modDef17131 from "module_17131" /* 17131 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
+import _modDef17132 from "module_17132" /* 17132 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -291,7 +291,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((audien
     const items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
     obj4.style = items3;
-    let obj5 = { size: max(1181).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: _modDef17131 };
+    let obj5 = { size: max(1181).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: _modDef17132 };
     const items4 = [closure_4(max(1181).Icon, obj5), ];
     let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
     items4[1] = closure_4(max(4754).Text, obj6);

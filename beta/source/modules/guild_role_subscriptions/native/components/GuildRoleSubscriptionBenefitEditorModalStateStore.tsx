@@ -1,10 +1,10 @@
-// Module ID: 18214
-// Function ID: 18215
+// Module ID: 18215
+// Function ID: 18216
 // Name: GuildRoleSubscriptionBenefitEditorModalStateStore
 // Dependencies: [1247, 1252, 558, 568, 4383, 2]
 // Exports: initializeImperatively, resetImperatively
 
-// Module 18214 (GuildRoleSubscriptionBenefitEditorModalStateStore)
+// Module 18215 (GuildRoleSubscriptionBenefitEditorModalStateStore)
 import c from "c" /* 568 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
 import _mod4383 from "module_4383" /* 4383 */;
@@ -13,7 +13,7 @@ import "ReactCompilerGating";
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = Object.freeze({ name: "", emojiId: "backgroundColor", emojiName: "index", description: "flex", refId: "Array" });
+let closure_2 = Object.freeze({ name: "", emojiId: "backgroundColor", emojiName: "includes", description: "flex", refId: "Array" });
 let closure_3 = identity.createWithEqualityFn((arg0) => {
   closure_0 = arg0;
   const obj = {};

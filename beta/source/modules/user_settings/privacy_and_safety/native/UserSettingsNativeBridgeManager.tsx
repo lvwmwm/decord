@@ -1,9 +1,9 @@
-// Module ID: 18284
-// Function ID: 18285
+// Module ID: 18285
+// Function ID: 18286
 // Name: UserSettingsNativeBridgeManager
 // Dependencies: [17, 1224, 7365, 1368, 2]
 
-// Module 18284 (UserSettingsNativeBridgeManager)
+// Module 18285 (UserSettingsNativeBridgeManager)
 import _mod17 from "module_17" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1224 */;

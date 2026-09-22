@@ -1,9 +1,9 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 17102
+// Function ID: 17103
 // Name: layout/SearchBar
-// Dependencies: [19, 17, 2045, 2067, 4409, 1376, 12487, 8127, 8126, 1078, 21, 4758, 1119, 4911, 558, 568, 504, 5195, 12486, 12509, 4472, 12506, 12489, 17102, 9821, 2]
+// Dependencies: [19, 17, 2045, 2067, 4409, 1376, 12487, 8127, 8126, 1078, 21, 4758, 1119, 4911, 558, 568, 504, 5195, 12486, 12509, 4472, 12506, 12489, 17103, 9821, 2]
 
-// Module 17101 (layout/SearchBar)
+// Module 17102 (layout/SearchBar)
 import util from "util" /* 1119 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;
 import useChannelName from "useChannelName" /* 4911 */;

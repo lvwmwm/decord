@@ -1,9 +1,9 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17161
+// Function ID: 17162
 // Name: PeopleScreen
-// Dependencies: [5, 19, 12513, 12487, 8127, 8126, 21, 558, 568, 12488, 504, 17119, 17115, 4771, 12506, 17161, 17111, 17123, 2]
+// Dependencies: [5, 19, 12513, 12487, 8127, 8126, 21, 558, 568, 12488, 504, 17120, 17116, 4771, 12506, 17162, 17112, 17124, 2]
 
-// Module 17160 (PeopleScreen)
+// Module 17161 (PeopleScreen)
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

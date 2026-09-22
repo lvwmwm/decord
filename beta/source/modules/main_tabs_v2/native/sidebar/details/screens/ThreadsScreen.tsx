@@ -1,13 +1,13 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17182
+// Function ID: 17183
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 2045, 1078, 1118, 21, 4758, 580, 558, 568, 7513, 7224, 11494, 4769, 17182, 565, 1489, 2]
+// Dependencies: [19, 17, 2045, 1078, 1118, 21, 4758, 580, 558, 568, 7513, 7224, 11494, 4769, 17183, 565, 1489, 2]
 
-// Module 17181 (ThreadsScreen)
+// Module 17182 (ThreadsScreen)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7224 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 11494 */;
-import ThreadListDefault from "ThreadList" /* 17182 */;
+import ThreadListDefault from "ThreadList" /* 17183 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -94,7 +94,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { channel, onCreateThreadPress: tmp10, onThreadPress: tmp8, contentContainerStyle: tmp12 };
-    const tmp15 = jsx(tmp6(17182), { channel, onCreateThreadPress: tmp10, onThreadPress: tmp8, contentContainerStyle: tmp12 });
+    const tmp15 = jsx(tmp6(17183), { channel, onCreateThreadPress: tmp10, onThreadPress: tmp8, contentContainerStyle: tmp12 });
     cResult[9] = channel;
     cResult[10] = tmp10;
     cResult[11] = tmp12;

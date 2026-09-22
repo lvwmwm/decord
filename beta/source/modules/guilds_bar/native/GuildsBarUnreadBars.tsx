@@ -212,7 +212,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: null, afterItem: "Array" };
+            let obj6 = { beforeItem: null, afterItem: "a" };
             let obj7 = { section: sum, row: tmp32.item, mention: true };
             obj6.beforeItem = obj7;
             return obj6;
@@ -233,7 +233,7 @@ const jsx = fn(21).jsx;
 const createStyles = fn(4758);
 let closure_15 = createStyles.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
 let closure_17 = { beforeItem: "Array", afterItem: "Set" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
 let ReactCompilerGating = fn(558);
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(10);

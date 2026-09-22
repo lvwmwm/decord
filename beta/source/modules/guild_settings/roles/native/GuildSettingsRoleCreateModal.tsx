@@ -1,9 +1,9 @@
-// Module ID: 18045
-// Function ID: 18046
+// Module ID: 18046
+// Function ID: 18047
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 2063, 2103, 1376, 9834, 18046, 1078, 21, 4758, 5897, 580, 1245, 4938, 558, 568, 1119, 4754, 18044, 504, 38, 4404, 1488, 6861, 5839, 5739, 4457, 18043, 4725, 16632, 1984, 5186, 6846, 5903, 5822, 14862, 1096, 5188, 18050, 18051, 9833, 18052, 7224, 5173, 5182, 7285, 5203, 7246, 2]
+// Dependencies: [5, 32, 19, 17, 2063, 2103, 1376, 9834, 18047, 1078, 21, 4758, 5897, 580, 1245, 4938, 558, 568, 1119, 4754, 18045, 504, 38, 4404, 1488, 6861, 5839, 5739, 4457, 18044, 4725, 16632, 1984, 5186, 6846, 5903, 5822, 14862, 1096, 5188, 18051, 18052, 9833, 18053, 7224, 5173, 5182, 7285, 5203, 7246, 2]
 
-// Module 18045 (GuildSettingsRoleCreateModal)
+// Module 18046 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
@@ -20,7 +20,7 @@ import useMountEffectDefault from "useMountEffect" /* 5203 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
 import NavigatorHeader from "NavigatorHeader" /* 5839 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 18044 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 18045 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -97,13 +97,13 @@ function RoleCreateScene() {
               closure_0(4457).roleCreatedToast();
               const obj5 = closure_0(4457);
               const tmp13 = closure_0;
-              closure_0(18043).setRoleJustCreated(true);
+              closure_0(18044).setRoleJustCreated(true);
               let STEP_MEMBERS = constants4.STEP_PERMISSIONS;
               const guild2 = closure_2_12.getProps().guild;
               closure_1(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
               currentUser = currentUser.getCurrentUser();
               const tmp23 = closure_2_9(guild2, currentUser);
-              const obj6 = closure_0(18043);
+              const obj6 = closure_0(18044);
               const tmp18 = closure_1;
               const obj2 = { permission: constants3.ADMINISTRATOR, user: currentUser, context: guild2 };
               let tmp4 = !tmp23;
@@ -192,7 +192,7 @@ function RoleCreateScene() {
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, Keyboard: closure_8 } = get_ActivityIndicator);
 const isGuildOwner = fn(2063).isGuildOwner;
-const GuildSettingsRoleConstants = fn(18046);
+const GuildSettingsRoleConstants = fn(18047);
 ({ PermissionTemplates: map1, DEFAULT_TEMPLATE_TYPE: closure_14, MAX_BULK_ROLE_MEMBERS_ADD: closure_15 } = GuildSettingsRoleConstants);
 const Constants = fn(1078);
 ({ MAX_ROLE_LENGTH: closure_16, DEFAULT_ROLE_COLOR: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20 } = Constants);
@@ -495,7 +495,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[20] = tmp30;
         }
         const obj8 = { onSelect: tmp11, location: constants2.GUILD_ROLE_CREATION_MODAL, guildId: guild.id };
-        const tmp22 = closure_21(role(18050), obj8);
+        const tmp22 = closure_21(role(18051), obj8);
         cResult[12] = guild.id;
         cResult[13] = tmp11;
         cResult[14] = tmp22;
@@ -523,7 +523,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const merged = Object.assign(navigation(4938).collectGuildAnalyticsMetadata(id.id));
         obj.track(constants.USER_FLOW_TRANSITION, obj2);
         const obj3 = navigation(4938);
-        role(18044).close();
+        role(18045).close();
       }),
       headerTitle() {
         return closure_1_21(closure_1_27, { step: constants.STEP_PERMISSIONS });

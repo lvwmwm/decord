@@ -1,10 +1,10 @@
-// Module ID: 17740
-// Function ID: 17741
+// Module ID: 17741
+// Function ID: 17742
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2044, 5640, 4780, 502, 2045, 1996, 2099, 4777, 1983, 1078, 1368, 17741, 7365, 2]
+// Dependencies: [17, 2044, 5640, 4780, 502, 2045, 1996, 2099, 4777, 1983, 1078, 1368, 17742, 7365, 2]
 
-// Module 17740 (AudioSessionModeManager)
-import VoicePermissionManager from "VoicePermissionManager" /* 17741 */;
+// Module 17741 (AudioSessionModeManager)
+import VoicePermissionManager from "VoicePermissionManager" /* 17742 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;

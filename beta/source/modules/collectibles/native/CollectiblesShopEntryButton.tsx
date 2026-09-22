@@ -1,11 +1,11 @@
-// Module ID: 17265
-// Function ID: 17266
+// Module ID: 17266
+// Function ID: 17267
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 7831, 2042, 21, 558, 568, 7632, 2031, 1119, 17264, 12278, 17266, 14258, 565, 7812, 10921, 2]
+// Dependencies: [32, 19, 7831, 2042, 21, 558, 568, 7632, 2031, 1119, 17265, 12278, 17267, 14258, 565, 7812, 10921, 2]
 
-// Module 17265 (CollectiblesShopEntryButton)
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 17264 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 17266 */;
+// Module 17266 (CollectiblesShopEntryButton)
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 17265 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 17267 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7831 */;
@@ -374,7 +374,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((navigateToShop) 
         }
       };
       obj.showRedDot = null != visibleContent;
-      return closure_1_6(shopButtonRef(17264), obj);
+      return closure_1_6(shopButtonRef(17265), obj);
     }
     if (tmp4) {
       let type1;

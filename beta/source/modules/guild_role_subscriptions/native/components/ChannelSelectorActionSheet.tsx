@@ -1,10 +1,10 @@
-// Module ID: 18217
-// Function ID: 18218
+// Module ID: 18218
+// Function ID: 18219
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 2045, 7358, 4399, 1078, 4940, 21, 4758, 580, 5743, 558, 568, 4911, 4725, 16467, 5802, 18154, 504, 7449, 4754, 1119, 7297, 5341, 4961, 9795, 1984, 9798, 9800, 1181, 13873, 6863, 2]
+// Dependencies: [32, 19, 17, 2045, 7358, 4399, 1078, 4940, 21, 4758, 580, 5743, 558, 568, 4911, 4725, 16467, 5802, 18155, 504, 7449, 4754, 1119, 7297, 5341, 4961, 9795, 1984, 9798, 9800, 1181, 13873, 6863, 2]
 // Exports: default
 
-// Module 18217 (ChannelSelectorActionSheet)
+// Module 18218 (ChannelSelectorActionSheet)
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
@@ -81,7 +81,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             }
             let tmp14 = selected;
             if (selected) {
-              const obj3 = { style: tmp3.selectedIcon, source: tmp4(18154) };
+              const obj3 = { style: tmp3.selectedIcon, source: tmp4(18155) };
               tmp14 = closure_11(tmp4(5802), obj3);
               const tmp4Result = tmp4(5802);
             }
@@ -125,7 +125,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: tmp4, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
   const children = [closure_11(onChannelSelected(16467), obj), ];
   if (selected) {
-    const obj2 = { style: tmp.selectedIcon, source: tmp2(18154) };
+    const obj2 = { style: tmp.selectedIcon, source: tmp2(18155) };
     selected = tmp8(tmp2(5802), obj2);
     const tmp2Result = tmp2(5802);
   }

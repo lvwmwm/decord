@@ -1,9 +1,9 @@
-// Module ID: 17836
-// Function ID: 17837
+// Module ID: 17837
+// Function ID: 17838
 // Name: MultiAccountManager
 // Dependencies: [1376, 13897, 7365, 577, 13898, 2]
 
-// Module 17836 (MultiAccountManager)
+// Module 17837 (MultiAccountManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import GatewaySocket from "GatewaySocket" /* 13898 */;
 import UserStore from "UserStore" /* 1376 */;

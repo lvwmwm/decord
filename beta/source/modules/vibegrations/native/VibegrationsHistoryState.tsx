@@ -1,9 +1,9 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 17073
+// Function ID: 17074
 // Name: VibegrationsHistoryState
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 3682, 4754, 2]
 
-// Module 17072 (VibegrationsHistoryState)
+// Module 17073 (VibegrationsHistoryState)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;

@@ -1,15 +1,15 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16934
+// Function ID: 16935
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4583, 4717, 6851, 16934, 1119, 4754, 16930, 4442, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 4583, 4717, 6851, 16935, 1119, 4754, 16931, 4442, 2]
 
-// Module 16933 (JoinRequestOtherApplications)
+// Module 16934 (JoinRequestOtherApplications)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import DateUtils from "DateUtils" /* 4442 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16930 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16931 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       if (cResult[2] === userId) {
         let tmp5 = cResult[3];
       }
-      row = tmp(16934).useOtherGuildJoinRequestsForUser(tmp5);
+      row = tmp(16935).useOtherGuildJoinRequestsForUser(tmp5);
       if (0 === row.length) {
         return null;
       } else {
@@ -174,7 +174,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         cResult[13] = fn;
         tmp13 = fn;
       }
-      const tmpResult = tmp(16934);
+      const tmpResult = tmp(16935);
     }
   }
   let obj5 = { guildId, userId, selectedJoinRequestId };

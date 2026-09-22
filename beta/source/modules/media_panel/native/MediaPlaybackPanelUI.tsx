@@ -1,9 +1,9 @@
-// Module ID: 17657
-// Function ID: 17658
+// Module ID: 17658
+// Function ID: 17659
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 9742, 14820, 12421, 12420, 21, 4758, 580, 558, 568, 1616, 1482, 17656, 4497, 9660, 10345, 17452, 4759, 4762, 5187, 17454, 17658, 6891, 7403, 2]
+// Dependencies: [32, 19, 9742, 14820, 12421, 12420, 21, 4758, 580, 558, 568, 1616, 1482, 17657, 4497, 9660, 10345, 17453, 4759, 4762, 5187, 17455, 17659, 6891, 7403, 2]
 
-// Module 17657 (MediaPlaybackPanelUI)
+// Module 17658 (MediaPlaybackPanelUI)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1482 */;
@@ -15,10 +15,10 @@ import spring from "spring" /* 5187 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
 import LayerScope from "LayerScope" /* 7403 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 17452 */;
-import useMorphablePanelGesture from "useMorphablePanelGesture" /* 17454 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 17656 */;
-import MediaPlaybackPipDefault from "MediaPlaybackPip" /* 17658 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17453 */;
+import useMorphablePanelGesture from "useMorphablePanelGesture" /* 17455 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 17657 */;
+import MediaPlaybackPipDefault from "MediaPlaybackPip" /* 17659 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9742 */;
@@ -667,7 +667,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp18 = jsx(tmp5(17658), {});
+      const tmp18 = jsx(tmp5(17659), {});
       cResult[3] = tmp18;
       let tmp16 = tmp18;
     } else {

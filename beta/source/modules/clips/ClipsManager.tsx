@@ -1,9 +1,9 @@
-// Module ID: 18265
-// Function ID: 18266
+// Module ID: 18266
+// Function ID: 18267
 // Name: clips/ClipsManager
 // Dependencies: [5, 4803, 502, 1996, 4781, 4797, 2002, 5350, 1078, 4800, 7365, 13943, 4813, 4810, 1245, 2023, 577, 13944, 4381, 1368, 13942, 2]
 
-// Module 18265 (clips/ClipsManager)
+// Module 18266 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;

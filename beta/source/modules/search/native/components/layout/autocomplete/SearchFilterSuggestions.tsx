@@ -1,9 +1,9 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17104
+// Function ID: 17105
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 109, 19, 17, 8126, 21, 4758, 580, 558, 568, 17104, 4754, 5822, 4497, 5187, 5191, 4471, 17107, 12486, 2]
+// Dependencies: [32, 109, 19, 17, 8126, 21, 4758, 580, 558, 568, 17105, 4754, 5822, 4497, 5187, 5191, 4471, 17108, 12486, 2]
 
-// Module 17103 (SearchFilterSuggestions)
+// Module 17104 (SearchFilterSuggestions)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 4471 */;
@@ -11,7 +11,7 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import spring from "spring" /* 5187 */;
 import springPresets from "springPresets" /* 5191 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12486 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 17104 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 17105 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
@@ -53,11 +53,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     closure_1 = cResult[4];
   }
   if (cResult[5] !== tmp5) {
-    const searchTokenIcon = tmp(17104).getSearchTokenIcon(tmp5);
+    const searchTokenIcon = tmp(17105).getSearchTokenIcon(tmp5);
     cResult[5] = tmp5;
     cResult[6] = searchTokenIcon;
     let tmp11 = searchTokenIcon;
-    const tmpResult = tmp(17104);
+    const tmpResult = tmp(17105);
   } else {
     tmp11 = cResult[6];
   }
@@ -73,11 +73,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
     tmp13 = cResult[8];
   }
   if (cResult[9] !== tmp5) {
-    const searchTokenSubLabel = tmp(17104).getSearchTokenSubLabel(tmp5);
+    const searchTokenSubLabel = tmp(17105).getSearchTokenSubLabel(tmp5);
     cResult[9] = tmp5;
     cResult[10] = searchTokenSubLabel;
     let tmp16 = searchTokenSubLabel;
-    const tmpResult2 = tmp(17104);
+    const tmpResult2 = tmp(17105);
   } else {
     tmp16 = cResult[10];
   }
@@ -491,7 +491,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                             })
               };
               obj.children = jsx(View, obj1);
-              return jsx(f75203, obj, searchContext);
+              return jsx(f75206, obj, searchContext);
             }
           }
           class D {
@@ -522,7 +522,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((search
                         })
             };
             obj.children = jsx(View, obj1);
-            return jsx(f75203, obj, searchContext);
+            return jsx(f75206, obj, searchContext);
           }
         }
         class D {

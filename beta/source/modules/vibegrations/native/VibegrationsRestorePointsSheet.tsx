@@ -1,16 +1,16 @@
-// Module ID: 16995
-// Function ID: 16996
+// Module ID: 16996
+// Function ID: 16997
 // Name: VibegrationsRestorePointsSheet
-// Dependencies: [32, 19, 17, 13364, 21, 4758, 580, 4442, 4352, 1616, 16996, 5116, 1119, 3682, 9868, 4725, 9780, 1984, 4754, 5903, 7882, 5822, 7449, 7396, 6863, 9869, 6846, 5188, 2]
+// Dependencies: [32, 19, 17, 13364, 21, 4758, 580, 4442, 4352, 1616, 16997, 5116, 1119, 3682, 9868, 4725, 9780, 1984, 4754, 5903, 7882, 5822, 7449, 7396, 6863, 9869, 6846, 5188, 2]
 // Exports: default
 
-// Module 16995 (VibegrationsRestorePointsSheet)
+// Module 16996 (VibegrationsRestorePointsSheet)
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import _modDef4352 from "module_4352" /* 4352 */;
 import DateUtils from "DateUtils" /* 4442 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsRestorePanelOp from "VibegrationsRestorePanelOp" /* 16996 */;
+import VibegrationsRestorePanelOp from "VibegrationsRestorePanelOp" /* 16997 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -156,7 +156,7 @@ export default function VibegrationsRestorePointsSheet(projectId) {
           closure_1_13();
         } else if ("expired" === ok.code) {
           const intl3 = closure_0(1119).intl;
-          const obj = { days: closure_0(16996).RESTORE_WINDOW_DAYS };
+          const obj = { days: closure_0(16997).RESTORE_WINDOW_DAYS };
           closure_1_16(closure_1_3, "danger", intl3.formatToPlainString(installScope(3682).PeVYaC, obj));
           closure_1_13();
         } else if ("unconfirmed" === ok.code) {

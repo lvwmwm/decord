@@ -1,12 +1,12 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 16980
+// Function ID: 16981
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1484, 21, 4471, 4627, 1614, 1368, 16980, 558, 568, 4628, 4617, 7468, 12341, 1486, 4631, 10498, 2]
+// Dependencies: [19, 1484, 21, 4471, 4627, 1614, 1368, 16981, 558, 568, 4628, 4617, 7468, 12341, 1486, 4631, 10498, 2]
 
-// Module 16979 (PortalKeyboardRenderer)
+// Module 16980 (PortalKeyboardRenderer)
 import native from "native" /* 4471 */;
 import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 4628 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16980 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16981 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1484 */;
 

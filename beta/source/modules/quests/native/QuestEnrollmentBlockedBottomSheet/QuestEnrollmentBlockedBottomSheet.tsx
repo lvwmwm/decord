@@ -214,7 +214,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
         class C {
           constructor() {
             obj = { questId, questEnrollmentBlockedUntil: closure_1, sourceQuestContent };
-            return jsx(f69790, obj);
+            return jsx(f69791, obj);
           }
         }
         const obj2 = { overrideVisibility: true, questOrQuests: stateFromStores, questContent: null, questContentPosition: null, sourceQuestContent: null, children: null };
@@ -234,7 +234,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
     class C {
       constructor() {
         obj = { questId, questEnrollmentBlockedUntil: closure_1, sourceQuestContent };
-        return jsx(f69790, obj);
+        return jsx(f69791, obj);
       }
     }
     cResult[3] = questEnrollmentBlockedUntil;

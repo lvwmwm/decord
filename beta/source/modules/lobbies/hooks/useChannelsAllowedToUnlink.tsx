@@ -1,10 +1,10 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 17932
+// Function ID: 17933
 // Name: useChannelsAllowedToUnlink
 // Dependencies: [2100, 4399, 11238, 558, 568, 504, 2]
 // Exports: getChannelsAllowedToUnlink
 
-// Module 17931 (useChannelsAllowedToUnlink)
+// Module 17932 (useChannelsAllowedToUnlink)
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import PermissionStore from "PermissionStore" /* 4399 */;
 

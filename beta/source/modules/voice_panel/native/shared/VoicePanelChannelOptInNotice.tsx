@@ -1,9 +1,9 @@
-// Module ID: 17534
-// Function ID: 17535
+// Module ID: 17535
+// Function ID: 17536
 // Name: VoicePanelChannelOptInNotice
 // Dependencies: [19, 21, 558, 568, 7360, 1119, 5828, 14115, 5822, 5804, 2]
 
-// Module 17534 (VoicePanelChannelOptInNotice)
+// Module 17535 (VoicePanelChannelOptInNotice)
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7360 */;
 import noop from "module_19" /* 19 */;
 

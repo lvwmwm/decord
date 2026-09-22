@@ -1,9 +1,9 @@
-// Module ID: 17482
-// Function ID: 17483
+// Module ID: 17483
+// Function ID: 17484
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 4774, 8566, 4966, 12420, 12418, 4779, 12421, 21, 3, 5187, 4758, 580, 4497, 1613, 558, 568, 12419, 1616, 6891, 9660, 10345, 17483, 4726, 17484, 4462, 12424, 10181, 17486, 17487, 11293, 9696, 5087, 7320, 7409, 7429, 1252, 17488, 7403, 17489, 17490, 9568, 17491, 17493, 17550, 17582, 17586, 17592, 2]
+// Dependencies: [32, 19, 17, 4774, 8566, 4966, 12420, 12418, 4779, 12421, 21, 3, 5187, 4758, 580, 4497, 1613, 558, 568, 12419, 1616, 6891, 9660, 10345, 17484, 4726, 17485, 4462, 12424, 10181, 17487, 17488, 11293, 9696, 5087, 7320, 7409, 7429, 1252, 17489, 7403, 17490, 17491, 9568, 17492, 17494, 17551, 17583, 17587, 17593, 2]
 
-// Module 17482 (VoicePanelUI)
+// Module 17483 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -19,9 +19,9 @@ import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11293 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12424 */;
-import utils_triggerIOSHapticDefault from "utils/triggerIOSHaptic" /* 17483 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17484 */;
-import useControlsLockDefault from "useControlsLock" /* 17488 */;
+import utils_triggerIOSHapticDefault from "utils/triggerIOSHaptic" /* 17484 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17485 */;
+import useControlsLockDefault from "useControlsLock" /* 17489 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
@@ -91,11 +91,11 @@ function useWrapperStyles(wrapperOffset) {
           } else {
             const obj3 = { windowWidth, connected, safeAreaLeft: null, safeAreaRight: null };
             ({ left: obj5.safeAreaLeft, right: obj5.safeAreaRight } = safeArea);
-            const maxPanelWidth = tmp(17487).getMaxPanelWidth(obj3);
-            const tmpResult = tmp(17487);
-            const panelX = tmp(17487).getPanelX(windowWidth, maxPanelWidth);
+            const maxPanelWidth = tmp(17488).getMaxPanelWidth(obj3);
+            const tmpResult = tmp(17488);
+            const panelX = tmp(17488).getPanelX(windowWidth, maxPanelWidth);
             const _Math = Math;
-            const tmpResult2 = tmp(17487);
+            const tmpResult2 = tmp(17488);
             obj4 = { drawerWidth: maxPanelWidth, drawerHeight: diff, drawerX: panelX, drawerY: roundToNearestPixelDefault(Math.max(diff - tmp6 - tmp5 - safeArea.bottom, diff - 0.8 * diff)), animated: tmp9, mode: modeToSet };
             updateSharedValueIfChangedDefault(tmp11, obj4);
             const tmp23Result = roundToNearestPixelDefault(Math.max(diff - tmp6 - tmp5 - safeArea.bottom, diff - 0.8 * diff));
@@ -3206,7 +3206,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (tmp6[0]) {
     obj2 = { value: tmp4(AnalyticsLocationDefault.VOICE_PANEL).analyticsLocations, children: null };
     const obj3 = { children: null };
-    const items4 = [closure_21(tmp2(17489), {}), , ];
+    const items4 = [closure_21(tmp2(17490), {}), , ];
     obj4 = { opacity, onPress: dismissPanel };
     items4[1] = closure_21(closure_98, obj4);
     const obj5 = { style: tmp.accessibilityView, nativeID: null, accessibilityViewIsModal: true, layout: null, onAccessibilityEscape: null, children: null };
@@ -3214,19 +3214,19 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj5.nativeID = "voice-panel-ui-" + channelId;
     obj5.layout = layoutTransition;
     obj5.onAccessibilityEscape = tmp2(9568);
-    const items5 = [closure_21(tmp2(17491), {}), , , ];
+    const items5 = [closure_21(tmp2(17492), {}), , , ];
     const obj6 = { wrapperOffset, children: null };
     const obj7 = { zIndex: 2, children: null };
     const obj8 = { wrapperOffset, gestureState, layout: layoutTransition };
-    obj7.children = closure_21(tmp2(17493), obj8);
+    obj7.children = closure_21(tmp2(17494), obj8);
     const items6 = [closure_21(channelId(7403).LayerScope, obj7), ];
     const obj9 = { gesture, children: null };
     const obj10 = { style: StyleSheet.absoluteFill, layout: layoutTransition, collapsable: false, children: null };
-    const tmp2Result = tmp2(17490);
+    const tmp2Result = tmp2(17491);
     const obj11 = { gesture: scrollNativeGesture, children: null };
     const obj12 = { layout: scrollViewLayoutTransition, ref: scrollerRef, onScroll: handleScroll, onMomentumScrollEnd: NOOP, animatedProps: scrollViewProps, style: tmp.scrollView, onContentSizeChange, contentContainerStyle: tmp.scrollViewContent, scrollEventThrottle: 8.333333333333334, children: null };
     const obj13 = { viewableChunks };
-    const items7 = [closure_21(tmp2(17550), obj13), closure_21(tmp2(17582), {})];
+    const items7 = [closure_21(tmp2(17551), obj13), closure_21(tmp2(17583), {})];
     obj12.children = items7;
     obj11.children = closure_22(closure_35, obj12);
     obj10.children = closure_21(channelId(6891).GestureDetector, obj11);
@@ -3234,9 +3234,9 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items6[1] = closure_21(channelId(6891).GestureDetector, obj9);
     obj6.children = items6;
     items5[1] = closure_22(closure_94, obj6);
-    items5[2] = closure_21(tmp2(17586), {});
+    items5[2] = closure_21(tmp2(17587), {});
     const obj14 = { gestureState };
-    items5[3] = closure_21(tmp2(17592), obj14);
+    items5[3] = closure_21(tmp2(17593), obj14);
     obj5.children = items5;
     items4[2] = closure_22(tmp2Result, obj5);
     obj3.children = items4;

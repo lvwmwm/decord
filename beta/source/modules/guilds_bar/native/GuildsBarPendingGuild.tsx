@@ -369,7 +369,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
   ({ accessibilityActions, onAccessibilityAction } = memo1);
   let tmp2Result = guildId(stateFromStores[12]);
   const sharedValue = guildId(stateFromStores[21]).useSharedValue(guildId);
-  const obj7 = { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "Set", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "icl" };
+  const obj7 = { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "Set", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "max" };
   let str = guildName;
   const tmp2Result2 = guildId(stateFromStores[21]);
   if (guildName == null) {
@@ -389,5 +389,5 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildI
     const tmp5Result2 = tmp5(tmp3[13]);
   }
   obj7.children = tmp19Result;
-  return jsx(token(stateFromStores[10]), { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "Set", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "icl" });
+  return jsx(token(stateFromStores[10]), { id: guildId, accessibilityActions, onAccessibilityAction, cutouts, selected: stateFromStores, sharedId: sharedValue, circle: !stateFromStores, overState: "Set", unread: null, label: null, config: null, styles: null, externalChildren: null, expandedChildren: null, children: "max" });
 }));

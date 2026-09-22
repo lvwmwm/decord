@@ -476,7 +476,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
                           obj.onLongPress = fn;
                           obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                           obj.style = closure_5;
-                          obj.children = tmp(f67928, { badge: tmp4, alwaysVisible: tmp8 });
+                          obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
                           return tmp(tmp2, obj);
                         }
                       }
@@ -531,7 +531,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
                             obj.onLongPress = fn;
                             obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                             obj.style = closure_5;
-                            obj.children = tmp(f67928, { badge: tmp4, alwaysVisible: tmp8 });
+                            obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
                             return tmp(tmp2, obj);
                           }
                         }
@@ -598,7 +598,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
                   obj.onLongPress = fn;
                   obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
                   obj.style = closure_5;
-                  obj.children = tmp(f67928, { badge: tmp4, alwaysVisible: tmp8 });
+                  obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
                   return tmp(tmp2, obj);
                 }
               }
@@ -709,7 +709,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
         obj.onLongPress = fn;
         obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
         obj.style = closure_5;
-        obj.children = tmp(f67928, { badge: tmp4, alwaysVisible: tmp8 });
+        obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
         return tmp(tmp2, obj);
       }
     }
@@ -777,7 +777,7 @@ let gesture = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((badge) 
         obj.onLongPress = fn;
         obj.delayLongPress = tmp6(tmp7[12]).CONTEXT_MENU_LONG_PRESS_DURATION_MS;
         obj.style = closure_5;
-        obj.children = tmp(f67928, { badge: tmp4, alwaysVisible: tmp8 });
+        obj.children = tmp(f67929, { badge: tmp4, alwaysVisible: tmp8 });
         return tmp(tmp2, obj);
       }
     }

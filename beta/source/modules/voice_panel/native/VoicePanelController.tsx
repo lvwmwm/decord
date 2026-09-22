@@ -1,9 +1,9 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17644
+// Function ID: 17645
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4750, 2044, 4774, 8566, 9742, 9651, 2045, 1996, 4781, 2099, 4966, 12420, 12418, 1078, 2008, 9313, 4779, 12421, 21, 558, 568, 17644, 4497, 9660, 1095, 17645, 504, 4458, 9710, 1119, 17646, 17647, 9889, 9589, 17501, 1482, 1616, 17487, 12426, 12422, 10345, 12, 1259, 1114, 1252, 9730, 12164, 5087, 1245, 8608, 9612, 17442, 4471, 17580, 4959, 4938, 4625, 7284, 17553, 17581, 4389, 17648, 17649, 17653, 17447, 17486, 4642, 12419, 2]
+// Dependencies: [32, 19, 17, 4750, 2044, 4774, 8566, 9742, 9651, 2045, 1996, 4781, 2099, 4966, 12420, 12418, 1078, 2008, 9313, 4779, 12421, 21, 558, 568, 17645, 4497, 9660, 1095, 17646, 504, 4458, 9710, 1119, 17647, 17648, 9889, 9589, 17502, 1482, 1616, 17488, 12426, 12422, 10345, 12, 1259, 1114, 1252, 9730, 12164, 5087, 1245, 8608, 9612, 17443, 4471, 17581, 4959, 4938, 4625, 7284, 17554, 17582, 4389, 17649, 17650, 17654, 17448, 17487, 4642, 12419, 2]
 
-// Module 17643 (VoicePanelController)
+// Module 17644 (VoicePanelController)
 import DurationsDefault from "Durations" /* 1095 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import util from "util" /* 1119 */;
@@ -23,13 +23,13 @@ import _modDef9710 from "module_9710" /* 9710 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
 import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 12422 */;
-import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17442 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17486 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17501 */;
-import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 17580 */;
-import useTransitionToConnectedActivityInVoiceDefault from "useTransitionToConnectedActivityInVoice" /* 17644 */;
-import _modDef17646 from "module_17646" /* 17646 */;
-import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 17647 */;
+import applyActivityOrientationLockDefault from "applyActivityOrientationLock" /* 17443 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 17487 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17502 */;
+import useIsVoicePanelParticipantFocusable from "useIsVoicePanelParticipantFocusable" /* 17581 */;
+import useTransitionToConnectedActivityInVoiceDefault from "useTransitionToConnectedActivityInVoice" /* 17645 */;
+import _modDef17647 from "module_17647" /* 17647 */;
+import trackActivityThermalStateNoticeShown from "trackActivityThermalStateNoticeShown" /* 17648 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
@@ -543,7 +543,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
   }
   let obj = showControls(568);
   let tmp = showControls;
-  enableMuteWarning = enableMuteWarning(17645).useConfig(first).enableMuteWarning;
+  enableMuteWarning = enableMuteWarning(17646).useConfig(first).enableMuteWarning;
   dependencyMap = noop.useRef(0);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
@@ -558,7 +558,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
     tmp5 = cResult[1];
     tmp6 = cResult[2];
   }
-  const obj3 = enableMuteWarning(17645);
+  const obj3 = enableMuteWarning(17646);
   const obj4 = noop;
   const stateFromStores = tmp(504).useStateFromStores(tmp5, tmp6);
   if (cResult[3] === enableMuteWarning) {
@@ -599,9 +599,9 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? ((showControls) 
 }) : ((showControls) => {
   showControls = showControls.showControls;
   let enableMuteWarning;
-  enableMuteWarning = enableMuteWarning(17645).useConfig({ location: "VoicePanelController" }).enableMuteWarning;
+  enableMuteWarning = enableMuteWarning(17646).useConfig({ location: "VoicePanelController" }).enableMuteWarning;
   dependencyMap = noop.useRef(0);
-  let obj = enableMuteWarning(17645);
+  let obj = enableMuteWarning(17646);
   const items = [MediaEngineStore];
   const stateFromStores = showControls(504).useStateFromStores(items, () => speakingWhileMuted.getSpeakingWhileMuted());
   const items1 = [stateFromStores, enableMuteWarning, showControls];
@@ -672,7 +672,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
               tmp15 = tmp11;
             }
             if (tmp15) {
-              const obj2 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: _modDef17646, content: null, disableAnimations: true, toastDurationMs: 3000 };
+              const obj2 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: _modDef17647, content: null, disableAnimations: true, toastDurationMs: 3000 };
               const intl = util.intl;
               obj2.content = intl.string(util.t.O2IlPT);
               ToastActionCreatorsDefault.open(obj2);
@@ -807,7 +807,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
             tmp15 = tmp11;
           }
           if (tmp15) {
-            const obj2 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: _modDef17646, content: null, disableAnimations: true, toastDurationMs: 3000 };
+            const obj2 = { key: "EMBEDDED_ACTIVITIES_VIDEO_DISABLED_FOR_THERMAL_STATE", icon: _modDef17647, content: null, disableAnimations: true, toastDurationMs: 3000 };
             const intl = util.intl;
             obj2.content = intl.string(util.t.O2IlPT);
             ToastActionCreatorsDefault.open(obj2);

@@ -1,9 +1,9 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17225
+// Function ID: 17226
 // Name: FriendsNavigator
-// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 1119, 8118, 8112, 12760, 7722, 7246, 17225, 17231, 17234, 17235, 17236, 17243, 17244, 17245, 17247, 17250, 17251, 4612, 1616, 4471, 2]
+// Dependencies: [109, 19, 17, 21, 8162, 4758, 580, 558, 568, 1119, 8118, 8112, 12760, 7722, 7246, 17226, 17232, 17235, 17236, 17237, 17244, 17245, 17246, 17248, 17251, 17252, 4612, 1616, 4471, 2]
 
-// Module 17224 (FriendsNavigator)
+// Module 17225 (FriendsNavigator)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -106,7 +106,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             },
         getComponent() {
-              return closure_0(17225).default;
+              return closure_0(17226).default;
             }
       };
       const tmp13 = closure_7(closure_9.Screen, obj2);
@@ -123,7 +123,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj4.title = intl.string(tmp(1119).t.jD1qzM);
       obj3.options = obj4;
       obj3.getComponent = function getComponent() {
-        return closure_0(17231).default;
+        return closure_0(17232).default;
       };
       const tmp17 = closure_7(closure_9.Screen, obj3);
       cResult[6] = tmp17;
@@ -139,7 +139,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj6.title = intl2.string(tmp(1119).t["3hF1W4"]);
       obj5.options = obj6;
       obj5.getComponent = function getComponent() {
-        return closure_0(17234).default;
+        return closure_0(17235).default;
       };
       const tmp21 = closure_7(closure_9.Screen, obj5);
       cResult[7] = tmp21;
@@ -155,7 +155,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj8.title = intl3.string(tmp(1119).t.w5uwoI);
       obj7.options = obj8;
       obj7.getComponent = function getComponent() {
-        return closure_0(17235).default;
+        return closure_0(17236).default;
       };
       const tmp25 = closure_7(closure_9.Screen, obj7);
       cResult[8] = tmp25;
@@ -171,7 +171,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj10.title = intl4.string(tmp(1119).t.zIJnA6);
       obj9.options = obj10;
       obj9.getComponent = function getComponent() {
-        return closure_0(17236).default;
+        return closure_0(17237).default;
       };
       const tmp29 = closure_7(closure_9.Screen, obj9);
       cResult[9] = tmp29;
@@ -187,7 +187,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj12.title = intl5.string(tmp(1119).t.QzVsOs);
       obj11.options = obj12;
       obj11.getComponent = function getComponent() {
-        return closure_0(17243).default;
+        return closure_0(17244).default;
       };
       const tmp33 = closure_7(closure_9.Screen, obj11);
       cResult[10] = tmp33;
@@ -252,7 +252,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj14.title = intl6.string(tmp(1119).t["1uAmCw"]);
       obj13.options = obj14;
       obj13.getComponent = function getComponent() {
-        return closure_0(17244).default;
+        return closure_0(17245).default;
       };
       const tmp38 = closure_7(closure_9.Screen, obj13);
       cResult[11] = tmp38;
@@ -268,7 +268,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj16.title = intl7.string(tmp(1119).t.XT4hVl);
       obj15.options = obj16;
       obj15.getComponent = function getComponent() {
-        return closure_0(17245).default;
+        return closure_0(17246).default;
       };
       const tmp42 = closure_7(closure_9.Screen, obj15);
       cResult[12] = tmp42;
@@ -295,7 +295,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             },
         getComponent() {
-              return closure_0(17247).default;
+              return closure_0(17248).default;
             }
       };
       const tmp46 = closure_7(closure_9.Screen, obj17);
@@ -312,7 +312,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj19.title = intl8.string(tmp(1119).t.oHVeHc);
       obj18.options = obj19;
       obj18.getComponent = function getComponent() {
-        return closure_0(17250).default;
+        return closure_0(17251).default;
       };
       const tmp50 = closure_7(closure_9.Screen, obj18);
       cResult[14] = tmp50;
@@ -328,7 +328,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj21.title = intl9.string(tmp(1119).t.tFY5Zb);
       obj20.options = obj21;
       obj20.getComponent = function getComponent() {
-        return closure_0(17251).default;
+        return closure_0(17252).default;
       };
       const tmp54 = closure_7(closure_9.Screen, obj20);
       cResult[15] = tmp54;
@@ -518,7 +518,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return obj;
       },
       getComponent() {
-        return closure_0(17225).default;
+        return closure_0(17226).default;
       }
     }),
   ,
@@ -538,7 +538,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.title = intl.string(require("util").t.jD1qzM);
   obj4.options = obj5;
   obj4.getComponent = function getComponent() {
-    return closure_0(17231).default;
+    return closure_0(17232).default;
   };
   items[1] = closure_7(closure_9.Screen, obj4);
   const obj6 = { name: "gdm", options: null, getComponent: null };
@@ -547,7 +547,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj7.title = intl2.string(require("util").t["3hF1W4"]);
   obj6.options = obj7;
   obj6.getComponent = function getComponent() {
-    return closure_0(17234).default;
+    return closure_0(17235).default;
   };
   items[2] = closure_7(closure_9.Screen, obj6);
   const obj8 = { name: "add-friend", options: null, getComponent: null };
@@ -556,7 +556,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj9.title = intl3.string(require("util").t.w5uwoI);
   obj8.options = obj9;
   obj8.getComponent = function getComponent() {
-    return closure_0(17235).default;
+    return closure_0(17236).default;
   };
   items[3] = closure_7(closure_9.Screen, obj8);
   const obj10 = { name: "add-friends", options: null, getComponent: null };
@@ -565,7 +565,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj11.title = intl4.string(require("util").t.zIJnA6);
   obj10.options = obj11;
   obj10.getComponent = function getComponent() {
-    return closure_0(17236).default;
+    return closure_0(17237).default;
   };
   items[4] = closure_7(closure_9.Screen, obj10);
   const obj12 = { name: "username-search", options: null, getComponent: null };
@@ -574,7 +574,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj13.title = intl5.string(require("util").t.QzVsOs);
   obj12.options = obj13;
   obj12.getComponent = function getComponent() {
-    return closure_0(17243).default;
+    return closure_0(17244).default;
   };
   items[5] = closure_7(closure_9.Screen, obj12);
   const obj14 = { name: "suggested-friends", options: null, getComponent: null };
@@ -583,7 +583,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj15.title = intl6.string(require("util").t["1uAmCw"]);
   obj14.options = obj15;
   obj14.getComponent = function getComponent() {
-    return closure_0(17244).default;
+    return closure_0(17245).default;
   };
   items[6] = closure_7(closure_9.Screen, obj14);
   const obj16 = { name: "requests-settings", options: null, getComponent: null };
@@ -592,7 +592,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj17.title = intl7.string(require("util").t.XT4hVl);
   obj16.options = obj17;
   obj16.getComponent = function getComponent() {
-    return closure_0(17245).default;
+    return closure_0(17246).default;
   };
   items[7] = closure_7(closure_9.Screen, obj16);
   items[8] = closure_7(closure_9.Screen, {
@@ -612,7 +612,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return obj;
     },
     getComponent() {
-      return closure_0(17247).default;
+      return closure_0(17248).default;
     }
   });
   const obj19 = { name: "spam-requests", options: null, getComponent: null };
@@ -621,7 +621,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj20.title = intl8.string(require("util").t.oHVeHc);
   obj19.options = obj20;
   obj19.getComponent = function getComponent() {
-    return closure_0(17250).default;
+    return closure_0(17251).default;
   };
   items[9] = closure_7(closure_9.Screen, obj19);
   const obj21 = { name: "ignored-user-requests", options: null, getComponent: null };
@@ -630,7 +630,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj22.title = intl9.string(require("util").t.tFY5Zb);
   obj21.options = obj22;
   obj21.getComponent = function getComponent() {
-    return closure_0(17251).default;
+    return closure_0(17252).default;
   };
   items[10] = closure_7(closure_9.Screen, obj21);
   obj2.children = items;

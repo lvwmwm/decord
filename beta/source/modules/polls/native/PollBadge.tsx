@@ -1,15 +1,15 @@
-// Module ID: 17149
-// Function ID: 17150
+// Module ID: 17150
+// Function ID: 17151
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 17150, 1119, 4754, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 17151, 1119, 4754, 2]
 
-// Module 17149 (PollBadge)
+// Module 17150 (PollBadge)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import _modDef17150 from "module_17150" /* 17150 */;
+import _modDef17151 from "module_17151" /* 17151 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -34,7 +34,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { size: tmp(1181).IconSizes.EXTRA_SMALL_10, source: _modDef17150 };
+      const obj2 = { size: tmp(1181).IconSizes.EXTRA_SMALL_10, source: _modDef17151 };
       const tmp10 = React4(tmp(1181).Icon, obj2);
       cResult[3] = tmp10;
       let tmp7 = tmp10;
@@ -84,7 +84,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const obj = { style: null, children: null };
   const items = [tmp.container, style.style];
   obj.style = items;
-  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef17150 }), ];
+  const items1 = [React4(native.Icon, { size: native.IconSizes.EXTRA_SMALL_10, source: _modDef17151 }), ];
   const obj3 = { style: tmp.text, variant: "text-xs/semibold", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t.RgIi2B);

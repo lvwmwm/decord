@@ -1,20 +1,20 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17066
+// Function ID: 17067
 // Name: VibegrationsDebugScene
-// Dependencies: [32, 19, 17, 7961, 13364, 17066, 21, 4758, 580, 1119, 3682, 558, 568, 1488, 1616, 504, 9868, 7436, 17067, 4458, 4704, 16941, 9869, 17068, 17074, 17083, 17085, 2]
+// Dependencies: [32, 19, 17, 7961, 13364, 17067, 21, 4758, 580, 1119, 3682, 558, 568, 1488, 1616, 504, 9868, 7436, 17068, 4458, 4704, 16942, 9869, 17069, 17075, 17084, 17086, 2]
 
-// Module 17065 (VibegrationsDebugScene)
+// Module 17066 (VibegrationsDebugScene)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4458 */;
 import CopyIcon from "CopyIcon" /* 4704 */;
 import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17067 */;
+import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17068 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7961 */;
-import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17066 */;
+import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17067 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

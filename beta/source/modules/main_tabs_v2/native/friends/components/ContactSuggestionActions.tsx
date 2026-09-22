@@ -1,9 +1,9 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16786
+// Function ID: 16787
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4497, 4758, 580, 558, 568, 16383, 4759, 5187, 1181, 16786, 1119, 5188, 2]
+// Dependencies: [19, 17, 21, 4497, 4758, 580, 558, 568, 16383, 4759, 5187, 1181, 16787, 1119, 5188, 2]
 
-// Module 16785 (ContactSuggestionActions)
+// Module 16786 (ContactSuggestionActions)
 import nativeDefault from "native" /* 580 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import timing from "timing" /* 4759 */;

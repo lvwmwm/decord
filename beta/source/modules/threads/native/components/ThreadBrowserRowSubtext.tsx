@@ -1,9 +1,9 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17185
+// Function ID: 17186
 // Name: ThreadBrowserRowSubtext
 // Dependencies: [19, 17, 4750, 2109, 1376, 7550, 1078, 1089, 21, 4758, 580, 558, 568, 504, 8028, 5217, 5739, 1119, 4603, 4754, 7555, 4990, 11, 1181, 8137, 8224, 2]
 
-// Module 17184 (ThreadBrowserRowSubtext)
+// Module 17185 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

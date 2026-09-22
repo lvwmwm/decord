@@ -1,9 +1,9 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17054
+// Function ID: 17055
 // Name: VibegrationsConjureShellGlow
-// Dependencies: [32, 19, 17, 4750, 1186, 21, 1368, 580, 676, 4758, 558, 568, 504, 4611, 4497, 4759, 5198, 17054, 5881, 2]
+// Dependencies: [32, 19, 17, 4750, 1186, 21, 1368, 580, 676, 4758, 558, 568, 504, 4611, 4497, 4759, 5198, 17055, 5881, 2]
 
-// Module 17053 (VibegrationsConjureShellGlow)
+// Module 17054 (VibegrationsConjureShellGlow)
 import nativeDefault from "native" /* 580 */;
 import _modDef676 from "module_676" /* 676 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
@@ -1119,7 +1119,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((thinking) => {
                                       }
                                     }
                                     const size = { width, height: tmp50, thinking, fill: tmp89, fillOpacity: 0.16 };
-                                    const tmp93 = sharedValue4(stateFromStores(17054), size);
+                                    const tmp93 = sharedValue4(stateFromStores(17055), size);
                                     cResult[56] = tmp89;
                                     cResult[57] = 0.16;
                                     cResult[58] = thinking;

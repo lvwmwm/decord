@@ -1,9 +1,9 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17001
+// Function ID: 17002
 // Name: VibegrationsSelectModeIcon
 // Dependencies: [19, 21, 558, 568, 580, 4462, 8733, 2]
 
-// Module 17000 (VibegrationsSelectModeIcon)
+// Module 17001 (VibegrationsSelectModeIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;

@@ -1,10 +1,10 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18090
+// Function ID: 18091
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 2067, 1376, 9834, 21, 4758, 580, 504, 7296, 2023, 5736, 5739, 9833, 5822, 1181, 5829, 1119, 7436, 4457, 7441, 7285, 18090, 7297, 8506, 7302, 7286, 2]
+// Dependencies: [32, 19, 17, 2067, 1376, 9834, 21, 4758, 580, 504, 7296, 2023, 5736, 5739, 9833, 5822, 1181, 5829, 1119, 7436, 4457, 7441, 7285, 18091, 7297, 8506, 7302, 7286, 2]
 // Exports: default
 
-// Module 18089 (GuildSettingsModalBans)
+// Module 18090 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import fuzzysearchDefault from "fuzzysearch" /* 5736 */;

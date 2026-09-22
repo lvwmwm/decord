@@ -1,9 +1,9 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17490
+// Function ID: 17491
 // Name: VoicePanelSystemUIManager
 // Dependencies: [32, 19, 4774, 12420, 12418, 4779, 21, 12419, 1252, 1368, 551, 4497, 9660, 9646, 9648, 2]
 
-// Module 17489 (VoicePanelSystemUIManager)
+// Module 17490 (VoicePanelSystemUIManager)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1252 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import _slicedToArray from "module_32" /* 32 */;

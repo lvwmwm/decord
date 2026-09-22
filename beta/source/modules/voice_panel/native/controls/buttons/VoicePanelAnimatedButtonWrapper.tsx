@@ -1,9 +1,9 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 17609
+// Function ID: 17610
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 12420, 21, 4758, 580, 4497, 558, 568, 17488, 1368, 5187, 4759, 2]
+// Dependencies: [19, 17, 12420, 21, 4758, 580, 4497, 558, 568, 17489, 1368, 5187, 4759, 2]
 
-// Module 17608 (VoicePanelAnimatedButtonWrapper)
+// Module 17609 (VoicePanelAnimatedButtonWrapper)
 import nativeDefault from "native" /* 580 */;
 import PlatformUtils from "PlatformUtils" /* 1368 */;
 import timing from "timing" /* 4759 */;

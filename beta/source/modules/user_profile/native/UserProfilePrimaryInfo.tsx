@@ -1339,7 +1339,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       obj.badgeSize = badgeSize;
       obj.themeType = themeType;
       obj.showToastOnPress = showToastOnPress;
-      return jsx(f56830, obj, userId.id);
+      return jsx(f56831, obj, userId.id);
     }
   }
   cResult[15] = tmp14;

@@ -1,10 +1,10 @@
-// Module ID: 16946
-// Function ID: 16947
+// Module ID: 16947
+// Function ID: 16948
 // Name: VibegrationsLandingModelChoices
 // Dependencies: [13367, 5277, 2]
 // Exports: landingModelChoices
 
-// Module 16946 (VibegrationsLandingModelChoices)
+// Module 16947 (VibegrationsLandingModelChoices)
 import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
 import vibegrationsLocalDev from "vibegrationsLocalDev" /* 13367 */;
 import size from "module_2" /* 2 */;

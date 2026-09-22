@@ -1,9 +1,9 @@
-// Module ID: 17208
-// Function ID: 17209
+// Module ID: 17209
+// Function ID: 17210
 // Name: ChannelNameHeader
 // Dependencies: [19, 17, 2045, 2067, 4399, 4798, 1376, 1078, 21, 4758, 580, 558, 568, 504, 1181, 4911, 1488, 4769, 1119, 4754, 5341, 4903, 3618, 11216, 5241, 11202, 7409, 8453, 2]
 
-// Module 17208 (ChannelNameHeader)
+// Module 17209 (ChannelNameHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
@@ -169,7 +169,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: tmp2(1181).AvatarSizes.NORMAL, status: null, isMobileOnline: null, isVROnline: null, statusStyle: null };
+    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: tmp2(1181).AvatarSizes.NORMAL, status: false, isMobileOnline: null, isVROnline: true, statusStyle: null };
     let isSystemUserResult;
     if (stateFromStores != null) {
       isSystemUserResult = stateFromStores.isSystemUser();

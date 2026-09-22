@@ -1,9 +1,9 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 18255
+// Function ID: 18256
 // Name: NotificationSettingChannelOverrides
 // Dependencies: [32, 19, 17, 2049, 7358, 4409, 1376, 1078, 21, 4758, 580, 558, 568, 504, 7224, 7359, 4911, 5736, 1119, 4472, 7296, 5822, 5828, 5241, 11170, 7297, 1181, 8506, 7302, 2]
 
-// Module 18254 (NotificationSettingChannelOverrides)
+// Module 18255 (NotificationSettingChannelOverrides)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4472 */;

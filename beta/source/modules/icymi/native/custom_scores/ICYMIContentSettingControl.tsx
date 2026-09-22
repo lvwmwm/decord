@@ -1,19 +1,19 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16802
+// Function ID: 16803
 // Name: ICYMIContentSettingControl
-// Dependencies: [32, 19, 17, 4939, 8611, 21, 4758, 580, 8626, 558, 568, 1119, 1181, 16802, 16803, 16804, 9868, 9869, 504, 16805, 4754, 7446, 4911, 2]
+// Dependencies: [32, 19, 17, 4939, 8611, 21, 4758, 580, 8626, 558, 568, 1119, 1181, 16803, 16804, 16805, 9868, 9869, 504, 16806, 4754, 7446, 4911, 2]
 
-// Module 16801 (ICYMIContentSettingControl)
+// Module 16802 (ICYMIContentSettingControl)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import native from "native" /* 1181 */;
 import ICYMIUtils from "ICYMIUtils" /* 8626 */;
 import SegmentedControlState from "SegmentedControlState" /* 9868 */;
 import SegmentedControl from "SegmentedControl" /* 9869 */;
-import _modDef16802 from "module_16802" /* 16802 */;
 import _modDef16803 from "module_16803" /* 16803 */;
 import _modDef16804 from "module_16804" /* 16804 */;
-import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 16805 */;
+import _modDef16805 from "module_16805" /* 16805 */;
+import NativeICYMIActionCreatorsDefault from "NativeICYMIActionCreators" /* 16806 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4939 */;
@@ -253,7 +253,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
         tmp23 = items;
       }
       const obj3 = { label: tmp17, id: "1", icon: null, page: null };
-      const obj4 = { source: _modDef16804, style: null };
+      const obj4 = { source: _modDef16805, style: null };
       const items1 = [tmp4.icon, iconSelected2];
       obj4.style = items1;
       obj3.icon = closure_8(tmp(1181).Icon, obj4);
@@ -263,7 +263,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
       tmp20 = obj3;
     }
     const obj5 = { label: tmp11, id: "0", icon: null, page: null };
-    const obj6 = { source: _modDef16803, style: null };
+    const obj6 = { source: _modDef16804, style: null };
     const items2 = [tmp4.icon, iconSelected1];
     obj6.style = items2;
     obj5.icon = closure_8(tmp(1181).Icon, obj6);
@@ -273,7 +273,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
     tmp14 = obj5;
   }
   const obj7 = { label: first, id: "-1", icon: null, page: null };
-  const obj8 = { source: _modDef16802, style: null };
+  const obj8 = { source: _modDef16803, style: null };
   const items3 = [tmp4.icon, iconSelected];
   obj8.style = items3;
   obj7.icon = closure_8(onValueUpdated(1181).Icon, obj8);
@@ -289,7 +289,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   const obj = { label: null, id: "-1", icon: null, page: null };
   const intl = util.intl;
   obj.label = intl.string(util.t.rdt65I);
-  const obj2 = { source: _modDef16802, style: null };
+  const obj2 = { source: _modDef16803, style: null };
   const items = [tmp.icon, ];
   let iconSelected = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.LESS) {
@@ -302,7 +302,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   const obj3 = { label: null, id: "0", icon: null, page: null };
   const intl2 = tmp4(1119).intl;
   obj3.label = intl2.string(util.t.SnrG00);
-  const obj4 = { source: _modDef16803, style: null };
+  const obj4 = { source: _modDef16804, style: null };
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.DEFAULT) {
@@ -315,7 +315,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((onValueUpdated
   const obj5 = { label: null, id: "1", icon: null, page: null };
   const intl3 = tmp4(1119).intl;
   obj5.label = intl3.string(util.t.Rxe3jF);
-  const obj6 = { source: _modDef16804, style: null };
+  const obj6 = { source: _modDef16805, style: null };
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
   if (tmp3 === ICYMIUtils.ICYMICustomScore.MORE) {

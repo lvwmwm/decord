@@ -37,7 +37,7 @@ obj2.footer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: native
 let closure_12 = createStyles.createStyles(obj2);
 let ReactCompilerGating = fn(558);
 ReactCompilerGating.isReactCompilerEnabled();
-const f56887 = () => {
+const f56888 = () => {
 
 };
 ReactCompilerGating = fn(558);
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
   const cResult = targetUserId(568).c(68);
   targetUserId = targetUserId.targetUserId;
   const tmp4 = closure_12();
-  if (typeof f56887 === "function") {
+  if (typeof f56888 === "function") {
     const diff = targetUserId(1482)().width - 2 * targetUserId(580).space.PX_16;
     let result = 3 * targetUserId(580).space.PX_12;
     const sum = targetUserId(1616)().bottom + targetUserId(580).space.PX_16;
@@ -613,7 +613,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((targetUserId) =>
   targetUserId = undefined;
   let stateFromStoresArray;
   const tmp = closure_12();
-  if (typeof f56887 === "function") {
+  if (typeof f56888 === "function") {
     let stringResult1 = stateFromStoresArray;
     const diff = targetUserId(stateFromStoresArray[10])().width - 2 * targetUserId(stateFromStoresArray[8]).space.PX_16;
     let result = 3 * targetUserId(stateFromStoresArray[8]).space.PX_12;

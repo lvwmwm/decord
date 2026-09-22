@@ -1,15 +1,15 @@
 // Module ID: 16352
 // Function ID: 16353
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 2099, 4580, 11383, 21, 8162, 16353, 16743, 16791, 504, 558, 568, 16865, 8628, 7246, 7403, 2]
+// Dependencies: [19, 17, 2099, 4580, 11383, 21, 8162, 16353, 16744, 16792, 504, 558, 568, 16866, 8628, 7246, 7403, 2]
 
 // Module 16352 (YouBarStackNavigator)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import Navigator from "Navigator" /* 7246 */;
 import ICYMIExperiment from "ICYMIExperiment" /* 8628 */;
-import notifications_Notifications from "notifications/Notifications" /* 16743 */;
-import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16865 */;
+import notifications_Notifications from "notifications/Notifications" /* 16744 */;
+import useNotificationPermissionPromptDefault from "useNotificationPermissionPrompt" /* 16866 */;
 import noop from "module_19" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2099 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4580 */;

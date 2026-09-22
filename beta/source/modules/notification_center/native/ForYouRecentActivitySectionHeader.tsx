@@ -1,9 +1,9 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16779
+// Function ID: 16780
 // Name: ForYouRecentActivitySectionHeader
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1119, 4754, 2]
 
-// Module 16778 (ForYouRecentActivitySectionHeader)
+// Module 16779 (ForYouRecentActivitySectionHeader)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

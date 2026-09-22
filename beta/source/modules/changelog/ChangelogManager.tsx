@@ -1,9 +1,9 @@
-// Module ID: 17749
-// Function ID: 17750
+// Module ID: 17750
+// Function ID: 17751
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2113, 4772, 7365, 8356, 17750, 577, 11, 17752, 2]
+// Dependencies: [5, 32, 2113, 4772, 7365, 8356, 17751, 577, 11, 17753, 2]
 
-// Module 17749 (ChangelogManager)
+// Module 17750 (ChangelogManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2113 */;

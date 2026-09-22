@@ -1,9 +1,9 @@
-// Module ID: 18064
-// Function ID: 18065
+// Module ID: 18065
+// Function ID: 18066
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 18047, 1078, 1379, 21, 558, 568, 504, 4725, 5356, 1479, 18065, 4457, 1119, 18061, 10436, 7396, 4754, 5822, 7449, 5903, 2]
+// Dependencies: [5, 19, 18048, 1078, 1379, 21, 558, 568, 504, 4725, 5356, 1479, 18066, 4457, 1119, 18062, 10436, 7396, 4754, 5822, 7449, 5903, 2]
 
-// Module 18064 (RoleIconActionSheet)
+// Module 18065 (RoleIconActionSheet)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
@@ -12,10 +12,10 @@ import TableRow from "TableRow" /* 5822 */;
 import TableRowGroup from "TableRowGroup" /* 5903 */;
 import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
 import ActionSheet from "ActionSheet" /* 7449 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18061 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18062 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18047 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18048 */;
 
 const require = globalThis.__r;
 
@@ -166,9 +166,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               }
               if (closure_2_9.includes(c0)) {
                 const obj = _var(1479);
-                if (dataUriFileSizeResult <= _var(18065).ROLE_ICON_MAX_FILE_SIZE) {
-                  _var(18061).updateRoleIcon(closure_1, base64, null);
-                  const obj2 = _var(18061);
+                if (dataUriFileSizeResult <= _var(18066).ROLE_ICON_MAX_FILE_SIZE) {
+                  _var(18062).updateRoleIcon(closure_1, base64, null);
+                  const obj2 = _var(18062);
                 }
                 dataUriFileSizeResult = _var(1479).dataUriFileSize(base64);
               }
@@ -508,18 +508,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   surrogates = tmp38.surrogates;
                 }
                 if (null != surrogates) {
-                  closure_0(18061).updateRoleIcon(surrogates, null, tmp26);
-                  const obj5 = closure_0(18061);
+                  closure_0(18062).updateRoleIcon(surrogates, null, tmp26);
+                  const obj5 = closure_0(18062);
                 }
               } else {
                 c6 = 1;
-                const tmp22 = closure_0(18061);
+                const tmp22 = closure_0(18062);
                 closure_4 = tmp22;
                 const updateRoleIcon = tmp22.updateRoleIcon;
                 closure_2 = surrogates;
                 c7 = 2;
                 c8 = 1;
-                const obj7 = { value: closure_0(18065).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
+                const obj7 = { value: closure_0(18066).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
                 return obj7;
               }
             }
@@ -722,18 +722,18 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   surrogates = tmp38.surrogates;
                 }
                 if (null != surrogates) {
-                  closure_0(18061).updateRoleIcon(surrogates, null, tmp26);
-                  const obj5 = closure_0(18061);
+                  closure_0(18062).updateRoleIcon(surrogates, null, tmp26);
+                  const obj5 = closure_0(18062);
                 }
               } else {
                 c6 = 1;
-                const tmp22 = closure_0(18061);
+                const tmp22 = closure_0(18062);
                 closure_4 = tmp22;
                 const updateRoleIcon = tmp22.updateRoleIcon;
                 closure_2 = surrogates;
                 c7 = 2;
                 c8 = 1;
-                const obj7 = { value: closure_0(18065).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
+                const obj7 = { value: closure_0(18066).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
                 return obj7;
               }
             }

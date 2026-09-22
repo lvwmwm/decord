@@ -1,15 +1,15 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 16917
+// Function ID: 16918
 // Name: GuildHomeResources
-// Dependencies: [19, 17, 2045, 2100, 4978, 4399, 1078, 21, 4758, 580, 558, 568, 504, 8146, 12139, 16917, 7703, 12432, 1401, 4754, 4748, 5341, 16910, 1105, 1119, 16918, 5188, 2]
+// Dependencies: [19, 17, 2045, 2100, 4978, 4399, 1078, 21, 4758, 580, 558, 568, 504, 8146, 12139, 16918, 7703, 12432, 1401, 4754, 4748, 5341, 16911, 1105, 1119, 16919, 5188, 2]
 
-// Module 16916 (GuildHomeResources)
+// Module 16917 (GuildHomeResources)
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7703 */;
 import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12432 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16910 */;
-import _modDef16918 from "module_16918" /* 16918 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16911 */;
+import _modDef16919 from "module_16919" /* 16919 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
@@ -165,7 +165,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       }
     }
     const shouldObscure = tmp(12139).useSharedMediaProps(obj2).shouldObscure;
-    stateFromStores(16917)(tmp14);
+    stateFromStores(16918)(tmp14);
     if (cResult[14] === stateFromStores) {
       class R {
         constructor() {
@@ -277,7 +277,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   }
   const obj6 = channelId(8146);
   let flag = channelId(12139).useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(16917)(firstResult);
+  const tmp11 = stateFromStores(16918)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -405,7 +405,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp17 = cResult[2];
     }
     if (cResult[3] !== tmp4.emptyStateImage) {
-      const obj3 = { style: tmp4.emptyStateImage, source: _modDef16918 };
+      const obj3 = { style: tmp4.emptyStateImage, source: _modDef16919 };
       const tmp23 = closure_12(closure_5, obj3);
       cResult[3] = tmp4.emptyStateImage;
       cResult[4] = tmp23;
@@ -503,7 +503,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const intl = guildId(1119).intl;
     obj3.children = intl.string(guildId(1119).t.owvC9U);
     const items = [closure_12(guildId(4754).Text, obj3), , ];
-    const obj4 = { style: tmp.emptyStateImage, source: _modDef16918 };
+    const obj4 = { style: tmp.emptyStateImage, source: _modDef16919 };
     items[1] = closure_12(closure_5, obj4);
     const obj5 = {
       onPress() {

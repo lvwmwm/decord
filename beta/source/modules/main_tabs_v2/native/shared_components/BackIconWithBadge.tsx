@@ -1,9 +1,9 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16746
+// Function ID: 16747
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7877, 21, 4758, 580, 558, 568, 504, 16736, 1181, 9092, 1369, 5843, 5846, 4710, 2]
+// Dependencies: [19, 17, 7877, 21, 4758, 580, 558, 568, 504, 16737, 1181, 9092, 1369, 5843, 5846, 4710, 2]
 
-// Module 16745 (BackIconWithBadge)
+// Module 16746 (BackIconWithBadge)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1181 */;
 import XLargeIcon from "XLargeIcon" /* 4710 */;
 import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 5843 */;
 import ClipView from "ClipView" /* 9092 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16736 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16737 */;
 import noop from "module_19" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 7877 */;
 
@@ -117,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(16736)().value;
+    num2 = memo(16737)().value;
   }
   const sum = num + num2;
   _require = sum;

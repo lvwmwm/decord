@@ -1,9 +1,9 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17554
+// Function ID: 17555
 // Name: VoicePanelStreamOutputSinkStack
 // Dependencies: [32, 19, 558, 568, 2]
 
-// Module 17553 (VoicePanelStreamOutputSinkStack)
+// Module 17554 (VoicePanelStreamOutputSinkStack)
 import c from "c" /* 568 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

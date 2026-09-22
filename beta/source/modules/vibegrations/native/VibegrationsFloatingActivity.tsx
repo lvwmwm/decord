@@ -1,9 +1,9 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17060
+// Function ID: 17061
 // Name: VibegrationsFloatingActivity
-// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4497, 4759, 17043, 1119, 3682, 12984, 4754, 5341, 5757, 2]
+// Dependencies: [32, 19, 17, 21, 4758, 580, 558, 568, 4497, 4759, 17044, 1119, 3682, 12984, 4754, 5341, 5757, 2]
 
-// Module 17059 (VibegrationsFloatingActivity)
+// Module 17060 (VibegrationsFloatingActivity)
 import nativeDefault from "native" /* 580 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
@@ -145,7 +145,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (null != todos) {
       const obj4 = { style: tmp.panel, children: null };
       const obj5 = { todos, agents, announceProgress: false };
-      obj4.children = closure_6(tmp11(17043), obj5);
+      obj4.children = closure_6(tmp11(17044), obj5);
       tmp12 = closure_6(View, obj4);
     }
   }

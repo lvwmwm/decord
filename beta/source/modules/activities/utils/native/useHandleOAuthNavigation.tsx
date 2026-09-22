@@ -1,10 +1,10 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17448
+// Function ID: 17449
 // Name: useHandleOAuthNavigation
 // Dependencies: [19, 1078, 9318, 4961, 9324, 1984, 1114, 2]
 // Exports: default
 
-// Module 17447 (useHandleOAuthNavigation)
+// Module 17448 (useHandleOAuthNavigation)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1114 */;
 import noop from "module_19" /* 19 */;
 

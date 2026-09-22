@@ -1,9 +1,9 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 16744
+// Function ID: 16745
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 11383, 2042, 21, 4758, 580, 4617, 558, 568, 7186, 8103, 16744, 5341, 1119, 16745, 4754, 16746, 8109, 16748, 7371, 7409, 7429, 7722, 5845, 16752, 16753, 12026, 7403, 4612, 1616, 16354, 5343, 4471, 2]
+// Dependencies: [19, 17, 11383, 2042, 21, 4758, 580, 4617, 558, 568, 7186, 8103, 16745, 5341, 1119, 16746, 4754, 16747, 8109, 16749, 7371, 7409, 7429, 7722, 5845, 16753, 16754, 12026, 7403, 4612, 1616, 16354, 5343, 4471, 2]
 
-// Module 16743 (notifications/Notifications)
+// Module 16744 (notifications/Notifications)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
@@ -18,13 +18,13 @@ import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12026 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16354 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16744 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 16753 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16745 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 16754 */;
 import noop from "module_19" /* 19 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
-const NotificationCenterPermissionNudgeDefault = tmp7(16752);
+const NotificationCenterPermissionNudgeDefault = tmp7(16753);
 require = fn;
 function goBack() {
   const navigation = RootNavigationRef.getRootNavigationRef();
@@ -136,7 +136,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((nest
     const intl = tmp(1119).intl;
     obj7.accessibilityLabel = intl.string(tmp(1119).t["13/7kX"]);
     obj7.onPress = goBack;
-    obj7.children = closure_7(tmp(16745).LeftBackIconWithBadge, {});
+    obj7.children = closure_7(tmp(16746).LeftBackIconWithBadge, {});
     const items2 = [closure_7(tmp(5341).PressableOpacity, obj7), , ];
     const obj8 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp4.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl2 = tmp(1119).intl;
@@ -147,17 +147,17 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((nest
     if (isForLaterExperimentOn) {
       const obj10 = { children: null };
       const obj11 = { ref, type: tmp(8109).SavedMessageSortTypes.BOOKMARK, onOpen: tmp10 };
-      const items3 = [tmp16(tmp5(16746), obj11), ];
+      const items3 = [tmp16(tmp5(16747), obj11), ];
       const obj12 = { type: null, onOpen: null };
-      const tmp5Result = tmp5(16746);
+      const tmp5Result = tmp5(16747);
       obj12.type = tmp(8109).SavedMessageSortTypes.REMINDER;
       obj12.onOpen = tmp10;
-      items3[1] = tmp16(tmp5(16746), obj12);
+      items3[1] = tmp16(tmp5(16747), obj12);
       obj10.children = items3;
       tmp14Result = tmp14(closure_8, obj10);
-      const tmp5Result2 = tmp5(16746);
+      const tmp5Result2 = tmp5(16747);
     }
-    const items4 = [tmp14Result, closure_7(tmp5(16748), {})];
+    const items4 = [tmp14Result, closure_7(tmp5(16749), {})];
     obj9.children = items4;
     items2[2] = closure_9(View, obj9);
     obj6.children = items2;
@@ -195,7 +195,7 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((nest
     const intl = tmp5(1119).intl;
     obj4.accessibilityLabel = intl.string(tmp5(1119).t["13/7kX"]);
     obj4.onPress = goBack;
-    obj4.children = tmp12(tmp5(16745).LeftBackIconWithBadge, {});
+    obj4.children = tmp12(tmp5(16746).LeftBackIconWithBadge, {});
     const items1 = [tmp12(tmp5(5341).PressableOpacity, obj4), , ];
     const obj5 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl2 = tmp5(1119).intl;
@@ -206,17 +206,17 @@ let closure_12 = noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((nest
     if (isForLaterExperimentOn) {
       const obj7 = { children: null };
       const obj8 = { ref, type: tmp5(8109).SavedMessageSortTypes.BOOKMARK, onOpen: callback };
-      const items2 = [tmp12(tmp2(16746), obj8), ];
+      const items2 = [tmp12(tmp2(16747), obj8), ];
       const obj9 = { type: null, onOpen: null };
-      const tmp2Result = tmp2(16746);
+      const tmp2Result = tmp2(16747);
       obj9.type = tmp5(8109).SavedMessageSortTypes.REMINDER;
       obj9.onOpen = callback;
-      items2[1] = tmp12(tmp2(16746), obj9);
+      items2[1] = tmp12(tmp2(16747), obj9);
       obj7.children = items2;
       tmp10Result = tmp10(closure_8, obj7);
-      const tmp2Result2 = tmp2(16746);
+      const tmp2Result2 = tmp2(16747);
     }
-    const items3 = [tmp10Result, tmp12(tmp2(16748), {})];
+    const items3 = [tmp10Result, tmp12(tmp2(16749), {})];
     obj6.children = items3;
     items1[2] = tmp10(tmp11, obj6);
     obj3.children = items1;
@@ -287,7 +287,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[10] !== tmp4) {
         const obj2 = { nestedInLaunchPad: tmp4 };
-        const tmp24 = React5(tmp(16753).NotificationCenterForYou, obj2);
+        const tmp24 = React5(tmp(16754).NotificationCenterForYou, obj2);
         cResult[10] = tmp4;
         cResult[11] = tmp24;
         let tmp22 = tmp24;

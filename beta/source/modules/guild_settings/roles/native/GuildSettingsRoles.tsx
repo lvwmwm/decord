@@ -1,9 +1,9 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18041
+// Function ID: 18042
 // Name: GuildSettingsRoles
-// Dependencies: [32, 19, 17, 1186, 2104, 502, 4678, 2103, 2067, 4399, 7375, 18041, 18042, 1078, 21, 4758, 580, 5743, 558, 568, 1245, 18043, 504, 16483, 9833, 1488, 7186, 4404, 4938, 18044, 18053, 18054, 5903, 1119, 5341, 12291, 4754, 4610, 18055, 18056, 18057, 18058, 5802, 5188, 18059, 7621, 12924, 1368, 18051, 5739, 7376, 7297, 8876, 1181, 9820, 16719, 7286, 2]
+// Dependencies: [32, 19, 17, 1186, 2104, 502, 4678, 2103, 2067, 4399, 7375, 18042, 18043, 1078, 21, 4758, 580, 5743, 558, 568, 1245, 18044, 504, 16483, 9833, 1488, 7186, 4404, 4938, 18045, 18054, 18055, 5903, 1119, 5341, 12291, 4754, 4610, 18056, 18057, 18058, 18059, 5802, 5188, 18060, 7621, 12924, 1368, 18052, 5739, 7376, 7297, 8876, 1181, 9820, 16720, 7286, 2]
 
-// Module 18040 (GuildSettingsRoles)
+// Module 18041 (GuildSettingsRoles)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -19,12 +19,12 @@ import useIsWindowLargeDefault from "useIsWindowLarge" /* 7186 */;
 import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7376 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
 import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16483 */;
-import SortableListViewDefault from "SortableListView" /* 16719 */;
-import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 18043 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18051 */;
-import actions_GuildActionCreators from "actions/GuildActionCreators" /* 18053 */;
-import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 18054 */;
-import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 18059 */;
+import SortableListViewDefault from "SortableListView" /* 16720 */;
+import GuildSettingsRolesManager from "GuildSettingsRolesManager" /* 18044 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18052 */;
+import actions_GuildActionCreators from "actions/GuildActionCreators" /* 18054 */;
+import GuildSettingsModalRolesActionCreatorsDefault from "GuildSettingsModalRolesActionCreators" /* 18055 */;
+import GuildSettingsRoleItemDefault from "GuildSettingsRoleItem" /* 18060 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1186 */;
@@ -34,15 +34,15 @@ import GuildRoleStore from "GuildRoleStore" /* 2103 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4399 */;
 import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7375 */;
-import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 18041 */;
+import GuildSettingsModalRolesStore from "GuildSettingsModalRolesStore" /* 18042 */;
 import TextStyles from "TextStyles" /* 5743 */;
 
-const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(18044);
+const GuildSettingsRoleCreateModalActionCreatorsDefault = tmp(18045);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, StyleSheet } = get_ActivityIndicator);
 const isEveryoneRole = fn(2104).isEveryoneRole;
-let closure_16 = fn(18042).GuildSettingsRoleEditSections;
+let closure_16 = fn(18043).GuildSettingsRoleEditSections;
 const Constants = fn(1078);
 ({ GuildSettingsSections: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, Permissions: closure_20, Fonts } = Constants);
 const jsxProd = fn(21);
@@ -1268,16 +1268,16 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     let tmp4 = dependencyMap;
     if (closure_3) {
       if (isThemeDarkResult) {
-        tmp4 = 18055;
+        tmp4 = 18056;
         let tmp3Result = tmp3(tmp4);
       } else {
-        tmp3Result = tmp3(18056);
+        tmp3Result = tmp3(18057);
       }
     } else {
       if (isThemeDarkResult) {
-        let tmp3Result2 = tmp3(18057);
+        let tmp3Result2 = tmp3(18058);
       } else {
-        tmp3Result2 = tmp3(18058);
+        tmp3Result2 = tmp3(18059);
       }
       if (hasRoles) {
         const items = [closure_1.subheaderContainer, ];
@@ -1405,7 +1405,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         };
       }
       obj2.onMoveDown = fn2;
-      return tmp22(closure_1(18059), obj2, role.id);
+      return tmp22(closure_1(18060), obj2, role.id);
     }
   }, items14);
   const items15 = [callback1, callback5, callback4, hasRoles, sorting, navigation];

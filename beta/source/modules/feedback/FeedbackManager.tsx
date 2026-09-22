@@ -1,15 +1,15 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17005
+// Function ID: 17006
 // Name: feedback/FeedbackManager
-// Dependencies: [7461, 4781, 17005, 11748, 7460, 2023, 510, 12, 17006, 7365, 2]
+// Dependencies: [7461, 4781, 17006, 11748, 7460, 2023, 510, 12, 17007, 7365, 2]
 
-// Module 17004 (feedback/FeedbackManager)
+// Module 17005 (feedback/FeedbackManager)
 import _mod12 from "module_12" /* 12 */;
 import UserSettings from "UserSettings" /* 2023 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 17006 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 17007 */;
 import HotspotStore from "hotspot/HotspotStore" /* 7461 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 4781 */;
-import FeedbackOverrideStore from "FeedbackOverrideStore" /* 17005 */;
+import FeedbackOverrideStore from "FeedbackOverrideStore" /* 17006 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;

@@ -1,14 +1,14 @@
-// Module ID: 17958
-// Function ID: 17959
+// Module ID: 17959
+// Function ID: 17960
 // Name: AddRuleRow
-// Dependencies: [19, 21, 558, 568, 5822, 11458, 1119, 17947, 2]
+// Dependencies: [19, 21, 558, 568, 5822, 11458, 1119, 17948, 2]
 
-// Module 17958 (AddRuleRow)
+// Module 17959 (AddRuleRow)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import TableRow from "TableRow" /* 5822 */;
 import CirclePlusIcon from "CirclePlusIcon" /* 11458 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17947 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17948 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,12 +30,12 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== triggerType) {
     const intl = tmp(1119).intl;
-    const obj3 = { ruleName: tmp(17947).triggerConfigs[triggerType].getDefaultRuleName() };
+    const obj3 = { ruleName: tmp(17948).triggerConfigs[triggerType].getDefaultRuleName() };
     const formatResult = intl.format(tmp(1119).t.dNjRAf, obj3);
     cResult[1] = triggerType;
     cResult[2] = formatResult;
     let tmp7 = formatResult;
-    const obj4 = tmp(17947).triggerConfigs[triggerType];
+    const obj4 = tmp(17948).triggerConfigs[triggerType];
   } else {
     tmp7 = cResult[2];
   }

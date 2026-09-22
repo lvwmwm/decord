@@ -1,9 +1,9 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17581
+// Function ID: 17582
 // Name: useIsVoicePanelParticipantFocusable
 // Dependencies: [2044, 4774, 4780, 1996, 4779, 9705, 1374, 558, 568, 504, 2]
 
-// Module 17580 (useIsVoicePanelParticipantFocusable)
+// Module 17581 (useIsVoicePanelParticipantFocusable)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 4774 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;

@@ -402,7 +402,7 @@ function ChatBeginningRowDM(channel) {
           } else {
             tmp4Result2 = null;
             if (tmp6.PENDING_OUTGOING === stateFromStores) {
-              const obj14 = { text: null, size: "sm", variant: "active", disabled: true, onPress: "apply" };
+              const obj14 = { text: null, size: "sm", variant: "active", disabled: true, onPress: "a" };
               const intl9 = tmp(1119).intl;
               obj14.text = intl9.string(tmp(1119).t.xMH6vD);
               tmp4Result2 = tmp4(tmp(5188).Button, obj14);

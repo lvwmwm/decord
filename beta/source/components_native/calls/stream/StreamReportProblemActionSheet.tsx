@@ -1,9 +1,9 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17641
+// Function ID: 17642
 // Name: StreamReportProblemActionSheet
-// Dependencies: [19, 4798, 1078, 21, 4758, 580, 558, 568, 7985, 1245, 5203, 17009, 4725, 4457, 17641, 7445, 7396, 1119, 7449, 6863, 2]
+// Dependencies: [19, 4798, 1078, 21, 4758, 580, 558, 568, 7985, 1245, 5203, 17010, 4725, 4457, 17642, 7445, 7396, 1119, 7449, 6863, 2]
 
-// Module 17640 (StreamReportProblemActionSheet)
+// Module 17641 (StreamReportProblemActionSheet)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
@@ -15,8 +15,8 @@ import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
 import ActionSheetRow from "ActionSheetRow" /* 7445 */;
 import ActionSheet from "ActionSheet" /* 7449 */;
 import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7985 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 17009 */;
-import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17641 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 17010 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17642 */;
 import noop from "module_19" /* 19 */;
 import PresenceStore from "PresenceStore" /* 4798 */;
 
@@ -104,7 +104,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
     tmp17 = tmp19;
   }
   let obj = stream(568);
-  const mapped = analyticsData(17641)({ isStreamer: false, isEndStream: false }).map((label, index) => {
+  const mapped = analyticsData(17642)({ isStreamer: false, isEndStream: false }).map((label, index) => {
     stream = label.value;
     return jsx(stream(dependencyMap[15]).ActionSheetRow, {
       label: label.label,

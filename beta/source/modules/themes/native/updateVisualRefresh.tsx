@@ -1,10 +1,10 @@
-// Module ID: 17430
-// Function ID: 17431
+// Module ID: 17431
+// Function ID: 17432
 // Name: updateVisualRefresh
 // Dependencies: [17, 1368, 14722, 2]
 // Exports: updateVisualRefresh
 
-// Module 17430 (updateVisualRefresh)
+// Module 17431 (updateVisualRefresh)
 import _mod17 from "module_17" /* 17 */;
 import NativeThemeModuleDefault from "NativeThemeModule" /* 14722 */;
 import size from "module_2" /* 2 */;

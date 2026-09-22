@@ -1,9 +1,9 @@
-// Module ID: 17709
-// Function ID: 17710
+// Module ID: 17710
+// Function ID: 17711
 // Name: useCaptchaModalEffects
 // Dependencies: [19, 1078, 558, 568, 5084, 5203, 1245, 2]
 
-// Module 17709 (useCaptchaModalEffects)
+// Module 17710 (useCaptchaModalEffects)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import noop from "module_19" /* 19 */;
 

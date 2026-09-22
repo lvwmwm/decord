@@ -1,9 +1,9 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16735
+// Function ID: 16736
 // Name: YouBarButton
 // Dependencies: [19, 17, 15354, 21, 4758, 580, 558, 568, 9092, 8117, 8178, 2]
 
-// Module 16734 (YouBarButton)
+// Module 16735 (YouBarButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import BadgeDefault from "Badge" /* 8117 */;
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "unicodeVersion", bottom: "nativeEvent", padding: "ind", minWidth: "applicationId" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "unicodeVersion", bottom: "messageId", padding: "ind", minWidth: "applicationId" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
@@ -130,7 +130,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items = [size, badgeSize, num2, num];
   return noop.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "unicodeVersion", bottom: "nativeEvent", padding: "ind", minWidth: "applicationId" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "unicodeVersion", bottom: "messageId", padding: "ind", minWidth: "applicationId" };
     return rect;
   }, items);
 });

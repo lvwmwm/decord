@@ -1,20 +1,20 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18227
+// Function ID: 18228
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 18191, 21, 4758, 580, 14169, 18211, 18195, 1119, 10051, 5802, 4754, 18227, 2]
+// Dependencies: [5, 32, 19, 17, 18192, 21, 4758, 580, 14169, 18212, 18196, 1119, 10051, 5802, 4754, 18228, 2]
 // Exports: default
 
-// Module 18226 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 18227 (GuildRoleSubscriptionTierConfirmationModal)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import FormStylesDefault from "FormStyles" /* 14169 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18195 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18211 */;
-import GuildRoleSubscriptionListingPreview from "GuildRoleSubscriptionListingPreview" /* 18227 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18196 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18212 */;
+import GuildRoleSubscriptionListingPreview from "GuildRoleSubscriptionListingPreview" /* 18228 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18191 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
 
 require = fn;
 const View = fn(17).View;

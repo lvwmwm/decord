@@ -1,17 +1,17 @@
-// Module ID: 17043
-// Function ID: 17044
+// Module ID: 17044
+// Function ID: 17045
 // Name: VibegrationsTodoList
-// Dependencies: [19, 17, 21, 4758, 580, 1119, 3682, 558, 568, 17042, 17023, 4754, 9549, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 1119, 3682, 558, 568, 17043, 17024, 4754, 9549, 2]
 // Exports: todoProgress
 
-// Module 17043 (VibegrationsTodoList)
+// Module 17044 (VibegrationsTodoList)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import _modDef3682 from "module_3682" /* 3682 */;
 import Text_Text from "Text/Text" /* 4754 */;
-import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 17023 */;
-import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17042 */;
+import VibegrationsNativeStatusLine from "VibegrationsNativeStatusLine" /* 17024 */;
+import VibegrationsTodoAgents from "VibegrationsTodoAgents" /* 17043 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -488,11 +488,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[11];
   }
   if (cResult[12] !== tmp11) {
-    const groupAgentsByTodoResult = tmp(17042).groupAgentsByTodo(tmp11);
+    const groupAgentsByTodoResult = tmp(17043).groupAgentsByTodo(tmp11);
     cResult[12] = tmp11;
     cResult[13] = groupAgentsByTodoResult;
     let tmp13 = groupAgentsByTodoResult;
-    const tmpResult = tmp(17042);
+    const tmpResult = tmp(17043);
   } else {
     tmp13 = cResult[13];
   }

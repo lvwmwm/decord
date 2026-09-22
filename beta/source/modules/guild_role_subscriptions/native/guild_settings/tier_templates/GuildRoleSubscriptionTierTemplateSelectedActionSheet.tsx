@@ -1,9 +1,9 @@
-// Module ID: 18239
-// Function ID: 18240
+// Module ID: 18240
+// Function ID: 18241
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
 // Dependencies: [19, 17, 2042, 21, 4758, 580, 558, 568, 1616, 4754, 1119, 1181, 5189, 6863, 7397, 2]
 
-// Module 18239 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 18240 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import noop from "module_19" /* 19 */;

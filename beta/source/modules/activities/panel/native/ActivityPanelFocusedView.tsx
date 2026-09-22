@@ -1,9 +1,9 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17457
+// Function ID: 17458
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4750, 2045, 2044, 2008, 9313, 17451, 1078, 12420, 21, 4758, 580, 558, 568, 1616, 504, 1482, 17446, 17167, 4497, 4471, 4759, 5187, 5170, 4389, 17448, 17457, 9589, 9718, 2]
+// Dependencies: [19, 17, 4750, 2045, 2044, 2008, 9313, 17452, 1078, 12420, 21, 4758, 580, 558, 568, 1616, 504, 1482, 17447, 17168, 4497, 4471, 4759, 5187, 5170, 4389, 17449, 17458, 9589, 9718, 2]
 
-// Module 17456 (ActivityPanelFocusedView)
+// Module 17457 (ActivityPanelFocusedView)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -12,8 +12,8 @@ import native from "native" /* 4471 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import spring from "spring" /* 5187 */;
 import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9718 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17448 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17457 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17449 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17458 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -25,7 +25,7 @@ require = fn;
 const ActivityLayoutMode = fn(2008).ActivityLayoutMode;
 const ActivityPanelConstants = fn(9313);
 ({ ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_8, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: closure_9, ActivityPanelModes: c10 } = ActivityPanelConstants);
-const ActivityPanelNativeConstants = fn(17451);
+const ActivityPanelNativeConstants = fn(17452);
 ({ DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG: closure_11, DEFAULT_PORTRAIT_LETTERBOX_CONFIG: closure_12, DEFAULT_LANDSCAPE_PILLERBOX_CONFIG: map1 } = ActivityPanelNativeConstants);
 const ThemeTypes = fn(1078).ThemeTypes;
 const IS_IOS = fn(12420).IS_IOS;

@@ -1,9 +1,9 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16984
+// Function ID: 16985
 // Name: useMediaKeyboardConfig
 // Dependencies: [19, 1612, 1078, 558, 568, 8008, 12382, 7513, 9596, 10931, 1982, 2]
 
-// Module 16983 (useMediaKeyboardConfig)
+// Module 16984 (useMediaKeyboardConfig)
 import c from "c" /* 568 */;
 import Server from "Server" /* 1982 */;
 import ThreadHooks from "ThreadHooks" /* 7513 */;

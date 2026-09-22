@@ -1,11 +1,11 @@
-// Module ID: 17857
-// Function ID: 17858
+// Module ID: 17858
+// Function ID: 17859
 // Name: NewUserModal
-// Dependencies: [32, 19, 17, 21, 8162, 4758, 580, 17858, 1984, 5112, 558, 568, 7246, 17855, 4961, 17856, 5845, 1368, 16333, 17859, 12843, 12832, 17860, 17862, 2]
+// Dependencies: [32, 19, 17, 21, 8162, 4758, 580, 17859, 1984, 5112, 558, 568, 7246, 17856, 4961, 17857, 5845, 1368, 16333, 17860, 12843, 12832, 17861, 17863, 2]
 
-// Module 17857 (NewUserModal)
+// Module 17858 (NewUserModal)
 import nativeDefault from "native" /* 580 */;
-import NewUserUtils from "NewUserUtils" /* 17855 */;
+import NewUserUtils from "NewUserUtils" /* 17856 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -386,11 +386,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       closure_1_4(lastShownStepIndex);
       if (continueNavigation) {
         if (null != ref.current) {
-          closure_0(17855).continueToNextStep(onboardingStepIndex, tmp3.current);
-          const obj2 = closure_0(17855);
+          closure_0(17856).continueToNextStep(onboardingStepIndex, tmp3.current);
+          const obj2 = closure_0(17856);
         }
       }
-      first(4961).popWithKey(closure_0(17856).NEW_USER_MODAL_KEY);
+      first(4961).popWithKey(closure_0(17857).NEW_USER_MODAL_KEY);
     });
   };
   cResult[0] = first1;
@@ -423,11 +423,11 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       closure_1_4(lastShownStepIndex);
       if (continueNavigation) {
         if (null != ref.current) {
-          closure_0(17855).continueToNextStep(onboardingStepIndex, tmp3.current);
-          const obj2 = closure_0(17855);
+          closure_0(17856).continueToNextStep(onboardingStepIndex, tmp3.current);
+          const obj2 = closure_0(17856);
         }
       }
-      first(4961).popWithKey(closure_0(17856).NEW_USER_MODAL_KEY);
+      first(4961).popWithKey(closure_0(17857).NEW_USER_MODAL_KEY);
     });
   }, items);
   let obj = require("Navigator");
@@ -480,7 +480,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     closure_6(closure_8.Screen, {
       name: "choose-avatar",
       getComponent() {
-        return closure_0(17859).default;
+        return closure_0(17860).default;
       },
       options() {
         return {
@@ -514,14 +514,14 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       name: "discoverability",
       options: { headerShown: false },
       getComponent() {
-        return closure_0(17860).default;
+        return closure_0(17861).default;
       },
       initialParams: { onComplete }
     }),
     closure_6(closure_8.Screen, {
       name: "connect-guardian",
       getComponent() {
-        return closure_0(17862).default;
+        return closure_0(17863).default;
       },
       initialParams: { onComplete }
     })

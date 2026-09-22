@@ -132,7 +132,7 @@ let closure_5 = async function _initializeAndroidNotificationSettingsStore(arg0,
   }
 };
 const identity = fn(1247);
-let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "toCharArray$esjava$1", isVibrationsEnabled: "T", isSoundsEnabled: "IconComponent", isNotifyEveryTime: "Set" }));
+let closure_4 = identity.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "T", isSoundsEnabled: "y", isNotifyEveryTime: "IconComponent" }));
 fn(558);
 let ReactCompilerGating = fn(558);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

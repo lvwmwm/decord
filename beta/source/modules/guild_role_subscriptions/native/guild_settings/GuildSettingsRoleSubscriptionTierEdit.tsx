@@ -1,10 +1,10 @@
-// Module ID: 18236
-// Function ID: 18237
+// Module ID: 18237
+// Function ID: 18238
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4393, 18191, 15464, 1078, 2042, 21, 4758, 580, 558, 568, 1488, 18211, 18199, 7497, 10051, 4754, 1181, 18237, 5188, 7371, 18231, 18229, 18205, 15471, 18186, 12369, 1119, 18238, 15486, 4457, 5839, 7621, 9868, 2031, 18239, 1984, 10921, 10922, 9869, 2]
+// Dependencies: [32, 19, 17, 4393, 18192, 15464, 1078, 2042, 21, 4758, 580, 558, 568, 1488, 18212, 18200, 7497, 10051, 4754, 1181, 18238, 5188, 7371, 18232, 18230, 18206, 15471, 18187, 12369, 1119, 18239, 15486, 4457, 5839, 7621, 9868, 2031, 18240, 1984, 10921, 10922, 9869, 2]
 // Exports: default
 
-// Module 18236 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 18237 (GuildSettingsRoleSubscriptionTierEdit)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
@@ -19,18 +19,18 @@ import FormHeaderDefault from "FormHeader" /* 10051 */;
 import DismissibleActionSheet from "DismissibleActionSheet" /* 10922 */;
 import ErrorBlockDefault from "ErrorBlock" /* 12369 */;
 import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15471 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18186 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18199 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18205 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18211 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18229 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18231 */;
-import _modDef18237 from "module_18237" /* 18237 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18238 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18187 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18200 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18206 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18212 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18230 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18232 */;
+import _modDef18238 from "module_18238" /* 18238 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18239 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4393 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18191 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
 
 const util = Spacer(1119);
 require = fn;
@@ -76,7 +76,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { size: tmp(1181).Icon.Sizes.SMALL, disableColor: true, source: tmp7(18237) };
+        const obj5 = { size: tmp(1181).Icon.Sizes.SMALL, disableColor: true, source: tmp7(18238) };
         const tmp17 = state(tmp(1181).Icon, obj5);
         cResult[6] = tmp17;
         let tmp15 = tmp17;
@@ -162,7 +162,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp5 = value2;
   const tmp6 = closure_1_15;
   const tmp8 = timestampProducer;
-  obj7.icon = state(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18237 });
+  obj7.icon = state(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18238 });
   obj7.onPress = handleArchiveOrDelete;
   let tmp9 = !allowSelfRemoveMonetization;
   if (allowSelfRemoveMonetization) {
@@ -188,7 +188,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTab) =
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { bottom: true, children: null };
-      items = [state(tmp(18231).GuildRoleSubscriptionTierDetailsTab, {}), state(closure_20, {})];
+      items = [state(tmp(18232).GuildRoleSubscriptionTierDetailsTab, {}), state(closure_20, {})];
       obj2.children = items;
       const tmp28 = value2(tmp(7371).SafeAreaPaddingView, obj2);
       cResult[0] = tmp28;
@@ -209,7 +209,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTab) =
   } else if (tmp5.DESIGN === selectedTab) {
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { bottom: true, children: state(tmp(18229).GuildRoleSubscriptionTierDesignTab, {}) };
+      const obj4 = { bottom: true, children: state(tmp(18230).GuildRoleSubscriptionTierDesignTab, {}) };
       const tmp18 = state(tmp(7371).SafeAreaPaddingView, obj4);
       cResult[3] = tmp18;
       let tmp16 = tmp18;
@@ -229,7 +229,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedTab) =
   } else if (tmp5.BENEFITS === selectedTab) {
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp14 = state(tmp(18205).GuildRoleSubscriptionTierBenefitsTab, {});
+      const tmp14 = state(tmp(18206).GuildRoleSubscriptionTierBenefitsTab, {});
       cResult[6] = tmp14;
       let tmp12 = tmp14;
     } else {

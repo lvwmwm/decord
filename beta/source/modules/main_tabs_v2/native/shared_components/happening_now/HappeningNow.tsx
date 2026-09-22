@@ -346,7 +346,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
   const obj = listRef(568);
   const isFocused = listRef(1489).useIsFocused();
   if (cResult[0] !== isFocused) {
-    const obj3 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "XPKeywords", isFocused };
+    const obj3 = { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "YCbCrCoefficients", isFocused };
     cResult[0] = isFocused;
     cResult[1] = obj3;
     let tmp6 = obj3;
@@ -799,7 +799,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((listRe
   let callback2;
   const tmp = closure_13();
   const isFocused = listRef(children[16]).useIsFocused();
-  const tmp7 = _slicedToArray(isFocused(children[17])(listRef.cards, { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "XPKeywords", isFocused }), 2);
+  const tmp7 = _slicedToArray(isFocused(children[17])(listRef.cards, { withoutUserCards: "IconComponent", guildId: "Array", showMultipleActivitiesPerChannel: "YCbCrCoefficients", isFocused }), 2);
   children = tmp7[0];
   _slicedToArray = tmp8;
   let obj = listRef(children[16]);

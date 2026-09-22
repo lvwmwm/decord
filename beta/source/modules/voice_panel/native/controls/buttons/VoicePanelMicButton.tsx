@@ -1,10 +1,10 @@
-// Module ID: 17606
-// Function ID: 17607
+// Module ID: 17607
+// Function ID: 17608
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 4775, 2102, 502, 2045, 1996, 4399, 1376, 4777, 21, 3, 4758, 558, 568, 7589, 10257, 504, 10272, 12419, 4497, 17488, 4726, 10194, 6891, 17607, 17608, 1119, 10259, 4754, 9923, 10258, 2]
+// Dependencies: [32, 19, 4775, 2102, 502, 2045, 1996, 4399, 1376, 4777, 21, 3, 4758, 558, 568, 7589, 10257, 504, 10272, 12419, 4497, 17489, 4726, 10194, 6891, 17608, 17609, 1119, 10259, 4754, 9923, 10258, 2]
 // Exports: PTTButton
 
-// Module 17606 (VoicePanelMicButton)
+// Module 17607 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import c from "c" /* 568 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
@@ -15,7 +15,7 @@ import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10194 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 10257 */;
 import useDeafStates from "useDeafStates" /* 10272 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12419 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17607 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17608 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 4775 */;
@@ -29,7 +29,7 @@ import VoiceStateStore from "VoiceStateStore" /* 4777 */;
 
 const require = globalThis.__r;
 
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(17608);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(17609);
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);

@@ -1,9 +1,9 @@
-// Module ID: 17351
-// Function ID: 17352
+// Module ID: 17352
+// Function ID: 17353
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4758, 558, 568, 5799, 17352, 1119, 12782, 4754, 5341, 2]
+// Dependencies: [19, 17, 21, 4758, 558, 568, 5799, 17353, 1119, 12782, 4754, 5341, 2]
 
-// Module 17351 (MessageRequestMutualServers)
+// Module 17352 (MessageRequestMutualServers)
 import GuildIconDefault from "GuildIcon" /* 5799 */;
 import noop from "module_19" /* 19 */;
 
@@ -31,7 +31,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp3 = closure_6();
   const obj = iconSize(568);
-  const mutualGuildsForMessageRequests = PressableOpacity(17352).useMutualGuildsForMessageRequests(userId);
+  const mutualGuildsForMessageRequests = PressableOpacity(17353).useMutualGuildsForMessageRequests(userId);
   if (cResult[0] === mutualGuildsForMessageRequests.length) {
     if (cResult[1] === iconSize) {
       if (cResult[2] === mutualGuildsForMessageRequests) {
@@ -153,7 +153,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  const mutualGuildsForMessageRequests = iconSize(17352).useMutualGuildsForMessageRequests(userId);
+  const mutualGuildsForMessageRequests = iconSize(17353).useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
     const intl2 = tmp4(1119).intl;

@@ -1,9 +1,9 @@
-// Module ID: 18348
-// Function ID: 18349
+// Module ID: 18349
+// Function ID: 18350
 // Name: LocalMessageCacheStatsManager
 // Dependencies: [1078, 7735, 1245, 7365, 2]
 
-// Module 18348 (LocalMessageCacheStatsManager)
+// Module 18349 (LocalMessageCacheStatsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import MessageCacheStatsDefault from "MessageCacheStats" /* 7735 */;
 import Constants from "Constants" /* 1078 */;

@@ -1,9 +1,9 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 17819
+// Function ID: 17820
 // Name: JankNavigationReporter
 // Dependencies: [4617, 16350, 16346, 16351, 4619, 2]
 
-// Module 17818 (JankNavigationReporter)
+// Module 17819 (JankNavigationReporter)
 import RootNavigationRef from "RootNavigationRef" /* 4617 */;
 import getJankScreenName from "getJankScreenName" /* 16346 */;
 import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16350 */;

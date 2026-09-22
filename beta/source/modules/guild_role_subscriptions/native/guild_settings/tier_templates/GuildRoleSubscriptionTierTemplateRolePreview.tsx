@@ -1,9 +1,9 @@
-// Module ID: 18248
-// Function ID: 18249
+// Module ID: 18249
+// Function ID: 18250
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
 // Dependencies: [19, 17, 1376, 21, 4758, 580, 558, 568, 1119, 565, 4910, 5802, 1096, 4754, 1181, 7452, 2]
 
-// Module 18248 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 18249 (GuildRoleSubscriptionTierTemplateRolePreview)
 import useStateFromStores from "useStateFromStores" /* 565 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

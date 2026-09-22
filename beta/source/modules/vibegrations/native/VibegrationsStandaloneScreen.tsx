@@ -1,9 +1,9 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 16938
+// Function ID: 16939
 // Name: VibegrationsStandaloneScreen
-// Dependencies: [32, 5, 19, 17, 4985, 2109, 2067, 4399, 16938, 16940, 13364, 9307, 1078, 2052, 9312, 21, 4758, 580, 1105, 558, 568, 7410, 1119, 3682, 7882, 1401, 16941, 8180, 5822, 1616, 1488, 504, 5276, 4725, 16942, 16949, 16951, 16956, 7442, 11257, 16958, 16959, 4754, 5188, 9308, 16960, 4442, 4352, 5903, 7224, 16962, 16964, 9314, 16966, 9310, 13182, 16965, 1482, 9868, 16967, 16988, 16989, 4458, 16990, 16992, 16993, 15365, 4457, 16994, 2023, 16995, 16968, 13186, 16997, 9483, 15828, 7624, 16041, 5839, 17000, 8182, 17001, 9869, 17022, 5278, 17065, 7246, 2]
+// Dependencies: [32, 5, 19, 17, 4985, 2109, 2067, 4399, 16939, 16941, 13364, 9307, 1078, 2052, 9312, 21, 4758, 580, 1105, 558, 568, 7410, 1119, 3682, 7882, 1401, 16942, 8180, 5822, 1616, 1488, 504, 5276, 4725, 16943, 16950, 16952, 16957, 7442, 11257, 16959, 16960, 4754, 5188, 9308, 16961, 4442, 4352, 5903, 7224, 16963, 16965, 9314, 16967, 9310, 13182, 16966, 1482, 9868, 16968, 16989, 16990, 4458, 16991, 16993, 16994, 15365, 4457, 16995, 2023, 16996, 16969, 13186, 16998, 9483, 15828, 7624, 16041, 5839, 17001, 8182, 17002, 9869, 17023, 5278, 17066, 7246, 2]
 
-// Module 16937 (VibegrationsStandaloneScreen)
+// Module 16938 (VibegrationsStandaloneScreen)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -26,19 +26,19 @@ import restartVibegrationsAppFramesDefault from "restartVibegrationsAppFrames" /
 import UndoIcon from "UndoIcon" /* 15365 */;
 import WrenchIcon from "WrenchIcon" /* 15828 */;
 import BugIcon from "BugIcon" /* 16041 */;
-import VibegrationsHeaderIconButtonDefault from "VibegrationsHeaderIconButton" /* 16941 */;
-import VibegrationsCreateSheet from "VibegrationsCreateSheet" /* 16942 */;
-import VibegrationsRemixSheet from "VibegrationsRemixSheet" /* 16949 */;
-import vibegrationsProjectActions from "vibegrationsProjectActions" /* 16951 */;
-import VibegrationsProjectSettingsSheet from "VibegrationsProjectSettingsSheet" /* 16956 */;
-import VibegrationsPublishBlockedSheetDefault from "VibegrationsPublishBlockedSheet" /* 16988 */;
-import vibegrationsPublishBlockedReason from "vibegrationsPublishBlockedReason" /* 16989 */;
-import VibegrationsPublishNotesSheetDefault from "VibegrationsPublishNotesSheet" /* 16990 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16992 */;
-import VibegrationsConnectToolSheet from "VibegrationsConnectToolSheet" /* 16993 */;
-import VibegrationsVersionHistorySheet from "VibegrationsVersionHistorySheet" /* 16994 */;
-import VibegrationsRestorePointsSheet from "VibegrationsRestorePointsSheet" /* 16995 */;
-import VibegrationsDebugSceneDefault from "VibegrationsDebugScene" /* 17065 */;
+import VibegrationsHeaderIconButtonDefault from "VibegrationsHeaderIconButton" /* 16942 */;
+import VibegrationsCreateSheet from "VibegrationsCreateSheet" /* 16943 */;
+import VibegrationsRemixSheet from "VibegrationsRemixSheet" /* 16950 */;
+import vibegrationsProjectActions from "vibegrationsProjectActions" /* 16952 */;
+import VibegrationsProjectSettingsSheet from "VibegrationsProjectSettingsSheet" /* 16957 */;
+import VibegrationsPublishBlockedSheetDefault from "VibegrationsPublishBlockedSheet" /* 16989 */;
+import vibegrationsPublishBlockedReason from "vibegrationsPublishBlockedReason" /* 16990 */;
+import VibegrationsPublishNotesSheetDefault from "VibegrationsPublishNotesSheet" /* 16991 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16993 */;
+import VibegrationsConnectToolSheet from "VibegrationsConnectToolSheet" /* 16994 */;
+import VibegrationsVersionHistorySheet from "VibegrationsVersionHistorySheet" /* 16995 */;
+import VibegrationsRestorePointsSheet from "VibegrationsRestorePointsSheet" /* 16996 */;
+import VibegrationsDebugSceneDefault from "VibegrationsDebugScene" /* 17066 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -46,7 +46,7 @@ import ApplicationStore from "ApplicationStore" /* 4985 */;
 import GuildMemberStore from "GuildMemberStore" /* 2109 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4399 */;
-import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 16940 */;
+import VibegrationsBuilderRouteStore from "VibegrationsBuilderRouteStore" /* 16941 */;
 import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13364 */;
 import VibegrationsProjectStore_mod from "VibegrationsProjectStore" /* 9307 */;
 
@@ -64,7 +64,7 @@ function remixedOpener(arg0, arg1) {
   closure_1 = arg1;
   return (arg0, arg1) => {
     if (arg1 === closure_0) {
-      f144903(arg0);
+      f144908(arg0);
     } else {
       guildId(navigation[18]).transitionTo(callback3.CHANNEL(arg1, projectGuildId.VIBEGRATIONS, arg0));
       const obj = guildId(navigation[18]);
@@ -73,7 +73,7 @@ function remixedOpener(arg0, arg1) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, Image: closure_7, Keyboard: closure_8, ScrollView: closure_9, View: c10 } = get_ActivityIndicator);
-const vibegrationsDesignFeedbackStore = fn(16938);
+const vibegrationsDesignFeedbackStore = fn(16939);
 ({ enterVibegrationsDesignFeedback: closure_15, exitVibegrationsDesignFeedback: closure_16, useVibegrationsDesignFeedback: closure_17 } = vibegrationsDesignFeedbackStore);
 let VibegrationsConnectionStore = fn(13364);
 ({ closeConnection: closure_19, draftPatchNotes: closure_20, publishProject: closure_21, restoreSourceHistoryEntry: closure_22 } = VibegrationsConnectionStore);
@@ -543,7 +543,7 @@ let closure_40 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     closure_1 = callback;
     return (arg0, arg1) => {
       if (arg1 === closure_0) {
-        f144903(arg0);
+        f144908(arg0);
       } else {
         guildId(navigation[18]).transitionTo(callback3.CHANNEL(arg1, projectGuildId.VIBEGRATIONS, arg0));
         const obj = guildId(navigation[18]);
@@ -1348,8 +1348,8 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj7.application = application;
         obj7.guildId = closure_131_15;
         obj7.onClose = function onClose() {
-          const result = c0(16966).repairVibegrationsGuildHints(closure_1_4, closure_1_15);
-          const obj = c0(16966);
+          const result = c0(16967).repairVibegrationsGuildHints(closure_1_4, closure_1_15);
+          const obj = c0(16967);
           result.finally(() => application(9308).getProject(closure_1_1)).catch(() => {
 
           });
@@ -1547,7 +1547,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               obj6.publish = nextPromise;
               obj6.initialDraft = promise5;
               obj3.content = tmp22(VibegrationsPublishNotesSheetDefault, obj6);
-              obj3.key = tmp20(16990).VIBEGRATIONS_PUBLISH_NOTES_SHEET_KEY;
+              obj3.key = tmp20(16991).VIBEGRATIONS_PUBLISH_NOTES_SHEET_KEY;
               obj2.showActionSheet(obj3);
             } else {
               const nextPromise1 = guild(tmp).then((ok) => {
@@ -1619,10 +1619,10 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items20 = [guildId, navigation];
   memo1 = obj11.useMemo(() => {
     closure_0 = guildId;
-    const f144903 = (projectId) => navigation.push(callback8.CHAT, { projectId });
+    const f144908 = (projectId) => navigation.push(callback8.CHAT, { projectId });
     return (arg0, arg1) => {
       if (arg1 === closure_0) {
-        f144903(arg0);
+        f144908(arg0);
       } else {
         guildId(navigation[18]).transitionTo(callback3.CHANNEL(arg1, projectGuildId.VIBEGRATIONS, arg0));
         const obj = guildId(navigation[18]);
@@ -1821,7 +1821,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                         obj.accessibilityLabel = intl.string(title(1119).t["UKOtz+"]);
                         obj.accessibilityActions = accessibilityActions;
                         obj.onAccessibilityAction = onAccessibilityAction;
-                        return closure_1_32(closure_1_1(16941), obj);
+                        return closure_1_32(closure_1_1(16942), obj);
                       }
                 };
                 items[1] = callback5(guildId(navigation[80]).ContextMenu, obj2);

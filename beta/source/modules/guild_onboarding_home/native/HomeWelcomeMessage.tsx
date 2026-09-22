@@ -1,9 +1,9 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 16913
+// Function ID: 16914
 // Name: HomeWelcomeMessage
 // Dependencies: [19, 17, 2067, 1376, 4945, 21, 4758, 580, 558, 568, 565, 8460, 8501, 7555, 8461, 4603, 1096, 8531, 1181, 4910, 4754, 9819, 11406, 4471, 2]
 
-// Module 16912 (HomeWelcomeMessage)
+// Module 16913 (HomeWelcomeMessage)
 import nativeDefault from "native" /* 580 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8461 */;

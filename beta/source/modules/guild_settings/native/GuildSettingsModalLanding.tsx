@@ -1,9 +1,9 @@
-// Module ID: 17925
-// Function ID: 17926
+// Module ID: 17926
+// Function ID: 17927
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 2100, 2067, 4399, 1376, 16482, 9834, 1078, 21, 4938, 4758, 558, 568, 1119, 5822, 4712, 4404, 17926, 15221, 9836, 9139, 17928, 4700, 5903, 9035, 12696, 11868, 5309, 9818, 17929, 9545, 5757, 9543, 15860, 10676, 4462, 580, 1488, 504, 9833, 17931, 7504, 7511, 4457, 1401, 17322, 17932, 5186, 8876, 7286, 2]
+// Dependencies: [19, 2100, 2067, 4399, 1376, 16482, 9834, 1078, 21, 4938, 4758, 558, 568, 1119, 5822, 4712, 4404, 17927, 15221, 9836, 9139, 17929, 4700, 5903, 9035, 12696, 11868, 5309, 9818, 17930, 9545, 5757, 9543, 15860, 10676, 4462, 580, 1488, 504, 9833, 17932, 7504, 7511, 4457, 1401, 17323, 17933, 5186, 8876, 7286, 2]
 
-// Module 17925 (GuildSettingsModalLanding)
+// Module 17926 (GuildSettingsModalLanding)
 import util from "util" /* 1119 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1401 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4404 */;
@@ -16,7 +16,7 @@ import HammerIcon from "HammerIcon" /* 9543 */;
 import RobotIcon from "RobotIcon" /* 9545 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 9818 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9833 */;
-import ModerationIcon from "ModerationIcon" /* 17929 */;
+import ModerationIcon from "ModerationIcon" /* 17930 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
@@ -155,7 +155,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 }
                 items.push(tmp41);
               }
-              TableRowGroupResult1 = TableRowGroup(17928);
+              TableRowGroupResult1 = TableRowGroup(17929);
             }
             cResult[4] = canManageChannels;
             cResult[5] = canManageGuild;
@@ -254,7 +254,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp13 = cResult[14];
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj11 = { IconComponent: TableRowGroup(17926).ChannelListIcon };
+    const obj11 = { IconComponent: TableRowGroup(17927).ChannelListIcon };
     const tmp17 = closure_15(TableRowGroup(5822).TableRow.Icon, obj11);
     cResult[15] = tmp17;
     let arr8 = tmp17;
@@ -304,7 +304,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const obj4 = { label: null, arrow: true, icon: null, onPress: null };
     const intl2 = tmp2(1119).intl;
     obj4.label = intl2.string(tmp2(1119).t.OGiMXJ);
-    const obj5 = { IconComponent: tmp2(17926).ChannelListIcon };
+    const obj5 = { IconComponent: tmp2(17927).ChannelListIcon };
     obj4.icon = tmp(tmp2(5822).TableRow.Icon, obj5);
     obj4.onPress = function onPress() {
       guild = GuildSettingsModalChannelsStore.initGuild(guild.id);
@@ -342,8 +342,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     items.push(tmp(tmp2(5822).TableRow, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    isGuildAdmin = tmp2(17928).canSeeVanityUrlSettings(guild);
-    const tmp2Result2 = tmp2(17928);
+    isGuildAdmin = tmp2(17929).canSeeVanityUrlSettings(guild);
+    const tmp2Result2 = tmp2(17929);
   }
   if (isGuildAdmin) {
     const obj10 = { label: null, arrow: true, icon: null, onPress: null };
@@ -915,7 +915,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj9 = { IconComponent: TableRowGroup(17929).ModerationIcon };
+      const obj9 = { IconComponent: TableRowGroup(17930).ModerationIcon };
       const tmp8 = closure_15(TableRowGroup(5822).TableRow.Icon, obj9);
       cResult[6] = tmp8;
       let tmp6 = tmp8;
@@ -1346,8 +1346,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   ({ isGuildAdmin, canManageGuild, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
   const obj6 = noop;
   const tmpResult4 = guild(504);
-  guild(17931).useChannelsAllowedToUnlink(guild.id).length > 0;
-  const tmpResult5 = guild(17931);
+  guild(17932).useChannelsAllowedToUnlink(guild.id).length > 0;
+  const tmpResult5 = guild(17932);
   const canManageGuildRoleSubscriptions = guild(7504).useCanManageGuildRoleSubscriptions(guild);
   if (cResult[10] === canManageGuild) {
     class O {
@@ -1561,8 +1561,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
   const obj4 = guild(504);
   const obj5 = noop;
-  const obj6 = guild(17931);
-  const tmp11 = guild(17931).useChannelsAllowedToUnlink(guild.id).length > 0;
+  const obj6 = guild(17932);
+  const tmp11 = guild(17932).useChannelsAllowedToUnlink(guild.id).length > 0;
   const canManageGuildRoleSubscriptions = guild(7504).useCanManageGuildRoleSubscriptions(guild);
   let result = canManageGuild;
   if (canManageGuild) {
@@ -1580,7 +1580,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   obj8.contentContainerStyle = items4;
   const obj9 = { style: { paddingHorizontal: token }, spacing: updateErrors(580).space.PX_24, children: null };
   const items5 = [
-    closure_15(updateErrors(17322), {
+    closure_15(updateErrors(17323), {
       iconProps: {
         onUpload(icon) {
           GuildSettingsActionCreatorsDefault.updateIcon(guild.id, icon);
@@ -1611,7 +1611,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp17Result = canManageGuildRoleSubscriptions;
   if (canManageGuildRoleSubscriptions) {
     const obj11 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(17932), obj11);
+    tmp17Result = tmp17(tmp3(17933), obj11);
   }
   const obj12 = { children: null };
   items5[6] = tmp17Result;

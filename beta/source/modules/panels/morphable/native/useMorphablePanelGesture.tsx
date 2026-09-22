@@ -1,15 +1,15 @@
-// Module ID: 17454
-// Function ID: 17455
+// Module ID: 17455
+// Function ID: 17456
 // Name: useMorphablePanelGesture
-// Dependencies: [19, 12421, 558, 568, 1482, 1616, 4497, 10345, 6891, 17452, 17455, 4726, 2]
+// Dependencies: [19, 12421, 558, 568, 1482, 1616, 4497, 10345, 6891, 17453, 17456, 4726, 2]
 
-// Module 17454 (useMorphablePanelGesture)
+// Module 17455 (useMorphablePanelGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import HapticUtils from "HapticUtils" /* 4726 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6891 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 17452 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 17455 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17453 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 17456 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

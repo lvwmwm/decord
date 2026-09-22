@@ -1,12 +1,12 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17041
+// Function ID: 17042
 // Name: VibegrationsSubagentMark
-// Dependencies: [32, 6706, 580, 6414, 6242, 6056, 6066, 6068, 6058, 6166, 6720, 6030, 6040, 17041, 2]
+// Dependencies: [32, 6706, 580, 6414, 6242, 6056, 6066, 6068, 6058, 6166, 6720, 6030, 6040, 17042, 2]
 // Exports: familiarMark, subagentIllocons
 
-// Module 17040 (VibegrationsSubagentMark)
+// Module 17041 (VibegrationsSubagentMark)
 import nativeDefault from "native" /* 580 */;
-import VibegrationsSubagentMarks from "VibegrationsSubagentMarks" /* 17041 */;
+import VibegrationsSubagentMarks from "VibegrationsSubagentMarks" /* 17042 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 17450
-// Function ID: 17451
+// Module ID: 17451
+// Function ID: 17452
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4750, 9742, 2045, 2044, 2008, 9313, 17451, 1078, 12421, 21, 1181, 4758, 580, 558, 568, 1616, 504, 1482, 17446, 10345, 4497, 17452, 4471, 4759, 5187, 17453, 17454, 1119, 6891, 4389, 9718, 17448, 2]
+// Dependencies: [19, 17, 4750, 9742, 2045, 2044, 2008, 9313, 17452, 1078, 12421, 21, 1181, 4758, 580, 558, 568, 1616, 504, 1482, 17447, 10345, 4497, 17453, 4471, 4759, 5187, 17454, 17455, 1119, 6891, 4389, 9718, 17449, 2]
 
-// Module 17450 (ActivityPanelPIPView)
+// Module 17451 (ActivityPanelPIPView)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -11,8 +11,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4497 */;
 import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 9718 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10345 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17448 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 17452 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17449 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17453 */;
 import noop from "module_19" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4750 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 9742 */;
@@ -25,7 +25,7 @@ const ActivityLayoutMode = fn(2008).ActivityLayoutMode;
 const ActivityPanelConstants = fn(9313);
 let ACTIVITY_PIP_SIZE = ActivityPanelConstants.ACTIVITY_PIP_SIZE;
 ({ ActivityPanelModes: closure_11, ACTIVITY_LAYOUT_PHYSICS_GESTURE: closure_12, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: map1, LANDSCAPE_IFRAME_HORIZONTAL_MARGIN: closure_14 } = ActivityPanelConstants);
-const portraitSafeAreasConfig = fn(17451).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
+const portraitSafeAreasConfig = fn(17452).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const ThemeTypes = fn(1078).ThemeTypes;
 const PIP_WINDOW_OFFSET = fn(12421).PIP_WINDOW_OFFSET;
 const jsx = fn(21).jsx;
@@ -1574,8 +1574,8 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
         }
       }
     }
-    const obj2 = { transitionState, transitionCleanUp, pipOrientationLockState: stateFromStores, hasActivity: tmp17, context: applicationId(17448), children: tmp18 };
-    const tmp24 = <closure_28 transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={tmp17} context={applicationId(17448)}>{tmp18}</closure_28>;
+    const obj2 = { transitionState, transitionCleanUp, pipOrientationLockState: stateFromStores, hasActivity: tmp17, context: applicationId(17449), children: tmp18 };
+    const tmp24 = <closure_28 transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={tmp17} context={applicationId(17449)}>{tmp18}</closure_28>;
     cResult[11] = stateFromStores;
     cResult[12] = tmp17;
     cResult[13] = tmp18;

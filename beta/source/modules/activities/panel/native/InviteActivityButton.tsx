@@ -1,9 +1,9 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17460
+// Function ID: 17461
 // Name: InviteActivityButton
-// Dependencies: [19, 9621, 5498, 21, 4725, 17460, 1984, 558, 568, 11889, 504, 1119, 5188, 10285, 2]
+// Dependencies: [19, 9621, 5498, 21, 4725, 17461, 1984, 558, 568, 11889, 504, 1119, 5188, 10285, 2]
 
-// Module 17459 (InviteActivityButton)
+// Module 17460 (InviteActivityButton)
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
 import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11889 */;
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     if (cResult[4] !== stateFromStores) {
       const fn2 = function y() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequireImpl(17460, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+        obj.openLazy(asyncRequireImpl(17461, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
       };
       cResult[4] = stateFromStores;
       cResult[5] = fn2;
@@ -95,7 +95,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     const obj2 = {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17460, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17461, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
       icon: stateFromStores(10285),
       text: null,
@@ -112,7 +112,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((applic
     tmp4 = jsx(tmp(5188).Button, {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
-          obj.openLazy(asyncRequireImpl(17460, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
+          obj.openLazy(asyncRequireImpl(17461, dependencyMap.paths), "ActivityInviteSheet-" + stateFromStores.session_id, { activity: stateFromStores });
         },
       icon: stateFromStores(10285),
       text: null,

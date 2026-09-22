@@ -1,16 +1,16 @@
-// Module ID: 18204
-// Function ID: 18205
+// Module ID: 18205
+// Function ID: 18206
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 18191, 15464, 21, 558, 568, 1119, 18185, 18195, 2]
+// Dependencies: [32, 19, 18192, 15464, 21, 558, 568, 1119, 18186, 18196, 2]
 
-// Module 18204 (GuildRoleSubscriptionGroupGatingModal)
+// Module 18205 (GuildRoleSubscriptionGroupGatingModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18185 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18195 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18186 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18196 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18191 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
 
 require = fn;
 const constants = fn(15464).GuildRoleSubscriptionsTierScenes;

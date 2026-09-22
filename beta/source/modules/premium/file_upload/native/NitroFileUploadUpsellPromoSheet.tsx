@@ -1,9 +1,9 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17419
+// Function ID: 17420
 // Name: NitroFileUploadUpsellPromoSheet
 // Dependencies: [19, 17, 1078, 2042, 21, 4758, 580, 558, 568, 5203, 7626, 10221, 5907, 1119, 2586, 5188, 10613, 2]
 
-// Module 17418 (NitroFileUploadUpsellPromoSheet)
+// Module 17419 (NitroFileUploadUpsellPromoSheet)
 import nativeDefault from "native" /* 580 */;
 import openUserSettings from "openUserSettings" /* 7626 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10221 */;

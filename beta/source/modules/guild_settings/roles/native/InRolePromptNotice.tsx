@@ -1,9 +1,9 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18070
+// Function ID: 18071
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1389, 18070, 1181, 9708, 1119, 4754, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 1389, 18071, 1181, 9708, 1119, 4754, 2]
 
-// Module 18069 (InRolePromptNotice)
+// Module 18070 (InRolePromptNotice)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import _modDef9708 from "module_9708" /* 9708 */;
@@ -122,7 +122,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       cResult[17] = tmp19;
       tmp16 = tmp19;
     }
-    tmpResult = tmp(18070);
+    tmpResult = tmp(18071);
   } else {
     return null;
   }
@@ -134,7 +134,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
     return null;
   } else {
     const obj2 = { style: string.promptRow, children: null };
-    const tmpResult = tmp(18070);
+    const tmpResult = tmp(18071);
     let Icon = tmp(1181).Icon;
     if (isRolePowerfulResult) {
       const obj3 = { style: string.icon, source: _modDef9708, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
@@ -158,6 +158,6 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((role) => {
       obj2.children = items1;
       tmp4Result = tmp4(tmp5, obj2);
     }
-    isRolePowerfulResult = tmp(18070).isRolePowerful(role);
+    isRolePowerfulResult = tmp(18071).isRolePowerful(role);
   }
 });

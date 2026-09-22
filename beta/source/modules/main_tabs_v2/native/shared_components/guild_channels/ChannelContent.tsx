@@ -1,15 +1,15 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17134
+// Function ID: 17135
 // Name: ChannelContent
-// Dependencies: [19, 17, 12213, 4940, 21, 4758, 1368, 558, 568, 12214, 5279, 17134, 5315, 8871, 16469, 4754, 2]
+// Dependencies: [19, 17, 12213, 4940, 21, 4758, 1368, 558, 568, 12214, 5279, 17135, 5315, 8871, 16469, 4754, 2]
 // Exports: renderChannelContent
 
-// Module 17133 (ChannelContent)
+// Module 17134 (ChannelContent)
 import c from "c" /* 568 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 5279 */;
 import ChannelListLayout from "ChannelListLayout" /* 12214 */;
 import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16469 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 17134 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 17135 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

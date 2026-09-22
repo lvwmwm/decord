@@ -1,16 +1,16 @@
-// Module ID: 17007
-// Function ID: 17008
+// Module ID: 17008
+// Function ID: 17009
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 502, 1078, 11748, 21, 7985, 504, 1119, 2748, 11751, 17008, 1245, 17009, 17010, 4725, 17011, 1984, 4457, 2]
+// Dependencies: [19, 502, 1078, 11748, 21, 7985, 504, 1119, 2748, 11751, 17009, 1245, 17010, 17011, 4725, 17012, 1984, 4457, 2]
 // Exports: default
 
-// Module 17007 (StreamFeedbackActionSheet)
+// Module 17008 (StreamFeedbackActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import ToastUtils from "ToastUtils" /* 4457 */;
 import FeedbackUtils from "FeedbackUtils" /* 11751 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 17009 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 17010 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 17010 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 17011 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -120,7 +120,7 @@ export default function StreamFeedbackActionSheet(stream) {
       if (null != reason) {
         if (obj3.shouldShowLogUploadForCategory(rating, category, reason)) {
           ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp9);
-          tmp22(4725).openLazy(asyncRequireImpl(17011, dependencyMap.paths), "UploadLogs", { mediaSessionId: null, rtcConnectionId: null });
+          tmp22(4725).openLazy(asyncRequireImpl(17012, dependencyMap.paths), "UploadLogs", { mediaSessionId: null, rtcConnectionId: null });
           const obj7 = { mediaSessionId: null, rtcConnectionId: null };
           const tmp22Result = tmp22(4725);
         }
@@ -131,5 +131,5 @@ export default function StreamFeedbackActionSheet(stream) {
       ToastUtils.presentFeedbackSent();
     }
   };
-  return tmp11(tmp10(17008), obj5);
+  return tmp11(tmp10(17009), obj5);
 };

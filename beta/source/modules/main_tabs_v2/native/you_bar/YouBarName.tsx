@@ -1,17 +1,17 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16731
+// Function ID: 16732
 // Name: YouBarName
-// Dependencies: [19, 17, 4780, 2045, 4399, 4798, 4409, 5498, 4777, 1078, 21, 4758, 580, 558, 568, 16709, 11202, 9980, 11408, 16708, 504, 9626, 11184, 11182, 11183, 16731, 11180, 11198, 4754, 4603, 2]
+// Dependencies: [19, 17, 4780, 2045, 4399, 4798, 4409, 5498, 4777, 1078, 21, 4758, 580, 558, 568, 16710, 11202, 9980, 11408, 16709, 504, 9626, 11184, 11182, 11183, 16732, 11180, 11198, 4754, 4603, 2]
 
-// Module 16730 (YouBarName)
+// Module 16731 (YouBarName)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import GuildTagDefault from "GuildTag" /* 9980 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11182 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 11183 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11202 */;
-import YouBarGuildTagExperiment from "YouBarGuildTagExperiment" /* 16709 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16731 */;
+import YouBarGuildTagExperiment from "YouBarGuildTagExperiment" /* 16710 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16732 */;
 import noop from "module_19" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

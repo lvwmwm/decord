@@ -1,7 +1,7 @@
 // Module ID: 16622
 // Function ID: 16623
 // Name: HomePanelContent
-// Dependencies: [19, 17, 16356, 1078, 16623, 21, 4758, 558, 568, 16361, 16624, 4497, 11293, 5343, 16364, 8123, 4462, 580, 1369, 5182, 12026, 2]
+// Dependencies: [19, 17, 16356, 1078, 16623, 21, 4758, 558, 568, 16361, 16624, 4497, 11293, 5343, 16364, 8123, 4462, 580, 1369, 5182, 16703, 2]
 
 // Module 16622 (HomePanelContent)
 import c from "c" /* 568 */;
@@ -249,7 +249,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           if (cResult[19] !== doesLandOnHomeDrawer) {
             let tmp37 = null;
             if (doesLandOnHomeDrawer) {
-              tmp37 = closure_9(tmp(12026).TTIFirstContentfulPaint, { label: "home_drawer", checkFocusedScreen: "guilds" });
+              tmp37 = closure_9(tmp11(16703), {});
             }
             cResult[19] = doesLandOnHomeDrawer;
             cResult[20] = tmp37;
@@ -314,14 +314,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp2 = closure_11();
   const drawerOpen = ref(16364).useDrawerOpen();
   let obj = ref(16364);
-  const tmp3 = ref;
   const doesLandOnHomeDrawer = ref(16361).useDoesLandOnHomeDrawer();
   ref = isClientThemeOrCustomThemeActive.useRef(null);
   let obj2 = ref(16361);
   const homeDrawerState = ref(16361).useHomeDrawerState();
   const panelTranslateX = homeDrawerState.panelTranslateX;
-  const tmp9 = HomeDrawerStore((maxX) => maxX.maxX);
-  dependencyMap = tmp9;
+  const tmp8 = HomeDrawerStore((maxX) => maxX.maxX);
+  dependencyMap = tmp8;
   let obj3 = ref(16361);
   isClientThemeOrCustomThemeActive = ref(8123).useIsClientThemeOrCustomThemeActive();
   let obj4 = ref(8123);
@@ -342,7 +341,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj = { backgroundColor: "transparent" };
   };
   const obj7 = ref(4497);
-  fn.__closure = { isGradientTheme: isClientThemeOrCustomThemeActive, maxX: tmp9, interpolateColor: ref(4497).interpolateColor, panelTranslateX, baseLowest: token, panelBg: token1 };
+  fn.__closure = { isGradientTheme: isClientThemeOrCustomThemeActive, maxX: tmp8, interpolateColor: ref(4497).interpolateColor, panelTranslateX, baseLowest: token, panelBg: token1 };
   fn.__workletHash = 5038627402835;
   fn.__initData = __initData5;
   const animatedStyle = obj7.useAnimatedStyle(fn);
@@ -359,7 +358,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }, items);
-  const obj8 = { isGradientTheme: isClientThemeOrCustomThemeActive, maxX: tmp9, interpolateColor: ref(4497).interpolateColor, panelTranslateX, baseLowest: token, panelBg: token1 };
+  const obj8 = { isGradientTheme: isClientThemeOrCustomThemeActive, maxX: tmp8, interpolateColor: ref(4497).interpolateColor, panelTranslateX, baseLowest: token, panelBg: token1 };
   const fn2 = function k() {
     value = panelTranslateX.get();
     const items = [0, useHomeDrawerGesture.INITIAL_OPEN_WIDTH];
@@ -378,7 +377,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return obj4;
   };
   const obj9 = ref(4497);
-  fn2.__closure = { interpolate: ref(4497).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(16361).INITIAL_OPEN_WIDTH, Extrapolation: ref(4497).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4497).interpolateColor, maxX: tmp9, baseLowest: token, panelBg: token1 };
+  fn2.__closure = { interpolate: ref(4497).interpolate, panelTranslateX, INITIAL_OPEN_WIDTH: ref(16361).INITIAL_OPEN_WIDTH, Extrapolation: ref(4497).Extrapolation, isGradientTheme: isClientThemeOrCustomThemeActive, interpolateColor: ref(4497).interpolateColor, maxX: tmp8, baseLowest: token, panelBg: token1 };
   fn2.__workletHash = 16771946319915;
   fn2.__initData = __initData6;
   const animatedStyle1 = obj9.useAnimatedStyle(fn2);
@@ -392,18 +391,18 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj13 = { style: null, pointerEvents: "none", collapsable: false, children: null };
   const items4 = [tmp2.contentMask, { left: GUILD_LIST_WIDTH }, animatedStyle1];
   obj13.style = items4;
-  let tmp17Result = null;
+  let tmp16Result = null;
   if (isClientThemeOrCustomThemeActive) {
     const obj14 = { offsetX: tmp };
-    tmp17Result = tmp17(closure_14, obj14);
+    tmp16Result = tmp16(closure_14, obj14);
   }
-  obj13.children = tmp17Result;
+  obj13.children = tmp16Result;
   items3[1] = closure_9(panelTranslateX(4497).View, obj13);
-  let tmp17Result2 = null;
+  let tmp16Result2 = null;
   if (doesLandOnHomeDrawer) {
-    tmp17Result2 = tmp17(tmp3(12026).TTIFirstContentfulPaint, { label: "home_drawer", checkFocusedScreen: "guilds" });
+    tmp16Result2 = tmp16(tmp10(16703), {});
   }
-  items3[2] = tmp17Result2;
+  items3[2] = tmp16Result2;
   obj12.children = items3;
   obj11.children = closure_10(panelTranslateX(4497).View, obj12);
   return closure_9(panelTranslateX(4497).View, obj11);

@@ -1,12 +1,12 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 16979
+// Function ID: 16980
 // Name: VibegrationsDesignRemarkSheet
-// Dependencies: [32, 19, 17, 13364, 21, 4758, 580, 558, 568, 4725, 16939, 7396, 1119, 3682, 7332, 5188, 7449, 2]
+// Dependencies: [32, 19, 17, 13364, 21, 4758, 580, 558, 568, 4725, 16940, 7396, 1119, 3682, 7332, 5188, 7449, 2]
 
-// Module 16978 (VibegrationsDesignRemarkSheet)
+// Module 16979 (VibegrationsDesignRemarkSheet)
 import nativeDefault from "native" /* 580 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725 */;
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16939 */;
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 16940 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

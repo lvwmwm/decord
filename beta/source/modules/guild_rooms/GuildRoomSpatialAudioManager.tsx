@@ -1,11 +1,11 @@
-// Module ID: 17783
-// Function ID: 17784
+// Module ID: 17784
+// Function ID: 17785
 // Name: GuildRoomSpatialAudioManager
-// Dependencies: [32, 4674, 1239, 502, 2045, 1996, 4781, 4916, 7365, 17784, 9889, 4958, 2]
+// Dependencies: [32, 4674, 1239, 502, 2045, 1996, 4781, 4916, 7365, 17785, 9889, 4958, 2]
 
-// Module 17783 (GuildRoomSpatialAudioManager)
+// Module 17784 (GuildRoomSpatialAudioManager)
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 9889 */;
-import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17784 */;
+import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17785 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ExperimentStore from "ExperimentStore" /* 4674 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1239 */;

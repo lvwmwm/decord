@@ -1,15 +1,15 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18203
+// Function ID: 18204
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 18191, 15464, 21, 558, 568, 15486, 4457, 1119, 18203, 18186, 18211, 2]
+// Dependencies: [5, 32, 19, 18192, 15464, 21, 558, 568, 15486, 4457, 1119, 18204, 18187, 18212, 2]
 
-// Module 18202 (GuildRoleSubscriptionTierCreationModal)
+// Module 18203 (GuildRoleSubscriptionTierCreationModal)
 import ToastUtils from "ToastUtils" /* 4457 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15486 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18191 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
 
 const require = globalThis.__r;
 
@@ -378,7 +378,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let obj2 = { guildId, editStateId, groupListingId, children: null };
   let obj3 = {
     guildId,
-    children: jsx(groupListingId(18203), {
+    children: jsx(groupListingId(18204), {
       guildId,
       modalKey,
       onDone: function handleCreate() {
@@ -394,9 +394,9 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       steps: memo
     })
   };
-  obj2.children = jsx(guildId(18186).RoleSubscriptionSettingsDisabledContextProvider, {
+  obj2.children = jsx(guildId(18187).RoleSubscriptionSettingsDisabledContextProvider, {
     guildId,
-    children: jsx(groupListingId(18203), {
+    children: jsx(groupListingId(18204), {
       guildId,
       modalKey,
       onDone: function handleCreate() {
@@ -412,5 +412,5 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       steps: memo
     })
   });
-  return jsx(guildId(18211).EditStateContextProvider, { guildId, editStateId, groupListingId, children: null });
+  return jsx(guildId(18212).EditStateContextProvider, { guildId, editStateId, groupListingId, children: null });
 });

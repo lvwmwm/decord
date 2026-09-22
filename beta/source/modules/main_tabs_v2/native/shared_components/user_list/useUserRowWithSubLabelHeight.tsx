@@ -1,16 +1,16 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17238
+// Function ID: 17239
 // Name: useUserRowWithSubLabelHeight
-// Dependencies: [558, 568, 4462, 580, 11291, 5195, 16784, 11293, 2]
+// Dependencies: [558, 568, 4462, 580, 11291, 5195, 16785, 11293, 2]
 // Exports: getUserRowWithSubLabelHeight
 
-// Module 17237 (useUserRowWithSubLabelHeight)
+// Module 17238 (useUserRowWithSubLabelHeight)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;
 import useFontScale from "useFontScale" /* 5195 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11291 */;
-import ActionStatusSubLabel from "ActionStatusSubLabel" /* 16784 */;
+import ActionStatusSubLabel from "ActionStatusSubLabel" /* 16785 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export const useUserRowWithSubLabelHeight = ReactCompilerGating.isReactCompilerE
   const scaledTextLineHeight = useScaledTextLineHeight.useScaledTextLineHeight("text-md/semibold");
   const tmpResult5 = useScaledTextLineHeight;
   const fontScale = useFontScale.useFontScale();
-  const result = tmp(16784).ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale;
+  const result = tmp(16785).ACTION_STATUS_SUB_LABEL_LINE_HEIGHT * fontScale;
   if (cResult[0] === scaledTextLineHeight) {
     if (cResult[1] === token) {
       if (cResult[2] === token1) {

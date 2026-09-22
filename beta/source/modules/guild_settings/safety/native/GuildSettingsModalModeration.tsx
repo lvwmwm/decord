@@ -1,9 +1,9 @@
-// Module ID: 17941
-// Function ID: 17942
+// Module ID: 17942
+// Function ID: 17943
 // Name: GuildSettingsModalModeration
 // Dependencies: [19, 4399, 9834, 1078, 21, 4758, 580, 558, 568, 8920, 9833, 1119, 2112, 7446, 5903, 4471, 5839, 7621, 5901, 15104, 5900, 4754, 8876, 5186, 7286, 1488, 504, 2]
 
-// Module 17941 (GuildSettingsModalModeration)
+// Module 17942 (GuildSettingsModalModeration)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;

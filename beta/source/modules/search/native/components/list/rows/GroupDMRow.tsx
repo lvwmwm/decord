@@ -1,15 +1,15 @@
-// Module ID: 17126
-// Function ID: 17127
+// Module ID: 17127
+// Function ID: 17128
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 558, 568, 4911, 11216, 1181, 11217, 4754, 17125, 2]
+// Dependencies: [19, 21, 558, 568, 4911, 11216, 1181, 11217, 4754, 17126, 2]
 
-// Module 17126 (rows/GroupDMRow)
+// Module 17127 (rows/GroupDMRow)
 import c from "c" /* 568 */;
 import native from "native" /* 1181 */;
 import useChannelNameDefault from "useChannelName" /* 4911 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 11216 */;
 import useRecipientsLabel from "useRecipientsLabel" /* 11217 */;
-import SearchListRow from "SearchListRow" /* 17125 */;
+import SearchListRow from "SearchListRow" /* 17126 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -78,7 +78,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     const obj4 = { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction };
-    const tmp19 = jsx(tmp(17125).SearchListRow, { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction });
+    const tmp19 = jsx(tmp(17126).SearchListRow, { label: str, icon: tmp7, onPress: tmp6, accessibilityLabel: str2, subLabel: tmp12, trailing, accessibilityActions, onAccessibilityAction });
     cResult[7] = accessibilityActions;
     cResult[8] = tmp6;
     cResult[9] = tmp7;

@@ -1,9 +1,9 @@
-// Module ID: 17341
-// Function ID: 17342
+// Module ID: 17342
+// Function ID: 17343
 // Name: ContextMenuCommandItem
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 12, 5822, 1119, 12377, 5802, 1982, 4702, 2]
 
-// Module 17341 (ContextMenuCommandItem)
+// Module 17342 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

@@ -1,9 +1,9 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16933
+// Function ID: 16934
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 2045, 7398, 7455, 21, 4758, 580, 558, 568, 8515, 8504, 8501, 8512, 8453, 16930, 8520, 8530, 13356, 13410, 11406, 504, 12797, 4582, 5291, 1119, 5188, 4583, 13192, 4754, 6851, 4442, 11, 4717, 4708, 8178, 4710, 5652, 1616, 16933, 2]
+// Dependencies: [19, 17, 2045, 7398, 7455, 21, 4758, 580, 558, 568, 8515, 8504, 8501, 8512, 8453, 16931, 8520, 8530, 13356, 13410, 11406, 504, 12797, 4582, 5291, 1119, 5188, 4583, 13192, 4754, 6851, 4442, 11, 4717, 4708, 8178, 4710, 5652, 1616, 16934, 2]
 
-// Module 16932 (JoinRequestActionSheetContent)
+// Module 16933 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -12,7 +12,7 @@ import DateUtils from "DateUtils" /* 4442 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4583 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8453 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16930 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16931 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
 
@@ -1525,7 +1525,7 @@ export default noop.memo(function JoinRequestActionSheetContent(displayProfile) 
   obj6.children = mapped;
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
-  items1[4] = closure_8(memo(16933), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
+  items1[4] = closure_8(memo(16934), { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId });
   obj.children = items1;
   return closure_9(View, obj);
 });

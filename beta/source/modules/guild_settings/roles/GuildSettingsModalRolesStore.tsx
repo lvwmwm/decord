@@ -1,9 +1,9 @@
-// Module ID: 18041
-// Function ID: 18042
+// Module ID: 18042
+// Function ID: 18043
 // Name: GuildSettingsModalRolesStore
 // Dependencies: [2103, 2067, 1078, 12565, 4610, 1119, 1090, 504, 577, 2]
 
-// Module 18041 (GuildSettingsModalRolesStore)
+// Module 18042 (GuildSettingsModalRolesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1090 */;

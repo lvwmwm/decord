@@ -1,9 +1,9 @@
-// Module ID: 17620
-// Function ID: 17621
+// Module ID: 17621
+// Function ID: 17622
 // Name: VoicePanelNoVideoPermissionsAlert
 // Dependencies: [19, 21, 558, 568, 5116, 1119, 5116, 2]
 
-// Module 17620 (VoicePanelNoVideoPermissionsAlert)
+// Module 17621 (VoicePanelNoVideoPermissionsAlert)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import AlertModal from "AlertModal" /* 5116 */;

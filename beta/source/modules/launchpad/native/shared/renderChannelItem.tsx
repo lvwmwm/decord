@@ -1,19 +1,19 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17136
+// Function ID: 17137
 // Name: renderChannelItem
-// Dependencies: [19, 17, 2067, 4409, 1376, 4940, 21, 9846, 1119, 4758, 580, 558, 568, 17136, 504, 5799, 12333, 7882, 17137, 11216, 17139, 4911, 2]
+// Dependencies: [19, 17, 2067, 4409, 1376, 4940, 21, 9846, 1119, 4758, 580, 558, 568, 17137, 504, 5799, 12333, 7882, 17138, 11216, 17140, 4911, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 17135 (renderChannelItem)
+// Module 17136 (renderChannelItem)
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import useChannelName from "useChannelName" /* 4911 */;
 import GuildIconDefault from "GuildIcon" /* 5799 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 7882 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9846 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17136 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 17137 */;
-import renderChannelContentDefault from "renderChannelContent" /* 17139 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17137 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17138 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17140 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import RelationshipStore from "RelationshipStore" /* 4409 */;

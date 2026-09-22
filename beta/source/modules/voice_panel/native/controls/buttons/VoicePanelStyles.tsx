@@ -1,9 +1,9 @@
-// Module ID: 17607
-// Function ID: 17608
+// Module ID: 17608
+// Function ID: 17609
 // Name: VoicePanelStyles
 // Dependencies: [4758, 580, 558, 568, 8543, 2]
 
-// Module 17607 (VoicePanelStyles)
+// Module 17608 (VoicePanelStyles)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useStateFromSharedValue from "useStateFromSharedValue" /* 8543 */;

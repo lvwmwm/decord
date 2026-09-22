@@ -1,9 +1,9 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 17092
+// Function ID: 17093
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 2045, 1078, 21, 558, 568, 17092, 8024, 7518, 1486, 1614, 504, 9417, 1119, 5801, 6846, 2]
+// Dependencies: [19, 2045, 1078, 21, 558, 568, 17093, 8024, 7518, 1486, 1614, 504, 9417, 1119, 5801, 6846, 2]
 
-// Module 17091 (ThreadCreationTitleInput)
+// Module 17092 (ThreadCreationTitleInput)
 import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7518 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 8024 */;
 import noop from "module_19" /* 19 */;
@@ -192,17 +192,17 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
   }
   let obj = chatInputRef(568);
   let obj2 = { content: threadSettingsDraft.name };
-  const tmpResult2 = chatInputRef(17092);
+  const tmpResult2 = chatInputRef(17093);
   cResult[0] = threadNameError;
   cResult[1] = threadSettingsDraft.name;
-  cResult[2] = chatInputRef(17092).renderError(threadNameError, { content: threadSettingsDraft.name });
+  cResult[2] = chatInputRef(17093).renderError(threadNameError, { content: threadSettingsDraft.name });
 }) : ((chatInputRef, ref) => {
   chatInputRef = chatInputRef.chatInputRef;
   const threadSettingsDraft = chatInputRef.threadSettingsDraft;
   const optional = chatInputRef.optional;
   ref = undefined;
   dependencyMap = ref;
-  let obj = chatInputRef(17092);
+  let obj = chatInputRef(17093);
   let obj2 = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];
@@ -253,7 +253,7 @@ export default noop.memo(noop.forwardRef(ReactCompilerGating.isReactCompilerEnab
       }
     }
   }, items3);
-  const renderErrorResult = chatInputRef(17092).renderError(chatInputRef.threadNameError, { content: threadSettingsDraft.name });
+  const renderErrorResult = chatInputRef(17093).renderError(chatInputRef.threadNameError, { content: threadSettingsDraft.name });
   const items4 = [ChannelStore];
   const stateFromStores = chatInputRef(504).useStateFromStores(items4, () => ChannelStore.getChannel(threadSettingsDraft.parentChannelId));
   let str = "";

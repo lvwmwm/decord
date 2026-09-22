@@ -1,10 +1,10 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17499
+// Function ID: 17500
 // Name: useStableParticipant
 // Dependencies: [4774, 502, 1996, 1376, 4779, 560, 558, 568, 4910, 8490, 9705, 504, 2]
 // Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17498 (useStableParticipant)
+// Module 17499 (useStableParticipant)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 560 */;
 import NicknameUtils from "NicknameUtils" /* 4910 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 8490 */;
@@ -90,7 +90,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: 465.988, isSelf: -136 };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: "FORUM_SEARCH_CLEAR", isSelf: null };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);
@@ -166,7 +166,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2
       if (null == participant) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
-          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: 465.988, isSelf: -136 };
+          const obj3 = { type: ParticipantTypes.USER, id: tmp, user, selfVideo: false, canRenderVideo: false, userNick: null, userAvatarDecoration: null, streamId: "Symbol", ringing: null, hasVideo: "FORUM_SEARCH_CLEAR", isSelf: null };
           const id = AuthenticationStore.getId();
           obj3.userNick = NicknameUtils.getName(closure_2, tmp3, user);
           obj3.userAvatarDecoration = useAvatarDecoration.getAvatarDecoration(user, closure_2);

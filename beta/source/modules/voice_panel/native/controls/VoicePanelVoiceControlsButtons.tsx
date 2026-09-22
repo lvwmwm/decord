@@ -1,9 +1,9 @@
-// Module ID: 17633
-// Function ID: 17634
+// Module ID: 17634
+// Function ID: 17635
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 2044, 4774, 1188, 9651, 4780, 502, 1996, 4777, 1078, 17634, 4783, 21, 5111, 17635, 1984, 1119, 558, 568, 10019, 5903, 10174, 504, 4458, 10021, 10038, 5828, 5822, 12419, 17594, 5280, 5291, 17622, 12691, 10206, 1245, 10271, 1368, 10240, 580, 9889, 9921, 17536, 7446, 9882, 9912, 5829, 17495, 17496, 10286, 10255, 4959, 11733, 10205, 17636, 9489, 9572, 10374, 17637, 577, 13219, 10232, 7624, 17535, 2]
+// Dependencies: [32, 19, 2044, 4774, 1188, 9651, 4780, 502, 1996, 4777, 1078, 17635, 4783, 21, 5111, 17636, 1984, 1119, 558, 568, 10019, 5903, 10174, 504, 4458, 10021, 10038, 5828, 5822, 12419, 17595, 5280, 5291, 17623, 12691, 10206, 1245, 10271, 1368, 10240, 580, 9889, 9921, 17537, 7446, 9882, 9912, 5829, 17496, 17497, 10286, 10255, 4959, 11733, 10205, 17637, 9489, 9572, 10374, 17638, 577, 13219, 10232, 7624, 17536, 2]
 
-// Module 17633 (VoicePanelVoiceControlsButtons)
+// Module 17634 (VoicePanelVoiceControlsButtons)
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import util from "util" /* 1119 */;
@@ -26,13 +26,13 @@ import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 10232 *
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10271 */;
 import _modDef10374 from "module_10374" /* 10374 */;
 import _modDef13219 from "module_13219" /* 13219 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 17495 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 17496 */;
-import _modDef17535 from "module_17535" /* 17535 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 17496 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 17497 */;
 import _modDef17536 from "module_17536" /* 17536 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17622 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 17636 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 17637 */;
+import _modDef17537 from "module_17537" /* 17537 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17623 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 17637 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 17638 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2044 */;
@@ -89,7 +89,7 @@ function toggleDeaf() {
 }
 const Constants = fn(1078);
 ({ AnalyticEvents: map1, PlatformTypes: closure_14 } = Constants);
-const constants3 = fn(17634).SelfStreamAndVideoAlertType;
+const constants3 = fn(17635).SelfStreamAndVideoAlertType;
 const MediaEngineContextTypes = fn(4783).MediaEngineContextTypes;
 const jsx = fn(21).jsx;
 fn(558);
@@ -716,8 +716,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const stateFromStores = initialize.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: tmp(9921).HeadphonesSlashIcon, source: _modDef17536 };
-    const tmp12 = jsx(tmp(5828).TableRowIcon, { IconComponent: tmp(9921).HeadphonesSlashIcon, source: _modDef17536 });
+    const obj2 = { IconComponent: tmp(9921).HeadphonesSlashIcon, source: _modDef17537 };
+    const tmp12 = jsx(tmp(5828).TableRowIcon, { IconComponent: tmp(9921).HeadphonesSlashIcon, source: _modDef17537 });
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.wjcRFX);
     cResult[2] = tmp12;
@@ -755,7 +755,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [MediaEngineStore];
   const stateFromStores = initialize.useStateFromStores(items, () => selfDeaf.isSelfDeaf());
   const obj2 = { icon: null, accessibilityHint: null, value: null, onValueChange: null, label: null, subLabel: null };
-  obj2.icon = jsx(TableRowIcon.TableRowIcon, { IconComponent: HeadphonesSlashIcon.HeadphonesSlashIcon, source: _modDef17536 });
+  obj2.icon = jsx(TableRowIcon.TableRowIcon, { IconComponent: HeadphonesSlashIcon.HeadphonesSlashIcon, source: _modDef17537 });
   const intl = util.intl;
   obj2.accessibilityHint = intl.string(util.t.wjcRFX);
   obj2.value = stateFromStores;
@@ -1065,7 +1065,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (!closure_0) {
           tmp2 = closure_15;
           VIDEO = closure_15.VIDEO;
-          f147045 = () => f147045(!VIDEO);
+          f147050 = () => f147050(!VIDEO);
           tmp3 = closure_1;
           tmp4 = closure_2;
           obj = closure_1(closure_2[14]);
@@ -1101,7 +1101,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       if (!paths) {
         if (!VIDEO) {
           VIDEO = constants.VIDEO;
-          const f147046 = () => f147046(!VIDEO);
+          const f147051 = () => f147051(!VIDEO);
           const obj2 = {
             importer() {
                   return VIDEO(paths[16])(paths[15], paths.paths).then((result) => {
@@ -1189,10 +1189,10 @@ ReactCompilerGating = fn(558);
 let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const shareActivityLogsResult = tmp(17637).shareActivityLogs();
+    const shareActivityLogsResult = tmp(17638).shareActivityLogs();
     cResult[0] = shareActivityLogsResult;
     let first = shareActivityLogsResult;
-    const tmpResult = tmp(17637);
+    const tmpResult = tmp(17638);
   } else {
     first = cResult[0];
   }
@@ -1302,8 +1302,8 @@ let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { IconComponent: tmp(7624).SettingsIcon, source: _modDef17535 };
-    const tmp11 = jsx(tmp(5828).TableRowIcon, { IconComponent: tmp(7624).SettingsIcon, source: _modDef17535 });
+    const obj2 = { IconComponent: tmp(7624).SettingsIcon, source: _modDef17536 };
+    const tmp11 = jsx(tmp(5828).TableRowIcon, { IconComponent: tmp(7624).SettingsIcon, source: _modDef17536 });
     const intl = tmp(1119).intl;
     const stringResult = intl.string(tmp(1119).t.NiTd0e);
     const intl2 = tmp(1119).intl;
@@ -1339,24 +1339,24 @@ let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const callback = noop.useCallback(() => {
     const result = ChannelCallConnectingScreen.showVoiceSettingsActionSheet(guildId);
   }, items);
-  const obj = { onPress: callback, icon: jsx(guildId(5828).TableRowIcon, { IconComponent: guildId(7624).SettingsIcon, source: _modDef17535 }), label: null, subLabel: null, trailing: null };
+  const obj = { onPress: callback, icon: jsx(guildId(5828).TableRowIcon, { IconComponent: guildId(7624).SettingsIcon, source: _modDef17536 }), label: null, subLabel: null, trailing: null };
   const intl = guildId(1119).intl;
   obj.label = intl.string(guildId(1119).t.NiTd0e);
   const intl2 = guildId(1119).intl;
   obj.subLabel = intl2.string(guildId(1119).t["16SG+O"]);
   obj.trailing = jsx(guildId(5829).TableRowArrow, {});
-  return jsx(guildId(5822).TableRow, { onPress: callback, icon: jsx(guildId(5828).TableRowIcon, { IconComponent: guildId(7624).SettingsIcon, source: _modDef17535 }), label: null, subLabel: null, trailing: null });
+  return jsx(guildId(5822).TableRow, { onPress: callback, icon: jsx(guildId(5828).TableRowIcon, { IconComponent: guildId(7624).SettingsIcon, source: _modDef17536 }), label: null, subLabel: null, trailing: null });
 });
 ReactCompilerGating = fn(558);
 let tmp19 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
   const cResult = c.c(8);
   stream = stream.stream;
   if (cResult[0] !== stream) {
-    const reportStreamIssueResult = tmp(17637).reportStreamIssue(stream);
+    const reportStreamIssueResult = tmp(17638).reportStreamIssue(stream);
     cResult[0] = stream;
     cResult[1] = reportStreamIssueResult;
     let tmp4 = reportStreamIssueResult;
-    const tmpResult = tmp(17637);
+    const tmpResult = tmp(17638);
   } else {
     tmp4 = cResult[1];
   }
@@ -1421,12 +1421,12 @@ export const ReportStreamIssueButton = tmp19;
 export const RTCDebugPanelButton = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = c.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const rtcDebugPanelResult = tmp(17637).rtcDebugPanel(() => {
+    const rtcDebugPanelResult = tmp(17638).rtcDebugPanel(() => {
 
     });
     cResult[0] = rtcDebugPanelResult;
     let first = rtcDebugPanelResult;
-    const tmpResult = tmp(17637);
+    const tmpResult = tmp(17638);
   } else {
     first = cResult[0];
   }

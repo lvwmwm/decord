@@ -12,8 +12,8 @@ const obj = module_562.create((arg0) => {
   return {
     utmSourceCurrent: "r",
     utmMediumCurrent: "applicationId",
-    utmCampaignCurrent: "uri",
-    utmContentCurrent: "methodobject",
+    utmCampaignCurrent: "diversity",
+    utmContentCurrent: "paddingHorizontal",
     setUtmCurrentContext(utmSourceCurrent) {
       return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
     },

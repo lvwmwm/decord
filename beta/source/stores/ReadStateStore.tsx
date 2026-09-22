@@ -3208,7 +3208,7 @@ const readStateStoreClass = new ReadStateStoreClass(DispatcherDefault, {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     value = ReadState.get(channelId.channelId);
-    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "Set", force: "noiseSuppression", isExplicitUserAction: false, trackAnalytics: false });
+    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "Set", force: null, isExplicitUserAction: null, trackAnalytics: null });
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(channelId) {
     value = ReadState.get(channelId.channelId);
@@ -3576,7 +3576,7 @@ const readStateStoreClass = new ReadStateStoreClass(DispatcherDefault, {
     });
     const item = found.forEach((messageId) => {
       value = ReadState.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId: messageId.messageId, local: true, immediate: "IconComponent", force: "Set", isExplicitUserAction: "M9 3H7v1h2V3ZM9 4H7v1h2V4Z", trackAnalytics: null });
+      value.ack({ messageId: messageId.messageId, local: true, immediate: "IconComponent", force: "Set", isExplicitUserAction: "M4 1H3v1h1V1ZM3 2H2v1h1V2Z", trackAnalytics: null });
     });
     if (context === closure_1_41) {
       const push = navigation.push;

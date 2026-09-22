@@ -1,9 +1,9 @@
-// Module ID: 17296
-// Function ID: 17297
+// Module ID: 17297
+// Function ID: 17298
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 2104, 2045, 2103, 2067, 4409, 1376, 1078, 21, 4758, 580, 558, 568, 5110, 1119, 4911, 4404, 11730, 9803, 10630, 12, 5903, 15414, 5822, 1488, 12904, 10647, 15573, 504, 1982, 11248, 17297, 7226, 8112, 4771, 2]
+// Dependencies: [32, 5, 19, 17, 2104, 2045, 2103, 2067, 4409, 1376, 1078, 21, 4758, 580, 558, 568, 5110, 1119, 4911, 4404, 11730, 9803, 10630, 12, 5903, 15414, 5822, 1488, 12904, 10647, 15573, 504, 1982, 11248, 17298, 7226, 8112, 4771, 2]
 
-// Module 17296 (ChannelSettingsPermissionsOverview)
+// Module 17297 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -16,7 +16,7 @@ import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 7226 */;
 import RoleLabel from "RoleLabel" /* 10647 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11248 */;
 import CircleMinusIcon from "CircleMinusIcon" /* 15573 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17297 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17298 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

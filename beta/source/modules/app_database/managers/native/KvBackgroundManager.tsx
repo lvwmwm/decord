@@ -1,12 +1,12 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17773
+// Function ID: 17774
 // Name: KvBackgroundManager
-// Dependencies: [32, 5, 12562, 7725, 7726, 1095, 3, 7365, 17773, 8002, 1368, 2074, 2075, 2091, 2]
+// Dependencies: [32, 5, 12562, 7725, 7726, 1095, 3, 7365, 17774, 8002, 1368, 2074, 2075, 2091, 2]
 
-// Module 17772 (KvBackgroundManager)
+// Module 17773 (KvBackgroundManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1095 */;
-import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17773 */;
+import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17774 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import MultiAccountStore from "MultiAccountStore" /* 12562 */;

@@ -1,9 +1,9 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18096
+// Function ID: 18097
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2067, 4399, 9834, 1078, 21, 4758, 580, 10676, 1119, 4754, 16762, 4712, 558, 568, 1488, 504, 577, 9833, 18096, 18100, 4457, 2112, 5188, 7286, 2]
+// Dependencies: [19, 17, 2067, 4399, 9834, 1078, 21, 4758, 580, 10676, 1119, 4754, 16763, 4712, 558, 568, 1488, 504, 577, 9833, 18097, 18101, 4457, 2112, 5188, 7286, 2]
 
-// Module 18095 (GuildSettingsModalCommunityIntro)
+// Module 18096 (GuildSettingsModalCommunityIntro)
 import c from "c" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import nativeDefault from "native" /* 580 */;
@@ -12,8 +12,8 @@ import ToastUtils from "ToastUtils" /* 4457 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4712 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import AnalyticsIcon from "AnalyticsIcon" /* 10676 */;
-import LightbulbIcon from "LightbulbIcon" /* 16762 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18100 */;
+import LightbulbIcon from "LightbulbIcon" /* 16763 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18101 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4399 */;

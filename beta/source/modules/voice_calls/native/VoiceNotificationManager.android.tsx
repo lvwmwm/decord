@@ -28,7 +28,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "T", connectionState: "cursor", selfMute: false, deafened: "sun_with_face", isPushToTalk: "full_moon_with_face", embeddedActivity: "profile", isStreaming: "first_quarter_moon_with_face" };
+    obj.state = { channelId: "T", connectionState: "cursor", selfMute: false, deafened: "sun_with_face", isPushToTalk: "full_moon_with_face", embeddedActivity: 0.5, isStreaming: "M8 7H6v1h2V7Z" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = RTCConnectionStore.getChannelId();
       state = RTCConnectionStore.getState();
@@ -219,7 +219,7 @@ prototype["terminate"] = function terminate() {
 };
 obj2 = Object.create(VoiceNotificationManager.prototype);
 obj2.voiceServiceHandlerId = 9000;
-obj2.state = { channelId: "T", connectionState: "cursor", selfMute: false, deafened: "sun_with_face", isPushToTalk: "full_moon_with_face", embeddedActivity: "profile", isStreaming: "first_quarter_moon_with_face" };
+obj2.state = { channelId: "T", connectionState: "cursor", selfMute: false, deafened: "sun_with_face", isPushToTalk: "full_moon_with_face", embeddedActivity: 0.5, isStreaming: "M8 7H6v1h2V7Z" };
 obj2.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = RTCConnectionStore.getChannelId();
   state = RTCConnectionStore.getState();

@@ -1,9 +1,9 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16961
+// Function ID: 16962
 // Name: VibegrationsStaffAccessNotice
-// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 16961, 1105, 4455, 4712, 1119, 3682, 4754, 5824, 2]
+// Dependencies: [19, 17, 1078, 21, 4758, 580, 558, 568, 16962, 1105, 4455, 4712, 1119, 3682, 4754, 5824, 2]
 
-// Module 16960 (VibegrationsStaffAccessNotice)
+// Module 16961 (VibegrationsStaffAccessNotice)
 import nativeDefault from "native" /* 580 */;
 import router_utils from "router_utils" /* 1105 */;
 import _modDef3682 from "module_3682" /* 3682 */;
@@ -27,7 +27,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = vibegrationsStaffAccessTarget(568).c(11);
   const tmp4 = closure_8();
   let obj = vibegrationsStaffAccessTarget(568);
-  vibegrationsStaffAccessTarget = vibegrationsStaffAccessTarget(16961).useVibegrationsStaffAccessTarget();
+  vibegrationsStaffAccessTarget = vibegrationsStaffAccessTarget(16962).useVibegrationsStaffAccessTarget();
   if (cResult[0] !== vibegrationsStaffAccessTarget) {
     const fn = function n() {
       if (null != vibegrationsStaffAccessTarget) {
@@ -58,7 +58,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[3] !== tmp6) {
       const intl = tmp(1119).intl;
-      const obj4 = { channel: tmp(16961).VIBEGRATIONS_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp6 };
+      const obj4 = { channel: tmp(16962).VIBEGRATIONS_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp6 };
       const formatResult = intl.format(_modDef3682["4BsHmp"], obj4);
       cResult[3] = tmp6;
       cResult[4] = formatResult;
@@ -96,7 +96,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
 }) : (() => {
   const tmp = closure_8();
-  vibegrationsStaffAccessTarget = vibegrationsStaffAccessTarget(16961).useVibegrationsStaffAccessTarget();
+  vibegrationsStaffAccessTarget = vibegrationsStaffAccessTarget(16962).useVibegrationsStaffAccessTarget();
   [][0] = vibegrationsStaffAccessTarget;
   let tmp6 = null;
   if (null != vibegrationsStaffAccessTarget) {
@@ -106,7 +106,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const items = [closure_6(tmp2(4712).CircleInformationIcon, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-default", style: tmp.copy, children: null };
     const intl = tmp2(1119).intl;
-    const obj6 = { channel: tmp2(16961).VIBEGRATIONS_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
+    const obj6 = { channel: tmp2(16962).VIBEGRATIONS_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
     obj5.children = intl.format(_modDef3682["4BsHmp"], obj6);
     items[1] = closure_6(tmp2(4754).Text, obj5);
     obj3.children = items;

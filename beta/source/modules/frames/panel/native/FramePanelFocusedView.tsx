@@ -1,14 +1,14 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17478
+// Function ID: 17479
 // Name: FramePanelFocusedView
-// Dependencies: [19, 9311, 9312, 9313, 21, 558, 568, 504, 17474, 17456, 17478, 9567, 16970, 2]
+// Dependencies: [19, 9311, 9312, 9313, 21, 558, 568, 504, 17475, 17457, 17479, 9567, 16971, 2]
 
-// Module 17477 (FramePanelFocusedView)
+// Module 17478 (FramePanelFocusedView)
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 9567 */;
-import FrameViewDefault from "FrameView" /* 16970 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 17456 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17474 */;
-import FramePanelHeaderDefault from "FramePanelHeader" /* 17478 */;
+import FrameViewDefault from "FrameView" /* 16971 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 17457 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17475 */;
+import FramePanelHeaderDefault from "FramePanelHeader" /* 17479 */;
 import noop from "module_19" /* 19 */;
 import FramesStore from "FramesStore" /* 9311 */;
 
@@ -51,7 +51,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     tmp8 = cResult[2];
   }
   const tmpResult = stateFromStores(504);
-  const baseActivityPanelFocusedView = stateFromStores(17456).useBaseActivityPanelFocusedView(tmp8);
+  const baseActivityPanelFocusedView = stateFromStores(17457).useBaseActivityPanelFocusedView(tmp8);
   ({ portraitSafeAreasConfig, landscapeSafeAreasConfig } = baseActivityPanelFocusedView);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp14 = jsx(FramePanelHeaderDefault, {});
@@ -89,7 +89,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
       }
     }
     const obj3 = { transitionState, transitionCleanUp, updateActivityPanelModeToPIP: tmp15, hasActivity: tmp16, context: FramePanelStateContextDefault, header: tmp11, children: tmp17 };
-    const tmp22 = jsx(tmp(17456).BaseActivityPanelFocusedView, { transitionState, transitionCleanUp, updateActivityPanelModeToPIP: tmp15, hasActivity: tmp16, context: FramePanelStateContextDefault, header: tmp11, children: tmp17 });
+    const tmp22 = jsx(tmp(17457).BaseActivityPanelFocusedView, { transitionState, transitionCleanUp, updateActivityPanelModeToPIP: tmp15, hasActivity: tmp16, context: FramePanelStateContextDefault, header: tmp11, children: tmp17 });
     cResult[9] = tmp16;
     cResult[10] = tmp17;
     cResult[11] = transitionCleanUp;

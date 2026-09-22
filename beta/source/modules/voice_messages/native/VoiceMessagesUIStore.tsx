@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 ({ VoiceMessageAnimationState: c2, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageConstants);
 let obj = module_562.create(() => {
-  obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "Set", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "Symbol", showVoiceMessagesTooltip: "UserSearchItems", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: null, isUsingHoldGesture: 28 };
+  obj = { voiceMessageAnimationState: null, recordingStatus: null, recordingId: null, currWaveHeight: "Set", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "Symbol", showVoiceMessagesTooltip: "\u05D0\u05D9\u05DE\u05D5\u05D2'\u05D9", savedVoiceMessageUploadData: "m", isVoiceMessageButtonMounted: "heading-lg/bold", isUsingHoldGesture: null };
   const items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj.voiceMessageAnimationState = ReanimatedRexport.makeMutable(items);

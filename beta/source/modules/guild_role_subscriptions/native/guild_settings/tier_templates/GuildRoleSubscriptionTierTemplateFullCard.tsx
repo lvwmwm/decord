@@ -1,9 +1,9 @@
-// Module ID: 18246
-// Function ID: 18247
+// Module ID: 18247
+// Function ID: 18248
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 16469, 4754, 15496, 7222, 1616, 18247, 1119, 18248, 18249, 10525, 6863, 7397, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1181, 16469, 4754, 15496, 7222, 1616, 18248, 1119, 18249, 18250, 10525, 6863, 7397, 2]
 
-// Module 18246 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 18247 (GuildRoleSubscriptionTierTemplateFullCard)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import native from "native" /* 1181 */;
@@ -11,7 +11,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15496 */;
 import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16469 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18249 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18250 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -490,7 +490,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj16 = { roleColor: role_color, roleImage: image, roleName: name, guildId };
-          const tmp44 = closure_4(tmp(18248).GuildRoleSubscriptionRolePreview, obj16);
+          const tmp44 = closure_4(tmp(18249).GuildRoleSubscriptionRolePreview, obj16);
           cResult[26] = guildId;
           cResult[27] = image;
           cResult[28] = name;

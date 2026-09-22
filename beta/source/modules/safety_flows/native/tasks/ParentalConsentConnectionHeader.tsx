@@ -1,9 +1,9 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18340
+// Function ID: 18341
 // Name: ParentalConsentConnectionHeader
 // Dependencies: [19, 17, 1376, 21, 4758, 5897, 580, 558, 568, 1616, 504, 6832, 1119, 2780, 4754, 2]
 
-// Module 18339 (ParentalConsentConnectionHeader)
+// Module 18340 (ParentalConsentConnectionHeader)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;

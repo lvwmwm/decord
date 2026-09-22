@@ -1,10 +1,10 @@
-// Module ID: 17129
-// Function ID: 17130
+// Module ID: 17130
+// Function ID: 17131
 // Name: guild_channels/ChannelSubtitle
 // Dependencies: [19, 21, 12214, 4754, 558, 568, 16566, 12211, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17129 (guild_channels/ChannelSubtitle)
+// Module 17130 (guild_channels/ChannelSubtitle)
 import c from "c" /* 568 */;
 import Text_Text from "Text/Text" /* 4754 */;
 import ChannelListLayout from "ChannelListLayout" /* 12214 */;

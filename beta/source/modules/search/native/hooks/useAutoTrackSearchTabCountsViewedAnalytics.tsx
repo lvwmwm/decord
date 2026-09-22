@@ -1,9 +1,9 @@
-// Module ID: 17201
-// Function ID: 17202
+// Module ID: 17202
+// Function ID: 17203
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
 // Dependencies: [19, 8127, 558, 568, 12506, 2]
 
-// Module 17201 (useAutoTrackSearchTabCountsViewedAnalytics)
+// Module 17202 (useAutoTrackSearchTabCountsViewedAnalytics)
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
 import noop from "module_19" /* 19 */;
 

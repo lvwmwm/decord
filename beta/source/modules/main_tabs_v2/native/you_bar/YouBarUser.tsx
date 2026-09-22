@@ -1,9 +1,9 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16728
+// Function ID: 16729
 // Name: YouBarUser
-// Dependencies: [19, 17, 1376, 15354, 21, 4758, 580, 558, 568, 504, 4497, 5187, 4603, 16728, 16729, 16730, 2]
+// Dependencies: [19, 17, 1376, 15354, 21, 4758, 580, 558, 568, 504, 4497, 5187, 4603, 16729, 16730, 16731, 2]
 
-// Module 16727 (YouBarUser)
+// Module 16728 (YouBarUser)
 import nativeDefault from "native" /* 580 */;
 import spring from "spring" /* 5187 */;
 import noop from "module_19" /* 19 */;
@@ -118,7 +118,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
               tmp28 = tmp30;
             }
             const obj7 = { userId: stateFromStores.id, username: name };
-            const tmp27 = closure_9(tmp17(16730), obj7);
+            const tmp27 = closure_9(tmp17(16731), obj7);
             cResult[30] = stateFromStores.id;
             cResult[31] = name;
             cResult[32] = tmp27;
@@ -131,7 +131,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
           tmp24 = items2;
         }
         const obj8 = { isLargeAvatar: tmp9, onPress: onAvatarPress };
-        const tmp22 = closure_9(tmp17(16729), obj8);
+        const tmp22 = closure_9(tmp17(16730), obj8);
         cResult[23] = tmp9;
         cResult[24] = onAvatarPress;
         cResult[25] = tmp22;
@@ -148,7 +148,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     }
     if (cResult[8] !== tmp9) {
       const obj9 = { isLarge: tmp9 };
-      const tmp38 = closure_9(tmp17(16728), obj9);
+      const tmp38 = closure_9(tmp17(16729), obj9);
       cResult[8] = tmp9;
       cResult[9] = tmp38;
       let tmp36 = tmp38;
@@ -263,12 +263,12 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
     if (null != name) {
       let obj3 = { style: tmp.youButton, children: null };
       const obj5 = { isLargeAvatar: tmp5, onPress: isQuestRendered.onAvatarPress };
-      const items2 = [closure_9(tmp9(16729), obj5), ];
+      const items2 = [closure_9(tmp9(16730), obj5), ];
       const obj6 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj6.style = items3;
       const obj7 = { userId: stateFromStores.id, username: name };
-      obj6.children = closure_9(tmp9(16730), obj7);
+      obj6.children = closure_9(tmp9(16731), obj7);
       items2[1] = closure_9(tmp9(4497).View, obj6);
       obj3.children = items2;
     }
@@ -277,7 +277,7 @@ export default noop.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) 
   const obj8 = { style: null, children: null };
   const items4 = [tmp.youButton];
   obj8.style = items4;
-  const items5 = [closure_9(sharedValue(16728), { isLarge: !isQuestRendered }), ];
+  const items5 = [closure_9(sharedValue(16729), { isLarge: !isQuestRendered }), ];
   const obj9 = { style: null, children: closure_9(View, { style: tmp.placeholder }) };
   const items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj9.style = items6;

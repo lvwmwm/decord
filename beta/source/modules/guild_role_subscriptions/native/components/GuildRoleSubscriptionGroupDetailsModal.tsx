@@ -1,9 +1,9 @@
-// Module ID: 18190
-// Function ID: 18191
+// Module ID: 18191
+// Function ID: 18192
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 18191, 15464, 1078, 21, 4758, 558, 568, 14169, 18186, 1119, 10051, 18192, 4754, 15476, 8876, 18195, 2]
+// Dependencies: [32, 19, 17, 18192, 15464, 1078, 21, 4758, 558, 568, 14169, 18187, 1119, 10051, 18193, 4754, 15476, 8876, 18196, 2]
 
-// Module 18190 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 18191 (GuildRoleSubscriptionGroupDetailsModal)
 import c from "c" /* 568 */;
 import util from "util" /* 1119 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -11,12 +11,12 @@ import Form from "Form" /* 8876 */;
 import FormHeaderDefault from "FormHeader" /* 10051 */;
 import FormStylesDefault from "FormStyles" /* 14169 */;
 import FormSeparatorDefault from "FormSeparator" /* 15476 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18186 */;
-import FormImagePicker from "FormImagePicker" /* 18192 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18195 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18187 */;
+import FormImagePicker from "FormImagePicker" /* 18193 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18196 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18191 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18192 */;
 
 require = fn;
 const View = fn(17).View;

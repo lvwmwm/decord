@@ -1,9 +1,9 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17265
+// Function ID: 17266
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 16747, 580, 9092, 4758, 558, 568, 1119, 4754, 9182, 2]
+// Dependencies: [19, 17, 21, 16748, 580, 9092, 4758, 558, 568, 1119, 4754, 9182, 2]
 
-// Module 17264 (YouScreenNavIcon)
+// Module 17265 (YouScreenNavIcon)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const md = fn(16747).ICON_SIZE.md;
+const md = fn(16748).ICON_SIZE.md;
 const result = (nativeDefault.space.PX_32 - md) / 2;
 const TEXT_DEFAULT = nativeDefault.colors.TEXT_DEFAULT;
 let c7 = "text-default";

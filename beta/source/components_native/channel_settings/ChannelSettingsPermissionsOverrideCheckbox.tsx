@@ -1,9 +1,9 @@
-// Module ID: 17306
-// Function ID: 17307
+// Module ID: 17307
+// Function ID: 17308
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 580, 4758, 4404, 1119, 8192, 9074, 17307, 558, 568, 4479, 2]
+// Dependencies: [19, 17, 21, 580, 4758, 4404, 1119, 8192, 9074, 17308, 558, 568, 4479, 2]
 
-// Module 17306 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 17307 (ChannelSettingsPermissionsOverrideCheckbox)
 import nativeDefault from "native" /* 580 */;
 import PermissionUtils from "PermissionUtils" /* 4404 */;
 import noop from "module_19" /* 19 */;
@@ -24,7 +24,7 @@ function getIcon(arg0, arg1, icon) {
     const obj = { size: "sm", style: icon.icon, color: null };
     const colors = nativeDefault.colors;
     obj.color = arg1 ? colors.WHITE : colors.INTERACTIVE_TEXT_DEFAULT;
-    return jsx(tmp(17307).SlashIcon, { size: "sm", style: icon.icon, color: null });
+    return jsx(tmp(17308).SlashIcon, { size: "sm", style: icon.icon, color: null });
   } else {
     return null;
   }

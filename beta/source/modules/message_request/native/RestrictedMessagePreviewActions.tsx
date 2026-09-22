@@ -1,10 +1,10 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17370
+// Function ID: 17371
 // Name: RestrictedMessagePreviewActions
 // Dependencies: [19, 17, 4409, 1078, 10385, 21, 4758, 580, 12756, 504, 10009, 11174, 12784, 4603, 4725, 10386, 1984, 8905, 4771, 5188, 1119, 4754, 2]
 // Exports: default
 
-// Module 17369 (RestrictedMessagePreviewActions)
+// Module 17370 (RestrictedMessagePreviewActions)
 import nativeDefault from "native" /* 580 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
 import UserUtilsDefault from "UserUtils" /* 4603 */;
@@ -140,7 +140,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     tmp18 = null;
     formatResult = null;
   } else if (tmp13.PENDING_OUTGOING === stateFromStores) {
-    const obj11 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "a" };
+    const obj11 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "Boolean" };
     const intl3 = tmp2(tmp3[20]).intl;
     obj11.text = intl3.string(tmp2(tmp3[20]).t.xMH6vD);
     tmp19 = closure_9(tmp2(tmp3[19]).Button, obj11);

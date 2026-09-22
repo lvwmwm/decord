@@ -1,9 +1,9 @@
-// Module ID: 18006
-// Function ID: 18007
+// Module ID: 18007
+// Function ID: 18008
 // Name: HeaderRow
-// Dependencies: [12387, 5, 32, 19, 17, 18000, 1078, 1379, 21, 4758, 580, 9755, 10511, 1245, 1119, 1259, 5356, 5188, 4754, 558, 568, 504, 2]
+// Dependencies: [12387, 5, 32, 19, 17, 18001, 1078, 1379, 21, 4758, 580, 9755, 10511, 1245, 1119, 1259, 5356, 5188, 4754, 558, 568, 504, 2]
 
-// Module 18006 (HeaderRow)
+// Module 18007 (HeaderRow)
 import initialize from "initialize" /* 504 */;
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
@@ -12,7 +12,7 @@ import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12387 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18000 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18001 */;
 
 require = fn;
 function HeaderRow(guild) {

@@ -1,9 +1,9 @@
-// Module ID: 17524
-// Function ID: 17525
+// Module ID: 17525
+// Function ID: 17526
 // Name: PremiumSoundboardFeatureUpsell
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 1098, 10219, 8101, 2]
 
-// Module 17524 (PremiumSoundboardFeatureUpsell)
+// Module 17525 (PremiumSoundboardFeatureUpsell)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ConstantsIOS from "ConstantsIOS" /* 1098 */;

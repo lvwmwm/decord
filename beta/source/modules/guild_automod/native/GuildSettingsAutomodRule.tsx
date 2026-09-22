@@ -1,22 +1,22 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 17960
+// Function ID: 17961
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 19, 17943, 17945, 11993, 21, 4758, 580, 558, 568, 1488, 17304, 2023, 17946, 5116, 1119, 5839, 7621, 11998, 4457, 4659, 7436, 4754, 6846, 7446, 17960, 17971, 17974, 5903, 5822, 5186, 8876, 7286, 2]
+// Dependencies: [5, 19, 17944, 17946, 11993, 21, 4758, 580, 558, 568, 1488, 17305, 2023, 17947, 5116, 1119, 5839, 7621, 11998, 4457, 4659, 7436, 4754, 6846, 7446, 17961, 17972, 17975, 5903, 5822, 5186, 8876, 7286, 2]
 
-// Module 17959 (GuildSettingsAutomodRule)
+// Module 17960 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 580 */;
 import ToastUtils from "ToastUtils" /* 4457 */;
 import NavigatorHeader from "NavigatorHeader" /* 5839 */;
 import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 17946 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 17947 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const useAutomodRulesList = fn(17943).useAutomodRulesList;
-const GuildSettingsAutomodRuleStore = fn(17945);
+const useAutomodRulesList = fn(17944).useAutomodRulesList;
+const GuildSettingsAutomodRuleStore = fn(17946);
 ({ useAutomodEditingRuleActions: metroRequire, useAutomodEditingRuleState: closure_7 } = GuildSettingsAutomodRuleStore);
 const MAX_RULE_NAME_LENGTH = fn(11993).MAX_RULE_NAME_LENGTH;
 const jsxProd = fn(21);

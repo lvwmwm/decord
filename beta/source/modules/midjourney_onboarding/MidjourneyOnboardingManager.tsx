@@ -1,9 +1,9 @@
-// Module ID: 18266
-// Function ID: 18267
+// Module ID: 18267
+// Function ID: 18268
 // Name: MidjourneyOnboardingManager
 // Dependencies: [5, 14132, 1078, 7365, 14131, 7491, 2]
 
-// Module 18266 (MidjourneyOnboardingManager)
+// Module 18267 (MidjourneyOnboardingManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 

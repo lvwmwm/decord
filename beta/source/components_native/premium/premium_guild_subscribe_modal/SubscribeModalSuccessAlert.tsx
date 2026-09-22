@@ -139,8 +139,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     class R {
       constructor(arg0) {
-        tmp = f64480;
-        if (f64480.Scenes.ENTRY === guildId) {
+        tmp = f64481;
+        if (f64481.Scenes.ENTRY === guildId) {
           tmp3 = closure_1;
           return closure_1(tmp.Scenes.IDLE);
         } else if (tmp.Scenes.IDLE === guildId) {
@@ -165,8 +165,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     class R {
       constructor(arg0) {
-        tmp = f64480;
-        if (f64480.Scenes.ENTRY === guildId) {
+        tmp = f64481;
+        if (f64481.Scenes.ENTRY === guildId) {
           tmp3 = closure_1;
           return closure_1(tmp.Scenes.IDLE);
         } else if (tmp.Scenes.IDLE === guildId) {
@@ -182,8 +182,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (cResult[8] === tmp14) {
     class R {
       constructor(arg0) {
-        tmp = f64480;
-        if (f64480.Scenes.ENTRY === guildId) {
+        tmp = f64481;
+        if (f64481.Scenes.ENTRY === guildId) {
           tmp3 = closure_1;
           return closure_1(tmp.Scenes.IDLE);
         } else if (tmp.Scenes.IDLE === guildId) {
@@ -198,8 +198,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     if (tmpResult2.isThemeLight(tmp17)) {
       class R {
         constructor(arg0) {
-          tmp = f64480;
-          if (f64480.Scenes.ENTRY === guildId) {
+          tmp = f64481;
+          if (f64481.Scenes.ENTRY === guildId) {
             tmp3 = closure_1;
             return closure_1(tmp.Scenes.IDLE);
           } else if (tmp.Scenes.IDLE === guildId) {
@@ -214,8 +214,8 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     } else {
       class R {
         constructor(arg0) {
-          tmp = f64480;
-          if (f64480.Scenes.ENTRY === guildId) {
+          tmp = f64481;
+          if (f64481.Scenes.ENTRY === guildId) {
             tmp3 = closure_1;
             return closure_1(tmp.Scenes.IDLE);
           } else if (tmp.Scenes.IDLE === guildId) {

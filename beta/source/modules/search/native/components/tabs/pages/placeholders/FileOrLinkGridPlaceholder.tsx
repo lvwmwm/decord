@@ -1,16 +1,16 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17145
+// Function ID: 17146
 // Name: FileOrLinkGridPlaceholder
-// Dependencies: [19, 21, 558, 568, 17119, 5195, 17145, 4497, 2]
+// Dependencies: [19, 21, 558, 568, 17120, 5195, 17146, 4497, 2]
 
-// Module 17144 (FileOrLinkGridPlaceholder)
+// Module 17145 (FileOrLinkGridPlaceholder)
 import c from "c" /* 568 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4497 */;
 import useFontScale from "useFontScale" /* 5195 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 17119 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17120 */;
 import noop from "module_19" /* 19 */;
 
-const SearchListCard = tmp(17145);
+const SearchListCard = tmp(17146);
 require = fn;
 const jsx = fn(21).jsx;
 const ReactCompilerGating = fn(558);

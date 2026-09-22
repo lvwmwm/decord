@@ -1,10 +1,10 @@
-// Module ID: 18022
-// Function ID: 18023
+// Module ID: 18023
+// Function ID: 18024
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 5721, 21, 504, 10680, 4458, 7176, 1119, 7397, 7396, 580, 5903, 5822, 10626, 18015, 4715, 2]
+// Dependencies: [5, 32, 19, 17, 5721, 21, 504, 10680, 4458, 7176, 1119, 7397, 7396, 580, 5903, 5822, 10626, 18016, 4715, 2]
 
-// Module 18022 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18015 */;
+// Module 18023 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18016 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

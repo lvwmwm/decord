@@ -1,16 +1,16 @@
-// Module ID: 17515
-// Function ID: 17516
+// Module ID: 17516
+// Function ID: 17517
 // Name: SoundButton
-// Dependencies: [19, 17, 17508, 21, 4497, 4758, 580, 1368, 5341, 558, 568, 5187, 12064, 7377, 17516, 17517, 7409, 7429, 17519, 17505, 17521, 4754, 5315, 2]
+// Dependencies: [19, 17, 17509, 21, 4497, 4758, 580, 1368, 5341, 558, 568, 5187, 12064, 7377, 17517, 17518, 7409, 7429, 17520, 17506, 17522, 4754, 5315, 2]
 
-// Module 17515 (SoundButton)
+// Module 17516 (SoundButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4497 */;
 import spring from "spring" /* 5187 */;
 import EmojiDefault from "Emoji" /* 7377 */;
 import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12064 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17521 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17522 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -25,8 +25,8 @@ const SPRING_CONFIG = { damping: 10, stiffness: 300, mass: 1 };
 const createStyles = fn(4758);
 let obj = { button: null, buttonPressed: null, buttonDisabled: null, buttonPlaying: null, playingBackground: null, emoji: null, emojiWrapper: null, text: null, textPlaying: null, lock: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj.button = { marginTop: 4, height: fn(17508).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-let obj2 = { marginTop: 4, height: fn(17508).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+obj.button = { marginTop: 4, height: fn(17509).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+let obj2 = { marginTop: 4, height: fn(17509).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
 obj.buttonPressed = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
 obj.buttonDisabled = { opacity: 0.5 };
 let obj4 = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };

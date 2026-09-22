@@ -1,16 +1,16 @@
-// Module ID: 18255
-// Function ID: 18256
+// Module ID: 18256
+// Function ID: 18257
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2045, 10056, 2067, 4399, 1078, 21, 4758, 580, 558, 568, 1488, 38, 504, 12, 18256, 10061, 5110, 1119, 577, 5203, 7621, 18257, 10057, 8876, 1253, 5839, 7246, 2]
+// Dependencies: [32, 19, 2045, 10056, 2067, 4399, 1078, 21, 4758, 580, 558, 568, 1488, 38, 504, 12, 18257, 10061, 5110, 1119, 577, 5203, 7621, 18258, 10057, 8876, 1253, 5839, 7246, 2]
 
-// Module 18255 (InviteSettingsModal)
+// Module 18256 (InviteSettingsModal)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5110 */;
 import Navigator from "Navigator" /* 7246 */;
 import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10061 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18256 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18257 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2045 */;
@@ -417,7 +417,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   obj5.onChangeTemporary = callback3;
   obj5.onChangeFlags = callback4;
   obj5.onChangeRoleIds = callback5;
-  obj4.children = jsx(channel(18257), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
+  obj4.children = jsx(channel(18258), { style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: null, temporary: null, flags: null, roleIds: null, onChangeMaxAge: null, onChangeMaxUses: null, onChangeTemporary: null, onChangeFlags: null, onChangeRoleIds: null });
   return jsx(navigation(8876).Form, { contentContainerStyle: tmp.formContainer, children: null });
 });
 ReactCompilerGating = fn(558);

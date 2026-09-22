@@ -232,7 +232,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68805;
+          tmp4 = f68806;
           tmp5 = closure_0;
           obj1.description = obj.tooltipDescription(tmp5);
           return tmp3(tmp4, obj1, tmp2);
@@ -248,7 +248,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           [tmp2, obj] = tmp;
           obj1 = { IconComponent: closure_8[tmp2], header: obj.tooltipHeader(), description: null };
           tmp3 = jsx;
-          tmp4 = f68805;
+          tmp4 = f68806;
           tmp5 = closure_0;
           obj1.description = obj.tooltipDescription(tmp5);
           return tmp3(tmp4, obj1, tmp2);

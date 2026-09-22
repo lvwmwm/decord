@@ -1,9 +1,9 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 16960
+// Function ID: 16961
 // Name: VibegrationsChangelogSheet
-// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 16958, 7449, 7396, 1119, 3682, 6863, 4754, 4442, 4352, 2]
+// Dependencies: [19, 17, 21, 4758, 580, 558, 568, 1616, 16959, 7449, 7396, 1119, 3682, 6863, 4754, 4442, 4352, 2]
 
-// Module 16959 (VibegrationsChangelogSheet)
+// Module 16960 (VibegrationsChangelogSheet)
 import nativeDefault from "native" /* 580 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1616 */;
 import _modDef3682 from "module_3682" /* 3682 */;
@@ -74,7 +74,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   let obj = entry(568);
-  const result = entry(16958).allVibegrationsChangelog("mobile");
+  const result = entry(16959).allVibegrationsChangelog("mobile");
   const ActionSheet = tmp(7449).ActionSheet;
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { title: null };

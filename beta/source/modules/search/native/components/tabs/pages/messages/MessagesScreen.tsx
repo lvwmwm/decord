@@ -1,11 +1,11 @@
-// Module ID: 17187
-// Function ID: 17188
+// Module ID: 17188
+// Function ID: 17189
 // Name: MessagesScreen
-// Dependencies: [19, 12487, 8127, 21, 17171, 504, 17115, 17173, 17188, 17172, 17177, 17163, 17122, 2]
+// Dependencies: [19, 12487, 8127, 21, 17172, 504, 17116, 17174, 17189, 17173, 17178, 17164, 17123, 2]
 
-// Module 17187 (MessagesScreen)
-import BaseMessagesScreen from "BaseMessagesScreen" /* 17173 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 17188 */;
+// Module 17188 (MessagesScreen)
+import BaseMessagesScreen from "BaseMessagesScreen" /* 17174 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 17189 */;
 import noop from "module_19" /* 19 */;
 import SearchQueryStore from "SearchQueryStore" /* 12487 */;
 

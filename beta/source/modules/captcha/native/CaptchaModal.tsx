@@ -1,9 +1,9 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17709
+// Function ID: 17710
 // Name: CaptchaModal
-// Dependencies: [19, 17, 16280, 16281, 21, 4758, 558, 568, 7185, 1489, 17709, 5084, 17710, 16288, 5907, 1119, 4754, 5188, 7397, 5186, 2]
+// Dependencies: [19, 17, 16280, 16281, 21, 4758, 558, 568, 7185, 1489, 17710, 5084, 17711, 16288, 5907, 1119, 4754, 5188, 7397, 5186, 2]
 
-// Module 17708 (CaptchaModal)
+// Module 17709 (CaptchaModal)
 import util from "util" /* 1119 */;
 import Link from "Link" /* 1489 */;
 import Text_Text from "Text/Text" /* 4754 */;
@@ -12,7 +12,7 @@ import Stack_Stack from "Stack/Stack" /* 5186 */;
 import components_Button_Button from "components/Button/Button" /* 5188 */;
 import native from "native" /* 5907 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 17710 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 17711 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -158,7 +158,7 @@ export default ReactCompilerGating.isReactCompilerEnabled() ? ((onCaptchaVerify)
     }
     return str;
   }, items);
-  closure_9 = onReject(17709)({ onReject, analyticsType: memo });
+  closure_9 = onReject(17710)({ onReject, analyticsType: memo });
   const effect = noop.useEffect(() => {
     closure_1_4.dismiss();
   }, []);

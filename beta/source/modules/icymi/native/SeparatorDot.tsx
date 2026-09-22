@@ -1,9 +1,9 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 16855
+// Function ID: 16856
 // Name: SeparatorDot
 // Dependencies: [19, 17, 21, 4758, 580, 558, 568, 2]
 
-// Module 16854 (SeparatorDot)
+// Module 16855 (SeparatorDot)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import noop from "module_19" /* 19 */;

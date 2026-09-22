@@ -1,9 +1,9 @@
-// Module ID: 17206
-// Function ID: 17207
+// Module ID: 17207
+// Function ID: 17208
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4400, 4401, 2045, 4939, 8125, 11221, 1078, 8126, 21, 4758, 12518, 580, 558, 568, 4462, 504, 1488, 1119, 10383, 8212, 8178, 12447, 12506, 4968, 7299, 11219, 10630, 7625, 17207, 4471, 4497, 4759, 17099, 4762, 11732, 5843, 5341, 2]
+// Dependencies: [19, 17, 4400, 4401, 2045, 4939, 8125, 11221, 1078, 8126, 21, 4758, 12518, 580, 558, 568, 4462, 504, 1488, 1119, 10383, 8212, 8178, 12447, 12506, 4968, 7299, 11219, 10630, 7625, 17208, 4471, 4497, 4759, 17100, 4762, 11732, 5843, 5341, 2]
 
-// Module 17206 (ChannelDetailsNavigationBar)
+// Module 17207 (ChannelDetailsNavigationBar)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;
@@ -16,7 +16,7 @@ import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /*
 import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11732 */;
 import useSearchContext from "useSearchContext" /* 12447 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12506 */;
-import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17207 */;
+import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17208 */;
 import noop from "module_19" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4400 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4401 */;
@@ -450,7 +450,7 @@ let closure_27 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
     obj8.onSuggestionsLayoutMesure = onSuggestionsLayoutMeasure;
     obj8.suggestionsDismissed = suggestionsDismissed;
     obj8.setSuggestionsDismissed = setSuggestionsDismissed;
-    const tmp11 = closure_15(cleanUp(17099), obj8);
+    const tmp11 = closure_15(cleanUp(17100), obj8);
     cResult[3] = channel.guild_id;
     cResult[4] = channel.id;
     cResult[5] = onSuggestionsLayoutMeasure;
@@ -505,7 +505,7 @@ let closure_27 = noop.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? 
   S.__workletHash = 14243423616139;
   S.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(S);
-  let obj3 = { style: null, children: closure_15(cleanUp(17099), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true }) };
+  let obj3 = { style: null, children: closure_15(cleanUp(17100), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true }) };
   const items = [tmp.searchHeader, animatedStyle];
   obj3.style = items;
   return closure_15(cleanUp(4497).View, obj3);

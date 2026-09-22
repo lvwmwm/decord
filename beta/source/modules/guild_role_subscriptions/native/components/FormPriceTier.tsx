@@ -1,10 +1,10 @@
-// Module ID: 18232
-// Function ID: 18233
+// Module ID: 18233
+// Function ID: 18234
 // Name: FormPriceTier
-// Dependencies: [19, 18191, 1078, 21, 1119, 14167, 7481, 38, 4725, 9536, 1984, 2]
+// Dependencies: [19, 18192, 1078, 21, 1119, 14167, 7481, 38, 4725, 9536, 1984, 2]
 // Exports: default
 
-// Module 18232 (FormPriceTier)
+// Module 18233 (FormPriceTier)
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1119 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1984 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4725
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const RoleTierEditStore = fn(18191);
+const RoleTierEditStore = fn(18192);
 ({ LoadingState: c3, usePriceTiersAvailableInGuild: closure_4 } = RoleTierEditStore);
 const CurrencyCodes = fn(1078).CurrencyCodes;
 const jsx = fn(21).jsx;

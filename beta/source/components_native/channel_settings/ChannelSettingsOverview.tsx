@@ -1,9 +1,9 @@
-// Module ID: 17280
-// Function ID: 17281
+// Module ID: 17281
+// Function ID: 17282
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 4401, 2049, 2063, 10631, 2045, 2100, 2067, 4399, 4773, 17281, 4409, 1376, 17282, 1078, 2052, 7517, 1118, 1089, 21, 4758, 580, 558, 568, 504, 11260, 4471, 12, 17283, 4938, 1119, 5839, 8112, 10630, 4458, 9617, 9804, 7518, 4413, 1389, 4610, 17284, 9803, 5111, 4754, 9833, 4911, 5207, 4617, 4659, 17285, 6846, 7332, 1368, 5903, 7446, 4968, 5824, 14461, 17286, 9418, 4406, 9805, 17287, 5901, 5900, 2054, 2056, 2112, 4903, 5822, 7513, 9818, 9852, 11542, 4700, 2055, 17288, 7340, 11238, 15221, 10286, 8012, 4720, 4710, 5315, 11262, 4698, 4715, 5186, 11536, 8178, 9144, 5341, 16493, 8876, 1488, 2]
+// Dependencies: [5, 19, 17, 4401, 2049, 2063, 10631, 2045, 2100, 2067, 4399, 4773, 17282, 4409, 1376, 17283, 1078, 2052, 7517, 1118, 1089, 21, 4758, 580, 558, 568, 504, 11260, 4471, 12, 17284, 4938, 1119, 5839, 8112, 10630, 4458, 9617, 9804, 7518, 4413, 1389, 4610, 17285, 9803, 5111, 4754, 9833, 4911, 5207, 4617, 4659, 17286, 6846, 7332, 1368, 5903, 7446, 4968, 5824, 14461, 17287, 9418, 4406, 9805, 17288, 5901, 5900, 2054, 2056, 2112, 4903, 5822, 7513, 9818, 9852, 11542, 4700, 2055, 17289, 7340, 11238, 15221, 10286, 8012, 4720, 4710, 5315, 11262, 4698, 4715, 5186, 11536, 8178, 9144, 5341, 16493, 8876, 1488, 2]
 
-// Module 17280 (ChannelSettingsOverview)
+// Module 17281 (ChannelSettingsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 580 */;
 import util from "util" /* 1119 */;
@@ -40,11 +40,11 @@ import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11262 */;
 import AvailableForumTagDefault from "AvailableForumTag" /* 11536 */;
 import threadActionSheets from "threadActionSheets" /* 11542 */;
 import Slider from "Slider" /* 14461 */;
-import RegionActionCreatorsDefault from "RegionActionCreators" /* 17283 */;
-import SecondsSliderUtils from "SecondsSliderUtils" /* 17284 */;
-import ChannelSettingsUtils from "ChannelSettingsUtils" /* 17285 */;
-import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 17286 */;
-import getCannotSwapApplicationTextDefault from "getCannotSwapApplicationText" /* 17287 */;
+import RegionActionCreatorsDefault from "RegionActionCreators" /* 17284 */;
+import SecondsSliderUtils from "SecondsSliderUtils" /* 17285 */;
+import ChannelSettingsUtils from "ChannelSettingsUtils" /* 17286 */;
+import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 17287 */;
+import getCannotSwapApplicationTextDefault from "getCannotSwapApplicationText" /* 17288 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4401 */;
@@ -54,7 +54,7 @@ import GuildChannelStore from "GuildChannelStore" /* 2100 */;
 import GuildStore from "GuildStore" /* 2067 */;
 import PermissionStore from "PermissionStore" /* 4399 */;
 import ReadStateStore from "ReadStateStore" /* 4773 */;
-import RegionStore from "RegionStore" /* 17281 */;
+import RegionStore from "RegionStore" /* 17282 */;
 import RelationshipStore from "RelationshipStore" /* 4409 */;
 import UserStore from "UserStore" /* 1376 */;
 
@@ -65,7 +65,7 @@ const View = fn(17).View;
 const ChannelRecord = fn(2049);
 ({ EDITABLE_VOICE_SETTINGS_TYPES: closure_7, isGuildTextChannelType: closure_8, THREADED_CHANNEL_TYPES: closure_9, THREAD_CHANNEL_TYPES: c10, SLOWMODE_CHANNEL_TYPES: closure_11, NSFW_CHANNEL_TYPES: closure_12, TOGGLE_ANNOUNCEMENT_CHANNEL_TYPES: map1, GUILD_WEBHOOK_CHANNEL_TYPES: closure_14 } = ChannelRecord);
 const isGuildNSFW = fn(2063).isGuildNSFW;
-let closure_25 = fn(17282).ChannelSettingsAutoFocusElement;
+let closure_25 = fn(17283).ChannelSettingsAutoFocusElement;
 const Constants = fn(1078);
 ({ AnalyticEvents: closure_26, BITRATE_DEFAULT: closure_27, BITRATE_MIN: closure_28, ChannelSettingsSections: closure_29, ChannelTypes: closure_30, ChannelTypesSets: items, GuildFeatures: closure_32, GuildSettingsSections: closure_33, HelpdeskArticles: closure_34, MAX_CHANNEL_NAME_LENGTH: closure_35, MAX_VOICE_USER_LIMIT: closure_36, MAX_STAGE_VOICE_USER_LIMIT: closure_37, Permissions: closure_38, SettingsPaneTypes: closure_39, SLOWMODE_VALUES: closure_40, VideoQualityMode: closure_41 } = Constants);
 const ChannelConstants = fn(2052);
@@ -818,7 +818,7 @@ prototype["renderAutoArchiveDuration"] = function renderAutoArchiveDuration() {
       obj.selected = autoArchiveDuration;
       obj.channel = channel;
       obj.onSelectDuration = this.handleAutoArchiveDurationChange;
-      return closure_1_47(tmp5(17286).AutoArchiveDurationOptions, obj);
+      return closure_1_47(tmp5(17287).AutoArchiveDurationOptions, obj);
     }
   }
   return null;
@@ -1297,7 +1297,7 @@ prototype["renderDefaultForumLayout"] = function renderDefaultForumLayout() {
     const obj4 = { text: stringResult };
     obj3.trailing = closure_47(self(5822).TableRow.TrailingText, obj4);
     if (channel.defaultForumLayout === GridSquareIcon(2055).ForumLayout.GRID) {
-      GridSquareIcon = GridSquareIcon(17288).GridSquareIcon;
+      GridSquareIcon = GridSquareIcon(17289).GridSquareIcon;
       obj = {};
       let tmpResult = tmp(GridSquareIcon, obj);
     } else {

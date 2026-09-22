@@ -1,9 +1,9 @@
-// Module ID: 16888
-// Function ID: 16889
+// Module ID: 16889
+// Function ID: 16890
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [19, 4393, 1078, 558, 568, 15472, 16889, 504, 1105, 7409, 1245, 4938, 2]
+// Dependencies: [19, 4393, 1078, 558, 568, 15472, 16890, 504, 1105, 7409, 1245, 4938, 2]
 
-// Module 16888 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 16889 (useTrackRoleSubscriptionUpsellAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1245 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4938 */;
 import noop from "module_19" /* 19 */;

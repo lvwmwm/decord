@@ -1,15 +1,15 @@
-// Module ID: 18315
-// Function ID: 18316
+// Module ID: 18316
+// Function ID: 18317
 // Name: go_live/ApplicationStreamingManager
-// Dependencies: [4780, 502, 2045, 4678, 4808, 2099, 4797, 1376, 4800, 1078, 12, 4900, 1095, 4810, 2040, 577, 7365, 9681, 18295, 2]
+// Dependencies: [4780, 502, 2045, 4678, 4808, 2099, 4797, 1376, 4800, 1078, 12, 4900, 1095, 4810, 2040, 577, 7365, 9681, 18296, 2]
 
-// Module 18315 (go_live/ApplicationStreamingManager)
+// Module 18316 (go_live/ApplicationStreamingManager)
 import DispatcherDefault from "Dispatcher" /* 577 */;
 import DurationsDefault from "Durations" /* 1095 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 4810 */;
 import StreamActionCreators from "StreamActionCreators" /* 4900 */;
 import AVError from "AVError" /* 9681 */;
-import AVErrorContext from "AVErrorContext" /* 18295 */;
+import AVErrorContext from "AVErrorContext" /* 18296 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4780 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2045 */;

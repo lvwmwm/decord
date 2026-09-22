@@ -1,9 +1,9 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16747
+// Function ID: 16748
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 11782, 21, 9092, 16747, 4758, 580, 558, 568, 4693, 4462, 5194, 8109, 4720, 11833, 504, 8103, 8098, 8101, 7429, 8108, 1119, 8178, 2]
+// Dependencies: [19, 17, 11782, 21, 9092, 16748, 4758, 580, 558, 568, 4693, 4462, 5194, 8109, 4720, 11833, 504, 8103, 8098, 8101, 7429, 8108, 1119, 8178, 2]
 
-// Module 16746 (ForLaterOpenActionButton)
+// Module 16747 (ForLaterOpenActionButton)
 import c from "c" /* 568 */;
 import nativeDefault from "native" /* 580 */;
 import useToken from "useToken" /* 4462 */;
@@ -22,10 +22,10 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const point = { shape: fn(9092).CutoutShape.Circle, x: fn(16747).ICON_SIZE.sm - 7, y: fn(16747).ICON_SIZE.sm - 8, size: 10 };
+const point = { shape: fn(9092).CutoutShape.Circle, x: fn(16748).ICON_SIZE.sm - 7, y: fn(16748).ICON_SIZE.sm - 8, size: 10 };
 const createStyles = fn(4758);
 let obj = { container: { aspectRatio: 1, alignItems: "center", justifyContent: "center", position: "relative" }, iconAnchor: null, dot: null };
-let size = { width: fn(16747).ICON_SIZE.sm, height: fn(16747).ICON_SIZE.sm, position: "relative" };
+let size = { width: fn(16748).ICON_SIZE.sm, height: fn(16748).ICON_SIZE.sm, position: "relative" };
 obj.iconAnchor = size;
 const size1 = { position: "absolute", height: 6.5, width: 6.5, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, borderRadius: nativeDefault.radii.lg, right: -2, bottom: -0.5 };
 obj.dot = size1;
