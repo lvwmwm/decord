@@ -1,22 +1,22 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12902
+// Function ID: 12903
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4748, 2041, 12213, 12214, 1074, 12215, 21, 4492, 1177, 4752, 12, 8728, 4756, 576, 5658, 504, 4457, 5803, 1115, 4757, 5287, 10507, 12899, 7226, 12661, 5171, 5180, 1110, 12128, 9727, 12514, 12900, 8179, 4714, 12509, 12492, 4700, 10262, 2]
+// Dependencies: [32, 19, 17, 4749, 2042, 12217, 12218, 1074, 12219, 21, 4493, 1177, 4753, 12, 8732, 4757, 576, 5660, 504, 4458, 5805, 1115, 4758, 5289, 10513, 12903, 7228, 12665, 5172, 5181, 1110, 12132, 9733, 12518, 12904, 8183, 4715, 12513, 12496, 4701, 10268, 2]
 
-// Module 12898 (VoiceMessageOverlay)
+// Module 12902 (VoiceMessageOverlay)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5180 */;
-import LegacyTokens from "LegacyTokens" /* 5658 */;
-import useRefValueDefault from "useRefValue" /* 5803 */;
-import inlineStyles from "inlineStyles" /* 8728 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5181 */;
+import LegacyTokens from "LegacyTokens" /* 5660 */;
+import useRefValueDefault from "useRefValue" /* 5805 */;
+import inlineStyles from "inlineStyles" /* 8732 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import apply from "module_12" /* 12 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -235,20 +235,20 @@ function LockPill(safeAreaBottom) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, AppState: metroRequire } = get_ActivityIndicator);
-const useVoiceMessagesUIStore = fn(12213).useVoiceMessagesUIStore;
-const VoiceMessageAnimationState = fn(12214).VoiceMessageAnimationState;
+const useVoiceMessagesUIStore = fn(12217).useVoiceMessagesUIStore;
+const VoiceMessageAnimationState = fn(12218).VoiceMessageAnimationState;
 const ComponentActionsKeyed = fn(1074).ComponentActionsKeyed;
-const CHAT_INPUT_HEIGHT = fn(12215).CHAT_INPUT_HEIGHT;
+const CHAT_INPUT_HEIGHT = fn(12219).CHAT_INPUT_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
 let ReanimatedRexport = ReanimatedRexport_mod;
 let closure_16 = ReanimatedRexport.createAnimatedComponent(fn(1177).Icon);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_17 = ReanimatedRexport.createAnimatedComponent(fn(4752).Text);
+let closure_17 = ReanimatedRexport.createAnimatedComponent(fn(4753).Text);
 let closure_18 = apply.memoize(() => ReanimatedRexport.createAnimatedComponent(inlineStyles.Ellipse));
 let c19 = 68;
 let c20 = 56;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_21 = createStyles.createStyles(() => {
   const obj = { innerContainer: { flexDirection: "row", alignItems: "flex-end", paddingTop: 8, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_HORIZONTAL, paddingBottom: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_BOTTOM }, contentContainer: { position: "absolute", bottom: 0, width: "100%", alignItems: "center", overflow: "hidden" }, contentContainerFloating: { justifyContent: "flex-end", overflow: "visible" }, floatingSendButton: null, floatingSendButtonActive: null, floatingSendButtonIconActive: null, voiceChatContainer: null, lockContainer: null, lockParentContainer: null, chevon: null };
   const size = { width: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH, height: nativeDefault.modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT };
@@ -412,9 +412,9 @@ let closure_44 = noop.memo((channelId) => {
       const result = ref.set(timing.withTiming(1, obj2));
       const _performance = performance;
       if (performance.now() - _undefined.current < 500) {
-        const obj3 = { easing: tmp2(4492).Easing.quad, duration: 250 };
-        const result1 = sharedValue.set(tmp2(4757).withTiming(1, obj3));
-        const tmp2Result = tmp2(4757);
+        const obj3 = { easing: tmp2(4493).Easing.quad, duration: 250 };
+        const result1 = sharedValue.set(tmp2(4758).withTiming(1, obj3));
+        const tmp2Result = tmp2(4758);
       }
     }
   }, items2);

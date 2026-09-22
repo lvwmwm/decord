@@ -1,12 +1,12 @@
-// Module ID: 9752
-// Function ID: 9753
+// Module ID: 9758
+// Function ID: 9759
 // Name: GuildScheduledEventUtils
-// Dependencies: [2047, 4348, 11, 2]
+// Dependencies: [2048, 4348, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 9752 (GuildScheduledEventUtils)
+// Module 9758 (GuildScheduledEventUtils)
 import _modDef4348 from "module_4348" /* 4348 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2047 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2048 */;
 import size from "module_2" /* 2 */;
 
 ({ UpcomingGuildEventNoticeTypes: c2, NEW_EVENT_WINDOW_MILLISECONDS: c3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: closure_4, ACKED_RECENTLY_WINDOW_DAYS: hasOwnProperty } = GuildScheduledEventsConstants);

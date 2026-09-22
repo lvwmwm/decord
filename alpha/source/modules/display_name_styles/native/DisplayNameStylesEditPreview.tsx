@@ -1,27 +1,27 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 15638
+// Function ID: 15639
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 8435, 1970, 11377, 1115, 2872, 11486, 8485, 8428, 504, 4438, 1177, 11160, 11161, 4752, 2]
+// Dependencies: [19, 17, 4749, 21, 4757, 576, 8439, 1970, 11381, 1115, 2872, 11490, 8489, 8432, 504, 4439, 1177, 11166, 11167, 4753, 2]
 // Exports: default
 
-// Module 15626 (DisplayNameStylesEditPreview)
+// Module 15638 (DisplayNameStylesEditPreview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import utils from "utils" /* 1970 */;
 import _modDef2872 from "module_2872" /* 2872 */;
-import DateUtils from "DateUtils" /* 4438 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8428 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8435 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8485 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11160 */;
-import types from "types" /* 11161 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11377 */;
-import NameplatePreview from "NameplatePreview" /* 11486 */;
+import DateUtils from "DateUtils" /* 4439 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8432 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8439 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8489 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11166 */;
+import types from "types" /* 11167 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11381 */;
+import NameplatePreview from "NameplatePreview" /* 11490 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
 function ChatPreview(arg0) {
@@ -64,7 +64,7 @@ function ChatPreview(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { previewSection: { marginBottom: nativeDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 }, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatUsername: null, chatTimestamp: null, chatMessageText: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
 obj2.chatPreviewWrapper = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };

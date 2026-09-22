@@ -1,10 +1,10 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8487
+// Function ID: 8488
 // Name: ShopThisLookMobileExperiment
 // Dependencies: [1434, 2]
 // Exports: useIsShopThisLookMobileEnabled
 
-// Module 8483 (ShopThisLookMobileExperiment)
+// Module 8487 (ShopThisLookMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

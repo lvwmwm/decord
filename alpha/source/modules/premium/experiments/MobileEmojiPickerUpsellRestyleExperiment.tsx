@@ -1,11 +1,11 @@
-// Module ID: 8100
-// Function ID: 8101
+// Module ID: 8103
+// Function ID: 8104
 // Name: MobileEmojiPickerUpsellRestyleExperiment
-// Dependencies: [1434, 8096, 2]
+// Dependencies: [1434, 8099, 2]
 // Exports: getMobileEmojiPickerUpsellRestyleEnabledForFeature, useMobileEmojiPickerUpsellRestyleEnabled
 
-// Module 8100 (MobileEmojiPickerUpsellRestyleExperiment)
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8096 */;
+// Module 8103 (MobileEmojiPickerUpsellRestyleExperiment)
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8099 */;
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 4616
-// Function ID: 4617
+// Module ID: 4617
+// Function ID: 4618
 // Name: useChatLayout
-// Dependencies: [19, 4617, 2]
+// Dependencies: [19, 4618, 2]
 // Exports: default, getChatLayout
 
-// Module 4616 (useChatLayout)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4617 */;
+// Module 4617 (useChatLayout)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4618 */;
 import noop from "module_19" /* 19 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;

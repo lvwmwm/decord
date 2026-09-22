@@ -1,16 +1,16 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 17082
+// Function ID: 17083
 // Name: VibegrationsDebugPrimitives
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 3678, 17067, 5186, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 4753, 1115, 3678, 17079, 5187, 2]
 // Exports: DebugMeter, DebugNote, DebugSection, DebugSnapshotToolbar, DebugStatRow
 
-// Module 17070 (VibegrationsDebugPrimitives)
+// Module 17082 (VibegrationsDebugPrimitives)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17067 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import VibegrationsDebugFormat from "VibegrationsDebugFormat" /* 17079 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { toolbar: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 }, toolbarStatus: { flex: 1 }, section: null, statRow: null, statRowHead: null, statLabel: null, statValue: null, meterTrack: null, meterFill: null, meterFillCritical: null };
 let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 };
 obj2.section = { gap: nativeDefault.space.PX_8 };

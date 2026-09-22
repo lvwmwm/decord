@@ -1,23 +1,23 @@
-// Module ID: 17841
-// Function ID: 17842
+// Module ID: 17853
+// Function ID: 17854
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 17842, 17843, 17844, 17845, 17846, 17847, 17848, 17849, 1115, 4756, 576, 4752, 5339, 5804, 2]
+// Dependencies: [19, 17, 21, 17854, 17855, 17856, 17857, 17858, 17859, 17860, 17861, 1115, 4757, 576, 4753, 5341, 5806, 2]
 // Exports: default
 
-// Module 17841 (PresetAvatarSelect)
+// Module 17853 (PresetAvatarSelect)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 17842 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 17843 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 17844 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 17845 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 17846 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 17847 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 17848 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 17849 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import Pressables from "Pressables" /* 5341 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 17854 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 17855 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 17856 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 17857 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 17858 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 17859 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 17860 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 17861 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -158,7 +158,7 @@ items1[7] = {
     return intl.string(util.t.zpfUeg);
   }
 };
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj10 = { container: { display: "flex", alignItems: "center", flex: 1 }, buttonsContainer: { display: "flex", flexDirection: "row", marginTop: 20, justifyContent: "space-between" }, defaultAvatarButton: null, defaultAvatarContainer: null, defaultAvatarSelected: null };
 let size = { height: 48, width: 48, borderRadius: nativeDefault.radii.xl };
 obj10.defaultAvatarButton = size;

@@ -1,37 +1,28 @@
 // Module ID: 13112
 // Function ID: 13113
-// Dependencies: [13078, 13050, 13077]
-// Exports: initAndBind, setCurrentClient
+// Dependencies: [13068, 13098]
+// Exports: createClientReportEnvelope
 
 // Module 13112
-import _mod13050 from "module_13050" /* 13050 */;
-import _mod13077 from "module_13077" /* 13077 */;
-import _mod13078 from "module_13078" /* 13078 */;
+import _mod13068 from "module_13068" /* 13068 */;
+import _mod13098 from "module_13098" /* 13098 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export const initAndBind = function initAndBind(arg0, debug) {
-  if (true === debug.debug) {
-    const obj = _mod13050;
-    if (_mod13078.DEBUG_BUILD) {
-      const logger = obj.logger;
-      logger.enable();
-    } else {
-      obj.consoleSandbox(() => {
-        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
-      });
-    }
+export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let result = arg2;
+  const items = [{ type: "client_report" }, ];
+  if (!arg2) {
+    result = _mod13068.dateTimestampInSeconds();
   }
-  const currentScope = _mod13077.getCurrentScope();
-  currentScope.update(debug.initialScope);
-  const obj4 = new arg0(debug);
-  const currentScope1 = _mod13077.getCurrentScope();
-  currentScope1.setClient(obj4);
-  obj4.init();
-  return obj4;
-};
-export const setCurrentClient = function setCurrentClient(arg0) {
-  const currentScope = _mod13077.getCurrentScope();
-  currentScope.setClient(arg0);
+  items[1] = { timestamp: result, discarded_events };
+  if (dsn) {
+    const obj3 = { dsn };
+    let obj4 = obj3;
+  } else {
+    obj4 = {};
+  }
+  const items1 = [items];
+  return _mod13098.createEnvelope(obj4, items1);
 };

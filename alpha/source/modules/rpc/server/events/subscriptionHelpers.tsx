@@ -1,24 +1,24 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 14790
+// Function ID: 14791
 // Name: subscriptionHelpers
-// Dependencies: [2040, 9313, 7939, 4660, 1074, 2004, 9314, 9592, 5342, 14744, 7960, 2]
+// Dependencies: [2041, 9318, 7942, 4661, 1074, 2004, 9319, 9598, 5344, 14750, 7963, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 14784 (subscriptionHelpers)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5342 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7960 */;
-import useThermalState from "useThermalState" /* 9592 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14744 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import FramesStore from "FramesStore" /* 9313 */;
-import QuestStore from "QuestStore" /* 7939 */;
+// Module 14790 (subscriptionHelpers)
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5344 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7963 */;
+import useThermalState from "useThermalState" /* 9598 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14750 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
+import FramesStore from "FramesStore" /* 9318 */;
+import QuestStore from "QuestStore" /* 7942 */;
 
 require = fn;
-const TransportTypes = fn(4660).TransportTypes;
+const TransportTypes = fn(4661).TransportTypes;
 const RPCEvents = fn(1074).RPCEvents;
 const Constants = fn(2004);
 ({ ActivityLayoutMode: closure_7, ActivityScreenOrientation: closure_8 } = Constants);
-const asLaunched = fn(9314).asLaunched;
+const asLaunched = fn(9319).asLaunched;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 

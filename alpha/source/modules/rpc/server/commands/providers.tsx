@@ -1,15 +1,15 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14777
+// Function ID: 14778
 // Name: providers
-// Dependencies: [5, 5498, 4660, 1074, 2004, 1085, 9584, 9586, 5500, 9581, 573, 1110, 9341, 5623, 2]
+// Dependencies: [5, 5500, 4661, 1074, 2004, 1085, 9590, 9592, 5502, 9587, 573, 1110, 9347, 5625, 2]
 
-// Module 14771 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9584 */;
+// Module 14777 (providers)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9590 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
 
 const require = fn;
-let Constants = fn(4660);
+let Constants = fn(4661);
 ({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = fn(1074);
 ({ AnalyticsLocations: metroRequire, ComponentActions: closure_7, PlatformTypes: closure_8 } = Constants);
@@ -39,16 +39,16 @@ obj2 = {
     let obj = require("RPCHelpers");
     let obj2 = require("RPCHelpers");
     const validateApplicationResult = require("RPCHelpers").validateApplication(socket.application);
-    value = connection_redirect(5500).get(provider);
+    value = connection_redirect(5502).get(provider);
     dependencyMap = value;
     if (null == value) {
       const obj4 = { errorCode: constants2.INVALID_PROVIDER };
       const _HermesInternal = HermesInternal;
-      const tmp4Result1 = new tmp4(9581)(obj4, "Platform not found for provider \"" + provider + "\"");
+      const tmp4Result1 = new tmp4(9587)(obj4, "Platform not found for provider \"" + provider + "\"");
       throw tmp4Result1;
     } else if (provider !== constants.AMAZON_MUSIC) {
       let obj5 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      const tmp22 = new tmp4(9581)(obj5, "Command not available for this application");
+      const tmp22 = new tmp4(9587)(obj5, "Command not available for this application");
       throw tmp22;
     } else if (set.has(validateApplicationResult)) {
       _require = asyncGeneratorStep(async (arg0, successRedirect) => {
@@ -108,9 +108,9 @@ obj2 = {
                     closure_130_3 = handleConnectionsUpdate;
                     function handleConnectionsCallbackError() {
                       const obj = { errorCode: closure_3_9.OAUTH2_ERROR };
-                      const tmp = connection_redirect(9581);
-                      successRedirect(new connection_redirect(9581)({ errorCode: closure_3_9.OAUTH2_ERROR }, "OAuth2 setup for \"" + closure_0 + "\" failed"));
-                      const tmp2 = new connection_redirect(9581)({ errorCode: closure_3_9.OAUTH2_ERROR }, "OAuth2 setup for \"" + closure_0 + "\" failed");
+                      const tmp = connection_redirect(9587);
+                      successRedirect(new connection_redirect(9587)({ errorCode: closure_3_9.OAUTH2_ERROR }, "OAuth2 setup for \"" + closure_0 + "\" failed"));
+                      const tmp2 = new connection_redirect(9587)({ errorCode: closure_3_9.OAUTH2_ERROR }, "OAuth2 setup for \"" + closure_0 + "\" failed");
                       connection_redirect(573).unsubscribe("USER_CONNECTIONS_UPDATE", closure_1_3);
                       const ComponentDispatch = closure_0(1110).ComponentDispatch;
                       ComponentDispatch.unsubscribe(constants2.CONNECTIONS_CALLBACK_ERROR, closure_1_4);
@@ -180,10 +180,10 @@ obj2 = {
       return promise;
     } else {
       let obj6 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      const tmp10 = new tmp4(9581)(obj6, "Command not available for this application");
+      const tmp10 = new tmp4(9587)(obj6, "Command not available for this application");
       throw tmp10;
     }
-    let obj3 = connection_redirect(5500);
+    let obj3 = connection_redirect(5502);
   }
 };
 const items1 = [RPC_AUTHENTICATED_SCOPE];
@@ -238,7 +238,7 @@ let closure_3 = asyncGeneratorStep(async (arg0, value) => {
           closure_129_5 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

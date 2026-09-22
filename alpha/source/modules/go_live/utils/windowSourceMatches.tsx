@@ -1,10 +1,10 @@
-// Module ID: 14097
-// Function ID: 14098
+// Module ID: 14104
+// Function ID: 14105
 // Name: windowSourceMatches
 // Dependencies: [32, 2]
 // Exports: default
 
-// Module 14097 (windowSourceMatches)
+// Module 14104 (windowSourceMatches)
 import _slicedToArray from "module_32" /* 32 */;
 
 const size = fn(2);

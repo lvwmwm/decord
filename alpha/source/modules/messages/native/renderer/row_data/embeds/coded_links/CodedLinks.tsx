@@ -1,19 +1,19 @@
-// Module ID: 13510
-// Function ID: 13511
+// Module ID: 13518
+// Function ID: 13519
 // Name: CodedLinks
-// Dependencies: [32, 4396, 2063, 1372, 7926, 12193, 4744, 13511, 13512, 13522, 13524, 13517, 13526, 13519, 11734, 12061, 11782, 13527, 1370, 2]
+// Dependencies: [32, 4397, 2064, 1372, 7929, 12197, 4745, 13519, 13520, 13530, 13532, 13525, 13534, 13527, 11738, 12065, 13242, 11786, 13535, 1370, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 13510 (CodedLinks)
-import ApplicationCodedLink from "ApplicationCodedLink" /* 7926 */;
+// Module 13518 (CodedLinks)
+import ApplicationCodedLink from "ApplicationCodedLink" /* 7929 */;
 import _slicedToArray from "module_32" /* 32 */;
-import LurkingStore from "LurkingStore" /* 4396 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import LurkingStore from "LurkingStore" /* 4397 */;
+import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
+let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");
 
 export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, message2, channel, forcedTheme) {
   closure_1 = channel;
@@ -29,12 +29,12 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
             return null;
           } else {
             if (tmpResult.isApplicationCodedLinkMobileSupported(type)) {
-              const applicationCodedLinkData = tmp(7926).getApplicationCodedLinkData(type, code, url);
+              const applicationCodedLinkData = tmp(7929).getApplicationCodedLinkData(type, code, url);
               if (null == applicationCodedLinkData) {
                 return null;
               } else {
-                const obj2 = { appId: applicationCodedLinkData.applicationId, channel: tmp34, message, theme };
-                const appLinkGateResult = tmp(12193).getAppLinkGateResult(obj2);
+                const obj2 = { appId: applicationCodedLinkData.applicationId, channel: tmp27, message, theme };
+                const appLinkGateResult = tmp(12197).getAppLinkGateResult(obj2);
                 if ("unavailable" === appLinkGateResult.state) {
                   return null;
                 } else if ("blocked" === appLinkGateResult.state) {
@@ -42,34 +42,34 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                 } else {
                   const app = appLinkGateResult.app;
                   const type2 = applicationCodedLinkData.type;
-                  if (tmp(4744).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
-                    const obj3 = { theme: tmp38, embedUrl: url, message: tmp37, app, params: applicationCodedLinkData.params };
-                    return tmp(13511).createActivityMessageEmbed(obj3);
+                  if (tmp(4745).CodedLinkType.ACTIVITY_BOOKMARK === type2) {
+                    const obj3 = { theme: tmp32, embedUrl: url, message: tmp31, app, params: applicationCodedLinkData.params };
+                    return tmp(13519).createActivityMessageEmbed(obj3);
                   } else {
-                    if (tmp(4744).CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
-                      if (tmp(4744).CodedLinkType.APP_OAUTH2_LINK !== type2) {
+                    if (tmp(4745).CodedLinkType.APP_DIRECTORY_PROFILE !== type2) {
+                      if (tmp(4745).CodedLinkType.APP_OAUTH2_LINK !== type2) {
                         return null;
                       }
                     }
-                    const obj4 = { theme: tmp38, embedUrl: url, message: tmp37, app };
-                    return tmp(12193).createAppMessageEmbed(obj4);
+                    const obj4 = { theme: tmp32, embedUrl: url, message: tmp31, app };
+                    return tmp(12197).createAppMessageEmbed(obj4);
                   }
                 }
-                const tmpResult19 = tmp(12193);
+                const tmpResult19 = tmp(12197);
               }
-              const tmpResult18 = tmp(7926);
+              const tmpResult18 = tmp(7929);
             } else {
               return null;
             }
-            tmpResult = tmp(7926);
+            tmpResult = tmp(7929);
           }
-        } else if (tmp(4744).CodedLinkType.INVITE === type) {
-          return tmp(13512).createInviteEmbed(message, code, theme);
-        } else if (tmp(4744).CodedLinkType.TEMPLATE === type) {
-          return tmp(13522).createGuildTemplateEmbed(code, theme);
-        } else if (tmp(4744).CodedLinkType.BUILD_OVERRIDE === type) {
-          return tmp(13524).createBuildOverrideEmbed(code, theme);
-        } else if (tmp(4744).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
+        } else if (tmp(4745).CodedLinkType.INVITE === type) {
+          return tmp(13520).createInviteEmbed(message, code, theme);
+        } else if (tmp(4745).CodedLinkType.TEMPLATE === type) {
+          return tmp(13530).createGuildTemplateEmbed(code, theme);
+        } else if (tmp(4745).CodedLinkType.BUILD_OVERRIDE === type) {
+          return tmp(13532).createBuildOverrideEmbed(code, theme);
+        } else if (tmp(4745).CodedLinkType.MANUAL_BUILD_OVERRIDE === type) {
           currentUser = UserStore.getCurrentUser();
           let isStaffResult;
           if (currentUser != null) {
@@ -84,45 +84,45 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
             isStaffResult = isStaffPersonalResult;
           }
           if (!isStaffResult) {
-            let tmp26 = null != GuildStore.getGuild("943265993613008967");
-            if (tmp26) {
-              tmp26 = !LurkingStore.isLurking("943265993613008967");
+            let tmp19 = null != GuildStore.getGuild("943265993613008967");
+            if (tmp19) {
+              tmp19 = !LurkingStore.isLurking("943265993613008967");
             }
-            isStaffResult = tmp26;
+            isStaffResult = tmp19;
           }
           let buildOverrideEmbed = null;
           if (isStaffResult) {
-            buildOverrideEmbed = tmp(13524).createBuildOverrideEmbed(code, theme);
-            const tmpResult25 = tmp(13524);
+            buildOverrideEmbed = tmp(13532).createBuildOverrideEmbed(code, theme);
+            const tmpResult25 = tmp(13532);
           }
           return buildOverrideEmbed;
-        } else if (tmp(4744).CodedLinkType.EVENT === type) {
-          return tmp(13517).createGuildScheduledEventLinkEmbed(code, theme);
-        } else if (tmp(4744).CodedLinkType.CHANNEL_LINK === type) {
-          return tmp(13526).createVoiceChannelLinkEmbed(code, theme);
-        } else if (tmp(4744).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
+        } else if (tmp(4745).CodedLinkType.EVENT === type) {
+          return tmp(13525).createGuildScheduledEventLinkEmbed(code, theme);
+        } else if (tmp(4745).CodedLinkType.CHANNEL_LINK === type) {
+          return tmp(13534).createVoiceChannelLinkEmbed(code, theme);
+        } else if (tmp(4745).CodedLinkType.EMBEDDED_ACTIVITY_INVITE === type) {
           const obj5 = { theme, inviteCode: code };
-          return tmp(13519).createEmbeddedActivityInviteEmbed(obj5);
-        } else if (tmp(4744).CodedLinkType.EXPERIMENT === type) {
+          return tmp(13527).createEmbeddedActivityInviteEmbed(obj5);
+        } else if (tmp(4745).CodedLinkType.EXPERIMENT === type) {
           let experimentEmbed = null;
           if (tmpResult29.canSeeExperimentEmbeds()) {
-            experimentEmbed = tmp(12061).createExperimentEmbed(url, theme);
-            const tmpResult30 = tmp(12061);
+            experimentEmbed = tmp(12065).createExperimentEmbed(url, theme);
+            const tmpResult30 = tmp(12065);
           }
           return experimentEmbed;
         } else {
-          if (tmp(4744).CodedLinkType.GUILD_PRODUCT !== type) {
-            if (tmp(4744).CodedLinkType.SERVER_SHOP !== type) {
-              if (tmp(4744).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
-                if (tmp(4744).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
-                  if (tmp(4744).CodedLinkType.QUESTS_EMBED === type) {
+          if (tmp(4745).CodedLinkType.GUILD_PRODUCT !== type) {
+            if (tmp(4745).CodedLinkType.SERVER_SHOP !== type) {
+              if (tmp(4745).CodedLinkType.SOCIAL_LAYER_STOREFRONT !== type) {
+                if (tmp(4745).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP !== type) {
+                  if (tmp(4745).CodedLinkType.QUESTS_EMBED === type) {
                     const obj6 = { theme, questId: code, currentUser };
-                    return tmp(13527).createQuestsEmbed(obj6);
+                    return tmp(13535).createQuestsEmbed(obj6);
                   } else {
-                    if (tmp(4744).CodedLinkType.COLLECTIBLES_SHOP !== type) {
-                      if (tmp(4744).CodedLinkType.GAME_PROFILE !== type) {
-                        if (tmp(4744).CodedLinkType.GAME_SERVER_SHARE !== type) {
-                          if (tmp(4744).CodedLinkType.USER_PROFILE !== type) {
+                    if (tmp(4745).CodedLinkType.COLLECTIBLES_SHOP !== type) {
+                      if (tmp(4745).CodedLinkType.GAME_PROFILE !== type) {
+                        if (tmp(4745).CodedLinkType.GAME_SERVER_SHARE !== type) {
+                          if (tmp(4745).CodedLinkType.USER_PROFILE !== type) {
                             return tmp(1370).assertNever(type);
                           }
                         }
@@ -132,23 +132,22 @@ export const createCodedLinkEmbeds = function createCodedLinkEmbeds(message, mes
                   }
                 }
               }
-              if (type === tmp(4744).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
-                [tmp13, tmp14] = code.split("-");
-                const tmp12 = _slicedToArray(code.split("-"), 2);
-                const obj7 = { skuId: tmp13, guildOrApplication: null, theme: null };
-                const obj8 = { type: "application", applicationId: tmp14 };
-                obj7.guildOrApplication = obj8;
-                obj7.theme = theme;
-                return tmp(11782).createSocialLayerStorefrontProductDetailsEmbed(obj7);
-              } else {
-                [tmp8, tmp9] = code.split("-");
-                const tmp7 = _slicedToArray(code.split("-"), 2);
-                const obj9 = { skuId: tmp8, guildOrApplication: null, theme: null };
-                const obj10 = { type: "guild", guildId: tmp9 };
-                obj9.guildOrApplication = obj10;
-                obj9.theme = theme;
-                return tmp(11782).createSocialLayerStorefrontProductDetailsEmbed(obj9);
+              const result = tmp(13242).parseStorefrontCodedLink(code);
+              if (null != result) {
+                if (result.skuIds.length <= 1) {
+                  const obj7 = { skuId: _slicedToArray(result.skuIds, 1)[0], guildOrApplication: null, theme: null };
+                  if (type === tmp(4745).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+                    const obj8 = { type: "application", applicationId: result.scopeId };
+                    let obj9 = obj8;
+                  } else {
+                    obj9 = { type: "guild", guildId: result.scopeId };
+                  }
+                  obj7.guildOrApplication = obj9;
+                  obj7.theme = theme;
+                  return tmp(11786).createSocialLayerStorefrontProductDetailsEmbed(obj7);
+                }
               }
+              return null;
             }
           }
           return null;

@@ -1,11 +1,11 @@
-// Module ID: 13822
-// Function ID: 13823
+// Module ID: 13830
+// Function ID: 13831
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 4348, 4438, 2]
+// Dependencies: [19, 4348, 4439, 2]
 // Exports: default
 
-// Module 13822 (useOutboundPromotionRedemptionEndDate)
-import DateUtils from "DateUtils" /* 4438 */;
+// Module 13830 (useOutboundPromotionRedemptionEndDate)
+import DateUtils from "DateUtils" /* 4439 */;
 import noop from "module_19" /* 19 */;
 import hooks from "module_4348" /* 4348 */;
 

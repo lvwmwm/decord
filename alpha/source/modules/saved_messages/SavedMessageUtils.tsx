@@ -1,16 +1,16 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11968
+// Function ID: 11969
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2045, 2041, 1074, 1115, 4348, 504, 4769, 7489, 2]
+// Dependencies: [5, 19, 2046, 2042, 1074, 1115, 4348, 504, 4770, 7491, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11964 (SavedMessageUtils)
+// Module 11968 (SavedMessageUtils)
 import util from "util" /* 1115 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4770 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 
 const require = globalThis.__r;
 
@@ -124,7 +124,7 @@ let closure_10 = async function _savedMessageJumpToMessage(arg0, arg1) {
     }
   })();
 };
-const UnknownChannelRecord = fn(2045).UnknownChannelRecord;
+const UnknownChannelRecord = fn(2046).UnknownChannelRecord;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_7, Routes: closure_8 } = Constants);
 const DueInStringTypes = { LONG: 0, [0]: "LONG", SHORT: 1, [1]: "SHORT" };

@@ -1,18 +1,18 @@
-// Module ID: 11607
-// Function ID: 11608
+// Module ID: 11611
+// Function ID: 11612
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 5494, 2041, 11608, 1074, 1091, 573, 1271, 4656, 12, 11610, 563, 2]
+// Dependencies: [5, 19, 5496, 2042, 11612, 1074, 1091, 573, 1271, 4657, 12, 11614, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 11607 (SummaryActionCreators)
+// Module 11611 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SummaryStore from "SummaryStore" /* 11608 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import SummaryStore from "SummaryStore" /* 11612 */;
 
 require = fn;
 function fetchSummary() {
@@ -480,7 +480,7 @@ let closure_18 = async function _fetchSummariesBulk(arg0, value) {
     flag2 = true;
   }
   closure_131_2 = flag2;
-  return "PX_16";
+  return "flex";
 };
 function useChannelSummaries(channelIds) {
   channelIds = channelIds.channelIds;

@@ -1,13 +1,13 @@
-// Module ID: 6038
-// Function ID: 6039
+// Module ID: 6040
+// Function ID: 6041
 // Name: BookIllocon
-// Dependencies: [21, 5804, 6039, 2]
+// Dependencies: [21, 5806, 6041, 2]
 // Exports: BookIllocon
 
-// Module 6038 (BookIllocon)
+// Module 6040 (BookIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6039 from "module_6039" /* 6039 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6041 from "module_6041" /* 6041 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const BookIllocon = function BookIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6039 };
+  const obj2 = { uri: _modDef6041 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

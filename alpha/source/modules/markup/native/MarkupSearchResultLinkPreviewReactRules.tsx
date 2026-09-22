@@ -1,11 +1,11 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 17163
+// Function ID: 17164
 // Name: MarkupSearchResultLinkPreviewReactRules
-// Dependencies: [10373, 2]
+// Dependencies: [10379, 2]
 // Exports: createSearchResultLinkPreviewReactRules
 
-// Module 17151 (MarkupSearchResultLinkPreviewReactRules)
-import MarkupMessagePreviewReactRules from "MarkupMessagePreviewReactRules" /* 10373 */;
+// Module 17163 (MarkupSearchResultLinkPreviewReactRules)
+import MarkupMessagePreviewReactRules from "MarkupMessagePreviewReactRules" /* 10379 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/native/MarkupSearchResultLinkPreviewReactRules.tsx");

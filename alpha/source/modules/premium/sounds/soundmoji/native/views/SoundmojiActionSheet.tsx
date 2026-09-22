@@ -1,19 +1,19 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12191
+// Function ID: 12192
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4756, 576, 1364, 5223, 7395, 7375, 12188, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 1364, 5224, 7397, 7377, 12192, 4753, 1115, 2]
 // Exports: default
 
-// Module 12187 (SoundmojiActionSheet)
+// Module 12191 (SoundmojiActionSheet)
 import nativeDefault from "native" /* 576 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5223 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5224 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 }, soundmojiContainer: { flexDirection: "row", alignItems: "center" }, emoji: null, textContainer: null };
 const PlatformUtils = fn(1364);
 let num;

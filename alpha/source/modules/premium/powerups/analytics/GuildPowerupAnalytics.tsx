@@ -1,10 +1,10 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12801
+// Function ID: 12802
 // Name: GuildPowerupAnalytics
 // Dependencies: [19, 1074, 1241, 2]
 // Exports: useLogPowerupModalOpened
 
-// Module 12797 (GuildPowerupAnalytics)
+// Module 12801 (GuildPowerupAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 13332
-// Function ID: 13333
+// Module ID: 13337
+// Function ID: 13338
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 4607, 5803, 563, 4492, 4757, 5185, 7225, 4752, 5804, 2]
+// Dependencies: [19, 17, 4749, 21, 4757, 576, 4608, 5805, 563, 4493, 4758, 5186, 7227, 4753, 5806, 2]
 // Exports: default
 
-// Module 13332 (GroupAvatar)
+// Module 13337 (GroupAvatar)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import timing from "timing" /* 4757 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7225 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import timing from "timing" /* 4758 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7227 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
 function AnimatedContainer(children) {
@@ -63,22 +63,22 @@ function AnimatedContainer(children) {
     if (stateFromStores) {
       let withSpringResult = sharedValue2.get();
     } else {
-      withSpringResult = tmp(5185).withSpring(sharedValue2.get(), closure_11);
-      const tmpResult = tmp(5185);
+      withSpringResult = tmp(5186).withSpring(sharedValue2.get(), closure_11);
+      const tmpResult = tmp(5186);
     }
     const items = [{ translateX: withSpringResult }, , ];
     if (stateFromStores) {
       let value3 = sharedValue1.get();
     } else {
-      value3 = tmp(5185).withSpring(sharedValue1.get(), closure_11);
-      const tmpResult3 = tmp(5185);
+      value3 = tmp(5186).withSpring(sharedValue1.get(), closure_11);
+      const tmpResult3 = tmp(5186);
     }
     items[1] = { translateY: value3 };
     if (stateFromStores) {
       let value4 = sharedValue3.get();
     } else {
-      value4 = tmp(5185).withSpring(sharedValue3.get(), closure_10);
-      const tmpResult4 = tmp(5185);
+      value4 = tmp(5186).withSpring(sharedValue3.get(), closure_10);
+      const tmpResult4 = tmp(5186);
     }
     items[2] = { scale: value4 };
     obj.transform = items;
@@ -142,7 +142,7 @@ const createElement = fn(19).createElement;
 let c9 = 38;
 const SPRING_OPTIONS_SCALE = { damping: 30, stiffness: 400 };
 const SPRING_OPTIONS_POSITION = { damping: 30, stiffness: 400 };
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_12 = createStyles.createStyles(() => {
   const obj = { groupContainer: { position: "relative" }, shadowContainer: { borderRadius: nativeDefault.radii.sm }, shadowContainerBackground: {}, shadowContainerBackgroundLight: { opacity: 0.4 }, shadowContainerBackgroundDark: { opacity: 0.15 }, gradientContainer: null, gradientDimOverlay: null, gradientImageBorder: null, avatarContainer: null, avatar: null, avatarWrapper: null, overflowCount: null };
   const size = { width: nativeDefault.modules.mobile.GROUP_AVATAR_SIZE, height: nativeDefault.modules.mobile.GROUP_AVATAR_SIZE, overflow: "hidden", borderRadius: nativeDefault.radii.sm };

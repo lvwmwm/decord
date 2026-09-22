@@ -1,19 +1,19 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16789
+// Function ID: 16790
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 4753, 1115, 2]
 // Exports: default
 
-// Module 16777 (ForYouSuggestedFriendsSectionHeader)
+// Module 16789 (ForYouSuggestedFriendsSectionHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
+import Text_Text from "Text/Text" /* 4753 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, noDivider: { borderTopWidth: 0, marginTop: 0 }, text: null };
 const obj3 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 obj2.text = { marginTop: nativeDefault.space.PX_16 };

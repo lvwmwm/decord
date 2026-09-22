@@ -1,7 +1,7 @@
 // Module ID: 6877
 // Function ID: 6878
 // Dependencies: [19, 6878]
-// Exports: useBottomSheetInternal
+// Exports: useBottomSheet
 
 // Module 6877
 import _mod19 from "module_19" /* 19 */;
@@ -9,12 +9,11 @@ import _mod6878 from "module_6878" /* 6878 */;
 
 const useContext = _mod19.useContext;
 
-export const useBottomSheetInternal = function useBottomSheetInternal(arg0) {
-  const tmp = useContext(_mod6878.BottomSheetInternalContext);
-  if (true !== arg0) {
-    if (null === tmp) {
-      throw "'useBottomSheetInternal' cannot be used out of the BottomSheet!";
-    }
+export const useBottomSheet = () => {
+  const tmp = useContext(_mod6878.BottomSheetContext);
+  if (null === tmp) {
+    throw "'useBottomSheet' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
   }
-  return tmp;
 };

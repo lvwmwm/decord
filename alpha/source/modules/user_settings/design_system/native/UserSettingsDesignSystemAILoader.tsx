@@ -1,14 +1,14 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16131
+// Function ID: 16132
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 4756, 4752, 5184, 5824, 14403, 2]
+// Dependencies: [19, 17, 21, 4757, 4753, 5185, 5826, 14409, 2]
 // Exports: default
 
-// Module 16119 (UserSettingsDesignSystemAILoader)
-import Text_Text from "Text/Text" /* 4752 */;
-import Stack_Stack from "Stack/Stack" /* 5184 */;
-import Card from "Card" /* 5824 */;
-import AILoader from "AILoader" /* 14403 */;
+// Module 16131 (UserSettingsDesignSystemAILoader)
+import Text_Text from "Text/Text" /* 4753 */;
+import Stack_Stack from "Stack/Stack" /* 5185 */;
+import Card from "Card" /* 5826 */;
+import AILoader from "AILoader" /* 14409 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_6 = createStyles.createStyles({ container: { padding: 16 }, row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } });
 let closure_7 = [12, 16, 24];
 let items = [{ color: "text-default", label: "text-default" }, { color: "text-subtle", label: "text-subtle" }];

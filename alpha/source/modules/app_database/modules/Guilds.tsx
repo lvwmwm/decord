@@ -1,21 +1,21 @@
-// Module ID: 7886
-// Function ID: 7887
+// Module ID: 7889
+// Function ID: 7890
 // Name: Guilds
-// Dependencies: [5, 2059, 502, 2105, 2099, 2063, 3, 2070, 2103, 2101, 2055, 2]
+// Dependencies: [5, 2060, 502, 2105, 2099, 2064, 3, 2071, 2103, 2101, 2056, 2]
 
-// Module 7886 (Guilds)
+// Module 7889 (Guilds)
 import LoggerDefault from "Logger" /* 3 */;
-import GuildRecordUtilsAll from "GuildRecordUtils" /* 2055 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import GuildRecordUtilsAll from "GuildRecordUtils" /* 2056 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2071 */;
 import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2101 */;
 import GuildRoleUtilsAll from "GuildRoleUtils" /* 2103 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
-const updateJoinedAt = fn(2059).updateJoinedAt;
+const updateJoinedAt = fn(2060).updateJoinedAt;
 let closure_9 = new LoggerDefault("Guilds");
 class Guilds {
   constructor() {
@@ -100,8 +100,8 @@ prototype["handleBackgroundSync"] = function handleBackgroundSync(arg0, arg1) {
           filterRoleDeletesResult = obj.fromServerArray(tmp2.id, tmp2.roles);
           tmp7 = importAll;
         }
-        let tmp7Result = tmp7(2055);
-        let tmp7Result3 = tmp7(2055);
+        let tmp7Result = tmp7(2056);
+        let tmp7Result3 = tmp7(2056);
         let fromBackgroundSyncResult = tmp7Result3.fromBackgroundSync(tmp2, tmp22);
         let tmp7Result4 = tmp7(2101);
         let result = tmp7Result4.toSerializedPartition(filterRoleDeletesResult);

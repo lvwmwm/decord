@@ -1,14 +1,14 @@
-// Module ID: 10489
-// Function ID: 10490
+// Module ID: 10495
+// Function ID: 10496
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 576, 4457, 672, 5198, 2]
+// Dependencies: [19, 17, 21, 576, 4458, 672, 5199, 2]
 // Exports: ExpressiveGradient
 
-// Module 10489 (ExpressiveGradient)
+// Module 10495 (ExpressiveGradient)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import useToken from "useToken" /* 4457 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import useToken from "useToken" /* 4458 */;
+import LinearGradientDefault from "LinearGradient" /* 5199 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

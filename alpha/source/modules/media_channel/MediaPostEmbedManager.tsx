@@ -1,16 +1,16 @@
-// Module ID: 18260
-// Function ID: 18261
+// Module ID: 18273
+// Function ID: 18274
 // Name: MediaPostEmbedManager
-// Dependencies: [2097, 502, 2105, 11689, 1074, 1096, 4904, 1385, 12130, 7363, 17828, 2]
+// Dependencies: [2097, 502, 2105, 11693, 1074, 1096, 4905, 1385, 12134, 7365, 17840, 2]
 
-// Module 18260 (MediaPostEmbedManager)
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4904 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17828 */;
+// Module 18273 (MediaPostEmbedManager)
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 4905 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17840 */;
 import GatedChannelStore from "GatedChannelStore" /* 2097 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11689 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 11693 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
 function resolveMediaPostEmbeds(embeds) {
@@ -80,7 +80,7 @@ function resolveMediaPostEmbeds(embeds) {
     });
   }
 }
-const FetchState = fn(11689).FetchState;
+const FetchState = fn(11693).FetchState;
 const MessageFlags = fn(1074).MessageFlags;
 const set = new Set();
 class MediaPostEmbedManager extends tmp7 {

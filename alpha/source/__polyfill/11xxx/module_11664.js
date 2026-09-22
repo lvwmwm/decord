@@ -1,9 +1,0 @@
-// Module ID: 11664
-// Function ID: 11665
-// Dependencies: [1121]
-
-// Module 11664
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "88df5c832b935fed96e52c66883efce1", name: "CircleXIcon", type: "png" });

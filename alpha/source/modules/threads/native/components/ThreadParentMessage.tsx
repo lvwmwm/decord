@@ -1,21 +1,21 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17102
+// Function ID: 17103
 // Name: ThreadParentMessage
-// Dependencies: [19, 7835, 4976, 21, 8190, 504, 5339, 1101, 8930, 2]
+// Dependencies: [19, 7838, 4977, 21, 8194, 504, 5341, 1101, 8935, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 17090 (ThreadParentMessage)
+// Module 17102 (ThreadParentMessage)
 import initialize from "initialize" /* 504 */;
 import router_utils from "router_utils" /* 1101 */;
-import Pressables from "Pressables" /* 5339 */;
-import RowGeneratorDefault from "RowGenerator" /* 8190 */;
-import ChatItemDefault from "ChatItem" /* 8930 */;
+import Pressables from "Pressables" /* 5341 */;
+import RowGeneratorDefault from "RowGenerator" /* 8194 */;
+import ChatItemDefault from "ChatItem" /* 8935 */;
 import noop from "module_19" /* 19 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7835 */;
-import MessageStore from "MessageStore" /* 4976 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7838 */;
+import MessageStore from "MessageStore" /* 4977 */;
 
 require = fn;
-const ReferencedMessageState = fn(7835).ReferencedMessageState;
+const ReferencedMessageState = fn(7838).ReferencedMessageState;
 const jsx = fn(21).jsx;
 let rowGenerator = new RowGeneratorDefault();
 rowGenerator.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: true, inlineEmbedMedia: true, renderReactions: false, renderReplies: true, renderThreadEmbeds: false });

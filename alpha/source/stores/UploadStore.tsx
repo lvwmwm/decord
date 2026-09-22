@@ -1,12 +1,12 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8083
+// Function ID: 8084
 // Name: UploadStore
-// Dependencies: [4976, 504, 573, 2]
+// Dependencies: [4977, 504, 573, 2]
 
-// Module 8080 (UploadStore)
+// Module 8083 (UploadStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import MessageStore from "MessageStore" /* 4976 */;
+import MessageStore from "MessageStore" /* 4977 */;
 
 const re1 = /^(assets-library|ph|file):\/\//;
 const re2 = /^content:\/\//;

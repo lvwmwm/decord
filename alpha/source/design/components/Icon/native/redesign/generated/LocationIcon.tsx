@@ -1,13 +1,13 @@
-// Module ID: 9800
-// Function ID: 9801
+// Module ID: 9806
+// Function ID: 9807
 // Name: LocationIcon
-// Dependencies: [19, 21, 576, 4456, 9801, 2]
+// Dependencies: [19, 21, 576, 4457, 9807, 2]
 // Exports: LocationIcon
 
-// Module 9800 (LocationIcon)
+// Module 9806 (LocationIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod9801 from "module_9801" /* 9801 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod9807 from "module_9807" /* 9807 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LocationIcon = function LocationIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9801, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9807, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

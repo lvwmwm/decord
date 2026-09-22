@@ -1,15 +1,15 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15598
+// Function ID: 15599
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [15535, 8233, 4379, 1248, 1115, 11725, 1364, 2]
+// Dependencies: [15546, 8237, 4379, 1248, 1115, 11729, 1364, 2]
 
-// Module 15587 (AndroidClassicChatFontScaleSetting)
+// Module 15598 (AndroidClassicChatFontScaleSetting)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import _mod4379 from "module_4379" /* 4379 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import FontScaleStore from "FontScaleStore" /* 15535 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+import SettingsConstants from "SettingsConstants" /* 8237 */;
+import FontScaleStore from "FontScaleStore" /* 15546 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

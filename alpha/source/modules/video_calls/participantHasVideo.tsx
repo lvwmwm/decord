@@ -1,10 +1,10 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9716
+// Function ID: 9717
 // Name: participantHasVideo
-// Dependencies: [502, 1992, 4777, 4781, 504, 2]
+// Dependencies: [502, 1992, 4778, 4782, 504, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 9710 (participantHasVideo)
+// Module 9716 (participantHasVideo)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
@@ -57,9 +57,9 @@ function canRenderParticipantVideo(participant, MediaEngineStore) {
   }
   return tmp;
 }
-const CallConstants = fn(4777);
+const CallConstants = fn(4778);
 ({ ParticipantTypes: closure_4, isStreamParticipant: hasOwnProperty, isUserParticipant: metroRequire } = CallConstants);
-const Features = fn(4781).Features;
+const Features = fn(4782).Features;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/participantHasVideo.tsx");
 

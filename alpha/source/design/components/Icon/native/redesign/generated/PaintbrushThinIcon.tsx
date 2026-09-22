@@ -1,13 +1,13 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16832
+// Function ID: 16833
 // Name: PaintbrushThinIcon
-// Dependencies: [19, 21, 576, 4456, 16821, 2]
+// Dependencies: [19, 21, 576, 4457, 16833, 2]
 // Exports: PaintbrushThinIcon
 
-// Module 16820 (PaintbrushThinIcon)
+// Module 16832 (PaintbrushThinIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod16821 from "module_16821" /* 16821 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod16833 from "module_16833" /* 16833 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PaintbrushThinIcon = function PaintbrushThinIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16821, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16833, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

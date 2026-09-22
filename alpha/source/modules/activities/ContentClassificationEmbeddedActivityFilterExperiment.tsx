@@ -1,9 +1,9 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 9625
+// Function ID: 9626
 // Name: ContentClassificationEmbeddedActivityFilterExperiment
 // Dependencies: [1434, 2]
 
-// Module 9619 (ContentClassificationEmbeddedActivityFilterExperiment)
+// Module 9625 (ContentClassificationEmbeddedActivityFilterExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

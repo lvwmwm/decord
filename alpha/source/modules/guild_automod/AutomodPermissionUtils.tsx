@@ -1,10 +1,10 @@
-// Module ID: 4401
-// Function ID: 4402
+// Module ID: 4402
+// Function ID: 4403
 // Name: AutomodPermissionUtils
 // Dependencies: [2105, 4382, 1385, 504, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile, useCurrentUserAutomodQuaratinedProfile
 
-// Module 4401 (AutomodPermissionUtils)
+// Module 4402 (AutomodPermissionUtils)
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
 const require = globalThis.__r;

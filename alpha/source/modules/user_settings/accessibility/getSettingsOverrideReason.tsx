@@ -1,12 +1,12 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15613
+// Function ID: 15614
 // Name: getSettingsOverrideReason
-// Dependencies: [2020, 1084, 1115, 504, 2]
+// Dependencies: [2021, 1084, 1115, 504, 2]
 // Exports: default, useSettingsOverrideReason
 
-// Module 15602 (getSettingsOverrideReason)
+// Module 15613 (getSettingsOverrideReason)
 import util from "util" /* 1115 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2020 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2021 */;
 
 const require = globalThis.__r;
 

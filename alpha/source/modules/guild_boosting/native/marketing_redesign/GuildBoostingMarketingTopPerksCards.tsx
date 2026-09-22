@@ -1,19 +1,19 @@
-// Module ID: 13865
-// Function ID: 13866
+// Module ID: 13873
+// Function ID: 13874
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 1115, 13866, 5746, 13867, 13868, 4752, 12818, 2]
+// Dependencies: [19, 17, 4749, 21, 4757, 576, 1115, 13874, 5748, 13875, 13876, 4753, 12822, 2]
 // Exports: default
 
-// Module 13865 (GuildBoostingMarketingTopPerksCards)
+// Module 13873 (GuildBoostingMarketingTopPerksCards)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5746 */;
-import _modDef13866 from "module_13866" /* 13866 */;
-import _mod13867 from "module_13867" /* 13867 */;
-import _modDef13868 from "module_13868" /* 13868 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5748 */;
+import _modDef13874 from "module_13874" /* 13874 */;
+import _mod13875 from "module_13875" /* 13875 */;
+import _modDef13876 from "module_13876" /* 13876 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 const require = globalThis.__r;
 
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { wrapper: { marginTop: 50 }, heading: { marginBottom: 20, textAlign: "center" }, scrollerContent: { alignItems: "stretch", flexDirection: "row", justifyContent: "center", minWidth: "100%", paddingHorizontal: 16, paddingBottom: 16 }, card: { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 16, padding: 24, width: 324 }, cardGraphic: null, cardLast: null, cardHeading: null, cardBody: null };
 let size = { borderRadius: nativeDefault.radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
 obj2.cardGraphic = size;
@@ -41,7 +41,7 @@ let items = [
       return intl.string(util.t.HTvLGu);
     },
     getGraphic(style) {
-      return timestampProducer(React3, { style, source: _modDef13866 });
+      return timestampProducer(React3, { style, source: _modDef13874 });
     }
   },
   {
@@ -54,7 +54,7 @@ let items = [
       return intl.string(util.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod13867, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod13875, autoPlay: !AccessibilityStore.useReducedMotion, style };
       return timestampProducer(LottieAnimationViewDefault, obj);
     }
   },
@@ -68,7 +68,7 @@ let items = [
       return intl.string(util.t.yCjoUC);
     },
     getGraphic(style) {
-      return timestampProducer(React3, { style, source: _modDef13868 });
+      return timestampProducer(React3, { style, source: _modDef13876 });
     }
   }
 ];

@@ -1,13 +1,13 @@
-// Module ID: 8921
-// Function ID: 8922
+// Module ID: 8926
+// Function ID: 8927
 // Name: IarSettingsUpsellsConfigScFiltersGraphicMedia
-// Dependencies: [7543, 1186, 1115, 8908, 2]
+// Dependencies: [7545, 1186, 1115, 8913, 2]
 
-// Module 8921 (IarSettingsUpsellsConfigScFiltersGraphicMedia)
+// Module 8926 (IarSettingsUpsellsConfigScFiltersGraphicMedia)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7543 */;
-import MenuTypes from "MenuTypes" /* 8908 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7545 */;
+import MenuTypes from "MenuTypes" /* 8913 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

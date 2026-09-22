@@ -1,12 +1,12 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11489
+// Function ID: 11490
 // Name: ProfileFrameUserPreview
-// Dependencies: [19, 21, 11377, 1115, 2]
+// Dependencies: [19, 21, 11381, 1115, 2]
 // Exports: default
 
-// Module 11485 (ProfileFrameUserPreview)
+// Module 11489 (ProfileFrameUserPreview)
 import util from "util" /* 1115 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11377 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11381 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,8 +16,9 @@ const result = size.fileFinishedImporting("modules/collectibles/profile_frames/n
 
 export default function ProfileFrameUserPreview(profileFrame) {
   profileFrame = profileFrame.profileFrame;
-  const merged = Object.assign(profileFrame, Object.assign({ profileFrame: 0 }));
-  const obj = { profileFrameOverride: profileFrame, accessibilityLabel: null };
+  ({ avatarDecorationOverride, profileEffectOverride } = profileFrame);
+  const merged = Object.assign(profileFrame, Object.assign({ profileFrame: 0, avatarDecorationOverride: 0, profileEffectOverride: 0 }));
+  const obj = { profileFrameOverride: profileFrame, avatarDecorationOverride, profileEffectOverride, accessibilityLabel: null };
   if (null != profileFrame) {
     const intl2 = util.intl;
     const obj2 = { a11y_text: profileFrame.label };
@@ -28,5 +29,5 @@ export default function ProfileFrameUserPreview(profileFrame) {
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(UserProfilePreviewDefault, { profileFrameOverride: profileFrame, accessibilityLabel: null });
+  return jsx(UserProfilePreviewDefault, { profileFrameOverride: profileFrame, avatarDecorationOverride, profileEffectOverride, accessibilityLabel: null });
 };

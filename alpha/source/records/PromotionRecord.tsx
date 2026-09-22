@@ -1,12 +1,12 @@
-// Module ID: 10926
-// Function ID: 10927
+// Module ID: 10932
+// Function ID: 10933
 // Name: PromotionRecord
-// Dependencies: [1387, 10927, 10957, 1385, 2]
+// Dependencies: [1387, 10933, 10963, 1385, 2]
 
-// Module 10926 (PromotionRecord)
+// Module 10932 (PromotionRecord)
 import FlagUtils from "FlagUtils" /* 1385 */;
 import Record from "Record" /* 1387 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 10927 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 10933 */;
 
 require = fn;
 let PromotionRecord;
@@ -222,10 +222,10 @@ prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
     return !allowedCountries.includes(arg0);
   } else {
     const promotionType = self.promotionType;
-    if (tmp(10957).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
-      if (tmp(10957).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
-        if (tmp(10957).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
-          if (tmp(10957).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
+    if (tmp(10963).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
+      if (tmp(10963).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
+        if (tmp(10963).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
+          if (tmp(10963).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
             return false;
           }
         }

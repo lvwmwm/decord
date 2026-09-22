@@ -1,99 +1,49 @@
 // Module ID: 7049
 // Function ID: 7050
-// Dependencies: [32, 19, 17, 6877, 1637]
-// Exports: useBottomSheetContentContainerStyle
+// Dependencies: [19, 1637]
+// Exports: useReactiveSharedValue
 
 // Module 7049
-import cancelAnimation from "cancelAnimation" /* 1637 */;
-import _slicedToArray from "module_32" /* 32 */;
+import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
-require = fn;
-const noop = fn(19);
-({ useMemo: c3, useState: closure_4 } = noop);
-get_ActivityIndicator = fn(17);
-({ Platform: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const __initData = { code: "function pnpm_useBottomSheetContentContainerStyleTs1(){const{animatedFooterHeight}=this.__closure;return animatedFooterHeight.get();}" };
-const __initData2 = { code: "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}" };
+({ useEffect: c2, useRef: c3 } = noop);
 
-export const useBottomSheetContentContainerStyle = function useBottomSheetContentContainerStyle(flag, contentContainerStyle) {
-  _require = flag;
-  dependencyMap = contentContainerStyle;
-  const tmp = first(animatedFooterHeight(0), 2);
-  first = tmp[0];
-  closure_3 = tmp3;
-  const bottomSheetInternal = require("module_6877").useBottomSheetInternal();
-  animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
-  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
-  let items = [contentContainerStyle];
-  const tmp5 = closure_3(() => {
-    if (closure_1) {
-      const _Array = Array;
-      let applyResult = tmp;
-      if (Array.isArray(tmp)) {
-        compose = compose.compose;
-        const items = [];
-        HermesBuiltin.arraySpread(tmp, 0);
-        applyResult = HermesBuiltin.apply(items, compose);
+export const useReactiveSharedValue = (current) => {
+  const tmp = closure_3(null);
+  const tmp2 = closure_3(null);
+  _require = tmp2;
+  let tmp3 = current;
+  if (current) {
+    tmp3 = typeof current === "object";
+  }
+  if (tmp3) {
+    tmp3 = "value" in current;
+  }
+  if (!tmp3) {
+    if (null === tmp2.current) {
+      tmp.current = current;
+      if (typeof current === "object") {
+        const obj2 = {};
+        const merged = Object.assign(current);
+        let mutable = require("cancelAnimation").makeMutable(obj2);
+        let obj = require("cancelAnimation");
+      } else {
+        mutable = require("cancelAnimation").makeMutable(current);
+        const obj3 = require("cancelAnimation");
       }
-      let obj = applyResult;
-    } else {
-      obj = {};
-    }
-    return obj;
-  }, items);
-  Platform = tmp5;
-  const items1 = [first, flag, tmp5];
-  let obj = require("module_6877");
-  const tmp6 = closure_3(() => {
-    if (closure_0) {
-      let num = 0;
-      if (tmp) {
-        num = 0;
-        if (typeof tmp === "object") {
-          ({ paddingBottom, padding, paddingVertical } = tmp);
-          if (undefined === paddingBottom) {
-            if (undefined === paddingVertical) {
-              num = 0;
-              if (tmp2) {
-                num = padding;
-              }
-              tmp2 = undefined !== padding && typeof padding === "number";
-            } else {
-              num = paddingVertical;
-            }
-          } else {
-            num = paddingBottom;
-          }
-        }
-      }
-      const items = [tmp, ];
-      const obj = { paddingBottom: num + first, overflow: "visible" };
-      items[1] = obj;
-      return items;
-    } else {
-      return tmp;
-    }
-  }, items1);
-  class H {
-    constructor() {
-      return animatedFooterHeight.get();
+      tmp2.current = mutable;
+    } else if (tmp.current !== current) {
+      tmp2.current.value = current;
     }
   }
-  H.__closure = { animatedFooterHeight };
-  H.__workletHash = 10172145694310;
-  H.__initData = __initData;
-  const fn = function f(arg0, arg1) {
-    if (closure_0) {
-      cancelAnimation.runOnJS(closure_3)(arg0);
+  closure_2(() => () => {
+    if (ref.current) {
+      ref(dependencyMap[1]).cancelAnimation(tmp.current);
+      const obj = ref(dependencyMap[1]);
     }
-  };
-  const obj2 = require("cancelAnimation");
-  fn.__closure = { enableFooterMarginAdjustment: flag, runOnJS: require("cancelAnimation").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight };
-  fn.__workletHash = 1149497927090;
-  fn.__initData = __initData2;
-  const items2 = [animatedFooterHeight, animatedContentHeight, flag];
-  const animatedReaction = obj2.useAnimatedReaction(H, fn, items2);
-  return tmp6;
+  }, []);
+  current = tmp2.current;
+  return current;
 };

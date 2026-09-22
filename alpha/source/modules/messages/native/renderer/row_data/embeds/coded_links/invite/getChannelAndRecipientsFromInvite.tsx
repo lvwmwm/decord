@@ -1,11 +1,11 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 11577
+// Function ID: 11578
 // Name: getChannelAndRecipientsFromInvite
-// Dependencies: [2045, 2]
+// Dependencies: [2046, 2]
 // Exports: default
 
-// Module 11573 (getChannelAndRecipientsFromInvite)
-import ChannelRecord from "ChannelRecord" /* 2045 */;
+// Module 11577 (getChannelAndRecipientsFromInvite)
+import ChannelRecord from "ChannelRecord" /* 2046 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ChannelRecord.createChannelRecordFromInvite;

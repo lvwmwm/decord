@@ -1,27 +1,27 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16309
+// Function ID: 16310
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14984, 16277, 16278, 21, 4756, 576, 1115, 7187, 1484, 16274, 16293, 16276, 1094, 16292, 16295, 14985, 7619, 7200, 7215, 6848, 5186, 5795, 2]
+// Dependencies: [5, 32, 19, 17, 14991, 16288, 16289, 21, 4757, 576, 1115, 7189, 1484, 16285, 16304, 16287, 1094, 16303, 16306, 14992, 7622, 7202, 7217, 6850, 5187, 5797, 2]
 // Exports: default
 
-// Module 16298 (RegisterDisplayName)
+// Module 16309 (RegisterDisplayName)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14984 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14991 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const RegistrationUIStore = fn(16277);
+const RegistrationUIStore = fn(16288);
 ({ updateRegistrationOptions: closure_8, useRegistrationUIStore: closure_9 } = RegistrationUIStore);
-const RegistrationConstants = fn(16278);
+const RegistrationConstants = fn(16289);
 ({ RegisterTransitionSteps: c10, RegistrationTransitionActionTypes: closure_11 } = RegistrationConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { globalName: { marginTop: nativeDefault.space.PX_24 }, button: null, page: null };
 let obj3 = { marginTop: nativeDefault.space.PX_24 };
 obj2.button = { marginTop: nativeDefault.space.PX_24 };

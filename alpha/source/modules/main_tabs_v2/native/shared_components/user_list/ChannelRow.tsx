@@ -1,30 +1,30 @@
-// Module ID: 11176
-// Function ID: 11177
+// Module ID: 11182
+// Function ID: 11183
 // Name: ChannelRow
-// Dependencies: [19, 17, 2041, 2063, 4771, 4405, 1372, 11122, 4938, 21, 4756, 576, 504, 4909, 11177, 11268, 5306, 5298, 4752, 4438, 4348, 5821, 5822, 2]
+// Dependencies: [19, 17, 2042, 2064, 4772, 4406, 1372, 11128, 4939, 21, 4757, 576, 504, 4910, 11183, 11274, 5308, 5300, 4753, 4439, 4348, 5823, 5824, 2]
 
-// Module 11176 (ChannelRow)
+// Module 11182 (ChannelRow)
 import nativeDefault from "native" /* 576 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import DateUtils from "DateUtils" /* 4438 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11177 */;
-import GuildIconWithChannelType from "GuildIconWithChannelType" /* 11268 */;
+import DateUtils from "DateUtils" /* 4439 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import useChannelName from "useChannelName" /* 4910 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11183 */;
+import GuildIconWithChannelType from "GuildIconWithChannelType" /* 11274 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import ReadStateStore from "ReadStateStore" /* 4772 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const UserRowModes = fn(11122).UserRowModes;
-const ReadStateTypes = fn(4938).ReadStateTypes;
+const UserRowModes = fn(11128).UserRowModes;
+const ReadStateTypes = fn(4939).ReadStateTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { guildIcon: { flexShrink: 0, flexGrow: 0 }, subLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, subLabelIcon: { width: 12, height: 12, marginRight: 2 }, subLabelSeparator: { marginHorizontal: nativeDefault.space.PX_4 }, threadName: { flexShrink: 1 } };
 let closure_15 = createStyles.createStyles(obj);
 let obj3 = { marginHorizontal: nativeDefault.space.PX_4 };
@@ -127,9 +127,9 @@ export default noop.memo(function ChannelRow(channel) {
         }
       }
       if (channel.isForumPost()) {
-        let TextIcon = tmp3(5306).ForumIcon;
+        let TextIcon = tmp3(5308).ForumIcon;
       } else {
-        TextIcon = tmp3(5298).TextIcon;
+        TextIcon = tmp3(5300).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: null };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };

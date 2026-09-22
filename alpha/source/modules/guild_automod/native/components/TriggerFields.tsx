@@ -1,14 +1,14 @@
-// Module ID: 17957
-// Function ID: 17958
+// Module ID: 17969
+// Function ID: 17970
 // Name: TriggerFields
-// Dependencies: [19, 21, 17943, 4752, 1115, 17958, 17959, 17963, 17967, 2]
+// Dependencies: [19, 21, 17955, 4753, 1115, 17970, 17971, 17975, 17979, 2]
 // Exports: default
 
-// Module 17957 (TriggerFields)
-import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 17958 */;
-import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 17959 */;
-import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 17963 */;
-import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 17967 */;
+// Module 17969 (TriggerFields)
+import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 17970 */;
+import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 17971 */;
+import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 17975 */;
+import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 17979 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -22,7 +22,7 @@ export default function TriggerFields(arg0) {
     const obj2 = { variant: "text-md/normal", color: "text-default", children: null };
     const intl = tmp(1115).intl;
     obj2.children = intl.string(tmp(1115).t["1YgPj/"]);
-    let tmp3 = jsx(tmp(4752).Text, { variant: "text-md/normal", color: "text-default", children: null });
+    let tmp3 = jsx(tmp(4753).Text, { variant: "text-md/normal", color: "text-default", children: null });
   } else {
     if (tmpResult.isRuleMentionSpamFilter(rule)) {
       const obj3 = { rule, onChangeRule };
@@ -41,15 +41,15 @@ export default function TriggerFields(arg0) {
             tmp3 = jsx(KeywordFilterTriggerFieldsDefault, { rule, onChangeRule });
           } else {
             tmp3 = null;
-            const tmpResult8 = tmp(17943);
+            const tmpResult8 = tmp(17955);
           }
-          tmpResult7 = tmp(17943);
+          tmpResult7 = tmp(17955);
         }
-        tmpResult6 = tmp(17943);
+        tmpResult6 = tmp(17955);
       }
-      tmpResult5 = tmp(17943);
+      tmpResult5 = tmp(17955);
     }
-    tmpResult = tmp(17943);
+    tmpResult = tmp(17955);
   }
   return tmp3;
 };

@@ -1,14 +1,14 @@
-// Module ID: 12817
-// Function ID: 12818
+// Module ID: 12821
+// Function ID: 12822
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 576, 1365, 4756, 12806, 1115, 2514, 12818, 12819, 2]
+// Dependencies: [19, 17, 21, 576, 1365, 4757, 12810, 1115, 2514, 12822, 12823, 2]
 // Exports: default
 
-// Module 12817 (GuildPowerupsLevelsSection)
+// Module 12821 (GuildPowerupsLevelsSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import MarketingCardsScroller from "MarketingCardsScroller" /* 12818 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12819 */;
+import MarketingCardsScroller from "MarketingCardsScroller" /* 12822 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let num = 325;
 if (PlatformUtils.isIOS()) {
   num = 300;
 }
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj3 = { cardContainer: { width: 250, marginEnd: PX_16, flex: 1 }, scroller: { height: num, paddingBottom: nativeDefault.space.PX_8 }, scrollerContent: null };
 const obj4 = { height: num, paddingBottom: nativeDefault.space.PX_8 };
 obj3.scrollerContent = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -49,8 +49,8 @@ export default function GuildPowerupsLevelsSection(arg0) {
   obj2.title = intl.string(listings(2514)["TXY/b0"]);
   const intl2 = util.intl;
   obj2.description = intl2.string(listings(2514).aJv4PB);
-  const items1 = [closure_5(listings(12806), obj2), ];
-  const tmp3 = listings(12806);
+  const items1 = [closure_5(listings(12810), obj2), ];
+  const tmp3 = listings(12810);
   items1[1] = closure_5(MarketingCardsScroller.MarketingCardsScroller, {
     cardMarginRight: PX_16,
     cardWidth: 250,

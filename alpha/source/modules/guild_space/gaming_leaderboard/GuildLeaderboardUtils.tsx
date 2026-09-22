@@ -1,11 +1,11 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11176
+// Function ID: 11177
 // Name: GuildLeaderboardUtils
-// Dependencies: [32, 11171, 1115, 2]
+// Dependencies: [32, 11177, 1115, 2]
 // Exports: decodeWinnerData, encodeWinnerData, getLeaderboardWinnerBadgeText
 
-// Module 11170 (GuildLeaderboardUtils)
-import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 11171 */;
+// Module 11176 (GuildLeaderboardUtils)
+import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 11177 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

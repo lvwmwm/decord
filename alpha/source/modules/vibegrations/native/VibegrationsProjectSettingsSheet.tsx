@@ -1,18 +1,18 @@
-// Module ID: 16953
-// Function ID: 16954
+// Module ID: 16965
+// Function ID: 16966
 // Name: VibegrationsProjectSettingsSheet
-// Dependencies: [5, 32, 19, 17, 2099, 9309, 1074, 21, 4756, 576, 504, 5275, 4723, 1115, 3678, 7442, 4752, 7394, 9803, 7295, 5904, 5821, 5274, 16954, 9310, 6848, 5822, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 2099, 9314, 1074, 21, 4757, 576, 504, 5277, 4724, 1115, 3678, 7444, 4753, 7396, 9809, 7297, 5906, 5823, 5276, 16966, 9315, 6850, 5824, 5187, 2]
 // Exports: default
 
-// Module 16953 (VibegrationsProjectSettingsSheet)
+// Module 16965 (VibegrationsProjectSettingsSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4724 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9314 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 
@@ -166,7 +166,7 @@ const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const VibegrationsProjectSettingsSheet = "VibegrationsProjectSettingsSheet";
 VibegrationsCollaboratorRolesSheet = "VibegrationsCollaboratorRolesSheet";
-let createStyles = fn(4756);
+let createStyles = fn(4757);
 let obj2 = { content: { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, roleLabel: null, roleListContent: null, roleListEmpty: null, roleListFooter: null };
 let obj3 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.roleLabel = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -177,7 +177,7 @@ obj2.roleListEmpty = { alignItems: "center", paddingVertical: nativeDefault.spac
 let obj6 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
 obj2.roleListFooter = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_48, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4756);
+createStyles = fn(4757);
 let closure_15 = createStyles.createStyles((backgroundColor) => {
   const obj = { circle: null };
   const size = { width: 12, height: 12, borderRadius: nativeDefault.radii.round, backgroundColor, flexShrink: 0 };

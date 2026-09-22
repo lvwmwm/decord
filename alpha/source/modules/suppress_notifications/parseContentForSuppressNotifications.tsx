@@ -1,10 +1,10 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 7923
+// Function ID: 7924
 // Name: parseContentForSuppressNotifications
 // Dependencies: [2]
 // Exports: default
 
-// Module 7920 (parseContentForSuppressNotifications)
+// Module 7923 (parseContentForSuppressNotifications)
 import size from "module_2" /* 2 */;
 
 const regExp = new RegExp("^" + "@silent" + "(\\s|$)");

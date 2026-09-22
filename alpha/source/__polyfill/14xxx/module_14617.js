@@ -1,27 +1,39 @@
 // Module ID: 14617
 // Function ID: 14618
-// Dependencies: [14618, 14631, 14579, 14600]
+// Dependencies: [14609, 14608, 14616]
 
 // Module 14617
-import _mod14600 from "module_14600" /* 14600 */;
-import _mod14618 from "module_14618" /* 14618 */;
+import _mod14609 from "module_14609" /* 14609 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const arr = _mod14618(arg1);
-  for (let num = 0; num < arr.length; num = num + 1) {
-    let tmp3 = arr[num];
-    let tmp4 = require;
-    let tmp6 = _mod14600(arg0, tmp3);
-    if (!tmp6) {
-      let tmp8 = arg2;
-      if (arg2) {
-        tmp8 = tmp4(14600)(arg2, tmp3);
+export default (arg0, arg1) => {
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (_mod14609(toString)) {
+      const tmp4 = tmp(14616)(toString, arg0);
+      if (!tmpResult(tmp4)) {
+        return tmp4;
       }
-      tmp6 = tmp8;
-    }
-    if (!tmp6) {
-      let tmpResult = tmp(arg0, tmp3, tmp2(arg1, tmp3));
+      tmpResult = tmp(14608);
     }
   }
+  const valueOf = arg0.valueOf;
+  if (_mod14609(valueOf)) {
+    const tmp8 = tmp5(14616)(valueOf, arg0);
+    if (!tmp5Result(tmp8)) {
+      return tmp8;
+    }
+    tmp5Result = tmp5(14608);
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (tmp5(14609)(toString2)) {
+      const tmp10 = tmp5(14616)(toString2, arg0);
+      if (!tmp5Result2(tmp10)) {
+        return tmp10;
+      }
+      tmp5Result2 = tmp5(14608);
+    }
+  }
+  throw new TypeError("Can't convert object to primitive value");
 };

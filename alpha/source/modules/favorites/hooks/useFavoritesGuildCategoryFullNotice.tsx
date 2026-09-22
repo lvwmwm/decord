@@ -1,17 +1,17 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16457
+// Function ID: 16458
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [2044, 2054, 1074, 504, 10482, 2066, 1115, 3324, 2]
+// Dependencies: [2045, 2055, 1074, 504, 10488, 2067, 1115, 3324, 2]
 // Exports: default
 
-// Module 16446 (useFavoritesGuildCategoryFullNotice)
+// Module 16457 (useFavoritesGuildCategoryFullNotice)
 import initialize from "initialize" /* 504 */;
 import _modDef3324 from "module_3324" /* 3324 */;
-import FavoritesHooks from "FavoritesHooks" /* 10482 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import FavoritesHooks from "FavoritesHooks" /* 10488 */;
+import FavoriteStore from "FavoriteStore" /* 2045 */;
 
 require = fn;
-let closure_4 = fn(2054).FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
+let closure_4 = fn(2055).FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
 const ChannelTypes = fn(1074).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategoryFullNotice.tsx");
@@ -43,7 +43,7 @@ export default function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
             str = str.trim();
           }
         }
-        tmpResult = tmp(2066);
+        tmpResult = tmp(2067);
       }
     }
   }

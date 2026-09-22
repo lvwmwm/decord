@@ -1,19 +1,19 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18191
+// Function ID: 18192
 // Name: useRoleSubscriptionFormat
-// Dependencies: [19, 2100, 2099, 2063, 15475, 1074, 504, 2]
+// Dependencies: [19, 2100, 2099, 2064, 15486, 1074, 504, 2]
 // Exports: default
 
-// Module 18179 (useRoleSubscriptionFormat)
+// Module 18191 (useRoleSubscriptionFormat)
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const hasPermission = fn(2100).hasPermission;
-const constants = fn(15475).GuildRoleSubscriptionFormat;
+const constants = fn(15486).GuildRoleSubscriptionFormat;
 const Permissions = fn(1074).Permissions;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useRoleSubscriptionFormat.tsx");

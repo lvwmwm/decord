@@ -1,23 +1,23 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7799
+// Function ID: 7800
 // Name: CollectiblesUtils
-// Dependencies: [7789, 1971, 7790, 7791, 7797, 1076, 1074, 1085, 4414, 1378, 1380, 7479, 1364, 1973, 12, 1115, 7795, 2]
+// Dependencies: [7792, 1971, 7793, 7794, 7800, 1076, 1074, 1085, 4415, 1378, 1380, 7481, 1364, 1973, 12, 1115, 7798, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 7796 (CollectiblesUtils)
+// Module 7799 (CollectiblesUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import PerksStateUtils from "PerksStateUtils" /* 1378 */;
 import NameplateRecord from "NameplateRecord" /* 1971 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import PriceUtils from "PriceUtils" /* 7479 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7789 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7790 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7791 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7795 */;
-import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7797 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import PriceUtils from "PriceUtils" /* 7481 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7792 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7793 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7794 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7798 */;
+import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7800 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;

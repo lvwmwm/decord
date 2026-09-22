@@ -1,17 +1,17 @@
-// Module ID: 4687
-// Function ID: 4688
+// Module ID: 4688
+// Function ID: 4689
 // Name: MobileThemesUtils
-// Dependencies: [1182, 4688, 1227, 1229, 1115, 2712, 1230, 4689, 504, 2]
+// Dependencies: [1182, 4689, 1227, 1229, 1115, 2712, 1230, 4690, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4687 (MobileThemesUtils)
+// Module 4688 (MobileThemesUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
 import _modDef2712 from "module_2712" /* 2712 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4689 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4690 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4688 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4689 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;
 
 const require = globalThis.__r;

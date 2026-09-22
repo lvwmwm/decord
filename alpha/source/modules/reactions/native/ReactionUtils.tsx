@@ -1,22 +1,22 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11524
+// Function ID: 11525
 // Name: reactions/ReactionUtils
-// Dependencies: [2041, 4976, 4577, 1372, 1074, 1375, 21, 4407, 4724, 4725, 8006, 4414, 4723, 11403, 1980, 4622, 11388, 8005, 4936, 11521, 11533, 11534, 11535, 9037, 9487, 5108, 1115, 4752, 2]
+// Dependencies: [2042, 4977, 4578, 1372, 1074, 1375, 21, 4408, 4725, 4726, 8009, 4415, 4724, 11407, 1980, 4623, 11392, 8008, 4937, 11525, 11537, 11538, 11539, 9042, 9493, 5109, 1115, 4753, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 11520 (reactions/ReactionUtils)
+// Module 11524 (reactions/ReactionUtils)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ReactionUtils from "ReactionUtils" /* 4407 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8006 */;
-import _modDef11534 from "module_11534" /* 11534 */;
-import _modDef11535 from "module_11535" /* 11535 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import MessageStore from "MessageStore" /* 4976 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import ReactionUtils from "ReactionUtils" /* 4408 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4726 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4937 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5109 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8009 */;
+import _modDef11538 from "module_11538" /* 11538 */;
+import _modDef11539 from "module_11539" /* 11539 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import MessageStore from "MessageStore" /* 4977 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -27,11 +27,11 @@ const Constants = fn(1074);
 const EmojiIntention = fn(1375).EmojiIntention;
 const jsx = fn(21).jsx;
 let obj = {};
-obj[fn(8005).ReactionTypes.NORMAL] = _modDef11534;
-obj[fn(8005).ReactionTypes.BURST] = _modDef11535;
+obj[fn(8008).ReactionTypes.NORMAL] = _modDef11538;
+obj[fn(8008).ReactionTypes.BURST] = _modDef11539;
 let obj2 = {};
-obj2[fn(8005).ReactionTypes.NORMAL] = fn(9037).ReactionIcon;
-obj2[fn(8005).ReactionTypes.BURST] = fn(9487).SuperReactionIcon;
+obj2[fn(8008).ReactionTypes.NORMAL] = fn(9042).ReactionIcon;
+obj2[fn(8008).ReactionTypes.BURST] = fn(9493).SuperReactionIcon;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/reactions/native/ReactionUtils.tsx");
 
@@ -41,7 +41,7 @@ export const handleOutOfSuperReactions = function handleOutOfSuperReactions(onDi
     let openLazyResult;
     if (!obj.isPremium(currentUser)) {
       const obj3 = { onDismiss };
-      openLazyResult = ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11403, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj3);
+      openLazyResult = ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11407, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj3);
     }
     return openLazyResult;
   }
@@ -67,7 +67,7 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
       const currentUser1 = UserStore.getCurrentUser();
       if (null != currentUser1) {
         if (!tmp13Result.isPremium(currentUser1)) {
-          require("ActionSheetActionCreators").openLazy(tmp13(ReactionTypes[14])(ReactionTypes[13], ReactionTypes.paths), "SuperReactionUpsellActionSheet", { onDismiss: "r" });
+          require("ActionSheetActionCreators").openLazy(tmp13(ReactionTypes[14])(ReactionTypes[13], ReactionTypes.paths), "SuperReactionUpsellActionSheet", { onDismiss: "max" });
           const obj3 = require("ActionSheetActionCreators");
         }
         tmp13Result = tmp13(ReactionTypes[11]);
@@ -86,8 +86,8 @@ export const handleAddNewReactions = function handleAddNewReactions(channel, id,
           if (null != byName) {
             const toReactionEmojiResult = ReactionUtils.toReactionEmoji(byName);
             if (!obj.burst) {
-              const result = tmp3(4724).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
-              const tmp3Result = tmp3(4724);
+              const result = tmp3(4725).triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
+              const tmp3Result = tmp3(4725);
             }
             const tmp3Result2 = ReactionActionCreators;
             tmp3Result2.addReaction(id, tmp, toReactionEmojiResult, tmp2, obj);
@@ -150,12 +150,12 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     const obj4 = { messageId, channelId, emoji: isPoll.emoji };
     const obj6 = ActionSheetActionCreatorsDefault;
     const merged2 = Object.assign(merged);
-    obj6.openLazy(asyncRequireImpl(11521, dependencyMap.paths), "MessageReactions", obj4);
+    obj6.openLazy(asyncRequireImpl(11525, dependencyMap.paths), "MessageReactions", obj4);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11533, dependencyMap.paths), "MessagePreviewReactions", { messageId: id2, channelId: id, emoji });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11537, dependencyMap.paths), "MessagePreviewReactions", { messageId: id2, channelId: id, emoji });
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj2;

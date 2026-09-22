@@ -1,23 +1,23 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7777
+// Function ID: 7778
 // Name: NewChannelsStore
-// Dependencies: [1220, 502, 2041, 2096, 2105, 2063, 4771, 4937, 1074, 1091, 7524, 573, 7355, 11, 504, 2]
+// Dependencies: [1220, 502, 2042, 4394, 2105, 2064, 4772, 4938, 1074, 1091, 7526, 573, 7357, 11, 504, 2]
 
-// Module 7774 (NewChannelsStore)
+// Module 7777 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7355 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 7524 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 7526 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import GuildChannelStore from "GuildChannelStore" /* 4394 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import ReadStateStore from "ReadStateStore" /* 4772 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
 
 require = fn;
 function guildHasCommunity(nextResult) {
@@ -130,7 +130,7 @@ function pruneNewChannels() {
     closure_16[item] = new Set(items.filter((item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(closure_0, item)));
   });
 }
-let closure_7 = fn(2096).GUILD_SELECTABLE_CHANNELS_KEY;
+let closure_7 = fn(4394).GUILD_SELECTABLE_CHANNELS_KEY;
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_12, AnalyticsObjectTypes: map1, GuildFeatures: closure_14 } = Constants);
 let set = new Set();

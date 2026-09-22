@@ -1,11 +1,11 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16028
+// Function ID: 16029
 // Name: DevToolsGuildPowerupsConstants
-// Dependencies: [2027, 2]
+// Dependencies: [2028, 2]
 // Exports: getGuildDCString, getUserDCString
 
-// Module 16016 (DevToolsGuildPowerupsConstants)
-import dismissible_content from "dismissible_content" /* 2027 */;
+// Module 16028 (DevToolsGuildPowerupsConstants)
+import dismissible_content from "dismissible_content" /* 2028 */;
 import size from "module_2" /* 2 */;
 
 const items = [dismissible_content.DismissibleContent.GUILD_POWERUP_PERKS_COACHMARK, dismissible_content.DismissibleContent.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, dismissible_content.DismissibleContent.GUILD_POWERUP_NOTIFICATION, dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE];
@@ -21,15 +21,15 @@ export const VANITY_URL_POWERUP_EDUCATIONAL_DCS = items3;
 export const getGuildDCString = function getGuildDCString(arg0) {
   if (dismissible_content.DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK === arg0) {
     return "GUILD_POWERUP_LEVEL_1_COACHMARK";
-  } else if (tmp(2027).DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK === arg0) {
+  } else if (tmp(2028).DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK === arg0) {
     return "GUILD_POWERUP_LEVEL_2_COACHMARK";
-  } else if (tmp(2027).DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK === arg0) {
+  } else if (tmp(2028).DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK === arg0) {
     return "GUILD_POWERUP_LEVEL_3_COACHMARK";
-  } else if (tmp(2027).DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK === arg0) {
+  } else if (tmp(2028).DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK === arg0) {
     return "GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK";
-  } else if (tmp(2027).DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK === arg0) {
+  } else if (tmp(2028).DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK === arg0) {
     return "GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK";
-  } else if (tmp(2027).DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE === arg0) {
+  } else if (tmp(2028).DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE === arg0) {
     return "ADOPT_CLAN_IDENTITY_NOTICE";
   } else {
     const _String = String;

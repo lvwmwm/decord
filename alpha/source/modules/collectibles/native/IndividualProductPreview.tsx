@@ -1,18 +1,18 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13450
+// Function ID: 13451
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1076, 21, 4756, 576, 5198, 8447, 11376, 11485, 13445, 13446, 1973, 1077, 13447, 13450, 2]
+// Dependencies: [19, 17, 1076, 21, 4757, 576, 5199, 8451, 11380, 11489, 13451, 13452, 1973, 1077, 13453, 13456, 2]
 // Exports: IndividualProductPreview
 
-// Module 13444 (IndividualProductPreview)
+// Module 13450 (IndividualProductPreview)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import useCurrentUser from "useCurrentUser" /* 8447 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11376 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11485 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 13445 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 13446 */;
+import LinearGradientDefault from "LinearGradient" /* 5199 */;
+import useCurrentUser from "useCurrentUser" /* 8451 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11380 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11489 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 13451 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 13452 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -42,19 +42,19 @@ function ProfilePreviewWrapper(children) {
   return closure_7(closure_3, obj);
 }
 function ProfileEffectPreview(arg0) {
-  ({ profileEffect, width, handlePreviewPress, onTrackPress } = arg0);
+  ({ profileEffect, width, avatarDecorationOverride, profileFrameOverride, handlePreviewPress, onTrackPress } = arg0);
   const tmp = closure_9();
   const obj2 = { handlePreviewPress, onTrackPress, children: null };
   const currentUser = useCurrentUser.useCurrentUser();
-  obj2.children = React5(ProfileEffectUserPreviewDefault, { user: currentUser, profileEffect, maxWidth: width, style: tmp.profilePreview });
+  obj2.children = React5(ProfileEffectUserPreviewDefault, { user: currentUser, profileEffect, avatarDecorationOverride, profileFrameOverride, maxWidth: width, style: tmp.profilePreview });
   return React5(ProfilePreviewWrapper, obj2);
 }
 function ProfileFramePreview(arg0) {
-  ({ profileFrame, width, handlePreviewPress, onTrackPress } = arg0);
+  ({ profileFrame, width, avatarDecorationOverride, profileEffectOverride, handlePreviewPress, onTrackPress } = arg0);
   const tmp = closure_9();
   const obj2 = { handlePreviewPress, onTrackPress, children: null };
   const currentUser = useCurrentUser.useCurrentUser();
-  obj2.children = React5(ProfileFrameUserPreviewDefault, { profileFrame, user: currentUser, maxWidth: width, style: tmp.profilePreview });
+  obj2.children = React5(ProfileFrameUserPreviewDefault, { profileFrame, user: currentUser, avatarDecorationOverride, profileEffectOverride, maxWidth: width, style: tmp.profilePreview });
   return React5(ProfilePreviewWrapper, obj2);
 }
 function AvatarDecorationPreview(product) {
@@ -72,8 +72,9 @@ function AvatarDecorationPreview(product) {
     children: closure_7(AvatarDecorationProductPreviewDefault, { product: product.product })
   });
 }
-function NameplatePreview(product) {
-  return React5(React4, { style: closure_9().collectiblePreview, children: React5(NameplateProductPreviewDefault, { product: product.product }) });
+function NameplatePreview(arg0) {
+  ({ product, avatarDecorationOverride } = arg0);
+  return React5(React4, { style: closure_9().collectiblePreview, children: React5(NameplateProductPreviewDefault, { product, avatarDecorationOverride }) });
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: c3, View: closure_4, StyleSheet } = get_ActivityIndicator);
@@ -81,7 +82,7 @@ const CollectiblesShopConstants = fn(1076);
 ({ EXTERNAL_PRODUCT_SKU_IDS: hasOwnProperty, ShopCtaEnum: metroRequire } = CollectiblesShopConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { collectiblePreview: { marginTop: nativeDefault.space.PX_12, position: "relative", height: 280 }, profilePreviewContainer: { position: "relative", flex: 1, alignItems: "center", overflow: "hidden" }, profilePreview: { width: "66%" }, profilePreviewGradient: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -94,16 +95,17 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/IndividualProductPreview.tsx");
 
 export const IndividualProductPreview = function IndividualProductPreview(arg0) {
-  ({ product, width, handlePreviewPress, onTrackPress } = arg0);
+  ({ product, width, avatarDecorationOverride, handlePreviewPress, onTrackPress } = arg0);
   const type = product.type;
+  ({ profileFrameOverride, profileEffectOverride } = arg0);
   if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-    const obj2 = { product };
+    const obj2 = { product, avatarDecorationOverride };
     return React5(NameplatePreview, obj2);
   } else if (tmp(1973).CollectiblesItemType.PROFILE_EFFECT === type) {
-    const obj3 = { profileEffect: product.items[0], width, handlePreviewPress, onTrackPress };
+    const obj3 = { profileEffect: product.items[0], width, avatarDecorationOverride, profileFrameOverride, handlePreviewPress, onTrackPress };
     return React5(ProfileEffectPreview, obj3);
   } else if (tmp(1973).CollectiblesItemType.PROFILE_FRAME === type) {
-    const obj4 = { profileFrame: product.items[0], width, handlePreviewPress, onTrackPress };
+    const obj4 = { profileFrame: product.items[0], width, avatarDecorationOverride, profileEffectOverride, handlePreviewPress, onTrackPress };
     return React5(ProfileFramePreview, obj4);
   } else if (tmp(1973).CollectiblesItemType.AVATAR_DECORATION === type) {
     const obj = { product, handlePreviewPress, onTrackPress };
@@ -111,11 +113,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1973).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(1077).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = React5(tmp(13447).FractionalNitroPreview, {});
+      let tmp5 = React5(tmp(13453).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = React5(tmp(13450).OrbBadgePreview, {});
+        tmp5 = React5(tmp(13456).OrbBadgePreview, {});
       }
     }
     return tmp5;

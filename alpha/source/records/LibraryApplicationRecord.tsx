@@ -1,14 +1,14 @@
-// Module ID: 7640
-// Function ID: 7641
+// Module ID: 7643
+// Function ID: 7644
 // Name: LibraryApplicationRecord
-// Dependencies: [1387, 4983, 7637, 1074, 4348, 1385, 2]
+// Dependencies: [1387, 4984, 7640, 1074, 4348, 1385, 2]
 
-// Module 7640 (LibraryApplicationRecord)
+// Module 7643 (LibraryApplicationRecord)
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
 import _modDef4348 from "module_4348" /* 4348 */;
 import Record from "Record" /* 1387 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import EntitlementRecord from "EntitlementRecord" /* 7637 */;
+import ApplicationStore from "ApplicationStore" /* 4984 */;
+import EntitlementRecord from "EntitlementRecord" /* 7640 */;
 
 const Constants = fn(1074);
 ({ LibraryApplicationFlags: hasOwnProperty, Distributors: metroRequire, SKUTypes: closure_7 } = Constants);

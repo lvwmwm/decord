@@ -1,10 +1,10 @@
-// Module ID: 9736
-// Function ID: 9737
+// Module ID: 9742
+// Function ID: 9743
 // Name: createWebviewHtmlFile
 // Dependencies: [5, 1364, 1151, 1231, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 9736 (createWebviewHtmlFile)
+// Module 9742 (createWebviewHtmlFile)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -44,7 +44,7 @@ let closure_4 = async function _createWebviewHtmlFile(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

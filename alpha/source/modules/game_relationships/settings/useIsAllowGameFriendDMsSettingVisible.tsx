@@ -1,12 +1,12 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 16224
+// Function ID: 16225
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7894, 504, 2]
+// Dependencies: [7897, 504, 2]
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 16213 (useIsAllowGameFriendDMsSettingVisible)
+// Module 16224 (useIsAllowGameFriendDMsSettingVisible)
 import initialize from "initialize" /* 504 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7894 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7897 */;
 
 require = fn;
 const size = fn(2);

@@ -1,12 +1,12 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17053
+// Function ID: 17054
 // Name: VibegrationsClarificationCard
-// Dependencies: [32, 19, 17, 21, 4756, 576, 17042, 4752, 1115, 3678, 5824, 5186, 6848, 2]
+// Dependencies: [32, 19, 17, 21, 4757, 576, 17054, 4753, 1115, 3678, 5826, 5187, 6850, 2]
 // Exports: default
 
-// Module 17041 (VibegrationsClarificationCard)
+// Module 17053 (VibegrationsClarificationCard)
 import nativeDefault from "native" /* 576 */;
-import VibegrationsClarification from "VibegrationsClarification" /* 17042 */;
+import VibegrationsClarification from "VibegrationsClarification" /* 17054 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, optionHeader: null, footer: null, customField: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.optionHeader = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -52,11 +52,11 @@ export default function VibegrationsClarificationCard(clarification) {
       closure_4(obj);
       const result = VibegrationsClarification.nextClarificationStep(clarification, obj, bound);
       if (null == result) {
-        const result1 = tmp13(17042).formatClarificationAnswers(tmp15, obj);
+        const result1 = tmp13(17054).formatClarificationAnswers(tmp15, obj);
         if ("" !== result1) {
           tmp(result1);
         }
-        const tmp13Result = tmp13(17042);
+        const tmp13Result = tmp13(17054);
       } else {
         closure_6(result);
       }
@@ -104,9 +104,9 @@ export default function VibegrationsClarificationCard(clarification) {
     let intl = clarification(1115).intl;
     const obj4 = { index: bound + 1, total: length };
     obj3.children = intl.formatToPlainString(onSubmit(3678)["7bypa+"], obj4);
-    tmp14 = closure_6(clarification(4752).Text, obj3);
+    tmp14 = closure_6(clarification(4753).Text, obj3);
   }
-  const items4 = [tmp14, closure_6(clarification(4752).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
+  const items4 = [tmp14, closure_6(clarification(4753).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
   const options = tmp8.options;
   items4[2] = options.map((answer) => {
     closure_0 = answer;
@@ -157,7 +157,7 @@ export default function VibegrationsClarificationCard(clarification) {
       let intl2 = tmp20(1115).intl;
       obj7.text = intl2.string(onSubmit(3678).yKdgqw);
       obj7.onPress = callback1;
-      tmp19Result = tmp19(tmp20(5186).Button, obj7);
+      tmp19Result = tmp19(tmp20(5187).Button, obj7);
     }
   }
   const items5 = [tmp19Result, ];
@@ -177,7 +177,7 @@ export default function VibegrationsClarificationCard(clarification) {
     });
   };
   obj8.onSubmitEditing = callback2;
-  items5[1] = closure_6(clarification(6848).TextInput, obj8);
+  items5[1] = closure_6(clarification(6850).TextInput, obj8);
   obj6.children = items5;
   items4[3] = closure_7(closure_5, obj6);
   obj2.children = items4;

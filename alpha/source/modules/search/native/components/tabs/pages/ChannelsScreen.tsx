@@ -1,23 +1,23 @@
-// Module ID: 17166
-// Function ID: 17167
+// Module ID: 17178
+// Function ID: 17179
 // Name: ChannelsScreen
-// Dependencies: [19, 4780, 12617, 12593, 8122, 8121, 21, 12594, 504, 16577, 17112, 1115, 4467, 17116, 12612, 17158, 17108, 17120, 2]
+// Dependencies: [19, 4781, 12621, 12597, 8125, 8124, 21, 12598, 504, 16588, 17124, 1115, 4468, 17128, 12616, 17170, 17120, 17132, 2]
 
-// Module 17166 (ChannelsScreen)
+// Module 17178 (ChannelsScreen)
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12612 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4468 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12616 */;
 import noop from "module_19" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12617 */;
-import SearchQueryStore from "SearchQueryStore" /* 12593 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4781 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12621 */;
+import SearchQueryStore from "SearchQueryStore" /* 12597 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SearchConstants = fn(8122);
+const SearchConstants = fn(8125);
 ({ EMPTY_VOICE_STATES: closure_7, SearchListItemTypes: closure_8, CHANNELS_ESTIMATED_ITEM_SIZE: closure_9 } = SearchConstants);
-let closure_10 = fn(8121).SearchResultContentEntityTypes;
+let closure_10 = fn(8124).SearchResultContentEntityTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/ChannelsScreen.tsx");

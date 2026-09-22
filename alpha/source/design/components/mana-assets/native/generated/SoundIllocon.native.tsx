@@ -1,13 +1,13 @@
-// Module ID: 6716
-// Function ID: 6717
+// Module ID: 6718
+// Function ID: 6719
 // Name: SoundIllocon
-// Dependencies: [21, 5804, 6717, 2]
+// Dependencies: [21, 5806, 6719, 2]
 // Exports: SoundIllocon
 
-// Module 6716 (SoundIllocon)
+// Module 6718 (SoundIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6717 from "module_6717" /* 6717 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6719 from "module_6719" /* 6719 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const SoundIllocon = function SoundIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6717 };
+  const obj2 = { uri: _modDef6719 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

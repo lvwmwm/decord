@@ -1,16 +1,16 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17002
+// Function ID: 17003
 // Name: VibegrationsConnectToolSheet
-// Dependencies: [5, 32, 19, 17, 13361, 21, 4756, 576, 7434, 4453, 5114, 1115, 3678, 7442, 7394, 4752, 5824, 5186, 2]
+// Dependencies: [5, 32, 19, 17, 13366, 21, 4757, 576, 7436, 4454, 5115, 1115, 3678, 7444, 7396, 4753, 5826, 5187, 2]
 // Exports: default
 
-// Module 16990 (VibegrationsConnectToolSheet)
+// Module 17002 (VibegrationsConnectToolSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import ToastUtils from "ToastUtils" /* 4453 */;
-import AlertModal from "AlertModal" /* 5114 */;
-import ClipboardUtils from "ClipboardUtils" /* 7434 */;
+import ToastUtils from "ToastUtils" /* 4454 */;
+import AlertModal from "AlertModal" /* 5115 */;
+import ClipboardUtils from "ClipboardUtils" /* 7436 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -19,10 +19,10 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const fetchProjectMcpConnection = fn(13361).fetchProjectMcpConnection;
+const fetchProjectMcpConnection = fn(13366).fetchProjectMcpConnection;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 }, section: null, actions: null, action: null, failedRow: null, failedText: null };
 let obj3 = { gap: nativeDefault.space.PX_16 };
 obj2.section = { gap: nativeDefault.space.PX_8 };
@@ -185,18 +185,18 @@ export default function VibegrationsConnectToolSheet(projectId) {
     const obj6 = { variant: "text-xs/semibold", color: "text-muted", children: null };
     const intl4 = tmp12(1115).intl;
     obj6.children = intl4.string(tmp14(3678).DRgXyU);
-    const items5 = [tmp11(tmp12(4752).Text, obj6), , , ];
+    const items5 = [tmp11(tmp12(4753).Text, obj6), , , ];
     const obj7 = { variant: "primary", children: null };
     const obj8 = { variant: "text-sm/normal", color: "text-default", selectable: true, children: first.url };
-    obj7.children = tmp11(tmp12(4752).Text, obj8);
-    items5[1] = tmp11(tmp12(5824).Card, obj7);
+    obj7.children = tmp11(tmp12(4753).Text, obj8);
+    items5[1] = tmp11(tmp12(5826).Card, obj7);
     const obj9 = { style: tmp.actions, children: null };
     const obj10 = { style: tmp.action, children: null };
     const obj11 = { variant: "primary", size: "md", text: null, onPress: null };
     const intl5 = tmp12(1115).intl;
     obj11.text = intl5.string(tmp12(1115).t.OpuAlK);
     obj11.onPress = callback1;
-    obj10.children = tmp11(tmp12(5186).Button, obj11);
+    obj10.children = tmp11(tmp12(5187).Button, obj11);
     const items6 = [tmp11(tmp16, obj10), ];
     const obj12 = { style: tmp.action, children: null };
     const obj13 = { variant: "secondary", size: "md", text: null, loading: null, onPress: null };
@@ -204,14 +204,14 @@ export default function VibegrationsConnectToolSheet(projectId) {
     obj13.text = intl6.string(tmp14(3678).bsDgiq);
     obj13.loading = tmp5;
     obj13.onPress = callback2;
-    obj12.children = tmp11(tmp12(5186).Button, obj13);
+    obj12.children = tmp11(tmp12(5187).Button, obj13);
     items6[1] = tmp11(tmp16, obj12);
     obj9.children = items6;
     items5[2] = tmp15(tmp16, obj9);
     const obj14 = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl7 = tmp12(1115).intl;
     obj14.children = intl7.string(tmp14(3678).lTtxBT);
-    items5[3] = tmp11(tmp12(4752).Text, obj14);
+    items5[3] = tmp11(tmp12(4753).Text, obj14);
     obj5.children = items5;
     let tmp11Result = tmp15(tmp16, obj5);
   } else {
@@ -220,7 +220,7 @@ export default function VibegrationsConnectToolSheet(projectId) {
       const obj15 = { variant: "text-sm/normal", color: "text-muted", children: null };
       let intl3 = tmp12(1115).intl;
       obj15.children = intl3.string(tmp14(3678).c3R8Tx);
-      tmp11Result = tmp11(tmp12(4752).Text, obj15);
+      tmp11Result = tmp11(tmp12(4753).Text, obj15);
     }
   }
   items4[1] = tmp11Result;
@@ -231,7 +231,7 @@ export default function VibegrationsConnectToolSheet(projectId) {
     const obj18 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const intl8 = tmp12(1115).intl;
     obj18.children = intl8.string(tmp14(3678).QJKw6N);
-    obj17.children = tmp11(tmp12(4752).Text, obj18);
+    obj17.children = tmp11(tmp12(4753).Text, obj18);
     const items7 = [tmp11(tmp16, obj17), ];
     const obj19 = { variant: "secondary", size: "sm", text: null, loading: null, onPress: null };
     const intl9 = tmp12(1115).intl;
@@ -242,7 +242,7 @@ export default function VibegrationsConnectToolSheet(projectId) {
 
       });
     };
-    items7[1] = tmp11(tmp12(5186).Button, obj19);
+    items7[1] = tmp11(tmp12(5187).Button, obj19);
     obj16.children = items7;
     tmp15Result2 = tmp15(tmp16, obj16);
   }

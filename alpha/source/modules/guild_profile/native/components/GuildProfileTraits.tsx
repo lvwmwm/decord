@@ -1,14 +1,14 @@
-// Module ID: 10029
-// Function ID: 10030
+// Module ID: 10035
+// Function ID: 10036
 // Name: GuildProfileTraits
-// Dependencies: [19, 17, 21, 4756, 576, 1397, 4413, 7375, 4752, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 1397, 4414, 7377, 4753, 2]
 // Exports: default
 
-// Module 10029 (GuildProfileTraits)
+// Module 10035 (GuildProfileTraits)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4413 */;
-import Text_Text from "Text/Text" /* 4752 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4414 */;
+import Text_Text from "Text/Text" /* 4753 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -25,7 +25,7 @@ function TraitEmoji(emoji) {
     }
     const tmp5 = importDefault;
     const obj6 = { src: emojiURL, name: EmojiUtilsDefault.isCustomEmoji(emoji) ? emoji.name : emoji.surrogates, fastImageStyle: tmp.emojiImage };
-    return hasOwnProperty(tmp5(7375), obj6);
+    return hasOwnProperty(tmp5(7377), obj6);
   }
 }
 function GuildProfileTraitView(trait) {
@@ -38,7 +38,7 @@ function GuildProfileTraitView(trait) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj2 = { container: { display: "flex", flexDirection: "row", flexWrap: "wrap", gap: 8 }, trait: { display: "flex", flexDirection: "row", gap: 4, alignItems: "center", paddingHorizontal: 8, paddingVertical: 4, borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_SUBTLE }, emojiImage: { width: 16, height: 16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

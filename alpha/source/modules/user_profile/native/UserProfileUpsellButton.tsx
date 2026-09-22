@@ -1,12 +1,12 @@
-// Module ID: 14870
-// Function ID: 14871
+// Module ID: 14876
+// Function ID: 14877
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1074, 1374, 21, 4756, 7407, 7688, 1241, 5186, 9427, 1115, 8940, 2]
+// Dependencies: [19, 1074, 1374, 21, 4757, 7409, 7691, 1241, 5187, 9433, 1115, 8945, 2]
 // Exports: default
 
-// Module 14870 (UserProfileUpsellButton)
+// Module 14876 (UserProfileUpsellButton)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9427 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9433 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -14,7 +14,7 @@ const Constants = fn(1074);
 ({ AnalyticsPages: closure_4, UpsellTypes: hasOwnProperty, AnalyticsSections: metroRequire, AnalyticEvents: closure_7 } = Constants);
 const PremiumUpsellTypes = fn(1374).PremiumUpsellTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_10 = createStyles.createStyles({ nitroWheel: { marginRight: 2 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
@@ -22,9 +22,9 @@ let result = size.fileFinishedImporting("modules/user_profile/native/UserProfile
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7407)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
   const tmp = closure_10();
-  let label = analyticsObject(7688).useNitroTrialCtaOverride("user_profile_upsell_button");
+  let label = analyticsObject(7691).useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = noop.useEffect(() => {
     const obj2 = { type: PremiumUpsellTypes.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, location_stack: analyticsLocations };
@@ -47,8 +47,8 @@ export default function UserProfileUpsellButton(analyticsObject) {
     label = intl.string(tmp3(1115).t.pj0XBN);
   }
   obj2.text = label;
-  obj2.icon = jsx(analyticsObject(8940).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
-  return jsx(analyticsObject(5186).Button, {
+  obj2.icon = jsx(analyticsObject(8945).NitroWheelIcon, { color: "white", size: "sm", style: tmp.nitroWheel });
+  return jsx(analyticsObject(5187).Button, {
     onPress() {
       const obj2 = { initialUpsellKey: constants2.CUSTOM_PROFILES, analyticsLocation: { page: constants.USER_SETTINGS, section: constants3.USER_PROFILE, object: analyticsObject }, analyticsLocations, analyticsProperties: { type: PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL } };
       const result = PremiumUpsellUtilsDefault.handleShowUpsellAlert(obj2);

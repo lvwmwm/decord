@@ -1,11 +1,11 @@
-// Module ID: 8961
-// Function ID: 8962
+// Module ID: 8966
+// Function ID: 8967
 // Name: useSteamWebsiteUrl
-// Dependencies: [2000, 1074, 504, 8962, 8960, 2009, 2]
+// Dependencies: [2000, 1074, 504, 8967, 8965, 2010, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 8961 (useSteamWebsiteUrl)
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8962 */;
+// Module 8966 (useSteamWebsiteUrl)
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8967 */;
 import GameStore from "GameStore" /* 2000 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
         return null;
       } else {
         const websites = game.websites;
-        const found = websites.find((category) => category.category === id(8960).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+        const found = websites.find((category) => category.category === id(8965).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         if (found != null) {
           const url = found.url;
         }
@@ -41,8 +41,8 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
         const found1 = thirdPartySkus.filter((distributor) => {
           let tmp = distributor.distributor === constants.STEAM;
           if (tmp) {
-            tmp = !id(2009).isNullOrEmpty(distributor.id);
-            const obj = id(2009);
+            tmp = !id(2010).isNullOrEmpty(distributor.id);
+            const obj = id(2010);
           }
           return tmp;
         });

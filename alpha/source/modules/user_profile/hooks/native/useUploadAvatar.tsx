@@ -1,11 +1,11 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14891
+// Function ID: 14892
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1372, 1074, 1374, 563, 9427, 4723, 5354, 4414, 14869, 8438, 8436, 8433, 8435, 2]
+// Dependencies: [5, 19, 1372, 1074, 1374, 563, 9433, 4724, 5356, 4415, 14875, 8442, 8440, 8437, 8439, 2]
 // Exports: default
 
-// Module 14885 (useUploadAvatar)
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9427 */;
+// Module 14891 (useUploadAvatar)
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9433 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -65,12 +65,12 @@ export default function useUploadAvatar(guildId) {
             let originalMd5;
             closure_128_3 = undefined;
             closure_128_4 = undefined;
-            tmp22(4723).hideActionSheet();
-            const obj13 = tmp22(4723);
+            tmp22(4724).hideActionSheet();
+            const obj13 = tmp22(4724);
             const obj6 = { size };
             dependencyMap = 1;
             c3 = 1;
-            const obj8 = { value: tmp22(5354).openImagePicker(obj6), done: false };
+            const obj8 = { value: tmp22(5356).openImagePicker(obj6), done: false };
             return obj8;
           }
         } else if (arg0 === 1) {
@@ -89,8 +89,8 @@ export default function useUploadAvatar(guildId) {
           } else {
             let canUseAnimatedAvatarResult = closure_129_1;
             if (!closure_129_1) {
-              canUseAnimatedAvatarResult = tmp22(4414).canUseAnimatedAvatar(closure_129_3);
-              const obj = tmp22(4414);
+              canUseAnimatedAvatarResult = tmp22(4415).canUseAnimatedAvatar(closure_129_3);
+              const obj = tmp22(4415);
             }
             closure_128_3 = canUseAnimatedAvatarResult;
             if ((function isGIF(str) {
@@ -104,21 +104,21 @@ export default function useUploadAvatar(guildId) {
           }
           const obj10 = { imageUri: base64, description: null, originalMd5: null };
           tmp22 = tmp2;
-          const obj2 = tmp2(14869);
-          obj10.description = tmp2(8438).generateAvatarDescription();
+          const obj2 = tmp2(14875);
+          obj10.description = tmp2(8442).generateAvatarDescription();
           obj10.originalMd5 = originalMd5;
           closure_128_4 = obj2.createPendingImage(obj10);
           if (closure_129_1) {
-            tmp28(8436).setTryItOutAvatar(closure_128_4);
-            const tmp28Result = tmp28(8436);
+            tmp28(8440).setTryItOutAvatar(closure_128_4);
+            const tmp28Result = tmp28(8440);
           } else {
             const obj11 = { guildId: closure_129_0, avatar: closure_128_4 };
-            tmp28(8433).setPendingChanges(obj11);
-            const tmp28Result2 = tmp28(8433);
-            const result = tmp2(8435).announcePendingAvatarChange("set");
-            const obj7 = tmp2(8435);
+            tmp28(8437).setPendingChanges(obj11);
+            const tmp28Result2 = tmp28(8437);
+            const result = tmp2(8439).announcePendingAvatarChange("set");
+            const obj7 = tmp2(8439);
           }
-          const obj4 = tmp2(8438);
+          const obj4 = tmp2(8442);
         }
       } catch (tmp38) {
         c3 = tmp;

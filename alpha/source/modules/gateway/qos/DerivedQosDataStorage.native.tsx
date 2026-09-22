@@ -1,12 +1,12 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14480
+// Function ID: 14481
 // Name: DerivedQosDataStorage
-// Dependencies: [3, 13902, 2]
+// Dependencies: [3, 13910, 2]
 // Exports: setDerivedQosData
 
-// Module 14474 (DerivedQosDataStorage)
+// Module 14480 (DerivedQosDataStorage)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13902 */;
+import NativeFastConnectModuleDefault from "NativeFastConnectModule" /* 13910 */;
 
 const logger = new LoggerDefault("DerivedQosDataStorage");
 const size = fn(2);

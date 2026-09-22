@@ -1,15 +1,15 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 14953
+// Function ID: 14954
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 14947, 504, 1115, 4348, 2]
+// Dependencies: [19, 502, 14954, 504, 1115, 4348, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 14946 (AuthSessionsUtils)
+// Module 14953 (AuthSessionsUtils)
 import util from "util" /* 1115 */;
 import _modDef4348 from "module_4348" /* 4348 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 14947 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 14954 */;
 
 require = fn;
 const size = fn(2);

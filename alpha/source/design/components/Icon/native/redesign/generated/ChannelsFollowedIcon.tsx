@@ -1,13 +1,13 @@
-// Module ID: 17307
-// Function ID: 17308
+// Module ID: 17319
+// Function ID: 17320
 // Name: ChannelsFollowedIcon
-// Dependencies: [19, 21, 576, 4456, 17308, 2]
+// Dependencies: [19, 21, 576, 4457, 17320, 2]
 // Exports: ChannelsFollowedIcon
 
-// Module 17307 (ChannelsFollowedIcon)
+// Module 17319 (ChannelsFollowedIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod17308 from "module_17308" /* 17308 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod17320 from "module_17320" /* 17320 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChannelsFollowedIcon = function ChannelsFollowedIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17308, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17320, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

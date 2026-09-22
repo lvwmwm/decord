@@ -1,18 +1,18 @@
-// Module ID: 14961
-// Function ID: 14962
+// Module ID: 14968
+// Function ID: 14969
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4405, 1372, 1074, 8670, 21, 4756, 576, 14962, 1115, 7624, 504, 7243, 5838, 5822, 5186, 2]
+// Dependencies: [19, 17, 4406, 1372, 1074, 8674, 21, 4757, 576, 14969, 1115, 7627, 504, 7245, 5840, 5824, 5187, 2]
 
-// Module 14961 (SettingsAccountHeader)
+// Module 14968 (SettingsAccountHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5838 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7243 */;
-import openUserSettings from "openUserSettings" /* 7624 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14962 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5840 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7245 */;
+import openUserSettings from "openUserSettings" /* 7627 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14969 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -28,10 +28,10 @@ function RestrictedAccountRedirect() {
 }
 const View = fn(17).View;
 const AnalyticsSections = fn(1074).AnalyticsSections;
-const SafetySettingsNoticeType = fn(8670).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8674).SafetySettingsNoticeType;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { header: { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 } };
 let closure_11 = createStyles.createStyles(obj);
 const obj3 = { paddingTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
@@ -62,8 +62,8 @@ export default noop.memo(() => {
       const obj10 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       obj10.onPress = callback;
-      obj9.trailing = React7(tmp2(5186).Button, obj10);
-      tmp14 = React7(tmp2(5822).TableRow, obj9);
+      obj9.trailing = React7(tmp2(5187).Button, obj10);
+      tmp14 = React7(tmp2(5824).TableRow, obj9);
     }
     items2[1] = tmp14;
     obj4.children = items2;

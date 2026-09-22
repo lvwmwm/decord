@@ -1,10 +1,10 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 7199
+// Function ID: 7200
 // Name: useLoginReset
-// Dependencies: [19, 502, 6834, 2]
+// Dependencies: [19, 502, 6836, 2]
 // Exports: default
 
-// Module 7197 (useLoginReset)
+// Module 7199 (useLoginReset)
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 

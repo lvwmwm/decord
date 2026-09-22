@@ -1,13 +1,13 @@
-// Module ID: 6626
-// Function ID: 6627
+// Module ID: 6628
+// Function ID: 6629
 // Name: RewardsMouseSpotIllustration
-// Dependencies: [21, 5804, 6627, 2]
+// Dependencies: [21, 5806, 6629, 2]
 // Exports: RewardsMouseSpotIllustration
 
-// Module 6626 (RewardsMouseSpotIllustration)
+// Module 6628 (RewardsMouseSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6627 from "module_6627" /* 6627 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6629 from "module_6629" /* 6629 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const RewardsMouseSpotIllustration = function RewardsMouseSpotIllustratio
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6627 };
+  const obj2 = { uri: _modDef6629 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

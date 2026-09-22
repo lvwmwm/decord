@@ -1,12 +1,12 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9621
+// Function ID: 9622
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 2095, 5628, 2]
+// Dependencies: [5, 2096, 5630, 2]
 // Exports: default
 
-// Module 9615 (selectAndWaitForVoiceChannelJoin)
+// Module 9621 (selectAndWaitForVoiceChannelJoin)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 let closure_5 = async function _selectAndWaitForVoiceChannelJoin(arg0, value) {
   if (c6 === 2) {
@@ -45,7 +45,7 @@ let closure_5 = async function _selectAndWaitForVoiceChannelJoin(arg0, value) {
           closure_129_2 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

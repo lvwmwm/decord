@@ -1,14 +1,14 @@
-// Module ID: 4893
-// Function ID: 4894
+// Module ID: 4894
+// Function ID: 4895
 // Name: getReportedPresetResolution
-// Dependencies: [1372, 4803, 4894, 2]
+// Dependencies: [1372, 4804, 4895, 2]
 // Exports: default
 
-// Module 4893 (getReportedPresetResolution)
-import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 4894 */;
+// Module 4894 (getReportedPresetResolution)
+import getFrontierTuningConfigIfEligibleDefault from "getFrontierTuningConfigIfEligible" /* 4895 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const StreamSettingsConstants = fn(4803);
+const StreamSettingsConstants = fn(4804);
 ({ ApplicationStreamFPS: c3, ApplicationStreamResolutions: closure_4 } = StreamSettingsConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/go_live/utils/getReportedPresetResolution.tsx");

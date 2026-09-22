@@ -1,17 +1,17 @@
-// Module ID: 18115
-// Function ID: 18116
+// Module ID: 18127
+// Function ID: 18128
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 4675, 2063, 18116, 1074, 504, 1115, 18134, 1881, 2]
+// Dependencies: [19, 4676, 2064, 18128, 1074, 504, 1115, 18146, 1881, 2]
 // Exports: getGuildAnalyticsCardProps, useGuildAnalyticsOverview
 
-// Module 18115 (GuildSettingsAnalyticsUtils)
+// Module 18127 (GuildSettingsAnalyticsUtils)
 import util from "util" /* 1115 */;
 import NumberUtils from "NumberUtils" /* 1881 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 18134 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 18146 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4675 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 18116 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4676 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 18128 */;
 
 const require = globalThis.__r;
 

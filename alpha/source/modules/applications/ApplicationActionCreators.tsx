@@ -1,14 +1,14 @@
-// Module ID: 7408
-// Function ID: 7409
+// Module ID: 7410
+// Function ID: 7411
 // Name: ApplicationActionCreators
-// Dependencies: [5, 7409, 2002, 4983, 1074, 573, 1271, 504, 2]
+// Dependencies: [5, 7411, 2002, 4984, 1074, 573, 1271, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 7408 (ApplicationActionCreators)
+// Module 7410 (ApplicationActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7409 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7411 */;
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+import ApplicationStore from "ApplicationStore" /* 4984 */;
 
 const require = globalThis.__r;
 
@@ -62,7 +62,7 @@ let closure_10 = async function _fetchApplication(arg0, value) {
           closure_131_3 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

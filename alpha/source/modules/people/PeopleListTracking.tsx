@@ -1,10 +1,10 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13434
+// Function ID: 13435
 // Name: PeopleListTracking
 // Dependencies: [1074, 1241, 2]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote
 
-// Module 13429 (PeopleListTracking)
+// Module 13434 (PeopleListTracking)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import size from "module_2" /* 2 */;

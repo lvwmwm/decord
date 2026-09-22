@@ -1,10 +1,10 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9922
+// Function ID: 9923
 // Name: trackVoiceAndVideoSettingsUpdate
 // Dependencies: [1074, 1241, 2]
 // Exports: default
 
-// Module 9916 (trackVoiceAndVideoSettingsUpdate)
+// Module 9922 (trackVoiceAndVideoSettingsUpdate)
 import Constants from "Constants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import size from "module_2" /* 2 */;

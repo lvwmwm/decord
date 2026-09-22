@@ -1,19 +1,19 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15304
+// Function ID: 15305
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 5661, 1074, 11546, 11741, 15295, 1110, 5666, 7964, 11751, 7954, 5668, 15292, 2]
+// Dependencies: [19, 5663, 1074, 11550, 11745, 15302, 1110, 5668, 7967, 11755, 7957, 5670, 15299, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 15297 (useBountyPauseAppStoreSheet)
+// Module 15304 (useBountyPauseAppStoreSheet)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import AdCreativeType from "AdCreativeType" /* 5668 */;
-import AnalyticsActions from "AnalyticsActions" /* 7954 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15292 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15295 */;
+import AdCreativeType from "AdCreativeType" /* 5670 */;
+import AnalyticsActions from "AnalyticsActions" /* 7957 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15299 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15302 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5661).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5663).QuestsExperimentLocations;
 const ComponentActions = fn(1074).ComponentActions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyPauseAppStoreSheet.tsx");
@@ -75,7 +75,7 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
     if (directAppStoreLinkFromCta == null) {
       url = tmp3.cta.url;
     }
-    const obj4 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null };
+    const obj4 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null, appStoreOverlayCarouselScrollContext: null };
     const obj3 = bounty(sourceQuestContent[9]);
     obj4.inlineStoreParams = tmp(tmp2[9]).getInlineStoreParamsFromCta(trackingCtx.cta);
     obj4.trackOverlayEvent = function trackOverlayEvent(event, inlineStoreAppId, overlayVariant, timeSpentMs, overlaySurface) {
@@ -86,6 +86,7 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
       trackingCtx = AnalyticsActions;
       return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: bounty.id, adCreativeType: AdCreativeType.AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
     };
+    obj4.appStoreOverlayCarouselScrollContext = { adContentId: trackingCtx.id };
     const tmpResult = tmp(tmp2[9]);
     return obj3.openAppStoreOrUrl(obj4).then((result) => {
       if (result) {
@@ -112,7 +113,7 @@ export const useBountyPauseAppStoreSheet = function useBountyPauseAppStoreSheet(
     if (isActive) {
       if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
         if (null != c5) {
-          if (tmp4 === tmp2(11546).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+          if (tmp4 === tmp2(11550).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
             if (!ref.current) {
               tmp8.current = true;
               callback1().then((result) => {

@@ -1,31 +1,31 @@
-// Module ID: 17257
-// Function ID: 17258
+// Module ID: 17264
+// Function ID: 17265
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 1372, 2038, 1374, 21, 4756, 1365, 576, 13819, 7691, 4576, 2027, 504, 8455, 8496, 8507, 4607, 672, 4414, 17258, 11739, 17259, 17260, 12020, 5664, 17261, 15272, 1115, 17262, 17264, 8940, 7622, 5198, 2]
-// Exports: useHasSettingsBadge
+// Dependencies: [19, 17, 1372, 2039, 1374, 21, 1365, 576, 4757, 13827, 7694, 4577, 2028, 504, 8459, 8500, 8511, 4608, 672, 4415, 17265, 11743, 17266, 17267, 12024, 5666, 17268, 15279, 1115, 17269, 17271, 8945, 7625, 5199, 2]
+// Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 17257 (YouBannerDecorations)
+// Module 17264 (YouBannerDecorations)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import QuestTypes from "QuestTypes" /* 5664 */;
-import useTrialOffer from "useTrialOffer" /* 7691 */;
-import QuestUtils from "QuestUtils" /* 12020 */;
-import PromotionsHooks from "PromotionsHooks" /* 13819 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17260 */;
+import dismissible_content from "dismissible_content" /* 2028 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import useTrialOffer from "useTrialOffer" /* 7694 */;
+import QuestUtils from "QuestUtils" /* 12024 */;
+import PromotionsHooks from "PromotionsHooks" /* 13827 */;
+import you_tracking_Tracking from "you/tracking/Tracking" /* 17267 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 let closure_9 = fn(1374).PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID;
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_13 = createStyles.createStyles((arg0, arg1, color, borderColor) => {
   const obj = { containerFloatingWrap: null, containerFloatingGradient: null, containerFloating: null, buttonsFloating: null, loading: null };
   const obj2 = {};
@@ -147,12 +147,12 @@ export default noop.memo((navigateToPremium) => {
     navigateToSettings();
     let tmp5 = closure_7;
     if (closure_7) {
-      tmp5 = !tmp(4576).UNSAFE_isDismissibleContentDismissed(tmp(2027).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult = tmp(4576);
+      tmp5 = !tmp(4577).UNSAFE_isDismissibleContentDismissed(tmp(2028).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult = tmp(4577);
     }
     if (tmp5) {
-      const result1 = tmp(4576).UNSAFE_markDismissibleContentAsDismissed(tmp(2027).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
-      const tmpResult2 = tmp(4576);
+      const result1 = tmp(4577).UNSAFE_markDismissibleContentAsDismissed(tmp(2028).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const tmpResult2 = tmp(4577);
     }
   }, items2);
   const callback1 = obj4.useCallback(() => {
@@ -228,6 +228,15 @@ export default noop.memo((navigateToPremium) => {
   obj10.children = items8;
   return closure_12(isBadged, obj10);
 });
+export const getFloatingNavBottomMargin = function getFloatingNavBottomMargin(bottom) {
+  const space = nativeDefault.space;
+  if (isIOSResult) {
+    let PX_24 = space.PX_24;
+  } else {
+    PX_24 = space.PX_4 + bottom;
+  }
+  return PX_24;
+};
 export const useHasSettingsBadge = function useHasSettingsBadge() {
   let tmp = PromotionsHooks.useUnseenOutboundPromotions().length > 0;
   const tmp2 = null != useTrialOffer.useTrialOffer(closure_9);

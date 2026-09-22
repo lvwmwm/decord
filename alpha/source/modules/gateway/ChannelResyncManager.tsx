@@ -1,21 +1,21 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 17763
+// Function ID: 17764
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 2041, 5106, 2063, 5494, 1074, 2048, 3, 1091, 7363, 1241, 573, 7888, 13933, 1385, 1255, 2]
+// Dependencies: [5, 502, 2042, 5107, 2064, 5496, 1074, 2049, 3, 1091, 7365, 1241, 573, 7891, 13941, 1385, 1255, 2]
 
-// Module 17751 (ChannelResyncManager)
+// Module 17763 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7888 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7891 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5106 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5107 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
 function handleGuildCreate(guild) {
@@ -509,7 +509,7 @@ function scheduleIntegrityCheck(guild_id) {
   }
 }
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ChannelFlags = fn(2048).ChannelFlags;
+const ChannelFlags = fn(2049).ChannelFlags;
 let closure_11 = new LoggerDefault("ChannelResyncManager");
 let closure_12 = 2 * DurationsDefault.Millis.SECOND;
 let closure_13 = 30 * DurationsDefault.Millis.SECOND;

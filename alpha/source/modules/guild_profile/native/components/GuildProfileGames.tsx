@@ -1,17 +1,17 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10028
+// Function ID: 10029
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 4756, 576, 8946, 8957, 10023, 4752, 10027, 4454, 4723, 10028, 1980, 5339, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 8951, 8962, 10029, 4753, 10033, 4455, 4724, 10034, 1980, 5341, 2]
 // Exports: default
 
-// Module 10022 (GuildProfileGames)
+// Module 10028 (GuildProfileGames)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8946 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
-import components_GameIconDefault from "components/GameIcon" /* 10023 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8951 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8962 */;
+import components_GameIconDefault from "components/GameIcon" /* 10029 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -45,7 +45,7 @@ function FavoriteGame(activityLevel) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { display: "flex", flexDirection: "row", gap: 8 }, favoriteGame: { display: "flex", flexDirection: "row", alignItems: "center", gap: 8 }, lastItem: { position: "relative", width: 32, height: 32 }, lastItemOverlay: null, lastItemImage: null, lastItemText: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.xs };
 obj2.lastItemOverlay = rect;

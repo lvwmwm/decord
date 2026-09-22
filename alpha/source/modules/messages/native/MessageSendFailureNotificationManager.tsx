@@ -1,18 +1,18 @@
-// Module ID: 18274
-// Function ID: 18275
+// Module ID: 18287
+// Function ID: 18288
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [2095, 4577, 1372, 1979, 1074, 9317, 10351, 10353, 9557, 1115, 7363, 2]
+// Dependencies: [2096, 4578, 1372, 1979, 1074, 9323, 10357, 10359, 9563, 1115, 7365, 2]
 
-// Module 18274 (MessageSendFailureNotificationManager)
+// Module 18287 (MessageSendFailureNotificationManager)
 import util from "util" /* 1115 */;
-import PushNotificationDefault from "PushNotification" /* 9557 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10351 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10353 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import PushNotificationDefault from "PushNotification" /* 9563 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10357 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10359 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
 import UserStore from "UserStore" /* 1372 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
 function handleMessageSendFailure(shouldNotify) {
@@ -79,7 +79,7 @@ function handleMessageCreate(message) {
 }
 const Constants = fn(1074);
 ({ InAppNotificationTypes: closure_7, MessageStates: closure_8 } = Constants);
-const LocalNotificationTypes = fn(9317).LocalNotificationTypes;
+const LocalNotificationTypes = fn(9323).LocalNotificationTypes;
 const prototype = function MessageSendFailureNotificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   applyArgumentsResult.actions = { MESSAGE_CREATE: handleMessageCreate, MESSAGE_SEND_FAILED: handleMessageSendFailure };

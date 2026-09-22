@@ -1,12 +1,12 @@
-// Module ID: 4544
-// Function ID: 4545
+// Module ID: 4545
+// Function ID: 4546
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 4486, 4545, 4541, 2]
+// Dependencies: [109, 19, 21, 4487, 4546, 4542, 2]
 
-// Module 4544 (BountiesScrollGradientRive)
-import BaseRive from "BaseRive" /* 4486 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4541 */;
-import _modDef4545 from "module_4545" /* 4545 */;
+// Module 4545 (BountiesScrollGradientRive)
+import BaseRive from "BaseRive" /* 4487 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4542 */;
+import _modDef4546 from "module_4546" /* 4546 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,7 +28,7 @@ let closure_8 = noop.forwardRef(function BountiesScrollGradientRiveInner(default
   }
   const tmp2 = _objectWithoutProperties(defaultViewModelInstance, closure_3);
   const merged = Object.assign(tmp2);
-  return jsx(BaseRive.BaseRive, { ref, src: _modDef4545, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
+  return jsx(BaseRive.BaseRive, { ref, src: _modDef4546, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BountiesScrollGradientRive.tsx");

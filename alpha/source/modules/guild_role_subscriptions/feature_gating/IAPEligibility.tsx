@@ -1,15 +1,15 @@
-// Module ID: 5716
-// Function ID: 5717
+// Module ID: 5718
+// Function ID: 5719
 // Name: IAPEligibility
-// Dependencies: [19, 2063, 1074, 1364, 5717, 563, 2]
+// Dependencies: [19, 2064, 1074, 1364, 5719, 563, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5716 (IAPEligibility)
+// Module 5718 (IAPEligibility)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
-const getSystemVersion = tmp(5717);
+const getSystemVersion = tmp(5719);
 require = fn;
 let c4 = "13.2";
 let items = [fn(1074).GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
@@ -79,7 +79,7 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
   _require = guildId;
   const memo = noop.useMemo(() => {
-    const str = guildId(5717).getSystemVersion();
+    const str = guildId(5719).getSystemVersion();
     let tmp = null != str;
     if (tmp) {
       const parts = str.split(".");

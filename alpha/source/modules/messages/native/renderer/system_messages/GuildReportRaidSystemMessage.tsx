@@ -1,20 +1,20 @@
-// Module ID: 8298
-// Function ID: 8299
+// Module ID: 8302
+// Function ID: 8303
 // Name: GuildReportRaidSystemMessage
-// Dependencies: [2041, 2063, 8211, 8218, 8291, 8220, 8292, 8222, 1115, 1400, 1397, 2]
+// Dependencies: [2042, 2064, 8215, 8222, 8295, 8224, 8296, 8226, 1115, 1400, 1397, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 8298 (GuildReportRaidSystemMessage)
+// Module 8302 (GuildReportRaidSystemMessage)
 import util from "util" /* 1115 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8211 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8218 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8220 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8291 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8292 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8215 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8222 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8224 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8295 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8296 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
 require = fn;
 const size = fn(2);
@@ -41,7 +41,7 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   }
   obj3.guildName = str;
   const obj4 = {};
-  const merged = Object.assign(tmp(8222)(roleStyle));
+  const merged = Object.assign(tmp(8226)(roleStyle));
   const intl = tmp8(1115).intl;
   obj4.content = intl.formatToParts(util.t["MTmH+u"], obj3);
   const intl2 = tmp8(1115).intl;

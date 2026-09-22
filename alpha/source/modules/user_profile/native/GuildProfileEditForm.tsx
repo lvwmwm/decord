@@ -1,24 +1,24 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 14934
+// Function ID: 14935
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2105, 7857, 7453, 1074, 1374, 21, 4414, 7407, 7427, 14867, 4723, 14868, 1980, 8435, 1115, 8433, 9427, 8510, 14879, 8431, 6867, 7226, 576, 11413, 14922, 504, 8455, 9630, 8511, 8438, 14230, 14928, 8496, 8507, 4752, 4466, 14929, 11378, 11379, 11419, 14889, 4600, 14890, 14899, 14901, 14902, 14906, 14910, 14898, 9506, 9476, 2]
+// Dependencies: [109, 19, 17, 2105, 7860, 7455, 1074, 1374, 21, 4415, 7409, 7429, 14873, 4724, 14874, 1980, 8439, 1115, 8437, 9433, 8514, 14885, 8435, 6869, 7228, 576, 11417, 14929, 504, 8459, 9636, 8515, 8442, 14237, 14935, 8500, 8511, 4753, 4467, 14936, 11382, 11383, 11423, 14895, 4601, 14896, 14905, 14907, 14908, 14912, 14916, 14904, 9512, 9482, 2]
 // Exports: default
 
-// Module 14927 (GuildProfileEditForm)
+// Module 14934 (GuildProfileEditForm)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7407 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8433 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8435 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9476 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14867 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8437 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8439 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9482 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14873 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import UserProfileStore from "UserProfileStore" /* 7857 */;
+import UserProfileStore from "UserProfileStore" /* 7860 */;
 
 require = fn;
 function EditGuildProfileBanner(user) {
@@ -37,8 +37,8 @@ function EditGuildProfileBanner(user) {
   obj3.onPressEdit = function onPressEdit() {
     if (c4) {
       const obj = { user, analyticsLocations, showRemoveBanner: null, removeText: null, onBannerChange: null };
-      const tmpResult = tmp(4723);
-      const tmp13 = asyncRequireImpl(14868, dependencyMap.paths);
+      const tmpResult = tmp(4724);
+      const tmp13 = asyncRequireImpl(14874, dependencyMap.paths);
       banner = undefined;
       if (banner != null) {
         banner = banner.banner;
@@ -57,20 +57,20 @@ function EditGuildProfileBanner(user) {
       obj2.analyticsLocations = analyticsLocations;
       const obj4 = { type: PremiumUpsellTypes.PREMIUM_GUILD_IDENTITY_MODAL };
       obj2.analyticsProperties = obj4;
-      const result = tmp(9427).handleShowUpsellAlert(obj2);
-      const tmpResult2 = tmp(9427);
+      const result = tmp(9433).handleShowUpsellAlert(obj2);
+      const tmpResult2 = tmp(9433);
     }
   };
   let intl = tmp5(1115).intl;
   obj3.editButtonAccessibilityLabel = intl.string(user(1115).t["95hPAe"]);
   obj3.editDisabled = disabled;
   obj2.children = closure_17(UserProfileEditBannerButtonDefault, obj3);
-  return closure_17(user(7407).AnalyticsLocationProvider, obj2);
+  return closure_17(user(7409).AnalyticsLocationProvider, obj2);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 get_ActivityIndicator = fn(17);
 ({ ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const FLOATING_UPSELL_HEIGHT = fn(7453).FLOATING_UPSELL_HEIGHT;
+const FLOATING_UPSELL_HEIGHT = fn(7455).FLOATING_UPSELL_HEIGHT;
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_11, AnalyticsSections } = Constants);
 ({ DISPLAY_NAME_MAX_LENGTH: map1, PRONOUNS_MAX_LENGTH: closure_14, UpsellTypes: closure_15, AnalyticsPages } = Constants);

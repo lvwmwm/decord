@@ -1,12 +1,12 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13381
+// Function ID: 13382
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4405, 1372, 504, 13356, 2]
+// Dependencies: [19, 4406, 1372, 504, 13361, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 13376 (useUserProfileGameFriendApplicationIds)
+// Module 13381 (useUserProfileGameFriendApplicationIds)
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;

@@ -1,20 +1,20 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 17154
+// Function ID: 17155
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 4756, 576, 1177, 4752, 4600, 4909, 11174, 5306, 1115, 5239, 5824, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 1177, 4753, 4601, 4910, 11180, 5308, 1115, 5241, 5826, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 17142 (SearchListCard)
+// Module 17154 (SearchListCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useChannelNameDefault from "useChannelName" /* 4909 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import ForumIcon from "ForumIcon" /* 5306 */;
-import Card from "Card" /* 5824 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11174 */;
+import UserUtilsDefault from "UserUtils" /* 4601 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import useChannelNameDefault from "useChannelName" /* 4910 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
+import ForumIcon from "ForumIcon" /* 5308 */;
+import Card from "Card" /* 5826 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11180 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -82,7 +82,7 @@ class SearchListGuildChannel {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { channelName: { flexShrink: 1, marginStart: 4 }, channelIcon: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, avatar: { marginRight: 2 }, channel: { flexDirection: "row", alignItems: "center" }, author: { flexDirection: "row", alignItems: "center" }, authorName: { flexShrink: 1, marginStart: 2 }, container: null, content: null, footer: null, thumbnail: null, privateChannelIcon: null, icon: null, gdmIcon: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj2.container = { flex: 1, padding: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };

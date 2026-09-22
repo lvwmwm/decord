@@ -1,13 +1,13 @@
-// Module ID: 13277
-// Function ID: 13278
+// Module ID: 13282
+// Function ID: 13283
 // Name: useEntranceAnimation
-// Dependencies: [32, 19, 1177, 560, 1248, 4757, 4492, 2]
+// Dependencies: [32, 19, 1177, 560, 1248, 4758, 4493, 2]
 // Exports: useEntranceAnimation
 
-// Module 13277 (useEntranceAnimation)
+// Module 13282 (useEntranceAnimation)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -49,9 +49,9 @@ export const useEntranceAnimation = function useEntranceAnimation(entranceAnimat
       ReactBatchUpdates.batchUpdates(() => state.setState({ isComplete: false }));
       const obj3 = timing;
       const fn = function t() {
-        closure_0(4492).runOnJS(setUseEntranceAnimationState)({ isComplete: true });
-        obj = closure_0(4492);
-        closure_0(4492).runOnJS(incrementLoads)();
+        closure_0(4493).runOnJS(setUseEntranceAnimationState)({ isComplete: true });
+        obj = closure_0(4493);
+        closure_0(4493).runOnJS(incrementLoads)();
       };
       obj4 = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState, incrementLoads };
       fn.__closure = obj4;

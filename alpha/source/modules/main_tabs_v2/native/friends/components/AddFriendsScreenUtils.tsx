@@ -1,14 +1,14 @@
-// Module ID: 16383
-// Function ID: 16384
+// Module ID: 16394
+// Function ID: 16395
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 2041, 1074, 4749, 11132, 4769, 4453, 1115, 12518, 7698, 10003, 2]
+// Dependencies: [5, 2042, 1074, 4750, 11138, 4770, 4454, 1115, 12522, 7701, 10009, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 16383 (AddFriendsScreenUtils)
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10003 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11132 */;
+// Module 16394 (AddFriendsScreenUtils)
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11138 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 
 const require = fn;
 let closure_7 = async function _sendWave(arg0, value) {
@@ -50,7 +50,7 @@ let closure_7 = async function _sendWave(arg0, value) {
           let dMFromUserId;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp8) {
@@ -143,7 +143,7 @@ let closure_7 = async function _sendWave(arg0, value) {
   }
 };
 const AnalyticsSections = fn(1074).AnalyticsSections;
-const MessageSendLocation = fn(4749).MessageSendLocation;
+const MessageSendLocation = fn(4750).MessageSendLocation;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/components/AddFriendsScreenUtils.tsx");
 

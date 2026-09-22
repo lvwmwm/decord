@@ -1,10 +1,9 @@
 // Module ID: 7088
 // Function ID: 7089
-// Dependencies: [17]
+// Dependencies: [7089]
 
 // Module 7088
-import _mod17 from "module_17" /* 17 */;
+import _modDef7089 from "module_7089" /* 7089 */;
 
-const StyleSheet = _mod17.StyleSheet;
 
-export const styles = StyleSheet.create({ container: { flex: 1, overflow: "visible" } });
+export default _modDef7089;

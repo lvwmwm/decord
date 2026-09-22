@@ -1,13 +1,13 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 9135
+// Function ID: 9136
 // Name: useFetchVirtualCurrencyBalance
-// Dependencies: [19, 9131, 504, 9132, 2]
+// Dependencies: [19, 9136, 504, 9137, 2]
 // Exports: useFetchVirtualCurrencyBalance
 
-// Module 9130 (useFetchVirtualCurrencyBalance)
+// Module 9135 (useFetchVirtualCurrencyBalance)
 import _mod19 from "module_19" /* 19 */;
-import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 9132 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9131 */;
+import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 9137 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9136 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

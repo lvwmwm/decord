@@ -1,23 +1,23 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11419
+// Function ID: 11420
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 7453, 21, 4756, 576, 8455, 8511, 8496, 8510, 8507, 4622, 4723, 11416, 1980, 4466, 8515, 8525, 11378, 11379, 11419, 9082, 2]
+// Dependencies: [19, 17, 7455, 21, 4757, 576, 8459, 8515, 8500, 8514, 8511, 4623, 4724, 11420, 1980, 4467, 8519, 8529, 11382, 11383, 11423, 9087, 2]
 // Exports: default
 
-// Module 11415 (CustomStatusPreview)
+// Module 11419 (CustomStatusPreview)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ChatInputUtils from "ChatInputUtils" /* 4622 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
+import ChatInputUtils from "ChatInputUtils" /* 4623 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(7453);
+const Constants = fn(7455);
 ({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: hasOwnProperty, UserProfileThemeTypes: metroRequire } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { flex: 1, position: "relative", overflow: "hidden", width: 323, maxHeight: 301, borderWidth: 1, borderColor: null, borderRadius: null };
   const colors = nativeDefault.colors;
@@ -55,7 +55,7 @@ export default function CustomStatusPreview(user) {
   ({ gradientFallbackBackground, avatarBackground, containerBackground } = userProfileColors);
   const callback = noop.useCallback(() => {
     ChatInputUtils.dismissKeyboard();
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11416, dependencyMap.paths), "UserProfileCustomStatusActionSheet", { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji }, "stack");
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11420, dependencyMap.paths), "UserProfileCustomStatusActionSheet", { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji }, "stack");
   }, items);
   const obj2 = { theme, primaryColor, secondaryColor, children: null };
   const obj3 = { style: null, children: null };

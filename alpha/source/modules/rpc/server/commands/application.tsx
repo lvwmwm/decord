@@ -1,17 +1,17 @@
-// Module ID: 14747
-// Function ID: 14748
+// Module ID: 14753
+// Function ID: 14754
 // Name: application
-// Dependencies: [4983, 4660, 1074, 9584, 9586, 14748, 9135, 9581, 9566, 1241, 1271, 9133, 2]
+// Dependencies: [4984, 4661, 1074, 9590, 9592, 14754, 9140, 9587, 9572, 1241, 1271, 9138, 2]
 
-// Module 14747 (application)
+// Module 14753 (application)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TestModeUtils from "TestModeUtils" /* 9133 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9135 */;
-import RPCErrorDefault from "RPCError" /* 9581 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9584 */;
-import RPCHelpers from "RPCHelpers" /* 9586 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14748 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+import TestModeUtils from "TestModeUtils" /* 9138 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9140 */;
+import RPCErrorDefault from "RPCError" /* 9587 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9590 */;
+import RPCHelpers from "RPCHelpers" /* 9592 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14754 */;
+import ApplicationStore from "ApplicationStore" /* 4984 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -42,7 +42,7 @@ export default {
       }
       const application = ApplicationStore.getApplication(id);
       if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-        const activeAnalyticsSessionIDs = tmp(9566).getActiveAnalyticsSessionIDs(id);
+        const activeAnalyticsSessionIDs = tmp(9572).getActiveAnalyticsSessionIDs(id);
         const obj4 = { activity_application_id: id, activity_channel_type: null, activity_guild_id: null, activity_user_session_id: null };
         let type;
         if (obj3 != null) {
@@ -55,21 +55,21 @@ export default {
           prop = activeAnalyticsSessionIDs.activityUserSessionId;
         }
         obj4.activity_user_session_id = prop;
-        const tmpResult2 = tmp(9566);
+        const tmpResult2 = tmp(9572);
         const obj5 = {};
         const merged = Object.assign(obj4);
         const merged1 = Object.assign(event_properties);
         tmp5(1241).track(args.event_name, obj5);
       } else {
         const obj6 = { errorCode: constants2.INVALID_COMMAND };
-        const tmp12 = new tmp5(9581)(obj6, "This application cannot access this API");
+        const tmp12 = new tmp5(9587)(obj6, "This application cannot access this API");
         throw tmp12;
       }
       tmpResult = ApplicationFlagUtils;
     }
   },
   [RPCCommands.GET_APPLICATION_TICKET]: {
-    scope: fn(4660).RPC_LOCAL_SCOPE,
+    scope: fn(4661).RPC_LOCAL_SCOPE,
     handler(socket) {
       const id = socket.socket.application.id;
       if (null == id) {

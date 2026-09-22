@@ -1,9 +1,9 @@
-// Module ID: 5382
-// Function ID: 5383
+// Module ID: 5384
+// Function ID: 5385
 // Name: AttachmentQualityMetricsExperiment
 // Dependencies: [1434, 2]
 
-// Module 5382 (AttachmentQualityMetricsExperiment)
+// Module 5384 (AttachmentQualityMetricsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

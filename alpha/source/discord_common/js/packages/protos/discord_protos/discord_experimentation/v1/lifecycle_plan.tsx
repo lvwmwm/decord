@@ -1,12 +1,12 @@
-// Module ID: 8139
-// Function ID: 8140
+// Module ID: 8143
+// Function ID: 8144
 // Name: lifecycle_plan
-// Dependencies: [32, 1187, 8140, 1216, 2]
+// Dependencies: [32, 1187, 8144, 1216, 2]
 
-// Module 8139 (lifecycle_plan)
+// Module 8143 (lifecycle_plan)
 import _mod1187 from "module_1187" /* 1187 */;
 import timestamp from "timestamp" /* 1216 */;
-import duration from "duration" /* 8140 */;
+import duration from "duration" /* 8144 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

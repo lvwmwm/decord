@@ -1,18 +1,18 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12074
+// Function ID: 12075
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 2041, 1074, 4749, 21, 4756, 576, 7698, 7918, 1241, 7427, 7226, 504, 7330, 1115, 12071, 10623, 5186, 4959, 5815, 5841, 7245, 2]
+// Dependencies: [32, 5, 19, 17, 2042, 1074, 4750, 21, 4757, 576, 7701, 7921, 1241, 7429, 7228, 504, 7332, 1115, 12075, 10629, 5187, 4960, 5817, 5843, 7247, 2]
 // Exports: default
 
-// Module 12070 (GiftIntentGifModal)
+// Module 12074 (GiftIntentGifModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
+import NavigatorHeader from "NavigatorHeader" /* 5843 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 
 const require = globalThis.__r;
 
@@ -61,7 +61,7 @@ let closure_13 = async function _sendGiftIntentGif(arg0, value) {
   await closure_130_1(closure_130_2[10]).sendMessage(id, closure_130_1(closure_130_2[11]).parse(closure_129_0, closure_129_3.url), true, { location: closure_130_9.GIFTING });
   closure_1 = tmp2;
   ({ channel: closure_129_0, giftIntentType: closure_129_1, text: closure_129_2, gif: closure_129_3 } = closure_0);
-  return "PX_16";
+  return "flex";
 };
 function GiftIntentGifModalBody(channelId) {
   channelId = channelId.channelId;
@@ -174,10 +174,10 @@ function GiftIntentGifModalBody(channelId) {
 }
 const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const MessageSendLocation = fn(4749).MessageSendLocation;
+const MessageSendLocation = fn(4750).MessageSendLocation;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, messageContainer: null, pickerContainer: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.messageContainer = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };

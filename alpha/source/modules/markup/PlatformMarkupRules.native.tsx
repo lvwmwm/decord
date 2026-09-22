@@ -1,21 +1,21 @@
-// Module ID: 5238
-// Function ID: 5239
+// Module ID: 5240
+// Function ID: 5241
 // Name: PlatformMarkupRules
-// Dependencies: [17, 5239, 5323, 2008, 1115, 4409, 1929, 5338, 5217, 1397, 5218, 5221, 2]
+// Dependencies: [17, 5241, 5325, 2009, 1115, 4410, 1929, 5340, 5218, 1397, 5219, 5222, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 5238 (PlatformMarkupRules)
+// Module 5240 (PlatformMarkupRules)
 import _mod17 from "module_17" /* 17 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import _modDef1929 from "module_1929" /* 1929 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2008 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5217 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5218 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5221 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import useGameMentionData from "useGameMentionData" /* 5323 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5338 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2009 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4410 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5218 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5219 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5222 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
+import useGameMentionData from "useGameMentionData" /* 5325 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5340 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;

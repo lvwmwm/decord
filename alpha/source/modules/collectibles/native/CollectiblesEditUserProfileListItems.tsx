@@ -1,24 +1,24 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 13483
+// Function ID: 13484
 // Name: CollectiblesEditUserProfileListItems
-// Dependencies: [19, 17, 1372, 1076, 21, 4756, 576, 5339, 4724, 4725, 1177, 13476, 4752, 1115, 7407, 7783, 4723, 13477, 9111, 504, 4414, 8442, 7796, 2]
+// Dependencies: [19, 17, 1372, 1076, 21, 4757, 576, 5341, 4725, 4726, 1177, 13484, 4753, 1115, 7409, 7786, 4724, 13485, 9116, 504, 4415, 8446, 7799, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 13475 (CollectiblesEditUserProfileListItems)
+// Module 13483 (CollectiblesEditUserProfileListItems)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import HapticUtils from "HapticUtils" /* 4724 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7783 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7796 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8442 */;
-import _modDef13476 from "module_13476" /* 13476 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import HapticUtils from "HapticUtils" /* 4725 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4726 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import Pressables from "Pressables" /* 5341 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7786 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7799 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8446 */;
+import _modDef13484 from "module_13484" /* 13484 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -63,7 +63,7 @@ const View = fn(17).View;
 let closure_6 = fn(1076).CollectiblesMobileShopScreen;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { pressable: { marginTop: 10, borderRadius: nativeDefault.radii.sm }, item: null, selected: null, optionCell: null, optionCellText: null, newIcon: null, lockIcon: null };
 let obj3 = { marginTop: 10, borderRadius: nativeDefault.radii.sm };
 obj2.item = { borderWidth: 2, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
@@ -82,7 +82,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
   const tmp = closure_9();
   const obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
-  const items = [React5(native.Icon, { source: _modDef13476, size: native.IconSizes.LARGE }), ];
+  const items = [React5(native.Icon, { source: _modDef13484, size: native.IconSizes.LARGE }), ];
   const obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText, children: null };
   const intl = util.intl;
   const string = intl.string;
@@ -102,7 +102,7 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   const merged = Object.assign(analyticsSource, Object.assign({ analyticsSource: 0 }));
   let analyticsLocations;
   const tmp2 = closure_9();
-  analyticsLocations = analyticsLocations(7407)(analyticsSource).analyticsLocations;
+  analyticsLocations = analyticsLocations(7409)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   let obj = {
     style: tmp2.optionCell,
@@ -114,12 +114,12 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
     }, items)
   };
   const merged1 = Object.assign(merged);
-  const items1 = [closure_7(analyticsSource(1177).Icon, { source: analyticsLocations(13477), size: analyticsSource(1177).IconSizes.LARGE }), , ];
+  const items1 = [closure_7(analyticsSource(1177).Icon, { source: analyticsLocations(13485), size: analyticsSource(1177).IconSizes.LARGE }), , ];
   const obj3 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: null };
   const intl = analyticsSource(1115).intl;
   obj3.children = intl.string(analyticsSource(1115).t.pWG4ze);
-  items1[1] = closure_7(analyticsSource(4752).Text, obj3);
-  items1[2] = closure_7(analyticsSource(9111).NewBadge, { style: tmp2.newIcon });
+  items1[1] = closure_7(analyticsSource(4753).Text, obj3);
+  items1[2] = closure_7(analyticsSource(9116).NewBadge, { style: tmp2.newIcon });
   obj.children = items1;
   return closure_8(EditCollectibleListItem, obj);
 };
@@ -136,8 +136,8 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   const isProductNewResult = CollectiblesUtils.isProductNew(skuId);
   let result = CollectiblesUtils.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp3(7796).isPremiumCollectiblesPurchase(purchase);
-    const tmp3Result = tmp3(7796);
+    result = tmp3(7799).isPremiumCollectiblesPurchase(purchase);
+    const tmp3Result = tmp3(7799);
   }
   const obj5 = { isSelected };
   const merged1 = Object.assign(merged);
@@ -145,7 +145,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   if (null == purchase) {
     if (!result) {
       const obj6 = { style: tmp2.lockIcon, isNew: isProductNewResult };
-      let tmp14 = React5(tmp3(9111).LockBadge, obj6);
+      let tmp14 = React5(tmp3(9116).LockBadge, obj6);
     }
     items1[1] = tmp14;
     obj5.children = items1;
@@ -157,7 +157,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
     if (!isTryItOut) {
       if (null == purchase) {
         const obj7 = { style: tmp2.lockIcon, isNew: isProductNewResult };
-        tmp15 = React5(tmp3(9111).PremiumBadge, obj7);
+        tmp15 = React5(tmp3(9116).PremiumBadge, obj7);
       } else {
         tmp15 = null;
       }

@@ -1,11 +1,11 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17258
+// Function ID: 17259
 // Name: getPendingRelationshipIds
-// Dependencies: [4405, 1074, 2]
+// Dependencies: [4406, 1074, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 17246 (getPendingRelationshipIds)
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+// Module 17258 (getPendingRelationshipIds)
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 
 function filterFromPending(arg0) {
   return RelationshipStore.isSpam(arg0) || RelationshipStore.isIgnored(arg0);

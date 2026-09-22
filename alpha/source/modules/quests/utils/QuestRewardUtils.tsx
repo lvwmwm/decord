@@ -1,19 +1,19 @@
-// Module ID: 11553
-// Function ID: 11554
+// Module ID: 11557
+// Function ID: 11558
 // Name: QuestRewardUtils
-// Dependencies: [7784, 11554, 7944, 7935, 3991, 1115, 11555, 11556, 11557, 11558, 11559, 5664, 2]
+// Dependencies: [7787, 11558, 7947, 7938, 3991, 1115, 11559, 11560, 11561, 11562, 11563, 5666, 2]
 // Exports: getCollectibleQuestRewardDuration, getCollectibleQuestRewardExtendableExpirationDate, getCollectiblesQuestReward, getCollectiblesQuestRewardItem, getDefaultPlatform, getDefaultRewardName, getDefaultRewardNameWithArticle, getInGameQuestReward, getPlatformString, getQuestOrbMultiplier, getQuestOrbMultiplierForUser, getQuestOrbRewardQuantityForUser, getQuestPrimaryReward, getRewardCodeQuestReward, getVirtualCurrencyRewardOrbQuantity, getVirtualCurrencyRewardPremiumOrbQuantity, hasCollectiblesQuestReward, hasFractionalPremiumQuestReward, hasInGameQuestReward, hasPremiumOrbQuantity, hasQuestRewardCode, hasVirtualCurrencyReward, isCollectibleQuestRewardPermanentWithPremiumSubscription, isCollectibleQuestRewardPremiumExtendable, isTieredRewardCodeQuest
 
-// Module 11553 (QuestRewardUtils)
+// Module 11557 (QuestRewardUtils)
 import util from "util" /* 1115 */;
-import QuestTypes from "QuestTypes" /* 5664 */;
-import QuestDataUtils from "QuestDataUtils" /* 7935 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7944 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 11555 */;
-import FractionalPremiumUtils from "FractionalPremiumUtils" /* 11557 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 11558 */;
-import QuestRewardAssignmentMethods from "QuestRewardAssignmentMethods" /* 11559 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import QuestDataUtils from "QuestDataUtils" /* 7938 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7947 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 11559 */;
+import FractionalPremiumUtils from "FractionalPremiumUtils" /* 11561 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 11562 */;
+import QuestRewardAssignmentMethods from "QuestRewardAssignmentMethods" /* 11563 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7787 */;
 
 require = fn;
 function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
@@ -50,7 +50,7 @@ function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
               let orbQuantity = orbQuantity2;
             }
             num = orbQuantity;
-            tmp15Result = tmp15(11556);
+            tmp15Result = tmp15(11560);
           }
           orbQuantity = found.orbQuantity;
           tmp15 = require;
@@ -77,7 +77,7 @@ function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
     }
   }
 }
-let items = [fn(11554).QuestRewardExpirationMode.PREMIUM_EXTENSION, fn(11554).QuestRewardExpirationMode.PREMIUM_PERMANENT];
+let items = [fn(11558).QuestRewardExpirationMode.PREMIUM_EXTENSION, fn(11558).QuestRewardExpirationMode.PREMIUM_PERMANENT];
 const set = new Set(items);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/utils/QuestRewardUtils.tsx");
@@ -322,14 +322,14 @@ export const isCollectibleQuestRewardPermanentWithPremiumSubscription = function
       type1 = found1.type;
     }
     let tmp11 = null;
-    if (type1 === tmp3(7944).QuestRewardTypes.COLLECTIBLE) {
+    if (type1 === tmp3(7947).QuestRewardTypes.COLLECTIBLE) {
       tmp11 = found1;
     }
     let expirationMode1;
     if (tmp11 != null) {
       expirationMode1 = tmp11.expirationMode;
     }
-    hasItem = expirationMode1 === tmp3(11554).QuestRewardExpirationMode.PREMIUM_PERMANENT;
+    hasItem = expirationMode1 === tmp3(11558).QuestRewardExpirationMode.PREMIUM_PERMANENT;
   }
   return hasItem;
 };
@@ -415,7 +415,7 @@ export const getQuestOrbMultiplierForUser = function getQuestOrbMultiplierForUse
       if (tmp2Result2.shouldReceiveQuestOrbMultiplier(questOrbMultiplierEligibilityForUser)) {
         num6 = num;
       }
-      tmp2Result2 = tmp2(11556);
+      tmp2Result2 = tmp2(11560);
     }
     return num6;
   }
@@ -494,16 +494,16 @@ export const getPlatformString = function getPlatformString(arg0) {
   if (QuestTypes.QuestRewardCodePlatforms.XBOX === arg0) {
     const intl5 = tmp(1115).intl;
     return intl5.string(tmp(1115).t.G84UWZ);
-  } else if (tmp(5664).QuestRewardCodePlatforms.PLAYSTATION === arg0) {
+  } else if (tmp(5666).QuestRewardCodePlatforms.PLAYSTATION === arg0) {
     const intl4 = tmp(1115).intl;
     return intl4.string(tmp(1115).t["6IeKx2"]);
-  } else if (tmp(5664).QuestRewardCodePlatforms.SWITCH === arg0) {
+  } else if (tmp(5666).QuestRewardCodePlatforms.SWITCH === arg0) {
     const intl3 = tmp(1115).intl;
     return intl3.string(tmp(1115).t["1pp0su"]);
-  } else if (tmp(5664).QuestRewardCodePlatforms.PC === arg0) {
+  } else if (tmp(5666).QuestRewardCodePlatforms.PC === arg0) {
     const intl2 = tmp(1115).intl;
     return intl2.string(tmp(1115).t["YK+wUg"]);
-  } else if (tmp(5664).QuestRewardCodePlatforms.CROSS_PLATFORM === arg0) {
+  } else if (tmp(5666).QuestRewardCodePlatforms.CROSS_PLATFORM === arg0) {
     const intl = tmp(1115).intl;
     return intl.string(tmp(1115).t.UWVbzV);
   }

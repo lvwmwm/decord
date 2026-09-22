@@ -1,12 +1,12 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12778
+// Function ID: 12779
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4748, 504, 2]
+// Dependencies: [4749, 504, 2]
 // Exports: default, getGuildPowerupBannerImage
 
-// Module 12774 (useGetGuildPowerupBannerImage)
+// Module 12778 (useGetGuildPowerupBannerImage)
 import initialize from "initialize" /* 504 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
 const size = fn(2);

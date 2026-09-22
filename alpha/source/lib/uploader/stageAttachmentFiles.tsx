@@ -1,10 +1,10 @@
-// Module ID: 8085
-// Function ID: 8086
+// Module ID: 8088
+// Function ID: 8089
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1074, 5343, 2]
+// Dependencies: [5, 1074, 5345, 2]
 // Exports: default
 
-// Module 8085 (stageAttachmentFiles)
+// Module 8088 (stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -58,7 +58,7 @@ let closure_4 = async function _stageAttachmentFiles() {
   }
   closure_131_1 = flag;
   closure_131_2 = closure_2;
-  return "PX_16";
+  return "flex";
 };
 const AbortCodes = fn(1074).AbortCodes;
 const size = fn(2);

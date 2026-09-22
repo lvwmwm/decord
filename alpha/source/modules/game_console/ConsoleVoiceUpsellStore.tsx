@@ -1,10 +1,10 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17594
+// Function ID: 17595
 // Name: ConsoleVoiceUpsellStore
 // Dependencies: [560, 1248, 2]
 // Exports: setShowConsoleVoiceSparkles, setVoiceUpsellDismissed
 
-// Module 17583 (ConsoleVoiceUpsellStore)
+// Module 17594 (ConsoleVoiceUpsellStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

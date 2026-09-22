@@ -1,19 +1,19 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11272
+// Function ID: 11273
 // Name: useVibegrationsChannelProject
-// Dependencies: [19, 2105, 2063, 4395, 9309, 1074, 5274, 504, 9310, 11, 5275, 2]
+// Dependencies: [19, 2105, 2064, 4396, 9314, 1074, 5276, 504, 9315, 11, 5277, 2]
 // Exports: default
 
-// Module 11266 (useVibegrationsChannelProject)
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9310 */;
+// Module 11272 (useVibegrationsChannelProject)
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9315 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9314 */;
 
 require = fn;
-const isProjectOwner = fn(9309).isProjectOwner;
+const isProjectOwner = fn(9314).isProjectOwner;
 const Permissions = fn(1074).Permissions;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsChannelProject.tsx");

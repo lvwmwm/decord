@@ -1,13 +1,13 @@
-// Module ID: 6128
-// Function ID: 6129
+// Module ID: 6130
+// Function ID: 6131
 // Name: DevCommerceWideAbstractUI
-// Dependencies: [21, 5804, 6129, 2]
+// Dependencies: [21, 5806, 6131, 2]
 // Exports: DevCommerceWideAbstractUI
 
-// Module 6128 (DevCommerceWideAbstractUI)
+// Module 6130 (DevCommerceWideAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6129 from "module_6129" /* 6129 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6131 from "module_6131" /* 6131 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const DevCommerceWideAbstractUI = function DevCommerceWideAbstractUI(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6129 };
+  const obj2 = { uri: _modDef6131 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

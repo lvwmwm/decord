@@ -1,13 +1,13 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7456
+// Function ID: 7457
 // Name: ChevronSmallRightIcon
-// Dependencies: [19, 21, 576, 4456, 5830, 2]
+// Dependencies: [19, 21, 576, 4457, 5832, 2]
 // Exports: ChevronSmallRightIcon
 
-// Module 7454 (ChevronSmallRightIcon)
+// Module 7456 (ChevronSmallRightIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod5830 from "module_5830" /* 5830 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod5832 from "module_5832" /* 5832 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChevronSmallRightIcon = function ChevronSmallRightIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5830, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5832, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

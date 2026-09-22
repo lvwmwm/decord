@@ -1,13 +1,13 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6048
+// Function ID: 6049
 // Name: BountiesPosterSpotIllustration
-// Dependencies: [21, 5804, 6047, 2]
+// Dependencies: [21, 5806, 6049, 2]
 // Exports: BountiesPosterSpotIllustration
 
-// Module 6046 (BountiesPosterSpotIllustration)
+// Module 6048 (BountiesPosterSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6047 from "module_6047" /* 6047 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6049 from "module_6049" /* 6049 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const BountiesPosterSpotIllustration = function BountiesPosterSpotIllustr
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6047 };
+  const obj2 = { uri: _modDef6049 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

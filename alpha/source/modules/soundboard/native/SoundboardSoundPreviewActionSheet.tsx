@@ -1,20 +1,20 @@
-// Module ID: 17539
-// Function ID: 17540
+// Module ID: 17551
+// Function ID: 17552
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 2041, 1372, 5224, 1074, 21, 4756, 576, 1364, 17537, 17536, 17522, 504, 7580, 7586, 1241, 5186, 10493, 10499, 1115, 10388, 8901, 7442, 7375, 12188, 4752, 5313, 8545, 2]
+// Dependencies: [32, 19, 17, 2042, 1372, 5225, 1074, 21, 4757, 576, 1364, 17549, 17548, 17534, 504, 7583, 7589, 1241, 5187, 10499, 10505, 1115, 10394, 8906, 7444, 7377, 12192, 4753, 5315, 8549, 2]
 // Exports: default
 
-// Module 17539 (SoundboardSoundPreviewActionSheet)
+// Module 17551 (SoundboardSoundPreviewActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7580 */;
-import SoundboardUtils from "SoundboardUtils" /* 7586 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17522 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7583 */;
+import SoundboardUtils from "SoundboardUtils" /* 7589 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17534 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import UserStore from "UserStore" /* 1372 */;
-import SoundboardStore from "SoundboardStore" /* 5224 */;
+import SoundboardStore from "SoundboardStore" /* 5225 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -23,7 +23,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: c10, AnalyticsObjects: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { soundPresentation: { borderWidth: 2, borderColor: "transparent", borderRadius: nativeDefault.radii.lg, paddingBottom: nativeDefault.space.PX_16 }, soundPresentationPlaying: null, emoji: null, emojiFastImage: null, emojiText: null, text: null, buttonContainer: null, star: null, primaryIcon: null };
 let obj3 = { borderWidth: 2, borderColor: "transparent", borderRadius: nativeDefault.radii.lg, paddingBottom: nativeDefault.space.PX_16 };
 obj2.soundPresentationPlaying = { borderColor: nativeDefault.colors.STATUS_SPEAKING };
@@ -116,14 +116,14 @@ export default function SoundboardSoundPreviewActionSheet(channel) {
   const items9 = [id, sound, tmp12];
   const callback2 = obj3.useCallback(() => {
     if (stateFromStores1) {
-      tmp(7580).removeFavoriteSound(sound.soundId);
-      const tmpResult = tmp(7580);
+      tmp(7583).removeFavoriteSound(sound.soundId);
+      const tmpResult = tmp(7583);
     } else {
       const obj = { sound, location: null };
       const obj2 = { object: constants2.SOUNDBOARD_SOUND };
       obj.location = obj2;
-      tmp(7586).trackSoundFavorited(obj);
-      const tmpResult2 = tmp(7586);
+      tmp(7589).trackSoundFavorited(obj);
+      const tmpResult2 = tmp(7589);
       SoundboardActionCreators.addFavoriteSound(sound.soundId);
     }
   }, items8);

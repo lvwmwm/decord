@@ -1,9 +1,9 @@
-// Module ID: 2006
-// Function ID: 2007
+// Module ID: 2007
+// Function ID: 2008
 // Name: socialSDKMigration
 // Dependencies: [1434, 2]
 
-// Module 2006 (socialSDKMigration)
+// Module 2007 (socialSDKMigration)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

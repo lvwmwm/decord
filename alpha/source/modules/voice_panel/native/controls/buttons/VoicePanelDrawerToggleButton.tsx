@@ -1,21 +1,21 @@
-// Module ID: 17669
-// Function ID: 17670
+// Module ID: 17681
+// Function ID: 17682
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4756, 576, 17648, 17634, 17649, 5806, 11420, 13836, 2]
+// Dependencies: [19, 21, 4757, 576, 17660, 17646, 17661, 5808, 11424, 13844, 2]
 // Exports: default
 
-// Module 17669 (VoicePanelDrawerToggleButton)
+// Module 17681 (VoicePanelDrawerToggleButton)
 import nativeDefault from "native" /* 576 */;
-import NativeViewDefault from "NativeView" /* 5806 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17634 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17648 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17649 */;
+import NativeViewDefault from "NativeView" /* 5808 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17646 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17660 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17661 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { circle: null, iconContainer: null };
 let size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
 obj2.circle = size;
@@ -39,9 +39,9 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   const obj3 = { style: tmp.iconContainer, children: null };
   const tmp7 = VoicePanelAnimatedButtonWrapperDefault;
   if (isDrawerOpen) {
-    let ChevronSmallUpIcon = tmp2(11420).ChevronSmallDownIcon;
+    let ChevronSmallUpIcon = tmp2(11424).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(13836).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(13844).ChevronSmallUpIcon;
   }
   obj3.children = React3(ChevronSmallUpIcon, { color: voicePanelButtonStyles.iconFill.color });
   items1[1] = React3(NativeViewDefault, obj3);

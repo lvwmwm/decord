@@ -1,12 +1,12 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14197
+// Function ID: 14198
 // Name: GuildBadgeToadstool
-// Dependencies: [19, 21, 14186, 8728, 2]
+// Dependencies: [19, 21, 14193, 8732, 2]
 // Exports: GuildBadgeToadstool
 
-// Module 14190 (GuildBadgeToadstool)
-import inlineStyles from "inlineStyles" /* 8728 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14186 */;
+// Module 14197 (GuildBadgeToadstool)
+import inlineStyles from "inlineStyles" /* 8732 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14193 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

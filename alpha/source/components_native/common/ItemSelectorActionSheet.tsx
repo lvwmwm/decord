@@ -1,10 +1,10 @@
-// Module ID: 9540
-// Function ID: 9541
+// Module ID: 9546
+// Function ID: 9547
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4457, 576, 1612, 7395, 7394, 7443, 6869, 5902, 5905, 2]
+// Dependencies: [19, 21, 4458, 576, 1612, 7397, 7396, 7445, 6871, 5904, 5907, 2]
 // Exports: default
 
-// Module 9540 (ItemSelectorActionSheet)
+// Module 9546 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import noop from "module_19" /* 19 */;
@@ -19,18 +19,18 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  const token = items(4457).useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
+  const token = items(4458).useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
   const obj2 = { title, trailing: null };
   let tmp6Result = null;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(7443).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(7445).ActionSheetCloseButton, obj3);
   }
-  const obj4 = { scrollable: true, header: closure_3(items(7394).BottomSheetTitleHeader, obj2), children: null };
+  const obj4 = { scrollable: true, header: closure_3(items(7396).BottomSheetTitleHeader, obj2), children: null };
   obj2.trailing = tmp6Result;
   const obj5 = { contentContainerStyle: null, children: null };
-  const obj = items(4457);
+  const obj = items(4458);
   const tmp8 = closure_4;
   obj5.contentContainerStyle = { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 };
   const items1 = [body, ];
@@ -39,7 +39,7 @@ export default function ItemSelectorActionSheet(arg0) {
     num = findIndexResult;
   }
   const obj6 = { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + nativeDefault.space.PX_16 };
-  items1[1] = closure_3(items(5902).TableRadioGroup, {
+  items1[1] = closure_3(items(5904).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -48,9 +48,9 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => closure_1_3(items(5905).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => closure_1_3(items(5907).TableRadioRow, { label: label.label, value }, value))
   });
   obj5.children = items1;
-  obj4.children = tmp8(items(6869).BottomSheetScrollView, obj5);
-  return closure_3(items(7395).BottomSheet, obj4);
+  obj4.children = tmp8(items(6871).BottomSheetScrollView, obj5);
+  return closure_3(items(7397).BottomSheet, obj4);
 };

@@ -1,13 +1,13 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16544
+// Function ID: 16545
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1372, 2038, 21, 576, 7417, 10375, 5191, 4756, 563, 7407, 7427, 5824, 5339, 5897, 1177, 4752, 1115, 5186, 9015, 2]
+// Dependencies: [19, 17, 1372, 2039, 21, 576, 7419, 10381, 5192, 4757, 563, 7409, 7429, 5826, 5341, 5899, 1177, 4753, 1115, 5187, 9020, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 16533 (AccountLinkBanner)
+// Module 16544 (AccountLinkBanner)
 import nativeDefault from "native" /* 576 */;
-import ButtonConstants from "ButtonConstants" /* 5191 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10375 */;
+import ButtonConstants from "ButtonConstants" /* 5192 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10381 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -80,7 +80,7 @@ function AccountLinkLargeBanner(arg0) {
   return tmp8;
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
@@ -88,12 +88,12 @@ const PX_82 = nativeDefault.space.PX_8;
 const PX_12 = nativeDefault.space.PX_12;
 const PX_16 = nativeDefault.space.PX_16;
 const PX_4 = nativeDefault.space.PX_4;
-const NORMAL = fn(7417).GameIconSizes.NORMAL;
-let closure_14 = fn(7417).GameIconImageSize[NORMAL];
+const NORMAL = fn(7419).GameIconSizes.NORMAL;
+let closure_14 = fn(7419).GameIconImageSize[NORMAL];
 let c15 = "heading-md/bold";
 let c16 = "text-sm/medium";
 const PX_162 = nativeDefault.space.PX_16;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { card: { padding: PX_12 }, closeButton: null, imagesContainer: null, ellipsisContainer: null, ellipsisDot: null, title: null, body: null, ctaContainer: null };
 let size = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12, width: 24, height: 24, alignItems: "center", justifyContent: "center", zIndex: 1 };
 obj.closeButton = size;

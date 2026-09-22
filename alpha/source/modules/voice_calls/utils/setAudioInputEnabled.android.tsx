@@ -1,10 +1,10 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17751
+// Function ID: 17752
 // Name: setAudioInputEnabled
 // Dependencies: [1997, 2]
 // Exports: default
 
-// Module 17739 (setAudioInputEnabled)
+// Module 17751 (setAudioInputEnabled)
 import NativeMediaEngineModuleDefault from "NativeMediaEngineModule" /* 1997 */;
 import size from "module_2" /* 2 */;
 

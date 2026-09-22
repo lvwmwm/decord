@@ -1,13 +1,13 @@
-// Module ID: 6546
-// Function ID: 6547
+// Module ID: 6548
+// Function ID: 6549
 // Name: NitroWishlistTileAbstractUI
-// Dependencies: [21, 5804, 6547, 2]
+// Dependencies: [21, 5806, 6549, 2]
 // Exports: NitroWishlistTileAbstractUI
 
-// Module 6546 (NitroWishlistTileAbstractUI)
+// Module 6548 (NitroWishlistTileAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6547 from "module_6547" /* 6547 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6549 from "module_6549" /* 6549 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroWishlistTileAbstractUI = function NitroWishlistTileAbstractUI(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6547 };
+  const obj2 = { uri: _modDef6549 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

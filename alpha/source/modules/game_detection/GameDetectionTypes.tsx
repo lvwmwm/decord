@@ -1,9 +1,9 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2019
+// Function ID: 2020
 // Name: GameDetectionTypes
 // Dependencies: [1387, 2002, 2]
 
-// Module 2018 (GameDetectionTypes)
+// Module 2019 (GameDetectionTypes)
 import Record from "Record" /* 1387 */;
 
 const createExecutable = fn(2002).createExecutable;

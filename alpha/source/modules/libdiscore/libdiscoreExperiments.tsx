@@ -1,14 +1,14 @@
-// Module ID: 2067
-// Function ID: 2068
+// Module ID: 2068
+// Function ID: 2069
 // Name: libdiscoreExperiments
-// Dependencies: [2068, 3, 1350, 38, 2]
+// Dependencies: [2069, 3, 1350, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 2067 (libdiscoreExperiments)
+// Module 2068 (libdiscoreExperiments)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import js_shim_shim from "js_shim/shim" /* 1350 */;
-import BridgedStore from "BridgedStore" /* 2068 */;
+import BridgedStore from "BridgedStore" /* 2069 */;
 import size from "module_2" /* 2 */;
 
 const ensureValidMode = BridgedStore.ensureValidMode;

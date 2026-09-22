@@ -1,21 +1,21 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 16014
+// Function ID: 16015
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1374, 21, 4756, 576, 12079, 1115, 9535, 5292, 5346, 4414, 5909, 4752, 16003, 5186, 8940, 2]
+// Dependencies: [19, 17, 1374, 21, 4757, 576, 12083, 1115, 9541, 5294, 5348, 4415, 5911, 4753, 16015, 5187, 8945, 2]
 
-// Module 16002 (PremiumTrialOfferActionSheetContent)
+// Module 16014 (PremiumTrialOfferActionSheetContent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import PremiumUtils from "PremiumUtils" /* 4414 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import FolderIcon from "FolderIcon" /* 5292 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5346 */;
-import native from "native" /* 5909 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8940 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 9535 */;
-import UserIcon from "UserIcon" /* 12079 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 16003 */;
+import PremiumUtils from "PremiumUtils" /* 4415 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import FolderIcon from "FolderIcon" /* 5294 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5348 */;
+import native from "native" /* 5911 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8945 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 9541 */;
+import UserIcon from "UserIcon" /* 12083 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 16015 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ const View = fn(17).View;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { contentContainer: { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 }, buttonContainer: { marginVertical: 6, width: "100%", height: 48 }, title: { width: "100%", textAlign: "center" }, heroIllustrationContainer: { alignItems: "center", justifyContent: "center", height: 188, width: "100%" } };
 let closure_7 = createStyles.createStyles(obj);
 let obj3 = { paddingHorizontal: 36, paddingTop: 18, paddingBottom: 36, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "flex-start", display: "flex", flexDirection: "column", gap: 0 };
@@ -76,8 +76,8 @@ export default noop.memo(function PremiumTrialOfferActionSheetContent(onConfirm)
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4414).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4414);
+    displayNameFromSku = tmp3(4415).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4415);
   }
   obj10.children = intl8.formatToPlainString(util.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = hasOwnProperty(Text_Text.Text, obj10);

@@ -1,16 +1,16 @@
-// Module ID: 16177
-// Function ID: 16178
+// Module ID: 16188
+// Function ID: 16189
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [9971, 8233, 504, 9973, 11725, 1115, 2]
+// Dependencies: [9977, 8237, 504, 9979, 11729, 1115, 2]
 
-// Module 16177 (SecureFramesPersistentCodesSetting)
+// Module 16188 (SecureFramesPersistentCodesSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9973 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9971 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9979 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9977 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const SettingBuilders = fn(11729);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -20,7 +20,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.opw5ls);
   },
-  parent: fn(8233).MobileUserSettings.DATA_AND_PRIVACY,
+  parent: fn(8237).MobileUserSettings.DATA_AND_PRIVACY,
   useValue: function useSecureFramesPersistentCodesValue() {
     const items = [SecureFramesPersistedStore];
     return initialize.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());

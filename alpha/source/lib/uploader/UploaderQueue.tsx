@@ -1,9 +1,9 @@
-// Module ID: 8084
-// Function ID: 8085
+// Module ID: 8087
+// Function ID: 8088
 // Name: UploaderQueue
 // Dependencies: [5, 3, 2]
 
-// Module 8084 (UploaderQueue)
+// Module 8087 (UploaderQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

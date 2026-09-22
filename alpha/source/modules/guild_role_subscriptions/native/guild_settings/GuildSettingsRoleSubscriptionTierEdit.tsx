@@ -1,35 +1,35 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18245
+// Function ID: 18246
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4389, 18188, 15475, 1074, 2038, 21, 4756, 576, 1484, 18200, 18196, 7495, 10072, 4752, 5186, 1177, 18234, 7368, 18228, 18226, 18203, 15482, 18183, 12476, 18235, 1115, 15497, 4453, 5841, 7619, 9890, 2027, 18236, 1980, 10885, 10886, 9891, 2]
+// Dependencies: [32, 19, 17, 4389, 18200, 15486, 1074, 2039, 21, 4757, 576, 1484, 18212, 18208, 7497, 10078, 4753, 5187, 1177, 18246, 7370, 18240, 18238, 18215, 15493, 18195, 12480, 18247, 1115, 15508, 4454, 5843, 7622, 9896, 2028, 18248, 1980, 10891, 10892, 9897, 2]
 // Exports: default
 
-// Module 18233 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 18245 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1484 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import ToastUtils from "ToastUtils" /* 4453 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7495 */;
-import FormHeaderDefault from "FormHeader" /* 10072 */;
-import DismissibleActionSheet from "DismissibleActionSheet" /* 10886 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12476 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18183 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18196 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18200 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18203 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18226 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18228 */;
-import _modDef18234 from "module_18234" /* 18234 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18235 */;
+import dismissible_content from "dismissible_content" /* 2028 */;
+import ToastUtils from "ToastUtils" /* 4454 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7497 */;
+import FormHeaderDefault from "FormHeader" /* 10078 */;
+import DismissibleActionSheet from "DismissibleActionSheet" /* 10892 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12480 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15493 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18195 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18208 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18212 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18215 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18238 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18240 */;
+import _modDef18246 from "module_18246" /* 18246 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18247 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4389 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18188 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18200 */;
 
 const util = Spacer(1115);
 require = fn;
@@ -50,7 +50,7 @@ function ArchiveOrDeleteTierSection() {
   const tmp5 = value2;
   const tmp6 = __initData;
   const tmp8 = timestampProducer;
-  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18234 });
+  obj7.icon = closure_1_14(native.Icon, { size: native.Icon.Sizes.SMALL, disableColor: true, source: _modDef18246 });
   obj7.onPress = handleArchiveOrDelete;
   let tmp9 = !allowSelfRemoveMonetization;
   if (allowSelfRemoveMonetization) {
@@ -94,12 +94,12 @@ function TabContent(selectedTab) {
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
 const FetchState = fn(4389).FetchState;
-const GuildRoleSubscriptionsTierScenes = fn(15475).GuildRoleSubscriptionsTierScenes;
+const GuildRoleSubscriptionsTierScenes = fn(15486).GuildRoleSubscriptionsTierScenes;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { flex: 1 }, tabsContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16 }, tabsContainerWithDraft: { paddingBottom: 0 }, actionButton: { alignSelf: "stretch", margin: 16, marginTop: 0 }, tabContent: null, actionHeader: null, actionDescription: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16 };
 obj2.tabContent = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };

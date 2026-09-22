@@ -1,9 +1,48 @@
 // Module ID: 5053
 // Function ID: 5054
-// Dependencies: [1281]
+// Dependencies: [5054, 5055]
 
 // Module 5053
-import _mod1281 from "module_1281" /* 1281 */;
+import _mod5054 from "module_5054" /* 5054 */;
+import DefinePropertyOrThrow from "DefinePropertyOrThrow" /* 5055 */;
 
+const tmp = _mod5054("%Reflect.construct%", true);
+let closure_0 = tmp;
+try {
+  const obj = {
+    () => {
 
-export default _mod1281;
+      }
+  };
+  DefinePropertyOrThrow({}, "", obj);
+  let tmp4 = DefinePropertyOrThrow;
+  if (tmp4) {
+    if (tmp) {
+      let closure_1 = {};
+      const obj2 = {};
+      const obj3 = {
+        () => {
+                throw closure_1;
+              },
+        "[[Enumerable]]": true
+      };
+      tmp4(obj2, "length", obj3);
+      module.exports = function IsConstructor(arg0) {
+        try {
+          closure_0(arg0, obj2);
+        } catch (tmp5) {
+          return tmp5 === closure_1;
+        }
+      };
+    }
+  }
+  module.exports = function IsConstructor(fn) {
+    let prototype = typeof fn === "function";
+    if (typeof fn === "function") {
+      prototype = fn.prototype;
+    }
+    return prototype;
+  };
+} catch (err) {
+  tmp4 = null;
+}

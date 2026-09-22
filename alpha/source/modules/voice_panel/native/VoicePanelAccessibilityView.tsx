@@ -1,16 +1,16 @@
-// Module ID: 17561
-// Function ID: 17562
+// Module ID: 17572
+// Function ID: 17573
 // Name: VoicePanelAccessibilityView
-// Dependencies: [19, 17553, 21, 5168, 17556, 2]
+// Dependencies: [19, 17565, 21, 5169, 17568, 2]
 // Exports: default
 
-// Module 17561 (VoicePanelAccessibilityView)
+// Module 17572 (VoicePanelAccessibilityView)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-const VoicePanelPIPModes = fn(17553).VoicePanelPIPModes;
+const VoicePanelPIPModes = fn(17565).VoicePanelPIPModes;
 const jsx = fn(21).jsx;
-let closure_4 = noop.memo(fn(5168).AccessibilityViewAnimated);
+let closure_4 = noop.memo(fn(5169).AccessibilityViewAnimated);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/VoicePanelAccessibilityView.tsx");
 

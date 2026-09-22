@@ -1,16 +1,16 @@
-// Module ID: 5639
-// Function ID: 5640
+// Module ID: 5641
+// Function ID: 5642
 // Name: useStageSpeakingForCurrentUser
-// Dependencies: [2041, 4395, 2095, 1085, 4968, 5640, 5641, 504, 2]
+// Dependencies: [2042, 4396, 2096, 1085, 4969, 5642, 5643, 504, 2]
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser, useIsStageSpeakingDisabledForCurrentUser, useShouldAgeVerifyToSpeakForCurrentUser, useShouldShowAgeVerificationForEvent, useShouldShowAgeVerificationPopover
 
-// Module 5639 (useStageSpeakingForCurrentUser)
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4968 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5641 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+// Module 5641 (useStageSpeakingForCurrentUser)
+import AgeVerificationUtils from "AgeVerificationUtils" /* 4969 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 require = fn;
 const Permissions = fn(1085).Permissions;
@@ -61,10 +61,10 @@ export const useShouldAgeVerifyToSpeakForCurrentUser = function useShouldAgeVeri
     return canResult;
   }, items1);
   const obj = channelId(504);
-  const isVerifiedAdult = channelId(4968).useIsVerifiedAdult();
-  const obj2 = channelId(4968);
-  const obj3 = channelId(5640);
-  return channelId(5640).useIsFeatureAgeGated(channelId(5641).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  const isVerifiedAdult = channelId(4969).useIsVerifiedAdult();
+  const obj2 = channelId(4969);
+  const obj3 = channelId(5642);
+  return channelId(5642).useIsFeatureAgeGated(channelId(5643).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
 };
 export const useShouldShowAgeVerificationPopover = function useShouldShowAgeVerificationPopover(id) {
   let channelId = id;
@@ -85,10 +85,10 @@ export const useShouldShowAgeVerificationPopover = function useShouldShowAgeVeri
     return canResult;
   }, items1);
   const obj = channelId(504);
-  const isAgeVerified = channelId(4968).useIsAgeVerified();
-  const obj2 = channelId(4968);
-  const obj3 = channelId(5640);
-  return channelId(5640).useIsFeatureAgeGated(channelId(5641).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  const isAgeVerified = channelId(4969).useIsAgeVerified();
+  const obj2 = channelId(4969);
+  const obj3 = channelId(5642);
+  return channelId(5642).useIsFeatureAgeGated(channelId(5643).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
 };
 export const useShouldShowAgeVerificationForEvent = function useShouldShowAgeVerificationForEvent() {
   const isVerifiedAdult = AgeVerificationUtils.useIsVerifiedAdult();

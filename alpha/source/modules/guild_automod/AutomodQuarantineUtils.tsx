@@ -1,20 +1,20 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 12130
+// Function ID: 12131
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 10035, 502, 2105, 2063, 4395, 4577, 1074, 4382, 1084, 563, 4401, 1115, 10036, 10037, 7624, 2]
+// Dependencies: [19, 10041, 502, 2105, 2064, 4396, 4578, 1074, 4382, 1084, 563, 4402, 1115, 10042, 10043, 7627, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12126 (AutomodQuarantineUtils)
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4401 */;
-import openUserSettings2 from "openUserSettings" /* 7624 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10037 */;
+// Module 12130 (AutomodQuarantineUtils)
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4402 */;
+import openUserSettings2 from "openUserSettings" /* 7627 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10043 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10035 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10041 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
 
 const require = globalThis.__r;
 
@@ -48,7 +48,7 @@ export const useGuildAutomodProfileQuarantineErrors = function useGuildAutomodPr
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "PX_16" };
+    const obj = { nick: "Array", bio: "flex" };
     let guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

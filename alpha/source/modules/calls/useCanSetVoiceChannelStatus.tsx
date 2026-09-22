@@ -1,11 +1,11 @@
-// Module ID: 17578
-// Function ID: 17579
+// Module ID: 17589
+// Function ID: 17590
 // Name: useCanSetVoiceChannelStatus
-// Dependencies: [4395, 1085, 4400, 504, 2]
+// Dependencies: [4396, 1085, 4401, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
 
-// Module 17578 (useCanSetVoiceChannelStatus)
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 17589 (useCanSetVoiceChannelStatus)
+import PermissionStore from "PermissionStore" /* 4396 */;
 
 const require = globalThis.__r;
 

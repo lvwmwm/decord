@@ -1,15 +1,15 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 13737
+// Function ID: 13738
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1074, 2038, 1374, 21, 4756, 576, 5658, 13722, 13723, 1484, 7407, 13724, 1612, 13730, 4492, 13687, 10999, 4576, 2027, 2029, 13731, 1115, 12540, 4414, 7635, 7243, 1241, 13732, 13693, 9476, 13735, 13740, 13757, 13760, 2]
+// Dependencies: [32, 19, 17, 1074, 2039, 1374, 21, 4757, 576, 5660, 13730, 13731, 1484, 7409, 13732, 1612, 13738, 4493, 13695, 11005, 4577, 2028, 2030, 13739, 1115, 12544, 4415, 7638, 7245, 1241, 13740, 13701, 9482, 13743, 13748, 13765, 13768, 2]
 // Exports: default
 
-// Module 13729 (PremiumMarketingPage)
+// Module 13737 (PremiumMarketingPage)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
+import dismissible_content from "dismissible_content" /* 2028 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,20 +17,20 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 let FractionalPremiumStates = fn(1374).FractionalPremiumStates;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { display: "flex" }, scrollContainer: { flexDirection: "column", alignItems: "center", marginTop: 16 }, arrowIcon: { tintColor: nativeDefault.colors.TEXT_DEFAULT }, backButton: null, sectionWithTopMargin: { marginTop: 48 }, sectionWithPadding: { paddingHorizontal: 12 }, sectionWidth: { maxWidth: 464 }, accountCreditContainer: { width: "100%" }, accountCreditContainerWithSpacing: { marginTop: 24, marginBottom: 20 }, themedBackground: null, backButtonBackground: null };
 let obj4 = { transform: null, position: "absolute", left: 16 };
 let items = [{ scaleX: -1 }];
 obj4.transform = items;
 obj2.backButton = obj4;
 let obj3 = { tintColor: nativeDefault.colors.TEXT_DEFAULT };
-obj2.themedBackground = { backgroundColor: fn(5658).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-let obj5 = { backgroundColor: fn(5658).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-obj2.backButtonBackground = { backgroundColor: fn(5658).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
+obj2.themedBackground = { backgroundColor: fn(5660).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+let obj5 = { backgroundColor: fn(5660).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+obj2.backButtonBackground = { backgroundColor: fn(5660).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");

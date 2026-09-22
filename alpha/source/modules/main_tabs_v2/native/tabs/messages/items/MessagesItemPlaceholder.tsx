@@ -1,10 +1,10 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16390
+// Function ID: 16391
 // Name: MessagesItemPlaceholder
-// Dependencies: [19, 21, 10085, 2]
+// Dependencies: [19, 21, 10091, 2]
 
-// Module 16379 (MessagesItemPlaceholder)
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10085 */;
+// Module 16390 (MessagesItemPlaceholder)
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10091 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

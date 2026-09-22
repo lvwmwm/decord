@@ -1,16 +1,16 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7246
+// Function ID: 7247
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 5840, 21, 4756, 576, 5838, 6844, 4752, 1115, 5186, 2]
+// Dependencies: [19, 17, 5842, 21, 4757, 576, 5840, 6846, 4753, 1115, 5187, 2]
 // Exports: default
 
-// Module 7244 (ChangeEmailComplete)
+// Module 7246 (ChangeEmailComplete)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5838 */;
-import _modDef6844 from "module_6844" /* 6844 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5840 */;
+import _modDef6846 from "module_6846" /* 6846 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,10 +20,10 @@ function handlePress() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const resetChangeEmailStore = fn(5840).resetChangeEmailStore;
+const resetChangeEmailStore = fn(5842).resetChangeEmailStore;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj2 = { contentContainer: { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { textAlign: "center" }, body: { textAlign: "center" }, bodyInner: { gap: 2 }, tooltip: null };
 let obj3 = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, gap: 20, alignItems: "center" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
@@ -35,7 +35,7 @@ const result = size.fileFinishedImporting("modules/verification/native/component
 export default function ChangeEmailComplete(email) {
   const tmp = closure_9();
   const obj = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: null };
-  const items = [React5(React4, { style: tmp.image, source: _modDef6844 }), , , ];
+  const items = [React5(React4, { style: tmp.image, source: _modDef6846 }), , , ];
   const obj3 = { style: tmp.bodyInner, children: null };
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;

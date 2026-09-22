@@ -1,16 +1,16 @@
-// Module ID: 14399
-// Function ID: 14400
+// Module ID: 14405
+// Function ID: 14406
 // Name: Menu
-// Dependencies: [32, 19, 17, 1074, 21, 14389, 4756, 576, 4492, 4476, 1612, 1478, 1364, 4467, 1115, 5180, 4757, 14393, 14387, 5185, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 14395, 4757, 576, 4493, 4477, 1612, 1478, 1364, 4468, 1115, 5181, 4758, 14399, 14393, 5186, 2]
 // Exports: Menu
 
-// Module 14399 (Menu)
+// Module 14405 (Menu)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5180 */;
-import spring from "spring" /* 5185 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5181 */;
+import spring from "spring" /* 5186 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,8 +20,8 @@ get_ActivityIndicator = fn(17);
 const NOOP = fn(1074).NOOP;
 const jsx = fn(21).jsx;
 let closure_8 = { mass: 1, stiffness: 300, damping: 25, restSpeedThreshold: 0.01, restDisplacementThreshold: 0.01 };
-let __closure = { duration: 250, easing: fn(14389).STANDARD_EASING };
-const createStyles = fn(4756);
+let __closure = { duration: 250, easing: fn(14395).STANDARD_EASING };
+const createStyles = fn(4757);
 let obj2 = { backdrop: null, menu: null };
 let obj4 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -38,7 +38,7 @@ function measureButtonRef(arg0, arg1) {
   }
 }
 let obj5 = { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: 220 };
-measureButtonRef.__closure = { measure: fn(4492).measure, runOnJS: fn(4492).runOnJS };
+measureButtonRef.__closure = { measure: fn(4493).measure, runOnJS: fn(4493).runOnJS };
 measureButtonRef.__workletHash = 15651320687527;
 measureButtonRef.__initData = { code: "function measureButtonRef_MenuTsx1(ref,setDimensions){const{measure,runOnJS}=this.__closure;const measurements=measure(ref);if(measurements==null)return;runOnJS(setDimensions)(measurements);}" };
 let closure_13 = { code: "function MenuTsx2(){const{runOnJS,openMenuCallback}=this.__closure;return runOnJS(openMenuCallback)();}" };
@@ -68,7 +68,7 @@ export const Menu = function Menu(toggleButtonRef) {
   redux = undefined;
   function openMenuCallback() {
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4467).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4468).AccessibilityAnnouncer;
       const intl = tmp(1115).intl;
       AccessibilityAnnouncer.announce(intl.string(tmp(1115).t.ZqK0uI));
     }

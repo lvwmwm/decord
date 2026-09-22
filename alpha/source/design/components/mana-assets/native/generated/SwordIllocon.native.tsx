@@ -1,13 +1,13 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6778
+// Function ID: 6779
 // Name: SwordIllocon
-// Dependencies: [21, 5804, 6777, 2]
+// Dependencies: [21, 5806, 6779, 2]
 // Exports: SwordIllocon
 
-// Module 6776 (SwordIllocon)
+// Module 6778 (SwordIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6777 from "module_6777" /* 6777 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6779 from "module_6779" /* 6779 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const SwordIllocon = function SwordIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6777 };
+  const obj2 = { uri: _modDef6779 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

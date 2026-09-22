@@ -1,15 +1,15 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8517
+// Function ID: 8518
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 4492, 8514, 8515, 1364, 2]
+// Dependencies: [19, 17, 21, 4493, 8518, 8519, 1364, 2]
 // Exports: default
 
-// Module 8513 (UserProfileOverscrollBanner)
+// Module 8517 (UserProfileOverscrollBanner)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8514 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8515 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8518 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8519 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
 
 require = fn;
 const StyleSheet = fn(17).StyleSheet;

@@ -1,16 +1,16 @@
-// Module ID: 9336
-// Function ID: 9337
+// Module ID: 9342
+// Function ID: 9343
 // Name: oauth2/actions
-// Dependencies: [5, 2041, 2095, 1074, 1271, 6834, 1083, 2]
+// Dependencies: [5, 2042, 2096, 1074, 1271, 6836, 1083, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9336 (oauth2/actions)
+// Module 9342 (oauth2/actions)
 import utils_PathUtils from "utils/PathUtils" /* 1083 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6836 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 require = fn;
 function getLocationContextServer() {
@@ -85,7 +85,7 @@ let closure_9 = async function _authorize(arg0, value) {
           ({ authorize: closure_129_0, clientId: closure_129_1, scopes: closure_129_2, responseType: closure_129_3, redirectUri: closure_129_4, codeChallenge: closure_129_5, codeChallengeMethod: closure_129_6, state: closure_129_7, permissions: closure_129_8, guildId: closure_129_9, channelId: closure_129_10, integrationType: closure_129_11, connectedAccountProvider: closure_129_12, nonce: closure_129_13 } = closure_0);
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -186,7 +186,7 @@ let closure_10 = async function _fetchAuthorization(arg0, value) {
           ({ clientId: closure_129_0, scopes: closure_129_1, responseType: closure_129_2, redirectUri: closure_129_3, codeChallenge: closure_129_4, codeChallengeMethod: closure_129_5, state: closure_129_6, integrationType: closure_129_7, connectedAccountProvider: closure_129_8, nonce: closure_129_9, signal: closure_129_10 } = closure_0);
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

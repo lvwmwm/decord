@@ -1,17 +1,17 @@
-// Module ID: 5677
-// Function ID: 5678
+// Module ID: 5679
+// Function ID: 5680
 // Name: SubscriptionRoleStore
-// Dependencies: [2059, 2100, 2105, 2099, 2063, 1372, 1074, 4386, 504, 573, 2]
+// Dependencies: [2060, 2100, 2105, 2099, 2064, 1372, 1074, 4386, 504, 573, 2]
 
-// Module 5677 (SubscriptionRoleStore)
+// Module 5679 (SubscriptionRoleStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildRecord from "GuildRecord" /* 2059 */;
+import GuildRecord from "GuildRecord" /* 2060 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
 import PremiumRoleUtils from "PremiumRoleUtils" /* 4386 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10930
+// Function ID: 10931
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8461, 10925, 1374, 1074, 21, 4756, 576, 672, 1484, 1612, 1478, 10959, 5171, 5847, 504, 11002, 11000, 8453, 11004, 10922, 11007, 11010, 8146, 4492, 1177, 4757, 11018, 7427, 11019, 11053, 9650, 1115, 5897, 5804, 11308, 5198, 5899, 4752, 2]
+// Dependencies: [32, 19, 17, 8465, 10931, 1374, 1074, 21, 4757, 576, 672, 1484, 1612, 1478, 10965, 5172, 5849, 504, 11008, 11006, 8457, 11010, 10928, 11013, 11016, 8150, 4493, 1177, 4758, 11024, 7429, 11025, 11059, 9656, 1115, 5899, 5806, 11314, 5199, 5901, 4753, 2]
 // Exports: default
 
-// Module 10924 (PremiumGiftPlanSelect)
+// Module 10930 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import native from "native" /* 1177 */;
-import timing from "timing" /* 4757 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 11010 */;
+import timing from "timing" /* 4758 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 11016 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8461 */;
-import PromotionsStore from "PromotionsStore" /* 10925 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8465 */;
+import PromotionsStore from "PromotionsStore" /* 10931 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -24,7 +24,7 @@ const jsxProd = fn(21);
 let items = [, ];
 ({ TIER_2: arr[0], TIER_0: arr[1] } = fn(1374).PremiumTypes);
 let c16 = 16;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_17 = createStyles.createStyles((width, arg1, arg2) => {
   const obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, headerBackground: null, headerBackgroundColor: null, headerImageContainer: null, headerImage: null, headerOverlay: null, avatar: null, title: null, description: null, carousel: null, dmGiftingContent: null, loadingContainer: null, closeButtonContainer: null, closeButton: null, closeButtonIcon: null, badgeBanner: null };
   const size = { position: "absolute", width, height: 0.1 * arg1, top: arg1 / 1.75 - 0.1 * arg1 };
@@ -509,7 +509,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result8 = tmp4(tmp2[31]);
       }
     } else {
-      const obj44 = { style: tmp14.avatar, guildId: "r", size: 1, user: 1 };
+      const obj44 = { style: tmp14.avatar, guildId: "r", size: "flex", user: null };
       const AvatarSizes = tmp(tmp2[27]).AvatarSizes;
       obj44.size = enabled ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;
       obj44.user = recipientUser;

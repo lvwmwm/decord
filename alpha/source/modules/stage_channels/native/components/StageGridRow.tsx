@@ -1,17 +1,17 @@
-// Module ID: 10312
-// Function ID: 10313
+// Module ID: 10318
+// Function ID: 10319
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4756, 10304, 5642, 5342, 10313, 10303, 2]
+// Dependencies: [19, 17, 21, 4757, 10310, 5644, 5344, 10319, 10309, 2]
 
-// Module 10312 (StageGridRow)
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5342 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5642 */;
+// Module 10318 (StageGridRow)
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5344 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_5 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center" }, containerLandscape: { justifyContent: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageGridRow.tsx");
@@ -26,11 +26,11 @@ export default noop.memo((row) => {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(10304).StageTileSize.FULL;
+    THIRD = tmp2(10310).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(10304).StageTileSize.HALF;
+    THIRD = tmp2(10310).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(10304).StageTileSize.THIRD;
+    THIRD = tmp2(10310).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   if (containerLandscape) {
@@ -58,13 +58,13 @@ export default noop.memo((row) => {
       if (flag) {
         const obj2 = { participant: type, size: THIRD, channel };
         const _HermesInternal2 = HermesInternal;
-        let tmp5Result = tmp5(tmp6(10313), obj2, "stage-media-participant-" + type.id);
-        const tmp6Result = tmp6(10313);
+        let tmp5Result = tmp5(tmp6(10319), obj2, "stage-media-participant-" + type.id);
+        const tmp6Result = tmp6(10319);
       } else {
         const obj = { channel, participant: type, size: THIRD };
         const _HermesInternal = HermesInternal;
-        tmp5Result = tmp5(tmp6(10303), obj, "stage-user-participant-" + type.id);
-        const tmp6Result2 = tmp6(10303);
+        tmp5Result = tmp5(tmp6(10309), obj, "stage-user-participant-" + type.id);
+        const tmp6Result2 = tmp6(10309);
       }
       return tmp5Result;
     })

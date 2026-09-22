@@ -1,26 +1,26 @@
-// Module ID: 10271
-// Function ID: 10272
+// Module ID: 10277
+// Function ID: 10278
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 4778, 502, 4781, 21, 4756, 576, 1177, 10272, 10273, 8871, 504, 10274, 1115, 10243, 1364, 9904, 9934, 10209, 10275, 10260, 10276, 10277, 2]
+// Dependencies: [19, 17, 4779, 502, 4782, 21, 4757, 576, 1177, 10278, 10279, 8876, 504, 10280, 1115, 10249, 1364, 9910, 9940, 10215, 10281, 10266, 10282, 10283, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10271 (FocusedExpandedControls)
+// Module 10277 (FocusedExpandedControls)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Form from "Form" /* 8871 */;
-import CallsUtils from "CallsUtils" /* 9904 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9934 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 10209 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10243 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 10260 */;
-import _modDef10272 from "module_10272" /* 10272 */;
-import _modDef10273 from "module_10273" /* 10273 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10274 */;
-import useDeafStatesDefault from "useDeafStates" /* 10275 */;
+import Form from "Form" /* 8876 */;
+import CallsUtils from "CallsUtils" /* 9910 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 9940 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 10215 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10249 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 10266 */;
+import _modDef10278 from "module_10278" /* 10278 */;
+import _modDef10279 from "module_10279" /* 10279 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 10280 */;
+import useDeafStatesDefault from "useDeafStates" /* 10281 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4779 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -36,9 +36,9 @@ function ExpandedControlItemIcon(iconSource) {
     if (iconSource.showIconSparkle) {
       const obj = { children: null };
       const items = [tmp10, , ];
-      const obj3 = { style: tmp.sparkle2, source: _modDef10272 };
+      const obj3 = { style: tmp.sparkle2, source: _modDef10278 };
       items[1] = tmp7(React4, obj3);
-      const obj4 = { style: tmp.sparkle, source: _modDef10273 };
+      const obj4 = { style: tmp.sparkle, source: _modDef10279 };
       items[2] = tmp7(React4, obj4);
       obj.children = items;
       tmp6 = React7(React3, obj);
@@ -68,10 +68,10 @@ function ExpandedControlItem(iconSource) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const MediaEngineContextTypes = fn(4781).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4782).MediaEngineContextTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { formTintColor: { tintColor: nativeDefault.colors.ICON_STRONG }, formColor: null, sparkle: null, sparkle2: null };
 let obj3 = { tintColor: nativeDefault.colors.ICON_STRONG };
 obj2.formColor = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -120,7 +120,7 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   let tmp9Result = null;
   if (null != stateFromStores) {
     const obj4 = { label: tmp11 };
-    tmp9Result = tmp9(tmp2(8871).FormRow, obj4);
+    tmp9Result = tmp9(tmp2(8876).FormRow, obj4);
   }
   return tmp9Result;
 };
@@ -156,7 +156,7 @@ export const DeafenButton = function DeafenButton(disabled) {
   const tmp = importDefault;
   const tmp3 = useDeafStatesDefault(disabled.channel);
   const deafHandler = VoiceActionUtils.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: tmp(deafHandler.deaf ? 10276 : 10277), label: null };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: tmp(deafHandler.deaf ? 10282 : 10283), label: null };
   const intl = tmp4(1115).intl;
   obj2.label = intl.string(util.t.wjcRFX);
   return React6(ExpandedControlItem, obj2);

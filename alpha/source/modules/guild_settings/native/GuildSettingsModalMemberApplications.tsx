@@ -1,17 +1,17 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 16938
+// Function ID: 16939
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 5759, 21, 4756, 576, 4600, 4752, 16927, 1397, 5822, 1177, 1612, 16932, 4580, 16933, 504, 1115, 8997, 8501, 7285, 2]
+// Dependencies: [19, 17, 5761, 21, 4757, 576, 4601, 4753, 16939, 1397, 5824, 1177, 1612, 16944, 4581, 16945, 504, 1115, 9002, 8505, 7287, 2]
 
-// Module 16926 (GuildSettingsModalMemberApplications)
+// Module 16938 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16927 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4581 */;
+import UserUtilsDefault from "UserUtils" /* 4601 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16939 */;
 import noop from "module_19" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5759 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5761 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { containerInner: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 }, spinnerContainer: { padding: 32 }, footerSpinner: { paddingVertical: 16 }, spinner: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 };
 obj.spinner = { color: nativeDefault.colors.TEXT_BRAND };
@@ -64,7 +64,7 @@ let closure_12 = noop.memo((joinRequest) => {
       obj2.onPress = tmp;
       obj2.start = start;
       obj2.end = end;
-      return closure_7(joinRequest(5822).TableRow, obj2);
+      return closure_7(joinRequest(5824).TableRow, obj2);
     }
   }
 });

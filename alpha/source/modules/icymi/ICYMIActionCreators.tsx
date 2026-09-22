@@ -1,11 +1,11 @@
-// Module ID: 8622
-// Function ID: 8623
+// Module ID: 8626
+// Function ID: 8627
 // Name: ICYMIActionCreators
-// Dependencies: [5, 1074, 1271, 573, 1231, 8621, 2019, 2]
+// Dependencies: [5, 1074, 1271, 573, 1231, 8625, 2020, 2]
 
-// Module 8622 (ICYMIActionCreators)
+// Module 8626 (ICYMIActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ICYMIUtils from "ICYMIUtils" /* 8621 */;
+import ICYMIUtils from "ICYMIUtils" /* 8625 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -634,7 +634,7 @@ export default {
               closure_128_0 = undefined;
               closure_128_1 = undefined;
               if (obj9.icymiEnabled("mediaForCurrentStatus")) {
-                const CustomStatusSetting = tmp37(2019).CustomStatusSetting;
+                const CustomStatusSetting = tmp37(2020).CustomStatusSetting;
                 const setting = CustomStatusSetting.getSetting();
                 closure_128_0 = setting;
                 if (null != setting) {

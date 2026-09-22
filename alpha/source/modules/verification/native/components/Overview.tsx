@@ -1,13 +1,13 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17930
+// Function ID: 17931
 // Name: Overview
-// Dependencies: [19, 17, 2035, 1372, 1074, 21, 4756, 576, 2108, 504, 6833, 1484, 5181, 5186, 1115, 17707, 1271, 7229, 1485, 4752, 15812, 2]
+// Dependencies: [19, 17, 2036, 1372, 1074, 21, 4757, 576, 2108, 504, 6835, 1484, 5182, 5187, 1115, 17719, 1271, 7231, 1485, 4753, 15824, 2]
 // Exports: default
 
-// Module 17918 (Overview)
+// Module 17930 (Overview)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
 import UserStore from "UserStore" /* 1372 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2108 */;
 
@@ -19,7 +19,7 @@ const Constants = fn(1074);
 ({ Endpoints: closure_7, VerificationModalScenes: closure_8, VerificationTypes: closure_9, HelpdeskArticles } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, containerInner: { flex: 1, padding: 20, justifyContent: "center", alignItems: "center" }, title: null, body: null, blocks: null, verificationType: null, button: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.title = { marginTop: 20, fontSize: 17, textAlign: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };

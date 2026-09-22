@@ -1,9 +1,9 @@
-// Module ID: 16280
-// Function ID: 16281
+// Module ID: 16291
+// Function ID: 16292
 // Name: AgeGateStore
 // Dependencies: [1099, 504, 573, 2]
 
-// Module 16280 (AgeGateStore)
+// Module 16291 (AgeGateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AgeGateConstants from "AgeGateConstants" /* 1099 */;

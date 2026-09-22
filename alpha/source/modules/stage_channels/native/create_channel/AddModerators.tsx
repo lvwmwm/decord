@@ -1,22 +1,22 @@
-// Module ID: 9851
-// Function ID: 9852
+// Module ID: 9857
+// Function ID: 9858
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 2063, 8672, 21, 4756, 576, 1484, 38, 9820, 5632, 1978, 1115, 5841, 7619, 4752, 1177, 9852, 2049, 2]
+// Dependencies: [32, 19, 17, 2064, 8676, 21, 4757, 576, 1484, 38, 9826, 5634, 1978, 1115, 5843, 7622, 4753, 1177, 9858, 2050, 2]
 // Exports: default
 
-// Module 9851 (AddModerators)
+// Module 9857 (AddModerators)
 import nativeDefault from "native" /* 576 */;
-import HeaderActionButton from "HeaderActionButton" /* 7619 */;
+import HeaderActionButton from "HeaderActionButton" /* 7622 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
 require = fn;
 const View = fn(17).View;
-const RowType = fn(8672).RowType;
+const RowType = fn(8676).RowType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { addMembersContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, moderatorDescriptionContainer: { margin: 16 }, errorMessage: { margin: 16, marginBottom: 0 } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -45,11 +45,11 @@ export default function AddModerators(guildId) {
     const mapped = found.map((row) => {
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        let moderatorOverwrite = guildId(5632).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.ROLE);
-        const obj2 = guildId(5632);
+        let moderatorOverwrite = guildId(5634).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.ROLE);
+        const obj2 = guildId(5634);
       } else {
-        moderatorOverwrite = guildId(5632).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.MEMBER);
-        const obj = guildId(5632);
+        moderatorOverwrite = guildId(5634).createModeratorOverwrite(row.id, guildId(1978).PermissionOverwriteType.MEMBER);
+        const obj = guildId(5634);
       }
       return moderatorOverwrite;
     });

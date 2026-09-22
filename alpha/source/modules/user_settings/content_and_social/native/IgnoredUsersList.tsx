@@ -1,22 +1,22 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15092
+// Function ID: 15093
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4405, 21, 4756, 576, 7407, 7427, 1177, 15079, 1115, 7368, 4752, 5904, 15086, 504, 2]
+// Dependencies: [19, 17, 4406, 21, 4757, 576, 7409, 7429, 1177, 15086, 1115, 7370, 4753, 5906, 15093, 504, 2]
 // Exports: default
 
-// Module 15085 (IgnoredUsersList)
+// Module 15092 (IgnoredUsersList)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import TableRowGroup from "TableRowGroup" /* 5904 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7407 */;
-import Blocked from "Blocked" /* 15079 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 15086 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import TableRowGroup from "TableRowGroup" /* 5906 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
+import Blocked from "Blocked" /* 15086 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 15093 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
 
@@ -52,7 +52,7 @@ function IgnoredUsersList(userIds) {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { list: { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 }, sectionLabelStyle: null };
 let obj3 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.sectionLabelStyle = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };

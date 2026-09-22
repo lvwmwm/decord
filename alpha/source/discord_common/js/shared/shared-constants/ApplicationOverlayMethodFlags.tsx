@@ -1,9 +1,9 @@
-// Module ID: 2007
-// Function ID: 2008
+// Module ID: 2008
+// Function ID: 2009
 // Name: ApplicationOverlayMethodFlags
 // Dependencies: [2]
 
-// Module 2007 (ApplicationOverlayMethodFlags)
+// Module 2008 (ApplicationOverlayMethodFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationOverlayMethodFlags.tsx");

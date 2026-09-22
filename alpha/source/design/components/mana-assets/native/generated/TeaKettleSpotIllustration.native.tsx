@@ -1,13 +1,13 @@
-// Module ID: 6780
-// Function ID: 6781
+// Module ID: 6782
+// Function ID: 6783
 // Name: TeaKettleSpotIllustration
-// Dependencies: [21, 5804, 6781, 2]
+// Dependencies: [21, 5806, 6783, 2]
 // Exports: TeaKettleSpotIllustration
 
-// Module 6780 (TeaKettleSpotIllustration)
+// Module 6782 (TeaKettleSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6781 from "module_6781" /* 6781 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6783 from "module_6783" /* 6783 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const TeaKettleSpotIllustration = function TeaKettleSpotIllustration(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6781 };
+  const obj2 = { uri: _modDef6783 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

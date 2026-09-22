@@ -1,19 +1,14 @@
 // Module ID: 7042
 // Function ID: 7043
-// Dependencies: [19, 6881]
-// Exports: useBottomSheetGestureHandlers
+// Dependencies: []
+// Exports: clamp
 
 // Module 7042
-import _mod19 from "module_19" /* 19 */;
-import _mod6881 from "module_6881" /* 6881 */;
-
-const useContext = _mod19.useContext;
-
-export const useBottomSheetGestureHandlers = () => {
-  const tmp = useContext(_mod6881.BottomSheetGestureHandlersContext);
-  if (null === tmp) {
-    throw "'useBottomSheetGestureHandlers' cannot be used out of the BottomSheet!";
-  } else {
-    return tmp;
-  }
+const fn = function n(arg0, arg1, arg2) {
+  return Math.min(Math.max(arg1, arg0), arg2);
 };
+fn.__closure = {};
+fn.__workletHash = 4405247003092;
+fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
+
+export const clamp = fn;

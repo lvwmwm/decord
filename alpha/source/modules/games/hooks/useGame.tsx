@@ -1,12 +1,12 @@
-// Module ID: 7551
-// Function ID: 7552
+// Module ID: 7553
+// Function ID: 7554
 // Name: useGame
-// Dependencies: [5, 19, 2000, 1074, 504, 1091, 7552, 2]
+// Dependencies: [5, 19, 2000, 1074, 504, 1091, 7554, 2]
 // Exports: useGames
 
-// Module 7551 (useGame)
+// Module 7553 (useGame)
 import DurationsDefault from "Durations" /* 1091 */;
-import GameActionCreators from "GameActionCreators" /* 7552 */;
+import GameActionCreators from "GameActionCreators" /* 7554 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GameStore from "GameStore" /* 2000 */;

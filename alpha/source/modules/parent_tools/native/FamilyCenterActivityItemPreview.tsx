@@ -1,16 +1,16 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15188
+// Function ID: 15189
 // Name: FamilyCenterActivityItemPreview
-// Dependencies: [19, 17, 8491, 21, 4756, 15180, 576, 9100, 8470, 9103, 12391, 9489, 8940, 1973, 1970, 2]
+// Dependencies: [19, 17, 8495, 21, 4757, 15187, 576, 9105, 8474, 9108, 12395, 9495, 8945, 1973, 1970, 2]
 // Exports: default
 
-// Module 15181 (FamilyCenterActivityItemPreview)
+// Module 15188 (FamilyCenterActivityItemPreview)
 import nativeDefault from "native" /* 576 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8470 */;
-import NameplateUtils from "NameplateUtils" /* 9100 */;
-import ShopIcon from "ShopIcon" /* 12391 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15180 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8474 */;
+import NameplateUtils from "NameplateUtils" /* 9105 */;
+import ShopIcon from "ShopIcon" /* 12395 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15187 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -62,9 +62,9 @@ function ProfileFramePreviewImage(arg0) {
   if (null != tmp3) {
     const obj = { style: styles.profileFrameContainer, children: null };
     const obj2 = { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(576).colors.BACKGROUND_BASE_LOW };
-    obj.children = jsx(tmp(9103), { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(576).colors.BACKGROUND_BASE_LOW });
+    obj.children = jsx(tmp(9108), { profileFrame: tmp3, previewWidth: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE * closure_5, previewHeight: FamilyCenterActivityPurchaseRowUtils.PREVIEW_SIZE, profileBackgroundColor: tmp(576).colors.BACKGROUND_BASE_LOW });
     tmp4 = <React3 style={styles.profileFrameContainer}>{null}</React3>;
-    const tmpResult = tmp(9103);
+    const tmpResult = tmp(9108);
   }
   return tmp4;
 }
@@ -78,9 +78,9 @@ function SubscriptionPreview(arg0) {
   } else {
     const obj5 = { style: styles.purchasePlaceholder, children: null };
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(9489).BoostGemIcon;
+      let NitroWheelIcon = tmp5(9495).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(8940).NitroWheelIcon;
+      NitroWheelIcon = tmp5(8945).NitroWheelIcon;
     }
     const obj = { size: "custom", style: { width: 20, height: 20 } };
     obj5.children = <NitroWheelIcon size="custom" style={{ width: 20, height: 20 }} />;
@@ -116,26 +116,26 @@ function CollectiblePreview(arg0) {
     } else {
       const obj = { style: styles.purchasePlaceholder, children: null };
       const obj8 = { size: "custom", style: { width: 20, height: 20 } };
-      obj.children = jsx(tmp17(12391).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
+      obj.children = jsx(tmp17(12395).ShopIcon, { size: "custom", style: { width: 20, height: 20 } });
       return <React3 style={styles.purchasePlaceholder}>{null}</React3>;
     }
   }
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-let closure_5 = fn(8491).PROFILE_FRAME_ASPECT_RATIO;
+let closure_5 = fn(8495).PROFILE_FRAME_ASPECT_RATIO;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { purchasePlaceholder: null, avatarDecorationPreview: null, nameplateContainer: null, nameplatePreview: null, profileFrameContainer: null };
-let size = { width: fn(15180).PREVIEW_SIZE, height: fn(15180).PREVIEW_SIZE, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
+let size = { width: fn(15187).PREVIEW_SIZE, height: fn(15187).PREVIEW_SIZE, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 12 };
 obj2.purchasePlaceholder = size;
-const size1 = { width: fn(15180).PREVIEW_SIZE, height: fn(15180).PREVIEW_SIZE, marginRight: 12 };
+const size1 = { width: fn(15187).PREVIEW_SIZE, height: fn(15187).PREVIEW_SIZE, marginRight: 12 };
 obj2.avatarDecorationPreview = size1;
-const size2 = { width: fn(15180).PREVIEW_SIZE, height: fn(15180).PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
+const size2 = { width: fn(15187).PREVIEW_SIZE, height: fn(15187).PREVIEW_SIZE, marginRight: 12, borderRadius: nativeDefault.radii.xs, overflow: "hidden", position: "relative" };
 obj2.nameplateContainer = size2;
-const size3 = { position: "absolute", right: 0, width: fn(15180).PREVIEW_SIZE * fn(15180).NAMEPLATE_ASPECT_RATIO, height: fn(15180).PREVIEW_SIZE };
+const size3 = { position: "absolute", right: 0, width: fn(15187).PREVIEW_SIZE * fn(15187).NAMEPLATE_ASPECT_RATIO, height: fn(15187).PREVIEW_SIZE };
 obj2.nameplatePreview = size3;
-const size4 = { width: fn(15180).PREVIEW_SIZE, height: fn(15180).PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
+const size4 = { width: fn(15187).PREVIEW_SIZE, height: fn(15187).PREVIEW_SIZE, marginRight: 12, alignItems: "center", justifyContent: "center" };
 obj2.profileFrameContainer = size4;
 let closure_7 = createStyles.createStyles(obj2);
 size = fn(2);

@@ -1,26 +1,26 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15161
+// Function ID: 15162
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1372, 7779, 7780, 1074, 4965, 21, 4756, 576, 8923, 4453, 1115, 12171, 563, 15155, 1241, 15156, 4723, 15157, 1980, 5184, 5186, 13207, 2482, 15160, 4959, 1366, 12168, 1609, 5355, 14136, 2]
+// Dependencies: [19, 17, 1372, 7782, 7783, 1074, 4966, 21, 4757, 576, 8928, 4454, 1115, 12175, 563, 15162, 1241, 15163, 4724, 15164, 1980, 5185, 5187, 13211, 2482, 15167, 4960, 1366, 12172, 1609, 5357, 14143, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 15154 (FamilyCenterBannerButton)
+// Module 15161 (FamilyCenterBannerButton)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import _modDef2482 from "module_2482" /* 2482 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15156 */;
-import QrCodeIcon from "QrCodeIcon" /* 15160 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15163 */;
+import QrCodeIcon from "QrCodeIcon" /* 15167 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7782 */;
 
 const require = globalThis.__r;
 
-const NativePermissionUtilsDefault = tmp(5355);
+const NativePermissionUtilsDefault = tmp(5357);
 require = fn;
 function FamilyCenterTeenQRCodeButtonInner() {
   const callback = stateFromStores1.useCallback(() => {
@@ -68,7 +68,7 @@ function FamilyCenterTeenQRCodeButtonInner() {
       const obj2 = { action: React7.ShowQRCodeModal };
       AnalyticsUtilsDefault.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj2);
       const obj4 = { linkCode: stateFromStores1, expiresAt: stateFromStores2, onRefresh: getLinkCode2 };
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15157, dependencyMap.paths), React5, obj4);
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15164, dependencyMap.paths), React5, obj4);
     }
   }, items4);
   const obj8 = { direction: "horizontal", spacing: getLinkCode2(stateFromStores[9]).space.PX_8, style: tmp.container, children: null };
@@ -102,16 +102,16 @@ class FamilyCenterBannerButton {
   }
 }
 const View = fn(17).View;
-const FamilyCenterConstants = fn(7780);
+const FamilyCenterConstants = fn(7783);
 ({ CONNECT_GUARDIAN_BOTTOM_SHEET_KEY: closure_7, FAMILY_CENTER_LINK_REQUEST_REGEX: closure_8, FamilyCenterAction: closure_9 } = FamilyCenterConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const NativePermissionTypes = fn(4965).NativePermissionTypes;
+const NativePermissionTypes = fn(4966).NativePermissionTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let createStyles = fn(4756);
+let createStyles = fn(4757);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_16 } };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4756);
+createStyles = fn(4757);
 const value = createStyles.createStyles({ button: { height: 50, width: "100%", marginTop: 16 }, art: { width: 18, height: 18, marginRight: 6 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterBannerButton.tsx");
@@ -172,6 +172,6 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     };
     return closure_12(FamilyCenterBannerButton, obj2);
   }
-  obj = handleQrCodeScanSucess(8923);
+  obj = handleQrCodeScanSucess(8928);
   tmp = handleQrCodeScanSucess;
 };

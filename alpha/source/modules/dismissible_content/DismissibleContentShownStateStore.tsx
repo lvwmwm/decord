@@ -1,17 +1,17 @@
-// Module ID: 2033
-// Function ID: 2034
+// Module ID: 2034
+// Function ID: 2035
 // Name: DismissibleContentShownStateStore
-// Dependencies: [2034, 2035, 1074, 1243, 2032, 2036, 1248, 504, 2037, 573, 2]
+// Dependencies: [2035, 2036, 1074, 1243, 2033, 2037, 1248, 504, 2038, 573, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 2033 (DismissibleContentShownStateStore)
+// Module 2034 (DismissibleContentShownStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2032 */;
-import isActionRequiredDefault from "isActionRequired" /* 2037 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2034 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2033 */;
+import isActionRequiredDefault from "isActionRequired" /* 2038 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2035 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
 
 const require = globalThis.__r;
 
@@ -177,7 +177,7 @@ let closure_6 = identity.createWithEqualityFn(function initState() {
   return obj;
 });
 let closure_7 = false;
-const batchInvocationManager = new fn(2036).BatchInvocationManager((arg0) => {
+const batchInvocationManager = new fn(2037).BatchInvocationManager((arg0) => {
   const resolved = Promise.resolve(arg0);
   return resolved.then((result) => {
     closure_0 = result;

@@ -1,33 +1,33 @@
-// Module ID: 11909
-// Function ID: 11910
+// Module ID: 11913
+// Function ID: 11914
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 8196, 11910, 11911, 4406, 502, 2063, 4395, 4749, 1074, 21, 7407, 7427, 4936, 11908, 8234, 11912, 8098, 504, 7511, 11913, 11914, 2019, 7509, 11915, 4980, 1385, 11916, 8385, 11917, 7444, 11918, 7442, 1609, 11982, 11983, 1115, 10437, 4702, 4713, 4698, 10508, 11987, 11941, 5291, 11989, 10502, 11991, 9037, 5312, 11219, 11993, 11995, 8940, 11997, 11960, 4718, 9549, 5289, 5308, 4704, 10889, 8231, 8942, 11080, 2614, 5299, 7518, 7531, 11999, 4906, 7534, 8003, 11870, 2]
+// Dependencies: [32, 19, 8200, 11914, 11915, 4407, 502, 2064, 4396, 4750, 1074, 21, 7409, 7429, 4937, 11912, 8238, 11916, 8101, 504, 7513, 11917, 11918, 2020, 7511, 11919, 4981, 1385, 11920, 8389, 11921, 7446, 11922, 7444, 1609, 11986, 11987, 1115, 10443, 4703, 4714, 4699, 10514, 11991, 11945, 5293, 11993, 10508, 11995, 9042, 5314, 11225, 11997, 11999, 8945, 12001, 11964, 4719, 9555, 5291, 5310, 4705, 10895, 8235, 8947, 11086, 2614, 5301, 7520, 7533, 12003, 4907, 7536, 8006, 11874, 2]
 // Exports: default
 
-// Module 11909 (LongPressMessageActionSheet)
+// Module 11913 (LongPressMessageActionSheet)
 import FlagUtils from "FlagUtils" /* 1385 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1609 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4936 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7407 */;
-import ActionSheet from "ActionSheet" /* 7442 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 11908 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11918 */;
-import EmojiRowUtils from "EmojiRowUtils" /* 11982 */;
-import EmojiRowDefault from "EmojiRow" /* 11983 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4937 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7409 */;
+import ActionSheet from "ActionSheet" /* 7444 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 11912 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11922 */;
+import EmojiRowUtils from "EmojiRowUtils" /* 11986 */;
+import EmojiRowDefault from "EmojiRow" /* 11987 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8196 */;
-import ReportToModStore from "ReportToModStore" /* 11910 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11911 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8200 */;
+import ReportToModStore from "ReportToModStore" /* 11914 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let isMessageComponentsV2 = fn(4406).isMessageComponentsV2;
-const FileUploadErrorTypes = fn(4749).FileUploadErrorTypes;
+let isMessageComponentsV2 = fn(4407).isMessageComponentsV2;
+const FileUploadErrorTypes = fn(4750).FileUploadErrorTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ChannelTypes: closure_15, GuildFeatures: closure_16, LOCAL_BOT_ID: closure_17, MessageAttachmentFlags: closure_18, MessageFlags: closure_19, MessageStates: closure_20, MessageTypes: closure_21, MessageTypesSets: closure_22, Permissions: closure_23 } = Constants);
 const jsx = fn(21).jsx;

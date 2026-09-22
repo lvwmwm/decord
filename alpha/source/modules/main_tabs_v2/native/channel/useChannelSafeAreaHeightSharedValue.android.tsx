@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11619
+// Function ID: 11620
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [11616, 11618, 4624, 11619, 4492, 4457, 576, 1610, 2]
+// Dependencies: [11620, 11622, 4625, 11623, 4493, 4458, 576, 1610, 2]
 // Exports: default
 
-// Module 11615 (useChannelSafeAreaHeightSharedValue)
+// Module 11619 (useChannelSafeAreaHeightSharedValue)
 import KeyboardTypes from "KeyboardTypes" /* 1610 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16589
+// Function ID: 16590
 // Name: DMChannel
-// Dependencies: [19, 4771, 4937, 10374, 4938, 21, 4756, 576, 11177, 4767, 504, 16371, 16455, 9867, 2]
+// Dependencies: [19, 4772, 4938, 10380, 4939, 21, 4757, 576, 11183, 4768, 504, 16382, 16466, 9873, 2]
 
-// Module 16578 (DMChannel)
+// Module 16589 (DMChannel)
 import nativeDefault from "native" /* 576 */;
-import transitionToChannel from "transitionToChannel" /* 4767 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9867 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11177 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 16371 */;
-import ChannelItemDefault from "ChannelItem" /* 16455 */;
+import transitionToChannel from "transitionToChannel" /* 4768 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9873 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11183 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 16382 */;
+import ChannelItemDefault from "ChannelItem" /* 16466 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import ReadStateStore from "ReadStateStore" /* 4772 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
 
 require = fn;
-const UnreadSetting = fn(4938).UnreadSetting;
+const UnreadSetting = fn(4939).UnreadSetting;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
-let obj = { container: { marginVertical: fn(10374).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+const createStyles = fn(4757);
+let obj = { container: { marginVertical: fn(10380).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
 let closure_8 = createStyles.createStyles(obj);
-let obj3 = { marginVertical: fn(10374).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+let obj3 = { marginVertical: fn(10380).CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
 

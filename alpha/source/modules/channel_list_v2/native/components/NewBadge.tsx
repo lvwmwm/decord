@@ -1,22 +1,22 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12554
+// Function ID: 12555
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4756, 1364, 576, 4607, 8117, 4690, 4752, 1115, 2]
+// Dependencies: [19, 17, 21, 4757, 1364, 576, 4608, 8120, 4691, 4753, 1115, 2]
 // Exports: default
 
-// Module 12550 (NewBadge)
+// Module 12554 (NewBadge)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useThemeDefault from "useTheme" /* 4690 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8117 */;
+import useThemeDefault from "useTheme" /* 4691 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8120 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
   let num = 0;
   if (obj.isIOS()) {

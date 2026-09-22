@@ -1,10 +1,10 @@
-// Module ID: 15428
-// Function ID: 15429
+// Module ID: 15436
+// Function ID: 15437
 // Name: QuestDockBlurredContentBackground
-// Dependencies: [19, 17, 21, 5173, 2]
+// Dependencies: [19, 17, 21, 5174, 2]
 
-// Module 15428 (QuestDockBlurredContentBackground)
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5173 */;
+// Module 15436 (QuestDockBlurredContentBackground)
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5174 */;
 import noop from "module_19" /* 19 */;
 
 const StyleSheet = fn(17).StyleSheet;

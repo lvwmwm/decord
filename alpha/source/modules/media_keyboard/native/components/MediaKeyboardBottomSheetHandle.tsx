@@ -1,12 +1,12 @@
-// Module ID: 10901
-// Function ID: 10902
+// Module ID: 10907
+// Function ID: 10908
 // Name: MediaKeyboardBottomSheetHandle
-// Dependencies: [19, 21, 8538, 1115, 9184, 2]
+// Dependencies: [19, 21, 8542, 1115, 9189, 2]
 
-// Module 10901 (MediaKeyboardBottomSheetHandle)
+// Module 10907 (MediaKeyboardBottomSheetHandle)
 import util from "util" /* 1115 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8538 */;
-import native from "native" /* 9184 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8542 */;
+import native from "native" /* 9189 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

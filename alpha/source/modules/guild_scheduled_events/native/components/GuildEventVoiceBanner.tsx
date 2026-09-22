@@ -1,22 +1,22 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14056
+// Function ID: 14057
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 2095, 7768, 21, 4756, 576, 9750, 504, 9759, 9753, 4723, 9783, 4963, 9887, 5339, 9869, 5186, 1115, 2]
+// Dependencies: [19, 17, 2096, 7771, 21, 4757, 576, 9756, 504, 9765, 9759, 4724, 9789, 4964, 9893, 5341, 9875, 5187, 1115, 2]
 
-// Module 14048 (GuildEventVoiceBanner)
+// Module 14056 (GuildEventVoiceBanner)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9783 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9887 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9789 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9893 */;
 import noop from "module_19" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7768).isGuildScheduledEventActive;
+let closure_6 = fn(7771).isGuildScheduledEventActive;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { header: { margin: 12, padding: 12, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, descriptionContainerStyle: { paddingTop: 4 }, buttonContainer: { marginTop: 12 } };
 let closure_9 = createStyles.createStyles(obj);
 let obj3 = { margin: 12, padding: 12, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };

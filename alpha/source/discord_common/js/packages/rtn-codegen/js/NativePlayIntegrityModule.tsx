@@ -1,9 +1,9 @@
-// Module ID: 8844
-// Function ID: 8845
+// Module ID: 8850
+// Function ID: 8851
 // Name: NativePlayIntegrityModule
 // Dependencies: [17, 2]
 
-// Module 8844 (NativePlayIntegrityModule)
+// Module 8850 (NativePlayIntegrityModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

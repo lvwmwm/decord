@@ -1,28 +1,28 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15164
+// Function ID: 15165
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7779, 7780, 21, 4756, 576, 563, 4723, 15158, 7395, 4752, 1115, 2482, 15159, 5186, 2]
+// Dependencies: [19, 17, 7782, 7783, 21, 4757, 576, 563, 4724, 15165, 7397, 4753, 1115, 2482, 15166, 5187, 2]
 // Exports: default
 
-// Module 15157 (ConnectGuardianBottomSheet)
+// Module 15164 (ConnectGuardianBottomSheet)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import _modDef2482 from "module_2482" /* 2482 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7395 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15158 */;
-import ConnectGuardianCard from "ConnectGuardianCard" /* 15159 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 15165 */;
+import ConnectGuardianCard from "ConnectGuardianCard" /* 15166 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7779 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7782 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7780).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
+let closure_6 = fn(7783).CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 }, info: null, centered: null, cardContainer: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 obj2.info = { alignItems: "center", gap: nativeDefault.space.PX_8 };

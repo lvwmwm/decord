@@ -1,11 +1,11 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 7893
+// Function ID: 7894
 // Name: KvCacheVersion
-// Dependencies: [5, 499, 3, 2070, 2]
+// Dependencies: [5, 499, 3, 2071, 2]
 
-// Module 7890 (KvCacheVersion)
+// Module 7893 (KvCacheVersion)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2071 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const KvCacheVersionConstants = fn(499);

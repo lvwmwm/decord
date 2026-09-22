@@ -1,10 +1,10 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13415
+// Function ID: 13416
 // Name: GuildInviteSendStateStore
 // Dependencies: [560, 1248, 2]
 // Exports: setSendState
 
-// Module 13410 (GuildInviteSendStateStore)
+// Module 13415 (GuildInviteSendStateStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 11066
+// Function ID: 11067
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9066, 7473, 1074, 1091, 573, 7471, 9133, 1271, 2009, 559, 2]
+// Dependencies: [5, 9071, 7475, 1074, 1091, 573, 7473, 9138, 1271, 2010, 559, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 11060 (SocialLayerStorefrontActionCreators)
+// Module 11066 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9066 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7473 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9071 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7475 */;
 
 const require = globalThis.__r;
 
@@ -77,7 +77,7 @@ let closure_13 = async function _fetchSocialLayerStorefront2(arg0, value) {
           closure_132_17 = undefined;
           c8 = 1;
           c9 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp7) {
@@ -307,7 +307,7 @@ let closure_15 = async function _fetchSocialLayerStorefrontSkuWithUrl2(arg0, val
           let storefront_metadata;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {

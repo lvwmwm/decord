@@ -1,19 +1,19 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 12951
+// Function ID: 12952
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4756, 4492, 4757, 4752, 2]
+// Dependencies: [19, 21, 4757, 4493, 4758, 4753, 2]
 // Exports: default
 
-// Module 12947 (ContactSyncError)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
+// Module 12951 (ContactSyncError)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_4 = createStyles.createStyles({ container: { justifyContent: "center" }, error: { paddingHorizontal: 16, textAlign: "center" } });
 const __initData = { code: "function ContactSyncErrorTsx1(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
 const size = fn(2);

@@ -1,24 +1,24 @@
-// Module ID: 15582
-// Function ID: 15583
+// Module ID: 15593
+// Function ID: 15594
 // Name: DefaultGuildThemePreferenceSetting
-// Dependencies: [19, 8233, 2019, 1115, 1186, 11725, 4683, 2]
+// Dependencies: [19, 8237, 2020, 1115, 1186, 11729, 4684, 2]
 
-// Module 15582 (DefaultGuildThemePreferenceSetting)
+// Module 15593 (DefaultGuildThemePreferenceSetting)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4683 */;
+import UserSettings from "UserSettings" /* 2020 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4684 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const SettingBuilders = fn(11729);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.Q7mm4g);
   },
-  parent: fn(8233).MobileUserSettings.APPEARANCE,
-  useValue: fn(2019).DefaultGuildThemePreference.useSetting,
+  parent: fn(8237).MobileUserSettings.APPEARANCE,
+  useValue: fn(2020).DefaultGuildThemePreference.useSetting,
   onValueChange: function onDefaultGuildThemePreferenceChange(arg0) {
     const DefaultGuildThemePreference = UserSettings.DefaultGuildThemePreference;
     DefaultGuildThemePreference.updateSetting(Number(arg0));

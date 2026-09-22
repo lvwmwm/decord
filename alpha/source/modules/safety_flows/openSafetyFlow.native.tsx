@@ -1,12 +1,12 @@
-// Module ID: 18321
-// Function ID: 18322
+// Module ID: 18334
+// Function ID: 18335
 // Name: openSafetyFlow
-// Dependencies: [5, 2035, 1074, 18322, 4959, 18323, 18324, 17865, 18325, 1980, 2]
+// Dependencies: [5, 2036, 1074, 18335, 4960, 18336, 18337, 17877, 18338, 1980, 2]
 // Exports: openSafetyFlow
 
-// Module 18321 (openSafetyFlow)
+// Module 18334 (openSafetyFlow)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2035 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
 
 const require = fn;
 let closure_6 = async function _openSafetyFlow(arg0, value) {
@@ -46,7 +46,7 @@ let closure_6 = async function _openSafetyFlow(arg0, value) {
           closure_130_2 = undefined;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp7) {

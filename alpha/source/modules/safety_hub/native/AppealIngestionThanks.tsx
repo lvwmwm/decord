@@ -1,19 +1,19 @@
-// Module ID: 12162
-// Function ID: 12163
+// Module ID: 12166
+// Function ID: 12167
 // Name: AppealIngestionThanks
-// Dependencies: [19, 17, 21, 4756, 12141, 7368, 1177, 2]
+// Dependencies: [19, 17, 21, 4757, 12145, 7370, 1177, 2]
 // Exports: default
 
-// Module 12162 (AppealIngestionThanks)
+// Module 12166 (AppealIngestionThanks)
 import native from "native" /* 1177 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12141 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12145 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_4 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionThanks.tsx");

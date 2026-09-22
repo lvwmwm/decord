@@ -1,25 +1,25 @@
-// Module ID: 2040
-// Function ID: 2041
+// Module ID: 2041
+// Function ID: 2042
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 2041, 2095, 1372, 2004, 9315, 1074, 9619, 9620, 4385, 9316, 14254, 1110, 9638, 573, 9614, 9524, 1364, 1978, 7765, 504, 2]
+// Dependencies: [32, 502, 2042, 2096, 1372, 2004, 9321, 1074, 9625, 9626, 4385, 9322, 14261, 1110, 9644, 573, 9620, 9530, 1364, 1978, 7768, 504, 2]
 
-// Module 2040 (EmbeddedActivitiesStore)
+// Module 2041 (EmbeddedActivitiesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Server from "Server" /* 1978 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7765 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9316 */;
-import getPlatformDefault from "getPlatform" /* 9524 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 9619 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 9620 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7768 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9322 */;
+import getPlatformDefault from "getPlatform" /* 9530 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 9625 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 9626 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 import UserStore from "UserStore" /* 1372 */;
 
-const isVoiceEmbeddedActivityDefault = combined(9614);
+const isVoiceEmbeddedActivityDefault = combined(9620);
 require = fn;
 function participantFromServer(userId) {
   return { userId: userId.user_id, sessionId: userId.session_id, nonce: userId.nonce };
@@ -232,7 +232,7 @@ function updateEmbeddedActivities(content_classification) {
                 const ComponentDispatch2 = tmp76(1110).ComponentDispatch;
                 const obj8 = { location: _location, applicationId: application_id, isFirstActivityInChannel: 0 === arr2.length, isStart: tmp78, participants: mapped, embeddedActivity: obj7, inviterUserId };
                 ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj8);
-                tmp76(9638);
+                tmp76(9644);
                 if (true === renderInFramePool) {
                   let ACTIVITY_POPOUT_WINDOW = ActivityPanelModes.DISCONNECTED;
                   const _HermesInternal2 = HermesInternal;
@@ -269,10 +269,10 @@ function updateEmbeddedActivities(content_classification) {
       obj6.delete("" + application_id + ":" + tmp59);
     }
     obj6 = map4;
-    const someResult1 = mapped.some((item) => application_id(14254).isActivityParticipantCurrentUserCurrentSession(item));
+    const someResult1 = mapped.some((item) => application_id(14261).isActivityParticipantCurrentUserCurrentSession(item));
   }
 }
-const ActivityPanelConstants = fn(9315);
+const ActivityPanelConstants = fn(9321);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const FocusedActivityLayouts = ActivityPanelConstants.FocusedActivityLayouts;
 const Constants = fn(1074);

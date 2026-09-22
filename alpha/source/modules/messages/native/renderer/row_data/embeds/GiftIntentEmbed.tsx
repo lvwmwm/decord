@@ -1,21 +1,21 @@
-// Module ID: 8335
-// Function ID: 8336
+// Module ID: 8339
+// Function ID: 8340
 // Name: GiftIntentEmbed
-// Dependencies: [8336, 1372, 1374, 4756, 576, 1115, 8340, 4600, 8204, 4691, 8341, 8342, 2]
+// Dependencies: [8340, 1372, 1374, 4757, 576, 1115, 8344, 4601, 8208, 4692, 8345, 8346, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 8335 (GiftIntentEmbed)
+// Module 8339 (GiftIntentEmbed)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8204 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8340 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8336 */;
+import UserUtilsDefault from "UserUtils" /* 4601 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8208 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8344 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8340 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const GiftIntentType = fn(1374).GiftIntentType;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_6 = createStyles.createNativeStyleProperties({ headerTextColor: nativeDefault.colors.TEXT_STRONG, subHeaderTextColor: nativeDefault.colors.TEXT_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BORDER_MUTED });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/GiftIntentEmbed.tsx");
@@ -66,11 +66,11 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
         obj9.giftIntentType = giftIntentType;
         ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = closure_6(theme));
         const tmp6 = closure_6(theme);
-        obj9.subHeaderIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(4691));
+        obj9.subHeaderIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(4692));
         const intl3 = util.intl;
         obj9.primaryCtaLabel = intl3.string(util.t.ilhtIa);
-        obj9.primaryCtaIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(8341));
-        obj9.secondaryCtaIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(8342));
+        obj9.primaryCtaIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(8345));
+        obj9.secondaryCtaIconUrl = renderer_EmbedUtils.getAssetUriForEmbed(tmp8(8346));
         const intl4 = util.intl;
         obj9.secondaryCtaAccessibilityLabel = intl4.string(util.t.I5gL2H);
         return obj9;

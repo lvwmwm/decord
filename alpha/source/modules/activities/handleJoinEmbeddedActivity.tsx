@@ -1,16 +1,16 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9643
+// Function ID: 9644
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 4983, 2041, 2095, 1372, 2040, 2004, 9638, 9575, 4385, 9639, 9604, 9603, 9614, 9615, 9600, 13181, 9593, 2]
+// Dependencies: [5, 4984, 2042, 2096, 1372, 2041, 2004, 9644, 9581, 4385, 9645, 9610, 9609, 9620, 9621, 9606, 13185, 9599, 2]
 // Exports: default
 
-// Module 9637 (handleJoinEmbeddedActivity)
+// Module 9643 (handleJoinEmbeddedActivity)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import ApplicationStore from "ApplicationStore" /* 4984 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 import UserStore from "UserStore" /* 1372 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
 
 const require = globalThis.__r;
 
@@ -64,7 +64,7 @@ let closure_10 = async function _handleJoinEmbeddedActivityInternal(arg0, value)
           closure_129_18 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

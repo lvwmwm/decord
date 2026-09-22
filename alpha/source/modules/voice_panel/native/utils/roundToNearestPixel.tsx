@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11265
+// Function ID: 11266
 // Name: roundToNearestPixel
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 11259 (roundToNearestPixel)
+// Module 11265 (roundToNearestPixel)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

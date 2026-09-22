@@ -1,51 +1,92 @@
 // Module ID: 10765
 // Function ID: 10766
-// Dependencies: [41, 42, 10762, 10719]
+// Dependencies: [41, 42, 93, 95, 98, 10760, 10698, 10700, 10701, 10705]
 
 // Module 10765
-import alphaNum from "alphaNum" /* 10762 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10705 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const JPWeekdayParser = require;
-const keys = Object.keys(alphaNum.WEEKDAY_OFFSET);
-const regExp = new RegExp("((?<prefix>\u524D\u306E|\u6B21\u306E|\u4ECA\u9031))?(?<weekday>" + keys.join("|") + ")(?:\u66DC\u65E5|\u66DC)", "i");
-class JPWeekdayParser {
-  constructor() {
-    tmp = c2(this, JPWeekdayParser);
-    return;
+const FRTimeUnitAgoFormatParser = require;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class FRTimeUnitAgoFormatParser {
+  constructor() {
+    self = this;
+    tmp = c2(this, FRTimeUnitAgoFormatParser);
+    tmp2 = closure_4;
+    obj = closure_4(FRTimeUnitAgoFormatParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
+  key: "innerPattern",
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + FRTimeUnitAgoFormatParser(10760).NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + FRTimeUnitAgoFormatParser(10698).matchAnyPattern(FRTimeUnitAgoFormatParser(10760).TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
     return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(reference, groups) {
-      const tmp3 = JPWeekdayParser(10762).WEEKDAY_OFFSET[groups.groups.weekday];
-      if (undefined === tmp3) {
-        return null;
-      } else {
-        let str2 = "last";
-        if (!groups.groups.prefix || "".match(/前の/)) {
-          str2 = "next";
-          if (!str.match(/次の/)) {
-            str2 = null;
-            if (str.match(/今週/)) {
-              str2 = "this";
-            }
-          }
-        }
-        return tmp(10719).createParsingComponentsAtWeekday(reference.reference, tmp3, str2);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let num = 1;
+      if (arg1[1]) {
+        num = FRTimeUnitAgoFormatParser(10760).parseNumberPattern(arg1[1]);
       }
-      tmp = JPWeekdayParser;
+      const obj = {};
+      obj[FRTimeUnitAgoFormatParser(10760).TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
+      const formatted = arg1[2] || arg1[4] || "".toLowerCase();
+      if (formatted) {
+        let isMatch = /derni[eè]re?s?/.test(formatted);
+        if (!isMatch) {
+          isMatch = /pass[ée]e?s?/.test(formatted);
+          const obj3 = /pass[ée]e?s?/;
+        }
+        if (!isMatch) {
+          isMatch = /pr[ée]c[ée]dents?/.test(formatted);
+          const obj4 = /pr[ée]c[ée]dents?/;
+        }
+        let reverseDurationResult = obj;
+        if (isMatch) {
+          reverseDurationResult = tmp3(10700).reverseDuration(obj);
+        }
+        const ParsingComponents = tmp3(10701).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      const str2 = arg1[2] || arg1[4] || "";
     }
   }
 ];
 
-export default _createClass(JPWeekdayParser, items);
+export default _createClass(FRTimeUnitAgoFormatParser, items);

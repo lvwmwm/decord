@@ -1,19 +1,19 @@
-// Module ID: 17506
-// Function ID: 17507
+// Module ID: 17518
+// Function ID: 17519
 // Name: FramePanelPIPView
-// Dependencies: [19, 9313, 9314, 17481, 21, 504, 17480, 17504, 16967, 2]
+// Dependencies: [19, 9318, 9319, 17493, 21, 504, 17492, 17516, 16979, 2]
 
-// Module 17506 (FramePanelPIPView)
-import FrameViewDefault from "FrameView" /* 16967 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 17480 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17504 */;
+// Module 17518 (FramePanelPIPView)
+import FrameViewDefault from "FrameView" /* 16979 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 17492 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17516 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9313 */;
+import FramesStore from "FramesStore" /* 9318 */;
 
 require = fn;
-const FramesConstants = fn(9314);
+const FramesConstants = fn(9319);
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire, getPipOrientationLockStateForFrame: closure_7 } = FramesConstants);
-let closure_8 = fn(17481).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
+let closure_8 = fn(17493).DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelPIPView.tsx");

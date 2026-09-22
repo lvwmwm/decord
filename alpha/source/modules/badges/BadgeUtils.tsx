@@ -1,13 +1,14 @@
-// Module ID: 11464
-// Function ID: 11465
+// Module ID: 11468
+// Function ID: 11469
 // Name: BadgeUtils
-// Dependencies: [8452, 8453, 1115, 8462, 2]
-// Exports: getAlwaysVisibleCopy, getDirectoryBadges, getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
+// Dependencies: [8456, 8457, 1115, 8466, 2010, 2]
+// Exports: getAlwaysVisibleCopy, getDirectoryBadges, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getUnhideableBadgeIds, groupCustomizableBadges
 
-// Module 11464 (BadgeUtils)
-import Constants from "Constants" /* 8452 */;
-import BadgeId from "BadgeId" /* 8453 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8462 */;
+// Module 11468 (BadgeUtils)
+import StringUtils from "StringUtils" /* 2010 */;
+import Constants from "Constants" /* 8456 */;
+import BadgeId from "BadgeId" /* 8457 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8466 */;
 import size from "module_2" /* 2 */;
 
 function isPinnedBadge(badge_id) {
@@ -83,6 +84,49 @@ export const groupCustomizableBadges = function groupCustomizableBadges(memo) {
   return { fixedBadges, reorderableBadges, hiddenBadges };
 };
 export { getProfileBadgeIconUrl };
+export const getProfileBadgeLabel = function getProfileBadgeLabel(description, info_label) {
+  if (info_label != null) {
+    info_label = info_label.info_label;
+  }
+  if (null != info_label) {
+    if (!obj.isLegacyBadgeId(info_label.badge_id)) {
+      const tmpResult = StringUtils;
+    }
+    return info_label;
+  }
+  let str = description;
+  if (description == null) {
+    let name;
+    if (info_label != null) {
+      name = info_label.name;
+    }
+    str = name;
+  }
+  if (str == null) {
+    str = "";
+  }
+  info_label = str;
+};
+export const getLegacyDescriptionByBadgeId = function getLegacyDescriptionByBadgeId(badges) {
+  const map = new Map();
+  const iter = badges[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let obj2 = BadgeIdResolution;
+    let profileBadgeId = obj2.resolveProfileBadgeId(nextResult.id);
+    let tmp6 = profileBadgeId;
+    let hasItem = null == profileBadgeId;
+    if (!hasItem) {
+      hasItem = map.has(tmp6);
+    }
+    if (!hasItem) {
+      let result = map.set(tmp6, tmp2.description);
+    }
+    continue;
+  }
+  return map;
+};
 export const getLegacyIconUrlByBadgeId = function getLegacyIconUrlByBadgeId(badges) {
   const map = new Map();
   const iter = badges[Symbol.iterator]();

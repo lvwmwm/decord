@@ -1,10 +1,10 @@
-// Module ID: 12339
-// Function ID: 12340
+// Module ID: 12343
+// Function ID: 12344
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 1177, 1978, 4752, 1115, 2]
+// Dependencies: [19, 17, 1074, 21, 4757, 576, 1177, 1978, 4753, 1115, 2]
 // Exports: default
 
-// Module 12339 (ActivityShelfBadge)
+// Module 12343 (ActivityShelfBadge)
 import nativeDefault from "native" /* 576 */;
 import Server from "Server" /* 1978 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { badge: null, newBadge: null, updatedBadge: null, elevationShadow: null, badgeText: null };
 const rect = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
 obj2.badge = rect;
@@ -40,7 +40,7 @@ export default function ActivityShelfBadge(arg0) {
     const obj2 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null };
     const intl = tmp2(1115).intl;
     obj2.children = intl.string(tmp2(1115).t.y2b7CA);
-    obj.children = jsx(tmp2(4752).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
+    obj.children = jsx(tmp2(4753).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
     let tmp6 = <View style={null}>{null}</View>;
   } else {
     tmp6 = null;
@@ -52,7 +52,7 @@ export default function ActivityShelfBadge(arg0) {
       const obj4 = { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null };
       const intl2 = tmp2(1115).intl;
       obj4.children = intl2.string(tmp2(1115).t["/qdhkk"]);
-      obj3.children = jsx(tmp2(4752).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
+      obj3.children = jsx(tmp2(4753).Text, { variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: null });
       tmp6 = <View style={null}>{null}</View>;
     }
   }

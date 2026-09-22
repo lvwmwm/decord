@@ -1,12 +1,12 @@
-// Module ID: 7506
-// Function ID: 7507
+// Module ID: 7508
+// Function ID: 7509
 // Name: canReviewGuildMemberApplications
-// Dependencies: [2063, 4395, 1074, 504, 5269, 2]
+// Dependencies: [2064, 4396, 1074, 504, 5271, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 7506 (canReviewGuildMemberApplications)
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 7508 (canReviewGuildMemberApplications)
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 
 const require = globalThis.__r;
 

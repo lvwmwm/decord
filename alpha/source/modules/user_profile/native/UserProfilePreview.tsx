@@ -1,15 +1,15 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 11381
+// Function ID: 11382
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 8429, 7453, 21, 4756, 576, 504, 8455, 8496, 8510, 9630, 8507, 8435, 8470, 8438, 8511, 8493, 4466, 8490, 8476, 8515, 9084, 8525, 11378, 11379, 11419, 11473, 9082, 2]
+// Dependencies: [32, 19, 17, 8433, 7455, 21, 4757, 576, 504, 8459, 8500, 8514, 9636, 8511, 8439, 8474, 8442, 8515, 8497, 4467, 8494, 8480, 8519, 9089, 8529, 11382, 11383, 11423, 11477, 9087, 2]
 // Exports: default
 
-// Module 11377 (UserProfilePreview)
+// Module 11381 (UserProfilePreview)
 import nativeDefault from "native" /* 576 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8493 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8497 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8429 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8433 */;
 
 const require = globalThis.__r;
 
@@ -18,11 +18,11 @@ function filterLayer(responsive) {
   return true !== responsive.responsive;
 }
 const View = fn(17).View;
-const Constants = fn(7453);
+const Constants = fn(7455);
 ({ PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_7, UserProfileThemeTypes: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_12 = createStyles.createStyles((arg0, arg1, arg2) => {
   let num = arg2;
   if (arg2 == null) {
@@ -51,7 +51,7 @@ const result = size.fileFinishedImporting("modules/user_profile/native/UserProfi
 
 export default function UserProfilePreview(hideFrame) {
   ({ user, displayName, guildId } = hideFrame);
-  ({ profileEffectOverride, profileEffectRestartKey, profileFrameOverride, displayNameStylesOverride, compact } = hideFrame);
+  ({ avatarDecorationOverride, profileEffectOverride, profileEffectRestartKey, profileFrameOverride, displayNameStylesOverride, compact } = hideFrame);
   ({ accessibilityLabel, style } = hideFrame);
   if (compact === undefined) {
     compact = false;
@@ -70,8 +70,8 @@ export default function UserProfilePreview(hideFrame) {
   noop = undefined;
   const items = [UserProfileSettingsStore];
   const stateFromStoresObject = guildId(set[8]).useStateFromStoresObject(items, () => UserProfileSettingsStore.getPendingChanges(guildId));
-  ({ pendingAccentColor, pendingThemeColors, pendingProfileEffect, pendingProfileFrame, pendingDisplayNameStyles, pendingPronouns } = stateFromStoresObject);
-  ({ pendingAvatar, pendingBanner, pendingAvatarDecoration, pendingGlobalName, pendingLegacyUsernameDisabled } = stateFromStoresObject);
+  ({ pendingAccentColor, pendingThemeColors, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingDisplayNameStyles, pendingPronouns } = stateFromStoresObject);
+  ({ pendingAvatar, pendingBanner, pendingGlobalName, pendingLegacyUsernameDisabled } = stateFromStoresObject);
   const tmp5 = require("useDisplayProfile")(user.id, guildId);
   let obj = guildId(set[8]);
   ({ theme, primaryColor, secondaryColor } = require("useProfileTheme")({ user, displayProfile: tmp5, pendingThemeColors }));
@@ -83,6 +83,9 @@ export default function UserProfilePreview(hideFrame) {
   const obj2 = guildId(set[12]);
   const userProfileColors = guildId(set[13]).useUserProfileColors({ theme, primaryColor, secondaryColor });
   ({ containerBackground, gradientFallbackBackground, avatarBackground } = userProfileColors);
+  if (undefined !== avatarDecorationOverride) {
+    pendingAvatarDecoration = avatarDecorationOverride;
+  }
   if (undefined !== profileEffectOverride) {
     pendingProfileEffect = profileEffectOverride;
   }

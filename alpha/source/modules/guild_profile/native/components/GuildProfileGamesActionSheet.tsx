@@ -1,16 +1,16 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10034
+// Function ID: 10035
 // Name: GuildProfileGamesActionSheet
-// Dependencies: [19, 17, 21, 8946, 8957, 5822, 10023, 4756, 10027, 8439, 1115, 4723, 10014, 1980, 7395, 6869, 5904, 2]
+// Dependencies: [19, 17, 21, 8951, 8962, 5824, 10029, 4757, 10033, 8443, 1115, 4724, 10020, 1980, 7397, 6871, 5906, 2]
 // Exports: default
 
-// Module 10028 (GuildProfileGamesActionSheet)
+// Module 10034 (GuildProfileGamesActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import TableRow from "TableRow" /* 5822 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8946 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8957 */;
-import components_GameIconDefault from "components/GameIcon" /* 10023 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import TableRow from "TableRow" /* 5824 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8951 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8962 */;
+import components_GameIconDefault from "components/GameIcon" /* 10029 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ function GuildProfileGameRow(activityLevel) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_7 = createStyles.createStyles({ container: { padding: 16, paddingBottom: 48 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileGamesActionSheet.tsx");
@@ -39,22 +39,22 @@ export default function GuildProfileGamesActionSheet(profile) {
   const id = profile.id;
   const gameActivity = profile.gameActivity;
   const tmp = closure_7();
-  const allGuildProfileGames = id(10027).useAllGuildProfileGames(profile);
-  let obj = id(10027);
+  const allGuildProfileGames = id(10033).useAllGuildProfileGames(profile);
+  let obj = id(10033);
   const intl = id(1115).intl;
-  const obj2 = id(8439);
+  const obj2 = id(8443);
   const items = [id];
   const str = intl.format(id(1115).t.vuAVo7, { serverName: profile.name });
   const callback = noop.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(10014, dependencyMap.paths), "GuildProfileActionSheet:" + id, { guildId: id });
+    obj.openLazy(asyncRequireImpl(10020, dependencyMap.paths), "GuildProfileActionSheet:" + id, { guildId: id });
   }, items);
   const obj3 = { ref: obj2.useBottomSheetRef().bottomSheetRef, scrollable: true, onDismiss: callback, startHeight: 300, children: null };
   const obj4 = { children: null };
   const obj5 = { style: tmp.container, children: null };
   const str1 = intl.format(id(1115).t.vuAVo7, { serverName: profile.name }).toString();
-  obj5.children = jsx(id(5904).TableRowGroup, { title: intl.format(id(1115).t.vuAVo7, { serverName: profile.name }).toString(), hasIcons: true, children: allGuildProfileGames.map((game) => <GuildProfileGameRow key={arg0.id} game={arg0} activityLevel={gameActivity[arg0.id]} />) });
+  obj5.children = jsx(id(5906).TableRowGroup, { title: intl.format(id(1115).t.vuAVo7, { serverName: profile.name }).toString(), hasIcons: true, children: allGuildProfileGames.map((game) => <GuildProfileGameRow key={arg0.id} game={arg0} activityLevel={gameActivity[arg0.id]} />) });
   obj4.children = <View style={tmp.container}>{null}</View>;
-  obj3.children = jsx(id(6869).BottomSheetScrollView, { children: null });
-  return jsx(id(7395).BottomSheet, { ref: obj2.useBottomSheetRef().bottomSheetRef, scrollable: true, onDismiss: callback, startHeight: 300, children: null });
+  obj3.children = jsx(id(6871).BottomSheetScrollView, { children: null });
+  return jsx(id(7397).BottomSheet, { ref: obj2.useBottomSheetRef().bottomSheetRef, scrollable: true, onDismiss: callback, startHeight: 300, children: null });
 };

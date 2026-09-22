@@ -1,16 +1,16 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 16968
+// Function ID: 16969
 // Name: VibegrationsChangelogSheet
-// Dependencies: [19, 17, 21, 4756, 576, 1612, 16955, 7442, 7394, 1115, 3678, 6869, 4752, 4438, 4348, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 1612, 16967, 7444, 7396, 1115, 3678, 6871, 4753, 4439, 4348, 2]
 // Exports: default
 
-// Module 16956 (VibegrationsChangelogSheet)
+// Module 16968 (VibegrationsChangelogSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import DateUtils from "DateUtils" /* 4438 */;
-import Text_Text from "Text/Text" /* 4752 */;
+import DateUtils from "DateUtils" /* 4439 */;
+import Text_Text from "Text/Text" /* 4753 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { entries: { gap: nativeDefault.space.PX_12 }, entry: null };
 let obj3 = { gap: nativeDefault.space.PX_12 };
 obj2.entry = { gap: nativeDefault.space.PX_4 };

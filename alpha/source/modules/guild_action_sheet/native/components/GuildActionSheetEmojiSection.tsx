@@ -1,20 +1,20 @@
-// Module ID: 14246
-// Function ID: 14247
+// Module ID: 14253
+// Function ID: 14254
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 5676, 1182, 1372, 1074, 21, 4756, 576, 504, 1478, 4457, 4414, 7407, 7427, 4723, 9427, 4607, 14247, 1115, 5339, 1177, 10573, 4724, 4725, 4453, 5804, 7376, 7377, 1397, 2]
+// Dependencies: [32, 19, 17, 5678, 1182, 1372, 1074, 21, 4757, 576, 504, 1478, 4458, 4415, 7409, 7429, 4724, 9433, 4608, 14254, 1115, 5341, 1177, 10579, 4725, 4726, 4454, 5806, 7378, 7379, 1397, 2]
 // Exports: default
 
-// Module 14246 (GuildActionSheetEmojiSection)
+// Module 14253 (GuildActionSheetEmojiSection)
 import nativeDefault from "native" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import ToastUtils from "ToastUtils" /* 4453 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import HapticUtils from "HapticUtils" /* 4724 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4725 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9427 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import ToastUtils from "ToastUtils" /* 4454 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import HapticUtils from "HapticUtils" /* 4725 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4726 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9433 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -26,7 +26,7 @@ const Constants = fn(1074);
 ({ UpsellTypes: closure_9, AnalyticsSections: c10, Fonts } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { header: { flexDirection: "row", alignItems: "center", flexWrap: "wrap" }, dotSeparator: null, premiumTitle: null, emojiContainer: null, emoji: null, emojiCount: null };
 let size = { width: 4, height: 4, borderRadius: nativeDefault.radii.xs, marginRight: 8, marginLeft: 8, backgroundColor: nativeDefault.colors.TEXT_SUBTLE };
 obj2.dotSeparator = size;

@@ -1,24 +1,24 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16463
+// Function ID: 16464
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4397, 2041, 4395, 4771, 2095, 1372, 4775, 4780, 10374, 1074, 4938, 1114, 21, 4756, 576, 8728, 5193, 504, 12548, 4767, 10478, 16453, 16455, 9867, 16458, 1177, 16460, 16469, 4901, 2]
+// Dependencies: [19, 17, 4398, 2042, 4396, 4772, 2096, 1372, 4776, 4781, 10380, 1074, 4939, 1114, 21, 4757, 576, 8732, 5194, 504, 12552, 4768, 10484, 16464, 16466, 9873, 16469, 1177, 16471, 16480, 4902, 2]
 // Exports: default
 
-// Module 16452 (ThreadChannel)
+// Module 16463 (ThreadChannel)
 import nativeDefault from "native" /* 576 */;
-import transitionToChannel from "transitionToChannel" /* 4767 */;
-import inlineStyles from "inlineStyles" /* 8728 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10478 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16453 */;
+import transitionToChannel from "transitionToChannel" /* 4768 */;
+import inlineStyles from "inlineStyles" /* 8732 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10484 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 16464 */;
 import noop from "module_19" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4397 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4398 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
+import ReadStateStore from "ReadStateStore" /* 4772 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4780 */;
+import VoiceStateStore from "VoiceStateStore" /* 4776 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4781 */;
 
 const inlineStylesDefault = inlineStyles;
 
@@ -191,14 +191,14 @@ function ThreadChannel(channel) {
   }
 }
 const View = fn(17).View;
-const RedesignChannelListConstants = fn(10374);
+const RedesignChannelListConstants = fn(10380);
 ({ getScaledChannelRowHeight: map1, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);
 const Permissions = fn(1074).Permissions;
-const UnreadSetting = fn(4938).UnreadSetting;
+const UnreadSetting = fn(4939).UnreadSetting;
 let closure_16 = fn(1114).OpenThreadAnalyticsLocations;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { container: { marginVertical: CHANNEL_MARGIN_VERTICAL, marginStart: 2, marginEnd: 8, borderRadius: nativeDefault.radii.md, flex: 1 }, threadRow: { flex: 0, flexDirection: "row", alignSelf: "stretch" }, unreadContainer: { width: 8, alignItems: "flex-start", justifyContent: "flex-start" }, spineSpacer: { width: 28 }, unreadIcon: null, threadLineSegment: null };
 let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, marginLeft: -4, marginTop: 12 };
 obj.unreadIcon = size;

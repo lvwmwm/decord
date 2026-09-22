@@ -1,28 +1,28 @@
-// Module ID: 8695
-// Function ID: 8696
+// Module ID: 8699
+// Function ID: 8700
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 8683, 8686, 21, 3, 4756, 576, 4613, 4968, 8689, 4451, 8569, 1364, 5794, 2]
+// Dependencies: [32, 19, 17, 8687, 8690, 21, 3, 4757, 576, 4614, 4969, 8693, 4452, 8573, 1364, 5796, 2]
 // Exports: default
 
-// Module 8695 (AgeVerificationWebViewScreen)
+// Module 8699 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4451 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4613 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4968 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8689 */;
+import LinkingDefault from "Linking" /* 4452 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4614 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 4969 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8693 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(8683).AGE_VERIFICATION_MODAL_KEY;
-const AgeVerificationIncodeWebViewConstants = fn(8686);
+let closure_6 = fn(8687).AGE_VERIFICATION_MODAL_KEY;
+const AgeVerificationIncodeWebViewConstants = fn(8690);
 ({ AgeVerificationIncodeResultStatus: closure_7, buildIncodeFallbackSessionInjection: closure_8, parseIncodeWebViewMessage: closure_9 } = AgeVerificationIncodeWebViewConstants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 let closure_12 = new LoggerDefault("AgeVerificationWebViewScreen");
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: null, loadingOverlay: null, webView: null };
 const tmp4 = new LoggerDefault("AgeVerificationWebViewScreen");
 obj2.container = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };

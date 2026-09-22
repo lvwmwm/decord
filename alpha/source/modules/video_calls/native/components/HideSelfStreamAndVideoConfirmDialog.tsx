@@ -1,20 +1,20 @@
-// Module ID: 17676
-// Function ID: 17677
+// Module ID: 17688
+// Function ID: 17689
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 17675, 21, 4756, 1115, 5205, 4752, 9472, 2]
+// Dependencies: [19, 17, 17687, 21, 4757, 1115, 5206, 4753, 9478, 2]
 // Exports: default
 
-// Module 17676 (HideSelfStreamAndVideoConfirmDialog)
-import common_AlertDefault from "common/Alert" /* 5205 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9472 */;
+// Module 17688 (HideSelfStreamAndVideoConfirmDialog)
+import common_AlertDefault from "common/Alert" /* 5206 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9478 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const constants = fn(17675).SelfStreamAndVideoAlertType;
+const constants = fn(17687).SelfStreamAndVideoAlertType;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_7 = createStyles.createStyles({ wrapper: { padding: 16 }, body: { paddingTop: 16 }, description: { lineHeight: 18 }, ctaLink: { paddingTop: 8, textAlign: "center", textDecorationLine: "underline" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/video_calls/native/components/HideSelfStreamAndVideoConfirmDialog.tsx");
@@ -54,7 +54,7 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   obj.confirmText = intl6.string(tmp6(1115).t["cY+Oob"]);
   obj.onConfirm = onConfirm;
   const obj2 = { style: tmp2.body, children: null };
-  const items = [closure_5(tmp6(4752).Text, { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 }), ];
+  const items = [closure_5(tmp6(4753).Text, { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 }), ];
   const obj4 = {
     accessibilityRole: "link",
     style: null,
@@ -70,7 +70,7 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   obj4.style = items1;
   const intl7 = tmp6(1115).intl;
   obj4.children = intl7.string(tmp6(1115).t["JdIQ/Y"]);
-  items[1] = closure_5(tmp6(4752).Text, obj4);
+  items[1] = closure_5(tmp6(4753).Text, obj4);
   obj2.children = items;
   obj.children = closure_6(View, obj2);
   return closure_5(common_AlertDefault, obj);

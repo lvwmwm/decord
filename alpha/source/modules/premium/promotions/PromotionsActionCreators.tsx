@@ -1,18 +1,18 @@
-// Module ID: 13688
-// Function ID: 13689
+// Module ID: 13696
+// Function ID: 13697
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2109, 1372, 10925, 1374, 1074, 573, 13689, 1271, 7642, 2024, 1217, 13690, 2]
+// Dependencies: [5, 2109, 1372, 10931, 1374, 1074, 573, 13697, 1271, 7645, 2025, 1217, 13698, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 13688 (PromotionsActionCreators)
+// Module 13696 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import wrappers from "wrappers" /* 1217 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 13689 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 13697 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import UserStore from "UserStore" /* 1372 */;
-import PromotionsStore from "PromotionsStore" /* 10925 */;
+import PromotionsStore from "PromotionsStore" /* 10931 */;
 
 require = fn;
 function fetchActivePromotions() {
@@ -86,11 +86,11 @@ function dismissOutboundPromotionNotice() {
   DispatcherDefault.dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = PromotionsStore.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(2024).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(2025).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", async (arg0) => {
       const StringValue = wrappers.StringValue;
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create({ value: lastDismissedOutboundPromotionStartDate });
-    }, lastDismissedOutboundPromotionStartDate(2024).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(2025).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchClaimedOutboundPromotionCodes() {

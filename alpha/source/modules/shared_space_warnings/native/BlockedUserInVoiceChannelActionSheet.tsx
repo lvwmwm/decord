@@ -1,17 +1,17 @@
-// Module ID: 14009
-// Function ID: 14010
+// Module ID: 14017
+// Function ID: 14018
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 2041, 4405, 1372, 14003, 14006, 1074, 21, 4756, 576, 504, 1115, 7442, 11637, 4752, 5904, 5822, 1177, 12079, 10262, 5186, 4723, 5628, 1241, 2]
+// Dependencies: [19, 17, 2042, 4406, 1372, 14011, 14014, 1074, 21, 4757, 576, 504, 1115, 7444, 11641, 4753, 5906, 5824, 1177, 12083, 10268, 5187, 4724, 5630, 1241, 2]
 // Exports: default
 
-// Module 14009 (BlockedUserInVoiceChannelActionSheet)
+// Module 14017 (BlockedUserInVoiceChannelActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -19,13 +19,13 @@ const require = globalThis.__r;
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const setDismissalTimeForUser = fn(14003).setDismissalTimeForUser;
-const SharedSpaceWarningConstants = fn(14006);
+const setDismissalTimeForUser = fn(14011).setDismissalTimeForUser;
+const SharedSpaceWarningConstants = fn(14014);
 ({ BlockWarningEngagements: closure_9, VoiceChannelWarningSurfaces: c10 } = SharedSpaceWarningConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ Fragment: closure_12, jsxs: map1, jsx: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 }, headerImage: { alignSelf: "center", width: 73, height: 86 }, headerText: null, centerText: null, buttonGroup: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 obj2.headerText = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };

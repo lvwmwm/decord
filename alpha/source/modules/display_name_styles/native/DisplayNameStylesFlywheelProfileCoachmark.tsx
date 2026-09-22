@@ -1,11 +1,11 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17281
+// Function ID: 17282
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1372, 2038, 21, 4756, 504, 4414, 1115, 2872, 11394, 5909, 2]
+// Dependencies: [19, 17, 1372, 2039, 21, 4757, 504, 4415, 1115, 2872, 11398, 5911, 2]
 // Exports: default
 
-// Module 17269 (DisplayNameStylesFlywheelProfileCoachmark)
-import native from "native" /* 5909 */;
+// Module 17281 (DisplayNameStylesFlywheelProfileCoachmark)
+import native from "native" /* 5911 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -14,9 +14,9 @@ function CoachmarkImage() {
   return <View style={closure_8().coachmarkImageContainer}>{jsx(native.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" })}</View>;
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_8 = createStyles.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesFlywheelProfileCoachmark.tsx");
@@ -31,7 +31,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const stateFromStores = visible(504).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = visible(504);
   const tmp4 = markAsDismissed;
-  const result = markAsDismissed(4414).canUsePremiumProfileCustomization(stateFromStores);
+  const result = markAsDismissed(4415).canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1115).intl;
   const string = intl.string;
   const tmp6 = markAsDismissed(2872);
@@ -65,7 +65,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(4414);
-  const coachmark = visible(11394).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(4415);
+  const coachmark = visible(11398).useCoachmark(visible.targetRef, memo);
   return null;
 };

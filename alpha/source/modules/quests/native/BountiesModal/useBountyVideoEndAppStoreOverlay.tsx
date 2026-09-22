@@ -1,19 +1,20 @@
-// Module ID: 15294
-// Function ID: 15295
+// Module ID: 15301
+// Function ID: 15302
 // Name: useBountyVideoEndAppStoreOverlay
-// Dependencies: [19, 5661, 21, 15295, 11546, 11741, 15296, 5666, 7964, 4757, 4760, 7954, 5668, 11752, 2]
+// Dependencies: [19, 5663, 21, 15302, 11550, 11745, 15303, 5668, 7967, 4758, 4761, 7957, 5670, 11756, 2]
 // Exports: BountyVideoEndAppStoreProvider, canUseBountyVideoEndAppStoreOverlay, useBountyVideoEndAppStoreContext, useBountyVideoEndAppStoreOverlay
 
-// Module 15294 (useBountyVideoEndAppStoreOverlay)
-import timing from "timing" /* 4757 */;
-import timingPresets from "timingPresets" /* 4760 */;
-import QuestContent from "QuestContent" /* 5666 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15295 */;
+// Module 15301 (useBountyVideoEndAppStoreOverlay)
+import timing from "timing" /* 4758 */;
+import timingPresets from "timingPresets" /* 4761 */;
+import QuestContent from "QuestContent" /* 5668 */;
+import AnalyticsActions from "AnalyticsActions" /* 7957 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7967 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15302 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5661).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5663).QuestsExperimentLocations;
 const jsx = fn(21).jsx;
 const redux = noop.createContext(null);
 const size = fn(2);
@@ -27,10 +28,10 @@ export const useBountyVideoEndAppStoreContext = function useBountyVideoEndAppSto
 };
 export const canUseBountyVideoEndAppStoreOverlay = function canUseBountyVideoEndAppStoreOverlay(cta) {
   if (obj.canOpenCustomAppStoreOverlayFromCta(cta.cta)) {
-    const BountiesMobileQuestBarExperiment = tmp(11546).BountiesMobileQuestBarExperiment;
+    const BountiesMobileQuestBarExperiment = tmp(11550).BountiesMobileQuestBarExperiment;
     const obj2 = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
     const config = BountiesMobileQuestBarExperiment.getConfig(obj2);
-    return config.enabled && tmp6 === tmp(11546).BountiesMobileQuestBarCtrVariant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;
+    return config.enabled && tmp6 === tmp(11550).BountiesMobileQuestBarCtrVariant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;
   } else {
     return false;
   }
@@ -83,18 +84,25 @@ export const useBountyVideoEndAppStoreOverlay = function useBountyVideoEndAppSto
                           trackingCtx = bounty(sourceQuestContent[11]);
                           return trackingCtx.trackAdContentAppStoreOverlayEvent({ adContentId: current.id, adCreativeType: bounty(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface });
                         },
+                    onOverlaySurfaceClick(dependencyMap) {
+                          trackingCtx = bounty(sourceQuestContent[11]);
+                          return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: current.id, adCreativeType: bounty(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, overlaySurface: dependencyMap });
+                        },
                     onInstallPress(overlaySurface) {
-                          trackingCtx = current(7954);
-                          const result = trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: appId.id, adCreativeType: current(5668).AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
-                          const obj2 = { adContentId: appId.id, adCreativeType: current(5668).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
-                          const result1 = current(11752).setAppStoreOverlayOpen({
+                          trackingCtx = current(7957);
+                          const result = trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: appId.id, adCreativeType: current(5670).AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
+                          const obj2 = { adContentId: appId.id, adCreativeType: current(5670).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
+                          const result1 = current(11756).setAppStoreOverlayOpen({
                             trackOverlayEvent(event, timeSpentMs) {
                               trackingCtx = bounty(sourceQuestContent[11]);
                               return trackingCtx.trackAdContentAppStoreOverlayEvent({ adContentId: current.id, adCreativeType: bounty(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, inlineStoreAppId: appId, overlayVariant: bounty(sourceQuestContent[11]).AppStoreOverlayVariant.CUSTOM, event, timeSpentMs, overlaySurface });
                             }
                           });
-                        }
+                        },
+                    onCarouselScroll: null
                   };
+                  const obj5 = { adContentId: bounty.id };
+                  obj3.onCarouselScroll = AnalyticsActions.createAppStoreOverlayCarouselScrollTracker(obj5, appId);
                   let result1 = showVideoEndAppStoreOverlay(obj3);
                 } else {
                   onOverlayUnavailable();
@@ -119,18 +127,25 @@ export const useBountyVideoEndAppStoreOverlay = function useBountyVideoEndAppSto
                           trackingCtx = bounty(sourceQuestContent[11]);
                           return trackingCtx.trackAdContentAppStoreOverlayEvent({ adContentId: current.id, adCreativeType: bounty(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, inlineStoreAppId, overlayVariant, event, timeSpentMs, overlaySurface });
                         },
+                    onOverlaySurfaceClick(dependencyMap) {
+                          trackingCtx = bounty(sourceQuestContent[11]);
+                          return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: current.id, adCreativeType: bounty(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, overlaySurface: dependencyMap });
+                        },
                     onInstallPress(overlaySurface) {
-                          trackingCtx = current(7954);
-                          const result = trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: appId.id, adCreativeType: current(5668).AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
-                          const obj2 = { adContentId: appId.id, adCreativeType: current(5668).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
-                          const result1 = current(11752).setAppStoreOverlayOpen({
+                          trackingCtx = current(7957);
+                          const result = trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent({ adContentId: appId.id, adCreativeType: current(5670).AdCreativeType.BOUNTY, trackingCtx, overlaySurface });
+                          const obj2 = { adContentId: appId.id, adCreativeType: current(5670).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
+                          const result1 = current(11756).setAppStoreOverlayOpen({
                             trackOverlayEvent(event, timeSpentMs) {
                               trackingCtx = bounty(sourceQuestContent[11]);
                               return trackingCtx.trackAdContentAppStoreOverlayEvent({ adContentId: current.id, adCreativeType: bounty(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, inlineStoreAppId: appId, overlayVariant: bounty(sourceQuestContent[11]).AppStoreOverlayVariant.CUSTOM, event, timeSpentMs, overlaySurface });
                             }
                           });
-                        }
+                        },
+                    onCarouselScroll: null
                   };
+                  const obj5 = { adContentId: bounty.id };
+                  obj3.onCarouselScroll = AnalyticsActions.createAppStoreOverlayCarouselScrollTracker(obj5, appId);
                   let result1 = showVideoEndAppStoreOverlay(obj3);
                 } else {
                   onOverlayUnavailable();

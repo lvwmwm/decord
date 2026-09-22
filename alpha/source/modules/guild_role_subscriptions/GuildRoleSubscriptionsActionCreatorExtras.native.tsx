@@ -1,17 +1,17 @@
-// Module ID: 18198
-// Function ID: 18199
+// Module ID: 18210
+// Function ID: 18211
 // Name: GuildRoleSubscriptionsActionCreatorExtras
-// Dependencies: [18188, 15475, 15497, 4959, 18199, 1980, 18231, 2]
+// Dependencies: [18200, 15486, 15508, 4960, 18211, 1980, 18243, 2]
 // Exports: openGroupSetupModal, openTierCreationModal
 
-// Module 18198 (GuildRoleSubscriptionsActionCreatorExtras)
+// Module 18210 (GuildRoleSubscriptionsActionCreatorExtras)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18188 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15508 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18200 */;
 
 require = fn;
-const GuildRoleSubscriptionsConstants = fn(15475);
+const GuildRoleSubscriptionsConstants = fn(15486);
 ({ GUILD_ROLE_SUBSCRIPTION_TIER_CREATION_KEY: hasOwnProperty, GUILD_ROLE_SUBSCRIPTION_GROUP_SETUP_KEY: metroRequire } = GuildRoleSubscriptionsConstants);
 const NEW_LISTING_EDIT_STATE_ID = "NEW_LISTING_EDIT_STATE_ID";
 const size = fn(2);
@@ -25,10 +25,10 @@ export const openTierCreationModal = function openTierCreationModal(arg0) {
   const obj2 = ModalActionCreatorsDefault;
   const merged = Object.assign(arg0);
   obj3.editStateId = NEW_LISTING_EDIT_STATE_ID;
-  obj2.pushLazy(asyncRequireImpl(18199, dependencyMap.paths), obj3, hasOwnProperty);
+  obj2.pushLazy(asyncRequireImpl(18211, dependencyMap.paths), obj3, hasOwnProperty);
 };
 export const openGroupSetupModal = function openGroupSetupModal(guildId) {
   RoleTierEditStore.resetImperatively();
   GuildRoleSubscriptionListingEditStateUtilsAll.clearEditState(NEW_LISTING_EDIT_STATE_ID);
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(18231, dependencyMap.paths), { guildId, editStateId: NEW_LISTING_EDIT_STATE_ID }, timestampProducer);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(18243, dependencyMap.paths), { guildId, editStateId: NEW_LISTING_EDIT_STATE_ID }, timestampProducer);
 };

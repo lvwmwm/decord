@@ -1,24 +1,24 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17243
+// Function ID: 17244
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2041, 14023, 4779, 1372, 11122, 1074, 21, 4756, 576, 4769, 4963, 10002, 13180, 4723, 504, 11843, 11845, 11842, 1241, 4454, 1115, 17230, 8107, 11846, 4453, 8117, 10111, 8649, 8001, 1177, 11123, 17163, 2]
+// Dependencies: [32, 5, 19, 17, 2042, 14031, 4780, 1372, 11128, 1074, 21, 4757, 576, 4770, 4964, 10008, 13184, 4724, 504, 11847, 11849, 11846, 1241, 4455, 1115, 17242, 8110, 11850, 4454, 8120, 10117, 8653, 8004, 1177, 11129, 17175, 2]
 // Exports: default
 
-// Module 17231 (NewGroupDMScreen)
+// Module 17243 (NewGroupDMScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ToastUtils from "ToastUtils" /* 4453 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
-import HeaderShared from "HeaderShared" /* 8107 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11846 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17230 */;
+import ToastUtils from "ToastUtils" /* 4454 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4770 */;
+import HeaderShared from "HeaderShared" /* 8110 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11850 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17242 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14023 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14031 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -86,7 +86,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
           closure_131_3 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -150,7 +150,7 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
                               const obj5 = { value: closure_1_20(tmp32, closure_2_2), done: false };
                               return obj5;
                             } else {
-                              const obj6 = v3(4769);
+                              const obj6 = v3(4770);
                               v3 = 1;
                               dependencyMap = 1;
                               const obj7 = { value: obj6.addRecipients(id.id, tmp32, undefined, closure_2_2), done: false };
@@ -184,21 +184,21 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
                             const obj = { value, done: true };
                             return obj;
                           } else {
-                            const tmp8 = v3(10002);
+                            const tmp8 = v3(10008);
                             const call = tmp8.call;
                             if (typeof call === "unknown") {
                               tmp8(false, true);
                             } else {
                               call(tmp9, false, true);
                             }
-                            v3(13180)(closure_128_3);
+                            v3(13184)(closure_128_3);
                             dependencyMap = 3;
                             tmp9 = closure_128_3;
                           }
                           closure_128_3 = value;
                           v3 = 3;
                           dependencyMap = 1;
-                          const obj10 = { value: id(4963).monkeyPatchCall(), done: false };
+                          const obj10 = { value: id(4964).monkeyPatchCall(), done: false };
                           return obj10;
                         }
                       } catch (tmp26) {
@@ -280,12 +280,12 @@ let closure_22 = async function _handleInviteUsers(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const UserRowModes = fn(11122).UserRowModes;
+const UserRowModes = fn(11128).UserRowModes;
 const Constants = fn(1074);
 ({ InstantInviteSources: map1, AnalyticEvents: closure_14, AnalyticsSections: closure_15, NEW_GROUP_DM_POPOUT_ID: closure_16 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { button: { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }, container: { height: "100%", display: "flex" }, instantInviteView: null, nameInputContainer: null, nameInput: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj2.instantInviteView = { flexShrink: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };

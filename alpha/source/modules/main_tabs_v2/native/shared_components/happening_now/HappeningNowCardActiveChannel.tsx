@@ -1,29 +1,29 @@
-// Module ID: 16428
-// Function ID: 16429
+// Module ID: 16439
+// Function ID: 16440
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 13971, 2041, 12218, 1372, 15566, 1074, 21, 4756, 504, 11, 1370, 12, 16427, 1241, 1101, 4909, 1115, 5239, 15567, 16421, 2]
+// Dependencies: [19, 17, 13979, 2042, 12222, 1372, 15577, 1074, 21, 4757, 504, 11, 1370, 12, 16438, 1241, 1101, 4910, 1115, 5241, 15578, 16432, 2]
 
-// Module 16428 (HappeningNowCardActiveChannel)
+// Module 16439 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import router_utils from "router_utils" /* 1101 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import noop from "module_19" /* 19 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 13971 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import TypingStore from "TypingStore" /* 12218 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 13979 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import TypingStore from "TypingStore" /* 12222 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const MAX_STORED_MESSAGES = fn(13971).MAX_STORED_MESSAGES;
-let closure_10 = fn(15566).HappeningNowCardTrackingType;
+const MAX_STORED_MESSAGES = fn(13979).MAX_STORED_MESSAGES;
+let closure_10 = fn(15577).HappeningNowCardTrackingType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Routes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_15 = createStyles.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");

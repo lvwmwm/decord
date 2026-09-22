@@ -1,13 +1,13 @@
-// Module ID: 8689
-// Function ID: 8690
+// Module ID: 8693
+// Function ID: 8694
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 8683, 1074, 8690, 1271, 573, 2]
+// Dependencies: [5, 502, 8687, 1074, 8694, 1271, 573, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 8689 (AgeVerificationURLActionCreators)
+// Module 8693 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8690 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8694 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -55,7 +55,7 @@ let closure_8 = async function _requestAgeVerification(arg0, value) {
           ({ method: closure_129_0, classificationId: closure_129_1, vendor: closure_129_2 } = closure_0);
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -310,7 +310,7 @@ let closure_18 = async function _initiateSuspendedUserAgeVerification(arg0, valu
           let suspendedUserToken;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -439,7 +439,7 @@ let closure_20 = async function _requestIncodeSessionBootstrap(arg0, value) {
           closure_129_0 = obj4;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -511,7 +511,7 @@ function fetchAgeVerificationMethodsSuspendedUser() {
   const request = { url: Endpoints.SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS, rejectWithError: true, body: { token: suspendedUserToken } };
   return HTTP.post(request);
 }
-const VerificationVendorName = fn(8683).VerificationVendorName;
+const VerificationVendorName = fn(8687).VerificationVendorName;
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/AgeVerificationURLActionCreators.tsx");

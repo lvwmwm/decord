@@ -1,14 +1,14 @@
-// Module ID: 11710
-// Function ID: 11711
+// Module ID: 11714
+// Function ID: 11715
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4756, 9106, 4752, 1115, 10055, 3548, 2]
+// Dependencies: [19, 17, 21, 4757, 9111, 4753, 1115, 10061, 3548, 2]
 // Exports: default
 
-// Module 11710 (SlayerStorefrontGiftPreview)
+// Module 11714 (SlayerStorefrontGiftPreview)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9106 */;
-import InfoBox from "InfoBox" /* 10055 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9111 */;
+import InfoBox from "InfoBox" /* 10061 */;
 import noop from "module_19" /* 19 */;
 
 const InfoBoxDefault = InfoBox;
@@ -55,7 +55,7 @@ function WarningBox(application) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");

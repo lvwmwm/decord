@@ -1,135 +1,68 @@
 // Module ID: 13093
 // Function ID: 13094
-// Dependencies: [13049, 13050, 13094, 13097, 13086, 13055]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: [13086, 13081, 13094, 13082, 13054]
+// Exports: sampleSpan
 
 // Module 13093
-import spanTimeInputToSeconds from "spanTimeInputToSeconds" /* 13055 */;
-import _mod13094 from "module_13094" /* 13094 */;
-import __SENTRY_DEBUG__ from "module_13049" /* 13049 */;
-import consoleSandbox from "module_13050" /* 13050 */;
+import _mod13086 from "module_13086" /* 13086 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
-  const sdkMetadataForEnvelopeHeader = _mod13094.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
-    }
-  }
-  if (sdk) {
-    sdk = sdk.sdk;
-  }
-  if (sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    if (!name) {
-      name = sdk.name;
-    }
-    type.sdk.name = name;
-    let version = type.sdk.version;
-    if (!version) {
-      version = sdk.version;
-    }
-    type.sdk.version = version;
-    let integrations = type.sdk.integrations;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(integrations, 0);
-    const tmp9 = sdk.integrations || [];
-    HermesBuiltin.arraySpread(tmp9, arraySpreadResult);
-    type.sdk.integrations = items;
-    let packages = type.sdk.packages;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(packages, 0);
-    const tmp17 = sdk.packages || [];
-    HermesBuiltin.arraySpread(tmp17, arraySpreadResult5);
-    type.sdk.packages = items1;
-  }
-  const eventEnvelopeHeaders = _mod13094.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp[tmp2];
-  const items2 = [{ type: str }, type];
-  const tmp3Result = _mod13094;
-  const items3 = [items2];
-  return _mod13094.createEnvelope(eventEnvelopeHeaders, items3);
-};
-export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  const sdkMetadataForEnvelopeHeader = _mod13094.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: null };
-  obj2.sent_at = new Date().toISOString();
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  if (sdkMetadataForEnvelopeHeader) {
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
-    tmp4 = obj3;
-  }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmp(13097).dsnToString(arg1) };
-    tmp6 = obj4;
-    const tmpResult = tmp(13097);
-  }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    let items1 = items;
-  } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
-  }
-  const date = new Date();
-  const items2 = [items1];
-  return _mod13094.createEnvelope(obj2, items2);
-};
-export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
-  const dynamicSamplingContextFromSpan = beforeSendSpan(13086).getDynamicSamplingContextFromSpan(arg0[0]);
-  let dsn = getDsn;
-  if (getDsn) {
-    dsn = getDsn.getDsn();
-  }
-  let tunnel = getDsn;
-  if (getDsn) {
-    tunnel = getDsn.getOptions().tunnel;
-  }
-  const obj = beforeSendSpan(13086);
-  const obj2 = { sent_at: new Date().toISOString() };
-  const tmp2 = beforeSendSpan;
-  let tmp7 = (function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
-  })(dynamicSamplingContextFromSpan);
-  if (tmp7) {
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
-    tmp7 = obj3;
-  }
-  const merged = Object.assign(tmp7);
-  let tmp9 = tunnel && dsn;
-  if (tmp9) {
-    const obj4 = { dsn: tmp2(13097).dsnToString(dsn) };
-    tmp9 = obj4;
-    const tmp2Result = tmp2(13097);
-  }
-  const merged1 = Object.assign(tmp9);
-  beforeSendSpan = getDsn;
-  if (getDsn) {
-    beforeSendSpan = getDsn.getOptions().beforeSendSpan;
-  }
-  if (beforeSendSpan) {
-    const fn2 = (arg0) => {
-      const tmp3 = beforeSendSpan(spanTimeInputToSeconds.spanToJSON(arg0));
-      if (!tmp3) {
-        spanTimeInputToSeconds.showSpanDropWarning();
-        const tmpResult = spanTimeInputToSeconds;
+export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
+  if (obj.hasTracingEnabled(tracesSampler)) {
+    const isolationScope = tmp(13081).getIsolationScope();
+    const obj2 = {};
+    const merged = Object.assign(normalizedRequest);
+    obj2.normalizedRequest = normalizedRequest.normalizedRequest || isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
+    if (typeof tracesSampler.tracesSampler === "function") {
+      let num = tracesSampler.tracesSampler(obj2);
+    } else if (undefined !== obj2.parentSampled) {
+      num = obj2.parentSampled;
+    } else {
+      num = 1;
+      if (undefined !== tracesSampler.tracesSampleRate) {
+        num = tracesSampler.tracesSampleRate;
       }
-      return tmp3;
-    };
+    }
+    const tmpResult = tmp(13081);
+    const parseSampleRateResult = tmp(13094).parseSampleRate(num);
+    if (undefined === parseSampleRateResult) {
+      if (tmp(13082).DEBUG_BUILD) {
+        const logger3 = tmp(13054).logger;
+        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
+      }
+      const items = [false];
+      let items3 = items;
+    } else if (parseSampleRateResult) {
+      const _Math = Math;
+      if (Math.random() < parseSampleRateResult) {
+        const items1 = [true, parseSampleRateResult];
+        let items2 = items1;
+      } else {
+        if (tmp(13082).DEBUG_BUILD) {
+          const logger2 = tmp(13054).logger;
+          const _Number = Number;
+          const _HermesInternal = HermesInternal;
+          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
+        }
+        items2 = [false, parseSampleRateResult];
+      }
+    } else {
+      if (tmp(13082).DEBUG_BUILD) {
+        const logger = tmp(13054).logger;
+        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
+        if (typeof tracesSampler.tracesSampler === "function") {
+          str = "tracesSampler returned 0 or false";
+        }
+        logger.log(`[Tracing] Discarding transaction because ${str}`);
+      }
+      items3 = [false, parseSampleRateResult];
+    }
+    return items3;
   } else {
-    const fn = (arg0) => beforeSendSpan(dependencyMap[5]).spanToJSON(arg0);
+    const items4 = [false];
+    return items4;
   }
-  arg0[Symbol.iterator]();
+  obj = _mod13086;
 };

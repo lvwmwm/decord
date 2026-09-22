@@ -1,16 +1,16 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7896
+// Function ID: 7897
 // Name: UserSearchItems
-// Dependencies: [5, 7894, 7895, 4405, 1372, 1074, 3, 2070, 7897, 2]
+// Dependencies: [5, 7897, 7898, 4406, 1372, 1074, 3, 2071, 7900, 2]
 
-// Module 7893 (UserSearchItems)
+// Module 7896 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
-import UserSearchUtils from "UserSearchUtils" /* 7897 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2071 */;
+import UserSearchUtils from "UserSearchUtils" /* 7900 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7894 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7895 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7897 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7898 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

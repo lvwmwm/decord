@@ -1,14 +1,14 @@
-// Module ID: 14001
-// Function ID: 14002
+// Module ID: 14009
+// Function ID: 14010
 // Name: VoiceChannelBlockedUserStore
-// Dependencies: [4405, 4775, 14002, 504, 573, 2]
+// Dependencies: [4406, 4776, 14010, 504, 573, 2]
 
-// Module 14001 (VoiceChannelBlockedUserStore)
+// Module 14009 (VoiceChannelBlockedUserStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SharedSpacesWarningManagerDefault from "SharedSpacesWarningManager" /* 14002 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+import SharedSpacesWarningManagerDefault from "SharedSpacesWarningManager" /* 14010 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
+import VoiceStateStore from "VoiceStateStore" /* 4776 */;
 
 function init() {
   closure_4 = {};

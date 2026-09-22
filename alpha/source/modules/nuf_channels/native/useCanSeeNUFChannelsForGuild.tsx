@@ -1,13 +1,13 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 16600
+// Function ID: 16601
 // Name: useCanSeeNUFChannelsForGuild
-// Dependencies: [2105, 2063, 1372, 1074, 4382, 504, 4600, 1385, 2]
+// Dependencies: [2105, 2064, 1372, 1074, 4382, 504, 4601, 1385, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 16589 (useCanSeeNUFChannelsForGuild)
-import UserUtils from "UserUtils" /* 4600 */;
+// Module 16600 (useCanSeeNUFChannelsForGuild)
+import UserUtils from "UserUtils" /* 4601 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 9099
-// Function ID: 9100
+// Module ID: 9104
+// Function ID: 9105
 // Name: Nameplate
-// Dependencies: [19, 4748, 21, 4756, 504, 4690, 4492, 4757, 1970, 9100, 5198, 1364, 9089, 5804, 2]
+// Dependencies: [19, 4749, 21, 4757, 504, 4691, 4493, 4758, 1970, 9105, 5199, 1364, 9094, 5806, 2]
 // Exports: default
 
-// Module 9099 (Nameplate)
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
+// Module 9104 (Nameplate)
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
 function NameplateInner(isFocused) {
@@ -49,12 +49,12 @@ function NameplateInner(isFocused) {
   const stateFromStores = flag6(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp4 = closure_7(flag3, isPressed, flag, flag2, flag5);
   let obj = flag6(504);
-  const tmp6 = sharedValue(4690)();
+  const tmp6 = sharedValue(4691)();
   let num = 1;
   if (flag6) {
     num = 0;
   }
-  sharedValue = flag6(4492).useSharedValue(num);
+  sharedValue = flag6(4493).useSharedValue(num);
   const items1 = [sharedValue, flag6];
   const effect = noop.useEffect(() => {
     if (flag6) {
@@ -64,7 +64,7 @@ function NameplateInner(isFocused) {
       const result = sharedValue.set(timing.withTiming(1, obj2));
     }
   }, items1);
-  let obj2 = flag6(4492);
+  let obj2 = flag6(4493);
   class A {
     constructor() {
       obj = { opacity: closure_1.get() };
@@ -74,11 +74,11 @@ function NameplateInner(isFocused) {
   A.__closure = { opacity: sharedValue };
   A.__workletHash = 15588901070870;
   A.__initData = __initData;
-  const animatedStyle = flag6(4492).useAnimatedStyle(A);
-  const tmpResult = flag6(4492);
+  const animatedStyle = flag6(4493).useAnimatedStyle(A);
+  const tmpResult = flag6(4493);
   const backgroundGradientColors = flag6(1970).getBackgroundGradientColors(nameplate.palette, tmp6);
   const tmpResult4 = flag6(1970);
-  const nameplateAssets = flag6(9100).getNameplateAssets(nameplate);
+  const nameplateAssets = flag6(9105).getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp12 = true === flag7;
   if (tmp12) {
@@ -109,26 +109,26 @@ function NameplateInner(isFocused) {
     const items3 = [, ];
     ({ left: arr4[0], right: arr4[1] } = backgroundGradientColors);
     obj4.colors = items3;
-    tmp15Result = closure_5(tmp5(5198), obj4);
-    const tmp5Result = tmp5(5198);
+    tmp15Result = closure_5(tmp5(5199), obj4);
+    const tmp5Result = tmp5(5199);
   }
   const items4 = [tmp15Result, ];
   const tmp13 = closure_6;
-  const tmpResult5 = flag6(9100);
+  const tmpResult5 = flag6(9105);
   if (tmpResult6.isAndroid()) {
     if (tmp12) {
       const obj5 = { url: str, style: tmp4.img, autoplay: true };
-      let tmp17 = closure_5(tmp(9089).APNGPlayer, obj5);
+      let tmp17 = closure_5(tmp(9094).APNGPlayer, obj5);
     }
     items4[1] = tmp17;
     obj3.children = items4;
-    return tmp13(tmp5(4492).View, obj3);
+    return tmp13(tmp5(4493).View, obj3);
   }
-  tmp17 = closure_5(tmp5(5804), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
+  tmp17 = closure_5(tmp5(5806), { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" });
 }
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2, arg3, arg4) => {
   const obj = { container: { position: "absolute", overflow: "hidden", top: 0, bottom: 0, left: 0, right: 0 }, gradient: null, img: null };
   let num = 1;

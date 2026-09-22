@@ -1,10 +1,10 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13239
+// Function ID: 13240
 // Name: CustomActivityLinkRecord
-// Dependencies: [13236, 8408, 13233, 2]
+// Dependencies: [13240, 8412, 13237, 2]
 
-// Module 13235 (CustomActivityLinkRecord)
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13236 */;
+// Module 13239 (CustomActivityLinkRecord)
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13240 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");
@@ -39,11 +39,11 @@ class CustomActivityLinkRecord {
 CustomActivityLinkRecord.prototype["getAssetURL"] = function getAssetURL() {
   const self = this;
   if (this.type === utils_CustomActivityLinkUtils.CustomLinkType.MANAGED) {
-    let assetImage = tmp(8408).getAssetImage(self.applicationId, self.assetId, 512);
-    const tmpResult = tmp(8408);
-  } else if (self.type === tmp(13236).CustomLinkType.QUICK) {
-    assetImage = tmp(13233).getQuickLinkImage(self.assetPath);
-    const tmpResult2 = tmp(13233);
+    let assetImage = tmp(8412).getAssetImage(self.applicationId, self.assetId, 512);
+    const tmpResult = tmp(8412);
+  } else if (self.type === tmp(13240).CustomLinkType.QUICK) {
+    assetImage = tmp(13237).getQuickLinkImage(self.assetPath);
+    const tmpResult2 = tmp(13237);
   }
   return assetImage;
 };

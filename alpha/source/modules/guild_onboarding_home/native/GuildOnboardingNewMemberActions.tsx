@@ -1,21 +1,21 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16923
+// Function ID: 16924
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5676, 2041, 2105, 2063, 4395, 4943, 4944, 1074, 1375, 4382, 21, 4756, 576, 504, 4909, 1397, 12538, 5804, 4409, 4752, 1177, 12058, 5339, 1115, 12543, 16912, 1385, 16913, 2]
+// Dependencies: [19, 17, 5678, 2042, 2105, 2064, 4396, 4944, 4945, 1074, 1375, 4382, 21, 4757, 576, 504, 4910, 1397, 12542, 5806, 4410, 4753, 1177, 12062, 5341, 1115, 12547, 16924, 1385, 16925, 2]
 // Exports: default
 
-// Module 16911 (GuildOnboardingNewMemberActions)
+// Module 16923 (GuildOnboardingNewMemberActions)
 import nativeDefault from "native" /* 576 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12538 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12542 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5676 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import EmojiStore from "EmojiStore" /* 5678 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4943 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4944 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4944 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4945 */;
 
 require = fn;
 function MemberActionRow(channelId) {
@@ -114,7 +114,7 @@ const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const GuildMemberFlags = fn(4382).GuildMemberFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { actionsContainer: { paddingHorizontal: 12 }, actionsHeader: { display: "flex", marginBottom: 16 }, actionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginBottom: 8, padding: 12, borderRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "row", alignItems: "center" }, channelNameContainer: { flex: 1, marginHorizontal: 8 }, icon: null, emoji: null, textEmoji: null, emojiPlaceholder: null };
 let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.xs };
 obj2.icon = size;

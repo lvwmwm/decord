@@ -1,12 +1,12 @@
-// Module ID: 13899
-// Function ID: 13900
+// Module ID: 13907
+// Function ID: 13908
 // Name: GatewaySocketOpCodes
-// Dependencies: [4806, 568, 1990, 11, 2]
+// Dependencies: [4807, 568, 1990, 11, 2]
 
-// Module 13899 (GatewaySocketOpCodes)
+// Module 13907 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GatewaySocketOpcode from "GatewaySocketOpcode" /* 1990 */;
-import RTCRegionStore from "RTCRegionStore" /* 4806 */;
+import RTCRegionStore from "RTCRegionStore" /* 4807 */;
 
 require = fn;
 const EventEmitter = fn(568).EventEmitter;

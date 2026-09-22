@@ -1,10 +1,10 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 18097
+// Function ID: 18098
 // Name: GuildSettingsModalMembersWrapper
-// Dependencies: [19, 21, 7506, 16918, 16920, 2]
+// Dependencies: [19, 21, 7508, 16930, 16932, 2]
 
-// Module 18085 (GuildSettingsModalMembersWrapper)
-import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 7506 */;
+// Module 18097 (GuildSettingsModalMembersWrapper)
+import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 7508 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSe
 
 export default noop.memo((guildId) => {
   guildId = guildId.guildId;
-  return jsx(importDefault(canReviewGuildMemberApplications.useCanReviewGuildMemberApplications(guildId) ? 16918 : 16920), { guildId });
+  return jsx(importDefault(canReviewGuildMemberApplications.useCanReviewGuildMemberApplications(guildId) ? 16930 : 16932), { guildId });
 });

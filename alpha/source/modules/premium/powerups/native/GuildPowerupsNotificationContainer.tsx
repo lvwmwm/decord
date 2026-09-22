@@ -1,18 +1,18 @@
-// Module ID: 12809
-// Function ID: 12810
+// Module ID: 12813
+// Function ID: 12814
 // Name: GuildPowerupsNotificationContainer
-// Dependencies: [17, 21, 4756, 576, 7225, 4752, 12810, 12811, 1115, 2514, 12814, 2]
+// Dependencies: [17, 21, 4757, 576, 7227, 4753, 12814, 12815, 1115, 2514, 12818, 2]
 // Exports: default
 
-// Module 12809 (GuildPowerupsNotificationContainer)
+// Module 12813 (GuildPowerupsNotificationContainer)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7225 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12810 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12811 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7227 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12814 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12815 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4756 */;
+import createStyles from "createStyles" /* 4757 */;
 import size from "module_2" /* 2 */;
 
 function Tier3OverrideNotice(children) {
@@ -54,7 +54,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     obj3.variant = str2;
     const intl = tmp6(1115).intl;
     obj3.children = intl.string(tmp2(2514)["3FRirU"]);
-    const items = [React4(tmp6(4752).Text, obj3), , ];
+    const items = [React4(tmp6(4753).Text, obj3), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       const obj4 = { text: tmp4.text };
@@ -65,7 +65,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     if (shouldShow2) {
       const obj9 = { guildId, powerupNames: null, warnings: null };
       ({ expiringPowerupNames: obj5.powerupNames, warnings: obj5.warnings } = tmp5);
-      shouldShow2 = tmp11(tmp2(12814), obj9);
+      shouldShow2 = tmp11(tmp2(12818), obj9);
     }
     items[2] = shouldShow2;
     obj2.children = items;

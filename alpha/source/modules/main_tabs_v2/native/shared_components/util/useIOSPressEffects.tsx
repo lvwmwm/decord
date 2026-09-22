@@ -1,13 +1,13 @@
-// Module ID: 5827
-// Function ID: 5828
+// Module ID: 5829
+// Function ID: 5830
 // Name: useIOSPressEffects
-// Dependencies: [19, 1478, 4492, 1364, 5185, 2]
+// Dependencies: [19, 1478, 4493, 1364, 5186, 2]
 // Exports: useIOSPressEffects
 
-// Module 5827 (useIOSPressEffects)
+// Module 5829 (useIOSPressEffects)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import spring from "spring" /* 5185 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import spring from "spring" /* 5186 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 7758
-// Function ID: 7759
+// Module ID: 7761
+// Function ID: 7762
 // Name: AutomodNotificationEmbedKeys
 // Dependencies: [2]
 
-// Module 7758 (AutomodNotificationEmbedKeys)
+// Module 7761 (AutomodNotificationEmbedKeys)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodNotificationEmbedKeys.tsx");

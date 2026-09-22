@@ -1,16 +1,14 @@
 // Module ID: 6975
 // Function ID: 6976
-// Dependencies: [19]
-// Exports: useInterceptingDetectorContext
+// Dependencies: [19, 6904]
+// Exports: useDetectorAttachmentGuard
 
 // Module 6975
 import noop from "module_19" /* 19 */;
 
-const use = noop.use;
-const context = noop.createContext(null);
+({ useEffect, useRef } = noop);
+new Map();
 
-export const InterceptingDetectorMode = { DEFAULT: 0, [0]: "DEFAULT", ANIMATED: 1, [1]: "ANIMATED", REANIMATED: 2, [2]: "REANIMATED" };
-export const InterceptingDetectorContext = context;
-export const useInterceptingDetectorContext = function useInterceptingDetectorContext() {
-  return use(context);
-};
+export function useDetectorAttachmentGuard(tmp8Result5) {
+
+}

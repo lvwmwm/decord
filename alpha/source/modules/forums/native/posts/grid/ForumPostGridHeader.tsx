@@ -1,23 +1,23 @@
-// Module ID: 12255
-// Function ID: 12256
+// Module ID: 12259
+// Function ID: 12260
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 7515, 2048, 21, 4756, 12256, 12258, 12267, 12268, 12269, 2]
+// Dependencies: [19, 17, 7517, 2049, 21, 4757, 12260, 12262, 12271, 12272, 12273, 2]
 // Exports: default
 
-// Module 12255 (ForumPostGridHeader)
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12256 */;
-import ForumPostUsername from "ForumPostUsername" /* 12258 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12267 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 12269 */;
+// Module 12259 (ForumPostGridHeader)
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 12260 */;
+import ForumPostUsername from "ForumPostUsername" /* 12262 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 12271 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 12273 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const ForumTimestampFormats = fn(7515).ForumTimestampFormats;
-const ChannelFlags = fn(2048).ChannelFlags;
+const ForumTimestampFormats = fn(7517).ForumTimestampFormats;
+const ChannelFlags = fn(2049).ChannelFlags;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_8 = createStyles.createStyles({ pinIcon: { marginEnd: 8 }, container: { display: "flex", flexDirection: "column", marginBottom: 4 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 4 }, timestampText: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/grid/ForumPostGridHeader.tsx");
@@ -34,7 +34,7 @@ export default function ForumPostGridHeader(arg0) {
   }
   const items = [hasFlagResult, timestampProducer(ForumPostUsername.ForumPostAuthor, { thread, hasUnreads }), timestampProducer(ForumPostTimestampDefault, { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
   if (isNew) {
-    isNew = tmp8(tmp10(12268), {});
+    isNew = tmp8(tmp10(12272), {});
   }
   items[3] = isNew;
   obj2.children = items;

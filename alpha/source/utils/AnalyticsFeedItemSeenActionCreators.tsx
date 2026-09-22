@@ -1,10 +1,10 @@
-// Module ID: 8143
-// Function ID: 8144
+// Module ID: 8147
+// Function ID: 8148
 // Name: AnalyticsFeedItemSeenActionCreators
 // Dependencies: [573, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 8143 (AnalyticsFeedItemSeenActionCreators)
+// Module 8147 (AnalyticsFeedItemSeenActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

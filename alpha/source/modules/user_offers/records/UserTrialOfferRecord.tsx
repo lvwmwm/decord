@@ -1,11 +1,11 @@
-// Module ID: 7696
-// Function ID: 7697
+// Module ID: 7699
+// Function ID: 7700
 // Name: UserTrialOfferRecord
-// Dependencies: [1387, 7697, 1374, 2]
+// Dependencies: [1387, 7700, 1374, 2]
 
-// Module 7696 (UserTrialOfferRecord)
+// Module 7699 (UserTrialOfferRecord)
 import Record from "Record" /* 1387 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7697 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7700 */;
 
 let closure_1 = fn(1374).PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 let UserTrialOfferRecord;

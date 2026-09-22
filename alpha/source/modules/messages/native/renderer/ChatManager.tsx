@@ -1,12 +1,12 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 11793
+// Function ID: 11794
 // Name: ChatManager
-// Dependencies: [8191, 11790, 1331, 2]
+// Dependencies: [8195, 11794, 1331, 2]
 
-// Module 11789 (ChatManager)
+// Module 11793 (ChatManager)
 import _modDef1331 from "module_1331" /* 1331 */;
-import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11790 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8191 */;
+import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11794 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8195 */;
 import size from "module_2" /* 2 */;
 
 ({ Changeset: c2, RowType: c3 } = RowGeneratorConstants);

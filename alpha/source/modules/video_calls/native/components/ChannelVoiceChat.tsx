@@ -1,19 +1,19 @@
-// Module ID: 10333
-// Function ID: 10334
+// Module ID: 10339
+// Function ID: 10340
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 9640, 21, 4756, 576, 10199, 1612, 9678, 12, 9644, 4690, 5341, 10334, 9650, 4607, 11603, 5339, 1115, 1177, 11830, 13027, 2]
+// Dependencies: [19, 17, 9646, 21, 4757, 576, 10205, 1612, 9684, 12, 9650, 4691, 5343, 10340, 9656, 4608, 11607, 5341, 1115, 1177, 11834, 13031, 2]
 
-// Module 10333 (ChannelVoiceChat)
+// Module 10339 (ChannelVoiceChat)
 import nativeDefault from "native" /* 576 */;
-import MessageManagerDefault from "MessageManager" /* 10199 */;
+import MessageManagerDefault from "MessageManager" /* 10205 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const useIsVoiceChatFocused = fn(9640).useIsVoiceChatFocused;
+const useIsVoiceChatFocused = fn(9646).useIsVoiceChatFocused;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { chat: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignSelf: "stretch" }, chatHeaderSpacer: null, chatHeader: null, chatHeaderBackIconContainer: null, chatHeaderTitleContainer: null, safeAreaTop: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignSelf: "stretch" };
 obj.chatHeaderSpacer = { height: 44, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -45,7 +45,7 @@ export default noop.memo((channel) => {
   const tmp6 = guild_id(1612)();
   const top = tmp6.top;
   ({ left, right } = tmp6);
-  const voiceChatNavigationContext = id(9678).useVoiceChatNavigationContext();
+  const voiceChatNavigationContext = id(9684).useVoiceChatNavigationContext();
   let openVoice;
   if (voiceChatNavigationContext != null) {
     openVoice = voiceChatNavigationContext.openVoice;
@@ -54,9 +54,9 @@ export default noop.memo((channel) => {
     openVoice = tmp4(12).noop;
   }
   const obj = noop;
-  const obj2 = id(9678);
-  const isConnectedToVoiceChannel = id(9644).useIsConnectedToVoiceChannel(channel.channel);
-  const tmp7Result = id(9644);
+  const obj2 = id(9684);
+  const isConnectedToVoiceChannel = id(9650).useIsConnectedToVoiceChannel(channel.channel);
+  const tmp7Result = id(9650);
   let str = "no-hide-descendants";
   const ref = obj.useRef(null);
   if (tmp2) {
@@ -71,7 +71,7 @@ export default noop.memo((channel) => {
   }
   items1[1] = tmp15;
   obj3.style = items1;
-  const items2 = [closure_6(guild_id(5341), { absolute: true, tall: true }), ];
+  const items2 = [closure_6(guild_id(5343), { absolute: true, tall: true }), ];
   const obj5 = { guildId: guild_id, channelId: id, children: null };
   let tmp16Result = null;
   if (!flag) {
@@ -80,12 +80,12 @@ export default noop.memo((channel) => {
       let str2 = "light-content";
     } else {
       str2 = "dark-content";
-      const tmp7Result2 = tmp7(4607);
+      const tmp7Result2 = tmp7(4608);
     }
     obj6.barStyle = str2;
-    tmp16Result = tmp16(tmp4(9650), obj6);
+    tmp16Result = tmp16(tmp4(9656), obj6);
     const tmp19 = !tmp2;
-    const tmp4Result = tmp4(9650);
+    const tmp4Result = tmp4(9656);
   }
   const items3 = [tmp16Result, , , , ];
   const items4 = [tmp.safeAreaTop, ];
@@ -104,7 +104,7 @@ export default noop.memo((channel) => {
   }
   items5[1] = { display: str4 };
   items3[2] = closure_6(View, { style: items5 });
-  items3[3] = closure_6(guild_id(11603), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
+  items3[3] = closure_6(guild_id(11607), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const items6 = [tmp.chatHeader, ];
   const obj8 = { top, display: null };
   let str5;
@@ -118,15 +118,15 @@ export default noop.memo((channel) => {
   const intl = tmp7(1115).intl;
   obj10.accessibilityLabel = intl.string(id(1115).t["13/7kX"]);
   obj10.style = tmp.chatHeaderBackIconContainer;
-  const tmp12 = guild_id(4690)();
-  obj10.children = closure_6(id(1177).Icon, { source: guild_id(11830), size: id(1177).Icon.Sizes.MEDIUM });
-  const items7 = [closure_6(id(5339).PressableOpacity, obj10), ];
-  const obj11 = { source: guild_id(11830), size: id(1177).Icon.Sizes.MEDIUM };
-  items7[1] = closure_6(View, { style: tmp.chatHeaderTitleContainer, children: closure_6(id(13027).ChannelTitle, { guildId: guild_id, channelId: id }) });
+  const tmp12 = guild_id(4691)();
+  obj10.children = closure_6(id(1177).Icon, { source: guild_id(11834), size: id(1177).Icon.Sizes.MEDIUM });
+  const items7 = [closure_6(id(5341).PressableOpacity, obj10), ];
+  const obj11 = { source: guild_id(11834), size: id(1177).Icon.Sizes.MEDIUM };
+  items7[1] = closure_6(View, { style: tmp.chatHeaderTitleContainer, children: closure_6(id(13031).ChannelTitle, { guildId: guild_id, channelId: id }) });
   obj9.children = items7;
   items3[4] = closure_7(View, obj9);
   obj5.children = items3;
-  items2[1] = closure_7(id(10334).ChannelContainer, obj5);
+  items2[1] = closure_7(id(10340).ChannelContainer, obj5);
   obj3.children = items2;
   return closure_7(View, obj3);
 });

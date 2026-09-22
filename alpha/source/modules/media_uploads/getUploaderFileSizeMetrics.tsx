@@ -1,10 +1,10 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9432
+// Function ID: 9433
 // Name: getUploaderFileSizeMetrics
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 9426 (getUploaderFileSizeMetrics)
+// Module 9432 (getUploaderFileSizeMetrics)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/getUploaderFileSizeMetrics.tsx");

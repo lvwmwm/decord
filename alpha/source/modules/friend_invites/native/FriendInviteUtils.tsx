@@ -1,17 +1,17 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17733
+// Function ID: 17734
 // Name: FriendInviteUtils
-// Dependencies: [2041, 4405, 8649, 4454, 1115, 9621, 573, 11483, 2]
+// Dependencies: [2042, 4406, 8653, 4455, 1115, 9627, 573, 11487, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 17721 (FriendInviteUtils)
+// Module 17733 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8649 */;
-import _modDef9621 from "module_9621" /* 9621 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4455 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8653 */;
+import _modDef9627 from "module_9627" /* 9627 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 
 require = fn;
 const size = fn(2);
@@ -24,7 +24,7 @@ export const revokeAllFriendInvites = function revokeAllFriendInvites() {
     const obj2 = { key: "TOAST_FRIEND_INVITES_REVOKED", content: null, icon: null };
     const intl = util.intl;
     obj2.content = intl.string(util.t.jSHEOQ);
-    obj2.icon = _modDef9621;
+    obj2.icon = _modDef9627;
     ToastActionCreatorsDefault.open(obj2);
   });
 };
@@ -49,8 +49,8 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
                 username = inviter.username;
               }
               const obj = ToastActionCreatorsDefault;
-              obj.open({ key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: intl.formatToPlainString(util.t.st2dcs, { username }), icon: _modDef9621 });
-              const obj2 = { key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: intl.formatToPlainString(util.t.st2dcs, { username }), icon: _modDef9621 };
+              obj.open({ key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: intl.formatToPlainString(util.t.st2dcs, { username }), icon: _modDef9627 });
+              const obj2 = { key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: intl.formatToPlainString(util.t.st2dcs, { username }), icon: _modDef9627 };
               DispatcherDefault.wait(() => closure_1_1(closure_1_2[7])());
             }
       };

@@ -1,14 +1,14 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14801
+// Function ID: 14802
 // Name: auth
-// Dependencies: [4983, 1074, 9581, 9135, 1110, 14796, 2]
+// Dependencies: [4984, 1074, 9587, 9140, 1110, 14802, 2]
 
-// Module 14795 (auth)
+// Module 14801 (auth)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9135 */;
-import RPCErrorDefault from "RPCError" /* 9581 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14796 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9140 */;
+import RPCErrorDefault from "RPCError" /* 9587 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14802 */;
+import ApplicationStore from "ApplicationStore" /* 4984 */;
 
 require = fn;
 const Constants = fn(1074);

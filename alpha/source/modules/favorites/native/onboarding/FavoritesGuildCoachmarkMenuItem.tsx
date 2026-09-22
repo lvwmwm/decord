@@ -1,15 +1,15 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16584
+// Function ID: 16585
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2044, 1074, 2038, 21, 10498, 7401, 504, 1115, 3324, 11394, 2]
+// Dependencies: [19, 2045, 1074, 2039, 21, 10504, 7403, 504, 1115, 3324, 11398, 2]
 // Exports: default
 
-// Module 16573 (FavoritesGuildCoachmarkMenuItem)
+// Module 16584 (FavoritesGuildCoachmarkMenuItem)
 import util from "util" /* 1115 */;
 import _modDef3324 from "module_3324" /* 3324 */;
-import LayerScope from "LayerScope" /* 7401 */;
+import LayerScope from "LayerScope" /* 7403 */;
 import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
+import FavoriteStore from "FavoriteStore" /* 2045 */;
 
 require = fn;
 function FavoritesGuildCoachmarkMenuItemContent(arg0) {
@@ -34,7 +34,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M7 0v1h2V0H7Z", onButtonPress: "#000" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M1 8v2h1V8H1ZM11 10h-1V9H6v1H5v2h1v1h4v-1h1v-2Z", onButtonPress: null };
     const intl = util.intl;
     const tmp4 = _modDef3324;
     if (stateFromStores) {
@@ -57,7 +57,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   const coachmark = stateFromStores(markPopoverAsDismissed[10]).useCoachmark(targetRef, memo);
   return null;
 }
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let items = [, , ];
 ({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = fn(1074).ChannelTypes);

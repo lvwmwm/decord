@@ -1,38 +1,29 @@
 // Module ID: 14590
 // Function ID: 14591
-// Dependencies: [14591, 14602, 14604, 14607, 14610, 14611]
+// Dependencies: [14591]
 
 // Module 14590
-import withoutSetter from "withoutSetter" /* 14591 */;
-import _mod14602 from "module_14602" /* 14602 */;
+import module_14591_mod from "module_14591" /* 14591 */;
 
-let closure_3 = withoutSetter("toPrimitive");
-
-export default (arg0, arg1) => {
-  if (_mod14602(arg0)) {
-    if (!tmp(14604)(arg0)) {
-      let str = arg1;
-      const tmp4 = tmp(14607)(arg0, closure_3);
-      if (tmp4) {
-        if (undefined === str) {
-          str = "default";
-        }
-        const tmp5 = tmp(14610)(tmp4, arg0, str);
-        if (tmp(14602)(tmp5)) {
-          if (!tmp(14604)(tmp5)) {
-            const tmp9 = new TypeError("Can't convert object to primitive value");
-            throw tmp9;
-          }
-        }
-        return tmp5;
+const call = prototype.call;
+let module_14591 = module_14591_mod;
+if (module_14591) {
+  const bind = prototype.bind;
+  module_14591 = bind.bind(call, call);
+}
+if (!module_14591) {
+  module_14591 = (arg0) => {
+    closure_0 = arg0;
+    return () => {
+      const apply = call.apply;
+      if (typeof apply === "unknown") {
+        let applyArgumentsResult = HermesBuiltin.applyArguments(tmp2);
       } else {
-        let str2 = str;
-        if (undefined === str) {
-          str2 = "number";
-        }
-        return tmp(14611)(arg0, str2);
+        applyArgumentsResult = apply(tmp2, arguments);
       }
-    }
-  }
-  return arg0;
-};
+      return applyArgumentsResult;
+    };
+  };
+}
+
+export default module_14591;

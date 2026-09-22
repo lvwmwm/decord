@@ -1,17 +1,17 @@
-// Module ID: 14466
-// Function ID: 14467
-// Dependencies: [1119, 14467, 1154, 2]
+// Module ID: 14472
+// Function ID: 14473
+// Dependencies: [1119, 14473, 1154, 2]
 
-// Module 14466
+// Module 14472
 import AssetJsonUtils from "AssetJsonUtils" /* 1119 */;
-import _mod14467 from "module_14467" /* 14467 */;
+import _mod14473 from "module_14473" /* 14473 */;
 import module_1154_mod from "module_1154" /* 1154 */;
 import size from "module_2" /* 2 */;
 
 let module_1154 = module_1154_mod;
 const loader = module_1154.createLoader({
   () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod14467);
+    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod14473);
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");

@@ -1,11 +1,11 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 10939
+// Function ID: 10940
 // Name: premium_tab
-// Dependencies: [32, 1187, 10930, 2]
+// Dependencies: [32, 1187, 10936, 2]
 
-// Module 10933 (premium_tab)
+// Module 10939 (premium_tab)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 10930 */;
+import localized_string from "localized_string" /* 10936 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

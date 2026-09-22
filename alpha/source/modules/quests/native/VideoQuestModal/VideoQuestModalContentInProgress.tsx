@@ -1,19 +1,19 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15405
+// Function ID: 15406
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [32, 19, 17, 5661, 1085, 21, 672, 576, 15398, 4756, 1364, 11548, 4492, 4757, 1612, 7368, 4466, 15400, 15415, 7318, 15416, 15394, 15417, 5184, 5339, 4752, 15418, 5804, 5186, 11558, 8179, 1115, 9873, 11200, 11738, 11767, 15363, 8538, 5198, 15420, 11199, 15307, 15305, 13207, 8181, 15393, 4723, 15421, 1980, 11741, 7958, 7965, 7966, 7976, 5668, 7964, 5664, 7954, 8632, 15422, 12020, 15423, 5669, 2]
+// Dependencies: [32, 19, 17, 5663, 1085, 21, 672, 576, 15406, 4757, 1364, 11552, 4493, 4758, 1612, 7370, 4467, 15408, 15423, 7320, 15424, 15402, 15425, 5185, 5341, 4753, 15426, 5806, 5187, 11562, 8183, 1115, 9879, 11206, 11742, 11771, 15371, 8542, 5199, 15428, 11205, 15315, 15313, 13211, 8185, 15401, 4724, 15429, 1980, 11745, 7961, 7979, 7968, 7978, 5670, 7967, 5666, 7957, 8636, 15430, 12024, 15431, 5671, 2]
 
-// Module 15397 (VideoQuestModalContentInProgress)
+// Module 15405 (VideoQuestModalContentInProgress)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import timing from "timing" /* 4757 */;
-import Pressables from "Pressables" /* 5339 */;
-import QuestTypes from "QuestTypes" /* 5664 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7965 */;
-import AssetUtils from "AssetUtils" /* 11548 */;
-import QuestUtils from "QuestUtils" /* 12020 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import timing from "timing" /* 4758 */;
+import Pressables from "Pressables" /* 5341 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7979 */;
+import AssetUtils from "AssetUtils" /* 11552 */;
+import QuestUtils from "QuestUtils" /* 12024 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import n_mod from "module_672" /* 672 */;
@@ -21,7 +21,7 @@ import n_mod from "module_672" /* 672 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const QuestConstants = fn(5661);
+const QuestConstants = fn(5663);
 ({ DEFAULT_PORTRAIT_ASPECT_RATIO: closure_8, QuestsExperimentLocations: closure_9 } = QuestConstants);
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
@@ -45,7 +45,7 @@ const importDefaultResult3Result = n(nativeDefault.unsafe_rawColors.PLUM_23);
 items1[1] = n(nativeDefault.unsafe_rawColors.PLUM_23).alpha(0.4).hex();
 const contentInsets = { bottom: 158, top: 64, left: 16, right: 16 };
 const contentInsets2 = { bottom: 16, left: 16, right: 16 };
-let createStyles = fn(4756);
+let createStyles = fn(4757);
 let closure_19 = createStyles.createStyles((arg0) => {
   const obj = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flex: 1 }, wrapperPortrait: null, videoLandscape: null, videoLandscape9by16: null, landscapeContentScroll: null, landscapeContentScrollContent: null, videoLandscapeFullscreen: null, videoWrapper: null, videoWrapperLandscape: null, videoWrapperFullscreen: null, videoContentWrapper: null, videoContentWrapperLandscape: null, videoContentWrapperPortrait: null, rewardContainer: null, rewardContentCentered: null, modalBackground: null, questDetailsLandscape: null, questDetailsPrimary: null, questDetailsSecondary: null, footer: null, icon: null, iconDisabled: null, closeButtonLandscape: null, gradientTop: null, gradientBottom: null, textShadow: null, viewRewardBtn: null, playerThumbnail: null, cloudsBackground: null, questDetailsSubheader: null };
   const obj3 = { borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg, justifyContent: null };
@@ -536,7 +536,7 @@ let closure_25 = noop.memo((arg0) => {
     tmp18(closure_27, obj27);
   }
 });
-createStyles = fn(4756);
+createStyles = fn(4757);
 let obj = { footerButton: null };
 const alphaResult3 = n(nativeDefault.unsafe_rawColors.PLUM_23).alpha(0.4);
 obj.footerButton = { padding: nativeDefault.space.PX_8 };
@@ -554,26 +554,26 @@ let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/V
 export default noop.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ onClose, sourceQuestContent } = arg0);
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
-  const quest = sourceQuestContent(15393).useVideoQuestModalContext().quest;
+  const quest = sourceQuestContent(15401).useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
   const memo = noop.useMemo(() => AssetUtils.getQuestAsset(quest, AssetUtils.QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true), items);
   const memo1 = noop.useMemo(() => AssetUtils.getQuestAsset(quest, AssetUtils.QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, true), items1);
-  let obj = sourceQuestContent(15393);
+  let obj = sourceQuestContent(15401);
   let tmp = sourceQuestContent;
   [tmp6, dependencyMap] = getQuestImpressionId(noop.useState(false), 2);
   const items2 = [quest];
   const callback = noop.useCallback(() => dependencyMap((arg0) => !arg0), []);
   const callback1 = noop.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(15421, dependencyMap.paths), "transcript-" + quest.id, { quest });
+    obj.openLazy(asyncRequireImpl(15429, dependencyMap.paths), "transcript-" + quest.id, { quest });
   }, items2);
   const tmp5 = getQuestImpressionId(noop.useState(false), 2);
-  getQuestImpressionId = sourceQuestContent(11741).useGetQuestImpressionId();
-  let obj2 = sourceQuestContent(11741);
+  getQuestImpressionId = sourceQuestContent(11745).useGetQuestImpressionId();
+  let obj2 = sourceQuestContent(11745);
   [tmp11, noop] = getQuestImpressionId(noop.useState(false), 2);
   const tmp10 = getQuestImpressionId(noop.useState(false), 2);
-  const isShareableQuestResult = sourceQuestContent(7958).isShareableQuest(quest.config);
+  const isShareableQuestResult = sourceQuestContent(7961).isShareableQuest(quest.config);
   closure_5 = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
   const callback2 = noop.useCallback(() => {
@@ -581,25 +581,25 @@ export default noop.memo(function VideoQuestModalContentInProgress(arg0) {
       let getQuestUrl = require;
       let id = dependencyMap;
       if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "video_quest_modal_in_progress")) {
-        const questUrl = getQuestUrl(7966);
-        const obj2 = { type: getQuestUrl(7976).AdUserActionType.CLICK_INTERNAL, adCreativeType: getQuestUrl(5668).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: getQuestUrl(7964).QuestContentCTA.MOBILE_SHARESHEET, surfaceId: getQuestUrl(5664).QuestContent.VIDEO_MODAL_MOBILE, sourceQuestContent, impressionId: getQuestImpressionId() };
+        const questUrl = getQuestUrl(7968);
+        const obj2 = { type: getQuestUrl(7978).AdUserActionType.CLICK_INTERNAL, adCreativeType: getQuestUrl(5670).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: getQuestUrl(7967).QuestContentCTA.MOBILE_SHARESHEET, surfaceId: getQuestUrl(5666).QuestContent.VIDEO_MODAL_MOBILE, sourceQuestContent, impressionId: getQuestImpressionId() };
         questUrl.captureAdUserAction(obj2);
         let tmp = quest;
       } else {
-        const questUrl1 = getQuestUrl(7954);
+        const questUrl1 = getQuestUrl(7957);
         const obj3 = { questId: null, questContent: null, questContentCTA: null, impressionId: null, sourceQuestContent: null };
         tmp = quest;
         obj3.questId = quest.id;
-        obj3.questContent = getQuestUrl(5664).QuestContent.VIDEO_MODAL_MOBILE;
-        obj3.questContentCTA = getQuestUrl(7964).QuestContentCTA.MOBILE_SHARESHEET;
+        obj3.questContent = getQuestUrl(5666).QuestContent.VIDEO_MODAL_MOBILE;
+        obj3.questContentCTA = getQuestUrl(7967).QuestContentCTA.MOBILE_SHARESHEET;
         obj3.impressionId = getQuestImpressionId();
         obj3.sourceQuestContent = sourceQuestContent;
         const result = questUrl1.trackQuestContentClicked(obj3);
       }
       noop(true);
-      const questUrl2 = getQuestUrl(8632);
+      const questUrl2 = getQuestUrl(8636);
       const obj4 = { message: null, iOSOnlyShareCallback: null };
-      const questUrl3 = getQuestUrl(11558);
+      const questUrl3 = getQuestUrl(11562);
       getQuestUrl = questUrl3.getQuestUrl;
       obj4.message = getQuestUrl(tmp.id);
       obj4.iOSOnlyShareCallback = function iOSOnlyShareCallback() {
@@ -611,8 +611,8 @@ export default noop.memo(function VideoQuestModalContentInProgress(arg0) {
       obj = AdAnalyticsInterfaceExperiment;
     }
   }, items3);
-  let obj3 = sourceQuestContent(7958);
-  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(15422).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
+  let obj3 = sourceQuestContent(7961);
+  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(15430).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
   const callback3 = noop.useCallback(() => videoQuestClickCtaAndMaybeCloseModal(QuestTypes.QuestContent.VIDEO_MODAL_MOBILE_FOOTER), items4);
@@ -621,13 +621,13 @@ export default noop.memo(function VideoQuestModalContentInProgress(arg0) {
   const callback5 = noop.useCallback(() => {
     const result = QuestUtils.openRewardDetailsBottomSheet({ questId: quest.id });
   }, items6);
-  let obj4 = sourceQuestContent(15422);
-  const videoExternallyPaused = sourceQuestContent(15423).useVideoExternallyPaused(quest.id, tmp11);
-  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5669).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  let obj4 = sourceQuestContent(15430);
+  const videoExternallyPaused = sourceQuestContent(15431).useVideoExternallyPaused(quest.id, tmp11);
+  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5671).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    tmp20 = "portrait" === tmp(11767).getVideoOrientation(tmp19);
-    const tmpResult = tmp(11767);
+    tmp20 = "portrait" === tmp(11771).getVideoOrientation(tmp19);
+    const tmpResult = tmp(11771);
   }
   return closure_11(tmp20 ? closure_25 : closure_24, { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult });
 });

@@ -1,10 +1,10 @@
-// Module ID: 5093
-// Function ID: 5094
+// Module ID: 5094
+// Function ID: 5095
 // Name: StripeActionCreators
 // Dependencies: [5, 1074, 1271, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 5093 (StripeActionCreators)
+// Module 5094 (StripeActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -43,7 +43,7 @@ let closure_4 = async function _createStripeSetupIntent(arg0, value) {
           closure_129_0 = obj4;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -115,7 +115,7 @@ let closure_5 = async function _createSetupIntentForPaymentElements(arg0, value)
           closure_129_0 = obj4;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

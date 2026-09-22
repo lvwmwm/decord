@@ -1,13 +1,13 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15610
+// Function ID: 15611
 // Name: AccessibilityIcon
-// Dependencies: [19, 21, 576, 4456, 15600, 2]
+// Dependencies: [19, 21, 576, 4457, 15611, 2]
 // Exports: AccessibilityIcon
 
-// Module 15599 (AccessibilityIcon)
+// Module 15610 (AccessibilityIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod15600 from "module_15600" /* 15600 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod15611 from "module_15611" /* 15611 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AccessibilityIcon = function AccessibilityIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15600, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15611, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

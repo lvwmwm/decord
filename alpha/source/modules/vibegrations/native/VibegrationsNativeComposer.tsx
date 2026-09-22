@@ -1,29 +1,29 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17071
+// Function ID: 17072
 // Name: VibegrationsNativeComposer
-// Dependencies: [5, 32, 19, 17, 4748, 17060, 13361, 1074, 21, 576, 4756, 1115, 3678, 5275, 9310, 4457, 504, 5366, 11489, 4723, 17061, 12492, 16268, 15277, 4700, 12499, 4752, 5339, 6858, 8174, 11216, 8879, 4466, 2]
+// Dependencies: [5, 32, 19, 17, 4749, 17072, 13366, 1074, 21, 576, 4757, 1115, 3678, 5277, 9315, 4458, 504, 5368, 11493, 4724, 17073, 12496, 16279, 15284, 4701, 12503, 4753, 5341, 6860, 8178, 11222, 8884, 4467, 2]
 // Exports: default
 
-// Module 17059 (VibegrationsNativeComposer)
+// Module 17071 (VibegrationsNativeComposer)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import SendMessageIcon from "SendMessageIcon" /* 4700 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
-import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9310 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 11216 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12492 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12499 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15277 */;
-import StopIcon from "StopIcon" /* 16268 */;
-import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17061 */;
+import SendMessageIcon from "SendMessageIcon" /* 4701 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4724 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
+import VibegrationsActionCreators from "VibegrationsActionCreators" /* 9315 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11222 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12496 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12503 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15284 */;
+import StopIcon from "StopIcon" /* 16279 */;
+import VibegrationsModelSettingsSheet from "VibegrationsModelSettingsSheet" /* 17073 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
-import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17060 */;
-import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13361 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import VibegrationsComposerDraftStore from "VibegrationsComposerDraftStore" /* 17072 */;
+import VibegrationsConnectionStore_mod from "VibegrationsConnectionStore" /* 13366 */;
 
 const require = globalThis.__r;
 const VibegrationsModelSettingsSheetDefault = VibegrationsModelSettingsSheet;
@@ -41,13 +41,13 @@ function tooLargeText(contentType) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let VibegrationsConnectionStore = fn(13361);
+let VibegrationsConnectionStore = fn(13366);
 ({ deleteStagedAttachment: c10, uploadAttachmentBytes: closure_11 } = VibegrationsConnectionStore);
 let VibegrationsConnectionStore = VibegrationsConnectionStore_mod;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, box: null, boxFocused: null, boxContents: null, input: null, inputText: null, inputPlaceholder: null, draftRow: null, draftPill: null, draftName: null, trailingButton: null, trailingSlot: null, sendButtonActive: null, sendIconActive: null };
 let obj3 = { paddingHorizontal: nativeDefault.modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.box = { backgroundColor: nativeDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, overflow: "hidden" };
@@ -306,7 +306,7 @@ export default function VibegrationsNativeComposer(projectId) {
       if (map.length > diff) {
         let intl = tmp16(1115).intl;
         let obj = { count: null };
-        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5275).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
+        VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE = tmp16(5277).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
         obj.count = VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE;
         _undefined4(intl.formatToPlainString(_modDef3678.DlX57a, obj));
         const _Math = Math;
@@ -396,10 +396,10 @@ export default function VibegrationsNativeComposer(projectId) {
             return obj4;
           } else {
             closure_128_0 = undefined;
-            const obj5 = { mediaType: "any", selectionLimit: tmp2(5275).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
+            const obj5 = { mediaType: "any", selectionLimit: tmp2(5277).VIBEGRATIONS_MAX_ATTACHMENTS_PER_MESSAGE, skipProcessing: true };
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: tmp5(5366).launchImageLibraryAsync(obj5), done: false };
+            const obj6 = { value: tmp5(5368).launchImageLibraryAsync(obj5), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {

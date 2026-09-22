@@ -1,11 +1,11 @@
-// Module ID: 8954
-// Function ID: 8955
+// Module ID: 8959
+// Function ID: 8960
 // Name: useOpenExternalUrlFromGameProfile
-// Dependencies: [32, 5, 19, 8955, 8956, 4445, 2]
+// Dependencies: [32, 5, 19, 8960, 8961, 4446, 2]
 // Exports: default
 
-// Module 8954 (useOpenExternalUrlFromGameProfile)
-import GameUtilsDefault from "GameUtils" /* 8955 */;
+// Module 8959 (useOpenExternalUrlFromGameProfile)
+import GameUtilsDefault from "GameUtils" /* 8960 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;

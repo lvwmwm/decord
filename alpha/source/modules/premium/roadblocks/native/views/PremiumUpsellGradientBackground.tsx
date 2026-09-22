@@ -1,18 +1,18 @@
-// Module ID: 10565
-// Function ID: 10566
+// Module ID: 10571
+// Function ID: 10572
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 7674, 21, 4756, 5198, 1094, 2]
+// Dependencies: [19, 17, 7677, 21, 4757, 5199, 1094, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 10565 (PremiumUpsellGradientBackground)
+// Module 10571 (PremiumUpsellGradientBackground)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
+import LinearGradientDefault from "LinearGradient" /* 5199 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Gradients = fn(7674).Gradients;
+const Gradients = fn(7677).Gradients;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj2 = { gradient: null };
 const merged = Object.assign(fn(17).StyleSheet.absoluteFillObject);
 obj2.gradient = { opacity: 0.1 };

@@ -1,17 +1,17 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17276
+// Function ID: 17277
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1074, 2038, 21, 4756, 576, 1115, 3680, 7624, 11394, 12223, 1380, 12227, 12228, 2]
+// Dependencies: [19, 17, 1074, 2039, 21, 4757, 576, 1115, 3680, 7627, 11398, 12227, 1380, 12231, 12232, 2]
 // Exports: default
 
-// Module 17256 (CustomTypingIndicatorProfileCoachmark)
+// Module 17276 (CustomTypingIndicatorProfileCoachmark)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import user from "user" /* 1380 */;
 import _modDef3680 from "module_3680" /* 3680 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12223 */;
-import _modDef12227 from "module_12227" /* 12227 */;
-import _modDef12228 from "module_12228" /* 12228 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12227 */;
+import _modDef12231 from "module_12231" /* 12231 */;
+import _modDef12232 from "module_12232" /* 12232 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,16 +19,16 @@ function CoachmarkPreview() {
   const tmp = closure_8();
   const obj = { style: tmp.coachmarkImageContainer, children: null };
   const obj2 = { name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: null };
-  const items = [_modDef12227, _modDef12228, _modDef12227];
+  const items = [_modDef12231, _modDef12232, _modDef12231];
   obj2.emojiSource = items;
   obj.children = jsx(CustomTypingIndicatorDynamicAssetDefault, { name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: null });
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }
 const View = fn(17).View;
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { coachmarkImageContainer: { alignItems: "center", justifyContent: "center", paddingTop: nativeDefault.space.PX_10 }, typingText: { maxWidth: 100 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,15 +1,15 @@
-// Module ID: 7733
-// Function ID: 7734
+// Module ID: 7736
+// Function ID: 7737
 // Name: UserGuildSettings
-// Dependencies: [5, 4937, 3, 2070, 12, 2]
+// Dependencies: [5, 4938, 3, 2071, 12, 2]
 
-// Module 7733 (UserGuildSettings)
+// Module 7736 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2070 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2071 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const UserGuildSettingsStore = fn(4937);
+const UserGuildSettingsStore = fn(4938);
 ({ convertChannelOverridesToMap: c3, getGuildDefaults: closure_4 } = UserGuildSettingsStore);
 let closure_5 = new LoggerDefault("ReadStates");
 class UserGuildSettings {

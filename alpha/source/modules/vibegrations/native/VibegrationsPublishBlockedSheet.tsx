@@ -1,19 +1,19 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 16997
+// Function ID: 16998
 // Name: VibegrationsPublishBlockedSheet
-// Dependencies: [19, 17, 21, 4756, 576, 16986, 7442, 7394, 1115, 3678, 4752, 5186, 4723, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 16998, 7444, 7396, 1115, 3678, 4753, 5187, 4724, 2]
 // Exports: default
 
-// Module 16985 (VibegrationsPublishBlockedSheet)
+// Module 16997 (VibegrationsPublishBlockedSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7394 */;
-import ActionSheet from "ActionSheet" /* 7442 */;
-import vibegrationsPublishBlockedReason from "vibegrationsPublishBlockedReason" /* 16986 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4724 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
+import ActionSheet from "ActionSheet" /* 7444 */;
+import vibegrationsPublishBlockedReason from "vibegrationsPublishBlockedReason" /* 16998 */;
 import noop from "module_19" /* 19 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -62,7 +62,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 VibegrationsPublishBlockedSheet = "VibegrationsPublishBlockedSheet";
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { content: { gap: nativeDefault.space.PX_16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

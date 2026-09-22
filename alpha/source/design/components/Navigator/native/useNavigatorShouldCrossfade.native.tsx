@@ -1,11 +1,11 @@
-// Module ID: 7246
-// Function ID: 7247
+// Module ID: 7248
+// Function ID: 7249
 // Name: useNavigatorShouldCrossfade
-// Dependencies: [19, 1364, 4476, 2]
+// Dependencies: [19, 1364, 4477, 2]
 // Exports: useNavigatorShouldCrossfade
 
-// Module 7246 (useNavigatorShouldCrossfade)
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4476 */;
+// Module 7248 (useNavigatorShouldCrossfade)
+import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4477 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

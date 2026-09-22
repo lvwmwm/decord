@@ -1,20 +1,19 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11357
+// Function ID: 11358
 // Name: useHandleUseNow
-// Dependencies: [19, 11352, 4723, 4959, 4614, 4454, 1115, 11353, 11356, 10034, 2]
+// Dependencies: [19, 11358, 4724, 4960, 4615, 4455, 1115, 11359, 10040, 2]
 // Exports: useHandleUseNow
 
-// Module 11351 (useHandleUseNow)
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import CollectiblePreviewSession from "CollectiblePreviewSession" /* 11356 */;
+// Module 11357 (useHandleUseNow)
+import RootNavigationRef from "RootNavigationRef" /* 4615 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const RootNavigatorScreen = fn(11352).RootNavigatorScreen;
+const RootNavigatorScreen = fn(11358).RootNavigatorScreen;
 const size = fn(2);
-let result = size.fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");
+const result = size.fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");
 
 export const useHandleUseNow = function useHandleUseNow(analyticsLocations) {
   const product = analyticsLocations.product;
@@ -49,14 +48,13 @@ export const useHandleUseNow = function useHandleUseNow(analyticsLocations) {
   ({ isApplying, canUseNow } = handleUseNow1);
   const callback2 = onSuccess.useCallback(() => {
     if (null != stageCollectibleChangeForEditProfile) {
-      const result = CollectiblePreviewSession.commitCollectiblePreview();
       tmp(product);
       callback();
     } else {
       handleUseNow();
     }
   }, items1);
-  const tmp5 = onSuccess(stageCollectibleChangeForEditProfile[9])({ analyticsLocations: analyticsLocations.analyticsLocations });
+  const tmp5 = onSuccess(stageCollectibleChangeForEditProfile[8])({ analyticsLocations: analyticsLocations.analyticsLocations });
   closure_5 = tmp5;
   let obj2 = { handleUseNow: callback2, isApplying, canUseNow, handleEditProfile: null };
   const items2 = [tmp5, onSuccess];

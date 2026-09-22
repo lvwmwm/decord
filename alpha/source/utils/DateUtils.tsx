@@ -1,16 +1,16 @@
-// Module ID: 4438
-// Function ID: 4439
+// Module ID: 4439
+// Function ID: 4440
 // Name: DateUtils
-// Dependencies: [2109, 3, 4439, 2019, 1186, 4441, 1115, 573, 4443, 4348, 2]
+// Dependencies: [2109, 3, 4440, 2020, 1186, 4442, 1115, 573, 4444, 4348, 2]
 // Exports: accessibilityLabelCalendarFormat, calendarFormat, calendarFormatCompact, dateStringToMoment, diffAsUnits, differenceInDays, formatDateForDatetimeLocal, getDaysRemainingInMonth, getESTDate, getMonthlyProgressPercentage, isSameDay, isSameHourMoment, isWithinInterval, unitsAsStrings
 
-// Module 4438 (DateUtils)
+// Module 4439 (DateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
-import UserSettings from "UserSettings" /* 2019 */;
+import UserSettings from "UserSettings" /* 2020 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import onTimezoneChangeDefault from "onTimezoneChange" /* 4439 */;
+import onTimezoneChangeDefault from "onTimezoneChange" /* 4440 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import Dispatcher_mod from "Dispatcher" /* 573 */;
 
@@ -23,8 +23,8 @@ function syncHourCycleToIntlConfig() {
   const setting = TimestampHourCycle.getSetting();
   let result = setting !== preloaded_user_settings.TimestampHourCycle.AUTO;
   if (result) {
-    result = tmp4(4441).supportsSystemDateFormatter();
-    const tmp4Result = tmp4(4441);
+    result = tmp4(4442).supportsSystemDateFormatter();
+    const tmp4Result = tmp4(4442);
   }
   const values = Object.values(tmp4(1115).intl.formatConfig.time);
   const iter = values[Symbol.iterator]();
@@ -102,7 +102,7 @@ function dateFormat(date, LL, setting) {
   const combined = "" + obj2.locale() + ":" + LL + ":" + setting;
   let tmp7 = closure_5[combined];
   if (null == tmp7) {
-    const tmp9 = tmp(4443)(LL);
+    const tmp9 = tmp(4444)(LL);
     closure_5[combined] = tmp9;
     tmp7 = tmp9;
   }

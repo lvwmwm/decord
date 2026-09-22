@@ -1,10 +1,10 @@
-// Module ID: 4623
-// Function ID: 4624
+// Module ID: 4624
+// Function ID: 4625
 // Name: ScreenIndexFrozen
-// Dependencies: [19, 4492, 2]
+// Dependencies: [19, 4493, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 4623 (ScreenIndexFrozen)
+// Module 4624 (ScreenIndexFrozen)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

@@ -1,14 +1,14 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15369
+// Function ID: 15370
 // Name: QuestDockUtils
-// Dependencies: [17, 15362, 1091, 5185, 2]
+// Dependencies: [17, 15370, 1091, 5186, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 15361 (QuestDockUtils)
+// Module 15369 (QuestDockUtils)
 import _mod17 from "module_17" /* 17 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import spring from "spring" /* 5185 */;
-import QuestDockConstants from "QuestDockConstants" /* 15362 */;
+import spring from "spring" /* 5186 */;
+import QuestDockConstants from "QuestDockConstants" /* 15370 */;
 import size from "module_2" /* 2 */;
 
 const PixelRatio = _mod17.PixelRatio;

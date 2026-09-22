@@ -1,14 +1,14 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 7289
+// Function ID: 7290
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1074, 7288, 21, 5841, 7289, 7290, 4959, 1249, 7323, 7238, 7245, 1115, 2]
+// Dependencies: [5, 19, 1074, 7290, 21, 5843, 7291, 7292, 4960, 1249, 7325, 7240, 7247, 1115, 2]
 // Exports: default
 
-// Module 7287 (PhoneVerificationModal)
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7238 */;
-import AddPhoneDefault from "AddPhone" /* 7289 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7290 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 7323 */;
+// Module 7289 (PhoneVerificationModal)
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 7240 */;
+import AddPhoneDefault from "AddPhone" /* 7291 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7292 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 7325 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 const require = fn;
 const VerificationModalScenes = fn(1074).VerificationModalScenes;
-let closure_5 = fn(7288).PHONE_VERIFICATION_MODAL_KEY;
+let closure_5 = fn(7290).PHONE_VERIFICATION_MODAL_KEY;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/verification/native/components/PhoneVerificationModal.tsx");
@@ -135,7 +135,7 @@ export default function PhoneVerificationModal(onClose) {
                   c4 = 1;
                   c2 = 2;
                   c1 = 1;
-                  const obj5 = { value: v3(7290).addPhone(reason, reason, reason.reason), done: false };
+                  const obj5 = { value: v3(7292).addPhone(reason, reason, reason.reason), done: false };
                   return obj5;
                 }
               } else if (1 === tmp6) {
@@ -180,7 +180,7 @@ export default function PhoneVerificationModal(onClose) {
         return applyArgumentsResult;
       };
       obj.onSuccess = function onSuccess() {
-        closure_1(4959).popWithKey(closure_1_5);
+        closure_1(4960).popWithKey(closure_1_5);
       };
       closure_0.push(VerificationModalScenes.VERIFY_PASSWORD, obj);
     };

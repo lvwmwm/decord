@@ -1,19 +1,19 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9144
+// Function ID: 9145
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4738, 4436, 4429, 7488, 2]
+// Dependencies: [5, 32, 19, 4739, 4437, 4430, 7490, 2]
 // Exports: useOrderSigning
 
-// Module 9139 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4429 */;
-import BillingErrorDefault from "BillingError" /* 4436 */;
+// Module 9144 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4430 */;
+import BillingErrorDefault from "BillingError" /* 4437 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const noop = fn(19);
 ({ useCallback: hasOwnProperty, useState: metroRequire } = noop);
-const OrderStatus = fn(4738).OrderStatus;
+const OrderStatus = fn(4739).OrderStatus;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/payments/hooks/useOrderSigning.tsx");
 
@@ -96,7 +96,7 @@ export const useOrderSigning = function useOrderSigning(order) {
             closure_129_2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {

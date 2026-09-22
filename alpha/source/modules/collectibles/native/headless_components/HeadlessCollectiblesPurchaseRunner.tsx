@@ -1,26 +1,26 @@
-// Module ID: 13469
-// Function ID: 13470
+// Module ID: 13477
+// Function ID: 13478
 // Name: HeadlessCollectiblesPurchaseRunner
-// Dependencies: [19, 7666, 13470, 2]
+// Dependencies: [19, 7669, 13478, 2]
 // Exports: HeadlessCollectiblesPurchaseRunner
 
-// Module 13469 (HeadlessCollectiblesPurchaseRunner)
-import useHandleBuyNowDefault from "useHandleBuyNow" /* 13470 */;
+// Module 13477 (HeadlessCollectiblesPurchaseRunner)
+import useHandleBuyNowDefault from "useHandleBuyNow" /* 13478 */;
 import noop from "module_19" /* 19 */;
 
-const useNativeCheckoutStore = fn(7666).useNativeCheckoutStore;
+const useNativeCheckoutStore = fn(7669).useNativeCheckoutStore;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseRunner.tsx");
 
 export const HeadlessCollectiblesPurchaseRunner = function HeadlessCollectiblesPurchaseRunner(attempt) {
   attempt = attempt.attempt;
   let handleBuyNow;
-  ({ product, analyticsLocations, onBuy, onBuySettled, stageCollectibleChangeForEditProfile } = attempt);
+  ({ product, analyticsLocations, onBuySettled, stageCollectibleChangeForEditProfile } = attempt);
   const tmp = useNativeCheckoutStore((orderRecord) => orderRecord.orderRecord);
   closure_1 = tmp;
   const tmp2 = useNativeCheckoutStore((orderRequired) => orderRequired.orderRequired);
   closure_2 = tmp2;
-  const obj = { product, analyticsLocations, onBuy, orderId: null, onBuySettled: null, stageCollectibleChangeForEditProfile: null };
+  const obj = { product, analyticsLocations, orderId: null, onBuySettled: null, stageCollectibleChangeForEditProfile: null };
   let id;
   if (tmp != null) {
     id = tmp.id;

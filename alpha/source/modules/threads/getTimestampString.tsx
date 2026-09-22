@@ -1,10 +1,10 @@
-// Module ID: 7741
-// Function ID: 7742
+// Module ID: 7744
+// Function ID: 7745
 // Name: getTimestampString
 // Dependencies: [1115, 4348, 2]
 // Exports: default
 
-// Module 7741 (getTimestampString)
+// Module 7744 (getTimestampString)
 import util from "util" /* 1115 */;
 import size from "module_2" /* 2 */;
 

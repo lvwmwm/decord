@@ -1,12 +1,12 @@
-// Module ID: 5082
-// Function ID: 5083
+// Module ID: 5083
+// Function ID: 5084
 // Name: SharedCaptchaUtils
-// Dependencies: [5083, 5090, 2]
+// Dependencies: [5084, 5091, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 5082 (SharedCaptchaUtils)
-import CaptchaConstants from "CaptchaConstants" /* 5090 */;
-import CaptchaStore from "CaptchaStore" /* 5083 */;
+// Module 5083 (SharedCaptchaUtils)
+import CaptchaConstants from "CaptchaConstants" /* 5091 */;
+import CaptchaStore from "CaptchaStore" /* 5084 */;
 import size from "module_2" /* 2 */;
 
 ({ incrementCaptchaServeVolume: closure_0, flushCaptchaServeVolume: closure_1, isCaptchaStoreVolumeEmpty: c2 } = CaptchaStore);

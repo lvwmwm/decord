@@ -1,14 +1,14 @@
-// Module ID: 17808
-// Function ID: 17809
+// Module ID: 17820
+// Function ID: 17821
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1349, 21, 4756, 576, 17796, 7226, 8603, 17809, 5181, 4454, 1115, 9730, 9738, 5339, 4708, 4752, 9552, 2]
+// Dependencies: [32, 19, 17, 1349, 21, 4757, 576, 17808, 7228, 8607, 17821, 5182, 4455, 1115, 9736, 9744, 5341, 4709, 4753, 9558, 2]
 // Exports: default
 
-// Module 17808 (InteractionIframeModal)
+// Module 17820 (InteractionIframeModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17809 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4455 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 17821 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ const View = fn(17).View;
 const BotTagTypes = fn(1349).BotTagTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1 }, header: { flexDirection: "row", padding: 16, justifyContent: "space-between", alignItems: "center" }, headerCenterContainer: { flexDirection: "column", alignItems: "center" }, headerTitleContainer: { flexDirection: "row", marginBottom: 2 }, closeButton: { marginEnd: 8 }, spacerView: { marginStart: 8, width: 32 }, botTag: { marginStart: 4 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -67,8 +67,8 @@ export default function InteractionIframeModal(children) {
       allowPopups: null,
       referrerPolicy: "origin",
       isPipOrGridMode: false,
-      webViewKey: "PX_16",
-      ignoreSilentHardwareSwitch: "fr-CA"
+      webViewKey: "flex",
+      ignoreSilentHardwareSwitch: "en-CC"
     };
     ({ channel_id: obj2.channelId, guild_id: obj2.guildId } = queryParams);
     obj3.activityUrl = iframeModalState.iframeUrl;

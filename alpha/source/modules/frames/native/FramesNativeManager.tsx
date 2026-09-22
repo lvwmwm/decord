@@ -1,20 +1,20 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9568
+// Function ID: 9569
 // Name: FramesNativeManager
-// Dependencies: [5, 17, 9313, 9314, 1074, 2004, 4660, 8569, 1365, 9563, 9564, 1231, 9565, 9577, 5109, 1115, 1370, 573, 1110, 1255, 2]
+// Dependencies: [5, 17, 9318, 9319, 1074, 2004, 4661, 8573, 1365, 9569, 9570, 1231, 9571, 9583, 5110, 1115, 1370, 573, 1110, 1255, 2]
 
-// Module 9562 (FramesNativeManager)
+// Module 9568 (FramesNativeManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
 import v1 from "v1" /* 1255 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5109 */;
-import NativeAppLifecycleModuleDefault from "NativeAppLifecycleModule" /* 9563 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9564 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9577 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5110 */;
+import NativeAppLifecycleModuleDefault from "NativeAppLifecycleModule" /* 9569 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 9570 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9583 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9313 */;
-import FramesManager from "FramesManager" /* 9565 */;
+import FramesStore from "FramesStore" /* 9318 */;
+import FramesManager from "FramesManager" /* 9571 */;
 
 require = fn;
 function postMessageToWebView() {
@@ -44,11 +44,11 @@ let closure_12 = async function _postMessageToWebView(arg0, arg1) {
   }
   return arg1;
 };
-const isLaunched = fn(9314).isLaunched;
+const isLaunched = fn(9319).isLaunched;
 const ComponentActions = fn(1074).ComponentActions;
 let closure_7 = fn(2004).DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
-const TransportTypes = fn(4660).TransportTypes;
-const WebView = fn(8569);
+const TransportTypes = fn(4661).TransportTypes;
+const WebView = fn(8573);
 const React7 = WebView.getWebViewProxy("FRAME_WEB_VIEW_KEY");
 const PlatformUtils = fn(1365);
 let nativeEventEmitter = null;

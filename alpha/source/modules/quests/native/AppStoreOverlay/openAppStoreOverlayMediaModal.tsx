@@ -1,13 +1,13 @@
-// Module ID: 11763
-// Function ID: 11764
+// Module ID: 11767
+// Function ID: 11768
 // Name: openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4447, 1074, 1478, 8531, 1980, 8532, 8533, 11764, 1115, 4723, 4959, 11765, 2]
+// Dependencies: [32, 5, 4448, 1074, 1478, 8535, 1980, 8536, 8537, 11768, 1115, 4724, 4960, 11769, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 11763 (openAppStoreOverlayMediaModal)
+// Module 11767 (openAppStoreOverlayMediaModal)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4447 */;
+import ActionSheetStore from "ActionSheetStore" /* 4448 */;
 
 const require = fn;
 let closure_7 = async function _openAppStoreOverlayMediaModal() {
@@ -87,7 +87,7 @@ let closure_7 = async function _openAppStoreOverlayMediaModal() {
   closure_129_1 = initialIndex;
   ({ initialSources: closure_129_2, analyticsSource: closure_129_3, channelId: closure_129_4, onGetGamePress: closure_129_5, onClose: closure_129_6 } = closure_0);
   closure_129_7 = Object.assign(tmp43, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onGetGamePress: 0, onClose: 0 }));
-  return "PX_16";
+  return "flex";
 };
 const MEDIA_MODAL_KEY = fn(1074).MEDIA_MODAL_KEY;
 let size = fn(2);

@@ -1,11 +1,11 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7472
+// Function ID: 7473
 // Name: GuildSpaceExperiment
-// Dependencies: [4669, 2]
+// Dependencies: [4670, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 7470 (GuildSpaceExperiment)
-import createExperiment from "module_4669" /* 4669 */;
+// Module 7472 (GuildSpaceExperiment)
+import createExperiment from "module_4670" /* 4670 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false }, treatments: null };
@@ -15,8 +15,8 @@ const experiment = createExperiment.createExperiment(obj);
 const result = size.fileFinishedImporting("modules/guild_space/GuildSpaceExperiment.tsx");
 
 export const GuildSpaceExperiment = experiment;
-export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(guildId, location) {
-  return experiment.getCurrentConfig({ guildId, location }, { autoTrackExposure: false }).enabled;
+export const getGuildSpaceExperimentEnabled = function getGuildSpaceExperimentEnabled(id, GuildSettingsModalOverview) {
+  return experiment.getCurrentConfig({ guildId: id, location: GuildSettingsModalOverview }, { autoTrackExposure: false }).enabled;
 };
 export const useGuildSpaceExperimentEnabled = function useGuildSpaceExperimentEnabled(guildId, location) {
   return experiment.useExperiment({ guildId, location }, { autoTrackExposure: false }).enabled;

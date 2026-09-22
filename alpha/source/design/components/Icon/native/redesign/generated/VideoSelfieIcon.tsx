@@ -1,13 +1,13 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8719
+// Function ID: 8720
 // Name: VideoSelfieIcon
-// Dependencies: [19, 21, 576, 4456, 8716, 2]
+// Dependencies: [19, 21, 576, 4457, 8720, 2]
 // Exports: VideoSelfieIcon
 
-// Module 8715 (VideoSelfieIcon)
+// Module 8719 (VideoSelfieIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod8716 from "module_8716" /* 8716 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod8720 from "module_8720" /* 8720 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const VideoSelfieIcon = function VideoSelfieIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8716, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8720, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

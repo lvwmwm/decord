@@ -1,10 +1,10 @@
-// Module ID: 7671
-// Function ID: 7672
+// Module ID: 7674
+// Function ID: 7675
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 4738, 1074, 3, 1271, 4429, 573, 7488, 2]
+// Dependencies: [5, 4739, 1074, 3, 1271, 4430, 573, 7490, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7671 (payments/OrderActionCreators)
+// Module 7674 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -193,7 +193,7 @@ let closure_10 = async function _createOrder(arg0, value) {
           let body;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -404,7 +404,7 @@ let closure_12 = async function _getOrCreateOrder(arg0, value) {
           closure_129_10 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp4) {
         if (arg0 === 1) {
@@ -504,7 +504,7 @@ let closure_13 = async function _patchOrderLineItem(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -632,7 +632,7 @@ let closure_14 = async function _patchOrder(arg0, value) {
           let body;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -768,7 +768,7 @@ let closure_15 = async function _updateOrder(arg0, value) {
           closure_129_5 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp7) {
         if (arg0 === 1) {
@@ -1306,7 +1306,7 @@ let closure_19 = async function _cancelOrderSigning(arg0, value) {
     }
   }
 };
-const OrderStatus = fn(4738).OrderStatus;
+const OrderStatus = fn(4739).OrderStatus;
 const Endpoints = fn(1074).Endpoints;
 const tmp2 = new LoggerDefault("OrderActionCreators");
 let closure_6 = tmp2;

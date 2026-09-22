@@ -1,15 +1,15 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17173
+// Function ID: 17174
 // Name: ThreadChannelUserList
-// Dependencies: [19, 2041, 2105, 2063, 1372, 1074, 21, 7407, 504, 17162, 7294, 550, 7554, 4600, 8448, 11128, 2]
+// Dependencies: [19, 2042, 2105, 2064, 1372, 1074, 21, 7409, 504, 17174, 7296, 550, 7556, 4601, 8452, 11134, 2]
 
-// Module 17161 (ThreadChannelUserList)
+// Module 17173 (ThreadChannelUserList)
 import throttleDefault from "throttle" /* 550 */;
-import UserUtilsDefault from "UserUtils" /* 4600 */;
+import UserUtilsDefault from "UserUtils" /* 4601 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = fn;

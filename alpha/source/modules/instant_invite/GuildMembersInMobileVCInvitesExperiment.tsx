@@ -1,10 +1,10 @@
-// Module ID: 10102
-// Function ID: 10103
+// Module ID: 10108
+// Function ID: 10109
 // Name: GuildMembersInMobileVCInvitesExperiment
 // Dependencies: [1434, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 10102 (GuildMembersInMobileVCInvitesExperiment)
+// Module 10108 (GuildMembersInMobileVCInvitesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

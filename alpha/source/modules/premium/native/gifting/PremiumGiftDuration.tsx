@@ -1,15 +1,15 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11320
+// Function ID: 11321
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1374, 21, 4756, 576, 10959, 5822, 8873, 11011, 4474, 4752, 1115, 2]
+// Dependencies: [19, 17, 1374, 21, 4757, 576, 10965, 5824, 8878, 11017, 4475, 4753, 1115, 2]
 // Exports: default
 
-// Module 11314 (PremiumGiftDuration)
+// Module 11320 (PremiumGiftDuration)
 import nativeDefault from "native" /* 576 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4474 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import NativeGiftContext from "NativeGiftContext" /* 10959 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11011 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4475 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import NativeGiftContext from "NativeGiftContext" /* 10965 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11017 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,9 +19,9 @@ function PremiumGiftDurationButton(arg0) {
   const setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp4 = closure_9();
   if (selected) {
-    let RowButton = tmp(5822).TableRow;
+    let RowButton = tmp(5824).TableRow;
   } else {
-    RowButton = tmp(8873).RowButton;
+    RowButton = tmp(8878).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -54,7 +54,7 @@ function PremiumGiftDurationButton(arg0) {
     const intl3 = tmp(1115).intl;
     const obj6 = { discount: combined };
     obj5.children = intl3.formatToPlainString(tmp(1115).t.IAybsG, obj6).toUpperCase();
-    obj4.children = tmp11(tmp(4752).Text, obj5);
+    obj4.children = tmp11(tmp(4753).Text, obj5);
     tmp11Result = tmp11(tmp12, obj4);
     const str3 = intl3.formatToPlainString(tmp(1115).t.IAybsG, obj6);
   }
@@ -82,7 +82,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let items = [, ];
 ({ YEAR: arr[0], MONTH: arr[1] } = SubscriptionIntervalTypes);
-let createStyles = fn(4756);
+let createStyles = fn(4757);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_8 }, containerSelected: null, labelContainer: null, labelPromo: null };
 let obj3 = { marginTop: nativeDefault.space.PX_8 };
 obj2.containerSelected = { borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, borderWidth: 2 };
@@ -90,7 +90,7 @@ obj2.labelContainer = { flexDirection: "row" };
 let obj4 = { borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, borderWidth: 2 };
 obj2.labelPromo = { marginStart: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
 let closure_9 = createStyles.createStyles(obj2);
-createStyles = fn(4756);
+createStyles = fn(4757);
 const obj7 = { durationContainer: null, durationTitle: null };
 let obj5 = { marginStart: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round };
 obj7.durationContainer = { marginHorizontal: nativeDefault.space.PX_16 };
@@ -102,12 +102,12 @@ const result = size.fileFinishedImporting("modules/premium/native/gifting/Premiu
 
 export default function PremiumGiftDuration() {
   const tmp = closure_11();
-  planInterval = planInterval(10959).useNativeGiftContext().planInterval;
+  planInterval = planInterval(10965).useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: null };
   const obj3 = { style: tmp.durationTitle, variant: "text-sm/semibold", children: null };
   const intl = planInterval(1115).intl;
   obj3.children = intl.string(planInterval(1115).t["8XT6Nf"]);
-  items = [closure_6(planInterval(4752).Text, obj3), ];
+  items = [closure_6(planInterval(4753).Text, obj3), ];
   items[1] = items.map((planInterval, index) => timestampProducer(PremiumGiftDurationButton, { selected: planInterval === planInterval, planInterval }, index));
   obj2.children = items;
   return closure_7(View, obj2);

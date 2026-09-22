@@ -1,9 +1,9 @@
 // Module ID: 10740
 // Function ID: 10741
-// Dependencies: [41, 42, 93, 95, 98, 10710]
+// Dependencies: [41, 42, 93, 95, 98, 10717]
 
 // Module 10740
-import _mod10710 from "module_10710" /* 10710 */;
+import Filter from "Filter" /* 10717 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -30,27 +30,12 @@ function _isNativeReflectConstruct() {
   }
 }
 let _classCallCheck = _classCallCheck_mod;
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-class DEMergeDateRangeRefiner {
+class MergeWeekdayComponentRefiner {
   constructor() {
     self = this;
-    tmp = closure_0(this, DEMergeDateRangeRefiner);
+    tmp = closure_0(this, MergeWeekdayComponentRefiner);
     tmp2 = c2;
-    obj = c2(DEMergeDateRangeRefiner);
+    obj = c2(MergeWeekdayComponentRefiner);
     tmp3 = closure_1;
     if (closure_3()) {
       tmp7 = globalThis;
@@ -65,14 +50,46 @@ class DEMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_classCallCheck = DEMergeDateRangeRefiner;
-_inherits(DEMergeDateRangeRefiner, fn(_mod10710).default);
+_classCallCheck = MergeWeekdayComponentRefiner;
+_inherits(MergeWeekdayComponentRefiner, Filter.MergingRefiner);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(bis(?:\s*(?:am|zum))?|-)\s*$/i;
+  key: "mergeResults",
+  value: function mergeResults(arg0, index, clone) {
+    const cloneResult = clone.clone();
+    cloneResult.index = index.index;
+    cloneResult.text = index.text + arg0 + cloneResult.text;
+    const start = cloneResult.start;
+    const start2 = index.start;
+    start.assign("weekday", start2.get("weekday"));
+    if (cloneResult.end) {
+      const end = cloneResult.end;
+      const start3 = index.start;
+      end.assign("weekday", start3.get("weekday"));
+    }
+    return cloneResult;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, start, start2) {
+      start = start.start;
+      let result = start.isOnlyWeekdayComponent();
+      if (result) {
+        start2 = start.start;
+        result = !start2.isCertain("hour");
+      }
+      if (result) {
+        const start3 = start2.start;
+        result = start3.isCertain("day");
+      }
+      if (result) {
+        result = null != str.match(/^,?\s*$/);
+      }
+      return result;
+    }
+  }
+];
 
-export default _createClass(DEMergeDateRangeRefiner, items);
+export default _createClass(MergeWeekdayComponentRefiner, items);

@@ -1,35 +1,38 @@
 // Module ID: 14596
 // Function ID: 14597
-// Dependencies: [14581, 14577, 14597]
+// Dependencies: [14597, 14608, 14610, 14613, 14616, 14617]
 
 // Module 14596
-import _mod14577 from "module_14577" /* 14577 */;
-import _mod14581 from "module_14581" /* 14581 */;
+import withoutSetter from "withoutSetter" /* 14597 */;
+import _mod14608 from "module_14608" /* 14608 */;
 
-let prop = Object.getOwnPropertySymbols;
-if (prop) {
-  prop = !_mod14581(() => {
-    const SymbolResult = Symbol("symbol detection");
-    const StringResult = _mod14577.String(SymbolResult);
-    let tmp5 = !StringResult;
-    if (StringResult) {
-      const _Object = Object;
-      const _Symbol = Symbol;
-      tmp5 = !(Object(SymbolResult) instanceof Symbol);
-    }
-    if (!tmp5) {
-      const _Symbol2 = Symbol;
-      let tmp2Result = !sham;
-      if (!sham) {
-        tmp2Result = tmp2(14597);
-      }
-      if (tmp2Result) {
-        tmp2Result = tmp2(14597) < 41;
-      }
-      tmp5 = tmp2Result;
-    }
-    return tmp5;
-  });
-}
+let closure_3 = withoutSetter("toPrimitive");
 
-export default prop;
+export default (arg0, arg1) => {
+  if (_mod14608(arg0)) {
+    if (!tmp(14610)(arg0)) {
+      let str = arg1;
+      const tmp4 = tmp(14613)(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
+        }
+        const tmp5 = tmp(14616)(tmp4, arg0, str);
+        if (tmp(14608)(tmp5)) {
+          if (!tmp(14610)(tmp5)) {
+            const tmp9 = new TypeError("Can't convert object to primitive value");
+            throw tmp9;
+          }
+        }
+        return tmp5;
+      } else {
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return tmp(14617)(arg0, str2);
+      }
+    }
+  }
+  return arg0;
+};

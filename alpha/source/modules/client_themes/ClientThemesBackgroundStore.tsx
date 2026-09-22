@@ -1,21 +1,21 @@
-// Module ID: 4575
-// Function ID: 4576
+// Module ID: 4576
+// Function ID: 4577
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1183, 1182, 1184, 1220, 2045, 2041, 1372, 1229, 1185, 4576, 2027, 4600, 4414, 2019, 4603, 4604, 504, 1228, 573, 2]
+// Dependencies: [1183, 1182, 1184, 1220, 2046, 2042, 1372, 1229, 1185, 4577, 2028, 4601, 4415, 2020, 4604, 4605, 504, 1228, 573, 2]
 
-// Module 4575 (ClientThemesBackgroundStore)
+// Module 4576 (ClientThemesBackgroundStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
+import UserSettings from "UserSettings" /* 2020 */;
+import dismissible_content from "dismissible_content" /* 2028 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -64,12 +64,12 @@ function handleUserSettingsProtoStoreUpdate() {
     result = null == backgroundGradientPresetId;
   }
   if (!result) {
-    result = tmp(4603).isPerModeThemingActive();
-    const tmpResult = tmp(4603);
+    result = tmp(4604).isPerModeThemingActive();
+    const tmpResult = tmp(4604);
   }
   if (!result) {
-    tmp(4604).setUseSystemTheme(SystemThemeState.OFF);
-    const tmpResult2 = tmp(4604);
+    tmp(4605).setUseSystemTheme(SystemThemeState.OFF);
+    const tmpResult2 = tmp(4605);
   }
   if (null != backgroundGradientPresetId) {
     let tmp10 = null == tmp9;
@@ -91,7 +91,7 @@ function handleUserSettingsProtoStoreUpdate() {
     _undefined = undefined;
   }
 }
-const isGuildTextChannelType = fn(2045).isGuildTextChannelType;
+const isGuildTextChannelType = fn(2046).isGuildTextChannelType;
 const dependencyMap = fn(1229).BACKGROUND_GRADIENT_PRESETS_MAP;
 const SystemThemeState = fn(1185).SystemThemeState;
 let closure_14 = true;
@@ -238,7 +238,7 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(DispatcherDe
               c15 = true;
             }
           }
-          tmp6Result = tmp6(4600);
+          tmp6Result = tmp6(4601);
         }
         obj2 = DismissibleContentUnsafeUtils;
         tmp6 = require;

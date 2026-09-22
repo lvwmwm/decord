@@ -1,14 +1,14 @@
-// Module ID: 13990
-// Function ID: 13991
+// Module ID: 13998
+// Function ID: 13999
 // Name: HabitualDNDStore
-// Dependencies: [5496, 1074, 1091, 2019, 573, 504, 2]
+// Dependencies: [5498, 1074, 1091, 2020, 573, 504, 2]
 
-// Module 13990 (HabitualDNDStore)
+// Module 13998 (HabitualDNDStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import UserSettings from "UserSettings" /* 2020 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
 
 require = fn;
 const StatusTypes = fn(1074).StatusTypes;

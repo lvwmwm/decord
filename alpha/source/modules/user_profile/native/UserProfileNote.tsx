@@ -1,12 +1,12 @@
-// Module ID: 13344
-// Function ID: 13345
+// Module ID: 13349
+// Function ID: 13350
 // Name: UserProfileNote
-// Dependencies: [19, 21, 8459, 13345, 5822, 4752, 1115, 4723, 13347, 13351, 2]
+// Dependencies: [19, 21, 8463, 13350, 5824, 4753, 1115, 4724, 13352, 13356, 2]
 // Exports: default
 
-// Module 13344 (UserProfileNote)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import openEditNoteModalDefault from "openEditNoteModal" /* 13347 */;
+// Module 13349 (UserProfileNote)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import openEditNoteModalDefault from "openEditNoteModal" /* 13352 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

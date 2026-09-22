@@ -1,16 +1,16 @@
-// Module ID: 15431
-// Function ID: 15432
+// Module ID: 15439
+// Function ID: 15440
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 4756, 4605, 576, 4457, 4690, 4608, 5198, 5881, 2]
+// Dependencies: [19, 17, 21, 4757, 4606, 576, 4458, 4691, 4609, 5199, 5883, 2]
 // Exports: default
 
-// Module 15431 (PremiumRewardGradient)
+// Module 15439 (PremiumRewardGradient)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4457 */;
-import design_shared from "design/shared" /* 4608 */;
-import useThemeDefault from "useTheme" /* 4690 */;
-import LinearGradientDefault from "LinearGradient" /* 5198 */;
-import _modDef5881 from "module_5881" /* 5881 */;
+import useToken from "useToken" /* 4458 */;
+import design_shared from "design/shared" /* 4609 */;
+import useThemeDefault from "useTheme" /* 4691 */;
+import LinearGradientDefault from "LinearGradient" /* 5199 */;
+import _modDef5883 from "module_5883" /* 5883 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -73,7 +73,7 @@ function PremiumRewardGlowGradient(arg0) {
   }
   const obj5 = { style: items2, maskElement: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: ["transparent", "black"], start: start2, end: end2 }), children: timestampProducer(LinearGradientDefault, { style: React4.absoluteFill, colors: memo, start, end }) };
   items2[1] = glowLight;
-  const items3 = [timestampProducer(_modDef5881, obj5), children];
+  const items3 = [timestampProducer(_modDef5883, obj5), children];
   obj4.children = items3;
   return tmp9(tmp10, obj4);
 }
@@ -81,16 +81,16 @@ get_ActivityIndicator = fn(17);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4756);
+let createStyles = fn(4757);
 let closure_8 = createStyles.createStyles({ wrapper: { position: "relative", overflow: "hidden" }, fill: { position: "absolute", left: 0, right: 0, bottom: 0, height: "100%" }, glow: { position: "absolute", left: 0, right: 0, bottom: 0, height: "50%" }, glowLight: { opacity: 0.5 } });
 const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
 const start2 = { x: 0.5, y: 0 };
 const end2 = { x: 0.5, y: 1 };
-fn(4605);
-const ColorUtils = fn(4605);
+fn(4606);
+const ColorUtils = fn(4606);
 const hexOpacityToRgbaResult = ColorUtils.hexOpacityToRgba("#000000", 0);
-createStyles = fn(4756);
+createStyles = fn(4757);
 let closure_13 = createStyles.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: nativeDefault.colors.BLACK, transparentWhite: ColorUtils.hexOpacityToRgba("#FFFFFF", 0), opaqueWhite: nativeDefault.colors.WHITE });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/PremiumRewardGradient.tsx");

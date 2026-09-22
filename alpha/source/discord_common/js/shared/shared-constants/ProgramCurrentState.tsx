@@ -1,9 +1,9 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14006
+// Function ID: 14007
 // Name: ProgramCurrentState
 // Dependencies: [2]
 
-// Module 13998 (ProgramCurrentState)
+// Module 14006 (ProgramCurrentState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProgramCurrentState.tsx");

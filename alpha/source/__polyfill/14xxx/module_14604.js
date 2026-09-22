@@ -1,20 +1,15 @@
 // Module ID: 14604
 // Function ID: 14605
-// Dependencies: [14595, 14605, 14603, 14606]
+// Dependencies: [14583]
 
 // Module 14604
-import _mod14595 from "module_14595" /* 14595 */;
-import _mod14603 from "module_14603" /* 14603 */;
-import _mod14605 from "module_14605" /* 14605 */;
-import _mod14606 from "module_14606" /* 14606 */;
+import _mod14583 from "module_14583" /* 14583 */;
 
+const tmp = _mod14583.navigator && _mod14583.navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
+}
 
-export default _mod14595 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod14605("Symbol");
-  let tmpResultResult = _mod14603(tmp3);
-  if (tmpResultResult) {
-    tmpResultResult = _mod14606(tmp3.prototype, Object(arg0));
-    const tmpResult = _mod14606;
-  }
-  return tmpResultResult;
-});
+export default str;

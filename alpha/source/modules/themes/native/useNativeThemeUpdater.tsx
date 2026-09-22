@@ -1,10 +1,10 @@
-// Module ID: 17426
-// Function ID: 17427
+// Module ID: 17438
+// Function ID: 17439
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1182, 17427, 17428, 2]
+// Dependencies: [19, 1182, 17439, 17440, 2]
 // Exports: default
 
-// Module 17426 (useNativeThemeUpdater)
+// Module 17438 (useNativeThemeUpdater)
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -15,18 +15,18 @@ const result = size.fileFinishedImporting("modules/themes/native/useNativeThemeU
 export default function useNativeThemeUpdater() {
   closure_0 = noop.useRef(ThemeStore.theme);
   const layoutEffect = noop.useLayoutEffect(() => {
-    closure_0(17427).updateVisualRefresh(true);
+    closure_0(17439).updateVisualRefresh(true);
   }, []);
   const layoutEffect1 = noop.useLayoutEffect(() => {
     function handleThemeUpdate() {
       const theme = ThemeStore.theme;
       if (theme !== handleThemeUpdate.current) {
         handleThemeUpdate.current = theme;
-        handleThemeUpdate(17428).updateTheme(theme);
-        const obj = handleThemeUpdate(17428);
+        handleThemeUpdate(17440).updateTheme(theme);
+        const obj = handleThemeUpdate(17440);
       }
     }
-    handleThemeUpdate(17428).updateTheme(ThemeStore.theme);
+    handleThemeUpdate(17440).updateTheme(ThemeStore.theme);
     ThemeStore.addChangeListener(handleThemeUpdate);
     return () => {
       ThemeStore.removeChangeListener(handleThemeUpdate);

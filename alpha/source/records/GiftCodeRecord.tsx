@@ -1,14 +1,14 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 10966
+// Function ID: 10967
 // Name: GiftCodeRecord
-// Dependencies: [1387, 7697, 10926, 4415, 1374, 4348, 1385, 2]
+// Dependencies: [1387, 7700, 10932, 4416, 1374, 4348, 1385, 2]
 
-// Module 10960 (GiftCodeRecord)
+// Module 10966 (GiftCodeRecord)
 import _modDef4348 from "module_4348" /* 4348 */;
 import Record from "Record" /* 1387 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7697 */;
-import PromotionRecord from "PromotionRecord" /* 10926 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4415 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7700 */;
+import PromotionRecord from "PromotionRecord" /* 10932 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4416 */;
 
 const require = fn;
 let closure_6 = fn(1374).PremiumSubscriptionSKUToPremiumType;

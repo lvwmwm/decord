@@ -1,9 +1,0 @@
-// Module ID: 8901
-// Function ID: 8902
-// Dependencies: [1121]
-
-// Module 8901
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "72af9903f630d67fa106808d11ca96fb", name: "speaker", type: "png" });

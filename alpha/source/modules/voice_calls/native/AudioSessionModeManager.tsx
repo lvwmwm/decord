@@ -1,20 +1,20 @@
-// Module ID: 17737
-// Function ID: 17738
+// Module ID: 17749
+// Function ID: 17750
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2040, 5638, 4778, 502, 2041, 1992, 2095, 4775, 1979, 1074, 1364, 17738, 7363, 2]
+// Dependencies: [17, 2041, 5640, 4779, 502, 2042, 1992, 2096, 4776, 1979, 1074, 1364, 17750, 7365, 2]
 
-// Module 17737 (AudioSessionModeManager)
-import VoicePermissionManager from "VoicePermissionManager" /* 17738 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5638 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
+// Module 17749 (AudioSessionModeManager)
+import VoicePermissionManager from "VoicePermissionManager" /* 17750 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4779 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import VoiceStateStore from "VoiceStateStore" /* 4775 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
+import VoiceStateStore from "VoiceStateStore" /* 4776 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 require = fn;
 function handleAVAudioSessionMode() {

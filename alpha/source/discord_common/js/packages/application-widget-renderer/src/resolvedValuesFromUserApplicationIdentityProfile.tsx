@@ -1,12 +1,12 @@
-// Module ID: 9289
-// Function ID: 9290
+// Module ID: 9294
+// Function ID: 9295
 // Name: discord_common/resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [32, 9207, 9290, 2]
+// Dependencies: [32, 9212, 9295, 2]
 // Exports: default
 
-// Module 9289 (discord_common/resolvedValuesFromUserApplicationIdentityProfile)
-import resolvedValues from "resolvedValues" /* 9207 */;
-import ProfileDataDynamicType from "ProfileDataDynamicType" /* 9290 */;
+// Module 9294 (discord_common/resolvedValuesFromUserApplicationIdentityProfile)
+import resolvedValues from "resolvedValues" /* 9212 */;
+import ProfileDataDynamicType from "ProfileDataDynamicType" /* 9295 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -88,14 +88,14 @@ function resolvedValuesFromDynamic(data) {
       let iter = nextResult;
       let tmp5 = require;
       if (nextResult.type === ProfileDataDynamicType.ProfileDataDynamicType.STRING) {
-        let obj2 = { type: tmp5(9207).ResolvedValueType.STRING, value: iter.value };
+        let obj2 = { type: tmp5(9212).ResolvedValueType.STRING, value: iter.value };
         obj[iter.name] = obj2;
-      } else if (iter.type === tmp5(9290).ProfileDataDynamicType.NUMBER) {
-        let obj3 = { type: tmp5(9207).ResolvedValueType.NUMBER, value: iter.value };
+      } else if (iter.type === tmp5(9295).ProfileDataDynamicType.NUMBER) {
+        let obj3 = { type: tmp5(9212).ResolvedValueType.NUMBER, value: iter.value };
         obj[iter.name] = obj3;
-      } else if (iter.type === tmp5(9290).ProfileDataDynamicType.MEDIA) {
+      } else if (iter.type === tmp5(9295).ProfileDataDynamicType.MEDIA) {
         if (isVisualUnfurledMedia(iter.value)) {
-          let obj4 = { type: tmp5(9207).ResolvedValueType.MEDIA, media: null };
+          let obj4 = { type: tmp5(9212).ResolvedValueType.MEDIA, media: null };
           let size = { url: iter.value.proxy_url, width: iter.value.width, height: iter.value.height };
           obj4.media = size;
           obj[iter.name] = obj4;

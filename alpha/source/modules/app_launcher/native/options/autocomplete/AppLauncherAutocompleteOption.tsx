@@ -1,23 +1,23 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12427
+// Function ID: 12428
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1074, 21, 4756, 576, 1875, 4723, 12424, 1980, 12422, 5339, 4752, 2]
+// Dependencies: [32, 19, 1074, 21, 4757, 576, 1875, 4724, 12428, 1980, 12426, 5341, 4753, 2]
 // Exports: default
 
-// Module 12423 (AppLauncherAutocompleteOption)
+// Module 12427 (AppLauncherAutocompleteOption)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import Pressables from "Pressables" /* 5339 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12422 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import Pressables from "Pressables" /* 5341 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12426 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" }, hasError: null, inputText: null };
 let obj3 = { width: "100%", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, padding: 12, borderWidth: 2, borderColor: "transparent", flexDirection: "row", alignItems: "center" };
 obj2.hasError = { borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, padding: 12 };
@@ -36,7 +36,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       tmp();
     }
     const result = KeyboardManagerUtils.dismissGlobalKeyboard();
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12424, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12428, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", {
       option,
       initChoice,
       onChoiceSelect(arg0) {

@@ -1,15 +1,15 @@
-// Module ID: 9526
-// Function ID: 9527
+// Module ID: 9532
+// Function ID: 9533
 // Name: ApplicationCommandOptionUtils
-// Dependencies: [5210, 38, 9527, 4743, 1978, 2]
+// Dependencies: [5211, 38, 9533, 4744, 1978, 2]
 // Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 9526 (ApplicationCommandOptionUtils)
+// Module 9532 (ApplicationCommandOptionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 1978 */;
-import RegexUtilsDefault from "RegexUtils" /* 4743 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5210 */;
-import numberParts from "numberParts" /* 9527 */;
+import RegexUtilsDefault from "RegexUtils" /* 4744 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5211 */;
+import numberParts from "numberParts" /* 9533 */;
 import size from "module_2" /* 2 */;
 
 function getString(arg0, arg1) {
@@ -320,7 +320,7 @@ export const normalizeNumericString = function normalizeNumericString(locale, tr
     global = locale;
     let prop = numberParts.numberParts[locale];
     if (prop == null) {
-      prop = tmp12(9527).numberParts["en-US"];
+      prop = tmp12(9533).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = prop);

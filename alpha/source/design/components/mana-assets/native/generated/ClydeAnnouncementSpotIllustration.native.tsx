@@ -1,13 +1,13 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6094
+// Function ID: 6095
 // Name: ClydeAnnouncementSpotIllustration
-// Dependencies: [21, 5804, 6093, 2]
+// Dependencies: [21, 5806, 6095, 2]
 // Exports: ClydeAnnouncementSpotIllustration
 
-// Module 6092 (ClydeAnnouncementSpotIllustration)
+// Module 6094 (ClydeAnnouncementSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6093 from "module_6093" /* 6093 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6095 from "module_6095" /* 6095 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ClydeAnnouncementSpotIllustration = function ClydeAnnouncementSpotI
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6093 };
+  const obj2 = { uri: _modDef6095 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

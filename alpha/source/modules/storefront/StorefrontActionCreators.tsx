@@ -1,19 +1,19 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9070
+// Function ID: 9071
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4416, 7477, 9066, 9067, 9068, 1074, 1091, 573, 1271, 7476, 2]
+// Dependencies: [5, 4417, 7479, 9071, 9072, 9073, 1074, 1091, 573, 1271, 7478, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9065 (StorefrontActionCreators)
+// Module 9070 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 4416 */;
-import SKUPricesStore from "SKUPricesStore" /* 7477 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9066 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9067 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9068 */;
+import BillingInfoStore from "BillingInfoStore" /* 4417 */;
+import SKUPricesStore from "SKUPricesStore" /* 7479 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9071 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9072 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9073 */;
 
 require = fn;
 function shouldFetchStorefrontPromotions(arg0) {
@@ -185,7 +185,7 @@ let closure_15 = async function _fetchStorefrontPricesForApplicationId(arg0) {
     await "HermesInternal";
     closure_1 = tmp2;
     applicationId2 = applicationId.applicationId;
-    return "PX_16";
+    return "flex";
   })();
   iter.next();
   return iter;
@@ -199,7 +199,7 @@ let closure_16 = async function _fetchStorefrontPricesForSkuIds(arg0) {
     await "HermesInternal";
     closure_1 = tmp2;
     skuIds2 = skuIds.skuIds;
-    return "PX_16";
+    return "flex";
   })();
   iter.next();
   return iter;

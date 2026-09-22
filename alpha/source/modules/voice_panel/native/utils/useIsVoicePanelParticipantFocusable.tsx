@@ -1,13 +1,13 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17556
+// Function ID: 17557
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [2040, 4772, 4778, 1992, 4777, 9710, 1370, 504, 2]
+// Dependencies: [2041, 4773, 4779, 1992, 4778, 9716, 1370, 504, 2]
 // Exports: default
 
-// Module 17544 (useIsVoicePanelParticipantFocusable)
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4772 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4778 */;
+// Module 17556 (useIsVoicePanelParticipantFocusable)
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4773 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4779 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = globalThis.__r;
@@ -47,8 +47,8 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
       if (React5(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, channelId);
       } else if (React6(participant)) {
-        result = tmp4(9710).canRenderParticipantVideo(participant, tmp);
-        const tmp4Result = tmp4(9710);
+        result = tmp4(9716).canRenderParticipantVideo(participant, tmp);
+        const tmp4Result = tmp4(9716);
       } else {
         tmp4(1370).assertNever(participant);
         const tmp4Result2 = tmp4(1370);
@@ -57,7 +57,7 @@ function isVoicePanelParticipantFocusable(channelId, guildId, id2, ChannelRTCSto
     }
   }
 }
-const CallConstants = fn(4777);
+const CallConstants = fn(4778);
 ({ isActivityParticipant: metroRequire, isStreamParticipant: closure_7, isUserParticipant: closure_8 } = CallConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx");

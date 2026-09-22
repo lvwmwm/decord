@@ -1,25 +1,25 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9430
+// Function ID: 9431
 // Name: showUploadFileSizeError
-// Dependencies: [1184, 1372, 1074, 4749, 1374, 1969, 8086, 4936, 9425, 9426, 5346, 5354, 9427, 1094, 7427, 1115, 4652, 5345, 5108, 2]
+// Dependencies: [1184, 1372, 1074, 4750, 1374, 1969, 8089, 4937, 9431, 9432, 5348, 5356, 9433, 1094, 7429, 1115, 4653, 5347, 5109, 2]
 // Exports: default
 
-// Module 9424 (showUploadFileSizeError)
+// Module 9430 (showUploadFileSizeError)
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4936 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5108 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 5354 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7427 */;
-import buildFileSizeLimitEventProperties from "buildFileSizeLimitEventProperties" /* 9425 */;
-import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9426 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9427 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4937 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5109 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 5356 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
+import buildFileSizeLimitEventProperties from "buildFileSizeLimitEventProperties" /* 9431 */;
+import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9432 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9433 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
-const FileUploadErrorTypes = fn(4749).FileUploadErrorTypes;
+const FileUploadErrorTypes = fn(4750).FileUploadErrorTypes;
 const PremiumConstants = fn(1374);
 ({ PremiumTypes: closure_8, PremiumUpsellTypes: closure_9 } = PremiumConstants);
 const constants = { NITRO_UPSELL: "Nitro Upsell", OVER_MAX_SIZE: "Over Max Size" };
@@ -34,8 +34,8 @@ export default function showUploadFileSizeError(arg0) {
   const currentUser = UserStore.getCurrentUser();
   const isPremiumExactlyResult = PremiumTypeUtils.isPremiumExactly(currentUser, TIER_2.TIER_2);
   if (null != file.items) {
-    let attachmentMimeTypes = tmp2(8086).getAttachmentMimeTypes(file.items);
-    const tmp2Result = tmp2(8086);
+    let attachmentMimeTypes = tmp2(8089).getAttachmentMimeTypes(file.items);
+    const tmp2Result = tmp2(8089);
   } else {
     attachmentMimeTypes = [];
   }
@@ -89,8 +89,8 @@ export default function showUploadFileSizeError(arg0) {
   }
   let tmp20 = isPremiumExactlyResult;
   if (!isPremiumExactlyResult) {
-    tmp20 = num > tmp2(5346).getNitroFileUploadLimitBytes({ location: "native.showUploadFileSizeError" });
-    const tmp2Result12 = tmp2(5346);
+    tmp20 = num > tmp2(5348).getNitroFileUploadLimitBytes({ location: "native.showUploadFileSizeError" });
+    const tmp2Result12 = tmp2(5348);
   }
   if (!tmp20) {
     tmp20 = tmp19;
@@ -116,13 +116,13 @@ export default function showUploadFileSizeError(arg0) {
       const formatToPlainString = intl4.formatToPlainString;
       const t = tmp2(1115).t;
       if (tmp19) {
-        const obj4 = { maxSize: tmp2(4652).formatSize(tmp2(5345).MAX_TOTAL_ATTACHMENT_SIZE / tmp2(4652).BYTE_IN_KB, { useKibibytes: true }) };
+        const obj4 = { maxSize: tmp2(4653).formatSize(tmp2(5347).MAX_TOTAL_ATTACHMENT_SIZE / tmp2(4653).BYTE_IN_KB, { useKibibytes: true }) };
         stringResult1 = formatToPlainString(t.tUOJdH, obj4);
-        const tmp2Result15 = tmp2(4652);
+        const tmp2Result15 = tmp2(4653);
       } else {
-        const obj5 = { maxSize: tmp2(4652).formatSize(maxSize / tmp2(4652).BYTE_IN_KB, { useKibibytes: true }) };
+        const obj5 = { maxSize: tmp2(4653).formatSize(maxSize / tmp2(4653).BYTE_IN_KB, { useKibibytes: true }) };
         stringResult1 = formatToPlainString(t.fxEKdS, obj5);
-        const tmp2Result16 = tmp2(4652);
+        const tmp2Result16 = tmp2(4653);
       }
       stringResult = intl3.string(tmp2(1115).t["/tGlcj"]);
       const stringResult2 = intl3.string(tmp2(1115).t["/tGlcj"]);

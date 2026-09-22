@@ -1,10 +1,10 @@
-// Module ID: 14078
-// Function ID: 14079
+// Module ID: 14085
+// Function ID: 14086
 // Name: KrispUtils
-// Dependencies: [2, 14079]
+// Dependencies: [2, 14086]
 
-// Module 14078 (KrispUtils)
-import noise_cancellation_KrispUtils from "noise_cancellation/KrispUtils" /* 14079 */;
+// Module 14085 (KrispUtils)
+import noise_cancellation_KrispUtils from "noise_cancellation/KrispUtils" /* 14086 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/noise_cancellation/KrispUtils.tsx");

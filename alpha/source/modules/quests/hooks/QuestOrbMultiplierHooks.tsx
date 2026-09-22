@@ -1,13 +1,13 @@
-// Module ID: 11555
-// Function ID: 11556
+// Module ID: 11559
+// Function ID: 11560
 // Name: QuestOrbMultiplierHooks
-// Dependencies: [1372, 504, 11556, 4414, 2]
+// Dependencies: [1372, 504, 11560, 4415, 2]
 // Exports: useQuestOrbMultiplierEligibility
 
-// Module 11555 (QuestOrbMultiplierHooks)
+// Module 11559 (QuestOrbMultiplierHooks)
 import initialize from "initialize" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11556 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11560 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -19,10 +19,10 @@ function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStanda
     if (obj2.canUseMoreQuestOrbs(isFractionalPremiumWithNoStandardSub)) {
       const questOrbMultiplierSource = QuestOrbMultiplierUtils.getQuestOrbMultiplierSource(isFractionalPremiumWithNoStandardSub);
       if (questOrbMultiplierSource === QuestOrbMultiplierUtils.QuestOrbMultiplierSource.XBOX_GAME_PASS) {
-        QuestOrbMultiplierEligibilityType2 = tmp3(11556).QuestOrbMultiplierEligibilityType;
+        QuestOrbMultiplierEligibilityType2 = tmp3(11560).QuestOrbMultiplierEligibilityType;
         let NITRO = QuestOrbMultiplierEligibilityType2.XBOX_GAME_PASS;
       } else {
-        NITRO = tmp3(11556).QuestOrbMultiplierEligibilityType.NITRO;
+        NITRO = tmp3(11560).QuestOrbMultiplierEligibilityType.NITRO;
       }
     } else {
       let result;

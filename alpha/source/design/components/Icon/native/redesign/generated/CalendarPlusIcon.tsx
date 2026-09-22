@@ -1,13 +1,13 @@
-// Module ID: 12462
-// Function ID: 12463
+// Module ID: 12466
+// Function ID: 12467
 // Name: CalendarPlusIcon
-// Dependencies: [19, 21, 576, 4456, 12463, 2]
+// Dependencies: [19, 21, 576, 4457, 12467, 2]
 // Exports: CalendarPlusIcon
 
-// Module 12462 (CalendarPlusIcon)
+// Module 12466 (CalendarPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod12463 from "module_12463" /* 12463 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod12467 from "module_12467" /* 12467 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CalendarPlusIcon = function CalendarPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12463, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12467, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

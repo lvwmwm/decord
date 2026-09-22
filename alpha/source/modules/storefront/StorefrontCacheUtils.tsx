@@ -1,10 +1,10 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 8493
+// Function ID: 8494
 // Name: StorefrontCacheUtils
 // Dependencies: [1091, 2]
 // Exports: shouldRefetchEntry
 
-// Module 8489 (StorefrontCacheUtils)
+// Module 8493 (StorefrontCacheUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 
 const result = 12 * DurationsDefault.Millis.HOUR;

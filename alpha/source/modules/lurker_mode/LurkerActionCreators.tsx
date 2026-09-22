@@ -1,14 +1,14 @@
-// Module ID: 7563
-// Function ID: 7564
+// Module ID: 7566
+// Function ID: 7567
 // Name: LurkerActionCreators
-// Dependencies: [5, 4779, 4396, 1074, 573, 1271, 1370, 2]
+// Dependencies: [5, 4780, 4397, 1074, 573, 1271, 1370, 2]
 // Exports: stopLurking
 
-// Module 7563 (LurkerActionCreators)
+// Module 7566 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4779 */;
-import LurkingStore from "LurkingStore" /* 4396 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import LurkingStore from "LurkingStore" /* 4397 */;
 
 const require = fn;
 function stopLurkingAll() {
@@ -150,7 +150,7 @@ let closure_9 = async function _stopLurking(arg0, value) {
     tmp19 = null;
   }
   closure_129_0 = tmp19;
-  return "PX_16";
+  return "flex";
 };
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);

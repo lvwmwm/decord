@@ -1,16 +1,16 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7314
+// Function ID: 7315
 // Name: FastestListChildren
-// Dependencies: [32, 19, 17, 21, 4756, 7313, 558, 7314, 7315, 2]
+// Dependencies: [32, 19, 17, 21, 4757, 7315, 558, 7316, 7317, 2]
 
-// Module 7312 (FastestListChildren)
-import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 7313 */;
+// Module 7314 (FastestListChildren)
+import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 7315 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_6 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, top: 0 } });
 let obj = { items: [], keys: new Map(), keyIndex: 0 };
 let map = new Map();

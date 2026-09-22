@@ -1,18 +1,18 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16516
+// Function ID: 16517
 // Name: guild_themes/useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 2038, 4640, 7630, 2027, 2]
+// Dependencies: [32, 19, 2039, 4641, 7633, 2028, 2]
 // Exports: default
 
-// Module 16505 (guild_themes/useGuildThemeNuxTrigger)
-import dismissible_content from "dismissible_content" /* 2027 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 4640 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7630 */;
+// Module 16516 (guild_themes/useGuildThemeNuxTrigger)
+import dismissible_content from "dismissible_content" /* 2028 */;
+import GuildThemeResolver from "GuildThemeResolver" /* 4641 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7633 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let constants = fn(2038).DismissibleContentGroupName;
+let constants = fn(2039).DismissibleContentGroupName;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");
 
@@ -24,7 +24,7 @@ export default function useGuildThemeNuxTrigger(guildId, isNuxOpen) {
   constants = undefined;
   const enabledGuildThemeForGuildId = GuildThemeResolver.useEnabledGuildThemeForGuildId(guildId, "GuildThemeNuxTrigger");
   if (null != enabledGuildThemeForGuildId) {
-    const items = [tmp(2027).DismissibleContent.GUILD_THEME_NUX];
+    const items = [tmp(2028).DismissibleContent.GUILD_THEME_NUX];
     let items1 = items;
   } else {
     items1 = [];

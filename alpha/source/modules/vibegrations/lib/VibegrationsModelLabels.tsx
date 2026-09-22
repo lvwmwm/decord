@@ -1,10 +1,10 @@
-// Module ID: 16941
-// Function ID: 16942
+// Module ID: 16953
+// Function ID: 16954
 // Name: VibegrationsModelLabels
 // Dependencies: [3678, 1115, 2]
 // Exports: modelTierMessage, tierTooltip
 
-// Module 16941 (VibegrationsModelLabels)
+// Module 16953 (VibegrationsModelLabels)
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
 import size from "module_2" /* 2 */;
@@ -44,4 +44,4 @@ export const tierTooltip = function tierTooltip(title, arg1) {
   return obj;
 };
 export const THINKING_LABELS = { low: "Low", medium: "Medium", high: "High", xhigh: "Extra high", max: "Max" };
-export const PROVIDER_LABELS = { anthropic: "Anthropic", openai: "OpenAI", "workers-ai": "Workers AI (dev)", xai: "xAI (dev)", moonshotai: "Moonshot AI (dev)" };
+export const PROVIDER_LABELS = { anthropic: "Anthropic", openai: "OpenAI", deepseek: "DeepSeek", xai: "xAI", moonshotai: "Moonshot AI" };

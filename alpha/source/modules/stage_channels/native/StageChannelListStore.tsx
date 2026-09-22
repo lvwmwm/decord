@@ -1,10 +1,10 @@
-// Module ID: 10302
-// Function ID: 10303
+// Module ID: 10308
+// Function ID: 10309
 // Name: StageChannelListStore
 // Dependencies: [32, 19, 1243, 1248, 4379, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10302 (StageChannelListStore)
+// Module 10308 (StageChannelListStore)
 import _mod4379 from "module_4379" /* 4379 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

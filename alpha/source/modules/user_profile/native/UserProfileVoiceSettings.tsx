@@ -1,18 +1,18 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13341
+// Function ID: 13342
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5224, 1992, 4395, 1074, 1085, 21, 4756, 8459, 504, 4903, 9990, 10243, 9911, 7452, 1115, 9947, 10262, 13337, 12782, 13339, 10366, 6852, 4752, 12873, 10039, 8871, 4723, 9974, 9970, 2]
+// Dependencies: [19, 17, 5225, 1992, 4396, 1074, 1085, 21, 4757, 8463, 504, 4904, 9996, 10249, 9917, 7454, 1115, 9953, 10268, 13342, 12786, 13344, 10372, 6854, 4753, 12877, 10045, 8876, 4724, 9980, 9976, 2]
 // Exports: default
 
-// Module 13336 (UserProfileVoiceSettings)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9974 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12873 */;
+// Module 13341 (UserProfileVoiceSettings)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9917 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9980 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12877 */;
 import noop from "module_19" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5224 */;
+import SoundboardStore from "SoundboardStore" /* 5225 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 
 require = fn;
 function UserVoiceSettings(user) {
@@ -172,8 +172,8 @@ function CurrentUserVoiceSettings(channel) {
   ({ user, style } = channel);
   const tmp = closure_11();
   let tmp9Result = dependencyMap;
-  const trackUserProfileAction = channel(8459).useUserProfileAnalyticsContext().trackUserProfileAction;
-  const obj = channel(8459);
+  const trackUserProfileAction = channel(8463).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const obj = channel(8463);
   const items = [MediaEngineStore];
   const stateFromStores = channel(504).useStateFromStores(items, () => selfMute.isSelfMute());
   const obj2 = channel(504);
@@ -206,9 +206,9 @@ function CurrentUserVoiceSettings(channel) {
     }
     const obj5 = { label: stringResult, icon: null, onPress: null };
     if (stateFromStores) {
-      let MicrophoneIcon = tmp2(9947).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp2(9953).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(10262).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10268).MicrophoneIcon;
     }
     const obj6 = { children: null };
     obj5.icon = MicrophoneIcon;
@@ -216,11 +216,11 @@ function CurrentUserVoiceSettings(channel) {
       trackUserProfileAction({ action: "MUTE" });
       AudioActionCreatorsDefault.toggleSelfMute();
     };
-    obj6.children = closure_9(tmp2(7452).UserProfileFormRow, obj5, "mute");
-    tmp9Result = tmp9(tmp2(7452).UserProfileCardRows, obj6);
+    obj6.children = closure_9(tmp2(7454).UserProfileFormRow, obj5, "mute");
+    tmp9Result = tmp9(tmp2(7454).UserProfileCardRows, obj6);
     obj4.children = tmp9Result;
-    closure_9(trackUserProfileAction(7452), obj4);
-    const tmp6Result = trackUserProfileAction(7452);
+    closure_9(trackUserProfileAction(7454), obj4);
+    const tmp6Result = trackUserProfileAction(7454);
   }
   return tmp8;
 }
@@ -229,7 +229,7 @@ const VideoToggleState = fn(1074).VideoToggleState;
 const Permissions = fn(1085).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_11 = createStyles.createStyles({ card: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 }, volumeSlider: { paddingVertical: 20 }, disableVideoSublabel: { flexDirection: "row", alignItems: "center", gap: 4 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileVoiceSettings.tsx");

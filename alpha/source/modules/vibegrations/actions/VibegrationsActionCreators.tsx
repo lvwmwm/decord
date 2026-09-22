@@ -1,17 +1,17 @@
-// Module ID: 9310
-// Function ID: 9311
+// Module ID: 9315
+// Function ID: 9316
 // Name: VibegrationsActionCreators
-// Dependencies: [5, 9309, 1074, 573, 9311, 9312, 1271, 5275, 13188, 7408, 9305, 2]
+// Dependencies: [5, 9314, 1074, 573, 9316, 9317, 1271, 5277, 13192, 7410, 9310, 2]
 // Exports: createProject, deleteProject, markLogsSeen, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 9310 (VibegrationsActionCreators)
+// Module 9315 (VibegrationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 5275 */;
-import VibegrationsAnalytics from "VibegrationsAnalytics" /* 9311 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9312 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 5277 */;
+import VibegrationsAnalytics from "VibegrationsAnalytics" /* 9316 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9317 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9309 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9314 */;
 
 require = fn;
 function reloadVibegrationsAppFrames(application_id) {
@@ -416,7 +416,7 @@ let closure_18 = async function _refreshPublishedProject(arg0, arg1) {
             closure_130_6 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

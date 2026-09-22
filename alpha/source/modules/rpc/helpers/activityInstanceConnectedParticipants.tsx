@@ -1,18 +1,18 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 14750
+// Function ID: 14751
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [2040, 1372, 4660, 4385, 4908, 9587, 1370, 12, 2]
+// Dependencies: [2041, 1372, 4661, 4385, 4909, 9593, 1370, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14744 (activityInstanceConnectedParticipants)
-import transformUserDefault from "transformUser" /* 9587 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2040 */;
+// Module 14750 (activityInstanceConnectedParticipants)
+import transformUserDefault from "transformUser" /* 9593 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const Constants = fn(4660);
+const Constants = fn(4661);
 let obj = { [Constants.RPC_SCOPE_CONFIG.ANY]: items };
 items = [Constants.RPC_AUTHENTICATED_SCOPE];
 const size = fn(2);

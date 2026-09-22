@@ -1,28 +1,28 @@
-// Module ID: 4769
-// Function ID: 4770
+// Module ID: 4770
+// Function ID: 4771
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 4770, 2045, 2041, 4771, 1074, 10002, 1271, 5739, 4614, 4767, 5628, 573, 8645, 1241, 1101, 4607, 1115, 7565, 4997, 2]
+// Dependencies: [32, 5, 4771, 2046, 2042, 4772, 1074, 10008, 1271, 5741, 4615, 4768, 5630, 573, 8649, 1241, 1101, 4608, 1115, 7568, 4998, 2]
 
-// Module 4769 (ChannelActionCreators)
+// Module 4770 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import shared from "shared" /* 4607 */;
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5628 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 8645 */;
+import shared from "shared" /* 4608 */;
+import RootNavigationRef from "RootNavigationRef" /* 4615 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 8649 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4770 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
+import ChangelogStore from "ChangelogStore" /* 4771 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import ReadStateStore from "ReadStateStore" /* 4772 */;
 
 const require = globalThis.__r;
 
-const transitionToChannel = tmp5(4767);
+const transitionToChannel = tmp5(4768);
 require = fn;
-let closure_6 = fn(2045).createChannelRecordFromServer;
+let closure_6 = fn(2046).createChannelRecordFromServer;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AbortCodes: c10, Endpoints: closure_11, Routes: closure_12, ME: map1, CURRENT_APP_CONTEXT: closure_14, ChannelTypes: closure_15 } = Constants);
 const size = fn(2);
@@ -266,9 +266,9 @@ export default {
           fn();
         }
         if (null != obj2.getRootNavigationRef()) {
-          tmp6(4767).transitionToChannel(channel.id, { navigationReplace: true });
+          tmp6(4768).transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
-          const tmp6Result = tmp6(4767);
+          const tmp6Result = tmp6(4768);
         } else {
           const privateChannel = SelectedChannelActionCreatorsDefault.selectPrivateChannel(channel.id);
           tmp3 = channel;
@@ -401,13 +401,13 @@ export default {
       tmp(1241).track(constants.CHANGE_LOG_DM_REMOVED, obj);
       const tmpResult = tmp(1241);
     }
-    DispatcherDefault.dispatch({ type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "padding" }, silent: flag2 });
+    DispatcherDefault.dispatch({ type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "limit" }, silent: flag2 });
     if (flag) {
       router_utils.transitionTo(constants2.FRIENDS);
     }
     const HTTP = HTTPUtils.HTTP;
     const request = { url: closure_1_11.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: null };
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "padding" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "limit" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     request.rejectWithError = HTTPUtils.rejectWithMigratedError();
     const delResult = HTTP.del(request);
@@ -518,8 +518,8 @@ export default {
         obj = channel2;
       }
       if (!tmp10) {
-        const result = name(7565).checkGuildTemplateDirty(closure_128_2);
-        name(7565);
+        const result = name(7568).checkGuildTemplateDirty(closure_128_2);
+        name(7568);
       }
       return closure_128_1;
     })();

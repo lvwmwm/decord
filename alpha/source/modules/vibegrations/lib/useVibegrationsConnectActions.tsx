@@ -1,17 +1,17 @@
-// Module ID: 16995
-// Function ID: 16996
+// Module ID: 17007
+// Function ID: 17008
 // Name: useVibegrationsConnectActions
-// Dependencies: [5, 32, 19, 13361, 13368, 8641, 1115, 3678, 2]
+// Dependencies: [5, 32, 19, 13366, 13373, 8645, 1115, 3678, 2]
 // Exports: useVibegrationsConnectActions
 
-// Module 16995 (useVibegrationsConnectActions)
-import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13368 */;
+// Module 17007 (useVibegrationsConnectActions)
+import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13373 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_6 = fn(13361).requestExternalAuthorizeUrl;
+let closure_6 = fn(13366).requestExternalAuthorizeUrl;
 const set = new Set();
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsConnectActions.tsx");
@@ -74,9 +74,9 @@ export const useVibegrationsConnectActions = function useVibegrationsConnectActi
               callback(closure_129_0.type);
               if ("url" === closure_128_0.type) {
                 const obj7 = { href: closure_128_0.url, trusted: false };
-                type(8641).handleClick(obj7);
+                type(8645).handleClick(obj7);
                 c3 = 3;
-                const obj = type(8641);
+                const obj = type(8645);
               }
               if ("setup" === obj3.externalAuthErrorCopy(closure_128_0.error)) {
                 const intl2 = type(1115).intl;
@@ -86,7 +86,7 @@ export const useVibegrationsConnectActions = function useVibegrationsConnectActi
                 stringResult = intl.string(presentError(3678)["5fwOcF"]);
               }
               closure_1(stringResult);
-              obj3 = type(13368);
+              obj3 = type(13373);
             }
           } catch (tmp33) {
             c3 = tmp;
@@ -95,7 +95,7 @@ export const useVibegrationsConnectActions = function useVibegrationsConnectActi
         }
       };
       if (null != projectId) {
-        const result = projectId(13368).beginExternalAuthorization(ref.current, type.type);
+        const result = projectId(13373).beginExternalAuthorization(ref.current, type.type);
         if (null != result) {
           tmp3.current = result;
           dependencyMap(result);
@@ -120,7 +120,7 @@ export const useVibegrationsConnectActions = function useVibegrationsConnectActi
             return applyArgumentsResult;
           })();
         }
-        let obj = projectId(13368);
+        let obj = projectId(13373);
         tmp3 = ref;
       }
     }, items)

@@ -1,13 +1,13 @@
 // Module ID: 2002
 // Function ID: 2003
 // Name: ApplicationRecord
-// Dependencies: [1387, 2003, 1386, 2004, 1349, 1086, 2005, 1397, 2007, 11, 2]
+// Dependencies: [1387, 2003, 1386, 2004, 1349, 1086, 2006, 1397, 2008, 11, 2]
 
 // Module 2002 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2007 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2008 */;
 import Record from "Record" /* 1387 */;
 import CompanyRecord from "CompanyRecord" /* 2003 */;
 import UserRecord from "UserRecord" /* 1386 */;

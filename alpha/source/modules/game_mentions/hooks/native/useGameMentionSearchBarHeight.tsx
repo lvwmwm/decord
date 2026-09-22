@@ -1,12 +1,12 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12646
+// Function ID: 12647
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [17, 10375, 2]
+// Dependencies: [17, 10381, 2]
 // Exports: default
 
-// Module 12642 (useGameMentionSearchBarHeight)
+// Module 12646 (useGameMentionSearchBarHeight)
 import _mod17 from "module_17" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10375 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10381 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = _mod17.StyleSheet;

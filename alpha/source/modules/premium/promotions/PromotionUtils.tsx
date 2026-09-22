@@ -1,20 +1,20 @@
-// Module ID: 13690
-// Function ID: 13691
+// Module ID: 13698
+// Function ID: 13699
 // Name: PromotionUtils
-// Dependencies: [5, 1220, 10926, 10925, 1374, 1074, 2004, 4607, 1271, 1364, 1241, 1385, 2027, 11, 2029, 10957, 2]
+// Dependencies: [5, 1220, 10932, 10931, 1374, 1074, 2004, 4608, 1271, 1364, 1241, 1385, 2028, 11, 2030, 10963, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13690 (PromotionUtils)
+// Module 13698 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
-import constants from "constants" /* 10957 */;
+import dismissible_content from "dismissible_content" /* 2028 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
+import constants from "constants" /* 10963 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import PromotionRecord from "PromotionRecord" /* 10926 */;
-import PromotionsStore from "PromotionsStore" /* 10925 */;
+import PromotionRecord from "PromotionRecord" /* 10932 */;
+import PromotionsStore from "PromotionsStore" /* 10931 */;
 
 require = fn;
 function claimedOutboundPromotionCodeFromServer(code) {
@@ -57,7 +57,7 @@ let closure_12 = async function _claimOutboundPromotion(arg0, value) {
           closure_131_6 = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

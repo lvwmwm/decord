@@ -1,13 +1,13 @@
-// Module ID: 10290
-// Function ID: 10291
+// Module ID: 10296
+// Function ID: 10297
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [502, 2095, 5638, 504, 2]
+// Dependencies: [502, 2096, 5640, 504, 2]
 // Exports: default
 
-// Module 10290 (useMyCurrentStageChannelRole)
+// Module 10296 (useMyCurrentStageChannelRole)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2095 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5638 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5640 */;
 
 const require = globalThis.__r;
 

@@ -1,14 +1,14 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7644
+// Function ID: 7645
 // Name: LibraryApplicationUtils
-// Dependencies: [32, 1372, 5727, 1074, 2019, 2]
+// Dependencies: [32, 1372, 5729, 1074, 2020, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 7641 (LibraryApplicationUtils)
-import UserSettings from "UserSettings" /* 2019 */;
+// Module 7644 (LibraryApplicationUtils)
+import UserSettings from "UserSettings" /* 2020 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserStore from "UserStore" /* 1372 */;
-import SKUStore from "SKUStore" /* 5727 */;
+import SKUStore from "SKUStore" /* 5729 */;
 
 require = fn;
 const Constants = fn(1074);

@@ -1,12 +1,12 @@
-// Module ID: 13184
-// Function ID: 13185
+// Module ID: 13188
+// Function ID: 13189
 // Name: vibegrationsPreviewNativeSurfaces
-// Dependencies: [1074, 13185, 2]
+// Dependencies: [1074, 13189, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 13184 (vibegrationsPreviewNativeSurfaces)
+// Module 13188 (vibegrationsPreviewNativeSurfaces)
 import Constants from "Constants" /* 1074 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 13185 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 13189 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -181,8 +181,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "call", answered: "<string:26548290>" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "call", answered: "<string:26548290>" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "category", answered: "showPip" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "category", answered: "showPip" })
 };
 let closure_5 = {
   drain() {
@@ -221,8 +221,8 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj3);
     }
     if (1 === arr.length) {
-      let result = obj3(13185).setRpcCommandInterceptor(answerFor);
-      const obj2 = obj3(13185);
+      let result = obj3(13189).setRpcCommandInterceptor(answerFor);
+      const obj2 = obj3(13189);
     }
     const obj4 = {
       iframeId,

@@ -1,15 +1,15 @@
-// Module ID: 5759
-// Function ID: 5760
+// Module ID: 5761
+// Function ID: 5762
 // Name: GuildJoinRequestStore
-// Dependencies: [1372, 4578, 4348, 4580, 4391, 4579, 1091, 504, 573, 2]
+// Dependencies: [1372, 4579, 4348, 4581, 4391, 4580, 1091, 504, 573, 2]
 
-// Module 5759 (GuildJoinRequestStore)
+// Module 5761 (GuildJoinRequestStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4579 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4580 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4580 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4581 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -20,7 +20,7 @@ function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatu
         dependencyMap[guildId] = dependencyMap[guildId] + 1;
         const result = map.set(guildId, _modDef4348());
       }
-      if (applicationStatus === tmp12(4580).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === tmp12(4581).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         dependencyMap[guildId] = Math.max(0, dependencyMap[guildId] - 1);
         const result1 = map.set(guildId, _modDef4348());
@@ -85,7 +85,7 @@ function handleGuildJoinRequestCreateOrUpdate(request) {
   }
   return false;
 }
-const joinRequestFromServer = fn(4578).joinRequestFromServer;
+const joinRequestFromServer = fn(4579).joinRequestFromServer;
 const map = new Map();
 const dependencyMap = {};
 let closure_8 = {};

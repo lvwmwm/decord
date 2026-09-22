@@ -1,9 +1,9 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9825
+// Function ID: 9826
 // Name: AppChannelExperiment
 // Dependencies: [1434, 2]
 
-// Module 9819 (AppChannelExperiment)
+// Module 9825 (AppChannelExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

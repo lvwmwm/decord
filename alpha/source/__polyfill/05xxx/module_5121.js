@@ -1,0 +1,47 @@
+// Module ID: 5121
+// Function ID: 5122
+// Dependencies: [109, 19, 17, 21, 5122, 5126, 5127]
+// Exports: default
+
+// Module 5121
+import RNSLog2 from "RNSLog" /* 5122 */;
+import _mod5126 from "module_5126" /* 5126 */;
+import _modDef5127 from "module_5127" /* 5127 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import noop from "module_19" /* 19 */;
+
+require = fn;
+let closure_3 = ["android", "ios"];
+let closure_4 = ["children", "direction", "nativeContainerStyle", "onTabSelected", "navStateRequest"];
+const StyleSheet = fn(17).StyleSheet;
+const jsx = fn(21).jsx;
+const fillParent = StyleSheet.create({ fillParent: { flex: 1, width: "100%", height: "100%" } });
+
+export default function TabsHost(arg0) {
+  const RNSLog = RNSLog2.RNSLog;
+  RNSLog.log("TabsHost render");
+  ({ android, ios } = arg0);
+  const tmp2 = _objectWithoutProperties(arg0, closure_3);
+  const nativeContainerStyle = tmp2.nativeContainerStyle;
+  ({ children, direction, onTabSelected, navStateRequest } = tmp2);
+  const ref = noop.useRef(null);
+  const tmp3 = _objectWithoutProperties(tmp2, closure_4);
+  const obj2 = { style: null, navStateRequest, onTabSelected: _mod5126.useTabsHost({ componentNodeRef: ref, onTabSelected }).onTabSelected, nativeContainerBackgroundColor: null, ref: null };
+  const items = [fillParent.fillParent, { direction }];
+  obj2.style = items;
+  let backgroundColor;
+  const tmp5 = jsx;
+  if (nativeContainerStyle != null) {
+    backgroundColor = nativeContainerStyle.backgroundColor;
+  }
+  obj2.nativeContainerBackgroundColor = backgroundColor;
+  obj2.ref = ref;
+  const merged = Object.assign(tmp3);
+  let prop;
+  if (android != null) {
+    prop = android.tabBarRespectsIMEInsets;
+  }
+  obj2.tabBarRespectsIMEInsets = prop;
+  obj2.children = children;
+  return tmp5(_modDef5127, obj2);
+};

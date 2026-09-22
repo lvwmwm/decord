@@ -1,13 +1,13 @@
-// Module ID: 6236
-// Function ID: 6237
+// Module ID: 6238
+// Function ID: 6239
 // Name: FireIllocon
-// Dependencies: [21, 5804, 6237, 2]
+// Dependencies: [21, 5806, 6239, 2]
 // Exports: FireIllocon
 
-// Module 6236 (FireIllocon)
+// Module 6238 (FireIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6237 from "module_6237" /* 6237 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6239 from "module_6239" /* 6239 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const FireIllocon = function FireIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6237 };
+  const obj2 = { uri: _modDef6239 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

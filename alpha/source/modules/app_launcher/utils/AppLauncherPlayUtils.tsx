@@ -1,10 +1,10 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 11776
+// Function ID: 11777
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 9595, 4769, 11773, 2]
+// Dependencies: [5, 9601, 4770, 11777, 2]
 // Exports: launchActivityInBotDM
 
-// Module 11772 (AppLauncherPlayUtils)
+// Module 11776 (AppLauncherPlayUtils)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -45,7 +45,7 @@ let closure_4 = async function _launchActivityInBotDM(arg0, value) {
           closure_129_6 = undefined;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {
@@ -56,10 +56,10 @@ let closure_4 = async function _launchActivityInBotDM(arg0, value) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          const obj5 = { applicationId: closure_129_0, analyticsContext: null };
+          const obj6 = { applicationId: closure_129_0, analyticsContext: null };
           const obj7 = { isStart: true, analyticsLocations: closure_129_2 };
-          obj5.analyticsContext = obj7;
-          if (obj13.tryLaunchAsFrame(obj5)) {
+          obj6.analyticsContext = obj7;
+          if (obj13.tryLaunchAsFrame(obj6)) {
             c4 = 3;
             const obj8 = { value: Promise.resolve(true), done: true };
             return obj8;
@@ -100,9 +100,9 @@ let closure_4 = async function _launchActivityInBotDM(arg0, value) {
         const obj = { value, done: true };
         return obj;
       }
-    } catch (tmp22) {
+    } catch (tmp12) {
       c4 = tmp;
-      throw tmp22;
+      throw tmp12;
     }
   }
 };

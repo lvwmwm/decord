@@ -1,10 +1,10 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7645
+// Function ID: 7646
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1074, 573, 1271, 4997, 2]
+// Dependencies: [5, 1074, 573, 1271, 4998, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7642 (EntitlementActionCreators)
+// Module 7645 (EntitlementActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -66,7 +66,7 @@ let closure_5 = async function _fetchUserEntitlements(arg0) {
             closure_129_4 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {

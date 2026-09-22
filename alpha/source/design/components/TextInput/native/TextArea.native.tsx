@@ -1,13 +1,13 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7332
+// Function ID: 7333
 // Name: TextArea
-// Dependencies: [109, 19, 21, 4475, 6849, 7331, 6850, 2]
+// Dependencies: [109, 19, 21, 4476, 6851, 7333, 6852, 2]
 
-// Module 7330 (TextArea)
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4475 */;
-import Input from "Input" /* 6849 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6850 */;
-import TextAreaField from "TextAreaField" /* 7331 */;
+// Module 7332 (TextArea)
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4476 */;
+import Input from "Input" /* 6851 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6852 */;
+import TextAreaField from "TextAreaField" /* 7333 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

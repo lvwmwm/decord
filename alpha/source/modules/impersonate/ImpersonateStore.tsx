@@ -1,16 +1,16 @@
 // Module ID: 2098
 // Function ID: 2099
 // Name: ImpersonateStore
-// Dependencies: [2099, 2063, 1074, 1084, 11, 2104, 1385, 504, 2017, 573, 2]
+// Dependencies: [2099, 2064, 1074, 1084, 11, 2104, 1385, 504, 2018, 573, 2]
 
 // Module 2098 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FunctionUtils from "FunctionUtils" /* 2017 */;
+import FunctionUtils from "FunctionUtils" /* 2018 */;
 import ImpersonateTypes from "ImpersonateTypes" /* 2104 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2063 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
 require = fn;
 const GuildSettingsSections = fn(1074).GuildSettingsSections;

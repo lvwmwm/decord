@@ -1,10 +1,10 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10457
+// Function ID: 10458
 // Name: ComponentProfiler
 // Dependencies: [19, 21, 2]
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 10451 (ComponentProfiler)
+// Module 10457 (ComponentProfiler)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

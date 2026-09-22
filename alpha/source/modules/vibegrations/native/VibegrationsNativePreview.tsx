@@ -1,28 +1,28 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 16976
+// Function ID: 16977
 // Name: VibegrationsNativePreview
-// Dependencies: [32, 19, 17, 9313, 502, 2041, 4771, 1979, 16935, 1074, 9314, 21, 4756, 576, 5824, 4752, 9562, 13183, 16965, 9571, 16966, 16967, 16974, 1115, 3678, 5186, 504, 7869, 9201, 7408, 4769, 7355, 11603, 1364, 16976, 2]
+// Dependencies: [32, 19, 17, 9318, 502, 2042, 4772, 1979, 16947, 1074, 9319, 21, 4757, 576, 5826, 4753, 9568, 13187, 16977, 9577, 16978, 16979, 16986, 1115, 3678, 5187, 504, 7872, 9206, 7410, 4770, 7357, 11607, 1364, 16988, 2]
 // Exports: default, leaveVibegrationsPreviewFrame
 
-// Module 16964 (VibegrationsNativePreview)
+// Module 16976 (VibegrationsNativePreview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4769 */;
-import components_Button_Button from "components/Button/Button" /* 5186 */;
-import Card from "Card" /* 5824 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7355 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7869 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 9201 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9562 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9571 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4770 */;
+import components_Button_Button from "components/Button/Button" /* 5187 */;
+import Card from "Card" /* 5826 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7357 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7872 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 9206 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9568 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9577 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9313 */;
+import FramesStore from "FramesStore" /* 9318 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ReadStateStore from "ReadStateStore" /* 4771 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import ReadStateStore from "ReadStateStore" /* 4772 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
 
 require = fn;
@@ -204,7 +204,7 @@ function PreviewBot(previewApplicationId) {
   let stateFromStores1;
   let stateFromStores2;
   let tmp = closure_26();
-  const application = id(7408).useApplication(previewApplicationId.previewApplicationId);
+  const application = id(7410).useApplication(previewApplicationId.previewApplicationId);
   const data = application.data;
   id = undefined;
   if (data != null) {
@@ -216,7 +216,7 @@ function PreviewBot(previewApplicationId) {
   if (id == null) {
     id = null;
   }
-  let obj = id(7408);
+  let obj = id(7410);
   const items = [ChannelStore];
   const items1 = [id];
   stateFromStores = id(504).useStateFromStores(items, () => {
@@ -243,8 +243,8 @@ function PreviewBot(previewApplicationId) {
         if (!closure_3) {
           c0 = false;
           const obj2 = { recipientIds: tmp, navigateToChannel: false };
-          const obj = stateFromStores(4769);
-          stateFromStores(4769).openPrivateChannel(obj2).catch(() => {
+          const obj = stateFromStores(4770);
+          stateFromStores(4770).openPrivateChannel(obj2).catch(() => {
             if (!c0) {
               closure_2(id);
             }
@@ -313,7 +313,7 @@ function PreviewBot(previewApplicationId) {
       const intl3 = tmp2(1115).intl;
       obj4.text = intl3.string(tmp2(1115).t["5911Lb"]);
       obj4.onPress = callback;
-      tmp19Result = tmp19(tmp2(5186).Button, obj4);
+      tmp19Result = tmp19(tmp2(5187).Button, obj4);
     }
     obj2.children = tmp19Result;
     return closure_24(StatusCard, obj2);
@@ -326,10 +326,10 @@ function PreviewBot(previewApplicationId) {
   } else {
     const obj6 = { style: tmp.dm, children: null };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: ref, screenIndex: "vibegrations-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    const items8 = [closure_24(stateFromStores(11603), obj7, stateFromStores.id), ];
+    const items8 = [closure_24(stateFromStores(11607), obj7, stateFromStores.id), ];
     let tmp29Result = null;
     if (tmp2Result6.isAndroid()) {
-      tmp29Result = tmp29(tmp2(16976).PortalKeyboardRenderer, { portal: true });
+      tmp29Result = tmp29(tmp2(16988).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp29Result;
     obj6.children = items8;
@@ -340,15 +340,15 @@ function PreviewBot(previewApplicationId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, ScrollView: metroRequire, View: closure_7 } = get_ActivityIndicator);
-const vibegrationsDesignFeedbackStore = fn(16935);
+const vibegrationsDesignFeedbackStore = fn(16947);
 ({ exitVibegrationsDesignFeedback: map1, useVibegrationsDesignFeedback: closure_14 } = vibegrationsDesignFeedbackStore);
 const Constants = fn(1074);
 ({ AnalyticsObjects: closure_15, AnalyticsObjectTypes: closure_16, AnalyticsSections: closure_17, AppStates: closure_18, ME: closure_19 } = Constants);
-const FramesConstants = fn(9314);
+const FramesConstants = fn(9319);
 ({ FrameLayoutModes: closure_20, isLaunched: closure_21, MAIN_SURFACE: closure_22, makeFrameId: closure_23 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_24, jsxs: closure_25 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { frame: { flex: 1 }, centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 }, card: { alignSelf: "stretch" }, cardBody: null, cardCopy: null, cardText: null, widget: null, controlOverlay: null, controlText: null, dm: null };
 let obj3 = { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24 };
 obj2.cardBody = { padding: nativeDefault.space.PX_16, alignItems: "center", gap: nativeDefault.space.PX_12 };

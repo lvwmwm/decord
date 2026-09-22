@@ -1,13 +1,13 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10354
+// Function ID: 10355
 // Name: setUserStatus
-// Dependencies: [5, 7360, 5496, 1074, 4600, 1115, 10349, 2024, 1217, 4608, 1241, 2]
+// Dependencies: [5, 7362, 5498, 1074, 4601, 1115, 10355, 2025, 1217, 4609, 1241, 2]
 // Exports: default
 
-// Module 10348 (setUserStatus)
+// Module 10354 (setUserStatus)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7360 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5496 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7362 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5498 */;
 
 const require = fn;
 let closure_7 = async function _setUserStatus() {
@@ -36,13 +36,13 @@ let closure_7 = async function _setUserStatus() {
     statusCreatedAtMs = UInt64Value.create({ value: "" + Date.now() });
   }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION);
   closure_129_6 = (function getStatusUpdateAnnouncement(DND, arg1) {
-    const humanizeStatusResult = value(4600).humanizeStatus(DND);
+    const humanizeStatusResult = value(4601).humanizeStatus(DND);
     if ("0" === arg1) {
       const intl3 = tmp(1115).intl;
       const obj2 = { statusLabel: humanizeStatusResult };
       return intl3.formatToPlainString(tmp(1115).t.dO2aLi, obj2);
     } else {
-      const statusExpiryParts = tmp(10349).getStatusExpiryParts(arg1);
+      const statusExpiryParts = tmp(10355).getStatusExpiryParts(arg1);
       const timeString = statusExpiryParts.timeString;
       if ("today" === statusExpiryParts.kind) {
         const intl2 = tmp(1115).intl;
@@ -55,7 +55,7 @@ let closure_7 = async function _setUserStatus() {
       }
       return formatToPlainStringResult;
     }
-    const obj = value(4600);
+    const obj = value(4601);
   })(closure_129_0, closure_129_5);
   const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
   AccessibilityAnnouncer.announce(closure_129_6);
@@ -87,7 +87,7 @@ let closure_7 = async function _setUserStatus() {
     disableTracking = false;
   }
   closure_129_4 = disableTracking;
-  return "PX_16";
+  return "flex";
 };
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

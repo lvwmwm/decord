@@ -1,10 +1,10 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9570
+// Function ID: 9571
 // Name: getPostMessageJavaScript
 // Dependencies: [2]
 // Exports: default
 
-// Module 9564 (getPostMessageJavaScript)
+// Module 9570 (getPostMessageJavaScript)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/native/getPostMessageJavaScript.tsx");

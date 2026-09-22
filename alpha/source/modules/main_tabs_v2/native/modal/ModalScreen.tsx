@@ -1,13 +1,13 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17352
+// Function ID: 17353
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1074, 21, 4756, 576, 4959, 9048, 1249, 7717, 1612, 17341, 1364, 16976, 2]
+// Dependencies: [109, 19, 17, 1074, 21, 4757, 576, 4960, 9053, 1249, 7720, 1612, 17353, 1364, 16988, 2]
 // Exports: default
 
-// Module 17340 (modal/ModalScreen)
+// Module 17352 (modal/ModalScreen)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9048 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9053 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const NOOP = fn(1074).NOOP;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj2 = { containerWithPadding: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -34,7 +34,7 @@ export default function Modal(route) {
   ({ impressionName, impressionProperties } = props);
   const tmp = closure_11();
   const callback = noop.useCallback(() => {
-    closure_1(4959).pop();
+    closure_1(4960).pop();
   }, []);
   const obj = { type: null, name: null, properties: null };
   const tmp2 = _objectWithoutProperties(props, closure_3);
@@ -64,7 +64,7 @@ export default function Modal(route) {
     }
     return currentResult;
   }, []);
-  const layoutEffect = obj2.useLayoutEffect(() => modal(7717).trackAppUIViewed("ModalScreen"), []);
+  const layoutEffect = obj2.useLayoutEffect(() => modal(7720).trackAppUIViewed("ModalScreen"), []);
   ({ left, right } = useSafeAreaInsetsDefault());
   const tmp13 = useSafeAreaInsetsDefault();
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -78,7 +78,7 @@ export default function Modal(route) {
   const obj4 = { style: items, onAccessibilityEscape: null, children: null };
   items[1] = tmp16;
   if (modal.closable) {
-    let pop = tmp4(4959).pop;
+    let pop = tmp4(4960).pop;
   } else {
     pop = NOOP;
   }
@@ -91,10 +91,10 @@ export default function Modal(route) {
   const items2 = [<modal.modal />, ];
   const tmp14 = closure_10;
   const tmp15 = closure_6;
-  tmp7Result = modal(17341);
+  tmp7Result = modal(17353);
   let isIOSResult = modal(1364).isIOS();
   if (isIOSResult) {
-    isIOSResult = closure_9(tmp7(16976).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = closure_9(tmp7(16988).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj4.children = items2;

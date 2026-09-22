@@ -1,13 +1,13 @@
-// Module ID: 6390
-// Function ID: 6391
+// Module ID: 6392
+// Function ID: 6393
 // Name: GiftTrollIllocon
-// Dependencies: [21, 5804, 6391, 2]
+// Dependencies: [21, 5806, 6393, 2]
 // Exports: GiftTrollIllocon
 
-// Module 6390 (GiftTrollIllocon)
+// Module 6392 (GiftTrollIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6391 from "module_6391" /* 6391 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6393 from "module_6393" /* 6393 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const GiftTrollIllocon = function GiftTrollIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6391 };
+  const obj2 = { uri: _modDef6393 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

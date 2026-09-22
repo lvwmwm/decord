@@ -1,18 +1,18 @@
-// Module ID: 10113
-// Function ID: 10114
+// Module ID: 10119
+// Function ID: 10120
 // Name: icons/Share
-// Dependencies: [1364, 10114, 10115, 2]
+// Dependencies: [1364, 10120, 10121, 2]
 
-// Module 10113 (icons/Share)
-import _modDef10114 from "module_10114" /* 10114 */;
-import _modDef10115 from "module_10115" /* 10115 */;
+// Module 10119 (icons/Share)
+import _modDef10120 from "module_10120" /* 10120 */;
+import _modDef10121 from "module_10121" /* 10121 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 if (PlatformUtils.isIOS()) {
-  let importDefaultResult = _modDef10114;
+  let importDefaultResult = _modDef10120;
 } else {
-  importDefaultResult = _modDef10115;
+  importDefaultResult = _modDef10121;
 }
 const result = size.fileFinishedImporting("modules/icons/native/Share.tsx");
 

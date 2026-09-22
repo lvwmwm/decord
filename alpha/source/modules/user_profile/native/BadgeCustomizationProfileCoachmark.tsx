@@ -1,17 +1,17 @@
-// Module ID: 17270
-// Function ID: 17271
+// Module ID: 17282
+// Function ID: 17283
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1372, 2038, 504, 4414, 1115, 4466, 11394, 2]
+// Dependencies: [19, 1372, 2039, 504, 4415, 1115, 4467, 11398, 2]
 // Exports: default
 
-// Module 17270 (BadgeCustomizationProfileCoachmark)
+// Module 17282 (BadgeCustomizationProfileCoachmark)
 import util from "util" /* 1115 */;
-import native from "native" /* 4466 */;
+import native from "native" /* 4467 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/BadgeCustomizationProfileCoachmark.tsx");
 

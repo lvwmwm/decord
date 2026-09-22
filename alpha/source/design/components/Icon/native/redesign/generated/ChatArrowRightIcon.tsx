@@ -1,13 +1,13 @@
-// Module ID: 11989
-// Function ID: 11990
+// Module ID: 11993
+// Function ID: 11994
 // Name: ChatArrowRightIcon
-// Dependencies: [19, 21, 576, 4456, 11990, 2]
+// Dependencies: [19, 21, 576, 4457, 11994, 2]
 // Exports: ChatArrowRightIcon
 
-// Module 11989 (ChatArrowRightIcon)
+// Module 11993 (ChatArrowRightIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod11990 from "module_11990" /* 11990 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod11994 from "module_11994" /* 11994 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChatArrowRightIcon = function ChatArrowRightIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11990, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11994, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

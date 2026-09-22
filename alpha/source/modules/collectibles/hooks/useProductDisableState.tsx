@@ -1,13 +1,13 @@
-// Module ID: 9148
-// Function ID: 9149
+// Module ID: 9153
+// Function ID: 9154
 // Name: useProductDisableState
-// Dependencies: [4420, 504, 1077, 1115, 2]
+// Dependencies: [4421, 504, 1077, 1115, 2]
 // Exports: useProductDisableState
 
-// Module 9148 (useProductDisableState)
+// Module 9153 (useProductDisableState)
 import initialize from "initialize" /* 504 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1077 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
+import SubscriptionStore from "SubscriptionStore" /* 4421 */;
 
 require = fn;
 const size = fn(2);

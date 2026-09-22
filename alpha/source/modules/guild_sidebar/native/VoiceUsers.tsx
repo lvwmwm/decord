@@ -1,17 +1,17 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16471
+// Function ID: 16472
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2105, 21, 4756, 576, 10377, 8117, 504, 16461, 10375, 1115, 12784, 4752, 9998, 16465, 7553, 16468, 2]
+// Dependencies: [19, 17, 2105, 21, 4757, 576, 10383, 8120, 504, 16472, 10381, 1115, 12788, 4753, 10004, 16476, 7555, 16479, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 16460 (VoiceUsers)
+// Module 16471 (VoiceUsers)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8117 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10375 */;
-import ChannelListLayout from "ChannelListLayout" /* 10377 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12784 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8120 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10381 */;
+import ChannelListLayout from "ChannelListLayout" /* 10383 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12788 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
@@ -37,7 +37,7 @@ const jsxProd = fn(21);
 let closure_8 = {};
 let closure_9 = [];
 let c10 = "text-sm/medium";
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_11 = createStyles.createStyles((arg0) => {
   const colors = nativeDefault.colors;
   if (arg0) {
@@ -64,7 +64,7 @@ let closure_12 = noop.memo((voiceState) => {
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
   const tmp = channel;
-  const tmp3 = closure_11(channel(8117)());
+  const tmp3 = closure_11(channel(8120)());
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
   const stateFromStoresObject = user(504).useStateFromStoresObject(items, () => ({ storeMember: GuildMemberStore.getMember(channel.guild_id, user.id), isGuest: GuildMemberStore.isGuestOrLurker(channel.guild_id, user.id) }), items1);
@@ -89,7 +89,7 @@ let closure_12 = noop.memo((voiceState) => {
   obj5.sessionId = voiceState2.sessionId;
   obj5.channel = channel;
   obj5.isGuest = isGuest;
-  obj2.children = closure_6(tmp(16461), obj5, user.id);
+  obj2.children = closure_6(tmp(16472), obj5, user.id);
   return closure_6(tmp6, obj2);
 });
 const size = fn(2);

@@ -1,15 +1,15 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12093
+// Function ID: 12094
 // Name: GuildMemberUtils
-// Dependencies: [2105, 2063, 4395, 1372, 4382, 1074, 504, 11, 1385, 2]
+// Dependencies: [2105, 2064, 4396, 1372, 4382, 1074, 504, 11, 1385, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
 
-// Module 12089 (GuildMemberUtils)
+// Module 12093 (GuildMemberUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;

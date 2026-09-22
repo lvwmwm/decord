@@ -1,17 +1,17 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16388
+// Function ID: 16389
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [4976, 4405, 2048, 1074, 504, 11, 4438, 4348, 11627, 2]
+// Dependencies: [4977, 4406, 2049, 1074, 504, 11, 4439, 4348, 11631, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 16377 (usePrivateChannelWaveEligible)
-import MessageStore from "MessageStore" /* 4976 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+// Module 16388 (usePrivateChannelWaveEligible)
+import MessageStore from "MessageStore" /* 4977 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelFlags = fn(2048).ChannelFlags;
+const ChannelFlags = fn(2049).ChannelFlags;
 const MessageTypes = fn(1074).MessageTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/channel/usePrivateChannelWaveEligible.tsx");

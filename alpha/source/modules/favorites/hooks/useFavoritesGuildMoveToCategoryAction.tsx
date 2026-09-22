@@ -1,11 +1,11 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 11270
+// Function ID: 11271
 // Name: useFavoritesGuildMoveToCategoryAction
-// Dependencies: [19, 10482, 11265, 10481, 1115, 2]
+// Dependencies: [19, 10488, 11271, 10487, 1115, 2]
 // Exports: default
 
-// Module 11264 (useFavoritesGuildMoveToCategoryAction)
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10481 */;
+// Module 11270 (useFavoritesGuildMoveToCategoryAction)
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10487 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -13,10 +13,10 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildMoveToCategoryAction.tsx");
 
 export default function useFavoritesGuildMoveToCategoryAction(id) {
-  const isFavoritesGuildSelected = favorite(10482).useIsFavoritesGuildSelected();
-  let obj = favorite(10482);
-  favorite = favorite(10482).useFavorite(id.id);
-  const obj2 = favorite(10482);
+  const isFavoritesGuildSelected = favorite(10488).useIsFavoritesGuildSelected();
+  let obj = favorite(10488);
+  favorite = favorite(10488).useFavorite(id.id);
+  const obj2 = favorite(10488);
   id = undefined;
   if (favorite != null) {
     id = favorite.id;

@@ -1,9 +1,9 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11941
+// Function ID: 11942
 // Name: ForwardAgeRestrictedDestinationsExperiment
 // Dependencies: [1435, 2]
 
-// Module 11937 (ForwardAgeRestrictedDestinationsExperiment)
+// Module 11941 (ForwardAgeRestrictedDestinationsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { kind: "user", name: "2026-08-forward-age-restricted-destinations", defaultConfig: { disableAgeRestrictedDestinations: false }, variations: null };

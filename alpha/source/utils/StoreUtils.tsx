@@ -1,19 +1,19 @@
-// Module ID: 4997
-// Function ID: 4998
+// Module ID: 4998
+// Function ID: 4999
 // Name: StoreUtils
-// Dependencies: [5, 502, 4416, 4417, 4420, 1074, 4998, 4996, 5077, 1431, 5079, 1271, 1364, 1115, 2]
+// Dependencies: [5, 502, 4417, 4418, 4421, 1074, 4999, 4997, 5078, 1431, 5080, 1271, 1364, 1115, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4997 (StoreUtils)
+// Module 4998 (StoreUtils)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4416 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4417 */;
-import SubscriptionStore from "SubscriptionStore" /* 4420 */;
-import allSettled_mod from "allSettled" /* 4998 */;
+import BillingInfoStore from "BillingInfoStore" /* 4417 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4418 */;
+import SubscriptionStore from "SubscriptionStore" /* 4421 */;
+import allSettled_mod from "allSettled" /* 4999 */;
 
 require = fn;
 let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
@@ -58,7 +58,7 @@ let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
           closure_133_7 = undefined;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -246,14 +246,14 @@ const Constants = fn(1074);
 ({ Endpoints: closure_7, OperatingSystems: closure_8 } = Constants);
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
-const isMobile = fn(4996).isMobile;
+const isMobile = fn(4997).isMobile;
 let tmp4 = !isMobile;
 if (!isMobile) {
-  tmp4 = !fn(4996).isTablet;
+  tmp4 = !fn(4997).isTablet;
 }
 if (tmp4) {
-  tmp4 = -1 !== fn(5077).getChromeVersion();
-  let obj2 = fn(5077);
+  tmp4 = -1 !== fn(5078).getChromeVersion();
+  let obj2 = fn(5078);
 }
 let closure_9 = tmp4;
 const size = fn(2);

@@ -1,10 +1,10 @@
-// Module ID: 14248
-// Function ID: 14249
+// Module ID: 14255
+// Function ID: 14256
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1483, 7408, 4769, 13233, 11773, 7427, 7765, 4622, 1610, 2]
+// Dependencies: [5, 1483, 7410, 4770, 13237, 11777, 7429, 7768, 4623, 1610, 2]
 // Exports: default
 
-// Module 14248 (openActivityDMLauncher)
+// Module 14255 (openActivityDMLauncher)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -51,7 +51,7 @@ let closure_5 = async function _openActivityDMLauncher(arg0, value) {
           let customId;
           c7 = 1;
           c8 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp5) {
         if (arg0 === 1) {

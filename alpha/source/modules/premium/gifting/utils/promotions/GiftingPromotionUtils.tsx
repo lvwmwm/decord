@@ -1,14 +1,16 @@
-// Module ID: 10993
-// Function ID: 10994
+// Module ID: 10999
+// Function ID: 11000
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 10925, 1374, 504, 10994, 10998, 10999, 4576, 2027, 2]
-// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
+// Dependencies: [32, 19, 10931, 1374, 504, 11000, 1115, 2546, 11004, 11005, 4577, 2028, 2]
+// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getGiftingPromotionRewardEarnedSubtitle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 10993 (GiftingPromotionUtils)
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10998 */;
+// Module 10999 (GiftingPromotionUtils)
+import util from "util" /* 1115 */;
+import _modDef2546 from "module_2546" /* 2546 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 11004 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10925 */;
+import PromotionsStore from "PromotionsStore" /* 10931 */;
 
 const require = globalThis.__r;
 
@@ -18,18 +20,18 @@ const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
 
 export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchClaimableGiftingPromotionRewardSkuIds() {
-  const tmp = purchases(hasPreviouslyFetched.useState(), 2);
+  const tmp = hasPreviouslyFetched(fetchPurchasesError.useState(), 2);
   _require = tmp[1];
-  const items = [fetchPurchasesError];
-  stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => fetchPurchasesError.getGiftPromotionRewardSkuIds());
+  const items = [ref];
+  const stateFromStoresArray = require("initialize").useStateFromStoresArray(items, () => ref.getGiftPromotionRewardSkuIds());
   const obj = require("initialize");
   const fetchPurchases = require("useFetchCollectiblesCategoriesAndPurchases").useFetchPurchases();
   purchases = fetchPurchases.purchases;
   hasPreviouslyFetched = fetchPurchases.hasPreviouslyFetched;
   fetchPurchasesError = fetchPurchases.fetchPurchasesError;
-  hasPreviouslyFetched.useRef(false);
+  const obj2 = require("useFetchCollectiblesCategoriesAndPurchases");
   const items1 = [stateFromStoresArray, purchases, hasPreviouslyFetched, fetchPurchasesError];
-  const effect = hasPreviouslyFetched.useEffect(() => {
+  const effect = fetchPurchasesError.useEffect(() => {
     if (hasPreviouslyFetched) {
       if (!ref.current) {
         if (stateFromStoresArray.length > 0) {
@@ -46,6 +48,24 @@ export const useFetchClaimableGiftingPromotionRewardSkuIds = function useFetchCl
     }
   }, items1);
   return tmp[0];
+};
+export const getGiftingPromotionRewardEarnedSubtitle = function getGiftingPromotionRewardEarnedSubtitle(arg0, arr, arg2) {
+  closure_0 = arg2;
+  if (arr != null) {
+    const found = arr.filter((item) => !closure_0.includes(item));
+  }
+  if (arg0.length > 0) {
+    if (null != found) {
+      if (0 === found.length) {
+        const intl2 = util.intl;
+        const obj = { count: arg0.length };
+        let formatToPlainStringResult = intl2.formatToPlainString(_modDef2546.cMHedL, obj);
+      }
+      return formatToPlainStringResult;
+    }
+  }
+  const intl = util.intl;
+  formatToPlainStringResult = intl.string(_modDef2546["/8znyU"]);
 };
 export const getRewardAssetIdMap = function getRewardAssetIdMap(arr) {
   const map = new Map();
@@ -180,7 +200,7 @@ export const combinePromotionStyles = function combinePromotionStyles(background
 export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftPromotionReminderNotice() {
   const GiftPromotionReminderExperiment = GiftPromotionReminderExperiment2.GiftPromotionReminderExperiment;
   if (GiftPromotionReminderExperiment.getConfig({ location: "shouldShowGiftPromotionReminderNotice" }).enabled) {
-    if (null == PromotionsStore.getMarketingComponentByType(tmp(10999).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
+    if (null == PromotionsStore.getMarketingComponentByType(tmp(11005).MarketingComponentType.GIFT_REMINDER_NAGBAR)) {
       return false;
     } else {
       const giftPromotion = obj.getGiftPromotion();
@@ -190,13 +210,13 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       }
       let tmp5 = null != id;
       if (tmp5) {
-        let isDismissed = tmp(4576).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2027).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmp(4577).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2028).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
-          isDismissed = !tmp(4576).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2027).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
-          const tmpResult2 = tmp(4576);
+          isDismissed = !tmp(4577).UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2028).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          const tmpResult2 = tmp(4577);
         }
         tmp5 = isDismissed;
-        const tmpResult = tmp(4576);
+        const tmpResult = tmp(4577);
       }
       return tmp5;
     }

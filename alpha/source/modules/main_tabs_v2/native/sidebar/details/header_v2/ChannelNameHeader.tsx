@@ -1,23 +1,23 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17217
+// Function ID: 17218
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 2041, 2063, 4395, 4796, 1372, 1074, 21, 4756, 576, 504, 1177, 4909, 1484, 4767, 5339, 4752, 1115, 4901, 3614, 11174, 5239, 11160, 7407, 8448, 2]
+// Dependencies: [19, 17, 2042, 2064, 4396, 4797, 1372, 1074, 21, 4757, 576, 504, 1177, 4910, 1484, 4768, 5341, 4753, 1115, 4902, 3614, 11180, 5241, 11166, 7409, 8452, 2]
 
-// Module 17205 (ChannelNameHeader)
+// Module 17217 (ChannelNameHeader)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import _modDef3614 from "module_3614" /* 3614 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import transitionToChannel from "transitionToChannel" /* 4767 */;
-import ChannelUtils from "ChannelUtils" /* 4901 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5239 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8448 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11174 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import transitionToChannel from "transitionToChannel" /* 4768 */;
+import ChannelUtils from "ChannelUtils" /* 4902 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5241 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8452 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11180 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
-import PresenceStore from "PresenceStore" /* 4796 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
+import PresenceStore from "PresenceStore" /* 4797 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -108,7 +108,7 @@ function ChannelSubtitle(channel) {
       tmp8 = null;
       if ("" !== stateFromStores) {
         const obj2 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-        tmp8 = closure_12(tmp(4752).Text, obj2);
+        tmp8 = closure_12(tmp(4753).Text, obj2);
       }
     }
     return tmp8;
@@ -116,8 +116,8 @@ function ChannelSubtitle(channel) {
     const intl = tmp(1115).intl;
     let stringResult = intl.string(_modDef3614["D+2/QP"]);
   } else {
-    stringResult = tmp(4901).channelTypeString(channel);
-    const tmpResult = tmp(4901);
+    stringResult = tmp(4902).channelTypeString(channel);
+    const tmpResult = tmp(4902);
   }
 }
 function ChannelNameHeaderContent(channel) {
@@ -219,7 +219,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7407)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7409)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = noop.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -231,7 +231,7 @@ function DMChannelNameHeader(channel) {
   let obj = { style: null, onPress: callback, children: closure_12(ChannelNameHeaderContent, { channel }) };
   const items1 = [closure_15().container, channel.containerStyle];
   obj.style = items1;
-  return closure_12(channel(5339).PressableOpacity, obj);
+  return closure_12(channel(5341).PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);
@@ -246,7 +246,7 @@ const Constants = fn(1074);
 ({ Permissions: c10, StatusTypes: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { container: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" }, channelIcon: { height: 40, width: 40, justifyContent: "center", alignItems: "center" }, channelTypeBox: null, channelData: null, statusStyle: null };
 let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" };
 obj.channelTypeBox = { borderRadius: nativeDefault.modules.mobile.CHANNEL_NAME_CHANNEL_ICON_RADIUS, borderWidth: nativeDefault.modules.mobile.CHANNEL_NAME_CHANNEL_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };

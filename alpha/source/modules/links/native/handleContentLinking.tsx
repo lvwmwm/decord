@@ -1,10 +1,10 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11840
+// Function ID: 11841
 // Name: handleContentLinking
-// Dependencies: [5, 5775, 1074, 4959, 7489, 1101, 11607, 2]
+// Dependencies: [5, 5777, 1074, 4960, 7491, 1101, 11611, 2]
 // Exports: default
 
-// Module 11836 (handleContentLinking)
+// Module 11840 (handleContentLinking)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -49,7 +49,7 @@ let closure_7 = async function _handleContentLinking(arg0, value) {
           let skipMessageFetch;
           c3 = 1;
           c4 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -146,7 +146,7 @@ let closure_7 = async function _handleContentLinking(arg0, value) {
     }
   }
 };
-fn(5775).addPostConnectionCallback;
+fn(5777).addPostConnectionCallback;
 const Routes = fn(1074).Routes;
 let c6 = null;
 const size = fn(2);

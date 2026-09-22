@@ -1,24 +1,24 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 4979
+// Function ID: 4980
 // Name: MessageRecordUtils
-// Dependencies: [4979, 4406, 1386, 502, 4405, 1372, 1074, 4980, 4739, 4988, 11, 4993, 4994, 5100, 4348, 5101, 5103, 2]
+// Dependencies: [4980, 4407, 1386, 502, 4406, 1372, 1074, 4981, 4740, 4989, 11, 4994, 4995, 5101, 4348, 5102, 5104, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 4978 (MessageRecordUtils)
+// Module 4979 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import findCodedLinksDefault from "findCodedLinks" /* 4739 */;
-import useMessageAuthor from "useMessageAuthor" /* 4988 */;
-import isMessageMentioned from "isMessageMentioned" /* 4993 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 4994 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5100 */;
-import EmbedUtils from "EmbedUtils" /* 5101 */;
-import StickersUtils from "StickersUtils" /* 5103 */;
-import InteractionRecord from "InteractionRecord" /* 4979 */;
-import MessageRecord_mod from "MessageRecord" /* 4406 */;
+import findCodedLinksDefault from "findCodedLinks" /* 4740 */;
+import useMessageAuthor from "useMessageAuthor" /* 4989 */;
+import isMessageMentioned from "isMessageMentioned" /* 4994 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 4995 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5101 */;
+import EmbedUtils from "EmbedUtils" /* 5102 */;
+import StickersUtils from "StickersUtils" /* 5104 */;
+import InteractionRecord from "InteractionRecord" /* 4980 */;
+import MessageRecord_mod from "MessageRecord" /* 4407 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -298,7 +298,7 @@ function createMessageRecord(message, arg1) {
     return obj;
   });
 }
-let MessageRecord = fn(4406);
+let MessageRecord = fn(4407);
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
 let MessageRecord = MessageRecord_mod;
 const Constants = fn(1074);

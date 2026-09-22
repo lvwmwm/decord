@@ -1,15 +1,15 @@
-// Module ID: 15802
-// Function ID: 15803
+// Module ID: 15814
+// Function ID: 15815
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1372, 21, 4756, 9438, 5904, 1115, 15803, 13720, 504, 1969, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4757, 9444, 5906, 1115, 15815, 13728, 504, 1969, 2]
 // Exports: default
 
-// Module 15802 (AppIconRows)
+// Module 15814 (AppIconRows)
 import initialize from "initialize" /* 504 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import AppIconTypes from "AppIconTypes" /* 9438 */;
-import AppIconUtils from "AppIconUtils" /* 13720 */;
-import AppIconRowDefault from "AppIconRow" /* 15803 */;
+import AppIconTypes from "AppIconTypes" /* 9444 */;
+import AppIconUtils from "AppIconUtils" /* 13728 */;
+import AppIconRowDefault from "AppIconRow" /* 15815 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -45,7 +45,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return createElement(AppIconRowDefault, {});
     });
-    obj.children = closure_8(merged(5904).TableRowGroup, obj2);
+    obj.children = closure_8(merged(5906).TableRowGroup, obj2);
     return closure_8(View, obj);
   }
 }
@@ -53,7 +53,7 @@ const View = fn(17).View;
 const createElement = fn(19).createElement;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_11 = createStyles.createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIconRows.tsx");

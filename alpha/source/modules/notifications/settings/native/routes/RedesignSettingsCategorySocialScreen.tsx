@@ -1,12 +1,12 @@
-// Module ID: 16250
-// Function ID: 16251
+// Module ID: 16261
+// Function ID: 16262
 // Name: RedesignSettingsCategorySocialScreen
-// Dependencies: [19, 21, 11725, 16244, 14964, 2]
+// Dependencies: [19, 21, 11729, 16255, 14971, 2]
 
-// Module 16250 (RedesignSettingsCategorySocialScreen)
-import SettingBuilders from "SettingBuilders" /* 11725 */;
-import SettingLayoutDefault from "SettingLayout" /* 14964 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16244 */;
+// Module 16261 (RedesignSettingsCategorySocialScreen)
+import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingLayoutDefault from "SettingLayout" /* 14971 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16255 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,9 +1,9 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7530
+// Function ID: 7531
 // Name: GuildChannelSubscriptions
 // Dependencies: [1438, 12, 2]
 
-// Module 7528 (GuildChannelSubscriptions)
+// Module 7530 (GuildChannelSubscriptions)
 import _modDef12 from "module_12" /* 12 */;
 import privDefault from "priv" /* 1438 */;
 import size from "module_2" /* 2 */;

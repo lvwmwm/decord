@@ -1,26 +1,26 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17419
+// Function ID: 17420
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 4983, 5498, 2038, 21, 4756, 576, 4466, 1612, 504, 5500, 7410, 7407, 7427, 17408, 4723, 17410, 1980, 7394, 7395, 5184, 17397, 4752, 1115, 3098, 9116, 5186, 13249, 4464, 1397, 5188, 7417, 7413, 2]
+// Dependencies: [19, 17, 4984, 5500, 2039, 21, 4757, 576, 4467, 1612, 504, 5502, 7412, 7409, 7429, 17420, 4724, 17422, 1980, 7396, 7397, 5185, 17409, 4753, 1115, 3098, 9121, 5187, 13254, 4465, 1397, 5189, 7419, 7415, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 17407 (ConnectionDeprecationBottomSheet)
+// Module 17419 (ConnectionDeprecationBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import themes from "themes" /* 4464 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import IconDefault from "Icon" /* 5188 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 7410 */;
-import GameIcon from "GameIcon" /* 7417 */;
-import AccountLinkManager from "AccountLinkManager" /* 17408 */;
+import themes from "themes" /* 4465 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import IconDefault from "Icon" /* 5189 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 7412 */;
+import GameIcon from "GameIcon" /* 7419 */;
+import AccountLinkManager from "AccountLinkManager" /* 17420 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4983 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5498 */;
+import ApplicationStore from "ApplicationStore" /* 4984 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
 
 const require = globalThis.__r;
 const GameIconDefault = GameIcon;
 
-const Icon = tmp2(5188);
+const Icon = tmp2(5189);
 require = fn;
 function ConnectionIcon(arg0) {
   ({ platform, theme } = arg0);
@@ -48,10 +48,10 @@ function ApplicationIcon(application) {
   return React6(View, obj);
 }
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { iconContainer: { width: 56, height: 56, alignItems: "center", justifyContent: "center" }, content: { paddingHorizontal: nativeDefault.space.PX_16 }, text: { textAlign: "center" }, connectionIcon: { height: 48, width: 48 } };
 let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -201,7 +201,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(7413).useGetOrFetchApplication(replacedBy);
+  const getOrFetchApplication = deprecatedPlatformTypes(7415).useGetOrFetchApplication(replacedBy);
   const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {

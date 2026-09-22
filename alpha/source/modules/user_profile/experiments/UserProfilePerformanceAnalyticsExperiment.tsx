@@ -1,10 +1,10 @@
-// Module ID: 8467
-// Function ID: 8468
+// Module ID: 8471
+// Function ID: 8472
 // Name: UserProfilePerformanceAnalyticsExperiment
 // Dependencies: [1434, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
-// Module 8467 (UserProfilePerformanceAnalyticsExperiment)
+// Module 8471 (UserProfilePerformanceAnalyticsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

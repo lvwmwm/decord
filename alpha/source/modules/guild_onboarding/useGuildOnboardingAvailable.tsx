@@ -1,10 +1,10 @@
-// Module ID: 7577
-// Function ID: 7578
+// Module ID: 7580
+// Function ID: 7581
 // Name: useGuildOnboardingAvailable
 // Dependencies: [2098, 1074, 504, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 7577 (useGuildOnboardingAvailable)
+// Module 7580 (useGuildOnboardingAvailable)
 import ImpersonateStore from "ImpersonateStore" /* 2098 */;
 
 const require = globalThis.__r;

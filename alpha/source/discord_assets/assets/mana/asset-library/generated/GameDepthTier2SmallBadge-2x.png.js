@@ -1,8 +1,8 @@
-// Module ID: 6259
-// Function ID: 6260
+// Module ID: 6261
+// Function ID: 6262
 // Dependencies: [2]
 
-// Module 6259
+// Module 6261
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDepthTier2SmallBadge-2x.png.js");

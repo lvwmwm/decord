@@ -1,20 +1,20 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15501
+// Function ID: 15502
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 1074, 21, 4756, 576, 5741, 4752, 5339, 1177, 2]
+// Dependencies: [19, 17, 1074, 21, 4757, 576, 5743, 4753, 5341, 1177, 2]
 // Exports: default
 
-// Module 15490 (LabeledDataBlock)
+// Module 15501 (LabeledDataBlock)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4752 */;
+import Text_Text from "Text/Text" /* 4753 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5741 */;
+import TextStyles from "TextStyles" /* 5743 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.sm, flexBasis: "auto", flexGrow: 1, padding: 16 }, title: { marginRight: 4 }, data: null, titleSection: null };
 const merged = Object.assign(TextStyles(fn(1074).Fonts.PRIMARY_MEDIUM, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj2.data = {};
@@ -37,7 +37,7 @@ export default function LabeledDataBlock(arg0) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: null };
     const obj5 = { size: tmp5(1177).Icon.Sizes.SMALL, source: icon };
     obj4.children = tmp4(tmp5(1177).Icon, obj5);
-    tmp4Result = tmp4(tmp5(5339).PressableOpacity, obj4);
+    tmp4Result = tmp4(tmp5(5341).PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
   obj2.children = items1;

@@ -1,22 +1,22 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15541
+// Function ID: 15542
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [1992, 8233, 504, 9911, 1115, 11725, 2]
+// Dependencies: [1992, 8237, 504, 9917, 1115, 11729, 2]
 
-// Module 15530 (AdvancedVoiceActivitySetting)
+// Module 15541 (AdvancedVoiceActivitySetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9911 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9917 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const SettingBuilders = fn(11729);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.BbESsg);
   },
-  parent: fn(8233).MobileUserSettings.VOICE,
+  parent: fn(8237).MobileUserSettings.VOICE,
   useValue: function useAdvancedVoiceActivitySettingValue() {
     const items = [MediaEngineStore];
     return initialize.useStateFromStores(items, () => modeOptions.getModeOptions().vadUseKrisp);

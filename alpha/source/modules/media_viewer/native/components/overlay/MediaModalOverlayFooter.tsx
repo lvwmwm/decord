@@ -1,16 +1,16 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13269
+// Function ID: 13270
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4756, 576, 4492, 11788, 4757, 1177, 13265, 6897, 4493, 7368, 7399, 13266, 13256, 2]
+// Dependencies: [32, 19, 17, 21, 4757, 576, 4493, 11792, 4758, 1177, 13270, 6899, 4494, 7370, 7401, 13271, 13261, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13264 (MediaModalOverlayFooter)
+// Module 13269 (MediaModalOverlayFooter)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6897 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6899 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11792 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,8 +18,8 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
-let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "w" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+const createStyles = fn(4757);
+let obj2 = { drawerContainer: { overflow: "hidden", backgroundColor: "WireType" }, drawerHeaderTab: { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 }, drawerHeader: { backgroundColor: "max" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 let c9 = -1;
 function clamp(arg0, arg1, arg2) {

@@ -1,9 +1,9 @@
-// Module ID: 2049
-// Function ID: 2050
+// Module ID: 2050
+// Function ID: 2051
 // Name: StageChannelPermissions
 // Dependencies: [1074, 1086, 2]
 
-// Module 2049 (StageChannelPermissions)
+// Module 2050 (StageChannelPermissions)
 import Constants from "Constants" /* 1074 */;
 import BigFlagUtils_mod from "BigFlagUtils" /* 1086 */;
 import "BigFlagUtils";

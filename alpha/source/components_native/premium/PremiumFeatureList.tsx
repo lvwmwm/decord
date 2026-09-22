@@ -1,20 +1,20 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9511
+// Function ID: 9512
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 1074, 21, 4756, 5741, 576, 8871, 2]
+// Dependencies: [19, 17, 1074, 21, 4757, 5743, 576, 8876, 2]
 // Exports: default
 
-// Module 9505 (PremiumFeatureList)
+// Module 9511 (PremiumFeatureList)
 import nativeDefault from "native" /* 576 */;
-import Form from "Form" /* 8871 */;
+import Form from "Form" /* 8876 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5741 */;
+import TextStyles from "TextStyles" /* 5743 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { item: { backgroundColor: "transparent", paddingHorizontal: 0, paddingVertical: 8, flexDirection: "row", alignItems: "center" }, label: null, iconMargin: null };
 const merged = Object.assign(TextStyles(fn(1074).Fonts.PRIMARY_NORMAL, nativeDefault.colors.TEXT_DEFAULT, 14));
 obj2.label = {};

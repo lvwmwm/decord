@@ -1,17 +1,17 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8085
+// Function ID: 8086
 // Name: UploaderBase
-// Dependencies: [5, 1074, 4749, 3, 568, 12, 5392, 5352, 5353, 2]
+// Dependencies: [5, 1074, 4750, 3, 568, 12, 5394, 5354, 5355, 2]
 
-// Module 8082 (UploaderBase)
+// Module 8085 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5352 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 5354 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
 const AbortCodes = fn(1074).AbortCodes;
-const FileUploadErrorTypes = fn(4749).FileUploadErrorTypes;
+const FileUploadErrorTypes = fn(4750).FileUploadErrorTypes;
 const logger = new LoggerDefault("UploaderBase.tsx");
 const EventEmitter = fn(568).EventEmitter;
 class UploaderBase extends EventEmitter {
@@ -80,7 +80,7 @@ class UploaderBase extends EventEmitter {
     };
     obj = closure_1(closure_2[5]);
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "call" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "category" };
     return tmp3;
   }
 }

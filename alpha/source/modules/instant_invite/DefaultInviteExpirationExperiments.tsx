@@ -1,12 +1,12 @@
-// Module ID: 10080
-// Function ID: 10081
+// Module ID: 10086
+// Function ID: 10087
 // Name: DefaultInviteExpirationExperiments
-// Dependencies: [2063, 1074, 10078, 4669, 563, 2]
+// Dependencies: [2064, 1074, 10084, 4670, 563, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 10080 (DefaultInviteExpirationExperiments)
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10078 */;
-import GuildStore from "GuildStore" /* 2063 */;
+// Module 10086 (DefaultInviteExpirationExperiments)
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10084 */;
+import GuildStore from "GuildStore" /* 2064 */;
 
 const require = fn;
 function getDefaultInviteExpiration(arg0) {
@@ -50,12 +50,12 @@ const Constants = fn(1074);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, GuildFeatures: hasOwnProperty } = Constants);
 const value = InstantInviteUtilsDefault.INVITE_OPTIONS_7_DAYS.value;
 const metroRequire = value;
-let createExperiment = fn(4669);
+let createExperiment = fn(4670);
 let obj2 = { kind: "guild", id: "2025-08_default_invite_expiration_guild", label: "Default Invite Expiration Guild", defaultConfig: { defaultMaxAge: 604800 }, treatments: null };
 let items = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
 obj2.treatments = items;
 let experiment = createExperiment.createExperiment(obj2);
-createExperiment = fn(4669);
+createExperiment = fn(4670);
 const obj4 = { kind: "guild", id: "2026-05_default_invite_expiration_guild_web", label: "Default Invite Expiration Guild Web", defaultConfig: { defaultMaxAge: 604800 }, treatments: null };
 const items1 = [{ id: 1, label: "14 days", config: { defaultMaxAge: 1209600 } }, { id: 2, label: "30 days", config: { defaultMaxAge: 2592000 } }, { id: 3, label: "60 days", config: { defaultMaxAge: 5184000 } }];
 obj4.treatments = items1;

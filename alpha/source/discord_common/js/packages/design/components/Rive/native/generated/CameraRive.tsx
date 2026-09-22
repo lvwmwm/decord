@@ -1,11 +1,11 @@
-// Module ID: 4548
-// Function ID: 4549
+// Module ID: 4549
+// Function ID: 4550
 // Name: CameraRive
-// Dependencies: [109, 19, 21, 4486, 4549, 4541, 2]
+// Dependencies: [109, 19, 21, 4487, 4550, 4542, 2]
 
-// Module 4548 (CameraRive)
-import BaseRive from "BaseRive" /* 4486 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4541 */;
+// Module 4549 (CameraRive)
+import BaseRive from "BaseRive" /* 4487 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4542 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

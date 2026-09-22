@@ -1,16 +1,16 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17196
+// Function ID: 17197
 // Name: MessagesScreen
-// Dependencies: [19, 12593, 8122, 21, 17168, 504, 17112, 17170, 17185, 17169, 17174, 17160, 17119, 2]
+// Dependencies: [19, 12597, 8125, 21, 17180, 504, 17124, 17182, 17197, 17181, 17186, 17172, 17131, 2]
 
-// Module 17184 (MessagesScreen)
-import BaseMessagesScreen from "BaseMessagesScreen" /* 17170 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 17185 */;
+// Module 17196 (MessagesScreen)
+import BaseMessagesScreen from "BaseMessagesScreen" /* 17182 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 17197 */;
 import noop from "module_19" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12593 */;
+import SearchQueryStore from "SearchQueryStore" /* 12597 */;
 
 require = fn;
-const SearchConstants = fn(8122);
+const SearchConstants = fn(8125);
 ({ SEARCH_FILTERS_BY_TAB: hasOwnProperty, SearchFilter: metroRequire, SEARCH_PINNED_MESSAGES_LINE_CLAMP: closure_7, SEARCH_MESSAGES_DEFAULT_LINE_CLAMP: closure_8, MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_9, SearchListItemTypes: c10 } = SearchConstants);
 const jsx = fn(21).jsx;
 const size = fn(2);

@@ -1,13 +1,13 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6660
+// Function ID: 6661
 // Name: ServerChannelsAbstractUI
-// Dependencies: [21, 5804, 6659, 2]
+// Dependencies: [21, 5806, 6661, 2]
 // Exports: ServerChannelsAbstractUI
 
-// Module 6658 (ServerChannelsAbstractUI)
+// Module 6660 (ServerChannelsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6659 from "module_6659" /* 6659 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6661 from "module_6661" /* 6661 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ServerChannelsAbstractUI = function ServerChannelsAbstractUI(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6659 };
+  const obj2 = { uri: _modDef6661 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

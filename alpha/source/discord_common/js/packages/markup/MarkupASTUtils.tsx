@@ -1,10 +1,10 @@
-// Module ID: 8247
-// Function ID: 8248
+// Module ID: 8251
+// Function ID: 8252
 // Name: MarkupASTUtils
 // Dependencies: [2]
 // Exports: astToString, getIndexedAST
 
-// Module 8247 (MarkupASTUtils)
+// Module 8251 (MarkupASTUtils)
 import size from "module_2" /* 2 */;
 
 function collectAst(content) {

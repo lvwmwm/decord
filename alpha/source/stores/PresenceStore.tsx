@@ -1,15 +1,15 @@
-// Module ID: 4796
-// Function ID: 4797
+// Module ID: 4797
+// Function ID: 4798
 // Name: PresenceStore
-// Dependencies: [502, 1372, 1074, 4797, 12, 1331, 11, 504, 573, 2]
+// Dependencies: [502, 1372, 1074, 4798, 12, 1331, 11, 504, 573, 2]
 
-// Module 4796 (PresenceStore)
+// Module 4797 (PresenceStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4797 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4798 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -49,7 +49,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4797)(type)) {
+    if (tmp3(4798)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;

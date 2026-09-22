@@ -1,13 +1,13 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7340
+// Function ID: 7341
 // Name: ListViewIcon
-// Dependencies: [19, 21, 576, 4456, 7339, 2]
+// Dependencies: [19, 21, 576, 4457, 7341, 2]
 // Exports: ListViewIcon
 
-// Module 7338 (ListViewIcon)
+// Module 7340 (ListViewIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod7339 from "module_7339" /* 7339 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod7341 from "module_7341" /* 7341 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ListViewIcon = function ListViewIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod7339, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod7341, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,29 +1,29 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17074
+// Function ID: 17075
 // Name: VibegrationsDebugScene
-// Dependencies: [32, 19, 17, 7956, 13361, 17063, 21, 4756, 576, 1115, 3678, 1484, 1612, 504, 9890, 7434, 17064, 4454, 4702, 16938, 9891, 17065, 17071, 17080, 17082, 2]
+// Dependencies: [32, 19, 17, 7959, 13366, 17075, 21, 4757, 576, 1115, 3678, 1484, 1612, 504, 9896, 7436, 17076, 4455, 4703, 16950, 9897, 17077, 17083, 17092, 17094, 2]
 // Exports: default
 
-// Module 17062 (VibegrationsDebugScene)
+// Module 17074 (VibegrationsDebugScene)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4454 */;
-import CopyIcon from "CopyIcon" /* 4702 */;
-import ClipboardUtils from "ClipboardUtils" /* 7434 */;
-import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17064 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4455 */;
+import CopyIcon from "CopyIcon" /* 4703 */;
+import ClipboardUtils from "ClipboardUtils" /* 7436 */;
+import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17076 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7956 */;
-import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17063 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7959 */;
+import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17075 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const requestDebugStatus = fn(13361).requestDebugStatus;
+const requestDebugStatus = fn(13366).requestDebugStatus;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { scene: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabs: null, content: null, report: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.tabs = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_12 };

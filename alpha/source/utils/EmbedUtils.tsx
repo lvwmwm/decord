@@ -1,15 +1,15 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5102
+// Function ID: 5103
 // Name: EmbedUtils
-// Dependencies: [1074, 5102, 11, 1385, 12, 4348, 1092, 4980, 2]
+// Dependencies: [1074, 5103, 11, 1385, 12, 4348, 1092, 4981, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 5101 (EmbedUtils)
+// Module 5102 (EmbedUtils)
 import _modDef12 from "module_12" /* 12 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 4980 */;
-import EmbedConstants from "EmbedConstants" /* 5102 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 4981 */;
+import EmbedConstants from "EmbedConstants" /* 5103 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
@@ -44,9 +44,10 @@ const re11 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channel
 const regExp = new RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?.com|staging\\.discord\\.co)/shop");
 const re13 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/game-shop\/([0-9]+)\/([0-9]+)/;
 const re14 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/([0-9]+)\/([0-9]+)/;
-const re15 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/shop\?(?=.*tab=game-shops)(?=.*applicationId=[0-9]+)(?=.*skuId=[0-9]+)/;
-const re16 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/games\/[0-9]+(?:\/[A-Za-z0-9-]*)?\/?$/;
-const re17 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/users\/[0-9]+\/?$/;
+const re15 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/game-shop\/[0-9]+\/?\?(?=.*skuIds=)/;
+const re16 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/shop\?(?=.*tab=game-shops)(?=.*applicationId=[0-9]+)(?=.*skuId=[0-9]+)/;
+const re17 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/games\/[0-9]+(?:\/[A-Za-z0-9-]*)?\/?$/;
+const re18 = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/users\/[0-9]+\/?$/;
 let result = size.fileFinishedImporting("utils/EmbedUtils.tsx");
 
 export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
@@ -262,12 +263,12 @@ export const mergeEmbedsOnURL = function mergeEmbedsOnURL(mapped) {
   return items;
 };
 export { getEffectiveVideoProvider };
-export const isEmbedInline = function isEmbedInline(first1) {
-  const type = first1.type;
-  let tmp = null != first1.image;
-  ({ author, rawTitle } = first1);
+export const isEmbedInline = function isEmbedInline(type) {
+  type = type.type;
+  let tmp = null != type.image;
+  ({ author, rawTitle } = type);
   if (!tmp) {
-    tmp = null != first1.video;
+    tmp = null != type.video;
   }
   if (tmp) {
     let tmp2 = type === constants2.GIFV;
@@ -309,7 +310,7 @@ export const isGameProfileArticleEmbed = function isGameProfileArticleEmbed(type
     isMatch = null != type.url;
   }
   if (isMatch) {
-    isMatch = re16.test(type.url);
+    isMatch = re17.test(type.url);
   }
   return isMatch;
 };
@@ -319,7 +320,7 @@ export const isUserProfileArticleEmbed = function isUserProfileArticleEmbed(type
     isMatch = null != type.url;
   }
   if (isMatch) {
-    isMatch = re17.test(type.url);
+    isMatch = re18.test(type.url);
   }
   return isMatch;
 };
@@ -331,10 +332,13 @@ export const isSocialLayerStorefrontArticleEmbed = function isSocialLayerStorefr
   if (tmp) {
     let isMatch = re14.test(type.url);
     if (!isMatch) {
+      isMatch = re15.test(type.url);
+    }
+    if (!isMatch) {
       isMatch = re13.test(type.url);
     }
     if (!isMatch) {
-      isMatch = re15.test(type.url);
+      isMatch = re16.test(type.url);
     }
     tmp = isMatch;
   }

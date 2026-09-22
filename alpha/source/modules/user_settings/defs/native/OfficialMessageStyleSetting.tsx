@@ -1,15 +1,15 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15615
+// Function ID: 15616
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4748, 8233, 504, 14717, 1115, 11725, 2]
+// Dependencies: [19, 4749, 8237, 504, 14723, 1115, 11729, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 15604 (OfficialMessageStyleSetting)
+// Module 15615 (OfficialMessageStyleSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14717 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14723 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
 function useOfficialMessageStyleSettingValue() {
@@ -40,13 +40,13 @@ function useOfficialMessageStyleSettingOptions() {
     return items;
   }, []);
 }
-const SettingBuilders = fn(11725);
+const SettingBuilders = fn(11729);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.nC2XBl);
   },
-  parent: fn(8233).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8237).MobileUserSettings.ACCESSIBILITY,
   useValue: useOfficialMessageStyleSettingValue,
   onValueChange: onOfficialMessageStyleSettingValueChange,
   useOptions: useOfficialMessageStyleSettingOptions

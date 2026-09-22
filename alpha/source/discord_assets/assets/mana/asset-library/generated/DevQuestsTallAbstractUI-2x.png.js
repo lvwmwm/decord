@@ -1,8 +1,8 @@
-// Module ID: 6135
-// Function ID: 6136
+// Module ID: 6137
+// Function ID: 6138
 // Dependencies: [2]
 
-// Module 6135
+// Module 6137
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DevQuestsTallAbstractUI-2x.png.js");

@@ -1,13 +1,13 @@
-// Module ID: 6700
-// Function ID: 6701
+// Module ID: 6702
+// Function ID: 6703
 // Name: SingleWidgetAbstractUI
-// Dependencies: [21, 5804, 6701, 2]
+// Dependencies: [21, 5806, 6703, 2]
 // Exports: SingleWidgetAbstractUI
 
-// Module 6700 (SingleWidgetAbstractUI)
+// Module 6702 (SingleWidgetAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6701 from "module_6701" /* 6701 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6703 from "module_6703" /* 6703 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SingleWidgetAbstractUI = function SingleWidgetAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6701 };
+  const obj2 = { uri: _modDef6703 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

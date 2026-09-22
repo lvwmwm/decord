@@ -1,10 +1,10 @@
-// Module ID: 7768
-// Function ID: 7769
+// Module ID: 7771
+// Function ID: 7772
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2105, 2047, 4391, 12, 11, 504, 573, 2]
+// Dependencies: [502, 2105, 2048, 4391, 12, 11, 504, 573, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7768 (GuildScheduledEventStore)
+// Module 7771 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -173,7 +173,7 @@ function handleGuildScheduledEventExceptionCreateOrUpdate(eventException) {
   }
   obj = secondaryIndexMap;
 }
-const GuildScheduledEventsConstants = fn(2047);
+const GuildScheduledEventsConstants = fn(2048);
 ({ GuildScheduledEventStatus: closure_4, GuildScheduledEventStatusDone: hasOwnProperty, GuildScheduledEventUserResponses: metroRequire } = GuildScheduledEventsConstants);
 const StaticGuildEventIndexes = {
   EVENT: "event",

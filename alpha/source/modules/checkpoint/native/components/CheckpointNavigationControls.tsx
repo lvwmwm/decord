@@ -1,18 +1,18 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16004
+// Function ID: 16005
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 4981, 1074, 21, 4756, 576, 1612, 15993, 8545, 1115, 15977, 3032, 4451, 2108, 5845, 15994, 2]
+// Dependencies: [17, 4982, 1074, 21, 4757, 576, 1612, 16005, 8549, 1115, 15989, 3032, 4452, 2108, 5847, 16006, 2]
 // Exports: default
 
-// Module 15992 (CheckpointNavigationControls)
+// Module 16004 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import CheckpointTextDefault from "CheckpointText" /* 15977 */;
+import CheckpointTextDefault from "CheckpointText" /* 15989 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 4981 */;
+import CheckpointConstants from "CheckpointConstants" /* 4982 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4756 */;
+import createStyles from "createStyles" /* 4757 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,9 +51,9 @@ export default function CheckpointNavigationControls(onNext) {
     const intl3 = require("util").intl;
     obj2.label = intl3.string(require("util").t.I0v0Qv);
     obj2.onPress = onNext;
-    const items2 = [closure_7(tmp2(15993), obj2), ];
+    const items2 = [closure_7(tmp2(16005), obj2), ];
     const obj3 = { variant: "text-sm/medium", children: null };
-    const tmp2Result = tmp2(15993);
+    const tmp2Result = tmp2(16005);
     const intl4 = require("util").intl;
     const obj4 = {
       learnMoreHook(children, arg1) {
@@ -61,7 +61,7 @@ export default function CheckpointNavigationControls(onNext) {
             variant: "text-sm/medium",
             style: link.link,
             onPress() {
-              const obj = closure_1_1(4451);
+              const obj = closure_1_1(4452);
               return obj.openURL(closure_1_1(2108).getArticleURL(constants.CHECKPOINT));
             },
             accessibilityRole: "link",
@@ -70,10 +70,10 @@ export default function CheckpointNavigationControls(onNext) {
         }
     };
     obj3.children = intl4.format(tmp2(3032).hcNhyq, obj4);
-    items2[1] = closure_7(tmp2(15977), obj3);
+    items2[1] = closure_7(tmp2(15989), obj3);
     obj.children = items2;
     let tmp10 = obj;
-    const tmp2Result2 = tmp2(15977);
+    const tmp2Result2 = tmp2(15989);
   } else {
     items1[1] = tmp.routeControls;
     obj.style = items1;

@@ -1,13 +1,13 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16963
+// Function ID: 16964
 // Name: LinkPlusIcon
-// Dependencies: [19, 21, 576, 4456, 16952, 2]
+// Dependencies: [19, 21, 576, 4457, 16964, 2]
 // Exports: LinkPlusIcon
 
-// Module 16951 (LinkPlusIcon)
+// Module 16963 (LinkPlusIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4456 */;
-import _mod16952 from "module_16952" /* 16952 */;
+import BaseIconImage from "BaseIconImage" /* 4457 */;
+import _mod16964 from "module_16964" /* 16964 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LinkPlusIcon = function LinkPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16952, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16964, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

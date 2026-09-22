@@ -1,9 +1,9 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14481
+// Function ID: 14482
 // Name: qos_token
 // Dependencies: [32, 1187, 2]
 
-// Module 14475 (qos_token)
+// Module 14481 (qos_token)
 import _mod1187 from "module_1187" /* 1187 */;
 import _slicedToArray from "module_32" /* 32 */;
 

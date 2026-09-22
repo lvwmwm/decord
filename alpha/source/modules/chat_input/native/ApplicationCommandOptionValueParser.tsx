@@ -1,22 +1,22 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12250
+// Function ID: 12251
 // Name: ApplicationCommandOptionValueParser
-// Dependencies: [32, 19, 5723, 2045, 2096, 2105, 2099, 4405, 1372, 5211, 12, 1370, 4909, 5659, 1978, 7918, 2]
+// Dependencies: [32, 19, 5725, 2046, 4394, 2105, 2099, 4406, 1372, 5212, 12, 1370, 4910, 5661, 1978, 7921, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 12246 (ApplicationCommandOptionValueParser)
+// Module 12250 (ApplicationCommandOptionValueParser)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import Server from "Server" /* 1978 */;
-import useChannelName from "useChannelName" /* 4909 */;
-import MessageParser from "MessageParser" /* 7918 */;
+import useChannelName from "useChannelName" /* 4910 */;
+import MessageParser from "MessageParser" /* 7921 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5723 */;
-import GuildChannelStore from "GuildChannelStore" /* 2096 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
+import GuildChannelStore from "GuildChannelStore" /* 4394 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const MessageParserDefault = MessageParser;
@@ -47,7 +47,7 @@ function getChannels(getGuildId, arr) {
     }
     tmp2 = null == arr || arr.includes(getGuildId.type);
     return guildId(12)(items).map((id) => {
-      const obj = { id: id.id, text: closure_0(4909).computeChannelName(id, UserStore, RelationshipStore) };
+      const obj = { id: id.id, text: closure_0(4910).computeChannelName(id, UserStore, RelationshipStore) };
       return obj;
     });
   } else {
@@ -81,8 +81,8 @@ function getChannels(getGuildId, arr) {
     });
   }
 }
-let closure_6 = fn(2045).isGuildSelectableChannelType;
-const ChannelAutocompleteConstants = fn(5211);
+let closure_6 = fn(2046).isGuildSelectableChannelType;
+const ChannelAutocompleteConstants = fn(5212);
 ({ MENTION_SENTINEL: closure_12, CHANNEL_SENTINEL: map1 } = ChannelAutocompleteConstants);
 function matchPrefix(arg0, arg1, arg2) {
 

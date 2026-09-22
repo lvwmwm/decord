@@ -1,29 +1,29 @@
-// Module ID: 16037
-// Function ID: 16038
+// Module ID: 16049
+// Function ID: 16050
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4405, 1372, 11626, 21, 4756, 576, 504, 11653, 11656, 1484, 10003, 8675, 11633, 8907, 4454, 1115, 4715, 4453, 5186, 11664, 8943, 5259, 8856, 4451, 4752, 2]
+// Dependencies: [5, 32, 19, 17, 4406, 1372, 11630, 21, 4757, 576, 504, 11657, 11660, 1484, 10009, 8679, 11637, 8912, 4455, 1115, 4716, 4454, 5187, 11668, 8948, 5261, 8861, 4452, 4753, 2]
 // Exports: default
 
-// Module 16037 (TakeActionScreen)
+// Module 16049 (TakeActionScreen)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4451 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8675 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10003 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11633 */;
+import LinkingDefault from "Linking" /* 4452 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8679 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11637 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4405 */;
+import RelationshipStore from "RelationshipStore" /* 4406 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 let useState = fn(19).useState;
 const View = fn(17).View;
-const Constants = fn(11626);
+const Constants = fn(11630);
 ({ MODAL_LOCATION_CONTEXT_MOBILE: c10, NOFILTR_URL: closure_11, THROUGHLINE_URL: closure_12, REPORTED_USER_CONFIRMATION_TOAST_KEY: map1, TOAST_CHECKMARK_ICON_COLOR: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { display: "flex", alignItems: "center", alignSelf: "stretch", gap: nativeDefault.space.PX_16 }, toastContainer: null, helplineGroup: null, textCenter: null };
 let obj3 = { display: "flex", alignItems: "center", alignSelf: "stretch", gap: nativeDefault.space.PX_16 };
 obj2.toastContainer = { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
@@ -101,18 +101,18 @@ export default function TakeActionButtons(senderId) {
             v1 = 1;
             dependencyMap = 1;
             const obj5 = {
-              value: tmp4(8907).submitReportForInappropriateConversationSafetyAlert(lastChannelMessage, () => {
+              value: tmp4(8912).submitReportForInappropriateConversationSafetyAlert(lastChannelMessage, () => {
                         dependencyMap(true);
                         const obj2 = { key, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                         const intl = closure_0(1115).intl;
                         obj2.content = intl.string(closure_0(1115).t.gn2c6X);
-                        obj2.IconComponent = closure_0(4715).CircleCheckIcon;
+                        obj2.IconComponent = closure_0(4716).CircleCheckIcon;
                         obj2.iconColor = iconColor;
                         obj2.containerStyle = toastContainer.toastContainer;
-                        c1(4454).open(obj2);
+                        c1(4455).open(obj2);
                       }, () => {
                         const intl = closure_1_0(1115).intl;
-                        closure_1_0(4453).presentFailedToast(intl.string(closure_1_0(1115).t["0YV04/"]));
+                        closure_1_0(4454).presentFailedToast(intl.string(closure_1_0(1115).t["0YV04/"]));
                       }),
               done: false
             };
@@ -125,9 +125,9 @@ export default function TakeActionButtons(senderId) {
           throw value;
         } else if (arg0 !== 2) {
           closure_128_6(false);
-          const result = v1(8675).showReportSuccessToast(closure_128_0, closure_128_1);
-          closure_128_3(tmp4(11633).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
-          const obj = v1(8675);
+          const result = v1(8679).showReportSuccessToast(closure_128_0, closure_128_1);
+          closure_128_3(tmp4(11637).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          const obj = v1(8679);
         }
         dependencyMap = 3;
         const obj6 = { value, done: true };

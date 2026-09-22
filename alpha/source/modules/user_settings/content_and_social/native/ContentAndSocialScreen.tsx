@@ -1,28 +1,28 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16203
+// Function ID: 16204
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8233, 1074, 21, 4756, 576, 1115, 2108, 16193, 15094, 12933, 16198, 7543, 11725, 15092, 14964, 16199, 4752, 2]
+// Dependencies: [32, 19, 17, 8237, 1074, 21, 4757, 576, 1115, 2108, 16204, 15101, 12937, 16209, 7545, 11729, 15099, 14971, 16210, 4753, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 16192 (ContentAndSocialScreen)
+// Module 16203 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12933 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 16199 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12937 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 16210 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const MobileUserSettings = fn(8233).MobileUserSettings;
+const MobileUserSettings = fn(8237).MobileUserSettings;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { loadingIndicator: { marginTop: nativeDefault.space.PX_32 }, emptyContainer: null };
 let obj3 = { marginTop: nativeDefault.space.PX_32 };
 obj2.emptyContainer = { flex: 1, gap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -120,7 +120,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp9 = items6;
     if (!allServersOptionSelected) {
       const items11 = [];
-      HermesBuiltin.arraySpread(tmp2(16193).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
+      HermesBuiltin.arraySpread(tmp2(16204).GUILD_SPECIFIC_SETTINGS, HermesBuiltin.arraySpread(items6, 0));
       tmp9 = items11;
       const arraySpreadResult = HermesBuiltin.arraySpread(items6, 0);
     }
@@ -128,7 +128,7 @@ export const DiscordPermissionsPage = function DiscordPermissionsPage() {
     let tmp15;
     if (tmp7) {
       if (tmp8) {
-        tmp15 = React7(tmp2(15094).MessageRequestsNotice, {});
+        tmp15 = React7(tmp2(15101).MessageRequestsNotice, {});
       }
     }
     obj14.subLabel = tmp15;
@@ -215,7 +215,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     const tmp2Result = tmp2(2108);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React7(tmp2(14964), obj);
+    tmp7 = React7(tmp2(14971), obj);
   }
   return tmp7;
 };

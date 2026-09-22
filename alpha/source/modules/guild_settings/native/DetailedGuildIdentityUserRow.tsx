@@ -1,14 +1,14 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11213
+// Function ID: 11214
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1372, 21, 4756, 576, 4908, 4600, 9901, 1177, 504, 8871, 5822, 2]
+// Dependencies: [19, 17, 1372, 21, 4757, 576, 4909, 4601, 9907, 1177, 504, 8876, 5824, 2]
 
-// Module 11207 (DetailedGuildIdentityUserRow)
+// Module 11213 (DetailedGuildIdentityUserRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4908 */;
-import DiscordTagDefault from "DiscordTag" /* 9901 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4909 */;
+import DiscordTagDefault from "DiscordTag" /* 9907 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj = { mainIdentity: { flexDirection: "row", alignItems: "center" }, primaryAvatar: { marginRight: nativeDefault.space.PX_4 }, mainTag: null };
 let obj3 = { marginRight: nativeDefault.space.PX_4 };
 obj.mainTag = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontSize: 12 };
@@ -26,8 +26,8 @@ const memoResult = noop.memo((height) => {
   const tmp = closure_7();
   let nickname = NicknameUtilsDefault.getNickname(guildId, undefined, user);
   if (nickname == null) {
-    nickname = tmp2(4600).getGlobalName(user);
-    const tmp2Result = tmp2(4600);
+    nickname = tmp2(4601).getGlobalName(user);
+    const tmp2Result = tmp2(4601);
   }
   const hasAvatarForGuildResult = user.hasAvatarForGuild(guildId);
   const obj2 = { style: { height: height.contentHeight }, children: null };
@@ -41,7 +41,7 @@ const memoResult = noop.memo((height) => {
     }
     const items1 = [tmp8Result, ];
     const obj5 = { user, usernameStyle: tmp.mainTag, hideBotTag: true };
-    items1[1] = tmp8(tmp2(9901), obj5);
+    items1[1] = tmp8(tmp2(9907), obj5);
     obj3.children = items1;
     let tmp6Result = tmp6(tmp7, obj3);
   } else {
@@ -84,7 +84,7 @@ export default noop.memo(function DetailedGuildIdentityUserRow(arrow) {
     obj2.trailing = trailing;
     obj2.accessibilityRole = accessibilityRole;
     obj2.accessibilityState = accessibilityState;
-    let tmp2Result = tmp2(tmp(8871).FormRow, obj2);
+    let tmp2Result = tmp2(tmp(8876).FormRow, obj2);
   } else {
     const obj4 = { accessibilityLabel, arrow: arrow.arrow, disabled, end, icon: null, label: null, onPress: null, start: null, subLabel: null, trailing: null, accessibilityRole: null, accessibilityState: null };
     let tmp2Result2 = leading;
@@ -101,7 +101,7 @@ export default noop.memo(function DetailedGuildIdentityUserRow(arrow) {
     obj4.trailing = trailing;
     obj4.accessibilityRole = accessibilityRole;
     obj4.accessibilityState = accessibilityState;
-    tmp2Result = tmp2(tmp(5822).TableRow, obj4);
+    tmp2Result = tmp2(tmp(5824).TableRow, obj4);
   }
 });
 export const DetailedGuildIdentityUser = memoResult;

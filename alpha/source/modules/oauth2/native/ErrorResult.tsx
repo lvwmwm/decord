@@ -1,14 +1,14 @@
-// Module ID: 9322
-// Function ID: 9323
-// Dependencies: [19, 17, 21, 4756, 576, 7368, 9323, 4752, 1115, 5186, 4959, 2]
+// Module ID: 9328
+// Function ID: 9329
+// Dependencies: [19, 17, 21, 4757, 576, 7370, 9329, 4753, 1115, 5187, 4960, 2]
 // Exports: default
 
-// Module 9322
+// Module 9328
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7368 */;
-import _modDef9323 from "module_9323" /* 9323 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
+import _modDef9329 from "module_9329" /* 9329 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, gap: 16, paddingHorizontal: 16, justifyContent: "center", flexDirection: "column" }, inner: { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center" }, text: { marginTop: 24, textAlign: "center" }, image: null };
 const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, gap: 16, paddingHorizontal: 16, justifyContent: "center", flexDirection: "column" };
 obj2.image = { tintColor: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
@@ -29,7 +29,7 @@ export default function ErrorResult(error) {
   const tmp = closure_7();
   const obj = { bottom: true, style: tmp.container, children: null };
   const obj2 = { style: tmp.inner, children: null };
-  const items = [hasOwnProperty(React3, { source: _modDef9323, style: tmp.image }), ];
+  const items = [hasOwnProperty(React3, { source: _modDef9329, style: tmp.image }), ];
   const obj4 = { style: tmp.text, variant: "text-md/medium", children: null };
   if (error == null) {
     const intl = tmp3(1115).intl;
@@ -47,7 +47,7 @@ export default function ErrorResult(error) {
     obj5.onPress = function onPress() {
       return ModalActionCreatorsDefault.pop();
     };
-    tmp6Result = tmp6(tmp3(5186).Button, obj5);
+    tmp6Result = tmp6(tmp3(5187).Button, obj5);
   }
   items1[1] = tmp6Result;
   obj.children = items1;

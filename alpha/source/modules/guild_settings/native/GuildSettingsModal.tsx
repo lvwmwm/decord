@@ -1,19 +1,19 @@
-// Module ID: 17921
-// Function ID: 17922
+// Module ID: 17933
+// Function ID: 17934
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 2063, 9856, 1074, 21, 16483, 9855, 1249, 1115, 5841, 17922, 17934, 17938, 17939, 17956, 17975, 17980, 17995, 17996, 18008, 18020, 18022, 17309, 17318, 18030, 18034, 18035, 17320, 16484, 18036, 18037, 18057, 18078, 18082, 18085, 12090, 12104, 12106, 18086, 18091, 18092, 18114, 18137, 18177, 18178, 18194, 18233, 18237, 18238, 18241, 18249, 1612, 5815, 504, 7245, 2]
+// Dependencies: [32, 19, 2064, 9862, 1074, 21, 16494, 9861, 1249, 1115, 5843, 17934, 17946, 17950, 17951, 17968, 17987, 17992, 18007, 18008, 18020, 18032, 18034, 17321, 17330, 18042, 18046, 18047, 17332, 16495, 18048, 18049, 18069, 18090, 18094, 18097, 12094, 12108, 12110, 18098, 18103, 18104, 18126, 18149, 18189, 18190, 18206, 18245, 18249, 18250, 18253, 18261, 18262, 1612, 5817, 504, 7247, 2]
 // Exports: default
 
-// Module 17921 (GuildSettingsModal)
+// Module 17933 (GuildSettingsModal)
 import util from "util" /* 1115 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16483 */;
+import NavigatorHeader from "NavigatorHeader" /* 5843 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9861 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 16494 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9862 */;
 
 const require = globalThis.__r;
 
@@ -33,7 +33,7 @@ export default function GuildSettingsModal() {
   let tmp2 = require("useInitialValue")(() => GuildSettingsStore.getGuildId());
   importDefault = tmp2;
   const items = [GuildStore];
-  stateFromStores = bottom(stateFromStores[54]).useStateFromStores(items, () => GuildStore.getGuild(closure_1));
+  stateFromStores = bottom(stateFromStores[55]).useStateFromStores(items, () => GuildStore.getGuild(closure_1));
   const items1 = [bottom, tmp2];
   const memo = noop.useMemo(() => {
     let tmp2;
@@ -426,6 +426,15 @@ export default function GuildSettingsModal() {
         return jsx(closure_1(stateFromStores[51]), { guildId });
       };
       obj3[constants.OFFICIAL_MESSAGES] = obj46;
+      const obj47 = { title: null, render: null };
+      const intl40 = util.intl;
+      obj47.title = intl40.string(util.t.OBskVU);
+      obj47.render = function render() {
+        obj = {};
+        const merged = Object.assign(obj);
+        return jsx(closure_1(stateFromStores[52]), {});
+      };
+      obj3[constants.GUILD_SPACE] = obj47;
       tmp2 = obj3;
     }
     return tmp2;
@@ -455,7 +464,7 @@ export default function GuildSettingsModal() {
     }
     obj2.initialRouteState = tmp13;
     obj2.screens = memo;
-    tmp10Result = jsx(bottom(stateFromStores[55]).Navigator, { onWillFocus: tmp8, initialRouteName: null, initialRouteState: null, screens: null });
+    tmp10Result = jsx(bottom(stateFromStores[56]).Navigator, { onWillFocus: tmp8, initialRouteName: null, initialRouteState: null, screens: null });
   }
   return tmp10Result;
 };

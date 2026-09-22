@@ -1,22 +1,22 @@
-// Module ID: 15688
-// Function ID: 15689
+// Module ID: 15700
+// Function ID: 15701
 // Name: EnableReducedMotionSetting
-// Dependencies: [4748, 8233, 504, 14717, 11725, 1115, 2]
+// Dependencies: [4749, 8237, 504, 14723, 11729, 1115, 2]
 
-// Module 15688 (EnableReducedMotionSetting)
+// Module 15700 (EnableReducedMotionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14717 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14723 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
-const SettingBuilders = fn(11725);
+const SettingBuilders = fn(11729);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.e3TR1b);
   },
-  parent: fn(8233).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8237).MobileUserSettings.ACCESSIBILITY,
   useValue: function useReducedMotionSettingValue() {
     const items = [AccessibilityStore];
     return initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);

@@ -1,10 +1,10 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17090
+// Function ID: 17091
 // Name: VibegrationsTraceSections
 // Dependencies: [2]
 // Exports: traceDetailSections
 
-// Module 17078 (VibegrationsTraceSections)
+// Module 17090 (VibegrationsTraceSections)
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["arguments", "result", "usage", "diagnostics"];

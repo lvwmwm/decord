@@ -1,18 +1,18 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10409
+// Function ID: 10410
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 4937, 21, 4756, 576, 10404, 1115, 4909, 1484, 5841, 7364, 7359, 504, 8871, 10406, 10407, 10413, 10420, 10426, 5186, 2]
+// Dependencies: [19, 17, 4938, 21, 4757, 576, 10410, 1115, 4910, 1484, 5843, 7366, 7361, 504, 8876, 10412, 10413, 10419, 10426, 10432, 5187, 2]
 // Exports: default
 
-// Module 10403 (NotificationSettingsChannel)
+// Module 10409 (NotificationSettingsChannel)
 import nativeDefault from "native" /* 576 */;
-import useChannelNameDefault from "useChannelName" /* 4909 */;
-import NavigatorHeader from "NavigatorHeader" /* 5841 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7359 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7364 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10404 */;
+import useChannelNameDefault from "useChannelName" /* 4910 */;
+import NavigatorHeader from "NavigatorHeader" /* 5843 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10410 */;
 import noop from "module_19" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4937 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { screenContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -62,17 +62,17 @@ export default function NotificationSettingsChannel(channel) {
     const obj5 = { style: { marginBottom: 16 }, title: null, subtitle: null, onPressUnmute: null };
     const intl2 = tmp(1115).intl;
     obj5.title = intl2.string(tmp(1115).t["6MCxAy"]);
-    obj5.subtitle = tmp(10406).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
+    obj5.subtitle = tmp(10412).getMuteBannerSubtitleFromConfig(stateFromStoresObject.config);
     obj5.onPressUnmute = callback1;
-    muted = closure_6(tmp(10406).NotificationSettingsMuteBanner, obj5);
-    const tmpResult = tmp(10406);
+    muted = closure_6(tmp(10412).NotificationSettingsMuteBanner, obj5);
+    const tmpResult = tmp(10412);
   }
   const items3 = [muted, closure_6(require("NotificationSettingsPresets").NotificationSettingsChannelPresets, { channel: channel.channel }), closure_6(require("NotificationSettingsMessageNotification").NotificationSettingsChannelMessageNotification, { style: { marginTop: 24 }, channel: channel.channel }), closure_6(require("NotificationSettingsMessageUnread").NotificationSettingsChannelMessageUnread, { style: { marginTop: 24 }, channel: channel.channel }), , ];
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
     const obj9 = { style: { marginTop: 24 }, channel: channel.channel };
-    isForumLikeChannelResult = tmp11(tmp(10426).NotificationSettingsChannelPost, obj9);
+    isForumLikeChannelResult = tmp11(tmp(10432).NotificationSettingsChannelPost, obj9);
   }
   items3[4] = isForumLikeChannelResult;
   const inherited = channelPresetInheritance.inherited;
@@ -82,7 +82,7 @@ export default function NotificationSettingsChannel(channel) {
     const obj11 = { variant: "secondary", onPress: callback, text: null };
     const intl3 = tmp(1115).intl;
     obj11.text = intl3.string(tmp(1115).t["3PBFN6"]);
-    obj10.children = tmp11(tmp(5186).Button, obj11);
+    obj10.children = tmp11(tmp(5187).Button, obj11);
     tmp11Result = tmp11(View, obj10);
   }
   items3[5] = tmp11Result;

@@ -1,9 +1,9 @@
-// Module ID: 12524
-// Function ID: 12525
+// Module ID: 12528
+// Function ID: 12529
 // Name: VoicePanelControlsConstants
 // Dependencies: [2]
 
-// Module 12524 (VoicePanelControlsConstants)
+// Module 12528 (VoicePanelControlsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsConstants.tsx");

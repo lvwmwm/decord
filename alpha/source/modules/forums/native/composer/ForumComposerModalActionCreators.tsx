@@ -1,13 +1,13 @@
-// Module ID: 10509
-// Function ID: 10510
+// Module ID: 10515
+// Function ID: 10516
 // Name: ForumComposerModalActionCreators
-// Dependencies: [8009, 4959, 10510, 1980, 2]
+// Dependencies: [8012, 4960, 10516, 1980, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 10509 (ForumComposerModalActionCreators)
+// Module 10515 (ForumComposerModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
-import tracking_Tracking from "tracking/Tracking" /* 8009 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
+import tracking_Tracking from "tracking/Tracking" /* 8012 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "create-forum-post";
@@ -17,14 +17,14 @@ export const openCreateForumPostModal = function openCreateForumPostModal(guildI
   const result = tracking_Tracking.trackMobileForumComposerOpened({ guildId: guildId.guildId, channelId: guildId.parentChannelId, location: guildId.analyticsLocationObject });
   if (!tmp4) {
     ({ guildId: obj4.guildId, parentChannelId: obj4.channelId } = guildId);
-    const result1 = tmp(8009).trackForumCreateNewPostStarted({ guildId: null, channelId: null });
+    const result1 = tmp(8012).trackForumCreateNewPostStarted({ guildId: null, channelId: null });
     const obj3 = { guildId: null, channelId: null };
-    const tmpResult = tmp(8009);
+    const tmpResult = tmp(8012);
   }
   const obj2 = { guildId: guildId.guildId, channelId: guildId.parentChannelId, location: guildId.analyticsLocationObject };
   const tmp2 = dependencyMap;
   tmp4 = null != guildId.isEdit && guildId.isEdit;
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10510, tmp2.paths), guildId, c3);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10516, tmp2.paths), guildId, c3);
 };
 export const closeCreateForumPostModal = function closeCreateForumPostModal() {
   let flag = arg0;

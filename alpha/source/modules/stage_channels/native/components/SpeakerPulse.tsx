@@ -1,22 +1,22 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14390
+// Function ID: 14391
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 4748, 21, 4756, 576, 504, 4492, 4757, 2]
+// Dependencies: [19, 17, 4749, 21, 4757, 576, 504, 4493, 4758, 2]
 // Exports: default
 
-// Module 14384 (SpeakerPulse)
+// Module 14390 (SpeakerPulse)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4492 */;
-import timing from "timing" /* 4757 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import timing from "timing" /* 4758 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4748 */;
+import AccessibilityStore from "AccessibilityStore" /* 4749 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = 0.16;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { pulse: { backgroundColor: nativeDefault.colors.WHITE }, border: null };
 let obj3 = { backgroundColor: nativeDefault.colors.WHITE };
 obj2.border = { backgroundColor: nativeDefault.colors.STATUS_SPEAKING };

@@ -1,14 +1,14 @@
-// Module ID: 15207
-// Function ID: 15208
+// Module ID: 15214
+// Function ID: 15215
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1074, 7780, 21, 4756, 576, 1484, 7407, 7427, 7239, 15171, 15189, 1115, 2482, 8107, 15208, 15209, 9890, 7781, 7368, 15210, 9891, 12869, 2]
+// Dependencies: [32, 19, 17, 1074, 7783, 21, 4757, 576, 1484, 7409, 7429, 7241, 15178, 15196, 1115, 2482, 8110, 15215, 15216, 9896, 7784, 7370, 15217, 9897, 12873, 2]
 // Exports: default
 
-// Module 15207 (UserSettingsFamilyCenterParentalControls)
+// Module 15214 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef2482 from "module_2482" /* 2482 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7781 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7784 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,10 +18,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const FamilyCenterSubPages = fn(7780).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7783).FamilyCenterSubPages;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 const obj2 = { container: { display: "flex", flex: 1 }, segmentedControlContainer: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.content = { paddingBottom: nativeDefault.space.PX_16 };
@@ -104,7 +104,7 @@ export default function FamilyCenterParentalControlsSettings() {
         stackNavigation.setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "PX_16" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "flex" });
   }, items1);
   const obj4 = { label: null, id: null, page: null };
   let intl = tmp2(tmp3[14]).intl;

@@ -1,22 +1,22 @@
-// Module ID: 12764
-// Function ID: 12765
+// Module ID: 12768
+// Function ID: 12769
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 4644, 4645, 2038, 2027, 504, 12757, 7630, 2029, 2]
+// Dependencies: [32, 19, 4645, 4646, 2039, 2028, 504, 12761, 7633, 2030, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 12764 (useGuildPowerupsNewBadge)
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2029 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12757 */;
+// Module 12768 (useGuildPowerupsNewBadge)
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12761 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4644 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4645 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const constants = fn(4645).GuildPowerupNewPerkMarketingVersion;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
-let closure_8 = fn(2027).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
+const constants = fn(4646).GuildPowerupNewPerkMarketingVersion;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
+let closure_8 = fn(2028).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsNewBadge.tsx");
 
@@ -44,11 +44,11 @@ export default function useGuildPowerupsNewBadge(arg0) {
       tmp6 = closure_8;
     }
   }
-  const tmp7 = _slicedToArray(tmp(7630).useSelectedVersionedDismissibleContent(tmp6, num), 2);
+  const tmp7 = _slicedToArray(tmp(7633).useSelectedVersionedDismissibleContent(tmp6, num), 2);
   _require = tmp8;
   importDefault = tmp9;
   const items1 = [tmp7[0] === closure_8, tmp7[1]];
-  const tmpResult = tmp(7630);
+  const tmpResult = tmp(7633);
   return {
     showNewBadgeOnRow: tmp7[0] === closure_8,
     dismissNewBadgeIfShown: noop.useCallback(() => {
@@ -68,7 +68,7 @@ export const useAutoDismissGuildPowerupsNewBadge = function useAutoDismissGuildP
   const items = [GuildPowerupsStore];
   const stateFromStores = require("initialize").useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
   let obj = require("initialize");
-  const tmp2Result = num(12757)(guildId, stateFromStores);
+  const tmp2Result = num(12761)(guildId, stateFromStores);
   num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {
     num = tmp2Result;

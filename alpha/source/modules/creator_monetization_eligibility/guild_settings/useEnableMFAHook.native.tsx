@@ -1,10 +1,10 @@
-// Module ID: 18148
-// Function ID: 18149
+// Module ID: 18160
+// Function ID: 18161
 // Name: useEnableMFAHook
 // Dependencies: [2]
 // Exports: useEnableMFAHook
 
-// Module 18148 (useEnableMFAHook)
+// Module 18160 (useEnableMFAHook)
 import size from "module_2" /* 2 */;
 
 function passthrough(arg0) {

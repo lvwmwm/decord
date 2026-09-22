@@ -1,20 +1,20 @@
-// Module ID: 18236
-// Function ID: 18237
+// Module ID: 18248
+// Function ID: 18249
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 2038, 21, 4756, 576, 1612, 7395, 6869, 4752, 1115, 1177, 5187, 2]
+// Dependencies: [19, 17, 2039, 21, 4757, 576, 1612, 7397, 6871, 4753, 1115, 1177, 5188, 2]
 // Exports: default
 
-// Module 18236 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 18248 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 }, button: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 };
 obj2.button = { borderRadius: nativeDefault.radii.xs };
@@ -37,11 +37,11 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1115).intl;
   obj4.children = intl.string(markAsDismissed(1115).t.Y0PTc0);
-  const items = [closure_5(markAsDismissed(4752).Text, obj4), closure_5(markAsDismissed(1177).Spacer, { size: 12 }), , , ];
+  const items = [closure_5(markAsDismissed(4753).Text, obj4), closure_5(markAsDismissed(1177).Spacer, { size: 12 }), , , ];
   const obj5 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = markAsDismissed(1115).intl;
   obj5.children = intl2.string(markAsDismissed(1115).t["YSI/1/"]);
-  items[2] = closure_5(markAsDismissed(4752).Text, obj5);
+  items[2] = closure_5(markAsDismissed(4753).Text, obj5);
   items[3] = closure_5(markAsDismissed(1177).Spacer, { size: 48 });
   const obj6 = { text: null, pillStyle: null, onPress: null, grow: true };
   const intl3 = markAsDismissed(1115).intl;
@@ -50,9 +50,9 @@ export default function GuildRoleSubscriptionTierTemplateSelectedActionSheet(mar
   obj6.onPress = function onPress() {
     return markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
-  items[4] = closure_5(markAsDismissed(5187).BaseTextButton, obj6);
+  items[4] = closure_5(markAsDismissed(5188).BaseTextButton, obj6);
   obj3.children = items;
-  obj2.children = closure_6(markAsDismissed(6869).BottomSheetScrollView, obj3);
+  obj2.children = closure_6(markAsDismissed(6871).BottomSheetScrollView, obj3);
   obj.children = closure_5(View, obj2);
-  return closure_5(markAsDismissed(7395).BottomSheet, obj);
+  return closure_5(markAsDismissed(7397).BottomSheet, obj);
 };

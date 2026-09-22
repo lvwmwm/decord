@@ -1,18 +1,18 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15493
+// Function ID: 15494
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5494, 4389, 504, 7497, 5803, 15483, 15484, 12456, 1370, 2]
+// Dependencies: [5, 32, 19, 5496, 4389, 504, 7499, 5805, 15494, 15495, 12460, 1370, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 15482 (GuildRoleSubscriptionsHooks)
+// Module 15493 (GuildRoleSubscriptionsHooks)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7497 */;
-import useRequestDefault from "useRequest" /* 12456 */;
-import subscriptionUtils from "subscriptionUtils" /* 15484 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7499 */;
+import useRequestDefault from "useRequest" /* 12460 */;
+import subscriptionUtils from "subscriptionUtils" /* 15495 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5494 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5496 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4389 */;
 
 const require = globalThis.__r;
@@ -528,7 +528,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
             ({ guildId: closure_129_0, groupListingId: closure_129_1, listingId: closure_129_2 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "PX_16", done: true };
+            return { value: "flex", done: true };
           }
         } else if (1 === tmp9) {
           if (arg0 === 1) {

@@ -1,26 +1,26 @@
-// Module ID: 7842
-// Function ID: 7843
+// Module ID: 7845
+// Function ID: 7846
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [4755, 2041, 7535, 7843, 1074, 1186, 1115, 1241, 7533, 5084, 5089, 7844, 5640, 5641, 4968, 7538, 2]
+// Dependencies: [4756, 2042, 7537, 7846, 1074, 1186, 1115, 1241, 7535, 5085, 5090, 7847, 5642, 5643, 4969, 7540, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 7842 (ExplicitMediaRedactionUtils)
+// Module 7845 (ExplicitMediaRedactionUtils)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5084 */;
-import MetricEvents from "MetricEvents" /* 5089 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5640 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5641 */;
-import SelfModUtils from "SelfModUtils" /* 7533 */;
-import ExplicitMediaManager from "ExplicitMediaManager" /* 7844 */;
-import DevSettingsStore from "DevSettingsStore" /* 4755 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 7535 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5085 */;
+import MetricEvents from "MetricEvents" /* 5090 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
+import SelfModUtils from "SelfModUtils" /* 7535 */;
+import ExplicitMediaManager from "ExplicitMediaManager" /* 7847 */;
+import DevSettingsStore from "DevSettingsStore" /* 4756 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7537 */;
 
-const ObscureMediaModels = tmp(7538);
+const ObscureMediaModels = tmp(7540);
 require = fn;
-const ExplicitMediaRedactionConstants = fn(7843);
+const ExplicitMediaRedactionConstants = fn(7846);
 ({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: closure_7 } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
@@ -169,8 +169,8 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj2 = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      tmp10(5084).distribution(obj2, sum);
-      const tmp10Result = tmp10(5084);
+      tmp10(5085).distribution(obj2, sum);
+      const tmp10Result = tmp10(5085);
     }
     tmp10 = importDefault;
   }

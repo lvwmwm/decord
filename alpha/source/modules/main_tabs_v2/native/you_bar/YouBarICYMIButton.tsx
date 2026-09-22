@@ -1,21 +1,21 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16741
+// Function ID: 16742
 // Name: YouBarICYMIButton
-// Dependencies: [19, 15365, 21, 4756, 576, 16730, 16731, 13304, 4614, 1115, 2]
+// Dependencies: [19, 15373, 21, 4757, 576, 16742, 16743, 13309, 4615, 1115, 2]
 
-// Module 16729 (YouBarICYMIButton)
+// Module 16741 (YouBarICYMIButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import RootNavigationRef from "RootNavigationRef" /* 4614 */;
-import FlashIcon from "FlashIcon" /* 13304 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16730 */;
-import YouBarButtonDefault from "YouBarButton" /* 16731 */;
+import RootNavigationRef from "RootNavigationRef" /* 4615 */;
+import FlashIcon from "FlashIcon" /* 13309 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16742 */;
+import YouBarButtonDefault from "YouBarButton" /* 16743 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const YOU_BAR_BUTTON_ICON_SIZE = fn(15365).YOU_BAR_BUTTON_ICON_SIZE;
+const YOU_BAR_BUTTON_ICON_SIZE = fn(15373).YOU_BAR_BUTTON_ICON_SIZE;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, badge: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
 let closure_4 = createStyles.createStyles(obj);
 const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };

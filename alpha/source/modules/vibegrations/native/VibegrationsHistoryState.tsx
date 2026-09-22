@@ -1,21 +1,21 @@
-// Module ID: 17069
-// Function ID: 17070
+// Module ID: 17081
+// Function ID: 17082
 // Name: VibegrationsHistoryState
-// Dependencies: [19, 17, 21, 4756, 576, 4752, 1115, 3678, 2]
+// Dependencies: [19, 17, 21, 4757, 576, 4753, 1115, 3678, 2]
 // Exports: VibegrationsHistoryNotice, VibegrationsHistoryPlaceholder
 
-// Module 17069 (VibegrationsHistoryState)
+// Module 17081 (VibegrationsHistoryState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import Text_Text from "Text/Text" /* 4752 */;
+import Text_Text from "Text/Text" /* 4753 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { placeholder: { alignItems: "center", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_24 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

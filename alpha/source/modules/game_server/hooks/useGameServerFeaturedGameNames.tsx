@@ -1,12 +1,12 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 12835
+// Function ID: 12836
 // Name: useGameServerFeaturedGameNames
-// Dependencies: [4646, 7551, 2]
+// Dependencies: [4647, 7553, 2]
 // Exports: default
 
-// Module 12831 (useGameServerFeaturedGameNames)
-import useGame from "useGame" /* 7551 */;
-import GameServerConstants from "GameServerConstants" /* 4646 */;
+// Module 12835 (useGameServerFeaturedGameNames)
+import useGame from "useGame" /* 7553 */;
+import GameServerConstants from "GameServerConstants" /* 4647 */;
 import size from "module_2" /* 2 */;
 
 ({ MINECRAFT_GAME_ID: c2, HYTALE_GAME_ID: c3 } = GameServerConstants);

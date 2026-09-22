@@ -1,9 +1,9 @@
-// Module ID: 7800
-// Function ID: 7801
+// Module ID: 7803
+// Function ID: 7804
 // Name: CollectiblesShopStore
 // Dependencies: [504, 573, 2]
 
-// Module 7800 (CollectiblesShopStore)
+// Module 7803 (CollectiblesShopStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

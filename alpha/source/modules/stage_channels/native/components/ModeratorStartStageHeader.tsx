@@ -1,21 +1,21 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 10336
+// Function ID: 10337
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 17, 21, 4756, 5899, 10290, 10284, 2]
+// Dependencies: [19, 17, 21, 4757, 5901, 10296, 10290, 2]
 
-// Module 10330 (ModeratorStartStageHeader)
-import StageActionHeader from "StageActionHeader" /* 10284 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10290 */;
+// Module 10336 (ModeratorStartStageHeader)
+import StageActionHeader from "StageActionHeader" /* 10290 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10296 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
-let obj = { header: { height: fn(5899).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" } };
+const createStyles = fn(4757);
+let obj = { header: { height: fn(5901).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" } };
 let closure_6 = createStyles.createStyles(obj);
-const obj3 = { height: fn(5899).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" };
+const obj3 = { height: fn(5901).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: 8, marginTop: 4, overflow: "visible" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageHeader.tsx");
 
@@ -30,7 +30,7 @@ export default noop.memo((channel) => {
   const items = [React4(StageActionHeader.HideStageChannelCallIcon, { channel }), React4(StageActionHeader.StageChannelCallHeader, { channel }), , ];
   if (speaker) {
     const obj2 = { channelId: channel.id };
-    speaker = tmp7(tmp8(10284).MusicMuteButton, obj2);
+    speaker = tmp7(tmp8(10290).MusicMuteButton, obj2);
   }
   items[2] = speaker;
   items[3] = React4(StageActionHeader.StageInviteButton, { channelId: channel.id });

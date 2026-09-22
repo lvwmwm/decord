@@ -1,12 +1,12 @@
-// Module ID: 12767
-// Function ID: 12768
+// Module ID: 12771
+// Function ID: 12772
 // Name: useHasAllocateBoostPermission
-// Dependencies: [2063, 4395, 1085, 504, 2]
+// Dependencies: [2064, 4396, 1085, 504, 2]
 // Exports: default, getHasAllocateBoostPermission
 
-// Module 12767 (useHasAllocateBoostPermission)
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+// Module 12771 (useHasAllocateBoostPermission)
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 
 const require = globalThis.__r;
 

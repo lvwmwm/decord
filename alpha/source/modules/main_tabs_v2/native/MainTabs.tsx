@@ -1,22 +1,22 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16344
+// Function ID: 16345
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4756, 4609, 8118, 1612, 4466, 5341, 16334, 2]
+// Dependencies: [19, 17, 21, 4757, 4610, 8121, 1612, 4467, 5343, 16345, 2]
 
-// Module 16333 (MainTabs)
+// Module 16344 (MainTabs)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import native from "native" /* 4466 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4609 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5341 */;
-import useActiveTheme from "useActiveTheme" /* 8118 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 16334 */;
+import native from "native" /* 4467 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4610 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5343 */;
+import useActiveTheme from "useActiveTheme" /* 8121 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 16345 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_6 = createStyles.createStyles({ container: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/MainTabs.tsx");

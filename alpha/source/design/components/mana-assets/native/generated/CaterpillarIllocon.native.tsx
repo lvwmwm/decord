@@ -1,13 +1,13 @@
-// Module ID: 6070
-// Function ID: 6071
+// Module ID: 6072
+// Function ID: 6073
 // Name: CaterpillarIllocon
-// Dependencies: [21, 5804, 6071, 2]
+// Dependencies: [21, 5806, 6073, 2]
 // Exports: CaterpillarIllocon
 
-// Module 6070 (CaterpillarIllocon)
+// Module 6072 (CaterpillarIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6071 from "module_6071" /* 6071 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6073 from "module_6073" /* 6073 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const CaterpillarIllocon = function CaterpillarIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6071 };
+  const obj2 = { uri: _modDef6073 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

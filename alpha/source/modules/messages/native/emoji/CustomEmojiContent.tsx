@@ -1,23 +1,23 @@
-// Module ID: 10597
-// Function ID: 10598
+// Module ID: 10603
+// Function ID: 10604
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5677, 4577, 1372, 1074, 21, 4756, 576, 4414, 1241, 9506, 4723, 10590, 504, 7407, 5681, 4412, 4388, 10543, 7433, 2019, 10598, 7624, 10591, 10493, 10499, 4752, 1115, 10595, 4454, 10599, 1980, 8181, 1177, 5186, 5804, 10600, 8871, 10601, 10602, 2]
+// Dependencies: [19, 17, 5679, 4578, 1372, 1074, 21, 4757, 576, 4415, 1241, 9512, 4724, 10596, 504, 7409, 5683, 4413, 4388, 10549, 7435, 2020, 10604, 7627, 10597, 10499, 10505, 4753, 1115, 10601, 4455, 10605, 1980, 8185, 1177, 5187, 5806, 10606, 8876, 10607, 10608, 2]
 // Exports: default
 
-// Module 10597 (CustomEmojiContent)
+// Module 10603 (CustomEmojiContent)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4723 */;
-import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5681 */;
-import openUserSettings from "openUserSettings" /* 7624 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9506 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10595 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 10600 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5683 */;
+import openUserSettings from "openUserSettings" /* 7627 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9512 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10601 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 10606 */;
 import noop from "module_19" /* 19 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5677 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5679 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -27,7 +27,7 @@ const Constants = fn(1074);
 ({ UserSettingsSections: c10, AnalyticEvents: closure_11, AnalyticsPages: closure_12, AnalyticsSections: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { nitroWheel: { height: 32, width: 32 }, nitroWheelPurple: { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND_NEW }, emojiDescriptionWrapperOuter: { flexDirection: "row", flex: 1, alignItems: "center", gap: 8 }, starIcon: { height: 32, width: 32, margin: 0, padding: 0, flex: 0 }, starIconSelected: null, starIconUnselected: null, moreMenuIcon: null, bottomCtaButton: null, ctaDescriptionWrapper: null, betaTag: null, betaTagTextAddPack: null, betaTagTextRemovePack: null, favoriteButtonContainer: null };
 let obj3 = { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND_NEW };
 obj2.starIconSelected = { tintColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
@@ -240,8 +240,8 @@ export default function CustomEmojiContent(emojiNode) {
           },
         content
       };
-      tmp(4454).open(obj5);
-      const tmpResult = tmp(4454);
+      tmp(4455).open(obj5);
+      const tmpResult = tmp(4455);
     } else {
       obj4.favoriteEmoji(customEmojiFromJoinedGuild);
       obj6 = {
@@ -254,8 +254,8 @@ export default function CustomEmojiContent(emojiNode) {
           },
         content
       };
-      tmp(4454).open(obj6);
-      const tmpResult2 = tmp(4454);
+      tmp(4455).open(obj6);
+      const tmpResult2 = tmp(4455);
     }
   }
   items5[1] = tmp30Result;
@@ -300,7 +300,7 @@ export default function CustomEmojiContent(emojiNode) {
     if (setting) {
       const obj22 = { accessibilityLabel: null, style: null, onPress: null, children: null };
       function handleOpenEmojiOptionsMenu() {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10599, dependencyMap.paths), "EmojiOptionsActionSheet", { emojiSrc: emojiNode.src }, "stack");
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10605, dependencyMap.paths), "EmojiOptionsActionSheet", { emojiSrc: emojiNode.src }, "stack");
       }
       const intl3 = tmp2(tmp3[28]).intl;
       obj22.accessibilityLabel = intl3.string(tmp2(tmp3[28]).t.PdRCRg);

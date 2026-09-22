@@ -1,10 +1,10 @@
-// Module ID: 8209
-// Function ID: 8210
+// Module ID: 8213
+// Function ID: 8214
 // Name: getAccessibilityLabelOrCheapFallbackUnsafe
-// Dependencies: [8210, 2]
+// Dependencies: [8214, 2]
 // Exports: getAccessibilityLabelOrCheapFallbackUnsafe
 
-// Module 8209 (getAccessibilityLabelOrCheapFallbackUnsafe)
+// Module 8213 (getAccessibilityLabelOrCheapFallbackUnsafe)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/getAccessibilityLabelOrCheapFallbackUnsafe.tsx");

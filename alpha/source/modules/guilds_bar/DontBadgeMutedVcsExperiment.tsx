@@ -1,10 +1,10 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 13982
+// Function ID: 13983
 // Name: DontBadgeMutedVcsExperiment
 // Dependencies: [1435, 2]
 // Exports: getIsDontBadgeMutedVcsEnabled, useIsDontBadgeMutedVcsEnabled
 
-// Module 13974 (DontBadgeMutedVcsExperiment)
+// Module 13982 (DontBadgeMutedVcsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 let closure_0 = apex_ApexExperimentDefault({ kind: "user", name: "2026-06-dont-badge-muted-vcs", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

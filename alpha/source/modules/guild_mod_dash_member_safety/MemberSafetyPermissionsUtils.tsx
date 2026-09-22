@@ -1,21 +1,21 @@
-// Module ID: 7507
-// Function ID: 7508
+// Module ID: 7509
+// Function ID: 7510
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 2059, 2063, 4395, 1372, 4399, 1074, 1086, 4400, 504, 2]
+// Dependencies: [32, 2060, 2064, 4396, 1372, 4400, 1074, 1086, 4401, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 7507 (MemberSafetyPermissionsUtils)
+// Module 7509 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import _slicedToArray from "module_32" /* 32 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const isGuildOwner = fn(2059).isGuildOwner;
-let closure_8 = fn(4399).MemberSafetyPagePermissions;
+const isGuildOwner = fn(2060).isGuildOwner;
+let closure_8 = fn(4400).MemberSafetyPagePermissions;
 const Constants = fn(1074);
 ({ GuildFeatures: closure_9, Permissions: c10 } = Constants);
 const size = fn(2);

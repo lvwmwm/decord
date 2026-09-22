@@ -1,14 +1,14 @@
-// Module ID: 18100
-// Function ID: 18101
+// Module ID: 18112
+// Function ID: 18113
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9856, 1074, 21, 4457, 576, 18101, 504, 18102, 18099, 4752, 1115, 5184, 5904, 18111, 7445, 9855, 2]
+// Dependencies: [32, 19, 17, 9862, 1074, 21, 4458, 576, 18113, 504, 18114, 18111, 4753, 1115, 5185, 5906, 18123, 7447, 9861, 2]
 // Exports: default
 
-// Module 18100 (SafetyCheckScreen)
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
+// Module 18112 (SafetyCheckScreen)
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9861 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9856 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9862 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);

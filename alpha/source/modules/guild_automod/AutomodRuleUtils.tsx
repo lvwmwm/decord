@@ -1,21 +1,21 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17955
+// Function ID: 17956
 // Name: AutomodRuleUtils
-// Dependencies: [502, 17940, 12117, 1370, 17944, 17945, 1115, 8197, 7763, 2]
+// Dependencies: [502, 17952, 12121, 1370, 17956, 17957, 1115, 8201, 7766, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 17943 (AutomodRuleUtils)
+// Module 17955 (AutomodRuleUtils)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7763 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8197 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17944 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 17945 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7766 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8201 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17956 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 17957 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const getRuleCountByTriggerType = fn(17940).getRuleCountByTriggerType;
-const Constants = fn(12117);
+const getRuleCountByTriggerType = fn(17952).getRuleCountByTriggerType;
+const Constants = fn(12121);
 ({ AutomodTriggerType: closure_4, MAX_KEYWORDS_PER_KEYWORD_FILTER: hasOwnProperty, MAX_REGEX_PATTERNS_PER_KEYWORD_FILTER: metroRequire, MAX_CHARACTERS_PER_KEYWORD: closure_7, MIN_CHARACTERS_PER_KEYWORD: closure_8, MIN_REGEX_PATTERN_LENGTH: closure_9, MAX_REGEX_PATTERN_LENGTH: c10, AutomodActionType: closure_11, AutomodEventType: closure_12 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodRuleUtils.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17387
+// Function ID: 17388
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 8233, 21, 1115, 1370, 15762, 4414, 11725, 14965, 2]
+// Dependencies: [19, 8237, 21, 1115, 1370, 15774, 4415, 11729, 14972, 2]
 // Exports: default
 
-// Module 17375 (SettingsOverviewScreen)
+// Module 17387 (SettingsOverviewScreen)
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15762 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15774 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8233).MobileUserSettings;
+const MobileUserSettings = fn(8237).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 
 export default function SettingsOverviewScreen() {
-  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4414).useHasPremiumSubscriptionToDisplay();
+  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(4415).useHasPremiumSubscriptionToDisplay();
   let items = [hasPremiumSubscriptionToDisplay];
   const node = noop.useMemo(() => {
     const obj2 = { label: null, settings: null };
@@ -99,5 +99,5 @@ export default function SettingsOverviewScreen() {
     obj4.sections = items1;
     return SettingBuilders.createList(obj4);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(14965).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(14972).SearchableSettingsList, { node });
 };

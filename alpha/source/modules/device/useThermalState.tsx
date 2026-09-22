@@ -1,12 +1,12 @@
-// Module ID: 9592
-// Function ID: 9593
+// Module ID: 9598
+// Function ID: 9599
 // Name: useThermalState
-// Dependencies: [1364, 9569, 2]
+// Dependencies: [1364, 9575, 2]
 // Exports: default, getThermalState
 
-// Module 9592 (useThermalState)
+// Module 9598 (useThermalState)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 9569 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 9575 */;
 import size from "module_2" /* 2 */;
 
 const ThermalStates = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };

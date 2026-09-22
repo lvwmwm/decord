@@ -1,28 +1,27 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16139
+// Function ID: 16140
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4755, 1182, 1372, 7784, 1076, 1074, 2038, 21, 4756, 7427, 13722, 16128, 504, 5815, 1255, 10994, 16129, 1364, 7795, 9480, 8447, 9056, 4607, 7407, 1484, 9127, 4427, 16131, 4576, 2027, 4414, 16132, 1241, 7831, 8456, 16133, 16135, 16137, 16162, 1231, 9047, 11084, 16165, 16166, 16140, 16167, 5085, 2]
+// Dependencies: [32, 19, 17, 4756, 1182, 1372, 7787, 1076, 1074, 2039, 21, 4757, 7429, 13730, 16140, 504, 5817, 1255, 11000, 16141, 1364, 7798, 9486, 8451, 9061, 4608, 7409, 1484, 9132, 4428, 16143, 4577, 2028, 4415, 16144, 1241, 7834, 8460, 16145, 16146, 16148, 16173, 1231, 9052, 11090, 16176, 16177, 16151, 16178, 5086, 2]
 
-// Module 16127 (CollectiblesShopV2)
+// Module 16139 (CollectiblesShopV2)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import dismissible_content from "dismissible_content" /* 2027 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4414 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4576 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7831 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8456 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9127 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9480 */;
-import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 16132 */;
-import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 16133 */;
-import ShopCategory from "ShopCategory" /* 16135 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 16137 */;
+import dismissible_content from "dismissible_content" /* 2028 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7834 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8460 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9132 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9486 */;
+import MobileNitroUpsellInShopFeedExperimentDefault from "MobileNitroUpsellInShopFeedExperiment" /* 16144 */;
+import ShopNitroUpsellBanner from "ShopNitroUpsellBanner" /* 16145 */;
+import ShopCategory from "ShopCategory" /* 16146 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 16148 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4755 */;
+import DevSettingsStore from "DevSettingsStore" /* 4756 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UserStore from "UserStore" /* 1372 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7784 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7787 */;
 
 const SentryUtilsDefault = tmp(1231);
 require = fn;
@@ -102,10 +101,10 @@ const CollectiblesShopConstants = fn(1076);
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: closure_11, CollectiblesMobileShopScreen: closure_12, CollectibleShopTab: map1 } = CollectiblesShopConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, PaymentGateways: closure_15 } = Constants);
-const ContentDismissActionType = fn(2038).ContentDismissActionType;
+const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_17, jsxs: closure_18 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_19 = createStyles.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
 let closure_20 = { CATEGORY: "category", NITRO_UPSELL: "nitro_upsell" };
 function CollectiblesShopInternal(analyticsSource) {
@@ -126,10 +125,11 @@ function CollectiblesShopInternal(analyticsSource) {
   let categoryIndex;
   let first1;
   closure_18 = undefined;
+  let first2;
+  constants = undefined;
+  let dismiss;
   let memo3;
-  let callback;
-  let memo4;
-  closure_22 = undefined;
+  closure_23 = undefined;
   const commonTriggerPoint = analyticsSource(screen[13]).useCommonTriggerPoint(analyticsSource(screen[14]).CollectiblesShopOpenTriggerPoint);
   let obj = analyticsSource(screen[13]);
   let items = [isFetchingGoogleSkus];
@@ -142,13 +142,12 @@ function CollectiblesShopInternal(analyticsSource) {
     return items;
   }), 1)[0];
   let obj2 = analyticsSource(screen[15]);
-  const tmp4 = bypassGoogleSkuSync;
-  const items1 = [categories];
+  let items1 = [categories];
   const stateFromStoresObject = analyticsSource(screen[15]).useStateFromStoresObject(items1, () => ({ bypassGoogleSkuSync: categories.get("bypass_google_sku_sync"), noCache: categories.get("shop_disable_cache"), includeUnpublished: categories.get("shop_include_unpublished") }));
   bypassGoogleSkuSync = stateFromStoresObject.bypassGoogleSkuSync;
   const noCache = stateFromStoresObject.noCache;
   const includeUnpublished = stateFromStoresObject.includeUnpublished;
-  let spinner = memo3();
+  let spinner = first2();
   let country;
   if (storeFront != null) {
     country = storeFront.country;
@@ -291,35 +290,36 @@ function CollectiblesShopInternal(analyticsSource) {
   const tmp26 = Date.now() - first > currentUserIfAvailable;
   categoryIndex = analyticsSource(screen[30]).useCollectiblesShopDeepLinkProps({ categories: memo2 }).categoryIndex;
   const tmpResult11 = analyticsSource(screen[30]);
-  const tmp4Result = tmp4(noCache.useState(analyticsSource(screen[31]).UNSAFE_isDismissibleContentDismissed(analyticsSource(screen[32]).DismissibleContent.MOBILE_SHOP_BROWSE_ALL_NITRO_UPSELL)), 2);
+  const tmp4Result = bypassGoogleSkuSync(noCache.useState(analyticsSource(screen[31]).UNSAFE_isDismissibleContentDismissed(analyticsSource(screen[32]).DismissibleContent.MOBILE_SHOP_BROWSE_ALL_NITRO_UPSELL)), 2);
   first1 = tmp4Result[0];
   closure_18 = tmp29;
   const items8 = [currentUserIfAvailable, screen, first1];
-  memo3 = obj4.useMemo(() => {
-    let canUseShopDiscountsResult = PremiumUtilsDefault.canUseShopDiscounts(currentUserIfAvailable);
-    if (!canUseShopDiscountsResult) {
-      canUseShopDiscountsResult = screen !== constants.SHOP_ALL;
+  const tmp4Result2 = bypassGoogleSkuSync(noCache.useMemo(() => {
+    if (!obj.canUseShopDiscounts(currentUserIfAvailable)) {
+      if (screen === constants.SHOP_ALL) {
+        if (!first1) {
+          const config = MobileNitroUpsellInShopFeedExperimentDefault.getConfig({ location: "CollectiblesShopV2ShopAll" });
+          const items = [, ];
+          ({ enabled: arr[0], buttonVariant: arr[1] } = config);
+          return items;
+        }
+      }
     }
-    if (!canUseShopDiscountsResult) {
-      canUseShopDiscountsResult = first1;
-    }
-    let enabled = !canUseShopDiscountsResult;
-    if (!canUseShopDiscountsResult) {
-      enabled = MobileNitroUpsellInShopFeedExperimentDefault.getConfig({ location: "CollectiblesShopV2ShopAll" }).enabled;
-      const tmpResult = MobileNitroUpsellInShopFeedExperimentDefault;
-    }
-    return enabled;
-  }, items8);
+    const items1 = [false, null];
+    return items1;
+  }, items8), 2);
+  first2 = tmp4Result2[0];
+  constants = tmp32;
   const items9 = [tmp4Result[1]];
-  callback = obj4.useCallback(() => {
+  dismiss = obj4.useCallback(() => {
     closure_18(true);
     const result = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.MOBILE_SHOP_BROWSE_ALL_NITRO_UPSELL, { dismissAction: ContentDismissActionType.USER_DISMISS });
   }, items9);
-  const items10 = [memo2, memo3];
-  memo4 = obj4.useMemo(() => {
+  const items10 = [memo2, first2];
+  memo3 = obj4.useMemo(() => {
     const mapped = memo2.map((category, categoryIndex) => ({ kind: constants.CATEGORY, category, categoryIndex }));
-    let tmp = memo3;
-    if (memo3) {
+    let tmp = first2;
+    if (first2) {
       tmp = mapped.length > 0;
     }
     if (tmp) {
@@ -328,11 +328,11 @@ function CollectiblesShopInternal(analyticsSource) {
     }
     return mapped;
   }, items10);
-  const items11 = [categoryIndex, memo4.length, memo2.length];
-  const memo5 = obj4.useMemo(() => {
+  const items11 = [categoryIndex, memo3.length, memo2.length];
+  const memo4 = obj4.useMemo(() => {
     if (null != categoryIndex) {
       let sum = tmp;
-      if (memo4.length > memo2.length) {
+      if (memo3.length > memo2.length) {
         sum = tmp;
         if (tmp >= 1) {
           sum = tmp + 1;
@@ -341,7 +341,7 @@ function CollectiblesShopInternal(analyticsSource) {
       return sum;
     }
   }, items11);
-  closure_22 = obj4.useRef({ [tmp14.SHOP_ALL]: false, [tmp14.FEATURED_PAGE]: false, [tmp14.ORBS]: false });
+  closure_23 = obj4.useRef({ [tmp14.SHOP_ALL]: false, [tmp14.FEATURED_PAGE]: false, [tmp14.ORBS]: false });
   const items12 = [analyticsLocations, analyticsSource, sessionId, includeUnpublished, screen, noCache];
   const effect1 = obj4.useEffect(() => {
     let FEATURED_PAGE = screen;
@@ -375,26 +375,32 @@ function CollectiblesShopInternal(analyticsSource) {
       maybeFetchUserProfileDefault(tmp.id);
     }
   }, items13);
-  const items14 = [sessionId, includeUnpublished, noCache, stateFromStores, callback];
+  const items14 = [sessionId, includeUnpublished, noCache, stateFromStores, dismiss, tmp4Result2[1]];
   const callback1 = obj4.useCallback((item) => {
     item = item.item;
     if (item.kind === constants.NITRO_UPSELL) {
-      const obj2 = { isDarkTheme: stateFromStores, dismiss: callback };
-      let tmp16 = closure_2_17(ShopNitroUpsellBanner.ShopNitroUpsellBanner, obj2);
+      const obj2 = { isDarkTheme: stateFromStores, dismiss, buttonVariant: null };
+      let GET_NITRO = constants;
+      if (constants == null) {
+        GET_NITRO = tmp18(16144).NitroUpsellBannerButtonVariant.GET_NITRO;
+      }
+      obj2.buttonVariant = GET_NITRO;
+      let tmp17Result = closure_2_17(ShopNitroUpsellBanner.ShopNitroUpsellBanner, obj2);
+      tmp18 = require;
     } else {
       let tmp3 = 0 !== item.categoryIndex;
       if (!tmp3) {
-        tmp3 = closure_22.current[constants.SHOP_ALL];
+        tmp3 = closure_23.current[constants.SHOP_ALL];
       }
       if (!tmp3) {
-        closure_22.current[constants.SHOP_ALL] = true;
+        closure_23.current[constants.SHOP_ALL] = true;
         const obj3 = { sessionId, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_RENDERED, tab: constants.SHOP_ALL, unpublishedCategoriesShown: includeUnpublished, cacheDisabled: noCache };
         CollectiblesPerfLogging.trackShopPerf(obj3);
       }
       const obj4 = { category: item.category, isDarkTheme: stateFromStores, index: item.categoryIndex };
-      tmp16 = closure_2_17(ShopCategory.ShopCategory, obj4);
+      tmp17Result = closure_2_17(ShopCategory.ShopCategory, obj4);
     }
-    return tmp16;
+    return tmp17Result;
   }, items14);
   const items15 = [sessionId, includeUnpublished, noCache, fetchShopHomeError];
   const callback2 = obj4.useCallback((kind) => kind.kind, []);
@@ -402,10 +408,10 @@ function CollectiblesShopInternal(analyticsSource) {
   const callback3 = obj4.useCallback((shopBlock) => {
     let tmp = 0 !== shopBlock.index;
     if (!tmp) {
-      tmp = closure_22.current[constants.FEATURED_PAGE];
+      tmp = closure_23.current[constants.FEATURED_PAGE];
     }
     if (!tmp) {
-      closure_22.current[constants.FEATURED_PAGE] = true;
+      closure_23.current[constants.FEATURED_PAGE] = true;
       const obj2 = { sessionId, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_RENDERED, tab: constants.FEATURED_PAGE, unpublishedCategoriesShown: includeUnpublished, cacheDisabled: noCache };
       CollectiblesPerfLogging.trackShopPerf(obj2);
     }
@@ -418,8 +424,8 @@ function CollectiblesShopInternal(analyticsSource) {
     return closure_2_17(CollectiblesShopFeaturedPageDefault, obj3);
   }, items15);
   const callback4 = obj4.useCallback(() => {
-    if (!closure_22.current[constants.ORBS]) {
-      closure_22.current[tmp.ORBS] = true;
+    if (!closure_23.current[constants.ORBS]) {
+      closure_23.current[tmp.ORBS] = true;
       const obj2 = { sessionId, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_RENDERED, tab: tmp.ORBS, unpublishedCategoriesShown: includeUnpublished, cacheDisabled: noCache };
       CollectiblesPerfLogging.trackShopPerf(obj2);
     }
@@ -430,8 +436,8 @@ function CollectiblesShopInternal(analyticsSource) {
     return null;
   } else {
     if (screen !== tmp14.FEATURED_PAGE) {
-      if (!tmp41) {
-        if (tmp44) {
+      if (!tmp43) {
+        if (tmp46) {
           tmp8(tmp2[42]).captureMessage("collectibles mobile shop loaded empty categories");
           const tmp8Result7 = tmp8(tmp2[42]);
         }
@@ -444,8 +450,8 @@ function CollectiblesShopInternal(analyticsSource) {
         const obj10 = { style: spinner.rootContainer, children: null };
         const obj11 = { skuIDs: [], activeSubscription: null, children: null };
         if (screen === tmp14.SHOP_ALL) {
-          const obj12 = { data: memo4, renderItem: callback1, getItemType: callback2, initialScrollIndex: memo5 };
-          let tmp47Result = tmp47(tmp8(tmp2[45]), obj12);
+          const obj12 = { data: memo3, renderItem: callback1, getItemType: callback2, initialScrollIndex: memo4 };
+          let tmp49Result = tmp49(tmp8(tmp2[45]), obj12);
           const tmp8Result9 = tmp8(tmp2[45]);
         } else if (screen === tmp14.ORBS) {
           const obj13 = { shopBlocks, fetchShopHomeError: null, onRenderFirstOrbsItem: null, getItemType: null };
@@ -455,32 +461,32 @@ function CollectiblesShopInternal(analyticsSource) {
           obj13.fetchShopHomeError = fetchShopHomeError;
           obj13.onRenderFirstOrbsItem = callback4;
           obj13.getItemType = callback5;
-          tmp47Result = tmp47(tmp8(tmp2[46]), obj13);
+          tmp49Result = tmp49(tmp8(tmp2[46]), obj13);
           const tmp8Result10 = tmp8(tmp2[46]);
         } else {
           const obj14 = { children: null };
           const obj15 = { data: shopBlocks, renderItem: callback3, getItemType: callback5 };
-          obj14.children = tmp47(tmp8(tmp2[45]), obj15);
-          tmp47Result = tmp47(tmp(tmp2[47]).CollectiblesCoachmarkScrollDismissProvider, obj14);
+          obj14.children = tmp49(tmp8(tmp2[45]), obj15);
+          tmp49Result = tmp49(tmp(tmp2[47]).CollectiblesCoachmarkScrollDismissProvider, obj14);
         }
-        obj11.children = tmp47Result;
+        obj11.children = tmp49Result;
         obj10.children = first1(tmp(tmp2[44]).NativePaymentContextProvider, obj11);
         const items17 = [first1(sessionId, obj10), first1(tmp8(tmp2[48]), {})];
         obj9.children = items17;
         obj8.children = closure_18(tmp(tmp2[43]).CollectiblesAnalyticsProvider, obj9);
-        let tmp47Result2 = tmp47(tmp(tmp2[26]).AnalyticsLocationProvider, obj8);
-        tmp44 = first > 0 && false === isFetchingCategories && 0 === categories.size;
+        let tmp49Result2 = tmp49(tmp(tmp2[26]).AnalyticsLocationProvider, obj8);
+        tmp46 = first > 0 && false === isFetchingCategories && 0 === categories.size;
       }
       const obj16 = { style: null, size: "large" };
       spinner = spinner.spinner;
       obj16.style = spinner;
-      tmp47Result2 = first1(includeUnpublished, obj16);
+      tmp49Result2 = first1(includeUnpublished, obj16);
     }
     if (maybeFetchCollectiblesShopHome.isFetchingShopHome) {
       const obj17 = { style: spinner.spinner, size: "large" };
       return first1(includeUnpublished, obj17);
     }
-    tmp41 = 0 === memo2.length || tmp26;
+    tmp43 = 0 === memo2.length || tmp26;
   }
 }
 const size = fn(2);

@@ -1,18 +1,18 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8389
+// Function ID: 8390
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8199, 1074, 11, 8007, 8386, 1978, 1271, 7698, 8387, 573, 4985, 2, 4982]
+// Dependencies: [5, 502, 8203, 1074, 11, 8010, 8390, 1978, 1271, 7701, 8391, 573, 4986, 2, 4983]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8385 (InteractionUtils)
+// Module 8389 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Server from "Server" /* 1978 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8386 */;
-import SkemaUtils from "SkemaUtils" /* 8387 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8390 */;
+import SkemaUtils from "SkemaUtils" /* 8391 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8199 */;
+import InteractionStore from "InteractionStore" /* 8203 */;
 
 require = fn;
 let closure_10 = async function _executeMessageComponentInteraction(arg0, value) {
@@ -93,7 +93,7 @@ let closure_10 = async function _executeMessageComponentInteraction(arg0, value)
   await "HermesInternal";
   closure_2 = tmp3;
   ({ componentType: closure_129_0, messageId: closure_129_1, messageFlags: closure_129_2, customId: closure_129_3, componentId: closure_129_4, applicationId: closure_129_5, channelId: closure_129_6, guildId: closure_129_7, localState: closure_129_8 } = closure_0);
-  return "PX_16";
+  return "flex";
 };
 function mapMessageComponentLocalStateForAPI(type) {
   if (null == type) {
@@ -351,4 +351,4 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   }
   return true;
 };
-export const interactionCallbackErrorReason = fn(4982).interactionCallbackErrorReason;
+export const interactionCallbackErrorReason = fn(4983).interactionCallbackErrorReason;

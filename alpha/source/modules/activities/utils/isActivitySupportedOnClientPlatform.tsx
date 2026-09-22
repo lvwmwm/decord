@@ -1,10 +1,10 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9640
+// Function ID: 9641
 // Name: isActivitySupportedOnClientPlatform
 // Dependencies: [1364, 1978, 2]
 // Exports: default
 
-// Module 9634 (isActivitySupportedOnClientPlatform)
+// Module 9640 (isActivitySupportedOnClientPlatform)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isActivitySupportedOnClientPlatform.tsx");

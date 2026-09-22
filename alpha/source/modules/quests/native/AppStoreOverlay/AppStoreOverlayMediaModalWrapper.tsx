@@ -1,13 +1,13 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 11769
+// Function ID: 11770
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [19, 4447, 1074, 21, 11764, 4959, 8559, 8560, 2]
+// Dependencies: [19, 4448, 1074, 21, 11768, 4960, 8563, 8564, 2]
 // Exports: default
 
-// Module 11765 (AppStoreOverlayMediaModalWrapper)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+// Module 11769 (AppStoreOverlayMediaModalWrapper)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4447 */;
+import ActionSheetStore from "ActionSheetStore" /* 4448 */;
 
 const require = fn;
 const MEDIA_MODAL_KEY = fn(1074).MEDIA_MODAL_KEY;
@@ -32,14 +32,14 @@ export default function AppStoreOverlayMediaModalWrapper(onCloseCallback) {
     const obj2 = {};
     const merged1 = Object.assign(merged);
     obj2.onCloseCallback = onCloseCallback;
-    let tmp4Result = tmp4(tmp5(8559), obj2);
-    const tmp5Result = tmp5(8559);
+    let tmp4Result = tmp4(tmp5(8563), obj2);
+    const tmp5Result = tmp5(8563);
   } else {
     const obj = {};
     const merged2 = Object.assign(merged);
     obj.onClose = callback;
-    tmp4Result = tmp4(tmp5(8560), obj);
-    const tmp5Result2 = tmp5(8560);
+    tmp4Result = tmp4(tmp5(8564), obj);
+    const tmp5Result2 = tmp5(8564);
   }
   return tmp4Result;
 };

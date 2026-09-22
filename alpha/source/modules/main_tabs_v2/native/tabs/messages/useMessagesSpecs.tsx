@@ -1,14 +1,14 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16376
+// Function ID: 16377
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1074, 5193, 1612, 16366, 16369, 16381, 576, 2]
+// Dependencies: [109, 19, 1074, 5194, 1612, 16377, 16380, 16392, 576, 2]
 // Exports: default
 
-// Module 16365 (useMessagesSpecs)
+// Module 16376 (useMessagesSpecs)
 import nativeDefault from "native" /* 576 */;
-import MessagesHeader from "MessagesHeader" /* 16366 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 16369 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16381 */;
+import MessagesHeader from "MessagesHeader" /* 16377 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16380 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16392 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
 export default function useMessagesSpecs() {
-  fontScale = fontScale(5193).useFontScale();
+  fontScale = fontScale(5194).useFontScale();
   top = top(1612)().top;
   const items = [fontScale, top];
   return noop.useMemo(() => {

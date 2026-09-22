@@ -1,17 +1,17 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16737
+// Function ID: 16738
 // Name: YouBarAvatarDefault
-// Dependencies: [19, 17, 15365, 1074, 21, 4756, 576, 4457, 1177, 9094, 9037, 2]
+// Dependencies: [19, 17, 15373, 1074, 21, 4757, 576, 4458, 1177, 9099, 9042, 2]
 
-// Module 16725 (YouBarAvatarDefault)
+// Module 16737 (YouBarAvatarDefault)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import useToken from "useToken" /* 4457 */;
-import ReactionIcon from "ReactionIcon" /* 9037 */;
-import ClipView from "ClipView" /* 9094 */;
+import useToken from "useToken" /* 4458 */;
+import ReactionIcon from "ReactionIcon" /* 9042 */;
+import ClipView from "ClipView" /* 9099 */;
 import noop from "module_19" /* 19 */;
 
-const ClipViewDefault = tmp4(9094);
+const ClipViewDefault = tmp4(9099);
 require = fn;
 function AvatarDefault() {
   const tmp = closure_14();
@@ -24,7 +24,7 @@ function AvatarDefault() {
   const result = num / 2;
   const sum = result + tmp2(1177).STATUS_PADDING;
   const diff = tmp7 - sum - num / 4 * 2;
-  const point = { shape: tmp2(9094).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  const point = { shape: tmp2(9099).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   const obj3 = { style: null, children: null };
   size = { height: tmp2(1177).AVATAR_SIZE_MAP[tmp6], width: tmp2(1177).AVATAR_SIZE_MAP[tmp6], position: "relative" };
   obj3.style = size;
@@ -87,12 +87,12 @@ function AvatarDefaultLarge() {
   return closure_1_12(View, obj2);
 }
 const View = fn(17).View;
-const YouBarConstants = fn(15365);
+const YouBarConstants = fn(15373);
 ({ YOU_BAR_AVATAR_LARGE_SIZE: closure_4, YOU_BAR_AVATAR_PLACEHOLDER_SIZE: hasOwnProperty, YOU_BAR_STATUS_INSET: metroRequire, YOU_BAR_HEIGHT: closure_7, YOU_BAR_LARGE_STATUS_SIZE: closure_8, YOU_BAR_PADDING: closure_9, YOU_BAR_STATUS_OFFSET: c10 } = YouBarConstants);
 const StatusTypes = fn(1074).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { placeholderAvatar: { borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, justifyContent: "center", alignItems: "center" }, placeholderAvatarBackground: null, avatarShadow: null };
 let rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round };
 obj.placeholderAvatarBackground = rect;

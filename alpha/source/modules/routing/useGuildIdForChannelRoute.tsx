@@ -1,13 +1,13 @@
-// Module ID: 4768
-// Function ID: 4769
+// Module ID: 4769
+// Function ID: 4770
 // Name: useGuildIdForChannelRoute
-// Dependencies: [2044, 4577, 1074, 504, 2066, 2]
+// Dependencies: [2045, 4578, 1074, 504, 2067, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4768 (useGuildIdForChannelRoute)
+// Module 4769 (useGuildIdForChannelRoute)
 import initialize from "initialize" /* 504 */;
-import FavoriteStore from "FavoriteStore" /* 2044 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import FavoriteStore from "FavoriteStore" /* 2045 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
 
 require = fn;
 const FAVORITES = fn(1074).FAVORITES;

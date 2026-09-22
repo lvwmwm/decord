@@ -1,15 +1,15 @@
-// Module ID: 15446
-// Function ID: 15447
+// Module ID: 15454
+// Function ID: 15455
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [4575, 1182, 1185, 9472, 1228, 4607, 4604, 2]
+// Dependencies: [4576, 1182, 1185, 9478, 1228, 4608, 4605, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 15446 (SameAsDeviceThemeUtils)
+// Module 15454 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4604 */;
-import shared from "shared" /* 4607 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9472 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4575 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4605 */;
+import shared from "shared" /* 4608 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9478 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4576 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
@@ -40,16 +40,16 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(customUs
       const result1 = ThemeActionCreators.updateThemePreferences(obj5);
       if (null != customUserThemeSettings) {
         const obj6 = { customUserThemeSettings };
-        const result2 = tmp6(4604).updateSyncedClientTheme(tmp8, obj6);
-        const tmp6Result4 = tmp6(4604);
+        const result2 = tmp6(4605).updateSyncedClientTheme(tmp8, obj6);
+        const tmp6Result4 = tmp6(4605);
       } else if (null != tmp9) {
         const obj7 = { backgroundGradientPresetId: tmp9 };
-        const result3 = tmp6(4604).updateSyncedClientTheme(tmp8, obj7);
-        const tmp6Result5 = tmp6(4604);
+        const result3 = tmp6(4605).updateSyncedClientTheme(tmp8, obj7);
+        const tmp6Result5 = tmp6(4605);
       } else {
         const obj8 = { theme: customThemeBaseTheme };
-        const result4 = tmp6(4604).updateSyncedClientTheme(tmp8, obj8);
-        const tmp6Result6 = tmp6(4604);
+        const result4 = tmp6(4605).updateSyncedClientTheme(tmp8, obj8);
+        const tmp6Result6 = tmp6(4605);
       }
       const tmp6Result = ThemeActionCreators;
     }

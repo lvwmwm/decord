@@ -1,13 +1,13 @@
 // Module ID: 2001
 // Function ID: 2002
 // Name: GameRecord
-// Dependencies: [1387, 2002, 1978, 2008, 1397, 1370, 2]
+// Dependencies: [1387, 2002, 1978, 2009, 1397, 1370, 2]
 
 // Module 2001 (GameRecord)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import Server from "Server" /* 1978 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2008 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2009 */;
 import Record from "Record" /* 1387 */;
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;
 

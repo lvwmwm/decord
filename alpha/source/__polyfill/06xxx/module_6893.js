@@ -1,9 +1,17 @@
 // Module ID: 6893
 // Function ID: 6894
-// Dependencies: [17]
+// Dependencies: []
+// Exports: noop, workletNoop
 
 // Module 6893
-import _mod17 from "module_17" /* 17 */;
+const fn = function o() {
 
+};
+fn.__closure = {};
+fn.__workletHash = 16791771801238;
+fn.__initData = { code: "function pnpm_noopTs1(){}" };
 
-export const findNodeHandle = _mod17.findNodeHandle;
+export () => {
+
+}
+export const workletNoop = fn;

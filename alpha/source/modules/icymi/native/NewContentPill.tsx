@@ -1,18 +1,18 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16872
+// Function ID: 16873
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 2063, 8606, 21, 4756, 576, 9094, 5801, 504, 4690, 8619, 8621, 4492, 5185, 1487, 5339, 16059, 4752, 1115, 4607, 2]
+// Dependencies: [32, 19, 17, 2064, 8610, 21, 4757, 576, 9099, 5803, 504, 4691, 8623, 8625, 4493, 5186, 1487, 5341, 16071, 4753, 1115, 4608, 2]
 // Exports: default
 
-// Module 16860 (NewContentPill)
+// Module 16872 (NewContentPill)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 5185 */;
-import GuildIcon from "GuildIcon" /* 5801 */;
-import ClipView from "ClipView" /* 9094 */;
+import spring from "spring" /* 5186 */;
+import GuildIcon from "GuildIcon" /* 5803 */;
+import ClipView from "ClipView" /* 9099 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import ICYMIStore from "ICYMIStore" /* 8606 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import ICYMIStore from "ICYMIStore" /* 8610 */;
 
 const GuildIconDefault = GuildIcon;
 const ClipViewDefault = ClipView;
@@ -39,7 +39,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj2 = { container: { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, guildIconBG: null, refreshMorePillContainer: null };
 let obj3 = { alignSelf: "center", alignItems: "center", flexDirection: "row", paddingRight: 12, paddingLeft: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj2.guildIconBG = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };

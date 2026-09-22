@@ -1,13 +1,13 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9623
+// Function ID: 9624
 // Name: VideoStreamStore
-// Dependencies: [1074, 4781, 504, 573, 2]
+// Dependencies: [1074, 4782, 504, 573, 2]
 
-// Module 9617 (VideoStreamStore)
+// Module 9623 (VideoStreamStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
-import Constants2 from "Constants" /* 4781 */;
+import Constants2 from "Constants" /* 4782 */;
 import size from "module_2" /* 2 */;
 
 function makeTimeoutKey(arg0, arg1) {

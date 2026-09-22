@@ -1,20 +1,19 @@
-// Module ID: 16940
-// Function ID: 16941
+// Module ID: 16952
+// Function ID: 16953
 // Name: VibegrationsEffortPresets
-// Dependencies: [1115, 3678, 16941, 2]
+// Dependencies: [1115, 3678, 16953, 2]
 // Exports: describeVibegrationsModelSettings, matchVibegrationsEffortPreset, vibegrationsPresetTier, vibegrationsSettingsForTier
 
-// Module 16940 (VibegrationsEffortPresets)
+// Module 16952 (VibegrationsEffortPresets)
 import util from "util" /* 1115 */;
 import _modDef3678 from "module_3678" /* 3678 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16941 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16953 */;
 import size from "module_2" /* 2 */;
 
 const items = [
   {
     model: "gpt-5.6-luna",
-    thinking: "high",
-    fast: true,
+    thinking: "xhigh",
     summary() {
       const intl = util.intl;
       return intl.string(_modDef3678.Mo0a1m);

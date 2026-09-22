@@ -1,29 +1,36 @@
 // Module ID: 13163
 // Function ID: 13164
-// Dependencies: [13164, 13051]
-// Exports: isBrowser
+// Dependencies: []
+// Exports: flatten
 
 // Module 13163
-import _mod13164 from "module_13164" /* 13164 */;
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const isBrowser = function isBrowser() {
-  let tmp = typeof window !== "undefined";
-  if (typeof window !== "undefined") {
-    const isNodeEnvResult = _mod13164.isNodeEnv();
-    let tmp3 = !isNodeEnvResult;
-    if (isNodeEnvResult) {
-      const _process = tmp4(13051).GLOBAL_OBJ.process;
-      let tmp2 = _process;
-      if (tmp2) {
-        tmp2 = "renderer" === _process.type;
-      }
-      tmp3 = tmp2;
+export const flatten = function flatten(arr) {
+  const items = [];
+  const item = arr.forEach((arr) => {
+    if (Array.isArray(arr)) {
+      let item = arr.forEach((arr) => {
+        if (Array.isArray(arr)) {
+          let item = arr.forEach((arr) => {
+            if (Array.isArray(arr)) {
+              let item = arr.forEach((arr) => {
+                if (Array.isArray(arr)) {
+                  let item = arr.forEach(() => { ... });
+                } else {
+                  closure_1_0.push(arr);
+                }
+              });
+            } else {
+              closure_1_0.push(arr);
+            }
+          });
+        } else {
+          closure_1_0.push(arr);
+        }
+      });
+    } else {
+      closure_1_0.push(arr);
     }
-    tmp = tmp3;
-    tmp4 = require;
-  }
-  return tmp;
+  });
+  return items;
 };

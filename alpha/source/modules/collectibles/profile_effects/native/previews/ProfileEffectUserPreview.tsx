@@ -1,12 +1,12 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11380
+// Function ID: 11381
 // Name: ProfileEffectUserPreview
-// Dependencies: [19, 21, 11377, 1115, 2]
+// Dependencies: [19, 21, 11381, 1115, 2]
 // Exports: default
 
-// Module 11376 (ProfileEffectUserPreview)
+// Module 11380 (ProfileEffectUserPreview)
 import util from "util" /* 1115 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11377 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11381 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,8 +16,9 @@ const result = size.fileFinishedImporting("modules/collectibles/profile_effects/
 
 export default function ProfileEffectUserPreview(profileEffect) {
   profileEffect = profileEffect.profileEffect;
-  const merged = Object.assign(profileEffect, Object.assign({ profileEffect: 0 }));
-  const obj = { profileEffectOverride: profileEffect, accessibilityLabel: null };
+  ({ avatarDecorationOverride, profileFrameOverride } = profileEffect);
+  const merged = Object.assign(profileEffect, Object.assign({ profileEffect: 0, avatarDecorationOverride: 0, profileFrameOverride: 0 }));
+  const obj = { profileEffectOverride: profileEffect, avatarDecorationOverride, profileFrameOverride, accessibilityLabel: null };
   if (null != profileEffect) {
     const intl2 = util.intl;
     const obj2 = { a11y_text: profileEffect.accessibilityLabel };
@@ -28,5 +29,5 @@ export default function ProfileEffectUserPreview(profileEffect) {
   }
   obj.accessibilityLabel = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(UserProfilePreviewDefault, { profileEffectOverride: profileEffect, accessibilityLabel: null });
+  return jsx(UserProfilePreviewDefault, { profileEffectOverride: profileEffect, avatarDecorationOverride, profileFrameOverride, accessibilityLabel: null });
 };

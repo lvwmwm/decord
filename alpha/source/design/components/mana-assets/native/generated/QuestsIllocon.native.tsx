@@ -1,13 +1,13 @@
-// Module ID: 6620
-// Function ID: 6621
+// Module ID: 6622
+// Function ID: 6623
 // Name: QuestsIllocon
-// Dependencies: [21, 5804, 6621, 2]
+// Dependencies: [21, 5806, 6623, 2]
 // Exports: QuestsIllocon
 
-// Module 6620 (QuestsIllocon)
+// Module 6622 (QuestsIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6621 from "module_6621" /* 6621 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6623 from "module_6623" /* 6623 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const QuestsIllocon = function QuestsIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6621 };
+  const obj2 = { uri: _modDef6623 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

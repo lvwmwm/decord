@@ -1,14 +1,14 @@
-// Module ID: 15780
-// Function ID: 15781
+// Module ID: 15792
+// Function ID: 15793
 // Name: FriendGamingActivityNotificationSetting
-// Dependencies: [8233, 11725, 1115, 2019, 15781, 2]
+// Dependencies: [8237, 11729, 1115, 2020, 15793, 2]
 
-// Module 15780 (FriendGamingActivityNotificationSetting)
+// Module 15792 (FriendGamingActivityNotificationSetting)
 import util from "util" /* 1115 */;
-import UserSettings from "UserSettings" /* 2019 */;
-import SettingsConstants from "SettingsConstants" /* 8233 */;
-import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 15781 */;
-import SettingBuilders from "SettingBuilders" /* 11725 */;
+import UserSettings from "UserSettings" /* 2020 */;
+import SettingsConstants from "SettingsConstants" /* 8237 */;
+import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 15793 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

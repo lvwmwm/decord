@@ -1,10 +1,10 @@
-// Module ID: 17792
-// Function ID: 17793
+// Module ID: 17804
+// Function ID: 17805
 // Name: setIncomingRingtone
 // Dependencies: [17, 2]
 // Exports: setIncomingRingtone
 
-// Module 17792 (setIncomingRingtone)
+// Module 17804 (setIncomingRingtone)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

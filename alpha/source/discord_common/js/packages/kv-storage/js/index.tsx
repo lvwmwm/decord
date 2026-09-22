@@ -1,9 +1,9 @@
-// Module ID: 2071
-// Function ID: 2072
-// Dependencies: [2072, 2, 2074, 2078, 2081, 2082, 2083, 2084, 2085, 2086, 2075, 2077]
+// Module ID: 2072
+// Function ID: 2073
+// Dependencies: [2073, 2, 2075, 2079, 2082, 2083, 2084, 2085, 2086, 2087, 2076, 2078]
 
-// Module 2071
-import "module_2072";
+// Module 2072
+import "module_2073";
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

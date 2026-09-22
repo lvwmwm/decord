@@ -1,10 +1,10 @@
-// Module ID: 14105
-// Function ID: 14106
+// Module ID: 14112
+// Function ID: 14113
 // Name: networkAwareRetry
-// Dependencies: [5, 502, 2036, 1462, 2]
+// Dependencies: [5, 502, 2037, 1462, 2]
 // Exports: default
 
-// Module 14105 (networkAwareRetry)
+// Module 14112 (networkAwareRetry)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -82,7 +82,7 @@ let closure_5 = async function _networkAwareRetry(arg0, value) {
     num14 = 3;
   }
   closure_130_1 = num14;
-  return "PX_16";
+  return "flex";
 };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/network/networkAwareRetry.tsx");

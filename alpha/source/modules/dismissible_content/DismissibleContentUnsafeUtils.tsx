@@ -1,17 +1,17 @@
-// Module ID: 4576
-// Function ID: 4577
+// Module ID: 4577
+// Function ID: 4578
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1220, 4577, 1091, 4598, 2028, 2029, 11, 2026, 504, 2024, 2]
+// Dependencies: [5, 1220, 4578, 1091, 4599, 2029, 2030, 11, 2027, 504, 2025, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 4576 (DismissibleContentUnsafeUtils)
+// Module 4577 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1091 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2028 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4598 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2029 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4599 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4577 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
 
 const require = globalThis.__r;
 
@@ -161,7 +161,7 @@ let closure_7 = async function _UNSAFE_markDismissibleContentAsDismissed(arg0, v
           closure_130_1 = obj6;
           c4 = 1;
           c5 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else {
         if (1 === tmp5) {
@@ -213,7 +213,7 @@ let closure_8 = async function _UNSAFE_markSingleUseGuildDismissibleContentAsDis
     obj6 = {};
   }
   closure_131_2 = obj6;
-  return "PX_16";
+  return "flex";
 };
 let closure_9 = async function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed(arg0, value) {
   if (c6 === 2) {

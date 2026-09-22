@@ -1,10 +1,10 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 17086
+// Function ID: 17087
 // Name: VibegrationsTraceUtils
 // Dependencies: [2]
 // Exports: filterTrace, findTraceEntry, groupTraceByTurn, isModelEntry, isToolEntry, traceCategoryTotals, traceChildren, traceExportPayload
 
-// Module 17074 (VibegrationsTraceUtils)
+// Module 17086 (VibegrationsTraceUtils)
 import size from "module_2" /* 2 */;
 
 function traceCategory(entry) {

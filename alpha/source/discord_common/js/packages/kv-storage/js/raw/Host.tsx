@@ -1,10 +1,10 @@
-// Module ID: 2079
-// Function ID: 2080
+// Module ID: 2080
+// Function ID: 2081
 // Name: Host
-// Dependencies: [5, 2080, 2072, 2]
+// Dependencies: [5, 2081, 2073, 2]
 
-// Module 2079 (Host)
-import _mod2072 from "module_2072" /* 2072 */;
+// Module 2080 (Host)
+import _mod2073 from "module_2073" /* 2073 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -18,7 +18,7 @@ prototype["open"] = function open(database, arg1) {
   dependencyMap = arg1;
   const Runtime = require("Runtime").Runtime;
   return Runtime.executeAsync("database_open", async (arg0) => {
-    const KV_RAW = _mod2072.KV_RAW;
+    const KV_RAW = _mod2073.KV_RAW;
     const obj = { database, invalidateDisabledHandles: null };
     let flag;
     if (closure_1 != null) {
@@ -32,7 +32,7 @@ prototype["open"] = function open(database, arg1) {
   });
 };
 prototype["openSyncUnsafe"] = function openSyncUnsafe(database, invalidateDisabledHandles) {
-  const KV_RAW = _mod2072.KV_RAW;
+  const KV_RAW = _mod2073.KV_RAW;
   const obj = { database, invalidateDisabledHandles: null };
   let flag;
   if (invalidateDisabledHandles != null) {
@@ -48,7 +48,7 @@ prototype["delete"] = function delete(database) {
   _require = database;
   const Runtime = require("Runtime").Runtime;
   return Runtime.executeAsync("database_delete", async (arg0) => {
-    const KV_RAW = _mod2072.KV_RAW;
+    const KV_RAW = _mod2073.KV_RAW;
     return KV_RAW.databaseDelete(arg0, { database });
   });
 };
@@ -67,20 +67,20 @@ prototype["optimize"] = function optimize(aggressive) {
   _require = aggressive;
   const Runtime = require("Runtime").Runtime;
   return Runtime.executeAsync("database_optimize", async (arg0) => {
-    const KV_RAW = _mod2072.KV_RAW;
+    const KV_RAW = _mod2073.KV_RAW;
     return KV_RAW.databaseOptimize(arg0, { aggressive });
   });
 };
 prototype["raise"] = function raise(arg0) {
-  const KV_RAW = _mod2072.KV_RAW;
+  const KV_RAW = _mod2073.KV_RAW;
   KV_RAW.raise(arg0);
 };
 prototype["malformedValueCount"] = function malformedValueCount() {
-  const KV_RAW = _mod2072.KV_RAW;
+  const KV_RAW = _mod2073.KV_RAW;
   return KV_RAW.malformedValueCount();
 };
 prototype["malformedEntryCount"] = function malformedEntryCount() {
-  const KV_RAW = _mod2072.KV_RAW;
+  const KV_RAW = _mod2073.KV_RAW;
   return KV_RAW.malformedEntryCount();
 };
 

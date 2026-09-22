@@ -1,18 +1,18 @@
-// Module ID: 8199
-// Function ID: 8200
+// Module ID: 8203
+// Function ID: 8204
 // Name: InteractionStore
-// Dependencies: [32, 502, 2041, 1091, 4985, 1978, 7698, 504, 573, 2]
+// Dependencies: [32, 502, 2042, 1091, 4986, 1978, 7701, 504, 573, 2]
 
-// Module 8199 (InteractionStore)
+// Module 8203 (InteractionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import Server from "Server" /* 1978 */;
-import InteractionTypes from "InteractionTypes" /* 4985 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7698 */;
+import InteractionTypes from "InteractionTypes" /* 4986 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7701 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 
 require = fn;
 function deleteNonce(nonce) {
@@ -144,7 +144,7 @@ const interactionStore = new InteractionStore(DispatcherDefault, {
     } else {
       if (null != dependencyMap[nonce]) {
         if (tmp3.state === InteractionTypes.InteractionState.QUEUED) {
-          tmp3.state = tmp4(4985).InteractionState.CREATED;
+          tmp3.state = tmp4(4986).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);

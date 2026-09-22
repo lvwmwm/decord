@@ -1,13 +1,13 @@
-// Module ID: 6016
-// Function ID: 6017
+// Module ID: 6018
+// Function ID: 6019
 // Name: AvatarSpellcastExample
-// Dependencies: [21, 5804, 6017, 2]
+// Dependencies: [21, 5806, 6019, 2]
 // Exports: AvatarSpellcastExample
 
-// Module 6016 (AvatarSpellcastExample)
+// Module 6018 (AvatarSpellcastExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6017 from "module_6017" /* 6017 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6019 from "module_6019" /* 6019 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AvatarSpellcastExample = function AvatarSpellcastExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6017 };
+  const obj2 = { uri: _modDef6019 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

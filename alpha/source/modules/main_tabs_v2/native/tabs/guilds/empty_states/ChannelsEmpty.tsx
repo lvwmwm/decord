@@ -1,16 +1,16 @@
-// Module ID: 16593
-// Function ID: 16594
+// Module ID: 16604
+// Function ID: 16605
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4395, 1074, 21, 4756, 4752, 576, 563, 9855, 9822, 15367, 8873, 1177, 16594, 1115, 16595, 5187, 2]
+// Dependencies: [19, 17, 4396, 1074, 21, 4757, 4753, 576, 563, 9861, 9828, 15375, 8878, 1177, 16605, 1115, 16606, 5188, 2]
 
-// Module 16593 (ChannelsEmpty)
+// Module 16604 (ChannelsEmpty)
 import nativeDefault from "native" /* 576 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9822 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9855 */;
-import _modDef16594 from "module_16594" /* 16594 */;
-import _modDef16595 from "module_16595" /* 16595 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9828 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9861 */;
+import _modDef16605 from "module_16605" /* 16605 */;
+import _modDef16606 from "module_16606" /* 16606 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4395 */;
+import PermissionStore from "PermissionStore" /* 4396 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
@@ -18,10 +18,10 @@ get_ActivityIndicator = fn(17);
 const Permissions = fn(1074).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let obj = { wrapper: { flex: 1, paddingTop: 12 }, content: { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 48 }, headerText: null, text: null, buttonWrapper: null, buttonPill: null, personalizeButtonWrapper: null };
 let obj3 = {};
-const merged = Object.assign(fn(4752).TextStyleSheet["heading-md/bold"]);
+const merged = Object.assign(fn(4753).TextStyleSheet["heading-md/bold"]);
 obj3.fontSize = 18;
 obj3.marginTop = 16;
 obj3.marginBottom = 8;
@@ -53,42 +53,42 @@ export default noop.memo(function ChannelsEmpty(guild) {
   const obj = guild(563);
   const obj3 = { style: null, children: null };
   const items4 = [tmp.wrapper, ];
-  const obj2 = guild(15367);
-  items4[1] = { paddingBottom: guild(15367).useYouBarTotalHeight(16) };
+  const obj2 = guild(15375);
+  items4[1] = { paddingBottom: guild(15375).useYouBarTotalHeight(16) };
   obj3.style = items4;
   if (canCustomizeGuild) {
     const obj5 = { style: tmp.personalizeButtonWrapper, children: null };
     const obj6 = { icon: null, label: null, onPress: null };
-    const obj7 = { source: _modDef16594, disableColor: true };
+    const obj7 = { source: _modDef16605, disableColor: true };
     obj6.icon = closure_8(tmp2(1177).Icon, obj7);
     const intl = tmp2(1115).intl;
     obj6.label = intl.string(tmp2(1115).t["Yhi9/N"]);
     obj6.onPress = callback;
-    obj5.children = closure_8(tmp2(8873).RowButton, obj6);
+    obj5.children = closure_8(tmp2(8878).RowButton, obj6);
     canCustomizeGuild = closure_8(tmp8, obj5);
   }
   const items5 = [canCustomizeGuild, ];
   const obj8 = { style: tmp.content, children: null };
-  const obj4 = { paddingBottom: guild(15367).useYouBarTotalHeight(16) };
-  const items6 = [closure_8(closure_5, { source: _modDef16595 }), , , ];
+  const obj4 = { paddingBottom: guild(15375).useYouBarTotalHeight(16) };
+  const items6 = [closure_8(closure_5, { source: _modDef16606 }), , , ];
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: null, children: null };
   const items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
   obj10.style = items7;
   const intl2 = tmp2(1115).intl;
   obj10.children = intl2.string(guild(1115).t.o4s29v);
-  items6[1] = closure_8(guild(4752).Text, obj10);
+  items6[1] = closure_8(guild(4753).Text, obj10);
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
   const intl3 = tmp2(1115).intl;
   obj11.children = intl3.string(guild(1115).t.iypvFu);
-  items6[2] = closure_8(guild(4752).Text, obj11);
+  items6[2] = closure_8(guild(4753).Text, obj11);
   if (canCreateChannel) {
     const obj12 = { style: tmp.buttonWrapper, children: null };
     const obj13 = { shrink: true, size: "md", pillStyle: tmp.buttonPill, text: null, onPress: null };
     const intl4 = tmp2(1115).intl;
     obj13.text = intl4.string(tmp2(1115).t["63PyJQ"]);
     obj13.onPress = callback1;
-    obj12.children = tmp11(tmp2(5187).BaseTextButton, obj13);
+    obj12.children = tmp11(tmp2(5188).BaseTextButton, obj13);
     canCreateChannel = tmp11(tmp8, obj12);
   }
   items6[3] = canCreateChannel;

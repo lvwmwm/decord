@@ -1,28 +1,13 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8030
+// Function ID: 8031
 // Name: getBurstAnimation
-// Dependencies: [5, 8028, 8029, 8030, 8031, 8032, 8033, 8034, 8035, 8036, 8037, 8038, 8039, 8040, 8041, 8042, 8043, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 2]
+// Dependencies: [5, 8031, 8032, 8033, 8034, 8035, 8036, 8037, 8038, 8039, 8040, 8041, 8042, 8043, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8065, 8066, 8067, 2]
 // Exports: getBurstAnimation
 
-// Module 8027 (getBurstAnimation)
+// Module 8030 (getBurstAnimation)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 const items = [
-  {
-    load() {
-      return closure_0(8028);
-    }
-  },
-  {
-    load() {
-      return closure_0(8029);
-    }
-  },
-  {
-    load() {
-      return closure_0(8030);
-    }
-  },
   {
     load() {
       return closure_0(8031);
@@ -97,9 +82,7 @@ const items = [
     load() {
       return closure_0(8045);
     }
-  }
-];
-const items1 = [
+  },
   {
     load() {
       return closure_0(8046);
@@ -114,7 +97,9 @@ const items1 = [
     load() {
       return closure_0(8048);
     }
-  },
+  }
+];
+const items1 = [
   {
     load() {
       return closure_0(8049);
@@ -189,6 +174,21 @@ const items1 = [
     load() {
       return closure_0(8063);
     }
+  },
+  {
+    load() {
+      return closure_0(8064);
+    }
+  },
+  {
+    load() {
+      return closure_0(8065);
+    }
+  },
+  {
+    load() {
+      return closure_0(8066);
+    }
   }
 ];
 let closure_0 = asyncGeneratorStepDefault(function*(arg0, value, arg2) {
@@ -230,7 +230,7 @@ let closure_0 = asyncGeneratorStepDefault(function*(arg0, value, arg2) {
           let burstAnimationHash;
           c6 = 1;
           c7 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (arg0 === 1) {
         c7 = 3;

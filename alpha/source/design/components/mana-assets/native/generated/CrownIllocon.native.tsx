@@ -1,13 +1,13 @@
-// Module ID: 6120
-// Function ID: 6121
+// Module ID: 6122
+// Function ID: 6123
 // Name: CrownIllocon
-// Dependencies: [21, 5804, 6121, 2]
+// Dependencies: [21, 5806, 6123, 2]
 // Exports: CrownIllocon
 
-// Module 6120 (CrownIllocon)
+// Module 6122 (CrownIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5804 */;
-import _modDef6121 from "module_6121" /* 6121 */;
+import FastImageDefault from "FastImage" /* 5806 */;
+import _modDef6123 from "module_6123" /* 6123 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const CrownIllocon = function CrownIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6121 };
+  const obj2 = { uri: _modDef6123 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

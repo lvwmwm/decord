@@ -1,16 +1,16 @@
-// Module ID: 10198
-// Function ID: 10199
+// Module ID: 10204
+// Function ID: 10205
 // Name: JoinStageView
-// Dependencies: [19, 21, 5648, 5642, 9763, 1115, 8671, 10154, 2]
+// Dependencies: [19, 21, 5650, 5644, 9769, 1115, 8675, 10160, 2]
 // Exports: default
 
-// Module 10198 (JoinStageView)
+// Module 10204 (JoinStageView)
 import util from "util" /* 1115 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5642 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5648 */;
-import StageChannelUtils from "StageChannelUtils" /* 8671 */;
-import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 9763 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10154 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5644 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5650 */;
+import StageChannelUtils from "StageChannelUtils" /* 8675 */;
+import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 9769 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10160 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

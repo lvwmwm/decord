@@ -1,23 +1,23 @@
-// Module ID: 8904
-// Function ID: 8905
+// Module ID: 8909
+// Function ID: 8910
 // Name: ChannelSettingsStore
-// Dependencies: [2045, 8651, 1386, 2041, 1074, 1114, 4407, 4409, 2050, 2051, 1271, 573, 12, 2055, 4348, 504, 2]
+// Dependencies: [2046, 8655, 1386, 2042, 1074, 1114, 4408, 4410, 2051, 2052, 1271, 573, 12, 2056, 4348, 504, 2]
 
-// Module 8904 (ChannelSettingsStore)
+// Module 8909 (ChannelSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ThreadConstants from "ThreadConstants" /* 1114 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import ChannelRecord from "ChannelRecord" /* 2045 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2050 */;
-import ForumLayout from "ForumLayout" /* 2051 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2055 */;
+import ChannelRecord from "ChannelRecord" /* 2046 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2051 */;
+import ForumLayout from "ForumLayout" /* 2052 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2056 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import ReactionUtils from "ReactionUtils" /* 4407 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4409 */;
-import InviteRecord from "InviteRecord" /* 8651 */;
+import ReactionUtils from "ReactionUtils" /* 4408 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4410 */;
+import InviteRecord from "InviteRecord" /* 8655 */;
 import UserRecord from "UserRecord" /* 1386 */;
-import ChannelStore from "ChannelStore" /* 2041 */;
+import ChannelStore from "ChannelStore" /* 2042 */;
 import Constants from "Constants" /* 1074 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;

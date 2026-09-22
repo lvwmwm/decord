@@ -1,25 +1,19 @@
-// Module ID: 4940
-// Function ID: 4941
+// Module ID: 4941
+// Function ID: 4942
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1074, 4938, 4941, 1115, 2]
-// Exports: arePresetSettingsUnset, presetFromSettings, presetName
+// Dependencies: [1074, 4939, 4942, 1115, 2]
+// Exports: arePresetSettingsUnset, presetName, webPresetFromSettings
 
-// Module 4940 (notificationSettingsPresetUtils)
+// Module 4941 (notificationSettingsPresetUtils)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import ReadStateConstants from "ReadStateConstants" /* 4938 */;
-import _mod4941 from "module_4941" /* 4941 */;
+import ReadStateConstants from "ReadStateConstants" /* 4939 */;
+import _mod4942 from "module_4942" /* 4942 */;
 import size from "module_2" /* 2 */;
 
-const UserNotificationSettings = Constants.UserNotificationSettings;
-const UnreadSetting = ReadStateConstants.UnreadSetting;
-const Presets = { ALL_MESSAGES: "all_messages", MENTIONS: "mentions", NOTHING: "nothing", CUSTOM: "custom" };
-const result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
-
-export { Presets };
-export const presetFromSettings = function presetFromSettings(unreadSetting, UserGuildSettingsStore) {
-  const items = [UserGuildSettingsStore, unreadSetting];
-  const match = _mod4941.match(items);
+function presetFromSettings(stateFromStores, UserGuildSettingsStore) {
+  const items = [UserGuildSettingsStore, stateFromStores];
+  const match = _mod4942.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
   const items2 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.UNSET];
   const withResult = match.with(items1, () => constants.ALL_MESSAGES);
@@ -30,9 +24,25 @@ export const presetFromSettings = function presetFromSettings(unreadSetting, Use
   const items5 = [UserNotificationSettings.NO_MESSAGES, UnreadSetting.ONLY_MENTIONS];
   const withResult3 = match.with(items1, () => constants.ALL_MESSAGES).with(items2, () => constants.MENTIONS).with(items3, () => constants.MENTIONS).with(items4, () => constants.NOTHING);
   return match.with(items1, () => constants.ALL_MESSAGES).with(items2, () => constants.MENTIONS).with(items3, () => constants.MENTIONS).with(items4, () => constants.NOTHING).with(items5, () => constants.NOTHING).otherwise(() => constants.CUSTOM);
+}
+const UserNotificationSettings = Constants.UserNotificationSettings;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+const Presets = { ALL_MESSAGES: "all_messages", HYBRID: "hybrid", MENTIONS: "mentions", NOTHING: "nothing", CUSTOM: "custom" };
+const result = size.fileFinishedImporting("modules/notifications/settings/utils/notificationSettingsPresetUtils.tsx");
+
+export { Presets };
+export { presetFromSettings };
+export const webPresetFromSettings = function webPresetFromSettings(guildUnreadSetting, UserGuildSettingsStore) {
+  if (guildUnreadSetting === UnreadSetting.ALL_MESSAGES) {
+    if (UserGuildSettingsStore === UserNotificationSettings.ONLY_MENTIONS) {
+      let HYBRID = obj.HYBRID;
+    }
+    return HYBRID;
+  }
+  HYBRID = presetFromSettings(guildUnreadSetting, UserGuildSettingsStore);
 };
 export const presetName = function presetName(tmp4Result5) {
-  const match = _mod4941.match(tmp4Result5);
+  const match = _mod4942.match(tmp4Result5);
   const withResult = match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);
@@ -40,13 +50,26 @@ export const presetName = function presetName(tmp4Result5) {
   const withResult1 = match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);
-  }).with(obj.MENTIONS, () => {
+  }).with(obj.HYBRID, () => {
     const intl = util.intl;
-    return intl.string(util.t.y59NJm);
+    return intl.string(util.t.JzbSEY);
   });
   const withResult2 = match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);
+  }).with(obj.HYBRID, () => {
+    const intl = util.intl;
+    return intl.string(util.t.JzbSEY);
+  }).with(obj.MENTIONS, () => {
+    const intl = util.intl;
+    return intl.string(util.t.y59NJm);
+  });
+  const withResult3 = match.with(obj.ALL_MESSAGES, () => {
+    const intl = util.intl;
+    return intl.string(util.t.hZrr6k);
+  }).with(obj.HYBRID, () => {
+    const intl = util.intl;
+    return intl.string(util.t.JzbSEY);
   }).with(obj.MENTIONS, () => {
     const intl = util.intl;
     return intl.string(util.t.y59NJm);
@@ -57,6 +80,9 @@ export const presetName = function presetName(tmp4Result5) {
   return match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);
+  }).with(obj.HYBRID, () => {
+    const intl = util.intl;
+    return intl.string(util.t.JzbSEY);
   }).with(obj.MENTIONS, () => {
     const intl = util.intl;
     return intl.string(util.t.y59NJm);

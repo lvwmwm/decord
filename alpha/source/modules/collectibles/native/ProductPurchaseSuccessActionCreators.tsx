@@ -1,10 +1,10 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11351
+// Function ID: 11352
 // Name: ProductPurchaseSuccessActionCreators
-// Dependencies: [5, 4959, 11346, 1980, 2]
+// Dependencies: [5, 4960, 11352, 1980, 2]
 
-// Module 11345 (ProductPurchaseSuccessActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4959 */;
+// Module 11351 (ProductPurchaseSuccessActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;

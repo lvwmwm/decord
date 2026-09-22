@@ -1,19 +1,48 @@
 // Module ID: 14640
 // Function ID: 14641
-// Dependencies: [14592, 14599]
+// Dependencies: [14609, 14641, 14584, 14637]
 
 // Module 14640
-import _mod14592 from "module_14592" /* 14592 */;
-import _mod14599 from "module_14599" /* 14599 */;
+import _mod14609 from "module_14609" /* 14609 */;
 
-let closure_2 = _mod14592("keys");
 
-export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod14599(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
+export default (arg0, arg1, value, arg3) => {
+  let obj = arg3;
+  if (!arg3) {
+    obj = {};
   }
-  return tmp2;
+  let flag = obj.enumerable;
+  let name = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
+  }
+  if (_mod14609(value)) {
+    tmp3(14641)(value, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = value;
+    } else {
+      tmp3(14584)(arg1, value);
+    }
+  } else {
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
+        }
+      } else {
+        delete tmp[tmp2];
+      }
+      if (flag) {
+        arg0[arg1] = value;
+      } else {
+        const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
+        tmp3(14637).f(arg0, arg1, obj2);
+        const tmp3Result = tmp3(14637);
+      }
+    } catch (err) {
+    }
+  }
+  return arg0;
 };

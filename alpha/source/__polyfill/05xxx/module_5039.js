@@ -1,9 +1,16 @@
 // Module ID: 5039
 // Function ID: 5040
-// Dependencies: [1454]
+// Dependencies: [1307]
 
 // Module 5039
-import _mod1454 from "module_1454" /* 1454 */;
+import _mod1307 from "module_1307" /* 1307 */;
 
 
-export default _mod1454;
+export default function mod(arg0, arg1) {
+  const result = arg0 % arg1;
+  let sum = result;
+  if (result < 0) {
+    sum = result + arg1;
+  }
+  return _mod1307(sum);
+};

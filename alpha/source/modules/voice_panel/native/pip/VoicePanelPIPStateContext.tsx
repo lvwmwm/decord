@@ -1,14 +1,14 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17568
+// Function ID: 17569
 // Name: VoicePanelPIPStateContext
-// Dependencies: [19, 7319, 2]
+// Dependencies: [19, 7321, 2]
 // Exports: usePIPState
 
-// Module 17556 (VoicePanelPIPStateContext)
+// Module 17568 (VoicePanelPIPStateContext)
 import noop from "module_19" /* 19 */;
 
 let size = { id: "sa", mode: "isArray", width: false, height: null, containerHeight: "transparent", showSecondaryPIP: null, scale: null };
-const ReanimatedHelperTypes = fn(7319);
+const ReanimatedHelperTypes = fn(7321);
 size.scale = ReanimatedHelperTypes.createFakeSharedValue(1);
 const context = noop.createContext(size);
 size = fn(2);

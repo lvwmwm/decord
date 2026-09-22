@@ -1,14 +1,14 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8698
+// Function ID: 8699
 // Name: ModalContent
-// Dependencies: [19, 17, 21, 4756, 2]
+// Dependencies: [19, 17, 21, 4757, 2]
 
-// Module 8694 (ModalContent)
+// Module 8698 (ModalContent)
 import noop from "module_19" /* 19 */;
 
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4756);
+const createStyles = fn(4757);
 let closure_2 = createStyles.createStyles({ scrollContainer: { flex: 1 }, contentContainer: { flexDirection: "column", paddingTop: 24, paddingHorizontal: 16, alignItems: "center", flexGrow: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalContent.native.tsx");

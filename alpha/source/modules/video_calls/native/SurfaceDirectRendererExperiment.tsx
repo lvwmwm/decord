@@ -1,10 +1,10 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9698
+// Function ID: 9699
 // Name: SurfaceDirectRendererExperiment
 // Dependencies: [502, 1434, 504, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 9692 (SurfaceDirectRendererExperiment)
+// Module 9698 (SurfaceDirectRendererExperiment)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;

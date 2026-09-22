@@ -1,14 +1,14 @@
-// Module ID: 10200
-// Function ID: 10201
+// Module ID: 10206
+// Function ID: 10207
 // Name: AttachmentUrlUtils
-// Dependencies: [5, 5222, 1074, 1091, 2014, 2013, 1366, 1271, 2]
+// Dependencies: [5, 5223, 1074, 1091, 2015, 2014, 1366, 1271, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 10200 (AttachmentUrlUtils)
+// Module 10206 (AttachmentUrlUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import URLUtilsDefault from "URLUtils" /* 1366 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2013 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2014 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -302,7 +302,7 @@ let closure_14 = async function _maybeRefreshAttachmentUrl(arg0, value) {
     }
   }
 };
-const ATTACHMENT_PATH_PREFIXES = fn(5222).ATTACHMENT_PATH_PREFIXES;
+const ATTACHMENT_PATH_PREFIXES = fn(5223).ATTACHMENT_PATH_PREFIXES;
 const Endpoints = fn(1074).Endpoints;
 const HOUR = DurationsDefault.Millis.HOUR;
 let items = [window.GLOBAL_ENV.CDN_HOST, ];
@@ -363,7 +363,7 @@ function getSignedAttachmentExpiration(searchParams) {
   }
   return result;
 }
-const mapped = items.map(fn(2014).getHostWithoutPort);
+const mapped = items.map(fn(2015).getHostWithoutPort);
 let closure_7 = mapped.filter((item) => {
   let tmp = null != item;
   if (tmp) {

@@ -1,14 +1,14 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12574
+// Function ID: 12575
 // Name: GuildDirectoryActionCreators
-// Dependencies: [5, 12557, 12559, 1074, 551, 573, 1271, 4949, 1249, 2]
+// Dependencies: [5, 12561, 12563, 1074, 551, 573, 1271, 4950, 1249, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 12570 (GuildDirectoryActionCreators)
+// Module 12574 (GuildDirectoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4949 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4950 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12557 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12561 */;
 import "debounce";
 import debounce_mod from "debounce" /* 551 */;
 
@@ -29,7 +29,7 @@ let closure_7 = async function _addDirectoryGuildEntry() {
     UNCATEGORIZED = constants.UNCATEGORIZED;
   }
   closure_132_3 = UNCATEGORIZED;
-  return "PX_16";
+  return "flex";
 };
 let closure_8 = async function _updateDirectoryEntry() {
   const HTTP = closure_133_0(closure_133_2[6]).HTTP;
@@ -47,7 +47,7 @@ let closure_8 = async function _updateDirectoryEntry() {
     UNCATEGORIZED = constants.UNCATEGORIZED;
   }
   closure_132_3 = UNCATEGORIZED;
-  return "PX_16";
+  return "flex";
 };
 let closure_9 = async function _fetchGuildEntriesForIds(arg0, entity_ids) {
   closure_0 = arg0;
@@ -75,7 +75,7 @@ let closure_9 = async function _fetchGuildEntriesForIds(arg0, entity_ids) {
     return value;
   })();
 };
-const DirectoryEntryCategories = fn(12559).DirectoryEntryCategories;
+const DirectoryEntryCategories = fn(12563).DirectoryEntryCategories;
 let Endpoints = fn(1074).Endpoints;
 asyncGeneratorStep(async (arg0, category_id) => {
   closure_0 = arg0;

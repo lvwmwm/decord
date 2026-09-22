@@ -1,16 +1,16 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17420
+// Function ID: 17421
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 7352, 17409, 1074, 1091, 1271, 7363, 2]
+// Dependencies: [32, 5, 7354, 17421, 1074, 1091, 1271, 7365, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 17408 (AccountLinkManager)
+// Module 17420 (AccountLinkManager)
 import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7352 */;
-import AccountLinkStore from "AccountLinkStore" /* 17409 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7363 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import AccountLinkStore from "AccountLinkStore" /* 17421 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
 
 let require = fn;
 let closure_9 = async function _claimIncentivizedAccountLinkingReward(arg0, value) {
@@ -46,7 +46,7 @@ let closure_9 = async function _claimIncentivizedAccountLinkingReward(arg0, valu
           ({ applicationId: closure_129_0, onSuccess: closure_129_1, onError: closure_129_2 } = closure_0);
           c5 = 1;
           c6 = 1;
-          return { value: "PX_16", done: true };
+          return { value: "flex", done: true };
         }
       } else if (1 === tmp8) {
         if (arg0 === 1) {

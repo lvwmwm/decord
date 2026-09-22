@@ -1,19 +1,19 @@
-// Module ID: 13985
-// Function ID: 13986
+// Module ID: 13993
+// Function ID: 13994
 // Name: LocalPushNotificationStore
-// Dependencies: [2063, 5630, 9317, 1074, 9557, 4348, 1115, 504, 573, 2]
+// Dependencies: [2064, 5632, 9323, 1074, 9563, 4348, 1115, 504, 573, 2]
 
-// Module 13985 (LocalPushNotificationStore)
+// Module 13993 (LocalPushNotificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import _modDef4348 from "module_4348" /* 4348 */;
-import PushNotificationDefault from "PushNotification" /* 9557 */;
-import GuildStore from "GuildStore" /* 2063 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5630 */;
+import PushNotificationDefault from "PushNotification" /* 9563 */;
+import GuildStore from "GuildStore" /* 2064 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
 
 require = fn;
-const Constants = fn(9317);
+const Constants = fn(9323);
 ({ LocalNotificationTypes: hasOwnProperty, FIRE_DATE_FORMAT: metroRequire } = Constants);
 const VerificationLevels = fn(1074).VerificationLevels;
 const set = new Set();
@@ -46,9 +46,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(DispatcherDefa
             set.add(userInfo);
           }
         }
-        const result = closure_1_1(9557).cancelLocalNotifications(userInfo);
-        const obj = closure_1_1(9557);
-        const result1 = closure_1_1(9557).cancelLocalNotifications(userInfo);
+        const result = closure_1_1(9563).cancelLocalNotifications(userInfo);
+        const obj = closure_1_1(9563);
+        const result1 = closure_1_1(9563).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -75,8 +75,8 @@ const localPushNotificationStore = new LocalPushNotificationStore(DispatcherDefa
               const obj3 = { userInfo: obj2, fireDate: obj.format(timestampProducer), alertTitle: guild.name, alertBody: null, category: "local" };
               const intl = util.intl;
               obj3.alertBody = intl.string(util.t["hrDBa+"]);
-              const result = tmp15(9557).scheduleLocalNotification(obj3);
-              const tmp15Result = tmp15(9557);
+              const result = tmp15(9563).scheduleLocalNotification(obj3);
+              const tmp15Result = tmp15(9563);
             }
             tmp15 = importDefault;
           }

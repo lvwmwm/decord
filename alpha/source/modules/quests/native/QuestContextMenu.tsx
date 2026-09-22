@@ -1,35 +1,35 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15426
+// Function ID: 15427
 // Name: QuestContextMenu
-// Dependencies: [109, 19, 7939, 1074, 21, 8179, 8182, 1115, 11738, 504, 5664, 12027, 11741, 11558, 7958, 1364, 4736, 12020, 11751, 7964, 4467, 15380, 5668, 11542, 8855, 15419, 4702, 7960, 7434, 4706, 7965, 7966, 7976, 8174, 2]
+// Dependencies: [109, 19, 7942, 1074, 21, 8183, 8186, 1115, 11742, 504, 5666, 12031, 11745, 11562, 7961, 1364, 4737, 12024, 11755, 7967, 4468, 15388, 5670, 11546, 8860, 15427, 4703, 7963, 7436, 4707, 7979, 7968, 7978, 8178, 2]
 
-// Module 15418 (QuestContextMenu)
+// Module 15426 (QuestContextMenu)
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4467 */;
-import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 4706 */;
-import parseURLDefault from "parseURL" /* 4736 */;
-import QuestTypes from "QuestTypes" /* 5664 */;
-import AdCreativeType from "AdCreativeType" /* 5668 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7964 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7965 */;
-import IconButton from "IconButton" /* 8179 */;
-import _modDef8182 from "module_8182" /* 8182 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8855 */;
-import QuestActionCreators from "QuestActionCreators" /* 11542 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 11558 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11751 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15380 */;
-import _modDef15419 from "module_15419" /* 15419 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4468 */;
+import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 4707 */;
+import parseURLDefault from "parseURL" /* 4737 */;
+import QuestTypes from "QuestTypes" /* 5666 */;
+import AdCreativeType from "AdCreativeType" /* 5670 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7967 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7979 */;
+import IconButton from "IconButton" /* 8183 */;
+import _modDef8186 from "module_8186" /* 8186 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8860 */;
+import QuestActionCreators from "QuestActionCreators" /* 11546 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 11562 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11755 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15388 */;
+import _modDef15427 from "module_15427" /* 15427 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7939 */;
+import QuestStore from "QuestStore" /* 7942 */;
 
 require = fn;
 function renderDefaultButton(ref) {
   const obj = { ref: ref.ref };
   const merged = Object.assign(_objectWithoutProperties(ref, closure_3));
-  obj.icon = _modDef8182;
+  obj.icon = _modDef8186;
   obj.variant = "secondary";
   const intl = util.intl;
   obj.accessibilityLabel = intl.string(util.t.CAgr1w);
@@ -94,12 +94,12 @@ export default noop.memo((children) => {
     let isIOSResult = PlatformUtils.isIOS();
     if (isIOSResult) {
       const tmp5 = parseURLDefault;
-      isIOSResult = tmp5(tmp(11558).getCtaLink(quest.config)).payload.type === LinkingTypes.INVITE;
-      const tmpResult = tmp(11558);
+      isIOSResult = tmp5(tmp(11562).getCtaLink(quest.config)).payload.type === LinkingTypes.INVITE;
+      const tmpResult = tmp(11562);
     }
     if (isIOSResult) {
-      const result = tmp(12020).dismissOverlayScreens();
-      const tmpResult3 = tmp(12020);
+      const result = tmp(12024).dismissOverlayScreens();
+      const tmpResult3 = tmp(12024);
     }
     const tmpResult4 = QuestPlatformUtils;
     tmpResult4.openGameLinkDirectly(quest, { content: QuestTypes.QuestContent.QUEST_HOME_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.CONTEXT_MENU_OPEN_GAME_LINK, impressionId: questImpressionId, sourceQuestContent });
@@ -134,13 +134,13 @@ export default noop.memo((children) => {
     const intl = util.intl;
     obj2.label = intl.string(util.t.GcsZKJ);
     obj2.action = callback2;
-    obj2.iconSource = _modDef15419;
+    obj2.iconSource = _modDef15427;
     items[1] = obj2;
     if (flag) {
       const obj3 = { label: null, IconComponent: null, action: null };
       const intl2 = tmp(1115).intl;
       obj3.label = intl2.string(tmp(1115).t.WqhZss);
-      obj3.IconComponent = tmp(4702).CopyIcon;
+      obj3.IconComponent = tmp(4703).CopyIcon;
       obj3.action = callback1;
       const items1 = [obj3];
       let items2 = items1;
@@ -236,11 +236,11 @@ export default noop.memo((children) => {
   }, items10);
   const onOpen = obj7.useCallback(() => {
     if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_context_menu")) {
-      const obj2 = { type: tmp(7976).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5668).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp(7964).QuestContentCTA.OPEN_CONTEXT_MENU, surfaceId: tmp(5664).QuestContent.QUEST_HOME_MOBILE, sourceQuestContent, impressionId: questImpressionId };
-      tmp(7966).captureAdUserAction(obj2);
-      const tmpResult = tmp(7966);
+      const obj2 = { type: tmp(7978).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp(5670).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: tmp(7967).QuestContentCTA.OPEN_CONTEXT_MENU, surfaceId: tmp(5666).QuestContent.QUEST_HOME_MOBILE, sourceQuestContent, impressionId: questImpressionId };
+      tmp(7968).captureAdUserAction(obj2);
+      const tmpResult = tmp(7968);
     } else {
-      const obj3 = { questId: quest.id, questContent: tmp(5664).QuestContent.QUEST_HOME_MOBILE, questContentCTA: tmp(7964).QuestContentCTA.OPEN_CONTEXT_MENU, sourceQuestContent };
+      const obj3 = { questId: quest.id, questContent: tmp(5666).QuestContent.QUEST_HOME_MOBILE, questContentCTA: tmp(7967).QuestContentCTA.OPEN_CONTEXT_MENU, sourceQuestContent };
       trackQuestContentClickedWithImpression(obj3);
     }
   }, items11);

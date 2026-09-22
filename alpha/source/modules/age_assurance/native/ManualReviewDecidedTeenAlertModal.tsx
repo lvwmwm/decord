@@ -1,18 +1,18 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 8867
+// Function ID: 8868
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 8683, 21, 5114, 1115, 3066, 4752, 8682, 2108, 5114, 2]
+// Dependencies: [19, 8687, 21, 5115, 1115, 3066, 4753, 8686, 2108, 5115, 2]
 // Exports: default
 
-// Module 8862 (ManualReviewDecidedTeenAlertModal)
+// Module 8867 (ManualReviewDecidedTeenAlertModal)
 import util from "util" /* 1115 */;
 import _modDef3066 from "module_3066" /* 3066 */;
-import Text_Text from "Text/Text" /* 4752 */;
-import AlertModal from "AlertModal" /* 5114 */;
+import Text_Text from "Text/Text" /* 4753 */;
+import AlertModal from "AlertModal" /* 5115 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const FALLBACK_TEEN_AGE_RANGE = fn(8683).FALLBACK_TEEN_AGE_RANGE;
+const FALLBACK_TEEN_AGE_RANGE = fn(8687).FALLBACK_TEEN_AGE_RANGE;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewDecidedTeenAlertModal.tsx");
@@ -33,7 +33,7 @@ export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
         variant: "text-md/normal",
         color: "text-link",
         onPress() {
-          const obj = closure_1_1(8682);
+          const obj = closure_1_1(8686);
           const intl = closure_1_0(1115).intl;
           return obj.openUrl(closure_1_1(2108).getArticleURL(intl.string(closure_1_1(3066).agiNYw)));
         },

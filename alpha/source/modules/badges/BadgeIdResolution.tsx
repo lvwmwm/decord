@@ -1,15 +1,15 @@
-// Module ID: 8462
-// Function ID: 8463
+// Module ID: 8466
+// Function ID: 8467
 // Name: BadgeIdResolution
-// Dependencies: [8463, 8452, 8464, 8453, 8465, 2]
+// Dependencies: [8467, 8456, 8468, 8457, 8469, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId, toProfileBadgeLegacyId
 
-// Module 8462 (BadgeIdResolution)
-import Constants from "Constants" /* 8452 */;
-import BadgeId from "BadgeId" /* 8453 */;
-import Constants2 from "Constants" /* 8463 */;
-import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 8464 */;
-import types from "types" /* 8465 */;
+// Module 8466 (BadgeIdResolution)
+import Constants from "Constants" /* 8456 */;
+import BadgeId from "BadgeId" /* 8457 */;
+import Constants2 from "Constants" /* 8467 */;
+import LegacyBadgeIdMap from "LegacyBadgeIdMap" /* 8468 */;
+import types from "types" /* 8469 */;
 import size from "module_2" /* 2 */;
 
 const getBadgeName = Constants.getBadgeName;
@@ -44,6 +44,6 @@ export const toProfileBadgeLegacyId = function toProfileBadgeLegacyId(badge_id) 
   }
   return value;
 };
-export const isLegacyBadgeId = function isLegacyBadgeId(arg0) {
-  return set.has(arg0);
+export const isLegacyBadgeId = function isLegacyBadgeId(badge_id) {
+  return set.has(badge_id);
 };
